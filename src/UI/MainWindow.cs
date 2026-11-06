@@ -99,7 +99,14 @@ namespace YAMS
             DockPanel root = new DockPanel();
             BuildTop(root);
             tabs = new PillTabs();
+            // pulsante "Comandi": ripiega le tre righe dei comandi per lasciare spazio ai grafici (utile con caratteri grandi)
+            btnRows = new Button { Content = "Comandi ▴", VerticalAlignment = VerticalAlignment.Center };
+            btnRows.Classes.Add("pill");
+            btnRows.Click += (s, e) => SetRowsVisible(!topRows[0].IsVisible, true);
+            DockPanel.SetDock(btnRows, Dock.Right);
+            tabs.Line.Children.Insert(0, btnRows);
             DockTop(root, tabs.Bar);
+            SetRowsVisible(cfg.GetD("comandi_visibili", 1) != 0, false);
             status = new TextBlock { Text = "Pronto", Foreground = Pal.B(Pal.Muted), TextTrimming = TextTrimming.CharacterEllipsis };
             Border sb = new Border { Background = Pal.B(Pal.Track), Padding = new Thickness(8, 3), Child = status };
             DockPanel.SetDock(sb, Dock.Bottom);
@@ -138,20 +145,22 @@ namespace YAMS
         {
             public readonly Border Bar;
             public readonly Grid Host = new Grid();
-            readonly StackPanel strip = new StackPanel { Orientation = Orientation.Horizontal, Spacing = 4 };
+            readonly WrapPanel strip = new WrapPanel { Orientation = Orientation.Horizontal };   // con caratteri grandi le linguette vanno a capo
+            public readonly DockPanel Line = new DockPanel();
             readonly List<ToggleButton> buttons = new List<ToggleButton>();
             readonly List<Control> pages = new List<Control>();
             public int Selected = -1;
 
             public PillTabs()
             {
-                Bar = new Border { Background = Pal.B(Pal.Track), Padding = new Thickness(8, 5), Child = strip };
+                Line.Children.Add(strip);
+                Bar = new Border { Background = Pal.B(Pal.Track), Padding = new Thickness(8, 5), Child = Line };
             }
 
             public void Add(string title, Control page)
             {
                 int idx = buttons.Count;
-                ToggleButton b = new ToggleButton { Content = title, VerticalAlignment = VerticalAlignment.Center };
+                ToggleButton b = new ToggleButton { Content = title, VerticalAlignment = VerticalAlignment.Center, Margin = new Thickness(0, 1, 4, 1) };
                 b.Classes.Add("tab");
                 b.Click += (s, e) => Select(idx);
                 buttons.Add(b);
@@ -368,6 +377,18 @@ namespace YAMS
             DockTop(root, row1);
             DockTop(root, row2);
             DockTop(root, row3);
+            topRows = new[] { row1, row2, row3 };
+        }
+
+        Border[] topRows;
+        Button btnRows;
+
+        void SetRowsVisible(bool v, bool save)
+        {
+            if (topRows == null) return;
+            foreach (Border b in topRows) b.IsVisible = v;
+            if (btnRows != null) btnRows.Content = v ? "Comandi ▴" : "Comandi ▾";
+            if (save) { cfg.Set("comandi_visibili", v); try { cfg.Save(); } catch { } }
         }
 
         // cursore "Carattere": nuova scala, poi controlli standard e testi costruiti con dimensioni proprie

@@ -27,6 +27,10 @@ namespace YAMS
 
     public class SectionView : Control
     {
+        // scala del carattere per le scritte disegnate: quella scelta con il cursore, ma non oltre
+        // una misura proporzionata al disegno (su una vista piccola le scritte enormi coprirebbero tutto)
+        double LS { get { return Math.Max(1.0, Math.Min(UiScale.Font, Bounds.Height / 170)); } }
+
         public PathModel Model;
         public List<TrailSeg> Trails = new List<TrailSeg>();
         public double AntennaAz = 0, HpbwDeg = 0, LobeElevDeg = 0;
@@ -68,7 +72,7 @@ namespace YAMS
         static FormattedText Ft(string s, double size, Color c, FontWeight w = FontWeight.Normal)
         {
             return new FormattedText(s ?? "", CultureInfo.CurrentCulture, FlowDirection.LeftToRight,
-                new Typeface(FontFamily.Default, FontStyle.Normal, w), size * UiScale.Font, new ImmutableSolidColorBrush(c));
+                new Typeface(FontFamily.Default, FontStyle.Normal, w), size * LS, new ImmutableSolidColorBrush(c));
         }
 
         public override void Render(DrawingContext ctx)

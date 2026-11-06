@@ -29,6 +29,10 @@ namespace YAMS
 
     public class SkyView : Control
     {
+        // scala del carattere per le scritte disegnate: quella scelta con il cursore, ma non oltre
+        // una misura proporzionata al disegno (su una vista piccola le scritte enormi coprirebbero tutto)
+        double LS { get { return Math.Max(1.0, Math.Min(UiScale.Font, Math.Min(Bounds.Width, Bounds.Height) / 2 / 210)); } }
+
         public PathModel Model;
         public LatLon Station;
         public List<RadiantMark> Marks = new List<RadiantMark>();
@@ -98,7 +102,7 @@ namespace YAMS
         {
             if (!ShowLegend) return 0;
             if (legendCollapsed) return Ft("Legenda ▸", F9, Pal.Fore, FontWeight.Bold).Width + 24;
-            return Math.Min(420, 150 * UiScale.Font);
+            return Math.Min(420, 150 * LS);
         }
 
         // larghezza disponibile per la mappa / volta celeste
@@ -111,7 +115,7 @@ namespace YAMS
 
         void Geom(out double cx, out double cy, out double rad)
         {
-            double H = Bounds.Height, S = UiScale.Font;
+            double H = Bounds.Height, S = LS;
             double w = MapAreaWidth();   // a destra la colonna della legenda
             double s = Math.Min(w, H);
             // margine per la scala dei gradi o per le lettere N/E/S/W, che crescono con il carattere
@@ -185,7 +189,7 @@ namespace YAMS
         static FormattedText Ft(string s, double size, Color c, FontWeight w = FontWeight.Normal)
         {
             return new FormattedText(s ?? "", CultureInfo.CurrentCulture, FlowDirection.LeftToRight,
-                new Typeface(FontFamily.Default, FontStyle.Normal, w), size * UiScale.Font, new ImmutableSolidColorBrush(c));
+                new Typeface(FontFamily.Default, FontStyle.Normal, w), size * LS, new ImmutableSolidColorBrush(c));
         }
 
         static void Txt(DrawingContext ctx, string s, double size, Color c, double x, double y, FontWeight w = FontWeight.Normal)
@@ -270,7 +274,7 @@ namespace YAMS
             double W = Bounds.Width, H = Bounds.Height;
             ctx.DrawRectangle(Pal.B(Pal.Back), null, new Rect(0, 0, W, H));
             if (W < 10 || H < 10) return;
-            double S = UiScale.Font;
+            double S = LS;
             double cx, cy, rad; Geom(out cx, out cy, out rad);
             Rect dome = new Rect(cx - rad, cy - rad, 2 * rad, 2 * rad);
             bool map = ShowMap && TopView;
@@ -604,8 +608,8 @@ namespace YAMS
             IPen tk = Pal.P(Pal.Argb(150, 200, 200, 210), 1);
             IPen rim = Pal.P(Pal.Argb(170, 200, 200, 210), 1.5);
             Color oc = Color.FromRgb(240, 120, 60);
-            int every = UiScale.Font <= 2 ? 30 : 60;   // caratteri grandi: meno scritte
-            double lr = rad + 14 + 0.75 * F9 * UiScale.Font;
+            int every = LS <= 2 ? 30 : 60;   // caratteri grandi: meno scritte
+            double lr = rad + 14 + 0.75 * F9 * LS;
             ctx.DrawEllipse(null, rim, new Point(cx, cy), rad + 3, rad + 3);
             for (int a = 0; a < 360; a += 5)
             {

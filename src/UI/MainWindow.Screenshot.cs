@@ -23,6 +23,7 @@ namespace YAMS
                     sldFont.Value = pct;
                     UiScale.Set(pct / 100.0);   // anche se il cursore non cambia valore
                     ApplyFontScale();
+                    if (pct >= 200) SetRowsVisible(false, false);   // con caratteri grandi: comandi ripiegati
                 }
                 if (!string.IsNullOrEmpty(dx)) { txtDx.Text = dx; Recalc(); }
                 trackTime.Value = Math.Max(trackTime.Minimum, Math.Min(trackTime.Maximum, Math.Round(hours * 4)));

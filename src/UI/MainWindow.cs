@@ -1264,7 +1264,8 @@ namespace YAMS
             if (chartFlux == null) return;
             double f = BandMHz, k = V(numExp);
             double fr = collmSrc != null && collmSrc.FreqMHz > 0 ? collmSrc.FreqMHz : 36.2;
-            lblRadar.Text = collmSrc != null ? "Collm: " + collmSrc.Status : "Nessuna fonte Collm in fonti_radar.csv";
+            lblRadar.Text = (collmSrc != null ? "Collm: " + collmSrc.Status : "Nessuna fonte Collm in fonti_radar.csv")
+                + (collm != null && collm.ScaleNote.Length > 0 ? " - " + collm.ScaleNote : "");
             double scale = MsGeometry.CountScale(fr, f, k);
             lblScaleNote.Text = string.Format(
                 "Stima sperimentale (regole SM6FHZ): meteore/ora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durata dei ping x {4:F3}. " +

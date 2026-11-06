@@ -33,6 +33,8 @@ namespace YAMS
         public double[] HeightCounts = new double[40];  // 70..109 km, bin di 1 km
         public double HeightMode, HeightMean, HeightMedian, HeightSd, HeightTotal;
         public bool ScaleOk = true, HeightScaleOk = true;
+        public double FluxTop = 1200;             // meteore/ora alla tacca piu' alta della scala (letta dall'immagine)
+        public string ScaleNote = "";             // come e' stata ricavata la scala
         public string Problem = "";
     }
 
@@ -145,6 +147,92 @@ namespace YAMS
             return hsh;
         }
 
+        // ---- lettura delle etichette della scala (carattere a matrice del grafico SKiYMET, 7 x 11 pixel) ----
+        // Modelli ricavati dai grafici di Collm del 5/11 e 6/11/2026 (cifre 0 1 2 4 6 7 8 9).
+        static readonly string[][] DigitTemplates =
+        {
+            new[] { "0", "..###../.#...#./#.....#/#.....#/#.....#/#.....#/#.....#/#.....#/#.....#/.#...#./..###.." },
+            new[] { "1", "..#../.##../#.#../..#../..#../..#../..#../..#../..#../..#../#####" },
+            new[] { "2", ".####../#....##/#.....#/......#/.....##/...##../.##..../#....../#....../#....../#######" },
+            new[] { "4", "....#../...##../...##../..#.#../..#.#../.#..#../.#..#../#######/....#../....#../...###." },
+            new[] { "6", ".####../#....##/#.....#/#....../#####../#....##/#.....#/#.....#/#.....#/#....##/.####.." },
+            new[] { "7", "#######/#.....#/......#/.....#./.....#./....#../....#../...#.../...#.../...#.../...#..." },
+            new[] { "8", ".####../#....##/#.....#/#.....#/#....##/.####../#....##/#.....#/#.....#/#....##/.####.." },
+            new[] { "9", ".####../#....##/#.....#/#.....#/#.....#/#....##/.####.#/......#/#.....#/#....##/.####.." },
+            // varianti alte 12 pixel (il grafico ridimensiona il carattere secondo la posizione)
+            new[] { "0", "..###../.#...#./#.....#/#.....#/#.....#/#.....#/#.....#/#.....#/#.....#/.#...#./.#...#./..###.." },
+            new[] { "0", "..###../.#...#./.#...#./#.....#/#.....#/#.....#/#.....#/#.....#/#.....#/#.....#/.#...#./..###.." },
+            new[] { "6", ".####../#....##/#.....#/#....../#####../#....##/#.....#/#.....#/#.....#/#.....#/#....##/.####.." },
+            new[] { "8", "..###../.#...#./#.....#/#.....#/#.....#/#....##/.####../#....##/#.....#/#.....#/#....##/.####.." },
+        };
+
+        // tacche lunghe dell'asse del flusso (7 pixel bianchi a x 93..99), dall'alto in basso
+        static List<int> MajorTicks(int[] px, int w)
+        {
+            List<int> t = new List<int>();
+            for (int y = 60; y <= 230; y++)
+            {
+                bool all = true;
+                for (int x = 93; x <= 99; x++) if (!Is(px, w, x, y, White)) { all = false; break; }
+                if (all) t.Add(y);
+            }
+            return t;
+        }
+
+        // legge l'etichetta accanto alla tacca ymid; null se una cifra non e' riconosciuta
+        static string ReadLabel(int[] px, int w, int x0, int x1, int ymid)
+        {
+            int top = -1, bot = -1;
+            for (int y = ymid - 10; y <= ymid + 10; y++)
+                for (int x = x0; x < x1; x++)
+                    if (Is(px, w, x, y, White)) { if (top < 0) top = y; bot = y; break; }
+            if (top < 0) return null;
+            string res = "";
+            int gx = -1;
+            for (int x = x0; x <= x1; x++)
+            {
+                bool col = false;
+                if (x < x1) for (int y = top; y <= bot; y++) if (Is(px, w, x, y, White)) { col = true; break; }
+                if (col && gx < 0) gx = x;
+                if (!col && gx >= 0)
+                {
+                    char c = MatchGlyph(px, w, gx, x - 1, top, bot);
+                    if (c == '?') return null;
+                    res += c;
+                    gx = -1;
+                }
+            }
+            return res.Length > 0 ? res : null;
+        }
+
+        static char MatchGlyph(int[] px, int w, int gx0, int gx1, int y0, int y1)
+        {
+            // riquadro stretto del carattere
+            int t = -1, b = -1;
+            for (int y = y0; y <= y1; y++)
+                for (int x = gx0; x <= gx1; x++)
+                    if (Is(px, w, x, y, White)) { if (t < 0) t = y; b = y; break; }
+            int gw = gx1 - gx0 + 1, gh = b - t + 1;
+            if (gw <= 2 && gh <= 2) return '.';
+            char best = '?'; int bestD = int.MaxValue;
+            foreach (string[] tp in DigitTemplates)
+            {
+                string[] rows = tp[1].Split('/');
+                int tw = rows[0].Length, th = rows.Length;
+                if (Math.Abs(tw - gw) > 1 || Math.Abs(th - gh) > 1) continue;
+                int d = 0, W = Math.Max(tw, gw), H = Math.Max(th, gh);
+                for (int y = 0; y < H; y++)
+                    for (int x = 0; x < W; x++)
+                    {
+                        bool a = y < th && x < tw && rows[y][x] == '#';
+                        bool g = y < gh && x < gw && Is(px, w, gx0 + x, t + y, White);
+                        if (a != g) d++;
+                    }
+                if (d < bestD) { bestD = d; best = tp[0][0]; }
+            }
+            return bestD <= 8 ? best : '?';
+        }
+
         public static CollmData ParseCollm(string file, DateTime imageUtc)
         {
             CollmData d = new CollmData();
@@ -155,12 +243,30 @@ namespace YAMS
                 int[] px = ReadPixels(bmp, out w, out h);
                 if (w != 720 || h != 720) { d.Problem = "Formato del grafico cambiato (" + w + "x" + h + "): lettura non possibile."; d.ScaleOk = false; return d; }
                 if (!Is(px, w, 101, 150, White) || !Is(px, w, 300, 216, White)) d.Problem += "Assi del flusso non trovati nella posizione attesa. ";
-                d.ScaleOk = Signature(px, w, 40, 96, 60, 226) == FluxScaleSignature;
                 d.HeightScaleOk = Signature(px, w, 515, 705, 640, 672) == HeightScaleSignature;
-                if (!d.ScaleOk) d.Problem += "La scala verticale del flusso e' diversa da quella tarata (0-1200/ora): valori da verificare. ";
-                if (!d.HeightScaleOk) d.Problem += "La scala del grafico delle quote e' cambiata: statistiche delle quote da verificare. ";
+                if (!d.HeightScaleOk) d.Problem += "La scala del grafico delle quote e' cambiata: le statistiche delle quote (moda, media, mediana) restano valide, i conteggi assoluti no. ";
 
-                const int X0 = 101, X1 = 676, Y0 = 216, Ytop = 72;
+                // Scala del flusso: il radar la adatta ai valori del giorno (es. 0-1,0 o 0-1,2 x 10^3).
+                // Si cercano le tacche lunghe dell'asse e si legge l'etichetta della tacca piu' alta.
+                const int X0 = 101, X1 = 676;
+                int Y0 = 216, Ytop = 72;
+                double top;
+                List<int> ticks = MajorTicks(px, w);
+                string lab = ticks.Count >= 2 ? ReadLabel(px, w, 50, 92, ticks[0]) : null;
+                string lab0 = ticks.Count >= 2 ? ReadLabel(px, w, 50, 92, ticks[ticks.Count - 1]) : null;
+                if (lab != null && lab0 == "0.0" && double.TryParse(lab, NumberStyles.Float, CultureInfo.InvariantCulture, out top) && top > 0)
+                {
+                    Ytop = ticks[0]; Y0 = ticks[ticks.Count - 1];
+                    d.FluxTop = top * 1000; d.ScaleOk = true;
+                    d.ScaleNote = "scala letta dal grafico: 0-" + d.FluxTop.ToString("F0", CultureInfo.InvariantCulture) + " meteore/ora";
+                }
+                else
+                {
+                    d.ScaleOk = Signature(px, w, 40, 96, 60, 226) == FluxScaleSignature;
+                    d.FluxTop = 1200;
+                    d.ScaleNote = d.ScaleOk ? "scala tarata 0-1200 meteore/ora" : "scala non letta";
+                    if (!d.ScaleOk) d.Problem += "Non riesco a leggere la scala verticale del flusso (etichetta in cima: " + (lab ?? "?") + "): valori da verificare. ";
+                }
                 for (int hr = 0; hr < 48; hr++)
                 {
                     int xc = (int)Math.Round(X0 + (hr + 0.5) * (X1 - X0) / 48.0);
@@ -170,8 +276,8 @@ namespace YAMS
                         if (yc < 0 && Is(px, w, xc, y, Cyan)) yc = y;
                         if (yr < 0 && Is(px, w, xc, y, Red)) yr = y;
                     }
-                    d.Valid[hr] = yc < 0 ? -1 : (Y0 - yc) * 1200.0 / (Y0 - Ytop);
-                    d.Rejected[hr] = yr < 0 ? -1 : (Y0 - yr) * 1200.0 / (Y0 - Ytop);
+                    d.Valid[hr] = yc < 0 ? -1 : Math.Max(0, (Y0 - yc) * d.FluxTop / (Y0 - Ytop));
+                    d.Rejected[hr] = yr < 0 ? -1 : Math.Max(0, (Y0 - yr) * d.FluxTop / (Y0 - Ytop));
                 }
                 // istogramma delle quote
                 double tot = 0, sum = 0; int best = 0;

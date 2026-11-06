@@ -214,6 +214,7 @@ namespace YAMS
             if (!string.IsNullOrEmpty(Caption))
             {
                 FormattedText ft = Ft(Caption, F85, Pal.Silver);
+                ft.MaxTextWidth = Math.Max(100, Bounds.Width - 12);   // va a capo se la finestra e' stretta
                 ctx.DrawText(ft, new Point(6, H - ft.Height - 4));
             }
         }

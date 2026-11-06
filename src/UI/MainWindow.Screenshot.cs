@@ -20,7 +20,9 @@ namespace YAMS
                 if (!string.IsNullOrEmpty(dx)) { txtDx.Text = dx; Recalc(); }
                 trackTime.Value = Math.Max(trackTime.Minimum, Math.Min(trackTime.Maximum, Math.Round(hours * 4)));
                 UpdateSky();
-                await Task.Delay(8000);   // tempo per scaricare la mappa e i dati dei radar
+                // attende la mappa (Natural Earth) e i dati dei radar, al massimo 60 s
+                for (int k = 0; k < 60 && (sky.MapLines == null || sky.MapLines.Count == 0); k++) await Task.Delay(1000);
+                await Task.Delay(3000);
                 for (int i = 0; i < 9; i++)
                 {
                     tabs.Select(i);

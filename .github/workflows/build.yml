@@ -80,6 +80,8 @@ jobs:
           timeout 180 xvfb-run -a -s "-screen 0 1600x1000x24" ./run/YA-MS --screenshot "$PWD/shots" --dx IN78UO --ore $H || true
           ls -la shots || true
           cp run/data/errore_avvio.txt shots/ 2>/dev/null || true
+          mkdir -p shots/radar && cp run/data/radar/* shots/radar/ 2>/dev/null || true
+          ls run/data/mappa > shots/mappa.txt 2>&1 || true
       - name: Pubblica le fotografie sul ramo ci-screenshots
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |

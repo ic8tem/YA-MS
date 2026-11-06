@@ -198,7 +198,7 @@ namespace YAMS
                 Minimum = min, Maximum = max, Increment = inc,
                 FormatString = "F" + dec.ToString(CultureInfo.InvariantCulture),
                 ClipValueToMinMax = true,
-                Width = width + 48,
+                Width = width + 80,   // spazio per i due pulsanti su/giu'
                 Margin = new Thickness(2, 3),
                 VerticalAlignment = VerticalAlignment.Center,
                 Background = Pal.B(Pal.Back),
@@ -386,7 +386,7 @@ namespace YAMS
             section = new SectionView();
             section.Note = "segmenti = scie (±10 km attorno alla quota) orientate verso il radiante; più spessi = più probabili";
             lvSky = MakeTable(new[] { "Sciame", "Sigla", "ZHR ora", "Azimut", "Elev.", "Effic. %", "Lato", "Punt. migliore", "Sorge", "Tramonta" },
-                              new double[] { 128, 46, 60, 54, 50, 60, 66, 104, 54, 64 });
+                              new double[] { 118, 42, 54, 52, 46, 54, 62, 98, 48, 56 });
             lvSky.RowClicked += i => { if (i >= 0 && i < lvSky.Rows.Count) SelectShower(lvSky.Rows[i].Cells[1]); };
             chkHot = C("Direzioni Hot A / Hot B", true);
             WhenChanged(chkHot, ToggleButton.IsCheckedProperty, () =>
@@ -409,7 +409,7 @@ namespace YAMS
                 sky.InvalidateHeat(); skySmall.InvalidateVisual();
             });
             Border opt = Row(chkHot, chkMap, chkTopView);
-            lblPathInfo = new TextBlock { FontFamily = Pal.Mono, FontSize = 11, Foreground = Pal.B(Pal.Fore), Padding = new Thickness(6), TextWrapping = TextWrapping.NoWrap, ClipToBounds = true };
+            lblPathInfo = new TextBlock { FontFamily = Pal.Mono, FontSize = 11, Foreground = Pal.B(Pal.Fore), Padding = new Thickness(6), TextWrapping = TextWrapping.Wrap, ClipToBounds = true };
             boxLobeWarn = Warn(Pal.OrangeDark, Pal.OrangeText, out lblLobeWarn);
             // avviso radiante troppo alto (sopra 70°, DF5HC / DH9GCD)
             boxHighRad = Warn(Pal.Panel3, Pal.Yellow, out lblHighRad);
@@ -500,7 +500,7 @@ namespace YAMS
             numSens.ValueChanged += (s, e) => UpdateGeometry();
             numQ.ValueChanged += (s, e) => UpdateGeometry();
             Grid sg = new Grid { ColumnDefinitions = new ColumnDefinitions("55*,45*") };
-            txtGeo = new SelectableTextBlock { FontFamily = Pal.Mono, FontSize = 14, Foreground = Pal.B(Pal.Rgb(225, 230, 240)), TextWrapping = TextWrapping.NoWrap };
+            txtGeo = new SelectableTextBlock { FontFamily = Pal.Mono, FontSize = 12.5, Foreground = Pal.B(Pal.Rgb(225, 230, 240)), TextWrapping = TextWrapping.Wrap };
             ScrollViewer geoScroll = new ScrollViewer
             {
                 HorizontalScrollBarVisibility = ScrollBarVisibility.Auto,

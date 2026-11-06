@@ -1,0 +1,176 @@
+// YA-MS - sezione: le scie piu' probabili viste dall'antenna puntata verso il corrispondente
+//
+// Asse orizzontale = azimut rispetto alla direzione del corrispondente (A a sinistra, B a destra),
+// asse verticale = elevazione vista dalla stazione. Ogni scia e' un segmento centrato nel punto di
+// riflessione (quota delle scie) e orientato lungo la direzione di arrivo dello sciame (verso il radiante),
+// da circa 10 km sopra a 10 km sotto la quota: cosi' si vede l'inclinazione con cui le scie attraversano
+// il lobo. Le scie sono quelle che soddisfano la condizione di riflessione speculare (capitolo 5 del
+// manuale): se lo sciame scorre da nord a sud, le riflessioni utili cadono a est e a ovest.
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using Avalonia;
+using Avalonia.Controls;
+using Avalonia.Media;
+using Avalonia.Media.Immutable;
+
+namespace YAMS
+{
+    public class TrailSeg
+    {
+        public Vec3 P;       // punto di riflessione (ECEF, km)
+        public Vec3 S;       // direzione del radiante (versore)
+        public double W;     // peso: ZHR x contributo all'efficienza
+        public string Code;
+        public bool Left;
+    }
+
+    public class SectionView : Control
+    {
+        public PathModel Model;
+        public List<TrailSeg> Trails = new List<TrailSeg>();
+        public double AntennaAz = 0, HpbwDeg = 0, LobeElevDeg = 0;
+        public string Note = "";
+
+        static readonly Color Gainsboro = Color.FromRgb(220, 220, 220);
+
+        public SectionView()
+        {
+            ClipToBounds = true;
+        }
+
+        // azimut (relativo al corrispondente) ed elevazione di un punto ECEF visto dalla stazione
+        bool View(Vec3 q, out double daz, out double el)
+        {
+            Vec3 pa = Astro.Vec(Model.Home, Astro.R + Model.HomeAltKm);
+            Vec3 r = q - pa;
+            double az;
+            Astro.AltAz(Model.Home, r.Unit, out az, out el);
+            daz = Astro.Norm180(az - AntennaAz);
+            return el > -5;
+        }
+
+        static FormattedText Ft(string s, double size, Color c, FontWeight w = FontWeight.Normal)
+        {
+            return new FormattedText(s ?? "", CultureInfo.CurrentCulture, FlowDirection.LeftToRight,
+                new Typeface(FontFamily.Default, FontStyle.Normal, w), size, new ImmutableSolidColorBrush(c));
+        }
+
+        public override void Render(DrawingContext ctx)
+        {
+            double Wd = Bounds.Width, Ht = Bounds.Height;
+            ctx.DrawRectangle(Pal.B(Pal.Back), null, new Rect(0, 0, Wd, Ht));
+            ctx.DrawText(Ft("SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az. " + AntennaAz.ToString("F0") + "°)",
+                12.7, Gainsboro, FontWeight.SemiBold), new Point(6, 4));
+            if (Model == null || !Model.Valid) return;
+
+            double pw = Wd - 44 - 14, ph = Ht - 28 - 40;
+            if (pw < 80 || ph < 40) return;
+            Rect pr = new Rect(44, 28, pw, ph);
+            double xr = Math.Max(60, Math.Ceiling(HpbwDeg * 0.9 / 10) * 10);   // ± gradi di azimut mostrati
+            double ymin = -3, ymax = 25;
+            foreach (HotPoint h in new HotPoint[] { Model.HotA, Model.HotB })
+                if (h != null) ymax = Math.Max(ymax, h.ElevFromHome + 8);
+            ymax = Math.Max(ymax, LobeElevDeg + HpbwDeg / 2 + 3);
+            ymax = Math.Min(60, Math.Ceiling(ymax / 5) * 5);
+
+            Func<double, double> X = a => pr.Left + (a + xr) / (2 * xr) * pr.Width;
+            Func<double, double> Y = v => pr.Bottom - (v - ymin) / (ymax - ymin) * pr.Height;
+
+            // cielo e terreno
+            LinearGradientBrush sky = new LinearGradientBrush
+            {
+                StartPoint = new RelativePoint(0, 0, RelativeUnit.Relative),
+                EndPoint = new RelativePoint(0, 1, RelativeUnit.Relative)
+            };
+            sky.GradientStops.Add(new GradientStop(Color.FromRgb(14, 22, 70), 0));
+            sky.GradientStops.Add(new GradientStop(Color.FromRgb(30, 50, 140), 1));
+            ctx.DrawRectangle(sky, null, pr);
+            ctx.DrawRectangle(Pal.B(Color.FromRgb(40, 34, 30)), null, new Rect(pr.Left, Y(0), pr.Width, pr.Bottom - Y(0)));
+
+            IPen grid = Pal.P(Pal.Argb(55, 200, 200, 230), 1);
+            IPen hor = Pal.P(Pal.Argb(160, 210, 190, 150), 1.2);
+            Color tb = Pal.Argb(200, 225, 225, 235);
+            const double fs = 10;   // 7.5 pt
+            for (double a = -xr; a <= xr + 0.1; a += 10)
+            {
+                ctx.DrawLine(grid, new Point(X(a), pr.Top), new Point(X(a), pr.Bottom));
+                FormattedText t = Ft((a > 0 ? "+" : "") + a.ToString("F0") + "°", fs, tb);
+                ctx.DrawText(t, new Point(X(a) - t.Width / 2, pr.Bottom + 2));
+            }
+            for (double v = 0; v <= ymax + 0.1; v += 5)
+            {
+                ctx.DrawLine(grid, new Point(pr.Left, Y(v)), new Point(pr.Right, Y(v)));
+                FormattedText t = Ft(v.ToString("F0") + "°", fs, tb);
+                ctx.DrawText(t, new Point(pr.Left - t.Width - 5, Y(v) - t.Height / 2));
+            }
+            ctx.DrawLine(hor, new Point(pr.Left, Y(0)), new Point(pr.Right, Y(0)));
+            ctx.DrawText(Ft("← A  (sinistra)", fs, tb), new Point(pr.Left + 4, pr.Bottom + 18));
+            FormattedText sb = Ft("(destra)  B →", fs, tb);
+            ctx.DrawText(sb, new Point(pr.Right - sb.Width - 4, pr.Bottom + 18));
+            FormattedText sc = Ft("azimut rispetto al corrispondente", fs, tb);
+            ctx.DrawText(sc, new Point(pr.Left + pr.Width / 2 - sc.Width / 2, pr.Bottom + 18));
+
+            using (ctx.PushClip(pr))
+            {
+                // lobo dell'antenna (HPBW, cerchio a -3 dB attorno al puntamento)
+                if (HpbwDeg > 0)
+                {
+                    double lx0 = X(-HpbwDeg / 2), lx1 = X(HpbwDeg / 2), ly0 = Y(LobeElevDeg + HpbwDeg / 2), ly1 = Y(LobeElevDeg - HpbwDeg / 2);
+                    ctx.DrawEllipse(Pal.B(Pal.Argb(40, 255, 240, 200)), Pal.P(Pal.Argb(150, 255, 240, 200), 1),
+                        new Rect(lx0, ly0, lx1 - lx0, ly1 - ly0));
+                }
+
+                // scie piu' probabili
+                double wmax = 0;
+                if (Trails != null) foreach (TrailSeg t in Trails) wmax = Math.Max(wmax, t.W);
+                if (wmax > 0)
+                {
+                    List<TrailSeg> ord = new List<TrailSeg>(Trails);
+                    ord.Sort((a, b) => a.W.CompareTo(b.W));   // le piu' forti sopra
+                    foreach (TrailSeg t in ord)
+                    {
+                        double rel = t.W / wmax;
+                        if (rel < 0.04) continue;
+                        double up = Math.Abs(t.S.Dot(t.P.Unit));
+                        double half = Math.Min(60, 10 / Math.Max(0.17, up));   // km lungo la scia per +-10 km di quota
+                        Vec3 q1 = t.P + t.S * half, q2 = t.P - t.S * half;
+                        double a0, e0, a1, e1, am, em;
+                        if (!View(t.P, out am, out em)) continue;
+                        View(q1, out a1, out e1); View(q2, out a0, out e0);
+                        int alpha = (int)(60 + 195 * rel);
+                        IPen sp = new ImmutablePen(new ImmutableSolidColorBrush(Pal.Argb(alpha, 255, 170, 60)), 1.2 + 2.3 * rel, null, PenLineCap.Round);
+                        double r = 4 + 10 * rel;
+                        ctx.DrawEllipse(Pal.B(Pal.Argb((int)(40 * rel), 255, 230, 160)), null, new Point(X(am), Y(em)), r, r);
+                        ctx.DrawLine(sp, new Point(X(a0), Y(e0)), new Point(X(a1), Y(e1)));
+                    }
+                }
+                else
+                    ctx.DrawText(Ft("Nessuna scia prevista: sciami attivi sotto l'orizzonte o con efficienza nulla per questa tratta.", 12, Pal.Silver),
+                        new Point(pr.Left + 10, pr.Top + 10));
+
+                // corrispondente (punto medio) e Hot A / Hot B
+                const double fb = 11.3;   // 8.5 pt grassetto
+                {
+                    double x = X(0), y = Y(Model.ElevToMidDeg);
+                    ctx.DrawEllipse(Pal.B(Pal.Green), null, new Point(x, y), 4, 4);
+                    ctx.DrawText(Ft("DX", fb, Pal.Green, FontWeight.Bold), new Point(x + 5, y - 18));
+                }
+                foreach (HotPoint h in new HotPoint[] { Model.HotA, Model.HotB })
+                {
+                    if (h == null) continue;
+                    Color hc = h.Recommended ? Pal.Red : h.InLobe ? Pal.HotGrey : Pal.HotPink;
+                    double x = X(Astro.Norm180(h.BearingFromHome - AntennaAz)), y = Y(h.ElevFromHome);
+                    ctx.DrawEllipse(Pal.B(hc), null, new Point(x, y), 5, 5);
+                    ctx.DrawText(Ft(h.Label, fb, hc, FontWeight.Bold), new Point(x + 6, y - 18));
+                }
+            }
+            ctx.DrawRectangle(null, Pal.P(Pal.Argb(120, 200, 200, 220), 1), pr);
+            if (!string.IsNullOrEmpty(Note))
+            {
+                FormattedText ft = Ft(Note, 10, Pal.Silver);
+                ctx.DrawText(ft, new Point(pr.Right - ft.Width - 4, pr.Top + 3));
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+# YA-MS - compilazione e installatori per Windows, Linux e Mac.
+# A ogni push sul ramo main: solo compilazione di controllo su Linux (i minuti Mac costano 10 volte, Windows 2 volte).
+# Con un tag vX.Y.Z (es. v1.0.0), o avviandolo a mano: installatori per Windows, Linux e Mac e, con il tag, la Release.
+name: build
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Versione
+        shell: bash
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="1.0.0"; fi
+          echo "VER=$V" >> $GITHUB_ENV
+      - name: Compila
+        run: dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true -p:Version=${{ env.VER }} -p:DebugType=none -o publish/win-x64
+      - name: Installatore (Inno Setup)
+        shell: pwsh
+        run: |
+          $iscc = "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe"
+          if (-not (Test-Path $iscc)) { choco install innosetup --no-progress -y; }
+          & $iscc "/DAppVersion=${{ env.VER }}" "/DSourceDir=..\publish\win-x64" installer\YA-MS.iss
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Zip portatile
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force dist | Out-Null
+          Compress-Archive -Path publish\win-x64\* -DestinationPath dist\YA-MS-${{ env.VER }}-windows-x64-portatile.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows
+          path: dist/*
+
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Versione
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="1.0.0"; fi
+          echo "VER=$V" >> $GITHUB_ENV
+      - name: Compila
+        run: dotnet publish YA-MS.csproj -c Release -r linux-x64 --self-contained true -p:Version=$VER -p:DebugType=none -o publish/linux-x64
+      - name: Pacchetto
+        run: |
+          mkdir -p dist pkg
+          cp -R publish/linux-x64 pkg/YA-MS
+          cp installer/linux-install.sh pkg/YA-MS/installa.sh
+          cp src/Assets/ya-ms-256.png pkg/YA-MS/ya-ms.png
+          chmod +x pkg/YA-MS/installa.sh pkg/YA-MS/YA-MS
+          tar -C pkg -czf dist/YA-MS-$VER-linux-x64.tar.gz YA-MS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux
+          path: dist/*
+
+  macos:
+    runs-on: macos-latest
+    if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
+    strategy:
+      matrix:
+        rid: [ osx-arm64, osx-x64 ]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Versione
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="1.0.0"; fi
+          echo "VER=$V" >> $GITHUB_ENV
+      - name: Compila
+        run: dotnet publish YA-MS.csproj -c Release -r ${{ matrix.rid }} --self-contained true -p:Version=$VER -p:DebugType=none -o publish/${{ matrix.rid }}
+      - name: Pacchetto YA-MS.app e immagine disco
+        run: |
+          APP=pkg/YA-MS/YA-MS.app
+          mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources" dist
+          cp -R publish/${{ matrix.rid }}/. "$APP/Contents/MacOS/"
+          cp -R data "$APP/Contents/Resources/data"
+          cp src/Assets/ya-ms.icns "$APP/Contents/Resources/"
+          sed "s/__VERSION__/$VER/g" installer/Info.plist > "$APP/Contents/Info.plist"
+          chmod +x "$APP/Contents/MacOS/YA-MS"
+          codesign --force --deep -s - "$APP"
+          cp "installer/macos-install.command" "pkg/YA-MS/Installa YA-MS.command"
+          chmod +x "pkg/YA-MS/Installa YA-MS.command"
+          cp LEGGIMI.txt pkg/YA-MS/
+          ARCH=$([ "${{ matrix.rid }}" = "osx-arm64" ] && echo "apple-silicon" || echo "intel")
+          hdiutil create -volname "YA-MS" -srcfolder pkg/YA-MS -ov -format UDZO "dist/YA-MS-$VER-mac-$ARCH.dmg"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macos-${{ matrix.rid }}
+          path: dist/*
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [ windows, linux, macos ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          name: YA-MS ${{ github.ref_name }}
+          body: |
+            YA-MS - previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter.
+            A cura di Costantino IC8TEM.
+
+            - Windows: YA-MS-...-windows-x64-setup.exe (installa in C:\YA-MS) oppure lo zip portatile.
+            - Linux: YA-MS-...-linux-x64.tar.gz, estrarre e lanciare ./installa.sh (installa in ~/YA-MS).
+            - Mac: YA-MS-...-mac-apple-silicon.dmg (M1/M2/M3/M4) o -mac-intel.dmg; aprire il .dmg, clic destro su "Installa YA-MS.command" > Apri (installa in ~/YA-MS).
+          files: dist/*

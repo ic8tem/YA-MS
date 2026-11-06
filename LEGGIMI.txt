@@ -1,0 +1,93 @@
+YA-MS 1.0.0 - a cura di Costantino IC8TEM
+Previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter (50-432 MHz)
+Windows, Linux e Mac.
+
+INSTALLAZIONE
+  Il programma e la sua cartella "data" stanno sempre insieme nella cartella personale YA-MS:
+  tutti i dati e le impostazioni sono li' (niente AppData, niente cartelle di sistema).
+  Windows  YA-MS-x.y.z-windows-x64-setup.exe: installa in C:\YA-MS, senza permessi di amministratore,
+           con icona nel menu Start (e, a scelta, sul desktop). In alternativa lo zip portatile: si estrae
+           dove si vuole e si avvia YA-MS.exe.
+  Linux    YA-MS-x.y.z-linux-x64.tar.gz: estrarre e lanciare ./installa.sh dalla cartella estratta.
+           Installa in ~/YA-MS e aggiunge YA-MS al menu delle applicazioni.
+  Mac      YA-MS-x.y.z-mac-apple-silicon.dmg (processori M1/M2/M3/M4) oppure -mac-intel.dmg.
+           Aprire il .dmg, clic destro su "Installa YA-MS.command" > Apri. Installa in ~/YA-MS.
+           Il programma non e' firmato da Apple: la prima volta il Mac chiede conferma.
+  Le versioni nuove si installano sopra la precedente: impostazioni, archivi del flusso e mappa restano.
+
+STILE
+  "Scia meteorica": viola notte con azzurro, viola, verde chiaro, giallo e arancione,
+  bottoni arrotondati e linguette a pillola. Carattere a spaziatura fissa moderno.
+
+LINGUETTE
+  Volta celeste       a sinistra la PIANTA: mappa d'Europa vista dall'alto (E a destra) con la scala dei gradi,
+                      tratta (verde), Hot A / Hot B (rosso = consigliato, rosa = fuori dal lobo, grigio =
+                      dentro il lobo, con avviso), lobo dell'antenna, linea gialla di scorrimento dello sciame
+                      selezionato (o del piu' favorevole) con i due puntamenti ortogonali in arancione, e le
+                      zone PREV (ellissi chiare): dove cadono ora le scie piu' probabili, per ciascun lato.
+                      A destra: elenco degli sciami; volta celeste con i radianti (sigla IMO, percorso
+                      diurno in ciano; clic = selezione) accanto al testo del calcolo; in basso la SEZIONE:
+                      le scie piu' probabili viste dall'antenna puntata verso il corrispondente (azimut
+                      rispetto al DX in orizzontale, elevazione in verticale, lobo, DX, Hot A / Hot B). La tratta e' sempre quella reale
+                      tra i locator; l'antenna si considera sempre puntata verso il DX (azimut della
+                      tratta), che serve per il lobo. Sulla mappa: clic SINISTRO = locator del corrispondente,
+                      clic DESTRO = locator della mia stazione. Legenda dei simboli a destra.
+                      La mappa (Natural Earth) si scarica da sola al primo avvio in data/mappa.
+  Antenna             lunghezza del boom della Yagi (riga in alto): guadagno con la curva DL6WU e apertura
+                      del lobo a -3 dB con la regola di Kraus; il guadagno passa anche al bilancio.
+  Calcolo             efficienza oraria di ogni sciame attivo per la tratta, con il lato da cui arrivano
+  dell'efficienza     le riflessioni (A = a sinistra verso il corrispondente, B = a destra; spiegato nella
+                      fascia in alto) e indice complessivo della tratta (ZHR x efficienza). In alto il
+                      "colpo d'occhio": ora migliore del giorno, sciame piu' favorevole con il puntamento,
+                      situazione adesso, previsione sperimentale delle prossime ore. Per oggi (e in parte
+                      domani) in fondo alla tabella c'e' anche la riga arancione della previsione sperimentale.
+                      Sotto ogni sciame, in azzurro, la formula di DH9GCD (DF5HC 2018) per confronto.
+                      Il simbolo ↑ segna le ore con il radiante sopra 70° (troppo alto): sulla volta
+                      celeste compare anche un avviso.
+  Flusso radar        controlla ogni 5 minuti tutte le fonti esterne e riscarica solo quelle cambiate; senza
+                      connessione internet compare un avviso (una volta) e la barra in basso diventa rossa.
+                      Legge il grafico del radar SKiYMET di Collm, ne legge i conteggi
+                      orari e l'istogramma delle quote, li archivia in data/flusso_collm.csv e data/quote_collm.csv,
+                      e stima il flusso alla banda scelta con le regole sperimentali di SM6FHZ (lambda^3).
+                      Mostra anche l'immagine del radar di Sodankyla.
+  Attuazione          trasla il flusso di Collm (36,2 MHz) a 144 MHz (o altra frequenza) con lambda^k
+  sperimentale        (k = 3, SM6FHZ) e il fattore di stazione K; previsione delle prossime 24 ore;
+  previsioni          confronto con un file RMOB (es. osservatore GRAVES 143,050 MHz) e stima dell'esponente.
+                      Il file di testo RMOB del mese si scarica indicando il nome dell'osservatore; il prelievo
+                      automatico e' spento di partenza: RMOB chiede ai programmi automatici di non prelevare
+                      quei file, quindi va attivato solo dopo averne avuto il permesso.
+  Geometria e         distanza, punto medio, elevazione con la formula dell'articolo, Hot A / Hot B,
+  attenuazione        attenuazione di tratta (McKinley) per 28-432 MHz, bilancio con potenza e antenna.
+  Sciami              catalogo IMO 2026 con il PROSSIMO massimo: data e ora IMO quando pubblicate
+                      (massimi_imo.csv), altrimenti calcolate dalla longitudine solare.
+  Fonti               elenco delle fonti; la principale e' l'articolo Cerrotta-Sartori.
+  Efficienza -        documento che spiega passo per passo il calcolo dell'efficienza, con la fonte di ogni
+  spiegazione         passo, in capitoli e paragrafi, mostrato come pagina chiara dentro il programma
+                      (data/efficienza_spiegazione.txt), esportabile in Word
+                      (data/efficienza_spiegazione.docx).
+  Mappa quadrati      quadrati Maidenhead lavorati da un file ADIF, una linguetta per banda (50, 70, 144,
+                      222, 432 MHz): arancio = lavorato, verde = confermato (QSL o LoTW). Un nuovo ADIF
+                      sostituisce i dati precedenti; "Cancella memoria" li elimina. Nessun collegamento a LoTW.
+
+MANUALE
+  doc/YA-MS_manuale_calcoli.docx: tutte le equazioni (editor di equazioni di Word) con le fonti.
+
+FILE IN data/
+  sciami.csv               catalogo degli sciami (modificabile)
+  ant_radiante.csv         posizione della sorgente Antielio (IMO, tabella 6)
+  fonti_radar.csv          indirizzi dei radar (attivo=1/0)
+  regole_sperimentali.csv  costanti e regole usate, con la fonte
+  massimi_imo.csv          date e ore dei massimi pubblicate dall'IMO (2026, 2027): aggiungere gli anni nuovi
+  config.ini               impostazioni (creato dal programma)
+  flusso_collm.csv         archivio orario del flusso letto dal radar (creato dal programma)
+  quote_collm.csv          archivio delle quote delle scie (creato dal programma)
+  radar/                   ultime immagini scaricate
+  adif_quadrati.csv        quadrati letti dall'ultimo ADIF (creato dal programma)
+
+LIMITI NOTI
+  - L'efficienza e' un modello sperimentale (riflessione speculare + attenuazione delle scie sottodense),
+    da confrontare con MCG_MS, MS-Soft e con l'esperienza in banda.
+  - La lettura del grafico di Collm e' tarata sul formato del 5/11/2026: se cambia la scala o il formato,
+    il programma lo segnala nella linguetta Flusso radar.
+  - La stima del flusso a 50/144/432 MHz con lambda^3 e' una regola sperimentale (SM6FHZ).
+  - Prima di distribuire il programma va chiesto il permesso agli enti dei radar.

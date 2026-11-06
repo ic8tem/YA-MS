@@ -57,6 +57,7 @@ namespace YAMS
 
         static async Task ShowAsync(Window w, Window owner)
         {
+            w.Opened += (s, e) => UiScale.Apply(w);   // stessa scala del carattere della finestra principale
             if (owner != null && owner.IsVisible)
             {
                 await w.ShowDialog(owner);
@@ -83,7 +84,7 @@ namespace YAMS
             Window w = new Window
             {
                 Title = title,
-                Width = 560,
+                Width = 560 * Math.Min(2.0, UiScale.Font),   // piu' larga con il carattere ingrandito
                 SizeToContent = SizeToContent.Height,
                 CanResize = false,
                 ShowInTaskbar = false,

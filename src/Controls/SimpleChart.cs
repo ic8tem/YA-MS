@@ -46,6 +46,21 @@ namespace YAMS
             ClipToBounds = true;
         }
 
+        // ridisegno quando cambia la scala del carattere
+        protected override void OnAttachedToVisualTree(VisualTreeAttachmentEventArgs e)
+        {
+            base.OnAttachedToVisualTree(e);
+            UiScale.Changed += OnScaleChanged;
+        }
+
+        protected override void OnDetachedFromVisualTree(VisualTreeAttachmentEventArgs e)
+        {
+            base.OnDetachedFromVisualTree(e);
+            UiScale.Changed -= OnScaleChanged;
+        }
+
+        void OnScaleChanged() { InvalidateMeasure(); InvalidateVisual(); }
+
         static double NiceMax(double v)
         {
             if (v <= 0) return 1;
@@ -58,7 +73,7 @@ namespace YAMS
         static FormattedText Ft(string s, double size, Color c, FontWeight w = FontWeight.Normal)
         {
             return new FormattedText(s ?? "", CultureInfo.CurrentCulture, FlowDirection.LeftToRight,
-                new Typeface(FontFamily.Default, FontStyle.Normal, w), size, new ImmutableSolidColorBrush(c));
+                new Typeface(FontFamily.Default, FontStyle.Normal, w), size * UiScale.Font, new ImmutableSolidColorBrush(c));
         }
 
         // testo ruotato di 90° (si legge dal basso verso l'alto), centrato verticalmente su cy
@@ -76,9 +91,6 @@ namespace YAMS
             string[] xl = XLabels ?? new string[0];
             List<ChartSeries> series = Series ?? new List<ChartSeries>();
             foreach (ChartSeries s in series) if (s.Values != null) n = Math.Max(n, s.Values.Length);
-            double pw = Wd - 58 - 58, ph = Ht - 30 - 42;
-            if (pw < 50 || ph < 30) return;
-            Rect pr = new Rect(58, 30, pw, ph);
             double ymax = 0, y2max = 0;
             bool any2 = false;
             foreach (ChartSeries s in series)
@@ -89,10 +101,26 @@ namespace YAMS
             }
             ymax = YMaxFixed > 0 ? YMaxFixed : NiceMax(ymax);
             y2max = Y2MaxFixed > 0 ? Y2MaxFixed : NiceMax(y2max);
+            // margini che si allargano con il carattere: titolo, scritte degli assi, etichette ruotate
+            FormattedText titleFt = Ft(Title, F10, Gainsboro, FontWeight.SemiBold);
+            double lh = Ft("0", F8, Gainsboro).Height;
+            double yw = 0, y2w = 0;
+            for (int i = 0; i <= 5; i++)
+            {
+                yw = Math.Max(yw, Ft(Fmt(ymax * i / 5), F8, Gainsboro).Width);
+                if (any2) y2w = Math.Max(y2w, Ft(Fmt(y2max * i / 5), F8, Gainsboro).Width);
+            }
+            double ml = Math.Max(58, 4 + (string.IsNullOrEmpty(YLabel) ? 0 : lh + 4) + yw + 8);
+            double mr = Math.Max(58, 4 + (string.IsNullOrEmpty(Y2Label) ? 0 : lh + 4) + y2w + 8);
+            double mt = Math.Max(30, titleFt.Height + 12);
+            double mb = Math.Max(42, lh + 28);
+            double pw = Wd - ml - mr, ph = Ht - mt - mb;
+            if (pw < 50 || ph < 30) return;
+            Rect pr = new Rect(ml, mt, pw, ph);
 
             IPen grid = Pal.P(Pal.Border, 1);
             IPen axis = Pal.P(Color.FromRgb(150, 150, 150), 1);
-            ctx.DrawText(Ft(Title, F10, Gainsboro, FontWeight.SemiBold), new Point(pr.Left, 6));
+            ctx.DrawText(titleFt, new Point(pr.Left, 6));
             for (int i = 0; i <= 5; i++)
             {
                 double y = pr.Bottom - pr.Height * i / 5.0;
@@ -115,8 +143,13 @@ namespace YAMS
             }
             if (n == 0) { ctx.DrawRectangle(null, axis, pr); return; }
             double bw = pr.Width / n;
+            // meno scritte sull'asse x se si sovrapporrebbero (caratteri grandi o grafico stretto)
+            double xw = 0;
+            foreach (string t in xl) if (t != null) xw = Math.Max(xw, Ft(t, F8, Gainsboro).Width);
+            int every = Math.Max(1, XLabelEvery);
+            while (every < n && bw * every < xw + 6) every += Math.Max(1, XLabelEvery);
             for (int i = 0; i < n; i++)
-                if (i < xl.Length && (i % Math.Max(1, XLabelEvery) == 0))
+                if (i < xl.Length && (i % every == 0))
                 {
                     double x = pr.Left + bw * (i + 0.5);
                     ctx.DrawLine(grid, new Point(x, pr.Top), new Point(x, pr.Bottom));
@@ -183,7 +216,8 @@ namespace YAMS
             List<ChartSeries> items = new List<ChartSeries>();
             foreach (ChartSeries s in series) if (s.Values != null && !string.IsNullOrEmpty(s.Name)) items.Add(s);
             if (items.Count == 0) return;
-            const double sample = 22, gap = 18, pad = 6, rowH = 18;
+            double S = UiScale.Font;
+            double sample = 22 * S, gap = 18 * S, pad = 6, rowH = Math.Max(18, Ft("Ag", F8, Gainsboro).Height + 4);
             double maxW = pr.Width - 8;
             // disposizione su una o piu' righe
             List<FormattedText> fts = new List<FormattedText>();
@@ -207,7 +241,7 @@ namespace YAMS
                 double ix = bx + pad + pos[i].X, iy = by + pad + pos[i].Y;
                 double cyl = iy + rowH / 2 - 2;
                 if (s.Bars)
-                    ctx.DrawRectangle(Pal.B(Pal.A(170, s.Color)), null, new Rect(ix + 6, cyl - 5, 10, 10));
+                    ctx.DrawRectangle(Pal.B(Pal.A(170, s.Color)), null, new Rect(ix + sample / 2 - 5, cyl - 5, 10, 10));
                 else
                     ctx.DrawLine(SeriesPen(s), new Point(ix, cyl), new Point(ix + sample, cyl));
                 ctx.DrawText(fts[i], new Point(ix + sample + 6, cyl - fts[i].Height / 2));

@@ -39,6 +39,21 @@ namespace YAMS
             ClipToBounds = true;
         }
 
+        // ridisegno quando cambia la scala del carattere
+        protected override void OnAttachedToVisualTree(VisualTreeAttachmentEventArgs e)
+        {
+            base.OnAttachedToVisualTree(e);
+            UiScale.Changed += OnScaleChanged;
+        }
+
+        protected override void OnDetachedFromVisualTree(VisualTreeAttachmentEventArgs e)
+        {
+            base.OnDetachedFromVisualTree(e);
+            UiScale.Changed -= OnScaleChanged;
+        }
+
+        void OnScaleChanged() { InvalidateMeasure(); InvalidateVisual(); }
+
         // azimut (relativo al corrispondente) ed elevazione di un punto ECEF visto dalla stazione
         bool View(Vec3 q, out double daz, out double el)
         {
@@ -53,20 +68,27 @@ namespace YAMS
         static FormattedText Ft(string s, double size, Color c, FontWeight w = FontWeight.Normal)
         {
             return new FormattedText(s ?? "", CultureInfo.CurrentCulture, FlowDirection.LeftToRight,
-                new Typeface(FontFamily.Default, FontStyle.Normal, w), size, new ImmutableSolidColorBrush(c));
+                new Typeface(FontFamily.Default, FontStyle.Normal, w), size * UiScale.Font, new ImmutableSolidColorBrush(c));
         }
 
         public override void Render(DrawingContext ctx)
         {
             double Wd = Bounds.Width, Ht = Bounds.Height;
             ctx.DrawRectangle(Pal.B(Pal.Back), null, new Rect(0, 0, Wd, Ht));
-            ctx.DrawText(Ft("SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az. " + AntennaAz.ToString("F0") + "°)",
-                12.7, Gainsboro, FontWeight.SemiBold), new Point(6, 4));
+            FormattedText title = Ft("SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az. " + AntennaAz.ToString("F0") + "°)",
+                12.7, Gainsboro, FontWeight.SemiBold);
+            title.MaxTextWidth = Math.Max(50, Wd - 12);   // va a capo se lo spazio non basta
+            ctx.DrawText(title, new Point(6, 4));
             if (Model == null || !Model.Valid) return;
 
-            double pw = Wd - 44 - 14, ph = Ht - 28 - 40;
+            const double fs = 10;   // 7.5 pt
+            Color tb = Pal.Argb(200, 225, 225, 235);
+            // margini che crescono con il carattere: a sinistra le elevazioni, sotto due righe di scritte
+            FormattedText probe = Ft("+60°", fs, tb);
+            double left = Math.Max(44, Ft("55°", fs, tb).Width + 14), top = Math.Max(28, title.Height + 10), bottom = Math.Max(40, 2 * probe.Height + 14);
+            double pw = Wd - left - 14, ph = Ht - top - bottom;
             if (pw < 80 || ph < 40) return;
-            Rect pr = new Rect(44, 28, pw, ph);
+            Rect pr = new Rect(left, top, pw, ph);
             double xr = Math.Max(60, Math.Ceiling(HpbwDeg * 0.9 / 10) * 10);   // ± gradi di azimut mostrati
             double ymin = -3, ymax = 25;
             foreach (HotPoint h in new HotPoint[] { Model.HotA, Model.HotB })
@@ -90,26 +112,36 @@ namespace YAMS
 
             IPen grid = Pal.P(Pal.Argb(55, 200, 200, 230), 1);
             IPen hor = Pal.P(Pal.Argb(160, 210, 190, 150), 1.2);
-            Color tb = Pal.Argb(200, 225, 225, 235);
-            const double fs = 10;   // 7.5 pt
+            // con caratteri grandi le scritte degli assi si diradano per non sovrapporsi
+            double px10 = pr.Width * 10 / (2 * xr);
+            int kx = 1; while (kx < 12 && kx * px10 < probe.Width + 6) kx++;
+            double px5 = pr.Height * 5 / (ymax - ymin);
+            int ky = 1; while (ky < 12 && ky * px5 < probe.Height + 2) ky++;
             for (double a = -xr; a <= xr + 0.1; a += 10)
             {
                 ctx.DrawLine(grid, new Point(X(a), pr.Top), new Point(X(a), pr.Bottom));
+                if (Math.Round(a / 10) % kx != 0) continue;
                 FormattedText t = Ft((a > 0 ? "+" : "") + a.ToString("F0") + "°", fs, tb);
                 ctx.DrawText(t, new Point(X(a) - t.Width / 2, pr.Bottom + 2));
             }
-            for (double v = 0; v <= ymax + 0.1; v += 5)
+            int iv = 0;
+            for (double v = 0; v <= ymax + 0.1; v += 5, iv++)
             {
                 ctx.DrawLine(grid, new Point(pr.Left, Y(v)), new Point(pr.Right, Y(v)));
+                if (iv % ky != 0) continue;
                 FormattedText t = Ft(v.ToString("F0") + "°", fs, tb);
                 ctx.DrawText(t, new Point(pr.Left - t.Width - 5, Y(v) - t.Height / 2));
             }
             ctx.DrawLine(hor, new Point(pr.Left, Y(0)), new Point(pr.Right, Y(0)));
-            ctx.DrawText(Ft("← A  (sinistra)", fs, tb), new Point(pr.Left + 4, pr.Bottom + 18));
+            double row2 = pr.Bottom + 4 + probe.Height;
+            FormattedText sa = Ft("← A  (sinistra)", fs, tb);
+            ctx.DrawText(sa, new Point(pr.Left + 4, row2));
             FormattedText sb = Ft("(destra)  B →", fs, tb);
-            ctx.DrawText(sb, new Point(pr.Right - sb.Width - 4, pr.Bottom + 18));
+            ctx.DrawText(sb, new Point(pr.Right - sb.Width - 4, row2));
             FormattedText sc = Ft("azimut rispetto al corrispondente", fs, tb);
-            ctx.DrawText(sc, new Point(pr.Left + pr.Width / 2 - sc.Width / 2, pr.Bottom + 18));
+            // la scritta centrale solo se c'e' spazio tra le due laterali
+            if (sc.Width + sa.Width + sb.Width + 24 < pr.Width)
+                ctx.DrawText(sc, new Point(pr.Left + pr.Width / 2 - sc.Width / 2, row2));
 
             using (ctx.PushClip(pr))
             {
@@ -149,27 +181,38 @@ namespace YAMS
                     ctx.DrawText(Ft("Nessuna scia prevista: sciami attivi sotto l'orizzonte o con efficienza nulla per questa tratta.", 12, Pal.Silver),
                         new Point(pr.Left + 10, pr.Top + 10));
 
-                // corrispondente (punto medio) e Hot A / Hot B
-                const double fb = 11.3;   // 8.5 pt grassetto
-                {
-                    double x = X(0), y = Y(Model.ElevToMidDeg);
-                    ctx.DrawEllipse(Pal.B(Pal.Green), null, new Point(x, y), 4, 4);
-                    ctx.DrawText(Ft("DX", fb, Pal.Green, FontWeight.Bold), new Point(x + 5, y - 18));
-                }
+            }
+            ctx.DrawRectangle(null, Pal.P(Pal.Argb(120, 200, 200, 220), 1), pr);
+            // etichette senza sovrapposizioni (con alone): prima i punti e la nota come ostacoli
+            LabelPlacer lp = new LabelPlacer(pr);
+            if (!string.IsNullOrEmpty(Note))
+            {
+                FormattedText ft = Ft(Note, 10, Pal.Silver);
+                ft.MaxTextWidth = Math.Max(50, pr.Width - 8);
+                Point np = new Point(Math.Max(pr.Left + 4, pr.Right - ft.Width - 4), pr.Top + 3);
+                ctx.DrawText(ft, np);
+                lp.Block(new Rect(np.X - 2, np.Y - 2, ft.Width + 4, ft.Height + 4));
+            }
+            // corrispondente (punto medio) e Hot A / Hot B
+            const double fb = 11.3;   // 8.5 pt grassetto
+            using (ctx.PushClip(pr))
+            {
+                Point pd = new Point(X(0), Y(Model.ElevToMidDeg));
+                ctx.DrawEllipse(Pal.B(Pal.Green), null, pd, 4, 4);
+                lp.BlockPoint(pd, 6);
+                List<HotPoint> hl = new List<HotPoint>(); List<Point> hp = new List<Point>(); List<Color> hcs = new List<Color>();
                 foreach (HotPoint h in new HotPoint[] { Model.HotA, Model.HotB })
                 {
                     if (h == null) continue;
                     Color hc = h.Recommended ? Pal.Red : h.InLobe ? Pal.HotGrey : Pal.HotPink;
-                    double x = X(Astro.Norm180(h.BearingFromHome - AntennaAz)), y = Y(h.ElevFromHome);
-                    ctx.DrawEllipse(Pal.B(hc), null, new Point(x, y), 5, 5);
-                    ctx.DrawText(Ft(h.Label, fb, hc, FontWeight.Bold), new Point(x + 6, y - 18));
+                    Point p = new Point(X(Astro.Norm180(h.BearingFromHome - AntennaAz)), Y(h.ElevFromHome));
+                    ctx.DrawEllipse(Pal.B(hc), null, p, 5, 5);
+                    lp.BlockPoint(p, 6);
+                    hl.Add(h); hp.Add(p); hcs.Add(hc);
                 }
-            }
-            ctx.DrawRectangle(null, Pal.P(Pal.Argb(120, 200, 200, 220), 1), pr);
-            if (!string.IsNullOrEmpty(Note))
-            {
-                FormattedText ft = Ft(Note, 10, Pal.Silver);
-                ctx.DrawText(ft, new Point(pr.Right - ft.Width - 4, pr.Top + 3));
+                lp.Place(ctx, Ft("DX", fb, Pal.Green, FontWeight.Bold), pd, 0, false, false, Pal.Green);
+                for (int i = 0; i < hl.Count; i++)
+                    lp.Place(ctx, Ft(hl[i].Label, fb, hcs[i], FontWeight.Bold), hp[i], hl[i] == Model.HotA ? -45 : 45, false, false, hcs[i]);
             }
         }
     }

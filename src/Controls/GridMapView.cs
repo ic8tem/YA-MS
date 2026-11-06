@@ -38,6 +38,21 @@ namespace YAMS
             Focusable = true;
         }
 
+        // ridisegno quando cambia la scala del carattere
+        protected override void OnAttachedToVisualTree(VisualTreeAttachmentEventArgs e)
+        {
+            base.OnAttachedToVisualTree(e);
+            UiScale.Changed += OnScaleChanged;
+        }
+
+        protected override void OnDetachedFromVisualTree(VisualTreeAttachmentEventArgs e)
+        {
+            base.OnDetachedFromVisualTree(e);
+            UiScale.Changed -= OnScaleChanged;
+        }
+
+        void OnScaleChanged() { InvalidateMeasure(); InvalidateVisual(); }
+
         Dictionary<string, List<GridQso>> ByGrid()
         {
             Dictionary<string, List<GridQso>> d = new Dictionary<string, List<GridQso>>();
@@ -88,7 +103,7 @@ namespace YAMS
         static FormattedText Ft(string s, double size, Color c, FontWeight w = FontWeight.Normal)
         {
             return new FormattedText(s ?? "", CultureInfo.CurrentCulture, FlowDirection.LeftToRight,
-                new Typeface(FontFamily.Default, FontStyle.Normal, w), size, new ImmutableSolidColorBrush(c));
+                new Typeface(FontFamily.Default, FontStyle.Normal, w), size * UiScale.Font, new ImmutableSolidColorBrush(c));
         }
 
         static Rect RectOf(Point a, Point b)
@@ -165,14 +180,16 @@ namespace YAMS
                 FormattedText t = Ft(string.Format("{0}: {1} quadrati lavorati, {2} confermati", BandLabel(), d.Count, conf), 12, White, FontWeight.Bold);
                 FormattedText t1 = Ft("lavorato", 11, Gainsboro);
                 FormattedText t2 = Ft("confermato (QSL o LoTW)", 11, Gainsboro);
+                // altezze ricavate dal testo: il riquadro cresce con il carattere
                 double bw = Math.Max(t.Width, 30 + t1.Width + 30 + t2.Width) + 14;
-                ctx.DrawRectangle(Pal.B(Pal.Argb(200, 20, 20, 30)), null, new Rect(6, 6, bw, 46));
+                double ry = 9 + t.Height + 4, rh = Math.Max(t1.Height, 10), cyr = ry + rh / 2;
+                ctx.DrawRectangle(Pal.B(Pal.Argb(200, 20, 20, 30)), null, new Rect(6, 6, bw, ry + rh + 4 - 6));
                 ctx.DrawText(t, new Point(12, 9));
-                ctx.DrawRectangle(Pal.B(Color.FromRgb(230, 130, 30)), null, new Rect(12, 32, 10, 10));
-                ctx.DrawText(t1, new Point(26, 37 - t1.Height / 2));
+                ctx.DrawRectangle(Pal.B(Color.FromRgb(230, 130, 30)), null, new Rect(12, cyr - 5, 10, 10));
+                ctx.DrawText(t1, new Point(26, cyr - t1.Height / 2));
                 double x2 = 26 + t1.Width + 16;
-                ctx.DrawRectangle(Pal.B(Color.FromRgb(60, 170, 90)), null, new Rect(x2, 32, 10, 10));
-                ctx.DrawText(t2, new Point(x2 + 14, 37 - t2.Height / 2));
+                ctx.DrawRectangle(Pal.B(Color.FromRgb(60, 170, 90)), null, new Rect(x2, cyr - 5, 10, 10));
+                ctx.DrawText(t2, new Point(x2 + 14, cyr - t2.Height / 2));
             }
         }
 

@@ -79,6 +79,7 @@ jobs:
           H=$(python3 -c "import datetime as d;n=d.datetime.utcnow();t=(n+d.timedelta(days=1)).replace(hour=1,minute=0,second=0,microsecond=0) if n.hour>=1 else n.replace(hour=1,minute=0,second=0,microsecond=0);print(round((t-n).total_seconds()/3600,2))")
           cp -R publish/linux-x64 run
           timeout 180 xvfb-run -a -s "-screen 0 1600x1000x24" ./run/YA-MS --screenshot "$PWD/shots" --dx IN78UO --ore $H || true
+          timeout 180 xvfb-run -a -s "-screen 0 1600x1000x24" ./run/YA-MS --screenshot "$PWD/shots/carattere250" --dx JO62QM --ore 0 --carattere 250 || true
           ls -la shots || true
           cp run/data/errore_avvio.txt shots/ 2>/dev/null || true
           mkdir -p shots/radar && cp run/data/radar/* shots/radar/ 2>/dev/null || true

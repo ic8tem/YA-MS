@@ -11,6 +11,7 @@ using System.Globalization;
 using System.Runtime.InteropServices;
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Input;
 using Avalonia.Media;
 using Avalonia.Media.Imaging;
 using Avalonia.Media.Immutable;
@@ -38,6 +39,7 @@ namespace YAMS
         public List<System.Drawing.PointF[]> MapLines = new List<System.Drawing.PointF[]>();     // coste (lon, lat)
         public List<System.Drawing.PointF[]> MapBorders = new List<System.Drawing.PointF[]>();   // confini (lon, lat)
         public string Caption = "";
+        public bool DrawCaption = true;   // false: didascalia e scala mostrate dalla finestra sotto la mappa
         // pianta: senza radianti e senza cerchi di elevazione, con la scala dei gradi; cielo piccolo: senza legenda
         public bool ShowRadiants = true, ShowSkyRings = true, ShowLegend = true, ShowDial = false;
         public List<PrevSpot> Prev = new List<PrevSpot>();   // zone PREV (punti di riflessione piu' probabili)
@@ -54,19 +56,67 @@ namespace YAMS
         // dimensioni dei caratteri (1 pt WinForms ~ 1.33 px)
         const double F7 = 9.3, F75 = 10, F8 = 10.7, F85 = 11.3, F9 = 12, F12 = 16;
 
+        bool legendCollapsed;    // legenda ripiegata (clic sull'intestazione)
+        Rect legendHeader;       // zona cliccabile dell'intestazione della legenda
+
         public SkyView()
         {
             ClipToBounds = true;
+        }
+
+        // ridisegno quando cambia la scala del carattere (iscrizione solo mentre il controllo e' visibile nell'albero)
+        protected override void OnAttachedToVisualTree(VisualTreeAttachmentEventArgs e)
+        {
+            base.OnAttachedToVisualTree(e);
+            UiScale.Changed += OnScaleChanged;
+        }
+
+        protected override void OnDetachedFromVisualTree(VisualTreeAttachmentEventArgs e)
+        {
+            base.OnDetachedFromVisualTree(e);
+            UiScale.Changed -= OnScaleChanged;
+        }
+
+        void OnScaleChanged() { InvalidateMeasure(); InvalidateVisual(); }
+
+        // clic sull'intestazione della legenda: ripiega / riapre la colonna
+        protected override void OnPointerPressed(PointerPressedEventArgs e)
+        {
+            base.OnPointerPressed(e);
+            if (!ShowLegend) return;
+            Point p = e.GetPosition(this);
+            if (legendHeader.Width > 0 && legendHeader.Contains(p))
+            {
+                legendCollapsed = !legendCollapsed;
+                e.Handled = true;
+                InvalidateVisual();
+            }
+        }
+
+        // larghezza della colonna della legenda (a destra, fuori dalla mappa)
+        double LegendWidth()
+        {
+            if (!ShowLegend) return 0;
+            if (legendCollapsed) return Ft("Legenda ▸", F9, Pal.Fore, FontWeight.Bold).Width + 24;
+            return Math.Min(420, 150 * UiScale.Font);
+        }
+
+        // larghezza disponibile per la mappa / volta celeste
+        double MapAreaWidth()
+        {
+            return ShowLegend ? Math.Max(20, Bounds.Width - LegendWidth() - 10) : Bounds.Width;
         }
 
         public void InvalidateHeat() { heatFor = null; InvalidateVisual(); }
 
         void Geom(out double cx, out double cy, out double rad)
         {
-            double W = Bounds.Width, H = Bounds.Height;
-            double w = ShowLegend ? W - 120 : W;   // spazio a destra per la legenda
+            double H = Bounds.Height, S = UiScale.Font;
+            double w = MapAreaWidth();   // a destra la colonna della legenda
             double s = Math.Min(w, H);
-            rad = s / 2.0 - (ShowDial ? 40.0 : (ShowLegend ? 34.0 : 22.0)); if (rad < 20) rad = 20;
+            // margine per la scala dei gradi o per le lettere N/E/S/W, che crescono con il carattere
+            double pad = ShowDial ? (S <= 2 ? 30 : 26) + F9 * S : (ShowLegend ? 18 + F12 * S : 10 + F9 * S);
+            rad = s / 2.0 - pad; if (rad < 20) rad = 20;
             cx = w / 2.0; cy = H / 2.0;
         }
 
@@ -131,11 +181,11 @@ namespace YAMS
             }
         }
 
-        // ---------- testo ----------
+        // ---------- testo (dimensioni moltiplicate per la scala del carattere) ----------
         static FormattedText Ft(string s, double size, Color c, FontWeight w = FontWeight.Normal)
         {
             return new FormattedText(s ?? "", CultureInfo.CurrentCulture, FlowDirection.LeftToRight,
-                new Typeface(FontFamily.Default, FontStyle.Normal, w), size, new ImmutableSolidColorBrush(c));
+                new Typeface(FontFamily.Default, FontStyle.Normal, w), size * UiScale.Font, new ImmutableSolidColorBrush(c));
         }
 
         static void Txt(DrawingContext ctx, string s, double size, Color c, double x, double y, FontWeight w = FontWeight.Normal)
@@ -148,14 +198,84 @@ namespace YAMS
             return new ImmutablePen(new ImmutableSolidColorBrush(c), w, null, PenLineCap.Round, PenLineJoin.Round);
         }
 
+        // direzione sullo schermo (0 = su, 90 = destra) di un azimut: con la vista dal basso E e W si scambiano
+        double ScreenDir(double az) { return Sgn * az; }
+
+        static Point PA(double screenDeg, double r, double cx, double cy)
+        {
+            double a = screenDeg * Astro.D2R;
+            return new Point(cx + r * Math.Sin(a), cy - r * Math.Cos(a));
+        }
+
+        // ---------- etichette: raccolte durante il disegno, piazzate alla fine senza sovrapposizioni ----------
+        sealed class Lab
+        {
+            public string Text; public double Size; public Color Col; public bool Bold;
+            public Point Anchor; public double Pref; public bool Side; public bool Optional;
+            public int Pri, Seq, MaxRing = 6; public bool Halo = true;
+            public bool Flow; public double FlowAz;          // scritta dello sciame lungo la sua linea
+            public bool Fixed; public Point FixedAt;        // posizione esatta (angolo in alto a sinistra del testo), solo se libera
+        }
+
+        List<Lab> labs = new List<Lab>();
+        LabelPlacer lp;
+
+        Lab AddLab(int pri, string text, double size, Color col, bool bold, Point anchor, double pref, bool side = false, bool optional = false)
+        {
+            Lab l = new Lab { Pri = pri, Seq = labs.Count, Text = text, Size = size, Col = col, Bold = bold, Anchor = anchor, Pref = pref, Side = side, Optional = optional };
+            labs.Add(l);
+            return l;
+        }
+
+        void PlaceLabels(DrawingContext ctx, double cx, double cy, double rad)
+        {
+            labs.Sort((a, b) => a.Pri != b.Pri ? a.Pri.CompareTo(b.Pri) : a.Seq.CompareTo(b.Seq));
+            foreach (Lab l in labs)
+            {
+                FormattedText ft = Ft(l.Text, l.Size, l.Col, l.Bold ? FontWeight.Bold : FontWeight.Normal);
+                if (l.Fixed)
+                {
+                    Size bs = LabelPlacer.BoxSize(ft);
+                    Rect r = new Rect(l.FixedAt.X - 4, l.FixedAt.Y - 1, bs.Width, bs.Height);
+                    if (lp.Free(r)) lp.Put(ctx, ft, r, l.Halo);
+                    continue;
+                }
+                if (l.Flow && PlaceFlow(ctx, ft, l.FlowAz, cx, cy, rad)) continue;
+                lp.Place(ctx, ft, l.Anchor, l.Pref, l.Side, l.Optional, l.Col, l.Halo, l.MaxRing);
+            }
+            labs.Clear();
+        }
+
+        // Scritta dello sciame: orizzontale, lungo la sua linea (dal bordo verso il centro, ai due capi e sui due lati),
+        // scostata dalla linea inclinata quanto basta per non attraversarla
+        bool PlaceFlow(DrawingContext ctx, FormattedText ft, double az, double cx, double cy, double rad)
+        {
+            Size bs = LabelPlacer.BoxSize(ft);
+            double sa = ScreenDir(az) * Astro.D2R;
+            double d = bs.Width / 2 * Math.Abs(Math.Cos(sa)) + bs.Height / 2 * Math.Abs(Math.Sin(sa)) + 5;
+            foreach (double rr in new double[] { 0.85, 0.75, 0.65, 0.55, 0.45, 0.35, 0.25 })
+                foreach (double end in new double[] { az, az + 180 })
+                    foreach (double side in new double[] { 90, -90 })
+                    {
+                        Point an = PA(ScreenDir(end), rad * rr, cx, cy);
+                        double e = (ScreenDir(end) + side) * Astro.D2R;
+                        Rect r = LabelPlacer.At(ft, an.X + Math.Sin(e) * d, an.Y - Math.Cos(e) * d);
+                        if (lp.Free(r)) { lp.Put(ctx, ft, r, true); return true; }
+                    }
+            return false;
+        }
+
         public override void Render(DrawingContext ctx)
         {
             double W = Bounds.Width, H = Bounds.Height;
             ctx.DrawRectangle(Pal.B(Pal.Back), null, new Rect(0, 0, W, H));
             if (W < 10 || H < 10) return;
+            double S = UiScale.Font;
             double cx, cy, rad; Geom(out cx, out cy, out rad);
             Rect dome = new Rect(cx - rad, cy - rad, 2 * rad, 2 * rad);
             bool map = ShowMap && TopView;
+            lp = new LabelPlacer(new Rect(0, 0, MapAreaWidth(), H));
+            labs.Clear();
 
             RadialGradientBrush pb = new RadialGradientBrush();
             pb.GradientStops.Add(new GradientStop(map ? Color.FromRgb(22, 36, 110) : Color.FromRgb(32, 52, 160), 0));
@@ -165,6 +285,14 @@ namespace YAMS
             {
                 using (ctx.PushGeometryClip(new EllipseGeometry(dome)))
                     DrawMap(ctx, cx, cy, rad);
+                // scritte dei cerchi delle distanze (le meno importanti: omesse se non c'e' posto)
+                int step = S <= 2 ? 500 : 1000;
+                Color lc = Pal.Argb(190, 255, 200, 120);
+                for (int km = step; km < MapRadiusKm; km += step)
+                {
+                    double r = rad * km / MapRadiusKm;
+                    AddLab(9, km + " km", F75, lc, false, new Point(cx + 26, cy + r), 0, false, true);
+                }
             }
             if (ShowHeat && Model != null && Model.Valid)
             {
@@ -185,13 +313,21 @@ namespace YAMS
                 {
                     double r = rad * (90 - el) / 90.0;
                     ctx.DrawEllipse(null, el % 20 == 0 ? ring : dash, new Point(cx, cy), r, r);
-                    if (el % 20 == 0 && el > 0) Txt(ctx, el + "°", ShowLegend || map ? F8 : F7, tc, cx + 2, cy - r - 1);
+                    if (el % 20 == 0 && el > 0)
+                    {
+                        Lab l = AddLab(6, el + "°", ShowLegend || map ? F8 : F7, tc, false, new Point(cx, cy - r), 0, false, true);
+                        l.Fixed = true; l.Halo = false; l.FixedAt = new Point(cx + 2, cy - r - 1);
+                    }
                 }
             if (map && ShowDial) DrawDial(ctx, cx, cy, rad);
             ctx.DrawLine(dash, new Point(cx - rad, cy), new Point(cx + rad, cy));
             ctx.DrawLine(dash, new Point(cx, cy - rad), new Point(cx, cy + rad));
-            if (map)
-                Txt(ctx, "mappa: bordo = " + MapRadiusKm.ToString("F0") + " km dalla stazione", F8, tc, 6, 6);   // in alto a sinistra: non copre la didascalia
+            if (map && DrawCaption)
+            {
+                FormattedText mt = Ft("mappa: bordo = " + MapRadiusKm.ToString("F0") + " km dalla stazione", F8, tc);
+                ctx.DrawText(mt, new Point(6, 6));   // in alto a sinistra: non copre la didascalia
+                lp.Block(new Rect(4, 4, mt.Width + 4, mt.Height + 4));
+            }
 
             if (!(map && ShowDial))
             {
@@ -199,19 +335,21 @@ namespace YAMS
                 Color oc = Color.FromRgb(240, 90, 40);
                 FormattedText n = Ft("N", fs, oc), s = Ft("S", fs, oc);
                 FormattedText w = Ft(TopView ? "W" : "E", fs, oc), e = Ft(TopView ? "E" : "W", fs, oc);
-                ctx.DrawText(n, new Point(cx - n.Width / 2, cy - rad - n.Height - 4));
-                ctx.DrawText(s, new Point(cx - s.Width / 2, cy + rad + 4));
-                ctx.DrawText(w, new Point(cx - rad - w.Width - 8, cy - w.Height / 2));
-                ctx.DrawText(e, new Point(cx + rad + 8, cy - e.Height / 2));
+                Point pn = new Point(cx - n.Width / 2, cy - rad - n.Height - 4), ps = new Point(cx - s.Width / 2, cy + rad + 4);
+                Point pw = new Point(cx - rad - w.Width - 8, cy - w.Height / 2), pe = new Point(cx + rad + 8, cy - e.Height / 2);
+                ctx.DrawText(n, pn); ctx.DrawText(s, ps); ctx.DrawText(w, pw); ctx.DrawText(e, pe);
+                lp.Block(new Rect(pn, new Size(n.Width, n.Height))); lp.Block(new Rect(ps, new Size(s.Width, s.Height)));
+                lp.Block(new Rect(pw, new Size(w.Width, w.Height))); lp.Block(new Rect(pe, new Size(e.Width, e.Height)));
             }
 
-            DrawLobe(ctx, cx, cy, rad);
+            DrawLobe(ctx, cx, cy, rad, map);
             if (map) DrawPrev(ctx, cx, cy, rad);
             if (Model != null && Model.Valid) DrawPath(ctx, cx, cy, rad, map);
             if (map) DrawFlow(ctx, cx, cy, rad); else DrawBestPointing(ctx, cx, cy, rad);
             if (ShowRadiants || !map) DrawRadiants(ctx, cx, cy, rad);
-            if (ShowLegend) DrawSymbolLegend(ctx, cx + rad + 44, cy - rad);
-            if (!string.IsNullOrEmpty(Caption))
+            PlaceLabels(ctx, cx, cy, rad);
+            if (ShowLegend) DrawSymbolLegend(ctx, W, H);
+            if (DrawCaption && !string.IsNullOrEmpty(Caption))
             {
                 FormattedText ft = Ft(Caption, F85, Pal.Silver);
                 ft.MaxTextWidth = Math.Max(100, Bounds.Width - 12);   // va a capo se la finestra e' stretta
@@ -227,12 +365,10 @@ namespace YAMS
             if (borderGeo != null) ctx.DrawGeometry(null, border, borderGeo);
             if (coastGeo != null) ctx.DrawGeometry(null, coast, coastGeo);
             IPen dr = Pal.P(Pal.Argb(60, 255, 200, 120), 1, Pal.DashDot);
-            Color lc = Pal.Argb(150, 255, 200, 120);
             for (int km = 500; km < MapRadiusKm; km += 500)
             {
                 double r = rad * km / MapRadiusKm;
-                ctx.DrawEllipse(null, dr, new Point(cx, cy), r, r);
-                Txt(ctx, km + " km", F7, lc, cx + 2, cy + r - 13);
+                ctx.DrawEllipse(null, dr, new Point(cx, cy), r, r);   // le scritte "km" sono piazzate con le etichette
             }
         }
 
@@ -315,22 +451,27 @@ namespace YAMS
         {
             IPen pp = Pal.P(Pal.A(230, Pal.Green), 2);
             IBrush gb = Pal.B(Pal.Green);
+            double left = ScreenDir(Model.BearingHomeToDx - 90);   // a sinistra della tratta (lato A)
             if (map)
             {
                 Point pd = MapXY(Model.Dx, cx, cy, rad);
                 ctx.DrawLine(pp, new Point(cx, cy), pd);
                 ctx.DrawEllipse(gb, null, pd, 4, 4);
-                Txt(ctx, "DX", F85, Pal.Green, pd.X + 5, pd.Y - 9, FontWeight.Bold);
+                lp.BlockLine(new Point(cx, cy), pd);
+                lp.BlockPoint(pd, 6);
+                AddLab(0, "DX", F9, Pal.Green, true, pd, left);
                 Point pm = MapXY(Model.Mid, cx, cy, rad);
                 ctx.DrawEllipse(null, Pal.P(Pal.Green, 1), pm, 3, 3);
-                DrawCommonZone(ctx, cx, cy, rad);
+                DrawCommonZone(ctx, cx, cy, rad, left);
             }
             else
             {
                 Point p = SkyXY(Model.BearingHomeToDx, 0, cx, cy, rad);
                 ctx.DrawLine(pp, new Point(cx, cy), p);
+                lp.BlockLine(new Point(cx, cy), p);
             }
             ctx.DrawEllipse(Pal.B(White), null, new Point(cx, cy), 3, 3);
+            lp.BlockPoint(new Point(cx, cy), 6);
             if (!ShowHot) return;
             HotPoint[] hs = { Model.HotA, Model.HotB };
             foreach (HotPoint h in hs)
@@ -341,26 +482,26 @@ namespace YAMS
                 Point rim = SkyXY(h.BearingFromHome, 0, cx, cy, rad);
                 ctx.DrawLine(hp, new Point(cx, cy), rim);
                 string lab = (h.Label ?? "").Replace("Hot ", "");
+                bool isA = h == Model.HotA;
                 if (map)
                 {
                     Point p = MapXY(h.Pos, cx, cy, rad);
                     ctx.DrawEllipse(Pal.B(hc), null, p, 5, 5);
-                    Txt(ctx, "Hot " + lab, F85, hc, p.X + 6, p.Y - 9, FontWeight.Bold);
+                    lp.BlockPoint(p, 6);
+                    // Hot A a sinistra della tratta, Hot B a destra (vista dalla stazione verso il DX)
+                    AddLab(h.Recommended ? 1 : 2, "Hot " + lab, F9, hc, true, p, isA ? left : left + 180, true);
                 }
                 else
                 {
-                    FormattedText ft = Ft(lab, F85, hc, FontWeight.Bold);
-                    // etichetta appena fuori dal bordo, lungo la direzione
-                    double a = h.BearingFromHome * Astro.D2R;
-                    double lx = cx + Sgn * (rad + 9) * Math.Sin(a), ly = cy - (rad + 9) * Math.Cos(a);
-                    ctx.DrawText(ft, new Point(lx - ft.Width / 2, ly - ft.Height / 2));
+                    // lettera appena fuori dal bordo, lungo la direzione
+                    AddLab(0, lab, F85, hc, true, rim, ScreenDir(h.BearingFromHome));
                 }
             }
         }
 
         // Zona dello strato E vista da entrambe le stazioni (articolo): due cerchi di raggio pari alla portata
         // alla quota delle scie, attorno alla stazione e al corrispondente; i loro incroci sono i Limiti A e B
-        void DrawCommonZone(DrawingContext ctx, double cx, double cy, double rad)
+        void DrawCommonZone(DrawingContext ctx, double cx, double cy, double rad, double left)
         {
             if (Model.HotRadiusKm <= 0) return;
             Color lc = Color.FromRgb(150, 150, 210);
@@ -376,18 +517,19 @@ namespace YAMS
                 }
                 ctx.DrawGeometry(null, zp, g);
             }
-            IPen lp = Pal.P(lc, 1.3);
+            IPen lpen = Pal.P(lc, 1.3);
             foreach (HotPoint h in new HotPoint[] { Model.LimitA, Model.LimitB })
             {
                 if (h == null) continue;
                 Point p = MapXY(h.Pos, cx, cy, rad);
-                ctx.DrawEllipse(null, lp, p, 4, 4);
-                Txt(ctx, (h.Label ?? "").Replace("Limite", "lim."), F75, lc, p.X + 6, p.Y - 7);
+                ctx.DrawEllipse(null, lpen, p, 4, 4);
+                lp.BlockPoint(p, 5);
+                AddLab(8, (h.Label ?? "").Replace("Limite", "lim."), F75, lc, false, p, h == Model.LimitA ? left : left + 180);
             }
         }
 
         // Lobo principale dell'antenna: settore di +-HPBW/2 attorno al puntamento
-        void DrawLobe(DrawingContext ctx, double cx, double cy, double rad)
+        void DrawLobe(DrawingContext ctx, double cx, double cy, double rad, bool map)
         {
             if (HpbwDeg <= 0) return;
             StreamGeometry g = new StreamGeometry();
@@ -399,8 +541,8 @@ namespace YAMS
                 gc.EndFigure(true);
             }
             ctx.DrawGeometry(Pal.B(Pal.Argb(45, 255, 240, 200)), Pal.P(Pal.Argb(140, 255, 240, 200), 1), g);
-            Point t = SkyXY(AntennaAz, 2, cx, cy, rad);
-            Txt(ctx, "lobo " + HpbwDeg.ToString("F0") + "°", F8, Wheat, t.X + 4, t.Y);
+            Point t = PA(ScreenDir(AntennaAz), rad * 0.93, cx, cy);
+            AddLab(map ? 7 : 4, "lobo " + HpbwDeg.ToString("F0") + "°", F8, Wheat, false, t, ScreenDir(AntennaAz));
         }
 
         // Da un punto del controllo alla posizione geografica (proiezione azimutale equidistante inversa)
@@ -427,14 +569,15 @@ namespace YAMS
             IPen w = Pal.P(Pal.A(70, Pal.Orange), 1);
             Color tc = Color.FromRgb(255, 170, 60);
             ctx.DrawLine(p, a, b);
+            lp.BlockLine(a, b);
             // tolleranza +-45° (SM6FHZ: +-40-50°)
             foreach (double off in new double[] { 45, -45 })
             {
                 Point a2 = SkyXY(m.Az + 90 + off, 0, cx, cy, rad), b2 = SkyXY(m.Az - 90 + off, 0, cx, cy, rad);
                 ctx.DrawLine(w, a2, b2);
             }
-            Txt(ctx, Astro.Norm360(m.Az + 90).ToString("F0") + "°", F85, tc, a.X + 3, a.Y - 16, FontWeight.Bold);
-            Txt(ctx, Astro.Norm360(m.Az - 90).ToString("F0") + "°", F85, tc, b.X + 3, b.Y - 16, FontWeight.Bold);
+            AddLab(1, Astro.Norm360(m.Az + 90).ToString("F0") + "°", F85, tc, true, a, ScreenDir(m.Az + 90));
+            AddLab(1, Astro.Norm360(m.Az - 90).ToString("F0") + "°", F85, tc, true, b, ScreenDir(m.Az - 90));
             // direzione di arrivo dello sciame: linea a puntini con freccia verso il centro
             Point r = SkyXY(m.Az, 0, cx, cy, rad);
             Color dc = Pal.A(150, Pal.Orange);
@@ -461,6 +604,8 @@ namespace YAMS
             IPen tk = Pal.P(Pal.Argb(150, 200, 200, 210), 1);
             IPen rim = Pal.P(Pal.Argb(170, 200, 200, 210), 1.5);
             Color oc = Color.FromRgb(240, 120, 60);
+            int every = UiScale.Font <= 2 ? 30 : 60;   // caratteri grandi: meno scritte
+            double lr = rad + 14 + 0.75 * F9 * UiScale.Font;
             ctx.DrawEllipse(null, rim, new Point(cx, cy), rad + 3, rad + 3);
             for (int a = 0; a < 360; a += 5)
             {
@@ -468,10 +613,10 @@ namespace YAMS
                 double l = a % 30 == 0 ? 9 : (a % 10 == 0 ? 6 : 3);
                 double sx = Sgn * Math.Sin(ar), sy = -Math.Cos(ar);
                 ctx.DrawLine(tk, new Point(cx + (rad + 3) * sx, cy + (rad + 3) * sy), new Point(cx + (rad + 3 + l) * sx, cy + (rad + 3 + l) * sy));
-                if (a % 30 == 0)
+                if (a % every == 0)
                 {
                     FormattedText ft = Ft(a.ToString(), F9, oc);
-                    ctx.DrawText(ft, new Point(cx + (rad + 24) * sx - ft.Width / 2, cy + (rad + 24) * sy - ft.Height / 2));
+                    lp.Put(ctx, ft, LabelPlacer.At(ft, cx + lr * sx, cy + lr * sy), false);   // ostacolo fisso per le etichette
                 }
             }
         }
@@ -514,7 +659,8 @@ namespace YAMS
                     ctx.DrawEllipse(Pal.B(Pal.Argb(95, 235, 225, 190)), Pal.P(Pal.Argb(170, 245, 235, 200), 1.2), new Point(0, 0), a1, a2);
                 }
                 string lab = "PREV " + (left ? "A" : "B") + " " + (100 * sw / tot).ToString("F0") + "%";
-                Txt(ctx, lab, F85, Color.FromRgb(250, 240, 210), mx - 30, my - 9, FontWeight.Bold);
+                double side = Model != null && Model.Valid ? ScreenDir(Model.BearingHomeToDx - 90) : 270;
+                AddLab(left ? 3 : 4, lab, F9, Color.FromRgb(250, 240, 210), true, new Point(mx, my), left ? side : side + 180, true);
             }
         }
 
@@ -527,13 +673,17 @@ namespace YAMS
             Point a = SkyXY(m.Az, 0, cx, cy, rad), b = SkyXY(m.Az + 180, 0, cx, cy, rad);
             ctx.DrawLine(Pal.P(Pal.Argb(200, 120, 90, 20), 6), a, b);
             ctx.DrawLine(Pal.P(Pal.Argb(240, 255, 210, 90), 2.5), a, b);
-            Txt(ctx, m.Code + " (dal radiante, az. " + m.Az.ToString("F0") + "°)", F85, Color.FromRgb(255, 220, 110), a.X + 6, a.Y + 4, FontWeight.Bold);
+            lp.BlockLine(a, b);
+            Color fc = Color.FromRgb(255, 220, 110);
+            Lab fl = AddLab(5, m.Code + " (dal radiante, az. " + m.Az.ToString("F0") + "°)", F9, fc, true, PA(ScreenDir(m.Az), rad * 0.80, cx, cy), ScreenDir(m.Az + 90));
+            fl.Flow = true; fl.FlowAz = m.Az;
             IBrush ob = Pal.B(Pal.Orange);
             foreach (double off in new double[] { 90, -90 })
             {
                 Point q = SkyXY(m.Az + off, 0, cx, cy, rad);
                 ctx.DrawEllipse(ob, null, q, 5, 5);
-                Txt(ctx, Astro.Norm360(m.Az + off).ToString("F0") + "°", F85, Pal.Orange, q.X + 6, q.Y - 18, FontWeight.Bold);
+                lp.BlockPoint(q, 6);
+                AddLab(6, Astro.Norm360(m.Az + off).ToString("F0") + "°", F9, Pal.Orange, true, q, ScreenDir(m.Az + off + 180));
             }
         }
 
@@ -584,10 +734,13 @@ namespace YAMS
                 for (int i = 0; i < hours.Count; i++)
                 {
                     ctx.DrawEllipse(cyan, null, hours[i], 2, 2);
-                    Txt(ctx, hv[i].ToString("00"), F7, LightCyan, hours[i].X + 3, hours[i].Y - 7);
+                    lp.BlockPoint(hours[i], 2);
+                    Lab hl = AddLab(5, hv[i].ToString("00"), F7, LightCyan, false, hours[i], 45, false, true);
+                    hl.MaxRing = 1;   // le ore restano vicine al loro punto, altrimenti si omettono
                 }
             }
             IPen selPen = Pal.P(White, 1);
+            List<RadiantMark> codes = new List<RadiantMark>(); List<Point> codePts = new List<Point>();
             foreach (RadiantMark m in Marks)
             {
                 if (m.El < 0) continue;
@@ -599,44 +752,72 @@ namespace YAMS
                 else c = Color.FromRgb(194, 65, 12);
                 ctx.DrawEllipse(Pal.B(c), null, p, 7, 7);
                 if (m.Code == Selected) ctx.DrawEllipse(null, selPen, p, 9, 9);
-                Txt(ctx, m.Code, F85, White, p.X + 9, p.Y - 10, FontWeight.Bold);
+                lp.BlockPoint(p, 7);
+                codes.Add(m); codePts.Add(p);
             }
+            // sigle: prima quella selezionata, poi le piu' favorevoli (ZHR x efficienza)
+            List<int> ord = new List<int>();
+            for (int i = 0; i < codes.Count; i++) ord.Add(i);
+            ord.Sort((x, y) =>
+            {
+                bool sx = codes[x].Code == Selected, sy = codes[y].Code == Selected;
+                if (sx != sy) return sx ? -1 : 1;
+                return (codes[y].Zhr * codes[y].Eff).CompareTo(codes[x].Zhr * codes[x].Eff);
+            });
+            foreach (int i in ord)
+                AddLab(codes[i].Code == Selected ? 2 : 3, codes[i].Code, F85, White, true, codePts[i], 45);
         }
 
-        // Legenda dei simboli
-        void DrawSymbolLegend(DrawingContext ctx, double x, double y)
+        // Legenda dei simboli: colonna a destra con riquadro arrotondato; clic sull'intestazione = ripiega / riapre
+        void DrawSymbolLegend(DrawingContext ctx, double W, double H)
         {
-            double yy = y;
-            Txt(ctx, "Legenda", F75, Gainsboro, x, yy, FontWeight.Bold); yy += 22;
-            Item(ctx, x, ref yy, Pal.Green, "tratta / DX");
-            Item(ctx, x, ref yy, Pal.Red, "Hot consigliato");
-            Item(ctx, x, ref yy, Pal.HotPink, "Hot fuori lobo");
-            Item(ctx, x, ref yy, Color.FromRgb(150, 150, 210), "limiti zona comune");
-            Item(ctx, x, ref yy, Pal.HotGrey, "Hot nel lobo");
-            Item(ctx, x, ref yy, Color.FromRgb(255, 240, 200), "lobo antenna");
-            Item(ctx, x, ref yy, Color.FromRgb(255, 210, 90), "scorrimento sciame");
-            Item(ctx, x, ref yy, Pal.Orange, "miglior punt.");
-            Item(ctx, x, ref yy, Color.FromRgb(235, 225, 190), "zona PREV");
-            if (ShowRadiants || !(ShowMap && TopView))
+            double lw = LegendWidth();
+            double x0 = W - lw;
+            Rect panel = new Rect(x0, 6, Math.Max(10, lw - 6), Math.Max(10, H - 12));
+            ctx.DrawRectangle(Pal.B(Pal.Panel), Pal.P(Pal.Border, 1), panel, 10, 10);
+            FormattedText hf = Ft(legendCollapsed ? "Legenda ▸" : "Legenda ▾", F9, Pal.Fore, FontWeight.Bold);
+            ctx.DrawText(hf, new Point(x0 + 12, 14));
+            if (legendCollapsed) { legendHeader = panel; return; }   // striscia stretta: tutta cliccabile
+            legendHeader = new Rect(x0, 6, panel.Width, hf.Height + 16);
+            double x = x0 + 12, yy = 14 + hf.Height + 10;
+            using (ctx.PushClip(panel))
             {
-                Item(ctx, x, ref yy, Pal.Azure, "percorso rad.");
+                Item(ctx, x, ref yy, Pal.Green, "tratta / DX");
+                Item(ctx, x, ref yy, Pal.Red, "Hot consigliato");
+                Item(ctx, x, ref yy, Pal.HotPink, "Hot fuori lobo");
+                Item(ctx, x, ref yy, Color.FromRgb(150, 150, 210), "limiti zona comune");
+                Item(ctx, x, ref yy, Pal.HotGrey, "Hot nel lobo");
+                Item(ctx, x, ref yy, Color.FromRgb(255, 240, 200), "lobo antenna");
+                Item(ctx, x, ref yy, Color.FromRgb(255, 210, 90), "scorrimento sciame");
+                Item(ctx, x, ref yy, Pal.Orange, "miglior punt.");
+                Item(ctx, x, ref yy, Color.FromRgb(235, 225, 190), "zona PREV");
+                if (ShowRadiants || !(ShowMap && TopView))
+                {
+                    Item(ctx, x, ref yy, Pal.Azure, "percorso rad.");
+                    yy += 8;
+                    FormattedText rt = Ft("Radiante:", F75, Gainsboro, FontWeight.Bold);
+                    ctx.DrawText(rt, new Point(x, yy)); yy += rt.Height + 6;
+                    Item(ctx, x, ref yy, Pal.Yellow, "effic. >= 50%");
+                    Item(ctx, x, ref yy, Pal.Orange, "effic. >= 20%");
+                    Item(ctx, x, ref yy, Color.FromRgb(194, 65, 12), "effic. < 20%");
+                    Item(ctx, x, ref yy, Color.FromRgb(130, 130, 130), "quasi inattivo");
+                }
                 yy += 8;
-                Txt(ctx, "Radiante:", F75, Gainsboro, x, yy, FontWeight.Bold); yy += 20;
-                Item(ctx, x, ref yy, Pal.Yellow, "effic. >= 50%");
-                Item(ctx, x, ref yy, Pal.Orange, "effic. >= 20%");
-                Item(ctx, x, ref yy, Color.FromRgb(194, 65, 12), "effic. < 20%");
-                Item(ctx, x, ref yy, Color.FromRgb(130, 130, 130), "quasi inattivo");
+                string[] note = { "Mappa:", "clic sinistro =", "corrispondente", "clic destro =", "la mia stazione" };
+                foreach (string n in note)
+                {
+                    FormattedText nt = Ft(n, F75, Pal.Silver);
+                    ctx.DrawText(nt, new Point(x, yy)); yy += Math.Max(16, nt.Height + 3);
+                }
             }
-            yy += 8;
-            string[] note = { "Mappa:", "clic sinistro =", "corrispondente", "clic destro =", "la mia stazione" };
-            foreach (string n in note) { Txt(ctx, n, F75, Pal.Silver, x, yy); yy += 16; }
         }
 
         static void Item(DrawingContext ctx, double x, ref double y, Color c, string text)
         {
-            ctx.DrawEllipse(Pal.B(c), null, new Point(x + 4.5, y + 7), 4.5, 4.5);
-            Txt(ctx, text, F75, Gainsboro, x + 13, y);
-            y += 18;
+            FormattedText ft = Ft(text, F75, Gainsboro);
+            ctx.DrawEllipse(Pal.B(c), null, new Point(x + 4.5, y + ft.Height / 2), 4.5, 4.5);
+            ctx.DrawText(ft, new Point(x + 13, y));
+            y += Math.Max(18, ft.Height + 5);
         }
 
         public string HitTest(Point pt)

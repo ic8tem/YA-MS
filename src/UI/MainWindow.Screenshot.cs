@@ -9,14 +9,21 @@ namespace YAMS
 {
     public partial class MainWindow
     {
-        // --screenshot <cartella> [--dx LOCATOR] [--ore H]: imposta la tratta, sposta la volta celeste di H ore
-        // (passi di 15 minuti), fotografa ogni linguetta e chiude il programma.
+        // --screenshot <cartella> [--dx LOCATOR] [--ore H] [--carattere N]: imposta la tratta, sposta la volta celeste
+        // di H ore (passi di 15 minuti), porta il carattere a N % (100-300), fotografa ogni linguetta e chiude il programma.
         public async Task RunScreenshots(string dir, string dx, double hours)
         {
             try
             {
                 Directory.CreateDirectory(dir);
                 await Task.Delay(4000);
+                if (Program.ScreenshotFontPct > 0)
+                {
+                    double pct = Math.Max(100, Math.Min(300, Math.Round(Program.ScreenshotFontPct / 10) * 10));
+                    sldFont.Value = pct;
+                    UiScale.Set(pct / 100.0);   // anche se il cursore non cambia valore
+                    ApplyFontScale();
+                }
                 if (!string.IsNullOrEmpty(dx)) { txtDx.Text = dx; Recalc(); }
                 trackTime.Value = Math.Max(trackTime.Minimum, Math.Min(trackTime.Maximum, Math.Round(hours * 4)));
                 UpdateSky();

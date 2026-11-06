@@ -72,7 +72,10 @@ namespace YAMS
                 Content = sheet
             };
             p.Children.Add(sv);
+            explainSheet = sheet;
         }
+
+        Border explainSheet;   // foglio del documento: piu' largo con il carattere ingrandito (ApplyFontScale)
 
         static SelectableTextBlock DocText(string text, double size, Color c, FontWeight w, FontStyle st, Thickness margin)
         {

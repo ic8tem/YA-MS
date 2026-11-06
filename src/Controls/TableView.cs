@@ -39,6 +39,11 @@ namespace YAMS
         public bool StretchLastColumn = true;                  // l'ultima colonna arriva fino al bordo destro
         public List<int> ColumnAlign = new List<int>();        // per colonna: 0 = sinistra, 1 = centro, 2 = destra
         public double HeaderFontSize = 12;
+        // FitWidth: la tabella occupa esattamente la larghezza disponibile; larghezze delle colonne, altezze
+        // delle righe e caratteri crescono (o calano) tutti dello stesso fattore. Senza FitWidth la scala e'
+        // quella del cursore "Carattere". RowHeight, HeaderHeight, ColumnWidths e FontSize restano i valori di base.
+        public bool FitWidth;
+        double measuredWidth = double.NaN;
 
         double scrollY = 0;
         const double DefaultColumnWidth = 80;
@@ -54,6 +59,43 @@ namespace YAMS
             Focusable = true;
         }
 
+        protected override void OnAttachedToVisualTree(VisualTreeAttachmentEventArgs e)
+        {
+            base.OnAttachedToVisualTree(e);
+            UiScale.Changed += OnScaleChanged;
+        }
+
+        protected override void OnDetachedFromVisualTree(VisualTreeAttachmentEventArgs e)
+        {
+            base.OnDetachedFromVisualTree(e);
+            UiScale.Changed -= OnScaleChanged;
+        }
+
+        void OnScaleChanged() { ClampScroll(); InvalidateMeasure(); InvalidateVisual(); }
+
+        // somma delle larghezze di base delle colonne
+        double BaseWidthSum()
+        {
+            double sum = 0;
+            foreach (double x in Widths(0, 1)) sum += x;
+            return sum;
+        }
+
+        // fattore di scala attuale (caratteri, righe, colonne)
+        double Factor()
+        {
+            if (FitWidth)
+            {
+                double w = Bounds.Width > 1 ? Bounds.Width : measuredWidth;
+                double sum = BaseWidthSum();
+                if (!double.IsNaN(w) && w > 1 && sum > 1) return w / sum;
+            }
+            return UiScale.Font;
+        }
+
+        double RH { get { return RowHeight * Factor(); } }
+        double HH { get { return HeaderHeight * Factor(); } }
+
         // ridisegna e ricalcola lo scorrimento
         public void Refresh()
         {
@@ -66,16 +108,16 @@ namespace YAMS
         {
             if (Rows == null || row < 0 || row >= Rows.Count) return;
             double body = BodyHeight();
-            double top = row * RowHeight, bottom = top + RowHeight;
+            double top = row * RH, bottom = top + RH;
             if (top < scrollY) scrollY = top;
             else if (bottom > scrollY + body) scrollY = bottom - body;
             ClampScroll();
             InvalidateVisual();
         }
 
-        double BodyHeight() { return Math.Max(0, Bounds.Height - HeaderHeight); }
+        double BodyHeight() { return Math.Max(0, Bounds.Height - HH); }
 
-        double ContentHeight() { return (Rows != null ? Rows.Count : 0) * RowHeight; }
+        double ContentHeight() { return (Rows != null ? Rows.Count : 0) * RH; }
 
         double MaxScroll() { return Math.Max(0, ContentHeight() - BodyHeight()); }
 
@@ -94,14 +136,14 @@ namespace YAMS
         }
 
         // larghezze effettive delle colonne (l'ultima puo' riempire lo spazio rimasto)
-        double[] Widths(double total)
+        double[] Widths(double total, double k)
         {
             int n = ColumnCount();
             double[] w = new double[n];
             double sum = 0;
             for (int i = 0; i < n; i++)
             {
-                w[i] = ColumnWidths != null && i < ColumnWidths.Count && ColumnWidths[i] > 0 ? ColumnWidths[i] : DefaultColumnWidth;
+                w[i] = (ColumnWidths != null && i < ColumnWidths.Count && ColumnWidths[i] > 0 ? ColumnWidths[i] : DefaultColumnWidth) * k;
                 sum += w[i];
             }
             if (StretchLastColumn && n > 0 && sum < total) w[n - 1] += total - sum;
@@ -110,9 +152,17 @@ namespace YAMS
 
         protected override Size MeasureOverride(Size availableSize)
         {
-            double[] w = Widths(0);
+            double k = UiScale.Font;
+            if (FitWidth && !double.IsInfinity(availableSize.Width) && availableSize.Width > 1)
+            {
+                measuredWidth = availableSize.Width;
+                double sum = BaseWidthSum();
+                if (sum > 1) k = availableSize.Width / sum;
+            }
+            double[] w = Widths(0, k);
             double sw = 0; foreach (double x in w) sw += x;
-            double h = HeaderHeight + ContentHeight();
+            if (FitWidth && !double.IsInfinity(availableSize.Width)) sw = availableSize.Width;
+            double h = (HeaderHeight + (Rows != null ? Rows.Count : 0) * RowHeight) * k;   // l'altezza segue le righe scalate
             if (!double.IsInfinity(availableSize.Width)) sw = Math.Min(sw, availableSize.Width);
             if (!double.IsInfinity(availableSize.Height)) h = Math.Min(h, availableSize.Height);
             return new Size(sw, h);
@@ -144,18 +194,20 @@ namespace YAMS
             double Wd = Bounds.Width, Ht = Bounds.Height;
             ctx.DrawRectangle(Pal.B(Pal.Back), null, new Rect(0, 0, Wd, Ht));
             if (Wd < 2 || Ht < 2) return;
+            double k = Factor();
+            double rh = RowHeight * k, hh = HeaderHeight * k;
             ClampScroll();
-            double[] w = Widths(Wd);
+            double[] w = Widths(Wd, k);
             int n = w.Length;
 
             // righe
-            double bodyTop = HeaderHeight, bodyH = Math.Max(0, Ht - HeaderHeight);
+            double bodyTop = hh, bodyH = Math.Max(0, Ht - hh);
             if (Rows != null && Rows.Count > 0 && bodyH > 0)
             {
                 using (ctx.PushClip(new Rect(0, bodyTop, Wd, bodyH)))
                 {
-                    int first = Math.Max(0, (int)Math.Floor(scrollY / RowHeight));
-                    int last = Math.Min(Rows.Count - 1, (int)Math.Ceiling((scrollY + bodyH) / RowHeight));
+                    int first = Math.Max(0, (int)Math.Floor(scrollY / rh));
+                    int last = Math.Min(Rows.Count - 1, (int)Math.Ceiling((scrollY + bodyH) / rh));
                     IBrush odd = Pal.B(Pal.Panel);
                     IBrush selB = Pal.B(Pal.Panel3);
                     IPen selP = Pal.P(Pal.Azure, 1);
@@ -163,17 +215,17 @@ namespace YAMS
                     {
                         TableRow row = Rows[r];
                         if (row == null) continue;
-                        double y = bodyTop + r * RowHeight - scrollY;
-                        Rect rr = new Rect(0, y, Wd, RowHeight);
+                        double y = bodyTop + r * rh - scrollY;
+                        Rect rr = new Rect(0, y, Wd, rh);
                         bool sel = Selectable && r == SelectedIndex;
                         if (sel) ctx.DrawRectangle(selB, null, rr);
                         else if (r % 2 == 1) ctx.DrawRectangle(odd, null, rr);
                         double x = 0;
                         Color rowFore = row.Fore ?? Pal.Fore;
-                        double fs = row.FontSize > 0 ? row.FontSize : 12;
+                        double fs = (row.FontSize > 0 ? row.FontSize : 12) * k;
                         for (int c = 0; c < n; c++)
                         {
-                            Rect cell = new Rect(x, y, w[c], RowHeight);
+                            Rect cell = new Rect(x, y, w[c], rh);
                             x += w[c];
                             if (row.CellBack != null && c < row.CellBack.Length && row.CellBack[c].HasValue)
                                 ctx.DrawRectangle(Pal.B(row.CellBack[c].Value), null, new Rect(cell.X + 1, cell.Y + 1, Math.Max(0, cell.Width - 2), Math.Max(0, cell.Height - 2)));
@@ -181,7 +233,7 @@ namespace YAMS
                             Color fc = row.CellFore != null && c < row.CellFore.Length && row.CellFore[c].HasValue ? row.CellFore[c].Value : rowFore;
                             DrawCellText(ctx, Ft(row.Cells[c], fs, fc, row.Bold, row.Italic), cell, Align(c));
                         }
-                        if (sel) ctx.DrawRectangle(null, selP, new Rect(0.5, y + 0.5, Math.Max(0, Wd - 1), Math.Max(0, RowHeight - 1)));
+                        if (sel) ctx.DrawRectangle(null, selP, new Rect(0.5, y + 0.5, Math.Max(0, Wd - 1), Math.Max(0, rh - 1)));
                     }
                 }
                 // indicatore di scorrimento
@@ -196,20 +248,20 @@ namespace YAMS
             }
 
             // intestazione
-            if (HeaderHeight > 0)
+            if (hh > 0)
             {
-                ctx.DrawRectangle(Pal.B(HeaderBack), null, new Rect(0, 0, Wd, HeaderHeight));
+                ctx.DrawRectangle(Pal.B(HeaderBack), null, new Rect(0, 0, Wd, hh));
                 IPen hl = Pal.P(HeaderLine, 1);
                 double x = 0;
                 for (int c = 0; c < n; c++)
                 {
-                    Rect cell = new Rect(x, 0, w[c], HeaderHeight);
+                    Rect cell = new Rect(x, 0, w[c], hh);
                     x += w[c];
                     if (Columns != null && c < Columns.Count && !string.IsNullOrEmpty(Columns[c]))
-                        DrawCellText(ctx, Ft(Columns[c], HeaderFontSize, HeaderFore, false, false), cell, Align(c));
-                    if (c < n - 1) ctx.DrawLine(hl, new Point(Math.Round(x) - 0.5, 4), new Point(Math.Round(x) - 0.5, HeaderHeight - 4));
+                        DrawCellText(ctx, Ft(Columns[c], HeaderFontSize * k, HeaderFore, false, false), cell, Align(c));
+                    if (c < n - 1) ctx.DrawLine(hl, new Point(Math.Round(x) - 0.5, 4), new Point(Math.Round(x) - 0.5, hh - 4));
                 }
-                ctx.DrawLine(hl, new Point(0, HeaderHeight - 0.5), new Point(Wd, HeaderHeight - 0.5));
+                ctx.DrawLine(hl, new Point(0, hh - 0.5), new Point(Wd, hh - 0.5));
             }
         }
 
@@ -219,7 +271,7 @@ namespace YAMS
             double m = MaxScroll();
             if (m <= 0 || e.Delta.Y == 0) return;   // niente da scorrere: la rotellina passa al contenitore
             double old = scrollY;
-            scrollY -= e.Delta.Y * RowHeight * 3;
+            scrollY -= e.Delta.Y * RH * 3;
             ClampScroll();
             if (scrollY != old) { e.Handled = true; InvalidateVisual(); }
         }
@@ -229,8 +281,9 @@ namespace YAMS
             base.OnPointerPressed(e);
             if (!e.GetCurrentPoint(this).Properties.IsLeftButtonPressed) return;
             Point p = e.GetPosition(this);
-            if (p.Y < HeaderHeight || Rows == null) return;
-            int idx = (int)Math.Floor((p.Y - HeaderHeight + scrollY) / RowHeight);
+            double hh = HH;
+            if (p.Y < hh || Rows == null) return;
+            int idx = (int)Math.Floor((p.Y - hh + scrollY) / RH);
             if (idx < 0 || idx >= Rows.Count) return;
             if (Selectable) SelectedIndex = idx;
             InvalidateVisual();

@@ -46,6 +46,10 @@ namespace YAMS
         TextBlock lblClock, lblSkyTime;
         Slider trackTime;
         int lastTrackValue;
+        Slider sldFont;              // "Carattere": 100-300 % di tutto il testo
+        TextBlock lblFont;
+        bool fontReady;              // la scala dei controlli standard si applica dopo l'apertura (stili gia' applicati)
+        TextBlock lblMapCaption;     // didascalia sotto la pianta
         CalendarDatePicker dtDay;
 
         // linguette
@@ -55,6 +59,7 @@ namespace YAMS
         TableView lvSky;
         TextBlock lblPathInfo;
         SimpleChart chart24;
+        const double Chart24Height = 300;
         TableView grid24;
         const double Grid24Scale = 1.5;   // caratteri della tabella oraria al 150 %
         SimpleChart chartFlux, chartHeight;
@@ -116,6 +121,8 @@ namespace YAMS
             try
             {
                 sky.ShowMap = chkMap.IsChecked == true; sky.TopView = chkTopView.IsChecked == true; skySmall.TopView = chkTopView.IsChecked == true;
+                fontReady = true;
+                ApplyFontScale();
                 LoadCachedRadar();
                 Recalc();
                 StartMapLoad();
@@ -347,12 +354,40 @@ namespace YAMS
             btnReal.Click += (s, e) => { trackTime.Value = 0; UpdateSky(); };
             dtDay = new CalendarDatePicker { SelectedDate = DateTime.UtcNow.Date, Width = 150, Margin = new Thickness(2, 3) };
             WhenChanged(dtDay, CalendarDatePicker.SelectedDateProperty, () => Update24h());
+            // dimensione del carattere di tutto il programma (solo il testo), a passi del 10 %
+            double pct0 = Math.Max(100, Math.Min(300, Math.Round(cfg.GetD("carattere_pct", 100) / 10) * 10));
+            lblFont = L(pct0.ToString("F0", CultureInfo.InvariantCulture) + " %"); lblFont.Foreground = Pal.B(Pal.Azure);
+            sldFont = new Slider { Minimum = 100, Maximum = 300, Value = pct0, SmallChange = 10, LargeChange = 10, TickFrequency = 10,
+                                   IsSnapToTickEnabled = true, Width = 160, Margin = new Thickness(4, 0) };
+            UiScale.Set(pct0 / 100.0);
+            WhenChanged(sldFont, RangeBase.ValueProperty, () => SetFontPercent(sldFont.Value));
             Border row3 = Row(L("Ora"), lblClock, L("Ora della volta celeste (±36 h)"), trackTime,
-                              btnReal, lblSkyTime, L("Giorno per la tabella 24 h (UTC)"), dtDay);
+                              btnReal, lblSkyTime, L("Giorno per la tabella 24 h (UTC)"), dtDay,
+                              L("Carattere"), sldFont, lblFont);
 
             DockTop(root, row1);
             DockTop(root, row2);
             DockTop(root, row3);
+        }
+
+        // cursore "Carattere": nuova scala, poi controlli standard e testi costruiti con dimensioni proprie
+        void SetFontPercent(double pct)
+        {
+            pct = Math.Max(100, Math.Min(300, Math.Round(pct / 10) * 10));
+            lblFont.Text = pct.ToString("F0", CultureInfo.InvariantCulture) + " %";
+            UiScale.Set(pct / 100.0);   // i controlli disegnati si ridisegnano da soli (evento UiScale.Changed)
+            ApplyFontScale();
+        }
+
+        // Applica la scala del carattere ai controlli standard di tutta la finestra (TextBlock, caselle, bottoni, ...).
+        // Da richiamare dopo aver creato o sostituito controlli; i valori di base restano memorizzati.
+        void ApplyFontScale()
+        {
+            if (!fontReady) return;
+            UiScale.Apply(this);
+            if (chart24 != null) chart24.Height = Chart24Height * (0.5 + 0.5 * UiScale.Font);   // spazio per scritte piu' grandi
+            if (explainSheet != null) explainSheet.MaxWidth = 860 * Math.Min(2.0, UiScale.Font);
+            UpdateGeometry();   // il resoconto usa caratteri ricavati da quello della casella
         }
 
         DockPanel Page(string t)
@@ -369,11 +404,18 @@ namespace YAMS
             Grid sc = new Grid { ColumnDefinitions = new ColumnDefinitions("60*,40*") };
             p1.Children.Add(sc);
             // pianta: mappa con tratta, Hot, lobo, zone PREV, linea di scorrimento dello sciame e scala dei gradi
-            sky = new SkyView { ShowRadiants = false, ShowSkyRings = false, ShowDial = true };
+            sky = new SkyView { ShowRadiants = false, ShowSkyRings = false, ShowDial = true, DrawCaption = false };
             EventHandler<PointerReleasedEventArgs> onSky = (s, e) => OnSkyClick(e);
             sky.AddHandler(InputElement.PointerReleasedEvent, onSky, RoutingStrategies.Bubble, true);
-            Grid.SetColumn(sky, 0);
-            sc.Children.Add(sky);
+            // didascalia sotto la pianta (non piu' disegnata dentro la mappa), va a capo
+            lblMapCaption = new TextBlock { Foreground = Pal.B(Pal.Silver), FontSize = 11.3, TextWrapping = TextWrapping.Wrap };
+            Border capBox = new Border { Background = Pal.B(Pal.Panel), Padding = new Thickness(8, 5), Child = lblMapCaption };
+            DockPanel skyCol = new DockPanel();
+            DockPanel.SetDock(capBox, Dock.Bottom);
+            skyCol.Children.Add(capBox);
+            skyCol.Children.Add(sky);   // riempie lo spazio restante
+            Grid.SetColumn(skyCol, 0);
+            sc.Children.Add(skyCol);
             // volta celeste piccola: radianti e percorsi (clic su un radiante = selezione)
             skySmall = new SkyView { ShowMap = false, ShowLegend = false };
             skySmall.Marks = sky.Marks;
@@ -453,7 +495,8 @@ namespace YAMS
             // --- Calcolo dell'efficienza (ex "Efficienza 24 h")
             DockPanel p2 = Page("Calcolo dell'efficienza");
             // colpo d'occhio: quattro riquadri riassuntivi sopra il grafico
-            Grid glance = new Grid { ColumnDefinitions = new ColumnDefinitions("*,*,*,*"), Height = 100, Margin = new Thickness(6, 6, 6, 2) };
+            // altezza minima 100: con caratteri grandi i riquadri crescono
+            Grid glance = new Grid { ColumnDefinitions = new ColumnDefinitions("*,*,*,*"), MinHeight = 100, Margin = new Thickness(6, 6, 6, 2) };
             Border c0 = Card("ORA MIGLIORE DEL GIORNO", Pal.Azure, out glBest);
             Border c1 = Card("SCIAME PIÙ FAVOREVOLE", Pal.Yellow, out glShower);
             Border c2 = Card("ADESSO", Pal.Green, out glNow);
@@ -471,14 +514,16 @@ namespace YAMS
                        "Righe azzurre: confronto con la formula di DH9GCD (DF5HC 2018). ↑ = radiante sopra 70° dalla tua stazione (troppo alto)."
             };
             DockTop(p2, new Border { Background = Pal.B(Pal.Panel3), Padding = new Thickness(8, 5, 8, 4), Child = lblAB });
-            chart24 = new SimpleChart { Height = 300 };
+            chart24 = new SimpleChart { Height = Chart24Height };
             DockTop(p2, chart24);
             List<string> cols24 = new List<string> { "Sigla", "Sciame", "ZHR" };
-            // tabella oraria con caratteri ingranditi del 150 % (richiesta dell'autore); colonne allargate in proporzione
-            List<double> w24 = new List<double> { 62, 270, 54 };
-            for (int h = 0; h < 24; h++) { cols24.Add(h.ToString("00")); w24.Add(58); }
+            // tabella oraria con caratteri al 150 % (richiesta dell'autore) e giustificata sulla larghezza della finestra:
+            // larghezze di base compatte, poi colonne, righe e caratteri crescono insieme fino a riempire la larghezza
+            List<double> w24 = new List<double> { 56, 200, 50 };
+            for (int h = 0; h < 24; h++) { cols24.Add(h.ToString("00")); w24.Add(50); }
             grid24 = MakeTable(cols24.ToArray(), w24.ToArray());
             grid24.Selectable = false;
+            grid24.FitWidth = true;
             grid24.RowHeight = 22 * Grid24Scale;
             grid24.HeaderHeight = 24 * Grid24Scale;
             grid24.HeaderFontSize = 12 * Grid24Scale;
@@ -486,13 +531,7 @@ namespace YAMS
             List<int> al24 = new List<int> { 0, 0, 1 };
             for (int h = 0; h < 24; h++) al24.Add(1);   // ore centrate come nell'anteprima
             grid24.ColumnAlign = al24;
-            // se la finestra e' piu' stretta della tabella compare lo scorrimento orizzontale
-            p2.Children.Add(new ScrollViewer
-            {
-                Content = grid24,
-                HorizontalScrollBarVisibility = Avalonia.Controls.Primitives.ScrollBarVisibility.Auto,
-                VerticalScrollBarVisibility = Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled
-            });
+            p2.Children.Add(grid24);   // nessuno scorrimento orizzontale: la tabella e' giustificata
 
             // --- Attuazione sperimentale previsioni (MainWindow.Previsioni.cs)
             BuildPrevTab();
@@ -525,9 +564,11 @@ namespace YAMS
 
             // --- Sciami
             DockPanel p5 = Page("Sciami");
+            // giustificata sulla larghezza: larghezze di base compatte, caratteri e righe crescono con la finestra
             gridShowers = MakeTable(new[] { "Sigla", "Sciame", "Attività", "λ max", "Prossimo massimo (UTC)", "Fonte del massimo", "A.R.", "Decl.", "v km/s", "r", "ZHR", "Tipo", "Attivo oggi" },
-                                    new double[] { 54, 200, 110, 64, 210, 150, 64, 64, 64, 48, 54, 120, 90 });
+                                    new double[] { 44, 170, 96, 56, 170, 130, 50, 50, 44, 36, 40, 90, 70 });
             gridShowers.Selectable = false;
+            gridShowers.FitWidth = true;
             p5.Children.Add(gridShowers);
 
             // --- Fonti
@@ -566,7 +607,7 @@ namespace YAMS
                 if (isHead)
                 {
                     if (!first) inl.Add(new LineBreak());
-                    inl.Add(new Run(line) { Foreground = head, FontWeight = FontWeight.Bold, FontSize = rt.FontSize + 2 });
+                    inl.Add(new Run(line) { Foreground = head, FontWeight = FontWeight.Bold, FontSize = rt.FontSize * 14.5 / 12.5 });   // segue la scala del carattere
                     inl.Add(new LineBreak());
                 }
                 else
@@ -810,6 +851,7 @@ namespace YAMS
             }
             sky.Caption = "Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. " +
                 "Volta celeste a destra (Sorge/Tramonta in UTC del " + day0.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture) + "): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.";
+            lblMapCaption.Text = "Mappa: bordo = " + sky.MapRadiusKm.ToString("F0") + " km dalla stazione. " + sky.Caption;
             sky.InvalidateVisual();
             if (mv)
             {
@@ -1347,6 +1389,7 @@ namespace YAMS
             cfg.Set("vista_alto", chkTopView.IsChecked == true);
             cfg.Set("boom_m", V(numBoom));
             cfg.Set("hot_spot_km", V(numHotKm));
+            cfg.Set("carattere_pct", Math.Round(sldFont.Value / 10) * 10);
             SavePrevConfig();
             cfg.Save();
         }

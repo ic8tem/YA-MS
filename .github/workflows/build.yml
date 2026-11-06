@@ -70,6 +70,25 @@ jobs:
           cp src/Assets/ya-ms-256.png pkg/YA-MS/ya-ms.png
           chmod +x pkg/YA-MS/installa.sh pkg/YA-MS/YA-MS
           tar -C pkg -czf dist/YA-MS-$VER-linux-x64.tar.gz YA-MS
+      - name: Fotografie delle linguette (schermo virtuale)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq xvfb fonts-dejavu-core >/dev/null
+          # ore che mancano alle 01:00 UTC successive (Tauridi alte sulla tratta di prova JN70CN - IN78UO)
+          H=$(python3 -c "import datetime as d;n=d.datetime.utcnow();t=(n+d.timedelta(days=1)).replace(hour=1,minute=0,second=0,microsecond=0) if n.hour>=1 else n.replace(hour=1,minute=0,second=0,microsecond=0);print(round((t-n).total_seconds()/3600,2))")
+          cp -R publish/linux-x64 run
+          timeout 180 xvfb-run -a -s "-screen 0 1600x1000x24" ./run/YA-MS --screenshot "$PWD/shots" --dx IN78UO --ore $H || true
+          ls -la shots || true
+          cp run/data/errore_avvio.txt shots/ 2>/dev/null || true
+      - name: Pubblica le fotografie sul ramo ci-screenshots
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          [ -d shots ] || exit 0
+          cd shots
+          git init -q -b ci-screenshots
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add -A && git commit -q -m "fotografie ${GITHUB_SHA::7}"
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" ci-screenshots
       - uses: actions/upload-artifact@v4
         with:
           name: linux

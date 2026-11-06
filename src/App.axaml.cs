@@ -14,7 +14,12 @@ namespace YAMS
         public override void OnFrameworkInitializationCompleted()
         {
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
-                desktop.MainWindow = new MainWindow();
+            {
+                MainWindow w = new MainWindow();
+                desktop.MainWindow = w;
+                if (Program.ScreenshotDir != null)
+                    w.Opened += async (s, e) => await w.RunScreenshots(Program.ScreenshotDir, Program.ScreenshotDx, Program.ScreenshotHours);
+            }
             base.OnFrameworkInitializationCompleted();
         }
     }

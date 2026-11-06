@@ -219,9 +219,9 @@ C.push(TAG('SCELTA', 'L\'antenna si considera puntata verso il corrispondente. U
 
 C.push(H1('8. Flusso dal radar e traslazione di frequenza'));
 C.push(H2('8.1 Lettura del grafico di Collm'));
-C.push(TAG('SCELTA', 'Il grafico SKiYMET di Collm [7] (720×720 pixel, colori puri) si legge con una taratura fissa fatta sul grafico del 5/11/2026. Per l\'ora i-esima (0–47, ieri e oggi) la colonna centrale e il primo pixel ciano dall\'alto y danno:'));
-C.push(EQ(sb('x', 'i'), '=101+', br('i+0,5'), fr('676−101', '48'), ',    N=', br('216−y'), fr('1200', '216−72'), '  meteore/ora'));
-C.push(P('La risoluzione è di circa 8 meteore/ora per pixel. Se le etichette delle scale cambiano (impronta dei pixel diversa) il programma lo segnala.'));
+C.push(TAG('SCELTA', 'Il grafico SKiYMET di Collm [7] (720×720 pixel, colori puri) ha posizioni fisse degli assi, ma il radar adatta ogni giorno la scala verticale ai valori misurati (per esempio 0–1,2 ·10³ il 5/11/2026 e 0–1,0 ·10³ il 6/11/2026, con tacche spostate). Il programma trova le tacche lunghe dell\'asse e legge le etichette della più alta e della più bassa (0.0) confrontando ogni carattere con i modelli del carattere a matrice del grafico. Per l\'ora i-esima (0–47, ieri e oggi) la colonna centrale e il primo pixel ciano dall\'alto y danno:'));
+C.push(EQ(sb('x', 'i'), '=101+', br('i+0,5'), fr('676−101', '48'), ',    N=', br([sb('y', '0'), '−y']), fr(sb('N', 'top'), [sb('y', '0'), '−', sb('y', 'top')]), '  meteore/ora'));
+C.push(P('ytop e y0 sono le righe della tacca più alta e di quella dello zero, Ntop il valore letto sull\'etichetta più alta (×1000). La risoluzione è di circa 7–8 meteore/ora per pixel. Se un\'etichetta non si riesce a leggere, il programma torna alla taratura del 5/11/2026 (0–1200) e lo segnala nella linguetta Flusso radar.'));
 C.push(H2('8.2 Statistica delle quote'));
 C.push(TAG('SCELTA', 'Istogramma per km tra 70 e 110 km (nk meteore nel km k, quota media hk):'));
 C.push(EQ(sb('h', 'moda'), '=', sb('h', [sb('k', '*')]), ',   ', sb('k', '*'), '=', sb('argmax', 'k'), ' ', sb('n', 'k'), ',    ', 'h̄=', fr(sum('k', [sb('n', 'k'), sb('h', 'k')]), sum('k', sb('n', 'k'))), ',    ', 's=', sq(fr(sum('k', [sb('n', 'k'), sp(br(sb('h', 'k'), '−h̄'), '2')]), sum('k', sb('n', 'k'))))));

@@ -87,7 +87,7 @@ FILE IN data/
 LIMITI NOTI
   - L'efficienza e' un modello sperimentale (riflessione speculare + attenuazione delle scie sottodense),
     da confrontare con MCG_MS, MS-Soft e con l'esperienza in banda.
-  - La lettura del grafico di Collm e' tarata sul formato del 5/11/2026: se cambia la scala o il formato,
-    il programma lo segnala nella linguetta Flusso radar.
+  - Il grafico di Collm si legge con le posizioni degli assi del formato SKiYMET; la scala verticale, che il radar
+    adatta ogni giorno, si legge dalle etichette. Se il formato cambia, il programma lo segnala nella linguetta Flusso radar.
   - La stima del flusso a 50/144/432 MHz con lambda^3 e' una regola sperimentale (SM6FHZ).
   - Prima di distribuire il programma va chiesto il permesso agli enti dei radar.

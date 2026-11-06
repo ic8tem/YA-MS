@@ -189,7 +189,7 @@ namespace YAMS
         static FormattedText Ft(string s, double size, Color c, FontWeight w = FontWeight.Normal)
         {
             return new FormattedText(s ?? "", CultureInfo.CurrentCulture, FlowDirection.LeftToRight,
-                new Typeface(FontFamily.Default, FontStyle.Normal, w), size * LS, new ImmutableSolidColorBrush(c));
+                new Typeface(FontFamily.Default, FontStyle.Normal, w), size * drawScale, new ImmutableSolidColorBrush(c));
         }
 
         static void Txt(DrawingContext ctx, string s, double size, Color c, double x, double y, FontWeight w = FontWeight.Normal)
@@ -269,8 +269,12 @@ namespace YAMS
             return false;
         }
 
+        // scala usata dai metodi statici che creano i testi (impostata all'inizio di ogni disegno)
+        static double drawScale = 1.0;
+
         public override void Render(DrawingContext ctx)
         {
+            drawScale = LS;
             double W = Bounds.Width, H = Bounds.Height;
             ctx.DrawRectangle(Pal.B(Pal.Back), null, new Rect(0, 0, W, H));
             if (W < 10 || H < 10) return;

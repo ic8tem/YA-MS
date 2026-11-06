@@ -72,11 +72,15 @@ namespace YAMS
         static FormattedText Ft(string s, double size, Color c, FontWeight w = FontWeight.Normal)
         {
             return new FormattedText(s ?? "", CultureInfo.CurrentCulture, FlowDirection.LeftToRight,
-                new Typeface(FontFamily.Default, FontStyle.Normal, w), size * LS, new ImmutableSolidColorBrush(c));
+                new Typeface(FontFamily.Default, FontStyle.Normal, w), size * drawScale, new ImmutableSolidColorBrush(c));
         }
+
+        // scala usata dai metodi statici che creano i testi (impostata all'inizio di ogni disegno)
+        static double drawScale = 1.0;
 
         public override void Render(DrawingContext ctx)
         {
+            drawScale = LS;
             double Wd = Bounds.Width, Ht = Bounds.Height;
             ctx.DrawRectangle(Pal.B(Pal.Back), null, new Rect(0, 0, Wd, Ht));
             FormattedText title = Ft("SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az. " + AntennaAz.ToString("F0") + "°)",

@@ -16,7 +16,7 @@ Windows `...-windows-x64-setup.exe` (C:\YA-MS), Linux `...-linux-x64.tar.gz` + `
 Mac `...-mac-apple-silicon.dmg` / `...-mac-intel.dmg` (~/YA-MS).
 
 ## Compilazione
-Gli installatori li produce GitHub Actions (`.github/workflows/build.yml`) a ogni tag `vX.Y.Z`.
+Gli installatori li produce GitHub Actions (`.github/workflows/build.yml`) a ogni aggiornamento del ramo `release` (versione dal file `VERSION`), che crea anche la Release `vX.Y.Z`.
 In locale: `dotnet publish YA-MS.csproj -c Release -r win-x64|linux-x64|osx-arm64 --self-contained true`.
 I documenti si rigenerano con `tools/build_spiegazione.py data` e `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
 

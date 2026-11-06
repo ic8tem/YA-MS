@@ -1,11 +1,12 @@
 # YA-MS - compilazione e installatori per Windows, Linux e Mac.
 # A ogni push sul ramo main: solo compilazione di controllo su Linux (i minuti Mac costano 10 volte, Windows 2 volte).
-# Con un tag vX.Y.Z (es. v1.0.0), o avviandolo a mano: installatori per Windows, Linux e Mac e, con il tag, la Release.
+# Con un push sul ramo release (o un tag vX.Y.Z, o avviandolo a mano): installatori per Windows, Linux e Mac;
+# con il ramo release o il tag crea anche la Release vX.Y.Z (versione letta dal file VERSION).
 name: build
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, release ]
     tags: [ 'v*' ]
   workflow_dispatch:
 
@@ -19,7 +20,7 @@ env:
 jobs:
   windows:
     runs-on: windows-latest
-    if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
+    if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/release' || github.event_name == 'workflow_dispatch'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
@@ -28,7 +29,7 @@ jobs:
       - name: Versione
         shell: bash
         run: |
-          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="1.0.0"; fi
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="$(tr -d ' \r\n' < VERSION)"; fi
           echo "VER=$V" >> $GITHUB_ENV
       - name: Compila
         run: dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true -p:Version=${{ env.VER }} -p:DebugType=none -o publish/win-x64
@@ -58,7 +59,7 @@ jobs:
           dotnet-version: '8.0.x'
       - name: Versione
         run: |
-          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="1.0.0"; fi
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="$(tr -d ' \r\n' < VERSION)"; fi
           echo "VER=$V" >> $GITHUB_ENV
       - name: Compila
         run: dotnet publish YA-MS.csproj -c Release -r linux-x64 --self-contained true -p:Version=$VER -p:DebugType=none -o publish/linux-x64
@@ -98,7 +99,7 @@ jobs:
 
   macos:
     runs-on: macos-latest
-    if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
+    if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/release' || github.event_name == 'workflow_dispatch'
     strategy:
       matrix:
         rid: [ osx-arm64, osx-x64 ]
@@ -109,7 +110,7 @@ jobs:
           dotnet-version: '8.0.x'
       - name: Versione
         run: |
-          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="1.0.0"; fi
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="$(tr -d ' \r\n' < VERSION)"; fi
           echo "VER=$V" >> $GITHUB_ENV
       - name: Compila
         run: dotnet publish YA-MS.csproj -c Release -r ${{ matrix.rid }} --self-contained true -p:Version=$VER -p:DebugType=none -o publish/${{ matrix.rid }}
@@ -134,17 +135,22 @@ jobs:
           path: dist/*
 
   release:
-    if: startsWith(github.ref, 'refs/tags/v')
+    if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/release'
     needs: [ windows, linux, macos ]
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - name: Versione
+        run: echo "VER=$(tr -d ' \r\n' < VERSION)" >> $GITHUB_ENV
       - uses: actions/download-artifact@v4
         with:
           path: dist
           merge-multiple: true
       - uses: softprops/action-gh-release@v2
         with:
-          name: YA-MS ${{ github.ref_name }}
+          name: YA-MS ${{ env.VER }}
+          tag_name: v${{ env.VER }}
+          target_commitish: ${{ github.sha }}
           body: |
             YA-MS - previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter.
             A cura di Costantino IC8TEM.

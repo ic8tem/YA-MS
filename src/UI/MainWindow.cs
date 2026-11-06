@@ -56,6 +56,7 @@ namespace YAMS
         TextBlock lblPathInfo;
         SimpleChart chart24;
         TableView grid24;
+        const double Grid24Scale = 1.5;   // caratteri della tabella oraria al 150 %
         SimpleChart chartFlux, chartHeight;
         Image picCollm, picSoda;
         TextBlock lblRadar, lblScaleNote;
@@ -473,16 +474,25 @@ namespace YAMS
             chart24 = new SimpleChart { Height = 300 };
             DockTop(p2, chart24);
             List<string> cols24 = new List<string> { "Sigla", "Sciame", "ZHR" };
-            List<double> w24 = new List<double> { 50, 240, 46 };
-            for (int h = 0; h < 24; h++) { cols24.Add(h.ToString("00")); w24.Add(48); }
+            // tabella oraria con caratteri ingranditi del 150 % (richiesta dell'autore); colonne allargate in proporzione
+            List<double> w24 = new List<double> { 62, 270, 54 };
+            for (int h = 0; h < 24; h++) { cols24.Add(h.ToString("00")); w24.Add(58); }
             grid24 = MakeTable(cols24.ToArray(), w24.ToArray());
             grid24.Selectable = false;
-            grid24.RowHeight = 22;
+            grid24.RowHeight = 22 * Grid24Scale;
+            grid24.HeaderHeight = 24 * Grid24Scale;
+            grid24.HeaderFontSize = 12 * Grid24Scale;
             grid24.StretchLastColumn = false;
             List<int> al24 = new List<int> { 0, 0, 1 };
             for (int h = 0; h < 24; h++) al24.Add(1);   // ore centrate come nell'anteprima
             grid24.ColumnAlign = al24;
-            p2.Children.Add(grid24);
+            // se la finestra e' piu' stretta della tabella compare lo scorrimento orizzontale
+            p2.Children.Add(new ScrollViewer
+            {
+                Content = grid24,
+                HorizontalScrollBarVisibility = Avalonia.Controls.Primitives.ScrollBarVisibility.Auto,
+                VerticalScrollBarVisibility = Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled
+            });
 
             // --- Attuazione sperimentale previsioni (MainWindow.Previsioni.cs)
             BuildPrevTab();
@@ -939,7 +949,7 @@ namespace YAMS
                     row[3 + h] = (e < 1 ? "" : e.ToString("F0") + (e >= 5 ? sides[h] : "")) + (tooHigh[h] ? "↑" : "");
                 }
                 row[2] = zmax.ToString("F0");
-                TableRow tr = new TableRow { Cells = row, CellBack = new Color?[27], CellFore = new Color?[27], Tag = s.Code };
+                TableRow tr = new TableRow { Cells = row, CellBack = new Color?[27], CellFore = new Color?[27], Tag = s.Code, FontSize = 12 * Grid24Scale };
                 for (int h = 0; h < 24; h++)
                 {
                     double e = effs[h];
@@ -952,7 +962,7 @@ namespace YAMS
                 string[] drow = new string[27];
                 drow[0] = ""; drow[1] = "   DH9GCD %"; drow[2] = "";
                 for (int h = 0; h < 24; h++) drow[3 + h] = dh[h] < 1 ? "" : dh[h].ToString("F0");
-                rows.Add(new TableRow { Cells = drow, Fore = Pal.Azure, Italic = true, FontSize = 11 });
+                rows.Add(new TableRow { Cells = drow, Fore = Pal.Azure, Italic = true, FontSize = 11 * Grid24Scale });
                 if (ns < 5)
                 {
                     ChartSeries cs = new ChartSeries(); cs.Name = s.Code + " effic. %"; cs.Color = pal[ns]; cs.Values = effs;
@@ -965,7 +975,7 @@ namespace YAMS
             string[] irow = new string[27];
             irow[0] = "Σ"; irow[1] = "Indice della tratta (ZHR x efficienza)"; irow[2] = "";
             for (int h = 0; h < 24; h++) irow[3 + h] = index[h].ToString("F1");
-            rows.Add(new TableRow { Cells = irow });
+            rows.Add(new TableRow { Cells = irow, FontSize = 12 * Grid24Scale });
 
             // riga della previsione sperimentale (solo per le ore in cui esiste: oggi e in parte domani)
             bool anyFc = false;
@@ -977,7 +987,7 @@ namespace YAMS
                 frow[3 + h] = fc < 0 ? "" : fc.ToString("F0");
                 if (fc >= 0) anyFc = true;
             }
-            if (anyFc) rows.Add(new TableRow { Cells = frow, Fore = Pal.Orange, Italic = true });
+            if (anyFc) rows.Add(new TableRow { Cells = frow, Fore = Pal.Orange, Italic = true, FontSize = 12 * Grid24Scale });
             for (int i = 0; i < rows.Count; i++)
                 for (int c = 0; c < rows[i].Cells.Length; c++) if (rows[i].Cells[c] == null) rows[i].Cells[c] = "";
             grid24.Rows = rows;

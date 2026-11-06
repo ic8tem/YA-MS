@@ -1,4 +1,4 @@
-YA-MS 1.1.0 - a cura di Costantino IC8TEM
+YA-MS 1.2.0 - a cura di Costantino IC8TEM
 Previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter (50-432 MHz)
 Windows, Linux e Mac.
 
@@ -14,6 +14,11 @@ INSTALLAZIONE
            Aprire il .dmg, clic destro su "Installa YA-MS.command" > Apri. Installa in ~/YA-MS.
            Il programma non e' firmato da Apple: la prima volta il Mac chiede conferma.
   Le versioni nuove si installano sopra la precedente: impostazioni, archivi del flusso e mappa restano.
+
+NOVITA' DELLA 1.2.0
+  - Lobo dell'antenna: orizzontale = 0,93 x regola di Kraus, verticale = Kraus (verificati con le simulazioni
+    NEC di W4RNL); la riga dell'antenna mostra entrambi, la sezione disegna il lobo con le due aperture.
+  - Curva del guadagno DL6WU verificata con le Yagi DL6WU e VK3AUU (entro 0,1 dB); nuove fonti nel manuale.
 
 NOVITA' DELLA 1.1.0
   - Cursore "Carattere" (prima riga dei comandi): ingrandisce tutto il testo dal 100 al 300 %.

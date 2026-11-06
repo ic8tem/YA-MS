@@ -338,15 +338,11 @@ namespace YAMS
             PathModel.HotSpotOffsetKm = V(numHotKm);
             numHotKm.ValueChanged += (s, e) => { PathModel.HotSpotOffsetKm = V(numHotKm); if (model != null) Recalc(); };
 
-            // riga 1: stazioni e banda
-            Border row1 = Row(L("Il mio locator"), txtHome, L("quota m"), numHomeAlt,
-                              L("Corrispondente"), txtDx, L("quota m"), numDxAlt,
-                              L("Banda MHz"), cmbBand, btnCalc);
             // riga 2: strato E, lobo e antenna
             Border row2 = Row(L("Quota scie km"), numLayer, chkLayerRadar,
                               L("Elevazione lobo °"), numElev,
                               L("Antenna Yagi: boom m"), numBoom, lblAnt,
-                              L("Hot spot dal punto medio km"), numHotKm, lblAntAz);
+                              L("Hot spot dal punto medio km"), numHotKm);
 
             // riga 3: orologio, ora della volta celeste, giorno della tabella 24 h
             lblClock = L("--:--:-- UTC"); lblClock.FontFamily = Pal.Mono; lblClock.FontSize = 15; lblClock.FontWeight = FontWeight.Bold; lblClock.Foreground = Pal.B(Pal.Yellow);
@@ -371,8 +367,11 @@ namespace YAMS
             UiScale.Set(pct0 / 100.0);
             WhenChanged(sldFont, RangeBase.ValueProperty, () => SetFontPercent(sldFont.Value));
             Border row3 = Row(L("Ora"), lblClock, L("Ora della volta celeste (±36 h)"), trackTime,
-                              btnReal, lblSkyTime, L("Giorno per la tabella 24 h (UTC)"), dtDay,
-                              L("Carattere"), sldFont, lblFont);
+                              btnReal, lblSkyTime, L("Giorno per la tabella 24 h (UTC)"), dtDay);
+            // riga 1: stazioni e banda, azimut d'antenna e cursore del carattere (la prima riga ha spazio)
+            Border row1 = Row(L("Il mio locator"), txtHome, L("quota m"), numHomeAlt,
+                       L("Corrispondente"), txtDx, L("quota m"), numDxAlt,
+                       L("Banda MHz"), cmbBand, btnCalc, lblAntAz, L("Carattere"), sldFont, lblFont);
 
             DockTop(root, row1);
             DockTop(root, row2);
@@ -1036,14 +1035,14 @@ namespace YAMS
                 }
             }
             string[] irow = new string[27];
-            irow[0] = "Σ"; irow[1] = "Indice della tratta (ZHR x efficienza)"; irow[2] = "";
+            irow[0] = "Σ"; irow[1] = "Indice tratta (ZHR×eff.)"; irow[2] = "";
             for (int h = 0; h < 24; h++) irow[3 + h] = index[h].ToString("F1");
             rows.Add(new TableRow { Cells = irow, FontSize = 12 * Grid24Scale });
 
             // riga della previsione sperimentale (solo per le ore in cui esiste: oggi e in parte domani)
             bool anyFc = false;
             string[] frow = new string[27];
-            frow[0] = "~"; frow[1] = "Previsione sperimentale " + PrevFreqMHz.ToString("F0") + " MHz (riflessioni/ora)"; frow[2] = "";
+            frow[0] = "~"; frow[1] = "Previsione " + PrevFreqMHz.ToString("F0") + " MHz (rifl./ora)"; frow[2] = "";
             for (int h = 0; h < 24; h++)
             {
                 double fc = ForecastAt(day.AddHours(h));

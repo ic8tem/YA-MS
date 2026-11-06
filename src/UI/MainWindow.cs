@@ -38,7 +38,7 @@ namespace YAMS
         TextBlock lblAntAz, lblAnt;
         TextBlock lblLobeWarn, lblHighRad, lblAB;
         Border boxLobeWarn, boxHighRad;
-        double antGainDbi, antHpbw;
+        double antGainDbi, antHpbw, antHpbwV;   // lobo orizzontale (E) e verticale (H)
         string recommendText = "";
         TextBlock glBest, glShower, glNow, glFore;
         CheckBox chkHot, chkMap, chkTopView;
@@ -679,15 +679,17 @@ namespace YAMS
             SaveConfig();
         }
 
-        // Lobo dell'antenna: guadagno dalla lunghezza del boom (DL6WU), HPBW dal guadagno (Kraus).
+        // Lobo dell'antenna: guadagno dalla lunghezza del boom (DL6WU), HPBW dal guadagno (Kraus corretto
+        // con le simulazioni NEC di W4RNL: orizzontale 0,93 x Kraus, verticale Kraus).
         // Gli Hot che cadono entro +-HPBW/2 dal puntamento diventano grigi e la GUI avvisa.
         void ApplyAntenna()
         {
             double f = BandMHz;
             antGainDbi = MsGeometry.YagiGainDbi(V(numBoom), f);
             antHpbw = MsGeometry.HpbwFromGainDeg(antGainDbi);
+            antHpbwV = MsGeometry.HpbwVerticalDeg(antGainDbi);
             double bl = V(numBoom) * f / 299.792458;
-            lblAnt.Text = string.Format("= {0:F1} λ  G {1:F1} dBi  lobo {2:F0}°{3}", bl, antGainDbi, antHpbw, bl < 2 ? " (stima poco precisa sotto 2 λ)" : "");
+            lblAnt.Text = string.Format("= {0:F1} λ  G {1:F1} dBi  lobo {2:F0}° oriz. / {3:F0}° vert.{4}", bl, antGainDbi, antHpbw, antHpbwV, bl < 2 ? " (stima poco precisa sotto 2 λ)" : "");
             decimal gd = Dm(Math.Round(antGainDbi * 2) / 2.0);
             if (numGain != null && gd >= numGain.Minimum && gd <= numGain.Maximum) numGain.Value = gd;
             if (model == null || !model.Valid) return;
@@ -695,7 +697,7 @@ namespace YAMS
             lblAntAz.Text = "Antenna az: " + point.ToString("F0") + "° (verso il DX)";
             sky.AntennaAz = point; sky.HpbwDeg = antHpbw;
             skySmall.AntennaAz = point; skySmall.HpbwDeg = antHpbw;
-            section.AntennaAz = point; section.HpbwDeg = antHpbw; section.LobeElevDeg = V(numElev);
+            section.AntennaAz = point; section.HpbwDeg = antHpbw; section.HpbwVDeg = antHpbwV; section.LobeElevDeg = V(numElev);
             List<string> inside = new List<string>();
             foreach (HotPoint h in new HotPoint[] { model.HotA, model.HotB })
             {
@@ -1123,8 +1125,9 @@ namespace YAMS
                 sb.Append("Sono i bordi piu' lontani del cielo visto da entrambe le stazioni, non i punti da puntare.\n");
             }
             else sb.Append(model.Message + "\n");
-            sb.AppendFormat("Antenna Yagi: boom {0:F2} m = {1:F2} lambda a {2:F0} MHz -> guadagno {3:F1} dBi (curva DL6WU), lobo a -3 dB {4:F0}° (regola di Kraus)\n",
-                V(numBoom), V(numBoom) * f / 299.792458, f, antGainDbi, antHpbw);
+            sb.AppendFormat("Antenna Yagi: boom {0:F2} m = {1:F2} lambda a {2:F0} MHz -> guadagno {3:F1} dBi (curva DL6WU),\n" +
+                            "  lobo a -3 dB {4:F0}° orizzontale / {5:F0}° verticale (Kraus corretto con le simulazioni NEC di W4RNL)\n",
+                V(numBoom), V(numBoom) * f / 299.792458, f, antGainDbi, antHpbw, antHpbwV);
             if (model.HotA != null && model.HotB != null)
                 sb.AppendFormat("Puntamento {0:F0}°: Hot A {1}, Hot B {2}\n", sky.AntennaAz,
                     model.HotA.InLobe ? "DENTRO il lobo" : "fuori dal lobo", model.HotB.InLobe ? "DENTRO il lobo" : "fuori dal lobo");
@@ -1434,7 +1437,10 @@ namespace YAMS
 "    radiante utile tra 20 e 70 gradi, distanza migliore 1300-1500 km, meteore sporadiche di KB0VUK\n" +
 "  Gunter Hoch DL6WU - curva guadagno/lunghezza del boom delle Yagi lunghe, G(dBi) = 7,773 log(L/lambda) + 11,43, riportata da W8IO (w8io.com)\n" +
 "  J.D. Kraus - Antennas: guadagno e apertura del lobo, G = 41253 / (thetaE x thetaH)\n" +
-"  L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data (verifica delle due regole)\n\n" +
+"  L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data (verifica delle due regole);\n" +
+"    Appreciating DL6WU Wide-Band Long-Boom Yagi Design e 70-CM Yagi Stacks Part 2 (Yagi VK3AUU di David Tanner):\n" +
+"    simulazioni NEC usate per verificare la curva del guadagno e correggere il lobo orizzontale (0,93 x Kraus)\n" +
+"  John Drew VK5DJ - Yagi Calculator: stime del guadagno per le varianti VK3AUU, WA2PHW e DJ9BV\n\n" +
 "DATI DEGLI SCIAMI\n" +
 "  International Meteor Organization - Meteor Shower Calendar 2026, www.imo.net (tabelle 5, 6 e 7)\n" +
 "  Philip G0ISW - www.qsl.net/g0isw/g0iswms.htm (tassi orari radio massimi)\n" +

@@ -212,10 +212,14 @@ C.push(EQ('margine=', sb('P', 'rx'), '−', sb('P', 'min'), ',    ', sb('P', 'mi
 C.push(H1('7. Antenna e lobo'));
 C.push(TAG('FONTE', 'Guadagno di una Yagi lunga in funzione della lunghezza del boom L (curva DL6WU [10], valida da circa 2 λ):'));
 C.push(EQ('G=7,773 ', sb('log', '10'), br(fr('L', 'λ')), '+11,43  dBi'));
-C.push(TAG('FONTE', 'Apertura a −3 dB dal guadagno, regola di Kraus [11], con lobo circolare (θE = θH = θ):'));
-C.push(EQ(sb('G', 'lin'), '=', fr('41253', [sb('θ', 'E'), sb('θ', 'H')]), '   ⇒   θ=', sq(fr('41253', sp('10', 'G/10')))));
-C.push(TAG('RILIEVO', 'Yagi di 14 λ a 432 MHz: 20,3 dBi e 19,5°. I modelli di W4RNL [12] danno 20,4 dBi e 18,4°/18,8°.'));
-C.push(TAG('SCELTA', 'L\'antenna si considera puntata verso il corrispondente. Un hot spot (paragrafo 4.5) è nel lobo se |Az(Hot) − Az(antenna)| ≤ θ/2: in quel caso è segnato in grigio invece che in rosa e la finestra principale avvisa. L\'hot spot consigliato dall\'efficienza (paragrafo 4.6) è sempre in rosso.'));
+C.push(TAG('RILIEVO', 'Verifica con le simulazioni NEC di W4RNL a 432 MHz [12][19][20]: DL6WU 13, 22 e 31 elementi (3,23 / 6,82 / 10,42 λ) 15,28 / 17,82 / 19,35 dBi, formula 15,38 / 17,91 / 19,34 dBi; Yagi VK3AUU di David Tanner, con boom più corto a pari elementi, 16, 28 e 40 elementi (3,12 / 6,88 / 10,79 λ) 15,17 / 17,91 / 19,46 dBi, formula 15,27 / 17,94 / 19,45 dBi. Lo scarto non supera 0,1 dB: il guadagno dipende dalla lunghezza del boom più che dal progetto. Il calcolatore di VK5DJ [21] offre anche stime per le varianti VK3AUU, WA2PHW e DJ9BV, di cui non sono pubblicate le formule.'));
+C.push(TAG('FONTE', 'Apertura a −3 dB dal guadagno, regola di Kraus [11], con lobo circolare (θE = θH = θK):'));
+C.push(EQ(sb('G', 'lin'), '=', fr('41253', [sb('θ', 'E'), sb('θ', 'H')]), '   ⇒   ', sb('θ', 'K'), '=', sq(fr('41253', sp('10', 'G/10')))));
+C.push(TAG('RILIEVO', 'Le simulazioni NEC delle Yagi DL6WU [19] danno un lobo orizzontale più stretto di Kraus del 5–10 %: 33,8° / 26,4° / 22,6° per 12, 19 e 26 elementi, contro 37,3° / 28,0° / 23,9° di Kraus. Le formule semplici ignorano i lobi laterali in avanti [12]. Sui boom lunghi il lobo verticale è di poco più largo dell\'orizzontale (14 λ: 18,4° / 18,8°).'));
+C.push(TAG('SCELTA', 'Lobo orizzontale (piano E, azimut con polarizzazione orizzontale) = 0,93 · θK; lobo verticale (piano H) = θK. Regole approssimate, ricavate da poche antenne DL6WU:'));
+C.push(EQ(sb('θ', 'oriz'), '=0,93·', sb('θ', 'K'), ',    ', sb('θ', 'vert'), '=', sb('θ', 'K')));
+C.push(TAG('RILIEVO', 'Yagi di 14 λ a 432 MHz: 20,3 dBi, lobo 18,1° orizzontale e 19,5° verticale. I modelli di W4RNL [12] danno 20,4 dBi e 18,4° / 18,8°.'));
+C.push(TAG('SCELTA', 'L\'antenna si considera puntata verso il corrispondente. Un hot spot (paragrafo 4.5) è nel lobo se |Az(Hot) − Az(antenna)| ≤ θoriz/2: in quel caso è segnato in grigio invece che in rosa e la finestra principale avvisa. L\'hot spot consigliato dall\'efficienza (paragrafo 4.6) è sempre in rosso.'));
 
 C.push(H1('8. Flusso dal radar e traslazione di frequenza'));
 C.push(H2('8.1 Lettura del grafico di Collm'));
@@ -268,6 +272,9 @@ C.push(H1('11. Fonti'));
  'LZ2HV - MSHV, programma per i modi digitali MS (calcolo di Hot A / Hot B).',
  'J. DF5HC - "Meteorscatter auf UKW", conferenza DARC, gennaio 2018 (formula della migliore direzione di DH9GCD; diffusione a cono e HOT-A / HOT-B di DJ5HG, "Meteorscatter Propagation", www.vhfdx.de/mseff/MS-Geometrie.pdf; meteore sporadiche di KB0VUK).',
  'K. von der Heide DJ5HG - QTFGUI, programma per i puntamenti in aurora, FAI e meteor scatter, con manuale "QTFGUI Help" (2007) e dati meteorshowerdata.txt.',
+ 'L.B. Cebik W4RNL - Appreciating DL6WU Wide-Band Long-Boom Yagi Design (simulazioni NEC, 432 MHz).',
+ 'L.B. Cebik W4RNL - 70-CM Yagi Stacks Part 2: 10- to 40-Element VK3AUU Examples (Yagi di David Tanner VK3AUU).',
+ 'J. Drew VK5DJ - Yagi Calculator (stime del guadagno per le varianti VK3AUU, WA2PHW, DJ9BV).',
 ].forEach((t, i) => C.push(new Paragraph({ numbering: { reference: 'num', level: 0 }, spacing: { after: 60 }, children: [new TextRun(t)] })));
 
 const doc = new Document({

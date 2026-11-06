@@ -33,7 +33,8 @@ namespace YAMS
 
         public PathModel Model;
         public List<TrailSeg> Trails = new List<TrailSeg>();
-        public double AntennaAz = 0, HpbwDeg = 0, LobeElevDeg = 0;
+        public double AntennaAz = 0, HpbwDeg = 0, HpbwVDeg = 0, LobeElevDeg = 0;   // lobo orizzontale e verticale
+        double VLobe { get { return HpbwVDeg > 0 ? HpbwVDeg : HpbwDeg; } }
         public string Note = "";
 
         static readonly Color Gainsboro = Color.FromRgb(220, 220, 220);
@@ -101,7 +102,7 @@ namespace YAMS
             double ymin = -3, ymax = 25;
             foreach (HotPoint h in new HotPoint[] { Model.HotA, Model.HotB })
                 if (h != null) ymax = Math.Max(ymax, h.ElevFromHome + 8);
-            ymax = Math.Max(ymax, LobeElevDeg + HpbwDeg / 2 + 3);
+            ymax = Math.Max(ymax, LobeElevDeg + VLobe / 2 + 3);
             ymax = Math.Min(60, Math.Ceiling(ymax / 5) * 5);
 
             Func<double, double> X = a => pr.Left + (a + xr) / (2 * xr) * pr.Width;
@@ -156,7 +157,7 @@ namespace YAMS
                 // lobo dell'antenna (HPBW, cerchio a -3 dB attorno al puntamento)
                 if (HpbwDeg > 0)
                 {
-                    double lx0 = X(-HpbwDeg / 2), lx1 = X(HpbwDeg / 2), ly0 = Y(LobeElevDeg + HpbwDeg / 2), ly1 = Y(LobeElevDeg - HpbwDeg / 2);
+                    double lx0 = X(-HpbwDeg / 2), lx1 = X(HpbwDeg / 2), ly0 = Y(LobeElevDeg + VLobe / 2), ly1 = Y(LobeElevDeg - VLobe / 2);
                     ctx.DrawEllipse(Pal.B(Pal.Argb(40, 255, 240, 200)), Pal.P(Pal.Argb(150, 255, 240, 200), 1),
                         new Rect(lx0, ly0, lx1 - lx0, ly1 - ly0));
                 }

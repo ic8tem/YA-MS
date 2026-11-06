@@ -1,4 +1,4 @@
-﻿// YA-MS - geometria del meteor scatter, Hot A/B, attenuazione, efficienza dello sciame
+// YA-MS - geometria del meteor scatter, Hot A/B, attenuazione, efficienza dello sciame
 //
 // Ipotesi di base (articolo Cerrotta-Sartori, vers. 7):
 //  - lo sciame provoca scie ionizzate nello strato E; la quota tipica e' quella piu' frequente misurata
@@ -285,10 +285,29 @@ namespace YAMS
             return 7.773 * Math.Log10(bl) + 11.43;
         }
 
-        // Apertura a -3 dB dal guadagno, regola di Kraus con lobo circolare: G = 41253 / (thetaE x thetaH)
-        public static double HpbwFromGainDeg(double gainDbi)
+        // Apertura a -3 dB dal guadagno. Regola di Kraus G = 41253 / (thetaE x thetaH); con lobo circolare
+        // thetaK = sqrt(41253/G). Le simulazioni NEC delle Yagi DL6WU (W4RNL, "Appreciating DL6WU Wide-Band
+        // Long-Boom Yagi Design" e "Long-Boom Yagi Rules of Thumb") mostrano che Kraus allarga il lobo del 5-10 %:
+        // piano orizzontale (E, azimut con polarizzazione orizzontale) = 0,93 x thetaK. Per il piano verticale (H)
+        // si tiene thetaK senza correzione: sulle Yagi lunghe H e' di poco piu' largo di E (14 lambda: 18,4/18,8 gradi
+        // simulati, Kraus 19,5). Regole approssimate, ricavate da poche antenne DL6WU.
+        public const double HpbwECorrection = 0.93;
+
+        public static double HpbwKrausDeg(double gainDbi)
         {
             return Math.Sqrt(41253.0 / Math.Pow(10, gainDbi / 10.0));
+        }
+
+        // lobo orizzontale (piano E): quello usato per il puntamento in azimut e per gli Hot nel lobo
+        public static double HpbwFromGainDeg(double gainDbi)
+        {
+            return HpbwECorrection * HpbwKrausDeg(gainDbi);
+        }
+
+        // lobo verticale (piano H): Kraus senza correzione
+        public static double HpbwVerticalDeg(double gainDbi)
+        {
+            return HpbwKrausDeg(gainDbi);
         }
 
         // Regole sperimentali SM6FHZ (VUSHF 2025): numero/intensita' ~ lambda^3, durata ~ lambda^2

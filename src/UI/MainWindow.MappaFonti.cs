@@ -36,17 +36,19 @@ namespace YAMS
             Grid.SetColumn(bw, 1);
             TextBlock gmn = new TextBlock
             {
-                Foreground = Pal.B(Pal.Fore), TextWrapping = TextWrapping.Wrap, FontSize = 13,
-                Text = Lang.T("Global Meteor Network (GMN)") + "\n\n" +
-                       Lang.T("Non è un punto sulla mappa: è una rete mondiale di telecamere (soprattutto amatoriali) sparse in molti paesi di tutti i continenti.") + "\n\n" +
+                Foreground = Pal.B(Pal.Fore), TextWrapping = TextWrapping.Wrap, FontSize = 14,
+                Text = Lang.T("Non è un punto sulla mappa: è una rete mondiale di telecamere (soprattutto amatoriali) sparse in molti paesi di tutti i continenti.") + "\n\n" +
                        "• " + Lang.T("misura il flusso e lo ZHR di ogni sciame attivo") + "\n" +
                        "• " + Lang.T("aggiornamento una volta al giorno") + "\n" +
                        "• " + Lang.T("dati CC BY 4.0 (Vida et al. 2021, 2022)") + "\n" +
                        "→ " + Lang.F("linguetta \"{0}\"", Lang.T("Sciami in diretta"))
             };
+            StackPanel gs = new StackPanel { Spacing = 10 };
+            gs.Children.Add(new TextBlock { Text = Lang.T("Global Meteor Network (GMN)"), FontSize = 17, FontWeight = FontWeight.Bold, Foreground = Pal.B(Color.FromRgb(15, 118, 110)) });
+            gs.Children.Add(gmn);
             Border bg = new Border
             {
-                Child = gmn, Background = Pal.B(Pal.Panel), BorderBrush = Pal.B(Pal.Border), BorderThickness = new Thickness(1),
+                Child = gs, Background = Pal.B(Pal.Panel), BorderBrush = Pal.B(Pal.Border), BorderThickness = new Thickness(1),
                 CornerRadius = new CornerRadius(8), Padding = new Thickness(14, 10)
             };
             Grid.SetColumn(bg, 1); Grid.SetRow(bg, 1);

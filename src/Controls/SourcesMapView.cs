@@ -62,7 +62,7 @@ namespace YAMS
             double W = Bounds.Width, H = Bounds.Height;
             bool dark = Tema.Scuro;
             Color sea = dark ? Color.FromRgb(18, 26, 44) : Color.FromRgb(232, 238, 247);
-            Color coast = dark ? Color.FromRgb(120, 136, 165) : Color.FromRgb(125, 135, 150);
+            Color coast = dark ? Color.FromRgb(130, 146, 175) : Color.FromRgb(95, 105, 122);
             Color border = dark ? Color.FromRgb(70, 82, 110) : Color.FromRgb(175, 182, 195);
             Color ink = dark ? Color.FromRgb(225, 230, 240) : Color.FromRgb(31, 41, 55);
             Color muted = dark ? Color.FromRgb(160, 170, 190) : Color.FromRgb(107, 114, 128);
@@ -82,7 +82,7 @@ namespace YAMS
             DrawLines(ctx, MapBorders, pb, P);
             DrawLines(ctx, MapLines, pc, P);
 
-            double fs = 11 * FontK;
+            double fs = 13.5 * FontK;
             // zone di cielo viste dai radar e linee verso la stazione
             foreach (MapSource m in Sources)
             {

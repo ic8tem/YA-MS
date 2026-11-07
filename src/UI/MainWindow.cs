@@ -721,6 +721,9 @@ namespace YAMS
                 Content = new Border { Padding = new Thickness(14, 10), Child = txtSources }
             });
 
+            // --- Mappa delle fonti (MainWindow.MappaFonti.cs)
+            BuildSourcesMapTab();
+
             // --- Efficienza - spiegazione (MainWindow.Spiegazione.cs)
             BuildExplainTab();
 
@@ -793,7 +796,7 @@ namespace YAMS
                 ? Lang.F("Tratta calcolata: {0:F0} km, {1} punti di riflessione campionati in {2:F1} s. {3}",
                     model.DistKm, model.SamplePoints, (DateTime.Now - t0).TotalSeconds, model.Message)
                 : Lang.F("Calcolo non riuscito: {0}", model.Message);
-            UpdateSky(); Update24h(); UpdateGeometry(); UpdateShowerGrid(); UpdateFluxTab(); RefreshGrids();
+            UpdateSky(); Update24h(); UpdateGeometry(); UpdateShowerGrid(); UpdateFluxTab(); RefreshGrids(); UpdateSourcesMap();
             SaveConfig();
         }
 

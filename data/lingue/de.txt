@@ -486,3 +486,23 @@ Global Meteor Network (GMN) - globalmeteornetwork.org/flux: flusso e ZHR misurat
 Nessun dato GMN: premi "Scarica adesso".	Keine GMN-Daten: „Jetzt laden" drücken.
 Riepilogo dell'anno (ZHR misurati, GMN)	Jahresübersicht (gemessene ZHR, GMN)
 Sciami in diretta	Ströme live
+Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	Wo die Quellen der Live-Daten liegen. Gestrichelte Kreise = vom Radar gesehener Himmelsbereich (etwa 300 km um die Station, Spuren in 90 km Höhe): kein Radar schaut auf den Himmel über deiner Strecke, die Daten zeigen, wie aktiv der Strom ist. Gepunktete Linien = Entfernung von deiner Station.
+Europa	Europa
+Global Meteor Network (GMN)	Global Meteor Network (GMN)
+Mappa delle fonti	Karte der Quellen
+Mondo	Welt
+Non è un punto sulla mappa: è una rete mondiale di telecamere (soprattutto amatoriali) sparse in molti paesi di tutti i continenti.	Es ist kein Punkt auf der Karte, sondern ein weltweites Netz von Kameras (überwiegend von Amateuren) in vielen Ländern aller Kontinente.
+SGO, Finlandia	SGO, Finnland
+Tavistock, Ontario (Canada)	Tavistock, Ontario (Kanada)
+Univ. Lipsia / IAP Kühlungsborn	Univ. Leipzig / IAP Kühlungsborn
+aggiornamento una volta al giorno	einmal täglich aktualisiert
+dati CC BY 4.0 (Vida et al. 2021, 2022)	Daten CC BY 4.0 (Vida et al. 2021, 2022)
+la tua stazione	deine Station
+linguetta "{0}"	Reiter „{0}"
+misura il flusso e lo ZHR di ogni sciame attivo	misst Fluss und ZHR jedes aktiven Stroms
+osservatori RMOB che ascoltano GRAVES	RMOB-Beobachter, die GRAVES hören
+radar SKiYMET 36,2 MHz	SKiYMET-Radar 36,2 MHz
+radar meteorico 17-38 MHz, orbite	Meteorradar 17-38 MHz, Bahnen
+radar meteorico 36,9 MHz	Meteorradar 36,9 MHz
+trasmettitore 143,050 MHz	Sender 143,050 MHz
+{0} km dalla tua stazione	{0} km von deiner Station

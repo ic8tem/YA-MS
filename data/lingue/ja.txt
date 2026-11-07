@@ -486,3 +486,23 @@ Global Meteor Network (GMN) - globalmeteornetwork.org/flux: flusso e ZHR misurat
 Nessun dato GMN: premi "Scarica adesso".	GMN のデータがありません: 「今すぐ取得」を押してください。
 Riepilogo dell'anno (ZHR misurati, GMN)	年間のまとめ (実測 ZHR、GMN)
 Sciami in diretta	流星群ライブ
+Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	ライブデータの提供元の位置。破線の円 = レーダーが見る空の範囲 (局の周囲約 300 km、流星痕は高度 90 km): あなたの経路の上空を見ているレーダーはなく、データは流星群の活発さを示します。点線 = あなたの局からの距離。
+Europa	ヨーロッパ
+Global Meteor Network (GMN)	Global Meteor Network (GMN)
+Mappa delle fonti	データ提供元の地図
+Mondo	世界
+Non è un punto sulla mappa: è una rete mondiale di telecamere (soprattutto amatoriali) sparse in molti paesi di tutti i continenti.	地図上の一点ではなく、すべての大陸の多くの国に設置されたカメラ (主にアマチュア) の世界的なネットワークです。
+SGO, Finlandia	SGO、フィンランド
+Tavistock, Ontario (Canada)	タビストック、オンタリオ州 (カナダ)
+Univ. Lipsia / IAP Kühlungsborn	ライプツィヒ大学 / IAP キュールングスボルン
+aggiornamento una volta al giorno	1日1回更新
+dati CC BY 4.0 (Vida et al. 2021, 2022)	データ CC BY 4.0 (Vida et al. 2021, 2022)
+la tua stazione	あなたの局
+linguetta "{0}"	タブ「{0}」
+misura il flusso e lo ZHR di ogni sciame attivo	活動中の各流星群のフラックスと ZHR を測定
+osservatori RMOB che ascoltano GRAVES	GRAVES を受信している RMOB 観測者
+radar SKiYMET 36,2 MHz	SKiYMET レーダー 36.2 MHz
+radar meteorico 17-38 MHz, orbite	流星レーダー 17-38 MHz、軌道
+radar meteorico 36,9 MHz	流星レーダー 36.9 MHz
+trasmettitore 143,050 MHz	送信機 143.050 MHz
+{0} km dalla tua stazione	あなたの局から {0} km

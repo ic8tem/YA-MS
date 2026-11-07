@@ -486,3 +486,23 @@ Global Meteor Network (GMN) - globalmeteornetwork.org/flux: flusso e ZHR misurat
 Nessun dato GMN: premi "Scarica adesso".	No GMN data: press "Download now".
 Riepilogo dell'anno (ZHR misurati, GMN)	Year overview (measured ZHR, GMN)
 Sciami in diretta	Live showers
+Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	Where the live data sources are. Dashed circles = sky area seen by the radar (about 300 km around the station, trails at 90 km): no radar looks at the sky above your path, the data tell how active the shower is. Dotted lines = distance from your station.
+Europa	Europe
+Global Meteor Network (GMN)	Global Meteor Network (GMN)
+Mappa delle fonti	Sources map
+Mondo	World
+Non è un punto sulla mappa: è una rete mondiale di telecamere (soprattutto amatoriali) sparse in molti paesi di tutti i continenti.	It is not a point on the map: it is a worldwide network of cameras (mostly amateur) in many countries on every continent.
+SGO, Finlandia	SGO, Finland
+Tavistock, Ontario (Canada)	Tavistock, Ontario (Canada)
+Univ. Lipsia / IAP Kühlungsborn	Leipzig Univ. / IAP Kühlungsborn
+aggiornamento una volta al giorno	updated once a day
+dati CC BY 4.0 (Vida et al. 2021, 2022)	data CC BY 4.0 (Vida et al. 2021, 2022)
+la tua stazione	your station
+linguetta "{0}"	tab "{0}"
+misura il flusso e lo ZHR di ogni sciame attivo	measures the flux and ZHR of every active shower
+osservatori RMOB che ascoltano GRAVES	RMOB observers listening to GRAVES
+radar SKiYMET 36,2 MHz	SKiYMET radar 36.2 MHz
+radar meteorico 17-38 MHz, orbite	meteor radar 17-38 MHz, orbits
+radar meteorico 36,9 MHz	meteor radar 36.9 MHz
+trasmettitore 143,050 MHz	transmitter 143.050 MHz
+{0} km dalla tua stazione	{0} km from your station

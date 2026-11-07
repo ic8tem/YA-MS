@@ -486,3 +486,23 @@ Global Meteor Network (GMN) - globalmeteornetwork.org/flux: flusso e ZHR misurat
 Nessun dato GMN: premi "Scarica adesso".	Geen GMN-gegevens: druk op "Nu downloaden".
 Riepilogo dell'anno (ZHR misurati, GMN)	Jaaroverzicht (gemeten ZHR, GMN)
 Sciami in diretta	Zwermen live
+Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	Waar de bronnen van de live-gegevens liggen. Gestippelde cirkels = hemelgebied dat de radar ziet (ongeveer 300 km rond het station, sporen op 90 km): geen enkele radar kijkt naar de hemel boven jouw verbinding, de gegevens tonen hoe actief de zwerm is. Puntlijnen = afstand tot jouw station.
+Europa	Europa
+Global Meteor Network (GMN)	Global Meteor Network (GMN)
+Mappa delle fonti	Kaart van de bronnen
+Mondo	Wereld
+Non è un punto sulla mappa: è una rete mondiale di telecamere (soprattutto amatoriali) sparse in molti paesi di tutti i continenti.	Het is geen punt op de kaart: het is een wereldwijd netwerk van camera's (vooral van amateurs) in veel landen op alle continenten.
+SGO, Finlandia	SGO, Finland
+Tavistock, Ontario (Canada)	Tavistock, Ontario (Canada)
+Univ. Lipsia / IAP Kühlungsborn	Univ. Leipzig / IAP Kühlungsborn
+aggiornamento una volta al giorno	eenmaal per dag bijgewerkt
+dati CC BY 4.0 (Vida et al. 2021, 2022)	gegevens CC BY 4.0 (Vida et al. 2021, 2022)
+la tua stazione	jouw station
+linguetta "{0}"	tabblad "{0}"
+misura il flusso e lo ZHR di ogni sciame attivo	meet de flux en ZHR van elke actieve zwerm
+osservatori RMOB che ascoltano GRAVES	RMOB-waarnemers die naar GRAVES luisteren
+radar SKiYMET 36,2 MHz	SKiYMET-radar 36,2 MHz
+radar meteorico 17-38 MHz, orbite	meteorradar 17-38 MHz, banen
+radar meteorico 36,9 MHz	meteorradar 36,9 MHz
+trasmettitore 143,050 MHz	zender 143,050 MHz
+{0} km dalla tua stazione	{0} km van jouw station

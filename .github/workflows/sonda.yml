@@ -1,0 +1,26 @@
+# temporaneo: esplora le pagine del Global Meteor Network (da qui il sito non e' raggiungibile)
+name: sonda
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          mkdir out; cd out
+          for u in https://globalmeteornetwork.org/flux/ https://globalmeteornetwork.org/data/ https://globalmeteornetwork.org/data/traj_summary_data/ https://globalmeteornetwork.org/data/traj_summary_data/daily/ ; do
+            f=$(echo "$u" | sed 's#https://##;s#[/:]#_#g').html
+            curl -sL --max-time 60 -A "YA-MS-probe" -o "$f" "$u"; echo "$u -> $(wc -c < $f)"
+          done
+          grep -oE '(href|src)="[^"]+"' globalmeteornetwork.org_flux_.html | sort -u > flux_links.txt || true
+          grep -oE 'https?://[^"'"'"' )]+\.(csv|json|txt|ecsv|js)' globalmeteornetwork.org_flux_.html | sort -u >> flux_links.txt || true
+          cat flux_links.txt | head -150
+          for l in $(grep -oE 'https?://globalmeteornetwork.org/[^"]+\.(csv|json|txt|ecsv)' flux_links.txt | head -10); do curl -sL --max-time 60 "$l" | head -c 3000 > "probe_$(basename $l)"; done
+          F=$(ls -1 globalmeteornetwork.org_data_traj_summary_data_daily_.html); grep -oE 'href="[^"]+"' $F | tail -5
+          L=$(grep -oE 'href="traj_summary_[^"]+"' $F | tail -1 | cut -d'"' -f2); echo "latest $L"
+          curl -sL --max-time 120 "https://globalmeteornetwork.org/data/traj_summary_data/daily/$L" | head -c 20000 > traj_head.txt
+      - run: |
+          cd out; git init -q -b sonda; git config user.name a; git config user.email a@a
+          git add -A; git commit -qm sonda
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" sonda

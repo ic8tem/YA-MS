@@ -2,9 +2,9 @@
 
 # レーダーフラックス
 
-*タブ 2。*
+*タブ: ライブとリアルタイムデータ › レーダーフラックス。*
 
-[![レーダーフラックス](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-2.png)
+[![レーダーフラックス](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-1_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-1_2.png)
 
 このタブは、専門の流星レーダーが**今**数えているものを表示します: **Collm** SKiYMET レーダー (ドイツ、ライプツィヒ大学 / IAP キュールングスボルン、36.2 MHz) の時間別流星数と流星痕高度、そして **Sodankylä** レーダー (フィンランド SGO) の最新画像です。Collm の流星数は自局バンドでの推定と [実験的予報](Experimental-Forecasts-ja) に使われ、測定された流星痕高度は幾何計算全体に使われます。
 

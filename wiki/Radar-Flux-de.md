@@ -2,9 +2,9 @@
 
 # Radarfluss
 
-*Reiter 2.*
+*Reiter: Live und Echtzeitdaten › Radarfluss.*
 
-[![Radarfluss](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2.png)
+[![Radarfluss](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-1_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-1_2.png)
 
 Dieser Reiter zeigt, was professionelle Meteorradare **jetzt** zählen: die stündlichen Meteorzählungen und die Spurhöhen des SKiYMET-Radars **Collm** (Universität Leipzig / IAP Kühlungsborn, Deutschland, 36,2 MHz) und das neueste Bild des Radars **Sodankylä** (SGO, Finnland). Die Zählungen aus Collm speisen die Schätzung für dein Band und die [Experimentelle Vorhersage](Experimental-Forecasts-de); die gemessene Spurhöhe geht in die gesamte Geometrie ein.
 

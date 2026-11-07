@@ -2,9 +2,9 @@
 
 # Sources
 
-*Tab 8.*
+*Tab: Technical documents › Sources.*
 
-[![Sources](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-8.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-8.png)
+[![Sources](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
 The **Sources** tab lists every work YA-MS is built on, grouped as below (the text is selectable, so you can copy the references). The same sources, numbered, close the calculation manual (`doc/YA-MS_manuale_calcoli.docx`) and the [Efficiency - explanation](Efficiency-Explanation) document.
 

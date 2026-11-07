@@ -2,9 +2,9 @@
 
 # Experimentelle Vorhersage
 
-*Reiter 5.*
+*Reiter: Vorhersageberechnung › Experimentelle Vorhersage.*
 
-[![Experimentelle Vorhersage](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-5.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-5.png)
+[![Experimentelle Vorhersage](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2_4.png)
 
 Dieser Reiter rechnet die Meteorzählungen des **Collm-Radars (36,2 MHz)** in eine Schätzung der **Reflexionen pro Stunde auf einem Amateurfunkband** um (standardmäßig 144 MHz, jede Frequenz von 28 bis 1300 MHz), sagt die **nächsten 24 Stunden** für deine Strecke voraus und lässt dich die Schätzung mit einem **RMOB**-Beobachter **vergleichen** – zum Beispiel mit einem, der GRAVES auf 143,050 MHz abhört.
 

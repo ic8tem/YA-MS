@@ -2,9 +2,9 @@
 
 # Источники
 
-*Вкладка 8.*
+*Вкладка: Технические документы › Источники.*
 
-[![Источники](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-8.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-8.png)
+[![Источники](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-3_1.png)
 
 Вкладка **Источники** перечисляет все работы, на которых построена YA-MS, сгруппированные, как показано ниже (текст можно выделить и скопировать ссылки). Те же источники, пронумерованные, завершают руководство по расчётам (`doc/YA-MS_manuale_calcoli.docx`) и документ [Эффективность - пояснение](Efficiency-Explanation-ru).
 

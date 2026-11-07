@@ -2,9 +2,9 @@
 
 # Экспериментальный прогноз
 
-*Вкладка 5.*
+*Вкладка: Расчёт прогноза › Экспериментальный прогноз.*
 
-[![Экспериментальный прогноз](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-5.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-5.png)
+[![Экспериментальный прогноз](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-2_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-2_4.png)
 
 Эта вкладка превращает число метеоров по **радару Collm (36,2 MHz)** в оценку **числа отражений в час на любительском диапазоне** (по умолчанию 144 MHz, любая частота от 28 до 1300 MHz), даёт прогноз на **следующие 24 часа** для вашей трассы и позволяет **сравнить** оценку с **наблюдателем RMOB** – например, слушающим GRAVES на 143,050 MHz.
 

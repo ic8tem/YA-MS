@@ -2,9 +2,9 @@
 
 # Grid square map
 
-*Tab 10.*
+*Tab: Grid square map.*
 
-[![Grid square map](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-10.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-10.png)
+[![Grid square map](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-6.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-6.png)
 
 The Maidenhead squares (4 characters) you have **worked** and **confirmed**, read from the ADIF file of your log, on a map of Europe – **one sub-tab per band: 50, 70, 144, 222 and 432 MHz**.
 

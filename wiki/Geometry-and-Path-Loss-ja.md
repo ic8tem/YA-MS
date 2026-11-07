@@ -2,9 +2,9 @@
 
 # 幾何と損失
 
-*タブ 6。*
+*タブ: 予測計算 › 幾何と損失。*
 
-[![幾何と損失](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-6.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-6.png)
+[![幾何と損失](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-2_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-2_2.png)
 
 パスのテキストレポート (選択してコピーできます) と、右側のグラフ **散乱点までの距離とアンテナ仰角** です。角括弧内の番号は計算マニュアル (`doc/YA-MS_manuale_calcoli.docx`) の式番号を示します。
 

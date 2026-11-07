@@ -2,9 +2,9 @@
 
 # Effektivitätsberechnung
 
-*Reiter 3.*
+*Reiter: Vorhersageberechnung › Effektivitätsberechnung.*
 
-[![Effektivitätsberechnung](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-3.png)
+[![Effektivitätsberechnung](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2_3.png)
 
 Die **Effektivität** eines Meteorstroms gibt in Prozent an, wie sehr die Position seines Radianten Reflexionen auf **deiner** Strecke zulässt. Das Konzept stammt von Ilkka **OH5IY** (MS-Soft) und wird im Artikel Cerrotta–Sartori aufgegriffen: Das Maximum der Effektivität fällt nicht mit dem visuellen Maximum (ZHR) zusammen, weil es davon abhängt, wo der Radiant relativ zu den beiden Stationen steht. MCG_MS von DL5MCG wendet dieselbe Idee auf vier feste Richtungen an; YA-MS berechnet sie für die **tatsächliche Strecke** zwischen den beiden Locatoren.
 

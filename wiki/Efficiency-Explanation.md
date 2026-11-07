@@ -2,9 +2,9 @@
 
 # Efficiency - explanation
 
-*Tab 9.*
+*Tab: Technical documents › Efficiency - explanation.*
 
-[![Efficiency - explanation](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-9.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-9.png)
+[![Efficiency - explanation](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
 A technical document, *"Come YA-MS calcola l'efficienza di uno sciame"* (How YA-MS computes the efficiency of a shower), shown inside the program as a light page. It explains **step by step** how the efficiency is obtained, and says for each step **where it comes from**. The document is currently **in Italian**; this wiki gives its content in English in [Efficiency calculation](Efficiency-Calculation#the-model) and [Geometry and path loss](Geometry-and-Path-Loss).
 

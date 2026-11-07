@@ -2,9 +2,9 @@
 
 # Showers
 
-*Tab 7.*
+*Tab: Showers.*
 
-[![Showers](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-7.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-7.png)
+[![Showers](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-5.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-5.png)
 
 The shower catalogue used by all calculations: **45 showers** from the **IMO Meteor Shower Calendar 2026 and 2027** (tables 5 and 7) plus the **Antihelion Source** (table 6), each with its **next peak**.
 

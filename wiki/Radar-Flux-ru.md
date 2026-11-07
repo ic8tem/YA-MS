@@ -2,9 +2,9 @@
 
 # Поток по радару
 
-*Вкладка 2.*
+*Вкладка: Онлайн и данные в реальном времени › Поток по радару.*
 
-[![Поток по радару](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-2.png)
+[![Поток по радару](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-1_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-1_2.png)
 
 Эта вкладка показывает, что **сейчас** регистрируют профессиональные метеорные радары: почасовое число метеоров и высоты следов по радару SKiYMET в **Collm** (Лейпцигский университет / IAP Kühlungsborn, Германия, 36,2 MHz) и последнее изображение радара **Sodankylä** (SGO, Финляндия). Данные Collm используются для оценки на вашем диапазоне и в [Экспериментальном прогнозе](Experimental-Forecasts-ru); измеренная высота следов используется во всей геометрии.
 

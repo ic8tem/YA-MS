@@ -2,9 +2,9 @@
 
 # Geometry and path loss
 
-*Tab 6.*
+*Tab: Forecast calculation › Geometry and path loss.*
 
-[![Geometry and path loss](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-6.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-6.png)
+[![Geometry and path loss](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_2.png)
 
 A text report of the path (selectable, so you can copy it) and, on the right, the chart **Antenna elevation versus distance from the scatter point**. Numbers in brackets refer to the equations of the calculation manual (`doc/YA-MS_manuale_calcoli.docx`).
 

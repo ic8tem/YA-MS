@@ -9,9 +9,9 @@
 Die Hauptquelle ist der Artikel von **C. Cerrotta IC8TEM und G. Sartori IV3GTH**, *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (Version 7). Jede Formel und jede Angabe im Programm nennt ihre Quelle; siehe [Quellen](Sources-de).
 
 <table><tr>
-<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-1.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-1.png" alt="Himmelsansicht"></a><br><sub>Himmelsansicht</sub></td>
-<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-3.png" alt="Effektivitätsberechnung"></a><br><sub>Effektivitätsberechnung</sub></td>
-<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-4.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-4.png" alt="Radar GRAVES"></a><br><sub>Radar GRAVES</sub></td>
+<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2_1.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2_1.png" alt="Himmelsansicht"></a><br><sub>Himmelsansicht</sub></td>
+<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2_3.png" alt="Effektivitätsberechnung"></a><br><sub>Effektivitätsberechnung</sub></td>
+<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-1_3.png" alt="Radar GRAVES"></a><br><sub>Radar GRAVES</sub></td>
 </tr></table>
 
 ## Für wen es gedacht ist
@@ -22,20 +22,24 @@ Die Hauptquelle ist der Artikel von **C. Cerrotta IC8TEM und G. Sartori IV3GTH**
 
 ## Die Reiter
 
-Die Reiter liegen in einer einzigen Reihe von Pillen-Schaltflächen oben, in dieser Reihenfolge:
+Seit Version 1.6 haben die Hauptreiter **Unterreiter** (eine hellere Reihe unter der Hauptreihe). Beim Start zeigt ein 5-Sekunden-Startbild die Perseiden über dem VLT der ESO (Foto ESO/S. Guisard, CC BY 4.0).
 
-| # | Reiter | Was er zeigt |
+| Reiter | Unterreiter | Was er zeigt |
 |---|---|---|
-| 1 | [Himmelsansicht](Sky-View-de) | Draufsicht der Strecke mit Hot A / Hot B, Antennenkeule, PREV-Zonen und Zug des Stroms; Liste der Ströme; kleine Himmelsansicht mit den Radianten; Schnitt von der Antenne aus gesehen |
-| 2 | [Radarfluss](Radar-Flux-de) | Stündliche Meteorzählungen und Spurhöhen vom SKiYMET-Radar Collm, Bild aus Sodankylä, Schätzung für dein Band |
-| 3 | [Effektivitätsberechnung](Efficiency-Calculation-de) | Übersichtskarten, stündliche Effektivität jedes Stroms mit Seite A/B, Streckenindex, Vergleich mit DH9GCD, Diagramm |
-| 4 | [Radar GRAVES](GRAVES-Radar-de) | Die Forward-Scatter-Strecke GRAVES → du: nutzbare Zone im Strahl, Sektor und Schritt, nächster Strahldurchgang, wie man zuhört |
-| 5 | [Experimentelle Vorhersage](Experimental-Forecasts-de) | Collm-Fluss auf 144 MHz (oder jede Frequenz) umgerechnet mit λ^k und Stationsfaktor K, 24-Stunden-Vorhersage, RMOB-Vergleich |
-| 6 | [Geometrie und Dämpfung](Geometry-and-Path-Loss-de) | Entfernung, Mittelpunkt, Elevation, Hot A / Hot B, Grenzen der gemeinsamen Zone, Streckendämpfung 28–432 MHz, Streckenbilanz, Antenne |
-| 7 | [Ströme](Showers-de) | IMO-Katalog mit dem nächsten Maximum (IMO-Datum und -Uhrzeit oder berechnet) |
-| 8 | [Quellen](Sources-de) | Alle Quellen; die wichtigste ist der Artikel von Cerrotta–Sartori |
-| 9 | [Effektivität - Erklärung](Efficiency-Explanation-de) | Schritt-für-Schritt-Dokument zur Berechnung der Effektivität, nach Word exportierbar |
-| 10 | [Feldkarte](Grid-Square-Map-de) | Gearbeitete und bestätigte Maidenhead-Felder aus einer ADIF-Datei, ein Reiter pro Band |
+| **Live und Echtzeitdaten** | [Verkehr live](Live-Traffic-de) | Azimutalkarte des gesamten gesammelten MS-Verkehrs, mit einer Wolke der wahrscheinlichsten Spuren für jede Verbindung, Bandfarben, blinkenden neuen Spots |
+| | [Radarfluss](Radar-Flux-de) | Stündliche Meteorzählungen und Spurhöhen vom SKiYMET-Radar Collm, Bild aus Sodankylä, Schätzung für dein Band |
+| | [Radar GRAVES](GRAVES-Radar-de) | Die Forward-Scatter-Strecke GRAVES → du: nutzbare Zone im Strahl, Sektor und Schritt, nächster Strahldurchgang, wie man zuhört |
+| | [Datensammlung](Data-Collection-de) | Drei Telnet-Cluster-Verbindungen (DX-Cluster, RBN, DM4X/PSKReporter) und der MS-Spotfilter |
+| **Vorhersageberechnung** | [Vorhersageberechnung](Sky-View-de) | Draufsicht der Strecke mit Hot A / Hot B, Antennenkeule, PREV-Zonen und Zug des Stroms; Liste der Ströme; kleine Himmelsansicht mit den Radianten und den richtigen Antennenrichtungen; Schnitt von der Antenne aus gesehen |
+| | [Geometrie und Dämpfung](Geometry-and-Path-Loss-de) | Entfernung, Mittelpunkt, Elevation, Hot A / Hot B, Grenzen der gemeinsamen Zone, Streckendämpfung 28–432 MHz, Streckenbilanz, Antenne |
+| | [Effektivitätsberechnung](Efficiency-Calculation-de) | Übersichtskarten, stündliche Effektivität jedes Stroms mit Seite A/B, Streckenindex, Vergleich mit DH9GCD, Diagramm |
+| | [Experimentelle Vorhersage](Experimental-Forecasts-de) | Collm-Fluss auf 144 MHz (oder jede Frequenz) umgerechnet mit λ^k und Stationsfaktor K, 24-Stunden-Vorhersage, RMOB-Vergleich |
+| **Technische Dokumente** | [Quellen](Sources-de) | Alle Quellen; die wichtigste ist der Artikel von Cerrotta–Sartori |
+| | [Karte der europäischen Radare](European-Radar-Map-de) | Wo Collm, Sodankylä, GRAVES und CMOR bezogen auf deine Station liegen |
+| | [Effektivität - Erklärung](Efficiency-Explanation-de) | Schritt-für-Schritt-Dokument zur Berechnung der Effektivität, nach Word exportierbar |
+| [Ströme live](Live-Showers-de) | – | Gemessene ZHR des Global Meteor Network und Radiantenkarten von CMOR |
+| [Ströme](Showers-de) | – | IMO-Katalog mit dem nächsten Maximum (IMO-Datum und -Uhrzeit oder berechnet) |
+| [Feldkarte](Grid-Square-Map-de) | – | Gearbeitete und bestätigte Maidenhead-Felder aus einer ADIF-Datei, ein Reiter pro Band |
 
 Über den Reitern liegen drei Bedienzeilen (dein Locator, Gegenstation, Band, Antenne, Spurhöhe, Zeit); siehe [Erste Schritte](Getting-Started-de). Die Schaltfläche **Bedienung** klappt sie ein, Sprache und Farbschema wählst du oben rechts; siehe [Einstellungen und Datenordner](Settings-and-Data-Folder-de).
 

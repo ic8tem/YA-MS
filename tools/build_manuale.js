@@ -63,7 +63,7 @@ function table(widths, rows) {
 // ---------- contenuto ----------
 const C = [];
 C.push(new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun('YA-MS - Manuale dei calcoli')] }));
-C.push(P(I('Previsione e calcolo in diretta dell\'efficienza degli sciami meteorici per il meteor scatter. Versione 1.0.0, a cura di Costantino IC8TEM, novembre 2026.')));
+C.push(P(I('Previsione e calcolo in diretta dell\'efficienza degli sciami meteorici per il meteor scatter. Versione 1.6.0, a cura di Costantino IC8TEM, novembre 2026.')));
 C.push(new TableOfContents('Indice', { hyperlink: true, headingStyleRange: '1-2' }));
 C.push(P(I('(Se l\'indice è vuoto: in Word, clic destro sull\'indice > Aggiorna campo.)')));
 
@@ -186,7 +186,7 @@ C.push(P('F si calcola una volta per tratta su una griglia di direzioni (azimut 
 C.push(TAG('RILIEVO', 'Il risultato segue la regola di SM6FHZ [4]: la tratta migliore è ortogonale all\'azimut del radiante. Il miglior puntamento d\'antenna è quindi Az(radiante) ± 90°, con tolleranza ±40–50°. Con il radiante allineato alla tratta e alto nel cielo l\'efficienza è quasi nulla.'));
 C.push(TAG('RILIEVO', 'Termine di confronto indipendente: la formula di DH9GCD riportata da DF5HC [17], con El e Az elevazione e azimut del radiante e P azimut del corrispondente. È massima per El = 45° e P − Az = 90°; DF5HC considera il radiante troppo basso sotto 20° e troppo alto sopra 70°. Non tiene conto della distanza né delle quote:'));
 C.push(EQ(sb('E', 'DH9GCD'), '=', fn('sin', 'El'), '·', fn('cos', 'El'), '·', fn('sin', br('P−Az'))));
-C.push(TAG('SCELTA', 'Nella linguetta "Calcolo dell\'efficienza" il programma mostra sotto ogni sciame, in azzurro, la formula in percentuale del suo massimo, con El e Az visti dalla stazione e P azimut del corrispondente; con il simbolo ↑ (e un avviso sulla volta celeste) segnala il radiante sopra 70°:'));
+C.push(TAG('SCELTA', 'Nella sottolinguetta "Calcolo previsionale › Calcolo dell\'efficienza" il programma mostra sotto ogni sciame, in azzurro, la formula in percentuale del suo massimo, con El e Az visti dalla stazione e P azimut del corrispondente; con il simbolo ↑ (e un avviso sulla volta celeste) segnala il radiante sopra 70°:'));
 C.push(EQ(sb('E', '%'), '=200·', fn('sin', 'El'), '·', fn('cos', 'El'), '·|', fn('sin', br('P−Az')), '|'));
 C.push(TAG('RILIEVO', 'Confronto con QTFGUI di DJ5HG (esempio del suo manuale): tratta Amburgo JO53IM - Barcellona, Quadrantidi, 4 gennaio. QTFGUI dà alle 07:00 UTC puntamento 252°, elevazione 1°, efficacia relativa -8 dB, radiante nella zona di riflessione az. 83° el. 75°; alle 08:00 nessuna zona di riflessione; alle 09:00 puntamento 168°, elevazione 2°, -4 dB, radiante az. 292° el. 74°. Il modello del programma (quota 102 km come QTFGUI) dà alle 07:00 241°, 0°, -5,4 dB, radiante az. 77° el. 74°; alle 08:00 0,6 % (-22 dB), cioè praticamente nulla; alle 09:00 161°, 4°, -4,0 dB, radiante az. 286° el. 75°. DH9GCD dà 26 %, 2 % e 32 %: tutti e tre i metodi vedono il buco delle 08:00, con il radiante quasi allo zenit [18].'));
 C.push(TAG('RILIEVO', 'La scala di OH5IY e di MCG_MS non è nota in dettaglio (i manuali di MS-Soft non sono disponibili). Le percentuali vanno confrontate con quei programmi prima di essere considerate equivalenti.'));
@@ -225,7 +225,7 @@ C.push(H1('8. Flusso dal radar e traslazione di frequenza'));
 C.push(H2('8.1 Lettura del grafico di Collm'));
 C.push(TAG('SCELTA', 'Il grafico SKiYMET di Collm [7] (720×720 pixel, colori puri) ha posizioni fisse degli assi, ma il radar adatta ogni giorno la scala verticale ai valori misurati (per esempio 0–1,2 ·10³ il 5/11/2026 e 0–1,0 ·10³ il 6/11/2026, con tacche spostate). Il programma trova le tacche lunghe dell\'asse e legge le etichette della più alta e della più bassa (0.0) confrontando ogni carattere con i modelli del carattere a matrice del grafico. Per l\'ora i-esima (0–47, ieri e oggi) la colonna centrale e il primo pixel ciano dall\'alto y danno:'));
 C.push(EQ(sb('x', 'i'), '=101+', br('i+0,5'), fr('676−101', '48'), ',    N=', br([sb('y', '0'), '−y']), fr(sb('N', 'top'), [sb('y', '0'), '−', sb('y', 'top')]), '  meteore/ora'));
-C.push(P('ytop e y0 sono le righe della tacca più alta e di quella dello zero, Ntop il valore letto sull\'etichetta più alta (×1000). La risoluzione è di circa 7–8 meteore/ora per pixel. Se un\'etichetta non si riesce a leggere, il programma torna alla taratura del 5/11/2026 (0–1200) e lo segnala nella linguetta Flusso radar.'));
+C.push(P('ytop e y0 sono le righe della tacca più alta e di quella dello zero, Ntop il valore letto sull\'etichetta più alta (×1000). La risoluzione è di circa 7–8 meteore/ora per pixel. Se un\'etichetta non si riesce a leggere, il programma torna alla taratura del 5/11/2026 (0–1200) e lo segnala nella sottolinguetta "Live e dati real-time › Flusso radar".'));
 C.push(H2('8.2 Statistica delle quote'));
 C.push(TAG('SCELTA', 'Istogramma per km tra 70 e 110 km (nk meteore nel km k, quota media hk):'));
 C.push(EQ(sb('h', 'moda'), '=', sb('h', [sb('k', '*')]), ',   ', sb('k', '*'), '=', sb('argmax', 'k'), ' ', sb('n', 'k'), ',    ', 'h̄=', fr(sum('k', [sb('n', 'k'), sb('h', 'k')]), sum('k', sb('n', 'k'))), ',    ', 's=', sq(fr(sum('k', [sb('n', 'k'), sp(br(sb('h', 'k'), '−h̄'), '2')]), sum('k', sb('n', 'k'))))));
@@ -245,14 +245,27 @@ C.push(H1('9. Mappa dei quadrati da ADIF'));
 C.push(TAG('FONTE', 'Formato ADIF (campi CALL, GRIDSQUARE, VUCC_GRIDS, BAND, FREQ, QSO_DATE, QSL_RCVD, LOTW_QSL_RCVD). Banda dal campo BAND oppure dalla frequenza: 50–54 MHz = 6 m, 69,9–71,5 MHz = 4 m, 144–148 MHz = 2 m, 219–225 MHz = 1,25 m, 420–450 MHz = 70 cm.'));
 C.push(TAG('SCELTA', 'Un quadrato (4 caratteri) è "confermato" se almeno un QSO ha QSL_RCVD = Y o LOTW_QSL_RCVD = Y. Il caricamento di un nuovo ADIF sostituisce i dati precedenti.'));
 
-C.push(H1('10. Limiti noti'));
+C.push(H1('10. Raccolta dati e traffico in diretta'));
+C.push(H2('10.1 Riconoscimento degli spot meteor scatter'));
+C.push(TAG('SCELTA', 'Gli spot arrivano in telnet da tre flussi (un DX cluster a scelta, Reverse Beacon Network, il cluster di DM4X con PSKReporter) come righe "DX de SPOTTER: FREQ DX commento HHMMZ". Con la casella accesa le righe sotto 27990,0 kHz si scartano subito (regola dell\'autore). Uno spot è meteor scatter se soddisfa il primo criterio oppure, fuori dalle finestre o con una scritta di altra propagazione, il secondo:'));
+C.push(bullet([B('1° criterio (regola dell\'autore): '), 'frequenza nelle finestre tipiche degli spot MS, 50190–50300, 70100–70400, 144290–144399 kHz, e nessuna scritta di altra propagazione nel commento (<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>).']));
+C.push(bullet([B('2° criterio: '), 'il commento contiene, in maiuscolo, minuscolo o misto, un modo digitale usato solo per il MS (MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M) oppure la scritta <MS>.']));
+C.push(TAG('SCELTA', 'Locator: quelli scritti nello spot; se mancano o hanno solo 4 caratteri si prende quello a 6 caratteri dell\'archivio CALL3 (call3.txt di JTDX), anche se indica un altro quadrato (regola dell\'autore).'));
+C.push(H2('10.2 Nuvola delle scie probabili di un contatto'));
+C.push(TAG('SCELTA', 'Per ogni spot con i due locator il programma costruisce la tratta tra le due stazioni (capitoli 3 e 4) e, all\'ora dello spot, somma punto per punto dello strato E i contributi di riflessione speculare di tutti gli sciami attivi pesati con lo ZHR (stesso calcolo delle zone PREV, paragrafo 5.6). Per ciascun lato della tratta che raccoglie almeno il 15 % del totale si calcolano la media pesata dei punti e la loro dispersione (in km, sul piano locale x = est, y = nord):'));
+C.push(EQ('x̄=', fr(sum('P', [sb('W', 'P'), sb('x', 'P')]), sum('P', sb('W', 'P'))), ',    ', sb('σ', 'xx'), '=', fr(sum('P', [sb('W', 'P'), sp(br(sb('x', 'P'), '−x̄'), '2')]), sum('P', sb('W', 'P'))), ',  ', sb('σ', 'yy'), ',  ', sb('σ', 'xy'), ' analoghi'));
+C.push(TAG('SCELTA', 'La nuvola è l\'ellisse con centro nella media, semiassi pari a 1,5 volte le radici degli autovalori della matrice di dispersione (minimo 30 e 20 km) e asse maggiore nella direzione dell\'autovettore principale:'));
+C.push(EQ(sb('λ', '1,2'), '=', fr([sb('σ', 'xx'), '+', sb('σ', 'yy')], '2'), '±', sq([sp(br(fr([sb('σ', 'xx'), '−', sb('σ', 'yy')], '2')), '2'), '+', sp(sb('σ', 'xy'), '2')]), ',    ', sb('a', '1,2'), '=1,5', sq(sb('λ', '1,2')), ',    θ=', fr('1', '2'), 'atan2', br('2', sb('σ', 'xy'), ' , ', sb('σ', 'xx'), '−', sb('σ', 'yy'))));
+C.push(TAG('SCELTA', 'Se nessuno sciame contribuisce (solo meteore sporadiche) le nuvole sono i due hot spot classici (paragrafo 4.5), cerchi tratteggiati di 70 km. La mappa è azimutale equidistante centrata sulla stazione: gli spot con una stazione oltre il raggio scelto non si disegnano; gli spot arrivati da meno di un minuto e non più vecchi di 3 minuti lampeggiano.'));
+
+C.push(H1('11. Limiti noti'));
 ['Il modello considera solo le scie sottodense. Le sovradense (burst lunghi) e il fondo sporadico non entrano nell\'efficienza; il fondo sporadico è rappresentato dal flusso radar.',
  'Le antenne sono considerate isotrope nel calcolo dell\'efficienza; il lobo reale serve solo per il controllo degli Hot.',
  'Le derive del radiante e i coefficienti B del profilo di attività sono valori di lavoro.',
  'La lettura del grafico di Collm dipende dal formato attuale: se cambia, va ritarata.',
  'Le percentuali di efficienza vanno confrontate con MCG_MS, MS-Soft e con le osservazioni in banda.'].forEach(t => C.push(bullet(t)));
 
-C.push(H1('11. Fonti'));
+C.push(H1('12. Fonti'));
 [
  'C. Cerrotta IC8TEM, G. Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l\'Europa in VHF tutto l\'anno senza tante pretese", articolo, versione 7 (fonte principale).',
  'I. Yrjölä OH5IY - MS-Soft, www.kolumbus.fi/oh5iy (sito storico), con i dati EURO.DAT, ZHRDATA e MSDATA.',

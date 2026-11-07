@@ -2,9 +2,9 @@
 
 # Расчёт эффективности
 
-*Вкладка 3.*
+*Вкладка: Расчёт прогноза › Расчёт эффективности.*
 
-[![Расчёт эффективности](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-3.png)
+[![Расчёт эффективности](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-2_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-2_3.png)
 
 **Эффективность** потока показывает в процентах, насколько положение его радианта позволяет получать отражения на **вашей** трассе. Понятие введено Ilkka **OH5IY** (MS-Soft) и использовано в статье Cerrotta–Sartori: максимум эффективности не совпадает с визуальным максимумом (ZHR), потому что зависит от положения радианта относительно двух станций. MCG_MS от DL5MCG применяет ту же идею к четырём фиксированным направлениям; YA-MS рассчитывает её для **реальной трассы** между двумя локаторами.
 

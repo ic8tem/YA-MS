@@ -2,9 +2,9 @@
 
 # Ströme
 
-*Reiter 7.*
+*Reiter: Ströme.*
 
-[![Ströme](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-7.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-7.png)
+[![Ströme](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-5.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-5.png)
 
 Der Meteorstrom-Katalog, den alle Berechnungen verwenden: **45 Meteorströme** aus dem **IMO Meteor Shower Calendar 2026 und 2027** (Tabellen 5 und 7) plus die **Antihelion-Quelle** (Tabelle 6), jeweils mit dem **nächsten Maximum**.
 

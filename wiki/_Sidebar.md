@@ -7,22 +7,26 @@
 - [Installation](Installation)
 - [Getting started](Getting-Started)
 
-**Live**
-- [Sky dome](Sky-View)
+**Live and real-time data**
+- [Live traffic](Live-Traffic)
 - [Radar flux](Radar-Flux)
-- [Efficiency calculation](Efficiency-Calculation)
 - [GRAVES radar](GRAVES-Radar)
+- [Data collection](Data-Collection)
 
-**Forecast and link**
-- [Experimental forecasts](Experimental-Forecasts)
+**Forecast calculation**
+- [Forecast calculation](Sky-View)
 - [Geometry and path loss](Geometry-and-Path-Loss)
+- [Efficiency calculation](Efficiency-Calculation)
+- [Experimental forecasts](Experimental-Forecasts)
 
-**Reference**
-- [Showers](Showers)
+**Technical documents**
 - [Sources](Sources)
+- [Map of European radars](European-Radar-Map)
 - [Efficiency - explanation](Efficiency-Explanation)
 
-**Log**
+**Other tabs**
+- [Live showers](Live-Showers)
+- [Showers](Showers)
 - [Grid square map](Grid-Square-Map)
 
 **Topics**

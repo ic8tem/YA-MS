@@ -2,9 +2,9 @@
 
 # Карта квадратов
 
-*Вкладка 10.*
+*Вкладка: Карта квадратов.*
 
-[![Карта квадратов](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-10.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-10.png)
+[![Карта квадратов](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-6.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-6.png)
 
 **Сработанные** и **подтверждённые** квадраты Maidenhead (4 символа), прочитанные из файла ADIF вашего аппаратного журнала, на карте Европы – **по одной вложенной вкладке на диапазон: 50, 70, 144, 222 и 432 MHz**.
 

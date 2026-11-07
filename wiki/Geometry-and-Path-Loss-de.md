@@ -2,9 +2,9 @@
 
 # Geometrie und Dämpfung
 
-*Reiter 6.*
+*Reiter: Vorhersageberechnung › Geometrie und Dämpfung.*
 
-[![Geometrie und Dämpfung](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-6.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-6.png)
+[![Geometrie und Dämpfung](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2_2.png)
 
 Ein Textbericht der Strecke (markierbar, du kannst ihn also kopieren) und rechts das Diagramm **Antennenelevation in Abhängigkeit von der Entfernung zum Streupunkt**. Zahlen in eckigen Klammern verweisen auf die Gleichungen des Berechnungshandbuchs (`doc/YA-MS_manuale_calcoli.docx`).
 

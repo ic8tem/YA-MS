@@ -2,9 +2,9 @@
 
 # Геометрия и затухание
 
-*Вкладка 6.*
+*Вкладка: Расчёт прогноза › Геометрия и затухание.*
 
-[![Геометрия и затухание](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-6.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-6.png)
+[![Геометрия и затухание](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-2_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-2_2.png)
 
 Текстовый отчёт о трассе (текст можно выделить и скопировать), а справа – график **Угол места антенны в зависимости от расстояния до точки рассеяния**. Числа в квадратных скобках ссылаются на уравнения руководства по расчётам (`doc/YA-MS_manuale_calcoli.docx`).
 

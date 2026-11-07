@@ -2,9 +2,9 @@
 
 # Feldkarte
 
-*Reiter 10.*
+*Reiter: Feldkarte.*
 
-[![Feldkarte](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-10.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-10.png)
+[![Feldkarte](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-6.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-6.png)
 
 Die Maidenhead-Felder (4 Zeichen), die du **gearbeitet** und **bestätigt** hast, gelesen aus der ADIF-Datei deines Logs, auf einer Europakarte – **ein Unterreiter pro Band: 50, 70, 144, 222 und 432 MHz**.
 

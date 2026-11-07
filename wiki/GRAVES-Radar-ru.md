@@ -2,9 +2,9 @@
 
 # Радар GRAVES
 
-*Вкладка 4.*
+*Вкладка: Онлайн и данные в реальном времени › Радар GRAVES.*
 
-[![Радар GRAVES](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-4.png)
+[![Радар GRAVES](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-1_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-1_3.png)
 
 ## Что такое GRAVES
 

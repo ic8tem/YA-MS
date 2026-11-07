@@ -2,9 +2,9 @@
 
 # Effektivität - Erklärung
 
-*Reiter 9.*
+*Reiter: Technische Dokumente › Effektivität - Erklärung.*
 
-[![Effektivität - Erklärung](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-9.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-9.png)
+[![Effektivität - Erklärung](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-3_3.png)
 
 Ein technisches Dokument, *"Come YA-MS calcola l'efficienza di uno sciame"* (Wie YA-MS die Effektivität eines Meteorstroms berechnet), das im Programm als helle Seite angezeigt wird. Es erklärt **Schritt für Schritt**, wie die Effektivität ermittelt wird, und gibt bei jedem Schritt an, **woher er stammt**. Das Dokument ist derzeit **auf Italienisch**; dieses Wiki gibt seinen Inhalt auf Deutsch in [Effektivitätsberechnung](Efficiency-Calculation-de#das-modell) und [Geometrie und Dämpfung](Geometry-and-Path-Loss-de) wieder.
 

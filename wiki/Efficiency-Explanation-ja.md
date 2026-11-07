@@ -2,9 +2,9 @@
 
 # 効率 - 解説
 
-*タブ 9。*
+*タブ: 技術資料 › 効率 - 解説。*
 
-[![効率 - 解説](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-9.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-9.png)
+[![効率 - 解説](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3_3.png)
 
 技術文書 *"Come YA-MS calcola l'efficienza di uno sciame"* (YA-MS は流星群の効率をどう計算するか) を、プログラム内に明るいページとして表示します。効率がどのように求められるかを**順を追って**説明し、各手順が**何に基づくか**を示しています。この文書は現在**イタリア語**です。この wiki では、その内容を [効率の計算](Efficiency-Calculation-ja#モデル) と [幾何と損失](Geometry-and-Path-Loss-ja) で日本語で紹介しています。
 

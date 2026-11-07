@@ -2,9 +2,9 @@
 
 # GRAVES radar
 
-*Tab 4.*
+*Tab: Live and real-time data › GRAVES radar.*
 
-[![GRAVES radar](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-4.png)
+[![GRAVES radar](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png)
 
 ## What GRAVES is
 

@@ -2,9 +2,9 @@
 
 # GRAVES レーダー
 
-*タブ 4。*
+*タブ: ライブとリアルタイムデータ › GRAVES レーダー。*
 
-[![GRAVES レーダー](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-4.png)
+[![GRAVES レーダー](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-1_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-1_3.png)
 
 ## GRAVES とは
 

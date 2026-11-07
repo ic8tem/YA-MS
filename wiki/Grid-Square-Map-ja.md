@@ -2,9 +2,9 @@
 
 # グリッド地図
 
-*タブ 10。*
+*タブ: グリッド地図。*
 
-[![グリッド地図](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-10.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-10.png)
+[![グリッド地図](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-6.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-6.png)
 
 ログの ADIF ファイルから読み込んだ、**交信済**と**確認済**のマイデンヘッド グリッド (4 文字) をヨーロッパの地図上に表示します – **バンドごとにサブタブ: 50、70、144、222、432 MHz**。
 

@@ -2,9 +2,9 @@
 
 # Эффективность - пояснение
 
-*Вкладка 9.*
+*Вкладка: Технические документы › Эффективность - пояснение.*
 
-[![Эффективность - пояснение](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-9.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-9.png)
+[![Эффективность - пояснение](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-3_3.png)
 
 Технический документ *«Come YA-MS calcola l'efficienza di uno sciame»* (Как YA-MS рассчитывает эффективность потока), показываемый в программе в виде светлой страницы. Он **шаг за шагом** объясняет, как получается эффективность, и для каждого шага указывает, **откуда он взят**. Сейчас документ существует **на итальянском языке**; эта вики излагает его содержание по-русски на страницах [Расчёт эффективности](Efficiency-Calculation-ru#модель) и [Геометрия и затухание](Geometry-and-Path-Loss-ru).
 

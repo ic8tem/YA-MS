@@ -9,9 +9,9 @@
 Основной источник – статья **C. Cerrotta IC8TEM и G. Sartori IV3GTH** *«METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese»* (версия 7). Для каждой формулы и каждого набора данных в программе указан источник; см. [Источники](Sources-ru).
 
 <table><tr>
-<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-1.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-1.png" alt="Небесная сфера"></a><br><sub>Небесная сфера</sub></td>
-<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-3.png" alt="Расчёт эффективности"></a><br><sub>Расчёт эффективности</sub></td>
-<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-4.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-4.png" alt="Радар GRAVES"></a><br><sub>Радар GRAVES</sub></td>
+<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-2_1.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-2_1.png" alt="Небесная сфера"></a><br><sub>Небесная сфера</sub></td>
+<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-2_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-2_3.png" alt="Расчёт эффективности"></a><br><sub>Расчёт эффективности</sub></td>
+<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-1_3.png" alt="Радар GRAVES"></a><br><sub>Радар GRAVES</sub></td>
 </tr></table>
 
 ## Для кого эта программа
@@ -22,20 +22,24 @@
 
 ## Вкладки
 
-Вкладки расположены в один ряд кнопок-«таблеток» вверху, в таком порядке:
+Начиная с версии 1.6 у основных вкладок есть **подвкладки** (более светлый ряд под основным). При запуске на 5 секунд появляется заставка с Персеидами над телескопом VLT обсерватории ESO (фото ESO/S. Guisard, CC BY 4.0).
 
-| # | Вкладка | Что показывает |
+| Вкладка | Подвкладка | Что показывает |
 |---|---|---|
-| 1 | [Небесная сфера](Sky-View-ru) | План трассы с Hot A / Hot B, ДН антенны, зонами PREV и движением потока; список потоков; малая небесная сфера с радиантами; разрез, видимый от антенны |
-| 2 | [Поток по радару](Radar-Flux-ru) | Почасовое число метеоров и высоты следов по радару SKiYMET в Collm, изображение радара Sodankylä, оценка для вашего диапазона |
-| 3 | [Расчёт эффективности](Efficiency-Calculation-ru) | Сводные карточки, почасовая эффективность каждого потока со стороной A/B, индекс трассы, сравнение с DH9GCD, график |
-| 4 | [Радар GRAVES](GRAVES-Radar-ru) | Трасса рассеяния вперёд GRAVES → вы: полезная зона в луче, сектор и шаг, следующий проход луча, как слушать |
-| 5 | [Экспериментальный прогноз](Experimental-Forecasts-ru) | Поток Collm, пересчитанный на 144 MHz (или любую частоту) по λ^k и коэффициенту станции K, прогноз на 24 часа, сравнение с RMOB |
-| 6 | [Геометрия и затухание](Geometry-and-Path-Loss-ru) | Расстояние, средняя точка, угол места, Hot A / Hot B, границы общей зоны, затухание на трассе 28–432 MHz, энергетический баланс, антенна |
-| 7 | [Потоки](Showers-ru) | Каталог IMO со следующим максимумом (дата и время IMO или расчётные) |
-| 8 | [Источники](Sources-ru) | Все источники; основной – статья Cerrotta–Sartori |
-| 9 | [Эффективность - пояснение](Efficiency-Explanation-ru) | Пошаговый документ о том, как рассчитывается эффективность, с экспортом в Word |
-| 10 | [Карта квадратов](Grid-Square-Map-ru) | Сработанные и подтверждённые квадраты Maidenhead из файла ADIF, по вкладке на диапазон |
+| **Онлайн и данные в реальном времени** | [Трафик онлайн](Live-Traffic-ru) | Азимутальная карта всего собранного трафика MS с облаком наиболее вероятных следов для каждой связи, цветами диапазонов и мигающими новыми спотами |
+| | [Поток по радару](Radar-Flux-ru) | Почасовое число метеоров и высоты следов по радару SKiYMET в Collm, изображение радара Sodankylä, оценка для вашего диапазона |
+| | [Радар GRAVES](GRAVES-Radar-ru) | Трасса рассеяния вперёд GRAVES → вы: полезная зона в луче, сектор и шаг, следующий проход луча, как слушать |
+| | [Сбор данных](Data-Collection-ru) | Три telnet-подключения к кластерам (DX-кластер, RBN, DM4X/PSKReporter) и фильтр спотов MS |
+| **Расчёт прогноза** | [Расчёт прогноза](Sky-View-ru) | План трассы с Hot A / Hot B, ДН антенны, зонами PREV и движением потока; список потоков; малая небесная сфера с радиантами и правильными направлениями антенны; разрез, видимый от антенны |
+| | [Геометрия и затухание](Geometry-and-Path-Loss-ru) | Расстояние, средняя точка, угол места, Hot A / Hot B, границы общей зоны, затухание на трассе 28–432 MHz, энергетический баланс, антенна |
+| | [Расчёт эффективности](Efficiency-Calculation-ru) | Сводные карточки, почасовая эффективность каждого потока со стороной A/B, индекс трассы, сравнение с DH9GCD, график |
+| | [Экспериментальный прогноз](Experimental-Forecasts-ru) | Поток Collm, пересчитанный на 144 MHz (или любую частоту) по λ^k и коэффициенту станции K, прогноз на 24 часа, сравнение с RMOB |
+| **Технические документы** | [Источники](Sources-ru) | Все источники; основной – статья Cerrotta–Sartori |
+| | [Карта европейских радаров](European-Radar-Map-ru) | Где находятся Collm, Sodankylä, GRAVES и CMOR относительно вашей станции |
+| | [Эффективность - пояснение](Efficiency-Explanation-ru) | Пошаговый документ о том, как рассчитывается эффективность, с экспортом в Word |
+| [Потоки онлайн](Live-Showers-ru) | – | Измеренные ZHR Global Meteor Network и карты радиантов CMOR |
+| [Потоки](Showers-ru) | – | Каталог IMO со следующим максимумом (дата и время IMO или расчётные) |
+| [Карта квадратов](Grid-Square-Map-ru) | – | Сработанные и подтверждённые квадраты Maidenhead из файла ADIF, по вкладке на диапазон |
 
 Над вкладками находятся три ряда элементов управления (ваш локатор, корреспондент, диапазон, антенна, высота следов, время); см. [Начало работы](Getting-Started-ru). Кнопка **Панель** сворачивает их, а язык и цветовая схема выбираются справа вверху; см. [Настройки и папка данных](Settings-and-Data-Folder-ru).
 

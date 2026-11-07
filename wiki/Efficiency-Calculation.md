@@ -2,9 +2,9 @@
 
 # Efficiency calculation
 
-*Tab 3.*
+*Tab: Forecast calculation › Efficiency calculation.*
 
-[![Efficiency calculation](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3.png)
+[![Efficiency calculation](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_3.png)
 
 The **efficiency** of a shower says, in percent, how much the position of its radiant allows reflections on **your** path. The concept is by Ilkka **OH5IY** (MS-Soft) and is taken up in the Cerrotta–Sartori article: the efficiency peak does not coincide with the visual peak (ZHR), because it depends on where the radiant is relative to the two stations. MCG_MS by DL5MCG applies the same idea to four fixed directions; YA-MS computes it for the **real path** between the two locators.
 

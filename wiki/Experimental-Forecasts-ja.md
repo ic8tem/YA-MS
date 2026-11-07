@@ -2,9 +2,9 @@
 
 # 実験的予報
 
-*タブ 5。*
+*タブ: 予測計算 › 実験的予報。*
 
-[![実験的予報](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-5.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-5.png)
+[![実験的予報](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-2_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-2_4.png)
 
 このタブは **Collm レーダー (36.2 MHz)** の流星数を**アマチュアバンドでの 1 時間あたりの反射数**の推定 (既定は 144 MHz、28–1300 MHz の任意の周波数) に換算し、自局のパスについて**今後 24 時間**を予報し、その推定を **RMOB** の観測者 – 例えば 143.050 MHz で GRAVES を受信している観測者 – と**比較**できるようにします。
 

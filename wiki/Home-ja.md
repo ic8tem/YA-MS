@@ -9,9 +9,9 @@
 主な出典は **C. Cerrotta IC8TEM と G. Sartori IV3GTH** の記事 *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (第 7 版) です。プログラム内のすべての式とデータには出典が示されています。[出典](Sources-ja) を参照してください。
 
 <table><tr>
-<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-1.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-1.png" alt="天球図"></a><br><sub>天球図</sub></td>
-<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3.png" alt="効率の計算"></a><br><sub>効率の計算</sub></td>
-<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-4.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-4.png" alt="GRAVES レーダー"></a><br><sub>GRAVES レーダー</sub></td>
+<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-2_1.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-2_1.png" alt="天球図"></a><br><sub>天球図</sub></td>
+<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-2_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-2_3.png" alt="効率の計算"></a><br><sub>効率の計算</sub></td>
+<td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-1_3.png" alt="GRAVES レーダー"></a><br><sub>GRAVES レーダー</sub></td>
 </tr></table>
 
 ## 対象となる方
@@ -22,20 +22,24 @@
 
 ## タブ
 
-タブは画面上部に 1 列に並んだピル型のボタンで、次の順序です。
+バージョン 1.6 から、メインタブには**サブタブ** (メインの列の下にある明るい色の列) があります。起動時には、ESO の VLT の上空を流れるペルセウス座流星群のスプラッシュ画面が 5 秒間表示されます (写真 ESO/S. Guisard, CC BY 4.0)。
 
-| # | タブ | 表示内容 |
+| タブ | サブタブ | 表示内容 |
 |---|---|---|
-| 1 | [天球図](Sky-View-ja) | Hot A / Hot B、アンテナビーム、PREV 領域、流星群の移動を描いたパスの平面図; 流星群リスト; 放射点を示す小さな天球図; アンテナから見た断面 |
-| 2 | [レーダーフラックス](Radar-Flux-ja) | Collm SKiYMET レーダーから読み取った時間別の流星数と流星痕高度、Sodankylä の画像、自局バンドでの推定 |
-| 3 | [効率の計算](Efficiency-Calculation-ja) | 概要カード、A/B 側付きの各流星群の時間別効率、パス指数、DH9GCD との比較、グラフ |
-| 4 | [GRAVES レーダー](GRAVES-Radar-ja) | GRAVES → 自局の前方散乱パス: ビーム内の有効ゾーン、セクターとステップ、次のビーム通過、受信方法 |
-| 5 | [実験的予報](Experimental-Forecasts-ja) | λ^k と局係数 K で 144 MHz (または任意の周波数) に換算した Collm のフラックス、24 時間予報、RMOB との比較 |
-| 6 | [幾何と損失](Geometry-and-Path-Loss-ja) | 距離、中間点、仰角、Hot A / Hot B、共通領域の限界、28–432 MHz のパス損失、回線計算、アンテナ |
-| 7 | [流星群](Showers-ja) | 次の極大 (IMO の日時または計算値) 付きの IMO カタログ |
-| 8 | [出典](Sources-ja) | すべての出典。主な出典は Cerrotta–Sartori の記事 |
-| 9 | [効率 - 解説](Efficiency-Explanation-ja) | 効率の計算方法を順を追って説明する文書。Word に出力可能 |
-| 10 | [グリッド地図](Grid-Square-Map-ja) | ADIF ファイルから読み込んだ交信済・確認済のマイデンヘッド グリッド。バンドごとに 1 タブ |
+| **ライブとリアルタイムデータ** | [ライブトラフィック](Live-Traffic-ja) | 収集したすべての MS トラフィックの方位図。交信ごとに最も可能性の高い流星痕の雲を描き、バンドごとに色分けし、新しいスポットは点滅します |
+| | [レーダーフラックス](Radar-Flux-ja) | Collm SKiYMET レーダーから読み取った時間別の流星数と流星痕高度、Sodankylä の画像、自局バンドでの推定 |
+| | [GRAVES レーダー](GRAVES-Radar-ja) | GRAVES → 自局の前方散乱パス: ビーム内の有効ゾーン、セクターとステップ、次のビーム通過、受信方法 |
+| | [データ収集](Data-Collection-ja) | 3 つの telnet クラスター接続 (DX クラスター、RBN、DM4X/PSKReporter) と MS スポットのフィルター |
+| **予測計算** | [予測計算](Sky-View-ja) | Hot A / Hot B、アンテナビーム、PREV 領域、流星群の移動を描いたパスの平面図; 流星群リスト; 放射点と正しいアンテナ方向を示す小さな天球図; アンテナから見た断面 |
+| | [幾何と損失](Geometry-and-Path-Loss-ja) | 距離、中間点、仰角、Hot A / Hot B、共通領域の限界、28–432 MHz のパス損失、回線計算、アンテナ |
+| | [効率の計算](Efficiency-Calculation-ja) | 概要カード、A/B 側付きの各流星群の時間別効率、パス指数、DH9GCD との比較、グラフ |
+| | [実験的予報](Experimental-Forecasts-ja) | λ^k と局係数 K で 144 MHz (または任意の周波数) に換算した Collm のフラックス、24 時間予報、RMOB との比較 |
+| **技術資料** | [出典](Sources-ja) | すべての出典。主な出典は Cerrotta–Sartori の記事 |
+| | [ヨーロッパのレーダー地図](European-Radar-Map-ja) | Collm、Sodankylä、GRAVES、CMOR が自局から見てどこにあるか |
+| | [効率 - 解説](Efficiency-Explanation-ja) | 効率の計算方法を順を追って説明する文書。Word に出力可能 |
+| [流星群ライブ](Live-Showers-ja) | – | Global Meteor Network の実測 ZHR と CMOR の放射点マップ |
+| [流星群](Showers-ja) | – | 次の極大 (IMO の日時または計算値) 付きの IMO カタログ |
+| [グリッド地図](Grid-Square-Map-ja) | – | ADIF ファイルから読み込んだ交信済・確認済のマイデンヘッド グリッド。バンドごとに 1 タブ |
 
 タブの上には 3 段の操作部 (自局ロケーター、相手局、バンド、アンテナ、流星痕高度、時刻) があります。[はじめに](Getting-Started-ja) を参照してください。**操作** ボタンでこれを折りたためます。表示言語と配色は右上で選びます。[設定とデータフォルダー](Settings-and-Data-Folder-ja) を参照してください。
 

@@ -2,9 +2,9 @@
 
 # Experimental forecasts
 
-*Tab 5.*
+*Tab: Forecast calculation › Experimental forecasts.*
 
-[![Experimental forecasts](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-5.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-5.png)
+[![Experimental forecasts](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_4.png)
 
 This tab turns the meteor counts of the **Collm radar (36.2 MHz)** into an estimate of the **reflections per hour on an amateur band** (144 MHz by default, any frequency from 28 to 1300 MHz), forecasts the **next 24 hours** for your path and lets you **compare** the estimate with an **RMOB** observer – for example one listening to GRAVES on 143.050 MHz.
 

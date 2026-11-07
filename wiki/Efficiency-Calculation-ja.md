@@ -2,9 +2,9 @@
 
 # 効率の計算
 
-*タブ 3。*
+*タブ: 予測計算 › 効率の計算。*
 
-[![効率の計算](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3.png)
+[![効率の計算](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-2_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-2_3.png)
 
 流星群の**効率**は、その放射点の位置が**自局の**パスでの反射をどれだけ可能にするかをパーセントで表します。この概念は Ilkka **OH5IY** (MS-Soft) によるもので、Cerrotta–Sartori の記事でも取り上げられています: 効率の極大は眼視の極大 (ZHR) とは一致しません。放射点が両局に対してどこにあるかに左右されるためです。DL5MCG の MCG_MS は同じ考え方を 4 つの固定方向に適用しますが、YA-MS は 2 つのロケーター間の**実際のパス**について計算します。
 

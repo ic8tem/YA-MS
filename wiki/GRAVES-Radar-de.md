@@ -2,9 +2,9 @@
 
 # Radar GRAVES
 
-*Reiter 4.*
+*Reiter: Live und Echtzeitdaten › Radar GRAVES.*
 
-[![Radar GRAVES](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-4.png)
+[![Radar GRAVES](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-1_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-1_3.png)
 
 ## Was GRAVES ist
 

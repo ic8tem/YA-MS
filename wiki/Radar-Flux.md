@@ -2,9 +2,9 @@
 
 # Radar flux
 
-*Tab 2.*
+*Tab: Live and real-time data › Radar flux.*
 
-[![Radar flux](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2.png)
+[![Radar flux](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_2.png)
 
 This tab shows what professional meteor radars are counting **now**: the hourly meteor counts and the trail heights from the **Collm** SKiYMET radar (Leipzig University / IAP Kühlungsborn, Germany, 36.2 MHz), and the latest image of the **Sodankylä** radar (SGO, Finland). The Collm counts feed the estimate at your band and the [Experimental forecasts](Experimental-Forecasts); the measured trail height feeds the whole geometry.
 

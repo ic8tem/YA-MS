@@ -2,9 +2,9 @@
 
 # 流星群
 
-*タブ 7。*
+*タブ: 流星群。*
 
-[![流星群](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-7.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-7.png)
+[![流星群](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-5.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-5.png)
 
 すべての計算に使う流星群カタログです: **IMO Meteor Shower Calendar 2026 および 2027** (表 5 と 7) の **45 の流星群**と **反太陽源** (表 6)。それぞれに**次の極大**が示されます。
 

@@ -3,10 +3,11 @@
 **YA-MS** - previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter (50-432 MHz).
 A cura di Costantino Cerrotta IC8TEM. Windows, Linux, Raspberry Pi e Mac (.NET 8 + Avalonia).
 
-- Volta celeste e pianta della tratta: radianti, Hot A / Hot B, lobo dell'antenna, zone PREV delle scie piu' probabili, sezione vista dall'antenna.
-- Calcolo dell'efficienza ora per ora, con il confronto della formula di DH9GCD.
-- Flusso dal radar SKiYMET di Collm e stima sperimentale a 50/144/432 MHz (regole SM6FHZ); confronto con RMOB.
-- Geometria, attenuazione (McKinley) e bilancio di tratta; mappa dei quadrati da ADIF.
+Linguette (1.6):
+- **Live e dati real-time**: Traffico in diretta (spot MS raccolti su mappa azimutale, con la nuvola della zona di scie piu' probabile), Flusso radar (SKiYMET Collm e Sodankyla, stima sperimentale a 50/144/432 MHz, confronto RMOB), Radar GRAVES, Raccolta dati (DX cluster, RBN, DM4X/PSKReporter).
+- **Calcolo previsionale**: Calcolo previsionale (volta celeste e pianta della tratta: radianti, Hot A / Hot B, lobo, zone PREV, direzioni d'antenna), Geometria e attenuazione (McKinley, bilancio di tratta), Calcolo dell'efficienza ora per ora (con la formula di DH9GCD), Attuazione sperimentale previsioni.
+- **Documenti tecnici**: Fonti, Mappa dei radar europei, Efficienza - spiegazione.
+- Sciami in diretta (GMN, CMOR), Sciami, Mappa quadrati da ADIF.
 
 Fonte principale: C. Cerrotta IC8TEM, G. Sartori IV3GTH, "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese".
 

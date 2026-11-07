@@ -2,9 +2,9 @@
 
 # Потоки
 
-*Вкладка 7.*
+*Вкладка: Потоки.*
 
-[![Потоки](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-7.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-7.png)
+[![Потоки](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-5.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-5.png)
 
 Каталог метеорных потоков, используемый во всех расчётах: **45 потоков** из **IMO Meteor Shower Calendar 2026 и 2027** (таблицы 5 и 7) плюс **Антигелийный источник** (таблица 6), для каждого – **следующий максимум**.
 

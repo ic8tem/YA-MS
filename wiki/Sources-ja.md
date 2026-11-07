@@ -2,9 +2,9 @@
 
 # 出典
 
-*タブ 8。*
+*タブ: 技術資料 › 出典。*
 
-[![出典](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-8.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-8.png)
+[![出典](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3_1.png)
 
 **出典** タブには、YA-MS の基礎となったすべての著作が以下のように分類して列挙されています (テキストは選択できるので、参考文献をコピーできます)。同じ出典が番号付きで計算マニュアル (`doc/YA-MS_manuale_calcoli.docx`) と [効率 - 解説](Efficiency-Explanation-ja) 文書の末尾にも載っています。
 

@@ -2,11 +2,13 @@
 
 # Himmelsansicht
 
-*Reiter 1.*
+*Reiter: Vorhersageberechnung › Vorhersageberechnung.*
 
-[![Himmelsansicht](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-1.png)
+[![Himmelsansicht](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-2_1.png)
 
-Der erste Reiter zeigt auf einem Bildschirm, **wo** die nutzbaren Spuren jetzt liegen und **wohin** du die Antenne richten sollst. Links die **Draufsicht** der Strecke; rechts die Liste der Ströme, eine kleine Himmelsansicht mit den Radianten, der Text der Berechnung und der **Schnitt** von deiner Antenne aus gesehen. Alles bezieht sich auf die Zeit des Schiebereglers *Zeit der Himmelsansicht* (standardmäßig Echtzeit; ±36 h in Schritten von 15 Minuten).
+Dieser Unterreiter (die Himmelsansicht früherer Versionen) zeigt auf einem Bildschirm, **wo** die nutzbaren Spuren jetzt liegen und **wohin** du die Antenne richten sollst. Links die **Draufsicht** der Strecke; rechts die Liste der Ströme, eine kleine Himmelsansicht mit den Radianten, der Text der Berechnung und der **Schnitt** von deiner Antenne aus gesehen. Alles bezieht sich auf die Zeit des Schiebereglers *Zeit der Himmelsansicht* (standardmäßig Echtzeit; ±36 h in Schritten von 15 Minuten).
+
+In der kleinen Himmelsansicht zeigt eine **orange Linie** durch den Zenit immer die **richtigen Antennenrichtungen**, senkrecht zum Zug des gewählten (oder des günstigsten) Stroms: Radiant-Azimut ±90°, an beiden Enden mit *Antenne NNN°* beschriftet, die Toleranz von ±45° als dünne Linien. Kurze orange Striche am Rand geben die senkrechten Richtungen der anderen nutzbaren Ströme an.
 
 ## Draufsicht (links)
 

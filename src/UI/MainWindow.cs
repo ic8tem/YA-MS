@@ -1204,6 +1204,7 @@ namespace YAMS
             chart24.YLabel = Lang.T("efficienza %"); chart24.Y2Label = Lang.T("indice"); chart24.YMaxFixed = 100;
             string[] xl = new string[24]; for (int h = 0; h < 24; h++) xl[h] = h.ToString("00");
             chart24.XLabels = xl;
+            SetLocalRow(chart24, day.Date, 24);
             chart24.MarkIndex = day.Date == DateTime.UtcNow.Date ? DateTime.UtcNow.Hour : -1;
             chart24.InvalidateVisual();
         }
@@ -1458,6 +1459,23 @@ namespace YAMS
             return true;
         }
 
+        // ore locali (fuso orario del computer, con l'ora legale) delle ore UTC che iniziano a startUtc
+        static string[] LocalHours(DateTime startUtc, int n)
+        {
+            string[] r = new string[n];
+            DateTime s = DateTime.SpecifyKind(startUtc, DateTimeKind.Utc);
+            for (int i = 0; i < n; i++)
+                r[i] = TimeZoneInfo.ConvertTimeFromUtc(s.AddHours(i), TimeZoneInfo.Local).ToString("HH:mm", CultureInfo.InvariantCulture).Replace(":00", "");
+            return r;
+        }
+
+        static void SetLocalRow(SimpleChart c, DateTime startUtc, int n)
+        {
+            c.XLabels2 = LocalHours(startUtc, n);
+            c.XRow1Name = "UTC";
+            c.XRow2Name = Lang.T("locale");
+        }
+
         void UpdateFluxTab()
         {
             if (chartFlux == null) return;
@@ -1486,6 +1504,7 @@ namespace YAMS
             ChartSeries b = new ChartSeries(); b.Name = Lang.F("stima a {0} MHz (scala a destra)", f.ToString("F0")); b.Color = Pal.Ink(Pal.Rgb(255, 170, 40)); b.Values = est; b.RightAxis = true; b.LineWidth = 6f;   // spessore triplo
             chartFlux.Series.Add(a); chartFlux.Series.Add(r); chartFlux.Series.Add(b);
             chartFlux.XLabels = xl; chartFlux.XLabelEvery = 3;
+            SetLocalRow(chartFlux, collm.DayToday.AddDays(-1), 48);
             chartFlux.Title = Lang.F("Meteore/ora - ieri {0} e oggi {1} (UTC)", collm.DayToday.AddDays(-1).ToString("dd/MM", CultureInfo.InvariantCulture), collm.DayToday.ToString("dd/MM", CultureInfo.InvariantCulture));
             chartFlux.YLabel = Lang.T("meteore/ora radar"); chartFlux.Y2Label = Lang.T("meteore/ora stimate");
             int nowIdx = (int)Math.Floor((DateTime.UtcNow - collm.DayToday.AddDays(-1)).TotalHours);

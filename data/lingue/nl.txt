@@ -472,3 +472,4 @@ Pastello indaco	Pastel indigo
 Pastello marrone	Pastel bruin
 Scia meteorica	Meteorenspoor
 Tema	Kleurenschema
+locale	lokaal

@@ -472,3 +472,4 @@ Pastello indaco	Pastel indigo
 Pastello marrone	Pastel brown
 Scia meteorica	Meteor trail
 Tema	Theme
+locale	local

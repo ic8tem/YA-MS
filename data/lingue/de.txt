@@ -472,3 +472,4 @@ Pastello indaco	Pastell Indigo
 Pastello marrone	Pastell Braun
 Scia meteorica	Meteorspur
 Tema	Farbschema
+locale	Ortszeit

@@ -388,6 +388,7 @@ lim. B
 limiti zona comune
 lobo antenna
 lobo {0}°
+locale
 mai scaricato
 mappa: bordo = {0} km dalla stazione
 max Σ {0:F1} alle {1:00}:30

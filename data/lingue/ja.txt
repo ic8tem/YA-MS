@@ -472,3 +472,4 @@ Pastello indaco	パステルインディゴ
 Pastello marrone	パステルブラウン
 Scia meteorica	流星痕
 Tema	テーマ
+locale	現地

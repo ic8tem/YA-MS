@@ -472,3 +472,4 @@ Pastello indaco	Пастельный индиго
 Pastello marrone	Пастельный коричневый
 Scia meteorica	Метеорный след
 Tema	Тема
+locale	местн.

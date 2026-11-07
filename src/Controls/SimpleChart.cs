@@ -34,6 +34,9 @@ namespace YAMS
         public string Title = "", YLabel = "", Y2Label = "";
         public string[] XLabels = new string[0];
         public int XLabelEvery = 1;
+        // seconda riga sotto l'asse x (es. ora locale) con le didascalie delle due righe a sinistra
+        public string[] XLabels2 = null;
+        public string XRow1Name = "", XRow2Name = "";
         public List<ChartSeries> Series = new List<ChartSeries>();
         public double YMaxFixed = 0, Y2MaxFixed = 0;
         public int MarkIndex = -1;   // linea verticale (es. ora attuale)
@@ -114,7 +117,8 @@ namespace YAMS
             double ml = Math.Max(58, 4 + (string.IsNullOrEmpty(YLabel) ? 0 : lh + 4) + yw + 8);
             double mr = Math.Max(58, 4 + (string.IsNullOrEmpty(Y2Label) ? 0 : lh + 4) + y2w + 8);
             double mt = Math.Max(30, titleFt.Height + 12);
-            double mb = Math.Max(42, lh + 28);
+            bool row2 = XLabels2 != null && XLabels2.Length > 0;
+            double mb = Math.Max(42, lh + 28) + (row2 ? lh + 2 : 0);
             double pw = Wd - ml - mr, ph = Ht - mt - mb;
             if (pw < 50 || ph < 30) return;
             Rect pr = new Rect(ml, mt, pw, ph);
@@ -156,7 +160,26 @@ namespace YAMS
                     ctx.DrawLine(grid, new Point(x, pr.Top), new Point(x, pr.Bottom));
                     FormattedText lab = Ft(xl[i], F8, TextCol);
                     ctx.DrawText(lab, new Point(x - lab.Width / 2, pr.Bottom + 6));
+                    if (row2 && i < XLabels2.Length && !string.IsNullOrEmpty(XLabels2[i]))
+                    {
+                        FormattedText l2 = Ft(XLabels2[i], F8, Pal.OrangeText, FontWeight.SemiBold);
+                        ctx.DrawText(l2, new Point(x - l2.Width / 2, pr.Bottom + 8 + lh));
+                    }
                 }
+            if (row2)
+            {
+                // didascalie delle due righe, allineate a destra subito prima dell'asse
+                if (!string.IsNullOrEmpty(XRow1Name))
+                {
+                    FormattedText c1 = Ft(XRow1Name, F8, TextCol);
+                    ctx.DrawText(c1, new Point(pr.Left - c1.Width - 10, pr.Bottom + 6));
+                }
+                if (!string.IsNullOrEmpty(XRow2Name))
+                {
+                    FormattedText c2 = Ft(XRow2Name, F8, Pal.OrangeText, FontWeight.SemiBold);
+                    ctx.DrawText(c2, new Point(pr.Left - c2.Width - 10, pr.Bottom + 8 + lh));
+                }
+            }
 
             using (ctx.PushClip(pr.Inflate(1)))
             {

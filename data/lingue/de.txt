@@ -473,3 +473,8 @@ Pastello marrone	Pastell Braun
 Scia meteorica	Meteorspur
 Tema	Farbschema
 locale	Ortszeit
+{0} {1} - {2:F0} % alle {3} UTC ({4} ora locale)	{0} {1} - {2:F0} % um {3} UTC ({4} Ortszeit)
+a SINISTRA guardando verso il corrispondente	LINKS mit Blick zur Gegenstation
+a DESTRA guardando verso il corrispondente	RECHTS mit Blick zur Gegenstation
+{0:F0} % delle riflessioni arriva da questo lato	{0:F0} % der Reflexionen kommen von dieser Seite
+puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km	auf {0:F0}° richten ({1:+0;-0}° von der Gegenstation), Elevation {2:F1}°, Hot Spot in {3:F0} km

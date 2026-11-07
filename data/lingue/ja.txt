@@ -473,3 +473,8 @@ Pastello marrone	パステルブラウン
 Scia meteorica	流星痕
 Tema	テーマ
 locale	現地
+{0} {1} - {2:F0} % alle {3} UTC ({4} ora locale)	{0} {1} - {3} UTC ({4} 現地時間) に {2:F0} %
+a SINISTRA guardando verso il corrispondente	相手局方向を見て左側
+a DESTRA guardando verso il corrispondente	相手局方向を見て右側
+{0:F0} % delle riflessioni arriva da questo lato	反射の {0:F0} % がこちら側から届きます
+puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km	{0:F0}° に向ける (相手局から {1:+0;-0}°)、仰角 {2:F1}°、ホットスポットまで {3:F0} km

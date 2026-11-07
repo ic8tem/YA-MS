@@ -473,3 +473,8 @@ Pastello marrone	Pastel bruin
 Scia meteorica	Meteorenspoor
 Tema	Kleurenschema
 locale	lokaal
+{0} {1} - {2:F0} % alle {3} UTC ({4} ora locale)	{0} {1} - {2:F0} % om {3} UTC ({4} lokale tijd)
+a SINISTRA guardando verso il corrispondente	LINKS, kijkend naar het tegenstation
+a DESTRA guardando verso il corrispondente	RECHTS, kijkend naar het tegenstation
+{0:F0} % delle riflessioni arriva da questo lato	{0:F0} % van de reflecties komt van deze kant
+puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km	richten op {0:F0}° ({1:+0;-0}° vanaf het tegenstation), elevatie {2:F1}°, hot spot op {3:F0} km

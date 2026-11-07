@@ -22,6 +22,7 @@ namespace YAMS
         public bool Bold;
         public double FontSize = 12;
         public object Tag;
+        public string[] CellTips;    // fumetto per cella al passaggio del mouse (null o "" = nessuno)
     }
 
     public class TableView : Control
@@ -275,6 +276,47 @@ namespace YAMS
             scrollY -= e.Delta.Y * RH * 3;
             ClampScroll();
             if (scrollY != old) { e.Handled = true; InvalidateVisual(); }
+        }
+
+        // fumetto della cella sotto il mouse (TableRow.CellTips)
+        string shownTip;
+
+        string TipAt(Point p)
+        {
+            double hh = HH;
+            if (p.Y < hh || Rows == null) return null;
+            int idx = (int)Math.Floor((p.Y - hh + scrollY) / RH);
+            if (idx < 0 || idx >= Rows.Count || Rows[idx] == null || Rows[idx].CellTips == null) return null;
+            double[] w = Widths(Bounds.Width, Factor());
+            double x = 0;
+            for (int c = 0; c < w.Length; c++)
+            {
+                if (p.X >= x && p.X < x + w[c])
+                    return c < Rows[idx].CellTips.Length && !string.IsNullOrEmpty(Rows[idx].CellTips[c]) ? Rows[idx].CellTips[c] : null;
+                x += w[c];
+            }
+            return null;
+        }
+
+        void SetTip(string tip)
+        {
+            if (tip == shownTip) return;
+            shownTip = tip;
+            ToolTip.SetIsOpen(this, false);
+            ToolTip.SetTip(this, tip);
+            if (tip != null) ToolTip.SetIsOpen(this, true);
+        }
+
+        protected override void OnPointerMoved(PointerEventArgs e)
+        {
+            base.OnPointerMoved(e);
+            SetTip(TipAt(e.GetPosition(this)));
+        }
+
+        protected override void OnPointerExited(PointerEventArgs e)
+        {
+            base.OnPointerExited(e);
+            SetTip(null);
         }
 
         protected override void OnPointerPressed(PointerPressedEventArgs e)

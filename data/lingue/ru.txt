@@ -473,3 +473,8 @@ Pastello marrone	Пастельный коричневый
 Scia meteorica	Метеорный след
 Tema	Тема
 locale	местн.
+{0} {1} - {2:F0} % alle {3} UTC ({4} ora locale)	{0} {1} - {2:F0} % в {3} UTC ({4} местного времени)
+a SINISTRA guardando verso il corrispondente	СЛЕВА, если смотреть на корреспондента
+a DESTRA guardando verso il corrispondente	СПРАВА, если смотреть на корреспондента
+{0:F0} % delle riflessioni arriva da questo lato	{0:F0} % отражений приходит с этой стороны
+puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km	направить на {0:F0}° ({1:+0;-0}° от корреспондента), угол места {2:F1}°, горячая точка в {3:F0} км

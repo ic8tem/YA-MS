@@ -1112,6 +1112,7 @@ namespace YAMS
                 double[] dh = new double[24];
                 bool[] tooHigh = new bool[24];
                 string[] sides = new string[24];
+                string[] tips = new string[27];
                 for (int h = 0; h < 24; h++)
                 {
                     DateTime t = day.AddHours(h + 0.5);
@@ -1132,9 +1133,10 @@ namespace YAMS
                             "\n" + Lang.F("puntamento migliore {0}° / {1}°", Astro.Norm360(raz + 90).ToString("F0"), Astro.Norm360(raz - 90).ToString("F0"));
                     }
                     row[3 + h] = (e < 1 ? "" : e.ToString("F0") + (e >= 5 ? sides[h] : "")) + (tooHigh[h] ? "↑" : "");
+                    if (e >= 5) tips[3 + h] = HotTip(s, t, e, lf);
                 }
                 row[2] = zmax.ToString("F0");
-                TableRow tr = new TableRow { Cells = row, CellBack = new Color?[27], CellFore = new Color?[27], Tag = s.Code, FontSize = 12 * Grid24Scale };
+                TableRow tr = new TableRow { Cells = row, CellBack = new Color?[27], CellFore = new Color?[27], Tag = s.Code, FontSize = 12 * Grid24Scale, CellTips = tips };
                 for (int h = 0; h < 24; h++)
                 {
                     double e = effs[h];
@@ -1460,6 +1462,23 @@ namespace YAMS
         }
 
         // ore locali (fuso orario del computer, con l'ora legale) delle ore UTC che iniziano a startUtc
+        // fumetto delle celle della tabella oraria: quale hot spot (A o B) e' indicato dalla lettera e dove puntare
+        string HotTip(Shower s, DateTime tUtc, double eff, double lf)
+        {
+            bool left = lf >= 0.5;
+            HotPoint hp = left ? model.HotA : model.HotB;
+            string loc = TimeZoneInfo.ConvertTimeFromUtc(DateTime.SpecifyKind(tUtc, DateTimeKind.Utc), TimeZoneInfo.Local).ToString("HH:mm", CultureInfo.InvariantCulture);
+            string head = Lang.F("{0} {1} - {2:F0} % alle {3} UTC ({4} ora locale)", s.Code, Lang.T(s.Name), eff,
+                tUtc.ToString("HH:mm", CultureInfo.InvariantCulture), loc);
+            string side = left ? Lang.T("Hot A") + " - " + Lang.T("a SINISTRA guardando verso il corrispondente")
+                               : Lang.T("Hot B") + " - " + Lang.T("a DESTRA guardando verso il corrispondente");
+            string pct = Lang.F("{0:F0} % delle riflessioni arriva da questo lato", 100 * Math.Max(lf, 1 - lf));
+            if (hp == null) return head + "\n" + side + "\n" + pct;
+            string where = Lang.F("puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km",
+                hp.BearingFromHome, Astro.Norm180(hp.BearingFromHome - model.BearingHomeToDx), hp.ElevFromHome, hp.DistFromHome);
+            return head + "\n" + side + "\n" + pct + "\n" + where;
+        }
+
         static string[] LocalHours(DateTime startUtc, int n)
         {
             string[] r = new string[n];

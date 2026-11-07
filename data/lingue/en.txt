@@ -473,3 +473,8 @@ Pastello marrone	Pastel brown
 Scia meteorica	Meteor trail
 Tema	Theme
 locale	local
+{0} {1} - {2:F0} % alle {3} UTC ({4} ora locale)	{0} {1} - {2:F0} % at {3} UTC ({4} local time)
+a SINISTRA guardando verso il corrispondente	to the LEFT looking towards the DX station
+a DESTRA guardando verso il corrispondente	to the RIGHT looking towards the DX station
+{0:F0} % delle riflessioni arriva da questo lato	{0:F0} % of the reflections come from this side
+puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km	point to {0:F0}° ({1:+0;-0}° from the DX station), elevation {2:F1}°, hot spot at {3:F0} km

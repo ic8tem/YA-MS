@@ -56,6 +56,22 @@ namespace YAMS
                     string d = Path.Combine(dataDir, Path.GetFileName(f));
                     if (!File.Exists(d)) File.Copy(f, d);
                 }
+                // traduzioni dell'interfaccia (data/lingue): sono file del programma, si aggiornano se quelli nuovi sono piu' recenti
+                string ls = Path.Combine(src, "lingue");
+                if (Directory.Exists(ls))
+                {
+                    string ld = Path.Combine(dataDir, "lingue");
+                    Directory.CreateDirectory(ld);
+                    foreach (string f in Directory.GetFiles(ls))
+                    {
+                        try
+                        {
+                            string d = Path.Combine(ld, Path.GetFileName(f));
+                            if (!File.Exists(d) || File.GetLastWriteTimeUtc(f) > File.GetLastWriteTimeUtc(d)) File.Copy(f, d, true);
+                        }
+                        catch { }
+                    }
+                }
             }
             catch { }
         }

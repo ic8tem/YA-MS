@@ -69,13 +69,13 @@ namespace YAMS
                     source = "IMO " + y;
                     return d.AddHours(hh).AddMinutes(mm);
                 }
-                text = d.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture) + " (~" + calc.ToString("HH:mm", CultureInfo.InvariantCulture) + " calc.)";
-                source = "IMO " + y + " (giorno)";
+                text = Lang.F("{0} (~{1} calc.)", d.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture), calc.ToString("HH:mm", CultureInfo.InvariantCulture));
+                source = Lang.F("IMO {0} (giorno)", y);
                 return calc.Date == d ? calc : d.AddHours(12);
             }
             catch { }   // riga di massimi_imo.csv scritta male: si usa il calcolo da lambda
             text = calc.ToString("dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
-            source = "calcolato da λ";
+            source = Lang.T("calcolato da λ");
             return calc;
         }
 
@@ -97,8 +97,9 @@ namespace YAMS
         public static void Load(string dataDir)
         {
             Showers.Clear(); antTable.Clear();
+            LoadMessage = "";   // la finestra puo' essere ricostruita (cambio di lingua): niente messaggi doppi
             string f = Path.Combine(dataDir, "sciami.csv");
-            if (!File.Exists(f)) { LoadMessage = "File mancante: " + f; return; }
+            if (!File.Exists(f)) { LoadMessage = Lang.F("File mancante: {0}", f); return; }
             int line = 0;
             foreach (string raw in File.ReadAllLines(f))
             {
@@ -106,7 +107,7 @@ namespace YAMS
                 string l = raw.Trim();
                 if (l.Length == 0 || l.StartsWith("#") || l.StartsWith("codice")) continue;
                 string[] c = l.Split(';');
-                if (c.Length < 15) { LoadMessage += "Riga " + line + " ignorata (colonne insufficienti)\r\n"; continue; }
+                if (c.Length < 15) { LoadMessage += Lang.F("Riga {0} ignorata (colonne insufficienti)", line) + "\r\n"; continue; }
                 try
                 {
                     Shower s = new Shower();
@@ -118,7 +119,7 @@ namespace YAMS
                     s.Type = c[14].Trim();
                     Showers.Add(s);
                 }
-                catch (Exception ex) { LoadMessage += "Riga " + line + ": " + ex.Message + "\r\n"; }
+                catch (Exception ex) { LoadMessage += Lang.F("Riga {0}: {1}", line, ex.Message) + "\r\n"; }
             }
             // Massimi pubblicati dall'IMO
             ImoPeaks.Clear();
@@ -149,7 +150,7 @@ namespace YAMS
                         double doy = MonthStartDoy(int.Parse(md[0])) + int.Parse(md[1]);
                         antTable.Add(new double[] { doy, P(c[1]), P(c[2]) });
                     }
-                    catch { LoadMessage += "ant_radiante.csv: riga ignorata: " + l + "\r\n"; }
+                    catch { LoadMessage += Lang.F("ant_radiante.csv: riga ignorata: {0}", l) + "\r\n"; }
                 }
                 antTable.Sort(delegate(double[] x, double[] y) { return x[0].CompareTo(y[0]); });
                 Shower ant = new Shower();

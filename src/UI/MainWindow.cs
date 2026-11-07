@@ -6,6 +6,7 @@ using System.IO;
 using System.Text;
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Controls.Documents;
 using Avalonia.Controls.Primitives;
 using Avalonia.Input;
@@ -26,7 +27,8 @@ namespace YAMS
         List<RadarSource> sources;
         CollmData collm;
         RadarSource collmSrc, sodaSrc;
-        bool fetching, offlineNotified;
+        static bool fetching;   // statico: dopo un cambio di lingua la nuova finestra non scarica insieme alla vecchia
+        bool offlineNotified;
         DateTime lastFetchUtc = DateTime.MinValue;
 
         // comandi in alto
@@ -40,6 +42,7 @@ namespace YAMS
         Border boxLobeWarn, boxHighRad;
         double antGainDbi, antHpbw, antHpbwV;   // lobo orizzontale (E) e verticale (H)
         string recommendText = "";
+        string recommendShort = "";   // consiglio senza la parte tra parentesi (riquadro "Adesso")
         TextBlock glBest, glShower, glNow, glFore;
         CheckBox chkHot, chkMap, chkTopView;
         Button btnCalc, btnReal;
@@ -88,7 +91,7 @@ namespace YAMS
                 else if (s.Name.StartsWith("Sodankyla") && sodaSrc == null) sodaSrc = s;
             }
 
-            Title = AppPaths.Title;
+            Title = AppPaths.AppName + " " + AppPaths.Version + " - " + Lang.T("a cura di Costantino IC8TEM");
             Width = 1600; Height = 980;
             WindowStartupLocation = WindowStartupLocation.CenterScreen;
             Background = Pal.B(Pal.Back);
@@ -100,14 +103,29 @@ namespace YAMS
             BuildTop(root);
             tabs = new PillTabs();
             // pulsante "Comandi": ripiega le tre righe dei comandi per lasciare spazio ai grafici (utile con caratteri grandi)
-            btnRows = new Button { Content = "Comandi ▴", VerticalAlignment = VerticalAlignment.Center };
+            btnRows = new Button { Content = Lang.T("Comandi") + " ▴", VerticalAlignment = VerticalAlignment.Center };
             btnRows.Classes.Add("pill");
             btnRows.Click += (s, e) => SetRowsVisible(!topRows[0].IsVisible, true);
             DockPanel.SetDock(btnRows, Dock.Right);
             tabs.Line.Children.Insert(0, btnRows);
+            // scelta della lingua, in alto a destra (a destra del pulsante "Comandi")
+            List<string> langNames = new List<string>();
+            foreach (string[] lg in Lang.Languages) langNames.Add(lg[1]);
+            cmbLang = new ComboBox { ItemsSource = langNames, MinWidth = 120, Margin = new Thickness(6, 1, 0, 1), VerticalAlignment = VerticalAlignment.Center };
+            cmbLang.SelectedIndex = Math.Max(0, Lang.IndexOf(Lang.Code));
+            ToolTip.SetTip(cmbLang, Lang.T("Lingua dell'interfaccia"));
+            cmbLang.SelectionChanged += (s, e) =>
+            {
+                int li = cmbLang.SelectedIndex;
+                if (li < 0 || li >= Lang.Languages.Length || Lang.Languages[li][0] == Lang.Code) return;
+                string code = Lang.Languages[li][0];
+                Dispatcher.UIThread.Post(() => SwitchLanguage(code));   // fuori dall'evento della casella
+            };
+            DockPanel.SetDock(cmbLang, Dock.Right);
+            tabs.Line.Children.Insert(0, cmbLang);
             DockTop(root, tabs.Bar);
             SetRowsVisible(cfg.GetD("comandi_visibili", 1) != 0, false);
-            status = new TextBlock { Text = "Pronto", Foreground = Pal.B(Pal.Muted), TextTrimming = TextTrimming.CharacterEllipsis };
+            status = new TextBlock { Text = Lang.T("Pronto"), Foreground = Pal.B(Pal.Muted), TextTrimming = TextTrimming.CharacterEllipsis };
             Border sb = new Border { Background = Pal.B(Pal.Track), Padding = new Thickness(8, 3), Child = status };
             DockPanel.SetDock(sb, Dock.Bottom);
             root.Children.Add(sb);
@@ -120,7 +138,50 @@ namespace YAMS
             timer.Start();
 
             Opened += OnOpened;
-            Closing += (s, e) => SaveConfig();
+            Closing += (s, e) =>
+            {
+                timer.Stop();
+                if (!replaced) SaveConfig();   // cambio di lingua: impostazioni gia' salvate prima di creare la nuova finestra
+            };
+        }
+
+        ComboBox cmbLang;
+        bool replaced;                 // finestra sostituita da una nuova (cambio di lingua)
+        static bool catalogShown;      // avviso del catalogo degli sciami mostrato una sola volta
+
+        // Cambio di lingua: salva le impostazioni, carica la lingua e ricostruisce l'interfaccia in una nuova finestra
+        // con la stessa posizione, dimensione, stato e linguetta; poi chiude questa.
+        void SwitchLanguage(string code)
+        {
+            if (replaced || code == Lang.Code) return;
+            string oldCode = Lang.Code;
+            try
+            {
+                Lang.Load(code);
+                Lang.ApplyCulture();
+                SaveConfig();   // scrive anche lingua = nuovo codice
+                MainWindow w = new MainWindow();
+                w.WindowStartupLocation = WindowStartupLocation.Manual;
+                w.Position = Position;
+                if (WindowState == WindowState.Normal) { w.Width = Width; w.Height = Height; }
+                w.WindowState = WindowState == WindowState.Minimized ? WindowState.Normal : WindowState;
+                if (tabs != null && w.tabs != null && tabs.Selected >= 0) w.tabs.Select(tabs.Selected);
+                replaced = true;
+                timer.Stop();
+                if (Application.Current != null && Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
+                    desktop.MainWindow = w;
+                w.Show();
+                Close();
+            }
+            catch (Exception ex)
+            {
+                replaced = false;
+                Lang.Load(oldCode); Lang.ApplyCulture();
+                cfg.Set("lingua", oldCode); try { cfg.Save(); } catch { }
+                timer.Start();
+                cmbLang.SelectedIndex = Math.Max(0, Lang.IndexOf(oldCode));
+                status.Text = ex.Message;
+            }
         }
 
         async void OnOpened(object sender, EventArgs e)
@@ -134,9 +195,13 @@ namespace YAMS
                 Recalc();
                 StartMapLoad();
                 if (chkAuto.IsChecked == true) StartFetch(); else lastFetchUtc = DateTime.UtcNow;
-                if (!string.IsNullOrEmpty(Catalog.LoadMessage)) await Dialogs.Message(this, "Catalogo sciami", Catalog.LoadMessage);
+                if (!string.IsNullOrEmpty(Catalog.LoadMessage) && !catalogShown)
+                {
+                    catalogShown = true;
+                    await Dialogs.Message(this, Lang.T("Catalogo sciami"), Catalog.LoadMessage);
+                }
             }
-            catch (Exception ex) { status.Text = "Errore all'avvio: " + ex.Message; }
+            catch (Exception ex) { status.Text = Lang.F("Errore all'avvio: {0}", ex.Message); }
         }
 
         // ------------------------------------------------------------ barra delle linguette a pillola
@@ -214,6 +279,7 @@ namespace YAMS
             {
                 Minimum = min, Maximum = max, Increment = inc,
                 FormatString = "F" + dec.ToString(CultureInfo.InvariantCulture),
+                NumberFormat = CultureInfo.CurrentCulture.NumberFormat,   // separatore decimale della lingua scelta (anche dopo un cambio di lingua)
                 ClipValueToMinMax = true,
                 Width = width + 80,   // spazio per i due pulsanti su/giu'
                 Margin = new Thickness(2, 3),
@@ -322,15 +388,15 @@ namespace YAMS
             cmbBand.SelectedIndex = Array.IndexOf(bands, cfg.Get("banda_MHz", "144"));
             if (cmbBand.SelectedIndex < 0) cmbBand.SelectedIndex = 3;
             numLayer = N(70, 130, Dm(cfg.GetD("quota_scie_km", 90)), 1, 0.5m, 60);
-            chkLayerRadar = C("dal radar", cfg.GetB("quota_da_radar", true));
+            chkLayerRadar = C(Lang.T("dal radar"), cfg.GetB("quota_da_radar", true));
             numElev = N(0, 30, Dm(cfg.GetD("elevazione_lobo_gradi", 0)), 1, 0.5m, 55);
-            btnCalc = B("Calcola"); btnCalc.Classes.Add("accent");
+            btnCalc = B(Lang.T("Calcola")); btnCalc.Classes.Add("accent");
             btnCalc.Click += (s, e) => Recalc();
             cmbBand.SelectionChanged += (s, e) => { if (model != null) { ApplyAntenna(); UpdateSky(); UpdateFluxTab(); UpdateGeometry(); } };
 
             // l'antenna e' sempre puntata verso il corrispondente (azimut della tratta)
             Color wheat = Pal.Rgb(245, 222, 179);
-            lblAntAz = L("Antenna az: -"); lblAntAz.Foreground = Pal.B(wheat);
+            lblAntAz = L(Lang.T("Antenna az: -")); lblAntAz.Foreground = Pal.B(wheat);
             numBoom = N(0.5m, 30, Dm(cfg.GetD("boom_m", 4.6)), 2, 0.1m, 60);
             lblAnt = L(""); lblAnt.Foreground = Pal.B(wheat);
             numBoom.ValueChanged += (s, e) => { if (model != null) { ApplyAntenna(); UpdateSky(); UpdateGeometry(); } };
@@ -339,10 +405,10 @@ namespace YAMS
             numHotKm.ValueChanged += (s, e) => { PathModel.HotSpotOffsetKm = V(numHotKm); if (model != null) Recalc(); };
 
             // riga 2: strato E, lobo e antenna
-            Border row2 = Row(L("Quota scie km"), numLayer, chkLayerRadar,
-                              L("Elevazione lobo °"), numElev,
-                              L("Antenna Yagi: boom m"), numBoom, lblAnt,
-                              L("Hot spot dal punto medio km"), numHotKm);
+            Border row2 = Row(L(Lang.T("Quota scie km")), numLayer, chkLayerRadar,
+                              L(Lang.T("Elevazione lobo °")), numElev,
+                              L(Lang.T("Antenna Yagi: boom m")), numBoom, lblAnt,
+                              L(Lang.T("Hot spot dal punto medio km")), numHotKm);
 
             // riga 3: orologio, ora della volta celeste, giorno della tabella 24 h
             lblClock = L("--:--:-- UTC"); lblClock.FontFamily = Pal.Mono; lblClock.FontSize = 15; lblClock.FontWeight = FontWeight.Bold; lblClock.Foreground = Pal.B(Pal.Yellow);
@@ -353,8 +419,8 @@ namespace YAMS
                 if (v == lastTrackValue) return;
                 lastTrackValue = v; UpdateSky();
             });
-            lblSkyTime = L("Volta celeste: tempo reale"); lblSkyTime.Foreground = Pal.B(Pal.Azure);
-            btnReal = B("Tempo reale");
+            lblSkyTime = L(Lang.T("Volta celeste: tempo reale")); lblSkyTime.Foreground = Pal.B(Pal.Azure);
+            btnReal = B(Lang.T("Tempo reale"));
             btnReal.Background = Brushes.Transparent; btnReal.BorderBrush = Pal.B(Pal.Violet); btnReal.Foreground = Pal.B(Pal.Violet);
             btnReal.Click += (s, e) => { trackTime.Value = 0; UpdateSky(); };
             dtDay = new CalendarDatePicker { SelectedDate = DateTime.UtcNow.Date, Width = 150, Margin = new Thickness(2, 3) };
@@ -366,12 +432,12 @@ namespace YAMS
                                    IsSnapToTickEnabled = true, Width = 160, Margin = new Thickness(4, 0) };
             UiScale.Set(pct0 / 100.0);
             WhenChanged(sldFont, RangeBase.ValueProperty, () => SetFontPercent(sldFont.Value));
-            Border row3 = Row(L("Ora"), lblClock, L("Ora della volta celeste (±36 h)"), trackTime,
-                              btnReal, lblSkyTime, L("Giorno per la tabella 24 h (UTC)"), dtDay);
+            Border row3 = Row(L(Lang.T("Ora")), lblClock, L(Lang.T("Ora della volta celeste (±36 h)")), trackTime,
+                              btnReal, lblSkyTime, L(Lang.T("Giorno per la tabella 24 h (UTC)")), dtDay);
             // riga 1: stazioni e banda, azimut d'antenna e cursore del carattere (la prima riga ha spazio)
-            Border row1 = Row(L("Il mio locator"), txtHome, L("quota m"), numHomeAlt,
-                       L("Corrispondente"), txtDx, L("quota m"), numDxAlt,
-                       L("Banda MHz"), cmbBand, btnCalc, lblAntAz, L("Carattere"), sldFont, lblFont);
+            Border row1 = Row(L(Lang.T("Il mio locator")), txtHome, L(Lang.T("quota m")), numHomeAlt,
+                       L(Lang.T("Corrispondente")), txtDx, L(Lang.T("quota m")), numDxAlt,
+                       L(Lang.T("Banda MHz")), cmbBand, btnCalc, lblAntAz, L(Lang.T("Carattere")), sldFont, lblFont);
 
             DockTop(root, row1);
             DockTop(root, row2);
@@ -386,7 +452,7 @@ namespace YAMS
         {
             if (topRows == null) return;
             foreach (Border b in topRows) b.IsVisible = v;
-            if (btnRows != null) btnRows.Content = v ? "Comandi ▴" : "Comandi ▾";
+            if (btnRows != null) btnRows.Content = Lang.T("Comandi") + (v ? " ▴" : " ▾");
             if (save) { cfg.Set("comandi_visibili", v); try { cfg.Save(); } catch { } }
         }
 
@@ -420,7 +486,7 @@ namespace YAMS
         void BuildTabs()
         {
             // --- Volta celeste
-            DockPanel p1 = Page("Volta celeste");
+            DockPanel p1 = Page(Lang.T("Volta celeste"));
             Grid sc = new Grid { ColumnDefinitions = new ColumnDefinitions("60*,40*") };
             p1.Children.Add(sc);
             // pianta: mappa con tratta, Hot, lobo, zone PREV, linea di scorrimento dello sciame e scala dei gradi
@@ -447,24 +513,24 @@ namespace YAMS
             };
             skySmall.AddHandler(InputElement.PointerReleasedEvent, onSmall, RoutingStrategies.Bubble, true);
             section = new SectionView();
-            section.Note = "segmenti = scie (±10 km attorno alla quota) orientate verso il radiante; più spessi = più probabili";
-            lvSky = MakeTable(new[] { "Sciame", "Sigla", "ZHR ora", "Azimut", "Elev.", "Effic. %", "Lato", "Punt. migliore", "Sorge", "Tramonta" },
+            section.Note = Lang.T("segmenti = scie (±10 km attorno alla quota) orientate verso il radiante; più spessi = più probabili");
+            lvSky = MakeTable(new[] { Lang.T("Sciame"), Lang.T("Sigla"), Lang.T("ZHR ora"), Lang.T("Azimut"), Lang.T("Elev."), Lang.T("Effic. %"), Lang.T("Lato"), Lang.T("Punt. migliore"), Lang.T("Sorge"), Lang.T("Tramonta") },
                               new double[] { 118, 42, 54, 52, 46, 54, 62, 98, 48, 56 });
             lvSky.RowClicked += i => { if (i >= 0 && i < lvSky.Rows.Count) SelectShower(lvSky.Rows[i].Cells[1]); };
-            chkHot = C("Direzioni Hot A / Hot B", true);
+            chkHot = C(Lang.T("Direzioni Hot A / Hot B"), true);
             WhenChanged(chkHot, ToggleButton.IsCheckedProperty, () =>
             {
                 sky.ShowHot = chkHot.IsChecked == true; skySmall.ShowHot = chkHot.IsChecked == true;
                 sky.InvalidateVisual(); skySmall.InvalidateVisual();
             });
-            chkMap = C("Mappa d'Europa", cfg.GetB("mostra_mappa", true));
+            chkMap = C(Lang.T("Mappa d'Europa"), cfg.GetB("mostra_mappa", true));
             WhenChanged(chkMap, ToggleButton.IsCheckedProperty, () =>
             {
                 sky.ShowMap = chkMap.IsChecked == true;
                 if (chkMap.IsChecked == true) chkTopView.IsChecked = true;
                 sky.InvalidateVisual();
             });
-            chkTopView = C("Vista dall'alto (E a destra)", cfg.GetB("vista_alto", true));
+            chkTopView = C(Lang.T("Vista dall'alto (E a destra)"), cfg.GetB("vista_alto", true));
             WhenChanged(chkTopView, ToggleButton.IsCheckedProperty, () =>
             {
                 sky.TopView = chkTopView.IsChecked == true; skySmall.TopView = chkTopView.IsChecked == true;
@@ -491,13 +557,13 @@ namespace YAMS
             sc.Children.Add(rt);
 
             // --- Flusso radar (subito dopo "Volta celeste")
-            DockPanel p3 = Page("Flusso radar");
-            btnFetch = B("Scarica adesso"); btnFetch.Click += (s, e) => StartFetch();
-            chkAuto = C("Aggiornamento automatico di tutte le fonti ogni 5 minuti", cfg.GetB("aggiornamento_automatico", true));
+            DockPanel p3 = Page(Lang.T("Flusso radar"));
+            btnFetch = B(Lang.T("Scarica adesso")); btnFetch.Click += (s, e) => StartFetch();
+            chkAuto = C(Lang.T("Aggiornamento automatico di tutte le fonti ogni 5 minuti"), cfg.GetB("aggiornamento_automatico", true));
             numExp = N(1, 4, Dm(cfg.GetD("esponente_lambda", 3)), 1, 0.1m, 50);
             numExp.ValueChanged += (s, e) => UpdateFluxTab();
             lblRadar = L("");
-            DockTop(p3, Row(btnFetch, chkAuto, L("Esponente λ (SM6FHZ)"), numExp, lblRadar));
+            DockTop(p3, Row(btnFetch, chkAuto, L(Lang.T("Esponente λ (SM6FHZ)")), numExp, lblRadar));
             lblScaleNote = new TextBlock { Foreground = Pal.B(Pal.OrangeText), TextWrapping = TextWrapping.Wrap, Margin = new Thickness(6, 4, 6, 4) };
             DockTop(p3, lblScaleNote);
             Grid tl = new Grid { ColumnDefinitions = new ColumnDefinitions("62*,38*"), RowDefinitions = new RowDefinitions("50*,50*") };
@@ -513,30 +579,30 @@ namespace YAMS
             p3.Children.Add(tl);
 
             // --- Calcolo dell'efficienza (ex "Efficienza 24 h")
-            DockPanel p2 = Page("Calcolo dell'efficienza");
+            DockPanel p2 = Page(Lang.T("Calcolo dell'efficienza"));
             // colpo d'occhio: quattro riquadri riassuntivi sopra il grafico
             // altezza minima 100: con caratteri grandi i riquadri crescono
             Grid glance = new Grid { ColumnDefinitions = new ColumnDefinitions("*,*,*,*"), MinHeight = 100, Margin = new Thickness(6, 6, 6, 2) };
-            Border c0 = Card("ORA MIGLIORE DEL GIORNO", Pal.Azure, out glBest);
-            Border c1 = Card("SCIAME PIÙ FAVOREVOLE", Pal.Yellow, out glShower);
-            Border c2 = Card("ADESSO", Pal.Green, out glNow);
-            Border c3 = Card("PREVISIONE SPERIMENTALE", Pal.Orange, out glFore);
+            Border c0 = Card(Lang.T("ORA MIGLIORE DEL GIORNO"), Pal.Azure, out glBest);
+            Border c1 = Card(Lang.T("SCIAME PIÙ FAVOREVOLE"), Pal.Yellow, out glShower);
+            Border c2 = Card(Lang.T("ADESSO"), Pal.Green, out glNow);
+            Border c3 = Card(Lang.T("PREVISIONE SPERIMENTALE"), Pal.Orange, out glFore);
             Grid.SetColumn(c0, 0); Grid.SetColumn(c1, 1); Grid.SetColumn(c2, 2); Grid.SetColumn(c3, 3);
             glance.Children.Add(c0); glance.Children.Add(c1); glance.Children.Add(c2); glance.Children.Add(c3);
             DockTop(p2, glance);
             lblAB = new TextBlock
             {
                 Foreground = Brushes.White, FontSize = 13, TextWrapping = TextWrapping.Wrap,
-                Text = "Le lettere accanto alla percentuale dicono da quale lato della tratta arriva la maggior parte delle riflessioni. " +
+                Text = Lang.T("Le lettere accanto alla percentuale dicono da quale lato della tratta arriva la maggior parte delle riflessioni. " +
                        "A = a SINISTRA guardando dalla tua stazione verso il corrispondente (zona Hot A); B = a DESTRA (zona Hot B). " +
                        "Conviene spostare l'antenna di 10-30° verso quel lato (side-scatter). Nessuna lettera = efficienza sotto il 5 %. " +
                        "Riga Σ: indice della tratta = somma di ZHR x efficienza di tutti gli sciami attivi. " +
-                       "Righe azzurre: confronto con la formula di DH9GCD (DF5HC 2018). ↑ = radiante sopra 70° dalla tua stazione (troppo alto)."
+                       "Righe azzurre: confronto con la formula di DH9GCD (DF5HC 2018). ↑ = radiante sopra 70° dalla tua stazione (troppo alto).")
             };
             DockTop(p2, new Border { Background = Pal.B(Pal.Panel3), Padding = new Thickness(8, 5, 8, 4), Child = lblAB });
             chart24 = new SimpleChart { Height = Chart24Height };
             DockTop(p2, chart24);
-            List<string> cols24 = new List<string> { "Sigla", "Sciame", "ZHR" };
+            List<string> cols24 = new List<string> { Lang.T("Sigla"), Lang.T("Sciame"), "ZHR" };
             // tabella oraria con caratteri al 150 % (richiesta dell'autore) e giustificata sulla larghezza della finestra:
             // larghezze di base compatte, poi colonne, righe e caratteri crescono insieme fino a riempire la larghezza
             List<double> w24 = new List<double> { 56, 200, 50 };
@@ -557,13 +623,13 @@ namespace YAMS
             BuildPrevTab();
 
             // --- Geometria e attenuazione
-            DockPanel p4 = Page("Geometria e attenuazione");
+            DockPanel p4 = Page(Lang.T("Geometria e attenuazione"));
             numPower = N(1, 2000, Dm(cfg.GetD("potenza_W", 400)), 0, 10, 65);
             numGain = N(0, 40, Dm(cfg.GetD("guadagno_dBi", 14)), 1, 0.5m, 55);
             numSens = N(-160, -90, Dm(cfg.GetD("sensibilita_dBm", -130)), 0, 1, 60);
             numQ = N(12, 16, Dm(cfg.GetD("densita_esponente_q", 14)), 1, 0.5m, 50);
-            DockTop(p4, Row(L("Potenza W"), numPower, L("Guadagno antenna dBi (tx = rx)"), numGain,
-                            L("Segnale minimo dBm"), numSens, L("Densita' scia q = 10^"), numQ, L("elettroni/m")));
+            DockTop(p4, Row(L(Lang.T("Potenza W")), numPower, L(Lang.T("Guadagno antenna dBi (tx = rx)")), numGain,
+                            L(Lang.T("Segnale minimo dBm")), numSens, L(Lang.T("Densita' scia q = 10^")), numQ, L(Lang.T("elettroni/m"))));
             numPower.ValueChanged += (s, e) => UpdateGeometry();
             numGain.ValueChanged += (s, e) => UpdateGeometry();
             numSens.ValueChanged += (s, e) => UpdateGeometry();
@@ -583,16 +649,16 @@ namespace YAMS
             p4.Children.Add(sg);
 
             // --- Sciami
-            DockPanel p5 = Page("Sciami");
+            DockPanel p5 = Page(Lang.T("Sciami"));
             // giustificata sulla larghezza: larghezze di base compatte, caratteri e righe crescono con la finestra
-            gridShowers = MakeTable(new[] { "Sigla", "Sciame", "Attività", "λ max", "Prossimo massimo (UTC)", "Fonte del massimo", "A.R.", "Decl.", "v km/s", "r", "ZHR", "Tipo", "Attivo oggi" },
+            gridShowers = MakeTable(new[] { Lang.T("Sigla"), Lang.T("Sciame"), Lang.T("Attività"), "λ max", Lang.T("Prossimo massimo (UTC)"), Lang.T("Fonte del massimo"), Lang.T("A.R."), Lang.T("Decl."), "v km/s", "r", "ZHR", Lang.T("Tipo"), Lang.T("Attivo oggi") },
                                     new double[] { 44, 170, 96, 56, 170, 130, 50, 50, 44, 36, 40, 90, 70 });
             gridShowers.Selectable = false;
             gridShowers.FitWidth = true;
             p5.Children.Add(gridShowers);
 
             // --- Fonti
-            DockPanel p6 = Page("Fonti");
+            DockPanel p6 = Page(Lang.T("Fonti"));
             txtSources = new SelectableTextBlock { FontSize = 13.5, Foreground = Pal.B(Pal.Fore), TextWrapping = TextWrapping.Wrap, Text = SourcesText() };
             p6.Children.Add(new ScrollViewer
             {
@@ -608,8 +674,8 @@ namespace YAMS
             BuildGridTab();
         }
 
-        // Titoli delle sezioni (righe in maiuscolo) in evidenza, etichette in azzurro tenue, valori in chiaro
-        static void StyleReport(SelectableTextBlock rt, string text)
+        // Titoli delle sezioni (le righe elencate in heads) in evidenza, etichette in azzurro tenue, valori in chiaro
+        static void StyleReport(SelectableTextBlock rt, string text, HashSet<string> heads)
         {
             IBrush head = Pal.B(Pal.Rgb(255, 190, 90));
             IBrush lab = Pal.B(Pal.Rgb(130, 180, 235));
@@ -619,11 +685,8 @@ namespace YAMS
             bool first = true;
             foreach (string line in lines)
             {
-                // titolo di sezione: la prima parola e' tutta in maiuscolo (es. "GEOMETRIA", "HOT", "BILANCIO")
-                int sp = line.IndexOf(' ');
-                string fw = sp > 0 ? line.Substring(0, sp) : line;
-                bool isHead = fw.Length >= 3;
-                foreach (char ch in fw) if (!char.IsLetter(ch) || !char.IsUpper(ch)) isHead = false;
+                // titolo di sezione: riga indicata da chi costruisce il testo (vale per tutte le lingue)
+                bool isHead = heads != null && heads.Contains(line);
                 if (isHead)
                 {
                     if (!first) inl.Add(new LineBreak());
@@ -664,17 +727,17 @@ namespace YAMS
         void Recalc()
         {
             LatLon home, dx;
-            if (!Astro.TryLocator(Up(txtHome), out home)) { status.Text = "Locator della stazione non valido"; return; }
-            if (!Astro.TryLocator(Up(txtDx), out dx)) { status.Text = "Locator del corrispondente non valido"; return; }
+            if (!Astro.TryLocator(Up(txtHome), out home)) { status.Text = Lang.T("Locator della stazione non valido"); return; }
+            if (!Astro.TryLocator(Up(txtDx), out dx)) { status.Text = Lang.T("Locator del corrispondente non valido"); return; }
             DateTime t0 = DateTime.Now;
             model = PathModel.Build(home, V(numHomeAlt) / 1000.0, dx, V(numDxAlt) / 1000.0, V(numLayer), V(numElev));
             sky.Model = model; sky.Station = home; sky.InvalidateHeat();
             skySmall.Model = model; skySmall.Station = home; section.Model = model;
             ApplyAntenna();
             status.Text = model.Valid
-                ? string.Format("Tratta calcolata: {0:F0} km, {1} punti di riflessione campionati in {2:F1} s. {3}",
+                ? Lang.F("Tratta calcolata: {0:F0} km, {1} punti di riflessione campionati in {2:F1} s. {3}",
                     model.DistKm, model.SamplePoints, (DateTime.Now - t0).TotalSeconds, model.Message)
-                : "Calcolo non riuscito: " + model.Message;
+                : Lang.F("Calcolo non riuscito: {0}", model.Message);
             UpdateSky(); Update24h(); UpdateGeometry(); UpdateShowerGrid(); UpdateFluxTab(); RefreshGrids();
             SaveConfig();
         }
@@ -689,12 +752,12 @@ namespace YAMS
             antHpbw = MsGeometry.HpbwFromGainDeg(antGainDbi);
             antHpbwV = MsGeometry.HpbwVerticalDeg(antGainDbi);
             double bl = V(numBoom) * f / 299.792458;
-            lblAnt.Text = string.Format("= {0:F1} λ  G {1:F1} dBi  lobo {2:F0}° oriz. / {3:F0}° vert.{4}", bl, antGainDbi, antHpbw, antHpbwV, bl < 2 ? " (stima poco precisa sotto 2 λ)" : "");
+            lblAnt.Text = Lang.F("= {0:F1} λ  G {1:F1} dBi  lobo {2:F0}° oriz. / {3:F0}° vert.{4}", bl, antGainDbi, antHpbw, antHpbwV, bl < 2 ? " " + Lang.T("(stima poco precisa sotto 2 λ)") : "");
             decimal gd = Dm(Math.Round(antGainDbi * 2) / 2.0);
             if (numGain != null && gd >= numGain.Minimum && gd <= numGain.Maximum) numGain.Value = gd;
             if (model == null || !model.Valid) return;
             double point = model.BearingHomeToDx;   // antenna sempre verso il DX
-            lblAntAz.Text = "Antenna az: " + point.ToString("F0") + "° (verso il DX)";
+            lblAntAz.Text = Lang.F("Antenna az: {0}° (verso il DX)", point.ToString("F0"));
             sky.AntennaAz = point; sky.HpbwDeg = antHpbw;
             skySmall.AntennaAz = point; skySmall.HpbwDeg = antHpbw;
             section.AntennaAz = point; section.HpbwDeg = antHpbw; section.HpbwVDeg = antHpbwV; section.LobeElevDeg = V(numElev);
@@ -703,13 +766,15 @@ namespace YAMS
             {
                 if (h == null) continue;
                 h.InLobe = Math.Abs(Astro.Norm180(h.BearingFromHome - point)) <= antHpbw / 2;
-                if (h.InLobe) inside.Add(h.Label);
+                if (h.InLobe) inside.Add(Lang.T(h.Label));
             }
             if (inside.Count > 0)
             {
-                lblLobeWarn.Text = "ATTENZIONE: " + string.Join(" e ", inside.ToArray()) + (inside.Count > 1 ? " entrano" : " entra") +
-                    " nel lobo dell'antenna (" + antHpbw.ToString("F0") + "° a -3 dB attorno a " + point.ToString("F0") + "°): con questo puntamento " +
-                    (inside.Count > 1 ? "sono gia' coperti" : "e' gia' coperto") + ". Segnati in grigio sulla mappa.";
+                lblLobeWarn.Text = inside.Count > 1
+                    ? Lang.F("ATTENZIONE: {0} e {1} entrano nel lobo dell'antenna ({2}° a -3 dB attorno a {3}°): con questo puntamento sono gia' coperti. Segnati in grigio sulla mappa.",
+                        inside[0], inside[1], antHpbw.ToString("F0"), point.ToString("F0"))
+                    : Lang.F("ATTENZIONE: {0} entra nel lobo dell'antenna ({1}° a -3 dB attorno a {2}°): con questo puntamento e' gia' coperto. Segnati in grigio sulla mappa.",
+                        inside[0], antHpbw.ToString("F0"), point.ToString("F0"));
                 boxLobeWarn.IsVisible = true;
                 status.Text = lblLobeWarn.Text;
             }
@@ -732,13 +797,13 @@ namespace YAMS
             if (btn == MouseButton.Right)
             {
                 txtHome.Text = loc;
-                status.Text = "Nuovo locator della stazione dalla mappa: " + loc;
+                status.Text = Lang.F("Nuovo locator della stazione dalla mappa: {0}", loc);
                 Recalc();
             }
             else if (btn == MouseButton.Left)
             {
                 txtDx.Text = loc;
-                status.Text = "Nuovo locator del corrispondente dalla mappa: " + loc;
+                status.Text = Lang.F("Nuovo locator del corrispondente dalla mappa: {0}", loc);
                 Recalc();
             }
         }
@@ -768,8 +833,8 @@ namespace YAMS
         {
             if (sky == null) return;
             DateTime t = SkyTimeUtc;
-            lblSkyTime.Text = TrackValue == 0 ? "Volta celeste: tempo reale"
-                : "Volta celeste: " + t.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture) + " UTC";
+            lblSkyTime.Text = TrackValue == 0 ? Lang.T("Volta celeste: tempo reale")
+                : Lang.F("Volta celeste: {0} UTC", t.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture));
             LatLon home; if (!Astro.TryLocator(Up(txtHome), out home)) return;
             sky.Station = home;
             sky.Marks.Clear();
@@ -808,11 +873,11 @@ namespace YAMS
                     }
                     prevEl = el;
                 }
-                if (!anyDown) { rise = "circumpolare"; set = ""; }
-                if (!anyUp) { rise = "sempre sotto"; set = ""; }
+                if (!anyDown) { rise = Lang.T("circumpolare"); set = ""; }
+                if (!anyUp) { rise = Lang.T("sempre sotto"); set = ""; }
                 sky.Marks.Add(m);
                 string[] cells = new string[10];
-                cells[0] = s.Name;
+                cells[0] = Lang.T(s.Name);
                 cells[1] = s.Code;
                 cells[2] = zhr >= 10 ? zhr.ToString("F0") : zhr.ToString("F1");
                 cells[3] = m.Az.ToString("F0");
@@ -848,8 +913,8 @@ namespace YAMS
             skySmall.InvalidateVisual(); section.InvalidateVisual();
             if (high.Count > 0)
             {
-                lblHighRad.Text = "RADIANTE TROPPO ALTO (sopra " + HighRadiantDeg.ToString("F0") + "°): " + string.Join(", ", high.ToArray()) +
-                    ". Le scie scendono quasi verticali e riflettono poco verso la tratta (DF5HC, DH9GCD).";
+                lblHighRad.Text = Lang.F("RADIANTE TROPPO ALTO (sopra {0}°): {1}. Le scie scendono quasi verticali e riflettono poco verso la tratta (DF5HC, DH9GCD).",
+                    HighRadiantDeg.ToString("F0"), string.Join(", ", high.ToArray()));
                 boxHighRad.IsVisible = true;
             }
             else boxHighRad.IsVisible = false;
@@ -858,7 +923,7 @@ namespace YAMS
             double wA = 0, wB = 0;
             foreach (RadiantMark rm in sky.Marks)
                 if (rm.El > 0 && rm.Zhr > 0) { double w = rm.Zhr * rm.Eff / 100.0; wA += w * rm.LeftFrac; wB += w * (1 - rm.LeftFrac); }
-            recommendText = "";
+            recommendText = ""; recommendShort = "";
             if (mv && model.HotA != null && model.HotB != null)
             {
                 model.HotA.Recommended = false; model.HotB.Recommended = false;
@@ -866,37 +931,39 @@ namespace YAMS
                 {
                     HotPoint rh = wA >= wB ? model.HotA : model.HotB;
                     rh.Recommended = true;
-                    recommendText = rh.Label + " consigliato ora: az. " + rh.BearingFromHome.ToString("F0") + "° (" +
-                        (100 * Math.Max(wA, wB) / (wA + wB)).ToString("F0") + "% delle riflessioni previste)";
+                    recommendText = Lang.F("{0} consigliato ora: az. {1}° ({2}% delle riflessioni previste)", Lang.T(rh.Label), rh.BearingFromHome.ToString("F0"),
+                        (100 * Math.Max(wA, wB) / (wA + wB)).ToString("F0"));
+                    recommendShort = Lang.F("{0} consigliato ora: az. {1}°", Lang.T(rh.Label), rh.BearingFromHome.ToString("F0"));
                 }
-                else recommendText = "Nessun Hot consigliato: sciami attivi quasi assenti in questo momento";
+                else recommendShort = recommendText = Lang.T("Nessun Hot consigliato: sciami attivi quasi assenti in questo momento");
             }
-            sky.Caption = "Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. " +
-                "Volta celeste a destra (Sorge/Tramonta in UTC del " + day0.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture) + "): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.";
-            lblMapCaption.Text = "Mappa: bordo = " + sky.MapRadiusKm.ToString("F0") + " km dalla stazione. " + sky.Caption;
+            sky.Caption = Lang.F("Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. " +
+                "Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.",
+                day0.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
+            lblMapCaption.Text = Lang.F("Mappa: bordo = {0} km dalla stazione. {1}", sky.MapRadiusKm.ToString("F0"), sky.Caption);
             sky.InvalidateVisual();
             if (mv)
             {
                 StringBuilder sb = new StringBuilder();
-                sb.AppendFormat("Tratta {0}: {1:F0} km, az. {2:F0}°\n", PathLabel(), model.DistKm, model.BearingHomeToDx);
-                sb.AppendFormat("Punto medio {0}, elev. per {1:F1} km: {2:F1}°\n", Astro.ToLocator(model.Mid), model.LayerKm, model.ElevToMidDeg);
+                sb.Append(Lang.F("Tratta {0}: {1:F0} km, az. {2:F0}°", PathLabel(), model.DistKm, model.BearingHomeToDx)).Append('\n');
+                sb.Append(Lang.F("Punto medio {0}, elev. per {1:F1} km: {2:F1}°", Astro.ToLocator(model.Mid), model.LayerKm, model.ElevToMidDeg)).Append('\n');
                 if (model.HotA != null)
                 {
-                    sb.AppendFormat("Hot A: az. {0:F0}° ({1:+0;-0}°)  {2}\n", model.HotA.BearingFromHome, model.HotA.SideScatterDeg, Astro.ToLocator(model.HotA.Pos));
-                    sb.AppendFormat("Hot B: az. {0:F0}° ({1:+0;-0}°)  {2}\n", model.HotB.BearingFromHome, model.HotB.SideScatterDeg, Astro.ToLocator(model.HotB.Pos));
-                    sb.Append(recommendText + " (in rosso sulla mappa)\n");
+                    sb.Append(Lang.F("Hot A: az. {0:F0}° ({1:+0;-0}°)  {2}", model.HotA.BearingFromHome, model.HotA.SideScatterDeg, Astro.ToLocator(model.HotA.Pos))).Append('\n');
+                    sb.Append(Lang.F("Hot B: az. {0:F0}° ({1:+0;-0}°)  {2}", model.HotB.BearingFromHome, model.HotB.SideScatterDeg, Astro.ToLocator(model.HotB.Pos))).Append('\n');
+                    sb.Append(Lang.F("{0} (in rosso sulla mappa)", recommendText)).Append('\n');
                 }
                 if (model.LimitA != null)
-                    sb.AppendFormat("Limiti zona comune: A {0:F0}° ({1:+0;-0}°), B {2:F0}° ({3:+0;-0}°)\n", model.LimitA.BearingFromHome, model.LimitA.SideScatterDeg, model.LimitB.BearingFromHome, model.LimitB.SideScatterDeg);
-                else sb.Append("Nessuna zona comune dello strato E (" + model.Message + ")\n");
-                sb.Append("Lato A = a sinistra della tratta, B = a destra\n");
-                sb.Append("Hot A/B: hot spot a " + PathModel.HotSpotOffsetKm.ToString("F0") + " km dal punto medio (AMS 203, W8WN, MSHV).\n");
-                sb.Append("Miglior puntamento per lo sciame: ORTOGONALE alla direzione\n");
-                sb.Append("di arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\n");
-                sb.Append("SM6FHZ). In pianta: linea gialla = scorrimento\n");
-                sb.Append("dello sciame, punti arancioni = puntamenti, ellissi\n");
-                sb.Append("PREV = scie piu' probabili adesso.\n");
-                sb.Append("Clic su un radiante: percorso con le ore UTC");
+                    sb.Append(Lang.F("Limiti zona comune: A {0:F0}° ({1:+0;-0}°), B {2:F0}° ({3:+0;-0}°)", model.LimitA.BearingFromHome, model.LimitA.SideScatterDeg, model.LimitB.BearingFromHome, model.LimitB.SideScatterDeg)).Append('\n');
+                else sb.Append(Lang.F("Nessuna zona comune dello strato E ({0})", model.Message)).Append('\n');
+                sb.Append(Lang.T("Lato A = a sinistra della tratta, B = a destra")).Append('\n');
+                sb.Append(Lang.F("Hot A/B: hot spot a {0} km dal punto medio (AMS 203, W8WN, MSHV).", PathModel.HotSpotOffsetKm.ToString("F0"))).Append('\n');
+                sb.Append(Lang.T("Miglior puntamento per lo sciame: ORTOGONALE alla direzione\n" +
+                                 "di arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\n" +
+                                 "SM6FHZ). In pianta: linea gialla = scorrimento\n" +
+                                 "dello sciame, punti arancioni = puntamenti, ellissi\n" +
+                                 "PREV = scie piu' probabili adesso.\n" +
+                                 "Clic su un radiante: percorso con le ore UTC"));
                 lblPathInfo.Text = sb.ToString();
             }
             if (sky.Selected != null) SelectInList(sky.Selected);
@@ -985,7 +1052,7 @@ namespace YAMS
             foreach (Shower s in act)
             {
                 string[] row = new string[27];
-                row[0] = s.Code; row[1] = s.Name;
+                row[0] = s.Code; row[1] = Lang.T(s.Name);
                 double zmax = 0;
                 double[] effs = new double[24];
                 double[] dh = new double[24];
@@ -1007,8 +1074,8 @@ namespace YAMS
                     {
                         bestScore = z * e / 100.0;
                         double raz, rel; Astro.AltAz(model.Home, v, out raz, out rel);
-                        bestShower = s.Code + " " + s.Name + "\nefficienza " + e.ToString("F0") + "% alle " + h.ToString("00") + ":30, lato " + sides[h] +
-                            "\npuntamento migliore " + Astro.Norm360(raz + 90).ToString("F0") + "° / " + Astro.Norm360(raz - 90).ToString("F0") + "°";
+                        bestShower = s.Code + " " + Lang.T(s.Name) + "\n" + Lang.F("efficienza {0}% alle {1}:30, lato {2}", e.ToString("F0"), h.ToString("00"), sides[h]) +
+                            "\n" + Lang.F("puntamento migliore {0}° / {1}°", Astro.Norm360(raz + 90).ToString("F0"), Astro.Norm360(raz - 90).ToString("F0"));
                     }
                     row[3 + h] = (e < 1 ? "" : e.ToString("F0") + (e >= 5 ? sides[h] : "")) + (tooHigh[h] ? "↑" : "");
                 }
@@ -1029,7 +1096,7 @@ namespace YAMS
                 rows.Add(new TableRow { Cells = drow, Fore = Pal.Azure, Italic = true, FontSize = 11 * Grid24Scale });
                 if (ns < 5)
                 {
-                    ChartSeries cs = new ChartSeries(); cs.Name = s.Code + " effic. %"; cs.Color = pal[ns]; cs.Values = effs;
+                    ChartSeries cs = new ChartSeries(); cs.Name = s.Code + " " + Lang.T("effic. %"); cs.Color = pal[ns]; cs.Values = effs;
                     chart24.Series.Add(cs);
                     // stessa curva con la formula di DH9GCD, a puntini
                     ChartSeries cd = new ChartSeries(); cd.Name = s.Code + " DH9GCD %"; cd.Color = pal[ns]; cd.Values = dh; cd.Dotted = true; cd.LineWidth = 1.4f;
@@ -1037,14 +1104,14 @@ namespace YAMS
                 }
             }
             string[] irow = new string[27];
-            irow[0] = "Σ"; irow[1] = "Indice tratta (ZHR×eff.)"; irow[2] = "";
+            irow[0] = "Σ"; irow[1] = Lang.T("Indice tratta (ZHR×eff.)"); irow[2] = "";
             for (int h = 0; h < 24; h++) irow[3 + h] = index[h].ToString("F1");
             rows.Add(new TableRow { Cells = irow, FontSize = 12 * Grid24Scale });
 
             // riga della previsione sperimentale (solo per le ore in cui esiste: oggi e in parte domani)
             bool anyFc = false;
             string[] frow = new string[27];
-            frow[0] = "~"; frow[1] = "Previsione " + PrevFreqMHz.ToString("F0") + " MHz (rifl./ora)"; frow[2] = "";
+            frow[0] = "~"; frow[1] = Lang.F("Previsione {0} MHz (rifl./ora)", PrevFreqMHz.ToString("F0")); frow[2] = "";
             for (int h = 0; h < 24; h++)
             {
                 double fc = ForecastAt(day.AddHours(h));
@@ -1060,28 +1127,28 @@ namespace YAMS
             // colpo d'occhio
             int hb = 0; for (int h = 1; h < 24; h++) if (index[h] > index[hb]) hb = h;
             glBest.Text = index[hb] > 0
-                ? string.Format("{0:00}:00-{0:00}:59 UTC\nindice della tratta {1:F1}\nlato prevalente {2} ({3:F0}%)", hb, index[hb], wA[hb] >= wB[hb] ? "A" : "B", 100 * Math.Max(wA[hb], wB[hb]) / Math.Max(1e-9, wA[hb] + wB[hb]))
-                : "nessuno sciame utile in questo giorno";
+                ? Lang.F("{0:00}:00-{0:00}:59 UTC\nindice della tratta {1:F1}\nlato prevalente {2} ({3:F0}%)", hb, index[hb], wA[hb] >= wB[hb] ? "A" : "B", 100 * Math.Max(wA[hb], wB[hb]) / Math.Max(1e-9, wA[hb] + wB[hb]))
+                : Lang.T("nessuno sciame utile in questo giorno");
             glShower.Text = bestShower;
             DateTime nowU = DateTime.UtcNow;
             if (nowU.Date == day.Date)
             {
                 int hn = nowU.Hour;
-                glNow.Text = string.Format("{0:00}:{1:00} UTC - indice {2:F1}\nlato prevalente {3}\n{4}", hn, nowU.Minute, index[hn],
-                    index[hn] > 0.05 ? (wA[hn] >= wB[hn] ? "A" : "B") : "-", recommendText.Length > 0 ? recommendText.Split('(')[0].Trim() : "");
+                glNow.Text = Lang.F("{0:00}:{1:00} UTC - indice {2:F1}\nlato prevalente {3}\n{4}", hn, nowU.Minute, index[hn],
+                    index[hn] > 0.05 ? (wA[hn] >= wB[hn] ? "A" : "B") : "-", recommendShort.Trim());
             }
-            else glNow.Text = "il giorno scelto non è oggi";
+            else glNow.Text = Lang.T("il giorno scelto non è oggi");
             DateTime hNow = new DateTime(nowU.Year, nowU.Month, nowU.Day, nowU.Hour, 0, 0, DateTimeKind.Utc);
             double f1 = ForecastAt(hNow);
             double f2 = ForecastAt(hNow.AddHours(1));
             double f3 = ForecastAt(hNow.AddHours(2));
-            glFore.Text = f1 < 0 ? "nessun dato radar: vedi Flusso radar"
-                : string.Format("{0:F0} MHz, riflessioni/ora previste\nora {1:F0} - tra 1 h {2} - tra 2 h {3}\nsperimentale (Collm, regole SM6FHZ)", PrevFreqMHz, f1,
+            glFore.Text = f1 < 0 ? Lang.T("nessun dato radar: vedi Flusso radar")
+                : Lang.F("{0:F0} MHz, riflessioni/ora previste\nora {1:F0} - tra 1 h {2} - tra 2 h {3}\nsperimentale (Collm, regole SM6FHZ)", PrevFreqMHz, f1,
                     f2 < 0 ? "-" : f2.ToString("F0"), f3 < 0 ? "-" : f3.ToString("F0"));
-            ChartSeries ix = new ChartSeries(); ix.Name = "indice tratta"; ix.Color = Pal.Rgb(90, 110, 200); ix.Values = index; ix.Bars = true; ix.RightAxis = true;
+            ChartSeries ix = new ChartSeries(); ix.Name = Lang.T("indice tratta"); ix.Color = Pal.Rgb(90, 110, 200); ix.Values = index; ix.Bars = true; ix.RightAxis = true;
             chart24.Series.Insert(0, ix);
-            chart24.Title = "Efficienza oraria per " + PathLabel() + " del " + day.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture) + " (UTC, valori a metà ora)";
-            chart24.YLabel = "efficienza %"; chart24.Y2Label = "indice"; chart24.YMaxFixed = 100;
+            chart24.Title = Lang.F("Efficienza oraria per {0} del {1} (UTC, valori a metà ora)", PathLabel(), day.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
+            chart24.YLabel = Lang.T("efficienza %"); chart24.Y2Label = Lang.T("indice"); chart24.YMaxFixed = 100;
             string[] xl = new string[24]; for (int h = 0; h < 24; h++) xl[h] = h.ToString("00");
             chart24.XLabels = xl;
             chart24.MarkIndex = day.Date == DateTime.UtcNow.Date ? DateTime.UtcNow.Hour : -1;
@@ -1094,50 +1161,53 @@ namespace YAMS
             double f = BandMHz;
             double q = Math.Pow(10, V(numQ));
             StringBuilder sb = new StringBuilder();
-            sb.Append("GEOMETRIA DELLA TRATTA (Terra sferica, R = 6372,7955 km)\n");
-            sb.AppendFormat("Stazione        {0}   quota {1:F0} m\n", Up(txtHome), V(numHomeAlt));
-            sb.AppendFormat("Corrispondente  {0}   quota {1:F0} m\n", Up(txtDx), V(numDxAlt));
-            sb.AppendFormat("Distanza        {0:F0} km   azimut {1:F1}°   (dal corrispondente {2:F1}°)\n", model.DistKm, model.BearingHomeToDx, model.BearingDxToHome);
-            sb.AppendFormat("Punto medio     {0}  ({1:F2}N {2:F2}E)\n", Astro.ToLocator(model.Mid), model.Mid.Lat, model.Mid.Lon);
-            sb.AppendFormat("Quota scie      {0:F1} km (strato E){1}\n", model.LayerKm, collm != null && chkLayerRadar.IsChecked == true ? "  <- moda misurata dal radar Collm" : "");
-            sb.AppendFormat("Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)\n", model.ElevToMidDeg);
-            if (model.ElevToMidDeg < 0) sb.Append("  -> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto\n");
+            HashSet<string> heads = new HashSet<string>();   // righe dei titoli di sezione (evidenziate)
+            Action<string> head = t => { heads.Add(t); sb.Append(t).Append('\n'); };
+            Action<string> line = t => sb.Append(t).Append('\n');
+            head(Lang.T("GEOMETRIA DELLA TRATTA (Terra sferica, R = 6372,7955 km)"));
+            line(Lang.F("Stazione        {0}   quota {1:F0} m", Up(txtHome), V(numHomeAlt)));
+            line(Lang.F("Corrispondente  {0}   quota {1:F0} m", Up(txtDx), V(numDxAlt)));
+            line(Lang.F("Distanza        {0:F0} km   azimut {1:F1}°   (dal corrispondente {2:F1}°)", model.DistKm, model.BearingHomeToDx, model.BearingDxToHome));
+            line(Lang.F("Punto medio     {0}  ({1:F2}N {2:F2}E)", Astro.ToLocator(model.Mid), model.Mid.Lat, model.Mid.Lon));
+            line(Lang.F("Quota scie      {0:F1} km (strato E){1}", model.LayerKm, collm != null && chkLayerRadar.IsChecked == true ? "  " + Lang.T("<- moda misurata dal radar Collm") : ""));
+            line(Lang.F("Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)", model.ElevToMidDeg));
+            if (model.ElevToMidDeg < 0) line("  " + Lang.T("-> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto"));
             sb.Append("\n");
-            sb.Append("HOT A / HOT B (hot spot classici, per il puntamento d'antenna)\n");
-            sb.AppendFormat("Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta (AMS Bulletin 203 e W8WN: 50-150 km; come MSHV)\n", PathModel.HotSpotOffsetKm);
+            head(Lang.T("HOT A / HOT B (hot spot classici, per il puntamento d'antenna)"));
+            line(Lang.F("Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta (AMS Bulletin 203 e W8WN: 50-150 km; come MSHV)", PathModel.HotSpotOffsetKm));
             foreach (HotPoint h in new HotPoint[] { model.HotA, model.HotB })
             {
                 if (h == null) continue;
-                sb.AppendFormat("{0}: {1}  az. da me {2:F1}° (scarto {3:+0.0;-0.0}° dalla direzione diretta), dal corrispondente {4:F0}°, distanza {5:F0} km, elevazione {6:F1}°\n",
-                    h.Label, Astro.ToLocator(h.Pos), h.BearingFromHome, h.SideScatterDeg, h.BearingFromDx, h.DistFromHome, h.ElevFromHome);
+                line(Lang.F("{0}: {1}  az. da me {2:F1}° (scarto {3:+0.0;-0.0}° dalla direzione diretta), dal corrispondente {4:F0}°, distanza {5:F0} km, elevazione {6:F1}°",
+                    Lang.T(h.Label), Astro.ToLocator(h.Pos), h.BearingFromHome, h.SideScatterDeg, h.BearingFromDx, h.DistFromHome, h.ElevFromHome));
             }
             sb.Append("\n");
-            sb.Append("LIMITI DELLA ZONA COMUNE (incroci delle curve dove l'orizzonte di ciascuna stazione incontra lo strato E, articolo)\n");
-            sb.AppendFormat("Portata alla quota delle scie con lobo a {0:F1}°: {1:F0} km\n", model.MinElevDeg, model.HotRadiusKm);
+            head(Lang.T("LIMITI DELLA ZONA COMUNE (incroci delle curve dove l'orizzonte di ciascuna stazione incontra lo strato E, articolo)"));
+            line(Lang.F("Portata alla quota delle scie con lobo a {0:F1}°: {1:F0} km", model.MinElevDeg, model.HotRadiusKm));
             if (model.LimitA != null)
             {
                 foreach (HotPoint h in new HotPoint[] { model.LimitA, model.LimitB })
                 {
                     if (h == null) continue;
-                    sb.AppendFormat("{0}: {1}  az. da me {2:F0}° (scarto {3:+0;-0}°), dal corrispondente {4:F0}°, distanza {5:F0} km\n",
-                        h.Label, Astro.ToLocator(h.Pos), h.BearingFromHome, h.SideScatterDeg, h.BearingFromDx, h.DistFromHome);
+                    line(Lang.F("{0}: {1}  az. da me {2:F0}° (scarto {3:+0;-0}°), dal corrispondente {4:F0}°, distanza {5:F0} km",
+                        Lang.T(h.Label), Astro.ToLocator(h.Pos), h.BearingFromHome, h.SideScatterDeg, h.BearingFromDx, h.DistFromHome));
                 }
-                sb.Append("Sono i bordi piu' lontani del cielo visto da entrambe le stazioni, non i punti da puntare.\n");
+                line(Lang.T("Sono i bordi piu' lontani del cielo visto da entrambe le stazioni, non i punti da puntare."));
             }
-            else sb.Append(model.Message + "\n");
-            sb.AppendFormat("Antenna Yagi: boom {0:F2} m = {1:F2} lambda a {2:F0} MHz -> guadagno {3:F1} dBi (curva DL6WU),\n" +
-                            "  lobo a -3 dB {4:F0}° orizzontale / {5:F0}° verticale (Kraus corretto con le simulazioni NEC di W4RNL)\n",
-                V(numBoom), V(numBoom) * f / 299.792458, f, antGainDbi, antHpbw, antHpbwV);
+            else line(model.Message);
+            line(Lang.F("Antenna Yagi: boom {0:F2} m = {1:F2} lambda a {2:F0} MHz -> guadagno {3:F1} dBi (curva DL6WU),\n" +
+                        "  lobo a -3 dB {4:F0}° orizzontale / {5:F0}° verticale (Kraus corretto con le simulazioni NEC di W4RNL)",
+                V(numBoom), V(numBoom) * f / 299.792458, f, antGainDbi, antHpbw, antHpbwV));
             if (model.HotA != null && model.HotB != null)
-                sb.AppendFormat("Puntamento {0:F0}°: Hot A {1}, Hot B {2}\n", sky.AntennaAz,
-                    model.HotA.InLobe ? "DENTRO il lobo" : "fuori dal lobo", model.HotB.InLobe ? "DENTRO il lobo" : "fuori dal lobo");
+                line(Lang.F("Puntamento {0:F0}°: Hot A {1}, Hot B {2}", sky.AntennaAz,
+                    model.HotA.InLobe ? Lang.T("DENTRO il lobo") : Lang.T("fuori dal lobo"), model.HotB.InLobe ? Lang.T("DENTRO il lobo") : Lang.T("fuori dal lobo")));
             sb.Append("\n");
-            sb.Append("ATTENUAZIONE DI TRATTA (scia sottodensa, McKinley 1961; guadagni d'antenna esclusi)\n");
-            sb.AppendFormat("Densita' della scia q = {0:E1} elettroni/m. Riferimenti dell'articolo a 144 MHz: 182 dB minimo (GM8JBJ), 200 dB medio (OH5IY)\n", q);
-            sb.Append("Punto di riflessione          28 MHz   50 MHz   70 MHz  144 MHz  222 MHz  432 MHz\n");
+            head(Lang.T("ATTENUAZIONE DI TRATTA (scia sottodensa, McKinley 1961; guadagni d'antenna esclusi)"));
+            line(Lang.F("Densita' della scia q = {0:E1} elettroni/m. Riferimenti dell'articolo a 144 MHz: 182 dB minimo (GM8JBJ), 200 dB medio (OH5IY)", q));
+            line(Lang.T("Punto di riflessione").PadRight(30) + "28 MHz   50 MHz   70 MHz  144 MHz  222 MHz  432 MHz");
             List<KeyValuePair<string, LatLon>> pts = new List<KeyValuePair<string, LatLon>>();
-            pts.Add(new KeyValuePair<string, LatLon>("Punto medio (forward)", model.Mid));
-            if (model.HotA != null && model.HotB != null) { pts.Add(new KeyValuePair<string, LatLon>("Hot A", model.HotA.Pos)); pts.Add(new KeyValuePair<string, LatLon>("Hot B", model.HotB.Pos)); }
+            pts.Add(new KeyValuePair<string, LatLon>(Lang.T("Punto medio (forward)"), model.Mid));
+            if (model.HotA != null && model.HotB != null) { pts.Add(new KeyValuePair<string, LatLon>(Lang.T("Hot A"), model.HotA.Pos)); pts.Add(new KeyValuePair<string, LatLon>(Lang.T("Hot B"), model.HotB.Pos)); }
             foreach (KeyValuePair<string, LatLon> kv in pts)
             {
                 sb.Append(kv.Key.PadRight(28));
@@ -1154,17 +1224,17 @@ namespace YAMS
             double eirp = pdbm + gain - 2.15;
             double rx = eirp - lossMid + gain - 2.15;
             sb.Append("\n");
-            sb.AppendFormat("BILANCIO A {0:F0} MHz (punto medio)\n", f);
-            sb.AppendFormat("Potenza {0:F0} W = {1:F1} dBm, EIRP = {2:F1} dBm (guadagno in dBd = dBi - 2,15)\n", power, pdbm, eirp);
-            sb.AppendFormat("Attenuazione {0:F1} dB -> segnale in antenna {1:F1} dBm, minimo ricevibile {2:F0} dBm, margine {3:+0.0;-0.0} dB\n",
-                lossMid, rx, sens, rx - sens);
-            sb.AppendFormat("Con l'attenuazione media di OH5IY (200 dB a 144 MHz, scalata con λ³: {0:F1} dB a {1:F0} MHz) il margine sarebbe {2:+0.0;-0.0} dB\n",
-                200 + 30 * Math.Log10(f / 144.0), f, eirp - (200 + 30 * Math.Log10(f / 144.0)) + gain - 2.15 - sens);
+            head(Lang.F("BILANCIO A {0:F0} MHz (punto medio)", f));
+            line(Lang.F("Potenza {0:F0} W = {1:F1} dBm, EIRP = {2:F1} dBm (guadagno in dBd = dBi - 2,15)", power, pdbm, eirp));
+            line(Lang.F("Attenuazione {0:F1} dB -> segnale in antenna {1:F1} dBm, minimo ricevibile {2:F0} dBm, margine {3:+0.0;-0.0} dB",
+                lossMid, rx, sens, rx - sens));
+            line(Lang.F("Con l'attenuazione media di OH5IY (200 dB a 144 MHz, scalata con λ³: {0:F1} dB a {1:F0} MHz) il margine sarebbe {2:+0.0;-0.0} dB",
+                200 + 30 * Math.Log10(f / 144.0), f, eirp - (200 + 30 * Math.Log10(f / 144.0)) + gain - 2.15 - sens));
             sb.Append("\n");
-            sb.Append("REGOLE SPERIMENTALI TRA LE BANDE (SM6FHZ, VUSHF 2025)\n");
-            sb.AppendFormat("Rispetto a 144 MHz: numero/intensità x {0:F3} ({1:+0.0;-0.0} dB), durata x {2:F2}. Ping massimo IARU a {3:F0} MHz: {4:F0} ms\n",
-                MsGeometry.CountScale(144, f, 3), 10 * Math.Log10(MsGeometry.CountScale(144, f, 3)), MsGeometry.DurationScale(144, f), f, MsGeometry.PingMaxMs(f));
-            StyleReport(txtGeo, sb.ToString());
+            head(Lang.T("REGOLE SPERIMENTALI TRA LE BANDE (SM6FHZ, VUSHF 2025)"));
+            line(Lang.F("Rispetto a 144 MHz: numero/intensità x {0:F3} ({1:+0.0;-0.0} dB), durata x {2:F2}. Ping massimo IARU a {3:F0} MHz: {4:F0} ms",
+                MsGeometry.CountScale(144, f, 3), 10 * Math.Log10(MsGeometry.CountScale(144, f, 3)), MsGeometry.DurationScale(144, f), f, MsGeometry.PingMaxMs(f)));
+            StyleReport(txtGeo, sb.ToString(), heads);
 
             // curve dell'elevazione (come Immagine 8 dell'articolo)
             chartElev.Series.Clear();
@@ -1179,8 +1249,8 @@ namespace YAMS
                 chartElev.Series.Add(s);
             }
             chartElev.XLabels = xl; chartElev.XLabelEvery = 4; chartElev.YMaxFixed = 90;
-            chartElev.Title = "Elevazione d'antenna in funzione della distanza dallo scatter point";
-            chartElev.YLabel = "gradi"; chartElev.InvalidateVisual();
+            chartElev.Title = Lang.T("Elevazione d'antenna in funzione della distanza dallo scatter point");
+            chartElev.YLabel = Lang.T("gradi"); chartElev.InvalidateVisual();
         }
 
         void UpdateShowerGrid()
@@ -1190,15 +1260,15 @@ namespace YAMS
             DateTime now = DateTime.UtcNow;
             foreach (Shower s in Catalog.Showers)
             {
-                string peak = "varie (tab. 6 IMO)", src = "IMO";
+                string peak = Lang.T("varie (tab. 6 IMO)"), src = "IMO";
                 if (!s.IsAntihelion) s.NextPeak(now, out peak, out src);
                 string[] cells = {
-                    s.Code, s.Name,
+                    s.Code, Lang.T(s.Name),
                     string.Format("{0:00}/{1:00} - {2:00}/{3:00}", s.StartDay, s.StartMonth, s.EndDay, s.EndMonth),
                     s.IsAntihelion ? "-" : s.LambdaMax.ToString("F2"), peak ?? "", src ?? "",
-                    s.IsAntihelion ? "mobile" : s.Ra.ToString("F0") + "°", s.IsAntihelion ? "mobile" : s.Dec.ToString("+0;-0") + "°",
-                    s.V.ToString("F0"), s.PopIndex.ToString("F1"), s.Zhr > 0 ? s.Zhr.ToString("F0") : "var.",
-                    s.Type == "R" ? "radio, diurno" : "visuale", s.IsActive(now) ? "sì" : "" };
+                    s.IsAntihelion ? Lang.T("mobile") : s.Ra.ToString("F0") + "°", s.IsAntihelion ? Lang.T("mobile") : s.Dec.ToString("+0;-0") + "°",
+                    s.V.ToString("F0"), s.PopIndex.ToString("F1"), s.Zhr > 0 ? s.Zhr.ToString("F0") : Lang.T("var."),
+                    s.Type == "R" ? Lang.T("radio, diurno") : Lang.T("visuale"), s.IsActive(now) ? Lang.T("sì") : "" };
                 rows.Add(new TableRow { Cells = cells, Tag = s.Code });
             }
             gridShowers.Rows = rows;
@@ -1211,7 +1281,7 @@ namespace YAMS
             if (collmSrc != null && File.Exists(collmSrc.LocalFile))
             {
                 collmSrc.LastModifiedUtc = File.GetLastWriteTimeUtc(collmSrc.LocalFile);
-                collmSrc.Status = "copia locale del " + collmSrc.LastModifiedUtc.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture) + " UTC";
+                collmSrc.Status = Lang.F("copia locale del {0} UTC", collmSrc.LastModifiedUtc.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture));
                 try { collm = RadarFlux.ParseCollm(collmSrc.LocalFile, collmSrc.LastModifiedUtc); } catch { collm = null; }
                 ShowImage(picCollm, collmSrc.LocalFile);
                 ApplyRadarLayer();
@@ -1241,7 +1311,7 @@ namespace YAMS
             fetching = true;
             lastFetchUtc = DateTime.UtcNow;
             btnFetch.IsEnabled = false;
-            status.Text = "Controllo le fonti di dati esterne...";
+            status.Text = Lang.T("Controllo le fonti di dati esterne...");
             string obs = (txtRmobObs.Text ?? "").Trim();
             bool doRmob = (forceRmob || chkRmobAuto.IsChecked == true) && obs.Length > 0;
             string rmobUrl = doRmob ? RmobUrl(DateTime.UtcNow) : null;
@@ -1269,7 +1339,7 @@ namespace YAMS
                                 parsed = RadarFlux.ParseCollm(s.LocalFile, s.LastModifiedUtc);
                                 RadarFlux.Archive(dataDir, parsed, s.FreqMHz);
                             }
-                            catch (Exception ex) { msg += "(lettura Collm: " + ex.Message + ") "; }
+                            catch (Exception ex) { msg += Lang.F("(lettura Collm: {0})", ex.Message) + " "; }
                         }
                     }
                     if (doRmob)
@@ -1282,10 +1352,10 @@ namespace YAMS
                         {
                             try { rm = ParseRmob(rmobFile, out rmMsg); } catch (Exception ex) { rmMsg = ex.Message; }
                         }
-                        msg += "RMOB: " + (r == 1 ? "nuovo dato" : r == 0 ? "invariato" : "errore " + err);
+                        msg += "RMOB: " + (r == 1 ? Lang.T("nuovo dato") : r == 0 ? Lang.T("invariato") : Lang.F("errore {0}", err));
                     }
                 }
-                catch (Exception ex) { msg += "errore: " + ex.Message; }
+                catch (Exception ex) { msg += Lang.F("errore: {0}", ex.Message); }
                 bool offline = attempts > 0 && offlineCount == attempts;
                 Dispatcher.UIThread.Post(() => FetchDone(parsed, rm, obs, offline, msg));
             });
@@ -1295,28 +1365,29 @@ namespace YAMS
         void FetchDone(CollmData parsed, Dictionary<DateTime, double> rm, string obs, bool offline, string msg)
         {
             fetching = false; btnFetch.IsEnabled = true;
+            if (replaced) return;   // finestra gia' sostituita (cambio di lingua): la nuova scarica da se'
             if (parsed != null) collm = parsed;
             if (rm != null && rm.Count > 0)
             {
                 rmobCounts = rm; rmobName = obs;
-                lblRmob.Text = "RMOB " + rmobName + ": " + rm.Count + " ore lette alle " + DateTime.UtcNow.ToString("HH:mm", CultureInfo.InvariantCulture) + " UTC";
+                lblRmob.Text = Lang.F("RMOB {0}: {1} ore lette alle {2} UTC", rmobName, rm.Count, DateTime.UtcNow.ToString("HH:mm", CultureInfo.InvariantCulture));
             }
             if (collmSrc != null && File.Exists(collmSrc.LocalFile)) ShowImage(picCollm, collmSrc.LocalFile);
             if (sodaSrc != null && File.Exists(sodaSrc.LocalFile)) ShowImage(picSoda, sodaSrc.LocalFile);
             if (offline)
             {
-                status.Text = "CONNESSIONE INTERNET ASSENTE: dati esterni non aggiornati (nuovo tentativo tra 5 minuti)";
+                status.Text = Lang.T("CONNESSIONE INTERNET ASSENTE: dati esterni non aggiornati (nuovo tentativo tra 5 minuti)");
                 status.Foreground = Pal.B(Pal.Red);
                 if (!offlineNotified)
                 {
                     offlineNotified = true;
-                    _ = Dialogs.Message(this, "YA-MS - nessuna connessione",
-                        "Connessione internet assente.\n\nI dati dei radar e di RMOB non possono essere aggiornati: il programma usa gli ultimi dati salvati e riprova da solo ogni 5 minuti.");
+                    _ = Dialogs.Message(this, Lang.T("YA-MS - nessuna connessione"),
+                        Lang.T("Connessione internet assente.\n\nI dati dei radar e di RMOB non possono essere aggiornati: il programma usa gli ultimi dati salvati e riprova da solo ogni 5 minuti."));
                 }
                 return;
             }
             status.Foreground = Pal.B(Pal.Muted);
-            status.Text = (offlineNotified ? "Connessione ripristinata. " : "") + msg;
+            status.Text = (offlineNotified ? Lang.T("Connessione ripristinata.") + " " : "") + msg;
             offlineNotified = false;
             bool changed = ApplyRadarLayer();
             UpdateFluxTab();
@@ -1339,41 +1410,41 @@ namespace YAMS
             if (chartFlux == null) return;
             double f = BandMHz, k = V(numExp);
             double fr = collmSrc != null && collmSrc.FreqMHz > 0 ? collmSrc.FreqMHz : 36.2;
-            lblRadar.Text = (collmSrc != null ? "Collm: " + collmSrc.Status : "Nessuna fonte Collm in fonti_radar.csv")
+            lblRadar.Text = (collmSrc != null ? "Collm: " + collmSrc.Status : Lang.T("Nessuna fonte Collm in fonti_radar.csv"))
                 + (collm != null && collm.ScaleNote.Length > 0 ? " - " + collm.ScaleNote : "");
             double scale = MsGeometry.CountScale(fr, f, k);
-            lblScaleNote.Text = string.Format(
+            lblScaleNote.Text = Lang.F(
                 "Stima sperimentale (regole SM6FHZ): meteore/ora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durata dei ping x {4:F3}. " +
                 "Ping massimo IARU a {0:F0} MHz: {5:F0} ms. Valori indicativi, da confrontare con l'esperienza in banda.{6}",
                 f, fr, k, scale, MsGeometry.DurationScale(fr, f), MsGeometry.PingMaxMs(f),
-                collm != null && !string.IsNullOrEmpty(collm.Problem) ? "\nATTENZIONE: " + collm.Problem : "");
+                collm != null && !string.IsNullOrEmpty(collm.Problem) ? "\n" + Lang.F("ATTENZIONE: {0}", collm.Problem) : "");
             chartFlux.Series.Clear(); chartHeight.Series.Clear();
             if (collm == null)
             {
-                chartFlux.Title = "Flusso radar: nessun dato. Premi \"Scarica adesso\".";
+                chartFlux.Title = Lang.T("Flusso radar: nessun dato. Premi \"Scarica adesso\".");
                 chartFlux.InvalidateVisual(); chartHeight.InvalidateVisual(); UpdatePrevTab(); return;
             }
             string[] xl = new string[48];
             for (int i = 0; i < 48; i++) xl[i] = (i % 24).ToString("00");
             double[] est = new double[48];
             for (int i = 0; i < 48; i++) est[i] = collm.Valid[i] < 0 ? -1 : collm.Valid[i] * scale;
-            ChartSeries a = new ChartSeries(); a.Name = "Collm " + fr.ToString("F1") + " MHz (validi)"; a.Color = Pal.Rgb(0, 230, 255); a.Values = collm.Valid; a.Bars = true;
-            ChartSeries r = new ChartSeries(); r.Name = "scartati"; r.Color = Pal.Rgb(230, 40, 40); r.Values = collm.Rejected; r.Bars = true;
-            ChartSeries b = new ChartSeries(); b.Name = "stima a " + f.ToString("F0") + " MHz (scala a destra)"; b.Color = Pal.Rgb(255, 170, 40); b.Values = est; b.RightAxis = true; b.LineWidth = 6f;   // spessore triplo
+            ChartSeries a = new ChartSeries(); a.Name = Lang.F("Collm {0} MHz (validi)", fr.ToString("F1")); a.Color = Pal.Rgb(0, 230, 255); a.Values = collm.Valid; a.Bars = true;
+            ChartSeries r = new ChartSeries(); r.Name = Lang.T("scartati"); r.Color = Pal.Rgb(230, 40, 40); r.Values = collm.Rejected; r.Bars = true;
+            ChartSeries b = new ChartSeries(); b.Name = Lang.F("stima a {0} MHz (scala a destra)", f.ToString("F0")); b.Color = Pal.Rgb(255, 170, 40); b.Values = est; b.RightAxis = true; b.LineWidth = 6f;   // spessore triplo
             chartFlux.Series.Add(a); chartFlux.Series.Add(r); chartFlux.Series.Add(b);
             chartFlux.XLabels = xl; chartFlux.XLabelEvery = 3;
-            chartFlux.Title = "Meteore/ora - ieri " + collm.DayToday.AddDays(-1).ToString("dd/MM", CultureInfo.InvariantCulture) + " e oggi " + collm.DayToday.ToString("dd/MM", CultureInfo.InvariantCulture) + " (UTC)";
-            chartFlux.YLabel = "meteore/ora radar"; chartFlux.Y2Label = "meteore/ora stimate";
+            chartFlux.Title = Lang.F("Meteore/ora - ieri {0} e oggi {1} (UTC)", collm.DayToday.AddDays(-1).ToString("dd/MM", CultureInfo.InvariantCulture), collm.DayToday.ToString("dd/MM", CultureInfo.InvariantCulture));
+            chartFlux.YLabel = Lang.T("meteore/ora radar"); chartFlux.Y2Label = Lang.T("meteore/ora stimate");
             int nowIdx = (int)Math.Floor((DateTime.UtcNow - collm.DayToday.AddDays(-1)).TotalHours);
             chartFlux.MarkIndex = nowIdx >= 0 && nowIdx < 48 ? nowIdx : -1;
             chartFlux.InvalidateVisual();
 
             string[] hl = new string[40]; for (int i = 0; i < 40; i++) hl[i] = (70 + i).ToString();
-            ChartSeries h = new ChartSeries(); h.Name = "meteore per km di quota"; h.Color = Pal.Rgb(255, 230, 0); h.Values = collm.HeightCounts; h.Bars = true;
+            ChartSeries h = new ChartSeries(); h.Name = Lang.T("meteore per km di quota"); h.Color = Pal.Rgb(255, 230, 0); h.Values = collm.HeightCounts; h.Bars = true;
             chartHeight.Series.Add(h); chartHeight.XLabels = hl; chartHeight.XLabelEvery = 5;
-            chartHeight.Title = string.Format("Quote delle scie (Collm): più frequente {0:F1} km, media {1:F1}, mediana {2:F1}, dev. std {3:F1} km",
+            chartHeight.Title = Lang.F("Quote delle scie (Collm): più frequente {0:F1} km, media {1:F1}, mediana {2:F1}, dev. std {3:F1} km",
                 collm.HeightMode, collm.HeightMean, collm.HeightMedian, collm.HeightSd);
-            chartHeight.YLabel = "meteore"; chartHeight.InvalidateVisual();
+            chartHeight.YLabel = Lang.T("meteore"); chartHeight.InvalidateVisual();
             UpdatePrevTab();
         }
 
@@ -1413,6 +1484,7 @@ namespace YAMS
             cfg.Set("boom_m", V(numBoom));
             cfg.Set("hot_spot_km", V(numHotKm));
             cfg.Set("carattere_pct", Math.Round(sldFont.Value / 10) * 10);
+            cfg.Set("lingua", Lang.Code);
             SavePrevConfig();
             cfg.Save();
         }
@@ -1420,41 +1492,41 @@ namespace YAMS
         static string SourcesText()
         {
             return
-"FONTE PRINCIPALE\n" +
-"  Costantino Cerrotta IC8TEM, Gianluigi \"Gigi\" Sartori IV3GTH - \"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese\" (articolo, versione 7).\n" +
-"  Da qui: scie nello strato E a circa 90 km (radar SKiYMET), formula dell'elevazione, Hot A / Hot B, side-scatter, attenuazione 182-200 dB, durata dei ping IARU.\n\n" +
-"CALCOLO E TEORIA DELL'EFFICIENZA\n" +
-"  Ilkka Yrjola OH5IY - MS-Soft (concetto di efficienza dello sciame), www.kolumbus.fi/oh5iy (sito storico)\n" +
+Lang.T("FONTE PRINCIPALE") + "\n" +
+"  " + Lang.T("Costantino Cerrotta IC8TEM, Gianluigi \"Gigi\" Sartori IV3GTH - \"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese\" (articolo, versione 7).") + "\n" +
+"  " + Lang.T("Da qui: scie nello strato E a circa 90 km (radar SKiYMET), formula dell'elevazione, Hot A / Hot B, side-scatter, attenuazione 182-200 dB, durata dei ping IARU.") + "\n\n" +
+Lang.T("CALCOLO E TEORIA DELL'EFFICIENZA") + "\n" +
+"  " + Lang.T("Ilkka Yrjola OH5IY - MS-Soft (concetto di efficienza dello sciame), www.kolumbus.fi/oh5iy (sito storico)") + "\n" +
 "  Wilhelm Rauh DL5MCG - MCG_MS, MS Efficiency Calculator, qsl.net/dl5mcg\n" +
-"  Ingolf SM6FHZ - \"432 MHz Meteorscatter, Challenges and Techniques\", 45th Nordic VUSHF, maggio 2025 (regole lambda^3 e lambda^2, punto medio, direzione migliore)\n" +
-"  D.W.R. McKinley - Meteor Science and Engineering, 1961 (equazione delle scie sottodense)\n" +
-"  John GM8JBJ - Meteor scatter path loss, hamradio.engineering (da Kaiser & Closs 1952)\n" +
-"  Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)\n" +
-"  Klaus von der Heide DJ5HG - QTFGUI (aurora, FAI e meteor scatter) e manuale \"QTFGUI Help\" 2007: legge di diffusione a cono,\n" +
-"    caso di prova Amburgo - Barcellona nelle Quadrantidi, usato per verificare il modello\n" +
-"  Jens DF5HC - \"Meteorscatter auf UKW\", conferenza DARC, gennaio 2018: formula della migliore direzione\n" +
+"  " + Lang.T("Ingolf SM6FHZ - \"432 MHz Meteorscatter, Challenges and Techniques\", 45th Nordic VUSHF, maggio 2025 (regole lambda^3 e lambda^2, punto medio, direzione migliore)") + "\n" +
+"  " + Lang.T("D.W.R. McKinley - Meteor Science and Engineering, 1961 (equazione delle scie sottodense)") + "\n" +
+"  " + Lang.T("John GM8JBJ - Meteor scatter path loss, hamradio.engineering (da Kaiser & Closs 1952)") + "\n" +
+"  " + Lang.T("Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)") + "\n" +
+"  " + Lang.T("Klaus von der Heide DJ5HG - QTFGUI (aurora, FAI e meteor scatter) e manuale \"QTFGUI Help\" 2007: legge di diffusione a cono,\n" +
+"    caso di prova Amburgo - Barcellona nelle Quadrantidi, usato per verificare il modello") + "\n" +
+"  " + Lang.T("Jens DF5HC - \"Meteorscatter auf UKW\", conferenza DARC, gennaio 2018: formula della migliore direzione\n" +
 "    di DH9GCD (Sin(El) x Cos(El) x Sin(P-Az)), diffusione a cono e scelta HOT-A / HOT-B di DJ5HG,\n" +
-"    radiante utile tra 20 e 70 gradi, distanza migliore 1300-1500 km, meteore sporadiche di KB0VUK\n" +
-"  Gunter Hoch DL6WU - curva guadagno/lunghezza del boom delle Yagi lunghe, G(dBi) = 7,773 log(L/lambda) + 11,43, riportata da W8IO (w8io.com)\n" +
-"  J.D. Kraus - Antennas: guadagno e apertura del lobo, G = 41253 / (thetaE x thetaH)\n" +
-"  L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data (verifica delle due regole);\n" +
+"    radiante utile tra 20 e 70 gradi, distanza migliore 1300-1500 km, meteore sporadiche di KB0VUK") + "\n" +
+"  " + Lang.T("Gunter Hoch DL6WU - curva guadagno/lunghezza del boom delle Yagi lunghe, G(dBi) = 7,773 log(L/lambda) + 11,43, riportata da W8IO (w8io.com)") + "\n" +
+"  " + Lang.T("J.D. Kraus - Antennas: guadagno e apertura del lobo, G = 41253 / (thetaE x thetaH)") + "\n" +
+"  " + Lang.T("L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data (verifica delle due regole);\n" +
 "    Appreciating DL6WU Wide-Band Long-Boom Yagi Design e 70-CM Yagi Stacks Part 2 (Yagi VK3AUU di David Tanner):\n" +
-"    simulazioni NEC usate per verificare la curva del guadagno e correggere il lobo orizzontale (0,93 x Kraus)\n" +
-"  John Drew VK5DJ - Yagi Calculator: stime del guadagno per le varianti VK3AUU, WA2PHW e DJ9BV\n\n" +
-"DATI DEGLI SCIAMI\n" +
-"  International Meteor Organization - Meteor Shower Calendar 2026, www.imo.net (tabelle 5, 6 e 7)\n" +
-"  Philip G0ISW - www.qsl.net/g0isw/g0iswms.htm (tassi orari radio massimi)\n" +
+"    simulazioni NEC usate per verificare la curva del guadagno e correggere il lobo orizzontale (0,93 x Kraus)") + "\n" +
+"  " + Lang.T("John Drew VK5DJ - Yagi Calculator: stime del guadagno per le varianti VK3AUU, WA2PHW e DJ9BV") + "\n\n" +
+Lang.T("DATI DEGLI SCIAMI") + "\n" +
+"  " + Lang.T("International Meteor Organization - Meteor Shower Calendar 2026, www.imo.net (tabelle 5, 6 e 7)") + "\n" +
+"  " + Lang.T("Philip G0ISW - www.qsl.net/g0isw/g0iswms.htm (tassi orari radio massimi)") + "\n" +
 "  Rossano IZ5TEK - www.aripisa.it/images/pdf/scattertek.pdf\n\n" +
-"DATI RADAR IN DIRETTA\n" +
-"  Radar meteorico di Collm, Universita' di Lipsia (LIM) e IAP Kuehlungsborn - wetterdaten.meteo.uni-leipzig.de/radar_flux.php\n" +
+Lang.T("DATI RADAR IN DIRETTA") + "\n" +
+"  " + Lang.T("Radar meteorico di Collm, Universita' di Lipsia (LIM) e IAP Kuehlungsborn - wetterdaten.meteo.uni-leipzig.de/radar_flux.php") + "\n" +
 "  Sodankyla Geophysical Observatory - sgo.fi/Data/RealTime/meteorRadar.php\n" +
-"  Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)\n" +
-"  Ingolf SM6FHZ - RadiantCalc (grafico polare con la direzione migliore)\n" +
-"  Natural Earth - coste e confini 1:50 milioni, dominio pubblico, www.naturalearthdata.com (mappa d'Europa)\n" +
-"  RMOB, Radio Meteor Observatories On Line (Pierre Terrier) - www.rmob.org; bollettini mensili rmob.org/rmobtext (osservatori GRAVES 143,050 MHz: Planetario di Venezia, Faenza, Rovereto e altri)\n\n" +
-"ALTRI RIFERIMENTI DELL'ARTICOLO\n" +
-"  G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook\n\n" +
-"Nota: i dati dei radar appartengono ai rispettivi enti. Prima di distribuire il programma va chiesto il permesso di prelevarli automaticamente.\n";
+"  " + Lang.T("Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)") + "\n" +
+"  " + Lang.T("Ingolf SM6FHZ - RadiantCalc (grafico polare con la direzione migliore)") + "\n" +
+"  " + Lang.T("Natural Earth - coste e confini 1:50 milioni, dominio pubblico, www.naturalearthdata.com (mappa d'Europa)") + "\n" +
+"  " + Lang.T("RMOB, Radio Meteor Observatories On Line (Pierre Terrier) - www.rmob.org; bollettini mensili rmob.org/rmobtext (osservatori GRAVES 143,050 MHz: Planetario di Venezia, Faenza, Rovereto e altri)") + "\n\n" +
+Lang.T("ALTRI RIFERIMENTI DELL'ARTICOLO") + "\n" +
+"  " + Lang.T("G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook") + "\n\n" +
+Lang.T("Nota: i dati dei radar appartengono ai rispettivi enti. Prima di distribuire il programma va chiesto il permesso di prelevarli automaticamente.") + "\n";
         }
     }
 }

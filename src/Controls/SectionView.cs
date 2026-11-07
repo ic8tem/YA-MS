@@ -84,7 +84,7 @@ namespace YAMS
             drawScale = LS;
             double Wd = Bounds.Width, Ht = Bounds.Height;
             ctx.DrawRectangle(Pal.B(Pal.Back), null, new Rect(0, 0, Wd, Ht));
-            FormattedText title = Ft("SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az. " + AntennaAz.ToString("F0") + "°)",
+            FormattedText title = Ft(Lang.F("SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az. {0}°)", AntennaAz.ToString("F0")),
                 12.7, Gainsboro, FontWeight.SemiBold);
             title.MaxTextWidth = Math.Max(50, Wd - 12);   // va a capo se lo spazio non basta
             ctx.DrawText(title, new Point(6, 4));
@@ -143,11 +143,11 @@ namespace YAMS
             }
             ctx.DrawLine(hor, new Point(pr.Left, Y(0)), new Point(pr.Right, Y(0)));
             double row2 = pr.Bottom + 4 + probe.Height;
-            FormattedText sa = Ft("← A  (sinistra)", fs, tb);
+            FormattedText sa = Ft(Lang.T("← A  (sinistra)"), fs, tb);
             ctx.DrawText(sa, new Point(pr.Left + 4, row2));
-            FormattedText sb = Ft("(destra)  B →", fs, tb);
+            FormattedText sb = Ft(Lang.T("(destra)  B →"), fs, tb);
             ctx.DrawText(sb, new Point(pr.Right - sb.Width - 4, row2));
-            FormattedText sc = Ft("azimut rispetto al corrispondente", fs, tb);
+            FormattedText sc = Ft(Lang.T("azimut rispetto al corrispondente"), fs, tb);
             // la scritta centrale solo se c'e' spazio tra le due laterali
             if (sc.Width + sa.Width + sb.Width + 24 < pr.Width)
                 ctx.DrawText(sc, new Point(pr.Left + pr.Width / 2 - sc.Width / 2, row2));
@@ -187,7 +187,7 @@ namespace YAMS
                     }
                 }
                 else
-                    ctx.DrawText(Ft("Nessuna scia prevista: sciami attivi sotto l'orizzonte o con efficienza nulla per questa tratta.", 12, Pal.Silver),
+                    ctx.DrawText(Ft(Lang.T("Nessuna scia prevista: sciami attivi sotto l'orizzonte o con efficienza nulla per questa tratta."), 12, Pal.Silver),
                         new Point(pr.Left + 10, pr.Top + 10));
 
             }

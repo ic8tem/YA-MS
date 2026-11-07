@@ -43,34 +43,34 @@ namespace YAMS
 
         void BuildPrevTab()
         {
-            DockPanel p = Page("Attuazione sperimentale previsioni");
+            DockPanel p = Page(Lang.T("Attuazione sperimentale previsioni"));
             numPrevFreq = N(28, 1300, Dm(cfg.GetD("prev_frequenza_MHz", 144)), 0, 1, 65);
             numPrevK = N(1, 4, Dm(cfg.GetD("prev_esponente", 3)), 2, 0.05m, 60);
             numPrevStation = N(0.01m, 100, Dm(cfg.GetD("prev_fattore_stazione", 1)), 2, 0.1m, 60);
-            Button btnRmob = B("Carica file RMOB dal disco...");
+            Button btnRmob = B(Lang.T("Carica file RMOB dal disco..."));
             btnRmob.Click += async (s, e) => await LoadRmobFile();
-            Button btnK = B("Ricava l'esponente dal file RMOB");
+            Button btnK = B(Lang.T("Ricava l'esponente dal file RMOB"));
             btnK.Click += async (s, e) => await FitExponentFromRmob();
             numPrevFreq.ValueChanged += (s, e) => UpdatePrevTab();
             numPrevK.ValueChanged += (s, e) => UpdatePrevTab();
             numPrevStation.ValueChanged += (s, e) => UpdatePrevTab();
-            lblRmob = L("nessun file RMOB caricato");
-            DockTop(p, Row(L("Frequenza di arrivo MHz"), numPrevFreq, L("Esponente λ^k"), numPrevK,
-                           L("Fattore di stazione K"), numPrevStation, btnRmob, btnK, lblRmob));
+            lblRmob = L(Lang.T("nessun file RMOB caricato"));
+            DockTop(p, Row(L(Lang.T("Frequenza di arrivo MHz")), numPrevFreq, L(Lang.T("Esponente λ^k")), numPrevK,
+                           L(Lang.T("Fattore di stazione K")), numPrevStation, btnRmob, btnK, lblRmob));
 
             txtRmobObs = T(cfg.Get("rmob_osservatore", ""), 170, false);
-            chkRmobAuto = C("prelievo automatico ogni 5 minuti (attivare solo con il permesso di RMOB)", cfg.GetB("rmob_automatico", false));
-            Button btnRmobNow = B("Scarica RMOB adesso");
+            chkRmobAuto = C(Lang.T("prelievo automatico ogni 5 minuti (attivare solo con il permesso di RMOB)"), cfg.GetB("rmob_automatico", false));
+            Button btnRmobNow = B(Lang.T("Scarica RMOB adesso"));
             btnRmobNow.Click += async (s, e) =>
             {
                 if ((txtRmobObs.Text ?? "").Trim().Length == 0)
                 {
-                    await Dialogs.Message(this, "RMOB", "Scrivi il nome dell'osservatore RMOB come compare nel nome del suo file (es. NOME_112026rmob.TXT -> NOME).");
+                    await Dialogs.Message(this, "RMOB", Lang.T("Scrivi il nome dell'osservatore RMOB come compare nel nome del suo file (es. NOME_112026rmob.TXT -> NOME)."));
                     return;
                 }
                 StartFetch(true);
             };
-            DockTop(p, Row(L("Osservatore RMOB"), txtRmobObs, btnRmobNow, chkRmobAuto));
+            DockTop(p, Row(L(Lang.T("Osservatore RMOB")), txtRmobObs, btnRmobNow, chkRmobAuto));
 
             lblPrevNote = new TextBlock { Foreground = Pal.B(Pal.OrangeText), TextWrapping = TextWrapping.Wrap, Margin = new Thickness(6, 4, 6, 4) };
             DockTop(p, lblPrevNote);
@@ -78,7 +78,7 @@ namespace YAMS
             Grid tl = new Grid { ColumnDefinitions = new ColumnDefinitions("60*,40*"), RowDefinitions = new RowDefinitions("50*,50*") };
             chartPrev48 = new SimpleChart();
             chartPrev24 = new SimpleChart();
-            gridPrev = MakeTable(new[] { "Ora UTC", "Collm stessa ora", "Traslato", "Indice sciami tratta", "Previsione /ora", "Giudizio" },
+            gridPrev = MakeTable(new[] { Lang.T("Ora UTC"), Lang.T("Collm stessa ora"), Lang.T("Traslato"), Lang.T("Indice sciami tratta"), Lang.T("Previsione /ora"), Lang.T("Giudizio") },
                                  new double[] { 110, 120, 100, 140, 130, 80 });
             gridPrev.Selectable = false;
             Grid.SetColumn(chartPrev48, 0); Grid.SetRow(chartPrev48, 0);
@@ -116,18 +116,18 @@ namespace YAMS
             double f = V(numPrevFreq), k = V(numPrevK), K = V(numPrevStation), fr = RadarFreq;
             double scale = MsGeometry.CountScale(fr, f, k);
             double dur = MsGeometry.DurationScale(fr, f);
-            lblPrevNote.Text = string.Format(
+            lblPrevNote.Text = Lang.F(
                 "N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durata delle riflessioni x ({1:F1}/{0:F0})^2 = x {5:F4}: " +
                 "un eco di 1 s a {1:F1} MHz dura circa {6:F0} ms a {0:F0} MHz (ping massimo IARU a {0:F0} MHz: {7:F0} ms).\n" +
                 "Regole sperimentali di SM6FHZ (VUSHF 2025). Il fattore K tiene conto della stazione ricevente (potenza, antenne): si ricava confrontando con un osservatore RMOB sulla stessa banda.",
                 f, fr, k, scale, K, dur, 1000 * dur, MsGeometry.PingMaxMs(f));
 
             chartPrev48.Series.Clear(); chartPrev24.Series.Clear();
-            gridPrev.Columns = new List<string> { "Ora UTC", "Collm stessa ora", "Traslato " + f.ToString("F0"), "Indice sciami tratta", "Previsione " + f.ToString("F0") + " /ora", "Giudizio" };
+            gridPrev.Columns = new List<string> { Lang.T("Ora UTC"), Lang.T("Collm stessa ora"), Lang.F("Traslato {0}", f.ToString("F0")), Lang.T("Indice sciami tratta"), Lang.F("Previsione {0} /ora", f.ToString("F0")), Lang.T("Giudizio") };
             gridPrev.Rows = new List<TableRow>();
             if (collm == null)
             {
-                chartPrev48.Title = "Nessun dato del radar: scaricalo dalla linguetta Flusso radar.";
+                chartPrev48.Title = Lang.T("Nessun dato del radar: scaricalo dalla linguetta Flusso radar.");
                 chartPrev48.InvalidateVisual(); chartPrev24.InvalidateVisual(); gridPrev.Refresh(); return;
             }
             DateTime start = collm.DayToday.AddDays(-1);
@@ -143,17 +143,17 @@ namespace YAMS
                 if (rmobCounts != null && rmobCounts.TryGetValue(start.AddHours(i), out c)) { rm[i] = c; anyRmob = true; }
             }
             ChartSeries a = new ChartSeries(); a.Name = "Collm " + fr.ToString("F1") + " MHz"; a.Color = Pal.Rgb(0, 230, 255); a.Values = collm.Valid; a.Bars = true;
-            ChartSeries b = new ChartSeries(); b.Name = "traslato a " + f.ToString("F0") + " MHz (scala a destra)"; b.Color = Pal.Rgb(255, 170, 40); b.Values = tr; b.RightAxis = true;
+            ChartSeries b = new ChartSeries(); b.Name = Lang.F("traslato a {0} MHz (scala a destra)", f.ToString("F0")); b.Color = Pal.Rgb(255, 170, 40); b.Values = tr; b.RightAxis = true;
             chartPrev48.Series.Add(a); chartPrev48.Series.Add(b);
             if (anyRmob)
             {
-                ChartSeries r = new ChartSeries(); r.Name = "RMOB " + rmobName + " (scala a destra)"; r.Color = Pal.Rgb(120, 230, 120); r.Values = rm; r.RightAxis = true;
+                ChartSeries r = new ChartSeries(); r.Name = Lang.F("RMOB {0} (scala a destra)", rmobName); r.Color = Pal.Rgb(120, 230, 120); r.Values = rm; r.RightAxis = true;
                 chartPrev48.Series.Add(r);
             }
             chartPrev48.XLabels = xl; chartPrev48.XLabelEvery = 3;
-            chartPrev48.Title = "Misurato a Collm e traslato a " + f.ToString("F0") + " MHz - ieri " + start.ToString("dd/MM", CultureInfo.InvariantCulture) +
-                                " e oggi " + collm.DayToday.ToString("dd/MM", CultureInfo.InvariantCulture) + " (UTC)";
-            chartPrev48.YLabel = "meteore/ora radar"; chartPrev48.Y2Label = "riflessioni/ora a " + f.ToString("F0") + " MHz";
+            chartPrev48.Title = Lang.F("Misurato a Collm e traslato a {0} MHz - ieri {1} e oggi {2} (UTC)", f.ToString("F0"),
+                                start.ToString("dd/MM", CultureInfo.InvariantCulture), collm.DayToday.ToString("dd/MM", CultureInfo.InvariantCulture));
+            chartPrev48.YLabel = Lang.T("meteore/ora radar"); chartPrev48.Y2Label = Lang.F("riflessioni/ora a {0} MHz", f.ToString("F0"));
             int nowIdx = (int)Math.Floor((DateTime.UtcNow - start).TotalHours);
             chartPrev48.MarkIndex = nowIdx >= 0 && nowIdx < 48 ? nowIdx : -1;
             chartPrev48.InvalidateVisual();
@@ -190,7 +190,8 @@ namespace YAMS
                 DateTime t = h0.AddHours(i);
                 int j = (int)Math.Round((t.AddDays(-1) - start).TotalHours);
                 double past = j >= 0 && j < 48 ? collm.Valid[j] : -1;
-                string giud = fc[i] < 0 ? "-" : fc[i] >= 1.3 * mean ? "buono" : fc[i] >= 0.8 * mean ? "medio" : "scarso";
+                int gq = fc[i] < 0 ? -1 : fc[i] >= 1.3 * mean ? 2 : fc[i] >= 0.8 * mean ? 1 : 0;   // giudizio: 2 buono, 1 medio, 0 scarso
+                string giud = gq < 0 ? "-" : gq == 2 ? Lang.T("buono") : gq == 1 ? Lang.T("medio") : Lang.T("scarso");
                 TableRow row = new TableRow
                 {
                     Cells = new[] {
@@ -198,18 +199,18 @@ namespace YAMS
                         past < 0 ? "-" : past.ToString("F0"), past < 0 ? "-" : Translate(past).ToString("F1"),
                         idx[i].ToString("F1"), fc[i] < 0 ? "-" : fc[i].ToString("F1"), giud }
                 };
-                if (giud == "buono") row.Fore = Pal.Yellow;
-                else if (giud == "scarso") row.Fore = Pal.Rgb(128, 128, 128);
+                if (gq == 2) row.Fore = Pal.Yellow;
+                else if (gq == 0) row.Fore = Pal.Rgb(128, 128, 128);
                 rows.Add(row);
             }
             gridPrev.Rows = rows;
             gridPrev.Refresh();
-            ChartSeries pf = new ChartSeries(); pf.Name = "previsione " + f.ToString("F0") + " MHz /ora"; pf.Color = Pal.Rgb(255, 170, 40); pf.Values = fc; pf.Bars = true;
-            ChartSeries pi = new ChartSeries(); pi.Name = "indice sciami tratta (scala a destra)"; pi.Color = Pal.Rgb(240, 110, 230); pi.Values = idx; pi.RightAxis = true;
+            ChartSeries pf = new ChartSeries(); pf.Name = Lang.F("previsione {0} MHz /ora", f.ToString("F0")); pf.Color = Pal.Rgb(255, 170, 40); pf.Values = fc; pf.Bars = true;
+            ChartSeries pi = new ChartSeries(); pi.Name = Lang.T("indice sciami tratta (scala a destra)"); pi.Color = Pal.Rgb(240, 110, 230); pi.Values = idx; pi.RightAxis = true;
             chartPrev24.Series.Add(pf); chartPrev24.Series.Add(pi);
             chartPrev24.XLabels = xf; chartPrev24.XLabelEvery = 2;
-            chartPrev24.Title = "Previsione sperimentale delle prossime 24 ore a " + f.ToString("F0") + " MHz per " + PathLabel();
-            chartPrev24.YLabel = "riflessioni/ora"; chartPrev24.Y2Label = "Σ ZHR x effic.";
+            chartPrev24.Title = Lang.F("Previsione sperimentale delle prossime 24 ore a {0} MHz per {1}", f.ToString("F0"), PathLabel());
+            chartPrev24.YLabel = Lang.T("riflessioni/ora"); chartPrev24.Y2Label = Lang.T("Σ ZHR x effic.");
             chartPrev24.MarkIndex = -1;
             chartPrev24.InvalidateVisual();
         }
@@ -253,35 +254,35 @@ namespace YAMS
             {
                 IReadOnlyList<IStorageFile> files = await StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
                 {
-                    Title = "File RMOB (conteggi orari del mese)",
+                    Title = Lang.T("File RMOB (conteggi orari del mese)"),
                     AllowMultiple = false,
                     FileTypeFilter = new[]
                     {
-                        new FilePickerFileType("File RMOB") { Patterns = new[] { "*.txt", "*.TXT", "*.dat", "*.DAT" } },
-                        new FilePickerFileType("Tutti i file") { Patterns = new[] { "*" } }
+                        new FilePickerFileType(Lang.T("File RMOB")) { Patterns = new[] { "*.txt", "*.TXT", "*.dat", "*.DAT" } },
+                        new FilePickerFileType(Lang.T("Tutti i file")) { Patterns = new[] { "*" } }
                     }
                 });
                 if (files == null || files.Count == 0) return;
                 string path = files[0].TryGetLocalPath();
-                if (path == null) { await Dialogs.Message(this, "File RMOB", "Il file scelto non e' un file locale."); return; }
+                if (path == null) { await Dialogs.Message(this, Lang.T("File RMOB"), Lang.T("Il file scelto non e' un file locale.")); return; }
                 string msg;
                 Dictionary<DateTime, double> r = ParseRmob(path, out msg);
                 if (r == null || r.Count == 0)
                 {
-                    await Dialogs.Message(this, "File RMOB", "Non ho riconosciuto il formato del file.\n" + msg);
+                    await Dialogs.Message(this, Lang.T("File RMOB"), Lang.T("Non ho riconosciuto il formato del file.") + "\n" + msg);
                     return;
                 }
                 rmobCounts = r; rmobName = Path.GetFileNameWithoutExtension(path);
-                lblRmob.Text = rmobName + ": " + r.Count + " ore lette. " + msg;
+                lblRmob.Text = Lang.F("{0}: {1} ore lette.", rmobName, r.Count) + " " + msg;
                 UpdatePrevTab();
             }
-            catch (Exception ex) { await Dialogs.Message(this, "File RMOB", ex.Message); }
+            catch (Exception ex) { await Dialogs.Message(this, Lang.T("File RMOB"), ex.Message); }
         }
 
         // Ricava l'esponente k (con K = 1) dalla mediana dei rapporti RMOB / Collm sulle ore comuni
         async Task FitExponentFromRmob()
         {
-            if (collm == null || rmobCounts == null) { await Dialogs.Message(this, "Esponente", "Servono sia i dati di Collm sia un file RMOB delle stesse ore."); return; }
+            if (collm == null || rmobCounts == null) { await Dialogs.Message(this, Lang.T("Esponente"), Lang.T("Servono sia i dati di Collm sia un file RMOB delle stesse ore.")); return; }
             List<double> ratios = new List<double>();
             DateTime start = collm.DayToday.AddDays(-1);
             for (int i = 0; i < 48; i++)
@@ -289,16 +290,16 @@ namespace YAMS
                 double c;
                 if (collm.Valid[i] > 0 && rmobCounts.TryGetValue(start.AddHours(i), out c) && c > 0) ratios.Add(c / collm.Valid[i]);
             }
-            if (ratios.Count < 3) { await Dialogs.Message(this, "Esponente", "Troppe poche ore in comune (" + ratios.Count + ") tra Collm e il file RMOB."); return; }
+            if (ratios.Count < 3) { await Dialogs.Message(this, Lang.T("Esponente"), Lang.F("Troppe poche ore in comune ({0}) tra Collm e il file RMOB.", ratios.Count)); return; }
             ratios.Sort();
             double med = ratios[ratios.Count / 2];
             double f = V(numPrevFreq);
             double kEmp = -Math.Log(med) / Math.Log(f / RadarFreq);
-            if (double.IsNaN(kEmp) || double.IsInfinity(kEmp)) { await Dialogs.Message(this, "Esponente", "Esponente non calcolabile con questi dati."); return; }
-            string txt = string.Format("Ore in comune: {0}. Rapporto mediano RMOB/Collm = {1:F4}.\nEsponente empirico (con K = 1): k = {2:F2}  (regola SM6FHZ: 3).\n\n" +
+            if (double.IsNaN(kEmp) || double.IsInfinity(kEmp)) { await Dialogs.Message(this, Lang.T("Esponente"), Lang.T("Esponente non calcolabile con questi dati.")); return; }
+            string txt = Lang.F("Ore in comune: {0}. Rapporto mediano RMOB/Collm = {1:F4}.\nEsponente empirico (con K = 1): k = {2:F2}  (regola SM6FHZ: 3).\n\n" +
                 "Applico questo esponente? (In alternativa si lascia k = 3 e si regola il fattore K = {3:F2}.)",
                 ratios.Count, med, kEmp, med / MsGeometry.CountScale(RadarFreq, f, 3));
-            if (await Dialogs.Confirm(this, "Esponente dal confronto RMOB", txt))
+            if (await Dialogs.Confirm(this, Lang.T("Esponente dal confronto RMOB"), txt))
             {
                 numPrevStation.Value = 1;
                 numPrevK.Value = Dm(Math.Max(1, Math.Min(4, Math.Round(kEmp, 2))));
@@ -328,7 +329,7 @@ namespace YAMS
                         month = DateTime.ParseExact(mon, "MMM", CultureInfo.InvariantCulture).Month; year = int.Parse(h.Groups[2].Value); break;
                     }
                 }
-            if (month == 0) { month = DateTime.UtcNow.Month; year = DateTime.UtcNow.Year; msg += "Mese non indicato: uso il mese corrente. "; }
+            if (month == 0) { month = DateTime.UtcNow.Month; year = DateTime.UtcNow.Year; msg += Lang.T("Mese non indicato: uso il mese corrente.") + " "; }
             int dim = DateTime.DaysInMonth(year, month);
 
             // formato A
@@ -346,7 +347,7 @@ namespace YAMS
                     { res[new DateTime(year, month, day, hr, 0, 0, DateTimeKind.Utc)] = v; nA++; }
                 }
             }
-            if (nA > 0) { msg += "Formato file mensile, " + month.ToString("00") + "/" + year + "."; return res; }
+            if (nA > 0) { msg += Lang.F("Formato file mensile, {0}/{1}.", month.ToString("00"), year); return res; }
 
             // formato B
             int[] days = null;
@@ -375,7 +376,7 @@ namespace YAMS
                         res[new DateTime(year, month, days[k], hrv, 0, 0, DateTimeKind.Utc)] = v;
                 }
             }
-            if (res.Count > 0) msg += "Formato tabella del bollettino (" + month.ToString("00") + "/" + year + "): se il file contiene piu' osservatori vengono letti di seguito, usa un file con un solo osservatore.";
+            if (res.Count > 0) msg += Lang.F("Formato tabella del bollettino ({0}/{1}): se il file contiene piu' osservatori vengono letti di seguito, usa un file con un solo osservatore.", month.ToString("00"), year);
             return res;
         }
     }

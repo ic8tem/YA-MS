@@ -17,9 +17,9 @@ namespace YAMS
 
         void BuildGridTab()
         {
-            DockPanel p = Page("Mappa quadrati");
-            Button bLoad = B("Carica file ADIF...");
-            Button bClear = B("Cancella memoria");
+            DockPanel p = Page(Lang.T("Mappa quadrati"));
+            Button bLoad = B(Lang.T("Carica file ADIF..."));
+            Button bClear = B(Lang.T("Cancella memoria"));
             bClear.Background = Pal.B(Pal.Rgb(127, 29, 29));
             lblAdif = L("");
             bLoad.Click += async (s, e) => await LoadAdifFile();
@@ -27,13 +27,13 @@ namespace YAMS
             {
                 try
                 {
-                    if (!await Dialogs.Confirm(this, "Cancella memoria", "Cancellare tutti i quadrati caricati dal file ADIF?")) return;
+                    if (!await Dialogs.Confirm(this, Lang.T("Cancella memoria"), Lang.T("Cancellare tutti i quadrati caricati dal file ADIF?"))) return;
                     AdifStore.Clear(dataDir);
                     RefreshGrids();
                 }
-                catch (Exception ex) { await Dialogs.Message(this, "Cancella memoria", ex.Message); }
+                catch (Exception ex) { await Dialogs.Message(this, Lang.T("Cancella memoria"), ex.Message); }
             };
-            DockTop(p, Row(bLoad, bClear, lblAdif, L("Rotellina = zoom, trascina = sposta, mouse sopra un quadrato = QSO")));
+            DockTop(p, Row(bLoad, bClear, lblAdif, L(Lang.T("Rotellina = zoom, trascina = sposta, mouse sopra un quadrato = QSO"))));
             // sotto-linguette a pillola, una per banda
             PillTabs sub = new PillTabs();
             for (int i = 0; i < AdifStore.Bands.Length; i++)
@@ -55,17 +55,17 @@ namespace YAMS
             {
                 IReadOnlyList<IStorageFile> files = await StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
                 {
-                    Title = "File ADIF del log",
+                    Title = Lang.T("File ADIF del log"),
                     AllowMultiple = false,
                     FileTypeFilter = new[]
                     {
-                        new FilePickerFileType("File ADIF") { Patterns = new[] { "*.adi", "*.adif", "*.ADI", "*.ADIF" } },
-                        new FilePickerFileType("Tutti i file") { Patterns = new[] { "*" } }
+                        new FilePickerFileType(Lang.T("File ADIF")) { Patterns = new[] { "*.adi", "*.adif", "*.ADI", "*.ADIF" } },
+                        new FilePickerFileType(Lang.T("Tutti i file")) { Patterns = new[] { "*" } }
                     }
                 });
                 if (files == null || files.Count == 0) return;
                 string path = files[0].TryGetLocalPath();
-                if (path == null) { await Dialogs.Message(this, "File ADIF", "Il file scelto non e' un file locale."); return; }
+                if (path == null) { await Dialogs.Message(this, Lang.T("File ADIF"), Lang.T("Il file scelto non e' un file locale.")); return; }
                 try
                 {
                     string msg;
@@ -73,16 +73,16 @@ namespace YAMS
                     AdifStore.Save(dataDir);
                     status.Text = msg;
                 }
-                catch (Exception ex) { await Dialogs.Message(this, "File ADIF", ex.Message); }
+                catch (Exception ex) { await Dialogs.Message(this, Lang.T("File ADIF"), ex.Message); }
                 RefreshGrids();
             }
-            catch (Exception ex) { await Dialogs.Message(this, "File ADIF", ex.Message); }
+            catch (Exception ex) { await Dialogs.Message(this, Lang.T("File ADIF"), ex.Message); }
         }
 
         void RefreshGrids()
         {
             if (lblAdif == null) return;
-            lblAdif.Text = AdifStore.Qsos.Count == 0 ? "nessun ADIF caricato" : "ADIF: " + AdifStore.SourceName + " (" + AdifStore.Qsos.Count + " quadrati-QSO)";
+            lblAdif.Text = AdifStore.Qsos.Count == 0 ? Lang.T("nessun ADIF caricato") : Lang.F("ADIF: {0} ({1} quadrati-QSO)", AdifStore.SourceName, AdifStore.Qsos.Count);
             string home = txtHome != null ? Up(txtHome) : "";
             foreach (GridMapView v in gridViews)
             {

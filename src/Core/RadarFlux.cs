@@ -21,7 +21,7 @@ namespace YAMS
         public string LocalFile;
         public DateTime LastDownloadUtc = DateTime.MinValue;
         public DateTime LastModifiedUtc = DateTime.MinValue;
-        public string Status = "mai scaricato";
+        public string Status = Lang.T("mai scaricato");
         public bool Offline;
     }
 
@@ -76,9 +76,9 @@ namespace YAMS
             int r = Fetch(s.Url, s.LocalFile, ref lm, out offline, out err);
             s.Offline = offline;
             if (r >= 0) { s.LastDownloadUtc = DateTime.UtcNow; s.LastModifiedUtc = lm; }
-            if (r == 1) s.Status = "nuovo dato alle " + DateTime.UtcNow.ToString("HH:mm", CultureInfo.InvariantCulture) + " UTC";
-            else if (r == 0) s.Status = "invariato (controllato alle " + DateTime.UtcNow.ToString("HH:mm", CultureInfo.InvariantCulture) + " UTC)";
-            else s.Status = (offline ? "rete assente: " : "errore: ") + err;
+            if (r == 1) s.Status = Lang.F("nuovo dato alle {0} UTC", DateTime.UtcNow.ToString("HH:mm", CultureInfo.InvariantCulture));
+            else if (r == 0) s.Status = Lang.F("invariato (controllato alle {0} UTC)", DateTime.UtcNow.ToString("HH:mm", CultureInfo.InvariantCulture));
+            else s.Status = offline ? Lang.F("rete assente: {0}", err) : Lang.F("errore: {0}", err);
             return r;
         }
 
@@ -87,7 +87,7 @@ namespace YAMS
             offline = false; err = "";
             try
             {
-                if (!System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable()) { offline = true; err = "nessuna rete attiva"; return -1; }
+                if (!System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable()) { offline = true; err = Lang.T("nessuna rete attiva"); return -1; }
                 Directory.CreateDirectory(Path.GetDirectoryName(file));
                 HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
                 req.UserAgent = UserAgent;
@@ -241,10 +241,10 @@ namespace YAMS
             {
                 int w, h;
                 int[] px = ReadPixels(bmp, out w, out h);
-                if (w != 720 || h != 720) { d.Problem = "Formato del grafico cambiato (" + w + "x" + h + "): lettura non possibile."; d.ScaleOk = false; return d; }
-                if (!Is(px, w, 101, 150, White) || !Is(px, w, 300, 216, White)) d.Problem += "Assi del flusso non trovati nella posizione attesa. ";
+                if (w != 720 || h != 720) { d.Problem = Lang.F("Formato del grafico cambiato ({0}x{1}): lettura non possibile.", w, h); d.ScaleOk = false; return d; }
+                if (!Is(px, w, 101, 150, White) || !Is(px, w, 300, 216, White)) d.Problem += Lang.T("Assi del flusso non trovati nella posizione attesa.") + " ";
                 d.HeightScaleOk = Signature(px, w, 515, 705, 640, 672) == HeightScaleSignature;
-                if (!d.HeightScaleOk) d.Problem += "La scala del grafico delle quote e' cambiata: le statistiche delle quote (moda, media, mediana) restano valide, i conteggi assoluti no. ";
+                if (!d.HeightScaleOk) d.Problem += Lang.T("La scala del grafico delle quote e' cambiata: le statistiche delle quote (moda, media, mediana) restano valide, i conteggi assoluti no.") + " ";
 
                 // Scala del flusso: il radar la adatta ai valori del giorno (es. 0-1,0 o 0-1,2 x 10^3).
                 // Si cercano le tacche lunghe dell'asse e si legge l'etichetta della tacca piu' alta.
@@ -258,14 +258,14 @@ namespace YAMS
                 {
                     Ytop = ticks[0]; Y0 = ticks[ticks.Count - 1];
                     d.FluxTop = top * 1000; d.ScaleOk = true;
-                    d.ScaleNote = "scala letta dal grafico: 0-" + d.FluxTop.ToString("F0", CultureInfo.InvariantCulture) + " meteore/ora";
+                    d.ScaleNote = Lang.F("scala letta dal grafico: 0-{0} meteore/ora", d.FluxTop.ToString("F0", CultureInfo.InvariantCulture));
                 }
                 else
                 {
                     d.ScaleOk = Signature(px, w, 40, 96, 60, 226) == FluxScaleSignature;
                     d.FluxTop = 1200;
-                    d.ScaleNote = d.ScaleOk ? "scala tarata 0-1200 meteore/ora" : "scala non letta";
-                    if (!d.ScaleOk) d.Problem += "Non riesco a leggere la scala verticale del flusso (etichetta in cima: " + (lab ?? "?") + "): valori da verificare. ";
+                    d.ScaleNote = d.ScaleOk ? Lang.T("scala tarata 0-1200 meteore/ora") : Lang.T("scala non letta");
+                    if (!d.ScaleOk) d.Problem += Lang.F("Non riesco a leggere la scala verticale del flusso (etichetta in cima: {0}): valori da verificare.", lab ?? "?") + " ";
                 }
                 for (int hr = 0; hr < 48; hr++)
                 {

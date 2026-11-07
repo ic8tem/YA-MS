@@ -15,6 +15,8 @@ namespace YAMS
         {
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
+                // lingua dell'interfaccia (chiave "lingua" di config.ini) prima di costruire la finestra
+                try { Lang.Init(new Config(System.IO.Path.Combine(AppPaths.DataDir, "config.ini")).Get("lingua", "")); } catch { }
                 MainWindow w = new MainWindow();
                 desktop.MainWindow = w;
                 if (Program.ScreenshotDir != null)

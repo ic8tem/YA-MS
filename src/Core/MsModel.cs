@@ -53,7 +53,7 @@ namespace YAMS
             m.Home = home; m.Dx = dx; m.HomeAltKm = homeAltKm; m.DxAltKm = dxAltKm;
             m.LayerKm = layerKm; m.MinElevDeg = minElevDeg;
             m.DistKm = Astro.DistanceKm(home, dx);
-            if (m.DistKm < 50) { m.Message = "Tratta troppo corta"; return m; }
+            if (m.DistKm < 50) { m.Message = Lang.T("Tratta troppo corta"); return m; }
             m.BearingHomeToDx = Astro.Bearing(home, dx);
             m.BearingDxToHome = Astro.Bearing(dx, home);
             m.Mid = Astro.Destination(home, m.BearingHomeToDx, m.DistKm / 2);
@@ -76,7 +76,7 @@ namespace YAMS
             LatLon p1, p2;
             if (!MsGeometry.SmallCircleIntersect(Home, Dx, HotRadiusKm / Astro.R, out p1, out p2))
             {
-                Message = "Tratta piu' lunga del doppio della portata alla quota delle scie: le due stazioni non vedono una zona comune dello strato E.";
+                Message = Lang.T("Tratta piu' lunga del doppio della portata alla quota delle scie: le due stazioni non vedono una zona comune dello strato E.");
                 LimitA = null; LimitB = null; return;
             }
             Vec3 h = Astro.Vec(Home, 1), d = Astro.Vec(Dx, 1);

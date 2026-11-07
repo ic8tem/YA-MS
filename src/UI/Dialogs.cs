@@ -30,8 +30,8 @@ namespace YAMS
             StackPanel buttons;
             Window w = Build(title, text, out buttons);
             bool result = false;
-            Button yes = Btn("Sì", true);
-            Button no = Btn("No", false);
+            Button yes = Btn(Lang.T("Sì"), true);
+            Button no = Btn(Lang.T("No"), false);
             yes.Click += (s, e) => { result = true; w.Close(); };
             no.Click += (s, e) => { result = false; w.Close(); };
             buttons.Children.Add(yes);

@@ -101,7 +101,7 @@ namespace YAMS
         double LegendWidth()
         {
             if (!ShowLegend) return 0;
-            if (legendCollapsed) return Ft("Legenda ▸", F9, Pal.Fore, FontWeight.Bold).Width + 24;
+            if (legendCollapsed) return Ft(Lang.T("Legenda") + " ▸", F9, Pal.Fore, FontWeight.Bold).Width + 24;
             return Math.Min(420, 150 * LS);
         }
 
@@ -332,7 +332,7 @@ namespace YAMS
             ctx.DrawLine(dash, new Point(cx, cy - rad), new Point(cx, cy + rad));
             if (map && DrawCaption)
             {
-                FormattedText mt = Ft("mappa: bordo = " + MapRadiusKm.ToString("F0") + " km dalla stazione", F8, tc);
+                FormattedText mt = Ft(Lang.F("mappa: bordo = {0} km dalla stazione", MapRadiusKm.ToString("F0")), F8, tc);
                 ctx.DrawText(mt, new Point(6, 6));   // in alto a sinistra: non copre la didascalia
                 lp.Block(new Rect(4, 4, mt.Width + 4, mt.Height + 4));
             }
@@ -497,7 +497,7 @@ namespace YAMS
                     ctx.DrawEllipse(Pal.B(hc), null, p, 5, 5);
                     lp.BlockPoint(p, 6);
                     // Hot A a sinistra della tratta, Hot B a destra (vista dalla stazione verso il DX)
-                    AddLab(h.Recommended ? 1 : 2, "Hot " + lab, F9, hc, true, p, isA ? left : left + 180, true);
+                    AddLab(h.Recommended ? 1 : 2, isA ? Lang.T("Hot A") : Lang.T("Hot B"), F9, hc, true, p, isA ? left : left + 180, true);
                 }
                 else
                 {
@@ -532,7 +532,7 @@ namespace YAMS
                 Point p = MapXY(h.Pos, cx, cy, rad);
                 ctx.DrawEllipse(null, lpen, p, 4, 4);
                 lp.BlockPoint(p, 5);
-                AddLab(8, (h.Label ?? "").Replace("Limite", "lim."), F75, lc, false, p, h == Model.LimitA ? left : left + 180);
+                AddLab(8, h == Model.LimitA ? Lang.T("lim. A") : Lang.T("lim. B"), F75, lc, false, p, h == Model.LimitA ? left : left + 180);
             }
         }
 
@@ -550,7 +550,7 @@ namespace YAMS
             }
             ctx.DrawGeometry(Pal.B(Pal.Argb(45, 255, 240, 200)), Pal.P(Pal.Argb(140, 255, 240, 200), 1), g);
             Point t = PA(ScreenDir(AntennaAz), rad * 0.93, cx, cy);
-            AddLab(map ? 7 : 4, "lobo " + HpbwDeg.ToString("F0") + "°", F8, Wheat, false, t, ScreenDir(AntennaAz));
+            AddLab(map ? 7 : 4, Lang.F("lobo {0}°", HpbwDeg.ToString("F0")), F8, Wheat, false, t, ScreenDir(AntennaAz));
         }
 
         // Da un punto del controllo alla posizione geografica (proiezione azimutale equidistante inversa)
@@ -683,7 +683,7 @@ namespace YAMS
             ctx.DrawLine(Pal.P(Pal.Argb(240, 255, 210, 90), 2.5), a, b);
             lp.BlockLine(a, b);
             Color fc = Color.FromRgb(255, 220, 110);
-            Lab fl = AddLab(5, m.Code + " (dal radiante, az. " + m.Az.ToString("F0") + "°)", F9, fc, true, PA(ScreenDir(m.Az), rad * 0.80, cx, cy), ScreenDir(m.Az + 90));
+            Lab fl = AddLab(5, Lang.F("{0} (dal radiante, az. {1}°)", m.Code, m.Az.ToString("F0")), F9, fc, true, PA(ScreenDir(m.Az), rad * 0.80, cx, cy), ScreenDir(m.Az + 90));
             fl.Flow = true; fl.FlowAz = m.Az;
             IBrush ob = Pal.B(Pal.Orange);
             foreach (double off in new double[] { 90, -90 })
@@ -783,35 +783,35 @@ namespace YAMS
             double x0 = W - lw;
             Rect panel = new Rect(x0, 6, Math.Max(10, lw - 6), Math.Max(10, H - 12));
             ctx.DrawRectangle(Pal.B(Pal.Panel), Pal.P(Pal.Border, 1), panel, 10, 10);
-            FormattedText hf = Ft(legendCollapsed ? "Legenda ▸" : "Legenda ▾", F9, Pal.Fore, FontWeight.Bold);
+            FormattedText hf = Ft(Lang.T("Legenda") + (legendCollapsed ? " ▸" : " ▾"), F9, Pal.Fore, FontWeight.Bold);
             ctx.DrawText(hf, new Point(x0 + 12, 14));
             if (legendCollapsed) { legendHeader = panel; return; }   // striscia stretta: tutta cliccabile
             legendHeader = new Rect(x0, 6, panel.Width, hf.Height + 16);
             double x = x0 + 12, yy = 14 + hf.Height + 10;
             using (ctx.PushClip(panel))
             {
-                Item(ctx, x, ref yy, Pal.Green, "tratta / DX");
-                Item(ctx, x, ref yy, Pal.Red, "Hot consigliato");
-                Item(ctx, x, ref yy, Pal.HotPink, "Hot fuori lobo");
-                Item(ctx, x, ref yy, Color.FromRgb(150, 150, 210), "limiti zona comune");
-                Item(ctx, x, ref yy, Pal.HotGrey, "Hot nel lobo");
-                Item(ctx, x, ref yy, Color.FromRgb(255, 240, 200), "lobo antenna");
-                Item(ctx, x, ref yy, Color.FromRgb(255, 210, 90), "scorrimento sciame");
-                Item(ctx, x, ref yy, Pal.Orange, "miglior punt.");
-                Item(ctx, x, ref yy, Color.FromRgb(235, 225, 190), "zona PREV");
+                Item(ctx, x, ref yy, Pal.Green, Lang.T("tratta / DX"));
+                Item(ctx, x, ref yy, Pal.Red, Lang.T("Hot consigliato"));
+                Item(ctx, x, ref yy, Pal.HotPink, Lang.T("Hot fuori lobo"));
+                Item(ctx, x, ref yy, Color.FromRgb(150, 150, 210), Lang.T("limiti zona comune"));
+                Item(ctx, x, ref yy, Pal.HotGrey, Lang.T("Hot nel lobo"));
+                Item(ctx, x, ref yy, Color.FromRgb(255, 240, 200), Lang.T("lobo antenna"));
+                Item(ctx, x, ref yy, Color.FromRgb(255, 210, 90), Lang.T("scorrimento sciame"));
+                Item(ctx, x, ref yy, Pal.Orange, Lang.T("miglior punt."));
+                Item(ctx, x, ref yy, Color.FromRgb(235, 225, 190), Lang.T("zona PREV"));
                 if (ShowRadiants || !(ShowMap && TopView))
                 {
-                    Item(ctx, x, ref yy, Pal.Azure, "percorso rad.");
+                    Item(ctx, x, ref yy, Pal.Azure, Lang.T("percorso rad."));
                     yy += 8;
-                    FormattedText rt = Ft("Radiante:", F75, Gainsboro, FontWeight.Bold);
+                    FormattedText rt = Ft(Lang.T("Radiante:"), F75, Gainsboro, FontWeight.Bold);
                     ctx.DrawText(rt, new Point(x, yy)); yy += rt.Height + 6;
-                    Item(ctx, x, ref yy, Pal.Yellow, "effic. >= 50%");
-                    Item(ctx, x, ref yy, Pal.Orange, "effic. >= 20%");
-                    Item(ctx, x, ref yy, Color.FromRgb(194, 65, 12), "effic. < 20%");
-                    Item(ctx, x, ref yy, Color.FromRgb(130, 130, 130), "quasi inattivo");
+                    Item(ctx, x, ref yy, Pal.Yellow, Lang.T("effic. >= 50%"));
+                    Item(ctx, x, ref yy, Pal.Orange, Lang.T("effic. >= 20%"));
+                    Item(ctx, x, ref yy, Color.FromRgb(194, 65, 12), Lang.T("effic. < 20%"));
+                    Item(ctx, x, ref yy, Color.FromRgb(130, 130, 130), Lang.T("quasi inattivo"));
                 }
                 yy += 8;
-                string[] note = { "Mappa:", "clic sinistro =", "corrispondente", "clic destro =", "la mia stazione" };
+                string[] note = { Lang.T("Mappa:"), Lang.T("clic sinistro ="), Lang.T("corrispondente"), Lang.T("clic destro ="), Lang.T("la mia stazione") };
                 foreach (string n in note)
                 {
                     FormattedText nt = Ft(n, F75, Pal.Silver);

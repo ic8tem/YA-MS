@@ -85,7 +85,7 @@ namespace YAMS
             }
             Qsos = list;
             SourceName = Path.GetFileName(file);
-            msg = string.Format("{0} QSO letti, {1} quadrati-QSO nelle bande 50-432 MHz, {2} QSO scartati (altre bande o senza quadrato).", records, list.Count, skipped);
+            msg = Lang.F("{0} QSO letti, {1} quadrati-QSO nelle bande 50-432 MHz, {2} QSO scartati (altre bande o senza quadrato).", records, list.Count, skipped);
             return list.Count;
         }
 

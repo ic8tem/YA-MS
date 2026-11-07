@@ -177,9 +177,9 @@ namespace YAMS
             }
             // riquadro informativo
             {
-                FormattedText t = Ft(string.Format("{0}: {1} quadrati lavorati, {2} confermati", BandLabel(), d.Count, conf), 12, White, FontWeight.Bold);
-                FormattedText t1 = Ft("lavorato", 11, Gainsboro);
-                FormattedText t2 = Ft("confermato (QSL o LoTW)", 11, Gainsboro);
+                FormattedText t = Ft(Lang.F("{0}: {1} quadrati lavorati, {2} confermati", BandLabel(), d.Count, conf), 12, White, FontWeight.Bold);
+                FormattedText t1 = Ft(Lang.T("lavorato"), 11, Gainsboro);
+                FormattedText t2 = Ft(Lang.T("confermato (QSL o LoTW)"), 11, Gainsboro);
                 // altezze ricavate dal testo: il riquadro cresce con il carattere
                 double bw = Math.Max(t.Width, 30 + t1.Width + 30 + t2.Width) + 14;
                 double ry = 9 + t.Height + 4, rh = Math.Max(t1.Height, 10), cyr = ry + rh / 2;
@@ -278,8 +278,8 @@ namespace YAMS
             {
                 List<GridQso> l = new List<GridQso>();
                 foreach (GridQso q in AdifStore.Qsos) if (q.Band == Band && q.Grid == gr) l.Add(q);
-                t = gr + (l.Count == 0 ? ": non lavorato" : ": " + l.Count + " QSO");
-                for (int i = 0; i < Math.Min(6, l.Count); i++) t += "\n" + l[i].Call + "  " + l[i].Date + (l[i].Confirmed ? "  (confermato)" : "");
+                t = l.Count == 0 ? Lang.F("{0}: non lavorato", gr) : Lang.F("{0}: {1} QSO", gr, l.Count);
+                for (int i = 0; i < Math.Min(6, l.Count); i++) t += "\n" + l[i].Call + "  " + l[i].Date + (l[i].Confirmed ? "  " + Lang.T("(confermato)") : "");
                 if (l.Count > 6) t += "\n...";
             }
             if (t != lastTip)

@@ -22,6 +22,16 @@ Nuovo progetto: `/home/claude/YA-MS` (progetto `YA-MS.csproj`, net8.0, Avalonia 
   `MapData.Load` restituisce `List<System.Drawing.PointF[]>` (X = lon, Y = lat): va bene tenerlo cosi'.
 - Testi dell'interfaccia in italiano, identici al vecchio programma salvo "MS Sciami" -> "YA-MS".
 
+## Lingue dell'interfaccia (src/UI/Lang.cs)
+- L'italiano e' la lingua di partenza: ogni testo visibile passa da `Lang.T("testo italiano")` oppure, con valori,
+  da `Lang.F("testo con {0} e {1:F1}", a, b)` (UNA sola chiave per frase, mai frasi spezzate con +). Le chiavi devono essere
+  stringhe letterali; i testi che arrivano dai dati (nomi degli sciami, etichette Hot/Limite) con `Lang.T(variabile)`
+  e vanno elencati in `tools/estrai_chiavi.py` (EXTRA / KNOWN_DYNAMIC).
+- Traduzioni in `data/lingue/<codice>.txt` (chiave TAB traduzione, `\n` = a capo). Dopo ogni modifica dei testi:
+  `python3 tools/estrai_chiavi.py --controlla` rigenera `data/lingue/chiavi.txt` e mostra le chiavi mancanti.
+- Mai confrontare un testo mostrato per decidere il comportamento (usare indici o codici).
+- La lettura dei file di dati usa sempre `CultureInfo.InvariantCulture` (la cultura corrente segue la lingua scelta).
+
 ## Promemoria API Avalonia 11.2
 - Controllo disegnato: `public class X : Control { public override void Render(DrawingContext ctx) { ... } }`,
   dimensioni `Bounds.Width/Height`, ridisegno `InvalidateVisual()`. Riempire sempre tutto lo sfondo nel Render

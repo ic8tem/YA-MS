@@ -32,22 +32,22 @@ namespace YAMS
 
         void BuildExplainTab()
         {
-            DockPanel p = Page("Efficienza - spiegazione");
+            DockPanel p = Page(Lang.T("Efficienza - spiegazione"));
             string docx = Path.Combine(dataDir, "efficienza_spiegazione.docx");
-            Button bExport = B("Esporta in Word (.docx)...");
+            Button bExport = B(Lang.T("Esporta in Word (.docx)..."));
             bExport.Click += async (s, e) => await ExportDocx(docx);
-            Button bOpen = B("Apri in Word");
+            Button bOpen = B(Lang.T("Apri in Word"));
             bOpen.Click += async (s, e) =>
             {
                 try
                 {
-                    if (!File.Exists(docx)) { await Dialogs.Message(this, "Apri in Word", "File mancante: " + docx); return; }
+                    if (!File.Exists(docx)) { await Dialogs.Message(this, Lang.T("Apri in Word"), Lang.F("File mancante: {0}", docx)); return; }
                     Dialogs.OpenWithDefaultApp(docx);
                 }
-                catch (Exception ex) { await Dialogs.Message(this, "Apri in Word", "Non riesco ad aprire il documento: " + ex.Message); }
+                catch (Exception ex) { await Dialogs.Message(this, Lang.T("Apri in Word"), Lang.F("Non riesco ad aprire il documento: {0}", ex.Message)); }
             };
             DockTop(p, Row(bExport, bOpen,
-                L("Capitoli: introduzione, strato E, geometria, radiante, riflessione, efficienza, lettura dei risultati, frequenza, limiti, fonti")));
+                L(Lang.T("Capitoli: introduzione, strato E, geometria, radiante, riflessione, efficienza, lettura dei risultati, frequenza, limiti, fonti"))));
 
             // aspetto "pagina": foglio chiaro centrato, larghezza massima 860 px, ombra, su fondo scuro
             StackPanel doc = new StackPanel();
@@ -106,9 +106,9 @@ namespace YAMS
             string[] lines;
             try
             {
-                lines = File.Exists(file) ? File.ReadAllLines(file, Encoding.UTF8) : new[] { "P|File mancante: " + file };
+                lines = File.Exists(file) ? File.ReadAllLines(file, Encoding.UTF8) : new[] { "P|" + Lang.F("File mancante: {0}", file) };
             }
-            catch (Exception ex) { lines = new[] { "P|Impossibile leggere " + file + ": " + ex.Message }; }
+            catch (Exception ex) { lines = new[] { "P|" + Lang.F("Impossibile leggere {0}: {1}", file, ex.Message) }; }
 
             foreach (string raw in lines)
             {
@@ -206,13 +206,13 @@ namespace YAMS
         {
             try
             {
-                if (!File.Exists(docx)) { await Dialogs.Message(this, "Esporta", "File mancante: " + docx); return; }
+                if (!File.Exists(docx)) { await Dialogs.Message(this, Lang.T("Esporta"), Lang.F("File mancante: {0}", docx)); return; }
                 IStorageFile f = await StorageProvider.SaveFilePickerAsync(new FilePickerSaveOptions
                 {
-                    Title = "Esporta il documento in Word",
+                    Title = Lang.T("Esporta il documento in Word"),
                     SuggestedFileName = "YA-MS - calcolo dell'efficienza.docx",
                     DefaultExtension = "docx",
-                    FileTypeChoices = new[] { new FilePickerFileType("Documento Word") { Patterns = new[] { "*.docx" } } }
+                    FileTypeChoices = new[] { new FilePickerFileType(Lang.T("Documento Word")) { Patterns = new[] { "*.docx" } } }
                 });
                 if (f == null) return;
                 string dest = f.TryGetLocalPath();
@@ -223,9 +223,9 @@ namespace YAMS
                     using (FileStream src = File.OpenRead(docx))
                         await src.CopyToAsync(dst);
                 }
-                status.Text = "Documento esportato: " + (dest ?? f.Name);
+                status.Text = Lang.F("Documento esportato: {0}", dest ?? f.Name);
             }
-            catch (Exception ex) { await Dialogs.Message(this, "Esporta", ex.Message); }
+            catch (Exception ex) { await Dialogs.Message(this, Lang.T("Esporta"), ex.Message); }
         }
 
         // Mappa d'Europa (Natural Earth): scaricata al primo avvio su un thread secondario, poi letta dal disco
@@ -249,7 +249,7 @@ namespace YAMS
                 {
                     sky.MapLines = coast; sky.MapBorders = border; sky.InvalidateMap();
                     RefreshGrids();
-                    if (coast.Count == 0) status.Text = "Mappa d'Europa non disponibile (serve la rete al primo avvio). " + m2;
+                    if (coast.Count == 0) status.Text = Lang.T("Mappa d'Europa non disponibile (serve la rete al primo avvio).") + " " + m2;
                 });
             });
         }

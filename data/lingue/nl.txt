@@ -561,3 +561,5 @@ parola aggiunta	toegevoegd woord
 righe ricevute      {0}\nspot letti          {1}\nspot MS accettati   {2}\nscartati (parola)   {3}\nscartati (banda)    {4}\nspot MS ultima ora  {5}	ontvangen regels     {0}\ngelezen spots        {1}\ngeaccepteerde MS     {2}\nafgewezen (woord)    {3}\nafgewezen (band)     {4}\nMS-spots laatste uur {5}
 righe {0}, spot letti {1}, MS {2}	regels {0}, spots {1}, MS {2}
 {0} spot MS in memoria	{0} MS-spots in het geheugen
+righe sotto 27990 kHz scartate: {0}	regels onder 27990 kHz weggegooid: {0}
+Scarta subito le righe del cluster sotto 27990,0 kHz (non compaiono nella console e non si memorizzano)	Clusterregels onder 27990,0 kHz meteen weggooien (verschijnen niet in de console en worden niet opgeslagen)

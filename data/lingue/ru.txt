@@ -561,3 +561,5 @@ parola aggiunta	добавленное слово
 righe ricevute      {0}\nspot letti          {1}\nspot MS accettati   {2}\nscartati (parola)   {3}\nscartati (banda)    {4}\nspot MS ultima ora  {5}	получено строк       {0}\nпрочитано спотов     {1}\nпринято спотов MS    {2}\nотклонено (слово)    {3}\nотклонено (диапазон) {4}\nспотов MS за час     {5}
 righe {0}, spot letti {1}, MS {2}	строк {0}, спотов {1}, MS {2}
 {0} spot MS in memoria	спотов MS в памяти: {0}
+righe sotto 27990 kHz scartate: {0}	отброшено строк ниже 27990 кГц: {0}
+Scarta subito le righe del cluster sotto 27990,0 kHz (non compaiono nella console e non si memorizzano)	Сразу отбрасывать строки кластера ниже 27990,0 кГц (не показываются в консоли и не сохраняются)

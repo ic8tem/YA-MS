@@ -110,6 +110,11 @@ namespace YAMS
                 bw.Children.Add(rdBand[i]);
             }
             fp.Children.Add(bw);
+            CheckBox chkLow = C(Lang.T("Scarta subito le righe del cluster sotto 27990,0 kHz (non compaiono nella console e non si memorizzano)"), MsCollector.DropLow);
+            ((Control)chkLow).Margin = new Thickness(0, 4, 0, 0);
+            if (chkLow.Content is string cs) chkLow.Content = new TextBlock { Text = cs, TextWrapping = TextWrapping.Wrap };
+            chkLow.IsCheckedChanged += (s, e) => MsCollector.DropLow = chkLow.IsChecked == true;
+            fp.Children.Add(chkLow);
 
             fp.Children.Add(new TextBlock { Text = Lang.T("Prova del filtro"), FontWeight = FontWeight.Bold, Foreground = Pal.B(Pal.Fore), Margin = new Thickness(0, 6, 0, 0) });
             txtRdTest = T("DX de DK5EW-#:  144360.0  IK7XXX   MSK144 +2 dB JN70CN<MS>JO40   2133Z", 420, false);
@@ -307,7 +312,8 @@ namespace YAMS
             int lastHour = 0; DateTime lim = DateTime.UtcNow.AddHours(-1);
             foreach (MsSpot s in MsCollector.Spots) if (s.Utc >= lim) lastHour++;
             lblRdStats.Text = Lang.F("righe ricevute      {0}\nspot letti          {1}\nspot MS accettati   {2}\nscartati (parola)   {3}\nscartati (banda)    {4}\nspot MS ultima ora  {5}",
-                lines, parsed, acc, MsCollector.RejectedNoWord, MsCollector.RejectedBand, lastHour);
+                lines, parsed, acc, MsCollector.RejectedNoWord, MsCollector.RejectedBand, lastHour)
+                + "\n" + Lang.F("righe sotto 27990 kHz scartate: {0}", MsCollector.DroppedLow);
             foreach (Control c in rdWordList.Children)
                 if (c is Grid gr) foreach (Control x in gr.Children) if (x is TextBlock tb && tb.Tag is MsFilterWord fw) tb.Text = fw.Count.ToString(CultureInfo.CurrentCulture);
             if (rdDirty) FillRdTable();

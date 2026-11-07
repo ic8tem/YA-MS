@@ -561,3 +561,5 @@ parola aggiunta	hinzugefügtes Wort
 righe ricevute      {0}\nspot letti          {1}\nspot MS accettati   {2}\nscartati (parola)   {3}\nscartati (banda)    {4}\nspot MS ultima ora  {5}	empfangene Zeilen    {0}\ngelesene Spots       {1}\nangenommene MS-Spots {2}\nabgelehnt (Wort)     {3}\nabgelehnt (Band)     {4}\nMS-Spots letzte Std. {5}
 righe {0}, spot letti {1}, MS {2}	Zeilen {0}, Spots {1}, MS {2}
 {0} spot MS in memoria	{0} MS-Spots im Speicher
+righe sotto 27990 kHz scartate: {0}	verworfene Zeilen unter 27990 kHz: {0}
+Scarta subito le righe del cluster sotto 27990,0 kHz (non compaiono nella console e non si memorizzano)	Cluster-Zeilen unter 27990,0 kHz sofort verwerfen (erscheinen nicht in der Konsole und werden nicht gespeichert)

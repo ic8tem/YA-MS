@@ -561,3 +561,5 @@ parola aggiunta	追加した語
 righe ricevute      {0}\nspot letti          {1}\nspot MS accettati   {2}\nscartati (parola)   {3}\nscartati (banda)    {4}\nspot MS ultima ora  {5}	受信行数          {0}\n読み取りスポット  {1}\n採用 MS スポット  {2}\n不採用 (語)       {3}\n不採用 (バンド)   {4}\n直近1時間の MS    {5}
 righe {0}, spot letti {1}, MS {2}	行 {0}、スポット {1}、MS {2}
 {0} spot MS in memoria	メモリー内の MS スポット {0} 件
+righe sotto 27990 kHz scartate: {0}	27990 kHz 未満で破棄した行: {0}
+Scarta subito le righe del cluster sotto 27990,0 kHz (non compaiono nella console e non si memorizzano)	27990.0 kHz 未満のクラスター行をすぐに破棄する (コンソールに表示せず、保存もしない)

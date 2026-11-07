@@ -561,3 +561,5 @@ parola aggiunta	added word
 righe ricevute      {0}\nspot letti          {1}\nspot MS accettati   {2}\nscartati (parola)   {3}\nscartati (banda)    {4}\nspot MS ultima ora  {5}	lines received      {0}\nspots read          {1}\nMS spots accepted   {2}\nrejected (word)     {3}\nrejected (band)     {4}\nMS spots last hour  {5}
 righe {0}, spot letti {1}, MS {2}	lines {0}, spots read {1}, MS {2}
 {0} spot MS in memoria	{0} MS spots in memory
+righe sotto 27990 kHz scartate: {0}	lines below 27990 kHz discarded: {0}
+Scarta subito le righe del cluster sotto 27990,0 kHz (non compaiono nella console e non si memorizzano)	Discard at once the cluster lines below 27990.0 kHz (they do not appear in the console and are not stored)

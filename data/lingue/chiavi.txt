@@ -338,6 +338,7 @@ SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az.
 SGO, Finlandia
 Scarica RMOB adesso
 Scarica adesso
+Scarta subito le righe del cluster sotto 27990,0 kHz (non compaiono nella console e non si memorizzano)
 Scia meteorica
 Sciame
 Sciame più favorevole
@@ -508,6 +509,7 @@ rete assente: {0}
 riflessioni/ora
 riflessioni/ora a {0} MHz
 righe ricevute      {0}\nspot letti          {1}\nspot MS accettati   {2}\nscartati (parola)   {3}\nscartati (banda)    {4}\nspot MS ultima ora  {5}
+righe sotto 27990 kHz scartate: {0}
 righe {0}, spot letti {1}, MS {2}
 scala letta dal grafico: 0-{0} meteore/ora
 scala non letta

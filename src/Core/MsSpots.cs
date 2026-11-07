@@ -90,7 +90,12 @@ namespace YAMS
         public static readonly HashSet<string> Bands = new HashSet<string>(MsBands.Names);
         public static readonly Queue<string>[] ConsoleLines = { new Queue<string>(), new Queue<string>(), new Queue<string>() };
         public static int[] Lines = new int[3], Parsed = new int[3], Accepted = new int[3];
-        public static int RejectedNoWord, RejectedBand;
+        public static int RejectedNoWord, RejectedBand, DroppedLow;
+        // regola dell'autore (IC8TEM): le righe "DX de" con frequenza sotto 27990,0 kHz si scartano subito, in locale:
+        // non vanno nella console, non si contano come spot e non si memorizzano
+        // (opzionale: casella nella linguetta, accesa di partenza)
+        public const double MinKHz = 27990.0;
+        public static bool DropLow = true;
         public static string Dir;
         public static bool Started;        // connessione automatica gia' eseguita (una sola volta per avvio del programma)
         public static string[] StateText = { "Non connesso", "Non connesso", "Non connesso" };
@@ -114,6 +119,7 @@ namespace YAMS
                     Sessions[i].StateChanged += st => { StateText[k] = st; };
                 }
                 LoadWords(cfg);
+                DropLow = cfg.GetB("rd_scarta_sotto_28", true);
                 string b = cfg.Get("rd_bande", "");
                 if (b.Length > 0) { Bands.Clear(); foreach (string x in b.Split(',')) if (x.Trim().Length > 0) Bands.Add(x.Trim()); }
                 LoadRecent();
@@ -144,6 +150,7 @@ namespace YAMS
             foreach (MsFilterWord w in Words) { if (sb.Length > 0) sb.Append('\u0001'); sb.Append(w.Enabled ? "1|" : "0|").Append(w.Text); }
             cfg.Set("rd_filtri", sb.ToString());
             cfg.Set("rd_bande", string.Join(",", Bands));
+            cfg.Set("rd_scarta_sotto_28", DropLow);
         }
 
         public static void Shutdown() { foreach (TelnetSession s in Sessions) s.Disconnect(); }
@@ -166,9 +173,10 @@ namespace YAMS
             {
                 int i = kv.Key;
                 Lines[i]++;
+                MsSpot s = Parse(kv.Value, i, now);
+                if (DropLow && s != null && s.FreqKHz < MinKHz) { DroppedLow++; continue; }
                 ConsoleLines[i].Enqueue(kv.Value);
                 while (ConsoleLines[i].Count > 200) ConsoleLines[i].Dequeue();
-                MsSpot s = Parse(kv.Value, i, now);
                 if (s == null) continue;
                 Parsed[i]++;
                 MsFilterWord w = FindWord(s.Comment + " " + s.DxCall);
@@ -190,7 +198,7 @@ namespace YAMS
         // ---- lettura della riga "DX de SPOTTER:  FREQ  DXCALL  commento  HHMMZ [LOC]"
         static readonly Regex rxDx = new Regex(@"^DX de\s+([A-Z0-9/\-#_]+)[:>]?\s+(\d+(?:\.\d+)?)\s+([A-Z0-9/]+)\s+(.*?)\s*(\d{4})Z(?:\s+([A-R]{2}\d{2}(?:[A-X]{2})?))?\s*$",
             RegexOptions.IgnoreCase | RegexOptions.Compiled);
-        static readonly Regex rxTwoLoc = new Regex(@"\b([A-R]{2}\d{2}(?:[A-X]{2})?)\s*(?:<\s*MS\s*>|\(\s*MS\s*\)|[-/>\s])\s*([A-R]{2}\d{2}(?:[A-X]{2})?)\b", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        static readonly Regex rxTwoLoc = new Regex(@"\b([A-R]{2}\d{2}(?:[A-X]{2})?)\s*(?:<\s*MS\s*>|\(\s*MS\s*\)|<-?>|[-/>\s])\s*([A-R]{2}\d{2}(?:[A-X]{2})?)\b", RegexOptions.IgnoreCase | RegexOptions.Compiled);
         static readonly Regex rxLoc = new Regex(@"\b([A-R]{2}\d{2}(?:[A-X]{2})?)\b", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
         public static MsSpot Parse(string line, int source, DateTime nowUtc)

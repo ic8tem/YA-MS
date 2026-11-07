@@ -157,7 +157,7 @@ jobs:
           ls -la shots
           ls shots/*.png >/dev/null
       - uses: actions/upload-artifact@v4
-        if: matrix.rid == 'linux-arm64'
+        if: matrix.rid == 'linux-arm64' && github.ref == 'refs/heads/main'   # non finisce nella Release
         with:
           name: prova-arm64
           path: shots/*

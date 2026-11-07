@@ -564,10 +564,47 @@ namespace YAMS
 
         void BuildTabs()
         {
-            // ===== 1. Live e volta celeste: calcolo previsionale, geometria e attenuazione, traffico in diretta
-            Group(Lang.T("Live e volta celeste"));
+            // ===== 1. Live e dati real-time: traffico in diretta, flusso radar, radar GRAVES, raccolta dati
+            Group(Lang.T("Live e dati real-time"));
 
-            // --- Volta celeste
+            // --- Traffico in diretta: spot MS della raccolta dati sulla mappa azimutale (MainWindow.Traffico.cs)
+            BuildTrafficTab();
+
+            // --- Flusso radar
+            DockPanel p3 = Page(Lang.T("Flusso radar"));
+            btnFetch = B(Lang.T("Scarica adesso")); btnFetch.Click += (s, e) => StartFetch();
+            chkAuto = C(Lang.T("Aggiornamento automatico di tutte le fonti ogni 5 minuti"), cfg.GetB("aggiornamento_automatico", true));
+            numExp = N(1, 4, Dm(cfg.GetD("esponente_lambda", 3)), 1, 0.1m, 50);
+            numExp.ValueChanged += (s, e) => UpdateFluxTab();
+            lblRadar = L("");
+            DockTop(p3, Row(btnFetch, chkAuto, L(Lang.T("Esponente λ (SM6FHZ)")), numExp, lblRadar));
+            lblScaleNote = new TextBlock { Foreground = Pal.B(Pal.OrangeText), TextWrapping = TextWrapping.Wrap, Margin = new Thickness(6, 4, 6, 4) };
+            DockTop(p3, lblScaleNote);
+            Grid tl = new Grid { ColumnDefinitions = new ColumnDefinitions("62*,38*"), RowDefinitions = new RowDefinitions("50*,50*") };
+            chartFlux = new SimpleChart();
+            chartHeight = new SimpleChart();
+            picCollm = MakePicture(); picSoda = MakePicture();
+            Border fCollm = Framed(picCollm, Pal.ChartBg), fSoda = Framed(picSoda, Pal.ChartBg);
+            Grid.SetColumn(chartFlux, 0); Grid.SetRow(chartFlux, 0);
+            Grid.SetColumn(fCollm, 1); Grid.SetRow(fCollm, 0);
+            Grid.SetColumn(chartHeight, 0); Grid.SetRow(chartHeight, 1);
+            Grid.SetColumn(fSoda, 1); Grid.SetRow(fSoda, 1);
+            tl.Children.Add(chartFlux); tl.Children.Add(fCollm); tl.Children.Add(chartHeight); tl.Children.Add(fSoda);
+            p3.Children.Add(tl);
+
+            // --- Radar GRAVES (MainWindow.Graves.cs)
+            BuildGravesTab();
+
+            // --- Raccolta dati: spot MS da cluster, RBN e PSKReporter (MainWindow.Raccolta.cs)
+            BuildCollectTab();
+
+            EndGroup();
+
+            // ===== 2. Calcolo previsionale: volta celeste e calcolo, geometria e attenuazione, calcolo dell'efficienza,
+            //          attuazione sperimentale previsioni
+            Group(Lang.T("Calcolo previsionale"));
+
+            // --- Calcolo previsionale (ex "Volta celeste")
             DockPanel p1 = Page(Lang.T("Calcolo previsionale"));   // ex linguetta "Volta celeste"
             Grid sc = new Grid { ColumnDefinitions = new ColumnDefinitions("60*,40*") };
             p1.Children.Add(sc);
@@ -664,68 +701,6 @@ namespace YAMS
             sg.Children.Add(geoBox); sg.Children.Add(chartElev);
             p4.Children.Add(sg);
 
-            // --- Traffico in diretta: spot MS della raccolta dati sulla mappa azimutale (MainWindow.Traffico.cs)
-            BuildTrafficTab();
-            EndGroup();
-
-            // ===== 2. Dati real-time: flusso radar, radar GRAVES, raccolta dati
-            Group(Lang.T("Dati real-time"));
-
-            // --- Flusso radar (subito dopo "Volta celeste")
-            DockPanel p3 = Page(Lang.T("Flusso radar"));
-            btnFetch = B(Lang.T("Scarica adesso")); btnFetch.Click += (s, e) => StartFetch();
-            chkAuto = C(Lang.T("Aggiornamento automatico di tutte le fonti ogni 5 minuti"), cfg.GetB("aggiornamento_automatico", true));
-            numExp = N(1, 4, Dm(cfg.GetD("esponente_lambda", 3)), 1, 0.1m, 50);
-            numExp.ValueChanged += (s, e) => UpdateFluxTab();
-            lblRadar = L("");
-            DockTop(p3, Row(btnFetch, chkAuto, L(Lang.T("Esponente λ (SM6FHZ)")), numExp, lblRadar));
-            lblScaleNote = new TextBlock { Foreground = Pal.B(Pal.OrangeText), TextWrapping = TextWrapping.Wrap, Margin = new Thickness(6, 4, 6, 4) };
-            DockTop(p3, lblScaleNote);
-            Grid tl = new Grid { ColumnDefinitions = new ColumnDefinitions("62*,38*"), RowDefinitions = new RowDefinitions("50*,50*") };
-            chartFlux = new SimpleChart();
-            chartHeight = new SimpleChart();
-            picCollm = MakePicture(); picSoda = MakePicture();
-            Border fCollm = Framed(picCollm, Pal.ChartBg), fSoda = Framed(picSoda, Pal.ChartBg);
-            Grid.SetColumn(chartFlux, 0); Grid.SetRow(chartFlux, 0);
-            Grid.SetColumn(fCollm, 1); Grid.SetRow(fCollm, 0);
-            Grid.SetColumn(chartHeight, 0); Grid.SetRow(chartHeight, 1);
-            Grid.SetColumn(fSoda, 1); Grid.SetRow(fSoda, 1);
-            tl.Children.Add(chartFlux); tl.Children.Add(fCollm); tl.Children.Add(chartHeight); tl.Children.Add(fSoda);
-            p3.Children.Add(tl);
-
-            // --- Radar GRAVES (MainWindow.Graves.cs), subito dopo "Calcolo dell'efficienza"
-            BuildGravesTab();
-
-            // --- Raccolta dati: spot MS da cluster, RBN e PSKReporter (MainWindow.Raccolta.cs)
-            BuildCollectTab();
-
-            EndGroup();
-
-            // ===== 3. Documenti tecnici: fonti, mappa dei radar europei, efficienza - spiegazione
-            Group(Lang.T("Documenti tecnici"));
-
-            // --- Fonti
-            DockPanel p6 = Page(Lang.T("Fonti"));
-            txtSources = new SelectableTextBlock { FontSize = 13.5, Foreground = Pal.B(Pal.Fore), TextWrapping = TextWrapping.Wrap, Text = SourcesText() };
-            p6.Children.Add(new ScrollViewer
-            {
-                HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled,
-                VerticalScrollBarVisibility = ScrollBarVisibility.Auto,
-                Content = new Border { Padding = new Thickness(14, 10), Child = txtSources }
-            });
-
-            // --- Mappa delle fonti (MainWindow.MappaFonti.cs)
-            BuildSourcesMapTab();
-
-            // --- Efficienza - spiegazione (MainWindow.Spiegazione.cs)
-            BuildExplainTab();
-
-            EndGroup();
-
-            // ===== le altre linguette, nell'ordine di prima
-            // --- Sciami in diretta: GMN e CMOR (MainWindow.Diretta.cs)
-            BuildLiveTab();
-
             // --- Calcolo dell'efficienza (ex "Efficienza 24 h")
             DockPanel p2 = Page(Lang.T("Calcolo dell'efficienza"));
             // colpo d'occhio: quattro riquadri riassuntivi sopra il grafico
@@ -769,6 +744,33 @@ namespace YAMS
 
             // --- Attuazione sperimentale previsioni (MainWindow.Previsioni.cs)
             BuildPrevTab();
+
+            EndGroup();
+
+            // ===== 3. Documenti tecnici: fonti, mappa dei radar europei, efficienza - spiegazione
+            Group(Lang.T("Documenti tecnici"));
+
+            // --- Fonti
+            DockPanel p6 = Page(Lang.T("Fonti"));
+            txtSources = new SelectableTextBlock { FontSize = 13.5, Foreground = Pal.B(Pal.Fore), TextWrapping = TextWrapping.Wrap, Text = SourcesText() };
+            p6.Children.Add(new ScrollViewer
+            {
+                HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled,
+                VerticalScrollBarVisibility = ScrollBarVisibility.Auto,
+                Content = new Border { Padding = new Thickness(14, 10), Child = txtSources }
+            });
+
+            // --- Mappa dei radar europei (ex "Mappa delle fonti", MainWindow.MappaFonti.cs)
+            BuildSourcesMapTab();
+
+            // --- Efficienza - spiegazione (MainWindow.Spiegazione.cs)
+            BuildExplainTab();
+
+            EndGroup();
+
+            // ===== le altre linguette, nell'ordine di prima
+            // --- Sciami in diretta: GMN e CMOR (MainWindow.Diretta.cs)
+            BuildLiveTab();
 
             // --- Sciami
             DockPanel p5 = Page(Lang.T("Sciami"));
@@ -1256,7 +1258,7 @@ namespace YAMS
             double f1 = ForecastAt(hNow);
             double f2 = ForecastAt(hNow.AddHours(1));
             double f3 = ForecastAt(hNow.AddHours(2));
-            glFore.Text = f1 < 0 ? Lang.T("nessun dato radar: vedi Flusso radar")
+            glFore.Text = f1 < 0 ? Lang.T("nessun dato radar: vedi Live e dati real-time › Flusso radar")
                 : Lang.F("{0:F0} MHz, riflessioni/ora previste\nora {1:F0} - tra 1 h {2} - tra 2 h {3}\nsperimentale (Collm, regole SM6FHZ)", PrevFreqMHz, f1,
                     f2 < 0 ? "-" : f2.ToString("F0"), f3 < 0 ? "-" : f3.ToString("F0"));
             ChartSeries ix = new ChartSeries(); ix.Name = Lang.T("indice tratta"); ix.Color = Pal.Ink(Pal.Rgb(90, 110, 200)); ix.Values = index; ix.Bars = true; ix.RightAxis = true;

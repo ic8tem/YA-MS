@@ -6,7 +6,7 @@ name: build
 
 on:
   push:
-    branches: [ main, release ]
+    branches: [ main, release, prototipo-1.6 ]
     tags: [ 'v*' ]
   workflow_dispatch:
 
@@ -79,7 +79,7 @@ jobs:
           chmod +x pkg/YA-MS/installa.sh pkg/YA-MS/YA-MS
           tar -C pkg -czf dist/YA-MS-$VER-linux-x64.tar.gz YA-MS
       - name: Fotografie delle linguette (schermo virtuale)
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/prototipo-1.6')
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq xvfb fonts-dejavu-core fonts-noto-cjk >/dev/null
           # ore che mancano alle 01:00 UTC successive (Tauridi alte sulla tratta di prova JN70CN - IN78UO)
@@ -102,14 +102,14 @@ jobs:
           mkdir -p shots/radar && cp run/data/radar/* shots/radar/ 2>/dev/null || true
           ls run/data/mappa > shots/mappa.txt 2>&1 || true
       - name: Pubblica le fotografie sul ramo ci-screenshots
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/prototipo-1.6')
         run: |
           [ -d shots ] || exit 0
           cd shots
           git init -q -b ci-screenshots
           git config user.name "github-actions"; git config user.email "actions@github.com"
           git add -A && git commit -q -m "fotografie ${GITHUB_SHA::7}"
-          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" ci-screenshots
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" ci-screenshots:${{ github.ref == 'refs/heads/main' && 'ci-screenshots' || 'ci-screenshots-prototipo' }}
       - uses: actions/upload-artifact@v4
         with:
           name: linux

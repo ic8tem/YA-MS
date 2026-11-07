@@ -29,7 +29,7 @@ namespace YAMS
 
             Grid g = new Grid { ColumnDefinitions = new ColumnDefinitions("58*,42*"), RowDefinitions = new RowDefinitions("*,*"), Margin = new Thickness(6) };
             srcEurope = new SourcesMapView { Title = Lang.T("Europa"), LonMin = -12, LonMax = 38, LatMin = 34, LatMax = 72, MinorLabel = Lang.T("osservatori RMOB che ascoltano GRAVES") };
-            srcWorld = new SourcesMapView { Title = Lang.T("Mondo"), LonMin = -130, LonMax = 45, LatMin = 12, LatMax = 75, FontK = 0.9 };
+            srcWorld = new SourcesMapView { Title = Lang.T("Mondo"), LonMin = -125, LonMax = 70, LatMin = 12, LatMax = 75, FontK = 0.9 };
             Border be = new Border { Child = srcEurope, Margin = new Thickness(0, 0, 6, 0) };
             Grid.SetRowSpan(be, 2);
             Border bw = new Border { Child = srcWorld, Margin = new Thickness(0, 0, 0, 6) };
@@ -89,8 +89,8 @@ namespace YAMS
                     string dir = dataDir;
                     System.Threading.ThreadPool.QueueUserWorkItem(_ =>
                     {
-                        var co = MapData.Load(MapData.CoastFile(dir), -140, 75);
-                        var bo = MapData.Load(MapData.BorderFile(dir), -140, 75);
+                        var co = MapData.Load(MapData.CoastFile(dir), -140, 80);
+                        var bo = MapData.Load(MapData.BorderFile(dir), -140, 80);
                         Dispatcher.UIThread.Post(() =>
                         {
                             srcWideLoading = false;

@@ -1,0 +1,33 @@
+[English](Grid-Square-Map) · [Русский](Grid-Square-Map-ru) · [Deutsch](Grid-Square-Map-de) · **日本語**
+
+# グリッド地図
+
+*タブ 10。*
+
+[![グリッド地図](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-10.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-10.png)
+
+ログの ADIF ファイルから読み込んだ、**交信済**と**確認済**のマイデンヘッド グリッド (4 文字) をヨーロッパの地図上に表示します – **バンドごとにサブタブ: 50、70、144、222、432 MHz**。
+
+## 操作
+
+| 操作 | 機能 |
+|---|---|
+| **ADIF ファイルを読込...** | `.adi` / `.adif` ファイルを読み込みます。新しい ADIF は以前のデータを**置き換えます**。 |
+| **メモリ消去** | ADIF から読み込んだ全グリッドを消去します (確認あり)。 |
+| マウス | **ホイール = ズーム、ドラッグ = 移動、グリッド上にマウス = QSO** (日付付きで最大 6 つのコールサイン。確認済のものは *(確認済)*) |
+
+読み込み後、ステータスに *… QSO 読込、50-432 MHz の QSO グリッド …、除外 QSO … (他バンドまたはグリッドなし)* と表示されます。各バンドの地図には *…: 交信済グリッド …、確認済 …* という説明が付きます。
+
+| 色 | 意味 |
+|---|---|
+| 橙 | 交信済 |
+| 緑 | 確認済 (QSL または LoTW) |
+
+## ADIF の読み方
+
+- 使用するフィールド: `CALL`、`GRIDSQUARE`、`VUCC_GRIDS`、`BAND`、`FREQ`、`QSO_DATE`、`QSL_RCVD`、`LOTW_QSL_RCVD` (ADIF 仕様)。
+- バンドは `BAND` から、または周波数から: 50–54 MHz = 6 m、69.9–71.5 MHz = 4 m、144–148 MHz = 2 m、219–225 MHz = 1.25 m、420–450 MHz = 70 cm。
+- グリッド内の少なくとも 1 つの QSO が `QSL_RCVD = Y` または `LOTW_QSL_RCVD = Y` なら、そのグリッドは**確認済**です。
+- グリッドは別のファイルを読み込むか **メモリ消去** を押すまで `data/adif_quadrati.csv` に保存されます。
+
+YA-MS は LoTW に**接続しません**: ログソフト (または LoTW) から ADIF を出力して、ここで読み込んでください。

@@ -1,4 +1,4 @@
-YA-MS 1.5.0 - a cura di Costantino IC8TEM
+YA-MS 1.5.1 - a cura di Costantino IC8TEM
 Previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter (50-432 MHz)
 Windows (64 e 32 bit), Linux, Raspberry Pi e Mac.
 
@@ -17,6 +17,13 @@ INSTALLAZIONE
            Aprire il .dmg, clic destro su "Installa YA-MS.command" > Apri. Installa in ~/YA-MS.
            Il programma non e' firmato da Apple: la prima volta il Mac chiede conferma.
   Le versioni nuove si installano sopra la precedente: impostazioni, archivi del flusso e mappa restano.
+
+NOVITA' DELLA 1.5.1
+  - Raccolta dati, primo criterio: frequenze tipiche degli spot MS (50190-50300, 70100-70400, 144290-144399 kHz).
+    Lo spot in queste finestre si accetta anche senza il nome del modo, salvo scritte di altra propagazione
+    (<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>). Finestre e scritte modificabili, criterio disattivabile.
+  - Secondo criterio (fuori dalle finestre o con quelle scritte): modi MS e <MS>, come nella 1.5.0.
+  - Prova del filtro con il criterio che decide; nuovi contatori per finestra e per altra propagazione.
 
 NOVITA' DELLA 1.5.0
   - Nuova linguetta "Raccolta dati" (come DATA COLLECTION di E-LAYER ANALYZER): tre sessioni telnet (DX cluster a scelta,

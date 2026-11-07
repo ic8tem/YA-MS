@@ -85,6 +85,11 @@ jobs:
             rm -f run/data/config.ini   # ogni prova parte da impostazioni pulite (carattere 100 %)
             timeout 180 xvfb-run -a -s "-screen 0 1600x1000x24" ./run/YA-MS --screenshot "$PWD/shots/lingua_$L" --dx IN78UO --ore $H --lingua $L || true
           done
+          # schemi di colori: le prove sopra sono nello schema predefinito "chiaro"
+          for T in scuro scia; do
+            rm -f run/data/config.ini
+            timeout 180 xvfb-run -a -s "-screen 0 1600x1000x24" ./run/YA-MS --screenshot "$PWD/shots/tema_$T" --dx IN78UO --ore $H --tema $T || true
+          done
           ls -la shots || true
           cp run/data/errore_avvio.txt shots/ 2>/dev/null || true
           mkdir -p shots/radar && cp run/data/radar/* shots/radar/ 2>/dev/null || true

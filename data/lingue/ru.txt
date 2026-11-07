@@ -458,3 +458,17 @@ zona PREV	зона PREV
 Σ ZHR x effic.	Σ ZHR x эфф.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (слева)
+# schemi di colori (nomi dei pastelli come in YAEC)
+Chiaro	Светлая
+Notte	Ночь
+Nero	Чёрная
+Pastello azzurro	Пастельный голубой
+Pastello arancione	Пастельный оранжевый
+Pastello acquamarina	Пастельный аквамарин
+Pastello verde	Пастельный зелёный
+Pastello rosa	Пастельный розовый
+Pastello lilla	Пастельный сиреневый
+Pastello indaco	Пастельный индиго
+Pastello marrone	Пастельный коричневый
+Scia meteorica	Метеорный след
+Tema	Тема

@@ -458,3 +458,17 @@ zona PREV	PREV zone
 Σ ZHR x effic.	Σ ZHR x effic.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (left)
+# schemi di colori (nomi dei pastelli come in YAEC)
+Chiaro	Light
+Notte	Night
+Nero	Black
+Pastello azzurro	Pastel light blue
+Pastello arancione	Pastel orange
+Pastello acquamarina	Pastel aquamarine
+Pastello verde	Pastel green
+Pastello rosa	Pastel pink
+Pastello lilla	Pastel lilac
+Pastello indaco	Pastel indigo
+Pastello marrone	Pastel brown
+Scia meteorica	Meteor trail
+Tema	Theme

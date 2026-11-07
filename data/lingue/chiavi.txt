@@ -59,6 +59,7 @@ Carica file ADIF...
 Carica file RMOB dal disco...
 Catalogo sciami
 Che cosa fare
+Chiaro
 Collm stessa ora
 Collm {0} MHz (validi)
 Comae Berenicidi
@@ -192,6 +193,7 @@ Monocerotidi di dicembre
 N
 N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durata delle riflessioni x ({1:F1}/{0:F0})^2 = x {5:F4}: un eco di 1 s a {1:F1} MHz dura circa {6:F0} ms a {0:F0} MHz (ping massimo IARU a {0:F0} MHz: {7:F0} ms).\nRegole sperimentali di SM6FHZ (VUSHF 2025). Il fattore K tiene conto della stazione ricevente (potenza, antenne): si ricava confrontando con un osservatore RMOB sulla stessa banda.
 Natural Earth - coste e confini 1:50 milioni, dominio pubblico, www.naturalearthdata.com (mappa d'Europa)
+Nero
 Nessun Hot consigliato: sciami attivi quasi assenti in questo momento
 Nessun dato del radar: scaricalo dalla linguetta Flusso radar.
 Nessuna fonte Collm in fonti_radar.csv
@@ -205,6 +207,7 @@ Non ho riconosciuto il formato del file.
 Non riesco a leggere la scala verticale del flusso (etichetta in cima: {0}): valori da verificare.
 Non riesco ad aprire il documento: {0}
 Nota: i dati dei radar appartengono ai rispettivi enti. Prima di distribuire il programma va chiesto il permesso di prelevarli automaticamente.
+Notte
 Nuovo locator del corrispondente dalla mappa: {0}
 Nuovo locator della stazione dalla mappa: {0}
 O
@@ -219,6 +222,14 @@ Osservatore RMOB
 PREVISIONE SPERIMENTALE
 PROSSIMO PASSAGGIO DEL FASCIO SULLA ZONA
 Passo
+Pastello acquamarina
+Pastello arancione
+Pastello azzurro
+Pastello indaco
+Pastello lilla
+Pastello marrone
+Pastello rosa
+Pastello verde
 Pegasidi di luglio
 Perseidi
 Philip G0ISW - www.qsl.net/g0isw/g0iswms.htm (tassi orari radio massimi)
@@ -272,6 +283,7 @@ SCIAME PIÙ FAVOREVOLE
 SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az. {0}°)
 Scarica RMOB adesso
 Scarica adesso
+Scia meteorica
 Sciame
 Sciame più favorevole
 Sciami
@@ -293,6 +305,7 @@ Sì · settore {0}
 TRATTA
 Tauridi Nord
 Tauridi Sud
+Tema
 Tempo reale
 Tipo
 Tramonta

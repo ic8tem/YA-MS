@@ -22,6 +22,16 @@ Nuovo progetto: `/home/claude/YA-MS` (progetto `YA-MS.csproj`, net8.0, Avalonia 
   `MapData.Load` restituisce `List<System.Drawing.PointF[]>` (X = lon, Y = lat): va bene tenerlo cosi'.
 - Testi dell'interfaccia in italiano, identici al vecchio programma salvo "MS Sciami" -> "YA-MS".
 
+## Schemi di colori (src/UI/Theme.cs, come YAEC)
+- `Tema.Imposta(n)`: 0 Chiaro (predefinito), 1 Notte, 2 Nero, 3-10 pastelli (azzurro, arancione, acquamarina, verde, rosa, lilla,
+  indaco, marrone), 11 "Scia meteorica" (tavolozza originale). Chiave `tema` di config.ini ("chiaro", "scuro", "nero",
+  "pastello-<nome>", "scia"); argomento `--tema <chiave>` per le fotografie. Cambio di schema = finestra ricostruita come per la lingua.
+- I campi di `Pal` cambiano con lo schema: leggerli quando si crea il controllo o nel `Render`, MAI in campi `static readonly`.
+  Voci aggiunte: `Card, Field, FieldFore, ChartBg, ChartGrid, ChartText, OkBg, WarnBg, BarFore, BarMuted, BarHover, AccentFore,
+  AccentHover, Pill*, Select, TableHead*, Code*, Desk`; `Pal.Ink(c)` scurisce i colori di dato troppo chiari negli schemi chiari.
+- I "cieli" (volta celeste, sezione, cielo di GRAVES, mappa dei quadrati) restano scuri in tutti gli schemi: dentro usano `SkyPal`
+  (colori fissi); le scritte fuori dal cielo usano `Pal`. Gli stili di App.axaml leggono `{DynamicResource Yams...}` impostate da `Tema.ApplicaStili()`.
+
 ## Lingue dell'interfaccia (src/UI/Lang.cs)
 - L'italiano e' la lingua di partenza: ogni testo visibile passa da `Lang.T("testo italiano")` oppure, con valori,
   da `Lang.F("testo con {0} e {1:F1}", a, b)` (UNA sola chiave per frase, mai frasi spezzate con +). Le chiavi devono essere

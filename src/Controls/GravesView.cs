@@ -85,10 +85,11 @@ namespace YAMS
         {
             switch (i)
             {
-                case 0: return Pal.Pink;     // D
-                case 1: return Pal.Azure;    // C
-                case 2: return Pal.Violet;   // B
-                default: return Pal.Orange;  // A
+                // colori fissi (SkyPal): il cielo di GRAVES resta scuro in tutti gli schemi
+                case 0: return SkyPal.Pink;     // D
+                case 1: return SkyPal.Azure;    // C
+                case 2: return SkyPal.Violet;   // B
+                default: return SkyPal.Orange;  // A
             }
         }
     }
@@ -248,7 +249,7 @@ namespace YAMS
             };
 
             Rect disc = new Rect(c.X - R, c.Y - R, 2 * R, 2 * R);
-            ctx.DrawEllipse(Pal.B(Pal.Back), null, c, R, R);
+            ctx.DrawEllipse(Pal.B(SkyPal.Back), null, c, R, R);   // cielo scuro fisso
             using (ctx.PushGeometryClip(new EllipseGeometry(disc)))
             {
                 // settori e passi (il passo illuminato adesso e' piu' chiaro, quello dell'hot spot in giallo)
@@ -260,7 +261,7 @@ namespace YAMS
                         double a0 = GravesBeam.AzMin + s * GravesBeam.SectorDeg + st * GravesBeam.StepDeg;
                         bool act = st == ActiveStep;
                         bool hot = s == HotSector && st == HotStep;
-                        Color fill = hot ? Pal.A(act ? 235 : 150, Pal.Yellow) : Pal.A(act ? 125 : 42, col);
+                        Color fill = hot ? Pal.A(act ? 235 : 150, SkyPal.Yellow) : Pal.A(act ? 125 : 42, col);
                         ctx.DrawGeometry(Pal.B(fill), Pal.P(Pal.A(80, col), 0.6), Wedge(c, rInKm * k, rOutKm * k, a0, a0 + GravesBeam.StepDeg));
                     }
                     // bordo del settore fino al cerchio esterno (settore anche oltre l'orizzonte)
@@ -274,19 +275,19 @@ namespace YAMS
                 EnsureMap(maxKm * 1.45);
                 using (ctx.PushTransform(Matrix.CreateScale(k, k) * Matrix.CreateTranslation(c.X, c.Y)))
                 {
-                    if (borderGeo != null) ctx.DrawGeometry(null, Pal.P(Pal.A(70, Pal.Silver), 0.7 / k), borderGeo);
-                    if (coastGeo != null) ctx.DrawGeometry(null, Pal.P(Pal.A(140, Pal.Silver), 0.9 / k), coastGeo);
+                    if (borderGeo != null) ctx.DrawGeometry(null, Pal.P(Pal.A(70, SkyPal.Silver), 0.7 / k), borderGeo);
+                    if (coastGeo != null) ctx.DrawGeometry(null, Pal.P(Pal.A(140, SkyPal.Silver), 0.9 / k), coastGeo);
                 }
 
                 // cerchi delle distanze
                 double ringStep = maxKm <= 1500 ? 250 : maxKm <= 3000 ? 500 : 1000;
                 for (double rk = ringStep; rk < maxKm; rk += ringStep)
-                    ctx.DrawEllipse(null, Pal.P(Pal.A(45, Pal.Fore), 0.8), c, rk * k, rk * k);
-                ctx.DrawLine(Pal.P(Pal.A(40, Pal.Fore), 0.8), new Point(c.X, c.Y - R), new Point(c.X, c.Y + R));
-                ctx.DrawLine(Pal.P(Pal.A(40, Pal.Fore), 0.8), new Point(c.X - R, c.Y), new Point(c.X + R, c.Y));
+                    ctx.DrawEllipse(null, Pal.P(Pal.A(45, SkyPal.Fore), 0.8), c, rk * k, rk * k);
+                ctx.DrawLine(Pal.P(Pal.A(40, SkyPal.Fore), 0.8), new Point(c.X, c.Y - R), new Point(c.X, c.Y + R));
+                ctx.DrawLine(Pal.P(Pal.A(40, SkyPal.Fore), 0.8), new Point(c.X - R, c.Y), new Point(c.X + R, c.Y));
                 // limiti del fascio alla quota delle scie
-                ctx.DrawEllipse(null, Pal.P(Pal.A(170, Pal.Yellow), 1, Pal.Dash), c, rOutKm * k, rOutKm * k);
-                ctx.DrawEllipse(null, Pal.P(Pal.A(120, Pal.Yellow), 1, Pal.Dash), c, rInKm * k, rInKm * k);
+                ctx.DrawEllipse(null, Pal.P(Pal.A(170, SkyPal.Yellow), 1, Pal.Dash), c, rOutKm * k, rOutKm * k);
+                ctx.DrawEllipse(null, Pal.P(Pal.A(120, SkyPal.Yellow), 1, Pal.Dash), c, rInKm * k, rInKm * k);
 
                 // zone PREV della tratta GRAVES -> stazione
                 double wmax = 0;
@@ -295,13 +296,13 @@ namespace YAMS
                     foreach (PrevSpot p in Prev)
                     {
                         double rel = p.W / wmax;
-                        Color pc = p.Left ? Pal.Orange : Pal.Pink;
+                        Color pc = p.Left ? SkyPal.Orange : SkyPal.Pink;
                         double rr = 1.5 + 2.5 * rel;
                         ctx.DrawEllipse(Pal.B(Pal.A((int)(25 + 140 * rel), pc)), null, P(p.Pos), rr, rr);
                     }
 
                 // tratta GRAVES -> stazione (retta: in questa proiezione i cerchi massimi dal centro sono rette)
-                if (HasMe) ctx.DrawLine(Pal.P(Pal.A(200, Pal.Green), 1.4, Pal.Dash), c, P(Me));
+                if (HasMe) ctx.DrawLine(Pal.P(Pal.A(200, SkyPal.Green), 1.4, Pal.Dash), c, P(Me));
                 // dalla stazione verso l'hot spot consigliato (cerchio massimo campionato)
                 if (HasMe)
                     foreach (GravesMark m in Marks)
@@ -320,15 +321,15 @@ namespace YAMS
             ctx.DrawEllipse(null, Pal.P(Pal.Border, 1.2), c, R, R);
 
             // simboli dei punti
-            ctx.DrawEllipse(Pal.B(Pal.Yellow), Pal.P(Pal.Track, 1), c, 4.5, 4.5);
+            ctx.DrawEllipse(Pal.B(SkyPal.Yellow), Pal.P(SkyPal.Deep, 1), c, 4.5, 4.5);
             Point pMe = HasMe ? P(Me) : c;
-            if (HasMe) ctx.DrawEllipse(Pal.B(Pal.Green), Pal.P(Pal.Track, 1), pMe, 5, 5);
+            if (HasMe) ctx.DrawEllipse(Pal.B(SkyPal.Green), Pal.P(SkyPal.Deep, 1), pMe, 5, 5);
             List<Point> mp = new List<Point>();
             foreach (GravesMark m in Marks)
             {
                 Point q = P(m.Pos);
                 mp.Add(q);
-                ctx.DrawEllipse(Pal.B(m.Color), Pal.P(Pal.Track, 1), q, m.Main ? 6 : 4.5, m.Main ? 6 : 4.5);
+                ctx.DrawEllipse(Pal.B(m.Color), Pal.P(SkyPal.Deep, 1), q, m.Main ? 6 : 4.5, m.Main ? 6 : 4.5);
             }
 
             // ---- etichette senza sovrapposizioni ----
@@ -353,16 +354,16 @@ namespace YAMS
                 lp.Put(ctx, ft, LabelPlacer.At(ft, sp.X, sp.Y), true);
             }
             // nomi dei punti
-            lp.Place(ctx, Ft("GRAVES", 11.3, Pal.Yellow, true), c, 0, false, false, Pal.Yellow);
-            if (HasMe) lp.Place(ctx, Ft(MeLabel, 11.3, Pal.Green, true), pMe, 0, false, false, Pal.Green);
+            lp.Place(ctx, Ft("GRAVES", 11.3, SkyPal.Yellow, true), c, 0, false, false, SkyPal.Yellow);
+            if (HasMe) lp.Place(ctx, Ft(MeLabel, 11.3, SkyPal.Green, true), pMe, 0, false, false, SkyPal.Green);
             for (int i = 0; i < Marks.Count; i++)
                 lp.Place(ctx, Ft(Marks[i].Label, 11.3, Marks[i].Color, true), mp[i], Marks[i].Main ? 90 : -90, false, false, Marks[i].Color);
             // distanze dei cerchi (lungo il nord, facoltative) e limiti del fascio
             double rs = maxKm <= 1500 ? 250 : maxKm <= 3000 ? 500 : 1000;
             for (double rk = rs; rk < maxKm; rk += rs)
-                lp.Place(ctx, Ft(rk.ToString("F0") + " km", 9.5, Pal.Muted), new Point(c.X, c.Y - rk * k), 45, false, true, Pal.Muted, true, 1);
+                lp.Place(ctx, Ft(rk.ToString("F0") + " km", 9.5, SkyPal.Muted), new Point(c.X, c.Y - rk * k), 45, false, true, SkyPal.Muted, true, 1);
             double ah = 315 * Astro.D2R;
-            lp.Place(ctx, Ft(Lang.T("orizzonte del fascio"), 9.5, Pal.Yellow), new Point(c.X + rOutKm * k * Math.Sin(ah), c.Y - rOutKm * k * Math.Cos(ah)), -45, false, true, Pal.Yellow, true, 3);
+            lp.Place(ctx, Ft(Lang.T("orizzonte del fascio"), 9.5, SkyPal.Yellow), new Point(c.X + rOutKm * k * Math.Sin(ah), c.Y - rOutKm * k * Math.Cos(ah)), -45, false, true, SkyPal.Yellow, true, 3);
         }
     }
 
@@ -382,7 +383,7 @@ namespace YAMS
         double ls = 1.0;
         double LS { get { return Math.Max(1.0, Math.Min(UiScale.Font, Bounds.Height / 230)); } }
 
-        static readonly Color[] ShowerPal = { Pal.Yellow, Pal.Azure, Pal.Pink, Pal.Green, Pal.Orange, Pal.Violet };
+        static readonly Color[] ShowerPal = { SkyPal.Yellow, SkyPal.Azure, SkyPal.Pink, SkyPal.Green, SkyPal.Orange, SkyPal.Violet };   // fissi: testo scuro sopra
 
         public GravesTimeline()
         {
@@ -446,9 +447,9 @@ namespace YAMS
             if (Valid && Index != null)
                 for (int h = 0; h < 24 && h < Index.Length; h++) if (Index[h] > max) { max = Index[h]; hmax = h; }
             if (!Valid)
-                ctx.DrawText(Ft(string.IsNullOrEmpty(Message) ? Lang.T("tratta GRAVES → te non calcolata") : Message, 10.5, Pal.Silver), new Point(x0 + 8, rowY[0] + 6));
+                ctx.DrawText(Ft(string.IsNullOrEmpty(Message) ? Lang.T("tratta GRAVES → te non calcolata") : Message, 10.5, Pal.Muted), new Point(x0 + 8, rowY[0] + 6));
             else if (max <= 0)
-                ctx.DrawText(Ft(Lang.T("nessuno sciame utile in questo giorno"), 10.5, Pal.Silver), new Point(x0 + 8, rowY[0] + 6));
+                ctx.DrawText(Ft(Lang.T("nessuno sciame utile in questo giorno"), 10.5, Pal.Muted), new Point(x0 + 8, rowY[0] + 6));
             else
             {
                 // riga 1: barre dell'indice orario
@@ -462,7 +463,7 @@ namespace YAMS
                 FormattedText mt = Ft(Lang.F("max Σ {0:F1} alle {1:00}:30", max, hmax), 9.5, Pal.Fore);
                 double mx = X(hmax + 1) + 4;
                 if (mx + mt.Width > x1) mx = X(hmax) - mt.Width - 4;
-                ctx.DrawRectangle(Pal.B(LabelPlacer.Halo), null, new Rect(mx - 3, rowY[0] + 3, mt.Width + 6, mt.Height), 4, 4);
+                ctx.DrawRectangle(Pal.B(Pal.A(220, Pal.Panel)), null, new Rect(mx - 3, rowY[0] + 3, mt.Width + 6, mt.Height), 4, 4);
                 ctx.DrawText(mt, new Point(mx, rowY[0] + 3));
 
                 // riga 2: sciame piu' favorevole (ore consecutive con lo stesso sciame unite)
@@ -476,7 +477,7 @@ namespace YAMS
                     {
                         Rect sr = new Rect(X(h0) + 1, rowY[1] + 3, X(h1) - X(h0) - 2, rowH[1] - 6);
                         ctx.DrawRectangle(Pal.B(Pal.A(185, ShowerColor(code))), null, sr, 3, 3);
-                        FormattedText ct = Ft(code, 10.5, Pal.Track, true);
+                        FormattedText ct = Ft(code, 10.5, SkyPal.Deep, true);
                         if (ct.Width + 4 < sr.Width) ctx.DrawText(ct, new Point(sr.X + (sr.Width - ct.Width) / 2, sr.Y + (sr.Height - ct.Height) / 2));
                     }
                     h0 = h1;
@@ -491,8 +492,9 @@ namespace YAMS
                     while (h1 < 24 && Index[h1] >= WindowFrac * max) h1++;
                     Rect wr = new Rect(X(h0) + 1, rowY[2] + 3, X(h1) - X(h0) - 2, rowH[2] - 6);
                     ctx.DrawRectangle(Pal.B(Pal.Rgb(22, 163, 74)), null, wr, 3, 3);
-                    FormattedText wt = Ft(Lang.F("{0:00}:00 → {1:00}:00 UTC · {2} h", h0, h1, h1 - h0), 10.5, Pal.Fore, true);
-                    if (wt.Width + 6 >= wr.Width) wt = Ft(Lang.F("{0} h", h1 - h0), 10.5, Pal.Fore, true);
+                    Color wf = Pal.Rgb(255, 255, 255);   // testo bianco sulla barra verde, in tutti gli schemi
+                    FormattedText wt = Ft(Lang.F("{0:00}:00 → {1:00}:00 UTC · {2} h", h0, h1, h1 - h0), 10.5, wf, true);
+                    if (wt.Width + 6 >= wr.Width) wt = Ft(Lang.F("{0} h", h1 - h0), 10.5, wf, true);
                     if (wt.Width + 6 < wr.Width) ctx.DrawText(wt, new Point(wr.X + 4, wr.Y + (wr.Height - wt.Height) / 2));
                     h0 = h1;
                 }
@@ -548,10 +550,10 @@ namespace YAMS
                 bool hot = st == HotStep;
                 if (hot) hotStarts.Add(s0);
                 Rect br = new Rect(XS(s0) + 1, y, Math.Max(1, XS(s1) - XS(s0) - 2), boxH);
-                ctx.DrawRectangle(Pal.B(hot ? Pal.Yellow : Pal.A(80, secCol)), null, br, 3, 3);
+                ctx.DrawRectangle(Pal.B(hot ? SkyPal.Yellow : Pal.A(80, secCol)), null, br, 3, 3);
                 string lab = letter + (st + 1).ToString(CultureInfo.InvariantCulture);
-                FormattedText bt = Ft(hot ? Lang.F("{0} · zona", lab) : lab, 10.5, hot ? Pal.Track : Pal.Fore, hot);
-                if (bt.Width + 4 > br.Width) bt = Ft(lab, 10.5, hot ? Pal.Track : Pal.Fore, hot);
+                FormattedText bt = Ft(hot ? Lang.F("{0} · zona", lab) : lab, 10.5, hot ? SkyPal.Deep : Pal.Fore, hot);
+                if (bt.Width + 4 > br.Width) bt = Ft(lab, 10.5, hot ? SkyPal.Deep : Pal.Fore, hot);
                 if (bt.Width + 2 < br.Width) ctx.DrawText(bt, new Point(br.X + (br.Width - bt.Width) / 2, br.Y + (br.Height - bt.Height) / 2));
             }
             double xnow = XS(inStep);

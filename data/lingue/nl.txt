@@ -458,3 +458,17 @@ zona PREV	zone PREV
 Σ ZHR x effic.	Σ ZHR x effic.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (links)
+# schemi di colori (nomi dei pastelli come in YAEC)
+Chiaro	Licht
+Notte	Nacht
+Nero	Zwart
+Pastello azzurro	Pastel lichtblauw
+Pastello arancione	Pastel oranje
+Pastello acquamarina	Pastel aquamarijn
+Pastello verde	Pastel groen
+Pastello rosa	Pastel roze
+Pastello lilla	Pastel lila
+Pastello indaco	Pastel indigo
+Pastello marrone	Pastel bruin
+Scia meteorica	Meteorenspoor
+Tema	Kleurenschema

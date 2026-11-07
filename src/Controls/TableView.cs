@@ -49,9 +49,10 @@ namespace YAMS
         const double DefaultColumnWidth = 80;
         const double CellPad = 5;
 
-        static readonly Color HeaderBack = Color.FromRgb(244, 243, 250);
-        static readonly Color HeaderLine = Color.FromRgb(200, 198, 215);
-        static readonly Color HeaderFore = Color.FromRgb(0, 0, 0);
+        // intestazione: colori dello schema scelto (Pal.TableHead*), letti a ogni disegno
+        static Color HeaderBack { get { return Pal.TableHead; } }
+        static Color HeaderLine { get { return Pal.TableHeadLine; } }
+        static Color HeaderFore { get { return Pal.TableHeadFore; } }
 
         public TableView()
         {
@@ -209,7 +210,7 @@ namespace YAMS
                     int first = Math.Max(0, (int)Math.Floor(scrollY / rh));
                     int last = Math.Min(Rows.Count - 1, (int)Math.Ceiling((scrollY + bodyH) / rh));
                     IBrush odd = Pal.B(Pal.Panel);
-                    IBrush selB = Pal.B(Pal.Panel3);
+                    IBrush selB = Pal.B(Pal.Select);
                     IPen selP = Pal.P(Pal.Azure, 1);
                     for (int r = first; r <= last; r++)
                     {

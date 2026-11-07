@@ -58,7 +58,7 @@ namespace YAMS
             g.Children.Add(bar); g.Children.Add(sp);
             return new Border
             {
-                Background = Pal.B(Pal.Panel3), BorderBrush = Pal.B(Pal.Border), BorderThickness = new Thickness(1),
+                Background = Pal.B(Pal.Card), BorderBrush = Pal.B(Pal.Border), BorderThickness = new Thickness(1),
                 CornerRadius = new CornerRadius(8), Padding = new Thickness(8, 6), Margin = new Thickness(4), Child = g
             };
         }
@@ -90,7 +90,7 @@ namespace YAMS
             ToolTip.SetTip(btnNow, Lang.T("Riporta la volta celeste al tempo reale"));
             btnNow.Click += (s, e) => { trackTime.Value = 0; UpdateSky(); };
             Button btnDx = B(Lang.T("Metti GRAVES come DX"));
-            btnDx.Background = Pal.B(Pal.Violet); btnDx.Foreground = Pal.B(Pal.Track); btnDx.FontWeight = FontWeight.SemiBold;
+            btnDx.Background = Pal.B(Pal.Violet); btnDx.Foreground = Pal.B(Pal.AccentFore); btnDx.FontWeight = FontWeight.SemiBold;
             ToolTip.SetTip(btnDx, Lang.T("Il corrispondente diventa GRAVES (JN27SI, quota 200 m) e la tratta principale viene ricalcolata"));
             btnDx.Click += (s, e) =>
             {
@@ -416,7 +416,7 @@ namespace YAMS
             {
                 if (h == null) continue;
                 bool main = h == rh;
-                gravesView.Marks.Add(new GravesMark { Pos = h.Pos, Label = Lang.T(h.Label), Color = main && !fallback ? Pal.Red : Pal.HotPink, Main = main });
+                gravesView.Marks.Add(new GravesMark { Pos = h.Pos, Label = Lang.T(h.Label), Color = main && !fallback ? SkyPal.Red : Pal.HotPink, Main = main });
             }
             double amax = 0; foreach (double a in acc) amax = Math.Max(amax, a);
             if (amax > 0)

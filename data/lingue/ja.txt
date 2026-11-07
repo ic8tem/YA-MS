@@ -458,3 +458,17 @@ zona PREV	PREV 領域
 Σ ZHR x effic.	Σ ZHR x 効率
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (左)
+# schemi di colori (nomi dei pastelli come in YAEC)
+Chiaro	ライト
+Notte	夜間
+Nero	ブラック
+Pastello azzurro	パステル水色
+Pastello arancione	パステルオレンジ
+Pastello acquamarina	パステルアクアマリン
+Pastello verde	パステルグリーン
+Pastello rosa	パステルピンク
+Pastello lilla	パステルライラック
+Pastello indaco	パステルインディゴ
+Pastello marrone	パステルブラウン
+Scia meteorica	流星痕
+Tema	テーマ

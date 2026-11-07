@@ -21,10 +21,13 @@ LANGS = ["en", "ru", "ja", "de", "nl"]
 EXTRA = [
     "Sorgente Antielio",                          # Catalog.cs: nome dello sciame ANT
     "Hot A", "Hot B", "Limite A", "Limite B",     # MsModel.cs: HotPoint.Label
+    # Theme.cs: Tema.Names (schemi di colori)
+    "Chiaro", "Notte", "Nero", "Pastello azzurro", "Pastello arancione", "Pastello acquamarina", "Pastello verde",
+    "Pastello rosa", "Pastello lilla", "Pastello indaco", "Pastello marrone", "Scia meteorica",
 ]
 
 # argomenti non letterali ammessi (i loro valori stanno nei nomi degli sciami o in EXTRA)
-KNOWN_DYNAMIC = {"s.Name", "h.Label", "rh.Label"}
+KNOWN_DYNAMIC = {"s.Name", "h.Label", "rh.Label", "tn"}
 
 HEADER = """# YA-MS - chiavi da tradurre (testi italiani dell'interfaccia). File generato da tools/estrai_chiavi.py: non modificare a mano.
 # Ogni file di traduzione data/lingue/<codice>.txt (UTF-8) ha una voce per riga:

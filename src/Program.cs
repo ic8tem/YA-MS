@@ -7,7 +7,7 @@ namespace YAMS
 {
     internal static class Program
     {
-        public static string ScreenshotDir, ScreenshotDx;
+        public static string ScreenshotDir, ScreenshotDx, ScreenshotLang;
         public static double ScreenshotHours;
         public static double ScreenshotFontPct;   // --carattere N: scala del carattere in % per le fotografie (0 = invariata)
 
@@ -18,6 +18,7 @@ namespace YAMS
             {
                 if (args[i] == "--screenshot") ScreenshotDir = args[i + 1];
                 if (args[i] == "--dx") ScreenshotDx = args[i + 1];
+                if (args[i] == "--lingua") ScreenshotLang = args[i + 1];
                 if (args[i] == "--ore") double.TryParse(args[i + 1], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out ScreenshotHours);
                 if (args[i] == "--carattere") double.TryParse(args[i + 1], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out ScreenshotFontPct);
             }

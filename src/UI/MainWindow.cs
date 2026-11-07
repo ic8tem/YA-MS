@@ -215,6 +215,7 @@ namespace YAMS
             readonly List<ToggleButton> buttons = new List<ToggleButton>();
             readonly List<Control> pages = new List<Control>();
             public int Selected = -1;
+            public int Count { get { return buttons.Count; } }   // numero di linguette
 
             public PillTabs()
             {
@@ -473,6 +474,7 @@ namespace YAMS
             UiScale.Apply(this);
             if (chart24 != null) chart24.Height = Chart24Height * (0.5 + 0.5 * UiScale.Font);   // spazio per scritte piu' grandi
             if (explainSheet != null) explainSheet.MaxWidth = 860 * Math.Min(2.0, UiScale.Font);
+            GravesFontScale();
             UpdateGeometry();   // il resoconto usa caratteri ricavati da quello della casella
         }
 
@@ -619,6 +621,9 @@ namespace YAMS
             grid24.ColumnAlign = al24;
             p2.Children.Add(grid24);   // nessuno scorrimento orizzontale: la tabella e' giustificata
 
+            // --- Radar GRAVES (MainWindow.Graves.cs), subito dopo "Calcolo dell'efficienza"
+            BuildGravesTab();
+
             // --- Attuazione sperimentale previsioni (MainWindow.Previsioni.cs)
             BuildPrevTab();
 
@@ -731,6 +736,7 @@ namespace YAMS
             if (!Astro.TryLocator(Up(txtDx), out dx)) { status.Text = Lang.T("Locator del corrispondente non valido"); return; }
             DateTime t0 = DateTime.Now;
             model = PathModel.Build(home, V(numHomeAlt) / 1000.0, dx, V(numDxAlt) / 1000.0, V(numLayer), V(numElev));
+            StartGravesModel();   // tratta GRAVES -> stazione, in un thread secondario
             sky.Model = model; sky.Station = home; sky.InvalidateHeat();
             skySmall.Model = model; skySmall.Station = home; section.Model = model;
             ApplyAntenna();
@@ -967,6 +973,7 @@ namespace YAMS
                 lblPathInfo.Text = sb.ToString();
             }
             if (sky.Selected != null) SelectInList(sky.Selected);
+            UpdateGravesSky();
         }
 
         // Contributo di uno sciame alle zone PREV (pianta) e alle scie della sezione:
@@ -1030,6 +1037,7 @@ namespace YAMS
 
         void Update24h()
         {
+            UpdateGraves24h();   // cronologia della linguetta Radar GRAVES (non dipende dalla tratta principale)
             if (model == null || !model.Valid || grid24 == null) return;
             DateTime day = SelectedDayUtc;
             List<Shower> act = new List<Shower>();
@@ -1453,6 +1461,7 @@ namespace YAMS
         {
             DateTime now = DateTime.UtcNow;
             lblClock.Text = now.ToString("HH:mm:ss", CultureInfo.InvariantCulture) + " UTC";
+            UpdateGravesTick();   // fascio di GRAVES: passo attivo e prossimi passaggi
             if (now.Second == 0)
             {
                 if (TrackValue == 0) UpdateSky();
@@ -1486,6 +1495,7 @@ namespace YAMS
             cfg.Set("carattere_pct", Math.Round(sldFont.Value / 10) * 10);
             cfg.Set("lingua", Lang.Code);
             SavePrevConfig();
+            SaveGravesConfig();
             cfg.Save();
         }
 
@@ -1524,6 +1534,10 @@ Lang.T("DATI RADAR IN DIRETTA") + "\n" +
 "  " + Lang.T("Ingolf SM6FHZ - RadiantCalc (grafico polare con la direzione migliore)") + "\n" +
 "  " + Lang.T("Natural Earth - coste e confini 1:50 milioni, dominio pubblico, www.naturalearthdata.com (mappa d'Europa)") + "\n" +
 "  " + Lang.T("RMOB, Radio Meteor Observatories On Line (Pierre Terrier) - www.rmob.org; bollettini mensili rmob.org/rmobtext (osservatori GRAVES 143,050 MHz: Planetario di Venezia, Faenza, Rovereto e altri)") + "\n\n" +
+Lang.T("RADAR GRAVES (linguetta Radar GRAVES)") + "\n" +
+"  " + Lang.T("Rob Hardenberg PE1ITR, \"The 143.050 MHz Graves Radar, a VHF Beacon\" (DUBUS 4/2007) e \"Graves Radar Update April 2021\" – pe1itr.com/graves") + "\n" +
+"  " + Lang.T("Bolidozor wiki, \"Graves\" – schiere, settori e tempi del fascio") + "\n" +
+"  " + Lang.T("Wikipedia, \"GRAVES (system)\" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)") + "\n\n" +
 Lang.T("ALTRI RIFERIMENTI DELL'ARTICOLO") + "\n" +
 "  " + Lang.T("G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook") + "\n\n" +
 Lang.T("Nota: i dati dei radar appartengono ai rispettivi enti. Prima di distribuire il programma va chiesto il permesso di prelevarli automaticamente.") + "\n";

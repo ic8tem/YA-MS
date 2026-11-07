@@ -1,0 +1,39 @@
+ 
+ 
+ 
+ Radar meteor radiants 
+ 
+ 
+ 
+ 
+	 
+		 
+			 Sky Charts 
+			 Earth-centred plots 
+		 
+		 
+			 Intro: 
+			The following plots show the location of meteor shower radiants as detected in
+			near real-time by the MEO-sponsored multi-station Canadian Meteor Orbit Radar
+			(CMOR). Each day approximately 4000-5000 individual meteoroid orbits are
+			measured by CMOR - the amount of "clumpiness" in these radiants determines the
+			location of individual showers. Groupings of radiants in location and speed are
+			localized using a 3D wavelet transform technique and the associated showers
+			listed by their three letter
+			 International Astronomical Union code 
+			 The top plot shows the apparent radiant activity overlaid on a map of the sky as seen from the radar station
+			(43N, 81W) at the time indicated. The sun and moon are also displayed. The
+			bottom plot shows the same view with individual radiants color coded by
+			their speed.
+			 
+		 
+		 
+			 
+			 
+		 
+		 
+			 Details of the radar system can be found at The University of Western Ontario Meteor Physics Group . 
+		 
+	 
+ 
+ 

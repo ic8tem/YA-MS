@@ -1,0 +1,72 @@
+**English** · [Русский](Getting-Started-ru) · [Deutsch](Getting-Started-de) · [日本語](Getting-Started-ja)
+
+# Getting started
+
+At the first start YA-MS shows an example path (JN70CN → JO62QM on 144 MHz). Five minutes are enough to set it up for your station.
+
+## 1. The three rows of controls
+
+Above the tabs there are three rows of controls, valid for all tabs. The **Controls** button at the top right folds and unfolds them (useful with large fonts); the choice is remembered.
+
+**Row 1 – stations and band**
+
+| Control | What it does |
+|---|---|
+| **My locator** / **height m** | Your Maidenhead locator (4, 6 or 8 characters; the centre of the square is used) and the height of the station above sea level. |
+| **DX station** / **height m** | Locator and height of the station you want to work. |
+| **Band MHz** | 28, 50, 70, 144, 222 or 432 MHz: used for the antenna gain and lobe, the flux estimate and the link budget. |
+| **Calculate** | Recomputes the path (sampling of the E layer: a few seconds). |
+| **Antenna az** | Azimuth of your antenna: always **towards the DX** (azimuth of the path). |
+| **Font** | Size of all the text, 100–300 %. See [Settings](Settings-and-Data-Folder#font-and-controls). |
+
+**Row 2 – E layer and antenna**
+
+| Control | What it does |
+|---|---|
+| **Trail height km** + **from radar** | Height of the meteor trails (default 90 km). With *from radar* ticked, the most frequent height (mode) measured by the Collm radar is used; see [Radar flux](Radar-Flux). |
+| **Lobe elevation °** | Lowest elevation of your antenna lobe (0° = horizon). Only points of the E layer that both stations see above this elevation are used. |
+| **Yagi antenna: boom m** | Boom length of your Yagi. The program shows the length in λ, the gain (DL6WU curve) and the −3 dB lobe, horizontal and vertical; see [Geometry and path loss](Geometry-and-Path-Loss#antenna-gain-and-lobe). Below 2 λ the estimate is rough. |
+| **Hot spot from midpoint km** | Distance of Hot A and Hot B from the midpoint, 30–400 km (default 150 km, as AMS Bulletin 203 / W8WN / MSHV). |
+
+**Row 3 – time**
+
+| Control | What it does |
+|---|---|
+| **Time** | UTC clock. |
+| **Sky dome time (±36 h)** | Moves the [Sky dome](Sky-View) and the [GRAVES radar](GRAVES-Radar) tab up to 36 hours back or forward, in 15-minute steps. |
+| **Real time** | Back to now. |
+| **Day for the 24 h table (UTC)** | The day shown in [Efficiency calculation](Efficiency-Calculation) and in the GRAVES timeline. |
+
+## 2. Your station and the DX
+
+1. Type **My locator** and **height m**.
+2. Type the **DX station** locator and height – or click the map in the [Sky dome](Sky-View): **left click = DX station locator**, **right click = my station locator**.
+3. Choose the **Band MHz** and press **Calculate**.
+
+The status bar at the bottom confirms: *Path computed: … km, … reflection points sampled in … s*.
+
+## 3. Your antenna
+
+Enter the **boom length** of your Yagi. The program derives gain and lobe and warns you if Hot A or Hot B already fall **inside the lobe** when the antenna points at the DX (then they are drawn in grey: no need to turn the antenna).
+
+## 4. Read the results
+
+| Question | Where to look |
+|---|---|
+| Which shower helps my path now, and from which side? | [Sky dome](Sky-View): shower list, recommended Hot in red, PREV zones |
+| What is the best hour today? | [Efficiency calculation](Efficiency-Calculation): glance cards and hourly table |
+| How many meteors is the radar counting? | [Radar flux](Radar-Flux) |
+| How many pings can I expect on 144 MHz? | [Experimental forecasts](Experimental-Forecasts) (experimental) |
+| Can my station close the path? | [Geometry and path loss](Geometry-and-Path-Loss): path loss and margin |
+| When is the next peak? | [Showers](Showers) |
+| Can I test with GRAVES? | [GRAVES radar](GRAVES-Radar) |
+
+## Practical rules (from the sources)
+
+- **Point perpendicular to the shower**: the best path is orthogonal to the radiant azimuth; best heading = radiant azimuth ±90°, tolerance ±40–50° (SM6FHZ).
+- **Side-scatter**: turn the antenna 10–30° towards the side (A or B) from which most reflections arrive (Cerrotta–Sartori article).
+- **Radiant too high** (above 70°) or too low (below 20°) gives few useful trails (DF5HC, DH9GCD).
+- Sporadic meteors peak around **06 UTC** (article; confirmed by the Collm flux).
+- Useful distances on 432 MHz: 800–2000 km, best about 1400 km (SM6FHZ); best distance in general 1300–1500 km (DF5HC).
+
+Next: [Sky dome](Sky-View).

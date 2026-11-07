@@ -1,0 +1,33 @@
+**English** · [Русский](Grid-Square-Map-ru) · [Deutsch](Grid-Square-Map-de) · [日本語](Grid-Square-Map-ja)
+
+# Grid square map
+
+*Tab 10.*
+
+[![Grid square map](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-10.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-10.png)
+
+The Maidenhead squares (4 characters) you have **worked** and **confirmed**, read from the ADIF file of your log, on a map of Europe – **one sub-tab per band: 50, 70, 144, 222 and 432 MHz**.
+
+## Controls
+
+| Control | What it does |
+|---|---|
+| **Load ADIF file...** | Reads an `.adi` / `.adif` file. A new ADIF **replaces** the previous data. |
+| **Clear memory** | Deletes all the squares loaded from ADIF (asks for confirmation). |
+| Mouse | **Wheel = zoom, drag = pan, mouse over a square = QSOs** (up to six callsigns with date, *(confirmed)* when confirmed) |
+
+After loading, the status shows *… QSOs read, … QSO squares in the 50-432 MHz bands, … QSOs discarded (other bands or no square)*. Each band map has the caption *… squares worked, … confirmed*.
+
+| Colour | Meaning |
+|---|---|
+| Orange | worked |
+| Green | confirmed (QSL or LoTW) |
+
+## How the ADIF is read
+
+- Fields used: `CALL`, `GRIDSQUARE`, `VUCC_GRIDS`, `BAND`, `FREQ`, `QSO_DATE`, `QSL_RCVD`, `LOTW_QSL_RCVD` (ADIF specification).
+- Band from `BAND`, or from the frequency: 50–54 MHz = 6 m, 69.9–71.5 MHz = 4 m, 144–148 MHz = 2 m, 219–225 MHz = 1.25 m, 420–450 MHz = 70 cm.
+- A square is **confirmed** if at least one QSO in it has `QSL_RCVD = Y` or `LOTW_QSL_RCVD = Y`.
+- The squares are kept in `data/adif_quadrati.csv` until you load another file or press **Clear memory**.
+
+YA-MS does **not** connect to LoTW: export the ADIF from your logging program (or from LoTW) and load it here.

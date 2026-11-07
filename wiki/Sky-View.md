@@ -1,0 +1,97 @@
+**English** · [Русский](Sky-View-ru) · [Deutsch](Sky-View-de) · [日本語](Sky-View-ja)
+
+# Sky dome
+
+*Tab 1.*
+
+[![Sky dome](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1.png)
+
+The first tab puts on one screen **where** the useful trails are now and **where to point**. On the left the **plan view** of the path; on the right the shower list, a small sky dome with the radiants, the text of the calculation and the **section** seen from your antenna. Everything refers to the time of the *Sky dome time* slider (real time by default; ±36 h in 15-minute steps).
+
+## Plan view (left)
+
+A map of Europe seen from above (**E to the right**) with a degree scale around it. The caption under the map gives its radius (*Map: edge = … km from the station*).
+
+| Element | Drawing |
+|---|---|
+| Path / DX | Green line from your station to the DX station (always the real great-circle path between the locators) |
+| **Hot A / Hot B** | Points 150 km (adjustable) either side of the midpoint, perpendicular to the path. **Red = recommended**, **pink = outside the antenna lobe**, **grey = inside the lobe** (with a warning) |
+| Antenna lobe | The −3 dB horizontal lobe around the antenna azimuth (antenna always pointed at the DX), labelled *lobe …°* |
+| Common zone limits | Faint *lim. A* / *lim. B* points and the two circles where each station's horizon meets the E layer (see [Geometry](Geometry-and-Path-Loss#common-zone-limits)) |
+| Shower drift | **Yellow line**: direction in which the selected shower (or the most favourable one) sweeps the sky, i.e. the radiant azimuth |
+| Best headings | **Orange dots**: the two headings perpendicular to the drift (radiant azimuth ±90°, SM6FHZ) |
+| **PREV zones** | Light ellipses: where the most likely trails fall **now**, one per side of the path |
+
+Labels do not overlap: Hot A and PREV A are written on the left of the path, B on the right. The **Legend** is a foldable column on the right of the map.
+
+**Mouse on the map:** **left click = DX station locator**, **right click = my station locator**. The path is recomputed at once.
+
+Options above the shower list: **Hot A / Hot B directions**, **Map of Europe** (Natural Earth, downloaded into `data/mappa` on the first start), **Top view (E to the right)**.
+
+### Recommended Hot
+
+For the time shown, the program adds up over all showers above the horizon the weight ZHR × efficiency, split between side A (fraction f_A) and side B. The side with the larger weight gives the recommended Hot, drawn in red:
+
+```
+W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```
+
+*Choice of the program (manual eq. 23).* Source of the idea: DJ5HG, reported by DF5HC (DARC conference 2018) – depending on the radiant position one of the two points, HOT-A or HOT-B, is more favourable. Turning 10–30° towards that side (side-scatter) comes from the Cerrotta–Sartori article.
+
+### PREV zones
+
+For each point P of the E layer the contributions of all active showers to the efficiency (same specular condition as the [efficiency](Efficiency-Calculation#the-model)) are added, weighted with ZHR. Points with at least 3 % of the maximum form the PREV zones; each is drawn as an ellipse with centre = weighted mean of the points and axes = twice their spread.
+
+```
+W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```
+
+*Choice of the program (manual eq. 34).* It is the practical rule: if the shower sweeps from north to south, the useful trails fall east and west.
+
+## Shower list (top right)
+
+| Column | Meaning |
+|---|---|
+| Shower, Code | Name and IMO code |
+| ZHR now | Activity at this moment (IMO peak ZHR with the activity profile) |
+| Azimuth, Elev. | Radiant position seen from your station |
+| Effic. % | Efficiency of the shower for this path |
+| Side | A or B, the side from which most reflections arrive |
+| Best heading | Radiant azimuth ±90° |
+| Rise, Set | Radiant rise and set (UTC); *circumpolar* or *always below* when it applies |
+
+Click a row to select the shower: the yellow drift line and the orange dots follow it.
+
+## Small sky dome (middle right)
+
+The radiants on a sky dome seen from your station, with their **IMO code** and **daily track in cyan** (UTC hours). **Click a radiant** to select it. Colours:
+
+| Colour | Meaning |
+|---|---|
+| Yellow | efficiency ≥ 50 % and ZHR ≥ 2 |
+| Orange | efficiency ≥ 20 % |
+| Dark red | efficiency < 20 % |
+| Grey | almost inactive |
+
+Next to it, the text of the calculation: path length and azimuth, midpoint and its elevation, Hot A / Hot B azimuths and offsets, the recommended Hot (*… recommended now: az. …° (…% of expected reflections)*), the common zone limits, and the reminder: *best pointing for the shower: PERPENDICULAR to the direction of arrival (radiant azimuth ±90°, tolerance ±40–50°, SM6FHZ)*.
+
+## Section (bottom right)
+
+*SECTION – the most likely trails seen from the antenna towards the DX station.* Horizontally the **azimuth relative to the DX station** (← A left, B → right), vertically the **elevation**. For each shower the 14 strongest reflection points are taken; each trail is a segment oriented towards the radiant, from 10 km above to 10 km below the trail height (at most 60 km per side), thicker when more likely. Also drawn: the antenna lobe (−3 dB circle around the lobe elevation), the DX station and Hot A / Hot B.
+
+```
+Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```
+
+*Choice of the program (manual eq. 35).*
+
+## Warnings
+
+| Warning | When |
+|---|---|
+| **WARNING: Hot A (and/or Hot B) falls inside the antenna lobe …** | The hot spot is within ±θ/2 of the antenna azimuth (θ = horizontal −3 dB lobe): with this heading it is already covered. Shown in grey on the map. The recommended Hot stays red. |
+| **RADIANT TOO HIGH (above 70°)** | A useful radiant is above 70° from your station: trails fall almost vertically and reflect little towards the path (DF5HC, DH9GCD). The same hours are marked ↑ in the [hourly table](Efficiency-Calculation#hourly-table). |
+| *No common E-layer zone* | The path is longer than twice the range at trail height: the two stations do not see a common part of the E layer (single hop impossible). |
+| *No recommended Hot* | Almost no active shower at this time. |
+
+Reference for the sky dome graphics: Swan Meteor Skyview by DL1DBC (swan.ms); polar plot with the best direction: RadiantCalc by SM6FHZ.

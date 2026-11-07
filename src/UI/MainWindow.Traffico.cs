@@ -64,7 +64,7 @@ namespace YAMS
             sldTrafficRadius.ValueChanged += (s, e) => { traffic.RadiusKm = Math.Round(sldTrafficRadius.Value / 50) * 50; RefreshTraffic(true); };
             side.Children.Add(Row(L(Lang.T("Raggio della mappa")), sldTrafficRadius, lblTrafficRadius));
             List<string> wn = new List<string>();
-            foreach (int m in TrafficMinutes) wn.Add(m < 60 ? Lang.F("ultimi {0} minuti", m) : m < 1440 ? Lang.F("ultime {0} ore", m / 60) : Lang.T("ultime 24 ore"));
+            foreach (int m in TrafficMinutes) wn.Add(m < 60 ? Lang.F("ultimi {0} minuti", m) : m == 60 ? Lang.T("ultima ora") : m < 1440 ? Lang.F("ultime {0} ore", m / 60) : Lang.T("ultime 24 ore"));
             cmbTrafficWindow = new ComboBox { ItemsSource = wn, MinWidth = 170, VerticalAlignment = VerticalAlignment.Center };
             int wi = Array.IndexOf(TrafficMinutes, (int)cfg.GetD("traffico_minuti", 60));
             cmbTrafficWindow.SelectedIndex = wi < 0 ? 2 : wi;
@@ -208,7 +208,7 @@ namespace YAMS
                 list.Add(t);
                 int nb; perBand.TryGetValue(s.Band, out nb); perBand[s.Band] = nb + 1;
             }
-            list.Reverse();   // i piu' recenti disegnati sopra
+            list.Sort((x, y) => ((MsSpot)x.Tag).Utc.CompareTo(((MsSpot)y.Tag).Utc));   // i piu' recenti disegnati sopra (e in cima alla tabella)
             if (traffic.Selected != null && !list.Contains(traffic.Selected))
             {
                 TrafficSpot keep = null;

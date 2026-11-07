@@ -606,3 +606,4 @@ versione	версия
 {0} MHz: {1}	{0} МГц: {1}
 {0} UTC · {1:F1} kHz · {2:F0} km	{0} UTC · {1:F1} кГц · {2:F0} км
 {0} contatti sulla mappa · {1} fuori dalla mappa · {2} senza locator	на карте связей: {0} · вне карты: {1} · без локатора: {2}
+ultima ora	последний час

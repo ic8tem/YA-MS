@@ -606,3 +606,4 @@ versione	バージョン
 {0} MHz: {1}	{0} MHz: {1}
 {0} UTC · {1:F1} kHz · {2:F0} km	{0} UTC · {1:F1} kHz · {2:F0} km
 {0} contatti sulla mappa · {1} fuori dalla mappa · {2} senza locator	地図上の交信 {0} · 地図外 {1} · ロケーターなし {2}
+ultima ora	直近 1 時間

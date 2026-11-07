@@ -562,6 +562,7 @@ trasmettitore 143,050 MHz
 tratta / DX
 tratta GRAVES → te non calcolata
 tu {0}
+ultima ora
 ultime 24 ore
 ultime {0} ore
 ultimi {0} minuti

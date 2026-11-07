@@ -563,4 +563,4 @@ righe {0}, spot letti {1}, MS {2}	строк {0}, спотов {1}, MS {2}
 {0} spot MS in memoria	спотов MS в памяти: {0}
 righe sotto 27990 kHz scartate: {0}	отброшено строк ниже 27990 кГц: {0}
 Scarta subito le righe del cluster sotto 27990,0 kHz (non compaiono nella console e non si memorizzano)	Сразу отбрасывать строки кластера ниже 27990,0 кГц (не показываются в консоли и не сохраняются)
-Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, se CALL3 ha il locator a 6 caratteri nello stesso quadrato.	Неточные локаторы (только 4 символа) тоже берутся из CALL3, если в CALL3 есть 6-символьный локатор в том же квадрате.
+Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, quando CALL3 ha il locator a 6 caratteri.	Неточные локаторы (только 4 символа) тоже берутся из CALL3, если в CALL3 есть 6-символьный локатор.

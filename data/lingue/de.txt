@@ -563,4 +563,4 @@ righe {0}, spot letti {1}, MS {2}	Zeilen {0}, Spots {1}, MS {2}
 {0} spot MS in memoria	{0} MS-Spots im Speicher
 righe sotto 27990 kHz scartate: {0}	verworfene Zeilen unter 27990 kHz: {0}
 Scarta subito le righe del cluster sotto 27990,0 kHz (non compaiono nella console e non si memorizzano)	Cluster-Zeilen unter 27990,0 kHz sofort verwerfen (erscheinen nicht in der Konsole und werden nicht gespeichert)
-Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, se CALL3 ha il locator a 6 caratteri nello stesso quadrato.	Auch ungenaue Locator (nur 4 Zeichen) werden aus CALL3 übernommen, wenn CALL3 den 6-stelligen Locator im selben Großfeld hat.
+Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, quando CALL3 ha il locator a 6 caratteri.	Auch ungenaue Locator (nur 4 Zeichen) werden aus CALL3 übernommen, wenn CALL3 den 6-stelligen Locator hat.

@@ -27,7 +27,7 @@ ATTENZIONE: {0} entra nel lobo dell'antenna ({1}° a -3 dB attorno a {2}°): con
 Adesso
 Aggiornamento automatico di tutte le fonti ogni 5 minuti
 Aggiungi
-Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, se CALL3 ha il locator a 6 caratteri nello stesso quadrato.
+Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, quando CALL3 ha il locator a 6 caratteri.
 Andromedidi
 Antenna
 Antenna Yagi: boom m

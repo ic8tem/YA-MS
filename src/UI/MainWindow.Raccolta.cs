@@ -132,7 +132,7 @@ namespace YAMS
             {
                 TextWrapping = TextWrapping.Wrap, Foreground = Pal.B(Pal.Muted), FontSize = 12,
                 Text = Lang.T("Gli spot accettati si salvano in data/spot_ms, un file CSV al giorno. I locator mancanti si prendono dall'archivio CALL3 (data/call3.txt).") + " " +
-                       Lang.T("Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, se CALL3 ha il locator a 6 caratteri nello stesso quadrato.")
+                       Lang.T("Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, quando CALL3 ha il locator a 6 caratteri.")
             });
             Border right = new Border
             {

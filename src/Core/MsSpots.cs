@@ -238,16 +238,15 @@ namespace YAMS
 
         // Regola dell'autore (IC8TEM): i locator non precisi si prendono da CALL3.
         // - locator mancante: quello di CALL3;
-        // - locator a 4 caratteri (solo il quadrato, ~100 x 200 km): se CALL3 ha un locator a 6 caratteri nello stesso
-        //   quadrato si usa quello (~5 x 2,5 km); se CALL3 indica un altro quadrato si tiene il locator dello spot,
-        //   perche' la stazione puo' essere in portatile e lo spot e' il dato del momento;
+        // - locator a 4 caratteri (solo il quadrato, ~100 x 200 km): se CALL3 ha un locator a 6 caratteri si usa sempre
+        //   quello (~5 x 2,5 km), anche se indica un altro quadrato (scelta dell'autore, 7/11/2026);
         // - locator a 6 caratteri: si tiene quello dello spot.
         public static string Refine(string loc, string call)
         {
             loc = (loc ?? "").Trim().ToUpperInvariant();
             string c3 = CallDb.Lookup(call);
             if (loc.Length == 0) return c3 ?? "";
-            if (loc.Length < 6 && c3 != null && c3.Length >= 6 && loc.Length >= 4 && c3.StartsWith(loc.Substring(0, 4), StringComparison.Ordinal)) return c3;
+            if (loc.Length < 6 && c3 != null && c3.Length >= 6) return c3;
             return loc;
         }
 

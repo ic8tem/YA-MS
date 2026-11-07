@@ -563,4 +563,4 @@ righe {0}, spot letti {1}, MS {2}	regels {0}, spots {1}, MS {2}
 {0} spot MS in memoria	{0} MS-spots in het geheugen
 righe sotto 27990 kHz scartate: {0}	regels onder 27990 kHz weggegooid: {0}
 Scarta subito le righe del cluster sotto 27990,0 kHz (non compaiono nella console e non si memorizzano)	Clusterregels onder 27990,0 kHz meteen weggooien (verschijnen niet in de console en worden niet opgeslagen)
-Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, se CALL3 ha il locator a 6 caratteri nello stesso quadrato.	Ook onnauwkeurige locators (slechts 4 tekens) worden uit CALL3 gehaald, als CALL3 de 6-tekenlocator in hetzelfde vak heeft.
+Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, quando CALL3 ha il locator a 6 caratteri.	Ook onnauwkeurige locators (slechts 4 tekens) worden uit CALL3 gehaald, als CALL3 de 6-tekenlocator heeft.

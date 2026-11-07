@@ -563,4 +563,4 @@ righe {0}, spot letti {1}, MS {2}	lines {0}, spots read {1}, MS {2}
 {0} spot MS in memoria	{0} MS spots in memory
 righe sotto 27990 kHz scartate: {0}	lines below 27990 kHz discarded: {0}
 Scarta subito le righe del cluster sotto 27990,0 kHz (non compaiono nella console e non si memorizzano)	Discard at once the cluster lines below 27990.0 kHz (they do not appear in the console and are not stored)
-Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, se CALL3 ha il locator a 6 caratteri nello stesso quadrato.	Imprecise locators (only 4 characters) are also taken from CALL3, when CALL3 has the 6-character locator in the same square.
+Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, quando CALL3 ha il locator a 6 caratteri.	Imprecise locators (only 4 characters) are also taken from CALL3, when CALL3 has the 6-character locator.

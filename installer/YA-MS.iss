@@ -3,6 +3,9 @@
 #ifndef AppVersion
   #define AppVersion "1.0.0"
 #endif
+#ifndef Arch
+  #define Arch "x64"
+#endif
 #ifndef SourceDir
   #define SourceDir "..\publish\win-x64"
 #endif
@@ -17,10 +20,12 @@ AppComments=Previsione e calcolo in diretta dell'efficienza degli sciami meteori
 DefaultDirName={sd}\YA-MS
 DisableProgramGroupPage=yes
 PrivilegesRequired=lowest
+#if Arch == "x64"
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
+#endif
 OutputDir=..\dist
-OutputBaseFilename=YA-MS-{#AppVersion}-windows-x64-setup
+OutputBaseFilename=YA-MS-{#AppVersion}-windows-{#Arch}-setup
 SetupIconFile=..\src\Assets\ya-ms.ico
 UninstallDisplayIcon={app}\YA-MS.exe
 Compression=lzma2

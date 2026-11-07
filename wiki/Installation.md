@@ -8,6 +8,7 @@ All packages are on the **[Releases](https://github.com/ic8tem/YA-MS/releases)**
 |---|---|---|
 | Windows (64-bit) | `YA-MS-x.y.z-windows-x64-setup.exe` (installer) | `C:\YA-MS` |
 | Windows (64-bit), portable | `YA-MS-x.y.z-windows-x64-portatile.zip` | any folder where you can write |
+| Windows (32-bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` or `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |

@@ -9,6 +9,8 @@ All packages are on the **[Releases](https://github.com/ic8tem/YA-MS/releases)**
 | Windows (64-bit) | `YA-MS-x.y.z-windows-x64-setup.exe` (installer) | `C:\YA-MS` |
 | Windows (64-bit), portable | `YA-MS-x.y.z-windows-x64-portatile.zip` | any folder where you can write |
 | Linux (64-bit) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 
@@ -35,6 +37,14 @@ Extract `YA-MS-x.y.z-windows-x64-portatile.zip` wherever you like (a folder wher
 
 For Japanese text you may need the Noto CJK fonts: see [Troubleshooting](Troubleshooting-FAQ#linux-japanese-text-shows-boxes).
 
+## Raspberry Pi
+
+Same procedure as Linux: extract `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` (or `-32bit` on Raspberry Pi OS 32-bit) and run `./installa.sh` from the extracted folder.
+
+- To see which system you have, type `uname -m` in a terminal: `aarch64` → 64-bit package, `armv7l` → 32-bit package.
+- Supported: Raspberry Pi 2 (32-bit only), 3, 4, 5, 400 and 500, with the desktop version of Raspberry Pi OS. **Not supported:** Pi Zero / Zero W and Pi 1 (ARMv6 processor, .NET does not run there); Pi Zero 2 W works with the 64-bit package but 512 MB of RAM is tight.
+- A Pi 4 or 5 with at least 2 GB of RAM is recommended; the first start takes a few seconds longer than on a PC.
+
 ## macOS
 
 1. Choose the right file: `-mac-apple-silicon.dmg` for M1/M2/M3/M4 processors, `-mac-intel.dmg` for Intel Macs.
@@ -58,7 +68,7 @@ Install the new version **over the old one** (same installer, same folder). Sett
 The installers are produced by GitHub Actions (`.github/workflows/build.yml`) at every update of the `release` branch (version taken from the `VERSION` file), which also creates the release `vX.Y.Z`. Locally:
 
 ```sh
-dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, osx-arm64
+dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
 The documents are regenerated with `tools/build_spiegazione.py data` and `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.

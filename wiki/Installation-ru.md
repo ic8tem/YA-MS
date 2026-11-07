@@ -9,6 +9,8 @@
 | Windows (64 бита) | `YA-MS-x.y.z-windows-x64-setup.exe` (установщик) | `C:\YA-MS` |
 | Windows (64 бита), портативная | `YA-MS-x.y.z-windows-x64-portatile.zip` | любая папка, в которую разрешена запись |
 | Linux (64 бита) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 бита) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi 2/3/4 (Raspberry Pi OS 32 бита) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 
@@ -35,6 +37,14 @@
 
 Для японского текста могут понадобиться шрифты Noto CJK: см. [Неполадки](Troubleshooting-FAQ-ru#linux-японский-текст-отображается-квадратиками).
 
+## Raspberry Pi
+
+Так же, как в Linux: распакуйте `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` (или `-32bit` для 32-битной Raspberry Pi OS) и запустите `./installa.sh` из распакованной папки.
+
+- Чтобы узнать разрядность системы, введите в терминале `uname -m`: `aarch64` → 64-битный пакет, `armv7l` → 32-битный.
+- Поддерживаются Raspberry Pi 2 (только 32 бита), 3, 4, 5, 400 и 500 с настольной версией Raspberry Pi OS. **Не поддерживаются:** Pi Zero / Zero W и Pi 1 (процессор ARMv6, .NET на нём не работает); Pi Zero 2 W работает с 64-битным пакетом, но 512 МБ памяти мало.
+- Рекомендуется Pi 4 или 5 с памятью от 2 ГБ; первый запуск занимает на несколько секунд больше, чем на ПК.
+
 ## macOS
 
 1. Выберите нужный файл: `-mac-apple-silicon.dmg` для процессоров M1/M2/M3/M4, `-mac-intel.dmg` для Mac с Intel.
@@ -58,7 +68,7 @@
 Установщики собираются GitHub Actions (`.github/workflows/build.yml`) при каждом обновлении ветки `release` (версия берётся из файла `VERSION`), при этом создаётся и релиз `vX.Y.Z`. Локально:
 
 ```sh
-dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, osx-arm64
+dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
 Документы пересоздаются командами `tools/build_spiegazione.py data` и `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.

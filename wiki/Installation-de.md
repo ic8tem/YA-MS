@@ -9,6 +9,8 @@ Alle Pakete findest du auf der Seite **[Releases](https://github.com/ic8tem/YA-M
 | Windows (64 Bit) | `YA-MS-x.y.z-windows-x64-setup.exe` (Installationsprogramm) | `C:\YA-MS` |
 | Windows (64 Bit), portabel | `YA-MS-x.y.z-windows-x64-portatile.zip` | jeden Ordner, in dem du schreiben darfst |
 | Linux (64 Bit) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 Bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi 2/3/4 (Raspberry Pi OS 32 Bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | macOS, Apple Silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 
@@ -35,6 +37,14 @@ Entpacke `YA-MS-x.y.z-windows-x64-portatile.zip` an einen beliebigen Ort (einen 
 
 Für japanischen Text brauchst du eventuell die Noto-CJK-Schriften: siehe [Fehlerbehebung](Troubleshooting-FAQ-de#linux-japanischer-text-zeigt-kästchen).
 
+## Raspberry Pi
+
+Wie unter Linux: `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` (bzw. `-32bit` unter Raspberry Pi OS 32 Bit) entpacken und im entpackten Ordner `./installa.sh` starten.
+
+- Welches System du hast, zeigt `uname -m` im Terminal: `aarch64` → 64-Bit-Paket, `armv7l` → 32-Bit-Paket.
+- Unterstützt: Raspberry Pi 2 (nur 32 Bit), 3, 4, 5, 400 und 500 mit der Desktop-Version von Raspberry Pi OS. **Nicht unterstützt:** Pi Zero / Zero W und Pi 1 (ARMv6-Prozessor, .NET läuft dort nicht); der Pi Zero 2 W läuft mit dem 64-Bit-Paket, aber 512 MB RAM sind knapp.
+- Empfohlen wird ein Pi 4 oder 5 mit mindestens 2 GB RAM; der erste Start dauert ein paar Sekunden länger als auf einem PC.
+
 ## macOS
 
 1. Wähle die richtige Datei: `-mac-apple-silicon.dmg` für Prozessoren M1/M2/M3/M4, `-mac-intel.dmg` für Intel-Macs.
@@ -58,7 +68,7 @@ Installiere die neue Version **über die alte** (gleiches Installationsprogramm,
 Die Installationspakete werden von GitHub Actions (`.github/workflows/build.yml`) bei jeder Aktualisierung des Zweigs `release` erzeugt (Version aus der Datei `VERSION`), wobei auch das Release `vX.Y.Z` angelegt wird. Lokal:
 
 ```sh
-dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, osx-arm64
+dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
 Die Dokumente werden mit `tools/build_spiegazione.py data` und `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` neu erzeugt.

@@ -9,6 +9,8 @@
 | Windows (64 ビット) | `YA-MS-x.y.z-windows-x64-setup.exe` (インストーラー) | `C:\YA-MS` |
 | Windows (64 ビット)、ポータブル版 | `YA-MS-x.y.z-windows-x64-portatile.zip` | 書き込み可能な任意のフォルダー |
 | Linux (64 ビット) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Raspberry Pi 3/4/5、400/500 (Raspberry Pi OS 64 ビット) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi 2/3/4 (Raspberry Pi OS 32 ビット) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | macOS、Apple シリコン (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS、Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 
@@ -35,6 +37,14 @@
 
 日本語を表示するには Noto CJK フォントが必要な場合があります。[トラブルシューティング](Troubleshooting-FAQ-ja#linux-で日本語が四角で表示される) を参照してください。
 
+## Raspberry Pi
+
+手順は Linux と同じです。`YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` (32 ビット版 Raspberry Pi OS では `-32bit`) を展開し、展開したフォルダーで `./installa.sh` を実行します。
+
+- システムの種類はターミナルで `uname -m` を実行すると分かります。`aarch64` → 64 ビット版パッケージ、`armv7l` → 32 ビット版パッケージ。
+- 対応機種: Raspberry Pi 2 (32 ビットのみ)、3、4、5、400、500 (デスクトップ版 Raspberry Pi OS)。**非対応:** Pi Zero / Zero W と Pi 1 (ARMv6 プロセッサーでは .NET が動作しません)。Pi Zero 2 W は 64 ビット版で動作しますが、512 MB のメモリーでは余裕がありません。
+- メモリー 2 GB 以上の Pi 4 または 5 を推奨します。初回起動は PC より数秒長くかかります。
+
 ## macOS
 
 1. 正しいファイルを選びます: M1/M2/M3/M4 プロセッサーには `-mac-apple-silicon.dmg`、Intel Mac には `-mac-intel.dmg`。
@@ -58,7 +68,7 @@
 インストーラーは `release` ブランチが更新されるたびに GitHub Actions (`.github/workflows/build.yml`) で作られ (バージョンは `VERSION` ファイルから取得)、リリース `vX.Y.Z` も作成されます。ローカルでは:
 
 ```sh
-dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, osx-arm64
+dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
 文書は `tools/build_spiegazione.py data` と `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` で再生成します。

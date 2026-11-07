@@ -25,6 +25,8 @@ namespace YAMS
         readonly TextBlock[] rdState = new TextBlock[3], rdCounts = new TextBlock[3];
         readonly SelectableTextBlock[] rdConsole = new SelectableTextBlock[3];
         readonly ScrollViewer[] rdSv = new ScrollViewer[3];
+        readonly TextBlock[] rdDot = new TextBlock[3];
+        WrapPanel rdStrip;
         readonly CheckBox[] rdBand = new CheckBox[MsBands.Names.Length];
         bool rdDirty = true;
         int rdTick;
@@ -48,12 +50,10 @@ namespace YAMS
             bImp.Click += async (s, e) => await ImportCall3();
             DockTop(left, Row(L(Lang.T("Nominativo per il login")), txtRdLogin, bImp, lblRdCall3));
 
-            Grid lg = new Grid { RowDefinitions = new RowDefinitions("52*,48*") };
             StackPanel sp = new StackPanel();
             Color[] cols = { Pal.Azure, Pal.Violet, Pal.Orange };
             for (int i = 0; i < 3; i++) sp.Children.Add(SessionBox(i, cols[i]));
             ScrollViewer ssv = new ScrollViewer { Content = sp, VerticalScrollBarVisibility = ScrollBarVisibility.Auto, HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled };
-            Grid.SetRow(ssv, 0); lg.Children.Add(ssv);
 
             DockPanel spotPane = new DockPanel { Margin = new Thickness(4, 4, 4, 0) };
             lblRdCount = new TextBlock { Foreground = Pal.B(Pal.Green), Margin = new Thickness(8, 0), VerticalAlignment = VerticalAlignment.Center };
@@ -67,8 +67,20 @@ namespace YAMS
                             new double[] { 50, 90, 80, 90, 66, 100, 76, 56, 70, 260 });
             tRd.Selectable = false;
             spotPane.Children.Add(tRd);
-            Grid.SetRow(spotPane, 1); lg.Children.Add(spotPane);
-            left.Children.Add(lg);
+            // le tre sessioni (cluster, RBN, DM4X/PSKReporter) tutte visibili in una linguetta, gli spot in un'altra;
+            // in cima una striscia con lo stato delle tre sessioni, sempre visibile
+            rdStrip = new WrapPanel { Margin = new Thickness(6, 2, 6, 2) };
+            for (int i = 0; i < 3; i++)
+            {
+                rdDot[i] = new TextBlock { Text = (i + 1) + ". " + Lang.T(MsCollector.Defaults[i][0]) + " ●", FontWeight = FontWeight.SemiBold, Foreground = Pal.B(Pal.Muted), Margin = new Thickness(0, 0, 18, 0) };
+                rdStrip.Children.Add(rdDot[i]);
+            }
+            DockTop(left, rdStrip);
+            PillTabs inner = new PillTabs();
+            inner.Add(Lang.T("Sessioni telnet"), ssv);
+            inner.Add(Lang.T("Spot MS raccolti"), spotPane);
+            DockTop(left, inner.Bar);
+            left.Children.Add(inner.Host);
             Grid.SetColumn(left, 0); g.Children.Add(left);
 
             // ---------------- destra (40 %): filtro
@@ -186,7 +198,7 @@ namespace YAMS
             rdState[i] = new TextBlock { Foreground = Pal.B(Pal.Muted), Margin = new Thickness(8, 0), VerticalAlignment = VerticalAlignment.Center };
             rdCounts[i] = new TextBlock { Foreground = Pal.B(Pal.Green), Margin = new Thickness(8, 0), VerticalAlignment = VerticalAlignment.Center };
             rdConsole[i] = new SelectableTextBlock { FontFamily = Pal.Mono, FontSize = 11.5, Foreground = Pal.B(Pal.CodeText), TextWrapping = TextWrapping.NoWrap };
-            rdSv[i] = new ScrollViewer { Content = rdConsole[i], Height = 110, Background = Pal.B(Pal.CodeBack), HorizontalScrollBarVisibility = ScrollBarVisibility.Auto };
+            rdSv[i] = new ScrollViewer { Content = rdConsole[i], Height = 96, Background = Pal.B(Pal.CodeBack), HorizontalScrollBarVisibility = ScrollBarVisibility.Auto };
             rdSend[i] = T("", 260, false);
             rdSend[i].Watermark = Lang.T("comando da inviare (es. sh/dx 20)");
             Button bs = B(Lang.T("Invia"));
@@ -334,6 +346,8 @@ namespace YAMS
                 TelnetSession s = MsCollector.Sessions[i];
                 rdState[i].Text = Lang.T(MsCollector.StateText[i]);
                 rdState[i].Foreground = Pal.B(s.Connected ? Pal.Green : Pal.Muted);
+                rdDot[i].Foreground = Pal.B(s.Connected ? Pal.Green : Pal.Muted);
+                ToolTip.SetTip(rdDot[i], rdState[i].Text);
                 rdCounts[i].Text = Lang.F("righe {0}, spot letti {1}, MS {2}", MsCollector.Lines[i], MsCollector.Parsed[i], MsCollector.Accepted[i]);
                 if (pages_visible_collect())
                 {

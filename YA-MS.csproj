@@ -26,6 +26,7 @@
   </ItemGroup>
   <ItemGroup>
     <AvaloniaResource Include="src/Assets/*.png" />
+    <AvaloniaResource Include="src/Assets/*.jpg" />
     <None Include="data/**" CopyToOutputDirectory="PreserveNewest" LinkBase="data" />
     <None Include="doc/**" CopyToOutputDirectory="PreserveNewest" LinkBase="doc" />
     <None Include="LEGGIMI.txt" CopyToOutputDirectory="PreserveNewest" />

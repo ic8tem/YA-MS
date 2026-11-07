@@ -576,3 +576,33 @@ scartati per altra propagazione: {0}	別の伝搬のため不採用: {0}
 Sessioni telnet	Telnet セッション
 Spot MS raccolti	収集した MS スポット
 antenna {0}°	アンテナ {0}°
+Calcolo previsionale	予測計算
+Clic su una tratta della mappa o su una riga della tabella per i dettagli del contatto e della sua nuvola.	地図上の経路または表の行をクリックすると、交信とその雲の詳細を表示します。
+DM4X (PSKReporter)	DM4X (PSKReporter)
+DX cluster	DX クラスター
+Dati real-time	リアルタイムデータ
+Documenti tecnici	技術資料
+Foto	写真
+Live e volta celeste	ライブと天球
+Mappa dei radar europei	ヨーロッパのレーダー地図
+Nuvola	雲
+Previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter	流星散乱のための流星群効率のリアルタイム予測と計算
+Raggio della mappa	地図の半径
+Spot MS della linguetta "Raccolta dati". Per ogni contatto la nuvola indica dove si concentrano le scie più probabili per quella tratta e quell'ora (riflessione speculare, somma degli sciami attivi). Nuvole tratteggiate = solo meteore sporadiche. Gli spot con una stazione fuori dalla mappa non si disegnano; quelli appena arrivati (meno di 3 minuti) lampeggiano per un minuto.	「データ収集」タブの MS スポット。各交信の雲は、その経路と時刻で最も可能性の高い流星痕が集中する場所を示します (鏡面反射、活動中の流星群の合計)。破線の雲 = 散在流星のみ。局が地図の外にあるスポットは描きません。届いたばかり (3 分未満) のスポットは 1 分間点滅します。
+Spot da mostrare	表示するスポット
+Stazione	局
+Traffico MS in diretta · {0}	MS トラフィック (ライブ) · {0}
+Traffico in diretta	ライブトラフィック
+Traffico meteor scatter in diretta	流星散乱トラフィック (ライブ)
+a cura di	制作
+hot spot (solo sporadiche) {0}	ホットスポット (散在流星のみ) {0}
+nuvola non calcolabile per questa tratta (troppo corta o troppo lunga)	この経路では雲を計算できません (短すぎるか長すぎます)
+nuvola {0}: {1:F0} % delle riflessioni, {2:F0} × {3:F0} km, asse a {4:F0}°	雲 {0}: 反射の {1:F0} %、{2:F0} × {3:F0} km、軸 {4:F0}°
+sporadiche	散在流星
+ultime 24 ore	直近 24 時間
+ultime {0} ore	直近 {0} 時間
+ultimi {0} minuti	直近 {0} 分
+versione	バージョン
+{0} MHz: {1}	{0} MHz: {1}
+{0} UTC · {1:F1} kHz · {2:F0} km	{0} UTC · {1:F1} kHz · {2:F0} km
+{0} contatti sulla mappa · {1} fuori dalla mappa · {2} senza locator	地図上の交信 {0} · 地図外 {1} · ロケーターなし {2}

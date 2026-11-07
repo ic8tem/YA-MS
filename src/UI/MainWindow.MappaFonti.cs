@@ -17,7 +17,7 @@ namespace YAMS
 
         void BuildSourcesMapTab()
         {
-            DockPanel p = Page(Lang.T("Mappa delle fonti"));
+            DockPanel p = Page(Lang.T("Mappa dei radar europei"));
             TextBlock head = new TextBlock
             {
                 Foreground = Pal.B(Pal.OrangeText), TextWrapping = TextWrapping.Wrap, Margin = new Thickness(8, 6, 8, 4),

@@ -24,10 +24,16 @@ EXTRA = [
     # Theme.cs: Tema.Names (schemi di colori)
     "Chiaro", "Notte", "Nero", "Pastello azzurro", "Pastello arancione", "Pastello acquamarina", "Pastello verde",
     "Pastello rosa", "Pastello lilla", "Pastello indaco", "Pastello marrone", "Scia meteorica",
+    # MsSpots.cs: MsCollector.Defaults (nomi e note delle sessioni telnet) e stati di TelnetSession
+    "DX cluster a scelta", "Reverse Beacon Network", "Cluster con PSKReporter",
+    "Cluster scelto dall'utente. Su ON0DXK le bande VHF sono filtrate: si abilitano con set/filter dxbm/pass 6 (poi 4, 2...). Altro esempio: hamqth.com 7300.",
+    "RBN: porta 7000 = CW e RTTY, porta 7001 = FT8. Login con il solo nominativo. Gli skimmer RBN raramente decodificano i modi MS: serve soprattutto per gli spot con <MS> nel commento.",
+    "Cluster di DM4X con gli spot di PSKReporter (dm4x.ddns.net, porta 8500): qui arrivano le decodifiche MSK144 di WSJT-X e MSHV. In alternativa HamAlert (hamalert.org 7300, serve un account con i trigger).",
+    "Non connesso", "Disconnesso", "Chiuso", "Nuovo tentativo tra 30 s", "Indirizzo mancante", "Manca il nominativo per il login",
 ]
 
 # argomenti non letterali ammessi (i loro valori stanno nei nomi degli sciami o in EXTRA)
-KNOWN_DYNAMIC = {"s.Name", "h.Label", "rh.Label", "tn"}
+KNOWN_DYNAMIC = {"s.Name", "h.Label", "rh.Label", "tn", "def[0]", "def[4]", "MsCollector.StateText[i]"}
 
 HEADER = """# YA-MS - chiavi da tradurre (testi italiani dell'interfaccia). File generato da tools/estrai_chiavi.py: non modificare a mano.
 # Ogni file di traduzione data/lingue/<codice>.txt (UTF-8) ha una voce per riga:

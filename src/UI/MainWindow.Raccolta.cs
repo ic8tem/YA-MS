@@ -117,7 +117,7 @@ namespace YAMS
             fp.Children.Add(chkLow);
 
             fp.Children.Add(new TextBlock { Text = Lang.T("Prova del filtro"), FontWeight = FontWeight.Bold, Foreground = Pal.B(Pal.Fore), Margin = new Thickness(0, 6, 0, 0) });
-            txtRdTest = T("DX de DK5EW-#:  144360.0  IK7XXX   MSK144 +2 dB JN70CN<MS>JO40   2133Z", 420, false);
+            txtRdTest = T("DX de DK5EW-#:  144360.0  IC8TEM   MSK144 +2 dB JN48<MS>JN70   2133Z", 420, false);
             txtRdTest.FontSize = 12;
             txtRdTest.HorizontalAlignment = HorizontalAlignment.Stretch; txtRdTest.Width = double.NaN;
             lblRdTest = new TextBlock { TextWrapping = TextWrapping.Wrap, FontSize = 13 };
@@ -131,7 +131,8 @@ namespace YAMS
             fp.Children.Add(new TextBlock
             {
                 TextWrapping = TextWrapping.Wrap, Foreground = Pal.B(Pal.Muted), FontSize = 12,
-                Text = Lang.T("Gli spot accettati si salvano in data/spot_ms, un file CSV al giorno. I locator mancanti si prendono dall'archivio CALL3 (data/call3.txt).")
+                Text = Lang.T("Gli spot accettati si salvano in data/spot_ms, un file CSV al giorno. I locator mancanti si prendono dall'archivio CALL3 (data/call3.txt).") + " " +
+                       Lang.T("Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, se CALL3 ha il locator a 6 caratteri nello stesso quadrato.")
             });
             Border right = new Border
             {
@@ -258,6 +259,7 @@ namespace YAMS
             }
             else
             {
+                s.LocSpotter = MsCollector.Refine(s.LocSpotter, s.Spotter); s.LocDx = MsCollector.Refine(s.LocDx, s.DxCall);
                 lblRdTest.Text = Lang.F("ACCETTATO per \"{0}\": {1} da {2}, {3} MHz", w.Text, s.DxCall, s.Spotter, s.Band) +
                     (s.LocSpotter.Length > 0 || s.LocDx.Length > 0 ? "  (" + s.LocSpotter + " → " + s.LocDx + ")" : "");
                 lblRdTest.Foreground = Pal.B(Pal.Green);

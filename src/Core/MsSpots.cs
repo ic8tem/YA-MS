@@ -236,11 +236,26 @@ namespace YAMS
 
         static bool IsLoc(string l) { LatLon p; return l != null && (l.Length == 4 || l.Length == 6) && Astro.TryLocator(l.ToUpperInvariant(), out p); }
 
-        // locator mancanti dall'archivio CALL3 e distanza
+        // Regola dell'autore (IC8TEM): i locator non precisi si prendono da CALL3.
+        // - locator mancante: quello di CALL3;
+        // - locator a 4 caratteri (solo il quadrato, ~100 x 200 km): se CALL3 ha un locator a 6 caratteri nello stesso
+        //   quadrato si usa quello (~5 x 2,5 km); se CALL3 indica un altro quadrato si tiene il locator dello spot,
+        //   perche' la stazione puo' essere in portatile e lo spot e' il dato del momento;
+        // - locator a 6 caratteri: si tiene quello dello spot.
+        public static string Refine(string loc, string call)
+        {
+            loc = (loc ?? "").Trim().ToUpperInvariant();
+            string c3 = CallDb.Lookup(call);
+            if (loc.Length == 0) return c3 ?? "";
+            if (loc.Length < 6 && c3 != null && c3.Length >= 6 && loc.Length >= 4 && c3.StartsWith(loc.Substring(0, 4), StringComparison.Ordinal)) return c3;
+            return loc;
+        }
+
+        // locator mancanti o imprecisi dall'archivio CALL3 e distanza
         static void Locate(MsSpot s)
         {
-            if (s.LocSpotter.Length == 0) s.LocSpotter = CallDb.Lookup(s.Spotter) ?? "";
-            if (s.LocDx.Length == 0) s.LocDx = CallDb.Lookup(s.DxCall) ?? "";
+            s.LocSpotter = Refine(s.LocSpotter, s.Spotter);
+            s.LocDx = Refine(s.LocDx, s.DxCall);
             LatLon a, b;
             if (Astro.TryLocator(s.LocSpotter, out a) && Astro.TryLocator(s.LocDx, out b)) s.DistKm = Astro.DistanceKm(a, b);
         }

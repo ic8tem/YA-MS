@@ -1,19 +1,32 @@
-YA-MS 1.2.0 - a cura di Costantino IC8TEM
+YA-MS 1.3.0 - a cura di Costantino IC8TEM
 Previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter (50-432 MHz)
-Windows, Linux e Mac.
+Windows (64 e 32 bit), Linux, Raspberry Pi e Mac.
 
 INSTALLAZIONE
   Il programma e la sua cartella "data" stanno sempre insieme nella cartella personale YA-MS:
   tutti i dati e le impostazioni sono li' (niente AppData, niente cartelle di sistema).
   Windows  YA-MS-x.y.z-windows-x64-setup.exe: installa in C:\YA-MS, senza permessi di amministratore,
            con icona nel menu Start (e, a scelta, sul desktop). In alternativa lo zip portatile: si estrae
-           dove si vuole e si avvia YA-MS.exe.
+           dove si vuole e si avvia YA-MS.exe. Per Windows a 32 bit (Windows 10/11) i file -windows-x86-.
   Linux    YA-MS-x.y.z-linux-x64.tar.gz: estrarre e lanciare ./installa.sh dalla cartella estratta.
            Installa in ~/YA-MS e aggiunge YA-MS al menu delle applicazioni.
+  Raspberry Pi  YA-MS-x.y.z-raspberry-pi-64bit.tar.gz (Raspberry Pi OS a 64 bit, Pi 3/4/5/400/500) oppure
+           -raspberry-pi-32bit.tar.gz (Raspberry Pi OS a 32 bit, anche Pi 2): come Linux, ./installa.sh.
+           Il comando uname -m dice quale serve: aarch64 = 64 bit, armv7l = 32 bit. Pi Zero/Zero W e Pi 1 non supportati.
   Mac      YA-MS-x.y.z-mac-apple-silicon.dmg (processori M1/M2/M3/M4) oppure -mac-intel.dmg.
            Aprire il .dmg, clic destro su "Installa YA-MS.command" > Apri. Installa in ~/YA-MS.
            Il programma non e' firmato da Apple: la prima volta il Mac chiede conferma.
   Le versioni nuove si installano sopra la precedente: impostazioni, archivi del flusso e mappa restano.
+
+NOVITA' DELLA 1.3.0
+  - Lingue: italiano, inglese, russo, giapponese, tedesco e olandese (scelta in alto a destra).
+  - Nuova linguetta "Radar GRAVES": settori, passi del fascio, prossimi passaggi verso la tratta.
+  - Schemi di colori di YAEC (Chiaro, Notte, Nero, pastelli, Scia meteorica), scelta "Tema" in alto a destra.
+  - Grafici orari: sotto le ore UTC una seconda riga con l'ora locale del computer.
+  - Tabella oraria: passando il mouse su una cella con la lettera A o B un fumetto dice quale hot spot e'
+    (lato sinistro o destro della tratta), la percentuale delle riflessioni e dove puntare l'antenna.
+  - Nuovi pacchetti: Windows a 32 bit e Raspberry Pi (64 e 32 bit).
+  - Wiki in inglese, russo, tedesco e giapponese: https://github.com/ic8tem/YA-MS/wiki
 
 NOVITA' DELLA 1.2.0
   - Lobo dell'antenna: orizzontale = 0,93 x regola di Kraus, verticale = Kraus (verificati con le simulazioni

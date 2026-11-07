@@ -74,7 +74,7 @@ namespace YAMS
     public static class MsCollector
     {
         public static readonly string[] SourceNames = { "Cluster", "RBN", "PSKReporter" };
-        public static readonly string[] BuiltInWords = { "MSK144", "FSK441", "PSK2K", "JTMS", "JT6M", "<MS>" };
+        public static readonly string[] BuiltInWords = { "MSK144", "FSK441", "FSK41", "PSK2K", "JTMS", "JT6M", "<MS>" };   // FSK41: grafia abbreviata di FSK441 indicata dall'autore
 
         // valori di partenza delle tre sessioni: nome, host, porta, comandi iniziali, nota
         public static readonly string[][] Defaults =
@@ -154,6 +154,9 @@ namespace YAMS
         }
 
         public static void Shutdown() { foreach (TelnetSession s in Sessions) s.Disconnect(); }
+
+        // svuota la tabella degli spot e l'elenco dei doppioni (uno spot uguale arrivato dopo torna a comparire)
+        public static void ClearSpots() { Spots.Clear(); keys.Clear(); }
 
         // parola del filtro trovata nella riga (null = nessuna)
         public static MsFilterWord FindWord(string text)

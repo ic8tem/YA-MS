@@ -60,7 +60,7 @@ namespace YAMS
             Button bOpen = B(Lang.T("Apri la cartella degli spot"));
             bOpen.Click += (s, e) => { try { Dialogs.OpenWithDefaultApp(MsCollector.Dir); } catch { } };
             Button bClr = B(Lang.T("Svuota la tabella"));
-            bClr.Click += (s, e) => { MsCollector.Spots.Clear(); rdDirty = true; FillRdTable(); };
+            bClr.Click += (s, e) => { MsCollector.ClearSpots(); rdDirty = true; FillRdTable(); };
             TextBlock th = new TextBlock { Text = Lang.T("Spot meteor scatter raccolti (i più recenti in alto)"), FontWeight = FontWeight.Bold, Foreground = Pal.B(Pal.Fore), VerticalAlignment = VerticalAlignment.Center };
             DockTop(spotPane, Row(th, lblRdCount, bOpen, bClr));
             tRd = MakeTable(new[] { "UTC", Lang.T("Fonte"), "MHz", "DX", Lang.T("Loc DX"), "Spotter", Lang.T("Loc spotter"), "km", Lang.T("Filtro"), Lang.T("Commento") },

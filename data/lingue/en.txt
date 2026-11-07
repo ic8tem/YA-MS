@@ -575,3 +575,4 @@ finestra {0} kHz	window {0} kHz
 scartati per altra propagazione: {0}	rejected for another propagation: {0}
 Sessioni telnet	Telnet sessions
 Spot MS raccolti	Collected MS spots
+antenna {0}°	antenna {0}°

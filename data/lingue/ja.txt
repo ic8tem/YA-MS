@@ -575,3 +575,4 @@ finestra {0} kHz	ウィンドウ {0} kHz
 scartati per altra propagazione: {0}	別の伝搬のため不採用: {0}
 Sessioni telnet	Telnet セッション
 Spot MS raccolti	収集した MS スポット
+antenna {0}°	アンテナ {0}°

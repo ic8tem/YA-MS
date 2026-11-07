@@ -575,3 +575,4 @@ finestra {0} kHz	Fenster {0} kHz
 scartati per altra propagazione: {0}	abgelehnt wegen anderer Ausbreitung: {0}
 Sessioni telnet	Telnet-Sitzungen
 Spot MS raccolti	Gesammelte MS-Spots
+antenna {0}°	Antenne {0}°

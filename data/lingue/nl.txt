@@ -575,3 +575,4 @@ finestra {0} kHz	venster {0} kHz
 scartati per altra propagazione: {0}	afgewezen wegens andere propagatie: {0}
 Sessioni telnet	Telnet-sessies
 Spot MS raccolti	Verzamelde MS-spots
+antenna {0}°	antenne {0}°

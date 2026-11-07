@@ -414,6 +414,7 @@ alfa-Centauridi
 alfa-Monocerotidi
 ant_radiante.csv: riga ignorata: {0}
 antenna verso {0}: az {1:F0}° · el {2:F1}°\nGRAVES in linea diretta: az {3:F0}°
+antenna {0}°
 azimut rispetto al corrispondente
 beta-Tauridi diurne
 buono

@@ -1,4 +1,4 @@
-# temporaneo: esplora le pagine del Global Meteor Network (da qui il sito non e' raggiungibile)
+# temporaneo: esplora le pagine di GMN e CMOR (da qui i siti non sono raggiungibili)
 name: sonda
 on: workflow_dispatch
 permissions:
@@ -7,20 +7,27 @@ jobs:
   sonda:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - shell: bash {0}
+        run: |
           mkdir out; cd out
-          for u in https://globalmeteornetwork.org/flux/ https://globalmeteornetwork.org/data/ https://globalmeteornetwork.org/data/traj_summary_data/ https://globalmeteornetwork.org/data/traj_summary_data/daily/ ; do
-            f=$(echo "$u" | sed 's#https://##;s#[/:]#_#g').html
-            curl -sL --max-time 60 -A "YA-MS-probe" -o "$f" "$u"; echo "$u -> $(wc -c < $f)"
-          done
-          grep -oE '(href|src)="[^"]+"' globalmeteornetwork.org_flux_.html | sort -u > flux_links.txt || true
-          grep -oE 'https?://[^"'"'"' )]+\.(csv|json|txt|ecsv|js)' globalmeteornetwork.org_flux_.html | sort -u >> flux_links.txt || true
-          cat flux_links.txt | head -150
-          for l in $(grep -oE 'https?://globalmeteornetwork.org/[^"]+\.(csv|json|txt|ecsv)' flux_links.txt | head -10); do curl -sL --max-time 60 "$l" | head -c 3000 > "probe_$(basename $l)"; done
-          F=$(ls -1 globalmeteornetwork.org_data_traj_summary_data_daily_.html); grep -oE 'href="[^"]+"' $F | tail -5
-          L=$(grep -oE 'href="traj_summary_[^"]+"' $F | tail -1 | cut -d'"' -f2); echo "latest $L"
-          curl -sL --max-time 120 "https://globalmeteornetwork.org/data/traj_summary_data/daily/$L" | head -c 20000 > traj_head.txt
-      - run: |
+          get() { curl -sL --max-time 90 -A "YA-MS (meteor scatter program)" -o "$2" -w "%{http_code} %{size_download} %{content_type}\n" "$1"; }
+          get https://globalmeteornetwork.org/flux/ flux.html
+          get https://globalmeteornetwork.org/flux/plots/ plots.html
+          get https://fireballs.ndc.nasa.gov/cmor-radiants/ cmor.html
+          grep -oE '(href|src)="[^"]+"' flux.html | sort -u > flux_links.txt
+          grep -oE '(href|src)="[^"]+"' cmor.html | sort -u > cmor_links.txt
+          grep -oE 'href="[^"]+"' plots.html | head -80 > plots_links.txt
+          get https://fireballs.ndc.nasa.gov/cmor-radiants/skymap-activity.png cmor_act.png
+          get https://fireballs.ndc.nasa.gov/cmor-radiants/skymap-velocity.png cmor_vel.png
+          get https://globalmeteornetwork.org/flux/plots/yearly_zhr_overview.png overview.png
+          N=$(grep -oE 'plots/flux_[A-Z]{3}_sol=[0-9.]+-[0-9.]+_year_[0-9]{4}\.png' flux.html | head -1)
+          echo "primo grafico: $N"; [ -n "$N" ] && get "https://globalmeteornetwork.org/flux/$N" sample_year.png
+          N2=$(grep -oE 'plots/flux_[A-Z]{3}_sol=[0-9.]+-[0-9.]+_year_[0-9]{4}_full\.png' flux.html | head -1); [ -n "$N2" ] && get "https://globalmeteornetwork.org/flux/$N2" sample_full.png
+          sed -e 's/<[^>]*>/ /g' flux.html | tr -s ' \n' | head -c 6000 > flux_text.txt
+          sed -e 's/<[^>]*>/ /g' cmor.html | tr -s ' \n' | head -c 4000 > cmor_text.txt
+          ls -la
+      - shell: bash {0}
+        run: |
           cd out; git init -q -b sonda; git config user.name a; git config user.email a@a
           git add -A; git commit -qm sonda
           git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" sonda

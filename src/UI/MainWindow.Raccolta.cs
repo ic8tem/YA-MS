@@ -198,7 +198,7 @@ namespace YAMS
             rdState[i] = new TextBlock { Foreground = Pal.B(Pal.Muted), Margin = new Thickness(8, 0), VerticalAlignment = VerticalAlignment.Center };
             rdCounts[i] = new TextBlock { Foreground = Pal.B(Pal.Green), Margin = new Thickness(8, 0), VerticalAlignment = VerticalAlignment.Center };
             rdConsole[i] = new SelectableTextBlock { FontFamily = Pal.Mono, FontSize = 11.5, Foreground = Pal.B(Pal.CodeText), TextWrapping = TextWrapping.NoWrap };
-            rdSv[i] = new ScrollViewer { Content = rdConsole[i], Height = 96, Background = Pal.B(Pal.CodeBack), HorizontalScrollBarVisibility = ScrollBarVisibility.Auto };
+            rdSv[i] = new ScrollViewer { Content = rdConsole[i], Height = 78, Background = Pal.B(Pal.CodeBack), HorizontalScrollBarVisibility = ScrollBarVisibility.Auto };
             rdSend[i] = T("", 260, false);
             rdSend[i].Watermark = Lang.T("comando da inviare (es. sh/dx 20)");
             Button bs = B(Lang.T("Invia"));
@@ -207,16 +207,18 @@ namespace YAMS
             rdSend[i].KeyUp += (s, e) => { if (e.Key == Avalonia.Input.Key.Enter) send(); };
 
             StackPanel sp = new StackPanel();
-            sp.Children.Add(new TextBlock { Text = (i + 1) + ". " + Lang.T(def[0]), FontWeight = FontWeight.Bold, FontSize = 14, Foreground = Pal.B(tc), Margin = new Thickness(4, 0, 0, 2) });
+            // compatta, perche' le tre sessioni stiano tutte nella linguetta: titolo e invio comandi sulla stessa riga,
+            // la nota sulla sessione nel fumetto del titolo (ⓘ)
+            TextBlock title = new TextBlock { Text = (i + 1) + ". " + Lang.T(def[0]) + "  ⓘ", FontWeight = FontWeight.Bold, FontSize = 14, Foreground = Pal.B(tc), Margin = new Thickness(4, 0, 12, 0), VerticalAlignment = VerticalAlignment.Center };
+            ToolTip.SetTip(title, Lang.T(def[4]));
+            sp.Children.Add(Row(title, rdSend[i], bs));
             sp.Children.Add(Row(L(Lang.T("Host")), rdHost[i], L(Lang.T("Porta")), rdPort[i], L(Lang.T("Comandi")), rdCmds[i]));
             sp.Children.Add(Row(bc, bd, rdAuto[i], rdStart[i], rdState[i], rdCounts[i]));
-            sp.Children.Add(new TextBlock { Text = Lang.T(def[4]), Foreground = Pal.B(Pal.Muted), FontSize = 11.5, TextWrapping = TextWrapping.Wrap, Margin = new Thickness(6, 2) });
             sp.Children.Add(rdSv[i]);
-            sp.Children.Add(Row(rdSend[i], bs));
             return new Border
             {
                 Background = Pal.B(Pal.Panel), BorderBrush = Pal.B(Pal.Border), BorderThickness = new Thickness(1),
-                CornerRadius = new CornerRadius(10), Padding = new Thickness(6), Margin = new Thickness(4), Child = sp
+                CornerRadius = new CornerRadius(10), Padding = new Thickness(6, 3), Margin = new Thickness(4, 2), Child = sp
             };
         }
 

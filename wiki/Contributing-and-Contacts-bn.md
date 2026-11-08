@@ -1,4 +1,4 @@
-**English** · [Русский](Contributing-and-Contacts-ru) · [Deutsch](Contributing-and-Contacts-de) · [日本語](Contributing-and-Contacts-ja)
+[English](Contributing-and-Contacts) · [Italiano](Contributing-and-Contacts-it) · [Deutsch](Contributing-and-Contacts-de) · [Nederlands](Contributing-and-Contacts-nl) · [Français](Contributing-and-Contacts-fr) · [Español](Contributing-and-Contacts-es) · [Português](Contributing-and-Contacts-pt) · [Dansk](Contributing-and-Contacts-da) · [Norsk](Contributing-and-Contacts-nb) · [Svenska](Contributing-and-Contacts-sv) · [Íslenska](Contributing-and-Contacts-is) · [Eesti](Contributing-and-Contacts-et) · [Lietuvių](Contributing-and-Contacts-lt) · [Latviešu](Contributing-and-Contacts-lv) · [Русский](Contributing-and-Contacts-ru) · [Українська](Contributing-and-Contacts-uk) · [Türkçe](Contributing-and-Contacts-tr) · [Afrikaans](Contributing-and-Contacts-af) · [العربية](Contributing-and-Contacts-ar) · [עברית](Contributing-and-Contacts-he) · [اردو](Contributing-and-Contacts-ur) · [हिन्दी](Contributing-and-Contacts-hi) · **বাংলা** · [Bahasa Indonesia](Contributing-and-Contacts-id) · [Tagalog](Contributing-and-Contacts-tl) · [日本語](Contributing-and-Contacts-ja) · [한국어](Contributing-and-Contacts-ko) · [中文](Contributing-and-Contacts-zh)
 
 # অবদান ও যোগাযোগ
 
@@ -44,4 +44,4 @@
 
 আপনার ইনস্টলেশনের `data/lingue` ফোল্ডারে ফাইলটি সম্পাদনা করে YA-MS আবার চালু করুন (অথবা ভাষা বদলান) ফলাফল দেখতে। যেহেতু এই ফাইলগুলো **প্রতিটি হালনাগাদে নতুন সংস্করণ দিয়ে প্রতিস্থাপিত হয়**, অনুগ্রহ করে আপনার **সংশোধনগুলো পাঠিয়েও দিন** – ই-মেইলে অথবা GitHub-এ pull request হিসেবে (`data/lingue/`) – যাতে সেগুলো পরবর্তী রিলিজে যায়।
 
-এই উইকি English, Русский, Deutsch ও 日本語-তে আছে; উইকির পাতাগুলোর সংশোধনও স্বাগত।
+এই উইকি English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文-তে আছে; উইকির পাতাগুলোর সংশোধনও স্বাগত।

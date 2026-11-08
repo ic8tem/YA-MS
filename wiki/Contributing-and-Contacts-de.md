@@ -1,4 +1,4 @@
-[English](Contributing-and-Contacts) · [Русский](Contributing-and-Contacts-ru) · **Deutsch** · [日本語](Contributing-and-Contacts-ja)
+[English](Contributing-and-Contacts) · [Italiano](Contributing-and-Contacts-it) · **Deutsch** · [Nederlands](Contributing-and-Contacts-nl) · [Français](Contributing-and-Contacts-fr) · [Español](Contributing-and-Contacts-es) · [Português](Contributing-and-Contacts-pt) · [Dansk](Contributing-and-Contacts-da) · [Norsk](Contributing-and-Contacts-nb) · [Svenska](Contributing-and-Contacts-sv) · [Íslenska](Contributing-and-Contacts-is) · [Eesti](Contributing-and-Contacts-et) · [Lietuvių](Contributing-and-Contacts-lt) · [Latviešu](Contributing-and-Contacts-lv) · [Русский](Contributing-and-Contacts-ru) · [Українська](Contributing-and-Contacts-uk) · [Türkçe](Contributing-and-Contacts-tr) · [Afrikaans](Contributing-and-Contacts-af) · [العربية](Contributing-and-Contacts-ar) · [עברית](Contributing-and-Contacts-he) · [اردو](Contributing-and-Contacts-ur) · [हिन्दी](Contributing-and-Contacts-hi) · [বাংলা](Contributing-and-Contacts-bn) · [Bahasa Indonesia](Contributing-and-Contacts-id) · [Tagalog](Contributing-and-Contacts-tl) · [日本語](Contributing-and-Contacts-ja) · [한국어](Contributing-and-Contacts-ko) · [中文](Contributing-and-Contacts-zh)
 
 # Mitarbeit und Kontakt
 
@@ -44,4 +44,4 @@ Die Übersetzungen der Oberfläche sind einfache Textdateien in **`data/lingue/<
 
 Bearbeite die Datei im Ordner `data/lingue` deiner Installation und starte YA-MS neu (oder wechsle die Sprache), um das Ergebnis zu sehen. Da diese Dateien **bei jedem Update durch neuere Versionen ersetzt werden**, **schicke** bitte auch **deine Korrekturen** – per E-Mail oder als Pull Request auf GitHub (`data/lingue/`) –, damit sie in das nächste Release einfließen.
 
-Dieses Wiki gibt es auf English, Русский, Deutsch und 日本語; Korrekturen an den Wiki-Seiten sind ebenfalls willkommen.
+Dieses Wiki gibt es auf English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文; Korrekturen an den Wiki-Seiten sind ebenfalls willkommen.

@@ -1,4 +1,4 @@
-**English** · [Русский](Live-Showers-ru) · [Deutsch](Live-Showers-de) · [日本語](Live-Showers-ja)
+[English](Live-Showers) · [Italiano](Live-Showers-it) · [Deutsch](Live-Showers-de) · [Nederlands](Live-Showers-nl) · [Français](Live-Showers-fr) · [Español](Live-Showers-es) · [Português](Live-Showers-pt) · [Dansk](Live-Showers-da) · [Norsk](Live-Showers-nb) · [Svenska](Live-Showers-sv) · [Íslenska](Live-Showers-is) · [Eesti](Live-Showers-et) · [Lietuvių](Live-Showers-lt) · [Latviešu](Live-Showers-lv) · [Русский](Live-Showers-ru) · [Українська](Live-Showers-uk) · [Türkçe](Live-Showers-tr) · [Afrikaans](Live-Showers-af) · [العربية](Live-Showers-ar) · [עברית](Live-Showers-he) · [اردو](Live-Showers-ur) · [हिन्दी](Live-Showers-hi) · [বাংলা](Live-Showers-bn) · [Bahasa Indonesia](Live-Showers-id) · **Tagalog** · [日本語](Live-Showers-ja) · [한국어](Live-Showers-ko) · [中文](Live-Showers-zh)
 
 # Mga live na shower
 

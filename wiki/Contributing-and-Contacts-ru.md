@@ -1,4 +1,4 @@
-[English](Contributing-and-Contacts) · **Русский** · [Deutsch](Contributing-and-Contacts-de) · [日本語](Contributing-and-Contacts-ja)
+[English](Contributing-and-Contacts) · [Italiano](Contributing-and-Contacts-it) · [Deutsch](Contributing-and-Contacts-de) · [Nederlands](Contributing-and-Contacts-nl) · [Français](Contributing-and-Contacts-fr) · [Español](Contributing-and-Contacts-es) · [Português](Contributing-and-Contacts-pt) · [Dansk](Contributing-and-Contacts-da) · [Norsk](Contributing-and-Contacts-nb) · [Svenska](Contributing-and-Contacts-sv) · [Íslenska](Contributing-and-Contacts-is) · [Eesti](Contributing-and-Contacts-et) · [Lietuvių](Contributing-and-Contacts-lt) · [Latviešu](Contributing-and-Contacts-lv) · **Русский** · [Українська](Contributing-and-Contacts-uk) · [Türkçe](Contributing-and-Contacts-tr) · [Afrikaans](Contributing-and-Contacts-af) · [العربية](Contributing-and-Contacts-ar) · [עברית](Contributing-and-Contacts-he) · [اردو](Contributing-and-Contacts-ur) · [हिन्दी](Contributing-and-Contacts-hi) · [বাংলা](Contributing-and-Contacts-bn) · [Bahasa Indonesia](Contributing-and-Contacts-id) · [Tagalog](Contributing-and-Contacts-tl) · [日本語](Contributing-and-Contacts-ja) · [한국어](Contributing-and-Contacts-ko) · [中文](Contributing-and-Contacts-zh)
 
 # Участие и контакты
 
@@ -44,4 +44,4 @@ YA-MS совершенствуется благодаря сообщениям �
 
 Отредактируйте файл в папке `data/lingue` вашей установки и перезапустите YA-MS (или переключите язык), чтобы увидеть результат. Поскольку эти файлы **заменяются более новыми при каждом обновлении**, пожалуйста, также **присылайте свои исправления** – по e-mail или в виде pull request на GitHub (`data/lingue/`), – чтобы они вошли в следующий выпуск.
 
-Эта вики существует на English, Русский, Deutsch и 日本語; исправления страниц вики также приветствуются.
+Эта вики существует на English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文; исправления страниц вики также приветствуются.

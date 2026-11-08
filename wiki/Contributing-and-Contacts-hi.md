@@ -1,4 +1,4 @@
-**English** · [Русский](Contributing-and-Contacts-ru) · [Deutsch](Contributing-and-Contacts-de) · [日本語](Contributing-and-Contacts-ja)
+[English](Contributing-and-Contacts) · [Italiano](Contributing-and-Contacts-it) · [Deutsch](Contributing-and-Contacts-de) · [Nederlands](Contributing-and-Contacts-nl) · [Français](Contributing-and-Contacts-fr) · [Español](Contributing-and-Contacts-es) · [Português](Contributing-and-Contacts-pt) · [Dansk](Contributing-and-Contacts-da) · [Norsk](Contributing-and-Contacts-nb) · [Svenska](Contributing-and-Contacts-sv) · [Íslenska](Contributing-and-Contacts-is) · [Eesti](Contributing-and-Contacts-et) · [Lietuvių](Contributing-and-Contacts-lt) · [Latviešu](Contributing-and-Contacts-lv) · [Русский](Contributing-and-Contacts-ru) · [Українська](Contributing-and-Contacts-uk) · [Türkçe](Contributing-and-Contacts-tr) · [Afrikaans](Contributing-and-Contacts-af) · [العربية](Contributing-and-Contacts-ar) · [עברית](Contributing-and-Contacts-he) · [اردو](Contributing-and-Contacts-ur) · **हिन्दी** · [বাংলা](Contributing-and-Contacts-bn) · [Bahasa Indonesia](Contributing-and-Contacts-id) · [Tagalog](Contributing-and-Contacts-tl) · [日本語](Contributing-and-Contacts-ja) · [한국어](Contributing-and-Contacts-ko) · [中文](Contributing-and-Contacts-zh)
 
 # योगदान और संपर्क
 
@@ -44,4 +44,4 @@ YA-MS उन लोगों की रिपोर्टों से बेह
 
 अपने इंस्टॉलेशन के `data/lingue` फ़ोल्डर में फ़ाइल संपादित करें और परिणाम देखने के लिए YA-MS फिर से शुरू करें (या भाषा बदलें)। चूँकि ये फ़ाइलें **हर अपडेट पर नए संस्करणों से बदल दी जाती हैं**, कृपया **अपने सुधार भेजें** भी – ई-मेल से या GitHub पर pull request के रूप में (`data/lingue/`) – ताकि वे अगली रिलीज़ में शामिल हों।
 
-यह विकि English, Русский, Deutsch और 日本語 में उपलब्ध है; विकि पेजों के सुधारों का भी स्वागत है।
+यह विकि English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文 में उपलब्ध है; विकि पेजों के सुधारों का भी स्वागत है।

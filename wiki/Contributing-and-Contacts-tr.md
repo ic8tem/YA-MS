@@ -1,4 +1,4 @@
-**English** · [Русский](Contributing-and-Contacts-ru) · [Deutsch](Contributing-and-Contacts-de) · [日本語](Contributing-and-Contacts-ja)
+[English](Contributing-and-Contacts) · [Italiano](Contributing-and-Contacts-it) · [Deutsch](Contributing-and-Contacts-de) · [Nederlands](Contributing-and-Contacts-nl) · [Français](Contributing-and-Contacts-fr) · [Español](Contributing-and-Contacts-es) · [Português](Contributing-and-Contacts-pt) · [Dansk](Contributing-and-Contacts-da) · [Norsk](Contributing-and-Contacts-nb) · [Svenska](Contributing-and-Contacts-sv) · [Íslenska](Contributing-and-Contacts-is) · [Eesti](Contributing-and-Contacts-et) · [Lietuvių](Contributing-and-Contacts-lt) · [Latviešu](Contributing-and-Contacts-lv) · [Русский](Contributing-and-Contacts-ru) · [Українська](Contributing-and-Contacts-uk) · **Türkçe** · [Afrikaans](Contributing-and-Contacts-af) · [العربية](Contributing-and-Contacts-ar) · [עברית](Contributing-and-Contacts-he) · [اردو](Contributing-and-Contacts-ur) · [हिन्दी](Contributing-and-Contacts-hi) · [বাংলা](Contributing-and-Contacts-bn) · [Bahasa Indonesia](Contributing-and-Contacts-id) · [Tagalog](Contributing-and-Contacts-tl) · [日本語](Contributing-and-Contacts-ja) · [한국어](Contributing-and-Contacts-ko) · [中文](Contributing-and-Contacts-zh)
 
 # Katkıda bulunma ve iletişim
 
@@ -44,4 +44,4 @@ Arayüz çevirileri **`data/lingue/<code>.txt`** içindeki düz metin dosyaları
 
 Dosyayı kurulumunuzun `data/lingue` klasöründe düzenleyin ve sonucu görmek için YA-MS'i yeniden başlatın (ya da dili değiştirin). Bu dosyalar **her güncellemede daha yeni sürümlerle değiştirildiği** için lütfen **düzeltmelerinizi** de – e-postayla ya da GitHub'da bir pull request olarak (`data/lingue/`) – **gönderin**; böylece bir sonraki sürüme girerler.
 
-Bu wiki English, Русский, Deutsch ve 日本語 dillerinde mevcuttur; wiki sayfalarına yönelik düzeltmeler de memnuniyetle karşılanır.
+Bu wiki English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文 dillerinde mevcuttur; wiki sayfalarına yönelik düzeltmeler de memnuniyetle karşılanır.

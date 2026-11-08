@@ -1,0 +1,30 @@
+**English** · [Русский](Live-Traffic-ru) · [Deutsch](Live-Traffic-de) · [日本語](Live-Traffic-ja)
+
+# Eismas realiuoju laiku
+
+*Kortelė: Tiesiogiai ir realiojo laiko duomenys › Eismas realiuoju laiku.*
+
+[![Eismas realiuoju laiku](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_1.png)
+
+## Ką rodo
+
+**Azimutinis vienodų atstumų žemėlapis**, kurio centras – jūsų stotis (atstumas nuo centro = tikrasis atstumas, kampas = azimutas), su **visu meteor scatter eismu**, surinktu kortelėje [Duomenų rinkimas](Data-Collection-lt). Kiekvienam ryšiui programa piešia:
+
+- **trasą** tarp dviejų stočių jos juostos spalva: 28 MHz ruda, 50 MHz žalia, 70 MHz žydra, 144 MHz oranžinė, 222 MHz rožinė, 432 MHz violetinė;
+- dvi **stotis** trasos galuose;
+- **debesį**: kur susitelkia labiausiai tikėtini tos trasos ir to laiko meteorų pėdsakai.
+
+Spotai, kurių viena stotis yra **už žemėlapio ribų**, atmetami. **Ką tik atėjęs** spotas (ne senesnis nei 3 minutės) **mirksi vieną minutę**, todėl nauja veikla iš karto krenta į akis.
+
+## Kaip skaičiuojamas debesis
+
+Kiekvienam spotui programa sudaro trasą tarp dviejų lokatorių (ta pati geometrija kaip jūsų trasai, žr. [Geometrija ir slopinimas](Geometry-and-Path-Loss-lt)) ir spoto laiku E sluoksnio taškas po taško susumuoja **kiekvieno aktyvaus srauto veidrodinio atspindžio indėlius**, pasvertus jo ZHR, – tas pats skaičiavimas kaip [dangaus skliauto](Sky-View-lt) **PREV zonų**. Kiekvienoje trasos pusėje, kurioje yra bent 15 % visos sumos, debesis yra **elipsė**: centras – svertiniame taškų vidurkyje, pusašės – 1,5 karto jų išsibarstymo tikrinių verčių kvadratinės šaknys, didžioji ašis – išilgai pagrindinio tikrinio vektoriaus. Kai jokio srauto indėlio nėra (tik sporadiniai meteorai), debesys yra du klasikiniai **hot spot**, piešiami brūkšnine linija. Visos lygtys pateiktos skaičiavimų vadovo 10 skyriuje.
+
+## Valdikliai
+
+| Valdiklis | Reikšmė |
+|---|---|
+| **Žemėlapio spindulys** | 600–3500 km nuo jūsų stoties. |
+| **Rodomi spotai** | Paskutinės 15 arba 30 minučių, paskutinė valanda, paskutinės 3 valandos, paskutinės 24 valandos. |
+| **Lentelė** | Ryšiai žemėlapyje, naujausi viršuje, juostos spalva; *Debesis* rodo atspindžių dalį pagrindinėje pusėje arba *sporadiniai*. |
+| **Spustelėjimas** | Ant trasos arba lentelės eilutės: ryšys paryškinamas, o langelis rodo debesies centro lokatorių, jo dalį, dydį ir ašį. |

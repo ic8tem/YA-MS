@@ -1,0 +1,138 @@
+**English** · [Русский](Geometry-and-Path-Loss-ru) · [Deutsch](Geometry-and-Path-Loss-de) · [日本語](Geometry-and-Path-Loss-ja)
+
+# Geometrie en demping
+
+*Tabblad: Voorspellingsberekening › Geometrie en demping.*
+
+[![Geometrie en demping](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-2_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-2_2.png)
+
+Een tekstverslag van het traject (selecteerbaar, zodat je het kunt kopiëren) en rechts de grafiek **Antenne-elevatie als functie van de afstand tot het scatterpunt**. Getallen tussen haken verwijzen naar de vergelijkingen in de rekenhandleiding (`doc/YA-MS_manuale_calcoli.docx`).
+
+## Invoer van dit tabblad
+
+| Veld | Standaard | Gebruik |
+|---|---|---|
+| **Vermogen W** | 400 | Zendvermogen voor het linkbudget |
+| **Antennewinst dBi (tx = rx)** | 14 | Dezelfde antenne aan beide kanten |
+| **Minimaal signaal dBm** | −130 | Minimaal detecteerbaar signaal (artikel: 8-elements Yagi + voorversterker) |
+| **Spoordichtheid q = 10^ … elektronen/m** | 14 | Lineaire elektronendichtheid van het onderdichte spoor |
+
+De stations, band, spoorhoogte, bundelelevatie, boom en hotspot-afstand komen uit de [rijen bedieningselementen](Getting-Started-nl#1-de-drie-rijen-bedieningselementen).
+
+## Onderdelen van het verslag
+
+| Onderdeel | Inhoud |
+|---|---|
+| **TRAJECTGEOMETRIE (bolvormige aarde, R = 6372,7955 km)** | Station en tegenstation met hoogtes; afstand, azimut en tegenazimut; middelpunt (locator en coördinaten); spoorhoogte (*<- modus gemeten door de Collm-radar* als die van de radar komt); antenne-elevatie naar het middelpunt |
+| **HOT A / HOT B (klassieke hotspots, voor het richten van de antenne)** | Voor elk: locator, azimut vanaf jou en afwijking van het directe traject, azimut vanaf het tegenstation, afstand, elevatie |
+| **GRENZEN VAN DE GEMEENSCHAPPELIJKE ZONE** | Bereik op spoorhoogte met de bundelelevatie; Grens A / Grens B met azimuts |
+| Antenne | Boom in λ, winst, horizontale / verticale bundel; of Hot A en Hot B binnen of buiten de bundel liggen |
+| **TRAJECTDEMPING (onderdicht spoor, McKinley 1961; zonder antennewinst)** | Tabel voor het middelpunt (forward), Hot A en Hot B op 28, 50, 70, 144, 222 en 432 MHz |
+| **LINKBUDGET OP … MHz (middelpunt)** | Vermogen en EIRP, trajectdemping, signaal op de antenne, minimaal detecteerbaar, **marge**; dezelfde marge met de gemiddelde demping van OH5IY |
+| **EXPERIMENTELE REGELS TUSSEN DE BANDEN (SM6FHZ, VUSHF 2025)** | Aantal/intensiteit en duur vergeleken met 144 MHz; maximale IARU-ping |
+
+## Locator en traject
+
+Locator (4, 6 of 8 tekens; midden van het vak, IARU-Maidenheadsysteem) [14]. Afstand, azimut en middelpunt met grootcirkelformules op een bol met straal **r = 6372,7955 km** (artikel van Cerrotta–Sartori) [15–16]. Tijdsafhankelijke berekeningen verwijzen naar het **middelpunt**, omdat het beste tijdstip tussen de twee uiteinden tot 1,5 uur kan verschillen (SM6FHZ).
+
+## Antenne-elevatie
+
+**Bron:** formule uit het artikel van Cerrotta–Sartori (figuur 7), met x = d/r, d de grondafstand tot het reflectiepunt, H de spoorhoogte en h de stationshoogte [17]:
+
+```
+e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```
+
+**Controle:** komt binnen 0,03° overeen met de exacte bolgeometrie. Het programma gebruikt de arctangens met twee argumenten, die voorbij de horizon negatieve waarden geeft en het periodiciteitsprobleem uit het artikel vermijdt. Een negatieve elevatie naar het middelpunt betekent *traject voorbij het geometrisch bereik van één sprong*.
+
+## Bereik tot de horizon
+
+Grondafstand waarop een straal met elevatie e de hoogte H bereikt (geometrische inverse van de formule hierboven) [18]:
+
+```
+d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```
+
+**Controle:** H = 89,5 km, e = 0° → **1062 km**. In het voorbeeld uit het artikel (JN44BB–IO53RT) legt de tekening de horizonsnijpunten op ongeveer 870 km van de stations, wat overeenkomt met een bundel die ongeveer 2° is opgeheven (865 km).
+
+## Grenzen van de gemeenschappelijke zone
+
+**Bron:** het artikel bepaalt de snijpunten van de curven waar de horizon van elk station de E-laag raakt: de snijpunten van twee cirkels met hoekstraal ρ = d_H/r rond A en B [19–20]:
+
+```
+p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
+p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```
+
+Als 1 − |p0|² < 0 is het traject langer dan 2·d_H en zien de stations **geen gemeenschappelijke zone in de E-laag**.
+
+**Controle:** dit zijn de **verste randen** van de hemel die beide stations zien, **geen punten om op te richten**. Op JN70CN–IN78UO (1710 km, azimut 308°) liggen ze op 1062 km van het station, 37° links en rechts van het directe traject, terwijl MSHV 10° voorstelt. Daarom heten ze *Grens A* / *Grens B* en worden ze vaag op de kaart getekend.
+
+## Hot A en Hot B
+
+**Bron:** reflecties concentreren zich in twee zones ("hotspots") op ongeveer **50–150 km aan weerszijden van het middelpunt**. Dat is de basis van de tabel met antenne-afwijkingen uit AMS Bulletin nr. 203, overgenomen door W8WN (afwijking van 10° voor trajecten van 1500 en 1800 km); MSHV van LZ2HV gebruikt hetzelfde criterium.
+
+**Keuze:** Hot A en Hot B zijn de punten op afstand s van het middelpunt M, loodrecht op het traject (s = 150 km, instelbaar 30–400 km); A links, kijkend van jouw station naar de DX, B rechts [21]. De afwijking gezien vanaf het station is ongeveer [22]:
+
+```
+ΔAz_hot ≈ arctan( s / (D/2) )
+```
+
+**Controle:** JN70CN–IN78UO, D = 1710 km: 6,7° met s = 100 km, **10,0° met s = 150 km** (gelijk aan MSHV en AMS/W8WN), 13,2° met s = 200 km.
+
+## Demping bij onderdichte sporen
+
+**Bron:** de vergelijking van McKinley voor onderdichte sporen (β = 0, sin α = 1), zonder antennewinst; q = lineaire elektronendichtheid, r_e = klassieke elektronstraal = 2,818·10⁻¹⁵ m, R1, R2 afstanden tot het spoor, φ de halve verstrooiingshoek [36]:
+
+```
+L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```
+
+**Controle:** met q = 10¹⁴ elektronen/m op 144 MHz: **181–192 dB** tussen 600 en 2200 km, in lijn met de referenties uit het artikel op 144 MHz: **minimaal 182 dB** (GM8JBJ, naar Kaiser & Closs 1952) en **gemiddeld 200 dB** (OH5IY).
+
+## Linkbudget
+
+```
+P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```
+
+[37–38]. Winsten worden in dBi ingevoerd en in dBd gebruikt (dBi − 2,15). Het verslag geeft ook de marge met de **gemiddelde trajectdemping van OH5IY** (200 dB op 144 MHz, met λ³ omgerekend naar de gekozen band). Referentie uit het artikel: er is ongeveer **70 dBm EIRP** nodig (−130 dBm + 200 dB, bijv. ongeveer 400 W in 14 dBi).
+
+## Antennewinst en bundel
+
+**Winst – bron:** de curve van Günter Hoch **DL6WU** voor lange Yagi's als functie van de boomlengte L, aangehaald door W8IO (geldig vanaf ongeveer 2 λ) [39]:
+
+```
+G = 7.773 · log10(L/λ) + 11.43   dBi
+```
+
+**Controle tegen de NEC-modellen van L.B. Cebik W4RNL op 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
+
+| Yagi | Elementen | Boom (λ) | W4RNL NEC (dBi) | Formule (dBi) |
+|---|---|---|---|---|
+| DL6WU | 13 / 22 / 31 | 3,23 / 6,82 / 10,42 | 15,28 / 17,82 / 19,35 | 15,38 / 17,91 / 19,34 |
+| VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
+
+Het verschil is nooit groter dan **0,1 dB**: de winst hangt meer af van de boomlengte dan van het ontwerp (VK3AUU-Yagi's hebben bij hetzelfde aantal elementen een kortere boom). De Yagi Calculator van VK5DJ geeft ook schattingen voor de varianten VK3AUU, WA2PHW en DJ9BV, waarvan de formules niet zijn gepubliceerd.
+
+**Bundel – bron:** regel van Kraus, met een cirkelvormige bundel θE = θH = θK [40]:
+
+```
+G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```
+
+**Controle:** de NEC-modellen van W4RNL voor DL6WU-Yagi's geven een **horizontale bundel die 5–10 % smaller is** dan volgens Kraus: 33,8° / 26,4° / 22,6° voor 12, 19 en 26 elementen, tegenover 37,3° / 28,0° / 23,9°. Eenvoudige formules negeren de voorwaartse zijlobben (W4RNL, *Long-Boom Yagi Rules of Thumb*). Bij lange booms is de verticale bundel iets breder dan de horizontale (14 λ: 18,4° / 18,8°).
+
+**Keuze** [41]:
+
+```
+θ_horizontal = 0.93 · θK        θ_vertical = θK
+```
+
+Voorbeeld: Yagi van 14 λ op 432 MHz → 20,3 dBi, bundel 18,1° horizontaal en 19,5° verticaal; de modellen van W4RNL geven 20,4 dBi en 18,4° / 18,8°. Het zijn benaderende regels, afgeleid van een paar DL6WU-antennes.
+
+De antenne wordt altijd geacht op de DX gericht te zijn. Een hotspot ligt **binnen de bundel** als |Az(Hot) − Az(antenne)| ≤ θ_horizontal/2: hij wordt dan grijs getekend in de [Hemelkoepel](Sky-View-nl) en er verschijnt een waarschuwing. In de efficiëntieberekening zijn de antennes isotroop; de werkelijke bundel wordt alleen voor deze controle gebruikt.
+
+## Experimentele regels tussen de banden
+
+Vergeleken met 144 MHz: aantal/intensiteit × (144/f)³ (in dB), duur × (144/f)² (SM6FHZ, VUSHF 2025). Maximale pingduur volgens IARU Regio 1: 1000 ms op 50 MHz, 500 ms op 70 MHz, 100 ms op 144 MHz, 13 ms op 432 MHz (VHF Handbook, geciteerd in het artikel). Zie ook [Experimentele voorspelling](Experimental-Forecasts-nl).

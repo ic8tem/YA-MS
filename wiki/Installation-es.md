@@ -1,0 +1,77 @@
+**English** · [Русский](Installation-ru) · [Deutsch](Installation-de) · [日本語](Installation-ja)
+
+# Instalación
+
+Todos los paquetes están en la página **[Releases](https://github.com/ic8tem/YA-MS/releases)** (en los nombres de archivo de abajo `x.y.z` es la versión, p. ej. `1.2.0`). No hay que compilar nada ni instalar nada más: cada paquete contiene el runtime de .NET 8.
+
+| Sistema | Archivo | Se instala en |
+|---|---|---|
+| Windows (64 bits) | `YA-MS-x.y.z-windows-x64-setup.exe` (instalador) | `C:\YA-MS` |
+| Windows (64 bits), portable | `YA-MS-x.y.z-windows-x64-portatile.zip` | cualquier carpeta en la que puedas escribir |
+| Windows (32 bits, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` o `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Linux (64 bits) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bits) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bits) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
+| macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+
+**El programa y su carpeta `data` siempre van juntos** en la carpeta YA-MS: todos los datos y ajustes están ahí (nada de AppData ni carpetas del sistema). Ver [Ajustes y carpeta de datos](Settings-and-Data-Folder-es).
+
+## Windows
+
+### Instalador
+1. Descarga `YA-MS-x.y.z-windows-x64-setup.exe` y ejecútalo.
+2. Si **SmartScreen** muestra "Windows protegió su PC": *Más información* → *Ejecutar de todas formas* (el programa no está firmado con un certificado comercial).
+3. YA-MS se instala en **`C:\YA-MS`**, **sin derechos de administrador**, con un icono en el menú Inicio y, si lo marcas, un icono en el escritorio.
+
+### Portable
+Descomprime `YA-MS-x.y.z-windows-x64-portatile.zip` donde quieras (una carpeta en la que puedas escribir, no *Archivos de programa*) y ejecuta `YA-MS.exe`. Puedes copiar la carpeta entera a una memoria USB o a otro ordenador.
+
+## Linux
+
+1. Descomprime `YA-MS-x.y.z-linux-x64.tar.gz`.
+2. Desde la carpeta descomprimida ejecuta:
+   ```sh
+   ./installa.sh
+   ```
+3. El script copia YA-MS en **`~/YA-MS`** (no hace falta root) y añade **YA-MS** al menú de aplicaciones (categoría *HamRadio*). También puedes iniciarlo con `~/YA-MS/YA-MS`.
+
+Para el texto japonés pueden hacer falta las fuentes Noto CJK: ver [Problemas](Troubleshooting-FAQ-es#linux-el-texto-japonés-aparece-como-cuadraditos).
+
+## Raspberry Pi
+
+Mismo procedimiento que en Linux: descomprime `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` (o `-32bit` en Raspberry Pi OS de 32 bits) y ejecuta `./installa.sh` desde la carpeta descomprimida.
+
+- Para saber qué sistema tienes, escribe `uname -m` en un terminal: `aarch64` → paquete de 64 bits, `armv7l` → paquete de 32 bits.
+- Compatibles: Raspberry Pi 2 (solo 32 bits), 3, 4, 5, 400 y 500, con la versión de escritorio de Raspberry Pi OS. **No compatibles:** Pi Zero / Zero W y Pi 1 (procesador ARMv6, .NET no funciona en ellos); la Pi Zero 2 W funciona con el paquete de 64 bits, pero 512 MB de RAM se quedan cortos.
+- Se recomienda una Pi 4 o 5 con al menos 2 GB de RAM; el primer arranque tarda unos segundos más que en un PC.
+
+## macOS
+
+1. Elige el archivo adecuado: `-mac-apple-silicon.dmg` para procesadores M1/M2/M3/M4, `-mac-intel.dmg` para Mac Intel.
+2. Abre el `.dmg`, **clic derecho en "Installa YA-MS.command" → Abrir** y confirma.
+3. El script copia `YA-MS.app` en **`~/YA-MS`** y lo abre.
+
+El programa no está firmado por Apple, así que la primera vez macOS pide confirmación; ver [Problemas](Troubleshooting-FAQ-es#macos-no-se-puede-abrir-porque-es-de-un-desarrollador-no-identificado).
+
+## Primer arranque
+
+- El **mapa de Europa** (costas y fronteras de Natural Earth) se descarga automáticamente en `data/mappa` la primera vez: hace falta conexión a internet una sola vez.
+- Los **datos de radar** (Collm, Sodankylä) se descargan enseguida y luego se comprueban cada 5 minutos.
+- La interfaz arranca en el idioma del sistema si es uno de los seis disponibles; si no, en italiano; se cambia arriba a la derecha (ver [Ajustes](Settings-and-Data-Folder-es#idioma)).
+
+## Actualización
+
+Instala la nueva versión **encima de la anterior** (mismo instalador, misma carpeta). Los ajustes (`config.ini`), los archivos históricos del flujo y el mapa se quedan en `data`. Los archivos de traducción de `data/lingue` se sustituyen cuando los nuevos son más recientes.
+
+## Compilar desde el código fuente (solo desarrolladores)
+
+Los instaladores los genera GitHub Actions (`.github/workflows/build.yml`) en cada actualización de la rama `release` (versión tomada del archivo `VERSION`), que además crea la release `vX.Y.Z`. En local:
+
+```sh
+dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # o linux-x64, linux-arm64, linux-arm, osx-arm64
+```
+
+Los documentos se regeneran con `tools/build_spiegazione.py data` y `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+
+Siguiente: [Primeros pasos](Getting-Started-es).

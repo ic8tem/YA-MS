@@ -1,0 +1,138 @@
+**English** · [Русский](Geometry-and-Path-Loss-ru) · [Deutsch](Geometry-and-Path-Loss-de) · [日本語](Geometry-and-Path-Loss-ja)
+
+# Geometri ve yol kaybı
+
+*Sekme: Tahmin hesabı › Geometri ve yol kaybı.*
+
+[![Geometri ve yol kaybı](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_2.png)
+
+Yolun metin raporu (seçilebilir, böylece kopyalayabilirsiniz) ve sağda **Scatter point'e uzaklığa göre anten elevasyonu** grafiği. Köşeli parantez içindeki sayılar hesap kılavuzunun (`doc/YA-MS_manuale_calcoli.docx`) denklemlerine karşılık gelir.
+
+## Bu sekmenin girdileri
+
+| Alan | Varsayılan | Kullanım |
+|---|---|---|
+| **Güç W** | 400 | Bağlantı bütçesi için verici gücü |
+| **Anten kazancı dBi (tx = rx)** | 14 | İki uçta aynı anten |
+| **En düşük sinyal dBm** | −130 | Alınabilir en düşük sinyal (makale: 8 elemanlı Yagi + preamp) |
+| **İz yoğunluğu q = 10^ … elektron/m** | 14 | Underdense izin doğrusal elektron yoğunluğu |
+
+İstasyonlar, bant, iz yüksekliği, lob elevasyonu, boom ve hot spot mesafesi [kontrol sıralarından](Getting-Started-tr#1-üç-sıra-kontrol) gelir.
+
+## Raporun bölümleri
+
+| Bölüm | İçerik |
+|---|---|
+| **YOL GEOMETRİSİ (küresel Dünya, R = 6372,7955 km)** | Yükseklikleriyle istasyon ve DX; mesafe, azimut ve ters azimut; orta nokta (lokatör ve koordinatlar); iz yüksekliği (radardan alındığında *<- Collm radarının ölçtüğü mod*); orta noktaya doğru anten elevasyonu |
+| **HOT A / HOT B (klasik hot spot'lar, anten yönlendirmesi için)** | Her biri için: lokatör, sizden azimut ve doğrudan yoldan sapma, DX'ten azimut, mesafe, elevasyon |
+| **ORTAK BÖLGE SINIRLARI** | Lob elevasyonuyla iz yüksekliğindeki menzil; azimutlarıyla A sınırı / B sınırı |
+| Anten | λ cinsinden boom, kazanç, yatay / dikey lob; Hot A ve Hot B'nin lobun içinde mi dışında mı olduğu |
+| **YOL KAYBI (düşük yoğunluklu iz, McKinley 1961; anten kazançları hariç)** | 28, 50, 70, 144, 222 ve 432 MHz'de orta nokta (forward), Hot A ve Hot B için tablo |
+| **… MHz'DE BAĞLANTI BÜTÇESİ (orta nokta)** | Güç ve EIRP, yol kaybı, antendeki sinyal, alınabilir en düşük sinyal, **pay**; OH5IY'nin ortalama kaybıyla aynı pay |
+| **BANTLAR ARASI DENEYSEL KURALLAR (SM6FHZ, VUSHF 2025)** | 144 MHz'e göre sayı/şiddet ve süre; IARU en uzun pingi |
+
+## Lokatör ve yol
+
+Lokatör (4, 6 ya da 8 karakter; karenin merkezi, IARU Maidenhead sistemi) [14]. Mesafe, azimut ve orta nokta, yarıçapı **r = 6372,7955 km** olan bir küre üzerinde büyük daire formülleriyle (Cerrotta–Sartori makalesi) [15–16]. Zamana bağlı hesaplar **orta noktaya** göredir, çünkü en iyi saat iki uç arasında 1,5 saate kadar farklı olabilir (SM6FHZ).
+
+## Anten elevasyonu
+
+**Kaynak:** Cerrotta–Sartori makalesinin formülü (Şekil 7); x = d/r, d yansıma noktasına yer mesafesi, H iz yüksekliği ve h istasyon yüksekliği [17]:
+
+```
+e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```
+
+**Doğrulama:** kesin küresel geometriyle 0,03° içinde örtüşür. Program iki argümanlı arktanjantı kullanır; bu, ufkun ötesinde negatif değerler verir ve makalede değinilen periyodiklik sorununu ortadan kaldırır. Orta noktaya doğru negatif elevasyon *yolun tek atlamanın geometrik menzilinin ötesinde* olduğu anlamına gelir.
+
+## Ufuk menzili
+
+Elevasyonu e olan bir ışının H yüksekliğine ulaştığı yer mesafesi (yukarıdaki formülün geometrik tersi) [18]:
+
+```
+d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```
+
+**Doğrulama:** H = 89,5 km, e = 0° → **1062 km**. Makalenin örneğinde (JN44BB–IO53RT) çizim ufuk kesişimlerini istasyonlardan yaklaşık 870 km'ye koyar; bu da yaklaşık 2° yükseltilmiş bir loba (865 km) karşılık gelir.
+
+## Ortak bölge sınırları
+
+**Kaynak:** makale, her istasyonun ufkunun E katmanıyla buluştuğu eğrilerin kesişimlerini bulur: merkezleri A ve B'de olan, açısal yarıçapı ρ = d_H/r iki dairenin kesişimleri [19–20]:
+
+```
+p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
+p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```
+
+1 − |p0|² < 0 ise yol 2·d_H'den uzundur ve istasyonlar **ortak bir E katmanı bölgesi görmez**.
+
+**Doğrulama:** bunlar iki istasyonun da gördüğü gökyüzünün **en uzak kenarlarıdır**, **nişan alınacak noktalar değildir**. JN70CN–IN78UO'da (1710 km, azimut 308°) istasyondan 1062 km'ye, doğrudan yolun 37° solu ve sağına düşerler; MSHV ise 10° önerir. Bu yüzden *A sınırı* / *B sınırı* olarak adlandırılır ve haritada soluk çizilirler.
+
+## Hot A ve Hot B
+
+**Kaynak:** yansımalar **orta noktanın iki yanında yaklaşık 50–150 km**'deki iki bölgede ("hot spot'lar") yoğunlaşır. Bu, AMS Bulletin No. 203'teki anten sapma tablosunun temelidir; W8WN tarafından da benimsenmiştir (1500 ve 1800 km'lik yollar için 10° sapma); LZ2HV'nin MSHV programı aynı ölçütü kullanır.
+
+**Seçim:** Hot A ve Hot B, orta nokta M'den s uzaklığında, yola dik noktalardır (s = 150 km, 30–400 km arası ayarlanabilir); A, istasyonunuzdan DX'e bakarken solda, B sağdadır [21]. İstasyondan görülen sapma yaklaşık olarak [22]:
+
+```
+ΔAz_hot ≈ arctan( s / (D/2) )
+```
+
+**Doğrulama:** JN70CN–IN78UO, D = 1710 km: s = 100 km ile 6,7°, **s = 150 km ile 10,0°** (MSHV ve AMS/W8WN ile aynı), s = 200 km ile 13,2°.
+
+## Underdense yol kaybı
+
+**Kaynak:** underdense izler için McKinley denklemi (β = 0, sin α = 1), anten kazançları hariç; q = doğrusal elektron yoğunluğu, r_e = klasik elektron yarıçapı = 2,818·10⁻¹⁵ m, R1, R2 ize olan mesafeler, φ saçılma açısının yarısı [36]:
+
+```
+L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```
+
+**Doğrulama:** 144 MHz'de q = 10¹⁴ elektron/m ile: 600 ile 2200 km arasında **181–192 dB**; makalenin 144 MHz referanslarıyla uyumlu: **en az 182 dB** (GM8JBJ, Kaiser & Closs 1952'den) ve **ortalama 200 dB** (OH5IY).
+
+## Bağlantı bütçesi
+
+```
+P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```
+
+[37–38]. Kazançlar dBi olarak girilir ve dBd olarak kullanılır (dBi − 2,15). Rapor ayrıca **OH5IY'nin ortalama yol kaybıyla** (144 MHz'de 200 dB, λ³ ile seçilen banda ölçeklenmiş) payı da verir. Makaledeki referans: yaklaşık **70 dBm EIRP** gerekir (−130 dBm + 200 dB, örn. 14 dBi'ye yaklaşık 400 W).
+
+## Anten kazancı ve lobu
+
+**Kazanç – kaynak:** Günter Hoch **DL6WU**'nun uzun Yagi'ler için boom uzunluğu L'ye bağlı eğrisi, W8IO'nun aktarımıyla (yaklaşık 2 λ'dan itibaren geçerli) [39]:
+
+```
+G = 7.773 · log10(L/λ) + 11.43   dBi
+```
+
+**L.B. Cebik W4RNL'nin 432 MHz'deki NEC modelleriyle doğrulama** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
+
+| Yagi | Eleman | Boom (λ) | W4RNL NEC (dBi) | Formül (dBi) |
+|---|---|---|---|---|
+| DL6WU | 13 / 22 / 31 | 3,23 / 6,82 / 10,42 | 15,28 / 17,82 / 19,35 | 15,38 / 17,91 / 19,34 |
+| VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
+
+Fark hiçbir zaman **0,1 dB**'yi aşmaz: kazanç tasarımdan çok boom uzunluğuna bağlıdır (VK3AUU Yagi'lerinin aynı eleman sayısı için boom'u daha kısadır). VK5DJ'nin Yagi Calculator'ı, formülleri yayımlanmamış VK3AUU, WA2PHW ve DJ9BV çeşitleri için de tahminler verir.
+
+**Lob – kaynak:** Kraus kuralı, dairesel lobla θE = θH = θK [40]:
+
+```
+G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```
+
+**Doğrulama:** W4RNL'nin DL6WU Yagi'lerine ait NEC modelleri, Kraus'a göre **%5–10 daha dar bir yatay lob** verir: 12, 19 ve 26 eleman için 33,8° / 26,4° / 22,6°, karşılığında 37,3° / 28,0° / 23,9°. Basit formüller öndeki yan lobları hesaba katmaz (W4RNL, *Long-Boom Yagi Rules of Thumb*). Uzun boom'larda dikey lob yataydan biraz daha geniştir (14 λ: 18,4° / 18,8°).
+
+**Seçim** [41]:
+
+```
+θ_horizontal = 0.93 · θK        θ_vertical = θK
+```
+
+Örnek: 432 MHz'de 14 λ'lık Yagi → 20,3 dBi, yatayda 18,1° ve dikeyde 19,5° lob; W4RNL'nin modelleri 20,4 dBi ve 18,4° / 18,8° verir. Bunlar birkaç DL6WU anteninden türetilmiş yaklaşık kurallardır.
+
+Anten her zaman DX'e dönük kabul edilir. |Az(Hot) − Az(anten)| ≤ θ_yatay/2 ise bir hot spot **lobun içindedir**: o zaman [Gökyüzü kubbesinde](Sky-View-tr) gri çizilir ve bir uyarı çıkar. Verim hesabında antenler izotropiktir; gerçek lob yalnızca bu denetim için kullanılır.
+
+## Bantlar arası deneysel kurallar
+
+144 MHz'e göre: sayı/şiddet × (144/f)³ (dB olarak), süre × (144/f)² (SM6FHZ, VUSHF 2025). IARU 1. Bölge en uzun ping süresi: 50 MHz'de 1000 ms, 70 MHz'de 500 ms, 144 MHz'de 100 ms, 432 MHz'de 13 ms (VHF Handbook, makalede aktarıldığı gibi). Ayrıca bkz. [Deneysel tahminler](Experimental-Forecasts-tr).

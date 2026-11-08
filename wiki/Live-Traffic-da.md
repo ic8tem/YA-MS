@@ -1,0 +1,30 @@
+**English** · [Русский](Live-Traffic-ru) · [Deutsch](Live-Traffic-de) · [日本語](Live-Traffic-ja)
+
+# Live-trafik
+
+*Fane: Live og realtidsdata › Live-trafik.*
+
+[![Live-trafik](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_1.png)
+
+## Hvad den viser
+
+Et **azimutalt ækvidistant kort** centreret på din station (afstand fra centrum = faktisk afstand, vinkel = azimut) med **al meteor scatter-trafik** indsamlet af [Dataindsamling](Data-Collection-da). For hver forbindelse tegner programmet:
+
+- **strækningen** mellem de to stationer i sit bånds farve: 28 MHz brun, 50 MHz grøn, 70 MHz cyan, 144 MHz orange, 222 MHz lyserød, 432 MHz violet;
+- de to **stationer** i strækningens ender;
+- **skyen**: hvor de mest sandsynlige meteorspor for den strækning og det tidspunkt er samlet.
+
+Spots med en station **uden for kortet** kasseres. Et spot, der **lige er ankommet** (højst 3 minutter gammelt), **blinker i ét minut**, så ny aktivitet springer i øjnene.
+
+## Sådan beregnes skyen
+
+For hvert spot opbygger programmet strækningen mellem de to lokatorer (samme geometri som for din egen strækning, se [Geometri og dæmpning](Geometry-and-Path-Loss-da)) og lægger, på spottets tidspunkt, punkt for punkt i E-laget **bidragene fra spejlende refleksion for hver aktiv sværm** sammen, vægtet med dens ZHR – samme beregning som **PREV-zonerne** i [himmelkuplen](Sky-View-da). For hver side af strækningen, der har mindst 15 % af det samlede, er skyen en **ellipse**: centrum i punkternes vægtede middelværdi, halvakser 1,5 gange kvadratrødderne af egenværdierne for deres spredning, storakse langs hovedegenvektoren. Når ingen sværm bidrager (kun sporadiske meteorer), er skyerne de to klassiske **hot spots**, tegnet stiplet. De fulde ligninger står i kapitel 10 i beregningsmanualen.
+
+## Betjening
+
+| Element | Betydning |
+|---|---|
+| **Kortradius** | 600–3500 km fra din station. |
+| **Spots der vises** | Seneste 15 eller 30 minutter, seneste time, seneste 3 timer, seneste 24 timer. |
+| **Tabel** | Forbindelser på kortet, nyeste først, i båndets farve; *Sky* angiver andelen af refleksioner på hovedsiden eller *sporadiske*. |
+| **Klik** | På en strækning eller en række i tabellen: forbindelsen fremhæves, og boksen viser lokatoren for skyens centrum, dens andel, størrelse og akse. |

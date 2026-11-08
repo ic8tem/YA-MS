@@ -1,0 +1,77 @@
+**English** · [Русский](Installation-ru) · [Deutsch](Installation-de) · [日本語](Installation-ja)
+
+# ইনস্টলেশন
+
+সব প্যাকেজ **[Releases](https://github.com/ic8tem/YA-MS/releases)** পাতায় আছে (নিচের ফাইলের নামে `x.y.z` হলো সংস্করণ, যেমন `1.2.0`)। কিছু কম্পাইল করতে হয় না, আলাদা করে কিছু ইনস্টল করতেও হয় না: প্রতিটি প্যাকেজে .NET 8 রানটাইম রয়েছে।
+
+| সিস্টেম | ফাইল | কোথায় ইনস্টল হয় |
+|---|---|---|
+| Windows (64-বিট) | `YA-MS-x.y.z-windows-x64-setup.exe` (ইনস্টলার) | `C:\YA-MS` |
+| Windows (64-বিট), পোর্টেবল | `YA-MS-x.y.z-windows-x64-portatile.zip` | যেকোনো ফোল্ডার যেখানে আপনি লিখতে পারেন |
+| Windows (32-বিট, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` অথবা `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Linux (64-বিট) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-বিট) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi 2/3/4 (Raspberry Pi OS 32-বিট) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
+| macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+
+**প্রোগ্রাম ও তার `data` ফোল্ডার সর্বদা একসাথে** YA-MS ফোল্ডারে থাকে: সব তথ্য ও সেটিংস সেখানেই (কোনো AppData নয়, কোনো সিস্টেম ফোল্ডার নয়)। দেখুন [সেটিংস ও ডেটা ফোল্ডার](Settings-and-Data-Folder-bn)।
+
+## Windows
+
+### ইনস্টলার
+1. `YA-MS-x.y.z-windows-x64-setup.exe` ডাউনলোড করে চালান।
+2. **SmartScreen** যদি "Windows protected your PC" দেখায়: *More info* → *Run anyway* (প্রোগ্রামটি বাণিজ্যিক সার্টিফিকেট দিয়ে স্বাক্ষরিত নয়)।
+3. YA-MS ইনস্টল হয় **`C:\YA-MS`**-এ, **অ্যাডমিনিস্ট্রেটর অধিকার ছাড়াই**, Start মেনুতে একটি আইকনসহ এবং টিক দিলে ডেস্কটপেও একটি আইকন।
+
+### পোর্টেবল
+`YA-MS-x.y.z-windows-x64-portatile.zip` যেখানে খুশি এক্সট্র্যাক্ট করুন (এমন ফোল্ডার যেখানে আপনি লিখতে পারেন, *Program Files* নয়) এবং `YA-MS.exe` চালান। পুরো ফোল্ডারটি USB স্টিক বা অন্য কম্পিউটারে কপি করা যায়।
+
+## Linux
+
+1. `YA-MS-x.y.z-linux-x64.tar.gz` এক্সট্র্যাক্ট করুন।
+2. এক্সট্র্যাক্ট করা ফোল্ডার থেকে চালান:
+   ```sh
+   ./installa.sh
+   ```
+3. স্ক্রিপ্টটি YA-MS-কে **`~/YA-MS`**-এ কপি করে (root লাগে না) এবং অ্যাপ্লিকেশন মেনুতে **YA-MS** যোগ করে (*HamRadio* বিভাগে)। `~/YA-MS/YA-MS` দিয়েও চালু করা যায়।
+
+জাপানি লেখার জন্য Noto CJK ফন্ট লাগতে পারে: দেখুন [সমস্যা সমাধান](Troubleshooting-FAQ-bn#linux-জাপানি-লেখা-বাক্স-হিসেবে-দেখায়)।
+
+## Raspberry Pi
+
+Linux-এর মতোই প্রক্রিয়া: `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` (অথবা 32-বিট Raspberry Pi OS-এ `-32bit`) এক্সট্র্যাক্ট করে এক্সট্র্যাক্ট করা ফোল্ডার থেকে `./installa.sh` চালান।
+
+- আপনার সিস্টেম কোনটি জানতে টার্মিনালে `uname -m` লিখুন: `aarch64` → 64-বিট প্যাকেজ, `armv7l` → 32-বিট প্যাকেজ।
+- সমর্থিত: Raspberry Pi 2 (কেবল 32-বিট), 3, 4, 5, 400 ও 500, Raspberry Pi OS-এর ডেস্কটপ সংস্করণসহ। **সমর্থিত নয়:** Pi Zero / Zero W ও Pi 1 (ARMv6 প্রসেসর, সেখানে .NET চলে না); Pi Zero 2 W 64-বিট প্যাকেজে চলে, তবে 512 MB RAM টানাটানি।
+- কমপক্ষে 2 GB RAM-সহ Pi 4 বা 5 প্রস্তাবিত; প্রথমবার চালু হতে PC-র চেয়ে কয়েক সেকেন্ড বেশি লাগে।
+
+## macOS
+
+1. সঠিক ফাইল বেছে নিন: M1/M2/M3/M4 প্রসেসরের জন্য `-mac-apple-silicon.dmg`, Intel Mac-এর জন্য `-mac-intel.dmg`।
+2. `.dmg` খুলুন, **"Installa YA-MS.command"-এ ডান ক্লিক → Open** করে নিশ্চিত করুন।
+3. স্ক্রিপ্টটি `YA-MS.app`-কে **`~/YA-MS`**-এ কপি করে খুলে দেয়।
+
+প্রোগ্রামটি Apple দ্বারা স্বাক্ষরিত নয়, তাই প্রথমবার macOS নিশ্চিতকরণ চায়; দেখুন [সমস্যা সমাধান](Troubleshooting-FAQ-bn#macos-অজ্ঞাত-ডেভেলপারের-বলে-খোলা-যাচ্ছে-না)।
+
+## প্রথমবার চালু
+
+- **ইউরোপের মানচিত্র** (Natural Earth-এর উপকূলরেখা ও সীমানা) প্রথমবার স্বয়ংক্রিয়ভাবে `data/mappa`-তে ডাউনলোড হয়: একবার ইন্টারনেট সংযোগ দরকার।
+- **রাডারের তথ্য** (Collm, Sodankylä) সঙ্গে সঙ্গে ডাউনলোড হয়, তারপর প্রতি 5 মিনিটে পরীক্ষা করা হয়।
+- ইন্টারফেস আপনার সিস্টেমের ভাষায় শুরু হয় যদি সেটি ছয়টি উপলব্ধ ভাষার একটি হয়, নইলে ইতালীয় ভাষায়; ডান দিকের ওপরে পরিবর্তন করুন (দেখুন [সেটিংস](Settings-and-Data-Folder-bn#ভাষা))।
+
+## হালনাগাদ
+
+নতুন সংস্করণ **পুরোনোটির ওপরেই** ইনস্টল করুন (একই ইনস্টলার, একই ফোল্ডার)। সেটিংস (`config.ini`), ফ্লাক্সের আর্কাইভ ও মানচিত্র `data`-তে থেকে যায়। `data/lingue`-র অনুবাদ ফাইলগুলো নতুনগুলো সাম্প্রতিকতর হলে প্রতিস্থাপিত হয়।
+
+## সোর্স থেকে বিল্ড (কেবল ডেভেলপারদের জন্য)
+
+ইনস্টলারগুলো GitHub Actions (`.github/workflows/build.yml`) তৈরি করে `release` শাখার প্রতিটি হালনাগাদে (সংস্করণ নেওয়া হয় `VERSION` ফাইল থেকে), যা `vX.Y.Z` রিলিজও তৈরি করে। স্থানীয়ভাবে:
+
+```sh
+dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # অথবা linux-x64, linux-arm64, linux-arm, osx-arm64
+```
+
+নথিগুলো আবার তৈরি করা হয় `tools/build_spiegazione.py data` ও `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` দিয়ে।
+
+পরবর্তী: [শুরু করা](Getting-Started-bn)।

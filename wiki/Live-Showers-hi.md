@@ -1,0 +1,14 @@
+**English** · [Русский](Live-Showers-ru) · [Deutsch](Live-Showers-de) · [日本語](Live-Showers-ja)
+
+# लाइव उल्का वर्षाएँ
+
+*टैब: लाइव उल्का वर्षाएँ।*
+
+[![लाइव उल्का वर्षाएँ](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-4.png)
+
+दो बाहरी स्रोत, छवियों के रूप में दिखाए जाते हैं (वे पढ़ने योग्य संख्याएँ प्रकाशित नहीं करते):
+
+- **Global Meteor Network (GMN)** – [globalmeteornetwork.org/flux](https://globalmeteornetwork.org/flux/): (अधिकतर शौकिया) कैमरों के विश्वव्यापी नेटवर्क द्वारा मापे गए सक्रिय उल्का वर्षाओं के फ्लक्स और **ZHR**, दिन में एक बार अद्यतन; लाल रेखा अंतिम अद्यतन को चिह्नित करती है। प्रोग्राम पेज पढ़ता है, सक्रिय उल्का वर्षाएँ ढूँढता है और हर एक के लिए चालू वर्ष का ग्राफ़ दिखाता है, साथ में वर्ष भर का ZHR सारांश। डेटा **CC BY 4.0**; Vida et al. 2021, MNRAS 506(4), और Vida et al. 2022, MNRAS 515(2) को उद्धृत करें।
+- **CMOR**, Canadian Meteor Orbit Radar (University of Western Ontario, NASA Meteoroid Environment Office) – [fireballs.ndc.nasa.gov/cmor-radiants](https://fireballs.ndc.nasa.gov/cmor-radiants/): रडार द्वारा लगभग वास्तविक समय में पहचाने गए रेडिएंट का आकाश मानचित्र, **दिन की उल्का वर्षाओं** सहित, और वही मानचित्र गति के अनुसार रंगा हुआ। CMOR 43° N पर है, लगभग दक्षिणी यूरोप के अक्षांश पर, इसलिए इसका आकाश हमारा भी है।
+
+हर फ़ाइल केवल बदलने पर ही फिर से डाउनलोड होती है, अधिकतम हर 30 मिनट में या **अभी डाउनलोड करें** से।

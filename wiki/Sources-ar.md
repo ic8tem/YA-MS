@@ -1,0 +1,73 @@
+**English** · [Русский](Sources-ru) · [Deutsch](Sources-de) · [日本語](Sources-ja)
+
+# المصادر
+
+*علامة التبويب: وثائق تقنية › المصادر.*
+
+[![المصادر](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
+
+تسرد علامة التبويب **المصادر** كل عمل بُني عليه YA-MS، مجمَّعة كما يلي (النص قابل للتحديد، فيمكنك نسخ المراجع). المصادر نفسها، مرقَّمة، تختم دليل الحسابات (`doc/YA-MS_manuale_calcoli.docx`) ووثيقة [الكفاءة - شرح](Efficiency-Explanation-ar).
+
+## المصدر الرئيسي
+
+| المصدر | استُخدم من أجل |
+|---|---|
+| Costantino Cerrotta **IC8TEM**، Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (مقال بالإيطالية، الإصدار 7) | الآثار في الطبقة E على نحو 90 km (رادار SKiYMET)، نصف قطر الأرض 6372.7955 km، صيغة زاوية الارتفاع، Hot A / Hot B، التشتت الجانبي 10–30°، توهين المسار 182–200 dB، الحد الأدنى للإشارة −130 dBm، مدد النبضات وفق IARU، ذروة الشهب المتفرقة عند 06 UTC |
+
+## الكفاءة: الحساب والنظرية
+
+| المصدر | استُخدم من أجل |
+|---|---|
+| Ilkka Yrjölä **OH5IY** – MS-Soft، www.kolumbus.fi/oh5iy (موقع تاريخي) | مفهوم كفاءة الزخة؛ متوسط توهين المسار 200 dB |
+| Wilhelm Rauh **DL5MCG** – MCG_MS، MS Efficiency Calculator v1.61، qsl.net/dl5mcg | الكفاءة على أربعة اتجاهات ثابتة (للمقارنة) |
+| Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*، 45th Nordic VUSHF، مايو 2025 | قاعدتا λ³ وλ²، نقطة المنتصف، أفضل اتجاه (سمت نقطة الإشعاع ±90°) |
+| D.W.R. **McKinley** – *Meteor Science and Engineering*، McGraw-Hill، 1961 | الانعكاس المرآوي، معادلة الأثر منخفض الكثافة |
+| John **GM8JBJ** – Meteor scatter path loss، hamradio.engineering (عن Kaiser & Closs 1952) | الحد الأدنى لتوهين المسار 182 dB |
+| Shelby **W8WN** – qsl.net/w8wn/hscw (جدول الإزاحة في AMS Bulletin 203) | زاوية الارتفاع والإزاحة المثلى، البقع الساخنة 50–150 km |
+| **LZ2HV** – MSHV | Hot A / Hot B (للمقارنة؛ في الدليل) |
+| Klaus von der Heide **DJ5HG** – QTFGUI ودليل "QTFGUI Help" ‏(2007) | قانون التشتت المخروطي؛ حالة الاختبار هامبورغ – برشلونة خلال الربعيات، المستخدمة للتحقق من النموذج |
+| Jens **DF5HC** – *"Meteorscatter auf UKW"*، مؤتمر DARC، يناير 2018 | صيغة أفضل اتجاه لـ **DH9GCD**؛ التشتت المخروطي واختيار HOT-A / HOT-B لـ DJ5HG؛ نقطة إشعاع مفيدة 20–70°؛ أفضل مسافة 1300–1500 km؛ الشهب المتفرقة لـ KB0VUK |
+| Günter Hoch **DL6WU** – الكسب بدلالة طول الذراع لهوائيات Yagi الطويلة، كما نقله W8IO (w8io.com) | G(dBi) = 7.773 log(L/λ) + 11.43 |
+| J.D. **Kraus** – *Antennas*، McGraw-Hill | G = 41253 / (θE·θH) |
+| L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*؛ *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*؛ *70-CM Yagi Stacks Part 2* (هوائيات VK3AUU لـ David Tanner) | محاكاة NEC المستخدمة للتحقق من منحنى الكسب وتصحيح الفص الأفقي (0.93 × Kraus) |
+| John Drew **VK5DJ** – Yagi Calculator | تقديرات الكسب لنسخ VK3AUU وWA2PHW وDJ9BV |
+| J. **Meeus** – *Astronomical Algorithms*، الطبعة الثانية، Willmann-Bell، 1998 | اليوم اليولياني، الزمن النجمي، خط الطول الشمسي، السمت/زاوية الارتفاع (في الدليل) |
+
+## بيانات الزخات
+
+| المصدر | استُخدم من أجل |
+|---|---|
+| International Meteor Organization – Meteor Shower Calendar 2026 (و2027)، www.imo.net، الجداول 5 و6 و7 | نقاط الإشعاع، λ max، ‏v، ‏r، ‏ZHR، مصدر مقابل الشمس (Antihelion Source)، تواريخ الذروة وأوقاتها |
+| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | المعدلات الساعية الراديوية القصوى |
+| Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | بيانات الزخات |
+
+## بيانات الرادار المباشرة
+
+| المصدر | استُخدم من أجل |
+|---|---|
+| رادار الشهب في Collm، جامعة لايبزيغ (LIM) وIAP Kühlungsborn – wetterdaten.meteo.uni-leipzig.de/radar_flux.php | تدفق الشهب الساعي وارتفاعات الآثار ([تدفق الرادار](Radar-Flux-ar)) |
+| Sodankylä Geophysical Observatory – sgo.fi/Data/RealTime/meteorRadar.php | صورة عدّ الشهب |
+| DL1DBC – Swan Meteor Skyview، swan.ms | مرجع رسومات القبة السماوية |
+| SM6FHZ – RadiantCalc | المخطط القطبي مع أفضل اتجاه |
+| Natural Earth – السواحل والحدود بمقياس 1:50 مليون، ملكية عامة، www.naturalearthdata.com | خريطة أوروبا |
+| RMOB، Radio Meteor Observatories On Line (Pierre Terrier) – www.rmob.org؛ النشرات الشهرية rmob.org/rmobtext | راصدو GRAVES على 143.050 MHz (القبة الفلكية في البندقية، وفاينزا، وروفيريتو وغيرها) للمقارنة |
+
+## رادار GRAVES
+
+| المصدر | استُخدم من أجل |
+|---|---|
+| Rob Hardenberg **PE1ITR** – *"The 143.050 MHz Graves Radar, a VHF Beacon"* (DUBUS 4/2007) و*"Graves Radar Update April 2021"* – pe1itr.com/graves | القطاعات، الخطوات، توقيت الخطوة 0.8 s / 3.2 s |
+| ويكي Bolidozor، "Graves" | المصفوفات والقطاعات وتوقيت الحزمة |
+| Wikipedia، "GRAVES (system)" | المرسِل في Broye-lès-Pesmes (47.348° N 5.515° E) |
+
+انظر [رادار GRAVES](GRAVES-Radar-ar).
+
+## مراجع أخرى من المقال
+
+G3WZT، DH8BQA، geekshed.co.uk، دليل WSJT-X، WB2FKO (النبضات)، IU6GIR (النشاط على 143.050 MHz)، IARU Region 1 VHF Handbook.
+
+## الثوابت مع مصادرها
+
+يسرد الملف `data/regole_sperimentali.csv` الثوابت والقواعد التي يستخدمها البرنامج، كلاً منها مع مصدره (ارتفاع الآثار النموذجي، مدى الارتفاعات، نصف قطر الأرض، قاعدتا λ³ / λ²، مدد النبضات وفق IARU، توهينات المسار، الحد الأدنى للإشارة، EIRP الاسترشادي، ذروة الشهب المتفرقة، المسافات المفيدة على 432 MHz، أفضل اتجاه، أقصى زاوية ارتفاع مفيدة لنقطة الإشعاع على 432 MHz، التشتت الجانبي).
+
+> بيانات الرادار ملك للمؤسسات التابعة لها. يجب طلب الإذن قبل جلبها تلقائياً في برنامج يُوزَّع.

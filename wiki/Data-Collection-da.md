@@ -1,0 +1,31 @@
+**English** · [Русский](Data-Collection-ru) · [Deutsch](Data-Collection-de) · [日本語](Data-Collection-ja)
+
+# Dataindsamling
+
+*Fane: Live og realtidsdata › Dataindsamling.*
+
+[![Dataindsamling](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
+
+## Tre cluster-strømme
+
+Fanen samler **meteor scatter-spots** fra tre telnet-strømme, hver i sin egen underfane:
+
+| Underfane | Standard | Bemærkninger |
+|---|---|---|
+| **1. DX cluster** | on0dxk.dyndns.org : 8000 | En valgfri cluster. På ON0DXK er VHF-båndene filtreret: aktivér dem med `set/filter dxbm/pass 6` (derefter 4, 2…). |
+| **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimmere dekoder sjældent MS-modes. |
+| **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | DM4X' cluster med **PSKReporter**-spots: MSK144-dekodningerne fra WSJT-X og MSHV kommer her. |
+| **Indsamlede MS-spots** | – | Tabel over de accepterede spots, nyeste først. |
+
+Hver strøm har vært, port, kommandoer der sendes efter login, *Genforbind*, *Forbind ved opstart*, en konsol og en linje til at sende kommandoer. Skriv dit **kaldesignal til login** øverst. En bjælke viser status for de tre sessioner (grøn prik = forbundet). Sessionerne forbliver åbne, når du skifter sprog eller farveskema.
+
+## Filteret (40 % af vinduet)
+
+- **Valgfrit lokalt filter:** cluster-linjer under **27990,0 kHz** kasseres med det samme (vises ikke, gemmes ikke).
+- **1. kriterium – typiske MS-frekvenser:** 50190–50300, 70100–70400, 144290–144399 kHz. Et spot i disse vinduer accepteres også uden modenavnet, medmindre kommentaren angiver en anden udbredelse: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Vinduer og tags kan redigeres.
+- **2. kriterium – MS-modes:** uden for vinduerne, eller med et af disse tags, beholdes et spot kun, hvis det indeholder **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (digitale modes, der kun bruges til MS) eller **\<MS\>**, med store, små eller blandede bogstaver. Ord kan slås fra, tilføjes og fjernes; hvert har sin tæller.
+- **Bånd** 28, 50, 70, 144, 222, 432 MHz; **test af filteret** på en indsat linje; **tællere**.
+
+## Lokatorer og lagring
+
+Manglende lokatorer, eller lokatorer med kun 4 tegn, hentes fra **CALL3**-arkivet (`data/call3.txt`, JTDX-fil, over en million kaldesignaler), som altid har forrang for en lokator med 4 tegn. Accepterede spots gemmes i `data/spot_ms`, én CSV-fil pr. dag, og føder kortet i [Live-trafik](Live-Traffic-da).

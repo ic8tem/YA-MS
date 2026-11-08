@@ -1,0 +1,119 @@
+**English** · [Русский](Settings-and-Data-Folder-ru) · [Deutsch](Settings-and-Data-Folder-de) · [日本語](Settings-and-Data-Folder-ja)
+
+# Stillingar og gagnamappa
+
+## Flipastikan
+
+Hægra megin á flipastikunni, frá hægri til vinstri:
+
+| Stýring | Hvað hún gerir |
+|---|---|
+| **Tungumál** (listi) | Tungumál viðmóts; sjá [Tungumál](#tungumál) |
+| **Þema** (listi) | Litaþema; sjá [Litaþemu](#litaþemu) |
+| **Stýringar ▴ / ▾** | Fellir saman eða opnar þrjár raðir stýringa fyrir ofan flipana; sjá [Letur og Stýringar](#letur-og-stýringar) |
+
+Þegar skipt er um tungumál eða þema eru stillingarnar vistaðar og **glugginn endurbyggður** á sama stað og í sömu stærð, á sama flipa: engin endurræsing nauðsynleg.
+
+## Tungumál
+
+Sex viðmótstungumál:
+
+| Tungumál | Kóði | Skrá |
+|---|---|---|
+| Italiano | `it` | engin: ítalska er grunntungumálið (lyklarnir) |
+| English | `en` | `data/lingue/en.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| Deutsch | `de` | `data/lingue/de.txt` |
+| Nederlands | `nl` | `data/lingue/nl.txt` |
+
+Við fyrstu ræsingu notar YA-MS **tungumál kerfisins** ef það er eitt af þessum, annars ítölsku. Tölur og dagsetningar fylgja völdu tungumáli (t.d. tugapunktur á ensku, tugakomma á ítölsku og þýsku). Texti sem vantar í þýðingarskrá birtist á ítölsku. Á Linux þarf japanska viðeigandi letur: sjá [Úrræðaleit](Troubleshooting-FAQ-is#linux-japanskur-texti-birtist-sem-kassar).
+
+Skjalið [Nýtni - skýringar](Efficiency-Explanation-is) og reiknihandbókin eru á ítölsku.
+
+## Litaþemu
+
+Listinn **Þema** býður upp á 12 þemu, þau sömu og í EME-forriti höfundarins YAEC auk upprunalegu litaspjalds YA-MS:
+
+| Þema | Lýsing |
+|---|---|
+| **Ljóst** | sjálfgefið |
+| **Nótt** | dökkbláir tónar, til notkunar að nóttu |
+| **Svart** | svartur bakgrunnur, fyrir myrkur og OLED-skjái |
+| Pastel ljósblátt · Pastel appelsínugult · Pastel vatnsblátt · Pastel grænt · Pastel bleikt · Pastel lillablátt · Pastel indígó · Pastel brúnt | átta ljós pastelþemu |
+| **Loftsteinaslóð** | upprunalegi stíll YA-MS (til og með útgáfu 1.2.0): næturfjólublátt með ljósbláu, fjólubláu, ljósgrænu, gulu og appelsínugulu |
+
+Þemað gildir fyrir alla flipa og er vistað í `config.ini` (lykillinn `tema`).
+
+## Letur og Stýringar
+
+- **Letur** (í enda fyrstu raðar stýringanna): stækkar **allan texta** úr **100 í 300 %** í 10 % skrefum; línur, hringir og kort halda stærð sinni. Með stóru letri brotna fliparnir í aðra línu og spjöldin stækka.
+- **Stýringar**: með stóru letri eða litlum skjá skaltu fella saman raðirnar þrjár til að rýma fyrir kortum og gröfum. Staðan er munuð.
+
+## Gagnamappa
+
+Öll gögn og stillingar eru í einni möppu, **`data`**, **við hlið forritsins** – engin AppData, engar kerfismöppur:
+
+| Kerfi | Forrit | Gögn |
+|---|---|---|
+| Windows (uppsetningarforrit) | `C:\YA-MS\YA-MS.exe` | `C:\YA-MS\data` |
+| Windows (færanleg útgáfa) | þar sem þú afþjappaðir það | `data` við hlið `YA-MS.exe` |
+| Linux | `~/YA-MS/YA-MS` | `~/YA-MS/data` |
+| macOS | `~/YA-MS/YA-MS.app` | `~/YA-MS/data` (við hlið forritsins) |
+
+Við ræsingu býr forritið til möppuna ef þörf krefur og afritar aðeins upphafsskrár sem **vantar**: skrifað er aldrei yfir skrár sem þú hefur breytt. Þýðingarskrárnar í `data/lingue` eru forritsskrár og eru endurnýjaðar þegar skrár nýju útgáfunnar eru nýrri.
+
+### Skrár sem þú getur breytt
+
+| Skrá | Innihald |
+|---|---|
+| `sciami.csv` | Skrá yfir drífur (gildi IMO og vinnugildi); sjá [Drífur](Showers-is#breyta-skránni) |
+| `massimi_imo.csv` | Dagsetningar og tímar hámarka sem IMO birtir (2026, 2027): **bættu nýjum árum við** hér |
+| `ant_radiante.csv` | Staðsetning Antihelion Source (tafla 6 hjá IMO) |
+| `fonti_radar.csv` | Slóðir ratsjánna; `attivo=1` sækir, `0` hunsar |
+| `regole_sperimentali.csv` | Fastar og reglur sem eru notaðar, hvert með sinni heimild (til viðmiðunar) |
+| `lingue/<code>.txt` | Þýðingar viðmótsins; sjá [Framlög](Contributing-and-Contacts-is#þýðingar) |
+| `config.ini` | Stillingar (sjá hér fyrir neðan) |
+
+### Skrár sem forritið býr til
+
+| Skrá / mappa | Innihald |
+|---|---|
+| `config.ini` | Stillingar |
+| `flusso_collm.csv` | Safn flæðisins frá Collm eftir klukkustundum |
+| `quote_collm.csv` | Safn yfir hæð slóða |
+| `radar/` | Nýjustu ratsjármyndir og RMOB-skrár |
+| `mappa/` | Strandlínur og landamæri frá Natural Earth (sótt við fyrstu ræsingu) |
+| `adif_quadrati.csv` | Reitir úr síðustu ADIF-skránni sem var hlaðið |
+| `efficienza_spiegazione.txt`, `.docx` | [Skýringaskjalið](Efficiency-Explanation-is) |
+
+## config.ini
+
+Venjulegur texti, eitt `lykill=gildi` á hverja línu (línur sem byrja á `#` eða `;` eru athugasemdir). Forritið skrifar skrána þegar því er lokað, svo **breyttu henni á meðan YA-MS er lokað**. Lyklarnir sem gott er að þekkja:
+
+| Lykill | Sjálfgefið | Merking |
+|---|---|---|
+| `mio_locator`, `mia_quota_m` | JN70CN, 62 | Þinn locator og hæð (m) |
+| `dx_locator`, `dx_quota_m` | JO62QM, 50 | Locator og hæð mótstöðvar (m) |
+| `banda_MHz` | 144 | Tíðnisvið (28, 50, 70, 144, 222, 432) |
+| `quota_scie_km`, `quota_da_radar` | 90, 1 | Hæð slóða (km); 1 = nota tíðasta gildi Collm |
+| `elevazione_lobo_gradi` | 0 | Hæðarhorn geisla (°) |
+| `boom_m` | 4.6 | Lengd bómu Yagi-loftnetsins (m) |
+| `hot_spot_km` | 150 | Fjarlægð Hot A / Hot B frá miðpunkti (30–400 km) |
+| `lingua` | kerfi / `it` | Tungumálakóði (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `tema` | `chiaro` | Litaþema: `chiaro` (Ljóst), `scuro` (Nótt), `nero` (Svart), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Loftsteinaslóð) |
+| `carattere_pct` | 100 | Leturstærð (100–300 %) |
+| `comandi_visibili` | 1 | 1 = raðir stýringa sýndar, 0 = samanfelldar |
+| `mostra_mappa`, `vista_alto` | 1, 1 | Kort af Evrópu, séð ofan frá í himinhvelfingunni |
+| `aggiornamento_automatico` | 1 | Sjálfvirk athugun lindanna á 5 mínútna fresti |
+| `esponente_lambda` | 3 | Veldisvísir λ á flipanum Ratsjárflæði |
+| `potenza_W`, `guadagno_dBi`, `sensibilita_dBm`, `densita_esponente_q` | 400, 14, −130, 14 | Inntak aflreikningsins |
+| `prev_frequenza_MHz`, `prev_esponente`, `prev_fattore_stazione` | 144, 3, 1 | Tilraunaspá: tíðni, k, K |
+| `rmob_osservatore` | autt | Nafn RMOB-athuganda |
+| `rmob_automatico` | 0 | Sjálfvirk sókn frá RMOB (virkjaðu aðeins með leyfi RMOB) |
+| `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Sniðmát fyrir slóð RMOB |
+| `graves_sequenza` | 0 | Röð geisla GRAVES: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+
+## Persónuvernd
+
+YA-MS safnar engum gögnum og birtir engar auglýsingar. Það tengist netinu aðeins til að sækja opinber gögn: ratsjármyndirnar frá Collm og Sodankylä, kortið frá Natural Earth (fyrsta ræsing) og, ef þú biður um það, RMOB-skrá.

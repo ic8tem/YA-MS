@@ -1,0 +1,51 @@
+**English** · [Русский](Efficiency-Explanation-ru) · [Deutsch](Efficiency-Explanation-de) · [日本語](Efficiency-Explanation-ja)
+
+# Efficiëntie - uitleg
+
+*Tabblad: Technische documenten › Efficiëntie - uitleg.*
+
+[![Efficiëntie - uitleg](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-3_3.png)
+
+Een technisch document, *"Come YA-MS calcola l'efficienza di uno sciame"* (Hoe YA-MS de efficiëntie van een zwerm berekent), dat in het programma als een lichte pagina wordt getoond. Het legt **stap voor stap** uit hoe de efficiëntie tot stand komt, en vermeldt bij elke stap **waar die vandaan komt**. Het document is momenteel **in het Italiaans**; dit wiki geeft de inhoud in het Nederlands in [Efficiëntieberekening](Efficiency-Calculation-nl#het-model) en [Geometrie en demping](Geometry-and-Path-Loss-nl).
+
+## Labels
+
+Elke stap heeft een gekleurd label:
+
+| Label | Kleur | Betekenis |
+|---|---|---|
+| **FONTE** (bron) | blauw | de stap neemt een geciteerde bron over; het getal tussen haken verwijst naar de lijst aan het eind |
+| **RILIEVO** (controle) | groen | vergelijking tussen het programma en de bronnen, met het resultaat |
+| **SCELTA** (keuze) | oranje | een keuze van het programma, niet uit een bron overgenomen: te controleren met ervaring in de lucht |
+
+## Hoofdstukken
+
+| Hoofdstuk | Inhoud |
+|---|---|
+| 1. Inleiding | Doel, labels, wat efficiëntie betekent (OH5IY, MCG_MS; YA-MS gebruikt het werkelijke traject) |
+| 2. Waar reflecties plaatsvinden: de E-laag | Sporen op 80–120 km; spoorhoogte = modus van het histogram van Collm (controle: 89,5 km op 5/11/2026) |
+| 3. Trajectgeometrie | Aarde en middelpunt; antenne-elevatie (formule uit het artikel); gemeenschappelijke zone en haar grenzen; Hot A / Hot B; antennebundel (DL6WU, Kraus, W4RNL) |
+| 4. De radiant van de zwerm | Positie van de radiant (IMO 2026/2027), datum van het maximum (IMO of zonnelengte), activiteitsprofiel |
+| 5. Reflectievoorwaarde | Spiegelende reflectie (McKinley), Gaussische tolerantie 0,05 rad, beste richting (SM6FHZ), DH9GCD-formule |
+| 6. Van één punt naar de efficiëntie | Reflectiepunten om de 15 km, gewicht van elk punt, percentage; vergelijking met QTFGUI (DJ5HG) |
+| 7. De resultaten lezen | Zijde A / B, trajectindex, kleuren van de radianten, PREV-zones, doorsnede gezien vanaf de antenne |
+| 8. Werkfrequentie en trajectdemping | λ³- / λ²-regels, van radar naar amateurband, referenties voor de trajectdemping |
+| 9. Bekende beperkingen | Alleen onderdichte sporen, isotrope antennes, werkwaarden |
+| 10. Bronnen | 17 genummerde bronnen |
+
+## Knoppen
+
+| Knop | Wat hij doet |
+|---|---|
+| **Exporteren naar Word (.docx)...** | Slaat een kopie van `data/efficienza_spiegazione.docx` op waar je wilt (voorgestelde naam *YA-MS - calcolo dell'efficienza.docx*) |
+| **Openen in Word** | Opent dezelfde `.docx` met het standaardprogramma voor Word-documenten (Word, LibreOffice, …) |
+
+## Bestanden
+
+| Bestand | Inhoud |
+|---|---|
+| `data/efficienza_spiegazione.txt` | De tekst die in het tabblad wordt getoond, één blok per regel (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
+| `data/efficienza_spiegazione.docx` | De Word-versie |
+| `doc/YA-MS_manuale_calcoli.docx` | De **rekenhandleiding**: alle vergelijkingen (vergelijkingseditor van Word), genummerd, met hun bronnen |
+
+De twee documenten worden opnieuw gegenereerd vanuit de broncode met `tools/build_spiegazione.py data` en `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.

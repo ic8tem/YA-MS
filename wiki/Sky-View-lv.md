@@ -1,0 +1,99 @@
+**English** · [Русский](Sky-View-ru) · [Deutsch](Sky-View-de) · [日本語](Sky-View-ja)
+
+# Debess velve
+
+*Cilne: Prognozes aprēķins › Prognozes aprēķins.*
+
+[![Debess velve](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
+
+Šī apakšcilne (agrāko versiju debess velve) vienā ekrānā parāda, **kur** tagad ir lietderīgās sliedes un **kurp** tēmēt. Kreisajā pusē ir trases **skats no augšas**; labajā – plūsmu saraksts, maza debess velve ar radiantiem, aprēķina teksts un **griezums**, kā to redz tava antena. Viss attiecas uz slīdņa *Debess velves laiks* laiku (noklusējumā reālais laiks; ±36 h ar 15 minūšu soli).
+
+Mazajā debess velvē **oranža līnija** caur zenītu vienmēr rāda **pareizos antenas virzienus**, ortogonālus izvēlētās (vai visizdevīgākās) plūsmas pārvietojumam: radianta azimuts ±90°, abos galos ar uzrakstu *antena NNN°*, un ±45° pielaide plānās līnijās. Īsas oranžas iedaļas uz malas rāda pārējo lietderīgo plūsmu ortogonālos virzienus.
+
+## Skats no augšas (pa kreisi)
+
+Eiropas karte, skatoties no augšas (**A pa labi**), ar grādu skalu apkārt. Paraksts zem kartes norāda tās rādiusu (*Karte: mala = … km no stacijas*).
+
+| Elements | Zīmējums |
+|---|---|
+| Trase / DX | Zaļa līnija no tavas stacijas līdz korespondentam (vienmēr reālā lielā loka trase starp lokatoriem) |
+| **Hot A / Hot B** | Punkti 150 km (regulējams) abpus viduspunktam, perpendikulāri trasei. **Sarkans = ieteicamais**, **rozā = ārpus antenas ziedlapiņas**, **pelēks = ziedlapiņā** (ar brīdinājumu) |
+| Antenas ziedlapiņa | −3 dB horizontālā ziedlapiņa ap antenas azimutu (antena vienmēr vērsta uz DX), ar uzrakstu *ziedlapiņa …°* |
+| Kopējās zonas robežas | Blāvi punkti *rob. A* / *rob. B* un divi apļi, kur katras stacijas horizonts satiekas ar E slāni (sk. [Ģeometrija](Geometry-and-Path-Loss-lv#kopējās-zonas-robežas)) |
+| Plūsmas pārvietošanās | **Dzeltena līnija**: virziens, kurā izvēlētā (vai visizdevīgākā) plūsma pārvietojas pa debesīm, t.i., radianta azimuts |
+| Labākie virzieni | **Oranži punkti**: abi virzieni, kas perpendikulāri pārvietojumam (radianta azimuts ±90°, SM6FHZ) |
+| **PREV zonas** | Gaišas elipses: kur **tagad** krīt varbūtīgākās sliedes, viena katrā trases pusē |
+
+Uzraksti nepārklājas: Hot A un PREV A ir rakstīti trases kreisajā pusē, B – labajā. **Leģenda** ir sakļaujama kolonna kartes labajā pusē.
+
+**Pele uz kartes:** **kreisais klikšķis = korespondenta lokators**, **labais klikšķis = manas stacijas lokators**. Trase tiek uzreiz pārrēķināta.
+
+Opcijas virs plūsmu saraksta: **Hot A / Hot B virzieni**, **Eiropas karte** (Natural Earth, pirmajā palaišanā lejupielādēta mapē `data/mappa`), **Skats no augšas (A pa labi)**.
+
+### Ieteicamais Hot
+
+Parādītajam laikam programma saskaita visām plūsmām virs horizonta svaru ZHR × efektivitāte, sadalītu starp pusi A (daļa f_A) un pusi B. Puse ar lielāko svaru nosaka ieteicamo Hot, ko zīmē sarkanā krāsā:
+
+```
+W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```
+
+*Programmas izvēle (rokasgrāmatas 23. vien.).* Idejas avots: DJ5HG, ko citē DF5HC (DARC konference 2018) – atkarībā no radianta stāvokļa viens no abiem punktiem, HOT-A vai HOT-B, ir izdevīgāks. Pagrieziens par 10–30° uz šo pusi (side-scatter) nāk no Cerrotta–Sartori raksta.
+
+### PREV zonas
+
+Katram E slāņa punktam P tiek saskaitīti visu aktīvo plūsmu devumi efektivitātē (tas pats spoguļatstarošanas nosacījums kā [efektivitātei](Efficiency-Calculation-lv#modelis)), svērti ar ZHR. Punkti ar vismaz 3 % no maksimuma veido PREV zonas; katra tiek zīmēta kā elipse ar centru = punktu svērtais vidējais un asīm = divkārša to izkliede.
+
+```
+W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```
+
+*Programmas izvēle (rokasgrāmatas 34. vien.).* Tas ir praktiskais likums: ja plūsma pārvietojas no ziemeļiem uz dienvidiem, lietderīgās sliedes krīt austrumos un rietumos.
+
+## Plūsmu saraksts (augšā pa labi)
+
+| Kolonna | Nozīme |
+|---|---|
+| Plūsma, Kods | Nosaukums un IMO kods |
+| ZHR tagad | Aktivitāte šajā brīdī (IMO maksimālais ZHR ar aktivitātes profilu) |
+| Azimuts, Elev. | Radianta stāvoklis, kā to redz tava stacija |
+| Efekt. % | Plūsmas efektivitāte šai trasei |
+| Puse | A vai B – puse, no kuras nāk vairums atstarojumu |
+| Labākais virz. | Radianta azimuts ±90° |
+| Lec, Riet | Radianta lēkts un riets (UTC); attiecīgā gadījumā *cirkumpolārs* vai *vienmēr zem* |
+
+Klikšķis uz rindas izvēlas plūsmu: dzeltenā pārvietošanās līnija un oranžie punkti seko tai.
+
+## Mazā debess velve (vidū pa labi)
+
+Radianti uz debess velves, kā to redz tava stacija, ar to **IMO kodu** un **dienas ceļu ciānā krāsā** (UTC stundas). **Klikšķis uz radianta** to izvēlas. Krāsas:
+
+| Krāsa | Nozīme |
+|---|---|
+| Dzeltena | efektivitāte ≥ 50 % un ZHR ≥ 2 |
+| Oranža | efektivitāte ≥ 20 % |
+| Tumši sarkana | efektivitāte < 20 % |
+| Pelēka | gandrīz neaktīva |
+
+Blakus ir aprēķina teksts: trases garums un azimuts, viduspunkts un tā elevācija, Hot A / Hot B azimuti un nobīdes, ieteicamais Hot (*… ieteicams tagad: az. …° (…% no gaidāmajiem atstarojumiem)*), kopējās zonas robežas un atgādinājums: *labākā tēmēšana plūsmai: PERPENDIKULĀRI pienākšanas virzienam (radianta azimuts ±90°, pielaide ±40–50°, SM6FHZ)*.
+
+## Griezums (apakšā pa labi)
+
+*GRIEZUMS – varbūtīgākās sliedes, kā tās redz antena, kas vērsta uz korespondentu.* Horizontāli – **azimuts attiecībā pret korespondentu** (← A pa kreisi, B → pa labi), vertikāli – **elevācija**. Katrai plūsmai tiek ņemti 14 spēcīgākie atstarošanas punkti; katra sliede ir nogrieznis, orientēts uz radiantu, no 10 km virs līdz 10 km zem sliežu augstuma (ne vairāk par 60 km katrā pusē), jo varbūtīgāka, jo biezāka. Zīmēta arī antenas ziedlapiņa (−3 dB aplis ap ziedlapiņas elevāciju), korespondents un Hot A / Hot B.
+
+```
+Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```
+
+*Programmas izvēle (rokasgrāmatas 35. vien.).*
+
+## Brīdinājumi
+
+| Brīdinājums | Kad |
+|---|---|
+| **UZMANĪBU: Hot A (un/vai Hot B) ir antenas ziedlapiņā …** | Hot spot ir ±θ/2 robežās no antenas azimuta (θ = horizontālā −3 dB ziedlapiņa): ar šo virzienu tas jau ir pārklāts. Kartē tas ir pelēks. Ieteicamais Hot paliek sarkans. |
+| **RADIANTS PĀRĀK AUGSTU (virs 70°)** | Kāds lietderīgs radiants ir virs 70°, skatoties no tavas stacijas: sliedes krīt gandrīz vertikāli un uz trasi atstaro maz (DF5HC, DH9GCD). Tās pašas stundas [stundu tabulā](Efficiency-Calculation-lv#stundu-tabula) ir atzīmētas ar ↑. |
+| *Nav kopējas E slāņa zonas* | Trase ir garāka par divkāršu sniedzamību sliežu augstumā: abas stacijas neredz kopīgu E slāņa daļu (viens lēciens nav iespējams). |
+| *Nav ieteicamā Hot* | Šajā laikā gandrīz nav aktīvu plūsmu. |
+
+Atsauce debess velves grafikai: DL1DBC Swan Meteor Skyview (swan.ms); polārais grafiks ar labāko virzienu: SM6FHZ RadiantCalc.

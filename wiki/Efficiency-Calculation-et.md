@@ -1,0 +1,104 @@
+**English** · [Русский](Efficiency-Calculation-ru) · [Deutsch](Efficiency-Calculation-de) · [日本語](Efficiency-Calculation-ja)
+
+# Efektiivsuse arvutus
+
+*Sakk: Prognoosarvutus › Efektiivsuse arvutus.*
+
+[![Efektiivsuse arvutus](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_3.png)
+
+Meteoorivoolu **efektiivsus** näitab protsentides, kui palju selle radiandi asend võimaldab peegeldusi **sinu** trassil. Mõiste pärineb Ilkka **OH5IY**-lt (MS-Soft) ja on üle võetud Cerrotta–Sartori artiklis: efektiivsuse maksimum ei lange kokku visuaalse maksimumiga (ZHR), sest see sõltub sellest, kus radiant kahe jaama suhtes asub. DL5MCG MCG_MS rakendab sama ideed neljale fikseeritud suunale; YA-MS arvutab selle kahe lokaatori vahelise **tegeliku trassi** jaoks.
+
+See sakk näitab efektiivsust tund-tunnilt päeval, mis on valitud väljal *Päev 24 h tabeli jaoks (UTC)* (väärtused iga tunni poole peal).
+
+## Ülevaatekaardid
+
+| Infokaart | Sisu |
+|---|---|
+| **PÄEVA PARIM AEG** | Kõrgeima trassi indeksiga tund, indeks ja valdav pool (A/B koos protsendiga) |
+| **KÕIGE SOODSAM METEOORIVOOL** | Päeva suurima ZHR × efektiivsusega meteoorivool, selle efektiivsus, tund ja pool ning **parim suund** (radiandi asimuut +90° / −90°) |
+| **PRAEGU** | Indeks ja valdav pool sel tunnil ning soovitatud Hot (ainult siis, kui valitud päev on täna) |
+| **EKSPERIMENTAALNE PROGNOOS** | Oodatavad peegeldused tunnis praegu, 1 h ja 2 h pärast prognoosi sagedusel (Collm, SM6FHZ reeglid; vt [Eksperimentaalsed prognoosid](Experimental-Forecasts-et)) |
+
+Infokaartide all selgitab riba tähti A ja B (vt allpool).
+
+## Graafik
+
+*Tunnipõhine efektiivsus: …, … (UTC, väärtused poole tunni ajal).* Kuni viie meteoorivoolu kohta: efektiivsus % pideva joonena ja DH9GCD valem sama värvi punktiirjoonena; **trassi indeks** siniste tulpadena parempoolsel skaalal.
+
+## Tunnitabel
+
+Üks rida iga sel päeval aktiivse meteoorivoolu kohta (sorteeritud ZHR järgi), 24 veergu tundide jaoks (UTC):
+
+| Lahter | Tähendus |
+|---|---|
+| `63A` | efektiivsus 63 %, enamik peegeldusi poolelt **A** |
+| `41B` | efektiivsus 41 %, pool **B** |
+| `3` | efektiivsus alla 5 %: number ilma poole täheta |
+| tühi | efektiivsus alla 1 % |
+| `…↑` | radiant on sel tunnil sinu jaamast **üle 70°** (liiga kõrgel) |
+| kollane tekst | efektiivsus ≥ 50 % |
+
+- **A** = **vasakul**, vaadates oma jaamast korrespondendi poole (Hot A ala); **B** = **paremal** (Hot B ala). Antenni tasub keerata **10–30° sellele poole** (külghajumine, Cerrotta–Sartori artikkel).
+- **Helesinised read** (*DH9GCD %*, iga meteoorivoolu all): DH9GCD valem võrdluseks.
+- **Rida Σ**: *Trassi indeks (ZHR×efekt.)*.
+- **Oranž rida** (*Prognoos … MHz (peegl./tunnis)*): eksperimentaalne prognoos tundide jaoks, mille kohta see on olemas (täna ja osa homsest).
+
+## Mudel
+
+Kõik sammud on [arvutusjuhendis](Efficiency-Explanation-et) (`doc/YA-MS_manuale_calcoli.docx`, 5. peatükk). Lühidalt:
+
+**1. Peegelpeegeldus.** Jälg saadab signaali A-st B-sse ainult siis, kui see puutub ellipsoidi, mille fookustes on A ja B (McKinley 1961). Meteoorivoolu jäljed on paralleelsed radiandi suunaga ŝ (artikkel; McKinley). Iga E-kihi punkti P jaoks, ühikvektoritega jaamade suunas:
+
+```
+ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```
+
+Sama seadus on DJ5HG QTFGUI aluseks (koonushajumine). Tingimus aktsepteeritakse Gaussi tolerantsiga σ = 0,05 rad (umbes 3°) – *programmi valik*:
+
+```
+S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```
+
+**2. Iga punkti kaal.** Alatiheda jälje võimsus (McKinley), φ = pool hajumisnurgast (piiratud 85°-ga, *valik*):
+
+```
+φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```
+
+Punkti jõudvate meteooride arv on võrdeline seal radiandi elevatsiooni siinusega (ŝ·û_P), sama parandus, mida IMO kasutab ZHR-i jaoks.
+
+**3. Summa ja protsent.** Punktid iga 15 km järel jälgede kõrgusel, ainult seal, kus mõlemad jaamad näevad neid peaharu elevatsioonist kõrgemal (*valik*). 100 % on selle trassi jaoks kõige soodsam radiandi asend:
+
+```
+F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```
+
+F arvutatakse iga trassi jaoks üks kord suundade võrgustikul (asimuut iga 5°, elevatsioon iga 2,5° järel) ja interpoleeritakse.
+
+**4. Pool ja indeks.**
+
+```
+f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```
+
+Tabelis olev täht on suurema osaga pool. *Programmi valikud (juhendi võrrandid 32–33).*
+
+## DH9GCD võrdlus
+
+Sõltumatu kontroll: **DH9GCD** parima suuna valem, mida vahendas **DF5HC** (DARC-i konverents, jaanuar 2018), kus El ja Az on sinu jaamast nähtava radiandi elevatsioon ja asimuut ning P korrespondendi asimuut:
+
+```
+E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```
+
+See on maksimaalne, kui radiant on 45° kõrgusel ja trassiga risti. DF5HC peab radianti alla 20° liiga madalaks ja **üle 70° liiga kõrgeks**: need tunnid saavad tabelis ↑ ja [Taevavõlvis](Sky-View-et#hoiatused) hoiatuse. Valem ignoreerib kaugust ja kõrgusi, kuid on hea võrdlusalus.
+
+## Kontrollid
+
+| Kontroll | Tulemus |
+|---|---|
+| SM6FHZ reegel (VUSHF 2025): parim trass on radiandi asimuudiga risti, suund = radiandi az ±90°, tolerants ±40–50° | Mudel reprodutseerib selle; kui radiant on trassiga joondatud ja taevas kõrgel, on efektiivsus peaaegu null |
+| DJ5HG QTFGUI, Hamburg JO53IM – Barcelona, Kvadrantiidid, 4. jaanuar (selle juhendi näide) | QTFGUI: 07:00 suund 252°, −8 dB; 08:00 peegeldusala puudub; 09:00 suund 168°, −4 dB. YA-MS (kõrgus 102 km nagu QTFGUI-s): 07:00 241°, −5,4 dB; 08:00 0,6 % (−22 dB); 09:00 161°, −4,0 dB. DH9GCD: 26 %, 2 %, 32 %. Kõik kolm meetodit näevad kella 08:00 auku, kui radiant on peaaegu seniidis |
+| Proovivõtt iga 5 km järel 15 km asemel | protsendid muutuvad vähem kui 0,3 punkti |
+
+> OH5IY ja MCG_MS-i kasutatavat skaalat ei tunta üksikasjalikult (MS-Softi juhendid pole kättesaadavad): võrdle protsente nende programmidega, enne kui pead neid samaväärseks. Mudel arvestab ainult alatihedaid jälgi ja isotroopseid antenne; ületihedad pursked ja sporaadiline foon ei kuulu efektiivsuse hulka (sporaadilist fooni esindab radari voog).

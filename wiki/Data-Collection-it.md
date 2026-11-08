@@ -1,0 +1,31 @@
+**English** · [Русский](Data-Collection-ru) · [Deutsch](Data-Collection-de) · [日本語](Data-Collection-ja)
+
+# Raccolta dati
+
+*Linguetta: Live e dati real-time › Raccolta dati.*
+
+[![Raccolta dati](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/it-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/it-1_4.png)
+
+## Tre flussi dai cluster
+
+La linguetta raccoglie gli **spot meteor scatter** da tre flussi telnet, ognuno nella sua sotto-linguetta:
+
+| Sotto-linguetta | Predefinito | Note |
+|---|---|---|
+| **1. DX cluster** | on0dxk.dyndns.org : 8000 | Un cluster a scelta. Su ON0DXK le bande VHF sono filtrate: abilitale con `set/filter dxbm/pass 6` (poi 4, 2…). |
+| **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Gli skimmer decodificano raramente i modi MS. |
+| **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | Cluster DM4X che porta gli spot di **PSKReporter**: qui arrivano le decodifiche MSK144 di WSJT-X e MSHV. |
+| **Spot MS raccolti** | – | Tabella degli spot accettati, i più recenti in alto. |
+
+Ogni flusso ha host, porta, comandi inviati dopo il login, *Riconnetti*, *Connetti all'avvio*, una console e una riga per inviare comandi. Scrivi in alto il tuo **nominativo per il login**. Una striscia mostra lo stato delle tre sessioni (pallino verde = connesso). Le sessioni restano aperte quando cambi lingua o schema di colori.
+
+## Il filtro (40 % della finestra)
+
+- **Filtro locale facoltativo:** le righe del cluster sotto **27990,0 kHz** vengono scartate subito (non mostrate, non memorizzate).
+- **1° criterio – frequenze tipiche MS:** 50190–50300, 70100–70400, 144290–144399 kHz. Uno spot in queste finestre si accetta anche senza il nome del modo, tranne quando il commento dichiara un'altra propagazione: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Finestre e scritte si possono modificare.
+- **2° criterio – modi MS:** fuori dalle finestre, o con una di quelle scritte, uno spot si tiene solo se contiene **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (modi digitali usati solo per l'MS) oppure **\<MS\>**, in maiuscolo, minuscolo o misto. Le parole si possono spegnere, aggiungere e togliere; ognuna ha il suo contatore.
+- **Bande** 28, 50, 70, 144, 222, 432 MHz; **prova del filtro** su una riga incollata; **contatori**.
+
+## Locator e memorizzazione
+
+I locator mancanti, o con solo 4 caratteri, vengono presi dall'archivio **CALL3** (`data/call3.txt`, file di JTDX, oltre un milione di nominativi), che prevale sempre su un locator a 4 caratteri. Gli spot accettati vengono salvati in `data/spot_ms`, un file CSV al giorno, e alimentano la mappa del [Traffico in diretta](Live-Traffic-it).

@@ -1,0 +1,85 @@
+**English** · [Русский](Radar-Flux-ru) · [Deutsch](Radar-Flux-de) · [日本語](Radar-Flux-ja)
+
+# Radarfluks
+
+*Fane: Direkte og sanntidsdata › Radarfluks.*
+
+[![Radarfluks](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_2.png)
+
+Denne fanen viser hva profesjonelle meteorradarer teller **akkurat nå**: meteortellinger per time og sporhøyder fra SKiYMET-radaren i **Collm** (Universitetet i Leipzig / IAP Kühlungsborn, Tyskland, 36,2 MHz), og det siste bildet fra radaren i **Sodankylä** (SGO, Finland). Collm-tellingene brukes i estimatet for ditt bånd og i [Eksperimentelle prognoser](Experimental-Forecasts-nb); den målte sporhøyden brukes i hele geometrien.
+
+## Kontroller
+
+| Kontroll | Hva den gjør |
+|---|---|
+| **Last ned nå** | Sjekker alle eksterne kilder på én gang. |
+| **Automatisk oppdatering av alle kilder hvert 5. minutt** | På som standard. Hvert 5. minutt sjekkes alle kildene, og **bare de som er endret**, lastes ned på nytt (*uendret (sjekket kl. … UTC)* / *nye data kl. … UTC*). |
+| **λ-eksponent (SM6FHZ)** | Eksponenten k i frekvensregelen, standard 3 (1–4). |
+
+## Hva som vises
+
+| Panel | Innhold |
+|---|---|
+| **Meteorer/time – i går og i dag (UTC)** | Cyan søyler = Collm-tellinger (gyldige), røde søyler = forkastet, tykk oransje linje = *estimat på … MHz* på høyre skala |
+| **Sporhøyder (Collm)** | Meteorer per km høyde mellom 70 og 110 km, med hyppigste høyde (typetall), middel, median og standardavvik |
+| Collm-bilde | Det originale SKiYMET-diagrammet, slik det er lastet ned |
+| Sodankylä-bilde | Det siste bildet med meteortellinger fra radaren i Sodankylä (vises bare; formatet leses ikke) |
+
+Linjen over diagrammene forteller når Collm-diagrammet ble lest, og hvilken vertikal skala som ble funnet (*skala lest fra diagrammet: 0-… meteorer/time*).
+
+## Slik leses Collm-diagrammet
+
+Collm-diagrammet (720 × 720 piksler, rene farger) har faste akseposisjoner, men radaren **tilpasser den vertikale skalaen hver dag** til de målte verdiene (f.eks. 0–1,2·10³ den 5.11.2026 og 0–1,0·10³ den 6.11.2026, med flyttede skalastreker). YA-MS gjør derfor følgende:
+
+1. finner de lange skalastrekene på aksen;
+2. **leser etikettene** ved den øverste skalastreken og ved null ved å sammenligne hvert tegn med diagrammets punktmatriseskrift;
+3. for hver time i (0–47, i går og i dag) tas midtkolonnen og den første cyan pikselen ovenfra, y:
+
+```
+x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```
+
+y_top og y0 er radene for den øverste skalastreken og for null, N_top verdien lest på den øverste etiketten (×1000). Oppløsning: ca. 7–8 meteorer/time per piksel. *Programmets valg (håndbokens likn. 42).*
+
+Hvis en etikett ikke kan leses, faller programmet tilbake på kalibreringen fra 5.11.2026 (**kalibrert skala 0-1200 meteorer/time**) og sier fra i oransje: *Kan ikke lese den vertikale fluksskalaen (øverste etikett: …): verdiene må kontrolleres.* Hvis selve diagramformatet endres (*Diagramformatet er endret (…x…): kan ikke leses* eller *Fluksaksene ble ikke funnet på forventet sted*), må avlesningen kalibreres på nytt: meld fra om det (se [Bidra](Contributing-and-Contacts-nb)).
+
+### Sporhøyder
+
+Fra høydehistogrammet (n_k meteorer i km k, middelhøyde h_k):
+
+```
+h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```
+
+*Håndbokens likn. 43.* Med **fra radar** avkrysset (rad 2 av kontrollene) blir **typetallet** sporhøyden for alle beregninger. Kontroll: diagrammet fra 5.11.2026 – typetall 89,5 km, middel 88,6 km, standardavvik 6,8 km, som bekrefter de ca. 90 km i artikkelen av Cerrotta–Sartori (SKiYMET-middel).
+
+Hvis skalaen i høydediagrammet endres, varsler programmet: *høydestatistikken (typetall, middel, median) er fortsatt gyldig, de absolutte tellingene ikke.*
+
+## Estimat for ditt bånd
+
+```
+meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```
+
+Eksperimentelle regler fra **SM6FHZ** (VUSHF 2025): antall og intensitet av refleksjoner skalerer med λ³, varigheten med λ²; λ³-avhengigheten er den samme som i McKinleys likning for underdense spor. IARU Region 1s maksimale pingvarighet vises også (1000 ms på 50 MHz, 500 ms på 70 MHz, 100 ms på 144 MHz, 13 ms på 432 MHz). Verdiene er veiledende og bør sammenlignes med erfaring på båndet. Stasjonsfaktoren K og sammenligningen med RMOB står i [Eksperimentelle prognoser](Experimental-Forecasts-nb).
+
+## Uten nett
+
+Hvis ingen kilde kan nås, vises en melding **én gang**: *Ingen internettforbindelse. Radar- og RMOB-data kan ikke oppdateres: programmet bruker de sist lagrede dataene og prøver på nytt av seg selv hvert 5. minutt.* Statuslinjen nederst blir rød (*INGEN INTERNETTFORBINDELSE …*) til forbindelsen er tilbake (*Forbindelsen er gjenopprettet.*).
+
+## Arkiver og kilder
+
+| Fil (i `data/`) | Innhold |
+|---|---|
+| `flusso_collm.csv` | Timearkiv med fluksen lest fra Collm (timer som allerede finnes, oppdateres) |
+| `quote_collm.csv` | Arkiv med sporhøydene |
+| `radar/` | Sist nedlastede bilder (og RMOB-filer) |
+| `fonti_radar.csv` | Adressene til radarkildene, `attivo=1/0` slår hver av eller på |
+
+| Kilde | Frekvens | Merknader |
+|---|---|---|
+| Collm meteorradar, Universitetet i Leipzig (LIM) og IAP Kühlungsborn – wetterdaten.meteo.uni-leipzig.de/radar_flux.php | 36,2 MHz | oppdateres hver time i minutt 10 UTC; fluks i går + i dag, høydefordeling |
+| Sodankylä Geophysical Observatory – sgo.fi/Data/RealTime/meteorRadar.php | 36,9 MHz | bare bilde (radaren oppgraderes, DECC-prosjektet) |
+| swan.ms (kopi av Collm) | 36,2 MHz | avslått som standard; brukes bare med tillatelse fra DL1DBC |
+
+> Radardataene tilhører de respektive institusjonene (Universitetet i Leipzig / IAP Kühlungsborn, Sodankylä Geophysical Observatory).

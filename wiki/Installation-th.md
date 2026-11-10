@@ -52,7 +52,7 @@
 2. เปิด `.dmg` แล้ว **คลิกขวาที่ "Installa YA-MS.command" → Open** และยืนยัน
 3. สคริปต์จะคัดลอก `YA-MS.app` ไปยัง **`~/YA-MS`** แล้วเปิดโปรแกรม
 
-โปรแกรมไม่ได้ลงนามโดย Apple ดังนั้นในครั้งแรก macOS จะขอการยืนยัน ดู [การแก้ไขปัญหา](Troubleshooting-FAQ-th#macos-cannot-be-opened-because-it-is-from-an-unidentified-developer)
+โปรแกรมไม่ได้ลงนามโดย Apple ดังนั้นในครั้งแรก macOS จะขอการยืนยัน ดู [การแก้ไขปัญหา](Troubleshooting-FAQ-th#macos-ไม่สามารถเปิดได้เพราะมาจากนักพัฒนาที่ไม่ระบุตัวตน)
 
 ## การเริ่มโปรแกรมครั้งแรก
 

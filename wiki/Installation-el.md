@@ -73,7 +73,7 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 
 - Ο **χάρτης της Ευρώπης** (ακτογραμμές και σύνορα του Natural Earth) κατεβαίνει αυτόματα στο `data/mappa` την πρώτη φορά: χρειάζεται σύνδεση στο διαδίκτυο μία φορά.
 - Τα **δεδομένα ραντάρ** (Collm, Sodankylä) κατεβαίνουν αμέσως και στη συνέχεια ελέγχονται κάθε 5 λεπτά.
-- Η διεπαφή ξεκινά στη γλώσσα του συστήματός σας αν είναι μία από τις 28 διαθέσιμες, αλλιώς στα ιταλικά· αλλάξτε την πάνω δεξιά (δείτε [Ρυθμίσεις](Settings-and-Data-Folder-el#γλώσσα)).
+- Η διεπαφή ξεκινά στη γλώσσα του συστήματός σας αν είναι μία από τις 36 διαθέσιμες, αλλιώς στα ιταλικά· αλλάξτε την πάνω δεξιά (δείτε [Ρυθμίσεις](Settings-and-Data-Folder-el#γλώσσα)).
 
 ## Ενημέρωση
 
@@ -87,6 +87,6 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Τα έγγραφα αναπαράγονται με `tools/build_spiegazione.py data` και `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Τα έγγραφα (όλες οι γλώσσες) αναπαράγονται με `tools/build_documenti.sh`.
 
 Επόμενο: [Πρώτα βήματα](Getting-Started-el).

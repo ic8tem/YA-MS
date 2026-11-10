@@ -6,7 +6,7 @@
 
 [![Απόδοση - επεξήγηση](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-Ένα τεχνικό έγγραφο, *"Come YA-MS calcola l'efficienza di uno sciame"* (Πώς υπολογίζει το YA-MS την απόδοση μιας βροχής μετεώρων), που εμφανίζεται μέσα στο πρόγραμμα ως ανοιχτόχρωμη σελίδα. Εξηγεί **βήμα προς βήμα** πώς προκύπτει η απόδοση και αναφέρει για κάθε βήμα **από πού προέρχεται**. Το έγγραφο είναι προς το παρόν **στα ιταλικά**· αυτό το wiki δίνει το περιεχόμενό του στα ελληνικά στις σελίδες [Υπολογισμός απόδοσης](Efficiency-Calculation-el#το-μοντέλο) και [Γεωμετρία και απώλεια διαδρομής](Geometry-and-Path-Loss-el).
+Ένα τεχνικό έγγραφο, *"Come YA-MS calcola l'efficienza di uno sciame"* (Πώς υπολογίζει το YA-MS την απόδοση μιας βροχής μετεώρων), που εμφανίζεται μέσα στο πρόγραμμα ως ανοιχτόχρωμη σελίδα. Εξηγεί **βήμα προς βήμα** πώς προκύπτει η απόδοση και αναφέρει για κάθε βήμα **από πού προέρχεται**. Το πρόγραμμα το εμφανίζει **στη γλώσσα της διεπαφής** (και στις 36 γλώσσες), όπως και το εγχειρίδιο υπολογισμών· αυτό το wiki δίνει επίσης το περιεχόμενό του στις σελίδες [Υπολογισμός απόδοσης](Efficiency-Calculation-el#το-μοντέλο) και [Γεωμετρία και απώλεια διαδρομής](Geometry-and-Path-Loss-el).
 
 ## Ετικέτες
 
@@ -46,6 +46,8 @@
 |---|---|
 | `data/efficienza_spiegazione.txt` | Το κείμενο που εμφανίζεται στην καρτέλα, ένα μπλοκ ανά γραμμή (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Η έκδοση Word |
-| `doc/YA-MS_manuale_calcoli.docx` | Το **εγχειρίδιο υπολογισμών**: όλες οι εξισώσεις (επεξεργαστής εξισώσεων του Word), αριθμημένες, με τις πηγές τους |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Το ίδιο έγγραφο στις άλλες 35 γλώσσες (π.χ. `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | Το **εγχειρίδιο υπολογισμών** (ιταλικά): όλες οι εξισώσεις (επεξεργαστής εξισώσεων του Word), αριθμημένες, με τις πηγές τους |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | Το εγχειρίδιο υπολογισμών στις άλλες 35 γλώσσες |
 
-Τα δύο έγγραφα αναπαράγονται από τον πηγαίο κώδικα με `tools/build_spiegazione.py data` και `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Τα δύο έγγραφα αναπαράγονται από τον πηγαίο κώδικα με `tools/build_spiegazione.py data [code]` και `node tools/build_manuale.js <file.docx> [code]`· οι μεταφράσεις βρίσκονται στο `tools/traduzioni_doc/` (το `tools/build_documenti.sh` ξαναχτίζει όλες τις γλώσσες).

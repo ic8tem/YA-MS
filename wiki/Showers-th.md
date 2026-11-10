@@ -35,7 +35,7 @@
 
 ## ฝนดาวตกขนาดเล็กและฝนดาวตกกลางวัน
 
-แคตตาล็อกรวม **ฝนดาวตกขนาดเล็ก** ในรายการของ IMO – เช่น October Camelopardalids (OCT, ZHR 5 มีกิจกรรม 5–6 ตุลาคม) Andromedids และ gamma Ursae Minorids – และ **ฝนดาวตกกลางวันทางวิทยุ** ช่วงเมษายน–ตุลาคม (Daytime April Piscids, Daytime Arietids, Daytime zeta Perseids, Daytime beta Taurids, Daytime kappa Leonids, Daytime Sextantids, …) แม้มี ZHR ต่ำ ก็มีส่วนร่วมใน [ดัชนีเส้นทาง](Efficiency-Calculation-th#ANCHOR_MODEL) และ [Hot ที่แนะนำ](Sky-View-th#ANCHOR_RECHOT) สำหรับฝนดาวตกกลางวันทางวิทยุ IMO ไม่ได้ให้ ZHR: ในกรณีที่ไม่มี โปรแกรมจะใช้ค่าทำงานเป็น 5
+แคตตาล็อกรวม **ฝนดาวตกขนาดเล็ก** ในรายการของ IMO – เช่น October Camelopardalids (OCT, ZHR 5 มีกิจกรรม 5–6 ตุลาคม) Andromedids และ gamma Ursae Minorids – และ **ฝนดาวตกกลางวันทางวิทยุ** ช่วงเมษายน–ตุลาคม (Daytime April Piscids, Daytime Arietids, Daytime zeta Perseids, Daytime beta Taurids, Daytime kappa Leonids, Daytime Sextantids, …) แม้มี ZHR ต่ำ ก็มีส่วนร่วมใน [ดัชนีเส้นทาง](Efficiency-Calculation-th#แบบจำลอง) และ [Hot ที่แนะนำ](Sky-View-th#hot-ที่แนะนำ) สำหรับฝนดาวตกกลางวันทางวิทยุ IMO ไม่ได้ให้ ZHR: ในกรณีที่ไม่มี โปรแกรมจะใช้ค่าทำงานเป็น 5
 
 ## โปรไฟล์กิจกรรมและการเคลื่อนของจุดเรเดียนท์
 

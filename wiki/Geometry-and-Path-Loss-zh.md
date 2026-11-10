@@ -95,7 +95,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
-[37–38]。增益以 dBi 输入，按 dBd（dBi − 2.15）使用。报告还给出采用 **OH5IY 平均路径损耗**（144 MHz 时 200 dB，按 λ³ 换算到所选频段）时的余量。文章参考值：约需 **70 dBm EIRP**（−130 dBm + 200 dB，例如约 400 W 馈入 14 dBi 天线）。
+[37–38]。增益以 dBi 输入并按 dBi 使用：McKinley 损耗以各向同性天线为基准，因此不减去 2.15 dB 的偶极子修正（EIRP = 功率 + 增益）。报告还给出采用 **OH5IY 平均路径损耗**（144 MHz 时 200 dB，按 λ³ 换算到所选频段）时的余量。文章参考值：约需 **70 dBm EIRP**（−130 dBm + 200 dB，例如约 400 W 馈入 14 dBi 天线）。
 
 ## 天线增益与波瓣
 

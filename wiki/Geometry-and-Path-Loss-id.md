@@ -95,7 +95,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
-[37–38]. Penguatan dimasukkan dalam dBi dan dipakai dalam dBd (dBi − 2,15). Laporan juga memberikan margin dengan **redaman rata-rata OH5IY** (200 dB pada 144 MHz, diskalakan dengan λ³ ke band yang dipilih). Referensi artikel: diperlukan sekitar **70 dBm EIRP** (−130 dBm + 200 dB, mis. sekitar 400 W ke antena 14 dBi).
+[37–38]. Penguatan dimasukkan dan dipakai dalam dBi: redaman McKinley mengacu pada antena isotropik, sehingga koreksi dipol 2,15 dB tidak dikurangkan (EIRP = daya + penguatan). Laporan juga memberikan margin dengan **redaman rata-rata OH5IY** (200 dB pada 144 MHz, diskalakan dengan λ³ ke band yang dipilih). Referensi artikel: diperlukan sekitar **70 dBm EIRP** (−130 dBm + 200 dB, mis. sekitar 400 W ke antena 14 dBi).
 
 ## Penguatan dan lobus antena
 

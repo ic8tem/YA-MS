@@ -95,7 +95,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
-[37–38]. Les gains sont saisis en dBi et utilisés en dBd (dBi − 2,15). Le rapport donne aussi la marge avec l'**affaiblissement moyen d'OH5IY** (200 dB à 144 MHz, transposé en λ³ à la bande choisie). Référence de l'article : il faut environ **70 dBm de PIRE** (−130 dBm + 200 dB, par ex. environ 400 W dans 14 dBi).
+[37–38]. Les gains sont saisis et utilisés en dBi : l'affaiblissement de McKinley se rapporte à des antennes isotropes, donc aucune correction de dipôle de 2,15 dB n'est soustraite (PIRE = puissance + gain). Le rapport donne aussi la marge avec l'**affaiblissement moyen d'OH5IY** (200 dB à 144 MHz, transposé en λ³ à la bande choisie). Référence de l'article : il faut environ **70 dBm de PIRE** (−130 dBm + 200 dB, par ex. environ 400 W dans 14 dBi).
 
 ## Gain et lobe de l'antenne
 

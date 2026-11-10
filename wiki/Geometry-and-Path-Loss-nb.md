@@ -95,7 +95,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
-[37–38]. Forsterkning skrives inn i dBi og brukes i dBd (dBi − 2,15). Rapporten oppgir også marginen med **OH5IYs gjennomsnittlige strekningsdemping** (200 dB på 144 MHz, skalert med λ³ til valgt bånd). Artikkelens referanse: det trengs ca. **70 dBm EIRP** (−130 dBm + 200 dB, f.eks. ca. 400 W inn i 14 dBi).
+[37–38]. Forsterkning skrives inn og brukes i dBi: McKinleys demping gjelder for isotrope antenner, så ingen dipolkorreksjon på 2,15 dB trekkes fra (EIRP = effekt + forsterkning). Rapporten oppgir også marginen med **OH5IYs gjennomsnittlige strekningsdemping** (200 dB på 144 MHz, skalert med λ³ til valgt bånd). Artikkelens referanse: det trengs ca. **70 dBm EIRP** (−130 dBm + 200 dB, f.eks. ca. 400 W inn i 14 dBi).
 
 ## Antenneforsterkning og lobe
 

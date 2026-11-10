@@ -95,7 +95,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
-[37–38]. Förstärkningen anges i dBi och används i dBd (dBi − 2,15). Rapporten ger också marginalen med **OH5IY:s genomsnittliga sträckdämpning** (200 dB på 144 MHz, omräknad med λ³ till det valda bandet). Artikelns referens: omkring **70 dBm EIRP** behövs (−130 dBm + 200 dB, t.ex. omkring 400 W i 14 dBi).
+[37–38]. Förstärkningen anges och används i dBi: McKinleys dämpning avser isotropa antenner, så ingen dipolkorrektion på 2,15 dB dras av (EIRP = effekt + förstärkning). Rapporten ger också marginalen med **OH5IY:s genomsnittliga sträckdämpning** (200 dB på 144 MHz, omräknad med λ³ till det valda bandet). Artikelns referens: omkring **70 dBm EIRP** behövs (−130 dBm + 200 dB, t.ex. omkring 400 W i 14 dBi).
 
 ## Antennförstärkning och lob
 

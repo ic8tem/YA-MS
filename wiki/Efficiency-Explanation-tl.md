@@ -6,7 +6,7 @@
 
 [![Episyensya - paliwanag](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-Isang teknikal na dokumento, *"Come YA-MS calcola l'efficienza di uno sciame"* (Paano kinakalkula ng YA-MS ang episyensya ng isang shower), na ipinapakita sa loob ng programa bilang isang maliwanag na pahina. Ipinapaliwanag nito **hakbang-hakbang** kung paano nakukuha ang episyensya, at sinasabi para sa bawat hakbang **kung saan ito nagmula**. Kasalukuyang **nasa Italyano** ang dokumento; ibinibigay ng wiki na ito ang nilalaman nito sa Tagalog sa [Kalkulasyon ng episyensya](Efficiency-Calculation-tl#ang-modelo) at sa [Heometriya at path loss](Geometry-and-Path-Loss-tl).
+Isang teknikal na dokumento, *"Come YA-MS calcola l'efficienza di uno sciame"* (Paano kinakalkula ng YA-MS ang episyensya ng isang shower), na ipinapakita sa loob ng programa bilang isang maliwanag na pahina. Ipinapaliwanag nito **hakbang-hakbang** kung paano nakukuha ang episyensya, at sinasabi para sa bawat hakbang **kung saan ito nagmula**. Ipinapakita ito ng programa **sa wika ng interface** (lahat ng 36 na wika), gayundin ang manwal ng kalkulasyon; ibinibigay din ng wiki na ito ang nilalaman nito sa [Kalkulasyon ng episyensya](Efficiency-Calculation-tl#ang-modelo) at sa [Heometriya at path loss](Geometry-and-Path-Loss-tl).
 
 ## Mga label
 
@@ -46,6 +46,8 @@ May may-kulay na label ang bawat hakbang:
 |---|---|
 | `data/efficienza_spiegazione.txt` | Ang tekstong ipinapakita sa tab, isang bloke bawat linya (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Ang bersyong Word |
-| `doc/YA-MS_manuale_calcoli.docx` | Ang **manwal ng kalkulasyon**: lahat ng ekwasyon (equation editor ng Word), may bilang, kasama ang kanilang mga sanggunian |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Ang parehong dokumento sa iba pang 35 wika (hal. `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | Ang **manwal ng kalkulasyon** (Italyano): lahat ng ekwasyon (equation editor ng Word), may bilang, kasama ang kanilang mga sanggunian |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | Ang manwal ng kalkulasyon sa iba pang 35 wika |
 
-Muling nililikha ang dalawang dokumento mula sa source gamit ang `tools/build_spiegazione.py data` at `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Muling nililikha ang dalawang dokumento mula sa source gamit ang `tools/build_spiegazione.py data [code]` at `node tools/build_manuale.js <file.docx> [code]`. Nasa `tools/traduzioni_doc/` ang mga salin (muling nililikha ng `tools/build_documenti.sh` ang lahat ng wika).

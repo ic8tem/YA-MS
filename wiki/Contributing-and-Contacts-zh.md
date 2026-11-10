@@ -44,4 +44,4 @@ YA-MS 依靠在实际通联中使用它的人们的报告不断改进。每一�
 
 在您安装目录的 `data/lingue` 文件夹中编辑文件，然后重新启动 YA-MS（或切换语言）即可看到效果。由于这些文件**在每次更新时都会被新版本替换**，请同时**发送您的修改**——通过电子邮件或在 GitHub 上提交 pull request（`data/lingue/`）——以便将其纳入下一个版本。
 
-本 wiki 提供 English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文 版本；同样欢迎对 wiki 页面提出修改意见。
+本 wiki 提供 36 种语言版本（English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)）；同样欢迎对 wiki 页面提出修改意见。

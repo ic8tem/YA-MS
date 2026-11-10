@@ -16,7 +16,7 @@
 
 ## زبان
 
-انٹرفیس کی 28 زبانیں، وہی جو YAEC اور E-LAYER ANALYZER میں ہیں (YAEC کے ساتھ مشترک اصطلاحات کا ترجمہ ایک ہی طرح کیا گیا ہے):
+انٹرفیس کی 36 زبانیں، وہی جو YAEC اور E-LAYER ANALYZER میں ہیں (YAEC کے ساتھ مشترک اصطلاحات کا ترجمہ ایک ہی طرح کیا گیا ہے):
 
 | زبان | کوڈ | فائل |
 |---|---|---|
@@ -25,7 +25,8 @@
 | Deutsch | `de` | `data/lingue/de.txt` |
 | Français | `fr` | `data/lingue/fr.txt` |
 | Español | `es` | `data/lingue/es.txt` |
-| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Portugal) | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-BR` | `data/lingue/pt-BR.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
 | Svenska | `sv` | `data/lingue/sv.txt` |
 | Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
@@ -34,6 +35,11 @@
 | Eesti | `et` | `data/lingue/et.txt` |
 | Latviešu | `lv` | `data/lingue/lv.txt` |
 | Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
 | Русский | `ru` | `data/lingue/ru.txt` |
 | Українська | `uk` | `data/lingue/uk.txt` |
 | Türkçe | `tr` | `data/lingue/tr.txt` |
@@ -43,15 +49,17 @@
 | اردو | `ur` | `data/lingue/ur.txt` |
 | हिन्दी | `hi` | `data/lingue/hi.txt` |
 | বাংলা | `bn` | `data/lingue/bn.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
 | Bahasa Indonesia | `id` | `data/lingue/id.txt` |
 | Tagalog | `tl` | `data/lingue/tl.txt` |
 | 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-TW` | `data/lingue/zh-TW.txt` |
 | 日本語 | `ja` | `data/lingue/ja.txt` |
 | 한국어 | `ko` | `data/lingue/ko.txt` |
 
 پہلی بار چلانے پر YA-MS **سسٹم کی زبان** استعمال کرتا ہے اگر وہ ان میں سے ایک ہو، ورنہ اطالوی۔ اعداد اور تاریخیں منتخب زبان کی پیروی کرتے ہیں (مثلاً انگریزی میں اعشاری نقطہ، اطالوی اور جرمن میں کوما)۔ ترجمہ فائل میں غائب ہر متن اطالوی میں دکھایا جاتا ہے۔ Linux پر چینی، جاپانی، کوریائی، عربی، عبرانی، اردو، ہندی اور بنگالی کے لیے مناسب فونٹ درکار ہیں (مثلاً Noto فیملیز): دیکھیں [مسائل کا حل](Troubleshooting-FAQ-ur#linux-جاپانی-متن-خانوں-کی-صورت-میں-دکھائی-دیتا-ہے)۔
 
-[کارکردگی - وضاحت](Efficiency-Explanation-ur) دستاویز اور حساب کا دستی کتابچہ اطالوی زبان میں ہیں۔
+[کارکردگی - وضاحت](Efficiency-Explanation-ur) دستاویز انٹرفیس کی زبان کے مطابق دکھائی جاتی ہے؛ حساب کا دستی کتابچہ `doc/` (اطالوی) اور `doc/manuali/` (باقی 35 زبانیں) میں ہے۔
 
 ## رنگ سکیمیں
 
@@ -122,7 +130,7 @@
 | `elevazione_lobo_gradi` | 0 | لوب کا ارتفاع (°) |
 | `boom_m` | 4.6 | Yagi بوم کی لمبائی (m) |
 | `hot_spot_km` | 150 | وسطی نقطے سے Hot A / Hot B کا فاصلہ (30–400 km) |
-| `lingua` | سسٹم / `it` | زبان کا کوڈ (اوپر دیے گئے 28 کوڈز میں سے ایک، مثلاً `it`، `en`، `de`) |
+| `lingua` | سسٹم / `it` | زبان کا کوڈ (اوپر دیے گئے 36 کوڈز میں سے ایک، مثلاً `it`، `en`، `de`) |
 | `tema` | `chiaro` | رنگ سکیم: `chiaro` (روشن)، `scuro` (رات)، `nero` (سیاہ)، `pastello-azzurro`، `pastello-arancione`، `pastello-acquamarina`، `pastello-verde`، `pastello-rosa`، `pastello-lilla`، `pastello-indaco`، `pastello-marrone`، `scia` (شہابی لکیر) |
 | `carattere_pct` | 100 | فونٹ کا سائز (100–300 %) |
 | `comandi_visibili` | 1 | 1 = کنٹرول کی قطاریں دکھائی گئیں، 0 = سمیٹی گئیں |

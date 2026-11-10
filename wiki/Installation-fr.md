@@ -73,7 +73,7 @@ Le programme n'est pas signé par Apple : la première fois, macOS demande donc 
 
 - La **carte d'Europe** (côtes et frontières Natural Earth) est téléchargée automatiquement dans `data/mappa` la première fois : une connexion internet est nécessaire une seule fois.
 - Les **données radar** (Collm, Sodankylä) sont téléchargées immédiatement, puis vérifiées toutes les 5 minutes.
-- L'interface démarre dans la langue de votre système si c'est l'une des 28 disponibles, sinon en italien ; changez-la en haut à droite (voir [Réglages](Settings-and-Data-Folder-fr#langue)).
+- L'interface démarre dans la langue de votre système si c'est l'une des 36 disponibles, sinon en italien ; changez-la en haut à droite (voir [Réglages](Settings-and-Data-Folder-fr#langue)).
 
 ## Mise à jour
 
@@ -87,6 +87,6 @@ Les installeurs sont produits par GitHub Actions (`.github/workflows/build.yml`)
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # ou linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Les documents sont régénérés avec `tools/build_spiegazione.py data` et `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Les documents (toutes les langues) sont régénérés avec `tools/build_documenti.sh`.
 
 Suite : [Premiers pas](Getting-Started-fr).

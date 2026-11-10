@@ -6,7 +6,7 @@
 
 [![Efektiivsus - selgitus](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-Tehniline dokument *"Come YA-MS calcola l'efficienza di uno sciame"* (Kuidas YA-MS arvutab meteoorivoolu efektiivsust), mida näidatakse programmis heleda lehena. See selgitab **samm-sammult**, kuidas efektiivsus saadakse, ja ütleb iga sammu kohta, **kust see pärineb**. Dokument on praegu **itaalia keeles**; see wiki esitab selle sisu eesti keeles lehtedel [Efektiivsuse arvutus](Efficiency-Calculation-et#mudel) ja [Geomeetria ja sumbumine](Geometry-and-Path-Loss-et).
+Tehniline dokument *"Come YA-MS calcola l'efficienza di uno sciame"* (Kuidas YA-MS arvutab meteoorivoolu efektiivsust), mida näidatakse programmis heleda lehena. See selgitab **samm-sammult**, kuidas efektiivsus saadakse, ja ütleb iga sammu kohta, **kust see pärineb**. Programm näitab seda **kasutajaliidese keeles** (kõik 36 keelt), nagu ka arvutusjuhendit; see wiki esitab selle sisu ka lehtedel [Efektiivsuse arvutus](Efficiency-Calculation-et#mudel) ja [Geomeetria ja sumbumine](Geometry-and-Path-Loss-et).
 
 ## Märgendid
 
@@ -46,6 +46,8 @@ Igal sammul on värviline märgend:
 |---|---|
 | `data/efficienza_spiegazione.txt` | Sakil näidatav tekst, üks plokk rea kohta (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Wordi versioon |
-| `doc/YA-MS_manuale_calcoli.docx` | **Arvutusjuhend**: kõik võrrandid (Wordi valemiredaktor), nummerdatud, koos allikatega |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Sama dokument ülejäänud 35 keeles (nt `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **Arvutusjuhend** (itaalia keeles): kõik võrrandid (Wordi valemiredaktor), nummerdatud, koos allikatega |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | Arvutusjuhend ülejäänud 35 keeles |
 
-Mõlemad dokumendid luuakse lähtekoodist uuesti käskudega `tools/build_spiegazione.py data` ja `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Mõlemad dokumendid luuakse lähtekoodist uuesti käskudega `tools/build_spiegazione.py data [code]` ja `node tools/build_manuale.js <file.docx> [code]`. `tools/traduzioni_doc/`õlked asuvad kaustas `tools/traduzioni_doc/` (`tools/build_documenti.sh` loob kõik keeled uuesti).

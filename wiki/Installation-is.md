@@ -73,7 +73,7 @@ Forritið er ekki undirritað af Apple, svo macOS biður um staðfestingu í fyr
 
 - **Kort af Evrópu** (strandlínur og landamæri frá Natural Earth) er sótt sjálfkrafa í `data/mappa` í fyrsta skiptið: nettenging þarf einu sinni.
 - **Ratsjárgögnin** (Collm, Sodankylä) eru sótt strax og síðan athuguð á 5 mínútna fresti.
-- Viðmótið ræsist á tungumáli kerfisins ef það er eitt af þeim 28 sem í boði eru, annars á ítölsku; breyttu því efst til hægri (sjá [Stillingar](Settings-and-Data-Folder-is#tungumál)).
+- Viðmótið ræsist á tungumáli kerfisins ef það er eitt af þeim 36 sem í boði eru, annars á ítölsku; breyttu því efst til hægri (sjá [Stillingar](Settings-and-Data-Folder-is#tungumál)).
 
 ## Uppfærsla
 
@@ -87,6 +87,6 @@ Uppsetningarforritin eru búin til af GitHub Actions (`.github/workflows/build.y
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # eða linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Skjölin eru endurgerð með `tools/build_spiegazione.py data` og `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Skjölin (öll tungumál) eru endurgerð með `tools/build_documenti.sh`.
 
 Næst: [Fyrstu skrefin](Getting-Started-is).

@@ -73,7 +73,7 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 
 - **यूरोप का मानचित्र** (Natural Earth की तटरेखाएँ और सीमाएँ) पहली बार अपने आप `data/mappa` में डाउनलोड होता है: इंटरनेट कनेक्शन एक बार चाहिए।
 - **रडार डेटा** (Collm, Sodankylä) तुरंत डाउनलोड होता है और फिर हर 5 मिनट में जाँचा जाता है।
-- यदि आपकी सिस्टम भाषा 28 उपलब्ध भाषाओं में से एक है तो इंटरफ़ेस उसी में शुरू होता है, अन्यथा इतालवी में; इसे ऊपर दाईं ओर बदलें (देखें [सेटिंग्स](Settings-and-Data-Folder-hi#भाषा))।
+- यदि आपकी सिस्टम भाषा 36 उपलब्ध भाषाओं में से एक है तो इंटरफ़ेस उसी में शुरू होता है, अन्यथा इतालवी में; इसे ऊपर दाईं ओर बदलें (देखें [सेटिंग्स](Settings-and-Data-Folder-hi#भाषा))।
 
 ## अपडेट करना
 
@@ -87,6 +87,6 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # या linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-दस्तावेज़ `tools/build_spiegazione.py data` और `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` से फिर से बनाए जाते हैं।
+दस्तावेज़ (सभी भाषाओं में) `tools/build_documenti.sh` से फिर से बनाए जाते हैं।
 
 आगे: [शुरुआत](Getting-Started-hi)।

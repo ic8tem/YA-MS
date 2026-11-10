@@ -73,7 +73,7 @@ Programmu nav parakstījis Apple, tāpēc pirmo reizi macOS prasa apstiprinājum
 
 - **Eiropas karte** (Natural Earth krasta līnijas un robežas) pirmajā reizē tiek automātiski lejupielādēta mapē `data/mappa`: interneta savienojums vajadzīgs vienu reizi.
 - **Radaru dati** (Collm, Sodankylä) tiek lejupielādēti uzreiz un pēc tam pārbaudīti ik pēc 5 minūtēm.
-- Saskarne startē tavas sistēmas valodā, ja tā ir viena no 28 pieejamajām, citādi itāļu valodā; to var mainīt augšā pa labi (sk. [Iestatījumi](Settings-and-Data-Folder-lv#valoda)).
+- Saskarne startē tavas sistēmas valodā, ja tā ir viena no 36 pieejamajām, citādi itāļu valodā; to var mainīt augšā pa labi (sk. [Iestatījumi](Settings-and-Data-Folder-lv#valoda)).
 
 ## Atjaunināšana
 
@@ -87,6 +87,6 @@ Instalētājus veido GitHub Actions (`.github/workflows/build.yml`) pie katras z
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # vai linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Dokumentus no jauna ģenerē ar `tools/build_spiegazione.py data` un `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Dokumentus (visās valodās) no jauna ģenerē ar `tools/build_documenti.sh`.
 
 Tālāk: [Darba sākšana](Getting-Started-lv).

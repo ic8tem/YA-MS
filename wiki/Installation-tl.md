@@ -73,7 +73,7 @@ Hindi naka-sign ng Apple ang programa, kaya sa unang pagkakataon ay hihingi ng k
 
 - Awtomatikong dina-download sa `data/mappa` ang **mapa ng Europa** (mga baybayin at hangganan ng Natural Earth) sa unang pagkakataon: minsan lang kailangan ng koneksiyon sa internet.
 - Agad na dina-download ang **datos ng radar** (Collm, Sodankylä) at pagkatapos ay sinusuri bawat 5 minuto.
-- Nagsisimula ang interface sa wika ng iyong sistema kung isa ito sa 28 na available, kung hindi ay sa Italyano; palitan ito sa kanang itaas (tingnan ang [Mga setting](Settings-and-Data-Folder-tl#wika)).
+- Nagsisimula ang interface sa wika ng iyong sistema kung isa ito sa 36 na available, kung hindi ay sa Italyano; palitan ito sa kanang itaas (tingnan ang [Mga setting](Settings-and-Data-Folder-tl#wika)).
 
 ## Pag-update
 
@@ -87,6 +87,6 @@ Ginagawa ang mga installer ng GitHub Actions (`.github/workflows/build.yml`) sa 
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # o linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Muling nililikha ang mga dokumento gamit ang `tools/build_spiegazione.py data` at `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Muling nililikha ang mga dokumento (lahat ng wika) gamit ang `tools/build_documenti.sh`.
 
 Susunod: [Pagsisimula](Getting-Started-tl).

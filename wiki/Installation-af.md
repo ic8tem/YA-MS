@@ -73,7 +73,7 @@ Die program is nie deur Apple onderteken nie, so die eerste keer vra macOS vir b
 
 - Die **kaart van Europa** (Natural Earth-kuslyne en -grense) word die eerste keer outomaties in `data/mappa` afgelaai: 'n internetverbinding is een keer nodig.
 - Die **radardata** (Collm, Sodankylä) word dadelik afgelaai en daarna elke 5 minute nagegaan.
-- Die koppelvlak begin in jou stelseltaal as dit een van die 28 beskikbare tale is, anders in Italiaans; verander dit regs bo (sien [Instellings](Settings-and-Data-Folder-af#taal)).
+- Die koppelvlak begin in jou stelseltaal as dit een van die 36 beskikbare tale is, anders in Italiaans; verander dit regs bo (sien [Instellings](Settings-and-Data-Folder-af#taal)).
 
 ## Bywerking
 
@@ -87,6 +87,6 @@ Die installeerders word deur GitHub Actions (`.github/workflows/build.yml`) gebo
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # of linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Die dokumente word hergenereer met `tools/build_spiegazione.py data` en `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Die dokumente (alle tale) word hergenereer met `tools/build_documenti.sh`.
 
 Volgende: [Aan die gang](Getting-Started-af).

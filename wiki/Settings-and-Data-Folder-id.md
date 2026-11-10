@@ -16,7 +16,7 @@ Mengganti bahasa atau tema akan menyimpan pengaturan dan **membangun ulang jende
 
 ## Bahasa
 
-28 bahasa antarmuka, sama dengan YAEC dan E-LAYER ANALYZER (istilah yang sama dengan YAEC diterjemahkan dengan cara yang sama):
+36 bahasa antarmuka, sama dengan YAEC dan E-LAYER ANALYZER (istilah yang sama dengan YAEC diterjemahkan dengan cara yang sama):
 
 | Bahasa | Kode | File |
 |---|---|---|
@@ -25,7 +25,8 @@ Mengganti bahasa atau tema akan menyimpan pengaturan dan **membangun ulang jende
 | Deutsch | `de` | `data/lingue/de.txt` |
 | Français | `fr` | `data/lingue/fr.txt` |
 | Español | `es` | `data/lingue/es.txt` |
-| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Portugal) | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-BR` | `data/lingue/pt-BR.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
 | Svenska | `sv` | `data/lingue/sv.txt` |
 | Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
@@ -34,6 +35,11 @@ Mengganti bahasa atau tema akan menyimpan pengaturan dan **membangun ulang jende
 | Eesti | `et` | `data/lingue/et.txt` |
 | Latviešu | `lv` | `data/lingue/lv.txt` |
 | Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
 | Русский | `ru` | `data/lingue/ru.txt` |
 | Українська | `uk` | `data/lingue/uk.txt` |
 | Türkçe | `tr` | `data/lingue/tr.txt` |
@@ -43,15 +49,17 @@ Mengganti bahasa atau tema akan menyimpan pengaturan dan **membangun ulang jende
 | اردو | `ur` | `data/lingue/ur.txt` |
 | हिन्दी | `hi` | `data/lingue/hi.txt` |
 | বাংলা | `bn` | `data/lingue/bn.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
 | Bahasa Indonesia | `id` | `data/lingue/id.txt` |
 | Tagalog | `tl` | `data/lingue/tl.txt` |
 | 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-TW` | `data/lingue/zh-TW.txt` |
 | 日本語 | `ja` | `data/lingue/ja.txt` |
 | 한국어 | `ko` | `data/lingue/ko.txt` |
 
 Pada start pertama YA-MS memakai **bahasa sistem** jika termasuk salah satu di atas, jika tidak bahasa Italia. Angka dan tanggal mengikuti bahasa yang dipilih (mis. titik desimal dalam bahasa Inggris, koma dalam bahasa Italia dan Jerman). Teks yang tidak ada dalam file terjemahan ditampilkan dalam bahasa Italia. Di Linux, bahasa Tionghoa, Jepang, Korea, Arab, Ibrani, Urdu, Hindi, dan Bengali memerlukan font yang sesuai (mis. keluarga Noto): lihat [Pemecahan masalah](Troubleshooting-FAQ-id#linux-teks-jepang-tampil-sebagai-kotak).
 
-Dokumen [Efisiensi - penjelasan](Efficiency-Explanation-id) dan manual perhitungan berbahasa Italia.
+Dokumen [Efisiensi - penjelasan](Efficiency-Explanation-id) mengikuti bahasa antarmuka; manual perhitungan ada di `doc/` (bahasa Italia) dan `doc/manuali/` (35 bahasa lainnya).
 
 ## Skema warna
 
@@ -122,7 +130,7 @@ Teks biasa, satu `key=value` per baris (baris yang diawali `#` atau `;` adalah k
 | `elevazione_lobo_gradi` | 0 | Elevasi lobus (°) |
 | `boom_m` | 4.6 | Panjang boom Yagi (m) |
 | `hot_spot_km` | 150 | Jarak Hot A / Hot B dari titik tengah (30–400 km) |
-| `lingua` | sistem / `it` | Kode bahasa (salah satu dari 28 kode di atas, mis. `it`, `en`, `de`) |
+| `lingua` | sistem / `it` | Kode bahasa (salah satu dari 36 kode di atas, mis. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Skema warna: `chiaro` (Terang), `scuro` (Malam), `nero` (Hitam), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Jejak meteor) |
 | `carattere_pct` | 100 | Ukuran huruf (100–300 %) |
 | `comandi_visibili` | 1 | 1 = baris kontrol ditampilkan, 0 = dilipat |

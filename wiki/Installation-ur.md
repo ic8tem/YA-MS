@@ -73,7 +73,7 @@ Linux والا طریقہ: `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` (یا 32-بٹ
 
 - **یورپ کا نقشہ** (Natural Earth کی ساحلی لکیریں اور سرحدیں) پہلی بار خودکار طور پر `data/mappa` میں ڈاؤن لوڈ ہوتا ہے: ایک بار انٹرنیٹ کنکشن درکار ہے۔
 - **ریڈار ڈیٹا** (Collm، Sodankylä) فوراً ڈاؤن لوڈ ہوتا ہے اور پھر ہر 5 منٹ بعد جانچا جاتا ہے۔
-- انٹرفیس آپ کے سسٹم کی زبان میں شروع ہوتا ہے اگر وہ 28 دستیاب زبانوں میں سے ہو، ورنہ اطالوی میں؛ اسے اوپر دائیں جانب بدلیں (دیکھیں [ترتیبات](Settings-and-Data-Folder-ur#زبان))۔
+- انٹرفیس آپ کے سسٹم کی زبان میں شروع ہوتا ہے اگر وہ 36 دستیاب زبانوں میں سے ہو، ورنہ اطالوی میں؛ اسے اوپر دائیں جانب بدلیں (دیکھیں [ترتیبات](Settings-and-Data-Folder-ur#زبان))۔
 
 ## اپ ڈیٹ کرنا
 
@@ -87,6 +87,6 @@ Linux والا طریقہ: `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` (یا 32-بٹ
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # یا linux-x64، linux-arm64، linux-arm، osx-arm64
 ```
 
-دستاویزات `tools/build_spiegazione.py data` اور `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` سے دوبارہ بنائی جاتی ہیں۔
+دستاویزات (تمام زبانوں میں) `tools/build_documenti.sh` سے دوبارہ بنائی جاتی ہیں۔
 
 اگلا: [آغاز](Getting-Started-ur)۔

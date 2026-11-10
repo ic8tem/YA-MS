@@ -16,7 +16,7 @@ Al cambiar el idioma o el tema se guardan los ajustes y **se reconstruye la vent
 
 ## Idioma
 
-28 idiomas de interfaz, los mismos que YAEC y E-LAYER ANALYZER (los términos comunes con YAEC se traducen igual):
+36 idiomas de interfaz, los mismos que YAEC y E-LAYER ANALYZER (los términos comunes con YAEC se traducen igual):
 
 | Idioma | Código | Archivo |
 |---|---|---|
@@ -25,7 +25,8 @@ Al cambiar el idioma o el tema se guardan los ajustes y **se reconstruye la vent
 | Deutsch | `de` | `data/lingue/de.txt` |
 | Français | `fr` | `data/lingue/fr.txt` |
 | Español | `es` | `data/lingue/es.txt` |
-| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Portugal) | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-BR` | `data/lingue/pt-BR.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
 | Svenska | `sv` | `data/lingue/sv.txt` |
 | Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
@@ -34,6 +35,11 @@ Al cambiar el idioma o el tema se guardan los ajustes y **se reconstruye la vent
 | Eesti | `et` | `data/lingue/et.txt` |
 | Latviešu | `lv` | `data/lingue/lv.txt` |
 | Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
 | Русский | `ru` | `data/lingue/ru.txt` |
 | Українська | `uk` | `data/lingue/uk.txt` |
 | Türkçe | `tr` | `data/lingue/tr.txt` |
@@ -43,15 +49,17 @@ Al cambiar el idioma o el tema se guardan los ajustes y **se reconstruye la vent
 | اردو | `ur` | `data/lingue/ur.txt` |
 | हिन्दी | `hi` | `data/lingue/hi.txt` |
 | বাংলা | `bn` | `data/lingue/bn.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
 | Bahasa Indonesia | `id` | `data/lingue/id.txt` |
 | Tagalog | `tl` | `data/lingue/tl.txt` |
 | 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-TW` | `data/lingue/zh-TW.txt` |
 | 日本語 | `ja` | `data/lingue/ja.txt` |
 | 한국어 | `ko` | `data/lingue/ko.txt` |
 
 En el primer arranque YA-MS usa el **idioma del sistema** si es uno de estos; si no, el italiano. Los números y las fechas siguen el idioma elegido (p. ej. punto decimal en inglés, coma en italiano y alemán). Cualquier texto que falte en un archivo de traducción se muestra en italiano. En Linux, el chino, el japonés, el coreano, el árabe, el hebreo, el urdu, el hindi y el bengalí necesitan fuentes adecuadas (p. ej. las familias Noto): ver [Problemas](Troubleshooting-FAQ-es#linux-el-texto-japonés-aparece-como-cuadraditos).
 
-El documento [Eficiencia - explicación](Efficiency-Explanation-es) y el manual de cálculo están en italiano.
+El documento [Eficiencia - explicación](Efficiency-Explanation-es) sigue el idioma de la interfaz; el manual de cálculo está en `doc/` (italiano) y en `doc/manuali/` (los otros 35 idiomas).
 
 ## Esquemas de colores
 
@@ -122,7 +130,7 @@ Texto plano, un `clave=valor` por línea (las líneas que empiezan por `#` o `;`
 | `elevazione_lobo_gradi` | 0 | Elevación del lóbulo (°) |
 | `boom_m` | 4.6 | Longitud del boom de la Yagi (m) |
 | `hot_spot_km` | 150 | Distancia de Hot A / Hot B al punto medio (30–400 km) |
-| `lingua` | sistema / `it` | Código de idioma (uno de los 28 códigos de arriba, p. ej. `it`, `en`, `de`) |
+| `lingua` | sistema / `it` | Código de idioma (uno de los 36 códigos de arriba, p. ej. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Esquema de colores: `chiaro` (Claro), `scuro` (Noche), `nero` (Negro), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Estela meteórica) |
 | `carattere_pct` | 100 | Tamaño de letra (100–300 %) |
 | `comandi_visibili` | 1 | 1 = filas de controles visibles, 0 = plegadas |

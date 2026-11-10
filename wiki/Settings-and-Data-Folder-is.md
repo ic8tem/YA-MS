@@ -16,7 +16,7 @@ Hægra megin á flipastikunni, frá hægri til vinstri:
 
 ## Tungumál
 
-28 viðmótstungumál, þau sömu og í YAEC og E-LAYER ANALYZER (hugtök sem eru sameiginleg með YAEC eru þýdd á sama hátt):
+36 viðmótstungumál, þau sömu og í YAEC og E-LAYER ANALYZER (hugtök sem eru sameiginleg með YAEC eru þýdd á sama hátt):
 
 | Tungumál | Kóði | Skrá |
 |---|---|---|
@@ -25,7 +25,8 @@ Hægra megin á flipastikunni, frá hægri til vinstri:
 | Deutsch | `de` | `data/lingue/de.txt` |
 | Français | `fr` | `data/lingue/fr.txt` |
 | Español | `es` | `data/lingue/es.txt` |
-| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Portugal) | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-BR` | `data/lingue/pt-BR.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
 | Svenska | `sv` | `data/lingue/sv.txt` |
 | Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
@@ -34,6 +35,11 @@ Hægra megin á flipastikunni, frá hægri til vinstri:
 | Eesti | `et` | `data/lingue/et.txt` |
 | Latviešu | `lv` | `data/lingue/lv.txt` |
 | Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
 | Русский | `ru` | `data/lingue/ru.txt` |
 | Українська | `uk` | `data/lingue/uk.txt` |
 | Türkçe | `tr` | `data/lingue/tr.txt` |
@@ -43,15 +49,17 @@ Hægra megin á flipastikunni, frá hægri til vinstri:
 | اردو | `ur` | `data/lingue/ur.txt` |
 | हिन्दी | `hi` | `data/lingue/hi.txt` |
 | বাংলা | `bn` | `data/lingue/bn.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
 | Bahasa Indonesia | `id` | `data/lingue/id.txt` |
 | Tagalog | `tl` | `data/lingue/tl.txt` |
 | 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-TW` | `data/lingue/zh-TW.txt` |
 | 日本語 | `ja` | `data/lingue/ja.txt` |
 | 한국어 | `ko` | `data/lingue/ko.txt` |
 
 Við fyrstu ræsingu notar YA-MS **tungumál kerfisins** ef það er eitt af þessum, annars ítölsku. Tölur og dagsetningar fylgja völdu tungumáli (t.d. tugapunktur á ensku, tugakomma á ítölsku og þýsku). Texti sem vantar í þýðingarskrá birtist á ítölsku. Á Linux þurfa kínverska, japanska, kóreska, arabíska, hebreska, úrdú, hindí og bengalska viðeigandi letur (t.d. Noto-fjölskyldurnar): sjá [Úrræðaleit](Troubleshooting-FAQ-is#linux-japanskur-texti-birtist-sem-kassar).
 
-Skjalið [Nýtni - skýringar](Efficiency-Explanation-is) og reiknihandbókin eru á ítölsku.
+Skjalið [Nýtni - skýringar](Efficiency-Explanation-is) fylgir tungumáli viðmótsins; reiknihandbókin er í `doc/` (ítalska) og `doc/manuali/` (hin 35 tungumálin).
 
 ## Litaþemu
 
@@ -122,7 +130,7 @@ Venjulegur texti, eitt `lykill=gildi` á hverja línu (línur sem byrja á `#` e
 | `elevazione_lobo_gradi` | 0 | Hæðarhorn geisla (°) |
 | `boom_m` | 4.6 | Lengd bómu Yagi-loftnetsins (m) |
 | `hot_spot_km` | 150 | Fjarlægð Hot A / Hot B frá miðpunkti (30–400 km) |
-| `lingua` | kerfi / `it` | Tungumálakóði (einn af 28 kóðunum hér að ofan, t.d. `it`, `en`, `de`) |
+| `lingua` | kerfi / `it` | Tungumálakóði (einn af 36 kóðunum hér að ofan, t.d. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Litaþema: `chiaro` (Ljóst), `scuro` (Nótt), `nero` (Svart), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Loftsteinaslóð) |
 | `carattere_pct` | 100 | Leturstærð (100–300 %) |
 | `comandi_visibili` | 1 | 1 = raðir stýringa sýndar, 0 = samanfelldar |

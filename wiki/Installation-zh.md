@@ -73,7 +73,7 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 
 - **欧洲地图**（Natural Earth 海岸线和国界）会在首次启动时自动下载到 `data/mappa`：只需联网一次。
 - **雷达数据**（Collm、Sodankylä）会立即下载，之后每 5 分钟检查一次。
-- 如果系统语言是28 种可用语言之一，界面将以系统语言启动，否则使用意大利语；可在右上角更改（参见[设置](Settings-and-Data-Folder-zh#界面语言)）。
+- 如果系统语言是36 种可用语言之一，界面将以系统语言启动，否则使用意大利语；可在右上角更改（参见[设置](Settings-and-Data-Folder-zh#界面语言)）。
 
 ## 更新
 
@@ -87,6 +87,6 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # 或 linux-x64、linux-arm64、linux-arm、osx-arm64
 ```
 
-文档通过 `tools/build_spiegazione.py data` 和 `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` 重新生成。
+文档（所有语言）通过 `tools/build_documenti.sh` 重新生成。
 
 下一步：[入门](Getting-Started-zh)。

@@ -6,7 +6,7 @@
 
 [![दक्षता - व्याख्या](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-एक तकनीकी दस्तावेज़, *"Come YA-MS calcola l'efficienza di uno sciame"* (YA-MS किसी उल्का वर्षा की दक्षता की गणना कैसे करता है), जो प्रोग्राम के भीतर हल्के रंग के पेज के रूप में दिखता है। यह **चरण-दर-चरण** समझाता है कि दक्षता कैसे प्राप्त होती है, और हर चरण के लिए बताता है कि वह **कहाँ से आता है**। दस्तावेज़ फ़िलहाल **इतालवी में** है; यह विकि इसकी सामग्री हिंदी में [दक्षता की गणना](Efficiency-Calculation-hi#मॉडल) और [ज्यामिति और क्षीणन](Geometry-and-Path-Loss-hi) में देता है।
+एक तकनीकी दस्तावेज़, *"Come YA-MS calcola l'efficienza di uno sciame"* (YA-MS किसी उल्का वर्षा की दक्षता की गणना कैसे करता है), जो प्रोग्राम के भीतर हल्के रंग के पेज के रूप में दिखता है। यह **चरण-दर-चरण** समझाता है कि दक्षता कैसे प्राप्त होती है, और हर चरण के लिए बताता है कि वह **कहाँ से आता है**। प्रोग्राम इसे, गणना पुस्तिका की तरह, **इंटरफ़ेस की भाषा में** (सभी 36 भाषाओं में) दिखाता है; यह विकि इसकी सामग्री [दक्षता की गणना](Efficiency-Calculation-hi#मॉडल) और [ज्यामिति और क्षीणन](Geometry-and-Path-Loss-hi) में भी देता है।
 
 ## लेबल
 
@@ -46,6 +46,8 @@
 |---|---|
 | `data/efficienza_spiegazione.txt` | टैब में दिखाया गया पाठ, हर पंक्ति में एक ब्लॉक (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Word संस्करण |
-| `doc/YA-MS_manuale_calcoli.docx` | **गणना पुस्तिका**: सभी समीकरण (Word समीकरण संपादक), क्रमांकित, अपने स्रोतों सहित |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | यही दस्तावेज़ बाकी 35 भाषाओं में (जैसे `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **गणना पुस्तिका** (इतालवी): सभी समीकरण (Word समीकरण संपादक), क्रमांकित, अपने स्रोतों सहित |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | गणना पुस्तिका बाकी 35 भाषाओं में |
 
-दोनों दस्तावेज़ सोर्स से `tools/build_spiegazione.py data` और `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` द्वारा फिर से बनाए जाते हैं।
+दोनों दस्तावेज़ सोर्स से `tools/build_spiegazione.py data [code]` और `node tools/build_manuale.js <file.docx> [code]` द्वारा फिर से बनाए जाते हैं। अनुवाद `tools/traduzioni_doc/` में हैं (`tools/build_documenti.sh` सभी भाषाएँ फिर से बनाता है)।

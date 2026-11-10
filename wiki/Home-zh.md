@@ -4,7 +4,7 @@
 
 *作者：Costantino Cerrotta IC8TEM*
 
-**YA-MS** 是一款面向业余无线电爱好者的免费程序，适用于在 **50、70、144、222 和 432 MHz 上进行流星散射（MS）通信**的电台。针对您的网格坐标与对方电台网格坐标之间的实际路径，程序逐小时计算每个活跃流星雨对该路径的帮助程度（即其**效率**）、反射来自路径的哪一侧（**Hot A / Hot B**）、天线应指向何处，并根据**实时流星雷达**（德国 Collm）给出每小时反射次数的试验性预报。程序可在 **Windows、Linux、Raspberry Pi 和 macOS**（.NET 8 + Avalonia）上运行，界面提供 6 种语言。
+**YA-MS** 是一款面向业余无线电爱好者的免费程序，适用于在 **50、70、144、222 和 432 MHz 上进行流星散射（MS）通信**的电台。针对您的网格坐标与对方电台网格坐标之间的实际路径，程序逐小时计算每个活跃流星雨对该路径的帮助程度（即其**效率**）、反射来自路径的哪一侧（**Hot A / Hot B**）、天线应指向何处，并根据**实时流星雷达**（德国 Collm）给出每小时反射次数的试验性预报。程序可在 **Windows、Linux、Raspberry Pi 和 macOS**（.NET 8 + Avalonia）上运行，界面提供 36 种语言。
 
 主要来源是 **C. Cerrotta IC8TEM 与 G. Sartori IV3GTH** 的文章 *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"*（第 7 版）。程序中的每个公式和数据都注明了出处，参见[来源](Sources-zh)。
 

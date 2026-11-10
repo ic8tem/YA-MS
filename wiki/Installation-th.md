@@ -73,7 +73,7 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 
 - **แผนที่ยุโรป** (แนวชายฝั่งและพรมแดนจาก Natural Earth) จะถูกดาวน์โหลดลงใน `data/mappa` โดยอัตโนมัติในครั้งแรก: ต้องเชื่อมต่ออินเทอร์เน็ตเพียงครั้งเดียว
 - **ข้อมูลเรดาร์** (Collm, Sodankylä) จะถูกดาวน์โหลดทันที จากนั้นตรวจสอบทุก 5 นาที
-- ส่วนติดต่อผู้ใช้จะเริ่มด้วยภาษาของระบบหากเป็นหนึ่งใน 28 ภาษาที่มี มิฉะนั้นจะเป็นภาษาอิตาลี เปลี่ยนได้ที่มุมขวาบน (ดูที่ [การตั้งค่า](Settings-and-Data-Folder-th#ภาษา))
+- ส่วนติดต่อผู้ใช้จะเริ่มด้วยภาษาของระบบหากเป็นหนึ่งใน 36 ภาษาที่มี มิฉะนั้นจะเป็นภาษาอิตาลี เปลี่ยนได้ที่มุมขวาบน (ดูที่ [การตั้งค่า](Settings-and-Data-Folder-th#ภาษา))
 
 ## การอัปเดต
 
@@ -87,6 +87,6 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-เอกสารสร้างใหม่ได้ด้วย `tools/build_spiegazione.py data` และ `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`
+เอกสาร (ทุกภาษา) สร้างใหม่ได้ด้วย `tools/build_documenti.sh`
 
 ถัดไป: [เริ่มต้นใช้งาน](Getting-Started-th)

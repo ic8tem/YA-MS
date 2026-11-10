@@ -44,4 +44,4 @@
 
 Επεξεργαστείτε το αρχείο στον φάκελο `data/lingue` της εγκατάστασής σας και επανεκκινήστε το YA-MS (ή αλλάξτε γλώσσα) για να δείτε το αποτέλεσμα. Επειδή αυτά τα αρχεία **αντικαθίστανται από νεότερες εκδόσεις σε κάθε ενημέρωση**, παρακαλούμε **στείλτε και τις διορθώσεις σας** – με e-mail ή ως pull request στο GitHub (`data/lingue/`) – ώστε να μπουν στην επόμενη έκδοση.
 
-Αυτό το wiki υπάρχει σε 28 γλώσσες (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文)· διορθώσεις στις σελίδες του wiki είναι επίσης ευπρόσδεκτες.
+Αυτό το wiki υπάρχει σε 36 γλώσσες (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體))· διορθώσεις στις σελίδες του wiki είναι επίσης ευπρόσδεκτες.

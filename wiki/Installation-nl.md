@@ -73,7 +73,7 @@ Het programma is niet door Apple ondertekend, dus de eerste keer vraagt macOS om
 
 - De **kaart van Europa** (kustlijnen en grenzen van Natural Earth) wordt de eerste keer automatisch gedownload naar `data/mappa`: eenmalig is een internetverbinding nodig.
 - De **radargegevens** (Collm, Sodankylä) worden meteen gedownload en daarna elke 5 minuten gecontroleerd.
-- De interface start in de taal van je systeem als dat een van de 28 beschikbare is, anders in het Italiaans; je wijzigt dat rechtsboven (zie [Instellingen](Settings-and-Data-Folder-nl#taal)).
+- De interface start in de taal van je systeem als dat een van de 36 beschikbare is, anders in het Italiaans; je wijzigt dat rechtsboven (zie [Instellingen](Settings-and-Data-Folder-nl#taal)).
 
 ## Bijwerken
 
@@ -87,6 +87,6 @@ De installatiepakketten worden gemaakt door GitHub Actions (`.github/workflows/b
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # of linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-De documenten worden opnieuw gegenereerd met `tools/build_spiegazione.py data` en `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+De documenten (alle talen) worden opnieuw gegenereerd met `tools/build_documenti.sh`.
 
 Volgende: [Aan de slag](Getting-Started-nl).

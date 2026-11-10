@@ -73,7 +73,7 @@ A programot nem az Apple írta alá, ezért első alkalommal a macOS megerősít
 
 - Az **Európa-térkép** (Natural Earth partvonalak és határok) első alkalommal automatikusan letöltődik a `data/mappa` mappába: ehhez egyszer internetkapcsolat szükséges.
 - A **radaradatok** (Collm, Sodankylä) azonnal letöltődnek, majd ötpercenként ellenőrzésre kerülnek.
-- A felület a rendszer nyelvén indul, ha az a 28 elérhető nyelv egyike, egyébként olaszul; a jobb felső sarokban módosítható (lásd: [Beállítások](Settings-and-Data-Folder-hu#nyelv)).
+- A felület a rendszer nyelvén indul, ha az a 36 elérhető nyelv egyike, egyébként olaszul; a jobb felső sarokban módosítható (lásd: [Beállítások](Settings-and-Data-Folder-hu#nyelv)).
 
 ## Frissítés
 
@@ -87,6 +87,6 @@ A telepítőket a GitHub Actions (`.github/workflows/build.yml`) készíti el a 
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-A dokumentumok újragenerálása: `tools/build_spiegazione.py data` és `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+A dokumentumok (minden nyelven) újragenerálása: `tools/build_documenti.sh`.
 
 Következő: [Első lépések](Getting-Started-hu).

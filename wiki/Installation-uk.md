@@ -73,7 +73,7 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 
 - **Мапа Європи** (берегові лінії та кордони Natural Earth) першого разу завантажується автоматично в `data/mappa`: інтернет-з'єднання потрібне один раз.
 - **Дані радарів** (Collm, Соданкюля) завантажуються одразу, а потім перевіряються кожні 5 хвилин.
-- Інтерфейс запускається мовою вашої системи, якщо вона є серед 28 доступних, інакше — італійською; змінити мову можна вгорі праворуч (див. [Налаштування](Settings-and-Data-Folder-uk#мова)).
+- Інтерфейс запускається мовою вашої системи, якщо вона є серед 36 доступних, інакше — італійською; змінити мову можна вгорі праворуч (див. [Налаштування](Settings-and-Data-Folder-uk#мова)).
 
 ## Оновлення
 
@@ -87,6 +87,6 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # або linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Документи генеруються заново командами `tools/build_spiegazione.py data` і `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Документи (усіма мовами) генеруються заново командою `tools/build_documenti.sh`.
 
 Далі: [Початок роботи](Getting-Started-uk).

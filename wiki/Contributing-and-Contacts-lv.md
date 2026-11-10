@@ -44,4 +44,4 @@ Saskarnes tulkojumi ir vienkārši teksta faili **`data/lingue/<code>.txt`** (UT
 
 Rediģē failu savas instalācijas mapē `data/lingue` un restartē YA-MS (vai pārslēdz valodu), lai redzētu rezultātu. Tā kā šie faili **katrā atjauninājumā tiek aizstāti ar jaunākiem**, lūdzu, arī **nosūti savus labojumus** – pa e-pastu vai kā pull request vietnē GitHub (`data/lingue/`) –, lai tie nonāktu nākamajā laidienā.
 
-Šī wiki ir pieejama English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文 valodā; laipni gaidīti arī wiki lapu labojumi.
+Šī wiki ir pieejama 36 valodās (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)); laipni gaidīti arī wiki lapu labojumi.

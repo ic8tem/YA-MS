@@ -16,7 +16,7 @@
 
 ## भाषा
 
-28 इंटरफ़ेस भाषाएँ, वही जो YAEC और E-LAYER ANALYZER में हैं (YAEC के साथ साझा शब्दों का अनुवाद एक जैसा है):
+36 इंटरफ़ेस भाषाएँ, वही जो YAEC और E-LAYER ANALYZER में हैं (YAEC के साथ साझा शब्दों का अनुवाद एक जैसा है):
 
 | भाषा | कोड | फ़ाइल |
 |---|---|---|
@@ -25,7 +25,8 @@
 | Deutsch | `de` | `data/lingue/de.txt` |
 | Français | `fr` | `data/lingue/fr.txt` |
 | Español | `es` | `data/lingue/es.txt` |
-| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Portugal) | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-BR` | `data/lingue/pt-BR.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
 | Svenska | `sv` | `data/lingue/sv.txt` |
 | Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
@@ -34,6 +35,11 @@
 | Eesti | `et` | `data/lingue/et.txt` |
 | Latviešu | `lv` | `data/lingue/lv.txt` |
 | Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
 | Русский | `ru` | `data/lingue/ru.txt` |
 | Українська | `uk` | `data/lingue/uk.txt` |
 | Türkçe | `tr` | `data/lingue/tr.txt` |
@@ -43,15 +49,17 @@
 | اردو | `ur` | `data/lingue/ur.txt` |
 | हिन्दी | `hi` | `data/lingue/hi.txt` |
 | বাংলা | `bn` | `data/lingue/bn.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
 | Bahasa Indonesia | `id` | `data/lingue/id.txt` |
 | Tagalog | `tl` | `data/lingue/tl.txt` |
 | 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-TW` | `data/lingue/zh-TW.txt` |
 | 日本語 | `ja` | `data/lingue/ja.txt` |
 | 한국어 | `ko` | `data/lingue/ko.txt` |
 
 पहली बार शुरू होने पर YA-MS **सिस्टम भाषा** उपयोग करता है यदि वह इनमें से एक हो, अन्यथा इतालवी। संख्याएँ और तिथियाँ चुनी गई भाषा का अनुसरण करती हैं (उदा. अंग्रेज़ी में दशमलव बिंदु, इतालवी और जर्मन में अल्पविराम)। अनुवाद फ़ाइल में अनुपस्थित कोई भी पाठ इतालवी में दिखाया जाता है। Linux पर चीनी, जापानी, कोरियाई, अरबी, हिब्रू, उर्दू, हिन्दी और बांग्ला के लिए उपयुक्त फ़ॉन्ट चाहिए (उदा. Noto परिवार): देखें [समस्या निवारण](Troubleshooting-FAQ-hi#linux-जापानी-पाठ-बक्सों-के-रूप-में-दिखता-है)।
 
-[दक्षता - व्याख्या](Efficiency-Explanation-hi) दस्तावेज़ और गणना पुस्तिका इतालवी में हैं।
+[दक्षता - व्याख्या](Efficiency-Explanation-hi) दस्तावेज़ इंटरफ़ेस की भाषा में दिखता है; गणना पुस्तिका `doc/` (इतालवी) और `doc/manuali/` (बाकी 35 भाषाएँ) में है।
 
 ## रंग योजनाएँ
 
@@ -122,7 +130,7 @@
 | `elevazione_lobo_gradi` | 0 | लोब उन्नयन (°) |
 | `boom_m` | 4.6 | यागी बूम की लंबाई (m) |
 | `hot_spot_km` | 150 | मध्य बिंदु से Hot A / Hot B की दूरी (30–400 km) |
-| `lingua` | सिस्टम / `it` | भाषा कोड (ऊपर के 28 कोड में से एक, उदा. `it`, `en`, `de`) |
+| `lingua` | सिस्टम / `it` | भाषा कोड (ऊपर के 36 कोड में से एक, उदा. `it`, `en`, `de`) |
 | `tema` | `chiaro` | रंग योजना: `chiaro` (हल्का), `scuro` (रात), `nero` (काला), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (उल्का ट्रेल) |
 | `carattere_pct` | 100 | फ़ॉन्ट आकार (100–300 %) |
 | `comandi_visibili` | 1 | 1 = नियंत्रणों की पंक्तियाँ दिखती हैं, 0 = समेटी हुई |

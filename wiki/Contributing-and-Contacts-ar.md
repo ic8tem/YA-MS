@@ -44,4 +44,4 @@
 
 عدّل الملف في مجلد `data/lingue` في تثبيتك وأعد تشغيل YA-MS (أو بدّل اللغة) لرؤية النتيجة. ولأن هذه الملفات **تُستبدل بنسخ أحدث عند كل تحديث**، يُرجى أيضاً **إرسال تصحيحاتك** – بالبريد الإلكتروني أو كطلب سحب (pull request) على GitHub ‏(`data/lingue/`) – لتدخل في الإصدار التالي.
 
-هذه الويكي متاحة English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文؛ والتصحيحات على صفحات الويكي مرحَّب بها أيضاً.
+هذه الويكي متاحة بـ36 لغة (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體))؛ والتصحيحات على صفحات الويكي مرحَّب بها أيضاً.

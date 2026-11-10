@@ -73,7 +73,7 @@ Programa nepasirašyta Apple, todėl pirmą kartą macOS prašo patvirtinimo; ž
 
 - **Europos žemėlapis** (Natural Earth pakrantės ir sienos) pirmą kartą automatiškai atsisiunčiamas į `data/mappa`: interneto ryšio reikia vieną kartą.
 - **Radarų duomenys** (Collm, Sodankylä) atsisiunčiami iš karto, o paskui tikrinami kas 5 minutes.
-- Sąsaja paleidžiama jūsų sistemos kalba, jei ji yra viena iš 28 galimų, kitu atveju itališkai; kalbą galima pakeisti viršuje dešinėje (žr. [Nustatymai](Settings-and-Data-Folder-lt#kalba)).
+- Sąsaja paleidžiama jūsų sistemos kalba, jei ji yra viena iš 36 galimų, kitu atveju itališkai; kalbą galima pakeisti viršuje dešinėje (žr. [Nustatymai](Settings-and-Data-Folder-lt#kalba)).
 
 ## Atnaujinimas
 
@@ -87,6 +87,6 @@ Diegimo programas sukuria GitHub Actions (`.github/workflows/build.yml`) kiekvie
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # arba linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Dokumentai iš naujo sugeneruojami komandomis `tools/build_spiegazione.py data` ir `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Dokumentai (visomis kalbomis) iš naujo sugeneruojami komanda `tools/build_documenti.sh`.
 
 Toliau: [Pradžia](Getting-Started-lt).

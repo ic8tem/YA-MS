@@ -6,7 +6,7 @@
 
 [![Effektivitet - förklaring](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-Ett tekniskt dokument, *"Come YA-MS calcola l'efficienza di uno sciame"* (Hur YA-MS beräknar en svärms effektivitet), som visas i programmet som en ljus sida. Det förklarar **steg för steg** hur effektiviteten tas fram och anger för varje steg **var det kommer ifrån**. Dokumentet finns för närvarande **på italienska**; den här wikin återger dess innehåll på svenska i [Effektivitetsberäkning](Efficiency-Calculation-sv#modellen) och [Geometri och dämpning](Geometry-and-Path-Loss-sv).
+Ett tekniskt dokument, *"Come YA-MS calcola l'efficienza di uno sciame"* (Hur YA-MS beräknar en svärms effektivitet), som visas i programmet som en ljus sida. Det förklarar **steg för steg** hur effektiviteten tas fram och anger för varje steg **var det kommer ifrån**. Programmet visar det **på gränssnittets språk** (alla 36 språk), liksom beräkningshandboken; den här wikin återger också innehållet i [Effektivitetsberäkning](Efficiency-Calculation-sv#modellen) och [Geometri och dämpning](Geometry-and-Path-Loss-sv).
 
 ## Etiketter
 
@@ -46,6 +46,8 @@ Varje steg har en färgad etikett:
 |---|---|
 | `data/efficienza_spiegazione.txt` | Texten som visas i fliken, ett block per rad (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Word-versionen |
-| `doc/YA-MS_manuale_calcoli.docx` | **Beräkningshandboken**: alla ekvationer (Words ekvationsredigerare), numrerade, med sina källor |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Samma dokument på de övriga 35 språken (t.ex. `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **Beräkningshandboken** (italienska): alla ekvationer (Words ekvationsredigerare), numrerade, med sina källor |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | Beräkningshandboken på de övriga 35 språken |
 
-De två dokumenten genereras på nytt från källkoden med `tools/build_spiegazione.py data` och `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+De två dokumenten genereras på nytt från källkoden med `tools/build_spiegazione.py data [code]` och `node tools/build_manuale.js <file.docx> [code]`. Översättningarna finns i `tools/traduzioni_doc/` (`tools/build_documenti.sh` genererar alla språk på nytt).

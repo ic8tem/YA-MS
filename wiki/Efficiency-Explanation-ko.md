@@ -6,7 +6,7 @@
 
 [![효율 - 설명](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-기술 문서 *"Come YA-MS calcola l'efficienza di uno sciame"*(YA-MS가 유성우의 효율을 계산하는 방법)를 프로그램 안에서 밝은 페이지로 보여 줍니다. 효율을 구하는 과정을 **단계별로** 설명하고, 각 단계가 **어디에서 왔는지** 밝힙니다. 문서는 현재 **이탈리아어**로만 되어 있으며, 이 위키는 그 내용을 [효율 계산](Efficiency-Calculation-ko#모델)과 [기하와 경로 손실](Geometry-and-Path-Loss-ko)에서 한국어로 제공합니다.
+기술 문서 *"Come YA-MS calcola l'efficienza di uno sciame"*(YA-MS가 유성우의 효율을 계산하는 방법)를 프로그램 안에서 밝은 페이지로 보여 줍니다. 효율을 구하는 과정을 **단계별로** 설명하고, 각 단계가 **어디에서 왔는지** 밝힙니다. 프로그램은 계산 매뉴얼과 마찬가지로 이 문서를 **인터페이스 언어로**(36개 언어 모두) 보여 주며, 이 위키도 그 내용을 [효율 계산](Efficiency-Calculation-ko#모델)과 [기하와 경로 손실](Geometry-and-Path-Loss-ko)에서 제공합니다.
 
 ## 레이블
 
@@ -46,6 +46,8 @@
 |---|---|
 | `data/efficienza_spiegazione.txt` | 탭에 표시되는 텍스트, 한 줄에 한 블록(`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Word 버전 |
-| `doc/YA-MS_manuale_calcoli.docx` | **계산 매뉴얼**: 모든 식(Word 수식 편집기), 번호와 출처 포함 |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | 나머지 35개 언어로 된 같은 문서(예: `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **계산 매뉴얼**(이탈리아어): 모든 식(Word 수식 편집기), 번호와 출처 포함 |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | 나머지 35개 언어로 된 계산 매뉴얼 |
 
-두 문서는 `tools/build_spiegazione.py data`와 `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`로 소스에서 다시 생성합니다.
+두 문서는 `tools/build_spiegazione.py data [code]`와 `node tools/build_manuale.js <file.docx> [code]`로 소스에서 다시 생성합니다. 번역은 `tools/traduzioni_doc/`에 있습니다(`tools/build_documenti.sh`는 모든 언어를 다시 생성합니다).

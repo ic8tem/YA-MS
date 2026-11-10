@@ -16,7 +16,7 @@ Als je van taal of kleurenschema wisselt, worden de instellingen opgeslagen en w
 
 ## Taal
 
-28 talen voor de interface, dezelfde als bij YAEC en E-LAYER ANALYZER (termen die met YAEC gemeen zijn, worden op dezelfde manier vertaald):
+36 talen voor de interface, dezelfde als bij YAEC en E-LAYER ANALYZER (termen die met YAEC gemeen zijn, worden op dezelfde manier vertaald):
 
 | Taal | Code | Bestand |
 |---|---|---|
@@ -25,7 +25,8 @@ Als je van taal of kleurenschema wisselt, worden de instellingen opgeslagen en w
 | Deutsch | `de` | `data/lingue/de.txt` |
 | Français | `fr` | `data/lingue/fr.txt` |
 | Español | `es` | `data/lingue/es.txt` |
-| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Portugal) | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-BR` | `data/lingue/pt-BR.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
 | Svenska | `sv` | `data/lingue/sv.txt` |
 | Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
@@ -34,6 +35,11 @@ Als je van taal of kleurenschema wisselt, worden de instellingen opgeslagen en w
 | Eesti | `et` | `data/lingue/et.txt` |
 | Latviešu | `lv` | `data/lingue/lv.txt` |
 | Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
 | Русский | `ru` | `data/lingue/ru.txt` |
 | Українська | `uk` | `data/lingue/uk.txt` |
 | Türkçe | `tr` | `data/lingue/tr.txt` |
@@ -43,15 +49,17 @@ Als je van taal of kleurenschema wisselt, worden de instellingen opgeslagen en w
 | اردو | `ur` | `data/lingue/ur.txt` |
 | हिन्दी | `hi` | `data/lingue/hi.txt` |
 | বাংলা | `bn` | `data/lingue/bn.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
 | Bahasa Indonesia | `id` | `data/lingue/id.txt` |
 | Tagalog | `tl` | `data/lingue/tl.txt` |
 | 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-TW` | `data/lingue/zh-TW.txt` |
 | 日本語 | `ja` | `data/lingue/ja.txt` |
 | 한국어 | `ko` | `data/lingue/ko.txt` |
 
 Bij de eerste start gebruikt YA-MS de **taal van het systeem** als dat een van deze is, anders Italiaans. Getallen en datums volgen de gekozen taal (bijv. decimale punt in het Engels, komma in het Italiaans, Duits en Nederlands). Tekst die in een vertaalbestand ontbreekt, wordt in het Italiaans getoond. Onder Linux hebben Chinees, Japans, Koreaans, Arabisch, Hebreeuws, Urdu, Hindi en Bengaals geschikte lettertypen nodig (bijv. de Noto-families): zie [Problemen en FAQ](Troubleshooting-FAQ-nl#linux-japanse-tekst-verschijnt-als-vierkantjes).
 
-Het document [Efficiëntie - uitleg](Efficiency-Explanation-nl) en de rekenhandleiding zijn in het Italiaans.
+Het document [Efficiëntie - uitleg](Efficiency-Explanation-nl) volgt de taal van de interface; de rekenhandleiding staat in `doc/` (Italiaans) en `doc/manuali/` (de andere 35 talen).
 
 ## Kleurenschema's
 
@@ -122,7 +130,7 @@ Platte tekst, één `sleutel=waarde` per regel (regels die met `#` of `;` beginn
 | `elevazione_lobo_gradi` | 0 | Bundelelevatie (°) |
 | `boom_m` | 4.6 | Boomlengte van de Yagi (m) |
 | `hot_spot_km` | 150 | Afstand van Hot A / Hot B tot het middelpunt (30–400 km) |
-| `lingua` | systeem / `it` | Taalcode (een van de 28 codes hierboven, bijv. `it`, `en`, `de`) |
+| `lingua` | systeem / `it` | Taalcode (een van de 36 codes hierboven, bijv. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Kleurenschema: `chiaro` (Licht), `scuro` (Nacht), `nero` (Zwart), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteorenspoor) |
 | `carattere_pct` | 100 | Lettergrootte (100–300 %) |
 | `comandi_visibili` | 1 | 1 = rijen bedieningselementen zichtbaar, 0 = ingeklapt |

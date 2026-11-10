@@ -44,4 +44,4 @@ Oversættelserne af brugerfladen er almindelige tekstfiler i **`data/lingue/<cod
 
 Redigér filen i mappen `data/lingue` i din installation, og genstart YA-MS (eller skift sprog) for at se resultatet. Da disse filer **udskiftes af nyere versioner ved hver opdatering**, så **send også dine rettelser** – pr. e-mail eller som pull request på GitHub (`data/lingue/`) – så de kommer med i næste udgivelse.
 
-Denne wiki findes på English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文; rettelser til wikisiderne er også velkomne.
+Denne wiki findes på 36 sprog (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)); rettelser til wikisiderne er også velkomne.

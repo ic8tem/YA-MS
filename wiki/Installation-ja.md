@@ -73,7 +73,7 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 
 - **ヨーロッパ地図** (Natural Earth の海岸線と国境) は初回に `data/mappa` へ自動的にダウンロードされます。インターネット接続が 1 度だけ必要です。
 - **レーダーデータ** (Collm、Sodankylä) はすぐにダウンロードされ、その後 5 分ごとに確認されます。
-- 表示言語は、システムの言語が 28 の対応言語のいずれかであればその言語、そうでなければイタリア語で始まります。右上で変更できます ([設定](Settings-and-Data-Folder-ja#表示言語) を参照)。
+- 表示言語は、システムの言語が 36 の対応言語のいずれかであればその言語、そうでなければイタリア語で始まります。右上で変更できます ([設定](Settings-and-Data-Folder-ja#表示言語) を参照)。
 
 ## アップデート
 
@@ -87,6 +87,6 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-文書は `tools/build_spiegazione.py data` と `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` で再生成します。
+文書 (全言語) は `tools/build_documenti.sh` で再生成します。
 
 次へ: [はじめに](Getting-Started-ja)。

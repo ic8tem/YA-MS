@@ -16,7 +16,7 @@ Pakeitus kalbą ar temą, nustatymai išsaugomi, o **langas perkuriamas** toje p
 
 ## Kalba
 
-28 sąsajos kalbos, tos pačios kaip YAEC ir E-LAYER ANALYZER (su YAEC bendri terminai išversti vienodai):
+36 sąsajos kalbos, tos pačios kaip YAEC ir E-LAYER ANALYZER (su YAEC bendri terminai išversti vienodai):
 
 | Kalba | Kodas | Failas |
 |---|---|---|
@@ -25,7 +25,8 @@ Pakeitus kalbą ar temą, nustatymai išsaugomi, o **langas perkuriamas** toje p
 | Deutsch | `de` | `data/lingue/de.txt` |
 | Français | `fr` | `data/lingue/fr.txt` |
 | Español | `es` | `data/lingue/es.txt` |
-| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Portugal) | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-BR` | `data/lingue/pt-BR.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
 | Svenska | `sv` | `data/lingue/sv.txt` |
 | Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
@@ -34,6 +35,11 @@ Pakeitus kalbą ar temą, nustatymai išsaugomi, o **langas perkuriamas** toje p
 | Eesti | `et` | `data/lingue/et.txt` |
 | Latviešu | `lv` | `data/lingue/lv.txt` |
 | Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
 | Русский | `ru` | `data/lingue/ru.txt` |
 | Українська | `uk` | `data/lingue/uk.txt` |
 | Türkçe | `tr` | `data/lingue/tr.txt` |
@@ -43,15 +49,17 @@ Pakeitus kalbą ar temą, nustatymai išsaugomi, o **langas perkuriamas** toje p
 | اردو | `ur` | `data/lingue/ur.txt` |
 | हिन्दी | `hi` | `data/lingue/hi.txt` |
 | বাংলা | `bn` | `data/lingue/bn.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
 | Bahasa Indonesia | `id` | `data/lingue/id.txt` |
 | Tagalog | `tl` | `data/lingue/tl.txt` |
 | 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-TW` | `data/lingue/zh-TW.txt` |
 | 日本語 | `ja` | `data/lingue/ja.txt` |
 | 한국어 | `ko` | `data/lingue/ko.txt` |
 
 Pirmą kartą paleista YA-MS naudoja **sistemos kalbą**, jei ji yra viena iš šių, kitu atveju – italų. Skaičiai ir datos atitinka pasirinktą kalbą (pvz., dešimtainis taškas anglų, kablelis italų ir vokiečių kalbomis). Jei vertimo faile teksto trūksta, jis rodomas itališkai. Linux sistemoje kinų, japonų, korėjiečių, arabų, hebrajų, urdu, hindi ir bengalų kalboms reikia tinkamų šriftų (pvz., Noto šeimų): žr. [Trikčių šalinimas](Troubleshooting-FAQ-lt#linux-japoniškas-tekstas-rodomas-kvadratėliais).
 
-Dokumentas [Efektyvumas - paaiškinimas](Efficiency-Explanation-lt) ir skaičiavimų vadovas yra italų kalba.
+Dokumentas [Efektyvumas - paaiškinimas](Efficiency-Explanation-lt) rodomas sąsajos kalba; skaičiavimų vadovas yra `doc/` (italų kalba) ir `doc/manuali/` (kitomis 35 kalbomis).
 
 ## Spalvų schemos
 
@@ -122,7 +130,7 @@ Paprastas tekstas, po vieną `key=value` eilutėje (eilutės, prasidedančios `#
 | `elevazione_lobo_gradi` | 0 | Lapelio elevacija (°) |
 | `boom_m` | 4.6 | Yagi strėlės ilgis (m) |
 | `hot_spot_km` | 150 | Hot A / Hot B atstumas nuo vidurio taško (30–400 km) |
-| `lingua` | sistemos / `it` | Kalbos kodas (vienas iš 28 aukščiau nurodytų kodų, pvz., `it`, `en`, `de`) |
+| `lingua` | sistemos / `it` | Kalbos kodas (vienas iš 36 aukščiau nurodytų kodų, pvz., `it`, `en`, `de`) |
 | `tema` | `chiaro` | Spalvų schema: `chiaro` (Šviesi), `scuro` (Naktis), `nero` (Juoda), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteoro pėdsakas) |
 | `carattere_pct` | 100 | Šrifto dydis (100–300 %) |
 | `comandi_visibili` | 1 | 1 = valdymo eilutės rodomos, 0 = suskleistos |

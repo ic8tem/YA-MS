@@ -6,7 +6,7 @@
 
 [![الكفاءة - شرح](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-وثيقة تقنية بعنوان *"Come YA-MS calcola l'efficienza di uno sciame"* (كيف يحسب YA-MS كفاءة الزخة)، تُعرض داخل البرنامج كصفحة فاتحة. تشرح **خطوةً بخطوة** كيف تُستخرج الكفاءة، وتذكر لكل خطوة **من أين تأتي**. الوثيقة حالياً **بالإيطالية**؛ وتعرض هذه الويكي محتواها بالعربية في [حساب الكفاءة](Efficiency-Calculation-ar#النموذج) و[الهندسة والتوهين](Geometry-and-Path-Loss-ar).
+وثيقة تقنية بعنوان *"Come YA-MS calcola l'efficienza di uno sciame"* (كيف يحسب YA-MS كفاءة الزخة)، تُعرض داخل البرنامج كصفحة فاتحة. تشرح **خطوةً بخطوة** كيف تُستخرج الكفاءة، وتذكر لكل خطوة **من أين تأتي**. يعرضها البرنامج **بلغة الواجهة** (بجميع اللغات الـ36)، وكذلك دليل الحسابات؛ وتعرض هذه الويكي محتواها أيضاً في [حساب الكفاءة](Efficiency-Calculation-ar#النموذج) و[الهندسة والتوهين](Geometry-and-Path-Loss-ar).
 
 ## التسميات
 
@@ -46,6 +46,8 @@
 |---|---|
 | `data/efficienza_spiegazione.txt` | النص المعروض في علامة التبويب، كتلة واحدة لكل سطر (`TITLE`، `SUB`، `H1`، `H2`، `P`، `TAG|FONTE|…`، `TAG|RILIEVO|…`، `TAG|SCELTA|…`، `EQ`، `LI`، `SRC`) |
 | `data/efficienza_spiegazione.docx` | نسخة Word |
-| `doc/YA-MS_manuale_calcoli.docx` | **دليل الحسابات**: جميع المعادلات (محرر معادلات Word)، مرقَّمة، مع مصادرها |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | الوثيقة نفسها باللغات الـ35 الأخرى (مثلاً `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **دليل الحسابات** (بالإيطالية): جميع المعادلات (محرر معادلات Word)، مرقَّمة، مع مصادرها |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | دليل الحسابات باللغات الـ35 الأخرى |
 
-تُعاد توليد الوثيقتين من المصدر بالأمرين `tools/build_spiegazione.py data` و`node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+تُعاد توليد الوثيقتين من المصدر بالأمرين `tools/build_spiegazione.py data [code]` و`node tools/build_manuale.js <file.docx> [code]`. الترجمات موجودة في `tools/traduzioni_doc/` (ويعيد `tools/build_documenti.sh` توليد جميع اللغات).

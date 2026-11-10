@@ -73,7 +73,7 @@ Programmet er ikke signeret af Apple, så første gang beder macOS om bekræftel
 
 - **Europakortet** (kystlinjer og grænser fra Natural Earth) hentes automatisk til `data/mappa` første gang: der kræves internetforbindelse én gang.
 - **Radardata** (Collm, Sodankylä) hentes med det samme og kontrolleres derefter hvert 5. minut.
-- Brugerfladen starter på systemets sprog, hvis det er et af de 28 tilgængelige, ellers på italiensk; skift det øverst til højre (se [Indstillinger](Settings-and-Data-Folder-da#sprog)).
+- Brugerfladen starter på systemets sprog, hvis det er et af de 36 tilgængelige, ellers på italiensk; skift det øverst til højre (se [Indstillinger](Settings-and-Data-Folder-da#sprog)).
 
 ## Opdatering
 
@@ -87,6 +87,6 @@ Installationspakkerne laves af GitHub Actions (`.github/workflows/build.yml`) ve
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # eller linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Dokumenterne genereres med `tools/build_spiegazione.py data` og `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Dokumenterne (alle sprog) genereres med `tools/build_documenti.sh`.
 
 Næste: [Kom godt i gang](Getting-Started-da).

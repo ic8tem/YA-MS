@@ -6,7 +6,7 @@
 
 [![Efektyvumas - paaiškinimas](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-Techninis dokumentas *"Come YA-MS calcola l'efficienza di uno sciame"* (Kaip YA-MS skaičiuoja srauto efektyvumą), programoje rodomas kaip šviesus puslapis. Jis **žingsnis po žingsnio** paaiškina, kaip gaunamas efektyvumas, ir kiekvienam žingsniui nurodo, **iš kur jis kilęs**. Dokumentas šiuo metu yra **italų kalba**; šioje wiki jo turinys lietuviškai pateiktas puslapiuose [Efektyvumo skaičiavimas](Efficiency-Calculation-lt#modelis) ir [Geometrija ir slopinimas](Geometry-and-Path-Loss-lt).
+Techninis dokumentas *"Come YA-MS calcola l'efficienza di uno sciame"* (Kaip YA-MS skaičiuoja srauto efektyvumą), programoje rodomas kaip šviesus puslapis. Jis **žingsnis po žingsnio** paaiškina, kaip gaunamas efektyvumas, ir kiekvienam žingsniui nurodo, **iš kur jis kilęs**. Programa jį rodo **sąsajos kalba** (visomis 36 kalbomis), kaip ir skaičiavimų vadovą; šioje wiki jo turinys taip pat pateiktas puslapiuose [Efektyvumo skaičiavimas](Efficiency-Calculation-lt#modelis) ir [Geometrija ir slopinimas](Geometry-and-Path-Loss-lt).
 
 ## Žymos
 
@@ -46,6 +46,8 @@ Kiekvienas žingsnis turi spalvotą žymą:
 |---|---|
 | `data/efficienza_spiegazione.txt` | Kortelėje rodomas tekstas, po vieną bloką eilutėje (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Word versija |
-| `doc/YA-MS_manuale_calcoli.docx` | **Skaičiavimų vadovas**: visos lygtys (Word lygčių rengyklė), sunumeruotos, su šaltiniais |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Tas pats dokumentas kitomis 35 kalbomis (pvz., `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **Skaičiavimų vadovas** (italų kalba): visos lygtys (Word lygčių rengyklė), sunumeruotos, su šaltiniais |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | Skaičiavimų vadovas kitomis 35 kalbomis |
 
-Abu dokumentai iš naujo sugeneruojami iš išeitinio kodo komandomis `tools/build_spiegazione.py data` ir `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Abu dokumentai iš naujo sugeneruojami iš išeitinio kodo komandomis `tools/build_spiegazione.py data [code]` ir `node tools/build_manuale.js <file.docx> [code]`. Vertimai yra kataloge `tools/traduzioni_doc/` (`tools/build_documenti.sh` iš naujo sugeneruoja visas kalbas).

@@ -73,7 +73,7 @@ Programul nu este semnat de Apple, așa că prima dată macOS cere o confirmare;
 
 - **Harta Europei** (liniile de coastă și granițele Natural Earth) se descarcă automat în `data/mappa` prima dată: este nevoie de o conexiune la internet o singură dată.
 - **Datele radar** (Collm, Sodankylä) se descarcă imediat și apoi se verifică la fiecare 5 minute.
-- Interfața pornește în limba sistemului dumneavoastră dacă este una dintre cele 28 disponibile, altfel în italiană; o puteți schimba în dreapta sus (vedeți [Setări](Settings-and-Data-Folder-ro#limba)).
+- Interfața pornește în limba sistemului dumneavoastră dacă este una dintre cele 36 disponibile, altfel în italiană; o puteți schimba în dreapta sus (vedeți [Setări](Settings-and-Data-Folder-ro#limba)).
 
 ## Actualizare
 
@@ -87,6 +87,6 @@ Programele de instalare sunt produse de GitHub Actions (`.github/workflows/build
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Documentele se regenerează cu `tools/build_spiegazione.py data` și `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Documentele (toate limbile) se regenerează cu `tools/build_documenti.sh`.
 
 Mai departe: [Primii pași](Getting-Started-ro).

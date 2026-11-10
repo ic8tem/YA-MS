@@ -44,4 +44,4 @@ Terjemahan antarmuka adalah file teks biasa di **`data/lingue/<code>.txt`** (UTF
 
 Edit file di folder `data/lingue` pada instalasi Anda lalu jalankan ulang YA-MS (atau ganti bahasa) untuk melihat hasilnya. Karena file-file ini **diganti oleh versi yang lebih baru pada setiap pembaruan**, mohon **kirimkan juga koreksi Anda** – lewat e-mail atau sebagai pull request di GitHub (`data/lingue/`) – agar masuk ke rilis berikutnya.
 
-Wiki ini tersedia dalam English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文; koreksi untuk halaman wiki juga sangat disambut.
+Wiki ini tersedia dalam 36 bahasa (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)); koreksi untuk halaman wiki juga sangat disambut.

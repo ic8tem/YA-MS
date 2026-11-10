@@ -6,7 +6,7 @@
 
 [![Эффективность - пояснение](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-3_3.png)
 
-Технический документ *«Come YA-MS calcola l'efficienza di uno sciame»* (Как YA-MS рассчитывает эффективность потока), показываемый в программе в виде светлой страницы. Он **шаг за шагом** объясняет, как получается эффективность, и для каждого шага указывает, **откуда он взят**. Сейчас документ существует **на итальянском языке**; эта вики излагает его содержание по-русски на страницах [Расчёт эффективности](Efficiency-Calculation-ru#модель) и [Геометрия и затухание](Geometry-and-Path-Loss-ru).
+Технический документ *«Come YA-MS calcola l'efficienza di uno sciame»* (Как YA-MS рассчитывает эффективность потока), показываемый в программе в виде светлой страницы. Он **шаг за шагом** объясняет, как получается эффективность, и для каждого шага указывает, **откуда он взят**. Программа показывает его **на языке интерфейса** (на всех 36 языках), как и руководство по расчётам; эта вики также излагает его содержание на страницах [Расчёт эффективности](Efficiency-Calculation-ru#модель) и [Геометрия и затухание](Geometry-and-Path-Loss-ru).
 
 ## Метки
 
@@ -46,6 +46,8 @@
 |---|---|
 | `data/efficienza_spiegazione.txt` | Текст, показываемый на вкладке, по одному блоку на строку (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Версия для Word |
-| `doc/YA-MS_manuale_calcoli.docx` | **Руководство по расчётам**: все уравнения (редактор формул Word), пронумерованные, с источниками |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Тот же документ на остальных 35 языках (например, `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **Руководство по расчётам** (на итальянском): все уравнения (редактор формул Word), пронумерованные, с источниками |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | Руководство по расчётам на остальных 35 языках |
 
-Оба документа пересоздаются из исходного кода командами `tools/build_spiegazione.py data` и `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Оба документа пересоздаются из исходного кода командами `tools/build_spiegazione.py data [code]` и `node tools/build_manuale.js <file.docx> [code]`. Переводы находятся в `tools/traduzioni_doc/` (`tools/build_documenti.sh` пересоздаёт все языки).

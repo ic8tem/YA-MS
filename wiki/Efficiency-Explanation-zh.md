@@ -6,7 +6,7 @@
 
 [![效率 - 说明](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-一份技术文档 *"Come YA-MS calcola l'efficienza di uno sciame"*（YA-MS 如何计算流星雨的效率），在程序内以浅色页面显示。它**逐步**说明效率是如何得出的，并对每一步说明其**出处**。该文档目前**只有意大利语版**；本 wiki 在[效率计算](Efficiency-Calculation-zh#模型)和[几何与路径损耗](Geometry-and-Path-Loss-zh)中给出了其内容的中文版本。
+一份技术文档 *"Come YA-MS calcola l'efficienza di uno sciame"*（YA-MS 如何计算流星雨的效率），在程序内以浅色页面显示。它**逐步**说明效率是如何得出的，并对每一步说明其**出处**。程序以**界面语言**（全部 36 种语言）显示该文档，计算手册也是如此；本 wiki 还在[效率计算](Efficiency-Calculation-zh#模型)和[几何与路径损耗](Geometry-and-Path-Loss-zh)中给出了其内容。
 
 ## 标签
 
@@ -46,6 +46,8 @@
 |---|---|
 | `data/efficienza_spiegazione.txt` | 选项卡中显示的文字，每行一个块（`TITLE`、`SUB`、`H1`、`H2`、`P`、`TAG|FONTE|…`、`TAG|RILIEVO|…`、`TAG|SCELTA|…`、`EQ`、`LI`、`SRC`） |
 | `data/efficienza_spiegazione.docx` | Word 版本 |
-| `doc/YA-MS_manuale_calcoli.docx` | **计算手册**：全部公式（Word 公式编辑器），带编号及出处 |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | 同一文档的其他 35 种语言版本（例如 `_en`, `_de`, `_pt-BR`） |
+| `doc/YA-MS_manuale_calcoli.docx` | **计算手册**（意大利语）：全部公式（Word 公式编辑器），带编号及出处 |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | 计算手册的其他 35 种语言版本 |
 
-这两份文档通过 `tools/build_spiegazione.py data` 和 `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` 从源代码重新生成。
+这两份文档通过 `tools/build_spiegazione.py data [code]` 和 `node tools/build_manuale.js <file.docx> [code]` 从源代码重新生成。 译文位于 `tools/traduzioni_doc/`（`tools/build_documenti.sh` 会重新生成所有语言）。

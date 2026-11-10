@@ -4,7 +4,7 @@
 
 *deur Costantino Cerrotta IC8TEM*
 
-**YA-MS** is 'n gratis program vir radioamateurs wat **meteor scatter (MS) op 50, 70, 144, 222 en 432 MHz** werk. Vir die werklike pad tussen jou lokator en dié van die DX-stasie bereken dit uur vir uur hoeveel elke aktiewe meteoorswerm die pad help (sy **doeltreffendheid**), van watter kant van die pad die refleksies kom (**Hot A / Hot B**), waarheen die antenna gerig moet word, en 'n eksperimentele voorspelling van die refleksies per uur, afgelei van 'n **regstreekse meteoorradar** (Collm, Duitsland). Dit loop op **Windows, Linux, Raspberry Pi en macOS** (.NET 8 + Avalonia), met 'n koppelvlak in 6 tale.
+**YA-MS** is 'n gratis program vir radioamateurs wat **meteor scatter (MS) op 50, 70, 144, 222 en 432 MHz** werk. Vir die werklike pad tussen jou lokator en dié van die DX-stasie bereken dit uur vir uur hoeveel elke aktiewe meteoorswerm die pad help (sy **doeltreffendheid**), van watter kant van die pad die refleksies kom (**Hot A / Hot B**), waarheen die antenna gerig moet word, en 'n eksperimentele voorspelling van die refleksies per uur, afgelei van 'n **regstreekse meteoorradar** (Collm, Duitsland). Dit loop op **Windows, Linux, Raspberry Pi en macOS** (.NET 8 + Avalonia), met 'n koppelvlak in 36 tale.
 
 Die hoofbron is die artikel deur **C. Cerrotta IC8TEM en G. Sartori IV3GTH**, *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (weergawe 7). Elke formule en elke gegewe in die program noem sy bron; sien [Bronne](Sources-af).
 

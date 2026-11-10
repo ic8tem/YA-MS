@@ -73,7 +73,7 @@ Program Apple tarafından imzalanmamıştır, bu yüzden macOS ilk seferde onay 
 
 - **Avrupa haritası** (Natural Earth kıyı çizgileri ve sınırları) ilk seferde otomatik olarak `data/mappa` klasörüne indirilir: bir kez internet bağlantısı gerekir.
 - **Radar verileri** (Collm, Sodankylä) hemen indirilir, sonra her 5 dakikada bir denetlenir.
-- Arayüz, mevcut 28 dilden biriyse sistem dilinizde, değilse İtalyanca açılır; sağ üstten değiştirin (bkz. [Ayarlar](Settings-and-Data-Folder-tr#dil)).
+- Arayüz, mevcut 36 dilden biriyse sistem dilinizde, değilse İtalyanca açılır; sağ üstten değiştirin (bkz. [Ayarlar](Settings-and-Data-Folder-tr#dil)).
 
 ## Güncelleme
 
@@ -87,6 +87,6 @@ Kurulum paketleri, `release` dalının her güncellenmesinde GitHub Actions (`.g
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # ya da linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Belgeler `tools/build_spiegazione.py data` ve `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` ile yeniden üretilir.
+Belgeler (tüm diller) `tools/build_documenti.sh` ile yeniden üretilir.
 
 Sonraki: [İlk adımlar](Getting-Started-tr).

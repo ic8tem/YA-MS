@@ -44,4 +44,4 @@ YA-MS は、実際の運用で使っている方々の報告によって改善�
 
 インストール先の `data/lingue` フォルダーにあるファイルを編集し、YA-MS を再起動 (または言語を切り替え) すると結果を確認できます。これらのファイルは**アップデートのたびに新しいバージョンで置き換えられる**ため、修正内容は e-mail または GitHub のプルリクエスト (`data/lingue/`) で**送ってください**。次のリリースに反映されます。
 
-この wiki は English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文で提供されています。wiki ページの修正も歓迎します。
+この wiki は 36 か国語 (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)) で提供されています。wiki ページの修正も歓迎します。

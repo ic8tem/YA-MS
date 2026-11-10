@@ -6,7 +6,7 @@
 
 [![দক্ষতা - ব্যাখ্যা](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-একটি প্রযুক্তিগত নথি, *"Come YA-MS calcola l'efficienza di uno sciame"* (YA-MS কীভাবে একটি উল্কাবৃষ্টির দক্ষতা হিসাব করে), প্রোগ্রামের ভেতরে একটি হালকা রঙের পাতা হিসেবে দেখানো হয়। এটি দক্ষতা কীভাবে পাওয়া যায় তা **ধাপে ধাপে** ব্যাখ্যা করে এবং প্রতিটি ধাপের জন্য জানায় **সেটি কোথা থেকে এসেছে**। নথিটি বর্তমানে **ইতালীয় ভাষায়**; এই উইকি এর বিষয়বস্তু বাংলায় দেয় [দক্ষতার হিসাব](Efficiency-Calculation-bn#মডেল) ও [জ্যামিতি ও পথ ক্ষয়](Geometry-and-Path-Loss-bn)-এ।
+একটি প্রযুক্তিগত নথি, *"Come YA-MS calcola l'efficienza di uno sciame"* (YA-MS কীভাবে একটি উল্কাবৃষ্টির দক্ষতা হিসাব করে), প্রোগ্রামের ভেতরে একটি হালকা রঙের পাতা হিসেবে দেখানো হয়। এটি দক্ষতা কীভাবে পাওয়া যায় তা **ধাপে ধাপে** ব্যাখ্যা করে এবং প্রতিটি ধাপের জন্য জানায় **সেটি কোথা থেকে এসেছে**। প্রোগ্রামটি এটি, হিসাবের ম্যানুয়ালের মতোই, **ইন্টারফেসের ভাষায়** (সব 36টি ভাষায়) দেখায়; এই উইকি এর বিষয়বস্তু [দক্ষতার হিসাব](Efficiency-Calculation-bn#মডেল) ও [জ্যামিতি ও পথ ক্ষয়](Geometry-and-Path-Loss-bn)-এও দেয়।
 
 ## লেবেল
 
@@ -46,6 +46,8 @@
 |---|---|
 | `data/efficienza_spiegazione.txt` | ট্যাবে দেখানো লেখা, প্রতি লাইনে একটি ব্লক (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Word সংস্করণ |
-| `doc/YA-MS_manuale_calcoli.docx` | **হিসাবের ম্যানুয়াল**: সব সমীকরণ (Word-এর সমীকরণ সম্পাদক), নম্বরসহ, তাদের উৎসসহ |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | একই নথি বাকি 35টি ভাষায় (যেমন `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **হিসাবের ম্যানুয়াল** (ইতালীয়): সব সমীকরণ (Word-এর সমীকরণ সম্পাদক), নম্বরসহ, তাদের উৎসসহ |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | হিসাবের ম্যানুয়াল বাকি 35টি ভাষায় |
 
-দুটি নথি সোর্স থেকে আবার তৈরি করা হয় `tools/build_spiegazione.py data` ও `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` দিয়ে।
+দুটি নথি সোর্স থেকে আবার তৈরি করা হয় `tools/build_spiegazione.py data [code]` ও `node tools/build_manuale.js <file.docx> [code]` দিয়ে। অনুবাদগুলো আছে `tools/traduzioni_doc/`-এ (`tools/build_documenti.sh` সব ভাষা আবার তৈরি করে)।

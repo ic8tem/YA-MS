@@ -6,7 +6,7 @@
 
 [![Efisiensi - penjelasan](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-Sebuah dokumen teknis, *"Come YA-MS calcola l'efficienza di uno sciame"* (Cara YA-MS menghitung efisiensi sebuah hujan meteor), yang ditampilkan di dalam program sebagai halaman terang. Dokumen ini menjelaskan **langkah demi langkah** bagaimana efisiensi diperoleh, dan untuk setiap langkah menyebutkan **asal-usulnya**. Saat ini dokumen tersebut **berbahasa Italia**; wiki ini menyajikan isinya dalam bahasa Indonesia di [Perhitungan efisiensi](Efficiency-Calculation-id#model) dan [Geometri dan redaman](Geometry-and-Path-Loss-id).
+Sebuah dokumen teknis, *"Come YA-MS calcola l'efficienza di uno sciame"* (Cara YA-MS menghitung efisiensi sebuah hujan meteor), yang ditampilkan di dalam program sebagai halaman terang. Dokumen ini menjelaskan **langkah demi langkah** bagaimana efisiensi diperoleh, dan untuk setiap langkah menyebutkan **asal-usulnya**. Program menampilkannya **dalam bahasa antarmuka** (ke-36 bahasa), demikian pula manual perhitungan; wiki ini juga menyajikan isinya di [Perhitungan efisiensi](Efficiency-Calculation-id#model) dan [Geometri dan redaman](Geometry-and-Path-Loss-id).
 
 ## Label
 
@@ -46,6 +46,8 @@ Setiap langkah membawa label berwarna:
 |---|---|
 | `data/efficienza_spiegazione.txt` | Teks yang ditampilkan di tab, satu blok per baris (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Versi Word |
-| `doc/YA-MS_manuale_calcoli.docx` | **Manual perhitungan**: semua persamaan (editor persamaan Word), bernomor, beserta sumbernya |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Dokumen yang sama dalam 35 bahasa lainnya (mis. `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **Manual perhitungan** (bahasa Italia): semua persamaan (editor persamaan Word), bernomor, beserta sumbernya |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | Manual perhitungan dalam 35 bahasa lainnya |
 
-Kedua dokumen dibuat ulang dari kode sumber dengan `tools/build_spiegazione.py data` dan `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Kedua dokumen dibuat ulang dari kode sumber dengan `tools/build_spiegazione.py data [code]` dan `node tools/build_manuale.js <file.docx> [code]`. Terjemahannya ada di `tools/traduzioni_doc/` (`tools/build_documenti.sh` membuat ulang semua bahasa).

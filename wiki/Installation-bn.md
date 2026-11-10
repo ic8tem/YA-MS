@@ -73,7 +73,7 @@ Linux-এর মতোই প্রক্রিয়া: `YA-MS-x.y.z-raspberry
 
 - **ইউরোপের মানচিত্র** (Natural Earth-এর উপকূলরেখা ও সীমানা) প্রথমবার স্বয়ংক্রিয়ভাবে `data/mappa`-তে ডাউনলোড হয়: একবার ইন্টারনেট সংযোগ দরকার।
 - **রাডারের তথ্য** (Collm, Sodankylä) সঙ্গে সঙ্গে ডাউনলোড হয়, তারপর প্রতি 5 মিনিটে পরীক্ষা করা হয়।
-- ইন্টারফেস আপনার সিস্টেমের ভাষায় শুরু হয় যদি সেটি 28টি উপলব্ধ ভাষার একটি হয়, নইলে ইতালীয় ভাষায়; ডান দিকের ওপরে পরিবর্তন করুন (দেখুন [সেটিংস](Settings-and-Data-Folder-bn#ভাষা))।
+- ইন্টারফেস আপনার সিস্টেমের ভাষায় শুরু হয় যদি সেটি 36টি উপলব্ধ ভাষার একটি হয়, নইলে ইতালীয় ভাষায়; ডান দিকের ওপরে পরিবর্তন করুন (দেখুন [সেটিংস](Settings-and-Data-Folder-bn#ভাষা))।
 
 ## হালনাগাদ
 
@@ -87,6 +87,6 @@ Linux-এর মতোই প্রক্রিয়া: `YA-MS-x.y.z-raspberry
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # অথবা linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-নথিগুলো আবার তৈরি করা হয় `tools/build_spiegazione.py data` ও `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` দিয়ে।
+নথিগুলো (সব ভাষায়) আবার তৈরি করা হয় `tools/build_documenti.sh` দিয়ে।
 
 পরবর্তী: [শুরু করা](Getting-Started-bn)।

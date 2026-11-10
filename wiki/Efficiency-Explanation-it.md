@@ -6,7 +6,7 @@
 
 [![Efficienza - spiegazione](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/it-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/it-3_3.png)
 
-Un documento tecnico, *"Come YA-MS calcola l'efficienza di uno sciame"*, mostrato all'interno del programma come una pagina chiara. Spiega **passo per passo** come si ottiene l'efficienza e dice per ogni passaggio **da dove viene**. Il documento è attualmente **in italiano**; questa wiki ne riassume il contenuto anche in [Calcolo dell'efficienza](Efficiency-Calculation-it#il-modello) e in [Geometria e attenuazione](Geometry-and-Path-Loss-it).
+Un documento tecnico, *"Come YA-MS calcola l'efficienza di uno sciame"*, mostrato all'interno del programma come una pagina chiara. Spiega **passo per passo** come si ottiene l'efficienza e dice per ogni passaggio **da dove viene**. Il programma lo mostra **nella lingua dell'interfaccia** (tutte le 36 lingue), come anche il manuale dei calcoli; questa wiki ne riassume il contenuto anche in [Calcolo dell'efficienza](Efficiency-Calculation-it#il-modello) e in [Geometria e attenuazione](Geometry-and-Path-Loss-it).
 
 ## Etichette
 
@@ -46,6 +46,8 @@ Ogni passaggio porta un'etichetta colorata:
 |---|---|
 | `data/efficienza_spiegazione.txt` | Il testo mostrato nella linguetta, un blocco per riga (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | La versione Word |
-| `doc/YA-MS_manuale_calcoli.docx` | Il **manuale dei calcoli**: tutte le equazioni (editor di equazioni di Word), numerate, con le loro fonti |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Lo stesso documento nelle altre 35 lingue (per esempio `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | Il **manuale dei calcoli** (in italiano): tutte le equazioni (editor di equazioni di Word), numerate, con le loro fonti |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | Il manuale dei calcoli nelle altre 35 lingue |
 
-I due documenti si rigenerano dal sorgente con `tools/build_spiegazione.py data` e `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+I due documenti si rigenerano dal sorgente con `tools/build_spiegazione.py data [code]` e `node tools/build_manuale.js <file.docx> [code]`. Le traduzioni sono in `tools/traduzioni_doc/` (`tools/build_documenti.sh` ricostruisce tutte le lingue).

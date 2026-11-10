@@ -6,7 +6,7 @@
 
 [![Eficiência - explicação](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-Um documento técnico, *"Come YA-MS calcola l'efficienza di uno sciame"* (Como o YA-MS calcula a eficiência de uma chuva), mostrado dentro do programa como uma página clara. Explica **passo a passo** como se obtém a eficiência e indica, para cada passo, **de onde vem**. Por agora o documento está **em italiano**; esta wiki apresenta o seu conteúdo em português em [Cálculo da eficiência](Efficiency-Calculation-pt#o-modelo) e [Geometria e atenuação](Geometry-and-Path-Loss-pt).
+Um documento técnico, *"Come YA-MS calcola l'efficienza di uno sciame"* (Como o YA-MS calcula a eficiência de uma chuva), mostrado dentro do programa como uma página clara. Explica **passo a passo** como se obtém a eficiência e indica, para cada passo, **de onde vem**. O programa mostra-o **no idioma da interface** (todos os 36 idiomas), tal como o manual de cálculo; esta wiki apresenta também o seu conteúdo em [Cálculo da eficiência](Efficiency-Calculation-pt#o-modelo) e [Geometria e atenuação](Geometry-and-Path-Loss-pt).
 
 ## Etiquetas
 
@@ -46,6 +46,8 @@ Cada passo tem uma etiqueta colorida:
 |---|---|
 | `data/efficienza_spiegazione.txt` | O texto mostrado no separador, um bloco por linha (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | A versão Word |
-| `doc/YA-MS_manuale_calcoli.docx` | O **manual de cálculo**: todas as equações (editor de equações do Word), numeradas, com as suas fontes |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | O mesmo documento nos outros 35 idiomas (p. ex. `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | O **manual de cálculo** (italiano): todas as equações (editor de equações do Word), numeradas, com as suas fontes |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | O manual de cálculo nos outros 35 idiomas |
 
-Os dois documentos são regenerados a partir do código-fonte com `tools/build_spiegazione.py data` e `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Os dois documentos são regenerados a partir do código-fonte com `tools/build_spiegazione.py data [code]` e `node tools/build_manuale.js <file.docx> [code]`. As traduções estão em `tools/traduzioni_doc/` (`tools/build_documenti.sh` regenera todos os idiomas).

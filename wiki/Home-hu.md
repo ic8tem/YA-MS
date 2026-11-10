@@ -4,7 +4,7 @@
 
 *Szerző: Costantino Cerrotta IC8TEM*
 
-A **YA-MS** ingyenes program azoknak a rádióamatőröknek, akik **meteorszórásos (MS) összeköttetéseket létesítenek az 50, 70, 144, 222 és 432 MHz-es sávokban**. Az Ön lokátora és a DX-állomás lokátora közötti valós útvonalra óránként kiszámítja, mennyit segít az útvonalon az egyes aktív meteorrajok (ez a **hatékonyság**), az útvonal melyik oldaláról érkeznek a reflexiók (**Hot A / Hot B**), merre kell fordítani az antennát, valamint egy **élő meteorradarból** (Collm, Németország) származtatott kísérleti előrejelzést ad az óránkénti reflexiók számára. Fut **Windows, Linux, Raspberry Pi és macOS** rendszeren (.NET 8 + Avalonia), 6 felületi nyelven.
+A **YA-MS** ingyenes program azoknak a rádióamatőröknek, akik **meteorszórásos (MS) összeköttetéseket létesítenek az 50, 70, 144, 222 és 432 MHz-es sávokban**. Az Ön lokátora és a DX-állomás lokátora közötti valós útvonalra óránként kiszámítja, mennyit segít az útvonalon az egyes aktív meteorrajok (ez a **hatékonyság**), az útvonal melyik oldaláról érkeznek a reflexiók (**Hot A / Hot B**), merre kell fordítani az antennát, valamint egy **élő meteorradarból** (Collm, Németország) származtatott kísérleti előrejelzést ad az óránkénti reflexiók számára. Fut **Windows, Linux, Raspberry Pi és macOS** rendszeren (.NET 8 + Avalonia), 36 felületi nyelven.
 
 A fő forrás **C. Cerrotta IC8TEM és G. Sartori IV3GTH** cikke: *„METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese”* (Meteorszórás – avagy hogyan érjük el Európát VHF-en egész évben, különösebb igények nélkül; 7. változat). A programban minden képlet és adat megjelöli a forrását; lásd: [Források](Sources-hu).
 

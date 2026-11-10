@@ -44,4 +44,4 @@ YA-MS совершенствуется благодаря сообщениям �
 
 Отредактируйте файл в папке `data/lingue` вашей установки и перезапустите YA-MS (или переключите язык), чтобы увидеть результат. Поскольку эти файлы **заменяются более новыми при каждом обновлении**, пожалуйста, также **присылайте свои исправления** – по e-mail или в виде pull request на GitHub (`data/lingue/`), – чтобы они вошли в следующий выпуск.
 
-Эта вики существует на English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文; исправления страниц вики также приветствуются.
+Эта вики существует на 36 языках (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)); исправления страниц вики также приветствуются.

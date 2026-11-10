@@ -44,4 +44,4 @@ Gränssnittets översättningar är vanliga textfiler i **`data/lingue/<code>.tx
 
 Redigera filen i mappen `data/lingue` i din installation och starta om YA-MS (eller byt språk) för att se resultatet. Eftersom dessa filer **ersätts av nyare versioner vid varje uppdatering**, **skicka också dina rättelser** – via e-post eller som en pull request på GitHub (`data/lingue/`) – så att de kommer med i nästa release.
 
-Den här wikin finns på English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文; rättelser till wikisidorna är också välkomna.
+Den här wikin finns på 36 språk (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)); rättelser till wikisidorna är också välkomna.

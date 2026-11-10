@@ -16,7 +16,7 @@ Changer de langue ou de thème enregistre les réglages et **reconstruit la fen�
 
 ## Langue
 
-28 langues d'interface, les mêmes que YAEC et E-LAYER ANALYZER (les termes communs avec YAEC sont traduits de la même façon) :
+36 langues d'interface, les mêmes que YAEC et E-LAYER ANALYZER (les termes communs avec YAEC sont traduits de la même façon) :
 
 | Langue | Code | Fichier |
 |---|---|---|
@@ -25,7 +25,8 @@ Changer de langue ou de thème enregistre les réglages et **reconstruit la fen�
 | Deutsch | `de` | `data/lingue/de.txt` |
 | Français | `fr` | `data/lingue/fr.txt` |
 | Español | `es` | `data/lingue/es.txt` |
-| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Portugal) | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-BR` | `data/lingue/pt-BR.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
 | Svenska | `sv` | `data/lingue/sv.txt` |
 | Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
@@ -34,6 +35,11 @@ Changer de langue ou de thème enregistre les réglages et **reconstruit la fen�
 | Eesti | `et` | `data/lingue/et.txt` |
 | Latviešu | `lv` | `data/lingue/lv.txt` |
 | Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
 | Русский | `ru` | `data/lingue/ru.txt` |
 | Українська | `uk` | `data/lingue/uk.txt` |
 | Türkçe | `tr` | `data/lingue/tr.txt` |
@@ -43,15 +49,17 @@ Changer de langue ou de thème enregistre les réglages et **reconstruit la fen�
 | اردو | `ur` | `data/lingue/ur.txt` |
 | हिन्दी | `hi` | `data/lingue/hi.txt` |
 | বাংলা | `bn` | `data/lingue/bn.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
 | Bahasa Indonesia | `id` | `data/lingue/id.txt` |
 | Tagalog | `tl` | `data/lingue/tl.txt` |
 | 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-TW` | `data/lingue/zh-TW.txt` |
 | 日本語 | `ja` | `data/lingue/ja.txt` |
 | 한국어 | `ko` | `data/lingue/ko.txt` |
 
 Au premier démarrage, YA-MS utilise la **langue du système** si c'est l'une d'elles, sinon l'italien. Les nombres et les dates suivent la langue choisie (par ex. point décimal en anglais, virgule en italien et en allemand). Tout texte absent d'un fichier de traduction s'affiche en italien. Sous Linux, le chinois, le japonais, le coréen, l'arabe, l'hébreu, l'ourdou, le hindi et le bengali nécessitent des polices adaptées (par ex. les familles Noto) : voir [Dépannage](Troubleshooting-FAQ-fr#sous-linux-le-texte-japonais-saffiche-en-carrés).
 
-Le document [Efficacité - explication](Efficiency-Explanation-fr) et le manuel de calcul sont en italien.
+Le document [Efficacité - explication](Efficiency-Explanation-fr) suit la langue de l'interface ; le manuel de calcul se trouve dans `doc/` (italien) et `doc/manuali/` (les 35 autres langues).
 
 ## Schémas de couleurs
 
@@ -122,7 +130,7 @@ Texte brut, une ligne `clé=valeur` par réglage (les lignes commençant par `#`
 | `elevazione_lobo_gradi` | 0 | Élévation du lobe (°) |
 | `boom_m` | 4.6 | Longueur du boom de la Yagi (m) |
 | `hot_spot_km` | 150 | Distance de Hot A / Hot B au point milieu (30–400 km) |
-| `lingua` | système / `it` | Code de langue (l'un des 28 codes ci-dessus, par ex. `it`, `en`, `de`) |
+| `lingua` | système / `it` | Code de langue (l'un des 36 codes ci-dessus, par ex. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Schéma de couleurs : `chiaro` (Clair), `scuro` (Nuit), `nero` (Noir), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Traînée météorique) |
 | `carattere_pct` | 100 | Taille de police (100–300 %) |
 | `comandi_visibili` | 1 | 1 = rangées de commandes affichées, 0 = repliées |

@@ -44,4 +44,4 @@ A felület fordításai egyszerű szövegfájlok a **`data/lingue/<code>.txt`** 
 
 Szerkessze a fájlt a telepítés `data/lingue` mappájában, és az eredmény megtekintéséhez indítsa újra a YA-MS-t (vagy váltson nyelvet). Mivel ezeket a fájlokat **minden frissítéskor felülírják az újabb változatok**, kérjük, **küldje el javításait** is – e-mailben vagy pull requestként a GitHubon (`data/lingue/`) –, hogy bekerüljenek a következő kiadásba.
 
-Ez a wiki 28 nyelven érhető el (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文); a wikioldalak javítását is szívesen fogadjuk.
+Ez a wiki 36 nyelven érhető el (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)); a wikioldalak javítását is szívesen fogadjuk.

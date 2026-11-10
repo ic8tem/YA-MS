@@ -6,7 +6,7 @@
 
 [![Efficiëntie - uitleg](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-3_3.png)
 
-Een technisch document, *"Come YA-MS calcola l'efficienza di uno sciame"* (Hoe YA-MS de efficiëntie van een zwerm berekent), dat in het programma als een lichte pagina wordt getoond. Het legt **stap voor stap** uit hoe de efficiëntie tot stand komt, en vermeldt bij elke stap **waar die vandaan komt**. Het document is momenteel **in het Italiaans**; dit wiki geeft de inhoud in het Nederlands in [Efficiëntieberekening](Efficiency-Calculation-nl#het-model) en [Geometrie en demping](Geometry-and-Path-Loss-nl).
+Een technisch document, *"Come YA-MS calcola l'efficienza di uno sciame"* (Hoe YA-MS de efficiëntie van een zwerm berekent), dat in het programma als een lichte pagina wordt getoond. Het legt **stap voor stap** uit hoe de efficiëntie tot stand komt, en vermeldt bij elke stap **waar die vandaan komt**. Het programma toont het **in de taal van de interface** (alle 36 talen), net als de rekenhandleiding; dit wiki geeft de inhoud ook in [Efficiëntieberekening](Efficiency-Calculation-nl#het-model) en [Geometrie en demping](Geometry-and-Path-Loss-nl).
 
 ## Labels
 
@@ -46,6 +46,8 @@ Elke stap heeft een gekleurd label:
 |---|---|
 | `data/efficienza_spiegazione.txt` | De tekst die in het tabblad wordt getoond, één blok per regel (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | De Word-versie |
-| `doc/YA-MS_manuale_calcoli.docx` | De **rekenhandleiding**: alle vergelijkingen (vergelijkingseditor van Word), genummerd, met hun bronnen |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Hetzelfde document in de andere 35 talen (bijv. `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | De **rekenhandleiding** (Italiaans): alle vergelijkingen (vergelijkingseditor van Word), genummerd, met hun bronnen |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | De rekenhandleiding in de andere 35 talen |
 
-De twee documenten worden opnieuw gegenereerd vanuit de broncode met `tools/build_spiegazione.py data` en `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+De twee documenten worden opnieuw gegenereerd vanuit de broncode met `tools/build_spiegazione.py data [code]` en `node tools/build_manuale.js <file.docx> [code]`. De vertalingen staan in `tools/traduzioni_doc/` (`tools/build_documenti.sh` bouwt alle talen opnieuw op).

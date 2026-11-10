@@ -73,7 +73,7 @@ Program tidak ditandatangani oleh Apple, sehingga pada kali pertama macOS memint
 
 - **Peta Eropa** (garis pantai dan perbatasan Natural Earth) diunduh otomatis ke `data/mappa` pada kali pertama: koneksi internet diperlukan sekali.
 - **Data radar** (Collm, Sodankylä) langsung diunduh, lalu diperiksa setiap 5 menit.
-- Antarmuka dimulai dalam bahasa sistem Anda jika termasuk salah satu dari 28 bahasa yang tersedia, jika tidak dalam bahasa Italia; ubah di kanan atas (lihat [Pengaturan](Settings-and-Data-Folder-id#bahasa)).
+- Antarmuka dimulai dalam bahasa sistem Anda jika termasuk salah satu dari 36 bahasa yang tersedia, jika tidak dalam bahasa Italia; ubah di kanan atas (lihat [Pengaturan](Settings-and-Data-Folder-id#bahasa)).
 
 ## Pembaruan
 
@@ -87,6 +87,6 @@ Installer dibuat oleh GitHub Actions (`.github/workflows/build.yml`) setiap kali
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # atau linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Dokumen-dokumen dibuat ulang dengan `tools/build_spiegazione.py data` dan `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Dokumen-dokumen (semua bahasa) dibuat ulang dengan `tools/build_documenti.sh`.
 
 Berikutnya: [Memulai](Getting-Started-id).

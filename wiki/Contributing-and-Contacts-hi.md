@@ -44,4 +44,4 @@ YA-MS उन लोगों की रिपोर्टों से बेह
 
 अपने इंस्टॉलेशन के `data/lingue` फ़ोल्डर में फ़ाइल संपादित करें और परिणाम देखने के लिए YA-MS फिर से शुरू करें (या भाषा बदलें)। चूँकि ये फ़ाइलें **हर अपडेट पर नए संस्करणों से बदल दी जाती हैं**, कृपया **अपने सुधार भेजें** भी – ई-मेल से या GitHub पर pull request के रूप में (`data/lingue/`) – ताकि वे अगली रिलीज़ में शामिल हों।
 
-यह विकि English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文 में उपलब्ध है; विकि पेजों के सुधारों का भी स्वागत है।
+यह विकि 36 भाषाओं (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)) में उपलब्ध है; विकि पेजों के सुधारों का भी स्वागत है।

@@ -44,4 +44,4 @@ YA-MS는 실제 운용에서 사용하는 분들의 보고를 통해 발전합�
 
 설치 폴더의 `data/lingue`에 있는 파일을 편집하고 YA-MS를 다시 시작(또는 언어를 전환)하면 결과를 볼 수 있습니다. 이 파일들은 **업데이트할 때마다 새 버전으로 교체되므로**, 수정 사항을 이메일이나 GitHub pull request(`data/lingue/`)로 **보내 주시면** 다음 릴리스에 반영됩니다.
 
-이 위키는 English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文로 제공되며, 위키 페이지에 대한 수정도 환영합니다.
+이 위키는 36개 언어(English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體))로 제공되며, 위키 페이지에 대한 수정도 환영합니다.

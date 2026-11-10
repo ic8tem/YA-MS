@@ -44,4 +44,4 @@ YA-MS พัฒนาขึ้นได้จากรายงานของ�
 
 แก้ไขไฟล์ในโฟลเดอร์ `data/lingue` ของการติดตั้งของคุณ แล้วเริ่ม YA-MS ใหม่ (หรือสลับภาษา) เพื่อดูผลลัพธ์ เนื่องจากไฟล์เหล่านี้ **จะถูกแทนที่ด้วยเวอร์ชันที่ใหม่กว่าทุกครั้งที่อัปเดต** โปรด **ส่งการแก้ไขของคุณ** มาด้วย – ทางอีเมลหรือเป็น pull request บน GitHub (`data/lingue/`) – เพื่อให้รวมอยู่ในรีลีสถัดไป
 
-วิกินี้มีให้บริการใน 28 ภาษา (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文) ยินดีรับการแก้ไขหน้าวิกิเช่นกัน
+วิกินี้มีให้บริการใน 36 ภาษา (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)) ยินดีรับการแก้ไขหน้าวิกิเช่นกัน

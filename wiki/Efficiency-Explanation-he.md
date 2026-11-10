@@ -6,7 +6,7 @@
 
 [![יעילות - הסבר](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-מסמך טכני, *"Come YA-MS calcola l'efficienza di uno sciame"* (איך YA-MS מחשבת את היעילות של מטר), המוצג בתוך התוכנה כדף בהיר. הוא מסביר **צעד אחר צעד** כיצד מתקבלת היעילות, ומציין לכל צעד **מאין הוא בא**. המסמך כרגע **באיטלקית**; ויקי זו מביאה את תוכנו בעברית ב[חישוב היעילות](Efficiency-Calculation-he#המודל) וב[גאומטריה והנחתה](Geometry-and-Path-Loss-he).
+מסמך טכני, *"Come YA-MS calcola l'efficienza di uno sciame"* (איך YA-MS מחשבת את היעילות של מטר), המוצג בתוך התוכנה כדף בהיר. הוא מסביר **צעד אחר צעד** כיצד מתקבלת היעילות, ומציין לכל צעד **מאין הוא בא**. התוכנה מציגה אותו **בשפת הממשק** (בכל 36 השפות), וכך גם את מדריך החישובים; ויקי זו מביאה את תוכנו גם ב[חישוב היעילות](Efficiency-Calculation-he#המודל) וב[גאומטריה והנחתה](Geometry-and-Path-Loss-he).
 
 ## תוויות
 
@@ -46,6 +46,8 @@
 |---|---|
 | `data/efficienza_spiegazione.txt` | הטקסט המוצג בלשונית, בלוק אחד לכל שורה (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | גרסת ה-Word |
-| `doc/YA-MS_manuale_calcoli.docx` | **מדריך החישובים**: כל המשוואות (עורך המשוואות של Word), ממוספרות, עם מקורותיהן |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | אותו מסמך ב-35 השפות האחרות (למשל `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **מדריך החישובים** (איטלקית): כל המשוואות (עורך המשוואות של Word), ממוספרות, עם מקורותיהן |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | מדריך החישובים ב-35 השפות האחרות |
 
-שני המסמכים נוצרים מחדש מהמקור עם `tools/build_spiegazione.py data` ו-`node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+שני המסמכים נוצרים מחדש מהמקור עם `tools/build_spiegazione.py data [code]` ו-`node tools/build_manuale.js <file.docx> [code]`. התרגומים נמצאים ב-`tools/traduzioni_doc/` (`tools/build_documenti.sh` בונה מחדש את כל השפות).

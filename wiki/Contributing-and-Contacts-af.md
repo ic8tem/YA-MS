@@ -44,4 +44,4 @@ Die koppelvlakvertalings is gewone tekslêers in **`data/lingue/<code>.txt`** (U
 
 Wysig die lêer in die `data/lingue`-gids van jou installasie en begin YA-MS weer (of verander die taal) om die resultaat te sien. Omdat hierdie lêers **by elke bywerking deur nuwer weergawes vervang word**, **stuur asseblief ook jou korreksies** – per e-pos of as 'n pull request op GitHub (`data/lingue/`) – sodat hulle in die volgende vrystelling opgeneem word.
 
-Hierdie wiki bestaan in English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文; korreksies op die wikibladsye is ook welkom.
+Hierdie wiki bestaan in 36 tale (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)); korreksies op die wikibladsye is ook welkom.

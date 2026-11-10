@@ -44,4 +44,4 @@ YA-MS удосконалюється завдяки повідомленням �
 
 Відредагуйте файл у теці `data/lingue` вашої інсталяції й перезапустіть YA-MS (або перемкніть мову), щоб побачити результат. Оскільки ці файли **замінюються новішими під час кожного оновлення**, будь ласка, також **надішліть свої виправлення** — електронною поштою або як pull request на GitHub (`data/lingue/`), — щоб вони потрапили до наступного релізу.
 
-Ця вікі існує English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文 мовами; виправлення сторінок вікі також вітаються.
+Ця вікі існує 36 мовами (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)); виправлення сторінок вікі також вітаються.

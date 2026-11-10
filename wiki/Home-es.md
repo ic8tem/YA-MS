@@ -4,7 +4,7 @@
 
 *a cargo de Costantino Cerrotta IC8TEM*
 
-**YA-MS** es un programa gratuito para radioaficionados que trabajan en **meteor scatter (MS) en 50, 70, 144, 222 y 432 MHz**. Para el trayecto real entre tu locator y el del corresponsal calcula, hora por hora, cuánto ayuda cada lluvia de meteoros activa a ese trayecto (su **eficiencia**), de qué lado del trayecto llegan las reflexiones (**Hot A / Hot B**), hacia dónde apuntar la antena y una previsión experimental de las reflexiones por hora obtenida de un **radar meteórico en directo** (Collm, Alemania). Funciona en **Windows, Linux, Raspberry Pi y macOS** (.NET 8 + Avalonia), con 6 idiomas de interfaz.
+**YA-MS** es un programa gratuito para radioaficionados que trabajan en **meteor scatter (MS) en 50, 70, 144, 222 y 432 MHz**. Para el trayecto real entre tu locator y el del corresponsal calcula, hora por hora, cuánto ayuda cada lluvia de meteoros activa a ese trayecto (su **eficiencia**), de qué lado del trayecto llegan las reflexiones (**Hot A / Hot B**), hacia dónde apuntar la antena y una previsión experimental de las reflexiones por hora obtenida de un **radar meteórico en directo** (Collm, Alemania). Funciona en **Windows, Linux, Raspberry Pi y macOS** (.NET 8 + Avalonia), con 36 idiomas de interfaz.
 
 La fuente principal es el artículo de **C. Cerrotta IC8TEM y G. Sartori IV3GTH**, *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (versión 7). Cada fórmula y cada dato del programa cita su fuente; ver [Fuentes](Sources-es).
 

@@ -16,7 +16,7 @@ När du byter språk eller tema sparas inställningarna och **fönstret byggs om
 
 ## Språk
 
-28 gränssnittsspråk, samma som i YAEC och E-LAYER ANALYZER (termer som är gemensamma med YAEC översätts på samma sätt):
+36 gränssnittsspråk, samma som i YAEC och E-LAYER ANALYZER (termer som är gemensamma med YAEC översätts på samma sätt):
 
 | Språk | Kod | Fil |
 |---|---|---|
@@ -25,7 +25,8 @@ När du byter språk eller tema sparas inställningarna och **fönstret byggs om
 | Deutsch | `de` | `data/lingue/de.txt` |
 | Français | `fr` | `data/lingue/fr.txt` |
 | Español | `es` | `data/lingue/es.txt` |
-| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Portugal) | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-BR` | `data/lingue/pt-BR.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
 | Svenska | `sv` | `data/lingue/sv.txt` |
 | Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
@@ -34,6 +35,11 @@ När du byter språk eller tema sparas inställningarna och **fönstret byggs om
 | Eesti | `et` | `data/lingue/et.txt` |
 | Latviešu | `lv` | `data/lingue/lv.txt` |
 | Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
 | Русский | `ru` | `data/lingue/ru.txt` |
 | Українська | `uk` | `data/lingue/uk.txt` |
 | Türkçe | `tr` | `data/lingue/tr.txt` |
@@ -43,15 +49,17 @@ När du byter språk eller tema sparas inställningarna och **fönstret byggs om
 | اردو | `ur` | `data/lingue/ur.txt` |
 | हिन्दी | `hi` | `data/lingue/hi.txt` |
 | বাংলা | `bn` | `data/lingue/bn.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
 | Bahasa Indonesia | `id` | `data/lingue/id.txt` |
 | Tagalog | `tl` | `data/lingue/tl.txt` |
 | 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-TW` | `data/lingue/zh-TW.txt` |
 | 日本語 | `ja` | `data/lingue/ja.txt` |
 | 한국어 | `ko` | `data/lingue/ko.txt` |
 
 Vid första starten använder YA-MS **systemets språk** om det är ett av dessa, annars italienska. Tal och datum följer det valda språket (t.ex. decimalpunkt på engelska, decimalkomma på italienska och tyska). Text som saknas i en översättningsfil visas på italienska. På Linux behöver kinesiska, japanska, koreanska, arabiska, hebreiska, urdu, hindi och bengali lämpliga typsnitt (t.ex. Noto-familjerna): se [Felsökning](Troubleshooting-FAQ-sv#linux-japansk-text-visas-som-rutor).
 
-Dokumentet [Effektivitet - förklaring](Efficiency-Explanation-sv) och beräkningshandboken är på italienska.
+Dokumentet [Effektivitet - förklaring](Efficiency-Explanation-sv) följer gränssnittets språk; beräkningshandboken finns i `doc/` (italienska) och `doc/manuali/` (de övriga 35 språken).
 
 ## Färgscheman
 
@@ -122,7 +130,7 @@ Vanlig text, en `nyckel=värde` per rad (rader som börjar med `#` eller `;` är
 | `elevazione_lobo_gradi` | 0 | Lobelevation (°) |
 | `boom_m` | 4.6 | Yagins bomlängd (m) |
 | `hot_spot_km` | 150 | Avstånd från mittpunkten till Hot A / Hot B (30–400 km) |
-| `lingua` | system / `it` | Språkkod (en av de 28 koderna ovan, t.ex. `it`, `en`, `de`) |
+| `lingua` | system / `it` | Språkkod (en av de 36 koderna ovan, t.ex. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Färgschema: `chiaro` (Ljust), `scuro` (Natt), `nero` (Svart), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteorspår) |
 | `carattere_pct` | 100 | Typsnittets storlek (100–300 %) |
 | `comandi_visibili` | 1 | 1 = raderna med reglage visas, 0 = hopfällda |

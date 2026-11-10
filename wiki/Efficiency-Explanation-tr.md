@@ -6,7 +6,7 @@
 
 [![Verim - açıklama](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-Program içinde açık renkli bir sayfa olarak gösterilen teknik bir belge: *"Come YA-MS calcola l'efficienza di uno sciame"* (YA-MS bir yağmurun verimini nasıl hesaplar). Verimin nasıl elde edildiğini **adım adım** açıklar ve her adım için **nereden geldiğini** belirtir. Belge şu anda **İtalyancadır**; bu wiki içeriğini Türkçe olarak [Verim hesabı](Efficiency-Calculation-tr#model) ve [Geometri ve yol kaybı](Geometry-and-Path-Loss-tr) sayfalarında verir.
+Program içinde açık renkli bir sayfa olarak gösterilen teknik bir belge: *"Come YA-MS calcola l'efficienza di uno sciame"* (YA-MS bir yağmurun verimini nasıl hesaplar). Verimin nasıl elde edildiğini **adım adım** açıklar ve her adım için **nereden geldiğini** belirtir. Program onu, hesap kılavuzu gibi, **arayüz dilinde** (36 dilin tümünde) gösterir; bu wiki içeriğini ayrıca [Verim hesabı](Efficiency-Calculation-tr#model) ve [Geometri ve yol kaybı](Geometry-and-Path-Loss-tr) sayfalarında verir.
 
 ## Etiketler
 
@@ -46,6 +46,8 @@ Her adım renkli bir etiket taşır:
 |---|---|
 | `data/efficienza_spiegazione.txt` | Sekmede gösterilen metin, her satırda bir blok (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Word sürümü |
-| `doc/YA-MS_manuale_calcoli.docx` | **Hesap kılavuzu**: tüm denklemler (Word denklem düzenleyicisi), numaralı, kaynaklarıyla |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Aynı belge diğer 35 dilde (ör. `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **Hesap kılavuzu** (İtalyanca): tüm denklemler (Word denklem düzenleyicisi), numaralı, kaynaklarıyla |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | Diğer 35 dilde hesap kılavuzu |
 
-İki belge kaynak koddan `tools/build_spiegazione.py data` ve `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` ile yeniden üretilir.
+İki belge kaynak koddan `tools/build_spiegazione.py data [code]` ve `node tools/build_manuale.js <file.docx> [code]` ile yeniden üretilir. Çeviriler `tools/traduzioni_doc/` klasöründedir (`tools/build_documenti.sh` tüm dilleri yeniden üretir).

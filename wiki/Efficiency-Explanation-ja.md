@@ -6,7 +6,7 @@
 
 [![効率 - 解説](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3_3.png)
 
-技術文書 *"Come YA-MS calcola l'efficienza di uno sciame"* (YA-MS は流星群の効率をどう計算するか) を、プログラム内に明るいページとして表示します。効率がどのように求められるかを**順を追って**説明し、各手順が**何に基づくか**を示しています。この文書は現在**イタリア語**です。この wiki では、その内容を [効率の計算](Efficiency-Calculation-ja#モデル) と [幾何と損失](Geometry-and-Path-Loss-ja) で日本語で紹介しています。
+技術文書 *"Come YA-MS calcola l'efficienza di uno sciame"* (YA-MS は流星群の効率をどう計算するか) を、プログラム内に明るいページとして表示します。効率がどのように求められるかを**順を追って**説明し、各手順が**何に基づくか**を示しています。プログラムは計算マニュアルと同様に、この文書を**表示言語で** (全 36 言語) 表示します。この wiki でも、その内容を [効率の計算](Efficiency-Calculation-ja#モデル) と [幾何と損失](Geometry-and-Path-Loss-ja) で紹介しています。
 
 ## ラベル
 
@@ -46,6 +46,8 @@
 |---|---|
 | `data/efficienza_spiegazione.txt` | タブに表示されるテキスト。1 行に 1 ブロック (`TITLE`、`SUB`、`H1`、`H2`、`P`、`TAG|FONTE|…`、`TAG|RILIEVO|…`、`TAG|SCELTA|…`、`EQ`、`LI`、`SRC`) |
 | `data/efficienza_spiegazione.docx` | Word 版 |
-| `doc/YA-MS_manuale_calcoli.docx` | **計算マニュアル**: すべての式 (Word の数式エディター) に番号と出典付き |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | 同じ文書のその他の 35 言語版 (例: `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **計算マニュアル** (イタリア語): すべての式 (Word の数式エディター) に番号と出典付き |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | 計算マニュアルのその他の 35 言語版 |
 
-2 つの文書は `tools/build_spiegazione.py data` と `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` でソースから再生成します。
+2 つの文書は `tools/build_spiegazione.py data [code]` と `node tools/build_manuale.js <file.docx> [code]` でソースから再生成します。 翻訳は `tools/traduzioni_doc/` にあります (`tools/build_documenti.sh` で全言語を再生成します)。

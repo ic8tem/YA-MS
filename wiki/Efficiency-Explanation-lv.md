@@ -6,7 +6,7 @@
 
 [![Efektivitāte - skaidrojums](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-Tehnisks dokuments *"Come YA-MS calcola l'efficienza di uno sciame"* (Kā YA-MS aprēķina plūsmas efektivitāti), kas programmā parādīts kā gaiša lapa. Tas **soli pa solim** izskaidro, kā tiek iegūta efektivitāte, un katram solim norāda, **no kurienes tas nāk**. Dokuments pašlaik ir **itāļu valodā**; šī wiki tā saturu latviski sniedz lapās [Efektivitātes aprēķins](Efficiency-Calculation-lv#modelis) un [Ģeometrija un vājinājums](Geometry-and-Path-Loss-lv).
+Tehnisks dokuments *"Come YA-MS calcola l'efficienza di uno sciame"* (Kā YA-MS aprēķina plūsmas efektivitāti), kas programmā parādīts kā gaiša lapa. Tas **soli pa solim** izskaidro, kā tiek iegūta efektivitāte, un katram solim norāda, **no kurienes tas nāk**. Programma to rāda **saskarnes valodā** (visās 36 valodās), tāpat kā aprēķinu rokasgrāmatu; šī wiki tā saturu sniedz arī lapās [Efektivitātes aprēķins](Efficiency-Calculation-lv#modelis) un [Ģeometrija un vājinājums](Geometry-and-Path-Loss-lv).
 
 ## Etiķetes
 
@@ -46,6 +46,8 @@ Katram solim ir krāsaina etiķete:
 |---|---|
 | `data/efficienza_spiegazione.txt` | Cilnē rādītais teksts, viens bloks rindā (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Word versija |
-| `doc/YA-MS_manuale_calcoli.docx` | **Aprēķinu rokasgrāmata**: visi vienādojumi (Word vienādojumu redaktors), numurēti, ar avotiem |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Tas pats dokuments pārējās 35 valodās (piem., `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **Aprēķinu rokasgrāmata** (itāļu valodā): visi vienādojumi (Word vienādojumu redaktors), numurēti, ar avotiem |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | Aprēķinu rokasgrāmata pārējās 35 valodās |
 
-Abus dokumentus no pirmkoda ģenerē no jauna ar `tools/build_spiegazione.py data` un `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Abus dokumentus no pirmkoda ģenerē no jauna ar `tools/build_spiegazione.py data [code]` un `node tools/build_manuale.js <file.docx> [code]`. Tulkojumi atrodas mapē `tools/traduzioni_doc/` (`tools/build_documenti.sh` no jauna ģenerē visas valodas).

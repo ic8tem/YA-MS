@@ -73,7 +73,7 @@ Programm ei ole Apple'i poolt allkirjastatud, seega küsib macOS esimesel korral
 
 - **Euroopa kaart** (Natural Earthi rannajooned ja piirid) laaditakse esimesel korral automaatselt alla kausta `data/mappa`: internetiühendust on vaja üks kord.
 - **Radariandmed** (Collm, Sodankylä) laaditakse kohe alla ja seejärel kontrollitakse neid iga 5 minuti järel.
-- Kasutajaliides käivitub sinu süsteemi keeles, kui see on üks 28-st saadaolevast, muidu itaalia keeles; keelt saab muuta paremal üleval (vt [Seaded](Settings-and-Data-Folder-et#keel)).
+- Kasutajaliides käivitub sinu süsteemi keeles, kui see on üks 36-st saadaolevast, muidu itaalia keeles; keelt saab muuta paremal üleval (vt [Seaded](Settings-and-Data-Folder-et#keel)).
 
 ## Uuendamine
 
@@ -87,6 +87,6 @@ Paigaldajad toodab GitHub Actions (`.github/workflows/build.yml`) iga `release` 
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # või linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Dokumendid luuakse uuesti käskudega `tools/build_spiegazione.py data` ja `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Dokumendid (kõik keeled) luuakse uuesti käsuga `tools/build_documenti.sh`.
 
 Edasi: [Alustamine](Getting-Started-et).

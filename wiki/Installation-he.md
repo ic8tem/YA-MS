@@ -73,7 +73,7 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 
 - **מפת אירופה** (קווי חוף וגבולות של Natural Earth) מורדת אוטומטית אל `data/mappa` בפעם הראשונה: נדרש חיבור לאינטרנט פעם אחת.
 - **נתוני המכ״ם** (Collm, ‏Sodankylä) מורדים מיד ולאחר מכן נבדקים כל 5 דקות.
-- הממשק נפתח בשפת המערכת שלכם אם היא אחת מתוך 28 השפות הזמינות, אחרת באיטלקית; שנו אותה בפינה הימנית העליונה (ראו [הגדרות](Settings-and-Data-Folder-he#שפה)).
+- הממשק נפתח בשפת המערכת שלכם אם היא אחת מתוך 36 השפות הזמינות, אחרת באיטלקית; שנו אותה בפינה הימנית העליונה (ראו [הגדרות](Settings-and-Data-Folder-he#שפה)).
 
 ## עדכון
 
@@ -87,6 +87,6 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # או linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-המסמכים נוצרים מחדש עם `tools/build_spiegazione.py data` ו-`node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+המסמכים (בכל השפות) נוצרים מחדש עם `tools/build_documenti.sh`.
 
 הבא: [צעדים ראשונים](Getting-Started-he).

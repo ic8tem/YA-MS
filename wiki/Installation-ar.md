@@ -73,7 +73,7 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 
 - تُنزَّل **خريطة أوروبا** (السواحل والحدود من Natural Earth) تلقائياً إلى `data/mappa` في المرة الأولى: يلزم اتصال بالإنترنت مرة واحدة.
 - تُنزَّل **بيانات الرادار** (Collm وSodankylä) فوراً ثم تُفحص كل 5 دقائق.
-- تبدأ الواجهة بلغة نظامك إن كانت إحدى اللغات الـ28 المتاحة، وإلا فبالإيطالية؛ غيّرها من أعلى اليمين (انظر [الإعدادات](Settings-and-Data-Folder-ar#اللغة)).
+- تبدأ الواجهة بلغة نظامك إن كانت إحدى اللغات الـ36 المتاحة، وإلا فبالإيطالية؛ غيّرها من أعلى اليمين (انظر [الإعدادات](Settings-and-Data-Folder-ar#اللغة)).
 
 ## التحديث
 
@@ -87,6 +87,6 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # أو linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-تُعاد توليد الوثائق بالأمرين `tools/build_spiegazione.py data` و`node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+تُعاد توليد الوثائق (بجميع اللغات) بالأمر `tools/build_documenti.sh`.
 
 التالي: [البدء](Getting-Started-ar).

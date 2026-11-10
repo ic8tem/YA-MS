@@ -6,7 +6,7 @@
 
 [![کارکردگی - وضاحت](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-ایک تکنیکی دستاویز، *"Come YA-MS calcola l'efficienza di uno sciame"* (YA-MS کسی شہابی بارش کی کارکردگی کا حساب کیسے کرتا ہے)، جو پروگرام کے اندر ایک ہلکے صفحے کی صورت میں دکھائی جاتی ہے۔ یہ **قدم بہ قدم** وضاحت کرتی ہے کہ کارکردگی کیسے حاصل ہوتی ہے، اور ہر قدم کے لیے بتاتی ہے کہ **وہ کہاں سے آیا**۔ دستاویز فی الحال **اطالوی زبان میں** ہے؛ یہ وکی اس کا مواد اردو میں [کارکردگی کا حساب](Efficiency-Calculation-ur#ماڈل) اور [جیومیٹری اور راستے کا نقصان](Geometry-and-Path-Loss-ur) میں دیتی ہے۔
+ایک تکنیکی دستاویز، *"Come YA-MS calcola l'efficienza di uno sciame"* (YA-MS کسی شہابی بارش کی کارکردگی کا حساب کیسے کرتا ہے)، جو پروگرام کے اندر ایک ہلکے صفحے کی صورت میں دکھائی جاتی ہے۔ یہ **قدم بہ قدم** وضاحت کرتی ہے کہ کارکردگی کیسے حاصل ہوتی ہے، اور ہر قدم کے لیے بتاتی ہے کہ **وہ کہاں سے آیا**۔ پروگرام اسے، حساب کے دستی کتابچے کی طرح، **انٹرفیس کی زبان میں** (تمام 36 زبانوں میں) دکھاتا ہے؛ یہ وکی اس کا مواد [کارکردگی کا حساب](Efficiency-Calculation-ur#ماڈل) اور [جیومیٹری اور راستے کا نقصان](Geometry-and-Path-Loss-ur) میں بھی دیتی ہے۔
 
 ## لیبل
 
@@ -46,6 +46,8 @@
 |---|---|
 | `data/efficienza_spiegazione.txt` | ٹیب میں دکھایا جانے والا متن، ہر لائن میں ایک بلاک (`TITLE`، `SUB`، `H1`، `H2`، `P`، `TAG|FONTE|…`، `TAG|RILIEVO|…`، `TAG|SCELTA|…`، `EQ`، `LI`، `SRC`) |
 | `data/efficienza_spiegazione.docx` | Word ورژن |
-| `doc/YA-MS_manuale_calcoli.docx` | **حساب کا دستی کتابچہ**: تمام مساواتیں (Word کا مساوات ایڈیٹر)، نمبروں اور ذرائع کے ساتھ |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | یہی دستاویز باقی 35 زبانوں میں (مثلاً `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **حساب کا دستی کتابچہ** (اطالوی): تمام مساواتیں (Word کا مساوات ایڈیٹر)، نمبروں اور ذرائع کے ساتھ |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | حساب کا دستی کتابچہ باقی 35 زبانوں میں |
 
-دونوں دستاویزات سورس سے `tools/build_spiegazione.py data` اور `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` کے ذریعے دوبارہ بنائی جاتی ہیں۔
+دونوں دستاویزات سورس سے `tools/build_spiegazione.py data [code]` اور `node tools/build_manuale.js <file.docx> [code]` کے ذریعے دوبارہ بنائی جاتی ہیں۔ تراجم `tools/traduzioni_doc/` میں ہیں (`tools/build_documenti.sh` تمام زبانیں دوبارہ بناتا ہے)۔

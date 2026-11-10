@@ -16,7 +16,7 @@ Dili ya da temayı değiştirmek ayarları kaydeder ve **pencereyi** aynı konum
 
 ## Dil
 
-28 arayüz dili; YAEC ve E-LAYER ANALYZER ile aynı (YAEC ile ortak terimler aynı şekilde çevrilmiştir):
+36 arayüz dili; YAEC ve E-LAYER ANALYZER ile aynı (YAEC ile ortak terimler aynı şekilde çevrilmiştir):
 
 | Dil | Kod | Dosya |
 |---|---|---|
@@ -25,7 +25,8 @@ Dili ya da temayı değiştirmek ayarları kaydeder ve **pencereyi** aynı konum
 | Deutsch | `de` | `data/lingue/de.txt` |
 | Français | `fr` | `data/lingue/fr.txt` |
 | Español | `es` | `data/lingue/es.txt` |
-| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Portugal) | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-BR` | `data/lingue/pt-BR.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
 | Svenska | `sv` | `data/lingue/sv.txt` |
 | Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
@@ -34,6 +35,11 @@ Dili ya da temayı değiştirmek ayarları kaydeder ve **pencereyi** aynı konum
 | Eesti | `et` | `data/lingue/et.txt` |
 | Latviešu | `lv` | `data/lingue/lv.txt` |
 | Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
 | Русский | `ru` | `data/lingue/ru.txt` |
 | Українська | `uk` | `data/lingue/uk.txt` |
 | Türkçe | `tr` | `data/lingue/tr.txt` |
@@ -43,15 +49,17 @@ Dili ya da temayı değiştirmek ayarları kaydeder ve **pencereyi** aynı konum
 | اردو | `ur` | `data/lingue/ur.txt` |
 | हिन्दी | `hi` | `data/lingue/hi.txt` |
 | বাংলা | `bn` | `data/lingue/bn.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
 | Bahasa Indonesia | `id` | `data/lingue/id.txt` |
 | Tagalog | `tl` | `data/lingue/tl.txt` |
 | 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-TW` | `data/lingue/zh-TW.txt` |
 | 日本語 | `ja` | `data/lingue/ja.txt` |
 | 한국어 | `ko` | `data/lingue/ko.txt` |
 
 İlk açılışta YA-MS, bunlardan biriyse **sistem dilini**, değilse İtalyancayı kullanır. Sayılar ve tarihler seçilen dili izler (örn. İngilizcede ondalık nokta, İtalyanca ve Almancada virgül). Bir çeviri dosyasında eksik olan her metin İtalyanca gösterilir. Linux'ta Çince, Japonca, Korece, Arapça, İbranice, Urduca, Hintçe ve Bengalce için uygun yazı tipleri gerekir (örn. Noto aileleri): bkz. [Sorun giderme](Troubleshooting-FAQ-tr#linux-japonca-metin-kutucuk-olarak-görünüyor).
 
-[Verim - açıklama](Efficiency-Explanation-tr) belgesi ve hesap kılavuzu İtalyancadır.
+[Verim - açıklama](Efficiency-Explanation-tr) belgesi arayüz dilini izler; hesap kılavuzu `doc/` (İtalyanca) ve `doc/manuali/` (diğer 35 dil) klasörlerindedir.
 
 ## Renk şemaları
 
@@ -122,7 +130,7 @@ Düz metin, her satırda bir `key=value` (`#` ya da `;` ile başlayan satırlar 
 | `elevazione_lobo_gradi` | 0 | Lob elevasyonu (°) |
 | `boom_m` | 4.6 | Yagi boom uzunluğu (m) |
 | `hot_spot_km` | 150 | Hot A / Hot B'nin orta noktaya uzaklığı (30–400 km) |
-| `lingua` | sistem / `it` | Dil kodu (yukarıdaki 28 koddan biri, örn. `it`, `en`, `de`) |
+| `lingua` | sistem / `it` | Dil kodu (yukarıdaki 36 koddan biri, örn. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Renk şeması: `chiaro` (Açık), `scuro` (Gece), `nero` (Siyah), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteor izi) |
 | `carattere_pct` | 100 | Yazı tipi boyutu (%100–300) |
 | `comandi_visibili` | 1 | 1 = kontrol sıraları görünür, 0 = katlı |

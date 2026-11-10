@@ -6,7 +6,7 @@
 
 [![Effektivitet - forklaring](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-Et teknisk dokument, *"Come YA-MS calcola l'efficienza di uno sciame"* (Sådan beregner YA-MS en sværms effektivitet), vist i programmet som en lys side. Det forklarer **trin for trin**, hvordan effektiviteten fremkommer, og angiver for hvert trin, **hvor det stammer fra**. Dokumentet findes i øjeblikket **på italiensk**; denne wiki gengiver indholdet på dansk i [Effektivitetsberegning](Efficiency-Calculation-da#modellen) og [Geometri og dæmpning](Geometry-and-Path-Loss-da).
+Et teknisk dokument, *"Come YA-MS calcola l'efficienza di uno sciame"* (Sådan beregner YA-MS en sværms effektivitet), vist i programmet som en lys side. Det forklarer **trin for trin**, hvordan effektiviteten fremkommer, og angiver for hvert trin, **hvor det stammer fra**. Programmet viser det **på brugerfladens sprog** (alle 36 sprog), ligesom beregningsmanualen; denne wiki gengiver også indholdet i [Effektivitetsberegning](Efficiency-Calculation-da#modellen) og [Geometri og dæmpning](Geometry-and-Path-Loss-da).
 
 ## Mærkater
 
@@ -46,6 +46,8 @@ Hvert trin har en farvet mærkat:
 |---|---|
 | `data/efficienza_spiegazione.txt` | Teksten, der vises i fanen, én blok pr. linje (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Word-udgaven |
-| `doc/YA-MS_manuale_calcoli.docx` | **Beregningsmanualen**: alle ligninger (Words ligningseditor), nummereret, med kilder |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Samme dokument på de øvrige 35 sprog (f.eks. `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **Beregningsmanualen** (italiensk): alle ligninger (Words ligningseditor), nummereret, med kilder |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | Beregningsmanualen på de øvrige 35 sprog |
 
-De to dokumenter genereres fra kildekoden med `tools/build_spiegazione.py data` og `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+De to dokumenter genereres fra kildekoden med `tools/build_spiegazione.py data [code]` og `node tools/build_manuale.js <file.docx> [code]`. Oversættelserne ligger i `tools/traduzioni_doc/` (`tools/build_documenti.sh` genererer alle sprog).

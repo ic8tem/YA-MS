@@ -6,7 +6,7 @@
 
 [![Effektivität - Erklärung](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-3_3.png)
 
-Ein technisches Dokument, *"Come YA-MS calcola l'efficienza di uno sciame"* (Wie YA-MS die Effektivität eines Meteorstroms berechnet), das im Programm als helle Seite angezeigt wird. Es erklärt **Schritt für Schritt**, wie die Effektivität ermittelt wird, und gibt bei jedem Schritt an, **woher er stammt**. Das Dokument ist derzeit **auf Italienisch**; dieses Wiki gibt seinen Inhalt auf Deutsch in [Effektivitätsberechnung](Efficiency-Calculation-de#das-modell) und [Geometrie und Dämpfung](Geometry-and-Path-Loss-de) wieder.
+Ein technisches Dokument, *"Come YA-MS calcola l'efficienza di uno sciame"* (Wie YA-MS die Effektivität eines Meteorstroms berechnet), das im Programm als helle Seite angezeigt wird. Es erklärt **Schritt für Schritt**, wie die Effektivität ermittelt wird, und gibt bei jedem Schritt an, **woher er stammt**. Das Programm zeigt es **in der Sprache der Oberfläche** (alle 36 Sprachen), ebenso das Berechnungshandbuch; dieses Wiki gibt seinen Inhalt außerdem in [Effektivitätsberechnung](Efficiency-Calculation-de#das-modell) und [Geometrie und Dämpfung](Geometry-and-Path-Loss-de) wieder.
 
 ## Kennzeichnungen
 
@@ -46,6 +46,8 @@ Jeder Schritt trägt eine farbige Kennzeichnung:
 |---|---|
 | `data/efficienza_spiegazione.txt` | Der im Reiter angezeigte Text, ein Block pro Zeile (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Die Word-Fassung |
-| `doc/YA-MS_manuale_calcoli.docx` | Das **Berechnungshandbuch**: alle Gleichungen (Word-Formeleditor), nummeriert, mit ihren Quellen |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Dasselbe Dokument in den übrigen 35 Sprachen (z. B. `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | Das **Berechnungshandbuch** (Italienisch): alle Gleichungen (Word-Formeleditor), nummeriert, mit ihren Quellen |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | Das Berechnungshandbuch in den übrigen 35 Sprachen |
 
-Die beiden Dokumente werden aus dem Quellcode mit `tools/build_spiegazione.py data` und `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx` neu erzeugt.
+Die beiden Dokumente werden aus dem Quellcode mit `tools/build_spiegazione.py data [code]` und `node tools/build_manuale.js <file.docx> [code]` neu erzeugt. Die Übersetzungen liegen in `tools/traduzioni_doc/` (`tools/build_documenti.sh` erzeugt alle Sprachen neu).

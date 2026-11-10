@@ -44,4 +44,4 @@ Překlady rozhraní jsou prosté textové soubory v **`data/lingue/<code>.txt`**
 
 Upravte soubor ve složce `data/lingue` vaší instalace a spusťte YA-MS znovu (nebo přepněte jazyk), abyste viděli výsledek. Protože se tyto soubory **při každé aktualizaci nahrazují novějšími verzemi**, prosím **pošlete své opravy** také autorovi – e-mailem nebo jako pull request na GitHubu (`data/lingue/`) – aby se dostaly do příštího vydání.
 
-Tato wiki existuje ve 28 jazycích (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文); vítány jsou i opravy stránek wiki.
+Tato wiki existuje ve 36 jazycích (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)); vítány jsou i opravy stránek wiki.

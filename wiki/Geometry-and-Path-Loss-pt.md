@@ -69,15 +69,15 @@ Se 1 − |p0|² < 0, o percurso é mais longo do que 2·d_H e as estações **n�
 
 ## Hot A e Hot B
 
-**Fonte:** as reflexões concentram-se em duas zonas ("hot spots") a cerca de **50–150 km de cada lado do ponto médio**. É a base da tabela de desvio da antena do AMS Bulletin n.º 203, retomada por W8WN (desvio de 10° para percursos de 1500 e 1800 km); o MSHV de LZ2HV usa o mesmo critério.
+**Fonte:** as reflexões dos meteoros esporádicos concentram-se em duas zonas ("hot spots") de cada lado do ponto médio. J. Richardson (AMS), na tabela citada por DJ5HG (*Die Geometrie von Meteorscatterverbindungen*, 2004), dá o desvio da antena em relação ao rumo direto: **13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km**. O AMS Bulletin n.º 203, retomado por W8WN, dá 10° a 1500 e 1800 km.
 
-**Escolha:** Hot A e Hot B são os pontos à distância s do ponto médio M, perpendiculares ao percurso (s = 150 km, ajustável de 30 a 400 km); A à esquerda olhando da sua estação para o DX, B à direita [21]. O desvio visto da estação é aproximadamente [22]:
+**Escolha:** Hot A e Hot B são os pontos à distância s do ponto médio M, perpendiculares ao percurso. Com *auto (AMS)* assinalado (por omissão), s vem do desvio da tabela de Richardson, interpolado linearmente (13° abaixo de 1000 km, 10° acima de 2000 km): s = (D/2)·tan(desvio). Não assinalado, s é introduzido à mão, de 30 a 400 km (o MSHV usa 150 km); A à esquerda olhando da sua estação para o DX, B à direita [21]. O desvio visto da estação é aproximadamente [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Verificação:** JN70CN–IN78UO, D = 1710 km: 6,7° com s = 100 km, **10,0° com s = 150 km** (igual ao MSHV e a AMS/W8WN), 13,2° com s = 200 km.
+**Verificação:** com a tabela AMS, 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, igual aos 150 km usados antes e pelo MSHV; nos percursos curtos a tabela aproxima os hot spots do ponto médio.
 
 ## Atenuação subdensa
 

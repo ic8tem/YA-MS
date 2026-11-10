@@ -69,15 +69,15 @@ p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p
 
 ## Hot A 与 Hot B
 
-**来源：** 反射集中在中点两侧约 **50–150 km** 的两个区域（“热点”）。这是 AMS Bulletin No. 203 天线偏角表的基础，W8WN 沿用了它（1500 和 1800 km 路径偏 10°）；LZ2HV 的 MSHV 也采用同样的标准。
+**来源：** 偶发流星的反射集中在中点两侧的两个区域（“热点”）。J. Richardson（AMS）在 DJ5HG 引用的表格中（*Die Geometrie von Meteorscatterverbindungen*，2004）给出了相对于直接方向的天线偏角：**1000 km 为 13°，1250 km 为 11°，1500 和 2000 km 为 10°**。W8WN 沿用的 AMS Bulletin No. 203 给出 1500 和 1800 km 为 10°。
 
-**选择：** Hot A 和 Hot B 是距中点 M 为 s、垂直于路径的点（s = 150 km，可在 30–400 km 之间调整）；从本台望向 DX 时 A 在左、B 在右 [21]。从电台看的偏角约为 [22]：
+**选择：** Hot A 和 Hot B 是距中点 M 为 s、垂直于路径的点。勾选 *auto (AMS)*（默认）时，s 由 Richardson 表格的偏角线性插值得出（1000 km 以下取 13°，2000 km 以上取 10°）：s = (D/2)·tan(偏角)。不勾选时，s 手动输入，30–400 km（MSHV 使用 150 km）；从本台望向 DX 时 A 在左、B 在右 [21]。从电台看的偏角约为 [22]：
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**验证：** JN70CN–IN78UO，D = 1710 km：s = 100 km 时为 6.7°，**s = 150 km 时为 10.0°**（与 MSHV 和 AMS/W8WN 相同），s = 200 km 时为 13.2°。
+**验证：** 按 AMS 表格，1000 km → 13°，s ≈ 115 km；1250 km → 11°，s ≈ 121 km；1500 km → 10°，s ≈ 132 km；2000 km → 10°，s ≈ 176 km。JN70CN–IN78UO（1710 km）→ 10°，s ≈ 151 km，与此前及 MSHV 使用的 150 km 相同；在短路径上，该表格使热点更靠近中点。
 
 ## 欠密余迹路径损耗
 

@@ -26,7 +26,7 @@ Sopra le linguette ci sono tre righe di comandi, valide per tutte le linguette. 
 | **Quota scie km** + **dal radar** | Quota delle scie meteoriche (predefinita 90 km). Con *dal radar* spuntato si usa la quota più frequente (moda) misurata dal radar di Collm; vedi [Flusso radar](Radar-Flux-it). |
 | **Elevazione lobo °** | Elevazione più bassa del lobo della tua antenna (0° = orizzonte). Si usano solo i punti dello strato E che entrambe le stazioni vedono sopra questa elevazione. |
 | **Antenna Yagi: boom m** | Lunghezza del boom della tua Yagi. Il programma mostra la lunghezza in λ, il guadagno (curva DL6WU) e il lobo a −3 dB, orizzontale e verticale; vedi [Geometria e attenuazione](Geometry-and-Path-Loss-it#guadagno-e-lobo-dellantenna). Sotto 2 λ la stima è poco precisa. |
-| **Hot spot dal punto medio km** | Distanza di Hot A e Hot B dal punto medio, 30–400 km (predefinita 150 km, come AMS Bulletin 203 / W8WN / MSHV). |
+| **Hot spot dal punto medio km** + **auto (AMS)** | Distanza di Hot A e Hot B dal punto medio. Con *auto (AMS)* spuntato (predefinito) segue la tabella degli scostamenti d'antenna di J. Richardson (AMS) citata da DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km (circa 115, 121, 132 e 176 km dal punto medio). Togli la spunta per inserire a mano 30–400 km (MSHV usa 150 km). |
 
 **Riga 3 – ora**
 

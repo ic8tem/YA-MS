@@ -53,7 +53,7 @@ Alle Schritte stehen im [Berechnungshandbuch](Efficiency-Explanation-de) (`doc/Y
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-Dasselbe Gesetz liegt QTFGUI von DJ5HG (Kegelstreuung) zugrunde. Die Bedingung wird mit einer gaußförmigen Toleranz σ = 0,05 rad (etwa 3°) akzeptiert – *Entscheidung des Programms*:
+Dasselbe Gesetz liegt QTFGUI von DJ5HG und seinem Text *"Die Geometrie von Meteorscatterverbindungen"* (2004) zugrunde: Die Spur streut auf einen Kegel mit der Spur als Achse, und nur ein Empfänger auf dem Kegel hört sie. Bei einer idealen Spur ist die Kegelwand sehr dünn (ein Strahler von Tausenden Wellenlängen Länge); das Programm akzeptiert die Bedingung mit einer gaußförmigen Toleranz σ = 0,05 rad (etwa 3°), die für das steht, was der ideale Kegel nicht sieht: die Streuung der Radianten der Ströme (0,3–1,4°, vom GMN gemessen), vom Wind gekrümmte Spuren und ihre endliche Länge – *Entscheidung des Programms*:
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 Die Zahl der Meteore, die einen Punkt erreichen, ist proportional zum Sinus der Radiantenhöhe dort (ŝ·û_P), dieselbe Korrektur, die die IMO für die ZHR verwendet.
 
+**Option „Längere Spuren bei niedrigem Radianten (DJ5HG)“** (Kontrollkästchen über dem Diagramm, standardmäßig aus, mit Tooltip): DJ5HG merkt an, dass bei niedrigem Radianten weniger Meteore pro km² fallen, die Spuren aber länger sind (bis zu 100 km nutzbar) und die Reflexionsbedingung öfter erfüllen. Mit eingeschalteter Option wird das Gewicht zu min(sin El, 15/100): Die nutzbare Schichtdicke, 15 km, geteilt durch den Sinus der Elevation ergibt die Spurlänge, begrenzt auf 100 km. Oberhalb von etwa 9° heben sich die beiden Effekte auf. Ausgeschaltet bleibt die Berechnung vorsichtig.
+
 **3. Summe und Prozentwert.** Punkte alle 15 km in Spurhöhe, nur dort, wo beide Stationen sie oberhalb der Keulenelevation sehen (*Entscheidung*). 100 % ist die günstigste Radiantenposition für diese Strecke:
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 F wird einmal pro Strecke auf einem Richtungsgitter berechnet (Azimut alle 5°, Elevation alle 2,5°) und interpoliert.
+
+**Effektivität in dB (Referenz DJ5HG).** Der Prozentwert bezieht sich nur auf die beste Radiantenposition für diese Strecke. Um verschiedene Strecken zu vergleichen, gibt das Programm die Effektivität auch in dB bezogen auf die feste Referenz von DJ5HG an: 0 dB ist das Maximum einer 1000 km langen Nord-Süd-Strecke über den Äquator, mit dem Radianten auf dem Himmelsäquator zur Tagundnachtgleiche, berechnet mit derselben Höhe und denselben Gewichten. DJ5HG gibt seine Werte als besser als 6 dB an.
 
 **4. Seite und Index.**
 
@@ -85,7 +89,9 @@ Der Buchstabe in der Tabelle ist die Seite mit dem größeren Anteil. *Entscheid
 
 ## Vergleich mit DH9GCD
 
-Eine unabhängige Prüfung: die Formel der besten Richtung von **DH9GCD**, wiedergegeben von **DF5HC** (DARC-Vortrag, Januar 2018), mit El und Az als Elevation und Azimut des Radianten von deiner Station aus und P als Azimut der Gegenstation:
+Die Primärquellen für die beste Richtung sind Eshleman & Mlodnosky und Meeks & James (Proc. IRE, 1957), Hines (1955) und dessen experimentelle Prüfung durch Forsyth, Hines & Vogan (1955): Nur Radianten auf dem Halbkreis des Himmels senkrecht zur Winkelhalbierenden des Streuwinkels sind nutzbar, die Zahl der Spuren wächst mit sin El, und nahe dem Mittelpunkt liegen die nutzbaren Spuren etwa H·tan El seitlich, auf der dem Radianten gegenüberliegenden Seite. DJ5HG macht einen Vorbehalt: Bei einem **niedrigen** Radianten genau entlang der Strecke liefert McKinleys Formel starke Signale (Hamburg–Narvik, Quadrantiden, etwa 19 UTC), daher gilt „Radiant in Streckenrichtung = fast null“ nur für einen hohen Radianten; das Programm bleibt vorsichtig und zeigt die Warnung *NIEDRIGER RADIANT ENTLANG DER STRECKE*.
+
+Eine unabhängige Prüfung: die Formel der besten Richtung von **DH9GCD**, wiedergegeben von **DF5HC** (DARC-Vortrag, Januar 2018) – eine veröffentlichte Primärquelle gibt es nicht –, mit El und Az als Elevation und Azimut des Radianten von deiner Station aus und P als Azimut der Gegenstation:
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -101,4 +107,4 @@ Sie ist maximal, wenn der Radiant auf 45° und quer zur Strecke steht. DF5HC hä
 | QTFGUI von DJ5HG, Hamburg JO53IM – Barcelona, Quadrantiden, 4. Januar (Beispiel aus seinem Handbuch) | QTFGUI: 07:00 Ausrichtung 252°, −8 dB; 08:00 keine Reflexionszone; 09:00 Ausrichtung 168°, −4 dB. YA-MS (Höhe 102 km wie QTFGUI): 07:00 241°, −5,4 dB; 08:00 0,6 % (−22 dB); 09:00 161°, −4,0 dB. DH9GCD: 26 %, 2 %, 32 %. Alle drei Methoden sehen das Loch um 08:00, mit dem Radianten fast im Zenit |
 | Abtastung alle 5 km statt 15 km | die Prozentwerte ändern sich um weniger als 0,3 Punkte |
 
-> Die von OH5IY und MCG_MS verwendete Skala ist nicht im Detail bekannt (die Handbücher von MS-Soft sind nicht verfügbar): Vergleiche die Prozentwerte mit diesen Programmen, bevor du sie als gleichwertig betrachtest. Das Modell berücksichtigt nur unterdichte Spuren, mit isotropen Antennen; überdichte Bursts und der sporadische Untergrund sind nicht in der Effektivität enthalten (der sporadische Untergrund wird durch den Radarfluss dargestellt).
+> Die Dokumentation von MS-Soft 5.2 definiert die Effektivität von OH5IY als relativen Index nur für unterdichte Spuren, mit zwei Faktoren (Elevation des Radianten, am besten etwa 45°, und Winkel zur Strecke, am besten 90°) und einem für überdichte Spuren von Hand auf 20 % angehobenen Minimum; die Formel ist nicht veröffentlicht. MCG_MS berechnet sie für vier feste Richtungen und, mit dem DX-Locator, für die tatsächliche Strecke. Das Modell berücksichtigt nur unterdichte Spuren, mit isotropen Antennen; überdichte Bursts und der sporadische Untergrund sind nicht in der Effektivität enthalten (der sporadische Untergrund wird durch den Radarfluss dargestellt).

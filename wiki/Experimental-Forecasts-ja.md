@@ -28,10 +28,10 @@
 ## レーダーからアマチュアバンドへ
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**出典:** SM6FHZ、*"432 MHz Meteorscatter, Challenges and Techniques"*、45th Nordic VUSHF、2025 年 5 月 – 反射の数と強度は **λ³** に、継続時間は **λ²** に比例します (432 MHz は 144 MHz より 14–15 dB 低く、継続時間は 1/9)。**検証:** λ³ への依存は McKinley のアンダーデンスの式と同じです。k = 3 では、Collm での 1000 流星/時は **144 MHz で約 16 反射/時** になります。143.050 MHz で GRAVES を受信する RMOB 観測者は通常 **20–140 エコー/時** を数えます (RMOB 会報、2018 年 6 月): 桁は整合しており、差は局係数 K によるものです。(マニュアル式 44–45。)
+**出典:** SM6FHZ、*"432 MHz Meteorscatter, Challenges and Techniques"*、45th Nordic VUSHF、2025 年 5 月 – 反射の数と強度は **λ³** に、継続時間は **λ²** に比例します (432 MHz は 144 MHz より 14–15 dB 低く、継続時間は 1/9)。**検証:** McKinley の式で λ³ は 1 本のアンダーデンス流星痕の電力であり、流星痕の数ではありません。質量指数 2 では、一定のしきい値を超える流星痕の数はおよそ λ^1.5 に比例します (IZ5TEK; OH5IY)。プログラムは SM6FHZ の経験則である k = 3 を保ち、そのことを明記します。自局に合った k は RMOB との比較から得られます。前方散乱では継続時間も sec²φ とともに増えます (McKinley; OH5IY): Collm は後方散乱 (φ = 0) で測定しているため、予報はパスの中間点での sec²φ を掛けます (60° で ×4、70° で ×8.5、80° で ×33)。k = 3 では、Collm での 1000 流星/時は **144 MHz で約 16 反射/時** になります。143.050 MHz で GRAVES を受信する RMOB 観測者は通常 **20–140 エコー/時** を数えます (RMOB 会報、2018 年 6 月): 桁は整合しており、差は局係数 K によるものです。(マニュアル式 44–45。)
 
 ## 今後 24 時間
 

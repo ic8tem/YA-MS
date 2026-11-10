@@ -28,10 +28,10 @@ La ligne orange sous les commandes affiche la règle avec les valeurs actuelles,
 ## Du radar à la bande amateur
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Source :** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45e Nordic VUSHF, mai 2025 – le nombre et l'intensité des réflexions varient en **λ³**, la durée en **λ²** (le 432 MHz est 14–15 dB sous le 144 MHz et dure 1/9). **Vérification :** la dépendance en λ³ est la même que dans l'équation sous-dense de McKinley. Avec k = 3, 1000 météores/heure à Collm deviennent environ **16 réflexions/heure à 144 MHz** ; les observateurs RMOB de GRAVES sur 143,050 MHz comptent habituellement **20 à 140 échos/heure** (bulletin RMOB, juin 2018) : l'ordre de grandeur est compatible, et la différence correspond au facteur de station K. (Manuel, éq. 44–45.)
+**Source :** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45e Nordic VUSHF, mai 2025 – le nombre et l'intensité des réflexions varient en **λ³**, la durée en **λ²** (le 432 MHz est 14–15 dB sous le 144 MHz et dure 1/9). **Vérification :** dans l'équation de McKinley, λ³ est la puissance d'une seule traînée sous-dense, pas le nombre de traînées ; pour un indice de masse de 2, le nombre de traînées au-dessus d'un seuil fixe varie environ en λ^1,5 (IZ5TEK ; OH5IY). Le programme garde k = 3, la règle expérimentale de SM6FHZ, et le signale ; le bon k pour votre station vient de la comparaison avec RMOB. En diffusion vers l'avant, la durée croît aussi en sec²φ (McKinley ; OH5IY) : Collm mesure en rétrodiffusion (φ = 0), donc la prévision multiplie par sec²φ au point milieu du trajet (×4 à 60°, ×8,5 à 70°, ×33 à 80°). Avec k = 3, 1000 météores/heure à Collm deviennent environ **16 réflexions/heure à 144 MHz** ; les observateurs RMOB de GRAVES sur 143,050 MHz comptent habituellement **20 à 140 échos/heure** (bulletin RMOB, juin 2018) : l'ordre de grandeur est compatible, et la différence correspond au facteur de station K. (Manuel, éq. 44–45.)
 
 ## Les 24 prochaines heures
 

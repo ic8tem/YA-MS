@@ -28,10 +28,10 @@ A linha laranja por baixo dos comandos mostra a regra com os números atuais, p.
 ## Do radar à banda de radioamador
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Fonte:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maio de 2025 – o número e a intensidade das reflexões escalam com **λ³**, a duração com **λ²** (os 432 MHz estão 14–15 dB abaixo dos 144 MHz e duram 1/9). **Verificação:** a dependência de λ³ é a mesma da equação subdensa de McKinley. Com k = 3, 1000 meteoros/hora em Collm tornam-se cerca de **16 reflexões/hora a 144 MHz**; os observadores RMOB do GRAVES em 143,050 MHz contam normalmente **de 20 a 140 ecos/hora** (boletim RMOB, junho de 2018): a ordem de grandeza é compatível, e a diferença é o fator de estação K. (Eq. 44–45 do manual.)
+**Fonte:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maio de 2025 – o número e a intensidade das reflexões escalam com **λ³**, a duração com **λ²** (os 432 MHz estão 14–15 dB abaixo dos 144 MHz e duram 1/9). **Verificação:** na equação de McKinley λ³ é a potência de um único rasto subdenso, não o número de rastos; com índice de massa 2, o número de rastos acima de um limiar fixo escala aproximadamente com λ^1,5 (IZ5TEK; OH5IY). O programa mantém k = 3, a regra experimental de SM6FHZ, e di-lo; o k certo para a sua estação vem da comparação com o RMOB. Em difusão para a frente a duração também cresce com sec²φ (McKinley; OH5IY): Collm mede em retrodifusão (φ = 0), por isso a previsão multiplica por sec²φ no ponto médio do percurso (×4 a 60°, ×8,5 a 70°, ×33 a 80°). Com k = 3, 1000 meteoros/hora em Collm tornam-se cerca de **16 reflexões/hora a 144 MHz**; os observadores RMOB do GRAVES em 143,050 MHz contam normalmente **de 20 a 140 ecos/hora** (boletim RMOB, junho de 2018): a ordem de grandeza é compatível, e a diferença é o fator de estação K. (Eq. 44–45 do manual.)
 
 ## Próximas 24 horas
 

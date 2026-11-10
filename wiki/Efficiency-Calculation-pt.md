@@ -53,7 +53,7 @@ Todos os passos estão no [manual de cálculo](Efficiency-Explanation-pt) (`doc/
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-A mesma lei está na base do QTFGUI de DJ5HG (cone scattering). A condição é aceite com uma tolerância gaussiana σ = 0,05 rad (cerca de 3°) – *escolha do programa*:
+A mesma lei está na base do QTFGUI de DJ5HG e do seu texto *"Die Geometrie von Meteorscatterverbindungen"* (2004): o rasto difunde num cone que tem o rasto como eixo, e só um recetor sobre o cone o ouve. Para um rasto ideal a parede do cone é muito fina (um radiador com milhares de comprimentos de onda); o programa aceita a condição com uma tolerância gaussiana σ = 0,05 rad (cerca de 3°), que representa o que o cone ideal não vê: a dispersão dos radiantes das chuvas (0,3–1,4° medidos pela GMN), os rastos curvados pelo vento e o seu comprimento finito – *escolha do programa*:
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 O número de meteoros que chega a um ponto é proporcional ao seno da elevação do radiante nesse ponto (ŝ·û_P), a mesma correção que a IMO usa para o ZHR.
 
+**Opção "Rastos mais longos com radiante baixo (DJ5HG)"** (caixa por cima do gráfico, desligada por omissão, com tooltip): DJ5HG nota que com o radiante baixo caem menos meteoros por km², mas os rastos são mais longos (até 100 km úteis) e cumprem mais vezes a lei de reflexão. Com a opção ligada o peso passa a ser min(sin El, 15/100): a espessura útil da camada, 15 km, dividida pelo seno da elevação dá o comprimento do rasto, limitado a 100 km. Acima de cerca de 9° os dois efeitos anulam-se. Desligada, o cálculo continua prudente.
+
 **3. Soma e percentagem.** Pontos a cada 15 km à altitude dos rastos, só onde ambas as estações os veem acima da elevação do lóbulo (*escolha*). 100 % é a posição do radiante mais favorável para esse percurso:
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 F é calculado uma vez por percurso numa grelha de direções (azimute a cada 5°, elevação a cada 2,5°) e interpolado.
+
+**Eficiência em dB (referência DJ5HG).** A percentagem é relativa apenas à melhor posição do radiante para esse percurso. Para comparar percursos diferentes, o programa dá também a eficiência em dB em relação à referência fixa de DJ5HG: 0 dB é o máximo de um percurso norte–sul de 1000 km que atravessa o equador, com o radiante no equador celeste no equinócio, calculado com a mesma altitude e os mesmos pesos. DJ5HG indica os seus valores como melhores do que 6 dB.
 
 **4. Lado e índice.**
 
@@ -85,7 +89,9 @@ A letra na tabela é o lado com a fração maior. *Escolhas do programa (eq. 32�
 
 ## Comparação com DH9GCD
 
-Uma verificação independente: a fórmula da melhor direção de **DH9GCD**, citada por **DF5HC** (conferência DARC, janeiro de 2018), com El e Az a elevação e o azimute do radiante vistos da sua estação e P o azimute do correspondente:
+As fontes primárias para a melhor direção são Eshleman & Mlodnosky e Meeks & James (Proc. IRE, 1957), Hines (1955) e a sua verificação experimental por Forsyth, Hines & Vogan (1955): só são úteis os radiantes no semicírculo de céu perpendicular à bissetriz do ângulo de difusão, o número de rastos cresce com sin El e, perto do ponto médio, os rastos úteis caem a cerca de H·tan El para o lado, no lado oposto ao radiante. DJ5HG acrescenta uma reserva: com um radiante **baixo** mesmo ao longo do percurso, a fórmula de McKinley dá sinais fortes (Hamburgo–Narvik, Quadrântidas, cerca das 19 UTC), portanto "radiante alinhado com o percurso = quase zero" só vale para um radiante alto; o programa continua prudente e mostra o aviso *RADIANTE BAIXO AO LONGO DO PERCURSO*.
+
+Uma verificação independente: a fórmula da melhor direção de **DH9GCD**, citada por **DF5HC** (conferência DARC, janeiro de 2018) – não tem fonte primária publicada –, com El e Az a elevação e o azimute do radiante vistos da sua estação e P o azimute do correspondente:
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -101,4 +107,4 @@ E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)
 | QTFGUI de DJ5HG, Hamburgo JO53IM – Barcelona, Quadrântidas, 4 de janeiro (exemplo do seu manual) | QTFGUI: 07:00 apontamento 252°, −8 dB; 08:00 nenhuma zona de reflexão; 09:00 apontamento 168°, −4 dB. YA-MS (altitude 102 km como o QTFGUI): 07:00 241°, −5,4 dB; 08:00 0,6 % (−22 dB); 09:00 161°, −4,0 dB. DH9GCD: 26 %, 2 %, 32 %. Os três métodos veem o buraco das 08:00, com o radiante quase no zénite |
 | Amostragem a cada 5 km em vez de 15 km | as percentagens mudam menos de 0,3 pontos |
 
-> A escala usada por OH5IY e pelo MCG_MS não é conhecida em pormenor (os manuais do MS-Soft não estão disponíveis): compare as percentagens com esses programas antes de as considerar equivalentes. O modelo considera apenas rastos subdensos, com antenas isotrópicas; as rajadas sobredensas e o fundo esporádico não entram na eficiência (o fundo esporádico é representado pelo fluxo radar).
+> A documentação do MS-Soft 5.2 define a eficiência de OH5IY como um índice relativo apenas para rastos subdensos, com dois fatores (elevação do radiante, melhor cerca de 45°, e ângulo com o percurso, melhor 90°) e um mínimo elevado à mão para 20 % para os rastos sobredensos; a fórmula não está publicada. O MCG_MS calcula-a para quatro direções fixas e, com o locator do DX, para o percurso real. O modelo considera apenas rastos subdensos, com antenas isotrópicas; as rajadas sobredensas e o fundo esporádico não entram na eficiência (o fundo esporádico é representado pelo fluxo radar).

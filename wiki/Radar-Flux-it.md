@@ -61,7 +61,7 @@ Se cambia la scala del grafico delle quote, il programma avvisa: *le statistiche
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-Regole sperimentali di **SM6FHZ** (VUSHF 2025): numero e intensità delle riflessioni scalano con λ³, la durata con λ²; la dipendenza da λ³ è la stessa dell'equazione delle scie sottodense di McKinley. Viene mostrata anche la durata massima del ping secondo la IARU Regione 1 (1000 ms a 50 MHz, 500 ms a 70 MHz, 100 ms a 144 MHz, 13 ms a 432 MHz). I valori sono indicativi, da confrontare con l'esperienza in aria. Il fattore di stazione K e il confronto con RMOB sono in [Attuazione sperimentale previsioni](Experimental-Forecasts-it).
+Regole sperimentali di **SM6FHZ** (VUSHF 2025): numero e intensità delle riflessioni scalano con λ³, la durata con λ² (in McKinley λ³ è la potenza di una scia; il numero di scie scala circa come λ^1,5, e in forward scatter le durate crescono anche con sec²φ: vedi [Attuazione sperimentale previsioni](Experimental-Forecasts-it)). Viene mostrata anche la durata massima del ping secondo la IARU Regione 1 (1000 ms a 50 MHz, 500 ms a 70 MHz, 100 ms a 144 MHz, 13 ms a 432 MHz). I valori sono indicativi, da confrontare con l'esperienza in aria. Il fattore di stazione K e il confronto con RMOB sono in [Attuazione sperimentale previsioni](Experimental-Forecasts-it).
 
 ## Senza connessione
 

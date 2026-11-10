@@ -69,15 +69,15 @@ Si 1 − |p0|² < 0, le trajet est plus long que 2·d_H et les stations ne voien
 
 ## Hot A et Hot B
 
-**Source :** les réflexions se concentrent dans deux zones (« hot spots ») à environ **50–150 km de part et d'autre du point milieu**. C'est la base du tableau des décalages d'antenne de l'AMS Bulletin No. 203, repris par W8WN (décalage de 10° pour des trajets de 1500 et 1800 km) ; MSHV de LZ2HV utilise le même critère.
+**Source :** les réflexions des météores sporadiques se concentrent dans deux zones (« hot spots ») de part et d'autre du point milieu. J. Richardson (AMS), dans le tableau cité par DJ5HG (*Die Geometrie von Meteorscatterverbindungen*, 2004), donne le décalage d'antenne par rapport au cap direct : **13° à 1000 km, 11° à 1250 km, 10° à 1500 et 2000 km**. L'AMS Bulletin No. 203, repris par W8WN, donne 10° à 1500 et 1800 km.
 
-**Choix :** Hot A et Hot B sont les points situés à la distance s du point milieu M, perpendiculairement au trajet (s = 150 km, réglable de 30 à 400 km) ; A à gauche en regardant de votre station vers le correspondant, B à droite [21]. Le décalage vu de la station vaut environ [22] :
+**Choix :** Hot A et Hot B sont les points situés à la distance s du point milieu M, perpendiculairement au trajet. Avec *auto (AMS)* coché (par défaut), s découle du décalage du tableau de Richardson, interpolé linéairement (13° en dessous de 1000 km, 10° au-delà de 2000 km) : s = (D/2)·tan(décalage). Décoché, s est saisi à la main, de 30 à 400 km (MSHV utilise 150 km) ; A à gauche en regardant de votre station vers le correspondant, B à droite [21]. Le décalage vu de la station vaut environ [22] :
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Vérification :** JN70CN–IN78UO, D = 1710 km : 6,7° avec s = 100 km, **10,0° avec s = 150 km** (comme MSHV et AMS/W8WN), 13,2° avec s = 200 km.
+**Vérification :** avec le tableau AMS, 1000 km → 13°, s ≈ 115 km ; 1250 km → 11°, s ≈ 121 km ; 1500 km → 10°, s ≈ 132 km ; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, comme les 150 km utilisés auparavant et par MSHV ; sur les trajets courts, le tableau rapproche les hot spots du point milieu.
 
 ## Affaiblissement sous-dense
 

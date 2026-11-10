@@ -53,7 +53,7 @@ Todos los pasos están en el [manual de cálculo](Efficiency-Explanation-es) (`d
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-La misma ley está en la base de QTFGUI de DJ5HG (cone scattering). La condición se acepta con una tolerancia gaussiana σ = 0,05 rad (unos 3°), *decisión del programa*:
+La misma ley está en la base de QTFGUI de DJ5HG y de su texto *"Die Geometrie von Meteorscatterverbindungen"* (2004): la estela dispersa sobre un cono que tiene la estela como eje, y solo un receptor situado en el cono la oye. Para una estela ideal la pared del cono es muy delgada (un radiador de miles de longitudes de onda); el programa acepta la condición con una tolerancia gaussiana σ = 0,05 rad (unos 3°), que representa lo que el cono ideal no ve: la dispersión de los radiantes de las lluvias (0,3–1,4° medidos por GMN), las estelas curvadas por el viento y su longitud finita, *decisión del programa*:
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 El número de meteoros que llega a un punto es proporcional al seno de la elevación del radiante en ese punto (ŝ·û_P), la misma corrección que usa la IMO para la ZHR.
 
+**Opción "Estelas más largas con radiante bajo (DJ5HG)"** (casilla encima del gráfico, desactivada por defecto, con tooltip): DJ5HG observa que con el radiante bajo caen menos meteoros por km², pero las estelas son más largas (hasta 100 km útiles) y cumplen más a menudo la ley de reflexión. Con la opción activada el peso pasa a ser min(sin El, 15/100): el espesor útil de la capa, 15 km, dividido por el seno de la elevación da la longitud de la estela, limitada a 100 km. Por encima de unos 9° los dos efectos se compensan. Desactivada, el cálculo sigue siendo prudente.
+
 **3. Suma y porcentaje.** Puntos cada 15 km a la altura de las estelas, solo donde ambas estaciones los ven por encima de la elevación del lóbulo (*decisión*). El 100 % es la posición del radiante más favorable para ese trayecto:
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 F se calcula una vez por trayecto sobre una malla de direcciones (azimut cada 5°, elevación cada 2,5°) y se interpola.
+
+**Eficiencia en dB (referencia DJ5HG).** El porcentaje es relativo solo a la mejor posición del radiante para ese trayecto. Para comparar trayectos distintos, el programa da también la eficiencia en dB respecto a la referencia fija de DJ5HG: 0 dB es el máximo de un trayecto norte–sur de 1000 km que cruza el ecuador, con el radiante en el ecuador celeste en el equinoccio, calculado con la misma altura y los mismos pesos. DJ5HG da sus valores como mejores que 6 dB.
 
 **4. Lado e índice.**
 
@@ -85,7 +89,9 @@ La letra de la tabla es el lado con la fracción mayor. *Decisiones del programa
 
 ## Comparación con DH9GCD
 
-Una verificación independiente: la fórmula de la mejor dirección de **DH9GCD**, citada por **DF5HC** (conferencia DARC, enero de 2018), con El y Az la elevación y el azimut del radiante vistos desde tu estación y P el azimut del corresponsal:
+Las fuentes primarias para la mejor dirección son Eshleman & Mlodnosky y Meeks & James (Proc. IRE, 1957), Hines (1955) y su verificación experimental por Forsyth, Hines & Vogan (1955): solo son útiles los radiantes en el semicírculo de cielo perpendicular a la bisectriz del ángulo de dispersión, el número de estelas crece con sin El y, cerca del punto medio, las estelas útiles caen a unos H·tan El hacia un lado, en el lado opuesto al radiante. DJ5HG añade una reserva: con un radiante **bajo** justo a lo largo del trayecto, la fórmula de McKinley da señales fuertes (Hamburgo–Narvik, Cuadrántidas, hacia las 19 UTC), así que "radiante alineado con el trayecto = casi cero" solo vale para un radiante alto; el programa sigue siendo prudente y muestra el aviso *RADIANTE BAJO A LO LARGO DEL TRAYECTO*.
+
+Una verificación independiente: la fórmula de la mejor dirección de **DH9GCD**, citada por **DF5HC** (conferencia DARC, enero de 2018) –no tiene fuente primaria publicada–, con El y Az la elevación y el azimut del radiante vistos desde tu estación y P el azimut del corresponsal:
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -101,4 +107,4 @@ Es máxima con el radiante a 45° y de costado respecto al trayecto. DF5HC consi
 | QTFGUI de DJ5HG, Hamburgo JO53IM – Barcelona, Cuadrántidas, 4 de enero (ejemplo de su manual) | QTFGUI: 07:00 apuntamiento 252°, −8 dB; 08:00 ninguna zona de reflexión; 09:00 apuntamiento 168°, −4 dB. YA-MS (altura 102 km como QTFGUI): 07:00 241°, −5,4 dB; 08:00 0,6 % (−22 dB); 09:00 161°, −4,0 dB. DH9GCD: 26 %, 2 %, 32 %. Los tres métodos ven el hueco de las 08:00, con el radiante casi en el cenit |
 | Muestreo cada 5 km en lugar de 15 km | los porcentajes cambian menos de 0,3 puntos |
 
-> La escala usada por OH5IY y MCG_MS no se conoce en detalle (los manuales de MS-Soft no están disponibles): compara los porcentajes con esos programas antes de considerarlos equivalentes. El modelo considera solo estelas subdensas, con antenas isótropas; las ráfagas sobredensas y el fondo esporádico no entran en la eficiencia (el fondo esporádico lo representa el flujo radar).
+> La documentación de MS-Soft 5.2 define la eficiencia de OH5IY como un índice relativo solo para estelas subdensas, con dos factores (elevación del radiante, mejor hacia 45°, y ángulo con el trayecto, mejor a 90°) y un mínimo subido a mano al 20 % para las estelas sobredensas; la fórmula no está publicada. MCG_MS la calcula para cuatro direcciones fijas y, con el locator del DX, para el trayecto real. El modelo considera solo estelas subdensas, con antenas isótropas; las ráfagas sobredensas y el fondo esporádico no entran en la eficiencia (el fondo esporádico lo representa el flujo radar).

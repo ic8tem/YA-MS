@@ -8,7 +8,7 @@
 
 Esta subpestaña (la bóveda celeste de las versiones anteriores) reúne en una sola pantalla **dónde** están ahora las estelas útiles y **hacia dónde apuntar**. A la izquierda la **vista en planta** del trayecto; a la derecha la lista de lluvias, una pequeña bóveda celeste con los radiantes, el texto del cálculo y la **sección** vista desde tu antena. Todo se refiere al momento elegido con *Fecha del cálculo (UTC)* y el regulador *Horas (de −12 a +36 h)* (tiempo real por defecto, en pasos de 15 minutos).
 
-Una **franja encima de la vista en planta** resume el cálculo para ese momento: fecha y hora (*ahora* u horas respecto a ahora), el **índice del trayecto Σ ZHR×η**, la **lluvia más útil** con su ZHR y su eficiencia, el número de lluvias sobre el horizonte y el **Hot recomendado** con su azimut.
+Una **franja encima de la vista en planta** resume el cálculo para ese momento: fecha y hora (*ahora* u horas respecto a ahora), el **índice del trayecto Σ ZHR×η**, la **lluvia más útil** con su ZHR y su eficiencia (también en dB respecto a la referencia DJ5HG, ver [Cálculo de la eficiencia](Efficiency-Calculation-es)), el número de lluvias sobre el horizonte y el **Hot recomendado** con su azimut.
 
 En la pequeña bóveda celeste una **línea naranja** que pasa por el cenit da siempre las **direcciones de antena adecuadas**, ortogonales al desplazamiento de la lluvia seleccionada (o de la más favorable): azimut del radiante ±90°, rotulada *antena NNN°* en ambos extremos, con la tolerancia de ±45° como líneas finas. Unas marcas naranjas cortas en el borde indican las direcciones ortogonales de las demás lluvias útiles.
 
@@ -19,7 +19,7 @@ Un mapa de Europa visto desde arriba (**E a la derecha**) con una escala de grad
 | Elemento | Dibujo |
 |---|---|
 | Trayecto / DX | Línea verde de tu estación al corresponsal (siempre el trayecto real de círculo máximo entre los locators) |
-| **Hot A / Hot B** | Puntos a 150 km (ajustable) a cada lado del punto medio, perpendiculares al trayecto. **Rojo = recomendado**, **rosa = fuera del lóbulo de la antena**, **gris = dentro del lóbulo** (con un aviso) |
+| **Hot A / Hot B** | Puntos a cada lado del punto medio, perpendiculares al trayecto, a la distancia dada por la tabla de desplazamiento AMS (o introducida a mano). **Rojo = recomendado**, **rosa = fuera del lóbulo de la antena**, **gris = dentro del lóbulo** (con un aviso) |
 | Lóbulo de la antena | El lóbulo horizontal a −3 dB alrededor del azimut de la antena (antena siempre apuntada al DX), rotulado *lóbulo …°* |
 | Límites de la zona común | Puntos tenues *lím. A* / *lím. B* y los dos círculos donde el horizonte de cada estación corta la capa E (ver [Geometría](Geometry-and-Path-Loss-es#límites-de-la-zona-común)) |
 | Desplazamiento de la lluvia | **Línea amarilla**: dirección en la que la lluvia seleccionada (o la más favorable) barre el cielo, es decir, el azimut del radiante |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **ATENCIÓN: Hot A (y/o Hot B) entra en el lóbulo de la antena …** | El hot spot está dentro de ±θ/2 del azimut de la antena (θ = lóbulo horizontal a −3 dB): con este apuntamiento ya está cubierto. Se marca en gris en el mapa. El Hot recomendado sigue en rojo. |
 | **RADIANTE DEMASIADO ALTO (por encima de 70°)** | Un radiante útil está a más de 70° de altura vista desde tu estación: las estelas caen casi verticales y reflejan poco hacia el trayecto (DF5HC, DH9GCD). Las mismas horas se marcan con ↑ en la [tabla horaria](Efficiency-Calculation-es#tabla-horaria). |
+| **RADIANTE BAJO A LO LARGO DEL TRAYECTO** | Un radiante activo está por debajo de 20° y a menos de 30° de la dirección del trayecto. La eficiencia calculada sigue siendo baja (prudente), pero DJ5HG espera reflexiones raras y fuertes de estelas rasantes alineadas con el trayecto (Hamburgo–Narvik, Cuadrántidas, hacia las 19 UTC): vale la pena escuchar. |
 | *Ninguna zona común de la capa E* | El trayecto es más largo que el doble del alcance a la altura de las estelas: las dos estaciones no ven una parte común de la capa E (salto único imposible). |
 | *Ningún Hot recomendado* | Casi no hay lluvias activas en este momento. |
 

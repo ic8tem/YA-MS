@@ -8,7 +8,7 @@
 
 Este subseparador (a abóbada celeste das versões anteriores) reúne num só ecrã **onde** estão agora os rastos úteis e **para onde apontar**. À esquerda a **vista em planta** do percurso; à direita a lista de chuvas, uma pequena abóbada celeste com os radiantes, o texto do cálculo e o **corte** visto a partir da sua antena. Tudo se refere ao momento escolhido com *Data do cálculo (UTC)* e o controlo deslizante *Horas (de −12 a +36 h)* (tempo real por omissão, em passos de 15 minutos).
 
-Uma **faixa por cima da vista em planta** resume o cálculo para esse momento: data e hora (*agora* ou horas em relação a agora), o **índice do percurso Σ ZHR×η**, a **chuva mais útil** com o seu ZHR e a sua eficiência, o número de chuvas acima do horizonte e o **Hot recomendado** com o seu azimute.
+Uma **faixa por cima da vista em planta** resume o cálculo para esse momento: data e hora (*agora* ou horas em relação a agora), o **índice do percurso Σ ZHR×η**, a **chuva mais útil** com o seu ZHR e a sua eficiência (também em dB em relação à referência DJ5HG, ver [Cálculo da eficiência](Efficiency-Calculation-pt)), o número de chuvas acima do horizonte e o **Hot recomendado** com o seu azimute.
 
 Na pequena abóbada celeste uma **linha laranja** que passa pelo zénite indica sempre as **direções de antena certas**, ortogonais à deslocação da chuva selecionada (ou da mais favorável): azimute do radiante ±90°, com a etiqueta *antena NNN°* em ambas as extremidades e a tolerância de ±45° em linhas finas. Pequenas marcas laranja no bordo indicam as direções ortogonais das outras chuvas úteis.
 
@@ -19,7 +19,7 @@ Um mapa da Europa visto de cima (**E à direita**) com uma escala de graus à vo
 | Elemento | Desenho |
 |---|---|
 | Percurso / DX | Linha verde da sua estação até ao correspondente (sempre o percurso real de círculo máximo entre os locators) |
-| **Hot A / Hot B** | Pontos a 150 km (ajustável) de cada lado do ponto médio, perpendiculares ao percurso. **Vermelho = recomendado**, **rosa = fora do lóbulo da antena**, **cinzento = dentro do lóbulo** (com um aviso) |
+| **Hot A / Hot B** | Pontos de cada lado do ponto médio, perpendiculares ao percurso, à distância dada pela tabela de desvio AMS (ou introduzida à mão). **Vermelho = recomendado**, **rosa = fora do lóbulo da antena**, **cinzento = dentro do lóbulo** (com um aviso) |
 | Lóbulo da antena | O lóbulo horizontal a −3 dB em torno do azimute da antena (antena sempre apontada para o DX), com a etiqueta *lóbulo …°* |
 | Limites da zona comum | Pontos ténues *lim. A* / *lim. B* e os dois círculos onde o horizonte de cada estação encontra a camada E (ver [Geometria](Geometry-and-Path-Loss-pt#limites-da-zona-comum)) |
 | Deslocação da chuva | **Linha amarela**: direção em que a chuva selecionada (ou a mais favorável) varre o céu, ou seja, o azimute do radiante |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **ATENÇÃO: Hot A (e/ou Hot B) fica dentro do lóbulo da antena …** | O hot spot está dentro de ±θ/2 do azimute da antena (θ = lóbulo horizontal a −3 dB): com este apontamento já está coberto. É marcado a cinzento no mapa. O Hot recomendado continua a vermelho. |
 | **RADIANTE DEMASIADO ALTO (acima de 70°)** | Um radiante útil está acima de 70° visto da sua estação: os rastos descem quase verticais e refletem pouco em direção ao percurso (DF5HC, DH9GCD). As mesmas horas são marcadas com ↑ na [tabela horária](Efficiency-Calculation-pt#tabela-horária). |
+| **RADIANTE BAIXO AO LONGO DO PERCURSO** | Um radiante ativo está abaixo de 20° e a menos de 30° da direção do percurso. A eficiência calculada continua baixa (prudente), mas DJ5HG espera reflexões raras e fortes de rastos rasantes alinhados com o percurso (Hamburgo–Narvik, Quadrântidas, cerca das 19 UTC): vale a pena escutar. |
 | *Nenhuma zona comum da camada E* | O percurso é mais longo do que o dobro do alcance à altitude dos rastos: as duas estações não veem uma parte comum da camada E (salto único impossível). |
 | *Nenhum Hot recomendado* | Chuvas ativas quase ausentes neste momento. |
 

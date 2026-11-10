@@ -26,7 +26,7 @@ Encima de las pestañas hay tres filas de controles, válidas para todas las pes
 | **Altura estelas km** + **del radar** | Altura de las estelas meteóricas (por defecto 90 km). Con *del radar* marcado se usa la altura más frecuente (moda) medida por el radar de Collm; ver [Flujo radar](Radar-Flux-es). |
 | **Elevación lóbulo °** | Elevación mínima del lóbulo de tu antena (0° = horizonte). Solo se usan los puntos de la capa E que ambas estaciones ven por encima de esta elevación. |
 | **Antena Yagi: boom m** | Longitud del boom de tu Yagi. El programa muestra la longitud en λ, la ganancia (curva DL6WU) y el lóbulo a −3 dB, horizontal y vertical; ver [Geometría y atenuación](Geometry-and-Path-Loss-es#ganancia-y-lóbulo-de-la-antena). Por debajo de 2 λ la estimación es poco precisa. |
-| **Hot spot desde punto medio km** | Distancia de Hot A y Hot B al punto medio, 30–400 km (por defecto 150 km, como AMS Bulletin 203 / W8WN / MSHV). |
+| **Hot spot desde punto medio km** + **auto (AMS)** | Distancia de Hot A y Hot B al punto medio. Con *auto (AMS)* marcado (por defecto) sigue la tabla de desplazamiento de antena de J. Richardson (AMS) citada por DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 y 2000 km (unos 115, 121, 132 y 176 km del punto medio). Desmárcalo para introducir a mano 30–400 km (MSHV usa 150 km). |
 
 **Fila 3 – hora**
 

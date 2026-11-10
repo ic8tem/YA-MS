@@ -69,15 +69,15 @@ Ist 1 − |p0|² < 0, ist die Strecke länger als 2·d_H und die Stationen sehen
 
 ## Hot A und Hot B
 
-**Quelle:** Die Reflexionen konzentrieren sich in zwei Zonen („Hot-Spots“) etwa **50–150 km beiderseits des Mittelpunkts**. Das ist die Grundlage der Tabelle der Antennenablage im AMS Bulletin Nr. 203, aufgegriffen von W8WN (10° Ablage für Strecken von 1500 und 1800 km); MSHV von LZ2HV verwendet dasselbe Kriterium.
+**Quelle:** Die Reflexionen sporadischer Meteore konzentrieren sich in zwei Zonen („Hot-Spots“) beiderseits des Mittelpunkts. J. Richardson (AMS) gibt in der von DJ5HG zitierten Tabelle (*Die Geometrie von Meteorscatterverbindungen*, 2004) die Antennenablage gegenüber der direkten Richtung an: **13° bei 1000 km, 11° bei 1250 km, 10° bei 1500 und 2000 km**. Das AMS Bulletin Nr. 203, aufgegriffen von W8WN, gibt 10° bei 1500 und 1800 km an.
 
-**Entscheidung:** Hot A und Hot B sind die Punkte im Abstand s vom Mittelpunkt M, senkrecht zur Strecke (s = 150 km, einstellbar 30–400 km); A links, von deiner Station zur Gegenstation gesehen, B rechts [21]. Die von der Station aus gesehene Abweichung beträgt etwa [22]:
+**Entscheidung:** Hot A und Hot B sind die Punkte im Abstand s vom Mittelpunkt M, senkrecht zur Strecke. Mit angekreuztem *auto (AMS)* (Standard) ergibt sich s aus der Ablage von Richardsons Tabelle, linear interpoliert (13° unter 1000 km, 10° über 2000 km): s = (D/2)·tan(Ablage). Nicht angekreuzt wird s von Hand eingegeben, 30–400 km (MSHV verwendet 150 km); A links, von deiner Station zur Gegenstation gesehen, B rechts [21]. Die von der Station aus gesehene Abweichung beträgt etwa [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Prüfung:** JN70CN–IN78UO, D = 1710 km: 6,7° mit s = 100 km, **10,0° mit s = 150 km** (wie MSHV und AMS/W8WN), 13,2° mit s = 200 km.
+**Prüfung:** mit der AMS-Tabelle 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, also wie die bisher und von MSHV verwendeten 150 km; auf kurzen Strecken rückt die Tabelle die Hot-Spots näher an den Mittelpunkt.
 
 ## Dämpfung unterdichter Spuren
 

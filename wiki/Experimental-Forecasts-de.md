@@ -28,10 +28,10 @@ Die orange Zeile unter den Bedienelementen zeigt die Regel mit den aktuellen Zah
 ## Vom Radar zum Amateurfunkband
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Quelle:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, Mai 2025 – Anzahl und Intensität der Reflexionen skalieren mit **λ³**, die Dauer mit **λ²** (432 MHz liegt 14–15 dB unter 144 MHz und dauert 1/9). **Prüfung:** Die λ³-Abhängigkeit ist dieselbe wie in McKinleys Gleichung für unterdichte Spuren. Mit k = 3 werden aus 1000 Meteoren/h in Collm etwa **16 Reflexionen/h auf 144 MHz**; RMOB-Beobachter von GRAVES auf 143,050 MHz zählen üblicherweise **20 bis 140 Echos/h** (RMOB-Bulletin, Juni 2018): Die Größenordnung ist verträglich, und der Unterschied ist der Stationsfaktor K. (Handbuch Gl. 44–45.)
+**Quelle:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, Mai 2025 – Anzahl und Intensität der Reflexionen skalieren mit **λ³**, die Dauer mit **λ²** (432 MHz liegt 14–15 dB unter 144 MHz und dauert 1/9). **Prüfung:** In McKinleys Gleichung ist λ³ die Leistung einer einzelnen unterdichten Spur, nicht die Zahl der Spuren; bei Massenindex 2 skaliert die Zahl der Spuren über einer festen Schwelle etwa mit λ^1,5 (IZ5TEK; OH5IY). Das Programm behält k = 3, die experimentelle Regel von SM6FHZ, und sagt das auch; das richtige k für deine Station ergibt sich aus dem Vergleich mit RMOB. Im Vorwärtsscatter wächst die Dauer außerdem mit sec²φ (McKinley; OH5IY): Collm misst in Rückstreuung (φ = 0), daher multipliziert die Vorhersage mit sec²φ im Streckenmittelpunkt (×4 bei 60°, ×8,5 bei 70°, ×33 bei 80°). Mit k = 3 werden aus 1000 Meteoren/h in Collm etwa **16 Reflexionen/h auf 144 MHz**; RMOB-Beobachter von GRAVES auf 143,050 MHz zählen üblicherweise **20 bis 140 Echos/h** (RMOB-Bulletin, Juni 2018): Die Größenordnung ist verträglich, und der Unterschied ist der Stationsfaktor K. (Handbuch Gl. 44–45.)
 
 ## Nächste 24 Stunden
 

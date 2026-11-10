@@ -8,7 +8,7 @@
 
 Questa sotto-linguetta (la volta celeste delle versioni precedenti) mette in una sola schermata **dove** si trovano adesso le scie utili e **dove puntare**. A sinistra la **vista in pianta** della tratta; a destra l'elenco degli sciami, una piccola volta celeste con i radianti, il testo del calcolo e la **sezione** vista dalla tua antenna. Tutto si riferisce al momento scelto con *Data del calcolo (UTC)* e il cursore *Ore (da −12 a +36 h)* (tempo reale per impostazione predefinita, a passi di 15 minuti).
 
-Una **striscia sopra la vista in pianta** riassume il calcolo per quel momento: data e ora (*adesso* oppure ore rispetto ad adesso), l'**indice della tratta Σ ZHR×η**, lo **sciame più utile** con il suo ZHR e la sua efficienza, il numero di sciami sopra l'orizzonte e l'**Hot consigliato** con il suo azimut.
+Una **striscia sopra la vista in pianta** riassume il calcolo per quel momento: data e ora (*adesso* oppure ore rispetto ad adesso), l'**indice della tratta Σ ZHR×η**, lo **sciame più utile** con il suo ZHR e la sua efficienza (anche in dB rispetto al riferimento DJ5HG, vedi [Calcolo dell'efficienza](Efficiency-Calculation-it)), il numero di sciami sopra l'orizzonte e l'**Hot consigliato** con il suo azimut.
 
 Nella piccola volta celeste una **linea arancione** che passa per lo zenit dà sempre le **direzioni d'antenna giuste**, ortogonali allo scorrimento dello sciame selezionato (o del più favorevole): azimut del radiante ±90°, con l'etichetta *antenna NNN°* a entrambe le estremità e la tolleranza di ±45° come linee sottili. Brevi tacche arancioni sul bordo danno le direzioni ortogonali degli altri sciami utili.
 
@@ -19,7 +19,7 @@ Una mappa d'Europa vista dall'alto (**E a destra**) con una scala in gradi tutt'
 | Elemento | Disegno |
 |---|---|
 | Tratta / DX | Linea verde dalla tua stazione al corrispondente (sempre la vera tratta ortodromica tra i locator) |
-| **Hot A / Hot B** | Punti a 150 km (regolabili) da una parte e dall'altra del punto medio, perpendicolari alla tratta. **Rosso = consigliato**, **rosa = fuori dal lobo dell'antenna**, **grigio = dentro il lobo** (con un avviso) |
+| **Hot A / Hot B** | Punti da una parte e dall'altra del punto medio, perpendicolari alla tratta, alla distanza data dalla tabella degli scostamenti AMS (o inserita a mano). **Rosso = consigliato**, **rosa = fuori dal lobo dell'antenna**, **grigio = dentro il lobo** (con un avviso) |
 | Lobo antenna | Il lobo orizzontale a −3 dB attorno all'azimut dell'antenna (antenna sempre puntata verso il DX), con l'etichetta *lobo …°* |
 | Limiti zona comune | Punti tenui *lim. A* / *lim. B* e i due cerchi dove l'orizzonte di ciascuna stazione incontra lo strato E (vedi [Geometria](Geometry-and-Path-Loss-it#limiti-della-zona-comune)) |
 | Scorrimento sciame | **Linea gialla**: direzione in cui lo sciame selezionato (o il più favorevole) spazza il cielo, cioè l'azimut del radiante |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **ATTENZIONE: Hot A (e/o Hot B) entra nel lobo dell'antenna …** | L'hot spot è entro ±θ/2 dall'azimut dell'antenna (θ = lobo orizzontale a −3 dB): con questo puntamento è già coperto. Mostrato in grigio sulla mappa. L'Hot consigliato resta rosso. |
 | **RADIANTE TROPPO ALTO (sopra 70°)** | Un radiante utile è sopra 70° dalla tua stazione: le scie scendono quasi verticali e riflettono poco verso la tratta (DF5HC, DH9GCD). Le stesse ore sono segnate con ↑ nella [tabella oraria](Efficiency-Calculation-it#tabella-oraria). |
+| **RADIANTE BASSO LUNGO LA TRATTA** | Un radiante attivo è sotto 20° ed entro 30° dalla direzione della tratta. L'efficienza calcolata resta bassa (prudente), ma DJ5HG si aspetta riflessioni rare e forti da scie radenti allineate con la tratta (Amburgo–Narvik, Quadrantidi, verso le 19 UTC): vale la pena ascoltare. |
 | *Nessuna zona comune dello strato E* | La tratta è più lunga del doppio della portata alla quota delle scie: le due stazioni non vedono una parte comune dello strato E (salto singolo impossibile). |
 | *Nessun Hot consigliato* | Sciami attivi quasi assenti in questo momento. |
 

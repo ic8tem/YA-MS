@@ -61,7 +61,7 @@ y_top과 y0은 가장 높은 눈금과 0의 행, N_top은 가장 높은 레이�
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-**SM6FHZ**의 경험 규칙(VUSHF 2025): 반사의 수와 세기는 λ³, 지속 시간은 λ²에 비례합니다. λ³ 의존성은 McKinley의 저밀도 흔적 식과 같습니다. IARU Region 1의 최대 핑 지속 시간도 표시됩니다(50 MHz 1000 ms, 70 MHz 500 ms, 144 MHz 100 ms, 432 MHz 13 ms). 값은 참고용이며 실제 운용 경험과 비교해야 합니다. 국 계수 K와 RMOB 비교는 [예보 실험 적용](Experimental-Forecasts-ko)에 있습니다.
+**SM6FHZ**의 경험 규칙(VUSHF 2025): 반사의 수와 세기는 λ³, 지속 시간은 λ²에 비례합니다(McKinley에서 λ³은 흔적 하나의 전력입니다. 흔적의 수는 대략 λ^1.5에 비례하고, 전방 산란에서는 지속 시간도 sec²φ에 따라 늘어납니다: [예보 실험 적용](Experimental-Forecasts-ko) 참조). IARU Region 1의 최대 핑 지속 시간도 표시됩니다(50 MHz 1000 ms, 70 MHz 500 ms, 144 MHz 100 ms, 432 MHz 13 ms). 값은 참고용이며 실제 운용 경험과 비교해야 합니다. 국 계수 K와 RMOB 비교는 [예보 실험 적용](Experimental-Forecasts-ko)에 있습니다.
 
 ## 오프라인
 

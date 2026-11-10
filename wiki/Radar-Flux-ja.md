@@ -61,7 +61,7 @@ y_top と y0 は最上部の目盛とゼロの行、N_top は最上部のラベ�
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-**SM6FHZ** の経験則 (VUSHF 2025): 反射の数と強度は λ³ に、継続時間は λ² に比例します。λ³ への依存は McKinley のアンダーデンスの式と同じです。IARU Region 1 の最大ピング継続時間も表示されます (50 MHz で 1000 ms、70 MHz で 500 ms、144 MHz で 100 ms、432 MHz で 13 ms)。値は目安であり、実際の運用経験と比較してください。局係数 K と RMOB との比較は [実験的予報](Experimental-Forecasts-ja) にあります。
+**SM6FHZ** の経験則 (VUSHF 2025): 反射の数と強度は λ³ に、継続時間は λ² に比例します (McKinley では λ³ は 1 本の流星痕の電力です。流星痕の数はおよそ λ^1.5 に比例し、前方散乱では継続時間も sec²φ とともに増えます: [実験的予報](Experimental-Forecasts-ja) を参照)。IARU Region 1 の最大ピング継続時間も表示されます (50 MHz で 1000 ms、70 MHz で 500 ms、144 MHz で 100 ms、432 MHz で 13 ms)。値は目安であり、実際の運用経験と比較してください。局係数 K と RMOB との比較は [実験的予報](Experimental-Forecasts-ja) にあります。
 
 ## オフライン
 

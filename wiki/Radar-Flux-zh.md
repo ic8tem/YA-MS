@@ -61,7 +61,7 @@ y_top 和 y0 分别是最高刻度和零点所在的行，N_top 是从最高标�
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-**SM6FHZ** 的经验规则（VUSHF 2025）：反射的数量和强度按 λ³ 缩放，持续时间按 λ² 缩放；λ³ 关系与 McKinley 的欠密余迹方程一致。同时显示 IARU 第一区的最大 ping 持续时间（50 MHz 为 1000 ms，70 MHz 为 500 ms，144 MHz 为 100 ms，432 MHz 为 13 ms）。这些数值仅供参考，应与实际上机经验比较。电台因子 K 以及与 RMOB 的比较见[试验性预报](Experimental-Forecasts-zh)。
+**SM6FHZ** 的经验规则（VUSHF 2025）：反射的数量和强度按 λ³ 缩放，持续时间按 λ² 缩放（在 McKinley 中 λ³ 是单条余迹的功率；余迹数量约按 λ^1.5 缩放，在前向散射中持续时间还随 sec²φ 增长：参见[试验性预报](Experimental-Forecasts-zh)）。同时显示 IARU 第一区的最大 ping 持续时间（50 MHz 为 1000 ms，70 MHz 为 500 ms，144 MHz 为 100 ms，432 MHz 为 13 ms）。这些数值仅供参考，应与实际上机经验比较。电台因子 K 以及与 RMOB 的比较见[试验性预报](Experimental-Forecasts-zh)。
 
 ## 离线
 

@@ -53,7 +53,7 @@ Toutes les étapes figurent dans le [manuel de calcul](Efficiency-Explanation-fr
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-La même loi est à la base de QTFGUI de DJ5HG (diffusion en cône). La condition est acceptée avec une tolérance gaussienne σ = 0,05 rad (environ 3°) – *choix du programme* :
+La même loi est à la base de QTFGUI de DJ5HG et de son texte *"Die Geometrie von Meteorscatterverbindungen"* (2004) : la traînée diffuse sur un cône dont elle est l'axe, et seul un récepteur situé sur le cône l'entend. Pour une traînée idéale, la paroi du cône est très mince (un radiateur long de milliers de longueurs d'onde) ; le programme accepte la condition avec une tolérance gaussienne σ = 0,05 rad (environ 3°), qui représente ce que le cône idéal ne voit pas : la dispersion des radiants des essaims (0,3–1,4° mesurés par le GMN), les traînées courbées par le vent et leur longueur finie – *choix du programme* :
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 Le nombre de météores qui atteignent un point est proportionnel au sinus de l'élévation du radiant en ce point (ŝ·û_P), la même correction que celle utilisée par l'IMO pour le ZHR.
 
+**Option « Traînées plus longues avec un radiant bas (DJ5HG) »** (case au-dessus du graphique, désactivée par défaut, avec infobulle) : DJ5HG remarque qu'avec un radiant bas il tombe moins de météores par km², mais que les traînées sont plus longues (jusqu'à 100 km utiles) et satisfont plus souvent la loi de réflexion. Option activée, le poids devient min(sin El, 15/100) : l'épaisseur utile de la couche, 15 km, divisée par le sinus de l'élévation donne la longueur de la traînée, plafonnée à 100 km. Au-dessus d'environ 9°, les deux effets se compensent. Désactivée, le calcul reste prudent.
+
 **3. Somme et pourcentage.** Points tous les 15 km à l'altitude des traînées, uniquement là où les deux stations les voient au-dessus de l'élévation du lobe (*choix*). 100 % correspond à la position de radiant la plus favorable pour ce trajet :
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 F est calculé une fois par trajet sur une grille de directions (azimut tous les 5°, élévation tous les 2,5°) puis interpolé.
+
+**Efficacité en dB (référence DJ5HG).** Le pourcentage se rapporte uniquement à la meilleure position du radiant pour ce trajet. Pour comparer des trajets différents, le programme donne aussi l'efficacité en dB par rapport à la référence fixe de DJ5HG : 0 dB est le maximum d'un trajet nord–sud de 1000 km à cheval sur l'équateur, avec le radiant sur l'équateur céleste à l'équinoxe, calculé avec la même altitude et les mêmes poids. DJ5HG donne ses valeurs à mieux que 6 dB.
 
 **4. Côté et indice.**
 
@@ -85,7 +89,9 @@ La lettre du tableau est le côté qui a la plus grande fraction. *Choix du prog
 
 ## Comparaison DH9GCD
 
-Une vérification indépendante : la formule de la meilleure direction de **DH9GCD**, rapportée par **DF5HC** (conférence DARC, janvier 2018), où El et Az sont l'élévation et l'azimut du radiant vus de votre station et P l'azimut du correspondant :
+Les sources primaires pour la meilleure direction sont Eshleman & Mlodnosky et Meeks & James (Proc. IRE, 1957), Hines (1955) et sa vérification expérimentale par Forsyth, Hines & Vogan (1955) : seuls les radiants situés sur le demi-cercle de ciel perpendiculaire à la bissectrice de l'angle de diffusion sont utiles, le nombre de traînées croît avec sin El et, près du point milieu, les traînées utiles tombent à environ H·tan El sur le côté, du côté opposé au radiant. DJ5HG ajoute une réserve : avec un radiant **bas** exactement dans l'axe du trajet, la formule de McKinley donne des signaux forts (Hambourg–Narvik, Quadrantides, vers 19 UTC), donc « radiant aligné avec le trajet = presque zéro » ne vaut que pour un radiant haut ; le programme reste prudent et affiche l'avertissement *RADIANT BAS LE LONG DU TRAJET*.
+
+Une vérification indépendante : la formule de la meilleure direction de **DH9GCD**, rapportée par **DF5HC** (conférence DARC, janvier 2018) – elle n'a pas de source primaire publiée –, où El et Az sont l'élévation et l'azimut du radiant vus de votre station et P l'azimut du correspondant :
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -101,4 +107,4 @@ Elle est maximale avec le radiant à 45° et perpendiculaire au trajet. DF5HC co
 | QTFGUI de DJ5HG, Hambourg JO53IM – Barcelone, Quadrantides, 4 janvier (exemple de son manuel) | QTFGUI : 07:00 pointage 252°, −8 dB ; 08:00 aucune zone de réflexion ; 09:00 pointage 168°, −4 dB. YA-MS (altitude 102 km comme QTFGUI) : 07:00 241°, −5,4 dB ; 08:00 0,6 % (−22 dB) ; 09:00 161°, −4,0 dB. DH9GCD : 26 %, 2 %, 32 %. Les trois méthodes voient le creux de 08:00, avec le radiant presque au zénith |
 | Échantillonnage tous les 5 km au lieu de 15 km | les pourcentages varient de moins de 0,3 point |
 
-> L'échelle utilisée par OH5IY et MCG_MS n'est pas connue en détail (les manuels de MS-Soft ne sont pas disponibles) : comparez les pourcentages avec ces programmes avant de les considérer comme équivalents. Le modèle ne prend en compte que les traînées sous-denses, avec des antennes isotropes ; les salves sur-denses et le fond sporadique ne font pas partie de l'efficacité (le fond sporadique est représenté par le flux radar).
+> La documentation de MS-Soft 5.2 définit l'efficacité d'OH5IY comme un indice relatif pour les seules traînées sous-denses, avec deux facteurs (élévation du radiant, optimale vers 45°, et angle avec le trajet, optimal à 90°) et un minimum relevé à la main à 20 % pour les traînées sur-denses ; la formule n'est pas publiée. MCG_MS la calcule pour quatre directions fixes et, avec le locator du correspondant, pour le trajet réel. Le modèle ne prend en compte que les traînées sous-denses, avec des antennes isotropes ; les salves sur-denses et le fond sporadique ne font pas partie de l'efficacité (le fond sporadique est représenté par le flux radar).

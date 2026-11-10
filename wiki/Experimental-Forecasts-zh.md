@@ -28,10 +28,10 @@
 ## 从雷达到业余频段
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**来源：** SM6FHZ，*"432 MHz Meteorscatter, Challenges and Techniques"*，第 45 届 Nordic VUSHF，2025 年 5 月——反射的数量和强度按 **λ³** 缩放，持续时间按 **λ²** 缩放（432 MHz 比 144 MHz 低 14–15 dB，持续时间为其 1/9）。**验证：** λ³ 关系与 McKinley 的欠密余迹方程一致。取 k = 3 时，Collm 的 1000 流星/小时约相当于 **144 MHz 上 16 次反射/小时**；在 143.050 MHz 上收听 GRAVES 的 RMOB 观测者通常统计到 **20 至 140 次回波/小时**（RMOB 公报，2018 年 6 月）：数量级相符，差异即为电台因子 K。（手册公式 44–45。）
+**来源：** SM6FHZ，*"432 MHz Meteorscatter, Challenges and Techniques"*，第 45 届 Nordic VUSHF，2025 年 5 月——反射的数量和强度按 **λ³** 缩放，持续时间按 **λ²** 缩放（432 MHz 比 144 MHz 低 14–15 dB，持续时间为其 1/9）。**验证：** 在 McKinley 方程中，λ³ 是单条欠密余迹的功率，而不是余迹的数量；质量指数为 2 时，高于固定阈值的余迹数量约按 λ^1.5 缩放（IZ5TEK；OH5IY）。程序保留 SM6FHZ 的经验规则 k = 3，并加以说明；适合你电台的 k 来自与 RMOB 的比较。在前向散射中，持续时间还随 sec²φ 增长（McKinley；OH5IY）：Collm 以后向散射（φ = 0）测量，因此预报乘以路径中点处的 sec²φ（60° 时 ×4，70° 时 ×8.5，80° 时 ×33）。取 k = 3 时，Collm 的 1000 流星/小时约相当于 **144 MHz 上 16 次反射/小时**；在 143.050 MHz 上收听 GRAVES 的 RMOB 观测者通常统计到 **20 至 140 次回波/小时**（RMOB 公报，2018 年 6 月）：数量级相符，差异即为电台因子 K。（手册公式 44–45。）
 
 ## 未来 24 小时
 

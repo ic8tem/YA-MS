@@ -8,7 +8,7 @@
 
 Ce sous-onglet (la voûte céleste des versions précédentes) réunit sur un seul écran **où** se trouvent en ce moment les traînées utiles et **où pointer**. À gauche, la **vue en plan** du trajet ; à droite, la liste des essaims, une petite voûte céleste avec les radiants, le texte du calcul et la **coupe** vue depuis votre antenne. Tout se rapporte à l'instant choisi avec *Date du calcul (UTC)* et le curseur *Heures (de −12 à +36 h)* (temps réel par défaut, par pas de 15 minutes).
 
-Un **bandeau au-dessus de la vue en plan** résume le calcul pour cet instant : date et heure (*maintenant* ou nombre d'heures par rapport à maintenant), l'**indice du trajet Σ ZHR×η**, l'**essaim le plus utile** avec son ZHR et son efficacité, le nombre d'essaims au-dessus de l'horizon et le **Hot conseillé** avec son azimut.
+Un **bandeau au-dessus de la vue en plan** résume le calcul pour cet instant : date et heure (*maintenant* ou nombre d'heures par rapport à maintenant), l'**indice du trajet Σ ZHR×η**, l'**essaim le plus utile** avec son ZHR et son efficacité (aussi en dB par rapport à la référence DJ5HG, voir [Calcul de l'efficacité](Efficiency-Calculation-fr)), le nombre d'essaims au-dessus de l'horizon et le **Hot conseillé** avec son azimut.
 
 Dans la petite voûte céleste, une **ligne orange** passant par le zénith donne toujours les **bonnes directions d'antenne**, orthogonales au déplacement de l'essaim sélectionné (ou du plus favorable) : azimut du radiant ±90°, avec l'étiquette *antenne NNN°* aux deux extrémités et la tolérance de ±45° en traits fins. De petits traits orange sur le bord indiquent les directions orthogonales des autres essaims utiles.
 
@@ -19,7 +19,7 @@ Une carte de l'Europe vue de dessus (**E à droite**) avec une graduation en deg
 | Élément | Représentation |
 |---|---|
 | Trajet / DX | Ligne verte de votre station au correspondant (toujours le trajet orthodromique réel entre les locators) |
-| **Hot A / Hot B** | Points à 150 km (réglable) de part et d'autre du point milieu, perpendiculairement au trajet. **Rouge = conseillé**, **rose = hors du lobe de l'antenne**, **gris = dans le lobe** (avec un avertissement) |
+| **Hot A / Hot B** | Points de part et d'autre du point milieu, perpendiculairement au trajet, à la distance donnée par le tableau des décalages AMS (ou saisie à la main). **Rouge = conseillé**, **rose = hors du lobe de l'antenne**, **gris = dans le lobe** (avec un avertissement) |
 | Lobe de l'antenne | Le lobe horizontal à −3 dB autour de l'azimut de l'antenne (antenne toujours pointée vers le correspondant), étiqueté *lobe …°* |
 | Limites de la zone commune | Points pâles *lim. A* / *lim. B* et les deux cercles où l'horizon de chaque station rencontre la couche E (voir [Géométrie](Geometry-and-Path-Loss-fr#limites-de-la-zone-commune)) |
 | Déplacement de l'essaim | **Ligne jaune** : direction dans laquelle l'essaim sélectionné (ou le plus favorable) balaie le ciel, c'est-à-dire l'azimut du radiant |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **ATTENTION : Hot A (et/ou Hot B) est dans le lobe de l'antenne …** | Le hot spot se trouve à ±θ/2 de l'azimut de l'antenne (θ = lobe horizontal à −3 dB) : avec ce pointage, il est déjà couvert. Affiché en gris sur la carte. Le Hot conseillé reste rouge. |
 | **RADIANT TROP HAUT (au-dessus de 70°)** | Un radiant utile est à plus de 70° vu de votre station : les traînées descendent presque verticalement et réfléchissent peu vers le trajet (DF5HC, DH9GCD). Les mêmes heures sont marquées ↑ dans le [tableau horaire](Efficiency-Calculation-fr#tableau-horaire). |
+| **RADIANT BAS LE LONG DU TRAJET** | Un radiant actif est sous 20° et à moins de 30° de la direction du trajet. L'efficacité calculée reste faible (prudente), mais DJ5HG s'attend à des réflexions rares et fortes de traînées rasantes alignées avec le trajet (Hambourg–Narvik, Quadrantides, vers 19 UTC) : cela vaut la peine d'écouter. |
 | *Aucune zone commune de la couche E* | Le trajet est plus long que deux fois la portée à l'altitude des traînées : les deux stations ne voient aucune partie commune de la couche E (bond unique impossible). |
 | *Aucun Hot conseillé* | Presque aucun essaim actif à cette heure. |
 

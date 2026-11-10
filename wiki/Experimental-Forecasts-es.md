@@ -28,10 +28,10 @@ La línea naranja bajo los controles muestra la regla con los números actuales,
 ## Del radar a la banda de radioaficionado
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Fuente:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, mayo de 2025: el número y la intensidad de las reflexiones escalan con **λ³**, la duración con **λ²** (432 MHz está 14–15 dB por debajo de 144 MHz y dura 1/9). **Verificación:** la dependencia de λ³ es la misma que en la ecuación subdensa de McKinley. Con k = 3, 1000 meteoros/hora en Collm se convierten en unas **16 reflexiones/hora en 144 MHz**; los observadores RMOB de GRAVES en 143,050 MHz suelen contar **de 20 a 140 ecos/hora** (boletín RMOB, junio de 2018): el orden de magnitud es compatible, y la diferencia es el factor de estación K. (Ec. 44–45 del manual.)
+**Fuente:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, mayo de 2025: el número y la intensidad de las reflexiones escalan con **λ³**, la duración con **λ²** (432 MHz está 14–15 dB por debajo de 144 MHz y dura 1/9). **Verificación:** en la ecuación de McKinley λ³ es la potencia de una sola estela subdensa, no el número de estelas; con índice de masa 2, el número de estelas por encima de un umbral fijo escala aproximadamente como λ^1,5 (IZ5TEK; OH5IY). El programa mantiene k = 3, la regla experimental de SM6FHZ, y lo indica; el k correcto para tu estación sale de la comparación con RMOB. En dispersión hacia delante la duración crece además con sec²φ (McKinley; OH5IY): Collm mide en retrodispersión (φ = 0), así que la previsión multiplica por sec²φ en el punto medio del trayecto (×4 a 60°, ×8,5 a 70°, ×33 a 80°). Con k = 3, 1000 meteoros/hora en Collm se convierten en unas **16 reflexiones/hora en 144 MHz**; los observadores RMOB de GRAVES en 143,050 MHz suelen contar **de 20 a 140 ecos/hora** (boletín RMOB, junio de 2018): el orden de magnitud es compatible, y la diferencia es el factor de estación K. (Ec. 44–45 del manual.)
 
 ## Próximas 24 horas
 

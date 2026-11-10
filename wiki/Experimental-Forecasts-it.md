@@ -28,10 +28,10 @@ La riga arancione sotto i comandi mostra la regola con i numeri attuali, per ese
 ## Dal radar alla banda radioamatoriale
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Fonte:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maggio 2025 – numero e intensità delle riflessioni scalano con **λ³**, la durata con **λ²** (432 MHz sta 14–15 dB sotto 144 MHz e dura 1/9). **Verifica:** la dipendenza da λ³ è la stessa dell'equazione delle scie sottodense di McKinley. Con k = 3, 1000 meteore/ora a Collm diventano circa **16 riflessioni/ora a 144 MHz**; gli osservatori RMOB di GRAVES su 143,050 MHz contano di solito **da 20 a 140 eco/ora** (bollettino RMOB, giugno 2018): l'ordine di grandezza è compatibile e la differenza è il fattore di stazione K. (Eq. 44–45 del manuale.)
+**Fonte:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maggio 2025 – numero e intensità delle riflessioni scalano con **λ³**, la durata con **λ²** (432 MHz sta 14–15 dB sotto 144 MHz e dura 1/9). **Verifica:** nell'equazione di McKinley λ³ è la potenza di una singola scia sottodensa, non il numero di scie; con indice di massa 2 il numero di scie sopra una soglia fissa scala circa come λ^1,5 (IZ5TEK; OH5IY). Il programma mantiene k = 3, la regola sperimentale di SM6FHZ, e lo dichiara; il k giusto per la tua stazione viene dal confronto con RMOB. In forward scatter anche la durata cresce con sec²φ (McKinley; OH5IY): Collm misura in backscatter (φ = 0), quindi la previsione moltiplica per sec²φ al punto medio della tratta (×4 a 60°, ×8,5 a 70°, ×33 a 80°). Con k = 3, 1000 meteore/ora a Collm diventano circa **16 riflessioni/ora a 144 MHz**; gli osservatori RMOB di GRAVES su 143,050 MHz contano di solito **da 20 a 140 eco/ora** (bollettino RMOB, giugno 2018): l'ordine di grandezza è compatibile e la differenza è il fattore di stazione K. (Eq. 44–45 del manuale.)
 
 ## Prossime 24 ore
 

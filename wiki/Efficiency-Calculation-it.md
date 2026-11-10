@@ -53,7 +53,7 @@ Tutti i passaggi sono nel [manuale dei calcoli](Efficiency-Explanation-it) (`doc
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-La stessa legge sta alla base di QTFGUI di DJ5HG (cone scattering). La condizione è accettata con una tolleranza gaussiana σ = 0,05 rad (circa 3°) – *scelta del programma*:
+La stessa legge sta alla base di QTFGUI di DJ5HG e del suo testo *"Die Geometrie von Meteorscatterverbindungen"* (2004): la scia diffonde su un cono che ha la scia come asse, e solo un ricevitore sul cono la sente. Per una scia ideale la parete del cono è sottilissima (un radiatore lungo migliaia di lunghezze d'onda); il programma accetta la condizione con una tolleranza gaussiana σ = 0,05 rad (circa 3°), che rappresenta ciò che il cono ideale non vede: la dispersione dei radianti degli sciami (0,3–1,4° misurati da GMN), le scie piegate dal vento e la loro lunghezza finita – *scelta del programma*:
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 Il numero di meteore che raggiungono un punto è proporzionale al seno dell'elevazione del radiante in quel punto (ŝ·û_P), la stessa correzione che l'IMO usa per lo ZHR.
 
+**Opzione "Scie più lunghe con radiante basso (DJ5HG)"** (casella sopra il grafico, disattivata per impostazione predefinita, con tooltip): DJ5HG osserva che con il radiante basso cadono meno meteore per km², ma le scie sono più lunghe (fino a 100 km utili) e soddisfano più spesso la legge di riflessione. Con l'opzione attiva il peso diventa min(sin El, 15/100): lo spessore utile dello strato, 15 km, diviso per il seno dell'elevazione dà la lunghezza della scia, limitata a 100 km. Sopra circa 9° i due effetti si compensano. Disattivata, il calcolo resta prudente.
+
 **3. Somma e percentuale.** Punti ogni 15 km alla quota delle scie, solo dove entrambe le stazioni li vedono sopra l'elevazione del lobo (*scelta*). Il 100 % è la posizione del radiante più favorevole per quella tratta:
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 F si calcola una volta per tratta su una griglia di direzioni (azimut ogni 5°, elevazione ogni 2,5°) e si interpola.
+
+**Efficienza in dB (riferimento DJ5HG).** La percentuale è relativa solo alla posizione migliore del radiante per quella tratta. Per confrontare tratte diverse il programma dà anche l'efficienza in dB rispetto al riferimento fisso di DJ5HG: 0 dB è il massimo di una tratta nord–sud di 1000 km a cavallo dell'equatore con il radiante sull'equatore celeste all'equinozio, calcolato con la stessa quota e gli stessi pesi. DJ5HG indica i suoi valori come migliori di 6 dB.
 
 **4. Lato e indice.**
 
@@ -85,7 +89,9 @@ La lettera nella tabella è il lato con la frazione maggiore. *Scelte del progra
 
 ## Confronto con DH9GCD
 
-Una verifica indipendente: la formula della direzione migliore di **DH9GCD**, riportata da **DF5HC** (convegno DARC, gennaio 2018), con El e Az elevazione e azimut del radiante visti dalla tua stazione e P l'azimut del corrispondente:
+Le fonti primarie per la direzione migliore sono Eshleman & Mlodnosky e Meeks & James (Proc. IRE, 1957), Hines (1955) e la sua verifica sperimentale di Forsyth, Hines & Vogan (1955): sono utili solo i radianti sul semicerchio di cielo perpendicolare alla bisettrice dell'angolo di diffusione, il numero di scie cresce con sin El e, vicino al punto medio, le scie utili cadono a circa H·tan El di lato, dalla parte opposta al radiante. DJ5HG aggiunge una riserva: con un radiante **basso** proprio lungo la tratta la formula di McKinley dà segnali forti (Amburgo–Narvik, Quadrantidi, verso le 19 UTC), quindi "radiante allineato con la tratta = quasi zero" vale solo per un radiante alto; il programma resta prudente e mostra l'avviso *RADIANTE BASSO LUNGO LA TRATTA*.
+
+Una verifica indipendente: la formula della direzione migliore di **DH9GCD**, riportata da **DF5HC** (convegno DARC, gennaio 2018) – non ha una fonte primaria pubblicata – con El e Az elevazione e azimut del radiante visti dalla tua stazione e P l'azimut del corrispondente:
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -101,4 +107,4 @@ E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)
 | QTFGUI di DJ5HG, Amburgo JO53IM – Barcellona, Quadrantidi, 4 gennaio (esempio del suo manuale) | QTFGUI: 07:00 puntamento 252°, −8 dB; 08:00 nessuna zona di riflessione; 09:00 puntamento 168°, −4 dB. YA-MS (quota 102 km come QTFGUI): 07:00 241°, −5,4 dB; 08:00 0,6 % (−22 dB); 09:00 161°, −4,0 dB. DH9GCD: 26 %, 2 %, 32 %. Tutti e tre i metodi vedono il buco delle 08:00, con il radiante quasi allo zenit |
 | Campionamento ogni 5 km invece di 15 km | le percentuali cambiano di meno di 0,3 punti |
 
-> La scala usata da OH5IY e da MCG_MS non è nota nei dettagli (i manuali di MS-Soft non sono disponibili): confronta le percentuali con quei programmi prima di considerarle equivalenti. Il modello considera solo le scie sottodense, con antenne isotrope; i burst sovradensi e il fondo sporadico non entrano nell'efficienza (il fondo sporadico è rappresentato dal flusso radar).
+> La documentazione di MS-Soft 5.2 definisce l'efficienza di OH5IY come un indice relativo per le sole scie sottodense, con due fattori (elevazione del radiante, migliore verso 45°, e angolo con la tratta, migliore a 90°) e un minimo alzato a mano al 20 % per le scie sovradense; la formula non è pubblicata. MCG_MS la calcola per quattro direzioni fisse e, con il locatore del DX, per la tratta reale. Il modello considera solo le scie sottodense, con antenne isotrope; i burst sovradensi e il fondo sporadico non entrano nell'efficienza (il fondo sporadico è rappresentato dal flusso radar).

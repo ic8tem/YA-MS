@@ -61,7 +61,7 @@ Se a escala do gráfico das altitudes mudar, o programa avisa: *as estatísticas
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-Regras experimentais de **SM6FHZ** (VUSHF 2025): o número e a intensidade das reflexões escalam com λ³, a duração com λ²; a dependência de λ³ é a mesma da equação subdensa de McKinley. É também mostrada a duração máxima dos pings segundo a IARU Região 1 (1000 ms a 50 MHz, 500 ms a 70 MHz, 100 ms a 144 MHz, 13 ms a 432 MHz). Os valores são indicativos, a comparar com a experiência no ar. O fator de estação K e a comparação com o RMOB estão em [Previsões experimentais](Experimental-Forecasts-pt).
+Regras experimentais de **SM6FHZ** (VUSHF 2025): o número e a intensidade das reflexões escalam com λ³, a duração com λ² (em McKinley λ³ é a potência de um rasto; o número de rastos escala aproximadamente com λ^1,5, e em difusão para a frente as durações também crescem com sec²φ: ver [Previsões experimentais](Experimental-Forecasts-pt)). É também mostrada a duração máxima dos pings segundo a IARU Região 1 (1000 ms a 50 MHz, 500 ms a 70 MHz, 100 ms a 144 MHz, 13 ms a 432 MHz). Os valores são indicativos, a comparar com a experiência no ar. O fator de estação K e a comparação com o RMOB estão em [Previsões experimentais](Experimental-Forecasts-pt).
 
 ## Sem ligação
 

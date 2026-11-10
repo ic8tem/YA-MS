@@ -61,7 +61,7 @@ Aus dem Höhenhistogramm (n_k Meteore im km k, mittlere Höhe h_k):
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-Experimentelle Regeln von **SM6FHZ** (VUSHF 2025): Anzahl und Intensität der Reflexionen skalieren mit λ³, die Dauer mit λ²; die λ³-Abhängigkeit ist dieselbe wie in McKinleys Gleichung für unterdichte Spuren. Angezeigt wird auch die maximale Pingdauer nach IARU Region 1 (1000 ms auf 50 MHz, 500 ms auf 70 MHz, 100 ms auf 144 MHz, 13 ms auf 432 MHz). Die Werte sind Richtwerte, mit der Praxis auf dem Band zu vergleichen. Der Stationsfaktor K und der Vergleich mit RMOB stehen in [Experimentelle Vorhersage](Experimental-Forecasts-de).
+Experimentelle Regeln von **SM6FHZ** (VUSHF 2025): Anzahl und Intensität der Reflexionen skalieren mit λ³, die Dauer mit λ² (bei McKinley ist λ³ die Leistung einer Spur; die Zahl der Spuren skaliert etwa mit λ^1,5, und im Vorwärtsscatter wachsen die Dauern außerdem mit sec²φ: siehe [Experimentelle Vorhersage](Experimental-Forecasts-de)). Angezeigt wird auch die maximale Pingdauer nach IARU Region 1 (1000 ms auf 50 MHz, 500 ms auf 70 MHz, 100 ms auf 144 MHz, 13 ms auf 432 MHz). Die Werte sind Richtwerte, mit der Praxis auf dem Band zu vergleichen. Der Stationsfaktor K und der Vergleich mit RMOB stehen in [Experimentelle Vorhersage](Experimental-Forecasts-de).
 
 ## Offline
 

@@ -8,7 +8,7 @@
 
 Dieser Unterreiter (die Himmelsansicht früherer Versionen) zeigt auf einem Bildschirm, **wo** die nutzbaren Spuren jetzt liegen und **wohin** du die Antenne richten sollst. Links die **Draufsicht** der Strecke; rechts die Liste der Ströme, eine kleine Himmelsansicht mit den Radianten, der Text der Berechnung und der **Schnitt** von deiner Antenne aus gesehen. Alles bezieht sich auf den mit *Berechnungsdatum (UTC)* und dem Schieberegler *Stunden (−12 bis +36 h)* gewählten Zeitpunkt (standardmäßig Echtzeit, in Schritten von 15 Minuten).
 
-Eine **Leiste über der Draufsicht** fasst die Berechnung für diesen Zeitpunkt zusammen: Datum und Uhrzeit (*jetzt* oder Stunden ab jetzt), den **Streckenindex Σ ZHR×η**, den **nützlichsten Strom** mit seiner ZHR und Effektivität, die Zahl der Ströme über dem Horizont und den **empfohlenen Hot** mit seinem Azimut.
+Eine **Leiste über der Draufsicht** fasst die Berechnung für diesen Zeitpunkt zusammen: Datum und Uhrzeit (*jetzt* oder Stunden ab jetzt), den **Streckenindex Σ ZHR×η**, den **nützlichsten Strom** mit seiner ZHR und Effektivität (auch in dB bezogen auf die Referenz von DJ5HG, siehe [Effektivitätsberechnung](Efficiency-Calculation-de)), die Zahl der Ströme über dem Horizont und den **empfohlenen Hot** mit seinem Azimut.
 
 In der kleinen Himmelsansicht zeigt eine **orange Linie** durch den Zenit immer die **richtigen Antennenrichtungen**, senkrecht zum Zug des gewählten (oder des günstigsten) Stroms: Radiant-Azimut ±90°, an beiden Enden mit *Antenne NNN°* beschriftet, die Toleranz von ±45° als dünne Linien. Kurze orange Striche am Rand geben die senkrechten Richtungen der anderen nutzbaren Ströme an.
 
@@ -19,7 +19,7 @@ Eine Europakarte von oben gesehen (**O rechts**) mit einer Gradskala ringsum. Di
 | Element | Darstellung |
 |---|---|
 | Strecke / DX | Grüne Linie von deiner Station zur Gegenstation (immer die tatsächliche Großkreisstrecke zwischen den Locatoren) |
-| **Hot A / Hot B** | Punkte 150 km (einstellbar) beiderseits des Mittelpunkts, senkrecht zur Strecke. **Rot = empfohlen**, **rosa = außerhalb der Antennenkeule**, **grau = in der Keule** (mit Warnung) |
+| **Hot A / Hot B** | Punkte beiderseits des Mittelpunkts, senkrecht zur Strecke, im Abstand nach der AMS-Ablagetabelle (oder von Hand eingegeben). **Rot = empfohlen**, **rosa = außerhalb der Antennenkeule**, **grau = in der Keule** (mit Warnung) |
 | Antennenkeule | Die horizontale −3-dB-Keule um den Antennenazimut (Antenne immer auf die Gegenstation gerichtet), beschriftet mit *Keule …°* |
 | Grenzen gem. Zone | Blasse Punkte *Gr. A* / *Gr. B* und die beiden Kreise, an denen der Horizont jeder Station die E-Schicht trifft (siehe [Geometrie](Geometry-and-Path-Loss-de#grenzen-der-gemeinsamen-zone)) |
 | Zug des Stroms | **Gelbe Linie**: Richtung, in der der gewählte (oder der günstigste) Strom über den Himmel zieht, d. h. der Radiant-Azimut |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **ACHTUNG: Hot A (und/oder Hot B) liegt in der Antennenkeule …** | Der Hot-Spot liegt innerhalb von ±θ/2 um den Antennenazimut (θ = horizontaler Öffnungswinkel bei −3 dB): mit dieser Ausrichtung bereits abgedeckt. Auf der Karte grau markiert. Der empfohlene Hot bleibt rot. |
 | **RADIANT ZU HOCH (über 70°)** | Ein nutzbarer Radiant steht an deiner Station höher als 70°: Die Spuren verlaufen fast senkrecht und reflektieren wenig in Richtung der Strecke (DF5HC, DH9GCD). Dieselben Stunden sind in der [Stundentabelle](Efficiency-Calculation-de#stundentabelle) mit ↑ markiert. |
+| **NIEDRIGER RADIANT ENTLANG DER STRECKE** | Ein aktiver Radiant steht unter 20° und weniger als 30° von der Streckenrichtung entfernt. Die berechnete Effektivität bleibt niedrig (vorsichtig), aber DJ5HG erwartet seltene, starke Reflexionen von streifenden Spuren in Streckenrichtung (Hamburg–Narvik, Quadrantiden, etwa 19 UTC): Zuhören lohnt sich. |
 | *Keine gemeinsame Zone der E-Schicht* | Die Strecke ist länger als die doppelte Reichweite in Spurhöhe: Die beiden Stationen sehen keinen gemeinsamen Teil der E-Schicht (Einzelsprung unmöglich). |
 | *Kein Hot empfohlen* | Derzeit kaum aktive Ströme. |
 

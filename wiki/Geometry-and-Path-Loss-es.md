@@ -69,15 +69,15 @@ Si 1 − |p0|² < 0, el trayecto es más largo que 2·d_H y las estaciones **no 
 
 ## Hot A y Hot B
 
-**Fuente:** las reflexiones se concentran en dos zonas ("hot spots") a unos **50–150 km a cada lado del punto medio**. Es la base de la tabla de desplazamiento de antena del AMS Bulletin n.º 203, retomada por W8WN (desplazamiento de 10° para trayectos de 1500 y 1800 km); MSHV de LZ2HV usa el mismo criterio.
+**Fuente:** las reflexiones de los meteoros esporádicos se concentran en dos zonas ("hot spots") a cada lado del punto medio. J. Richardson (AMS), en la tabla citada por DJ5HG (*Die Geometrie von Meteorscatterverbindungen*, 2004), da el desplazamiento de antena respecto al rumbo directo: **13° a 1000 km, 11° a 1250 km, 10° a 1500 y 2000 km**. El AMS Bulletin n.º 203, retomado por W8WN, da 10° a 1500 y 1800 km.
 
-**Decisión:** Hot A y Hot B son los puntos a distancia s del punto medio M, perpendiculares al trayecto (s = 150 km, ajustable de 30 a 400 km); A a la izquierda mirando desde tu estación hacia el DX, B a la derecha [21]. El desplazamiento visto desde la estación es aproximadamente [22]:
+**Decisión:** Hot A y Hot B son los puntos a distancia s del punto medio M, perpendiculares al trayecto. Con *auto (AMS)* marcado (por defecto), s sale del desplazamiento de la tabla de Richardson, interpolado linealmente (13° por debajo de 1000 km, 10° por encima de 2000 km): s = (D/2)·tan(desplazamiento). Sin marcar, s se introduce a mano, de 30 a 400 km (MSHV usa 150 km); A a la izquierda mirando desde tu estación hacia el DX, B a la derecha [21]. El desplazamiento visto desde la estación es aproximadamente [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Verificación:** JN70CN–IN78UO, D = 1710 km: 6,7° con s = 100 km, **10,0° con s = 150 km** (igual que MSHV y AMS/W8WN), 13,2° con s = 200 km.
+**Verificación:** con la tabla AMS, 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, igual que los 150 km usados antes y por MSHV; en los trayectos cortos la tabla acerca los hot spots al punto medio.
 
 ## Atenuación subdensa
 

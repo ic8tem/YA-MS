@@ -28,10 +28,10 @@
 ## 레이더에서 아마추어 밴드로
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**출처:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, 2025년 5월 – 반사의 수와 세기는 **λ³**, 지속 시간은 **λ²**에 비례합니다(432 MHz는 144 MHz보다 14–15 dB 낮고 지속 시간은 1/9). **검증:** λ³ 의존성은 McKinley의 저밀도 흔적 식과 같습니다. k = 3이면 Collm의 1000 유성/시간은 **144 MHz에서 약 16 반사/시간**이 됩니다. 143.050 MHz로 GRAVES를 듣는 RMOB 관측자는 보통 **시간당 20–140 에코**를 셉니다(RMOB 회보, 2018년 6월): 자릿수는 맞으며, 그 차이가 국 계수 K입니다. (매뉴얼 식 44–45.)
+**출처:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, 2025년 5월 – 반사의 수와 세기는 **λ³**, 지속 시간은 **λ²**에 비례합니다(432 MHz는 144 MHz보다 14–15 dB 낮고 지속 시간은 1/9). **검증:** McKinley의 식에서 λ³은 저밀도 흔적 하나의 전력이지 흔적의 수가 아닙니다. 질량 지수 2에서 고정 임계값을 넘는 흔적의 수는 대략 λ^1.5에 비례합니다(IZ5TEK; OH5IY). 프로그램은 SM6FHZ의 경험 규칙인 k = 3을 유지하며 이를 밝힙니다. 내 국에 맞는 k는 RMOB와의 비교에서 얻습니다. 전방 산란에서는 지속 시간도 sec²φ에 따라 늘어납니다(McKinley; OH5IY): Collm은 후방 산란(φ = 0)으로 측정하므로, 예보는 경로 중간점에서의 sec²φ를 곱합니다(60°에서 ×4, 70°에서 ×8.5, 80°에서 ×33). k = 3이면 Collm의 1000 유성/시간은 **144 MHz에서 약 16 반사/시간**이 됩니다. 143.050 MHz로 GRAVES를 듣는 RMOB 관측자는 보통 **시간당 20–140 에코**를 셉니다(RMOB 회보, 2018년 6월): 자릿수는 맞으며, 그 차이가 국 계수 K입니다. (매뉴얼 식 44–45.)
 
 ## 향후 24시간
 

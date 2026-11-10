@@ -69,15 +69,15 @@ Se 1 − |p0|² < 0 la tratta è più lunga di 2·d_H e le stazioni non vedono *
 
 ## Hot A e Hot B
 
-**Fonte:** le riflessioni si concentrano in due zone ("hot spot") a circa **50–150 km da una parte e dall'altra del punto medio**. È la base della tabella degli scostamenti d'antenna dell'AMS Bulletin n. 203, ripresa da W8WN (scostamento di 10° per tratte di 1500 e 1800 km); MSHV di LZ2HV usa lo stesso criterio.
+**Fonte:** le riflessioni delle meteore sporadiche si concentrano in due zone ("hot spot") da una parte e dall'altra del punto medio. J. Richardson (AMS), nella tabella citata da DJ5HG (*Die Geometrie von Meteorscatterverbindungen*, 2004), dà lo scostamento d'antenna rispetto al puntamento diretto: **13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km**. L'AMS Bulletin n. 203, ripreso da W8WN, dà 10° a 1500 e 1800 km.
 
-**Scelta:** Hot A e Hot B sono i punti a distanza s dal punto medio M, perpendicolari alla tratta (s = 150 km, regolabile 30–400 km); A a sinistra guardando dalla tua stazione verso il DX, B a destra [21]. Lo scostamento visto dalla stazione è circa [22]:
+**Scelta:** Hot A e Hot B sono i punti a distanza s dal punto medio M, perpendicolari alla tratta. Con *auto (AMS)* spuntato (predefinito) s deriva dallo scostamento della tabella di Richardson, interpolato linearmente (13° sotto 1000 km, 10° sopra 2000 km): s = (D/2)·tan(scostamento). Non spuntato, s si inserisce a mano, 30–400 km (MSHV usa 150 km); A a sinistra guardando dalla tua stazione verso il DX, B a destra [21]. Lo scostamento visto dalla stazione è circa [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Verifica:** JN70CN–IN78UO, D = 1710 km: 6,7° con s = 100 km, **10,0° con s = 150 km** (come MSHV e AMS/W8WN), 13,2° con s = 200 km.
+**Verifica:** con la tabella AMS, 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, uguale ai 150 km usati prima e da MSHV; sulle tratte corte la tabella avvicina gli hot spot al punto medio.
 
 ## Attenuazione per scie sottodense
 

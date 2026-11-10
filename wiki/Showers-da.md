@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 og λ_max fra IMO-kalenderen; hældningerne B (forskellige fø
 
 `data/sciami.csv` er en almindelig tekstfil (skilletegn `;`), som du kan redigere: kode, navn, start og slut (MM-DD), λ max, R.A., Dekl., vandringer, v, r, ZHR, B før/efter, type (V visuel, R radio dagtid). Hvis en linje er forkert, viser programmet en meddelelse ved opstart og ignorerer den.
 
-Kilder: International Meteor Organization – Meteor Shower Calendar 2026 og 2027, [www.imo.net](https://www.imo.net) (tabel 5, 6 og 7); Philip G0ISW (maksimale radiorater pr. time); Rossano IZ5TEK (scattertek).
+Kilder: International Meteor Organization – Meteor Shower Calendar 2026 og 2027, [www.imo.net](https://www.imo.net) (tabel 5, 6 og 7); Rossano IZ5TEK (scattertek).

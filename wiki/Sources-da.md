@@ -38,7 +38,6 @@ Fanen **Kilder** opregner alle de værker, YA-MS bygger på, grupperet som neden
 | Kilde | Brugt til |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (og 2027), www.imo.net, tabel 5, 6 og 7 | Radianter, λ max, v, r, ZHR, Antihelion-kilden, datoer og tidspunkter for maksima |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Maksimale radiorater pr. time |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Sværmdata |
 
 ## LIVE RADARDATA

@@ -38,7 +38,6 @@ L'onglet **Sources** énumère tous les travaux sur lesquels repose YA-MS, regro
 | Source | Utilisée pour |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (et 2027), www.imo.net, tableaux 5, 6 et 7 | Radiants, λ max, v, r, ZHR, Source de l'antihélion, dates et heures des maxima |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Taux horaires radio maximaux |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Données des essaims |
 
 ## DONNÉES RADAR EN DIRECT

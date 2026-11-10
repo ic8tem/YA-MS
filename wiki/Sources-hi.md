@@ -38,7 +38,6 @@
 | स्रोत | किसके लिए उपयोग |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (और 2027), www.imo.net, तालिकाएँ 5, 6 और 7 | रेडिएंट, λ max, v, r, ZHR, एंटीहेलियन स्रोत, शिखर की तिथियाँ और समय |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | अधिकतम रेडियो प्रति घंटा दरें |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | उल्का वर्षा डेटा |
 
 ## लाइव रडार डेटा

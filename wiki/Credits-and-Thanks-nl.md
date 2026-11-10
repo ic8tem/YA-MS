@@ -27,7 +27,6 @@ YA-MS steunt op het werk van veel radioamateurs, wetenschappers en instituten. G
 | **GM8JBJ** John | Trajectdemping bij meteorscatter (minimaal 182 dB) |
 | **PE1ITR** Rob Hardenberg | GRAVES-radar: sectoren, stappen en bundeltiming (DUBUS 4/2007, update 2021) |
 | **DL1DBC** | Swan Meteor Skyview, referentie voor de grafiek van de hemelkoepel |
-| **G0ISW** Philip | Maximale radio-uurtellingen |
 | **IZ5TEK** Rossano | Zwermgegevens (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Overige referenties uit het artikel |
 

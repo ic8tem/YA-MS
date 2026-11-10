@@ -27,7 +27,6 @@ YA-MS अनेक रेडियो शौकीनों, वैज्ञा�
 | **GM8JBJ** John | मीटियोर स्कैटर पथ क्षीणन (न्यूनतम 182 dB) |
 | **PE1ITR** Rob Hardenberg | GRAVES रडार: सेक्टर, चरण और बीम का समय (DUBUS 4/2007, अद्यतन 2021) |
 | **DL1DBC** | Swan Meteor Skyview, आकाश गुंबद ग्राफ़िक्स का संदर्भ |
-| **G0ISW** Philip | अधिकतम रेडियो प्रति घंटा दरें |
 | **IZ5TEK** Rossano | उल्का वर्षा डेटा (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | लेख के अन्य संदर्भ |
 

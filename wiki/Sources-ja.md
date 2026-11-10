@@ -38,7 +38,6 @@
 | 出典 | 用途 |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (および 2027)、www.imo.net、表 5、6、7 | 放射点、λ max、v、r、ZHR、反太陽源、極大の日時 |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | 電波観測の最大時間流星数 |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | 流星群データ |
 
 ## リアルタイム レーダーデータ

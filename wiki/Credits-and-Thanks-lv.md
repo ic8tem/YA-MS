@@ -27,7 +27,6 @@ YA-MS balstās uz daudzu radioamatieru, zinātnieku un institūciju darbu. Dati,
 | **GM8JBJ** John | Meteor scatter trases vājinājums (minimums 182 dB) |
 | **PE1ITR** Rob Hardenberg | GRAVES radars: sektori, soļi un kūļa laiki (DUBUS 4/2007, atjauninājums 2021) |
 | **DL1DBC** | Swan Meteor Skyview, atsauce debess velves grafikai |
-| **G0ISW** Philip | Maksimālie radio stundas skaiti |
 | **IZ5TEK** Rossano | Plūsmu dati (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Citas raksta atsauces |
 

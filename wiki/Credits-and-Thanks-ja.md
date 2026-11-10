@@ -27,7 +27,6 @@ YA-MS は多くのアマチュア無線家、科学者、機関の成果の上�
 | **GM8JBJ** John | 流星散乱通信のパス損失 (最小 182 dB) |
 | **PE1ITR** Rob Hardenberg | GRAVES レーダー: セクター、ステップ、ビームのタイミング (DUBUS 4/2007、2021 年の更新) |
 | **DL1DBC** | Swan Meteor Skyview、天球図のグラフィックの参考 |
-| **G0ISW** Philip | 電波観測の最大時間流星数 |
 | **IZ5TEK** Rossano | 流星群データ (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | 記事のその他の参考文献 |
 

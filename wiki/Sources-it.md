@@ -38,7 +38,6 @@ La linguetta **Fonti** elenca tutti i lavori su cui si basa YA-MS, raggruppati c
 | Fonte | Usata per |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (e 2027), www.imo.net, tabelle 5, 6 e 7 | Radianti, λ max, v, r, ZHR, Sorgente Antielio, date e ore dei massimi |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Tassi orari radio massimi |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Dati degli sciami |
 
 ## DATI RADAR IN DIRETTA

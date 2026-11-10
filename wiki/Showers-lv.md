@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 un λ_max ir no IMO kalendāra; slīpumi B (atšķirīgi pirms
 
 `data/sciami.csv` ir vienkāršs teksta fails (atdalītājs `;`), ko var rediģēt: kods, nosaukums, sākums un beigas (MM-DD), λ max, RA, Dekl., pārvietojumi, v, r, ZHR, B pirms/pēc, tips (V vizuāla, R dienas radio). Ja rinda ir kļūdaina, programma startējot parāda ziņojumu un to ignorē.
 
-Avoti: International Meteor Organization – Meteor Shower Calendar 2026 un 2027, [www.imo.net](https://www.imo.net) (5., 6. un 7. tabula); Philip G0ISW (maksimālie radio stundas skaiti); Rossano IZ5TEK (scattertek).
+Avoti: International Meteor Organization – Meteor Shower Calendar 2026 un 2027, [www.imo.net](https://www.imo.net) (5., 6. un 7. tabula); Rossano IZ5TEK (scattertek).

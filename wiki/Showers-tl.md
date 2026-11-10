@@ -49,4 +49,4 @@ Ang ZHR_max, α0, δ0 at λ_max ay mula sa kalendaryo ng IMO; ang mga slope na B
 
 Ang `data/sciami.csv` ay isang simpleng text file (separator na `;`) na maaari mong i-edit: kodigo, pangalan, simula at katapusan (MM-DD), λ max, R.A., Dec., pag-usad, v, r, ZHR, B bago/pagkatapos, uri (V biswal, R radyo sa araw). Kung mali ang isang linya, nagpapakita ang programa ng mensahe sa pagsisimula at hindi ito pinapansin.
 
-Mga sanggunian: International Meteor Organization – Meteor Shower Calendar 2026 at 2027, [www.imo.net](https://www.imo.net) (mga talahanayan 5, 6 at 7); Philip G0ISW (pinakamataas na radio hourly rate); Rossano IZ5TEK (scattertek).
+Mga sanggunian: International Meteor Organization – Meteor Shower Calendar 2026 at 2027, [www.imo.net](https://www.imo.net) (mga talahanayan 5, 6 at 7); Rossano IZ5TEK (scattertek).

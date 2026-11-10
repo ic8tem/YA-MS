@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 ও λ_max IMO ক্যালেন্ডার থেকে;
 
 `data/sciami.csv` একটি সাধারণ টেক্সট ফাইল (বিভাজক `;`) যা আপনি সম্পাদনা করতে পারেন: কোড, নাম, শুরু ও শেষ (MM-DD), λ max, বিষুবাংশ, বিষুবলম্ব, সরণ, v, r, ZHR, আগে/পরে B, ধরন (V চাক্ষুষ, R দিবাকালীন রেডিও)। কোনো লাইন ভুল হলে প্রোগ্রামটি চালুর সময় একটি বার্তা দেখায় এবং লাইনটি উপেক্ষা করে।
 
-উৎস: International Meteor Organization – Meteor Shower Calendar 2026 ও 2027, [www.imo.net](https://www.imo.net) (সারণি 5, 6 ও 7); Philip G0ISW (রেডিওতে সর্বোচ্চ ঘণ্টাভিত্তিক হার); Rossano IZ5TEK (scattertek)।
+উৎস: International Meteor Organization – Meteor Shower Calendar 2026 ও 2027, [www.imo.net](https://www.imo.net) (সারণি 5, 6 ও 7); Rossano IZ5TEK (scattertek)।

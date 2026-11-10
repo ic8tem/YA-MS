@@ -49,4 +49,4 @@ ZHR_max, ‏α0, ‏δ0 ו-λ_max מלוח השנה של IMO; השיפועים B
 
 `data/sciami.csv` הוא קובץ טקסט פשוט (מפריד `;`) שאפשר לערוך: קוד, שם, התחלה וסיום (MM-DD), ‏λ max, עלייה ישרה, נטייה, היסחפויות, v, ‏r, ‏ZHR, ‏B לפני/אחרי, סוג (V חזותי, R רדיו יומי). אם שורה שגויה, התוכנה מציגה הודעה בהפעלה ומתעלמת ממנה.
 
-מקורות: International Meteor Organization – Meteor Shower Calendar 2026 ו-2027, ‏[www.imo.net](https://www.imo.net) (טבלאות 5, 6 ו-7); ‏Philip G0ISW (קצבים שעתיים מרביים ברדיו); Rossano IZ5TEK ‏(scattertek).
+מקורות: International Meteor Organization – Meteor Shower Calendar 2026 ו-2027, ‏[www.imo.net](https://www.imo.net) (טבלאות 5, 6 ו-7); ‏Rossano IZ5TEK ‏(scattertek).

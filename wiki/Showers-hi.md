@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 और λ_max IMO कैलेंडर से; ढलान B
 
 `data/sciami.csv` एक सादी पाठ फ़ाइल है (विभाजक `;`) जिसे आप संपादित कर सकते हैं: कोड, नाम, आरंभ और अंत (MM-DD), λ max, विषुवांश, क्रांति, खिसकाव, v, r, ZHR, पहले/बाद का B, प्रकार (V दृश्य, R दिवसकालीन रेडियो)। यदि कोई पंक्ति गलत हो, तो प्रोग्राम शुरू होने पर संदेश दिखाता है और उसे अनदेखा करता है।
 
-स्रोत: International Meteor Organization – Meteor Shower Calendar 2026 और 2027, [www.imo.net](https://www.imo.net) (तालिकाएँ 5, 6 और 7); Philip G0ISW (अधिकतम रेडियो प्रति घंटा दरें); Rossano IZ5TEK (scattertek)।
+स्रोत: International Meteor Organization – Meteor Shower Calendar 2026 और 2027, [www.imo.net](https://www.imo.net) (तालिकाएँ 5, 6 और 7); Rossano IZ5TEK (scattertek)।

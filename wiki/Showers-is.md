@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 og λ_max koma úr dagatali IMO; hallatölurnar B (ólíkar fy
 
 `data/sciami.csv` er venjuleg textaskrá (skiltákn `;`) sem þú getur breytt: kóði, heiti, upphaf og endir (MM-DD), λ max, R.A., Stjörnubr., rek, v, r, ZHR, B fyrir/eftir, gerð (V sjónræn, R radíó að degi). Ef lína er röng birtir forritið skilaboð við ræsingu og hunsar hana.
 
-Heimildir: International Meteor Organization – Meteor Shower Calendar 2026 og 2027, [www.imo.net](https://www.imo.net) (töflur 5, 6 og 7); Philip G0ISW (hámarkstíðni á klukkustund í radíó); Rossano IZ5TEK (scattertek).
+Heimildir: International Meteor Organization – Meteor Shower Calendar 2026 og 2027, [www.imo.net](https://www.imo.net) (töflur 5, 6 og 7); Rossano IZ5TEK (scattertek).

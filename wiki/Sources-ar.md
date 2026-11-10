@@ -38,7 +38,6 @@
 | المصدر | استُخدم من أجل |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (و2027)، www.imo.net، الجداول 5 و6 و7 | نقاط الإشعاع، λ max، ‏v، ‏r، ‏ZHR، مصدر مقابل الشمس (Antihelion Source)، تواريخ الذروة وأوقاتها |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | المعدلات الساعية الراديوية القصوى |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | بيانات الزخات |
 
 ## بيانات الرادار المباشرة

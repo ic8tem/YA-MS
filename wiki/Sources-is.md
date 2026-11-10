@@ -38,7 +38,6 @@ Flipinn **Heimildir** telur upp öll verk sem YA-MS byggir á, flokkuð eins og 
 | Heimild | Notuð fyrir |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (og 2027), www.imo.net, töflur 5, 6 og 7 | Geislapunktar, λ max, v, r, ZHR, Antihelion Source, dagsetningar og tímar hámarka |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Hámarkstíðni á klukkustund í radíó |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Gögn um drífur |
 
 ## RATSJÁRGÖGN Í BEINNI

@@ -38,7 +38,6 @@ Der Reiter **Quellen** listet alle Werke auf, auf denen YA-MS aufbaut, gruppiert
 | Quelle | Verwendet für |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (und 2027), www.imo.net, Tabellen 5, 6 und 7 | Radianten, λ max, v, r, ZHR, Antihelion-Quelle, Datum und Uhrzeit der Maxima |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Maximale Radio-Stundenraten |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Daten der Meteorströme |
 
 ## RADARDATEN LIVE

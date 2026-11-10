@@ -38,7 +38,6 @@
 | 来源 | 用于 |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026（及 2027），www.imo.net，表 5、6 和 7 | 辐射点、λ max、v、r、ZHR、反日点源、峰值日期和时间 |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | 无线电最大每小时数 |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | 流星雨数据 |
 
 ## 实时雷达数据

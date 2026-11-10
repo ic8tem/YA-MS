@@ -38,7 +38,6 @@ Inililista ng tab na **Mga sanggunian** ang bawat akdang pinagbatayan ng YA-MS, 
 | Sanggunian | Ginamit para sa |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (at 2027), www.imo.net, mga talahanayan 5, 6 at 7 | Mga radiant, λ max, v, r, ZHR, Antihelion Source, petsa at oras ng mga peak |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Pinakamataas na radio hourly rate |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Datos ng mga shower |
 
 ## LIVE NA DATOS NG RADAR

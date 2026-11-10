@@ -27,7 +27,6 @@ YA-MS vilar på arbete av många radioamatörer, forskare och institutioner. Dat
 | **GM8JBJ** John | Sträckdämpning för meteorscatter (minst 182 dB) |
 | **PE1ITR** Rob Hardenberg | GRAVES-radarn: sektorer, steg och lobens tidsschema (DUBUS 4/2007, uppdatering 2021) |
 | **DL1DBC** | Swan Meteor Skyview, referens för himlavalvets grafik |
-| **G0ISW** Philip | Maximala timfrekvenser i radio |
 | **IZ5TEK** Rossano | Svärmdata (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Övriga referenser ur artikeln |
 

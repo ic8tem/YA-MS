@@ -27,7 +27,6 @@ YA-MS pek çok radyo amatörünün, bilim insanının ve kurumun çalışmasına
 | **GM8JBJ** John | Meteor scatter yol kaybı (en az 182 dB) |
 | **PE1ITR** Rob Hardenberg | GRAVES radarı: sektörler, adımlar ve huzme zamanlaması (DUBUS 4/2007, 2021 güncellemesi) |
 | **DL1DBC** | Swan Meteor Skyview, gökyüzü kubbesi grafikleri için referans |
-| **G0ISW** Philip | Radyoda en yüksek saatlik oranlar |
 | **IZ5TEK** Rossano | Yağmur verileri (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Makalenin diğer kaynakları |
 

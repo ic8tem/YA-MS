@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 ir λ_max – iš IMO kalendoriaus; nuolydžiai B (skirtingi p
 
 `data/sciami.csv` – paprastas tekstinis failas (skirtukas `;`), kurį galite redaguoti: kodas, pavadinimas, pradžia ir pabaiga (MM-DD), λ max, R.A., Dekl., slinkimai, v, r, ZHR, B prieš/po, tipas (V vizualinis, R dieninis radijo). Jei eilutė klaidinga, programa paleidžiant parodo pranešimą ir ją ignoruoja.
 
-Šaltiniai: International Meteor Organization – Meteor Shower Calendar 2026 ir 2027, [www.imo.net](https://www.imo.net) (5, 6 ir 7 lentelės); Philip G0ISW (didžiausi radijo valandiniai dažniai); Rossano IZ5TEK (scattertek).
+Šaltiniai: International Meteor Organization – Meteor Shower Calendar 2026 ir 2027, [www.imo.net](https://www.imo.net) (5, 6 ir 7 lentelės); Rossano IZ5TEK (scattertek).

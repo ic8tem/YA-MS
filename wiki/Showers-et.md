@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 ja λ_max IMO kalendrist; tõusud B (erinevad enne ja pärast 
 
 `data/sciami.csv` on lihttekstifail (eraldaja `;`), mida saad muuta: lühend, nimi, algus ja lõpp (MM-DD), λ max, R.A., Dekl., nihked, v, r, ZHR, B enne/pärast, tüüp (V visuaalne, R päevane raadio). Kui rida on vigane, näitab programm käivitamisel teadet ja ignoreerib seda.
 
-Allikad: International Meteor Organization – Meteor Shower Calendar 2026 ja 2027, [www.imo.net](https://www.imo.net) (tabelid 5, 6 ja 7); Philip G0ISW (maksimaalsed raadio tunnisagedused); Rossano IZ5TEK (scattertek).
+Allikad: International Meteor Organization – Meteor Shower Calendar 2026 ja 2027, [www.imo.net](https://www.imo.net) (tabelid 5, 6 ja 7); Rossano IZ5TEK (scattertek).

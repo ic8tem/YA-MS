@@ -300,7 +300,6 @@ Pastello rosa
 Pastello verde
 Pegasidi di luglio
 Perseidi
-Philip G0ISW - www.qsl.net/g0isw/g0iswms.htm (tassi orari radio massimi)
 Phoenicidi
 Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.
 Piscidi di aprile diurne

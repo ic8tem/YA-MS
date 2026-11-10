@@ -38,7 +38,6 @@
 | מקור | שימש עבור |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (ו-2027), ‏www.imo.net, טבלאות 5, 6 ו-7 | רדיאנטים, λ max, ‏v, ‏r, ‏ZHR, מקור אנטי-הליון (Antihelion Source), תאריכי ושעות שיא |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | קצבים שעתיים מרביים ברדיו |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | נתוני מטרים |
 
 ## נתוני מכ״ם בזמן אמת

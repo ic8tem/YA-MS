@@ -27,7 +27,6 @@ YA-MS спирається на працю багатьох радіоамато
 | **GM8JBJ** John | Загасання на трасі meteor scatter (мінімум 182 dB) |
 | **PE1ITR** Rob Hardenberg | Радар GRAVES: сектори, кроки й таймінг променя (DUBUS 4/2007, оновлення 2021) |
 | **DL1DBC** | Swan Meteor Skyview, зразок для графіки небесного склепіння |
-| **G0ISW** Philip | Максимальні радіо-погодинні числа |
 | **IZ5TEK** Rossano | Дані потоків (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Інші джерела статті |
 

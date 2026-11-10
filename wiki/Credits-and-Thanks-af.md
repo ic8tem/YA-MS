@@ -27,7 +27,6 @@ YA-MS staan op die werk van baie radioamateurs, wetenskaplikes en instellings. D
 | **GM8JBJ** John | Meteor scatter-padverlies (182 dB minimum) |
 | **PE1ITR** Rob Hardenberg | GRAVES-radar: sektore, stappe en bundeltydsberekening (DUBUS 4/2007, bywerking 2021) |
 | **DL1DBC** | Swan Meteor Skyview, verwysing vir die grafika van die hemelkoepel |
-| **G0ISW** Philip | Maksimum radio-uurtempo's |
 | **IZ5TEK** Rossano | Swermdata (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Ander verwysings uit die artikel |
 

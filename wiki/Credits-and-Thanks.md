@@ -27,7 +27,6 @@ YA-MS stands on the work of many radio amateurs, scientists and institutions. Da
 | **GM8JBJ** John | Meteor-scatter path loss (182 dB minimum) |
 | **PE1ITR** Rob Hardenberg | GRAVES radar: sectors, steps and beam timing (DUBUS 4/2007, update 2021) |
 | **DL1DBC** | Swan Meteor Skyview, reference for the sky dome graphics |
-| **G0ISW** Philip | Maximum radio hourly rates |
 | **IZ5TEK** Rossano | Shower data (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Other references from the article |
 

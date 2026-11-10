@@ -27,7 +27,6 @@ YA-MS baut auf der Arbeit vieler Funkamateure, Wissenschaftler und Einrichtungen
 | **GM8JBJ** John | Streckendämpfung bei Meteorscatter (Minimum 182 dB) |
 | **PE1ITR** Rob Hardenberg | Radar GRAVES: Sektoren, Schritte und Strahlzeiten (DUBUS 4/2007, Update 2021) |
 | **DL1DBC** | Swan Meteor Skyview, Vorlage für die Grafik der Himmelsansicht |
-| **G0ISW** Philip | Maximale Radio-Stundenraten |
 | **IZ5TEK** Rossano | Daten der Meteorströme (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Weitere Quellen des Artikels |
 

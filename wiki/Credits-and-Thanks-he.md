@@ -27,7 +27,6 @@ YA-MS נשענת על עבודתם של חובבי רדיו, מדענים ומו
 | **GM8JBJ** John | הנחתת נתיב בפיזור מטאורי (מינימום 182 dB) |
 | **PE1ITR** Rob Hardenberg | מכ״ם GRAVES: גזרות, צעדים ותזמון האלומה (DUBUS 4/2007, עדכון 2021) |
 | **DL1DBC** | Swan Meteor Skyview, מקור לגרפיקה של כיפת השמיים |
-| **G0ISW** Philip | קצבים שעתיים מרביים ברדיו |
 | **IZ5TEK** Rossano | נתוני מטרים (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | מקורות נוספים מהמאמר |
 

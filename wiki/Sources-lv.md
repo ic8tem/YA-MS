@@ -38,7 +38,6 @@ Cilne **Avoti** uzskaita visus darbus, uz kuriem balstīta YA-MS, sagrupētus k�
 | Avots | Izmantots |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (un 2027), www.imo.net, 5., 6. un 7. tabula | Radianti, λ max, v, r, ZHR, Antihēlija avots, maksimumu datumi un laiki |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Maksimālie radio stundas skaiti |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Plūsmu dati |
 
 ## RADARU DATI TIEŠSAISTĒ

@@ -27,7 +27,6 @@ YA-MS 建立在众多业余无线电爱好者、科学家和机构的工作之�
 | **GM8JBJ** John | 流星散射路径损耗（最小 182 dB） |
 | **PE1ITR** Rob Hardenberg | GRAVES 雷达：扇区、步进和波束时序（DUBUS 4/2007，2021 年更新） |
 | **DL1DBC** | Swan Meteor Skyview，天穹图形的参考 |
-| **G0ISW** Philip | 无线电最大每小时数 |
 | **IZ5TEK** Rossano | 流星雨数据（scattertek） |
 | G3WZT、DH8BQA、WB2FKO、IU6GIR | 文章中的其他参考文献 |
 

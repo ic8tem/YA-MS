@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 y λ_max proceden del calendario IMO; las pendientes B (distin
 
 `data/sciami.csv` es un archivo de texto plano (separador `;`) que puedes editar: código, nombre, inicio y fin (MM-DD), λ max, A.R., Decl., desplazamientos, v, r, ZHR, B antes/después, tipo (V visual, R radio diurna). Si una línea es errónea, el programa muestra un mensaje al arrancar y la ignora.
 
-Fuentes: International Meteor Organization – Meteor Shower Calendar 2026 y 2027, [www.imo.net](https://www.imo.net) (tablas 5, 6 y 7); Philip G0ISW (tasas horarias radio máximas); Rossano IZ5TEK (scattertek).
+Fuentes: International Meteor Organization – Meteor Shower Calendar 2026 y 2027, [www.imo.net](https://www.imo.net) (tablas 5, 6 y 7); Rossano IZ5TEK (scattertek).

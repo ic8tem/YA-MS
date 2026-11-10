@@ -38,7 +38,6 @@ Fliken **Källor** listar alla verk som YA-MS bygger på, grupperade enligt neda
 | Källa | Används för |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (och 2027), www.imo.net, tabell 5, 6 och 7 | Radianter, λ max, v, r, ZHR, Antihelion Source, datum och tider för maximum |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Maximala timfrekvenser i radio |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Svärmdata |
 
 ## RADARDATA I REALTID

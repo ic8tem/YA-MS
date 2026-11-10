@@ -27,7 +27,6 @@
 | **GM8JBJ** John | توهين مسار التشتت النيزكي (الحد الأدنى 182 dB) |
 | **PE1ITR** Rob Hardenberg | رادار GRAVES: القطاعات والخطوات وتوقيت الحزمة (DUBUS 4/2007، تحديث 2021) |
 | **DL1DBC** | Swan Meteor Skyview، مرجع رسومات القبة السماوية |
-| **G0ISW** Philip | المعدلات الساعية الراديوية القصوى |
 | **IZ5TEK** Rossano | بيانات الزخات (scattertek) |
 | G3WZT، DH8BQA، WB2FKO، IU6GIR | مراجع أخرى من المقال |
 

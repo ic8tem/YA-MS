@@ -38,7 +38,6 @@ Sakk **Allikad** loetleb kõik tööd, millele YA-MS tugineb, rühmitatuna nagu 
 | Allikas | Kasutatud |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (ja 2027), www.imo.net, tabelid 5, 6 ja 7 | Radiandid, λ max, v, r, ZHR, antiheeliumi allikas, maksimumide kuupäevad ja kellaajad |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Maksimaalsed raadio tunnisagedused |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Meteoorivoolude andmed |
 
 ## RADARIANDMED OTSE

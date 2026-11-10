@@ -38,7 +38,6 @@ La pestaña **Fuentes** enumera todas las obras en las que se basa YA-MS, agrupa
 | Fuente | Usada para |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (y 2027), www.imo.net, tablas 5, 6 y 7 | Radiantes, λ máx, v, r, ZHR, Fuente Antihelio, fechas y horas de los máximos |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Tasas horarias radio máximas |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Datos de las lluvias |
 
 ## DATOS DE RADAR EN DIRECTO

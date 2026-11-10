@@ -27,7 +27,6 @@ YA-MS بہت سے ریڈیو شوقیہ آپریٹروں، سائنس دانوں
 | **GM8JBJ** John | meteor scatter راستے کا نقصان (182 dB کم از کم) |
 | **PE1ITR** Rob Hardenberg | GRAVES ریڈار: سیکٹر، قدم اور بیم کی زمان بندی (DUBUS 4/2007، تازہ کاری 2021) |
 | **DL1DBC** | Swan Meteor Skyview، آسمانی گنبد کی گرافکس کا حوالہ |
-| **G0ISW** Philip | ریڈیو میں زیادہ سے زیادہ گھنٹہ وار شرح |
 | **IZ5TEK** Rossano | شہابی بارشوں کا ڈیٹا (scattertek) |
 | G3WZT، DH8BQA، WB2FKO، IU6GIR | مضمون کے دیگر حوالے |
 

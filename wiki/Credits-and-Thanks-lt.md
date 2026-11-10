@@ -27,7 +27,6 @@ YA-MS remiasi daugelio radijo mėgėjų, mokslininkų ir institucijų darbu. Duo
 | **GM8JBJ** John | Meteor scatter slopinimas (182 dB mažiausias) |
 | **PE1ITR** Rob Hardenberg | GRAVES radaras: sektoriai, žingsniai ir pluošto laikas (DUBUS 4/2007, atnaujinimas 2021) |
 | **DL1DBC** | Swan Meteor Skyview, dangaus skliauto grafikos pavyzdys |
-| **G0ISW** Philip | Didžiausi radijo valandiniai dažniai |
 | **IZ5TEK** Rossano | Srautų duomenys (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Kiti straipsnio šaltiniai |
 

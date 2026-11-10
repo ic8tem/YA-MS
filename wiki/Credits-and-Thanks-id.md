@@ -27,7 +27,6 @@ YA-MS berdiri di atas karya banyak radio amatir, ilmuwan dan lembaga. Data, tabe
 | **GM8JBJ** John | Redaman lintasan meteor scatter (minimum 182 dB) |
 | **PE1ITR** Rob Hardenberg | Radar GRAVES: sektor, langkah dan pewaktuan berkas (DUBUS 4/2007, pembaruan 2021) |
 | **DL1DBC** | Swan Meteor Skyview, referensi untuk grafik kubah langit |
-| **G0ISW** Philip | Laju per jam radio maksimum |
 | **IZ5TEK** Rossano | Data hujan meteor (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Referensi lain dari artikel |
 

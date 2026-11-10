@@ -27,7 +27,6 @@ YA-MS tugineb paljude raadioamatööride, teadlaste ja asutuste tööle. Andmed,
 | **GM8JBJ** John | Meteor scatteri sumbumine (182 dB minimaalne) |
 | **PE1ITR** Rob Hardenberg | GRAVESi radar: sektorid, sammud ja kiire ajastus (DUBUS 4/2007, uuendus 2021) |
 | **DL1DBC** | Swan Meteor Skyview, taevavõlvi graafika eeskuju |
-| **G0ISW** Philip | Maksimaalsed raadio tunnisagedused |
 | **IZ5TEK** Rossano | Meteoorivoolude andmed (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Artikli muud viited |
 

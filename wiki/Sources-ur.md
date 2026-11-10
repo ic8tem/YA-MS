@@ -38,7 +38,6 @@
 | ماخذ | کس کے لیے استعمال ہوا |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (اور 2027)، www.imo.net، جدول 5، 6 اور 7 | ریڈیئنٹس، λ max، v، r، ZHR، اینٹی ہیلیئن ماخذ، عروج کی تاریخیں اور اوقات |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | ریڈیو میں زیادہ سے زیادہ گھنٹہ وار شرح |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | شہابی بارشوں کا ڈیٹا |
 
 ## براہِ راست ریڈار ڈیٹا

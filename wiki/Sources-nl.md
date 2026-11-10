@@ -38,7 +38,6 @@ Het tabblad **Bronnen** somt elk werk op waarop YA-MS is gebouwd, gegroepeerd zo
 | Bron | Gebruikt voor |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (en 2027), www.imo.net, tabellen 5, 6 en 7 | Radianten, λ max, v, r, ZHR, Antihelion-bron, data en tijden van de maxima |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Maximale radio-uurtellingen |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Zwermgegevens |
 
 ## LIVE RADARGEGEVENS

@@ -49,4 +49,4 @@ ZHR_max、α0、δ0、λ_max は IMO のカレンダーから取ります。勾�
 
 `data/sciami.csv` は編集可能なプレーンテキストファイル (区切り文字 `;`) です: 略号、名称、開始と終了 (MM-DD)、λ max、赤経、赤緯、移動量、v、r、ZHR、前/後の B、種類 (V 眼視、R 昼間電波)。行に誤りがあると、プログラムは起動時にメッセージを表示してその行を無視します。
 
-出典: International Meteor Organization – Meteor Shower Calendar 2026 および 2027、[www.imo.net](https://www.imo.net) (表 5、6、7); Philip G0ISW (電波観測の最大時間流星数); Rossano IZ5TEK (scattertek)。
+出典: International Meteor Organization – Meteor Shower Calendar 2026 および 2027、[www.imo.net](https://www.imo.net) (表 5、6、7); Rossano IZ5TEK (scattertek)。

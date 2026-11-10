@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 och λ_max kommer från IMO-kalendern; lutningarna B (olika f�
 
 `data/sciami.csv` är en vanlig textfil (avgränsare `;`) som du kan redigera: kod, namn, början och slut (MM-DD), λ max, R.A., Dekl., drift, v, r, ZHR, B före/efter, typ (V visuell, R radio dagtid). Om en rad är felaktig visar programmet ett meddelande vid start och hoppar över den.
 
-Källor: International Meteor Organization – Meteor Shower Calendar 2026 och 2027, [www.imo.net](https://www.imo.net) (tabell 5, 6 och 7); Philip G0ISW (maximala timfrekvenser i radio); Rossano IZ5TEK (scattertek).
+Källor: International Meteor Organization – Meteor Shower Calendar 2026 och 2027, [www.imo.net](https://www.imo.net) (tabell 5, 6 och 7); Rossano IZ5TEK (scattertek).

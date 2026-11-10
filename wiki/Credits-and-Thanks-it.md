@@ -27,7 +27,6 @@ YA-MS si basa sul lavoro di molti radioamatori, scienziati e istituti. Dati, tab
 | **GM8JBJ** John | Attenuazione di tratta in meteor scatter (minimo 182 dB) |
 | **PE1ITR** Rob Hardenberg | Radar GRAVES: settori, passi e tempi del fascio (DUBUS 4/2007, aggiornamento 2021) |
 | **DL1DBC** | Swan Meteor Skyview, riferimento per la grafica della volta celeste |
-| **G0ISW** Philip | Tassi orari radio massimi |
 | **IZ5TEK** Rossano | Dati degli sciami (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Altri riferimenti dell'articolo |
 

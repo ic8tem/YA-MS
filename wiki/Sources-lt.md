@@ -38,7 +38,6 @@ Kortelėje **Šaltiniai** išvardyti visi darbai, kuriais remiasi YA-MS, sugrupu
 | Šaltinis | Kam naudojamas |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (ir 2027), www.imo.net, 5, 6 ir 7 lentelės | Radiantai, λ max, v, r, ZHR, Antihelio šaltinis, maksimumų datos ir laikai |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Didžiausi radijo valandiniai dažniai |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Srautų duomenys |
 
 ## RADARŲ DUOMENYS REALIUOJU LAIKU

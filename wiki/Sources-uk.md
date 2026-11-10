@@ -38,7 +38,6 @@
 | Джерело | Для чого використано |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (і 2027), www.imo.net, таблиці 5, 6 і 7 | Радіанти, λ max, v, r, ZHR, Антигеліонне джерело, дати й час максимумів |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Максимальні радіо-погодинні числа |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Дані потоків |
 
 ## ДАНІ РАДАРІВ У РЕАЛЬНОМУ ЧАСІ

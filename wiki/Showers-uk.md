@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 і λ_max — з календаря IMO; нахили B (рі�
 
 `data/sciami.csv` — простий текстовий файл (роздільник `;`), який можна редагувати: код, назва, початок і кінець (MM-DD), λ max, П.с., Схил., дрейф, v, r, ZHR, B до/після, тип (V візуальний, R денний радіо). Якщо рядок помилковий, програма під час запуску показує повідомлення і пропускає його.
 
-Джерела: International Meteor Organization – Meteor Shower Calendar 2026 і 2027, [www.imo.net](https://www.imo.net) (таблиці 5, 6 і 7); Philip G0ISW (максимальні радіо-погодинні числа); Rossano IZ5TEK (scattertek).
+Джерела: International Meteor Organization – Meteor Shower Calendar 2026 і 2027, [www.imo.net](https://www.imo.net) (таблиці 5, 6 і 7); Rossano IZ5TEK (scattertek).

@@ -27,7 +27,6 @@ YA-MS se apoya en el trabajo de muchos radioaficionados, científicos e instituc
 | **GM8JBJ** John | Atenuación del trayecto en meteor scatter (182 dB como mínimo) |
 | **PE1ITR** Rob Hardenberg | Radar GRAVES: sectores, pasos y temporización del haz (DUBUS 4/2007, actualización 2021) |
 | **DL1DBC** | Swan Meteor Skyview, referencia para el gráfico de la bóveda celeste |
-| **G0ISW** Philip | Tasas horarias radio máximas |
 | **IZ5TEK** Rossano | Datos de las lluvias (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Otras referencias del artículo |
 

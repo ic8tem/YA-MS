@@ -215,7 +215,6 @@ PROSSIMO PASSAGGIO DEL FASCIO SULLA ZONA	VOLGENDE BUNDELDOORGANG OVER DE ZONE
 Passo	Stap
 Pegasidi di luglio	Juli-Pegasiden
 Perseidi	Perseïden
-Philip G0ISW - www.qsl.net/g0isw/g0iswms.htm (tassi orari radio massimi)	Philip G0ISW - www.qsl.net/g0isw/g0iswms.htm (maximale radio-uurtellingen)
 Phoenicidi	Phoeniciden
 Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	Bovenaanzicht: gele lijn = verloop van de geselecteerde zwerm (of de gunstigste), ellipsen PREV = waar de meest waarschijnlijke sporen nu vallen. Hemelkoepel rechts (Opkomst/Ondergang in UTC op {0}): geel = efficiëntie >= 50 % en ZHR >= 2, oranje >= 20 %, grijs = vrijwel inactief.
 Piscidi di aprile diurne	April-Pisciden (dag)

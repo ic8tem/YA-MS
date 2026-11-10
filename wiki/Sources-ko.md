@@ -38,7 +38,6 @@
 | 출처 | 사용처 |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026(및 2027), www.imo.net, 표 5, 6, 7 | 복사점, λ max, v, r, ZHR, Antihelion Source, 극대 날짜와 시각 |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | 전파 관측 최대 시간율 |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | 유성우 데이터 |
 
 ## 실시간 레이더 데이터

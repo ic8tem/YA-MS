@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 ve λ_max IMO takviminden; eğimler B (tepeden önce ve sonra 
 
 `data/sciami.csv`, düzenleyebileceğiniz düz bir metin dosyasıdır (ayırıcı `;`): kod, ad, başlangıç ve bitiş (MM-DD), λ max, S.A., Dek., kaymalar, v, r, ZHR, önce/sonra B, tür (V görsel, R gündüz radyo). Bir satır hatalıysa program açılışta bir ileti gösterir ve o satırı yok sayar.
 
-Kaynaklar: International Meteor Organization – Meteor Shower Calendar 2026 ve 2027, [www.imo.net](https://www.imo.net) (tablo 5, 6 ve 7); Philip G0ISW (radyoda en yüksek saatlik oranlar); Rossano IZ5TEK (scattertek).
+Kaynaklar: International Meteor Organization – Meteor Shower Calendar 2026 ve 2027, [www.imo.net](https://www.imo.net) (tablo 5, 6 ve 7); Rossano IZ5TEK (scattertek).

@@ -27,7 +27,6 @@ Nakatayo ang YA-MS sa gawa ng maraming radio amateur, siyentipiko at institusyon
 | **GM8JBJ** John | Path loss ng meteor scatter (182 dB pinakamababa) |
 | **PE1ITR** Rob Hardenberg | Radar GRAVES: mga sektor, hakbang at tiyempo ng beam (DUBUS 4/2007, update 2021) |
 | **DL1DBC** | Swan Meteor Skyview, sanggunian para sa grapika ng kalangitan |
-| **G0ISW** Philip | Pinakamataas na radio hourly rate |
 | **IZ5TEK** Rossano | Datos ng mga shower (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Iba pang sanggunian ng artikulo |
 

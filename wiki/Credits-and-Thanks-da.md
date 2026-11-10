@@ -27,7 +27,6 @@ YA-MS bygger på arbejdet fra mange radioamatører, forskere og institutioner. D
 | **GM8JBJ** John | Strækningsdæmpning for meteor scatter (minimum 182 dB) |
 | **PE1ITR** Rob Hardenberg | GRAVES-radaren: sektorer, trin og strålens timing (DUBUS 4/2007, opdatering 2021) |
 | **DL1DBC** | Swan Meteor Skyview, forbillede for himmelkuplens grafik |
-| **G0ISW** Philip | Maksimale radiorater pr. time |
 | **IZ5TEK** Rossano | Sværmdata (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Andre referencer fra artiklen |
 

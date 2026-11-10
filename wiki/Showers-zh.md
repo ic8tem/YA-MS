@@ -49,4 +49,4 @@ ZHR_max、α0、δ0 和 λ_max 取自 IMO 日历；斜率 B（峰值前后不同
 
 `data/sciami.csv` 是一个可以编辑的纯文本文件（分隔符 `;`）：代码、名称、开始和结束日期（MM-DD）、λ max、赤经、赤纬、漂移、v、r、ZHR、峰值前/后的 B、类型（V 目视，R 白昼无线电）。如果某一行有误，程序会在启动时显示消息并忽略该行。
 
-来源：International Meteor Organization – Meteor Shower Calendar 2026 和 2027，[www.imo.net](https://www.imo.net)（表 5、6 和 7）；Philip G0ISW（无线电最大每小时数）；Rossano IZ5TEK（scattertek）。
+来源：International Meteor Organization – Meteor Shower Calendar 2026 和 2027，[www.imo.net](https://www.imo.net)（表 5、6 和 7）；Rossano IZ5TEK（scattertek）。

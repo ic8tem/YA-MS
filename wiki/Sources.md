@@ -38,7 +38,6 @@ The **Sources** tab lists every work YA-MS is built on, grouped as below (the te
 | Source | Used for |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (and 2027), www.imo.net, tables 5, 6 and 7 | Radiants, λ max, v, r, ZHR, Antihelion Source, peak dates and times |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Maximum radio hourly rates |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Shower data |
 
 ## LIVE RADAR DATA

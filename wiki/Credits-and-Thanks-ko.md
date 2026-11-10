@@ -27,7 +27,6 @@ YA-MS는 많은 아마추어 무선사, 과학자, 기관의 성과 위에 서 �
 | **GM8JBJ** John | 유성 산란 경로 손실(최소 182 dB) |
 | **PE1ITR** Rob Hardenberg | GRAVES 레이더: 섹터, 스텝, 빔 타이밍(DUBUS 4/2007, 2021 업데이트) |
 | **DL1DBC** | Swan Meteor Skyview, 천구 그래픽의 참고 자료 |
-| **G0ISW** Philip | 전파 관측 최대 시간율 |
 | **IZ5TEK** Rossano | 유성우 데이터(scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | 논문의 기타 참고문헌 |
 

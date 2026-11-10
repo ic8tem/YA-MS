@@ -215,7 +215,6 @@ PROSSIMO PASSAGGIO DEL FASCIO SULLA ZONA	СЛЕДУЮЩИЙ ПРОХОД ЛУЧ�
 Passo	Шаг
 Pegasidi di luglio	Июльские Пегасиды
 Perseidi	Персеиды
-Philip G0ISW - www.qsl.net/g0isw/g0iswms.htm (tassi orari radio massimi)	Philip G0ISW - www.qsl.net/g0isw/g0iswms.htm (максимальные часовые радиочисла)
 Phoenicidi	Фениксиды
 Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	План: жёлтая линия = движение выбранного (или самого благоприятного) потока, эллипсы PREV = где сейчас наиболее вероятны следы. Небесная сфера справа (Восход/Заход в UTC на {0}): жёлтый = эффективность >= 50 % и ZHR >= 2, оранжевый >= 20 %, серый = почти неактивен.
 Piscidi di aprile diurne	Дневные Апрельские Писциды

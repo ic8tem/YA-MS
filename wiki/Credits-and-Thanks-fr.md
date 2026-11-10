@@ -27,7 +27,6 @@ YA-MS repose sur le travail de nombreux radioamateurs, scientifiques et institut
 | **GM8JBJ** John | Affaiblissement de trajet en meteor scatter (182 dB minimum) |
 | **PE1ITR** Rob Hardenberg | Radar GRAVES : secteurs, pas et temporisation du faisceau (DUBUS 4/2007, mise à jour 2021) |
 | **DL1DBC** | Swan Meteor Skyview, référence pour le graphisme de la voûte céleste |
-| **G0ISW** Philip | Taux horaires radio maximaux |
 | **IZ5TEK** Rossano | Données des essaims (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Autres références de l'article |
 

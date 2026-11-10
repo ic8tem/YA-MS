@@ -27,7 +27,6 @@ YA-MS bygger på arbeidet til mange radioamatører, forskere og institusjoner. D
 | **GM8JBJ** John | Strekningsdemping for meteor scatter (minimum 182 dB) |
 | **PE1ITR** Rob Hardenberg | GRAVES-radaren: sektorer, steg og stråletiming (DUBUS 4/2007, oppdatering 2021) |
 | **DL1DBC** | Swan Meteor Skyview, forbilde for grafikken til himmelhvelvingen |
-| **G0ISW** Philip | Maksimale radio-timerater |
 | **IZ5TEK** Rossano | Svermdata (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Andre referanser fra artikkelen |
 

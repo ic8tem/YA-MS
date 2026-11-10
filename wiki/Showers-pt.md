@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 e λ_max vêm do calendário IMO; as inclinações B (diferent
 
 `data/sciami.csv` é um ficheiro de texto simples (separador `;`) que pode editar: código, nome, início e fim (MM-DD), λ max, A.R., Decl., deslocações, v, r, ZHR, B antes/depois, tipo (V visual, R rádio diurna). Se uma linha estiver errada, o programa mostra uma mensagem no arranque e ignora-a.
 
-Fontes: International Meteor Organization – Meteor Shower Calendar 2026 e 2027, [www.imo.net](https://www.imo.net) (tabelas 5, 6 e 7); Philip G0ISW (taxas horárias rádio máximas); Rossano IZ5TEK (scattertek).
+Fontes: International Meteor Organization – Meteor Shower Calendar 2026 e 2027, [www.imo.net](https://www.imo.net) (tabelas 5, 6 e 7); Rossano IZ5TEK (scattertek).

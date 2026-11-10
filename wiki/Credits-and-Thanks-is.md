@@ -27,7 +27,6 @@ YA-MS byggir á verkum margra radíóamatöra, vísindamanna og stofnana. Gögn,
 | **GM8JBJ** John | Leiðardeyfing í meteor scatter (lágmark 182 dB) |
 | **PE1ITR** Rob Hardenberg | GRAVES-ratsjáin: geirar, skref og tímasetning geislans (DUBUS 4/2007, uppfærsla 2021) |
 | **DL1DBC** | Swan Meteor Skyview, viðmiðun fyrir grafík himinhvelfingarinnar |
-| **G0ISW** Philip | Hámarkstíðni á klukkustund í radíó |
 | **IZ5TEK** Rossano | Gögn um drífur (scattertek) |
 | G3WZT, DH8BQA, WB2FKO, IU6GIR | Aðrar tilvísanir úr greininni |
 

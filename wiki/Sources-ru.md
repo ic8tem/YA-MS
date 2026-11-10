@@ -38,7 +38,6 @@
 | Источник | Для чего используется |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (и 2027), www.imo.net, таблицы 5, 6 и 7 | Радианты, λ max, v, r, ZHR, Антигелийный источник, даты и время максимумов |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Максимальные часовые радиочисла |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Данные потоков |
 
 ## ДАННЫЕ РАДАРОВ В РЕАЛЬНОМ ВРЕМЕНИ

@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 dan λ_max dari kalender IMO; kemiringan B (berbeda sebelum da
 
 `data/sciami.csv` adalah file teks biasa (pemisah `;`) yang dapat Anda edit: kode, nama, awal dan akhir (MM-DD), λ max, A.R., Dekl., pergeseran, v, r, ZHR, B sebelum/sesudah, jenis (V visual, R radio siang hari). Jika ada baris yang salah, program menampilkan pesan saat mulai dan mengabaikannya.
 
-Sumber: International Meteor Organization – Meteor Shower Calendar 2026 dan 2027, [www.imo.net](https://www.imo.net) (tabel 5, 6 dan 7); Philip G0ISW (laju per jam radio maksimum); Rossano IZ5TEK (scattertek).
+Sumber: International Meteor Organization – Meteor Shower Calendar 2026 dan 2027, [www.imo.net](https://www.imo.net) (tabel 5, 6 dan 7); Rossano IZ5TEK (scattertek).

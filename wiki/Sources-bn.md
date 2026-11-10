@@ -38,7 +38,6 @@
 | উৎস | কীসের জন্য ব্যবহৃত |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (ও 2027), www.imo.net, সারণি 5, 6 ও 7 | বিকিরণ বিন্দু, λ max, v, r, ZHR, অ্যান্টিহেলিয়ন উৎস, সর্বোচ্চের তারিখ ও সময় |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | রেডিওতে সর্বোচ্চ ঘণ্টাভিত্তিক হার |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | উল্কাবৃষ্টির তথ্য |
 
 ## সরাসরি রাডার তথ্য

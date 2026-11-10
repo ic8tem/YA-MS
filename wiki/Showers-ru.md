@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 и λ_max – из календаря IMO; крутизна B 
 
 `data/sciami.csv` – обычный текстовый файл (разделитель `;`), который можно редактировать: код, название, начало и конец (MM-DD), λ max, П.в., Скл., смещения, v, r, ZHR, B до/после, тип (V визуальный, R дневной радиопоток). Если строка содержит ошибку, программа выводит сообщение при запуске и пропускает её.
 
-Источники: International Meteor Organization – Meteor Shower Calendar 2026 и 2027, [www.imo.net](https://www.imo.net) (таблицы 5, 6 и 7); Philip G0ISW (максимальные часовые радиочисла); Rossano IZ5TEK (scattertek).
+Источники: International Meteor Organization – Meteor Shower Calendar 2026 и 2027, [www.imo.net](https://www.imo.net) (таблицы 5, 6 и 7); Rossano IZ5TEK (scattertek).

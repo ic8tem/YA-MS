@@ -49,4 +49,4 @@ ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qqu
 
 الملف `data/sciami.csv` ملف نصي بسيط (الفاصل `;`) يمكنك تعديله: الرمز، الاسم، البداية والنهاية (MM-DD)، λ max، المطلع المستقيم، الميل، الانجرافات، v، ‏r، ‏ZHR، ‏B قبل/بعد، النوع (V بصري، R راديوي نهاري). إذا كان أحد الأسطر خاطئاً يعرض البرنامج رسالة عند بدء التشغيل ويتجاهله.
 
-المصادر: International Meteor Organization – Meteor Shower Calendar 2026 و2027، [www.imo.net](https://www.imo.net) (الجداول 5 و6 و7)؛ Philip G0ISW (المعدلات الساعية الراديوية القصوى)؛ Rossano IZ5TEK ‏(scattertek).
+المصادر: International Meteor Organization – Meteor Shower Calendar 2026 و2027، [www.imo.net](https://www.imo.net) (الجداول 5 و6 و7)؛ Rossano IZ5TEK ‏(scattertek).

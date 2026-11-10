@@ -215,7 +215,6 @@ PROSSIMO PASSAGGIO DEL FASCIO SULLA ZONA	ゾーン上の次のビーム通過
 Passo	ステップ
 Pegasidi di luglio	7月ペガスス座流星群
 Perseidi	ペルセウス座流星群
-Philip G0ISW - www.qsl.net/g0isw/g0iswms.htm (tassi orari radio massimi)	Philip G0ISW - www.qsl.net/g0isw/g0iswms.htm (電波観測の最大時間流星数)
 Phoenicidi	ほうおう座流星群
 Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	平面図: 黄線 = 選択した (または最も有利な) 流星群の移動、楕円 PREV = 現在最も可能性の高い流星痕の位置。右は天球図 ({0} の出/没、UTC): 黄 = 効率 >= 50 % かつ ZHR >= 2、橙 >= 20 %、灰 = ほぼ不活発。
 Piscidi di aprile diurne	4月うお座昼間流星群

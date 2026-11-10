@@ -49,4 +49,4 @@ ZHR_max, α0, δ0, λ_max는 IMO 달력의 값이고, 기울기 B(극대 전후�
 
 `data/sciami.csv`는 편집할 수 있는 일반 텍스트 파일(구분자 `;`)입니다: 약칭, 이름, 시작과 끝(MM-DD), λ max, 적경, 적위, 이동, v, r, ZHR, 극대 전/후 B, 유형(V 안시, R 주간 전파). 잘못된 행이 있으면 프로그램이 시작할 때 메시지를 표시하고 그 행을 무시합니다.
 
-출처: International Meteor Organization – Meteor Shower Calendar 2026 및 2027, [www.imo.net](https://www.imo.net)(표 5, 6, 7); Philip G0ISW(전파 관측 최대 시간율); Rossano IZ5TEK(scattertek).
+출처: International Meteor Organization – Meteor Shower Calendar 2026 및 2027, [www.imo.net](https://www.imo.net)(표 5, 6, 7); Rossano IZ5TEK(scattertek).

@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 e λ_max dal calendario IMO; le pendenze B (diverse prima e do
 
 `data/sciami.csv` è un semplice file di testo (separatore `;`) che puoi modificare: sigla, nome, inizio e fine (MM-GG), λ max, A.R., Decl., spostamenti, v, r, ZHR, B prima/dopo, tipo (V visuale, R radio diurno). Se una riga è sbagliata il programma mostra un messaggio all'avvio e la ignora.
 
-Fonti: International Meteor Organization – Meteor Shower Calendar 2026 e 2027, [www.imo.net](https://www.imo.net) (tabelle 5, 6 e 7); Philip G0ISW (tassi orari radio massimi); Rossano IZ5TEK (scattertek).
+Fonti: International Meteor Organization – Meteor Shower Calendar 2026 e 2027, [www.imo.net](https://www.imo.net) (tabelle 5, 6 e 7); Rossano IZ5TEK (scattertek).

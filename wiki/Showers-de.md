@@ -49,4 +49,4 @@ ZHR_max, α0, δ0 und λ_max aus dem IMO-Kalender; die Steigungen B (vor und nac
 
 `data/sciami.csv` ist eine einfache Textdatei (Trennzeichen `;`), die du bearbeiten kannst: Kürzel, Name, Beginn und Ende (MM-DD), λ max, RA, Dekl., Wanderungen, v, r, ZHR, B vor/nach, Typ (V visuell, R Radio Tag). Ist eine Zeile fehlerhaft, zeigt das Programm beim Start eine Meldung und ignoriert sie.
 
-Quellen: International Meteor Organization – Meteor Shower Calendar 2026 und 2027, [www.imo.net](https://www.imo.net) (Tabellen 5, 6 und 7); Philip G0ISW (maximale Radio-Stundenraten); Rossano IZ5TEK (scattertek).
+Quellen: International Meteor Organization – Meteor Shower Calendar 2026 und 2027, [www.imo.net](https://www.imo.net) (Tabellen 5, 6 und 7); Rossano IZ5TEK (scattertek).

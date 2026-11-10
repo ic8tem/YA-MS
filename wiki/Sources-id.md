@@ -38,7 +38,6 @@ Tab **Sumber** mencantumkan setiap karya yang menjadi dasar YA-MS, dikelompokkan
 | Sumber | Dipakai untuk |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (dan 2027), www.imo.net, tabel 5, 6 dan 7 | Radian, λ max, v, r, ZHR, Sumber Antihelion, tanggal dan jam puncak |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Laju per jam radio maksimum |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Data hujan meteor |
 
 ## DATA RADAR LANGSUNG

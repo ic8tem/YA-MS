@@ -49,4 +49,4 @@ ZHR_max، α0، δ0 اور λ_max، IMO کیلنڈر سے؛ ڈھلوانیں B (
 
 `data/sciami.csv` ایک سادہ متنی فائل ہے (جداکار `;`) جس میں آپ ترمیم کر سکتے ہیں: کوڈ، نام، آغاز اور اختتام (MM-DD)، λ max، R.A.، Dec.، حرکت، v، r، ZHR، پہلے/بعد B، قسم (V بصری، R دن کا ریڈیو)۔ اگر کوئی لائن غلط ہو تو پروگرام آغاز پر پیغام دکھاتا ہے اور اسے نظرانداز کرتا ہے۔
 
-ذرائع: International Meteor Organization – Meteor Shower Calendar 2026 اور 2027، [www.imo.net](https://www.imo.net) (جدول 5، 6 اور 7)؛ Philip G0ISW (ریڈیو میں زیادہ سے زیادہ گھنٹہ وار شرح)؛ Rossano IZ5TEK (scattertek)۔
+ذرائع: International Meteor Organization – Meteor Shower Calendar 2026 اور 2027، [www.imo.net](https://www.imo.net) (جدول 5، 6 اور 7)؛ Rossano IZ5TEK (scattertek)۔

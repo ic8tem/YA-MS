@@ -38,7 +38,6 @@
 | Kaynak | Kullanıldığı yer |
 |---|---|
 | International Meteor Organization – Meteor Shower Calendar 2026 (ve 2027), www.imo.net, tablo 5, 6 ve 7 | Radyantlar, λ max, v, r, ZHR, Antihelion Kaynağı, tepe tarihleri ve saatleri |
-| Philip **G0ISW** – www.qsl.net/g0isw/g0iswms.htm | Radyoda en yüksek saatlik oranlar |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | Yağmur verileri |
 
 ## CANLI RADAR VERİLERİ

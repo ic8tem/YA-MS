@@ -1750,7 +1750,6 @@ Lang.T("CALCOLO E TEORIA DELL'EFFICIENZA") + "\n" +
 "  " + Lang.T("John Drew VK5DJ - Yagi Calculator: stime del guadagno per le varianti VK3AUU, WA2PHW e DJ9BV") + "\n\n" +
 Lang.T("DATI DEGLI SCIAMI") + "\n" +
 "  " + Lang.T("International Meteor Organization - Meteor Shower Calendar 2026, www.imo.net (tabelle 5, 6 e 7)") + "\n" +
-"  " + Lang.T("Philip G0ISW - www.qsl.net/g0isw/g0iswms.htm (tassi orari radio massimi)") + "\n" +
 "  Rossano IZ5TEK - www.aripisa.it/images/pdf/scattertek.pdf\n\n" +
 Lang.T("DATI RADAR IN DIRETTA") + "\n" +
 "  " + Lang.T("Radar meteorico di Collm, Universita' di Lipsia (LIM) e IAP Kuehlungsborn - wetterdaten.meteo.uni-leipzig.de/radar_flux.php") + "\n" +

@@ -9,11 +9,14 @@
 | Windows (64-bit) | `YA-MS-x.y.z-windows-x64-setup.exe` (مثبِّت) | `C:\YA-MS` |
 | Windows (64-bit)، محمول | `YA-MS-x.y.z-windows-x64-portatile.zip` | أي مجلد لديك صلاحية الكتابة فيه |
 | Windows (32-bit، Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` أو `...-windows-x86-portatile.zip` | `C:\YA-MS` |
-| Linux (64-bit) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Linux (64-bit): Debian وUbuntu وMint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (يُنسخ إليه عند التشغيل الأول) |
+| Linux (64-bit)، أي توزيعة | `YA-MS-x.y.z-linux-x64.tar.gz` (محمول أو عبر `./installa.sh`) | `~/YA-MS` أو أي مجلد |
 | Raspberry Pi 3/4/5، 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi، حزمة Debian | `ya-ms_x.y.z_arm64.deb` (64-bit) أو `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (يُنسخ إليه عند التشغيل الأول) |
 | macOS، Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS، Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+| macOS، التطبيق فقط | `YA-MS-x.y.z-mac-apple-silicon-app.zip` أو `...-mac-intel-app.zip` | المجلد الذي تستخرج فيه `YA-MS.app` |
 
 **يبقى البرنامج ومجلد `data` الخاص به معاً دائماً** في مجلد YA-MS: فيه جميع البيانات والإعدادات (لا AppData ولا مجلدات نظام). انظر [الإعدادات ومجلد البيانات](Settings-and-Data-Folder-ar).
 
@@ -36,6 +39,16 @@
    ```
 3. ينسخ السكربت YA-MS إلى **`~/YA-MS`** (دون الحاجة إلى root) ويضيف **YA-MS** إلى قائمة التطبيقات (الفئة *HamRadio*). يمكنك أيضاً تشغيله بالأمر `~/YA-MS/YA-MS`.
 
+### حزمة Debian (.deb)
+على Debian وUbuntu وMint وRaspberry Pi OS يمكنك بدلاً من ذلك تثبيت `ya-ms_x.y.z_amd64.deb` (`_arm64.deb` / `_armhf.deb` على Raspberry Pi):
+```sh
+sudo apt install ./ya-ms_x.y.z_amd64.deb
+```
+تضع الحزمة البرنامج في `/opt/ya-ms` وتضيف **YA-MS** إلى القائمة. عند التشغيل الأول (وبعد كل إصدار جديد) ينسخ البرنامج نفسه إلى **`~/YA-MS`** ويعمل من هناك، فيبقى مجلد `data` بجوار البرنامج وتُحفظ إعداداتك.
+
+### النسخة المحمولة
+يعمل ملف `.tar.gz` أيضاً دون تثبيت: فك ضغطه في أي مكان لديك صلاحية الكتابة فيه وشغّل `./YA-MS` من ذلك المجلد.
+
 لعرض النصوص اليابانية قد تحتاج إلى خطوط Noto CJK: انظر [حل المشكلات](Troubleshooting-FAQ-ar#linux-النص-الياباني-يظهر-مربعات).
 
 ## Raspberry Pi
@@ -51,6 +64,8 @@
 1. اختر الملف المناسب: `-mac-apple-silicon.dmg` لمعالجات M1/M2/M3/M4، و`-mac-intel.dmg` لأجهزة Mac بمعالج Intel.
 2. افتح ملف `.dmg`، ثم **انقر بزر الفأرة الأيمن على "Installa YA-MS.command" → Open** وأكّد.
 3. ينسخ السكربت `YA-MS.app` إلى **`~/YA-MS`** ويفتحه.
+
+بدلاً من ذلك، يحتوي `YA-MS-x.y.z-mac-apple-silicon-app.zip` / `-mac-intel-app.zip` على `YA-MS.app` فقط: فك ضغطه في مجلد تختاره (لديك صلاحية الكتابة فيه)؛ يُنشأ مجلد `data` بجوار `YA-MS.app`. في المرة الأولى: انقر بزر الفأرة الأيمن → **Open**.
 
 البرنامج غير موقَّع من Apple، لذا يطلب macOS تأكيداً في المرة الأولى؛ انظر [حل المشكلات](Troubleshooting-FAQ-ar#macos-لا-يمكن-فتحه-لأنه-من-مطوِّر-غير-معروف).
 

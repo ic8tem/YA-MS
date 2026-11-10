@@ -6,18 +6,19 @@
 
 [![Raccolta dati](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/it-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/it-1_4.png)
 
-## Tre flussi dai cluster
+## Quattro sorgenti
 
-La linguetta raccoglie gli **spot meteor scatter** da tre flussi telnet, ognuno nella sua sotto-linguetta:
+La linguetta raccoglie gli **spot meteor scatter** da tre flussi telnet e dal flusso MQTT di PSKReporter, ognuno nella sua sotto-linguetta:
 
 | Sotto-linguetta | Predefinito | Note |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | Un cluster a scelta. Su ON0DXK le bande VHF sono filtrate: abilitale con `set/filter dxbm/pass 6` (poi 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Gli skimmer decodificano raramente i modi MS. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | Cluster DM4X che porta gli spot di **PSKReporter**: qui arrivano le decodifiche MSK144 di WSJT-X e MSHV. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | Spot di PSKReporter in diretta via **MQTT** (servizio di M0LTE): nessun login, ogni spot porta già i locator della stazione che trasmette e di quella che riceve. Argomenti predefiniti: MSK144 su 6 m, 4 m, 2 m, 1,25 m, 70 cm e FSK441 su 2 m (`pskr/filter/v2/band/mode/#`); *Argomenti di partenza* li ripristina. |
 | **Spot MS raccolti** | – | Tabella degli spot accettati, i più recenti in alto. |
 
-Ogni flusso ha host, porta, comandi inviati dopo il login, *Riconnetti*, *Connetti all'avvio*, una console e una riga per inviare comandi. Scrivi in alto il tuo **nominativo per il login**. Una striscia mostra lo stato delle tre sessioni (pallino verde = connesso). Le sessioni restano aperte quando cambi lingua o schema di colori.
+Ogni flusso ha host, porta, comandi inviati dopo il login, *Riconnetti*, *Connetti all'avvio*, una console e una riga per inviare comandi. Scrivi in alto il tuo **nominativo per il login**. La sorgente MQTT ha host, porta, argomenti (uno per riga o separati da `;`), *Riconnetti* e *Connetti all'avvio* (disattivato per impostazione predefinita) e una console con gli spot ricevuti; i suoi spot passano per lo stesso filtro. Una striscia mostra lo stato delle quattro sorgenti (pallino verde = connesso). Le sessioni restano aperte quando cambi lingua o schema di colori.
 
 ## Il filtro (40 % della finestra)
 

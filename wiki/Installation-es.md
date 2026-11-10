@@ -9,11 +9,14 @@ Todos los paquetes están en la página **[Releases](https://github.com/ic8tem/Y
 | Windows (64 bits) | `YA-MS-x.y.z-windows-x64-setup.exe` (instalador) | `C:\YA-MS` |
 | Windows (64 bits), portable | `YA-MS-x.y.z-windows-x64-portatile.zip` | cualquier carpeta en la que puedas escribir |
 | Windows (32 bits, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` o `...-windows-x86-portatile.zip` | `C:\YA-MS` |
-| Linux (64 bits) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Linux (64 bits): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (copiado allí en el primer arranque) |
+| Linux (64 bits), cualquier distribución | `YA-MS-x.y.z-linux-x64.tar.gz` (portable o con `./installa.sh`) | `~/YA-MS` o cualquier carpeta |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bits) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bits) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi, paquete Debian | `ya-ms_x.y.z_arm64.deb` (64 bits) o `ya-ms_x.y.z_armhf.deb` (32 bits) | `~/YA-MS` (copiado allí en el primer arranque) |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+| macOS, solo la aplicación | `YA-MS-x.y.z-mac-apple-silicon-app.zip` o `...-mac-intel-app.zip` | la carpeta donde descomprimas `YA-MS.app` |
 
 **El programa y su carpeta `data` siempre van juntos** en la carpeta YA-MS: todos los datos y ajustes están ahí (nada de AppData ni carpetas del sistema). Ver [Ajustes y carpeta de datos](Settings-and-Data-Folder-es).
 
@@ -36,6 +39,16 @@ Descomprime `YA-MS-x.y.z-windows-x64-portatile.zip` donde quieras (una carpeta e
    ```
 3. El script copia YA-MS en **`~/YA-MS`** (no hace falta root) y añade **YA-MS** al menú de aplicaciones (categoría *HamRadio*). También puedes iniciarlo con `~/YA-MS/YA-MS`.
 
+### Paquete Debian (.deb)
+En Debian, Ubuntu, Mint y Raspberry Pi OS puedes instalar en su lugar `ya-ms_x.y.z_amd64.deb` (`_arm64.deb` / `_armhf.deb` en la Raspberry Pi):
+```sh
+sudo apt install ./ya-ms_x.y.z_amd64.deb
+```
+El paquete coloca el programa en `/opt/ya-ms` y añade **YA-MS** al menú. En el primer arranque (y después de cada nueva versión) se copia a **`~/YA-MS`** y se ejecuta desde allí, de modo que la carpeta `data` queda junto al programa y se conservan tus ajustes.
+
+### Portable
+El `.tar.gz` también funciona sin instalar: descomprímelo en cualquier lugar donde puedas escribir y ejecuta `./YA-MS` desde esa carpeta.
+
 Para el texto japonés pueden hacer falta las fuentes Noto CJK: ver [Problemas](Troubleshooting-FAQ-es#linux-el-texto-japonés-aparece-como-cuadraditos).
 
 ## Raspberry Pi
@@ -51,6 +64,8 @@ Mismo procedimiento que en Linux: descomprime `YA-MS-x.y.z-raspberry-pi-64bit.ta
 1. Elige el archivo adecuado: `-mac-apple-silicon.dmg` para procesadores M1/M2/M3/M4, `-mac-intel.dmg` para Mac Intel.
 2. Abre el `.dmg`, **clic derecho en "Installa YA-MS.command" → Abrir** y confirma.
 3. El script copia `YA-MS.app` en **`~/YA-MS`** y lo abre.
+
+Como alternativa, `YA-MS-x.y.z-mac-apple-silicon-app.zip` / `-mac-intel-app.zip` contiene solo `YA-MS.app`: descomprímelo en una carpeta de tu elección (donde puedas escribir); la carpeta `data` se crea junto a `YA-MS.app`. La primera vez, clic derecho → **Abrir**.
 
 El programa no está firmado por Apple, así que la primera vez macOS pide confirmación; ver [Problemas](Troubleshooting-FAQ-es#macos-no-se-puede-abrir-porque-es-de-un-desarrollador-no-identificado).
 

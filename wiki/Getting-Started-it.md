@@ -33,7 +33,7 @@ Sopra le linguette ci sono tre righe di comandi, valide per tutte le linguette. 
 | Comando | Che cosa fa |
 |---|---|
 | **Ora** | Orologio UTC. |
-| **Ora della volta celeste (±36 h)** | Sposta la [Volta celeste](Sky-View-it) e la linguetta [Radar GRAVES](GRAVES-Radar-it) fino a 36 ore indietro o avanti, a passi di 15 minuti. |
+| **Momento del calcolo (±36 h)** | Sposta il momento del calcolo – [Calcolo previsionale](Sky-View-it) e [Radar GRAVES](GRAVES-Radar-it) – fino a 36 ore indietro o avanti, a passi di 15 minuti. Accanto: *Calcolo per: adesso* oppure *Calcolo per: gg/mm hh:mm UTC*. |
 | **Tempo reale** | Torna al momento attuale. |
 | **Giorno per la tabella 24 h (UTC)** | Il giorno mostrato in [Calcolo dell'efficienza](Efficiency-Calculation-it) e nella cronologia di GRAVES. |
 

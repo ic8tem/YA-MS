@@ -16,7 +16,7 @@ Kortelė traktuoja **GRAVES → jūs** kaip atskirą meteor scatter trasą: su t
 
 | Valdiklis | Ką daro |
 |---|---|
-| **Dabar** | Grąžina dangaus skliauto laiką į realų laiką (kortelė seka slankiklį *Dangaus skliauto laikas*). |
+| **Dabar** | Grąžina skaičiavimo laiką į realų laiką (kortelė seka slankiklį *Skaičiavimo laikas*). |
 | **GRAVES kaip DX** | Korespondentu tampa GRAVES (JN27SI, aukštis 200 m), o pagrindinė trasa perskaičiuojama: visos kitos kortelės tada rodo GRAVES trasą. |
 | **Pluošto seka** | *0,8 s žingsniui · ciklas 4,8 s (PE1ITR 2021)* (numatytoji) arba *3,2 s žingsniui · ciklas 19,2 s (PE1ITR 2007)*. |
 

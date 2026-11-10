@@ -9,11 +9,14 @@
 | Windows (64 бита) | `YA-MS-x.y.z-windows-x64-setup.exe` (установщик) | `C:\YA-MS` |
 | Windows (64 бита), портативная | `YA-MS-x.y.z-windows-x64-portatile.zip` | любая папка, в которую разрешена запись |
 | Windows (32 бита, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` или `...-windows-x86-portatile.zip` | `C:\YA-MS` |
-| Linux (64 бита) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Linux (64 бита): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (копируется туда при первом запуске) |
+| Linux (64 бита), любой дистрибутив | `YA-MS-x.y.z-linux-x64.tar.gz` (портативно или через `./installa.sh`) | `~/YA-MS` или любая папка |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 бита) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 бита) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi, пакет Debian | `ya-ms_x.y.z_arm64.deb` (64 бита) или `ya-ms_x.y.z_armhf.deb` (32 бита) | `~/YA-MS` (копируется туда при первом запуске) |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+| macOS, только приложение | `YA-MS-x.y.z-mac-apple-silicon-app.zip` или `...-mac-intel-app.zip` | папка, в которую вы распаковали `YA-MS.app` |
 
 **Программа и её папка `data` всегда находятся вместе** в папке YA-MS: там все данные и настройки (никакого AppData и системных папок). См. [Настройки и папка данных](Settings-and-Data-Folder-ru).
 
@@ -36,6 +39,16 @@
    ```
 3. Скрипт копирует YA-MS в **`~/YA-MS`** (права root не нужны) и добавляет **YA-MS** в меню приложений (категория *HamRadio*). Запускать можно также командой `~/YA-MS/YA-MS`.
 
+### Пакет Debian (.deb)
+В Debian, Ubuntu, Mint и Raspberry Pi OS можно вместо этого установить `ya-ms_x.y.z_amd64.deb` (`_arm64.deb` / `_armhf.deb` на Raspberry Pi):
+```sh
+sudo apt install ./ya-ms_x.y.z_amd64.deb
+```
+Пакет помещает программу в `/opt/ya-ms` и добавляет **YA-MS** в меню. При первом запуске (и после каждой новой версии) программа копирует себя в **`~/YA-MS`** и запускается оттуда, поэтому папка `data` остаётся рядом с программой, а ваши настройки сохраняются.
+
+### Портативная версия
+Архив `.tar.gz` работает и без установки: распакуйте его в любую папку, в которую разрешена запись, и запустите `./YA-MS` из этой папки.
+
 Для японского текста могут понадобиться шрифты Noto CJK: см. [Неполадки](Troubleshooting-FAQ-ru#linux-японский-текст-отображается-квадратиками).
 
 ## Raspberry Pi
@@ -51,6 +64,8 @@
 1. Выберите нужный файл: `-mac-apple-silicon.dmg` для процессоров M1/M2/M3/M4, `-mac-intel.dmg` для Mac с Intel.
 2. Откройте `.dmg`, **правый щелчок по «Installa YA-MS.command» → Открыть** и подтвердите.
 3. Скрипт копирует `YA-MS.app` в **`~/YA-MS`** и запускает его.
+
+Кроме того, `YA-MS-x.y.z-mac-apple-silicon-app.zip` / `-mac-intel-app.zip` содержит только `YA-MS.app`: распакуйте его в папку по вашему выбору (в которую разрешена запись); папка `data` создаётся рядом с `YA-MS.app`. При первом запуске – правый щелчок → **Открыть**.
 
 Программа не подписана Apple, поэтому при первом запуске macOS запрашивает подтверждение; см. [Неполадки](Troubleshooting-FAQ-ru#macos-не-удаётся-открыть-так-как-разработчик-не-установлен).
 

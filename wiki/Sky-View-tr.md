@@ -6,7 +6,9 @@
 
 [![Gökyüzü kubbesi](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Bu alt sekme (önceki sürümlerin gökyüzü kubbesi), yararlı izlerin şu anda **nerede** olduğunu ve antenin **nereye** çevrileceğini tek ekranda toplar. Solda yolun **plan görünümü**; sağda yağmur listesi, radyantlarla küçük bir gökyüzü kubbesi, hesabın metni ve anteninizden görülen **kesit**. Her şey *Gökyüzü kubbesi saati* kaydırıcısının zamanına göredir (varsayılan gerçek zaman; 15 dakikalık adımlarla ±36 saat).
+Bu alt sekme (önceki sürümlerin gökyüzü kubbesi), yararlı izlerin şu anda **nerede** olduğunu ve antenin **nereye** çevrileceğini tek ekranda toplar. Solda yolun **plan görünümü**; sağda yağmur listesi, radyantlarla küçük bir gökyüzü kubbesi, hesabın metni ve anteninizden görülen **kesit**. Her şey *Hesap zamanı* kaydırıcısının zamanına göredir (varsayılan gerçek zaman; 15 dakikalık adımlarla ±36 saat).
+
+**Plan görünümünün üstündeki şerit** o anın hesabını özetler: tarih ve saat (*şimdi* ya da şimdiden itibaren saat), **yol endeksi Σ ZHR×η**, ZHR'si ve verimiyle **en yararlı yağmur**, ufkun üstündeki yağmur sayısı ve azimutuyla **önerilen Hot**.
 
 Küçük gökyüzü kubbesinde zenitten geçen bir **turuncu çizgi** her zaman **doğru anten yönlerini** verir; bu yönler seçili yağmurun (ya da en elverişli olanın) kaymasına diktir: radyant azimutu ±90°, iki ucunda *anten NNN°* etiketiyle, ±45°'lik tolerans ince çizgilerle. Kenardaki kısa turuncu çentikler diğer yararlı yağmurların dik yönlerini verir.
 

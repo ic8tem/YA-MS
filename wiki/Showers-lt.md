@@ -22,7 +22,8 @@ Visuose skaičiavimuose naudojamas srautų katalogas: **45 srautai** iš **IMO M
 | v km/s, r | Geocentrinis greitis ir populiacijos indeksas |
 | ZHR | Maksimumo ZHR (*kint.* = kintamas) |
 | Tipas | *vizualinis* arba *radijo, dieninis* |
-| Aktyvus šiandien | *taip*, kai srautas dabar aktyvus |
+
+**Šiandien (UTC) aktyvūs** srautai paryškinti geltonu fonu ir pusjuodžiu šriftu.
 
 ## Kitas maksimumas
 

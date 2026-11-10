@@ -16,7 +16,7 @@ Fanen behandler **GRAVES → dig** som en selvstændig meteor scatter-strækning
 
 | Element | Hvad det gør |
 |---|---|
-| **Nu** | Sætter himmelkuplens tid tilbage til realtid (fanen følger skyderen *Himmelkuplens tid*). |
+| **Nu** | Sætter beregningstidspunktet tilbage til realtid (fanen følger skyderen *Beregningstidspunkt*). |
 | **Sæt GRAVES som DX** | Modstationen bliver GRAVES (JN27SI, højde 200 m), og hovedstrækningen genberegnes: alle andre faner viser derefter GRAVES-strækningen. |
 | **Strålesekvens** | *0,8 s pr. trin · cyklus 4,8 s (PE1ITR 2021)* (standard) eller *3,2 s pr. trin · cyklus 19,2 s (PE1ITR 2007)*. |
 

@@ -22,7 +22,8 @@ Der Meteorstrom-Katalog, den alle Berechnungen verwenden: **45 Meteorströme** a
 | v km/s, r | Geozentrische Geschwindigkeit und Populationsindex |
 | ZHR | ZHR im Maximum (*var.* = variabel) |
 | Typ | *visuell* oder *Radio, Tag* |
-| Heute aktiv | *ja*, wenn der Strom jetzt aktiv ist |
+
+Die **heute (UTC) aktiven** Ströme sind mit einem gelben Schleier und fetter Schrift hervorgehoben.
 
 ## Nächstes Maximum
 

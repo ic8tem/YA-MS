@@ -6,7 +6,9 @@
 
 [![Himmelhvelving](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Denne underfanen (himmelhvelvingen fra tidligere versjoner) samler på én skjerm **hvor** de nyttige sporene er nå, og **hvor** antennen skal peke. Til venstre **grunnrisset** av strekningen; til høyre svermlisten, en liten himmelhvelving med radiantene, beregningsteksten og **snittet** sett fra antennen din. Alt gjelder tidspunktet på glidebryteren *Tid for himmelhvelvingen* (sanntid som standard; ±36 t i steg på 15 minutter).
+Denne underfanen (himmelhvelvingen fra tidligere versjoner) samler på én skjerm **hvor** de nyttige sporene er nå, og **hvor** antennen skal peke. Til venstre **grunnrisset** av strekningen; til høyre svermlisten, en liten himmelhvelving med radiantene, beregningsteksten og **snittet** sett fra antennen din. Alt gjelder tidspunktet på glidebryteren *Beregningstidspunkt* (sanntid som standard; ±36 t i steg på 15 minutter).
+
+En **stripe over grunnrisset** oppsummerer beregningen for det tidspunktet: dato og klokkeslett (*nå* eller timer fra nå), **strekningsindeksen Σ ZHR×η**, den **mest nyttige svermen** med ZHR og effektivitet, antall svermer over horisonten og **anbefalt Hot** med asimut.
 
 I den lille himmelhvelvingen viser en **oransje linje** gjennom senit alltid de **riktige antenneretningene**, vinkelrett på forflytningen til den valgte svermen (eller den gunstigste): radiantens asimut ±90°, merket *antenne NNN°* i begge ender, med toleransen ±45° som tynne linjer. Korte oransje streker på kanten viser de vinkelrette retningene for de andre nyttige svermene.
 

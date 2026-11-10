@@ -6,18 +6,19 @@
 
 [![Duomenų rinkimas](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## Trys klasterių srautai
+## Keturi šaltiniai
 
-Kortelė renka **meteor scatter spotus** iš trijų telnet srautų, kiekvieną savo vidinėje kortelėje:
+Kortelė renka **meteor scatter spotus** iš trijų telnet srautų ir iš PSKReporter MQTT srauto, kiekvieną savo vidinėje kortelėje:
 
 | Vidinė kortelė | Numatytasis | Pastabos |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | Pasirinktas klasteris. ON0DXK VHF juostos filtruojamos: įjunkite jas komanda `set/filter dxbm/pass 6` (paskui 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimeriai MS modas dekoduoja retai. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | DM4X klasteris, perduodantis **PSKReporter** spotus: čia ateina WSJT-X ir MSHV MSK144 dekodavimai. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | PSKReporter spotai realiuoju laiku per **MQTT** (M0LTE paslauga): prisijungti nereikia, kiekviename spote jau yra siunčiančios ir priimančios stoties lokatoriai. Numatytosios temos: MSK144 6 m, 4 m, 2 m, 1,25 m, 70 cm juostose ir FSK441 2 m juostoje (`pskr/filter/v2/band/mode/#`); *Numatytosios temos* jas atkuria. |
 | **Surinkti MS spotai** | – | Priimtų spotų lentelė, naujausi viršuje. |
 
-Kiekvienas srautas turi serverį, prievadą, po prisijungimo siunčiamas komandas, *Prisijungti iš naujo*, *Prisijungti paleidžiant*, konsolę ir eilutę komandoms siųsti. Viršuje įrašykite savo **šaukinį prisijungimui**. Juostelė rodo trijų seansų būseną (žalias taškas = prisijungta). Seansai lieka atviri keičiant kalbą ar spalvų schemą.
+Kiekvienas srautas turi serverį, prievadą, po prisijungimo siunčiamas komandas, *Prisijungti iš naujo*, *Prisijungti paleidžiant*, konsolę ir eilutę komandoms siųsti. Viršuje įrašykite savo **šaukinį prisijungimui**. MQTT šaltinis turi serverį, prievadą, temas (po vieną eilutėje arba atskirtas `;`), *Prisijungti iš naujo* ir *Prisijungti paleidžiant* (pagal nutylėjimą išjungta) bei konsolę su gautais spotais; jo spotai eina per tą patį filtrą. Juostelė rodo keturių šaltinių būseną (žalias taškas = prisijungta). Seansai lieka atviri keičiant kalbą ar spalvų schemą.
 
 ## Filtras (40 % lango)
 

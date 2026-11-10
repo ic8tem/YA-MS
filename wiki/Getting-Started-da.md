@@ -33,7 +33,7 @@ Over fanerne er der tre rækker betjeningselementer, som gælder for alle faner.
 | Element | Hvad det gør |
 |---|---|
 | **Tid** | UTC-ur. |
-| **Himmelkuplens tid (±36 t)** | Flytter [himmelkuplen](Sky-View-da) og fanen [GRAVES-radar](GRAVES-Radar-da) op til 36 timer tilbage eller frem i trin på 15 minutter. |
+| **Beregningstidspunkt (±36 t)** | Flytter beregningens tidspunkt – [Prognoseberegning](Sky-View-da) og [GRAVES-radar](GRAVES-Radar-da) – op til 36 timer tilbage eller frem i trin på 15 minutter. Ved siden af: *Beregning for: nu* eller *Beregning for: dd/mm tt:mm UTC*. |
 | **Realtid** | Tilbage til nu. |
 | **Dag for 24 t-tabellen (UTC)** | Den dag, der vises i [Effektivitetsberegning](Efficiency-Calculation-da) og i GRAVES-kronologien. |
 

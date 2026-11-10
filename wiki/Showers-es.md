@@ -22,7 +22,8 @@ El catálogo de lluvias que usan todos los cálculos: **45 lluvias** del **IMO M
 | v km/s, r | Velocidad geocéntrica e índice de población |
 | ZHR | ZHR en el máximo (*var.* = variable) |
 | Tipo | *visual* o *radio, diurna* |
-| Activa hoy | *sí* cuando la lluvia está activa ahora |
+
+Las lluvias **activas hoy (UTC)** aparecen resaltadas con un velo amarillo y texto en negrita.
 
 ## Próximo máximo
 

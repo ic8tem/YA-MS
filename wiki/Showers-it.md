@@ -22,7 +22,8 @@ Il catalogo degli sciami usato da tutti i calcoli: **45 sciami** dall'**IMO Mete
 | v km/s, r | Velocità geocentrica e indice di popolazione |
 | ZHR | ZHR al massimo (*var.* = variabile) |
 | Tipo | *visuale* oppure *radio, diurno* |
-| Attivo oggi | *sì* quando lo sciame è attivo adesso |
+
+Gli sciami **attivi oggi (UTC)** sono evidenziati con un velo giallo e testo in grassetto.
 
 ## Prossimo massimo
 

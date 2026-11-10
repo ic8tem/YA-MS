@@ -6,18 +6,19 @@
 
 [![Recogida de datos](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## Tres flujos de cluster
+## Cuatro fuentes
 
-La pestaña recoge **spots de meteor scatter** de tres flujos telnet, cada uno en su propia subpestaña:
+La pestaña recoge **spots de meteor scatter** de tres flujos telnet y del flujo MQTT de PSKReporter, cada uno en su propia subpestaña:
 
 | Subpestaña | Por defecto | Notas |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | Un cluster a elección. En ON0DXK las bandas VHF están filtradas: actívalas con `set/filter dxbm/pass 6` (luego 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Los skimmers raramente decodifican modos MS. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | Cluster DM4X que transporta los spots de **PSKReporter**: aquí llegan las decodificaciones MSK144 de WSJT-X y MSHV. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | Spots de PSKReporter en directo por **MQTT** (servicio de M0LTE): sin login, cada spot ya lleva los locators de la estación que transmite y de la que recibe. Temas predeterminados: MSK144 en 6 m, 4 m, 2 m, 1,25 m, 70 cm y FSK441 en 2 m (`pskr/filter/v2/band/mode/#`); *Temas predeterminados* los restablece. |
 | **Spots MS recogidos** | – | Tabla de los spots aceptados, los más recientes primero. |
 
-Cada flujo tiene host, puerto, comandos enviados tras el login, *Reconectar*, *Conectar al inicio*, una consola y una línea para enviar comandos. Escribe arriba tu **indicativo para el login**. Una franja muestra el estado de las tres sesiones (punto verde = conectada). Las sesiones permanecen abiertas cuando cambias de idioma o de esquema de colores.
+Cada flujo tiene host, puerto, comandos enviados tras el login, *Reconectar*, *Conectar al inicio*, una consola y una línea para enviar comandos. Escribe arriba tu **indicativo para el login**. La fuente MQTT tiene host, puerto, temas (uno por línea o separados por `;`), *Reconectar* y *Conectar al inicio* (desactivado por defecto) y una consola con los spots recibidos; sus spots pasan por el mismo filtro. Una franja muestra el estado de las cuatro fuentes (punto verde = conectada). Las sesiones permanecen abiertas cuando cambias de idioma o de esquema de colores.
 
 ## El filtro (40 % de la ventana)
 

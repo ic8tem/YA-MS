@@ -9,11 +9,14 @@ Kõik paketid on lehel **[Releases](https://github.com/ic8tem/YA-MS/releases)** 
 | Windows (64-bitine) | `YA-MS-x.y.z-windows-x64-setup.exe` (paigaldaja) | `C:\YA-MS` |
 | Windows (64-bitine), kaasaskantav | `YA-MS-x.y.z-windows-x64-portatile.zip` | mis tahes kaust, kuhu saad kirjutada |
 | Windows (32-bitine, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` või `...-windows-x86-portatile.zip` | `C:\YA-MS` |
-| Linux (64-bitine) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Linux (64-bitine): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (kopeeritakse sinna esimesel käivitusel) |
+| Linux (64-bitine), mis tahes distributsioon | `YA-MS-x.y.z-linux-x64.tar.gz` (kaasaskantav või `./installa.sh` abil) | `~/YA-MS` või mis tahes kaust |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bitine) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bitine) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi, Debiani pakett | `ya-ms_x.y.z_arm64.deb` (64-bitine) või `ya-ms_x.y.z_armhf.deb` (32-bitine) | `~/YA-MS` (kopeeritakse sinna esimesel käivitusel) |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+| macOS, ainult rakendus | `YA-MS-x.y.z-mac-apple-silicon-app.zip` või `...-mac-intel-app.zip` | kaust, kuhu `YA-MS.app` lahti pakid |
 
 **Programm ja selle kaust `data` on alati koos** YA-MS-i kaustas: kõik andmed ja seaded on seal (ei AppData-t ega süsteemikaustu). Vt [Seaded ja andmekaust](Settings-and-Data-Folder-et).
 
@@ -36,6 +39,16 @@ Paki `YA-MS-x.y.z-windows-x64-portatile.zip` lahti kuhu soovid (kausta, kuhu saa
    ```
 3. Skript kopeerib YA-MS-i kausta **`~/YA-MS`** (root-õigusi pole vaja) ja lisab **YA-MS-i** rakenduste menüüsse (kategooria *HamRadio*). Programmi saab käivitada ka käsuga `~/YA-MS/YA-MS`.
 
+### Debiani pakett (.deb)
+Debianis, Ubuntus, Mintis ja Raspberry Pi OS-is võid selle asemel paigaldada `ya-ms_x.y.z_amd64.deb` (Raspberry Pi puhul `_arm64.deb` / `_armhf.deb`):
+```sh
+sudo apt install ./ya-ms_x.y.z_amd64.deb
+```
+Pakett paigutab programmi kausta `/opt/ya-ms` ja lisab **YA-MS-i** menüüsse. Esimesel käivitusel (ja pärast iga uut versiooni) kopeerib programm end kausta **`~/YA-MS`** ja töötab sealt, nii et kaust `data` jääb programmi kõrvale ja sinu seaded säilivad.
+
+### Kaasaskantav
+`.tar.gz` töötab ka ilma paigaldamata: paki see lahti ükskõik kuhu, kuhu saad kirjutada, ja käivita samast kaustast `./YA-MS`.
+
 Jaapani teksti jaoks võib olla vaja Noto CJK fonte: vt [Tõrkeotsing](Troubleshooting-FAQ-et#linux-jaapani-tekst-kuvatakse-kastikestena).
 
 ## Raspberry Pi
@@ -51,6 +64,8 @@ Sama toiming nagu Linuxis: paki lahti `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` (v
 1. Vali õige fail: `-mac-apple-silicon.dmg` protsessoritele M1/M2/M3/M4, `-mac-intel.dmg` Inteli Macidele.
 2. Ava `.dmg`, **paremklõps failil "Installa YA-MS.command" → Open** ja kinnita.
 3. Skript kopeerib `YA-MS.app` kausta **`~/YA-MS`** ja avab selle.
+
+Teise võimalusena sisaldab `YA-MS-x.y.z-mac-apple-silicon-app.zip` / `-mac-intel-app.zip` ainult rakendust `YA-MS.app`: paki see lahti enda valitud kausta (kuhu saad kirjutada); kaust `data` luuakse `YA-MS.app` kõrvale. Esimesel korral paremklõps → **Open**.
 
 Programm ei ole Apple'i poolt allkirjastatud, seega küsib macOS esimesel korral kinnitust; vt [Tõrkeotsing](Troubleshooting-FAQ-et#macos-ei-saa-avada-sest-arendaja-on-tuvastamata).
 

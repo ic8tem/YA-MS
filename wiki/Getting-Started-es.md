@@ -33,7 +33,7 @@ Encima de las pestañas hay tres filas de controles, válidas para todas las pes
 | Control | Qué hace |
 |---|---|
 | **Hora** | Reloj UTC. |
-| **Hora de la bóveda celeste (±36 h)** | Desplaza la [Bóveda celeste](Sky-View-es) y la pestaña [Radar GRAVES](GRAVES-Radar-es) hasta 36 horas atrás o adelante, en pasos de 15 minutos. |
+| **Momento del cálculo (±36 h)** | Desplaza el momento del cálculo – [Cálculo de previsión](Sky-View-es) y [Radar GRAVES](GRAVES-Radar-es) – hasta 36 horas atrás o adelante, en pasos de 15 minutos. Al lado: *Cálculo para: ahora* o *Cálculo para: dd/mm hh:mm UTC*. |
 | **Tiempo real** | Vuelve al momento actual. |
 | **Día para la tabla 24 h (UTC)** | El día mostrado en [Cálculo de la eficiencia](Efficiency-Calculation-es) y en la cronología de GRAVES. |
 

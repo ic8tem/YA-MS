@@ -6,7 +6,9 @@
 
 [![Abóbada celeste](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Este subseparador (a abóbada celeste das versões anteriores) reúne num só ecrã **onde** estão agora os rastos úteis e **para onde apontar**. À esquerda a **vista em planta** do percurso; à direita a lista de chuvas, uma pequena abóbada celeste com os radiantes, o texto do cálculo e o **corte** visto a partir da sua antena. Tudo se refere à hora do controlo *Hora da abóbada celeste* (tempo real por omissão; ±36 h em passos de 15 minutos).
+Este subseparador (a abóbada celeste das versões anteriores) reúne num só ecrã **onde** estão agora os rastos úteis e **para onde apontar**. À esquerda a **vista em planta** do percurso; à direita a lista de chuvas, uma pequena abóbada celeste com os radiantes, o texto do cálculo e o **corte** visto a partir da sua antena. Tudo se refere à hora do controlo *Momento do cálculo* (tempo real por omissão; ±36 h em passos de 15 minutos).
+
+Uma **faixa por cima da vista em planta** resume o cálculo para esse momento: data e hora (*agora* ou horas em relação a agora), o **índice do percurso Σ ZHR×η**, a **chuva mais útil** com o seu ZHR e a sua eficiência, o número de chuvas acima do horizonte e o **Hot recomendado** com o seu azimute.
 
 Na pequena abóbada celeste uma **linha laranja** que passa pelo zénite indica sempre as **direções de antena certas**, ortogonais à deslocação da chuva selecionada (ou da mais favorável): azimute do radiante ±90°, com a etiqueta *antena NNN°* em ambas as extremidades e a tolerância de ±45° em linhas finas. Pequenas marcas laranja no bordo indicam as direções ortogonais das outras chuvas úteis.
 

@@ -22,7 +22,8 @@ Die swermkatalogus wat deur al die berekeninge gebruik word: **45 swerms** uit d
 | v km/s, r | Geosentriese snelheid en populasie-indeks |
 | ZHR | ZHR by die maksimum (*var.* = veranderlik) |
 | Tipe | *visueel* of *radio, bedags* |
-| Vandag aktief | *ja* wanneer die swerm nou aktief is |
+
+Die swerms wat **vandag (UTC) aktief** is, word met 'n geel waas en vetdruk uitgelig.
 
 ## Volgende maksimum
 

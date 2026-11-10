@@ -22,7 +22,8 @@ Plūsmu katalogs, ko izmanto visi aprēķini: **45 plūsmas** no **IMO Meteor Sh
 | v km/s, r | Ģeocentriskais ātrums un populācijas indekss |
 | ZHR | Maksimālais ZHR (*main.* = mainīgs) |
 | Tips | *vizuāli* vai *radio, dienas* |
-| Aktīva šodien | *jā*, ja plūsma tagad ir aktīva |
+
+**Šodien (UTC) aktīvās** plūsmas ir izceltas ar dzeltenu plīvuru un treknrakstu.
 
 ## Nākamais maksimums
 

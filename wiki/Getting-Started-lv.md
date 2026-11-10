@@ -33,7 +33,7 @@ Virs cilnēm ir trīs vadības rindas, kas attiecas uz visām cilnēm. Poga **Va
 | Vadīkla | Ko tā dara |
 |---|---|
 | **Laiks** | UTC pulkstenis. |
-| **Debess velves laiks (±36 h)** | Pārvieto [debess velvi](Sky-View-lv) un cilni [GRAVES radars](GRAVES-Radar-lv) līdz 36 stundām atpakaļ vai uz priekšu ar 15 minūšu soli. |
+| **Aprēķina laiks (±36 h)** | Pārvieto aprēķina brīdi – [Prognozes aprēķins](Sky-View-lv) un [GRAVES radars](GRAVES-Radar-lv) – līdz 36 stundām atpakaļ vai uz priekšu ar 15 minūšu soli. Blakus: *Aprēķins uz: tagad* vai *Aprēķins uz: dd/mm hh:mm UTC*. |
 | **Reālais laiks** | Atpakaļ uz tagadni. |
 | **Diena 24 h tabulai (UTC)** | Diena, kas tiek rādīta cilnē [Efektivitātes aprēķins](Efficiency-Calculation-lv) un GRAVES hronoloģijā. |
 

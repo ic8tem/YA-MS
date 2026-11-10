@@ -6,18 +6,19 @@
 
 [![Gagnasöfnun](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## Þrír straumar frá klösum
+## Fjórar uppsprettur
 
-Flipinn safnar **meteor scatter-spotum** úr þremur telnet-straumum, hverjum á sínum undirflipa:
+Flipinn safnar **meteor scatter-spotum** úr þremur telnet-straumum og úr PSKReporter MQTT-straumnum, hverjum á sínum undirflipa:
 
 | Undirflipi | Sjálfgefið | Athugasemdir |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | Klasi að eigin vali. Á ON0DXK eru VHF-tíðnisviðin síuð: virkjaðu þau með `set/filter dxbm/pass 6` (síðan 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimmers afkóða sjaldan MS-hætti. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | Klasi DM4X sem flytur spot frá **PSKReporter**: hingað berast MSK144-afkóðanir WSJT-X og MSHV. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | PSKReporter-spot í beinni um **MQTT** (þjónusta frá M0LTE): engin innskráning, hvert spot ber þegar locatora sendistöðvar og móttökustöðvar. Sjálfgefin efni: MSK144 á 6 m, 4 m, 2 m, 1,25 m, 70 cm og FSK441 á 2 m (`pskr/filter/v2/band/mode/#`); *Sjálfgefin efni* endurheimtir þau. |
 | **Söfnuð MS-spot** | – | Tafla yfir samþykkt spot, nýjustu fyrst. |
 
-Hver straumur hefur hýsil, gátt, skipanir sem sendar eru eftir innskráningu, *Tengja aftur*, *Tengja við ræsingu*, skjáborð (console) og línu til að senda skipanir. Skrifaðu **kallmerki fyrir innskráningu** efst. Rönd sýnir stöðu lotanna þriggja (grænn punktur = tengt). Loturnar haldast opnar þegar þú skiptir um tungumál eða litaþema.
+Hver straumur hefur hýsil, gátt, skipanir sem sendar eru eftir innskráningu, *Tengja aftur*, *Tengja við ræsingu*, skjáborð (console) og línu til að senda skipanir. Skrifaðu **kallmerki fyrir innskráningu** efst. MQTT-uppsprettan hefur hýsil, gátt, efni (eitt í línu eða aðskilin með `;`), *Tengja aftur* og *Tengja við ræsingu* (sjálfgefið óvirkt) og skjáborð með mótteknum spotum; spotin hennar fara í gegnum sömu síu. Rönd sýnir stöðu uppsprettnanna fjögurra (grænn punktur = tengt). Loturnar haldast opnar þegar þú skiptir um tungumál eða litaþema.
 
 ## Sían (40 % af glugganum)
 

@@ -22,7 +22,8 @@ Kõigis arvutustes kasutatav meteoorivoolude kataloog: **45 meteoorivoolu** **IM
 | v km/s, r | Geotsentriline kiirus ja populatsiooniindeks |
 | ZHR | Maksimumi ZHR (*muutuv* = muutuv) |
 | Tüüp | *visuaalne* või *raadio, päevane* |
-| Täna aktiivne | *jah*, kui meteoorivool on praegu aktiivne |
+
+**Täna (UTC) aktiivsed** meteoorivoolud on esile tõstetud kollase loori ja paksu kirjaga.
 
 ## Järgmine maksimum
 

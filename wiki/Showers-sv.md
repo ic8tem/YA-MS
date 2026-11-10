@@ -22,7 +22,8 @@ Den svärmkatalog som alla beräkningar använder: **45 svärmar** från **IMO M
 | v km/s, r | Geocentrisk hastighet och populationsindex |
 | ZHR | ZHR vid maximum (*var.* = variabel) |
 | Typ | *visuell* eller *radio, dagtid* |
-| Aktiv idag | *ja* när svärmen är aktiv nu |
+
+Svärmarna som är **aktiva idag (UTC)** markeras med en gul slöja och fetstil.
 
 ## Nästa maximum
 

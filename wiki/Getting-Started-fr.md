@@ -33,7 +33,7 @@ Au-dessus des onglets se trouvent trois rangées de commandes, valables pour tou
 | Commande | Rôle |
 |---|---|
 | **Heure** | Horloge UTC. |
-| **Heure de la voûte céleste (±36 h)** | Déplace la [voûte céleste](Sky-View-fr) et l'onglet [Radar GRAVES](GRAVES-Radar-fr) jusqu'à 36 heures en arrière ou en avant, par pas de 15 minutes. |
+| **Instant du calcul (±36 h)** | Déplace l'instant du calcul – [Calcul prévisionnel](Sky-View-fr) et [Radar GRAVES](GRAVES-Radar-fr) – jusqu'à 36 heures en arrière ou en avant, par pas de 15 minutes. À côté : *Calcul pour : maintenant* ou *Calcul pour : jj/mm hh:mm UTC*. |
 | **Temps réel** | Revient à l'instant présent. |
 | **Jour pour le tableau 24 h (UTC)** | Le jour affiché dans [Calcul de l'efficacité](Efficiency-Calculation-fr) et dans la chronologie GRAVES. |
 

@@ -22,7 +22,8 @@ De zwermcatalogus die alle berekeningen gebruiken: **45 zwermen** uit de **IMO M
 | v km/s, r | Geocentrische snelheid en populatie-index |
 | ZHR | ZHR op het maximum (*var.* = variabel) |
 | Type | *visueel* of *radio, overdag* |
-| Vandaag actief | *ja* als de zwerm nu actief is |
+
+De zwermen die **vandaag (UTC) actief** zijn, worden gemarkeerd met een gele waas en vetgedrukte tekst.
 
 ## Volgend maximum
 

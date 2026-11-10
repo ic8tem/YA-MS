@@ -9,11 +9,14 @@ Visi paketai yra puslapyje **[Releases](https://github.com/ic8tem/YA-MS/releases
 | Windows (64 bitų) | `YA-MS-x.y.z-windows-x64-setup.exe` (diegimo programa) | `C:\YA-MS` |
 | Windows (64 bitų), nešiojamoji | `YA-MS-x.y.z-windows-x64-portatile.zip` | bet kurį aplanką, į kurį galite rašyti |
 | Windows (32 bitų, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` arba `...-windows-x86-portatile.zip` | `C:\YA-MS` |
-| Linux (64 bitų) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Linux (64 bitų): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (nukopijuojama ten pirmą kartą paleidžiant) |
+| Linux (64 bitų), bet kuris distributyvas | `YA-MS-x.y.z-linux-x64.tar.gz` (nešiojamoji arba su `./installa.sh`) | `~/YA-MS` arba bet kuris aplankas |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bitų) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bitų) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi, Debian paketas | `ya-ms_x.y.z_arm64.deb` (64 bitų) arba `ya-ms_x.y.z_armhf.deb` (32 bitų) | `~/YA-MS` (nukopijuojama ten pirmą kartą paleidžiant) |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+| macOS, tik programa | `YA-MS-x.y.z-mac-apple-silicon-app.zip` arba `...-mac-intel-app.zip` | aplankas, į kurį išskleidžiate `YA-MS.app` |
 
 **Programa ir jos aplankas `data` visada būna kartu** YA-MS aplanke: ten yra visi duomenys ir nustatymai (jokio AppData, jokių sisteminių aplankų). Žr. [Nustatymai ir duomenų aplankas](Settings-and-Data-Folder-lt).
 
@@ -36,6 +39,16 @@ Išskleiskite `YA-MS-x.y.z-windows-x64-portatile.zip` kur norite (į aplanką, �
    ```
 3. Scenarijus nukopijuoja YA-MS į **`~/YA-MS`** (root teisių nereikia) ir prideda **YA-MS** į programų meniu (kategorija *HamRadio*). Programą taip pat galite paleisti komanda `~/YA-MS/YA-MS`.
 
+### Debian paketas (.deb)
+Debian, Ubuntu, Mint ir Raspberry Pi OS sistemose vietoj to galite įdiegti `ya-ms_x.y.z_amd64.deb` (Raspberry Pi – `_arm64.deb` / `_armhf.deb`):
+```sh
+sudo apt install ./ya-ms_x.y.z_amd64.deb
+```
+Paketas įdiegia programą į `/opt/ya-ms` ir prideda **YA-MS** į meniu. Pirmą kartą paleidžiant (ir po kiekvienos naujos versijos) programa nusikopijuoja į **`~/YA-MS`** ir veikia iš ten, todėl aplankas `data` lieka šalia programos, o jūsų nustatymai išsaugomi.
+
+### Nešiojamoji versija
+`.tar.gz` veikia ir be diegimo: išskleiskite jį bet kur, kur galite rašyti, ir paleiskite `./YA-MS` iš to aplanko.
+
 Japoniškam tekstui gali prireikti Noto CJK šriftų: žr. [Trikčių šalinimas](Troubleshooting-FAQ-lt#linux-japoniškas-tekstas-rodomas-kvadratėliais).
 
 ## Raspberry Pi
@@ -51,6 +64,8 @@ Ta pati procedūra kaip Linux: išskleiskite `YA-MS-x.y.z-raspberry-pi-64bit.tar
 1. Pasirinkite tinkamą failą: `-mac-apple-silicon.dmg` procesoriams M1/M2/M3/M4, `-mac-intel.dmg` Intel Mac kompiuteriams.
 2. Atverkite `.dmg`, **dešiniuoju pelės mygtuku spustelėkite „Installa YA-MS.command“ → Open** ir patvirtinkite.
 3. Scenarijus nukopijuoja `YA-MS.app` į **`~/YA-MS`** ir jį atveria.
+
+Arba `YA-MS-x.y.z-mac-apple-silicon-app.zip` / `-mac-intel-app.zip` turi tik `YA-MS.app`: išskleiskite jį į pasirinktą aplanką (į kurį galite rašyti); aplankas `data` sukuriamas šalia `YA-MS.app`. Pirmą kartą – dešinysis pelės mygtukas → **Open**.
 
 Programa nepasirašyta Apple, todėl pirmą kartą macOS prašo patvirtinimo; žr. [Trikčių šalinimas](Troubleshooting-FAQ-lt#macos-negalima-atverti-nes-kūrėjas-nenustatytas).
 

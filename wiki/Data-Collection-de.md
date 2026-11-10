@@ -6,18 +6,19 @@
 
 [![Datensammlung](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-1_4.png)
 
-## Drei Cluster-Verbindungen
+## Vier Quellen
 
-Der Reiter sammelt **Meteorscatter-Spots** aus drei Telnet-Verbindungen, jede in ihrem eigenen Unterreiter:
+Der Reiter sammelt **Meteorscatter-Spots** aus drei Telnet-Verbindungen und aus dem MQTT-Feed von PSKReporter, jede in ihrem eigenen Unterreiter:
 
 | Unterreiter | Standard | Hinweise |
 |---|---|---|
 | **1. DX-Cluster** | on0dxk.dyndns.org : 8000 | Ein Cluster deiner Wahl. Bei ON0DXK sind die VHF-Bänder gefiltert: Schalte sie mit `set/filter dxbm/pass 6` frei (dann 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimmer dekodieren MS-Modi nur selten. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | Cluster von DM4X mit den **PSKReporter**-Spots: Hier kommen die MSK144-Dekodierungen von WSJT-X und MSHV an. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | PSKReporter-Spots live über **MQTT** (Dienst von M0LTE): ohne Login, jeder Spot enthält bereits die Locatoren der sendenden und der empfangenden Station. Standard-Themen: MSK144 auf 6 m, 4 m, 2 m, 1,25 m, 70 cm und FSK441 auf 2 m (`pskr/filter/v2/band/mode/#`); *Standard-Themen* stellt sie wieder her. |
 | **Gesammelte MS-Spots** | – | Tabelle der angenommenen Spots, neueste oben. |
 
-Jede Verbindung hat Host, Port, nach dem Login gesendete Befehle, *Neu verbinden*, *Beim Start verbinden*, eine Konsole und eine Zeile zum Senden von Befehlen. Trage oben dein **Rufzeichen für den Login** ein. Eine Leiste zeigt den Zustand der drei Sitzungen (grüner Punkt = verbunden). Die Sitzungen bleiben offen, wenn du Sprache oder Farbschema wechselst.
+Jede Verbindung hat Host, Port, nach dem Login gesendete Befehle, *Neu verbinden*, *Beim Start verbinden*, eine Konsole und eine Zeile zum Senden von Befehlen. Trage oben dein **Rufzeichen für den Login** ein. Die MQTT-Quelle hat Host, Port, Themen (eines pro Zeile oder durch `;` getrennt), *Neu verbinden* und *Beim Start verbinden* (standardmäßig aus) sowie eine Konsole mit den empfangenen Spots; ihre Spots durchlaufen denselben Filter. Eine Leiste zeigt den Zustand der vier Quellen (grüner Punkt = verbunden). Die Sitzungen bleiben offen, wenn du Sprache oder Farbschema wechselst.
 
 ## Der Filter (40 % des Fensters)
 

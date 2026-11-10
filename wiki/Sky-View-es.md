@@ -6,7 +6,9 @@
 
 [![Bóveda celeste](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Esta subpestaña (la bóveda celeste de las versiones anteriores) reúne en una sola pantalla **dónde** están ahora las estelas útiles y **hacia dónde apuntar**. A la izquierda la **vista en planta** del trayecto; a la derecha la lista de lluvias, una pequeña bóveda celeste con los radiantes, el texto del cálculo y la **sección** vista desde tu antena. Todo se refiere a la hora del regulador *Hora de la bóveda celeste* (tiempo real por defecto; ±36 h en pasos de 15 minutos).
+Esta subpestaña (la bóveda celeste de las versiones anteriores) reúne en una sola pantalla **dónde** están ahora las estelas útiles y **hacia dónde apuntar**. A la izquierda la **vista en planta** del trayecto; a la derecha la lista de lluvias, una pequeña bóveda celeste con los radiantes, el texto del cálculo y la **sección** vista desde tu antena. Todo se refiere a la hora del regulador *Momento del cálculo* (tiempo real por defecto; ±36 h en pasos de 15 minutos).
+
+Una **franja encima de la vista en planta** resume el cálculo para ese momento: fecha y hora (*ahora* u horas respecto a ahora), el **índice del trayecto Σ ZHR×η**, la **lluvia más útil** con su ZHR y su eficiencia, el número de lluvias sobre el horizonte y el **Hot recomendado** con su azimut.
 
 En la pequeña bóveda celeste una **línea naranja** que pasa por el cenit da siempre las **direcciones de antena adecuadas**, ortogonales al desplazamiento de la lluvia seleccionada (o de la más favorable): azimut del radiante ±90°, rotulada *antena NNN°* en ambos extremos, con la tolerancia de ±45° como líneas finas. Unas marcas naranjas cortas en el borde indican las direcciones ortogonales de las demás lluvias útiles.
 

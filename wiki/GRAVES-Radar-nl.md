@@ -16,7 +16,7 @@ Het tabblad behandelt **GRAVES → jij** als een zelfstandig meteorscatter-traje
 
 | Element | Wat het doet |
 |---|---|
-| **Nu** | Zet de tijd van de hemelkoepel terug op realtime (het tabblad volgt de schuifregelaar *Tijd hemelkoepel*). |
+| **Nu** | Zet het berekeningsmoment terug op realtime (het tabblad volgt de schuifregelaar *Berekeningsmoment*). |
 | **GRAVES als DX instellen** | Het tegenstation wordt GRAVES (JN27SI, hoogte 200 m) en het hoofdtraject wordt herberekend: alle andere tabbladen tonen dan het traject naar GRAVES. |
 | **Bundelvolgorde** | *0,8 s per stap · cyclus 4,8 s (PE1ITR 2021)* (standaard) of *3,2 s per stap · cyclus 19,2 s (PE1ITR 2007)*. |
 

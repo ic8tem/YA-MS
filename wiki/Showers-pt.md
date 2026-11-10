@@ -22,7 +22,8 @@ O catálogo de chuvas usado por todos os cálculos: **45 chuvas** do **IMO Meteo
 | v km/s, r | Velocidade geocêntrica e índice de população |
 | ZHR | ZHR no máximo (*var.* = variável) |
 | Tipo | *visual* ou *rádio, diurna* |
-| Ativa hoje | *sim* quando a chuva está ativa agora |
+
+As chuvas **ativas hoje (UTC)** aparecem realçadas com um véu amarelo e texto a negrito.
 
 ## Próximo máximo
 

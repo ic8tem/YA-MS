@@ -22,7 +22,8 @@ Tüm hesapların kullandığı yağmur kataloğu: **IMO Meteor Shower Calendar 2
 | v km/s, r | Yer merkezli hız ve nüfus indeksi |
 | ZHR | Tepe ZHR'si (*değ.* = değişken) |
 | Tür | *görsel* ya da *radyo, gündüz* |
-| Bugün etkin | Yağmur şu anda etkinse *evet* |
+
+**Bugün (UTC) etkin olan** yağmurlar sarı bir örtü ve kalın yazıyla vurgulanır.
 
 ## Sonraki tepe
 

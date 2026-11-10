@@ -16,7 +16,7 @@ La pestaña trata **GRAVES → tú** como un trayecto de meteor scatter propio: 
 
 | Control | Qué hace |
 |---|---|
-| **Ahora** | Devuelve la hora de la bóveda celeste al tiempo real (la pestaña sigue al regulador *Hora de la bóveda celeste*). |
+| **Ahora** | Devuelve el momento del cálculo al tiempo real (la pestaña sigue al regulador *Momento del cálculo*). |
 | **Poner GRAVES como DX** | El corresponsal pasa a ser GRAVES (JN27SI, altura 200 m) y el trayecto principal se recalcula: todas las demás pestañas muestran entonces el trayecto de GRAVES. |
 | **Secuencia del haz** | *0,8 s por paso · ciclo 4,8 s (PE1ITR 2021)* (por defecto) o *3,2 s por paso · ciclo 19,2 s (PE1ITR 2007)*. |
 

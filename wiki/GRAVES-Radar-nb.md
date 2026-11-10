@@ -16,7 +16,7 @@ Fanen behandler **GRAVES → deg** som en egen meteor scatter-strekning: med de 
 
 | Kontroll | Hva den gjør |
 |---|---|
-| **Nå** | Setter tiden for himmelhvelvingen tilbake til sanntid (fanen følger glidebryteren *Tid for himmelhvelvingen*). |
+| **Nå** | Setter beregningstidspunktet tilbake til sanntid (fanen følger glidebryteren *Beregningstidspunkt*). |
 | **Sett GRAVES som DX** | Motstasjonen blir GRAVES (JN27SI, høyde 200 m), og hovedstrekningen beregnes på nytt: alle de andre fanene viser da GRAVES-strekningen. |
 | **Strålesekvens** | *0,8 s per steg · syklus 4,8 s (PE1ITR 2021)* (standard) eller *3,2 s per steg · syklus 19,2 s (PE1ITR 2007)*. |
 

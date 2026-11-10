@@ -9,11 +9,14 @@ Visas pakotnes ir lapā **[Releases](https://github.com/ic8tem/YA-MS/releases)**
 | Windows (64 biti) | `YA-MS-x.y.z-windows-x64-setup.exe` (instalētājs) | `C:\YA-MS` |
 | Windows (64 biti), portatīvā | `YA-MS-x.y.z-windows-x64-portatile.zip` | jebkurā mapē, kurā vari rakstīt |
 | Windows (32 biti, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` vai `...-windows-x86-portatile.zip` | `C:\YA-MS` |
-| Linux (64 biti) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Linux (64 biti): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (tur nokopēts pirmajā palaišanā) |
+| Linux (64 biti), jebkurš distributīvs | `YA-MS-x.y.z-linux-x64.tar.gz` (portatīvi vai ar `./installa.sh`) | `~/YA-MS` vai jebkura mape |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 biti) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 biti) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi, Debian pakotne | `ya-ms_x.y.z_arm64.deb` (64 biti) vai `ya-ms_x.y.z_armhf.deb` (32 biti) | `~/YA-MS` (tur nokopēts pirmajā palaišanā) |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+| macOS, tikai lietotne | `YA-MS-x.y.z-mac-apple-silicon-app.zip` vai `...-mac-intel-app.zip` | mape, kurā atarhivē `YA-MS.app` |
 
 **Programma un tās `data` mape vienmēr paliek kopā** YA-MS mapē: tur ir visi dati un iestatījumi (ne AppData, ne sistēmas mapes). Sk. [Iestatījumi un datu mape](Settings-and-Data-Folder-lv).
 
@@ -36,6 +39,16 @@ Atarhivē `YA-MS-x.y.z-windows-x64-portatile.zip`, kur vēlies (mapē, kurā var
    ```
 3. Skripts nokopē YA-MS uz **`~/YA-MS`** (root tiesības nav vajadzīgas) un pievieno **YA-MS** lietotņu izvēlnei (kategorija *HamRadio*). Programmu var palaist arī ar `~/YA-MS/YA-MS`.
 
+### Debian pakotne (.deb)
+Debian, Ubuntu, Mint un Raspberry Pi OS sistēmās tā vietā vari instalēt `ya-ms_x.y.z_amd64.deb` (Raspberry Pi – `_arm64.deb` / `_armhf.deb`):
+```sh
+sudo apt install ./ya-ms_x.y.z_amd64.deb
+```
+Pakotne ievieto programmu mapē `/opt/ya-ms` un pievieno **YA-MS** izvēlnei. Pirmajā palaišanā (un pēc katras jaunas versijas) programma nokopē sevi uz **`~/YA-MS`** un darbojas no turienes, tāpēc mape `data` paliek blakus programmai un tavi iestatījumi saglabājas.
+
+### Portatīvā versija
+`.tar.gz` darbojas arī bez instalēšanas: atarhivē to jebkur, kur vari rakstīt, un palaid `./YA-MS` no šīs mapes.
+
 Japāņu tekstam var būt vajadzīgi Noto CJK fonti: sk. [Problēmu risināšana](Troubleshooting-FAQ-lv#linux-japāņu-teksts-redzams-kā-kvadrātiņi).
 
 ## Raspberry Pi
@@ -51,6 +64,8 @@ Tāpat kā Linux: atarhivē `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` (vai `-32bit
 1. Izvēlies pareizo failu: `-mac-apple-silicon.dmg` procesoriem M1/M2/M3/M4, `-mac-intel.dmg` Intel Mac datoriem.
 2. Atver `.dmg`, **labais klikšķis uz "Installa YA-MS.command" → Open** un apstiprini.
 3. Skripts nokopē `YA-MS.app` uz **`~/YA-MS`** un atver to.
+
+Kā alternatīva, `YA-MS-x.y.z-mac-apple-silicon-app.zip` / `-mac-intel-app.zip` satur tikai `YA-MS.app`: atarhivē to paša izvēlētā mapē (kurā vari rakstīt); mape `data` tiek izveidota blakus `YA-MS.app`. Pirmo reizi – labais klikšķis → **Open**.
 
 Programmu nav parakstījis Apple, tāpēc pirmo reizi macOS prasa apstiprinājumu; sk. [Problēmu risināšana](Troubleshooting-FAQ-lv#macos-nevar-atvērt-jo-izstrādātājs-nav-identificēts).
 

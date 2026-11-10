@@ -6,7 +6,9 @@
 
 [![Dangaus skliautas](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Ši vidinė kortelė (ankstesnių versijų dangaus skliautas) viename ekrane parodo, **kur** dabar yra naudingi pėdsakai ir **kur** nukreipti anteną. Kairėje – trasos **planas**; dešinėje – srautų sąrašas, mažas dangaus skliautas su radiantais, skaičiavimo tekstas ir iš jūsų antenos matomas **pjūvis**. Viskas susieta su slankiklio *Dangaus skliauto laikas* laiku (pagal nutylėjimą realus laikas; ±36 h 15 minučių žingsniais).
+Ši vidinė kortelė (ankstesnių versijų dangaus skliautas) viename ekrane parodo, **kur** dabar yra naudingi pėdsakai ir **kur** nukreipti anteną. Kairėje – trasos **planas**; dešinėje – srautų sąrašas, mažas dangaus skliautas su radiantais, skaičiavimo tekstas ir iš jūsų antenos matomas **pjūvis**. Viskas susieta su slankiklio *Skaičiavimo laikas* laiku (pagal nutylėjimą realus laikas; ±36 h 15 minučių žingsniais).
+
+**Juostelė virš plano** apibendrina to momento skaičiavimą: data ir laikas (*dabar* arba valandos nuo dabar), **trasos indeksas Σ ZHR×η**, **naudingiausias srautas** su jo ZHR ir efektyvumu, srautų virš horizonto skaičius ir **rekomenduojamas Hot** su jo azimutu.
 
 Mažame dangaus skliaute per zenitą einanti **oranžinė linija** visada rodo **tinkamas antenos kryptis**, statmenas pasirinkto (arba palankiausio) srauto slinkimui: radianto azimutas ±90°, abiejuose galuose pažymėta *antena NNN°*, ±45° tolerancija – plonomis linijomis. Trumpi oranžiniai brūkšneliai krašte rodo kitų naudingų srautų statmenas kryptis.
 

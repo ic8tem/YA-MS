@@ -16,7 +16,7 @@ Flipinn meðhöndlar **GRAVES → þú** sem sérstaka meteor scatter-leið: me�
 
 | Stýring | Hvað hún gerir |
 |---|---|
-| **Núna** | Færir tíma himinhvelfingarinnar aftur í rauntíma (flipinn fylgir sleðanum *Tími himinhvelfingar*). |
+| **Núna** | Færir tíma útreikningsins aftur í rauntíma (flipinn fylgir sleðanum *Tími útreiknings*). |
 | **Setja GRAVES sem DX** | Mótstöðin verður GRAVES (JN27SI, hæð 200 m) og aðalleiðin er endurreiknuð: allir aðrir flipar sýna þá GRAVES-leiðina. |
 | **Röð geislans** | *0,8 s á skref · lota 4,8 s (PE1ITR 2021)* (sjálfgefið) eða *3,2 s á skref · lota 19,2 s (PE1ITR 2007)*. |
 

@@ -33,7 +33,7 @@ Over fanene er det tre rader med kontroller som gjelder for alle fanene. Knappen
 | Kontroll | Hva den gjør |
 |---|---|
 | **Tid** | UTC-klokke. |
-| **Tid for himmelhvelvingen (±36 t)** | Flytter [himmelhvelvingen](Sky-View-nb) og fanen [Radar GRAVES](GRAVES-Radar-nb) inntil 36 timer bakover eller framover, i steg på 15 minutter. |
+| **Beregningstidspunkt (±36 t)** | Flytter tidspunktet for beregningen – [Prognoseberegning](Sky-View-nb) og [Radar GRAVES](GRAVES-Radar-nb) – inntil 36 timer bakover eller framover, i steg på 15 minutter. Ved siden av: *Beregning for: nå* eller *Beregning for: dd/mm tt:mm UTC*. |
 | **Sanntid** | Tilbake til nå. |
 | **Dag for 24 t-tabellen (UTC)** | Dagen som vises i [Effektivitetsberegning](Efficiency-Calculation-nb) og i GRAVES-tidslinjen. |
 

@@ -6,18 +6,19 @@
 
 [![Andmete kogumine](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## Kolm klastrivoogu
+## Neli allikat
 
-Sakk kogub **meteor scatteri spotte** kolmest telneti voost, igaüks oma alamsakil:
+Sakk kogub **meteor scatteri spotte** kolmest telneti voost ja PSKReporteri MQTT voost, igaüks oma alamsakil:
 
 | Alamsakk | Vaikimisi | Märkused |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | Vabalt valitav klaster. ON0DXK-l on VHF sagedusalad filtreeritud: lülita need sisse käsuga `set/filter dxbm/pass 6` (seejärel 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimmerid dekodeerivad MS-moodusi harva. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | DM4X-i klaster, mis edastab **PSKReporteri** spotte: siia jõuavad WSJT-X-i ja MSHV MSK144 dekodeeringud. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | PSKReporteri spotid reaalajas **MQTT** kaudu (M0LTE teenus): sisselogimist pole vaja, iga spot sisaldab juba saatva ja vastuvõtva jaama lokaatoreid. Vaiketeemad: MSK144 sagedusaladel 6 m, 4 m, 2 m, 1,25 m, 70 cm ja FSK441 sagedusalal 2 m (`pskr/filter/v2/band/mode/#`); *Vaiketeemad* taastab need. |
 | **Kogutud MS-spotid** | – | Aktsepteeritud spotide tabel, uusimad eespool. |
 
-Igal vool on host, port, pärast sisselogimist saadetavad käsud, *Ühenda uuesti*, *Ühenda käivitamisel*, konsool ja rida käskude saatmiseks. Kirjuta üles oma **kutsung sisselogimiseks**. Riba näitab kolme seansi olekut (roheline punkt = ühendatud). Seansid jäävad avatuks, kui vahetad keelt või värviskeemi.
+Igal vool on host, port, pärast sisselogimist saadetavad käsud, *Ühenda uuesti*, *Ühenda käivitamisel*, konsool ja rida käskude saatmiseks. Kirjuta üles oma **kutsung sisselogimiseks**. MQTT allikal on host, port, teemad (üks rea kohta või eraldajaks `;`), *Ühenda uuesti* ja *Ühenda käivitamisel* (vaikimisi väljas) ning konsool vastuvõetud spotidega; selle spotid läbivad sama filtri. Riba näitab nelja allika olekut (roheline punkt = ühendatud). Seansid jäävad avatuks, kui vahetad keelt või värviskeemi.
 
 ## Filter (40 % aknast)
 

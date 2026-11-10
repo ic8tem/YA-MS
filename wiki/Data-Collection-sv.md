@@ -6,18 +6,19 @@
 
 [![Datainsamling](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## Tre klusterflöden
+## Fyra källor
 
-Fliken samlar in **meteorscatter-spots** från tre telnetflöden, vart och ett i sin egen underflik:
+Fliken samlar in **meteorscatter-spots** från tre telnetflöden och från PSKReporters MQTT-flöde, vart och ett i sin egen underflik:
 
 | Underflik | Standard | Anmärkningar |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | Ett kluster som du väljer. På ON0DXK är VHF-banden filtrerade: aktivera dem med `set/filter dxbm/pass 6` (sedan 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimmers avkodar sällan MS-moder. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | DM4X:s kluster som för vidare spots från **PSKReporter**: hit kommer MSK144-avkodningarna från WSJT-X och MSHV. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | PSKReporter-spots live via **MQTT** (tjänst från M0LTE): ingen inloggning, varje spot har redan lokatorerna för den sändande och den mottagande stationen. Standardämnen: MSK144 på 6 m, 4 m, 2 m, 1,25 m, 70 cm och FSK441 på 2 m (`pskr/filter/v2/band/mode/#`); *Standardämnen* återställer dem. |
 | **Insamlade MS-spots** | – | Tabell över de godkända spotsen, nyaste först. |
 
-Varje flöde har värd, port, kommandon som skickas efter inloggningen, *Återanslut*, *Anslut vid start*, en konsol och en rad för att skicka kommandon. Skriv in din **anropssignal för inloggning** högst upp. En list visar tillståndet för de tre sessionerna (grön punkt = ansluten). Sessionerna förblir öppna när du byter språk eller färgschema.
+Varje flöde har värd, port, kommandon som skickas efter inloggningen, *Återanslut*, *Anslut vid start*, en konsol och en rad för att skicka kommandon. Skriv in din **anropssignal för inloggning** högst upp. MQTT-källan har värd, port, ämnen (ett per rad eller åtskilda med `;`), *Återanslut* och *Anslut vid start* (av som standard) och en konsol med de mottagna spotsen; dess spots går genom samma filter. En list visar tillståndet för de fyra källorna (grön punkt = ansluten). Sessionerna förblir öppna när du byter språk eller färgschema.
 
 ## Filtret (40 % av fönstret)
 

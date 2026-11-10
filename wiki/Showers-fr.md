@@ -22,7 +22,8 @@ Le catalogue des essaims utilisé par tous les calculs : **45 essaims** du **IMO
 | v km/s, r | Vitesse géocentrique et indice de population |
 | ZHR | ZHR au maximum (*var.* = variable) |
 | Type | *visuel* ou *radio, diurne* |
-| Actif aujourd'hui | *oui* quand l'essaim est actif en ce moment |
+
+Les essaims **actifs aujourd'hui (UTC)** sont mis en évidence par un voile jaune et un texte en gras.
 
 ## Prochain maximum
 

@@ -6,18 +6,19 @@
 
 [![Datu vākšana](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## Trīs klasteru plūsmas
+## Četri avoti
 
-Cilne vāc **meteor scatter spotus** no trim telnet plūsmām, katru savā apakšcilnē:
+Cilne vāc **meteor scatter spotus** no trim telnet plūsmām un no PSKReporter MQTT plūsmas, katru savā apakšcilnē:
 
 | Apakšcilne | Noklusējums | Piezīmes |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | Klasteris pēc izvēles. ON0DXK VHF joslas ir filtrētas: ieslēdz tās ar `set/filter dxbm/pass 6` (tad 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimmeri MS modas dekodē reti. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | DM4X klasteris ar **PSKReporter** spotiem: šeit nonāk WSJT-X un MSHV MSK144 dekodējumi. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | PSKReporter spoti reāllaikā caur **MQTT** (M0LTE pakalpojums): bez pieteikšanās, katrā spotā jau ir raidošās un uztverošās stacijas lokatori. Noklusējuma tēmas: MSK144 6 m, 4 m, 2 m, 1,25 m, 70 cm joslā un FSK441 2 m joslā (`pskr/filter/v2/band/mode/#`); *Noklusējuma tēmas* tās atjauno. |
 | **Savāktie MS spoti** | – | Pieņemto spotu tabula, jaunākie pirmie. |
 
-Katrai plūsmai ir resursdators, ports, komandas, ko sūta pēc pieteikšanās, *Savienot vēlreiz*, *Savienot startējot*, konsole un rinda komandu sūtīšanai. Augšā ieraksti savu **izsaukuma signālu pieteikšanās vajadzībām**. Josla rāda visu trīs sesiju stāvokli (zaļš punkts = savienots). Sesijas paliek atvērtas, kad maini valodu vai krāsu shēmu.
+Katrai plūsmai ir resursdators, ports, komandas, ko sūta pēc pieteikšanās, *Savienot vēlreiz*, *Savienot startējot*, konsole un rinda komandu sūtīšanai. Augšā ieraksti savu **izsaukuma signālu pieteikšanās vajadzībām**. MQTT avotam ir resursdators, ports, tēmas (pa vienai rindā vai atdalītas ar `;`), *Savienot vēlreiz* un *Savienot startējot* (noklusējumā izslēgts) un konsole ar saņemtajiem spotiem; tā spoti iet caur to pašu filtru. Josla rāda visu četru avotu stāvokli (zaļš punkts = savienots). Sesijas paliek atvērtas, kad maini valodu vai krāsu shēmu.
 
 ## Filtrs (40 % no loga)
 

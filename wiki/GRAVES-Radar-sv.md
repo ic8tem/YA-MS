@@ -16,7 +16,7 @@ Fliken behandlar **GRAVES → dig** som en egen meteorscattersträcka: med samma
 
 | Reglage | Vad det gör |
 |---|---|
-| **Nu** | För himlavalvets tid tillbaka till realtid (fliken följer reglaget *Himlavalvets tid*). |
+| **Nu** | För beräkningstidpunkten tillbaka till realtid (fliken följer reglaget *Beräkningstidpunkt*). |
 | **Sätt GRAVES som DX** | Motstationen blir GRAVES (JN27SI, höjd 200 m) och huvudsträckan beräknas om: alla andra flikar visar då GRAVES-sträckan. |
 | **Lobsekvens** | *0,8 s per steg · cykel 4,8 s (PE1ITR 2021)* (standard) eller *3,2 s per steg · cykel 19,2 s (PE1ITR 2007)*. |
 

@@ -6,18 +6,19 @@
 
 [![Recolha de dados](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## Três fluxos de cluster
+## Quatro fontes
 
-O separador recolhe **spots de meteor scatter** de três fluxos telnet, cada um no seu próprio subseparador:
+O separador recolhe **spots de meteor scatter** de três fluxos telnet e do fluxo MQTT do PSKReporter, cada um no seu próprio subseparador:
 
 | Subseparador | Por omissão | Notas |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | Um cluster à escolha. No ON0DXK as bandas VHF estão filtradas: ative-as com `set/filter dxbm/pass 6` (depois 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Os skimmers raramente descodificam modos MS. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | Cluster DM4X que transporta os spots do **PSKReporter**: é aqui que chegam as descodificações MSK144 do WSJT-X e do MSHV. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | Spots do PSKReporter em direto por **MQTT** (serviço de M0LTE): sem login, cada spot já traz os locators da estação que transmite e da que recebe. Tópicos predefinidos: MSK144 em 6 m, 4 m, 2 m, 1,25 m, 70 cm e FSK441 em 2 m (`pskr/filter/v2/band/mode/#`); *Tópicos predefinidos* repõe-nos. |
 | **Spots MS recolhidos** | – | Tabela dos spots aceites, os mais recentes primeiro. |
 
-Cada fluxo tem host, porta, comandos enviados após o login, *Voltar a ligar*, *Ligar no arranque*, uma consola e uma linha para enviar comandos. Escreva no topo o seu **indicativo para o login**. Uma faixa mostra o estado das três sessões (ponto verde = ligada). As sessões ficam abertas quando muda de idioma ou de esquema de cores.
+Cada fluxo tem host, porta, comandos enviados após o login, *Voltar a ligar*, *Ligar no arranque*, uma consola e uma linha para enviar comandos. Escreva no topo o seu **indicativo para o login**. A fonte MQTT tem host, porta, tópicos (um por linha ou separados por `;`), *Voltar a ligar* e *Ligar no arranque* (desligado por omissão) e uma consola com os spots recebidos; os seus spots passam pelo mesmo filtro. Uma faixa mostra o estado das quatro fontes (ponto verde = ligada). As sessões ficam abertas quando muda de idioma ou de esquema de cores.
 
 ## O filtro (40 % da janela)
 

@@ -22,7 +22,8 @@ Skráin yfir drífur sem allir útreikningar nota: **45 drífur** úr **IMO Mete
 | v km/s, r | Jarðmiðjuhraði og fjöldastuðull |
 | ZHR | ZHR við hámark (*breyt.* = breytilegt) |
 | Gerð | *sjónræn* eða *útvarp, dagur* |
-| Virk í dag | *já* þegar drífan er virk núna |
+
+Drífurnar sem eru **virkar í dag (UTC)** eru auðkenndar með gulri slæðu og feitletruðum texta.
 
 ## Næsta hámark
 

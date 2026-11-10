@@ -9,11 +9,14 @@ Allir pakkar eru á síðunni **[Releases](https://github.com/ic8tem/YA-MS/relea
 | Windows (64 bita) | `YA-MS-x.y.z-windows-x64-setup.exe` (uppsetningarforrit) | `C:\YA-MS` |
 | Windows (64 bita), færanleg útgáfa | `YA-MS-x.y.z-windows-x64-portatile.zip` | hvaða möppu sem þú getur skrifað í |
 | Windows (32 bita, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` eða `...-windows-x86-portatile.zip` | `C:\YA-MS` |
-| Linux (64 bita) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Linux (64 bita): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (afritað þangað við fyrstu ræsingu) |
+| Linux (64 bita), hvaða dreifing sem er | `YA-MS-x.y.z-linux-x64.tar.gz` (færanlegt eða með `./installa.sh`) | `~/YA-MS` eða hvaða mappa sem er |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bita) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bita) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi, Debian-pakki | `ya-ms_x.y.z_arm64.deb` (64 bita) eða `ya-ms_x.y.z_armhf.deb` (32 bita) | `~/YA-MS` (afritað þangað við fyrstu ræsingu) |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+| macOS, aðeins forritið | `YA-MS-x.y.z-mac-apple-silicon-app.zip` eða `...-mac-intel-app.zip` | mappan þar sem þú afþjappar `YA-MS.app` |
 
 **Forritið og mappan þess `data` eru alltaf saman** í möppunni YA-MS: þar eru öll gögn og stillingar (engin AppData, engar kerfismöppur). Sjá [Stillingar og gagnamappa](Settings-and-Data-Folder-is).
 
@@ -36,6 +39,16 @@ Afþjappaðu `YA-MS-x.y.z-windows-x64-portatile.zip` hvar sem þú vilt (í möp
    ```
 3. Skriftan afritar YA-MS í **`~/YA-MS`** (root ekki nauðsynlegt) og bætir **YA-MS** við forritavalmyndina (flokkur *HamRadio*). Þú getur líka ræst það með `~/YA-MS/YA-MS`.
 
+### Debian-pakki (.deb)
+Á Debian, Ubuntu, Mint og Raspberry Pi OS getur þú í staðinn sett upp `ya-ms_x.y.z_amd64.deb` (`_arm64.deb` / `_armhf.deb` á Raspberry Pi):
+```sh
+sudo apt install ./ya-ms_x.y.z_amd64.deb
+```
+Pakkinn setur forritið í `/opt/ya-ms` og bætir **YA-MS** við valmyndina. Við fyrstu ræsingu (og eftir hverja nýja útgáfu) afritar það sig í **`~/YA-MS`** og keyrir þaðan, svo `data`-mappan helst við hlið forritsins og stillingarnar þínar haldast.
+
+### Færanleg útgáfa
+`.tar.gz`-skráin virkar líka án uppsetningar: afþjappaðu hana hvar sem þú getur skrifað og keyrðu `./YA-MS` úr þeirri möppu.
+
 Fyrir japanskan texta gætir þú þurft Noto CJK-letrið: sjá [Úrræðaleit](Troubleshooting-FAQ-is#linux-japanskur-texti-birtist-sem-kassar).
 
 ## Raspberry Pi
@@ -51,6 +64,8 @@ Sama aðferð og á Linux: afþjappaðu `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` 
 1. Veldu rétta skrá: `-mac-apple-silicon.dmg` fyrir M1/M2/M3/M4-örgjörva, `-mac-intel.dmg` fyrir Mac með Intel.
 2. Opnaðu `.dmg`-skrána, **hægrismelltu á "Installa YA-MS.command" → Opna** og staðfestu.
 3. Skriftan afritar `YA-MS.app` í **`~/YA-MS`** og opnar það.
+
+Einnig má nota `YA-MS-x.y.z-mac-apple-silicon-app.zip` / `-mac-intel-app.zip`, sem inniheldur aðeins `YA-MS.app`: afþjappaðu hana í möppu að eigin vali (sem þú getur skrifað í); `data`-mappan er búin til við hlið `YA-MS.app`. Í fyrsta skiptið: hægrismelltu → **Opna**.
 
 Forritið er ekki undirritað af Apple, svo macOS biður um staðfestingu í fyrsta skiptið; sjá [Úrræðaleit](Troubleshooting-FAQ-is#macos-ekki-hægt-að-opna-því-hann-er-frá-óþekktum-hönnuði).
 

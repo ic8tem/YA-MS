@@ -16,7 +16,7 @@ La linguetta tratta **GRAVES → te** come una tratta meteor scatter a sé: con 
 
 | Comando | Che cosa fa |
 |---|---|
-| **Adesso** | Riporta l'ora della volta celeste al tempo reale (la linguetta segue il cursore *Ora della volta celeste*). |
+| **Adesso** | Riporta il momento del calcolo al tempo reale (la linguetta segue il cursore *Momento del calcolo*). |
 | **Metti GRAVES come DX** | Il corrispondente diventa GRAVES (JN27SI, quota 200 m) e la tratta principale viene ricalcolata: tutte le altre linguette mostrano allora la tratta di GRAVES. |
 | **Sequenza del fascio** | *0,8 s per passo · ciclo 4,8 s (PE1ITR 2021)* (predefinita) oppure *3,2 s per passo · ciclo 19,2 s (PE1ITR 2007)*. |
 

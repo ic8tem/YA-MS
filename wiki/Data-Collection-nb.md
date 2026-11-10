@@ -6,18 +6,19 @@
 
 [![Datainnsamling](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## Tre clusterstrømmer
+## Fire kilder
 
-Fanen samler **meteor scatter-spot** fra tre telnet-strømmer, hver i sin egen underfane:
+Fanen samler **meteor scatter-spot** fra tre telnet-strømmer og fra MQTT-strømmen til PSKReporter, hver i sin egen underfane:
 
 | Underfane | Standard | Merknader |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | En valgfri cluster. På ON0DXK er VHF-båndene filtrert: aktiver dem med `set/filter dxbm/pass 6` (deretter 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimmere dekoder sjelden MS-modi. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | DM4X-cluster med **PSKReporter**-spot: MSK144-dekodingene fra WSJT-X og MSHV kommer hit. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | PSKReporter-spot direkte via **MQTT** (tjeneste fra M0LTE): ingen innlogging, hvert spot har allerede lokatorene til sendende og mottakende stasjon. Standardemner: MSK144 på 6 m, 4 m, 2 m, 1,25 m, 70 cm og FSK441 på 2 m (`pskr/filter/v2/band/mode/#`); *Standardemner* gjenoppretter dem. |
 | **Innsamlede MS-spot** | – | Tabell over godtatte spot, nyeste først. |
 
-Hver strøm har vert, port, kommandoer som sendes etter innlogging, *Koble til på nytt*, *Koble til ved oppstart*, en konsoll og en linje for å sende kommandoer. Skriv **kallesignalet for innlogging** øverst. En stripe viser tilstanden til de tre øktene (grønn prikk = tilkoblet). Øktene holdes åpne når du bytter språk eller fargeskjema.
+Hver strøm har vert, port, kommandoer som sendes etter innlogging, *Koble til på nytt*, *Koble til ved oppstart*, en konsoll og en linje for å sende kommandoer. Skriv **kallesignalet for innlogging** øverst. MQTT-kilden har vert, port, emner (ett per linje eller skilt med `;`), *Koble til på nytt* og *Koble til ved oppstart* (av som standard) og en konsoll med de mottatte spotene; spotene derfra går gjennom det samme filteret. En stripe viser tilstanden til de fire kildene (grønn prikk = tilkoblet). Øktene holdes åpne når du bytter språk eller fargeskjema.
 
 ## Filteret (40 % av vinduet)
 

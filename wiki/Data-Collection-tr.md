@@ -6,18 +6,19 @@
 
 [![Veri toplama](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## Üç cluster akışı
+## Dört kaynak
 
-Sekme **meteor scatter spot'larını** üç telnet akışından toplar; her biri kendi alt sekmesindedir:
+Sekme **meteor scatter spot'larını** üç telnet akışından ve PSKReporter MQTT akışından toplar; her biri kendi alt sekmesindedir:
 
 | Alt sekme | Varsayılan | Notlar |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | Seçtiğiniz bir cluster. ON0DXK'de VHF bantları filtrelenmiştir: `set/filter dxbm/pass 6` ile açın (sonra 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimmer'lar MS modlarını nadiren çözer. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | **PSKReporter** spot'larını taşıyan DM4X cluster'ı: WSJT-X ve MSHV'nin MSK144 çözümleri buraya gelir. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | **MQTT** üzerinden canlı PSKReporter spot'ları (M0LTE hizmeti): oturum açmak gerekmez, her spot gönderen ve alan istasyonun lokatörlerini zaten içerir. Varsayılan konular: 6 m, 4 m, 2 m, 1,25 m, 70 cm'de MSK144 ve 2 m'de FSK441 (`pskr/filter/v2/band/mode/#`); *Varsayılan konular* bunları geri yükler. |
 | **Toplanan MS spot'ları** | – | Kabul edilen spot'ların tablosu, en yenisi başta. |
 
-Her akışın sunucusu, portu, oturum açıldıktan sonra gönderilen komutları, *Yeniden bağlan*, *Açılışta bağlan* seçenekleri, bir konsolu ve komut göndermek için bir satırı vardır. **Oturum için çağrı işaretinizi** en üste yazın. Bir şerit üç oturumun durumunu gösterir (yeşil nokta = bağlı). Dili ya da renk şemasını değiştirdiğinizde oturumlar açık kalır.
+Her akışın sunucusu, portu, oturum açıldıktan sonra gönderilen komutları, *Yeniden bağlan*, *Açılışta bağlan* seçenekleri, bir konsolu ve komut göndermek için bir satırı vardır. **Oturum için çağrı işaretinizi** en üste yazın. MQTT kaynağının sunucusu, portu, konuları (satır başına bir tane ya da `;` ile ayrılmış), *Yeniden bağlan* ve *Açılışta bağlan* seçenekleri (varsayılan olarak kapalı) ve alınan spot'ları gösteren bir konsolu vardır; spot'ları aynı filtreden geçer. Bir şerit dört kaynağın durumunu gösterir (yeşil nokta = bağlı). Dili ya da renk şemasını değiştirdiğinizde oturumlar açık kalır.
 
 ## Filtre (pencerenin %40'ı)
 

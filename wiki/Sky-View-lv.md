@@ -6,7 +6,9 @@
 
 [![Debess velve](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Šī apakšcilne (agrāko versiju debess velve) vienā ekrānā parāda, **kur** tagad ir lietderīgās sliedes un **kurp** tēmēt. Kreisajā pusē ir trases **skats no augšas**; labajā – plūsmu saraksts, maza debess velve ar radiantiem, aprēķina teksts un **griezums**, kā to redz tava antena. Viss attiecas uz slīdņa *Debess velves laiks* laiku (noklusējumā reālais laiks; ±36 h ar 15 minūšu soli).
+Šī apakšcilne (agrāko versiju debess velve) vienā ekrānā parāda, **kur** tagad ir lietderīgās sliedes un **kurp** tēmēt. Kreisajā pusē ir trases **skats no augšas**; labajā – plūsmu saraksts, maza debess velve ar radiantiem, aprēķina teksts un **griezums**, kā to redz tava antena. Viss attiecas uz slīdņa *Aprēķina laiks* laiku (noklusējumā reālais laiks; ±36 h ar 15 minūšu soli).
+
+**Josla virs skata no augšas** apkopo aprēķinu šim brīdim: datums un laiks (*tagad* vai stundas no šī brīža), **trases indekss Σ ZHR×η**, **noderīgākā plūsma** ar tās ZHR un efektivitāti, plūsmu skaits virs horizonta un **ieteicamais Hot** ar tā azimutu.
 
 Mazajā debess velvē **oranža līnija** caur zenītu vienmēr rāda **pareizos antenas virzienus**, ortogonālus izvēlētās (vai visizdevīgākās) plūsmas pārvietojumam: radianta azimuts ±90°, abos galos ar uzrakstu *antena NNN°*, un ±45° pielaide plānās līnijās. Īsas oranžas iedaļas uz malas rāda pārējo lietderīgo plūsmu ortogonālos virzienus.
 

@@ -33,7 +33,7 @@ Boven de tabbladen staan drie rijen bedieningselementen die voor alle tabbladen 
 | Element | Wat het doet |
 |---|---|
 | **Uur** | UTC-klok. |
-| **Tijd hemelkoepel (±36 h)** | Verschuift de [Hemelkoepel](Sky-View-nl) en het tabblad [Radar GRAVES](GRAVES-Radar-nl) tot 36 uur terug of vooruit, in stappen van 15 minuten. |
+| **Berekeningsmoment (±36 h)** | Verschuift het moment van de berekening – [Voorspellingsberekening](Sky-View-nl) en [Radar GRAVES](GRAVES-Radar-nl) – tot 36 uur terug of vooruit, in stappen van 15 minuten. Ernaast: *Berekening voor: nu* of *Berekening voor: dd/mm hh:mm UTC*. |
 | **Realtime** | Terug naar nu. |
 | **Dag voor de 24-uurstabel (UTC)** | De dag die wordt getoond in [Efficiëntieberekening](Efficiency-Calculation-nl) en in de tijdlijn van GRAVES. |
 

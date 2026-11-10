@@ -16,7 +16,7 @@ Sekme **GRAVES → siz** yolunu başlı başına bir meteor scatter yolu olarak 
 
 | Kontrol | Ne yapar |
 |---|---|
-| **Şimdi** | Gökyüzü kubbesi saatini gerçek zamana döndürür (sekme *Gökyüzü kubbesi saati* kaydırıcısını izler). |
+| **Şimdi** | Hesap zamanını gerçek zamana döndürür (sekme *Hesap zamanı* kaydırıcısını izler). |
 | **GRAVES'i DX yap** | Karşı istasyon GRAVES olur (JN27SI, yükseklik 200 m) ve ana yol yeniden hesaplanır: bundan sonra diğer tüm sekmeler GRAVES yolunu gösterir. |
 | **Huzme dizisi** | *adım başına 0,8 s · döngü 4,8 s (PE1ITR 2021)* (varsayılan) ya da *adım başına 3,2 s · döngü 19,2 s (PE1ITR 2007)*. |
 

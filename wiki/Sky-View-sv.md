@@ -6,7 +6,9 @@
 
 [![Himlavalv](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Den här underfliken (himlavalvet i tidigare versioner) samlar på en skärm **var** de användbara spåren finns just nu och **vart du ska rikta**. Till vänster **planvyn** över sträckan; till höger svärmlistan, ett litet himlavalv med radianterna, beräkningstexten och **tvärsnittet** sett från din antenn. Allt avser tiden på reglaget *Himlavalvets tid* (realtid som standard; ±36 h i steg om 15 minuter).
+Den här underfliken (himlavalvet i tidigare versioner) samlar på en skärm **var** de användbara spåren finns just nu och **vart du ska rikta**. Till vänster **planvyn** över sträckan; till höger svärmlistan, ett litet himlavalv med radianterna, beräkningstexten och **tvärsnittet** sett från din antenn. Allt avser tiden på reglaget *Beräkningstidpunkt* (realtid som standard; ±36 h i steg om 15 minuter).
+
+En **list ovanför planvyn** sammanfattar beräkningen för den tidpunkten: datum och tid (*nu* eller timmar från nu), **sträckindexet Σ ZHR×η**, den **mest användbara svärmen** med dess ZHR och effektivitet, antalet svärmar ovanför horisonten och **rekommenderad Hot** med dess azimut.
 
 I det lilla himlavalvet ger en **orange linje** genom zenit alltid **rätt antennriktningar**, ortogonala mot den valda (eller den mest gynnsamma) svärmens drift: radiantens azimut ±90°, märkt *antenn NNN°* i båda ändarna, med toleransen ±45° som tunna linjer. Korta orange streck på kanten anger de ortogonala riktningarna för de andra användbara svärmarna.
 

@@ -33,7 +33,7 @@ Sakkide kohal on kolm juhtnuppude rida, mis kehtivad kõigil sakkidel. Paremal �
 | Juhtnupp | Mida see teeb |
 |---|---|
 | **Aeg** | UTC kell. |
-| **Taevavõlvi aeg (±36 h)** | Nihutab [Taevavõlvi](Sky-View-et) ja saki [GRAVESi radar](GRAVES-Radar-et) kuni 36 tundi tagasi või edasi, 15-minutiliste sammudega. |
+| **Arvutuse aeg (±36 h)** | Nihutab arvutuse hetke – [Prognoosarvutus](Sky-View-et) ja [GRAVESi radar](GRAVES-Radar-et) – kuni 36 tundi tagasi või edasi, 15-minutiliste sammudega. Kõrval: *Arvutus ajale: praegu* või *Arvutus ajale: dd/mm hh:mm UTC*. |
 | **Reaalaeg** | Tagasi praegusesse hetke. |
 | **Päev 24 h tabeli jaoks (UTC)** | Päev, mida näidatakse sakil [Efektiivsuse arvutus](Efficiency-Calculation-et) ja GRAVESi ajateljel. |
 

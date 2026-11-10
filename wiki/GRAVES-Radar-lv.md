@@ -16,7 +16,7 @@ Cilne aplūko **GRAVES → tu** kā atsevišķu meteor scatter trasi: ar tām pa
 
 | Vadīkla | Ko tā dara |
 |---|---|
-| **Tagad** | Atgriež debess velves laiku reālajā laikā (cilne seko slīdnim *Debess velves laiks*). |
+| **Tagad** | Atgriež aprēķina laiku reālajā laikā (cilne seko slīdnim *Aprēķina laiks*). |
 | **Iestatīt GRAVES kā DX** | Korespondents kļūst par GRAVES (JN27SI, augstums 200 m), un galvenā trase tiek pārrēķināta: visas pārējās cilnes tad rāda GRAVES trasi. |
 | **Kūļa secība** | *0,8 s solī · cikls 4,8 s (PE1ITR 2021)* (noklusējumā) vai *3,2 s solī · cikls 19,2 s (PE1ITR 2007)*. |
 

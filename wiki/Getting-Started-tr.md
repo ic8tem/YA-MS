@@ -33,7 +33,7 @@ Sekmelerin üstünde, tüm sekmeler için geçerli üç sıra kontrol vardır. S
 | Kontrol | Ne yapar |
 |---|---|
 | **Saat** | UTC saati. |
-| **Gökyüzü kubbesi saati (±36 sa)** | [Gökyüzü kubbesini](Sky-View-tr) ve [GRAVES radarı](GRAVES-Radar-tr) sekmesini 15 dakikalık adımlarla 36 saate kadar geri ya da ileri götürür. |
+| **Hesap zamanı (±36 sa)** | Hesap anını – [Tahmin hesabı](Sky-View-tr) ve [GRAVES radarı](GRAVES-Radar-tr) – 15 dakikalık adımlarla 36 saate kadar geri ya da ileri götürür. Yanında: *Hesap zamanı: şimdi* ya da *Hesap zamanı: dd/mm hh:mm UTC*. |
 | **Gerçek zaman** | Şimdiye döner. |
 | **24 saatlik tablo için gün (UTC)** | [Verim hesabı](Efficiency-Calculation-tr) sekmesinde ve GRAVES zaman çizelgesinde gösterilen gün. |
 

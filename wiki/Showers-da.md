@@ -22,7 +22,8 @@ Sværmkataloget, som alle beregninger bruger: **45 sværme** fra **IMO Meteor Sh
 | v km/s, r | Geocentrisk hastighed og populationsindeks |
 | ZHR | Maksimal ZHR (*var.* = variabel) |
 | Type | *visuel* eller *radio, dagtid* |
-| Aktiv i dag | *ja*, når sværmen er aktiv nu |
+
+Sværmene, der er **aktive i dag (UTC)**, er fremhævet med et gult slør og fed skrift.
 
 ## Næste maksimum
 

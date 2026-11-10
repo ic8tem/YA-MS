@@ -6,7 +6,9 @@
 
 [![Hemelkoepel](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Hierdie sub-oortjie (die hemelkoepel van vroeër weergawes) wys op een skerm **waar** die bruikbare spore nou is en **waarheen om te rig**. Links die **bo-aansig** van die pad; regs die swermlys, 'n klein hemelkoepel met die radiante, die teks van die berekening en die **deursnee** soos vanaf jou antenna gesien. Alles verwys na die tyd van die skuifbalk *Tyd van die hemelkoepel* (verstek intyds; ±36 h in stappe van 15 minute).
+Hierdie sub-oortjie (die hemelkoepel van vroeër weergawes) wys op een skerm **waar** die bruikbare spore nou is en **waarheen om te rig**. Links die **bo-aansig** van die pad; regs die swermlys, 'n klein hemelkoepel met die radiante, die teks van die berekening en die **deursnee** soos vanaf jou antenna gesien. Alles verwys na die tyd van die skuifbalk *Berekeningstyd* (verstek intyds; ±36 h in stappe van 15 minute).
+
+'n **Strook bo die bo-aansig** som die berekening vir daardie oomblik op: datum en tyd (*nou* of ure van nou af), die **padindeks Σ ZHR×η**, die **nuttigste swerm** met sy ZHR en doeltreffendheid, die aantal swerms bo die horison en die **aanbevole Hot** met sy azimut.
 
 In die klein hemelkoepel gee 'n **oranje lyn** deur die senit altyd die **regte antennarigtings**, ortogonaal op die drywing van die gekose swerm (of van die gunstigste een): radiant-azimut ±90°, met die etiket *antenna NNN°* aan albei kante, en die toleransie van ±45° as dun lyne. Kort oranje merkies op die rand gee die ortogonale rigtings van die ander bruikbare swerms.
 

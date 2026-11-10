@@ -6,7 +6,9 @@
 
 [![Himinhvelfing](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Þessi undirflipi (himinhvelfingin í eldri útgáfum) sýnir á einum skjá **hvar** nýtilegu slóðirnar eru núna og **hvert skal beina loftnetinu**. Til vinstri er **grunnmynd** leiðarinnar; til hægri listi yfir drífur, lítil himinhvelfing með geislapunktunum, texti útreikningsins og **sniðið** séð frá loftnetinu þínu. Allt miðast við tímann á sleðanum *Tími himinhvelfingar* (rauntími sjálfgefið; ±36 klst. í 15 mínútna skrefum).
+Þessi undirflipi (himinhvelfingin í eldri útgáfum) sýnir á einum skjá **hvar** nýtilegu slóðirnar eru núna og **hvert skal beina loftnetinu**. Til vinstri er **grunnmynd** leiðarinnar; til hægri listi yfir drífur, lítil himinhvelfing með geislapunktunum, texti útreikningsins og **sniðið** séð frá loftnetinu þínu. Allt miðast við tímann á sleðanum *Tími útreiknings* (rauntími sjálfgefið; ±36 klst. í 15 mínútna skrefum).
+
+**Rönd fyrir ofan grunnmyndina** dregur saman útreikninginn fyrir þá stund: dagsetningu og tíma (*núna* eða klukkustundir frá núna), **leiðarstuðulinn Σ ZHR×η**, **gagnlegustu drífuna** með ZHR hennar og nýtni, fjölda drífa yfir sjóndeildarhring og **ráðlagðan Hot** með áttarhorni hans.
 
 Í litlu himinhvelfingunni sýnir **appelsínugul lína** gegnum hvirfilpunktinn alltaf **réttu loftnetsstefnurnar**, hornrétt á rek valinnar drífu (eða þeirrar hagstæðustu): áttarhorn geislapunkts ±90°, merkt *loftnet NNN°* í báðum endum, með vikmörkunum ±45° sem grönnum línum. Stutt appelsínugul strik á jaðrinum sýna hornréttu stefnurnar fyrir hinar nýtilegu drífurnar.
 

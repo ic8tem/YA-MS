@@ -6,18 +6,19 @@
 
 [![Dataindsamling](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## Tre cluster-strømme
+## Fire kilder
 
-Fanen samler **meteor scatter-spots** fra tre telnet-strømme, hver i sin egen underfane:
+Fanen samler **meteor scatter-spots** fra tre telnet-strømme og fra PSKReporters MQTT-feed, hver i sin egen underfane:
 
 | Underfane | Standard | Bemærkninger |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | En valgfri cluster. På ON0DXK er VHF-båndene filtreret: aktivér dem med `set/filter dxbm/pass 6` (derefter 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimmere dekoder sjældent MS-modes. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | DM4X' cluster med **PSKReporter**-spots: MSK144-dekodningerne fra WSJT-X og MSHV kommer her. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | PSKReporter-spots live via **MQTT** (tjeneste fra M0LTE): intet login, hvert spot har allerede lokatorerne for den sendende og den modtagende station. Standardemner: MSK144 på 6 m, 4 m, 2 m, 1,25 m, 70 cm og FSK441 på 2 m (`pskr/filter/v2/band/mode/#`); *Standardemner* gendanner dem. |
 | **Indsamlede MS-spots** | – | Tabel over de accepterede spots, nyeste først. |
 
-Hver strøm har vært, port, kommandoer der sendes efter login, *Genforbind*, *Forbind ved opstart*, en konsol og en linje til at sende kommandoer. Skriv dit **kaldesignal til login** øverst. En bjælke viser status for de tre sessioner (grøn prik = forbundet). Sessionerne forbliver åbne, når du skifter sprog eller farveskema.
+Hver strøm har vært, port, kommandoer der sendes efter login, *Genforbind*, *Forbind ved opstart*, en konsol og en linje til at sende kommandoer. Skriv dit **kaldesignal til login** øverst. MQTT-kilden har vært, port, emner (ét pr. linje eller adskilt af `;`), *Genforbind* og *Forbind ved opstart* (slået fra som standard) og en konsol med de modtagne spots; dens spots går gennem det samme filter. En bjælke viser status for de fire kilder (grøn prik = forbundet). Sessionerne forbliver åbne, når du skifter sprog eller farveskema.
 
 ## Filteret (40 % af vinduet)
 

@@ -6,18 +6,19 @@
 
 [![Gegevensverzameling](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-1_4.png)
 
-## Drie clusterstromen
+## Vier bronnen
 
-Het tabblad verzamelt **meteorscatter-spots** uit drie telnet-stromen, elk in een eigen subtabblad:
+Het tabblad verzamelt **meteorscatter-spots** uit drie telnet-stromen en uit de MQTT-feed van PSKReporter, elk in een eigen subtabblad:
 
 | Subtabblad | Standaard | Opmerkingen |
 |---|---|---|
 | **1. DX-cluster** | on0dxk.dyndns.org : 8000 | Een cluster naar keuze. Op ON0DXK zijn de VHF-banden gefilterd: schakel ze in met `set/filter dxbm/pass 6` (daarna 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimmers decoderen zelden MS-modes. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | DM4X-cluster met de **PSKReporter**-spots: hier komen de MSK144-decodes van WSJT-X en MSHV binnen. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | Live PSKReporter-spots via **MQTT** (dienst van M0LTE): zonder login, elke spot bevat al de locators van het zendende en het ontvangende station. Standaardonderwerpen: MSK144 op 6 m, 4 m, 2 m, 1,25 m, 70 cm en FSK441 op 2 m (`pskr/filter/v2/band/mode/#`); *Standaardonderwerpen* zet ze terug. |
 | **Verzamelde MS-spots** | – | Tabel van de geaccepteerde spots, nieuwste bovenaan. |
 
-Elke stroom heeft host, poort, commando's die na het inloggen worden verzonden, *Opnieuw verbinden*, *Verbinden bij opstarten*, een console en een regel om commando's te verzenden. Vul bovenaan je **roepnaam voor het inloggen** in. Een strook toont de status van de drie sessies (groene stip = verbonden). De sessies blijven open als je van taal of kleurenschema wisselt.
+Elke stroom heeft host, poort, commando's die na het inloggen worden verzonden, *Opnieuw verbinden*, *Verbinden bij opstarten*, een console en een regel om commando's te verzenden. Vul bovenaan je **roepnaam voor het inloggen** in. De MQTT-bron heeft host, poort, onderwerpen (één per regel of gescheiden door `;`), *Opnieuw verbinden* en *Verbinden bij opstarten* (standaard uit) en een console met de ontvangen spots; die spots gaan door hetzelfde filter. Een strook toont de status van de vier bronnen (groene stip = verbonden). De sessies blijven open als je van taal of kleurenschema wisselt.
 
 ## Het filter (40 % van het venster)
 

@@ -33,7 +33,7 @@ Por cima dos separadores há três filas de comandos, válidas para todos os sep
 | Comando | O que faz |
 |---|---|
 | **Hora** | Relógio UTC. |
-| **Hora da abóbada celeste (±36 h)** | Desloca a [Abóbada celeste](Sky-View-pt) e o separador [Radar GRAVES](GRAVES-Radar-pt) até 36 horas para trás ou para a frente, em passos de 15 minutos. |
+| **Momento do cálculo (±36 h)** | Desloca o momento do cálculo – [Cálculo de previsão](Sky-View-pt) e [Radar GRAVES](GRAVES-Radar-pt) – até 36 horas para trás ou para a frente, em passos de 15 minutos. Ao lado: *Cálculo para: agora* ou *Cálculo para: dd/mm hh:mm UTC*. |
 | **Tempo real** | Volta ao momento atual. |
 | **Dia para a tabela de 24 h (UTC)** | O dia mostrado em [Cálculo da eficiência](Efficiency-Calculation-pt) e na cronologia do GRAVES. |
 

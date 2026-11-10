@@ -44,4 +44,4 @@ The interface translations are plain text files in **`data/lingue/<code>.txt`** 
 
 Edit the file in the `data/lingue` folder of your installation and restart YA-MS (or switch language) to see the result. Because these files are **replaced by newer versions at each update**, please also **send your corrections** – by e-mail or as a pull request on GitHub (`data/lingue/`) – so they go into the next release.
 
-This wiki exists in 28 languages (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文); corrections to the wiki pages are welcome too.
+This wiki exists in 36 languages (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, ไทย, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文, 中文 (繁體)); corrections to the wiki pages are welcome too.

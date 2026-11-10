@@ -4,7 +4,6 @@
  "Indice": "Indholdsfortegnelse",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "(Hvis indholdsfortegnelsen er tom: i Word, højreklik på indholdsfortegnelsen > Opdater felt.)",
  "1. Convenzioni": "1. Konventioner",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "Hvert beregningstrin er ledsaget af en mærkat, der angiver dets oprindelse. Kilderne er nummereret i kapitel 11.",
  "[FONTE] ": "[KILDE] ",
  "il passo riprende una fonte citata.": "trinnet bygger på en citeret kilde.",
  "[RILIEVO] ": "[KONTROL] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - \"Meteors & Communication\", del 2, dokumentation til MS-Soft 5.2 (2017).",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Beregningsmanual - side "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Beregningsmanual - side ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "Hvert beregningstrin er ledsaget af en mærkat, der angiver dets oprindelse. Kilderne er nummereret i kapitel 12."
 }

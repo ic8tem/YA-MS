@@ -16,14 +16,22 @@ function T(s) {
   return TRD[s];
 }
 const MATHFN = /^(arccos|arcsin|arctan|atan2|log|sin|cos|tan|sec|exp|max|min|argmax|ln|lim|det)$/;
+const RTL = ['ar', 'he', 'ur'].includes(LANG);   // lingue da destra a sinistra
 class TextRun extends d.TextRun {
-  constructor(o) { if (typeof o === 'string') o = T(o); else if (o && typeof o.text === 'string') o = Object.assign({}, o, { text: T(o.text) }); super(o); }
+  constructor(o) {
+    if (typeof o === 'string') o = { text: T(o) }; else if (o && typeof o.text === 'string') o = Object.assign({}, o, { text: T(o.text) });
+    if (RTL && o && typeof o === 'object') o = Object.assign({ rightToLeft: true }, o);
+    super(o);
+  }
+}
+class Paragraph extends d.Paragraph {
+  constructor(o) { if (RTL && o && typeof o === 'object' && !Array.isArray(o)) o = Object.assign({ bidirectional: true }, o); super(o); }
 }
 class MathRun extends d.MathRun {
   // nelle formule si traducono solo le parole (almeno 4 lettere) che non sono funzioni matematiche
   constructor(t) { super(typeof t === 'string' && /[A-Za-zÀ-ÿ]{4,}/.test(t) && !MATHFN.test(t.trim()) ? T(t) : t); }
 }
-const { Document, Packer, Paragraph, HeadingLevel, AlignmentType, TabStopType, Table, TableRow, TableCell,
+const { Document, Packer, HeadingLevel, AlignmentType, TabStopType, Table, TableRow, TableCell,
   WidthType, ShadingType, BorderStyle, LevelFormat, Footer, PageNumber, TableOfContents,
   Math: M, MathFraction, MathSubScript, MathSuperScript, MathSubSuperScript, MathRadical, MathRoundBrackets,
   MathSquareBrackets, MathFunction, MathSum } = d;
@@ -91,7 +99,7 @@ C.push(new TableOfContents(T('Indice'), { hyperlink: true, headingStyleRange: '1
 C.push(P(I('(Se l\'indice è vuoto: in Word, clic destro sull\'indice > Aggiorna campo.)')));
 
 C.push(H1('1. Convenzioni'));
-C.push(P('Ogni passo del calcolo è accompagnato da un\'etichetta che ne indica l\'origine. Le fonti sono numerate nel capitolo 11.'));
+C.push(P('Ogni passo del calcolo è accompagnato da un\'etichetta che ne indica l\'origine. Le fonti sono numerate nel capitolo 12.'));
 C.push(TAG('FONTE', 'il passo riprende una fonte citata.'));
 C.push(TAG('RILIEVO', 'confronto tra il programma e le fonti, con l\'esito della verifica.'));
 C.push(TAG('SCELTA', 'scelta del programma, non presa da una fonte; va verificata con l\'esperienza in banda.'));

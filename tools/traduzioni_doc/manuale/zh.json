@@ -4,7 +4,6 @@
  "Indice": "目录",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "（如果目录为空：在 Word 中右键单击目录 > 更新域。）",
  "1. Convenzioni": "1. 约定",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "每个计算步骤都带有一个标签，表明其来源。来源在第 11 章中编号列出。",
  "[FONTE] ": "[来源] ",
  "il passo riprende una fonte citata.": "该步骤遵循所引用的来源。",
  "[RILIEVO] ": "[核查] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997。",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - \"Meteors & Communication\"，第 2 部分，MS-Soft 5.2 文档（2017）。",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014。",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - 计算手册 - 页码 "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - 计算手册 - 页码 ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "每个计算步骤都带有一个标签，表明其来源。来源在第 12 章中编号列出。"
 }

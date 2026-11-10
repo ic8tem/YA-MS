@@ -639,3 +639,6 @@ zona PREV	โซน PREV
 Σ ZHR x effic.	Σ ZHR x ประสิทธิภาพ
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (ซ้าย)
+FONTE	แหล่งที่มา
+RILIEVO	ตรวจสอบ
+SCELTA	ทางเลือก

@@ -637,3 +637,6 @@ zona PREV	PREV-svæði
 Σ ZHR x effic.	Σ ZHR x nýtni
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (vinstri)
+FONTE	HEIMILD
+RILIEVO	ATHUGUN
+SCELTA	VAL

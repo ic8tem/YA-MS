@@ -637,3 +637,6 @@ zona PREV	PREV ala
 Σ ZHR x effic.	Σ ZHR x efekt.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (vasakul)
+FONTE	ALLIKAS
+RILIEVO	KONTROLL
+SCELTA	VALIK

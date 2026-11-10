@@ -4,7 +4,6 @@
  "Indice": "İçindekiler",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "(İçindekiler boşsa: Word'de içindekilere sağ tıklayın > Alanı güncelleştir.)",
  "1. Convenzioni": "1. Kurallar",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "Hesaplamanın her adımına, kökenini belirten bir etiket eşlik eder. Kaynaklar 11. bölümde numaralandırılmıştır.",
  "[FONTE] ": "[KAYNAK] ",
  "il passo riprende una fonte citata.": "adım, atıf yapılan bir kaynaktan alınmıştır.",
  "[RILIEVO] ": "[KONTROL] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - \"Meteors & Communication\", bölüm 2, MS-Soft 5.2 belgeleri (2017).",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Hesaplama kılavuzu - sayfa "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Hesaplama kılavuzu - sayfa ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "Hesaplamanın her adımına, kökenini belirten bir etiket eşlik eder. Kaynaklar 12. bölümde numaralandırılmıştır."
 }

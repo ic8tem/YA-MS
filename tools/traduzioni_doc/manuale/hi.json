@@ -4,7 +4,6 @@
  "Indice": "विषय-सूची",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "(यदि विषय-सूची खाली है: Word में, विषय-सूची पर दायाँ क्लिक > फ़ील्ड अपडेट करें।)",
  "1. Convenzioni": "1. परिपाटियाँ",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "गणना का प्रत्येक चरण एक लेबल के साथ है जो उसका उद्गम बताता है। स्रोत अध्याय 11 में क्रमांकित हैं।",
  "[FONTE] ": "[स्रोत] ",
  "il passo riprende una fonte citata.": "यह चरण किसी उद्धृत स्रोत पर आधारित है।",
  "[RILIEVO] ": "[जाँच] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - \"Meteors & Communication\", भाग 2, MS-Soft 5.2 का प्रलेखन (2017)।",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - गणनाओं की पुस्तिका - पृष्ठ "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - गणनाओं की पुस्तिका - पृष्ठ ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "गणना का प्रत्येक चरण एक लेबल के साथ है जो उसका उद्गम बताता है। स्रोत अध्याय 12 में क्रमांकित हैं।"
 }

@@ -4,7 +4,6 @@
  "Indice": "Sommaire",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "(Si le sommaire est vide : dans Word, clic droit sur le sommaire > Mettre à jour les champs.)",
  "1. Convenzioni": "1. Conventions",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "Chaque étape du calcul est accompagnée d'une étiquette qui en indique l'origine. Les sources sont numérotées au chapitre 11.",
  "[FONTE] ": "[SOURCE] ",
  "il passo riprende una fonte citata.": "l'étape reprend une source citée.",
  "[RILIEVO] ": "[VÉRIFICATION] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - \"Meteors & Communication\", partie 2, documentation de MS-Soft 5.2 (2017).",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Manuel des calculs - page "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Manuel des calculs - page ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "Chaque étape du calcul est accompagnée d'une étiquette qui en indique l'origine. Les sources sont numérotées au chapitre 12."
 }

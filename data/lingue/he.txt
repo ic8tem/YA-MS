@@ -637,3 +637,6 @@ zona PREV	אזור PREV
 Σ ZHR x effic.	Σ ZHR x יעיל.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (שמאל)
+FONTE	מקור
+RILIEVO	בדיקה
+SCELTA	בחירה

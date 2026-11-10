@@ -637,3 +637,6 @@ zona PREV	PREV-sone
 Σ ZHR x effic.	Σ ZHR x doeltr.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (links)
+FONTE	BRON
+RILIEVO	KONTROLE
+SCELTA	KEUSE

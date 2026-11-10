@@ -639,3 +639,6 @@ Accesa (prudente, di partenza): la potenza di ogni scia segue la formula complet
 Nell'attenuazione (β = 90°, prudente): raggio iniziale della scia {0:F1} dB (r0 = {1:F2} m alla quota media ITU di {2:F1} km per {3:F0} MHz). Con la scia nel piano della tratta (β = 0°, caso migliore) l'attenuazione scende a {4:F1} dB ({5:F1} dB) e il margine sale a {6:+0.0;-0.0} dB	損失の内訳 (β = 90°、慎重): 流星痕の初期半径 {0:F1} dB ({3:F0} MHz の ITU 平均高度 {2:F1} km で r0 = {1:F2} m)。流星痕がパス平面内にある場合 (β = 0°、最良の場合)、損失は {4:F1} dB に下がり ({5:F1} dB)、マージンは {6:+0.0;-0.0} dB に増えます
 Valori più prudenti, di partenza: quota delle scie misurata dal radar di Collm (casella "dal radar"), scie normali, angolo β acceso.\nConfronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo): in media 7 dB sotto, con lo stesso andamento orario (scarto di forma circa 3 dB).	最も慎重な値 (初期設定): Collm レーダーで測定した流星痕高度 ("レーダーより" チェックボックス)、通常の流星痕、角 β オン。\nDJ5HG の曲線 (しぶんぎ座流星群、ハンブルクからのパス) との比較: 平均 7 dB 低く、時間変化は同じ (形のずれ約 3 dB)。
 Valori prudenti: scia che attraversa il piano della tratta (β = 90°, caso più sfavorevole), compreso il raggio iniziale della scia (ITU-R P.843) alla quota media degli echi per ciascuna frequenza	慎重な値: パス平面を横切る流星痕 (β = 90°、最悪の場合)、各周波数のエコー平均高度での流星痕の初期半径 (ITU-R P.843) を含む
+FONTE	出典
+RILIEVO	検証
+SCELTA	選択

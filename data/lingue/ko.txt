@@ -637,3 +637,6 @@ zona PREV	PREV 영역
 Σ ZHR x effic.	Σ ZHR x 효율
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (왼쪽)
+FONTE	출처
+RILIEVO	검증
+SCELTA	선택

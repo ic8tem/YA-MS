@@ -4,7 +4,6 @@
  "Indice": "সূচিপত্র",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "(সূচিপত্র খালি থাকলে: Word-এ সূচিপত্রে ডান-ক্লিক করুন > ফিল্ড হালনাগাদ করুন।)",
  "1. Convenzioni": "1. রীতিনীতি",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "গণনার প্রতিটি ধাপের সাথে একটি লেবেল থাকে যা তার উৎস নির্দেশ করে। উৎসগুলো অধ্যায় 11-এ ক্রমিক নম্বরসহ দেওয়া আছে।",
  "[FONTE] ": "[উৎস] ",
  "il passo riprende una fonte citata.": "ধাপটি একটি উদ্ধৃত উৎস থেকে নেওয়া।",
  "[RILIEVO] ": "[যাচাই] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997।",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - \"Meteors & Communication\", অংশ 2, MS-Soft 5.2-এর ডকুমেন্টেশন (2017)।",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014।",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - গণনার ম্যানুয়াল - পৃষ্ঠা "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - গণনার ম্যানুয়াল - পৃষ্ঠা ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "গণনার প্রতিটি ধাপের সাথে একটি লেবেল থাকে যা তার উৎস নির্দেশ করে। উৎসগুলো অধ্যায় 12-এ ক্রমিক নম্বরসহ দেওয়া আছে।"
 }

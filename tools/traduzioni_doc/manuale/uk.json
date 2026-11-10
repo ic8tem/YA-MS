@@ -4,7 +4,6 @@
  "Indice": "Зміст",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "(Якщо зміст порожній: у Word клацніть правою кнопкою миші на змісті > Оновити поле.)",
  "1. Convenzioni": "1. Умовні позначення",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "Кожен крок розрахунку супроводжується міткою, що вказує його походження. Джерела пронумеровано в розділі 11.",
  "[FONTE] ": "[ДЖЕРЕЛО] ",
  "il passo riprende una fonte citata.": "крок узято з цитованого джерела.",
  "[RILIEVO] ": "[ПЕРЕВІРКА] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - \"Meteors & Communication\", частина 2, документація MS-Soft 5.2 (2017).",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Посібник із розрахунків - сторінка "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Посібник із розрахунків - сторінка ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "Кожен крок розрахунку супроводжується міткою, що вказує його походження. Джерела пронумеровано в розділі 12."
 }

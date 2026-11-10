@@ -4,7 +4,6 @@
  "Indice": "目次",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "(目次が空の場合: Word で目次を右クリック > フィールドの更新。)",
  "1. Convenzioni": "1. 表記の約束",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "計算の各段階には、その出典を示すラベルが付いています。出典は第11章で番号付けされています。",
  "[FONTE] ": "[出典] ",
  "il passo riprende una fonte citata.": "この段階は引用した出典に基づく。",
  "[RILIEVO] ": "[検証] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - \"Meteors & Communication\"、第2部、MS-Soft 5.2 のドキュメント (2017)。",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - 計算マニュアル - ページ "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - 計算マニュアル - ページ ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "計算の各段階には、その出典を示すラベルが付いています。出典は第12章で番号付けされています。"
 }

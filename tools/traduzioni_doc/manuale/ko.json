@@ -4,7 +4,6 @@
  "Indice": "목차",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "(목차가 비어 있으면: Word에서 목차를 마우스 오른쪽 버튼으로 클릭 > 필드 업데이트.)",
  "1. Convenzioni": "1. 표기 규칙",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "계산의 각 단계에는 그 출처를 나타내는 라벨이 붙어 있습니다. 출처는 11장에 번호가 매겨져 있습니다.",
  "[FONTE] ": "[출처] ",
  "il passo riprende una fonte citata.": "이 단계는 인용된 출처를 따른다.",
  "[RILIEVO] ": "[검증] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - \"Meteors & Communication\", 제2부, MS-Soft 5.2 문서 (2017).",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - 계산 매뉴얼 - 페이지 "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - 계산 매뉴얼 - 페이지 ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "계산의 각 단계에는 그 출처를 나타내는 라벨이 붙어 있습니다. 출처는 12장에 번호가 매겨져 있습니다."
 }

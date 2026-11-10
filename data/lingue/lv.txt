@@ -637,3 +637,6 @@ zona PREV	PREV zona
 Σ ZHR x effic.	Σ ZHR x efekt.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (pa kreisi)
+FONTE	AVOTS
+RILIEVO	PĀRBAUDE
+SCELTA	IZVĒLE

@@ -638,3 +638,6 @@ zona PREV	zóna PREV
 Σ ZHR x effic.	Σ ZHR x účin.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (vlevo)
+FONTE	ZDROJ
+RILIEVO	OVĚŘENÍ
+SCELTA	VOLBA

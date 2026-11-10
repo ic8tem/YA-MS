@@ -637,3 +637,6 @@ zona PREV	zona PREV
 Σ ZHR x effic.	Σ ZHR x efis.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (kiri)
+FONTE	SUMBER
+RILIEVO	PEMERIKSAAN
+SCELTA	PILIHAN

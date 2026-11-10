@@ -639,3 +639,6 @@ zona PREV	zona PREV
 Σ ZHR x effic.	Σ ZHR x efic.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (esquerda)
+FONTE	FONTE
+RILIEVO	VERIFICAÇÃO
+SCELTA	ESCOLHA

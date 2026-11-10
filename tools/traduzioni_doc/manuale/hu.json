@@ -4,7 +4,6 @@
  "Indice": "Tartalomjegyzék",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "(Ha a tartalomjegyzék üres: a Wordben kattintson jobb gombbal a tartalomjegyzékre > Mező frissítése.)",
  "1. Convenzioni": "1. Jelölések",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "A számítás minden lépéséhez címke tartozik, amely megadja az eredetét. A források a 11. fejezetben vannak számozva.",
  "[FONTE] ": "[FORRÁS] ",
  "il passo riprende una fonte citata.": "a lépés egy hivatkozott forrást követ.",
  "[RILIEVO] ": "[ELLENŐRZÉS] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - „Communication by meteor-burst propagation”, 1997.",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - „Meteors & Communication”, 2. rész, az MS-Soft 5.2 dokumentációja (2017).",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - „Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter”, ARI Pisa, 2014.",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Számítási kézikönyv - oldal "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Számítási kézikönyv - oldal ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "A számítás minden lépéséhez címke tartozik, amely megadja az eredetét. A források a 12. fejezetben vannak számozva."
 }

@@ -4,7 +4,6 @@
  "Indice": "Satura rādītājs",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "(Ja satura rādītājs ir tukšs: programmā Word ar peles labo pogu noklikšķiniet uz satura rādītāja > Atjaunināt lauku.)",
  "1. Convenzioni": "1. Konvencijas",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "Katram aprēķina solim pievienota etiķete, kas norāda tā izcelsmi. Avoti ir numurēti 11. nodaļā.",
  "[FONTE] ": "[AVOTS] ",
  "il passo riprende una fonte citata.": "solis pārņem citētu avotu.",
  "[RILIEVO] ": "[PĀRBAUDE] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - \"Meteors & Communication\", 2. daļa, MS-Soft 5.2 dokumentācija (2017).",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Aprēķinu rokasgrāmata - lappuse "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Aprēķinu rokasgrāmata - lappuse ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "Katram aprēķina solim pievienota etiķete, kas norāda tā izcelsmi. Avoti ir numurēti 12. nodaļā."
 }

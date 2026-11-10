@@ -639,3 +639,6 @@ zona PREV	PREV 區域
 Σ ZHR x effic.	Σ ZHR x 效率
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  （左側）
+FONTE	來源
+RILIEVO	核查
+SCELTA	選擇

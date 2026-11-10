@@ -259,6 +259,12 @@ def build_docx(path):
         elif k == 'li': d.add_paragraph(b[1], style='List Bullet')
     d.add_heading(T('10. Fonti'), level=1)
     for s in SOURCES: d.add_paragraph(s, style='List Number')
+    if LANG in ('ar', 'he', 'ur'):   # lingue da destra a sinistra: paragrafi e testo RTL
+        from docx.oxml.ns import qn
+        from docx.oxml import OxmlElement
+        for para in d.paragraphs:
+            para._p.get_or_add_pPr().append(OxmlElement('w:bidi'))
+            for r in para.runs: r._r.get_or_add_rPr().append(OxmlElement('w:rtl'))
     d.save(path)
 
 def build_txt(path):

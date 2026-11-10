@@ -638,3 +638,6 @@ zona PREV	ζώνη PREV
 Σ ZHR x effic.	Σ ZHR x αποδ.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (αριστερά)
+FONTE	ΠΗΓΗ
+RILIEVO	ΕΛΕΓΧΟΣ
+SCELTA	ΕΠΙΛΟΓΗ

@@ -4,7 +4,6 @@
  "Indice": "فہرستِ مضامین",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "(اگر فہرستِ مضامین خالی ہو: Word میں، فہرست پر دایاں کلک > فیلڈ اپ ڈیٹ کریں۔)",
  "1. Convenzioni": "1. اصطلاحات و ضوابط",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "حساب کا ہر مرحلہ ایک لیبل کے ساتھ ہے جو اس کا ماخذ بتاتا ہے۔ ماخذ باب 11 میں نمبر وار درج ہیں۔",
  "[FONTE] ": "[ماخذ] ",
  "il passo riprende una fonte citata.": "یہ مرحلہ کسی حوالہ شدہ ماخذ سے لیا گیا ہے۔",
  "[RILIEVO] ": "[جانچ] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - \"Meteors & Communication\"، حصہ 2، MS-Soft 5.2 کی دستاویزات (2017)۔",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - حسابات کا دستی کتابچہ - صفحہ "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - حسابات کا دستی کتابچہ - صفحہ ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "حساب کا ہر مرحلہ ایک لیبل کے ساتھ ہے جو اس کا ماخذ بتاتا ہے۔ ماخذ باب 12 میں نمبر وار درج ہیں۔"
 }

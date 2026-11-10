@@ -637,3 +637,6 @@ zona PREV	PREV bölgesi
 Σ ZHR x effic.	Σ ZHR x verim
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (sol)
+FONTE	KAYNAK
+RILIEVO	KONTROL
+SCELTA	SEÇİM

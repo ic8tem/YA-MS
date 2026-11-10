@@ -637,3 +637,6 @@ zona PREV	PREV क्षेत्र
 Σ ZHR x effic.	Σ ZHR x दक्षता
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (बायाँ)
+FONTE	स्रोत
+RILIEVO	जाँच
+SCELTA	चयन

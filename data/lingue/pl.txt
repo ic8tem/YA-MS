@@ -639,3 +639,6 @@ zona PREV	strefa PREV
 Σ ZHR x effic.	Σ ZHR x spraw.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (lewo)
+FONTE	ŹRÓDŁO
+RILIEVO	WERYFIKACJA
+SCELTA	WYBÓR

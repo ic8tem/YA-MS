@@ -637,3 +637,6 @@ zona PREV	PREV অঞ্চল
 Σ ZHR x effic.	Σ ZHR x দক্ষতা
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (বাঁ)
+FONTE	উৎস
+RILIEVO	যাচাই
+SCELTA	নির্বাচন

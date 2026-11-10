@@ -1,0 +1,154 @@
+TITLE|Hvernig YA-MS reiknar nýtni drífu
+SUB|Tækniskjal - tekið saman af Costantino IC8TEM - nóvember 2026
+H1|1. Inngangur
+H2|1.1 Tilgangur skjalsins
+P|Þetta skjal útskýrir, skref fyrir skref, hvernig forritið leiðir út nýtni loftsteinadrífu fyrir meteor scatter-leið. Hvert skref tilgreinir hvaðan það kemur: úr birtri heimild, úr athugun sem gerð var á forritinu eða úr vali forritsins sjálfs. Fullar, tölusettar jöfnur eru í Handbók útreikninga (mappan doc).
+H2|1.2 Hvernig á að lesa merkin
+TAG|FONTE|skrefið byggir á tilvitnaðri heimild; talan í hornklofum vísar í heimildaskrána aftast.
+TAG|RILIEVO|samanburður forritsins við heimildirnar, ásamt niðurstöðu athugunarinnar.
+TAG|SCELTA|val forritsins, ekki tekið úr heimild: þarf að sannreyna með reynslu á bandinu.
+H2|1.3 Hvað er átt við með nýtni
+TAG|FONTE|Nýtnin gefur til kynna í prósentum hve mikið staða drífunnar leyfir endurvörp á tiltekinni leið. Hugtakið er frá Ilkka OH5IY (MS-Soft) [2] og er tekið upp í greininni [1]: hámark nýtni fellur ekki saman við sýnilegt hámark (ZHR), því það ræðst af því hvar geislapunkturinn er miðað við stöðvarnar tvær.
+TAG|FONTE|MCG_MS eftir DL5MCG [3] beitir sama hugtaki á fjórar fastar stefnur (N/S, NE/SW, E/W, SE/NW) og, þegar reitarkóði mótstöðvarinnar er sleginn inn, einnig á raunverulegu leiðina.
+TAG|SCELTA|YA-MS reiknar nýtnina fyrir raunverulegu leiðina milli reitarkóðanna tveggja, ekki fyrir fastar stefnur.
+H1|2. Hvar endurvörpin verða: E-lagið
+H2|2.1 Slóðir drífunnar
+TAG|FONTE|Loftsteinar drífunnar mynda jónaðar slóðir í E-laginu, í 80 til 120 km hæð. SKiYMET-ratsjár gefa meðalhæð um 90 km [1].
+H2|2.2 Reiknihæðin
+TAG|SCELTA|Forritið les hæðasúlurit Collm-ratsjárinnar [7] og notar algengustu hæðina (tíðasta gildið) sem reiknihæð. Ef reiturinn "frá ratsjá" er óvirkur er handvirkt slegið gildi notað.
+TAG|RILIEVO|Collm-graf frá 5/11/2026: tíðasta gildi 89,5 km, meðaltal 88,6 km, staðalfrávik 6,8 km. Gildið staðfestir 90 km greinarinnar [1].
+TAG|RILIEVO|DJ5HG [18] og QTFGUI [17] nota fasta hæð 102 km; forritið tekur mælt gildi ratsjárinnar fram yfir. Tilmæli ITU-R P.843 [24] gefa meðalhæð h = 124 − 17·log10(f) km: um 97 km við 36,2 MHz og 87 km við 144 MHz, í samræmi við tíðasta gildi Collm (89,5 km þann 5/11/2026).
+H1|3. Rúmfræði leiðarinnar
+H2|3.1 Jörð, stöðvar og miðpunktur
+TAG|FONTE|Kúlulaga jörð með geisla r = 6372,7955 km [1].
+TAG|SCELTA|Leiðin er alltaf hin raunverulega leið milli reitarkóða stöðvarinnar og mótstöðvarinnar. Fjarlægð, stefnuhorn og miðpunktur eru reiknuð með stórbaugsformúlunum.
+TAG|FONTE|Tímaháðir útreikningar miðast við miðpunkt leiðarinnar: besti tíminn getur verið allt að 1,5 klst. mismunandi milli endanna tveggja (SM6FHZ [4]).
+H2|3.2 Hæðarhorn loftnets
+TAG|FONTE|Hæðarhornið að endurvarpspunktinum er reiknað með formúlu greinarinnar (mynd 7) [1], með x = fjarlægð / r, H hæð slóðarinnar, h hæð stöðvarinnar:
+EQ|e = 90° − 57,3 · arctan[ (r·tan x + (H − r(1−cos x)/cos x)·sin x) / (H − r(1−cos x)/cos x − h·sin x) ]
+TAG|RILIEVO|Formúlan fellur innan 0,03° að nákvæmri kúlurúmfræði. Forritið notar tveggja breytu arkustangens, sem handan sjóndeildarhrings gefur neikvæð gildi og forðast lotubundnivandann sem bent er á í greininni.
+H2|3.3 Sameiginlega svæðið og mörk þess
+TAG|FONTE|Greinin [1] finnur skurðpunkta ferlanna þar sem sjóndeildarhringur hvorrar stöðvar mætir E-laginu. Þetta eru skurðpunktar tveggja hringja umhverfis stöðvarnar, með geisla jafnan drægninni í hæð slóðanna:
+EQ|d_H = r · [ π/2 − e − arcsin( (r+h)·cos e / (r+H) ) ]
+P|Með H = 89,5 km og geislann í 0° er drægnin 1062 km. Ef leiðin er lengri en tvöföld drægnin sjá stöðvarnar tvær ekkert sameiginlegt svæði E-lagsins.
+TAG|RILIEVO|Þessir tveir punktar eru fjærstu jaðrar þess himins sem báðar stöðvar sjá, ekki þeir punktar þar sem flest endurvörp berast. Á leiðinni JN70CN - IN78UO (1710 km) lenda þeir 37° til vinstri og hægri við beinu stefnuna, en MSHV mælir með 10°. Þess vegna kallar forritið þá "Mörk A" og "Mörk B" og teiknar þá dauft á kortið, ásamt hringjunum tveimur fyrir sameiginlega svæðið.
+TAG|RILIEVO|Í dæmi greinarinnar (JN44BB - IO53RT) setur teikningin þessa skurðpunkta um 870 km frá stöðvunum: það samsvarar geisla lyftum um 2° (865 km).
+H2|3.4 Hot A og Hot B: hvert á að beina
+TAG|FONTE|Endurvörp stakra loftsteina safnast á tvö svæði ("heita bletti") sitt hvorum megin við miðpunkt leiðarinnar. J. Richardson (AMS) [19] gefur, í töflunni sem DJ5HG [18] birtir, frávik loftnets frá beinu stefnunni: 13° við 1000 km, 11° við 1250 km, 10° við 1500 og við 2000 km. AMS Bulletin nr. 203, sem W8WN [14] vitnar í, gefur 10° við 1500 og 1800 km.
+TAG|SCELTA|Hot A og Hot B eru punktarnir í fjarlægð s frá miðpunktinum, hornrétt á leiðina (A til vinstri séð frá stöðinni að mótstöðinni, B til hægri). Þegar gátreiturinn "sjálfv. (AMS)" er virkur (sjálfgefið) kemur s úr fráviki í töflu Richardsons, línulega brúað (13° undir 1000 km, 10° yfir 2000 km): s = (D/2)·tan(frávik). Sé gátreiturinn óvirkur er s slegið inn handvirkt (MSHV [15] notar 150 km).
+EQ|Δaz ≈ arctan( s / (D/2) )
+TAG|RILIEVO|Með AMS-töflunni: 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN-IN78UO (1710 km) → 10°, s ≈ 151 km, eins og 150 km sem áður voru notaðir og af MSHV; á stuttum leiðum færir taflan heitu blettina nær miðpunktinum.
+TAG|SCELTA|Fyrir tímann sem sýndur er á himinhvelfingunni leggur forritið saman, yfir allar drífur ofan sjóndeildarhrings, ZHR x nýtni skipt milli hliðar A og hliðar B (kafli 7.1). Heiti bletturinn á þeirri hlið sem fær flest endurvörp er sá sem mælt er með: hann birtist rauður á kortinu.
+TAG|FONTE|Samkvæmt DJ5HG, eftir DF5HC [16], verður endurvarpið á keilu umhverfis slóðina: á styttri leiðum skal beina loftnetunum til hliðar við beinu stefnuna, báðum stöðvum að sama punkti, og eftir stöðu geislapunktsins er annar punkturinn (HOT-A eða HOT-B) hagstæðari. DF5HC tilgreinir einnig bestu fjarlægðina 1300-1500 km, með hámark rétt yfir 2000 km.
+H2|3.5 Geisli loftnetsins
+TAG|FONTE|Mögnun langs Yagi-loftnets út frá bómulengd (DL6WU-ferill [10]) og geislabreidd við −3 dB út frá mögnun (regla Kraus [11]):
+EQ|G = 7,773 · log10(L/λ) + 11,43 dBi          θK = √( 41253 / 10^(G/10) )
+TAG|RILIEVO|NEC-hermanir W4RNL [12] staðfesta mögnunarferilinn innan 0,1 dB bæði fyrir DL6WU Yagi-loftnet og þau eftir David Tanner VK3AUU, sem hafa styttri bómu við sama fjölda eininga: mögnunin ræðst af bómulengdinni. Sömu hermanir gefa láréttan geisla 5-10 % mjórri en Kraus.
+TAG|SCELTA|Láréttur geisli (sá sem ræður stefnu í stefnuhorni) = 0,93 · θK; lóðréttur geisli = θK. Yagi 14 λ við 432 MHz: 20,3 dBi, 18,1° láréttur og 19,5° lóðréttur; líkön W4RNL gefa 20,4 dBi og 18,4°/18,8°.
+TAG|SCELTA|Loftnetinu er alltaf talið beint að mótstöðinni. Heitur blettur sem lendir innan ±θ/2 frá þeirri stefnu er þegar innan geislans: hann er merktur grár í stað bleiks og forritið varar við því. Heiti bletturinn sem mælt er með út frá nýtni er samt alltaf rauður.
+H1|4. Geislapunktur drífunnar
+H2|4.1 Staða geislapunktsins
+TAG|FONTE|Stjörnulengd, stjörnubreidd, sólarlengd hámarks, hraði, stofnvísir r og ZHR koma úr dagatölum IMO 2026 og 2027 [5], töflum 5 og 7; Antihelion-uppsprettan úr töflu 6. Minni drífur á lista IMO eru einnig teknar með, til dæmis Camelopardalítar í október (OCT, ZHR 5, virkar 5.-6. október), Andrómedítar og dagdrífur í útvarpi í apríl og maí: jafnvel með lítinn ZHR leggja þær til leiðarstuðulsins og ráðleggingar um heitan blett.
+TAG|SCELTA|Fyrir dagdrífur í útvarpi gefur IMO hvorki ZHR né hraða: forritið notar vinnugildið 5.
+TAG|FONTE|Sólarlengd (jafndægur J2000), stjörnutími og umreikningur í stefnuhorn og hæðarhorn: formúlur Meeus [6].
+TAG|SCELTA|Daglegt rek geislapunktsins notar vinnugildi, skráð í skrána sciami.csv og breytanleg.
+H2|4.2 Dagsetning hámarks
+TAG|FONTE|Forritið sýnir alltaf næsta hámark. Þegar IMO hefur birt dagatal þess árs (2026 og 2027 eru þegar í massimi_imo.csv) eru notuð dagsetning og tími IMO [5]; annars er reiknað augnablikið þegar sólin nær lengd hámarksins.
+TAG|RILIEVO|Útreikningurinn fellur að dagatölum IMO 2026 og 2027 innan fárra mínútna fyrir þær drífur sem IMO gefur tíma fyrir (til dæmis Kvaðrantítar 3/1/2026 21:13 á móti 21:00, Geminítar 14/12/2027 19:51 á móti 20:00). Undantekningar eru kappa-Leonítar í dagsbirtu 2026, degi síðar (26/9 í stað 25/9), og tími eta-Akvarítanna 2027 (15:10 á móti 09:00 hjá IMO): í þeim tilvikum gildir gildi IMO.
+H2|4.3 Virkni yfir tíma
+TAG|FONTE|Hámarks-ZHR úr dagatali IMO [5].
+TAG|SCELTA|Kringum hámarkið dvínar virknin veldisvísislega, með mismunandi halla í vexti og hnignun (vinnugildi í sciami.csv):
+EQ|ZHR(λ) = ZHRmax · 10^( −B · |λ − λmax| )
+H1|5. Endurvarpsskilyrðið
+H2|5.1 Speglunarendurvarp
+TAG|FONTE|Slóð endursendir merkið milli stöðvanna tveggja aðeins ef hún snertir sporvöluflöt sem hefur stöðvarnar í brennipunktum (McKinley [8]). Slóðir drífu eru samsíða stefnu geislapunktsins [1, 8].
+P|Í reynd eru, fyrir hvern punkt P í E-laginu, teknar stefnurnar frá P að stöðvunum tveimur og helmingalína þeirra n. Slóðin, samsíða geislapunktinum (stefna s), endurvarpar að báðum stöðvum þegar hún er hornrétt á helmingalínuna:
+EQ|s · n = 0
+TAG|FONTE|Sama lögmál liggur til grundvallar QTFGUI eftir DJ5HG: geislinn sem hittir slóðina dreifist á keilu umhverfis hana, og aðeins sá sem er á keilunni tekur við merkinu. Keiluskilyrðið jafngildir s · n = 0. [17, 18] Í texta sínum frá 2004 lýsir DJ5HG því svo: slóðin fer í gegnum E-lagið, loftnetin tvö lýsa hana upp og viðtækið er á keilunni sem hefur slóðina sem ás; veggur keilunnar er geisli frá geislara sem er þúsundir bylgjulengda langur og því mjór, en við strokufall (langar leiðir) snertir hann jörðina á stóru svæði.
+H2|5.2 Vikmörk
+TAG|SCELTA|Skilyrðið er samþykkt með Gauss-vikmörkum 0,05 rad (um 3°). Fyrir fullkomna slóð er veggur keilunnar mun mjórri [18]; 3° tákna það sem fullkomna keilan sér ekki: dreifingu geislapunkta drífu (0,3-1,4° mælt af GMN), slóðina sveigða af vindi og endanlega lengd hennar.
+TAG|RILIEVO|Fyrir meteor scatter teiknar QTFGUI eftir DJ5HG frávik frá endurvarpslögmálinu allt að 32°: Gauss-vikmörk forritsins, 0,05 rad, eru strangari og þjappa væginu á nánast nákvæmlega speglandi punkta. Með sýnatöku á 5 km fresti í stað 15 km breytast prósenturnar um minna en 0,3 punkta.
+H2|5.3 Hagnýt afleiðing: besta loftnetsstefnan
+TAG|FONTE|Slóð endursendir merkið milli stöðvanna tveggja aðeins ef hún snertir sporvöluflöt með stöðvarnar í brennipunktum: í hverjum punkti E-lagsins nýtast aðeins geislapunktar á þeim hálfhring himins sem er hornréttur á helmingalínu dreifihornsins (Eshleman og Mlodnosky [20]; Meeks og James [21]). Nálægt miðpunktinum rís þessi hálfhringur hæst þvert á leiðina: geislapunktur í hæðarhorni El myndar speglandi slóðir um H·tan El til hliðar við miðpunktinn, á gagnstæðri hlið við geislapunktinn, þ.e. í heitu blettunum sem Eshleman og Mlodnosky og Tilmæli ITU-R P.843 [24] staðsetja um 100 km til hvorrar hliðar. Fjöldi slóða og jónun þeirra vex með sin El [21]. Háð bergmálanna stöðu geislapunktsins var reiknað af Hines [22] og sannreynt á fjórum drífum af Forsyth, Hines og Vogan [23]. Af því leiðir þumalfingursregla SM6FHZ [4]: besta leið hornrétt á stefnuhorn geislapunktsins, loftnetsstefna Az ± 90°, vikmörk ±40-50°.
+TAG|RILIEVO|Fyrirvari DJ5HG [18]: með lágan geislapunkt einmitt í stefnu leiðarinnar gefur formúla McKinleys sterk merki, jafnvel þótt loftsteinarnir séu fáir (Hamborg-Narvík, Kvaðrantítar, um kl. 19 UTC). Reglan "geislapunktur í stefnu leiðarinnar = nánast engin nýtni" gildir því um háan geislapunkt, ekki strokugeislapunkt. Forritið helst varfærið og hækkar ekki nýtnina, en birtir á himinhvelfingunni "LÁGUR GEISLAPUNKTUR Í STEFNU LEIÐARINNAR" þegar virk drífa hefur geislapunktinn undir 20° og innan 30° frá stefnu leiðarinnar. Gatið með geislapunktinn í hvirfilpunkti milli stöðvanna tveggja er staðfest (Kvaðrantítar, Hamborg-Barcelona, um kl. 08 UTC).
+TAG|RILIEVO|Sama regla kemur fram í formúlu DH9GCD eftir DF5HC [16]: virkni = sin(El) · cos(El) · sin(P − Az), með El og Az sem hæðarhorn og stefnuhorn geislapunktsins og P stefnuhorn mótstöðvarinnar. Hún er mest með geislapunktinn í 45° og þvert á leiðina; DF5HC telur geislapunktinn of lágan undir 20° og of háan yfir 70°. Formúlan tekur hvorki tillit til fjarlægðar né hæða, en er gott samanburðarviðmið: í undirflipanum "Spáreikningur › Útreikningur nýtni" birtist hún, í ljósbláu, undir hverri drífu, í prósentum af hámarki hennar (0,5). Þegar geislapunkturinn er yfir 70° séð frá stöðinni bendir forritið á það með ↑ í töflunni og með viðvörun á himinhvelfingunni.
+TAG|RILIEVO|Formúla DH9GCD á sér enga birta frumheimild: hún sameinar þáttinn sin El (fjöldi og jónun slóða) og þáttinn cos El sem táknar fjarlægingu speglunarpunktsins frá miðju leiðarinnar þegar geislapunkturinn hækkar. Reiknuð með geislapunktinn séðan frá miðpunktinum, eins og MS-Soft [25] gerir, endurgerir hún töflu MS-Soft fyrir KP30HV-JO52MM (1324 km, Kvaðrantítar, 4/1/2001) innan 4 punkta milli 16° og 48° hæðarhorns og innan 16 punkta upp í 64°, með sama hámarki kl. 13 UT (96 % á móti 92 %). Hún er áfram samanburðarviðmið.
+H1|6. Frá stökum punkti til nýtni
+H2|6.1 Endurvarpspunktarnir
+TAG|SCELTA|Forritið skiptir E-laginu í punkta á 15 km fresti og heldur aðeins þeim sem báðar stöðvar sjá ofan lágmarkshæðarhorns geislans.
+H2|6.2 Vægi hvers punkts
+TAG|FONTE|Afl undirþéttrar slóðar (McKinley [8]; ITU-R P.843 [24]) vex með λ³ og minnkar með fjarlægðunum R1, R2 frá stöðvunum; φ er helmingur dreifihornsins, β hornið milli slóðarinnar og sléttunnar sem inniheldur stöðvarnar tvær og punktinn:
+EQ|vægi = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
+TAG|SCELTA|Fram að útgáfu 1.6 tók forritið β = 0 fyrir allar slóðir (vægi með cos²φ): slóðir sem skera sléttu leiðarinnar vógu allt að 10-15 dB of mikið. Frá 1.7 má reikna β fyrir hvern punkt og hverja stefnu geislapunkts með valkostinum "Horn β milli slóðar og leiðar (fullur McKinley)", sem er virkur sjálfgefið því hann gefur varfærnustu gildin (engin slóð er ofmetin).
+TAG|SCELTA|Hornið φ er takmarkað við 85° til að forðast óendanleg gildi í strokustefnum.
+TAG|FONTE|Fjöldi loftsteina sem berast í punkt er í hlutfalli við sínus hæðarhorns geislapunktsins í þeim punkti: það er sama leiðrétting og IMO notar til að reikna ZHR [5].
+TAG|SCELTA|Valkosturinn "Lengri slóðir við lágan geislapunkt (DJ5HG)", óvirkur sjálfgefið, í Útreikningi nýtni: DJ5HG [18] bendir á að við lágan geislapunkt falli færri loftsteinar á km² en slóðirnar séu lengri (allt að 100 km nýtanlegar) og uppfylli oftar endurvarpslögmálið. Með valkostinn virkan verður vægið min(sin El, 15/100): nýtanleg þykkt lagsins, 15 km, deilt með sínus hæðarhornsins gefur lengd slóðarinnar, takmarkaða við 100 km. Yfir um 9° hæðarhorni vega áhrifin tvö hvort annað upp; óvirkur helst útreikningurinn varfærinn.
+TAG|SCELTA|Tilbúnar stillingar útreikningsins, í sömu línu: "Varfærin" (sjálfgefin, varfærnustu gildin: hæð frá ratsjá, venjulegar slóðir, með β), "Eins og DJ5HG" (102 km, langar slóðir, með β) og "Sérsniðin", sem velst sjálfkrafa þegar hæðinni, reitnum "frá ratsjá", löngu slóðunum eða horninu β er breytt handvirkt.
+TAG|RILIEVO|Áhrif hornsins β á bestu stefnuna, leið 1000 km: án β lendir hámarkið milli 15° og 90° frá leiðinni eftir hæðarhorni geislapunktsins (30° með geislapunktinn í 30°, hornrétt með geislapunktinn í 60°) og hornréttur geislapunktur gefur 67 % með geislapunktinn í 30°; með β er hámarkið alltaf með geislapunktinn í stefnu leiðarinnar og hornréttur geislapunktur fellur í 15 %. Með β glatast því regla SM6FHZ og DH9GCD um bestu stefnu: þess vegna er β valkostur, virkur sjálfgefið því hann gefur varfærnustu gildin (engin slóð er ofmetin).
+H2|6.3 Prósentan
+TAG|SCELTA|Fyrir hverja stefnu geislapunkts eru lögð saman vægi allra punkta þar sem slóðin endurvarpar. 100% er hagstæðasta staða geislapunktsins fyrir þá leið:
+TAG|SCELTA|Við hlið prósentunnar, sem gildir aðeins fyrir þá leið, gefur forritið nýtnina í dB miðað við fasta viðmið DJ5HG [18]: 0 dB er hámark norður-suður-leiðar, 1000 km, yfir miðbaug með geislapunktinn á miðbaug himins við jafndægur (geislapunkturinn rís í austri, fer um hvirfilpunkt og sest í vestri), reiknað með sömu hæð og sömu vægjum. Þannig má bera saman ólíkar leiðir. DJ5HG segir nákvæmni gilda sinna betri en 6 dB.
+EQ|η = 100 · F(geislapunktur) / F(besta staða)  %
+TAG|RILIEVO|Samanburður við QTFGUI eftir DJ5HG (dæmi úr handbók þess): leiðin Hamborg JO53IM - Barcelona, Kvaðrantítar, 4. janúar. QTFGUI gefur kl. 07:00 UTC loftnetsstefnu 252°, hæðarhorn 1°, hlutfallslega virkni -8 dB, geislapunkt í endurvarpssvæðinu az. 83° el. 75°; kl. 08:00 ekkert endurvarpssvæði; kl. 09:00 loftnetsstefnu 168°, hæðarhorn 2°, -4 dB, geislapunkt az. 292° el. 74°. Líkan forritsins (hæð 102 km eins og QTFGUI) gefur kl. 07:00 241°, 0°, -5,4 dB, geislapunkt az. 77° el. 74°; kl. 08:00 0,6 % (-22 dB), þ.e. nánast ekkert; kl. 09:00 161°, 4°, -4,0 dB, geislapunkt az. 286° el. 75°. Á sömu tímum gefur DH9GCD 26 %, 2 % og 32 %: allar þrjár aðferðirnar sjá gatið kl. 08:00, með geislapunktinn nánast í hvirfilpunkti. [17]
+TAG|RILIEVO|Samanburður við ferla DJ5HG [18] (Bild 8 og 9: frá Hamborg og frá München, Kvaðrantítar, 4. janúar), lesna af grafinu (um ±0,5 dB og ±15 mín.) og borna saman við sjálfvirka prófun forritsins (--prova-dj5hg, eitt gildi á klukkustund). Tímar: gatið með geislapunktinn nálægt hvirfilpunkti fellur á sömu klukkustundir (Barcelona 7,5–8,5 UTC hjá DJ5HG, 7–9 í forritinu; Sófía 6,6–7,8 og 7–8; Narvík 7–8,5 og 7–9); Moskva er lokuð frá 3 til 10 í báðum, og forritið staðfestir texta DJ5HG: frá Hamborg opið til um 2:30, frá München til um 0:30. Loftnetsstefnur: frávik 2–10° (Barcelona 225° og 233° á móti 223° og 235° fyrir gatið, 160° á móti 169° eftir; Moskva 84° á móti 82°, 79° á móti 76°; Narvík stekkur í átt að 338° kl. 20:40 hjá DJ5HG, milli 20 og 21 í forritinu). Styrkur og lögun, við 102 km (meðalfrávik og dæmigert frávik miðað við ferlana): án β og án langra slóða −1,6 og 4,0 dB; með löngum slóðum +1,1 og 4,6 dB; með horninu β −5,4 og 6,2 dB, en með bestu lögunina (3,0 dB að frádregnu meðalfráviki, á móti 3,6): djúpu lágmörkin með lágan geislapunkt koma fram (Barcelona −15,6 dB kl. 17, á móti −16 dB kl. 19:36; Sófía −18,5 dB kl. 20, á móti −14 dB). Með β og löngum slóðum (stillingin "Eins og DJ5HG") −2,2 og 4,7 dB; varfærna stillingin (hæð frá ratsjá, 89,5 km, með β, án langra slóða) gefur −6,9 og 7,6 dB, með lögun 3,3 dB. Án β sér forritið varla lágmarkið með lágan geislapunkt nánast í stefnu leiðarinnar (−8,6 og −10,4 dB): það er tilvikið í fyrirvara DJ5HG, og þess vegna helst viðvörunin.
+TAG|RILIEVO|Skjölun MS-Soft 5.2 [25] skilgreinir nýtni OH5IY sem hlutfallslegan stuðul eingöngu fyrir undirþéttar slóðir, með tveimur þáttum: hæðarhorni geislapunktsins (best um 45°) og horni við leiðina (90° = hámark). Lágmarkið er handvirkt hækkað í 20 % fyrir yfirþéttar slóðir; formúlan er ekki birt. MCG_MS [3] reiknar nýtnina fyrir fjórar fastar stefnur og, þegar reitarkóði mótstöðvarinnar er sleginn inn, einnig fyrir raunverulegu leiðina.
+H1|7. Hvernig á að lesa niðurstöðurnar
+H2|7.1 Hlið endurvarpanna (A / B)
+TAG|SCELTA|Fyrir hverja klukkustund reiknar forritið hvaða hluti endurvarpanna fellur vinstra megin við leiðina (hlið A) og hvaða hluti hægra megin (hlið B). Í klukkustundatöflunni birtist bókstafur ríkjandi hliðar.
+TAG|FONTE|Gott er að hliðra loftnetsstefnunni um 10-30° að þeirri hlið (side-scatter) [1].
+H2|7.2 Leiðarstuðull
+TAG|SCELTA|Stuðullinn tekur saman í eina tölu hve mikið drífurnar í heild eru leiðinni hagstæðar á tiltekinni klukkustund:
+EQ|I = Σ  ZHR · η / 100   (yfir allar virkar drífur)
+H2|7.3 Litur geislapunktanna
+P|Á himinhvelfingunni er punktur geislapunktsins gulur við nýtni ≥ 50% og ZHR ≥ 2, appelsínugulur við nýtni ≥ 20%, dökkrauður undir 20%, grár þegar drífan er nánast óvirk.
+H2|7.4 PREV-svæði í grunnmynd
+TAG|SCELTA|Fyrir sýndan tíma leggur forritið saman, punkt fyrir punkt í E-laginu, framlag hverrar virkrar drífu til nýtninnar (sama speglunarskilyrði og í kafla 5), vegið með ZHR. Punktarnir með að minnsta kosti 3 % af hámarkinu mynda PREV-svæðin, eitt hvorum megin við leiðina, teiknuð í grunnmynd sem sporbaugar: miðja = vegið meðaltal punktanna, ásar = tvöföld dreifing þeirra. Þetta er þumalfingursreglan: ef drífan streymir frá norðri til suðurs falla nýtanlegu slóðirnar til austurs og vesturs. Gula línan sýnir streymisstefnuna (stefnuhorn geislapunktsins) valinnar drífu, eða þeirrar hagstæðustu.
+H2|7.5 Snið séð frá loftnetinu
+TAG|SCELTA|Sniðið sýnir sömu slóðir séðar frá stöðinni með loftnetinu beint að mótstöðinni: lárétt stefnuhorn miðað við mótstöðina (A til vinstri, B til hægri), lóðrétt hæðarhornið. Fyrir hverja drífu eru teknir 14 sterkustu endurvarpspunktarnir; hver slóð er línustrik sem snýr að geislapunktinum, frá 10 km ofan til 10 km neðan hæðar slóðanna (mest 60 km til hvorrar hliðar), þykkara því líklegra sem það er. Einnig eru teiknaðir geisli loftnetsins (hringur við −3 dB umhverfis hæðarhorn geislans), mótstöðin og Hot A / Hot B.
+H1|8. Vinnutíðni og deyfing
+H2|8.1 Reglur milli banda
+TAG|FONTE|Tilraunareglur SM6FHZ [4]: fjöldi og styrkur endurvarpa kvarðast með λ³, lengdin með λ². Í framdreifingu eykst lengdin einnig með sec²φ (τ = λ²·sec²φ / 16π²D, McKinley [8]; OH5IY [25]): Collm-ratsjáin mælir í bakdreifingu (φ = 0), svo á leiðinni þarf að margfalda lengdina með sec²φ í miðpunktinum (×4 við 60°, ×8,5 við 70°, ×33 við 80°).
+TAG|RILIEVO|Hjá McKinley [8] er λ³ afl einstakrar undirþéttrar slóðar, ekki fjöldi slóða. Við fastan þröskuld og með massavísi s kvarðast fjöldi slóða yfir þröskuldi með λ í veldinu 1,5·(s − 1), þ.e. um λ^1,5 fyrir s = 2 (IZ5TEK [26]; OH5IY [25]). Forritið notar k = 3, tilraunareglu SM6FHZ [4], og tekur það fram: með k = 3 verða 1000 loftsteinar/klst. í Collm að um 16 endurvörpum/klst. við 144 MHz, með k = 1,5 um 127. RMOB-athugendur GRAVES-ratsjárinnar á 143,050 MHz [13] telja yfirleitt 20 til 140 bergmál/klst.; rétt gildi k fyrir eigin stöð fæst með samanburði við RMOB (næsti liður).
+TAG|FONTE|Hámarkslengd pings samkvæmt IARU Svæði 1: 1000 ms við 50 MHz, 500 ms við 70 MHz, 100 ms við 144 MHz, 13 ms við 432 MHz [1].
+H2|8.2 Frá ratsjánni til radíóamatörbandsins
+EQ|N(f) = N(36,2 MHz) · (36,2 / f)^k · K        með k = 3
+TAG|RILIEVO|Gildi k fyrir eigin stöð fæst með samanburði við RMOB-athuganda á sama bandi: k = 3 er regla SM6FHZ, kenningin fyrir undirþéttar slóðir með massavísi 2 gefur um 1,5.
+H2|8.3 Leiðardeyfing
+EQ|L = 10 · log10 [ 16π² · R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) / (λ³ · q² · re²) ] − 10 · log10 a1        a1 = exp[ −8π² · r0² / (λ² · sec²φ) ]
+TAG|FONTE|McKinley [8] og Tilmæli ITU-R P.843 [24]: β hornið milli slóðarinnar og sléttu leiðarinnar, a1 stuðull upphafsgeisla slóðarinnar, með log10 r0 = 0,035 h − 3,45 (r0 í m, h í km). Í aflreikningnum er notað β = 90°, óhagstæðasta tilvikið (varfærið gildi), og besta tilvikið, β = 0, er einnig sýnt.
+TAG|FONTE|Viðmið: 172–190 dB úr útreikningum G4BAO, birt af GM8JBJ (eftir Kaiser & Closs [9]); um 200 dB að meðaltali við 144 MHz (OH5IY); lægsta nemanlega merki −130 dBm [1].
+TAG|RILIEVO|Með q = 10¹⁴ rafeindir/m, slóðir í 89,5 km og β = 0 fást við 144 MHz 182–192 dB milli 600 og 2100 km (185 dB við 1000 km). Bilið 172–190 dB, reiknað af John Worsnop G4BAO í doktorsritgerð hans og birt af GM8JBJ [9], nær yfir þessi gildi. Með β = 90° eykst deyfingin um 10 dB við 600 km, 13 dB við 1000 km og 16 dB við 2100 km: 200 dB meðaltal OH5IY sem vitnað er í í greininni [1] liggur milli tilvikanna tveggja. Einnig samkvæmt GM8JBJ finnur G4BAO um 6 dB minna fyrir slóðir samsíða leiðinni.
+TAG|RILIEVO|182 dB í töflu GM8JBJ [9] eru ekki staðfesting: taflan tilgreinir ekki tíðnina, 86,4 dB hennar á hvern legg eru deyfing í tómarúmi yfir 500 km við 1 MHz (liðinn 20 log f vantar: við 144 MHz eru það 129,6 dB) og summa liðanna, 86,4 + 0 − 9 + 86,4, er 163,8 dB en ekki 182. Síðan nefnir hvorki lágmarksgildi né 144 MHz.
+TAG|RILIEVO|Upphafsgeisli í meðalhæð bergmála, h = 124 − 17 log f [24]: r0 = 0,76 m í 95 km fyrir 50 MHz, 0,40 m í 87 km fyrir 144 MHz, 0,21 m í 79 km fyrir 432 MHz. Yfir 1000 km er a1 0,2 dB við 50 MHz, 0,6 dB við 144 MHz og 1,4 dB við 432 MHz (2,9 dB við 600 km). Í fastri hæð DJ5HG, 102 km, myndi hann gefa um 70 dB við 432 MHz, þ.e. ekkert bergmál: þess vegna er notuð meðalhæð bergmála við tíðnina.
+H1|9. Þekktar takmarkanir
+LI|Líkanið tekur aðeins til undirþéttra slóða. Yfirþéttar slóðir (löngu blossarnir) og stakur bakgrunnur eru ekki hluti af nýtninni; staki bakgrunnurinn er táknaður með ratsjárflæðinu.
+LI|Í útreikningi nýtninnar eru loftnetin talin einsátta; raunverulegi geislinn er aðeins notaður til athugunar á Hot-punktunum.
+LI|Rek geislapunktsins og B-stuðlar virkniferilsins eru vinnugildi.
+LI|Prósenturnar ætti að bera saman við MCG_MS, MS-Soft og athuganir á bandinu.
+H1|10. Heimildir
+SRC|1. C. Cerrotta IC8TEM, G. Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese", grein, útgáfa 7 (aðalheimild).
+SRC|2. I. Yrjölä OH5IY - MS-Soft, www.kolumbus.fi/oh5iy (söguleg vefsíða).
+SRC|3. W. Rauh DL5MCG - MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg.
+SRC|4. SM6FHZ - "432 MHz Meteorscatter, Challenges and Techniques", 45th Nordic VUSHF, maí 2025.
+SRC|5. International Meteor Organization - Meteor Shower Calendar 2026 og 2027, www.imo.net.
+SRC|6. J. Meeus - Astronomical Algorithms, 2. útg., Willmann-Bell, 1998.
+SRC|7. Loftsteinaratsjáin í Collm, Háskólinn í Leipzig (LIM) og IAP Kühlungsborn, wetterdaten.meteo.uni-leipzig.de/radar_flux.php.
+SRC|8. D.W.R. McKinley - Meteor Science and Engineering, McGraw-Hill, 1961.
+SRC|9. GM8JBJ - Meteor scatter path loss, hamradio.engineering (eftir Kaiser & Closs, 1952).
+SRC|10. G. Hoch DL6WU - mögnunarferill langra Yagi-loftneta, birtur af W8IO, www.w8io.com.
+SRC|11. J.D. Kraus - Antennas, McGraw-Hill.
+SRC|12. L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data.
+SRC|13. RMOB, Radio Meteor Observatories On Line - www.rmob.org, fréttabréf frá júní 2018.
+SRC|14. AMS Bulletin nr. 203, "The AMS Radiometeor Project", tafla yfir frávik loftnets, birt af W8WN, qsl.net/w8wn/hscw/papers/ms_az_el.html.
+SRC|15. LZ2HV - MSHV, forrit fyrir stafræna MS-hætti (útreikningur Hot A / Hot B).
+SRC|16. J. DF5HC - "Meteorscatter auf UKW", DARC-ráðstefna, janúar 2018 (formúla DH9GCD um bestu stefnu; keiludreifing og HOT-A / HOT-B eftir DJ5HG, "Meteorscatter Propagation", www.vhfdx.de/mseff/MS-Geometrie.pdf; stakir loftsteinar eftir KB0VUK).
+SRC|17. K. von der Heide DJ5HG - QTFGUI, forrit fyrir loftnetsstefnur í norðurljósum, FAI og meteor scatter, með handbókinni "QTFGUI Help" (2007) og gögnunum meteorshowerdata.txt.
+SRC|18. K. von der Heide DJ5HG - "Die Geometrie von Meteorscatterverbindungen", ágúst 2004 (keilulögmál, nýtni miðað við fast viðmið, nýtanlegar slóðir allt að 100 km, hæð 102 km).
+SRC|19. J. Richardson (AMS) - "Some Notes and Equations for Forward Scatter": frávik loftnets 13°, 11°, 10° og 10° við 1000, 1250, 1500 og 2000 km, tafla birt af DJ5HG.
+SRC|20. V.R. Eshleman, R.F. Mlodnosky - "Directional Characteristics of Meteor Propagation Derived from Radar Measurements", Proc. IRE 45(12), 1715-1723, 1957.
+SRC|21. M.L. Meeks, J.C. James - "On the Influence of Meteor-Radiant Distributions in Meteor-Scatter Communication", Proc. IRE 45(12), 1724-1733, 1957.
+SRC|22. C.O. Hines - "Diurnal Variations in the Number of Shower Meteors Detected by the Forward-Scattering of Radio Waves, Part I: Theory", Can. J. Phys. 33, 493-503, 1955.
+SRC|23. P.A. Forsyth, C.O. Hines, E.L. Vogan - sami titill, "Part II: Experiment", Can. J. Phys. 33, 600-606, 1955.
+SRC|24. ITU-R P.843-1 - "Communication by meteor-burst propagation", 1997.
+SRC|25. I. Yrjölä OH5IY - "Meteors & Communication", 2. hluti, skjölun MS-Soft 5.2 (2017).
+SRC|26. R. Pardini IZ5TEK - "Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter", ARI Pisa, 2014.

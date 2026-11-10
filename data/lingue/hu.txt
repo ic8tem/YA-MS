@@ -638,3 +638,6 @@ zona PREV	PREV zóna
 Σ ZHR x effic.	Σ ZHR x hatásf.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (balra)
+FONTE	FORRÁS
+RILIEVO	ELLENŐRZÉS
+SCELTA	VÁLASZTÁS

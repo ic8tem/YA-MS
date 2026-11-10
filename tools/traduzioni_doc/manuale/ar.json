@@ -4,7 +4,6 @@
  "Indice": "الفهرس",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "(إذا كان الفهرس فارغاً: في Word، انقر بزر الفأرة الأيمن على الفهرس > تحديث الحقل.)",
  "1. Convenzioni": "1. الاصطلاحات",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "ترافق كل خطوة من خطوات الحساب تسمية تبيّن مصدرها. المصادر مرقّمة في الفصل 11.",
  "[FONTE] ": "[مصدر] ",
  "il passo riprende una fonte citata.": "الخطوة مأخوذة من مصدر مذكور.",
  "[RILIEVO] ": "[تحقق] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - \"Meteors & Communication\"، الجزء 2، وثائق MS-Soft 5.2 (2017).",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - دليل الحسابات - صفحة "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - دليل الحسابات - صفحة ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "ترافق كل خطوة من خطوات الحساب تسمية تبيّن مصدرها. المصادر مرقّمة في الفصل 12."
 }

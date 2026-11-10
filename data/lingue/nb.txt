@@ -637,3 +637,6 @@ zona PREV	PREV-sone
 Σ ZHR x effic.	Σ ZHR x effekt.
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (venstre)
+FONTE	KILDE
+RILIEVO	KONTROLL
+SCELTA	VALG

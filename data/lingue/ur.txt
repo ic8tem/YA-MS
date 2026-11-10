@@ -637,3 +637,6 @@ zona PREV	PREV زون
 Σ ZHR x effic.	Σ ZHR x کارکردگی
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (بائیں)
+FONTE	ماخذ
+RILIEVO	جانچ
+SCELTA	انتخاب

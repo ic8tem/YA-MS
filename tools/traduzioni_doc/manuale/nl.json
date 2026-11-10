@@ -4,7 +4,6 @@
  "Indice": "Inhoud",
  "(Se l'indice è vuoto: in Word, clic destro sull'indice > Aggiorna campo.)": "(Als de inhoudsopgave leeg is: in Word rechtsklikken op de inhoudsopgave > Veld bijwerken.)",
  "1. Convenzioni": "1. Conventies",
- "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 11.": "Elke stap van de berekening heeft een label dat de herkomst aangeeft. De bronnen zijn genummerd in hoofdstuk 11.",
  "[FONTE] ": "[BRON] ",
  "il passo riprende una fonte citata.": "de stap neemt een geciteerde bron over.",
  "[RILIEVO] ": "[CONTROLE] ",
@@ -205,5 +204,6 @@
  "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.": "ITU-R P.843-1 - \"Communication by meteor-burst propagation\", 1997.",
  "I. Yrjölä OH5IY - \"Meteors & Communication\", parte 2, documentazione di MS-Soft 5.2 (2017).": "I. Yrjölä OH5IY - \"Meteors & Communication\", deel 2, documentatie van MS-Soft 5.2 (2017).",
  "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.": "R. Pardini IZ5TEK - \"Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter\", ARI Pisa, 2014.",
- "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Handboek van de berekeningen - pagina "
+ "YA-MS - Manuale dei calcoli - pagina ": "YA-MS - Handboek van de berekeningen - pagina ",
+ "Ogni passo del calcolo è accompagnato da un'etichetta che ne indica l'origine. Le fonti sono numerate nel capitolo 12.": "Elke stap van de berekening heeft een label dat de herkomst aangeeft. De bronnen zijn genummerd in hoofdstuk 12."
 }

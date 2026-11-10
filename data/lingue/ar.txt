@@ -637,3 +637,6 @@ zona PREV	منطقة PREV
 Σ ZHR x effic.	Σ ZHR x الكفاءة
 Σ {0:F1}	Σ {0:F1}
 ← A  (sinistra)	← A  (يسار)
+FONTE	مصدر
+RILIEVO	تحقق
+SCELTA	اختيار

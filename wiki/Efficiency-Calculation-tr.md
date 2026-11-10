@@ -53,7 +53,7 @@ Tüm adımlar [hesap kılavuzunda](Efficiency-Explanation-tr) (`doc/YA-MS_manual
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-DJ5HG'nin QTFGUI programı da aynı yasaya dayanır (koni saçılması). Koşul σ = 0,05 rad (yaklaşık 3°) Gauss toleransıyla kabul edilir – *programın seçimi*:
+DJ5HG'nin QTFGUI programı ve *"Die Geometrie von Meteorscatterverbindungen"* (2004) başlıklı metni de aynı yasaya dayanır: iz, ekseni kendisi olan bir koni üzerine saçılır ve onu yalnızca koni üzerindeki bir alıcı duyar. İdeal bir iz için koninin duvarı çok incedir (binlerce dalga boyu uzunluğunda bir ışıyıcı); program koşulu σ = 0,05 rad (yaklaşık 3°) Gauss toleransıyla kabul eder; bu tolerans ideal koninin görmediklerini temsil eder: yağmur radyantlarının dağılımı (GMN ölçümlerine göre 0,3–1,4°), rüzgârın büktüğü izler ve izlerin sonlu uzunluğu – *programın seçimi*:
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 Bir noktaya ulaşan meteor sayısı, oradaki radyant elevasyonunun sinüsüyle (ŝ·û_P) orantılıdır; IMO'nun ZHR için kullandığı düzeltmenin aynısı.
 
+**"Alçak radyantla daha uzun izler (DJ5HG)" seçeneği** (grafiğin üstündeki onay kutusu, varsayılan olarak kapalı, araç ipucuyla): DJ5HG, radyant alçakken km² başına daha az meteor düştüğünü, ancak izlerin daha uzun olduğunu (100 km'ye kadar yararlı) ve yansıma yasasını daha sık sağladığını belirtir. Seçenek açıkken ağırlık min(sin El, 15/100) olur: yararlı katman kalınlığı olan 15 km, elevasyonun sinüsüne bölünerek iz uzunluğunu verir; üst sınır 100 km'dir. Yaklaşık 9°'nin üstünde iki etki birbirini dengeler. Kapalıyken hesap temkinli kalır.
+
 **3. Toplam ve yüzde.** İz yüksekliğinde her 15 km'de bir nokta, yalnızca iki istasyonun da onları lob elevasyonunun üstünde gördüğü yerlerde (*seçim*). %100, o yol için radyantın en elverişli konumudur:
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 F her yol için bir kez, bir yönler ızgarası üzerinde (azimut her 5°, elevasyon her 2,5°) hesaplanır ve enterpole edilir.
+
+**dB cinsinden verim (DJ5HG referansı).** Yüzde yalnızca o yol için radyantın en iyi konumuna görelidir. Farklı yolları karşılaştırmak için program verimi DJ5HG'nin sabit referansına göre dB cinsinden de verir: 0 dB, ekvatoru kesen 1000 km'lik kuzey–güney yolunda, ekinoksta radyant gök ekvatorundayken elde edilen en yüksek değerdir; aynı yükseklik ve aynı ağırlıklarla hesaplanır. DJ5HG kendi değerlerinin 6 dB'den daha iyi olduğunu belirtir.
 
 **4. Taraf ve endeks.**
 
@@ -85,7 +89,9 @@ Tablodaki harf, oranı büyük olan taraftır. *Programın seçimleri (kılavuz 
 
 ## DH9GCD karşılaştırması
 
-Bağımsız bir denetim: **DH9GCD**'nin en iyi yön formülü, **DF5HC**'nin aktarımıyla (DARC konferansı, Ocak 2018); El ve Az istasyonunuzdan görülen radyant elevasyonu ve azimutu, P karşı istasyonun azimutu:
+En iyi yön için birincil kaynaklar Eshleman & Mlodnosky ve Meeks & James (Proc. IRE, 1957), Hines (1955) ve onun Forsyth, Hines & Vogan (1955) tarafından yapılan deneysel doğrulamasıdır: yalnızca saçılma açısının açıortayına dik olan gökyüzü yarım çemberindeki radyantlar yararlıdır, iz sayısı sin El ile artar ve orta noktanın yakınında yararlı izler radyantın karşı tarafında, yana doğru yaklaşık H·tan El uzağa düşer. DJ5HG bir çekince ekler: **alçak** bir radyant tam yol boyunca olduğunda McKinley'in formülü güçlü sinyaller verir (Hamburg–Narvik, Quadrantidler, yaklaşık 19 UTC); dolayısıyla "yolla aynı doğrultudaki radyant = neredeyse sıfır" yalnızca yüksek bir radyant için geçerlidir; program temkinli kalır ve *YOL BOYUNCA ALÇAK RADYANT* uyarısını gösterir.
+
+Bağımsız bir denetim: **DH9GCD**'nin en iyi yön formülü, **DF5HC**'nin aktarımıyla (DARC konferansı, Ocak 2018) – yayımlanmış bir birincil kaynağı yoktur –; El ve Az istasyonunuzdan görülen radyant elevasyonu ve azimutu, P karşı istasyonun azimutu:
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -99,6 +105,7 @@ Radyant 45°'de ve yola yandan baktığında en büyüktür. DF5HC radyantı 20�
 |---|---|
 | SM6FHZ kuralı (VUSHF 2025): en iyi yol radyant azimutuna diktir, yön = radyant az ±90°, tolerans ±40–50° | Model tarafından yeniden üretilir; radyant yolla aynı hizada ve gökyüzünde yüksekse verim neredeyse sıfırdır |
 | DJ5HG'nin QTFGUI'si, Hamburg JO53IM – Barselona, Kuadrantidler, 4 Ocak (kılavuzundaki örnek) | QTFGUI: 07:00 yön 252°, −8 dB; 08:00 yansıma bölgesi yok; 09:00 yön 168°, −4 dB. YA-MS (QTFGUI gibi 102 km yükseklik): 07:00 241°, −5,4 dB; 08:00 %0,6 (−22 dB); 09:00 161°, −4,0 dB. DH9GCD: %26, %2, %32. Üç yöntem de, radyant neredeyse zenitteyken 08:00 boşluğunu görür |
+| DJ5HG eğrileri (*Die Geometrie…*, Bild 8–9: Hamburg ve Münih'ten, Quadrantidler, 4 Ocak; grafikten okunmuş, yaklaşık ±0,5 dB ve ±15 dk) ile otomatik test `--prova-dj5hg` (saatte bir değer) karşılaştırması | Zamanlama: radyant zenite yakınken oluşan boşluk aynı saatlere düşer (Barselona 07:30–08:30'a karşı 07–09; Sofya 06:36–07:48'e karşı 07–08; Narvik 07–08:30'a karşı 07–09); Moskova her ikisinde de 03–10 arası kapalıdır, DJ5HG'nin yazdığı gibi Hamburg'dan yaklaşık 02:30'a, Münih'ten yaklaşık 00:30'a kadar açıktır. Yönler: 2–10° fark. Seviyeler: 102 km yükseklik ve daha uzun izler seçeneği açıkken değerlerin neredeyse tamamı eğrilere 2–3 dB yakındır; seçenek kapalıyken 3–7 dB aşağıdadır, ancak öğleden sonraki minimumlar daha yakındır (Moskova 15'te −9 dB, 18'de −11,5 dB'ye karşı −9 ve −12,5). Temel fark: DJ5HG, radyant en alçakta ve yolla neredeyse aynı doğrultudayken derin bir minimum gösterir (Barselona 19:36'da −16 dB, Sofya 20'de −14 dB); YA-MS bunu zar zor gösterir (seçenek kapalıyken −8,6 ve −10,4 dB, açıkken −1 ve −3 dB). Bu, DJ5HG'nin yol boyunca alçak radyant konusundaki kendi çekincesidir: uyarı bu yüzden vardır ve seçenek varsayılan olarak kapalıdır |
 | 15 km yerine her 5 km'de örnekleme | yüzdeler 0,3 puandan az değişir |
 
-> OH5IY ve MCG_MS'nin kullandığı ölçek ayrıntılı olarak bilinmiyor (MS-Soft kılavuzlarına erişilemiyor): yüzdeleri eşdeğer saymadan önce bu programlarınkilerle karşılaştırın. Model yalnızca underdense izleri, izotropik antenlerle dikkate alır; overdense patlamalar ve sporadik arka plan verimde yer almaz (sporadik arka plan radar akısıyla temsil edilir).
+> MS-Soft 5.2 belgeleri OH5IY'nin verimini yalnızca underdense izler için göreli bir endeks olarak tanımlar; iki çarpanı vardır (radyant elevasyonu, en iyisi yaklaşık 45°, ve yolla açı, en iyisi 90°) ve overdense izler için elle %20'ye yükseltilmiş bir minimumu vardır; formül yayımlanmamıştır. MCG_MS bunu dört sabit yön için ve DX lokatörü verildiğinde gerçek yol için hesaplar. Model yalnızca underdense izleri, izotropik antenlerle dikkate alır; overdense patlamalar ve sporadik arka plan verimde yer almaz (sporadik arka plan radar akısıyla temsil edilir).

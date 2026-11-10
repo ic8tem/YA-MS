@@ -69,15 +69,15 @@ Om 1 − |p0|² < 0 är sträckan längre än 2·d_H och stationerna ser **ingen
 
 ## Hot A och Hot B
 
-**Källa:** reflexerna koncentreras till två zoner ("hot spots") omkring **50–150 km på var sida om mittpunkten**. Detta är grunden för tabellen över antennförskjutning i AMS Bulletin No. 203, som W8WN tagit upp (förskjutning 10° för sträckor på 1500 och 1800 km); MSHV av LZ2HV använder samma kriterium.
+**Källa:** reflexerna från sporadiska meteorer koncentreras till två zoner ("hot spots") på var sida om mittpunkten. J. Richardson (AMS) anger i tabellen som DJ5HG citerar (*Die Geometrie von Meteorscatterverbindungen*, 2004) antennförskjutningen från den direkta riktningen: **13° vid 1000 km, 11° vid 1250 km, 10° vid 1500 och 2000 km**. AMS Bulletin No. 203, som W8WN tagit upp, anger 10° vid 1500 och 1800 km.
 
-**Val:** Hot A och Hot B är punkterna på avståndet s från mittpunkten M, vinkelrätt mot sträckan (s = 150 km, justerbart 30–400 km); A till vänster sett från din station mot DX, B till höger [21]. Förskjutningen sett från stationen är ungefär [22]:
+**Val:** Hot A och Hot B är punkterna på avståndet s från mittpunkten M, vinkelrätt mot sträckan. Med *auto (AMS)* ikryssat (standard) fås s ur förskjutningen i Richardsons tabell, linjärt interpolerad (13° under 1000 km, 10° över 2000 km): s = (D/2)·tan(förskjutning). Utan kryss anges s för hand, 30–400 km (MSHV använder 150 km); A till vänster sett från din station mot DX, B till höger [21]. Förskjutningen sett från stationen är ungefär [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Kontroll:** JN70CN–IN78UO, D = 1710 km: 6,7° med s = 100 km, **10,0° med s = 150 km** (samma som MSHV och AMS/W8WN), 13,2° med s = 200 km.
+**Kontroll:** med AMS-tabellen 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, samma som de 150 km som användes tidigare och av MSHV; på korta sträckor flyttar tabellen hot spots närmare mittpunkten.
 
 ## Underdens sträckdämpning
 

@@ -69,15 +69,15 @@ Ja 1 − |p0|² < 0, trase ir garāka par 2·d_H, un stacijas neredz **nevienu k
 
 ## Hot A un Hot B
 
-**Avots:** atstarojumi koncentrējas divās zonās ("hot spot") ap **50–150 km abpus viduspunktam**. Tas ir AMS Bulletin Nr. 203 antenas nobīžu tabulas pamatā, ko pārņēmis W8WN (10° nobīde 1500 un 1800 km trasēm); LZ2HV MSHV izmanto to pašu kritēriju.
+**Avots:** sporādisko meteoru atstarojumi koncentrējas divās zonās ("hot spot") abpus viduspunktam. J. Richardson (AMS) tabulā, ko citē DJ5HG (*Die Geometrie von Meteorscatterverbindungen*, 2004), dod antenas nobīdi no tiešā virziena: **13° pie 1000 km, 11° pie 1250 km, 10° pie 1500 un 2000 km**. AMS Bulletin Nr. 203, ko pārņēmis W8WN, dod 10° pie 1500 un 1800 km.
 
-**Izvēle:** Hot A un Hot B ir punkti attālumā s no viduspunkta M, perpendikulāri trasei (s = 150 km, regulējams 30–400 km); A pa kreisi, skatoties no tavas stacijas uz DX, B pa labi [21]. Nobīde, kā to redz stacija, ir aptuveni [22]:
+**Izvēle:** Hot A un Hot B ir punkti attālumā s no viduspunkta M, perpendikulāri trasei. Ja atzīmēts *auto (AMS)* (noklusējums), s iegūst no Richardson tabulas nobīdes, lineāri interpolējot (13° zem 1000 km, 10° virs 2000 km): s = (D/2)·tan(nobīde). Ja nav atzīmēts, s ievada ar roku, 30–400 km (MSHV izmanto 150 km); A pa kreisi, skatoties no tavas stacijas uz DX, B pa labi [21]. Nobīde, kā to redz stacija, ir aptuveni [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Pārbaude:** JN70CN–IN78UO, D = 1710 km: 6,7° ar s = 100 km, **10,0° ar s = 150 km** (tāpat kā MSHV un AMS/W8WN), 13,2° ar s = 200 km.
+**Pārbaude:** ar AMS tabulu 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, tāpat kā iepriekš un MSHV izmantotie 150 km; īsās trasēs tabula pietuvina hot spot viduspunktam.
 
 ## Zema blīvuma trases vājinājums
 

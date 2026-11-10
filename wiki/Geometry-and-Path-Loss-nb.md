@@ -69,15 +69,15 @@ Hvis 1 − |p0|² < 0, er strekningen lengre enn 2·d_H, og stasjonene ser **ing
 
 ## Hot A og Hot B
 
-**Kilde:** refleksjonene samles i to soner («hot spots») ca. **50–150 km på hver side av midtpunktet**. Dette er grunnlaget for tabellen over antenneforskyvning i AMS Bulletin nr. 203, som W8WN har tatt opp (forskyvning på 10° for strekninger på 1500 og 1800 km); MSHV av LZ2HV bruker samme kriterium.
+**Kilde:** refleksjonene fra sporadiske meteorer samles i to soner («hot spots») på hver side av midtpunktet. J. Richardson (AMS) oppgir i tabellen som DJ5HG siterer (*Die Geometrie von Meteorscatterverbindungen*, 2004), antenneforskyvningen fra den direkte retningen: **13° ved 1000 km, 11° ved 1250 km, 10° ved 1500 og 2000 km**. AMS Bulletin nr. 203, som W8WN har tatt opp, oppgir 10° ved 1500 og 1800 km.
 
-**Valg:** Hot A og Hot B er punktene i avstand s fra midtpunktet M, vinkelrett på strekningen (s = 150 km, justerbart 30–400 km); A til venstre sett fra stasjonen din mot DX, B til høyre [21]. Forskyvningen sett fra stasjonen er omtrent [22]:
+**Valg:** Hot A og Hot B er punktene i avstand s fra midtpunktet M, vinkelrett på strekningen. Med *auto (AMS)* avkrysset (standard) kommer s fra forskyvningen i Richardsons tabell, lineært interpolert (13° under 1000 km, 10° over 2000 km): s = (D/2)·tan(forskyvning). Uten avkrysning legges s inn for hånd, 30–400 km (MSHV bruker 150 km); A til venstre sett fra stasjonen din mot DX, B til høyre [21]. Forskyvningen sett fra stasjonen er omtrent [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Kontroll:** JN70CN–IN78UO, D = 1710 km: 6,7° med s = 100 km, **10,0° med s = 150 km** (samme som MSHV og AMS/W8WN), 13,2° med s = 200 km.
+**Kontroll:** med AMS-tabellen 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, det samme som de 150 km som ble brukt før og brukes av MSHV; på korte strekninger flytter tabellen hot spots nærmere midtpunktet.
 
 ## Demping for underdense spor
 

@@ -26,7 +26,7 @@ Di atas tab terdapat tiga baris kontrol yang berlaku untuk semua tab. Tombol **K
 | **Ketinggian jejak km** + **dari radar** | Ketinggian jejak meteor (bawaan 90 km). Jika *dari radar* dicentang, dipakai ketinggian yang paling sering (modus) yang diukur radar Collm; lihat [Fluks radar](Radar-Flux-id). |
 | **Elevasi lobus °** | Elevasi terendah lobus antena Anda (0° = cakrawala). Hanya titik lapisan E yang terlihat oleh kedua stasiun di atas elevasi ini yang dipakai. |
 | **Antena Yagi: boom m** | Panjang boom Yagi Anda. Program menampilkan panjangnya dalam λ, penguatan (kurva DL6WU) dan lobus −3 dB, horizontal dan vertikal; lihat [Geometri dan redaman](Geometry-and-Path-Loss-id#penguatan-dan-lobus-antena). Di bawah 2 λ perkiraannya kasar. |
-| **Hot spot dari titik tengah km** | Jarak Hot A dan Hot B dari titik tengah, 30–400 km (bawaan 150 km, seperti AMS Bulletin 203 / W8WN / MSHV). |
+| **Hot spot dari titik tengah km** + **auto (AMS)** | Jarak Hot A dan Hot B dari titik tengah. Dengan *auto (AMS)* dicentang (bawaan), jarak mengikuti tabel offset antena J. Richardson (AMS) yang dikutip DJ5HG: 13° pada 1000 km, 11° pada 1250 km, 10° pada 1500 dan 2000 km (sekitar 115, 121, 132, dan 176 km dari titik tengah). Hapus centang untuk memasukkan 30–400 km secara manual (MSHV memakai 150 km). |
 
 **Baris 3 – waktu**
 

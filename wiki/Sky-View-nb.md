@@ -8,7 +8,7 @@
 
 Denne underfanen (himmelhvelvingen fra tidligere versjoner) samler på én skjerm **hvor** de nyttige sporene er nå, og **hvor** antennen skal peke. Til venstre **grunnrisset** av strekningen; til høyre svermlisten, en liten himmelhvelving med radiantene, beregningsteksten og **snittet** sett fra antennen din. Alt gjelder tidspunktet som er valgt med *Beregningsdato (UTC)* og glidebryteren *Timer (−12 til +36 t)* (sanntid som standard, i steg på 15 minutter).
 
-En **stripe over grunnrisset** oppsummerer beregningen for det tidspunktet: dato og klokkeslett (*nå* eller timer fra nå), **strekningsindeksen Σ ZHR×η**, den **mest nyttige svermen** med ZHR og effektivitet, antall svermer over horisonten og **anbefalt Hot** med asimut.
+En **stripe over grunnrisset** oppsummerer beregningen for det tidspunktet: dato og klokkeslett (*nå* eller timer fra nå), **strekningsindeksen Σ ZHR×η**, den **mest nyttige svermen** med ZHR og effektivitet (også i dB i forhold til DJ5HG-referansen, se [Effektivitetsberegning](Efficiency-Calculation-nb)), antall svermer over horisonten og **anbefalt Hot** med asimut.
 
 I den lille himmelhvelvingen viser en **oransje linje** gjennom senit alltid de **riktige antenneretningene**, vinkelrett på forflytningen til den valgte svermen (eller den gunstigste): radiantens asimut ±90°, merket *antenne NNN°* i begge ender, med toleransen ±45° som tynne linjer. Korte oransje streker på kanten viser de vinkelrette retningene for de andre nyttige svermene.
 
@@ -19,7 +19,7 @@ Et kart over Europa sett ovenfra (**Ø til høyre**) med en gradskala rundt. Bil
 | Element | Tegning |
 |---|---|
 | Strekning / DX | Grønn linje fra stasjonen din til motstasjonen (alltid den faktiske storsirkelstrekningen mellom lokatorene) |
-| **Hot A / Hot B** | Punkter 150 km (justerbart) på hver side av midtpunktet, vinkelrett på strekningen. **Rød = anbefalt**, **rosa = utenfor antenneloben**, **grå = innenfor loben** (med en advarsel) |
+| **Hot A / Hot B** | Punkter på hver side av midtpunktet, vinkelrett på strekningen, i avstanden som AMS-forskyvningstabellen gir (eller lagt inn for hånd). **Rød = anbefalt**, **rosa = utenfor antenneloben**, **grå = innenfor loben** (med en advarsel) |
 | Antennelobe | Den horisontale −3 dB-loben rundt antennens asimut (antennen peker alltid mot DX), merket *lobe …°* |
 | Grenser for fellessonen | Svake *gr. A* / *gr. B*-punkter og de to sirklene der hver stasjons horisont møter E-laget (se [Geometri](Geometry-and-Path-Loss-nb#grenser-for-fellessonen)) |
 | Svermens forflytning | **Gul linje**: retningen den valgte svermen (eller den gunstigste) sveiper over himmelen i, dvs. radiantens asimut |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **ADVARSEL: Hot A (og/eller Hot B) ligger innenfor antenneloben …** | Hot spot-et ligger innenfor ±θ/2 av antennens asimut (θ = horisontal −3 dB-lobe): med denne retningen er det allerede dekket. Vist i grått på kartet. Anbefalt Hot forblir rødt. |
 | **RADIANTEN FOR HØYT (over 70°)** | En nyttig radiant står over 70° sett fra stasjonen din: sporene faller nesten loddrett og reflekterer lite mot strekningen (DF5HC, DH9GCD). De samme timene merkes med ↑ i [timetabellen](Efficiency-Calculation-nb#timetabell). |
+| **LAV RADIANT LANGS STREKNINGEN** | En aktiv radiant står under 20° og innenfor 30° av strekningens retning. Den beregnede effektiviteten forblir lav (forsiktig), men DJ5HG venter sjeldne, sterke refleksjoner fra streifende spor på linje med strekningen (Hamburg–Narvik, Kvadrantidene, ca. 19 UTC): verdt å lytte etter. |
 | *Ingen felles sone i E-laget* | Strekningen er lengre enn dobbelt rekkevidde i sporhøyden: de to stasjonene ser ingen felles del av E-laget (enkelthopp umulig). |
 | *Ingen anbefalt Hot* | Nesten ingen aktive svermer akkurat nå. |
 

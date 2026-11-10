@@ -61,7 +61,7 @@ Als de schaal van de hoogtegrafiek verandert, waarschuwt het programma: *de hoog
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-Experimentele regels van **SM6FHZ** (VUSHF 2025): aantal en intensiteit van de reflecties schalen met λ³, de duur met λ²; de λ³-afhankelijkheid is dezelfde als in de vergelijking van McKinley voor onderdichte sporen. Ook de maximale pingduur volgens IARU Regio 1 wordt getoond (1000 ms op 50 MHz, 500 ms op 70 MHz, 100 ms op 144 MHz, 13 ms op 432 MHz). De waarden zijn indicatief, te vergelijken met de ervaring in de lucht. De stationsfactor K en de vergelijking met RMOB staan in [Experimentele voorspelling](Experimental-Forecasts-nl).
+Experimentele regels van **SM6FHZ** (VUSHF 2025): aantal en intensiteit van de reflecties schalen met λ³, de duur met λ² (bij McKinley is λ³ het vermogen van één spoor; het aantal sporen schaalt ongeveer met λ^1,5, en bij voorwaartse verstrooiing groeit de duur bovendien met sec²φ: zie [Experimentele voorspelling](Experimental-Forecasts-nl)). Ook de maximale pingduur volgens IARU Regio 1 wordt getoond (1000 ms op 50 MHz, 500 ms op 70 MHz, 100 ms op 144 MHz, 13 ms op 432 MHz). De waarden zijn indicatief, te vergelijken met de ervaring in de lucht. De stationsfactor K en de vergelijking met RMOB staan in [Experimentele voorspelling](Experimental-Forecasts-nl).
 
 ## Zonder verbinding
 

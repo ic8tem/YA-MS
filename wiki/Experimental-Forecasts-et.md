@@ -28,10 +28,10 @@ Juhtnuppude all olev oranž rida näitab reeglit praeguste numbritega, nt *N(144
 ## Radarilt amatöörsagedusalale
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Allikas:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45. Nordic VUSHF, mai 2025 – peegelduste arv ja intensiivsus skaleeruvad **λ³** järgi, kestus **λ²** järgi (432 MHz on 14–15 dB madalam kui 144 MHz ja kestab 1/9). **Kontroll:** λ³ sõltuvus on sama mis McKinley alatiheda jälje võrrandis. Kui k = 3, muutuvad Collmi 1000 meteoori tunnis umbes **16 peegelduseks tunnis 144 MHz-l**; GRAVESi RMOB-i vaatlejad sagedusel 143,050 MHz loendavad tavaliselt **20 kuni 140 kaja tunnis** (RMOB-i bülletään, juuni 2018): suurusjärk on ühilduv ja erinevus on jaama tegur K. (Juhendi võrrandid 44–45.)
+**Allikas:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45. Nordic VUSHF, mai 2025 – peegelduste arv ja intensiivsus skaleeruvad **λ³** järgi, kestus **λ²** järgi (432 MHz on 14–15 dB madalam kui 144 MHz ja kestab 1/9). **Kontroll:** McKinley võrrandis on λ³ ühe alatiheda jälje võimsus, mitte jälgede arv; massiindeksi 2 korral skaleerub fikseeritud läve ületavate jälgede arv ligikaudu λ^1,5 järgi (IZ5TEK; OH5IY). Programm jätab alles k = 3, SM6FHZ eksperimentaalse reegli, ja ütleb seda; sinu jaamale sobiv k tuleb võrdlusest RMOB-iga. Edasihajumisel kasvab kestus lisaks koos sec²φ-ga (McKinley; OH5IY): Collm mõõdab tagasihajumisel (φ = 0), seega korrutab prognoos trassi keskpunkti sec²φ-ga (×4 60° juures, ×8,5 70° juures, ×33 80° juures). Kui k = 3, muutuvad Collmi 1000 meteoori tunnis umbes **16 peegelduseks tunnis 144 MHz-l**; GRAVESi RMOB-i vaatlejad sagedusel 143,050 MHz loendavad tavaliselt **20 kuni 140 kaja tunnis** (RMOB-i bülletään, juuni 2018): suurusjärk on ühilduv ja erinevus on jaama tegur K. (Juhendi võrrandid 44–45.)
 
 ## Järgmised 24 tundi
 

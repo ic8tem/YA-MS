@@ -53,7 +53,7 @@ Semua langkah ada di [manual perhitungan](Efficiency-Explanation-id) (`doc/YA-MS
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-Hukum yang sama mendasari QTFGUI karya DJ5HG (hamburan kerucut). Syarat ini diterima dengan toleransi Gauss σ = 0,05 rad (sekitar 3°) – *pilihan program*:
+Hukum yang sama mendasari QTFGUI karya DJ5HG dan tulisannya *"Die Geometrie von Meteorscatterverbindungen"* (2004): jejak menghamburkan pada sebuah kerucut yang porosnya adalah jejak itu sendiri, dan hanya penerima yang berada pada kerucut yang mendengarnya. Untuk jejak ideal, dinding kerucut sangat tipis (radiator sepanjang ribuan panjang gelombang); program menerima syarat ini dengan toleransi Gauss σ = 0,05 rad (sekitar 3°), yang mewakili hal-hal yang tidak dilihat kerucut ideal: sebaran radian hujan meteor (0,3–1,4° menurut pengukuran GMN), jejak yang dibengkokkan angin, dan panjang jejak yang terbatas – *pilihan program*:
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 Jumlah meteor yang mencapai sebuah titik sebanding dengan sinus elevasi radian di titik itu (ŝ·û_P), koreksi yang sama yang dipakai IMO untuk ZHR.
 
+**Opsi "Jejak lebih panjang dengan radian rendah (DJ5HG)"** (kotak centang di atas grafik, nonaktif secara bawaan, dengan tooltip): DJ5HG mencatat bahwa dengan radian rendah lebih sedikit meteor jatuh per km², tetapi jejaknya lebih panjang (hingga 100 km berguna) dan lebih sering memenuhi hukum pantulan. Dengan opsi aktif, bobot menjadi min(sin El, 15/100): tebal lapisan yang berguna, 15 km, dibagi sinus elevasi memberikan panjang jejak, dibatasi 100 km. Di atas sekitar 9° kedua efek saling meniadakan. Jika nonaktif, perhitungan tetap hati-hati.
+
 **3. Jumlah dan persentase.** Titik setiap 15 km pada ketinggian jejak, hanya di tempat yang terlihat oleh kedua stasiun di atas elevasi lobus (*pilihan*). 100 % adalah posisi radian paling menguntungkan untuk lintasan tersebut:
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 F dihitung sekali per lintasan pada kisi arah (azimut setiap 5°, elevasi setiap 2,5°) lalu diinterpolasi.
+
+**Efisiensi dalam dB (acuan DJ5HG).** Persentase hanya relatif terhadap posisi radian terbaik untuk lintasan itu. Untuk membandingkan lintasan yang berbeda, program juga memberikan efisiensi dalam dB relatif terhadap acuan tetap DJ5HG: 0 dB adalah maksimum lintasan utara–selatan 1000 km yang melintasi khatulistiwa dengan radian di ekuator langit saat ekuinoks, dihitung dengan ketinggian dan bobot yang sama. DJ5HG menyatakan nilainya lebih baik dari 6 dB.
 
 **4. Sisi dan indeks.**
 
@@ -85,7 +89,9 @@ Huruf di tabel adalah sisi dengan fraksi lebih besar. *Pilihan program (manual p
 
 ## Perbandingan DH9GCD
 
-Pemeriksaan independen: rumus arah terbaik dari **DH9GCD**, dilaporkan oleh **DF5HC** (konferensi DARC, Januari 2018), dengan El dan Az elevasi dan azimut radian dilihat dari stasiun Anda dan P azimut stasiun DX:
+Sumber primer untuk arah terbaik adalah Eshleman & Mlodnosky dan Meeks & James (Proc. IRE, 1957), Hines (1955) serta pemeriksaan eksperimentalnya oleh Forsyth, Hines & Vogan (1955): hanya radian pada setengah lingkaran langit yang tegak lurus terhadap garis bagi sudut hamburan yang berguna, jumlah jejak bertambah dengan sin El, dan di dekat titik tengah jejak yang berguna jatuh sekitar H·tan El ke samping, di sisi yang berlawanan dengan radian. DJ5HG menambahkan catatan: dengan radian **rendah** tepat sepanjang lintasan, rumus McKinley memberikan sinyal kuat (Hamburg–Narvik, Quadrantid, sekitar 19 UTC), sehingga "radian searah lintasan = hampir nol" hanya berlaku untuk radian tinggi; program tetap hati-hati dan menampilkan peringatan *RADIAN RENDAH SEPANJANG LINTASAN*.
+
+Pemeriksaan independen: rumus arah terbaik dari **DH9GCD**, dilaporkan oleh **DF5HC** (konferensi DARC, Januari 2018) – tidak memiliki sumber primer yang diterbitkan – dengan El dan Az elevasi dan azimut radian dilihat dari stasiun Anda dan P azimut stasiun DX:
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -99,6 +105,7 @@ Nilainya maksimum saat radian berada di 45° dan menyamping terhadap lintasan. D
 |---|---|
 | Aturan SM6FHZ (VUSHF 2025): lintasan terbaik tegak lurus azimut radian, arah = az radian ±90°, toleransi ±40–50° | Direproduksi oleh model; dengan radian sejajar lintasan dan tinggi di langit, efisiensinya hampir nol |
 | QTFGUI karya DJ5HG, Hamburg JO53IM – Barcelona, Quadrantid, 4 Januari (contoh dalam manualnya) | QTFGUI: 07:00 arah 252°, −8 dB; 08:00 tidak ada zona pantul; 09:00 arah 168°, −4 dB. YA-MS (ketinggian 102 km seperti QTFGUI): 07:00 241°, −5,4 dB; 08:00 0,6 % (−22 dB); 09:00 161°, −4,0 dB. DH9GCD: 26 %, 2 %, 32 %. Ketiga metode melihat lubang pukul 08:00, dengan radian hampir di zenit |
+| Kurva DJ5HG (*Die Geometrie…*, Bild 8–9: dari Hamburg dan München, Quadrantid, 4 Januari; dibaca dari grafik, sekitar ±0,5 dB dan ±15 menit) dibandingkan dengan uji otomatis `--prova-dj5hg` (satu nilai per jam) | Waktu: celah saat radian dekat zenit jatuh pada jam yang sama (Barcelona 07:30–08:30 vs 07–09; Sofia 06:36–07:48 vs 07–08; Narvik 07–08:30 vs 07–09); Moskow tertutup 03–10 pada keduanya, terbuka dari Hamburg hingga sekitar 02:30 dan dari München hingga sekitar 00:30, seperti ditulis DJ5HG. Arah: selisih 2–10°. Level: dengan ketinggian 102 km dan opsi jejak lebih panjang aktif, hampir semua nilai berada dalam 2–3 dB dari kurva; dengan opsi nonaktif, 3–7 dB di bawahnya, tetapi minimum sore hari lebih dekat (Moskow −9 dB pukul 15, −11,5 dB pukul 18 vs −9 dan −12,5). Perbedaan utama: DJ5HG menunjukkan minimum yang dalam ketika radian berada paling rendah dan hampir searah lintasan (Barcelona −16 dB pukul 19:36, Sofia −14 dB pukul 20); YA-MS hampir tidak menunjukkannya (−8,6 dan −10,4 dB dengan opsi nonaktif, −1 dan −3 dB aktif). Inilah catatan DJ5HG sendiri tentang radian rendah sepanjang lintasan: karena itu ada peringatan, dan opsi ini nonaktif secara bawaan |
 | Pengambilan sampel setiap 5 km, bukan 15 km | persentase berubah kurang dari 0,3 poin |
 
-> Skala yang dipakai OH5IY dan MCG_MS tidak diketahui secara rinci (manual MS-Soft tidak tersedia): bandingkan persentasenya dengan program-program tersebut sebelum menganggapnya setara. Model hanya mempertimbangkan jejak underdense, dengan antena isotropik; ledakan overdense dan latar sporadis tidak termasuk dalam efisiensi (latar sporadis diwakili oleh fluks radar).
+> Dokumentasi MS-Soft 5.2 mendefinisikan efisiensi OH5IY sebagai indeks relatif hanya untuk jejak underdense, dengan dua faktor (elevasi radian, terbaik sekitar 45°, dan sudut terhadap lintasan, terbaik 90°) serta nilai minimum yang dinaikkan secara manual ke 20 % untuk jejak overdense; rumusnya tidak diterbitkan. MCG_MS menghitungnya untuk empat arah tetap dan, dengan lokator DX, untuk lintasan sebenarnya. Model hanya mempertimbangkan jejak underdense, dengan antena isotropik; ledakan overdense dan latar sporadis tidak termasuk dalam efisiensi (latar sporadis diwakili oleh fluks radar).

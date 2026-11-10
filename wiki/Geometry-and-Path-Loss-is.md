@@ -69,15 +69,15 @@ Ef 1 − |p0|² < 0 er leiðin lengri en 2·d_H og stöðvarnar sjá **ekkert sa
 
 ## Hot A og Hot B
 
-**Heimild:** endurvörpin safnast á tvö svæði („heita bletti“) um **50–150 km sitt hvorum megin við miðpunktinn**. Þetta er grunnurinn að töflunni um frávik loftnets í AMS Bulletin No. 203, sem W8WN tók upp (frávik 10° fyrir 1500 og 1800 km leiðir); MSHV eftir LZ2HV notar sama viðmið.
+**Heimild:** endurvörp stopulla loftsteina safnast á tvö svæði („heita bletti“) sitt hvorum megin við miðpunktinn. J. Richardson (AMS) gefur í töflunni sem DJ5HG vitnar í (*Die Geometrie von Meteorscatterverbindungen*, 2004) frávik loftnetsins frá beinu stefnunni: **13° við 1000 km, 11° við 1250 km, 10° við 1500 og 2000 km**. AMS Bulletin No. 203, sem W8WN tók upp, gefur 10° við 1500 og 1800 km.
 
-**Val:** Hot A og Hot B eru punktarnir í fjarlægðinni s frá miðpunktinum M, hornrétt á leiðina (s = 150 km, stillanlegt 30–400 km); A vinstra megin séð frá þinni stöð að DX, B hægra megin [21]. Frávikið séð frá stöðinni er um það bil [22]:
+**Val:** Hot A og Hot B eru punktarnir í fjarlægðinni s frá miðpunktinum M, hornrétt á leiðina. Þegar hakað er við *auto (AMS)* (sjálfgefið) fæst s úr frávikinu í töflu Richardsons, línulega brúað (13° undir 1000 km, 10° yfir 2000 km): s = (D/2)·tan(frávik). Án haks er s slegið inn handvirkt, 30–400 km (MSHV notar 150 km); A vinstra megin séð frá þinni stöð að DX, B hægra megin [21]. Frávikið séð frá stöðinni er um það bil [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Prófun:** JN70CN–IN78UO, D = 1710 km: 6,7° með s = 100 km, **10,0° með s = 150 km** (sama og MSHV og AMS/W8WN), 13,2° með s = 200 km.
+**Prófun:** með AMS-töflunni, 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, það sama og þeir 150 km sem notaðir voru áður og MSHV notar; á stuttum leiðum færir taflan heitu blettina nær miðpunktinum.
 
 ## Leiðardeyfing undirþéttra slóða
 

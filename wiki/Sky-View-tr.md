@@ -8,7 +8,7 @@
 
 Bu alt sekme (önceki sürümlerin gökyüzü kubbesi), yararlı izlerin şu anda **nerede** olduğunu ve antenin **nereye** çevrileceğini tek ekranda toplar. Solda yolun **plan görünümü**; sağda yağmur listesi, radyantlarla küçük bir gökyüzü kubbesi, hesabın metni ve anteninizden görülen **kesit**. Her şey *Hesap tarihi (UTC)* ve *Saatler (−12 ile +36 sa arası)* kaydırıcısıyla seçilen ana göredir (varsayılan gerçek zaman; 15 dakikalık adımlarla).
 
-**Plan görünümünün üstündeki şerit** o anın hesabını özetler: tarih ve saat (*şimdi* ya da şimdiden itibaren saat), **yol endeksi Σ ZHR×η**, ZHR'si ve verimiyle **en yararlı yağmur**, ufkun üstündeki yağmur sayısı ve azimutuyla **önerilen Hot**.
+**Plan görünümünün üstündeki şerit** o anın hesabını özetler: tarih ve saat (*şimdi* ya da şimdiden itibaren saat), **yol endeksi Σ ZHR×η**, ZHR'si ve verimiyle (DJ5HG referansına göre dB cinsinden de, bkz. [Verim hesabı](Efficiency-Calculation-tr)) **en yararlı yağmur**, ufkun üstündeki yağmur sayısı ve azimutuyla **önerilen Hot**.
 
 Küçük gökyüzü kubbesinde zenitten geçen bir **turuncu çizgi** her zaman **doğru anten yönlerini** verir; bu yönler seçili yağmurun (ya da en elverişli olanın) kaymasına diktir: radyant azimutu ±90°, iki ucunda *anten NNN°* etiketiyle, ±45°'lik tolerans ince çizgilerle. Kenardaki kısa turuncu çentikler diğer yararlı yağmurların dik yönlerini verir.
 
@@ -19,7 +19,7 @@ Yukarıdan görülen bir Avrupa haritası (**D sağda**), çevresinde derece öl
 | Öğe | Çizim |
 |---|---|
 | Yol / DX | İstasyonunuzdan karşı istasyona yeşil çizgi (her zaman lokatörler arasındaki gerçek büyük daire yolu) |
-| **Hot A / Hot B** | Orta noktanın iki yanında, yola dik 150 km'deki (ayarlanabilir) noktalar. **Kırmızı = önerilen**, **pembe = anten lobunun dışında**, **gri = lobun içinde** (uyarıyla) |
+| **Hot A / Hot B** | Orta noktanın iki yanında, yola dik, AMS sapma tablosunun verdiği (ya da elle girilen) uzaklıktaki noktalar. **Kırmızı = önerilen**, **pembe = anten lobunun dışında**, **gri = lobun içinde** (uyarıyla) |
 | Anten lobu | Anten azimutu çevresindeki −3 dB yatay lob (anten her zaman DX'e dönük), *lob …°* etiketiyle |
 | Ortak bölge sınırları | Soluk *sın. A* / *sın. B* noktaları ve her istasyonun ufkunun E katmanıyla kesiştiği iki daire (bkz. [Geometri](Geometry-and-Path-Loss-tr#ortak-bölge-sınırları)) |
 | Yağmur kayması | **Sarı çizgi**: seçili yağmurun (ya da en elverişlisinin) gökyüzünü taradığı yön, yani radyant azimutu |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **UYARI: Hot A (ve/veya Hot B) anten lobunun içinde …** | Hot spot anten azimutunun ±θ/2 içindedir (θ = yatay −3 dB lob): bu yönlendirmeyle zaten kapsanıyordur. Haritada gri gösterilir. Önerilen Hot kırmızı kalır. |
 | **RADYANT ÇOK YÜKSEK (70° üstünde)** | Yararlı bir radyant istasyonunuzdan 70°'nin üstündedir: izler neredeyse dikey düşer ve yola doğru az yansıtır (DF5HC, DH9GCD). Aynı saatler [saatlik tabloda](Efficiency-Calculation-tr#saatlik-tablo) ↑ ile işaretlenir. |
+| **YOL BOYUNCA ALÇAK RADYANT** | Etkin bir radyant 20°'nin altında ve yol doğrultusuna 30°'den yakın. Hesaplanan verim düşük (temkinli) kalır, ancak DJ5HG yolla aynı doğrultudaki sıyırma izlerinden seyrek ama güçlü yansımalar bekler (Hamburg–Narvik, Quadrantidler, yaklaşık 19 UTC): dinlemeye değer. |
 | *Ortak E katmanı bölgesi yok* | Yol, iz yüksekliğindeki menzilin iki katından uzundur: iki istasyon E katmanının ortak bir bölümünü görmez (tek atlama olanaksız). |
 | *Önerilen Hot yok* | Bu saatte neredeyse hiç etkin yağmur yok. |
 

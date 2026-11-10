@@ -69,15 +69,15 @@ Kung 1 − |p0|² < 0, mas mahaba ang landas kaysa 2·d_H at **walang karaniwang
 
 ## Hot A at Hot B
 
-**Sanggunian:** nakatipon ang mga repleksiyon sa dalawang sona ("hot spot") na mga **50–150 km sa magkabilang panig ng gitnang punto**. Ito ang batayan ng talahanayan ng offset ng antenna ng AMS Bulletin No. 203, na ginamit ni W8WN (10° na offset para sa mga landas na 1500 at 1800 km); ginagamit din ng MSHV ni LZ2HV ang parehong pamantayan.
+**Sanggunian:** nakatipon ang mga repleksiyon ng sporadic na meteor sa dalawang sona ("hot spot") sa magkabilang panig ng gitnang punto. Ibinibigay ni J. Richardson (AMS), sa talahanayang sinipi ni DJ5HG (*Die Geometrie von Meteorscatterverbindungen*, 2004), ang offset ng antenna mula sa direktang direksiyon: **13° sa 1000 km, 11° sa 1250 km, 10° sa 1500 at 2000 km**. Ang AMS Bulletin No. 203, na ginamit ni W8WN, ay nagbibigay ng 10° sa 1500 at 1800 km.
 
-**Pagpili:** ang Hot A at Hot B ay ang mga punto sa distansiyang s mula sa gitnang punto M, patayo sa landas (s = 150 km, naaayos sa 30–400 km); ang A ay nasa kaliwa kung titingin mula sa iyong istasyon patungo sa DX, ang B ay nasa kanan [21]. Ang offset na nakikita mula sa istasyon ay humigit-kumulang [22]:
+**Pagpili:** ang Hot A at Hot B ay ang mga punto sa distansiyang s mula sa gitnang punto M, patayo sa landas. Kapag may tsek ang *auto (AMS)* (default), ang s ay mula sa offset ng talahanayan ni Richardson, linear na in-interpolate (13° sa ibaba ng 1000 km, 10° sa itaas ng 2000 km): s = (D/2)·tan(offset). Kapag walang tsek, mano-manong inilalagay ang s, 30–400 km (150 km ang ginagamit ng MSHV); ang A ay nasa kaliwa kung titingin mula sa iyong istasyon patungo sa DX, ang B ay nasa kanan [21]. Ang offset na nakikita mula sa istasyon ay humigit-kumulang [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Pagsusuri:** JN70CN–IN78UO, D = 1710 km: 6.7° kapag s = 100 km, **10.0° kapag s = 150 km** (kapareho ng MSHV at AMS/W8WN), 13.2° kapag s = 200 km.
+**Pagsusuri:** gamit ang talahanayan ng AMS, 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, kapareho ng 150 km na ginamit dati at ng MSHV; sa maiikling landas, inilalapit ng talahanayan ang mga hot spot sa gitnang punto.
 
 ## Underdense na path loss
 

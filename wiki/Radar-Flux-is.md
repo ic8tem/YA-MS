@@ -61,7 +61,7 @@ Ef kvarði hæðargrafsins breytist varar forritið við: *tölfræði hæða (t
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-Tilraunareglur **SM6FHZ** (VUSHF 2025): fjöldi og styrkur endurvarpa breytist með λ³, lengd með λ²; λ³-háðin er sú sama og í jöfnu McKinleys fyrir undirþéttar slóðir. Hámarkslengd pings samkvæmt IARU Region 1 er einnig sýnd (1000 ms á 50 MHz, 500 ms á 70 MHz, 100 ms á 144 MHz, 13 ms á 432 MHz). Gildin eru til viðmiðunar og ber að bera saman við reynslu í loftinu. Stöðvarstuðullinn K og samanburðurinn við RMOB eru í [Tilraunaspám](Experimental-Forecasts-is).
+Tilraunareglur **SM6FHZ** (VUSHF 2025): fjöldi og styrkur endurvarpa breytist með λ³, lengd með λ² (hjá McKinley er λ³ afl einnar slóðar; fjöldi slóða breytist um það bil með λ^1,5, og í framdreifingu vex lengdin einnig með sec²φ: sjá [Tilraunaspár](Experimental-Forecasts-is)). Hámarkslengd pings samkvæmt IARU Region 1 er einnig sýnd (1000 ms á 50 MHz, 500 ms á 70 MHz, 100 ms á 144 MHz, 13 ms á 432 MHz). Gildin eru til viðmiðunar og ber að bera saman við reynslu í loftinu. Stöðvarstuðullinn K og samanburðurinn við RMOB eru í [Tilraunaspám](Experimental-Forecasts-is).
 
 ## Án nettengingar
 

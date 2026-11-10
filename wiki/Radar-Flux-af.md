@@ -61,7 +61,7 @@ As die skaal van die hoogtegrafiek verander, waarsku die program: *hoogtestatist
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-Eksperimentele reëls van **SM6FHZ** (VUSHF 2025): aantal en intensiteit van refleksies skaal met λ³, duur met λ²; die λ³-afhanklikheid is dieselfde as in McKinley se onderdigte vergelyking. Die IARU Streek 1 se maksimum pingduur word ook gewys (1000 ms op 50 MHz, 500 ms op 70 MHz, 100 ms op 144 MHz, 13 ms op 432 MHz). Waardes is aanduidend, om met ervaring op die lug te vergelyk. Die stasiefaktor K en die vergelyking met RMOB is in [Eksperimentele voorspellings](Experimental-Forecasts-af).
+Eksperimentele reëls van **SM6FHZ** (VUSHF 2025): aantal en intensiteit van refleksies skaal met λ³, duur met λ² (by McKinley is λ³ die drywing van een spoor; die aantal spore skaal ongeveer met λ^1,5, en in voorwaartse verstrooiing groei duurtes ook met sec²φ: sien [Eksperimentele voorspellings](Experimental-Forecasts-af)). Die IARU Streek 1 se maksimum pingduur word ook gewys (1000 ms op 50 MHz, 500 ms op 70 MHz, 100 ms op 144 MHz, 13 ms op 432 MHz). Waardes is aanduidend, om met ervaring op die lug te vergelyk. Die stasiefaktor K en die vergelyking met RMOB is in [Eksperimentele voorspellings](Experimental-Forecasts-af).
 
 ## Vanlyn
 

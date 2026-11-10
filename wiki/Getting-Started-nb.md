@@ -26,7 +26,7 @@ Over fanene er det tre rader med kontroller som gjelder for alle fanene. Knappen
 | **Sporhøyde km** + **fra radar** | Høyden på meteorsporene (standard 90 km). Med *fra radar* avkrysset brukes den hyppigste høyden (typetallet) målt av Collm-radaren; se [Radarfluks](Radar-Flux-nb). |
 | **Lobeelevasjon °** | Laveste elevasjon for antenneloben (0° = horisonten). Bare punkter i E-laget som begge stasjonene ser over denne elevasjonen, brukes. |
 | **Yagi-antenne: bom m** | Bomlengden på Yagien din. Programmet viser lengden i λ, forsterkningen (DL6WU-kurven) og −3 dB-loben, horisontalt og vertikalt; se [Geometri og demping](Geometry-and-Path-Loss-nb#antenneforsterkning-og-lobe). Under 2 λ er estimatet grovt. |
-| **Hot spot fra midtpunkt km** | Avstanden fra Hot A og Hot B til midtpunktet, 30–400 km (standard 150 km, som AMS Bulletin 203 / W8WN / MSHV). |
+| **Hot spot fra midtpunkt km** + **auto (AMS)** | Avstanden fra Hot A og Hot B til midtpunktet. Med *auto (AMS)* avkrysset (standard) følger den tabellen over antenneforskyvning av J. Richardson (AMS) som DJ5HG siterer: 13° ved 1000 km, 11° ved 1250 km, 10° ved 1500 og 2000 km (ca. 115, 121, 132 og 176 km fra midtpunktet). Fjern avkrysningen for å legge inn 30–400 km for hånd (MSHV bruker 150 km). |
 
 **Rad 3 – tid**
 

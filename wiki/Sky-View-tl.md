@@ -8,7 +8,7 @@
 
 Inilalagay ng sub-tab na ito (ang kalangitan ng mga naunang bersyon) sa iisang screen kung **saan** naroon ngayon ang mga magagamit na bakas at **saan itututok**. Sa kaliwa, ang **tanaw mula sa itaas** ng landas; sa kanan, ang listahan ng mga shower, isang maliit na kalangitan na may mga radiant, ang teksto ng kalkulasyon at ang **seksiyon** na nakikita mula sa iyong antenna. Lahat ay tumutukoy sa sandaling pinili gamit ang *Petsa ng kalkulasyon (UTC)* at ang slider na *Mga oras (mula −12 hanggang +36 h)* (real time bilang default, sa mga hakbang na 15 minuto).
 
-Ibinubuod ng isang **strip sa itaas ng tanaw mula sa itaas** ang kalkulasyon para sa sandaling iyon: petsa at oras (*ngayon* o ilang oras mula ngayon), ang **indeks ng landas Σ ZHR×η**, ang **pinakakapaki-pakinabang na shower** kasama ang ZHR at episyensya nito, ang bilang ng mga shower sa itaas ng horizon at ang **inirerekomendang Hot** kasama ang azimuth nito.
+Ibinubuod ng isang **strip sa itaas ng tanaw mula sa itaas** ang kalkulasyon para sa sandaling iyon: petsa at oras (*ngayon* o ilang oras mula ngayon), ang **indeks ng landas Σ ZHR×η**, ang **pinakakapaki-pakinabang na shower** kasama ang ZHR at episyensya nito (pati sa dB kaugnay ng reperensiya ni DJ5HG, tingnan ang [Kalkulasyon ng episyensya](Efficiency-Calculation-tl)), ang bilang ng mga shower sa itaas ng horizon at ang **inirerekomendang Hot** kasama ang azimuth nito.
 
 Sa maliit na kalangitan, laging ibinibigay ng isang **kahel na linya** na dumaraan sa zenith ang **tamang direksiyon ng antenna**, orthogonal sa pag-usad ng napiling shower (o ng pinakapaborable): azimuth ng radiant ±90°, may label na *antenna NNN°* sa magkabilang dulo, at manipis na linya para sa ±45° na tolerance. Ibinibigay ng maiikling kahel na guhit sa gilid ang orthogonal na direksiyon ng iba pang magagamit na shower.
 
@@ -19,7 +19,7 @@ Isang mapa ng Europa na tinatanaw mula sa itaas (**E sa kanan**) na may iskala n
 | Elemento | Guhit |
 |---|---|
 | Landas / DX | Berdeng linya mula sa iyong istasyon patungo sa DX station (laging ang totoong great-circle na landas sa pagitan ng mga locator) |
-| **Hot A / Hot B** | Mga puntong 150 km (naaayos) sa magkabilang panig ng gitnang punto, patayo sa landas. **Pula = inirerekomenda**, **rosas = labas sa lobe ng antenna**, **abo = nasa loob ng lobe** (may babala) |
+| **Hot A / Hot B** | Mga punto sa magkabilang panig ng gitnang punto, patayo sa landas, sa distansiyang ibinibigay ng talahanayan ng offset ng AMS (o mano-manong inilagay). **Pula = inirerekomenda**, **rosas = labas sa lobe ng antenna**, **abo = nasa loob ng lobe** (may babala) |
 | Lobe ng antenna | Ang −3 dB na pahalang na lobe sa paligid ng azimuth ng antenna (laging nakatutok ang antenna sa DX), may label na *lobe …°* |
 | Mga hangganan ng karaniwang sona | Malalabong puntong *hang. A* / *hang. B* at ang dalawang bilog kung saan sinasalubong ng horizon ng bawat istasyon ang E layer (tingnan ang [Heometriya](Geometry-and-Path-Loss-tl#mga-hangganan-ng-karaniwang-sona)) |
 | Pag-usad ng shower | **Dilaw na linya**: ang direksiyon kung saan winawalis ng napiling shower (o ng pinakapaborable) ang langit, ibig sabihin ang azimuth ng radiant |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **BABALA: ang Hot A (at/o Hot B) ay pasok sa lobe ng antenna …** | Nasa loob ng ±θ/2 ng azimuth ng antenna ang hot spot (θ = pahalang na −3 dB na lobe): sa tutok na ito ay sakop na ito. Kulay abo sa mapa. Nananatiling pula ang inirerekomendang Hot. |
 | **MASYADONG MATAAS ANG RADIANT (higit sa 70°)** | May magagamit na radiant na higit sa 70° mula sa iyong istasyon: halos patayong bumabagsak ang mga bakas at kaunti lang ang repleksiyon patungo sa landas (DF5HC, DH9GCD). Minamarkahan ng ↑ ang parehong mga oras sa [talahanayan bawat oras](Efficiency-Calculation-tl#talahanayan-bawat-oras). |
+| **MABABANG RADIANT SA KAHABAAN NG LANDAS** | May aktibong radiant na mas mababa sa 20° at nasa loob ng 30° mula sa direksiyon ng landas. Nananatiling mababa (maingat) ang kinalkulang episyensya, ngunit inaasahan ni DJ5HG ang bihira ngunit malalakas na repleksiyon mula sa mga sumasayad na bakas na nakahanay sa landas (Hamburg–Narvik, Quadrantids, mga 19 UTC): sulit pakinggan. |
 | *Walang karaniwang sona ng E layer* | Mas mahaba ang landas kaysa dalawang ulit ng abot sa taas ng bakas: walang karaniwang bahagi ng E layer na nakikita ng dalawang istasyon (imposible ang iisang hop). |
 | *Walang inirerekomendang Hot* | Halos walang aktibong shower sa oras na ito. |
 

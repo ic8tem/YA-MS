@@ -69,15 +69,15 @@ Kui 1 − |p0|² < 0, on trass pikem kui 2·d_H ja jaamad **ei näe E-kihi ühis
 
 ## Hot A ja Hot B
 
-**Allikas:** peegeldused koonduvad kahte alasse ("hot spotid") umbes **50–150 km kaugusel mõlemal pool keskpunkti**. See on AMS Bulletin No. 203 antennisuuna nihete tabeli alus, mille võttis üle W8WN (10° nihe 1500 ja 1800 km trassidel); LZ2HV MSHV kasutab sama kriteeriumi.
+**Allikas:** sporaadiliste meteooride peegeldused koonduvad kahte alasse ("hot spotid") mõlemal pool keskpunkti. J. Richardson (AMS) annab DJ5HG tsiteeritud tabelis (*Die Geometrie von Meteorscatterverbindungen*, 2004) antennisuuna nihke otsesuuna suhtes: **13° 1000 km juures, 11° 1250 km juures, 10° 1500 ja 2000 km juures**. AMS Bulletin No. 203, mille võttis üle W8WN, annab 10° 1500 ja 1800 km juures.
 
-**Valik:** Hot A ja Hot B on punktid kaugusel s keskpunktist M, trassiga risti (s = 150 km, reguleeritav 30–400 km); A vasakul, vaadates oma jaamast korrespondendi poole, B paremal [21]. Jaamast nähtav nihe on ligikaudu [22]:
+**Valik:** Hot A ja Hot B on punktid kaugusel s keskpunktist M, trassiga risti. Kui *auto (AMS)* on märgitud (vaikimisi), tuleneb s Richardsoni tabeli nihkest, lineaarselt interpoleerituna (13° alla 1000 km, 10° üle 2000 km): s = (D/2)·tan(nihe). Märkimata sisestatakse s käsitsi, 30–400 km (MSHV kasutab 150 km); A vasakul, vaadates oma jaamast korrespondendi poole, B paremal [21]. Jaamast nähtav nihe on ligikaudu [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Kontroll:** JN70CN–IN78UO, D = 1710 km: 6,7° kui s = 100 km, **10,0° kui s = 150 km** (sama mis MSHV ja AMS/W8WN), 13,2° kui s = 200 km.
+**Kontroll:** AMS-i tabeliga 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, sama mis varem ja MSHV kasutatud 150 km; lühikestel trassidel toob tabel hot spotid keskpunktile lähemale.
 
 ## Alatiheda jälje sumbumine
 

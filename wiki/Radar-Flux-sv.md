@@ -61,7 +61,7 @@ Om höjddiagrammets skala ändras varnar programmet: *höjdstatistiken (typvärd
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-Experimentella regler av **SM6FHZ** (VUSHF 2025): reflexernas antal och intensitet skalar med λ³, varaktigheten med λ²; λ³-beroendet är detsamma som i McKinleys ekvation för underdensa spår. IARU Region 1:s maximala pinglängd visas också (1000 ms på 50 MHz, 500 ms på 70 MHz, 100 ms på 144 MHz, 13 ms på 432 MHz). Värdena är vägledande och ska jämföras med erfarenheten i luften. Stationsfaktorn K och jämförelsen med RMOB finns i [Experimentella prognoser](Experimental-Forecasts-sv).
+Experimentella regler av **SM6FHZ** (VUSHF 2025): reflexernas antal och intensitet skalar med λ³, varaktigheten med λ² (hos McKinley är λ³ effekten från ett spår; antalet spår skalar ungefär som λ^1,5, och vid framåtspridning växer varaktigheterna dessutom med sec²φ: se [Experimentella prognoser](Experimental-Forecasts-sv)). IARU Region 1:s maximala pinglängd visas också (1000 ms på 50 MHz, 500 ms på 70 MHz, 100 ms på 144 MHz, 13 ms på 432 MHz). Värdena är vägledande och ska jämföras med erfarenheten i luften. Stationsfaktorn K och jämförelsen med RMOB finns i [Experimentella prognoser](Experimental-Forecasts-sv).
 
 ## Utan nätverk
 

@@ -69,15 +69,15 @@ Jika 1 − |p0|² < 0, lintasan lebih panjang dari 2·d_H dan kedua stasiun **ti
 
 ## Hot A dan Hot B
 
-**Sumber:** pantulan terkonsentrasi di dua zona ("hot spot") sekitar **50–150 km di kedua sisi titik tengah**. Inilah dasar tabel offset antena dalam AMS Bulletin No. 203, yang diambil oleh W8WN (offset 10° untuk lintasan 1500 dan 1800 km); MSHV karya LZ2HV memakai kriteria yang sama.
+**Sumber:** pantulan meteor sporadis terkonsentrasi di dua zona ("hot spot") di kedua sisi titik tengah. J. Richardson (AMS), dalam tabel yang dikutip DJ5HG (*Die Geometrie von Meteorscatterverbindungen*, 2004), memberikan offset antena dari arah langsung: **13° pada 1000 km, 11° pada 1250 km, 10° pada 1500 dan 2000 km**. AMS Bulletin No. 203, yang diambil oleh W8WN, memberikan 10° pada 1500 dan 1800 km.
 
-**Pilihan:** Hot A dan Hot B adalah titik pada jarak s dari titik tengah M, tegak lurus terhadap lintasan (s = 150 km, dapat diatur 30–400 km); A di kiri jika melihat dari stasiun Anda ke DX, B di kanan [21]. Offset yang terlihat dari stasiun kira-kira [22]:
+**Pilihan:** Hot A dan Hot B adalah titik pada jarak s dari titik tengah M, tegak lurus terhadap lintasan. Dengan *auto (AMS)* dicentang (bawaan), s diperoleh dari offset tabel Richardson, diinterpolasi linear (13° di bawah 1000 km, 10° di atas 2000 km): s = (D/2)·tan(offset). Jika tidak dicentang, s dimasukkan secara manual, 30–400 km (MSHV memakai 150 km); A di kiri jika melihat dari stasiun Anda ke DX, B di kanan [21]. Offset yang terlihat dari stasiun kira-kira [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Verifikasi:** JN70CN–IN78UO, D = 1710 km: 6,7° dengan s = 100 km, **10,0° dengan s = 150 km** (sama dengan MSHV dan AMS/W8WN), 13,2° dengan s = 200 km.
+**Verifikasi:** dengan tabel AMS, 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, sama dengan 150 km yang dipakai sebelumnya dan oleh MSHV; pada lintasan pendek, tabel mendekatkan hot spot ke titik tengah.
 
 ## Redaman lintasan underdense
 

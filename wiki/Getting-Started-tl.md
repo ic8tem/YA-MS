@@ -26,7 +26,7 @@ Sa itaas ng mga tab ay may tatlong hanay ng mga kontrol, balido para sa lahat ng
 | **Taas ng bakas km** + **mula sa radar** | Taas ng mga bakas ng meteor (default 90 km). Kapag may tsek ang *mula sa radar*, ginagamit ang pinakamadalas na taas (moda) na sinukat ng radar ng Collm; tingnan ang [Flux ng radar](Radar-Flux-tl). |
 | **Elebasyon ng lobe °** | Pinakamababang elebasyon ng lobe ng iyong antenna (0° = horizon). Ginagamit lamang ang mga punto ng E layer na nakikita ng dalawang istasyon sa itaas ng elebasyong ito. |
 | **Yagi antenna: boom m** | Haba ng boom ng iyong Yagi. Ipinapakita ng programa ang haba sa λ, ang gain (kurba ng DL6WU) at ang −3 dB na lobe, pahalang at patayo; tingnan ang [Heometriya at path loss](Geometry-and-Path-Loss-tl#gain-at-lobe-ng-antenna). Sa ilalim ng 2 λ, magaspang ang tantiya. |
-| **Hot spot mula sa gitnang punto km** | Distansiya ng Hot A at Hot B mula sa gitnang punto, 30–400 km (default 150 km, gaya ng AMS Bulletin 203 / W8WN / MSHV). |
+| **Hot spot mula sa gitnang punto km** + **auto (AMS)** | Distansiya ng Hot A at Hot B mula sa gitnang punto. Kapag may tsek ang *auto (AMS)* (default), sinusunod nito ang talahanayan ng offset ng antenna ni J. Richardson (AMS) na sinipi ni DJ5HG: 13° sa 1000 km, 11° sa 1250 km, 10° sa 1500 at 2000 km (mga 115, 121, 132 at 176 km mula sa gitnang punto). Alisin ang tsek para mano-manong ilagay ang 30–400 km (150 km ang ginagamit ng MSHV). |
 
 **Hanay 3 – oras**
 

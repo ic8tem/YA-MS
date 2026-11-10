@@ -61,7 +61,7 @@ Kui kõrguste graafiku skaala muutub, hoiatab programm: *kõrguste statistika (m
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-**SM6FHZ** eksperimentaalsed reeglid (VUSHF 2025): peegelduste arv ja intensiivsus skaleeruvad λ³ järgi, kestus λ² järgi; λ³ sõltuvus on sama mis McKinley alatiheda jälje võrrandis. Näidatakse ka IARU 1. regiooni maksimaalset pingi kestust (1000 ms 50 MHz-l, 500 ms 70 MHz-l, 100 ms 144 MHz-l, 13 ms 432 MHz-l). Väärtused on ligikaudsed ja neid tuleb võrrelda eetrikogemusega. Jaama tegur K ja võrdlus RMOB-iga on lehel [Eksperimentaalsed prognoosid](Experimental-Forecasts-et).
+**SM6FHZ** eksperimentaalsed reeglid (VUSHF 2025): peegelduste arv ja intensiivsus skaleeruvad λ³ järgi, kestus λ² järgi (McKinley juures on λ³ ühe jälje võimsus; jälgede arv skaleerub ligikaudu λ^1,5 järgi ja edasihajumisel kasvavad kestused lisaks koos sec²φ-ga: vt [Eksperimentaalsed prognoosid](Experimental-Forecasts-et)). Näidatakse ka IARU 1. regiooni maksimaalset pingi kestust (1000 ms 50 MHz-l, 500 ms 70 MHz-l, 100 ms 144 MHz-l, 13 ms 432 MHz-l). Väärtused on ligikaudsed ja neid tuleb võrrelda eetrikogemusega. Jaama tegur K ja võrdlus RMOB-iga on lehel [Eksperimentaalsed prognoosid](Experimental-Forecasts-et).
 
 ## Ilma võrguta
 

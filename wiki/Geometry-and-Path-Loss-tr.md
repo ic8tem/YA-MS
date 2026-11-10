@@ -69,15 +69,15 @@ p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p
 
 ## Hot A ve Hot B
 
-**Kaynak:** yansımalar **orta noktanın iki yanında yaklaşık 50–150 km**'deki iki bölgede ("hot spot'lar") yoğunlaşır. Bu, AMS Bulletin No. 203'teki anten sapma tablosunun temelidir; W8WN tarafından da benimsenmiştir (1500 ve 1800 km'lik yollar için 10° sapma); LZ2HV'nin MSHV programı aynı ölçütü kullanır.
+**Kaynak:** sporadik meteorların yansımaları orta noktanın iki yanındaki iki bölgede ("hot spot'lar") yoğunlaşır. J. Richardson (AMS), DJ5HG'nin aktardığı tabloda (*Die Geometrie von Meteorscatterverbindungen*, 2004), doğrudan yöne göre anten sapmasını verir: **1000 km'de 13°, 1250 km'de 11°, 1500 ve 2000 km'de 10°**. W8WN'nin de benimsediği AMS Bulletin No. 203, 1500 ve 1800 km'de 10° verir.
 
-**Seçim:** Hot A ve Hot B, orta nokta M'den s uzaklığında, yola dik noktalardır (s = 150 km, 30–400 km arası ayarlanabilir); A, istasyonunuzdan DX'e bakarken solda, B sağdadır [21]. İstasyondan görülen sapma yaklaşık olarak [22]:
+**Seçim:** Hot A ve Hot B, orta nokta M'den s uzaklığında, yola dik noktalardır. *auto (AMS)* işaretliyken (varsayılan) s, Richardson tablosundaki sapmadan doğrusal enterpolasyonla elde edilir (1000 km'nin altında 13°, 2000 km'nin üstünde 10°): s = (D/2)·tan(sapma). İşaretli değilse s elle girilir, 30–400 km (MSHV 150 km kullanır); A, istasyonunuzdan DX'e bakarken solda, B sağdadır [21]. İstasyondan görülen sapma yaklaşık olarak [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Doğrulama:** JN70CN–IN78UO, D = 1710 km: s = 100 km ile 6,7°, **s = 150 km ile 10,0°** (MSHV ve AMS/W8WN ile aynı), s = 200 km ile 13,2°.
+**Doğrulama:** AMS tablosuyla 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km; bu, daha önce ve MSHV'de kullanılan 150 km ile aynıdır; kısa yollarda tablo hot spot'ları orta noktaya yaklaştırır.
 
 ## Underdense yol kaybı
 

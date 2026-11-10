@@ -8,7 +8,7 @@
 
 Den här underfliken (himlavalvet i tidigare versioner) samlar på en skärm **var** de användbara spåren finns just nu och **vart du ska rikta**. Till vänster **planvyn** över sträckan; till höger svärmlistan, ett litet himlavalv med radianterna, beräkningstexten och **tvärsnittet** sett från din antenn. Allt avser den tidpunkt som väljs med *Beräkningsdatum (UTC)* och reglaget *Timmar (−12 till +36 h)* (realtid som standard, i steg om 15 minuter).
 
-En **list ovanför planvyn** sammanfattar beräkningen för den tidpunkten: datum och tid (*nu* eller timmar från nu), **sträckindexet Σ ZHR×η**, den **mest användbara svärmen** med dess ZHR och effektivitet, antalet svärmar ovanför horisonten och **rekommenderad Hot** med dess azimut.
+En **list ovanför planvyn** sammanfattar beräkningen för den tidpunkten: datum och tid (*nu* eller timmar från nu), **sträckindexet Σ ZHR×η**, den **mest användbara svärmen** med dess ZHR och effektivitet (även i dB relativt DJ5HG-referensen, se [Effektivitetsberäkning](Efficiency-Calculation-sv)), antalet svärmar ovanför horisonten och **rekommenderad Hot** med dess azimut.
 
 I det lilla himlavalvet ger en **orange linje** genom zenit alltid **rätt antennriktningar**, ortogonala mot den valda (eller den mest gynnsamma) svärmens drift: radiantens azimut ±90°, märkt *antenn NNN°* i båda ändarna, med toleransen ±45° som tunna linjer. Korta orange streck på kanten anger de ortogonala riktningarna för de andra användbara svärmarna.
 
@@ -19,7 +19,7 @@ En karta över Europa sedd uppifrån (**Ö till höger**) med en gradskala runt 
 | Element | Ritning |
 |---|---|
 | Sträcka / DX | Grön linje från din station till motstationen (alltid den verkliga storcirkelsträckan mellan lokatorerna) |
-| **Hot A / Hot B** | Punkter 150 km (justerbart) på var sida om mittpunkten, vinkelrätt mot sträckan. **Rött = rekommenderad**, **rosa = utanför antennloben**, **grått = inom loben** (med varning) |
+| **Hot A / Hot B** | Punkter på var sida om mittpunkten, vinkelrätt mot sträckan, på det avstånd som AMS-tabellen över förskjutning ger (eller angivet för hand). **Rött = rekommenderad**, **rosa = utanför antennloben**, **grått = inom loben** (med varning) |
 | Antennlob | Den horisontella −3 dB-loben kring antennens azimut (antennen alltid riktad mot DX), märkt *lob …°* |
 | Gränser för den gemensamma zonen | Svaga punkter *gr. A* / *gr. B* och de två cirklarna där varje stations horisont möter E-skiktet (se [Geometri](Geometry-and-Path-Loss-sv#gränser-för-den-gemensamma-zonen)) |
 | Svärmens drift | **Gul linje**: den riktning i vilken den valda (eller den mest gynnsamma) svärmen sveper över himlen, dvs. radiantens azimut |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **VARNING: Hot A (och/eller Hot B) ligger inom antennloben …** | Hot spoten ligger inom ±θ/2 från antennens azimut (θ = horisontell −3 dB-lob): med denna riktning täcks den redan. Visas i grått på kartan. Den rekommenderade Hot förblir röd. |
 | **RADIANTEN FÖR HÖGT (över 70°)** | En användbar radiant står över 70° sett från din station: spåren faller nästan lodrätt och reflekterar lite mot sträckan (DF5HC, DH9GCD). Samma timmar markeras med ↑ i [timtabellen](Efficiency-Calculation-sv#timtabell). |
+| **LÅG RADIANT LÄNGS STRÄCKAN** | En aktiv radiant står under 20° och inom 30° från sträckans riktning. Den beräknade effektiviteten förblir låg (försiktig), men DJ5HG väntar sig sällsynta, starka reflexer från strykande spår i linje med sträckan (Hamburg–Narvik, Kvadrantiderna, omkring 19 UTC): värt att lyssna efter. |
 | *Ingen gemensam zon i E-skiktet* | Sträckan är längre än två gånger räckvidden på spårhöjden: de två stationerna ser ingen gemensam del av E-skiktet (enkelhopp omöjligt). |
 | *Ingen rekommenderad Hot* | Nästan ingen aktiv svärm vid denna tid. |
 

@@ -28,10 +28,10 @@ Appelsínugula línan undir stýringunum sýnir regluna með núverandi tölum, 
 ## Frá ratsjánni að amatörtíðnisviðinu
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Heimild:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maí 2025 – fjöldi og styrkur endurvarpa breytist með **λ³**, lengd með **λ²** (432 MHz er 14–15 dB undir 144 MHz og varir 1/9 af tímanum). **Prófun:** λ³-háðin er sú sama og í jöfnu McKinleys fyrir undirþéttar slóðir. Með k = 3 verða 1000 loftsteinar/klst. í Collm um **16 endurvörp/klst. á 144 MHz**; RMOB-athugendur GRAVES á 143,050 MHz telja venjulega **20 til 140 bergmál/klst.** (fréttabréf RMOB, júní 2018): stærðargráðan samrýmist, og munurinn er stöðvarstuðullinn K. (Handbók, jöfnur 44–45.)
+**Heimild:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maí 2025 – fjöldi og styrkur endurvarpa breytist með **λ³**, lengd með **λ²** (432 MHz er 14–15 dB undir 144 MHz og varir 1/9 af tímanum). **Prófun:** í jöfnu McKinleys er λ³ afl einnar undirþéttrar slóðar, ekki fjöldi slóða; við massastuðul 2 breytist fjöldi slóða yfir föstum þröskuldi um það bil með λ^1,5 (IZ5TEK; OH5IY). Forritið heldur k = 3, tilraunareglu SM6FHZ, og segir frá því; rétta k-ið fyrir þína stöð fæst úr samanburðinum við RMOB. Í framdreifingu vex lengdin einnig með sec²φ (McKinley; OH5IY): Collm mælir í bakdreifingu (φ = 0), svo spáin margfaldar með sec²φ við miðpunkt leiðarinnar (×4 við 60°, ×8,5 við 70°, ×33 við 80°). Með k = 3 verða 1000 loftsteinar/klst. í Collm um **16 endurvörp/klst. á 144 MHz**; RMOB-athugendur GRAVES á 143,050 MHz telja venjulega **20 til 140 bergmál/klst.** (fréttabréf RMOB, júní 2018): stærðargráðan samrýmist, og munurinn er stöðvarstuðullinn K. (Handbók, jöfnur 44–45.)
 
 ## Næstu 24 klukkustundir
 

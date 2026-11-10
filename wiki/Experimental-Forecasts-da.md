@@ -28,10 +28,10 @@ Den orange linje under betjeningselementerne viser reglen med de aktuelle tal, f
 ## Fra radaren til amatørbåndet
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Kilde:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maj 2025 – antal og intensitet af refleksioner skalerer med **λ³**, varigheden med **λ²** (432 MHz ligger 14–15 dB under 144 MHz og varer 1/9). **Kontrol:** λ³-afhængigheden er den samme som i McKinleys ligning for underdense spor. Med k = 3 bliver 1000 meteorer/time i Collm til ca. **16 refleksioner/time ved 144 MHz**; RMOB-observatører, der lytter til GRAVES på 143,050 MHz, tæller som regel **20 til 140 ekkoer/time** (RMOB-bulletin, juni 2018): størrelsesordenen er forenelig, og forskellen er stationsfaktoren K. (Manualens lign. 44–45.)
+**Kilde:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maj 2025 – antal og intensitet af refleksioner skalerer med **λ³**, varigheden med **λ²** (432 MHz ligger 14–15 dB under 144 MHz og varer 1/9). **Kontrol:** i McKinleys ligning er λ³ effekten fra et enkelt underdenst spor, ikke antallet af spor; med masseindeks 2 skalerer antallet af spor over en fast tærskel omtrent som λ^1,5 (IZ5TEK; OH5IY). Programmet beholder k = 3, SM6FHZ's eksperimentelle regel, og siger det; det rigtige k for din station fås fra sammenligningen med RMOB. Ved fremadspredning vokser varigheden desuden med sec²φ (McKinley; OH5IY): Collm måler i tilbagespredning (φ = 0), så prognosen ganger med sec²φ i strækningens midtpunkt (×4 ved 60°, ×8,5 ved 70°, ×33 ved 80°). Med k = 3 bliver 1000 meteorer/time i Collm til ca. **16 refleksioner/time ved 144 MHz**; RMOB-observatører, der lytter til GRAVES på 143,050 MHz, tæller som regel **20 til 140 ekkoer/time** (RMOB-bulletin, juni 2018): størrelsesordenen er forenelig, og forskellen er stationsfaktoren K. (Manualens lign. 44–45.)
 
 ## De næste 24 timer
 

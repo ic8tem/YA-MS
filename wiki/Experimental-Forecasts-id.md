@@ -28,10 +28,10 @@ Baris oranye di bawah kontrol menampilkan aturan dengan angka saat ini, mis. *N(
 ## Dari radar ke band amatir
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Sumber:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, Nordic VUSHF ke-45, Mei 2025 – jumlah dan intensitas pantulan berskala dengan **λ³**, durasinya dengan **λ²** (432 MHz berada 14–15 dB di bawah 144 MHz dan berlangsung 1/9-nya). **Verifikasi:** ketergantungan λ³ sama dengan pada persamaan underdense McKinley. Dengan k = 3, 1000 meteor/jam di Collm menjadi sekitar **16 pantulan/jam di 144 MHz**; pengamat RMOB untuk GRAVES di 143,050 MHz biasanya menghitung **20 sampai 140 gema/jam** (buletin RMOB, Juni 2018): orde besarnya cocok, dan selisihnya adalah faktor stasiun K. (Manual pers. 44–45.)
+**Sumber:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, Nordic VUSHF ke-45, Mei 2025 – jumlah dan intensitas pantulan berskala dengan **λ³**, durasinya dengan **λ²** (432 MHz berada 14–15 dB di bawah 144 MHz dan berlangsung 1/9-nya). **Verifikasi:** dalam persamaan McKinley, λ³ adalah daya satu jejak underdense, bukan jumlah jejak; untuk indeks massa 2, jumlah jejak di atas ambang tetap berskala kira-kira dengan λ^1,5 (IZ5TEK; OH5IY). Program mempertahankan k = 3, aturan eksperimental SM6FHZ, dan menyatakannya; k yang tepat untuk stasiun Anda diperoleh dari perbandingan dengan RMOB. Pada hamburan maju, durasi juga bertambah dengan sec²φ (McKinley; OH5IY): Collm mengukur dalam hamburan balik (φ = 0), sehingga prakiraan dikalikan dengan sec²φ di titik tengah lintasan (×4 pada 60°, ×8,5 pada 70°, ×33 pada 80°). Dengan k = 3, 1000 meteor/jam di Collm menjadi sekitar **16 pantulan/jam di 144 MHz**; pengamat RMOB untuk GRAVES di 143,050 MHz biasanya menghitung **20 sampai 140 gema/jam** (buletin RMOB, Juni 2018): orde besarnya cocok, dan selisihnya adalah faktor stasiun K. (Manual pers. 44–45.)
 
 ## 24 jam ke depan
 

@@ -61,7 +61,7 @@ Yükseklik grafiğinin ölçeği değişirse program uyarır: *yükseklik istati
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-**SM6FHZ**'nin deneysel kuralları (VUSHF 2025): yansımaların sayısı ve şiddeti λ³ ile, süresi λ² ile ölçeklenir; λ³ bağımlılığı McKinley'in underdense denklemindekiyle aynıdır. IARU 1. Bölge en uzun ping süresi de gösterilir (50 MHz'de 1000 ms, 70 MHz'de 500 ms, 144 MHz'de 100 ms, 432 MHz'de 13 ms). Değerler yol göstericidir; havadaki deneyimle karşılaştırılmalıdır. İstasyon katsayısı K ve RMOB ile karşılaştırma [Deneysel tahminler](Experimental-Forecasts-tr) sayfasındadır.
+**SM6FHZ**'nin deneysel kuralları (VUSHF 2025): yansımaların sayısı ve şiddeti λ³ ile, süresi λ² ile ölçeklenir (McKinley'de λ³ tek bir izin gücüdür; iz sayısı yaklaşık λ^1,5 ile ölçeklenir ve ileri saçılmada süreler ayrıca sec²φ ile artar: bkz. [Deneysel tahminler](Experimental-Forecasts-tr)). IARU 1. Bölge en uzun ping süresi de gösterilir (50 MHz'de 1000 ms, 70 MHz'de 500 ms, 144 MHz'de 100 ms, 432 MHz'de 13 ms). Değerler yol göstericidir; havadaki deneyimle karşılaştırılmalıdır. İstasyon katsayısı K ve RMOB ile karşılaştırma [Deneysel tahminler](Experimental-Forecasts-tr) sayfasındadır.
 
 ## Bağlantı yokken
 

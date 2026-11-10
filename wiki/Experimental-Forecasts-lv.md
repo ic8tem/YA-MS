@@ -28,10 +28,10 @@ Oranžā rinda zem vadīklām rāda likumu ar pašreizējiem skaitļiem, piem. *
 ## No radara uz amatieru joslu
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Avots:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, 2025. gada maijs – atstarojumu skaits un intensitāte mainās ar **λ³**, ilgums ar **λ²** (432 MHz ir 14–15 dB zem 144 MHz un ilgst 1/9). **Pārbaude:** λ³ atkarība ir tā pati, kas McKinley zema blīvuma vienādojumā. Ar k = 3 1000 meteori stundā Collm kļūst par apmēram **16 atstarojumiem stundā 144 MHz**; RMOB GRAVES novērotāji 143,050 MHz parasti saskaita **no 20 līdz 140 atbalsīm stundā** (RMOB biļetens, 2018. gada jūnijs): lieluma kārta ir saderīga, un starpība ir stacijas koeficients K. (Rokasgrāmatas 44.–45. vien.)
+**Avots:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, 2025. gada maijs – atstarojumu skaits un intensitāte mainās ar **λ³**, ilgums ar **λ²** (432 MHz ir 14–15 dB zem 144 MHz un ilgst 1/9). **Pārbaude:** McKinley vienādojumā λ³ ir vienas zema blīvuma sliedes jauda, nevis sliežu skaits; ar masas indeksu 2 sliežu skaits virs fiksēta sliekšņa mainās aptuveni ar λ^1,5 (IZ5TEK; OH5IY). Programma saglabā k = 3, SM6FHZ eksperimentālo likumu, un to norāda; tavai stacijai pareizo k dod salīdzinājums ar RMOB. Tiešajā izkliedē ilgums turklāt pieaug ar sec²φ (McKinley; OH5IY): Collm mēra atpakaļizkliedē (φ = 0), tāpēc prognoze reizina ar sec²φ trases viduspunktā (×4 pie 60°, ×8,5 pie 70°, ×33 pie 80°). Ar k = 3 1000 meteori stundā Collm kļūst par apmēram **16 atstarojumiem stundā 144 MHz**; RMOB GRAVES novērotāji 143,050 MHz parasti saskaita **no 20 līdz 140 atbalsīm stundā** (RMOB biļetens, 2018. gada jūnijs): lieluma kārta ir saderīga, un starpība ir stacijas koeficients K. (Rokasgrāmatas 44.–45. vien.)
 
 ## Nākamās 24 stundas
 

@@ -8,7 +8,7 @@
 
 Sub-tab ini (kubah langit pada versi sebelumnya) menyatukan dalam satu layar **di mana** jejak yang berguna berada sekarang dan **ke mana** antena diarahkan. Di kiri **denah** lintasan; di kanan daftar hujan meteor, kubah langit kecil dengan radian, teks perhitungan, dan **penampang** dilihat dari antena Anda. Semuanya mengacu pada saat yang dipilih dengan *Tanggal perhitungan (UTC)* dan penggeser *Jam (−12 hingga +36 h)* (bawaan waktu nyata, dengan langkah 15 menit).
 
-Sebuah **strip di atas denah** merangkum perhitungan untuk saat itu: tanggal dan waktu (*sekarang* atau berapa jam dari sekarang), **indeks lintasan Σ ZHR×η**, **hujan meteor paling berguna** beserta ZHR dan efisiensinya, jumlah hujan meteor di atas cakrawala, dan **Hot yang disarankan** beserta azimutnya.
+Sebuah **strip di atas denah** merangkum perhitungan untuk saat itu: tanggal dan waktu (*sekarang* atau berapa jam dari sekarang), **indeks lintasan Σ ZHR×η**, **hujan meteor paling berguna** beserta ZHR dan efisiensinya (juga dalam dB relatif terhadap acuan DJ5HG, lihat [Perhitungan efisiensi](Efficiency-Calculation-id)), jumlah hujan meteor di atas cakrawala, dan **Hot yang disarankan** beserta azimutnya.
 
 Pada kubah langit kecil, sebuah **garis oranye** yang melewati zenit selalu memberikan **arah antena yang tepat**, tegak lurus terhadap pergeseran hujan meteor yang dipilih (atau yang paling menguntungkan): azimut radian ±90°, berlabel *antena NNN°* di kedua ujungnya, dengan toleransi ±45° sebagai garis tipis. Tanda oranye pendek di tepi memberikan arah tegak lurus untuk hujan meteor berguna lainnya.
 
@@ -19,7 +19,7 @@ Peta Eropa dilihat dari atas (**T di kanan**) dengan skala derajat di sekeliling
 | Elemen | Gambar |
 |---|---|
 | Lintasan / DX | Garis hijau dari stasiun Anda ke stasiun DX (selalu lintasan lingkaran besar yang nyata antara kedua locator) |
-| **Hot A / Hot B** | Titik 150 km (dapat diatur) di kedua sisi titik tengah, tegak lurus terhadap lintasan. **Merah = disarankan**, **merah muda = di luar lobus antena**, **abu-abu = di dalam lobus** (dengan peringatan) |
+| **Hot A / Hot B** | Titik di kedua sisi titik tengah, tegak lurus terhadap lintasan, pada jarak yang diberikan tabel offset AMS (atau dimasukkan secara manual). **Merah = disarankan**, **merah muda = di luar lobus antena**, **abu-abu = di dalam lobus** (dengan peringatan) |
 | Lobus antena | Lobus horizontal −3 dB di sekitar azimut antena (antena selalu diarahkan ke DX), berlabel *lobus …°* |
 | Batas zona bersama | Titik samar *bts. A* / *bts. B* dan dua lingkaran tempat cakrawala tiap stasiun bertemu lapisan E (lihat [Geometri](Geometry-and-Path-Loss-id#batas-zona-bersama)) |
 | Pergeseran hujan meteor | **Garis kuning**: arah hujan meteor yang dipilih (atau yang paling menguntungkan) menyapu langit, yaitu azimut radian |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **PERHATIAN: Hot A (dan/atau Hot B) masuk ke lobus antena …** | Hot spot berada dalam ±θ/2 dari azimut antena (θ = lobus horizontal −3 dB): dengan arah ini sudah tercakup. Ditandai abu-abu pada peta. Hot yang disarankan tetap merah. |
 | **RADIAN TERLALU TINGGI (di atas 70°)** | Sebuah radian yang berguna berada di atas 70° dari stasiun Anda: jejak jatuh hampir vertikal dan sedikit memantul ke arah lintasan (DF5HC, DH9GCD). Jam-jam yang sama ditandai ↑ di [tabel per jam](Efficiency-Calculation-id#tabel-per-jam). |
+| **RADIAN RENDAH SEPANJANG LINTASAN** | Sebuah radian aktif berada di bawah 20° dan dalam 30° dari arah lintasan. Efisiensi yang dihitung tetap rendah (hati-hati), tetapi DJ5HG memperkirakan pantulan yang jarang namun kuat dari jejak menyapu yang searah lintasan (Hamburg–Narvik, Quadrantid, sekitar 19 UTC): layak didengarkan. |
 | *Tidak ada zona bersama lapisan E* | Lintasan lebih panjang dari dua kali jangkauan pada ketinggian jejak: kedua stasiun tidak melihat bagian bersama dari lapisan E (satu lompatan tidak mungkin). |
 | *Tidak ada Hot yang disarankan* | Hampir tidak ada hujan meteor aktif pada waktu ini. |
 

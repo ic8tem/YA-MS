@@ -28,10 +28,10 @@ Den orange raden under reglagen visar regeln med de aktuella siffrorna, t.ex. *N
 ## Från radarn till amatörbandet
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Källa:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maj 2025 – reflexernas antal och intensitet skalar med **λ³**, varaktigheten med **λ²** (432 MHz ligger 14–15 dB under 144 MHz och varar 1/9 så länge). **Kontroll:** λ³-beroendet är detsamma som i McKinleys ekvation för underdensa spår. Med k = 3 blir 1000 meteorer/timme i Collm omkring **16 reflexer/timme på 144 MHz**; RMOB-observatörer av GRAVES på 143,050 MHz räknar vanligen **20 till 140 ekon/timme** (RMOB-bulletinen, juni 2018): storleksordningen är förenlig, och skillnaden är stationsfaktorn K. (Handboken ekv. 44–45.)
+**Källa:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maj 2025 – reflexernas antal och intensitet skalar med **λ³**, varaktigheten med **λ²** (432 MHz ligger 14–15 dB under 144 MHz och varar 1/9 så länge). **Kontroll:** i McKinleys ekvation är λ³ effekten från ett enda underdenst spår, inte antalet spår; för massindex 2 skalar antalet spår över en fast tröskel ungefär som λ^1,5 (IZ5TEK; OH5IY). Programmet behåller k = 3, SM6FHZ:s experimentella regel, och säger det; rätt k för din station får du från jämförelsen med RMOB. Vid framåtspridning växer varaktigheten dessutom med sec²φ (McKinley; OH5IY): Collm mäter i bakåtspridning (φ = 0), så prognosen multiplicerar med sec²φ i sträckans mittpunkt (×4 vid 60°, ×8,5 vid 70°, ×33 vid 80°). Med k = 3 blir 1000 meteorer/timme i Collm omkring **16 reflexer/timme på 144 MHz**; RMOB-observatörer av GRAVES på 143,050 MHz räknar vanligen **20 till 140 ekon/timme** (RMOB-bulletinen, juni 2018): storleksordningen är förenlig, och skillnaden är stationsfaktorn K. (Handboken ekv. 44–45.)
 
 ## De närmaste 24 timmarna
 

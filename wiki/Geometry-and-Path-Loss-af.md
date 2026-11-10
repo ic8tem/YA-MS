@@ -69,15 +69,15 @@ As 1 − |p0|² < 0 is die pad langer as 2·d_H en sien die stasies **geen gemee
 
 ## Hot A en Hot B
 
-**Bron:** refleksies konsentreer in twee sones ("hot spots") ongeveer **50–150 km aan weerskante van die middelpunt**. Dit is die basis van die antennaverskuiwingstabel van AMS Bulletin No. 203, oorgeneem deur W8WN (10° verskuiwing vir paaie van 1500 en 1800 km); MSHV deur LZ2HV gebruik dieselfde kriterium.
+**Bron:** refleksies van sporadiese meteore konsentreer in twee sones ("hot spots") aan weerskante van die middelpunt. J. Richardson (AMS) gee in die tabel wat DJ5HG aanhaal (*Die Geometrie von Meteorscatterverbindungen*, 2004) die antennaverskuiwing vanaf die direkte rigting: **13° by 1000 km, 11° by 1250 km, 10° by 1500 en 2000 km**. AMS Bulletin No. 203, oorgeneem deur W8WN, gee 10° by 1500 en 1800 km.
 
-**Keuse:** Hot A en Hot B is die punte op afstand s van die middelpunt M, loodreg op die pad (s = 150 km, verstelbaar 30–400 km); A links as jy van jou stasie na die DX kyk, B regs [21]. Die verskuiwing soos vanaf die stasie gesien is ongeveer [22]:
+**Keuse:** Hot A en Hot B is die punte op afstand s van die middelpunt M, loodreg op die pad. Met *auto (AMS)* gemerk (verstek) kom s uit die verskuiwing van Richardson se tabel, lineêr geïnterpoleer (13° onder 1000 km, 10° bo 2000 km): s = (D/2)·tan(verskuiwing). Ongemerk word s met die hand ingevoer, 30–400 km (MSHV gebruik 150 km); A links as jy van jou stasie na die DX kyk, B regs [21]. Die verskuiwing soos vanaf die stasie gesien is ongeveer [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Kontrole:** JN70CN–IN78UO, D = 1710 km: 6,7° met s = 100 km, **10,0° met s = 150 km** (dieselfde as MSHV en AMS/W8WN), 13,2° met s = 200 km.
+**Kontrole:** met die AMS-tabel, 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, dieselfde as die 150 km wat voorheen en deur MSHV gebruik is; op kort paaie bring die tabel die hot spots nader aan die middelpunt.
 
 ## Onderdigte padverlies
 

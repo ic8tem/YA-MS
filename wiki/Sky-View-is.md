@@ -8,7 +8,7 @@
 
 Þessi undirflipi (himinhvelfingin í eldri útgáfum) sýnir á einum skjá **hvar** nýtilegu slóðirnar eru núna og **hvert skal beina loftnetinu**. Til vinstri er **grunnmynd** leiðarinnar; til hægri listi yfir drífur, lítil himinhvelfing með geislapunktunum, texti útreikningsins og **sniðið** séð frá loftnetinu þínu. Allt miðast við tímann sem valinn er með *Dagsetning útreiknings (UTC)* og sleðanum *Klukkustundir (−12 til +36 klst.)* (rauntími sjálfgefið, í 15 mínútna skrefum).
 
-**Rönd fyrir ofan grunnmyndina** dregur saman útreikninginn fyrir þá stund: dagsetningu og tíma (*núna* eða klukkustundir frá núna), **leiðarstuðulinn Σ ZHR×η**, **gagnlegustu drífuna** með ZHR hennar og nýtni, fjölda drífa yfir sjóndeildarhring og **ráðlagðan Hot** með áttarhorni hans.
+**Rönd fyrir ofan grunnmyndina** dregur saman útreikninginn fyrir þá stund: dagsetningu og tíma (*núna* eða klukkustundir frá núna), **leiðarstuðulinn Σ ZHR×η**, **gagnlegustu drífuna** með ZHR hennar og nýtni (einnig í dB miðað við viðmið DJ5HG, sjá [Útreikningur nýtni](Efficiency-Calculation-is)), fjölda drífa yfir sjóndeildarhring og **ráðlagðan Hot** með áttarhorni hans.
 
 Í litlu himinhvelfingunni sýnir **appelsínugul lína** gegnum hvirfilpunktinn alltaf **réttu loftnetsstefnurnar**, hornrétt á rek valinnar drífu (eða þeirrar hagstæðustu): áttarhorn geislapunkts ±90°, merkt *loftnet NNN°* í báðum endum, með vikmörkunum ±45° sem grönnum línum. Stutt appelsínugul strik á jaðrinum sýna hornréttu stefnurnar fyrir hinar nýtilegu drífurnar.
 
@@ -19,7 +19,7 @@ Kort af Evrópu séð ofan frá (**A til hægri**) með gráðukvarða umhverfis
 | Atriði | Teikning |
 |---|---|
 | Leið / DX | Græn lína frá þinni stöð til mótstöðvarinnar (alltaf raunveruleg stórhringsleið milli locatoranna) |
-| **Hot A / Hot B** | Punktar 150 km (stillanlegt) sitt hvorum megin við miðpunktinn, hornrétt á leiðina. **Rautt = ráðlagður**, **bleikt = utan loftnetsgeislans**, **grátt = innan geislans** (með viðvörun) |
+| **Hot A / Hot B** | Punktar sitt hvorum megin við miðpunktinn, hornrétt á leiðina, í þeirri fjarlægð sem frávikstafla AMS gefur (eða slegin inn handvirkt). **Rautt = ráðlagður**, **bleikt = utan loftnetsgeislans**, **grátt = innan geislans** (með viðvörun) |
 | Loftnetsgeisli | Lárétti −3 dB geislinn umhverfis áttarhorn loftnetsins (loftnetinu alltaf beint að DX), merktur *geisli …°* |
 | Mörk sameiginlega svæðisins | Daufir punktar *mörk A* / *mörk B* og hringirnir tveir þar sem sjóndeildarhringur hvorrar stöðvar mætir E-laginu (sjá [Rúmfræði](Geometry-and-Path-Loss-is#mörk-sameiginlega-svæðisins)) |
 | Rek drífunnar | **Gul lína**: stefnan sem valin drífa (eða sú hagstæðasta) sópar himininn í, þ.e. áttarhorn geislapunktsins |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **VIÐVÖRUN: Hot A (og/eða Hot B) lendir innan loftnetsgeislans …** | Heiti bletturinn er innan ±θ/2 frá áttarhorni loftnetsins (θ = láréttur −3 dB geisli): með þessari stefnu er hann þegar þakinn. Sýndur grár á kortinu. Ráðlagður Hot helst rauður. |
 | **GEISLAPUNKTUR OF HÁTT (yfir 70°)** | Nýtilegur geislapunktur er yfir 70° séð frá þinni stöð: slóðirnar falla nánast lóðrétt og endurvarpa litlu í átt að leiðinni (DF5HC, DH9GCD). Sömu klukkustundir eru merktar ↑ í [klukkustundatöflunni](Efficiency-Calculation-is#klukkustundatafla). |
+| **LÁGUR GEISLAPUNKTUR EFTIR LEIÐINNI** | Virkur geislapunktur er undir 20° og innan 30° frá stefnu leiðarinnar. Reiknuð nýtni helst lág (varfærin), en DJ5HG býst við sjaldgæfum, sterkum endurvörpum frá strjúkandi slóðum í línu við leiðina (Hamborg–Narvík, Quadrantítar, um 19 UTC): þess virði að hlusta. |
 | *Ekkert sameiginlegt svæði í E-laginu* | Leiðin er lengri en tvöföld drægnin í hæð slóðanna: stöðvarnar tvær sjá engan sameiginlegan hluta E-lagsins (eitt stökk ómögulegt). |
 | *Enginn ráðlagður Hot* | Nánast engin virk drífa á þessum tíma. |
 

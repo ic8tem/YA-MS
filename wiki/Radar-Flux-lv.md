@@ -61,7 +61,7 @@ Ja augstumu grafika skala mainās, programma brīdina: *augstumu statistika (mod
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-**SM6FHZ** eksperimentālie likumi (VUSHF 2025): atstarojumu skaits un intensitāte mainās ar λ³, ilgums ar λ²; λ³ atkarība ir tā pati, kas McKinley zema blīvuma vienādojumā. Tiek parādīts arī IARU 1. reģiona maksimālais pinga ilgums (1000 ms 50 MHz, 500 ms 70 MHz, 100 ms 144 MHz, 13 ms 432 MHz). Vērtības ir orientējošas, salīdzināšanai ar pieredzi ēterā. Stacijas koeficients K un salīdzinājums ar RMOB ir cilnē [Eksperimentālas prognozes](Experimental-Forecasts-lv).
+**SM6FHZ** eksperimentālie likumi (VUSHF 2025): atstarojumu skaits un intensitāte mainās ar λ³, ilgums ar λ² (pie McKinley λ³ ir vienas sliedes jauda; sliežu skaits mainās aptuveni ar λ^1,5, un tiešajā izkliedē ilgumi turklāt pieaug ar sec²φ: sk. [Eksperimentālas prognozes](Experimental-Forecasts-lv)). Tiek parādīts arī IARU 1. reģiona maksimālais pinga ilgums (1000 ms 50 MHz, 500 ms 70 MHz, 100 ms 144 MHz, 13 ms 432 MHz). Vērtības ir orientējošas, salīdzināšanai ar pieredzi ēterā. Stacijas koeficients K un salīdzinājums ar RMOB ir cilnē [Eksperimentālas prognozes](Experimental-Forecasts-lv).
 
 ## Bez tīkla
 

@@ -8,7 +8,7 @@
 
 Denne underfane (himmelkuplen fra tidligere versioner) samler på én skærm, **hvor** de nyttige spor er nu, og **hvorhen** antennen skal pege. Til venstre strækningen **set ovenfra**; til højre sværmlisten, en lille himmelkuppel med radianterne, beregningens tekst og **snittet** set fra din antenne. Alt refererer til det tidspunkt, der er valgt med *Beregningsdato (UTC)* og skyderen *Timer (−12 til +36 t)* (realtid som standard, i trin på 15 minutter).
 
-En **bjælke over visningen set ovenfra** opsummerer beregningen for det tidspunkt: dato og klokkeslæt (*nu* eller timer fra nu), **strækningsindekset Σ ZHR×η**, den **mest nyttige sværm** med dens ZHR og effektivitet, antallet af sværme over horisonten og det **anbefalede Hot** med dets azimut.
+En **bjælke over visningen set ovenfra** opsummerer beregningen for det tidspunkt: dato og klokkeslæt (*nu* eller timer fra nu), **strækningsindekset Σ ZHR×η**, den **mest nyttige sværm** med dens ZHR og effektivitet (også i dB i forhold til DJ5HG-referencen, se [Effektivitetsberegning](Efficiency-Calculation-da)), antallet af sværme over horisonten og det **anbefalede Hot** med dets azimut.
 
 I den lille himmelkuppel angiver en **orange linje** gennem zenit altid de **rigtige antenneretninger**, vinkelret på vandringen af den valgte sværm (eller den mest gunstige): radiantens azimut ±90°, mærket *antenne NNN°* i begge ender, med tolerancen ±45° som tynde linjer. Korte orange streger på kanten angiver de vinkelrette retninger for de andre nyttige sværme.
 
@@ -19,7 +19,7 @@ Et kort over Europa set ovenfra (**Ø til højre**) med en gradskala rundt om. B
 | Element | Tegning |
 |---|---|
 | Strækning / DX | Grøn linje fra din station til modstationen (altid den faktiske storcirkelstrækning mellem lokatorerne) |
-| **Hot A / Hot B** | Punkter 150 km (kan indstilles) på hver side af midtpunktet, vinkelret på strækningen. **Rød = anbefalet**, **lyserød = uden for antennelappen**, **grå = inden for lappen** (med en advarsel) |
+| **Hot A / Hot B** | Punkter på hver side af midtpunktet, vinkelret på strækningen, i den afstand, som AMS-forskydningstabellen giver (eller indtastet manuelt). **Rød = anbefalet**, **lyserød = uden for antennelappen**, **grå = inden for lappen** (med en advarsel) |
 | Antennelap | Den vandrette −3 dB-lap omkring antennens azimut (antennen peger altid mod DX), mærket *lap …°* |
 | Grænser for fælles zone | Svage *græn. A* / *græn. B*-punkter og de to cirkler, hvor hver stations horisont møder E-laget (se [Geometri](Geometry-and-Path-Loss-da#grænser-for-den-fælles-zone)) |
 | Sværmens vandring | **Gul linje**: den retning, hvori den valgte sværm (eller den mest gunstige) fejer hen over himlen, dvs. radiantens azimut |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **ADVARSEL: Hot A (og/eller Hot B) ligger inden for antennens lap …** | Hot spottet ligger inden for ±θ/2 af antennens azimut (θ = vandret −3 dB-lap): med denne retning er det allerede dækket. Vist med gråt på kortet. Det anbefalede Hot forbliver rødt. |
 | **RADIANT FOR HØJT (over 70°)** | En nyttig radiant står over 70° set fra din station: sporene falder næsten lodret og reflekterer kun lidt mod strækningen (DF5HC, DH9GCD). De samme timer markeres med ↑ i [timetabellen](Efficiency-Calculation-da#timetabel). |
+| **LAV RADIANT LANGS STRÆKNINGEN** | En aktiv radiant står under 20° og inden for 30° af strækningens retning. Den beregnede effektivitet forbliver lav (forsigtig), men DJ5HG forventer sjældne, stærke refleksioner fra strejfende spor på linje med strækningen (Hamburg–Narvik, Quadrantiderne, ca. 19 UTC): værd at lytte efter. |
 | *Ingen fælles zone i E-laget* | Strækningen er længere end det dobbelte af rækkevidden i sporhøjde: de to stationer ser ingen fælles del af E-laget (ét hop umuligt). |
 | *Ingen anbefalet Hot* | Næsten ingen aktive sværme i øjeblikket. |
 

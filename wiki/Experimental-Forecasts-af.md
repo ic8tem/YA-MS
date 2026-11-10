@@ -28,10 +28,10 @@ Die oranje reël onder die kontroles wys die reël met die huidige getalle, bv. 
 ## Van die radar na die amateurband
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Bron:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45ste Nordic VUSHF, Mei 2025 – aantal en intensiteit van refleksies skaal met **λ³**, duur met **λ²** (432 MHz is 14–15 dB onder 144 MHz en duur 1/9). **Kontrole:** die λ³-afhanklikheid is dieselfde as in McKinley se onderdigte vergelyking. Met k = 3 word 1000 meteore/uur by Collm ongeveer **16 refleksies/uur op 144 MHz**; RMOB-waarnemers van GRAVES op 143,050 MHz tel gewoonlik **20 tot 140 eggo's/uur** (RMOB-bulletin, Junie 2018): die grootte-orde is versoenbaar, en die verskil is die stasiefaktor K. (Handleiding vgl. 44–45.)
+**Bron:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45ste Nordic VUSHF, Mei 2025 – aantal en intensiteit van refleksies skaal met **λ³**, duur met **λ²** (432 MHz is 14–15 dB onder 144 MHz en duur 1/9). **Kontrole:** in McKinley se vergelyking is λ³ die drywing van 'n enkele onderdigte spoor, nie die aantal spore nie; vir massa-indeks 2 skaal die aantal spore bo 'n vaste drempel ongeveer met λ^1,5 (IZ5TEK; OH5IY). Die program behou k = 3, SM6FHZ se eksperimentele reël, en sê so; die regte k vir jou stasie kom uit die RMOB-vergelyking. In voorwaartse verstrooiing groei die duur ook met sec²φ (McKinley; OH5IY): Collm meet in terugverstrooiing (φ = 0), dus vermenigvuldig die voorspelling met sec²φ by die middelpunt van die pad (×4 by 60°, ×8,5 by 70°, ×33 by 80°). Met k = 3 word 1000 meteore/uur by Collm ongeveer **16 refleksies/uur op 144 MHz**; RMOB-waarnemers van GRAVES op 143,050 MHz tel gewoonlik **20 tot 140 eggo's/uur** (RMOB-bulletin, Junie 2018): die grootte-orde is versoenbaar, en die verskil is die stasiefaktor K. (Handleiding vgl. 44–45.)
 
 ## Volgende 24 uur
 

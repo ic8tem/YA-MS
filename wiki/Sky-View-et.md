@@ -8,7 +8,7 @@
 
 See alamsakk (varasemate versioonide taevavõlv) näitab ühel ekraanil, **kus** kasulikud jäljed praegu on ja **kuhu** antenn suunata. Vasakul trassi **pealtvaade**; paremal meteoorivoolude loetelu, väike taevavõlv radiantidega, arvutuse tekst ja sinu antennist nähtav **lõige**. Kõik viitab hetkele, mis on valitud väljaga *Arvutuse kuupäev (UTC)* ja liuguriga *Tunnid (−12 kuni +36 h)* (vaikimisi reaalaeg, 15-minutiliste sammudega).
 
-**Pealtvaate kohal olev riba** võtab selle hetke arvutuse kokku: kuupäev ja kellaaeg (*praegu* või tunnid praegusest), **trassi indeks Σ ZHR×η**, **kõige kasulikum meteoorivool** koos oma ZHR-i ja efektiivsusega, horisondi kohal olevate meteoorivoolude arv ning **soovitatud Hot** koos asimuudiga.
+**Pealtvaate kohal olev riba** võtab selle hetke arvutuse kokku: kuupäev ja kellaaeg (*praegu* või tunnid praegusest), **trassi indeks Σ ZHR×η**, **kõige kasulikum meteoorivool** koos oma ZHR-i ja efektiivsusega (ka dB-des DJ5HG viite suhtes, vt [Efektiivsuse arvutus](Efficiency-Calculation-et)), horisondi kohal olevate meteoorivoolude arv ning **soovitatud Hot** koos asimuudiga.
 
 Väikeses taevavõlvis näitab läbi seniidi kulgev **oranž joon** alati **õigeid antennisuundi**, mis on risti valitud (või kõige soodsama) meteoorivoolu nihkumisega: radiandi asimuut ±90°, mõlemas otsas silt *antenn NNN°*, ±45° tolerants peente joontena. Lühikesed oranžid kriipsud serval näitavad teiste kasulike meteoorivoolude ristsuundi.
 
@@ -19,7 +19,7 @@ Väikeses taevavõlvis näitab läbi seniidi kulgev **oranž joon** alati **õig
 | Element | Joonis |
 |---|---|
 | Trass / DX | Roheline joon sinu jaamast korrespondendini (alati lokaatorite vaheline tegelik suurringjoone trass) |
-| **Hot A / Hot B** | Punktid 150 km (reguleeritav) kaugusel mõlemal pool keskpunkti, trassiga risti. **Punane = soovitatud**, **roosa = väljaspool antenni peaharu**, **hall = peaharus** (koos hoiatusega) |
+| **Hot A / Hot B** | Punktid mõlemal pool keskpunkti, trassiga risti, AMS-i nihketabeli antud (või käsitsi sisestatud) kaugusel. **Punane = soovitatud**, **roosa = väljaspool antenni peaharu**, **hall = peaharus** (koos hoiatusega) |
 | Antenni peaharu | −3 dB horisontaalne peaharu antenni asimuudi ümber (antenn alati suunatud DX-ile), silt *peaharu …°* |
 | Ühisala piirid | Kahvatud punktid *piir A* / *piir B* ja kaks ringi, kus kummagi jaama horisont kohtub E-kihiga (vt [Geomeetria](Geometry-and-Path-Loss-et#ühisala-piirid)) |
 | Meteoorivoolu nihkumine | **Kollane joon**: suund, milles valitud (või kõige soodsam) meteoorivool taevast pühib, st radiandi asimuut |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **HOIATUS: Hot A (ja/või Hot B) jääb antenni peaharusse …** | Hot spot on antenni asimuudist ±θ/2 piires (θ = horisontaalne −3 dB peaharu): selle suunaga on see juba kaetud. Kaardil hallina. Soovitatud Hot jääb punaseks. |
 | **RADIANT LIIGA KÕRGEL (üle 70°)** | Kasulik radiant on sinu jaamast üle 70°: jäljed langevad peaaegu vertikaalselt ja peegeldavad trassi suunas vähe (DF5HC, DH9GCD). Samad tunnid on [tunnitabelis](Efficiency-Calculation-et#tunnitabel) märgitud ↑-ga. |
+| **MADAL RADIANT PIKI TRASSI** | Aktiivne radiant on alla 20° ja trassi suunast vähem kui 30° kaugusel. Arvutatud efektiivsus jääb madalaks (ettevaatlik), kuid DJ5HG ootab harvu tugevaid peegeldusi trassiga joondatud riivavatelt jälgedelt (Hamburg–Narvik, kvadrantiidid, umbes 19 UTC): tasub kuulata. |
 | *E-kihi ühisala puudub* | Trass on pikem kui kahekordne ulatus jälgede kõrgusel: kaks jaama ei näe E-kihi ühist osa (üks hüpe võimatu). |
 | *Soovitatud Hot puudub* | Sel ajal pole peaaegu ühtegi aktiivset meteoorivoolu. |
 

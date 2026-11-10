@@ -69,15 +69,15 @@ Als 1 − |p0|² < 0 is het traject langer dan 2·d_H en zien de stations **geen
 
 ## Hot A en Hot B
 
-**Bron:** reflecties concentreren zich in twee zones ("hotspots") op ongeveer **50–150 km aan weerszijden van het middelpunt**. Dat is de basis van de tabel met antenne-afwijkingen uit AMS Bulletin nr. 203, overgenomen door W8WN (afwijking van 10° voor trajecten van 1500 en 1800 km); MSHV van LZ2HV gebruikt hetzelfde criterium.
+**Bron:** reflecties van sporadische meteoren concentreren zich in twee zones ("hotspots") aan weerszijden van het middelpunt. J. Richardson (AMS) geeft in de door DJ5HG aangehaalde tabel (*Die Geometrie von Meteorscatterverbindungen*, 2004) de antenne-afwijking ten opzichte van de directe richting: **13° bij 1000 km, 11° bij 1250 km, 10° bij 1500 en 2000 km**. AMS Bulletin nr. 203, overgenomen door W8WN, geeft 10° bij 1500 en 1800 km.
 
-**Keuze:** Hot A en Hot B zijn de punten op afstand s van het middelpunt M, loodrecht op het traject (s = 150 km, instelbaar 30–400 km); A links, kijkend van jouw station naar de DX, B rechts [21]. De afwijking gezien vanaf het station is ongeveer [22]:
+**Keuze:** Hot A en Hot B zijn de punten op afstand s van het middelpunt M, loodrecht op het traject. Met *auto (AMS)* aangevinkt (standaard) volgt s uit de afwijking van de tabel van Richardson, lineair geïnterpoleerd (13° onder 1000 km, 10° boven 2000 km): s = (D/2)·tan(afwijking). Niet aangevinkt wordt s met de hand ingevoerd, 30–400 km (MSHV gebruikt 150 km); A links, kijkend van jouw station naar de DX, B rechts [21]. De afwijking gezien vanaf het station is ongeveer [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Controle:** JN70CN–IN78UO, D = 1710 km: 6,7° met s = 100 km, **10,0° met s = 150 km** (gelijk aan MSHV en AMS/W8WN), 13,2° met s = 200 km.
+**Controle:** met de AMS-tabel 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, gelijk aan de eerder en door MSHV gebruikte 150 km; op korte trajecten brengt de tabel de hotspots dichter bij het middelpunt.
 
 ## Demping bij onderdichte sporen
 

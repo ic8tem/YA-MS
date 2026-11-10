@@ -8,7 +8,7 @@
 
 Šī apakšcilne (agrāko versiju debess velve) vienā ekrānā parāda, **kur** tagad ir lietderīgās sliedes un **kurp** tēmēt. Kreisajā pusē ir trases **skats no augšas**; labajā – plūsmu saraksts, maza debess velve ar radiantiem, aprēķina teksts un **griezums**, kā to redz tava antena. Viss attiecas uz brīdi, kas izvēlēts ar *Aprēķina datums (UTC)* un slīdni *Stundas (no −12 līdz +36 h)* (noklusējumā reālais laiks, ar 15 minūšu soli).
 
-**Josla virs skata no augšas** apkopo aprēķinu šim brīdim: datums un laiks (*tagad* vai stundas no šī brīža), **trases indekss Σ ZHR×η**, **noderīgākā plūsma** ar tās ZHR un efektivitāti, plūsmu skaits virs horizonta un **ieteicamais Hot** ar tā azimutu.
+**Josla virs skata no augšas** apkopo aprēķinu šim brīdim: datums un laiks (*tagad* vai stundas no šī brīža), **trases indekss Σ ZHR×η**, **noderīgākā plūsma** ar tās ZHR un efektivitāti (arī dB attiecībā pret DJ5HG atskaiti, sk. [Efektivitātes aprēķins](Efficiency-Calculation-lv)), plūsmu skaits virs horizonta un **ieteicamais Hot** ar tā azimutu.
 
 Mazajā debess velvē **oranža līnija** caur zenītu vienmēr rāda **pareizos antenas virzienus**, ortogonālus izvēlētās (vai visizdevīgākās) plūsmas pārvietojumam: radianta azimuts ±90°, abos galos ar uzrakstu *antena NNN°*, un ±45° pielaide plānās līnijās. Īsas oranžas iedaļas uz malas rāda pārējo lietderīgo plūsmu ortogonālos virzienus.
 
@@ -19,7 +19,7 @@ Eiropas karte, skatoties no augšas (**A pa labi**), ar grādu skalu apkārt. Pa
 | Elements | Zīmējums |
 |---|---|
 | Trase / DX | Zaļa līnija no tavas stacijas līdz korespondentam (vienmēr reālā lielā loka trase starp lokatoriem) |
-| **Hot A / Hot B** | Punkti 150 km (regulējams) abpus viduspunktam, perpendikulāri trasei. **Sarkans = ieteicamais**, **rozā = ārpus antenas ziedlapiņas**, **pelēks = ziedlapiņā** (ar brīdinājumu) |
+| **Hot A / Hot B** | Punkti abpus viduspunktam, perpendikulāri trasei, attālumā pēc AMS nobīžu tabulas (vai ievadītā ar roku). **Sarkans = ieteicamais**, **rozā = ārpus antenas ziedlapiņas**, **pelēks = ziedlapiņā** (ar brīdinājumu) |
 | Antenas ziedlapiņa | −3 dB horizontālā ziedlapiņa ap antenas azimutu (antena vienmēr vērsta uz DX), ar uzrakstu *ziedlapiņa …°* |
 | Kopējās zonas robežas | Blāvi punkti *rob. A* / *rob. B* un divi apļi, kur katras stacijas horizonts satiekas ar E slāni (sk. [Ģeometrija](Geometry-and-Path-Loss-lv#kopējās-zonas-robežas)) |
 | Plūsmas pārvietošanās | **Dzeltena līnija**: virziens, kurā izvēlētā (vai visizdevīgākā) plūsma pārvietojas pa debesīm, t.i., radianta azimuts |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **UZMANĪBU: Hot A (un/vai Hot B) ir antenas ziedlapiņā …** | Hot spot ir ±θ/2 robežās no antenas azimuta (θ = horizontālā −3 dB ziedlapiņa): ar šo virzienu tas jau ir pārklāts. Kartē tas ir pelēks. Ieteicamais Hot paliek sarkans. |
 | **RADIANTS PĀRĀK AUGSTU (virs 70°)** | Kāds lietderīgs radiants ir virs 70°, skatoties no tavas stacijas: sliedes krīt gandrīz vertikāli un uz trasi atstaro maz (DF5HC, DH9GCD). Tās pašas stundas [stundu tabulā](Efficiency-Calculation-lv#stundu-tabula) ir atzīmētas ar ↑. |
+| **ZEMS RADIANTS GAR TRASI** | Aktīvs radiants ir zem 20° un 30° robežās no trases virziena. Aprēķinātā efektivitāte paliek zema (piesardzīga), bet DJ5HG sagaida retus, spēcīgus atstarojumus no slīdošām sliedēm gar trasi (Hamburga–Narvika, kvadrantīdas, ap 19 UTC): vērts paklausīties. |
 | *Nav kopējas E slāņa zonas* | Trase ir garāka par divkāršu sniedzamību sliežu augstumā: abas stacijas neredz kopīgu E slāņa daļu (viens lēciens nav iespējams). |
 | *Nav ieteicamā Hot* | Šajā laikā gandrīz nav aktīvu plūsmu. |
 

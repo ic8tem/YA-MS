@@ -28,10 +28,10 @@ Ipinapakita ng kahel na linya sa ilalim ng mga kontrol ang tuntunin na may kasal
 ## Mula sa radar patungo sa amateur band
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Sanggunian:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, Mayo 2025 – ang bilang at lakas ng mga repleksiyon ay sumusunod sa **λ³**, ang tagal sa **λ²** (ang 432 MHz ay 14–15 dB na mas mababa sa 144 MHz at tumatagal nang 1/9). **Pagsusuri:** ang pagdepende sa λ³ ay kapareho ng nasa underdense na ekwasyon ni McKinley. Kapag k = 3, ang 1000 meteor/oras sa Collm ay nagiging mga **16 na repleksiyon/oras sa 144 MHz**; karaniwang nakabibilang ang mga RMOB observer ng GRAVES sa 143.050 MHz ng **20 hanggang 140 echo/oras** (bulletin ng RMOB, Hunyo 2018): magkatugma ang order of magnitude, at ang pagkakaiba ay ang station factor K. (Manwal eq. 44–45.)
+**Sanggunian:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, Mayo 2025 – ang bilang at lakas ng mga repleksiyon ay sumusunod sa **λ³**, ang tagal sa **λ²** (ang 432 MHz ay 14–15 dB na mas mababa sa 144 MHz at tumatagal nang 1/9). **Pagsusuri:** sa ekwasyon ni McKinley, ang λ³ ay ang lakas ng isang underdense na bakas, hindi ang bilang ng mga bakas; sa mass index na 2, ang bilang ng mga bakas na lampas sa isang nakapirming threshold ay sumusunod nang humigit-kumulang sa λ^1.5 (IZ5TEK; OH5IY). Pinananatili ng programa ang k = 3, ang eksperimental na tuntunin ni SM6FHZ, at sinasabi ito; ang tamang k para sa iyong istasyon ay nagmumula sa paghahambing sa RMOB. Sa forward scatter, humahaba rin ang tagal kasabay ng sec²φ (McKinley; OH5IY): sumusukat ang Collm sa backscatter (φ = 0), kaya pinararami ng pagtataya ang sec²φ sa gitnang punto ng landas (×4 sa 60°, ×8.5 sa 70°, ×33 sa 80°). Kapag k = 3, ang 1000 meteor/oras sa Collm ay nagiging mga **16 na repleksiyon/oras sa 144 MHz**; karaniwang nakabibilang ang mga RMOB observer ng GRAVES sa 143.050 MHz ng **20 hanggang 140 echo/oras** (bulletin ng RMOB, Hunyo 2018): magkatugma ang order of magnitude, at ang pagkakaiba ay ang station factor K. (Manwal eq. 44–45.)
 
 ## Susunod na 24 na oras
 

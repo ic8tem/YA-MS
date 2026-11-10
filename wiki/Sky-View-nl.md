@@ -8,7 +8,7 @@
 
 Dit subtabblad (de hemelkoepel van eerdere versies) zet op één scherm **waar** de bruikbare sporen nu zijn en **waarheen je moet richten**. Links het **bovenaanzicht** van het traject; rechts de lijst van zwermen, een kleine hemelkoepel met de radianten, de tekst van de berekening en de **doorsnede** gezien vanaf je antenne. Alles verwijst naar het moment dat is gekozen met *Berekeningsdatum (UTC)* en de schuifregelaar *Uren (−12 tot +36 u)* (standaard realtime, in stappen van 15 minuten).
 
-Een **strook boven het bovenaanzicht** vat de berekening voor dat moment samen: datum en tijd (*nu* of uren vanaf nu), de **trajectindex Σ ZHR×η**, de **nuttigste zwerm** met zijn ZHR en efficiëntie, het aantal zwermen boven de horizon en de **aanbevolen hot** met zijn azimut.
+Een **strook boven het bovenaanzicht** vat de berekening voor dat moment samen: datum en tijd (*nu* of uren vanaf nu), de **trajectindex Σ ZHR×η**, de **nuttigste zwerm** met zijn ZHR en efficiëntie (ook in dB ten opzichte van de referentie van DJ5HG, zie [Efficiëntieberekening](Efficiency-Calculation-nl)), het aantal zwermen boven de horizon en de **aanbevolen hot** met zijn azimut.
 
 In de kleine hemelkoepel geeft een **oranje lijn** door het zenit altijd de **juiste antennerichtingen**, loodrecht op het verloop van de geselecteerde zwerm (of van de gunstigste): azimut van de radiant ±90°, aan beide uiteinden gelabeld met *antenne NNN°*, met de tolerantie van ±45° als dunne lijnen. Korte oranje streepjes op de rand geven de loodrechte richtingen van de andere bruikbare zwermen.
 
@@ -19,7 +19,7 @@ Een kaart van Europa van bovenaf gezien (**O rechts**) met een gradenschaal erom
 | Element | Tekening |
 |---|---|
 | Traject / DX | Groene lijn van jouw station naar het tegenstation (altijd het werkelijke grootcirkeltraject tussen de locators) |
-| **Hot A / Hot B** | Punten op 150 km (instelbaar) aan weerszijden van het middelpunt, loodrecht op het traject. **Rood = aanbevolen**, **roze = buiten de antennebundel**, **grijs = binnen de bundel** (met een waarschuwing) |
+| **Hot A / Hot B** | Punten aan weerszijden van het middelpunt, loodrecht op het traject, op de afstand uit de AMS-afwijkingstabel (of met de hand ingevoerd). **Rood = aanbevolen**, **roze = buiten de antennebundel**, **grijs = binnen de bundel** (met een waarschuwing) |
 | Antennebundel | De horizontale −3 dB-bundel rond het azimut van de antenne (antenne altijd op de DX gericht), gelabeld *bundel …°* |
 | Grenzen gemeenschappelijke zone | Vage punten *gr. A* / *gr. B* en de twee cirkels waar de horizon van elk station de E-laag raakt (zie [Geometrie](Geometry-and-Path-Loss-nl#grenzen-van-de-gemeenschappelijke-zone)) |
 | Verloop zwerm | **Gele lijn**: richting waarin de geselecteerde zwerm (of de gunstigste) de hemel doorkruist, d.w.z. het azimut van de radiant |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **LET OP: Hot A (en/of Hot B) valt binnen de antennebundel …** | De hotspot ligt binnen ±θ/2 van het azimut van de antenne (θ = horizontale −3 dB-bundel): met deze richting is hij al gedekt. Grijs getoond op de kaart. De aanbevolen hot blijft rood. |
 | **RADIANT TE HOOG (boven 70°)** | Een bruikbare radiant staat vanaf jouw station hoger dan 70°: de sporen vallen bijna verticaal en reflecteren weinig naar het traject (DF5HC, DH9GCD). Dezelfde uren zijn met ↑ gemarkeerd in de [uurtabel](Efficiency-Calculation-nl#uurtabel). |
+| **LAGE RADIANT LANGS HET TRAJECT** | Een actieve radiant staat lager dan 20° en binnen 30° van de richting van het traject. De berekende efficiëntie blijft laag (voorzichtig), maar DJ5HG verwacht zeldzame, sterke reflecties van scherende sporen in lijn met het traject (Hamburg–Narvik, Quadrantiden, rond 19 UTC): de moeite waard om te luisteren. |
 | *Geen gemeenschappelijke zone in de E-laag* | Het traject is langer dan tweemaal het bereik op spoorhoogte: de twee stations zien geen gemeenschappelijk deel van de E-laag (enkele sprong onmogelijk). |
 | *Geen aanbevolen hot* | Vrijwel geen actieve zwerm op dit moment. |
 

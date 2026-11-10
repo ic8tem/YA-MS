@@ -61,7 +61,7 @@ Kung magbago ang iskala ng graph ng taas, nagbababala ang programa: *balido pa r
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-Mga eksperimental na tuntunin ni **SM6FHZ** (VUSHF 2025): ang bilang at lakas ng mga repleksiyon ay sumusunod sa λ³, ang tagal ay sa λ²; ang pagdepende sa λ³ ay kapareho ng nasa underdense na ekwasyon ni McKinley. Ipinapakita rin ang pinakamahabang tagal ng ping ayon sa IARU Region 1 (1000 ms sa 50 MHz, 500 ms sa 70 MHz, 100 ms sa 144 MHz, 13 ms sa 432 MHz). Pahiwatig lamang ang mga halaga, na dapat ihambing sa karanasan sa ere. Nasa [Eksperimental na pagtataya](Experimental-Forecasts-tl) ang station factor K at ang paghahambing sa RMOB.
+Mga eksperimental na tuntunin ni **SM6FHZ** (VUSHF 2025): ang bilang at lakas ng mga repleksiyon ay sumusunod sa λ³, ang tagal ay sa λ² (kay McKinley, ang λ³ ay ang lakas ng isang bakas; ang bilang ng mga bakas ay sumusunod nang humigit-kumulang sa λ^1.5, at sa forward scatter humahaba rin ang tagal kasabay ng sec²φ: tingnan ang [Eksperimental na pagtataya](Experimental-Forecasts-tl)). Ipinapakita rin ang pinakamahabang tagal ng ping ayon sa IARU Region 1 (1000 ms sa 50 MHz, 500 ms sa 70 MHz, 100 ms sa 144 MHz, 13 ms sa 432 MHz). Pahiwatig lamang ang mga halaga, na dapat ihambing sa karanasan sa ere. Nasa [Eksperimental na pagtataya](Experimental-Forecasts-tl) ang station factor K at ang paghahambing sa RMOB.
 
 ## Offline
 

@@ -8,7 +8,7 @@
 
 Hierdie sub-oortjie (die hemelkoepel van vroeër weergawes) wys op een skerm **waar** die bruikbare spore nou is en **waarheen om te rig**. Links die **bo-aansig** van die pad; regs die swermlys, 'n klein hemelkoepel met die radiante, die teks van die berekening en die **deursnee** soos vanaf jou antenna gesien. Alles verwys na die oomblik wat met *Berekeningsdatum (UTC)* en die skuifbalk *Ure (−12 tot +36 h)* gekies is (verstek intyds, in stappe van 15 minute).
 
-'n **Strook bo die bo-aansig** som die berekening vir daardie oomblik op: datum en tyd (*nou* of ure van nou af), die **padindeks Σ ZHR×η**, die **nuttigste swerm** met sy ZHR en doeltreffendheid, die aantal swerms bo die horison en die **aanbevole Hot** met sy azimut.
+'n **Strook bo die bo-aansig** som die berekening vir daardie oomblik op: datum en tyd (*nou* of ure van nou af), die **padindeks Σ ZHR×η**, die **nuttigste swerm** met sy ZHR en doeltreffendheid (ook in dB relatief tot die DJ5HG-verwysing, sien [Berekening van doeltreffendheid](Efficiency-Calculation-af)), die aantal swerms bo die horison en die **aanbevole Hot** met sy azimut.
 
 In die klein hemelkoepel gee 'n **oranje lyn** deur die senit altyd die **regte antennarigtings**, ortogonaal op die drywing van die gekose swerm (of van die gunstigste een): radiant-azimut ±90°, met die etiket *antenna NNN°* aan albei kante, en die toleransie van ±45° as dun lyne. Kort oranje merkies op die rand gee die ortogonale rigtings van die ander bruikbare swerms.
 
@@ -19,7 +19,7 @@ In die klein hemelkoepel gee 'n **oranje lyn** deur die senit altyd die **regte 
 | Element | Tekening |
 |---|---|
 | Pad / DX | Groen lyn van jou stasie na die DX-stasie (altyd die werklike grootsirkelpad tussen die lokators) |
-| **Hot A / Hot B** | Punte 150 km (verstelbaar) aan weerskante van die middelpunt, loodreg op die pad. **Rooi = aanbevole**, **pienk = buite die antennalob**, **grys = binne die lob** (met 'n waarskuwing) |
+| **Hot A / Hot B** | Punte aan weerskante van die middelpunt, loodreg op die pad, op die afstand wat die AMS-verskuiwingstabel gee (of met die hand ingevoer). **Rooi = aanbevole**, **pienk = buite die antennalob**, **grys = binne die lob** (met 'n waarskuwing) |
 | Antennalob | Die horisontale −3 dB-lob rondom die antenna-azimut (antenna altyd na die DX gerig), met die etiket *lob …°* |
 | Grense van die gemeenskaplike sone | Dowwe punte *gr. A* / *gr. B* en die twee sirkels waar elke stasie se horison die E-laag ontmoet (sien [Geometrie](Geometry-and-Path-Loss-af#grense-van-die-gemeenskaplike-sone)) |
 | Swermdrywing | **Geel lyn**: rigting waarin die gekose swerm (of die gunstigste een) die hemel deurkruis, d.w.s. die radiant-azimut |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **WAARSKUWING: Hot A (en/of Hot B) val binne die antennalob …** | Die hot spot is binne ±θ/2 van die antenna-azimut (θ = horisontale −3 dB-lob): met hierdie rigting is dit reeds gedek. In grys op die kaart gewys. Die aanbevole Hot bly rooi. |
 | **RADIANT TE HOOG (bo 70°)** | 'n Bruikbare radiant is hoër as 70° vanaf jou stasie: die spore val byna vertikaal en reflekteer min na die pad (DF5HC, DH9GCD). Dieselfde ure word in die [uurtabel](Efficiency-Calculation-af#uurtabel) met ↑ gemerk. |
+| **LAE RADIANT LANGS DIE PAD** | 'n Aktiewe radiant is onder 20° en binne 30° van die padrigting. Die berekende doeltreffendheid bly laag (versigtig), maar DJ5HG verwag seldsame, sterk refleksies van skrams spore in lyn met die pad (Hamburg–Narvik, Quadrantide, omstreeks 19 UTC): die moeite werd om te luister. |
 | *Geen gemeenskaplike E-laagsone nie* | Die pad is langer as twee keer die bereik op spoorhoogte: die twee stasies sien geen gemeenskaplike deel van die E-laag nie (enkele sprong onmoontlik). |
 | *Geen aanbevole Hot nie* | Byna geen aktiewe swerm op hierdie tyd nie. |
 

@@ -53,7 +53,7 @@ Alle trinnene står i [beregningshåndboken](Efficiency-Explanation-nb) (`doc/YA
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-Samme lov ligger til grunn for QTFGUI av DJ5HG (kjegleformet spredning). Betingelsen godtas med en gaussisk toleranse σ = 0,05 rad (ca. 3°) – *programmets valg*:
+Samme lov ligger til grunn for QTFGUI av DJ5HG og teksten hans *"Die Geometrie von Meteorscatterverbindungen"* (2004): sporet sprer på en kjegle med sporet som akse, og bare en mottaker på kjeglen hører det. For et ideelt spor er kjegleveggen svært tynn (en stråler tusenvis av bølgelengder lang); programmet godtar betingelsen med en gaussisk toleranse σ = 0,05 rad (ca. 3°), som står for det den ideelle kjeglen ikke ser: spredningen av svermenes radianter (0,3–1,4° målt av GMN), spor bøyd av vinden og den endelige lengden deres – *programmets valg*:
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 Antallet meteorer som når et punkt, er proporsjonalt med sinus til radiantens elevasjon der (ŝ·û_P), den samme korreksjonen som IMO bruker for ZHR.
 
+**Alternativet «Lengre spor med lav radiant (DJ5HG)»** (avkrysningsboks over diagrammet, av som standard, med verktøytips): DJ5HG påpeker at med lav radiant faller færre meteorer per km², men sporene er lengre (opptil 100 km brukbare) og oppfyller refleksjonsloven oftere. Med alternativet på blir vekten min(sin El, 15/100): den brukbare lagtykkelsen, 15 km, delt på sinus til elevasjonen gir sporlengden, begrenset til 100 km. Over ca. 9° opphever de to effektene hverandre. Av forblir beregningen forsiktig.
+
 **3. Sum og prosent.** Punkter for hver 15 km i sporhøyden, bare der begge stasjonene ser dem over lobeelevasjonen (*valg*). 100 % er den gunstigste radiantposisjonen for den strekningen:
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 F beregnes én gang per strekning på et rutenett av retninger (asimut for hver 5°, elevasjon for hver 2,5°) og interpoleres.
+
+**Effektivitet i dB (DJ5HG-referanse).** Prosenten er bare relativ til den beste radiantposisjonen for den strekningen. For å sammenligne ulike strekninger gir programmet også effektiviteten i dB i forhold til den faste referansen til DJ5HG: 0 dB er maksimum for en 1000 km nord–sør-strekning over ekvator med radianten på himmelekvator ved jevndøgn, beregnet med samme høyde og samme vekter. DJ5HG oppgir verdiene sine som bedre enn 6 dB.
 
 **4. Side og indeks.**
 
@@ -85,7 +89,9 @@ Bokstaven i tabellen er siden med størst andel. *Programmets valg (håndbokens 
 
 ## Sammenligning med DH9GCD
 
-En uavhengig kontroll: formelen for beste retning av **DH9GCD**, gjengitt av **DF5HC** (DARC-konferansen, januar 2018), der El og Az er radiantens elevasjon og asimut sett fra stasjonen din og P er motstasjonens asimut:
+Primærkildene for beste retning er Eshleman & Mlodnosky og Meeks & James (Proc. IRE, 1957), Hines (1955) og den eksperimentelle kontrollen av den ved Forsyth, Hines & Vogan (1955): bare radianter på halvsirkelen på himmelen vinkelrett på halveringslinjen for spredningsvinkelen er nyttige, antall spor øker med sin El, og nær midtpunktet faller de nyttige sporene ca. H·tan El til siden, på motsatt side av radianten. DJ5HG tar et forbehold: med en **lav** radiant rett langs strekningen gir McKinleys formel sterke signaler (Hamburg–Narvik, Kvadrantidene, ca. 19 UTC), så «radiant på linje med strekningen = nesten null» gjelder bare for en høy radiant; programmet forblir forsiktig og viser advarselen *LAV RADIANT LANGS STREKNINGEN*.
+
+En uavhengig kontroll: formelen for beste retning av **DH9GCD**, gjengitt av **DF5HC** (DARC-konferansen, januar 2018) – den har ingen publisert primærkilde – der El og Az er radiantens elevasjon og asimut sett fra stasjonen din og P er motstasjonens asimut:
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -99,6 +105,7 @@ Den er størst med radianten på 45° og på tvers av strekningen. DF5HC regner 
 |---|---|
 | SM6FHZ-regelen (VUSHF 2025): beste strekning vinkelrett på radiantens asimut, retning = radiantens az ±90°, toleranse ±40–50° | Gjengis av modellen; med radianten på linje med strekningen og høyt på himmelen er effektiviteten nesten null |
 | QTFGUI av DJ5HG, Hamburg JO53IM – Barcelona, Kvadrantidene, 4. januar (eksempel fra håndboken) | QTFGUI: 07:00 retning 252°, −8 dB; 08:00 ingen refleksjonssone; 09:00 retning 168°, −4 dB. YA-MS (høyde 102 km som QTFGUI): 07:00 241°, −5,4 dB; 08:00 0,6 % (−22 dB); 09:00 161°, −4,0 dB. DH9GCD: 26 %, 2 %, 32 %. Alle tre metodene ser hullet kl. 08:00, med radianten nesten i senit |
+| Kurvene til DJ5HG (*Die Geometrie…*, Bild 8–9: fra Hamburg og München, Kvadrantidene, 4. januar; avlest fra diagrammet, ca. ±0,5 dB og ±15 min) mot den automatiske testen `--prova-dj5hg` (én verdi per time) | Tidspunkter: hullet med radianten nær senit faller på de samme timene (Barcelona 07:30–08:30 mot 07–09; Sofia 06:36–07:48 mot 07–08; Narvik 07–08:30 mot 07–09); Moskva er stengt 03–10 i begge, åpen fra Hamburg til ca. 02:30 og fra München til ca. 00:30, slik DJ5HG skriver. Retninger: 2–10° forskjell. Nivåer: med høyde 102 km og alternativet for lengre spor på ligger nesten alle verdier innenfor 2–3 dB av kurvene; med alternativet av 3–7 dB under, men ettermiddagsminimaene ligger nærmere (Moskva −9 dB kl. 15, −11,5 dB kl. 18 mot −9 og −12,5). Hovedforskjell: DJ5HG viser et dypt minimum når radianten står lavest og nesten på linje med strekningen (Barcelona −16 dB kl. 19:36, Sofia −14 dB kl. 20); YA-MS viser det knapt (−8,6 og −10,4 dB med alternativet av, −1 og −3 dB på). Dette er DJ5HGs eget forbehold om en lav radiant langs strekningen: derav advarselen, og alternativet er av som standard |
 | Sampling for hver 5 km i stedet for 15 km | prosentene endres med mindre enn 0,3 poeng |
 
-> Skalaen som OH5IY og MCG_MS bruker, er ikke kjent i detalj (MS-Soft-håndbøkene er ikke tilgjengelige): sammenlign prosentene med disse programmene før du regner dem som likeverdige. Modellen tar bare hensyn til underdense spor, med isotrope antenner; overdense utbrudd og sporadisk bakgrunn inngår ikke i effektiviteten (den sporadiske bakgrunnen representeres av radarfluksen).
+> Dokumentasjonen til MS-Soft 5.2 definerer effektiviteten til OH5IY som en relativ indeks bare for underdense spor, med to faktorer (radiantens elevasjon, best rundt 45°, og vinkel mot strekningen, best 90°) og et minimum som er hevet for hånd til 20 % for overdense spor; formelen er ikke publisert. MCG_MS beregner den for fire faste retninger og, med DX-lokatoren, for den faktiske strekningen. Modellen tar bare hensyn til underdense spor, med isotrope antenner; overdense utbrudd og sporadisk bakgrunn inngår ikke i effektiviteten (den sporadiske bakgrunnen representeres av radarfluksen).

@@ -61,7 +61,7 @@ Jei pasikeičia aukščių grafiko skalė, programa įspėja: *aukščių statis
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-**SM6FHZ** eksperimentinės taisyklės (VUSHF 2025): atspindžių skaičius ir intensyvumas kinta pagal λ³, trukmė – pagal λ²; λ³ priklausomybė ta pati kaip McKinley retojo pėdsako lygtyje. Taip pat rodoma IARU 1 regiono didžiausia atspindžio trukmė (1000 ms ties 50 MHz, 500 ms ties 70 MHz, 100 ms ties 144 MHz, 13 ms ties 432 MHz). Vertės orientacinės, lygintinos su patirtimi eteryje. Stoties koeficientas K ir palyginimas su RMOB pateikti puslapyje [Eksperimentinės prognozės](Experimental-Forecasts-lt).
+**SM6FHZ** eksperimentinės taisyklės (VUSHF 2025): atspindžių skaičius ir intensyvumas kinta pagal λ³, trukmė – pagal λ² (pas McKinley λ³ yra vieno pėdsako galia; pėdsakų skaičius kinta maždaug pagal λ^1,5, o esant tiesioginei sklaidai trukmės dar auga pagal sec²φ: žr. [Eksperimentinės prognozės](Experimental-Forecasts-lt)). Taip pat rodoma IARU 1 regiono didžiausia atspindžio trukmė (1000 ms ties 50 MHz, 500 ms ties 70 MHz, 100 ms ties 144 MHz, 13 ms ties 432 MHz). Vertės orientacinės, lygintinos su patirtimi eteryje. Stoties koeficientas K ir palyginimas su RMOB pateikti puslapyje [Eksperimentinės prognozės](Experimental-Forecasts-lt).
 
 ## Be tinklo
 

@@ -26,7 +26,7 @@ Virš kortelių yra trys valdymo eilutės, galiojančios visoms kortelėms. Mygt
 | **Pėdsakų aukštis km** + **iš radaro** | Meteorų pėdsakų aukštis (numatytasis 90 km). Pažymėjus *iš radaro*, naudojamas dažniausias Collm radaro išmatuotas aukštis (moda); žr. [Radaro srautas](Radar-Flux-lt). |
 | **Lapelio elevacija °** | Žemiausia jūsų antenos lapelio elevacija (0° = horizontas). Naudojami tik tie E sluoksnio taškai, kuriuos abi stotys mato virš šios elevacijos. |
 | **Yagi antena: strėlė m** | Jūsų Yagi strėlės ilgis. Programa rodo ilgį λ, stiprinimą (DL6WU kreivė) ir −3 dB lapelį horizontalioje ir vertikalioje plokštumoje; žr. [Geometrija ir slopinimas](Geometry-and-Path-Loss-lt#antenos-stiprinimas-ir-lapelis). Žemiau 2 λ įvertis apytikslis. |
-| **Hot spot nuo vidurio taško km** | Hot A ir Hot B atstumas nuo vidurio taško, 30–400 km (numatytasis 150 km, kaip AMS Bulletin 203 / W8WN / MSHV). |
+| **Hot spot nuo vidurio taško km** + **auto (AMS)** | Hot A ir Hot B atstumas nuo vidurio taško. Pažymėjus *auto (AMS)* (numatytasis), jis atitinka J. Richardson (AMS) antenos nuokrypių lentelę, kurią cituoja DJ5HG: 13° ties 1000 km, 11° ties 1250 km, 10° ties 1500 ir 2000 km (maždaug 115, 121, 132 ir 176 km nuo vidurio taško). Nuimkite žymę, kad įvestumėte 30–400 km ranka (MSHV naudoja 150 km). |
 
 **3 eilutė – laikas**
 

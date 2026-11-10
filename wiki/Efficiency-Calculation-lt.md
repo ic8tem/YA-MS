@@ -53,7 +53,7 @@ Visi žingsniai pateikti [skaičiavimų vadove](Efficiency-Explanation-lt) (`doc
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-Tas pats dėsnis yra DJ5HG QTFGUI pagrindas (kūginė sklaida). Sąlyga priimama su Gauso tolerancija σ = 0,05 rad (apie 3°) – *programos sprendimas*:
+Tas pats dėsnis yra DJ5HG QTFGUI ir jo teksto *"Die Geometrie von Meteorscatterverbindungen"* (2004) pagrindas: pėdsakas sklaido kūgiu, kurio ašis yra pats pėdsakas, ir jį girdi tik ant kūgio esantis imtuvas. Idealaus pėdsako kūgio sienelė labai plona (tūkstančių bangos ilgių ilgio spinduolis); programa priima sąlygą su Gauso tolerancija σ = 0,05 rad (apie 3°), kuri atspindi tai, ko idealus kūgis nemato: srautų radiantų sklaidą (0,3–1,4° pagal GMN matavimus), vėjo išlenktus pėdsakus ir jų baigtinį ilgį – *programos sprendimas*:
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 Į tašką patenkančių meteorų skaičius proporcingas radianto elevacijos ten sinusui (ŝ·û_P) – ta pati pataisa, kurią IMO taiko ZHR.
 
+**Parinktis „Ilgesni pėdsakai esant žemam radiantui (DJ5HG)“** (žymimasis langelis virš diagramos, numatytai išjungtas, su paaiškinimu): DJ5HG pastebi, kad esant žemam radiantui į km² krenta mažiau meteorų, bet pėdsakai ilgesni (iki 100 km naudingo ilgio) ir dažniau tenkina atspindžio dėsnį. Įjungus parinktį, svoris tampa min(sin El, 15/100): naudingas sluoksnio storis, 15 km, padalytas iš elevacijos sinuso, duoda pėdsako ilgį, apribotą iki 100 km. Virš maždaug 9° abu efektai vienas kitą kompensuoja. Išjungus skaičiavimas lieka atsargus.
+
 **3. Suma ir procentas.** Taškai kas 15 km pėdsakų aukštyje, tik ten, kur abi stotys juos mato virš lapelio elevacijos (*sprendimas*). 100 % – palankiausia radianto padėtis tai trasai:
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 F apskaičiuojama vieną kartą kiekvienai trasai krypčių tinkle (azimutas kas 5°, elevacija kas 2,5°) ir interpoliuojama.
+
+**Efektyvumas dB (DJ5HG atskaita).** Procentai yra santykiniai tik su geriausia radianto padėtimi tai trasai. Kad būtų galima palyginti skirtingas trasas, programa pateikia ir efektyvumą dB, palyginti su fiksuota DJ5HG atskaita: 0 dB yra 1000 km šiaurės–pietų trasos, kertančios pusiaujį, maksimumas, kai radiantas lygiadienio metu yra dangaus pusiaujyje, apskaičiuotas su tuo pačiu aukščiu ir tais pačiais svoriais. DJ5HG nurodo, kad jo vertės tikslesnės nei 6 dB.
 
 **4. Pusė ir indeksas.**
 
@@ -85,7 +89,9 @@ Lentelės raidė – pusė su didesne dalimi. *Programos sprendimai (vadovo 32�
 
 ## DH9GCD palyginimas
 
-Nepriklausoma patikra: **DH9GCD** geriausios krypties formulė, pateikta **DF5HC** (DARC konferencija, 2018 m. sausis), kur El ir Az – iš jūsų stoties matomo radianto elevacija ir azimutas, o P – korespondento azimutas:
+Pirminiai geriausios krypties šaltiniai yra Eshleman & Mlodnosky ir Meeks & James (Proc. IRE, 1957), Hines (1955) bei jo eksperimentinė patikra, atlikta Forsyth, Hines & Vogan (1955): naudingi tik radiantai, esantys dangaus pusapskritimyje, statmename sklaidos kampo pusiaukampinei, pėdsakų skaičius auga su sin El, o netoli vidurio taško naudingi pėdsakai krenta maždaug H·tan El į šoną, priešingoje radiantui pusėje. DJ5HG daro išlygą: kai **žemas** radiantas yra tiksliai išilgai trasos, McKinley formulė duoda stiprius signalus (Hamburgas–Narvikas, Kvadrantidai, apie 19 UTC), todėl „radiantas išilgai trasos = beveik nulis“ galioja tik aukštam radiantui; programa lieka atsargi ir rodo įspėjimą *ŽEMAS RADIANTAS IŠILGAI TRASOS*.
+
+Nepriklausoma patikra: **DH9GCD** geriausios krypties formulė, pateikta **DF5HC** (DARC konferencija, 2018 m. sausis) – paskelbto pirminio šaltinio ji neturi – kur El ir Az – iš jūsų stoties matomo radianto elevacija ir azimutas, o P – korespondento azimutas:
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -99,6 +105,7 @@ Ji didžiausia, kai radiantas yra 45° aukštyje ir statmenai trasai. DF5HC laik
 |---|---|
 | SM6FHZ taisyklė (VUSHF 2025): geriausia trasa statmena radianto azimutui, nukreipimas = radianto az ±90°, tolerancija ±40–50° | Modelis ją atkuria; kai radiantas sutampa su trasos kryptimi ir yra aukštai danguje, efektyvumas beveik nulinis |
 | DJ5HG QTFGUI, Hamburgas JO53IM – Barselona, Kvadrantidai, sausio 4 d. (jo vadovo pavyzdys) | QTFGUI: 07:00 nukreipimas 252°, −8 dB; 08:00 nėra atspindžio zonos; 09:00 nukreipimas 168°, −4 dB. YA-MS (aukštis 102 km kaip QTFGUI): 07:00 241°, −5,4 dB; 08:00 0,6 % (−22 dB); 09:00 161°, −4,0 dB. DH9GCD: 26 %, 2 %, 32 %. Visi trys metodai mato 08:00 „skylę“, kai radiantas beveik zenite |
+| DJ5HG kreivės (*Die Geometrie…*, Bild 8–9: iš Hamburgo ir Miuncheno, Kvadrantidai, sausio 4 d.; nuskaitytos iš grafiko, maždaug ±0,5 dB ir ±15 min) palyginti su automatiniu testu `--prova-dj5hg` (viena vertė per valandą) | Laikas: duobė, kai radiantas arti zenito, išpuola tomis pačiomis valandomis (Barselona 07:30–08:30 prieš 07–09; Sofija 06:36–07:48 prieš 07–08; Narvikas 07–08:30 prieš 07–09); Maskva abiem atvejais uždara 03–10, atvira iš Hamburgo iki maždaug 02:30 ir iš Miuncheno iki maždaug 00:30, kaip rašo DJ5HG. Kryptys: 2–10° skirtumas. Lygiai: su 102 km aukščiu ir įjungta ilgesnių pėdsakų parinktimi beveik visos vertės yra 2–3 dB ribose nuo kreivių; išjungus parinktį 3–7 dB žemiau, bet popietės minimumai artimesni (Maskva −9 dB 15 val., −11,5 dB 18 val. prieš −9 ir −12,5). Pagrindinis skirtumas: DJ5HG rodo gilų minimumą, kai radiantas žemiausias ir beveik išilgai trasos (Barselona −16 dB 19:36, Sofija −14 dB 20 val.); YA-MS jį vos rodo (−8,6 ir −10,4 dB išjungus parinktį, −1 ir −3 dB įjungus). Tai paties DJ5HG išlyga dėl žemo radianto išilgai trasos: todėl rodomas įspėjimas, o parinktis numatytai išjungta |
 | Diskretizavimas kas 5 km vietoj 15 km | procentai pasikeičia mažiau nei 0,3 punkto |
 
-> OH5IY ir MCG_MS naudojama skalė detaliai nežinoma (MS-Soft vadovai neprieinami): prieš laikydami procentus lygiaverčiais, palyginkite juos su šiomis programomis. Modelis vertina tik retuosius pėdsakus su izotropinėmis antenomis; tankiųjų pėdsakų žybsniai ir sporadinis fonas į efektyvumą neįtraukti (sporadinį foną atspindi radaro srautas).
+> MS-Soft 5.2 dokumentacija apibrėžia OH5IY efektyvumą kaip santykinį indeksą tik retiesiems pėdsakams, su dviem veiksniais (radianto elevacija, geriausia apie 45°, ir kampas su trasa, geriausias 90°) ir minimumu, ranka pakeltu iki 20 % tankiesiems pėdsakams; formulė nepaskelbta. MCG_MS jį skaičiuoja keturioms fiksuotoms kryptims ir, nurodžius DX lokatorių, tikrajai trasai. Modelis vertina tik retuosius pėdsakus su izotropinėmis antenomis; tankiųjų pėdsakų žybsniai ir sporadinis fonas į efektyvumą neįtraukti (sporadinį foną atspindi radaro srautas).

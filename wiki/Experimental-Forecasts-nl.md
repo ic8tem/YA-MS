@@ -28,10 +28,10 @@ De oranje regel onder de bediening toont de regel met de actuele getallen, bijv.
 ## Van de radar naar de amateurband
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Bron:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, mei 2025 – aantal en intensiteit van de reflecties schalen met **λ³**, de duur met **λ²** (432 MHz ligt 14–15 dB onder 144 MHz en duurt 1/9). **Controle:** de λ³-afhankelijkheid is dezelfde als in de vergelijking van McKinley voor onderdichte sporen. Met k = 3 worden 1000 meteoren/uur in Collm ongeveer **16 reflecties/uur op 144 MHz**; RMOB-waarnemers van GRAVES op 143,050 MHz tellen meestal **20 tot 140 echo's/uur** (RMOB-bulletin, juni 2018): de orde van grootte is verenigbaar, en het verschil is de stationsfactor K. (Vgl. 44–45 van de handleiding.)
+**Bron:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, mei 2025 – aantal en intensiteit van de reflecties schalen met **λ³**, de duur met **λ²** (432 MHz ligt 14–15 dB onder 144 MHz en duurt 1/9). **Controle:** in de vergelijking van McKinley is λ³ het vermogen van één onderdicht spoor, niet het aantal sporen; bij massa-index 2 schaalt het aantal sporen boven een vaste drempel ongeveer met λ^1,5 (IZ5TEK; OH5IY). Het programma houdt k = 3 aan, de experimentele regel van SM6FHZ, en zegt dat ook; de juiste k voor jouw station volgt uit de vergelijking met RMOB. Bij voorwaartse verstrooiing groeit de duur bovendien met sec²φ (McKinley; OH5IY): Collm meet in terugverstrooiing (φ = 0), dus de voorspelling vermenigvuldigt met sec²φ in het middelpunt van het traject (×4 bij 60°, ×8,5 bij 70°, ×33 bij 80°). Met k = 3 worden 1000 meteoren/uur in Collm ongeveer **16 reflecties/uur op 144 MHz**; RMOB-waarnemers van GRAVES op 143,050 MHz tellen meestal **20 tot 140 echo's/uur** (RMOB-bulletin, juni 2018): de orde van grootte is verenigbaar, en het verschil is de stationsfactor K. (Vgl. 44–45 van de handleiding.)
 
 ## Komende 24 uur
 

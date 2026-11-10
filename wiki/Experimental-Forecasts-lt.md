@@ -28,10 +28,10 @@ Oranžinė eilutė po valdikliais rodo taisyklę su dabartiniais skaičiais, pvz
 ## Nuo radaro iki mėgėjų juostos
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Šaltinis:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45-asis Nordic VUSHF, 2025 m. gegužė – atspindžių skaičius ir intensyvumas kinta pagal **λ³**, trukmė – pagal **λ²** (432 MHz yra 14–15 dB žemiau nei 144 MHz ir trunka 1/9). **Patikra:** λ³ priklausomybė ta pati kaip McKinley retojo pėdsako lygtyje. Su k = 3 1000 meteorų/val. Collm virsta maždaug **16 atspindžių/val. ties 144 MHz**; GRAVES RMOB stebėtojai 143,050 MHz dažniu paprastai suskaičiuoja **nuo 20 iki 140 aidų/val.** (RMOB biuletenis, 2018 m. birželis): eilė suderinama, o skirtumas yra stoties koeficientas K. (Vadovo 44–45 lygtys.)
+**Šaltinis:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45-asis Nordic VUSHF, 2025 m. gegužė – atspindžių skaičius ir intensyvumas kinta pagal **λ³**, trukmė – pagal **λ²** (432 MHz yra 14–15 dB žemiau nei 144 MHz ir trunka 1/9). **Patikra:** McKinley lygtyje λ³ yra vieno retojo pėdsako galia, o ne pėdsakų skaičius; kai masės indeksas 2, pėdsakų virš fiksuoto slenksčio skaičius kinta maždaug pagal λ^1,5 (IZ5TEK; OH5IY). Programa palieka k = 3, SM6FHZ eksperimentinę taisyklę, ir tai nurodo; jūsų stočiai tinkamas k gaunamas palyginus su RMOB. Esant tiesioginei sklaidai trukmė dar auga pagal sec²φ (McKinley; OH5IY): Collm matuoja atgalinės sklaidos režimu (φ = 0), todėl prognozė dauginama iš sec²φ trasos vidurio taške (×4 ties 60°, ×8,5 ties 70°, ×33 ties 80°). Su k = 3 1000 meteorų/val. Collm virsta maždaug **16 atspindžių/val. ties 144 MHz**; GRAVES RMOB stebėtojai 143,050 MHz dažniu paprastai suskaičiuoja **nuo 20 iki 140 aidų/val.** (RMOB biuletenis, 2018 m. birželis): eilė suderinama, o skirtumas yra stoties koeficientas K. (Vadovo 44–45 lygtys.)
 
 ## Kitos 24 valandos
 

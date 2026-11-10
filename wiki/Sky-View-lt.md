@@ -8,7 +8,7 @@
 
 Ši vidinė kortelė (ankstesnių versijų dangaus skliautas) viename ekrane parodo, **kur** dabar yra naudingi pėdsakai ir **kur** nukreipti anteną. Kairėje – trasos **planas**; dešinėje – srautų sąrašas, mažas dangaus skliautas su radiantais, skaičiavimo tekstas ir iš jūsų antenos matomas **pjūvis**. Viskas susieta su momentu, pasirinktu laukeliu *Skaičiavimo data (UTC)* ir slankikliu *Valandos (nuo −12 iki +36 h)* (pagal nutylėjimą realus laikas, 15 minučių žingsniais).
 
-**Juostelė virš plano** apibendrina to momento skaičiavimą: data ir laikas (*dabar* arba valandos nuo dabar), **trasos indeksas Σ ZHR×η**, **naudingiausias srautas** su jo ZHR ir efektyvumu, srautų virš horizonto skaičius ir **rekomenduojamas Hot** su jo azimutu.
+**Juostelė virš plano** apibendrina to momento skaičiavimą: data ir laikas (*dabar* arba valandos nuo dabar), **trasos indeksas Σ ZHR×η**, **naudingiausias srautas** su jo ZHR ir efektyvumu (taip pat dB, palyginti su DJ5HG atskaita, žr. [Efektyvumo skaičiavimas](Efficiency-Calculation-lt)), srautų virš horizonto skaičius ir **rekomenduojamas Hot** su jo azimutu.
 
 Mažame dangaus skliaute per zenitą einanti **oranžinė linija** visada rodo **tinkamas antenos kryptis**, statmenas pasirinkto (arba palankiausio) srauto slinkimui: radianto azimutas ±90°, abiejuose galuose pažymėta *antena NNN°*, ±45° tolerancija – plonomis linijomis. Trumpi oranžiniai brūkšneliai krašte rodo kitų naudingų srautų statmenas kryptis.
 
@@ -19,7 +19,7 @@ Europos žemėlapis, matomas iš viršaus (**R dešinėje**), su laipsnių skale
 | Elementas | Vaizdavimas |
 |---|---|
 | Trasa / DX | Žalia linija nuo jūsų stoties iki korespondento (visada reali didžiojo apskritimo trasa tarp lokatorių) |
-| **Hot A / Hot B** | Taškai 150 km (reguliuojama) abipus vidurio taško, statmenai trasai. **Raudona = rekomenduojamas**, **rožinė = už antenos lapelio**, **pilka = lapelyje** (su įspėjimu) |
+| **Hot A / Hot B** | Taškai abipus vidurio taško, statmenai trasai, AMS nuokrypių lentelės nurodytu (arba ranka įvestu) atstumu. **Raudona = rekomenduojamas**, **rožinė = už antenos lapelio**, **pilka = lapelyje** (su įspėjimu) |
 | Antenos lapelis | −3 dB horizontalusis lapelis aplink antenos azimutą (antena visada nukreipta į DX), pažymėtas *lapelis …°* |
 | Bendrosios zonos ribos | Blankūs taškai *rib. A* / *rib. B* ir du apskritimai, kur kiekvienos stoties horizontas susitinka su E sluoksniu (žr. [Geometrija](Geometry-and-Path-Loss-lt#bendrosios-zonos-ribos)) |
 | Srauto slinkimas | **Geltona linija**: kryptis, kuria pasirinktas (arba palankiausias) srautas brauko dangų, t. y. radianto azimutas |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **DĖMESIO: Hot A (ir (arba) Hot B) patenka į antenos lapelį …** | Hot spot yra ±θ/2 ribose nuo antenos azimuto (θ = horizontalusis −3 dB lapelis): šiuo nukreipimu jis jau padengtas. Žemėlapyje rodomas pilkai. Rekomenduojamas Hot lieka raudonas. |
 | **RADIANTAS PER AUKŠTAI (virš 70°)** | Naudingas radiantas yra aukščiau nei 70° iš jūsų stoties: pėdsakai krenta beveik vertikaliai ir mažai atspindi trasos kryptimi (DF5HC, DH9GCD). Tos pačios valandos [valandinėje lentelėje](Efficiency-Calculation-lt#valandinė-lentelė) pažymėtos ↑. |
+| **ŽEMAS RADIANTAS IŠILGAI TRASOS** | Aktyvus radiantas yra žemiau 20° ir ne toliau kaip 30° nuo trasos krypties. Apskaičiuotas efektyvumas lieka žemas (atsargus), bet DJ5HG tikisi retų, stiprių atspindžių nuo slystančių pėdsakų, išsidėsčiusių išilgai trasos (Hamburgas–Narvikas, Kvadrantidai, apie 19 UTC): verta paklausyti. |
 | *Nėra bendrosios E sluoksnio zonos* | Trasa ilgesnė nei dvigubas nuotolis pėdsakų aukštyje: abi stotys nemato bendros E sluoksnio dalies (vienas šuolis neįmanomas). |
 | *Nėra rekomenduojamo Hot* | Šiuo metu beveik nėra aktyvių srautų. |
 

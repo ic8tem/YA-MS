@@ -53,7 +53,7 @@ Nasa [manwal ng kalkulasyon](Efficiency-Explanation-tl) ang lahat ng hakbang (`d
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-Ang parehong batas ang pinagbabatayan ng QTFGUI ni DJ5HG (cone scattering). Tinatanggap ang kondisyon nang may Gaussian na tolerance na σ = 0.05 rad (mga 3°) – *pagpili ng programa*:
+Ang parehong batas ang pinagbabatayan ng QTFGUI ni DJ5HG at ng kanyang sulatin na *"Die Geometrie von Meteorscatterverbindungen"* (2004): ikinakalat ng bakas ang signal sa isang kono na ang aksis ay ang bakas mismo, at tanging ang receiver na nasa kono ang nakaririnig dito. Para sa isang ideyal na bakas, napakanipis ng pader ng kono (isang radiator na libu-libong wavelength ang haba); tinatanggap ng programa ang kondisyon nang may Gaussian na tolerance na σ = 0.05 rad (mga 3°), na kumakatawan sa hindi nakikita ng ideyal na kono: ang pagkalat ng mga radiant ng mga shower (0.3–1.4° ayon sa sukat ng GMN), mga bakas na binaluktot ng hangin at ang kanilang may-hangganang haba – *pagpili ng programa*:
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 Proporsiyonal ang bilang ng meteor na umaabot sa isang punto sa sine ng elebasyon ng radiant doon (ŝ·û_P), ang parehong koreksiyon na ginagamit ng IMO para sa ZHR.
 
+**Opsiyong "Mas mahahabang bakas kapag mababa ang radiant (DJ5HG)"** (checkbox sa itaas ng tsart, naka-off bilang default, may tooltip): Sinasabi ni DJ5HG na kapag mababa ang radiant, mas kaunting meteor ang bumabagsak bawat km², ngunit mas mahahaba ang mga bakas (hanggang 100 km na magagamit) at mas madalas na tumutugon sa batas ng repleksiyon. Kapag naka-on ang opsiyon, ang timbang ay nagiging min(sin El, 15/100): ang magagamit na kapal ng layer, 15 km, na hinati sa sine ng elebasyon ay nagbibigay ng haba ng bakas, na may limitasyong 100 km. Sa itaas ng mga 9°, nagkakansela ang dalawang epekto. Kapag naka-off, nananatiling maingat ang kalkulasyon.
+
 **3. Kabuuan at porsiyento.** Mga punto bawat 15 km sa taas ng bakas, kung saan lamang nakikita ito ng dalawang istasyon sa itaas ng elebasyon ng lobe (*pagpili*). Ang 100 % ay ang pinakapaborableng posisyon ng radiant para sa landas na iyon:
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 Kinakalkula ang F nang isang beses bawat landas sa isang grid ng mga direksiyon (azimuth bawat 5°, elebasyon bawat 2.5°) at ini-interpolate.
+
+**Episyensya sa dB (reperensiya ni DJ5HG).** Ang porsiyento ay relatibo lamang sa pinakamahusay na posisyon ng radiant para sa landas na iyon. Upang maihambing ang iba't ibang landas, ibinibigay din ng programa ang episyensya sa dB kaugnay ng nakapirming reperensiya ni DJ5HG: ang 0 dB ay ang pinakamataas na halaga ng isang 1000 km na landas na hilaga–timog na tumatawid sa ekwador, na nasa celestial equator ang radiant sa equinox, na kinalkula gamit ang parehong taas at parehong mga timbang. Sinasabi ni DJ5HG na mas mahusay sa 6 dB ang kanyang mga halaga.
 
 **4. Panig at indeks.**
 
@@ -85,7 +89,9 @@ Ang titik sa talahanayan ay ang panig na may mas malaking bahagi. *Mga pagpili n
 
 ## Paghahambing sa DH9GCD
 
-Isang malayang pagsusuri: ang pormula ng pinakamahusay na direksiyon ni **DH9GCD**, ayon sa ulat ni **DF5HC** (kumperensiya ng DARC, Enero 2018), kung saan ang El at Az ay ang elebasyon at azimuth ng radiant mula sa iyong istasyon at ang P ay ang azimuth ng DX station:
+Ang mga pangunahing sanggunian para sa pinakamahusay na direksiyon ay sina Eshleman & Mlodnosky at Meeks & James (Proc. IRE, 1957), si Hines (1955) at ang eksperimental na pagsusuri nito nina Forsyth, Hines & Vogan (1955): magagamit lamang ang mga radiant na nasa kalahating bilog ng langit na patayo sa bisector ng anggulo ng scattering, dumarami ang mga bakas kasabay ng sin El, at malapit sa gitnang punto ay bumabagsak ang mga magagamit na bakas nang mga H·tan El patagilid, sa panig na kasalungat ng radiant. May idinagdag na pasubali si DJ5HG: kapag **mababa** ang radiant at eksaktong kahabaan ng landas, malalakas na signal ang ibinibigay ng pormula ni McKinley (Hamburg–Narvik, Quadrantids, mga 19 UTC), kaya ang "radiant na nakahanay sa landas = halos zero" ay totoo lamang para sa mataas na radiant; nananatiling maingat ang programa at ipinapakita ang babalang *MABABANG RADIANT SA KAHABAAN NG LANDAS*.
+
+Isang malayang pagsusuri: ang pormula ng pinakamahusay na direksiyon ni **DH9GCD**, ayon sa ulat ni **DF5HC** (kumperensiya ng DARC, Enero 2018) – wala itong nailathalang pangunahing sanggunian – kung saan ang El at Az ay ang elebasyon at azimuth ng radiant mula sa iyong istasyon at ang P ay ang azimuth ng DX station:
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -99,6 +105,7 @@ Pinakamataas ito kapag ang radiant ay nasa 45° at nakapahalang sa landas. Itinu
 |---|---|
 | Tuntunin ni SM6FHZ (VUSHF 2025): pinakamahusay na landas na orthogonal sa azimuth ng radiant, tutok = az ng radiant ±90°, tolerance ±40–50° | Nagagaya ng modelo; kapag nakahanay ang radiant sa landas at mataas sa langit, halos zero ang episyensya |
 | QTFGUI ni DJ5HG, Hamburg JO53IM – Barcelona, Quadrantids, 4 Enero (halimbawa ng manwal nito) | QTFGUI: 07:00 tutok 252°, −8 dB; 08:00 walang sona ng repleksiyon; 09:00 tutok 168°, −4 dB. YA-MS (taas 102 km gaya ng QTFGUI): 07:00 241°, −5.4 dB; 08:00 0.6 % (−22 dB); 09:00 161°, −4.0 dB. DH9GCD: 26 %, 2 %, 32 %. Nakikita ng tatlong pamamaraan ang butas sa 08:00, kung kailan halos nasa zenith ang radiant |
+| Mga kurba ni DJ5HG (*Die Geometrie…*, Bild 8–9: mula sa Hamburg at Munich, Quadrantids, 4 Enero; binasa mula sa tsart, mga ±0.5 dB at ±15 min) laban sa awtomatikong pagsubok na `--prova-dj5hg` (isang halaga bawat oras) | Oras: ang butas kapag malapit sa zenith ang radiant ay nasa parehong mga oras (Barcelona 07:30–08:30 laban sa 07–09; Sofia 06:36–07:48 laban sa 07–08; Narvik 07–08:30 laban sa 07–09); sarado ang Moscow sa 03–10 sa dalawa, bukas mula Hamburg hanggang mga 02:30 at mula Munich hanggang mga 00:30, gaya ng isinulat ni DJ5HG. Direksiyon: 2–10° ang pagitan. Antas: sa taas na 102 km at naka-on ang opsiyon ng mas mahahabang bakas, halos lahat ng halaga ay nasa loob ng 2–3 dB ng mga kurba; kapag naka-off ang opsiyon, 3–7 dB na mas mababa, ngunit mas malapit ang mga minimum sa hapon (Moscow −9 dB sa 15, −11.5 dB sa 18 laban sa −9 at −12.5). Pangunahing pagkakaiba: nagpapakita si DJ5HG ng malalim na minimum kapag pinakamababa ang radiant at halos nakahanay sa landas (Barcelona −16 dB sa 19:36, Sofia −14 dB sa 20); halos hindi ito ipinapakita ng YA-MS (−8.6 at −10.4 dB kapag naka-off ang opsiyon, −1 at −3 dB kapag naka-on). Ito mismo ang pasubali ni DJ5HG tungkol sa mababang radiant sa kahabaan ng landas: kaya may babala, at naka-off ang opsiyon bilang default |
 | Pag-sample bawat 5 km sa halip na 15 km | nagbabago ang mga porsiyento nang mas mababa sa 0.3 puntos |
 
-> Hindi alam nang detalyado ang iskalang ginamit ng OH5IY at MCG_MS (hindi available ang mga manwal ng MS-Soft): ihambing ang mga porsiyento sa mga programang iyon bago ituring na katumbas. Underdense na bakas lamang ang isinasaalang-alang ng modelo, na may isotropic na antenna; wala sa episyensya ang mga overdense na burst at ang sporadic na background (kinakatawan ng flux ng radar ang sporadic na background).
+> Tinutukoy ng dokumentasyon ng MS-Soft 5.2 ang episyensya ng OH5IY bilang relatibong indeks para lamang sa underdense na bakas, na may dalawang salik (elebasyon ng radiant, pinakamahusay sa mga 45°, at anggulo sa landas, pinakamahusay sa 90°) at isang minimum na mano-manong itinaas sa 20 % para sa overdense na bakas; hindi nailathala ang pormula. Kinakalkula ito ng MCG_MS para sa apat na nakapirming direksiyon at, kapag may locator ng DX, para sa tunay na landas. Underdense na bakas lamang ang isinasaalang-alang ng modelo, na may isotropic na antenna; wala sa episyensya ang mga overdense na burst at ang sporadic na background (kinakatawan ng flux ng radar ang sporadic na background).

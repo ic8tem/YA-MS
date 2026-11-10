@@ -28,10 +28,10 @@ Kontrollerin altındaki turuncu satır kuralı güncel rakamlarla gösterir, ör
 ## Radardan amatör banda
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Kaynak:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45. Nordic VUSHF, Mayıs 2025 – yansımaların sayısı ve şiddeti **λ³** ile, süresi **λ²** ile ölçeklenir (432 MHz, 144 MHz'in 14–15 dB altındadır ve 1/9 kadar sürer). **Doğrulama:** λ³ bağımlılığı McKinley'in underdense denklemindekiyle aynıdır. k = 3 ile Collm'daki 1000 meteor/saat, **144 MHz'de yaklaşık 16 yansıma/saat** olur; 143,050 MHz'de GRAVES'i dinleyen RMOB gözlemcileri genellikle **saatte 20 ile 140 yankı** sayar (RMOB bülteni, Haziran 2018): büyüklük mertebesi uyumludur ve aradaki fark istasyon katsayısı K'dır. (Kılavuz denk. 44–45.)
+**Kaynak:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45. Nordic VUSHF, Mayıs 2025 – yansımaların sayısı ve şiddeti **λ³** ile, süresi **λ²** ile ölçeklenir (432 MHz, 144 MHz'in 14–15 dB altındadır ve 1/9 kadar sürer). **Doğrulama:** McKinley'in denkleminde λ³, iz sayısı değil, tek bir underdense izin gücüdür; kütle indeksi 2 için sabit bir eşiğin üstündeki iz sayısı yaklaşık λ^1,5 ile ölçeklenir (IZ5TEK; OH5IY). Program, SM6FHZ'nin deneysel kuralı olan k = 3'ü korur ve bunu açıkça belirtir; istasyonunuz için doğru k, RMOB karşılaştırmasından gelir. İleri saçılmada süre ayrıca sec²φ ile artar (McKinley; OH5IY): Collm geri saçılmada (φ = 0) ölçtüğü için tahmin, yolun orta noktasındaki sec²φ ile çarpılır (60°'de ×4, 70°'de ×8,5, 80°'de ×33). k = 3 ile Collm'daki 1000 meteor/saat, **144 MHz'de yaklaşık 16 yansıma/saat** olur; 143,050 MHz'de GRAVES'i dinleyen RMOB gözlemcileri genellikle **saatte 20 ile 140 yankı** sayar (RMOB bülteni, Haziran 2018): büyüklük mertebesi uyumludur ve aradaki fark istasyon katsayısı K'dır. (Kılavuz denk. 44–45.)
 
 ## Sonraki 24 saat
 

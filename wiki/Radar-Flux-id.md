@@ -61,7 +61,7 @@ Jika skala grafik ketinggian berubah, program memperingatkan: *statistik ketingg
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-Aturan eksperimental dari **SM6FHZ** (VUSHF 2025): jumlah dan intensitas pantulan berskala dengan λ³, durasinya dengan λ²; ketergantungan λ³ sama dengan pada persamaan underdense McKinley. Durasi ping maksimum IARU Region 1 juga ditampilkan (1000 ms di 50 MHz, 500 ms di 70 MHz, 100 ms di 144 MHz, 13 ms di 432 MHz). Nilai-nilai ini bersifat indikatif, untuk dibandingkan dengan pengalaman di udara. Faktor stasiun K dan perbandingan dengan RMOB ada di [Prakiraan eksperimental](Experimental-Forecasts-id).
+Aturan eksperimental dari **SM6FHZ** (VUSHF 2025): jumlah dan intensitas pantulan berskala dengan λ³, durasinya dengan λ² (pada McKinley, λ³ adalah daya satu jejak; jumlah jejak berskala kira-kira dengan λ^1,5, dan pada hamburan maju durasi juga bertambah dengan sec²φ: lihat [Prakiraan eksperimental](Experimental-Forecasts-id)). Durasi ping maksimum IARU Region 1 juga ditampilkan (1000 ms di 50 MHz, 500 ms di 70 MHz, 100 ms di 144 MHz, 13 ms di 432 MHz). Nilai-nilai ini bersifat indikatif, untuk dibandingkan dengan pengalaman di udara. Faktor stasiun K dan perbandingan dengan RMOB ada di [Prakiraan eksperimental](Experimental-Forecasts-id).
 
 ## Tanpa koneksi
 

@@ -61,7 +61,7 @@ Hvis skalaen på højdegrafen ændres, advarer programmet: *højdestatistikken (
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-Eksperimentelle regler af **SM6FHZ** (VUSHF 2025): antal og intensitet af refleksioner skalerer med λ³, varigheden med λ²; λ³-afhængigheden er den samme som i McKinleys ligning for underdense spor. IARU Region 1's maksimale pingvarighed vises også (1000 ms ved 50 MHz, 500 ms ved 70 MHz, 100 ms ved 144 MHz, 13 ms ved 432 MHz). Værdierne er vejledende og bør sammenlignes med erfaringen på båndet. Stationsfaktoren K og sammenligningen med RMOB findes i [Eksperimentelle prognoser](Experimental-Forecasts-da).
+Eksperimentelle regler af **SM6FHZ** (VUSHF 2025): antal og intensitet af refleksioner skalerer med λ³, varigheden med λ² (hos McKinley er λ³ effekten fra ét spor; antallet af spor skalerer omtrent som λ^1,5, og ved fremadspredning vokser varighederne desuden med sec²φ: se [Eksperimentelle prognoser](Experimental-Forecasts-da)). IARU Region 1's maksimale pingvarighed vises også (1000 ms ved 50 MHz, 500 ms ved 70 MHz, 100 ms ved 144 MHz, 13 ms ved 432 MHz). Værdierne er vejledende og bør sammenlignes med erfaringen på båndet. Stationsfaktoren K og sammenligningen med RMOB findes i [Eksperimentelle prognoser](Experimental-Forecasts-da).
 
 ## Uden forbindelse
 

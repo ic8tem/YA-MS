@@ -53,7 +53,7 @@ Al die stappe is in die [berekeningshandleiding](Efficiency-Explanation-af) (`do
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-Dieselfde wet lê ten grondslag van QTFGUI deur DJ5HG (keëlverstrooiing). Die voorwaarde word aanvaar met 'n Gaussiese toleransie σ = 0,05 rad (ongeveer 3°) – *keuse van die program*:
+Dieselfde wet lê ten grondslag van QTFGUI deur DJ5HG en sy teks *"Die Geometrie von Meteorscatterverbindungen"* (2004): die spoor verstrooi op 'n keël met die spoor as as, en slegs 'n ontvanger op die keël hoor dit. Vir 'n ideale spoor is die keëlwand baie dun ('n straler duisende golflengtes lank); die program aanvaar die voorwaarde met 'n Gaussiese toleransie σ = 0,05 rad (ongeveer 3°), wat staan vir wat die ideale keël nie sien nie: die verspreiding van swermradiante (0,3–1,4° deur GMN gemeet), spore wat deur die wind gebuig is en hul eindige lengte – *keuse van die program*:
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 Die aantal meteore wat 'n punt bereik, is eweredig aan die sinus van die radiant se elevasie daar (ŝ·û_P), dieselfde korreksie wat die IMO vir die ZHR gebruik.
 
+**Opsie "Langer spore met 'n lae radiant (DJ5HG)"** (merkblokkie bo die grafiek, by verstek af, met wenk): DJ5HG merk op dat met 'n lae radiant minder meteore per km² val, maar die spore langer is (tot 100 km bruikbaar) en meer dikwels aan die refleksiewet voldoen. Met die opsie aan word die gewig min(sin El, 15/100): die bruikbare laagdikte, 15 km, gedeel deur die sinus van die elevasie gee die spoorlengte, beperk tot 100 km. Bo ongeveer 9° kanselleer die twee effekte mekaar. Af bly die berekening versigtig.
+
 **3. Som en persentasie.** Punte elke 15 km op spoorhoogte, slegs waar albei stasies hulle bo die lob-elevasie sien (*keuse*). 100 % is die gunstigste radiantposisie vir daardie pad:
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 F word een keer per pad bereken op 'n rooster van rigtings (azimut elke 5°, elevasie elke 2,5°) en geïnterpoleer.
+
+**Doeltreffendheid in dB (DJ5HG-verwysing).** Die persentasie is slegs relatief tot die beste radiantposisie vir daardie pad. Om verskillende paaie te vergelyk, gee die program ook die doeltreffendheid in dB relatief tot die vaste verwysing van DJ5HG: 0 dB is die maksimum van 'n 1000 km noord–suid-pad oor die ewenaar met die radiant op die hemelewenaar by die equinoks, bereken met dieselfde hoogte en gewigte. DJ5HG gee sy waardes as beter as 6 dB.
 
 **4. Kant en indeks.**
 
@@ -85,7 +89,9 @@ Die letter in die tabel is die kant met die groter fraksie. *Keuses van die prog
 
 ## DH9GCD-vergelyking
 
-'n Onafhanklike kontrole: die formule vir die beste rigting deur **DH9GCD**, gerapporteer deur **DF5HC** (DARC-konferensie, Januarie 2018), met El en Az die elevasie en azimut van die radiant soos vanaf jou stasie gesien en P die azimut van die DX-stasie:
+Die primêre bronne vir die beste rigting is Eshleman & Mlodnosky en Meeks & James (Proc. IRE, 1957), Hines (1955) en die eksperimentele kontrole daarvan deur Forsyth, Hines & Vogan (1955): slegs radiante op die halwe sirkel van die hemel loodreg op die halveerlyn van die verstrooiingshoek is bruikbaar, die aantal spore groei met sin El, en naby die middelpunt val die bruikbare spore ongeveer H·tan El opsy, aan die kant teenoor die radiant. DJ5HG voeg 'n voorbehoud by: met 'n **lae** radiant reg langs die pad gee McKinley se formule sterk seine (Hamburg–Narvik, Quadrantide, omstreeks 19 UTC), dus geld "radiant in lyn met die pad = byna nul" net vir 'n hoë radiant; die program bly versigtig en wys die waarskuwing *LAE RADIANT LANGS DIE PAD*.
+
+'n Onafhanklike kontrole: die formule vir die beste rigting deur **DH9GCD**, gerapporteer deur **DF5HC** (DARC-konferensie, Januarie 2018) – dit het geen gepubliseerde primêre bron nie – met El en Az die elevasie en azimut van die radiant soos vanaf jou stasie gesien en P die azimut van die DX-stasie:
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -99,6 +105,7 @@ Dit is maksimaal met die radiant op 45° en dwars op die pad. DF5HC beskou die r
 |---|---|
 | SM6FHZ-reël (VUSHF 2025): beste pad ortogonaal op die radiant-azimut, rigting = radiant-az ±90°, toleransie ±40–50° | Deur die model weergegee; met die radiant in lyn met die pad en hoog in die lug is die doeltreffendheid byna nul |
 | QTFGUI deur DJ5HG, Hamburg JO53IM – Barcelona, Kwadrantiede, 4 Januarie (voorbeeld uit sy handleiding) | QTFGUI: 07:00 rigting 252°, −8 dB; 08:00 geen refleksiesone nie; 09:00 rigting 168°, −4 dB. YA-MS (hoogte 102 km soos QTFGUI): 07:00 241°, −5,4 dB; 08:00 0,6 % (−22 dB); 09:00 161°, −4,0 dB. DH9GCD: 26 %, 2 %, 32 %. Al drie metodes sien die gat om 08:00, met die radiant byna in die senit |
+| Krommes van DJ5HG (*Die Geometrie…*, Bild 8–9: vanaf Hamburg en München, Quadrantide, 4 Januarie; van die grafiek afgelees, ongeveer ±0,5 dB en ±15 min) teenoor die outomatiese toets `--prova-dj5hg` (een waarde per uur) | Tye: die gat met die radiant naby die senit val op dieselfde ure (Barcelona 07:30–08:30 teenoor 07–09; Sofia 06:36–07:48 teenoor 07–08; Narvik 07–08:30 teenoor 07–09); Moskou is in albei 03–10 gesluit, oop vanaf Hamburg tot omstreeks 02:30 en vanaf München tot omstreeks 00:30, soos DJ5HG skryf. Rigtings: 2–10° verskil. Vlakke: met hoogte 102 km en die opsie vir langer spore aan is byna alle waardes binne 2–3 dB van die krommes; met die opsie af 3–7 dB laer, maar die middagminima is nader (Moskou −9 dB om 15, −11,5 dB om 18 teenoor −9 en −12,5). Hoofverskil: DJ5HG toon 'n diep minimum wanneer die radiant op sy laagste en byna in lyn met die pad is (Barcelona −16 dB om 19:36, Sofia −14 dB om 20); YA-MS toon dit skaars (−8,6 en −10,4 dB met die opsie af, −1 en −3 dB aan). Dit is DJ5HG se eie voorbehoud oor 'n lae radiant langs die pad: vandaar die waarskuwing, en die opsie is by verstek af |
 | Monsterneming elke 5 km in plaas van 15 km | die persentasies verander met minder as 0,3 punte |
 
-> Die skaal wat OH5IY en MCG_MS gebruik, is nie in besonderhede bekend nie (die MS-Soft-handleidings is nie beskikbaar nie): vergelyk die persentasies met daardie programme voordat jy hulle as gelykwaardig beskou. Die model hou slegs rekening met onderdigte spore, met isotropiese antennas; oordigte uitbarstings en die sporadiese agtergrond is nie in die doeltreffendheid nie (die sporadiese agtergrond word deur die radarvloed voorgestel).
+> Die MS-Soft 5.2-dokumentasie definieer OH5IY se doeltreffendheid as 'n relatiewe indeks slegs vir onderdigte spore, met twee faktore (radiantelevasie, beste omstreeks 45°, en hoek met die pad, beste 90°) en 'n minimum wat met die hand tot 20 % verhoog is vir oordigte spore; die formule is nie gepubliseer nie. MCG_MS bereken dit vir vier vaste rigtings en, met die DX-lokaliseerder, vir die werklike pad. Die model hou slegs rekening met onderdigte spore, met isotropiese antennas; oordigte uitbarstings en die sporadiese agtergrond is nie in die doeltreffendheid nie (die sporadiese agtergrond word deur die radarvloed voorgestel).

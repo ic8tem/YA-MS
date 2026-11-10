@@ -69,15 +69,15 @@ Hvis 1 − |p0|² < 0, er strækningen længere end 2·d_H, og stationerne ser *
 
 ## Hot A og Hot B
 
-**Kilde:** refleksionerne samles i to zoner ("hot spots") ca. **50–150 km på hver side af midtpunktet**. Det er grundlaget for tabellen over antenneforskydning i AMS Bulletin nr. 203, som W8WN har overtaget (forskydning på 10° for strækninger på 1500 og 1800 km); MSHV af LZ2HV bruger samme kriterium.
+**Kilde:** refleksionerne fra sporadiske meteorer samles i to zoner ("hot spots") på hver side af midtpunktet. J. Richardson (AMS) angiver i tabellen, som DJ5HG citerer (*Die Geometrie von Meteorscatterverbindungen*, 2004), antenneforskydningen fra den direkte retning: **13° ved 1000 km, 11° ved 1250 km, 10° ved 1500 og 2000 km**. AMS Bulletin nr. 203, som W8WN har overtaget, angiver 10° ved 1500 og 1800 km.
 
-**Valg:** Hot A og Hot B er punkterne i afstanden s fra midtpunktet M, vinkelret på strækningen (s = 150 km, kan indstilles 30–400 km); A til venstre set fra din station mod DX, B til højre [21]. Forskydningen set fra stationen er ca. [22]:
+**Valg:** Hot A og Hot B er punkterne i afstanden s fra midtpunktet M, vinkelret på strækningen. Med flueben i *auto (AMS)* (standard) fås s af forskydningen i Richardsons tabel, lineært interpoleret (13° under 1000 km, 10° over 2000 km): s = (D/2)·tan(forskydning). Uden flueben indtastes s manuelt, 30–400 km (MSHV bruger 150 km); A til venstre set fra din station mod DX, B til højre [21]. Forskydningen set fra stationen er ca. [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Kontrol:** JN70CN–IN78UO, D = 1710 km: 6,7° med s = 100 km, **10,0° med s = 150 km** (samme som MSHV og AMS/W8WN), 13,2° med s = 200 km.
+**Kontrol:** med AMS-tabellen 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, det samme som de 150 km, der blev brugt før og bruges af MSHV; på korte strækninger flytter tabellen hot spots tættere på midtpunktet.
 
 ## Dæmpning for underdense spor
 

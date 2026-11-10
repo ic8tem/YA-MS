@@ -26,7 +26,7 @@ Fyrir ofan flipana eru þrjár raðir stýringa sem gilda fyrir alla flipa. Hnap
 | **Hæð slóða km** + **frá ratsjá** | Hæð loftsteinaslóðanna (sjálfgefið 90 km). Þegar hakað er við *frá ratsjá* er notuð algengasta hæðin (tíðasta gildið) sem Collm-ratsjáin mælir; sjá [Ratsjárflæði](Radar-Flux-is). |
 | **Hæðarhorn geisla °** | Lægsta hæðarhorn loftnetsgeislans (0° = sjóndeildarhringur). Aðeins punktar í E-laginu sem báðar stöðvar sjá ofar þessu hæðarhorni eru notaðir. |
 | **Yagi-loftnet: bóma m** | Lengd bómunnar á Yagi-loftnetinu þínu. Forritið sýnir lengdina í λ, mögnunina (DL6WU-ferillinn) og −3 dB geislann, láréttan og lóðréttan; sjá [Rúmfræði og deyfing](Geometry-and-Path-Loss-is#loftnetsmögnun-og-geisli). Undir 2 λ er matið gróft. |
-| **Heitur blettur frá miðpunkti km** | Fjarlægð Hot A og Hot B frá miðpunktinum, 30–400 km (sjálfgefið 150 km, eins og í AMS Bulletin 203 / W8WN / MSHV). |
+| **Heitur blettur frá miðpunkti km** + **auto (AMS)** | Fjarlægð Hot A og Hot B frá miðpunktinum. Þegar hakað er við *auto (AMS)* (sjálfgefið) fylgir hún töflu J. Richardsons (AMS) um frávik loftnets, sem DJ5HG vitnar í: 13° við 1000 km, 11° við 1250 km, 10° við 1500 og 2000 km (um 115, 121, 132 og 176 km frá miðpunktinum). Taktu hakið af til að slá inn 30–400 km handvirkt (MSHV notar 150 km). |
 
 **Röð 3 – tími**
 

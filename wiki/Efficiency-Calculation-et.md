@@ -53,7 +53,7 @@ Kõik sammud on [arvutusjuhendis](Efficiency-Explanation-et) (`doc/YA-MS_manuale
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-Sama seadus on DJ5HG QTFGUI aluseks (koonushajumine). Tingimus aktsepteeritakse Gaussi tolerantsiga σ = 0,05 rad (umbes 3°) – *programmi valik*:
+Sama seadus on DJ5HG QTFGUI ja tema teksti *"Die Geometrie von Meteorscatterverbindungen"* (2004) aluseks: jälg hajutab koonusele, mille teljeks on jälg ise, ja ainult koonusel asuv vastuvõtja kuuleb seda. Ideaalse jälje puhul on koonuse sein väga õhuke (tuhandete lainepikkuste pikkune kiirgur); programm aktsepteerib tingimust Gaussi tolerantsiga σ = 0,05 rad (umbes 3°), mis esindab seda, mida ideaalne koonus ei näe: meteoorivoolude radiantide hajuvust (GMN-i mõõtmistel 0,3–1,4°), tuule painutatud jälgi ja nende lõplikku pikkust – *programmi valik*:
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 Punkti jõudvate meteooride arv on võrdeline seal radiandi elevatsiooni siinusega (ŝ·û_P), sama parandus, mida IMO kasutab ZHR-i jaoks.
 
+**Valik „Pikemad jäljed madala radiandiga (DJ5HG)“** (märkeruut graafiku kohal, vaikimisi väljas, kohtspikriga): DJ5HG märgib, et madala radiandi korral langeb ruutkilomeetrile vähem meteoore, kuid jäljed on pikemad (kuni 100 km kasutatavat) ja täidavad peegeldumisseadust sagedamini. Kui valik on sees, muutub kaal väärtuseks min(sin El, 15/100): kasutatav kihi paksus, 15 km, jagatuna elevatsiooni siinusega annab jälje pikkuse, piiratuna 100 km-ga. Umbes 9° kohal tühistavad kaks mõju teineteist. Väljas jääb arvutus ettevaatlikuks.
+
 **3. Summa ja protsent.** Punktid iga 15 km järel jälgede kõrgusel, ainult seal, kus mõlemad jaamad näevad neid peaharu elevatsioonist kõrgemal (*valik*). 100 % on selle trassi jaoks kõige soodsam radiandi asend:
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 F arvutatakse iga trassi jaoks üks kord suundade võrgustikul (asimuut iga 5°, elevatsioon iga 2,5° järel) ja interpoleeritakse.
+
+**Efektiivsus dB-des (DJ5HG viide).** Protsent on suhteline ainult selle trassi parima radiandi asendi suhtes. Erinevate trasside võrdlemiseks annab programm efektiivsuse ka dB-des DJ5HG fikseeritud viite suhtes: 0 dB on 1000 km pikkuse ekvaatorit ületava põhja–lõuna trassi maksimum, kui radiant on pööripäeval taevaekvaatoril, arvutatuna sama kõrguse ja samade kaaludega. DJ5HG annab oma väärtuste täpsuseks parem kui 6 dB.
 
 **4. Pool ja indeks.**
 
@@ -85,7 +89,9 @@ Tabelis olev täht on suurema osaga pool. *Programmi valikud (juhendi võrrandid
 
 ## DH9GCD võrdlus
 
-Sõltumatu kontroll: **DH9GCD** parima suuna valem, mida vahendas **DF5HC** (DARC-i konverents, jaanuar 2018), kus El ja Az on sinu jaamast nähtava radiandi elevatsioon ja asimuut ning P korrespondendi asimuut:
+Parima suuna esmased allikad on Eshleman & Mlodnosky ja Meeks & James (Proc. IRE, 1957), Hines (1955) ning selle eksperimentaalne kontroll Forsythi, Hinesi & Vogani poolt (1955): kasulikud on ainult radiandid taeva poolringil, mis on risti hajumisnurga poolitajaga, jälgede arv kasvab koos sin El-ga ning keskpunkti lähedal langevad kasulikud jäljed umbes H·tan El võrra külje peale, radiandile vastaspoolele. DJ5HG lisab reservatsiooni: **madala** radiandi korral täpselt piki trassi annab McKinley valem tugevaid signaale (Hamburg–Narvik, kvadrantiidid, umbes 19 UTC), seega „trassiga joondatud radiant = peaaegu null“ kehtib ainult kõrge radiandi kohta; programm jääb ettevaatlikuks ja näitab hoiatust *MADAL RADIANT PIKI TRASSI*.
+
+Sõltumatu kontroll: **DH9GCD** parima suuna valem, mida vahendas **DF5HC** (DARC-i konverents, jaanuar 2018) – sellel puudub avaldatud esmane allikas –, kus El ja Az on sinu jaamast nähtava radiandi elevatsioon ja asimuut ning P korrespondendi asimuut:
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -99,6 +105,7 @@ See on maksimaalne, kui radiant on 45° kõrgusel ja trassiga risti. DF5HC peab 
 |---|---|
 | SM6FHZ reegel (VUSHF 2025): parim trass on radiandi asimuudiga risti, suund = radiandi az ±90°, tolerants ±40–50° | Mudel reprodutseerib selle; kui radiant on trassiga joondatud ja taevas kõrgel, on efektiivsus peaaegu null |
 | DJ5HG QTFGUI, Hamburg JO53IM – Barcelona, Kvadrantiidid, 4. jaanuar (selle juhendi näide) | QTFGUI: 07:00 suund 252°, −8 dB; 08:00 peegeldusala puudub; 09:00 suund 168°, −4 dB. YA-MS (kõrgus 102 km nagu QTFGUI-s): 07:00 241°, −5,4 dB; 08:00 0,6 % (−22 dB); 09:00 161°, −4,0 dB. DH9GCD: 26 %, 2 %, 32 %. Kõik kolm meetodit näevad kella 08:00 auku, kui radiant on peaaegu seniidis |
+| DJ5HG kõverad (*Die Geometrie…*, Bild 8–9: Hamburgist ja Münchenist, kvadrantiidid, 4. jaanuar; graafikult loetud, umbes ±0,5 dB ja ±15 min) võrrelduna automaatse testiga `--prova-dj5hg` (üks väärtus tunnis) | Ajad: auk, kui radiant on seniidi lähedal, langeb samadele tundidele (Barcelona 07:30–08:30 vs 07–09; Sofia 06:36–07:48 vs 07–08; Narvik 07–08:30 vs 07–09); Moskva on mõlemas 03–10 suletud, avatud Hamburgist umbes kella 02:30-ni ja Münchenist umbes kella 00:30-ni, nagu DJ5HG kirjutab. Suunad: 2–10° erinevus. Tasemed: kõrgusega 102 km ja sisselülitatud pikemate jälgede valikuga on peaaegu kõik väärtused kõveratest 2–3 dB piires; väljalülitatud valikuga 3–7 dB madalamal, kuid pärastlõunased miinimumid on lähemal (Moskva −9 dB kell 15, −11,5 dB kell 18 vs −9 ja −12,5). Peamine erinevus: DJ5HG näitab sügavat miinimumi, kui radiant on kõige madalamal ja peaaegu trassiga joondatud (Barcelona −16 dB kell 19:36, Sofia −14 dB kell 20); YA-MS näitab seda vaevu (−8,6 ja −10,4 dB väljalülitatud valikuga, −1 ja −3 dB sisselülitatud). See on DJ5HG enda reservatsioon madala radiandi kohta piki trassi: sellest ka hoiatus, ja valik on vaikimisi väljas |
 | Proovivõtt iga 5 km järel 15 km asemel | protsendid muutuvad vähem kui 0,3 punkti |
 
-> OH5IY ja MCG_MS-i kasutatavat skaalat ei tunta üksikasjalikult (MS-Softi juhendid pole kättesaadavad): võrdle protsente nende programmidega, enne kui pead neid samaväärseks. Mudel arvestab ainult alatihedaid jälgi ja isotroopseid antenne; ületihedad pursked ja sporaadiline foon ei kuulu efektiivsuse hulka (sporaadilist fooni esindab radari voog).
+> MS-Soft 5.2 dokumentatsioon määratleb OH5IY efektiivsuse suhtelise indeksina ainult alatihedate jälgede jaoks, kahe teguriga (radiandi elevatsioon, parim umbes 45°, ja nurk trassiga, parim 90°) ning ületihedate jälgede jaoks käsitsi 20 %-ni tõstetud miinimumiga; valemit pole avaldatud. MCG_MS arvutab selle nelja fikseeritud suuna jaoks ja DX-lokaatori olemasolul tegeliku trassi jaoks. Mudel arvestab ainult alatihedaid jälgi ja isotroopseid antenne; ületihedad pursked ja sporaadiline foon ei kuulu efektiivsuse hulka (sporaadilist fooni esindab radari voog).

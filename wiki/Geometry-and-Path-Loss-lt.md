@@ -69,15 +69,15 @@ Jei 1 − |p0|² < 0, trasa ilgesnė nei 2·d_H ir stotys **nemato bendrosios E 
 
 ## Hot A ir Hot B
 
-**Šaltinis:** atspindžiai susitelkia dviejose zonose („hot spot“) maždaug **50–150 km abipus vidurio taško**. Tai AMS Bulletin No. 203 antenos nuokrypių lentelės pagrindas, kurį perėmė W8WN (10° nuokrypis 1500 ir 1800 km trasoms); LZ2HV MSHV taiko tą patį kriterijų.
+**Šaltinis:** sporadinių meteorų atspindžiai susitelkia dviejose zonose („hot spot“) abipus vidurio taško. J. Richardson (AMS) lentelėje, kurią cituoja DJ5HG (*Die Geometrie von Meteorscatterverbindungen*, 2004), pateikia antenos nuokrypį nuo tiesioginės krypties: **13° ties 1000 km, 11° ties 1250 km, 10° ties 1500 ir 2000 km**. AMS Bulletin No. 203, kurį perėmė W8WN, nurodo 10° ties 1500 ir 1800 km.
 
-**Sprendimas:** Hot A ir Hot B – taškai, nutolę atstumu s nuo vidurio taško M, statmenai trasai (s = 150 km, reguliuojama 30–400 km); A – kairėje, žiūrint iš jūsų stoties į korespondentą, B – dešinėje [21]. Iš stoties matomas nuokrypis yra maždaug [22]:
+**Sprendimas:** Hot A ir Hot B – taškai, nutolę atstumu s nuo vidurio taško M, statmenai trasai. Pažymėjus *auto (AMS)* (numatytasis), s gaunamas iš Richardson lentelės nuokrypio, interpoliuojant tiesiškai (13° žemiau 1000 km, 10° virš 2000 km): s = (D/2)·tan(nuokrypis). Nepažymėjus s įvedamas ranka, 30–400 km (MSHV naudoja 150 km); A – kairėje, žiūrint iš jūsų stoties į korespondentą, B – dešinėje [21]. Iš stoties matomas nuokrypis yra maždaug [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Patikra:** JN70CN–IN78UO, D = 1710 km: 6,7°, kai s = 100 km, **10,0°, kai s = 150 km** (kaip MSHV ir AMS/W8WN), 13,2°, kai s = 200 km.
+**Patikra:** pagal AMS lentelę 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, tiek pat, kiek anksčiau naudoti ir MSHV naudojami 150 km; trumpose trasose lentelė priartina hot spot prie vidurio taško.
 
 ## Retojo pėdsako slopinimas
 

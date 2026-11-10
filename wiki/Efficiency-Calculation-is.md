@@ -53,7 +53,7 @@ Ein lína fyrir hverja drífu sem er virk þann dag (raðað eftir ZHR), 24 dál
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-Sama lögmál liggur að baki QTFGUI eftir DJ5HG (cone scattering). Skilyrðið er samþykkt með Gauss-vikmörkum σ = 0,05 rad (um 3°) – *val forritsins*:
+Sama lögmál liggur að baki QTFGUI eftir DJ5HG og texta hans *"Die Geometrie von Meteorscatterverbindungen"* (2004): slóðin dreifir á keilu sem hefur slóðina sem ás, og aðeins viðtæki á keilunni heyrir hana. Fyrir fullkomna slóð er keiluveggurinn mjög þunnur (geislari sem er þúsundir bylgjulengda langur); forritið samþykkir skilyrðið með Gauss-vikmörkum σ = 0,05 rad (um 3°), sem standa fyrir það sem fullkomna keilan sér ekki: dreifingu geislapunkta drífanna (0,3–1,4° samkvæmt mælingum GMN), slóðir sem vindurinn beygir og endanlega lengd þeirra – *val forritsins*:
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 Fjöldi loftsteina sem nær punkti er í hlutfalli við sínus hæðarhorns geislapunktsins þar (ŝ·û_P), sama leiðrétting og IMO notar fyrir ZHR.
 
+**Valkosturinn „Lengri slóðir með lágum geislapunkti (DJ5HG)“** (gátreitur fyrir ofan grafið, óvirkur sjálfgefið, með vísbendingu): DJ5HG bendir á að með lágum geislapunkti falla færri loftsteinar á km², en slóðirnar eru lengri (allt að 100 km nýtilegar) og uppfylla endurvarpslögmálið oftar. Með valkostinn virkan verður vægið min(sin El, 15/100): nýtileg lagþykkt, 15 km, deilt með sínus hæðarhornsins gefur lengd slóðarinnar, að hámarki 100 km. Yfir um 9° jafnast áhrifin tvö út. Óvirkur heldur útreikningurinn sér varfærinn.
+
 **3. Summa og prósenta.** Punktar á 15 km fresti í hæð slóðanna, aðeins þar sem báðar stöðvar sjá þá ofar hæðarhorni geislans (*val*). 100 % er hagstæðasta staða geislapunktsins fyrir þá leið:
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 F er reiknað einu sinni fyrir hverja leið á neti stefna (áttarhorn á 5° fresti, hæðarhorn á 2,5° fresti) og brúað.
+
+**Nýtni í dB (viðmið DJ5HG).** Prósentan miðast aðeins við bestu stöðu geislapunktsins fyrir þá leið. Til að bera saman ólíkar leiðir gefur forritið einnig nýtnina í dB miðað við fast viðmið DJ5HG: 0 dB er hámark 1000 km norður–suður-leiðar yfir miðbaug með geislapunktinn á miðbaug himins við jafndægur, reiknað með sömu hæð og sömu vægjum. DJ5HG segir gildi sín betri en 6 dB.
 
 **4. Hlið og stuðull.**
 
@@ -85,7 +89,9 @@ Stafurinn í töflunni er hliðin með stærra hlutfallið. *Val forritsins (han
 
 ## Samanburður við DH9GCD
 
-Óháð prófun: formúla **DH9GCD** fyrir bestu stefnu, sem **DF5HC** greindi frá (ráðstefna DARC, janúar 2018), þar sem El og Az eru hæðarhorn og áttarhorn geislapunktsins séð frá þinni stöð og P er áttarhorn mótstöðvarinnar:
+Frumheimildirnar um bestu stefnu eru Eshleman & Mlodnosky og Meeks & James (Proc. IRE, 1957), Hines (1955) og tilraunaprófun á henni eftir Forsyth, Hines & Vogan (1955): aðeins geislapunktar á hálfhringnum á himninum hornrétt á helmingalínu dreifingarhornsins eru nýtilegir, fjöldi slóða vex með sin El, og nálægt miðpunktinum falla nýtilegu slóðirnar um H·tan El til hliðar, á hliðinni gegnt geislapunktinum. DJ5HG bætir við fyrirvara: með **lágan** geislapunkt beint eftir leiðinni gefur formúla McKinleys sterk merki (Hamborg–Narvík, Quadrantítar, um 19 UTC), svo „geislapunktur í línu við leiðina = nánast núll“ gildir aðeins fyrir háan geislapunkt; forritið heldur sér varfærið og sýnir viðvörunina *LÁGUR GEISLAPUNKTUR EFTIR LEIÐINNI*.
+
+Óháð prófun: formúla **DH9GCD** fyrir bestu stefnu, sem **DF5HC** greindi frá (ráðstefna DARC, janúar 2018) – hún á sér enga birta frumheimild – þar sem El og Az eru hæðarhorn og áttarhorn geislapunktsins séð frá þinni stöð og P er áttarhorn mótstöðvarinnar:
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -99,6 +105,7 @@ Hún er mest þegar geislapunkturinn er í 45° og þvert á leiðina. DF5HC tel
 |---|---|
 | Regla SM6FHZ (VUSHF 2025): besta leið hornrétt á áttarhorn geislapunkts, stefna = az geislapunkts ±90°, vikmörk ±40–50° | Líkanið endurskapar hana; þegar geislapunkturinn er í línu við leiðina og hátt á himni er nýtnin nánast núll |
 | QTFGUI eftir DJ5HG, Hamborg JO53IM – Barcelona, Kvaðrantítar, 4. janúar (dæmi úr handbók þess) | QTFGUI: 07:00 stefna 252°, −8 dB; 08:00 ekkert endurvarpssvæði; 09:00 stefna 168°, −4 dB. YA-MS (hæð 102 km eins og QTFGUI): 07:00 241°, −5,4 dB; 08:00 0,6 % (−22 dB); 09:00 161°, −4,0 dB. DH9GCD: 26 %, 2 %, 32 %. Allar þrjár aðferðirnar sjá gatið kl. 08:00, með geislapunktinn nánast í hvirfilpunkti |
+| Ferlar DJ5HG (*Die Geometrie…*, Bild 8–9: frá Hamborg og München, Quadrantítar, 4. janúar; lesnir af grafinu, um ±0,5 dB og ±15 mín.) borið saman við sjálfvirku prófunina `--prova-dj5hg` (eitt gildi á klukkustund) | Tímasetningar: gatið þegar geislapunkturinn er nálægt hvirfilpunkti fellur á sömu klukkustundir (Barcelona 07:30–08:30 á móti 07–09; Sofía 06:36–07:48 á móti 07–08; Narvík 07–08:30 á móti 07–09); Moskva er lokuð 03–10 í báðum, opin frá Hamborg til um 02:30 og frá München til um 00:30, eins og DJ5HG skrifar. Stefnur: 2–10° munur. Styrkur: með hæð 102 km og valkostinn um lengri slóðir virkan eru nánast öll gildi innan 2–3 dB frá ferlunum; með valkostinn óvirkan 3–7 dB lægri, en lágmörk síðdegis eru nær (Moskva −9 dB kl. 15, −11,5 dB kl. 18 á móti −9 og −12,5). Helsti munur: DJ5HG sýnir djúpt lágmark þegar geislapunkturinn er lægstur og nánast í línu við leiðina (Barcelona −16 dB kl. 19:36, Sofía −14 dB kl. 20); YA-MS sýnir það varla (−8,6 og −10,4 dB með valkostinn óvirkan, −1 og −3 dB virkan). Þetta er eigin fyrirvari DJ5HG um lágan geislapunkt eftir leiðinni: þess vegna viðvörunin, og valkosturinn er óvirkur sjálfgefið |
 | Úrtak á 5 km fresti í stað 15 km | prósenturnar breytast um minna en 0,3 einingar |
 
-> Kvarðinn sem OH5IY og MCG_MS nota er ekki þekktur í smáatriðum (handbækur MS-Soft eru ekki aðgengilegar): berðu prósenturnar saman við þessi forrit áður en þú lítur á þær sem jafngildar. Líkanið tekur aðeins til undirþéttra slóða, með stefnulausum (ísótrópískum) loftnetum; yfirþéttir blossar og stopull bakgrunnur eru ekki í nýtninni (stopula bakgrunninn táknar ratsjárflæðið).
+> Skjölun MS-Soft 5.2 skilgreinir nýtni OH5IY sem afstæðan stuðul eingöngu fyrir undirþéttar slóðir, með tveimur þáttum (hæðarhorni geislapunktsins, best um 45°, og horni við leiðina, best 90°) og lágmarki sem hækkað er handvirkt í 20 % fyrir yfirþéttar slóðir; formúlan er óbirt. MCG_MS reiknar hana fyrir fjórar fastar stefnur og, með staðsetningarkóða DX-stöðvarinnar, fyrir raunverulegu leiðina. Líkanið tekur aðeins til undirþéttra slóða, með stefnulausum (ísótrópískum) loftnetum; yfirþéttir blossar og stopull bakgrunnur eru ekki í nýtninni (stopula bakgrunninn táknar ratsjárflæðið).

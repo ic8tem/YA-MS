@@ -26,7 +26,7 @@ Bo die oortjies is daar drie rye kontroles, geldig vir al die oortjies. Die knop
 | **Spoorhoogte km** + **van radar** | Hoogte van die meteoorspore (verstek 90 km). Met *van radar* gemerk word die mees algemene hoogte (modus) gebruik wat deur die Collm-radar gemeet is; sien [Radarvloed](Radar-Flux-af). |
 | **Lob-elevasie °** | Laagste elevasie van jou antennalob (0° = horison). Slegs punte van die E-laag wat albei stasies bo hierdie elevasie sien, word gebruik. |
 | **Yagi-antenna: boom m** | Boomlengte van jou Yagi. Die program wys die lengte in λ, die wins (DL6WU-kurwe) en die −3 dB-lob, horisontaal en vertikaal; sien [Geometrie en padverlies](Geometry-and-Path-Loss-af#wins-en-lob-van-die-antenna). Onder 2 λ is die skatting rof. |
-| **Hot spot vanaf middelpunt km** | Afstand van Hot A en Hot B vanaf die middelpunt, 30–400 km (verstek 150 km, soos AMS Bulletin 203 / W8WN / MSHV). |
+| **Hot spot vanaf middelpunt km** + **auto (AMS)** | Afstand van Hot A en Hot B vanaf die middelpunt. Met *auto (AMS)* gemerk (verstek) volg dit die antennaverskuiwingstabel van J. Richardson (AMS) wat DJ5HG aanhaal: 13° by 1000 km, 11° by 1250 km, 10° by 1500 en 2000 km (ongeveer 115, 121, 132 en 176 km vanaf die middelpunt). Ontmerk dit om 30–400 km met die hand in te voer (MSHV gebruik 150 km). |
 
 **Ry 3 – tyd**
 

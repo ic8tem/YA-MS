@@ -33,7 +33,6 @@ Arietidi diurne	Daytime Arietids
 Assi del flusso non trovati nella posizione attesa.	Flux axes not found in the expected position.
 Attenuazione {0:F1} dB -> segnale in antenna {1:F1} dBm, minimo ricevibile {2:F0} dBm, margine {3:+0.0;-0.0} dB	Path loss {0:F1} dB -> signal at antenna {1:F1} dBm, minimum detectable {2:F0} dBm, margin {3:+0.0;-0.0} dB
 Attività	Activity
-Attivo oggi	Active today
 Attuazione sperimentale previsioni	Experimental forecasts
 Aurigidi	Aurigids
 Azimut	Azimuth
@@ -207,7 +206,6 @@ O	W
 ORA MIGLIORE DEL GIORNO	BEST TIME OF THE DAY
 Ora	Time
 Ora UTC	UTC time
-Ora della volta celeste (±36 h)	Sky dome time (±36 h)
 Ore in comune: {0}. Rapporto mediano RMOB/Collm = {1:F4}.\nEsponente empirico (con K = 1): k = {2:F2}  (regola SM6FHZ: 3).\n\nApplico questo esponente? (In alternativa si lascia k = 3 e si regola il fattore K = {3:F2}.)	Common hours: {0}. Median RMOB/Collm ratio = {1:F4}.\nEmpirical exponent (with K = 1): k = {2:F2}  (SM6FHZ rule: 3).\n\nApply this exponent? (Alternatively keep k = 3 and adjust factor K = {3:F2}.)
 Orionidi	Orionids
 Orionidi di novembre	November Orionids
@@ -259,7 +257,6 @@ Ricava l'esponente dal file RMOB	Derive the exponent from the RMOB file
 Ricevitore	Receiver
 Riga {0} ignorata (colonne insufficienti)	Line {0} ignored (not enough columns)
 Riga {0}: {1}	Line {0}: {1}
-Riporta la volta celeste al tempo reale	Return the sky dome to real time
 Rispetto a 144 MHz: numero/intensità x {0:F3} ({1:+0.0;-0.0} dB), durata x {2:F2}. Ping massimo IARU a {3:F0} MHz: {4:F0} ms	Compared with 144 MHz: number/intensity x {0:F3} ({1:+0.0;-0.0} dB), duration x {2:F2}. IARU maximum ping at {3:F0} MHz: {4:F0} ms
 Rob Hardenberg PE1ITR, "The 143.050 MHz Graves Radar, a VHF Beacon" (DUBUS 4/2007) e "Graves Radar Update April 2021" – pe1itr.com/graves	Rob Hardenberg PE1ITR, "The 143.050 MHz Graves Radar, a VHF Beacon" (DUBUS 4/2007) and "Graves Radar Update April 2021" – pe1itr.com/graves
 Rotellina = zoom, trascina = sposta, mouse sopra un quadrato = QSO	Wheel = zoom, drag = pan, mouse over a square = QSOs
@@ -304,8 +301,6 @@ USB su 143,049 MHz (nota a circa 1 kHz) oppure 143,050 MHz, AGC lento o spento, 
 Ursidi	Ursids
 Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	Towards the recommended hot spot of the GRAVES → you path (Path card), at low elevation
 Vista dall'alto (E a destra)	Top view (E to the right)
-Volta celeste: tempo reale	Sky dome: real time
-Volta celeste: {0} UTC	Sky dome: {0} UTC
 Waterfall	Waterfall
 Wikipedia, "GRAVES (system)" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)	Wikipedia, "GRAVES (system)" – transmitter at Broye-lès-Pesmes (47.348° N 5.515° E)
 YA-MS - nessuna connessione	YA-MS - no connection
@@ -417,7 +412,6 @@ segmenti = scie (±10 km attorno alla quota) orientate verso il radiante; più s
 sempre sotto	always below
 sigma-Hydridi	sigma Hydrids
 stima a {0} MHz (scala a destra)	estimate at {0} MHz (right scale)
-sì	yes
 tra {0:F1} s	in {0:F1} s
 traslato a {0} MHz (scala a destra)	scaled to {0} MHz (right scale)
 tratta / DX	path / DX
@@ -437,7 +431,6 @@ zona PREV	PREV zone
 {0} (in rosso sulla mappa)	{0} (in red on the map)
 {0} (~{1} calc.)	{0} (~{1} calc.)
 {0} QSO letti, {1} quadrati-QSO nelle bande 50-432 MHz, {2} QSO scartati (altre bande o senza quadrato).	{0} QSOs read, {1} QSO squares in the 50-432 MHz bands, {2} QSOs discarded (other bands or no square).
-{0} UTC (ora della volta celeste)	{0} UTC (sky dome time)
 {0} UTC (tempo reale)	{0} UTC (real time)
 {0} consigliato ora: az. {1}°	{0} recommended now: az. {1}°
 {0} consigliato ora: az. {1}° ({2}% delle riflessioni previste)	{0} recommended now: az. {1}° ({2}% of expected reflections)
@@ -603,3 +596,23 @@ ultima ora	last hour
 Live e dati real-time	Live and real-time data
 Nessun dato del radar: scaricalo dalla sottolinguetta Live e dati real-time › Flusso radar.	No radar data: download it from the sub-tab Live and real-time data › Radar flux.
 nessun dato radar: vedi Live e dati real-time › Flusso radar	no radar data: see Live and real-time data › Radar flux
+Argomenti di partenza	Default topics
+Calcolo per {0} UTC	Calculation for {0} UTC
+Calcolo per: adesso	Calculation for: now
+Calcolo per: {0} UTC	Calculation for: {0} UTC
+Connessione a {0}...	Connecting to {0}...
+Connesso: {0} argomenti	Connected: {0} topics
+Errore: {0}	Error: {0}
+Indice della tratta Σ ZHR×η: {0}	Path index Σ ZHR×η: {0}
+Le righe evidenziate sono gli sciami attivi oggi (UTC)	Highlighted rows are the showers active today (UTC)
+Momento del calcolo (±36 h)	Calculation time (±36 h)
+Nessuno sciame utile in questo momento	No useful shower at this moment
+PSKReporter MQTT	PSKReporter MQTT
+Riconnessione tra {0} s	Reconnecting in {0} s
+Riporta il momento del calcolo al tempo reale	Brings the calculation time back to real time
+Sciame più utile: {0} (ZHR {1}, efficienza {2} %)	Most useful shower: {0} (ZHR {1}, efficiency {2} %)
+Sciami sopra l'orizzonte: {0}	Showers above the horizon: {0}
+Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LTE): nessun login, arrivano gia' con i locator di chi trasmette e di chi riceve. Un argomento per riga o separati da ;  formato pskr/filter/v2/banda/modo/call tx/call rx/... (+ = qualsiasi, # = il resto).	Live PSKReporter spots via MQTT (mqtt.pskreporter.info, a service by M0LTE): no login, spots arrive already with the locators of the transmitting and the receiving station. One topic per line or separated by ;  format pskr/filter/v2/band/mode/tx call/rx call/... (+ = any, # = the rest).
+adesso	now
+{0} UTC (momento del calcolo)	{0} UTC (calculation time)
+{0} h rispetto ad adesso	{0} h from now

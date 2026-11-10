@@ -33,7 +33,6 @@ Arietidi diurne	Дневные Ариетиды
 Assi del flusso non trovati nella posizione attesa.	Оси графика потока не найдены в ожидаемом месте.
 Attenuazione {0:F1} dB -> segnale in antenna {1:F1} dBm, minimo ricevibile {2:F0} dBm, margine {3:+0.0;-0.0} dB	Затухание {0:F1} dB -> сигнал на антенне {1:F1} dBm, мин. принимаемый {2:F0} dBm, запас {3:+0.0;-0.0} dB
 Attività	Активность
-Attivo oggi	Активен сегодня
 Attuazione sperimentale previsioni	Экспериментальный прогноз
 Aurigidi	Ауригиды
 Azimut	Азимут
@@ -207,7 +206,6 @@ O	З
 ORA MIGLIORE DEL GIORNO	ЛУЧШЕЕ ВРЕМЯ СУТОК
 Ora	Время
 Ora UTC	Время UTC
-Ora della volta celeste (±36 h)	Время небесной сферы (±36 h)
 Ore in comune: {0}. Rapporto mediano RMOB/Collm = {1:F4}.\nEsponente empirico (con K = 1): k = {2:F2}  (regola SM6FHZ: 3).\n\nApplico questo esponente? (In alternativa si lascia k = 3 e si regola il fattore K = {3:F2}.)	Общих часов: {0}. Медианное отношение RMOB/Collm = {1:F4}.\nЭмпирический показатель (при K = 1): k = {2:F2}  (правило SM6FHZ: 3).\n\nПрименить этот показатель? (Иначе оставить k = 3 и настроить коэффициент K = {3:F2}.)
 Orionidi	Ориониды
 Orionidi di novembre	Ноябрьские Ориониды
@@ -259,7 +257,6 @@ Ricava l'esponente dal file RMOB	Определить показатель по 
 Ricevitore	Приёмник
 Riga {0} ignorata (colonne insufficienti)	Строка {0} пропущена (недостаточно столбцов)
 Riga {0}: {1}	Строка {0}: {1}
-Riporta la volta celeste al tempo reale	Вернуть небесную сферу к реальному времени
 Rispetto a 144 MHz: numero/intensità x {0:F3} ({1:+0.0;-0.0} dB), durata x {2:F2}. Ping massimo IARU a {3:F0} MHz: {4:F0} ms	Относительно 144 MHz: число/интенсивность x {0:F3} ({1:+0.0;-0.0} dB), длительность x {2:F2}. Макс. пинг по IARU на {3:F0} MHz: {4:F0} ms
 Rob Hardenberg PE1ITR, "The 143.050 MHz Graves Radar, a VHF Beacon" (DUBUS 4/2007) e "Graves Radar Update April 2021" – pe1itr.com/graves	Rob Hardenberg PE1ITR, «The 143.050 MHz Graves Radar, a VHF Beacon» (DUBUS 4/2007) и «Graves Radar Update April 2021» – pe1itr.com/graves
 Rotellina = zoom, trascina = sposta, mouse sopra un quadrato = QSO	Колесо = масштаб, перетаскивание = сдвиг, мышь над квадратом = QSO
@@ -304,8 +301,6 @@ USB su 143,049 MHz (nota a circa 1 kHz) oppure 143,050 MHz, AGC lento o spento, 
 Ursidi	Урсиды
 Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	На рекомендуемую горячую точку трассы GRAVES → вы (карточка «Трасса»), с малым углом места
 Vista dall'alto (E a destra)	Вид сверху (E справа)
-Volta celeste: tempo reale	Небесная сфера: реальное время
-Volta celeste: {0} UTC	Небесная сфера: {0} UTC
 Waterfall	Водопад
 Wikipedia, "GRAVES (system)" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)	Wikipedia, «GRAVES (system)» – передатчик в Broye-lès-Pesmes (47,348° с. ш. 5,515° в. д.)
 YA-MS - nessuna connessione	YA-MS - нет подключения
@@ -417,7 +412,6 @@ segmenti = scie (±10 km attorno alla quota) orientate verso il radiante; più s
 sempre sotto	не восходит
 sigma-Hydridi	сигма-Гидриды
 stima a {0} MHz (scala a destra)	оценка на {0} MHz (шкала справа)
-sì	да
 tra {0:F1} s	через {0:F1} с
 traslato a {0} MHz (scala a destra)	пересчёт на {0} MHz (шкала справа)
 tratta / DX	трасса / DX
@@ -437,7 +431,6 @@ zona PREV	зона PREV
 {0} (in rosso sulla mappa)	{0} (красным на карте)
 {0} (~{1} calc.)	{0} (~{1} расч.)
 {0} QSO letti, {1} quadrati-QSO nelle bande 50-432 MHz, {2} QSO scartati (altre bande o senza quadrato).	Прочитано QSO: {0}, квадратов-QSO на диапазонах 50-432 MHz: {1}, отброшено QSO: {2} (другие диапазоны или без квадрата).
-{0} UTC (ora della volta celeste)	{0} UTC (время небесной сферы)
 {0} UTC (tempo reale)	{0} UTC (реальное время)
 {0} consigliato ora: az. {1}°	{0} рекомендуется сейчас: аз. {1}°
 {0} consigliato ora: az. {1}° ({2}% delle riflessioni previste)	{0} рекомендуется сейчас: аз. {1}° ({2}% ожидаемых отражений)
@@ -603,3 +596,23 @@ ultima ora	последний час
 Live e dati real-time	Онлайн и данные в реальном времени
 Nessun dato del radar: scaricalo dalla sottolinguetta Live e dati real-time › Flusso radar.	Нет данных радара: загрузите их на подвкладке «Онлайн и данные в реальном времени › Поток по радару».
 nessun dato radar: vedi Live e dati real-time › Flusso radar	нет данных радара: см. «Онлайн и данные в реальном времени › Поток по радару»
+Argomenti di partenza	Темы по умолчанию
+Calcolo per {0} UTC	Расчёт на {0} UTC
+Calcolo per: adesso	Расчёт на: сейчас
+Calcolo per: {0} UTC	Расчёт на: {0} UTC
+Connessione a {0}...	Подключение к {0}...
+Connesso: {0} argomenti	Подключено: тем {0}
+Errore: {0}	Ошибка: {0}
+Indice della tratta Σ ZHR×η: {0}	Индекс трассы Σ ZHR×η: {0}
+Le righe evidenziate sono gli sciami attivi oggi (UTC)	Выделены потоки, активные сегодня (UTC)
+Momento del calcolo (±36 h)	Момент расчёта (±36 h)
+Nessuno sciame utile in questo momento	Сейчас нет полезных потоков
+PSKReporter MQTT	PSKReporter MQTT
+Riconnessione tra {0} s	Переподключение через {0} с
+Riporta il momento del calcolo al tempo reale	Вернуть момент расчёта к реальному времени
+Sciame più utile: {0} (ZHR {1}, efficienza {2} %)	Самый полезный поток: {0} (ZHR {1}, эффективность {2} %)
+Sciami sopra l'orizzonte: {0}	Потоков над горизонтом: {0}
+Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LTE): nessun login, arrivano gia' con i locator di chi trasmette e di chi riceve. Un argomento per riga o separati da ;  formato pskr/filter/v2/banda/modo/call tx/call rx/... (+ = qualsiasi, # = il resto).	Споты PSKReporter в реальном времени через MQTT (mqtt.pskreporter.info, сервис M0LTE): без входа, споты приходят сразу с локаторами передающей и принимающей станции. Одна тема в строке или через ;  формат pskr/filter/v2/диапазон/вид/позывной tx/позывной rx/... (+ = любой, # = остальное).
+adesso	сейчас
+{0} UTC (momento del calcolo)	{0} UTC (момент расчёта)
+{0} h rispetto ad adesso	{0} ч от текущего момента

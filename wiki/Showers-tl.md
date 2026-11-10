@@ -22,7 +22,8 @@ Ang katalogo ng mga shower na ginagamit ng lahat ng kalkulasyon: **45 na shower*
 | v km/s, r | Geocentric na bilis at population index |
 | ZHR | Peak ZHR (*var.* = pabago-bago) |
 | Uri | *biswal* o *radyo, sa araw* |
-| Aktibo ngayong araw | *oo* kapag aktibo ngayon ang shower |
+
+Naka-highlight na may dilaw na lambong at makapal na teksto ang mga shower na **aktibo ngayong araw (UTC)**.
 
 ## Susunod na peak
 

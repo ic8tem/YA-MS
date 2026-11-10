@@ -16,7 +16,7 @@ Tab ini memperlakukan **GRAVES → Anda** sebagai lintasan meteor scatter tersen
 
 | Kontrol | Fungsinya |
 |---|---|
-| **Sekarang** | Mengembalikan waktu kubah langit ke waktu nyata (tab mengikuti penggeser *Waktu kubah langit*). |
+| **Sekarang** | Mengembalikan waktu perhitungan ke waktu nyata (tab mengikuti penggeser *Waktu perhitungan*). |
 | **Jadikan GRAVES sebagai DX** | Stasiun DX menjadi GRAVES (JN27SI, ketinggian 200 m) dan lintasan utama dihitung ulang: semua tab lain kemudian menampilkan lintasan GRAVES. |
 | **Urutan berkas** | *0,8 s per langkah · siklus 4,8 s (PE1ITR 2021)* (bawaan) atau *3,2 s per langkah · siklus 19,2 s (PE1ITR 2007)*. |
 

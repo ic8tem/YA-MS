@@ -9,11 +9,14 @@
 | Windows (64-বিট) | `YA-MS-x.y.z-windows-x64-setup.exe` (ইনস্টলার) | `C:\YA-MS` |
 | Windows (64-বিট), পোর্টেবল | `YA-MS-x.y.z-windows-x64-portatile.zip` | যেকোনো ফোল্ডার যেখানে আপনি লিখতে পারেন |
 | Windows (32-বিট, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` অথবা `...-windows-x86-portatile.zip` | `C:\YA-MS` |
-| Linux (64-বিট) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Linux (64-বিট): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (প্রথম চালুতে সেখানে কপি হয়) |
+| Linux (64-বিট), যেকোনো ডিস্ট্রিবিউশন | `YA-MS-x.y.z-linux-x64.tar.gz` (পোর্টেবল বা `./installa.sh` দিয়ে) | `~/YA-MS` অথবা যেকোনো ফোল্ডার |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-বিট) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-বিট) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi, Debian প্যাকেজ | `ya-ms_x.y.z_arm64.deb` (64-বিট) অথবা `ya-ms_x.y.z_armhf.deb` (32-বিট) | `~/YA-MS` (প্রথম চালুতে সেখানে কপি হয়) |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+| macOS, শুধু অ্যাপ্লিকেশন | `YA-MS-x.y.z-mac-apple-silicon-app.zip` অথবা `...-mac-intel-app.zip` | যে ফোল্ডারে আপনি `YA-MS.app` এক্সট্র্যাক্ট করেন |
 
 **প্রোগ্রাম ও তার `data` ফোল্ডার সর্বদা একসাথে** YA-MS ফোল্ডারে থাকে: সব তথ্য ও সেটিংস সেখানেই (কোনো AppData নয়, কোনো সিস্টেম ফোল্ডার নয়)। দেখুন [সেটিংস ও ডেটা ফোল্ডার](Settings-and-Data-Folder-bn)।
 
@@ -36,6 +39,16 @@
    ```
 3. স্ক্রিপ্টটি YA-MS-কে **`~/YA-MS`**-এ কপি করে (root লাগে না) এবং অ্যাপ্লিকেশন মেনুতে **YA-MS** যোগ করে (*HamRadio* বিভাগে)। `~/YA-MS/YA-MS` দিয়েও চালু করা যায়।
 
+### Debian প্যাকেজ (.deb)
+Debian, Ubuntu, Mint ও Raspberry Pi OS-এ এর বদলে `ya-ms_x.y.z_amd64.deb` ইনস্টল করতে পারেন (Raspberry Pi-তে `_arm64.deb` / `_armhf.deb`):
+```sh
+sudo apt install ./ya-ms_x.y.z_amd64.deb
+```
+প্যাকেজটি প্রোগ্রামকে `/opt/ya-ms`-এ রাখে এবং মেনুতে **YA-MS** যোগ করে। প্রথম চালুতে (এবং প্রতিটি নতুন সংস্করণের পরে) এটি নিজেকে **`~/YA-MS`**-এ কপি করে সেখান থেকেই চলে, ফলে `data` ফোল্ডার প্রোগ্রামের পাশে থাকে এবং আপনার সেটিংস অক্ষুণ্ণ থাকে।
+
+### পোর্টেবল
+`.tar.gz` ইনস্টল না করেও চলে: যেখানে লিখতে পারেন এমন যেকোনো জায়গায় এক্সট্র্যাক্ট করে সেই ফোল্ডার থেকে `./YA-MS` চালান।
+
 জাপানি লেখার জন্য Noto CJK ফন্ট লাগতে পারে: দেখুন [সমস্যা সমাধান](Troubleshooting-FAQ-bn#linux-জাপানি-লেখা-বাক্স-হিসেবে-দেখায়)।
 
 ## Raspberry Pi
@@ -51,6 +64,8 @@ Linux-এর মতোই প্রক্রিয়া: `YA-MS-x.y.z-raspberry
 1. সঠিক ফাইল বেছে নিন: M1/M2/M3/M4 প্রসেসরের জন্য `-mac-apple-silicon.dmg`, Intel Mac-এর জন্য `-mac-intel.dmg`।
 2. `.dmg` খুলুন, **"Installa YA-MS.command"-এ ডান ক্লিক → Open** করে নিশ্চিত করুন।
 3. স্ক্রিপ্টটি `YA-MS.app`-কে **`~/YA-MS`**-এ কপি করে খুলে দেয়।
+
+বিকল্পভাবে, `YA-MS-x.y.z-mac-apple-silicon-app.zip` / `-mac-intel-app.zip`-এ শুধু `YA-MS.app` থাকে: এটি আপনার পছন্দের কোনো ফোল্ডারে (যেখানে লিখতে পারেন) এক্সট্র্যাক্ট করুন; `data` ফোল্ডারটি `YA-MS.app`-এর পাশে তৈরি হয়। প্রথমবার: ডান ক্লিক → **Open**।
 
 প্রোগ্রামটি Apple দ্বারা স্বাক্ষরিত নয়, তাই প্রথমবার macOS নিশ্চিতকরণ চায়; দেখুন [সমস্যা সমাধান](Troubleshooting-FAQ-bn#macos-অজ্ঞাত-ডেভেলপারের-বলে-খোলা-যাচ্ছে-না)।
 

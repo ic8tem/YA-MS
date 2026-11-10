@@ -9,11 +9,14 @@
 | Windows (64-bit) | `YA-MS-x.y.z-windows-x64-setup.exe` (מתקין) | `C:\YA-MS` |
 | Windows (64-bit), נייד | `YA-MS-x.y.z-windows-x64-portatile.zip` | כל תיקייה שיש לך הרשאת כתיבה בה |
 | Windows (32-bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` או `...-windows-x86-portatile.zip` | `C:\YA-MS` |
-| Linux (64-bit) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Linux (64-bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
+| Linux (64-bit), כל הפצה | `YA-MS-x.y.z-linux-x64.tar.gz` (נייד או עם `./installa.sh`) | `~/YA-MS` או כל תיקייה |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi, חבילת Debian | `ya-ms_x.y.z_arm64.deb` (64-bit) או `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+| macOS, היישום בלבד | `YA-MS-x.y.z-mac-apple-silicon-app.zip` או `...-mac-intel-app.zip` | התיקייה שאליה חילצתם את `YA-MS.app` |
 
 **התוכנה ותיקיית ה-`data` שלה נשארות תמיד יחד** בתיקיית YA-MS: כל הנתונים וההגדרות נמצאים שם (בלי AppData, בלי תיקיות מערכת). ראו [הגדרות ותיקיית נתונים](Settings-and-Data-Folder-he).
 
@@ -36,6 +39,16 @@
    ```
 3. הסקריפט מעתיק את YA-MS אל **`~/YA-MS`** (אין צורך ב-root) ומוסיף את **YA-MS** לתפריט היישומים (קטגוריה *HamRadio*). אפשר גם להפעיל אותה עם `~/YA-MS/YA-MS`.
 
+### חבילת Debian ‏(.deb)
+ב-Debian, ‏Ubuntu, ‏Mint וב-Raspberry Pi OS אפשר במקום זאת להתקין את `ya-ms_x.y.z_amd64.deb` (`_arm64.deb` / `_armhf.deb` ב-Raspberry Pi):
+```sh
+sudo apt install ./ya-ms_x.y.z_amd64.deb
+```
+החבילה מציבה את התוכנה ב-`/opt/ya-ms` ומוסיפה את **YA-MS** לתפריט. בהפעלה הראשונה (ואחרי כל גרסה חדשה) היא מעתיקה את עצמה אל **`~/YA-MS`** ופועלת משם, כך שתיקיית ה-`data` נשארת לצד התוכנה וההגדרות שלכם נשמרות.
+
+### נייד
+קובץ ה-`.tar.gz` עובד גם בלי התקנה: חלצו אותו בכל מקום שיש לכם הרשאת כתיבה בו והריצו `./YA-MS` מתוך אותה תיקייה.
+
 להצגת טקסט יפני ייתכן שתזדקקו לגופני Noto CJK: ראו [פתרון תקלות](Troubleshooting-FAQ-he#linux-טקסט-יפני-מוצג-כריבועים).
 
 ## Raspberry Pi
@@ -51,6 +64,8 @@
 1. בחרו את הקובץ הנכון: `-mac-apple-silicon.dmg` למעבדי M1/M2/M3/M4, ‏`-mac-intel.dmg` למחשבי Mac עם Intel.
 2. פתחו את ה-`.dmg`, **לחצו לחיצה ימנית על "Installa YA-MS.command" → Open** ואשרו.
 3. הסקריפט מעתיק את `YA-MS.app` אל **`~/YA-MS`** ופותח אותה.
+
+לחלופין, `YA-MS-x.y.z-mac-apple-silicon-app.zip` / `-mac-intel-app.zip` מכיל רק את `YA-MS.app`: חלצו אותו לתיקייה לבחירתכם (שיש לכם הרשאת כתיבה בה); תיקיית ה-`data` נוצרת לצד `YA-MS.app`. בפעם הראשונה: לחיצה ימנית → **Open**.
 
 התוכנה אינה חתומה על ידי Apple, ולכן בפעם הראשונה macOS מבקש אישור; ראו [פתרון תקלות](Troubleshooting-FAQ-he#macos-לא-ניתן-לפתוח-כי-היא-ממפתח-לא-מזוהה).
 

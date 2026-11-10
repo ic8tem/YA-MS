@@ -6,18 +6,19 @@
 
 [![数据收集](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## 三路 cluster 数据流
+## 四个数据源
 
-本选项卡从三路 telnet 数据流中收集**流星散射 spot**，每路各占一个子选项卡：
+本选项卡从三路 telnet 数据流和 PSKReporter 的 MQTT 数据源中收集**流星散射 spot**，每路各占一个子选项卡：
 
 | 子选项卡 | 默认 | 说明 |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | 可自选 cluster。ON0DXK 默认过滤了 VHF 频段：用 `set/filter dxbm/pass 6`（然后 4、2…）启用。 |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network（7000 = CW/RTTY，7001 = FT8）。Skimmer 很少能解码 MS 模式。 |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | DM4X 的 cluster，转发 **PSKReporter** 的 spot：WSJT-X 和 MSHV 的 MSK144 解码结果会出现在这里。 |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | 通过 **MQTT** 获取的 PSKReporter 实时 spot（M0LTE 提供的服务）：无需登录，每条 spot 已带有发射台和接收台的网格坐标。默认主题：6 m、4 m、2 m、1.25 m、70 cm 上的 MSK144 以及 2 m 上的 FSK441（`pskr/filter/v2/band/mode/#`）；*默认主题*可将其恢复。 |
 | **已收集的 MS spot** | – | 已接受的 spot 表格，最新的在前。 |
 
-每路数据流都有主机、端口、登录后发送的命令、*重新连接*、*启动时连接*、一个控制台以及一行用于发送命令的输入框。请在顶部填写**登录呼号**。一条状态栏显示三个会话的状态（绿点 = 已连接）。更改语言或配色方案时，会话保持打开。
+每路数据流都有主机、端口、登录后发送的命令、*重新连接*、*启动时连接*、一个控制台以及一行用于发送命令的输入框。请在顶部填写**登录呼号**。MQTT 数据源有主机、端口、主题（每行一个或用 `;` 分隔）、*重新连接*和*启动时连接*（默认关闭），以及一个显示已接收 spot 的控制台；其 spot 同样经过该过滤器。一条状态栏显示四个数据源的状态（绿点 = 已连接）。更改语言或配色方案时，会话保持打开。
 
 ## 过滤器（占窗口的 40 %）
 

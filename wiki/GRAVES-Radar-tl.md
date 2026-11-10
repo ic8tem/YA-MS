@@ -16,7 +16,7 @@ Itinuturing ng tab ang **GRAVES → ikaw** bilang sariling landas na meteor scat
 
 | Kontrol | Ano ang ginagawa |
 |---|---|
-| **Ngayon** | Ibinabalik sa real time ang oras ng kalangitan (sinusundan ng tab ang slider na *Oras ng kalangitan*). |
+| **Ngayon** | Ibinabalik sa real time ang oras ng kalkulasyon (sinusundan ng tab ang slider na *Oras ng kalkulasyon*). |
 | **Gawing DX ang GRAVES** | Nagiging GRAVES ang DX station (JN27SI, taas 200 m) at muling kinakalkula ang pangunahing landas: ipapakita na ng lahat ng ibang tab ang landas ng GRAVES. |
 | **Sequence ng beam** | *0.8 s bawat hakbang · siklo 4.8 s (PE1ITR 2021)* (default) o *3.2 s bawat hakbang · siklo 19.2 s (PE1ITR 2007)*. |
 

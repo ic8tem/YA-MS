@@ -33,7 +33,7 @@
 | 控件 | 作用 |
 |---|---|
 | **时间** | UTC 时钟。 |
-| **天穹时间（±36 h）** | 将[天穹](Sky-View-zh)和 [GRAVES 雷达](GRAVES-Radar-zh)选项卡前后移动最多 36 小时，步长 15 分钟。 |
+| **计算时间（±36 h）** | 将计算时刻——[预报计算](Sky-View-zh)和 [GRAVES 雷达](GRAVES-Radar-zh)——前后移动最多 36 小时，步长 15 分钟。旁边显示*计算时间：当前*或*计算时间：dd/mm hh:mm UTC*。 |
 | **实时** | 回到当前时刻。 |
 | **24 h 表格的日期（UTC）** | [效率计算](Efficiency-Calculation-zh)和 GRAVES 时间线中显示的日期。 |
 

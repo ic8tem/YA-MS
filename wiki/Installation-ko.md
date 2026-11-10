@@ -9,11 +9,14 @@
 | Windows (64비트) | `YA-MS-x.y.z-windows-x64-setup.exe` (설치 프로그램) | `C:\YA-MS` |
 | Windows (64비트), 포터블 | `YA-MS-x.y.z-windows-x64-portatile.zip` | 쓰기 권한이 있는 아무 폴더 |
 | Windows (32비트, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` 또는 `...-windows-x86-portatile.zip` | `C:\YA-MS` |
-| Linux (64비트) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Linux (64비트): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |
+| Linux (64비트), 모든 배포판 | `YA-MS-x.y.z-linux-x64.tar.gz`(포터블 또는 `./installa.sh` 사용) | `~/YA-MS` 또는 아무 폴더 |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64비트) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32비트) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi, Debian 패키지 | `ya-ms_x.y.z_arm64.deb`(64비트) 또는 `ya-ms_x.y.z_armhf.deb`(32비트) | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+| macOS, 애플리케이션만 | `YA-MS-x.y.z-mac-apple-silicon-app.zip` 또는 `...-mac-intel-app.zip` | `YA-MS.app`을 압축 해제한 폴더 |
 
 **프로그램과 `data` 폴더는 항상 YA-MS 폴더 안에 함께 있습니다**: 모든 데이터와 설정이 그곳에 있습니다(AppData도 시스템 폴더도 사용하지 않음). [설정과 데이터 폴더](Settings-and-Data-Folder-ko)를 참조하세요.
 
@@ -36,6 +39,16 @@
    ```
 3. 스크립트가 YA-MS를 **`~/YA-MS`**에 복사하고(root 불필요) 애플리케이션 메뉴(*HamRadio* 범주)에 **YA-MS**를 추가합니다. `~/YA-MS/YA-MS`로 직접 실행할 수도 있습니다.
 
+### Debian 패키지 (.deb)
+Debian, Ubuntu, Mint, Raspberry Pi OS에서는 대신 `ya-ms_x.y.z_amd64.deb`(Raspberry Pi에서는 `_arm64.deb` / `_armhf.deb`)를 설치할 수도 있습니다:
+```sh
+sudo apt install ./ya-ms_x.y.z_amd64.deb
+```
+패키지는 프로그램을 `/opt/ya-ms`에 설치하고 메뉴에 **YA-MS**를 추가합니다. 처음 실행할 때(그리고 새 버전이 설치될 때마다) 자신을 **`~/YA-MS`**에 복사하고 그곳에서 실행되므로, `data` 폴더가 프로그램 옆에 유지되고 설정도 보존됩니다.
+
+### 포터블
+`.tar.gz`는 설치하지 않고도 사용할 수 있습니다: 쓰기 권한이 있는 아무 곳에나 압축 해제하고 그 폴더에서 `./YA-MS`를 실행하세요.
+
 일본어 텍스트를 표시하려면 Noto CJK 글꼴이 필요할 수 있습니다: [문제 해결](Troubleshooting-FAQ-ko#linux-일본어-문자가-네모로-표시됨)을 참조하세요.
 
 ## Raspberry Pi
@@ -51,6 +64,8 @@ Linux와 같은 절차입니다. `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz`(Raspber
 1. 알맞은 파일을 고릅니다: M1/M2/M3/M4 프로세서는 `-mac-apple-silicon.dmg`, Intel Mac은 `-mac-intel.dmg`.
 2. `.dmg`를 열고 **"Installa YA-MS.command"를 오른쪽 클릭 → Open**을 선택한 뒤 확인합니다.
 3. 스크립트가 `YA-MS.app`을 **`~/YA-MS`**에 복사하고 실행합니다.
+
+또는 `YA-MS-x.y.z-mac-apple-silicon-app.zip` / `-mac-intel-app.zip`을 사용할 수 있습니다. 이 파일에는 `YA-MS.app`만 들어 있습니다: 원하는 폴더(쓰기 권한이 있는 곳)에 압축 해제하면 `data` 폴더가 `YA-MS.app` 옆에 만들어집니다. 처음에는 오른쪽 클릭 → **Open**을 선택하세요.
 
 프로그램이 Apple 서명을 받지 않았으므로 처음에는 macOS가 확인을 요청합니다. [문제 해결](Troubleshooting-FAQ-ko#macos-확인되지-않은-개발자의-앱이라-열-수-없음)을 참조하세요.
 

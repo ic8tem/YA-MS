@@ -6,7 +6,9 @@
 
 [![Kalangitan](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Inilalagay ng sub-tab na ito (ang kalangitan ng mga naunang bersyon) sa iisang screen kung **saan** naroon ngayon ang mga magagamit na bakas at **saan itututok**. Sa kaliwa, ang **tanaw mula sa itaas** ng landas; sa kanan, ang listahan ng mga shower, isang maliit na kalangitan na may mga radiant, ang teksto ng kalkulasyon at ang **seksiyon** na nakikita mula sa iyong antenna. Lahat ay tumutukoy sa oras ng slider na *Oras ng kalangitan* (real time bilang default; ±36 h sa mga hakbang na 15 minuto).
+Inilalagay ng sub-tab na ito (ang kalangitan ng mga naunang bersyon) sa iisang screen kung **saan** naroon ngayon ang mga magagamit na bakas at **saan itututok**. Sa kaliwa, ang **tanaw mula sa itaas** ng landas; sa kanan, ang listahan ng mga shower, isang maliit na kalangitan na may mga radiant, ang teksto ng kalkulasyon at ang **seksiyon** na nakikita mula sa iyong antenna. Lahat ay tumutukoy sa oras ng slider na *Oras ng kalkulasyon* (real time bilang default; ±36 h sa mga hakbang na 15 minuto).
+
+Ibinubuod ng isang **strip sa itaas ng tanaw mula sa itaas** ang kalkulasyon para sa sandaling iyon: petsa at oras (*ngayon* o ilang oras mula ngayon), ang **indeks ng landas Σ ZHR×η**, ang **pinakakapaki-pakinabang na shower** kasama ang ZHR at episyensya nito, ang bilang ng mga shower sa itaas ng horizon at ang **inirerekomendang Hot** kasama ang azimuth nito.
 
 Sa maliit na kalangitan, laging ibinibigay ng isang **kahel na linya** na dumaraan sa zenith ang **tamang direksiyon ng antenna**, orthogonal sa pag-usad ng napiling shower (o ng pinakapaborable): azimuth ng radiant ±90°, may label na *antenna NNN°* sa magkabilang dulo, at manipis na linya para sa ±45° na tolerance. Ibinibigay ng maiikling kahel na guhit sa gilid ang orthogonal na direksiyon ng iba pang magagamit na shower.
 

@@ -6,18 +6,19 @@
 
 [![데이터 수집](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## 세 개의 클러스터 스트림
+## 네 가지 소스
 
-이 탭은 세 개의 텔넷 스트림에서 **유성 산란 스폿**을 수집하며, 각 스트림은 별도의 하위 탭에 있습니다:
+이 탭은 세 개의 텔넷 스트림과 PSKReporter MQTT 피드에서 **유성 산란 스폿**을 수집하며, 각 소스는 별도의 하위 탭에 있습니다:
 
 | 하위 탭 | 기본값 | 비고 |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | 사용자 지정 클러스터. ON0DXK에서는 VHF 밴드가 필터링되어 있으므로 `set/filter dxbm/pass 6`(이어서 4, 2…)으로 활성화하세요. |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network(7000 = CW/RTTY, 7001 = FT8). 스키머가 MS 모드를 디코드하는 일은 드뭅니다. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | **PSKReporter** 스폿을 전달하는 DM4X 클러스터: WSJT-X와 MSHV의 MSK144 디코드가 여기로 들어옵니다. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | **MQTT**를 통한 PSKReporter 실시간 스폿(M0LTE의 서비스): 로그인이 필요 없고, 각 스폿에는 송신국과 수신국의 로케이터가 이미 들어 있습니다. 기본 토픽: 6 m, 4 m, 2 m, 1.25 m, 70 cm의 MSK144와 2 m의 FSK441(`pskr/filter/v2/band/mode/#`). *기본 토픽*으로 복원합니다. |
 | **수집된 MS 스폿** | – | 수락된 스폿의 표, 최신 항목이 위. |
 
-각 스트림에는 호스트, 포트, 로그인 후 보낼 명령, *재연결*, *시작 시 연결*, 콘솔, 명령 입력 줄이 있습니다. 맨 위에 **로그인용 호출부호**를 입력하세요. 띠 표시줄이 세 세션의 상태(초록 점 = 연결됨)를 보여 줍니다. 언어나 색 구성을 바꿔도 세션은 열린 채로 유지됩니다.
+각 스트림에는 호스트, 포트, 로그인 후 보낼 명령, *재연결*, *시작 시 연결*, 콘솔, 명령 입력 줄이 있습니다. 맨 위에 **로그인용 호출부호**를 입력하세요. MQTT 소스에는 호스트, 포트, 토픽(한 줄에 하나 또는 `;`로 구분), *재연결*과 *시작 시 연결*(기본값은 꺼짐), 수신한 스폿을 보여 주는 콘솔이 있으며, 그 스폿도 같은 필터를 거칩니다. 띠 표시줄이 네 소스의 상태(초록 점 = 연결됨)를 보여 줍니다. 언어나 색 구성을 바꿔도 세션은 열린 채로 유지됩니다.
 
 ## 필터 (창의 40 %)
 

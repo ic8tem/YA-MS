@@ -9,11 +9,14 @@
 | Windows（64 位） | `YA-MS-x.y.z-windows-x64-setup.exe`（安装程序） | `C:\YA-MS` |
 | Windows（64 位），便携版 | `YA-MS-x.y.z-windows-x64-portatile.zip` | 任何您有写入权限的文件夹 |
 | Windows（32 位，Windows 10/11） | `YA-MS-x.y.z-windows-x86-setup.exe` 或 `...-windows-x86-portatile.zip` | `C:\YA-MS` |
-| Linux（64 位） | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Linux（64 位）：Debian、Ubuntu、Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS`（首次启动时复制到该处） |
+| Linux（64 位），任意发行版 | `YA-MS-x.y.z-linux-x64.tar.gz`（便携使用或通过 `./installa.sh` 安装） | `~/YA-MS` 或任意文件夹 |
 | Raspberry Pi 3/4/5、400/500（Raspberry Pi OS 64 位） | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4（Raspberry Pi OS 32 位） | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi，Debian 软件包 | `ya-ms_x.y.z_arm64.deb`（64 位）或 `ya-ms_x.y.z_armhf.deb`（32 位） | `~/YA-MS`（首次启动时复制到该处） |
 | macOS，Apple 芯片（M1/M2/M3/M4） | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS，Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+| macOS，仅应用程序 | `YA-MS-x.y.z-mac-apple-silicon-app.zip` 或 `...-mac-intel-app.zip` | 解压出 `YA-MS.app` 的文件夹 |
 
 **程序与其 `data` 文件夹始终放在一起**，位于 YA-MS 文件夹中：所有数据和设置都在那里（不使用 AppData，不使用系统文件夹）。参见[设置与数据文件夹](Settings-and-Data-Folder-zh)。
 
@@ -36,6 +39,16 @@
    ```
 3. 该脚本会把 YA-MS 复制到 **`~/YA-MS`**（无需 root 权限），并将 **YA-MS** 添加到应用程序菜单（*HamRadio* 类别）。也可以用 `~/YA-MS/YA-MS` 启动。
 
+### Debian 软件包（.deb）
+在 Debian、Ubuntu、Mint 和 Raspberry Pi OS 上，也可以改为安装 `ya-ms_x.y.z_amd64.deb`（Raspberry Pi 上为 `_arm64.deb` / `_armhf.deb`）：
+```sh
+sudo apt install ./ya-ms_x.y.z_amd64.deb
+```
+该软件包将程序放在 `/opt/ya-ms` 中，并把 **YA-MS** 添加到菜单。首次启动时（以及每次升级到新版本后），它会把自身复制到 **`~/YA-MS`** 并从那里运行，因此 `data` 文件夹始终与程序放在一起，您的设置也得以保留。
+
+### 便携版
+`.tar.gz` 也可以不安装直接使用：将其解压到任何您有写入权限的位置，然后在该文件夹中运行 `./YA-MS`。
+
 显示日文可能需要 Noto CJK 字体：参见[故障排除](Troubleshooting-FAQ-zh#linux-下日文显示为方框)。
 
 ## Raspberry Pi
@@ -51,6 +64,8 @@
 1. 选择正确的文件：M1/M2/M3/M4 处理器用 `-mac-apple-silicon.dmg`，Intel Mac 用 `-mac-intel.dmg`。
 2. 打开 `.dmg`，**右键单击“Installa YA-MS.command” → 打开**并确认。
 3. 该脚本会把 `YA-MS.app` 复制到 **`~/YA-MS`** 并打开它。
+
+另外，`YA-MS-x.y.z-mac-apple-silicon-app.zip` / `-mac-intel-app.zip` 只包含 `YA-MS.app`：将其解压到您选择的文件夹（需有写入权限）；`data` 文件夹会在 `YA-MS.app` 旁边创建。首次运行时请右键单击 → **打开**。
 
 本程序未经 Apple 签名，因此首次运行时 macOS 会要求确认；参见[故障排除](Troubleshooting-FAQ-zh#macos-无法打开来自身份不明的开发者)。
 

@@ -9,11 +9,14 @@
 | Windows (64 ビット) | `YA-MS-x.y.z-windows-x64-setup.exe` (インストーラー) | `C:\YA-MS` |
 | Windows (64 ビット)、ポータブル版 | `YA-MS-x.y.z-windows-x64-portatile.zip` | 書き込み可能な任意のフォルダー |
 | Windows (32 ビット、Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` または `...-windows-x86-portatile.zip` | `C:\YA-MS` |
-| Linux (64 ビット) | `YA-MS-x.y.z-linux-x64.tar.gz` | `~/YA-MS` |
+| Linux (64 ビット): Debian、Ubuntu、Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (初回起動時にそこへコピー) |
+| Linux (64 ビット)、任意のディストリビューション | `YA-MS-x.y.z-linux-x64.tar.gz` (ポータブル、または `./installa.sh` で) | `~/YA-MS` または任意のフォルダー |
 | Raspberry Pi 3/4/5、400/500 (Raspberry Pi OS 64 ビット) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 ビット) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
+| Raspberry Pi、Debian パッケージ | `ya-ms_x.y.z_arm64.deb` (64 ビット) または `ya-ms_x.y.z_armhf.deb` (32 ビット) | `~/YA-MS` (初回起動時にそこへコピー) |
 | macOS、Apple シリコン (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS、Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
+| macOS、アプリケーションのみ | `YA-MS-x.y.z-mac-apple-silicon-app.zip` または `...-mac-intel-app.zip` | `YA-MS.app` を展開したフォルダー |
 
 **プログラムとその `data` フォルダーは常に一緒に** YA-MS フォルダー内に置かれます。すべてのデータと設定はそこにあります (AppData もシステムフォルダーも使いません)。[設定とデータフォルダー](Settings-and-Data-Folder-ja) を参照してください。
 
@@ -36,6 +39,16 @@
    ```
 3. スクリプトが YA-MS を **`~/YA-MS`** にコピーし (root 権限不要)、アプリケーションメニュー (カテゴリー *HamRadio*) に **YA-MS** を追加します。`~/YA-MS/YA-MS` で起動することもできます。
 
+### Debian パッケージ (.deb)
+Debian、Ubuntu、Mint、Raspberry Pi OS では、代わりに `ya-ms_x.y.z_amd64.deb` (Raspberry Pi では `_arm64.deb` / `_armhf.deb`) をインストールすることもできます:
+```sh
+sudo apt install ./ya-ms_x.y.z_amd64.deb
+```
+パッケージはプログラムを `/opt/ya-ms` に置き、メニューに **YA-MS** を追加します。初回起動時 (および新しいバージョンのたび) に自身を **`~/YA-MS`** にコピーしてそこから実行するため、`data` フォルダーはプログラムの隣に保たれ、設定も維持されます。
+
+### ポータブル版
+`.tar.gz` はインストールせずに使うこともできます。書き込み可能な任意の場所に展開し、そのフォルダーで `./YA-MS` を実行します。
+
 日本語を表示するには Noto CJK フォントが必要な場合があります。[トラブルシューティング](Troubleshooting-FAQ-ja#linux-で日本語が四角で表示される) を参照してください。
 
 ## Raspberry Pi
@@ -51,6 +64,8 @@
 1. 正しいファイルを選びます: M1/M2/M3/M4 プロセッサーには `-mac-apple-silicon.dmg`、Intel Mac には `-mac-intel.dmg`。
 2. `.dmg` を開き、**「Installa YA-MS.command」を右クリック → 開く** を選んで確認します。
 3. スクリプトが `YA-MS.app` を **`~/YA-MS`** にコピーして起動します。
+
+別の方法として、`YA-MS-x.y.z-mac-apple-silicon-app.zip` / `-mac-intel-app.zip` には `YA-MS.app` だけが入っています。好きなフォルダー (書き込み可能な場所) に展開してください。`data` フォルダーは `YA-MS.app` の隣に作成されます。初回は右クリック → **開く** を選びます。
 
 このプログラムは Apple の署名がないため、初回は macOS が確認を求めます。[トラブルシューティング](Troubleshooting-FAQ-ja#macos-開発元を確認できないため開けない) を参照してください。
 

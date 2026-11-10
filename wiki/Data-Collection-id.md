@@ -6,18 +6,19 @@
 
 [![Pengumpulan data](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## Tiga aliran cluster
+## Empat sumber
 
-Tab ini mengumpulkan **spot meteor scatter** dari tiga aliran telnet, masing-masing di sub-tab tersendiri:
+Tab ini mengumpulkan **spot meteor scatter** dari tiga aliran telnet dan dari umpan MQTT PSKReporter, masing-masing di sub-tab tersendiri:
 
 | Sub-tab | Bawaan | Catatan |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | Cluster pilihan Anda. Di ON0DXK band VHF difilter: aktifkan dengan `set/filter dxbm/pass 6` (lalu 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimmer jarang mendekode mode MS. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | Cluster DM4X yang membawa spot **PSKReporter**: dekode MSK144 dari WSJT-X dan MSHV tiba di sini. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | Spot PSKReporter langsung melalui **MQTT** (layanan dari M0LTE): tanpa login, setiap spot sudah membawa locator stasiun pemancar dan stasiun penerima. Topik bawaan: MSK144 di 6 m, 4 m, 2 m, 1,25 m, 70 cm dan FSK441 di 2 m (`pskr/filter/v2/band/mode/#`); *Topik bawaan* memulihkannya. |
 | **Spot MS terkumpul** | – | Tabel spot yang diterima, yang terbaru di atas. |
 
-Setiap aliran memiliki host, port, perintah yang dikirim setelah login, *Sambung ulang*, *Sambung saat mulai*, sebuah konsol dan baris untuk mengirim perintah. Tulis **callsign untuk login** Anda di bagian atas. Sebuah strip menampilkan status ketiga sesi (titik hijau = tersambung). Sesi tetap terbuka saat Anda mengganti bahasa atau skema warna.
+Setiap aliran memiliki host, port, perintah yang dikirim setelah login, *Sambung ulang*, *Sambung saat mulai*, sebuah konsol dan baris untuk mengirim perintah. Tulis **callsign untuk login** Anda di bagian atas. Sumber MQTT memiliki host, port, topik (satu per baris atau dipisahkan dengan `;`), *Sambung ulang* dan *Sambung saat mulai* (nonaktif secara bawaan) serta konsol berisi spot yang diterima; spotnya melewati filter yang sama. Sebuah strip menampilkan status keempat sumber (titik hijau = tersambung). Sesi tetap terbuka saat Anda mengganti bahasa atau skema warna.
 
 ## Filter (40 % dari jendela)
 

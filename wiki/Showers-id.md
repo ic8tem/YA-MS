@@ -22,7 +22,8 @@ Katalog hujan meteor yang dipakai oleh semua perhitungan: **45 hujan meteor** da
 | v km/s, r | Kecepatan geosentris dan indeks populasi |
 | ZHR | ZHR puncak (*var.* = variabel) |
 | Jenis | *visual* atau *radio, siang hari* |
-| Aktif hari ini | *ya* jika hujan meteor sedang aktif |
+
+Hujan meteor yang **aktif hari ini (UTC)** disorot dengan latar kuning transparan dan teks tebal.
 
 ## Puncak berikutnya
 

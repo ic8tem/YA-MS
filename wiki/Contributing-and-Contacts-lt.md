@@ -44,4 +44,4 @@ Sąsajos vertimai yra paprasti tekstiniai failai **`data/lingue/<code>.txt`** (U
 
 Redaguokite failą savo įdiegties aplanke `data/lingue` ir paleiskite YA-MS iš naujo (arba perjunkite kalbą), kad pamatytumėte rezultatą. Kadangi šie failai **kiekvieno atnaujinimo metu pakeičiami naujesniais**, prašome savo pataisymus taip pat **atsiųsti** – el. paštu arba kaip pull request GitHub (`data/lingue/`) – kad jie patektų į kitą leidimą.
 
-Ši wiki yra anglų, rusų, vokiečių ir japonų kalbomis; laukiami ir wiki puslapių pataisymai.
+Ši wiki yra 36 kalbomis (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, ไทย, 日本語, 한국어, 中文, 中文 (繁體)); laukiami ir wiki puslapių pataisymai.

@@ -16,16 +16,46 @@
 
 ## 界面语言
 
-六种界面语言：
+36 种界面语言：
 
 | 语言 | 代码 | 文件 |
 |---|---|---|
 | Italiano | `it` | 无：意大利语是基础语言（即键） |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-br` | `data/lingue/pt-br.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-tw` | `data/lingue/zh-tw.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
 首次启动时，如果**系统语言**是其中之一，YA-MS 就使用系统语言，否则使用意大利语。数字和日期遵循所选语言的格式（例如英语用小数点，意大利语和德语用逗号）。翻译文件中缺少的文字以意大利语显示。在 Linux 上，日语需要合适的字体：参见[故障排除](Troubleshooting-FAQ-zh#linux-下日文显示为方框)。
 
@@ -100,7 +130,7 @@
 | `elevazione_lobo_gradi` | 0 | 波瓣仰角（°） |
 | `boom_m` | 4.6 | 八木天线横梁长度（m） |
 | `hot_spot_km` | 150 | Hot A / Hot B 到中点的距离（30–400 km） |
-| `lingua` | 系统 / `it` | 语言代码（`it`、`en`、`ru`、`ja`、`de`、`nl`） |
+| `lingua` | 系统 / `it` | 语言代码（`it`、`en`、`de`、`zh`、… 共 36 个代码，请参阅[界面语言](#界面语言)） |
 | `tema` | `chiaro` | 配色方案：`chiaro`（浅色）、`scuro`（夜间）、`nero`（黑色）、`pastello-azzurro`、`pastello-arancione`、`pastello-acquamarina`、`pastello-verde`、`pastello-rosa`、`pastello-lilla`、`pastello-indaco`、`pastello-marrone`、`scia`（流星余迹） |
 | `carattere_pct` | 100 | 字体大小（100–300 %） |
 | `comandi_visibili` | 1 | 1 = 显示控件行，0 = 折叠 |

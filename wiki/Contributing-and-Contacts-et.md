@@ -44,4 +44,4 @@ Kasutajaliidese tõlked on lihttekstifailid kaustas **`data/lingue/<code>.txt`**
 
 Muuda faili oma paigalduse kaustas `data/lingue` ja käivita YA-MS uuesti (või vaheta keelt), et tulemust näha. Kuna need failid **asendatakse iga uuendusega uuematega**, saada palun oma parandused ka autorile – e-kirjaga või pull requestina GitHubis (`data/lingue/`) –, et need jõuaksid järgmisse väljalaskesse.
 
-See wiki on olemas inglise, vene, saksa ja jaapani keeles; ka wiki lehtede parandused on teretulnud.
+See wiki on olemas 36 keeles (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, ไทย, 日本語, 한국어, 中文, 中文 (繁體)); ka wiki lehtede parandused on teretulnud.

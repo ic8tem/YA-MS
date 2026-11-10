@@ -16,16 +16,46 @@ Pakeitus kalbą ar temą, nustatymai išsaugomi, o **langas perkuriamas** toje p
 
 ## Kalba
 
-Šešios sąsajos kalbos:
+36 sąsajos kalbos:
 
 | Kalba | Kodas | Failas |
 |---|---|---|
 | Italiano | `it` | nėra: italų kalba yra bazinė (raktai) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-br` | `data/lingue/pt-br.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-tw` | `data/lingue/zh-tw.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
 Pirmą kartą paleista YA-MS naudoja **sistemos kalbą**, jei ji yra viena iš šių, kitu atveju – italų. Skaičiai ir datos atitinka pasirinktą kalbą (pvz., dešimtainis taškas anglų, kablelis italų ir vokiečių kalbomis). Jei vertimo faile teksto trūksta, jis rodomas itališkai. Linux sistemoje japonų kalbai reikia tinkamų šriftų: žr. [Trikčių šalinimas](Troubleshooting-FAQ-lt#linux-japoniškas-tekstas-rodomas-kvadratėliais).
 
@@ -100,7 +130,7 @@ Paprastas tekstas, po vieną `key=value` eilutėje (eilutės, prasidedančios `#
 | `elevazione_lobo_gradi` | 0 | Lapelio elevacija (°) |
 | `boom_m` | 4.6 | Yagi strėlės ilgis (m) |
 | `hot_spot_km` | 150 | Hot A / Hot B atstumas nuo vidurio taško (30–400 km) |
-| `lingua` | sistemos / `it` | Kalbos kodas (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | sistemos / `it` | Kalbos kodas (`it`, `en`, `de`, `lt`, … – 36 kodai, žr. [Kalba](#kalba)) |
 | `tema` | `chiaro` | Spalvų schema: `chiaro` (Šviesi), `scuro` (Naktis), `nero` (Juoda), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteoro pėdsakas) |
 | `carattere_pct` | 100 | Šrifto dydis (100–300 %) |
 | `comandi_visibili` | 1 | 1 = valdymo eilutės rodomos, 0 = suskleistos |

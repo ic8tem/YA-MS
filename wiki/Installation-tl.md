@@ -58,7 +58,7 @@ Hindi naka-sign ng Apple ang programa, kaya sa unang pagkakataon ay hihingi ng k
 
 - Awtomatikong dina-download sa `data/mappa` ang **mapa ng Europa** (mga baybayin at hangganan ng Natural Earth) sa unang pagkakataon: minsan lang kailangan ng koneksiyon sa internet.
 - Agad na dina-download ang **datos ng radar** (Collm, Sodankylä) at pagkatapos ay sinusuri bawat 5 minuto.
-- Nagsisimula ang interface sa wika ng iyong sistema kung isa ito sa anim na available, kung hindi ay sa Italyano; palitan ito sa kanang itaas (tingnan ang [Mga setting](Settings-and-Data-Folder-tl#wika)).
+- Nagsisimula ang interface sa wika ng iyong sistema kung isa ito sa 36 na available, kung hindi ay sa Italyano; palitan ito sa kanang itaas (tingnan ang [Mga setting](Settings-and-Data-Folder-tl#wika)).
 
 ## Pag-update
 

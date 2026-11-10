@@ -58,7 +58,7 @@ Die program is nie deur Apple onderteken nie, so die eerste keer vra macOS vir b
 
 - Die **kaart van Europa** (Natural Earth-kuslyne en -grense) word die eerste keer outomaties in `data/mappa` afgelaai: 'n internetverbinding is een keer nodig.
 - Die **radardata** (Collm, Sodankylä) word dadelik afgelaai en daarna elke 5 minute nagegaan.
-- Die koppelvlak begin in jou stelseltaal as dit een van die ses beskikbare tale is, anders in Italiaans; verander dit regs bo (sien [Instellings](Settings-and-Data-Folder-af#taal)).
+- Die koppelvlak begin in jou stelseltaal as dit een van die 36 beskikbare tale is, anders in Italiaans; verander dit regs bo (sien [Instellings](Settings-and-Data-Folder-af#taal)).
 
 ## Bywerking
 

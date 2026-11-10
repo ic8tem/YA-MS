@@ -16,16 +16,46 @@ As jy die taal of tema verander, word die instellings gestoor en die **venster h
 
 ## Taal
 
-Ses koppelvlaktale:
+36 koppelvlaktale:
 
 | Taal | Kode | Lêer |
 |---|---|---|
 | Italiano | `it` | geen: Italiaans is die basistaal (die sleutels) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-br` | `data/lingue/pt-br.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-tw` | `data/lingue/zh-tw.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
 By die eerste opstart gebruik YA-MS die **stelseltaal** as dit een van hierdie is, anders Italiaans. Getalle en datums volg die gekose taal (bv. desimale punt in Engels, komma in Italiaans en Duits). Enige teks wat in 'n vertaallêer ontbreek, word in Italiaans gewys. Op Linux het Japannees geskikte lettertipes nodig: sien [Probleemoplossing](Troubleshooting-FAQ-af#linux-japannese-teks-verskyn-as-blokkies).
 
@@ -100,7 +130,7 @@ Gewone teks, een `sleutel=waarde` per reël (reëls wat met `#` of `;` begin, is
 | `elevazione_lobo_gradi` | 0 | Lob-elevasie (°) |
 | `boom_m` | 4.6 | Boomlengte van die Yagi (m) |
 | `hot_spot_km` | 150 | Afstand van Hot A / Hot B vanaf die middelpunt (30–400 km) |
-| `lingua` | stelsel / `it` | Taalkode (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | stelsel / `it` | Taalkode (`it`, `en`, `de`, `af`, … – 36 kodes, sien [Taal](#taal)) |
 | `tema` | `chiaro` | Kleurskema: `chiaro` (Lig), `scuro` (Nag), `nero` (Swart), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteoorspoor) |
 | `carattere_pct` | 100 | Lettergrootte (100–300 %) |
 | `comandi_visibili` | 1 | 1 = rye kontroles gewys, 0 = weggevou |

@@ -58,7 +58,7 @@ Das Programm ist nicht von Apple signiert, deshalb fragt macOS beim ersten Mal n
 
 - Die **Europakarte** (Küsten und Grenzen von Natural Earth) wird beim ersten Start automatisch nach `data/mappa` geladen: Einmalig ist eine Internetverbindung nötig.
 - Die **Radardaten** (Collm, Sodankylä) werden sofort geladen und danach alle 5 Minuten geprüft.
-- Die Oberfläche startet in deiner Systemsprache, wenn sie eine der sechs verfügbaren ist, sonst auf Italienisch; ändern kannst du sie oben rechts (siehe [Einstellungen](Settings-and-Data-Folder-de#sprache)).
+- Die Oberfläche startet in deiner Systemsprache, wenn sie eine der 36 verfügbaren ist, sonst auf Italienisch; ändern kannst du sie oben rechts (siehe [Einstellungen](Settings-and-Data-Folder-de#sprache)).
 
 ## Aktualisieren
 

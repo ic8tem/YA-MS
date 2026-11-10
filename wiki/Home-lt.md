@@ -4,7 +4,7 @@
 
 *parengė Costantino Cerrotta IC8TEM*
 
-**YA-MS** – nemokama programa radijo mėgėjams, dirbantiems **meteor scatter (MS) ryšiais 50, 70, 144, 222 ir 432 MHz juostose**. Realiai trasai tarp jūsų ir korespondento lokatorių ji kas valandą apskaičiuoja, kiek kiekvienas aktyvus meteorų srautas padeda trasai (jo **efektyvumą**), iš kurios trasos pusės ateina atspindžiai (**Hot A / Hot B**), kur nukreipti anteną, ir eksperimentinę atspindžių per valandą prognozę, gautą iš **realiuoju laiku veikiančio meteorų radaro** (Collm, Vokietija). Programa veikia **Windows, Linux ir macOS** sistemose (.NET 8 + Avalonia), 6 sąsajos kalbomis.
+**YA-MS** – nemokama programa radijo mėgėjams, dirbantiems **meteor scatter (MS) ryšiais 50, 70, 144, 222 ir 432 MHz juostose**. Realiai trasai tarp jūsų ir korespondento lokatorių ji kas valandą apskaičiuoja, kiek kiekvienas aktyvus meteorų srautas padeda trasai (jo **efektyvumą**), iš kurios trasos pusės ateina atspindžiai (**Hot A / Hot B**), kur nukreipti anteną, ir eksperimentinę atspindžių per valandą prognozę, gautą iš **realiuoju laiku veikiančio meteorų radaro** (Collm, Vokietija). Programa veikia **Windows, Linux ir macOS** sistemose (.NET 8 + Avalonia), 36 sąsajos kalbomis.
 
 Pagrindinis šaltinis – **C. Cerrotta IC8TEM ir G. Sartori IV3GTH** straipsnis *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (7 versija). Kiekviena programos formulė ir kiekvienas duomuo nurodo savo šaltinį; žr. [Šaltiniai](Sources-lt).
 

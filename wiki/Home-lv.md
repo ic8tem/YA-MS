@@ -4,7 +4,7 @@
 
 *sagatavoja Costantino Cerrotta IC8TEM*
 
-**YA-MS** ir bezmaksas programma radioamatieriem, kas strādā **meteor scatter (MS) 50, 70, 144, 222 un 432 MHz joslās**. Reālajai trasei starp tavu un korespondenta lokatoru tā stundu pa stundai aprēķina, cik lielā mērā katra aktīvā meteoru plūsma palīdz trasei (tās **efektivitāti**), no kuras trases puses nāk atstarojumi (**Hot A / Hot B**), kur tēmēt antenu, un eksperimentālu atstarojumu skaita stundā prognozi, kas iegūta no **meteoru radara tiešsaistē** (Collm, Vācija). Tā darbojas **Windows, Linux un macOS** (.NET 8 + Avalonia) 6 saskarnes valodās.
+**YA-MS** ir bezmaksas programma radioamatieriem, kas strādā **meteor scatter (MS) 50, 70, 144, 222 un 432 MHz joslās**. Reālajai trasei starp tavu un korespondenta lokatoru tā stundu pa stundai aprēķina, cik lielā mērā katra aktīvā meteoru plūsma palīdz trasei (tās **efektivitāti**), no kuras trases puses nāk atstarojumi (**Hot A / Hot B**), kur tēmēt antenu, un eksperimentālu atstarojumu skaita stundā prognozi, kas iegūta no **meteoru radara tiešsaistē** (Collm, Vācija). Tā darbojas **Windows, Linux un macOS** (.NET 8 + Avalonia) 36 saskarnes valodās.
 
 Galvenais avots ir **C. Cerrotta IC8TEM un G. Sartori IV3GTH** raksts *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (7. versija). Katrai programmas formulai un datu vienībai ir norādīts avots; sk. [Avoti](Sources-lv).
 

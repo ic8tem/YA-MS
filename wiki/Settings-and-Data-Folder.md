@@ -16,16 +16,46 @@ Changing language or theme saves the settings and **rebuilds the window** in the
 
 ## Language
 
-Six interface languages:
+36 interface languages:
 
 | Language | Code | File |
 |---|---|---|
 | Italiano | `it` | none: Italian is the base language (the keys) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-br` | `data/lingue/pt-br.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-tw` | `data/lingue/zh-tw.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
 At the first start YA-MS uses the **system language** if it is one of these, otherwise Italian. Numbers and dates follow the chosen language (e.g. decimal point in English, comma in Italian and German). Any text missing from a translation file is shown in Italian. On Linux, Japanese needs suitable fonts: see [Troubleshooting](Troubleshooting-FAQ#linux-japanese-text-shows-boxes).
 
@@ -100,7 +130,7 @@ Plain text, one `key=value` per line (lines starting with `#` or `;` are comment
 | `elevazione_lobo_gradi` | 0 | Lobe elevation (°) |
 | `boom_m` | 4.6 | Yagi boom length (m) |
 | `hot_spot_km` | 150 | Hot A / Hot B distance from the midpoint (30–400 km) |
-| `lingua` | system / `it` | Language code (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | system / `it` | Language code (`it`, `en`, `de`, … – 36 codes, see [Language](#language)) |
 | `tema` | `chiaro` | Colour scheme: `chiaro` (Light), `scuro` (Night), `nero` (Black), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteor trail) |
 | `carattere_pct` | 100 | Font size (100–300 %) |
 | `comandi_visibili` | 1 | 1 = rows of controls shown, 0 = folded |

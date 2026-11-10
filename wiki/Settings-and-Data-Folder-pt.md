@@ -16,16 +16,46 @@ Ao mudar o idioma ou o tema as definições são guardadas e **a janela é recon
 
 ## Idioma
 
-Seis idiomas de interface:
+36 idiomas de interface:
 
 | Idioma | Código | Ficheiro |
 |---|---|---|
 | Italiano | `it` | nenhum: o italiano é o idioma base (as chaves) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-br` | `data/lingue/pt-br.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-tw` | `data/lingue/zh-tw.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
 No primeiro arranque o YA-MS usa o **idioma do sistema** se for um destes; caso contrário, o italiano. Os números e as datas seguem o idioma escolhido (p. ex. ponto decimal em inglês, vírgula em italiano e alemão). Qualquer texto em falta num ficheiro de tradução é mostrado em italiano. No Linux, o japonês precisa de fontes adequadas: ver [Problemas](Troubleshooting-FAQ-pt#linux-o-texto-japonês-aparece-como-quadradinhos).
 
@@ -100,7 +130,7 @@ Texto simples, um `chave=valor` por linha (as linhas que começam por `#` ou `;`
 | `elevazione_lobo_gradi` | 0 | Elevação do lóbulo (°) |
 | `boom_m` | 4.6 | Comprimento do boom da Yagi (m) |
 | `hot_spot_km` | 150 | Distância de Hot A / Hot B ao ponto médio (30–400 km) |
-| `lingua` | sistema / `it` | Código do idioma (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | sistema / `it` | Código do idioma (`it`, `en`, `de`, `pt`, … – 36 códigos, ver [Idioma](#idioma)) |
 | `tema` | `chiaro` | Esquema de cores: `chiaro` (Claro), `scuro` (Noite), `nero` (Preto), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Rasto meteórico) |
 | `carattere_pct` | 100 | Tamanho da letra (100–300 %) |
 | `comandi_visibili` | 1 | 1 = filas de comandos visíveis, 0 = recolhidas |

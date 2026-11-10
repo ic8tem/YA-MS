@@ -44,4 +44,4 @@ YA-MS ان لوگوں کی رپورٹوں سے بہتر ہوتا ہے جو اس�
 
 اپنی انسٹالیشن کے `data/lingue` فولڈر میں فائل میں ترمیم کریں اور نتیجہ دیکھنے کے لیے YA-MS دوبارہ شروع کریں (یا زبان بدلیں)۔ چونکہ یہ فائلیں **ہر تازہ کاری پر نئے ورژن سے بدل دی جاتی ہیں**، براہِ کرم اپنی **تصحیحات بھیج بھی دیں** – ای میل سے یا GitHub پر pull request کے طور پر (`data/lingue/`) – تاکہ وہ اگلی ریلیز میں شامل ہوں۔
 
-یہ وکی English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文 میں موجود ہے؛ وکی کے صفحات کی تصحیحات بھی خوش آمدید ہیں۔
+یہ وکی 36 زبانوں میں موجود ہے (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, ไทย, 日本語, 한국어, 中文, 中文 (繁體))؛ وکی کے صفحات کی تصحیحات بھی خوش آمدید ہیں۔

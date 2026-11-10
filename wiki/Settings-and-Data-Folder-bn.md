@@ -16,16 +16,46 @@
 
 ## ভাষা
 
-ইন্টারফেসের ছয়টি ভাষা:
+ইন্টারফেসের 36টি ভাষা:
 
 | ভাষা | কোড | ফাইল |
 |---|---|---|
 | Italiano | `it` | নেই: ইতালীয় হলো মূল ভাষা (কী-গুলো) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-br` | `data/lingue/pt-br.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-tw` | `data/lingue/zh-tw.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
 প্রথমবার চালুর সময় YA-MS **সিস্টেমের ভাষা** ব্যবহার করে যদি সেটি এগুলোর একটি হয়, নইলে ইতালীয়। সংখ্যা ও তারিখ নির্বাচিত ভাষা অনুসরণ করে (যেমন ইংরেজিতে দশমিক বিন্দু, ইতালীয় ও জার্মানে কমা)। অনুবাদ ফাইলে না থাকা যেকোনো লেখা ইতালীয় ভাষায় দেখানো হয়। Linux-এ জাপানির জন্য উপযুক্ত ফন্ট দরকার: দেখুন [সমস্যা সমাধান](Troubleshooting-FAQ-bn#linux-জাপানি-লেখা-বাক্স-হিসেবে-দেখায়)।
 
@@ -100,7 +130,7 @@
 | `elevazione_lobo_gradi` | 0 | লোবের এলিভেশন (°) |
 | `boom_m` | 4.6 | ইয়াগির বুমের দৈর্ঘ্য (m) |
 | `hot_spot_km` | 150 | মধ্যবিন্দু থেকে Hot A / Hot B-র দূরত্ব (30–400 km) |
-| `lingua` | সিস্টেম / `it` | ভাষার কোড (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | সিস্টেম / `it` | ভাষার কোড (`it`, `en`, `de`, `bn`, … – 36টি কোড, দেখুন [ভাষা](#ভাষা)) |
 | `tema` | `chiaro` | রঙের থিম: `chiaro` (হালকা), `scuro` (রাত), `nero` (কালো), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (উল্কা-রেখা) |
 | `carattere_pct` | 100 | ফন্টের আকার (100–300 %) |
 | `comandi_visibili` | 1 | 1 = নিয়ন্ত্রণের সারি দেখানো, 0 = গুটানো |

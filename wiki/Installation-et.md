@@ -58,7 +58,7 @@ Programm ei ole Apple'i poolt allkirjastatud, seega küsib macOS esimesel korral
 
 - **Euroopa kaart** (Natural Earthi rannajooned ja piirid) laaditakse esimesel korral automaatselt alla kausta `data/mappa`: internetiühendust on vaja üks kord.
 - **Radariandmed** (Collm, Sodankylä) laaditakse kohe alla ja seejärel kontrollitakse neid iga 5 minuti järel.
-- Kasutajaliides käivitub sinu süsteemi keeles, kui see on üks kuuest saadaolevast, muidu itaalia keeles; keelt saab muuta paremal üleval (vt [Seaded](Settings-and-Data-Folder-et#keel)).
+- Kasutajaliides käivitub sinu süsteemi keeles, kui see on üks 36-st saadaolevast, muidu itaalia keeles; keelt saab muuta paremal üleval (vt [Seaded](Settings-and-Data-Folder-et#keel)).
 
 ## Uuendamine
 

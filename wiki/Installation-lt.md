@@ -58,7 +58,7 @@ Programa nepasirašyta Apple, todėl pirmą kartą macOS prašo patvirtinimo; ž
 
 - **Europos žemėlapis** (Natural Earth pakrantės ir sienos) pirmą kartą automatiškai atsisiunčiamas į `data/mappa`: interneto ryšio reikia vieną kartą.
 - **Radarų duomenys** (Collm, Sodankylä) atsisiunčiami iš karto, o paskui tikrinami kas 5 minutes.
-- Sąsaja paleidžiama jūsų sistemos kalba, jei ji yra viena iš šešių galimų, kitu atveju itališkai; kalbą galima pakeisti viršuje dešinėje (žr. [Nustatymai](Settings-and-Data-Folder-lt#kalba)).
+- Sąsaja paleidžiama jūsų sistemos kalba, jei ji yra viena iš 36 galimų, kitu atveju itališkai; kalbą galima pakeisti viršuje dešinėje (žr. [Nustatymai](Settings-and-Data-Folder-lt#kalba)).
 
 ## Atnaujinimas
 

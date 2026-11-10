@@ -44,4 +44,4 @@ YA-MS משתפרת בזכות הדיווחים של מי שמשתמשים בה �
 
 ערכו את הקובץ בתיקייה `data/lingue` של ההתקנה שלכם והפעילו מחדש את YA-MS (או החליפו שפה) כדי לראות את התוצאה. מאחר שקבצים אלה **מוחלפים בגרסאות חדשות יותר בכל עדכון**, אנא גם **שלחו את התיקונים שלכם** – בדוא״ל או כ-pull request ב-GitHub ‏(`data/lingue/`) – כדי שייכנסו לגרסה הבאה.
 
-ויקי זו קיימת English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文; גם תיקונים לדפי הוויקי יתקבלו בברכה.
+ויקי זו קיימת ב-36 שפות (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, ไทย, 日本語, 한국어, 中文, 中文 (繁體)); גם תיקונים לדפי הוויקי יתקבלו בברכה.

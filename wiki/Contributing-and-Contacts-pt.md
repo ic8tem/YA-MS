@@ -44,4 +44,4 @@ As traduções da interface são ficheiros de texto simples em **`data/lingue/<c
 
 Edite o ficheiro na pasta `data/lingue` da sua instalação e reinicie o YA-MS (ou mude de idioma) para ver o resultado. Como estes ficheiros **são substituídos por versões mais recentes a cada atualização**, **envie também as suas correções** – por e-mail ou como pull request no GitHub (`data/lingue/`) – para que entrem na próxima versão.
 
-Esta wiki existe em English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文; correções às páginas da wiki também são bem-vindas.
+Esta wiki existe em 36 idiomas (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, ไทย, 日本語, 한국어, 中文, 中文 (繁體)); correções às páginas da wiki também são bem-vindas.

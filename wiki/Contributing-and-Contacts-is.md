@@ -44,4 +44,4 @@ Opnaðu **issue á GitHub** eða sendu tölvupóst með:
 
 Breyttu skránni í möppunni `data/lingue` í uppsetningunni þinni og endurræstu YA-MS (eða skiptu um tungumál) til að sjá niðurstöðuna. Þar sem **nýrri útgáfur koma í stað þessara skráa við hverja uppfærslu**, vinsamlegast **sendu einnig leiðréttingarnar þínar** – með tölvupósti eða sem pull request á GitHub (`data/lingue/`) – svo þær rati inn í næstu útgáfu.
 
-Þessi wiki er til á English, Italiano, Deutsch, Nederlands, Français, Español, Português, Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, 日本語, 한국어, 中文; leiðréttingar á wiki-síðunum eru líka vel þegnar.
+Þessi wiki er til á 36 tungumálum (English, Italiano, Deutsch, Nederlands, Français, Español, Português, Português (Brasil), Dansk, Norsk, Svenska, Íslenska, Eesti, Lietuvių, Latviešu, Polski, Čeština, Magyar, Română, Ελληνικά, Русский, Українська, Türkçe, Afrikaans, العربية, עברית, اردو, हिन्दी, বাংলা, Bahasa Indonesia, Tagalog, ไทย, 日本語, 한국어, 中文, 中文 (繁體)); leiðréttingar á wiki-síðunum eru líka vel þegnar.

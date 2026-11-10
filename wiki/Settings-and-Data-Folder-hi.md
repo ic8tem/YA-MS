@@ -16,16 +16,46 @@
 
 ## भाषा
 
-छह इंटरफ़ेस भाषाएँ:
+36 इंटरफ़ेस भाषाएँ:
 
 | भाषा | कोड | फ़ाइल |
 |---|---|---|
 | Italiano | `it` | कोई नहीं: इतालवी आधार भाषा है (कुंजियाँ) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-br` | `data/lingue/pt-br.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-tw` | `data/lingue/zh-tw.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
 पहली बार शुरू होने पर YA-MS **सिस्टम भाषा** उपयोग करता है यदि वह इनमें से एक हो, अन्यथा इतालवी। संख्याएँ और तिथियाँ चुनी गई भाषा का अनुसरण करती हैं (उदा. अंग्रेज़ी में दशमलव बिंदु, इतालवी और जर्मन में अल्पविराम)। अनुवाद फ़ाइल में अनुपस्थित कोई भी पाठ इतालवी में दिखाया जाता है। Linux पर जापानी के लिए उपयुक्त फ़ॉन्ट चाहिए: देखें [समस्या निवारण](Troubleshooting-FAQ-hi#linux-जापानी-पाठ-बक्सों-के-रूप-में-दिखता-है)।
 
@@ -100,7 +130,7 @@
 | `elevazione_lobo_gradi` | 0 | लोब उन्नयन (°) |
 | `boom_m` | 4.6 | यागी बूम की लंबाई (m) |
 | `hot_spot_km` | 150 | मध्य बिंदु से Hot A / Hot B की दूरी (30–400 km) |
-| `lingua` | सिस्टम / `it` | भाषा कोड (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | सिस्टम / `it` | भाषा कोड (`it`, `en`, `de`, `hi`, … – 36 कोड, देखें [भाषा](#भाषा)) |
 | `tema` | `chiaro` | रंग योजना: `chiaro` (हल्का), `scuro` (रात), `nero` (काला), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (उल्का ट्रेल) |
 | `carattere_pct` | 100 | फ़ॉन्ट आकार (100–300 %) |
 | `comandi_visibili` | 1 | 1 = नियंत्रणों की पंक्तियाँ दिखती हैं, 0 = समेटी हुई |

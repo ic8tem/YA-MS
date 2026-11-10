@@ -4,7 +4,7 @@
 
 *disusun oleh Costantino Cerrotta IC8TEM*
 
-**YA-MS** adalah program gratis untuk radio amatir yang bekerja **meteor scatter (MS) di 50, 70, 144, 222 dan 432 MHz**. Untuk lintasan nyata antara locator Anda dan locator stasiun DX, program ini menghitung jam demi jam seberapa besar setiap hujan meteor aktif membantu lintasan (**efisiensi**-nya), dari sisi lintasan mana pantulan datang (**Hot A / Hot B**), ke mana antena diarahkan, serta prakiraan eksperimental jumlah pantulan per jam yang diturunkan dari **radar meteor langsung** (Collm, Jerman). Program berjalan di **Windows, Linux dan macOS** (.NET 8 + Avalonia), dalam 6 bahasa antarmuka.
+**YA-MS** adalah program gratis untuk radio amatir yang bekerja **meteor scatter (MS) di 50, 70, 144, 222 dan 432 MHz**. Untuk lintasan nyata antara locator Anda dan locator stasiun DX, program ini menghitung jam demi jam seberapa besar setiap hujan meteor aktif membantu lintasan (**efisiensi**-nya), dari sisi lintasan mana pantulan datang (**Hot A / Hot B**), ke mana antena diarahkan, serta prakiraan eksperimental jumlah pantulan per jam yang diturunkan dari **radar meteor langsung** (Collm, Jerman). Program berjalan di **Windows, Linux dan macOS** (.NET 8 + Avalonia), dalam 36 bahasa antarmuka.
 
 Sumber utamanya adalah artikel **C. Cerrotta IC8TEM dan G. Sartori IV3GTH**, *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (versi 7). Setiap rumus dan data dalam program menyebutkan sumbernya; lihat [Sumber](Sources-id).
 

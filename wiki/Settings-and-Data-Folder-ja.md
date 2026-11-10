@@ -16,16 +16,46 @@
 
 ## 表示言語
 
-6 つの表示言語があります:
+36 の表示言語があります:
 
 | 言語 | コード | ファイル |
 |---|---|---|
 | Italiano | `it` | なし: イタリア語が基本言語 (キー) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-br` | `data/lingue/pt-br.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-tw` | `data/lingue/zh-tw.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
 初回起動時、YA-MS は**システムの言語**がこれらのいずれかであればその言語を、そうでなければイタリア語を使います。数値と日付は選んだ言語の形式に従います (例: 英語では小数点、イタリア語とドイツ語ではコンマ)。翻訳ファイルにない文字列はイタリア語で表示されます。Linux で日本語を表示するには適切なフォントが必要です: [トラブルシューティング](Troubleshooting-FAQ-ja#linux-で日本語が四角で表示される) を参照してください。
 
@@ -100,7 +130,7 @@
 | `elevazione_lobo_gradi` | 0 | ビーム仰角 (°) |
 | `boom_m` | 4.6 | 八木アンテナのブーム長 (m) |
 | `hot_spot_km` | 150 | 中間点から Hot A / Hot B までの距離 (30–400 km) |
-| `lingua` | システム / `it` | 言語コード (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | システム / `it` | 言語コード (`it`, `en`, `de`, `ja`, … – 36 個のコード、[表示言語](#表示言語) を参照) |
 | `tema` | `chiaro` | 配色: `chiaro` (ライト), `scuro` (夜間), `nero` (ブラック), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (流星痕) |
 | `carattere_pct` | 100 | フォントサイズ (100–300 %) |
 | `comandi_visibili` | 1 | 1 = 操作部を表示、0 = 折りたたみ |

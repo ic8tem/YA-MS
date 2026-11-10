@@ -4,7 +4,7 @@
 
 *koostanud Costantino Cerrotta IC8TEM*
 
-**YA-MS** on tasuta programm raadioamatööridele, kes töötavad **meteor scatteriga (MS) sagedustel 50, 70, 144, 222 ja 432 MHz**. Sinu lokaatori ja korrespondendi lokaatori vahelise tegeliku trassi jaoks arvutab see tund-tunnilt, kui palju iga aktiivne meteoorivool trassi aitab (selle **efektiivsus**), kummalt poolt trassi peegeldused tulevad (**Hot A / Hot B**), kuhu antenn suunata, ning eksperimentaalse prognoosi peegelduste arvu kohta tunnis, mis tuletatakse **otse töötava meteoorradari** (Collm, Saksamaa) andmetest. See töötab **Windowsis, Linuxis ja macOS-is** (.NET 8 + Avalonia), 6 kasutajaliidese keeles.
+**YA-MS** on tasuta programm raadioamatööridele, kes töötavad **meteor scatteriga (MS) sagedustel 50, 70, 144, 222 ja 432 MHz**. Sinu lokaatori ja korrespondendi lokaatori vahelise tegeliku trassi jaoks arvutab see tund-tunnilt, kui palju iga aktiivne meteoorivool trassi aitab (selle **efektiivsus**), kummalt poolt trassi peegeldused tulevad (**Hot A / Hot B**), kuhu antenn suunata, ning eksperimentaalse prognoosi peegelduste arvu kohta tunnis, mis tuletatakse **otse töötava meteoorradari** (Collm, Saksamaa) andmetest. See töötab **Windowsis, Linuxis ja macOS-is** (.NET 8 + Avalonia), 36 kasutajaliidese keeles.
 
 Peamine allikas on **C. Cerrotta IC8TEM-i ja G. Sartori IV3GTH** artikkel *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (versioon 7). Iga programmis kasutatud valem ja andmeüksus viitab oma allikale; vt [Allikad](Sources-et).
 

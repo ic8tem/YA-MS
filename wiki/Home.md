@@ -4,7 +4,7 @@
 
 *by Costantino Cerrotta IC8TEM*
 
-**YA-MS** is a free program for radio amateurs who work **meteor scatter (MS) on 50, 70, 144, 222 and 432 MHz**. For the real path between your locator and the DX station's, it computes hour by hour how much each active meteor shower helps the path (its **efficiency**), which side of the path the reflections come from (**Hot A / Hot B**), where to point the antenna, and an experimental forecast of the reflections per hour derived from a **live meteor radar** (Collm, Germany). It runs on **Windows, Linux, Raspberry Pi and macOS** (.NET 8 + Avalonia), in 6 interface languages.
+**YA-MS** is a free program for radio amateurs who work **meteor scatter (MS) on 50, 70, 144, 222 and 432 MHz**. For the real path between your locator and the DX station's, it computes hour by hour how much each active meteor shower helps the path (its **efficiency**), which side of the path the reflections come from (**Hot A / Hot B**), where to point the antenna, and an experimental forecast of the reflections per hour derived from a **live meteor radar** (Collm, Germany). It runs on **Windows, Linux, Raspberry Pi and macOS** (.NET 8 + Avalonia), in 36 interface languages.
 
 The main source is the article by **C. Cerrotta IC8TEM and G. Sartori IV3GTH**, *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (version 7). Every formula and data item in the program cites its source; see [Sources](Sources).
 

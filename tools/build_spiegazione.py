@@ -1,18 +1,32 @@
 # Genera il documento "Come si calcola l'efficienza dello sciame" in due formati dallo stesso testo:
 #   efficienza_spiegazione.txt  -> mostrato nella linguetta "Efficienza - spiegazione" di YA-MS
 #   efficienza_spiegazione.docx -> esportazione in Word
-import sys
+# Uso: python3 tools/build_spiegazione.py <cartella data> [codice lingua]
+#   senza codice (o "it"): data/efficienza_spiegazione.{txt,docx}; con un codice: data/spiegazione/efficienza_spiegazione_<codice>.{txt,docx}
+#   con la traduzione di tools/traduzioni_doc/spiegazione/<codice>.json ({"testo italiano": "traduzione"}).
+#   Con ESTRAI=<file.json> scrive l'elenco dei testi da tradurre.
+import sys, os, json, re
 from docx import Document
 from docx.shared import Pt, RGBColor, Cm
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+
+LANG = sys.argv[2] if len(sys.argv) > 2 else 'it'
+TRD = {} if LANG == 'it' else json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'traduzioni_doc', 'spiegazione', LANG + '.json'), encoding='utf-8'))
+KEYS = []; MISS = []
+def T(t):
+    if not isinstance(t, str) or not re.search(r'[A-Za-zÀ-ÿ]{2,}', t): return t
+    if t not in KEYS: KEYS.append(t)
+    if LANG == 'it': return t
+    if t not in TRD: MISS.append(t); return t
+    return TRD[t]
 
 TITLE = "Come YA-MS calcola l'efficienza di uno sciame"
 SUB = "Documento tecnico - a cura di Costantino IC8TEM - novembre 2026"
 
 # Blocchi: ("h1", testo) ("h2", testo) ("p", testo) ("tag", tipo, testo) ("eq", testo) ("li", testo) ("src", testo)
 B = []
-h1 = lambda t: B.append(("h1", t)); h2 = lambda t: B.append(("h2", t)); p = lambda t: B.append(("p", t))
-tag = lambda k, t: B.append(("tag", k, t)); eq = lambda t: B.append(("eq", t)); li = lambda t: B.append(("li", t))
+h1 = lambda t: B.append(("h1", T(t))); h2 = lambda t: B.append(("h2", T(t))); p = lambda t: B.append(("p", T(t)))
+tag = lambda k, t: B.append(("tag", k, T(t))); eq = lambda t: B.append(("eq", T(t))); li = lambda t: B.append(("li", T(t)))
 
 h1("1. Introduzione")
 h2("1.1 Scopo del documento")
@@ -211,7 +225,7 @@ def build_rtf(path):
         elif k == 'tag': o.append('\\pard\\sa120\\li240\\fs22\\cf%d\\b [%s]\\b0\\cf1  %s\\par' % (tagidx[b[1]], b[1], rtf_esc(b[2])))
         elif k == 'eq': o.append('\\pard\\qc\\sb80\\sa160\\f1\\i\\cf6\\fs24 ' + rtf_esc(b[1]) + '\\i0\\f0\\par')
         elif k == 'li': o.append('\\pard\\sa80\\li480\\fi-240\\cf1\\fs22 \\u8226?  ' + rtf_esc(b[1]) + '\\par')
-    o.append('\\pard\\sb360\\sa120\\keepn\\cf2\\b\\fs32 ' + rtf_esc('10. Fonti') + '\\b0\\par')
+    o.append('\\pard\\sb360\\sa120\\keepn\\cf2\\b\\fs32 ' + rtf_esc(T('10. Fonti')) + '\\b0\\par')
     for i, s in enumerate(SOURCES, 1):
         o.append('\\pard\\sa80\\li480\\fi-360\\cf1\\fs21 %d.\\tab %s\\par' % (i, rtf_esc(s)))
     o.append('}')
@@ -237,13 +251,13 @@ def build_docx(path):
         elif k == 'p': d.add_paragraph(b[1])
         elif k == 'tag':
             para = d.add_paragraph(); para.paragraph_format.left_indent = Cm(0.4)
-            r = para.add_run('[' + b[1] + '] '); r.bold = True; r.font.color.rgb = RGBColor(*TAGCOL_DOC[b[1]])
+            r = para.add_run('[' + T(b[1]) + '] '); r.bold = True; r.font.color.rgb = RGBColor(*TAGCOL_DOC[b[1]])
             para.add_run(b[2])
         elif k == 'eq':
             para = d.add_paragraph(); para.alignment = WD_ALIGN_PARAGRAPH.CENTER
             r = para.add_run(b[1]); r.italic = True; r.font.name = 'Cambria Math'; r.font.size = Pt(12)
         elif k == 'li': d.add_paragraph(b[1], style='List Bullet')
-    d.add_heading('10. Fonti', level=1)
+    d.add_heading(T('10. Fonti'), level=1)
     for s in SOURCES: d.add_paragraph(s, style='List Number')
     d.save(path)
 
@@ -252,11 +266,21 @@ def build_txt(path):
     o = ['TITLE|' + TITLE, 'SUB|' + SUB]
     for b in B:
         o.append('|'.join(x.replace('\n', ' ') for x in ((b[0].upper(),) + tuple(b[1:]))))
-    o.append('H1|10. Fonti')
+    o.append('H1|' + T('10. Fonti'))
     for i, s in enumerate(SOURCES): o.append('SRC|%d. %s' % (i + 1, s))
     open(path, 'w', encoding='utf-8').write('\n'.join(o) + '\n')
 
+TITLE, SUB = T(TITLE), T(SUB)
+SOURCES = [T(x) for x in SOURCES]
+for k in ("FONTE", "RILIEVO", "SCELTA"): T(k)
 out = sys.argv[1]
-build_txt(out + '/efficienza_spiegazione.txt')
-build_docx(out + '/efficienza_spiegazione.docx')
-print('ok', len(B), 'blocchi')
+if LANG != 'it':
+    out = os.path.join(out, 'spiegazione'); os.makedirs(out, exist_ok=True)
+    base = out + '/efficienza_spiegazione_' + LANG
+else:
+    base = out + '/efficienza_spiegazione'
+build_txt(base + '.txt')
+build_docx(base + '.docx')
+if os.environ.get('ESTRAI'): json.dump(KEYS, open(os.environ['ESTRAI'], 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+if MISS: print('testi senza traduzione (%s): %d' % (LANG, len(MISS)))
+print('ok', LANG, len(B), 'blocchi')

@@ -1,8 +1,31 @@
+// Uso: node tools/build_manuale.js <file.docx> [codice lingua]
+//   senza codice (o "it") il manuale e' in italiano; con un codice usa tools/traduzioni_doc/manuale/<codice>.json
+//   ({"testo italiano": "traduzione"}). Con ESTRAI=<file.json> scrive l'elenco dei testi da tradurre.
 const fs = require('fs');
+const path = require('path');
 const d = require('docx');
-const { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, TabStopType, Table, TableRow, TableCell,
+const LANG = process.argv[3] || 'it';
+const TRD = LANG === 'it' ? {} : JSON.parse(fs.readFileSync(path.join(__dirname, 'traduzioni_doc', 'manuale', LANG + '.json'), 'utf8'));
+const KEYS = []; const SEEN = new Set(); const MISS = [];
+// traduce un testo (solo se contiene lettere); le chiavi sono i testi italiani
+function T(s) {
+  if (typeof s !== 'string' || !/[A-Za-zÀ-ÿ]{2,}/.test(s)) return s;
+  if (!SEEN.has(s)) { SEEN.add(s); KEYS.push(s); }
+  if (LANG === 'it') return s;
+  if (TRD[s] === undefined) { MISS.push(s); return s; }
+  return TRD[s];
+}
+const MATHFN = /^(arccos|arcsin|arctan|atan2|log|sin|cos|tan|sec|exp|max|min|argmax|ln|lim|det)$/;
+class TextRun extends d.TextRun {
+  constructor(o) { if (typeof o === 'string') o = T(o); else if (o && typeof o.text === 'string') o = Object.assign({}, o, { text: T(o.text) }); super(o); }
+}
+class MathRun extends d.MathRun {
+  // nelle formule si traducono solo le parole (almeno 4 lettere) che non sono funzioni matematiche
+  constructor(t) { super(typeof t === 'string' && /[A-Za-zÀ-ÿ]{4,}/.test(t) && !MATHFN.test(t.trim()) ? T(t) : t); }
+}
+const { Document, Packer, Paragraph, HeadingLevel, AlignmentType, TabStopType, Table, TableRow, TableCell,
   WidthType, ShadingType, BorderStyle, LevelFormat, Footer, PageNumber, TableOfContents,
-  Math: M, MathRun, MathFraction, MathSubScript, MathSuperScript, MathSubSuperScript, MathRadical, MathRoundBrackets,
+  Math: M, MathFraction, MathSubScript, MathSuperScript, MathSubSuperScript, MathRadical, MathRoundBrackets,
   MathSquareBrackets, MathFunction, MathSum } = d;
 
 // ---------- mini DSL per le equazioni ----------
@@ -64,7 +87,7 @@ function table(widths, rows) {
 const C = [];
 C.push(new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun('YA-MS - Manuale dei calcoli')] }));
 C.push(P(I('Previsione e calcolo in diretta dell\'efficienza degli sciami meteorici per il meteor scatter. Versione 1.7.0, a cura di Costantino IC8TEM, novembre 2026.')));
-C.push(new TableOfContents('Indice', { hyperlink: true, headingStyleRange: '1-2' }));
+C.push(new TableOfContents(T('Indice'), { hyperlink: true, headingStyleRange: '1-2' }));
 C.push(P(I('(Se l\'indice è vuoto: in Word, clic destro sull\'indice > Aggiorna campo.)')));
 
 C.push(H1('1. Convenzioni'));
@@ -316,7 +339,7 @@ C.push(H1('12. Fonti'));
 ].forEach((t, i) => C.push(new Paragraph({ numbering: { reference: 'num', level: 0 }, spacing: { after: 60 }, children: [new TextRun(t)] })));
 
 const doc = new Document({
-  creator: 'Costantino IC8TEM', title: 'YA-MS - Manuale dei calcoli',
+  creator: 'Costantino IC8TEM', title: T('YA-MS - Manuale dei calcoli'),
   styles: {
     default: { document: { run: { font: FONT, size: 22 } } },
     paragraphStyles: [
@@ -336,4 +359,6 @@ const doc = new Document({
     children: C,
   }],
 });
-Packer.toBuffer(doc).then(b => { fs.writeFileSync(process.argv[2], b); console.log('ok', eqn, 'equazioni'); });
+if (process.env.ESTRAI) fs.writeFileSync(process.env.ESTRAI, JSON.stringify(KEYS, null, 1));
+if (MISS.length) console.log('testi senza traduzione (' + LANG + '):', MISS.length);
+Packer.toBuffer(doc).then(b => { fs.writeFileSync(process.argv[2], b); console.log('ok', LANG, eqn, 'equazioni'); });

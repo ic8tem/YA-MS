@@ -6,7 +6,7 @@
 
 [![Efficiency - explanation](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-A technical document, *"Come YA-MS calcola l'efficienza di uno sciame"* (How YA-MS computes the efficiency of a shower), shown inside the program as a light page. It explains **step by step** how the efficiency is obtained, and says for each step **where it comes from**. The document is currently **in Italian**; this wiki gives its content in English in [Efficiency calculation](Efficiency-Calculation#the-model) and [Geometry and path loss](Geometry-and-Path-Loss).
+A technical document, *"Come YA-MS calcola l'efficienza di uno sciame"* (How YA-MS computes the efficiency of a shower), shown inside the program as a light page. It explains **step by step** how the efficiency is obtained, and says for each step **where it comes from**. The program shows it **in the interface language** (all 36 languages), as does the calculation manual; this wiki also gives its content in [Efficiency calculation](Efficiency-Calculation#the-model) and [Geometry and path loss](Geometry-and-Path-Loss).
 
 ## Labels
 
@@ -46,6 +46,8 @@ Every step carries a coloured label:
 |---|---|
 | `data/efficienza_spiegazione.txt` | The text shown in the tab, one block per line (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | The Word version |
-| `doc/YA-MS_manuale_calcoli.docx` | The **calculation manual**: all equations (Word equation editor), numbered, with their sources |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | The same document in the other 35 languages (e.g. `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | The **calculation manual** (Italian): all equations (Word equation editor), numbered, with their sources |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | The calculation manual in the other 35 languages |
 
-The two documents are regenerated from the source with `tools/build_spiegazione.py data` and `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+The two documents are regenerated from the source with `tools/build_spiegazione.py data [code]` and `node tools/build_manuale.js <file.docx> [code]`; the translations are in `tools/traduzioni_doc/` (`tools/build_documenti.sh` rebuilds all languages).

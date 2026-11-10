@@ -33,7 +33,7 @@ namespace YAMS
         void BuildExplainTab()
         {
             DockPanel p = Page(Lang.T("Efficienza - spiegazione"));
-            string docx = Path.Combine(dataDir, "efficienza_spiegazione.docx");
+            string docx = ExplainFile("docx");
             Button bExport = B(Lang.T("Esporta in Word (.docx)..."));
             bExport.Click += async (s, e) => await ExportDocx(docx);
             Button bOpen = B(Lang.T("Apri in Word"));
@@ -51,7 +51,7 @@ namespace YAMS
 
             // aspetto "pagina": foglio chiaro centrato, larghezza massima 860 px, ombra, sul fondo dello schema (Pal.Desk)
             StackPanel doc = new StackPanel();
-            FillExplain(doc, Path.Combine(dataDir, "efficienza_spiegazione.txt"));
+            FillExplain(doc, ExplainFile("txt"));
             Border sheet = new Border
             {
                 Background = Brushes.White,
@@ -153,7 +153,7 @@ namespace YAMS
                                 VerticalAlignment = VerticalAlignment.Top,
                                 Child = new TextBlock
                                 {
-                                    Text = tag,
+                                    Text = Lang.T(tag),
                                     Foreground = Brushes.White,
                                     FontWeight = FontWeight.Bold,
                                     FontSize = 10.5,
@@ -201,7 +201,18 @@ namespace YAMS
             }
         }
 
-        // Copia data/efficienza_spiegazione.docx dove sceglie l'utente
+        // documento nella lingua dell'interfaccia (data/spiegazione/efficienza_spiegazione_<codice>.<ext>), altrimenti quello italiano
+        string ExplainFile(string ext)
+        {
+            if (Lang.Code != "it")
+            {
+                string f = Path.Combine(dataDir, "spiegazione", "efficienza_spiegazione_" + Lang.Code + "." + ext);
+                if (File.Exists(f)) return f;
+            }
+            return Path.Combine(dataDir, "efficienza_spiegazione." + ext);
+        }
+
+        // Copia il documento .docx dove sceglie l'utente
         async Task ExportDocx(string docx)
         {
             try

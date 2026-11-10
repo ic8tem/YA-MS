@@ -1,0 +1,32 @@
+**English** · [Italiano](Data-Collection-it) · [Deutsch](Data-Collection-de) · [Nederlands](Data-Collection-nl) · [Français](Data-Collection-fr) · [Español](Data-Collection-es) · [Português](Data-Collection-pt) · [Dansk](Data-Collection-da) · [Norsk](Data-Collection-nb) · [Svenska](Data-Collection-sv) · [Íslenska](Data-Collection-is) · [Eesti](Data-Collection-et) · [Lietuvių](Data-Collection-lt) · [Latviešu](Data-Collection-lv) · [Русский](Data-Collection-ru) · [Українська](Data-Collection-uk) · [Türkçe](Data-Collection-tr) · [Afrikaans](Data-Collection-af) · [العربية](Data-Collection-ar) · [עברית](Data-Collection-he) · [اردو](Data-Collection-ur) · [हिन्दी](Data-Collection-hi) · [বাংলা](Data-Collection-bn) · [Bahasa Indonesia](Data-Collection-id) · [Tagalog](Data-Collection-tl) · [日本語](Data-Collection-ja) · [한국어](Data-Collection-ko) · [中文](Data-Collection-zh)
+
+# การเก็บข้อมูล
+
+*แท็บ: ข้อมูลสดและเรียลไทม์ › การเก็บข้อมูล*
+
+[![Data collection](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
+
+## แหล่งข้อมูลสี่แหล่ง
+
+แท็บนี้เก็บ **สปอต meteor scatter** จากสตรีม telnet สามสายและจากฟีด MQTT ของ PSKReporter โดยแต่ละแหล่งอยู่ในแท็บย่อยของตัวเอง:
+
+| แท็บย่อย | ค่าเริ่มต้น | หมายเหตุ |
+|---|---|---|
+| **1. DX cluster** | on0dxk.dyndns.org : 8000 | คลัสเตอร์ที่คุณเลือก บน ON0DXK แบนด์ VHF ถูกกรองออก: เปิดใช้ด้วย `set/filter dxbm/pass 6` (จากนั้น 4, 2…) |
+| **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8) สกิมเมอร์แทบไม่ถอดรหัสโหมด MS |
+| **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | คลัสเตอร์ DM4X ที่ส่งต่อสปอตของ **PSKReporter**: ผลถอดรหัส MSK144 จาก WSJT-X และ MSHV มาถึงที่นี่ |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | สปอต PSKReporter แบบสดผ่าน **MQTT** (บริการโดย M0LTE): ไม่ต้องล็อกอิน แต่ละสปอตมีโลเคเตอร์ของสถานีส่งและสถานีรับอยู่แล้ว หัวข้อเริ่มต้น: MSK144 บน 6 m, 4 m, 2 m, 1.25 m, 70 cm และ FSK441 บน 2 m (`pskr/filter/v2/band/mode/#`) ปุ่ม *หัวข้อเริ่มต้น* ใช้คืนค่าเหล่านี้ |
+| **สปอต MS ที่เก็บได้** | – | ตารางสปอตที่ผ่านการคัดเลือก เรียงจากใหม่ไปเก่า |
+
+แต่ละสตรีมมีโฮสต์ พอร์ต คำสั่งที่ส่งหลังล็อกอิน *เชื่อมต่อใหม่* *เชื่อมต่อเมื่อเริ่มโปรแกรม* คอนโซล และบรรทัดสำหรับส่งคำสั่ง เขียน **สัญญาณเรียกขานสำหรับล็อกอิน** ของคุณไว้ด้านบน แหล่ง MQTT มีโฮสต์ พอร์ต หัวข้อ (หนึ่งหัวข้อต่อบรรทัดหรือคั่นด้วย `;`) *เชื่อมต่อใหม่* และ *เชื่อมต่อเมื่อเริ่มโปรแกรม* (ปิดไว้เป็นค่าเริ่มต้น) และคอนโซลที่แสดงสปอตที่ได้รับ สปอตจากแหล่งนี้ผ่านตัวกรองเดียวกัน แถบหนึ่งแสดงสถานะของแหล่งข้อมูลทั้งสี่ (จุดสีเขียว = เชื่อมต่อแล้ว) เซสชันยังคงเปิดอยู่เมื่อคุณเปลี่ยนภาษาหรือชุดสี
+
+## ตัวกรอง (40 % ของหน้าต่าง)
+
+- **ตัวกรองภายในเครื่องแบบเลือกได้:** บรรทัดของคลัสเตอร์ที่ต่ำกว่า **27990.0 kHz** จะถูกทิ้งทันที (ไม่แสดง ไม่บันทึก)
+- **เกณฑ์ที่ 1 – ความถี่ MS ทั่วไป:** 50190–50300, 70100–70400, 144290–144399 kHz สปอตในช่วงเหล่านี้จะได้รับการยอมรับแม้ไม่มีชื่อโหมด เว้นแต่หมายเหตุจะระบุการแพร่กระจายแบบอื่น: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>` ช่วงความถี่และแท็กแก้ไขได้
+- **เกณฑ์ที่ 2 – โหมด MS:** นอกช่วงความถี่ หรือเมื่อมีแท็กใดแท็กหนึ่งข้างต้น สปอตจะถูกเก็บไว้เฉพาะเมื่อมีคำว่า **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (โหมดดิจิทัลที่ใช้เฉพาะ MS) หรือ **\<MS\>** ไม่ว่าจะเป็นตัวพิมพ์ใหญ่ ตัวพิมพ์เล็ก หรือผสม คำต่าง ๆ ปิดใช้ เพิ่ม และลบได้ แต่ละคำมีตัวนับของตัวเอง
+- **แบนด์** 28, 50, 70, 144, 222, 432 MHz; **ทดสอบตัวกรอง** กับบรรทัดที่วาง; **ตัวนับ**
+
+## โลเคเตอร์และการจัดเก็บ
+
+โลเคเตอร์ที่ขาดหายหรือมีเพียง 4 ตัวอักษรจะนำมาจากคลัง **CALL3** (`data/call3.txt` ไฟล์ของ JTDX มีสัญญาณเรียกขานกว่าหนึ่งล้านรายการ) ซึ่งมีลำดับความสำคัญเหนือโลเคเตอร์ 4 ตัวอักษรเสมอ สปอตที่ผ่านการคัดเลือกจะบันทึกไว้ใน `data/spot_ms` วันละหนึ่งไฟล์ CSV และป้อนเข้าสู่แผนที่ [การจราจรสด](Live-Traffic-th)

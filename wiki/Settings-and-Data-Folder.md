@@ -16,7 +16,7 @@ Changing language or theme saves the settings and **rebuilds the window** in the
 
 ## Language
 
-28 interface languages, the same as YAEC and E-LAYER ANALYZER (terms shared with YAEC are translated the same way):
+36 interface languages, the same as YAEC and E-LAYER ANALYZER (terms shared with YAEC are translated the same way):
 
 | Language | Code | File |
 |---|---|---|
@@ -25,7 +25,8 @@ Changing language or theme saves the settings and **rebuilds the window** in the
 | Deutsch | `de` | `data/lingue/de.txt` |
 | Français | `fr` | `data/lingue/fr.txt` |
 | Español | `es` | `data/lingue/es.txt` |
-| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Portugal) | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-BR` | `data/lingue/pt-BR.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
 | Svenska | `sv` | `data/lingue/sv.txt` |
 | Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
@@ -34,6 +35,11 @@ Changing language or theme saves the settings and **rebuilds the window** in the
 | Eesti | `et` | `data/lingue/et.txt` |
 | Latviešu | `lv` | `data/lingue/lv.txt` |
 | Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
 | Русский | `ru` | `data/lingue/ru.txt` |
 | Українська | `uk` | `data/lingue/uk.txt` |
 | Türkçe | `tr` | `data/lingue/tr.txt` |
@@ -43,15 +49,17 @@ Changing language or theme saves the settings and **rebuilds the window** in the
 | اردو | `ur` | `data/lingue/ur.txt` |
 | हिन्दी | `hi` | `data/lingue/hi.txt` |
 | বাংলা | `bn` | `data/lingue/bn.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
 | Bahasa Indonesia | `id` | `data/lingue/id.txt` |
 | Tagalog | `tl` | `data/lingue/tl.txt` |
 | 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-TW` | `data/lingue/zh-TW.txt` |
 | 日本語 | `ja` | `data/lingue/ja.txt` |
 | 한국어 | `ko` | `data/lingue/ko.txt` |
 
 At the first start YA-MS uses the **system language** if it is one of these, otherwise Italian. Numbers and dates follow the chosen language (e.g. decimal point in English, comma in Italian and German). Any text missing from a translation file is shown in Italian. On Linux, Chinese, Japanese, Korean, Arabic, Hebrew, Urdu, Hindi and Bengali need suitable fonts (e.g. the Noto families): see [Troubleshooting](Troubleshooting-FAQ#linux-japanese-text-shows-boxes).
 
-The [Efficiency - explanation](Efficiency-Explanation) document and the calculation manual are in Italian.
+The [Efficiency - explanation](Efficiency-Explanation) document follows the interface language; the calculation manual is in `doc/` (Italian) and `doc/manuali/` (the other 35 languages).
 
 ## Colour schemes
 
@@ -122,7 +130,7 @@ Plain text, one `key=value` per line (lines starting with `#` or `;` are comment
 | `elevazione_lobo_gradi` | 0 | Lobe elevation (°) |
 | `boom_m` | 4.6 | Yagi boom length (m) |
 | `hot_spot_km` | 150 | Hot A / Hot B distance from the midpoint (30–400 km) |
-| `lingua` | system / `it` | Language code (one of the 28 codes above, e.g. `it`, `en`, `de`) |
+| `lingua` | system / `it` | Language code (one of the 36 codes above, e.g. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Colour scheme: `chiaro` (Light), `scuro` (Night), `nero` (Black), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteor trail) |
 | `carattere_pct` | 100 | Font size (100–300 %) |
 | `comandi_visibili` | 1 | 1 = rows of controls shown, 0 = folded |

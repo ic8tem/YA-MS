@@ -476,7 +476,7 @@ namespace YAMS
 
             // riga 3: orologio, ora della volta celeste, giorno della tabella 24 h
             lblClock = L("--:--:-- UTC"); lblClock.FontFamily = Pal.Mono; lblClock.FontSize = 15; lblClock.FontWeight = FontWeight.Bold; lblClock.Foreground = Pal.B(Pal.Yellow);
-            trackTime = new Slider { Minimum = -48, Maximum = 144, Value = 0, SmallChange = 1, LargeChange = 4, TickFrequency = 12, Width = 360, Margin = new Thickness(4, 0) };
+            trackTime = new Slider { Minimum = -48, Maximum = 144, Value = 0, SmallChange = 1, LargeChange = 4, TickFrequency = 12, Width = 240, Margin = new Thickness(4, 0) };
             WhenChanged(trackTime, RangeBase.ValueProperty, () =>
             {
                 int v = TrackValue;

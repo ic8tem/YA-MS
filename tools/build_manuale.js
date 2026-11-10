@@ -206,7 +206,8 @@ C.push(H1('6. Attenuazione e bilancio'));
 C.push(TAG('FONTE', 'Equazione di McKinley [8] per le scie sottodense (β = 0, sin α = 1), guadagni d\'antenna esclusi; q densità lineare di elettroni della scia, re raggio classico dell\'elettrone = 2,818·10⁻¹⁵ m:'));
 C.push(EQ('L=10 ', sb('log', '10'), sbr(fr(['16 ', sp('π', '2'), sb('R', '1'), sb('R', '2'), br(sb('R', '1'), '+', sb('R', '2')), sp(fn('cos', 'φ'), '2')], [sp('λ', '3'), sp('q', '2'), sp(sb('r', 'e'), '2')])), '  dB'));
 C.push(TAG('RILIEVO', 'Con q = 10¹⁴ elettroni/m a 144 MHz risultano 181–192 dB tra 600 e 2200 km, in linea con i 182 dB minimi (GM8JBJ [9]) e i 200 dB medi (OH5IY) citati nell\'articolo [1].'));
-C.push(EQ(sb('P', 'rx'), '=', sb('P', 'tx'), br('dBm'), '+', sb('G', 'tx'), '−2,15−L+', sb('G', 'rx'), '−2,15'));
+C.push(EQ(sb('P', 'rx'), '=', sb('P', 'tx'), br('dBm'), '+', sb('G', 'tx'), '−L+', sb('G', 'rx')));
+C.push(TAG('SCELTA', 'I guadagni d\'antenna si usano in dBi, senza togliere i 2,15 dB del dipolo: la perdita di McKinley è riferita ad antenne isotrope. Così EIRP = potenza + guadagno, come nell\'articolo [1] (400 W e 14 dBi danno circa +70 dBm).'));
 C.push(EQ('margine=', sb('P', 'rx'), '−', sb('P', 'min'), ',    ', sb('P', 'min'), '=−130 dBm  [1]'));
 
 C.push(H1('7. Antenna e lobo'));

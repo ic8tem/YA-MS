@@ -92,7 +92,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## מאזן קישור
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. ההגברים מוזנים ב-dBi ומשמשים ב-dBd ‏(dBi − 2.15). הדוח נותן גם את המרווח עם **הנחתת הנתיב הממוצעת של OH5IY** (‏200 dB ב-144 MHz, מותאמת לפי λ³ לפס שנבחר). מקור המאמר: נדרשים כ-**70 dBm EIRP** ‏(−130 dBm + 200 dB, למשל כ-400 W לאנטנה של 14 dBi).

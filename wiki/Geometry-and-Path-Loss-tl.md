@@ -92,7 +92,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## Link budget
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Inilalagay ang mga gain sa dBi at ginagamit sa dBd (dBi − 2.15). Ibinibigay rin ng ulat ang margin gamit ang **karaniwang path loss ni OH5IY** (200 dB sa 144 MHz, iniskala sa λ³ sa napiling banda). Sanggunian ng artikulo: mga **70 dBm na EIRP** ang kailangan (−130 dBm + 200 dB, hal. mga 400 W sa 14 dBi).

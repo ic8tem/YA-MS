@@ -92,7 +92,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## लिंक बजट
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]। गेन dBi में दर्ज किए जाते हैं और dBd (dBi − 2.15) में उपयोग होते हैं। रिपोर्ट **OH5IY के औसत पथ क्षीणन** (144 MHz पर 200 dB, λ³ के साथ चुने गए बैंड पर स्केल) के साथ मार्जिन भी देती है। लेख का संदर्भ: लगभग **70 dBm EIRP** चाहिए (−130 dBm + 200 dB, उदा. 14 dBi में लगभग 400 W)।

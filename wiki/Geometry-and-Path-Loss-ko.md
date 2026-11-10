@@ -92,7 +92,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## 링크 버짓
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. 이득은 dBi로 입력하고 dBd(dBi − 2.15)로 사용합니다. 보고서는 **OH5IY의 평균 경로 손실**(144 MHz에서 200 dB, 선택한 밴드로 λ³ 환산)을 쓴 마진도 제시합니다. 논문의 기준: 약 **70 dBm EIRP**가 필요합니다(−130 dBm + 200 dB, 예: 14 dBi 안테나에 약 400 W).

@@ -92,7 +92,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## ميزانية الوصلة
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. يُدخَل الكسب بوحدة dBi ويُستخدم بوحدة dBd (dBi − 2.15). يعطي التقرير أيضاً الهامش مع **متوسط توهين المسار لـ OH5IY** (200 dB عند 144 MHz، محوَّلاً بقاعدة λ³ إلى النطاق المختار). مرجع المقال: يلزم نحو **70 dBm EIRP** (−130 dBm + 200 dB، أي مثلاً نحو 400 W في هوائي 14 dBi).

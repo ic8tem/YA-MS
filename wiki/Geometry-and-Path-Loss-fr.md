@@ -92,7 +92,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## Bilan de liaison
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Les gains sont saisis en dBi et utilisés en dBd (dBi − 2,15). Le rapport donne aussi la marge avec l'**affaiblissement moyen d'OH5IY** (200 dB à 144 MHz, transposé en λ³ à la bande choisie). Référence de l'article : il faut environ **70 dBm de PIRE** (−130 dBm + 200 dB, par ex. environ 400 W dans 14 dBi).

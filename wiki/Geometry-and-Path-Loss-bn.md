@@ -92,7 +92,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## লিংক বাজেট
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]। গেইন dBi-তে লেখা হয় এবং dBd-তে (dBi − 2.15) ব্যবহৃত হয়। প্রতিবেদনটি **OH5IY-এর গড় পথ ক্ষয়** ধরেও মার্জিন দেয় (144 MHz-এ 200 dB, নির্বাচিত ব্যান্ডে λ³ অনুপাতে রূপান্তরিত)। প্রবন্ধের তথ্যসূত্র: প্রায় **70 dBm EIRP** দরকার (−130 dBm + 200 dB, যেমন 14 dBi অ্যান্টেনায় প্রায় 400 W)।

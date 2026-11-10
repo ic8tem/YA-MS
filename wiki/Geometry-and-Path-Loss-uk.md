@@ -92,7 +92,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## Бюджет лінії
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Підсилення вводяться в dBi і використовуються в dBd (dBi − 2,15). Звіт також дає запас із **середнім загасанням на трасі за OH5IY** (200 dB на 144 MHz, перераховане як λ³ на вибраний діапазон). Посилання зі статті: потрібно близько **70 dBm EIRP** (−130 dBm + 200 dB, напр. близько 400 W на 14 dBi).

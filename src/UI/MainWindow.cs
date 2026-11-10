@@ -1407,15 +1407,15 @@ namespace YAMS
             double lossMid = MsGeometry.PathLossDb(model.Home, model.HomeAltKm, model.Dx, model.DxAltKm, model.Mid, model.LayerKm, f, q);
             double gain = V(numGain), sens = V(numSens), power = V(numPower);
             double pdbm = 10 * Math.Log10(power * 1000.0);
-            double eirp = pdbm + gain - 2.15;
-            double rx = eirp - lossMid + gain - 2.15;
+            double eirp = pdbm + gain;   // guadagno in dBi: la perdita di McKinley e' riferita ad antenne isotrope
+            double rx = eirp - lossMid + gain;
             sb.Append("\n");
             head(Lang.F("BILANCIO A {0:F0} MHz (punto medio)", f));
-            line(Lang.F("Potenza {0:F0} W = {1:F1} dBm, EIRP = {2:F1} dBm (guadagno in dBd = dBi - 2,15)", power, pdbm, eirp));
+            line(Lang.F("Potenza {0:F0} W = {1:F1} dBm, EIRP = {2:F1} dBm (guadagno in dBi)", power, pdbm, eirp));
             line(Lang.F("Attenuazione {0:F1} dB -> segnale in antenna {1:F1} dBm, minimo ricevibile {2:F0} dBm, margine {3:+0.0;-0.0} dB",
                 lossMid, rx, sens, rx - sens));
             line(Lang.F("Con l'attenuazione media di OH5IY (200 dB a 144 MHz, scalata con λ³: {0:F1} dB a {1:F0} MHz) il margine sarebbe {2:+0.0;-0.0} dB",
-                200 + 30 * Math.Log10(f / 144.0), f, eirp - (200 + 30 * Math.Log10(f / 144.0)) + gain - 2.15 - sens));
+                200 + 30 * Math.Log10(f / 144.0), f, eirp - (200 + 30 * Math.Log10(f / 144.0)) + gain - sens));
             sb.Append("\n");
             head(Lang.T("REGOLE SPERIMENTALI TRA LE BANDE (SM6FHZ, VUSHF 2025)"));
             line(Lang.F("Rispetto a 144 MHz: numero/intensità x {0:F3} ({1:+0.0;-0.0} dB), durata x {2:F2}. Ping massimo IARU a {3:F0} MHz: {4:F0} ms",

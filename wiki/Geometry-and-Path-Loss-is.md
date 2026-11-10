@@ -92,7 +92,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## Aflreikningur
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Mögnun er slegin inn í dBi og notuð í dBd (dBi − 2,15). Skýrslan gefur einnig borð fyrir báru með **meðalleiðardeyfingu OH5IY** (200 dB á 144 MHz, kvörðuð með λ³ að völdu tíðnisviði). Viðmiðun greinarinnar: um **70 dBm EIRP** þarf (−130 dBm + 200 dB, t.d. um 400 W inn á 14 dBi).

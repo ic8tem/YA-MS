@@ -92,7 +92,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## Skakelbegroting
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Winse word in dBi ingevoer en in dBd gebruik (dBi − 2,15). Die verslag gee ook die marge met **OH5IY se gemiddelde padverlies** (200 dB op 144 MHz, met λ³ na die gekose band geskaal). Verwysing uit die artikel: ongeveer **70 dBm EIRP** is nodig (−130 dBm + 200 dB, bv. ongeveer 400 W in 14 dBi).

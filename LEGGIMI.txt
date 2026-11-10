@@ -33,6 +33,8 @@ NOVITA' DELLA 1.7.0
   - Raccolta dati: quarta fonte, PSKReporter via MQTT (mqtt.pskreporter.info), con gli argomenti modificabili.
   - Nuovi pacchetti: .deb per Linux (amd64) e Raspberry Pi (arm64, armhf); YA-MS.app in zip per Mac.
   - Manuale: tolto il riferimento all'aurora nella tolleranza della condizione speculare.
+  - Geometria e attenuazione: corretto il bilancio di tratta. I guadagni sono in dBi e non si tolgono piu' due volte
+    i 2,15 dB del dipolo (la perdita di McKinley e' riferita ad antenne isotrope): il margine sale di 4,3 dB.
 
 NOVITA' DELLA 1.6.0
   - Linguette con sottolinguette: "Live e dati real-time" (Traffico in diretta, Flusso radar, Radar GRAVES,

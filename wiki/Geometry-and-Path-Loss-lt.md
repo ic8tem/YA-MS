@@ -92,7 +92,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## Ryšio biudžetas
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Stiprinimai įvedami dBi, o naudojami dBd (dBi − 2,15). Ataskaitoje taip pat pateikiama atsarga su **vidutiniu OH5IY slopinimu** (200 dB ties 144 MHz, perskaičiuota pagal λ³ pasirinktai juostai). Straipsnio duomuo: reikia apie **70 dBm EIRP** (−130 dBm + 200 dB, pvz., apie 400 W į 14 dBi anteną).

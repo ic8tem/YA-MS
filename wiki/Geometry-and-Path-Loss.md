@@ -92,10 +92,10 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## Link budget
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
-[37–38]. Gains are entered in dBi and used in dBd (dBi − 2.15). The report also gives the margin with **OH5IY's average path loss** (200 dB at 144 MHz, scaled with λ³ to the chosen band). Article reference: about **70 dBm EIRP** is needed (−130 dBm + 200 dB, e.g. about 400 W into 14 dBi).
+[37–38]. Gains are entered and used in dBi: McKinley's loss refers to isotropic antennas, so no 2.15 dB dipole correction is subtracted (EIRP = power + gain). The report also gives the margin with **OH5IY's average path loss** (200 dB at 144 MHz, scaled with λ³ to the chosen band). Article reference: about **70 dBm EIRP** is needed (−130 dBm + 200 dB, e.g. about 400 W into 14 dBi).
 
 ## Antenna gain and lobe
 

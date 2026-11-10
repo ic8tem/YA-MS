@@ -92,7 +92,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## Linkbudget
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Winsten worden in dBi ingevoerd en in dBd gebruikt (dBi − 2,15). Het verslag geeft ook de marge met de **gemiddelde trajectdemping van OH5IY** (200 dB op 144 MHz, met λ³ omgerekend naar de gekozen band). Referentie uit het artikel: er is ongeveer **70 dBm EIRP** nodig (−130 dBm + 200 dB, bijv. ongeveer 400 W in 14 dBi).

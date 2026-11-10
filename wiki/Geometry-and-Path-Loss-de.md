@@ -92,7 +92,7 @@ L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2
 ## Streckenbilanz
 
 ```math
-P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Die Gewinne werden in dBi eingegeben und in dBd verwendet (dBi − 2,15). Der Bericht nennt auch die Reserve mit der **mittleren Dämpfung von OH5IY** (200 dB bei 144 MHz, mit λ³ auf das gewählte Band umgerechnet). Referenz des Artikels: Benötigt werden etwa **70 dBm EIRP** (−130 dBm + 200 dB, z. B. etwa 400 W an 14 dBi).

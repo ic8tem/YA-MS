@@ -22,7 +22,7 @@ Voer `./installa.sh` uit vanuit de uitgepakte map (niet vanuit `~/YA-MS`). Sommi
 ## Weergave
 
 ### Linux: Japanse tekst verschijnt als vierkantjes
-Je systeem mist CJK-lettertypen. Installeer de **Noto CJK**-lettertypen en start YA-MS opnieuw:
+Je systeem mist CJK-lettertypen (Chinees, Japans, Koreaans). Installeer de **Noto CJK**-lettertypen en start YA-MS opnieuw. Hetzelfde gebeurt met Arabisch, Hebreeuws, Urdu, Hindi en Bengaals: installeer op Debian, Ubuntu en Raspberry Pi OS ook `fonts-noto-core`.
 
 | Distributie | Commando |
 |---|---|

@@ -16,18 +16,40 @@
 
 ## اللغة
 
-ست لغات للواجهة:
+28 لغة للواجهة، وهي نفسها لغات YAEC وE-LAYER ANALYZER (المصطلحات المشتركة مع YAEC مترجمة بالطريقة نفسها):
 
 | اللغة | الرمز | الملف |
 |---|---|---|
 | Italiano | `it` | لا يوجد: الإيطالية هي اللغة الأساسية (المفاتيح) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
-عند التشغيل الأول يستخدم YA-MS **لغة النظام** إن كانت إحدى هذه اللغات، وإلا فالإيطالية. تتبع الأرقام والتواريخ اللغة المختارة (مثلاً النقطة العشرية في الإنجليزية، والفاصلة في الإيطالية والألمانية). أي نص ناقص في ملف الترجمة يُعرض بالإيطالية. على Linux تحتاج اليابانية إلى خطوط مناسبة: انظر [حل المشكلات](Troubleshooting-FAQ-ar#linux-النص-الياباني-يظهر-مربعات).
+عند التشغيل الأول يستخدم YA-MS **لغة النظام** إن كانت إحدى هذه اللغات، وإلا فالإيطالية. تتبع الأرقام والتواريخ اللغة المختارة (مثلاً النقطة العشرية في الإنجليزية، والفاصلة في الإيطالية والألمانية). أي نص ناقص في ملف الترجمة يُعرض بالإيطالية. على Linux تحتاج الصينية واليابانية والكورية والعربية والعبرية والأردية والهندية والبنغالية إلى خطوط مناسبة (مثل عائلات Noto): انظر [حل المشكلات](Troubleshooting-FAQ-ar#linux-النص-الياباني-يظهر-مربعات).
 
 وثيقة [الكفاءة - شرح](Efficiency-Explanation-ar) ودليل الحسابات بالإيطالية.
 
@@ -100,7 +122,7 @@
 | `elevazione_lobo_gradi` | 0 | زاوية ارتفاع الفص (°) |
 | `boom_m` | 4.6 | طول ذراع Yagi ‏(m) |
 | `hot_spot_km` | 150 | بُعد Hot A / Hot B عن نقطة المنتصف (30–400 km) |
-| `lingua` | النظام / `it` | رمز اللغة (`it`، `en`، `ru`، `ja`، `de`، `nl`) |
+| `lingua` | النظام / `it` | رمز اللغة (أحد الرموز الـ28 أعلاه، مثلاً `it`، `en`، `de`) |
 | `tema` | `chiaro` | نظام الألوان: `chiaro` (فاتح)، `scuro` (ليلي)، `nero` (أسود)، `pastello-azzurro`، `pastello-arancione`، `pastello-acquamarina`، `pastello-verde`، `pastello-rosa`، `pastello-lilla`، `pastello-indaco`، `pastello-marrone`، `scia` (أثر نيزكي) |
 | `carattere_pct` | 100 | حجم الخط (100–300 %) |
 | `comandi_visibili` | 1 | 1 = صفوف عناصر التحكم ظاهرة، 0 = مطوية |

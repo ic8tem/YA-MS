@@ -22,7 +22,7 @@ M1/M2/M3/M4 프로세서는 `-mac-apple-silicon.dmg`, Intel Mac은 `-mac-intel.d
 ## 화면 표시
 
 ### Linux: 일본어 문자가 네모로 표시됨
-시스템에 CJK 글꼴이 없습니다. **Noto CJK** 글꼴을 설치하고 YA-MS를 다시 시작하세요:
+시스템에 CJK(중국어, 일본어, 한국어) 글꼴이 없습니다. **Noto CJK** 글꼴을 설치하고 YA-MS를 다시 시작하세요. 아랍어, 히브리어, 우르두어, 힌디어, 벵골어도 마찬가지입니다: Debian, Ubuntu, Raspberry Pi OS에서는 `fonts-noto-core`도 설치하세요.
 
 | 배포판 | 명령 |
 |---|---|

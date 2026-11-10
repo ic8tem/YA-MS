@@ -46,8 +46,8 @@ Attuazione sperimentale previsioni	Prakiraan eksperimental
 Aurigidi	Aurigid
 Azimut	Azimut
 BILANCIO A {0:F0} MHz (punto medio)	ANGGARAN LINK PADA {0:F0} MHz (titik tengah)
-Banda MHz	Band MHz
-Bande (MHz)	Band (MHz)
+Banda MHz	Pita MHz
+Bande (MHz)	Pita (MHz)
 Bolidozor wiki, "Graves" – schiere, settori e tempi del fascio	Bolidozor wiki, "Graves" – susunan antena, sektor dan waktu berkas
 Bootidi di giugno	Bootid Juni
 CALCOLO E TEORIA DELL'EFFICIENZA	PERHITUNGAN DAN TEORI EFISIENSI
@@ -78,7 +78,7 @@ Chiuso	Ditutup
 Clic su una tratta della mappa o su una riga della tabella per i dettagli del contatto e della sua nuvola.	Klik lintasan di peta atau baris tabel untuk melihat detail kontak dan awannya.
 Cluster con PSKReporter	Cluster dengan PSKReporter
 Cluster di DM4X con gli spot di PSKReporter (dm4x.ddns.net, porta 8500): qui arrivano le decodifiche MSK144 di WSJT-X e MSHV. In alternativa HamAlert (hamalert.org 7300, serve un account con i trigger).	Cluster DM4X dengan spot PSKReporter (dm4x.ddns.net, port 8500): di sini masuk dekode MSK144 dari WSJT-X dan MSHV. Sebagai alternatif HamAlert (hamalert.org 7300, perlu akun dengan trigger).
-Cluster scelto dall'utente. Su ON0DXK le bande VHF sono filtrate: si abilitano con set/filter dxbm/pass 6 (poi 4, 2...). Altro esempio: hamqth.com 7300.	Cluster pilihan pengguna. Di ON0DXK band VHF difilter: aktifkan dengan set/filter dxbm/pass 6 (lalu 4, 2...). Contoh lain: hamqth.com 7300.
+Cluster scelto dall'utente. Su ON0DXK le bande VHF sono filtrate: si abilitano con set/filter dxbm/pass 6 (poi 4, 2...). Altro esempio: hamqth.com 7300.	Cluster pilihan pengguna. Di ON0DXK pita VHF difilter: aktifkan dengan set/filter dxbm/pass 6 (lalu 4, 2...). Contoh lain: hamqth.com 7300.
 Collm stessa ora	Collm jam yang sama
 Collm {0} MHz (validi)	Collm {0} MHz (valid)
 Comae Berenicidi	Comae Berenicid
@@ -131,7 +131,7 @@ Elev.	Elev.
 Elevazione d'antenna in funzione della distanza dallo scatter point	Elevasi antena terhadap jarak dari scatter point
 Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)	Elevasi antena ke titik tengah: {0:F1}°   (rumus artikel, Gambar 7)
 Elevazione lobo °	Elevasi lobus °
-Errore all'avvio: {0}	Kesalahan saat memulai: {0}
+Errore all'avvio: {0}	Kesalahan saat mulai: {0}
 Errore: {0}	Kesalahan: {0}
 Esponente	Eksponen
 Esponente dal confronto RMOB	Eksponen dari perbandingan RMOB
@@ -249,12 +249,12 @@ Mappa: bordo = {0} km dalla stazione. {1}	Peta: tepi = {0} km dari stasiun. {1}
 Mese non indicato: uso il mese corrente.	Bulan tidak disebutkan: memakai bulan ini.
 Meteore/ora - ieri {0} e oggi {1} (UTC)	Meteor/jam - kemarin {0} dan hari ini {1} (UTC)
 Metti GRAVES come DX	Jadikan GRAVES sebagai DX
-Miglior puntamento per lo sciame: ORTOGONALE alla direzione\ndi arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\nSM6FHZ). In pianta: linea gialla = scorrimento\ndello sciame, punti arancioni = puntamenti, ellissi\nPREV = scie piu' probabili adesso.\nClic su un radiante: percorso con le ore UTC	Arah terbaik untuk hujan meteor: TEGAK LURUS terhadap arah\nkedatangan (azimut radian +-90°, toleransi +-40-50°,\nSM6FHZ). Denah: garis kuning = pergeseran\nhujan meteor, titik oranye = arah antena, elips\nPREV = jejak paling mungkin saat ini.\nKlik radian: lintasan dengan jam UTC
+Miglior puntamento per lo sciame: ORTOGONALE alla direzione\ndi arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\nSM6FHZ). In pianta: linea gialla = scorrimento\ndello sciame, punti arancioni = puntamenti, ellissi\nPREV = scie piu' probabili adesso.\nClic su un radiante: percorso con le ore UTC	Arah terbaik untuk hujan meteor: TEGAK LURUS terhadap arah\nkedatangan (azimut radian +-90°, toleransi +-40-50°,\nSM6FHZ). Denah: garis kuning = pergeseran\nhujan meteor, titik oranye = arah antena, elips\nPREV = jejak paling mungkin sekarang.\nKlik radian: lintasan dengan jam UTC
 Misurato a Collm e traslato a {0} MHz - ieri {1} e oggi {2} (UTC)	Diukur di Collm dan diskalakan ke {0} MHz - kemarin {1} dan hari ini {2} (UTC)
 Mondo	Dunia
 Monocerotidi di dicembre	Monocerotid Desember
 N	N
-N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durata delle riflessioni x ({1:F1}/{0:F0})^2 = x {5:F4}: un eco di 1 s a {1:F1} MHz dura circa {6:F0} ms a {0:F0} MHz (ping massimo IARU a {0:F0} MHz: {7:F0} ms).\nRegole sperimentali di SM6FHZ (VUSHF 2025). Il fattore K tiene conto della stazione ricevente (potenza, antenne): si ricava confrontando con un osservatore RMOB sulla stessa banda.	N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durasi pantulan x ({1:F1}/{0:F0})^2 = x {5:F4}: gema 1 s pada {1:F1} MHz berlangsung sekitar {6:F0} ms pada {0:F0} MHz (ping maksimum IARU pada {0:F0} MHz: {7:F0} ms).\nAturan eksperimental SM6FHZ (VUSHF 2025). Faktor K memperhitungkan stasiun penerima (daya, antena): diperoleh dengan membandingkan dengan pengamat RMOB pada band yang sama.
+N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durata delle riflessioni x ({1:F1}/{0:F0})^2 = x {5:F4}: un eco di 1 s a {1:F1} MHz dura circa {6:F0} ms a {0:F0} MHz (ping massimo IARU a {0:F0} MHz: {7:F0} ms).\nRegole sperimentali di SM6FHZ (VUSHF 2025). Il fattore K tiene conto della stazione ricevente (potenza, antenne): si ricava confrontando con un osservatore RMOB sulla stessa banda.	N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durasi pantulan x ({1:F1}/{0:F0})^2 = x {5:F4}: gema 1 s pada {1:F1} MHz berlangsung sekitar {6:F0} ms pada {0:F0} MHz (ping maksimum IARU pada {0:F0} MHz: {7:F0} ms).\nAturan eksperimental SM6FHZ (VUSHF 2025). Faktor K memperhitungkan stasiun penerima (daya, antena): diperoleh dengan membandingkan dengan pengamat RMOB pada pita yang sama.
 Natural Earth - coste e confini 1:50 milioni, dominio pubblico, www.naturalearthdata.com (mappa d'Europa)	Natural Earth - garis pantai dan batas negara 1:50 juta, domain publik, www.naturalearthdata.com (peta Eropa)
 Nell'attenuazione (β = 90°, prudente): raggio iniziale della scia {0:F1} dB (r0 = {1:F2} m alla quota media ITU di {2:F1} km per {3:F0} MHz). Con la scia nel piano della tratta (β = 0°, caso migliore) l'attenuazione scende a {4:F1} dB ({5:F1} dB) e il margine sale a {6:+0.0;-0.0} dB	Dalam redaman (β = 90°, hati-hati): jari-jari awal jejak {0:F1} dB (r0 = {1:F2} m pada ketinggian rata-rata ITU {2:F1} km untuk {3:F0} MHz). Jika jejak berada di bidang lintasan (β = 0°, kasus terbaik), redaman turun menjadi {4:F1} dB ({5:F1} dB) dan margin naik menjadi {6:+0.0;-0.0} dB
 Nero	Hitam
@@ -272,7 +272,7 @@ No: sotto l'orizzonte di GRAVES	Tidak: di bawah cakrawala GRAVES
 Nominativo per il login	Callsign untuk login
 Non connesso	Tidak tersambung
 Non ho riconosciuto il formato del file.	Format file tidak dikenali.
-Non riesco a leggere la scala verticale del flusso (etichetta in cima: {0}): valori da verificare.	Tidak dapat membaca skala vertikal fluks (label atas: {0}): nilai perlu diperiksa.
+Non riesco a leggere la scala verticale del flusso (etichetta in cima: {0}): valori da verificare.	Tidak dapat membaca skala vertikal fluks (label atas: {0}): nilai perlu diverifikasi.
 Non riesco ad aprire il documento: {0}	Tidak dapat membuka dokumen: {0}
 Non è un punto sulla mappa: è una rete mondiale di telecamere (soprattutto amatoriali) sparse in molti paesi di tutti i continenti.	Ini bukan satu titik di peta: ini jaringan kamera (kebanyakan amatir) di seluruh dunia, tersebar di banyak negara di semua benua.
 Nota: i dati dei radar appartengono ai rispettivi enti. Prima di distribuire il programma va chiesto il permesso di prelevarli automaticamente.	Catatan: data radar adalah milik lembaga masing-masing. Sebelum mendistribusikan program, perlu meminta izin untuk mengambilnya secara otomatis.
@@ -367,7 +367,7 @@ Rispetto a 144 MHz: numero/intensità x {0:F3} ({1:+0.0;-0.0} dB), durata x {2:F
 Rob Hardenberg PE1ITR, "The 143.050 MHz Graves Radar, a VHF Beacon" (DUBUS 4/2007) e "Graves Radar Update April 2021" – pe1itr.com/graves	Rob Hardenberg PE1ITR, "The 143.050 MHz Graves Radar, a VHF Beacon" (DUBUS 4/2007) dan "Graves Radar Update April 2021" – pe1itr.com/graves
 Rotellina = zoom, trascina = sposta, mouse sopra un quadrato = QSO	Roda mouse = zoom, seret = geser, mouse di atas kotak = QSO
 S	S
-SCARTATO: "{0}" trovato, ma la frequenza {1:F1} kHz non è in una banda scelta.	DITOLAK: "{0}" ditemukan, tetapi frekuensi {1:F1} kHz tidak berada di band yang dipilih.
+SCARTATO: "{0}" trovato, ma la frequenza {1:F1} kHz non è in una banda scelta.	DITOLAK: "{0}" ditemukan, tetapi frekuensi {1:F1} kHz tidak berada di pita yang dipilih.
 SCARTATO: frequenza sotto 27990,0 kHz.	DITOLAK: frekuensi di bawah 27990,0 kHz.
 SCARTATO: fuori dalle finestre MS e nessuna parola del filtro.	DITOLAK: di luar jendela MS dan tidak ada kata filter.
 SCARTATO: il commento dichiara un'altra propagazione ({0}) e non c'è un modo MS.	DITOLAK: komentar menyatakan propagasi lain ({0}) dan tidak ada mode MS.
@@ -405,13 +405,13 @@ Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LT
 Spot meteor scatter raccolti (i più recenti in alto)	Spot meteor scatter terkumpul (terbaru di atas)
 Stazione	Stasiun
 Stazione        {0}   quota {1:F0} m	Stasiun         {0}   ketinggian {1:F0} m
-Stima sperimentale (regole SM6FHZ): meteore/ora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durata dei ping x {4:F3}. Ping massimo IARU a {0:F0} MHz: {5:F0} ms. Valori indicativi, da confrontare con l'esperienza in banda.{6}	Perkiraan eksperimental (aturan SM6FHZ): meteor/jam pada {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durasi ping x {4:F3}. Ping maksimum IARU pada {0:F0} MHz: {5:F0} ms. Nilai indikatif, untuk dibandingkan dengan pengalaman di band.{6}
+Stima sperimentale (regole SM6FHZ): meteore/ora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durata dei ping x {4:F3}. Ping massimo IARU a {0:F0} MHz: {5:F0} ms. Valori indicativi, da confrontare con l'esperienza in banda.{6}	Perkiraan eksperimental (aturan SM6FHZ): meteor/jam pada {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durasi ping x {4:F3}. Ping maksimum IARU pada {0:F0} MHz: {5:F0} ms. Nilai indikatif, untuk dibandingkan dengan pengalaman di pita.{6}
 Svuota la tabella	Kosongkan tabel
 Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)	Swan Meteor Skyview karya DL1DBC - swan.ms (acuan grafis kubah langit)
 Sì	Ya
 Sì · settore {0}	Ya · sektor {0}
 TRATTA	LINTASAN
-TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	LINTASAN MELEWATI CAKRAWALA JEJAK: dengan jejak pada {0:F1} km titik tengah berada {1:F1}° di bawah cakrawala. Perlu jejak pada ketinggian minimal {2:F0} km: hubungan hanya mungkin dengan jejak tertinggi, efisiensi dan redaman berada di batas model.
+TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	LINTASAN MELEWATI CAKRAWALA JEJAK: dengan jejak pada {0:F1} km titik tengah berada {1:F1}° di bawah cakrawala. Perlu jejak pada ketinggian minimal {2:F0} km: kontak hanya mungkin dengan jejak tertinggi, efisiensi dan redaman berada di batas model.
 Tauridi Nord	Taurid Utara
 Tauridi Sud	Taurid Selatan
 Tavistock, Ontario (Canada)	Tavistock, Ontario (Kanada)
@@ -501,7 +501,7 @@ gamma-Draconidi di luglio	gamma Draconid Juli
 gamma-Ursae Minoridi	gamma Ursae Minorid
 gradi	derajat
 hot spot (solo sporadiche) {0}	hot spot (hanya sporadis) {0}
-il giorno scelto non è oggi	hari yang dipilih bukan hari ini
+il giorno scelto non è oggi	hari terpilih bukan hari ini
 indice	indeks
 indice sciami tratta (scala a destra)	indeks hujan meteor lintasan (skala kanan)
 indice tratta	indeks lintasan
@@ -537,7 +537,7 @@ nessun dato radar: vedi Live e dati real-time › Flusso radar	tidak ada data ra
 nessun file RMOB caricato	tidak ada file RMOB dimuat
 nessun passo del fascio illumina la zona utile\nogni scia colta ≈ {0:F0} % ({1:F1} + {2:F1}) / {3:F1}	tidak ada langkah berkas yang menyinari zona berguna\njejak tertangkap ≈ {0:F0} % ({1:F1} + {2:F1}) / {3:F1}
 nessuna rete attiva	tidak ada jaringan aktif
-nessuno sciame utile adesso: hot spot più adatto al fascio	tidak ada hujan meteor berguna saat ini: hot spot paling cocok untuk berkas
+nessuno sciame utile adesso: hot spot più adatto al fascio	tidak ada hujan meteor berguna sekarang: hot spot paling cocok untuk berkas
 nessuno sciame utile in questo giorno	tidak ada hujan meteor berguna pada hari ini
 nessuno sciame utile in questo momento	tidak ada hujan meteor berguna saat ini
 nominativo	callsign
@@ -569,7 +569,7 @@ radio, diurno	radio, siang hari
 rete assente: {0}	tidak ada jaringan: {0}
 riflessioni/ora	pantulan/jam
 riflessioni/ora a {0} MHz	pantulan/jam pada {0} MHz
-righe ricevute      {0}\nspot letti          {1}\nspot MS accettati   {2}\nscartati (parola)   {3}\nscartati (banda)    {4}\nspot MS ultima ora  {5}	baris diterima       {0}\nspot dibaca          {1}\nspot MS diterima     {2}\nditolak (kata)       {3}\nditolak (band)       {4}\nspot MS jam terakhir {5}
+righe ricevute      {0}\nspot letti          {1}\nspot MS accettati   {2}\nscartati (parola)   {3}\nscartati (banda)    {4}\nspot MS ultima ora  {5}	baris diterima       {0}\nspot dibaca          {1}\nspot MS diterima     {2}\nditolak (kata)       {3}\nditolak (pita)       {4}\nspot MS jam terakhir {5}
 righe sotto 27990 kHz scartate: {0}	baris di bawah 27990 kHz dibuang: {0}
 righe {0}, spot letti {1}, MS {2}	baris {0}, spot dibaca {1}, MS {2}
 scala letta dal grafico: 0-{0} meteore/ora	skala terbaca dari grafik: 0-{0} meteor/jam
@@ -611,7 +611,7 @@ zona PREV	zona PREV
 {0} (in rosso sulla mappa)	{0} (merah pada peta)
 {0} (~{1} calc.)	{0} (~{1} hit.)
 {0} MHz: {1}	{0} MHz: {1}
-{0} QSO letti, {1} quadrati-QSO nelle bande 50-432 MHz, {2} QSO scartati (altre bande o senza quadrato).	{0} QSO dibaca, {1} kotak-QSO di band 50-432 MHz, {2} QSO dibuang (band lain atau tanpa kotak).
+{0} QSO letti, {1} quadrati-QSO nelle bande 50-432 MHz, {2} QSO scartati (altre bande o senza quadrato).	{0} QSO dibaca, {1} kotak-QSO di pita 50-432 MHz, {2} QSO dibuang (pita lain atau tanpa kotak).
 {0} UTC (momento del calcolo)	{0} UTC (waktu perhitungan)
 {0} UTC (tempo reale)	{0} UTC (waktu nyata)
 {0} UTC · {1:F1} kHz · {2:F0} km	{0} UTC · {1:F1} kHz · {2:F0} km

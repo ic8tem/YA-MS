@@ -189,7 +189,7 @@ Nessuna zona comune dello strato E ({0})	No common E-layer zone ({0})
 No	No
 No: fuori dai settori	No: outside the sectors
 No: sopra il fascio (circa 25°)	No: above the beam (about 25°)
-No: sotto l'orizzonte di GRAVES	No: below the GRAVES horizon
+No: sotto l'orizzonte di GRAVES	No: below the horizon of GRAVES
 Non ho riconosciuto il formato del file.	File format not recognised.
 Non riesco a leggere la scala verticale del flusso (etichetta in cima: {0}): valori da verificare.	Cannot read the vertical flux scale (top label: {0}): values need checking.
 Non riesco ad aprire il documento: {0}	Cannot open the document: {0}
@@ -210,7 +210,7 @@ Passo	Step
 Pegasidi di luglio	July Pegasids
 Perseidi	Perseids
 Phoenicidi	Phoenicids
-Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	Plan view: yellow line = drift of the selected shower (or the most favourable one), PREV ellipses = where the most likely trails fall now. Sky dome on the right (Rise/Set in UTC on {0}): yellow = efficiency >= 50 % and ZHR >= 2, orange >= 20 %, grey = almost inactive.
+Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	Plan view: yellow line = drift of the selected shower (or the most favourable one), PREV ellipses = where the most likely trails fall now. Sky view on the right (Rises/Sets in UTC on {0}): yellow = efficiency >= 50 % and ZHR >= 2, orange >= 20 %, grey = almost inactive.
 Piscidi di aprile diurne	Daytime April Piscids
 Portata alla quota delle scie con lobo a {0:F1}°: {1:F0} km	Range at trail height with lobe at {0:F1}°: {1:F0} km
 Potenza W	Power W
@@ -268,11 +268,11 @@ Sextantidi diurne	Daytime Sextantids
 Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)	Shelby W8WN - qsl.net/w8wn/hscw (optimum elevation and offset)
 Sigla	Code
 Sono i bordi piu' lontani del cielo visto da entrambe le stazioni, non i punti da puntare.	These are the farthest edges of the sky seen by both stations, not points to aim at.
-Sorge	Rise
+Sorge	Rises
 Sorgente Antielio	Antihelion Source
 Stazione        {0}   quota {1:F0} m	Station         {0}   height {1:F0} m
-Stima sperimentale (regole SM6FHZ): meteore/ora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durata dei ping x {4:F3}. Ping massimo IARU a {0:F0} MHz: {5:F0} ms. Valori indicativi, da confrontare con l'esperienza in banda.{6}	Experimental estimate (SM6FHZ rules): meteors/hour at {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; ping duration x {4:F3}. IARU maximum ping at {0:F0} MHz: {5:F0} ms. Indicative values, to be compared with on-air experience.{6}
-Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)	DL1DBC's Swan Meteor Skyview - swan.ms (reference for the sky dome graphics)
+Stima sperimentale (regole SM6FHZ): meteore/ora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durata dei ping x {4:F3}. Ping massimo IARU a {0:F0} MHz: {5:F0} ms. Valori indicativi, da confrontare con l'esperienza in banda.{6}	Experimental estimate (SM6FHZ rules): meteors/hour at {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; ping duration x {4:F3}. IARU maximum ping at {0:F0} MHz: {5:F0} ms. Indicative values, to be compared with experience on the band.{6}
+Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)	DL1DBC's Swan Meteor Skyview - swan.ms (reference for the Sky view graphics)
 Sì	Yes
 Sì · settore {0}	Yes · sector {0}
 TRATTA	PATH
@@ -280,7 +280,7 @@ Tauridi Nord	Northern Taurids
 Tauridi Sud	Southern Taurids
 Tempo reale	Real time
 Tipo	Type
-Tramonta	Set
+Tramonta	Sets
 Traslato	Scaled
 Traslato {0}	Scaled {0}
 Tratta calcolata: {0:F0} km, {1} punti di riflessione campionati in {2:F1} s. {3}	Path computed: {0:F0} km, {1} reflection points sampled in {2:F1} s. {3}

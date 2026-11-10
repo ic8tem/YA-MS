@@ -5,7 +5,7 @@
 (destra)  B →	(दायाँ)  B →
 (lettura Collm: {0})	(Collm रीडिंग: {0})
 (stima poco precisa sotto 2 λ)	(2 λ से कम पर अनुमान कम सटीक)
--> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto (servono scie ad almeno {0:F0} km)	-> ट्रेल की ऊँचाई पर मध्य बिंदु क्षितिज से नीचे: पथ एकल हॉप की ज्यामितीय पहुँच से बाहर (कम से कम {0:F0} km ऊँचे ट्रेल चाहिए)
+-> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto (servono scie ad almeno {0:F0} km)	-> ट्रेल की ऊँचाई पर मध्य बिंदु क्षितिज के नीचे: पथ एकल हॉप की ज्यामितीय पहुँच से बाहर (कम से कम {0:F0} km ऊँचे ट्रेल चाहिए)
 0,8 s per passo · ciclo 4,8 s (PE1ITR 2021)	प्रति चरण 0.8 s · चक्र 4.8 s (PE1ITR 2021)
 1° criterio: frequenze tipiche degli spot meteor scatter (kHz)	पहला मानदंड: मीटियोर स्कैटर स्पॉट की सामान्य आवृत्तियाँ (kHz)
 2° criterio: modi digitali MS e <MS>	दूसरा मानदंड: MS डिजिटल मोड और <MS>
@@ -18,10 +18,10 @@ ACCETTATO per "{0}": {1} da {2}, {3} MHz	"{0}" के लिए स्वीक�
 ADESSO	अभी
 ADIF: {0} ({1} quadrati-QSO)	ADIF: {0} ({1} QSO वर्ग)
 ALTRI RIFERIMENTI DELL'ARTICOLO	लेख के अन्य संदर्भ
-ATTENUAZIONE DI TRATTA (scia sottodensa, McKinley 1961 e ITU-R P.843; guadagni d'antenna esclusi)	पथ क्षीणन (अल्प-घनत्व ट्रेल, McKinley 1961 और ITU-R P.843; ऐंटेना गेन शामिल नहीं)
+ATTENUAZIONE DI TRATTA (scia sottodensa, McKinley 1961 e ITU-R P.843; guadagni d'antenna esclusi)	पथ क्षीणन (अल्प-घनत्व ट्रेल, McKinley 1961 और ITU-R P.843; एंटेना गेन शामिल नहीं)
 ATTENZIONE: {0}	चेतावनी: {0}
-ATTENZIONE: {0} e {1} entrano nel lobo dell'antenna ({2}° a -3 dB attorno a {3}°): con questo puntamento sono gia' coperti. Segnati in grigio sulla mappa.	चेतावनी: {0} और {1} ऐंटेना लोब के भीतर आते हैं ({3}° के आसपास -3 dB पर {2}°): इस दिशा से वे पहले से कवर हैं। मानचित्र पर धूसर रंग में दिखाए गए।
-ATTENZIONE: {0} entra nel lobo dell'antenna ({1}° a -3 dB attorno a {2}°): con questo puntamento e' gia' coperto. Segnati in grigio sulla mappa.	चेतावनी: {0} ऐंटेना लोब के भीतर आता है ({2}° के आसपास -3 dB पर {1}°): इस दिशा से यह पहले से कवर है। मानचित्र पर धूसर रंग में दिखाया गया।
+ATTENZIONE: {0} e {1} entrano nel lobo dell'antenna ({2}° a -3 dB attorno a {3}°): con questo puntamento sono gia' coperti. Segnati in grigio sulla mappa.	चेतावनी: {0} और {1} एंटेना लोब के भीतर आते हैं ({3}° के आसपास -3 dB पर {2}°): इस दिशा से वे पहले से कवर हैं। मानचित्र पर धूसर रंग में दिखाए गए।
+ATTENZIONE: {0} entra nel lobo dell'antenna ({1}° a -3 dB attorno a {2}°): con questo puntamento e' gia' coperto. Segnati in grigio sulla mappa.	चेतावनी: {0} एंटेना लोब के भीतर आता है ({2}° के आसपास -3 dB पर {1}°): इस दिशा से यह पहले से कवर है। मानचित्र पर धूसर रंग में दिखाया गया।
 Accesa (prudente, di partenza): la potenza di ogni scia segue la formula completa di McKinley e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ): le scie che attraversano il piano della tratta valgono 10-15 dB meno di quelle che vi giacciono, e nessuna scia è sopravvalutata.\nEffetto: prevalgono i radianti allineati alla tratta, non quelli perpendicolari; le curve di DJ5HG seguono meglio l'andamento orario, con i minimi profondi quando il radiante è basso.\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6: segue la regola dei radianti perpendicolari alla tratta (SM6FHZ, DH9GCD), ma sopravvaluta le scie che attraversano il piano.	चालू (सावधान, प्रारंभिक सेटिंग): हर ट्रेल की शक्ति McKinley और ITU-R P.843 के पूर्ण सूत्र 1 / (1 − cos²β sin²φ) का पालन करती है: पथ के तल को काटने वाले ट्रेल उसमें स्थित ट्रेलों से 10-15 dB कम देते हैं, और किसी ट्रेल को बढ़ा-चढ़ाकर नहीं आँका जाता।\nप्रभाव: पथ के साथ संरेखित रेडिएंट प्रमुख रहते हैं, लंबवत नहीं; DJ5HG के वक्र घंटे-दर-घंटे बेहतर मिलते हैं, रेडिएंट नीचा होने पर गहरे न्यूनतम के साथ।\nबंद: हर ट्रेल को ऐसे भार दिया जाता है मानो वह पथ के तल में हो (β = 0), जैसा संस्करण 1.6 तक था: पथ के लंबवत रेडिएंट के नियम का पालन करता है (SM6FHZ, DH9GCD), लेकिन तल को काटने वाले ट्रेलों को बढ़ा-चढ़ाकर आँकता है।
 Adesso	अभी
 Aggiornamento automatico di tutte le fonti ogni 5 minuti	सभी स्रोतों का हर 5 मिनट में स्वचालित अद्यतन
@@ -29,18 +29,18 @@ Aggiungi	जोड़ें
 Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, quando CALL3 ha il locator a 6 caratteri.	अपूर्ण लोकेटर (केवल 4 अक्षर) भी CALL3 से लिए जाते हैं, जब CALL3 में 6 अक्षरों वाला लोकेटर हो।
 Andromedidi	एंड्रोमेडिड्स
 Angolo β tra scia e tratta (McKinley completo)	ट्रेल और पथ के बीच कोण β (पूर्ण McKinley)
-Antenna	एंटीना
-Antenna Yagi: boom m	यागी ऐंटेना: बूम m
-Antenna Yagi: boom {0:F2} m = {1:F2} lambda a {2:F0} MHz -> guadagno {3:F1} dBi (curva DL6WU),\n  lobo a -3 dB {4:F0}° orizzontale / {5:F0}° verticale (Kraus corretto con le simulazioni NEC di W4RNL)	यागी ऐंटेना: बूम {0:F2} m = {2:F0} MHz पर {1:F2} lambda -> गेन {3:F1} dBi (DL6WU वक्र),\n  -3 dB लोब {4:F0}° क्षैतिज / {5:F0}° ऊर्ध्व (W4RNL के NEC सिमुलेशन से संशोधित Kraus)
-Antenna az: -	ऐंटेना az: -
-Antenna az: {0}° (verso il DX)	ऐंटेना az: {0}° (DX की ओर)
+Antenna	एंटेना
+Antenna Yagi: boom m	यागी एंटेना: बूम m
+Antenna Yagi: boom {0:F2} m = {1:F2} lambda a {2:F0} MHz -> guadagno {3:F1} dBi (curva DL6WU),\n  lobo a -3 dB {4:F0}° orizzontale / {5:F0}° verticale (Kraus corretto con le simulazioni NEC di W4RNL)	यागी एंटेना: बूम {0:F2} m = {2:F0} MHz पर {1:F2} lambda -> गेन {3:F1} dBi (DL6WU वक्र),\n  -3 dB लोब {4:F0}° क्षैतिज / {5:F0}° ऊर्ध्व (W4RNL के NEC सिमुलेशन से संशोधित Kraus)
+Antenna az: -	एंटेना az: -
+Antenna az: {0}° (verso il DX)	एंटेना az: {0}° (DX की ओर)
 Apri in Word	Word में खोलें
 Apri la cartella degli spot	स्पॉट फ़ोल्डर खोलें
 Argomenti di partenza	डिफ़ॉल्ट टॉपिक
 Arietidi di maggio Sud diurne	दिवसकालीन दक्षिणी मई एरियेटिड्स
 Arietidi diurne	दिवसकालीन एरियेटिड्स
 Assi del flusso non trovati nella posizione attesa.	फ्लक्स के अक्ष अपेक्षित स्थान पर नहीं मिले।
-Attenuazione {0:F1} dB -> segnale in antenna {1:F1} dBm, minimo ricevibile {2:F0} dBm, margine {3:+0.0;-0.0} dB	क्षीणन {0:F1} dB -> ऐंटेना पर सिग्नल {1:F1} dBm, न्यूनतम ग्राह्य {2:F0} dBm, मार्जिन {3:+0.0;-0.0} dB
+Attenuazione {0:F1} dB -> segnale in antenna {1:F1} dBm, minimo ricevibile {2:F0} dBm, margine {3:+0.0;-0.0} dB	क्षीणन {0:F1} dB -> एंटेना पर सिग्नल {1:F1} dBm, न्यूनतम ग्राह्य {2:F0} dBm, मार्जिन {3:+0.0;-0.0} dB
 Attività	गतिविधि
 Attuazione sperimentale previsioni	प्रायोगिक पूर्वानुमान
 Aurigidi	ऑरिगिड्स
@@ -91,7 +91,7 @@ Connessione internet assente.\n\nI dati dei radar e di RMOB non possono essere a
 Connessione ripristinata.	कनेक्शन बहाल हुआ।
 Connesso: {0} argomenti	कनेक्टेड: {0} टॉपिक
 Connetti	कनेक्ट करें
-Connetti all'avvio	आरंभ पर कनेक्ट करें
+Connetti all'avvio	प्रारंभ पर कनेक्ट करें
 Contatori	काउंटर
 Conteggio	गणना
 Controllo le fonti di dati esterne...	बाहरी डेटा स्रोत जाँचे जा रहे हैं...
@@ -128,10 +128,10 @@ Efficienza - spiegazione	दक्षता - व्याख्या
 Efficienza oraria per {0} del {1} (UTC, valori a metà ora)	{1} को {0} के लिए प्रति घंटा दक्षता (UTC, घंटे के मध्य के मान)
 Efficienza tratta GRAVES → te	GRAVES → आप पथ दक्षता
 Elev.	उन्नयन
-Elevazione d'antenna in funzione della distanza dallo scatter point	स्कैटर पॉइंट से दूरी के अनुसार ऐंटेना उन्नयन
-Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)	मध्य बिंदु की ओर ऐंटेना उन्नयन: {0:F1}°   (लेख का सूत्र, चित्र 7)
+Elevazione d'antenna in funzione della distanza dallo scatter point	स्कैटर पॉइंट से दूरी के अनुसार एंटेना उन्नयन
+Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)	मध्य बिंदु की ओर एंटेना उन्नयन: {0:F1}°   (लेख का सूत्र, चित्र 7)
 Elevazione lobo °	लोब उन्नयन °
-Errore all'avvio: {0}	आरंभ में त्रुटि: {0}
+Errore all'avvio: {0}	प्रारंभ पर त्रुटि: {0}
 Errore: {0}	त्रुटि: {0}
 Esponente	घातांक
 Esponente dal confronto RMOB	RMOB तुलना से घातांक
@@ -175,9 +175,9 @@ Giudizio	मूल्यांकन
 Gli spot accettati si salvano in data/spot_ms, un file CSV al giorno. I locator mancanti si prendono dall'archivio CALL3 (data/call3.txt).	स्वीकृत स्पॉट data/spot_ms में सहेजे जाते हैं, प्रति दिन एक CSV फ़ाइल। अनुपस्थित लोकेटर CALL3 संग्रह (data/call3.txt) से लिए जाते हैं।
 Global Meteor Network (GMN)	Global Meteor Network (GMN)
 Global Meteor Network (GMN) - globalmeteornetwork.org/flux: flusso e ZHR misurati degli sciami. Dati CC BY 4.0; Vida et al. 2021, MNRAS 506(4), e Vida et al. 2022, MNRAS 515(2)	Global Meteor Network (GMN) - globalmeteornetwork.org/flux: उल्का वर्षाओं के मापे गए फ्लक्स और ZHR। डेटा CC BY 4.0; Vida et al. 2021, MNRAS 506(4), और Vida et al. 2022, MNRAS 515(2)
-Guadagno antenna dBi (tx = rx)	ऐंटेना गेन dBi (tx = rx)
+Guadagno antenna dBi (tx = rx)	एंटेना गेन dBi (tx = rx)
 Gunter Hoch DL6WU - curva guadagno/lunghezza del boom delle Yagi lunghe, G(dBi) = 7,773 log(L/lambda) + 11,43, riportata da W8IO (w8io.com)	Gunter Hoch DL6WU - लंबी यागी के लिए गेन/बूम लंबाई वक्र, G(dBi) = 7.773 log(L/lambda) + 11.43, W8IO (w8io.com) द्वारा उद्धृत
-HOT A / HOT B (hot spot classici, per il puntamento d'antenna)	HOT A / HOT B (क्लासिक हॉट स्पॉट, ऐंटेना दिशा के लिए)
+HOT A / HOT B (hot spot classici, per il puntamento d'antenna)	HOT A / HOT B (क्लासिक हॉट स्पॉट, एंटेना दिशा के लिए)
 Host	होस्ट
 Hot A	Hot A
 Hot A/B: hot spot a {0} km dal punto medio (valore scritto a mano).	Hot A/B: मध्य बिंदु से {0} km पर हॉट स्पॉट (हाथ से दर्ज मान)।
@@ -223,7 +223,7 @@ La sequenza del fascio si calcola con l'orologio del PC: sincronizzalo con un se
 La sequenza è legata all'ora UTC (PE1ITR): dal 2021 i passi durano 0,8 s e il ciclo di un settore 4,8 s; nel 2007 erano 3,2 s e 19,2 s. La stazione di comando a volte sposta la sequenza di qualche passo: il dettaglio è una previsione da confermare con l'ascolto. Una scia si sente solo se il fascio la illumina mentre dura: probabilità ≈ min(1, (passo + scia) / ciclo) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (durata tipica di una scia sottodensa a 143 MHz ≈ {1:F1} s).	क्रम UTC समय से बँधा है (PE1ITR): 2021 से प्रत्येक चरण 0.8 s और एक सेक्टर का चक्र 4.8 s है; 2007 में ये 3.2 s और 19.2 s थे। नियंत्रण स्टेशन कभी-कभी क्रम को कुछ चरण खिसका देता है: विवरण एक पूर्वानुमान है जिसे सुनकर पुष्टि करनी चाहिए। ट्रेल तभी सुनाई देता है जब उसके रहते बीम उसे प्रकाशित करे: प्रायिकता ≈ min(1, (चरण + ट्रेल) / चक्र) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (143 MHz पर अल्प-घनत्व ट्रेल की सामान्य अवधि ≈ {1:F1} s)।
 Lato	पक्ष
 Lato A = a sinistra della tratta, B = a destra	पक्ष A = पथ के बाएँ, B = दाएँ
-Le lettere accanto alla percentuale dicono da quale lato della tratta arriva la maggior parte delle riflessioni. A = a SINISTRA guardando dalla tua stazione verso il corrispondente (zona Hot A); B = a DESTRA (zona Hot B). Conviene spostare l'antenna di 10-30° verso quel lato (side-scatter). Nessuna lettera = efficienza sotto il 5 %. Riga Σ: indice della tratta = somma di ZHR x efficienza di tutti gli sciami attivi. Righe azzurre: confronto con la formula di DH9GCD (DF5HC 2018). ↑ = radiante sopra 70° dalla tua stazione (troppo alto).	प्रतिशत के पास के अक्षर बताते हैं कि अधिकांश परावर्तन पथ के किस पक्ष से आते हैं। A = अपने स्टेशन से DX स्टेशन की ओर देखते हुए बाएँ (Hot A क्षेत्र); B = दाएँ (Hot B क्षेत्र)। ऐंटेना को उस पक्ष की ओर 10-30° घुमाना लाभदायक है (साइड-स्कैटर)। कोई अक्षर नहीं = दक्षता 5 % से कम। Σ पंक्ति: पथ सूचकांक = सभी सक्रिय उल्का वर्षाओं के ZHR x दक्षता का योग। हल्की नीली पंक्तियाँ: DH9GCD सूत्र (DF5HC 2018) से तुलना। ↑ = आपके स्टेशन से रेडिएंट 70° से ऊपर (बहुत ऊँचा)।
+Le lettere accanto alla percentuale dicono da quale lato della tratta arriva la maggior parte delle riflessioni. A = a SINISTRA guardando dalla tua stazione verso il corrispondente (zona Hot A); B = a DESTRA (zona Hot B). Conviene spostare l'antenna di 10-30° verso quel lato (side-scatter). Nessuna lettera = efficienza sotto il 5 %. Riga Σ: indice della tratta = somma di ZHR x efficienza di tutti gli sciami attivi. Righe azzurre: confronto con la formula di DH9GCD (DF5HC 2018). ↑ = radiante sopra 70° dalla tua stazione (troppo alto).	प्रतिशत के पास के अक्षर बताते हैं कि अधिकांश परावर्तन पथ के किस पक्ष से आते हैं। A = अपने स्टेशन से DX स्टेशन की ओर देखते हुए बाएँ (Hot A क्षेत्र); B = दाएँ (Hot B क्षेत्र)। एंटेना को उस पक्ष की ओर 10-30° घुमाना लाभदायक है (साइड-स्कैटर)। कोई अक्षर नहीं = दक्षता 5 % से कम। Σ पंक्ति: पथ सूचकांक = सभी सक्रिय उल्का वर्षाओं के ZHR x दक्षता का योग। हल्की नीली पंक्तियाँ: DH9GCD सूत्र (DF5HC 2018) से तुलना। ↑ = आपके स्टेशन से रेडिएंट 70° से ऊपर (बहुत ऊँचा)।
 Le righe evidenziate sono gli sciami attivi oggi (UTC)	हाइलाइट की गई पंक्तियाँ आज (UTC) सक्रिय उल्का वर्षाएँ हैं
 Legenda	संकेत-सूची
 Leonidi	लियोनिड्स
@@ -254,7 +254,7 @@ Misurato a Collm e traslato a {0} MHz - ieri {1} e oggi {2} (UTC)	Collm पर �
 Mondo	विश्व
 Monocerotidi di dicembre	दिसंबर मोनोसेरोटिड्स
 N	N
-N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durata delle riflessioni x ({1:F1}/{0:F0})^2 = x {5:F4}: un eco di 1 s a {1:F1} MHz dura circa {6:F0} ms a {0:F0} MHz (ping massimo IARU a {0:F0} MHz: {7:F0} ms).\nRegole sperimentali di SM6FHZ (VUSHF 2025). Il fattore K tiene conto della stazione ricevente (potenza, antenne): si ricava confrontando con un osservatore RMOB sulla stessa banda.	N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}।  परावर्तन अवधि x ({1:F1}/{0:F0})^2 = x {5:F4}: {1:F1} MHz पर 1 s का इको {0:F0} MHz पर लगभग {6:F0} ms रहता है ({0:F0} MHz पर IARU अधिकतम पिंग: {7:F0} ms)।\nSM6FHZ के प्रायोगिक नियम (VUSHF 2025)। गुणांक K प्राप्त करने वाले स्टेशन (शक्ति, ऐंटेना) को ध्यान में रखता है: इसे उसी बैंड के किसी RMOB पर्यवेक्षक से तुलना करके निकाला जाता है।
+N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durata delle riflessioni x ({1:F1}/{0:F0})^2 = x {5:F4}: un eco di 1 s a {1:F1} MHz dura circa {6:F0} ms a {0:F0} MHz (ping massimo IARU a {0:F0} MHz: {7:F0} ms).\nRegole sperimentali di SM6FHZ (VUSHF 2025). Il fattore K tiene conto della stazione ricevente (potenza, antenne): si ricava confrontando con un osservatore RMOB sulla stessa banda.	N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}।  परावर्तन अवधि x ({1:F1}/{0:F0})^2 = x {5:F4}: {1:F1} MHz पर 1 s का इको {0:F0} MHz पर लगभग {6:F0} ms रहता है ({0:F0} MHz पर IARU अधिकतम पिंग: {7:F0} ms)।\nSM6FHZ के प्रायोगिक नियम (VUSHF 2025)। गुणांक K प्राप्त करने वाले स्टेशन (शक्ति, एंटेना) को ध्यान में रखता है: इसे उसी बैंड के किसी RMOB पर्यवेक्षक से तुलना करके निकाला जाता है।
 Natural Earth - coste e confini 1:50 milioni, dominio pubblico, www.naturalearthdata.com (mappa d'Europa)	Natural Earth - 1:50 मिलियन तटरेखाएँ और सीमाएँ, सार्वजनिक डोमेन, www.naturalearthdata.com (यूरोप का मानचित्र)
 Nell'attenuazione (β = 90°, prudente): raggio iniziale della scia {0:F1} dB (r0 = {1:F2} m alla quota media ITU di {2:F1} km per {3:F0} MHz). Con la scia nel piano della tratta (β = 0°, caso migliore) l'attenuazione scende a {4:F1} dB ({5:F1} dB) e il margine sale a {6:+0.0;-0.0} dB	क्षीणन में (β = 90°, सावधान): ट्रेल की प्रारंभिक त्रिज्या {0:F1} dB ({3:F0} MHz के लिए ITU की औसत ऊँचाई {2:F1} km पर r0 = {1:F2} m)। जब ट्रेल पथ के तल में हो (β = 0°, सबसे अनुकूल स्थिति), तो क्षीणन घटकर {4:F1} dB ({5:F1} dB) हो जाता है और मार्जिन बढ़कर {6:+0.0;-0.0} dB हो जाता है
 Nero	काला
@@ -262,17 +262,17 @@ Nessun Hot consigliato: sciami attivi quasi assenti in questo momento	कोई 
 Nessun dato GMN: premi "Scarica adesso".	कोई GMN डेटा नहीं: "अभी डाउनलोड करें" दबाएँ।
 Nessun dato del radar: scaricalo dalla sottolinguetta Live e dati real-time › Flusso radar.	कोई रडार डेटा नहीं: इसे लाइव और रियल-टाइम डेटा › रडार फ्लक्स उप-टैब से डाउनलोड करें।
 Nessuna fonte Collm in fonti_radar.csv	fonti_radar.csv में कोई Collm स्रोत नहीं
-Nessuna scia prevista: sciami attivi sotto l'orizzonte o con efficienza nulla per questa tratta.	कोई ट्रेल अपेक्षित नहीं: सक्रिय उल्का वर्षाएँ क्षितिज से नीचे हैं या इस पथ के लिए शून्य दक्षता वाली हैं।
+Nessuna scia prevista: sciami attivi sotto l'orizzonte o con efficienza nulla per questa tratta.	कोई ट्रेल अपेक्षित नहीं: सक्रिय उल्का वर्षाएँ क्षितिज के नीचे हैं या इस पथ के लिए शून्य दक्षता वाली हैं।
 Nessuna zona comune dello strato E ({0})	E परत का कोई साझा क्षेत्र नहीं ({0})
 Nessuno sciame utile in questo momento	इस समय कोई उपयोगी उल्का वर्षा नहीं
 No	नहीं
 No: fuori dai settori	नहीं: सेक्टरों के बाहर
 No: sopra il fascio (circa 25°)	नहीं: बीम के ऊपर (लगभग 25°)
-No: sotto l'orizzonte di GRAVES	नहीं: GRAVES के क्षितिज से नीचे
+No: sotto l'orizzonte di GRAVES	नहीं: GRAVES के क्षितिज के नीचे
 Nominativo per il login	लॉगिन के लिए कॉलसाइन
 Non connesso	कनेक्ट नहीं
 Non ho riconosciuto il formato del file.	फ़ाइल का प्रारूप पहचाना नहीं गया।
-Non riesco a leggere la scala verticale del flusso (etichetta in cima: {0}): valori da verificare.	फ्लक्स का ऊर्ध्व स्केल पढ़ा नहीं जा सका (ऊपरी लेबल: {0}): मानों की जाँच आवश्यक।
+Non riesco a leggere la scala verticale del flusso (etichetta in cima: {0}): valori da verificare.	फ्लक्स का ऊर्ध्व स्केल पढ़ा नहीं जा सका (ऊपरी लेबल: {0}): मानों का सत्यापन आवश्यक।
 Non riesco ad aprire il documento: {0}	दस्तावेज़ खोला नहीं जा सका: {0}
 Non è un punto sulla mappa: è una rete mondiale di telecamere (soprattutto amatoriali) sparse in molti paesi di tutti i continenti.	यह मानचित्र पर एक बिंदु नहीं है: यह कैमरों (अधिकतर शौकिया) का एक विश्वव्यापी नेटवर्क है, जो सभी महाद्वीपों के कई देशों में फैला है।
 Nota: i dati dei radar appartengono ai rispettivi enti. Prima di distribuire il programma va chiesto il permesso di prelevarli automaticamente.	नोट: रडार डेटा संबंधित संस्थानों का है। प्रोग्राम वितरित करने से पहले उसे स्वचालित रूप से लेने की अनुमति माँगनी होगी।
@@ -306,7 +306,7 @@ Pegasidi di luglio	जुलाई पेगासिड्स
 Perseidi	पर्सिड्स
 Personalizzata	कस्टम
 Phoenicidi	फीनिसिड्स
-Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	ऊपरी दृश्य: पीली रेखा = चुनी गई (या सबसे अनुकूल) उल्का वर्षा का खिसकाव, PREV दीर्घवृत्त = जहाँ अभी सबसे संभावित ट्रेल पड़ते हैं। दाईं ओर आकाश गुंबद ({0} को UTC में उदय/अस्त): पीला = दक्षता >= 50 % और ZHR >= 2, नारंगी >= 20 %, धूसर = लगभग निष्क्रिय।
+Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	ऊपरी दृश्य: पीली रेखा = चुनी गई (या सबसे अनुकूल) उल्का वर्षा का खिसकाव, PREV दीर्घवृत्त = जहाँ अभी सबसे संभावित ट्रेल पड़ते हैं। दाईं ओर आकाश दृश्य ({0} को UTC में उदय/अस्त): पीला = दक्षता >= 50 % और ZHR >= 2, नारंगी >= 20 %, धूसर = लगभग निष्क्रिय।
 Piscidi di aprile diurne	दिवसकालीन अप्रैल पिसिड्स
 Porta	पोर्ट
 Portata alla quota delle scie con lobo a {0:F1}°: {1:F0} km	{0:F1}° पर लोब के साथ ट्रेल की ऊँचाई पर पहुँच: {1:F0} km
@@ -372,12 +372,12 @@ SCARTATO: frequenza sotto 27990,0 kHz.	अस्वीकृत: आवृत्
 SCARTATO: fuori dalle finestre MS e nessuna parola del filtro.	अस्वीकृत: MS विंडो से बाहर और फ़िल्टर का कोई शब्द नहीं।
 SCARTATO: il commento dichiara un'altra propagazione ({0}) e non c'è un modo MS.	अस्वीकृत: टिप्पणी किसी अन्य प्रसार ({0}) की घोषणा करती है और कोई MS मोड नहीं है।
 SCIAME PIÙ FAVOREVOLE	सबसे अनुकूल उल्का वर्षा
-SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az. {0}°)	अनुभाग - ऐंटेना से DX स्टेशन की ओर देखे गए सबसे संभावित ट्रेल (az. {0}°)
+SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az. {0}°)	अनुभाग - एंटेना से DX स्टेशन की ओर देखे गए सबसे संभावित ट्रेल (az. {0}°)
 SGO, Finlandia	SGO, फ़िनलैंड
 Scarica RMOB adesso	RMOB अभी डाउनलोड करें
 Scarica adesso	अभी डाउनलोड करें
 Scarta subito le righe del cluster sotto 27990,0 kHz (non compaiono nella console e non si memorizzano)	27990.0 kHz से नीचे की क्लस्टर पंक्तियाँ तुरंत हटाएँ (कंसोल में नहीं दिखतीं और सहेजी नहीं जातीं)
-Scarto d'antenna degli hot spot dalla tabella AMS di J. Richardson riportata da DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km. Togli la spunta per scrivere la distanza a mano (MSHV usa 150 km).	DJ5HG द्वारा उद्धृत J. Richardson की AMS तालिका से हॉट स्पॉट का ऐंटेना विचलन: 1000 km पर 13°, 1250 km पर 11°, 1500 और 2000 km पर 10°। दूरी हाथ से लिखने के लिए टिक हटाएँ (MSHV 150 km उपयोग करता है)।
+Scarto d'antenna degli hot spot dalla tabella AMS di J. Richardson riportata da DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km. Togli la spunta per scrivere la distanza a mano (MSHV usa 150 km).	DJ5HG द्वारा उद्धृत J. Richardson की AMS तालिका से हॉट स्पॉट का एंटेना विचलन: 1000 km पर 13°, 1250 km पर 11°, 1500 और 2000 km पर 10°। दूरी हाथ से लिखने के लिए टिक हटाएँ (MSHV 150 km उपयोग करता है)।
 Scia meteorica	उल्का ट्रेल
 Sciame	उल्का वर्षा
 Sciame più favorevole	सबसे अनुकूल उल्का वर्षा
@@ -407,7 +407,7 @@ Stazione	स्टेशन
 Stazione        {0}   quota {1:F0} m	स्टेशन          {0}   ऊँचाई {1:F0} m
 Stima sperimentale (regole SM6FHZ): meteore/ora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durata dei ping x {4:F3}. Ping massimo IARU a {0:F0} MHz: {5:F0} ms. Valori indicativi, da confrontare con l'esperienza in banda.{6}	प्रायोगिक अनुमान (SM6FHZ नियम): {0:F0} MHz पर उल्काएँ/घंटा = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; पिंग अवधि x {4:F3}। {0:F0} MHz पर IARU अधिकतम पिंग: {5:F0} ms। सांकेतिक मान, बैंड पर अनुभव से तुलना करें।{6}
 Svuota la tabella	तालिका खाली करें
-Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)	DL1DBC का Swan Meteor Skyview - swan.ms (आकाश गुंबद के ग्राफ़िक्स का संदर्भ)
+Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)	DL1DBC का Swan Meteor Skyview - swan.ms (आकाश दृश्य के ग्राफ़िक्स का संदर्भ)
 Sì	हाँ
 Sì · settore {0}	हाँ · सेक्टर {0}
 TRATTA	पथ
@@ -442,7 +442,7 @@ Vista dall'alto (E a destra)	ऊपरी दृश्य (पूर्व द�
 Waterfall	Waterfall
 Wikipedia, "GRAVES (system)" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)	Wikipedia, "GRAVES (system)" – ब्रोय-ले-पेम (Broye-lès-Pesmes) में ट्रांसमीटर (47.348° N 5.515° E)
 YA-MS - nessuna connessione	YA-MS - कोई कनेक्शन नहीं
-YAEC di IC8TEM – linguetta Radar GRAVES (bozzetto da cui è derivata)	IC8TEM का YAEC – Radar GRAVES टैब (जिस प्रारूप से यह बना है)
+YAEC di IC8TEM – linguetta Radar GRAVES (bozzetto da cui è derivata)	IC8TEM का YAEC – GRAVES रडार टैब (जिस प्रारूप से यह बना है)
 ZHR ora	ZHR अभी
 ZONA UTILE NEL FASCIO DI GRAVES	GRAVES बीम में उपयोगी क्षेत्र
 a DESTRA guardando verso il corrispondente	DX स्टेशन की ओर देखते हुए दाएँ
@@ -458,8 +458,8 @@ alfa-Capricornidi	अल्फ़ा कैप्रिकॉर्निड्�
 alfa-Centauridi	अल्फ़ा सेंटॉरिड्स
 alfa-Monocerotidi	अल्फ़ा मोनोसेरोटिड्स
 ant_radiante.csv: riga ignorata: {0}	ant_radiante.csv: पंक्ति छोड़ी गई: {0}
-antenna verso {0}: az {1:F0}° · el {2:F1}°\nGRAVES in linea diretta: az {3:F0}°	{0} की ओर ऐंटेना: az {1:F0}° · el {2:F1}°\nGRAVES सीधा पथ: az {3:F0}°
-antenna {0}°	ऐंटेना {0}°
+antenna verso {0}: az {1:F0}° · el {2:F1}°\nGRAVES in linea diretta: az {3:F0}°	{0} की ओर एंटेना: az {1:F0}° · el {2:F1}°\nGRAVES सीधा पथ: az {3:F0}°
+antenna {0}°	एंटेना {0}°
 auto (AMS)	स्वचालित (AMS)
 azimut rispetto al corrispondente	DX स्टेशन के सापेक्ष दिगंश
 beta-Tauridi diurne	दिवसकालीन बीटा टॉरिड्स
@@ -480,7 +480,7 @@ dati CC BY 4.0 (Vida et al. 2021, 2022)	डेटा CC BY 4.0 (Vida et al. 2021
 delta-Aquaridi Sud	दक्षिणी डेल्टा एक्वेरिड्स
 eco	इको
 eco attese ≈ {0:F0}/ora (sperimentale: previsione × fascio {1:F0} %)	अपेक्षित इको ≈ {0:F0}/घंटा (प्रायोगिक: पूर्वानुमान × बीम {1:F0} %)
-eco possibile (+{0:F1} s di scia)	संभावित इको (+{0:F1} s ट्रेल)
+eco possibile (+{0:F1} s di scia)	इको संभव (+{0:F1} s ट्रेल)
 effic. %	दक्षता %
 effic. < 20%	दक्षता < 20%
 effic. >= 20%	दक्षता >= 20%
@@ -517,7 +517,7 @@ lim. A	सीमा A
 lim. B	सीमा B
 limiti zona comune	साझा क्षेत्र की सीमाएँ
 linguetta "{0}"	टैब "{0}"
-lobo antenna	ऐंटेना लोब
+lobo antenna	एंटेना लोब
 lobo {0}°	लोब {0}°
 locale	स्थानीय
 mai scaricato	कभी डाउनलोड नहीं हुआ

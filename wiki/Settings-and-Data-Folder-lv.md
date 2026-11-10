@@ -16,18 +16,40 @@ Valodas vai tēmas maiņa saglabā iestatījumus un **pārbūvē logu** tajā pa
 
 ## Valoda
 
-Sešas saskarnes valodas:
+28 saskarnes valodas, tās pašas, kas YAEC un E-LAYER ANALYZER (ar YAEC kopīgie termini tulkoti vienādi):
 
 | Valoda | Kods | Fails |
 |---|---|---|
 | Italiano | `it` | nav: itāļu valoda ir bāzes valoda (atslēgas) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
-Pirmajā palaišanā YA-MS izmanto **sistēmas valodu**, ja tā ir viena no šīm, citādi itāļu. Skaitļi un datumi seko izvēlētajai valodai (piem. decimālpunkts angļu valodā, komats itāļu un vācu valodā). Jebkurš tulkojuma failā trūkstošs teksts tiek rādīts itāliski. Linux sistēmā japāņu valodai vajadzīgi piemēroti fonti: sk. [Problēmu risināšana](Troubleshooting-FAQ-lv#linux-japāņu-teksts-redzams-kā-kvadrātiņi).
+Pirmajā palaišanā YA-MS izmanto **sistēmas valodu**, ja tā ir viena no šīm, citādi itāļu. Skaitļi un datumi seko izvēlētajai valodai (piem. decimālpunkts angļu valodā, komats itāļu un vācu valodā). Jebkurš tulkojuma failā trūkstošs teksts tiek rādīts itāliski. Linux sistēmā ķīniešu, japāņu, korejiešu, arābu, ivrita, urdu, hindi un bengāļu valodai vajadzīgi piemēroti fonti (piem. Noto saimes): sk. [Problēmu risināšana](Troubleshooting-FAQ-lv#linux-japāņu-teksts-redzams-kā-kvadrātiņi).
 
 Dokuments [Efektivitāte - skaidrojums](Efficiency-Explanation-lv) un aprēķinu rokasgrāmata ir itāļu valodā.
 
@@ -100,7 +122,7 @@ Vienkāršs teksts, viens `key=value` rindā (rindas, kas sākas ar `#` vai `;`,
 | `elevazione_lobo_gradi` | 0 | Ziedlapiņas elevācija (°) |
 | `boom_m` | 4.6 | Yagi traverses garums (m) |
 | `hot_spot_km` | 150 | Hot A / Hot B attālums no viduspunkta (30–400 km) |
-| `lingua` | sistēmas / `it` | Valodas kods (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | sistēmas / `it` | Valodas kods (viens no 28 iepriekš minētajiem kodiem, piem. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Krāsu shēma: `chiaro` (Gaišs), `scuro` (Nakts), `nero` (Melns), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteora sliede) |
 | `carattere_pct` | 100 | Fonta izmērs (100–300 %) |
 | `comandi_visibili` | 1 | 1 = vadības rindas redzamas, 0 = sakļautas |

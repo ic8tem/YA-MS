@@ -22,7 +22,7 @@ Kjør `./installa.sh` fra den utpakkede mappen (ikke fra `~/YA-MS`). Noen skrive
 ## Visning
 
 ### Linux: japansk tekst vises som firkanter
-Systemet mangler CJK-skrifter. Installer **Noto CJK**-skriftene og start YA-MS på nytt:
+Systemet mangler CJK-skrifter (kinesisk, japansk, koreansk). Installer **Noto CJK**-skriftene og start YA-MS på nytt. Det samme skjer med arabisk, hebraisk, urdu, hindi og bengali: på Debian, Ubuntu og Raspberry Pi OS må du også installere `fonts-noto-core`.
 
 | Distribusjon | Kommando |
 |---|---|

@@ -16,18 +16,40 @@ Når du bytter språk eller tema, lagres innstillingene, og **vinduet bygges opp
 
 ## Språk
 
-Seks språk i grensesnittet:
+28 språk i grensesnittet, de samme som i YAEC og E-LAYER ANALYZER (termer som er felles med YAEC, er oversatt likt):
 
 | Språk | Kode | Fil |
 |---|---|---|
 | Italiano | `it` | ingen: italiensk er grunnspråket (nøklene) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
-Ved første oppstart bruker YA-MS **systemspråket** hvis det er ett av disse, ellers italiensk. Tall og datoer følger valgt språk (f.eks. desimalpunktum på engelsk, komma på italiensk og tysk). Tekst som mangler i en oversettelsesfil, vises på italiensk. På Linux krever japansk egnede skrifter: se [Feilsøking](Troubleshooting-FAQ-nb#linux-japansk-tekst-vises-som-firkanter).
+Ved første oppstart bruker YA-MS **systemspråket** hvis det er ett av disse, ellers italiensk. Tall og datoer følger valgt språk (f.eks. desimalpunktum på engelsk, komma på italiensk og tysk). Tekst som mangler i en oversettelsesfil, vises på italiensk. På Linux krever kinesisk, japansk, koreansk, arabisk, hebraisk, urdu, hindi og bengali egnede skrifter (f.eks. Noto-familiene): se [Feilsøking](Troubleshooting-FAQ-nb#linux-japansk-tekst-vises-som-firkanter).
 
 Dokumentet [Effektivitet - forklaring](Efficiency-Explanation-nb) og beregningshåndboken er på italiensk.
 
@@ -100,7 +122,7 @@ Ren tekst, én `key=value` per linje (linjer som begynner med `#` eller `;`, er 
 | `elevazione_lobo_gradi` | 0 | Lobeelevasjon (°) |
 | `boom_m` | 4.6 | Bomlengde for Yagien (m) |
 | `hot_spot_km` | 150 | Avstand fra Hot A / Hot B til midtpunktet (30–400 km) |
-| `lingua` | system / `it` | Språkkode (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | system / `it` | Språkkode (en av de 28 kodene ovenfor, f.eks. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Fargeskjema: `chiaro` (Lys), `scuro` (Natt), `nero` (Svart), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteorspor) |
 | `carattere_pct` | 100 | Skriftstørrelse (100–300 %) |
 | `comandi_visibili` | 1 | 1 = radene med kontroller vises, 0 = sammenfelt |

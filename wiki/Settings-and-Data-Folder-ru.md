@@ -16,18 +16,40 @@
 
 ## Язык
 
-Шесть языков интерфейса:
+28 языков интерфейса, те же, что в YAEC и E-LAYER ANALYZER (общие с YAEC термины переведены одинаково):
 
 | Язык | Код | Файл |
 |---|---|---|
 | Italiano | `it` | нет: итальянский – базовый язык (ключи) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
-При первом запуске YA-MS использует **язык системы**, если это один из перечисленных, иначе итальянский. Числа и даты следуют выбранному языку (например, десятичная точка в английском, запятая в итальянском, немецком и русском). Любой текст, отсутствующий в файле перевода, показывается на итальянском. В Linux для японского нужны подходящие шрифты: см. [Неполадки](Troubleshooting-FAQ-ru#linux-японский-текст-отображается-квадратиками).
+При первом запуске YA-MS использует **язык системы**, если это один из перечисленных, иначе итальянский. Числа и даты следуют выбранному языку (например, десятичная точка в английском, запятая в итальянском, немецком и русском). Любой текст, отсутствующий в файле перевода, показывается на итальянском. В Linux для китайского, японского, корейского, арабского, иврита, урду, хинди и бенгальского нужны подходящие шрифты (например, семейства Noto): см. [Неполадки](Troubleshooting-FAQ-ru#linux-японский-текст-отображается-квадратиками).
 
 Документ [Эффективность - пояснение](Efficiency-Explanation-ru) и руководство по расчётам написаны на итальянском.
 
@@ -100,7 +122,7 @@
 | `elevazione_lobo_gradi` | 0 | Угол места ДН (°) |
 | `boom_m` | 4.6 | Длина траверсы Яги (m) |
 | `hot_spot_km` | 150 | Расстояние Hot A / Hot B от средней точки (30–400 km) |
-| `lingua` | системный / `it` | Код языка (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | системный / `it` | Код языка (один из 28 кодов выше, например `it`, `en`, `de`) |
 | `tema` | `chiaro` | Цветовая схема: `chiaro` (Светлая), `scuro` (Ночь), `nero` (Чёрная), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Метеорный след) |
 | `carattere_pct` | 100 | Размер шрифта (100–300 %) |
 | `comandi_visibili` | 1 | 1 = ряды элементов управления показаны, 0 = свёрнуты |

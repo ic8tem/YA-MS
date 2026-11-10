@@ -22,7 +22,7 @@ Voer `./installa.sh` uit vanuit die uitgepakte gids (nie vanuit `~/YA-MS` nie). 
 ## Vertoning
 
 ### Linux: Japannese teks verskyn as blokkies
-Jou stelsel het nie CJK-lettertipes nie. Installeer die **Noto CJK**-lettertipes en begin YA-MS weer:
+Jou stelsel het nie CJK-lettertipes (Chinees, Japannees, Koreaans) nie. Installeer die **Noto CJK**-lettertipes en begin YA-MS weer. Dieselfde gebeur met Arabies, Hebreeus, Oerdoe, Hindi en Bengaals: installeer op Debian, Ubuntu en Raspberry Pi OS ook `fonts-noto-core`.
 
 | Distribusie | Opdrag |
 |---|---|

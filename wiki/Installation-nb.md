@@ -73,7 +73,7 @@ Programmet er ikke signert av Apple, så første gang ber macOS om bekreftelse; 
 
 - **Europakartet** (kystlinjer og grenser fra Natural Earth) lastes ned automatisk til `data/mappa` første gang: internettforbindelse trengs én gang.
 - **Radardataene** (Collm, Sodankylä) lastes ned med en gang og sjekkes deretter hvert 5. minutt.
-- Grensesnittet starter på systemspråket hvis det er ett av de seks tilgjengelige, ellers på italiensk; bytt det øverst til høyre (se [Innstillinger](Settings-and-Data-Folder-nb#språk)).
+- Grensesnittet starter på systemspråket hvis det er ett av de 28 tilgjengelige, ellers på italiensk; bytt det øverst til høyre (se [Innstillinger](Settings-and-Data-Folder-nb#språk)).
 
 ## Oppdatering
 

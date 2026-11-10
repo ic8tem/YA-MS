@@ -22,7 +22,7 @@ M1/M2/M3/M4 işlemciler için `-mac-apple-silicon.dmg`, Intel Mac'ler için `-ma
 ## Görüntü
 
 ### Linux: Japonca metin kutucuk olarak görünüyor
-Sisteminizde CJK yazı tipleri yok. **Noto CJK** yazı tiplerini kurun ve YA-MS'i yeniden başlatın:
+Sisteminizde CJK yazı tipleri (Çince, Japonca, Korece) yok. **Noto CJK** yazı tiplerini kurun ve YA-MS'i yeniden başlatın. Aynı durum Arapça, İbranice, Urduca, Hintçe ve Bengalce için de geçerlidir: Debian, Ubuntu ve Raspberry Pi OS'ta ayrıca `fonts-noto-core` paketini kurun.
 
 | Dağıtım | Komut |
 |---|---|

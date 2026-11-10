@@ -22,7 +22,7 @@ Führe `./installa.sh` im entpackten Ordner aus (nicht in `~/YA-MS`). Manche Des
 ## Anzeige
 
 ### Linux: Japanischer Text zeigt Kästchen
-Deinem System fehlen CJK-Schriften. Installiere die Schriften **Noto CJK** und starte YA-MS neu:
+Deinem System fehlen CJK-Schriften (Chinesisch, Japanisch, Koreanisch). Installiere die Schriften **Noto CJK** und starte YA-MS neu. Dasselbe passiert bei Arabisch, Hebräisch, Urdu, Hindi und Bengalisch: Unter Debian, Ubuntu und Raspberry Pi OS installiere zusätzlich `fonts-noto-core`.
 
 | Distribution | Befehl |
 |---|---|

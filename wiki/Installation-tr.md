@@ -73,7 +73,7 @@ Program Apple tarafından imzalanmamıştır, bu yüzden macOS ilk seferde onay 
 
 - **Avrupa haritası** (Natural Earth kıyı çizgileri ve sınırları) ilk seferde otomatik olarak `data/mappa` klasörüne indirilir: bir kez internet bağlantısı gerekir.
 - **Radar verileri** (Collm, Sodankylä) hemen indirilir, sonra her 5 dakikada bir denetlenir.
-- Arayüz, mevcut altı dilden biriyse sistem dilinizde, değilse İtalyanca açılır; sağ üstten değiştirin (bkz. [Ayarlar](Settings-and-Data-Folder-tr#dil)).
+- Arayüz, mevcut 28 dilden biriyse sistem dilinizde, değilse İtalyanca açılır; sağ üstten değiştirin (bkz. [Ayarlar](Settings-and-Data-Folder-tr#dil)).
 
 ## Güncelleme
 

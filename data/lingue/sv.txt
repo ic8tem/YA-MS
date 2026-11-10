@@ -100,7 +100,7 @@ Corrispondente  {0}   quota {1:F0} m	Motstation      {0}   höjd {1:F0} m
 Costantino Cerrotta IC8TEM, Gianluigi "Gigi" Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese" (articolo, versione 7).	Costantino Cerrotta IC8TEM, Gianluigi "Gigi" Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese" (artikel på italienska, version 7).
 D.W.R. McKinley - Meteor Science and Engineering, 1961 (equazione delle scie sottodense)	D.W.R. McKinley - Meteor Science and Engineering, 1961 (ekvationen för underdensa spår)
 DATI DEGLI SCIAMI	SVÄRMDATA
-DATI RADAR IN DIRETTA	RADARDATA I REALTID
+DATI RADAR IN DIRETTA	LIVE-RADARDATA
 DENTRO il lobo	INOM loben
 DM4X (PSKReporter)	DM4X (PSKReporter)
 DX cluster	DX cluster
@@ -627,7 +627,7 @@ zona PREV	PREV-zon
 {0} spot MS in memoria	{0} MS-spots i minnet
 {0} {1} - {2:F0} % alle {3} UTC ({4} ora locale)	{0} {1} - {2:F0} % kl. {3} UTC ({4} lokal tid)
 {0} · zona	{0} · zon
-{0}: non lavorato	{0}: ej körd
+{0}: non lavorato	{0}: inte körd
 {0}: {1}  az. da me {2:F0}° (scarto {3:+0;-0}°), dal corrispondente {4:F0}°, distanza {5:F0} km	{0}: {1}  az. från mig {2:F0}° (avvikelse {3:+0;-0}°), från motstationen {4:F0}°, avstånd {5:F0} km
 {0}: {1}  az. da me {2:F1}° (scarto {3:+0.0;-0.0}° dalla direzione diretta), dal corrispondente {4:F0}°, distanza {5:F0} km, elevazione {6:F1}°	{0}: {1}  az. från mig {2:F1}° (avvikelse {3:+0.0;-0.0}° från direktriktningen), från motstationen {4:F0}°, avstånd {5:F0} km, elevation {6:F1}°
 {0}: {1} QSO	{0}: {1} QSO

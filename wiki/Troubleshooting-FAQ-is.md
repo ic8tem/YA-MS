@@ -22,7 +22,7 @@ Keyrðu `./installa.sh` í afþjöppuðu möppunni (ekki í `~/YA-MS`). Sum skj�
 ## Skjámynd
 
 ### Linux: japanskur texti birtist sem kassar
-Kerfið þitt vantar CJK-letur. Settu upp **Noto CJK**-letrið og endurræstu YA-MS:
+Kerfið þitt vantar CJK-letur (kínverska, japanska, kóreska). Settu upp **Noto CJK**-letrið og endurræstu YA-MS. Það sama gerist með arabísku, hebresku, úrdú, hindí og bengölsku: á Debian, Ubuntu og Raspberry Pi OS skaltu einnig setja upp `fonts-noto-core`.
 
 | Dreifing | Skipun |
 |---|---|

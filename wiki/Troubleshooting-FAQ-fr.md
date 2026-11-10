@@ -22,7 +22,7 @@ Lancez `./installa.sh` depuis le dossier décompressé (pas depuis `~/YA-MS`). C
 ## Affichage
 
 ### Sous Linux, le texte japonais s'affiche en carrés
-Votre système n'a pas de polices CJK. Installez les polices **Noto CJK** et relancez YA-MS :
+Votre système n'a pas de polices CJK (chinois, japonais, coréen). Installez les polices **Noto CJK** et relancez YA-MS. Il en va de même pour l'arabe, l'hébreu, l'ourdou, le hindi et le bengali : sous Debian, Ubuntu et Raspberry Pi OS, installez aussi `fonts-noto-core`.
 
 | Distribution | Commande |
 |---|---|

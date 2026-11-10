@@ -73,7 +73,7 @@ Program tidak ditandatangani oleh Apple, sehingga pada kali pertama macOS memint
 
 - **Peta Eropa** (garis pantai dan perbatasan Natural Earth) diunduh otomatis ke `data/mappa` pada kali pertama: koneksi internet diperlukan sekali.
 - **Data radar** (Collm, Sodankylä) langsung diunduh, lalu diperiksa setiap 5 menit.
-- Antarmuka dimulai dalam bahasa sistem Anda jika termasuk salah satu dari enam bahasa yang tersedia, jika tidak dalam bahasa Italia; ubah di kanan atas (lihat [Pengaturan](Settings-and-Data-Folder-id#bahasa)).
+- Antarmuka dimulai dalam bahasa sistem Anda jika termasuk salah satu dari 28 bahasa yang tersedia, jika tidak dalam bahasa Italia; ubah di kanan atas (lihat [Pengaturan](Settings-and-Data-Folder-id#bahasa)).
 
 ## Pembaruan
 

@@ -232,7 +232,7 @@ Limite A	Limite A
 Limite B	Limite B
 Limiti zona comune: A {0:F0}° ({1:+0;-0}°), B {2:F0}° ({3:+0;-0}°)	Limites da zona comum: A {0:F0}° ({1:+0;-0}°), B {2:F0}° ({3:+0;-0}°)
 Lincidi di settembre	Línceidas de setembro
-Lingua dell'interfaccia	Idioma da interface
+Lingua dell'interfaccia	Língua da interface
 Liridi	Líridas
 Live e dati real-time	Em direto e dados em tempo real
 Loc DX	Loc DX
@@ -306,7 +306,7 @@ Pegasidi di luglio	Pegásidas de julho
 Perseidi	Perseidas
 Personalizzata	Personalizada
 Phoenicidi	Fenícidas
-Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	Planta: linha amarela = deslocação da chuva selecionada (ou da mais favorável), elipses PREV = onde caem agora os rastos mais prováveis. Abóbada celeste à direita (Nascer/Ocaso em UTC de {0}): amarelo = eficiência >= 50 % e ZHR >= 2, laranja >= 20 %, cinzento = quase inativa.
+Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	Planta: linha amarela = deslocação da chuva selecionada (ou da mais favorável), elipses PREV = onde caem agora os rastos mais prováveis. Abóbada celeste à direita (Nasce/Põe-se em UTC de {0}): amarelo = eficiência >= 50 % e ZHR >= 2, laranja >= 20 %, cinzento = quase inativa.
 Piscidi di aprile diurne	Piscídeas de abril diurnas
 Porta	Porta
 Portata alla quota delle scie con lobo a {0:F1}°: {1:F0} km	Alcance à altitude dos rastos com lóbulo a {0:F1}°: {1:F0} km
@@ -395,7 +395,7 @@ Sextantidi diurne	Sextântidas diurnas
 Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)	Shelby W8WN - qsl.net/w8wn/hscw (elevação e desvio ótimos)
 Sigla	Sigla
 Sono i bordi piu' lontani del cielo visto da entrambe le stazioni, non i punti da puntare.	São os limites mais afastados do céu visto por ambas as estações, não os pontos para onde apontar.
-Sorge	Nascer
+Sorge	Nasce
 Sorgente Antielio	Fonte Anti-helion
 Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	Desligada (prudente): cada rasto pesa com o seno da elevação do radiante, porque com o radiante baixo caem menos meteoros por km².\nLigada: como DJ5HG (2004), com o radiante baixo os rastos são mais longos (conta-se a espessura útil da camada, 15 km, dividida pelo seno da elevação, até 100 km) e cumprem mais vezes a lei da reflexão. Os dois efeitos compensam-se acima de cerca de 9° de elevação: a eficiência com o radiante baixo sobe, com o radiante alto não muda.
 Spot MS della linguetta "Raccolta dati". Per ogni contatto la nuvola indica dove si concentrano le scie più probabili per quella tratta e quell'ora (riflessione speculare, somma degli sciami attivi). Nuvole tratteggiate = solo meteore sporadiche. Gli spot con una stazione fuori dalla mappa non si disegnano; quelli appena arrivati (meno di 3 minuti) lampeggiano per un minuto.	Spots MS do separador "Recolha de dados". Para cada contacto a nuvem indica onde se concentram os rastos mais prováveis para esse percurso e essa hora (reflexão especular, soma das chuvas ativas). Nuvens tracejadas = apenas meteoros esporádicos. Os spots com uma estação fora do mapa não são desenhados; os acabados de chegar (menos de 3 minutos) piscam durante um minuto.
@@ -421,7 +421,7 @@ Tipo	Tipo
 Traffico MS in diretta · {0}	Tráfego MS em direto · {0}
 Traffico in diretta	Tráfego em direto
 Traffico meteor scatter in diretta	Tráfego meteor scatter em direto
-Tramonta	Ocaso
+Tramonta	Põe-se
 Traslato	Transposto
 Traslato {0}	Transposto {0}
 Tratta calcolata: {0:F0} km, {1} punti di riflessione campionati in {2:F1} s. {3}	Percurso calculado: {0:F0} km, {1} pontos de reflexão amostrados em {2:F1} s. {3}
@@ -434,7 +434,7 @@ USB su 143,049 MHz (nota a circa 1 kHz) oppure 143,050 MHz, AGC lento o spento, 
 Univ. Lipsia / IAP Kühlungsborn	Univ. de Leipzig / IAP Kühlungsborn
 Uno spot in queste finestre si accetta anche senza il nome del modo, tranne quando il commento dichiara un'altra propagazione con una di queste scritte:	Um spot nestas janelas é aceite mesmo sem o nome do modo, exceto quando o comentário declara outra propagação com uma destas etiquetas:
 Ursidi	Úrsidas
-Vale per gli spot fuori dalle finestre e per quelli con una scritta di altra propagazione: si tengono se contengono una delle parole accese, in maiuscolo, minuscolo o misto. MSK144, FSK441, PSK2K, JTMS e JT6M sono modi digitali usati solo per il meteor scatter: lo spot è MS di sicuro. <MS> indica genericamente che il collegamento è avvenuto via meteor scatter.	Aplica-se aos spots fora das janelas e aos que têm uma etiqueta de outra propagação: são mantidos se contiverem uma das palavras ativas, escrita em maiúsculas, minúsculas ou mista. MSK144, FSK441, PSK2K, JTMS e JT6M são modos digitais usados só para meteor scatter: o spot é MS com certeza. <MS> indica genericamente que o contacto foi feito via meteor scatter.
+Vale per gli spot fuori dalle finestre e per quelli con una scritta di altra propagazione: si tengono se contengono una delle parole accese, in maiuscolo, minuscolo o misto. MSK144, FSK441, PSK2K, JTMS e JT6M sono modi digitali usati solo per il meteor scatter: lo spot è MS di sicuro. <MS> indica genericamente che il collegamento è avvenuto via meteor scatter.	Aplica-se aos spots fora das janelas e aos que têm uma etiqueta de outra propagação: são mantidos se contiverem uma das palavras ativas, escrita em maiúsculas, minúsculas ou mista. MSK144, FSK441, PSK2K, JTMS e JT6M são modos digitais usados só para meteor scatter: o spot é MS com certeza. <MS> indica genericamente que a ligação foi feita via meteor scatter.
 Valori più prudenti, di partenza: quota delle scie misurata dal radar di Collm (casella "dal radar"), scie normali, angolo β acceso.\nConfronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo): in media 7 dB sotto, con lo stesso andamento orario (scarto di forma circa 3 dB).	Valores mais prudentes, definição inicial: altitude dos rastos medida pelo radar de Collm (caixa "do radar"), rastos normais, ângulo β ligado.\nComparação com as curvas de DJ5HG (Quadrântidas, percursos a partir de Hamburgo): em média 7 dB abaixo, com a mesma evolução horária (desvio de forma de cerca de 3 dB).
 Valori prudenti: scia che attraversa il piano della tratta (β = 90°, caso più sfavorevole), compreso il raggio iniziale della scia (ITU-R P.843) alla quota media degli echi per ciascuna frequenza	Valores prudentes: rasto que atravessa o plano do percurso (β = 90°, caso mais desfavorável), incluindo o raio inicial do rasto (ITU-R P.843) à altitude média dos ecos para cada frequência
 Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	Em direção ao hot spot recomendado do percurso GRAVES → si (quadro Percurso), com elevação baixa
@@ -469,7 +469,7 @@ calcolo della tratta GRAVES → te in corso...	cálculo do percurso GRAVES → s
 circumpolare	circumpolar
 clic destro =	clique direito =
 clic sinistro =	clique esquerdo =
-collegamento via meteor scatter	contacto via meteor scatter
+collegamento via meteor scatter	ligação via meteor scatter
 comandi dopo il login, separati da ;	comandos após o login, separados por ;
 comando da inviare (es. sh/dx 20)	comando a enviar (p. ex. sh/dx 20)
 confermato (QSL o LoTW)	confirmado (QSL ou LoTW)

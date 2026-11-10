@@ -96,7 +96,7 @@ Contatori	Contadores
 Conteggio	Recuento
 Controllo le fonti di dati esterne...	Comprobando las fuentes de datos externas...
 Corrispondente	Corresponsal
-Corrispondente  {0}   quota {1:F0} m	Corresponsal    {0}   altura {1:F0} m
+Corrispondente  {0}   quota {1:F0} m	Corresponsal    {0}   altitud {1:F0} m
 Costantino Cerrotta IC8TEM, Gianluigi "Gigi" Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese" (articolo, versione 7).	Costantino Cerrotta IC8TEM, Gianluigi "Gigi" Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese" (artículo en italiano, versión 7).
 D.W.R. McKinley - Meteor Science and Engineering, 1961 (equazione delle scie sottodense)	D.W.R. McKinley - Meteor Science and Engineering, 1961 (ecuación de las estelas subdensas)
 DATI DEGLI SCIAMI	DATOS DE LAS LLUVIAS
@@ -192,7 +192,7 @@ Hot spot dal punto medio km	Hot spot desde punto medio km
 I ping sono righe brevi vicino alla portante; le scie lunghe (overdense) sono più larghe e mostrano il Doppler	Los pings son rayas cortas cerca de la portadora; las estelas largas (sobredensas) son más anchas y muestran el Doppler
 IL CIELO VISTO DA GRAVES	EL CIELO VISTO DESDE GRAVES
 IMO {0} (giorno)	IMO {0} (día)
-Il corrispondente diventa GRAVES (JN27SI, quota 200 m) e la tratta principale viene ricalcolata	El corresponsal pasa a ser GRAVES (JN27SI, altura 200 m) y se recalcula el trayecto principal
+Il corrispondente diventa GRAVES (JN27SI, quota 200 m) e la tratta principale viene ricalcolata	El corresponsal pasa a ser GRAVES (JN27SI, altitud 200 m) y se recalcula el trayecto principal
 Il file scelto non e' un file locale.	El archivo elegido no es un archivo local.
 Il mio locator	Mi locator
 Ilkka Yrjola OH5IY - MS-Soft (concetto di efficienza dello sciame), www.kolumbus.fi/oh5iy (sito storico)	Ilkka Yrjola OH5IY - MS-Soft (concepto de eficiencia de la lluvia), www.kolumbus.fi/oh5iy (sitio histórico)
@@ -404,14 +404,14 @@ Spot da mostrare	Spots a mostrar
 Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LTE): nessun login, arrivano gia' con i locator di chi trasmette e di chi riceve. Un argomento per riga o separati da ;  formato pskr/filter/v2/banda/modo/call tx/call rx/... (+ = qualsiasi, # = il resto).	Spots de PSKReporter en directo por MQTT (mqtt.pskreporter.info, servicio de M0LTE): sin login, llegan ya con los locators de quien transmite y de quien recibe. Un tema por línea o separados por ;  formato pskr/filter/v2/banda/modo/indicativo tx/indicativo rx/... (+ = cualquiera, # = el resto).
 Spot meteor scatter raccolti (i più recenti in alto)	Spots meteor scatter recogidos (los más recientes arriba)
 Stazione	Estación
-Stazione        {0}   quota {1:F0} m	Estación        {0}   altura {1:F0} m
+Stazione        {0}   quota {1:F0} m	Estación        {0}   altitud {1:F0} m
 Stima sperimentale (regole SM6FHZ): meteore/ora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durata dei ping x {4:F3}. Ping massimo IARU a {0:F0} MHz: {5:F0} ms. Valori indicativi, da confrontare con l'esperienza in banda.{6}	Estimación experimental (reglas SM6FHZ): meteoros/hora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; duración de los pings x {4:F3}. Ping máximo IARU a {0:F0} MHz: {5:F0} ms. Valores orientativos, a comparar con la experiencia en banda.{6}
 Svuota la tabella	Vaciar la tabla
 Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)	Swan Meteor Skyview de DL1DBC - swan.ms (referencia para el gráfico de la bóveda celeste)
 Sì	Sí
 Sì · settore {0}	Sí · sector {0}
 TRATTA	TRAYECTO
-TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	TRAYECTO MÁS ALLÁ DEL HORIZONTE DE LA ESTELA: con las estelas a {0:F1} km el punto medio está {1:F1}° bajo el horizonte. Se necesitan estelas a al menos {2:F0} km de altura: contacto posible solo con las estelas más altas, eficiencias y atenuaciones están en el límite del modelo.
+TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	TRAYECTO MÁS ALLÁ DEL HORIZONTE DE LA ESTELA: con las estelas a {0:F1} km el punto medio está {1:F1}° bajo el horizonte. Se necesitan estelas a al menos {2:F0} km de altura: enlace posible solo con las estelas más altas, eficiencias y atenuaciones están en el límite del modelo.
 Tauridi Nord	Táuridas Norte
 Tauridi Sud	Táuridas Sur
 Tavistock, Ontario (Canada)	Tavistock, Ontario (Canadá)
@@ -434,7 +434,7 @@ USB su 143,049 MHz (nota a circa 1 kHz) oppure 143,050 MHz, AGC lento o spento, 
 Univ. Lipsia / IAP Kühlungsborn	Univ. de Leipzig / IAP Kühlungsborn
 Uno spot in queste finestre si accetta anche senza il nome del modo, tranne quando il commento dichiara un'altra propagazione con una di queste scritte:	Un spot en estas ventanas se acepta aunque no lleve el nombre del modo, salvo cuando el comentario declara otra propagación con una de estas etiquetas:
 Ursidi	Úrsidas
-Vale per gli spot fuori dalle finestre e per quelli con una scritta di altra propagazione: si tengono se contengono una delle parole accese, in maiuscolo, minuscolo o misto. MSK144, FSK441, PSK2K, JTMS e JT6M sono modi digitali usati solo per il meteor scatter: lo spot è MS di sicuro. <MS> indica genericamente che il collegamento è avvenuto via meteor scatter.	Se aplica a los spots fuera de las ventanas y a los que llevan una etiqueta de otra propagación: se conservan si contienen una de las palabras activadas, escrita en mayúsculas, minúsculas o mixta. MSK144, FSK441, PSK2K, JTMS y JT6M son modos digitales usados solo para meteor scatter: el spot es MS con seguridad. <MS> indica de forma genérica que el contacto se hizo vía meteor scatter.
+Vale per gli spot fuori dalle finestre e per quelli con una scritta di altra propagazione: si tengono se contengono una delle parole accese, in maiuscolo, minuscolo o misto. MSK144, FSK441, PSK2K, JTMS e JT6M sono modi digitali usati solo per il meteor scatter: lo spot è MS di sicuro. <MS> indica genericamente che il collegamento è avvenuto via meteor scatter.	Se aplica a los spots fuera de las ventanas y a los que llevan una etiqueta de otra propagación: se conservan si contienen una de las palabras activadas, escrita en mayúsculas, minúsculas o mixta. MSK144, FSK441, PSK2K, JTMS y JT6M son modos digitales usados solo para meteor scatter: el spot es MS con seguridad. <MS> indica de forma genérica que el enlace se hizo vía meteor scatter.
 Valori più prudenti, di partenza: quota delle scie misurata dal radar di Collm (casella "dal radar"), scie normali, angolo β acceso.\nConfronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo): in media 7 dB sotto, con lo stesso andamento orario (scarto di forma circa 3 dB).	Valores más prudentes, ajuste inicial: altura de las estelas medida por el radar de Collm (casilla "del radar"), estelas normales, ángulo β activado.\nComparación con las curvas de DJ5HG (Cuadrántidas, trayectos desde Hamburgo): en promedio 7 dB por debajo, con la misma evolución horaria (desviación de forma de unos 3 dB).
 Valori prudenti: scia che attraversa il piano della tratta (β = 90°, caso più sfavorevole), compreso il raggio iniziale della scia (ITU-R P.843) alla quota media degli echi per ciascuna frequenza	Valores prudentes: estela que atraviesa el plano del trayecto (β = 90°, caso más desfavorable), incluido el radio inicial de la estela (ITU-R P.843) a la altura media de los ecos para cada frecuencia
 Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	Hacia el hot spot recomendado del trayecto GRAVES → tú (recuadro Trayecto), con elevación baja
@@ -469,7 +469,7 @@ calcolo della tratta GRAVES → te in corso...	calculando el trayecto GRAVES →
 circumpolare	circumpolar
 clic destro =	clic derecho =
 clic sinistro =	clic izquierdo =
-collegamento via meteor scatter	contacto vía meteor scatter
+collegamento via meteor scatter	enlace vía meteor scatter
 comandi dopo il login, separati da ;	comandos tras el login, separados por ;
 comando da inviare (es. sh/dx 20)	comando a enviar (p. ej. sh/dx 20)
 confermato (QSL o LoTW)	confirmado (QSL o LoTW)
@@ -561,7 +561,7 @@ previsione {0} MHz /ora	previsión {0} MHz /hora
 puntamento migliore {0}° / {1}°	mejor apuntamiento {0}° / {1}°
 puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km	apuntar a {0:F0}° ({1:+0;-0}° desde el corresponsal), elevación {2:F1}°, hot spot a {3:F0} km
 quasi inattivo	casi inactiva
-quota m	altura m
+quota m	altitud m
 radar SKiYMET 36,2 MHz	radar SKiYMET 36,2 MHz
 radar meteorico 17-38 MHz, orbite	radar meteórico 17-38 MHz, órbitas
 radar meteorico 36,9 MHz	radar meteórico 36,9 MHz

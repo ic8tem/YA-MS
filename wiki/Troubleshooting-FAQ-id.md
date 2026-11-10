@@ -22,7 +22,7 @@ Jalankan `./installa.sh` dari folder hasil ekstrak (bukan dari `~/YA-MS`). Beber
 ## Tampilan
 
 ### Linux: teks Jepang tampil sebagai kotak
-Sistem Anda tidak memiliki font CJK. Pasang font **Noto CJK** lalu jalankan ulang YA-MS:
+Sistem Anda tidak memiliki font CJK (Tionghoa, Jepang, Korea). Pasang font **Noto CJK** lalu jalankan ulang YA-MS. Hal yang sama terjadi pada bahasa Arab, Ibrani, Urdu, Hindi, dan Bengali: di Debian, Ubuntu, dan Raspberry Pi OS pasang juga `fonts-noto-core`.
 
 | Distribusi | Perintah |
 |---|---|

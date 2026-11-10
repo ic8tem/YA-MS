@@ -5,7 +5,7 @@
 (destra)  B →	(праворуч)  B →
 (lettura Collm: {0})	(за даними Collm: {0})
 (stima poco precisa sotto 2 λ)	(неточна оцінка при довжині менше 2 λ)
--> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto (servono scie ad almeno {0:F0} km)	-> середня точка нижче горизонту на висоті слідів: траса довша за геометричну дальність одного стрибка (потрібні сліди на висоті щонайменше {0:F0} km)
+-> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto (servono scie ad almeno {0:F0} km)	-> середня точка під горизонтом на висоті слідів: траса довша за геометричну дальність одного стрибка (потрібні сліди на висоті щонайменше {0:F0} km)
 0,8 s per passo · ciclo 4,8 s (PE1ITR 2021)	0,8 с на крок · цикл 4,8 с (PE1ITR 2021)
 1° criterio: frequenze tipiche degli spot meteor scatter (kHz)	1-й критерій: типові частоти спотів meteor scatter (kHz)
 2° criterio: modi digitali MS e <MS>	2-й критерій: цифрові режими MS і <MS>
@@ -100,7 +100,7 @@ Corrispondente  {0}   quota {1:F0} m	Кореспондент    {0}   висо�
 Costantino Cerrotta IC8TEM, Gianluigi "Gigi" Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese" (articolo, versione 7).	Costantino Cerrotta IC8TEM, Gianluigi "Gigi" Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese" (стаття італійською, версія 7).
 D.W.R. McKinley - Meteor Science and Engineering, 1961 (equazione delle scie sottodense)	D.W.R. McKinley - Meteor Science and Engineering, 1961 (рівняння недощільних слідів)
 DATI DEGLI SCIAMI	ДАНІ ПОТОКІВ
-DATI RADAR IN DIRETTA	ДАНІ РАДАРІВ У РЕАЛЬНОМУ ЧАСІ
+DATI RADAR IN DIRETTA	ДАНІ РАДАРІВ НАЖИВО
 DENTRO il lobo	УСЕРЕДИНІ пелюстки
 DM4X (PSKReporter)	DM4X (PSKReporter)
 DX cluster	DX cluster
@@ -119,7 +119,7 @@ Distanza        {0:F0} km   azimut {1:F1}°   (dal corrispondente {2:F1}°)	Ві
 Documenti tecnici	Технічні документи
 Documento Word	Документ Word
 Documento esportato: {0}	Документ експортовано: {0}
-Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	Де розташовані джерела даних у реальному часі. Пунктирні кола = ділянка неба, яку бачить радар (близько 300 km навколо станції, сліди на висоті 90 km): жоден радар не дивиться на небо над вашою трасою, дані показують, наскільки активний потік. Точкові лінії = відстань від вашої станції.
+Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	Де розташовані джерела даних наживо. Пунктирні кола = ділянка неба, яку бачить радар (близько 300 km навколо станції, сліди на висоті 90 km): жоден радар не дивиться на небо над вашою трасою, дані показують, наскільки активний потік. Точкові лінії = відстань від вашої станції.
 Draconidi di ottobre	Жовтневі Драконіди
 E	Сх
 EFFICIENZA DELLA TRATTA GRAVES → TE ADESSO	ЕФЕКТИВНІСТЬ ТРАСИ GRAVES → ВИ ЗАРАЗ
@@ -154,7 +154,7 @@ Filtro	Фільтр
 Filtro degli spot meteor scatter	Фільтр спотів meteor scatter
 Finestra utile	Корисне вікно
 Flusso radar	Потік за радаром
-Flusso radar: nessun dato. Premi "Scarica adesso".	Потік за радаром: даних немає. Натисніть «Завантажити зараз».
+Flusso radar: nessun dato. Premi "Scarica adesso".	Потік за радаром: немає даних. Натисніть «Завантажити зараз».
 Fonte	Джерело
 Fonte del massimo	Джерело максимуму
 Fonti	Джерела
@@ -262,13 +262,13 @@ Nessun Hot consigliato: sciami attivi quasi assenti in questo momento	Немає
 Nessun dato GMN: premi "Scarica adesso".	Даних GMN немає: натисніть «Завантажити зараз».
 Nessun dato del radar: scaricalo dalla sottolinguetta Live e dati real-time › Flusso radar.	Немає даних радара: завантажте їх на підвкладці «Наживо та дані в реальному часі › Потік за радаром».
 Nessuna fonte Collm in fonti_radar.csv	Немає джерела Collm у fonti_radar.csv
-Nessuna scia prevista: sciami attivi sotto l'orizzonte o con efficienza nulla per questa tratta.	Сліди не очікуються: активні потоки нижче горизонту або з нульовою ефективністю для цієї траси.
+Nessuna scia prevista: sciami attivi sotto l'orizzonte o con efficienza nulla per questa tratta.	Сліди не очікуються: активні потоки під горизонтом або з нульовою ефективністю для цієї траси.
 Nessuna zona comune dello strato E ({0})	Немає спільної зони шару E ({0})
 Nessuno sciame utile in questo momento	Зараз немає корисних потоків
 No	Ні
 No: fuori dai settori	Ні: поза секторами
 No: sopra il fascio (circa 25°)	Ні: вище променя (близько 25°)
-No: sotto l'orizzonte di GRAVES	Ні: нижче горизонту GRAVES
+No: sotto l'orizzonte di GRAVES	Ні: під горизонтом GRAVES
 Nominativo per il login	Позивний для входу
 Non connesso	Не підключено
 Non ho riconosciuto il formato del file.	Формат файлу не розпізнано.
@@ -401,7 +401,7 @@ Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perc
 Spot MS della linguetta "Raccolta dati". Per ogni contatto la nuvola indica dove si concentrano le scie più probabili per quella tratta e quell'ora (riflessione speculare, somma degli sciami attivi). Nuvole tratteggiate = solo meteore sporadiche. Gli spot con una stazione fuori dalla mappa non si disegnano; quelli appena arrivati (meno di 3 minuti) lampeggiano per un minuto.	MS-споти з вкладки «Збір даних». Для кожного зв'язку хмара показує, де зосереджуються найімовірніші сліди для цієї траси й цієї години (дзеркальне відбиття, сума активних потоків). Пунктирні хмари = лише спорадичні метеори. Споти, у яких станція поза мапою, не малюються; щойно отримані (менше 3 хвилин) блимають одну хвилину.
 Spot MS raccolti	Зібрані MS-споти
 Spot da mostrare	Споти для показу
-Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LTE): nessun login, arrivano gia' con i locator di chi trasmette e di chi riceve. Un argomento per riga o separati da ;  formato pskr/filter/v2/banda/modo/call tx/call rx/... (+ = qualsiasi, # = il resto).	Споти PSKReporter у реальному часі через MQTT (mqtt.pskreporter.info, сервіс M0LTE): без входу, споти надходять одразу з локаторами передавальної та приймальної станції. Одна тема в рядку або через ;  формат pskr/filter/v2/діапазон/вид/позивний tx/позивний rx/... (+ = будь-який, # = решта).
+Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LTE): nessun login, arrivano gia' con i locator di chi trasmette e di chi riceve. Un argomento per riga o separati da ;  formato pskr/filter/v2/banda/modo/call tx/call rx/... (+ = qualsiasi, # = il resto).	Споти PSKReporter наживо через MQTT (mqtt.pskreporter.info, сервіс M0LTE): без входу, споти надходять одразу з локаторами передавальної та приймальної станції. Одна тема в рядку або через ;  формат pskr/filter/v2/діапазон/вид/позивний tx/позивний rx/... (+ = будь-який, # = решта).
 Spot meteor scatter raccolti (i più recenti in alto)	Зібрані споти meteor scatter (найновіші вгорі)
 Stazione	Станція
 Stazione        {0}   quota {1:F0} m	Станція         {0}   висота {1:F0} m
@@ -411,7 +411,7 @@ Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta 
 Sì	Так
 Sì · settore {0}	Так · сектор {0}
 TRATTA	ТРАСА
-TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	ТРАСА ЗА ГОРИЗОНТОМ СЛІДІВ: за слідів на висоті {0:F1} km середня точка на {1:F1}° нижче горизонту. Потрібні сліди на висоті щонайменше {2:F0} km: зв'язок можливий лише через найвищі сліди, ефективність і загасання на межі моделі.
+TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	ТРАСА ЗА ГОРИЗОНТОМ СЛІДІВ: за слідів на висоті {0:F1} km середня точка на {1:F1}° під горизонтом. Потрібні сліди на висоті щонайменше {2:F0} km: зв'язок можливий лише через найвищі сліди, ефективність і загасання на межі моделі.
 Tauridi Nord	Північні Тауриди
 Tauridi Sud	Південні Тауриди
 Tavistock, Ontario (Canada)	Tavistock, Онтаріо (Канада)
@@ -452,7 +452,7 @@ a cura di Costantino IC8TEM	автор Costantino IC8TEM
 accettati per finestra di frequenza: {0}	прийнято за частотним вікном: {0}
 adesso	зараз
 adesso {0}	зараз {0}
-adesso · ancora {0:F1} s	зараз · залишилось {0:F1} с
+adesso · ancora {0:F1} s	зараз · ще {0:F1} с
 aggiornamento una volta al giorno	оновлення раз на добу
 alfa-Capricornidi	альфа-Капрікорніди
 alfa-Centauridi	альфа-Центавриди
@@ -480,7 +480,7 @@ dati CC BY 4.0 (Vida et al. 2021, 2022)	дані CC BY 4.0 (Vida et al. 2021, 20
 delta-Aquaridi Sud	Південні дельта-Акваріди
 eco	відлуння
 eco attese ≈ {0:F0}/ora (sperimentale: previsione × fascio {1:F0} %)	очікувані відлуння ≈ {0:F0}/год (експериментально: прогноз × промінь {1:F0} %)
-eco possibile (+{0:F1} s di scia)	можливе відлуння (+{0:F1} с сліду)
+eco possibile (+{0:F1} s di scia)	відлуння можливе (+{0:F1} с сліду)
 effic. %	ефект. %
 effic. < 20%	ефект. < 20%
 effic. >= 20%	ефект. >= 20%

@@ -22,7 +22,7 @@ Execute `./installa.sh` a partir da pasta extraída (não a partir de `~/YA-MS`)
 ## Visualização
 
 ### Linux: o texto japonês aparece como quadradinhos
-Faltam fontes CJK no sistema. Instale as fontes **Noto CJK** e reinicie o YA-MS:
+Faltam fontes CJK (chinês, japonês, coreano) no sistema. Instale as fontes **Noto CJK** e reinicie o YA-MS. O mesmo acontece com o árabe, o hebraico, o urdu, o hindi e o bengali: no Debian, Ubuntu e Raspberry Pi OS instale também `fonts-noto-core`.
 
 | Distribuição | Comando |
 |---|---|

@@ -73,7 +73,7 @@ Programmu nav parakstījis Apple, tāpēc pirmo reizi macOS prasa apstiprinājum
 
 - **Eiropas karte** (Natural Earth krasta līnijas un robežas) pirmajā reizē tiek automātiski lejupielādēta mapē `data/mappa`: interneta savienojums vajadzīgs vienu reizi.
 - **Radaru dati** (Collm, Sodankylä) tiek lejupielādēti uzreiz un pēc tam pārbaudīti ik pēc 5 minūtēm.
-- Saskarne startē tavas sistēmas valodā, ja tā ir viena no sešām pieejamajām, citādi itāļu valodā; to var mainīt augšā pa labi (sk. [Iestatījumi](Settings-and-Data-Folder-lv#valoda)).
+- Saskarne startē tavas sistēmas valodā, ja tā ir viena no 28 pieejamajām, citādi itāļu valodā; to var mainīt augšā pa labi (sk. [Iestatījumi](Settings-and-Data-Folder-lv#valoda)).
 
 ## Atjaunināšana
 

@@ -18,29 +18,29 @@ ACCETTATO per "{0}": {1} da {2}, {3} MHz	TINANGGAP para sa "{0}": {1} ni {2}, {3
 ADESSO	NGAYON
 ADIF: {0} ({1} quadrati-QSO)	ADIF: {0} ({1} grid square ng QSO)
 ALTRI RIFERIMENTI DELL'ARTICOLO	IBA PANG SANGGUNIAN NG ARTIKULO
-ATTENUAZIONE DI TRATTA (scia sottodensa, McKinley 1961 e ITU-R P.843; guadagni d'antenna esclusi)	PATH LOSS NG LANDAS (underdense na bakas, McKinley 1961 at ITU-R P.843; hindi kasama ang gain ng antenna)
+ATTENUAZIONE DI TRATTA (scia sottodensa, McKinley 1961 e ITU-R P.843; guadagni d'antenna esclusi)	PATH LOSS NG LANDAS (underdense na bakas, McKinley 1961 at ITU-R P.843; hindi kasama ang gain ng antena)
 ATTENZIONE: {0}	BABALA: {0}
-ATTENZIONE: {0} e {1} entrano nel lobo dell'antenna ({2}° a -3 dB attorno a {3}°): con questo puntamento sono gia' coperti. Segnati in grigio sulla mappa.	BABALA: ang {0} at {1} ay pasok sa lobe ng antenna ({2}° sa -3 dB sa paligid ng {3}°): sa tutok na ito ay sakop na sila. Kulay abo sa mapa.
-ATTENZIONE: {0} entra nel lobo dell'antenna ({1}° a -3 dB attorno a {2}°): con questo puntamento e' gia' coperto. Segnati in grigio sulla mappa.	BABALA: ang {0} ay pasok sa lobe ng antenna ({1}° sa -3 dB sa paligid ng {2}°): sa tutok na ito ay sakop na ito. Kulay abo sa mapa.
-Accesa (prudente, di partenza): la potenza di ogni scia segue la formula completa di McKinley e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ): le scie che attraversano il piano della tratta valgono 10-15 dB meno di quelle che vi giacciono, e nessuna scia è sopravvalutata.\nEffetto: prevalgono i radianti allineati alla tratta, non quelli perpendicolari; le curve di DJ5HG seguono meglio l'andamento orario, con i minimi profondi quando il radiante è basso.\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6: segue la regola dei radianti perpendicolari alla tratta (SM6FHZ, DH9GCD), ma sopravvaluta le scie che attraversano il piano.	Naka-on (maingat, panimulang setting): ang power ng bawat bakas ay sumusunod sa buong pormula ni McKinley at ng ITU-R P.843, 1 / (1 − cos²β sin²φ): ang mga bakas na tumatawid sa plane ng landas ay 10-15 dB na mas mahina kaysa sa mga nakahiga rito, at walang bakas na sobrang tinataya.\nEpekto: nangingibabaw ang mga radiant na nakahanay sa landas, hindi ang mga patayo; mas nasusundan ang mga kurba ni DJ5HG oras-oras, na may malalalim na minimum kapag mababa ang radiant.\nNaka-off: bawat bakas ay tinitimbang na parang nasa plane ng landas (β = 0), gaya hanggang bersiyon 1.6: sumusunod sa tuntunin ng mga radiant na patayo sa landas (SM6FHZ, DH9GCD), pero sobrang tinataya ang mga bakas na tumatawid sa plane.
+ATTENZIONE: {0} e {1} entrano nel lobo dell'antenna ({2}° a -3 dB attorno a {3}°): con questo puntamento sono gia' coperti. Segnati in grigio sulla mappa.	BABALA: ang {0} at {1} ay pasok sa lobe ng antena ({2}° sa -3 dB sa paligid ng {3}°): sa tutok na ito ay sakop na sila. Kulay abo sa mapa.
+ATTENZIONE: {0} entra nel lobo dell'antenna ({1}° a -3 dB attorno a {2}°): con questo puntamento e' gia' coperto. Segnati in grigio sulla mappa.	BABALA: ang {0} ay pasok sa lobe ng antena ({1}° sa -3 dB sa paligid ng {2}°): sa tutok na ito ay sakop na ito. Kulay abo sa mapa.
+Accesa (prudente, di partenza): la potenza di ogni scia segue la formula completa di McKinley e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ): le scie che attraversano il piano della tratta valgono 10-15 dB meno di quelle che vi giacciono, e nessuna scia è sopravvalutata.\nEffetto: prevalgono i radianti allineati alla tratta, non quelli perpendicolari; le curve di DJ5HG seguono meglio l'andamento orario, con i minimi profondi quando il radiante è basso.\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6: segue la regola dei radianti perpendicolari alla tratta (SM6FHZ, DH9GCD), ma sopravvaluta le scie che attraversano il piano.	Naka-on (maingat, panimulang setting): ang power ng bawat bakas ay sumusunod sa buong formula ni McKinley at ng ITU-R P.843, 1 / (1 − cos²β sin²φ): ang mga bakas na tumatawid sa plane ng landas ay 10-15 dB na mas mahina kaysa sa mga nakahiga rito, at walang bakas na sobrang tinataya.\nEpekto: nangingibabaw ang mga radiant na nakahanay sa landas, hindi ang mga patayo; mas nasusundan ang mga kurba ni DJ5HG oras-oras, na may malalalim na minimum kapag mababa ang radiant.\nNaka-off: bawat bakas ay tinitimbang na parang nasa plane ng landas (β = 0), gaya hanggang bersiyon 1.6: sumusunod sa tuntunin ng mga radiant na patayo sa landas (SM6FHZ, DH9GCD), pero sobrang tinataya ang mga bakas na tumatawid sa plane.
 Adesso	Ngayon
-Aggiornamento automatico di tutte le fonti ogni 5 minuti	Awtomatikong pag-update ng lahat ng sanggunian bawat 5 minuto
+Aggiornamento automatico di tutte le fonti ogni 5 minuti	Awtomatikong pag-update ng lahat ng source bawat 5 minuto
 Aggiungi	Idagdag
 Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, quando CALL3 ha il locator a 6 caratteri.	Kinukuha rin mula sa CALL3 ang mga di-tiyak na locator (4 na karakter lamang), kapag may 6-karakter na locator ang CALL3.
 Andromedidi	Andromedids
 Angolo β tra scia e tratta (McKinley completo)	Anggulong β sa pagitan ng bakas at landas (buong McKinley)
 Antenna	Antena
-Antenna Yagi: boom m	Yagi antenna: boom m
-Antenna Yagi: boom {0:F2} m = {1:F2} lambda a {2:F0} MHz -> guadagno {3:F1} dBi (curva DL6WU),\n  lobo a -3 dB {4:F0}° orizzontale / {5:F0}° verticale (Kraus corretto con le simulazioni NEC di W4RNL)	Yagi antenna: boom {0:F2} m = {1:F2} lambda sa {2:F0} MHz -> gain {3:F1} dBi (kurba ng DL6WU),\n  lobe sa -3 dB {4:F0}° pahalang / {5:F0}° patayo (Kraus na itinama gamit ang NEC simulation ni W4RNL)
-Antenna az: -	Antenna az: -
-Antenna az: {0}° (verso il DX)	Antenna az: {0}° (patungo sa DX)
+Antenna Yagi: boom m	Yagi antena: boom m
+Antenna Yagi: boom {0:F2} m = {1:F2} lambda a {2:F0} MHz -> guadagno {3:F1} dBi (curva DL6WU),\n  lobo a -3 dB {4:F0}° orizzontale / {5:F0}° verticale (Kraus corretto con le simulazioni NEC di W4RNL)	Yagi antena: boom {0:F2} m = {1:F2} lambda sa {2:F0} MHz -> gain {3:F1} dBi (kurba ng DL6WU),\n  lobe sa -3 dB {4:F0}° pahalang / {5:F0}° patayo (Kraus na itinama gamit ang NEC simulation ni W4RNL)
+Antenna az: -	Antena az: -
+Antenna az: {0}° (verso il DX)	Antena az: {0}° (patungo sa DX)
 Apri in Word	Buksan sa Word
 Apri la cartella degli spot	Buksan ang folder ng mga spot
 Argomenti di partenza	Mga default na topic
 Arietidi di maggio Sud diurne	Southern May Arietids sa araw
 Arietidi diurne	Arietids sa araw
 Assi del flusso non trovati nella posizione attesa.	Hindi nakita ang mga axis ng flux sa inaasahang posisyon.
-Attenuazione {0:F1} dB -> segnale in antenna {1:F1} dBm, minimo ricevibile {2:F0} dBm, margine {3:+0.0;-0.0} dB	Path loss {0:F1} dB -> signal sa antenna {1:F1} dBm, pinakamababang matatanggap {2:F0} dBm, margin {3:+0.0;-0.0} dB
+Attenuazione {0:F1} dB -> segnale in antenna {1:F1} dBm, minimo ricevibile {2:F0} dBm, margine {3:+0.0;-0.0} dB	Path loss {0:F1} dB -> signal sa antena {1:F1} dBm, pinakamababang matatanggap {2:F0} dBm, margin {3:+0.0;-0.0} dB
 Attività	Aktibidad
 Attuazione sperimentale previsioni	Eksperimental na pagtataya
 Aurigidi	Aurigids
@@ -53,7 +53,7 @@ Bootidi di giugno	June Bootids
 CALCOLO E TEORIA DELL'EFFICIENZA	EPISYENSYA: KALKULASYON AT TEORYA
 CALL3: caricamento...	CALL3: naglo-load...
 CALL3: nessun archivio (data/call3.txt)	CALL3: walang archive (data/call3.txt)
-CALL3: {0:N0} nominativi	CALL3: {0:N0} callsign
+CALL3: {0:N0} nominativi	CALL3: {0:N0} call sign
 CMOR, Canadian Meteor Orbit Radar (University of Western Ontario, NASA Meteoroid Environment Office) - fireballs.ndc.nasa.gov/cmor-radiants: mappe dei radianti	CMOR, Canadian Meteor Orbit Radar (University of Western Ontario, NASA Meteoroid Environment Office) - fireballs.ndc.nasa.gov/cmor-radiants: mga mapa ng radiant
 COME ASCOLTARE I PING DI GRAVES	PAANO MARINIG ANG MGA PING NG GRAVES
 CONNESSIONE INTERNET ASSENTE: dati esterni non aggiornati (nuovo tentativo tra 5 minuti)	WALANG KONEKSIYON SA INTERNET: hindi na-update ang panlabas na datos (susubok muli sa loob ng 5 minuto)
@@ -67,7 +67,7 @@ Calcolo previsionale	Kalkulasyon ng pagtataya
 Camelopardalidi di ottobre	October Camelopardalids
 Cancella memoria	Burahin ang memorya
 Cancellare tutti i quadrati caricati dal file ADIF?	Burahin ang lahat ng grid square na ikinarga mula sa ADIF file?
-Capitoli: introduzione, strato E, geometria, radiante, riflessione, efficienza, lettura dei risultati, frequenza, limiti, fonti	Mga kabanata: panimula, E layer, heometriya, radiant, repleksiyon, episyensya, pagbasa ng resulta, frequency, mga limitasyon, mga sanggunian
+Capitoli: introduzione, strato E, geometria, radiante, riflessione, efficienza, lettura dei risultati, frequenza, limiti, fonti	Mga kabanata: panimula, E layer, heometriya, radiant, repleksiyon, episyensya, pagbasa ng resulta, frequency, mga limitasyon, mga source
 Carattere	Font
 Carica file ADIF...	Ikarga ang ADIF file...
 Carica file RMOB dal disco...	Ikarga ang RMOB file mula sa disk...
@@ -94,9 +94,9 @@ Connetti	Kumonekta
 Connetti all'avvio	Kumonekta sa pagsisimula
 Contatori	Mga counter
 Conteggio	Pagbilang
-Controllo le fonti di dati esterne...	Sinusuri ang mga panlabas na sanggunian ng datos...
+Controllo le fonti di dati esterne...	Sinusuri ang mga panlabas na source ng datos...
 Corrispondente	DX station
-Corrispondente  {0}   quota {1:F0} m	DX station      {0}   taas {1:F0} m
+Corrispondente  {0}   quota {1:F0} m	DX station      {0}   altitude {1:F0} m
 Costantino Cerrotta IC8TEM, Gianluigi "Gigi" Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese" (articolo, versione 7).	Costantino Cerrotta IC8TEM, Gianluigi "Gigi" Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese" (artikulo sa Italyano, bersiyon 7).
 D.W.R. McKinley - Meteor Science and Engineering, 1961 (equazione delle scie sottodense)	D.W.R. McKinley - Meteor Science and Engineering, 1961 (ekwasyon ng underdense na bakas)
 DATI DEGLI SCIAMI	DATOS NG MGA SHOWER
@@ -105,9 +105,9 @@ DENTRO il lobo	LOOB ng lobe
 DM4X (PSKReporter)	DM4X (PSKReporter)
 DX cluster	DX cluster
 DX cluster a scelta	DX cluster na iyong pinili
-Da qui: scie nello strato E a circa 90 km (radar SKiYMET), formula dell'elevazione, Hot A / Hot B, side-scatter, attenuazione di tratta, durata dei ping IARU.	Mula rito: mga bakas sa E layer sa humigit-kumulang 90 km (SKiYMET radar), pormula ng elebasyon, Hot A / Hot B, side-scatter, path loss ng landas, haba ng ping ayon sa IARU.
+Da qui: scie nello strato E a circa 90 km (radar SKiYMET), formula dell'elevazione, Hot A / Hot B, side-scatter, attenuazione di tratta, durata dei ping IARU.	Mula rito: mga bakas sa E layer sa humigit-kumulang 90 km (SKiYMET radar), formula ng elevation, Hot A / Hot B, side-scatter, path loss ng landas, tagal ng ping ayon sa IARU.
 Data del calcolo (UTC)	Petsa ng kalkulasyon (UTC)
-Decl.	Dec.
+Decl.	Decl.
 Densita' della scia q = {0:E1} elettroni/m. Riferimenti: 172-190 dB (calcoli di G4BAO citati da GM8JBJ), 200 dB medio a 144 MHz (OH5IY)	Densidad ng bakas q = {0:E1} electron/m. Mga sanggunian: 172-190 dB (mga kalkulasyon ni G4BAO na sinipi ni GM8JBJ), 200 dB karaniwan sa 144 MHz (OH5IY)
 Densita' scia q = 10^	Densidad ng bakas q = 10^
 Dettaglio dei prossimi {0:F0} s: la zona utile non è in nessun passo del fascio	Detalye ng susunod na {0:F0} s: wala sa anumang hakbang ng beam ang magagamit na sona
@@ -115,11 +115,11 @@ Dettaglio dei prossimi {0:F0} s: passi del settore {1} ({2:F1} s ciascuno) e pas
 Direzioni Hot A / Hot B	Mga direksiyong Hot A / Hot B
 Disconnesso	Nadiskonekta
 Disconnetti	Idiskonekta
-Distanza        {0:F0} km   azimut {1:F1}°   (dal corrispondente {2:F1}°)	Distansiya      {0:F0} km   azimuth {1:F1}°   (mula sa DX station {2:F1}°)
+Distanza        {0:F0} km   azimut {1:F1}°   (dal corrispondente {2:F1}°)	Layo            {0:F0} km   azimuth {1:F1}°   (mula sa DX station {2:F1}°)
 Documenti tecnici	Mga teknikal na dokumento
 Documento Word	Word na dokumento
 Documento esportato: {0}	Na-export ang dokumento: {0}
-Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	Kung nasaan ang mga sanggunian ng live na datos. Mga putol-putol na bilog = bahagi ng langit na nakikita ng radar (mga 300 km sa paligid ng istasyon, bakas sa 90 km): walang radar na tumitingin sa langit sa itaas ng iyong landas, sinasabi ng datos kung gaano kaaktibo ang shower. Mga tuldok-tuldok na linya = distansiya mula sa iyong istasyon.
+Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	Kung nasaan ang mga source ng live na datos. Mga putol-putol na bilog = bahagi ng langit na nakikita ng radar (mga 300 km sa paligid ng istasyon, bakas sa 90 km): walang radar na tumitingin sa langit sa itaas ng iyong landas, sinasabi ng datos kung gaano kaaktibo ang shower. Mga tuldok-tuldok na linya = layo mula sa iyong istasyon.
 Draconidi di ottobre	October Draconids
 E	E
 EFFICIENZA DELLA TRATTA GRAVES → TE ADESSO	EPISYENSYA NG LANDAS GRAVES → IKAW NGAYON
@@ -128,9 +128,9 @@ Efficienza - spiegazione	Episyensya - paliwanag
 Efficienza oraria per {0} del {1} (UTC, valori a metà ora)	Episyensya bawat oras para sa {0} sa {1} (UTC, halaga sa kalahating oras)
 Efficienza tratta GRAVES → te	Episyensya ng landas GRAVES → ikaw
 Elev.	Elev.
-Elevazione d'antenna in funzione della distanza dallo scatter point	Elebasyon ng antenna ayon sa distansiya mula sa scatter point
-Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)	Elebasyon ng antenna patungo sa gitnang punto: {0:F1}°   (pormula ng artikulo, Larawan 7)
-Elevazione lobo °	Elebasyon ng lobe °
+Elevazione d'antenna in funzione della distanza dallo scatter point	Elevation ng antena ayon sa layo mula sa scatter point
+Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)	Elevation ng antena patungo sa gitnang punto: {0:F1}°   (formula ng artikulo, Larawan 7)
+Elevazione lobo °	Elevation ng lobe °
 Errore all'avvio: {0}	Error sa pagsisimula: {0}
 Errore: {0}	Error: {0}
 Esponente	Exponent
@@ -142,8 +142,8 @@ Esporta	I-export
 Esporta il documento in Word	I-export ang dokumento sa Word
 Esporta in Word (.docx)...	I-export sa Word (.docx)...
 Europa	Europa
-FONTE PRINCIPALE	PANGUNAHING SANGGUNIAN
-FONTI	MGA SANGGUNIAN
+FONTE PRINCIPALE	PANGUNAHING SOURCE
+FONTI	MGA SOURCE
 Fattore di stazione K	Station factor K
 File ADIF	ADIF file
 File ADIF del log	ADIF file ng log
@@ -155,7 +155,7 @@ Filtro degli spot meteor scatter	Filter ng mga spot na meteor scatter
 Finestra utile	Magagamit na window
 Flusso radar	Flux ng radar
 Flusso radar: nessun dato. Premi "Scarica adesso".	Flux ng radar: walang datos. Pindutin ang "I-download ngayon".
-Fonte	Sanggunian
+Fonte	Source
 Fonte del massimo	Pinagmulan ng peak
 Fonti	Mga source
 Formato del grafico cambiato ({0}x{1}): lettura non possibile.	Nagbago ang format ng graph ({0}x{1}): hindi mabasa.
@@ -175,9 +175,9 @@ Giudizio	Pagtatasa
 Gli spot accettati si salvano in data/spot_ms, un file CSV al giorno. I locator mancanti si prendono dall'archivio CALL3 (data/call3.txt).	Ang mga tinanggap na spot ay sine-save sa data/spot_ms, isang CSV file bawat araw. Ang nawawalang locator ay kinukuha mula sa archive ng CALL3 (data/call3.txt).
 Global Meteor Network (GMN)	Global Meteor Network (GMN)
 Global Meteor Network (GMN) - globalmeteornetwork.org/flux: flusso e ZHR misurati degli sciami. Dati CC BY 4.0; Vida et al. 2021, MNRAS 506(4), e Vida et al. 2022, MNRAS 515(2)	Global Meteor Network (GMN) - globalmeteornetwork.org/flux: sinukat na flux at ZHR ng mga shower. Datos CC BY 4.0; Vida et al. 2021, MNRAS 506(4), at Vida et al. 2022, MNRAS 515(2)
-Guadagno antenna dBi (tx = rx)	Gain ng antenna dBi (tx = rx)
+Guadagno antenna dBi (tx = rx)	Gain ng antena dBi (tx = rx)
 Gunter Hoch DL6WU - curva guadagno/lunghezza del boom delle Yagi lunghe, G(dBi) = 7,773 log(L/lambda) + 11,43, riportata da W8IO (w8io.com)	Gunter Hoch DL6WU - kurba ng gain ayon sa haba ng boom ng mahahabang Yagi, G(dBi) = 7.773 log(L/lambda) + 11.43, ayon sa ulat ni W8IO (w8io.com)
-HOT A / HOT B (hot spot classici, per il puntamento d'antenna)	HOT A / HOT B (klasikong hot spot, para sa pagtutok ng antenna)
+HOT A / HOT B (hot spot classici, per il puntamento d'antenna)	HOT A / HOT B (klasikong hot spot, para sa pagtutok ng antena)
 Host	Host
 Hot A	Hot A
 Hot A/B: hot spot a {0} km dal punto medio (valore scritto a mano).	Hot A/B: mga hot spot sa {0} km mula sa gitnang punto (mano-manong inilagay na halaga).
@@ -192,7 +192,7 @@ Hot spot dal punto medio km	Hot spot mula sa gitnang punto km
 I ping sono righe brevi vicino alla portante; le scie lunghe (overdense) sono più larghe e mostrano il Doppler	Ang mga ping ay maiikling linya malapit sa carrier; ang mahahabang bakas (overdense) ay mas malapad at nagpapakita ng Doppler
 IL CIELO VISTO DA GRAVES	ANG LANGIT MULA SA GRAVES
 IMO {0} (giorno)	IMO {0} (araw)
-Il corrispondente diventa GRAVES (JN27SI, quota 200 m) e la tratta principale viene ricalcolata	Ang DX station ay nagiging GRAVES (JN27SI, taas 200 m) at muling kinakalkula ang pangunahing landas
+Il corrispondente diventa GRAVES (JN27SI, quota 200 m) e la tratta principale viene ricalcolata	Ang DX station ay nagiging GRAVES (JN27SI, altitude 200 m) at muling kinakalkula ang pangunahing landas
 Il file scelto non e' un file locale.	Ang napiling file ay hindi lokal na file.
 Il mio locator	Ang aking locator
 Ilkka Yrjola OH5IY - MS-Soft (concetto di efficienza dello sciame), www.kolumbus.fi/oh5iy (sito storico)	Ilkka Yrjola OH5IY - MS-Soft (konsepto ng episyensya ng shower), www.kolumbus.fi/oh5iy (makasaysayang site)
@@ -204,12 +204,12 @@ Indice della tratta Σ ZHR×η: {0}	Indeks ng landas Σ ZHR×η: {0}
 Indice sciami tratta	Indeks ng mga shower sa landas
 Indice tratta (ZHR×eff.)	Indeks ng landas (ZHR×epis.)
 Indirizzo mancante	Walang address
-Ingolf SM6FHZ - "432 MHz Meteorscatter, Challenges and Techniques", 45th Nordic VUSHF, maggio 2025 (regole lambda^3 e lambda^2, punto medio, direzione migliore)	Ingolf SM6FHZ - "432 MHz Meteorscatter, Challenges and Techniques", 45th Nordic VUSHF, Mayo 2025 (mga patakarang lambda^3 at lambda^2, gitnang punto, pinakamahusay na direksiyon)
-Ingolf SM6FHZ - RadiantCalc (grafico polare con la direzione migliore)	Ingolf SM6FHZ - RadiantCalc (polar plot na may pinakamahusay na direksiyon)
+Ingolf SM6FHZ - "432 MHz Meteorscatter, Challenges and Techniques", 45th Nordic VUSHF, maggio 2025 (regole lambda^3 e lambda^2, punto medio, direzione migliore)	Ingolf SM6FHZ - "432 MHz Meteorscatter, Challenges and Techniques", 45th Nordic VUSHF, Mayo 2025 (mga patakarang lambda^3 at lambda^2, gitnang punto, pinakamahusay na direksyon)
+Ingolf SM6FHZ - RadiantCalc (grafico polare con la direzione migliore)	Ingolf SM6FHZ - RadiantCalc (polar plot na may pinakamahusay na direksyon)
 International Meteor Organization - Meteor Shower Calendar 2026, www.imo.net (tabelle 5, 6 e 7)	International Meteor Organization - Meteor Shower Calendar 2026, www.imo.net (mga talahanayan 5, 6 at 7)
 Invia	Ipadala
 J.D. Kraus - Antennas: guadagno e apertura del lobo, G = 41253 / (thetaE x thetaH)	J.D. Kraus - Antennas: gain at lapad ng lobe, G = 41253 / (thetaE x thetaH)
-Jens DF5HC - "Meteorscatter auf UKW", conferenza DARC, gennaio 2018: formula della migliore direzione\n    di DH9GCD (Sin(El) x Cos(El) x Sin(P-Az)), diffusione a cono e scelta HOT-A / HOT-B di DJ5HG,\n    radiante utile tra 20 e 70 gradi, distanza migliore 1300-1500 km, meteore sporadiche di KB0VUK	Jens DF5HC - "Meteorscatter auf UKW", kumperensiya ng DARC, Enero 2018: pormula ng pinakamahusay na direksiyon\n    ni DH9GCD (Sin(El) x Cos(El) x Sin(P-Az)), pagkalat na hugis-kono at pagpili ng HOT-A / HOT-B ni DJ5HG,\n    magagamit na radiant sa pagitan ng 20 at 70 digri, pinakamahusay na distansiya 1300-1500 km, sporadic na meteor ni KB0VUK
+Jens DF5HC - "Meteorscatter auf UKW", conferenza DARC, gennaio 2018: formula della migliore direzione\n    di DH9GCD (Sin(El) x Cos(El) x Sin(P-Az)), diffusione a cono e scelta HOT-A / HOT-B di DJ5HG,\n    radiante utile tra 20 e 70 gradi, distanza migliore 1300-1500 km, meteore sporadiche di KB0VUK	Jens DF5HC - "Meteorscatter auf UKW", kumperensiya ng DARC, Enero 2018: formula ng pinakamahusay na direksyon\n    ni DH9GCD (Sin(El) x Cos(El) x Sin(P-Az)), pagkalat na hugis-kono at pagpili ng HOT-A / HOT-B ni DJ5HG,\n    magagamit na radiant sa pagitan ng 20 at 70 digri, pinakamahusay na layo 1300-1500 km, sporadic na meteor ni KB0VUK
 John Drew VK5DJ - Yagi Calculator: stime del guadagno per le varianti VK3AUU, WA2PHW e DJ9BV	John Drew VK5DJ - Yagi Calculator: tantiya ng gain para sa mga bersiyong VK3AUU, WA2PHW at DJ9BV
 John GM8JBJ - Meteor scatter path loss, hamradio.engineering (da Kaiser & Closs 1952; cita i calcoli di John Worsnop G4BAO, 172-190 dB)	John GM8JBJ - Meteor scatter path loss, hamradio.engineering (mula kina Kaiser & Closs 1952; sinisipi ang mga kalkulasyon ni John Worsnop G4BAO, 172-190 dB)
 Klaus von der Heide DJ5HG - "Die Geometrie von Meteorscatterverbindungen" (2004): riferimento fisso in dB, scie lunghe con il radiante basso,\n    curve delle tratte da Amburgo e da Monaco; tabella AMS di J. Richardson per la distanza degli hot spot	Klaus von der Heide DJ5HG - "Die Geometrie von Meteorscatterverbindungen" (2004): nakapirming sanggunian sa dB, mahahabang bakas kapag mababa ang radiant,\n    mga kurba ng mga landas mula Hamburg at mula Munich; AMS table ni J. Richardson para sa layo ng mga hot spot
@@ -220,10 +220,10 @@ La parola "{0}" c'è, ma la riga non è uno spot "DX de ..." valido.	Nandiyan an
 La riga non è uno spot "DX de ..." valido.	Ang linya ay hindi wastong "DX de ..." na spot.
 La scala del grafico delle quote e' cambiata: le statistiche delle quote (moda, media, mediana) restano valide, i conteggi assoluti no.	Nagbago ang iskala ng graph ng taas: balido pa rin ang estadistika ng taas (moda, mean, median), ang absolutong bilang ay hindi na.
 La sequenza del fascio si calcola con l'orologio del PC: sincronizzalo con un server NTP (errore di pochi decimi di secondo al massimo).	Ang sequence ng beam ay kinakalkula mula sa orasan ng PC: i-synchronize ito sa isang NTP server (error na ilang ikasampu ng segundo lamang).
-La sequenza è legata all'ora UTC (PE1ITR): dal 2021 i passi durano 0,8 s e il ciclo di un settore 4,8 s; nel 2007 erano 3,2 s e 19,2 s. La stazione di comando a volte sposta la sequenza di qualche passo: il dettaglio è una previsione da confermare con l'ascolto. Una scia si sente solo se il fascio la illumina mentre dura: probabilità ≈ min(1, (passo + scia) / ciclo) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (durata tipica di una scia sottodensa a 143 MHz ≈ {1:F1} s).	Ang sequence ay nakatali sa UTC (PE1ITR): mula 2021 ang bawat hakbang ay 0.8 s at ang siklo ng isang sektor ay 4.8 s; noong 2007 ay 3.2 s at 19.2 s. Paminsan-minsan, inililipat ng command station ang sequence nang ilang hakbang: ang detalye ay isang hula na dapat kumpirmahin sa pakikinig. Naririnig lamang ang isang bakas kung tinatamaan ito ng beam habang tumatagal ito: probabilidad ≈ min(1, (hakbang + bakas) / siklo) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (karaniwang tagal ng underdense na bakas sa 143 MHz ≈ {1:F1} s).
+La sequenza è legata all'ora UTC (PE1ITR): dal 2021 i passi durano 0,8 s e il ciclo di un settore 4,8 s; nel 2007 erano 3,2 s e 19,2 s. La stazione di comando a volte sposta la sequenza di qualche passo: il dettaglio è una previsione da confermare con l'ascolto. Una scia si sente solo se il fascio la illumina mentre dura: probabilità ≈ min(1, (passo + scia) / ciclo) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (durata tipica di una scia sottodensa a 143 MHz ≈ {1:F1} s).	Ang sequence ay nakatali sa oras UTC (PE1ITR): mula 2021 ang bawat hakbang ay 0.8 s at ang siklo ng isang sektor ay 4.8 s; noong 2007 ay 3.2 s at 19.2 s. Paminsan-minsan, inililipat ng command station ang sequence nang ilang hakbang: ang detalye ay isang hula na dapat kumpirmahin sa pakikinig. Naririnig lamang ang isang bakas kung tinatamaan ito ng beam habang tumatagal ito: probabilidad ≈ min(1, (hakbang + bakas) / siklo) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (karaniwang tagal ng underdense na bakas sa 143 MHz ≈ {1:F1} s).
 Lato	Panig
 Lato A = a sinistra della tratta, B = a destra	Panig A = kaliwa ng landas, B = kanan
-Le lettere accanto alla percentuale dicono da quale lato della tratta arriva la maggior parte delle riflessioni. A = a SINISTRA guardando dalla tua stazione verso il corrispondente (zona Hot A); B = a DESTRA (zona Hot B). Conviene spostare l'antenna di 10-30° verso quel lato (side-scatter). Nessuna lettera = efficienza sotto il 5 %. Riga Σ: indice della tratta = somma di ZHR x efficienza di tutti gli sciami attivi. Righe azzurre: confronto con la formula di DH9GCD (DF5HC 2018). ↑ = radiante sopra 70° dalla tua stazione (troppo alto).	Ang mga titik sa tabi ng porsiyento ay nagsasabi kung saang panig ng landas dumarating ang karamihan ng repleksiyon. A = KALIWA kung titingin mula sa iyong istasyon patungo sa DX station (sona Hot A); B = KANAN (sona Hot B). Mainam na ibaling ang antenna nang 10-30° sa panig na iyon (side-scatter). Walang titik = episyensya na mas mababa sa 5 %. Hanay Σ: indeks ng landas = kabuuan ng ZHR x episyensya ng lahat ng aktibong shower. Mapusyaw na asul na hanay: paghahambing sa pormula ni DH9GCD (DF5HC 2018). ↑ = radiant na higit sa 70° mula sa iyong istasyon (masyadong mataas).
+Le lettere accanto alla percentuale dicono da quale lato della tratta arriva la maggior parte delle riflessioni. A = a SINISTRA guardando dalla tua stazione verso il corrispondente (zona Hot A); B = a DESTRA (zona Hot B). Conviene spostare l'antenna di 10-30° verso quel lato (side-scatter). Nessuna lettera = efficienza sotto il 5 %. Riga Σ: indice della tratta = somma di ZHR x efficienza di tutti gli sciami attivi. Righe azzurre: confronto con la formula di DH9GCD (DF5HC 2018). ↑ = radiante sopra 70° dalla tua stazione (troppo alto).	Ang mga titik sa tabi ng porsiyento ay nagsasabi kung saang panig ng landas dumarating ang karamihan ng repleksiyon. A = KALIWA kung titingin mula sa iyong istasyon patungo sa DX station (sona Hot A); B = KANAN (sona Hot B). Mainam na ibaling ang antena nang 10-30° sa panig na iyon (side-scatter). Walang titik = episyensya na mas mababa sa 5 %. Hanay Σ: indeks ng landas = kabuuan ng ZHR x episyensya ng lahat ng aktibong shower. Mapusyaw na asul na hanay: paghahambing sa formula ni DH9GCD (DF5HC 2018). ↑ = radiant na higit sa 70° mula sa iyong istasyon (masyadong mataas).
 Le righe evidenziate sono gli sciami attivi oggi (UTC)	Ang mga naka-highlight na hilera ay ang mga shower na aktibo ngayong araw (UTC)
 Legenda	Leyenda
 Leonidi	Leonids
@@ -239,7 +239,7 @@ Loc DX	Loc ng DX
 Loc spotter	Loc ng spotter
 Locator del corrispondente non valido	Hindi balidong locator ng DX station
 Locator della stazione non valido	Hindi balidong locator ng istasyon
-Manca il nominativo per il login	Walang callsign para sa login
+Manca il nominativo per il login	Walang call sign para sa login
 Mappa d'Europa	Mapa ng Europa
 Mappa d'Europa non disponibile (serve la rete al primo avvio).	Hindi available ang mapa ng Europa (kailangan ng network sa unang pagsisimula).
 Mappa dei radar europei	Mapa ng mga radar sa Europa
@@ -249,19 +249,19 @@ Mappa: bordo = {0} km dalla stazione. {1}	Mapa: gilid = {0} km mula sa istasyon.
 Mese non indicato: uso il mese corrente.	Walang nakasaad na buwan: ginagamit ang kasalukuyang buwan.
 Meteore/ora - ieri {0} e oggi {1} (UTC)	Meteor/oras - kahapon {0} at ngayon {1} (UTC)
 Metti GRAVES come DX	Gawing DX ang GRAVES
-Miglior puntamento per lo sciame: ORTOGONALE alla direzione\ndi arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\nSM6FHZ). In pianta: linea gialla = scorrimento\ndello sciame, punti arancioni = puntamenti, ellissi\nPREV = scie piu' probabili adesso.\nClic su un radiante: percorso con le ore UTC	Pinakamahusay na tutok para sa shower: PATAYO (perpendicular) sa direksiyon\nng pagdating (azimuth ng radiant +-90°, tolerance +-40-50°,\nSM6FHZ). Plano: dilaw na linya = pag-usad\nng shower, kahel na tuldok = mga tutok, PREV na\nellipse = pinakamalamang na bakas ngayon.\nI-click ang radiant: daanan na may oras sa UTC
+Miglior puntamento per lo sciame: ORTOGONALE alla direzione\ndi arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\nSM6FHZ). In pianta: linea gialla = scorrimento\ndello sciame, punti arancioni = puntamenti, ellissi\nPREV = scie piu' probabili adesso.\nClic su un radiante: percorso con le ore UTC	Pinakamahusay na tutok para sa shower: PATAYO (perpendicular) sa direksyon\nng pagdating (azimuth ng radiant +-90°, tolerance +-40-50°,\nSM6FHZ). Plano: dilaw na linya = pag-usad\nng shower, kahel na tuldok = mga tutok, PREV na\nellipse = pinakamalamang na bakas ngayon.\nI-click ang radiant: daanan na may oras sa UTC
 Misurato a Collm e traslato a {0} MHz - ieri {1} e oggi {2} (UTC)	Sinukat sa Collm at iniskala sa {0} MHz - kahapon {1} at ngayon {2} (UTC)
 Mondo	Mundo
 Monocerotidi di dicembre	December Monocerotids
 N	N
-N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durata delle riflessioni x ({1:F1}/{0:F0})^2 = x {5:F4}: un eco di 1 s a {1:F1} MHz dura circa {6:F0} ms a {0:F0} MHz (ping massimo IARU a {0:F0} MHz: {7:F0} ms).\nRegole sperimentali di SM6FHZ (VUSHF 2025). Il fattore K tiene conto della stazione ricevente (potenza, antenne): si ricava confrontando con un osservatore RMOB sulla stessa banda.	N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Tagal ng repleksiyon x ({1:F1}/{0:F0})^2 = x {5:F4}: ang echo na 1 s sa {1:F1} MHz ay tumatagal nang mga {6:F0} ms sa {0:F0} MHz (pinakamahabang ping ayon sa IARU sa {0:F0} MHz: {7:F0} ms).\nMga eksperimental na patakaran ni SM6FHZ (VUSHF 2025). Isinasaalang-alang ng factor K ang tumatanggap na istasyon (power, antenna): nakukuha ito sa paghahambing sa isang RMOB observer sa parehong banda.
+N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durata delle riflessioni x ({1:F1}/{0:F0})^2 = x {5:F4}: un eco di 1 s a {1:F1} MHz dura circa {6:F0} ms a {0:F0} MHz (ping massimo IARU a {0:F0} MHz: {7:F0} ms).\nRegole sperimentali di SM6FHZ (VUSHF 2025). Il fattore K tiene conto della stazione ricevente (potenza, antenne): si ricava confrontando con un osservatore RMOB sulla stessa banda.	N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Tagal ng repleksiyon x ({1:F1}/{0:F0})^2 = x {5:F4}: ang echo na 1 s sa {1:F1} MHz ay tumatagal nang mga {6:F0} ms sa {0:F0} MHz (pinakamahabang ping ayon sa IARU sa {0:F0} MHz: {7:F0} ms).\nMga eksperimental na patakaran ni SM6FHZ (VUSHF 2025). Isinasaalang-alang ng factor K ang tumatanggap na istasyon (power, antena): nakukuha ito sa paghahambing sa isang RMOB observer sa parehong banda.
 Natural Earth - coste e confini 1:50 milioni, dominio pubblico, www.naturalearthdata.com (mappa d'Europa)	Natural Earth - mga baybayin at hangganan 1:50 milyon, pampublikong domain, www.naturalearthdata.com (mapa ng Europa)
 Nell'attenuazione (β = 90°, prudente): raggio iniziale della scia {0:F1} dB (r0 = {1:F2} m alla quota media ITU di {2:F1} km per {3:F0} MHz). Con la scia nel piano della tratta (β = 0°, caso migliore) l'attenuazione scende a {4:F1} dB ({5:F1} dB) e il margine sale a {6:+0.0;-0.0} dB	Sa path loss (β = 90°, maingat): unang radius ng bakas {0:F1} dB (r0 = {1:F2} m sa karaniwang taas ng ITU na {2:F1} km para sa {3:F0} MHz). Kapag nasa plane ng landas ang bakas (β = 0°, pinakamainam na kaso), bumababa ang path loss sa {4:F1} dB ({5:F1} dB) at tumataas ang margin sa {6:+0.0;-0.0} dB
 Nero	Itim
 Nessun Hot consigliato: sciami attivi quasi assenti in questo momento	Walang inirerekomendang Hot: halos walang aktibong shower sa ngayon
 Nessun dato GMN: premi "Scarica adesso".	Walang datos ng GMN: pindutin ang "I-download ngayon".
 Nessun dato del radar: scaricalo dalla sottolinguetta Live e dati real-time › Flusso radar.	Walang datos ng radar: i-download ito mula sa sub-tab na Live at real-time na datos › Flux ng radar.
-Nessuna fonte Collm in fonti_radar.csv	Walang Collm na sanggunian sa fonti_radar.csv
+Nessuna fonte Collm in fonti_radar.csv	Walang Collm na source sa fonti_radar.csv
 Nessuna scia prevista: sciami attivi sotto l'orizzonte o con efficienza nulla per questa tratta.	Walang inaasahang bakas: ang mga aktibong shower ay nasa ilalim ng horizon o walang episyensya para sa landas na ito.
 Nessuna zona comune dello strato E ({0})	Walang karaniwang sona ng E layer ({0})
 Nessuno sciame utile in questo momento	Walang kapaki-pakinabang na shower sa sandaling ito
@@ -269,7 +269,7 @@ No	Hindi
 No: fuori dai settori	Hindi: labas sa mga sektor
 No: sopra il fascio (circa 25°)	Hindi: nasa itaas ng beam (mga 25°)
 No: sotto l'orizzonte di GRAVES	Hindi: nasa ilalim ng horizon ng GRAVES
-Nominativo per il login	Callsign para sa login
+Nominativo per il login	Call sign para sa login
 Non connesso	Hindi nakakonekta
 Non ho riconosciuto il formato del file.	Hindi nakilala ang format ng file.
 Non riesco a leggere la scala verticale del flusso (etichetta in cima: {0}): valori da verificare.	Hindi mabasa ang patayong iskala ng flux (label sa itaas: {0}): kailangang suriin ang mga halaga.
@@ -306,7 +306,7 @@ Pegasidi di luglio	July Pegasids
 Perseidi	Perseids
 Personalizzata	Custom
 Phoenicidi	Phoenicids
-Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	Plano: dilaw na linya = pag-usad ng napiling shower (o ng pinakapaborable), PREV na ellipse = kung saan bumabagsak ngayon ang pinakamalamang na bakas. Kalangitan sa kanan (Sikat/Lubog sa UTC ng {0}): dilaw = episyensya >= 50 % at ZHR >= 2, kahel >= 20 %, abo = halos hindi aktibo.
+Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	Plano: dilaw na linya = pag-usad ng napiling shower (o ng pinakapaborable), PREV na ellipse = kung saan bumabagsak ngayon ang pinakamalamang na bakas. Tanaw ng langit sa kanan (Sikat/Lubog sa UTC ng {0}): dilaw = episyensya >= 50 % at ZHR >= 2, kahel >= 20 %, abo = halos hindi aktibo.
 Piscidi di aprile diurne	April Piscids sa araw
 Porta	Port
 Portata alla quota delle scie con lobo a {0:F1}°: {1:F0} km	Abot sa taas ng mga bakas na may lobe sa {0:F1}°: {1:F0} km
@@ -319,7 +319,7 @@ Previsione {0} /ora	Pagtataya {0} /oras
 Previsione {0} MHz (rifl./ora)	Pagtataya {0} MHz (repl./oras)
 Pronto	Handa
 Prossimo massimo (UTC)	Susunod na peak (UTC)
-Prova del filtro	Subok ng filter
+Prova del filtro	Pagsubok ng filter
 Prudente	Maingat
 Punt. migliore	Pinakamahusay na tutok
 Puntamento {0:F0}°: Hot A {1}, Hot B {2}	Tutok {0:F0}°: Hot A {1}, Hot B {2}
@@ -331,7 +331,7 @@ Punto medio (forward)	Gitnang punto (forward)
 Punto medio {0}, elev. per {1:F1} km: {2:F1}°	Gitnang punto {0}, elev. para sa {1:F1} km: {2:F1}°
 Puppidi-Velidi	Puppid-Velids
 Quadrantidi	Quadrantids
-Quattro schiere a fasi coprono il cielo a sud, da 90° a 270° di azimut, in quattro settori di 45° (D, C, B, A); ogni settore è diviso in 6 passi da 7,5°, illuminati uno dopo l'altro, nello stesso momento in tutti e quattro i settori (passi numerati da 1 a 6 a partire dall'azimut più basso). Il fascio è largo circa 25° in elevazione: alla quota delle scie copre la corona colorata tra i due cerchi tratteggiati. Punti arancio/rosa = zone PREV della tratta GRAVES → te, linea verde = direzione della tua stazione, linea rossa = dalla tua stazione all'hot spot consigliato (PE1ITR).	Apat na phased array ang sumasakop sa katimugang langit, mula 90° hanggang 270° na azimuth, sa apat na sektor na 45° (D, C, B, A); ang bawat sektor ay hinati sa 6 na hakbang na 7.5°, tinatamaan nang isa-isa, sabay-sabay sa lahat ng apat na sektor (mga hakbang na may bilang 1 hanggang 6 simula sa pinakamababang azimuth). Ang beam ay mga 25° ang lapad sa elebasyon: sa taas ng mga bakas, sinasakop nito ang may-kulay na singsing sa pagitan ng dalawang putol-putol na bilog. Kahel/rosas na tuldok = mga PREV na sona ng landas GRAVES → ikaw, berdeng linya = direksiyon ng iyong istasyon, pulang linya = mula sa iyong istasyon patungo sa inirerekomendang hot spot (PE1ITR).
+Quattro schiere a fasi coprono il cielo a sud, da 90° a 270° di azimut, in quattro settori di 45° (D, C, B, A); ogni settore è diviso in 6 passi da 7,5°, illuminati uno dopo l'altro, nello stesso momento in tutti e quattro i settori (passi numerati da 1 a 6 a partire dall'azimut più basso). Il fascio è largo circa 25° in elevazione: alla quota delle scie copre la corona colorata tra i due cerchi tratteggiati. Punti arancio/rosa = zone PREV della tratta GRAVES → te, linea verde = direzione della tua stazione, linea rossa = dalla tua stazione all'hot spot consigliato (PE1ITR).	Apat na phased array ang sumasakop sa katimugang langit, mula 90° hanggang 270° na azimuth, sa apat na sektor na 45° (D, C, B, A); ang bawat sektor ay hinati sa 6 na hakbang na 7.5°, tinatamaan nang isa-isa, sabay-sabay sa lahat ng apat na sektor (mga hakbang na may bilang 1 hanggang 6 simula sa pinakamababang azimuth). Ang beam ay mga 25° ang lapad sa elevation: sa taas ng mga bakas, sinasakop nito ang may-kulay na singsing sa pagitan ng dalawang putol-putol na bilog. Kahel/rosas na tuldok = mga PREV na sona ng landas GRAVES → ikaw, berdeng linya = direksyon ng iyong istasyon, pulang linya = mula sa iyong istasyon patungo sa inirerekomendang hot spot (PE1ITR).
 Quota delle scie e opzioni scelte a mano. Si seleziona da sola quando cambi la quota, la casella "dal radar", le scie lunghe o l'angolo β.	Taas ng bakas at mga opsiyong pinili nang mano-mano. Kusang napipili kapag binago mo ang taas, ang kahong "mula sa radar", ang mahahabang bakas o ang anggulong β.
 Quota fissa di 102 km, scie più lunghe con il radiante basso e angolo β, come in "Die Geometrie von Meteorscatterverbindungen" di DJ5HG (2004).\nConfronto con le sue curve: in media 2 dB sotto, scarto tipico 5 dB; prevalgono i radianti allineati alla tratta.	Nakapirming taas na 102 km, mas mahahabang bakas kapag mababa ang radiant at anggulong β, gaya sa "Die Geometrie von Meteorscatterverbindungen" ni DJ5HG (2004).\nPaghahambing sa kanyang mga kurba: sa karaniwan 2 dB na mas mababa, karaniwang paglihis 5 dB; nangingibabaw ang mga radiant na nakahanay sa landas.
 Quota scie      {0:F1} km (strato E){1}	Taas ng bakas   {0:F1} km (E layer){1}
@@ -340,7 +340,7 @@ Quote delle scie (Collm): più frequente {0:F1} km, media {1:F1}, mediana {2:F1}
 RADAR GRAVES (linguetta Radar GRAVES)	GRAVES RADAR (tab na Radar GRAVES)
 RADIANTE BASSO LUNGO LA TRATTA: {0}. L'efficienza calcolata resta bassa, ma con scie radenti allineate alla tratta DJ5HG prevede riflessioni rare e forti: vale la pena ascoltare.	MABABANG RADIANT SA KAHABAAN NG LANDAS: {0}. Nananatiling mababa ang kinalkulang episyensya, pero sa mga pahilis na bakas na nakahanay sa landas, inaasahan ni DJ5HG ang bihira at malalakas na repleksiyon: sulit makinig.
 RADIANTE TROPPO ALTO (sopra {0}°): {1}. Le scie scendono quasi verticali e riflettono poco verso la tratta (DF5HC, DH9GCD).	MASYADONG MATAAS ANG RADIANT (higit sa {0}°): {1}. Halos patayong bumabagsak ang mga bakas at kaunti lang ang repleksiyon patungo sa landas (DF5HC, DH9GCD).
-RBN: porta 7000 = CW e RTTY, porta 7001 = FT8. Login con il solo nominativo. Gli skimmer RBN raramente decodificano i modi MS: serve soprattutto per gli spot con <MS> nel commento.	RBN: port 7000 = CW at RTTY, port 7001 = FT8. Login gamit ang callsign lamang. Bihirang mag-decode ng mga MS mode ang mga RBN skimmer: pangunahing kapaki-pakinabang ito para sa mga spot na may <MS> sa komento.
+RBN: porta 7000 = CW e RTTY, porta 7001 = FT8. Login con il solo nominativo. Gli skimmer RBN raramente decodificano i modi MS: serve soprattutto per gli spot con <MS> nel commento.	RBN: port 7000 = CW at RTTY, port 7001 = FT8. Login gamit ang call sign lamang. Bihirang mag-decode ng mga MS mode ang mga RBN skimmer: pangunahing kapaki-pakinabang ito para sa mga spot na may <MS> sa komento.
 REGOLE SPERIMENTALI TRA LE BANDE (SM6FHZ, VUSHF 2025)	MGA EKSPERIMENTAL NA PATAKARAN SA PAGITAN NG MGA BANDA (SM6FHZ, VUSHF 2025)
 RICOSTRUZIONE CRONOLOGICA · {0} UTC	KRONOLOHIKONG REKONSTRUKSIYON · {0} UTC
 RMOB usa GRAVES per i conteggi orari delle meteore: confronta i tuoi ping con gli osservatori su 143,050 MHz	Ginagamit ng RMOB ang GRAVES para sa bilang ng meteor bawat oras: ihambing ang iyong mga ping sa mga observer sa 143.050 MHz
@@ -372,12 +372,12 @@ SCARTATO: frequenza sotto 27990,0 kHz.	TINANGGIHAN: frequency na mas mababa sa 2
 SCARTATO: fuori dalle finestre MS e nessuna parola del filtro.	TINANGGIHAN: nasa labas ng mga MS window at walang salita ng filter.
 SCARTATO: il commento dichiara un'altra propagazione ({0}) e non c'è un modo MS.	TINANGGIHAN: ang komento ay nagsasaad ng ibang propagasyon ({0}) at walang MS mode.
 SCIAME PIÙ FAVOREVOLE	PINAKAPABORABLENG SHOWER
-SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az. {0}°)	SEKSIYON - ang pinakamalamang na bakas na nakikita mula sa antenna patungo sa DX station (az. {0}°)
+SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az. {0}°)	SEKSIYON - ang pinakamalamang na bakas na nakikita mula sa antena patungo sa DX station (az. {0}°)
 SGO, Finlandia	SGO, Finland
 Scarica RMOB adesso	I-download ang RMOB ngayon
 Scarica adesso	I-download ngayon
 Scarta subito le righe del cluster sotto 27990,0 kHz (non compaiono nella console e non si memorizzano)	Agad itapon ang mga linya ng cluster na mas mababa sa 27990.0 kHz (hindi lumalabas sa console at hindi iniimbak)
-Scarto d'antenna degli hot spot dalla tabella AMS di J. Richardson riportata da DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km. Togli la spunta per scrivere la distanza a mano (MSHV usa 150 km).	Paglihis ng antenna ng mga hot spot mula sa AMS table ni J. Richardson na inilathala ni DJ5HG: 13° sa 1000 km, 11° sa 1250 km, 10° sa 1500 at 2000 km. Alisin ang tsek para mano-manong isulat ang layo (gumagamit ang MSHV ng 150 km).
+Scarto d'antenna degli hot spot dalla tabella AMS di J. Richardson riportata da DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km. Togli la spunta per scrivere la distanza a mano (MSHV usa 150 km).	Paglihis ng antena ng mga hot spot mula sa AMS table ni J. Richardson na inilathala ni DJ5HG: 13° sa 1000 km, 11° sa 1250 km, 10° sa 1500 at 2000 km. Alisin ang tsek para mano-manong isulat ang layo (gumagamit ang MSHV ng 150 km).
 Scia meteorica	Bakas ng meteor
 Sciame	Shower
 Sciame più favorevole	Pinakapaborableng shower
@@ -387,31 +387,31 @@ Sciami in diretta	Mga live na shower
 Sciami sopra l'orizzonte: {0}	Mga shower sa itaas ng horizon: {0}
 Scie più lunghe con il radiante basso (DJ5HG)	Mas mahahabang bakas kapag mababa ang radiant (DJ5HG)
 Scrivi il nome dell'osservatore RMOB come compare nel nome del suo file (es. NOME_112026rmob.TXT -> NOME).	Isulat ang pangalan ng RMOB observer gaya ng nasa pangalan ng file nito (hal. PANGALAN_112026rmob.TXT -> PANGALAN).
-Scrivi il nominativo per il login prima di connettere.	Ilagay ang callsign para sa login bago kumonekta.
+Scrivi il nominativo per il login prima di connettere.	Ilagay ang call sign para sa login bago kumonekta.
 Segnale minimo dBm	Pinakamahinang signal dBm
 Sequenza del fascio	Sequence ng beam
 Servono sia i dati di Collm sia un file RMOB delle stesse ore.	Kailangan ang datos ng Collm at isang RMOB file na sumasaklaw sa parehong mga oras.
 Sextantidi diurne	Sextantids sa araw
-Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)	Shelby W8WN - qsl.net/w8wn/hscw (pinakamainam na elebasyon at offset)
+Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)	Shelby W8WN - qsl.net/w8wn/hscw (pinakamainam na elevation at offset)
 Sigla	Kodigo
 Sono i bordi piu' lontani del cielo visto da entrambe le stazioni, non i punti da puntare.	Ito ang pinakamalayong gilid ng langit na nakikita ng dalawang istasyon, hindi mga puntong dapat tutukan.
 Sorge	Sikat
 Sorgente Antielio	Antihelion Source
-Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	Naka-off (maingat): bawat bakas ay tinitimbang ng sine ng elebasyon ng radiant, dahil kapag mababa ang radiant ay mas kaunti ang meteor na bumabagsak bawat km².\nNaka-on: gaya ni DJ5HG (2004), kapag mababa ang radiant ay mas mahaba ang mga bakas (ang magagamit na kapal ng layer, 15 km, hinati sa sine ng elebasyon, hanggang 100 km) at mas madalas nilang natutugunan ang batas ng repleksiyon. Nagkakansela ang dalawang epekto sa itaas ng mga 9° na elebasyon: tumataas ang episyensya kapag mababa ang radiant, hindi nagbabago kapag mataas.
+Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	Naka-off (maingat): bawat bakas ay tinitimbang ng sine ng elevation ng radiant, dahil kapag mababa ang radiant ay mas kaunti ang meteor na bumabagsak bawat km².\nNaka-on: gaya ni DJ5HG (2004), kapag mababa ang radiant ay mas mahaba ang mga bakas (ang magagamit na kapal ng layer, 15 km, hinati sa sine ng elevation, hanggang 100 km) at mas madalas nilang natutugunan ang batas ng repleksiyon. Nagkakansela ang dalawang epekto sa itaas ng mga 9° na elevation: tumataas ang episyensya kapag mababa ang radiant, hindi nagbabago kapag mataas.
 Spot MS della linguetta "Raccolta dati". Per ogni contatto la nuvola indica dove si concentrano le scie più probabili per quella tratta e quell'ora (riflessione speculare, somma degli sciami attivi). Nuvole tratteggiate = solo meteore sporadiche. Gli spot con una stazione fuori dalla mappa non si disegnano; quelli appena arrivati (meno di 3 minuti) lampeggiano per un minuto.	Mga MS spot mula sa tab na "Pangongolekta ng data". Para sa bawat contact, ipinapakita ng ulap kung saan nagtitipon ang mga pinakamalamang na bakas para sa landas at oras na iyon (specular na repleksyon, kabuuan ng mga aktibong shower). Mga putol-putol na ulap = mga sporadic na meteor lamang. Hindi iginuguhit ang mga spot na may istasyong nasa labas ng mapa; ang mga kararating lang (wala pang 3 minuto) ay kumikislap nang isang minuto.
 Spot MS raccolti	Mga nakolektang MS spot
 Spot da mostrare	Mga spot na ipapakita
 Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LTE): nessun login, arrivano gia' con i locator di chi trasmette e di chi riceve. Un argomento per riga o separati da ;  formato pskr/filter/v2/banda/modo/call tx/call rx/... (+ = qualsiasi, # = il resto).	Live na mga spot ng PSKReporter sa pamamagitan ng MQTT (mqtt.pskreporter.info, serbisyo ni M0LTE): walang login, dumarating ang mga spot na may locator na ng nagpapadala at ng tumatanggap. Isang topic bawat linya o pinaghihiwalay ng ;  format pskr/filter/v2/band/mode/tx call/rx call/... (+ = kahit ano, # = ang natitira).
 Spot meteor scatter raccolti (i più recenti in alto)	Mga nakolektang spot na meteor scatter (pinakabago sa itaas)
 Stazione	Istasyon
-Stazione        {0}   quota {1:F0} m	Istasyon        {0}   taas {1:F0} m
+Stazione        {0}   quota {1:F0} m	Istasyon        {0}   altitude {1:F0} m
 Stima sperimentale (regole SM6FHZ): meteore/ora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durata dei ping x {4:F3}. Ping massimo IARU a {0:F0} MHz: {5:F0} ms. Valori indicativi, da confrontare con l'esperienza in banda.{6}	Eksperimental na tantiya (mga patakaran ni SM6FHZ): meteor/oras sa {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; tagal ng ping x {4:F3}. Pinakamahabang ping ayon sa IARU sa {0:F0} MHz: {5:F0} ms. Mga tinatayang halaga, ihambing sa karanasan sa banda.{6}
 Svuota la tabella	Linisin ang talahanayan
-Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)	Swan Meteor Skyview ni DL1DBC - swan.ms (sanggunian para sa grapika ng kalangitan)
+Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)	Swan Meteor Skyview ni DL1DBC - swan.ms (sanggunian para sa grapika ng tanaw ng langit)
 Sì	Oo
 Sì · settore {0}	Oo · sektor {0}
 TRATTA	LANDAS
-TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	LAMPAS ANG LANDAS SA HORIZON NG BAKAS: sa mga bakas na {0:F1} km, ang gitnang punto ay {1:F1}° sa ilalim ng horizon. Kailangan ng mga bakas na hindi bababa sa {2:F0} km ang taas: posible lang ang koneksiyon sa pinakamatataas na bakas, nasa hangganan ng modelo ang episyensya at path loss.
+TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	LAMPAS ANG LANDAS SA HORIZON NG BAKAS: sa mga bakas na {0:F1} km, ang gitnang punto ay {1:F1}° sa ilalim ng horizon. Kailangan ng mga bakas na hindi bababa sa {2:F0} km ang taas: posible lang ang QSO sa pinakamatataas na bakas, nasa hangganan ng modelo ang episyensya at path loss.
 Tauridi Nord	Northern Taurids
 Tauridi Sud	Southern Taurids
 Tavistock, Ontario (Canada)	Tavistock, Ontario (Canada)
@@ -437,12 +437,12 @@ Ursidi	Ursids
 Vale per gli spot fuori dalle finestre e per quelli con una scritta di altra propagazione: si tengono se contengono una delle parole accese, in maiuscolo, minuscolo o misto. MSK144, FSK441, PSK2K, JTMS e JT6M sono modi digitali usati solo per il meteor scatter: lo spot è MS di sicuro. <MS> indica genericamente che il collegamento è avvenuto via meteor scatter.	Para sa mga spot na nasa labas ng mga window at sa mga may tag ng ibang propagasyon: iniingatan ang mga ito kung naglalaman ng isa sa mga naka-on na salita, nakasulat man sa malalaki, maliliit o halong titik. Ang MSK144, FSK441, PSK2K, JTMS at JT6M ay mga digital mode na ginagamit lamang para sa meteor scatter: tiyak na MS ang spot. Ang <MS> ay pangkalahatang nagsasabi na ang contact ay ginawa sa pamamagitan ng meteor scatter.
 Valori più prudenti, di partenza: quota delle scie misurata dal radar di Collm (casella "dal radar"), scie normali, angolo β acceso.\nConfronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo): in media 7 dB sotto, con lo stesso andamento orario (scarto di forma circa 3 dB).	Pinakamaingat na mga halaga, panimulang setting: taas ng bakas na sinukat ng Collm radar (kahong "mula sa radar"), karaniwang mga bakas, naka-on ang anggulong β.\nPaghahambing sa mga kurba ni DJ5HG (Quadrantids, mga landas mula Hamburg): sa karaniwan 7 dB na mas mababa, na may parehong takbo bawat oras (paglihis ng hugis mga 3 dB).
 Valori prudenti: scia che attraversa il piano della tratta (β = 90°, caso più sfavorevole), compreso il raggio iniziale della scia (ITU-R P.843) alla quota media degli echi per ciascuna frequenza	Maingat na mga halaga: bakas na tumatawid sa plane ng landas (β = 90°, pinakamasamang kaso), kasama ang unang radius ng bakas (ITU-R P.843) sa karaniwang taas ng mga echo para sa bawat frequency
-Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	Patungo sa inirerekomendang hot spot ng landas GRAVES → ikaw (kahon na Landas), sa mababang elebasyon
+Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	Patungo sa inirerekomendang hot spot ng landas GRAVES → ikaw (kahon na Landas), sa mababang elevation
 Vista dall'alto (E a destra)	Tanaw mula sa itaas (E sa kanan)
 Waterfall	Waterfall
 Wikipedia, "GRAVES (system)" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)	Wikipedia, "GRAVES (system)" – transmitter sa Broye-lès-Pesmes (47.348° N 5.515° E)
 YA-MS - nessuna connessione	YA-MS - walang koneksiyon
-YAEC di IC8TEM – linguetta Radar GRAVES (bozzetto da cui è derivata)	YAEC ni IC8TEM – tab na Radar GRAVES (ang burador na pinagmulan nito)
+YAEC di IC8TEM – linguetta Radar GRAVES (bozzetto da cui è derivata)	YAEC ni IC8TEM – tab na GRAVES radar (ang burador na pinagmulan nito)
 ZHR ora	ZHR ngayon
 ZONA UTILE NEL FASCIO DI GRAVES	MAGAGAMIT NA SONA SA BEAM NG GRAVES
 a DESTRA guardando verso il corrispondente	sa KANAN kung titingin patungo sa DX station
@@ -458,8 +458,8 @@ alfa-Capricornidi	alpha Capricornids
 alfa-Centauridi	alpha Centaurids
 alfa-Monocerotidi	alpha Monocerotids
 ant_radiante.csv: riga ignorata: {0}	ant_radiante.csv: hindi pinansin ang linya: {0}
-antenna verso {0}: az {1:F0}° · el {2:F1}°\nGRAVES in linea diretta: az {3:F0}°	antenna patungo sa {0}: az {1:F0}° · el {2:F1}°\nGRAVES sa tuwirang landas: az {3:F0}°
-antenna {0}°	antenna {0}°
+antenna verso {0}: az {1:F0}° · el {2:F1}°\nGRAVES in linea diretta: az {3:F0}°	antena patungo sa {0}: az {1:F0}° · el {2:F1}°\nGRAVES sa tuwirang landas: az {3:F0}°
+antenna {0}°	antena {0}°
 auto (AMS)	auto (AMS)
 azimut rispetto al corrispondente	azimuth kaugnay ng DX station
 beta-Tauridi diurne	beta Taurids sa araw
@@ -469,7 +469,7 @@ calcolo della tratta GRAVES → te in corso...	kinakalkula ang landas GRAVES →
 circumpolare	circumpolar
 clic destro =	kanang click =
 clic sinistro =	kaliwang click =
-collegamento via meteor scatter	contact sa pamamagitan ng meteor scatter
+collegamento via meteor scatter	QSO sa pamamagitan ng meteor scatter
 comandi dopo il login, separati da ;	mga command pagkatapos ng login, hinihiwalay ng ;
 comando da inviare (es. sh/dx 20)	command na ipapadala (hal. sh/dx 20)
 confermato (QSL o LoTW)	kumpirmado (QSL o LoTW)
@@ -480,7 +480,7 @@ dati CC BY 4.0 (Vida et al. 2021, 2022)	datos CC BY 4.0 (Vida et al. 2021, 2022)
 delta-Aquaridi Sud	Southern delta Aquariids
 eco	echo
 eco attese ≈ {0:F0}/ora (sperimentale: previsione × fascio {1:F0} %)	inaasahang echo ≈ {0:F0}/oras (eksperimental: pagtataya × beam {1:F0} %)
-eco possibile (+{0:F1} s di scia)	posibleng echo (+{0:F1} s ng bakas)
+eco possibile (+{0:F1} s di scia)	posible ang echo (+{0:F1} s ng bakas)
 effic. %	epis. %
 effic. < 20%	epis. < 20%
 effic. >= 20%	epis. >= 20%
@@ -509,7 +509,7 @@ invariato	walang pagbabago
 invariato (controllato alle {0} UTC)	walang pagbabago (sinuri noong {0} UTC)
 kappa-Cygnidi	kappa Cygnids
 kappa-Leonidi diurne	kappa Leonids sa araw
-la mia stazione	ang aking istasyon
+la mia stazione	ang istasyon ko
 la tua stazione	ang iyong istasyon
 lato prevalente {0} ({1:F0}%)	nangingibabaw na panig {0} ({1:F0}%)
 lavorato	nakontak
@@ -517,7 +517,7 @@ lim. A	hang. A
 lim. B	hang. B
 limiti zona comune	mga hangganan ng karaniwang sona
 linguetta "{0}"	tab na "{0}"
-lobo antenna	lobe ng antenna
+lobo antenna	lobe ng antena
 lobo {0}°	lobe {0}°
 locale	lokal
 mai scaricato	hindi pa na-download
@@ -540,7 +540,7 @@ nessuna rete attiva	walang aktibong network
 nessuno sciame utile adesso: hot spot più adatto al fascio	walang magagamit na shower ngayon: hot spot na pinakaangkop sa beam
 nessuno sciame utile in questo giorno	walang magagamit na shower sa araw na ito
 nessuno sciame utile in questo momento	walang magagamit na shower sa sandaling ito
-nominativo	callsign
+nominativo	call sign
 nuova parola	bagong salita
 nuovo dato	bagong datos
 nuovo dato alle {0} UTC	bagong datos noong {0} UTC
@@ -559,9 +559,9 @@ pi-Puppidi	pi Puppids
 prelievo automatico ogni 5 minuti (attivare solo con il permesso di RMOB)	awtomatikong pag-download bawat 5 minuto (i-on lamang kung may pahintulot ng RMOB)
 previsione {0} MHz /ora	pagtataya {0} MHz /oras
 puntamento migliore {0}° / {1}°	pinakamahusay na tutok {0}° / {1}°
-puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km	itutok sa {0:F0}° ({1:+0;-0}° mula sa DX station), elebasyon {2:F1}°, hot spot sa {3:F0} km
+puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km	itutok sa {0:F0}° ({1:+0;-0}° mula sa DX station), elevation {2:F1}°, hot spot sa {3:F0} km
 quasi inattivo	halos hindi aktibo
-quota m	taas m
+quota m	altitude m
 radar SKiYMET 36,2 MHz	SKiYMET radar 36.2 MHz
 radar meteorico 17-38 MHz, orbite	meteor radar 17-38 MHz, mga orbit
 radar meteorico 36,9 MHz	meteor radar 36.9 MHz
@@ -628,8 +628,8 @@ zona PREV	PREV na sona
 {0} {1} - {2:F0} % alle {3} UTC ({4} ora locale)	{0} {1} - {2:F0} % sa {3} UTC ({4} lokal na oras)
 {0} · zona	{0} · sona
 {0}: non lavorato	{0}: hindi pa nakontak
-{0}: {1}  az. da me {2:F0}° (scarto {3:+0;-0}°), dal corrispondente {4:F0}°, distanza {5:F0} km	{0}: {1}  az. mula sa akin {2:F0}° (layo {3:+0;-0}°), mula sa DX station {4:F0}°, distansiya {5:F0} km
-{0}: {1}  az. da me {2:F1}° (scarto {3:+0.0;-0.0}° dalla direzione diretta), dal corrispondente {4:F0}°, distanza {5:F0} km, elevazione {6:F1}°	{0}: {1}  az. mula sa akin {2:F1}° (layo {3:+0.0;-0.0}° mula sa tuwirang direksiyon), mula sa DX station {4:F0}°, distansiya {5:F0} km, elebasyon {6:F1}°
+{0}: {1}  az. da me {2:F0}° (scarto {3:+0;-0}°), dal corrispondente {4:F0}°, distanza {5:F0} km	{0}: {1}  az. mula sa akin {2:F0}° (paglihis {3:+0;-0}°), mula sa DX station {4:F0}°, layo {5:F0} km
+{0}: {1}  az. da me {2:F1}° (scarto {3:+0.0;-0.0}° dalla direzione diretta), dal corrispondente {4:F0}°, distanza {5:F0} km, elevazione {6:F1}°	{0}: {1}  az. mula sa akin {2:F1}° (paglihis {3:+0.0;-0.0}° mula sa tuwirang direksyon), mula sa DX station {4:F0}°, layo {5:F0} km, elevation {6:F1}°
 {0}: {1} QSO	{0}: {1} QSO
 {0}: {1} ore lette.	{0}: {1} oras na nabasa.
 {0}: {1} quadrati lavorati, {2} confermati	{0}: {1} grid square na nakontak, {2} kumpirmado

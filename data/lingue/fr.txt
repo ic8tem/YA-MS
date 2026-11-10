@@ -185,7 +185,7 @@ Hot A/B: hot spot a {0} km dal punto medio, scarto {1}° (tabella AMS di J. Rich
 Hot A: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot A : az. {0:F0}° ({1:+0;-0}°)  {2}
 Hot B	Hot B
 Hot B: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot B : az. {0:F0}° ({1:+0;-0}°)  {2}
-Hot consigliato	Hot conseillé
+Hot consigliato	Hot recommandé
 Hot fuori lobo	Hot hors lobe
 Hot nel lobo	Hot dans le lobe
 Hot spot dal punto medio km	Hot spot depuis le point milieu km
@@ -258,7 +258,7 @@ N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x 
 Natural Earth - coste e confini 1:50 milioni, dominio pubblico, www.naturalearthdata.com (mappa d'Europa)	Natural Earth - côtes et frontières 1:50 millions, domaine public, www.naturalearthdata.com (carte d'Europe)
 Nell'attenuazione (β = 90°, prudente): raggio iniziale della scia {0:F1} dB (r0 = {1:F2} m alla quota media ITU di {2:F1} km per {3:F0} MHz). Con la scia nel piano della tratta (β = 0°, caso migliore) l'attenuazione scende a {4:F1} dB ({5:F1} dB) e il margine sale a {6:+0.0;-0.0} dB	Dans l'affaiblissement (β = 90°, prudent) : rayon initial de la traînée {0:F1} dB (r0 = {1:F2} m à l'altitude moyenne ITU de {2:F1} km pour {3:F0} MHz). Avec la traînée dans le plan du trajet (β = 0°, cas le plus favorable), l'affaiblissement descend à {4:F1} dB ({5:F1} dB) et la marge monte à {6:+0.0;-0.0} dB
 Nero	Noir
-Nessun Hot consigliato: sciami attivi quasi assenti in questo momento	Aucun Hot conseillé : presque aucun essaim actif en ce moment
+Nessun Hot consigliato: sciami attivi quasi assenti in questo momento	Aucun Hot recommandé : presque aucun essaim actif en ce moment
 Nessun dato GMN: premi "Scarica adesso".	Aucune donnée GMN : appuyez sur "Télécharger maintenant".
 Nessun dato del radar: scaricalo dalla sottolinguetta Live e dati real-time › Flusso radar.	Aucune donnée radar : téléchargez-la depuis le sous-onglet Direct et données en temps réel › Flux radar.
 Nessuna fonte Collm in fonti_radar.csv	Aucune source Collm dans fonti_radar.csv
@@ -319,7 +319,7 @@ Previsione {0} /ora	Prévision {0} /heure
 Previsione {0} MHz (rifl./ora)	Prévision {0} MHz (réfl./heure)
 Pronto	Prêt
 Prossimo massimo (UTC)	Prochain maximum (UTC)
-Prova del filtro	Test du filtre
+Prova del filtro	Essai du filtre
 Prudente	Prudent
 Punt. migliore	Meilleur point.
 Puntamento {0:F0}°: Hot A {1}, Hot B {2}	Pointage {0:F0}° : Hot A {1}, Hot B {2}
@@ -437,7 +437,7 @@ Ursidi	Ursides
 Vale per gli spot fuori dalle finestre e per quelli con una scritta di altra propagazione: si tengono se contengono una delle parole accese, in maiuscolo, minuscolo o misto. MSK144, FSK441, PSK2K, JTMS e JT6M sono modi digitali usati solo per il meteor scatter: lo spot è MS di sicuro. <MS> indica genericamente che il collegamento è avvenuto via meteor scatter.	S'applique aux spots hors des fenêtres et à ceux qui portent une mention d'une autre propagation : ils sont conservés s'ils contiennent un des mots activés, écrit en majuscules, minuscules ou mélangés. MSK144, FSK441, PSK2K, JTMS et JT6M sont des modes numériques utilisés uniquement pour le meteor scatter : le spot est MS à coup sûr. <MS> indique de façon générique que la liaison a été faite par meteor scatter.
 Valori più prudenti, di partenza: quota delle scie misurata dal radar di Collm (casella "dal radar"), scie normali, angolo β acceso.\nConfronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo): in media 7 dB sotto, con lo stesso andamento orario (scarto di forma circa 3 dB).	Valeurs les plus prudentes, réglage de départ : altitude des traînées mesurée par le radar de Collm (case "du radar"), traînées normales, angle β activé.\nComparaison avec les courbes de DJ5HG (Quadrantides, trajets depuis Hambourg) : en moyenne 7 dB en dessous, avec la même évolution horaire (écart de forme d'environ 3 dB).
 Valori prudenti: scia che attraversa il piano della tratta (β = 90°, caso più sfavorevole), compreso il raggio iniziale della scia (ITU-R P.843) alla quota media degli echi per ciascuna frequenza	Valeurs prudentes : traînée qui traverse le plan du trajet (β = 90°, cas le plus défavorable), y compris le rayon initial de la traînée (ITU-R P.843) à l'altitude moyenne des échos pour chaque fréquence
-Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	Vers le hot spot conseillé du trajet GRAVES → vous (cadre Trajet), à faible élévation
+Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	Vers le hot spot recommandé du trajet GRAVES → vous (cadre Trajet), à faible élévation
 Vista dall'alto (E a destra)	Vue de dessus (E à droite)
 Waterfall	Waterfall
 Wikipedia, "GRAVES (system)" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)	Wikipedia, "GRAVES (system)" – émetteur à Broye-lès-Pesmes (47,348° N 5,515° E)
@@ -615,8 +615,8 @@ zona PREV	zone PREV
 {0} UTC (momento del calcolo)	{0} UTC (instant du calcul)
 {0} UTC (tempo reale)	{0} UTC (temps réel)
 {0} UTC · {1:F1} kHz · {2:F0} km	{0} UTC · {1:F1} kHz · {2:F0} km
-{0} consigliato ora: az. {1}°	{0} conseillé maintenant : az. {1}°
-{0} consigliato ora: az. {1}° ({2}% delle riflessioni previste)	{0} conseillé maintenant : az. {1}° ({2}% des réflexions prévues)
+{0} consigliato ora: az. {1}°	{0} recommandé maintenant : az. {1}°
+{0} consigliato ora: az. {1}° ({2}% delle riflessioni previste)	{0} recommandé maintenant : az. {1}° ({2}% des réflexions prévues)
 {0} contatti sulla mappa · {1} fuori dalla mappa · {2} senza locator	{0} contacts sur la carte · {1} hors de la carte · {2} sans locator
 {0} dB rispetto al riferimento di DJ5HG	{0} dB par rapport à la référence de DJ5HG
 {0} da GRAVES: az {1:F1}° · el {2:F1}° (passo {3} di 6)	{0} depuis GRAVES : az {1:F1}° · él {2:F1}° (pas {3} sur 6)

@@ -16,18 +16,40 @@
 
 ## שפה
 
-שש שפות ממשק:
+28 שפות ממשק, אותן שפות כמו ב-YAEC וב-E-LAYER ANALYZER (מונחים משותפים עם YAEC מתורגמים באותו אופן):
 
 | שפה | קוד | קובץ |
 |---|---|---|
 | Italiano | `it` | אין: האיטלקית היא שפת הבסיס (המפתחות) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
-בהפעלה הראשונה YA-MS משתמשת ב**שפת המערכת** אם היא אחת מאלה, אחרת באיטלקית. מספרים ותאריכים עוקבים אחר השפה שנבחרה (למשל נקודה עשרונית באנגלית, פסיק באיטלקית ובגרמנית). כל טקסט החסר בקובץ תרגום מוצג באיטלקית. ב-Linux, יפנית דורשת גופנים מתאימים: ראו [פתרון תקלות](Troubleshooting-FAQ-he#linux-טקסט-יפני-מוצג-כריבועים).
+בהפעלה הראשונה YA-MS משתמשת ב**שפת המערכת** אם היא אחת מאלה, אחרת באיטלקית. מספרים ותאריכים עוקבים אחר השפה שנבחרה (למשל נקודה עשרונית באנגלית, פסיק באיטלקית ובגרמנית). כל טקסט החסר בקובץ תרגום מוצג באיטלקית. ב-Linux, סינית, יפנית, קוריאנית, ערבית, עברית, אורדו, הינדי ובנגלית דורשות גופנים מתאימים (למשל משפחות Noto): ראו [פתרון תקלות](Troubleshooting-FAQ-he#linux-טקסט-יפני-מוצג-כריבועים).
 
 המסמך [יעילות - הסבר](Efficiency-Explanation-he) ומדריך החישובים הם באיטלקית.
 
@@ -100,7 +122,7 @@
 | `elevazione_lobo_gradi` | 0 | הגבהת האונה (°) |
 | `boom_m` | 4.6 | אורך בום היאגי (m) |
 | `hot_spot_km` | 150 | המרחק של Hot A / Hot B מנקודת האמצע (30–400 km) |
-| `lingua` | מערכת / `it` | קוד שפה (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | מערכת / `it` | קוד שפה (אחד מ-28 הקודים שלמעלה, למשל `it`, `en`, `de`) |
 | `tema` | `chiaro` | ערכת צבעים: `chiaro` (בהיר), `scuro` (לילה), `nero` (שחור), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (שובל מטאורי) |
 | `carattere_pct` | 100 | גודל גופן (100–300 %) |
 | `comandi_visibili` | 1 | ‏1 = שורות הפקדים מוצגות, 0 = מקופלות |

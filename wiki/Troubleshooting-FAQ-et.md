@@ -22,7 +22,7 @@ Käivita `./installa.sh` lahtipakitud kaustast (mitte kaustast `~/YA-MS`). Mõne
 ## Kuvamine
 
 ### Linux: jaapani tekst kuvatakse kastikestena
-Sinu süsteemis puuduvad CJK-fondid. Paigalda **Noto CJK** fondid ja käivita YA-MS uuesti:
+Sinu süsteemis puuduvad CJK-fondid (hiina, jaapani, korea). Paigalda **Noto CJK** fondid ja käivita YA-MS uuesti. Sama juhtub araabia, heebrea, urdu, hindi ja bengali keelega: Debianis, Ubuntus ja Raspberry Pi OS-is paigalda ka `fonts-noto-core`.
 
 | Distributsioon | Käsk |
 |---|---|

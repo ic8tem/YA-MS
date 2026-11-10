@@ -34,7 +34,7 @@ Attività	Aktivität
 Attuazione sperimentale previsioni	Experimentelle Vorhersage
 Aurigidi	Aurigiden
 Azimut	Azimut
-BILANCIO A {0:F0} MHz (punto medio)	BILANZ BEI {0:F0} MHz (Mittelpunkt)
+BILANCIO A {0:F0} MHz (punto medio)	BUDGET BEI {0:F0} MHz (Mittelpunkt)
 Banda MHz	Band MHz
 Bolidozor wiki, "Graves" – schiere, settori e tempi del fascio	Bolidozor-Wiki, „Graves“ – Antennenfelder, Sektoren und Strahlzeiten
 Bootidi di giugno	Juni-Bootiden
@@ -152,7 +152,7 @@ Klaus von der Heide DJ5HG - QTFGUI (aurora, FAI e meteor scatter) e manuale "QTF
 L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data (verifica delle due regole);\n    Appreciating DL6WU Wide-Band Long-Boom Yagi Design e 70-CM Yagi Stacks Part 2 (Yagi VK3AUU di David Tanner):\n    simulazioni NEC usate per verificare la curva del guadagno e correggere il lobo orizzontale (0,93 x Kraus)	L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data (Prüfung der beiden Regeln);\n    Appreciating DL6WU Wide-Band Long-Boom Yagi Design und 70-CM Yagi Stacks Part 2 (Yagi VK3AUU von David Tanner):\n    NEC-Simulationen zur Prüfung der Gewinnkurve und Korrektur der horizontalen Keule (0,93 x Kraus)
 LIMITI DELLA ZONA COMUNE (incroci delle curve dove l'orizzonte di ciascuna stazione incontra lo strato E, articolo)	GRENZEN DER GEMEINSAMEN ZONE (Schnittpunkte der Kurven, an denen der Horizont jeder Station die E-Schicht trifft, Artikel)
 La scala del grafico delle quote e' cambiata: le statistiche delle quote (moda, media, mediana) restano valide, i conteggi assoluti no.	Die Skala des Höhendiagramms hat sich geändert: die Höhenstatistik (Modalwert, Mittel, Median) bleibt gültig, die absoluten Zählwerte nicht.
-La sequenza del fascio si calcola con l'orologio del PC: sincronizzalo con un server NTP (errore di pochi decimi di secondo al massimo).	Die Strahlfolge wird aus der PC-Uhr berechnet: synchronisiere sie mit einem NTP-Server (Fehler höchstens wenige Zehntelsekunden).
+La sequenza del fascio si calcola con l'orologio del PC: sincronizzalo con un server NTP (errore di pochi decimi di secondo al massimo).	Die Strahlsequenz wird aus der PC-Uhr berechnet: synchronisiere sie mit einem NTP-Server (Fehler höchstens wenige Zehntelsekunden).
 La sequenza è legata all'ora UTC (PE1ITR): dal 2021 i passi durano 0,8 s e il ciclo di un settore 4,8 s; nel 2007 erano 3,2 s e 19,2 s. La stazione di comando a volte sposta la sequenza di qualche passo: il dettaglio è una previsione da confermare con l'ascolto. Una scia si sente solo se il fascio la illumina mentre dura: probabilità ≈ min(1, (passo + scia) / ciclo) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (durata tipica di una scia sottodensa a 143 MHz ≈ {1:F1} s).	Die Folge ist an UTC gebunden (PE1ITR): seit 2021 dauert jeder Schritt 0,8 s und ein Sektorzyklus 4,8 s; 2007 waren es 3,2 s und 19,2 s. Die Kommandostation verschiebt die Folge manchmal um einige Schritte: das Detail ist eine Vorhersage, die durch Abhören zu bestätigen ist. Eine Spur ist nur hörbar, wenn der Strahl sie während ihrer Dauer beleuchtet: Wahrscheinlichkeit ≈ min(1, (Schritt + Spur) / Zyklus) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (typische Dauer einer unterdichten Spur bei 143 MHz ≈ {1:F1} s).
 Lato	Seite
 Lato A = a sinistra della tratta, B = a destra	Seite A = links der Strecke, B = rechts
@@ -262,7 +262,7 @@ Sciame più favorevole	Günstigster Strom
 Sciami	Ströme
 Scrivi il nome dell'osservatore RMOB come compare nel nome del suo file (es. NOME_112026rmob.TXT -> NOME).	Namen des RMOB-Beobachters so eingeben, wie er im Dateinamen steht (z. B. NAME_112026rmob.TXT -> NAME).
 Segnale minimo dBm	Min. Signal dBm
-Sequenza del fascio	Strahlfolge
+Sequenza del fascio	Strahlsequenz
 Servono sia i dati di Collm sia un file RMOB delle stesse ore.	Benötigt werden Collm-Daten und eine RMOB-Datei derselben Stunden.
 Sextantidi diurne	Tages-Sextantiden
 Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)	Shelby W8WN - qsl.net/w8wn/hscw (optimale Elevation und Ablage)
@@ -296,7 +296,7 @@ Vista dall'alto (E a destra)	Draufsicht (O rechts)
 Waterfall	Waterfall
 Wikipedia, "GRAVES (system)" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)	Wikipedia, „GRAVES (system)“ – Sender bei Broye-lès-Pesmes (47,348° N 5,515° O)
 YA-MS - nessuna connessione	YA-MS - keine Verbindung
-YAEC di IC8TEM – linguetta Radar GRAVES (bozzetto da cui è derivata)	YAEC von IC8TEM – Reiter Radar GRAVES (Entwurf, aus dem dieser abgeleitet ist)
+YAEC di IC8TEM – linguetta Radar GRAVES (bozzetto da cui è derivata)	YAEC von IC8TEM – Reiter GRAVES-Radar (Entwurf, aus dem dieser abgeleitet ist)
 ZHR ora	ZHR jetzt
 ZONA UTILE NEL FASCIO DI GRAVES	NUTZBARE ZONE IM STRAHL VON GRAVES
 a cura di Costantino IC8TEM	von Costantino IC8TEM

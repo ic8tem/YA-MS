@@ -16,18 +16,40 @@ Kapag pinalitan ang wika o tema, sine-save ang mga setting at **muling binubuo a
 
 ## Wika
 
-Anim na wika ng interface:
+28 na wika ng interface, pareho ng sa YAEC at E-LAYER ANALYZER (pareho ang salin ng mga terminong kapareho ng sa YAEC):
 
 | Wika | Kodigo | File |
 |---|---|---|
 | Italiano | `it` | wala: Italyano ang batayang wika (ang mga key) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
-Sa unang pagsisimula, ginagamit ng YA-MS ang **wika ng sistema** kung isa ito sa mga ito, kung hindi ay Italyano. Sumusunod sa napiling wika ang mga numero at petsa (hal. tuldok bilang decimal sa Ingles, kuwit sa Italyano at Aleman). Anumang tekstong nawawala sa isang file ng salin ay ipinapakita sa Italyano. Sa Linux, kailangan ng angkop na font ang Hapones: tingnan ang [Pag-troubleshoot](Troubleshooting-FAQ-tl#linux-lumalabas-na-mga-kahon-ang-tekstong-hapones).
+Sa unang pagsisimula, ginagamit ng YA-MS ang **wika ng sistema** kung isa ito sa mga ito, kung hindi ay Italyano. Sumusunod sa napiling wika ang mga numero at petsa (hal. tuldok bilang decimal sa Ingles, kuwit sa Italyano at Aleman). Anumang tekstong nawawala sa isang file ng salin ay ipinapakita sa Italyano. Sa Linux, kailangan ng angkop na font (hal. ang mga pamilyang Noto) ang Tsino, Hapones, Koreano, Arabe, Hebreo, Urdu, Hindi at Bengali: tingnan ang [Pag-troubleshoot](Troubleshooting-FAQ-tl#linux-lumalabas-na-mga-kahon-ang-tekstong-hapones).
 
 Nasa Italyano ang dokumentong [Episyensya - paliwanag](Efficiency-Explanation-tl) at ang manwal ng kalkulasyon.
 
@@ -100,7 +122,7 @@ Simpleng teksto, isang `key=value` bawat linya (komento ang mga linyang nagsisim
 | `elevazione_lobo_gradi` | 0 | Elebasyon ng lobe (°) |
 | `boom_m` | 4.6 | Haba ng boom ng Yagi (m) |
 | `hot_spot_km` | 150 | Distansiya ng Hot A / Hot B mula sa gitnang punto (30–400 km) |
-| `lingua` | sistema / `it` | Kodigo ng wika (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | sistema / `it` | Kodigo ng wika (isa sa 28 kodigo sa itaas, hal. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Scheme ng kulay: `chiaro` (Maliwanag), `scuro` (Gabi), `nero` (Itim), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Bakas ng meteor) |
 | `carattere_pct` | 100 | Laki ng font (100–300 %) |
 | `comandi_visibili` | 1 | 1 = nakikita ang mga hanay ng kontrol, 0 = nakatiklop |

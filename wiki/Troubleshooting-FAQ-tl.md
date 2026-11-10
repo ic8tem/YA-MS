@@ -22,7 +22,7 @@ Patakbuhin ang `./installa.sh` mula sa na-extract na folder (hindi mula sa `~/YA
 ## Display
 
 ### Linux: lumalabas na mga kahon ang tekstong Hapones
-Walang CJK na font ang iyong sistema. I-install ang mga font na **Noto CJK** at i-restart ang YA-MS:
+Walang CJK na font (Tsino, Hapones, Koreano) ang iyong sistema. I-install ang mga font na **Noto CJK** at i-restart ang YA-MS. Ganoon din sa Arabe, Hebreo, Urdu, Hindi at Bengali: sa Debian, Ubuntu at Raspberry Pi OS, i-install din ang `fonts-noto-core`.
 
 | Distribusyon | Command |
 |---|---|

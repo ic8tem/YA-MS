@@ -16,18 +16,40 @@
 
 ## 언어
 
-인터페이스 언어 6가지:
+인터페이스 언어 28가지로, YAEC 및 E-LAYER ANALYZER와 같습니다(YAEC와 공통인 용어는 같은 방식으로 번역했습니다):
 
 | 언어 | 코드 | 파일 |
 |---|---|---|
 | Italiano | `it` | 없음: 이탈리아어가 기본 언어(키) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
-처음 실행할 때 YA-MS는 **시스템 언어**가 이 중 하나이면 그 언어를, 아니면 이탈리아어를 사용합니다. 숫자와 날짜는 선택한 언어를 따릅니다(예: 영어는 소수점, 이탈리아어와 독일어는 쉼표). 번역 파일에 없는 텍스트는 이탈리아어로 표시됩니다. Linux에서 일본어를 표시하려면 알맞은 글꼴이 필요합니다: [문제 해결](Troubleshooting-FAQ-ko#linux-일본어-문자가-네모로-표시됨)을 참조하세요.
+처음 실행할 때 YA-MS는 **시스템 언어**가 이 중 하나이면 그 언어를, 아니면 이탈리아어를 사용합니다. 숫자와 날짜는 선택한 언어를 따릅니다(예: 영어는 소수점, 이탈리아어와 독일어는 쉼표). 번역 파일에 없는 텍스트는 이탈리아어로 표시됩니다. Linux에서 중국어, 일본어, 한국어, 아랍어, 히브리어, 우르두어, 힌디어, 벵골어를 표시하려면 알맞은 글꼴(예: Noto 계열)이 필요합니다: [문제 해결](Troubleshooting-FAQ-ko#linux-일본어-문자가-네모로-표시됨)을 참조하세요.
 
 [효율 - 설명](Efficiency-Explanation-ko) 문서와 계산 매뉴얼은 이탈리아어로 되어 있습니다.
 
@@ -100,7 +122,7 @@
 | `elevazione_lobo_gradi` | 0 | 로브 앙각(°) |
 | `boom_m` | 4.6 | 야기 붐 길이(m) |
 | `hot_spot_km` | 150 | 중간점에서 Hot A / Hot B까지 거리(30–400 km) |
-| `lingua` | 시스템 / `it` | 언어 코드(`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | 시스템 / `it` | 언어 코드(위의 28개 코드 중 하나, 예: `it`, `en`, `de`) |
 | `tema` | `chiaro` | 색 구성: `chiaro`(밝음), `scuro`(야간), `nero`(검정), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia`(유성 흔적) |
 | `carattere_pct` | 100 | 글꼴 크기(100–300 %) |
 | `comandi_visibili` | 1 | 1 = 조작 항목 표시, 0 = 접음 |

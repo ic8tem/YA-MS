@@ -22,7 +22,7 @@ M1/M2/M3/M4 处理器用 `-mac-apple-silicon.dmg`，Intel Mac 用 `-mac-intel.dm
 ## 显示
 
 ### Linux 下日文显示为方框
-您的系统缺少 CJK 字体。请安装 **Noto CJK** 字体并重新启动 YA-MS：
+您的系统缺少 CJK 字体（中文、日语、韩语）。请安装 **Noto CJK** 字体并重新启动 YA-MS。阿拉伯语、希伯来语、乌尔都语、印地语和孟加拉语也会出现同样的情况：在 Debian、Ubuntu 和 Raspberry Pi OS 上还需安装 `fonts-noto-core`。
 
 | 发行版 | 命令 |
 |---|---|

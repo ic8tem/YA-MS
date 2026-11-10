@@ -24,7 +24,7 @@ ATTENZIONE: {0} e {1} entrano nel lobo dell'antenna ({2}° a -3 dB attorno a {3}
 ATTENZIONE: {0} entra nel lobo dell'antenna ({1}° a -3 dB attorno a {2}°): con questo puntamento e' gia' coperto. Segnati in grigio sulla mappa.	انتباہ: {0} اینٹینا لوب کے اندر ہے ({2}° کے گرد -3 dB پر {1}°): اس رخ سے یہ پہلے ہی شامل ہے۔ نقشے پر سرمئی رنگ میں دکھایا گیا ہے۔
 Accesa (prudente, di partenza): la potenza di ogni scia segue la formula completa di McKinley e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ): le scie che attraversano il piano della tratta valgono 10-15 dB meno di quelle che vi giacciono, e nessuna scia è sopravvalutata.\nEffetto: prevalgono i radianti allineati alla tratta, non quelli perpendicolari; le curve di DJ5HG seguono meglio l'andamento orario, con i minimi profondi quando il radiante è basso.\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6: segue la regola dei radianti perpendicolari alla tratta (SM6FHZ, DH9GCD), ma sopravvaluta le scie che attraversano il piano.	چالو (محتاط، ابتدائی ترتیب): ہر لکیر کی طاقت McKinley اور ITU-R P.843 کے مکمل فارمولے 1 / (1 − cos²β sin²φ) کے مطابق ہے: راستے کے مستوی کو کاٹنے والی لکیریں اس میں پڑی لکیروں سے 10-15 dB کم دیتی ہیں، اور کسی لکیر کا زیادہ اندازہ نہیں لگایا جاتا۔\nاثر: راستے کے ساتھ ہم سمت ریڈیئنٹس غالب رہتے ہیں، عمودی نہیں؛ DJ5HG کے منحنی خطوط گھنٹہ وار بہتر طور پر ملتے ہیں، اور ریڈیئنٹ نیچے ہونے پر گہری کم ترین قدریں آتی ہیں۔\nبند: ہر لکیر کو ایسے وزن دیا جاتا ہے جیسے وہ راستے کے مستوی میں ہو (β = 0)، جیسا کہ ورژن 1.6 تک تھا: راستے پر عمودی ریڈیئنٹس کے اصول پر چلتی ہے (SM6FHZ, DH9GCD)، لیکن مستوی کو کاٹنے والی لکیروں کا زیادہ اندازہ لگاتی ہے۔
 Adesso	ابھی
-Aggiornamento automatico di tutte le fonti ogni 5 minuti	تمام ذرائع کی ہر 5 منٹ بعد خودکار تازہ کاری
+Aggiornamento automatico di tutte le fonti ogni 5 minuti	تمام ماخذ کی ہر 5 منٹ بعد خودکار تازہ کاری
 Aggiungi	شامل کریں
 Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, quando CALL3 ha il locator a 6 caratteri.	نامکمل لوکیٹر (صرف 4 حروف) بھی CALL3 سے لیے جاتے ہیں، جب CALL3 میں 6 حروف والا لوکیٹر موجود ہو۔
 Andromedidi	اینڈرومیڈڈز
@@ -67,7 +67,7 @@ Calcolo previsionale	پیش گوئی کا حساب
 Camelopardalidi di ottobre	اکتوبر کیمیلوپارڈالڈز
 Cancella memoria	میموری صاف کریں
 Cancellare tutti i quadrati caricati dal file ADIF?	ADIF فائل سے لوڈ کیے گئے تمام مربعے حذف کریں؟
-Capitoli: introduzione, strato E, geometria, radiante, riflessione, efficienza, lettura dei risultati, frequenza, limiti, fonti	ابواب: تعارف، E تہہ، جیومیٹری، ریڈیئنٹ، انعکاس، کارکردگی، نتائج کی تشریح، فریکوئنسی، حدود، ذرائع
+Capitoli: introduzione, strato E, geometria, radiante, riflessione, efficienza, lettura dei risultati, frequenza, limiti, fonti	ابواب: تعارف، E تہہ، جیومیٹری، ریڈیئنٹ، انعکاس، کارکردگی، نتائج کی تشریح، فریکوئنسی، حدود، ماخذ
 Carattere	فونٹ
 Carica file ADIF...	ADIF فائل لوڈ کریں...
 Carica file RMOB dal disco...	ڈسک سے RMOB فائل لوڈ کریں...
@@ -94,7 +94,7 @@ Connetti	جوڑیں
 Connetti all'avvio	آغاز پر جوڑیں
 Contatori	کاؤنٹر
 Conteggio	گنتی
-Controllo le fonti di dati esterne...	بیرونی ڈیٹا ذرائع کی جانچ ہو رہی ہے...
+Controllo le fonti di dati esterne...	بیرونی ڈیٹا ماخذ کی جانچ ہو رہی ہے...
 Corrispondente	DX اسٹیشن
 Corrispondente  {0}   quota {1:F0} m	DX اسٹیشن      {0}   اونچائی {1:F0} m
 Costantino Cerrotta IC8TEM, Gianluigi "Gigi" Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese" (articolo, versione 7).	Costantino Cerrotta IC8TEM, Gianluigi "Gigi" Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese" (اطالوی زبان میں مضمون، ورژن 7)۔
@@ -105,9 +105,9 @@ DENTRO il lobo	لوب کے اندر
 DM4X (PSKReporter)	DM4X (PSKReporter)
 DX cluster	DX cluster
 DX cluster a scelta	اپنی پسند کا DX cluster
-Da qui: scie nello strato E a circa 90 km (radar SKiYMET), formula dell'elevazione, Hot A / Hot B, side-scatter, attenuazione di tratta, durata dei ping IARU.	یہاں سے: E تہہ میں تقریباً 90 km پر شہابی لکیریں (SKiYMET ریڈار)، ارتفاع کا فارمولا، Hot A / Hot B، side-scatter، راستے کا نقصان، IARU پنگ کا دورانیہ۔
+Da qui: scie nello strato E a circa 90 km (radar SKiYMET), formula dell'elevazione, Hot A / Hot B, side-scatter, attenuazione di tratta, durata dei ping IARU.	یہاں سے: E تہہ میں تقریباً 90 km پر شہابی لکیریں (SKiYMET ریڈار)، بلندی کا فارمولا، Hot A / Hot B، side-scatter، راستے کا نقصان، IARU پنگ کا دورانیہ۔
 Data del calcolo (UTC)	حساب کی تاریخ (UTC)
-Decl.	Dec.
+Decl.	میلان
 Densita' della scia q = {0:E1} elettroni/m. Riferimenti: 172-190 dB (calcoli di G4BAO citati da GM8JBJ), 200 dB medio a 144 MHz (OH5IY)	لکیر کی کثافت q = {0:E1} الیکٹران/m۔ حوالے: 172-190 dB (G4BAO کے حسابات جن کا GM8JBJ نے حوالہ دیا)، 144 MHz پر اوسط 200 dB (OH5IY)
 Densita' scia q = 10^	لکیر کی کثافت q = 10^
 Dettaglio dei prossimi {0:F0} s: la zona utile non è in nessun passo del fascio	اگلے {0:F0} s کی تفصیل: مفید زون بیم کے کسی قدم میں نہیں
@@ -115,11 +115,11 @@ Dettaglio dei prossimi {0:F0} s: passi del settore {1} ({2:F1} s ciascuno) e pas
 Direzioni Hot A / Hot B	Hot A / Hot B سمتیں
 Disconnesso	منقطع
 Disconnetti	منقطع کریں
-Distanza        {0:F0} km   azimut {1:F1}°   (dal corrispondente {2:F1}°)	فاصلہ        {0:F0} km   سمتیہ {1:F1}°   (DX اسٹیشن سے {2:F1}°)
+Distanza        {0:F0} km   azimut {1:F1}°   (dal corrispondente {2:F1}°)	فاصلہ        {0:F0} km   ایزیمتھ {1:F1}°   (DX اسٹیشن سے {2:F1}°)
 Documenti tecnici	تکنیکی دستاویزات
 Documento Word	Word دستاویز
-Documento esportato: {0}	دستاویز برآمد ہو گئی: {0}
-Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	براہِ راست ڈیٹا کے ذرائع کہاں ہیں۔ ڈیشڈ دائرے = ریڈار کو نظر آنے والا آسمان کا حصہ (اسٹیشن کے گرد تقریباً 300 km، شہابی لکیریں 90 km پر): کوئی ریڈار آپ کے راستے کے اوپر کا آسمان نہیں دیکھتا، ڈیٹا بتاتا ہے کہ شہابی بارش کتنی فعال ہے۔ نقطہ دار لکیریں = آپ کے اسٹیشن سے فاصلہ۔
+Documento esportato: {0}	دستاویز ایکسپورٹ ہو گئی: {0}
+Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	براہِ راست ڈیٹا کے ماخذ کہاں ہیں۔ ڈیشڈ دائرے = ریڈار کو نظر آنے والا آسمان کا حصہ (اسٹیشن کے گرد تقریباً 300 km، شہابی لکیریں 90 km پر): کوئی ریڈار آپ کے راستے کے اوپر کا آسمان نہیں دیکھتا، ڈیٹا بتاتا ہے کہ شہابی بارش کتنی فعال ہے۔ نقطہ دار لکیریں = آپ کے اسٹیشن سے فاصلہ۔
 Draconidi di ottobre	اکتوبر ڈریکونڈز
 E	E
 EFFICIENZA DELLA TRATTA GRAVES → TE ADESSO	GRAVES → آپ، راستے کی موجودہ کارکردگی
@@ -127,10 +127,10 @@ Effic. %	کارکردگی %
 Efficienza - spiegazione	کارکردگی - وضاحت
 Efficienza oraria per {0} del {1} (UTC, valori a metà ora)	{0} کے لیے {1} کی گھنٹہ وار کارکردگی (UTC، ہر گھنٹے کے نصف پر قدریں)
 Efficienza tratta GRAVES → te	GRAVES → آپ راستے کی کارکردگی
-Elev.	ارتفاع
-Elevazione d'antenna in funzione della distanza dallo scatter point	scatter point سے فاصلے کے لحاظ سے اینٹینا کا ارتفاع
-Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)	وسطی نقطے کی طرف اینٹینا کا ارتفاع: {0:F1}°   (مضمون کا فارمولا، تصویر 7)
-Elevazione lobo °	لوب کا ارتفاع °
+Elev.	بلندی
+Elevazione d'antenna in funzione della distanza dallo scatter point	scatter point سے فاصلے کے لحاظ سے اینٹینا کی بلندی
+Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)	وسطی نقطے کی طرف اینٹینا کی بلندی: {0:F1}°   (مضمون کا فارمولا، تصویر 7)
+Elevazione lobo °	لوب کی بلندی °
 Errore all'avvio: {0}	آغاز پر خرابی: {0}
 Errore: {0}	خرابی: {0}
 Esponente	قوت نما
@@ -138,12 +138,12 @@ Esponente dal confronto RMOB	RMOB موازنے سے قوت نما
 Esponente non calcolabile con questi dati.	اس ڈیٹا سے قوت نما کا حساب ممکن نہیں۔
 Esponente λ (SM6FHZ)	λ قوت نما (SM6FHZ)
 Esponente λ^k	λ^k قوت نما
-Esporta	برآمد کریں
-Esporta il documento in Word	دستاویز Word میں برآمد کریں
-Esporta in Word (.docx)...	Word میں برآمد کریں (.docx)...
+Esporta	ایکسپورٹ کریں
+Esporta il documento in Word	دستاویز Word میں ایکسپورٹ کریں
+Esporta in Word (.docx)...	Word میں ایکسپورٹ کریں (.docx)...
 Europa	یورپ
 FONTE PRINCIPALE	مرکزی ماخذ
-FONTI	ذرائع
+FONTI	ماخذ
 Fattore di stazione K	اسٹیشن فیکٹر K
 File ADIF	ADIF فائل
 File ADIF del log	لاگ کی ADIF فائل
@@ -152,7 +152,7 @@ File RMOB (conteggi orari del mese)	RMOB فائل (مہینے کی گھنٹہ و
 File mancante: {0}	فائل موجود نہیں: {0}
 Filtro	فلٹر
 Filtro degli spot meteor scatter	meteor scatter اسپاٹس کا فلٹر
-Finestra utile	مفید وقفہ
+Finestra utile	قابلِ استعمال ونڈو
 Flusso radar	ریڈار فلکس
 Flusso radar: nessun dato. Premi "Scarica adesso".	ریڈار فلکس: کوئی ڈیٹا نہیں۔ "ابھی ڈاؤن لوڈ کریں" دبائیں۔
 Fonte	ماخذ
@@ -163,7 +163,7 @@ Formato file mensile, {0}/{1}.	ماہانہ فائل فارمیٹ، {0}/{1}۔
 Formato tabella del bollettino ({0}/{1}): se il file contiene piu' osservatori vengono letti di seguito, usa un file con un solo osservatore.	بلیٹن ٹیبل فارمیٹ ({0}/{1}): اگر فائل میں کئی مشاہدین ہوں تو وہ یکے بعد دیگرے پڑھے جاتے ہیں؛ صرف ایک مشاہد والی فائل استعمال کریں۔
 Foto	تصویر
 Frequenza di arrivo MHz	ہدف فریکوئنسی MHz
-G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook	G3WZT, DH8BQA, geekshed.co.uk، WSJT-X کتابچہ، WB2FKO (پنگ)، IU6GIR (143.050 MHz سرگرمی)، IARU Region 1 VHF Handbook
+G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook	G3WZT, DH8BQA, geekshed.co.uk، WSJT-X مینوئل، WB2FKO (پنگ)، IU6GIR (143.050 MHz سرگرمی)، IARU Region 1 VHF Handbook
 GEOMETRIA DELLA TRATTA (Terra sferica, R = 6372,7955 km)	راستے کی جیومیٹری (کروی زمین، R = 6372.7955 km)
 GMN e CMOR alle {0} UTC: {1} errori ({2})	GMN اور CMOR، {0} UTC پر: {1} خرابیاں ({2})
 GMN e CMOR controllati alle {0} UTC ({1} file nuovi). Dati GMN: CC BY 4.0.	GMN اور CMOR کی جانچ {0} UTC پر کی گئی ({1} نئی فائلیں)۔ GMN ڈیٹا: CC BY 4.0۔
@@ -203,7 +203,7 @@ In forward scatter la durata cresce anche con sec²φ (φ = {0:F0}° al punto me
 Indice della tratta Σ ZHR×η: {0}	راستے کا اشاریہ Σ ZHR×η: {0}
 Indice sciami tratta	راستے کا شہابی بارش اشاریہ
 Indice tratta (ZHR×eff.)	راستے کا اشاریہ (ZHR×کارکردگی)
-Indirizzo mancante	پتا موجود نہیں
+Indirizzo mancante	پتہ موجود نہیں
 Ingolf SM6FHZ - "432 MHz Meteorscatter, Challenges and Techniques", 45th Nordic VUSHF, maggio 2025 (regole lambda^3 e lambda^2, punto medio, direzione migliore)	Ingolf SM6FHZ - "432 MHz Meteorscatter, Challenges and Techniques", 45th Nordic VUSHF، مئی 2025 (lambda^3 اور lambda^2 کے اصول، وسطی نقطہ، بہترین سمت)
 Ingolf SM6FHZ - RadiantCalc (grafico polare con la direzione migliore)	Ingolf SM6FHZ - RadiantCalc (بہترین سمت کے ساتھ قطبی گراف)
 International Meteor Organization - Meteor Shower Calendar 2026, www.imo.net (tabelle 5, 6 e 7)	International Meteor Organization - Meteor Shower Calendar 2026, www.imo.net (جدول 5، 6 اور 7)
@@ -213,7 +213,7 @@ Jens DF5HC - "Meteorscatter auf UKW", conferenza DARC, gennaio 2018: formula del
 John Drew VK5DJ - Yagi Calculator: stime del guadagno per le varianti VK3AUU, WA2PHW e DJ9BV	John Drew VK5DJ - Yagi Calculator: VK3AUU, WA2PHW اور DJ9BV اقسام کے گین کے تخمینے
 John GM8JBJ - Meteor scatter path loss, hamradio.engineering (da Kaiser & Closs 1952; cita i calcoli di John Worsnop G4BAO, 172-190 dB)	John GM8JBJ - Meteor scatter path loss, hamradio.engineering (Kaiser & Closs 1952 سے؛ John Worsnop G4BAO کے حسابات کا حوالہ، 172-190 dB)
 Klaus von der Heide DJ5HG - "Die Geometrie von Meteorscatterverbindungen" (2004): riferimento fisso in dB, scie lunghe con il radiante basso,\n    curve delle tratte da Amburgo e da Monaco; tabella AMS di J. Richardson per la distanza degli hot spot	Klaus von der Heide DJ5HG - "Die Geometrie von Meteorscatterverbindungen" (2004): dB میں مقررہ حوالہ، نیچے ریڈیئنٹ کے ساتھ لمبی لکیریں،\n    ہیمبرگ اور میونخ سے راستوں کے منحنی خطوط؛ hot spot کے فاصلے کے لیے J. Richardson کا AMS جدول
-Klaus von der Heide DJ5HG - QTFGUI (aurora, FAI e meteor scatter) e manuale "QTFGUI Help" 2007: legge di diffusione a cono,\n    caso di prova Amburgo - Barcellona nelle Quadrantidi, usato per verificare il modello	Klaus von der Heide DJ5HG - QTFGUI (aurora، FAI اور meteor scatter) اور "QTFGUI Help" کتابچہ 2007: مخروطی انتشار کا قانون،\n    Quadrantids کے دوران ہیمبرگ - بارسلونا کی آزمائشی مثال، ماڈل کی جانچ کے لیے استعمال
+Klaus von der Heide DJ5HG - QTFGUI (aurora, FAI e meteor scatter) e manuale "QTFGUI Help" 2007: legge di diffusione a cono,\n    caso di prova Amburgo - Barcellona nelle Quadrantidi, usato per verificare il modello	Klaus von der Heide DJ5HG - QTFGUI (aurora، FAI اور meteor scatter) اور "QTFGUI Help" مینوئل 2007: مخروطی انتشار کا قانون،\n    Quadrantids کے دوران ہیمبرگ - بارسلونا کی آزمائشی مثال، ماڈل کی جانچ کے لیے استعمال
 L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data (verifica delle due regole);\n    Appreciating DL6WU Wide-Band Long-Boom Yagi Design e 70-CM Yagi Stacks Part 2 (Yagi VK3AUU di David Tanner):\n    simulazioni NEC usate per verificare la curva del guadagno e correggere il lobo orizzontale (0,93 x Kraus)	L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data (دونوں اصولوں کی جانچ)؛\n    Appreciating DL6WU Wide-Band Long-Boom Yagi Design اور 70-CM Yagi Stacks Part 2 (David Tanner کا VK3AUU Yagi):\n    NEC سیمولیشنز جن سے گین کا منحنی جانچا گیا اور افقی لوب درست کیا گیا (0.93 x Kraus)
 LIMITI DELLA ZONA COMUNE (incroci delle curve dove l'orizzonte di ciascuna stazione incontra lo strato E, articolo)	مشترکہ زون کی حدود (منحنیوں کے تقاطع جہاں ہر اسٹیشن کا افق E تہہ سے ملتا ہے، مضمون)
 La parola "{0}" c'è, ma la riga non è uno spot "DX de ..." valido.	لفظ "{0}" موجود ہے، لیکن قطار درست "DX de ..." اسپاٹ نہیں ہے۔
@@ -249,7 +249,7 @@ Mappa: bordo = {0} km dalla stazione. {1}	نقشہ: کنارہ = اسٹیشن س
 Mese non indicato: uso il mese corrente.	مہینہ نہیں بتایا گیا: موجودہ مہینہ استعمال ہو رہا ہے۔
 Meteore/ora - ieri {0} e oggi {1} (UTC)	شہابیے/گھنٹہ - کل {0} اور آج {1} (UTC)
 Metti GRAVES come DX	GRAVES کو DX بنائیں
-Miglior puntamento per lo sciame: ORTOGONALE alla direzione\ndi arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\nSM6FHZ). In pianta: linea gialla = scorrimento\ndello sciame, punti arancioni = puntamenti, ellissi\nPREV = scie piu' probabili adesso.\nClic su un radiante: percorso con le ore UTC	شہابی بارش کے لیے بہترین رخ: آمد کی سمت پر عمودی\n(ریڈیئنٹ سمتیہ +-90°، رواداری +-40-50°،\nSM6FHZ)۔ اوپر سے منظر: پیلی لکیر = شہابی بارش کی\nحرکت، نارنجی نقطے = رخ، PREV\nبیضوی = ابھی سب سے ممکنہ شہابی لکیریں۔\nریڈیئنٹ پر کلک کریں: UTC اوقات کے ساتھ راستہ
+Miglior puntamento per lo sciame: ORTOGONALE alla direzione\ndi arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\nSM6FHZ). In pianta: linea gialla = scorrimento\ndello sciame, punti arancioni = puntamenti, ellissi\nPREV = scie piu' probabili adesso.\nClic su un radiante: percorso con le ore UTC	شہابی بارش کے لیے بہترین رخ: آمد کی سمت پر عمودی\n(ریڈیئنٹ ایزیمتھ +-90°، رواداری +-40-50°،\nSM6FHZ)۔ اوپر سے منظر: پیلی لکیر = شہابی بارش کی\nحرکت، نارنجی نقطے = رخ، PREV\nبیضوی = ابھی سب سے ممکنہ شہابی لکیریں۔\nریڈیئنٹ پر کلک کریں: UTC اوقات کے ساتھ راستہ
 Misurato a Collm e traslato a {0} MHz - ieri {1} e oggi {2} (UTC)	Collm پر ناپا گیا اور {0} MHz پر منتقل کیا گیا - کل {1} اور آج {2} (UTC)
 Mondo	دنیا
 Monocerotidi di dicembre	دسمبر مونوسیروٹڈز
@@ -272,7 +272,7 @@ No: sotto l'orizzonte di GRAVES	نہیں: GRAVES کے افق سے نیچے
 Nominativo per il login	لاگ اِن کے لیے کال سائن
 Non connesso	منسلک نہیں
 Non ho riconosciuto il formato del file.	فائل کا فارمیٹ پہچانا نہیں گیا۔
-Non riesco a leggere la scala verticale del flusso (etichetta in cima: {0}): valori da verificare.	فلکس کا عمودی پیمانہ پڑھا نہیں جا سکا (اوپر کا لیبل: {0}): قدروں کی جانچ ضروری ہے۔
+Non riesco a leggere la scala verticale del flusso (etichetta in cima: {0}): valori da verificare.	فلکس کا عمودی پیمانہ پڑھا نہیں جا سکا (اوپر کا لیبل: {0}): قدریں تصدیق طلب ہیں۔
 Non riesco ad aprire il documento: {0}	دستاویز کھولی نہیں جا سکی: {0}
 Non è un punto sulla mappa: è una rete mondiale di telecamere (soprattutto amatoriali) sparse in molti paesi di tutti i continenti.	یہ نقشے پر کوئی نقطہ نہیں: یہ کیمروں کا ایک عالمی نیٹ ورک ہے (زیادہ تر شوقیہ) جو تمام براعظموں کے بہت سے ممالک میں پھیلا ہوا ہے۔
 Nota: i dati dei radar appartengono ai rispettivi enti. Prima di distribuire il programma va chiesto il permesso di prelevarli automaticamente.	نوٹ: ریڈار کا ڈیٹا متعلقہ اداروں کی ملکیت ہے۔ پروگرام تقسیم کرنے سے پہلے انہیں خودکار طور پر حاصل کرنے کی اجازت لینی ضروری ہے۔
@@ -328,10 +328,10 @@ Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta: scarto {1
 Punto di riflessione	انعکاس کا نقطہ
 Punto medio     {0}  ({1:F2}N {2:F2}E)	وسطی نقطہ        {0}  ({1:F2}N {2:F2}E)
 Punto medio (forward)	وسطی نقطہ (forward)
-Punto medio {0}, elev. per {1:F1} km: {2:F1}°	وسطی نقطہ {0}، {1:F1} km کے لیے ارتفاع: {2:F1}°
+Punto medio {0}, elev. per {1:F1} km: {2:F1}°	وسطی نقطہ {0}، {1:F1} km کے لیے بلندی: {2:F1}°
 Puppidi-Velidi	پپڈ-ویلڈز
 Quadrantidi	کواڈرانٹڈز
-Quattro schiere a fasi coprono il cielo a sud, da 90° a 270° di azimut, in quattro settori di 45° (D, C, B, A); ogni settore è diviso in 6 passi da 7,5°, illuminati uno dopo l'altro, nello stesso momento in tutti e quattro i settori (passi numerati da 1 a 6 a partire dall'azimut più basso). Il fascio è largo circa 25° in elevazione: alla quota delle scie copre la corona colorata tra i due cerchi tratteggiati. Punti arancio/rosa = zone PREV della tratta GRAVES → te, linea verde = direzione della tua stazione, linea rossa = dalla tua stazione all'hot spot consigliato (PE1ITR).	چار فیزڈ صفیں جنوبی آسمان کو 90° سے 270° سمتیہ تک چار 45° سیکٹروں (D, C, B, A) میں ڈھانپتی ہیں؛ ہر سیکٹر 7.5° کے 6 قدموں میں تقسیم ہے، جو ایک کے بعد ایک روشن ہوتے ہیں، چاروں سیکٹروں میں ایک ہی وقت پر (قدم سب سے کم سمتیہ سے شروع ہو کر 1 سے 6 تک گنے جاتے ہیں)۔ بیم ارتفاع میں تقریباً 25° چوڑی ہے: شہابی لکیروں کی اونچائی پر یہ دو نقطہ دار دائروں کے درمیان رنگین حلقے کو ڈھانپتی ہے۔ نارنجی/گلابی نقطے = GRAVES → آپ راستے کے PREV زون، سبز لکیر = آپ کے اسٹیشن کی سمت، سرخ لکیر = آپ کے اسٹیشن سے تجویز کردہ hot spot تک (PE1ITR)۔
+Quattro schiere a fasi coprono il cielo a sud, da 90° a 270° di azimut, in quattro settori di 45° (D, C, B, A); ogni settore è diviso in 6 passi da 7,5°, illuminati uno dopo l'altro, nello stesso momento in tutti e quattro i settori (passi numerati da 1 a 6 a partire dall'azimut più basso). Il fascio è largo circa 25° in elevazione: alla quota delle scie copre la corona colorata tra i due cerchi tratteggiati. Punti arancio/rosa = zone PREV della tratta GRAVES → te, linea verde = direzione della tua stazione, linea rossa = dalla tua stazione all'hot spot consigliato (PE1ITR).	چار فیزڈ صفیں جنوبی آسمان کو 90° سے 270° ایزیمتھ تک چار 45° سیکٹروں (D, C, B, A) میں ڈھانپتی ہیں؛ ہر سیکٹر 7.5° کے 6 قدموں میں تقسیم ہے، جو ایک کے بعد ایک روشن ہوتے ہیں، چاروں سیکٹروں میں ایک ہی وقت پر (قدم سب سے کم ایزیمتھ سے شروع ہو کر 1 سے 6 تک گنے جاتے ہیں)۔ بیم بلندی میں تقریباً 25° چوڑی ہے: شہابی لکیروں کی اونچائی پر یہ دو نقطہ دار دائروں کے درمیان رنگین حلقے کو ڈھانپتی ہے۔ نارنجی/گلابی نقطے = GRAVES → آپ راستے کے PREV زون، سبز لکیر = آپ کے اسٹیشن کی سمت، سرخ لکیر = آپ کے اسٹیشن سے تجویز کردہ hot spot تک (PE1ITR)۔
 Quota delle scie e opzioni scelte a mano. Si seleziona da sola quando cambi la quota, la casella "dal radar", le scie lunghe o l'angolo β.	لکیروں کی اونچائی اور اختیارات ہاتھ سے منتخب۔ جب آپ اونچائی، "ریڈار سے" خانہ، لمبی لکیریں یا زاویہ β بدلتے ہیں تو یہ خود منتخب ہو جاتی ہے۔
 Quota fissa di 102 km, scie più lunghe con il radiante basso e angolo β, come in "Die Geometrie von Meteorscatterverbindungen" di DJ5HG (2004).\nConfronto con le sue curve: in media 2 dB sotto, scarto tipico 5 dB; prevalgono i radianti allineati alla tratta.	102 km کی مقررہ اونچائی، نیچے ریڈیئنٹ کے ساتھ لمبی لکیریں اور زاویہ β، جیسا کہ DJ5HG کی "Die Geometrie von Meteorscatterverbindungen" (2004) میں۔\nان کے منحنی خطوط سے موازنہ: اوسطاً 2 dB نیچے، عام انحراف 5 dB؛ راستے کے ساتھ ہم سمت ریڈیئنٹس غالب رہتے ہیں۔
 Quota scie      {0:F1} km (strato E){1}	لکیروں کی اونچائی      {0:F1} km (E تہہ){1}
@@ -392,16 +392,16 @@ Segnale minimo dBm	کم از کم سگنل dBm
 Sequenza del fascio	بیم کی ترتیب
 Servono sia i dati di Collm sia un file RMOB delle stesse ore.	Collm کا ڈیٹا اور انہی گھنٹوں کی RMOB فائل دونوں درکار ہیں۔
 Sextantidi diurne	دن کے سیکسٹانٹڈز
-Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)	Shelby W8WN - qsl.net/w8wn/hscw (بہترین ارتفاع اور آفسیٹ)
+Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)	Shelby W8WN - qsl.net/w8wn/hscw (بہترین بلندی اور آفسیٹ)
 Sigla	کوڈ
 Sono i bordi piu' lontani del cielo visto da entrambe le stazioni, non i punti da puntare.	یہ دونوں اسٹیشنوں سے نظر آنے والے آسمان کے سب سے دور کنارے ہیں، رخ کرنے کے نقاط نہیں۔
 Sorge	طلوع
 Sorgente Antielio	اینٹی ہیلیئن ماخذ
-Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	بند (محتاط): ہر لکیر کو ریڈیئنٹ کے ارتفاع کے سائن سے وزن دیا جاتا ہے، کیونکہ نیچے ریڈیئنٹ پر فی km² کم شہابیے گرتے ہیں۔\nچالو: DJ5HG (2004) کی طرح، نیچے ریڈیئنٹ پر لکیریں لمبی ہوتی ہیں (تہہ کی کارآمد موٹائی، 15 km، ارتفاع کے سائن سے تقسیم، 100 km تک) اور زیادہ کثرت سے انعکاس کے قانون کو پورا کرتی ہیں۔ دونوں اثرات تقریباً 9° ارتفاع سے اوپر ایک دوسرے کو برابر کر دیتے ہیں: نیچے ریڈیئنٹ پر کارکردگی بڑھتی ہے، بلند ریڈیئنٹ پر نہیں بدلتی۔
+Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	بند (محتاط): ہر لکیر کو ریڈیئنٹ کی بلندی کے سائن سے وزن دیا جاتا ہے، کیونکہ نیچے ریڈیئنٹ پر فی km² کم شہابیے گرتے ہیں۔\nچالو: DJ5HG (2004) کی طرح، نیچے ریڈیئنٹ پر لکیریں لمبی ہوتی ہیں (تہہ کی کارآمد موٹائی، 15 km، بلندی کے سائن سے تقسیم، 100 km تک) اور زیادہ کثرت سے انعکاس کے قانون کو پورا کرتی ہیں۔ دونوں اثرات تقریباً 9° بلندی سے اوپر ایک دوسرے کو برابر کر دیتے ہیں: نیچے ریڈیئنٹ پر کارکردگی بڑھتی ہے، بلند ریڈیئنٹ پر نہیں بدلتی۔
 Spot MS della linguetta "Raccolta dati". Per ogni contatto la nuvola indica dove si concentrano le scie più probabili per quella tratta e quell'ora (riflessione speculare, somma degli sciami attivi). Nuvole tratteggiate = solo meteore sporadiche. Gli spot con una stazione fuori dalla mappa non si disegnano; quelli appena arrivati (meno di 3 minuti) lampeggiano per un minuto.	"ڈیٹا جمع کرنا" ٹیب کے MS اسپاٹ۔ ہر رابطے کے لیے بادل دکھاتا ہے کہ اس راستے اور اس گھنٹے کے لیے سب سے ممکنہ شہابی لکیریں کہاں مرکوز ہیں (آئینہ نما انعکاس، فعال شہابی بارشوں کا مجموعہ)۔ ڈیشڈ بادل = صرف منتشر شہابیے۔ جن اسپاٹ کا کوئی اسٹیشن نقشے سے باہر ہو وہ نہیں بنائے جاتے؛ ابھی آنے والے (3 منٹ سے کم) ایک منٹ تک جھلملاتے ہیں۔
 Spot MS raccolti	جمع شدہ MS اسپاٹ
 Spot da mostrare	دکھانے کے لیے اسپاٹ
-Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LTE): nessun login, arrivano gia' con i locator di chi trasmette e di chi riceve. Un argomento per riga o separati da ;  formato pskr/filter/v2/banda/modo/call tx/call rx/... (+ = qualsiasi, # = il resto).	MQTT کے ذریعے PSKReporter کے لائیو اسپاٹ (mqtt.pskreporter.info، M0LTE کی سروس): لاگ اِن نہیں، اسپاٹ پہلے ہی بھیجنے والے اور وصول کرنے والے کے لوکیٹر کے ساتھ آتے ہیں۔ ہر لائن میں ایک ٹاپک یا ; سے الگ  فارمیٹ pskr/filter/v2/band/mode/tx call/rx call/... (+ = کوئی بھی، # = باقی)۔
+Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LTE): nessun login, arrivano gia' con i locator di chi trasmette e di chi riceve. Un argomento per riga o separati da ;  formato pskr/filter/v2/banda/modo/call tx/call rx/... (+ = qualsiasi, # = il resto).	MQTT کے ذریعے PSKReporter کے براہِ راست اسپاٹ (mqtt.pskreporter.info، M0LTE کی سروس): لاگ اِن نہیں، اسپاٹ پہلے ہی بھیجنے والے اور وصول کرنے والے کے لوکیٹر کے ساتھ آتے ہیں۔ ہر لائن میں ایک ٹاپک یا ; سے الگ  فارمیٹ pskr/filter/v2/band/mode/tx call/rx call/... (+ = کوئی بھی، # = باقی)۔
 Spot meteor scatter raccolti (i più recenti in alto)	جمع شدہ meteor scatter اسپاٹ (تازہ ترین اوپر)
 Stazione	اسٹیشن
 Stazione        {0}   quota {1:F0} m	اسٹیشن         {0}   اونچائی {1:F0} m
@@ -437,12 +437,12 @@ Ursidi	ارسڈز
 Vale per gli spot fuori dalle finestre e per quelli con una scritta di altra propagazione: si tengono se contengono una delle parole accese, in maiuscolo, minuscolo o misto. MSK144, FSK441, PSK2K, JTMS e JT6M sono modi digitali usati solo per il meteor scatter: lo spot è MS di sicuro. <MS> indica genericamente che il collegamento è avvenuto via meteor scatter.	یہ ونڈوز سے باہر کے اسپاٹس اور کسی اور پھیلاؤ کے ٹیگ والے اسپاٹس پر لاگو ہوتا ہے: انہیں رکھا جاتا ہے اگر ان میں فعال الفاظ میں سے کوئی ایک ہو، بڑے، چھوٹے یا ملے جلے حروف میں۔ MSK144، FSK441، PSK2K، JTMS اور JT6M ڈیجیٹل موڈ صرف meteor scatter کے لیے استعمال ہوتے ہیں: اسپاٹ یقیناً MS ہے۔ <MS> عمومی طور پر بتاتا ہے کہ رابطہ meteor scatter کے ذریعے ہوا۔
 Valori più prudenti, di partenza: quota delle scie misurata dal radar di Collm (casella "dal radar"), scie normali, angolo β acceso.\nConfronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo): in media 7 dB sotto, con lo stesso andamento orario (scarto di forma circa 3 dB).	سب سے محتاط قدریں، ابتدائی ترتیب: Collm ریڈار سے ناپی گئی لکیروں کی اونچائی ("ریڈار سے" خانہ)، عام لکیریں، زاویہ β چالو۔\nDJ5HG کے منحنی خطوط سے موازنہ (Quadrantids، ہیمبرگ سے راستے): اوسطاً 7 dB نیچے، اسی گھنٹہ وار رجحان کے ساتھ (شکل کا انحراف تقریباً 3 dB)۔
 Valori prudenti: scia che attraversa il piano della tratta (β = 90°, caso più sfavorevole), compreso il raggio iniziale della scia (ITU-R P.843) alla quota media degli echi per ciascuna frequenza	محتاط قدریں: راستے کے مستوی کو کاٹنے والی لکیر (β = 90°، بدترین صورت)، ہر فریکوئنسی کے لیے بازگشت کی اوسط اونچائی پر لکیر کے ابتدائی رداس (ITU-R P.843) سمیت
-Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	GRAVES → آپ راستے کے تجویز کردہ hot spot کی طرف (راستہ کارڈ)، کم ارتفاع کے ساتھ
+Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	GRAVES → آپ راستے کے تجویز کردہ hot spot کی طرف (راستہ کارڈ)، کم بلندی کے ساتھ
 Vista dall'alto (E a destra)	اوپر سے منظر (مشرق دائیں جانب)
 Waterfall	Waterfall
 Wikipedia, "GRAVES (system)" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)	Wikipedia, "GRAVES (system)" – ٹرانسمیٹر Broye-lès-Pesmes میں (47.348° N 5.515° E)
 YA-MS - nessuna connessione	YA-MS - کوئی کنکشن نہیں
-YAEC di IC8TEM – linguetta Radar GRAVES (bozzetto da cui è derivata)	IC8TEM کا YAEC – Radar GRAVES ٹیب (وہ خاکہ جس سے یہ ماخوذ ہے)
+YAEC di IC8TEM – linguetta Radar GRAVES (bozzetto da cui è derivata)	IC8TEM کا YAEC – GRAVES ریڈار ٹیب (وہ خاکہ جس سے یہ ماخوذ ہے)
 ZHR ora	ZHR ابھی
 ZONA UTILE NEL FASCIO DI GRAVES	GRAVES کی بیم میں مفید زون
 a DESTRA guardando verso il corrispondente	DX اسٹیشن کی طرف دیکھتے ہوئے دائیں
@@ -461,7 +461,7 @@ ant_radiante.csv: riga ignorata: {0}	ant_radiante.csv: قطار نظرانداز
 antenna verso {0}: az {1:F0}° · el {2:F1}°\nGRAVES in linea diretta: az {3:F0}°	اینٹینا {0} کی طرف: az {1:F0}° · el {2:F1}°\nGRAVES براہِ راست سمت: az {3:F0}°
 antenna {0}°	اینٹینا {0}°
 auto (AMS)	خودکار (AMS)
-azimut rispetto al corrispondente	DX اسٹیشن کے لحاظ سے سمتیہ
+azimut rispetto al corrispondente	DX اسٹیشن کے لحاظ سے ایزیمتھ
 beta-Tauridi diurne	دن کے بیٹا-ٹورڈز
 buono	اچھا
 calcolato da λ	λ سے حساب شدہ
@@ -480,7 +480,7 @@ dati CC BY 4.0 (Vida et al. 2021, 2022)	ڈیٹا CC BY 4.0 (Vida et al. 2021, 20
 delta-Aquaridi Sud	جنوبی ڈیلٹا-ایکواریڈز
 eco	بازگشت
 eco attese ≈ {0:F0}/ora (sperimentale: previsione × fascio {1:F0} %)	متوقع بازگشت ≈ {0:F0}/گھنٹہ (تجرباتی: پیش گوئی × بیم {1:F0} %)
-eco possibile (+{0:F1} s di scia)	ممکنہ بازگشت (لکیر کے +{0:F1} s)
+eco possibile (+{0:F1} s di scia)	ایکو ممکن (لکیر کے +{0:F1} s)
 effic. %	کارکردگی %
 effic. < 20%	کارکردگی < 20%
 effic. >= 20%	کارکردگی >= 20%
@@ -559,7 +559,7 @@ pi-Puppidi	پائی-پپڈز
 prelievo automatico ogni 5 minuti (attivare solo con il permesso di RMOB)	ہر 5 منٹ بعد خودکار ڈاؤن لوڈ (صرف RMOB کی اجازت سے فعال کریں)
 previsione {0} MHz /ora	پیش گوئی {0} MHz /گھنٹہ
 puntamento migliore {0}° / {1}°	بہترین رخ {0}° / {1}°
-puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km	{0:F0}° کی طرف رخ کریں (DX اسٹیشن سے {1:+0;-0}°)، ارتفاع {2:F1}°، hot spot {3:F0} km پر
+puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km	{0:F0}° کی طرف رخ کریں (DX اسٹیشن سے {1:+0;-0}°)، بلندی {2:F1}°، hot spot {3:F0} km پر
 quasi inattivo	تقریباً غیر فعال
 quota m	اونچائی m
 radar SKiYMET 36,2 MHz	SKiYMET ریڈار 36.2 MHz
@@ -629,7 +629,7 @@ zona PREV	PREV زون
 {0} · zona	{0} · زون
 {0}: non lavorato	{0}: رابطہ نہیں ہوا
 {0}: {1}  az. da me {2:F0}° (scarto {3:+0;-0}°), dal corrispondente {4:F0}°, distanza {5:F0} km	{0}: {1}  مجھ سے az. {2:F0}° (فرق {3:+0;-0}°)، DX اسٹیشن سے {4:F0}°، فاصلہ {5:F0} km
-{0}: {1}  az. da me {2:F1}° (scarto {3:+0.0;-0.0}° dalla direzione diretta), dal corrispondente {4:F0}°, distanza {5:F0} km, elevazione {6:F1}°	{0}: {1}  مجھ سے az. {2:F1}° (براہِ راست سمت سے فرق {3:+0.0;-0.0}°)، DX اسٹیشن سے {4:F0}°، فاصلہ {5:F0} km، ارتفاع {6:F1}°
+{0}: {1}  az. da me {2:F1}° (scarto {3:+0.0;-0.0}° dalla direzione diretta), dal corrispondente {4:F0}°, distanza {5:F0} km, elevazione {6:F1}°	{0}: {1}  مجھ سے az. {2:F1}° (براہِ راست سمت سے فرق {3:+0.0;-0.0}°)، DX اسٹیشن سے {4:F0}°، فاصلہ {5:F0} km، بلندی {6:F1}°
 {0}: {1} QSO	{0}: {1} QSO
 {0}: {1} ore lette.	{0}: {1} گھنٹے پڑھے گئے۔
 {0}: {1} quadrati lavorati, {2} confermati	{0}: {1} مربعوں سے رابطہ، {2} تصدیق شدہ

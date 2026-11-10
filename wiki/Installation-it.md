@@ -73,7 +73,7 @@ Il programma non è firmato da Apple, quindi la prima volta macOS chiede una con
 
 - La **mappa d'Europa** (coste e confini di Natural Earth) viene scaricata automaticamente in `data/mappa` la prima volta: serve una connessione internet una sola volta.
 - I **dati radar** (Collm, Sodankylä) vengono scaricati subito e poi controllati ogni 5 minuti.
-- L'interfaccia parte nella lingua del sistema se è una delle sei disponibili, altrimenti in italiano; la cambi in alto a destra (vedi [Impostazioni](Settings-and-Data-Folder-it#lingua)).
+- L'interfaccia parte nella lingua del sistema se è una delle 28 disponibili, altrimenti in italiano; la cambi in alto a destra (vedi [Impostazioni](Settings-and-Data-Folder-it#lingua)).
 
 ## Aggiornamento
 

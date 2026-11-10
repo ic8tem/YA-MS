@@ -296,7 +296,7 @@ Vista dall'alto (E a destra)	Bovenaanzicht (O rechts)
 Waterfall	Waterfall
 Wikipedia, "GRAVES (system)" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)	Wikipedia, "GRAVES (system)" – zender in Broye-lès-Pesmes (47,348° N 5,515° O)
 YA-MS - nessuna connessione	YA-MS - geen verbinding
-YAEC di IC8TEM – linguetta Radar GRAVES (bozzetto da cui è derivata)	YAEC van IC8TEM – tabblad Radar GRAVES (ontwerp waarvan dit is afgeleid)
+YAEC di IC8TEM – linguetta Radar GRAVES (bozzetto da cui è derivata)	YAEC van IC8TEM – tabblad GRAVES-radar (ontwerp waarvan dit is afgeleid)
 ZHR ora	ZHR nu
 ZONA UTILE NEL FASCIO DI GRAVES	BRUIKBARE ZONE IN DE BUNDEL VAN GRAVES
 a cura di Costantino IC8TEM	door Costantino IC8TEM

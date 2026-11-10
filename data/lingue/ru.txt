@@ -34,7 +34,7 @@ Attività	Активность
 Attuazione sperimentale previsioni	Экспериментальный прогноз
 Aurigidi	Ауригиды
 Azimut	Азимут
-BILANCIO A {0:F0} MHz (punto medio)	БАЛАНС НА {0:F0} MHz (средняя точка)
+BILANCIO A {0:F0} MHz (punto medio)	БЮДЖЕТ НА {0:F0} MHz (средняя точка)
 Banda MHz	Диапазон MHz
 Bolidozor wiki, "Graves" – schiere, settori e tempi del fascio	Bolidozor wiki, «Graves» – антенные решётки, секторы и время луча
 Bootidi di giugno	Июньские Боотиды
@@ -153,7 +153,7 @@ L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Dat
 LIMITI DELLA ZONA COMUNE (incroci delle curve dove l'orizzonte di ciascuna stazione incontra lo strato E, articolo)	ГРАНИЦЫ ОБЩЕЙ ЗОНЫ (пересечения кривых, где горизонт каждой станции встречает слой E, по статье)
 La scala del grafico delle quote e' cambiata: le statistiche delle quote (moda, media, mediana) restano valide, i conteggi assoluti no.	Масштаб графика высот изменился: статистика высот (мода, среднее, медиана) верна, абсолютные подсчёты - нет.
 La sequenza del fascio si calcola con l'orologio del PC: sincronizzalo con un server NTP (errore di pochi decimi di secondo al massimo).	Последовательность луча рассчитывается по часам ПК: синхронизируйте их с сервером NTP (ошибка не более нескольких десятых секунды).
-La sequenza è legata all'ora UTC (PE1ITR): dal 2021 i passi durano 0,8 s e il ciclo di un settore 4,8 s; nel 2007 erano 3,2 s e 19,2 s. La stazione di comando a volte sposta la sequenza di qualche passo: il dettaglio è una previsione da confermare con l'ascolto. Una scia si sente solo se il fascio la illumina mentre dura: probabilità ≈ min(1, (passo + scia) / ciclo) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (durata tipica di una scia sottodensa a 143 MHz ≈ {1:F1} s).	Последовательность привязана к UTC (PE1ITR): с 2021 года каждый шаг длится 0,8 с, а цикл сектора 4,8 с; в 2007 году было 3,2 с и 19,2 с. Командная станция иногда сдвигает последовательность на несколько шагов: детали — это прогноз, который нужно подтвердить прослушиванием. След слышен, только если луч освещает его, пока он существует: вероятность ≈ min(1, (шаг + след) / цикл) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (типичная длительность недоуплотнённого следа на 143 MHz ≈ {1:F1} с).
+La sequenza è legata all'ora UTC (PE1ITR): dal 2021 i passi durano 0,8 s e il ciclo di un settore 4,8 s; nel 2007 erano 3,2 s e 19,2 s. La stazione di comando a volte sposta la sequenza di qualche passo: il dettaglio è una previsione da confermare con l'ascolto. Una scia si sente solo se il fascio la illumina mentre dura: probabilità ≈ min(1, (passo + scia) / ciclo) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (durata tipica di una scia sottodensa a 143 MHz ≈ {1:F1} s).	Последовательность привязана ко времени UTC (PE1ITR): с 2021 года каждый шаг длится 0,8 с, а цикл сектора 4,8 с; в 2007 году было 3,2 с и 19,2 с. Командная станция иногда сдвигает последовательность на несколько шагов: детали — это прогноз, который нужно подтвердить прослушиванием. След слышен, только если луч освещает его, пока он существует: вероятность ≈ min(1, (шаг + след) / цикл) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (типичная длительность недоуплотнённого следа на 143 MHz ≈ {1:F1} с).
 Lato	Сторона
 Lato A = a sinistra della tratta, B = a destra	Сторона A = слева от трассы, B = справа
 Le lettere accanto alla percentuale dicono da quale lato della tratta arriva la maggior parte delle riflessioni. A = a SINISTRA guardando dalla tua stazione verso il corrispondente (zona Hot A); B = a DESTRA (zona Hot B). Conviene spostare l'antenna di 10-30° verso quel lato (side-scatter). Nessuna lettera = efficienza sotto il 5 %. Riga Σ: indice della tratta = somma di ZHR x efficienza di tutti gli sciami attivi. Righe azzurre: confronto con la formula di DH9GCD (DF5HC 2018). ↑ = radiante sopra 70° dalla tua stazione (troppo alto).	Буквы рядом с процентом показывают, с какой стороны трассы приходит большинство отражений. A = СЛЕВА, если смотреть от вашей станции на корреспондента (зона Hot A); B = СПРАВА (зона Hot B). Антенну стоит отвернуть на 10-30° в эту сторону (боковое рассеяние). Нет буквы = эффективность ниже 5 %. Строка Σ: индекс трассы = сумма ZHR x эффективность всех активных потоков. Голубые строки: сравнение с формулой DH9GCD (DF5HC 2018). ↑ = радиант выше 70° над вашей станцией (слишком высоко).
@@ -189,7 +189,7 @@ Nessuna zona comune dello strato E ({0})	Нет общей зоны слоя E (
 No	Нет
 No: fuori dai settori	Нет: вне секторов
 No: sopra il fascio (circa 25°)	Нет: выше луча (около 25°)
-No: sotto l'orizzonte di GRAVES	Нет: ниже горизонта GRAVES
+No: sotto l'orizzonte di GRAVES	Нет: под горизонтом GRAVES
 Non ho riconosciuto il formato del file.	Формат файла не распознан.
 Non riesco a leggere la scala verticale del flusso (etichetta in cima: {0}): valori da verificare.	Не удаётся прочитать вертикальную шкалу потока (метка вверху: {0}): значения требуют проверки.
 Non riesco ad aprire il documento: {0}	Не удаётся открыть документ: {0}
@@ -210,7 +210,7 @@ Passo	Шаг
 Pegasidi di luglio	Июльские Пегасиды
 Perseidi	Персеиды
 Phoenicidi	Фениксиды
-Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	План: жёлтая линия = движение выбранного (или самого благоприятного) потока, эллипсы PREV = где сейчас наиболее вероятны следы. Небесная сфера справа (Восход/Заход в UTC на {0}): жёлтый = эффективность >= 50 % и ZHR >= 2, оранжевый >= 20 %, серый = почти неактивен.
+Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	План: жёлтая линия = движение выбранного (или самого благоприятного) потока, эллипсы PREV = где сейчас наиболее вероятны следы. Небесный свод справа (Восход/Заход в UTC на {0}): жёлтый = эффективность >= 50 % и ZHR >= 2, оранжевый >= 20 %, серый = почти неактивен.
 Piscidi di aprile diurne	Дневные Апрельские Писциды
 Portata alla quota delle scie con lobo a {0:F1}°: {1:F0} km	Дальность на высоте следов при угле места ДН {0:F1}°: {1:F0} km
 Potenza W	Мощность W
@@ -272,7 +272,7 @@ Sorge	Восход
 Sorgente Antielio	Антигелийный источник
 Stazione        {0}   quota {1:F0} m	Станция         {0}   высота {1:F0} m
 Stima sperimentale (regole SM6FHZ): meteore/ora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durata dei ping x {4:F3}. Ping massimo IARU a {0:F0} MHz: {5:F0} ms. Valori indicativi, da confrontare con l'esperienza in banda.{6}	Экспериментальная оценка (правила SM6FHZ): метеоров/час на {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; длительность пингов x {4:F3}. Макс. пинг по IARU на {0:F0} MHz: {5:F0} ms. Значения ориентировочные, сравните с опытом работы на диапазоне.{6}
-Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)	Swan Meteor Skyview от DL1DBC - swan.ms (образец графики небесной сферы)
+Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)	Swan Meteor Skyview от DL1DBC - swan.ms (образец графики небесного свода)
 Sì	Да
 Sì · settore {0}	Да · сектор {0}
 TRATTA	ТРАССА
@@ -322,7 +322,7 @@ dal radar	по радару
 delta-Aquaridi Sud	Южные дельта-Аквариды
 eco	эхо
 eco attese ≈ {0:F0}/ora (sperimentale: previsione × fascio {1:F0} %)	ожидаемые эхо ≈ {0:F0}/ч (экспериментально: прогноз × луч {1:F0} %)
-eco possibile (+{0:F1} s di scia)	возможное эхо (+{0:F1} с следа)
+eco possibile (+{0:F1} s di scia)	эхо возможно (+{0:F1} с следа)
 effic. %	эфф. %
 effic. < 20%	эфф. < 20%
 effic. >= 20%	эфф. >= 20%
@@ -467,8 +467,8 @@ GMN e CMOR controllati alle {0} UTC ({1} file nuovi). Dati GMN: CC BY 4.0.	GMN �
 Global Meteor Network (GMN) - globalmeteornetwork.org/flux: flusso e ZHR misurati degli sciami. Dati CC BY 4.0; Vida et al. 2021, MNRAS 506(4), e Vida et al. 2022, MNRAS 515(2)	Global Meteor Network (GMN) - globalmeteornetwork.org/flux: измеренные поток и ZHR метеорных потоков. Данные CC BY 4.0; Vida et al. 2021, MNRAS 506(4), и Vida et al. 2022, MNRAS 515(2)
 Nessun dato GMN: premi "Scarica adesso".	Нет данных GMN: нажмите «Загрузить сейчас».
 Riepilogo dell'anno (ZHR misurati, GMN)	Обзор за год (измеренные ZHR, GMN)
-Sciami in diretta	Потоки онлайн
-Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	Где находятся источники онлайн-данных. Пунктирные круги = область неба, видимая радаром (около 300 км вокруг станции, следы на высоте 90 км): ни один радар не смотрит на небо над вашей трассой, данные показывают, насколько активен поток. Точечные линии = расстояние от вашей станции.
+Sciami in diretta	Потоки в реальном времени
+Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	Где находятся источники данных в реальном времени. Пунктирные круги = область неба, видимая радаром (около 300 км вокруг станции, следы на высоте 90 км): ни один радар не смотрит на небо над вашей трассой, данные показывают, насколько активен поток. Точечные линии = расстояние от вашей станции.
 Europa	Европа
 Global Meteor Network (GMN)	Global Meteor Network (GMN)
 Mondo	Мир
@@ -569,9 +569,9 @@ Raggio della mappa	Радиус карты
 Spot MS della linguetta "Raccolta dati". Per ogni contatto la nuvola indica dove si concentrano le scie più probabili per quella tratta e quell'ora (riflessione speculare, somma degli sciami attivi). Nuvole tratteggiate = solo meteore sporadiche. Gli spot con una stazione fuori dalla mappa non si disegnano; quelli appena arrivati (meno di 3 minuti) lampeggiano per un minuto.	Споты MS из вкладки «Сбор данных». Для каждой связи облако показывает, где концентрируются наиболее вероятные следы для этой трассы и этого времени (зеркальное отражение, сумма активных потоков). Пунктирные облака = только спорадические метеоры. Споты со станцией вне карты не рисуются; только что пришедшие (менее 3 минут) мигают одну минуту.
 Spot da mostrare	Показывать споты
 Stazione	Станция
-Traffico MS in diretta · {0}	Трафик MS онлайн · {0}
-Traffico in diretta	Трафик онлайн
-Traffico meteor scatter in diretta	Трафик метеорного рассеяния онлайн
+Traffico MS in diretta · {0}	Трафик MS в реальном времени · {0}
+Traffico in diretta	Трафик в реальном времени
+Traffico meteor scatter in diretta	Трафик метеорного рассеяния в реальном времени
 a cura di	автор
 hot spot (solo sporadiche) {0}	горячая точка (только спорадические) {0}
 nuvola non calcolabile per questa tratta (troppo corta o troppo lunga)	облако нельзя рассчитать для этой трассы (слишком короткая или слишком длинная)
@@ -617,10 +617,10 @@ Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta: scarto {1
 RADIANTE BASSO LUNGO LA TRATTA: {0}. L'efficienza calcolata resta bassa, ma con scie radenti allineate alla tratta DJ5HG prevede riflessioni rare e forti: vale la pena ascoltare.	НИЗКИЙ РАДИАНТ ВДОЛЬ ТРАССЫ: {0}. Рассчитанная эффективность остаётся низкой, но при пологих следах вдоль трассы DJ5HG ожидает редкие и сильные отражения: стоит послушать.
 Scarto d'antenna degli hot spot dalla tabella AMS di J. Richardson riportata da DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km. Togli la spunta per scrivere la distanza a mano (MSHV usa 150 km).	Отклонение антенны для горячих точек по таблице AMS Дж. Ричардсона, приведённой DJ5HG: 13° на 1000 км, 11° на 1250 км, 10° на 1500 и 2000 км. Снимите флажок, чтобы ввести расстояние вручную (MSHV использует 150 км).
 Scie più lunghe con il radiante basso (DJ5HG)	Более длинные следы при низком радианте (DJ5HG)
-Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	Выключено (осторожно): каждый след взвешивается синусом высоты радианта, потому что при низком радианте на км² падает меньше метеоров.\nВключено: как у DJ5HG (2004), при низком радианте следы длиннее (полезная толщина слоя 15 км, делённая на синус высоты, до 100 км) и чаще выполняют закон отражения. Оба эффекта компенсируются выше примерно 9° высоты: эффективность при низком радианте растёт, при высоком не меняется.
+Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	Выключено (осторожно): каждый след взвешивается синусом угла места радианта, потому что при низком радианте на км² падает меньше метеоров.\nВключено: как у DJ5HG (2004), при низком радианте следы длиннее (полезная толщина слоя 15 км, делённая на синус угла места, до 100 км) и чаще выполняют закон отражения. Оба эффекта компенсируются выше примерно 9° угла места: эффективность при низком радианте растёт, при высоком не меняется.
 auto (AMS)	авто (AMS)
 {0} dB rispetto al riferimento di DJ5HG	{0} дБ относительно опорного уровня DJ5HG
--> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto (servono scie ad almeno {0:F0} km)	-> средняя точка ниже горизонта на высоте следов: трасса длиннее геометрической дальности одного скачка (нужны следы на высоте не менее {0:F0} km)
+-> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto (servono scie ad almeno {0:F0} km)	-> средняя точка под горизонтом на высоте следов: трасса длиннее геометрической дальности одного скачка (нужны следы на высоте не менее {0:F0} km)
 ATTENUAZIONE DI TRATTA (scia sottodensa, McKinley 1961 e ITU-R P.843; guadagni d'antenna esclusi)	ЗАТУХАНИЕ НА ТРАССЕ (ненасыщенный след, McKinley 1961 и ITU-R P.843; без учёта усиления антенн)
 Angolo β tra scia e tratta (McKinley completo)	Угол β между следом и трассой (полная формула McKinley)
 Come DJ5HG	Как у DJ5HG
@@ -634,7 +634,7 @@ Prudente	Осторожная
 Quota delle scie e opzioni scelte a mano. Si seleziona da sola quando cambi la quota, la casella "dal radar", le scie lunghe o l'angolo β.	Высота следов и параметры выбраны вручную. Выбирается автоматически, когда вы меняете высоту, флажок "по радару", длинные следы или угол β.
 Quota fissa di 102 km, scie più lunghe con il radiante basso e angolo β, come in "Die Geometrie von Meteorscatterverbindungen" di DJ5HG (2004).\nConfronto con le sue curve: in media 2 dB sotto, scarto tipico 5 dB; prevalgono i radianti allineati alla tratta.	Фиксированная высота 102 km, более длинные следы при низком радианте и угол β, как в "Die Geometrie von Meteorscatterverbindungen" DJ5HG (2004).\nСравнение с его кривыми: в среднем на 2 dB ниже, типичное отклонение 5 dB; преобладают радианты вдоль трассы.
 Raccomandazione ITU-R P.843-1 (1997): angolo beta tra scia e piano della tratta, raggio iniziale della scia, quota media in funzione della frequenza	Рекомендация ITU-R P.843-1 (1997): угол beta между следом и плоскостью трассы, начальный радиус следа, средняя высота в зависимости от частоты
-TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	ТРАССА ЗА ГОРИЗОНТОМ СЛЕДОВ: при следах на высоте {0:F1} km средняя точка на {1:F1}° ниже горизонта. Нужны следы на высоте не менее {2:F0} km: связь возможна только по самым высоким следам, эффективность и затухание на пределе модели.
+TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	ТРАССА ЗА ГОРИЗОНТОМ СЛЕДОВ: при следах на высоте {0:F1} km средняя точка на {1:F1}° под горизонтом. Нужны следы на высоте не менее {2:F0} km: связь возможна только по самым высоким следам, эффективность и затухание на пределе модели.
 Accesa (prudente, di partenza): la potenza di ogni scia segue la formula completa di McKinley e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ): le scie che attraversano il piano della tratta valgono 10-15 dB meno di quelle che vi giacciono, e nessuna scia è sopravvalutata.\nEffetto: prevalgono i radianti allineati alla tratta, non quelli perpendicolari; le curve di DJ5HG seguono meglio l'andamento orario, con i minimi profondi quando il radiante è basso.\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6: segue la regola dei radianti perpendicolari alla tratta (SM6FHZ, DH9GCD), ma sopravvaluta le scie che attraversano il piano.	Включено (осторожно, начальная настройка): мощность каждого следа следует полной формуле McKinley и ITU-R P.843, 1 / (1 − cos²β sin²φ): следы, пересекающие плоскость трассы, дают на 10-15 dB меньше, чем лежащие в ней, и ни один след не переоценивается.\nЭффект: преобладают радианты вдоль трассы, а не перпендикулярные ей; кривые DJ5HG лучше повторяют ход по часам, с глубокими минимумами при низком радианте.\nВыключено: каждый след учитывается так, будто лежит в плоскости трассы (β = 0), как до версии 1.6 включительно: следует правилу радиантов, перпендикулярных трассе (SM6FHZ, DH9GCD), но переоценивает следы, пересекающие плоскость.
 Nell'attenuazione (β = 90°, prudente): raggio iniziale della scia {0:F1} dB (r0 = {1:F2} m alla quota media ITU di {2:F1} km per {3:F0} MHz). Con la scia nel piano della tratta (β = 0°, caso migliore) l'attenuazione scende a {4:F1} dB ({5:F1} dB) e il margine sale a {6:+0.0;-0.0} dB	В затухании (β = 90°, осторожно): начальный радиус следа {0:F1} dB (r0 = {1:F2} m на средней высоте по ITU {2:F1} km для {3:F0} MHz). Если след лежит в плоскости трассы (β = 0°, лучший случай), затухание снижается до {4:F1} dB ({5:F1} dB), а запас растёт до {6:+0.0;-0.0} dB
 Valori più prudenti, di partenza: quota delle scie misurata dal radar di Collm (casella "dal radar"), scie normali, angolo β acceso.\nConfronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo): in media 7 dB sotto, con lo stesso andamento orario (scarto di forma circa 3 dB).	Самые осторожные значения, начальная настройка: высота следов по измерениям радара Collm (флажок "по радару"), обычные следы, угол β включён.\nСравнение с кривыми DJ5HG (Квадрантиды, трассы из Гамбурга): в среднем на 7 dB ниже, с тем же ходом по часам (отклонение формы около 3 dB).

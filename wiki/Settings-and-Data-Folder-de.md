@@ -16,18 +16,40 @@ Ein Wechsel von Sprache oder Farbschema speichert die Einstellungen und **baut d
 
 ## Sprache
 
-Sechs Sprachen der Oberfläche:
+28 Sprachen der Oberfläche, dieselben wie bei YAEC und E-LAYER ANALYZER (mit YAEC gemeinsame Begriffe sind gleich übersetzt):
 
 | Sprache | Code | Datei |
 |---|---|---|
 | Italiano | `it` | keine: Italienisch ist die Basissprache (die Schlüssel) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
-Beim ersten Start verwendet YA-MS die **Systemsprache**, wenn sie eine dieser Sprachen ist, sonst Italienisch. Zahlen und Datumsangaben folgen der gewählten Sprache (z. B. Dezimalpunkt im Englischen, Komma im Italienischen und Deutschen). Texte, die in einer Übersetzungsdatei fehlen, werden auf Italienisch angezeigt. Unter Linux braucht Japanisch passende Schriften: siehe [Fehlerbehebung](Troubleshooting-FAQ-de#linux-japanischer-text-zeigt-kästchen).
+Beim ersten Start verwendet YA-MS die **Systemsprache**, wenn sie eine dieser Sprachen ist, sonst Italienisch. Zahlen und Datumsangaben folgen der gewählten Sprache (z. B. Dezimalpunkt im Englischen, Komma im Italienischen und Deutschen). Texte, die in einer Übersetzungsdatei fehlen, werden auf Italienisch angezeigt. Unter Linux brauchen Chinesisch, Japanisch, Koreanisch, Arabisch, Hebräisch, Urdu, Hindi und Bengalisch passende Schriften (z. B. die Noto-Familien): siehe [Fehlerbehebung](Troubleshooting-FAQ-de#linux-japanischer-text-zeigt-kästchen).
 
 Das Dokument [Effektivität - Erklärung](Efficiency-Explanation-de) und das Berechnungshandbuch sind auf Italienisch.
 
@@ -100,7 +122,7 @@ Reiner Text, ein `key=value` pro Zeile (Zeilen, die mit `#` oder `;` beginnen, s
 | `elevazione_lobo_gradi` | 0 | Keulenelevation (°) |
 | `boom_m` | 4.6 | Boomlänge der Yagi (m) |
 | `hot_spot_km` | 150 | Abstand von Hot A / Hot B vom Mittelpunkt (30–400 km) |
-| `lingua` | System / `it` | Sprachcode (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | System / `it` | Sprachcode (einer der 28 Codes oben, z. B. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Farbschema: `chiaro` (Hell), `scuro` (Nacht), `nero` (Schwarz), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteorspur) |
 | `carattere_pct` | 100 | Schriftgröße (100–300 %) |
 | `comandi_visibili` | 1 | 1 = Bedienzeilen sichtbar, 0 = eingeklappt |

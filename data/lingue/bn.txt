@@ -57,7 +57,7 @@ CALL3: {0:N0} nominativi	CALL3: {0:N0}টি কলসাইন
 CMOR, Canadian Meteor Orbit Radar (University of Western Ontario, NASA Meteoroid Environment Office) - fireballs.ndc.nasa.gov/cmor-radiants: mappe dei radianti	CMOR, Canadian Meteor Orbit Radar (University of Western Ontario, NASA Meteoroid Environment Office) - fireballs.ndc.nasa.gov/cmor-radiants: বিকিরণ বিন্দুর মানচিত্র
 COME ASCOLTARE I PING DI GRAVES	GRAVES-এর পিং কীভাবে শুনবেন
 CONNESSIONE INTERNET ASSENTE: dati esterni non aggiornati (nuovo tentativo tra 5 minuti)	ইন্টারনেট সংযোগ নেই: বাহ্যিক তথ্য হালনাগাদ হয়নি (5 মিনিট পরে আবার চেষ্টা)
-Calcola	হিসাব করুন
+Calcola	গণনা করুন
 Calcolo dell'efficienza	দক্ষতার হিসাব
 Calcolo non riuscito: {0}	হিসাব ব্যর্থ: {0}
 Calcolo per {0} UTC	{0} UTC-এর গণনা
@@ -91,7 +91,7 @@ Connessione internet assente.\n\nI dati dei radar e di RMOB non possono essere a
 Connessione ripristinata.	সংযোগ পুনরুদ্ধার হয়েছে।
 Connesso: {0} argomenti	সংযুক্ত: {0}টি টপিক
 Connetti	সংযোগ করুন
-Connetti all'avvio	শুরুতেই সংযোগ
+Connetti all'avvio	চালুর সময় সংযোগ
 Contatori	কাউন্টার
 Conteggio	গণনা
 Controllo le fonti di dati esterne...	বাহ্যিক তথ্য-উৎস পরীক্ষা করা হচ্ছে...
@@ -105,7 +105,7 @@ DENTRO il lobo	লোবের ভেতরে
 DM4X (PSKReporter)	DM4X (PSKReporter)
 DX cluster	DX cluster
 DX cluster a scelta	পছন্দের DX ক্লাস্টার
-Da qui: scie nello strato E a circa 90 km (radar SKiYMET), formula dell'elevazione, Hot A / Hot B, side-scatter, attenuazione di tratta, durata dei ping IARU.	এখান থেকে: প্রায় 90 km উচ্চতায় E স্তরে উল্কা-রেখা (SKiYMET রাডার), এলিভেশনের সূত্র, Hot A / Hot B, সাইড-স্ক্যাটার, পথ ক্ষয়, IARU পিং-এর স্থায়িত্ব।
+Da qui: scie nello strato E a circa 90 km (radar SKiYMET), formula dell'elevazione, Hot A / Hot B, side-scatter, attenuazione di tratta, durata dei ping IARU.	এখান থেকে: প্রায় 90 km উচ্চতায় E স্তরে উল্কা-রেখা (SKiYMET রাডার), উন্নতি কোণের সূত্র, Hot A / Hot B, সাইড-স্ক্যাটার, পথ ক্ষয়, IARU পিং-এর সময়কাল।
 Data del calcolo (UTC)	গণনার তারিখ (UTC)
 Decl.	বিষুবলম্ব
 Densita' della scia q = {0:E1} elettroni/m. Riferimenti: 172-190 dB (calcoli di G4BAO citati da GM8JBJ), 200 dB medio a 144 MHz (OH5IY)	উল্কা-রেখার ঘনত্ব q = {0:E1} ইলেকট্রন/m। তথ্যসূত্র: 172-190 dB (GM8JBJ-এর উদ্ধৃত G4BAO-এর গণনা), 144 MHz-এ গড় 200 dB (OH5IY)
@@ -115,7 +115,7 @@ Dettaglio dei prossimi {0:F0} s: passi del settore {1} ({2:F1} s ciascuno) e pas
 Direzioni Hot A / Hot B	Hot A / Hot B দিক
 Disconnesso	সংযোগ বিচ্ছিন্ন
 Disconnetti	বিচ্ছিন্ন করুন
-Distanza        {0:F0} km   azimut {1:F1}°   (dal corrispondente {2:F1}°)	দূরত্ব          {0:F0} km   অ্যাজিমুথ {1:F1}°   (DX স্টেশন থেকে {2:F1}°)
+Distanza        {0:F0} km   azimut {1:F1}°   (dal corrispondente {2:F1}°)	দূরত্ব          {0:F0} km   আজিমাথ {1:F1}°   (DX স্টেশন থেকে {2:F1}°)
 Documenti tecnici	প্রযুক্তিগত নথি
 Documento Word	Word নথি
 Documento esportato: {0}	নথি রপ্তানি হয়েছে: {0}
@@ -128,10 +128,10 @@ Efficienza - spiegazione	দক্ষতা - ব্যাখ্যা
 Efficienza oraria per {0} del {1} (UTC, valori a metà ora)	{1} তারিখে {0}-এর ঘণ্টাভিত্তিক দক্ষতা (UTC, ঘণ্টার মাঝামাঝি সময়ের মান)
 Efficienza tratta GRAVES → te	GRAVES → আপনার পথের দক্ষতা
 Elev.	এলি.
-Elevazione d'antenna in funzione della distanza dallo scatter point	স্ক্যাটার পয়েন্ট থেকে দূরত্ব অনুযায়ী অ্যান্টেনার এলিভেশন
-Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)	মধ্যবিন্দুর দিকে অ্যান্টেনার এলিভেশন: {0:F1}°   (প্রবন্ধের সূত্র, চিত্র 7)
-Elevazione lobo °	লোবের এলিভেশন °
-Errore all'avvio: {0}	শুরুতে ত্রুটি: {0}
+Elevazione d'antenna in funzione della distanza dallo scatter point	স্ক্যাটার পয়েন্ট থেকে দূরত্ব অনুযায়ী অ্যান্টেনার উন্নতি কোণ
+Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)	মধ্যবিন্দুর দিকে অ্যান্টেনার উন্নতি কোণ: {0:F1}°   (প্রবন্ধের সূত্র, চিত্র 7)
+Elevazione lobo °	লোবের উন্নতি কোণ °
+Errore all'avvio: {0}	চালুর সময় ত্রুটি: {0}
 Errore: {0}	ত্রুটি: {0}
 Esponente	সূচক
 Esponente dal confronto RMOB	RMOB তুলনা থেকে সূচক
@@ -152,7 +152,7 @@ File RMOB (conteggi orari del mese)	RMOB ফাইল (মাসের ঘণ্
 File mancante: {0}	ফাইল নেই: {0}
 Filtro	ফিল্টার
 Filtro degli spot meteor scatter	মিটিওর স্ক্যাটার স্পট ফিল্টার
-Finestra utile	কার্যকর সময়সীমা
+Finestra utile	উপযোগী জানালা
 Flusso radar	রাডার ফ্লাক্স
 Flusso radar: nessun dato. Premi "Scarica adesso".	রাডার ফ্লাক্স: কোনো তথ্য নেই। "এখনই ডাউনলোড" চাপুন।
 Fonte	উৎস
@@ -199,7 +199,7 @@ Ilkka Yrjola OH5IY - MS-Soft (concetto di efficienza dello sciame), www.kolumbus
 Importa CALL3.TXT...	CALL3.TXT আমদানি করুন...
 Impossibile leggere {0}: {1}	{0} পড়া যায়নি: {1}
 Impostazione del calcolo:	গণনার সেটিং:
-In forward scatter la durata cresce anche con sec²φ (φ = {0:F0}° al punto medio della tratta; Collm misura in backscatter, φ = 0): x {1:F1}, quindi un eco di 1 s a Collm dura circa {2:F0} ms sulla tratta.	forward scatter-এ স্থায়িত্ব sec²φ-এর সাথেও বাড়ে (পথের মধ্যবিন্দুতে φ = {0:F0}°; Collm backscatter-এ মাপে, φ = 0): x {1:F1}, তাই Collm-এ 1 s-এর প্রতিধ্বনি পথে প্রায় {2:F0} ms স্থায়ী হয়।
+In forward scatter la durata cresce anche con sec²φ (φ = {0:F0}° al punto medio della tratta; Collm misura in backscatter, φ = 0): x {1:F1}, quindi un eco di 1 s a Collm dura circa {2:F0} ms sulla tratta.	forward scatter-এ সময়কাল sec²φ-এর সাথেও বাড়ে (পথের মধ্যবিন্দুতে φ = {0:F0}°; Collm backscatter-এ মাপে, φ = 0): x {1:F1}, তাই Collm-এ 1 s-এর প্রতিধ্বনি পথে প্রায় {2:F0} ms স্থায়ী হয়।
 Indice della tratta Σ ZHR×η: {0}	পথ সূচক Σ ZHR×η: {0}
 Indice sciami tratta	পথের উল্কাবৃষ্টি সূচক
 Indice tratta (ZHR×eff.)	পথ সূচক (ZHR×দক্ষতা)
@@ -219,8 +219,8 @@ LIMITI DELLA ZONA COMUNE (incroci delle curve dove l'orizzonte di ciascuna stazi
 La parola "{0}" c'è, ma la riga non è uno spot "DX de ..." valido.	"{0}" শব্দটি আছে, কিন্তু লাইনটি বৈধ "DX de ..." স্পট নয়।
 La riga non è uno spot "DX de ..." valido.	লাইনটি বৈধ "DX de ..." স্পট নয়।
 La scala del grafico delle quote e' cambiata: le statistiche delle quote (moda, media, mediana) restano valide, i conteggi assoluti no.	উচ্চতা চার্টের স্কেল বদলেছে: উচ্চতার পরিসংখ্যান (মোড, গড়, মধ্যমা) বৈধ থাকে, পরম গণনা নয়।
-La sequenza del fascio si calcola con l'orologio del PC: sincronizzalo con un server NTP (errore di pochi decimi di secondo al massimo).	বিমের ক্রম PC-র ঘড়ি থেকে হিসাব হয়: এটি একটি NTP সার্ভারের সাথে সিঙ্ক করুন (ত্রুটি সর্বোচ্চ সেকেন্ডের কয়েক দশমাংশ)।
-La sequenza è legata all'ora UTC (PE1ITR): dal 2021 i passi durano 0,8 s e il ciclo di un settore 4,8 s; nel 2007 erano 3,2 s e 19,2 s. La stazione di comando a volte sposta la sequenza di qualche passo: il dettaglio è una previsione da confermare con l'ascolto. Una scia si sente solo se il fascio la illumina mentre dura: probabilità ≈ min(1, (passo + scia) / ciclo) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (durata tipica di una scia sottodensa a 143 MHz ≈ {1:F1} s).	ক্রমটি UTC সময়ের সাথে বাঁধা (PE1ITR): 2021 থেকে প্রতিটি ধাপ 0.8 s এবং একটি সেক্টরের চক্র 4.8 s; 2007-এ এগুলো ছিল 3.2 s ও 19.2 s। নিয়ন্ত্রণ স্টেশন মাঝে মাঝে ক্রমটি কয়েক ধাপ সরিয়ে দেয়: বিস্তারিতটি একটি পূর্বাভাস, শুনে নিশ্চিত করতে হবে। একটি উল্কা-রেখা কেবল তখনই শোনা যায় যদি সেটি স্থায়ী থাকাকালীন বিম তাকে আলোকিত করে: সম্ভাবনা ≈ min(1, (ধাপ + উল্কা-রেখা) / চক্র) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (143 MHz-এ আন্ডারডেন্স উল্কা-রেখার সাধারণ স্থায়িত্ব ≈ {1:F1} s)।
+La sequenza del fascio si calcola con l'orologio del PC: sincronizzalo con un server NTP (errore di pochi decimi di secondo al massimo).	বিমের ক্রম PC-র ঘড়ি থেকে গণনা করা হয়: এটি একটি NTP সার্ভারের সাথে সিঙ্ক করুন (ত্রুটি সর্বোচ্চ সেকেন্ডের কয়েক দশমাংশ)।
+La sequenza è legata all'ora UTC (PE1ITR): dal 2021 i passi durano 0,8 s e il ciclo di un settore 4,8 s; nel 2007 erano 3,2 s e 19,2 s. La stazione di comando a volte sposta la sequenza di qualche passo: il dettaglio è una previsione da confermare con l'ascolto. Una scia si sente solo se il fascio la illumina mentre dura: probabilità ≈ min(1, (passo + scia) / ciclo) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (durata tipica di una scia sottodensa a 143 MHz ≈ {1:F1} s).	ক্রমটি UTC সময়ের সাথে বাঁধা (PE1ITR): 2021 থেকে প্রতিটি ধাপ 0.8 s এবং একটি সেক্টরের চক্র 4.8 s; 2007-এ এগুলো ছিল 3.2 s ও 19.2 s। নিয়ন্ত্রণ স্টেশন মাঝে মাঝে ক্রমটি কয়েক ধাপ সরিয়ে দেয়: বিস্তারিতটি একটি পূর্বাভাস, শুনে নিশ্চিত করতে হবে। একটি উল্কা-রেখা কেবল তখনই শোনা যায় যদি সেটি স্থায়ী থাকাকালীন বিম তাকে আলোকিত করে: সম্ভাবনা ≈ min(1, (ধাপ + উল্কা-রেখা) / চক্র) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (143 MHz-এ আন্ডারডেন্স উল্কা-রেখার সাধারণ সময়কাল ≈ {1:F1} s)।
 Lato	পার্শ্ব
 Lato A = a sinistra della tratta, B = a destra	পার্শ্ব A = পথের বাঁদিকে, B = ডানদিকে
 Le lettere accanto alla percentuale dicono da quale lato della tratta arriva la maggior parte delle riflessioni. A = a SINISTRA guardando dalla tua stazione verso il corrispondente (zona Hot A); B = a DESTRA (zona Hot B). Conviene spostare l'antenna di 10-30° verso quel lato (side-scatter). Nessuna lettera = efficienza sotto il 5 %. Riga Σ: indice della tratta = somma di ZHR x efficienza di tutti gli sciami attivi. Righe azzurre: confronto con la formula di DH9GCD (DF5HC 2018). ↑ = radiante sopra 70° dalla tua stazione (troppo alto).	শতাংশের পাশের অক্ষরগুলো জানায় পথের কোন পার্শ্ব থেকে বেশিরভাগ প্রতিফলন আসে। A = আপনার স্টেশন থেকে DX স্টেশনের দিকে তাকালে বাঁদিকে (Hot A অঞ্চল); B = ডানদিকে (Hot B অঞ্চল)। অ্যান্টেনা সেই পাশে 10-30° ঘোরানো ভালো (সাইড-স্ক্যাটার)। কোনো অক্ষর নেই = দক্ষতা 5 %-এর নিচে। Σ সারি: পথ সূচক = সব সক্রিয় উল্কাবৃষ্টির ZHR x দক্ষতার যোগফল। হালকা নীল সারি: DH9GCD-এর সূত্রের সাথে তুলনা (DF5HC 2018)। ↑ = আপনার স্টেশন থেকে বিকিরণ বিন্দু 70°-এর ওপরে (খুব উঁচু)।
@@ -249,12 +249,12 @@ Mappa: bordo = {0} km dalla stazione. {1}	মানচিত্র: প্রা
 Mese non indicato: uso il mese corrente.	মাস উল্লেখ নেই: চলতি মাস ব্যবহার করা হচ্ছে।
 Meteore/ora - ieri {0} e oggi {1} (UTC)	উল্কা/ঘণ্টা - গতকাল {0} ও আজ {1} (UTC)
 Metti GRAVES come DX	GRAVES-কে DX করুন
-Miglior puntamento per lo sciame: ORTOGONALE alla direzione\ndi arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\nSM6FHZ). In pianta: linea gialla = scorrimento\ndello sciame, punti arancioni = puntamenti, ellissi\nPREV = scie piu' probabili adesso.\nClic su un radiante: percorso con le ore UTC	উল্কাবৃষ্টির জন্য সেরা দিক: আগমনের দিকের সাথে\nলম্ব (বিকিরণ বিন্দুর অ্যাজিমুথ +-90°, সহনসীমা +-40-50°,\nSM6FHZ)। উপর থেকে দৃশ্য: হলুদ রেখা = উল্কাবৃষ্টির\nসরণ, কমলা বিন্দু = দিকনির্দেশ, PREV\nউপবৃত্ত = এখন সম্ভাব্যতম উল্কা-রেখা।\nবিকিরণ বিন্দুতে ক্লিক: UTC সময়সহ গতিপথ
+Miglior puntamento per lo sciame: ORTOGONALE alla direzione\ndi arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\nSM6FHZ). In pianta: linea gialla = scorrimento\ndello sciame, punti arancioni = puntamenti, ellissi\nPREV = scie piu' probabili adesso.\nClic su un radiante: percorso con le ore UTC	উল্কাবৃষ্টির জন্য সেরা দিক: আগমনের দিকের সাথে\nলম্ব (বিকিরণ বিন্দুর আজিমাথ +-90°, সহনসীমা +-40-50°,\nSM6FHZ)। উপর থেকে দৃশ্য: হলুদ রেখা = উল্কাবৃষ্টির\nসরণ, কমলা বিন্দু = দিকনির্দেশ, PREV\nউপবৃত্ত = এখন সম্ভাব্যতম উল্কা-রেখা।\nবিকিরণ বিন্দুতে ক্লিক: UTC সময়সহ গতিপথ
 Misurato a Collm e traslato a {0} MHz - ieri {1} e oggi {2} (UTC)	Collm-এ মাপা এবং {0} MHz-এ রূপান্তরিত - গতকাল {1} ও আজ {2} (UTC)
 Mondo	বিশ্ব
 Monocerotidi di dicembre	ডিসেম্বর মনোসেরোটিড
 N	N
-N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durata delle riflessioni x ({1:F1}/{0:F0})^2 = x {5:F4}: un eco di 1 s a {1:F1} MHz dura circa {6:F0} ms a {0:F0} MHz (ping massimo IARU a {0:F0} MHz: {7:F0} ms).\nRegole sperimentali di SM6FHZ (VUSHF 2025). Il fattore K tiene conto della stazione ricevente (potenza, antenne): si ricava confrontando con un osservatore RMOB sulla stessa banda.	N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}।  প্রতিফলনের স্থায়িত্ব x ({1:F1}/{0:F0})^2 = x {5:F4}: {1:F1} MHz-এ 1 s-এর একটি প্রতিধ্বনি {0:F0} MHz-এ প্রায় {6:F0} ms স্থায়ী হয় ({0:F0} MHz-এ IARU সর্বোচ্চ পিং: {7:F0} ms)।\nSM6FHZ-এর পরীক্ষামূলক নিয়ম (VUSHF 2025)। গুণক K গ্রাহক স্টেশনকে (ক্ষমতা, অ্যান্টেনা) বিবেচনায় নেয়: একই ব্যান্ডের একজন RMOB পর্যবেক্ষকের সাথে তুলনা করে এটি নির্ণয় করা হয়।
+N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durata delle riflessioni x ({1:F1}/{0:F0})^2 = x {5:F4}: un eco di 1 s a {1:F1} MHz dura circa {6:F0} ms a {0:F0} MHz (ping massimo IARU a {0:F0} MHz: {7:F0} ms).\nRegole sperimentali di SM6FHZ (VUSHF 2025). Il fattore K tiene conto della stazione ricevente (potenza, antenne): si ricava confrontando con un osservatore RMOB sulla stessa banda.	N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}।  প্রতিফলনের সময়কাল x ({1:F1}/{0:F0})^2 = x {5:F4}: {1:F1} MHz-এ 1 s-এর একটি প্রতিধ্বনি {0:F0} MHz-এ প্রায় {6:F0} ms স্থায়ী হয় ({0:F0} MHz-এ IARU সর্বোচ্চ পিং: {7:F0} ms)।\nSM6FHZ-এর পরীক্ষামূলক নিয়ম (VUSHF 2025)। গুণক K গ্রাহক স্টেশনকে (ক্ষমতা, অ্যান্টেনা) বিবেচনায় নেয়: একই ব্যান্ডের একজন RMOB পর্যবেক্ষকের সাথে তুলনা করে এটি নির্ণয় করা হয়।
 Natural Earth - coste e confini 1:50 milioni, dominio pubblico, www.naturalearthdata.com (mappa d'Europa)	Natural Earth - 1:50 মিলিয়ন স্কেলের উপকূলরেখা ও সীমানা, পাবলিক ডোমেইন, www.naturalearthdata.com (ইউরোপের মানচিত্র)
 Nell'attenuazione (β = 90°, prudente): raggio iniziale della scia {0:F1} dB (r0 = {1:F2} m alla quota media ITU di {2:F1} km per {3:F0} MHz). Con la scia nel piano della tratta (β = 0°, caso migliore) l'attenuazione scende a {4:F1} dB ({5:F1} dB) e il margine sale a {6:+0.0;-0.0} dB	ক্ষয়ের মধ্যে (β = 90°, সতর্ক): উল্কা-রেখার প্রাথমিক ব্যাসার্ধ {0:F1} dB ({3:F0} MHz-এর জন্য ITU-এর গড় উচ্চতা {2:F1} km-এ r0 = {1:F2} m)। উল্কা-রেখা পথের তলে থাকলে (β = 0°, সবচেয়ে অনুকূল ক্ষেত্র) ক্ষয় কমে {4:F1} dB ({5:F1} dB) হয় এবং মার্জিন বেড়ে {6:+0.0;-0.0} dB হয়
 Nero	কালো
@@ -328,10 +328,10 @@ Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta: scarto {1
 Punto di riflessione	প্রতিফলন বিন্দু
 Punto medio     {0}  ({1:F2}N {2:F2}E)	মধ্যবিন্দু       {0}  ({1:F2}N {2:F2}E)
 Punto medio (forward)	মধ্যবিন্দু (forward)
-Punto medio {0}, elev. per {1:F1} km: {2:F1}°	মধ্যবিন্দু {0}, {1:F1} km-এর জন্য এলিভেশন: {2:F1}°
+Punto medio {0}, elev. per {1:F1} km: {2:F1}°	মধ্যবিন্দু {0}, {1:F1} km-এর জন্য উন্নতি কোণ: {2:F1}°
 Puppidi-Velidi	পাপিড-ভেলিড
 Quadrantidi	কোয়াড্রান্টিড
-Quattro schiere a fasi coprono il cielo a sud, da 90° a 270° di azimut, in quattro settori di 45° (D, C, B, A); ogni settore è diviso in 6 passi da 7,5°, illuminati uno dopo l'altro, nello stesso momento in tutti e quattro i settori (passi numerati da 1 a 6 a partire dall'azimut più basso). Il fascio è largo circa 25° in elevazione: alla quota delle scie copre la corona colorata tra i due cerchi tratteggiati. Punti arancio/rosa = zone PREV della tratta GRAVES → te, linea verde = direzione della tua stazione, linea rossa = dalla tua stazione all'hot spot consigliato (PE1ITR).	চারটি ফেজড অ্যারে দক্ষিণ আকাশ ঢেকে রাখে, অ্যাজিমুথ 90° থেকে 270° পর্যন্ত, 45°-এর চারটি সেক্টরে (D, C, B, A); প্রতিটি সেক্টর 7.5°-এর 6টি ধাপে বিভক্ত, যেগুলো একটির পর একটি আলোকিত হয়, চারটি সেক্টরেই একই মুহূর্তে (ধাপগুলো সবচেয়ে কম অ্যাজিমুথ থেকে 1 থেকে 6 পর্যন্ত নম্বরযুক্ত)। বিমটি এলিভেশনে প্রায় 25° চওড়া: উল্কা-রেখার উচ্চতায় এটি দুটি ড্যাশ-চিহ্নিত বৃত্তের মাঝের রঙিন বলয় ঢেকে রাখে। কমলা/গোলাপি বিন্দু = GRAVES → আপনার পথের PREV অঞ্চল, সবুজ রেখা = আপনার স্টেশনের দিক, লাল রেখা = আপনার স্টেশন থেকে প্রস্তাবিত হট স্পট পর্যন্ত (PE1ITR)।
+Quattro schiere a fasi coprono il cielo a sud, da 90° a 270° di azimut, in quattro settori di 45° (D, C, B, A); ogni settore è diviso in 6 passi da 7,5°, illuminati uno dopo l'altro, nello stesso momento in tutti e quattro i settori (passi numerati da 1 a 6 a partire dall'azimut più basso). Il fascio è largo circa 25° in elevazione: alla quota delle scie copre la corona colorata tra i due cerchi tratteggiati. Punti arancio/rosa = zone PREV della tratta GRAVES → te, linea verde = direzione della tua stazione, linea rossa = dalla tua stazione all'hot spot consigliato (PE1ITR).	চারটি ফেজড অ্যারে দক্ষিণ আকাশ ঢেকে রাখে, আজিমাথ 90° থেকে 270° পর্যন্ত, 45°-এর চারটি সেক্টরে (D, C, B, A); প্রতিটি সেক্টর 7.5°-এর 6টি ধাপে বিভক্ত, যেগুলো একটির পর একটি আলোকিত হয়, চারটি সেক্টরেই একই মুহূর্তে (ধাপগুলো সবচেয়ে কম আজিমাথ থেকে 1 থেকে 6 পর্যন্ত নম্বরযুক্ত)। বিমটি উন্নতি কোণে প্রায় 25° চওড়া: উল্কা-রেখার উচ্চতায় এটি দুটি ড্যাশ-চিহ্নিত বৃত্তের মাঝের রঙিন বলয় ঢেকে রাখে। কমলা/গোলাপি বিন্দু = GRAVES → আপনার পথের PREV অঞ্চল, সবুজ রেখা = আপনার স্টেশনের দিক, লাল রেখা = আপনার স্টেশন থেকে প্রস্তাবিত হট স্পট পর্যন্ত (PE1ITR)।
 Quota delle scie e opzioni scelte a mano. Si seleziona da sola quando cambi la quota, la casella "dal radar", le scie lunghe o l'angolo β.	উল্কা-রেখার উচ্চতা ও বিকল্প হাতে বাছাই করা। আপনি উচ্চতা, "রাডার থেকে" বাক্স, দীর্ঘ উল্কা-রেখা বা কোণ β বদলালে এটি নিজে থেকেই নির্বাচিত হয়।
 Quota fissa di 102 km, scie più lunghe con il radiante basso e angolo β, come in "Die Geometrie von Meteorscatterverbindungen" di DJ5HG (2004).\nConfronto con le sue curve: in media 2 dB sotto, scarto tipico 5 dB; prevalgono i radianti allineati alla tratta.	102 km স্থির উচ্চতা, নিচু বিকিরণ বিন্দুতে দীর্ঘতর উল্কা-রেখা এবং কোণ β, যেমন DJ5HG-এর "Die Geometrie von Meteorscatterverbindungen" (2004)-এ।\nতাঁর বক্ররেখার সাথে তুলনা: গড়ে 2 dB নিচে, সাধারণ বিচ্যুতি 5 dB; পথ বরাবর সারিবদ্ধ বিকিরণ বিন্দু প্রাধান্য পায়।
 Quota scie      {0:F1} km (strato E){1}	উল্কা-রেখার উচ্চতা {0:F1} km (E স্তর){1}
@@ -363,7 +363,7 @@ Riepilogo dell'anno (ZHR misurati, GMN)	বছরের সারসংক্ষ
 Riga {0} ignorata (colonne insufficienti)	সারি {0} উপেক্ষিত (যথেষ্ট কলাম নেই)
 Riga {0}: {1}	সারি {0}: {1}
 Riporta il momento del calcolo al tempo reale	গণনার সময় প্রকৃত সময়ে ফেরান
-Rispetto a 144 MHz: numero/intensità x {0:F3} ({1:+0.0;-0.0} dB), durata x {2:F2}. Ping massimo IARU a {3:F0} MHz: {4:F0} ms	144 MHz-এর তুলনায়: সংখ্যা/তীব্রতা x {0:F3} ({1:+0.0;-0.0} dB), স্থায়িত্ব x {2:F2}। {3:F0} MHz-এ IARU সর্বোচ্চ পিং: {4:F0} ms
+Rispetto a 144 MHz: numero/intensità x {0:F3} ({1:+0.0;-0.0} dB), durata x {2:F2}. Ping massimo IARU a {3:F0} MHz: {4:F0} ms	144 MHz-এর তুলনায়: সংখ্যা/তীব্রতা x {0:F3} ({1:+0.0;-0.0} dB), সময়কাল x {2:F2}। {3:F0} MHz-এ IARU সর্বোচ্চ পিং: {4:F0} ms
 Rob Hardenberg PE1ITR, "The 143.050 MHz Graves Radar, a VHF Beacon" (DUBUS 4/2007) e "Graves Radar Update April 2021" – pe1itr.com/graves	Rob Hardenberg PE1ITR, "The 143.050 MHz Graves Radar, a VHF Beacon" (DUBUS 4/2007) ও "Graves Radar Update April 2021" – pe1itr.com/graves
 Rotellina = zoom, trascina = sposta, mouse sopra un quadrato = QSO	চাকা = জুম, টানুন = সরান, বর্গের ওপর মাউস = QSO
 S	S
@@ -392,12 +392,12 @@ Segnale minimo dBm	ন্যূনতম সংকেত dBm
 Sequenza del fascio	বিমের ক্রম
 Servono sia i dati di Collm sia un file RMOB delle stesse ore.	Collm-এর তথ্য এবং একই ঘণ্টাগুলোর একটি RMOB ফাইল, দুটোই দরকার।
 Sextantidi diurne	দিবাকালীন সেক্সট্যান্টিড
-Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)	Shelby W8WN - qsl.net/w8wn/hscw (সর্বোত্তম এলিভেশন ও অফসেট)
+Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)	Shelby W8WN - qsl.net/w8wn/hscw (সর্বোত্তম উন্নতি কোণ ও অফসেট)
 Sigla	কোড
 Sono i bordi piu' lontani del cielo visto da entrambe le stazioni, non i punti da puntare.	এগুলো দুই স্টেশন থেকেই দেখা আকাশের সবচেয়ে দূরের প্রান্ত, তাক করার বিন্দু নয়।
 Sorge	উদয়
 Sorgente Antielio	অ্যান্টিহেলিয়ন উৎস
-Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	বন্ধ (সতর্ক): প্রতিটি উল্কা-রেখাকে বিকিরণ বিন্দুর এলিভেশনের সাইন দিয়ে ওজন দেওয়া হয়, কারণ নিচু বিকিরণ বিন্দুতে প্রতি km²-এ কম উল্কা পড়ে।\nচালু: DJ5HG (2004)-এর মতো, নিচু বিকিরণ বিন্দুতে উল্কা-রেখা দীর্ঘতর হয় (স্তরের কার্যকর পুরুত্ব, 15 km, এলিভেশনের সাইন দিয়ে ভাগ, 100 km পর্যন্ত) এবং প্রতিফলনের নিয়ম আরও প্রায়ই পূরণ করে। দুটি প্রভাব প্রায় 9° এলিভেশনের ওপরে পরস্পরকে কাটাকাটি করে: নিচু বিকিরণ বিন্দুতে দক্ষতা বাড়ে, উঁচুতে বদলায় না।
+Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	বন্ধ (সতর্ক): প্রতিটি উল্কা-রেখাকে বিকিরণ বিন্দুর উন্নতি কোণের সাইন দিয়ে ওজন দেওয়া হয়, কারণ নিচু বিকিরণ বিন্দুতে প্রতি km²-এ কম উল্কা পড়ে।\nচালু: DJ5HG (2004)-এর মতো, নিচু বিকিরণ বিন্দুতে উল্কা-রেখা দীর্ঘতর হয় (স্তরের কার্যকর পুরুত্ব, 15 km, উন্নতি কোণের সাইন দিয়ে ভাগ, 100 km পর্যন্ত) এবং প্রতিফলনের নিয়ম আরও প্রায়ই পূরণ করে। দুটি প্রভাব প্রায় 9° উন্নতি কোণের ওপরে পরস্পরকে কাটাকাটি করে: নিচু বিকিরণ বিন্দুতে দক্ষতা বাড়ে, উঁচুতে বদলায় না।
 Spot MS della linguetta "Raccolta dati". Per ogni contatto la nuvola indica dove si concentrano le scie più probabili per quella tratta e quell'ora (riflessione speculare, somma degli sciami attivi). Nuvole tratteggiate = solo meteore sporadiche. Gli spot con una stazione fuori dalla mappa non si disegnano; quelli appena arrivati (meno di 3 minuti) lampeggiano per un minuto.	"ডেটা সংগ্রহ" ট্যাবের MS স্পট। প্রতিটি যোগাযোগের জন্য মেঘটি দেখায় সেই পথ ও সেই ঘণ্টার সম্ভাব্যতম উল্কা-রেখাগুলো কোথায় কেন্দ্রীভূত (দর্পণ প্রতিফলন, সক্রিয় উল্কাবৃষ্টিগুলোর যোগফল)। ড্যাশ দেওয়া মেঘ = কেবল বিক্ষিপ্ত উল্কা। যে স্পটের কোনো স্টেশন মানচিত্রের বাইরে, সেগুলো আঁকা হয় না; সদ্য আসা স্পটগুলো (3 মিনিটের কম) এক মিনিট ধরে জ্বলে-নেভে।
 Spot MS raccolti	সংগৃহীত MS স্পট
 Spot da mostrare	দেখানোর স্পট
@@ -405,13 +405,13 @@ Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LT
 Spot meteor scatter raccolti (i più recenti in alto)	সংগৃহীত মিটিওর স্ক্যাটার স্পট (সবচেয়ে নতুনগুলো ওপরে)
 Stazione	স্টেশন
 Stazione        {0}   quota {1:F0} m	স্টেশন          {0}   উচ্চতা {1:F0} m
-Stima sperimentale (regole SM6FHZ): meteore/ora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durata dei ping x {4:F3}. Ping massimo IARU a {0:F0} MHz: {5:F0} ms. Valori indicativi, da confrontare con l'esperienza in banda.{6}	পরীক্ষামূলক অনুমান (SM6FHZ নিয়ম): {0:F0} MHz-এ উল্কা/ঘণ্টা = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; পিং-এর স্থায়িত্ব x {4:F3}। {0:F0} MHz-এ IARU সর্বোচ্চ পিং: {5:F0} ms। নির্দেশক মান, ব্যান্ডের অভিজ্ঞতার সাথে মিলিয়ে দেখতে হবে।{6}
+Stima sperimentale (regole SM6FHZ): meteore/ora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durata dei ping x {4:F3}. Ping massimo IARU a {0:F0} MHz: {5:F0} ms. Valori indicativi, da confrontare con l'esperienza in banda.{6}	পরীক্ষামূলক অনুমান (SM6FHZ নিয়ম): {0:F0} MHz-এ উল্কা/ঘণ্টা = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; পিং-এর সময়কাল x {4:F3}। {0:F0} MHz-এ IARU সর্বোচ্চ পিং: {5:F0} ms। নির্দেশক মান, ব্যান্ডের অভিজ্ঞতার সাথে মিলিয়ে দেখতে হবে।{6}
 Svuota la tabella	টেবিল খালি করুন
 Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)	DL1DBC-এর Swan Meteor Skyview - swan.ms (আকাশ-গম্বুজের গ্রাফিক্সের রেফারেন্স)
 Sì	হ্যাঁ
 Sì · settore {0}	হ্যাঁ · সেক্টর {0}
 TRATTA	পথ
-TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	উল্কা-রেখার দিগন্তের ওপারে পথ: {0:F1} km উচ্চতার উল্কা-রেখায় মধ্যবিন্দু দিগন্তের {1:F1}° নিচে। কমপক্ষে {2:F0} km উচ্চতার উল্কা-রেখা প্রয়োজন: সংযোগ কেবল সর্বোচ্চ উল্কা-রেখা দিয়েই সম্ভব, দক্ষতা ও ক্ষয় মডেলের সীমায়।
+TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	উল্কা-রেখার দিগন্তের ওপারে পথ: {0:F1} km উচ্চতার উল্কা-রেখায় মধ্যবিন্দু দিগন্তের {1:F1}° নিচে। কমপক্ষে {2:F0} km উচ্চতার উল্কা-রেখা প্রয়োজন: যোগাযোগ কেবল সর্বোচ্চ উল্কা-রেখা দিয়েই সম্ভব, দক্ষতা ও ক্ষয় মডেলের সীমায়।
 Tauridi Nord	উত্তর টরিড
 Tauridi Sud	দক্ষিণ টরিড
 Tavistock, Ontario (Canada)	Tavistock, Ontario (কানাডা)
@@ -437,7 +437,7 @@ Ursidi	উরসিড
 Vale per gli spot fuori dalle finestre e per quelli con una scritta di altra propagazione: si tengono se contengono una delle parole accese, in maiuscolo, minuscolo o misto. MSK144, FSK441, PSK2K, JTMS e JT6M sono modi digitali usati solo per il meteor scatter: lo spot è MS di sicuro. <MS> indica genericamente che il collegamento è avvenuto via meteor scatter.	উইন্ডোর বাইরের স্পট এবং অন্য প্রোপাগেশনের ট্যাগযুক্ত স্পটের ক্ষেত্রে প্রযোজ্য: চালু শব্দগুলোর কোনো একটি থাকলে সেগুলো রাখা হয়, বড়, ছোট বা মিশ্র হাতের অক্ষরে। MSK144, FSK441, PSK2K, JTMS ও JT6M ডিজিটাল মোড কেবল মিটিওর স্ক্যাটারের জন্য ব্যবহৃত হয়: স্পটটি নিশ্চিতভাবে MS। <MS> সাধারণভাবে নির্দেশ করে যে যোগাযোগটি মিটিওর স্ক্যাটারের মাধ্যমে হয়েছে।
 Valori più prudenti, di partenza: quota delle scie misurata dal radar di Collm (casella "dal radar"), scie normali, angolo β acceso.\nConfronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo): in media 7 dB sotto, con lo stesso andamento orario (scarto di forma circa 3 dB).	সবচেয়ে সতর্ক মান, প্রারম্ভিক সেটিং: Collm রাডারে মাপা উল্কা-রেখার উচ্চতা ("রাডার থেকে" বাক্স), সাধারণ উল্কা-রেখা, কোণ β চালু।\nDJ5HG-এর বক্ররেখার সাথে তুলনা (কোয়াড্রান্টিডস, হামবুর্গ থেকে পথ): গড়ে 7 dB নিচে, একই ঘণ্টাভিত্তিক ধারা সহ (আকৃতির বিচ্যুতি প্রায় 3 dB)।
 Valori prudenti: scia che attraversa il piano della tratta (β = 90°, caso più sfavorevole), compreso il raggio iniziale della scia (ITU-R P.843) alla quota media degli echi per ciascuna frequenza	সতর্ক মান: পথের তল অতিক্রমকারী উল্কা-রেখা (β = 90°, সবচেয়ে প্রতিকূল ক্ষেত্র), প্রতিটি কম্পাঙ্কের জন্য প্রতিধ্বনির গড় উচ্চতায় উল্কা-রেখার প্রাথমিক ব্যাসার্ধ (ITU-R P.843) সহ
-Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	GRAVES → আপনার পথের প্রস্তাবিত হট স্পটের দিকে (পথ প্যানেল), কম এলিভেশনে
+Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	GRAVES → আপনার পথের প্রস্তাবিত হট স্পটের দিকে (পথ প্যানেল), কম উন্নতি কোণে
 Vista dall'alto (E a destra)	উপর থেকে দৃশ্য (পূর্ব ডানে)
 Waterfall	Waterfall
 Wikipedia, "GRAVES (system)" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)	Wikipedia, "GRAVES (system)" – Broye-lès-Pesmes-এ ট্রান্সমিটার (47.348° N 5.515° E)
@@ -461,7 +461,7 @@ ant_radiante.csv: riga ignorata: {0}	ant_radiante.csv: সারি উপেক
 antenna verso {0}: az {1:F0}° · el {2:F1}°\nGRAVES in linea diretta: az {3:F0}°	{0}-এর দিকে অ্যান্টেনা: az {1:F0}° · el {2:F1}°\nGRAVES সরাসরি পথে: az {3:F0}°
 antenna {0}°	অ্যান্টেনা {0}°
 auto (AMS)	স্বয়ংক্রিয় (AMS)
-azimut rispetto al corrispondente	DX স্টেশনের সাপেক্ষে অ্যাজিমুথ
+azimut rispetto al corrispondente	DX স্টেশনের সাপেক্ষে আজিমাথ
 beta-Tauridi diurne	দিবাকালীন বিটা টরিড
 buono	ভালো
 calcolato da λ	λ থেকে হিসাবকৃত
@@ -469,7 +469,7 @@ calcolo della tratta GRAVES → te in corso...	GRAVES → আপনার পথ
 circumpolare	পরিমেরু
 clic destro =	ডান ক্লিক =
 clic sinistro =	বাঁ ক্লিক =
-collegamento via meteor scatter	মিটিওর স্ক্যাটারের মাধ্যমে সংযোগ
+collegamento via meteor scatter	মিটিওর স্ক্যাটারের মাধ্যমে যোগাযোগ
 comandi dopo il login, separati da ;	লগইনের পরের কমান্ড, ; দিয়ে আলাদা
 comando da inviare (es. sh/dx 20)	পাঠানোর কমান্ড (যেমন sh/dx 20)
 confermato (QSL o LoTW)	নিশ্চিত (QSL বা LoTW)
@@ -480,7 +480,7 @@ dati CC BY 4.0 (Vida et al. 2021, 2022)	তথ্য CC BY 4.0 (Vida et al. 2021
 delta-Aquaridi Sud	দক্ষিণ ডেল্টা অ্যাকোয়ারিড
 eco	প্রতিধ্বনি
 eco attese ≈ {0:F0}/ora (sperimentale: previsione × fascio {1:F0} %)	প্রত্যাশিত প্রতিধ্বনি ≈ {0:F0}/ঘণ্টা (পরীক্ষামূলক: পূর্বাভাস × বিম {1:F0} %)
-eco possibile (+{0:F1} s di scia)	সম্ভাব্য প্রতিধ্বনি (+{0:F1} s উল্কা-রেখা)
+eco possibile (+{0:F1} s di scia)	প্রতিধ্বনি সম্ভব (+{0:F1} s উল্কা-রেখা)
 effic. %	দক্ষতা %
 effic. < 20%	দক্ষতা < 20%
 effic. >= 20%	দক্ষতা >= 20%
@@ -559,7 +559,7 @@ pi-Puppidi	পাই পাপিড
 prelievo automatico ogni 5 minuti (attivare solo con il permesso di RMOB)	প্রতি 5 মিনিটে স্বয়ংক্রিয় ডাউনলোড (কেবল RMOB-এর অনুমতি নিয়ে চালু করুন)
 previsione {0} MHz /ora	পূর্বাভাস {0} MHz /ঘণ্টা
 puntamento migliore {0}° / {1}°	সেরা দিক {0}° / {1}°
-puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km	{0:F0}°-এ তাক করুন (DX স্টেশন থেকে {1:+0;-0}°), এলিভেশন {2:F1}°, হট স্পট {3:F0} km দূরে
+puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km	{0:F0}°-এ তাক করুন (DX স্টেশন থেকে {1:+0;-0}°), উন্নতি কোণ {2:F1}°, হট স্পট {3:F0} km দূরে
 quasi inattivo	প্রায় নিষ্ক্রিয়
 quota m	উচ্চতা m
 radar SKiYMET 36,2 MHz	SKiYMET রাডার 36.2 MHz
@@ -629,7 +629,7 @@ zona PREV	PREV অঞ্চল
 {0} · zona	{0} · অঞ্চল
 {0}: non lavorato	{0}: সংযোগ হয়নি
 {0}: {1}  az. da me {2:F0}° (scarto {3:+0;-0}°), dal corrispondente {4:F0}°, distanza {5:F0} km	{0}: {1}  আমার থেকে az. {2:F0}° (বিচ্যুতি {3:+0;-0}°), DX স্টেশন থেকে {4:F0}°, দূরত্ব {5:F0} km
-{0}: {1}  az. da me {2:F1}° (scarto {3:+0.0;-0.0}° dalla direzione diretta), dal corrispondente {4:F0}°, distanza {5:F0} km, elevazione {6:F1}°	{0}: {1}  আমার থেকে az. {2:F1}° (সরাসরি দিক থেকে বিচ্যুতি {3:+0.0;-0.0}°), DX স্টেশন থেকে {4:F0}°, দূরত্ব {5:F0} km, এলিভেশন {6:F1}°
+{0}: {1}  az. da me {2:F1}° (scarto {3:+0.0;-0.0}° dalla direzione diretta), dal corrispondente {4:F0}°, distanza {5:F0} km, elevazione {6:F1}°	{0}: {1}  আমার থেকে az. {2:F1}° (সরাসরি দিক থেকে বিচ্যুতি {3:+0.0;-0.0}°), DX স্টেশন থেকে {4:F0}°, দূরত্ব {5:F0} km, উন্নতি কোণ {6:F1}°
 {0}: {1} QSO	{0}: {1} QSO
 {0}: {1} ore lette.	{0}: {1} ঘণ্টা পড়া হয়েছে।
 {0}: {1} quadrati lavorati, {2} confermati	{0}: {1}টি বর্গে সংযোগ, {2}টি নিশ্চিত

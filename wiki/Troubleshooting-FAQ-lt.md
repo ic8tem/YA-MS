@@ -22,7 +22,7 @@ Paleiskite `./installa.sh` iš išskleisto aplanko (ne iš `~/YA-MS`). Kai kurio
 ## Rodymas
 
 ### Linux: japoniškas tekstas rodomas kvadratėliais
-Jūsų sistemoje trūksta CJK šriftų. Įdiekite **Noto CJK** šriftus ir paleiskite YA-MS iš naujo:
+Jūsų sistemoje trūksta CJK šriftų (kinų, japonų, korėjiečių). Įdiekite **Noto CJK** šriftus ir paleiskite YA-MS iš naujo. Tas pats nutinka su arabų, hebrajų, urdu, hindi ir bengalų kalbomis: Debian, Ubuntu ir Raspberry Pi OS sistemose įdiekite ir `fonts-noto-core`.
 
 | Distribucija | Komanda |
 |---|---|

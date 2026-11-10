@@ -5,7 +5,7 @@
 (destra)  B →	(오른쪽)  B →
 (lettura Collm: {0})	(Collm 판독값: {0})
 (stima poco precisa sotto 2 λ)	(2 λ 미만에서는 대략적인 추정)
--> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto (servono scie ad almeno {0:F0} km)	-> 흔적 고도에서 중간점이 수평선 아래: 단일 홉의 기하학적 도달 거리를 넘는 경로 (고도 {0:F0} km 이상의 흔적 필요)
+-> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto (servono scie ad almeno {0:F0} km)	-> 흔적 고도에서 중간점이 지평선 아래: 단일 홉의 기하학적 도달 거리를 넘는 경로 (고도 {0:F0} km 이상의 흔적 필요)
 0,8 s per passo · ciclo 4,8 s (PE1ITR 2021)	스텝당 0.8 s · 주기 4.8 s (PE1ITR 2021)
 1° criterio: frequenze tipiche degli spot meteor scatter (kHz)	1차 기준: 유성 산란 스폿의 대표 주파수 (kHz)
 2° criterio: modi digitali MS e <MS>	2차 기준: MS 디지털 모드와 <MS>
@@ -32,8 +32,8 @@ Angolo β tra scia e tratta (McKinley completo)	흔적과 경로 사이의 각 �
 Antenna	안테나
 Antenna Yagi: boom m	야기 안테나: 붐 m
 Antenna Yagi: boom {0:F2} m = {1:F2} lambda a {2:F0} MHz -> guadagno {3:F1} dBi (curva DL6WU),\n  lobo a -3 dB {4:F0}° orizzontale / {5:F0}° verticale (Kraus corretto con le simulazioni NEC di W4RNL)	야기 안테나: 붐 {0:F2} m = {2:F0} MHz에서 {1:F2} 파장 -> 이득 {3:F1} dBi (DL6WU 곡선),\n  -3 dB 로브 수평 {4:F0}° / 수직 {5:F0}° (W4RNL의 NEC 시뮬레이션으로 보정한 Kraus 식)
-Antenna az: -	안테나 방위: -
-Antenna az: {0}° (verso il DX)	안테나 방위: {0}° (DX 방향)
+Antenna az: -	안테나 방위각: -
+Antenna az: {0}° (verso il DX)	안테나 방위각: {0}° (DX 방향)
 Apri in Word	Word에서 열기
 Apri la cartella degli spot	스폿 폴더 열기
 Argomenti di partenza	기본 토픽
@@ -122,7 +122,7 @@ Documento esportato: {0}	문서를 내보냈습니다: {0}
 Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	실시간 데이터 소스의 위치. 파선 원 = 레이더가 보는 하늘 영역 (국 주변 약 300 km, 흔적 고도 90 km): 어떤 레이더도 내 경로 위의 하늘을 보지 않으며, 데이터는 유성우가 얼마나 활발한지를 알려 줍니다. 점선 = 내 국으로부터의 거리.
 Draconidi di ottobre	10월 용자리 유성우
 E	E
-EFFICIENZA DELLA TRATTA GRAVES → TE ADESSO	GRAVES → 내 경로의 현재 효율
+EFFICIENZA DELLA TRATTA GRAVES → TE ADESSO	지금 GRAVES → 내 경로의 효율
 Effic. %	효율 %
 Efficienza - spiegazione	효율 - 설명
 Efficienza oraria per {0} del {1} (UTC, valori a metà ora)	{1} {0}의 시간별 효율 (UTC, 매시 30분 값)
@@ -131,7 +131,7 @@ Elev.	앙각
 Elevazione d'antenna in funzione della distanza dallo scatter point	스캐터 포인트까지 거리에 따른 안테나 앙각
 Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)	중간점 방향 안테나 앙각: {0:F1}°   (논문의 공식, 그림 7)
 Elevazione lobo °	로브 앙각 °
-Errore all'avvio: {0}	시작 오류: {0}
+Errore all'avvio: {0}	시작 시 오류: {0}
 Errore: {0}	오류: {0}
 Esponente	지수
 Esponente dal confronto RMOB	RMOB 비교로 구한 지수
@@ -152,7 +152,7 @@ File RMOB (conteggi orari del mese)	RMOB 파일 (월간 시간별 계수)
 File mancante: {0}	파일 없음: {0}
 Filtro	필터
 Filtro degli spot meteor scatter	유성 산란 스폿 필터
-Finestra utile	유효 시간대
+Finestra utile	사용 가능한 창
 Flusso radar	레이더 플럭스
 Flusso radar: nessun dato. Premi "Scarica adesso".	레이더 플럭스: 데이터 없음. "지금 다운로드"를 누르세요.
 Fonte	소스
@@ -163,11 +163,11 @@ Formato file mensile, {0}/{1}.	월간 파일 형식, {0}/{1}.
 Formato tabella del bollettino ({0}/{1}): se il file contiene piu' osservatori vengono letti di seguito, usa un file con un solo osservatore.	회보 표 형식({0}/{1}): 파일에 여러 관측자가 있으면 이어서 읽으므로 관측자가 하나인 파일을 사용하세요.
 Foto	사진
 Frequenza di arrivo MHz	목표 주파수 MHz
-G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook	G3WZT, DH8BQA, geekshed.co.uk, WSJT-X 매뉴얼, WB2FKO (핑), IU6GIR (143.050 MHz 활동), IARU Region 1 VHF Handbook
+G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook	G3WZT, DH8BQA, geekshed.co.uk, WSJT-X 설명서, WB2FKO (핑), IU6GIR (143.050 MHz 활동), IARU Region 1 VHF Handbook
 GEOMETRIA DELLA TRATTA (Terra sferica, R = 6372,7955 km)	경로 기하 (구형 지구, R = 6372.7955 km)
 GMN e CMOR alle {0} UTC: {1} errori ({2})	{0} UTC의 GMN 및 CMOR: 오류 {1}개 ({2})
 GMN e CMOR controllati alle {0} UTC ({1} file nuovi). Dati GMN: CC BY 4.0.	{0} UTC에 GMN 및 CMOR 확인 (새 파일 {1}개). GMN 데이터: CC BY 4.0.
-GRAVES in linea diretta: az {0:F0}°	GRAVES 직선 방향: 방위 {0:F0}°
+GRAVES in linea diretta: az {0:F0}°	GRAVES 직선 방향: 방위각 {0:F0}°
 Geminidi	쌍둥이자리 유성우
 Geometria e attenuazione	기하와 경로 손실
 Giorno per la tabella 24 h (UTC)	24 h 표의 날짜 (UTC)
@@ -182,10 +182,10 @@ Host	호스트
 Hot A	Hot A
 Hot A/B: hot spot a {0} km dal punto medio (valore scritto a mano).	Hot A/B: 중간점에서 {0} km 떨어진 핫스폿 (수동 입력값).
 Hot A/B: hot spot a {0} km dal punto medio, scarto {1}° (tabella AMS di J. Richardson, DJ5HG).	Hot A/B: 중간점에서 {0} km 떨어진 핫스폿, 편차 {1}° (J. Richardson의 AMS 표, DJ5HG).
-Hot A: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot A: 방위 {0:F0}° ({1:+0;-0}°)  {2}
+Hot A: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot A: 방위각 {0:F0}° ({1:+0;-0}°)  {2}
 Hot B	Hot B
-Hot B: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot B: 방위 {0:F0}° ({1:+0;-0}°)  {2}
-Hot consigliato	추천 Hot
+Hot B: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot B: 방위각 {0:F0}° ({1:+0;-0}°)  {2}
+Hot consigliato	권장 Hot
 Hot fuori lobo	로브 밖 Hot
 Hot nel lobo	로브 안 Hot
 Hot spot dal punto medio km	중간점에서 핫스폿까지 km
@@ -213,9 +213,9 @@ Jens DF5HC - "Meteorscatter auf UKW", conferenza DARC, gennaio 2018: formula del
 John Drew VK5DJ - Yagi Calculator: stime del guadagno per le varianti VK3AUU, WA2PHW e DJ9BV	John Drew VK5DJ - Yagi Calculator: VK3AUU, WA2PHW, DJ9BV 변형의 이득 추정
 John GM8JBJ - Meteor scatter path loss, hamradio.engineering (da Kaiser & Closs 1952; cita i calcoli di John Worsnop G4BAO, 172-190 dB)	John GM8JBJ - Meteor scatter path loss, hamradio.engineering (Kaiser & Closs 1952 기반; John Worsnop G4BAO의 계산 172-190 dB 인용)
 Klaus von der Heide DJ5HG - "Die Geometrie von Meteorscatterverbindungen" (2004): riferimento fisso in dB, scie lunghe con il radiante basso,\n    curve delle tratte da Amburgo e da Monaco; tabella AMS di J. Richardson per la distanza degli hot spot	Klaus von der Heide DJ5HG - "Die Geometrie von Meteorscatterverbindungen" (2004): dB 단위의 고정 기준, 낮은 복사점에서의 긴 흔적,\n    함부르크와 뮌헨에서 출발하는 경로의 곡선; 핫스폿 거리를 위한 J. Richardson의 AMS 표
-Klaus von der Heide DJ5HG - QTFGUI (aurora, FAI e meteor scatter) e manuale "QTFGUI Help" 2007: legge di diffusione a cono,\n    caso di prova Amburgo - Barcellona nelle Quadrantidi, usato per verificare il modello	Klaus von der Heide DJ5HG - QTFGUI (오로라, FAI, 유성 산란) 및 "QTFGUI Help" 매뉴얼 2007: 원뿔 산란 법칙,\n    사분의자리 유성우 때의 함부르크 - 바르셀로나 시험 사례, 모델 검증에 사용
+Klaus von der Heide DJ5HG - QTFGUI (aurora, FAI e meteor scatter) e manuale "QTFGUI Help" 2007: legge di diffusione a cono,\n    caso di prova Amburgo - Barcellona nelle Quadrantidi, usato per verificare il modello	Klaus von der Heide DJ5HG - QTFGUI (오로라, FAI, 유성 산란) 및 "QTFGUI Help" 설명서 2007: 원뿔 산란 법칙,\n    사분의자리 유성우 때의 함부르크 - 바르셀로나 시험 사례, 모델 검증에 사용
 L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data (verifica delle due regole);\n    Appreciating DL6WU Wide-Band Long-Boom Yagi Design e 70-CM Yagi Stacks Part 2 (Yagi VK3AUU di David Tanner):\n    simulazioni NEC usate per verificare la curva del guadagno e correggere il lobo orizzontale (0,93 x Kraus)	L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data (두 규칙의 검증);\n    Appreciating DL6WU Wide-Band Long-Boom Yagi Design 및 70-CM Yagi Stacks Part 2 (David Tanner의 VK3AUU 야기):\n    이득 곡선 검증과 수평 로브 보정(0.93 x Kraus)에 사용한 NEC 시뮬레이션
-LIMITI DELLA ZONA COMUNE (incroci delle curve dove l'orizzonte di ciascuna stazione incontra lo strato E, articolo)	공통 영역 한계 (각 국의 수평선이 E층과 만나는 곡선들의 교점, 논문)
+LIMITI DELLA ZONA COMUNE (incroci delle curve dove l'orizzonte di ciascuna stazione incontra lo strato E, articolo)	공통 영역 한계 (각 국의 지평선이 E층과 만나는 곡선들의 교점, 논문)
 La parola "{0}" c'è, ma la riga non è uno spot "DX de ..." valido.	단어 "{0}"은(는) 있지만, 이 줄은 올바른 "DX de ..." 스폿이 아닙니다.
 La riga non è uno spot "DX de ..." valido.	이 줄은 올바른 "DX de ..." 스폿이 아닙니다.
 La scala del grafico delle quote e' cambiata: le statistiche delle quote (moda, media, mediana) restano valide, i conteggi assoluti no.	고도 그래프의 눈금이 바뀌었습니다: 고도 통계(최빈값, 평균, 중앙값)는 유효하지만 절대 계수는 유효하지 않습니다.
@@ -241,7 +241,7 @@ Locator del corrispondente non valido	상대국 로케이터가 잘못되었습�
 Locator della stazione non valido	내 국 로케이터가 잘못되었습니다
 Manca il nominativo per il login	로그인용 호출부호 없음
 Mappa d'Europa	유럽 지도
-Mappa d'Europa non disponibile (serve la rete al primo avvio).	유럽 지도를 사용할 수 없습니다 (첫 실행 시 네트워크 필요).
+Mappa d'Europa non disponibile (serve la rete al primo avvio).	유럽 지도 사용 불가 (첫 실행 시 네트워크 필요).
 Mappa dei radar europei	유럽 레이더 지도
 Mappa quadrati	그리드 지도
 Mappa:	지도:
@@ -249,7 +249,7 @@ Mappa: bordo = {0} km dalla stazione. {1}	지도: 가장자리 = 국에서 {0} k
 Mese non indicato: uso il mese corrente.	월이 지정되지 않음: 이번 달을 사용합니다.
 Meteore/ora - ieri {0} e oggi {1} (UTC)	시간당 유성 수 - 어제 {0}, 오늘 {1} (UTC)
 Metti GRAVES come DX	GRAVES를 DX로 설정
-Miglior puntamento per lo sciame: ORTOGONALE alla direzione\ndi arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\nSM6FHZ). In pianta: linea gialla = scorrimento\ndello sciame, punti arancioni = puntamenti, ellissi\nPREV = scie piu' probabili adesso.\nClic su un radiante: percorso con le ore UTC	유성우에 대한 최적 지향: 도래 방향에 대해 직각\n(복사점 방위 +-90°, 허용 범위 +-40-50°,\nSM6FHZ). 평면도: 노란 선 = 유성우의\n이동, 주황 점 = 지향 방향, PREV\n타원 = 지금 가장 가능성 높은 흔적.\n복사점 클릭: UTC 시각이 표시된 궤적
+Miglior puntamento per lo sciame: ORTOGONALE alla direzione\ndi arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\nSM6FHZ). In pianta: linea gialla = scorrimento\ndello sciame, punti arancioni = puntamenti, ellissi\nPREV = scie piu' probabili adesso.\nClic su un radiante: percorso con le ore UTC	유성우에 대한 최적 지향: 도래 방향에 대해 직각\n(복사점 방위각 +-90°, 허용 범위 +-40-50°,\nSM6FHZ). 평면도: 노란 선 = 유성우의\n이동, 주황 점 = 지향 방향, PREV\n타원 = 지금 가장 가능성 높은 흔적.\n복사점 클릭: UTC 시각이 표시된 궤적
 Misurato a Collm e traslato a {0} MHz - ieri {1} e oggi {2} (UTC)	Collm에서 측정하여 {0} MHz로 환산 - 어제 {1}, 오늘 {2} (UTC)
 Mondo	세계
 Monocerotidi di dicembre	12월 외뿔소자리 유성우
@@ -258,21 +258,21 @@ N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x 
 Natural Earth - coste e confini 1:50 milioni, dominio pubblico, www.naturalearthdata.com (mappa d'Europa)	Natural Earth - 1:5천만 해안선과 국경, 퍼블릭 도메인, www.naturalearthdata.com (유럽 지도)
 Nell'attenuazione (β = 90°, prudente): raggio iniziale della scia {0:F1} dB (r0 = {1:F2} m alla quota media ITU di {2:F1} km per {3:F0} MHz). Con la scia nel piano della tratta (β = 0°, caso migliore) l'attenuazione scende a {4:F1} dB ({5:F1} dB) e il margine sale a {6:+0.0;-0.0} dB	손실 내역 (β = 90°, 신중): 흔적의 초기 반경 {0:F1} dB ({3:F0} MHz에서 ITU 평균 고도 {2:F1} km일 때 r0 = {1:F2} m). 흔적이 경로 평면 안에 있으면 (β = 0°, 최선의 경우) 손실이 {4:F1} dB로 줄고 ({5:F1} dB) 마진은 {6:+0.0;-0.0} dB로 늘어남
 Nero	검정
-Nessun Hot consigliato: sciami attivi quasi assenti in questo momento	추천 Hot 없음: 현재 활동 중인 유성우가 거의 없음
+Nessun Hot consigliato: sciami attivi quasi assenti in questo momento	권장 Hot 없음: 현재 활동 중인 유성우가 거의 없음
 Nessun dato GMN: premi "Scarica adesso".	GMN 데이터 없음: "지금 다운로드"를 누르세요.
 Nessun dato del radar: scaricalo dalla sottolinguetta Live e dati real-time › Flusso radar.	레이더 데이터 없음: 라이브 및 실시간 데이터 › 레이더 플럭스 하위 탭에서 다운로드하세요.
 Nessuna fonte Collm in fonti_radar.csv	fonti_radar.csv에 Collm 소스가 없습니다
-Nessuna scia prevista: sciami attivi sotto l'orizzonte o con efficienza nulla per questa tratta.	예상 흔적 없음: 활동 중인 유성우가 수평선 아래이거나 이 경로에 대한 효율이 0입니다.
+Nessuna scia prevista: sciami attivi sotto l'orizzonte o con efficienza nulla per questa tratta.	예상 흔적 없음: 활동 중인 유성우가 지평선 아래이거나 이 경로에 대한 효율이 0입니다.
 Nessuna zona comune dello strato E ({0})	E층 공통 영역 없음 ({0})
 Nessuno sciame utile in questo momento	지금은 유용한 유성우가 없습니다
 No	아니요
 No: fuori dai settori	아니오: 섹터 밖
 No: sopra il fascio (circa 25°)	아니오: 빔 위쪽 (약 25°)
-No: sotto l'orizzonte di GRAVES	아니오: GRAVES 수평선 아래
+No: sotto l'orizzonte di GRAVES	아니오: GRAVES 지평선 아래
 Nominativo per il login	로그인 호출부호
 Non connesso	연결 안 됨
 Non ho riconosciuto il formato del file.	파일 형식을 인식하지 못했습니다.
-Non riesco a leggere la scala verticale del flusso (etichetta in cima: {0}): valori da verificare.	플럭스 세로 눈금을 읽을 수 없습니다 (맨 위 레이블: {0}): 값을 확인해야 합니다.
+Non riesco a leggere la scala verticale del flusso (etichetta in cima: {0}): valori da verificare.	플럭스 세로 눈금을 읽을 수 없습니다 (맨 위 레이블: {0}): 값 확인 필요.
 Non riesco ad aprire il documento: {0}	문서를 열 수 없습니다: {0}
 Non è un punto sulla mappa: è una rete mondiale di telecamere (soprattutto amatoriali) sparse in molti paesi di tutti i continenti.	지도 위의 한 점이 아닙니다: 모든 대륙의 여러 나라에 있는 전 세계 카메라 네트워크(대부분 아마추어)입니다.
 Nota: i dati dei radar appartengono ai rispettivi enti. Prima di distribuire il programma va chiesto il permesso di prelevarli automaticamente.	참고: 레이더 데이터는 각 기관의 소유입니다. 프로그램을 배포하기 전에 자동으로 가져오는 것에 대한 허가를 받아야 합니다.
@@ -306,7 +306,7 @@ Pegasidi di luglio	7월 페가수스자리 유성우
 Perseidi	페르세우스자리 유성우
 Personalizzata	사용자 정의
 Phoenicidi	봉황새자리 유성우
-Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	평면도: 노란 선 = 선택한(또는 가장 유리한) 유성우의 이동, PREV 타원 = 지금 가장 가능성 높은 흔적이 생기는 곳. 오른쪽 천구({0}의 뜨는/지는 시각, UTC): 노랑 = 효율 >= 50 % 및 ZHR >= 2, 주황 >= 20 %, 회색 = 거의 비활동.
+Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	평면도: 노란 선 = 선택한(또는 가장 유리한) 유성우의 이동, PREV 타원 = 지금 가장 가능성 높은 흔적이 생기는 곳. 오른쪽 하늘 보기({0}의 뜨는/지는 시각, UTC): 노랑 = 효율 >= 50 % 및 ZHR >= 2, 주황 >= 20 %, 회색 = 거의 비활동.
 Piscidi di aprile diurne	주간 4월 물고기자리 유성우
 Porta	포트
 Portata alla quota delle scie con lobo a {0:F1}°: {1:F0} km	로브 앙각 {0:F1}°일 때 흔적 고도에서의 도달 거리: {1:F0} km
@@ -331,7 +331,7 @@ Punto medio (forward)	중간점 (전방)
 Punto medio {0}, elev. per {1:F1} km: {2:F1}°	중간점 {0}, {1:F1} km에 대한 앙각: {2:F1}°
 Puppidi-Velidi	고물자리-돛자리 유성우
 Quadrantidi	사분의자리 유성우
-Quattro schiere a fasi coprono il cielo a sud, da 90° a 270° di azimut, in quattro settori di 45° (D, C, B, A); ogni settore è diviso in 6 passi da 7,5°, illuminati uno dopo l'altro, nello stesso momento in tutti e quattro i settori (passi numerati da 1 a 6 a partire dall'azimut più basso). Il fascio è largo circa 25° in elevazione: alla quota delle scie copre la corona colorata tra i due cerchi tratteggiati. Punti arancio/rosa = zone PREV della tratta GRAVES → te, linea verde = direzione della tua stazione, linea rossa = dalla tua stazione all'hot spot consigliato (PE1ITR).	위상 배열 안테나 4개가 남쪽 하늘을 방위 90°에서 270°까지 45° 섹터 4개(D, C, B, A)로 덮습니다. 각 섹터는 7.5° 스텝 6개로 나뉘어 차례로 조사되며, 네 섹터 모두 동시에 진행됩니다(스텝 번호는 가장 낮은 방위부터 1-6). 빔의 앙각 폭은 약 25°로, 흔적 고도에서 두 점선 원 사이의 색칠된 고리를 덮습니다. 주황/분홍 점 = GRAVES → 내 경로의 PREV 영역, 초록 선 = 내 국 방향, 빨간 선 = 내 국에서 추천 핫스폿까지 (PE1ITR).
+Quattro schiere a fasi coprono il cielo a sud, da 90° a 270° di azimut, in quattro settori di 45° (D, C, B, A); ogni settore è diviso in 6 passi da 7,5°, illuminati uno dopo l'altro, nello stesso momento in tutti e quattro i settori (passi numerati da 1 a 6 a partire dall'azimut più basso). Il fascio è largo circa 25° in elevazione: alla quota delle scie copre la corona colorata tra i due cerchi tratteggiati. Punti arancio/rosa = zone PREV della tratta GRAVES → te, linea verde = direzione della tua stazione, linea rossa = dalla tua stazione all'hot spot consigliato (PE1ITR).	위상 배열 안테나 4개가 남쪽 하늘을 방위각 90°에서 270°까지 45° 섹터 4개(D, C, B, A)로 덮습니다. 각 섹터는 7.5° 스텝 6개로 나뉘어 차례로 조사되며, 네 섹터 모두 동시에 진행됩니다(스텝 번호는 가장 낮은 방위각부터 1-6). 빔의 앙각 폭은 약 25°로, 흔적 고도에서 두 점선 원 사이의 색칠된 고리를 덮습니다. 주황/분홍 점 = GRAVES → 내 경로의 PREV 영역, 초록 선 = 내 국 방향, 빨간 선 = 내 국에서 권장 핫스폿까지 (PE1ITR).
 Quota delle scie e opzioni scelte a mano. Si seleziona da sola quando cambi la quota, la casella "dal radar", le scie lunghe o l'angolo β.	흔적 고도와 옵션을 수동으로 선택. 고도, "레이더에서" 확인란, 긴 흔적 또는 각 β를 바꾸면 자동으로 선택됩니다.
 Quota fissa di 102 km, scie più lunghe con il radiante basso e angolo β, come in "Die Geometrie von Meteorscatterverbindungen" di DJ5HG (2004).\nConfronto con le sue curve: in media 2 dB sotto, scarto tipico 5 dB; prevalgono i radianti allineati alla tratta.	고정 고도 102 km, 낮은 복사점에서 더 긴 흔적과 각 β. DJ5HG의 "Die Geometrie von Meteorscatterverbindungen" (2004)와 같습니다.\n그 곡선과의 비교: 평균 2 dB 낮음, 일반적 편차 5 dB; 경로를 따라 정렬된 복사점이 우세합니다.
 Quota scie      {0:F1} km (strato E){1}	흔적 고도       {0:F1} km (E층){1}
@@ -372,7 +372,7 @@ SCARTATO: frequenza sotto 27990,0 kHz.	거부: 주파수가 27990.0 kHz 미만�
 SCARTATO: fuori dalle finestre MS e nessuna parola del filtro.	거부: MS 창 밖이며 필터 단어 없음.
 SCARTATO: il commento dichiara un'altra propagazione ({0}) e non c'è un modo MS.	거부: 코멘트에 다른 전파 모드({0})가 표시되어 있고 MS 모드가 없습니다.
 SCIAME PIÙ FAVOREVOLE	가장 유리한 유성우
-SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az. {0}°)	단면 - 상대국 방향(방위 {0}°) 안테나에서 본 가장 가능성 높은 흔적
+SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az. {0}°)	단면 - 상대국 방향(방위각 {0}°) 안테나에서 본 가장 가능성 높은 흔적
 SGO, Finlandia	SGO, 핀란드
 Scarica RMOB adesso	지금 RMOB 다운로드
 Scarica adesso	지금 다운로드
@@ -384,7 +384,7 @@ Sciame più favorevole	가장 유리한 유성우
 Sciame più utile: {0} (ZHR {1}, efficienza {2} %)	가장 유용한 유성우: {0} (ZHR {1}, 효율 {2} %)
 Sciami	유성우
 Sciami in diretta	실시간 유성우
-Sciami sopra l'orizzonte: {0}	수평선 위 유성우: {0}
+Sciami sopra l'orizzonte: {0}	지평선 위 유성우: {0}
 Scie più lunghe con il radiante basso (DJ5HG)	낮은 복사점에서 더 긴 흔적 (DJ5HG)
 Scrivi il nome dell'osservatore RMOB come compare nel nome del suo file (es. NOME_112026rmob.TXT -> NOME).	RMOB 관측자 이름을 파일 이름에 나오는 대로 입력하세요 (예: NAME_112026rmob.TXT -> NAME).
 Scrivi il nominativo per il login prima di connettere.	연결하기 전에 로그인 호출부호를 입력하세요.
@@ -407,11 +407,11 @@ Stazione	국
 Stazione        {0}   quota {1:F0} m	내 국            {0}   고도 {1:F0} m
 Stima sperimentale (regole SM6FHZ): meteore/ora a {0:F0} MHz = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; durata dei ping x {4:F3}. Ping massimo IARU a {0:F0} MHz: {5:F0} ms. Valori indicativi, da confrontare con l'esperienza in banda.{6}	실험적 추정 (SM6FHZ 규칙): {0:F0} MHz 시간당 유성 수 = Collm {1:F1} MHz x ({1:F1}/{0:F0})^{2:F1} = x {3:F4}; 핑 지속 시간 x {4:F3}. IARU {0:F0} MHz 최대 핑: {5:F0} ms. 참고값이며 실제 운용 경험과 비교해야 합니다.{6}
 Svuota la tabella	표 비우기
-Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)	DL1DBC의 Swan Meteor Skyview - swan.ms (천구 그래픽 참고)
+Swan Meteor Skyview di DL1DBC - swan.ms (riferimento per la grafica della volta celeste)	DL1DBC의 Swan Meteor Skyview - swan.ms (하늘 보기 그래픽 참고)
 Sì	예
 Sì · settore {0}	예 · 섹터 {0}
 TRATTA	경로
-TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	흔적의 수평선 너머의 경로: 흔적 고도 {0:F1} km에서 중간점이 수평선 아래 {1:F1}°입니다. 고도 {2:F0} km 이상의 흔적이 필요합니다: 가장 높은 흔적으로만 교신 가능하며, 효율과 손실은 모델의 한계에 있습니다.
+TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.	흔적의 지평선 너머의 경로: 흔적 고도 {0:F1} km에서 중간점이 지평선 아래 {1:F1}°입니다. 고도 {2:F0} km 이상의 흔적이 필요합니다: 가장 높은 흔적으로만 교신 가능하며, 효율과 손실은 모델의 한계에 있습니다.
 Tauridi Nord	북쪽 황소자리 유성우
 Tauridi Sud	남쪽 황소자리 유성우
 Tavistock, Ontario (Canada)	Tavistock, Ontario (캐나다)
@@ -427,7 +427,7 @@ Traslato {0}	환산 {0}
 Tratta calcolata: {0:F0} km, {1} punti di riflessione campionati in {2:F1} s. {3}	경로 계산 완료: {0:F0} km, 반사점 {1}개를 {2:F1} s 동안 샘플링. {3}
 Tratta piu' lunga del doppio della portata alla quota delle scie: le due stazioni non vedono una zona comune dello strato E.	경로가 흔적 고도에서 도달 거리의 두 배보다 깁니다: 두 국이 E층의 공통 영역을 볼 수 없습니다.
 Tratta troppo corta	경로가 너무 짧음
-Tratta {0}: {1:F0} km, az. {2:F0}°	경로 {0}: {1:F0} km, 방위 {2:F0}°
+Tratta {0}: {1:F0} km, az. {2:F0}°	경로 {0}: {1:F0} km, 방위각 {2:F0}°
 Troppe poche ore in comune ({0}) tra Collm e il file RMOB.	Collm과 RMOB 파일의 공통 시간이 너무 적습니다 ({0}).
 Tutti i file	모든 파일
 USB su 143,049 MHz (nota a circa 1 kHz) oppure 143,050 MHz, AGC lento o spento, banda audio di almeno 2,4 kHz	143.049 MHz USB (약 1 kHz 톤) 또는 143.050 MHz, AGC 느림 또는 끔, 오디오 대역폭 2.4 kHz 이상
@@ -437,7 +437,7 @@ Ursidi	작은곰자리 유성우
 Vale per gli spot fuori dalle finestre e per quelli con una scritta di altra propagazione: si tengono se contengono una delle parole accese, in maiuscolo, minuscolo o misto. MSK144, FSK441, PSK2K, JTMS e JT6M sono modi digitali usati solo per il meteor scatter: lo spot è MS di sicuro. <MS> indica genericamente che il collegamento è avvenuto via meteor scatter.	창 밖의 스폿과 다른 전파 모드 태그가 있는 스폿에 적용됩니다: 활성화된 단어 중 하나를 포함하면 남깁니다(대문자, 소문자, 혼합 모두 가능). MSK144, FSK441, PSK2K, JTMS, JT6M은 유성 산란에만 쓰이는 디지털 모드이므로 해당 스폿은 확실히 MS입니다. <MS>는 일반적으로 교신이 유성 산란으로 이루어졌음을 나타냅니다.
 Valori più prudenti, di partenza: quota delle scie misurata dal radar di Collm (casella "dal radar"), scie normali, angolo β acceso.\nConfronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo): in media 7 dB sotto, con lo stesso andamento orario (scarto di forma circa 3 dB).	가장 신중한 값, 시작 설정: Collm 레이더가 측정한 흔적 고도 ("레이더에서" 확인란), 일반 흔적, 각 β 켬.\nDJ5HG 곡선과의 비교 (사분의자리 유성우, 함부르크 출발 경로): 평균 7 dB 낮음, 시간별 변화는 동일 (형태 편차 약 3 dB).
 Valori prudenti: scia che attraversa il piano della tratta (β = 90°, caso più sfavorevole), compreso il raggio iniziale della scia (ITU-R P.843) alla quota media degli echi per ciascuna frequenza	신중한 값: 경로 평면을 가로지르는 흔적 (β = 90°, 최악의 경우), 각 주파수의 에코 평균 고도에서의 흔적 초기 반경(ITU-R P.843) 포함
-Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	GRAVES → 내 경로의 추천 핫스폿 방향(경로 카드), 낮은 앙각
+Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	GRAVES → 내 경로의 권장 핫스폿 방향(경로 카드), 낮은 앙각
 Vista dall'alto (E a destra)	위에서 본 모습 (동쪽이 오른쪽)
 Waterfall	Waterfall
 Wikipedia, "GRAVES (system)" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)	Wikipedia, "GRAVES (system)" – 송신소 Broye-lès-Pesmes (47.348° N 5.515° E)
@@ -458,10 +458,10 @@ alfa-Capricornidi	염소자리 알파 유성우
 alfa-Centauridi	센타우루스자리 알파 유성우
 alfa-Monocerotidi	외뿔소자리 알파 유성우
 ant_radiante.csv: riga ignorata: {0}	ant_radiante.csv: 무시된 행: {0}
-antenna verso {0}: az {1:F0}° · el {2:F1}°\nGRAVES in linea diretta: az {3:F0}°	{0} 방향 안테나: 방위 {1:F0}° · 앙각 {2:F1}°\nGRAVES 직선 방향: 방위 {3:F0}°
+antenna verso {0}: az {1:F0}° · el {2:F1}°\nGRAVES in linea diretta: az {3:F0}°	{0} 방향 안테나: 방위각 {1:F0}° · 앙각 {2:F1}°\nGRAVES 직선 방향: 방위각 {3:F0}°
 antenna {0}°	안테나 {0}°
 auto (AMS)	자동 (AMS)
-azimut rispetto al corrispondente	상대국 기준 방위
+azimut rispetto al corrispondente	상대국 기준 방위각
 beta-Tauridi diurne	주간 황소자리 베타 유성우
 buono	좋음
 calcolato da λ	λ로 계산
@@ -548,7 +548,7 @@ nuvola non calcolabile per questa tratta (troppo corta o troppo lunga)	이 경�
 nuvola {0}: {1:F0} % delle riflessioni, {2:F0} × {3:F0} km, asse a {4:F0}°	구름 {0}: 반사의 {1:F0} %, {2:F0} × {3:F0} km, 축 {4:F0}°
 omega-Cetidi Nord diurne	주간 북쪽 고래자리 오메가 유성우
 omega-Cetidi Sud diurne	주간 남쪽 고래자리 오메가 유성우
-orizzonte del fascio	빔 수평선
+orizzonte del fascio	빔 지평선
 orologio del PC sincronizzato	PC 시계 동기화됨
 osservatori RMOB che ascoltano GRAVES	GRAVES를 수신하는 RMOB 관측자
 parola aggiunta	추가된 단어
@@ -607,7 +607,7 @@ zona PREV	PREV 영역
 {0:F0} % delle riflessioni arriva da questo lato	반사의 {0:F0} %가 이 쪽에서 옵니다
 {0:F0} MHz, riflessioni/ora previste\nora {1:F0} - tra 1 h {2} - tra 2 h {3}\nsperimentale (Collm, regole SM6FHZ)	{0:F0} MHz, 예상 반사/시간\n지금 {1:F0} - 1 h 후 {2} - 2 h 후 {3}\n실험적 (Collm, SM6FHZ 규칙)
 {0:F0} km	{0:F0} km
-{0} (dal radiante, az. {1}°)	{0} (복사점에서, 방위 {1}°)
+{0} (dal radiante, az. {1}°)	{0} (복사점에서, 방위각 {1}°)
 {0} (in rosso sulla mappa)	{0} (지도에 빨간색)
 {0} (~{1} calc.)	{0} (~{1} 계산)
 {0} MHz: {1}	{0} MHz: {1}
@@ -615,21 +615,21 @@ zona PREV	PREV 영역
 {0} UTC (momento del calcolo)	{0} UTC (계산 시각)
 {0} UTC (tempo reale)	{0} UTC (실시간)
 {0} UTC · {1:F1} kHz · {2:F0} km	{0} UTC · {1:F1} kHz · {2:F0} km
-{0} consigliato ora: az. {1}°	현재 추천 {0}: 방위 {1}°
-{0} consigliato ora: az. {1}° ({2}% delle riflessioni previste)	현재 추천 {0}: 방위 {1}° (예상 반사의 {2}%)
+{0} consigliato ora: az. {1}°	현재 권장 {0}: 방위각 {1}°
+{0} consigliato ora: az. {1}° ({2}% delle riflessioni previste)	현재 권장 {0}: 방위각 {1}° (예상 반사의 {2}%)
 {0} contatti sulla mappa · {1} fuori dalla mappa · {2} senza locator	지도 위 교신 {0} · 지도 밖 {1} · 로케이터 없음 {2}
 {0} dB rispetto al riferimento di DJ5HG	DJ5HG 기준 대비 {0} dB
-{0} da GRAVES: az {1:F1}° · el {2:F1}° (passo {3} di 6)	GRAVES에서 본 {0}: 방위 {1:F1}° · 앙각 {2:F1}° (6스텝 중 {3})
-{0} da GRAVES: az {1:F1}° · el {2:F1}° (settori da 90° a 270°, fascio fino a circa 25°)	GRAVES에서 본 {0}: 방위 {1:F1}° · 앙각 {2:F1}° (섹터 90°-270°, 빔 약 25°까지)
+{0} da GRAVES: az {1:F1}° · el {2:F1}° (passo {3} di 6)	GRAVES에서 본 {0}: 방위각 {1:F1}° · 앙각 {2:F1}° (6스텝 중 {3})
+{0} da GRAVES: az {1:F1}° · el {2:F1}° (settori da 90° a 270°, fascio fino a circa 25°)	GRAVES에서 본 {0}: 방위각 {1:F1}° · 앙각 {2:F1}° (섹터 90°-270°, 빔 약 25°까지)
 {0} h	{0} h
 {0} h rispetto ad adesso	지금부터 {0}시간
 {0} km dalla tua stazione	내 국에서 {0} km
 {0} spot MS in memoria	메모리의 MS 스폿 {0}개
 {0} {1} - {2:F0} % alle {3} UTC ({4} ora locale)	{0} {1} - {3} UTC ({4} 현지 시각)에 {2:F0} %
 {0} · zona	{0} · 영역
-{0}: non lavorato	{0}: 교신 안 함
-{0}: {1}  az. da me {2:F0}° (scarto {3:+0;-0}°), dal corrispondente {4:F0}°, distanza {5:F0} km	{0}: {1}  내 국 기준 방위 {2:F0}° (편차 {3:+0;-0}°), 상대국 기준 {4:F0}°, 거리 {5:F0} km
-{0}: {1}  az. da me {2:F1}° (scarto {3:+0.0;-0.0}° dalla direzione diretta), dal corrispondente {4:F0}°, distanza {5:F0} km, elevazione {6:F1}°	{0}: {1}  내 국 기준 방위 {2:F1}° (직선 방향과의 편차 {3:+0.0;-0.0}°), 상대국 기준 {4:F0}°, 거리 {5:F0} km, 앙각 {6:F1}°
+{0}: non lavorato	{0}: 미교신
+{0}: {1}  az. da me {2:F0}° (scarto {3:+0;-0}°), dal corrispondente {4:F0}°, distanza {5:F0} km	{0}: {1}  내 위치에서 방위각 {2:F0}° (편차 {3:+0;-0}°), 상대국 기준 {4:F0}°, 거리 {5:F0} km
+{0}: {1}  az. da me {2:F1}° (scarto {3:+0.0;-0.0}° dalla direzione diretta), dal corrispondente {4:F0}°, distanza {5:F0} km, elevazione {6:F1}°	{0}: {1}  내 위치에서 방위각 {2:F1}° (직선 방향과의 편차 {3:+0.0;-0.0}°), 상대국 기준 {4:F0}°, 거리 {5:F0} km, 앙각 {6:F1}°
 {0}: {1} QSO	{0}: QSO {1}개
 {0}: {1} ore lette.	{0}: {1}시간 분량 읽음.
 {0}: {1} quadrati lavorati, {2} confermati	{0}: 교신한 그리드 {1}개, 확인 {2}개

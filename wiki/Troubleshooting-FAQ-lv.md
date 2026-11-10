@@ -22,7 +22,7 @@ Palaid `./installa.sh` no atarhivētās mapes (nevis no `~/YA-MS`). Dažām darb
 ## Attēlojums
 
 ### Linux: japāņu teksts redzams kā kvadrātiņi
-Tavā sistēmā trūkst CJK fontu. Instalē **Noto CJK** fontus un restartē YA-MS:
+Tavā sistēmā trūkst CJK fontu (ķīniešu, japāņu, korejiešu). Instalē **Noto CJK** fontus un restartē YA-MS. Tas pats notiek ar arābu, ivrita, urdu, hindi un bengāļu valodu: Debian, Ubuntu un Raspberry Pi OS instalē arī `fonts-noto-core`.
 
 | Distribūcija | Komanda |
 |---|---|

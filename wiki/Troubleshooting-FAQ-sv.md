@@ -22,7 +22,7 @@ Kör `./installa.sh` i den uppackade mappen (inte i `~/YA-MS`). Vissa skrivbords
 ## Visning
 
 ### Linux: japansk text visas som rutor
-Ditt system saknar CJK-typsnitt. Installera typsnitten **Noto CJK** och starta om YA-MS:
+Ditt system saknar CJK-typsnitt (kinesiska, japanska, koreanska). Installera typsnitten **Noto CJK** och starta om YA-MS. Samma sak händer med arabiska, hebreiska, urdu, hindi och bengali: på Debian, Ubuntu och Raspberry Pi OS installerar du även `fonts-noto-core`.
 
 | Distribution | Kommando |
 |---|---|

@@ -46,9 +46,9 @@ Attuazione sperimentale previsioni	Eksperimentālas prognozes
 Aurigidi	Aurigīdas
 Azimut	Azimuts
 BILANCIO A {0:F0} MHz (punto medio)	SAKARU BUDŽETS PIE {0:F0} MHz (viduspunkts)
-Banda MHz	Josla MHz
+Banda MHz	Diapazons MHz
 Bande (MHz)	Joslas (MHz)
-Bolidozor wiki, "Graves" – schiere, settori e tempi del fascio	Bolidozor wiki, "Graves" – antenu režģi, sektori un kūļa laiki
+Bolidozor wiki, "Graves" – schiere, settori e tempi del fascio	Bolidozor wiki, "Graves" – antenu režģi, sektori un stara laiki
 Bootidi di giugno	Jūnija Bootīdas
 CALCOLO E TEORIA DELL'EFFICIENZA	EFEKTIVITĀTES APRĒĶINS UN TEORIJA
 CALL3: caricamento...	CALL3: ielādē...
@@ -100,7 +100,7 @@ Corrispondente  {0}   quota {1:F0} m	Korespondents  {0}   augstums {1:F0} m
 Costantino Cerrotta IC8TEM, Gianluigi "Gigi" Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese" (articolo, versione 7).	Costantino Cerrotta IC8TEM, Gianluigi "Gigi" Sartori IV3GTH - "METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese" (raksts itāļu valodā, 7. versija).
 D.W.R. McKinley - Meteor Science and Engineering, 1961 (equazione delle scie sottodense)	D.W.R. McKinley - Meteor Science and Engineering, 1961 (zema blīvuma sliežu vienādojums)
 DATI DEGLI SCIAMI	PLŪSMU DATI
-DATI RADAR IN DIRETTA	RADARU DATI TIEŠSAISTĒ
+DATI RADAR IN DIRETTA	RADARU DATI TIEŠRAIDĒ
 DENTRO il lobo	ZIEDLAPIŅAS IEKŠPUSĒ
 DM4X (PSKReporter)	DM4X (PSKReporter)
 DX cluster	DX cluster
@@ -110,7 +110,7 @@ Data del calcolo (UTC)	Aprēķina datums (UTC)
 Decl.	Dekl.
 Densita' della scia q = {0:E1} elettroni/m. Riferimenti: 172-190 dB (calcoli di G4BAO citati da GM8JBJ), 200 dB medio a 144 MHz (OH5IY)	Sliedes blīvums q = {0:E1} elektroni/m. Atsauces: 172-190 dB (G4BAO aprēķini, ko citē GM8JBJ), 200 dB vidēji pie 144 MHz (OH5IY)
 Densita' scia q = 10^	Sliedes blīvums q = 10^
-Dettaglio dei prossimi {0:F0} s: la zona utile non è in nessun passo del fascio	Nākamo {0:F0} s detaļas: lietderīgā zona nav nevienā kūļa solī
+Dettaglio dei prossimi {0:F0} s: la zona utile non è in nessun passo del fascio	Nākamo {0:F0} s detaļas: lietderīgā zona nav nevienā stara solī
 Dettaglio dei prossimi {0:F0} s: passi del settore {1} ({2:F1} s ciascuno) e passo che illumina la zona utile	Nākamo {0:F0} s detaļas: sektora {1} soļi (katrs {2:F1} s) un solis, kas apgaismo lietderīgo zonu
 Direzioni Hot A / Hot B	Hot A / Hot B virzieni
 Disconnesso	Atvienots
@@ -119,7 +119,7 @@ Distanza        {0:F0} km   azimut {1:F1}°   (dal corrispondente {2:F1}°)	Att�
 Documenti tecnici	Tehniskie dokumenti
 Documento Word	Word dokuments
 Documento esportato: {0}	Dokuments eksportēts: {0}
-Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	Kur atrodas tiešsaistes datu avoti. Raustītie apļi = radara redzamā debess zona (aptuveni 300 km ap staciju, sliedes 90 km augstumā): neviens radars neskatās uz debesīm virs tavas trases, dati parāda, cik aktīva ir plūsma. Punktētās līnijas = attālums no tavas stacijas.
+Dove si trovano le fonti dei dati in diretta. Cerchi tratteggiati = zona di cielo vista dal radar (circa 300 km intorno alla stazione, scie a 90 km): nessun radar guarda il cielo sopra la tua tratta, i dati dicono quanto e' attivo lo sciame. Linee punteggiate = distanza dalla tua stazione.	Kur atrodas tiešraides datu avoti. Raustītie apļi = radara redzamā debess zona (aptuveni 300 km ap staciju, sliedes 90 km augstumā): neviens radars neskatās uz debesīm virs tavas trases, dati parāda, cik aktīva ir plūsma. Punktētās līnijas = attālums no tavas stacijas.
 Draconidi di ottobre	Oktobra Drakonīdas
 E	A
 EFFICIENZA DELLA TRATTA GRAVES → TE ADESSO	TRASES GRAVES → TEVI EFEKTIVITĀTE TAGAD
@@ -131,7 +131,7 @@ Elev.	Elev.
 Elevazione d'antenna in funzione della distanza dallo scatter point	Antenas elevācija atkarībā no attāluma līdz scatter point
 Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)	Antenas elevācija uz viduspunktu: {0:F1}°   (raksta formula, 7. attēls)
 Elevazione lobo °	Ziedlapiņas elevācija °
-Errore all'avvio: {0}	Kļūda palaišanā: {0}
+Errore all'avvio: {0}	Kļūda startējot: {0}
 Errore: {0}	Kļūda: {0}
 Esponente	Kāpinātājs
 Esponente dal confronto RMOB	Kāpinātājs no RMOB salīdzinājuma
@@ -152,7 +152,7 @@ File RMOB (conteggi orari del mese)	RMOB fails (mēneša stundu skaiti)
 File mancante: {0}	Trūkst faila: {0}
 Filtro	Filtrs
 Filtro degli spot meteor scatter	Meteor scatter spotu filtrs
-Finestra utile	Lietderīgais logs
+Finestra utile	Izmantojams logs
 Flusso radar	Radara meteoru skaits
 Flusso radar: nessun dato. Premi "Scarica adesso".	Radara meteoru skaits: nav datu. Nospied "Lejupielādēt tagad".
 Fonte	Avots
@@ -219,8 +219,8 @@ LIMITI DELLA ZONA COMUNE (incroci delle curve dove l'orizzonte di ciascuna stazi
 La parola "{0}" c'è, ma la riga non è uno spot "DX de ..." valido.	Vārds "{0}" ir atrasts, bet rinda nav derīgs "DX de ..." spots.
 La riga non è uno spot "DX de ..." valido.	Rinda nav derīgs "DX de ..." spots.
 La scala del grafico delle quote e' cambiata: le statistiche delle quote (moda, media, mediana) restano valide, i conteggi assoluti no.	Augstumu grafika skala ir mainījusies: augstumu statistika (moda, vidējais, mediāna) paliek derīga, absolūtie skaiti ne.
-La sequenza del fascio si calcola con l'orologio del PC: sincronizzalo con un server NTP (errore di pochi decimi di secondo al massimo).	Kūļa secību aprēķina pēc datora pulksteņa: sinhronizē to ar NTP serveri (kļūda ne vairāk kā dažas sekundes desmitdaļas).
-La sequenza è legata all'ora UTC (PE1ITR): dal 2021 i passi durano 0,8 s e il ciclo di un settore 4,8 s; nel 2007 erano 3,2 s e 19,2 s. La stazione di comando a volte sposta la sequenza di qualche passo: il dettaglio è una previsione da confermare con l'ascolto. Una scia si sente solo se il fascio la illumina mentre dura: probabilità ≈ min(1, (passo + scia) / ciclo) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (durata tipica di una scia sottodensa a 143 MHz ≈ {1:F1} s).	Secība ir piesaistīta UTC laikam (PE1ITR): kopš 2021. gada katrs solis ilgst 0,8 s un sektora cikls 4,8 s; 2007. gadā tie bija 3,2 s un 19,2 s. Vadības stacija dažreiz nobīda secību par dažiem soļiem: detaļas ir prognoze, kas jāapstiprina klausoties. Sliedi var dzirdēt tikai tad, ja kūlis to apgaismo, kamēr tā pastāv: varbūtība ≈ min(1, (solis + sliede) / cikls) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (tipisks zema blīvuma sliedes ilgums pie 143 MHz ≈ {1:F1} s).
+La sequenza del fascio si calcola con l'orologio del PC: sincronizzalo con un server NTP (errore di pochi decimi di secondo al massimo).	Stara secību aprēķina pēc datora pulksteņa: sinhronizē to ar NTP serveri (kļūda ne vairāk kā dažas sekundes desmitdaļas).
+La sequenza è legata all'ora UTC (PE1ITR): dal 2021 i passi durano 0,8 s e il ciclo di un settore 4,8 s; nel 2007 erano 3,2 s e 19,2 s. La stazione di comando a volte sposta la sequenza di qualche passo: il dettaglio è una previsione da confermare con l'ascolto. Una scia si sente solo se il fascio la illumina mentre dura: probabilità ≈ min(1, (passo + scia) / ciclo) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (durata tipica di una scia sottodensa a 143 MHz ≈ {1:F1} s).	Secība ir piesaistīta UTC laikam (PE1ITR): kopš 2021. gada katrs solis ilgst 0,8 s un sektora cikls 4,8 s; 2007. gadā tie bija 3,2 s un 19,2 s. Vadības stacija dažreiz nobīda secību par dažiem soļiem: detaļas ir prognoze, kas jāapstiprina klausoties. Sliedi var dzirdēt tikai tad, ja stars to apgaismo, kamēr tā pastāv: varbūtība ≈ min(1, (solis + sliede) / cikls) = ({0:F1} + {1:F1}) / {2:F1} ≈ {3:F0} % (tipisks zema blīvuma sliedes ilgums pie 143 MHz ≈ {1:F1} s).
 Lato	Puse
 Lato A = a sinistra della tratta, B = a destra	Puse A = pa kreisi no trases, B = pa labi
 Le lettere accanto alla percentuale dicono da quale lato della tratta arriva la maggior parte delle riflessioni. A = a SINISTRA guardando dalla tua stazione verso il corrispondente (zona Hot A); B = a DESTRA (zona Hot B). Conviene spostare l'antenna di 10-30° verso quel lato (side-scatter). Nessuna lettera = efficienza sotto il 5 %. Riga Σ: indice della tratta = somma di ZHR x efficienza di tutti gli sciami attivi. Righe azzurre: confronto con la formula di DH9GCD (DF5HC 2018). ↑ = radiante sopra 70° dalla tua stazione (troppo alto).	Burti blakus procentiem norāda, no kuras trases puses nāk lielākā daļa atstarojumu. A = pa KREISI, skatoties no tavas stacijas uz korespondentu (Hot A zona); B = pa LABI (Hot B zona). Ieteicams pagriezt antenu par 10-30° uz šo pusi (side-scatter). Nav burta = efektivitāte zem 5 %. Rinda Σ: trases indekss = visu aktīvo plūsmu ZHR x efektivitāte summa. Gaiši zilās rindas: salīdzinājums ar DH9GCD formulu (DF5HC 2018). ↑ = radiants augstāk par 70° no tavas stacijas (pārāk augstu).
@@ -254,7 +254,7 @@ Misurato a Collm e traslato a {0} MHz - ieri {1} e oggi {2} (UTC)	Mērīts Collm
 Mondo	Pasaule
 Monocerotidi di dicembre	Decembra Monocerotīdas
 N	Z
-N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durata delle riflessioni x ({1:F1}/{0:F0})^2 = x {5:F4}: un eco di 1 s a {1:F1} MHz dura circa {6:F0} ms a {0:F0} MHz (ping massimo IARU a {0:F0} MHz: {7:F0} ms).\nRegole sperimentali di SM6FHZ (VUSHF 2025). Il fattore K tiene conto della stazione ricevente (potenza, antenne): si ricava confrontando con un osservatore RMOB sulla stessa banda.	N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Atstarojumu ilgums x ({1:F1}/{0:F0})^2 = x {5:F4}: 1 s atbalss pie {1:F1} MHz ilgst aptuveni {6:F0} ms pie {0:F0} MHz (IARU maksimālais pings pie {0:F0} MHz: {7:F0} ms).\nSM6FHZ eksperimentālie likumi (VUSHF 2025). Koeficients K ņem vērā uztverošo staciju (jauda, antenas): to iegūst, salīdzinot ar RMOB novērotāju tajā pašā joslā.
+N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Durata delle riflessioni x ({1:F1}/{0:F0})^2 = x {5:F4}: un eco di 1 s a {1:F1} MHz dura circa {6:F0} ms a {0:F0} MHz (ping massimo IARU a {0:F0} MHz: {7:F0} ms).\nRegole sperimentali di SM6FHZ (VUSHF 2025). Il fattore K tiene conto della stazione ricevente (potenza, antenne): si ricava confrontando con un osservatore RMOB sulla stessa banda.	N({0:F0} MHz) = N(Collm {1:F1} MHz) x ({1:F1}/{0:F0})^{2:F2} x K = N x {3:F5} x {4:F2}.  Atstarojumu ilgums x ({1:F1}/{0:F0})^2 = x {5:F4}: 1 s atbalss pie {1:F1} MHz ilgst aptuveni {6:F0} ms pie {0:F0} MHz (IARU maksimālais pings pie {0:F0} MHz: {7:F0} ms).\nSM6FHZ eksperimentālie likumi (VUSHF 2025). Koeficients K ņem vērā uztverošo staciju (jauda, antenas): to iegūst, salīdzinot ar RMOB novērotāju tajā pašā diapazonā.
 Natural Earth - coste e confini 1:50 milioni, dominio pubblico, www.naturalearthdata.com (mappa d'Europa)	Natural Earth - krasta līnijas un robežas 1:50 miljoni, publiskais domēns, www.naturalearthdata.com (Eiropas karte)
 Nell'attenuazione (β = 90°, prudente): raggio iniziale della scia {0:F1} dB (r0 = {1:F2} m alla quota media ITU di {2:F1} km per {3:F0} MHz). Con la scia nel piano della tratta (β = 0°, caso migliore) l'attenuazione scende a {4:F1} dB ({5:F1} dB) e il margine sale a {6:+0.0;-0.0} dB	Vājinājumā (β = 90°, piesardzīgi): sliedes sākotnējais rādiuss {0:F1} dB (r0 = {1:F2} m ITU vidējā augstumā {2:F1} km pie {3:F0} MHz). Ja sliede atrodas trases plaknē (β = 0°, labākais gadījums), vājinājums samazinās līdz {4:F1} dB ({5:F1} dB) un rezerve pieaug līdz {6:+0.0;-0.0} dB
 Nero	Melna
@@ -267,7 +267,7 @@ Nessuna zona comune dello strato E ({0})	Nav kopējas E slāņa zonas ({0})
 Nessuno sciame utile in questo momento	Šobrīd nav noderīgu plūsmu
 No	Nē
 No: fuori dai settori	Nē: ārpus sektoriem
-No: sopra il fascio (circa 25°)	Nē: virs kūļa (ap 25°)
+No: sopra il fascio (circa 25°)	Nē: virs stara (ap 25°)
 No: sotto l'orizzonte di GRAVES	Nē: zem GRAVES horizonta
 Nominativo per il login	Izsaukuma signāls pieteikšanās vajadzībām
 Non connesso	Nav savienots
@@ -306,14 +306,14 @@ Pegasidi di luglio	Jūlija Pegasīdas
 Perseidi	Perseīdas
 Personalizzata	Pielāgots
 Phoenicidi	Fēnicīdas
-Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	Plāns: dzeltena līnija = izvēlētās (vai visizdevīgākās) plūsmas pārvietošanās, elipses PREV = kur tagad krīt varbūtīgākās sliedes. Debess velve pa labi (Lec/Riet UTC laikā, {0}): dzeltens = efektivitāte >= 50 % un ZHR >= 2, oranžs >= 20 %, pelēks = gandrīz neaktīva.
+Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.	Plāns: dzeltena līnija = izvēlētās (vai visizdevīgākās) plūsmas pārvietošanās, elipses PREV = kur tagad krīt varbūtīgākās sliedes. Debess velve pa labi (Lēkts/Riets UTC laikā, {0}): dzeltens = efektivitāte >= 50 % un ZHR >= 2, oranžs >= 20 %, pelēks = gandrīz neaktīva.
 Piscidi di aprile diurne	Dienas aprīļa Piscīdas
 Porta	Ports
 Portata alla quota delle scie con lobo a {0:F1}°: {1:F0} km	Sniedzamība sliežu augstumā ar ziedlapiņu {0:F1}°: {1:F0} km
 Potenza W	Jauda W
 Potenza {0:F0} W = {1:F1} dBm, EIRP = {2:F1} dBm (guadagno in dBi)	Jauda {0:F0} W = {1:F1} dBm, EIRP = {2:F1} dBm (pastiprinājums dBi)
 Previsione /ora	Prognoze /stundā
-Previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter	Meteoru plūsmu efektivitātes prognoze un aprēķins tiešsaistē meteor scatter sakariem
+Previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter	Meteoru plūsmu efektivitātes prognoze un aprēķins tiešraidē meteor scatter sakariem
 Previsione sperimentale delle prossime 24 ore a {0} MHz per {1}	Eksperimentāla prognoze nākamajām 24 stundām pie {0} MHz: {1}
 Previsione {0} /ora	Prognoze {0} /stundā
 Previsione {0} MHz (rifl./ora)	Prognoze {0} MHz (atstar./stundā)
@@ -331,7 +331,7 @@ Punto medio (forward)	Viduspunkts (forward)
 Punto medio {0}, elev. per {1:F1} km: {2:F1}°	Viduspunkts {0}, elev. pie {1:F1} km: {2:F1}°
 Puppidi-Velidi	Pupīdas-Velīdas
 Quadrantidi	Kvadrantīdas
-Quattro schiere a fasi coprono il cielo a sud, da 90° a 270° di azimut, in quattro settori di 45° (D, C, B, A); ogni settore è diviso in 6 passi da 7,5°, illuminati uno dopo l'altro, nello stesso momento in tutti e quattro i settori (passi numerati da 1 a 6 a partire dall'azimut più basso). Il fascio è largo circa 25° in elevazione: alla quota delle scie copre la corona colorata tra i due cerchi tratteggiati. Punti arancio/rosa = zone PREV della tratta GRAVES → te, linea verde = direzione della tua stazione, linea rossa = dalla tua stazione all'hot spot consigliato (PE1ITR).	Četri fāzēti antenu režģi nosedz dienvidu debesis no 90° līdz 270° azimutā četros 45° sektoros (D, C, B, A); katrs sektors ir sadalīts 6 soļos pa 7,5°, kas tiek apgaismoti viens pēc otra, vienlaikus visos četros sektoros (soļi numurēti no 1 līdz 6, sākot no mazākā azimuta). Kūlis elevācijā ir aptuveni 25° plats: sliežu augstumā tas nosedz krāsaino gredzenu starp abiem raustītajiem apļiem. Oranži/rozā punkti = trases GRAVES → tevi PREV zonas, zaļa līnija = tavas stacijas virziens, sarkana līnija = no tavas stacijas uz ieteicamo hot spot (PE1ITR).
+Quattro schiere a fasi coprono il cielo a sud, da 90° a 270° di azimut, in quattro settori di 45° (D, C, B, A); ogni settore è diviso in 6 passi da 7,5°, illuminati uno dopo l'altro, nello stesso momento in tutti e quattro i settori (passi numerati da 1 a 6 a partire dall'azimut più basso). Il fascio è largo circa 25° in elevazione: alla quota delle scie copre la corona colorata tra i due cerchi tratteggiati. Punti arancio/rosa = zone PREV della tratta GRAVES → te, linea verde = direzione della tua stazione, linea rossa = dalla tua stazione all'hot spot consigliato (PE1ITR).	Četri fāzēti antenu režģi nosedz dienvidu debesis no 90° līdz 270° azimutā četros 45° sektoros (D, C, B, A); katrs sektors ir sadalīts 6 soļos pa 7,5°, kas tiek apgaismoti viens pēc otra, vienlaikus visos četros sektoros (soļi numurēti no 1 līdz 6, sākot no mazākā azimuta). Stars elevācijā ir aptuveni 25° plats: sliežu augstumā tas nosedz krāsaino gredzenu starp abiem raustītajiem apļiem. Oranži/rozā punkti = trases GRAVES → tevi PREV zonas, zaļa līnija = tavas stacijas virziens, sarkana līnija = no tavas stacijas uz ieteicamo hot spot (PE1ITR).
 Quota delle scie e opzioni scelte a mano. Si seleziona da sola quando cambi la quota, la casella "dal radar", le scie lunghe o l'angolo β.	Sliežu augstums un opcijas izvēlētas manuāli. Tiek izvēlēts automātiski, kad maini augstumu, rūtiņu "no radara", garās sliedes vai leņķi β.
 Quota fissa di 102 km, scie più lunghe con il radiante basso e angolo β, come in "Die Geometrie von Meteorscatterverbindungen" di DJ5HG (2004).\nConfronto con le sue curve: in media 2 dB sotto, scarto tipico 5 dB; prevalgono i radianti allineati alla tratta.	Fiksēts augstums 102 km, garākas sliedes pie zema radianta un leņķis β, kā DJ5HG darbā "Die Geometrie von Meteorscatterverbindungen" (2004).\nSalīdzinājums ar viņa līknēm: vidēji par 2 dB zemāk, tipiskā novirze 5 dB; dominē gar trasi vērsti radianti.
 Quota scie      {0:F1} km (strato E){1}	Sliežu augstums {0:F1} km (E slānis){1}
@@ -367,7 +367,7 @@ Rispetto a 144 MHz: numero/intensità x {0:F3} ({1:+0.0;-0.0} dB), durata x {2:F
 Rob Hardenberg PE1ITR, "The 143.050 MHz Graves Radar, a VHF Beacon" (DUBUS 4/2007) e "Graves Radar Update April 2021" – pe1itr.com/graves	Rob Hardenberg PE1ITR, "The 143.050 MHz Graves Radar, a VHF Beacon" (DUBUS 4/2007) un "Graves Radar Update April 2021" – pe1itr.com/graves
 Rotellina = zoom, trascina = sposta, mouse sopra un quadrato = QSO	Ritenītis = tālummaiņa, vilkt = pārvietot, pele virs kvadrāta = QSO
 S	D
-SCARTATO: "{0}" trovato, ma la frequenza {1:F1} kHz non è in una banda scelta.	NORAIDĪTS: "{0}" atrasts, bet frekvence {1:F1} kHz nav izvēlētā joslā.
+SCARTATO: "{0}" trovato, ma la frequenza {1:F1} kHz non è in una banda scelta.	NORAIDĪTS: "{0}" atrasts, bet frekvence {1:F1} kHz nav izvēlētajā diapazonā.
 SCARTATO: frequenza sotto 27990,0 kHz.	NORAIDĪTS: frekvence zem 27990,0 kHz.
 SCARTATO: fuori dalle finestre MS e nessuna parola del filtro.	NORAIDĪTS: ārpus MS logiem un nav neviena filtra vārda.
 SCARTATO: il commento dichiara un'altra propagazione ({0}) e non c'è un modo MS.	NORAIDĪTS: komentārā norādīta cita izplatīšanās ({0}), un nav MS modas.
@@ -383,25 +383,25 @@ Sciame	Plūsma
 Sciame più favorevole	Visizdevīgākā plūsma
 Sciame più utile: {0} (ZHR {1}, efficienza {2} %)	Noderīgākā plūsma: {0} (ZHR {1}, efektivitāte {2} %)
 Sciami	Plūsmas
-Sciami in diretta	Plūsmas tiešsaistē
+Sciami in diretta	Plūsmas tiešraidē
 Sciami sopra l'orizzonte: {0}	Plūsmas virs horizonta: {0}
 Scie più lunghe con il radiante basso (DJ5HG)	Garākas sliedes pie zema radianta (DJ5HG)
 Scrivi il nome dell'osservatore RMOB come compare nel nome del suo file (es. NOME_112026rmob.TXT -> NOME).	Ieraksti RMOB novērotāja vārdu tā, kā tas redzams viņa faila nosaukumā (piem. VARDS_112026rmob.TXT -> VARDS).
 Scrivi il nominativo per il login prima di connettere.	Pirms savienošanas ieraksti izsaukuma signālu pieteikšanās vajadzībām.
 Segnale minimo dBm	Minimālais signāls dBm
-Sequenza del fascio	Kūļa secība
+Sequenza del fascio	Stara secība
 Servono sia i dati di Collm sia un file RMOB delle stesse ore.	Vajadzīgi gan Collm dati, gan RMOB fails par tām pašām stundām.
 Sextantidi diurne	Dienas Sekstantīdas
 Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)	Shelby W8WN - qsl.net/w8wn/hscw (optimālā elevācija un nobīde)
 Sigla	Kods
 Sono i bordi piu' lontani del cielo visto da entrambe le stazioni, non i punti da puntare.	Tās ir abām stacijām redzamās debess tālākās malas, nevis tēmēšanas punkti.
-Sorge	Lec
+Sorge	Lēkts
 Sorgente Antielio	Antihēlija avots
 Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	Izslēgts (piesardzīgi): katru sliedi sver ar radianta elevācijas sinusu, jo pie zema radianta uz km² nokrīt mazāk meteoru.\nIeslēgts: kā DJ5HG (2004), pie zema radianta sliedes ir garākas (slāņa lietderīgais biezums, 15 km, dalīts ar elevācijas sinusu, līdz 100 km) un biežāk izpilda atstarošanas likumu. Abi efekti kompensē viens otru virs aptuveni 9° elevācijas: efektivitāte pie zema radianta pieaug, pie augsta nemainās.
 Spot MS della linguetta "Raccolta dati". Per ogni contatto la nuvola indica dove si concentrano le scie più probabili per quella tratta e quell'ora (riflessione speculare, somma degli sciami attivi). Nuvole tratteggiate = solo meteore sporadiche. Gli spot con una stazione fuori dalla mappa non si disegnano; quelli appena arrivati (meno di 3 minuti) lampeggiano per un minuto.	MS spoti no cilnes "Datu vākšana". Katram sakaram mākonis rāda, kur koncentrējas visvarbūtīgākās sliedes šai trasei un šai stundai (spoguļatstarošana, aktīvo plūsmu summa). Raustīti mākoņi = tikai sporādiski meteori. Spotus, kuru stacija ir ārpus kartes, nezīmē; tikko pienākušie (mazāk nekā 3 minūtes) mirgo vienu minūti.
 Spot MS raccolti	Savāktie MS spoti
 Spot da mostrare	Rādāmie spoti
-Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LTE): nessun login, arrivano gia' con i locator di chi trasmette e di chi riceve. Un argomento per riga o separati da ;  formato pskr/filter/v2/banda/modo/call tx/call rx/... (+ = qualsiasi, # = il resto).	PSKReporter spoti reāllaikā caur MQTT (mqtt.pskreporter.info, M0LTE pakalpojums): bez pieteikšanās, spoti pienāk jau ar raidošās un uztverošās stacijas lokatoriem. Viena tēma rindā vai atdalītas ar ;  formāts pskr/filter/v2/josla/režīms/tx izsaukums/rx izsaukums/... (+ = jebkurš, # = pārējais).
+Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LTE): nessun login, arrivano gia' con i locator di chi trasmette e di chi riceve. Un argomento per riga o separati da ;  formato pskr/filter/v2/banda/modo/call tx/call rx/... (+ = qualsiasi, # = il resto).	PSKReporter spoti tiešraidē caur MQTT (mqtt.pskreporter.info, M0LTE pakalpojums): bez pieteikšanās, spoti pienāk jau ar raidošās un uztverošās stacijas lokatoriem. Viena tēma rindā vai atdalītas ar ;  formāts pskr/filter/v2/diapazons/režīms/tx izsaukums/rx izsaukums/... (+ = jebkurš, # = pārējais).
 Spot meteor scatter raccolti (i più recenti in alto)	Savāktie meteor scatter spoti (jaunākie augšā)
 Stazione	Stacija
 Stazione        {0}   quota {1:F0} m	Stacija        {0}   augstums {1:F0} m
@@ -418,10 +418,10 @@ Tavistock, Ontario (Canada)	Tavistock, Ontārio (Kanāda)
 Tema	Tēma
 Tempo reale	Reālais laiks
 Tipo	Tips
-Traffico MS in diretta · {0}	MS satiksme tiešsaistē · {0}
-Traffico in diretta	Satiksme tiešsaistē
-Traffico meteor scatter in diretta	Meteor scatter satiksme tiešsaistē
-Tramonta	Riet
+Traffico MS in diretta · {0}	MS satiksme tiešraidē · {0}
+Traffico in diretta	Satiksme tiešraidē
+Traffico meteor scatter in diretta	Meteor scatter satiksme tiešraidē
+Tramonta	Riets
 Traslato	Pārrēķināts
 Traslato {0}	Pārrēķināts {0}
 Tratta calcolata: {0:F0} km, {1} punti di riflessione campionati in {2:F1} s. {3}	Trase aprēķināta: {0:F0} km, {1} atstarošanas punktu izlase {2:F1} s laikā. {3}
@@ -452,7 +452,7 @@ a cura di Costantino IC8TEM	sagatavojis Costantino IC8TEM
 accettati per finestra di frequenza: {0}	pieņemti pēc frekvenču loga: {0}
 adesso	tagad
 adesso {0}	tagad {0}
-adesso · ancora {0:F1} s	tagad · atlikušas {0:F1} s
+adesso · ancora {0:F1} s	tagad · vēl {0:F1} s
 aggiornamento una volta al giorno	atjaunina reizi dienā
 alfa-Capricornidi	alfa-Kaprikornīdas
 alfa-Centauridi	alfa-Centaurīdas
@@ -479,8 +479,8 @@ dal radar	no radara
 dati CC BY 4.0 (Vida et al. 2021, 2022)	dati CC BY 4.0 (Vida et al. 2021, 2022)
 delta-Aquaridi Sud	Dienvidu delta-Akvarīdas
 eco	atbalss
-eco attese ≈ {0:F0}/ora (sperimentale: previsione × fascio {1:F0} %)	gaidāmās atbalsis ≈ {0:F0}/stundā (eksperimentāli: prognoze × kūlis {1:F0} %)
-eco possibile (+{0:F1} s di scia)	iespējama atbalss (+{0:F1} s sliedes)
+eco attese ≈ {0:F0}/ora (sperimentale: previsione × fascio {1:F0} %)	gaidāmās atbalsis ≈ {0:F0}/stundā (eksperimentāli: prognoze × stars {1:F0} %)
+eco possibile (+{0:F1} s di scia)	atbalss iespējama (+{0:F1} s sliedes)
 effic. %	efekt. %
 effic. < 20%	efekt. < 20%
 effic. >= 20%	efekt. >= 20%
@@ -535,9 +535,9 @@ modo digitale MS	MS digitālā moda
 nessun ADIF caricato	nav ielādēts ADIF
 nessun dato radar: vedi Live e dati real-time › Flusso radar	nav radara datu: sk. Tiešsaiste un reāllaika dati › Radara meteoru skaits
 nessun file RMOB caricato	nav ielādēts RMOB fails
-nessun passo del fascio illumina la zona utile\nogni scia colta ≈ {0:F0} % ({1:F1} + {2:F1}) / {3:F1}	neviens kūļa solis neapgaismo lietderīgo zonu\nkatra noķertā sliede ≈ {0:F0} % ({1:F1} + {2:F1}) / {3:F1}
+nessun passo del fascio illumina la zona utile\nogni scia colta ≈ {0:F0} % ({1:F1} + {2:F1}) / {3:F1}	neviens stara solis neapgaismo lietderīgo zonu\nkatra noķertā sliede ≈ {0:F0} % ({1:F1} + {2:F1}) / {3:F1}
 nessuna rete attiva	nav aktīva tīkla
-nessuno sciame utile adesso: hot spot più adatto al fascio	tagad nav lietderīgas plūsmas: kūlim piemērotākais hot spot
+nessuno sciame utile adesso: hot spot più adatto al fascio	tagad nav lietderīgas plūsmas: staram piemērotākais hot spot
 nessuno sciame utile in questo giorno	šajā dienā nav lietderīgas plūsmas
 nessuno sciame utile in questo momento	šobrīd nav lietderīgas plūsmas
 nominativo	izsaukuma signāls
@@ -548,7 +548,7 @@ nuvola non calcolabile per questa tratta (troppo corta o troppo lunga)	mākoni �
 nuvola {0}: {1:F0} % delle riflessioni, {2:F0} × {3:F0} km, asse a {4:F0}°	mākonis {0}: {1:F0} % no atstarojumiem, {2:F0} × {3:F0} km, ass {4:F0}°
 omega-Cetidi Nord diurne	Dienas ziemeļu omega-Cetīdas
 omega-Cetidi Sud diurne	Dienas dienvidu omega-Cetīdas
-orizzonte del fascio	kūļa horizonts
+orizzonte del fascio	stara horizonts
 orologio del PC sincronizzato	datora pulkstenis sinhronizēts
 osservatori RMOB che ascoltano GRAVES	RMOB novērotāji, kas klausās GRAVES
 parola aggiunta	pievienots vārds
@@ -569,7 +569,7 @@ radio, diurno	radio, dienas
 rete assente: {0}	nav tīkla: {0}
 riflessioni/ora	atstarojumi/stundā
 riflessioni/ora a {0} MHz	atstarojumi/stundā pie {0} MHz
-righe ricevute      {0}\nspot letti          {1}\nspot MS accettati   {2}\nscartati (parola)   {3}\nscartati (banda)    {4}\nspot MS ultima ora  {5}	saņemtās rindas         {0}\nnolasītie spoti         {1}\npieņemtie MS spoti      {2}\nnoraidīti (vārds)       {3}\nnoraidīti (josla)       {4}\nMS spoti pēdējā stundā  {5}
+righe ricevute      {0}\nspot letti          {1}\nspot MS accettati   {2}\nscartati (parola)   {3}\nscartati (banda)    {4}\nspot MS ultima ora  {5}	saņemtās rindas         {0}\nnolasītie spoti         {1}\npieņemtie MS spoti      {2}\nnoraidīti (vārds)       {3}\nnoraidīti (diapazons)   {4}\nMS spoti pēdējā stundā  {5}
 righe sotto 27990 kHz scartate: {0}	atmestās rindas zem 27990 kHz: {0}
 righe {0}, spot letti {1}, MS {2}	rindas {0}, nolasīti spoti {1}, MS {2}
 scala letta dal grafico: 0-{0} meteore/ora	skala nolasīta no grafika: 0-{0} meteori/stundā
@@ -620,14 +620,14 @@ zona PREV	PREV zona
 {0} contatti sulla mappa · {1} fuori dalla mappa · {2} senza locator	{0} sakari kartē · {1} ārpus kartes · {2} bez lokatora
 {0} dB rispetto al riferimento di DJ5HG	{0} dB attiecībā pret DJ5HG atsauci
 {0} da GRAVES: az {1:F1}° · el {2:F1}° (passo {3} di 6)	{0} no GRAVES: az {1:F1}° · el {2:F1}° (solis {3} no 6)
-{0} da GRAVES: az {1:F1}° · el {2:F1}° (settori da 90° a 270°, fascio fino a circa 25°)	{0} no GRAVES: az {1:F1}° · el {2:F1}° (sektori no 90° līdz 270°, kūlis līdz aptuveni 25°)
+{0} da GRAVES: az {1:F1}° · el {2:F1}° (settori da 90° a 270°, fascio fino a circa 25°)	{0} no GRAVES: az {1:F1}° · el {2:F1}° (sektori no 90° līdz 270°, stars līdz aptuveni 25°)
 {0} h	{0} h
 {0} h rispetto ad adesso	{0} h no šī brīža
 {0} km dalla tua stazione	{0} km no tavas stacijas
 {0} spot MS in memoria	{0} MS spoti atmiņā
 {0} {1} - {2:F0} % alle {3} UTC ({4} ora locale)	{0} {1} - {2:F0} % plkst. {3} UTC ({4} vietējais laiks)
 {0} · zona	{0} · zona
-{0}: non lavorato	{0}: nav strādāts
+{0}: non lavorato	{0}: nav nostrādāts
 {0}: {1}  az. da me {2:F0}° (scarto {3:+0;-0}°), dal corrispondente {4:F0}°, distanza {5:F0} km	{0}: {1}  az. no manis {2:F0}° (nobīde {3:+0;-0}°), no korespondenta {4:F0}°, attālums {5:F0} km
 {0}: {1}  az. da me {2:F1}° (scarto {3:+0.0;-0.0}° dalla direzione diretta), dal corrispondente {4:F0}°, distanza {5:F0} km, elevazione {6:F1}°	{0}: {1}  az. no manis {2:F1}° (nobīde {3:+0.0;-0.0}° no tiešā virziena), no korespondenta {4:F0}°, attālums {5:F0} km, elevācija {6:F1}°
 {0}: {1} QSO	{0}: {1} QSO

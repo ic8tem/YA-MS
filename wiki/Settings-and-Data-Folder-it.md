@@ -16,18 +16,40 @@ Cambiando lingua o tema le impostazioni vengono salvate e **la finestra viene ri
 
 ## Lingua
 
-Sei lingue dell'interfaccia:
+28 lingue dell'interfaccia, le stesse di YAEC e di E-LAYER ANALYZER (i termini in comune con YAEC sono tradotti allo stesso modo):
 
 | Lingua | Codice | File |
 |---|---|---|
 | Italiano | `it` | nessuno: l'italiano è la lingua di base (le chiavi) |
 | English | `en` | `data/lingue/en.txt` |
-| Русский | `ru` | `data/lingue/ru.txt` |
-| 日本語 | `ja` | `data/lingue/ja.txt` |
 | Deutsch | `de` | `data/lingue/de.txt` |
+| Français | `fr` | `data/lingue/fr.txt` |
+| Español | `es` | `data/lingue/es.txt` |
+| Português | `pt` | `data/lingue/pt.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
+| Svenska | `sv` | `data/lingue/sv.txt` |
+| Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
+| Dansk | `da` | `data/lingue/da.txt` |
+| Íslenska | `is` | `data/lingue/is.txt` |
+| Eesti | `et` | `data/lingue/et.txt` |
+| Latviešu | `lv` | `data/lingue/lv.txt` |
+| Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Русский | `ru` | `data/lingue/ru.txt` |
+| Українська | `uk` | `data/lingue/uk.txt` |
+| Türkçe | `tr` | `data/lingue/tr.txt` |
+| Afrikaans | `af` | `data/lingue/af.txt` |
+| العربية | `ar` | `data/lingue/ar.txt` |
+| עברית | `he` | `data/lingue/he.txt` |
+| اردو | `ur` | `data/lingue/ur.txt` |
+| हिन्दी | `hi` | `data/lingue/hi.txt` |
+| বাংলা | `bn` | `data/lingue/bn.txt` |
+| Bahasa Indonesia | `id` | `data/lingue/id.txt` |
+| Tagalog | `tl` | `data/lingue/tl.txt` |
+| 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 日本語 | `ja` | `data/lingue/ja.txt` |
+| 한국어 | `ko` | `data/lingue/ko.txt` |
 
-Al primo avvio YA-MS usa la **lingua del sistema** se è una di queste, altrimenti l'italiano. Numeri e date seguono la lingua scelta (per esempio punto decimale in inglese, virgola in italiano e in tedesco). Un testo che manca in un file di traduzione viene mostrato in italiano. Su Linux il giapponese richiede font adatti: vedi [Problemi e domande frequenti](Troubleshooting-FAQ-it#linux-il-testo-giapponese-appare-come-quadratini).
+Al primo avvio YA-MS usa la **lingua del sistema** se è una di queste, altrimenti l'italiano. Numeri e date seguono la lingua scelta (per esempio punto decimale in inglese, virgola in italiano e in tedesco). Un testo che manca in un file di traduzione viene mostrato in italiano. Su Linux cinese, giapponese, coreano, arabo, ebraico, urdu, hindi e bengalese richiedono font adatti (per esempio le famiglie Noto): vedi [Problemi e domande frequenti](Troubleshooting-FAQ-it#linux-il-testo-giapponese-appare-come-quadratini).
 
 Il documento [Efficienza - spiegazione](Efficiency-Explanation-it) e il manuale dei calcoli sono in italiano.
 
@@ -100,7 +122,7 @@ Testo semplice, una `chiave=valore` per riga (le righe che iniziano con `#` o `;
 | `elevazione_lobo_gradi` | 0 | Elevazione del lobo (°) |
 | `boom_m` | 4.6 | Lunghezza del boom della Yagi (m) |
 | `hot_spot_km` | 150 | Distanza di Hot A / Hot B dal punto medio (30–400 km) |
-| `lingua` | sistema / `it` | Codice della lingua (`it`, `en`, `ru`, `ja`, `de`, `nl`) |
+| `lingua` | sistema / `it` | Codice della lingua (uno dei 28 codici sopra, per esempio `it`, `en`, `de`) |
 | `tema` | `chiaro` | Schema di colori: `chiaro` (Chiaro), `scuro` (Notte), `nero` (Nero), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Scia meteorica) |
 | `carattere_pct` | 100 | Dimensione del carattere (100–300 %) |
 | `comandi_visibili` | 1 | 1 = righe di comandi visibili, 0 = ripiegate |

@@ -241,6 +241,10 @@ jobs:
             YA-MS - previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter.
             A cura di Costantino IC8TEM.
 
+            Novità della 1.7.0: fascia dell'efficienza sopra la mappa, data e ore del calcolo, sciami di oggi evidenziati, fonte PSKReporter MQTT,
+            impostazioni del calcolo (prudente / come DJ5HG), angolo beta, raggio iniziale della scia, hot spot AMS, avviso delle tratte oltre l'orizzonte,
+            interfaccia, wiki e manuali in 36 lingue, pacchetti .deb e app.zip (dettagli nel file LEGGIMI.txt).
+
             - Windows: YA-MS-...-windows-x64-setup.exe (installa in C:\YA-MS) oppure lo zip portatile; per Windows a 32 bit i file -windows-x86-.
             - Linux (Debian, Ubuntu, Mint): ya-ms_..._amd64.deb, con: sudo apt install ./ya-ms_..._amd64.deb (al primo avvio il programma si copia in ~/YA-MS).
               Oppure YA-MS-...-linux-x64.tar.gz: portatile (si avvia ./YA-MS dalla cartella estratta) o installabile con ./installa.sh in ~/YA-MS.

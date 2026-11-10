@@ -118,6 +118,15 @@ namespace YAMS
             InvalidateVisual();
         }
 
+        // porta la riga in cima alla parte visibile della tabella
+        public void ScrollToRow(int row)
+        {
+            if (Rows == null || row < 0 || row >= Rows.Count) return;
+            scrollY = row * RH;
+            ClampScroll();
+            InvalidateVisual();
+        }
+
         double BodyHeight() { return Math.Max(0, Bounds.Height - HH); }
 
         double ContentHeight() { return (Rows != null ? Rows.Count : 0) * RH; }

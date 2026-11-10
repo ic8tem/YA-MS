@@ -1439,6 +1439,9 @@ namespace YAMS
             }
             gridShowers.Rows = rows;
             gridShowers.Refresh();
+            // la tabella si apre sul primo sciame attivo oggi (in autunno e in inverno sarebbero fuori vista)
+            int firstActive = rows.FindIndex(r => r.Back.HasValue);
+            if (firstActive > 0) gridShowers.ScrollToRow(Math.Max(0, firstActive - 1));
         }
 
         // ------------------------------------------------------------ radar

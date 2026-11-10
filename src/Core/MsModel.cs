@@ -39,6 +39,10 @@ namespace YAMS
         // meteore per km2 (fattore sin El) ma le scie sono piu' lunghe (fino a 100 km utili) e soddisfano piu' spesso la
         // legge di riflessione. Con l'opzione accesa il peso del radiante diventa min(sin El, TrailDh/TrailMax).
         public static bool TrailLength = false;
+        // Angolo beta tra la scia e il piano di propagazione (McKinley 1961, ITU-R P.843 eq. 3): il peso di ogni punto vale
+        // 1 / [R1 R2 (R1+R2) (1 - cos^2(beta) sin^2(phi))]; beta = 0 (scia nel piano) da' il vecchio 1/cos^2(phi), le scie che
+        // attraversano il piano pesano fino a 1/cos^2(phi) volte meno (10-15 dB sulle tratte di 600-2000 km).
+        public static bool BetaFactor = true;
         public const double TrailDhKm = 15, TrailMaxKm = 100;
 
         // Scarto d'antenna degli hot spot dalla direzione diretta in funzione della distanza (J. Richardson, AMS,
@@ -75,7 +79,7 @@ namespace YAMS
         double fieldMax = 1;
         public int SamplePoints;
 
-        struct Sample { public Vec3 Up, N, P; public LatLon Ll; public double W; public bool Left; }
+        struct Sample { public Vec3 Up, N, P, Pn; public LatLon Ll; public double W, Wb, S2; public bool Left; }
         List<Sample> samples = new List<Sample>();
 
         public static PathModel Build(LatLon home, double homeAltKm, LatLon dx, double dxAltKm, double layerKm, double minElevDeg)
@@ -159,11 +163,23 @@ namespace YAMS
                     Sample s = new Sample();
                     s.Up = P.Unit; s.N = n; s.P = P; s.Ll = p;
                     s.W = 1e9 / (Ra * Rb * (Ra + Rb) * cp * cp);
+                    s.Wb = 1e9 / (Ra * Rb * (Ra + Rb)); s.S2 = 1 - cp * cp;
+                    Vec3 pn = na.Cross(nb); double pl = pn.Length;
+                    s.Pn = pl > 1e-12 ? pn * (1.0 / pl) : n;
                     s.Left = v < 0;
                     samples.Add(s);
                 }
             }
             SamplePoints = samples.Count;
+        }
+
+        // peso del punto per una scia diretta come s (verso il radiante): con BetaFactor dipende dall'angolo tra la scia e il piano A-P-B
+        static double Weight(Sample sm, Vec3 s)
+        {
+            if (!BetaFactor) return sm.W;
+            double sb = s.Dot(sm.Pn);                  // seno di beta
+            double den = 1 - (1 - sb * sb) * sm.S2;    // 1 - cos^2(beta) sin^2(phi)
+            return sm.Wb / Math.Max(den, 1e-6);
         }
 
         double Score(Vec3 s, out double left)
@@ -176,7 +192,7 @@ namespace YAMS
                 double sel = RadiantWeight(s.Dot(sm.Up));
                 if (sel <= 0) continue;
                 double k = s.Dot(sm.N);
-                double c = sm.W * Math.Exp(-k * k / sig2) * sel;
+                double c = Weight(sm, s) * Math.Exp(-k * k / sig2) * sel;
                 tot += c;
                 if (sm.Left) left += c;
             }
@@ -202,7 +218,7 @@ namespace YAMS
                 double sel = RadiantWeight(s.Dot(sm.Up));
                 if (sel <= 0) continue;
                 double k = s.Dot(sm.N);
-                c[i] = 100.0 * sm.W * Math.Exp(-k * k / sig2) * sel / fieldMax;
+                c[i] = 100.0 * Weight(sm, s) * Math.Exp(-k * k / sig2) * sel / fieldMax;
             }
             return c;
         }
@@ -255,7 +271,7 @@ namespace YAMS
         static double refRaw = double.NaN; static string refKey = "";
         double ReferenceRaw()
         {
-            string key = LayerKm.ToString("F2") + "|" + MinElevDeg.ToString("F2") + "|" + TrailLength;
+            string key = LayerKm.ToString("F2") + "|" + MinElevDeg.ToString("F2") + "|" + TrailLength + "|" + BetaFactor;
             if (refKey == key && !double.IsNaN(refRaw)) return refRaw;
             PathModel r = new PathModel();
             r.Home = new LatLon(-4.4966, 0); r.Dx = new LatLon(4.4966, 0); r.HomeAltKm = 0; r.DxAltKm = 0;
@@ -345,9 +361,17 @@ namespace YAMS
             return true;
         }
 
-        // Attenuazione di tratta (dB) per una scia sottodensa, McKinley (1961), beta = 0, sin(alfa) = 1:
-        // L = 10 log10[ 16 pi^2 R1 R2 (R1+R2) cos^2(phi) / (lambda^3 q^2 re^2) ]  (guadagni d'antenna esclusi)
+        // Attenuazione di tratta (dB) per una scia sottodensa, McKinley (1961) e ITU-R P.843, sin(alfa) = 1:
+        // L = 10 log10[ 16 pi^2 R1 R2 (R1+R2) (1 - cos^2(beta) sin^2(phi)) / (lambda^3 q^2 re^2) ] - 10 log10(a1)  (guadagni d'antenna esclusi)
+        // beta = angolo tra la scia e il piano di propagazione (0 = scia nel piano, caso piu' favorevole);
+        // a1 = exp[-8 pi^2 r0^2 / (lambda^2 sec^2 phi)] = fattore del raggio iniziale della scia (P.843 eq. 7), r0 dalla quota (eq. 4).
         public static double PathLossDb(LatLon home, double homeAltKm, LatLon dx, double dxAltKm, LatLon scatter, double layerKm, double freqMHz, double qPerM)
+        {
+            return PathLossDb(home, homeAltKm, dx, dxAltKm, scatter, layerKm, freqMHz, qPerM, 0, true);
+        }
+
+        public static double PathLossDb(LatLon home, double homeAltKm, LatLon dx, double dxAltKm, LatLon scatter, double layerKm, double freqMHz, double qPerM,
+                                        double betaDeg, bool initialRadius)
         {
             Vec3 pa = Astro.Vec(home, Astro.R + homeAltKm), pb = Astro.Vec(dx, Astro.R + dxAltKm);
             Vec3 P = Astro.Vec(scatter, Astro.R + layerKm);
@@ -356,10 +380,31 @@ namespace YAMS
             double phi = Math.Acos(Math.Max(-1, Math.Min(1, ra.Unit.Dot(rb.Unit)))) / 2.0;
             phi = Math.Min(phi, 85 * Astro.D2R);
             double lambda = 299.792458 / freqMHz;
-            double cp = Math.Cos(phi);
-            double lin = 16 * Math.PI * Math.PI * R1 * R2 * (R1 + R2) * cp * cp
+            double sp = Math.Sin(phi), cb = Math.Cos(betaDeg * Astro.D2R);
+            double lin = 16 * Math.PI * Math.PI * R1 * R2 * (R1 + R2) * (1 - cb * cb * sp * sp)
                          / (Math.Pow(lambda, 3) * qPerM * qPerM * ElectronRadius * ElectronRadius);
-            return 10 * Math.Log10(lin);
+            double L = 10 * Math.Log10(lin);
+            if (initialRadius) L += InitialRadiusLossDb(layerKm, freqMHz, phi / Astro.D2R);
+            return L;
+        }
+
+        // ITU-R P.843 eq. 4: raggio iniziale della scia (m) dalla quota (km): log10 r0 = 0,035 h - 3,45
+        public static double InitialRadiusM(double hKm) { return Math.Pow(10, 0.035 * hKm - 3.45); }
+
+        // perdita (dB, positiva) dovuta al raggio iniziale: -10 log10 a1, a1 = exp[-8 pi^2 r0^2 cos^2(phi) / lambda^2]
+        public static double InitialRadiusLossDb(double hKm, double freqMHz, double phiDeg)
+        {
+            double r0 = InitialRadiusM(hKm), lambda = 299.792458 / freqMHz, c = Math.Cos(Math.Min(phiDeg, 85) * Astro.D2R);
+            return 10 * Math.Log10(Math.E) * 8 * Math.PI * Math.PI * r0 * r0 * c * c / (lambda * lambda);
+        }
+
+        // quota minima delle scie (km) perche' il punto medio di una tratta di distKm sia sopra l'orizzonte delle due stazioni
+        public static double MinLayerForPathKm(double distKm, double stationAltKm)
+        {
+            double lo = 0, hi = 2000;
+            if (ElevationArticle(distKm / 2, hi, stationAltKm) < 0) return double.NaN;
+            for (int i = 0; i < 60; i++) { double m = (lo + hi) / 2; if (ElevationArticle(distKm / 2, m, stationAltKm) >= 0) hi = m; else lo = m; }
+            return hi;
         }
 
         // ---- Antenna Yagi ----

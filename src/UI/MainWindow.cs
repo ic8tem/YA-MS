@@ -689,10 +689,12 @@ namespace YAMS
             boxHighRad = Warn(Pal.Panel3, Pal.Yellow, out lblHighRad);
             // avviso radiante basso lungo la tratta (DJ5HG 2004)
             boxLowAlong = Warn(Pal.Panel3, Pal.Azure, out lblLowAlong);
+            // avviso tratta oltre l'orizzonte della scia (punto medio sotto l'orizzonte alla quota delle scie)
+            boxHorizon = Warn(Pal.OrangeDark, Pal.OrangeText, out lblHorizon);
             // lato destro: in alto elenco degli sciami, al centro volta celeste + testo del calcolo, in basso la sezione
             Grid rt = new Grid { RowDefinitions = new RowDefinitions("31*,37*,32*") };
             DockPanel rTop = new DockPanel();
-            DockTop(rTop, opt); DockTop(rTop, boxLobeWarn); DockTop(rTop, boxHighRad); DockTop(rTop, boxLowAlong);
+            DockTop(rTop, opt); DockTop(rTop, boxLobeWarn); DockTop(rTop, boxHorizon); DockTop(rTop, boxHighRad); DockTop(rTop, boxLowAlong);
             rTop.Children.Add(lvSky);
             Grid rMid = new Grid { ColumnDefinitions = new ColumnDefinitions("42*,58*") };
             Grid.SetColumn(skySmall, 0); Grid.SetColumn(lblPathInfo, 1);
@@ -760,9 +762,24 @@ namespace YAMS
             WhenChanged(chkTrailLen, ToggleButton.IsCheckedProperty, () =>
             {
                 PathModel.TrailLength = chkTrailLen.IsChecked == true;
-                if (model != null) Recalc();
+                SyncProfile();
+                if (!applyingProfile && model != null) Recalc();
             });
-            DockTop(p2, Row(chkTrailLen));
+            // impostazioni pronte del calcolo: prudente (quota dal radar, scie normali) o come DJ5HG (102 km, scie lunghe)
+            rbProfPrud = new RadioButton { Content = Lang.T("Prudente"), GroupName = "profilo_calcolo", Margin = new Thickness(8, 0, 4, 0), VerticalAlignment = VerticalAlignment.Center, Foreground = Pal.B(Pal.Fore) };
+            rbProfDj = new RadioButton { Content = Lang.T("Come DJ5HG"), GroupName = "profilo_calcolo", Margin = new Thickness(8, 0, 4, 0), VerticalAlignment = VerticalAlignment.Center, Foreground = Pal.B(Pal.Fore) };
+            rbProfPers = new RadioButton { Content = Lang.T("Personalizzata"), GroupName = "profilo_calcolo", Margin = new Thickness(8, 0, 4, 0), VerticalAlignment = VerticalAlignment.Center, Foreground = Pal.B(Pal.Fore) };
+            ToolTip.SetTip(rbProfPrud, Lang.T("Quota delle scie misurata dal radar di Collm (casella \"dal radar\") e scie normali (opzione delle scie lunghe spenta). È l'impostazione di partenza.\n" +
+                "Confronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo e da Monaco): valori più bassi di qualche dB, ma i minimi del pomeriggio coincidono meglio."));
+            ToolTip.SetTip(rbProfDj, Lang.T("Quota fissa di 102 km e scie più lunghe con il radiante basso, come in \"Die Geometrie von Meteorscatterverbindungen\" di DJ5HG (2004).\n" +
+                "Confronto con le sue curve: quasi tutti i valori entro 2-3 dB; il minimo con il radiante basso quasi allineato alla tratta resta meno profondo che in DJ5HG."));
+            ToolTip.SetTip(rbProfPers, Lang.T("Quota delle scie e opzione delle scie lunghe scelte a mano. Si seleziona da sola quando cambi la quota, la casella \"dal radar\" o l'opzione delle scie lunghe."));
+            WhenChanged(rbProfPrud, ToggleButton.IsCheckedProperty, () => { if (rbProfPrud.IsChecked == true) ApplyProfile(false); });
+            WhenChanged(rbProfDj, ToggleButton.IsCheckedProperty, () => { if (rbProfDj.IsChecked == true) ApplyProfile(true); });
+            WhenChanged(chkLayerRadar, ToggleButton.IsCheckedProperty, SyncProfile);
+            numLayer.ValueChanged += (s, e) => SyncProfile();
+            SyncProfile();
+            DockTop(p2, Row(L(Lang.T("Impostazione del calcolo:")), rbProfPrud, rbProfDj, rbProfPers, chkTrailLen));
             chart24 = new SimpleChart { Height = Chart24Height };
             DockTop(p2, chart24);
             List<string> cols24 = new List<string> { Lang.T("Sigla"), Lang.T("Sciame"), "ZHR" };
@@ -1113,6 +1130,15 @@ namespace YAMS
                 boxLowAlong.IsVisible = true;
             }
             else boxLowAlong.IsVisible = false;
+            // tratta oltre l'orizzonte della scia: a quella quota il punto medio non e' visto da nessuna delle due stazioni
+            if (mv && model.ElevToMidDeg < 0)
+            {
+                double hMin = MsGeometry.MinLayerForPathKm(model.DistKm, Math.Min(model.HomeAltKm, model.DxAltKm));
+                lblHorizon.Text = Lang.F("TRATTA OLTRE L'ORIZZONTE DELLA SCIA: con le scie a {0:F1} km il punto medio è {1:F1}° sotto l'orizzonte. Servono scie ad almeno {2:F0} km di quota: collegamento possibile solo con le scie più alte, efficienze e attenuazioni sono al limite del modello.",
+                    model.LayerKm, -model.ElevToMidDeg, hMin);
+                boxHorizon.IsVisible = true;
+            }
+            else boxHorizon.IsVisible = false;
             // Hot consigliato dall'efficienza: il lato (A o B) da cui arriva la maggior parte delle riflessioni,
             // sommando su tutti gli sciami attivi ZHR x efficienza x frazione del lato
             double wA = 0, wB = 0;
@@ -1245,6 +1271,51 @@ namespace YAMS
         // radiante basso per l'avviso "lungo la tratta" (DJ5HG 2004: radiante tiefe am Horizont)
         public const double LowRadiantDeg = 20.0;
         Border boxLowAlong; TextBlock lblLowAlong;
+        Border boxHorizon; TextBlock lblHorizon;
+        RadioButton rbProfPrud, rbProfDj, rbProfPers;
+        bool applyingProfile;
+        public const double Dj5hgLayerKm = 102.0;
+
+        // impostazione pronta: prudente = quota dal radar e scie normali; DJ5HG = 102 km fissi e scie lunghe
+        void ApplyProfile(bool dj5hg)
+        {
+            if (applyingProfile) return;
+            applyingProfile = true;
+            try
+            {
+                if (dj5hg)
+                {
+                    chkLayerRadar.IsChecked = false;
+                    numLayer.Value = Dm(Dj5hgLayerKm);
+                    chkTrailLen.IsChecked = true;
+                }
+                else
+                {
+                    chkLayerRadar.IsChecked = true;
+                    if (!ApplyRadarLayer() && V(numLayer) == Dj5hgLayerKm) numLayer.Value = Dm(cfg.GetD("quota_scie_km_prudente", 90));
+                    chkTrailLen.IsChecked = false;
+                }
+                PathModel.TrailLength = chkTrailLen.IsChecked == true;
+            }
+            finally { applyingProfile = false; }
+            SyncProfile();
+            if (model != null) Recalc();
+        }
+
+        // seleziona la casella che corrisponde alle impostazioni attuali
+        void SyncProfile()
+        {
+            if (applyingProfile || rbProfPrud == null || chkLayerRadar == null || chkTrailLen == null) return;
+            applyingProfile = true;
+            try
+            {
+                bool radar = chkLayerRadar.IsChecked == true, trail = chkTrailLen.IsChecked == true;
+                if (!radar && trail && Math.Abs(V(numLayer) - Dj5hgLayerKm) < 0.01) rbProfDj.IsChecked = true;
+                else if (radar && !trail) rbProfPrud.IsChecked = true;
+                else rbProfPers.IsChecked = true;
+            }
+            finally { applyingProfile = false; }
+        }
 
         // Formula della migliore direzione di DH9GCD (DF5HC, "Meteorscatter auf UKW", DARC 2018):
         // E = sin(El) cos(El) sin(P - Az); massimo 0,5 con El = 45° e P - Az = 90°. Restituita in % del massimo.
@@ -1411,7 +1482,8 @@ namespace YAMS
             line(Lang.F("Punto medio     {0}  ({1:F2}N {2:F2}E)", Astro.ToLocator(model.Mid), model.Mid.Lat, model.Mid.Lon));
             line(Lang.F("Quota scie      {0:F1} km (strato E){1}", model.LayerKm, collm != null && chkLayerRadar.IsChecked == true ? "  " + Lang.T("<- moda misurata dal radar Collm") : ""));
             line(Lang.F("Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)", model.ElevToMidDeg));
-            if (model.ElevToMidDeg < 0) line("  " + Lang.T("-> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto"));
+            if (model.ElevToMidDeg < 0) line("  " + Lang.F("-> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto (servono scie ad almeno {0:F0} km)",
+                MsGeometry.MinLayerForPathKm(model.DistKm, Math.Min(model.HomeAltKm, model.DxAltKm))));
             sb.Append("\n");
             head(Lang.T("HOT A / HOT B (hot spot classici, per il puntamento d'antenna)"));
             line(PathModel.HotSpotAuto ? Lang.F("Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta: scarto {1:F1}° dalla tabella AMS di J. Richardson (13° a 1000 km, 11° a 1250, 10° a 1500 e 2000), riportata da DJ5HG", model.HotOffsetKm, PathModel.AmsOffsetDeg(model.DistKm))
@@ -1443,8 +1515,9 @@ namespace YAMS
                 line(Lang.F("Puntamento {0:F0}°: Hot A {1}, Hot B {2}", sky.AntennaAz,
                     model.HotA.InLobe ? Lang.T("DENTRO il lobo") : Lang.T("fuori dal lobo"), model.HotB.InLobe ? Lang.T("DENTRO il lobo") : Lang.T("fuori dal lobo")));
             sb.Append("\n");
-            head(Lang.T("ATTENUAZIONE DI TRATTA (scia sottodensa, McKinley 1961; guadagni d'antenna esclusi)"));
-            line(Lang.F("Densita' della scia q = {0:E1} elettroni/m. Riferimenti dell'articolo a 144 MHz: 182 dB minimo (GM8JBJ), 200 dB medio (OH5IY)", q));
+            head(Lang.T("ATTENUAZIONE DI TRATTA (scia sottodensa, McKinley 1961 e ITU-R P.843; guadagni d'antenna esclusi)"));
+            line(Lang.F("Densita' della scia q = {0:E1} elettroni/m. Riferimenti: 172-190 dB (calcoli di G4BAO citati da GM8JBJ), 200 dB medio a 144 MHz (OH5IY)", q));
+            line(Lang.F("Scia nel piano della tratta (β = 0°, caso migliore), compreso il raggio iniziale della scia (ITU-R P.843): r0 = {0:F2} m a {1:F1} km di quota", MsGeometry.InitialRadiusM(model.LayerKm), model.LayerKm));
             line(Lang.T("Punto di riflessione").PadRight(30) + "28 MHz   50 MHz   70 MHz  144 MHz  222 MHz  432 MHz");
             List<KeyValuePair<string, LatLon>> pts = new List<KeyValuePair<string, LatLon>>();
             pts.Add(new KeyValuePair<string, LatLon>(Lang.T("Punto medio (forward)"), model.Mid));
@@ -1460,6 +1533,9 @@ namespace YAMS
                 sb.Append("\n");
             }
             double lossMid = MsGeometry.PathLossDb(model.Home, model.HomeAltKm, model.Dx, model.DxAltKm, model.Mid, model.LayerKm, f, q);
+            double loss90 = MsGeometry.PathLossDb(model.Home, model.HomeAltKm, model.Dx, model.DxAltKm, model.Mid, model.LayerKm, f, q, 90, true);
+            double phiMid = model.HalfScatterAngleDeg(model.Mid);
+            double lossR0 = MsGeometry.InitialRadiusLossDb(model.LayerKm, f, phiMid);
             double gain = V(numGain), sens = V(numSens), power = V(numPower);
             double pdbm = 10 * Math.Log10(power * 1000.0);
             double eirp = pdbm + gain;   // guadagno in dBi: la perdita di McKinley e' riferita ad antenne isotrope
@@ -1469,6 +1545,8 @@ namespace YAMS
             line(Lang.F("Potenza {0:F0} W = {1:F1} dBm, EIRP = {2:F1} dBm (guadagno in dBi)", power, pdbm, eirp));
             line(Lang.F("Attenuazione {0:F1} dB -> segnale in antenna {1:F1} dBm, minimo ricevibile {2:F0} dBm, margine {3:+0.0;-0.0} dB",
                 lossMid, rx, sens, rx - sens));
+            line(Lang.F("Nell'attenuazione: raggio iniziale della scia {0:F1} dB a {1:F0} MHz (ITU-R P.843). Con la scia che attraversa il piano della tratta (β = 90°) l'attenuazione sale a {2:F1} dB (+{3:F1} dB)",
+                lossR0, f, loss90, loss90 - lossMid));
             line(Lang.F("Con l'attenuazione media di OH5IY (200 dB a 144 MHz, scalata con λ³: {0:F1} dB a {1:F0} MHz) il margine sarebbe {2:+0.0;-0.0} dB",
                 200 + 30 * Math.Log10(f / 144.0), f, eirp - (200 + 30 * Math.Log10(f / 144.0)) + gain - sens));
             sb.Append("\n");
@@ -1786,16 +1864,19 @@ namespace YAMS
             return
 Lang.T("FONTE PRINCIPALE") + "\n" +
 "  " + Lang.T("Costantino Cerrotta IC8TEM, Gianluigi \"Gigi\" Sartori IV3GTH - \"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese\" (articolo, versione 7).") + "\n" +
-"  " + Lang.T("Da qui: scie nello strato E a circa 90 km (radar SKiYMET), formula dell'elevazione, Hot A / Hot B, side-scatter, attenuazione 182-200 dB, durata dei ping IARU.") + "\n\n" +
+"  " + Lang.T("Da qui: scie nello strato E a circa 90 km (radar SKiYMET), formula dell'elevazione, Hot A / Hot B, side-scatter, attenuazione di tratta, durata dei ping IARU.") + "\n\n" +
 Lang.T("CALCOLO E TEORIA DELL'EFFICIENZA") + "\n" +
 "  " + Lang.T("Ilkka Yrjola OH5IY - MS-Soft (concetto di efficienza dello sciame), www.kolumbus.fi/oh5iy (sito storico)") + "\n" +
 "  Wilhelm Rauh DL5MCG - MCG_MS, MS Efficiency Calculator, qsl.net/dl5mcg\n" +
 "  " + Lang.T("Ingolf SM6FHZ - \"432 MHz Meteorscatter, Challenges and Techniques\", 45th Nordic VUSHF, maggio 2025 (regole lambda^3 e lambda^2, punto medio, direzione migliore)") + "\n" +
 "  " + Lang.T("D.W.R. McKinley - Meteor Science and Engineering, 1961 (equazione delle scie sottodense)") + "\n" +
-"  " + Lang.T("John GM8JBJ - Meteor scatter path loss, hamradio.engineering (da Kaiser & Closs 1952)") + "\n" +
+"  " + Lang.T("John GM8JBJ - Meteor scatter path loss, hamradio.engineering (da Kaiser & Closs 1952; cita i calcoli di John Worsnop G4BAO, 172-190 dB)") + "\n" +
+"  " + Lang.T("Raccomandazione ITU-R P.843-1 (1997): angolo beta tra scia e piano della tratta, raggio iniziale della scia, quota media in funzione della frequenza") + "\n" +
 "  " + Lang.T("Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)") + "\n" +
 "  " + Lang.T("Klaus von der Heide DJ5HG - QTFGUI (aurora, FAI e meteor scatter) e manuale \"QTFGUI Help\" 2007: legge di diffusione a cono,\n" +
 "    caso di prova Amburgo - Barcellona nelle Quadrantidi, usato per verificare il modello") + "\n" +
+"  " + Lang.T("Klaus von der Heide DJ5HG - \"Die Geometrie von Meteorscatterverbindungen\" (2004): riferimento fisso in dB, scie lunghe con il radiante basso,\n" +
+"    curve delle tratte da Amburgo e da Monaco; tabella AMS di J. Richardson per la distanza degli hot spot") + "\n" +
 "  " + Lang.T("Jens DF5HC - \"Meteorscatter auf UKW\", conferenza DARC, gennaio 2018: formula della migliore direzione\n" +
 "    di DH9GCD (Sin(El) x Cos(El) x Sin(P-Az)), diffusione a cono e scelta HOT-A / HOT-B di DJ5HG,\n" +
 "    radiante utile tra 20 e 70 gradi, distanza migliore 1300-1500 km, meteore sporadiche di KB0VUK") + "\n" +

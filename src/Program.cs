@@ -60,12 +60,13 @@ namespace YAMS
             string[][] tr = { new[] { "JO43XN", "JN11CJ", "Amburgo-Barcellona" }, new[] { "JO43XN", "KN12PQ", "Amburgo-Sofia" },
                               new[] { "JO43XN", "KO85TS", "Amburgo-Mosca" }, new[] { "JO43XN", "JP88RK", "Amburgo-Narvik" },
                               new[] { "JN58SD", "KO85TS", "Monaco-Mosca" }, new[] { "JN58SD", "JP53EK", "Monaco-Trondheim" } };
+            foreach (bool beta in new[] { true, false })
             foreach (double layer in new[] { 89.5, 102.0 })
                 foreach (bool trail in new[] { false, true })
                 {
-                    PathModel.TrailLength = trail; PathModel.HotSpotAuto = true;
+                    PathModel.TrailLength = trail; PathModel.HotSpotAuto = true; PathModel.BetaFactor = beta;
                     Console.WriteLine();
-                    Console.WriteLine("=== quota " + layer.ToString("F1", ci) + " km, lunghezza delle scie " + (trail ? "accesa" : "spenta"));
+                    Console.WriteLine("=== quota " + layer.ToString("F1", ci) + " km, lunghezza delle scie " + (trail ? "accesa" : "spenta") + ", angolo beta " + (beta ? "acceso" : "spento"));
                     foreach (string[] t in tr)
                     {
                         LatLon a, b; Astro.TryLocator(t[0], out a); Astro.TryLocator(t[1], out b);
@@ -89,6 +90,27 @@ namespace YAMS
                         }
                     }
                 }
+            PathModel.BetaFactor = true;
+            // attenuazione al punto medio: beta 0/90 gradi e raggio iniziale (ITU-R P.843), q = 1e14 e/m
+            Console.WriteLine();
+            Console.WriteLine("=== attenuazione al punto medio (q = 1e14 e/m)");
+            Console.WriteLine("dist   quota   f MHz   phi    L(b=0)  L(b=90)  r0 m  a1 dB");
+            LatLon o = new LatLon(50, 10);
+            foreach (double d in new[] { 600.0, 1000, 1400, 1800, 2100 })
+                foreach (double layer in new[] { 89.5, 102.0 })
+                    foreach (double f in new[] { 50.0, 144, 432 })
+                    {
+                        LatLon x = Astro.Destination(o, 90, d), mid = Astro.Destination(o, 90, d / 2);
+                        PathModel pm = PathModel.Build(o, 0, x, 0, layer, 0);
+                        double phi = pm.HalfScatterAngleDeg(mid);
+                        double l0 = MsGeometry.PathLossDb(o, 0, x, 0, mid, layer, f, 1e14, 0, true), l90 = MsGeometry.PathLossDb(o, 0, x, 0, mid, layer, f, 1e14, 90, true);
+                        Console.WriteLine(string.Format(ci, "{0,5:F0}  {1,5:F1}  {2,5:F0}  {3,5:F1}  {4,7:F1}  {5,7:F1}  {6,4:F2}  {7,5:F1}", d, layer, f, phi, l0, l90,
+                            MsGeometry.InitialRadiusM(layer), MsGeometry.InitialRadiusLossDb(layer, f, phi)));
+                    }
+            Console.WriteLine();
+            Console.WriteLine("=== quota minima delle scie per la tratta (stazioni a livello del mare)");
+            foreach (double d in new[] { 1800.0, 2000, 2100, 2124, 2200, 2300, 2500 })
+                Console.WriteLine(string.Format(ci, "{0,5:F0} km: {1,6:F1} km  (elev. al punto medio con scie a 90 km: {2:F2} gradi)", d, MsGeometry.MinLayerForPathKm(d, 0), MsGeometry.ElevationArticle(d / 2, 90, 0)));
         }
 
         public static AppBuilder BuildAvaloniaApp()

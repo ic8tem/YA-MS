@@ -35,14 +35,14 @@ NOVITA' DELLA 1.7.0
   - Manuale: tolto il riferimento all'aurora nella tolleranza della condizione speculare.
   - Geometria e attenuazione: corretto il bilancio di tratta. I guadagni sono in dBi e non si tolgono piu' due volte
     i 2,15 dB del dipolo (la perdita di McKinley e' riferita ad antenne isotrope): il margine sale di 4,3 dB.
-  - Calcolo dell'efficienza: impostazioni pronte "Prudente" (di partenza: quota dal radar, scie normali, senza beta),
+  - Calcolo dell'efficienza: impostazioni pronte "Prudente" (di partenza, i valori piu' prudenti: quota dal radar, scie normali, beta),
     "Come DJ5HG" (102 km, scie lunghe, angolo beta) e "Personalizzata"; nuove opzioni "Scie piu' lunghe con il
     radiante basso (DJ5HG)" e "Angolo beta tra scia e tratta (McKinley completo)".
   - Hot spot: distanza dal punto medio automatica dalla tabella AMS (J. Richardson, riportata da DJ5HG), casella "auto (AMS)".
   - Efficienza anche in dB rispetto al riferimento fisso di DJ5HG; avvisi "RADIANTE BASSO LUNGO LA TRATTA" e
     "TRATTA OLTRE L'ORIZZONTE DELLA SCIA" (con la quota minima delle scie necessaria).
   - Attenuazione: fattore del raggio iniziale della scia (ITU-R P.843) e attenuazione anche con la scia che
-    attraversa il piano della tratta (beta = 90 gradi). Riferimento 172-190 dB di G4BAO al posto dei 182 dB di GM8JBJ.
+    attraversa il piano della tratta (beta = 90 gradi, valore prudente usato nel bilancio). Riferimento 172-190 dB di G4BAO al posto dei 182 dB di GM8JBJ.
   - Previsioni: la durata dei ping tiene conto del fattore sec^2(phi) della tratta.
   - Manuale e spiegazione: confronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo e da Monaco).
 

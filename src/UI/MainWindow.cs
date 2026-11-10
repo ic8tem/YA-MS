@@ -766,11 +766,11 @@ namespace YAMS
                 if (!applyingProfile && model != null) Recalc();
             });
             // opzione: angolo beta tra la scia e il piano della tratta (McKinley completo, ITU-R P.843)
-            chkBeta = C(Lang.T("Angolo β tra scia e tratta (McKinley completo)"), cfg.GetB("angolo_beta", false));
+            chkBeta = C(Lang.T("Angolo β tra scia e tratta (McKinley completo)"), cfg.GetB("angolo_beta", true));
             PathModel.BetaFactor = chkBeta.IsChecked == true;
-            ToolTip.SetTip(chkBeta, Lang.T("Spenta (prudente): ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6.\n" +
-                "Accesa: la potenza di ogni scia segue la formula completa di McKinley e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ): le scie che attraversano il piano della tratta valgono 10-15 dB meno di quelle che vi giacciono.\n" +
-                "Effetto: con l'opzione accesa prevalgono i radianti allineati alla tratta, non quelli perpendicolari (regola di SM6FHZ e di DH9GCD); le curve di DJ5HG seguono meglio l'andamento orario, con i minimi profondi quando il radiante è basso."));
+            ToolTip.SetTip(chkBeta, Lang.T("Accesa (prudente, di partenza): la potenza di ogni scia segue la formula completa di McKinley e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ): le scie che attraversano il piano della tratta valgono 10-15 dB meno di quelle che vi giacciono, e nessuna scia è sopravvalutata.\n" +
+                "Effetto: prevalgono i radianti allineati alla tratta, non quelli perpendicolari; le curve di DJ5HG seguono meglio l'andamento orario, con i minimi profondi quando il radiante è basso.\n" +
+                "Spenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6: segue la regola dei radianti perpendicolari alla tratta (SM6FHZ, DH9GCD), ma sopravvaluta le scie che attraversano il piano."));
             WhenChanged(chkBeta, ToggleButton.IsCheckedProperty, () =>
             {
                 PathModel.BetaFactor = chkBeta.IsChecked == true;
@@ -781,8 +781,8 @@ namespace YAMS
             rbProfPrud = new RadioButton { Content = Lang.T("Prudente"), GroupName = "profilo_calcolo", Margin = new Thickness(8, 0, 4, 0), VerticalAlignment = VerticalAlignment.Center, Foreground = Pal.B(Pal.Fore) };
             rbProfDj = new RadioButton { Content = Lang.T("Come DJ5HG"), GroupName = "profilo_calcolo", Margin = new Thickness(8, 0, 4, 0), VerticalAlignment = VerticalAlignment.Center, Foreground = Pal.B(Pal.Fore) };
             rbProfPers = new RadioButton { Content = Lang.T("Personalizzata"), GroupName = "profilo_calcolo", Margin = new Thickness(8, 0, 4, 0), VerticalAlignment = VerticalAlignment.Center, Foreground = Pal.B(Pal.Fore) };
-            ToolTip.SetTip(rbProfPrud, Lang.T("Quota delle scie misurata dal radar di Collm (casella \"dal radar\"), scie normali, senza l'angolo β. È l'impostazione di partenza e segue la regola dei radianti perpendicolari alla tratta (SM6FHZ, DH9GCD).\n" +
-                "Confronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo): in media 3 dB sotto, scarto tipico 5 dB."));
+            ToolTip.SetTip(rbProfPrud, Lang.T("Valori più prudenti, di partenza: quota delle scie misurata dal radar di Collm (casella \"dal radar\"), scie normali, angolo β acceso.\n" +
+                "Confronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo): in media 7 dB sotto, con lo stesso andamento orario (scarto di forma circa 3 dB)."));
             ToolTip.SetTip(rbProfDj, Lang.T("Quota fissa di 102 km, scie più lunghe con il radiante basso e angolo β, come in \"Die Geometrie von Meteorscatterverbindungen\" di DJ5HG (2004).\n" +
                 "Confronto con le sue curve: in media 2 dB sotto, scarto tipico 5 dB; prevalgono i radianti allineati alla tratta."));
             ToolTip.SetTip(rbProfPers, Lang.T("Quota delle scie e opzioni scelte a mano. Si seleziona da sola quando cambi la quota, la casella \"dal radar\", le scie lunghe o l'angolo β."));
@@ -1308,7 +1308,7 @@ namespace YAMS
                     chkLayerRadar.IsChecked = true;
                     if (!ApplyRadarLayer() && V(numLayer) == Dj5hgLayerKm) numLayer.Value = Dm(cfg.GetD("quota_scie_km_prudente", 90));
                     chkTrailLen.IsChecked = false;
-                    chkBeta.IsChecked = false;
+                    chkBeta.IsChecked = true;
                 }
                 PathModel.TrailLength = chkTrailLen.IsChecked == true;
                 PathModel.BetaFactor = chkBeta.IsChecked == true;
@@ -1327,7 +1327,7 @@ namespace YAMS
             {
                 bool radar = chkLayerRadar.IsChecked == true, trail = chkTrailLen.IsChecked == true, beta = chkBeta.IsChecked == true;
                 if (!radar && trail && beta && Math.Abs(V(numLayer) - Dj5hgLayerKm) < 0.01) rbProfDj.IsChecked = true;
-                else if (radar && !trail && !beta) rbProfPrud.IsChecked = true;
+                else if (radar && !trail && beta) rbProfPrud.IsChecked = true;
                 else rbProfPers.IsChecked = true;
             }
             finally { applyingProfile = false; }
@@ -1533,7 +1533,7 @@ namespace YAMS
             sb.Append("\n");
             head(Lang.T("ATTENUAZIONE DI TRATTA (scia sottodensa, McKinley 1961 e ITU-R P.843; guadagni d'antenna esclusi)"));
             line(Lang.F("Densita' della scia q = {0:E1} elettroni/m. Riferimenti: 172-190 dB (calcoli di G4BAO citati da GM8JBJ), 200 dB medio a 144 MHz (OH5IY)", q));
-            line(Lang.T("Scia nel piano della tratta (β = 0°, caso migliore), compreso il raggio iniziale della scia (ITU-R P.843) alla quota media degli echi per ciascuna frequenza"));
+            line(Lang.T("Valori prudenti: scia che attraversa il piano della tratta (β = 90°, caso più sfavorevole), compreso il raggio iniziale della scia (ITU-R P.843) alla quota media degli echi per ciascuna frequenza"));
             line(Lang.T("Punto di riflessione").PadRight(30) + "28 MHz   50 MHz   70 MHz  144 MHz  222 MHz  432 MHz");
             List<KeyValuePair<string, LatLon>> pts = new List<KeyValuePair<string, LatLon>>();
             pts.Add(new KeyValuePair<string, LatLon>(Lang.T("Punto medio (forward)"), model.Mid));
@@ -1543,13 +1543,14 @@ namespace YAMS
                 sb.Append(kv.Key.PadRight(28));
                 foreach (double fb in new double[] { 28, 50, 70, 144, 222, 432 })
                 {
-                    double Ldb = MsGeometry.PathLossDb(model.Home, model.HomeAltKm, model.Dx, model.DxAltKm, kv.Value, model.LayerKm, fb, q);
+                    double Ldb = MsGeometry.PathLossDb(model.Home, model.HomeAltKm, model.Dx, model.DxAltKm, kv.Value, model.LayerKm, fb, q, 90, true);
                     sb.Append(Ldb.ToString("F1").PadLeft(9));
                 }
                 sb.Append("\n");
             }
-            double lossMid = MsGeometry.PathLossDb(model.Home, model.HomeAltKm, model.Dx, model.DxAltKm, model.Mid, model.LayerKm, f, q);
-            double loss90 = MsGeometry.PathLossDb(model.Home, model.HomeAltKm, model.Dx, model.DxAltKm, model.Mid, model.LayerKm, f, q, 90, true);
+            // valore prudente: beta = 90 gradi (scia che attraversa il piano della tratta); il caso migliore (beta = 0) si mostra a parte
+            double lossMid = MsGeometry.PathLossDb(model.Home, model.HomeAltKm, model.Dx, model.DxAltKm, model.Mid, model.LayerKm, f, q, 90, true);
+            double loss0 = MsGeometry.PathLossDb(model.Home, model.HomeAltKm, model.Dx, model.DxAltKm, model.Mid, model.LayerKm, f, q, 0, true);
             double phiMid = model.HalfScatterAngleDeg(model.Mid);
             double hItu = MsGeometry.ItuMeanHeightKm(f);
             double lossR0 = MsGeometry.InitialRadiusLossDb(hItu, f, phiMid);
@@ -1562,8 +1563,8 @@ namespace YAMS
             line(Lang.F("Potenza {0:F0} W = {1:F1} dBm, EIRP = {2:F1} dBm (guadagno in dBi)", power, pdbm, eirp));
             line(Lang.F("Attenuazione {0:F1} dB -> segnale in antenna {1:F1} dBm, minimo ricevibile {2:F0} dBm, margine {3:+0.0;-0.0} dB",
                 lossMid, rx, sens, rx - sens));
-            line(Lang.F("Nell'attenuazione: raggio iniziale della scia {0:F1} dB (r0 = {1:F2} m alla quota media ITU di {2:F1} km per {3:F0} MHz). Con la scia che attraversa il piano della tratta (β = 90°) l'attenuazione sale a {4:F1} dB (+{5:F1} dB)",
-                lossR0, MsGeometry.InitialRadiusM(hItu), hItu, f, loss90, loss90 - lossMid));
+            line(Lang.F("Nell'attenuazione (β = 90°, prudente): raggio iniziale della scia {0:F1} dB (r0 = {1:F2} m alla quota media ITU di {2:F1} km per {3:F0} MHz). Con la scia nel piano della tratta (β = 0°, caso migliore) l'attenuazione scende a {4:F1} dB ({5:F1} dB) e il margine sale a {6:+0.0;-0.0} dB",
+                lossR0, MsGeometry.InitialRadiusM(hItu), hItu, f, loss0, loss0 - lossMid, eirp - loss0 + gain - sens));
             line(Lang.F("Con l'attenuazione media di OH5IY (200 dB a 144 MHz, scalata con λ³: {0:F1} dB a {1:F0} MHz) il margine sarebbe {2:+0.0;-0.0} dB",
                 200 + 30 * Math.Log10(f / 144.0), f, eirp - (200 + 30 * Math.Log10(f / 144.0)) + gain - sens));
             sb.Append("\n");

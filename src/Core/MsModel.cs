@@ -42,8 +42,9 @@ namespace YAMS
         // Angolo beta tra la scia e il piano di propagazione (McKinley 1961, ITU-R P.843 eq. 3): il peso di ogni punto vale
         // 1 / [R1 R2 (R1+R2) (1 - cos^2(beta) sin^2(phi))]; beta = 0 (scia nel piano) da' il vecchio 1/cos^2(phi), le scie che
         // attraversano il piano pesano fino a 1/cos^2(phi) volte meno (10-15 dB sulle tratte di 600-2000 km).
-        // Opzione (spenta nel calcolo prudente): con beta i radianti lungo la tratta prevalgono su quelli perpendicolari.
-        public static bool BetaFactor = false;
+        // Opzione, accesa di partenza (calcolo prudente: nessuna scia sopravvalutata); con beta i radianti lungo la tratta
+        // prevalgono su quelli perpendicolari.
+        public static bool BetaFactor = true;
         public const double TrailDhKm = 15, TrailMaxKm = 100;
 
         // Scarto d'antenna degli hot spot dalla direzione diretta in funzione della distanza (J. Richardson, AMS,

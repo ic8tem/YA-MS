@@ -501,9 +501,9 @@ namespace YAMS
             btnReal.Background = Brushes.Transparent; btnReal.BorderBrush = Pal.B(Pal.Violet); btnReal.Foreground = Pal.B(Pal.Violet);
             btnReal.Click += (s, e) => ResetCalcTime();
             // data del calcolo: con l'ora attuale e lo spostamento del cursore (da -12 a +36 h) da' il momento del calcolo
-            dtCalc = new CalendarDatePicker { SelectedDate = DateTime.UtcNow.Date, Width = 150, Margin = new Thickness(2, 3) };
+            dtCalc = new CalendarDatePicker { SelectedDate = DateTime.UtcNow.Date, Width = 150, Margin = new Thickness(2, 3), FlowDirection = FlowDirection.LeftToRight };   // date sempre da sinistra a destra (arabo, ebraico, urdu)
             WhenChanged(dtCalc, CalendarDatePicker.SelectedDateProperty, () => UpdateSky());
-            dtDay = new CalendarDatePicker { SelectedDate = DateTime.UtcNow.Date, Width = 150, Margin = new Thickness(2, 3) };
+            dtDay = new CalendarDatePicker { SelectedDate = DateTime.UtcNow.Date, Width = 150, Margin = new Thickness(2, 3), FlowDirection = FlowDirection.LeftToRight };   // date sempre da sinistra a destra (arabo, ebraico, urdu)
             WhenChanged(dtDay, CalendarDatePicker.SelectedDateProperty, () => Update24h());
             // dimensione del carattere di tutto il programma (solo il testo), a passi del 10 %
             double pct0 = Math.Max(100, Math.Min(300, Math.Round(cfg.GetD("carattere_pct", 100) / 10) * 10));

@@ -90,11 +90,11 @@ namespace YAMS
                         }
                     }
                 }
-            PathModel.BetaFactor = true;
+            PathModel.BetaFactor = false;
             // attenuazione al punto medio: beta 0/90 gradi e raggio iniziale (ITU-R P.843), q = 1e14 e/m
             Console.WriteLine();
             Console.WriteLine("=== attenuazione al punto medio (q = 1e14 e/m)");
-            Console.WriteLine("dist   quota   f MHz   phi    L(b=0)  L(b=90)  r0 m  a1 dB");
+            Console.WriteLine("dist   quota   f MHz   phi    L(b=0)  L(b=90)  r0 m (quota ITU)  a1 dB");
             LatLon o = new LatLon(50, 10);
             foreach (double d in new[] { 600.0, 1000, 1400, 1800, 2100 })
                 foreach (double layer in new[] { 89.5, 102.0 })
@@ -105,12 +105,13 @@ namespace YAMS
                         double phi = pm.HalfScatterAngleDeg(mid);
                         double l0 = MsGeometry.PathLossDb(o, 0, x, 0, mid, layer, f, 1e14, 0, true), l90 = MsGeometry.PathLossDb(o, 0, x, 0, mid, layer, f, 1e14, 90, true);
                         Console.WriteLine(string.Format(ci, "{0,5:F0}  {1,5:F1}  {2,5:F0}  {3,5:F1}  {4,7:F1}  {5,7:F1}  {6,4:F2}  {7,5:F1}", d, layer, f, phi, l0, l90,
-                            MsGeometry.InitialRadiusM(layer), MsGeometry.InitialRadiusLossDb(layer, f, phi)));
+                            MsGeometry.InitialRadiusM(MsGeometry.ItuMeanHeightKm(f)), MsGeometry.InitialRadiusLossDb(MsGeometry.ItuMeanHeightKm(f), f, phi)));
                     }
             Console.WriteLine();
             Console.WriteLine("=== quota minima delle scie per la tratta (stazioni a livello del mare)");
             foreach (double d in new[] { 1800.0, 2000, 2100, 2124, 2200, 2300, 2500 })
                 Console.WriteLine(string.Format(ci, "{0,5:F0} km: {1,6:F1} km  (elev. al punto medio con scie a 90 km: {2:F2} gradi)", d, MsGeometry.MinLayerForPathKm(d, 0), MsGeometry.ElevationArticle(d / 2, 90, 0)));
+            PathModel.BetaFactor = false;
         }
 
         public static AppBuilder BuildAvaloniaApp()

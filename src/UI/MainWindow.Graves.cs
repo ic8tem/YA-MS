@@ -250,7 +250,7 @@ namespace YAMS
         {
             LatLon home;
             if (!Astro.TryLocator(Up(txtHome), out home)) return;
-            double homeAlt = V(numHomeAlt) / 1000.0, layer = V(numLayer), elev = V(numElev), hot = (PathModel.HotSpotAuto ? -1 : PathModel.HotSpotOffsetKm) + (PathModel.TrailLength ? 1000 : 0);
+            double homeAlt = V(numHomeAlt) / 1000.0, layer = V(numLayer), elev = V(numElev), hot = (PathModel.HotSpotAuto ? -1 : PathModel.HotSpotOffsetKm) + (PathModel.TrailLength ? 1000 : 0) + (PathModel.BetaFactor ? 2000 : 0);
             string key = string.Format(CultureInfo.InvariantCulture, "{0:F4};{1:F4};{2:F3};{3:F2};{4:F2};{5:F1}", home.Lat, home.Lon, homeAlt, layer, elev, hot);
             if (key == gravesKey && gravesModel != null) return;   // stessa tratta: il modello c'e' gia'
             if (key != gravesKey) gravesModel = null;   // parametri cambiati: il modello vecchio non vale piu'

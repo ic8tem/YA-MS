@@ -42,7 +42,8 @@ namespace YAMS
         // Angolo beta tra la scia e il piano di propagazione (McKinley 1961, ITU-R P.843 eq. 3): il peso di ogni punto vale
         // 1 / [R1 R2 (R1+R2) (1 - cos^2(beta) sin^2(phi))]; beta = 0 (scia nel piano) da' il vecchio 1/cos^2(phi), le scie che
         // attraversano il piano pesano fino a 1/cos^2(phi) volte meno (10-15 dB sulle tratte di 600-2000 km).
-        public static bool BetaFactor = true;
+        // Opzione (spenta nel calcolo prudente): con beta i radianti lungo la tratta prevalgono su quelli perpendicolari.
+        public static bool BetaFactor = false;
         public const double TrailDhKm = 15, TrailMaxKm = 100;
 
         // Scarto d'antenna degli hot spot dalla direzione diretta in funzione della distanza (J. Richardson, AMS,
@@ -384,9 +385,14 @@ namespace YAMS
             double lin = 16 * Math.PI * Math.PI * R1 * R2 * (R1 + R2) * (1 - cb * cb * sp * sp)
                          / (Math.Pow(lambda, 3) * qPerM * qPerM * ElectronRadius * ElectronRadius);
             double L = 10 * Math.Log10(lin);
-            if (initialRadius) L += InitialRadiusLossDb(layerKm, freqMHz, phi / Astro.D2R);
+            if (initialRadius) L += InitialRadiusLossDb(ItuMeanHeightKm(freqMHz), freqMHz, phi / Astro.D2R);
             return L;
         }
+
+        // ITU-R P.843 eq. 15: quota media delle scie che danno eco alla frequenza f (MHz): h = 124 - 17 log10 f (km).
+        // Il raggio iniziale si valuta a questa quota: e' li' che arrivano gli echi a quella frequenza (a 102 km fissi
+        // il fattore a 432 MHz varrebbe decine di dB, cioe' nessun eco).
+        public static double ItuMeanHeightKm(double freqMHz) { return 124 - 17 * Math.Log10(freqMHz); }
 
         // ITU-R P.843 eq. 4: raggio iniziale della scia (m) dalla quota (km): log10 r0 = 0,035 h - 3,45
         public static double InitialRadiusM(double hKm) { return Math.Pow(10, 0.035 * hKm - 3.45); }

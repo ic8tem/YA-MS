@@ -49,36 +49,36 @@ All steps are in the [calculation manual](Efficiency-Explanation) (`doc/YA-MS_ma
 
 **1. Specular reflection.** A trail sends the signal from A to B only if it is tangent to an ellipsoid with A and B at the foci (McKinley 1961). The trails of a shower are parallel to the radiant direction ŝ (article; McKinley). For each point P of the E layer, with unit vectors towards the stations:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 The same law underlies QTFGUI by DJ5HG (cone scattering). The condition is accepted with a Gaussian tolerance σ = 0.05 rad (about 3°) – *choice of the program*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Weight of each point.** Power of an underdense trail (McKinley), φ = half the scattering angle (limited to 85°, *choice*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 The number of meteors reaching a point is proportional to the sine of the radiant elevation there (ŝ·û_P), the same correction the IMO uses for ZHR.
 
 **3. Sum and percentage.** Points every 15 km at the trail height, only where both stations see them above the lobe elevation (*choice*). 100 % is the most favourable radiant position for that path:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F is computed once per path on a grid of directions (azimuth every 5°, elevation every 2.5°) and interpolated.
 
 **4. Side and index.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 The letter in the table is the side with the larger fraction. *Choices of the program (manual eq. 32–33).*
@@ -87,8 +87,8 @@ The letter in the table is the side with the larger fraction. *Choices of the pr
 
 An independent check: the best-direction formula by **DH9GCD**, reported by **DF5HC** (DARC conference, January 2018), with El and Az the radiant elevation and azimuth seen from your station and P the azimuth of the DX station:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 It is maximum with the radiant at 45° and broadside to the path. DF5HC considers the radiant too low below 20° and **too high above 70°**: these hours get ↑ in the table and a warning on the [Sky dome](Sky-View#warnings). The formula ignores distance and heights, but it is a good reference.

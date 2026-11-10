@@ -38,9 +38,8 @@ De catalogus bevat de **kleine zwermen** uit de IMO-lijst – bijvoorbeeld de Ok
 
 ## Activiteitsprofiel en verschuiving van de radiant
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 en λ_max uit de IMO-kalender; de hellingen B (verschillend voor en na het maximum) en de dagelijkse verschuivingen dα/dλ, dδ/dλ zijn **werkwaarden** die in `data/sciami.csv` staan (de IMO-tabel met radiantverschuivingen is nog niet ingevoerd). *Vgl. 9 en 13 van de handleiding.* De positie van de Antihelion-bron wordt lineair geïnterpoleerd tussen de data van IMO-tabel 6 (`data/ant_radiante.csv`; actief van 10 december tot 20 september, ZHR ongeveer 4).

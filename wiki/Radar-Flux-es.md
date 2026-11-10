@@ -35,8 +35,8 @@ El gráfico de Collm (720 × 720 píxeles, colores puros) tiene los ejes en posi
 2. **lee las etiquetas** de la marca más alta y del cero comparando cada carácter con la fuente de matriz de puntos del gráfico;
 3. para cada hora i (0–47, ayer y hoy) toma la columna central y el primer píxel cian desde arriba, y:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top e y0 son las filas de la marca más alta y del cero, N_top el valor leído en la etiqueta más alta (×1000). Resolución: unos 7–8 meteoros/hora por píxel. *Decisión del programa (ec. 42 del manual).*
@@ -47,8 +47,8 @@ Si no se puede leer una etiqueta, el programa vuelve a la calibración del 5/11/
 
 A partir del histograma de alturas (n_k meteoros en el km k, altura media h_k):
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Ec. 43 del manual.* Con **del radar** marcado (fila 2 de los controles) la **moda** pasa a ser la altura de las estelas en todos los cálculos. Verificación: gráfico del 5/11/2026 – moda 89,5 km, media 88,6 km, desviación típica 6,8 km, lo que confirma los ~90 km del artículo Cerrotta–Sartori (media SKiYMET).
@@ -57,8 +57,8 @@ Si cambia la escala del gráfico de alturas, el programa avisa: *las estadístic
 
 ## Estimación en tu banda
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 Reglas experimentales de **SM6FHZ** (VUSHF 2025): el número y la intensidad de las reflexiones escalan con λ³, la duración con λ²; la dependencia de λ³ es la misma que en la ecuación subdensa de McKinley. También se muestra la duración máxima de los pings según la IARU Región 1 (1000 ms en 50 MHz, 500 ms en 70 MHz, 100 ms en 144 MHz, 13 ms en 432 MHz). Los valores son orientativos, a comparar con la experiencia en el aire. El factor de estación K y la comparación con RMOB están en [Previsiones experimentales](Experimental-Forecasts-es).

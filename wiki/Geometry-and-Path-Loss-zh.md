@@ -39,8 +39,8 @@
 
 **来源：** Cerrotta–Sartori 文章中的公式（图 7），其中 x = d/r，d 为到反射点的地面距离，H 为余迹高度，h 为电台高度 [17]：
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **验证：** 与精确球面几何的差异在 0.03° 以内。程序使用双参数反正切函数，在地平线以外给出负值，并避免了文章中提到的周期性问题。指向中点的仰角为负，意味着*路径超出单跳的几何范围*。
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 仰角为 e 的射线到达高度 H 时的地面距离（上式的几何反算）[18]：
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **验证：** H = 89.5 km、e = 0° → **1062 km**。在文章的示例（JN44BB–IO53RT）中，图上的地平线交点距电台约 870 km，相当于波瓣抬高约 2°（865 km）。
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **来源：** 文章给出了各台站地平线与 E 层相交曲线的交点：即以 A 和 B 为圆心、角半径为 ρ = d_H/r 的两个圆的交点 [19–20]：
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 若 1 − |p0|² < 0，则路径长于 2·d_H，两个电台**没有 E 层公共区域**。
@@ -74,8 +73,8 @@ p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
 
 **选择：** Hot A 和 Hot B 是距中点 M 为 s、垂直于路径的点（s = 150 km，可在 30–400 km 之间调整）；从本台望向 DX 时 A 在左、B 在右 [21]。从电台看的偏角约为 [22]：
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **验证：** JN70CN–IN78UO，D = 1710 km：s = 100 km 时为 6.7°，**s = 150 km 时为 10.0°**（与 MSHV 和 AMS/W8WN 相同），s = 200 km 时为 13.2°。
@@ -84,16 +83,16 @@ p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
 
 **来源：** McKinley 的欠密余迹方程（β = 0，sin α = 1），不含天线增益；q = 电子线密度，r_e = 经典电子半径 = 2.818·10⁻¹⁵ m，R1、R2 为到余迹的距离，φ 为散射角的一半 [36]：
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **验证：** 在 144 MHz、q = 10¹⁴ 电子/m 时：600 至 2200 km 之间为 **181–192 dB**，与文章中 144 MHz 的参考值一致：**最小 182 dB**（GM8JBJ，引自 Kaiser & Closs 1952）和**平均 200 dB**（OH5IY）。
 
 ## 链路预算
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]。增益以 dBi 输入，按 dBd（dBi − 2.15）使用。报告还给出采用 **OH5IY 平均路径损耗**（144 MHz 时 200 dB，按 λ³ 换算到所选频段）时的余量。文章参考值：约需 **70 dBm EIRP**（−130 dBm + 200 dB，例如约 400 W 馈入 14 dBi 天线）。
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **增益 – 来源：** Günter Hoch **DL6WU** 给出的长八木天线增益随横梁长度 L 变化的曲线，由 W8IO 转述（约 2 λ 以上有效）[39]：
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **与 L.B. Cebik W4RNL 在 432 MHz 上的 NEC 模型对比验证**（*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*；*70-CM Yagi Stacks Part 2*）：
@@ -117,16 +116,16 @@ G = 7.773 · log10(L/λ) + 11.43   dBi
 
 **波瓣 – 来源：** Kraus 规则，取圆形波瓣 θE = θH = θK [40]：
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **验证：** W4RNL 对 DL6WU 八木的 NEC 模型给出的**水平波瓣比 Kraus 窄 5–10 %**：12、19 和 26 单元分别为 33.8° / 26.4° / 22.6°，而 Kraus 为 37.3° / 28.0° / 23.9°。简单公式忽略了前向旁瓣（W4RNL，*Long-Boom Yagi Rules of Thumb*）。长横梁上垂直波瓣略宽于水平波瓣（14 λ：18.4° / 18.8°）。
 
 **选择** [41]：
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 示例：432 MHz 上 14 λ 的八木 → 20.3 dBi，水平波瓣 18.1°，垂直波瓣 19.5°；W4RNL 的模型给出 20.4 dBi 和 18.4° / 18.8°。这些是由少数几副 DL6WU 天线得出的近似规则。

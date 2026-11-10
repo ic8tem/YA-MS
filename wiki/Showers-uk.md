@@ -38,9 +38,8 @@
 
 ## Профіль активності та дрейф радіанта
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 і λ_max — з календаря IMO; нахили B (різні до і після максимуму) і добовий дрейф dα/dλ, dδ/dλ — **робочі значення**, записані в `data/sciami.csv` (таблицю дрейфу IMO ще не внесено). *Рівн. 9 і 13 посібника.* Положення Антигеліонного джерела лінійно інтерполюється між датами таблиці 6 IMO (`data/ant_radiante.csv`; активне з 10 грудня до 20 вересня, ZHR близько 4).

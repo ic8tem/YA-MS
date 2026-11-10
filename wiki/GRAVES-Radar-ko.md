@@ -56,18 +56,16 @@ PE1ITR와 Bolidozor wiki에 따르면 **네 개의 위상 배열 안테나**가 
 
 흔적은 지속되는 동안 빔이 비출 때만 들립니다:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0.3 s는 143 MHz에서 전형적인 저밀도 흔적의 지속 시간으로, *프로그램의 선택*인 고정값입니다(SM6FHZ의 λ² 규칙은 밴드 사이의 지속 시간을 환산하지만 출발값은 주지 않습니다).
 
 ### 예상 에코 (실험적)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 [예보 실험 적용](Experimental-Forecasts-ko)의 예보(국 계수 K가 이미 포함됨)를 그 주파수 f_fc에서 143.050 MHz로 SM6FHZ 규칙(같은 지수 k)으로 환산하고, 두 경로의 유성우 지수 비로 보정한 뒤(상수 10은 예보에서와 마찬가지로 산발 배경을 나타냄) 검출 계수를 곱합니다. 참고용일 뿐이므로 RMOB 관측자와 비교하세요.

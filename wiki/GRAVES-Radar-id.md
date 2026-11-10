@@ -56,18 +56,16 @@ Urutannya terikat pada **UTC** (PE1ITR): langkah yang sedang diterangi dihitung 
 
 Sebuah jejak hanya terdengar jika berkas meneranginya selama jejak itu ada:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0,3 s adalah durasi khas jejak underdense pada 143 MHz – nilai tetap, *pilihan program* (aturan λ² SM6FHZ menskalakan durasi antarband tetapi tidak memberikan nilai awal).
 
 ### Gema yang diharapkan (eksperimental)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 Prakiraan dari [Prakiraan eksperimental](Experimental-Forecasts-id) (yang sudah memuat faktor stasiun K) diskalakan dari frekuensinya f_fc ke 143,050 MHz dengan aturan SM6FHZ (eksponen k yang sama), dikoreksi dengan rasio indeks hujan meteor kedua lintasan (konstanta 10 mewakili latar sporadis, seperti pada prakiraan) dan dikalikan dengan faktor deteksi. Hanya indikatif: bandingkan dengan pengamat RMOB.

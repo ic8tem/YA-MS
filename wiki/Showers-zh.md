@@ -38,9 +38,8 @@
 
 ## 活动曲线与辐射点漂移
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max、α0、δ0 和 λ_max 取自 IMO 日历；斜率 B（峰值前后不同）以及每日漂移 dα/dλ、dδ/dλ 是写在 `data/sciami.csv` 中的**工作值**（IMO 的漂移表尚未录入）。*手册公式 9 和 13。* 反日点源的位置在 IMO 表 6 的各日期之间线性插值（`data/ant_radiante.csv`；12 月 10 日至 9 月 20 日活跃，ZHR 约 4）。

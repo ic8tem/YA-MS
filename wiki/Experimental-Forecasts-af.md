@@ -27,17 +27,16 @@ Die oranje reël onder die kontroles wys die reël met die huidige getalle, bv. 
 
 ## Van die radar na die amateurband
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Bron:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45ste Nordic VUSHF, Mei 2025 – aantal en intensiteit van refleksies skaal met **λ³**, duur met **λ²** (432 MHz is 14–15 dB onder 144 MHz en duur 1/9). **Kontrole:** die λ³-afhanklikheid is dieselfde as in McKinley se onderdigte vergelyking. Met k = 3 word 1000 meteore/uur by Collm ongeveer **16 refleksies/uur op 144 MHz**; RMOB-waarnemers van GRAVES op 143,050 MHz tel gewoonlik **20 tot 140 eggo's/uur** (RMOB-bulletin, Junie 2018): die grootte-orde is versoenbaar, en die verskil is die stasiefaktor K. (Handleiding vgl. 44–45.)
 
 ## Volgende 24 uur
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Persistensie:** die geskaalde waarde van dieselfde uur van die vorige dag (of twee dae vroeër as dit ontbreek), gekorrigeer deur die verandering van die **padswermindeks** I (Σ ZHR × doeltreffendheid, sien [Berekening van doeltreffendheid](Efficiency-Calculation-af#die-model)). Die konstante 10 stel die sporadiese agtergrond voor en beperk die korreksie wanneer die indeks klein is. *Keuse van die program (handleiding vgl. 47).*
@@ -65,8 +64,8 @@ Maand en jaar kom uit die lêernaam (`…_MMYYYYrmob…`) of uit die kopreël; a
 
 **Die eksponent aanpas.** Met K = 1, uit die mediaan van die RMOB/Collm-verhoudings oor die gemeenskaplike ure (minstens 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Keuse van die program (handleiding vgl. 46).* Die dialoog wys die gemeenskaplike ure, die mediaanverhouding en k; **Ja** pas k toe (en stel K = 1), **Nee** behou k = 3 – stel dan K met die hand op die waarde wat in dieselfde dialoog voorgestel word.

@@ -27,17 +27,16 @@ La línea naranja bajo los controles muestra la regla con los números actuales,
 
 ## Del radar a la banda de radioaficionado
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Fuente:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, mayo de 2025: el número y la intensidad de las reflexiones escalan con **λ³**, la duración con **λ²** (432 MHz está 14–15 dB por debajo de 144 MHz y dura 1/9). **Verificación:** la dependencia de λ³ es la misma que en la ecuación subdensa de McKinley. Con k = 3, 1000 meteoros/hora en Collm se convierten en unas **16 reflexiones/hora en 144 MHz**; los observadores RMOB de GRAVES en 143,050 MHz suelen contar **de 20 a 140 ecos/hora** (boletín RMOB, junio de 2018): el orden de magnitud es compatible, y la diferencia es el factor de estación K. (Ec. 44–45 del manual.)
 
 ## Próximas 24 horas
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Persistencia:** el valor escalado de la misma hora del día anterior (o de dos días antes si falta), corregido por la variación del **índice de lluvias del trayecto** I (Σ ZHR × eficiencia, ver [Cálculo de la eficiencia](Efficiency-Calculation-es#el-modelo)). La constante 10 representa el fondo esporádico y limita la corrección cuando el índice es pequeño. *Decisión del programa (ec. 47 del manual).*
@@ -65,8 +64,8 @@ Mes y año se toman del nombre del archivo (`…_MMYYYYrmob…`) o de la cabecer
 
 **Ajuste del exponente.** Con K = 1, a partir de la mediana de las razones RMOB/Collm en las horas comunes (al menos 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Decisión del programa (ec. 46 del manual).* El cuadro de diálogo muestra las horas comunes, la razón mediana y k; **Sí** aplica k (y pone K = 1), **No** mantiene k = 3; en ese caso ajusta K a mano al valor sugerido en el mismo cuadro de diálogo.

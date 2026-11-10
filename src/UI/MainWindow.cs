@@ -482,7 +482,7 @@ namespace YAMS
                 if (v == lastTrackValue) return;
                 lastTrackValue = v; UpdateSky();
             });
-            lblSkyTime = L(Lang.T("Volta celeste: tempo reale")); lblSkyTime.Foreground = Pal.B(Pal.Azure);
+            lblSkyTime = L(Lang.T("Calcolo per: adesso")); lblSkyTime.Foreground = Pal.B(Pal.Azure);
             btnReal = B(Lang.T("Tempo reale"));
             btnReal.Background = Brushes.Transparent; btnReal.BorderBrush = Pal.B(Pal.Violet); btnReal.Foreground = Pal.B(Pal.Violet);
             btnReal.Click += (s, e) => { trackTime.Value = 0; UpdateSky(); };
@@ -495,7 +495,7 @@ namespace YAMS
                                    IsSnapToTickEnabled = true, Width = 160, Margin = new Thickness(4, 0) };
             UiScale.Set(pct0 / 100.0);
             WhenChanged(sldFont, RangeBase.ValueProperty, () => SetFontPercent(sldFont.Value));
-            Border row3 = Row(L(Lang.T("Ora")), lblClock, L(Lang.T("Ora della volta celeste (±36 h)")), trackTime,
+            Border row3 = Row(L(Lang.T("Ora")), lblClock, L(Lang.T("Momento del calcolo (±36 h)")), trackTime,
                               btnReal, lblSkyTime, L(Lang.T("Giorno per la tabella 24 h (UTC)")), dtDay);
             // riga 1: stazioni e banda, azimut d'antenna e cursore del carattere (la prima riga ha spazio)
             Border row1 = Row(L(Lang.T("Il mio locator")), txtHome, L(Lang.T("quota m")), numHomeAlt,
@@ -616,6 +616,15 @@ namespace YAMS
             lblMapCaption = new TextBlock { Foreground = Pal.B(Pal.Muted), FontSize = 11.3, TextWrapping = TextWrapping.Wrap };
             Border capBox = new Border { Background = Pal.B(Pal.Panel), Padding = new Thickness(8, 5), Child = lblMapCaption };
             DockPanel skyCol = new DockPanel();
+            // fascia sopra la pianta: i dati di efficienza del momento di calcolo scelto con il cursore
+            lblEffStrip = new TextBlock { Foreground = Pal.B(Pal.Fore), FontSize = 13, FontWeight = FontWeight.SemiBold, TextWrapping = TextWrapping.Wrap };
+            Border effStrip = new Border
+            {
+                Background = Pal.B(Pal.Panel3), BorderBrush = Pal.B(Pal.Azure), BorderThickness = new Thickness(0, 0, 0, 2),
+                Padding = new Thickness(10, 6), Child = lblEffStrip
+            };
+            DockPanel.SetDock(effStrip, Dock.Top);
+            skyCol.Children.Add(effStrip);
             DockPanel.SetDock(capBox, Dock.Bottom);
             skyCol.Children.Add(capBox);
             skyCol.Children.Add(sky);   // riempie lo spazio restante
@@ -774,9 +783,14 @@ namespace YAMS
 
             // --- Sciami
             DockPanel p5 = Page(Lang.T("Sciami"));
+            DockTop(p5, new Border
+            {
+                Background = Pal.B(Pal.A(70, Pal.Yellow)), Padding = new Thickness(10, 4), Margin = new Thickness(4, 4, 4, 2), CornerRadius = new CornerRadius(4),
+                Child = new TextBlock { Text = Lang.T("Le righe evidenziate sono gli sciami attivi oggi (UTC)"), Foreground = Pal.B(Pal.Fore), FontWeight = FontWeight.SemiBold }
+            });
             // giustificata sulla larghezza: larghezze di base compatte, caratteri e righe crescono con la finestra
-            gridShowers = MakeTable(new[] { Lang.T("Sigla"), Lang.T("Sciame"), Lang.T("Attività"), "λ max", Lang.T("Prossimo massimo (UTC)"), Lang.T("Fonte del massimo"), Lang.T("A.R."), Lang.T("Decl."), "v km/s", "r", "ZHR", Lang.T("Tipo"), Lang.T("Attivo oggi") },
-                                    new double[] { 44, 170, 96, 56, 170, 130, 50, 50, 44, 36, 40, 90, 70 });
+            gridShowers = MakeTable(new[] { Lang.T("Sigla"), Lang.T("Sciame"), Lang.T("Attività"), "λ max", Lang.T("Prossimo massimo (UTC)"), Lang.T("Fonte del massimo"), Lang.T("A.R."), Lang.T("Decl."), "v km/s", "r", "ZHR", Lang.T("Tipo") },
+                                    new double[] { 44, 170, 96, 56, 170, 130, 50, 50, 44, 36, 40, 90 });
             gridShowers.Selectable = false;
             gridShowers.FitWidth = true;
             p5.Children.Add(gridShowers);
@@ -946,8 +960,8 @@ namespace YAMS
         {
             if (sky == null) return;
             DateTime t = SkyTimeUtc;
-            lblSkyTime.Text = TrackValue == 0 ? Lang.T("Volta celeste: tempo reale")
-                : Lang.F("Volta celeste: {0} UTC", t.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture));
+            lblSkyTime.Text = TrackValue == 0 ? Lang.T("Calcolo per: adesso")
+                : Lang.F("Calcolo per: {0} UTC", t.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture));
             LatLon home; if (!Astro.TryLocator(Up(txtHome), out home)) return;
             sky.Station = home;
             sky.Marks.Clear();
@@ -1050,6 +1064,7 @@ namespace YAMS
                 }
                 else recommendShort = recommendText = Lang.T("Nessun Hot consigliato: sciami attivi quasi assenti in questo momento");
             }
+            UpdateEffStrip(t, mv);
             sky.Caption = Lang.F("Pianta: linea gialla = scorrimento dello sciame selezionato (o del più favorevole), ellissi PREV = dove cadono ora le scie più probabili. " +
                 "Volta celeste a destra (Sorge/Tramonta in UTC del {0}): giallo = efficienza >= 50 % e ZHR >= 2, arancio >= 20 %, grigio = quasi inattivo.",
                 day0.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
@@ -1081,6 +1096,37 @@ namespace YAMS
             }
             if (sky.Selected != null) SelectInList(sky.Selected);
             UpdateGravesSky();
+        }
+
+        TextBlock lblEffStrip;
+
+        // Fascia sopra la pianta: momento del calcolo, indice della tratta, sciame piu' utile, Hot consigliato
+        void UpdateEffStrip(DateTime t, bool mv)
+        {
+            if (lblEffStrip == null) return;
+            int v = TrackValue;
+            string when = Lang.F("Calcolo per {0} UTC", t.ToString("dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture)) + " · " +
+                          (v == 0 ? Lang.T("adesso") : Lang.F("{0} h rispetto ad adesso", (v * 0.25).ToString("+0.##;-0.##", CultureInfo.CurrentCulture)));
+            if (!mv) { lblEffStrip.Text = when; return; }
+            double idx = 0, best = 0; RadiantMark bm = null; int up = 0;
+            foreach (RadiantMark rm in sky.Marks)
+            {
+                if (rm.El <= 0) continue;
+                up++;
+                double w = rm.Zhr * rm.Eff / 100.0;
+                idx += w;
+                if (w > best) { best = w; bm = rm; }
+            }
+            StringBuilder sb = new StringBuilder(when);
+            sb.Append("   |   ").Append(Lang.F("Indice della tratta Σ ZHR×η: {0}", idx.ToString("F1", CultureInfo.CurrentCulture)));
+            sb.Append("   |   ");
+            if (bm != null && best >= 0.05)
+                sb.Append(Lang.F("Sciame più utile: {0} (ZHR {1}, efficienza {2} %)", bm.Code,
+                    bm.Zhr.ToString(bm.Zhr >= 10 ? "F0" : "F1", CultureInfo.CurrentCulture), bm.Eff.ToString("F0", CultureInfo.CurrentCulture)));
+            else sb.Append(Lang.T("Nessuno sciame utile in questo momento"));
+            sb.Append("   |   ").Append(Lang.F("Sciami sopra l'orizzonte: {0}", up));
+            if (!string.IsNullOrEmpty(recommendShort)) sb.Append("   |   ").Append(recommendShort);
+            lblEffStrip.Text = sb.ToString();
         }
 
         // Contributo di uno sciame alle zone PREV (pianta) e alle scie della sezione:
@@ -1385,8 +1431,11 @@ namespace YAMS
                     s.IsAntihelion ? "-" : s.LambdaMax.ToString("F2"), peak ?? "", src ?? "",
                     s.IsAntihelion ? Lang.T("mobile") : s.Ra.ToString("F0") + "°", s.IsAntihelion ? Lang.T("mobile") : s.Dec.ToString("+0;-0") + "°",
                     s.V.ToString("F0"), s.PopIndex.ToString("F1"), s.Zhr > 0 ? s.Zhr.ToString("F0") : Lang.T("var."),
-                    s.Type == "R" ? Lang.T("radio, diurno") : Lang.T("visuale"), s.IsActive(now) ? Lang.T("sì") : "" };
-                rows.Add(new TableRow { Cells = cells, Tag = s.Code });
+                    s.Type == "R" ? Lang.T("radio, diurno") : Lang.T("visuale") };
+                TableRow tr = new TableRow { Cells = cells, Tag = s.Code };
+                // velatura sugli sciami attivi oggi (al posto della vecchia colonna "Attivo oggi")
+                if (s.IsActive(now)) { tr.Back = Pal.A(70, Pal.Yellow); tr.Bold = true; }
+                rows.Add(tr);
             }
             gridShowers.Rows = rows;
             gridShowers.Refresh();

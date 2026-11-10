@@ -49,36 +49,36 @@ Alla steg finns i [beräkningshandboken](Efficiency-Explanation-sv) (`doc/YA-MS_
 
 **1. Spegelreflexion.** Ett spår skickar signalen från A till B endast om det tangerar en ellipsoid med A och B i brännpunkterna (McKinley 1961). En svärms spår är parallella med radiantens riktning ŝ (artikeln; McKinley). För varje punkt P i E-skiktet, med enhetsvektorer mot stationerna:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     spegelvillkor: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 Samma lag ligger till grund för QTFGUI av DJ5HG (cone scattering). Villkoret godtas med en gaussisk tolerans σ = 0,05 rad (omkring 3°) – *programmets val*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Varje punkts vikt.** Effekten från ett underdenst spår (McKinley), φ = halva spridningsvinkeln (begränsad till 85°, *val*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 Antalet meteorer som når en punkt är proportionellt mot sinus för radiantens elevation där (ŝ·û_P), samma korrektion som IMO använder för ZHR.
 
 **3. Summa och procent.** Punkter var 15:e km på spårhöjden, endast där båda stationerna ser dem ovanför lobelevationen (*val*). 100 % är det för sträckan mest gynnsamma radiantläget:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F beräknas en gång per sträcka på ett rutnät av riktningar (azimut var 5:e grad, elevation var 2,5:e grad) och interpoleras.
 
 **4. Sida och index.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 Bokstaven i tabellen är den sida som har störst andel. *Programmets val (handboken ekv. 32–33).*
@@ -87,8 +87,8 @@ Bokstaven i tabellen är den sida som har störst andel. *Programmets val (handb
 
 En oberoende kontroll: formeln för bästa riktning av **DH9GCD**, återgiven av **DF5HC** (DARC-konferensen, januari 2018), där El och Az är radiantens elevation och azimut sett från din station och P motstationens azimut:
 
-```
-E = sin El · cos El · sin(P − Az)          visas som  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 Den är störst när radianten står på 45° och tvärs mot sträckan. DF5HC anser att radianten står för lågt under 20° och **för högt över 70°**: dessa timmar får ↑ i tabellen och en varning i [Himlavalvet](Sky-View-sv#varningar). Formeln bortser från avstånd och höjder, men är en bra referens.

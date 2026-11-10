@@ -49,36 +49,36 @@
 
 **1. 鏡面反射。** 流星痕が信号を A から B へ送るのは、A と B を焦点とする回転楕円体に流星痕が接するときだけです (McKinley 1961)。流星群の流星痕は放射点の方向 ŝ に平行です (記事; McKinley)。E 層の各点 P について、両局への単位ベクトルを用いて:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 同じ法則が DJ5HG の QTFGUI (円錐散乱) の基礎にもなっています。条件はガウス型の許容幅 σ = 0.05 rad (約 3°) で受け入れます – *プログラム独自の選択*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. 各点の重み。** アンダーデンス流星痕の電力 (McKinley)。φ = 散乱角の半分 (85° で制限、*選択*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 ある点に到達する流星の数は、その点での放射点高度の正弦 (ŝ·û_P) に比例します。IMO が ZHR に用いるのと同じ補正です。
 
 **3. 合計とパーセント。** 流星痕高度で 15 km ごとの点を、両局からビーム仰角より上に見える場所だけ使います (*選択*)。100 % はそのパスにとって最も有利な放射点の位置です:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F はパスごとに 1 度、方向のグリッド (方位 5° ごと、仰角 2.5° ごと) 上で計算し、補間します。
 
 **4. 側と指数。**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 表の文字は割合の大きい側です。*プログラム独自の選択 (マニュアル式 32–33)。*
@@ -87,8 +87,8 @@ f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) 
 
 独立した検証: **DH9GCD** による最良方向の式。**DF5HC** による紹介 (DARC 講演、2018 年 1 月)。El と Az は自局から見た放射点の仰角と方位、P は相手局の方位です:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 放射点が 45° でパスに対して真横のとき最大になります。DF5HC は放射点が 20° 未満では低すぎ、**70° 超では高すぎ**とみなします: それらの時間は表で ↑ が付き、[天球図](Sky-View-ja#警告) に警告が出ます。この式は距離と高度を考慮しませんが、良い参考になります。

@@ -49,36 +49,36 @@ Nasa [manwal ng kalkulasyon](Efficiency-Explanation-tl) ang lahat ng hakbang (`d
 
 **1. Specular na repleksiyon.** Ipinapadala ng isang bakas ang signal mula A patungong B kung tangent lamang ito sa isang ellipsoid na nasa foci ang A at B (McKinley 1961). Parallel sa direksiyon ng radiant ŝ ang mga bakas ng isang shower (artikulo; McKinley). Para sa bawat punto P ng E layer, gamit ang mga unit vector patungo sa mga istasyon:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 Ang parehong batas ang pinagbabatayan ng QTFGUI ni DJ5HG (cone scattering). Tinatanggap ang kondisyon nang may Gaussian na tolerance na σ = 0.05 rad (mga 3°) – *pagpili ng programa*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Timbang ng bawat punto.** Lakas ng isang underdense na bakas (McKinley), φ = kalahati ng scattering angle (limitado sa 85°, *pagpili*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 Proporsiyonal ang bilang ng meteor na umaabot sa isang punto sa sine ng elebasyon ng radiant doon (ŝ·û_P), ang parehong koreksiyon na ginagamit ng IMO para sa ZHR.
 
 **3. Kabuuan at porsiyento.** Mga punto bawat 15 km sa taas ng bakas, kung saan lamang nakikita ito ng dalawang istasyon sa itaas ng elebasyon ng lobe (*pagpili*). Ang 100 % ay ang pinakapaborableng posisyon ng radiant para sa landas na iyon:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 Kinakalkula ang F nang isang beses bawat landas sa isang grid ng mga direksiyon (azimuth bawat 5°, elebasyon bawat 2.5°) at ini-interpolate.
 
 **4. Panig at indeks.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 Ang titik sa talahanayan ay ang panig na may mas malaking bahagi. *Mga pagpili ng programa (manwal eq. 32–33).*
@@ -87,8 +87,8 @@ Ang titik sa talahanayan ay ang panig na may mas malaking bahagi. *Mga pagpili n
 
 Isang malayang pagsusuri: ang pormula ng pinakamahusay na direksiyon ni **DH9GCD**, ayon sa ulat ni **DF5HC** (kumperensiya ng DARC, Enero 2018), kung saan ang El at Az ay ang elebasyon at azimuth ng radiant mula sa iyong istasyon at ang P ay ang azimuth ng DX station:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 Pinakamataas ito kapag ang radiant ay nasa 45° at nakapahalang sa landas. Itinuturing ni DF5HC na masyadong mababa ang radiant sa ilalim ng 20° at **masyadong mataas sa itaas ng 70°**: nakakakuha ng ↑ ang mga oras na ito sa talahanayan at isang babala sa [Kalangitan](Sky-View-tl#mga-babala). Hindi isinasaalang-alang ng pormula ang distansiya at mga taas, pero mahusay itong sanggunian.

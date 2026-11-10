@@ -27,17 +27,16 @@
 
 ## 레이더에서 아마추어 밴드로
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **출처:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, 2025년 5월 – 반사의 수와 세기는 **λ³**, 지속 시간은 **λ²**에 비례합니다(432 MHz는 144 MHz보다 14–15 dB 낮고 지속 시간은 1/9). **검증:** λ³ 의존성은 McKinley의 저밀도 흔적 식과 같습니다. k = 3이면 Collm의 1000 유성/시간은 **144 MHz에서 약 16 반사/시간**이 됩니다. 143.050 MHz로 GRAVES를 듣는 RMOB 관측자는 보통 **시간당 20–140 에코**를 셉니다(RMOB 회보, 2018년 6월): 자릿수는 맞으며, 그 차이가 국 계수 K입니다. (매뉴얼 식 44–45.)
 
 ## 향후 24시간
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **지속성(persistence):** 전날(없으면 이틀 전) 같은 시각의 환산값을 **경로 유성우 지수** I(Σ ZHR × 효율, [효율 계산](Efficiency-Calculation-ko#모델) 참조)의 변화로 보정합니다. 상수 10은 산발 배경을 나타내며 지수가 작을 때 보정을 제한합니다. *프로그램의 선택 (매뉴얼 식 47).*
@@ -65,8 +64,8 @@ N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
 
 **지수 맞추기.** K = 1로 두고, 공통 시간(최소 3시간)에 대한 RMOB/Collm 비의 중앙값으로부터:
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *프로그램의 선택 (매뉴얼 식 46).* 대화 상자에 공통 시간, 비의 중앙값, k가 표시됩니다. **예**를 누르면 k를 적용(하고 K = 1로 설정)하고, **아니오**를 누르면 k = 3을 유지합니다. 이 경우 같은 대화 상자에 제시된 값으로 K를 직접 조정하세요.

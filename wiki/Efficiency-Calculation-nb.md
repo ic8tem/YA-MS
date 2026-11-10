@@ -49,36 +49,36 @@ Alle trinnene står i [beregningshåndboken](Efficiency-Explanation-nb) (`doc/YA
 
 **1. Speilrefleksjon.** Et spor sender signalet fra A til B bare hvis det tangerer en ellipsoide med A og B i brennpunktene (McKinley 1961). Sporene fra en sverm er parallelle med radiantretningen ŝ (artikkelen; McKinley). For hvert punkt P i E-laget, med enhetsvektorer mot stasjonene:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 Samme lov ligger til grunn for QTFGUI av DJ5HG (kjegleformet spredning). Betingelsen godtas med en gaussisk toleranse σ = 0,05 rad (ca. 3°) – *programmets valg*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Vekten til hvert punkt.** Effekten fra et underdenst spor (McKinley), φ = halve spredningsvinkelen (begrenset til 85°, *valg*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 Antallet meteorer som når et punkt, er proporsjonalt med sinus til radiantens elevasjon der (ŝ·û_P), den samme korreksjonen som IMO bruker for ZHR.
 
 **3. Sum og prosent.** Punkter for hver 15 km i sporhøyden, bare der begge stasjonene ser dem over lobeelevasjonen (*valg*). 100 % er den gunstigste radiantposisjonen for den strekningen:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F beregnes én gang per strekning på et rutenett av retninger (asimut for hver 5°, elevasjon for hver 2,5°) og interpoleres.
 
 **4. Side og indeks.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 Bokstaven i tabellen er siden med størst andel. *Programmets valg (håndbokens likn. 32–33).*
@@ -87,8 +87,8 @@ Bokstaven i tabellen er siden med størst andel. *Programmets valg (håndbokens 
 
 En uavhengig kontroll: formelen for beste retning av **DH9GCD**, gjengitt av **DF5HC** (DARC-konferansen, januar 2018), der El og Az er radiantens elevasjon og asimut sett fra stasjonen din og P er motstasjonens asimut:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 Den er størst med radianten på 45° og på tvers av strekningen. DF5HC regner radianten som for lav under 20° og **for høy over 70°**: disse timene får ↑ i tabellen og en advarsel i [himmelhvelvingen](Sky-View-nb#advarsler). Formelen ser bort fra avstand og høyder, men er en god referanse.

@@ -4,7 +4,7 @@
 
 *eftir Costantino Cerrotta IC8TEM*
 
-**YA-MS** er ókeypis forrit fyrir radíóamatöra sem stunda **meteor scatter (MS) á 50, 70, 144, 222 og 432 MHz**. Fyrir raunverulegu leiðina milli þíns locators og locators mótstöðvarinnar reiknar það klukkustund fyrir klukkustund hve mikið hver virk loftsteinadrífa hjálpar leiðinni (**nýtni** hennar), frá hvorri hlið leiðarinnar endurvörpin koma (**Hot A / Hot B**), hvert beina skal loftnetinu, og tilraunaspá um fjölda endurvarpa á klukkustund, leidda af **loftsteinaratsjá í beinni** (Collm, Þýskalandi). Það keyrir á **Windows, Linux og macOS** (.NET 8 + Avalonia), á 6 viðmótstungumálum.
+**YA-MS** er ókeypis forrit fyrir radíóamatöra sem stunda **meteor scatter (MS) á 50, 70, 144, 222 og 432 MHz**. Fyrir raunverulegu leiðina milli þíns locators og locators mótstöðvarinnar reiknar það klukkustund fyrir klukkustund hve mikið hver virk loftsteinadrífa hjálpar leiðinni (**nýtni** hennar), frá hvorri hlið leiðarinnar endurvörpin koma (**Hot A / Hot B**), hvert beina skal loftnetinu, og tilraunaspá um fjölda endurvarpa á klukkustund, leidda af **loftsteinaratsjá í beinni** (Collm, Þýskalandi). Það keyrir á **Windows, Linux, Raspberry Pi og macOS** (.NET 8 + Avalonia), á 6 viðmótstungumálum.
 
 Aðalheimildin er grein **C. Cerrotta IC8TEM og G. Sartori IV3GTH**, *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (útgáfa 7). Hver formúla og hvert gagnaatriði í forritinu vísar til heimildar sinnar; sjá [Heimildir](Sources-is).
 

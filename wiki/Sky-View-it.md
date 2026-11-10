@@ -34,8 +34,8 @@ Opzioni sopra l'elenco degli sciami: **Direzioni Hot A / Hot B**, **Mappa d'Euro
 
 Per l'ora mostrata il programma somma, su tutti gli sciami sopra l'orizzonte, il peso ZHR × efficienza, diviso tra il lato A (frazione f_A) e il lato B. Il lato con il peso maggiore dà l'Hot consigliato, disegnato in rosso:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Scelta del programma (eq. 23 del manuale).* Origine dell'idea: DJ5HG, riportato da DF5HC (convegno DARC 2018) – a seconda della posizione del radiante uno dei due punti, HOT-A o HOT-B, è più favorevole. Il girare di 10–30° verso quel lato (side-scatter) viene dall'articolo Cerrotta–Sartori.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 Per ogni punto P dello strato E si sommano i contributi di tutti gli sciami attivi all'efficienza (stessa condizione speculare dell'[efficienza](Efficiency-Calculation-it#il-modello)), pesati con lo ZHR. I punti con almeno il 3 % del massimo formano le zone PREV; ognuna è disegnata come un'ellisse con centro = media pesata dei punti e assi = il doppio della loro dispersione.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Scelta del programma (eq. 34 del manuale).* È la regola pratica: se lo sciame scorre da nord a sud, le scie utili cadono a est e a ovest.
@@ -81,8 +81,8 @@ Accanto, il testo del calcolo: lunghezza e azimut della tratta, punto medio e su
 
 *SEZIONE – le scie più probabili viste dall'antenna verso il corrispondente.* In orizzontale l'**azimut rispetto al corrispondente** (← A sinistra, B → destra), in verticale l'**elevazione**. Per ogni sciame si prendono i 14 punti di riflessione più forti; ogni scia è un segmento orientato verso il radiante, da 10 km sopra a 10 km sotto la quota delle scie (al massimo 60 km per parte), più spesso quanto più è probabile. Sono disegnati anche il lobo dell'antenna (cerchio a −3 dB attorno all'elevazione del lobo), il corrispondente e Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Scelta del programma (eq. 35 del manuale).*

@@ -35,8 +35,8 @@ May nakapirming posisyon ng mga axis ang graph ng Collm (720 × 720 pixel, puro 
 2. **binabasa ang mga label** ng pinakamataas na tick at ng zero sa pamamagitan ng paghahambing ng bawat character sa dot-matrix na font ng graph;
 3. para sa bawat oras i (0–47, kahapon at ngayon), kinukuha ang gitnang column at ang unang cyan na pixel mula sa itaas, y:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 Ang y_top at y0 ay ang mga hanay ng pinakamataas na tick at ng zero, ang N_top ay ang halagang nabasa sa pinakamataas na label (×1000). Resolusyon: mga 7–8 meteor/oras bawat pixel. *Pagpili ng programa (manwal eq. 42).*
@@ -47,8 +47,8 @@ Kung hindi mabasa ang isang label, bumabalik ang programa sa kalibrasyon ng 5/11
 
 Mula sa histogram ng taas (n_k na meteor sa km k, mean na taas h_k):
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Manwal eq. 43.* Kapag may tsek ang **mula sa radar** (hanay 2 ng mga kontrol), ang **moda** ang nagiging taas ng bakas sa lahat ng kalkulasyon. Pagsusuri: graph ng 5/11/2026 – moda 89.5 km, mean 88.6 km, standard deviation 6.8 km, na kumukumpirma sa ~90 km ng artikulong Cerrotta–Sartori (mean ng SKiYMET).
@@ -57,8 +57,8 @@ Kung magbago ang iskala ng graph ng taas, nagbababala ang programa: *balido pa r
 
 ## Tantiya para sa iyong banda
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 Mga eksperimental na tuntunin ni **SM6FHZ** (VUSHF 2025): ang bilang at lakas ng mga repleksiyon ay sumusunod sa λ³, ang tagal ay sa λ²; ang pagdepende sa λ³ ay kapareho ng nasa underdense na ekwasyon ni McKinley. Ipinapakita rin ang pinakamahabang tagal ng ping ayon sa IARU Region 1 (1000 ms sa 50 MHz, 500 ms sa 70 MHz, 100 ms sa 144 MHz, 13 ms sa 432 MHz). Pahiwatig lamang ang mga halaga, na dapat ihambing sa karanasan sa ere. Nasa [Eksperimental na pagtataya](Experimental-Forecasts-tl) ang station factor K at ang paghahambing sa RMOB.

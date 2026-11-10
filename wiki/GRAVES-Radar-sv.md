@@ -56,18 +56,16 @@ Sekvensen är knuten till **UTC** (PE1ITR): steget som belyses nu beräknas frå
 
 Ett spår hörs bara om loben belyser det medan det varar:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0,3 s är en typisk varaktighet för ett underdenst spår på 143 MHz – ett fast värde, *programmets val* (SM6FHZ:s λ²-regel skalar varaktigheter mellan banden men ger inget startvärde).
 
 ### Förväntade ekon (experimentellt)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 Prognosen från [Experimentella prognoser](Experimental-Forecasts-sv) (som redan innehåller stationsfaktorn K) räknas om från sin frekvens f_fc till 143,050 MHz med SM6FHZ:s regel (samma exponent k), korrigeras med kvoten mellan de två sträckornas svärmindex (konstanten 10 representerar den sporadiska bakgrunden, som i prognosen) och multipliceras med detektionsfaktorn. Endast vägledande: jämför med RMOB-observatörerna.

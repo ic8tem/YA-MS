@@ -49,36 +49,36 @@ Visi soļi ir [aprēķinu rokasgrāmatā](Efficiency-Explanation-lv) (`doc/YA-MS
 
 **1. Spoguļatstarošana.** Sliede pārraida signālu no A uz B tikai tad, ja tā pieskaras elipsoīdam ar A un B fokusos (McKinley 1961). Plūsmas sliedes ir paralēlas radianta virzienam ŝ (raksts; McKinley). Katram E slāņa punktam P ar vienības vektoriem uz stacijām:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 Tas pats likums ir DJ5HG QTFGUI pamatā (konusa izkliede). Nosacījums tiek pieņemts ar Gausa pielaidi σ = 0,05 rad (ap 3°) – *programmas izvēle*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Katra punkta svars.** Zema blīvuma sliedes jauda (McKinley), φ = puse no izkliedes leņķa (ierobežota līdz 85°, *izvēle*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 Meteoru skaits, kas sasniedz punktu, ir proporcionāls radianta elevācijas sinusam tajā (ŝ·û_P) – tā pati korekcija, ko IMO izmanto ZHR.
 
 **3. Summa un procenti.** Punkti ik pēc 15 km sliežu augstumā, tikai tur, kur abas stacijas tos redz virs ziedlapiņas elevācijas (*izvēle*). 100 % ir šai trasei izdevīgākais radianta stāvoklis:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F katrai trasei tiek aprēķināts vienreiz virzienu režģī (azimuts ik pēc 5°, elevācija ik pēc 2,5°) un interpolēts.
 
 **4. Puse un indekss.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 Burts tabulā ir puse ar lielāko daļu. *Programmas izvēles (rokasgrāmatas 32.–33. vien.).*
@@ -87,8 +87,8 @@ Burts tabulā ir puse ar lielāko daļu. *Programmas izvēles (rokasgrāmatas 32
 
 Neatkarīga pārbaude: **DH9GCD** labākā virziena formula, ko citē **DF5HC** (DARC konference, 2018. gada janvāris), kur El un Az ir radianta elevācija un azimuts, skatoties no tavas stacijas, un P – korespondenta azimuts:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 Tā ir maksimāla, ja radiants ir 45° augstumā un šķērsām trasei. DF5HC uzskata radiantu par pārāk zemu zem 20° un **pārāk augstu virs 70°**: šīs stundas tabulā saņem ↑ un [debess velvē](Sky-View-lv#brīdinājumi) brīdinājumu. Formula neņem vērā attālumu un augstumus, taču ir laba atsauce.

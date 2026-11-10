@@ -38,9 +38,8 @@ Kataloog sisaldab IMO loetelu **väikeseid meteoorivoole** – näiteks Oktoobri
 
 ## Aktiivsusprofiil ja radiandi nihkumine
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 ja λ_max IMO kalendrist; tõusud B (erinevad enne ja pärast maksimumi) ning päevased nihked dα/dλ, dδ/dλ on **tööväärtused**, mis on kirjas failis `data/sciami.csv` (IMO nihete tabelit pole veel sisestatud). *Juhendi võrrandid 9 ja 13.* Antiheeliumi allika asend interpoleeritakse lineaarselt IMO tabeli 6 kuupäevade vahel (`data/ant_radiante.csv`; aktiivne 10. detsembrist 20. septembrini, ZHR umbes 4).

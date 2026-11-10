@@ -27,17 +27,16 @@ La ligne orange sous les commandes affiche la règle avec les valeurs actuelles,
 
 ## Du radar à la bande amateur
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Source :** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45e Nordic VUSHF, mai 2025 – le nombre et l'intensité des réflexions varient en **λ³**, la durée en **λ²** (le 432 MHz est 14–15 dB sous le 144 MHz et dure 1/9). **Vérification :** la dépendance en λ³ est la même que dans l'équation sous-dense de McKinley. Avec k = 3, 1000 météores/heure à Collm deviennent environ **16 réflexions/heure à 144 MHz** ; les observateurs RMOB de GRAVES sur 143,050 MHz comptent habituellement **20 à 140 échos/heure** (bulletin RMOB, juin 2018) : l'ordre de grandeur est compatible, et la différence correspond au facteur de station K. (Manuel, éq. 44–45.)
 
 ## Les 24 prochaines heures
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Persistance :** la valeur transposée de la même heure de la veille (ou de l'avant-veille si elle manque), corrigée par la variation de l'**indice essaims du trajet** I (Σ ZHR × efficacité, voir [Calcul de l'efficacité](Efficiency-Calculation-fr#le-modèle)). La constante 10 représente le fond sporadique et limite la correction quand l'indice est faible. *Choix du programme (manuel, éq. 47).*
@@ -65,8 +64,8 @@ Le mois et l'année sont tirés du nom du fichier (`…_MMYYYYrmob…`) ou de l'
 
 **Ajustement de l'exposant.** Avec K = 1, à partir de la médiane des rapports RMOB/Collm sur les heures communes (au moins 3) :
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Choix du programme (manuel, éq. 46).* La boîte de dialogue affiche les heures communes, le rapport médian et k ; **Oui** applique k (et fixe K = 1), **Non** garde k = 3 – ajustez alors K à la main à la valeur suggérée dans la même boîte de dialogue.

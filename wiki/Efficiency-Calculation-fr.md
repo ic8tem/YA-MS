@@ -49,36 +49,36 @@ Toutes les étapes figurent dans le [manuel de calcul](Efficiency-Explanation-fr
 
 **1. Réflexion spéculaire.** Une traînée renvoie le signal de A vers B seulement si elle est tangente à un ellipsoïde dont A et B sont les foyers (McKinley 1961). Les traînées d'un essaim sont parallèles à la direction du radiant ŝ (article ; McKinley). Pour chaque point P de la couche E, avec les vecteurs unitaires vers les stations :
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 La même loi est à la base de QTFGUI de DJ5HG (diffusion en cône). La condition est acceptée avec une tolérance gaussienne σ = 0,05 rad (environ 3°) – *choix du programme* :
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Poids de chaque point.** Puissance d'une traînée sous-dense (McKinley), φ = demi-angle de diffusion (limité à 85°, *choix*) :
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 Le nombre de météores qui atteignent un point est proportionnel au sinus de l'élévation du radiant en ce point (ŝ·û_P), la même correction que celle utilisée par l'IMO pour le ZHR.
 
 **3. Somme et pourcentage.** Points tous les 15 km à l'altitude des traînées, uniquement là où les deux stations les voient au-dessus de l'élévation du lobe (*choix*). 100 % correspond à la position de radiant la plus favorable pour ce trajet :
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F est calculé une fois par trajet sur une grille de directions (azimut tous les 5°, élévation tous les 2,5°) puis interpolé.
 
 **4. Côté et indice.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 La lettre du tableau est le côté qui a la plus grande fraction. *Choix du programme (manuel, éq. 32–33).*
@@ -87,8 +87,8 @@ La lettre du tableau est le côté qui a la plus grande fraction. *Choix du prog
 
 Une vérification indépendante : la formule de la meilleure direction de **DH9GCD**, rapportée par **DF5HC** (conférence DARC, janvier 2018), où El et Az sont l'élévation et l'azimut du radiant vus de votre station et P l'azimut du correspondant :
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 Elle est maximale avec le radiant à 45° et perpendiculaire au trajet. DF5HC considère le radiant trop bas sous 20° et **trop haut au-dessus de 70°** : ces heures reçoivent ↑ dans le tableau et un avertissement sur la [voûte céleste](Sky-View-fr#avertissements). La formule ignore la distance et les altitudes, mais c'est une bonne référence.

@@ -27,17 +27,16 @@ La riga arancione sotto i comandi mostra la regola con i numeri attuali, per ese
 
 ## Dal radar alla banda radioamatoriale
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Fonte:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maggio 2025 – numero e intensità delle riflessioni scalano con **λ³**, la durata con **λ²** (432 MHz sta 14–15 dB sotto 144 MHz e dura 1/9). **Verifica:** la dipendenza da λ³ è la stessa dell'equazione delle scie sottodense di McKinley. Con k = 3, 1000 meteore/ora a Collm diventano circa **16 riflessioni/ora a 144 MHz**; gli osservatori RMOB di GRAVES su 143,050 MHz contano di solito **da 20 a 140 eco/ora** (bollettino RMOB, giugno 2018): l'ordine di grandezza è compatibile e la differenza è il fattore di stazione K. (Eq. 44–45 del manuale.)
 
 ## Prossime 24 ore
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Persistenza:** il valore traslato della stessa ora del giorno prima (o di due giorni prima se manca), corretto per la variazione dell'**indice sciami della tratta** I (Σ ZHR × efficienza, vedi [Calcolo dell'efficienza](Efficiency-Calculation-it#il-modello)). La costante 10 rappresenta il fondo sporadico e limita la correzione quando l'indice è piccolo. *Scelta del programma (eq. 47 del manuale).*
@@ -65,8 +64,8 @@ Mese e anno vengono dal nome del file (`…_MMAAAArmob…`) o dall'intestazione;
 
 **Ricavare l'esponente.** Con K = 1, dalla mediana dei rapporti RMOB/Collm sulle ore in comune (almeno 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Scelta del programma (eq. 46 del manuale).* La finestra di dialogo mostra le ore in comune, il rapporto mediano e k; **Sì** applica k (e imposta K = 1), **No** mantiene k = 3 – poi regola K a mano sul valore suggerito nella stessa finestra.

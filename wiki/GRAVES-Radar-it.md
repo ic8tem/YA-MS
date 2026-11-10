@@ -56,18 +56,16 @@ La sequenza è legata all'**UTC** (PE1ITR): il passo illuminato adesso si calcol
 
 Una scia si sente solo se il fascio la illumina mentre dura:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0,3 s è una durata tipica di una scia sottodensa a 143 MHz – un valore fisso, *scelta del programma* (la regola λ² di SM6FHZ scala le durate tra le bande ma non dà un valore di partenza).
 
 ### Eco attese (sperimentale)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 La previsione dell'[Attuazione sperimentale previsioni](Experimental-Forecasts-it) (che contiene già il fattore di stazione K) viene traslata dalla sua frequenza f_fc a 143,050 MHz con la regola di SM6FHZ (stesso esponente k), corretta con il rapporto tra gli indici sciami delle due tratte (la costante 10 rappresenta il fondo sporadico, come nella previsione) e moltiplicata per il fattore di rilevamento. Solo indicativo: confrontalo con gli osservatori RMOB.

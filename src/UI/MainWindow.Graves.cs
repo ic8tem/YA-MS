@@ -87,7 +87,7 @@ namespace YAMS
             TextBlock info = L(Lang.T("· 143,050 MHz CW · JN27SI (Broye-lès-Pesmes, 47,348° N 5,515° E)"));
             Button btnNow = B(Lang.T("Adesso"));
             btnNow.Classes.Add("accent");
-            ToolTip.SetTip(btnNow, Lang.T("Riporta la volta celeste al tempo reale"));
+            ToolTip.SetTip(btnNow, Lang.T("Riporta il momento del calcolo al tempo reale"));
             btnNow.Click += (s, e) => { trackTime.Value = 0; UpdateSky(); };
             Button btnDx = B(Lang.T("Metti GRAVES come DX"));
             btnDx.Background = Pal.B(Pal.Violet); btnDx.Foreground = Pal.B(Pal.AccentFore); btnDx.FontWeight = FontWeight.SemiBold;
@@ -387,7 +387,7 @@ namespace YAMS
             }
             else sb.Append(Lang.T("nessuno sciame utile in questo momento"));
             sb.Append('\n').Append(TrackValue == 0 ? Lang.F("{0} UTC (tempo reale)", t.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture))
-                                                   : Lang.F("{0} UTC (ora della volta celeste)", t.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture)));
+                                                   : Lang.F("{0} UTC (momento del calcolo)", t.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture)));
             // eco attese all'ora (sperimentale): previsione della linguetta "Attuazione sperimentale previsioni" (tratta
             // principale) portata a 143,050 MHz con la regola SM6FHZ, corretta con il rapporto degli indici degli sciami
             // (come fa ForecastAt) e moltiplicata per la probabilita' che il fascio a passi illumini la scia

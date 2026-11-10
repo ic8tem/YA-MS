@@ -49,36 +49,36 @@ Kõik sammud on [arvutusjuhendis](Efficiency-Explanation-et) (`doc/YA-MS_manuale
 
 **1. Peegelpeegeldus.** Jälg saadab signaali A-st B-sse ainult siis, kui see puutub ellipsoidi, mille fookustes on A ja B (McKinley 1961). Meteoorivoolu jäljed on paralleelsed radiandi suunaga ŝ (artikkel; McKinley). Iga E-kihi punkti P jaoks, ühikvektoritega jaamade suunas:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 Sama seadus on DJ5HG QTFGUI aluseks (koonushajumine). Tingimus aktsepteeritakse Gaussi tolerantsiga σ = 0,05 rad (umbes 3°) – *programmi valik*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Iga punkti kaal.** Alatiheda jälje võimsus (McKinley), φ = pool hajumisnurgast (piiratud 85°-ga, *valik*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 Punkti jõudvate meteooride arv on võrdeline seal radiandi elevatsiooni siinusega (ŝ·û_P), sama parandus, mida IMO kasutab ZHR-i jaoks.
 
 **3. Summa ja protsent.** Punktid iga 15 km järel jälgede kõrgusel, ainult seal, kus mõlemad jaamad näevad neid peaharu elevatsioonist kõrgemal (*valik*). 100 % on selle trassi jaoks kõige soodsam radiandi asend:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F arvutatakse iga trassi jaoks üks kord suundade võrgustikul (asimuut iga 5°, elevatsioon iga 2,5° järel) ja interpoleeritakse.
 
 **4. Pool ja indeks.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 Tabelis olev täht on suurema osaga pool. *Programmi valikud (juhendi võrrandid 32–33).*
@@ -87,8 +87,8 @@ Tabelis olev täht on suurema osaga pool. *Programmi valikud (juhendi võrrandid
 
 Sõltumatu kontroll: **DH9GCD** parima suuna valem, mida vahendas **DF5HC** (DARC-i konverents, jaanuar 2018), kus El ja Az on sinu jaamast nähtava radiandi elevatsioon ja asimuut ning P korrespondendi asimuut:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 See on maksimaalne, kui radiant on 45° kõrgusel ja trassiga risti. DF5HC peab radianti alla 20° liiga madalaks ja **üle 70° liiga kõrgeks**: need tunnid saavad tabelis ↑ ja [Taevavõlvis](Sky-View-et#hoiatused) hoiatuse. Valem ignoreerib kaugust ja kõrgusi, kuid on hea võrdlusalus.

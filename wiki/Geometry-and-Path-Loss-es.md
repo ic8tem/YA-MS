@@ -39,8 +39,8 @@ Locator (4, 6 u 8 caracteres; centro de la cuadrícula, sistema Maidenhead de la
 
 **Fuente:** fórmula del artículo Cerrotta–Sartori (Figura 7), con x = d/r, siendo d la distancia sobre el suelo hasta el punto de reflexión, H la altura de las estelas y h la altura de la estación [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Verificación:** coincide con la geometría esférica exacta dentro de 0,03°. El programa usa el arcotangente de dos argumentos, que da valores negativos más allá del horizonte y evita el problema de periodicidad mencionado en el artículo. Una elevación negativa hacia el punto medio significa *trayecto más allá del alcance geométrico de un salto único*.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Distancia sobre el suelo a la que un rayo con elevación e alcanza la altura H (inversa geométrica de la fórmula anterior) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Verificación:** H = 89,5 km, e = 0° → **1062 km**. En el ejemplo del artículo (JN44BB–IO53RT) el dibujo sitúa los cruces del horizonte a unos 870 km de las estaciones, lo que corresponde a un lóbulo elevado unos 2° (865 km).
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Fuente:** el artículo localiza los cruces de las curvas donde el horizonte de cada estación encuentra la capa E: los cruces de dos círculos de radio angular ρ = d_H/r centrados en A y B [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 Si 1 − |p0|² < 0, el trayecto es más largo que 2·d_H y las estaciones **no ven ninguna zona común de la capa E**.
@@ -74,8 +73,8 @@ Si 1 − |p0|² < 0, el trayecto es más largo que 2·d_H y las estaciones **no 
 
 **Decisión:** Hot A y Hot B son los puntos a distancia s del punto medio M, perpendiculares al trayecto (s = 150 km, ajustable de 30 a 400 km); A a la izquierda mirando desde tu estación hacia el DX, B a la derecha [21]. El desplazamiento visto desde la estación es aproximadamente [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Verificación:** JN70CN–IN78UO, D = 1710 km: 6,7° con s = 100 km, **10,0° con s = 150 km** (igual que MSHV y AMS/W8WN), 13,2° con s = 200 km.
@@ -84,16 +83,16 @@ Si 1 − |p0|² < 0, el trayecto es más largo que 2·d_H y las estaciones **no 
 
 **Fuente:** ecuación de McKinley para estelas subdensas (β = 0, sen α = 1), ganancias de antena excluidas; q = densidad lineal de electrones, r_e = radio clásico del electrón = 2,818·10⁻¹⁵ m, R1, R2 distancias a la estela, φ mitad del ángulo de dispersión [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Verificación:** con q = 10¹⁴ electrones/m en 144 MHz: **181–192 dB** entre 600 y 2200 km, en línea con las referencias del artículo en 144 MHz: **182 dB como mínimo** (GM8JBJ, de Kaiser & Closs 1952) y **200 dB de media** (OH5IY).
 
 ## Balance del enlace
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Las ganancias se introducen en dBi y se usan en dBd (dBi − 2,15). El informe da también el margen con la **atenuación media de OH5IY** (200 dB en 144 MHz, escalada con λ³ a la banda elegida). Referencia del artículo: hacen falta unos **70 dBm de PIRE** (−130 dBm + 200 dB, p. ej. unos 400 W en 14 dBi).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Ganancia – fuente:** curva de Günter Hoch **DL6WU** para Yagis largas en función de la longitud del boom L, citada por W8IO (válida a partir de unas 2 λ) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **Verificación con los modelos NEC de L.B. Cebik W4RNL en 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ La diferencia nunca supera **0,1 dB**: la ganancia depende más de la longitud d
 
 **Lóbulo – fuente:** regla de Kraus, con lóbulo circular θE = θH = θK [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Verificación:** los modelos NEC de W4RNL de Yagis DL6WU dan un **lóbulo horizontal un 5–10 % más estrecho** que Kraus: 33,8° / 26,4° / 22,6° para 12, 19 y 26 elementos, frente a 37,3° / 28,0° / 23,9°. Las fórmulas simples ignoran los lóbulos laterales delanteros (W4RNL, *Long-Boom Yagi Rules of Thumb*). En booms largos el lóbulo vertical es algo más ancho que el horizontal (14 λ: 18,4° / 18,8°).
 
 **Decisión** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Ejemplo: Yagi de 14 λ en 432 MHz → 20,3 dBi, lóbulo de 18,1° en horizontal y 19,5° en vertical; los modelos de W4RNL dan 20,4 dBi y 18,4° / 18,8°. Son reglas aproximadas obtenidas de unas pocas antenas DL6WU.

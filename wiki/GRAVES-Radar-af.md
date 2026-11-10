@@ -56,18 +56,16 @@ Die volgorde is aan **UTC** gekoppel (PE1ITR): die stap wat nou belig word, word
 
 'n Spoor word slegs gehoor as die bundel dit belig terwyl dit duur:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0,3 s is 'n tipiese duur van 'n onderdigte spoor op 143 MHz – 'n vaste waarde, *keuse van die program* (die λ²-reël van SM6FHZ skaal duurtes tussen bande maar gee geen beginwaarde nie).
 
 ### Verwagte eggo's (eksperimenteel)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 Die voorspelling van [Eksperimentele voorspellings](Experimental-Forecasts-af) (wat reeds die stasiefaktor K bevat) word van sy frekwensie f_fc na 143,050 MHz geskaal met die SM6FHZ-reël (dieselfde eksponent k), gekorrigeer deur die verhouding van die swermindekse van die twee paaie (die konstante 10 stel die sporadiese agtergrond voor, soos in die voorspelling) en vermenigvuldig met die opsporingsfaktor. Slegs aanduidend: vergelyk met RMOB-waarnemers.

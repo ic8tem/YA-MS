@@ -39,8 +39,8 @@ Lokators (4, 6 vai 8 rakstzīmes; kvadrāta centrs, IARU Maidenhead sistēma) [1
 
 **Avots:** Cerrotta–Sartori raksta formula (7. attēls), kur x = d/r, d – attālums pa zemi līdz atstarošanas punktam, H – sliežu augstums un h – stacijas augstums [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Pārbaude:** tā sakrīt ar precīzo sfērisko ģeometriju 0,03° robežās. Programma izmanto divargumentu arktangensu, kas aiz horizonta dod negatīvas vērtības un novērš rakstā minēto periodiskuma problēmu. Negatīva elevācija uz viduspunktu nozīmē *trase ir ārpus viena lēciena ģeometriskās sniedzamības*.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Attālums pa zemi, kurā stars ar elevāciju e sasniedz augstumu H (iepriekšējās formulas ģeometriskā inversija) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Pārbaude:** H = 89,5 km, e = 0° → **1062 km**. Raksta piemērā (JN44BB–IO53RT) zīmējumā horizonta krustpunkti ir ap 870 km no stacijām, kas atbilst ziedlapiņai, kas pacelta par apmēram 2° (865 km).
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Avots:** raksts nosaka līkņu krustpunktus, kur katras stacijas horizonts satiekas ar E slāni: divu apļu ar leņķisko rādiusu ρ = d_H/r un centriem A un B krustpunkti [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 Ja 1 − |p0|² < 0, trase ir garāka par 2·d_H, un stacijas neredz **nevienu kopēju E slāņa zonu**.
@@ -74,8 +73,8 @@ Ja 1 − |p0|² < 0, trase ir garāka par 2·d_H, un stacijas neredz **nevienu k
 
 **Izvēle:** Hot A un Hot B ir punkti attālumā s no viduspunkta M, perpendikulāri trasei (s = 150 km, regulējams 30–400 km); A pa kreisi, skatoties no tavas stacijas uz DX, B pa labi [21]. Nobīde, kā to redz stacija, ir aptuveni [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Pārbaude:** JN70CN–IN78UO, D = 1710 km: 6,7° ar s = 100 km, **10,0° ar s = 150 km** (tāpat kā MSHV un AMS/W8WN), 13,2° ar s = 200 km.
@@ -84,16 +83,16 @@ Ja 1 − |p0|² < 0, trase ir garāka par 2·d_H, un stacijas neredz **nevienu k
 
 **Avots:** McKinley vienādojums zema blīvuma sliedēm (β = 0, sin α = 1), bez antenu pastiprinājuma; q = elektronu lineārais blīvums, r_e = klasiskais elektrona rādiuss = 2,818·10⁻¹⁵ m, R1, R2 – attālumi no sliedes, φ – puse no izkliedes leņķa [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Pārbaude:** ar q = 10¹⁴ elektroni/m pie 144 MHz: **181–192 dB** starp 600 un 2200 km, saskaņā ar raksta atsaucēm 144 MHz: **182 dB minimums** (GM8JBJ, no Kaiser & Closs 1952) un **200 dB vidēji** (OH5IY).
 
 ## Sakaru budžets
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Pastiprinājumus ievada dBi un izmanto dBd (dBi − 2,15). Atskaitē dota arī rezerve ar **OH5IY vidējo trases vājinājumu** (200 dB pie 144 MHz, pārrēķināts ar λ³ uz izvēlēto joslu). Raksta atsauce: vajadzīgi ap **70 dBm EIRP** (−130 dBm + 200 dB, piem. ap 400 W uz 14 dBi).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Pastiprinājums – avots:** Günter Hoch **DL6WU** līkne garām Yagi antenām atkarībā no traverses garuma L, ko citē W8IO (derīga no apmēram 2 λ) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **Pārbaude pret L.B. Cebik W4RNL NEC modeļiem pie 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ Starpība nekad nepārsniedz **0,1 dB**: pastiprinājums vairāk atkarīgs no tr
 
 **Ziedlapiņa – avots:** Kraus likums ar apaļu ziedlapiņu θE = θH = θK [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Pārbaude:** W4RNL NEC modeļi DL6WU Yagi antenām dod **horizontālo ziedlapiņu par 5–10 % šaurāku** nekā Kraus: 33,8° / 26,4° / 22,6° 12, 19 un 26 elementiem pret 37,3° / 28,0° / 23,9°. Vienkāršās formulas neņem vērā priekšējās sānu ziedlapiņas (W4RNL, *Long-Boom Yagi Rules of Thumb*). Garām traversēm vertikālā ziedlapiņa ir nedaudz platāka par horizontālo (14 λ: 18,4° / 18,8°).
 
 **Izvēle** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Piemērs: 14 λ Yagi pie 432 MHz → 20,3 dBi, ziedlapiņa 18,1° horizontāli un 19,5° vertikāli; W4RNL modeļi dod 20,4 dBi un 18,4° / 18,8°. Tie ir aptuveni likumi, kas iegūti no dažām DL6WU antenām.

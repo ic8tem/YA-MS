@@ -56,18 +56,16 @@ Die Folge ist an **UTC** gebunden (PE1ITR): Der jetzt beleuchtete Schritt wird a
 
 Eine Spur ist nur hörbar, wenn der Strahl sie während ihrer Dauer beleuchtet:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0,3 s ist eine typische Dauer einer unterdichten Spur bei 143 MHz – ein fester Wert, *Entscheidung des Programms* (die λ²-Regel von SM6FHZ skaliert Dauern zwischen Bändern, liefert aber keinen Ausgangswert).
 
 ### Erwartete Echos (experimentell)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 Die Vorhersage aus [Experimentelle Vorhersage](Experimental-Forecasts-de) (die bereits den Stationsfaktor K enthält) wird mit der SM6FHZ-Regel (gleicher Exponent k) von ihrer Frequenz f_fc auf 143,050 MHz umgerechnet, mit dem Verhältnis der Strom-Indizes der beiden Strecken korrigiert (die Konstante 10 steht für den sporadischen Untergrund, wie in der Vorhersage) und mit dem Erfassungsfaktor multipliziert. Nur ein Richtwert: Vergleiche mit RMOB-Beobachtern.

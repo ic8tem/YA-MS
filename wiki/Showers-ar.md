@@ -38,9 +38,8 @@
 
 ## منحنى النشاط وانجراف نقطة الإشعاع
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 تؤخذ ZHR_max وα0 وδ0 وλ_max من تقويم IMO؛ أما الميلان B (المختلفان قبل الذروة وبعدها) والانجرافان اليوميان dα/dλ وdδ/dλ فهي **قيم عمل** مكتوبة في `data/sciami.csv` (لم يُدخل جدول الانجراف الخاص بـ IMO بعد). *المعادلتان 9 و13 في الدليل.* يُستوفى موضع مصدر مقابل الشمس خطياً بين تواريخ الجدول 6 من IMO (`data/ant_radiante.csv`؛ نشط من 10 ديسمبر إلى 20 سبتمبر، ZHR نحو 4).

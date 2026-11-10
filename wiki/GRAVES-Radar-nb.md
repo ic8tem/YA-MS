@@ -56,18 +56,16 @@ Sekvensen er knyttet til **UTC** (PE1ITR): steget som belyses nå, beregnes ut f
 
 Et spor høres bare hvis strålen belyser det mens det varer:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0,3 s er en typisk varighet for et underdenst spor på 143 MHz – en fast verdi, *programmets valg* (λ²-regelen til SM6FHZ skalerer varigheter mellom bånd, men gir ingen startverdi).
 
 ### Forventede ekkoer (eksperimentelt)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 Prognosen fra [Eksperimentelle prognoser](Experimental-Forecasts-nb) (som allerede inneholder stasjonsfaktoren K) omregnes fra sin frekvens f_fc til 143,050 MHz med SM6FHZ-regelen (samme eksponent k), korrigeres med forholdet mellom svermindeksene for de to strekningene (konstanten 10 representerer den sporadiske bakgrunnen, som i prognosen) og multipliseres med deteksjonsfaktoren. Bare veiledende: sammenlign med RMOB-observatørene.

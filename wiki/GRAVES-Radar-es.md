@@ -56,18 +56,16 @@ La secuencia está ligada a la hora **UTC** (PE1ITR): el paso iluminado ahora se
 
 Una estela solo se oye si el haz la ilumina mientras dura:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0,3 s es una duración típica de una estela subdensa a 143 MHz: un valor fijo, *decisión del programa* (la regla λ² de SM6FHZ escala las duraciones entre bandas, pero no da un valor de partida).
 
 ### Ecos esperados (experimental)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 La previsión de [Previsiones experimentales](Experimental-Forecasts-es) (que ya incluye el factor de estación K) se escala de su frecuencia f_fc a 143,050 MHz con la regla de SM6FHZ (mismo exponente k), se corrige con la razón entre los índices de lluvias de los dos trayectos (la constante 10 representa el fondo esporádico, como en la previsión) y se multiplica por el factor de detección. Solo orientativo: compáralo con los observadores RMOB.

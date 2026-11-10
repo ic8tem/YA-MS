@@ -35,8 +35,8 @@ Collm grafikam (720 × 720 pikseļi, tīras krāsas) asu vietas ir fiksētas, be
 2. **nolasa augstākās iedaļas un nulles etiķetes**, salīdzinot katru rakstzīmi ar grafika punktu matricas fontu;
 3. katrai stundai i (0–47, vakar un šodien) ņem centrālo kolonnu un pirmo ciānas pikseli no augšas, y:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top un y0 ir augstākās iedaļas un nulles rindas, N_top – augstākajā etiķetē nolasītā vērtība (×1000). Izšķirtspēja: ap 7–8 meteoriem stundā uz pikseli. *Programmas izvēle (rokasgrāmatas 42. vien.).*
@@ -47,8 +47,8 @@ Ja etiķeti nevar nolasīt, programma izmanto 5/11/2026 kalibrāciju (**kalibrē
 
 No augstumu histogrammas (n_k meteori km k, vidējais augstums h_k):
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Rokasgrāmatas 43. vien.* Ja atzīmēts **no radara** (vadības 2. rinda), **moda** kļūst par visu aprēķinu sliežu augstumu. Pārbaude: 5/11/2026 grafiks – moda 89,5 km, vidējais 88,6 km, standartnovirze 6,8 km, kas apstiprina Cerrotta–Sartori raksta ~90 km (SKiYMET vidējais).
@@ -57,8 +57,8 @@ Ja augstumu grafika skala mainās, programma brīdina: *augstumu statistika (mod
 
 ## Novērtējums tavai joslai
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **SM6FHZ** eksperimentālie likumi (VUSHF 2025): atstarojumu skaits un intensitāte mainās ar λ³, ilgums ar λ²; λ³ atkarība ir tā pati, kas McKinley zema blīvuma vienādojumā. Tiek parādīts arī IARU 1. reģiona maksimālais pinga ilgums (1000 ms 50 MHz, 500 ms 70 MHz, 100 ms 144 MHz, 13 ms 432 MHz). Vērtības ir orientējošas, salīdzināšanai ar pieredzi ēterā. Stacijas koeficients K un salīdzinājums ar RMOB ir cilnē [Eksperimentālas prognozes](Experimental-Forecasts-lv).

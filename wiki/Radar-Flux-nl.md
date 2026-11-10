@@ -35,8 +35,8 @@ De grafiek van Collm (720 × 720 pixels, zuivere kleuren) heeft vaste asposities
 2. het **leest de labels** van het hoogste streepje en van de nul door elk teken te vergelijken met het dotmatrix-lettertype van de grafiek;
 3. voor elk uur i (0–47, gisteren en vandaag) neemt het de middelste kolom en de eerste cyaan pixel van boven, y:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteoren/uur
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top en y0 zijn de rijen van het hoogste streepje en van de nul, N_top is de waarde op het hoogste label (×1000). Resolutie: ongeveer 7–8 meteoren/uur per pixel. *Keuze van het programma (vgl. 42 van de handleiding).*
@@ -47,8 +47,8 @@ Als een label niet leesbaar is, valt het programma terug op de kalibratie van 5/
 
 Uit het hoogtehistogram (n_k meteoren in km k, gemiddelde hoogte h_k):
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Vgl. 43 van de handleiding.* Met **van de radar** aangevinkt (rij 2 van de bediening) wordt de **modus** de spoorhoogte voor alle berekeningen. Controle: grafiek van 5/11/2026 – modus 89,5 km, gemiddelde 88,6 km, standaardafwijking 6,8 km, wat de ~90 km uit het artikel van Cerrotta–Sartori bevestigt (SKiYMET-gemiddelde).
@@ -57,8 +57,8 @@ Als de schaal van de hoogtegrafiek verandert, waarschuwt het programma: *de hoog
 
 ## Schatting op jouw band
 
-```
-meteoren/uur op f = Collm(36.2 MHz) · (36.2 / f)^k          pingduur · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 Experimentele regels van **SM6FHZ** (VUSHF 2025): aantal en intensiteit van de reflecties schalen met λ³, de duur met λ²; de λ³-afhankelijkheid is dezelfde als in de vergelijking van McKinley voor onderdichte sporen. Ook de maximale pingduur volgens IARU Regio 1 wordt getoond (1000 ms op 50 MHz, 500 ms op 70 MHz, 100 ms op 144 MHz, 13 ms op 432 MHz). De waarden zijn indicatief, te vergelijken met de ervaring in de lucht. De stationsfactor K en de vergelijking met RMOB staan in [Experimentele voorspelling](Experimental-Forecasts-nl).

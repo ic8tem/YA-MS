@@ -35,8 +35,8 @@ Collm-diagrammet (720 × 720 pixlar, rena färger) har fasta axelpositioner, men
 2. **läser etiketterna** vid det översta skalstrecket och vid nollan genom att jämföra varje tecken med diagrammets punktmatristypsnitt;
 3. för varje timme i (0–47, igår och idag) tas mittkolumnen och den första cyan pixeln uppifrån, y:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top och y0 är raderna för det översta skalstrecket och för nollan, N_top värdet som lästs på den översta etiketten (×1000). Upplösning: omkring 7–8 meteorer/timme per pixel. *Programmets val (handboken ekv. 42).*
@@ -47,8 +47,8 @@ Om en etikett inte kan läsas faller programmet tillbaka på kalibreringen från
 
 Ur höjdhistogrammet (n_k meteorer vid km k, medelhöjd h_k):
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Handboken ekv. 43.* Med **från radar** ikryssat (rad 2 bland reglagen) blir **typvärdet** spårhöjden i alla beräkningar. Kontroll: diagrammet från 5/11/2026 – typvärde 89,5 km, medelvärde 88,6 km, standardavvikelse 6,8 km, vilket bekräftar de ~90 km som anges i artikeln av Cerrotta–Sartori (medelvärde enligt SKiYMET).
@@ -57,8 +57,8 @@ Om höjddiagrammets skala ändras varnar programmet: *höjdstatistiken (typvärd
 
 ## Uppskattning för ditt band
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 Experimentella regler av **SM6FHZ** (VUSHF 2025): reflexernas antal och intensitet skalar med λ³, varaktigheten med λ²; λ³-beroendet är detsamma som i McKinleys ekvation för underdensa spår. IARU Region 1:s maximala pinglängd visas också (1000 ms på 50 MHz, 500 ms på 70 MHz, 100 ms på 144 MHz, 13 ms på 432 MHz). Värdena är vägledande och ska jämföras med erfarenheten i luften. Stationsfaktorn K och jämförelsen med RMOB finns i [Experimentella prognoser](Experimental-Forecasts-sv).

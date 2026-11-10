@@ -49,36 +49,36 @@ Semua langkah ada di [manual perhitungan](Efficiency-Explanation-id) (`doc/YA-MS
 
 **1. Pantulan spekular.** Sebuah jejak meneruskan sinyal dari A ke B hanya jika jejak itu menyinggung elipsoid dengan A dan B sebagai titik fokusnya (McKinley 1961). Jejak-jejak sebuah hujan meteor sejajar dengan arah radian ŝ (artikel; McKinley). Untuk setiap titik P lapisan E, dengan vektor satuan ke arah stasiun:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 Hukum yang sama mendasari QTFGUI karya DJ5HG (hamburan kerucut). Syarat ini diterima dengan toleransi Gauss σ = 0,05 rad (sekitar 3°) – *pilihan program*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Bobot setiap titik.** Daya jejak underdense (McKinley), φ = setengah sudut hambur (dibatasi 85°, *pilihan*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 Jumlah meteor yang mencapai sebuah titik sebanding dengan sinus elevasi radian di titik itu (ŝ·û_P), koreksi yang sama yang dipakai IMO untuk ZHR.
 
 **3. Jumlah dan persentase.** Titik setiap 15 km pada ketinggian jejak, hanya di tempat yang terlihat oleh kedua stasiun di atas elevasi lobus (*pilihan*). 100 % adalah posisi radian paling menguntungkan untuk lintasan tersebut:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F dihitung sekali per lintasan pada kisi arah (azimut setiap 5°, elevasi setiap 2,5°) lalu diinterpolasi.
 
 **4. Sisi dan indeks.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 Huruf di tabel adalah sisi dengan fraksi lebih besar. *Pilihan program (manual pers. 32–33).*
@@ -87,8 +87,8 @@ Huruf di tabel adalah sisi dengan fraksi lebih besar. *Pilihan program (manual p
 
 Pemeriksaan independen: rumus arah terbaik dari **DH9GCD**, dilaporkan oleh **DF5HC** (konferensi DARC, Januari 2018), dengan El dan Az elevasi dan azimut radian dilihat dari stasiun Anda dan P azimut stasiun DX:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 Nilainya maksimum saat radian berada di 45° dan menyamping terhadap lintasan. DF5HC menganggap radian terlalu rendah di bawah 20° dan **terlalu tinggi di atas 70°**: jam-jam ini diberi ↑ di tabel dan peringatan di [Kubah langit](Sky-View-id#peringatan). Rumus ini mengabaikan jarak dan ketinggian, tetapi merupakan acuan yang baik.

@@ -38,9 +38,8 @@ Katalogen omfattar de **mindre svärmarna** i IMO:s lista – till exempel Octob
 
 ## Aktivitetsprofil och radiantdrift
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 och λ_max kommer från IMO-kalendern; lutningarna B (olika före och efter maximum) och den dagliga driften dα/dλ, dδ/dλ är **arbetsvärden** som står i `data/sciami.csv` (IMO:s drifttabell har ännu inte förts in). *Handboken ekv. 9 och 13.* Positionen för Antihelion Source interpoleras linjärt mellan datumen i IMO:s tabell 6 (`data/ant_radiante.csv`; aktiv 10 december – 20 september, ZHR omkring 4).

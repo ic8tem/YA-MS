@@ -4,7 +4,7 @@
 
 *hazırlayan: Costantino Cerrotta IC8TEM*
 
-**YA-MS**, **50, 70, 144, 222 ve 432 MHz'de meteor scatter (MS)** çalışan radyo amatörleri için ücretsiz bir programdır. Sizin lokatörünüz ile karşı istasyonun lokatörü arasındaki gerçek yol için saat saat şunları hesaplar: her etkin meteor yağmurunun yola ne kadar yardım ettiği (**verimi**), yansımaların yolun hangi tarafından geldiği (**Hot A / Hot B**), antenin nereye çevrileceği ve bir **canlı meteor radarından** (Collm, Almanya) türetilen, saatlik yansıma sayısına ilişkin deneysel bir tahmin. **Windows, Linux ve macOS** üzerinde (.NET 8 + Avalonia), 6 arayüz dilinde çalışır.
+**YA-MS**, **50, 70, 144, 222 ve 432 MHz'de meteor scatter (MS)** çalışan radyo amatörleri için ücretsiz bir programdır. Sizin lokatörünüz ile karşı istasyonun lokatörü arasındaki gerçek yol için saat saat şunları hesaplar: her etkin meteor yağmurunun yola ne kadar yardım ettiği (**verimi**), yansımaların yolun hangi tarafından geldiği (**Hot A / Hot B**), antenin nereye çevrileceği ve bir **canlı meteor radarından** (Collm, Almanya) türetilen, saatlik yansıma sayısına ilişkin deneysel bir tahmin. **Windows, Linux, Raspberry Pi ve macOS** üzerinde (.NET 8 + Avalonia), 6 arayüz dilinde çalışır.
 
 Ana kaynak, **C. Cerrotta IC8TEM ve G. Sartori IV3GTH**'nin *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (sürüm 7) başlıklı makalesidir. Programdaki her formül ve her veri kaynağını belirtir; bkz. [Kaynaklar](Sources-tr).
 

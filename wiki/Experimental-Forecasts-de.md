@@ -27,17 +27,16 @@ Die orange Zeile unter den Bedienelementen zeigt die Regel mit den aktuellen Zah
 
 ## Vom Radar zum Amateurfunkband
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Quelle:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, Mai 2025 – Anzahl und Intensität der Reflexionen skalieren mit **λ³**, die Dauer mit **λ²** (432 MHz liegt 14–15 dB unter 144 MHz und dauert 1/9). **Prüfung:** Die λ³-Abhängigkeit ist dieselbe wie in McKinleys Gleichung für unterdichte Spuren. Mit k = 3 werden aus 1000 Meteoren/h in Collm etwa **16 Reflexionen/h auf 144 MHz**; RMOB-Beobachter von GRAVES auf 143,050 MHz zählen üblicherweise **20 bis 140 Echos/h** (RMOB-Bulletin, Juni 2018): Die Größenordnung ist verträglich, und der Unterschied ist der Stationsfaktor K. (Handbuch Gl. 44–45.)
 
 ## Nächste 24 Stunden
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Persistenz:** der umgerechnete Wert derselben Stunde des Vortags (oder, falls er fehlt, von vor zwei Tagen), korrigiert um die Änderung des **Strom-Index der Strecke** I (Σ ZHR × Effektivität, siehe [Effektivitätsberechnung](Efficiency-Calculation-de#das-modell)). Die Konstante 10 steht für den sporadischen Untergrund und begrenzt die Korrektur, wenn der Index klein ist. *Entscheidung des Programms (Handbuch Gl. 47).*
@@ -65,8 +64,8 @@ Monat und Jahr stammen aus dem Dateinamen (`…_MMYYYYrmob…`) oder aus der Kop
 
 **Anpassen des Exponenten.** Mit K = 1, aus dem Median der Verhältnisse RMOB/Collm über die gemeinsamen Stunden (mindestens 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Entscheidung des Programms (Handbuch Gl. 46).* Der Dialog zeigt die gemeinsamen Stunden, das Median-Verhältnis und k; **Ja** übernimmt k (und setzt K = 1), **Nein** behält k = 3 – dann passe K von Hand auf den im selben Dialog vorgeschlagenen Wert an.

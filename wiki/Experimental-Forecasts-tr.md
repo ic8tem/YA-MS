@@ -27,17 +27,16 @@ Kontrollerin altındaki turuncu satır kuralı güncel rakamlarla gösterir, ör
 
 ## Radardan amatör banda
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Kaynak:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45. Nordic VUSHF, Mayıs 2025 – yansımaların sayısı ve şiddeti **λ³** ile, süresi **λ²** ile ölçeklenir (432 MHz, 144 MHz'in 14–15 dB altındadır ve 1/9 kadar sürer). **Doğrulama:** λ³ bağımlılığı McKinley'in underdense denklemindekiyle aynıdır. k = 3 ile Collm'daki 1000 meteor/saat, **144 MHz'de yaklaşık 16 yansıma/saat** olur; 143,050 MHz'de GRAVES'i dinleyen RMOB gözlemcileri genellikle **saatte 20 ile 140 yankı** sayar (RMOB bülteni, Haziran 2018): büyüklük mertebesi uyumludur ve aradaki fark istasyon katsayısı K'dır. (Kılavuz denk. 44–45.)
 
 ## Sonraki 24 saat
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Kalıcılık:** bir önceki günün (yoksa iki gün öncesinin) aynı saatinin ölçeklenmiş değeri, **yol yağmur endeksi** I'nın değişimiyle düzeltilir (Σ ZHR × verim, bkz. [Verim hesabı](Efficiency-Calculation-tr#model)). 10 sabiti sporadik arka planı temsil eder ve endeks küçükken düzeltmeyi sınırlar. *Programın seçimi (kılavuz denk. 47).*
@@ -65,8 +64,8 @@ Ay ve yıl dosya adından (`…_MMYYYYrmob…`) ya da başlıktan alınır; aksi
 
 **Üssün uydurulması.** K = 1 ile, ortak saatlerdeki (en az 3) RMOB/Collm oranlarının medyanından:
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Programın seçimi (kılavuz denk. 46).* İletişim kutusu ortak saatleri, medyan oranı ve k'yı gösterir; **Evet** k'yı uygular (ve K = 1 yapar), **Hayır** k = 3'ü korur – o zaman K'yı aynı iletişim kutusunda önerilen değere elle ayarlayın.

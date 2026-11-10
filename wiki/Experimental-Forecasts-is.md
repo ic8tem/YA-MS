@@ -27,17 +27,16 @@ Appelsínugula línan undir stýringunum sýnir regluna með núverandi tölum, 
 
 ## Frá ratsjánni að amatörtíðnisviðinu
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Heimild:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maí 2025 – fjöldi og styrkur endurvarpa breytist með **λ³**, lengd með **λ²** (432 MHz er 14–15 dB undir 144 MHz og varir 1/9 af tímanum). **Prófun:** λ³-háðin er sú sama og í jöfnu McKinleys fyrir undirþéttar slóðir. Með k = 3 verða 1000 loftsteinar/klst. í Collm um **16 endurvörp/klst. á 144 MHz**; RMOB-athugendur GRAVES á 143,050 MHz telja venjulega **20 til 140 bergmál/klst.** (fréttabréf RMOB, júní 2018): stærðargráðan samrýmist, og munurinn er stöðvarstuðullinn K. (Handbók, jöfnur 44–45.)
 
 ## Næstu 24 klukkustundir
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Viðvarandi gildi (persistence):** kvarðaða gildið fyrir sömu klukkustund daginn áður (eða tveimur dögum áður ef það vantar), leiðrétt með breytingu **drífustuðuls leiðarinnar** I (Σ ZHR × nýtni, sjá [Útreikningur nýtni](Efficiency-Calculation-is#líkanið)). Fastinn 10 táknar stopula bakgrunninn og takmarkar leiðréttinguna þegar stuðullinn er lítill. *Val forritsins (handbók, jafna 47).*
@@ -65,8 +64,8 @@ Mánuður og ár eru tekin úr skráarheitinu (`…_MMYYYYrmob…`) eða úr hau
 
 **Aðlögun veldisvísisins.** Með K = 1, út frá miðgildi hlutfallanna RMOB/Collm yfir sameiginlegu klukkustundirnar (a.m.k. 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Val forritsins (handbók, jafna 46).* Glugginn sýnir sameiginlegu klukkustundirnar, miðgildi hlutfallsins og k; **Já** beitir k (og setur K = 1), **Nei** heldur k = 3 – stilltu þá K handvirkt á gildið sem lagt er til í sama glugga.

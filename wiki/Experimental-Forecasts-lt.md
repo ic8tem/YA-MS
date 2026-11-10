@@ -27,17 +27,16 @@ Oranžinė eilutė po valdikliais rodo taisyklę su dabartiniais skaičiais, pvz
 
 ## Nuo radaro iki mėgėjų juostos
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Šaltinis:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45-asis Nordic VUSHF, 2025 m. gegužė – atspindžių skaičius ir intensyvumas kinta pagal **λ³**, trukmė – pagal **λ²** (432 MHz yra 14–15 dB žemiau nei 144 MHz ir trunka 1/9). **Patikra:** λ³ priklausomybė ta pati kaip McKinley retojo pėdsako lygtyje. Su k = 3 1000 meteorų/val. Collm virsta maždaug **16 atspindžių/val. ties 144 MHz**; GRAVES RMOB stebėtojai 143,050 MHz dažniu paprastai suskaičiuoja **nuo 20 iki 140 aidų/val.** (RMOB biuletenis, 2018 m. birželis): eilė suderinama, o skirtumas yra stoties koeficientas K. (Vadovo 44–45 lygtys.)
 
 ## Kitos 24 valandos
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Pastovumas:** perskaičiuota tos pačios valandos vertė praėjusią dieną (arba prieš dvi dienas, jei jos nėra), pataisyta pagal **trasos srautų indekso** I pokytį (Σ ZHR × efektyvumas, žr. [Efektyvumo skaičiavimas](Efficiency-Calculation-lt#modelis)). Konstanta 10 atspindi sporadinį foną ir riboja pataisą, kai indeksas mažas. *Programos sprendimas (vadovo 47 lygtis).*
@@ -65,8 +64,8 @@ Mėnuo ir metai imami iš failo pavadinimo (`…_MMYYYYrmob…`) arba iš antra�
 
 **Rodiklio pritaikymas.** Su K = 1, pagal RMOB/Collm santykių medianą bendromis valandomis (ne mažiau kaip 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Programos sprendimas (vadovo 46 lygtis).* Dialogo lange rodomos bendros valandos, santykio mediana ir k; **Taip** pritaiko k (ir nustato K = 1), **Ne** palieka k = 3 – tada ranka nustatykite K į tame pačiame dialoge siūlomą vertę.

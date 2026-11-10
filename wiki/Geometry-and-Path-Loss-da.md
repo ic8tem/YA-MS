@@ -39,8 +39,8 @@ Lokator (4, 6 eller 8 tegn; feltets centrum, IARU's Maidenhead-system) [14]. Afs
 
 **Kilde:** formlen i artiklen af Cerrotta–Sartori (figur 7), med x = d/r, d afstanden langs jorden til refleksionspunktet, H sporhøjden og h stationens højde [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Kontrol:** den stemmer med eksakt sfærisk geometri inden for 0,03°. Programmet bruger arcustangens med to argumenter, som giver negative værdier bag horisonten og undgår det periodicitetsproblem, der nævnes i artiklen. En negativ elevation mod midtpunktet betyder *strækningen er længere end den geometriske rækkevidde for ét hop*.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Afstand langs jorden, hvor en stråle med elevation e når højden H (geometrisk invers af formlen ovenfor) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Kontrol:** H = 89,5 km, e = 0° → **1062 km**. I artiklens eksempel (JN44BB–IO53RT) placerer tegningen horisontskæringerne ca. 870 km fra stationerne, hvilket svarer til en lap hævet ca. 2° (865 km).
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Kilde:** artiklen bestemmer skæringerne mellem de kurver, hvor hver stations horisont møder E-laget: skæringspunkterne mellem to cirkler med vinkelradius ρ = d_H/r centreret i A og B [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 Hvis 1 − |p0|² < 0, er strækningen længere end 2·d_H, og stationerne ser **ingen fælles zone i E-laget**.
@@ -74,8 +73,8 @@ Hvis 1 − |p0|² < 0, er strækningen længere end 2·d_H, og stationerne ser *
 
 **Valg:** Hot A og Hot B er punkterne i afstanden s fra midtpunktet M, vinkelret på strækningen (s = 150 km, kan indstilles 30–400 km); A til venstre set fra din station mod DX, B til højre [21]. Forskydningen set fra stationen er ca. [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Kontrol:** JN70CN–IN78UO, D = 1710 km: 6,7° med s = 100 km, **10,0° med s = 150 km** (samme som MSHV og AMS/W8WN), 13,2° med s = 200 km.
@@ -84,16 +83,16 @@ Hvis 1 − |p0|² < 0, er strækningen længere end 2·d_H, og stationerne ser *
 
 **Kilde:** McKinleys ligning for underdense spor (β = 0, sin α = 1), antenneforstærkning ikke medregnet; q = lineær elektrontæthed, r_e = klassisk elektronradius = 2,818·10⁻¹⁵ m, R1, R2 afstande fra sporet, φ halvdelen af spredningsvinklen [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Kontrol:** med q = 10¹⁴ elektroner/m ved 144 MHz: **181–192 dB** mellem 600 og 2200 km, i overensstemmelse med artiklens referencer ved 144 MHz: **182 dB minimum** (GM8JBJ, efter Kaiser & Closs 1952) og **200 dB gennemsnit** (OH5IY).
 
 ## Linkbudget
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Forstærkning indtastes i dBi og bruges i dBd (dBi − 2,15). Rapporten angiver også marginen med **OH5IY's gennemsnitlige dæmpning** (200 dB ved 144 MHz, skaleret med λ³ til det valgte bånd). Artiklens reference: der kræves ca. **70 dBm EIRP** (−130 dBm + 200 dB, fx ca. 400 W i 14 dBi).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Forstærkning – kilde:** kurve af Günter Hoch **DL6WU** for lange Yagi'er som funktion af bomlængden L, gengivet af W8IO (gælder fra ca. 2 λ) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **Kontrol mod NEC-modellerne af L.B. Cebik W4RNL ved 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ Forskellen overstiger aldrig **0,1 dB**: forstærkningen afhænger mere af boml�
 
 **Lap – kilde:** Kraus' regel med cirkulær lap θE = θH = θK [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Kontrol:** W4RNL's NEC-modeller af DL6WU-Yagi'er giver en **vandret lap, der er 5–10 % smallere** end Kraus: 33,8° / 26,4° / 22,6° for 12, 19 og 26 elementer mod 37,3° / 28,0° / 23,9°. Enkle formler ser bort fra sidelapperne fremad (W4RNL, *Long-Boom Yagi Rules of Thumb*). På lange bomme er den lodrette lap lidt bredere end den vandrette (14 λ: 18,4° / 18,8°).
 
 **Valg** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Eksempel: Yagi på 14 λ ved 432 MHz → 20,3 dBi, lap 18,1° vandret og 19,5° lodret; W4RNL's modeller giver 20,4 dBi og 18,4° / 18,8°. Det er tilnærmede regler udledt af nogle få DL6WU-antenner.

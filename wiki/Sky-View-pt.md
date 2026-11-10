@@ -34,8 +34,8 @@ Opções por cima da lista de chuvas: **Direções Hot A / Hot B**, **Mapa da Eu
 
 Para a hora mostrada, o programa soma em todas as chuvas acima do horizonte o peso ZHR × eficiência, repartido entre o lado A (fração f_A) e o lado B. O lado com maior peso dá o Hot recomendado, desenhado a vermelho:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Escolha do programa (eq. 23 do manual).* Origem da ideia: DJ5HG, citado por DF5HC (conferência DARC 2018) – consoante a posição do radiante, um dos dois pontos, HOT-A ou HOT-B, é mais favorável. Rodar 10–30° para esse lado (side-scatter) vem do artigo Cerrotta–Sartori.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 Para cada ponto P da camada E somam-se as contribuições de todas as chuvas ativas para a eficiência (mesma condição especular da [eficiência](Efficiency-Calculation-pt#o-modelo)), ponderadas com o ZHR. Os pontos com pelo menos 3 % do máximo formam as zonas PREV; cada uma é desenhada como uma elipse com centro = média ponderada dos pontos e eixos = o dobro da sua dispersão.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Escolha do programa (eq. 34 do manual).* É a regra prática: se a chuva varre de norte para sul, os rastos úteis caem a leste e a oeste.
@@ -81,8 +81,8 @@ Ao lado, o texto do cálculo: comprimento e azimute do percurso, ponto médio e 
 
 *CORTE - os rastos mais prováveis vistos da antena em direção ao correspondente.* Na horizontal o **azimute em relação ao correspondente** (← A esquerda, B → direita), na vertical a **elevação**. Para cada chuva tomam-se os 14 pontos de reflexão mais intensos; cada rasto é um segmento orientado para o radiante, de 10 km acima a 10 km abaixo da altitude dos rastos (no máximo 60 km por lado), mais grosso quanto mais provável. São também desenhados: o lóbulo da antena (círculo de −3 dB em torno da elevação do lóbulo), o correspondente e Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Escolha do programa (eq. 35 do manual).*

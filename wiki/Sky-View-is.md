@@ -34,8 +34,8 @@ Valkostir fyrir ofan listann yfir drífur: **Stefnur Hot A / Hot B**, **Kort af 
 
 Fyrir sýndan tíma leggur forritið saman, yfir allar drífur ofan sjóndeildarhrings, vægið ZHR × nýtni, skipt á milli hliðar A (hlutfallið f_A) og hliðar B. Hliðin með meira vægi gefur ráðlagðan Hot, teiknaðan í rauðu:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        ráðlagður = hliðin með stærra W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Val forritsins (handbók, jafna 23).* Uppruni hugmyndarinnar: DJ5HG, eftir frásögn DF5HC (ráðstefna DARC 2018) – eftir stöðu geislapunktsins er annar punkturinn, HOT-A eða HOT-B, hagstæðari. Að snúa 10–30° í átt að þeirri hlið (side-scatter) kemur úr grein Cerrotta–Sartori.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        r�
 
 Fyrir hvern punkt P í E-laginu eru framlög allra virkra drífa til nýtninnar (sama speglunarskilyrði og fyrir [nýtnina](Efficiency-Calculation-is#líkanið)) lögð saman, vegin með ZHR. Punktar með a.m.k. 3 % af hámarkinu mynda PREV-svæðin; hvert þeirra er teiknað sem sporbaugur með miðju = vegnu meðaltali punktanna og ása = tvöfaldri dreifingu þeirra.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Val forritsins (handbók, jafna 34).* Þetta er hagnýta reglan: ef drífan sópar frá norðri til suðurs lenda nýtilegu slóðirnar í austri og vestri.
@@ -81,8 +81,8 @@ Við hliðina er texti útreikningsins: lengd og áttarhorn leiðarinnar, miðpu
 
 *SNIÐ – líklegustu slóðirnar séðar frá loftnetinu í átt að mótstöðinni.* Lárétt er **áttarhorn miðað við mótstöðina** (← A vinstri, B → hægri), lóðrétt **hæðarhornið**. Fyrir hverja drífu eru teknir 14 sterkustu endurvarpspunktarnir; hver slóð er strik sem snýr að geislapunktinum, frá 10 km ofan við til 10 km neðan við hæð slóðanna (í mesta lagi 60 km á hvora hlið), þykkara eftir því sem það er líklegra. Einnig eru teiknuð: loftnetsgeislinn (−3 dB hringur umhverfis hæðarhorn geislans), mótstöðin og Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Val forritsins (handbók, jafna 35).*

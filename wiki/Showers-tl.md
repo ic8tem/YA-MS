@@ -38,9 +38,8 @@ Kasama sa katalogo ang **maliliit na shower** ng listahan ng IMO – halimbawa a
 
 ## Profile ng aktibidad at pag-usad ng radiant
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 Ang ZHR_max, α0, δ0 at λ_max ay mula sa kalendaryo ng IMO; ang mga slope na B (magkaiba bago at pagkatapos ng peak) at ang araw-araw na pag-usad na dα/dλ, dδ/dλ ay **mga working value** na nakasulat sa `data/sciami.csv` (hindi pa naipapasok ang talahanayan ng pag-usad ng IMO). *Manwal eq. 9 at 13.* Ini-interpolate nang linear ang posisyon ng Antihelion Source sa pagitan ng mga petsa ng talahanayan 6 ng IMO (`data/ant_radiante.csv`; aktibo 10 Disyembre – 20 Setyembre, ZHR mga 4).

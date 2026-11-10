@@ -56,18 +56,16 @@ Röðin er bundin **UTC** (PE1ITR): skrefið sem lýst er núna er reiknað út 
 
 Slóð heyrist aðeins ef geislinn lýsir hana upp á meðan hún varir:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0,3 s er dæmigerð lengd undirþéttrar slóðar á 143 MHz – fast gildi, *val forritsins* (λ²-regla SM6FHZ kvarðar lengdir milli tíðnisviða en gefur ekkert upphafsgildi).
 
 ### Væntanleg bergmál (tilraun)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 Spáin úr [Tilraunaspám](Experimental-Forecasts-is) (sem inniheldur þegar stöðvarstuðulinn K) er kvörðuð frá tíðni sinni f_fc að 143,050 MHz með reglu SM6FHZ (sami veldisvísir k), leiðrétt með hlutfalli drífustuðla leiðanna tveggja (fastinn 10 táknar stopula bakgrunninn, eins og í spánni) og margfölduð með greiningarstuðlinum. Aðeins til viðmiðunar: berðu saman við RMOB-athugendur.

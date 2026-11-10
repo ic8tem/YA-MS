@@ -35,8 +35,8 @@ Collm grafiko (720 × 720 pikselių, grynos spalvos) ašių padėtys fiksuotos, 
 2. **nuskaito aukščiausios padalos ir nulio užrašus**, lygindama kiekvieną simbolį su grafiko taškinės matricos šriftu;
 3. kiekvienai valandai i (0–47, vakar ir šiandien) ima vidurinį stulpelį ir pirmą žydrą pikselį iš viršaus, y:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top ir y0 – aukščiausios padalos ir nulio eilutės, N_top – aukščiausiame užraše nuskaityta vertė (×1000). Skiriamoji geba: apie 7–8 meteorai/val. vienam pikseliui. *Programos sprendimas (vadovo 42 lygtis).*
@@ -47,8 +47,8 @@ Jei užrašo nuskaityti nepavyksta, programa naudoja 2026-11-05 kalibravimą (**
 
 Iš aukščių histogramos (n_k meteorų k-ajame kilometre, vidutinis aukštis h_k):
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Vadovo 43 lygtis.* Pažymėjus **iš radaro** (2 valdymo eilutė), **moda** tampa visų skaičiavimų pėdsakų aukščiu. Patikra: 2026-11-05 grafikas – moda 89,5 km, vidurkis 88,6 km, standartinis nuokrypis 6,8 km, patvirtina Cerrotta–Sartori straipsnio ~90 km (SKiYMET vidurkis).
@@ -57,8 +57,8 @@ Jei pasikeičia aukščių grafiko skalė, programa įspėja: *aukščių statis
 
 ## Įvertis jūsų juostai
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **SM6FHZ** eksperimentinės taisyklės (VUSHF 2025): atspindžių skaičius ir intensyvumas kinta pagal λ³, trukmė – pagal λ²; λ³ priklausomybė ta pati kaip McKinley retojo pėdsako lygtyje. Taip pat rodoma IARU 1 regiono didžiausia atspindžio trukmė (1000 ms ties 50 MHz, 500 ms ties 70 MHz, 100 ms ties 144 MHz, 13 ms ties 432 MHz). Vertės orientacinės, lygintinos su patirtimi eteryje. Stoties koeficientas K ir palyginimas su RMOB pateikti puslapyje [Eksperimentinės prognozės](Experimental-Forecasts-lt).

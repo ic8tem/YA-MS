@@ -38,9 +38,8 @@
 
 ## פרופיל הפעילות והיסחפות הרדיאנט
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, ‏α0, ‏δ0 ו-λ_max מלוח השנה של IMO; השיפועים B (שונים לפני השיא ואחריו) וההיסחפויות היומיות dα/dλ, ‏dδ/dλ הם **ערכי עבודה** הרשומים ב-`data/sciami.csv` (טבלת ההיסחפות של IMO טרם הוזנה). *משוואות 9 ו-13 במדריך.* מיקום מקור אנטי-הליון מאונטרפל לינארית בין התאריכים של טבלה 6 של IMO ‏(`data/ant_radiante.csv`; פעיל מ-10 בדצמבר עד 20 בספטמבר, ZHR כ-4).

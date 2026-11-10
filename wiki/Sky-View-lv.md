@@ -34,8 +34,8 @@ Opcijas virs plūsmu saraksta: **Hot A / Hot B virzieni**, **Eiropas karte** (Na
 
 Parādītajam laikam programma saskaita visām plūsmām virs horizonta svaru ZHR × efektivitāte, sadalītu starp pusi A (daļa f_A) un pusi B. Puse ar lielāko svaru nosaka ieteicamo Hot, ko zīmē sarkanā krāsā:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Programmas izvēle (rokasgrāmatas 23. vien.).* Idejas avots: DJ5HG, ko citē DF5HC (DARC konference 2018) – atkarībā no radianta stāvokļa viens no abiem punktiem, HOT-A vai HOT-B, ir izdevīgāks. Pagrieziens par 10–30° uz šo pusi (side-scatter) nāk no Cerrotta–Sartori raksta.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 Katram E slāņa punktam P tiek saskaitīti visu aktīvo plūsmu devumi efektivitātē (tas pats spoguļatstarošanas nosacījums kā [efektivitātei](Efficiency-Calculation-lv#modelis)), svērti ar ZHR. Punkti ar vismaz 3 % no maksimuma veido PREV zonas; katra tiek zīmēta kā elipse ar centru = punktu svērtais vidējais un asīm = divkārša to izkliede.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Programmas izvēle (rokasgrāmatas 34. vien.).* Tas ir praktiskais likums: ja plūsma pārvietojas no ziemeļiem uz dienvidiem, lietderīgās sliedes krīt austrumos un rietumos.
@@ -81,8 +81,8 @@ Blakus ir aprēķina teksts: trases garums un azimuts, viduspunkts un tā elevā
 
 *GRIEZUMS – varbūtīgākās sliedes, kā tās redz antena, kas vērsta uz korespondentu.* Horizontāli – **azimuts attiecībā pret korespondentu** (← A pa kreisi, B → pa labi), vertikāli – **elevācija**. Katrai plūsmai tiek ņemti 14 spēcīgākie atstarošanas punkti; katra sliede ir nogrieznis, orientēts uz radiantu, no 10 km virs līdz 10 km zem sliežu augstuma (ne vairāk par 60 km katrā pusē), jo varbūtīgāka, jo biezāka. Zīmēta arī antenas ziedlapiņa (−3 dB aplis ap ziedlapiņas elevāciju), korespondents un Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Programmas izvēle (rokasgrāmatas 35. vien.).*

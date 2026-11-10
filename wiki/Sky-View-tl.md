@@ -34,8 +34,8 @@ Mga opsiyon sa itaas ng listahan ng mga shower: **Mga direksiyong Hot A / Hot B*
 
 Para sa ipinapakitang oras, pinagsasama ng programa sa lahat ng shower na nasa itaas ng horizon ang timbang na ZHR × episyensya, na hinati sa panig A (bahaging f_A) at panig B. Ang panig na may mas malaking timbang ang nagbibigay ng inirerekomendang Hot, na iginuguhit nang pula:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Pagpili ng programa (manwal eq. 23).* Pinagmulan ng ideya: si DJ5HG, ayon sa ulat ni DF5HC (kumperensiya ng DARC 2018) – depende sa posisyon ng radiant, mas paborable ang isa sa dalawang punto, HOT-A o HOT-B. Ang pagpihit nang 10–30° patungo sa panig na iyon (side-scatter) ay mula sa artikulong Cerrotta–Sartori.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 Para sa bawat punto P ng E layer, pinagsasama ang mga kontribusyon ng lahat ng aktibong shower sa episyensya (parehong specular na kondisyon gaya sa [episyensya](Efficiency-Calculation-tl#ang-modelo)), na tinimbang ayon sa ZHR. Ang mga puntong may hindi bababa sa 3 % ng pinakamataas ang bumubuo sa mga PREV na sona; bawat isa ay iginuguhit bilang ellipse na ang gitna = tinimbang na mean ng mga punto at ang mga axis = dalawang ulit ng kanilang pagkakalat.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Pagpili ng programa (manwal eq. 34).* Ito ang praktikal na tuntunin: kung winawalis ng shower ang langit mula hilaga patimog, bumabagsak sa silangan at kanluran ang mga magagamit na bakas.
@@ -81,8 +81,8 @@ Katabi nito, ang teksto ng kalkulasyon: haba at azimuth ng landas, ang gitnang p
 
 *SEKSIYON – ang pinakamalamang na bakas na nakikita mula sa antenna patungo sa DX station.* Pahalang ang **azimuth kaugnay ng DX station** (← A kaliwa, B → kanan), patayo ang **elebasyon**. Para sa bawat shower, kinukuha ang 14 na pinakamalakas na punto ng repleksiyon; bawat bakas ay isang segment na nakaharap sa radiant, mula 10 km sa itaas hanggang 10 km sa ibaba ng taas ng bakas (hanggang 60 km bawat panig), mas makapal kapag mas malamang. Iginuguhit din: ang lobe ng antenna (−3 dB na bilog sa paligid ng elebasyon ng lobe), ang DX station at ang Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Pagpili ng programa (manwal eq. 35).*

@@ -39,8 +39,8 @@ Locator (4, 6 of 8 tekens; midden van het vak, IARU-Maidenheadsysteem) [14]. Afs
 
 **Bron:** formule uit het artikel van Cerrotta–Sartori (figuur 7), met x = d/r, d de grondafstand tot het reflectiepunt, H de spoorhoogte en h de stationshoogte [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Controle:** komt binnen 0,03° overeen met de exacte bolgeometrie. Het programma gebruikt de arctangens met twee argumenten, die voorbij de horizon negatieve waarden geeft en het periodiciteitsprobleem uit het artikel vermijdt. Een negatieve elevatie naar het middelpunt betekent *traject voorbij het geometrisch bereik van één sprong*.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Grondafstand waarop een straal met elevatie e de hoogte H bereikt (geometrische inverse van de formule hierboven) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Controle:** H = 89,5 km, e = 0° → **1062 km**. In het voorbeeld uit het artikel (JN44BB–IO53RT) legt de tekening de horizonsnijpunten op ongeveer 870 km van de stations, wat overeenkomt met een bundel die ongeveer 2° is opgeheven (865 km).
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Bron:** het artikel bepaalt de snijpunten van de curven waar de horizon van elk station de E-laag raakt: de snijpunten van twee cirkels met hoekstraal ρ = d_H/r rond A en B [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 Als 1 − |p0|² < 0 is het traject langer dan 2·d_H en zien de stations **geen gemeenschappelijke zone in de E-laag**.
@@ -74,8 +73,8 @@ Als 1 − |p0|² < 0 is het traject langer dan 2·d_H en zien de stations **geen
 
 **Keuze:** Hot A en Hot B zijn de punten op afstand s van het middelpunt M, loodrecht op het traject (s = 150 km, instelbaar 30–400 km); A links, kijkend van jouw station naar de DX, B rechts [21]. De afwijking gezien vanaf het station is ongeveer [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Controle:** JN70CN–IN78UO, D = 1710 km: 6,7° met s = 100 km, **10,0° met s = 150 km** (gelijk aan MSHV en AMS/W8WN), 13,2° met s = 200 km.
@@ -84,16 +83,16 @@ Als 1 − |p0|² < 0 is het traject langer dan 2·d_H en zien de stations **geen
 
 **Bron:** de vergelijking van McKinley voor onderdichte sporen (β = 0, sin α = 1), zonder antennewinst; q = lineaire elektronendichtheid, r_e = klassieke elektronstraal = 2,818·10⁻¹⁵ m, R1, R2 afstanden tot het spoor, φ de halve verstrooiingshoek [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Controle:** met q = 10¹⁴ elektronen/m op 144 MHz: **181–192 dB** tussen 600 en 2200 km, in lijn met de referenties uit het artikel op 144 MHz: **minimaal 182 dB** (GM8JBJ, naar Kaiser & Closs 1952) en **gemiddeld 200 dB** (OH5IY).
 
 ## Linkbudget
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Winsten worden in dBi ingevoerd en in dBd gebruikt (dBi − 2,15). Het verslag geeft ook de marge met de **gemiddelde trajectdemping van OH5IY** (200 dB op 144 MHz, met λ³ omgerekend naar de gekozen band). Referentie uit het artikel: er is ongeveer **70 dBm EIRP** nodig (−130 dBm + 200 dB, bijv. ongeveer 400 W in 14 dBi).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Winst – bron:** de curve van Günter Hoch **DL6WU** voor lange Yagi's als functie van de boomlengte L, aangehaald door W8IO (geldig vanaf ongeveer 2 λ) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **Controle tegen de NEC-modellen van L.B. Cebik W4RNL op 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ Het verschil is nooit groter dan **0,1 dB**: de winst hangt meer af van de booml
 
 **Bundel – bron:** regel van Kraus, met een cirkelvormige bundel θE = θH = θK [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Controle:** de NEC-modellen van W4RNL voor DL6WU-Yagi's geven een **horizontale bundel die 5–10 % smaller is** dan volgens Kraus: 33,8° / 26,4° / 22,6° voor 12, 19 en 26 elementen, tegenover 37,3° / 28,0° / 23,9°. Eenvoudige formules negeren de voorwaartse zijlobben (W4RNL, *Long-Boom Yagi Rules of Thumb*). Bij lange booms is de verticale bundel iets breder dan de horizontale (14 λ: 18,4° / 18,8°).
 
 **Keuze** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Voorbeeld: Yagi van 14 λ op 432 MHz → 20,3 dBi, bundel 18,1° horizontaal en 19,5° verticaal; de modellen van W4RNL geven 20,4 dBi en 18,4° / 18,8°. Het zijn benaderende regels, afgeleid van een paar DL6WU-antennes.

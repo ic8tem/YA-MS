@@ -49,36 +49,36 @@
 
 **1. 镜面反射。** 只有当余迹与以 A 和 B 为焦点的椭球面相切时，它才能把信号从 A 送到 B（McKinley 1961）。同一流星雨的余迹都平行于辐射点方向 ŝ（文章；McKinley）。对 E 层上的每个点 P，取指向两个电台的单位矢量：
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 DJ5HG 的 QTFGUI（锥面散射）也基于同一定律。该条件以高斯容差 σ = 0.05 rad（约 3°）放宽接受——*程序的选择*：
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. 每个点的权重。** 欠密余迹的功率（McKinley），φ = 散射角的一半（限制在 85° 以内，*选择*）：
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 到达某点的流星数与该处辐射点仰角的正弦（ŝ·û_P）成正比，这与 IMO 对 ZHR 使用的修正相同。
 
 **3. 求和与百分比。** 在余迹高度上每 15 km 取一个点，只取两个电台都能在波瓣仰角以上看到的点（*选择*）。100 % 对应该路径最有利的辐射点位置：
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F 对每条路径只在一个方向网格（方位每 5°，仰角每 2.5°）上计算一次，然后进行插值。
 
 **4. 侧别与指数。**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 表格中的字母是比例较大的一侧。*程序的选择（手册公式 32–33）。*
@@ -87,8 +87,8 @@ f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) 
 
 一项独立的验证：**DH9GCD** 的最佳方向公式，由 **DF5HC** 转述（DARC 会议，2018 年 1 月），其中 El 和 Az 为从本台看的辐射点仰角和方位，P 为对方电台的方位：
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 当辐射点位于 45° 且与路径垂直时，该值最大。DF5HC 认为辐射点低于 20° 过低，**高于 70° 过高**：这些小时在表格中标有 ↑，并在[天穹](Sky-View-zh#警告)上给出警告。该公式忽略了距离和高度，但仍是很好的参考。

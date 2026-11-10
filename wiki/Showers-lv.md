@@ -38,9 +38,8 @@ Katalogā ir IMO saraksta **mazās plūsmas** – piemēram, Oktobra Kameloparda
 
 ## Aktivitātes profils un radianta pārvietošanās
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 un λ_max ir no IMO kalendāra; slīpumi B (atšķirīgi pirms un pēc maksimuma) un ikdienas pārvietojumi dα/dλ, dδ/dλ ir **darba vērtības**, kas ierakstītas failā `data/sciami.csv` (IMO pārvietojumu tabula vēl nav ievadīta). *Rokasgrāmatas 9. un 13. vien.* Antihēlija avota stāvoklis tiek lineāri interpolēts starp IMO 6. tabulas datumiem (`data/ant_radiante.csv`; aktīvs no 10. decembra līdz 20. septembrim, ZHR ap 4).

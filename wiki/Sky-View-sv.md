@@ -34,8 +34,8 @@ Alternativ ovanför svärmlistan: **Riktningar Hot A / Hot B**, **Europakarta** 
 
 För den visade tiden summerar programmet över alla svärmar ovanför horisonten vikten ZHR × effektivitet, fördelad mellan sida A (andelen f_A) och sida B. Sidan med störst vikt ger den rekommenderade Hot, ritad i rött:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        rekommenderad = sidan med störst W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Programmets val (handboken ekv. 23).* Idéns källa: DJ5HG, återgiven av DF5HC (DARC-konferensen 2018) – beroende på radiantens läge är en av de två punkterna, HOT-A eller HOT-B, gynnsammare. Att vrida 10–30° åt den sidan (side-scatter) kommer från artikeln av Cerrotta–Sartori.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 För varje punkt P i E-skiktet summeras alla aktiva svärmars bidrag till effektiviteten (samma spegelvillkor som för [effektiviteten](Efficiency-Calculation-sv#modellen)), viktade med ZHR. Punkter med minst 3 % av maximum bildar PREV-zonerna; var och en ritas som en ellips med mittpunkt = punkternas viktade medelvärde och axlar = två gånger deras spridning.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Programmets val (handboken ekv. 34).* Det är den praktiska regeln: om svärmen sveper från norr till söder hamnar de användbara spåren i öster och väster.
@@ -81,8 +81,8 @@ Bredvid finns beräkningstexten: sträckans längd och azimut, mittpunkten och d
 
 *TVÄRSNITT – de mest sannolika spåren sedda från antennen mot motstationen.* Horisontellt **azimuten relativt motstationen** (← A vänster, B → höger), vertikalt **elevationen**. För varje svärm tas de 14 starkaste reflexionspunkterna; varje spår är ett segment riktat mot radianten, från 10 km över till 10 km under spårhöjden (högst 60 km per sida), tjockare ju mer sannolikt det är. Dessutom ritas antennloben (−3 dB-cirkel kring lobelevationen), motstationen och Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Programmets val (handboken ekv. 35).*

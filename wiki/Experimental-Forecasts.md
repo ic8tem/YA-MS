@@ -27,17 +27,16 @@ The orange line under the controls shows the rule with the current numbers, e.g.
 
 ## From the radar to the amateur band
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Source:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, May 2025 – number and intensity of reflections scale with **λ³**, duration with **λ²** (432 MHz is 14–15 dB below 144 MHz and lasts 1/9). **Check:** the λ³ dependence is the same as in McKinley's underdense equation. With k = 3, 1000 meteors/hour at Collm become about **16 reflections/hour at 144 MHz**; RMOB observers of GRAVES on 143.050 MHz usually count **20 to 140 echoes/hour** (RMOB bulletin, June 2018): the order of magnitude is compatible, and the difference is the station factor K. (Manual eq. 44–45.)
 
 ## Next 24 hours
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Persistence:** the scaled value of the same hour of the day before (or two days before if missing), corrected by the change of the **path shower index** I (Σ ZHR × efficiency, see [Efficiency calculation](Efficiency-Calculation#the-model)). The constant 10 represents the sporadic background and limits the correction when the index is small. *Choice of the program (manual eq. 47).*
@@ -65,8 +64,8 @@ Month and year come from the file name (`…_MMYYYYrmob…`) or from the header;
 
 **Fitting the exponent.** With K = 1, from the median of the RMOB/Collm ratios over the common hours (at least 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Choice of the program (manual eq. 46).* The dialog shows the common hours, the median ratio and k; **Yes** applies k (and sets K = 1), **No** keeps k = 3 – then adjust K by hand to the value suggested in the same dialog.

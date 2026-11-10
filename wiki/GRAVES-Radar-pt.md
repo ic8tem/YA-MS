@@ -56,18 +56,16 @@ A sequência está ligada à hora **UTC** (PE1ITR): o passo iluminado agora é c
 
 Um rasto só se ouve se o feixe o iluminar enquanto dura:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0,3 s é uma duração típica de um rasto subdenso a 143 MHz: um valor fixo, *escolha do programa* (a regra λ² de SM6FHZ transpõe as durações entre bandas, mas não dá um valor de partida).
 
 ### Ecos esperados (experimental)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 A previsão de [Previsões experimentais](Experimental-Forecasts-pt) (que já inclui o fator de estação K) é transposta da sua frequência f_fc para 143,050 MHz com a regra de SM6FHZ (mesmo expoente k), corrigida pela razão entre os índices de chuvas dos dois percursos (a constante 10 representa o fundo esporádico, como na previsão) e multiplicada pelo fator de deteção. Apenas indicativo: compare com os observadores RMOB.

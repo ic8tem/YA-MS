@@ -38,9 +38,8 @@
 
 ## سرگرمی کا پروفائل اور ریڈیئنٹ کی حرکت
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max، α0، δ0 اور λ_max، IMO کیلنڈر سے؛ ڈھلوانیں B (عروج سے پہلے اور بعد مختلف) اور روزانہ حرکت dα/dλ، dδ/dλ وہ **عملی قدریں** ہیں جو `data/sciami.csv` میں لکھی ہیں (IMO کا حرکت کا جدول ابھی شامل نہیں کیا گیا)۔ *دستی کتابچے کی مساوات 9 اور 13۔* اینٹی ہیلیئن ماخذ کا مقام IMO جدول 6 کی تاریخوں کے درمیان خطی طور پر نکالا جاتا ہے (`data/ant_radiante.csv`؛ 10 دسمبر – 20 ستمبر فعال، ZHR تقریباً 4)۔

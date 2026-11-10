@@ -56,18 +56,16 @@ La séquence est liée à l'heure **UTC** (PE1ITR) : le pas éclairé en ce mome
 
 Une traînée n'est entendue que si le faisceau l'éclaire pendant qu'elle dure :
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0,3 s est une durée typique de traînée sous-dense à 143 MHz – une valeur fixe, *choix du programme* (la règle λ² de SM6FHZ transpose les durées d'une bande à l'autre mais ne donne pas de valeur de départ).
 
 ### Échos attendus (expérimental)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 La prévision des [Prévisions expérimentales](Experimental-Forecasts-fr) (qui contient déjà le facteur de station K) est transposée de sa fréquence f_fc à 143,050 MHz avec la règle de SM6FHZ (même exposant k), corrigée par le rapport des indices d'essaims des deux trajets (la constante 10 représente le fond sporadique, comme dans la prévision) et multipliée par le facteur de détection. Purement indicatif : comparez avec les observateurs RMOB.

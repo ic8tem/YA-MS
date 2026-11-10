@@ -49,36 +49,36 @@ Alle Schritte stehen im [Berechnungshandbuch](Efficiency-Explanation-de) (`doc/Y
 
 **1. Spiegelnde Reflexion.** Eine Spur leitet das Signal nur dann von A nach B, wenn sie ein Ellipsoid mit A und B in den Brennpunkten tangiert (McKinley 1961). Die Spuren eines Stroms verlaufen parallel zur Radiantenrichtung ŝ (Artikel; McKinley). Für jeden Punkt P der E-Schicht, mit Einheitsvektoren zu den Stationen:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 Dasselbe Gesetz liegt QTFGUI von DJ5HG (Kegelstreuung) zugrunde. Die Bedingung wird mit einer gaußförmigen Toleranz σ = 0,05 rad (etwa 3°) akzeptiert – *Entscheidung des Programms*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Gewicht jedes Punktes.** Leistung einer unterdichten Spur (McKinley), φ = halber Streuwinkel (begrenzt auf 85°, *Entscheidung*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 Die Zahl der Meteore, die einen Punkt erreichen, ist proportional zum Sinus der Radiantenhöhe dort (ŝ·û_P), dieselbe Korrektur, die die IMO für die ZHR verwendet.
 
 **3. Summe und Prozentwert.** Punkte alle 15 km in Spurhöhe, nur dort, wo beide Stationen sie oberhalb der Keulenelevation sehen (*Entscheidung*). 100 % ist die günstigste Radiantenposition für diese Strecke:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F wird einmal pro Strecke auf einem Richtungsgitter berechnet (Azimut alle 5°, Elevation alle 2,5°) und interpoliert.
 
 **4. Seite und Index.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 Der Buchstabe in der Tabelle ist die Seite mit dem größeren Anteil. *Entscheidungen des Programms (Handbuch Gl. 32–33).*
@@ -87,8 +87,8 @@ Der Buchstabe in der Tabelle ist die Seite mit dem größeren Anteil. *Entscheid
 
 Eine unabhängige Prüfung: die Formel der besten Richtung von **DH9GCD**, wiedergegeben von **DF5HC** (DARC-Vortrag, Januar 2018), mit El und Az als Elevation und Azimut des Radianten von deiner Station aus und P als Azimut der Gegenstation:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 Sie ist maximal, wenn der Radiant auf 45° und quer zur Strecke steht. DF5HC hält den Radianten unter 20° für zu niedrig und **über 70° für zu hoch**: Diese Stunden erhalten in der Tabelle ein ↑ und eine Warnung in der [Himmelsansicht](Sky-View-de#warnungen). Die Formel berücksichtigt weder Entfernung noch Höhen, ist aber ein guter Vergleichswert.

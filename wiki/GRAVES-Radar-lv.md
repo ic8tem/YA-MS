@@ -56,18 +56,16 @@ Secība ir piesaistīta **UTC** (PE1ITR): tagad apgaismotais solis tiek aprēķi
 
 Sliedi dzird tikai tad, ja kūlis to apgaismo, kamēr tā pastāv:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0,3 s ir tipisks zema blīvuma sliedes ilgums 143 MHz – fiksēta vērtība, *programmas izvēle* (SM6FHZ λ² likums pārrēķina ilgumus starp joslām, bet nedod sākuma vērtību).
 
 ### Gaidāmās atbalsis (eksperimentāli)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 [Eksperimentālo prognožu](Experimental-Forecasts-lv) prognoze (kurā jau ir stacijas koeficients K) tiek pārrēķināta no tās frekvences f_fc uz 143,050 MHz ar SM6FHZ likumu (tas pats kāpinātājs k), koriģēta ar abu trašu plūsmu indeksu attiecību (konstante 10 attēlo sporādisko fonu, tāpat kā prognozē) un reizināta ar uztveršanas koeficientu. Tikai orientējoši: salīdzini ar RMOB novērotājiem.

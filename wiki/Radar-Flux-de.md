@@ -35,8 +35,8 @@ Das Collm-Diagramm (720 × 720 Pixel, reine Farben) hat feste Achsenpositionen, 
 2. **liest die Beschriftungen** des obersten Teilstrichs und der Null, indem jedes Zeichen mit der Punktmatrix-Schrift des Diagramms verglichen wird;
 3. nimmt für jede Stunde i (0–47, gestern und heute) die mittlere Spalte und das erste cyanfarbene Pixel von oben, y:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top und y0 sind die Zeilen des obersten Teilstrichs und der Null, N_top der auf der obersten Beschriftung gelesene Wert (×1000). Auflösung: etwa 7–8 Meteore/h pro Pixel. *Entscheidung des Programms (Handbuch Gl. 42).*
@@ -47,8 +47,8 @@ Lässt sich eine Beschriftung nicht lesen, greift das Programm auf die Kalibrier
 
 Aus dem Höhenhistogramm (n_k Meteore im km k, mittlere Höhe h_k):
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Handbuch Gl. 43.* Mit angekreuztem **vom Radar** (Zeile 2 der Bedienung) wird der **Modalwert** zur Spurhöhe aller Berechnungen. Prüfung: Diagramm vom 5.11.2026 – Modalwert 89,5 km, Mittel 88,6 km, Standardabweichung 6,8 km, was die ~90 km des Artikels Cerrotta–Sartori (SKiYMET-Mittelwert) bestätigt.
@@ -57,8 +57,8 @@ h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sq
 
 ## Schätzung für dein Band
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 Experimentelle Regeln von **SM6FHZ** (VUSHF 2025): Anzahl und Intensität der Reflexionen skalieren mit λ³, die Dauer mit λ²; die λ³-Abhängigkeit ist dieselbe wie in McKinleys Gleichung für unterdichte Spuren. Angezeigt wird auch die maximale Pingdauer nach IARU Region 1 (1000 ms auf 50 MHz, 500 ms auf 70 MHz, 100 ms auf 144 MHz, 13 ms auf 432 MHz). Die Werte sind Richtwerte, mit der Praxis auf dem Band zu vergleichen. Der Stationsfaktor K und der Vergleich mit RMOB stehen in [Experimentelle Vorhersage](Experimental-Forecasts-de).

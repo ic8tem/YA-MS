@@ -34,8 +34,8 @@ Valikud meteoorivoolude loetelu kohal: **Hot A / Hot B suunad**, **Euroopa kaart
 
 Näidatud aja jaoks liidab programm kõigi horisondi kohal olevate meteoorivoolude kaalu ZHR × efektiivsus, jagatuna poole A (osa f_A) ja poole B vahel. Suurema kaaluga pool annab soovitatud Hoti, mis joonistatakse punasega:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Programmi valik (juhendi võrrand 23).* Idee allikas: DJ5HG, vahendanud DF5HC (DARC-i konverents 2018) – olenevalt radiandi asendist on üks kahest punktist, HOT-A või HOT-B, soodsam. 10–30° pööramine selle poole (külghajumine) pärineb Cerrotta–Sartori artiklist.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 Iga E-kihi punkti P jaoks liidetakse kõigi aktiivsete meteoorivoolude panused efektiivsusse (sama peegeltingimus nagu [efektiivsuse](Efficiency-Calculation-et#mudel) puhul), kaalutuna ZHR-iga. Punktid, mis on vähemalt 3 % maksimumist, moodustavad PREV alad; iga ala joonistatakse ellipsina, mille keskpunkt = punktide kaalutud keskmine ja teljed = kahekordne hajuvus.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Programmi valik (juhendi võrrand 34).* See on praktiline reegel: kui meteoorivool pühib põhjast lõunasse, langevad kasulikud jäljed itta ja läände.
@@ -81,8 +81,8 @@ Selle kõrval arvutuse tekst: trassi pikkus ja asimuut, keskpunkt ja selle eleva
 
 *LÕIGE – kõige tõenäolisemad jäljed antennist korrespondendi suunas vaadatuna.* Horisontaalteljel **asimuut korrespondendi suhtes** (← A vasakul, B → paremal), vertikaalteljel **elevatsioon**. Iga meteoorivoolu jaoks võetakse 14 tugevaimat peegelduspunkti; iga jälg on radiandi poole suunatud lõik 10 km kõrgemalt kuni 10 km madalamale jälgede kõrgusest (kuni 60 km kummalegi poole), seda jämedam, mida tõenäolisem. Joonistatakse ka antenni peaharu (−3 dB ring peaharu elevatsiooni ümber), korrespondent ja Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Programmi valik (juhendi võrrand 35).*

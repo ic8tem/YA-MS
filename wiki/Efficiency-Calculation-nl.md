@@ -49,36 +49,36 @@ Alle stappen staan in de [rekenhandleiding](Efficiency-Explanation-nl) (`doc/YA-
 
 **1. Spiegelende reflectie.** Een spoor stuurt het signaal alleen van A naar B als het raakt aan een ellipsoïde met A en B in de brandpunten (McKinley 1961). De sporen van een zwerm lopen evenwijdig aan de richting van de radiant ŝ (artikel; McKinley). Voor elk punt P van de E-laag, met eenheidsvectoren naar de stations:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 Dezelfde wet ligt ten grondslag aan QTFGUI van DJ5HG (cone scattering). De voorwaarde wordt geaccepteerd met een Gaussische tolerantie σ = 0,05 rad (ongeveer 3°) – *keuze van het programma*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Gewicht van elk punt.** Vermogen van een onderdicht spoor (McKinley), φ = de halve verstrooiingshoek (begrensd op 85°, *keuze*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 Het aantal meteoren dat een punt bereikt, is evenredig met de sinus van de elevatie van de radiant in dat punt (ŝ·û_P), dezelfde correctie die de IMO voor de ZHR gebruikt.
 
 **3. Som en percentage.** Punten om de 15 km op spoorhoogte, alleen waar beide stations ze boven de bundelelevatie zien (*keuze*). 100 % is de gunstigste positie van de radiant voor dat traject:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F wordt eenmaal per traject berekend op een raster van richtingen (azimut om de 5°, elevatie om de 2,5°) en geïnterpoleerd.
 
 **4. Zijde en index.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 De letter in de tabel is de zijde met de grootste fractie. *Keuzes van het programma (vgl. 32–33 van de handleiding).*
@@ -87,8 +87,8 @@ De letter in de tabel is de zijde met de grootste fractie. *Keuzes van het progr
 
 Een onafhankelijke controle: de formule voor de beste richting van **DH9GCD**, aangehaald door **DF5HC** (DARC-congres, januari 2018), met El en Az de elevatie en het azimut van de radiant gezien vanaf jouw station en P het azimut van het tegenstation:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 Ze is maximaal met de radiant op 45° en dwars op het traject. DF5HC vindt de radiant te laag onder 20° en **te hoog boven 70°**: die uren krijgen ↑ in de tabel en een waarschuwing in de [Hemelkoepel](Sky-View-nl#waarschuwingen). De formule negeert afstand en hoogtes, maar is een goede referentie.

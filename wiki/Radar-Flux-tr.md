@@ -35,8 +35,8 @@ Collm grafiğinin (720 × 720 piksel, saf renkler) eksen konumları sabittir, am
 2. her karakteri grafiğin nokta matrisli yazı tipiyle karşılaştırarak en üst çentiğin ve sıfırın **etiketlerini okur**;
 3. her i saati (0–47, dün ve bugün) için orta sütunu ve yukarıdan ilk camgöbeği pikseli, y'yi alır:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top ve y0 en üst çentiğin ve sıfırın satırları, N_top en üst etikette okunan değerdir (×1000). Çözünürlük: piksel başına yaklaşık 7–8 meteor/saat. *Programın seçimi (kılavuz denk. 42).*
@@ -47,8 +47,8 @@ Bir etiket okunamazsa program 5/11/2026 kalibrasyonuna döner (**kalibre ölçek
 
 Yükseklik histogramından (k km'de n_k meteor, ortalama yükseklik h_k):
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Kılavuz denk. 43.* **radardan** işaretliyken (kontrollerin 2. sırası) **mod**, tüm hesapların iz yüksekliği olur. Doğrulama: 5/11/2026 grafiği – mod 89,5 km, ortalama 88,6 km, standart sapma 6,8 km; Cerrotta–Sartori makalesindeki ~90 km'yi (SKiYMET ortalaması) doğrular.
@@ -57,8 +57,8 @@ Yükseklik grafiğinin ölçeği değişirse program uyarır: *yükseklik istati
 
 ## Bandınız için tahmin
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **SM6FHZ**'nin deneysel kuralları (VUSHF 2025): yansımaların sayısı ve şiddeti λ³ ile, süresi λ² ile ölçeklenir; λ³ bağımlılığı McKinley'in underdense denklemindekiyle aynıdır. IARU 1. Bölge en uzun ping süresi de gösterilir (50 MHz'de 1000 ms, 70 MHz'de 500 ms, 144 MHz'de 100 ms, 432 MHz'de 13 ms). Değerler yol göstericidir; havadaki deneyimle karşılaştırılmalıdır. İstasyon katsayısı K ve RMOB ile karşılaştırma [Deneysel tahminler](Experimental-Forecasts-tr) sayfasındadır.

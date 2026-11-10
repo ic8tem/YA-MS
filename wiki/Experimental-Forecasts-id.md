@@ -27,17 +27,16 @@ Baris oranye di bawah kontrol menampilkan aturan dengan angka saat ini, mis. *N(
 
 ## Dari radar ke band amatir
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Sumber:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, Nordic VUSHF ke-45, Mei 2025 – jumlah dan intensitas pantulan berskala dengan **λ³**, durasinya dengan **λ²** (432 MHz berada 14–15 dB di bawah 144 MHz dan berlangsung 1/9-nya). **Verifikasi:** ketergantungan λ³ sama dengan pada persamaan underdense McKinley. Dengan k = 3, 1000 meteor/jam di Collm menjadi sekitar **16 pantulan/jam di 144 MHz**; pengamat RMOB untuk GRAVES di 143,050 MHz biasanya menghitung **20 sampai 140 gema/jam** (buletin RMOB, Juni 2018): orde besarnya cocok, dan selisihnya adalah faktor stasiun K. (Manual pers. 44–45.)
 
 ## 24 jam ke depan
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Persistensi:** nilai terskala dari jam yang sama pada hari sebelumnya (atau dua hari sebelumnya jika tidak ada), dikoreksi dengan perubahan **indeks hujan meteor lintasan** I (Σ ZHR × efisiensi, lihat [Perhitungan efisiensi](Efficiency-Calculation-id#model)). Konstanta 10 mewakili latar sporadis dan membatasi koreksi saat indeksnya kecil. *Pilihan program (manual pers. 47).*
@@ -65,8 +64,8 @@ Bulan dan tahun diambil dari nama file (`…_MMYYYYrmob…`) atau dari header; j
 
 **Mencocokkan eksponen.** Dengan K = 1, dari median rasio RMOB/Collm pada jam-jam yang sama (paling sedikit 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Pilihan program (manual pers. 46).* Dialog menampilkan jam-jam yang sama, rasio median dan k; **Ya** menerapkan k (dan menetapkan K = 1), **Tidak** mempertahankan k = 3 – lalu sesuaikan K secara manual ke nilai yang disarankan dalam dialog yang sama.

@@ -34,8 +34,8 @@
 
 표시 중인 시각에 대해 프로그램은 수평선 위에 있는 모든 유성우의 가중치 ZHR × 효율을 A쪽(비율 f_A)과 B쪽으로 나누어 합산합니다. 가중치가 더 큰 쪽이 추천 Hot이 되며 빨간색으로 그립니다:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *프로그램의 선택 (매뉴얼 식 23).* 아이디어의 출처: DF5HC가 소개한 DJ5HG(DARC 컨퍼런스 2018) – 복사점 위치에 따라 HOT-A와 HOT-B 두 점 중 하나가 더 유리합니다. 그쪽으로 10–30° 돌리는 것(사이드 스캐터)은 Cerrotta–Sartori 논문에서 왔습니다.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 E층의 각 점 P에 대해 활동 중인 모든 유성우가 효율에 기여하는 값([효율](Efficiency-Calculation-ko#모델)과 같은 정반사 조건)을 ZHR로 가중하여 합산합니다. 최대값의 3 % 이상인 점들이 PREV 영역을 이루며, 각 영역은 중심 = 점들의 가중 평균, 축 = 분산의 두 배인 타원으로 그립니다.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *프로그램의 선택 (매뉴얼 식 34).* 이것이 실전 규칙입니다: 유성우가 북에서 남으로 쓸고 지나가면 유효한 흔적은 동쪽과 서쪽에 떨어집니다.
@@ -81,8 +81,8 @@ W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F    
 
 *단면 – 상대국 방향 안테나에서 본 가장 가능성 높은 흔적.* 가로축은 **상대국 기준 방위**(← A 왼쪽, B → 오른쪽), 세로축은 **앙각**입니다. 각 유성우마다 가장 강한 반사점 14개를 취합니다. 각 흔적은 복사점 방향의 선분으로, 흔적 고도 위 10 km에서 아래 10 km까지(한쪽 최대 60 km) 그리며 가능성이 클수록 굵게 그립니다. 안테나 로브(로브 앙각 주위의 −3 dB 원), 상대국, Hot A / Hot B도 함께 그립니다.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *프로그램의 선택 (매뉴얼 식 35).*

@@ -56,18 +56,16 @@ PE1ITR と Bolidozor wiki によると、**4 つのフェーズドアレイ**が
 
 流星痕はその持続中にビームが照射したときだけ聞こえます:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0.3 s は 143 MHz のアンダーデンス流星痕の典型的な持続時間で、固定値です。*プログラム独自の選択* (SM6FHZ の λ² 則はバンド間で継続時間を換算しますが、出発点の値は与えません)。
 
 ### 予想エコー (実験的)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 [実験的予報](Experimental-Forecasts-ja) の予報 (局係数 K を既に含む) を、SM6FHZ 則 (同じ指数 k) で予報周波数 f_fc から 143.050 MHz に換算し、2 つのパスの流星群指数の比で補正し (定数 10 は予報と同じく散在流星のバックグラウンドを表す)、検出係数を掛けます。目安にすぎません: RMOB 観測者と比較してください。

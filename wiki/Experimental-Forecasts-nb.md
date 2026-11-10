@@ -27,17 +27,16 @@ Den oransje linjen under kontrollene viser regelen med de aktuelle tallene, f.ek
 
 ## Fra radaren til amatørbåndet
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Kilde:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, mai 2025 – antall og intensitet av refleksjoner skalerer med **λ³**, varigheten med **λ²** (432 MHz ligger 14–15 dB under 144 MHz og varer 1/9). **Kontroll:** λ³-avhengigheten er den samme som i McKinleys likning for underdense spor. Med k = 3 blir 1000 meteorer/time i Collm til ca. **16 refleksjoner/time på 144 MHz**; RMOB-observatører som lytter på GRAVES på 143,050 MHz, teller vanligvis **20 til 140 ekkoer/time** (RMOB-bulletin, juni 2018): størrelsesordenen er forenlig, og forskjellen er stasjonsfaktoren K. (Håndbokens likn. 44–45.)
 
 ## De neste 24 timene
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Persistens:** den omregnede verdien for samme time dagen før (eller to dager før hvis den mangler), korrigert for endringen i **svermindeksen for strekningen** I (Σ ZHR × effektivitet, se [Effektivitetsberegning](Efficiency-Calculation-nb#modellen)). Konstanten 10 representerer den sporadiske bakgrunnen og begrenser korreksjonen når indeksen er liten. *Programmets valg (håndbokens likn. 47).*
@@ -65,8 +64,8 @@ Måned og år hentes fra filnavnet (`…_MMYYYYrmob…`) eller fra overskriften;
 
 **Tilpasse eksponenten.** Med K = 1, ut fra medianen av forholdene RMOB/Collm over de felles timene (minst 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Programmets valg (håndbokens likn. 46).* Dialogen viser de felles timene, medianforholdet og k; **Ja** bruker k (og setter K = 1), **Nei** beholder k = 3 – juster da K for hånd til verdien som foreslås i samme dialog.

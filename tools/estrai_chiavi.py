@@ -30,10 +30,12 @@ EXTRA = [
     "RBN: porta 7000 = CW e RTTY, porta 7001 = FT8. Login con il solo nominativo. Gli skimmer RBN raramente decodificano i modi MS: serve soprattutto per gli spot con <MS> nel commento.",
     "Cluster di DM4X con gli spot di PSKReporter (dm4x.ddns.net, porta 8500): qui arrivano le decodifiche MSK144 di WSJT-X e MSHV. In alternativa HamAlert (hamalert.org 7300, serve un account con i trigger).",
     "Non connesso", "Disconnesso", "Chiuso", "Nuovo tentativo tra 30 s", "Indirizzo mancante", "Manca il nominativo per il login",
+    # PskMqtt.cs: stati della connessione MQTT (PskMqtt.StateKey)
+    "Connessione a {0}...", "Connesso: {0} argomenti", "Errore: {0}", "Riconnessione tra {0} s",
 ]
 
 # argomenti non letterali ammessi (i loro valori stanno nei nomi degli sciami o in EXTRA)
-KNOWN_DYNAMIC = {"s.Name", "h.Label", "rh.Label", "tn", "def[0]", "def[4]", "MsCollector.StateText[i]"}
+KNOWN_DYNAMIC = {"s.Name", "h.Label", "rh.Label", "tn", "def[0]", "def[4]", "MsCollector.StateText[i]", "PskMqtt.StateKey"}
 
 HEADER = """# YA-MS - chiavi da tradurre (testi italiani dell'interfaccia). File generato da tools/estrai_chiavi.py: non modificare a mano.
 # Ogni file di traduzione data/lingue/<codice>.txt (UTF-8) ha una voce per riga:

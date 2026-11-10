@@ -35,8 +35,8 @@ Collm-diagrammet (720 × 720 piksler, rene farger) har faste akseposisjoner, men
 2. **leser etikettene** ved den øverste skalastreken og ved null ved å sammenligne hvert tegn med diagrammets punktmatriseskrift;
 3. for hver time i (0–47, i går og i dag) tas midtkolonnen og den første cyan pikselen ovenfra, y:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top og y0 er radene for den øverste skalastreken og for null, N_top verdien lest på den øverste etiketten (×1000). Oppløsning: ca. 7–8 meteorer/time per piksel. *Programmets valg (håndbokens likn. 42).*
@@ -47,8 +47,8 @@ Hvis en etikett ikke kan leses, faller programmet tilbake på kalibreringen fra 
 
 Fra høydehistogrammet (n_k meteorer i km k, middelhøyde h_k):
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Håndbokens likn. 43.* Med **fra radar** avkrysset (rad 2 av kontrollene) blir **typetallet** sporhøyden for alle beregninger. Kontroll: diagrammet fra 5.11.2026 – typetall 89,5 km, middel 88,6 km, standardavvik 6,8 km, som bekrefter de ca. 90 km i artikkelen av Cerrotta–Sartori (SKiYMET-middel).
@@ -57,8 +57,8 @@ Hvis skalaen i høydediagrammet endres, varsler programmet: *høydestatistikken 
 
 ## Estimat for ditt bånd
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 Eksperimentelle regler fra **SM6FHZ** (VUSHF 2025): antall og intensitet av refleksjoner skalerer med λ³, varigheten med λ²; λ³-avhengigheten er den samme som i McKinleys likning for underdense spor. IARU Region 1s maksimale pingvarighet vises også (1000 ms på 50 MHz, 500 ms på 70 MHz, 100 ms på 144 MHz, 13 ms på 432 MHz). Verdiene er veiledende og bør sammenlignes med erfaring på båndet. Stasjonsfaktoren K og sammenligningen med RMOB står i [Eksperimentelle prognoser](Experimental-Forecasts-nb).

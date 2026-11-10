@@ -27,17 +27,16 @@ Juhtnuppude all olev oranž rida näitab reeglit praeguste numbritega, nt *N(144
 
 ## Radarilt amatöörsagedusalale
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Allikas:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45. Nordic VUSHF, mai 2025 – peegelduste arv ja intensiivsus skaleeruvad **λ³** järgi, kestus **λ²** järgi (432 MHz on 14–15 dB madalam kui 144 MHz ja kestab 1/9). **Kontroll:** λ³ sõltuvus on sama mis McKinley alatiheda jälje võrrandis. Kui k = 3, muutuvad Collmi 1000 meteoori tunnis umbes **16 peegelduseks tunnis 144 MHz-l**; GRAVESi RMOB-i vaatlejad sagedusel 143,050 MHz loendavad tavaliselt **20 kuni 140 kaja tunnis** (RMOB-i bülletään, juuni 2018): suurusjärk on ühilduv ja erinevus on jaama tegur K. (Juhendi võrrandid 44–45.)
 
 ## Järgmised 24 tundi
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Püsivus:** eelmise päeva sama tunni skaleeritud väärtus (või puudumisel kaks päeva tagasi), korrigeeritud **trassi meteoorivoolude indeksi** I muutusega (Σ ZHR × efektiivsus, vt [Efektiivsuse arvutus](Efficiency-Calculation-et#mudel)). Konstant 10 esindab sporaadilist fooni ja piirab parandust, kui indeks on väike. *Programmi valik (juhendi võrrand 47).*
@@ -65,8 +64,8 @@ Kuu ja aasta võetakse failinimest (`…_MMYYYYrmob…`) või päisest; muidu ka
 
 **Astendaja sobitamine.** K = 1 korral RMOB/Collm suhete mediaanist ühistel tundidel (vähemalt 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Programmi valik (juhendi võrrand 46).* Dialoog näitab ühiseid tunde, suhte mediaani ja k-d; **Jah** rakendab k (ja seab K = 1), **Ei** jätab k = 3 – siis reguleeri K käsitsi samas dialoogis soovitatud väärtusele.

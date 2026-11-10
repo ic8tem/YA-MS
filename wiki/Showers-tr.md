@@ -38,9 +38,8 @@ Katalog, IMO listesinin **küçük yağmurlarını** içerir – örneğin Ekim 
 
 ## Etkinlik profili ve radyant kayması
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 ve λ_max IMO takviminden; eğimler B (tepeden önce ve sonra farklı) ile günlük kaymalar dα/dλ, dδ/dλ ise `data/sciami.csv` dosyasına yazılmış **çalışma değerleridir** (IMO kayma tablosu henüz girilmedi). *Kılavuz denk. 9 ve 13.* Antihelion Kaynağının konumu IMO tablo 6'nın tarihleri arasında doğrusal olarak enterpole edilir (`data/ant_radiante.csv`; 10 Aralık – 20 Eylül arası etkin, ZHR yaklaşık 4).

@@ -38,9 +38,8 @@
 
 ## 活動プロファイルと放射点の移動
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max、α0、δ0、λ_max は IMO のカレンダーから取ります。勾配 B (極大の前後で異なる) と日々の移動 dα/dλ、dδ/dλ は `data/sciami.csv` に書かれた**作業値**です (IMO の放射点移動表はまだ入力されていません)。*マニュアル式 9 と 13。* 反太陽源の位置は IMO 表 6 の日付間で線形補間します (`data/ant_radiante.csv`; 12 月 10 日 – 9 月 20 日に活動、ZHR 約 4)。

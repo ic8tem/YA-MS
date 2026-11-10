@@ -39,8 +39,8 @@ Locator (4, 6 ou 8 caractères ; centre du carré, système Maidenhead de l'IARU
 
 **Source :** formule de l'article Cerrotta–Sartori (figure 7), avec x = d/r, d la distance au sol jusqu'au point de réflexion, H l'altitude des traînées et h l'altitude de la station [17] :
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Vérification :** elle concorde avec la géométrie sphérique exacte à 0,03° près. Le programme utilise l'arc tangente à deux arguments, qui donne des valeurs négatives au-delà de l'horizon et évite le problème de périodicité signalé dans l'article. Une élévation négative vers le point milieu signifie *trajet au-delà de la portée géométrique d'un bond unique*.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Distance au sol à laquelle un rayon d'élévation e atteint l'altitude H (inverse géométrique de la formule ci-dessus) [18] :
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Vérification :** H = 89,5 km, e = 0° → **1062 km**. Dans l'exemple de l'article (JN44BB–IO53RT), le dessin place les croisements de l'horizon à environ 870 km des stations, ce qui correspond à un lobe relevé d'environ 2° (865 km).
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Source :** l'article situe les croisements des courbes où l'horizon de chaque station rencontre la couche E : les intersections de deux cercles de rayon angulaire ρ = d_H/r centrés sur A et B [19–20] :
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 Si 1 − |p0|² < 0, le trajet est plus long que 2·d_H et les stations ne voient **aucune zone commune de la couche E**.
@@ -74,8 +73,8 @@ Si 1 − |p0|² < 0, le trajet est plus long que 2·d_H et les stations ne voien
 
 **Choix :** Hot A et Hot B sont les points situés à la distance s du point milieu M, perpendiculairement au trajet (s = 150 km, réglable de 30 à 400 km) ; A à gauche en regardant de votre station vers le correspondant, B à droite [21]. Le décalage vu de la station vaut environ [22] :
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Vérification :** JN70CN–IN78UO, D = 1710 km : 6,7° avec s = 100 km, **10,0° avec s = 150 km** (comme MSHV et AMS/W8WN), 13,2° avec s = 200 km.
@@ -84,16 +83,16 @@ Si 1 − |p0|² < 0, le trajet est plus long que 2·d_H et les stations ne voien
 
 **Source :** équation de McKinley pour les traînées sous-denses (β = 0, sin α = 1), gains d'antenne exclus ; q = densité linéique d'électrons, r_e = rayon classique de l'électron = 2,818·10⁻¹⁵ m, R1, R2 distances à la traînée, φ demi-angle de diffusion [36] :
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Vérification :** avec q = 10¹⁴ électrons/m à 144 MHz : **181–192 dB** entre 600 et 2200 km, en accord avec les références de l'article à 144 MHz : **182 dB minimum** (GM8JBJ, d'après Kaiser & Closs 1952) et **200 dB en moyenne** (OH5IY).
 
 ## Bilan de liaison
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Les gains sont saisis en dBi et utilisés en dBd (dBi − 2,15). Le rapport donne aussi la marge avec l'**affaiblissement moyen d'OH5IY** (200 dB à 144 MHz, transposé en λ³ à la bande choisie). Référence de l'article : il faut environ **70 dBm de PIRE** (−130 dBm + 200 dB, par ex. environ 400 W dans 14 dBi).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Gain – source :** courbe de Günter Hoch **DL6WU** pour les Yagi longues en fonction de la longueur de boom L, rapportée par W8IO (valable à partir d'environ 2 λ) [39] :
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **Vérification avec les modèles NEC de L.B. Cebik W4RNL à 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design* ; *70-CM Yagi Stacks Part 2*) :
@@ -117,16 +116,16 @@ L'écart ne dépasse jamais **0,1 dB** : le gain dépend de la longueur du boom 
 
 **Lobe – source :** règle de Kraus, avec un lobe circulaire θE = θH = θK [40] :
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Vérification :** les modèles NEC de W4RNL pour les Yagi DL6WU donnent un **lobe horizontal 5–10 % plus étroit** que Kraus : 33,8° / 26,4° / 22,6° pour 12, 19 et 26 éléments, contre 37,3° / 28,0° / 23,9°. Les formules simples ignorent les lobes secondaires avant (W4RNL, *Long-Boom Yagi Rules of Thumb*). Sur les booms longs, le lobe vertical est un peu plus large que l'horizontal (14 λ : 18,4° / 18,8°).
 
 **Choix** [41] :
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Exemple : Yagi de 14 λ à 432 MHz → 20,3 dBi, lobe de 18,1° en horizontal et 19,5° en vertical ; les modèles de W4RNL donnent 20,4 dBi et 18,4° / 18,8°. Ce sont des règles approchées, tirées de quelques antennes DL6WU.

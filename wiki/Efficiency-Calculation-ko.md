@@ -49,36 +49,36 @@
 
 **1. 정반사.** 흔적은 A와 B를 초점으로 하는 타원체에 접할 때만 A에서 B로 신호를 보냅니다(McKinley 1961). 한 유성우의 흔적들은 복사점 방향 ŝ에 평행합니다(논문; McKinley). E층의 각 점 P에 대해 국을 향한 단위 벡터로:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 같은 법칙이 DJ5HG의 QTFGUI(원뿔 산란)의 바탕입니다. 조건은 가우스 허용 범위 σ = 0.05 rad(약 3°)로 받아들입니다 – *프로그램의 선택*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. 각 점의 가중치.** 저밀도 흔적의 전력(McKinley), φ = 산란각의 절반(85°로 제한, *선택*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 한 점에 도달하는 유성 수는 그곳에서의 복사점 고도의 사인(ŝ·û_P)에 비례하며, 이는 IMO가 ZHR에 사용하는 보정과 같습니다.
 
 **3. 합과 백분율.** 흔적 고도에서 15 km 간격의 점 중 두 국 모두에서 로브 앙각보다 위로 보이는 점만 사용합니다(*선택*). 100 %는 그 경로에 가장 유리한 복사점 위치입니다:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F는 경로마다 한 번, 방향 격자(방위 5° 간격, 고도 2.5° 간격)에서 계산하고 보간합니다.
 
 **4. 쪽과 지수.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 표의 문자는 비율이 더 큰 쪽입니다. *프로그램의 선택 (매뉴얼 식 32–33).*
@@ -87,8 +87,8 @@ f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) 
 
 독립적인 검증: **DF5HC**가 소개한(DARC 컨퍼런스, 2018년 1월) **DH9GCD**의 최적 방향 공식. El과 Az는 내 국에서 본 복사점의 고도와 방위, P는 상대국의 방위입니다:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 복사점이 45°에 있고 경로에 대해 정측면일 때 최대입니다. DF5HC는 복사점이 20° 미만이면 너무 낮고 **70° 이상이면 너무 높다**고 봅니다: 이런 시간대는 표에 ↑가 붙고 [천구](Sky-View-ko#경고)에 경고가 표시됩니다. 이 공식은 거리와 고도를 무시하지만 좋은 기준이 됩니다.

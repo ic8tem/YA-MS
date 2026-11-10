@@ -27,17 +27,16 @@ Ipinapakita ng kahel na linya sa ilalim ng mga kontrol ang tuntunin na may kasal
 
 ## Mula sa radar patungo sa amateur band
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Sanggunian:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, Mayo 2025 – ang bilang at lakas ng mga repleksiyon ay sumusunod sa **λ³**, ang tagal sa **λ²** (ang 432 MHz ay 14–15 dB na mas mababa sa 144 MHz at tumatagal nang 1/9). **Pagsusuri:** ang pagdepende sa λ³ ay kapareho ng nasa underdense na ekwasyon ni McKinley. Kapag k = 3, ang 1000 meteor/oras sa Collm ay nagiging mga **16 na repleksiyon/oras sa 144 MHz**; karaniwang nakabibilang ang mga RMOB observer ng GRAVES sa 143.050 MHz ng **20 hanggang 140 echo/oras** (bulletin ng RMOB, Hunyo 2018): magkatugma ang order of magnitude, at ang pagkakaiba ay ang station factor K. (Manwal eq. 44–45.)
 
 ## Susunod na 24 na oras
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Persistence:** ang iniskalang halaga ng parehong oras noong nakaraang araw (o dalawang araw bago kung nawawala), na itinama ng pagbabago ng **indeks ng mga shower sa landas** I (Σ ZHR × episyensya, tingnan ang [Kalkulasyon ng episyensya](Efficiency-Calculation-tl#ang-modelo)). Ang constant na 10 ay kumakatawan sa sporadic na background at nililimitahan ang koreksiyon kapag maliit ang indeks. *Pagpili ng programa (manwal eq. 47).*
@@ -65,8 +64,8 @@ Ang buwan at taon ay kinukuha mula sa pangalan ng file (`…_MMYYYYrmob…`) o m
 
 **Pag-aangkop ng exponent.** Kapag K = 1, mula sa median ng mga ratio na RMOB/Collm sa magkatugmang oras (hindi bababa sa 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Pagpili ng programa (manwal eq. 46).* Ipinapakita ng dialog ang magkatugmang oras, ang median na ratio at ang k; inilalapat ng **Oo** ang k (at itinatakda ang K = 1), pinananatili ng **Hindi** ang k = 3 – pagkatapos ay ayusin nang mano-mano ang K sa halagang iminumungkahi sa parehong dialog.

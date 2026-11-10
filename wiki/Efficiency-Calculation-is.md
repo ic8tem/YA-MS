@@ -49,36 +49,36 @@ Ein lína fyrir hverja drífu sem er virk þann dag (raðað eftir ZHR), 24 dál
 
 **1. Speglunarendurvarp.** Slóð sendir merkið frá A til B aðeins ef hún snertir sporvölu (ellipsoid) með A og B í brennipunktunum (McKinley 1961). Slóðir drífu eru samsíða stefnu geislapunktsins ŝ (greinin; McKinley). Fyrir hvern punkt P í E-laginu, með einingarvigrum í átt að stöðvunum:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     speglunarskilyrði: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 Sama lögmál liggur að baki QTFGUI eftir DJ5HG (cone scattering). Skilyrðið er samþykkt með Gauss-vikmörkum σ = 0,05 rad (um 3°) – *val forritsins*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Vægi hvers punkts.** Afl frá undirþéttri slóð (McKinley), φ = hálft dreifihornið (takmarkað við 85°, *val*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 Fjöldi loftsteina sem nær punkti er í hlutfalli við sínus hæðarhorns geislapunktsins þar (ŝ·û_P), sama leiðrétting og IMO notar fyrir ZHR.
 
 **3. Summa og prósenta.** Punktar á 15 km fresti í hæð slóðanna, aðeins þar sem báðar stöðvar sjá þá ofar hæðarhorni geislans (*val*). 100 % er hagstæðasta staða geislapunktsins fyrir þá leið:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F er reiknað einu sinni fyrir hverja leið á neti stefna (áttarhorn á 5° fresti, hæðarhorn á 2,5° fresti) og brúað.
 
 **4. Hlið og stuðull.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 Stafurinn í töflunni er hliðin með stærra hlutfallið. *Val forritsins (handbók, jöfnur 32–33).*
@@ -87,8 +87,8 @@ Stafurinn í töflunni er hliðin með stærra hlutfallið. *Val forritsins (han
 
 Óháð prófun: formúla **DH9GCD** fyrir bestu stefnu, sem **DF5HC** greindi frá (ráðstefna DARC, janúar 2018), þar sem El og Az eru hæðarhorn og áttarhorn geislapunktsins séð frá þinni stöð og P er áttarhorn mótstöðvarinnar:
 
-```
-E = sin El · cos El · sin(P − Az)          birt sem  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 Hún er mest þegar geislapunkturinn er í 45° og þvert á leiðina. DF5HC telur geislapunktinn of lágan undir 20° og **of háan yfir 70°**: þessar klukkustundir fá ↑ í töflunni og viðvörun í [Himinhvelfingunni](Sky-View-is#viðvaranir). Formúlan hunsar fjarlægð og hæðir, en er góð viðmiðun.

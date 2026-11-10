@@ -35,8 +35,8 @@ Collm のグラフ (720 × 720 ピクセル、純色) の軸の位置は固定�
 2. 最上部の目盛とゼロの**ラベルを読み取ります**。各文字をグラフのドットマトリクス フォントと比較します;
 3. 各時間 i (0–47、昨日と今日) について、中央の列と上から最初のシアンのピクセル y を取ります:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top と y0 は最上部の目盛とゼロの行、N_top は最上部のラベルから読んだ値 (×1000) です。分解能: 1 ピクセルあたり約 7–8 流星/時。*プログラム独自の選択 (マニュアル式 42)。*
@@ -47,8 +47,8 @@ y_top と y0 は最上部の目盛とゼロの行、N_top は最上部のラベ�
 
 高度ヒストグラム (高度 k km の流星数 n_k、平均高度 h_k) から:
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *マニュアル式 43。* **レーダーより** にチェックを入れると (操作部の 2 段目)、**最頻値**がすべての計算の流星痕高度になります。検証: 2026/11/5 のグラフ – 最頻値 89.5 km、平均 88.6 km、標準偏差 6.8 km。Cerrotta–Sartori の記事の約 90 km (SKiYMET の平均) を裏付けます。
@@ -57,8 +57,8 @@ h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sq
 
 ## 自局バンドでの推定
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **SM6FHZ** の経験則 (VUSHF 2025): 反射の数と強度は λ³ に、継続時間は λ² に比例します。λ³ への依存は McKinley のアンダーデンスの式と同じです。IARU Region 1 の最大ピング継続時間も表示されます (50 MHz で 1000 ms、70 MHz で 500 ms、144 MHz で 100 ms、432 MHz で 13 ms)。値は目安であり、実際の運用経験と比較してください。局係数 K と RMOB との比較は [実験的予報](Experimental-Forecasts-ja) にあります。

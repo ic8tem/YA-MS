@@ -6,7 +6,7 @@ name: build
 
 on:
   push:
-    branches: [ main, release, prototipo-1.6 ]
+    branches: [ main, release, prototipo-1.7 ]
     tags: [ 'v*' ]
   workflow_dispatch:
 
@@ -78,8 +78,9 @@ jobs:
           cp src/Assets/ya-ms-256.png pkg/YA-MS/ya-ms.png
           chmod +x pkg/YA-MS/installa.sh pkg/YA-MS/YA-MS
           tar -C pkg -czf dist/YA-MS-$VER-linux-x64.tar.gz YA-MS
+          bash installer/make-deb.sh linux-x64 "$VER" publish/linux-x64 dist
       - name: Fotografie delle linguette (schermo virtuale)
-        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/prototipo-1.6')
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/prototipo-1.7')
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq xvfb fonts-dejavu-core fonts-noto-cjk >/dev/null
           # ore che mancano alle 01:00 UTC successive (Tauridi alte sulla tratta di prova JN70CN - IN78UO)
@@ -102,7 +103,7 @@ jobs:
           mkdir -p shots/radar && cp run/data/radar/* shots/radar/ 2>/dev/null || true
           ls run/data/mappa > shots/mappa.txt 2>&1 || true
       - name: Pubblica le fotografie sul ramo ci-screenshots
-        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/prototipo-1.6')
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/prototipo-1.7')
         run: |
           [ -d shots ] || exit 0
           cd shots
@@ -147,6 +148,7 @@ jobs:
           cp src/Assets/ya-ms-256.png pkg/YA-MS/ya-ms.png
           chmod +x pkg/YA-MS/installa.sh pkg/YA-MS/YA-MS
           tar -C pkg -czf dist/YA-MS-$VER-${{ matrix.name }}.tar.gz YA-MS
+          bash installer/make-deb.sh ${{ matrix.rid }} "$VER" publish/${{ matrix.rid }} dist
       - name: Prova di avvio su ARM (schermo virtuale)
         if: matrix.rid == 'linux-arm64'
         run: |
@@ -198,6 +200,8 @@ jobs:
           cp LEGGIMI.txt pkg/YA-MS/
           ARCH=$([ "${{ matrix.rid }}" = "osx-arm64" ] && echo "apple-silicon" || echo "intel")
           hdiutil create -volname "YA-MS" -srcfolder pkg/YA-MS -ov -format UDZO "dist/YA-MS-$VER-mac-$ARCH.dmg"
+          # stessa applicazione in uno zip: si estrae dove si vuole, la cartella data nasce accanto a YA-MS.app
+          ditto -c -k --keepParent "$APP" "dist/YA-MS-$VER-mac-$ARCH-app.zip"
       - uses: actions/upload-artifact@v4
         with:
           name: macos-${{ matrix.rid }}
@@ -225,15 +229,17 @@ jobs:
             A cura di Costantino IC8TEM.
 
             - Windows: YA-MS-...-windows-x64-setup.exe (installa in C:\YA-MS) oppure lo zip portatile; per Windows a 32 bit i file -windows-x86-.
-            - Linux: YA-MS-...-linux-x64.tar.gz, estrarre e lanciare ./installa.sh (installa in ~/YA-MS).
-            - Raspberry Pi 3/4/5: YA-MS-...-raspberry-pi-64bit.tar.gz (Raspberry Pi OS 64 bit) o -32bit.tar.gz, estrarre e lanciare ./installa.sh.
-            - Mac: YA-MS-...-mac-apple-silicon.dmg (M1/M2/M3/M4) o -mac-intel.dmg; aprire il .dmg, clic destro su "Installa YA-MS.command" > Apri (installa in ~/YA-MS).
+            - Linux (Debian, Ubuntu, Mint): ya-ms_..._amd64.deb, con: sudo apt install ./ya-ms_..._amd64.deb (al primo avvio il programma si copia in ~/YA-MS).
+              Oppure YA-MS-...-linux-x64.tar.gz: portatile (si avvia ./YA-MS dalla cartella estratta) o installabile con ./installa.sh in ~/YA-MS.
+            - Raspberry Pi 3/4/5: ya-ms_..._arm64.deb (Raspberry Pi OS 64 bit) o ya-ms_..._armhf.deb (32 bit); in alternativa YA-MS-...-raspberry-pi-64bit.tar.gz o -32bit.tar.gz.
+            - Mac: YA-MS-...-mac-apple-silicon.dmg (M1/M2/M3/M4) o -mac-intel.dmg: aprire il .dmg, clic destro su "Installa YA-MS.command" > Apri (installa in ~/YA-MS).
+              Oppure YA-MS-...-mac-apple-silicon-app.zip / -mac-intel-app.zip: YA-MS.app da estrarre in una cartella a scelta (la cartella data nasce accanto); al primo avvio clic destro > Apri.
           files: dist/*
       - name: Togli dalla Release i file che non sono pacchetti
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
         run: |
-          gh release view "v$VER" --json assets -q '.assets[].name' | grep -v '^YA-MS-' | while read -r n; do
+          gh release view "v$VER" --json assets -q '.assets[].name' | grep -v -e '^YA-MS-' -e '^ya-ms_' | while read -r n; do
             gh release delete-asset "v$VER" "$n" -y
           done

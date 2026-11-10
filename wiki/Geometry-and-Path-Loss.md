@@ -39,8 +39,8 @@ Locator (4, 6 or 8 characters; centre of the square, IARU Maidenhead system) [14
 
 **Source:** formula of the Cerrotta–Sartori article (Figure 7), with x = d/r, d the ground distance to the reflection point, H the trail height and h the station height [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Check:** it matches exact spherical geometry within 0.03°. The program uses the two-argument arctangent, which gives negative values beyond the horizon and avoids the periodicity problem mentioned in the article. A negative elevation towards the midpoint means *path beyond the geometric range of a single hop*.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Ground distance at which a ray with elevation e reaches the height H (geometric inverse of the formula above) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Check:** H = 89.5 km, e = 0° → **1062 km**. In the article's example (JN44BB–IO53RT) the drawing puts the horizon crossings about 870 km from the stations, which corresponds to a lobe raised about 2° (865 km).
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Source:** the article locates the crossings of the curves where each station's horizon meets the E layer: the crossings of two circles of angular radius ρ = d_H/r centred on A and B [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 If 1 − |p0|² < 0 the path is longer than 2·d_H and the stations see **no common E-layer zone**.
@@ -74,8 +73,8 @@ If 1 − |p0|² < 0 the path is longer than 2·d_H and the stations see **no com
 
 **Choice:** Hot A and Hot B are the points at distance s from the midpoint M, perpendicular to the path (s = 150 km, adjustable 30–400 km); A to the left looking from your station to the DX, B to the right [21]. The offset seen from the station is about [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Check:** JN70CN–IN78UO, D = 1710 km: 6.7° with s = 100 km, **10.0° with s = 150 km** (same as MSHV and AMS/W8WN), 13.2° with s = 200 km.
@@ -84,16 +83,16 @@ If 1 − |p0|² < 0 the path is longer than 2·d_H and the stations see **no com
 
 **Source:** McKinley's equation for underdense trails (β = 0, sin α = 1), antenna gains excluded; q = electron line density, r_e = classical electron radius = 2.818·10⁻¹⁵ m, R1, R2 distances from the trail, φ half the scattering angle [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Check:** with q = 10¹⁴ electrons/m at 144 MHz: **181–192 dB** between 600 and 2200 km, in line with the article references at 144 MHz: **182 dB minimum** (GM8JBJ, from Kaiser & Closs 1952) and **200 dB average** (OH5IY).
 
 ## Link budget
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Gains are entered in dBi and used in dBd (dBi − 2.15). The report also gives the margin with **OH5IY's average path loss** (200 dB at 144 MHz, scaled with λ³ to the chosen band). Article reference: about **70 dBm EIRP** is needed (−130 dBm + 200 dB, e.g. about 400 W into 14 dBi).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Gain – source:** curve by Günter Hoch **DL6WU** for long Yagis as a function of boom length L, reported by W8IO (valid from about 2 λ) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **Check against the NEC models of L.B. Cebik W4RNL at 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ The difference never exceeds **0.1 dB**: the gain depends on the boom length mor
 
 **Lobe – source:** Kraus rule, with a circular lobe θE = θH = θK [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Check:** W4RNL's NEC models of DL6WU Yagis give a **horizontal lobe 5–10 % narrower** than Kraus: 33.8° / 26.4° / 22.6° for 12, 19 and 26 elements, against 37.3° / 28.0° / 23.9°. Simple formulas ignore the forward side lobes (W4RNL, *Long-Boom Yagi Rules of Thumb*). On long booms the vertical lobe is slightly wider than the horizontal (14 λ: 18.4° / 18.8°).
 
 **Choice** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Example: 14 λ Yagi at 432 MHz → 20.3 dBi, lobe 18.1° horizontal and 19.5° vertical; W4RNL's models give 20.4 dBi and 18.4° / 18.8°. These are approximate rules derived from a few DL6WU antennas.

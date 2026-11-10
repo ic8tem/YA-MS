@@ -39,8 +39,8 @@ Locator (4, 6 atau 8 karakter; pusat kotak, sistem Maidenhead IARU) [14]. Jarak,
 
 **Sumber:** rumus dari artikel Cerrotta–Sartori (Gambar 7), dengan x = d/r, d jarak permukaan ke titik pantul, H ketinggian jejak dan h ketinggian stasiun [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Verifikasi:** cocok dengan geometri bola eksak dalam 0,03°. Program memakai arktangen dua argumen, yang memberikan nilai negatif di luar cakrawala dan menghindari masalah periodisitas yang disebut dalam artikel. Elevasi negatif ke arah titik tengah berarti *lintasan melebihi jangkauan geometris satu lompatan*.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Jarak permukaan tempat sinar dengan elevasi e mencapai ketinggian H (invers geometris dari rumus di atas) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Verifikasi:** H = 89,5 km, e = 0° → **1062 km**. Pada contoh dalam artikel (JN44BB–IO53RT) gambar menempatkan perpotongan cakrawala sekitar 870 km dari stasiun, yang sesuai dengan lobus yang dinaikkan sekitar 2° (865 km).
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Sumber:** artikel menentukan perpotongan kurva tempat cakrawala tiap stasiun bertemu lapisan E: perpotongan dua lingkaran berjari-jari sudut ρ = d_H/r yang berpusat di A dan B [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 Jika 1 − |p0|² < 0, lintasan lebih panjang dari 2·d_H dan kedua stasiun **tidak melihat zona bersama lapisan E**.
@@ -74,8 +73,8 @@ Jika 1 − |p0|² < 0, lintasan lebih panjang dari 2·d_H dan kedua stasiun **ti
 
 **Pilihan:** Hot A dan Hot B adalah titik pada jarak s dari titik tengah M, tegak lurus terhadap lintasan (s = 150 km, dapat diatur 30–400 km); A di kiri jika melihat dari stasiun Anda ke DX, B di kanan [21]. Offset yang terlihat dari stasiun kira-kira [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Verifikasi:** JN70CN–IN78UO, D = 1710 km: 6,7° dengan s = 100 km, **10,0° dengan s = 150 km** (sama dengan MSHV dan AMS/W8WN), 13,2° dengan s = 200 km.
@@ -84,16 +83,16 @@ Jika 1 − |p0|² < 0, lintasan lebih panjang dari 2·d_H dan kedua stasiun **ti
 
 **Sumber:** persamaan McKinley untuk jejak underdense (β = 0, sin α = 1), tanpa penguatan antena; q = kerapatan elektron linear, r_e = jari-jari elektron klasik = 2,818·10⁻¹⁵ m, R1, R2 jarak ke jejak, φ setengah sudut hambur [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Verifikasi:** dengan q = 10¹⁴ elektron/m pada 144 MHz: **181–192 dB** antara 600 dan 2200 km, sejalan dengan referensi artikel pada 144 MHz: **minimum 182 dB** (GM8JBJ, dari Kaiser & Closs 1952) dan **rata-rata 200 dB** (OH5IY).
 
 ## Anggaran link
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Penguatan dimasukkan dalam dBi dan dipakai dalam dBd (dBi − 2,15). Laporan juga memberikan margin dengan **redaman rata-rata OH5IY** (200 dB pada 144 MHz, diskalakan dengan λ³ ke band yang dipilih). Referensi artikel: diperlukan sekitar **70 dBm EIRP** (−130 dBm + 200 dB, mis. sekitar 400 W ke antena 14 dBi).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Penguatan – sumber:** kurva Günter Hoch **DL6WU** untuk Yagi panjang sebagai fungsi panjang boom L, dilaporkan oleh W8IO (berlaku mulai sekitar 2 λ) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **Verifikasi terhadap model NEC L.B. Cebik W4RNL pada 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ Selisihnya tidak pernah melebihi **0,1 dB**: penguatan lebih bergantung pada pan
 
 **Lobus – sumber:** aturan Kraus, dengan lobus melingkar θE = θH = θK [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Verifikasi:** model NEC W4RNL untuk Yagi DL6WU memberikan **lobus horizontal 5–10 % lebih sempit** daripada Kraus: 33,8° / 26,4° / 22,6° untuk 12, 19 dan 26 elemen, dibandingkan 37,3° / 28,0° / 23,9°. Rumus sederhana mengabaikan lobus samping depan (W4RNL, *Long-Boom Yagi Rules of Thumb*). Pada boom panjang lobus vertikal sedikit lebih lebar daripada horizontal (14 λ: 18,4° / 18,8°).
 
 **Pilihan** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Contoh: Yagi 14 λ pada 432 MHz → 20,3 dBi, lobus 18,1° horizontal dan 19,5° vertikal; model W4RNL memberikan 20,4 dBi dan 18,4° / 18,8°. Ini adalah aturan perkiraan yang diturunkan dari beberapa antena DL6WU.

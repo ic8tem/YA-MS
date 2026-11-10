@@ -38,9 +38,8 @@ Katalogen inneholder de **mindre svermene** på IMO-listen – for eksempel Okto
 
 ## Aktivitetsprofil og radiantens forflytning
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 og λ_max fra IMO-kalenderen; stigningstallene B (ulike før og etter maksimum) og de daglige forflytningene dα/dλ, dδ/dλ er **arbeidsverdier** skrevet i `data/sciami.csv` (IMOs tabell over radiantforflytning er ennå ikke lagt inn). *Håndbokens likn. 9 og 13.* Posisjonen til Antihelion-kilden interpoleres lineært mellom datoene i IMOs tabell 6 (`data/ant_radiante.csv`; aktiv 10. desember – 20. september, ZHR ca. 4).

@@ -34,8 +34,8 @@ Opties boven de lijst van zwermen: **Richtingen Hot A / Hot B**, **Kaart van Eur
 
 Voor het getoonde tijdstip telt het programma over alle zwermen boven de horizon het gewicht ZHR × efficiëntie op, verdeeld over zijde A (fractie f_A) en zijde B. De zijde met het grootste gewicht levert de aanbevolen hot, rood getekend:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Keuze van het programma (vgl. 23 van de handleiding).* Herkomst van het idee: DJ5HG, aangehaald door DF5HC (DARC-congres 2018) – afhankelijk van de positie van de radiant is een van de twee punten, HOT-A of HOT-B, gunstiger. Het 10–30° naar die kant draaien (side-scatter) komt uit het artikel van Cerrotta–Sartori.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 Voor elk punt P van de E-laag worden de bijdragen van alle actieve zwermen aan de efficiëntie (dezelfde spiegelvoorwaarde als bij de [efficiëntie](Efficiency-Calculation-nl#het-model)) opgeteld, gewogen met de ZHR. Punten met minstens 3 % van het maximum vormen de PREV-zones; elke zone wordt getekend als een ellips met middelpunt = gewogen gemiddelde van de punten en assen = tweemaal hun spreiding.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Keuze van het programma (vgl. 34 van de handleiding).* Het is de praktische regel: als de zwerm van noord naar zuid trekt, vallen de bruikbare sporen in het oosten en westen.
@@ -81,8 +81,8 @@ Daarnaast de tekst van de berekening: lengte en azimut van het traject, middelpu
 
 *DOORSNEDE – de meest waarschijnlijke sporen gezien vanaf de antenne richting tegenstation.* Horizontaal het **azimut t.o.v. het tegenstation** (← A links, B → rechts), verticaal de **elevatie**. Voor elke zwerm worden de 14 sterkste reflectiepunten genomen; elk spoor is een lijnstuk gericht naar de radiant, van 10 km boven tot 10 km onder de spoorhoogte (hooguit 60 km per kant), dikker naarmate het waarschijnlijker is. Ook getekend: de antennebundel (−3 dB-cirkel rond de bundelelevatie), het tegenstation en Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Keuze van het programma (vgl. 35 van de handleiding).*

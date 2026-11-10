@@ -35,8 +35,8 @@ Collm-grafið (720 × 720 dílar, hreinir litir) hefur fasta staðsetningu ása,
 2. **les merkimiðana** við efsta kvarðastrikið og við núllið með því að bera hvert tákn saman við punktafylkisletur grafsins;
 3. fyrir hverja klukkustund i (0–47, í gær og í dag) tekur það miðdálkinn og fyrsta blágræna dílinn ofan frá, y:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top og y0 eru línur efsta kvarðastriksins og núllsins, N_top gildið sem lesið er á efsta merkimiðanum (×1000). Upplausn: um 7–8 loftsteinar/klst. á hvern díl. *Val forritsins (handbók, jafna 42).*
@@ -47,8 +47,8 @@ Ef ekki tekst að lesa merkimiða grípur forritið til kvörðunarinnar frá 5/
 
 Úr hæðarstuðlaritinu (n_k loftsteinar við km k, meðalhæð h_k):
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Handbók, jafna 43.* Þegar hakað er við **frá ratsjá** (röð 2 í stýringunum) verður **tíðasta gildið** hæð slóða í öllum útreikningum. Prófun: graf frá 5/11/2026 – tíðasta gildi 89,5 km, meðaltal 88,6 km, staðalfrávik 6,8 km, sem staðfestir ~90 km í grein Cerrotta–Sartori (meðaltal SKiYMET).
@@ -57,8 +57,8 @@ Ef kvarði hæðargrafsins breytist varar forritið við: *tölfræði hæða (t
 
 ## Mat fyrir þitt tíðnisvið
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 Tilraunareglur **SM6FHZ** (VUSHF 2025): fjöldi og styrkur endurvarpa breytist með λ³, lengd með λ²; λ³-háðin er sú sama og í jöfnu McKinleys fyrir undirþéttar slóðir. Hámarkslengd pings samkvæmt IARU Region 1 er einnig sýnd (1000 ms á 50 MHz, 500 ms á 70 MHz, 100 ms á 144 MHz, 13 ms á 432 MHz). Gildin eru til viðmiðunar og ber að bera saman við reynslu í loftinu. Stöðvarstuðullinn K og samanburðurinn við RMOB eru í [Tilraunaspám](Experimental-Forecasts-is).

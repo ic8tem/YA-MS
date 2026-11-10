@@ -56,18 +56,16 @@ The sequence is tied to **UTC** (PE1ITR): the step lit now is computed from the 
 
 A trail is heard only if the beam lights it while it lasts:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0.3 s is a typical underdense trail duration at 143 MHz – a fixed value, *choice of the program* (the SM6FHZ λ² rule scales durations between bands but gives no starting value).
 
 ### Expected echoes (experimental)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 The forecast of [Experimental forecasts](Experimental-Forecasts) (which already contains the station factor K) is scaled from its frequency f_fc to 143.050 MHz with the SM6FHZ rule (same exponent k), corrected by the ratio of the shower indices of the two paths (the constant 10 represents the sporadic background, as in the forecast) and multiplied by the detection factor. Indicative only: compare with RMOB observers.

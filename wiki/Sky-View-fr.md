@@ -34,8 +34,8 @@ Options au-dessus de la liste des essaims : **Directions Hot A / Hot B**, **Cart
 
 Pour l'heure affichée, le programme additionne sur tous les essaims au-dessus de l'horizon le poids ZHR × efficacité, réparti entre le côté A (fraction f_A) et le côté B. Le côté dont le poids est le plus grand donne le Hot conseillé, dessiné en rouge :
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Choix du programme (manuel, éq. 23).* Origine de l'idée : DJ5HG, rapporté par DF5HC (conférence DARC 2018) – selon la position du radiant, l'un des deux points, HOT-A ou HOT-B, est plus favorable. Tourner de 10–30° vers ce côté (side-scatter) vient de l'article Cerrotta–Sartori.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 Pour chaque point P de la couche E, on additionne les contributions à l'efficacité de tous les essaims actifs (même condition spéculaire que pour l'[efficacité](Efficiency-Calculation-fr#le-modèle)), pondérées par le ZHR. Les points qui atteignent au moins 3 % du maximum forment les zones PREV ; chacune est dessinée comme une ellipse dont le centre est la moyenne pondérée des points et dont les axes valent deux fois leur dispersion.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Choix du programme (manuel, éq. 34).* C'est la règle pratique : si l'essaim balaie du nord au sud, les traînées utiles tombent à l'est et à l'ouest.
@@ -81,8 +81,8 @@ Les radiants sur une voûte céleste vue de votre station, avec leur **code IMO*
 
 *COUPE – les traînées les plus probables vues de l'antenne vers le correspondant.* En abscisse, l'**azimut par rapport au correspondant** (← A à gauche, B → à droite), en ordonnée l'**élévation**. Pour chaque essaim, on retient les 14 points de réflexion les plus forts ; chaque traînée est un segment orienté vers le radiant, de 10 km au-dessus à 10 km au-dessous de l'altitude des traînées (60 km au plus de chaque côté), d'autant plus épais qu'elle est probable. Sont aussi dessinés : le lobe de l'antenne (cercle à −3 dB autour de l'élévation du lobe), le correspondant et Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Choix du programme (manuel, éq. 35).*

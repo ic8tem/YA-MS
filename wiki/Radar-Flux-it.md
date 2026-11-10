@@ -35,8 +35,8 @@ Il grafico di Collm (720 × 720 pixel, colori puri) ha gli assi in posizione fis
 2. **legge le etichette** della tacca più alta e dello zero confrontando ogni carattere con il font a matrice di punti del grafico;
 3. per ogni ora i (0–47, ieri e oggi) prende la colonna centrale e il primo pixel ciano dall'alto, y:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteore/ora
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top e y0 sono le righe della tacca più alta e dello zero, N_top il valore letto sull'etichetta più alta (×1000). Risoluzione: circa 7–8 meteore/ora per pixel. *Scelta del programma (eq. 42 del manuale).*
@@ -47,8 +47,8 @@ Se un'etichetta non si riesce a leggere, il programma ripiega sulla taratura del
 
 Dall'istogramma delle quote (n_k meteore nel km k, quota media h_k):
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Eq. 43 del manuale.* Con **dal radar** spuntato (riga 2 dei comandi) la **moda** diventa la quota delle scie di tutti i calcoli. Verifica: grafico del 5/11/2026 – moda 89,5 km, media 88,6 km, deviazione standard 6,8 km, a conferma dei ~90 km dell'articolo Cerrotta–Sartori (media SKiYMET).
@@ -57,8 +57,8 @@ Se cambia la scala del grafico delle quote, il programma avvisa: *le statistiche
 
 ## Stima sulla tua banda
 
-```
-meteore/ora a f = Collm(36.2 MHz) · (36.2 / f)^k          durata ping · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 Regole sperimentali di **SM6FHZ** (VUSHF 2025): numero e intensità delle riflessioni scalano con λ³, la durata con λ²; la dipendenza da λ³ è la stessa dell'equazione delle scie sottodense di McKinley. Viene mostrata anche la durata massima del ping secondo la IARU Regione 1 (1000 ms a 50 MHz, 500 ms a 70 MHz, 100 ms a 144 MHz, 13 ms a 432 MHz). I valori sono indicativi, da confrontare con l'esperienza in aria. Il fattore di stazione K e il confronto con RMOB sono in [Attuazione sperimentale previsioni](Experimental-Forecasts-it).

@@ -35,8 +35,8 @@ Grafik Collm (720 × 720 piksel, warna murni) memiliki posisi sumbu yang tetap, 
 2. **membaca label** tanda skala tertinggi dan nol dengan membandingkan setiap karakter dengan font dot-matrix grafik;
 3. untuk setiap jam i (0–47, kemarin dan hari ini) mengambil kolom tengah dan piksel sian pertama dari atas, y:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top dan y0 adalah baris tanda skala tertinggi dan nol, N_top nilai yang terbaca pada label tertinggi (×1000). Resolusi: sekitar 7–8 meteor/jam per piksel. *Pilihan program (manual pers. 42).*
@@ -47,8 +47,8 @@ Jika sebuah label tidak dapat dibaca, program kembali ke kalibrasi 5/11/2026 (**
 
 Dari histogram ketinggian (n_k meteor pada km ke-k, ketinggian rata-rata h_k):
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Manual pers. 43.* Dengan **dari radar** dicentang (baris 2 kontrol), **modus** menjadi ketinggian jejak untuk semua perhitungan. Verifikasi: grafik 5/11/2026 – modus 89,5 km, rata-rata 88,6 km, simpangan baku 6,8 km, mengonfirmasi ~90 km dalam artikel Cerrotta–Sartori (rata-rata SKiYMET).
@@ -57,8 +57,8 @@ Jika skala grafik ketinggian berubah, program memperingatkan: *statistik ketingg
 
 ## Perkiraan untuk band Anda
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 Aturan eksperimental dari **SM6FHZ** (VUSHF 2025): jumlah dan intensitas pantulan berskala dengan λ³, durasinya dengan λ²; ketergantungan λ³ sama dengan pada persamaan underdense McKinley. Durasi ping maksimum IARU Region 1 juga ditampilkan (1000 ms di 50 MHz, 500 ms di 70 MHz, 100 ms di 144 MHz, 13 ms di 432 MHz). Nilai-nilai ini bersifat indikatif, untuk dibandingkan dengan pengalaman di udara. Faktor stasiun K dan perbandingan dengan RMOB ada di [Prakiraan eksperimental](Experimental-Forecasts-id).

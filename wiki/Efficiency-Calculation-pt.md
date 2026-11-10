@@ -49,36 +49,36 @@ Todos os passos estão no [manual de cálculo](Efficiency-Explanation-pt) (`doc/
 
 **1. Reflexão especular.** Um rasto envia o sinal de A para B só se for tangente a um elipsoide com A e B nos focos (McKinley 1961). Os rastos de uma chuva são paralelos à direção do radiante ŝ (artigo; McKinley). Para cada ponto P da camada E, com os vetores unitários em direção às estações:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 A mesma lei está na base do QTFGUI de DJ5HG (cone scattering). A condição é aceite com uma tolerância gaussiana σ = 0,05 rad (cerca de 3°) – *escolha do programa*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Peso de cada ponto.** Potência de um rasto subdenso (McKinley), φ = metade do ângulo de dispersão (limitado a 85°, *escolha*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 O número de meteoros que chega a um ponto é proporcional ao seno da elevação do radiante nesse ponto (ŝ·û_P), a mesma correção que a IMO usa para o ZHR.
 
 **3. Soma e percentagem.** Pontos a cada 15 km à altitude dos rastos, só onde ambas as estações os veem acima da elevação do lóbulo (*escolha*). 100 % é a posição do radiante mais favorável para esse percurso:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F é calculado uma vez por percurso numa grelha de direções (azimute a cada 5°, elevação a cada 2,5°) e interpolado.
 
 **4. Lado e índice.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 A letra na tabela é o lado com a fração maior. *Escolhas do programa (eq. 32–33 do manual).*
@@ -87,8 +87,8 @@ A letra na tabela é o lado com a fração maior. *Escolhas do programa (eq. 32�
 
 Uma verificação independente: a fórmula da melhor direção de **DH9GCD**, citada por **DF5HC** (conferência DARC, janeiro de 2018), com El e Az a elevação e o azimute do radiante vistos da sua estação e P o azimute do correspondente:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 É máxima com o radiante a 45° e de lado em relação ao percurso. DF5HC considera o radiante demasiado baixo abaixo de 20° e **demasiado alto acima de 70°**: essas horas levam ↑ na tabela e um aviso na [Abóbada celeste](Sky-View-pt#avisos). A fórmula ignora a distância e as altitudes, mas é uma boa referência.

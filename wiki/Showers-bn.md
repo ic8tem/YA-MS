@@ -38,9 +38,8 @@
 
 ## সক্রিয়তার প্রোফাইল ও বিকিরণ বিন্দুর সরণ
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 ও λ_max IMO ক্যালেন্ডার থেকে; ঢাল B (সর্বোচ্চের আগে ও পরে আলাদা) এবং দৈনিক সরণ dα/dλ, dδ/dλ হলো `data/sciami.csv`-এ লেখা **কার্যকরী মান** (IMO-র সরণ-সারণি এখনো যোগ করা হয়নি)। *ম্যানুয়ালের সমীকরণ 9 ও 13।* অ্যান্টিহেলিয়ন উৎসের অবস্থান IMO সারণি 6-এর তারিখগুলোর মধ্যে রৈখিকভাবে ইন্টারপোলেট করা হয় (`data/ant_radiante.csv`; 10 ডিসেম্বর – 20 সেপ্টেম্বর সক্রিয়, ZHR প্রায় 4)।

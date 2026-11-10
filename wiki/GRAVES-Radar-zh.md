@@ -56,18 +56,16 @@
 
 只有当余迹存在期间被波束照射到时，才能听到它：
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0.3 s 是 143 MHz 上欠密余迹的典型持续时间——这是一个固定值，属于*程序的选择*（SM6FHZ 的 λ² 规则可在频段之间换算持续时间，但不提供起始值）。
 
 ### 预期回波（试验性）
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 [试验性预报](Experimental-Forecasts-zh)中的预报（已包含电台因子 K）用 SM6FHZ 规则（相同的指数 k）从其频率 f_fc 换算到 143.050 MHz，再用两条路径流星雨指数之比加以修正（常数 10 代表偶发流星背景，与预报中相同），最后乘以检测因子。仅供参考：请与 RMOB 观测者的数据比较。

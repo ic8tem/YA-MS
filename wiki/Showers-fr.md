@@ -38,9 +38,8 @@ Le catalogue comprend les **essaims mineurs** de la liste IMO – par exemple le
 
 ## Profil d'activité et déplacement du radiant
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 et λ_max viennent du calendrier IMO ; les pentes B (différentes avant et après le maximum) et les déplacements quotidiens dα/dλ, dδ/dλ sont des **valeurs de travail** inscrites dans `data/sciami.csv` (le tableau IMO des déplacements n'a pas encore été saisi). *Manuel, éq. 9 et 13.* La position de la Source de l'antihélion est interpolée linéairement entre les dates du tableau 6 de l'IMO (`data/ant_radiante.csv` ; active du 10 décembre au 20 septembre, ZHR environ 4).

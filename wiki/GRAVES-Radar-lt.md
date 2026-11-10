@@ -56,18 +56,16 @@ Seka susieta su **UTC** laiku (PE1ITR): dabar apšviestas žingsnis apskaičiuoj
 
 Pėdsakas girdimas tik tada, jei pluoštas jį apšviečia, kol jis egzistuoja:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0,3 s – tipinė retojo pėdsako trukmė ties 143 MHz – fiksuota vertė, *programos sprendimas* (SM6FHZ λ² taisyklė perskaičiuoja trukmes tarp juostų, bet neduoda pradinės vertės).
 
 ### Laukiami aidai (eksperimentiniai)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 [Eksperimentinių prognozių](Experimental-Forecasts-lt) prognozė (kurioje jau yra stoties koeficientas K) perskaičiuojama iš jos dažnio f_fc į 143,050 MHz pagal SM6FHZ taisyklę (tas pats rodiklis k), pataisoma dviejų trasų srautų indeksų santykiu (konstanta 10 atspindi sporadinį foną, kaip prognozėje) ir padauginama iš aptikimo koeficiento. Tik orientacinė vertė: palyginkite su RMOB stebėtojais.

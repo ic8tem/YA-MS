@@ -56,18 +56,16 @@ Nakatali sa **UTC** ang sequence (PE1ITR): kinakalkula ang hakbang na naiilawan 
 
 Naririnig lamang ang isang bakas kung iniilawan ito ng beam habang tumatagal ito:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 Ang 0.3 s ay karaniwang tagal ng underdense na bakas sa 143 MHz – isang nakapirming halaga, *pagpili ng programa* (iniskala ng λ² na tuntunin ni SM6FHZ ang tagal sa pagitan ng mga banda pero hindi ito nagbibigay ng panimulang halaga).
 
 ### Inaasahang echo (eksperimental)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 Ang pagtataya ng [Eksperimental na pagtataya](Experimental-Forecasts-tl) (na may kasama nang station factor K) ay iniiskala mula sa frequency nitong f_fc patungo sa 143.050 MHz gamit ang tuntunin ni SM6FHZ (parehong exponent k), itinatama ng ratio ng mga indeks ng shower ng dalawang landas (ang constant na 10 ay kumakatawan sa sporadic na background, gaya sa pagtataya) at minumultiply sa detection factor. Pahiwatig lamang: ihambing sa mga RMOB observer.

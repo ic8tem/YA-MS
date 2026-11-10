@@ -38,9 +38,8 @@ Il catalogo comprende gli **sciami minori** dell'elenco IMO – per esempio le C
 
 ## Profilo di attività e spostamento del radiante
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 e λ_max dal calendario IMO; le pendenze B (diverse prima e dopo il massimo) e gli spostamenti giornalieri dα/dλ, dδ/dλ sono **valori di lavoro** scritti in `data/sciami.csv` (la tabella degli spostamenti dell'IMO non è ancora stata inserita). *Eq. 9 e 13 del manuale.* La posizione della Sorgente Antielio è interpolata linearmente tra le date della tabella 6 dell'IMO (`data/ant_radiante.csv`; attiva dal 10 dicembre al 20 settembre, ZHR circa 4).

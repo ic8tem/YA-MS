@@ -35,8 +35,8 @@ The Collm chart (720 × 720 pixels, pure colours) has fixed axis positions, but 
 2. **reads the labels** of the highest tick and of the zero by comparing each character with the dot-matrix font of the chart;
 3. for each hour i (0–47, yesterday and today) takes the centre column and the first cyan pixel from the top, y:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top and y0 are the rows of the highest tick and of the zero, N_top the value read on the highest label (×1000). Resolution: about 7–8 meteors/hour per pixel. *Choice of the program (manual eq. 42).*
@@ -47,8 +47,8 @@ If a label cannot be read, the program falls back to the calibration of 5/11/202
 
 From the height histogram (n_k meteors in km k, mean height h_k):
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Manual eq. 43.* With **from radar** ticked (row 2 of the controls) the **mode** becomes the trail height of all calculations. Check: chart of 5/11/2026 – mode 89.5 km, mean 88.6 km, standard deviation 6.8 km, confirming the ~90 km of the Cerrotta–Sartori article (SKiYMET mean).
@@ -57,8 +57,8 @@ If the scale of the height chart changes, the program warns: *height statistics 
 
 ## Estimate at your band
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 Experimental rules by **SM6FHZ** (VUSHF 2025): number and intensity of reflections scale with λ³, duration with λ²; the λ³ dependence is the same as in McKinley's underdense equation. The IARU Region 1 maximum ping duration is shown too (1000 ms at 50 MHz, 500 ms at 70 MHz, 100 ms at 144 MHz, 13 ms at 432 MHz). Values are indicative, to compare with experience on the air. The station factor K and the comparison with RMOB are in [Experimental forecasts](Experimental-Forecasts).

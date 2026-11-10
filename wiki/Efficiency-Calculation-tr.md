@@ -49,36 +49,36 @@ Tüm adımlar [hesap kılavuzunda](Efficiency-Explanation-tr) (`doc/YA-MS_manual
 
 **1. Aynasal yansıma.** Bir iz sinyali A'dan B'ye ancak odakları A ve B olan bir elipsoide teğetse gönderir (McKinley 1961). Bir yağmurun izleri radyant yönü ŝ'ye paraleldir (makale; McKinley). E katmanının her P noktası için, istasyonlara doğru birim vektörlerle:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 DJ5HG'nin QTFGUI programı da aynı yasaya dayanır (koni saçılması). Koşul σ = 0,05 rad (yaklaşık 3°) Gauss toleransıyla kabul edilir – *programın seçimi*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Her noktanın ağırlığı.** Underdense bir izin gücü (McKinley), φ = saçılma açısının yarısı (85° ile sınırlı, *seçim*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 Bir noktaya ulaşan meteor sayısı, oradaki radyant elevasyonunun sinüsüyle (ŝ·û_P) orantılıdır; IMO'nun ZHR için kullandığı düzeltmenin aynısı.
 
 **3. Toplam ve yüzde.** İz yüksekliğinde her 15 km'de bir nokta, yalnızca iki istasyonun da onları lob elevasyonunun üstünde gördüğü yerlerde (*seçim*). %100, o yol için radyantın en elverişli konumudur:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F her yol için bir kez, bir yönler ızgarası üzerinde (azimut her 5°, elevasyon her 2,5°) hesaplanır ve enterpole edilir.
 
 **4. Taraf ve endeks.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 Tablodaki harf, oranı büyük olan taraftır. *Programın seçimleri (kılavuz denk. 32–33).*
@@ -87,8 +87,8 @@ Tablodaki harf, oranı büyük olan taraftır. *Programın seçimleri (kılavuz 
 
 Bağımsız bir denetim: **DH9GCD**'nin en iyi yön formülü, **DF5HC**'nin aktarımıyla (DARC konferansı, Ocak 2018); El ve Az istasyonunuzdan görülen radyant elevasyonu ve azimutu, P karşı istasyonun azimutu:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 Radyant 45°'de ve yola yandan baktığında en büyüktür. DF5HC radyantı 20°'nin altında çok alçak, **70°'nin üstünde çok yüksek** sayar: bu saatler tabloda ↑ alır ve [Gökyüzü kubbesinde](Sky-View-tr#uyarılar) bir uyarı çıkar. Formül mesafeyi ve yükseklikleri hesaba katmaz, ama iyi bir referanstır.

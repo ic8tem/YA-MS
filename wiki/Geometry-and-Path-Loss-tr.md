@@ -39,8 +39,8 @@ Lokatör (4, 6 ya da 8 karakter; karenin merkezi, IARU Maidenhead sistemi) [14].
 
 **Kaynak:** Cerrotta–Sartori makalesinin formülü (Şekil 7); x = d/r, d yansıma noktasına yer mesafesi, H iz yüksekliği ve h istasyon yüksekliği [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Doğrulama:** kesin küresel geometriyle 0,03° içinde örtüşür. Program iki argümanlı arktanjantı kullanır; bu, ufkun ötesinde negatif değerler verir ve makalede değinilen periyodiklik sorununu ortadan kaldırır. Orta noktaya doğru negatif elevasyon *yolun tek atlamanın geometrik menzilinin ötesinde* olduğu anlamına gelir.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Elevasyonu e olan bir ışının H yüksekliğine ulaştığı yer mesafesi (yukarıdaki formülün geometrik tersi) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Doğrulama:** H = 89,5 km, e = 0° → **1062 km**. Makalenin örneğinde (JN44BB–IO53RT) çizim ufuk kesişimlerini istasyonlardan yaklaşık 870 km'ye koyar; bu da yaklaşık 2° yükseltilmiş bir loba (865 km) karşılık gelir.
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Kaynak:** makale, her istasyonun ufkunun E katmanıyla buluştuğu eğrilerin kesişimlerini bulur: merkezleri A ve B'de olan, açısal yarıçapı ρ = d_H/r iki dairenin kesişimleri [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 1 − |p0|² < 0 ise yol 2·d_H'den uzundur ve istasyonlar **ortak bir E katmanı bölgesi görmez**.
@@ -74,8 +73,8 @@ p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
 
 **Seçim:** Hot A ve Hot B, orta nokta M'den s uzaklığında, yola dik noktalardır (s = 150 km, 30–400 km arası ayarlanabilir); A, istasyonunuzdan DX'e bakarken solda, B sağdadır [21]. İstasyondan görülen sapma yaklaşık olarak [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Doğrulama:** JN70CN–IN78UO, D = 1710 km: s = 100 km ile 6,7°, **s = 150 km ile 10,0°** (MSHV ve AMS/W8WN ile aynı), s = 200 km ile 13,2°.
@@ -84,16 +83,16 @@ p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
 
 **Kaynak:** underdense izler için McKinley denklemi (β = 0, sin α = 1), anten kazançları hariç; q = doğrusal elektron yoğunluğu, r_e = klasik elektron yarıçapı = 2,818·10⁻¹⁵ m, R1, R2 ize olan mesafeler, φ saçılma açısının yarısı [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Doğrulama:** 144 MHz'de q = 10¹⁴ elektron/m ile: 600 ile 2200 km arasında **181–192 dB**; makalenin 144 MHz referanslarıyla uyumlu: **en az 182 dB** (GM8JBJ, Kaiser & Closs 1952'den) ve **ortalama 200 dB** (OH5IY).
 
 ## Bağlantı bütçesi
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Kazançlar dBi olarak girilir ve dBd olarak kullanılır (dBi − 2,15). Rapor ayrıca **OH5IY'nin ortalama yol kaybıyla** (144 MHz'de 200 dB, λ³ ile seçilen banda ölçeklenmiş) payı da verir. Makaledeki referans: yaklaşık **70 dBm EIRP** gerekir (−130 dBm + 200 dB, örn. 14 dBi'ye yaklaşık 400 W).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Kazanç – kaynak:** Günter Hoch **DL6WU**'nun uzun Yagi'ler için boom uzunluğu L'ye bağlı eğrisi, W8IO'nun aktarımıyla (yaklaşık 2 λ'dan itibaren geçerli) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **L.B. Cebik W4RNL'nin 432 MHz'deki NEC modelleriyle doğrulama** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ Fark hiçbir zaman **0,1 dB**'yi aşmaz: kazanç tasarımdan çok boom uzunluğu
 
 **Lob – kaynak:** Kraus kuralı, dairesel lobla θE = θH = θK [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Doğrulama:** W4RNL'nin DL6WU Yagi'lerine ait NEC modelleri, Kraus'a göre **%5–10 daha dar bir yatay lob** verir: 12, 19 ve 26 eleman için 33,8° / 26,4° / 22,6°, karşılığında 37,3° / 28,0° / 23,9°. Basit formüller öndeki yan lobları hesaba katmaz (W4RNL, *Long-Boom Yagi Rules of Thumb*). Uzun boom'larda dikey lob yataydan biraz daha geniştir (14 λ: 18,4° / 18,8°).
 
 **Seçim** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Örnek: 432 MHz'de 14 λ'lık Yagi → 20,3 dBi, yatayda 18,1° ve dikeyde 19,5° lob; W4RNL'nin modelleri 20,4 dBi ve 18,4° / 18,8° verir. Bunlar birkaç DL6WU anteninden türetilmiş yaklaşık kurallardır.

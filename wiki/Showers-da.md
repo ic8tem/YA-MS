@@ -38,9 +38,8 @@ Kataloget indeholder IMO-listens **mindre sværme** – fx Oktober-Camelopardali
 
 ## Aktivitetsprofil og radiantens vandring
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 og λ_max fra IMO-kalenderen; hældningerne B (forskellige før og efter maksimum) og de daglige vandringer dα/dλ, dδ/dλ er **arbejdsværdier** skrevet i `data/sciami.csv` (IMO's tabel over radiantvandring er endnu ikke indlagt). *Manualens lign. 9 og 13.* Antihelion-kildens position interpoleres lineært mellem datoerne i IMO's tabel 6 (`data/ant_radiante.csv`; aktiv 10. december – 20. september, ZHR ca. 4).

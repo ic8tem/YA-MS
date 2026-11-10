@@ -39,8 +39,8 @@ Locator (4, 6 o 8 character; gitna ng grid square, sistemang Maidenhead ng IARU)
 
 **Sanggunian:** pormula ng artikulong Cerrotta–Sartori (Larawan 7), kung saan x = d/r, d ang distansiya sa lupa patungo sa punto ng repleksiyon, H ang taas ng bakas at h ang taas ng istasyon [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Pagsusuri:** tumutugma ito sa eksaktong spherical na heometriya sa loob ng 0.03°. Ginagamit ng programa ang two-argument na arctangent, na nagbibigay ng negatibong halaga lampas sa horizon at umiiwas sa problema ng periodicity na binanggit sa artikulo. Ang negatibong elebasyon patungo sa gitnang punto ay nangangahulugang *landas na lampas sa heometrikong abot ng iisang hop*.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Distansiya sa lupa kung saan naaabot ng sinag na may elebasyong e ang taas na H (heometrikong kabaligtaran ng pormula sa itaas) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Pagsusuri:** H = 89.5 km, e = 0° → **1062 km**. Sa halimbawa ng artikulo (JN44BB–IO53RT), inilalagay ng drowing ang mga tawiran ng horizon nang mga 870 km mula sa mga istasyon, na tumutugma sa lobe na itinaas nang mga 2° (865 km).
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Sanggunian:** tinutukoy ng artikulo ang mga pagtatagpo ng mga kurba kung saan sinasalubong ng horizon ng bawat istasyon ang E layer: ang mga pagtatagpo ng dalawang bilog na may angular na radius na ρ = d_H/r na nakasentro sa A at B [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 Kung 1 − |p0|² < 0, mas mahaba ang landas kaysa 2·d_H at **walang karaniwang sona ng E layer** na nakikita ang mga istasyon.
@@ -74,8 +73,8 @@ Kung 1 − |p0|² < 0, mas mahaba ang landas kaysa 2·d_H at **walang karaniwang
 
 **Pagpili:** ang Hot A at Hot B ay ang mga punto sa distansiyang s mula sa gitnang punto M, patayo sa landas (s = 150 km, naaayos sa 30–400 km); ang A ay nasa kaliwa kung titingin mula sa iyong istasyon patungo sa DX, ang B ay nasa kanan [21]. Ang offset na nakikita mula sa istasyon ay humigit-kumulang [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Pagsusuri:** JN70CN–IN78UO, D = 1710 km: 6.7° kapag s = 100 km, **10.0° kapag s = 150 km** (kapareho ng MSHV at AMS/W8WN), 13.2° kapag s = 200 km.
@@ -84,16 +83,16 @@ Kung 1 − |p0|² < 0, mas mahaba ang landas kaysa 2·d_H at **walang karaniwang
 
 **Sanggunian:** ekwasyon ni McKinley para sa mga underdense na bakas (β = 0, sin α = 1), hindi kasama ang gain ng antenna; q = linear na densidad ng electron, r_e = klasikong radius ng electron = 2.818·10⁻¹⁵ m, R1, R2 ang mga distansiya mula sa bakas, φ kalahati ng scattering angle [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Pagsusuri:** kapag q = 10¹⁴ electron/m sa 144 MHz: **181–192 dB** sa pagitan ng 600 at 2200 km, kaayon ng mga sanggunian ng artikulo sa 144 MHz: **182 dB pinakamababa** (GM8JBJ, mula kina Kaiser & Closs 1952) at **200 dB karaniwan** (OH5IY).
 
 ## Link budget
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Inilalagay ang mga gain sa dBi at ginagamit sa dBd (dBi − 2.15). Ibinibigay rin ng ulat ang margin gamit ang **karaniwang path loss ni OH5IY** (200 dB sa 144 MHz, iniskala sa λ³ sa napiling banda). Sanggunian ng artikulo: mga **70 dBm na EIRP** ang kailangan (−130 dBm + 200 dB, hal. mga 400 W sa 14 dBi).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Gain – sanggunian:** kurba ni Günter Hoch **DL6WU** para sa mahahabang Yagi bilang function ng haba ng boom L, ayon sa ulat ni W8IO (balido mula mga 2 λ) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **Pagsusuri laban sa mga NEC model ni L.B. Cebik W4RNL sa 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ Hindi kailanman lumalampas sa **0.1 dB** ang pagkakaiba: mas nakadepende ang gai
 
 **Lobe – sanggunian:** tuntunin ni Kraus, na may pabilog na lobe θE = θH = θK [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Pagsusuri:** ang mga NEC model ni W4RNL ng mga Yagi ng DL6WU ay nagbibigay ng **pahalang na lobe na 5–10 % na mas makitid** kaysa kay Kraus: 33.8° / 26.4° / 22.6° para sa 12, 19 at 26 na element, laban sa 37.3° / 28.0° / 23.9°. Hindi isinasaalang-alang ng mga simpleng pormula ang mga forward side lobe (W4RNL, *Long-Boom Yagi Rules of Thumb*). Sa mahahabang boom, bahagyang mas malapad ang patayong lobe kaysa sa pahalang (14 λ: 18.4° / 18.8°).
 
 **Pagpili** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Halimbawa: Yagi na 14 λ sa 432 MHz → 20.3 dBi, lobe na 18.1° pahalang at 19.5° patayo; ang mga model ni W4RNL ay nagbibigay ng 20.4 dBi at 18.4° / 18.8°. Mga tinatayang tuntunin ito na hinango mula sa ilang antenna ng DL6WU.

@@ -34,8 +34,8 @@ Opsi di atas daftar hujan meteor: **Arah Hot A / Hot B**, **Peta Eropa** (Natura
 
 Untuk waktu yang ditampilkan, program menjumlahkan bobot ZHR × efisiensi untuk semua hujan meteor di atas cakrawala, dibagi antara sisi A (fraksi f_A) dan sisi B. Sisi dengan bobot lebih besar memberikan Hot yang disarankan, digambar merah:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Pilihan program (manual pers. 23).* Asal gagasannya: DJ5HG, dilaporkan oleh DF5HC (konferensi DARC 2018) – bergantung pada posisi radian, salah satu dari dua titik, HOT-A atau HOT-B, lebih menguntungkan. Memutar 10–30° ke sisi itu (side scatter) berasal dari artikel Cerrotta–Sartori.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 Untuk setiap titik P lapisan E, kontribusi semua hujan meteor aktif terhadap efisiensi (syarat spekular yang sama seperti pada [efisiensi](Efficiency-Calculation-id#model)) dijumlahkan dengan bobot ZHR. Titik dengan paling sedikit 3 % dari maksimum membentuk zona PREV; masing-masing digambar sebagai elips dengan pusat = rata-rata berbobot titik-titiknya dan sumbu = dua kali sebarannya.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Pilihan program (manual pers. 34).* Inilah aturan praktisnya: jika hujan meteor menyapu dari utara ke selatan, jejak yang berguna jatuh di timur dan barat.
@@ -81,8 +81,8 @@ Di sebelahnya, teks perhitungan: panjang dan azimut lintasan, titik tengah dan e
 
 *PENAMPANG – jejak paling mungkin dilihat dari antena ke arah stasiun DX.* Secara horizontal **azimut relatif terhadap stasiun DX** (← A kiri, B → kanan), secara vertikal **elevasi**. Untuk setiap hujan meteor diambil 14 titik pantul terkuat; setiap jejak berupa ruas yang mengarah ke radian, dari 10 km di atas hingga 10 km di bawah ketinggian jejak (paling banyak 60 km per sisi), lebih tebal bila lebih mungkin. Juga digambar: lobus antena (lingkaran −3 dB di sekitar elevasi lobus), stasiun DX serta Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Pilihan program (manual pers. 35).*

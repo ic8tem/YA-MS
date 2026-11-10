@@ -39,8 +39,8 @@ Lokator (4, 6 of 8 karakters; middel van die vierkant, IARU Maidenhead-stelsel) 
 
 **Bron:** formule uit die Cerrotta–Sartori-artikel (figuur 7), met x = d/r, d die grondafstand tot die refleksiepunt, H die spoorhoogte en h die stasiehoogte [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Kontrole:** dit stem binne 0,03° met eksakte sferiese geometrie ooreen. Die program gebruik die arktangens met twee argumente, wat negatiewe waardes anderkant die horison gee en die periodisiteitsprobleem vermy wat in die artikel genoem word. 'n Negatiewe elevasie na die middelpunt beteken *pad anderkant die geometriese bereik van 'n enkele sprong*.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Grondafstand waarop 'n straal met elevasie e die hoogte H bereik (geometriese inverse van die formule hierbo) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Kontrole:** H = 89,5 km, e = 0° → **1062 km**. In die artikel se voorbeeld (JN44BB–IO53RT) plaas die tekening die horisonkruisings ongeveer 870 km van die stasies, wat ooreenstem met 'n lob wat ongeveer 2° gelig is (865 km).
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Bron:** die artikel plaas die kruisings van die kurwes waar elke stasie se horison die E-laag ontmoet: die snypunte van twee sirkels met hoekradius ρ = d_H/r gesentreer op A en B [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 As 1 − |p0|² < 0 is die pad langer as 2·d_H en sien die stasies **geen gemeenskaplike E-laagsone nie**.
@@ -74,8 +73,8 @@ As 1 − |p0|² < 0 is die pad langer as 2·d_H en sien die stasies **geen gemee
 
 **Keuse:** Hot A en Hot B is die punte op afstand s van die middelpunt M, loodreg op die pad (s = 150 km, verstelbaar 30–400 km); A links as jy van jou stasie na die DX kyk, B regs [21]. Die verskuiwing soos vanaf die stasie gesien is ongeveer [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Kontrole:** JN70CN–IN78UO, D = 1710 km: 6,7° met s = 100 km, **10,0° met s = 150 km** (dieselfde as MSHV en AMS/W8WN), 13,2° met s = 200 km.
@@ -84,16 +83,16 @@ As 1 − |p0|² < 0 is die pad langer as 2·d_H en sien die stasies **geen gemee
 
 **Bron:** McKinley se vergelyking vir onderdigte spore (β = 0, sin α = 1), antennawins uitgesluit; q = lineêre elektrondigtheid, r_e = klassieke elektronradius = 2,818·10⁻¹⁵ m, R1, R2 afstande vanaf die spoor, φ die helfte van die verstrooiingshoek [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Kontrole:** met q = 10¹⁴ elektrone/m op 144 MHz: **181–192 dB** tussen 600 en 2200 km, in lyn met die artikel se verwysings op 144 MHz: **182 dB minimum** (GM8JBJ, volgens Kaiser & Closs 1952) en **200 dB gemiddeld** (OH5IY).
 
 ## Skakelbegroting
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Winse word in dBi ingevoer en in dBd gebruik (dBi − 2,15). Die verslag gee ook die marge met **OH5IY se gemiddelde padverlies** (200 dB op 144 MHz, met λ³ na die gekose band geskaal). Verwysing uit die artikel: ongeveer **70 dBm EIRP** is nodig (−130 dBm + 200 dB, bv. ongeveer 400 W in 14 dBi).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Wins – bron:** kurwe van Günter Hoch **DL6WU** vir lang Yagi's as funksie van die boomlengte L, gerapporteer deur W8IO (geldig vanaf ongeveer 2 λ) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **Kontrole teen die NEC-modelle van L.B. Cebik W4RNL op 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ Die verskil oorskry nooit **0,1 dB** nie: die wins hang meer van die boomlengte 
 
 **Lob – bron:** Kraus-reël, met 'n sirkelvormige lob θE = θH = θK [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Kontrole:** W4RNL se NEC-modelle van DL6WU-Yagi's gee 'n **horisontale lob 5–10 % nouer** as Kraus: 33,8° / 26,4° / 22,6° vir 12, 19 en 26 elemente, teenoor 37,3° / 28,0° / 23,9°. Eenvoudige formules ignoreer die voorwaartse sylobbe (W4RNL, *Long-Boom Yagi Rules of Thumb*). Op lang booms is die vertikale lob effens wyer as die horisontale (14 λ: 18,4° / 18,8°).
 
 **Keuse** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Voorbeeld: 14 λ-Yagi op 432 MHz → 20,3 dBi, lob 18,1° horisontaal en 19,5° vertikaal; W4RNL se modelle gee 20,4 dBi en 18,4° / 18,8°. Dit is benaderde reëls, afgelei van 'n paar DL6WU-antennas.

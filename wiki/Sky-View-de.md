@@ -34,8 +34,8 @@ Optionen über der Liste der Ströme: **Richtungen Hot A / Hot B**, **Europakart
 
 Für die angezeigte Zeit summiert das Programm über alle Ströme über dem Horizont das Gewicht ZHR × Effektivität, aufgeteilt auf Seite A (Anteil f_A) und Seite B. Die Seite mit dem größeren Gewicht ergibt den empfohlenen Hot, rot gezeichnet:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Entscheidung des Programms (Handbuch Gl. 23).* Quelle der Idee: DJ5HG, wiedergegeben von DF5HC (DARC-Vortrag 2018) – je nach Lage des Radianten ist einer der beiden Punkte, HOT-A oder HOT-B, günstiger. Das Drehen um 10–30° zu dieser Seite (Side-Scatter) stammt aus dem Artikel Cerrotta–Sartori.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 Für jeden Punkt P der E-Schicht werden die Beiträge aller aktiven Ströme zur Effektivität (gleiche Spiegelbedingung wie bei der [Effektivität](Efficiency-Calculation-de#das-modell)) addiert, gewichtet mit der ZHR. Punkte mit mindestens 3 % des Maximums bilden die PREV-Zonen; jede wird als Ellipse gezeichnet, mit Mittelpunkt = gewichtetes Mittel der Punkte und Achsen = doppelte Streuung.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Entscheidung des Programms (Handbuch Gl. 34).* Das ist die praktische Regel: Zieht der Strom von Nord nach Süd, liegen die nutzbaren Spuren im Osten und Westen.
@@ -81,8 +81,8 @@ Daneben der Text der Berechnung: Länge und Azimut der Strecke, Mittelpunkt und 
 
 *SCHNITT - die wahrscheinlichsten Spuren, von der Antenne Richtung Gegenstation gesehen.* Waagerecht der **Azimut bezogen auf Gegenstation** (← A links, B → rechts), senkrecht die **Elevation**. Für jeden Strom werden die 14 stärksten Reflexionspunkte genommen; jede Spur ist ein zum Radianten ausgerichtetes Segment, von 10 km über bis 10 km unter der Spurhöhe (höchstens 60 km pro Seite), dicker, wenn sie wahrscheinlicher ist. Ebenfalls gezeichnet: die Antennenkeule (−3-dB-Kreis um die Keulenelevation), die Gegenstation und Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Entscheidung des Programms (Handbuch Gl. 35).*

@@ -35,8 +35,8 @@ Collm 图表（720 × 720 像素，纯色）的坐标轴位置固定，但雷达
 2. 将每个字符与图表的点阵字体比较，**读出**最高刻度和零点的**标签**；
 3. 对每个小时 i（0–47，昨天和今天）取中心列，从上往下找到第一个青色像素 y：
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top 和 y0 分别是最高刻度和零点所在的行，N_top 是从最高标签读出的值（×1000）。分辨率：每像素约 7–8 流星/小时。*程序的选择（手册公式 42）。*
@@ -47,8 +47,8 @@ y_top 和 y0 分别是最高刻度和零点所在的行，N_top 是从最高标�
 
 由高度直方图（第 k km 中有 n_k 颗流星，平均高度 h_k）得到：
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *手册公式 43。* 勾选**来自雷达**（控件第 2 行）时，**众数**即作为所有计算中的余迹高度。验证：2026 年 11 月 5 日的图表——众数 89.5 km，平均 88.6 km，标准差 6.8 km，与 Cerrotta–Sartori 文章中约 90 km（SKiYMET 平均值）相符。
@@ -57,8 +57,8 @@ h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sq
 
 ## 您所用频段上的估算
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **SM6FHZ** 的经验规则（VUSHF 2025）：反射的数量和强度按 λ³ 缩放，持续时间按 λ² 缩放；λ³ 关系与 McKinley 的欠密余迹方程一致。同时显示 IARU 第一区的最大 ping 持续时间（50 MHz 为 1000 ms，70 MHz 为 500 ms，144 MHz 为 100 ms，432 MHz 为 13 ms）。这些数值仅供参考，应与实际上机经验比较。电台因子 K 以及与 RMOB 的比较见[试验性预报](Experimental-Forecasts-zh)。

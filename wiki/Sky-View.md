@@ -34,8 +34,8 @@ Options above the shower list: **Hot A / Hot B directions**, **Map of Europe** (
 
 For the time shown, the program adds up over all showers above the horizon the weight ZHR × efficiency, split between side A (fraction f_A) and side B. The side with the larger weight gives the recommended Hot, drawn in red:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Choice of the program (manual eq. 23).* Source of the idea: DJ5HG, reported by DF5HC (DARC conference 2018) – depending on the radiant position one of the two points, HOT-A or HOT-B, is more favourable. Turning 10–30° towards that side (side-scatter) comes from the Cerrotta–Sartori article.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 For each point P of the E layer the contributions of all active showers to the efficiency (same specular condition as the [efficiency](Efficiency-Calculation#the-model)) are added, weighted with ZHR. Points with at least 3 % of the maximum form the PREV zones; each is drawn as an ellipse with centre = weighted mean of the points and axes = twice their spread.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Choice of the program (manual eq. 34).* It is the practical rule: if the shower sweeps from north to south, the useful trails fall east and west.
@@ -81,8 +81,8 @@ Next to it, the text of the calculation: path length and azimuth, midpoint and i
 
 *SECTION – the most likely trails seen from the antenna towards the DX station.* Horizontally the **azimuth relative to the DX station** (← A left, B → right), vertically the **elevation**. For each shower the 14 strongest reflection points are taken; each trail is a segment oriented towards the radiant, from 10 km above to 10 km below the trail height (at most 60 km per side), thicker when more likely. Also drawn: the antenna lobe (−3 dB circle around the lobe elevation), the DX station and Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Choice of the program (manual eq. 35).*

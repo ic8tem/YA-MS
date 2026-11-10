@@ -27,17 +27,16 @@ Oranžā rinda zem vadīklām rāda likumu ar pašreizējiem skaitļiem, piem. *
 
 ## No radara uz amatieru joslu
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Avots:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, 2025. gada maijs – atstarojumu skaits un intensitāte mainās ar **λ³**, ilgums ar **λ²** (432 MHz ir 14–15 dB zem 144 MHz un ilgst 1/9). **Pārbaude:** λ³ atkarība ir tā pati, kas McKinley zema blīvuma vienādojumā. Ar k = 3 1000 meteori stundā Collm kļūst par apmēram **16 atstarojumiem stundā 144 MHz**; RMOB GRAVES novērotāji 143,050 MHz parasti saskaita **no 20 līdz 140 atbalsīm stundā** (RMOB biļetens, 2018. gada jūnijs): lieluma kārta ir saderīga, un starpība ir stacijas koeficients K. (Rokasgrāmatas 44.–45. vien.)
 
 ## Nākamās 24 stundas
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Persistence:** iepriekšējās dienas (vai, ja tās trūkst, aizvakardienas) tās pašas stundas pārrēķinātā vērtība, koriģēta ar **trases plūsmu indeksa** I izmaiņu (Σ ZHR × efektivitāte, sk. [Efektivitātes aprēķins](Efficiency-Calculation-lv#modelis)). Konstante 10 attēlo sporādisko fonu un ierobežo korekciju, kad indekss ir mazs. *Programmas izvēle (rokasgrāmatas 47. vien.).*
@@ -65,8 +64,8 @@ Mēnesis un gads tiek ņemti no faila nosaukuma (`…_MMYYYYrmob…`) vai no gal
 
 **Kāpinātāja pielāgošana.** Ar K = 1, no RMOB/Collm attiecību mediānas kopējās stundās (vismaz 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Programmas izvēle (rokasgrāmatas 46. vien.).* Dialogs rāda kopējās stundas, attiecību mediānu un k; **Jā** piemēro k (un iestata K = 1), **Nē** saglabā k = 3 – tad pielāgo K ar roku vērtībai, ko iesaka tas pats dialogs.

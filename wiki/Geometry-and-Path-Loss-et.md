@@ -39,8 +39,8 @@ Lokaator (4, 6 või 8 märki; ruudu keskpunkt, IARU Maidenheadi süsteem) [14]. 
 
 **Allikas:** Cerrotta–Sartori artikli valem (joonis 7), kus x = d/r, d on maapealne kaugus peegelduspunktini, H jälgede kõrgus ja h jaama kõrgus [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Kontroll:** tulemus ühtib täpse sfäärilise geomeetriaga 0,03° piires. Programm kasutab kaheargumendilist arkustangensit, mis annab horisondi taga negatiivsed väärtused ja väldib artiklis mainitud perioodilisuse probleemi. Negatiivne elevatsioon keskpunkti suunas tähendab *trass on ühe hüppe geomeetrilisest ulatusest kaugemal*.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Maapealne kaugus, mille juures elevatsiooniga e kiir jõuab kõrgusele H (ülaltoodud valemi geomeetriline pöördvalem) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Kontroll:** H = 89,5 km, e = 0° → **1062 km**. Artikli näites (JN44BB–IO53RT) asetab joonis horisondi lõikepunktid jaamadest umbes 870 km kaugusele, mis vastab umbes 2° võrra tõstetud peaharule (865 km).
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Allikas:** artikkel määrab kõverate lõikepunktid, kus kummagi jaama horisont kohtub E-kihiga: kahe A ja B keskmega ringi, nurkraadiusega ρ = d_H/r, lõikepunktid [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 Kui 1 − |p0|² < 0, on trass pikem kui 2·d_H ja jaamad **ei näe E-kihi ühisala**.
@@ -74,8 +73,8 @@ Kui 1 − |p0|² < 0, on trass pikem kui 2·d_H ja jaamad **ei näe E-kihi ühis
 
 **Valik:** Hot A ja Hot B on punktid kaugusel s keskpunktist M, trassiga risti (s = 150 km, reguleeritav 30–400 km); A vasakul, vaadates oma jaamast korrespondendi poole, B paremal [21]. Jaamast nähtav nihe on ligikaudu [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Kontroll:** JN70CN–IN78UO, D = 1710 km: 6,7° kui s = 100 km, **10,0° kui s = 150 km** (sama mis MSHV ja AMS/W8WN), 13,2° kui s = 200 km.
@@ -84,16 +83,16 @@ Kui 1 − |p0|² < 0, on trass pikem kui 2·d_H ja jaamad **ei näe E-kihi ühis
 
 **Allikas:** McKinley võrrand alatihedate jälgede jaoks (β = 0, sin α = 1), antennivõimendused välja arvatud; q = elektronide joontihedus, r_e = elektroni klassikaline raadius = 2,818·10⁻¹⁵ m, R1, R2 kaugused jäljest, φ pool hajumisnurgast [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Kontroll:** q = 10¹⁴ elektroni/m korral sagedusel 144 MHz: **181–192 dB** vahemikus 600 kuni 2200 km, kooskõlas artikli viidetega 144 MHz kohta: **182 dB minimaalne** (GM8JBJ, Kaiser & Closs 1952 järgi) ja **200 dB keskmine** (OH5IY).
 
 ## Lingi eelarve
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Võimendused sisestatakse dBi-des ja kasutatakse dBd-des (dBi − 2,15). Aruanne annab ka varu **OH5IY keskmise sumbumisega** (200 dB sagedusel 144 MHz, skaleeritud λ³ järgi valitud sagedusalale). Artikli viide: vaja on umbes **70 dBm EIRP-d** (−130 dBm + 200 dB, nt umbes 400 W 14 dBi antenni).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Võimendus – allikas:** Günter Hoch **DL6WU** kõver pikkade Yagide jaoks poomi pikkuse L funktsioonina, vahendanud W8IO (kehtib alates umbes 2 λ) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **Kontroll L.B. Cebik W4RNL-i NEC-mudelitega sagedusel 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ Erinevus ei ületa kunagi **0,1 dB**: võimendus sõltub rohkem poomi pikkusest 
 
 **Peaharu – allikas:** Krausi reegel ümmarguse peaharuga θE = θH = θK [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Kontroll:** W4RNL-i NEC-mudelid DL6WU Yagide kohta annavad Krausist **5–10 % kitsama horisontaalse peaharu**: 33,8° / 26,4° / 22,6° 12, 19 ja 26 elemendi korral, võrreldes 37,3° / 28,0° / 23,9°. Lihtsad valemid ignoreerivad eesmisi kõrvalharusid (W4RNL, *Long-Boom Yagi Rules of Thumb*). Pikkade poomide korral on vertikaalne peaharu horisontaalsest veidi laiem (14 λ: 18,4° / 18,8°).
 
 **Valik** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Näide: 14 λ Yagi sagedusel 432 MHz → 20,3 dBi, peaharu 18,1° horisontaalselt ja 19,5° vertikaalselt; W4RNL-i mudelid annavad 20,4 dBi ja 18,4° / 18,8°. Need on ligikaudsed reeglid, mis on tuletatud mõnest DL6WU antennist.

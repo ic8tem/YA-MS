@@ -39,8 +39,8 @@ Locator (4, 6 eða 8 stafir; miðja reitsins, Maidenhead-kerfi IARU) [14]. Fjarl
 
 **Heimild:** formúlan úr grein Cerrotta–Sartori (mynd 7), með x = d/r, þar sem d er fjarlægð eftir yfirborði að endurvarpspunktinum, H hæð slóðarinnar og h hæð stöðvarinnar [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Prófun:** hún samsvarar nákvæmri kúlurúmfræði innan 0,03°. Forritið notar arkustangens með tveimur breytum, sem gefur neikvæð gildi handan sjóndeildarhrings og forðast lotuvandann sem nefndur er í greininni. Neikvætt hæðarhorn að miðpunktinum þýðir *leiðin er handan rúmfræðilegrar drægni eins stökks*.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Fjarlægð eftir yfirborði þar sem geisli með hæðarhorn e nær hæðinni H (rúmfræðileg andhverfa formúlunnar hér að ofan) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Prófun:** H = 89,5 km, e = 0° → **1062 km**. Í dæmi greinarinnar (JN44BB–IO53RT) setur teikningin skurðpunkta sjóndeildarhringsins um 870 km frá stöðvunum, sem samsvarar geisla sem lyft er um 2° (865 km).
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Heimild:** greinin staðsetur skurðpunkta ferlanna þar sem sjóndeildarhringur hvorrar stöðvar mætir E-laginu: skurðpunkta tveggja hringja með hornradíus ρ = d_H/r með miðju í A og B [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 Ef 1 − |p0|² < 0 er leiðin lengri en 2·d_H og stöðvarnar sjá **ekkert sameiginlegt svæði í E-laginu**.
@@ -74,8 +73,8 @@ Ef 1 − |p0|² < 0 er leiðin lengri en 2·d_H og stöðvarnar sjá **ekkert sa
 
 **Val:** Hot A og Hot B eru punktarnir í fjarlægðinni s frá miðpunktinum M, hornrétt á leiðina (s = 150 km, stillanlegt 30–400 km); A vinstra megin séð frá þinni stöð að DX, B hægra megin [21]. Frávikið séð frá stöðinni er um það bil [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Prófun:** JN70CN–IN78UO, D = 1710 km: 6,7° með s = 100 km, **10,0° með s = 150 km** (sama og MSHV og AMS/W8WN), 13,2° með s = 200 km.
@@ -84,16 +83,16 @@ Ef 1 − |p0|² < 0 er leiðin lengri en 2·d_H og stöðvarnar sjá **ekkert sa
 
 **Heimild:** jafna McKinleys fyrir undirþéttar slóðir (β = 0, sin α = 1), án loftnetsmögnunar; q = línuleg rafeindaþéttni, r_e = klassískur rafeindageisli = 2,818·10⁻¹⁵ m, R1, R2 fjarlægðir frá slóðinni, φ hálft dreifihornið [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Prófun:** með q = 10¹⁴ rafeindir/m á 144 MHz: **181–192 dB** milli 600 og 2200 km, í samræmi við viðmiðanir greinarinnar á 144 MHz: **182 dB lágmark** (GM8JBJ, eftir Kaiser & Closs 1952) og **200 dB að meðaltali** (OH5IY).
 
 ## Aflreikningur
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Mögnun er slegin inn í dBi og notuð í dBd (dBi − 2,15). Skýrslan gefur einnig borð fyrir báru með **meðalleiðardeyfingu OH5IY** (200 dB á 144 MHz, kvörðuð með λ³ að völdu tíðnisviði). Viðmiðun greinarinnar: um **70 dBm EIRP** þarf (−130 dBm + 200 dB, t.d. um 400 W inn á 14 dBi).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Mögnun – heimild:** ferill Günters Hoch **DL6WU** fyrir löng Yagi-loftnet sem fall af lengd bómunnar L, eftir frásögn W8IO (gildir frá um 2 λ) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **Prófun á móti NEC-líkönum L.B. Cebik W4RNL á 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ Munurinn fer aldrei yfir **0,1 dB**: mögnunin ræðst meira af lengd bómunnar 
 
 **Geisli – heimild:** regla Kraus, með hringlaga geisla θE = θH = θK [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Prófun:** NEC-líkön W4RNL af DL6WU Yagi-loftnetum gefa **láréttan geisla 5–10 % mjórri** en Kraus: 33,8° / 26,4° / 22,6° fyrir 12, 19 og 26 stök, á móti 37,3° / 28,0° / 23,9°. Einfaldar formúlur hunsa fremri hliðargeislana (W4RNL, *Long-Boom Yagi Rules of Thumb*). Á löngum bómum er lóðrétti geislinn aðeins breiðari en sá lárétti (14 λ: 18,4° / 18,8°).
 
 **Val** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Dæmi: 14 λ Yagi á 432 MHz → 20,3 dBi, geisli 18,1° láréttur og 19,5° lóðréttur; líkön W4RNL gefa 20,4 dBi og 18,4° / 18,8°. Þetta eru nálgunarreglur leiddar af fáeinum DL6WU-loftnetum.

@@ -34,8 +34,8 @@
 
 对于所显示的时刻，程序对地平线以上的所有流星雨累加权重 ZHR × 效率，并按 A 侧（比例 f_A）和 B 侧分配。权重较大的一侧即为推荐的 Hot，以红色绘出：
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *程序的选择（手册公式 23）。* 这一想法的来源：DJ5HG，由 DF5HC 转述（DARC 会议 2018）——根据辐射点位置，HOT-A 和 HOT-B 两点中有一个更有利。向该侧偏转 10–30°（侧向散射）则来自 Cerrotta–Sartori 的文章。
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 对 E 层上的每个点 P，累加所有活跃流星雨对效率的贡献（与[效率](Efficiency-Calculation-zh#模型)中相同的镜面条件），以 ZHR 加权。达到最大值至少 3 % 的点构成 PREV 区域；每个区域绘成一个椭圆，中心 = 各点的加权平均位置，轴长 = 其离散度的两倍。
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *程序的选择（手册公式 34）。* 这就是实用规则：如果流星雨由北向南扫过，有用的余迹就落在东侧和西侧。
@@ -81,8 +81,8 @@ W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F    
 
 *剖面 - 从天线朝对方电台方向看到的最可能余迹。* 横轴为**相对于对方电台的方位角**（← A 左，B → 右），纵轴为**仰角**。对每个流星雨取最强的 14 个反射点；每条余迹画成一条指向辐射点的线段，从余迹高度以上 10 km 延伸到以下 10 km（每侧最多 60 km），可能性越大线条越粗。图中还画出天线波瓣（以波瓣仰角为中心的 −3 dB 圆）、对方电台以及 Hot A / Hot B。
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *程序的选择（手册公式 35）。*

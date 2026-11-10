@@ -35,8 +35,8 @@ Collm 그래프(720 × 720 픽셀, 단색)는 축 위치가 고정되어 있지�
 2. 각 문자를 그래프의 도트 매트릭스 글꼴과 비교하여 가장 높은 눈금과 0의 **레이블을 읽고**;
 3. 각 시간 i(0–47, 어제와 오늘)에 대해 가운데 열과 위에서부터 첫 번째 청록 픽셀 y를 구합니다:
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top과 y0은 가장 높은 눈금과 0의 행, N_top은 가장 높은 레이블에서 읽은 값(×1000)입니다. 분해능: 픽셀당 약 7–8 유성/시간. *프로그램의 선택 (매뉴얼 식 42).*
@@ -47,8 +47,8 @@ y_top과 y0은 가장 높은 눈금과 0의 행, N_top은 가장 높은 레이�
 
 고도 히스토그램(km k에 n_k개의 유성, 평균 고도 h_k)에서:
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *매뉴얼 식 43.* **레이더에서**(조작 항목 2행)를 선택하면 **최빈값**이 모든 계산의 흔적 고도가 됩니다. 검증: 2026/11/5 그래프 – 최빈값 89.5 km, 평균 88.6 km, 표준편차 6.8 km로 Cerrotta–Sartori 논문의 약 90 km(SKiYMET 평균)와 일치합니다.
@@ -57,8 +57,8 @@ h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sq
 
 ## 내 밴드에서의 추정
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **SM6FHZ**의 경험 규칙(VUSHF 2025): 반사의 수와 세기는 λ³, 지속 시간은 λ²에 비례합니다. λ³ 의존성은 McKinley의 저밀도 흔적 식과 같습니다. IARU Region 1의 최대 핑 지속 시간도 표시됩니다(50 MHz 1000 ms, 70 MHz 500 ms, 144 MHz 100 ms, 432 MHz 13 ms). 값은 참고용이며 실제 운용 경험과 비교해야 합니다. 국 계수 K와 RMOB 비교는 [예보 실험 적용](Experimental-Forecasts-ko)에 있습니다.

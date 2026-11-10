@@ -38,9 +38,8 @@ O catálogo inclui as **chuvas menores** da lista IMO – por exemplo as Camelop
 
 ## Perfil de atividade e deslocação do radiante
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 e λ_max vêm do calendário IMO; as inclinações B (diferentes antes e depois do máximo) e as deslocações diárias dα/dλ, dδ/dλ são **valores de trabalho** escritos em `data/sciami.csv` (a tabela de deslocações da IMO ainda não foi introduzida). *Eq. 9 e 13 do manual.* A posição da Fonte Anti-helion é interpolada linearmente entre as datas da tabela 6 da IMO (`data/ant_radiante.csv`; ativa de 10 de dezembro a 20 de setembro, ZHR cerca de 4).

@@ -49,36 +49,36 @@ Visi žingsniai pateikti [skaičiavimų vadove](Efficiency-Explanation-lt) (`doc
 
 **1. Veidrodinis atspindys.** Pėdsakas siunčia signalą iš A į B tik tada, jei jis liečia elipsoidą, kurio židiniuose yra A ir B (McKinley 1961). Srauto pėdsakai lygiagretūs radianto krypčiai ŝ (straipsnis; McKinley). Kiekvienam E sluoksnio taškui P, su vienetiniais vektoriais stočių kryptimi:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 Tas pats dėsnis yra DJ5HG QTFGUI pagrindas (kūginė sklaida). Sąlyga priimama su Gauso tolerancija σ = 0,05 rad (apie 3°) – *programos sprendimas*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Kiekvieno taško svoris.** Retojo pėdsako galia (McKinley), φ = pusė sklaidos kampo (apribota 85°, *sprendimas*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 Į tašką patenkančių meteorų skaičius proporcingas radianto elevacijos ten sinusui (ŝ·û_P) – ta pati pataisa, kurią IMO taiko ZHR.
 
 **3. Suma ir procentas.** Taškai kas 15 km pėdsakų aukštyje, tik ten, kur abi stotys juos mato virš lapelio elevacijos (*sprendimas*). 100 % – palankiausia radianto padėtis tai trasai:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F apskaičiuojama vieną kartą kiekvienai trasai krypčių tinkle (azimutas kas 5°, elevacija kas 2,5°) ir interpoliuojama.
 
 **4. Pusė ir indeksas.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 Lentelės raidė – pusė su didesne dalimi. *Programos sprendimai (vadovo 32–33 lygtys).*
@@ -87,8 +87,8 @@ Lentelės raidė – pusė su didesne dalimi. *Programos sprendimai (vadovo 32�
 
 Nepriklausoma patikra: **DH9GCD** geriausios krypties formulė, pateikta **DF5HC** (DARC konferencija, 2018 m. sausis), kur El ir Az – iš jūsų stoties matomo radianto elevacija ir azimutas, o P – korespondento azimutas:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 Ji didžiausia, kai radiantas yra 45° aukštyje ir statmenai trasai. DF5HC laiko radiantą per žemu žemiau 20° ir **per aukštu virš 70°**: šios valandos lentelėje gauna ↑, o [Dangaus skliaute](Sky-View-lt#įspėjimai) – įspėjimą. Formulė neatsižvelgia į atstumą ir aukščius, bet yra geras atskaitos taškas.

@@ -4,7 +4,7 @@
 
 *Costantino Cerrotta IC8TEM 작성*
 
-**YA-MS**는 **50, 70, 144, 222, 432 MHz에서 유성 산란(MS)** 교신을 하는 아마추어 무선사를 위한 무료 프로그램입니다. 내 로케이터와 상대국 로케이터 사이의 실제 경로에 대해, 활동 중인 각 유성우가 경로에 얼마나 도움이 되는지(**효율**), 반사가 경로의 어느 쪽에서 오는지(**Hot A / Hot B**), 안테나를 어디로 향해야 하는지를 한 시간 단위로 계산하고, **실시간 유성 레이더**(독일 Collm)에서 얻은 시간당 반사 수의 실험적 예보를 제공합니다. **Windows, Linux, macOS**(.NET 8 + Avalonia)에서 동작하며 인터페이스 언어는 6가지입니다.
+**YA-MS**는 **50, 70, 144, 222, 432 MHz에서 유성 산란(MS)** 교신을 하는 아마추어 무선사를 위한 무료 프로그램입니다. 내 로케이터와 상대국 로케이터 사이의 실제 경로에 대해, 활동 중인 각 유성우가 경로에 얼마나 도움이 되는지(**효율**), 반사가 경로의 어느 쪽에서 오는지(**Hot A / Hot B**), 안테나를 어디로 향해야 하는지를 한 시간 단위로 계산하고, **실시간 유성 레이더**(독일 Collm)에서 얻은 시간당 반사 수의 실험적 예보를 제공합니다. **Windows, Linux, Raspberry Pi, macOS**(.NET 8 + Avalonia)에서 동작하며 인터페이스 언어는 6가지입니다.
 
 주요 출처는 **C. Cerrotta IC8TEM과 G. Sartori IV3GTH**의 논문 *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"*(제7판)입니다. 프로그램의 모든 공식과 데이터에는 출처가 명시되어 있습니다. [출처](Sources-ko)를 참조하세요.
 

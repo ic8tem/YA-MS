@@ -34,8 +34,8 @@ Opsies bo die swermlys: **Hot A / Hot B-rigtings**, **Kaart van Europa** (Natura
 
 Vir die getoonde tyd tel die program oor al die swerms bo die horison die gewig ZHR × doeltreffendheid op, verdeel tussen kant A (fraksie f_A) en kant B. Die kant met die groter gewig gee die aanbevole Hot, in rooi geteken:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Keuse van die program (handleiding vgl. 23).* Oorsprong van die idee: DJ5HG, gerapporteer deur DF5HC (DARC-konferensie 2018) – afhangend van die radiantposisie is een van die twee punte, HOT-A of HOT-B, gunstiger. Om 10–30° na daardie kant te draai (side-scatter) kom uit die Cerrotta–Sartori-artikel.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 Vir elke punt P van die E-laag word die bydraes van al die aktiewe swerms tot die doeltreffendheid (dieselfde spekulêre voorwaarde as vir die [doeltreffendheid](Efficiency-Calculation-af#die-model)) opgetel, met ZHR geweeg. Punte met minstens 3 % van die maksimum vorm die PREV-sones; elkeen word geteken as 'n ellips met middelpunt = geweegde gemiddelde van die punte en asse = twee keer hul verspreiding.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Keuse van die program (handleiding vgl. 34).* Dit is die praktiese reël: as die swerm van noord na suid beweeg, val die bruikbare spore oos en wes.
@@ -81,8 +81,8 @@ Daarnaas die teks van die berekening: padlengte en -azimut, middelpunt en sy ele
 
 *DEURSNEE – die mees waarskynlike spore gesien vanaf die antenna na die DX-stasie.* Horisontaal die **azimut relatief tot die DX-stasie** (← A links, B → regs), vertikaal die **elevasie**. Vir elke swerm word die 14 sterkste refleksiepunte geneem; elke spoor is 'n segment wat na die radiant gerig is, van 10 km bo tot 10 km onder die spoorhoogte (hoogstens 60 km per kant), dikker hoe waarskynliker. Ook geteken: die antennalob (−3 dB-sirkel rondom die lob-elevasie), die DX-stasie en Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Keuse van die program (handleiding vgl. 35).*

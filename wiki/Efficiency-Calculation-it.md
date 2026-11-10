@@ -49,36 +49,36 @@ Tutti i passaggi sono nel [manuale dei calcoli](Efficiency-Explanation-it) (`doc
 
 **1. Riflessione speculare.** Una scia manda il segnale da A a B solo se è tangente a un ellissoide con A e B nei fuochi (McKinley 1961). Le scie di uno sciame sono parallele alla direzione del radiante ŝ (articolo; McKinley). Per ogni punto P dello strato E, con i versori verso le stazioni:
 
-```
-ê_A = (A − P)/|A − P|     ê_B = (B − P)/|B − P|     n̂ = (ê_A + ê_B)/|ê_A + ê_B|     specular condition: ŝ·n̂ = 0
+```math
+\hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
 La stessa legge sta alla base di QTFGUI di DJ5HG (cone scattering). La condizione è accettata con una tolleranza gaussiana σ = 0,05 rad (circa 3°) – *scelta del programma*:
 
-```
-S_P = exp( −(ŝ·n̂)² / (2σ²) )
+```math
+S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 ```
 
 **2. Peso di ogni punto.** Potenza di una scia sottodensa (McKinley), φ = metà dell'angolo di diffusione (limitato a 85°, *scelta*):
 
-```
-φ = ½·arccos(ê_A·ê_B)        w_P = 1 / [ R1·R2·(R1 + R2)·cos²φ ]
+```math
+\varphi = \tfrac{1}{2}\arccos(\hat{e}_A\cdot\hat{e}_B),\qquad w_P = \frac{1}{R_1 R_2 (R_1+R_2)\cos^2\varphi}
 ```
 
 Il numero di meteore che raggiungono un punto è proporzionale al seno dell'elevazione del radiante in quel punto (ŝ·û_P), la stessa correzione che l'IMO usa per lo ZHR.
 
 **3. Somma e percentuale.** Punti ogni 15 km alla quota delle scie, solo dove entrambe le stazioni li vedono sopra l'elevazione del lobo (*scelta*). Il 100 % è la posizione del radiante più favorevole per quella tratta:
 
-```
-F(ŝ) = Σ_P w_P · S_P · max(0, ŝ·û_P)          η(ŝ) = 100 · F(ŝ) / max F   %
+```math
+F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%
 ```
 
 F si calcola una volta per tratta su una griglia di direzioni (azimut ogni 5°, elevazione ogni 2,5°) e si interpola.
 
 **4. Lato e indice.**
 
-```
-f_A = Σ_{P∈A} w_P·S_P·(ŝ·û_P) / Σ_P w_P·S_P·(ŝ·û_P)          I(t) = Σ_showers ZHR(t)·η(t) / 100
+```math
+f_A = \frac{\sum_{P\in A} w_P S_P\,(\hat{s}\cdot\hat{u}_P)}{\sum_P w_P S_P\,(\hat{s}\cdot\hat{u}_P)},\qquad I(t) = \sum \frac{ZHR(t)\,\eta(t)}{100}
 ```
 
 La lettera nella tabella è il lato con la frazione maggiore. *Scelte del programma (eq. 32–33 del manuale).*
@@ -87,8 +87,8 @@ La lettera nella tabella è il lato con la frazione maggiore. *Scelte del progra
 
 Una verifica indipendente: la formula della direzione migliore di **DH9GCD**, riportata da **DF5HC** (convegno DARC, gennaio 2018), con El e Az elevazione e azimut del radiante visti dalla tua stazione e P l'azimut del corrispondente:
 
-```
-E = sin El · cos El · sin(P − Az)          shown as  E% = 200 · sin El · cos El · |sin(P − Az)|
+```math
+E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
 ```
 
 È massima con il radiante a 45° e di traverso rispetto alla tratta. DF5HC considera il radiante troppo basso sotto 20° e **troppo alto sopra 70°**: queste ore ricevono ↑ nella tabella e un avviso nella [Volta celeste](Sky-View-it#avvisi). La formula ignora distanza e quote, ma è un buon riferimento.

@@ -27,17 +27,16 @@ De oranje regel onder de bediening toont de regel met de actuele getallen, bijv.
 
 ## Van de radar naar de amateurband
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Bron:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, mei 2025 – aantal en intensiteit van de reflecties schalen met **λ³**, de duur met **λ²** (432 MHz ligt 14–15 dB onder 144 MHz en duurt 1/9). **Controle:** de λ³-afhankelijkheid is dezelfde als in de vergelijking van McKinley voor onderdichte sporen. Met k = 3 worden 1000 meteoren/uur in Collm ongeveer **16 reflecties/uur op 144 MHz**; RMOB-waarnemers van GRAVES op 143,050 MHz tellen meestal **20 tot 140 echo's/uur** (RMOB-bulletin, juni 2018): de orde van grootte is verenigbaar, en het verschil is de stationsfactor K. (Vgl. 44–45 van de handleiding.)
 
 ## Komende 24 uur
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Persistentie:** de omgerekende waarde van hetzelfde uur van de dag ervoor (of twee dagen ervoor als die ontbreekt), gecorrigeerd voor de verandering van de **zwermindex van het traject** I (Σ ZHR × efficiëntie, zie [Efficiëntieberekening](Efficiency-Calculation-nl#het-model)). De constante 10 staat voor de sporadische achtergrond en beperkt de correctie als de index klein is. *Keuze van het programma (vgl. 47 van de handleiding).*
@@ -65,8 +64,8 @@ Maand en jaar komen uit de bestandsnaam (`…_MMJJJJrmob…`) of uit de kop; and
 
 **De exponent bepalen.** Met K = 1, uit de mediaan van de verhoudingen RMOB/Collm over de gemeenschappelijke uren (minstens 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Keuze van het programma (vgl. 46 van de handleiding).* Het dialoogvenster toont de gemeenschappelijke uren, de mediane verhouding en k; **Ja** past k toe (en zet K = 1), **Nee** houdt k = 3 – stel K dan met de hand in op de waarde die in hetzelfde venster wordt voorgesteld.

@@ -27,17 +27,16 @@
 
 ## 从雷达到业余频段
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **来源：** SM6FHZ，*"432 MHz Meteorscatter, Challenges and Techniques"*，第 45 届 Nordic VUSHF，2025 年 5 月——反射的数量和强度按 **λ³** 缩放，持续时间按 **λ²** 缩放（432 MHz 比 144 MHz 低 14–15 dB，持续时间为其 1/9）。**验证：** λ³ 关系与 McKinley 的欠密余迹方程一致。取 k = 3 时，Collm 的 1000 流星/小时约相当于 **144 MHz 上 16 次反射/小时**；在 143.050 MHz 上收听 GRAVES 的 RMOB 观测者通常统计到 **20 至 140 次回波/小时**（RMOB 公报，2018 年 6 月）：数量级相符，差异即为电台因子 K。（手册公式 44–45。）
 
 ## 未来 24 小时
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **持续性：** 取前一天同一时刻的换算值（若缺失则取前两天的），并按**路径流星雨指数** I（Σ ZHR × 效率，参见[效率计算](Efficiency-Calculation-zh#模型)）的变化加以修正。常数 10 代表偶发流星背景，在指数很小时限制修正幅度。*程序的选择（手册公式 47）。*
@@ -65,8 +64,8 @@ N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
 
 **拟合指数。** 取 K = 1，由共同小时（至少 3 个）上 RMOB/Collm 比值的中位数求得：
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *程序的选择（手册公式 46）。* 对话框显示共同小时、比值中位数和 k；**是** 采用 k（并设 K = 1），**否** 保持 k = 3——之后请将 K 手动调整为同一对话框中建议的值。

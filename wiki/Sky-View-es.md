@@ -34,8 +34,8 @@ Opciones encima de la lista de lluvias: **Direcciones Hot A / Hot B**, **Mapa de
 
 Para la hora mostrada, el programa suma sobre todas las lluvias por encima del horizonte el peso ZHR × eficiencia, repartido entre el lado A (fracción f_A) y el lado B. El lado con mayor peso da el Hot recomendado, dibujado en rojo:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Decisión del programa (ec. 23 del manual).* Origen de la idea: DJ5HG, citado por DF5HC (conferencia DARC 2018): según la posición del radiante, uno de los dos puntos, HOT-A o HOT-B, es más favorable. Girar 10–30° hacia ese lado (side-scatter) procede del artículo Cerrotta–Sartori.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 Para cada punto P de la capa E se suman las contribuciones de todas las lluvias activas a la eficiencia (misma condición especular que en la [eficiencia](Efficiency-Calculation-es#el-modelo)), ponderadas con la ZHR. Los puntos con al menos el 3 % del máximo forman las zonas PREV; cada una se dibuja como una elipse con centro = media ponderada de los puntos y ejes = el doble de su dispersión.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Decisión del programa (ec. 34 del manual).* Es la regla práctica: si la lluvia barre de norte a sur, las estelas útiles caen al este y al oeste.
@@ -81,8 +81,8 @@ Al lado, el texto del cálculo: longitud y azimut del trayecto, punto medio y su
 
 *SECCIÓN - las estelas más probables vistas desde la antena hacia el corresponsal.* En horizontal el **azimut respecto al corresponsal** (← A izquierda, B → derecha), en vertical la **elevación**. Para cada lluvia se toman los 14 puntos de reflexión más intensos; cada estela es un segmento orientado hacia el radiante, desde 10 km por encima hasta 10 km por debajo de la altura de las estelas (como máximo 60 km por lado), más grueso cuanto más probable. También se dibujan: el lóbulo de la antena (círculo de −3 dB alrededor de la elevación del lóbulo), el corresponsal y Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Decisión del programa (ec. 35 del manual).*

@@ -39,8 +39,8 @@
 
 **출처:** Cerrotta–Sartori 논문의 공식(그림 7). x = d/r, d는 반사점까지의 지상 거리, H는 흔적 고도, h는 국의 고도 [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **검증:** 정확한 구면 기하와 0.03° 이내로 일치합니다. 프로그램은 2인수 아크탄젠트를 사용하여 수평선 너머에서는 음수 값을 주고, 논문에서 언급한 주기성 문제를 피합니다. 중간점 방향의 앙각이 음수이면 *단일 홉의 기하학적 도달 거리를 넘는 경로*라는 뜻입니다.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 앙각 e의 전파가 고도 H에 닿는 지상 거리(위 공식의 기하학적 역) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **검증:** H = 89.5 km, e = 0° → **1062 km**. 논문의 예(JN44BB–IO53RT)에서는 그림상 수평선 교차점이 국에서 약 870 km에 있으며, 이는 로브를 약 2° 올린 경우(865 km)에 해당합니다.
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **출처:** 논문은 각 국의 수평선이 E층과 만나는 곡선들의 교점을 구합니다. 즉 A와 B를 중심으로 각반경 ρ = d_H/r인 두 원의 교점입니다 [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 1 − |p0|² < 0이면 경로가 2·d_H보다 길어 두 국이 **E층 공통 영역을 볼 수 없습니다**.
@@ -74,8 +73,8 @@ p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
 
 **선택:** Hot A와 Hot B는 중간점 M에서 경로에 수직으로 거리 s만큼 떨어진 점입니다(s = 150 km, 30–400 km 조정 가능). 내 국에서 DX를 바라볼 때 A는 왼쪽, B는 오른쪽입니다 [21]. 국에서 본 오프셋은 대략 다음과 같습니다 [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **검증:** JN70CN–IN78UO, D = 1710 km: s = 100 km이면 6.7°, **s = 150 km이면 10.0°**(MSHV 및 AMS/W8WN과 같음), s = 200 km이면 13.2°.
@@ -84,16 +83,16 @@ p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
 
 **출처:** 저밀도 흔적에 대한 McKinley의 식(β = 0, sin α = 1), 안테나 이득 제외. q = 전자 선밀도, r_e = 고전 전자 반경 = 2.818·10⁻¹⁵ m, R1, R2는 흔적까지의 거리, φ는 산란각의 절반 [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **검증:** 144 MHz에서 q = 10¹⁴ 전자/m이면 600–2200 km 사이에서 **181–192 dB**로, 논문이 인용한 144 MHz 기준값 **최소 182 dB**(GM8JBJ, Kaiser & Closs 1952 기반)와 **평균 200 dB**(OH5IY)에 부합합니다.
 
 ## 링크 버짓
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. 이득은 dBi로 입력하고 dBd(dBi − 2.15)로 사용합니다. 보고서는 **OH5IY의 평균 경로 손실**(144 MHz에서 200 dB, 선택한 밴드로 λ³ 환산)을 쓴 마진도 제시합니다. 논문의 기준: 약 **70 dBm EIRP**가 필요합니다(−130 dBm + 200 dB, 예: 14 dBi 안테나에 약 400 W).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **이득 – 출처:** 붐 길이 L의 함수로 나타낸 긴 야기 안테나에 대한 Günter Hoch **DL6WU**의 곡선, W8IO 소개(약 2 λ부터 유효) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **432 MHz에서 L.B. Cebik W4RNL의 NEC 모델과 비교한 검증**(*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ G = 7.773 · log10(L/λ) + 11.43   dBi
 
 **로브 – 출처:** Kraus 규칙, 원형 로브 θE = θH = θK로 가정 [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **검증:** W4RNL의 DL6WU 야기 NEC 모델은 Kraus보다 **수평 로브가 5–10 % 좁습니다**: 12, 19, 26소자에서 33.8° / 26.4° / 22.6°, Kraus는 37.3° / 28.0° / 23.9°. 단순 공식은 전방 사이드로브를 무시합니다(W4RNL, *Long-Boom Yagi Rules of Thumb*). 긴 붐에서는 수직 로브가 수평보다 약간 넓습니다(14 λ: 18.4° / 18.8°).
 
 **선택** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 예: 432 MHz의 14 λ 야기 → 20.3 dBi, 로브 수평 18.1°, 수직 19.5°. W4RNL 모델은 20.4 dBi, 18.4° / 18.8°입니다. 이는 몇몇 DL6WU 안테나에서 얻은 근사 규칙입니다.

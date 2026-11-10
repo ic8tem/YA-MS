@@ -38,9 +38,8 @@
 
 ## गतिविधि प्रोफ़ाइल और रेडिएंट का खिसकाव
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 और λ_max IMO कैलेंडर से; ढलान B (शिखर से पहले और बाद में अलग) और दैनिक खिसकाव dα/dλ, dδ/dλ `data/sciami.csv` में लिखे **कार्यकारी मान** हैं (IMO की खिसकाव तालिका अभी दर्ज नहीं की गई है)। *पुस्तिका समी. 9 और 13।* एंटीहेलियन स्रोत की स्थिति IMO तालिका 6 की तिथियों के बीच रैखिक रूप से अंतर्वेशित होती है (`data/ant_radiante.csv`; 10 दिसंबर – 20 सितंबर सक्रिय, ZHR लगभग 4)।

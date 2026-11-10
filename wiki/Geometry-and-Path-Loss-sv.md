@@ -39,8 +39,8 @@ Lokator (4, 6 eller 8 tecken; rutans mittpunkt, IARU:s Maidenhead-system) [14]. 
 
 **Källa:** formeln i artikeln av Cerrotta–Sartori (figur 7), med x = d/r, där d är markavståndet till reflexionspunkten, H spårhöjden och h stationens höjd [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Kontroll:** den stämmer med exakt sfärisk geometri inom 0,03°. Programmet använder arcustangens med två argument, som ger negativa värden bortom horisonten och undviker periodicitetsproblemet som nämns i artikeln. En negativ elevation mot mittpunkten betyder *sträckan ligger utanför den geometriska räckvidden för ett enkelhopp*.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Markavståndet där en stråle med elevationen e når höjden H (geometrisk invers av formeln ovan) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Kontroll:** H = 89,5 km, e = 0° → **1062 km**. I artikelns exempel (JN44BB–IO53RT) placerar ritningen horisontkorsningarna omkring 870 km från stationerna, vilket motsvarar en lob som är upplyft omkring 2° (865 km).
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Källa:** artikeln anger skärningspunkterna mellan de kurvor där varje stations horisont möter E-skiktet: skärningarna mellan två cirklar med vinkelradien ρ = d_H/r centrerade på A och B [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 Om 1 − |p0|² < 0 är sträckan längre än 2·d_H och stationerna ser **ingen gemensam zon i E-skiktet**.
@@ -74,8 +73,8 @@ Om 1 − |p0|² < 0 är sträckan längre än 2·d_H och stationerna ser **ingen
 
 **Val:** Hot A och Hot B är punkterna på avståndet s från mittpunkten M, vinkelrätt mot sträckan (s = 150 km, justerbart 30–400 km); A till vänster sett från din station mot DX, B till höger [21]. Förskjutningen sett från stationen är ungefär [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Kontroll:** JN70CN–IN78UO, D = 1710 km: 6,7° med s = 100 km, **10,0° med s = 150 km** (samma som MSHV och AMS/W8WN), 13,2° med s = 200 km.
@@ -84,16 +83,16 @@ Om 1 − |p0|² < 0 är sträckan längre än 2·d_H och stationerna ser **ingen
 
 **Källa:** McKinleys ekvation för underdensa spår (β = 0, sin α = 1), utan antennförstärkning; q = linjär elektrontäthet, r_e = klassiska elektronradien = 2,818·10⁻¹⁵ m, R1, R2 avstånden från spåret, φ halva spridningsvinkeln [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Kontroll:** med q = 10¹⁴ elektroner/m på 144 MHz: **181–192 dB** mellan 600 och 2200 km, i linje med artikelns referenser på 144 MHz: **182 dB minimum** (GM8JBJ, från Kaiser & Closs 1952) och **200 dB i genomsnitt** (OH5IY).
 
 ## Länkbudget
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Förstärkningen anges i dBi och används i dBd (dBi − 2,15). Rapporten ger också marginalen med **OH5IY:s genomsnittliga sträckdämpning** (200 dB på 144 MHz, omräknad med λ³ till det valda bandet). Artikelns referens: omkring **70 dBm EIRP** behövs (−130 dBm + 200 dB, t.ex. omkring 400 W i 14 dBi).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Förstärkning – källa:** kurvan av Günter Hoch **DL6WU** för långa yagiantenner som funktion av bomlängden L, återgiven av W8IO (giltig från omkring 2 λ) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **Kontroll mot NEC-modellerna av L.B. Cebik W4RNL på 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ Skillnaden överstiger aldrig **0,1 dB**: förstärkningen beror mer på bomlän
 
 **Lob – källa:** Kraus regel, med cirkulär lob θE = θH = θK [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Kontroll:** W4RNL:s NEC-modeller av DL6WU-yagis ger en **horisontell lob som är 5–10 % smalare** än Kraus: 33,8° / 26,4° / 22,6° för 12, 19 och 26 element, mot 37,3° / 28,0° / 23,9°. Enkla formler bortser från de främre sidloberna (W4RNL, *Long-Boom Yagi Rules of Thumb*). På långa bommar är den vertikala loben något bredare än den horisontella (14 λ: 18,4° / 18,8°).
 
 **Val** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Exempel: yagi på 14 λ på 432 MHz → 20,3 dBi, lob 18,1° horisontellt och 19,5° vertikalt; W4RNL:s modeller ger 20,4 dBi och 18,4° / 18,8°. Detta är ungefärliga regler härledda från ett fåtal DL6WU-antenner.

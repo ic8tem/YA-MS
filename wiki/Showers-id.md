@@ -38,9 +38,8 @@ Katalog ini memuat **hujan meteor minor** dari daftar IMO – misalnya Camelopar
 
 ## Profil aktivitas dan pergeseran radian
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 dan λ_max dari kalender IMO; kemiringan B (berbeda sebelum dan sesudah puncak) serta pergeseran harian dα/dλ, dδ/dλ adalah **nilai kerja** yang ditulis di `data/sciami.csv` (tabel pergeseran IMO belum dimasukkan). *Manual pers. 9 dan 13.* Posisi Sumber Antihelion diinterpolasi secara linear di antara tanggal-tanggal pada tabel 6 IMO (`data/ant_radiante.csv`; aktif 10 Desember – 20 September, ZHR sekitar 4).

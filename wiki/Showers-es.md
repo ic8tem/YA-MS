@@ -38,9 +38,8 @@ El catálogo incluye las **lluvias menores** de la lista IMO, por ejemplo las Ca
 
 ## Perfil de actividad y desplazamiento del radiante
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0 y λ_max proceden del calendario IMO; las pendientes B (distintas antes y después del máximo) y los desplazamientos diarios dα/dλ, dδ/dλ son **valores de trabajo** escritos en `data/sciami.csv` (la tabla de desplazamientos de la IMO aún no se ha introducido). *Ec. 9 y 13 del manual.* La posición de la Fuente Antihelio se interpola linealmente entre las fechas de la tabla 6 de la IMO (`data/ant_radiante.csv`; activa del 10 de diciembre al 20 de septiembre, ZHR de unos 4).

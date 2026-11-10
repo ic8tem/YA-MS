@@ -34,8 +34,8 @@ Parinktys virš srautų sąrašo: **Hot A / Hot B kryptys**, **Europos žemėlap
 
 Rodomam laikui programa susumuoja visų virš horizonto esančių srautų svorį ZHR × efektyvumas, padalytą tarp pusės A (dalis f_A) ir pusės B. Didesnio svorio pusė duoda rekomenduojamą Hot, piešiamą raudonai:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Programos sprendimas (vadovo 23 lygtis).* Idėjos šaltinis: DJ5HG, pateikė DF5HC (DARC konferencija 2018) – priklausomai nuo radianto padėties vienas iš dviejų taškų, HOT-A arba HOT-B, yra palankesnis. Pasukimas 10–30° į tą pusę (šoninė sklaida) paimtas iš Cerrotta–Sartori straipsnio.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 Kiekvienam E sluoksnio taškui P susumuojami visų aktyvių srautų indėliai į efektyvumą (ta pati veidrodinio atspindžio sąlyga kaip [efektyvumo](Efficiency-Calculation-lt#modelis) atveju), pasverti ZHR. Taškai, siekiantys bent 3 % maksimumo, sudaro PREV zonas; kiekviena piešiama kaip elipsė, kurios centras = svertinis taškų vidurkis, o ašys = dvigubas jų išsibarstymas.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Programos sprendimas (vadovo 34 lygtis).* Tai praktinė taisyklė: jei srautas brauko iš šiaurės į pietus, naudingi pėdsakai krenta rytuose ir vakaruose.
@@ -81,8 +81,8 @@ Radiantai dangaus skliaute, matomame iš jūsų stoties, su **IMO kodu** ir **pa
 
 *PJŪVIS – labiausiai tikėtini pėdsakai, matomi iš antenos korespondento kryptimi.* Horizontaliai – **azimutas korespondento atžvilgiu** (← A kairėje, B → dešinėje), vertikaliai – **elevacija**. Kiekvienam srautui imami 14 stipriausių atspindžio taškų; kiekvienas pėdsakas yra į radiantą orientuota atkarpa nuo 10 km virš iki 10 km žemiau pėdsakų aukščio (ne daugiau kaip 60 km į kiekvieną pusę), tuo storesnė, kuo labiau tikėtina. Taip pat piešiami antenos lapelis (−3 dB apskritimas aplink lapelio elevaciją), korespondentas ir Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Programos sprendimas (vadovo 35 lygtis).*

@@ -35,8 +35,8 @@ Le graphique de Collm (720 × 720 pixels, couleurs pures) a des axes à position
 2. il **lit les étiquettes** de la graduation la plus haute et du zéro en comparant chaque caractère avec la police matricielle du graphique ;
 3. pour chaque heure i (0–47, hier et aujourd'hui), il prend la colonne centrale et le premier pixel cyan en partant du haut, y :
 
-```
-x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```math
+x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0-y_{top}}
 ```
 
 y_top et y0 sont les lignes de la graduation la plus haute et du zéro, N_top la valeur lue sur l'étiquette la plus haute (×1000). Résolution : environ 7–8 météores/heure par pixel. *Choix du programme (manuel, éq. 42).*
@@ -47,8 +47,8 @@ Si une étiquette ne peut pas être lue, le programme se rabat sur l'étalonnage
 
 À partir de l'histogramme des altitudes (n_k météores dans le km k, altitude moyenne h_k) :
 
-```
-h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```math
+\hat{h} = h_{k^*},\ k^* = \arg\max_k n_k,\qquad \bar{h} = \frac{\sum_k n_k h_k}{\sum_k n_k},\qquad s = \sqrt{\frac{\sum_k n_k (h_k-\bar{h})^2}{\sum_k n_k}}
 ```
 
 *Manuel, éq. 43.* Avec **du radar** coché (rangée 2 des commandes), le **mode** devient l'altitude des traînées de tous les calculs. Vérification : graphique du 5/11/2026 – mode 89,5 km, moyenne 88,6 km, écart type 6,8 km, ce qui confirme les ~90 km de l'article Cerrotta–Sartori (moyenne SKiYMET).
@@ -57,8 +57,8 @@ Si l'échelle du graphique des altitudes change, le programme avertit : *les sta
 
 ## Estimation sur votre bande
 
-```
-meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```math
+N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 Règles expérimentales de **SM6FHZ** (VUSHF 2025) : le nombre et l'intensité des réflexions varient en λ³, la durée en λ² ; la dépendance en λ³ est la même que dans l'équation sous-dense de McKinley. La durée maximale des pings selon l'IARU Région 1 est aussi affichée (1000 ms à 50 MHz, 500 ms à 70 MHz, 100 ms à 144 MHz, 13 ms à 432 MHz). Les valeurs sont indicatives, à comparer avec l'expérience sur l'air. Le facteur de station K et la comparaison avec RMOB se trouvent dans [Prévisions expérimentales](Experimental-Forecasts-fr).

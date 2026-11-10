@@ -27,17 +27,16 @@ Den orange raden under reglagen visar regeln med de aktuella siffrorna, t.ex. *N
 
 ## Från radarn till amatörbandet
 
-```
-N(f) = N(36.2 MHz) · (36.2 / f)^k · K        k = 3
-τ(f) = τ(36.2 MHz) · (36.2 / f)²
+```math
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
 **Källa:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maj 2025 – reflexernas antal och intensitet skalar med **λ³**, varaktigheten med **λ²** (432 MHz ligger 14–15 dB under 144 MHz och varar 1/9 så länge). **Kontroll:** λ³-beroendet är detsamma som i McKinleys ekvation för underdensa spår. Med k = 3 blir 1000 meteorer/timme i Collm omkring **16 reflexer/timme på 144 MHz**; RMOB-observatörer av GRAVES på 143,050 MHz räknar vanligen **20 till 140 ekon/timme** (RMOB-bulletinen, juni 2018): storleksordningen är förenlig, och skillnaden är stationsfaktorn K. (Handboken ekv. 44–45.)
 
 ## De närmaste 24 timmarna
 
-```
-N_forecast(t) = N(f, t − 24 h) · (I(t) + 10) / (I(t − 24 h) + 10)
+```math
+N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 ```
 
 **Persistens:** det omräknade värdet för samma timme dagen innan (eller två dagar innan om det saknas), korrigerat med förändringen i **sträckans svärmindex** I (Σ ZHR × effektivitet, se [Effektivitetsberäkning](Efficiency-Calculation-sv#modellen)). Konstanten 10 representerar den sporadiska bakgrunden och begränsar korrektionen när indexet är litet. *Programmets val (handboken ekv. 47).*
@@ -65,8 +64,8 @@ Månad och år tas från filnamnet (`…_MMYYYYrmob…`) eller från rubriken; a
 
 **Anpassa exponenten.** Med K = 1, utifrån medianen av kvoterna RMOB/Collm över de gemensamma timmarna (minst 3):
 
-```
-k_emp = − ln( median(N_RMOB / N_Collm) ) / ln( f / 36.2 )
+```math
+k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36{.}2)}
 ```
 
 *Programmets val (handboken ekv. 46).* Dialogrutan visar de gemensamma timmarna, medianen av kvoterna och k; **Ja** tillämpar k (och sätter K = 1), **Nej** behåller k = 3 – justera då K för hand till det värde som föreslås i samma dialogruta.

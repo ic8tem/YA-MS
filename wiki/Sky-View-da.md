@@ -34,8 +34,8 @@ Indstillinger over sværmlisten: **Hot A / Hot B-retninger**, **Europakort** (Na
 
 For det viste tidspunkt lægger programmet vægten ZHR × effektivitet sammen for alle sværme over horisonten, fordelt mellem side A (andel f_A) og side B. Den side, der har den største vægt, giver det anbefalede Hot, som tegnes med rødt:
 
-```
-W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        recommended = side with larger W
+```math
+W_A = \sum \frac{ZHR\,\eta}{100}\,f_A,\qquad W_B = \sum \frac{ZHR\,\eta}{100}\,(1-f_A),\qquad \mathrm{Hot} = \arg\max(W_A,\ W_B)
 ```
 
 *Programmets valg (manualens lign. 23).* Idéens kilde: DJ5HG, gengivet af DF5HC (DARC-konferencen 2018) – afhængigt af radiantens position er det ene af de to punkter, HOT-A eller HOT-B, mest gunstigt. At dreje 10–30° mod den side (side-scatter) stammer fra artiklen af Cerrotta–Sartori.
@@ -44,8 +44,8 @@ W_A = Σ (ZHR·η/100)·f_A        W_B = Σ (ZHR·η/100)·(1 − f_A)        re
 
 For hvert punkt P i E-laget lægges bidragene til effektiviteten fra alle aktive sværme sammen (samme spejlingsbetingelse som for [effektiviteten](Efficiency-Calculation-da#modellen)), vægtet med ZHR. Punkter med mindst 3 % af maksimum danner PREV-zonerne; hver tegnes som en ellipse med centrum = punkternes vægtede middelværdi og akser = to gange deres spredning.
 
-```
-W_P = Σ ZHR · c_P(ŝ)      c_P = 100 · w_P·S_P·max(0, ŝ·û_P) / max F      PREV: W_P ≥ 0.03 · max W
+```math
+W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\cdot\hat{u}_P)}{\max F},\qquad PREV:\ W_P \ge 0{.}03\,\max W
 ```
 
 *Programmets valg (manualens lign. 34).* Det er den praktiske regel: hvis sværmen fejer fra nord mod syd, falder de nyttige spor mod øst og vest.
@@ -81,8 +81,8 @@ Ved siden af står beregningens tekst: strækningens længde og azimut, midtpunk
 
 *SNIT – de mest sandsynlige spor set fra antennen mod modstationen.* Vandret **azimut i forhold til modstationen** (← A venstre, B → højre), lodret **elevation**. For hver sværm tages de 14 kraftigste refleksionspunkter; hvert spor er et linjestykke orienteret mod radianten, fra 10 km over til 10 km under sporhøjden (højst 60 km pr. side), tykkere jo mere sandsynligt. Desuden tegnes antennelappen (−3 dB-cirkel omkring lapelevationen), modstationen og Hot A / Hot B.
 
-```
-Q = P ± t½·ŝ        t½ = min(60 km, 10 km / max(0.17, |ŝ·û_P|))
+```math
+Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
 ```
 
 *Programmets valg (manualens lign. 35).*

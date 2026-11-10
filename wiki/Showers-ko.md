@@ -38,9 +38,8 @@
 
 ## 활동 프로필과 복사점 이동
 
-```
-ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
-α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```math
+ZHR(\lambda_\odot) = ZHR_{max}\,10^{-B_\pm |\lambda_\odot - \lambda_{max}|},\qquad \alpha = \alpha_0 + \frac{d\alpha}{d\lambda}\Delta\lambda,\quad \delta = \delta_0 + \frac{d\delta}{d\lambda}\Delta\lambda,\quad \Delta\lambda = \lambda_\odot - \lambda_{max}
 ```
 
 ZHR_max, α0, δ0, λ_max는 IMO 달력의 값이고, 기울기 B(극대 전후가 다름)와 일일 이동 dα/dλ, dδ/dλ는 `data/sciami.csv`에 적힌 **작업값**입니다(IMO 이동 표는 아직 입력되지 않음). *매뉴얼 식 9와 13.* Antihelion Source의 위치는 IMO 표 6의 날짜 사이에서 선형 보간합니다(`data/ant_radiante.csv`; 12월 10일 – 9월 20일 활동, ZHR 약 4).

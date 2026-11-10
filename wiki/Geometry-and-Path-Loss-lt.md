@@ -39,8 +39,8 @@ Lokatorius (4, 6 arba 8 simboliai; kvadrato centras, IARU Maidenhead sistema) [1
 
 **Šaltinis:** Cerrotta–Sartori straipsnio formulė (7 pav.), kur x = d/r, d – atstumas žeme iki atspindžio taško, H – pėdsakų aukštis, h – stoties aukštis [17]:
 
-```
-e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) / ( H − r(1 − cos x)/cos x − h·sin x ) ]
+```math
+e = 90^\circ - 57{.}3\,\arctan\left[\frac{r\tan x + \left(H - \frac{r(1-\cos x)}{\cos x}\right)\sin x}{H - \frac{r(1-\cos x)}{\cos x} - h\sin x}\right]
 ```
 
 **Patikra:** sutampa su tikslia sferine geometrija 0,03° tikslumu. Programa naudoja dviejų argumentų arktangentą, kuris už horizonto duoda neigiamas vertes ir išvengia straipsnyje minėtos periodiškumo problemos. Neigiama elevacija į vidurio tašką reiškia *trasa už geometrinio vieno šuolio nuotolio*.
@@ -49,8 +49,8 @@ e = 90° − 57.3 · arctan[ ( r·tan x + (H − r(1 − cos x)/cos x)·sin x ) 
 
 Atstumas žeme, kuriame spindulys su elevacija e pasiekia aukštį H (geometrinė aukščiau pateiktos formulės atvirkštinė) [18]:
 
-```
-d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
+```math
+d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\right]
 ```
 
 **Patikra:** H = 89,5 km, e = 0° → **1062 km**. Straipsnio pavyzdyje (JN44BB–IO53RT) brėžinys horizonto sankirtas rodo maždaug 870 km nuo stočių, o tai atitinka apie 2° pakeltą lapelį (865 km).
@@ -59,9 +59,8 @@ d_H = r · [ π/2 − e − arcsin( (r + h)·cos e / (r + H) ) ]
 
 **Šaltinis:** straipsnyje nustatomos kreivių sankirtos, kur kiekvienos stoties horizontas susitinka su E sluoksniu: dviejų apskritimų, kurių kampinis spindulys ρ = d_H/r ir centrai A ir B, sankirtos [19–20]:
 
-```
-p0 = cos ρ / (1 + û_A·û_B) · (û_A + û_B)
-p_A,B = p0 ± sqrt( (1 − |p0|²) / |û_A × û_B|² ) · (û_A × û_B)
+```math
+p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p_{A,B} = p_0 \pm \sqrt{\frac{1-|p_0|^2}{|\hat{u}_A\times\hat{u}_B|^2}}\,(\hat{u}_A\times\hat{u}_B)
 ```
 
 Jei 1 − |p0|² < 0, trasa ilgesnė nei 2·d_H ir stotys **nemato bendrosios E sluoksnio zonos**.
@@ -74,8 +73,8 @@ Jei 1 − |p0|² < 0, trasa ilgesnė nei 2·d_H ir stotys **nemato bendrosios E 
 
 **Sprendimas:** Hot A ir Hot B – taškai, nutolę atstumu s nuo vidurio taško M, statmenai trasai (s = 150 km, reguliuojama 30–400 km); A – kairėje, žiūrint iš jūsų stoties į korespondentą, B – dešinėje [21]. Iš stoties matomas nuokrypis yra maždaug [22]:
 
-```
-ΔAz_hot ≈ arctan( s / (D/2) )
+```math
+\Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
 **Patikra:** JN70CN–IN78UO, D = 1710 km: 6,7°, kai s = 100 km, **10,0°, kai s = 150 km** (kaip MSHV ir AMS/W8WN), 13,2°, kai s = 200 km.
@@ -84,16 +83,16 @@ Jei 1 − |p0|² < 0, trasa ilgesnė nei 2·d_H ir stotys **nemato bendrosios E 
 
 **Šaltinis:** McKinley lygtis retiesiems pėdsakams (β = 0, sin α = 1), be antenų stiprinimo; q – elektronų linijinis tankis, r_e – klasikinis elektrono spindulys = 2,818·10⁻¹⁵ m, R1, R2 – atstumai nuo pėdsako, φ – pusė sklaidos kampo [36]:
 
-```
-L = 10·log10[ 16·π²·R1·R2·(R1 + R2)·cos²φ / ( λ³·q²·r_e² ) ]   dB
+```math
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
 ```
 
 **Patikra:** su q = 10¹⁴ elektronų/m ties 144 MHz: **181–192 dB** nuo 600 iki 2200 km, atitinka straipsnio duomenis ties 144 MHz: **182 dB mažiausias** (GM8JBJ, pagal Kaiser & Closs 1952) ir **200 dB vidutinis** (OH5IY).
 
 ## Ryšio biudžetas
 
-```
-P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − P_min,   P_min = −130 dBm
+```math
+P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - 2{.}15 - L + G_{rx} - 2{.}15,\qquad M = P_{rx} - P_{min},\quad P_{min} = -130\ \mathrm{dBm}
 ```
 
 [37–38]. Stiprinimai įvedami dBi, o naudojami dBd (dBi − 2,15). Ataskaitoje taip pat pateikiama atsarga su **vidutiniu OH5IY slopinimu** (200 dB ties 144 MHz, perskaičiuota pagal λ³ pasirinktai juostai). Straipsnio duomuo: reikia apie **70 dBm EIRP** (−130 dBm + 200 dB, pvz., apie 400 W į 14 dBi anteną).
@@ -102,8 +101,8 @@ P_rx = P_tx(dBm) + G_tx − 2.15 − L + G_rx − 2.15        margin = P_rx − 
 
 **Stiprinimas – šaltinis:** Günter Hoch **DL6WU** kreivė ilgosioms Yagi antenoms kaip strėlės ilgio L funkcija, pateikta W8IO (galioja nuo maždaug 2 λ) [39]:
 
-```
-G = 7.773 · log10(L/λ) + 11.43   dBi
+```math
+G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 ```
 
 **Patikra pagal L.B. Cebik W4RNL NEC modelius ties 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -117,16 +116,16 @@ Skirtumas niekada neviršija **0,1 dB**: stiprinimas labiau priklauso nuo strėl
 
 **Lapelis – šaltinis:** Krauso taisyklė su apskritu lapeliu θE = θH = θK [40]:
 
-```
-G_lin = 41253 / (θE · θH)   ⇒   θK = sqrt( 41253 / 10^(G/10) )
+```math
+G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt{\frac{41253}{10^{G/10}}}
 ```
 
 **Patikra:** W4RNL DL6WU Yagi NEC modeliai duoda **5–10 % siauresnį horizontalųjį lapelį** nei Krausas: 33,8° / 26,4° / 22,6° 12, 19 ir 26 elementams, palyginti su 37,3° / 28,0° / 23,9°. Paprastos formulės neatsižvelgia į priekinius šoninius lapelius (W4RNL, *Long-Boom Yagi Rules of Thumb*). Ilgose strėlėse vertikalusis lapelis šiek tiek platesnis už horizontalųjį (14 λ: 18,4° / 18,8°).
 
 **Sprendimas** [41]:
 
-```
-θ_horizontal = 0.93 · θK        θ_vertical = θK
+```math
+\theta_{horizontal} = 0{.}93\,\theta_K,\qquad \theta_{vertical} = \theta_K
 ```
 
 Pavyzdys: 14 λ Yagi ties 432 MHz → 20,3 dBi, lapelis 18,1° horizontaliai ir 19,5° vertikaliai; W4RNL modeliai duoda 20,4 dBi ir 18,4° / 18,8°. Tai apytikslės taisyklės, išvestos iš kelių DL6WU antenų.

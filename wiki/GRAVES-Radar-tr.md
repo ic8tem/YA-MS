@@ -56,18 +56,16 @@ Dizi **UTC**'ye bağlıdır (PE1ITR): şu anda aydınlatılan adım, 00:00 UTC'd
 
 Bir iz, ancak sürdüğü sırada huzme onu aydınlatırsa duyulur:
 
-```
-probability ≈ min(1, (step + trail) / cycle)
-2021 sequence:  (0.8 + 0.3) / 4.8  ≈ 23 %
-2007 sequence:  (3.2 + 0.3) / 19.2 ≈ 18 %
+```math
+p \approx \min\left(1,\ \frac{t_{step} + \tau}{T_{cycle}}\right):\qquad 2021:\ \frac{0{.}8+0{.}3}{4{.}8} \approx 23\ \%,\qquad 2007:\ \frac{3{.}2+0{.}3}{19{.}2} \approx 18\ \%
 ```
 
 0,3 s, 143 MHz'de tipik bir underdense iz süresidir – sabit bir değer, *programın seçimi* (SM6FHZ'nin λ² kuralı süreleri bantlar arasında ölçekler ama bir başlangıç değeri vermez).
 
 ### Beklenen yankılar (deneysel)
 
-```
-echoes/hour ≈ forecast(main path, f_fc) · (f_fc / 143.05)^k · (I_GRAVES + 10) / (I_main + 10) · probability
+```math
+N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac{I_{GRAVES}+10}{I_{DX}+10}\; p
 ```
 
 [Deneysel tahminler](Experimental-Forecasts-tr) sekmesindeki tahmin (istasyon katsayısı K'yı zaten içerir) SM6FHZ kuralıyla (aynı k üssü) kendi frekansı f_fc'den 143,050 MHz'e ölçeklenir, iki yolun yağmur endekslerinin oranıyla düzeltilir (10 sabiti, tahmindeki gibi sporadik arka planı temsil eder) ve algılama katsayısıyla çarpılır. Yalnızca yol göstericidir: RMOB gözlemcileriyle karşılaştırın.

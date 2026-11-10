@@ -45,8 +45,11 @@ NOVITA' DELLA 1.7.0
     attraversa il piano della tratta (beta = 90 gradi, valore prudente usato nel bilancio). Riferimento 172-190 dB di G4BAO al posto dei 182 dB di GM8JBJ.
   - Previsioni: la durata dei ping tiene conto del fattore sec^2(phi) della tratta.
   - Manuale e spiegazione: confronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo e da Monaco).
-  - Interfaccia in 28 lingue (prima 6), le stesse di YAEC e di E-LAYER ANALYZER, con i termini in comune
-    tradotti come in YAEC.
+  - Interfaccia in 36 lingue (prima 6), le stesse di YAEC e di E-LAYER ANALYZER, con i termini in comune
+    tradotti come in YAEC; nuove: portoghese brasiliano, polacco, ceco, ungherese, rumeno, greco, thailandese,
+    cinese tradizionale.
+  - Manuale dei calcoli (doc\manuali) e spiegazione dell'efficienza in tutte le 36 lingue; la linguetta
+    "Efficienza - spiegazione" mostra il documento nella lingua dell'interfaccia.
 
 NOVITA' DELLA 1.6.0
   - Linguette con sottolinguette: "Live e dati real-time" (Traffico in diretta, Flusso radar, Radar GRAVES,
@@ -82,7 +85,7 @@ NOVITA' DELLA 1.4.0
     stazione, con la zona di cielo vista da ciascun radar e la distanza.
 
 NOVITA' DELLA 1.3.0
-  - Lingue: 28, le stesse di YAEC e di E-LAYER ANALYZER (scelta in alto a destra); i termini in comune
+  - Lingue: 36, le stesse di YAEC e di E-LAYER ANALYZER (scelta in alto a destra); i termini in comune
     con YAEC sono tradotti allo stesso modo.
   - Nuova linguetta "Radar GRAVES": settori, passi del fascio, prossimi passaggi verso la tratta.
   - Schemi di colori di YAEC (Chiaro, Notte, Nero, pastelli, Scia meteorica), scelta "Tema" in alto a destra.

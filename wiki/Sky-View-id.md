@@ -6,7 +6,7 @@
 
 [![Kubah langit](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Sub-tab ini (kubah langit pada versi sebelumnya) menyatukan dalam satu layar **di mana** jejak yang berguna berada sekarang dan **ke mana** antena diarahkan. Di kiri **denah** lintasan; di kanan daftar hujan meteor, kubah langit kecil dengan radian, teks perhitungan, dan **penampang** dilihat dari antena Anda. Semuanya mengacu pada waktu penggeser *Waktu perhitungan* (bawaan waktu nyata; ±36 h dengan langkah 15 menit).
+Sub-tab ini (kubah langit pada versi sebelumnya) menyatukan dalam satu layar **di mana** jejak yang berguna berada sekarang dan **ke mana** antena diarahkan. Di kiri **denah** lintasan; di kanan daftar hujan meteor, kubah langit kecil dengan radian, teks perhitungan, dan **penampang** dilihat dari antena Anda. Semuanya mengacu pada saat yang dipilih dengan *Tanggal perhitungan (UTC)* dan penggeser *Jam (−12 hingga +36 h)* (bawaan waktu nyata, dengan langkah 15 menit).
 
 Sebuah **strip di atas denah** merangkum perhitungan untuk saat itu: tanggal dan waktu (*sekarang* atau berapa jam dari sekarang), **indeks lintasan Σ ZHR×η**, **hujan meteor paling berguna** beserta ZHR dan efisiensinya, jumlah hujan meteor di atas cakrawala, dan **Hot yang disarankan** beserta azimutnya.
 

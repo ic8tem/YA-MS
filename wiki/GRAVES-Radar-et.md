@@ -16,7 +16,7 @@ Sakk käsitleb trassi **GRAVES → sina** omaette meteor scatteri trassina: sama
 
 | Juhtnupp | Mida see teeb |
 |---|---|
-| **Praegu** | Viib arvutuse aja tagasi reaalajale (sakk järgib liugurit *Arvutuse aeg*). |
+| **Praegu** | Viib arvutuse tagasi reaalajale: tänane kuupäev ja tundide liugur nullis (sakk järgib välju *Arvutuse kuupäev* ja *Tunnid*). |
 | **Määra GRAVES DX-iks** | Korrespondendiks saab GRAVES (JN27SI, kõrgus 200 m) ja põhitrass arvutatakse ümber: kõik teised sakid näitavad seejärel GRAVESi trassi. |
 | **Kiire järjestus** | *0,8 s sammu kohta · tsükkel 4,8 s (PE1ITR 2021)* (vaikimisi) või *3,2 s sammu kohta · tsükkel 19,2 s (PE1ITR 2007)*. |
 

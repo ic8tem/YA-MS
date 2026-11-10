@@ -16,7 +16,7 @@ O separador trata **GRAVES → si** como um percurso de meteor scatter próprio:
 
 | Comando | O que faz |
 |---|---|
-| **Agora** | Repõe o momento do cálculo no tempo real (o separador segue o controlo *Momento do cálculo*). |
+| **Agora** | Repõe o cálculo no tempo real: a data de hoje e o controlo das horas a zero (o separador segue *Data do cálculo* e *Horas*). |
 | **Pôr o GRAVES como DX** | O correspondente passa a ser o GRAVES (JN27SI, altitude 200 m) e o percurso principal é recalculado: todos os outros separadores mostram então o percurso do GRAVES. |
 | **Sequência do feixe** | *0,8 s por passo · ciclo de 4,8 s (PE1ITR 2021)* (por omissão) ou *3,2 s por passo · ciclo de 19,2 s (PE1ITR 2007)*. |
 

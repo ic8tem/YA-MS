@@ -16,7 +16,7 @@ L'onglet traite **GRAVES → vous** comme un trajet meteor scatter à part enti�
 
 | Commande | Rôle |
 |---|---|
-| **Maintenant** | Ramène l'instant du calcul au temps réel (l'onglet suit le curseur *Instant du calcul*). |
+| **Maintenant** | Ramène le calcul au temps réel : la date du jour et le curseur des heures à zéro (l'onglet suit *Date du calcul* et *Heures*). |
 | **Mettre GRAVES comme DX** | Le correspondant devient GRAVES (JN27SI, altitude 200 m) et le trajet principal est recalculé : tous les autres onglets affichent alors le trajet GRAVES. |
 | **Séquence du faisceau** | *0,8 s par pas · cycle 4,8 s (PE1ITR 2021)* (par défaut) ou *3,2 s par pas · cycle 19,2 s (PE1ITR 2007)*. |
 

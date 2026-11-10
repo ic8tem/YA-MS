@@ -6,7 +6,7 @@
 
 [![Taevavõlv](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-See alamsakk (varasemate versioonide taevavõlv) näitab ühel ekraanil, **kus** kasulikud jäljed praegu on ja **kuhu** antenn suunata. Vasakul trassi **pealtvaade**; paremal meteoorivoolude loetelu, väike taevavõlv radiantidega, arvutuse tekst ja sinu antennist nähtav **lõige**. Kõik viitab liuguri *Arvutuse aeg* ajale (vaikimisi reaalaeg; ±36 h 15-minutiliste sammudega).
+See alamsakk (varasemate versioonide taevavõlv) näitab ühel ekraanil, **kus** kasulikud jäljed praegu on ja **kuhu** antenn suunata. Vasakul trassi **pealtvaade**; paremal meteoorivoolude loetelu, väike taevavõlv radiantidega, arvutuse tekst ja sinu antennist nähtav **lõige**. Kõik viitab hetkele, mis on valitud väljaga *Arvutuse kuupäev (UTC)* ja liuguriga *Tunnid (−12 kuni +36 h)* (vaikimisi reaalaeg, 15-minutiliste sammudega).
 
 **Pealtvaate kohal olev riba** võtab selle hetke arvutuse kokku: kuupäev ja kellaaeg (*praegu* või tunnid praegusest), **trassi indeks Σ ZHR×η**, **kõige kasulikum meteoorivool** koos oma ZHR-i ja efektiivsusega, horisondi kohal olevate meteoorivoolude arv ning **soovitatud Hot** koos asimuudiga.
 

@@ -6,7 +6,7 @@
 
 [![Dangaus skliautas](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Ši vidinė kortelė (ankstesnių versijų dangaus skliautas) viename ekrane parodo, **kur** dabar yra naudingi pėdsakai ir **kur** nukreipti anteną. Kairėje – trasos **planas**; dešinėje – srautų sąrašas, mažas dangaus skliautas su radiantais, skaičiavimo tekstas ir iš jūsų antenos matomas **pjūvis**. Viskas susieta su slankiklio *Skaičiavimo laikas* laiku (pagal nutylėjimą realus laikas; ±36 h 15 minučių žingsniais).
+Ši vidinė kortelė (ankstesnių versijų dangaus skliautas) viename ekrane parodo, **kur** dabar yra naudingi pėdsakai ir **kur** nukreipti anteną. Kairėje – trasos **planas**; dešinėje – srautų sąrašas, mažas dangaus skliautas su radiantais, skaičiavimo tekstas ir iš jūsų antenos matomas **pjūvis**. Viskas susieta su momentu, pasirinktu laukeliu *Skaičiavimo data (UTC)* ir slankikliu *Valandos (nuo −12 iki +36 h)* (pagal nutylėjimą realus laikas, 15 minučių žingsniais).
 
 **Juostelė virš plano** apibendrina to momento skaičiavimą: data ir laikas (*dabar* arba valandos nuo dabar), **trasos indeksas Σ ZHR×η**, **naudingiausias srautas** su jo ZHR ir efektyvumu, srautų virš horizonto skaičius ir **rekomenduojamas Hot** su jo azimutu.
 

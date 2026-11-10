@@ -33,7 +33,8 @@ Fyrir ofan flipana eru þrjár raðir stýringa sem gilda fyrir alla flipa. Hnap
 | Stýring | Hvað hún gerir |
 |---|---|
 | **Tími** | UTC-klukka. |
-| **Tími útreiknings (±36 klst.)** | Færir tíma útreikningsins – [Spáreikningur](Sky-View-is) og [GRAVES-ratsjá](GRAVES-Radar-is) – allt að 36 klukkustundir aftur á bak eða fram, í 15 mínútna skrefum. Við hliðina: *Útreikningur fyrir: núna* eða *Útreikningur fyrir: dd/mm hh:mm UTC*. |
+| **Dagsetning útreiknings (UTC)** | Dagur útreikningsins fyrir [Spáreikning](Sky-View-is) og [GRAVES-ratsjá](GRAVES-Radar-is) (sjálfgefið í dag), á núverandi tíma sólarhringsins. |
+| **Klukkustundir (−12 til +36 klst.)** | Færir tíma útreikningsins frá 12 klukkustundum á undan til 36 klukkustunda á eftir þeim tíma, í 15 mínútna skrefum. Við hliðina: *Útreikningur fyrir: núna* eða *Útreikningur fyrir: dd/mm hh:mm UTC*. |
 | **Rauntími** | Aftur til líðandi stundar. |
 | **Dagur fyrir 24 klst. töfluna (UTC)** | Dagurinn sem sýndur er í [Útreikningi nýtni](Efficiency-Calculation-is) og á tímalínu GRAVES. |
 

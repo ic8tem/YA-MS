@@ -33,7 +33,8 @@ Virš kortelių yra trys valdymo eilutės, galiojančios visoms kortelėms. Mygt
 | Valdiklis | Ką daro |
 |---|---|
 | **Laikas** | UTC laikrodis. |
-| **Skaičiavimo laikas (±36 h)** | Perkelia skaičiavimo momentą – [Prognozės skaičiavimas](Sky-View-lt) ir [GRAVES radaras](GRAVES-Radar-lt) – iki 36 valandų atgal arba į priekį, 15 minučių žingsniais. Šalia: *Skaičiavimas: dabar* arba *Skaičiavimas: dd/mm hh:mm UTC*. |
+| **Skaičiavimo data (UTC)** | Skaičiavimo diena kortelėms [Prognozės skaičiavimas](Sky-View-lt) ir [GRAVES radaras](GRAVES-Radar-lt) (pagal nutylėjimą šiandien), esamu paros laiku. |
+| **Valandos (nuo −12 iki +36 h)** | Perkelia skaičiavimo momentą nuo 12 valandų prieš iki 36 valandų po to laiko, 15 minučių žingsniais. Šalia: *Skaičiavimas: dabar* arba *Skaičiavimas: dd/mm hh:mm UTC*. |
 | **Realus laikas** | Grįžti į dabartį. |
 | **24 h lentelės diena (UTC)** | Diena, rodoma kortelėje [Efektyvumo skaičiavimas](Efficiency-Calculation-lt) ir GRAVES laiko juostoje. |
 

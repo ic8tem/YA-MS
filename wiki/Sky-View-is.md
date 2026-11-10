@@ -6,7 +6,7 @@
 
 [![Himinhvelfing](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Þessi undirflipi (himinhvelfingin í eldri útgáfum) sýnir á einum skjá **hvar** nýtilegu slóðirnar eru núna og **hvert skal beina loftnetinu**. Til vinstri er **grunnmynd** leiðarinnar; til hægri listi yfir drífur, lítil himinhvelfing með geislapunktunum, texti útreikningsins og **sniðið** séð frá loftnetinu þínu. Allt miðast við tímann á sleðanum *Tími útreiknings* (rauntími sjálfgefið; ±36 klst. í 15 mínútna skrefum).
+Þessi undirflipi (himinhvelfingin í eldri útgáfum) sýnir á einum skjá **hvar** nýtilegu slóðirnar eru núna og **hvert skal beina loftnetinu**. Til vinstri er **grunnmynd** leiðarinnar; til hægri listi yfir drífur, lítil himinhvelfing með geislapunktunum, texti útreikningsins og **sniðið** séð frá loftnetinu þínu. Allt miðast við tímann sem valinn er með *Dagsetning útreiknings (UTC)* og sleðanum *Klukkustundir (−12 til +36 klst.)* (rauntími sjálfgefið, í 15 mínútna skrefum).
 
 **Rönd fyrir ofan grunnmyndina** dregur saman útreikninginn fyrir þá stund: dagsetningu og tíma (*núna* eða klukkustundir frá núna), **leiðarstuðulinn Σ ZHR×η**, **gagnlegustu drífuna** með ZHR hennar og nýtni, fjölda drífa yfir sjóndeildarhring og **ráðlagðan Hot** með áttarhorni hans.
 

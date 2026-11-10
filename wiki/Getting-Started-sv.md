@@ -33,7 +33,8 @@ Ovanför flikarna finns tre rader med reglage som gäller för alla flikar. Knap
 | Reglage | Vad det gör |
 |---|---|
 | **Tid** | UTC-klocka. |
-| **Beräkningstidpunkt (±36 h)** | Flyttar beräkningens tidpunkt – [Prognosberäkning](Sky-View-sv) och [GRAVES-radar](GRAVES-Radar-sv) – upp till 36 timmar bakåt eller framåt, i steg om 15 minuter. Bredvid: *Beräkning för: nu* eller *Beräkning för: dd/mm hh:mm UTC*. |
+| **Beräkningsdatum (UTC)** | Dagen för beräkningen i [Prognosberäkning](Sky-View-sv) och [GRAVES-radar](GRAVES-Radar-sv) (i dag som standard), vid aktuell tid på dygnet. |
+| **Timmar (−12 till +36 h)** | Flyttar beräkningens tidpunkt från 12 timmar före till 36 timmar efter den tiden, i steg om 15 minuter. Bredvid: *Beräkning för: nu* eller *Beräkning för: dd/mm hh:mm UTC*. |
 | **Realtid** | Tillbaka till nu. |
 | **Dag för 24 h-tabellen (UTC)** | Den dag som visas i [Effektivitetsberäkning](Efficiency-Calculation-sv) och i GRAVES-tidslinjen. |
 

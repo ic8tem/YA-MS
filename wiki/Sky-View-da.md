@@ -6,7 +6,7 @@
 
 [![Himmelkuppel](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Denne underfane (himmelkuplen fra tidligere versioner) samler på én skærm, **hvor** de nyttige spor er nu, og **hvorhen** antennen skal pege. Til venstre strækningen **set ovenfra**; til højre sværmlisten, en lille himmelkuppel med radianterne, beregningens tekst og **snittet** set fra din antenne. Alt refererer til tidspunktet på skyderen *Beregningstidspunkt* (realtid som standard; ±36 t i trin på 15 minutter).
+Denne underfane (himmelkuplen fra tidligere versioner) samler på én skærm, **hvor** de nyttige spor er nu, og **hvorhen** antennen skal pege. Til venstre strækningen **set ovenfra**; til højre sværmlisten, en lille himmelkuppel med radianterne, beregningens tekst og **snittet** set fra din antenne. Alt refererer til det tidspunkt, der er valgt med *Beregningsdato (UTC)* og skyderen *Timer (−12 til +36 t)* (realtid som standard, i trin på 15 minutter).
 
 En **bjælke over visningen set ovenfra** opsummerer beregningen for det tidspunkt: dato og klokkeslæt (*nu* eller timer fra nu), **strækningsindekset Σ ZHR×η**, den **mest nyttige sværm** med dens ZHR og effektivitet, antallet af sværme over horisonten og det **anbefalede Hot** med dets azimut.
 

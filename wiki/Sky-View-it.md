@@ -6,7 +6,7 @@
 
 [![Volta celeste](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/it-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/it-2_1.png)
 
-Questa sotto-linguetta (la volta celeste delle versioni precedenti) mette in una sola schermata **dove** si trovano adesso le scie utili e **dove puntare**. A sinistra la **vista in pianta** della tratta; a destra l'elenco degli sciami, una piccola volta celeste con i radianti, il testo del calcolo e la **sezione** vista dalla tua antenna. Tutto si riferisce all'ora del cursore *Momento del calcolo* (tempo reale per impostazione predefinita; ±36 h a passi di 15 minuti).
+Questa sotto-linguetta (la volta celeste delle versioni precedenti) mette in una sola schermata **dove** si trovano adesso le scie utili e **dove puntare**. A sinistra la **vista in pianta** della tratta; a destra l'elenco degli sciami, una piccola volta celeste con i radianti, il testo del calcolo e la **sezione** vista dalla tua antenna. Tutto si riferisce al momento scelto con *Data del calcolo (UTC)* e il cursore *Ore (da −12 a +36 h)* (tempo reale per impostazione predefinita, a passi di 15 minuti).
 
 Una **striscia sopra la vista in pianta** riassume il calcolo per quel momento: data e ora (*adesso* oppure ore rispetto ad adesso), l'**indice della tratta Σ ZHR×η**, lo **sciame più utile** con il suo ZHR e la sua efficienza, il numero di sciami sopra l'orizzonte e l'**Hot consigliato** con il suo azimut.
 

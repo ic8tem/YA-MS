@@ -6,7 +6,7 @@
 
 [![Hemelkoepel](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-2_1.png)
 
-Dit subtabblad (de hemelkoepel van eerdere versies) zet op één scherm **waar** de bruikbare sporen nu zijn en **waarheen je moet richten**. Links het **bovenaanzicht** van het traject; rechts de lijst van zwermen, een kleine hemelkoepel met de radianten, de tekst van de berekening en de **doorsnede** gezien vanaf je antenne. Alles verwijst naar het tijdstip van de schuifregelaar *Berekeningsmoment* (standaard realtime; ±36 h in stappen van 15 minuten).
+Dit subtabblad (de hemelkoepel van eerdere versies) zet op één scherm **waar** de bruikbare sporen nu zijn en **waarheen je moet richten**. Links het **bovenaanzicht** van het traject; rechts de lijst van zwermen, een kleine hemelkoepel met de radianten, de tekst van de berekening en de **doorsnede** gezien vanaf je antenne. Alles verwijst naar het moment dat is gekozen met *Berekeningsdatum (UTC)* en de schuifregelaar *Uren (−12 tot +36 u)* (standaard realtime, in stappen van 15 minuten).
 
 Een **strook boven het bovenaanzicht** vat de berekening voor dat moment samen: datum en tijd (*nu* of uren vanaf nu), de **trajectindex Σ ZHR×η**, de **nuttigste zwerm** met zijn ZHR en efficiëntie, het aantal zwermen boven de horizon en de **aanbevolen hot** met zijn azimut.
 

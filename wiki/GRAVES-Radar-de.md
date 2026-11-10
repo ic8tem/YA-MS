@@ -16,7 +16,7 @@ Der Reiter behandelt **GRAVES → du** als eigene Meteorscatter-Strecke: Mit den
 
 | Bedienelement | Was es tut |
 |---|---|
-| **Jetzt** | Setzt den Berechnungszeitpunkt auf Echtzeit zurück (der Reiter folgt dem Schieberegler *Berechnungszeitpunkt*). |
+| **Jetzt** | Setzt die Berechnung auf Echtzeit zurück: das heutige Datum und den Stundenregler auf null (der Reiter folgt *Berechnungsdatum* und *Stunden*). |
 | **GRAVES als Gegenstation** | Die Gegenstation wird GRAVES (JN27SI, Höhe 200 m) und die Hauptstrecke wird neu berechnet: Alle anderen Reiter zeigen dann die Strecke zu GRAVES. |
 | **Strahlfolge** | *0,8 s pro Schritt · Zyklus 4,8 s (PE1ITR 2021)* (Standard) oder *3,2 s pro Schritt · Zyklus 19,2 s (PE1ITR 2007)*. |
 

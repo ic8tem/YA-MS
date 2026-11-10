@@ -33,7 +33,8 @@ Sa itaas ng mga tab ay may tatlong hanay ng mga kontrol, balido para sa lahat ng
 | Kontrol | Ano ang ginagawa |
 |---|---|
 | **Oras** | Orasang UTC. |
-| **Oras ng kalkulasyon (±36 h)** | Inililipat ang sandali ng kalkulasyon – [Kalkulasyon ng pagtataya](Sky-View-tl) at [Radar GRAVES](GRAVES-Radar-tl) – hanggang 36 na oras pabalik o pasulong, sa mga hakbang na 15 minuto. Sa tabi nito: *Kalkulasyon para sa: ngayon* o *Kalkulasyon para sa: dd/mm hh:mm UTC*. |
+| **Petsa ng kalkulasyon (UTC)** | Ang araw ng kalkulasyon para sa [Kalkulasyon ng pagtataya](Sky-View-tl) at [Radar GRAVES](GRAVES-Radar-tl) (ngayong araw bilang default), sa kasalukuyang oras ng araw. |
+| **Mga oras (mula −12 hanggang +36 h)** | Inililipat ang sandali ng kalkulasyon mula 12 oras bago hanggang 36 na oras pagkatapos ng oras na iyon, sa mga hakbang na 15 minuto. Sa tabi nito: *Kalkulasyon para sa: ngayon* o *Kalkulasyon para sa: dd/mm hh:mm UTC*. |
 | **Real time** | Bumalik sa ngayon. |
 | **Araw para sa 24 h na talahanayan (UTC)** | Ang araw na ipinapakita sa [Kalkulasyon ng episyensya](Efficiency-Calculation-tl) at sa timeline ng GRAVES. |
 

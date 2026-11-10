@@ -33,7 +33,8 @@ Beim ersten Start zeigt YA-MS eine Beispielstrecke (JN70CN → JO62QM auf 144 MH
 | Bedienelement | Was es tut |
 |---|---|
 | **Zeit** | UTC-Uhr. |
-| **Berechnungszeitpunkt (±36 h)** | Verschiebt den Zeitpunkt der Berechnung – [Vorhersageberechnung](Sky-View-de) und [Radar GRAVES](GRAVES-Radar-de) – um bis zu 36 Stunden zurück oder vor, in Schritten von 15 Minuten. Daneben: *Berechnung für: jetzt* oder *Berechnung für: TT/MM hh:mm UTC*. |
+| **Berechnungsdatum (UTC)** | Der Tag der Berechnung für [Vorhersageberechnung](Sky-View-de) und [Radar GRAVES](GRAVES-Radar-de) (standardmäßig heute), zur aktuellen Tageszeit. |
+| **Stunden (−12 bis +36 h)** | Verschiebt den Zeitpunkt der Berechnung von 12 Stunden vor bis 36 Stunden nach dieser Uhrzeit, in Schritten von 15 Minuten. Daneben: *Berechnung für: jetzt* oder *Berechnung für: TT/MM hh:mm UTC*. |
 | **Echtzeit** | Zurück zu jetzt. |
 | **Tag für 24-h-Tabelle (UTC)** | Der Tag, der in [Effektivitätsberechnung](Efficiency-Calculation-de) und in der GRAVES-Zeitleiste gezeigt wird. |
 

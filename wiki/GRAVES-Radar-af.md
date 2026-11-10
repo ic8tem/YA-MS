@@ -16,7 +16,7 @@ Die oortjie behandel **GRAVES → jy** as 'n meteor scatter-pad op sigself: met 
 
 | Kontrole | Wat dit doen |
 |---|---|
-| **Nou** | Bring die berekeningstyd terug na intyds (die oortjie volg die skuifbalk *Berekeningstyd*). |
+| **Nou** | Bring die berekening terug na intyds: vandag se datum en die ure-skuifbalk op nul (die oortjie volg *Berekeningsdatum* en *Ure*). |
 | **Stel GRAVES as DX** | Die DX-stasie word GRAVES (JN27SI, hoogte 200 m) en die hoofpad word herbereken: al die ander oortjies wys dan die GRAVES-pad. |
 | **Bundelvolgorde** | *0,8 s per stap · siklus 4,8 s (PE1ITR 2021)* (verstek) of *3,2 s per stap · siklus 19,2 s (PE1ITR 2007)*. |
 

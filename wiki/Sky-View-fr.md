@@ -6,7 +6,7 @@
 
 [![Voûte céleste](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Ce sous-onglet (la voûte céleste des versions précédentes) réunit sur un seul écran **où** se trouvent en ce moment les traînées utiles et **où pointer**. À gauche, la **vue en plan** du trajet ; à droite, la liste des essaims, une petite voûte céleste avec les radiants, le texte du calcul et la **coupe** vue depuis votre antenne. Tout se rapporte à l'heure du curseur *Instant du calcul* (temps réel par défaut ; ±36 h par pas de 15 minutes).
+Ce sous-onglet (la voûte céleste des versions précédentes) réunit sur un seul écran **où** se trouvent en ce moment les traînées utiles et **où pointer**. À gauche, la **vue en plan** du trajet ; à droite, la liste des essaims, une petite voûte céleste avec les radiants, le texte du calcul et la **coupe** vue depuis votre antenne. Tout se rapporte à l'instant choisi avec *Date du calcul (UTC)* et le curseur *Heures (de −12 à +36 h)* (temps réel par défaut, par pas de 15 minutes).
 
 Un **bandeau au-dessus de la vue en plan** résume le calcul pour cet instant : date et heure (*maintenant* ou nombre d'heures par rapport à maintenant), l'**indice du trajet Σ ZHR×η**, l'**essaim le plus utile** avec son ZHR et son efficacité, le nombre d'essaims au-dessus de l'horizon et le **Hot conseillé** avec son azimut.
 

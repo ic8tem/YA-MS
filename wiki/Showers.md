@@ -22,7 +22,8 @@ The shower catalogue used by all calculations: **45 showers** from the **IMO Met
 | v km/s, r | Geocentric speed and population index |
 | ZHR | Peak ZHR (*var.* = variable) |
 | Type | *visual* or *radio, daytime* |
-| Active today | *yes* when the shower is active now |
+
+The showers **active today (UTC)** are highlighted with a yellow veil and bold text.
 
 ## Next peak
 

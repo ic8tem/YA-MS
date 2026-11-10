@@ -16,7 +16,7 @@ The tab treats **GRAVES → you** as a meteor-scatter path of its own: with the 
 
 | Control | What it does |
 |---|---|
-| **Now** | Brings the sky dome time back to real time (the tab follows the *Sky dome time* slider). |
+| **Now** | Brings the calculation time back to real time (the tab follows the *Calculation time* slider). |
 | **Set GRAVES as DX** | The DX station becomes GRAVES (JN27SI, height 200 m) and the main path is recalculated: all other tabs then show the GRAVES path. |
 | **Beam sequence** | *0.8 s per step · 4.8 s cycle (PE1ITR 2021)* (default) or *3.2 s per step · 19.2 s cycle (PE1ITR 2007)*. |
 

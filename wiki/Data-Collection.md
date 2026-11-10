@@ -6,18 +6,19 @@
 
 [![Data collection](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
-## Three cluster streams
+## Four sources
 
-The tab collects **meteor-scatter spots** from three telnet streams, each in its own sub-tab:
+The tab collects **meteor-scatter spots** from three telnet streams and from the PSKReporter MQTT feed, each in its own sub-tab:
 
 | Sub-tab | Default | Notes |
 |---|---|---|
 | **1. DX cluster** | on0dxk.dyndns.org : 8000 | A cluster of your choice. On ON0DXK the VHF bands are filtered: enable them with `set/filter dxbm/pass 6` (then 4, 2…). |
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimmers rarely decode MS modes. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | DM4X cluster carrying the **PSKReporter** spots: the MSK144 decodes of WSJT-X and MSHV arrive here. |
+| **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | Live PSKReporter spots via **MQTT** (service by M0LTE): no login, each spot already carries the locators of the transmitting and the receiving station. Default topics: MSK144 on 6 m, 4 m, 2 m, 1.25 m, 70 cm and FSK441 on 2 m (`pskr/filter/v2/band/mode/#`); *Default topics* restores them. |
 | **MS spots collected** | – | Table of the accepted spots, newest first. |
 
-Each stream has host, port, commands sent after the login, *Reconnect*, *Connect at start-up*, a console and a line to send commands. Write your **callsign for the login** at the top. A strip shows the state of the three sessions (green dot = connected). The sessions stay open when you change language or colour scheme.
+Each stream has host, port, commands sent after the login, *Reconnect*, *Connect at start-up*, a console and a line to send commands. Write your **callsign for the login** at the top. The MQTT source has host, port, topics (one per line or separated by `;`), *Reconnect* and *Connect at start-up* (off by default) and a console with the received spots; its spots go through the same filter. A strip shows the state of the four sources (green dot = connected). The sessions stay open when you change language or colour scheme.
 
 ## The filter (40 % of the window)
 

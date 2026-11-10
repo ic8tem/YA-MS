@@ -79,6 +79,9 @@ jobs:
           chmod +x pkg/YA-MS/installa.sh pkg/YA-MS/YA-MS
           tar -C pkg -czf dist/YA-MS-$VER-linux-x64.tar.gz YA-MS
           bash installer/make-deb.sh linux-x64 "$VER" publish/linux-x64 dist
+      - name: Prova della fonte PSKReporter MQTT (60 s)
+        if: github.ref != 'refs/heads/release'
+        run: timeout 120 ./publish/linux-x64/YA-MS --prova-mqtt 60 || true
       - name: Fotografie delle linguette (schermo virtuale)
         if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/prototipo-1.7')
         run: |

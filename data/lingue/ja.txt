@@ -52,7 +52,7 @@ Carattere	フォント
 Carica file ADIF...	ADIF ファイルを読込...
 Carica file RMOB dal disco...	RMOB ファイルをディスクから読込...
 Catalogo sciami	流星群カタログ
-Che cosa fare	すること
+Che cosa fare	やること
 Collm stessa ora	Collm 同時刻
 Collm {0} MHz (validi)	Collm {0} MHz (有効)
 Comae Berenicidi	かみのけ座流星群
@@ -199,7 +199,7 @@ Nuovo locator della stazione dalla mappa: {0}	地図から自局の新ロケー�
 O	西
 ORA MIGLIORE DEL GIORNO	本日の最良時間帯
 Ora	現在時刻
-Ora UTC	時刻 UTC
+Ora UTC	UTC 時刻
 Ore in comune: {0}. Rapporto mediano RMOB/Collm = {1:F4}.\nEsponente empirico (con K = 1): k = {2:F2}  (regola SM6FHZ: 3).\n\nApplico questo esponente? (In alternativa si lascia k = 3 e si regola il fattore K = {3:F2}.)	共通の時間数: {0}。RMOB/Collm 比の中央値 = {1:F4}。\n経験的指数 (K = 1 として): k = {2:F2}  (SM6FHZ 則: 3)。\n\nこの指数を適用しますか? (代わりに k = 3 のまま係数 K = {3:F2} に設定することもできます。)
 Orionidi	オリオン座流星群
 Orionidi di novembre	11月オリオン座流星群
@@ -293,13 +293,13 @@ USB su 143,049 MHz (nota a circa 1 kHz) oppure 143,050 MHz, AGC lento o spento, 
 Ursidi	こぐま座流星群
 Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	GRAVES → 自局パスの推奨ホットスポットへ (パスのカード)、低い仰角で
 Vista dall'alto (E a destra)	上空から見た図 (東が右)
-Waterfall	ウォーターフォール
+Waterfall	Waterfall
 Wikipedia, "GRAVES (system)" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)	Wikipedia「GRAVES (system)」– Broye-lès-Pesmes の送信所 (北緯 47.348° 東経 5.515°)
 YA-MS - nessuna connessione	YA-MS - 接続なし
 YAEC di IC8TEM – linguetta Radar GRAVES (bozzetto da cui è derivata)	IC8TEM の YAEC – Radar GRAVES タブ (このタブの元になったデザイン)
 ZHR ora	現在の ZHR
 ZONA UTILE NEL FASCIO DI GRAVES	GRAVES のビーム内の有効ゾーン
-a cura di Costantino IC8TEM	作成: Costantino IC8TEM
+a cura di Costantino IC8TEM	作成 Costantino IC8TEM
 adesso {0}	現在 {0}
 adesso · ancora {0:F1} s	現在 · 残り {0:F1} 秒
 alfa-Capricornidi	やぎ座α流星群

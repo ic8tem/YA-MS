@@ -133,7 +133,7 @@ Hot fuori lobo	Hot outside lobe
 Hot nel lobo	Hot in lobe
 Hot spot dal punto medio km	Hot spot from midpoint km
 I ping sono righe brevi vicino alla portante; le scie lunghe (overdense) sono più larghe e mostrano il Doppler	Pings are short lines close to the carrier; long (overdense) trails are wider and show Doppler
-IL CIELO VISTO DA GRAVES	THE SKY SEEN FROM GRAVES
+IL CIELO VISTO DA GRAVES	THE SKY AS SEEN FROM GRAVES
 IMO {0} (giorno)	IMO {0} (day)
 Il corrispondente diventa GRAVES (JN27SI, quota 200 m) e la tratta principale viene ricalcolata	The DX station becomes GRAVES (JN27SI, height 200 m) and the main path is recalculated
 Il file scelto non e' un file locale.	The selected file is not a local file.

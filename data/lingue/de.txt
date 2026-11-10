@@ -52,7 +52,7 @@ Carattere	Schrift
 Carica file ADIF...	ADIF-Datei laden...
 Carica file RMOB dal disco...	RMOB-Datei von Festplatte laden...
 Catalogo sciami	Meteorstrom-Katalog
-Che cosa fare	Was tun
+Che cosa fare	Was zu tun ist
 Collm stessa ora	Collm gleiche Stunde
 Collm {0} MHz (validi)	Collm {0} MHz (gültig)
 Comae Berenicidi	Coma-Bereniciden
@@ -199,7 +199,7 @@ Nuovo locator della stazione dalla mappa: {0}	Neuer Stations-Locator von der Kar
 O	W
 ORA MIGLIORE DEL GIORNO	BESTE TAGESZEIT
 Ora	Zeit
-Ora UTC	Zeit UTC
+Ora UTC	UTC-Zeit
 Ore in comune: {0}. Rapporto mediano RMOB/Collm = {1:F4}.\nEsponente empirico (con K = 1): k = {2:F2}  (regola SM6FHZ: 3).\n\nApplico questo esponente? (In alternativa si lascia k = 3 e si regola il fattore K = {3:F2}.)	Gemeinsame Stunden: {0}. Median-Verhältnis RMOB/Collm = {1:F4}.\nEmpirischer Exponent (mit K = 1): k = {2:F2}  (SM6FHZ-Regel: 3).\n\nDiesen Exponenten übernehmen? (Alternativ bleibt k = 3 und der Faktor K = {3:F2} wird angepasst.)
 Orionidi	Orioniden
 Orionidi di novembre	November-Orioniden
@@ -242,7 +242,7 @@ RMOB {0} (scala a destra)	RMOB {0} (Skala rechts)
 RMOB {0}: {1} ore lette alle {2} UTC	RMOB {0}: {1} Stunden gelesen um {2} UTC
 RMOB – osservatori su 143,050 MHz	RMOB – Beobachter auf 143,050 MHz
 RMOB, Radio Meteor Observatories On Line (Pierre Terrier) - www.rmob.org; bollettini mensili rmob.org/rmobtext (osservatori GRAVES 143,050 MHz: Planetario di Venezia, Faenza, Rovereto e altri)	RMOB, Radio Meteor Observatories On Line (Pierre Terrier) - www.rmob.org; Monatsbulletins rmob.org/rmobtext (GRAVES-Beobachter 143,050 MHz: Planetarium Venedig, Faenza, Rovereto u. a.)
-Radar GRAVES	Radar GRAVES
+Radar GRAVES	GRAVES-Radar
 Radar meteorico di Collm, Universita' di Lipsia (LIM) e IAP Kuehlungsborn - wetterdaten.meteo.uni-leipzig.de/radar_flux.php	Meteorradar Collm, Universität Leipzig (LIM) und IAP Kühlungsborn - wetterdaten.meteo.uni-leipzig.de/radar_flux.php
 Radiante:	Radiant:
 Ricava l'esponente dal file RMOB	Exponent aus RMOB-Datei ermitteln
@@ -293,7 +293,7 @@ USB su 143,049 MHz (nota a circa 1 kHz) oppure 143,050 MHz, AGC lento o spento, 
 Ursidi	Ursiden
 Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	Zum empfohlenen Hot-Spot der Strecke GRAVES → du (Karte Strecke), mit niedriger Elevation
 Vista dall'alto (E a destra)	Draufsicht (O rechts)
-Waterfall	Wasserfall
+Waterfall	Waterfall
 Wikipedia, "GRAVES (system)" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)	Wikipedia, „GRAVES (system)“ – Sender bei Broye-lès-Pesmes (47,348° N 5,515° O)
 YA-MS - nessuna connessione	YA-MS - keine Verbindung
 YAEC di IC8TEM – linguetta Radar GRAVES (bozzetto da cui è derivata)	YAEC von IC8TEM – Reiter Radar GRAVES (Entwurf, aus dem dieser abgeleitet ist)

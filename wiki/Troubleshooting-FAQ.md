@@ -22,7 +22,7 @@ Run `./installa.sh` from the extracted folder (not from `~/YA-MS`). Some desktop
 ## Display
 
 ### Linux: Japanese text shows boxes
-Your system lacks CJK fonts. Install the **Noto CJK** fonts and restart YA-MS:
+Your system lacks CJK fonts (Chinese, Japanese, Korean). Install the **Noto CJK** fonts and restart YA-MS. The same happens with Arabic, Hebrew, Urdu, Hindi and Bengali: on Debian, Ubuntu and Raspberry Pi OS install also `fonts-noto-core`.
 
 | Distribution | Command |
 |---|---|

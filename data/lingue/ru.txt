@@ -133,7 +133,7 @@ Hot fuori lobo	Hot вне ДН
 Hot nel lobo	Hot в ДН
 Hot spot dal punto medio km	Hot от средней точки, km
 I ping sono righe brevi vicino alla portante; le scie lunghe (overdense) sono più larghe e mostrano il Doppler	Пинги — короткие линии рядом с несущей; длинные (переуплотнённые) следы шире и показывают доплеровский сдвиг
-IL CIELO VISTO DA GRAVES	НЕБО, ВИДИМОЕ ИЗ GRAVES
+IL CIELO VISTO DA GRAVES	НЕБО, ВИДИМОЕ С GRAVES
 IMO {0} (giorno)	IMO {0} (день)
 Il corrispondente diventa GRAVES (JN27SI, quota 200 m) e la tratta principale viene ricalcolata	Корреспондентом становится GRAVES (JN27SI, высота 200 m), основная трасса пересчитывается
 Il file scelto non e' un file locale.	Выбранный файл не является локальным.
@@ -293,7 +293,7 @@ USB su 143,049 MHz (nota a circa 1 kHz) oppure 143,050 MHz, AGC lento o spento, 
 Ursidi	Урсиды
 Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione	На рекомендуемую горячую точку трассы GRAVES → вы (карточка «Трасса»), с малым углом места
 Vista dall'alto (E a destra)	Вид сверху (E справа)
-Waterfall	Водопад
+Waterfall	Waterfall
 Wikipedia, "GRAVES (system)" – trasmettitore a Broye-lès-Pesmes (47,348° N 5,515° E)	Wikipedia, «GRAVES (system)» – передатчик в Broye-lès-Pesmes (47,348° с. ш. 5,515° в. д.)
 YA-MS - nessuna connessione	YA-MS - нет подключения
 YAEC di IC8TEM – linguetta Radar GRAVES (bozzetto da cui è derivata)	YAEC от IC8TEM – вкладка «Радар GRAVES» (макет, на основе которого сделана эта)

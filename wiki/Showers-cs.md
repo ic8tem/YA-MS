@@ -1,0 +1,52 @@
+LANGBAR
+
+# Roje
+
+*Karta: Roje.*
+
+[![Roje](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-5.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-5.png)
+
+Katalog rojů, který používají všechny výpočty: **45 rojů** z **IMO Meteor Shower Calendar 2026 a 2027** (tabulky 5 a 7) plus **Antihelionový zdroj** (tabulka 6), každý s jeho **příštím maximem**.
+
+## Sloupce
+
+| Sloupec | Význam |
+|---|---|
+| Kód | Kód IMO (QUA, PER, GEM, …) |
+| Roj | Název |
+| Aktivita | Období aktivity (den/měsíc – den/měsíc) |
+| λ max | Sluneční délka maxima (J2000), podle IMO |
+| **Příští maximum (UTC)** | Datum a čas příštího maxima (viz níže) |
+| **Zdroj maxima** | *IMO 2026* / *IMO 2027* = datum a čas zveřejněné IMO; *IMO 2026 (den)* = IMO uvádí jen den, zobrazený čas je vypočten (*~hh:mm vypoč.*); *vypočteno z λ* = pro daný rok není hodnota IMO |
+| R.A., Dekl. | Radiant v maximu (*pohyblivé* u Antihelionového zdroje) |
+| v km/s, r | Geocentrická rychlost a populační index |
+| ZHR | Maximální ZHR (*prom.* = proměnné) |
+| Typ | *vizuální* nebo *rádiový, denní* |
+| Aktivní dnes | *ano*, když je roj právě aktivní |
+
+## Příští maximum
+
+Program vždy ukazuje **příští** maximum. Pokud IMO zveřejnila kalendář pro daný rok, použije **datum a čas podle IMO** ze souboru `data/massimi_imo.csv` (roky 2026 a 2027 jsou zahrnuty); jinak vypočte okamžik, kdy Slunce dosáhne sluneční délky maxima (Meeus, *Astronomical Algorithms*, kap. 25, řešeno Newtonovou metodou).
+
+**Ověření:** výpočet se shoduje s kalendáři IMO 2026 a 2027 do několika minut tam, kde IMO uvádí čas (např. Kvadrantidy 3. 1. 2026 21:13 oproti 21:00; Geminidy 14. 12. 2027 19:51 oproti 20:00). Výjimky: Denní kappa Leonidy 2026 o den později (26. 9. místo 25. 9.) a čas eta Akvarid 2027 (15:10 oproti 09:00 podle IMO) – v těchto případech se použije hodnota IMO.
+
+**Přidání roku:** když IMO zveřejní nový kalendář, přidejte jeho řádky do `data/massimi_imo.csv` (`year;code;MM-DD;hh:mm`, čas prázdný, pokud IMO uvádí jen den). Do té doby se maximum počítá.
+
+## Menší a denní roje
+
+Katalog obsahuje **menší roje** ze seznamu IMO – například Říjnové Camelopardalidy (OCT, ZHR 5, aktivní 5.–6. října), Andromedidy, gama Ursae Minoridy – a **denní rádiové roje** od dubna do října (Denní dubnové Piscidy, Denní Arietidy, Denní zéta Perseidy, Denní beta Tauridy, Denní kappa Leonidy, Denní Sextantidy, …). I s malými ZHR přispívají k [indexu trasy](Efficiency-Calculation-cs#model) a k [doporučenému Hotu](Sky-View-cs#doporučený-hot). Pro denní rádiové roje IMO neuvádí ZHR: tam, kde chybí, program používá pracovní hodnotu 5.
+
+## Profil aktivity a posun radiantu
+
+```
+ZHR(λ☉) = ZHR_max · 10^( −B± · |λ☉ − λ_max| )
+α = α0 + (dα/dλ)·Δλ      δ = δ0 + (dδ/dλ)·Δλ      Δλ = λ☉ − λ_max
+```
+
+ZHR_max, α0, δ0 a λ_max pocházejí z kalendáře IMO; sklony B (různé před maximem a po něm) a denní posuny dα/dλ, dδ/dλ jsou **pracovní hodnoty** zapsané v `data/sciami.csv` (tabulka posunů IMO zatím nebyla zadána). *Rov. 9 a 13 příručky.* Poloha Antihelionového zdroje se lineárně interpoluje mezi daty tabulky 6 IMO (`data/ant_radiante.csv`; aktivní 10. prosince – 20. září, ZHR asi 4).
+
+## Úprava katalogu
+
+`data/sciami.csv` je prostý textový soubor (oddělovač `;`), který můžete upravovat: kód, název, začátek a konec (MM-DD), λ max, R.A., Dekl., posuny, v, r, ZHR, B před/po, typ (V vizuální, R denní rádiový). Pokud je řádek chybný, program při spuštění zobrazí zprávu a řádek ignoruje.
+
+Zdroje: International Meteor Organization – Meteor Shower Calendar 2026 a 2027, [www.imo.net](https://www.imo.net) (tabulky 5, 6 a 7); Philip G0ISW (maximální rádiové hodinové frekvence); Rossano IZ5TEK (scattertek).

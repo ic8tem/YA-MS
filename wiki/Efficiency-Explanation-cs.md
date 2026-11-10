@@ -1,0 +1,51 @@
+LANGBAR
+
+# Účinnost - vysvětlení
+
+*Karta: Technické dokumenty › Účinnost - vysvětlení.*
+
+[![Účinnost - vysvětlení](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
+
+Technický dokument *„Come YA-MS calcola l'efficienza di uno sciame“* (Jak YA-MS počítá účinnost roje), zobrazený v programu jako světlá stránka. Vysvětluje **krok za krokem**, jak se účinnost získává, a u každého kroku uvádí, **odkud pochází**. Dokument je zatím **v italštině**; tato wiki podává jeho obsah česky na stránkách [Výpočet účinnosti](Efficiency-Calculation-cs#model) a [Geometrie a útlum trasy](Geometry-and-Path-Loss-cs).
+
+## Štítky
+
+Každý krok nese barevný štítek:
+
+| Štítek | Barva | Význam |
+|---|---|---|
+| **FONTE** (zdroj) | modrá | krok přebírá citovaný zdroj; číslo v závorce odkazuje na seznam na konci |
+| **RILIEVO** (ověření) | zelená | srovnání programu se zdroji, s výsledkem |
+| **SCELTA** (volba) | oranžová | volba programu, nepřevzatá ze zdroje: je třeba ji ověřit zkušeností z pásma |
+
+## Kapitoly
+
+| Kapitola | Obsah |
+|---|---|
+| 1. Úvod | Účel, štítky, co znamená účinnost (OH5IY, MCG_MS; YA-MS používá skutečnou trasu) |
+| 2. Kde dochází k odrazům: vrstva E | Stopy ve výšce 80–120 km; výška stopy = modus histogramu z Collmu (ověření: 89,5 km dne 5. 11. 2026) |
+| 3. Geometrie trasy | Země a střed trasy; elevace antény (vzorec z článku); společná zóna a její meze; Hot A / Hot B; lalok antény (DL6WU, Kraus, W4RNL) |
+| 4. Radiant roje | Poloha radiantu (IMO 2026/2027), datum maxima (IMO nebo sluneční délka), profil aktivity |
+| 5. Podmínka odrazu | Zrcadlový odraz (McKinley), gaussovská tolerance 0,05 rad, nejlepší směrování (SM6FHZ), vzorec DH9GCD |
+| 6. Od jednoho bodu k účinnosti | Body odrazu po 15 km, váha každého bodu, procento; srovnání s QTFGUI (DJ5HG) |
+| 7. Čtení výsledků | Strana A / B, index trasy, barvy radiantů, zóny PREV, řez viděný od antény |
+| 8. Pracovní kmitočet a útlum trasy | Pravidla λ³ / λ², z radaru na radioamatérské pásmo, odkazy k útlumu trasy |
+| 9. Známá omezení | Jen podhusté stopy, izotropní antény, pracovní hodnoty |
+| 10. Zdroje | 17 číslovaných zdrojů |
+
+## Tlačítka
+
+| Tlačítko | Co dělá |
+|---|---|
+| **Exportovat do Wordu (.docx)...** | Uloží kopii `data/efficienza_spiegazione.docx` tam, kam zvolíte (navržený název *YA-MS - calcolo dell'efficienza.docx*) |
+| **Otevřít ve Wordu** | Otevře tentýž `.docx` ve výchozím programu pro dokumenty Word (Word, LibreOffice, …) |
+
+## Soubory
+
+| Soubor | Obsah |
+|---|---|
+| `data/efficienza_spiegazione.txt` | Text zobrazený na kartě, jeden blok na řádek (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
+| `data/efficienza_spiegazione.docx` | Verze pro Word |
+| `doc/YA-MS_manuale_calcoli.docx` | **Výpočetní příručka**: všechny rovnice (editor rovnic Wordu), číslované, s jejich zdroji |
+
+Oba dokumenty se znovu generují ze zdrojového kódu příkazy `tools/build_spiegazione.py data` a `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.

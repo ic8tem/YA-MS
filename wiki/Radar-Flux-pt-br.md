@@ -1,0 +1,85 @@
+LANGBAR
+
+# Fluxo radar
+
+*Aba: Ao vivo e dados em tempo real › Fluxo radar.*
+
+[![Fluxo radar](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_2.png)
+
+Esta aba mostra o que os radares meteóricos profissionais estão contando **agora**: as contagens horárias de meteoros e as altitudes dos rastros do radar SKiYMET de **Collm** (Universidade de Leipzig / IAP Kühlungsborn, Alemanha, 36,2 MHz) e a última imagem do radar de **Sodankylä** (SGO, Finlândia). As contagens de Collm alimentam a estimativa na sua banda e as [Previsões experimentais](Experimental-Forecasts-pt-br); a altitude dos rastros medida alimenta toda a geometria.
+
+## Comandos
+
+| Comando | O que faz |
+|---|---|
+| **Baixar agora** | Verifica todas as fontes externas de uma só vez. |
+| **Atualização automática de todas as fontes a cada 5 minutos** | Ativada por padrão. A cada 5 minutos todas as fontes são verificadas e **só as que mudaram** são baixadas de novo (*inalterado (verificado às … UTC)* / *novo dado às … UTC*). |
+| **Expoente λ (SM6FHZ)** | Expoente k da regra de frequência, padrão 3 (1–4). |
+
+## O que é mostrado
+
+| Painel | Conteúdo |
+|---|---|
+| **Meteoros/hora - ontem e hoje (UTC)** | Barras ciano = contagens de Collm (válidas), barras vermelhas = descartadas, linha laranja grossa = *estimativa a … MHz* na escala da direita |
+| **Altitudes dos rastros (Collm)** | Meteoros por km de altitude entre 70 e 110 km, com altitude mais frequente (moda), média, mediana e desvio padrão |
+| Imagem de Collm | O gráfico SKiYMET original, tal como é baixado |
+| Imagem de Sodankylä | A última imagem de contagens de meteoros do radar de Sodankylä (apenas exibida; o seu formato não é lido) |
+
+A linha acima dos gráficos indica quando o gráfico de Collm foi lido e qual escala vertical foi encontrada (*escala lida no gráfico: 0-… meteoros/hora*).
+
+## Como o gráfico de Collm é lido
+
+O gráfico de Collm (720 × 720 pixels, cores puras) tem os eixos em posições fixas, mas o radar **adapta a escala vertical todos os dias** aos valores medidos (p. ex. 0–1,2·10³ em 5/11/2026 e 0–1,0·10³ em 6/11/2026, com as marcas deslocadas). Por isso o YA-MS:
+
+1. encontra as marcas longas do eixo;
+2. **lê os rótulos** da marca mais alta e do zero comparando cada caractere com a fonte de matriz de pontos do gráfico;
+3. para cada hora i (0–47, ontem e hoje) toma a coluna central e o primeiro pixel ciano a partir de cima, y:
+
+```
+x_i = 101 + (i + 0.5)·(676 − 101)/48        N = (y0 − y)·N_top / (y0 − y_top)   meteors/hour
+```
+
+y_top e y0 são as linhas da marca mais alta e do zero, N_top o valor lido no rótulo mais alto (×1000). Resolução: cerca de 7–8 meteoros/hora por pixel. *Escolha do programa (eq. 42 do manual).*
+
+Se um rótulo não puder ser lido, o programa recorre à calibração de 5/11/2026 (**escala calibrada 0-1200 meteoros/hora**) e avisa em laranja: *Não consigo ler a escala vertical do fluxo (etiqueta no topo: …): valores a serem verificados.* Se o próprio formato do gráfico mudar (*Formato do gráfico alterado (…x…): leitura impossível* ou *Eixos do fluxo não encontrados na posição esperada*), a leitura precisa ser recalibrada: por favor, informe (veja [Contribuir](Contributing-and-Contacts-pt-br)).
+
+### Altitudes dos rastros
+
+A partir do histograma das altitudes (n_k meteoros no km k, altitude média h_k):
+
+```
+h_mode = h_k*  with k* = argmax n_k      mean = Σ n_k·h_k / Σ n_k      s = sqrt( Σ n_k·(h_k − mean)² / Σ n_k )
+```
+
+*Eq. 43 do manual.* Com **do radar** marcado (linha 2 dos comandos), a **moda** passa a ser a altitude dos rastros de todos os cálculos. Verificação: gráfico de 5/11/2026 – moda 89,5 km, média 88,6 km, desvio padrão 6,8 km, o que confirma os ~90 km do artigo Cerrotta–Sartori (média SKiYMET).
+
+Se a escala do gráfico das altitudes mudar, o programa avisa: *as estatísticas das altitudes (moda, média, mediana) continuam válidas, as contagens absolutas não.*
+
+## Estimativa na sua banda
+
+```
+meteors/hour at f = Collm(36.2 MHz) · (36.2 / f)^k          ping duration · (36.2 / f)²          k = 3
+```
+
+Regras experimentais de **SM6FHZ** (VUSHF 2025): o número e a intensidade das reflexões variam com λ³, a duração com λ²; a dependência de λ³ é a mesma da equação subdensa de McKinley. Também é mostrada a duração máxima dos pings segundo a IARU Região 1 (1000 ms em 50 MHz, 500 ms em 70 MHz, 100 ms em 144 MHz, 13 ms em 432 MHz). Os valores são indicativos, para comparar com a experiência no ar. O fator de estação K e a comparação com o RMOB estão em [Previsões experimentais](Experimental-Forecasts-pt-br).
+
+## Sem conexão
+
+Se nenhuma fonte puder ser alcançada, aparece **uma única vez** uma mensagem: *Sem conexão com a Internet. Os dados dos radares e do RMOB não podem ser atualizados: o programa usa os últimos dados salvos e tenta novamente sozinho a cada 5 minutos.* A barra de status embaixo fica vermelha (*SEM CONEXÃO COM A INTERNET …*) até a conexão voltar (*Conexão restabelecida.*).
+
+## Arquivos históricos e fontes
+
+| Arquivo (em `data/`) | Conteúdo |
+|---|---|
+| `flusso_collm.csv` | Histórico horário do fluxo lido de Collm (as horas já presentes são atualizadas) |
+| `quote_collm.csv` | Histórico das altitudes dos rastros |
+| `radar/` | Últimas imagens baixadas (e arquivos RMOB) |
+| `fonti_radar.csv` | Endereços das fontes de radar, `attivo=1/0` para ativar/desativar cada uma |
+
+| Fonte | Frequência | Notas |
+|---|---|---|
+| Radar meteórico de Collm, Universidade de Leipzig (LIM) e IAP Kühlungsborn – wetterdaten.meteo.uni-leipzig.de/radar_flux.php | 36,2 MHz | atualizado a cada hora no minuto 10 UTC; fluxo de ontem + hoje, distribuição das altitudes |
+| Sodankylä Geophysical Observatory – sgo.fi/Data/RealTime/meteorRadar.php | 36,9 MHz | só imagem (radar em renovação, projeto DECC) |
+| swan.ms (cópia de Collm) | 36,2 MHz | desativada por padrão; use-a só com autorização de DL1DBC |
+
+> Os dados de radar pertencem às respectivas instituições (Universidade de Leipzig / IAP Kühlungsborn, Sodankylä Geophysical Observatory).

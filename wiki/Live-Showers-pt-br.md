@@ -1,0 +1,14 @@
+LANGBAR
+
+# Chuvas ao vivo
+
+*Aba: Chuvas ao vivo.*
+
+[![Chuvas ao vivo](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-4.png)
+
+Duas fontes externas, mostradas como imagens (elas não publicam números que possam ser lidos):
+
+- **Global Meteor Network (GMN)** – [globalmeteornetwork.org/flux](https://globalmeteornetwork.org/flux/): fluxo medido e **ZHR** das chuvas ativas, obtidos por uma rede mundial de câmeras (em sua maioria amadoras), atualizados uma vez por dia; a linha vermelha marca a última atualização. O programa lê a página, encontra as chuvas ativas e mostra para cada uma o gráfico do ano corrente, além do resumo anual das ZHR. Dados **CC BY 4.0**; cite Vida et al. 2021, MNRAS 506(4), e Vida et al. 2022, MNRAS 515(2).
+- **CMOR**, Canadian Meteor Orbit Radar (University of Western Ontario, NASA Meteoroid Environment Office) – [fireballs.ndc.nasa.gov/cmor-radiants](https://fireballs.ndc.nasa.gov/cmor-radiants/): mapa do céu com os radiantes detectados pelo radar quase em tempo real, incluindo as **chuvas diurnas**, e o mesmo mapa colorido por velocidade. O CMOR fica a 43° N, aproximadamente a latitude do sul da Europa, por isso o céu dele também é o nosso.
+
+Cada arquivo só é baixado de novo se tiver mudado, no máximo a cada 30 minutos ou com **Baixar agora**.

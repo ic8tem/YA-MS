@@ -3,11 +3,11 @@
 import glob, io, os, re
 W = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'wiki')
 LANGS = [('', 'English'), ('it', 'Italiano'), ('de', 'Deutsch'), ('nl', 'Nederlands'), ('fr', 'Français'), ('es', 'Español'),
-         ('pt', 'Português'), ('pt-BR', 'Português (Brasil)'), ('da', 'Dansk'), ('nb', 'Norsk'), ('sv', 'Svenska'), ('is', 'Íslenska'),
+         ('pt', 'Português'), ('pt-br', 'Português (Brasil)'), ('da', 'Dansk'), ('nb', 'Norsk'), ('sv', 'Svenska'), ('is', 'Íslenska'),
          ('et', 'Eesti'), ('lt', 'Lietuvių'), ('lv', 'Latviešu'), ('pl', 'Polski'), ('cs', 'Čeština'), ('hu', 'Magyar'), ('ro', 'Română'),
          ('el', 'Ελληνικά'), ('ru', 'Русский'), ('uk', 'Українська'), ('tr', 'Türkçe'), ('af', 'Afrikaans'), ('ar', 'العربية'),
          ('he', 'עברית'), ('ur', 'اردو'), ('hi', 'हिन्दी'), ('bn', 'বাংলা'), ('th', 'ไทย'), ('id', 'Bahasa Indonesia'), ('tl', 'Tagalog'),
-         ('ja', '日本語'), ('ko', '한국어'), ('zh', '中文'), ('zh-TW', '中文 (繁體)')]
+         ('ja', '日本語'), ('ko', '한국어'), ('zh', '中文'), ('zh-tw', '中文 (繁體)')]
 codes = [c for c, _ in LANGS if c]
 pages = sorted(os.path.basename(f)[:-3] for f in glob.glob(os.path.join(W, '*.md'))
                if not os.path.basename(f).startswith('_') and not re.search(r'-(%s)\.md$' % '|'.join(map(re.escape, codes)), f))

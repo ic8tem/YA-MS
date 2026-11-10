@@ -605,7 +605,6 @@ Connesso: {0} argomenti	Подключено: тем {0}
 Errore: {0}	Ошибка: {0}
 Indice della tratta Σ ZHR×η: {0}	Индекс трассы Σ ZHR×η: {0}
 Le righe evidenziate sono gli sciami attivi oggi (UTC)	Выделены потоки, активные сегодня (UTC)
-Momento del calcolo (±36 h)	Момент расчёта (±36 h)
 Nessuno sciame utile in questo momento	Сейчас нет полезных потоков
 PSKReporter MQTT	PSKReporter MQTT
 Riconnessione tra {0} s	Переподключение через {0} с
@@ -616,3 +615,5 @@ Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LT
 adesso	сейчас
 {0} UTC (momento del calcolo)	{0} UTC (момент расчёта)
 {0} h rispetto ad adesso	{0} ч от текущего момента
+Data del calcolo (UTC)	Дата расчёта (UTC)
+Ore (da −12 a +36 h)	Часы (от −12 до +36 ч)

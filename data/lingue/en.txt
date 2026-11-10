@@ -605,7 +605,6 @@ Connesso: {0} argomenti	Connected: {0} topics
 Errore: {0}	Error: {0}
 Indice della tratta Σ ZHR×η: {0}	Path index Σ ZHR×η: {0}
 Le righe evidenziate sono gli sciami attivi oggi (UTC)	Highlighted rows are the showers active today (UTC)
-Momento del calcolo (±36 h)	Calculation time (±36 h)
 Nessuno sciame utile in questo momento	No useful shower at this moment
 PSKReporter MQTT	PSKReporter MQTT
 Riconnessione tra {0} s	Reconnecting in {0} s
@@ -616,3 +615,5 @@ Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LT
 adesso	now
 {0} UTC (momento del calcolo)	{0} UTC (calculation time)
 {0} h rispetto ad adesso	{0} h from now
+Data del calcolo (UTC)	Calculation date (UTC)
+Ore (da −12 a +36 h)	Hours (−12 to +36 h)

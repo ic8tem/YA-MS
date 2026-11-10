@@ -33,7 +33,8 @@ Above the tabs there are three rows of controls, valid for all tabs. The **Contr
 | Control | What it does |
 |---|---|
 | **Time** | UTC clock. |
-| **Calculation time (±36 h)** | Moves the moment of the calculation – [Forecast calculation](Sky-View) and [GRAVES radar](GRAVES-Radar) – up to 36 hours back or forward, in 15-minute steps. Next to it: *Calculation for: now* or *Calculation for: dd/mm hh:mm UTC*. |
+| **Calculation date (UTC)** | The day of the calculation for [Forecast calculation](Sky-View) and [GRAVES radar](GRAVES-Radar) (today by default), at the current time of day. |
+| **Hours (−12 to +36 h)** | Moves the moment of the calculation from 12 hours before to 36 hours after that time, in 15-minute steps. Next to it: *Calculation for: now* or *Calculation for: dd/mm hh:mm UTC*. |
 | **Real time** | Back to now. |
 | **Day for the 24 h table (UTC)** | The day shown in [Efficiency calculation](Efficiency-Calculation) and in the GRAVES timeline. |
 

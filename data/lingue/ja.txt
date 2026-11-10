@@ -605,7 +605,6 @@ Connesso: {0} argomenti	接続済み: トピック {0} 件
 Errore: {0}	エラー: {0}
 Indice della tratta Σ ZHR×η: {0}	パス指数 Σ ZHR×η: {0}
 Le righe evidenziate sono gli sciami attivi oggi (UTC)	強調表示の行は今日 (UTC) 活動中の流星群です
-Momento del calcolo (±36 h)	計算時刻 (±36 h)
 Nessuno sciame utile in questo momento	現在有効な流星群はありません
 PSKReporter MQTT	PSKReporter MQTT
 Riconnessione tra {0} s	{0} 秒後に再接続
@@ -616,3 +615,5 @@ Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LT
 adesso	現在
 {0} UTC (momento del calcolo)	{0} UTC (計算時刻)
 {0} h rispetto ad adesso	現在から {0} 時間
+Data del calcolo (UTC)	計算日 (UTC)
+Ore (da −12 a +36 h)	時間 (−12〜+36 h)

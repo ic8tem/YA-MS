@@ -88,7 +88,7 @@ namespace YAMS
             Button btnNow = B(Lang.T("Adesso"));
             btnNow.Classes.Add("accent");
             ToolTip.SetTip(btnNow, Lang.T("Riporta il momento del calcolo al tempo reale"));
-            btnNow.Click += (s, e) => { trackTime.Value = 0; UpdateSky(); };
+            btnNow.Click += (s, e) => ResetCalcTime();
             Button btnDx = B(Lang.T("Metti GRAVES come DX"));
             btnDx.Background = Pal.B(Pal.Violet); btnDx.Foreground = Pal.B(Pal.AccentFore); btnDx.FontWeight = FontWeight.SemiBold;
             ToolTip.SetTip(btnDx, Lang.T("Il corrispondente diventa GRAVES (JN27SI, quota 200 m) e la tratta principale viene ricalcolata"));
@@ -386,7 +386,7 @@ namespace YAMS
                 sb.Append('\n').Append(Lang.F("lato prevalente {0} ({1:F0}%)", wA >= wB ? "A" : "B", 100 * Math.Max(wA, wB) / Math.Max(1e-9, wA + wB)));
             }
             else sb.Append(Lang.T("nessuno sciame utile in questo momento"));
-            sb.Append('\n').Append(TrackValue == 0 ? Lang.F("{0} UTC (tempo reale)", t.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture))
+            sb.Append('\n').Append(IsRealTime ? Lang.F("{0} UTC (tempo reale)", t.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture))
                                                    : Lang.F("{0} UTC (momento del calcolo)", t.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture)));
             // eco attese all'ora (sperimentale): previsione della linguetta "Attuazione sperimentale previsioni" (tratta
             // principale) portata a 143,050 MHz con la regola SM6FHZ, corretta con il rapporto degli indici degli sciami

@@ -26,8 +26,8 @@ INSTALLAZIONE
 NOVITA' DELLA 1.7.0
   - Calcolo previsionale: fascia sopra la pianta con i dati di efficienza del momento di calcolo scelto
     (indice della tratta, sciame piu' utile, sciami sopra l'orizzonte, Hot consigliato).
-  - Il cursore "Ora della volta celeste" si chiama ora "Momento del calcolo (±36 h)"; accanto: "Calcolo per: adesso"
-    oppure la data e l'ora UTC del calcolo.
+  - Al posto del cursore "Ora della volta celeste": "Data del calcolo (UTC)" e il cursore "Ore (da -12 a +36 h)";
+    accanto: "Calcolo per: adesso" oppure la data e l'ora UTC del calcolo.
   - Sciami: gli sciami attivi oggi sono evidenziati con una velatura gialla (tolta la colonna "Attivo oggi");
     la tabella si apre sul primo sciame attivo.
   - Raccolta dati: quarta fonte, PSKReporter via MQTT (mqtt.pskreporter.info), con gli argomenti modificabili.

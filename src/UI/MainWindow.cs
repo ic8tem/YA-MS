@@ -48,6 +48,7 @@ namespace YAMS
         Button btnCalc, btnReal;
         TextBlock lblClock, lblSkyTime;
         Slider trackTime;
+        CalendarDatePicker dtCalc;   // data del calcolo (UTC): base del momento del calcolo
         int lastTrackValue;
         Slider sldFont;              // "Carattere": 100-300 % di tutto il testo
         TextBlock lblFont;
@@ -475,7 +476,7 @@ namespace YAMS
 
             // riga 3: orologio, ora della volta celeste, giorno della tabella 24 h
             lblClock = L("--:--:-- UTC"); lblClock.FontFamily = Pal.Mono; lblClock.FontSize = 15; lblClock.FontWeight = FontWeight.Bold; lblClock.Foreground = Pal.B(Pal.Yellow);
-            trackTime = new Slider { Minimum = -144, Maximum = 144, Value = 0, SmallChange = 1, LargeChange = 4, TickFrequency = 12, Width = 360, Margin = new Thickness(4, 0) };
+            trackTime = new Slider { Minimum = -48, Maximum = 144, Value = 0, SmallChange = 1, LargeChange = 4, TickFrequency = 12, Width = 360, Margin = new Thickness(4, 0) };
             WhenChanged(trackTime, RangeBase.ValueProperty, () =>
             {
                 int v = TrackValue;
@@ -485,7 +486,10 @@ namespace YAMS
             lblSkyTime = L(Lang.T("Calcolo per: adesso")); lblSkyTime.Foreground = Pal.B(Pal.Azure);
             btnReal = B(Lang.T("Tempo reale"));
             btnReal.Background = Brushes.Transparent; btnReal.BorderBrush = Pal.B(Pal.Violet); btnReal.Foreground = Pal.B(Pal.Violet);
-            btnReal.Click += (s, e) => { trackTime.Value = 0; UpdateSky(); };
+            btnReal.Click += (s, e) => ResetCalcTime();
+            // data del calcolo: con l'ora attuale e lo spostamento del cursore (da -12 a +36 h) da' il momento del calcolo
+            dtCalc = new CalendarDatePicker { SelectedDate = DateTime.UtcNow.Date, Width = 150, Margin = new Thickness(2, 3) };
+            WhenChanged(dtCalc, CalendarDatePicker.SelectedDateProperty, () => UpdateSky());
             dtDay = new CalendarDatePicker { SelectedDate = DateTime.UtcNow.Date, Width = 150, Margin = new Thickness(2, 3) };
             WhenChanged(dtDay, CalendarDatePicker.SelectedDateProperty, () => Update24h());
             // dimensione del carattere di tutto il programma (solo il testo), a passi del 10 %
@@ -495,7 +499,7 @@ namespace YAMS
                                    IsSnapToTickEnabled = true, Width = 160, Margin = new Thickness(4, 0) };
             UiScale.Set(pct0 / 100.0);
             WhenChanged(sldFont, RangeBase.ValueProperty, () => SetFontPercent(sldFont.Value));
-            Border row3 = Row(L(Lang.T("Ora")), lblClock, L(Lang.T("Momento del calcolo (±36 h)")), trackTime,
+            Border row3 = Row(L(Lang.T("Ora")), lblClock, L(Lang.T("Data del calcolo (UTC)")), dtCalc, L(Lang.T("Ore (da −12 a +36 h)")), trackTime,
                               btnReal, lblSkyTime, L(Lang.T("Giorno per la tabella 24 h (UTC)")), dtDay);
             // riga 1: stazioni e banda, azimut d'antenna e cursore del carattere (la prima riga ha spazio)
             Border row1 = Row(L(Lang.T("Il mio locator")), txtHome, L(Lang.T("quota m")), numHomeAlt,
@@ -848,7 +852,26 @@ namespace YAMS
 
         int TrackValue { get { return (int)Math.Round(trackTime.Value); } }
 
-        DateTime SkyTimeUtc { get { return DateTime.UtcNow.AddMinutes(TrackValue * 15); } }
+        // momento del calcolo: data scelta + ora attuale + spostamento del cursore (passi di 15 minuti)
+        DateTime SkyTimeUtc
+        {
+            get
+            {
+                DateTime now = DateTime.UtcNow;
+                DateTime d = dtCalc != null && dtCalc.SelectedDate.HasValue ? dtCalc.SelectedDate.Value.Date : now.Date;
+                return DateTime.SpecifyKind(d, DateTimeKind.Utc).Add(now.TimeOfDay).AddMinutes(TrackValue * 15);
+            }
+        }
+
+        // tempo reale: data di oggi e cursore a zero
+        bool IsRealTime { get { return TrackValue == 0 && (dtCalc == null || !dtCalc.SelectedDate.HasValue || dtCalc.SelectedDate.Value.Date == DateTime.UtcNow.Date); } }
+
+        void ResetCalcTime()
+        {
+            if (dtCalc != null) dtCalc.SelectedDate = DateTime.UtcNow.Date;
+            trackTime.Value = 0;
+            UpdateSky();
+        }
 
         void Recalc()
         {
@@ -960,7 +983,7 @@ namespace YAMS
         {
             if (sky == null) return;
             DateTime t = SkyTimeUtc;
-            lblSkyTime.Text = TrackValue == 0 ? Lang.T("Calcolo per: adesso")
+            lblSkyTime.Text = IsRealTime ? Lang.T("Calcolo per: adesso")
                 : Lang.F("Calcolo per: {0} UTC", t.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture));
             LatLon home; if (!Astro.TryLocator(Up(txtHome), out home)) return;
             sky.Station = home;
@@ -1104,9 +1127,9 @@ namespace YAMS
         void UpdateEffStrip(DateTime t, bool mv)
         {
             if (lblEffStrip == null) return;
-            int v = TrackValue;
+            double dh = Math.Round((t - DateTime.UtcNow).TotalHours * 4) / 4;
             string when = Lang.F("Calcolo per {0} UTC", t.ToString("dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture)) + " · " +
-                          (v == 0 ? Lang.T("adesso") : Lang.F("{0} h rispetto ad adesso", (v * 0.25).ToString("+0.##;-0.##", CultureInfo.CurrentCulture)));
+                          (IsRealTime ? Lang.T("adesso") : Lang.F("{0} h rispetto ad adesso", dh.ToString("+0.##;-0.##", CultureInfo.CurrentCulture)));
             if (!mv) { lblEffStrip.Text = when; return; }
             double idx = 0, best = 0; RadiantMark bm = null; int up = 0;
             foreach (RadiantMark rm in sky.Marks)
@@ -1662,7 +1685,8 @@ namespace YAMS
             RefreshCollect(false);   // raccolta dati: righe telnet nuove, contatori, tabella
             if (now.Second == 0)
             {
-                if (TrackValue == 0) UpdateSky();
+                if (IsRealTime) UpdateSky();
+                else if (now.Minute % 15 == 0) UpdateSky();   // la data scelta segue l'ora attuale
                 if (now.Minute == 0 && (dtDay.SelectedDate ?? now).Date == now.AddMinutes(-1).Date) dtDay.SelectedDate = now.Date;
                 if (now.Minute == 0 && now.Hour == 0) UpdateShowerGrid();   // nuovo giorno: aggiorna i prossimi massimi
             }

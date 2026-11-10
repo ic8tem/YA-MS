@@ -6,7 +6,7 @@
 
 [![Sky dome](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-This sub-tab (the sky dome of earlier versions) puts on one screen **where** the useful trails are now and **where to point**. On the left the **plan view** of the path; on the right the shower list, a small sky dome with the radiants, the text of the calculation and the **section** seen from your antenna. Everything refers to the time of the *Calculation time* slider (real time by default; ±36 h in 15-minute steps).
+This sub-tab (the sky dome of earlier versions) puts on one screen **where** the useful trails are now and **where to point**. On the left the **plan view** of the path; on the right the shower list, a small sky dome with the radiants, the text of the calculation and the **section** seen from your antenna. Everything refers to the moment chosen with *Calculation date (UTC)* and the *Hours (−12 to +36 h)* slider (real time by default, 15-minute steps).
 
 A **strip above the plan view** sums up the calculation for that moment: date and time (*now* or hours from now), the **path index Σ ZHR×η**, the **most useful shower** with its ZHR and efficiency, the number of showers above the horizon and the **recommended Hot** with its azimuth.
 

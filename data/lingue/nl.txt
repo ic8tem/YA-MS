@@ -605,7 +605,6 @@ Connesso: {0} argomenti	Verbonden: {0} onderwerpen
 Errore: {0}	Fout: {0}
 Indice della tratta Σ ZHR×η: {0}	Trajectindex Σ ZHR×η: {0}
 Le righe evidenziate sono gli sciami attivi oggi (UTC)	Gemarkeerde rijen zijn de zwermen die vandaag (UTC) actief zijn
-Momento del calcolo (±36 h)	Berekeningsmoment (±36 h)
 Nessuno sciame utile in questo momento	Op dit moment geen bruikbare zwerm
 PSKReporter MQTT	PSKReporter MQTT
 Riconnessione tra {0} s	Opnieuw verbinden over {0} s
@@ -616,3 +615,5 @@ Spot di PSKReporter in diretta via MQTT (mqtt.pskreporter.info, servizio di M0LT
 adesso	nu
 {0} UTC (momento del calcolo)	{0} UTC (berekeningsmoment)
 {0} h rispetto ad adesso	{0} u vanaf nu
+Data del calcolo (UTC)	Berekeningsdatum (UTC)
+Ore (da −12 a +36 h)	Uren (−12 tot +36 u)

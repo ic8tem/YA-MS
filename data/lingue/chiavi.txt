@@ -107,6 +107,7 @@ DM4X (PSKReporter)
 DX cluster
 DX cluster a scelta
 Da qui: scie nello strato E a circa 90 km (radar SKiYMET), formula dell'elevazione, Hot A / Hot B, side-scatter, attenuazione 182-200 dB, durata dei ping IARU.
+Data del calcolo (UTC)
 Decl.
 Densita' della scia q = {0:E1} elettroni/m. Riferimenti dell'articolo a 144 MHz: 182 dB minimo (GM8JBJ), 200 dB medio (OH5IY)
 Densita' scia q = 10^
@@ -247,7 +248,6 @@ Meteore/ora - ieri {0} e oggi {1} (UTC)
 Metti GRAVES come DX
 Miglior puntamento per lo sciame: ORTOGONALE alla direzione\ndi arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\nSM6FHZ). In pianta: linea gialla = scorrimento\ndello sciame, punti arancioni = puntamenti, ellissi\nPREV = scie piu' probabili adesso.\nClic su un radiante: percorso con le ore UTC
 Misurato a Collm e traslato a {0} MHz - ieri {1} e oggi {2} (UTC)
-Momento del calcolo (±36 h)
 Mondo
 Monocerotidi di dicembre
 N
@@ -281,6 +281,7 @@ O
 ORA MIGLIORE DEL GIORNO
 Ora
 Ora UTC
+Ore (da −12 a +36 h)
 Ore in comune: {0}. Rapporto mediano RMOB/Collm = {1:F4}.\nEsponente empirico (con K = 1): k = {2:F2}  (regola SM6FHZ: 3).\n\nApplico questo esponente? (In alternativa si lascia k = 3 e si regola il fattore K = {3:F2}.)
 Orionidi
 Orionidi di novembre

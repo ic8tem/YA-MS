@@ -96,6 +96,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 | **WARNING: Hot A (and/or Hot B) falls inside the antenna lobe …** | The hot spot is within ±θ/2 of the antenna azimuth (θ = horizontal −3 dB lobe): with this heading it is already covered. Shown in grey on the map. The recommended Hot stays red. |
 | **RADIANT TOO HIGH (above 70°)** | A useful radiant is above 70° from your station: trails fall almost vertically and reflect little towards the path (DF5HC, DH9GCD). The same hours are marked ↑ in the [hourly table](Efficiency-Calculation#hourly-table). |
 | **LOW RADIANT ALONG THE PATH** | An active radiant is below 20° and within 30° of the path direction. The calculated efficiency stays low (cautious), but DJ5HG expects rare, strong reflections from grazing trails aligned with the path (Hamburg–Narvik, Quadrantids, about 19 UTC): worth listening. |
+| **PATH BEYOND THE TRAIL HORIZON** | At the trail height the path midpoint is below the horizon of both stations (about 2120 km with trails at 90 km). The warning gives the minimum trail height needed (about 96 km for 2200 km, 105 km for 2300 km): the link is possible only with the highest trails, and efficiencies and losses are at the limit of the model |
 | *No common E-layer zone* | The path is longer than twice the range at trail height: the two stations do not see a common part of the E layer (single hop impossible). |
 | *No recommended Hot* | Almost no active shower at this time. |
 

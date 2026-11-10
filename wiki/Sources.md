@@ -12,7 +12,7 @@ The **Sources** tab lists every work YA-MS is built on, grouped as below (the te
 
 | Source | Used for |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (article in Italian, version 7) | Trails in the E layer at about 90 km (SKiYMET radar), Earth radius 6372.7955 km, elevation formula, Hot A / Hot B, side-scatter 10–30°, path loss 182–200 dB, minimum signal −130 dBm, IARU ping durations, sporadic peak at 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (article in Italian, version 7) | Trails in the E layer at about 90 km (SKiYMET radar), Earth radius 6372.7955 km, elevation formula, Hot A / Hot B, side-scatter 10–30°, path loss, minimum signal −130 dBm, IARU ping durations, sporadic peak at 06 UTC |
 
 ## EFFICIENCY: CALCULATION AND THEORY
 
@@ -22,7 +22,7 @@ The **Sources** tab lists every work YA-MS is built on, grouped as below (the te
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Efficiency on four fixed directions (comparison) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, May 2025 | λ³ and λ² rules, midpoint, best direction (radiant az ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Specular reflection, underdense trail equation |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (from Kaiser & Closs 1952) | 182 dB minimum path loss |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (from Kaiser & Closs 1952) | 172–190 dB path loss computed by John Worsnop **G4BAO** (PhD thesis), about 6 dB less for trails aligned with the path; the page's own 182 dB table is not used (see [Geometry and path loss](Geometry-and-Path-Loss)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (AMS Bulletin 203 offset table) | Optimum elevation and offset, hot spots 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (comparison; in the manual) |
 | Klaus von der Heide **DJ5HG** – QTFGUI and the "QTFGUI Help" manual (2007) | Cone scattering law; Hamburg – Barcelona Quadrantids test case used to verify the model |

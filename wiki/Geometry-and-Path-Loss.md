@@ -81,13 +81,15 @@ If 1 − |p0|² < 0 the path is longer than 2·d_H and the stations see **no com
 
 ## Underdense path loss
 
-**Source:** McKinley's equation for underdense trails (β = 0, sin α = 1), antenna gains excluded; q = electron line density, r_e = classical electron radius = 2.818·10⁻¹⁵ m, R1, R2 distances from the trail, φ half the scattering angle [36]:
+**Source:** McKinley's equation and ITU-R Recommendation P.843 for underdense trails (sin α = 1), antenna gains excluded; q = electron line density, r_e = classical electron radius = 2.818·10⁻¹⁵ m, R1, R2 distances from the trail, φ half the scattering angle, β angle between the trail and the path plane, a₁ initial-radius factor with r₀ in m and h in km (P.843, eq. 4 and 7) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Check:** with q = 10¹⁴ electrons/m at 144 MHz: **181–192 dB** between 600 and 2200 km, in line with the article references at 144 MHz: **182 dB minimum** (GM8JBJ, from Kaiser & Closs 1952) and **200 dB average** (OH5IY).
+**Choice:** the budget uses β = 0 (trail in the path plane, the most favourable case) and also shows β = 90°. r₀ is taken at the mean echo height for the frequency, h = 124 − 17 log f (P.843, eq. 15): 0.76 m at 95 km for 50 MHz, 0.40 m at 87 km for 144 MHz, 0.21 m at 79 km for 432 MHz. Over 1000 km a₁ is 0.2 dB at 50 MHz, 0.6 dB at 144 MHz and 1.4 dB at 432 MHz (2.9 dB at 600 km); at DJ5HG's fixed 102 km it would be about 70 dB at 432 MHz, i.e. no echo at all.
+
+**Check:** with q = 10¹⁴ electrons/m, trails at 89.5 km and β = 0, at 144 MHz: **182–192 dB** between 600 and 2100 km (185 dB at 1000 km), inside the **172–190 dB** range computed by John Worsnop **G4BAO** in his PhD thesis, as reported by GM8JBJ. With β = 90° the loss grows by 10 dB at 600 km, 13 dB at 1000 km and 16 dB at 2100 km; the **200 dB average** of OH5IY lies between the two cases. The 182 dB in GM8JBJ's table are not a confirmation: the table gives no frequency, its 86.4 dB per leg are the free-space loss over 500 km at 1 MHz (the 20 log f term is missing: 129.6 dB at 144 MHz) and its items add up to 163.8 dB, not 182; the page says neither "minimum" nor "144 MHz".
 
 ## Link budget
 

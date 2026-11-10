@@ -24,7 +24,7 @@ YA-MS stands on the work of many radio amateurs, scientists and institutions. Da
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Optimum elevation and antenna offsets (AMS Bulletin 203 table) |
 | **LZ2HV** | MSHV: Hot A / Hot B reference |
-| **GM8JBJ** John | Meteor-scatter path loss (182 dB minimum) |
+| **GM8JBJ** John | Meteor-scatter path loss; reports the 172–190 dB computed by **G4BAO** John Worsnop |
 | **PE1ITR** Rob Hardenberg | GRAVES radar: sectors, steps and beam timing (DUBUS 4/2007, update 2021) |
 | **DL1DBC** | Swan Meteor Skyview, reference for the sky dome graphics |
 | **IZ5TEK** Rossano | Shower data (scattertek) |

@@ -2,7 +2,6 @@
 # One entry per line: <Italian key><TAB><translation>. Keys are listed in chiavi.txt (same folder).
 # In both columns the two characters \n mean a line break. Keep the placeholders {0}, {1}, ... (with their format, e.g. {0:F1}).
 # Lines starting with # are comments. Missing entries are shown in Italian.
-# schemi di colori (nomi dei pastelli come in YAEC)
 (confermato)	(visszaigazolva)
 (destra)  B →	(jobbra)  B →
 (lettura Collm: {0})	(Collm-leolvasás: {0})
@@ -514,7 +513,7 @@ kappa-Leonidi diurne	Nappali kappa Leonidák
 la mia stazione	saját állomásom
 la tua stazione	a te állomásod
 lato prevalente {0} ({1:F0}%)	uralkodó oldal {0} ({1:F0}%)
-lavorato	összeköttetés megvan
+lavorato	megdolgozva
 lim. A	A hat.
 lim. B	B hat.
 limiti zona comune	a közös zóna határai
@@ -629,7 +628,7 @@ zona PREV	PREV zóna
 {0} spot MS in memoria	{0} MS spot a memóriában
 {0} {1} - {2:F0} % alle {3} UTC ({4} ora locale)	{0} {1} - {2:F0} % {3} UTC-kor ({4} helyi idő)
 {0} · zona	{0} · zóna
-{0}: non lavorato	{0}: nincs összeköttetés
+{0}: non lavorato	{0}: nincs megdolgozva
 {0}: {1}  az. da me {2:F0}° (scarto {3:+0;-0}°), dal corrispondente {4:F0}°, distanza {5:F0} km	{0}: {1}  az. tőlem {2:F0}° (eltérés {3:+0;-0}°), az ellenállomástól {4:F0}°, távolság {5:F0} km
 {0}: {1}  az. da me {2:F1}° (scarto {3:+0.0;-0.0}° dalla direzione diretta), dal corrispondente {4:F0}°, distanza {5:F0} km, elevazione {6:F1}°	{0}: {1}  az. tőlem {2:F1}° (eltérés {3:+0.0;-0.0}° a közvetlen iránytól), az ellenállomástól {4:F0}°, távolság {5:F0} km, emelkedés {6:F1}°
 {0}: {1} QSO	{0}: {1} QSO

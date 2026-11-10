@@ -121,6 +121,13 @@ namespace YAMS
                 "un eco di 1 s a {1:F1} MHz dura circa {6:F0} ms a {0:F0} MHz (ping massimo IARU a {0:F0} MHz: {7:F0} ms).\n" +
                 "Regole sperimentali di SM6FHZ (VUSHF 2025). Il fattore K tiene conto della stazione ricevente (potenza, antenne): si ricava confrontando con un osservatore RMOB sulla stessa banda.",
                 f, fr, k, scale, K, dur, 1000 * dur, MsGeometry.PingMaxMs(f));
+            // forward scatter: la durata cresce anche con sec^2(phi) (McKinley; IZ5TEK; OH5IY), Collm misura in backscatter (phi = 0)
+            if (model != null && model.Valid)
+            {
+                double phi = model.HalfScatterAngleDeg(model.Mid), sec2 = 1.0 / Math.Pow(Math.Cos(Math.Min(85, phi) * Astro.D2R), 2);
+                lblPrevNote.Text += "\n" + Lang.F("In forward scatter la durata cresce anche con sec²φ (φ = {0:F0}° al punto medio della tratta; Collm misura in backscatter, φ = 0): x {1:F1}, quindi un eco di 1 s a Collm dura circa {2:F0} ms sulla tratta.",
+                    phi, sec2, 1000 * dur * sec2);
+            }
 
             chartPrev48.Series.Clear(); chartPrev24.Series.Clear();
             gridPrev.Columns = new List<string> { Lang.T("Ora UTC"), Lang.T("Collm stessa ora"), Lang.F("Traslato {0}", f.ToString("F0")), Lang.T("Indice sciami tratta"), Lang.F("Previsione {0} /ora", f.ToString("F0")), Lang.T("Giudizio") };

@@ -129,7 +129,6 @@ Guadagno antenna dBi (tx = rx)	Antennewinst dBi (tx = rx)
 Gunter Hoch DL6WU - curva guadagno/lunghezza del boom delle Yagi lunghe, G(dBi) = 7,773 log(L/lambda) + 11,43, riportata da W8IO (w8io.com)	Gunter Hoch DL6WU - curve winst/boomlengte van lange Yagi's, G(dBi) = 7,773 log(L/lambda) + 11,43, vermeld door W8IO (w8io.com)
 HOT A / HOT B (hot spot classici, per il puntamento d'antenna)	HOT A / HOT B (klassieke hotspots, voor het richten van de antenne)
 Hot A	Hot A
-Hot A/B: hot spot a {0} km dal punto medio (AMS 203, W8WN, MSHV).	Hot A/B: hotspot op {0} km van het middelpunt (AMS 203, W8WN, MSHV).
 Hot A: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot A: az. {0:F0}° ({1:+0;-0}°)  {2}
 Hot B	Hot B
 Hot B: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot B: az. {0:F0}° ({1:+0;-0}°)  {2}
@@ -229,7 +228,6 @@ Pronto	Gereed
 Prossimo massimo (UTC)	Volgend maximum (UTC)
 Punt. migliore	Beste richting
 Puntamento {0:F0}°: Hot A {1}, Hot B {2}	Richting {0:F0}°: Hot A {1}, Hot B {2}
-Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta (AMS Bulletin 203 e W8WN: 50-150 km; come MSHV)	Punten op {0:F0} km aan weerszijden van het middelpunt, loodrecht op het traject (AMS Bulletin 203 en W8WN: 50-150 km; zoals MSHV)
 Punto di riflessione	Reflectiepunt
 Punto medio     {0}  ({1:F2}N {2:F2}E)	Middelpunt      {0}  ({1:F2}N {2:F2}E)
 Punto medio (forward)	Middelpunt (forward)
@@ -616,3 +614,14 @@ adesso	nu
 {0} h rispetto ad adesso	{0} u vanaf nu
 Data del calcolo (UTC)	Berekeningsdatum (UTC)
 Ore (da −12 a +36 h)	Uren (−12 tot +36 u)
+Hot A/B: hot spot a {0} km dal punto medio (valore scritto a mano).	Hot A/B: hotspots op {0} km van het middelpunt (handmatige waarde).
+Hot A/B: hot spot a {0} km dal punto medio, scarto {1}° (tabella AMS di J. Richardson, DJ5HG).	Hot A/B: hotspots op {0} km van het middelpunt, afwijking {1}° (AMS-tabel van J. Richardson, DJ5HG).
+In forward scatter la durata cresce anche con sec²φ (φ = {0:F0}° al punto medio della tratta; Collm misura in backscatter, φ = 0): x {1:F1}, quindi un eco di 1 s a Collm dura circa {2:F0} ms sulla tratta.	Bij voorwaartse verstrooiing groeit de duur ook met sec²φ (φ = {0:F0}° in het middelpunt van het traject; Collm meet terugverstrooiing, φ = 0): x {1:F1}, dus een echo van 1 s bij Collm duurt op het traject ongeveer {2:F0} ms.
+Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta (valore scritto a mano; MSHV usa 150 km)	Punten op {0:F0} km aan weerszijden van het middelpunt, loodrecht op het traject (handmatige waarde; MSHV gebruikt 150 km)
+Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta: scarto {1:F1}° dalla tabella AMS di J. Richardson (13° a 1000 km, 11° a 1250, 10° a 1500 e 2000), riportata da DJ5HG	Punten op {0:F0} km aan weerszijden van het middelpunt, loodrecht op het traject: afwijking {1:F1}° uit de AMS-tabel van J. Richardson (13° bij 1000 km, 11° bij 1250, 10° bij 1500 en 2000), geciteerd door DJ5HG
+RADIANTE BASSO LUNGO LA TRATTA: {0}. L'efficienza calcolata resta bassa, ma con scie radenti allineate alla tratta DJ5HG prevede riflessioni rare e forti: vale la pena ascoltare.	LAGE RADIANT LANGS HET TRAJECT: {0}. De berekende efficiëntie blijft laag, maar bij scherende sporen langs het traject verwacht DJ5HG zeldzame, sterke reflecties: luisteren loont.
+Scarto d'antenna degli hot spot dalla tabella AMS di J. Richardson riportata da DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km. Togli la spunta per scrivere la distanza a mano (MSHV usa 150 km).	Antenne-afwijking van de hotspots uit de AMS-tabel van J. Richardson, geciteerd door DJ5HG: 13° bij 1000 km, 11° bij 1250 km, 10° bij 1500 en 2000 km. Vinkje weghalen om de afstand met de hand in te voeren (MSHV gebruikt 150 km).
+Scie più lunghe con il radiante basso (DJ5HG)	Langere sporen bij lage radiant (DJ5HG)
+Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	Uit (voorzichtig): elk spoor weegt met de sinus van de radianthoogte, omdat er bij een lage radiant minder meteoren per km² vallen.\nAan: zoals DJ5HG (2004) zijn de sporen bij een lage radiant langer (bruikbare laagdikte van 15 km gedeeld door de sinus van de hoogte, tot 100 km) en voldoen ze vaker aan de reflectiewet. Beide effecten heffen elkaar op boven ongeveer 9° hoogte: de efficiëntie bij een lage radiant stijgt, bij een hoge verandert ze niet.
+auto (AMS)	auto (AMS)
+{0} dB rispetto al riferimento di DJ5HG	{0} dB ten opzichte van de referentie van DJ5HG

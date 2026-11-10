@@ -37,6 +37,7 @@ namespace YAMS
         ComboBox cmbBand;
         CheckBox chkLayerRadar;
         NumericUpDown numBoom, numHotKm;
+        CheckBox chkHotAuto, chkTrailLen;
         TextBlock lblAntAz, lblAnt;
         TextBlock lblLobeWarn, lblHighRad, lblAB;
         Border boxLobeWarn, boxHighRad;
@@ -466,13 +467,25 @@ namespace YAMS
             numBoom.ValueChanged += (s, e) => { if (model != null) { ApplyAntenna(); UpdateSky(); UpdateGeometry(); } };
             numHotKm = N(30, 400, Dm(cfg.GetD("hot_spot_km", 150)), 0, 10, 55);
             PathModel.HotSpotOffsetKm = V(numHotKm);
-            numHotKm.ValueChanged += (s, e) => { PathModel.HotSpotOffsetKm = V(numHotKm); if (model != null) Recalc(); };
+            numHotKm.ValueChanged += (s, e) => { if (!PathModel.HotSpotAuto) { PathModel.HotSpotOffsetKm = V(numHotKm); if (model != null) Recalc(); } };
+            // distanza degli hot spot: automatica dalla tabella AMS (J. Richardson, riportata da DJ5HG) o scritta a mano
+            chkHotAuto = C(Lang.T("auto (AMS)"), cfg.GetB("hot_spot_auto", true));
+            PathModel.HotSpotAuto = chkHotAuto.IsChecked == true;
+            numHotKm.IsEnabled = !PathModel.HotSpotAuto;
+            ToolTip.SetTip(chkHotAuto, Lang.T("Scarto d'antenna degli hot spot dalla tabella AMS di J. Richardson riportata da DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km. Togli la spunta per scrivere la distanza a mano (MSHV usa 150 km)."));
+            WhenChanged(chkHotAuto, ToggleButton.IsCheckedProperty, () =>
+            {
+                PathModel.HotSpotAuto = chkHotAuto.IsChecked == true;
+                numHotKm.IsEnabled = !PathModel.HotSpotAuto;
+                if (!PathModel.HotSpotAuto) PathModel.HotSpotOffsetKm = V(numHotKm);
+                if (model != null) Recalc();
+            });
 
             // riga 2: strato E, lobo e antenna
             Border row2 = Row(L(Lang.T("Quota scie km")), numLayer, chkLayerRadar,
                               L(Lang.T("Elevazione lobo °")), numElev,
                               L(Lang.T("Antenna Yagi: boom m")), numBoom, lblAnt,
-                              L(Lang.T("Hot spot dal punto medio km")), numHotKm);
+                              L(Lang.T("Hot spot dal punto medio km")), numHotKm, chkHotAuto);
 
             // riga 3: orologio, ora della volta celeste, giorno della tabella 24 h
             lblClock = L("--:--:-- UTC"); lblClock.FontFamily = Pal.Mono; lblClock.FontSize = 15; lblClock.FontWeight = FontWeight.Bold; lblClock.Foreground = Pal.B(Pal.Yellow);
@@ -674,10 +687,12 @@ namespace YAMS
             boxLobeWarn = Warn(Pal.OrangeDark, Pal.OrangeText, out lblLobeWarn);
             // avviso radiante troppo alto (sopra 70°, DF5HC / DH9GCD)
             boxHighRad = Warn(Pal.Panel3, Pal.Yellow, out lblHighRad);
+            // avviso radiante basso lungo la tratta (DJ5HG 2004)
+            boxLowAlong = Warn(Pal.Panel3, Pal.Azure, out lblLowAlong);
             // lato destro: in alto elenco degli sciami, al centro volta celeste + testo del calcolo, in basso la sezione
             Grid rt = new Grid { RowDefinitions = new RowDefinitions("31*,37*,32*") };
             DockPanel rTop = new DockPanel();
-            DockTop(rTop, opt); DockTop(rTop, boxLobeWarn); DockTop(rTop, boxHighRad);
+            DockTop(rTop, opt); DockTop(rTop, boxLobeWarn); DockTop(rTop, boxHighRad); DockTop(rTop, boxLowAlong);
             rTop.Children.Add(lvSky);
             Grid rMid = new Grid { ColumnDefinitions = new ColumnDefinitions("42*,58*") };
             Grid.SetColumn(skySmall, 0); Grid.SetColumn(lblPathInfo, 1);
@@ -736,6 +751,18 @@ namespace YAMS
                        "Righe azzurre: confronto con la formula di DH9GCD (DF5HC 2018). ↑ = radiante sopra 70° dalla tua stazione (troppo alto).")
             };
             DockTop(p2, new Border { Background = Pal.B(Pal.Panel3), Padding = new Thickness(8, 5, 8, 4), Child = lblAB });
+            // opzione: lunghezza delle scie con il radiante basso (DJ5HG 2004), spenta di partenza (calcolo prudente)
+            chkTrailLen = C(Lang.T("Scie più lunghe con il radiante basso (DJ5HG)"), cfg.GetB("lunghezza_scie", false));
+            PathModel.TrailLength = chkTrailLen.IsChecked == true;
+            ToolTip.SetTip(chkTrailLen, Lang.T("Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\n" +
+                "Accesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) " +
+                "e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia."));
+            WhenChanged(chkTrailLen, ToggleButton.IsCheckedProperty, () =>
+            {
+                PathModel.TrailLength = chkTrailLen.IsChecked == true;
+                if (model != null) Recalc();
+            });
+            DockTop(p2, Row(chkTrailLen));
             chart24 = new SimpleChart { Height = Chart24Height };
             DockTop(p2, chart24);
             List<string> cols24 = new List<string> { Lang.T("Sigla"), Lang.T("Sciame"), "ZHR" };
@@ -880,6 +907,7 @@ namespace YAMS
             if (!Astro.TryLocator(Up(txtDx), out dx)) { status.Text = Lang.T("Locator del corrispondente non valido"); return; }
             DateTime t0 = DateTime.Now;
             model = PathModel.Build(home, V(numHomeAlt) / 1000.0, dx, V(numDxAlt) / 1000.0, V(numLayer), V(numElev));
+            if (PathModel.HotSpotAuto && model.Valid) numHotKm.Value = (decimal)Math.Round(Math.Max(30, Math.Min(400, model.HotOffsetKm)));   // mostra la distanza calcolata
             StartGravesModel();   // tratta GRAVES -> stazione, in un thread secondario
             sky.Model = model; sky.Station = home; sky.InvalidateHeat();
             skySmall.Model = model; skySmall.Station = home; section.Model = model;
@@ -1068,6 +1096,23 @@ namespace YAMS
                 boxHighRad.IsVisible = true;
             }
             else boxHighRad.IsVisible = false;
+            // radiante basso (sotto 20°) quasi allineato alla tratta (entro 30°, nei due versi): l'efficienza calcolata resta
+            // bassa (prudente), ma DJ5HG prevede in questa situazione riflessioni rare e forti (Amburgo-Narvik, Quadrantidi)
+            List<string> lowAlong = new List<string>();
+            if (mv)
+                foreach (RadiantMark rm in sky.Marks)
+                {
+                    if (rm.El <= 0 || rm.El > LowRadiantDeg || rm.Zhr < 1) continue;
+                    double d = Math.Abs(Astro.Norm180(rm.Az - model.BearingHomeToDx));
+                    if (d <= 30 || d >= 150) lowAlong.Add(rm.Code + " " + rm.El.ToString("F0") + "°");
+                }
+            if (lowAlong.Count > 0)
+            {
+                lblLowAlong.Text = Lang.F("RADIANTE BASSO LUNGO LA TRATTA: {0}. L'efficienza calcolata resta bassa, ma con scie radenti allineate alla tratta DJ5HG prevede riflessioni rare e forti: vale la pena ascoltare.",
+                    string.Join(", ", lowAlong.ToArray()));
+                boxLowAlong.IsVisible = true;
+            }
+            else boxLowAlong.IsVisible = false;
             // Hot consigliato dall'efficienza: il lato (A o B) da cui arriva la maggior parte delle riflessioni,
             // sommando su tutti gli sciami attivi ZHR x efficienza x frazione del lato
             double wA = 0, wB = 0;
@@ -1108,7 +1153,7 @@ namespace YAMS
                     sb.Append(Lang.F("Limiti zona comune: A {0:F0}° ({1:+0;-0}°), B {2:F0}° ({3:+0;-0}°)", model.LimitA.BearingFromHome, model.LimitA.SideScatterDeg, model.LimitB.BearingFromHome, model.LimitB.SideScatterDeg)).Append('\n');
                 else sb.Append(Lang.F("Nessuna zona comune dello strato E ({0})", model.Message)).Append('\n');
                 sb.Append(Lang.T("Lato A = a sinistra della tratta, B = a destra")).Append('\n');
-                sb.Append(Lang.F("Hot A/B: hot spot a {0} km dal punto medio (AMS 203, W8WN, MSHV).", PathModel.HotSpotOffsetKm.ToString("F0"))).Append('\n');
+                sb.Append((PathModel.HotSpotAuto ? Lang.F("Hot A/B: hot spot a {0} km dal punto medio, scarto {1}° (tabella AMS di J. Richardson, DJ5HG).", model.HotOffsetKm.ToString("F0"), PathModel.AmsOffsetDeg(model.DistKm).ToString("F1")) : Lang.F("Hot A/B: hot spot a {0} km dal punto medio (valore scritto a mano).", model.HotOffsetKm.ToString("F0")))).Append('\n');
                 sb.Append(Lang.T("Miglior puntamento per lo sciame: ORTOGONALE alla direzione\n" +
                                  "di arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\n" +
                                  "SM6FHZ). In pianta: linea gialla = scorrimento\n" +
@@ -1144,8 +1189,14 @@ namespace YAMS
             sb.Append("   |   ").Append(Lang.F("Indice della tratta Σ ZHR×η: {0}", idx.ToString("F1", CultureInfo.CurrentCulture)));
             sb.Append("   |   ");
             if (bm != null && best >= 0.05)
+            {
                 sb.Append(Lang.F("Sciame più utile: {0} (ZHR {1}, efficienza {2} %)", bm.Code,
                     bm.Zhr.ToString(bm.Zhr >= 10 ? "F0" : "F1", CultureInfo.CurrentCulture), bm.Eff.ToString("F0", CultureInfo.CurrentCulture)));
+                LatLon hm; double db = double.NaN;
+                if (Astro.TryLocator(Up(txtHome), out hm)) db = model.AbsoluteDb(Astro.FromAltAz(hm, bm.Az, bm.El));
+                if (!double.IsNaN(db) && !double.IsInfinity(db))
+                    sb.Append(" · ").Append(Lang.F("{0} dB rispetto al riferimento di DJ5HG", db.ToString("+0.0;-0.0", CultureInfo.CurrentCulture)));
+            }
             else sb.Append(Lang.T("Nessuno sciame utile in questo momento"));
             sb.Append("   |   ").Append(Lang.F("Sciami sopra l'orizzonte: {0}", up));
             if (!string.IsNullOrEmpty(recommendShort)) sb.Append("   |   ").Append(recommendShort);
@@ -1191,6 +1242,9 @@ namespace YAMS
 
         // Radiante troppo alto secondo DF5HC (tabella Geminidi 2017): sopra 70° di elevazione
         public const double HighRadiantDeg = 70.0;
+        // radiante basso per l'avviso "lungo la tratta" (DJ5HG 2004: radiante tiefe am Horizont)
+        public const double LowRadiantDeg = 20.0;
+        Border boxLowAlong; TextBlock lblLowAlong;
 
         // Formula della migliore direzione di DH9GCD (DF5HC, "Meteorscatter auf UKW", DARC 2018):
         // E = sin(El) cos(El) sin(P - Az); massimo 0,5 con El = 45° e P - Az = 90°. Restituita in % del massimo.
@@ -1360,7 +1414,8 @@ namespace YAMS
             if (model.ElevToMidDeg < 0) line("  " + Lang.T("-> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto"));
             sb.Append("\n");
             head(Lang.T("HOT A / HOT B (hot spot classici, per il puntamento d'antenna)"));
-            line(Lang.F("Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta (AMS Bulletin 203 e W8WN: 50-150 km; come MSHV)", PathModel.HotSpotOffsetKm));
+            line(PathModel.HotSpotAuto ? Lang.F("Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta: scarto {1:F1}° dalla tabella AMS di J. Richardson (13° a 1000 km, 11° a 1250, 10° a 1500 e 2000), riportata da DJ5HG", model.HotOffsetKm, PathModel.AmsOffsetDeg(model.DistKm))
+                                         : Lang.F("Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta (valore scritto a mano; MSHV usa 150 km)", model.HotOffsetKm));
             foreach (HotPoint h in new HotPoint[] { model.HotA, model.HotB })
             {
                 if (h == null) continue;
@@ -1716,6 +1771,8 @@ namespace YAMS
             cfg.Set("vista_alto", chkTopView.IsChecked == true);
             cfg.Set("boom_m", V(numBoom));
             cfg.Set("hot_spot_km", V(numHotKm));
+            cfg.Set("hot_spot_auto", chkHotAuto.IsChecked == true);
+            if (chkTrailLen != null) cfg.Set("lunghezza_scie", chkTrailLen.IsChecked == true);
             cfg.Set("carattere_pct", Math.Round(sldFont.Value / 10) * 10);
             cfg.Set("lingua", Lang.Code);
             cfg.Set("tema", Tema.Chiave);

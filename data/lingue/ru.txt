@@ -129,7 +129,6 @@ Guadagno antenna dBi (tx = rx)	Усиление антенны dBi (tx = rx)
 Gunter Hoch DL6WU - curva guadagno/lunghezza del boom delle Yagi lunghe, G(dBi) = 7,773 log(L/lambda) + 11,43, riportata da W8IO (w8io.com)	Gunter Hoch DL6WU - зависимость усиления длинных Яги от длины траверсы, G(dBi) = 7,773 log(L/lambda) + 11,43, по W8IO (w8io.com)
 HOT A / HOT B (hot spot classici, per il puntamento d'antenna)	HOT A / HOT B (классические горячие точки, для наведения антенны)
 Hot A	Hot A
-Hot A/B: hot spot a {0} km dal punto medio (AMS 203, W8WN, MSHV).	Hot A/B: горячие точки в {0} km от средней точки (AMS 203, W8WN, MSHV).
 Hot A: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot A: аз. {0:F0}° ({1:+0;-0}°)  {2}
 Hot B	Hot B
 Hot B: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot B: аз. {0:F0}° ({1:+0;-0}°)  {2}
@@ -229,7 +228,6 @@ Pronto	Готово
 Prossimo massimo (UTC)	Следующий максимум (UTC)
 Punt. migliore	Лучш. направл.
 Puntamento {0:F0}°: Hot A {1}, Hot B {2}	Направление {0:F0}°: Hot A {1}, Hot B {2}
-Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta (AMS Bulletin 203 e W8WN: 50-150 km; come MSHV)	Точки в {0:F0} km по сторонам от средней точки, перпендикулярно трассе (AMS Bulletin 203 и W8WN: 50-150 km; как в MSHV)
 Punto di riflessione	Точка отражения
 Punto medio     {0}  ({1:F2}N {2:F2}E)	Средняя точка   {0}  ({1:F2}N {2:F2}E)
 Punto medio (forward)	Средняя точка (forward)
@@ -616,3 +614,14 @@ adesso	сейчас
 {0} h rispetto ad adesso	{0} ч от текущего момента
 Data del calcolo (UTC)	Дата расчёта (UTC)
 Ore (da −12 a +36 h)	Часы (от −12 до +36 ч)
+Hot A/B: hot spot a {0} km dal punto medio (valore scritto a mano).	Hot A/B: горячие точки в {0} км от середины трассы (значение вручную).
+Hot A/B: hot spot a {0} km dal punto medio, scarto {1}° (tabella AMS di J. Richardson, DJ5HG).	Hot A/B: горячие точки в {0} км от середины трассы, отклонение {1}° (таблица AMS Дж. Ричардсона, DJ5HG).
+In forward scatter la durata cresce anche con sec²φ (φ = {0:F0}° al punto medio della tratta; Collm misura in backscatter, φ = 0): x {1:F1}, quindi un eco di 1 s a Collm dura circa {2:F0} ms sulla tratta.	При рассеянии вперёд длительность растёт ещё и как sec²φ (φ = {0:F0}° в середине трассы; Collm измеряет обратное рассеяние, φ = 0): x {1:F1}, поэтому эхо длительностью 1 с в Collm длится на трассе около {2:F0} мс.
+Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta (valore scritto a mano; MSHV usa 150 km)	Точки в {0:F0} км по обе стороны от середины, перпендикулярно трассе (значение вручную; MSHV использует 150 км)
+Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta: scarto {1:F1}° dalla tabella AMS di J. Richardson (13° a 1000 km, 11° a 1250, 10° a 1500 e 2000), riportata da DJ5HG	Точки в {0:F0} км по обе стороны от середины, перпендикулярно трассе: отклонение {1:F1}° по таблице AMS Дж. Ричардсона (13° на 1000 км, 11° на 1250, 10° на 1500 и 2000), приведённой DJ5HG
+RADIANTE BASSO LUNGO LA TRATTA: {0}. L'efficienza calcolata resta bassa, ma con scie radenti allineate alla tratta DJ5HG prevede riflessioni rare e forti: vale la pena ascoltare.	НИЗКИЙ РАДИАНТ ВДОЛЬ ТРАССЫ: {0}. Рассчитанная эффективность остаётся низкой, но при пологих следах вдоль трассы DJ5HG ожидает редкие и сильные отражения: стоит послушать.
+Scarto d'antenna degli hot spot dalla tabella AMS di J. Richardson riportata da DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km. Togli la spunta per scrivere la distanza a mano (MSHV usa 150 km).	Отклонение антенны для горячих точек по таблице AMS Дж. Ричардсона, приведённой DJ5HG: 13° на 1000 км, 11° на 1250 км, 10° на 1500 и 2000 км. Снимите флажок, чтобы ввести расстояние вручную (MSHV использует 150 км).
+Scie più lunghe con il radiante basso (DJ5HG)	Более длинные следы при низком радианте (DJ5HG)
+Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	Выключено (осторожно): каждый след взвешивается синусом высоты радианта, потому что при низком радианте на км² падает меньше метеоров.\nВключено: как у DJ5HG (2004), при низком радианте следы длиннее (полезная толщина слоя 15 км, делённая на синус высоты, до 100 км) и чаще выполняют закон отражения. Оба эффекта компенсируются выше примерно 9° высоты: эффективность при низком радианте растёт, при высоком не меняется.
+auto (AMS)	авто (AMS)
+{0} dB rispetto al riferimento di DJ5HG	{0} дБ относительно опорного уровня DJ5HG

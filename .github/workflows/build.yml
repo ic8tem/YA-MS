@@ -79,6 +79,16 @@ jobs:
           chmod +x pkg/YA-MS/installa.sh pkg/YA-MS/YA-MS
           tar -C pkg -czf dist/YA-MS-$VER-linux-x64.tar.gz YA-MS
           bash installer/make-deb.sh linux-x64 "$VER" publish/linux-x64 dist
+      - name: Prova delle tratte di DJ5HG (Quadrantidi, MS-Geometrie 2004)
+        if: github.ref != 'refs/heads/release'
+        run: |
+          cp -R publish/linux-x64 prova
+          timeout 300 ./prova/YA-MS --prova-dj5hg 2>&1 | tee prova_dj5hg.txt || true
+      - uses: actions/upload-artifact@v4
+        if: github.ref != 'refs/heads/release'
+        with:
+          name: prova-dj5hg
+          path: prova_dj5hg.txt
       - name: Prova della fonte PSKReporter MQTT (60 s)
         if: github.ref != 'refs/heads/release'
         run: timeout 120 ./publish/linux-x64/YA-MS --prova-mqtt 60 || true

@@ -33,7 +33,38 @@ namespace YAMS
         public HotPoint HotA, HotB;          // hot spot classici ai lati del punto medio (puntamento d'antenna)
         public HotPoint LimitA, LimitB;      // incroci delle curve d'orizzonte (articolo): limiti della zona comune
         public double HotRadiusKm;
-        public static double HotSpotOffsetKm = 150;   // distanza degli hot spot dal punto medio (AMS Bulletin 203: 50-150 km)
+        public static double HotSpotOffsetKm = 150;   // distanza degli hot spot dal punto medio scritta a mano (km)
+        public static bool HotSpotAuto = true;        // distanza dalla tabella AMS (J. Richardson, riportata da DJ5HG)
+        // Opzione (DJ5HG, "Die Geometrie von Meteorscatterverbindungen", 2004): con il radiante basso cadono meno
+        // meteore per km2 (fattore sin El) ma le scie sono piu' lunghe (fino a 100 km utili) e soddisfano piu' spesso la
+        // legge di riflessione. Con l'opzione accesa il peso del radiante diventa min(sin El, TrailDh/TrailMax).
+        public static bool TrailLength = false;
+        public const double TrailDhKm = 15, TrailMaxKm = 100;
+
+        // Scarto d'antenna degli hot spot dalla direzione diretta in funzione della distanza (J. Richardson, AMS,
+        // "Some Notes and Equations for Forward Scatter", riportata da DJ5HG): 13 gradi a 1000 km, 11 a 1250, 10 a 1500
+        // e a 2000 km; sotto 1000 km 13 gradi, sopra 2000 km 10 gradi. La distanza dal punto medio e' (D/2) tan(scarto).
+        static readonly double[] AmsKm = { 1000, 1250, 1500, 2000 }, AmsDeg = { 13, 11, 10, 10 };
+        public static double AmsOffsetDeg(double distKm)
+        {
+            if (distKm <= AmsKm[0]) return AmsDeg[0];
+            for (int i = 1; i < AmsKm.Length; i++)
+                if (distKm <= AmsKm[i]) return AmsDeg[i - 1] + (AmsDeg[i] - AmsDeg[i - 1]) * (distKm - AmsKm[i - 1]) / (AmsKm[i] - AmsKm[i - 1]);
+            return AmsDeg[AmsDeg.Length - 1];
+        }
+        public static double HotOffsetFor(double distKm)
+        {
+            if (!HotSpotAuto) return HotSpotOffsetKm;
+            return Math.Max(20, distKm / 2 * Math.Tan(AmsOffsetDeg(distKm) * Astro.D2R));
+        }
+        public double HotOffsetKm;   // distanza usata per questa tratta
+
+        // peso della direzione del radiante nel punto di riflessione (sel = sin dell'elevazione locale)
+        static double RadiantWeight(double sel)
+        {
+            if (sel <= 0) return 0;
+            return TrailLength ? Math.Min(sel, TrailDhKm / TrailMaxKm) : sel;
+        }
         public bool Valid;
         public string Message = "";
 
@@ -70,8 +101,9 @@ namespace YAMS
             HotRadiusKm = MsGeometry.LayerRangeKm(LayerKm, MinElevDeg, HomeAltKm);
             // Hot spot classici: a HotSpotOffsetKm ai lati del punto medio, perpendicolari alla tratta (A a sinistra, B a destra)
             double bMid = Astro.Bearing(Mid, Dx);
-            HotA = MakeHot(Astro.Destination(Mid, bMid - 90, HotSpotOffsetKm), "Hot A");
-            HotB = MakeHot(Astro.Destination(Mid, bMid + 90, HotSpotOffsetKm), "Hot B");
+            HotOffsetKm = HotOffsetFor(DistKm);
+            HotA = MakeHot(Astro.Destination(Mid, bMid - 90, HotOffsetKm), "Hot A");
+            HotB = MakeHot(Astro.Destination(Mid, bMid + 90, HotOffsetKm), "Hot B");
             // Limiti della zona comune (articolo): incroci delle curve dove l'orizzonte di ciascuna stazione incontra lo strato E
             LatLon p1, p2;
             if (!MsGeometry.SmallCircleIntersect(Home, Dx, HotRadiusKm / Astro.R, out p1, out p2))
@@ -141,7 +173,7 @@ namespace YAMS
             for (int i = 0; i < samples.Count; i++)
             {
                 Sample sm = samples[i];
-                double sel = s.Dot(sm.Up);
+                double sel = RadiantWeight(s.Dot(sm.Up));
                 if (sel <= 0) continue;
                 double k = s.Dot(sm.N);
                 double c = sm.W * Math.Exp(-k * k / sig2) * sel;
@@ -167,7 +199,7 @@ namespace YAMS
             for (int i = 0; i < samples.Count; i++)
             {
                 Sample sm = samples[i];
-                double sel = s.Dot(sm.Up);
+                double sel = RadiantWeight(s.Dot(sm.Up));
                 if (sel <= 0) continue;
                 double k = s.Dot(sm.N);
                 c[i] = 100.0 * sm.W * Math.Exp(-k * k / sig2) * sel / fieldMax;
@@ -207,6 +239,61 @@ namespace YAMS
             double l = Bil(leftField, i0, i1, j0, j1, ti, tj);
             leftFrac = v > 0 ? l / v : 0.5;
             return Math.Max(0, Math.Min(100, 100.0 * v / fieldMax));
+        }
+
+        // Meta' dell'angolo di scattering (gradi) in un punto alla quota delle scie: 0 = backscatter (radar), verso 90 = radente
+        public double HalfScatterAngleDeg(LatLon p)
+        {
+            Vec3 pa = Astro.Vec(Home, Astro.R + HomeAltKm), pb = Astro.Vec(Dx, Astro.R + DxAltKm), P = Astro.Vec(p, Astro.R + LayerKm);
+            Vec3 na = (pa - P).Unit, nb = (pb - P).Unit;
+            return Math.Acos(Math.Max(-1, Math.Min(1, na.Dot(nb)))) / 2.0 / Astro.D2R;
+        }
+
+        // Efficienza in dB riferita al riferimento fisso di DJ5HG (MS-Geometrie, 2004): 0 dB = massimo di una tratta
+        // nord-sud di 1000 km a cavallo dell'equatore con il radiante sull'equatore celeste (0 h, 0 gradi) all'equinozio,
+        // cioe' il radiante che dal punto medio percorre il cerchio est-ovest per lo zenit. Stessa quota e stessi pesi della tratta.
+        static double refRaw = double.NaN; static string refKey = "";
+        double ReferenceRaw()
+        {
+            string key = LayerKm.ToString("F2") + "|" + MinElevDeg.ToString("F2") + "|" + TrailLength;
+            if (refKey == key && !double.IsNaN(refRaw)) return refRaw;
+            PathModel r = new PathModel();
+            r.Home = new LatLon(-4.4966, 0); r.Dx = new LatLon(4.4966, 0); r.HomeAltKm = 0; r.DxAltKm = 0;
+            r.LayerKm = LayerKm; r.MinElevDeg = MinElevDeg; r.DistKm = Astro.DistanceKm(r.Home, r.Dx);
+            r.BearingHomeToDx = Astro.Bearing(r.Home, r.Dx); r.Mid = new LatLon(0, 0);
+            r.HotRadiusKm = MsGeometry.LayerRangeKm(LayerKm, MinElevDeg, 0);
+            r.BuildSamples();
+            double best = 1e-30, l;
+            for (double el = 1; el <= 90; el += 1)
+            {
+                best = Math.Max(best, r.Score(Astro.FromAltAz(r.Mid, 90, el), out l));
+                best = Math.Max(best, r.Score(Astro.FromAltAz(r.Mid, 270, el), out l));
+            }
+            refRaw = best; refKey = key;
+            return refRaw;
+        }
+
+        public double AbsoluteDb(Vec3 s)
+        {
+            if (!Valid) return double.NaN;
+            double l, v = Score(s, out l);
+            if (v <= 0) return double.NegativeInfinity;
+            return 10 * Math.Log10(v / ReferenceRaw());
+        }
+
+        // direzione d'antenna dalla mia stazione: media dei rilevamenti dei punti di riflessione pesata con il loro contributo
+        public double WeightedBearingFromHome(Vec3 s)
+        {
+            double[] c = Contributions(s);
+            double sx = 0, sy = 0;
+            for (int i = 0; i < c.Length; i++)
+            {
+                if (c[i] <= 0) continue;
+                double b = Astro.Bearing(Home, samples[i].Ll) * Astro.D2R;
+                sx += c[i] * Math.Sin(b); sy += c[i] * Math.Cos(b);
+            }
+            if (sx == 0 && sy == 0) return double.NaN;
+            return Astro.Norm360(Math.Atan2(sx, sy) / Astro.D2R);
         }
 
         static double Bil(double[,] f, int i0, int i1, int j0, int j1, double ti, double tj)

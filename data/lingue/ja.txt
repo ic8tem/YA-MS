@@ -129,7 +129,6 @@ Guadagno antenna dBi (tx = rx)	アンテナ利得 dBi (送信 = 受信)
 Gunter Hoch DL6WU - curva guadagno/lunghezza del boom delle Yagi lunghe, G(dBi) = 7,773 log(L/lambda) + 11,43, riportata da W8IO (w8io.com)	Gunter Hoch DL6WU - ロング八木の利得/ブーム長曲線、G(dBi) = 7.773 log(L/lambda) + 11.43、W8IO による紹介 (w8io.com)
 HOT A / HOT B (hot spot classici, per il puntamento d'antenna)	HOT A / HOT B (古典的ホットスポット、アンテナ方向決め用)
 Hot A	Hot A
-Hot A/B: hot spot a {0} km dal punto medio (AMS 203, W8WN, MSHV).	Hot A/B: 中間点から {0} km のホットスポット (AMS 203, W8WN, MSHV)。
 Hot A: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot A: 方位 {0:F0}° ({1:+0;-0}°)  {2}
 Hot B	Hot B
 Hot B: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot B: 方位 {0:F0}° ({1:+0;-0}°)  {2}
@@ -229,7 +228,6 @@ Pronto	準備完了
 Prossimo massimo (UTC)	次の極大 (UTC)
 Punt. migliore	最良方向
 Puntamento {0:F0}°: Hot A {1}, Hot B {2}	アンテナ方向 {0:F0}°: Hot A {1}, Hot B {2}
-Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta (AMS Bulletin 203 e W8WN: 50-150 km; come MSHV)	中間点の両側 {0:F0} km、パスに垂直な点 (AMS Bulletin 203 と W8WN: 50-150 km; MSHV と同じ)
 Punto di riflessione	反射点
 Punto medio     {0}  ({1:F2}N {2:F2}E)	中間点          {0}  ({1:F2}N {2:F2}E)
 Punto medio (forward)	中間点 (前方散乱)
@@ -616,3 +614,14 @@ adesso	現在
 {0} h rispetto ad adesso	現在から {0} 時間
 Data del calcolo (UTC)	計算日 (UTC)
 Ore (da −12 a +36 h)	時間 (−12〜+36 h)
+Hot A/B: hot spot a {0} km dal punto medio (valore scritto a mano).	Hot A/B: 中点から {0} km のホットスポット (手入力値)。
+Hot A/B: hot spot a {0} km dal punto medio, scarto {1}° (tabella AMS di J. Richardson, DJ5HG).	Hot A/B: 中点から {0} km のホットスポット、ずれ {1}° (J. Richardson の AMS 表、DJ5HG)。
+In forward scatter la durata cresce anche con sec²φ (φ = {0:F0}° al punto medio della tratta; Collm misura in backscatter, φ = 0): x {1:F1}, quindi un eco di 1 s a Collm dura circa {2:F0} ms sulla tratta.	前方散乱では継続時間は sec²φ にも比例して長くなります (φ = パス中点で {0:F0}°。Collm は後方散乱で φ = 0): x {1:F1}。Collm で 1 秒のエコーはパス上で約 {2:F0} ms 続きます。
+Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta (valore scritto a mano; MSHV usa 150 km)	中点の両側 {0:F0} km、パスに垂直な点 (手入力値。MSHV は 150 km)
+Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta: scarto {1:F1}° dalla tabella AMS di J. Richardson (13° a 1000 km, 11° a 1250, 10° a 1500 e 2000), riportata da DJ5HG	中点の両側 {0:F0} km、パスに垂直な点: J. Richardson の AMS 表によるずれ {1:F1}° (1000 km で 13°、1250 で 11°、1500 と 2000 で 10°)、DJ5HG が引用
+RADIANTE BASSO LUNGO LA TRATTA: {0}. L'efficienza calcolata resta bassa, ma con scie radenti allineate alla tratta DJ5HG prevede riflessioni rare e forti: vale la pena ascoltare.	低い放射点がパスに沿っています: {0}。計算上の効率は低いままですが、パスに沿った浅い流星痕では DJ5HG はまれで強い反射を予想しています。聞く価値があります。
+Scarto d'antenna degli hot spot dalla tabella AMS di J. Richardson riportata da DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km. Togli la spunta per scrivere la distanza a mano (MSHV usa 150 km).	DJ5HG が引用する J. Richardson の AMS 表によるホットスポットのアンテナのずれ: 1000 km で 13°、1250 km で 11°、1500 km と 2000 km で 10°。チェックを外すと距離を手入力できます (MSHV は 150 km)。
+Scie più lunghe con il radiante basso (DJ5HG)	低い放射点で流星痕が長い (DJ5HG)
+Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	オフ (慎重): 各流星痕を放射点高度の正弦で重み付けします。放射点が低いと 1 km² あたりの流星が少ないためです。\nオン: DJ5HG (2004) のとおり、放射点が低いと流星痕は長く (層の有効厚さ 15 km を高度の正弦で割った長さ、最大 100 km)、反射の法則を満たしやすくなります。両者は高度約 9° 以上で打ち消し合い、低い放射点の効率は上がり、高い放射点では変わりません。
+auto (AMS)	自動 (AMS)
+{0} dB rispetto al riferimento di DJ5HG	DJ5HG の基準に対して {0} dB

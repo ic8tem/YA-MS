@@ -129,7 +129,6 @@ Guadagno antenna dBi (tx = rx)	Antennengewinn dBi (TX = RX)
 Gunter Hoch DL6WU - curva guadagno/lunghezza del boom delle Yagi lunghe, G(dBi) = 7,773 log(L/lambda) + 11,43, riportata da W8IO (w8io.com)	Günter Hoch DL6WU - Kurve Gewinn/Boomlänge langer Yagis, G(dBi) = 7,773 log(L/lambda) + 11,43, nach W8IO (w8io.com)
 HOT A / HOT B (hot spot classici, per il puntamento d'antenna)	HOT A / HOT B (klassische Hot-Spots für die Antennenausrichtung)
 Hot A	Hot A
-Hot A/B: hot spot a {0} km dal punto medio (AMS 203, W8WN, MSHV).	Hot A/B: Hot-Spots {0} km vom Mittelpunkt (AMS 203, W8WN, MSHV).
 Hot A: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot A: Az. {0:F0}° ({1:+0;-0}°)  {2}
 Hot B	Hot B
 Hot B: az. {0:F0}° ({1:+0;-0}°)  {2}	Hot B: Az. {0:F0}° ({1:+0;-0}°)  {2}
@@ -229,7 +228,6 @@ Pronto	Bereit
 Prossimo massimo (UTC)	Nächstes Maximum (UTC)
 Punt. migliore	Beste Ausr.
 Puntamento {0:F0}°: Hot A {1}, Hot B {2}	Ausrichtung {0:F0}°: Hot A {1}, Hot B {2}
-Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta (AMS Bulletin 203 e W8WN: 50-150 km; come MSHV)	Punkte {0:F0} km seitlich des Mittelpunkts, senkrecht zur Strecke (AMS Bulletin 203 und W8WN: 50-150 km; wie MSHV)
 Punto di riflessione	Reflexionspunkt
 Punto medio     {0}  ({1:F2}N {2:F2}E)	Mittelpunkt     {0}  ({1:F2}N {2:F2}E)
 Punto medio (forward)	Mittelpunkt (Forward)
@@ -616,3 +614,14 @@ adesso	jetzt
 {0} h rispetto ad adesso	{0} h ab jetzt
 Data del calcolo (UTC)	Berechnungsdatum (UTC)
 Ore (da −12 a +36 h)	Stunden (−12 bis +36 h)
+Hot A/B: hot spot a {0} km dal punto medio (valore scritto a mano).	Hot A/B: Hot Spots {0} km vom Mittelpunkt (Wert von Hand).
+Hot A/B: hot spot a {0} km dal punto medio, scarto {1}° (tabella AMS di J. Richardson, DJ5HG).	Hot A/B: Hot Spots {0} km vom Mittelpunkt, Ablage {1}° (AMS-Tabelle von J. Richardson, DJ5HG).
+In forward scatter la durata cresce anche con sec²φ (φ = {0:F0}° al punto medio della tratta; Collm misura in backscatter, φ = 0): x {1:F1}, quindi un eco di 1 s a Collm dura circa {2:F0} ms sulla tratta.	In Vorwärtsstreuung wächst die Dauer zusätzlich mit sec²φ (φ = {0:F0}° im Streckenmittelpunkt; Collm misst in Rückstreuung, φ = 0): x {1:F1}, ein Echo von 1 s in Collm dauert auf der Strecke also etwa {2:F0} ms.
+Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta (valore scritto a mano; MSHV usa 150 km)	Punkte {0:F0} km beiderseits des Mittelpunkts, senkrecht zur Strecke (Wert von Hand; MSHV verwendet 150 km)
+Punti a {0:F0} km ai lati del punto medio, perpendicolari alla tratta: scarto {1:F1}° dalla tabella AMS di J. Richardson (13° a 1000 km, 11° a 1250, 10° a 1500 e 2000), riportata da DJ5HG	Punkte {0:F0} km beiderseits des Mittelpunkts, senkrecht zur Strecke: Ablage {1:F1}° aus der AMS-Tabelle von J. Richardson (13° bei 1000 km, 11° bei 1250, 10° bei 1500 und 2000), zitiert von DJ5HG
+RADIANTE BASSO LUNGO LA TRATTA: {0}. L'efficienza calcolata resta bassa, ma con scie radenti allineate alla tratta DJ5HG prevede riflessioni rare e forti: vale la pena ascoltare.	NIEDRIGER RADIANT ENTLANG DER STRECKE: {0}. Die berechnete Effizienz bleibt niedrig, aber bei flachen Bahnen entlang der Strecke erwartet DJ5HG seltene, starke Reflexionen: Zuhören lohnt sich.
+Scarto d'antenna degli hot spot dalla tabella AMS di J. Richardson riportata da DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km. Togli la spunta per scrivere la distanza a mano (MSHV usa 150 km).	Antennenablage der Hot Spots aus der AMS-Tabelle von J. Richardson, zitiert von DJ5HG: 13° bei 1000 km, 11° bei 1250 km, 10° bei 1500 und 2000 km. Haken entfernen, um die Entfernung von Hand einzugeben (MSHV verwendet 150 km).
+Scie più lunghe con il radiante basso (DJ5HG)	Längere Bahnen bei niedrigem Radianten (DJ5HG)
+Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.	Aus (vorsichtig): jede Bahn wird mit dem Sinus der Radiantenhöhe gewichtet, weil bei niedrigem Radianten weniger Meteore pro km² fallen.\nEin: wie bei DJ5HG (2004) sind die Bahnen bei niedrigem Radianten länger (nutzbare Schichtdicke 15 km geteilt durch den Sinus der Höhe, bis 100 km) und erfüllen das Reflexionsgesetz öfter. Beide Effekte heben sich oberhalb von etwa 9° Höhe auf: die Effizienz bei niedrigem Radianten steigt, bei hohem ändert sie sich nicht.
+auto (AMS)	auto (AMS)
+{0} dB rispetto al riferimento di DJ5HG	{0} dB gegenüber der Referenz von DJ5HG

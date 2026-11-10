@@ -1,0 +1,85 @@
+[English](Troubleshooting-FAQ) · [Italiano](Troubleshooting-FAQ-it) · [Deutsch](Troubleshooting-FAQ-de) · [Nederlands](Troubleshooting-FAQ-nl) · [Français](Troubleshooting-FAQ-fr) · [Español](Troubleshooting-FAQ-es) · [Português](Troubleshooting-FAQ-pt) · [Português (Brasil)](Troubleshooting-FAQ-pt-br) · [Dansk](Troubleshooting-FAQ-da) · [Norsk](Troubleshooting-FAQ-nb) · [Svenska](Troubleshooting-FAQ-sv) · [Íslenska](Troubleshooting-FAQ-is) · [Eesti](Troubleshooting-FAQ-et) · [Lietuvių](Troubleshooting-FAQ-lt) · [Latviešu](Troubleshooting-FAQ-lv) · [Polski](Troubleshooting-FAQ-pl) · [Čeština](Troubleshooting-FAQ-cs) · [Magyar](Troubleshooting-FAQ-hu) · [Română](Troubleshooting-FAQ-ro) · [Ελληνικά](Troubleshooting-FAQ-el) · [Русский](Troubleshooting-FAQ-ru) · [Українська](Troubleshooting-FAQ-uk) · [Türkçe](Troubleshooting-FAQ-tr) · [Afrikaans](Troubleshooting-FAQ-af) · [العربية](Troubleshooting-FAQ-ar) · [עברית](Troubleshooting-FAQ-he) · [اردو](Troubleshooting-FAQ-ur) · [हिन्दी](Troubleshooting-FAQ-hi) · [বাংলা](Troubleshooting-FAQ-bn) · [Bahasa Indonesia](Troubleshooting-FAQ-id) · [Tagalog](Troubleshooting-FAQ-tl) · [日本語](Troubleshooting-FAQ-ja) · [한국어](Troubleshooting-FAQ-ko) · [中文](Troubleshooting-FAQ-zh) · **中文 (繁體)**
+
+# 疑難排解與常見問題
+
+## 安裝與啟動
+
+### Windows SmartScreen 顯示「Windows 已保護您的電腦」
+本程式未使用商業憑證簽署。請按*其他資訊* → *仍要執行*。請只從 [Releases](https://github.com/ic8tem/YA-MS/releases) 頁面下載。
+
+### macOS 無法打開，因為它來自未識別的開發者
+YA-MS 未經 Apple 簽署，因此 **Gatekeeper** 會在第一次執行時封鎖它。在 `.dmg` 中，**在「Installa YA-MS.command」上按右鍵 → 打開**並確認。這個指令稿會移除 `~/YA-MS/YA-MS.app` 上「從網際網路下載」的隔離標記，然後開啟它。如果 macOS 仍然拒絕，請開啟*系統設定 → 隱私權與安全性*，然後按*強制打開*。
+
+### macOS 該用哪個 .dmg？
+M1/M2/M3/M4 處理器用 `-mac-apple-silicon.dmg`，Intel Mac 用 `-mac-intel.dmg`（Apple 選單 → *關於這台 Mac* 可查看是哪一種）。
+
+### Linux 應用程式選單中沒有 YA-MS
+請在解壓縮出來的資料夾（而不是 `~/YA-MS`）中執行 `./installa.sh`。有些桌面環境需要登出再重新登入，才會顯示新的項目。您隨時可以用 `~/YA-MS/YA-MS` 啟動程式。
+
+### 缺少歐洲地圖
+*無法使用歐洲地圖（首次啟動時需要網路）。* Natural Earth 地圖會在第一次啟動時下載到 `data/mappa`。請連上網際網路，然後重新啟動 YA-MS。
+
+## 顯示
+
+### Linux 下日文顯示為方框
+您的系統缺少 CJK 字型。請安裝 **Noto CJK** 字型並重新啟動 YA-MS：
+
+| 發行版 | 指令 |
+|---|---|
+| Debian、Ubuntu、Mint | `sudo apt install fonts-noto-cjk` |
+| Fedora | `sudo dnf install google-noto-sans-cjk-fonts` |
+| Arch | `sudo pacman -S noto-fonts-cjk` |
+| openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
+
+### 文字太小，或圖表沒有空間
+使用**字型**滑桿（100–300 %），並用**控制**收合控制項列。請參閱[設定](Settings-and-Data-Folder-zh-tw#字型與控制)。
+
+### 夜間螢幕太亮
+在**主題**清單中選擇**夜間**或**黑色**。
+
+## 網際網路與雷達資料
+
+### 「無網際網路連線」訊息
+當所有資料來源都無法連線時，YA-MS 會**只顯示一次**這則訊息；狀態列會變成紅色。程式會繼續使用**最後儲存的資料**運作，並每 5 分鐘自動重試；網路恢復後會顯示*連線已恢復。*。不需要做任何事。
+
+### 雷達通量中的橘色警告：「無法讀取通量的垂直刻度 …」
+Collm 雷達每天都會變更垂直刻度，YA-MS 會從圖表的標籤讀取它。如果某個標籤無法讀取，程式會使用校準刻度 0–1200 流星/小時，並提示**數值需要核對**。通常下一個小時的圖表就能正確讀取。如果連續許多小時都看到*圖表格式已變更*或*在預期位置找不到通量圖的座標軸*，表示雷達變更了圖表格式：請[回報此問題](Contributing-and-Contacts-zh-tw)。
+
+### 「高度圖的刻度已變更」
+高度統計（眾數、平均數、中位數）仍然有效；只有高度直方圖的絕對計數不再有效。
+
+### 「雷達通量：無資料」
+在[雷達通量](Radar-Flux-zh-tw)中按下**立即下載**，並檢查 `data/fonti_radar.csv` 中 Collm 是否為 `attivo=1`。
+
+### RMOB：為什麼自動下載是關閉的？
+RMOB 要求**自動化程式不要抓取它的檔案**。請在 RMOB 給予您許可之後，才啟用*每 5 分鐘自動下載*。在此之前，請使用**立即下載 RMOB** 或**從磁碟載入 RMOB 檔案...**。請參閱[預報（實驗性）](Experimental-Forecasts-zh-tw#rmob-與自動化程式)。
+
+### RMOB：「無法辨識檔案格式」或讀取的時數很少
+請使用觀測者的月份文字檔（`NAME_MMYYYYrmob.TXT`），或只含一位觀測者的公報表格。擬合指數至少需要與 Collm 資料（昨天與今天）有 3 個共同時數。
+
+## 計算
+
+### 「本台的網格座標無效」/「對方電台的網格座標無效」
+網格座標必須為 4、6 或 8 個字元（例如 `JN70`、`JN70CN`、`JN70CN12`）。
+
+### 「沒有 E 層共同區域」
+路徑長度超過餘跡高度處涵蓋距離的兩倍（波瓣仰角 0°、餘跡高度 89.5 km 時約為 2 × 1062 km）：單次流星散射跳躍無法涵蓋。提高**波瓣仰角**會使涵蓋距離更短。
+
+### Hot A / Hot B 顯示為灰色
+當天線指向 DX 時，它們已經位於**您的天線波瓣內**：不需要轉動天線。請參閱[天球](Sky-View-zh-tw#警告)。
+
+### 效率與 MCG_MS 或 MS-Soft 的結果不同
+YA-MS 使用實際路徑與自己的模型；OH5IY 與 MCG_MS 的刻度沒有詳細的文件說明。請比較時段與趨勢，而不是絕對的百分比，並參閱[模型](Efficiency-Calculation-zh-tw#模型)。
+
+### GRAVES 波束掃過的時間似乎有偏移
+波束序列是依電腦時鐘計算的：請將時鐘與 NTP 伺服器同步。GRAVES 指揮站有時也會把序列平移幾個步進；這些細節是需要以收聽來確認的預測。
+
+## 其他問題
+
+**YA-MS 是免費的嗎？** 是的，它是一套供業餘無線電愛好者使用的免費程式。
+
+**它能控制我的旋轉器或無線電機嗎？** 不能。YA-MS 是預報與規劃工具；進行 QSO 請使用您的數位模式程式（例如 MSHV、WSJT-X）。
+
+**它能用於 432 MHz 以上嗎？** 頻段清單只到 432 MHz（28、50、70、144、222、432）。實驗性預報接受 28 至 1300 MHz 的任意頻率，但它所用的 SM6FHZ 法則來自 144 與 432 MHz 上的經驗。
+
+**出了問題。** 請寫信給作者，說明您的作業系統、YA-MS 版本以及您做了哪些操作：請參閱[參與貢獻與聯絡方式](Contributing-and-Contacts-zh-tw)。

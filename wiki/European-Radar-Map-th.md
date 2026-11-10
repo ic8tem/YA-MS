@@ -6,7 +6,7 @@
 
 [![Map of European radars](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_2.png)
 
-ตำแหน่งของแหล่งข้อมูลสดเทียบกับ **สถานีของคุณ** (ดาว จาก *โลเคเตอร์ของฉัน*):
+ตำแหน่งของแหล่งข้อมูลสดเทียบกับ **สถานีของคุณ** (ดาว จาก *locator ของฉัน*):
 
 | แหล่ง | คืออะไร | ใช้ใน |
 |---|---|---|

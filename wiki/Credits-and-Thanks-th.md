@@ -6,17 +6,17 @@ YA-MS ตั้งอยู่บนผลงานของนักวิท�
 
 ## แหล่งอ้างอิงหลัก
 
-**Costantino Cerrotta IC8TEM** และ **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (บทความ เวอร์ชัน 7) สิ่งที่นำมาจากบทความนี้: ความสูงของรอยดาวตกประมาณ 90 km รัศมีโลก สูตรมุมเงย โซนร่วม Hot A / Hot B และ side-scatter ค่าอ้างอิงการสูญเสียตามเส้นทาง สัญญาณต่ำสุด และระยะเวลา ping ของ IARU
+**Costantino Cerrotta IC8TEM** และ **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (บทความ เวอร์ชัน 7) สิ่งที่นำมาจากบทความนี้: ความสูงของรอยดาวตกประมาณ 90 km รัศมีโลก สูตรมุมเงย โซนร่วม Hot A / Hot B และ side-scatter ค่าอ้างอิงการลดทอนของเส้นทาง สัญญาณต่ำสุด และระยะเวลา ping ของ IARU
 
 ## นักวิทยุสมัครเล่น
 
 | ผู้ใด | สิ่งที่นำมาใช้ใน YA-MS |
 |---|---|
-| **OH5IY** Ilkka Yrjölä | MS-Soft: แนวคิดเรื่องประสิทธิภาพของฝนดาวตก การสูญเสียตามเส้นทางเฉลี่ย 200 dB |
+| **OH5IY** Ilkka Yrjölä | MS-Soft: แนวคิดเรื่องประสิทธิภาพของฝนดาวตก การลดทอนของเส้นทางเฉลี่ย 200 dB |
 | **DL5MCG** Wilhelm Rauh | MCG_MS, MS Efficiency Calculator (การเปรียบเทียบ) |
-| **SM6FHZ** Ingolf | กฎ λ³ / λ² ระหว่างแบนด์ ทิศที่ดีที่สุด (az ของจุดเรเดียนท์ ±90°) จุดกึ่งกลาง ระยะที่ใช้ได้บน 432 MHz (VUSHF 2025) RadiantCalc |
+| **SM6FHZ** Ingolf | กฎ λ³ / λ² ระหว่างย่านความถี่ ทิศที่ดีที่สุด (az ของจุดเรเดียนต์ ±90°) จุดกึ่งกลาง ระยะที่ใช้ได้บน 432 MHz (VUSHF 2025) RadiantCalc |
 | **DJ5HG** Klaus von der Heide | QTFGUI และคู่มือ: กฎการกระเจิงแบบกรวย การเลือก HOT-A / HOT-B กรณีทดสอบ Hamburg – Barcelona |
-| **DH9GCD** และ **DF5HC** Jens | สูตรทิศที่ดีที่สุด sin El · cos El · sin(P − Az) จุดเรเดียนท์ที่ใช้ได้ 20–70° ระยะที่ดีที่สุด 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
+| **DH9GCD** และ **DF5HC** Jens | สูตรทิศที่ดีที่สุด sin El · cos El · sin(P − Az) จุดเรเดียนต์ที่ใช้ได้ 20–70° ระยะที่ดีที่สุด 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | ดาวตกประปราย (รายงานโดย DF5HC) |
 | **DL6WU** Günter Hoch | เส้นโค้งอัตราขยายเทียบกับความยาวบูมของสายอากาศยากิแบบยาว (รายงานโดย **W8IO**) |
 | **W4RNL** L.B. Cebik | แบบจำลอง NEC ของสายอากาศยากิ DL6WU และ VK3AUU ที่ใช้ตรวจสอบเส้นโค้งอัตราขยายและแก้ไขโลบแนวนอน |
@@ -24,7 +24,7 @@ YA-MS ตั้งอยู่บนผลงานของนักวิท�
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | มุมเงยที่เหมาะสมที่สุดและการเบี่ยงสายอากาศ (ตารางใน AMS Bulletin 203) |
 | **LZ2HV** | MSHV: ค่าอ้างอิงของ Hot A / Hot B |
-| **GM8JBJ** John | การสูญเสียตามเส้นทางของ meteor scatter รายงานค่า 172–190 dB ที่คำนวณโดย **G4BAO** John Worsnop |
+| **GM8JBJ** John | การลดทอนของเส้นทางของ meteor scatter รายงานค่า 172–190 dB ที่คำนวณโดย **G4BAO** John Worsnop |
 | **PE1ITR** Rob Hardenberg | เรดาร์ GRAVES: เซกเตอร์ ขั้น และจังหวะเวลาของลำคลื่น (DUBUS 4/2007, ปรับปรุง 2021) |
 | **DL1DBC** | Swan Meteor Skyview ค่าอ้างอิงสำหรับกราฟิกโดมท้องฟ้า |
 | **IZ5TEK** Rossano | ข้อมูลฝนดาวตก (scattertek) |
@@ -34,7 +34,7 @@ YA-MS ตั้งอยู่บนผลงานของนักวิท�
 
 | ผู้ใด | ข้อมูล |
 |---|---|
-| **International Meteor Organization (IMO)** | Meteor Shower Calendars 2026 และ 2027: จุดเรเดียนท์ ZHR จุดสูงสุด Antihelion Source |
+| **International Meteor Organization (IMO)** | Meteor Shower Calendars 2026 และ 2027: จุดเรเดียนต์ ZHR จุดสูงสุด Antihelion Source |
 | **Leipzig University (LIM) และ IAP Kühlungsborn** | เรดาร์ดาวตก SKiYMET ที่ Collm: ฟลักซ์แบบสดและความสูงของรอยดาวตก |
 | **Sodankylä Geophysical Observatory (SGO)** | ภาพจากเรดาร์ดาวตก Sodankylä |
 | **RMOB** – Radio Meteor Observatories On Line (Pierre Terrier) และผู้สังเกตการณ์ | จำนวนดาวตกทางวิทยุรายชั่วโมง ผู้สังเกตการณ์ GRAVES บน 143.050 MHz |

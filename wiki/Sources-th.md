@@ -12,21 +12,21 @@
 
 | แหล่งอ้างอิง | ใช้สำหรับ |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (บทความภาษาอิตาลี เวอร์ชัน 7) | รอยดาวตกในชั้น E ที่ประมาณ 90 km (เรดาร์ SKiYMET) รัศมีโลก 6372.7955 km สูตรมุมเงย Hot A / Hot B, side-scatter 10–30° การสูญเสียตามเส้นทาง สัญญาณต่ำสุด −130 dBm ระยะเวลา ping ของ IARU จุดสูงสุดของดาวตกประปรายที่ 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (บทความภาษาอิตาลี เวอร์ชัน 7) | รอยดาวตกในชั้น E ที่ประมาณ 90 km (เรดาร์ SKiYMET) รัศมีโลก 6372.7955 km สูตรมุมเงย Hot A / Hot B, side-scatter 10–30° การลดทอนของเส้นทาง สัญญาณต่ำสุด −130 dBm ระยะเวลา ping ของ IARU จุดสูงสุดของดาวตกประปรายที่ 06 UTC |
 
 ## ประสิทธิภาพ: การคำนวณและทฤษฎี
 
 | แหล่งอ้างอิง | ใช้สำหรับ |
 |---|---|
-| Ilkka Yrjölä **OH5IY** – MS-Soft, www.kolumbus.fi/oh5iy (เว็บไซต์เก่า) | แนวคิดเรื่องประสิทธิภาพของฝนดาวตก การสูญเสียตามเส้นทางเฉลี่ย 200 dB |
+| Ilkka Yrjölä **OH5IY** – MS-Soft, www.kolumbus.fi/oh5iy (เว็บไซต์เก่า) | แนวคิดเรื่องประสิทธิภาพของฝนดาวตก การลดทอนของเส้นทางเฉลี่ย 200 dB |
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | ประสิทธิภาพบนทิศคงที่สี่ทิศ (การเปรียบเทียบ) |
-| Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, พฤษภาคม 2025 | กฎ λ³ และ λ² จุดกึ่งกลาง ทิศที่ดีที่สุด (az ของจุดเรเดียนท์ ±90°) |
+| Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, พฤษภาคม 2025 | กฎ λ³ และ λ² จุดกึ่งกลาง ทิศที่ดีที่สุด (az ของจุดเรเดียนต์ ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | การสะท้อนแบบสเปคูลาร์ สมการรอยดาวตกแบบ underdense |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (จาก Kaiser & Closs 1952) | การสูญเสียตามเส้นทาง 172–190 dB ที่คำนวณโดย John Worsnop **G4BAO** (วิทยานิพนธ์ปริญญาเอก) น้อยลงประมาณ 6 dB สำหรับรอยดาวตกที่อยู่แนวเดียวกับเส้นทาง ไม่ได้ใช้ตาราง 182 dB ของหน้านั้นเอง (ดูที่ [เรขาคณิตและการสูญเสียตามเส้นทาง](Geometry-and-Path-Loss-th)) |
-| Shelby **W8WN** – qsl.net/w8wn/hscw (ตารางการเบี่ยงใน AMS Bulletin 203) | มุมเงยและการเบี่ยงที่เหมาะสมที่สุด ฮอตสปอต 50–150 km |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (จาก Kaiser & Closs 1952) | การลดทอนของเส้นทาง 172–190 dB ที่คำนวณโดย John Worsnop **G4BAO** (วิทยานิพนธ์ปริญญาเอก) น้อยลงประมาณ 6 dB สำหรับรอยดาวตกที่อยู่แนวเดียวกับเส้นทาง ไม่ได้ใช้ตาราง 182 dB ของหน้านั้นเอง (ดูที่ [เรขาคณิตและการลดทอน](Geometry-and-Path-Loss-th)) |
+| Shelby **W8WN** – qsl.net/w8wn/hscw (ตารางการเบี่ยงใน AMS Bulletin 203) | มุมเงยและการเบี่ยงที่เหมาะสมที่สุด hot spot 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (การเปรียบเทียบ อยู่ในคู่มือ) |
 | Klaus von der Heide **DJ5HG** – QTFGUI และคู่มือ "QTFGUI Help" (2007) | กฎการกระเจิงแบบกรวย กรณีทดสอบ Hamburg – Barcelona ช่วง Quadrantids ที่ใช้ตรวจสอบแบบจำลอง |
-| Jens **DF5HC** – *"Meteorscatter auf UKW"*, การประชุม DARC มกราคม 2018 | สูตรทิศที่ดีที่สุดของ **DH9GCD** การกระเจิงแบบกรวยและการเลือก HOT-A / HOT-B ของ DJ5HG จุดเรเดียนท์ที่ใช้ได้ 20–70° ระยะที่ดีที่สุด 1300–1500 km ดาวตกประปรายตาม KB0VUK |
+| Jens **DF5HC** – *"Meteorscatter auf UKW"*, การประชุม DARC มกราคม 2018 | สูตรทิศที่ดีที่สุดของ **DH9GCD** การกระเจิงแบบกรวยและการเลือก HOT-A / HOT-B ของ DJ5HG จุดเรเดียนต์ที่ใช้ได้ 20–70° ระยะที่ดีที่สุด 1300–1500 km ดาวตกประปรายตาม KB0VUK |
 | Günter Hoch **DL6WU** – อัตราขยายเทียบกับความยาวบูมของยากิแบบยาว รายงานโดย W8IO (w8io.com) | G(dBi) = 7.773 log(L/λ) + 11.43 |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (ยากิ VK3AUU ของ David Tanner) | การจำลอง NEC ที่ใช้ตรวจสอบเส้นโค้งอัตราขยายและแก้ไขโลบแนวนอน (0.93 × Kraus) |
@@ -37,7 +37,7 @@
 
 | แหล่งอ้างอิง | ใช้สำหรับ |
 |---|---|
-| International Meteor Organization – Meteor Shower Calendar 2026 (และ 2027), www.imo.net, ตารางที่ 5, 6 และ 7 | จุดเรเดียนท์ λ max, v, r, ZHR, Antihelion Source วันที่และเวลาจุดสูงสุด |
+| International Meteor Organization – Meteor Shower Calendar 2026 (และ 2027), www.imo.net, ตารางที่ 5, 6 และ 7 | จุดเรเดียนต์ λ max, v, r, ZHR, Antihelion Source วันที่และเวลาจุดสูงสุด |
 | Rossano **IZ5TEK** – www.aripisa.it/images/pdf/scattertek.pdf | ข้อมูลฝนดาวตก |
 
 ## ข้อมูลเรดาร์แบบสด
@@ -67,6 +67,6 @@ G3WZT, DH8BQA, geekshed.co.uk, คู่มือ WSJT-X, WB2FKO (ping), IU6GIR 
 
 ## ค่าคงที่พร้อมแหล่งอ้างอิง
 
-`data/regole_sperimentali.csv` แสดงรายการค่าคงที่และกฎที่โปรแกรมใช้ แต่ละรายการพร้อมแหล่งอ้างอิง (ความสูงทั่วไปของรอยดาวตก ช่วงความสูง รัศมีโลก กฎ λ³ / λ² ระยะเวลา ping ของ IARU การสูญเสียตามเส้นทาง สัญญาณต่ำสุด EIRP โดยประมาณ จุดสูงสุดของดาวตกประปราย ระยะที่ใช้ได้ที่ 432 MHz ทิศที่ดีที่สุด มุมเงยสูงสุดที่ใช้ได้ของจุดเรเดียนท์ที่ 432 MHz, side-scatter)
+`data/regole_sperimentali.csv` แสดงรายการค่าคงที่และกฎที่โปรแกรมใช้ แต่ละรายการพร้อมแหล่งอ้างอิง (ความสูงทั่วไปของรอยดาวตก ช่วงความสูง รัศมีโลก กฎ λ³ / λ² ระยะเวลา ping ของ IARU การลดทอนของเส้นทาง สัญญาณต่ำสุด EIRP โดยประมาณ จุดสูงสุดของดาวตกประปราย ระยะที่ใช้ได้ที่ 432 MHz ทิศที่ดีที่สุด มุมเงยสูงสุดที่ใช้ได้ของจุดเรเดียนต์ที่ 432 MHz, side-scatter)
 
 > ข้อมูลเรดาร์เป็นของสถาบันเจ้าของ ต้องขออนุญาตก่อนดึงข้อมูลโดยอัตโนมัติในโปรแกรมที่เผยแพร่

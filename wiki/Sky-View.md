@@ -8,7 +8,7 @@
 
 This sub-tab (the sky dome of earlier versions) puts on one screen **where** the useful trails are now and **where to point**. On the left the **plan view** of the path; on the right the shower list, a small sky dome with the radiants, the text of the calculation and the **section** seen from your antenna. Everything refers to the moment chosen with *Calculation date (UTC)* and the *Hours (−12 to +36 h)* slider (real time by default, 15-minute steps).
 
-A **strip above the plan view** sums up the calculation for that moment: date and time (*now* or hours from now), the **path index Σ ZHR×η**, the **most useful shower** with its ZHR and efficiency, the number of showers above the horizon and the **recommended Hot** with its azimuth.
+A **strip above the plan view** sums up the calculation for that moment: date and time (*now* or hours from now), the **path index Σ ZHR×η**, the **most useful shower** with its ZHR and efficiency (also in dB relative to the DJ5HG reference, see [Efficiency calculation](Efficiency-Calculation)), the number of showers above the horizon and the **recommended Hot** with its azimuth.
 
 In the small sky dome an **orange line** through the zenith always gives the **right antenna directions**, orthogonal to the drift of the selected shower (or of the most favourable one): radiant azimuth ±90°, labelled *antenna NNN°* at both ends, with the ±45° tolerance as thin lines. Short orange ticks on the rim give the orthogonal directions of the other useful showers.
 
@@ -19,7 +19,7 @@ A map of Europe seen from above (**E to the right**) with a degree scale around 
 | Element | Drawing |
 |---|---|
 | Path / DX | Green line from your station to the DX station (always the real great-circle path between the locators) |
-| **Hot A / Hot B** | Points 150 km (adjustable) either side of the midpoint, perpendicular to the path. **Red = recommended**, **pink = outside the antenna lobe**, **grey = inside the lobe** (with a warning) |
+| **Hot A / Hot B** | Points either side of the midpoint, perpendicular to the path, at the distance given by the AMS offset table (or entered by hand). **Red = recommended**, **pink = outside the antenna lobe**, **grey = inside the lobe** (with a warning) |
 | Antenna lobe | The −3 dB horizontal lobe around the antenna azimuth (antenna always pointed at the DX), labelled *lobe …°* |
 | Common zone limits | Faint *lim. A* / *lim. B* points and the two circles where each station's horizon meets the E layer (see [Geometry](Geometry-and-Path-Loss#common-zone-limits)) |
 | Shower drift | **Yellow line**: direction in which the selected shower (or the most favourable one) sweeps the sky, i.e. the radiant azimuth |
@@ -95,6 +95,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 |---|---|
 | **WARNING: Hot A (and/or Hot B) falls inside the antenna lobe …** | The hot spot is within ±θ/2 of the antenna azimuth (θ = horizontal −3 dB lobe): with this heading it is already covered. Shown in grey on the map. The recommended Hot stays red. |
 | **RADIANT TOO HIGH (above 70°)** | A useful radiant is above 70° from your station: trails fall almost vertically and reflect little towards the path (DF5HC, DH9GCD). The same hours are marked ↑ in the [hourly table](Efficiency-Calculation#hourly-table). |
+| **LOW RADIANT ALONG THE PATH** | An active radiant is below 20° and within 30° of the path direction. The calculated efficiency stays low (cautious), but DJ5HG expects rare, strong reflections from grazing trails aligned with the path (Hamburg–Narvik, Quadrantids, about 19 UTC): worth listening. |
 | *No common E-layer zone* | The path is longer than twice the range at trail height: the two stations do not see a common part of the E layer (single hop impossible). |
 | *No recommended Hot* | Almost no active shower at this time. |
 

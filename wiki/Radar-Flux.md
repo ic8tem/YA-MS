@@ -61,7 +61,7 @@ If the scale of the height chart changes, the program warns: *height statistics 
 N(f) = N_{Collm}(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k},\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
 ```
 
-Experimental rules by **SM6FHZ** (VUSHF 2025): number and intensity of reflections scale with λ³, duration with λ²; the λ³ dependence is the same as in McKinley's underdense equation. The IARU Region 1 maximum ping duration is shown too (1000 ms at 50 MHz, 500 ms at 70 MHz, 100 ms at 144 MHz, 13 ms at 432 MHz). Values are indicative, to compare with experience on the air. The station factor K and the comparison with RMOB are in [Experimental forecasts](Experimental-Forecasts).
+Experimental rules by **SM6FHZ** (VUSHF 2025): number and intensity of reflections scale with λ³, duration with λ² (in McKinley λ³ is the power of one trail; the number of trails scales about as λ^1.5, and in forward scatter durations also grow with sec²φ: see [Experimental forecasts](Experimental-Forecasts)). The IARU Region 1 maximum ping duration is shown too (1000 ms at 50 MHz, 500 ms at 70 MHz, 100 ms at 144 MHz, 13 ms at 432 MHz). Values are indicative, to compare with experience on the air. The station factor K and the comparison with RMOB are in [Experimental forecasts](Experimental-Forecasts).
 
 ## Offline
 

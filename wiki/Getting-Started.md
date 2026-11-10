@@ -26,7 +26,7 @@ Above the tabs there are three rows of controls, valid for all tabs. The **Contr
 | **Trail height km** + **from radar** | Height of the meteor trails (default 90 km). With *from radar* ticked, the most frequent height (mode) measured by the Collm radar is used; see [Radar flux](Radar-Flux). |
 | **Lobe elevation °** | Lowest elevation of your antenna lobe (0° = horizon). Only points of the E layer that both stations see above this elevation are used. |
 | **Yagi antenna: boom m** | Boom length of your Yagi. The program shows the length in λ, the gain (DL6WU curve) and the −3 dB lobe, horizontal and vertical; see [Geometry and path loss](Geometry-and-Path-Loss#antenna-gain-and-lobe). Below 2 λ the estimate is rough. |
-| **Hot spot from midpoint km** | Distance of Hot A and Hot B from the midpoint, 30–400 km (default 150 km, as AMS Bulletin 203 / W8WN / MSHV). |
+| **Hot spot from midpoint km** + **auto (AMS)** | Distance of Hot A and Hot B from the midpoint. With *auto (AMS)* ticked (default) it follows the antenna-offset table by J. Richardson (AMS) quoted by DJ5HG: 13° at 1000 km, 11° at 1250 km, 10° at 1500 and 2000 km (about 115, 121, 132 and 176 km from the midpoint). Untick it to enter 30–400 km by hand (MSHV uses 150 km). |
 
 **Row 3 – time**
 

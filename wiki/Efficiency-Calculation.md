@@ -53,7 +53,7 @@ All steps are in the [calculation manual](Efficiency-Explanation) (`doc/YA-MS_ma
 \hat{e}_A = \frac{A-P}{|A-P|},\qquad \hat{e}_B = \frac{B-P}{|B-P|},\qquad \hat{n} = \frac{\hat{e}_A+\hat{e}_B}{|\hat{e}_A+\hat{e}_B|},\qquad \hat{s}\cdot\hat{n} = 0
 ```
 
-The same law underlies QTFGUI by DJ5HG (cone scattering). The condition is accepted with a Gaussian tolerance σ = 0.05 rad (about 3°) – *choice of the program*:
+The same law underlies QTFGUI by DJ5HG and his text *"Die Geometrie von Meteorscatterverbindungen"* (2004): the trail scatters on a cone with the trail as axis, and only a receiver on the cone hears it. For an ideal trail the cone wall is very thin (a radiator thousands of wavelengths long); the program accepts the condition with a Gaussian tolerance σ = 0.05 rad (about 3°), which stands for what the ideal cone does not see: the spread of shower radiants (0.3–1.4° measured by GMN), trails bent by the wind and their finite length – *choice of the program*:
 
 ```math
 S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
@@ -67,6 +67,8 @@ S_P = \exp\left(-\frac{(\hat{s}\cdot\hat{n})^2}{2\sigma^2}\right)
 
 The number of meteors reaching a point is proportional to the sine of the radiant elevation there (ŝ·û_P), the same correction the IMO uses for ZHR.
 
+**Option "Longer trails with a low radiant (DJ5HG)"** (checkbox above the chart, off by default, tooltip): DJ5HG notes that with a low radiant fewer meteors fall per km² but the trails are longer (up to 100 km useful) and meet the reflection law more often. With the option on, the weight becomes min(sin El, 15/100): the useful layer thickness, 15 km, divided by the sine of the elevation gives the trail length, capped at 100 km. Above about 9° the two effects cancel. Off, the calculation stays cautious.
+
 **3. Sum and percentage.** Points every 15 km at the trail height, only where both stations see them above the lobe elevation (*choice*). 100 % is the most favourable radiant position for that path:
 
 ```math
@@ -74,6 +76,8 @@ F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat
 ```
 
 F is computed once per path on a grid of directions (azimuth every 5°, elevation every 2.5°) and interpolated.
+
+**Efficiency in dB (DJ5HG reference).** The percentage is relative to the best radiant position for that path only. To compare different paths the program also gives the efficiency in dB relative to the fixed reference of DJ5HG: 0 dB is the maximum of a 1000 km north–south path across the equator with the radiant on the celestial equator at the equinox, computed with the same height and weights. DJ5HG gives his values as better than 6 dB.
 
 **4. Side and index.**
 
@@ -85,7 +89,9 @@ The letter in the table is the side with the larger fraction. *Choices of the pr
 
 ## DH9GCD comparison
 
-An independent check: the best-direction formula by **DH9GCD**, reported by **DF5HC** (DARC conference, January 2018), with El and Az the radiant elevation and azimuth seen from your station and P the azimuth of the DX station:
+The primary sources for the best direction are Eshleman & Mlodnosky and Meeks & James (Proc. IRE, 1957), Hines (1955) and its experimental check by Forsyth, Hines & Vogan (1955): only radiants on the half-circle of sky perpendicular to the bisector of the scattering angle are useful, the trail number grows with sin El, and near the midpoint the useful trails fall at about H·tan El to the side, on the side opposite the radiant. DJ5HG adds a reservation: with a **low** radiant right along the path, McKinley's formula gives strong signals (Hamburg–Narvik, Quadrantids, about 19 UTC), so "radiant aligned with the path = almost zero" holds for a high radiant only; the program stays cautious and shows the warning *LOW RADIANT ALONG THE PATH*.
+
+An independent check: the best-direction formula by **DH9GCD**, reported by **DF5HC** (DARC conference, January 2018) – it has no published primary source – with El and Az the radiant elevation and azimuth seen from your station and P the azimuth of the DX station:
 
 ```math
 E = \sin El\,\cos El\,\sin(P-Az),\qquad E\% = 200\,\sin El\,\cos El\,|\sin(P-Az)|
@@ -101,4 +107,4 @@ It is maximum with the radiant at 45° and broadside to the path. DF5HC consider
 | QTFGUI by DJ5HG, Hamburg JO53IM – Barcelona, Quadrantids, 4 January (example of its manual) | QTFGUI: 07:00 heading 252°, −8 dB; 08:00 no reflection zone; 09:00 heading 168°, −4 dB. YA-MS (height 102 km as QTFGUI): 07:00 241°, −5.4 dB; 08:00 0.6 % (−22 dB); 09:00 161°, −4.0 dB. DH9GCD: 26 %, 2 %, 32 %. All three methods see the 08:00 hole, with the radiant almost at the zenith |
 | Sampling every 5 km instead of 15 km | percentages change by less than 0.3 points |
 
-> The scale used by OH5IY and MCG_MS is not known in detail (the MS-Soft manuals are not available): compare the percentages with those programs before treating them as equivalent. The model considers only underdense trails, with isotropic antennas; overdense bursts and sporadic background are not in the efficiency (the sporadic background is represented by the radar flux).
+> The MS-Soft 5.2 documentation defines OH5IY's efficiency as a relative index for underdense trails only, with two factors (radiant elevation, best about 45°, and angle to the path, best 90°) and a minimum raised by hand to 20 % for overdense trails; the formula is not published. MCG_MS computes it for four fixed directions and, with the DX locator, for the real path. The model considers only underdense trails, with isotropic antennas; overdense bursts and sporadic background are not in the efficiency (the sporadic background is represented by the radar flux).

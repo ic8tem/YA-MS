@@ -69,15 +69,15 @@ If 1 − |p0|² < 0 the path is longer than 2·d_H and the stations see **no com
 
 ## Hot A and Hot B
 
-**Source:** reflections concentrate in two zones ("hot spots") about **50–150 km either side of the midpoint**. This is the basis of the antenna-offset table of AMS Bulletin No. 203, taken up by W8WN (10° offset for 1500 and 1800 km paths); MSHV by LZ2HV uses the same criterion.
+**Source:** reflections of sporadic meteors concentrate in two zones ("hot spots") either side of the midpoint. J. Richardson (AMS), in the table quoted by DJ5HG (*Die Geometrie von Meteorscatterverbindungen*, 2004), gives the antenna offset from the direct heading: **13° at 1000 km, 11° at 1250 km, 10° at 1500 and 2000 km**. AMS Bulletin No. 203, taken up by W8WN, gives 10° at 1500 and 1800 km.
 
-**Choice:** Hot A and Hot B are the points at distance s from the midpoint M, perpendicular to the path (s = 150 km, adjustable 30–400 km); A to the left looking from your station to the DX, B to the right [21]. The offset seen from the station is about [22]:
+**Choice:** Hot A and Hot B are the points at distance s from the midpoint M, perpendicular to the path. With *auto (AMS)* ticked (default) s comes from the offset of Richardson's table, interpolated linearly (13° below 1000 km, 10° above 2000 km): s = (D/2)·tan(offset). Unticked, s is entered by hand, 30–400 km (MSHV uses 150 km); A to the left looking from your station to the DX, B to the right [21]. The offset seen from the station is about [22]:
 
 ```math
 \Delta Az_{hot} \approx \arctan\frac{s}{D/2}
 ```
 
-**Check:** JN70CN–IN78UO, D = 1710 km: 6.7° with s = 100 km, **10.0° with s = 150 km** (same as MSHV and AMS/W8WN), 13.2° with s = 200 km.
+**Check:** with the AMS table, 1000 km → 13°, s ≈ 115 km; 1250 km → 11°, s ≈ 121 km; 1500 km → 10°, s ≈ 132 km; 2000 km → 10°, s ≈ 176 km. JN70CN–IN78UO (1710 km) → 10°, s ≈ 151 km, the same as the 150 km used before and by MSHV; on short paths the table brings the hot spots closer to the midpoint.
 
 ## Underdense path loss
 

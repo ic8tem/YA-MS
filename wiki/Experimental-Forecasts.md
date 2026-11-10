@@ -28,10 +28,10 @@ The orange line under the controls shows the rule with the current numbers, e.g.
 ## From the radar to the amateur band
 
 ```math
-N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}
+N(f) = N(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{k} K,\quad k = 3,\qquad \tau(f) = \tau(36{.}2\ \mathrm{MHz})\left(\frac{36{.}2}{f}\right)^{2}\sec^2\varphi
 ```
 
-**Source:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, May 2025 – number and intensity of reflections scale with **λ³**, duration with **λ²** (432 MHz is 14–15 dB below 144 MHz and lasts 1/9). **Check:** the λ³ dependence is the same as in McKinley's underdense equation. With k = 3, 1000 meteors/hour at Collm become about **16 reflections/hour at 144 MHz**; RMOB observers of GRAVES on 143.050 MHz usually count **20 to 140 echoes/hour** (RMOB bulletin, June 2018): the order of magnitude is compatible, and the difference is the station factor K. (Manual eq. 44–45.)
+**Source:** SM6FHZ, *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, May 2025 – number and intensity of reflections scale with **λ³**, duration with **λ²** (432 MHz is 14–15 dB below 144 MHz and lasts 1/9). **Check:** in McKinley's equation λ³ is the power of a single underdense trail, not the number of trails; for mass index 2 the number of trails above a fixed threshold scales about as λ^1.5 (IZ5TEK; OH5IY). The program keeps k = 3, SM6FHZ's experimental rule, and says so; the right k for your station comes from the RMOB comparison. In forward scatter the duration also grows with sec²φ (McKinley; OH5IY): Collm measures in backscatter (φ = 0), so the forecast multiplies by sec²φ at the path midpoint (×4 at 60°, ×8.5 at 70°, ×33 at 80°). With k = 3, 1000 meteors/hour at Collm become about **16 reflections/hour at 144 MHz**; RMOB observers of GRAVES on 143.050 MHz usually count **20 to 140 echoes/hour** (RMOB bulletin, June 2018): the order of magnitude is compatible, and the difference is the station factor K. (Manual eq. 44–45.)
 
 ## Next 24 hours
 

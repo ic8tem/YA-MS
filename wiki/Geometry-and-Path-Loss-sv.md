@@ -81,13 +81,15 @@ Om 1 − |p0|² < 0 är sträckan längre än 2·d_H och stationerna ser **ingen
 
 ## Underdens sträckdämpning
 
-**Källa:** McKinleys ekvation för underdensa spår (β = 0, sin α = 1), utan antennförstärkning; q = linjär elektrontäthet, r_e = klassiska elektronradien = 2,818·10⁻¹⁵ m, R1, R2 avstånden från spåret, φ halva spridningsvinkeln [36]:
+**Källa:** McKinleys ekvation och ITU-R-rekommendation P.843 för underdensa spår (sin α = 1), utan antennförstärkning; q = linjär elektrontäthet, r_e = klassiska elektronradien = 2,818·10⁻¹⁵ m, R1, R2 avstånden från spåret, φ halva spridningsvinkeln, β vinkeln mellan spåret och sträckans plan, a₁ faktor för initialradien med r₀ i m och h i km (P.843, ekv. 4 och 7) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Kontroll:** med q = 10¹⁴ elektroner/m på 144 MHz: **181–192 dB** mellan 600 och 2200 km, i linje med artikelns referenser på 144 MHz: **182 dB minimum** (GM8JBJ, från Kaiser & Closs 1952) och **200 dB i genomsnitt** (OH5IY).
+**Val:** länkbudgeten och dämpningstabellen använder β = 90° (spår som korsar sträckans plan, det minst gynnsamma fallet: försiktigt värde) och länkbudgeten visar även det bästa fallet, β = 0. r₀ tas vid medelhöjden för ekon vid frekvensen, h = 124 − 17 log f (P.843, ekv. 15): 0,76 m vid 95 km för 50 MHz, 0,40 m vid 87 km för 144 MHz, 0,21 m vid 79 km för 432 MHz. Över 1000 km är a₁ 0,2 dB på 50 MHz, 0,6 dB på 144 MHz och 1,4 dB på 432 MHz (2,9 dB vid 600 km); vid DJ5HG:s fasta 102 km skulle den vara omkring 70 dB på 432 MHz, alltså inget eko alls.
+
+**Kontroll:** med q = 10¹⁴ elektroner/m, spår på 89,5 km och β = 0, på 144 MHz: **182–192 dB** mellan 600 och 2100 km (185 dB vid 1000 km), inom intervallet **172–190 dB** som John Worsnop **G4BAO** beräknade i sin doktorsavhandling, enligt GM8JBJ. Med β = 90° ökar dämpningen med 10 dB vid 600 km, 13 dB vid 1000 km och 16 dB vid 2100 km; OH5IY:s **medelvärde på 200 dB** ligger mellan de två fallen. De 182 dB i GM8JBJ:s tabell är ingen bekräftelse: tabellen anger ingen frekvens, dess 86,4 dB per delsträcka är fritt-rum-dämpningen över 500 km vid 1 MHz (termen 20 log f saknas: 129,6 dB på 144 MHz) och dess poster summerar till 163,8 dB, inte 182; sidan säger varken "minimum" eller "144 MHz".
 
 ## Länkbudget
 

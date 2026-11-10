@@ -81,13 +81,15 @@ Hvis 1 − |p0|² < 0, er strækningen længere end 2·d_H, og stationerne ser *
 
 ## Dæmpning for underdense spor
 
-**Kilde:** McKinleys ligning for underdense spor (β = 0, sin α = 1), antenneforstærkning ikke medregnet; q = lineær elektrontæthed, r_e = klassisk elektronradius = 2,818·10⁻¹⁵ m, R1, R2 afstande fra sporet, φ halvdelen af spredningsvinklen [36]:
+**Kilde:** McKinleys ligning og ITU-R-anbefaling P.843 for underdense spor (sin α = 1), antenneforstærkning ikke medregnet; q = lineær elektrontæthed, r_e = klassisk elektronradius = 2,818·10⁻¹⁵ m, R1, R2 afstande fra sporet, φ halvdelen af spredningsvinklen, β vinklen mellem sporet og strækningens plan, a₁ faktor for startradius med r₀ i m og h i km (P.843, lign. 4 og 7) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Kontrol:** med q = 10¹⁴ elektroner/m ved 144 MHz: **181–192 dB** mellem 600 og 2200 km, i overensstemmelse med artiklens referencer ved 144 MHz: **182 dB minimum** (GM8JBJ, efter Kaiser & Closs 1952) og **200 dB gennemsnit** (OH5IY).
+**Valg:** linkbudgettet og dæmpningstabellen bruger β = 90° (spor, der krydser strækningens plan, det mindst gunstige tilfælde: forsigtig værdi), og linkbudgettet viser også det bedste tilfælde, β = 0. r₀ tages ved den gennemsnitlige ekkohøjde for frekvensen, h = 124 − 17 log f (P.843, lign. 15): 0,76 m ved 95 km for 50 MHz, 0,40 m ved 87 km for 144 MHz, 0,21 m ved 79 km for 432 MHz. Over 1000 km er a₁ 0,2 dB ved 50 MHz, 0,6 dB ved 144 MHz og 1,4 dB ved 432 MHz (2,9 dB ved 600 km); ved DJ5HG's faste 102 km ville den være omkring 70 dB ved 432 MHz, dvs. slet intet ekko.
+
+**Kontrol:** med q = 10¹⁴ elektroner/m, spor i 89,5 km og β = 0, ved 144 MHz: **182–192 dB** mellem 600 og 2100 km (185 dB ved 1000 km), inden for intervallet **172–190 dB**, som John Worsnop **G4BAO** har beregnet i sin ph.d.-afhandling, som gengivet af GM8JBJ. Med β = 90° vokser dæmpningen med 10 dB ved 600 km, 13 dB ved 1000 km og 16 dB ved 2100 km; OH5IY's **gennemsnit på 200 dB** ligger mellem de to tilfælde. De 182 dB i GM8JBJ's tabel er ikke en bekræftelse: tabellen angiver ingen frekvens, dens 86,4 dB pr. delstrækning er fritrumsdæmpningen over 500 km ved 1 MHz (leddet 20 log f mangler: 129,6 dB ved 144 MHz), og dens poster summerer til 163,8 dB, ikke 182; siden siger hverken "minimum" eller "144 MHz".
 
 ## Linkbudget
 

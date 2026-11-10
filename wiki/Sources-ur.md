@@ -12,7 +12,7 @@
 
 | ماخذ | کس کے لیے استعمال ہوا |
 |---|---|
-| Costantino Cerrotta **IC8TEM**، Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (اطالوی زبان میں مضمون، ورژن 7) | E تہہ میں تقریباً 90 km پر لکیریں (SKiYMET ریڈار)، زمین کا رداس 6372.7955 km، ارتفاع کا فارمولا، Hot A / Hot B، side-scatter 10–30°، راستے کا نقصان 182–200 dB، کم از کم سگنل −130 dBm، IARU پنگ دورانیے، 06 UTC پر منتشر شہابیوں کا عروج |
+| Costantino Cerrotta **IC8TEM**، Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (اطالوی زبان میں مضمون، ورژن 7) | E تہہ میں تقریباً 90 km پر لکیریں (SKiYMET ریڈار)، زمین کا رداس 6372.7955 km، ارتفاع کا فارمولا، Hot A / Hot B، side-scatter 10–30°، راستے کا نقصان، کم از کم سگنل −130 dBm، IARU پنگ دورانیے، 06 UTC پر منتشر شہابیوں کا عروج |
 
 ## کارکردگی: حساب اور نظریہ
 
@@ -22,7 +22,7 @@
 | Wilhelm Rauh **DL5MCG** – MCG_MS، MS Efficiency Calculator v1.61، qsl.net/dl5mcg | چار مقررہ سمتوں پر کارکردگی (موازنہ) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*، 45th Nordic VUSHF، مئی 2025 | λ³ اور λ² اصول، وسطی نقطہ، بہترین سمت (ریڈیئنٹ az ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*، McGraw-Hill، 1961 | آئینہ نما انعکاس، کم کثافت لکیر کی مساوات |
-| John **GM8JBJ** – Meteor scatter path loss، hamradio.engineering (Kaiser & Closs 1952 سے) | 182 dB کم از کم راستے کا نقصان |
+| John **GM8JBJ** – Meteor scatter path loss، hamradio.engineering (Kaiser & Closs 1952 سے) | John Worsnop **G4BAO** کا حساب کردہ 172–190 dB راستے کا نقصان (PhD مقالہ)، راستے کی سیدھ والی لکیروں کے لیے تقریباً 6 dB کم؛ صفحے کی اپنی 182 dB والی جدول استعمال نہیں ہوتی (دیکھیں [جیومیٹری اور راستے کا نقصان](Geometry-and-Path-Loss-ur)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (AMS Bulletin 203 کا انحراف جدول) | بہترین ارتفاع اور انحراف، hot spots 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (موازنہ؛ دستی کتابچے میں) |
 | Klaus von der Heide **DJ5HG** – QTFGUI اور "QTFGUI Help" دستی کتابچہ (2007) | مخروطی انتشار کا قانون (cone scattering)؛ ماڈل کی جانچ کے لیے Hamburg – Barcelona کواڈرانٹڈز کی مثال |

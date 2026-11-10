@@ -81,13 +81,15 @@ Kui 1 − |p0|² < 0, on trass pikem kui 2·d_H ja jaamad **ei näe E-kihi ühis
 
 ## Alatiheda jälje sumbumine
 
-**Allikas:** McKinley võrrand alatihedate jälgede jaoks (β = 0, sin α = 1), antennivõimendused välja arvatud; q = elektronide joontihedus, r_e = elektroni klassikaline raadius = 2,818·10⁻¹⁵ m, R1, R2 kaugused jäljest, φ pool hajumisnurgast [36]:
+**Allikas:** McKinley võrrand ja ITU-R soovitus P.843 alatihedate jälgede jaoks (sin α = 1), antennivõimendused välja arvatud; q = elektronide joontihedus, r_e = elektroni klassikaline raadius = 2,818·10⁻¹⁵ m, R1, R2 kaugused jäljest, φ pool hajumisnurgast, β nurk jälje ja trassi tasandi vahel, a₁ algraadiuse tegur, kus r₀ on meetrites ja h kilomeetrites (P.843, võrrandid 4 ja 7) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Kontroll:** q = 10¹⁴ elektroni/m korral sagedusel 144 MHz: **181–192 dB** vahemikus 600 kuni 2200 km, kooskõlas artikli viidetega 144 MHz kohta: **182 dB minimaalne** (GM8JBJ, Kaiser & Closs 1952 järgi) ja **200 dB keskmine** (OH5IY).
+**Valik:** lingi eelarve ja sumbumiste tabel kasutavad β = 90° (jälg ristub trassi tasandiga, kõige ebasoodsam juhtum: ettevaatlik väärtus) ning eelarve näitab ka parimat juhtumit, β = 0. r₀ võetakse sageduse keskmisel kajakõrgusel, h = 124 − 17 log f (P.843, võrrand 15): 0,76 m 95 km juures 50 MHz jaoks, 0,40 m 87 km juures 144 MHz jaoks, 0,21 m 79 km juures 432 MHz jaoks. 1000 km trassil on a₁ 0,2 dB sagedusel 50 MHz, 0,6 dB sagedusel 144 MHz ja 1,4 dB sagedusel 432 MHz (2,9 dB 600 km juures); DJ5HG fikseeritud 102 km juures oleks see sagedusel 432 MHz umbes 70 dB, st kaja ei oleks üldse.
+
+**Kontroll:** q = 10¹⁴ elektroni/m, jäljed 89,5 km kõrgusel ja β = 0 korral sagedusel 144 MHz: **182–192 dB** vahemikus 600 kuni 2100 km (185 dB 1000 km juures), John Worsnopi **G4BAO** doktoritöös arvutatud vahemikus **172–190 dB**, nagu vahendab GM8JBJ. β = 90° korral kasvab sumbumine 10 dB võrra 600 km juures, 13 dB võrra 1000 km juures ja 16 dB võrra 2100 km juures; OH5IY **200 dB keskmine** jääb kahe juhtumi vahele. GM8JBJ tabeli 182 dB ei ole kinnitus: tabel ei anna sagedust, selle 86,4 dB lõigu kohta on vaba ruumi sumbumine 500 km peal sagedusel 1 MHz (liige 20 log f puudub: 129,6 dB sagedusel 144 MHz) ja selle read annavad kokku 163,8 dB, mitte 182; leht ei ütle ei „minimaalne“ ega „144 MHz“.
 
 ## Lingi eelarve
 

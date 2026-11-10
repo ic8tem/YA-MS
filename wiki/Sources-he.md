@@ -12,7 +12,7 @@
 
 | מקור | שימש עבור |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, ‏Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (מאמר באיטלקית, גרסה 7) | שובלים בשכבת E בגובה כ-90 km (מכ״ם SKiYMET), רדיוס כדור הארץ 6372.7955 km, נוסחת ההגבהה, Hot A / Hot B, פיזור צדי 10–30°, הנחתת נתיב 182–200 dB, אות מינימלי ‎−130 dBm, משכי פינג לפי IARU, שיא הספורדיים ב-06 UTC |
+| Costantino Cerrotta **IC8TEM**, ‏Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (מאמר באיטלקית, גרסה 7) | שובלים בשכבת E בגובה כ-90 km (מכ״ם SKiYMET), רדיוס כדור הארץ 6372.7955 km, נוסחת ההגבהה, Hot A / Hot B, פיזור צדי 10–30°, הנחתת נתיב, אות מינימלי ‎−130 dBm, משכי פינג לפי IARU, שיא הספורדיים ב-06 UTC |
 
 ## יעילות: חישוב ותאוריה
 
@@ -22,7 +22,7 @@
 | Wilhelm Rauh **DL5MCG** – MCG_MS, ‏MS Efficiency Calculator v1.61, ‏qsl.net/dl5mcg | יעילות על ארבעה כיוונים קבועים (השוואה) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, מאי 2025 | כללי λ³ ו-λ², נקודת אמצע, הכיוון הטוב ביותר (אזימוט הרדיאנט ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | החזרה ספקולרית, משוואת השובל התת-צפוף |
-| John **GM8JBJ** – Meteor scatter path loss, ‏hamradio.engineering (לפי Kaiser & Closs 1952) | הנחתת נתיב מינימלית 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss, ‏hamradio.engineering (לפי Kaiser & Closs 1952) | הנחתת נתיב 172–190 dB שחישב John Worsnop **G4BAO** (עבודת דוקטורט), כ-6 dB פחות לשובלים בקו הנתיב; הטבלה של העמוד עצמו (182 dB) אינה בשימוש (ראו [גאומטריה והנחתה](Geometry-and-Path-Loss-he)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (טבלת ההיסט של AMS Bulletin 203) | הגבהה והיסט מיטביים, נקודות חמות 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (השוואה; במדריך) |
 | Klaus von der Heide **DJ5HG** – QTFGUI והמדריך "QTFGUI Help" ‏(2007) | חוק הפיזור החרוטי; מקרה הבדיקה המבורג – ברצלונה בקוודרנטידים, ששימש לאימות המודל |

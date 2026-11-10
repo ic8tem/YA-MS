@@ -81,13 +81,15 @@ As 1 − |p0|² < 0 is die pad langer as 2·d_H en sien die stasies **geen gemee
 
 ## Onderdigte padverlies
 
-**Bron:** McKinley se vergelyking vir onderdigte spore (β = 0, sin α = 1), antennawins uitgesluit; q = lineêre elektrondigtheid, r_e = klassieke elektronradius = 2,818·10⁻¹⁵ m, R1, R2 afstande vanaf die spoor, φ die helfte van die verstrooiingshoek [36]:
+**Bron:** McKinley se vergelyking en ITU-R-aanbeveling P.843 vir onderdigte spore (sin α = 1), antennawins uitgesluit; q = lineêre elektrondigtheid, r_e = klassieke elektronradius = 2,818·10⁻¹⁵ m, R1, R2 afstande vanaf die spoor, φ die helfte van die verstrooiingshoek, β hoek tussen die spoor en die padvlak, a₁ beginradiusfaktor met r₀ in m en h in km (P.843, vgl. 4 en 7) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Kontrole:** met q = 10¹⁴ elektrone/m op 144 MHz: **181–192 dB** tussen 600 en 2200 km, in lyn met die artikel se verwysings op 144 MHz: **182 dB minimum** (GM8JBJ, volgens Kaiser & Closs 1952) en **200 dB gemiddeld** (OH5IY).
+**Keuse:** die skakelbegroting en die verliestabel gebruik β = 90° (spoor wat die padvlak kruis, die ongunstigste geval: versigtige waarde) en die skakelbegroting toon ook die beste geval, β = 0. r₀ word geneem by die gemiddelde eggohoogte vir die frekwensie, h = 124 − 17 log f (P.843, vgl. 15): 0,76 m by 95 km vir 50 MHz, 0,40 m by 87 km vir 144 MHz, 0,21 m by 79 km vir 432 MHz. Oor 1000 km is a₁ 0,2 dB op 50 MHz, 0,6 dB op 144 MHz en 1,4 dB op 432 MHz (2,9 dB by 600 km); by DJ5HG se vaste 102 km sou dit sowat 70 dB op 432 MHz wees, m.a.w. glad geen eggo nie.
+
+**Kontrole:** met q = 10¹⁴ elektrone/m, spore op 89,5 km en β = 0, op 144 MHz: **182–192 dB** tussen 600 en 2100 km (185 dB by 1000 km), binne die reeks van **172–190 dB** wat John Worsnop **G4BAO** in sy PhD-proefskrif bereken het, soos deur GM8JBJ gerapporteer. Met β = 90° neem die verlies toe met 10 dB by 600 km, 13 dB by 1000 km en 16 dB by 2100 km; die **gemiddelde van 200 dB** van OH5IY lê tussen die twee gevalle. Die 182 dB in GM8JBJ se tabel is nie 'n bevestiging nie: die tabel gee geen frekwensie nie, sy 86,4 dB per been is die vrye-ruimte-verlies oor 500 km op 1 MHz (die term 20 log f ontbreek: 129,6 dB op 144 MHz) en sy items tel op tot 163,8 dB, nie 182 nie; die bladsy sê nóg "minimum" nóg "144 MHz".
 
 ## Skakelbegroting
 

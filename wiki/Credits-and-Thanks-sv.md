@@ -24,7 +24,7 @@ YA-MS vilar på arbete av många radioamatörer, forskare och institutioner. Dat
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Optimal elevation och antennförskjutning (tabellen i AMS Bulletin 203) |
 | **LZ2HV** | MSHV: referens för Hot A / Hot B |
-| **GM8JBJ** John | Sträckdämpning för meteorscatter (minst 182 dB) |
+| **GM8JBJ** John | Sträckdämpning för meteorscatter; återger de 172–190 dB som **G4BAO** John Worsnop beräknat |
 | **PE1ITR** Rob Hardenberg | GRAVES-radarn: sektorer, steg och lobens tidsschema (DUBUS 4/2007, uppdatering 2021) |
 | **DL1DBC** | Swan Meteor Skyview, referens för himlavalvets grafik |
 | **IZ5TEK** Rossano | Svärmdata (scattertek) |

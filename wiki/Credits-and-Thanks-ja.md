@@ -24,7 +24,7 @@ YA-MS は多くのアマチュア無線家、科学者、機関の成果の上�
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | 最適な仰角とアンテナ偏差 (AMS Bulletin 203 の表) |
 | **LZ2HV** | MSHV: Hot A / Hot B の参考 |
-| **GM8JBJ** John | 流星散乱通信のパス損失 (最小 182 dB) |
+| **GM8JBJ** John | 流星散乱通信のパス損失。**G4BAO** John Worsnop が計算した 172–190 dB を紹介 |
 | **PE1ITR** Rob Hardenberg | GRAVES レーダー: セクター、ステップ、ビームのタイミング (DUBUS 4/2007、2021 年の更新) |
 | **DL1DBC** | Swan Meteor Skyview、天球図のグラフィックの参考 |
 | **IZ5TEK** Rossano | 流星群データ (scattertek) |

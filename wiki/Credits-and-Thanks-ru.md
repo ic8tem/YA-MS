@@ -24,7 +24,7 @@ YA-MS опирается на работу многих радиолюбител
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Оптимальный угол места и смещения антенны (таблица AMS Bulletin 203) |
 | **LZ2HV** | MSHV: эталон для Hot A / Hot B |
-| **GM8JBJ** John | Затухание на трассе метеорного рассеяния (минимум 182 dB) |
+| **GM8JBJ** John | Затухание на трассе метеорного рассеяния; приводит 172–190 dB, рассчитанные **G4BAO** John Worsnop |
 | **PE1ITR** Rob Hardenberg | Радар GRAVES: секторы, шаги и время луча (DUBUS 4/2007, обновление 2021) |
 | **DL1DBC** | Swan Meteor Skyview, образец графики небесной сферы |
 | **IZ5TEK** Rossano | Данные потоков (scattertek) |

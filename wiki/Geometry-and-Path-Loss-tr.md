@@ -81,13 +81,15 @@ p_0 = \frac{\cos\rho}{1+\hat{u}_A\cdot\hat{u}_B}\,(\hat{u}_A+\hat{u}_B),\qquad p
 
 ## Underdense yol kaybı
 
-**Kaynak:** underdense izler için McKinley denklemi (β = 0, sin α = 1), anten kazançları hariç; q = doğrusal elektron yoğunluğu, r_e = klasik elektron yarıçapı = 2,818·10⁻¹⁵ m, R1, R2 ize olan mesafeler, φ saçılma açısının yarısı [36]:
+**Kaynak:** underdense izler için McKinley denklemi ve ITU-R P.843 Tavsiyesi (sin α = 1), anten kazançları hariç; q = doğrusal elektron yoğunluğu, r_e = klasik elektron yarıçapı = 2,818·10⁻¹⁵ m, R1, R2 ize olan mesafeler, φ saçılma açısının yarısı, β iz ile yol düzlemi arasındaki açı, a₁ başlangıç yarıçapı çarpanı, r₀ m ve h km cinsinden (P.843, denk. 4 ve 7) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Doğrulama:** 144 MHz'de q = 10¹⁴ elektron/m ile: 600 ile 2200 km arasında **181–192 dB**; makalenin 144 MHz referanslarıyla uyumlu: **en az 182 dB** (GM8JBJ, Kaiser & Closs 1952'den) ve **ortalama 200 dB** (OH5IY).
+**Seçim:** bağlantı bütçesi ve kayıp tablosu β = 90° kullanır (iz yol düzlemini keser, en elverişsiz durum: temkinli değer) ve bütçe en iyi durumu, β = 0'ı da gösterir. r₀, frekans için ortalama yankı yüksekliğinde alınır, h = 124 − 17 log f (P.843, denk. 15): 50 MHz için 95 km'de 0,76 m, 144 MHz için 87 km'de 0,40 m, 432 MHz için 79 km'de 0,21 m. 1000 km'de a₁, 50 MHz'de 0,2 dB, 144 MHz'de 0,6 dB ve 432 MHz'de 1,4 dB'dir (600 km'de 2,9 dB); DJ5HG'nin sabit 102 km'sinde 432 MHz'de yaklaşık 70 dB olurdu, yani hiç yankı olmazdı.
+
+**Doğrulama:** 144 MHz'de q = 10¹⁴ elektron/m, 89,5 km'de izler ve β = 0 ile: 600 ile 2100 km arasında **182–192 dB** (1000 km'de 185 dB); bu, GM8JBJ'nin aktardığı gibi John Worsnop **G4BAO**'nun doktora tezinde hesapladığı **172–190 dB** aralığının içindedir. β = 90° ile kayıp 600 km'de 10 dB, 1000 km'de 13 dB ve 2100 km'de 16 dB artar; OH5IY'nin **ortalama 200 dB** değeri iki durumun arasındadır. GM8JBJ'nin tablosundaki 182 dB bir doğrulama değildir: tablo frekans vermez, bacak başına 86,4 dB'si 1 MHz'de 500 km'lik serbest uzay kaybıdır (20 log f terimi eksiktir: 144 MHz'de 129,6 dB) ve kalemlerinin toplamı 182 değil 163,8 dB'dir; sayfada ne "en az" ne de "144 MHz" yazar.
 
 ## Bağlantı bütçesi
 

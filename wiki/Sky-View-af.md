@@ -96,6 +96,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 | **WAARSKUWING: Hot A (en/of Hot B) val binne die antennalob …** | Die hot spot is binne ±θ/2 van die antenna-azimut (θ = horisontale −3 dB-lob): met hierdie rigting is dit reeds gedek. In grys op die kaart gewys. Die aanbevole Hot bly rooi. |
 | **RADIANT TE HOOG (bo 70°)** | 'n Bruikbare radiant is hoër as 70° vanaf jou stasie: die spore val byna vertikaal en reflekteer min na die pad (DF5HC, DH9GCD). Dieselfde ure word in die [uurtabel](Efficiency-Calculation-af#uurtabel) met ↑ gemerk. |
 | **LAE RADIANT LANGS DIE PAD** | 'n Aktiewe radiant is onder 20° en binne 30° van die padrigting. Die berekende doeltreffendheid bly laag (versigtig), maar DJ5HG verwag seldsame, sterk refleksies van skrams spore in lyn met die pad (Hamburg–Narvik, Quadrantide, omstreeks 19 UTC): die moeite werd om te luister. |
+| **PAD VERBY DIE SPOORHORISON** | Op spoorhoogte is die middelpunt van die pad onder die horison van albei stasies (sowat 2120 km met spore op 90 km). Die waarskuwing gee die minimum spoorhoogte wat nodig is (sowat 96 km vir 2200 km, 105 km vir 2300 km): die verbinding is slegs met die hoogste spore moontlik, en doeltreffendhede en verliese is op die grens van die model. |
 | *Geen gemeenskaplike E-laagsone nie* | Die pad is langer as twee keer die bereik op spoorhoogte: die twee stasies sien geen gemeenskaplike deel van die E-laag nie (enkele sprong onmoontlik). |
 | *Geen aanbevole Hot nie* | Byna geen aktiewe swerm op hierdie tyd nie. |
 

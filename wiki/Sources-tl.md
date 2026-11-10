@@ -12,7 +12,7 @@ Inililista ng tab na **Mga sanggunian** ang bawat akdang pinagbatayan ng YA-MS, 
 
 | Sanggunian | Ginamit para sa |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikulo sa Italyano, bersyon 7) | Mga bakas sa E layer sa mga 90 km (SKiYMET radar), radius ng Daigdig 6372.7955 km, pormula ng elebasyon, Hot A / Hot B, side-scatter 10–30°, path loss 182–200 dB, pinakamahinang signal −130 dBm, tagal ng ping ayon sa IARU, peak ng sporadic sa 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikulo sa Italyano, bersyon 7) | Mga bakas sa E layer sa mga 90 km (SKiYMET radar), radius ng Daigdig 6372.7955 km, pormula ng elebasyon, Hot A / Hot B, side-scatter 10–30°, path loss, pinakamahinang signal −130 dBm, tagal ng ping ayon sa IARU, peak ng sporadic sa 06 UTC |
 
 ## EPISYENSYA: KALKULASYON AT TEORYA
 
@@ -22,7 +22,7 @@ Inililista ng tab na **Mga sanggunian** ang bawat akdang pinagbatayan ng YA-MS, 
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Episyensya sa apat na nakapirming direksiyon (paghahambing) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, Mayo 2025 | Mga tuntuning λ³ at λ², gitnang punto, pinakamahusay na direksiyon (az ng radiant ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Specular na repleksiyon, ekwasyon ng underdense na bakas |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (mula kina Kaiser & Closs 1952) | 182 dB na pinakamababang path loss |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (mula kina Kaiser & Closs 1952) | 172–190 dB na path loss na kinalkula ni John Worsnop **G4BAO** (PhD thesis), mga 6 dB na mas mababa para sa mga bakas na nakahanay sa landas; hindi ginagamit ang sariling talahanayan ng pahina na 182 dB (tingnan ang [Heometriya at path loss](Geometry-and-Path-Loss-tl)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (talahanayan ng offset ng AMS Bulletin 203) | Pinakamainam na elebasyon at offset, mga hot spot sa 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (paghahambing; nasa manwal) |
 | Klaus von der Heide **DJ5HG** – QTFGUI at ang manwal na "QTFGUI Help" (2007) | Batas ng cone scattering; test case na Hamburg – Barcelona sa Quadrantids na ginamit para beripikahin ang modelo |

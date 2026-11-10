@@ -96,6 +96,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 | **DĖMESIO: Hot A (ir (arba) Hot B) patenka į antenos lapelį …** | Hot spot yra ±θ/2 ribose nuo antenos azimuto (θ = horizontalusis −3 dB lapelis): šiuo nukreipimu jis jau padengtas. Žemėlapyje rodomas pilkai. Rekomenduojamas Hot lieka raudonas. |
 | **RADIANTAS PER AUKŠTAI (virš 70°)** | Naudingas radiantas yra aukščiau nei 70° iš jūsų stoties: pėdsakai krenta beveik vertikaliai ir mažai atspindi trasos kryptimi (DF5HC, DH9GCD). Tos pačios valandos [valandinėje lentelėje](Efficiency-Calculation-lt#valandinė-lentelė) pažymėtos ↑. |
 | **ŽEMAS RADIANTAS IŠILGAI TRASOS** | Aktyvus radiantas yra žemiau 20° ir ne toliau kaip 30° nuo trasos krypties. Apskaičiuotas efektyvumas lieka žemas (atsargus), bet DJ5HG tikisi retų, stiprių atspindžių nuo slystančių pėdsakų, išsidėsčiusių išilgai trasos (Hamburgas–Narvikas, Kvadrantidai, apie 19 UTC): verta paklausyti. |
+| **TRASA UŽ PĖDSAKŲ HORIZONTO** | Pėdsakų aukštyje trasos vidurio taškas yra žemiau abiejų stočių horizonto (apie 2120 km, kai pėdsakai 90 km aukštyje). Įspėjime nurodomas reikalingas mažiausias pėdsakų aukštis (apie 96 km 2200 km trasai, 105 km 2300 km trasai): ryšys galimas tik su aukščiausiais pėdsakais, o efektyvumai ir slopinimai yra ties modelio riba. |
 | *Nėra bendrosios E sluoksnio zonos* | Trasa ilgesnė nei dvigubas nuotolis pėdsakų aukštyje: abi stotys nemato bendros E sluoksnio dalies (vienas šuolis neįmanomas). |
 | *Nėra rekomenduojamo Hot* | Šiuo metu beveik nėra aktyvių srautų. |
 

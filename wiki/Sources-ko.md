@@ -12,7 +12,7 @@
 
 | 출처 | 사용처 |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"*(이탈리아어 논문, 제7판) | 약 90 km의 E층 흔적(SKiYMET 레이더), 지구 반경 6372.7955 km, 앙각 공식, Hot A / Hot B, 사이드 스캐터 10–30°, 경로 손실 182–200 dB, 최소 신호 −130 dBm, IARU 핑 지속 시간, 06 UTC의 산발 유성 극대 |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"*(이탈리아어 논문, 제7판) | 약 90 km의 E층 흔적(SKiYMET 레이더), 지구 반경 6372.7955 km, 앙각 공식, Hot A / Hot B, 사이드 스캐터 10–30°, 경로 손실, 최소 신호 −130 dBm, IARU 핑 지속 시간, 06 UTC의 산발 유성 극대 |
 
 ## 효율: 계산과 이론
 
@@ -22,7 +22,7 @@
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | 네 개 고정 방향에 대한 효율(비교) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, 2025년 5월 | λ³ 및 λ² 규칙, 중간점, 최적 방향(복사점 방위 ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | 정반사, 저밀도 흔적 식 |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering(Kaiser & Closs 1952 기반) | 최소 경로 손실 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering(Kaiser & Closs 1952 기반) | John Worsnop **G4BAO**가 계산한 172–190 dB 경로 손실(박사 논문), 경로와 나란한 흔적은 약 6 dB 적음; 페이지 자체의 182 dB 표는 사용하지 않음([기하와 경로 손실](Geometry-and-Path-Loss-ko) 참조) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw(AMS Bulletin 203 오프셋 표) | 최적 앙각과 오프셋, 50–150 km의 핫스폿 |
 | **LZ2HV** – MSHV | Hot A / Hot B(비교; 매뉴얼에 수록) |
 | Klaus von der Heide **DJ5HG** – QTFGUI와 "QTFGUI Help" 매뉴얼(2007) | 원뿔 산란 법칙; 모델 검증에 사용한 함부르크 – 바르셀로나 사분의자리 유성우 사례 |

@@ -24,7 +24,7 @@ YA-MS נשענת על עבודתם של חובבי רדיו, מדענים ומו
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | הגבהה מיטבית והיסטי אנטנה (טבלת AMS Bulletin 203) |
 | **LZ2HV** | MSHV: נקודת ייחוס ל-Hot A / Hot B |
-| **GM8JBJ** John | הנחתת נתיב בפיזור מטאורי (מינימום 182 dB) |
+| **GM8JBJ** John | הנחתת נתיב בפיזור מטאורי; מביא את 172–190 dB שחישב **G4BAO** John Worsnop |
 | **PE1ITR** Rob Hardenberg | מכ״ם GRAVES: גזרות, צעדים ותזמון האלומה (DUBUS 4/2007, עדכון 2021) |
 | **DL1DBC** | Swan Meteor Skyview, מקור לגרפיקה של כיפת השמיים |
 | **IZ5TEK** Rossano | נתוני מטרים (scattertek) |

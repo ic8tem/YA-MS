@@ -24,7 +24,7 @@ YA-MS staan op die werk van baie radioamateurs, wetenskaplikes en instellings. D
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Optimale elevasie en antennaverskuiwings (tabel van AMS Bulletin 203) |
 | **LZ2HV** | MSHV: verwysing vir Hot A / Hot B |
-| **GM8JBJ** John | Meteor scatter-padverlies (182 dB minimum) |
+| **GM8JBJ** John | Meteor scatter-padverlies; gee die 172–190 dB wat deur **G4BAO** John Worsnop bereken is |
 | **PE1ITR** Rob Hardenberg | GRAVES-radar: sektore, stappe en bundeltydsberekening (DUBUS 4/2007, bywerking 2021) |
 | **DL1DBC** | Swan Meteor Skyview, verwysing vir die grafika van die hemelkoepel |
 | **IZ5TEK** Rossano | Swermdata (scattertek) |

@@ -81,13 +81,15 @@ Jika 1 − |p0|² < 0, lintasan lebih panjang dari 2·d_H dan kedua stasiun **ti
 
 ## Redaman lintasan underdense
 
-**Sumber:** persamaan McKinley untuk jejak underdense (β = 0, sin α = 1), tanpa penguatan antena; q = kerapatan elektron linear, r_e = jari-jari elektron klasik = 2,818·10⁻¹⁵ m, R1, R2 jarak ke jejak, φ setengah sudut hambur [36]:
+**Sumber:** persamaan McKinley dan Rekomendasi ITU-R P.843 untuk jejak underdense (sin α = 1), tanpa penguatan antena; q = kerapatan elektron linear, r_e = jari-jari elektron klasik = 2,818·10⁻¹⁵ m, R1, R2 jarak ke jejak, φ setengah sudut hambur, β sudut antara jejak dan bidang lintasan, a₁ faktor jari-jari awal dengan r₀ dalam m dan h dalam km (P.843, pers. 4 dan 7) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Verifikasi:** dengan q = 10¹⁴ elektron/m pada 144 MHz: **181–192 dB** antara 600 dan 2200 km, sejalan dengan referensi artikel pada 144 MHz: **minimum 182 dB** (GM8JBJ, dari Kaiser & Closs 1952) dan **rata-rata 200 dB** (OH5IY).
+**Pilihan:** anggaran link dan tabel redaman memakai β = 90° (jejak memotong bidang lintasan, kasus paling tidak menguntungkan: nilai hati-hati) dan anggaran juga menampilkan kasus terbaik, β = 0. r₀ diambil pada ketinggian gema rata-rata untuk frekuensi tersebut, h = 124 − 17 log f (P.843, pers. 15): 0,76 m pada 95 km untuk 50 MHz, 0,40 m pada 87 km untuk 144 MHz, 0,21 m pada 79 km untuk 432 MHz. Pada 1000 km a₁ adalah 0,2 dB pada 50 MHz, 0,6 dB pada 144 MHz, dan 1,4 dB pada 432 MHz (2,9 dB pada 600 km); pada ketinggian tetap 102 km milik DJ5HG nilainya sekitar 70 dB pada 432 MHz, artinya sama sekali tidak ada gema.
+
+**Verifikasi:** dengan q = 10¹⁴ elektron/m, jejak pada 89,5 km dan β = 0, pada 144 MHz: **182–192 dB** antara 600 dan 2100 km (185 dB pada 1000 km), di dalam rentang **172–190 dB** yang dihitung John Worsnop **G4BAO** dalam disertasi PhD-nya, sebagaimana dilaporkan GM8JBJ. Dengan β = 90° redaman bertambah 10 dB pada 600 km, 13 dB pada 1000 km, dan 16 dB pada 2100 km; **rata-rata 200 dB** dari OH5IY berada di antara kedua kasus. Nilai 182 dB dalam tabel GM8JBJ bukan konfirmasi: tabel tidak menyebut frekuensi, 86,4 dB per ruasnya adalah redaman ruang bebas sejauh 500 km pada 1 MHz (suku 20 log f hilang: 129,6 dB pada 144 MHz), dan pos-posnya berjumlah 163,8 dB, bukan 182; halaman itu tidak menyebut "minimum" maupun "144 MHz".
 
 ## Anggaran link
 

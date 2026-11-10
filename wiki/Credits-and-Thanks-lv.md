@@ -24,7 +24,7 @@ YA-MS balstās uz daudzu radioamatieru, zinātnieku un institūciju darbu. Dati,
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Optimālā elevācija un antenas nobīdes (AMS Bulletin 203 tabula) |
 | **LZ2HV** | MSHV: Hot A / Hot B atsauce |
-| **GM8JBJ** John | Meteor scatter trases vājinājums (minimums 182 dB) |
+| **GM8JBJ** John | Meteor scatter trases vājinājums; norāda **G4BAO** John Worsnop aprēķinātos 172–190 dB |
 | **PE1ITR** Rob Hardenberg | GRAVES radars: sektori, soļi un kūļa laiki (DUBUS 4/2007, atjauninājums 2021) |
 | **DL1DBC** | Swan Meteor Skyview, atsauce debess velves grafikai |
 | **IZ5TEK** Rossano | Plūsmu dati (scattertek) |

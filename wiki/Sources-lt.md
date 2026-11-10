@@ -12,7 +12,7 @@ Kortelėje **Šaltiniai** išvardyti visi darbai, kuriais remiasi YA-MS, sugrupu
 
 | Šaltinis | Kam naudojamas |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (straipsnis italų kalba, 7 versija) | Pėdsakai E sluoksnyje apie 90 km aukštyje (SKiYMET radaras), Žemės spindulys 6372,7955 km, elevacijos formulė, Hot A / Hot B, šoninė sklaida 10–30°, slopinimas 182–200 dB, minimalus signalas −130 dBm, IARU atspindžių trukmės, sporadinių maksimumas 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (straipsnis italų kalba, 7 versija) | Pėdsakai E sluoksnyje apie 90 km aukštyje (SKiYMET radaras), Žemės spindulys 6372,7955 km, elevacijos formulė, Hot A / Hot B, šoninė sklaida 10–30°, slopinimas, minimalus signalas −130 dBm, IARU atspindžių trukmės, sporadinių maksimumas 06 UTC |
 
 ## EFEKTYVUMAS: SKAIČIAVIMAS IR TEORIJA
 
@@ -22,7 +22,7 @@ Kortelėje **Šaltiniai** išvardyti visi darbai, kuriais remiasi YA-MS, sugrupu
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Efektyvumas keturioms fiksuotoms kryptims (palyginimas) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45-asis Nordic VUSHF, 2025 m. gegužė | λ³ ir λ² taisyklės, vidurio taškas, geriausia kryptis (radianto az ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Veidrodinis atspindys, retojo pėdsako lygtis |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (pagal Kaiser & Closs 1952) | 182 dB mažiausias slopinimas |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (pagal Kaiser & Closs 1952) | 172–190 dB slopinimas, apskaičiuotas John Worsnop **G4BAO** (daktaro disertacija), apie 6 dB mažesnis pėdsakams išilgai trasos; paties puslapio 182 dB lentelė nenaudojama (žr. [Geometrija ir slopinimas](Geometry-and-Path-Loss-lt)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (AMS Bulletin 203 nuokrypių lentelė) | Optimali elevacija ir nuokrypis, hot spot 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (palyginimas; vadove) |
 | Klaus von der Heide **DJ5HG** – QTFGUI ir vadovas „QTFGUI Help“ (2007) | Kūginės sklaidos dėsnis; Hamburgo – Barselonos Kvadrantidų bandomasis atvejis modeliui patikrinti |

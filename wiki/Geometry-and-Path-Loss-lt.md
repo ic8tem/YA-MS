@@ -81,13 +81,15 @@ Jei 1 − |p0|² < 0, trasa ilgesnė nei 2·d_H ir stotys **nemato bendrosios E 
 
 ## Retojo pėdsako slopinimas
 
-**Šaltinis:** McKinley lygtis retiesiems pėdsakams (β = 0, sin α = 1), be antenų stiprinimo; q – elektronų linijinis tankis, r_e – klasikinis elektrono spindulys = 2,818·10⁻¹⁵ m, R1, R2 – atstumai nuo pėdsako, φ – pusė sklaidos kampo [36]:
+**Šaltinis:** McKinley lygtis ir ITU-R rekomendacija P.843 retiesiems pėdsakams (sin α = 1), be antenų stiprinimo; q – elektronų linijinis tankis, r_e – klasikinis elektrono spindulys = 2,818·10⁻¹⁵ m, R1, R2 – atstumai nuo pėdsako, φ – pusė sklaidos kampo, β – kampas tarp pėdsako ir trasos plokštumos, a₁ – pradinio spindulio daugiklis, r₀ metrais ir h kilometrais (P.843, 4 ir 7 lygtys) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Patikra:** su q = 10¹⁴ elektronų/m ties 144 MHz: **181–192 dB** nuo 600 iki 2200 km, atitinka straipsnio duomenis ties 144 MHz: **182 dB mažiausias** (GM8JBJ, pagal Kaiser & Closs 1952) ir **200 dB vidutinis** (OH5IY).
+**Sprendimas:** ryšio biudžete ir slopinimo lentelėje naudojama β = 90° (pėdsakas kerta trasos plokštumą, nepalankiausias atvejis: atsargi vertė), o biudžete rodomas ir geriausias atvejis, β = 0. r₀ imamas vidutiniame aido aukštyje tam dažniui, h = 124 − 17 log f (P.843, 15 lygtis): 0,76 m ties 95 km 50 MHz dažniui, 0,40 m ties 87 km 144 MHz, 0,21 m ties 79 km 432 MHz. 1000 km trasoje a₁ yra 0,2 dB ties 50 MHz, 0,6 dB ties 144 MHz ir 1,4 dB ties 432 MHz (2,9 dB ties 600 km); esant fiksuotam DJ5HG 102 km aukščiui ties 432 MHz jis būtų apie 70 dB, t. y. jokio aido.
+
+**Patikra:** su q = 10¹⁴ elektronų/m, pėdsakais 89,5 km aukštyje ir β = 0, ties 144 MHz: **182–192 dB** nuo 600 iki 2100 km (185 dB ties 1000 km), **172–190 dB** intervale, kurį savo daktaro disertacijoje apskaičiavo John Worsnop **G4BAO**, kaip nurodo GM8JBJ. Su β = 90° slopinimas padidėja 10 dB ties 600 km, 13 dB ties 1000 km ir 16 dB ties 2100 km; OH5IY **200 dB vidurkis** yra tarp šių dviejų atvejų. 182 dB GM8JBJ lentelėje nėra patvirtinimas: lentelėje nenurodytas dažnis, jos 86,4 dB vienai atkarpai yra laisvosios erdvės slopinimas 500 km atstumu ties 1 MHz (trūksta nario 20 log f: 129,6 dB ties 144 MHz), o jos eilučių suma yra 163,8 dB, ne 182; puslapyje nerašoma nei „mažiausias“, nei „144 MHz“.
 
 ## Ryšio biudžetas
 

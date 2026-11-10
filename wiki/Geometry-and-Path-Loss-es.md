@@ -81,13 +81,15 @@ Si 1 − |p0|² < 0, el trayecto es más largo que 2·d_H y las estaciones **no 
 
 ## Atenuación subdensa
 
-**Fuente:** ecuación de McKinley para estelas subdensas (β = 0, sen α = 1), ganancias de antena excluidas; q = densidad lineal de electrones, r_e = radio clásico del electrón = 2,818·10⁻¹⁵ m, R1, R2 distancias a la estela, φ mitad del ángulo de dispersión [36]:
+**Fuente:** ecuación de McKinley y Recomendación ITU-R P.843 para estelas subdensas (sen α = 1), ganancias de antena excluidas; q = densidad lineal de electrones, r_e = radio clásico del electrón = 2,818·10⁻¹⁵ m, R1, R2 distancias a la estela, φ mitad del ángulo de dispersión, β ángulo entre la estela y el plano del trayecto, a₁ factor del radio inicial con r₀ en m y h en km (P.843, ec. 4 y 7) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Verificación:** con q = 10¹⁴ electrones/m en 144 MHz: **181–192 dB** entre 600 y 2200 km, en línea con las referencias del artículo en 144 MHz: **182 dB como mínimo** (GM8JBJ, de Kaiser & Closs 1952) y **200 dB de media** (OH5IY).
+**Decisión:** el balance y la tabla de atenuaciones usan β = 90° (estela que cruza el plano del trayecto, el caso menos favorable: valor prudente) y el balance muestra también el mejor caso, β = 0. r₀ se toma a la altura media de los ecos para la frecuencia, h = 124 − 17 log f (P.843, ec. 15): 0,76 m a 95 km para 50 MHz, 0,40 m a 87 km para 144 MHz, 0,21 m a 79 km para 432 MHz. En 1000 km a₁ vale 0,2 dB en 50 MHz, 0,6 dB en 144 MHz y 1,4 dB en 432 MHz (2,9 dB a 600 km); con los 102 km fijos de DJ5HG serían unos 70 dB en 432 MHz, es decir, ningún eco.
+
+**Verificación:** con q = 10¹⁴ electrones/m, estelas a 89,5 km y β = 0, en 144 MHz: **182–192 dB** entre 600 y 2100 km (185 dB a 1000 km), dentro del intervalo de **172–190 dB** calculado por John Worsnop **G4BAO** en su tesis doctoral, según recoge GM8JBJ. Con β = 90° la atenuación crece 10 dB a 600 km, 13 dB a 1000 km y 16 dB a 2100 km; los **200 dB de media** de OH5IY quedan entre los dos casos. Los 182 dB de la tabla de GM8JBJ no son una confirmación: la tabla no indica frecuencia, sus 86,4 dB por tramo son la pérdida en espacio libre sobre 500 km a 1 MHz (falta el término 20 log f: 129,6 dB en 144 MHz) y sus partidas suman 163,8 dB, no 182; la página no dice ni "mínimo" ni "144 MHz".
 
 ## Balance del enlace
 

@@ -81,13 +81,15 @@ Se 1 − |p0|² < 0 la tratta è più lunga di 2·d_H e le stazioni non vedono *
 
 ## Attenuazione per scie sottodense
 
-**Fonte:** equazione di McKinley per le scie sottodense (β = 0, sin α = 1), guadagni d'antenna esclusi; q = densità lineare di elettroni, r_e = raggio classico dell'elettrone = 2,818·10⁻¹⁵ m, R1, R2 distanze dalla scia, φ metà dell'angolo di diffusione [36]:
+**Fonte:** equazione di McKinley e Raccomandazione ITU-R P.843 per le scie sottodense (sin α = 1), guadagni d'antenna esclusi; q = densità lineare di elettroni, r_e = raggio classico dell'elettrone = 2,818·10⁻¹⁵ m, R1, R2 distanze dalla scia, φ metà dell'angolo di diffusione, β angolo tra la scia e il piano della tratta, a₁ fattore del raggio iniziale con r₀ in m e h in km (P.843, eq. 4 e 7) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Verifica:** con q = 10¹⁴ elettroni/m a 144 MHz: **181–192 dB** tra 600 e 2200 km, in linea con i riferimenti dell'articolo a 144 MHz: **182 dB minimo** (GM8JBJ, da Kaiser & Closs 1952) e **200 dB medio** (OH5IY).
+**Scelta:** il bilancio e la tabella delle attenuazioni usano β = 90° (scia che attraversa il piano della tratta, il caso meno favorevole: valore prudente) e il bilancio mostra anche il caso migliore, β = 0. r₀ è preso alla quota media degli echi per la frequenza, h = 124 − 17 log f (P.843, eq. 15): 0,76 m a 95 km per 50 MHz, 0,40 m a 87 km per 144 MHz, 0,21 m a 79 km per 432 MHz. Su 1000 km a₁ vale 0,2 dB a 50 MHz, 0,6 dB a 144 MHz e 1,4 dB a 432 MHz (2,9 dB a 600 km); alla quota fissa di 102 km di DJ5HG sarebbe circa 70 dB a 432 MHz, cioè nessun eco.
+
+**Verifica:** con q = 10¹⁴ elettroni/m, scie a 89,5 km e β = 0, a 144 MHz: **182–192 dB** tra 600 e 2100 km (185 dB a 1000 km), dentro l'intervallo di **172–190 dB** calcolato da John Worsnop **G4BAO** nella sua tesi di dottorato, come riportato da GM8JBJ. Con β = 90° l'attenuazione cresce di 10 dB a 600 km, 13 dB a 1000 km e 16 dB a 2100 km; i **200 dB medi** di OH5IY stanno tra i due casi. I 182 dB della tabella di GM8JBJ non sono una conferma: la tabella non indica la frequenza, i suoi 86,4 dB per tratto sono l'attenuazione di spazio libero su 500 km a 1 MHz (manca il termine 20 log f: 129,6 dB a 144 MHz) e le sue voci sommano 163,8 dB, non 182; la pagina non dice né "minimo" né "144 MHz".
 
 ## Bilancio del collegamento
 

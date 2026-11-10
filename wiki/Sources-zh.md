@@ -12,7 +12,7 @@
 
 | 来源 | 用于 |
 |---|---|
-| Costantino Cerrotta **IC8TEM**、Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"*（意大利语文章，第 7 版） | E 层中约 90 km 高度的余迹（SKiYMET 雷达）、地球半径 6372.7955 km、仰角公式、Hot A / Hot B、10–30° 侧向散射、182–200 dB 路径损耗、最小信号 −130 dBm、IARU ping 持续时间、06 UTC 的偶发流星峰值 |
+| Costantino Cerrotta **IC8TEM**、Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"*（意大利语文章，第 7 版） | E 层中约 90 km 高度的余迹（SKiYMET 雷达）、地球半径 6372.7955 km、仰角公式、Hot A / Hot B、10–30° 侧向散射、路径损耗、最小信号 −130 dBm、IARU ping 持续时间、06 UTC 的偶发流星峰值 |
 
 ## 效率的计算与理论
 
@@ -22,7 +22,7 @@
 | Wilhelm Rauh **DL5MCG** – MCG_MS，MS Efficiency Calculator v1.61，qsl.net/dl5mcg | 四个固定方向上的效率（对比） |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*，第 45 届 Nordic VUSHF，2025 年 5 月 | λ³ 和 λ² 规则、中点、最佳方向（辐射点方位 ±90°） |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*，McGraw-Hill，1961 | 镜面反射、欠密余迹方程 |
-| John **GM8JBJ** – Meteor scatter path loss，hamradio.engineering（引自 Kaiser & Closs 1952） | 182 dB 最小路径损耗 |
+| John **GM8JBJ** – Meteor scatter path loss，hamradio.engineering（引自 Kaiser & Closs 1952） | John Worsnop **G4BAO** 计算的 172–190 dB 路径损耗（博士论文），与路径同向的余迹约少 6 dB；不使用该页面自身的 182 dB 表（参见[几何与路径损耗](Geometry-and-Path-Loss-zh)） |
 | Shelby **W8WN** – qsl.net/w8wn/hscw（AMS Bulletin 203 偏角表） | 最佳仰角和偏角、50–150 km 的热点 |
 | **LZ2HV** – MSHV | Hot A / Hot B（对比；见手册） |
 | Klaus von der Heide **DJ5HG** – QTFGUI 及其 "QTFGUI Help" 手册（2007） | 锥面散射定律；用于验证模型的汉堡 – 巴塞罗那象限仪座流星雨测试案例 |

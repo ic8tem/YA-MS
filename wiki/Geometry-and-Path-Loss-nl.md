@@ -81,13 +81,15 @@ Als 1 − |p0|² < 0 is het traject langer dan 2·d_H en zien de stations **geen
 
 ## Demping bij onderdichte sporen
 
-**Bron:** de vergelijking van McKinley voor onderdichte sporen (β = 0, sin α = 1), zonder antennewinst; q = lineaire elektronendichtheid, r_e = klassieke elektronstraal = 2,818·10⁻¹⁵ m, R1, R2 afstanden tot het spoor, φ de halve verstrooiingshoek [36]:
+**Bron:** de vergelijking van McKinley en ITU-R-aanbeveling P.843 voor onderdichte sporen (sin α = 1), zonder antennewinst; q = lineaire elektronendichtheid, r_e = klassieke elektronstraal = 2,818·10⁻¹⁵ m, R1, R2 afstanden tot het spoor, φ de halve verstrooiingshoek, β hoek tussen het spoor en het trajectvlak, a₁ beginstraalfactor met r₀ in m en h in km (P.843, vgl. 4 en 7) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Controle:** met q = 10¹⁴ elektronen/m op 144 MHz: **181–192 dB** tussen 600 en 2200 km, in lijn met de referenties uit het artikel op 144 MHz: **minimaal 182 dB** (GM8JBJ, naar Kaiser & Closs 1952) en **gemiddeld 200 dB** (OH5IY).
+**Keuze:** het linkbudget en de dempingstabel gebruiken β = 90° (spoor dat het trajectvlak kruist, het minst gunstige geval: voorzichtige waarde) en het linkbudget toont ook het beste geval, β = 0. r₀ wordt genomen op de gemiddelde echohoogte voor de frequentie, h = 124 − 17 log f (P.843, vgl. 15): 0,76 m op 95 km voor 50 MHz, 0,40 m op 87 km voor 144 MHz, 0,21 m op 79 km voor 432 MHz. Over 1000 km is a₁ 0,2 dB op 50 MHz, 0,6 dB op 144 MHz en 1,4 dB op 432 MHz (2,9 dB op 600 km); bij de vaste 102 km van DJ5HG zou het op 432 MHz ongeveer 70 dB zijn, dus helemaal geen echo.
+
+**Controle:** met q = 10¹⁴ elektronen/m, sporen op 89,5 km en β = 0, op 144 MHz: **182–192 dB** tussen 600 en 2100 km (185 dB op 1000 km), binnen het bereik van **172–190 dB** dat John Worsnop **G4BAO** in zijn proefschrift berekende, zoals GM8JBJ vermeldt. Met β = 90° neemt de demping toe met 10 dB op 600 km, 13 dB op 1000 km en 16 dB op 2100 km; het **gemiddelde van 200 dB** van OH5IY ligt tussen beide gevallen. De 182 dB in de tabel van GM8JBJ zijn geen bevestiging: de tabel noemt geen frequentie, de 86,4 dB per deeltraject zijn de vrije-ruimtedemping over 500 km op 1 MHz (de term 20 log f ontbreekt: 129,6 dB op 144 MHz) en de posten tellen op tot 163,8 dB, niet 182; de pagina zegt noch "minimum" noch "144 MHz".
 
 ## Linkbudget
 

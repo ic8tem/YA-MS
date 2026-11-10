@@ -12,7 +12,7 @@
 
 | Джерело | Для чого використано |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (стаття італійською, версія 7) | Сліди в шарі E на висоті близько 90 km (радар SKiYMET), радіус Землі 6372,7955 km, формула кута місця, Hot A / Hot B, side-scatter 10–30°, загасання на трасі 182–200 dB, мінімальний сигнал −130 dBm, тривалості пінгів за IARU, максимум спорадичних о 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (стаття італійською, версія 7) | Сліди в шарі E на висоті близько 90 km (радар SKiYMET), радіус Землі 6372,7955 km, формула кута місця, Hot A / Hot B, side-scatter 10–30°, загасання на трасі, мінімальний сигнал −130 dBm, тривалості пінгів за IARU, максимум спорадичних о 06 UTC |
 
 ## ЕФЕКТИВНІСТЬ: РОЗРАХУНОК І ТЕОРІЯ
 
@@ -22,7 +22,7 @@
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Ефективність для чотирьох фіксованих напрямків (порівняння) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, травень 2025 | Правила λ³ і λ², середня точка, найкращий напрямок (азимут радіанта ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Дзеркальне відбиття, рівняння недощільного сліду |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (за Kaiser & Closs 1952) | Мінімальне загасання на трасі 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (за Kaiser & Closs 1952) | Загасання на трасі 172–190 dB, розраховане John Worsnop **G4BAO** (дисертація PhD), приблизно на 6 dB менше для слідів уздовж траси; власна таблиця сторінки з 182 dB не використовується (див. [Геометрія і загасання](Geometry-and-Path-Loss-uk)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (таблиця зміщень з AMS Bulletin 203) | Оптимальні кут місця і зміщення, hot spot 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (порівняння; у посібнику) |
 | Klaus von der Heide **DJ5HG** – QTFGUI і посібник "QTFGUI Help" (2007) | Закон конусного розсіювання; тестовий випадок Гамбург – Барселона на Квадрантидах для перевірки моделі |

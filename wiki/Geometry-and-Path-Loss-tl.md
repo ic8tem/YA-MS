@@ -81,13 +81,15 @@ Kung 1 − |p0|² < 0, mas mahaba ang landas kaysa 2·d_H at **walang karaniwang
 
 ## Underdense na path loss
 
-**Sanggunian:** ekwasyon ni McKinley para sa mga underdense na bakas (β = 0, sin α = 1), hindi kasama ang gain ng antenna; q = linear na densidad ng electron, r_e = klasikong radius ng electron = 2.818·10⁻¹⁵ m, R1, R2 ang mga distansiya mula sa bakas, φ kalahati ng scattering angle [36]:
+**Sanggunian:** ekwasyon ni McKinley at Rekomendasyong ITU-R P.843 para sa mga underdense na bakas (sin α = 1), hindi kasama ang gain ng antenna; q = linear na densidad ng electron, r_e = klasikong radius ng electron = 2.818·10⁻¹⁵ m, R1, R2 ang mga distansiya mula sa bakas, φ kalahati ng scattering angle, β anggulo sa pagitan ng bakas at ng plane ng landas, a₁ factor ng paunang radius na ang r₀ ay nasa m at ang h ay nasa km (P.843, eq. 4 at 7) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Pagsusuri:** kapag q = 10¹⁴ electron/m sa 144 MHz: **181–192 dB** sa pagitan ng 600 at 2200 km, kaayon ng mga sanggunian ng artikulo sa 144 MHz: **182 dB pinakamababa** (GM8JBJ, mula kina Kaiser & Closs 1952) at **200 dB karaniwan** (OH5IY).
+**Pagpili:** gumagamit ang link budget at ang talahanayan ng loss ng β = 90° (bakas na tumatawid sa plane ng landas, ang pinakadi-paborableng kaso: maingat na halaga) at ipinapakita rin ng budget ang pinakamahusay na kaso, β = 0. Kinukuha ang r₀ sa karaniwang taas ng echo para sa frequency, h = 124 − 17 log f (P.843, eq. 15): 0.76 m sa 95 km para sa 50 MHz, 0.40 m sa 87 km para sa 144 MHz, 0.21 m sa 79 km para sa 432 MHz. Sa 1000 km ang a₁ ay 0.2 dB sa 50 MHz, 0.6 dB sa 144 MHz at 1.4 dB sa 432 MHz (2.9 dB sa 600 km); sa nakapirming 102 km ni DJ5HG, mga 70 dB ito sa 432 MHz, ibig sabihin ay walang echo talaga.
+
+**Pagsusuri:** kapag q = 10¹⁴ electron/m, mga bakas sa 89.5 km at β = 0, sa 144 MHz: **182–192 dB** sa pagitan ng 600 at 2100 km (185 dB sa 1000 km), nasa loob ng saklaw na **172–190 dB** na kinalkula ni John Worsnop **G4BAO** sa kaniyang PhD thesis, ayon sa ulat ni GM8JBJ. Kapag β = 90°, lumalaki ang loss nang 10 dB sa 600 km, 13 dB sa 1000 km at 16 dB sa 2100 km; ang **200 dB na average** ni OH5IY ay nasa pagitan ng dalawang kaso. Ang 182 dB sa talahanayan ni GM8JBJ ay hindi kumpirmasyon: walang ibinibigay na frequency ang talahanayan, ang 86.4 dB nito bawat bahagi ay ang free-space loss sa 500 km sa 1 MHz (nawawala ang terminong 20 log f: 129.6 dB sa 144 MHz) at ang kabuuan ng mga item nito ay 163.8 dB, hindi 182; hindi sinasabi ng pahina ang "minimum" o ang "144 MHz".
 
 ## Link budget
 

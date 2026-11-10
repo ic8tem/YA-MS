@@ -12,7 +12,7 @@
 
 | উৎস | কীসের জন্য ব্যবহৃত |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (ইতালীয় ভাষায় প্রবন্ধ, সংস্করণ 7) | প্রায় 90 km উচ্চতায় E স্তরে উল্কা-রেখা (SKiYMET রাডার), পৃথিবীর ব্যাসার্ধ 6372.7955 km, এলিভেশনের সূত্র, Hot A / Hot B, সাইড-স্ক্যাটার 10–30°, পথ ক্ষয় 182–200 dB, ন্যূনতম সংকেত −130 dBm, IARU পিং-স্থায়িত্ব, 06 UTC-তে বিক্ষিপ্ত উল্কার সর্বোচ্চ |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (ইতালীয় ভাষায় প্রবন্ধ, সংস্করণ 7) | প্রায় 90 km উচ্চতায় E স্তরে উল্কা-রেখা (SKiYMET রাডার), পৃথিবীর ব্যাসার্ধ 6372.7955 km, এলিভেশনের সূত্র, Hot A / Hot B, সাইড-স্ক্যাটার 10–30°, পথ ক্ষয়, ন্যূনতম সংকেত −130 dBm, IARU পিং-স্থায়িত্ব, 06 UTC-তে বিক্ষিপ্ত উল্কার সর্বোচ্চ |
 
 ## দক্ষতা: হিসাব ও তত্ত্ব
 
@@ -22,7 +22,7 @@
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | চারটি স্থির দিকে দক্ষতা (তুলনা) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, মে 2025 | λ³ ও λ² নিয়ম, মধ্যবিন্দু, সেরা দিক (বিকিরণ বিন্দুর az ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | দর্পণ প্রতিফলন, আন্ডারডেন্স উল্কা-রেখার সমীকরণ |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (Kaiser & Closs 1952 থেকে) | 182 dB ন্যূনতম পথ ক্ষয় |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (Kaiser & Closs 1952 থেকে) | John Worsnop **G4BAO**-র গণনা করা 172–190 dB পথ ক্ষয় (PhD থিসিস), পথের সাথে এক রেখায় থাকা উল্কা-রেখার জন্য প্রায় 6 dB কম; পাতাটির নিজস্ব 182 dB সারণি ব্যবহার করা হয় না (দেখুন [জ্যামিতি ও পথ ক্ষয়](Geometry-and-Path-Loss-bn)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (AMS Bulletin 203-এর বিচ্যুতি-টেবিল) | সর্বোত্তম এলিভেশন ও বিচ্যুতি, 50–150 km দূরে হট স্পট |
 | **LZ2HV** – MSHV | Hot A / Hot B (তুলনা; ম্যানুয়ালে) |
 | Klaus von der Heide **DJ5HG** – QTFGUI এবং "QTFGUI Help" ম্যানুয়াল (2007) | শঙ্কু বিচ্ছুরণের নিয়ম (cone scattering); মডেল যাচাইয়ে ব্যবহৃত Hamburg – Barcelona কোয়াড্রান্টিড পরীক্ষা-উদাহরণ |

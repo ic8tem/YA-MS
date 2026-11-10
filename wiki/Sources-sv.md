@@ -12,7 +12,7 @@ Fliken **Källor** listar alla verk som YA-MS bygger på, grupperade enligt neda
 
 | Källa | Används för |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikel på italienska, version 7) | Spår i E-skiktet på omkring 90 km (SKiYMET-radar), jordradie 6372,7955 km, elevationsformeln, Hot A / Hot B, side-scatter 10–30°, sträckdämpning 182–200 dB, minsta signal −130 dBm, IARU:s pinglängder, sporadiskt maximum kl. 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikel på italienska, version 7) | Spår i E-skiktet på omkring 90 km (SKiYMET-radar), jordradie 6372,7955 km, elevationsformeln, Hot A / Hot B, side-scatter 10–30°, sträckdämpning, minsta signal −130 dBm, IARU:s pinglängder, sporadiskt maximum kl. 06 UTC |
 
 ## EFFEKTIVITET: BERÄKNING OCH TEORI
 
@@ -22,7 +22,7 @@ Fliken **Källor** listar alla verk som YA-MS bygger på, grupperade enligt neda
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Effektivitet i fyra fasta riktningar (jämförelse) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maj 2025 | Reglerna λ³ och λ², mittpunkten, bästa riktning (radiantens az ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Spegelreflexion, ekvationen för underdensa spår |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (från Kaiser & Closs 1952) | Minsta sträckdämpning 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (från Kaiser & Closs 1952) | Sträckdämpning på 172–190 dB beräknad av John Worsnop **G4BAO** (doktorsavhandling), omkring 6 dB mindre för spår i linje med sträckan; sidans egen tabell med 182 dB används inte (se [Geometri och dämpning](Geometry-and-Path-Loss-sv)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (förskjutningstabellen i AMS Bulletin 203) | Optimal elevation och förskjutning, hot spots på 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (jämförelse; i handboken) |
 | Klaus von der Heide **DJ5HG** – QTFGUI och handboken "QTFGUI Help" (2007) | Lagen för cone scattering; testfallet Hamburg – Barcelona under Quadrantiderna, använt för att verifiera modellen |

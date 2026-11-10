@@ -24,7 +24,7 @@ YA-MS pek çok radyo amatörünün, bilim insanının ve kurumun çalışmasına
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | En uygun elevasyon ve anten sapmaları (AMS Bulletin 203 tablosu) |
 | **LZ2HV** | MSHV: Hot A / Hot B referansı |
-| **GM8JBJ** John | Meteor scatter yol kaybı (en az 182 dB) |
+| **GM8JBJ** John | Meteor scatter yol kaybı; **G4BAO** John Worsnop'un hesapladığı 172–190 dB'yi aktarır |
 | **PE1ITR** Rob Hardenberg | GRAVES radarı: sektörler, adımlar ve huzme zamanlaması (DUBUS 4/2007, 2021 güncellemesi) |
 | **DL1DBC** | Swan Meteor Skyview, gökyüzü kubbesi grafikleri için referans |
 | **IZ5TEK** Rossano | Yağmur verileri (scattertek) |

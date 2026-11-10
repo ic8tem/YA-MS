@@ -24,7 +24,7 @@ YA-MS tugineb paljude raadioamatööride, teadlaste ja asutuste tööle. Andmed,
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Optimaalne elevatsioon ja antenni nihked (AMS Bulletin 203 tabel) |
 | **LZ2HV** | MSHV: Hot A / Hot B viide |
-| **GM8JBJ** John | Meteor scatteri sumbumine (182 dB minimaalne) |
+| **GM8JBJ** John | Meteor scatteri sumbumine; vahendab **G4BAO** John Worsnopi arvutatud 172–190 dB |
 | **PE1ITR** Rob Hardenberg | GRAVESi radar: sektorid, sammud ja kiire ajastus (DUBUS 4/2007, uuendus 2021) |
 | **DL1DBC** | Swan Meteor Skyview, taevavõlvi graafika eeskuju |
 | **IZ5TEK** Rossano | Meteoorivoolude andmed (scattertek) |

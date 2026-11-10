@@ -12,7 +12,7 @@ Die oortjie **Bronne** lys elke werk waarop YA-MS gebou is, gegroepeer soos hier
 
 | Bron | Gebruik vir |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikel in Italiaans, weergawe 7) | Spore in die E-laag op ongeveer 90 km (SKiYMET-radar), aardradius 6372,7955 km, elevasieformule, Hot A / Hot B, side-scatter 10–30°, padverlies 182–200 dB, minimum sein −130 dBm, IARU-pingduurtes, sporadiese maksimum om 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikel in Italiaans, weergawe 7) | Spore in die E-laag op ongeveer 90 km (SKiYMET-radar), aardradius 6372,7955 km, elevasieformule, Hot A / Hot B, side-scatter 10–30°, padverlies, minimum sein −130 dBm, IARU-pingduurtes, sporadiese maksimum om 06 UTC |
 
 ## DOELTREFFENDHEID: BEREKENING EN TEORIE
 
@@ -22,7 +22,7 @@ Die oortjie **Bronne** lys elke werk waarop YA-MS gebou is, gegroepeer soos hier
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Doeltreffendheid op vier vaste rigtings (vergelyking) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45ste Nordic VUSHF, Mei 2025 | λ³- en λ²-reëls, middelpunt, beste rigting (radiant-az ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Spekulêre refleksie, vergelyking vir onderdigte spore |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (volgens Kaiser & Closs 1952) | Minimum padverlies van 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (volgens Kaiser & Closs 1952) | 172–190 dB padverlies bereken deur John Worsnop **G4BAO** (PhD-proefskrif), sowat 6 dB minder vir spore in lyn met die pad; die bladsy se eie 182 dB-tabel word nie gebruik nie (sien [Geometrie en padverlies](Geometry-and-Path-Loss-af)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (verskuiwingstabel van AMS Bulletin 203) | Optimale elevasie en verskuiwing, hot spots op 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (vergelyking; in die handleiding) |
 | Klaus von der Heide **DJ5HG** – QTFGUI en die handleiding "QTFGUI Help" (2007) | Keëlverstrooiingswet; toetsgeval Hamburg – Barcelona in die Kwadrantiede, gebruik om die model te verifieer |

@@ -81,13 +81,15 @@ Ja 1 − |p0|² < 0, trase ir garāka par 2·d_H, un stacijas neredz **nevienu k
 
 ## Zema blīvuma trases vājinājums
 
-**Avots:** McKinley vienādojums zema blīvuma sliedēm (β = 0, sin α = 1), bez antenu pastiprinājuma; q = elektronu lineārais blīvums, r_e = klasiskais elektrona rādiuss = 2,818·10⁻¹⁵ m, R1, R2 – attālumi no sliedes, φ – puse no izkliedes leņķa [36]:
+**Avots:** McKinley vienādojums un ITU-R ieteikums P.843 zema blīvuma sliedēm (sin α = 1), bez antenu pastiprinājuma; q = elektronu lineārais blīvums, r_e = klasiskais elektrona rādiuss = 2,818·10⁻¹⁵ m, R1, R2 – attālumi no sliedes, φ – puse no izkliedes leņķa, β – leņķis starp sliedi un trases plakni, a₁ – sākotnējā rādiusa koeficients, r₀ metros un h kilometros (P.843, 4. un 7. vien.) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Pārbaude:** ar q = 10¹⁴ elektroni/m pie 144 MHz: **181–192 dB** starp 600 un 2200 km, saskaņā ar raksta atsaucēm 144 MHz: **182 dB minimums** (GM8JBJ, no Kaiser & Closs 1952) un **200 dB vidēji** (OH5IY).
+**Izvēle:** sakaru budžetā un vājinājumu tabulā izmanto β = 90° (sliede šķērso trases plakni, nelabvēlīgākais gadījums: piesardzīga vērtība), un budžetā parāda arī labāko gadījumu, β = 0. r₀ ņem frekvences vidējā atbalss augstumā, h = 124 − 17 log f (P.843, 15. vien.): 0,76 m pie 95 km 50 MHz frekvencei, 0,40 m pie 87 km 144 MHz, 0,21 m pie 79 km 432 MHz. 1000 km trasē a₁ ir 0,2 dB pie 50 MHz, 0,6 dB pie 144 MHz un 1,4 dB pie 432 MHz (2,9 dB pie 600 km); pie DJ5HG fiksētajiem 102 km tas būtu ap 70 dB pie 432 MHz, t. i., nekādas atbalss.
+
+**Pārbaude:** ar q = 10¹⁴ elektroni/m, sliedēm 89,5 km augstumā un β = 0, pie 144 MHz: **182–192 dB** starp 600 un 2100 km (185 dB pie 1000 km), **172–190 dB** diapazonā, ko savā doktora disertācijā aprēķinājis John Worsnop **G4BAO**, kā norāda GM8JBJ. Ar β = 90° vājinājums pieaug par 10 dB pie 600 km, 13 dB pie 1000 km un 16 dB pie 2100 km; OH5IY **200 dB vidēji** atrodas starp abiem gadījumiem. 182 dB GM8JBJ tabulā nav apstiprinājums: tabulā nav norādīta frekvence, tās 86,4 dB katram posmam ir brīvās telpas vājinājums 500 km attālumā pie 1 MHz (trūkst locekļa 20 log f: 129,6 dB pie 144 MHz), un tās pozīciju summa ir 163,8 dB, nevis 182; lapā nav rakstīts ne “minimums”, ne “144 MHz”.
 
 ## Sakaru budžets
 

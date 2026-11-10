@@ -12,7 +12,7 @@ Fanen **Kilder** lister alle verkene YA-MS bygger på, gruppert som nedenfor (te
 
 | Kilde | Brukt til |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikkel på italiensk, versjon 7) | Spor i E-laget i ca. 90 km høyde (SKiYMET-radar), jordradius 6372,7955 km, elevasjonsformel, Hot A / Hot B, side-scatter 10–30°, strekningsdemping 182–200 dB, minste signal −130 dBm, IARU-pingvarigheter, sporadisk maksimum kl. 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikkel på italiensk, versjon 7) | Spor i E-laget i ca. 90 km høyde (SKiYMET-radar), jordradius 6372,7955 km, elevasjonsformel, Hot A / Hot B, side-scatter 10–30°, strekningsdemping, minste signal −130 dBm, IARU-pingvarigheter, sporadisk maksimum kl. 06 UTC |
 
 ## EFFEKTIVITET: BEREGNING OG TEORI
 
@@ -22,7 +22,7 @@ Fanen **Kilder** lister alle verkene YA-MS bygger på, gruppert som nedenfor (te
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Effektivitet på fire faste retninger (sammenligning) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, mai 2025 | λ³- og λ²-reglene, midtpunkt, beste retning (radiantens az ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Speilrefleksjon, likningen for underdense spor |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (etter Kaiser & Closs 1952) | Minste strekningsdemping 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (etter Kaiser & Closs 1952) | Strekningsdemping på 172–190 dB beregnet av John Worsnop **G4BAO** (doktoravhandling), omkring 6 dB mindre for spor på linje med strekningen; sidens egen tabell med 182 dB brukes ikke (se [Geometri og demping](Geometry-and-Path-Loss-nb)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (forskyvningstabellen i AMS Bulletin 203) | Optimal elevasjon og forskyvning, hot spots 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (sammenligning; i håndboken) |
 | Klaus von der Heide **DJ5HG** – QTFGUI og håndboken "QTFGUI Help" (2007) | Loven om kjegleformet spredning; testtilfellet Hamburg – Barcelona under Kvadrantidene, brukt til å verifisere modellen |

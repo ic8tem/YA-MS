@@ -96,6 +96,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 | **HOIATUS: Hot A (ja/või Hot B) jääb antenni peaharusse …** | Hot spot on antenni asimuudist ±θ/2 piires (θ = horisontaalne −3 dB peaharu): selle suunaga on see juba kaetud. Kaardil hallina. Soovitatud Hot jääb punaseks. |
 | **RADIANT LIIGA KÕRGEL (üle 70°)** | Kasulik radiant on sinu jaamast üle 70°: jäljed langevad peaaegu vertikaalselt ja peegeldavad trassi suunas vähe (DF5HC, DH9GCD). Samad tunnid on [tunnitabelis](Efficiency-Calculation-et#tunnitabel) märgitud ↑-ga. |
 | **MADAL RADIANT PIKI TRASSI** | Aktiivne radiant on alla 20° ja trassi suunast vähem kui 30° kaugusel. Arvutatud efektiivsus jääb madalaks (ettevaatlik), kuid DJ5HG ootab harvu tugevaid peegeldusi trassiga joondatud riivavatelt jälgedelt (Hamburg–Narvik, kvadrantiidid, umbes 19 UTC): tasub kuulata. |
+| **TRASS JÄLGEDE HORISONDIST KAUGEMAL** | Jälgede kõrgusel on trassi keskpunkt mõlema jaama horisondi all (umbes 2120 km, kui jäljed on 90 km kõrgusel). Hoiatus annab vajaliku minimaalse jälgede kõrguse (umbes 96 km 2200 km jaoks, 105 km 2300 km jaoks): side on võimalik ainult kõrgeimate jälgedega ning efektiivsused ja sumbumised on mudeli piiril. |
 | *E-kihi ühisala puudub* | Trass on pikem kui kahekordne ulatus jälgede kõrgusel: kaks jaama ei näe E-kihi ühist osa (üks hüpe võimatu). |
 | *Soovitatud Hot puudub* | Sel ajal pole peaaegu ühtegi aktiivset meteoorivoolu. |
 

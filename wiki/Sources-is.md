@@ -12,7 +12,7 @@ Flipinn **Heimildir** telur upp öll verk sem YA-MS byggir á, flokkuð eins og 
 
 | Heimild | Notuð fyrir |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (grein á ítölsku, útgáfa 7) | Slóðir í E-laginu í um 90 km (SKiYMET-ratsjá), jarðarradíus 6372,7955 km, formúla hæðarhorns, Hot A / Hot B, side-scatter 10–30°, leiðardeyfing 182–200 dB, lágmarksmerki −130 dBm, lengd pinga samkvæmt IARU, hámark stopulla loftsteina kl. 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (grein á ítölsku, útgáfa 7) | Slóðir í E-laginu í um 90 km (SKiYMET-ratsjá), jarðarradíus 6372,7955 km, formúla hæðarhorns, Hot A / Hot B, side-scatter 10–30°, leiðardeyfing, lágmarksmerki −130 dBm, lengd pinga samkvæmt IARU, hámark stopulla loftsteina kl. 06 UTC |
 
 ## NÝTNI: ÚTREIKNINGUR OG KENNING
 
@@ -22,7 +22,7 @@ Flipinn **Heimildir** telur upp öll verk sem YA-MS byggir á, flokkuð eins og 
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Nýtni í fjórum föstum stefnum (samanburður) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maí 2025 | Reglurnar λ³ og λ², miðpunktur, besta stefna (az geislapunkts ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Speglunarendurvarp, jafna undirþéttra slóða |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (eftir Kaiser & Closs 1952) | Lágmarksleiðardeyfing 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (eftir Kaiser & Closs 1952) | Leiðardeyfing 172–190 dB reiknuð af John Worsnop **G4BAO** (doktorsritgerð), um 6 dB minni fyrir slóðir í stefnu leiðarinnar; eigin 182 dB tafla síðunnar er ekki notuð (sjá [Rúmfræði og deyfingu](Geometry-and-Path-Loss-is)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (fráviksstafla AMS Bulletin 203) | Kjörhæðarhorn og frávik, heitir blettir í 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (samanburður; í handbókinni) |
 | Klaus von der Heide **DJ5HG** – QTFGUI og handbókin "QTFGUI Help" (2007) | Lögmál cone scattering; prófunartilvikið Hamborg – Barcelona í Kvaðrantítum, notað til að sannreyna líkanið |

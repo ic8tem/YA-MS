@@ -24,7 +24,7 @@ YA-MS remiasi daugelio radijo mėgėjų, mokslininkų ir institucijų darbu. Duo
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Optimali elevacija ir antenos nuokrypiai (AMS Bulletin 203 lentelė) |
 | **LZ2HV** | MSHV: Hot A / Hot B atskaitos taškas |
-| **GM8JBJ** John | Meteor scatter slopinimas (182 dB mažiausias) |
+| **GM8JBJ** John | Meteor scatter slopinimas; nurodo **G4BAO** John Worsnop apskaičiuotus 172–190 dB |
 | **PE1ITR** Rob Hardenberg | GRAVES radaras: sektoriai, žingsniai ir pluošto laikas (DUBUS 4/2007, atnaujinimas 2021) |
 | **DL1DBC** | Swan Meteor Skyview, dangaus skliauto grafikos pavyzdys |
 | **IZ5TEK** Rossano | Srautų duomenys (scattertek) |

@@ -81,13 +81,15 @@ Ist 1 − |p0|² < 0, ist die Strecke länger als 2·d_H und die Stationen sehen
 
 ## Dämpfung unterdichter Spuren
 
-**Quelle:** McKinleys Gleichung für unterdichte Spuren (β = 0, sin α = 1), ohne Antennengewinne; q = Elektronen-Liniendichte, r_e = klassischer Elektronenradius = 2,818·10⁻¹⁵ m, R1, R2 Entfernungen von der Spur, φ halber Streuwinkel [36]:
+**Quelle:** McKinleys Gleichung und ITU-R-Empfehlung P.843 für unterdichte Spuren (sin α = 1), ohne Antennengewinne; q = Elektronen-Liniendichte, r_e = klassischer Elektronenradius = 2,818·10⁻¹⁵ m, R1, R2 Entfernungen von der Spur, φ halber Streuwinkel, β Winkel zwischen der Spur und der Streckenebene, a₁ Anfangsradiusfaktor mit r₀ in m und h in km (P.843, Gl. 4 und 7) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Prüfung:** Mit q = 10¹⁴ Elektronen/m auf 144 MHz: **181–192 dB** zwischen 600 und 2200 km, im Einklang mit den Referenzwerten des Artikels bei 144 MHz: **182 dB Minimum** (GM8JBJ, nach Kaiser & Closs 1952) und **200 dB Mittel** (OH5IY).
+**Entscheidung:** Die Streckenbilanz und die Dämpfungstabelle verwenden β = 90° (Spur quer zur Streckenebene, der ungünstigste Fall: vorsichtiger Wert), und die Streckenbilanz zeigt auch den besten Fall, β = 0. r₀ wird in der mittleren Echohöhe für die Frequenz genommen, h = 124 − 17 log f (P.843, Gl. 15): 0,76 m in 95 km für 50 MHz, 0,40 m in 87 km für 144 MHz, 0,21 m in 79 km für 432 MHz. Über 1000 km beträgt a₁ 0,2 dB auf 50 MHz, 0,6 dB auf 144 MHz und 1,4 dB auf 432 MHz (2,9 dB bei 600 km); bei den festen 102 km von DJ5HG wären es auf 432 MHz etwa 70 dB, also überhaupt kein Echo.
+
+**Prüfung:** Mit q = 10¹⁴ Elektronen/m, Spuren in 89,5 km und β = 0, auf 144 MHz: **182–192 dB** zwischen 600 und 2100 km (185 dB bei 1000 km), innerhalb des Bereichs von **172–190 dB**, den John Worsnop **G4BAO** in seiner Doktorarbeit berechnet hat, wie GM8JBJ berichtet. Mit β = 90° steigt die Dämpfung um 10 dB bei 600 km, 13 dB bei 1000 km und 16 dB bei 2100 km; der **Mittelwert von 200 dB** von OH5IY liegt zwischen beiden Fällen. Die 182 dB in der Tabelle von GM8JBJ sind keine Bestätigung: Die Tabelle nennt keine Frequenz, ihre 86,4 dB pro Teilstrecke sind die Freiraumdämpfung über 500 km bei 1 MHz (der Term 20 log f fehlt: 129,6 dB auf 144 MHz), und ihre Posten ergeben zusammen 163,8 dB, nicht 182; die Seite sagt weder „Minimum“ noch „144 MHz“.
 
 ## Streckenbilanz
 

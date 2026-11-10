@@ -12,7 +12,7 @@ O separador **Fontes** enumera todas as obras em que o YA-MS se baseia, agrupada
 
 | Fonte | Usada para |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artigo em italiano, versão 7) | Rastos na camada E a cerca de 90 km (radar SKiYMET), raio terrestre 6372,7955 km, fórmula da elevação, Hot A / Hot B, side-scatter 10–30°, atenuação do percurso 182–200 dB, sinal mínimo −130 dBm, duração dos pings IARU, máximo dos esporádicos às 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artigo em italiano, versão 7) | Rastos na camada E a cerca de 90 km (radar SKiYMET), raio terrestre 6372,7955 km, fórmula da elevação, Hot A / Hot B, side-scatter 10–30°, atenuação do percurso, sinal mínimo −130 dBm, duração dos pings IARU, máximo dos esporádicos às 06 UTC |
 
 ## CÁLCULO E TEORIA DA EFICIÊNCIA
 
@@ -22,7 +22,7 @@ O separador **Fontes** enumera todas as obras em que o YA-MS se baseia, agrupada
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Eficiência em quatro direções fixas (comparação) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, maio de 2025 | Regras λ³ e λ², ponto médio, melhor direção (az do radiante ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Reflexão especular, equação do rasto subdenso |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (de Kaiser & Closs 1952) | Atenuação mínima do percurso de 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (de Kaiser & Closs 1952) | Atenuação do percurso de 172–190 dB calculada por John Worsnop **G4BAO** (tese de doutoramento), cerca de 6 dB menos para rastos alinhados com o percurso; a tabela de 182 dB da própria página não é usada (ver [Geometria e atenuação](Geometry-and-Path-Loss-pt)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (tabela de desvios do AMS Bulletin 203) | Elevação e desvio ótimos, hot spots a 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (comparação; no manual) |
 | Klaus von der Heide **DJ5HG** – QTFGUI e o manual "QTFGUI Help" (2007) | Lei do cone scattering; caso de teste Hamburgo – Barcelona com as Quadrântidas usado para verificar o modelo |

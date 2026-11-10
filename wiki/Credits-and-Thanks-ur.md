@@ -24,7 +24,7 @@ YA-MS بہت سے ریڈیو شوقیہ آپریٹروں، سائنس دانوں
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | بہترین ارتفاع اور اینٹینا انحراف (AMS Bulletin 203 کا جدول) |
 | **LZ2HV** | MSHV: Hot A / Hot B کا حوالہ |
-| **GM8JBJ** John | meteor scatter راستے کا نقصان (182 dB کم از کم) |
+| **GM8JBJ** John | meteor scatter راستے کا نقصان؛ **G4BAO** John Worsnop کے حساب کردہ 172–190 dB بتاتے ہیں |
 | **PE1ITR** Rob Hardenberg | GRAVES ریڈار: سیکٹر، قدم اور بیم کی زمان بندی (DUBUS 4/2007، تازہ کاری 2021) |
 | **DL1DBC** | Swan Meteor Skyview، آسمانی گنبد کی گرافکس کا حوالہ |
 | **IZ5TEK** Rossano | شہابی بارشوں کا ڈیٹا (scattertek) |

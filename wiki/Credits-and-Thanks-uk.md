@@ -24,7 +24,7 @@ YA-MS спирається на працю багатьох радіоамато
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Оптимальний кут місця і зміщення антени (таблиця AMS Bulletin 203) |
 | **LZ2HV** | MSHV: орієнтир для Hot A / Hot B |
-| **GM8JBJ** John | Загасання на трасі meteor scatter (мінімум 182 dB) |
+| **GM8JBJ** John | Загасання на трасі meteor scatter; наводить 172–190 dB, розраховані **G4BAO** John Worsnop |
 | **PE1ITR** Rob Hardenberg | Радар GRAVES: сектори, кроки й таймінг променя (DUBUS 4/2007, оновлення 2021) |
 | **DL1DBC** | Swan Meteor Skyview, зразок для графіки небесного склепіння |
 | **IZ5TEK** Rossano | Дані потоків (scattertek) |

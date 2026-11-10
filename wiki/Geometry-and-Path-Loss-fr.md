@@ -81,13 +81,15 @@ Si 1 − |p0|² < 0, le trajet est plus long que 2·d_H et les stations ne voien
 
 ## Affaiblissement sous-dense
 
-**Source :** équation de McKinley pour les traînées sous-denses (β = 0, sin α = 1), gains d'antenne exclus ; q = densité linéique d'électrons, r_e = rayon classique de l'électron = 2,818·10⁻¹⁵ m, R1, R2 distances à la traînée, φ demi-angle de diffusion [36] :
+**Source :** équation de McKinley et recommandation ITU-R P.843 pour les traînées sous-denses (sin α = 1), gains d'antenne exclus ; q = densité linéique d'électrons, r_e = rayon classique de l'électron = 2,818·10⁻¹⁵ m, R1, R2 distances à la traînée, φ demi-angle de diffusion, β angle entre la traînée et le plan du trajet, a₁ facteur de rayon initial avec r₀ en m et h en km (P.843, éq. 4 et 7) [36] :
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Vérification :** avec q = 10¹⁴ électrons/m à 144 MHz : **181–192 dB** entre 600 et 2200 km, en accord avec les références de l'article à 144 MHz : **182 dB minimum** (GM8JBJ, d'après Kaiser & Closs 1952) et **200 dB en moyenne** (OH5IY).
+**Choix :** le bilan et le tableau des affaiblissements utilisent β = 90° (traînée qui traverse le plan du trajet, le cas le moins favorable : valeur prudente) et le bilan affiche aussi le meilleur cas, β = 0. r₀ est pris à l'altitude moyenne des échos pour la fréquence, h = 124 − 17 log f (P.843, éq. 15) : 0,76 m à 95 km pour 50 MHz, 0,40 m à 87 km pour 144 MHz, 0,21 m à 79 km pour 432 MHz. Sur 1000 km, a₁ vaut 0,2 dB à 50 MHz, 0,6 dB à 144 MHz et 1,4 dB à 432 MHz (2,9 dB à 600 km) ; à l'altitude fixe de 102 km de DJ5HG, il serait d'environ 70 dB à 432 MHz, c'est-à-dire aucun écho.
+
+**Vérification :** avec q = 10¹⁴ électrons/m, traînées à 89,5 km et β = 0, à 144 MHz : **182–192 dB** entre 600 et 2100 km (185 dB à 1000 km), dans la plage de **172–190 dB** calculée par John Worsnop **G4BAO** dans sa thèse de doctorat, telle que rapportée par GM8JBJ. Avec β = 90°, l'affaiblissement augmente de 10 dB à 600 km, 13 dB à 1000 km et 16 dB à 2100 km ; la **moyenne de 200 dB** d'OH5IY se situe entre les deux cas. Les 182 dB du tableau de GM8JBJ ne sont pas une confirmation : le tableau n'indique aucune fréquence, ses 86,4 dB par bond sont l'affaiblissement en espace libre sur 500 km à 1 MHz (le terme 20 log f manque : 129,6 dB à 144 MHz) et ses postes totalisent 163,8 dB, pas 182 ; la page ne dit ni « minimum » ni « 144 MHz ».
 
 ## Bilan de liaison
 

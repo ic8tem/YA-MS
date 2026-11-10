@@ -24,7 +24,7 @@ YA-MS baut auf der Arbeit vieler Funkamateure, Wissenschaftler und Einrichtungen
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Optimale Elevation und Antennenablage (Tabelle aus AMS Bulletin 203) |
 | **LZ2HV** | MSHV: Referenz für Hot A / Hot B |
-| **GM8JBJ** John | Streckendämpfung bei Meteorscatter (Minimum 182 dB) |
+| **GM8JBJ** John | Streckendämpfung bei Meteorscatter; nennt die von **G4BAO** John Worsnop berechneten 172–190 dB |
 | **PE1ITR** Rob Hardenberg | Radar GRAVES: Sektoren, Schritte und Strahlzeiten (DUBUS 4/2007, Update 2021) |
 | **DL1DBC** | Swan Meteor Skyview, Vorlage für die Grafik der Himmelsansicht |
 | **IZ5TEK** Rossano | Daten der Meteorströme (scattertek) |

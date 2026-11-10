@@ -12,7 +12,7 @@ Sakk **Allikad** loetleb kõik tööd, millele YA-MS tugineb, rühmitatuna nagu 
 
 | Allikas | Kasutatud |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikkel itaalia keeles, versioon 7) | Jäljed E-kihis umbes 90 km kõrgusel (SKiYMET radar), Maa raadius 6372,7955 km, elevatsiooni valem, Hot A / Hot B, külghajumine 10–30°, sumbumine 182–200 dB, minimaalne signaal −130 dBm, IARU pingide kestused, sporaadiliste maksimum 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikkel itaalia keeles, versioon 7) | Jäljed E-kihis umbes 90 km kõrgusel (SKiYMET radar), Maa raadius 6372,7955 km, elevatsiooni valem, Hot A / Hot B, külghajumine 10–30°, sumbumine, minimaalne signaal −130 dBm, IARU pingide kestused, sporaadiliste maksimum 06 UTC |
 
 ## EFEKTIIVSUS: ARVUTUS JA TEOORIA
 
@@ -22,7 +22,7 @@ Sakk **Allikad** loetleb kõik tööd, millele YA-MS tugineb, rühmitatuna nagu 
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Efektiivsus neljas fikseeritud suunas (võrdlus) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45. Nordic VUSHF, mai 2025 | λ³ ja λ² reeglid, keskpunkt, parim suund (radiandi az ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Peegelpeegeldus, alatiheda jälje võrrand |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (Kaiser & Closs 1952 järgi) | 182 dB minimaalne sumbumine |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (Kaiser & Closs 1952 järgi) | John Worsnopi **G4BAO** arvutatud sumbumine 172–190 dB (doktoritöö), trassi suunas jälgede puhul umbes 6 dB väiksem; lehe enda 182 dB tabelit ei kasutata (vt [Geomeetria ja sumbumine](Geometry-and-Path-Loss-et)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (AMS Bulletin 203 nihete tabel) | Optimaalne elevatsioon ja nihe, hot spotid 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (võrdlus; juhendis) |
 | Klaus von der Heide **DJ5HG** – QTFGUI ja juhend "QTFGUI Help" (2007) | Koonushajumise seadus; Hamburg – Barcelona Kvadrantiidide katsejuhtum mudeli kontrolliks |

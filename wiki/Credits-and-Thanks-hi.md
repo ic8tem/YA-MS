@@ -24,7 +24,7 @@ YA-MS अनेक रेडियो शौकीनों, वैज्ञा�
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | इष्टतम उन्नयन और ऐंटेना विचलन (AMS Bulletin 203 तालिका) |
 | **LZ2HV** | MSHV: Hot A / Hot B संदर्भ |
-| **GM8JBJ** John | मीटियोर स्कैटर पथ क्षीणन (न्यूनतम 182 dB) |
+| **GM8JBJ** John | मीटियोर स्कैटर पथ क्षीणन; **G4BAO** John Worsnop द्वारा गणना किए गए 172–190 dB बताते हैं |
 | **PE1ITR** Rob Hardenberg | GRAVES रडार: सेक्टर, चरण और बीम का समय (DUBUS 4/2007, अद्यतन 2021) |
 | **DL1DBC** | Swan Meteor Skyview, आकाश गुंबद ग्राफ़िक्स का संदर्भ |
 | **IZ5TEK** Rossano | उल्का वर्षा डेटा (scattertek) |

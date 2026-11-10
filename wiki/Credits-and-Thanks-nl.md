@@ -24,7 +24,7 @@ YA-MS steunt op het werk van veel radioamateurs, wetenschappers en instituten. G
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Optimale elevatie en antenne-afwijkingen (tabel uit AMS Bulletin 203) |
 | **LZ2HV** | MSHV: referentie voor Hot A / Hot B |
-| **GM8JBJ** John | Trajectdemping bij meteorscatter (minimaal 182 dB) |
+| **GM8JBJ** John | Trajectdemping bij meteorscatter; vermeldt de 172–190 dB berekend door **G4BAO** John Worsnop |
 | **PE1ITR** Rob Hardenberg | GRAVES-radar: sectoren, stappen en bundeltiming (DUBUS 4/2007, update 2021) |
 | **DL1DBC** | Swan Meteor Skyview, referentie voor de grafiek van de hemelkoepel |
 | **IZ5TEK** Rossano | Zwermgegevens (scattertek) |

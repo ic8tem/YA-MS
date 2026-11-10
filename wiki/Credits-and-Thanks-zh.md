@@ -24,7 +24,7 @@ YA-MS 建立在众多业余无线电爱好者、科学家和机构的工作之�
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | 最佳仰角和天线偏角（AMS Bulletin 203 表） |
 | **LZ2HV** | MSHV：Hot A / Hot B 参考 |
-| **GM8JBJ** John | 流星散射路径损耗（最小 182 dB） |
+| **GM8JBJ** John | 流星散射路径损耗；引用 **G4BAO** John Worsnop 计算的 172–190 dB |
 | **PE1ITR** Rob Hardenberg | GRAVES 雷达：扇区、步进和波束时序（DUBUS 4/2007，2021 年更新） |
 | **DL1DBC** | Swan Meteor Skyview，天穹图形的参考 |
 | **IZ5TEK** Rossano | 流星雨数据（scattertek） |

@@ -24,7 +24,7 @@ YA-MS দাঁড়িয়ে আছে বহু রেডিও অ্য�
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | সর্বোত্তম এলিভেশন ও অ্যান্টেনার বিচ্যুতি (AMS Bulletin 203-এর টেবিল) |
 | **LZ2HV** | MSHV: Hot A / Hot B-র তুলনাসূত্র |
-| **GM8JBJ** John | মিটিওর স্ক্যাটারের পথ ক্ষয় (182 dB ন্যূনতম) |
+| **GM8JBJ** John | মিটিওর স্ক্যাটারের পথ ক্ষয়; **G4BAO** John Worsnop-এর গণনা করা 172–190 dB উল্লেখ করেন |
 | **PE1ITR** Rob Hardenberg | GRAVES রাডার: সেক্টর, ধাপ ও বিমের সময়সূচি (DUBUS 4/2007, হালনাগাদ 2021) |
 | **DL1DBC** | Swan Meteor Skyview, আকাশ-গম্বুজের গ্রাফিক্সের সূত্র |
 | **IZ5TEK** Rossano | উল্কাবৃষ্টির তথ্য (scattertek) |

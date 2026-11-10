@@ -96,6 +96,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 | **ADVARSEL: Hot A (og/eller Hot B) ligger innenfor antenneloben …** | Hot spot-et ligger innenfor ±θ/2 av antennens asimut (θ = horisontal −3 dB-lobe): med denne retningen er det allerede dekket. Vist i grått på kartet. Anbefalt Hot forblir rødt. |
 | **RADIANTEN FOR HØYT (over 70°)** | En nyttig radiant står over 70° sett fra stasjonen din: sporene faller nesten loddrett og reflekterer lite mot strekningen (DF5HC, DH9GCD). De samme timene merkes med ↑ i [timetabellen](Efficiency-Calculation-nb#timetabell). |
 | **LAV RADIANT LANGS STREKNINGEN** | En aktiv radiant står under 20° og innenfor 30° av strekningens retning. Den beregnede effektiviteten forblir lav (forsiktig), men DJ5HG venter sjeldne, sterke refleksjoner fra streifende spor på linje med strekningen (Hamburg–Narvik, Kvadrantidene, ca. 19 UTC): verdt å lytte etter. |
+| **STREKNING FORBI SPORENES HORISONT** | I sporhøyde ligger strekningens midtpunkt under horisonten til begge stasjonene (omkring 2120 km med spor i 90 km). Advarselen oppgir minste nødvendige sporhøyde (omkring 96 km for 2200 km, 105 km for 2300 km): forbindelsen er bare mulig med de høyeste sporene, og effektiviteter og demping er på grensen av modellen. |
 | *Ingen felles sone i E-laget* | Strekningen er lengre enn dobbelt rekkevidde i sporhøyden: de to stasjonene ser ingen felles del av E-laget (enkelthopp umulig). |
 | *Ingen anbefalt Hot* | Nesten ingen aktive svermer akkurat nå. |
 

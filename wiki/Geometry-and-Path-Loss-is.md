@@ -81,13 +81,15 @@ Ef 1 − |p0|² < 0 er leiðin lengri en 2·d_H og stöðvarnar sjá **ekkert sa
 
 ## Leiðardeyfing undirþéttra slóða
 
-**Heimild:** jafna McKinleys fyrir undirþéttar slóðir (β = 0, sin α = 1), án loftnetsmögnunar; q = línuleg rafeindaþéttni, r_e = klassískur rafeindageisli = 2,818·10⁻¹⁵ m, R1, R2 fjarlægðir frá slóðinni, φ hálft dreifihornið [36]:
+**Heimild:** jafna McKinleys og ITU-R-tilmæli P.843 fyrir undirþéttar slóðir (sin α = 1), án loftnetsmögnunar; q = línuleg rafeindaþéttni, r_e = klassískur rafeindageisli = 2,818·10⁻¹⁵ m, R1, R2 fjarlægðir frá slóðinni, φ hálft dreifihornið, β hornið milli slóðarinnar og sléttu leiðarinnar, a₁ upphafsgeislastuðull með r₀ í m og h í km (P.843, jöfnur 4 og 7) [36]:
 
 ```math
-L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\cos^2\varphi}{\lambda^3 q^2 r_e^2}\right]\ \mathrm{dB}
+L = 10\log_{10}\left[\frac{16\pi^2 R_1 R_2 (R_1+R_2)\,(1-\cos^2\beta\,\sin^2\varphi)}{\lambda^3 q^2 r_e^2}\right] - 10\log_{10} a_1\ \mathrm{dB},\qquad a_1 = \exp\left(-\frac{8\pi^2 r_0^2}{\lambda^2\sec^2\varphi}\right),\qquad \log_{10} r_0 = 0{.}035\,h - 3{.}45
 ```
 
-**Prófun:** með q = 10¹⁴ rafeindir/m á 144 MHz: **181–192 dB** milli 600 og 2200 km, í samræmi við viðmiðanir greinarinnar á 144 MHz: **182 dB lágmark** (GM8JBJ, eftir Kaiser & Closs 1952) og **200 dB að meðaltali** (OH5IY).
+**Val:** aflreikningurinn og deyfingartaflan nota β = 90° (slóð sem sker sléttu leiðarinnar, óhagstæðasta tilvikið: varfærið gildi) og aflreikningurinn sýnir einnig besta tilvikið, β = 0. r₀ er tekið í meðalhæð bergmála fyrir tíðnina, h = 124 − 17 log f (P.843, jafna 15): 0,76 m í 95 km fyrir 50 MHz, 0,40 m í 87 km fyrir 144 MHz, 0,21 m í 79 km fyrir 432 MHz. Yfir 1000 km er a₁ 0,2 dB á 50 MHz, 0,6 dB á 144 MHz og 1,4 dB á 432 MHz (2,9 dB við 600 km); í föstu 102 km hæð DJ5HG væri hann um 70 dB á 432 MHz, þ.e. ekkert bergmál.
+
+**Prófun:** með q = 10¹⁴ rafeindir/m, slóðir í 89,5 km og β = 0, á 144 MHz: **182–192 dB** milli 600 og 2100 km (185 dB við 1000 km), innan bilsins **172–190 dB** sem John Worsnop **G4BAO** reiknaði í doktorsritgerð sinni, eins og GM8JBJ greinir frá. Með β = 90° eykst deyfingin um 10 dB við 600 km, 13 dB við 1000 km og 16 dB við 2100 km; **200 dB meðaltal** OH5IY liggur milli tilvikanna tveggja. 182 dB í töflu GM8JBJ eru ekki staðfesting: taflan gefur enga tíðni, 86,4 dB hennar á hvern legg eru deyfing í lausu rúmi yfir 500 km á 1 MHz (liðinn 20 log f vantar: 129,6 dB á 144 MHz) og liðir hennar leggjast saman í 163,8 dB, ekki 182; á síðunni stendur hvorki „lágmark“ né „144 MHz“.
 
 ## Aflreikningur
 

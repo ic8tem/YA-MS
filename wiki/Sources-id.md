@@ -12,7 +12,7 @@ Tab **Sumber** mencantumkan setiap karya yang menjadi dasar YA-MS, dikelompokkan
 
 | Sumber | Dipakai untuk |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikel berbahasa Italia, versi 7) | Jejak di lapisan E pada sekitar 90 km (radar SKiYMET), jari-jari Bumi 6372,7955 km, rumus elevasi, Hot A / Hot B, side scatter 10–30°, redaman lintasan 182–200 dB, sinyal minimum −130 dBm, durasi ping IARU, puncak sporadis pada 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikel berbahasa Italia, versi 7) | Jejak di lapisan E pada sekitar 90 km (radar SKiYMET), jari-jari Bumi 6372,7955 km, rumus elevasi, Hot A / Hot B, side scatter 10–30°, redaman lintasan, sinyal minimum −130 dBm, durasi ping IARU, puncak sporadis pada 06 UTC |
 
 ## PERHITUNGAN DAN TEORI EFISIENSI
 
@@ -22,7 +22,7 @@ Tab **Sumber** mencantumkan setiap karya yang menjadi dasar YA-MS, dikelompokkan
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Efisiensi pada empat arah tetap (pembanding) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, Nordic VUSHF ke-45, Mei 2025 | Aturan λ³ dan λ², titik tengah, arah terbaik (az radian ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Pantulan spekular, persamaan jejak underdense |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (dari Kaiser & Closs 1952) | Redaman lintasan minimum 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (dari Kaiser & Closs 1952) | Redaman lintasan 172–190 dB yang dihitung John Worsnop **G4BAO** (disertasi PhD), sekitar 6 dB lebih kecil untuk jejak yang searah lintasan; tabel 182 dB milik halaman itu sendiri tidak dipakai (lihat [Geometri dan redaman](Geometry-and-Path-Loss-id)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (tabel offset AMS Bulletin 203) | Elevasi dan offset optimal, hot spot 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (pembanding; dalam manual) |
 | Klaus von der Heide **DJ5HG** – QTFGUI dan manual "QTFGUI Help" (2007) | Hukum hamburan kerucut; kasus uji Quadrantid Hamburg – Barcelona yang dipakai untuk memverifikasi model |

@@ -12,7 +12,7 @@ Der Reiter **Quellen** listet alle Werke auf, auf denen YA-MS aufbaut, gruppiert
 
 | Quelle | Verwendet für |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (Artikel auf Italienisch, Version 7) | Spuren in der E-Schicht in ca. 90 km (SKiYMET-Radar), Erdradius 6372,7955 km, Elevationsformel, Hot A / Hot B, Side-Scatter 10–30°, Streckendämpfung 182–200 dB, Empfangsschwelle −130 dBm, IARU-Pingdauern, sporadisches Maximum um 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (Artikel auf Italienisch, Version 7) | Spuren in der E-Schicht in ca. 90 km (SKiYMET-Radar), Erdradius 6372,7955 km, Elevationsformel, Hot A / Hot B, Side-Scatter 10–30°, Streckendämpfung, Empfangsschwelle −130 dBm, IARU-Pingdauern, sporadisches Maximum um 06 UTC |
 
 ## BERECHNUNG UND THEORIE DER EFFEKTIVITÄT
 
@@ -22,7 +22,7 @@ Der Reiter **Quellen** listet alle Werke auf, auf denen YA-MS aufbaut, gruppiert
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Effektivität in vier festen Richtungen (Vergleich) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, Mai 2025 | λ³- und λ²-Regel, Mittelpunkt, beste Richtung (Radiant-Az. ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Spiegelnde Reflexion, Gleichung der unterdichten Spuren |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (nach Kaiser & Closs 1952) | Minimale Streckendämpfung 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (nach Kaiser & Closs 1952) | Streckendämpfung 172–190 dB, berechnet von John Worsnop **G4BAO** (Doktorarbeit), etwa 6 dB weniger für Spuren in Streckenrichtung; die eigene 182-dB-Tabelle der Seite wird nicht verwendet (siehe [Geometrie und Dämpfung](Geometry-and-Path-Loss-de)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (Ablagetabelle aus AMS Bulletin 203) | Optimale Elevation und Ablage, Hot-Spots 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (Vergleich; im Handbuch) |
 | Klaus von der Heide **DJ5HG** – QTFGUI und das Handbuch "QTFGUI Help" (2007) | Kegelstreugesetz; Testfall Hamburg – Barcelona in den Quadrantiden, zur Prüfung des Modells verwendet |

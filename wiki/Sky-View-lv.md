@@ -96,6 +96,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 | **UZMANĪBU: Hot A (un/vai Hot B) ir antenas ziedlapiņā …** | Hot spot ir ±θ/2 robežās no antenas azimuta (θ = horizontālā −3 dB ziedlapiņa): ar šo virzienu tas jau ir pārklāts. Kartē tas ir pelēks. Ieteicamais Hot paliek sarkans. |
 | **RADIANTS PĀRĀK AUGSTU (virs 70°)** | Kāds lietderīgs radiants ir virs 70°, skatoties no tavas stacijas: sliedes krīt gandrīz vertikāli un uz trasi atstaro maz (DF5HC, DH9GCD). Tās pašas stundas [stundu tabulā](Efficiency-Calculation-lv#stundu-tabula) ir atzīmētas ar ↑. |
 | **ZEMS RADIANTS GAR TRASI** | Aktīvs radiants ir zem 20° un 30° robežās no trases virziena. Aprēķinātā efektivitāte paliek zema (piesardzīga), bet DJ5HG sagaida retus, spēcīgus atstarojumus no slīdošām sliedēm gar trasi (Hamburga–Narvika, kvadrantīdas, ap 19 UTC): vērts paklausīties. |
+| **TRASE AIZ SLIEŽU HORIZONTA** | Sliežu augstumā trases viduspunkts ir zem abu staciju horizonta (ap 2120 km, ja sliedes ir 90 km augstumā). Brīdinājums norāda nepieciešamo minimālo sliežu augstumu (ap 96 km 2200 km trasei, 105 km 2300 km trasei): savienojums iespējams tikai ar augstākajām sliedēm, un efektivitātes un vājinājumi ir uz modeļa iespēju robežas. |
 | *Nav kopējas E slāņa zonas* | Trase ir garāka par divkāršu sniedzamību sliežu augstumā: abas stacijas neredz kopīgu E slāņa daļu (viens lēciens nav iespējams). |
 | *Nav ieteicamā Hot* | Šajā laikā gandrīz nav aktīvu plūsmu. |
 

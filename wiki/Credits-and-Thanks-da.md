@@ -24,7 +24,7 @@ YA-MS bygger på arbejdet fra mange radioamatører, forskere og institutioner. D
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Optimal elevation og antenneforskydning (tabellen fra AMS Bulletin 203) |
 | **LZ2HV** | MSHV: reference for Hot A / Hot B |
-| **GM8JBJ** John | Strækningsdæmpning for meteor scatter (minimum 182 dB) |
+| **GM8JBJ** John | Strækningsdæmpning for meteor scatter; gengiver de 172–190 dB beregnet af **G4BAO** John Worsnop |
 | **PE1ITR** Rob Hardenberg | GRAVES-radaren: sektorer, trin og strålens timing (DUBUS 4/2007, opdatering 2021) |
 | **DL1DBC** | Swan Meteor Skyview, forbillede for himmelkuplens grafik |
 | **IZ5TEK** Rossano | Sværmdata (scattertek) |

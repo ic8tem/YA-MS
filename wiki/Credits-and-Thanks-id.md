@@ -24,7 +24,7 @@ YA-MS berdiri di atas karya banyak radio amatir, ilmuwan dan lembaga. Data, tabe
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Elevasi optimal dan offset antena (tabel AMS Bulletin 203) |
 | **LZ2HV** | MSHV: referensi Hot A / Hot B |
-| **GM8JBJ** John | Redaman lintasan meteor scatter (minimum 182 dB) |
+| **GM8JBJ** John | Redaman lintasan meteor scatter; melaporkan 172–190 dB yang dihitung oleh **G4BAO** John Worsnop |
 | **PE1ITR** Rob Hardenberg | Radar GRAVES: sektor, langkah dan pewaktuan berkas (DUBUS 4/2007, pembaruan 2021) |
 | **DL1DBC** | Swan Meteor Skyview, referensi untuk grafik kubah langit |
 | **IZ5TEK** Rossano | Data hujan meteor (scattertek) |

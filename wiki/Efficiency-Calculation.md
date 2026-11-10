@@ -73,7 +73,7 @@ The number of meteors reaching a point is proportional to the sine of the radian
 
 **Calculation settings** (same row, radio buttons): **Cautious** (default, the most cautious values: trail height from the radar, normal trails, β on), **As DJ5HG** (102 km, longer trails, β) and **Custom**, selected automatically when you change the height, the *from radar* box, the longer-trails option or β by hand.
 
-**3. Sum and percentage. Points every 15 km at the trail height, only where both stations see them above the lobe elevation (*choice*). 100 % is the most favourable radiant position for that path:
+**3. Sum and percentage.** Points every 15 km at the trail height, only where both stations see them above the lobe elevation (*choice*). 100 % is the most favourable radiant position for that path:
 
 ```math
 F(\hat{s}) = \sum_P w_P\, S_P\, \max(0,\ \hat{s}\cdot\hat{u}_P),\qquad \eta(\hat{s}) = 100\,\frac{F(\hat{s})}{\max F}\ \%

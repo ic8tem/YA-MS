@@ -12,7 +12,7 @@
 
 | स्रोत | किसके लिए उपयोग |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (इतालवी में लेख, संस्करण 7) | E परत में लगभग 90 km पर ट्रेल (SKiYMET रडार), पृथ्वी की त्रिज्या 6372.7955 km, उन्नयन सूत्र, Hot A / Hot B, साइड-स्कैटर 10–30°, पथ क्षीणन 182–200 dB, न्यूनतम सिग्नल −130 dBm, IARU पिंग अवधियाँ, 06 UTC पर छिटपुट शिखर |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (इतालवी में लेख, संस्करण 7) | E परत में लगभग 90 km पर ट्रेल (SKiYMET रडार), पृथ्वी की त्रिज्या 6372.7955 km, उन्नयन सूत्र, Hot A / Hot B, साइड-स्कैटर 10–30°, पथ क्षीणन, न्यूनतम सिग्नल −130 dBm, IARU पिंग अवधियाँ, 06 UTC पर छिटपुट शिखर |
 
 ## दक्षता: गणना और सिद्धांत
 
@@ -22,7 +22,7 @@
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | चार निश्चित दिशाओं पर दक्षता (तुलना) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, मई 2025 | λ³ और λ² नियम, मध्य बिंदु, सर्वोत्तम दिशा (रेडिएंट az ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | दर्पणी परावर्तन, अल्प-घनत्व ट्रेल समीकरण |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (Kaiser & Closs 1952 से) | 182 dB न्यूनतम पथ क्षीणन |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (Kaiser & Closs 1952 से) | John Worsnop **G4BAO** द्वारा गणना किया गया 172–190 dB पथ क्षीणन (PhD शोध-प्रबंध), पथ की सीध वाले ट्रेलों के लिए लगभग 6 dB कम; पृष्ठ की अपनी 182 dB वाली तालिका उपयोग नहीं की जाती (देखें [ज्यामिति और क्षीणन](Geometry-and-Path-Loss-hi)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (AMS Bulletin 203 विचलन तालिका) | इष्टतम उन्नयन और विचलन, 50–150 km पर हॉट स्पॉट |
 | **LZ2HV** – MSHV | Hot A / Hot B (तुलना; पुस्तिका में) |
 | Klaus von der Heide **DJ5HG** – QTFGUI और "QTFGUI Help" पुस्तिका (2007) | शंकु प्रकीर्णन नियम; मॉडल की जाँच के लिए उपयोग किया गया Hamburg – Barcelona Quadrantids परीक्षण उदाहरण |

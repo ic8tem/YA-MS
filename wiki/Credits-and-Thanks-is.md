@@ -24,7 +24,7 @@ YA-MS byggir á verkum margra radíóamatöra, vísindamanna og stofnana. Gögn,
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Kjörhæðarhorn og frávik loftnets (tafla AMS Bulletin 203) |
 | **LZ2HV** | MSHV: viðmiðun fyrir Hot A / Hot B |
-| **GM8JBJ** John | Leiðardeyfing í meteor scatter (lágmark 182 dB) |
+| **GM8JBJ** John | Leiðardeyfing í meteor scatter; greinir frá 172–190 dB sem **G4BAO** John Worsnop reiknaði |
 | **PE1ITR** Rob Hardenberg | GRAVES-ratsjáin: geirar, skref og tímasetning geislans (DUBUS 4/2007, uppfærsla 2021) |
 | **DL1DBC** | Swan Meteor Skyview, viðmiðun fyrir grafík himinhvelfingarinnar |
 | **IZ5TEK** Rossano | Gögn um drífur (scattertek) |

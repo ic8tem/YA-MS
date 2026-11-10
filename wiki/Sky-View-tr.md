@@ -96,6 +96,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 | **UYARI: Hot A (ve/veya Hot B) anten lobunun içinde …** | Hot spot anten azimutunun ±θ/2 içindedir (θ = yatay −3 dB lob): bu yönlendirmeyle zaten kapsanıyordur. Haritada gri gösterilir. Önerilen Hot kırmızı kalır. |
 | **RADYANT ÇOK YÜKSEK (70° üstünde)** | Yararlı bir radyant istasyonunuzdan 70°'nin üstündedir: izler neredeyse dikey düşer ve yola doğru az yansıtır (DF5HC, DH9GCD). Aynı saatler [saatlik tabloda](Efficiency-Calculation-tr#saatlik-tablo) ↑ ile işaretlenir. |
 | **YOL BOYUNCA ALÇAK RADYANT** | Etkin bir radyant 20°'nin altında ve yol doğrultusuna 30°'den yakın. Hesaplanan verim düşük (temkinli) kalır, ancak DJ5HG yolla aynı doğrultudaki sıyırma izlerinden seyrek ama güçlü yansımalar bekler (Hamburg–Narvik, Quadrantidler, yaklaşık 19 UTC): dinlemeye değer. |
+| **YOL İZ UFKUNUN ÖTESİNDE** | İz yüksekliğinde yolun orta noktası her iki istasyonun da ufkunun altındadır (izler 90 km'deyken yaklaşık 2120 km). Uyarı, gereken en düşük iz yüksekliğini verir (2200 km için yaklaşık 96 km, 2300 km için 105 km): bağlantı yalnızca en yüksek izlerle mümkündür ve verimler ile kayıplar modelin sınırındadır. |
 | *Ortak E katmanı bölgesi yok* | Yol, iz yüksekliğindeki menzilin iki katından uzundur: iki istasyon E katmanının ortak bir bölümünü görmez (tek atlama olanaksız). |
 | *Önerilen Hot yok* | Bu saatte neredeyse hiç etkin yağmur yok. |
 

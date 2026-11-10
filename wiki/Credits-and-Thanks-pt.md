@@ -24,7 +24,7 @@ O YA-MS assenta no trabalho de muitos radioamadores, cientistas e instituições
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Elevação ótima e desvios da antena (tabela do AMS Bulletin 203) |
 | **LZ2HV** | MSHV: referência para Hot A / Hot B |
-| **GM8JBJ** John | Atenuação do percurso em meteor scatter (182 dB no mínimo) |
+| **GM8JBJ** John | Atenuação do percurso em meteor scatter; refere os 172–190 dB calculados por **G4BAO** John Worsnop |
 | **PE1ITR** Rob Hardenberg | Radar GRAVES: setores, passos e temporização do feixe (DUBUS 4/2007, atualização 2021) |
 | **DL1DBC** | Swan Meteor Skyview, referência para o gráfico da abóbada celeste |
 | **IZ5TEK** Rossano | Dados das chuvas (scattertek) |

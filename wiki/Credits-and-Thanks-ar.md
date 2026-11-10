@@ -24,7 +24,7 @@
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | زاوية الارتفاع المثلى وإزاحات الهوائي (جدول AMS Bulletin 203) |
 | **LZ2HV** | MSHV: مرجع Hot A / Hot B |
-| **GM8JBJ** John | توهين مسار التشتت النيزكي (الحد الأدنى 182 dB) |
+| **GM8JBJ** John | توهين مسار التشتت النيزكي؛ ينقل قيم 172–190 dB التي حسبها **G4BAO** John Worsnop |
 | **PE1ITR** Rob Hardenberg | رادار GRAVES: القطاعات والخطوات وتوقيت الحزمة (DUBUS 4/2007، تحديث 2021) |
 | **DL1DBC** | Swan Meteor Skyview، مرجع رسومات القبة السماوية |
 | **IZ5TEK** Rossano | بيانات الزخات (scattertek) |

@@ -24,7 +24,7 @@ Nakatayo ang YA-MS sa gawa ng maraming radio amateur, siyentipiko at institusyon
 | **VK5DJ** John Drew | Yagi Calculator |
 | **W8WN** Shelby | Pinakamainam na elebasyon at offset ng antenna (talahanayan ng AMS Bulletin 203) |
 | **LZ2HV** | MSHV: sanggunian para sa Hot A / Hot B |
-| **GM8JBJ** John | Path loss ng meteor scatter (182 dB pinakamababa) |
+| **GM8JBJ** John | Path loss ng meteor scatter; iniuulat ang 172–190 dB na kinalkula ni **G4BAO** John Worsnop |
 | **PE1ITR** Rob Hardenberg | Radar GRAVES: mga sektor, hakbang at tiyempo ng beam (DUBUS 4/2007, update 2021) |
 | **DL1DBC** | Swan Meteor Skyview, sanggunian para sa grapika ng kalangitan |
 | **IZ5TEK** Rossano | Datos ng mga shower (scattertek) |

@@ -12,7 +12,7 @@
 
 | 出典 | 用途 |
 |---|---|
-| Costantino Cerrotta **IC8TEM**、Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (イタリア語の記事、第 7 版) | 約 90 km の E 層の流星痕 (SKiYMET レーダー)、地球半径 6372.7955 km、仰角の式、Hot A / Hot B、サイドスキャッター 10–30°、パス損失 182–200 dB、最小信号 −130 dBm、IARU のピング継続時間、06 UTC の散在流星のピーク |
+| Costantino Cerrotta **IC8TEM**、Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (イタリア語の記事、第 7 版) | 約 90 km の E 層の流星痕 (SKiYMET レーダー)、地球半径 6372.7955 km、仰角の式、Hot A / Hot B、サイドスキャッター 10–30°、パス損失、最小信号 −130 dBm、IARU のピング継続時間、06 UTC の散在流星のピーク |
 
 ## 効率の計算と理論
 
@@ -22,7 +22,7 @@
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61、qsl.net/dl5mcg | 4 つの固定方向での効率 (比較用) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*、45th Nordic VUSHF、2025 年 5 月 | λ³ / λ² 則、中間点、最良方向 (放射点方位 ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*、McGraw-Hill、1961 | 鏡面反射、アンダーデンス流星痕の式 |
-| John **GM8JBJ** – Meteor scatter path loss、hamradio.engineering (Kaiser & Closs 1952 より) | 最小パス損失 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss、hamradio.engineering (Kaiser & Closs 1952 より) | John Worsnop **G4BAO** が計算した 172–190 dB のパス損失 (博士論文)。パスに沿った流星痕では約 6 dB 少ない。そのページ自体の 182 dB の表は使っていません ([幾何と損失](Geometry-and-Path-Loss-ja) を参照) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (AMS Bulletin 203 の偏差表) | 最適な仰角とオフセット、50–150 km のホットスポット |
 | **LZ2HV** – MSHV | Hot A / Hot B (比較用; マニュアル内) |
 | Klaus von der Heide **DJ5HG** – QTFGUI と "QTFGUI Help" マニュアル (2007) | 円錐散乱則; モデルの検証に使ったしぶんぎ座流星群でのハンブルク – バルセロナの試験例 |

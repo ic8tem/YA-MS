@@ -12,7 +12,7 @@ L'onglet **Sources** énumère tous les travaux sur lesquels repose YA-MS, regro
 
 | Source | Utilisée pour |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (article en italien, version 7) | Traînées dans la couche E vers 90 km (radar SKiYMET), rayon terrestre 6372,7955 km, formule de l'élévation, Hot A / Hot B, side-scatter de 10–30°, affaiblissement de trajet 182–200 dB, signal minimal −130 dBm, durées des pings IARU, maximum des sporadiques à 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (article en italien, version 7) | Traînées dans la couche E vers 90 km (radar SKiYMET), rayon terrestre 6372,7955 km, formule de l'élévation, Hot A / Hot B, side-scatter de 10–30°, affaiblissement de trajet, signal minimal −130 dBm, durées des pings IARU, maximum des sporadiques à 06 UTC |
 
 ## CALCUL ET THÉORIE DE L'EFFICACITÉ
 
@@ -22,7 +22,7 @@ L'onglet **Sources** énumère tous les travaux sur lesquels repose YA-MS, regro
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Efficacité sur quatre directions fixes (comparaison) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45e Nordic VUSHF, mai 2025 | Règles λ³ et λ², point milieu, meilleure direction (az du radiant ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Réflexion spéculaire, équation des traînées sous-denses |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (d'après Kaiser & Closs 1952) | Affaiblissement de trajet minimal de 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (d'après Kaiser & Closs 1952) | Affaiblissement de trajet de 172–190 dB calculé par John Worsnop **G4BAO** (thèse de doctorat), environ 6 dB de moins pour les traînées alignées avec le trajet ; le tableau de 182 dB de la page elle-même n'est pas utilisé (voir [Géométrie et affaiblissement](Geometry-and-Path-Loss-fr)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (tableau des décalages de l'AMS Bulletin 203) | Élévation et décalage optimaux, hot spots à 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (comparaison ; dans le manuel) |
 | Klaus von der Heide **DJ5HG** – QTFGUI et le manuel "QTFGUI Help" (2007) | Loi de diffusion en cône ; cas d'essai Hambourg – Barcelone dans les Quadrantides, utilisé pour vérifier le modèle |

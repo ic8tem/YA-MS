@@ -12,7 +12,7 @@
 
 | Kaynak | Kullanıldığı yer |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (İtalyanca makale, sürüm 7) | E katmanında yaklaşık 90 km'deki izler (SKiYMET radarı), Dünya yarıçapı 6372,7955 km, elevasyon formülü, Hot A / Hot B, 10–30° side scatter, 182–200 dB yol kaybı, en düşük sinyal −130 dBm, IARU ping süreleri, 06 UTC'deki sporadik tepe |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (İtalyanca makale, sürüm 7) | E katmanında yaklaşık 90 km'deki izler (SKiYMET radarı), Dünya yarıçapı 6372,7955 km, elevasyon formülü, Hot A / Hot B, 10–30° side scatter, yol kaybı, en düşük sinyal −130 dBm, IARU ping süreleri, 06 UTC'deki sporadik tepe |
 
 ## VERİM: HESAP VE KURAM
 
@@ -22,7 +22,7 @@
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Dört sabit yönde verim (karşılaştırma) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45. Nordic VUSHF, Mayıs 2025 | λ³ ve λ² kuralları, orta nokta, en iyi yön (radyant az ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Aynasal yansıma, underdense iz denklemi |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (Kaiser & Closs 1952'den) | En az 182 dB yol kaybı |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (Kaiser & Closs 1952'den) | John Worsnop **G4BAO**'nun hesapladığı 172–190 dB yol kaybı (doktora tezi), yolla aynı doğrultudaki izler için yaklaşık 6 dB daha az; sayfanın kendi 182 dB tablosu kullanılmaz (bkz. [Geometri ve yol kaybı](Geometry-and-Path-Loss-tr)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (AMS Bulletin 203 sapma tablosu) | En uygun elevasyon ve sapma, 50–150 km'deki hot spot'lar |
 | **LZ2HV** – MSHV | Hot A / Hot B (karşılaştırma; kılavuzda) |
 | Klaus von der Heide **DJ5HG** – QTFGUI ve "QTFGUI Help" kılavuzu (2007) | Koni saçılması yasası; modeli doğrulamak için kullanılan Hamburg – Barselona Kuadrantidler örneği |

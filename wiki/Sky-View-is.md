@@ -96,6 +96,7 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 | **VIÐVÖRUN: Hot A (og/eða Hot B) lendir innan loftnetsgeislans …** | Heiti bletturinn er innan ±θ/2 frá áttarhorni loftnetsins (θ = láréttur −3 dB geisli): með þessari stefnu er hann þegar þakinn. Sýndur grár á kortinu. Ráðlagður Hot helst rauður. |
 | **GEISLAPUNKTUR OF HÁTT (yfir 70°)** | Nýtilegur geislapunktur er yfir 70° séð frá þinni stöð: slóðirnar falla nánast lóðrétt og endurvarpa litlu í átt að leiðinni (DF5HC, DH9GCD). Sömu klukkustundir eru merktar ↑ í [klukkustundatöflunni](Efficiency-Calculation-is#klukkustundatafla). |
 | **LÁGUR GEISLAPUNKTUR EFTIR LEIÐINNI** | Virkur geislapunktur er undir 20° og innan 30° frá stefnu leiðarinnar. Reiknuð nýtni helst lág (varfærin), en DJ5HG býst við sjaldgæfum, sterkum endurvörpum frá strjúkandi slóðum í línu við leiðina (Hamborg–Narvík, Quadrantítar, um 19 UTC): þess virði að hlusta. |
+| **LEIÐ HANDAN SJÓNDEILDARHRINGS SLÓÐANNA** | Í hæð slóðanna er miðpunktur leiðarinnar undir sjóndeildarhring beggja stöðva (um 2120 km með slóðir í 90 km). Viðvörunin gefur upp lágmarkshæð slóða sem þarf (um 96 km fyrir 2200 km, 105 km fyrir 2300 km): sambandið er aðeins mögulegt með hæstu slóðunum, og nýtni og deyfing eru á mörkum líkansins. |
 | *Ekkert sameiginlegt svæði í E-laginu* | Leiðin er lengri en tvöföld drægnin í hæð slóðanna: stöðvarnar tvær sjá engan sameiginlegan hluta E-lagsins (eitt stökk ómögulegt). |
 | *Enginn ráðlagður Hot* | Nánast engin virk drífa á þessum tíma. |
 

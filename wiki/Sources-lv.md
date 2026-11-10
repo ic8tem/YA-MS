@@ -12,7 +12,7 @@ Cilne **Avoti** uzskaita visus darbus, uz kuriem balstīta YA-MS, sagrupētus k�
 
 | Avots | Izmantots |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (raksts itāļu valodā, 7. versija) | Sliedes E slānī ap 90 km augstumā (SKiYMET radars), Zemes rādiuss 6372,7955 km, elevācijas formula, Hot A / Hot B, side-scatter 10–30°, trases vājinājums 182–200 dB, minimālais signāls −130 dBm, IARU pingu ilgumi, sporādisko maksimums 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (raksts itāļu valodā, 7. versija) | Sliedes E slānī ap 90 km augstumā (SKiYMET radars), Zemes rādiuss 6372,7955 km, elevācijas formula, Hot A / Hot B, side-scatter 10–30°, trases vājinājums, minimālais signāls −130 dBm, IARU pingu ilgumi, sporādisko maksimums 06 UTC |
 
 ## EFEKTIVITĀTES APRĒĶINS UN TEORIJA
 
@@ -22,7 +22,7 @@ Cilne **Avoti** uzskaita visus darbus, uz kuriem balstīta YA-MS, sagrupētus k�
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Efektivitāte četros fiksētos virzienos (salīdzinājums) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, 2025. gada maijs | λ³ un λ² likumi, viduspunkts, labākais virziens (radianta az ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Spoguļatstarošana, zema blīvuma sliedes vienādojums |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (no Kaiser & Closs 1952) | Minimālais trases vājinājums 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (no Kaiser & Closs 1952) | John Worsnop **G4BAO** aprēķinātais trases vājinājums 172–190 dB (doktora disertācija), aptuveni par 6 dB mazāks sliedēm gar trasi; pašas lapas 182 dB tabula netiek izmantota (sk. [Ģeometrija un vājinājums](Geometry-and-Path-Loss-lv)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (AMS Bulletin 203 nobīžu tabula) | Optimālā elevācija un nobīde, hot spot 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (salīdzinājums; rokasgrāmatā) |
 | Klaus von der Heide **DJ5HG** – QTFGUI un rokasgrāmata "QTFGUI Help" (2007) | Konusa izkliedes likums; Hamburgas – Barselonas Kvadrantīdu pārbaudes gadījums modeļa verificēšanai |

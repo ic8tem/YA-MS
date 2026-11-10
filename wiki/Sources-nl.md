@@ -12,7 +12,7 @@ Het tabblad **Bronnen** somt elk werk op waarop YA-MS is gebouwd, gegroepeerd zo
 
 | Bron | Gebruikt voor |
 |---|---|
-| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikel in het Italiaans, versie 7) | Sporen in de E-laag op ongeveer 90 km (SKiYMET-radar), aardstraal 6372,7955 km, elevatieformule, Hot A / Hot B, side-scatter 10–30°, trajectdemping 182–200 dB, minimaal signaal −130 dBm, IARU-pingduur, sporadisch maximum om 06 UTC |
+| Costantino Cerrotta **IC8TEM**, Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikel in het Italiaans, versie 7) | Sporen in de E-laag op ongeveer 90 km (SKiYMET-radar), aardstraal 6372,7955 km, elevatieformule, Hot A / Hot B, side-scatter 10–30°, trajectdemping, minimaal signaal −130 dBm, IARU-pingduur, sporadisch maximum om 06 UTC |
 
 ## BEREKENING EN THEORIE VAN DE EFFICIËNTIE
 
@@ -22,7 +22,7 @@ Het tabblad **Bronnen** somt elk werk op waarop YA-MS is gebouwd, gegroepeerd zo
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Efficiëntie op vier vaste richtingen (vergelijking) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*, 45th Nordic VUSHF, mei 2025 | λ³- en λ²-regels, middelpunt, beste richting (az. radiant ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Spiegelende reflectie, vergelijking voor onderdichte sporen |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (naar Kaiser & Closs 1952) | Minimale trajectdemping van 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (naar Kaiser & Closs 1952) | Trajectdemping van 172–190 dB berekend door John Worsnop **G4BAO** (proefschrift), ongeveer 6 dB minder voor sporen in lijn met het traject; de eigen tabel van 182 dB op de pagina wordt niet gebruikt (zie [Geometrie en demping](Geometry-and-Path-Loss-nl)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (afwijkingstabel uit AMS Bulletin 203) | Optimale elevatie en afwijking, hotspots op 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (vergelijking; in de handleiding) |
 | Klaus von der Heide **DJ5HG** – QTFGUI en de handleiding "QTFGUI Help" (2007) | Wet van cone scattering; testgeval Hamburg – Barcelona met de Quadrantiden, gebruikt om het model te verifiëren |

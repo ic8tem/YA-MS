@@ -12,7 +12,7 @@
 
 | المصدر | استُخدم من أجل |
 |---|---|
-| Costantino Cerrotta **IC8TEM**، Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (مقال بالإيطالية، الإصدار 7) | الآثار في الطبقة E على نحو 90 km (رادار SKiYMET)، نصف قطر الأرض 6372.7955 km، صيغة زاوية الارتفاع، Hot A / Hot B، التشتت الجانبي 10–30°، توهين المسار 182–200 dB، الحد الأدنى للإشارة −130 dBm، مدد النبضات وفق IARU، ذروة الشهب المتفرقة عند 06 UTC |
+| Costantino Cerrotta **IC8TEM**، Gianluigi "Gigi" Sartori **IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (مقال بالإيطالية، الإصدار 7) | الآثار في الطبقة E على نحو 90 km (رادار SKiYMET)، نصف قطر الأرض 6372.7955 km، صيغة زاوية الارتفاع، Hot A / Hot B، التشتت الجانبي 10–30°، توهين المسار، الحد الأدنى للإشارة −130 dBm، مدد النبضات وفق IARU، ذروة الشهب المتفرقة عند 06 UTC |
 
 ## الكفاءة: الحساب والنظرية
 
@@ -22,7 +22,7 @@
 | Wilhelm Rauh **DL5MCG** – MCG_MS، MS Efficiency Calculator v1.61، qsl.net/dl5mcg | الكفاءة على أربعة اتجاهات ثابتة (للمقارنة) |
 | Ingolf **SM6FHZ** – *"432 MHz Meteorscatter, Challenges and Techniques"*، 45th Nordic VUSHF، مايو 2025 | قاعدتا λ³ وλ²، نقطة المنتصف، أفضل اتجاه (سمت نقطة الإشعاع ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*، McGraw-Hill، 1961 | الانعكاس المرآوي، معادلة الأثر منخفض الكثافة |
-| John **GM8JBJ** – Meteor scatter path loss، hamradio.engineering (عن Kaiser & Closs 1952) | الحد الأدنى لتوهين المسار 182 dB |
+| John **GM8JBJ** – Meteor scatter path loss، hamradio.engineering (عن Kaiser & Closs 1952) | توهين المسار 172–190 dB الذي حسبه John Worsnop **G4BAO** (أطروحة دكتوراه)، وأقل بنحو 6 dB للآثار المحاذية للمسار؛ لا يُستخدم جدول الصفحة نفسها ذو 182 dB (انظر [الهندسة والتوهين](Geometry-and-Path-Loss-ar)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (جدول الإزاحة في AMS Bulletin 203) | زاوية الارتفاع والإزاحة المثلى، البقع الساخنة 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (للمقارنة؛ في الدليل) |
 | Klaus von der Heide **DJ5HG** – QTFGUI ودليل "QTFGUI Help" ‏(2007) | قانون التشتت المخروطي؛ حالة الاختبار هامبورغ – برشلونة خلال الربعيات، المستخدمة للتحقق من النموذج |

@@ -1,4 +1,4 @@
-YA-MS 1.6.0 - a cura di Costantino IC8TEM
+YA-MS 1.7.0 - a cura di Costantino IC8TEM
 Previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter (50-432 MHz)
 Windows (64 e 32 bit), Linux, Raspberry Pi e Mac.
 
@@ -22,6 +22,17 @@ INSTALLAZIONE
            cartella che si preferisce; la cartella data nasce accanto a YA-MS.app.
            Il programma non e' firmato da Apple: la prima volta il Mac chiede conferma (clic destro > Apri).
   Le versioni nuove si installano sopra la precedente: impostazioni, archivi del flusso e mappa restano.
+
+NOVITA' DELLA 1.7.0
+  - Calcolo previsionale: fascia sopra la pianta con i dati di efficienza del momento di calcolo scelto
+    (indice della tratta, sciame piu' utile, sciami sopra l'orizzonte, Hot consigliato).
+  - Il cursore "Ora della volta celeste" si chiama ora "Momento del calcolo (±36 h)"; accanto: "Calcolo per: adesso"
+    oppure la data e l'ora UTC del calcolo.
+  - Sciami: gli sciami attivi oggi sono evidenziati con una velatura gialla (tolta la colonna "Attivo oggi");
+    la tabella si apre sul primo sciame attivo.
+  - Raccolta dati: quarta fonte, PSKReporter via MQTT (mqtt.pskreporter.info), con gli argomenti modificabili.
+  - Nuovi pacchetti: .deb per Linux (amd64) e Raspberry Pi (arm64, armhf); YA-MS.app in zip per Mac.
+  - Manuale: tolto il riferimento all'aurora nella tolleranza della condizione speculare.
 
 NOVITA' DELLA 1.6.0
   - Linguette con sottolinguette: "Live e dati real-time" (Traffico in diretta, Flusso radar, Radar GRAVES,

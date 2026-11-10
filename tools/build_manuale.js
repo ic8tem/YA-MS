@@ -63,7 +63,7 @@ function table(widths, rows) {
 // ---------- contenuto ----------
 const C = [];
 C.push(new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun('YA-MS - Manuale dei calcoli')] }));
-C.push(P(I('Previsione e calcolo in diretta dell\'efficienza degli sciami meteorici per il meteor scatter. Versione 1.6.0, a cura di Costantino IC8TEM, novembre 2026.')));
+C.push(P(I('Previsione e calcolo in diretta dell\'efficienza degli sciami meteorici per il meteor scatter. Versione 1.7.0, a cura di Costantino IC8TEM, novembre 2026.')));
 C.push(new TableOfContents('Indice', { hyperlink: true, headingStyleRange: '1-2' }));
 C.push(P(I('(Se l\'indice è vuoto: in Word, clic destro sull\'indice > Aggiorna campo.)')));
 
@@ -247,7 +247,7 @@ C.push(TAG('SCELTA', 'Un quadrato (4 caratteri) è "confermato" se almeno un QSO
 
 C.push(H1('10. Raccolta dati e traffico in diretta'));
 C.push(H2('10.1 Riconoscimento degli spot meteor scatter'));
-C.push(TAG('SCELTA', 'Gli spot arrivano in telnet da tre flussi (un DX cluster a scelta, Reverse Beacon Network, il cluster di DM4X con PSKReporter) come righe "DX de SPOTTER: FREQ DX commento HHMMZ". Con la casella accesa le righe sotto 27990,0 kHz si scartano subito (regola dell\'autore). Uno spot è meteor scatter se soddisfa il primo criterio oppure, fuori dalle finestre o con una scritta di altra propagazione, il secondo:'));
+C.push(TAG('SCELTA', 'Gli spot arrivano in telnet da tre flussi (un DX cluster a scelta, Reverse Beacon Network, il cluster di DM4X con PSKReporter) come righe "DX de SPOTTER: FREQ DX commento HHMMZ", e dalla quarta fonte, PSKReporter via MQTT (mqtt.pskreporter.info, servizio di M0LTE), come messaggi JSON gia\' strutturati: frequenza, modo, rapporto, ora, nominativo e locator di chi trasmette e di chi riceve. Gli argomenti di partenza sono MSK144 su 6 m, 4 m, 2 m, 1,25 m e 70 cm e FSK441 su 2 m; anche questi spot passano dagli stessi criteri. Con la casella accesa le righe sotto 27990,0 kHz si scartano subito (regola dell\'autore). Uno spot è meteor scatter se soddisfa il primo criterio oppure, fuori dalle finestre o con una scritta di altra propagazione, il secondo:'));
 C.push(bullet([B('1° criterio (regola dell\'autore): '), 'frequenza nelle finestre tipiche degli spot MS, 50190–50300, 70100–70400, 144290–144399 kHz, e nessuna scritta di altra propagazione nel commento (<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>).']));
 C.push(bullet([B('2° criterio: '), 'il commento contiene, in maiuscolo, minuscolo o misto, un modo digitale usato solo per il MS (MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M) oppure la scritta <MS>.']));
 C.push(TAG('SCELTA', 'Locator: quelli scritti nello spot; se mancano o hanno solo 4 caratteri si prende quello a 6 caratteri dell\'archivio CALL3 (call3.txt di JTDX), anche se indica un altro quadrato (regola dell\'autore).'));

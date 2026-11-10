@@ -2,13 +2,13 @@
 
 # Výpočet účinnosti
 
-*Karta: Výpočet předpovědi › Výpočet účinnosti.*
+*Karta: Předpovědní výpočet › Výpočet účinnosti.*
 
 [![Výpočet účinnosti](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_3.png)
 
 **Účinnost** roje udává v procentech, nakolik poloha jeho radiantu umožňuje odrazy na **vaší** trase. Koncept pochází od Ilkky **OH5IY** (MS-Soft) a přebírá ho článek Cerrotta–Sartori: maximum účinnosti se neshoduje s vizuálním maximem (ZHR), protože závisí na tom, kde je radiant vzhledem k oběma stanicím. MCG_MS od DL5MCG uplatňuje stejnou myšlenku na čtyři pevné směry; YA-MS ji počítá pro **skutečnou trasu** mezi oběma lokátory.
 
-Tato karta ji ukazuje hodinu po hodině pro den zvolený v *Den pro 24h tabulku (UTC)* (hodnoty v půl každé hodiny).
+Tato karta ji ukazuje hodinu po hodině pro den zvolený v *Den pro tabulku 24 h (UTC)* (hodnoty v půl každé hodiny).
 
 ## Přehledové karty
 
@@ -40,8 +40,8 @@ Jeden řádek pro každý roj aktivní v daný den (seřazeno podle ZHR), 24 slo
 
 - **A** = **vlevo** při pohledu od vaší stanice k DX stanici (zóna Hot A); **B** = **vpravo** (zóna Hot B). Vyplatí se natočit anténu o **10–30° k této straně** (side-scatter, článek Cerrotta–Sartori).
 - **Světle modré řádky** (*DH9GCD %*, pod každým rojem): vzorec DH9GCD pro srovnání.
-- **Řádek Σ**: *Index trasy (ZHR×účin.)*.
-- **Oranžový řádek** (*Předpověď … MHz (odr./hodinu)*): experimentální předpověď pro hodiny, pro které existuje (dnes a část zítřka).
+- **Řádek Σ**: *Index trasy (ZHR×úč.)*.
+- **Oranžový řádek** (*Předpověď … MHz (odr./hod)*): experimentální předpověď pro hodiny, pro které existuje (dnes a část zítřka).
 
 ## Model
 
@@ -112,4 +112,4 @@ Maxima dosahuje s radiantem ve 45° a kolmo na trasu. DF5HC považuje radiant po
 | Křivky DJ5HG (*Die Geometrie…*, Bild 8–9: z Hamburku a Mnichova, Kvadrantidy, 4. ledna; odečteno z grafu, asi ±0,5 dB a ±15 min) oproti automatickému testu `--prova-dj5hg` (jedna hodnota za hodinu) | Časování: díra s radiantem blízko zenitu připadá na stejné hodiny (Barcelona 07:30–08:30 vs 07–09; Sofie 06:36–07:48 vs 07–08; Narvik 07–08:30 vs 07–09); Moskva je v obou případech zavřená 03–10, otevřená z Hamburku do asi 02:30 a z Mnichova do asi 00:30, jak píše DJ5HG. Směry: rozdíl 2–10°. Úrovně a tvar při 102 km (průměrný a RMS rozdíl od křivek): bez β, bez delších stop −1,6 / 4,0 dB; delší stopy +1,1 / 4,6 dB; β −5,4 / 6,2 dB, ale s nejlepším tvarem (3,0 dB po odečtení průměru, vs 3,6): objeví se hluboká minima při nízkém radiantu (Barcelona −15,6 dB v 17 vs −16 dB v 19:36; Sofie −18,5 dB ve 20 vs −14 dB). β a delší stopy (*Jako DJ5HG*) −2,2 / 4,7 dB; opatrné nastavení (výška z radaru 89,5 km, β zapnuto, bez delších stop) −6,9 / 7,6 dB, tvar 3,3 dB. Bez β ukazuje YA-MS jen slabě minimum s radiantem nízko a téměř rovnoběžným s trasou (−8,6 a −10,4 dB): to je právě výhrada DJ5HG, odtud varování |
 | Vzorkování po 5 km místo 15 km | procenta se změní o méně než 0,3 bodu |
 
-> Dokumentace MS-Soft 5.2 definuje účinnost OH5IY jako relativní index jen pro podhusté stopy, se dvěma faktory (elevace radiantu, nejlépe asi 45°, a úhel k trase, nejlépe 90°) a s minimem ručně zvýšeným na 20 % pro přehusté stopy; vzorec není publikován. MCG_MS ji počítá pro čtyři pevné směry a s lokátorem DX pro skutečnou trasu. Model uvažuje jen podhusté stopy s izotropními anténami; přehusté záblesky a sporadické pozadí nejsou v účinnosti zahrnuty (sporadické pozadí představuje radarový tok).
+> Dokumentace MS-Soft 5.2 definuje účinnost OH5IY jako relativní index jen pro podhusté stopy, se dvěma faktory (elevace radiantu, nejlépe asi 45°, a úhel k trase, nejlépe 90°) a s minimem ručně zvýšeným na 20 % pro přehusté stopy; vzorec není publikován. MCG_MS ji počítá pro čtyři pevné směry a s lokátorem DX pro skutečnou trasu. Model uvažuje jen podhusté stopy s izotropními anténami; přehusté záblesky a sporadické pozadí nejsou v účinnosti zahrnuty (sporadické pozadí představuje tok z radaru).

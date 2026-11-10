@@ -6,7 +6,7 @@
 
 [![Účinnost - vysvětlení](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
-Technický dokument *„Come YA-MS calcola l'efficienza di uno sciame“* (Jak YA-MS počítá účinnost roje), zobrazený v programu jako světlá stránka. Vysvětluje **krok za krokem**, jak se účinnost získává, a u každého kroku uvádí, **odkud pochází**. Dokument je zatím **v italštině**; tato wiki podává jeho obsah česky na stránkách [Výpočet účinnosti](Efficiency-Calculation-cs#model) a [Geometrie a útlum trasy](Geometry-and-Path-Loss-cs).
+Technický dokument *„Come YA-MS calcola l'efficienza di uno sciame“* (Jak YA-MS počítá účinnost roje), zobrazený v programu jako světlá stránka. Vysvětluje **krok za krokem**, jak se účinnost získává, a u každého kroku uvádí, **odkud pochází**. Program ho zobrazuje **v jazyce rozhraní** (ve všech 36 jazycích), stejně jako manuál výpočtů; tato wiki podává jeho obsah také na stránkách [Výpočet účinnosti](Efficiency-Calculation-cs#model) a [Geometrie a útlum](Geometry-and-Path-Loss-cs).
 
 ## Štítky
 
@@ -46,6 +46,8 @@ Každý krok nese barevný štítek:
 |---|---|
 | `data/efficienza_spiegazione.txt` | Text zobrazený na kartě, jeden blok na řádek (`TITLE`, `SUB`, `H1`, `H2`, `P`, `TAG|FONTE|…`, `TAG|RILIEVO|…`, `TAG|SCELTA|…`, `EQ`, `LI`, `SRC`) |
 | `data/efficienza_spiegazione.docx` | Verze pro Word |
-| `doc/YA-MS_manuale_calcoli.docx` | **Manuál výpočtů**: všechny rovnice (editor rovnic Wordu), číslované, se svými zdroji |
+| `data/spiegazione/efficienza_spiegazione_<code>.txt` / `.docx` | Tentýž dokument v ostatních 35 jazycích (např. `_en`, `_de`, `_pt-BR`) |
+| `doc/YA-MS_manuale_calcoli.docx` | **Manuál výpočtů** (italsky): všechny rovnice (editor rovnic Wordu), číslované, se svými zdroji |
+| `doc/manuali/YA-MS_manuale_calcoli_<code>.docx` | Manuál výpočtů v ostatních 35 jazycích |
 
-Oba dokumenty se ze zdrojového kódu znovu vygenerují pomocí `tools/build_spiegazione.py data` a `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Oba dokumenty se ze zdrojového kódu znovu vygenerují pomocí `tools/build_spiegazione.py data [code]` a `node tools/build_manuale.js <file.docx> [code]`; překlady jsou v `tools/traduzioni_doc/` (`tools/build_documenti.sh` znovu sestaví všechny jazyky).

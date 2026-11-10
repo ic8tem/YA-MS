@@ -2,7 +2,7 @@
 
 # Radar GRAVES
 
-*Karta: Živá data a reálný čas › Radar GRAVES.*
+*Karta: Živě a data v reálném čase › Radar GRAVES.*
 
 [![Radar GRAVES](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png)
 
@@ -24,14 +24,14 @@ Karta zachází s trasou **GRAVES → vy** jako se samostatnou trasou meteor sca
 
 | Karta | Obsah |
 |---|---|
-| **UŽITEČNÁ ZÓNA VE SVAZKU GRAVES** | *Ano · sektor X* s azimutem a elevací doporučeného hot spotu viděného z GRAVES a krokem (1–6); nebo *Ne: mimo sektory* / *Ne: pod obzorem GRAVES* / *Ne: nad svazkem (asi 25°)* |
+| **UŽITEČNÁ ZÓNA VE SVAZKU GRAVES** | *Ano · sektor X* s azimutem a elevací doporučeného hot spotu viděného z GRAVES a krokem (1–6); nebo *Ne: mimo sektory* / *Ne: pod horizontem GRAVES* / *Ne: nad svazkem (asi 25°)* |
 | **ÚČINNOST TRASY GRAVES → VY NYNÍ** | Index trasy Σ ZHR × účinnost, nejlepší roj, převažující strana A/B a *očekávaná echa ≈ …/hodinu* (experimentální, viz níže) |
 | **TRASA** | Vzdálenost ke GRAVES; anténa směrem k doporučenému Hot (azimut a elevace); přímý azimut na GRAVES |
 | **PŘÍŠTÍ PRŮCHOD SVAZKU NAD ZÓNOU** | *nyní · zbývá … s* nebo *za … s*, krok (např. *B4*), příští tři časy (sekundy v rámci minuty) a podíl zachycených stop |
 
 Pokud v daném okamžiku není užitečný žádný roj, program ukáže hot spot **nejvhodnější pro svazek** (uvnitř sektorů, nejblíže jihu) a oznámí to.
 
-## Obloha viděná z GRAVES
+## Obloha z pohledu GRAVES
 
 Podle PE1ITR a wiki Bolidozor pokrývají **čtyři fázovaná anténní pole** jižní oblohu od **90° do 270°** azimutu ve čtyřech **sektorech po 45°**:
 
@@ -42,15 +42,15 @@ Podle PE1ITR a wiki Bolidozor pokrývají **čtyři fázovaná anténní pole** 
 | B | 180°–225° |
 | A | 225°–270° |
 
-Každý sektor je rozdělen na **6 kroků po 7,5°**, číslovaných 1 až 6 od nejnižšího azimutu, které se rozsvěcují jeden po druhém, **ve stejném okamžiku ve všech čtyřech sektorech**. Svazek je **v elevaci široký asi 25°**: ve výšce stop pokrývá barevný prstenec mezi dvěma čárkovanými kružnicemi (*obzor svazku*). Na výkresu: oranžové/růžové tečky = zóny PREV trasy GRAVES → vy, zelená čára = směr k vaší stanici, červená čára = od vaší stanice k doporučenému hot spotu; právě osvětlený krok je zvýrazněn.
+Každý sektor je rozdělen na **6 kroků po 7,5°**, číslovaných 1 až 6 od nejnižšího azimutu, které se rozsvěcují jeden po druhém, **ve stejném okamžiku ve všech čtyřech sektorech**. Svazek je **v elevaci široký asi 25°**: ve výšce stop pokrývá barevný prstenec mezi dvěma čárkovanými kružnicemi (*horizont svazku*). Na výkresu: oranžové/růžové tečky = zóny PREV trasy GRAVES → vy, zelená čára = směr k vaší stanici, červená čára = od vaší stanice k doporučenému hot spotu; právě osvětlený krok je zvýrazněn.
 
-## Rekonstrukce časové osy
+## Časová rekonstrukce
 
-*REKONSTRUKCE ČASOVÉ OSY · datum UTC* (stejný den jako 24h tabulka): pro každou hodinu účinnost trasy GRAVES → vy, nejpříznivější roj a užitečné okno (*hh:00 → hh:00 UTC · n h*), s maximem (*max Σ … v hh:30*) a červenou značkou *nyní*. Pod tím **detail příštích sekund**: šest kroků sektoru, krok, který osvětluje užitečnou zónu, a *možné echo (+0,3 s stopy)*.
+*ČASOVÁ REKONSTRUKCE · datum UTC* (stejný den jako tabulka 24 h): pro každou hodinu účinnost trasy GRAVES → vy, nejpříznivější roj a užitečné okno (*hh:00 → hh:00 UTC · n h*), s maximem (*max Σ … v hh:30*) a červenou značkou *nyní*. Pod tím **detail příštích sekund**: šest kroků sektoru, krok, který osvětluje užitečnou zónu, a *možné echo (+0,3 s stopy)*.
 
 ### Časování svazku
 
-Sekvence je vázána na **UTC** (PE1ITR): právě osvětlený krok se počítá ze sekund od 00:00 UTC modulo cyklus (86 400 s je násobkem 4,8 s i 19,2 s). Řídicí stanice občas posune sekvenci o několik kroků, proto je detail **předpovědí, kterou je třeba potvrdit poslechem**. Žlutý štítek **Hodiny PC synchronizovány** vám to připomíná: synchronizujte PC se serverem NTP (chyba nejvýše několik desetin sekundy).
+Sekvence je vázána na **UTC** (PE1ITR): právě osvětlený krok se počítá ze sekund od 00:00 UTC modulo cyklus (86 400 s je násobkem 4,8 s i 19,2 s). Řídicí stanice občas posune sekvenci o několik kroků, proto je detail **předpovědí, kterou je třeba potvrdit poslechem**. Žlutý štítek **hodiny PC synchronizovány** vám to připomíná: synchronizujte PC se serverem NTP (chyba nejvýše několik desetin sekundy).
 
 ### Detekční faktor
 
@@ -70,7 +70,7 @@ N_{GRAVES} \approx N_{prev}(f_{fc})\left(\frac{f_{fc}}{143{.}05}\right)^{k}\frac
 
 Předpověď z karty [Experimentální předpovědi](Experimental-Forecasts-cs) (která již obsahuje faktor stanice K) se přepočte z její frekvence f_fc na 143,050 MHz pravidlem SM6FHZ (stejný exponent k), opraví se poměrem indexů rojů obou tras (konstanta 10 představuje sporadické pozadí, stejně jako v předpovědi) a vynásobí se detekčním faktorem. Jen orientačně: porovnávejte s pozorovateli RMOB.
 
-## Jak slyšet pingy GRAVES
+## Jak poslouchat pingy GRAVES
 
 | Krok | Co udělat |
 |---|---|

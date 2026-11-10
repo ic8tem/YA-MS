@@ -2,7 +2,7 @@
 
 # Experimentální předpovědi
 
-*Karta: Výpočet předpovědi › Experimentální předpovědi.*
+*Karta: Předpovědní výpočet › Experimentální předpovědi.*
 
 [![Experimentální předpovědi](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_4.png)
 
@@ -14,16 +14,16 @@ Tato karta převádí počty meteorů z **radaru v Collmu (36,2 MHz)** na odhad 
 
 | Ovládací prvek | Výchozí | Co dělá |
 |---|---|---|
-| **Cílová frekvence MHz** | 144 | Frekvence předpovědi (28–1300 MHz) |
+| **Cílový kmitočet MHz** | 144 | Frekvence předpovědi (28–1300 MHz) |
 | **Exponent λ^k** | 3 | Exponent k frekvenčního pravidla (SM6FHZ: 3) |
 | **Faktor stanice K** | 1 | Zohledňuje přijímací stanici (výkon, antény); odvozuje se srovnáním s pozorovatelem RMOB na stejném pásmu |
 | **Načíst soubor RMOB z disku...** | | Načte měsíční textový soubor RMOB (viz níže) |
 | **Odvodit exponent ze souboru RMOB** | | Proloží k ze společných hodin Collmu a RMOB |
 | **Pozorovatel RMOB** | prázdné | Jméno pozorovatele tak, jak se objevuje v názvu souboru (např. `NAME_112026rmob.TXT` → `NAME`) |
 | **Stáhnout RMOB nyní** | | Jednou stáhne soubor daného pozorovatele za aktuální měsíc |
-| **automatické stahování každých 5 minut (zapínejte jen se svolením RMOB)** | **vypnuto** | Viz [RMOB a automatické programy](#rmob-a-automatické-programy) |
+| **automatické stahování každých 5 minut (zapnout jen se svolením RMOB)** | **vypnuto** | Viz [RMOB a automatické programy](#rmob-a-automatické-programy) |
 
-Oranžový řádek pod ovládacími prvky ukazuje pravidlo s aktuálními čísly, např. *N(144 MHz) = N(Collm 36.2 MHz) x (36.2/144)^3.00 x K = N x 0.01589 x 1.00*, přepočet délky a maximální ping podle IARU na dané frekvenci.
+Oranžový řádek pod ovládacími prvky ukazuje pravidlo s aktuálními čísly, např. *N(144 MHz) = N(Collm 36,2 MHz) x (36,2/144)^3,00 x K = N x 0,01589 x 1,00*, přepočet délky a maximální ping podle IARU na dané frekvenci.
 
 ## Od radaru k radioamatérskému pásmu
 
@@ -45,7 +45,7 @@ N_{prev}(t) = N(f,\ t-24\,\mathrm{h})\,\frac{I(t)+10}{I(t-24\,\mathrm{h})+10}
 |---|---|
 | **Naměřeno v Collmu a přepočteno na f MHz – včera a dnes (UTC)** | Meteory/hodinu z radaru v Collmu; přepočtené hodnoty (oranžově, pravá stupnice); počty RMOB, pokud jsou načteny (zeleně, pravá stupnice) |
 | **Experimentální předpověď na příštích 24 hodin na f MHz pro …** | Předpovídané odrazy/hodinu (sloupce) a index rojů trasy (pravá stupnice) |
-| Tabulka | Čas UTC · Collm stejná hodina · Přepočteno · Index rojů trasy · Předpověď /hodinu · **Hodnocení** |
+| Tabulka | Čas UTC · Collm ve stejnou hodinu · Přepočteno · Index rojů trasy · Předpověď /hod · **Hodnocení** |
 
 **Hodnocení:** *dobré*, když je předpověď alespoň 1,3 × průměr za 24 hodin, *ucházející* od 0,8 ×, *slabé* pod tím. Stejná předpověď se objevuje na přehledové kartě **EXPERIMENTÁLNÍ PŘEDPOVĚĎ** a v oranžovém řádku [Výpočtu účinnosti](Efficiency-Calculation-cs) a je základem očekávaných ech na kartě [Radar GRAVES](GRAVES-Radar-cs#očekávaná-echa-experimentální).
 

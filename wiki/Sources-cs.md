@@ -22,7 +22,7 @@ Karta **Zdroje** uvádí všechna díla, na nichž YA-MS stojí, seskupená jako
 | Wilhelm Rauh **DL5MCG** – MCG_MS, MS Efficiency Calculator v1.61, qsl.net/dl5mcg | Účinnost ve čtyřech pevných směrech (srovnání) |
 | Ingolf **SM6FHZ** – *„432 MHz Meteorscatter, Challenges and Techniques“*, 45th Nordic VUSHF, květen 2025 | Pravidla λ³ a λ², střed trasy, nejlepší směr (az radiantu ±90°) |
 | D.W.R. **McKinley** – *Meteor Science and Engineering*, McGraw-Hill, 1961 | Zrcadlový odraz, rovnice podhusté stopy |
-| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (podle Kaiser & Closs 1952) | Útlum trasy 172–190 dB vypočtený Johnem Worsnopem **G4BAO** (disertační práce), asi o 6 dB méně u stop rovnoběžných s trasou; vlastní tabulka stránky se 182 dB se nepoužívá (viz [Geometrie a útlum trasy](Geometry-and-Path-Loss-cs)) |
+| John **GM8JBJ** – Meteor scatter path loss, hamradio.engineering (podle Kaiser & Closs 1952) | Útlum trasy 172–190 dB vypočtený Johnem Worsnopem **G4BAO** (disertační práce), asi o 6 dB méně u stop rovnoběžných s trasou; vlastní tabulka stránky se 182 dB se nepoužívá (viz [Geometrie a útlum](Geometry-and-Path-Loss-cs)) |
 | Shelby **W8WN** – qsl.net/w8wn/hscw (tabulka odklonů z AMS Bulletin 203) | Optimální elevace a odklon, hot spoty 50–150 km |
 | **LZ2HV** – MSHV | Hot A / Hot B (srovnání; v manuálu) |
 | Klaus von der Heide **DJ5HG** – QTFGUI a manuál „QTFGUI Help“ (2007) | Kuželový zákon rozptylu; testovací případ Hamburk – Barcelona s Kvadrantidami použitý k ověření modelu |
@@ -44,7 +44,7 @@ Karta **Zdroje** uvádí všechna díla, na nichž YA-MS stojí, seskupená jako
 
 | Zdroj | Použito pro |
 |---|---|
-| Meteorický radar Collm, Lipská univerzita (LIM) a IAP Kühlungsborn – wetterdaten.meteo.uni-leipzig.de/radar_flux.php | Hodinový tok meteorů a výšky stop ([Radarový tok](Radar-Flux-cs)) |
+| Meteorický radar Collm, Lipská univerzita (LIM) a IAP Kühlungsborn – wetterdaten.meteo.uni-leipzig.de/radar_flux.php | Hodinový tok meteorů a výšky stop ([Tok z radaru](Radar-Flux-cs)) |
 | Geofyzikální observatoř Sodankylä – sgo.fi/Data/RealTime/meteorRadar.php | Obrázek s počty meteorů |
 | DL1DBC – Swan Meteor Skyview, swan.ms | Vzor pro grafiku nebeské klenby |
 | SM6FHZ – RadiantCalc | Polární diagram s nejlepším směrem |

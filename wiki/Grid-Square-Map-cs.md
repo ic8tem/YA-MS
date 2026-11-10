@@ -16,12 +16,12 @@
 | **Vymazat paměť** | Smaže všechny čtverce načtené z ADIF (vyžádá si potvrzení). |
 | Myš | **Kolečko = zoom, tažení = posun, myš nad čtvercem = QSO** (až šest značek s datem, *(potvrzeno)*, pokud je potvrzeno) |
 
-Po načtení stavový řádek ukáže *načteno … QSO, … čtverců QSO v pásmech 50–432 MHz, zahozeno … QSO (jiná pásma nebo bez čtverce)*. Mapa každého pásma má popisek *… navázaných čtverců, … potvrzených*.
+Po načtení stavový řádek ukáže *… QSO načteno, … čtverců s QSO v pásmech 50-432 MHz, … QSO vyřazeno (jiná pásma nebo bez čtverce)*. Mapa každého pásma má popisek *… čtverců pracováno, … potvrzeno*.
 
 | Barva | Význam |
 |---|---|
-| Oranžová | navázaný |
-| Zelená | potvrzený (QSL nebo LoTW) |
+| Oranžová | pracováno |
+| Zelená | potvrzeno (QSL nebo LoTW) |
 
 ## Jak se čte ADIF
 

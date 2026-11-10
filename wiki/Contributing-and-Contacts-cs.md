@@ -20,7 +20,7 @@ Otevřete **issue na GitHubu** nebo napište e-mail s těmito údaji:
 - operační systém a verze YA-MS (v titulku okna);
 - oba lokátory, pásmo a čas UTC;
 - co jste očekávali a co jste viděli (pomůže snímek obrazovky);
-- u problémů s radarem zpráva zobrazená na kartě [Radarový tok](Radar-Flux-cs).
+- u problémů s radarem zpráva zobrazená na kartě [Tok z radaru](Radar-Flux-cs).
 
 ## Co je zvlášť užitečné
 

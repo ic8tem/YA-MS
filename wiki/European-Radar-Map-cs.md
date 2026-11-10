@@ -10,8 +10,8 @@ Kde leží zdroje živých dat vzhledem k **vaší stanici** (hvězdička, podle
 
 | Zdroj | Co to je | Použito na kartě |
 |---|---|---|
-| **Collm** (Německo) | meteorický radar SKiYMET, 36,2 MHz | [Radarový tok](Radar-Flux-cs) |
-| **Sodankylä** (Finsko) | meteorický radar, 36,9 MHz | [Radarový tok](Radar-Flux-cs) |
+| **Collm** (Německo) | meteorický radar SKiYMET, 36,2 MHz | [Tok z radaru](Radar-Flux-cs) |
+| **Sodankylä** (Finsko) | meteorický radar, 36,9 MHz | [Tok z radaru](Radar-Flux-cs) |
 | **GRAVES** (Francie) | vysílač, 143,050 MHz | [Radar GRAVES](GRAVES-Radar-cs) |
 | **CMOR** (Ontario, Kanada) | meteorický radar 17–38 MHz, dráhy | [Roje živě](Live-Showers-cs) |
 

@@ -13,7 +13,7 @@ Nad kartami jsou tři řady ovládacích prvků, které platí pro všechny kart
 | Ovládací prvek | Co dělá |
 |---|---|
 | **Můj lokátor** / **výška m** | Váš lokátor Maidenhead (4, 6 nebo 8 znaků; použije se střed čtverce) a nadmořská výška stanice. |
-| **DX stanice** / **výška m** | Lokátor a výška stanice, se kterou chcete navázat spojení. |
+| **Protistanice** / **výška m** | Lokátor a výška stanice, se kterou chcete navázat spojení. |
 | **Pásmo MHz** | 28, 50, 70, 144, 222 nebo 432 MHz: používá se pro zisk a lalok antény, odhad toku a energetickou bilanci spoje. |
 | **Vypočítat** | Přepočítá trasu (vzorkování vrstvy E: několik sekund). |
 | **Az antény** | Azimut vaší antény: vždy **směrem k DX** (azimut trasy). |
@@ -23,28 +23,28 @@ Nad kartami jsou tři řady ovládacích prvků, které platí pro všechny kart
 
 | Ovládací prvek | Co dělá |
 |---|---|
-| **Výška stop km** + **z radaru** | Výška meteorických stop (výchozí 90 km). Při zaškrtnutí *z radaru* se použije nejčastější výška (modus) naměřená radarem v Collmu; viz [Radarový tok](Radar-Flux-cs). |
+| **Výška stop km** + **z radaru** | Výška meteorických stop (výchozí 90 km). Při zaškrtnutí *z radaru* se použije nejčastější výška (modus) naměřená radarem v Collmu; viz [Tok z radaru](Radar-Flux-cs). |
 | **Elevace laloku °** | Nejnižší elevace laloku vaší antény (0° = obzor). Použijí se jen body vrstvy E, které obě stanice vidí nad touto elevací. |
-| **Anténa Yagi: ráhno m** | Délka ráhna vaší Yagi. Program zobrazí délku v λ, zisk (křivka DL6WU) a lalok −3 dB, vodorovný i svislý; viz [Geometrie a útlum trasy](Geometry-and-Path-Loss-cs#zisk-a-lalok-antény). Pod 2 λ je odhad hrubý. |
-| **Hot spot od středu km** + **auto (AMS)** | Vzdálenost Hot A a Hot B od středu trasy. Při zaškrtnutí *auto (AMS)* (výchozí) se řídí tabulkou odklonu antény od J. Richardsona (AMS), kterou cituje DJ5HG: 13° při 1000 km, 11° při 1250 km, 10° při 1500 a 2000 km (asi 115, 121, 132 a 176 km od středu). Po zrušení zaškrtnutí zadáte ručně 30–400 km (MSHV používá 150 km). |
+| **Anténa Yagi: ráhno m** | Délka ráhna vaší Yagi. Program zobrazí délku v λ, zisk (křivka DL6WU) a lalok −3 dB, vodorovný i svislý; viz [Geometrie a útlum](Geometry-and-Path-Loss-cs#zisk-a-lalok-antény). Pod 2 λ je odhad hrubý. |
+| **Hot spot od středu trasy km** + **auto (AMS)** | Vzdálenost Hot A a Hot B od středu trasy. Při zaškrtnutí *auto (AMS)* (výchozí) se řídí tabulkou odklonu antény od J. Richardsona (AMS), kterou cituje DJ5HG: 13° při 1000 km, 11° při 1250 km, 10° při 1500 a 2000 km (asi 115, 121, 132 a 176 km od středu). Po zrušení zaškrtnutí zadáte ručně 30–400 km (MSHV používá 150 km). |
 
 **Řada 3 – čas**
 
 | Ovládací prvek | Co dělá |
 |---|---|
 | **Čas** | Hodiny UTC. |
-| **Datum výpočtu (UTC)** | Den výpočtu pro [Výpočet předpovědi](Sky-View-cs) a [Radar GRAVES](GRAVES-Radar-cs) (výchozí dnes), v aktuální denní době. |
-| **Hodiny (−12 až +36 h)** | Posouvá okamžik výpočtu od 12 hodin před do 36 hodin po tomto čase, v krocích po 15 minutách. Vedle je *Výpočet pro: nyní* nebo *Výpočet pro: dd/mm hh:mm UTC*. |
+| **Datum výpočtu (UTC)** | Den výpočtu pro [Předpovědní výpočet](Sky-View-cs) a [Radar GRAVES](GRAVES-Radar-cs) (výchozí dnes), v aktuální denní době. |
+| **Hodiny (od −12 do +36 h)** | Posouvá okamžik výpočtu od 12 hodin před do 36 hodin po tomto čase, v krocích po 15 minutách. Vedle je *Výpočet pro: nyní* nebo *Výpočet pro: dd/mm hh:mm UTC*. |
 | **Reálný čas** | Návrat na současnost. |
-| **Den pro 24h tabulku (UTC)** | Den zobrazený ve [Výpočtu účinnosti](Efficiency-Calculation-cs) a na časové ose GRAVES. |
+| **Den pro tabulku 24 h (UTC)** | Den zobrazený ve [Výpočtu účinnosti](Efficiency-Calculation-cs) a na časové ose GRAVES. |
 
 ## 2. Vaše stanice a DX
 
 1. Zadejte **Můj lokátor** a **výška m**.
-2. Zadejte lokátor a výšku **DX stanice** – nebo klikněte do mapy na kartě [Nebeská klenba](Sky-View-cs): **levé tlačítko = lokátor DX stanice**, **pravé tlačítko = lokátor mé stanice**.
+2. Zadejte lokátor a výšku **protistanice** – nebo klikněte do mapy na kartě [Nebeská klenba](Sky-View-cs): **levé kliknutí = lokátor protistanice**, **pravé kliknutí = lokátor mé stanice**.
 3. Zvolte **Pásmo MHz** a stiskněte **Vypočítat**.
 
-Stavový řádek dole potvrdí: *Trasa vypočtena: … km, navzorkováno … bodů odrazu za … s*.
+Stavový řádek dole potvrdí: *Trasa vypočtena: … km, … bodů odrazu vzorkováno za … s*.
 
 ## 3. Vaše anténa
 
@@ -56,9 +56,9 @@ Zadejte **délku ráhna** vaší Yagi. Program z ní odvodí zisk a lalok a upoz
 |---|---|
 | Který roj teď pomáhá mé trase a z které strany? | [Nebeská klenba](Sky-View-cs): seznam rojů, doporučený Hot červeně, zóny PREV |
 | Která hodina je dnes nejlepší? | [Výpočet účinnosti](Efficiency-Calculation-cs): přehledové karty a hodinová tabulka |
-| Kolik meteorů radar počítá? | [Radarový tok](Radar-Flux-cs) |
+| Kolik meteorů radar počítá? | [Tok z radaru](Radar-Flux-cs) |
 | Kolik pingů mohu čekat na 144 MHz? | [Experimentální předpovědi](Experimental-Forecasts-cs) (experimentální) |
-| Zvládne moje stanice trasu? | [Geometrie a útlum trasy](Geometry-and-Path-Loss-cs): útlum trasy a rezerva |
+| Zvládne moje stanice trasu? | [Geometrie a útlum](Geometry-and-Path-Loss-cs): útlum trasy a rezerva |
 | Kdy je příští maximum? | [Roje](Showers-cs) |
 | Mohu zkoušet s GRAVES? | [Radar GRAVES](GRAVES-Radar-cs) |
 

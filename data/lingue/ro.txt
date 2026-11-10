@@ -28,7 +28,7 @@ Accesa (prudente, di partenza): la potenza di ogni scia segue la formula complet
 Adesso	Acum
 Aggiornamento automatico di tutte le fonti ogni 5 minuti	Actualizare automată a tuturor surselor la fiecare 5 minute
 Aggiungi	Adaugă
-Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, quando CALL3 ha il locator a 6 caratteri.	Și locatorii imprecişi (doar 4 caractere) se iau din CALL3, când CALL3 are locatorul de 6 caractere.
+Anche i locator imprecisi (solo 4 caratteri) si prendono da CALL3, quando CALL3 ha il locator a 6 caratteri.	Și locatorii impreciși (doar 4 caractere) se iau din CALL3, când CALL3 are locatorul de 6 caractere.
 Andromedidi	Andromedide
 Angolo β tra scia e tratta (McKinley completo)	Unghiul β între dâră și traseu (McKinley complet)
 Antenna	Antenă

@@ -2,7 +2,7 @@
 
 # Sběr dat
 
-*Karta: Živá data a reálný čas › Sběr dat.*
+*Karta: Živě a data v reálném čase › Sběr dat.*
 
 [![Sběr dat](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_4.png)
 
@@ -16,7 +16,7 @@ Karta sbírá **spoty meteor scatter** ze tří telnetových proudů a z MQTT ka
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network (7000 = CW/RTTY, 7001 = FT8). Skimmery dekódují MS druhy provozu jen zřídka. |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | Cluster DM4X přenášející spoty **PSKReporter**: sem přicházejí dekódování MSK144 z WSJT-X a MSHV. |
 | **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | Živé spoty PSKReporter přes **MQTT** (služba od M0LTE): bez přihlášení, každý spot už nese lokátory vysílající i přijímající stanice. Výchozí témata: MSK144 na 6 m, 4 m, 2 m, 1,25 m, 70 cm a FSK441 na 2 m (`pskr/filter/v2/band/mode/#`); *Výchozí témata* je obnoví. |
-| **Zachycené MS spoty** | – | Tabulka přijatých spotů, nejnovější nahoře. |
+| **Sebrané spoty MS** | – | Tabulka přijatých spotů, nejnovější nahoře. |
 
 Každý proud má hostitele, port, příkazy odesílané po přihlášení, *Znovu připojit*, *Připojit při spuštění*, konzoli a řádek pro odesílání příkazů. Nahoře zadejte svou **značku pro přihlášení**. Zdroj MQTT má hostitele, port, témata (jedno na řádek nebo oddělená `;`), *Znovu připojit* a *Připojit při spuštění* (ve výchozím stavu vypnuto) a konzoli s přijatými spoty; jeho spoty procházejí stejným filtrem. Pruh ukazuje stav čtyř zdrojů (zelená tečka = připojeno). Relace zůstávají otevřené i při změně jazyka nebo barevného schématu.
 
@@ -29,4 +29,4 @@ Každý proud má hostitele, port, příkazy odesílané po přihlášení, *Zno
 
 ## Lokátory a ukládání
 
-Chybějící lokátory nebo lokátory jen se 4 znaky se doplní z archivu **CALL3** (`data/call3.txt`, soubor JTDX, přes milion značek), který má vždy přednost před 4znakovým lokátorem. Přijaté spoty se ukládají do `data/spot_ms`, jeden soubor CSV na den, a plní mapu [Živý provoz](Live-Traffic-cs).
+Chybějící lokátory nebo lokátory jen se 4 znaky se doplní z archivu **CALL3** (`data/call3.txt`, soubor JTDX, přes milion značek), který má vždy přednost před 4znakovým lokátorem. Přijaté spoty se ukládají do `data/spot_ms`, jeden soubor CSV na den, a plní mapu [Provoz živě](Live-Traffic-cs).

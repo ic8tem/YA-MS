@@ -16,7 +16,7 @@ Změna jazyka nebo motivu uloží nastavení a **znovu sestaví okno** ve stejn�
 
 ## Jazyk
 
-28 jazyků rozhraní, stejných jako u YAEC a E-LAYER ANALYZER (pojmy společné s YAEC jsou přeloženy stejně):
+36 jazyků rozhraní, stejných jako u YAEC a E-LAYER ANALYZER (pojmy společné s YAEC jsou přeloženy stejně):
 
 | Jazyk | Kód | Soubor |
 |---|---|---|
@@ -25,7 +25,8 @@ Změna jazyka nebo motivu uloží nastavení a **znovu sestaví okno** ve stejn�
 | Deutsch | `de` | `data/lingue/de.txt` |
 | Français | `fr` | `data/lingue/fr.txt` |
 | Español | `es` | `data/lingue/es.txt` |
-| Português | `pt` | `data/lingue/pt.txt` |
+| Português (Portugal) | `pt` | `data/lingue/pt.txt` |
+| Português (Brasil) | `pt-BR` | `data/lingue/pt-BR.txt` |
 | Nederlands | `nl` | `data/lingue/nl.txt` |
 | Svenska | `sv` | `data/lingue/sv.txt` |
 | Norsk (bokmål) | `nb` | `data/lingue/nb.txt` |
@@ -34,6 +35,11 @@ Změna jazyka nebo motivu uloží nastavení a **znovu sestaví okno** ve stejn�
 | Eesti | `et` | `data/lingue/et.txt` |
 | Latviešu | `lv` | `data/lingue/lv.txt` |
 | Lietuvių | `lt` | `data/lingue/lt.txt` |
+| Polski | `pl` | `data/lingue/pl.txt` |
+| Čeština | `cs` | `data/lingue/cs.txt` |
+| Magyar | `hu` | `data/lingue/hu.txt` |
+| Română | `ro` | `data/lingue/ro.txt` |
+| Ελληνικά | `el` | `data/lingue/el.txt` |
 | Русский | `ru` | `data/lingue/ru.txt` |
 | Українська | `uk` | `data/lingue/uk.txt` |
 | Türkçe | `tr` | `data/lingue/tr.txt` |
@@ -43,15 +49,17 @@ Změna jazyka nebo motivu uloží nastavení a **znovu sestaví okno** ve stejn�
 | اردو | `ur` | `data/lingue/ur.txt` |
 | हिन्दी | `hi` | `data/lingue/hi.txt` |
 | বাংলা | `bn` | `data/lingue/bn.txt` |
+| ไทย | `th` | `data/lingue/th.txt` |
 | Bahasa Indonesia | `id` | `data/lingue/id.txt` |
 | Tagalog | `tl` | `data/lingue/tl.txt` |
 | 中文 (简体) | `zh` | `data/lingue/zh.txt` |
+| 中文 (繁體) | `zh-TW` | `data/lingue/zh-TW.txt` |
 | 日本語 | `ja` | `data/lingue/ja.txt` |
 | 한국어 | `ko` | `data/lingue/ko.txt` |
 
 Při prvním spuštění použije YA-MS **jazyk systému**, pokud je mezi nimi, jinak italštinu. Čísla a data se řídí zvoleným jazykem (např. desetinná tečka v angličtině, čárka v italštině a němčině). Text, který v souboru překladu chybí, se zobrazí italsky. Na Linuxu potřebují čínština, japonština, korejština, arabština, hebrejština, urdština, hindština a bengálština vhodná písma (např. rodiny Noto): viz [Řešení problémů](Troubleshooting-FAQ-cs#linux-japonský-text-se-zobrazuje-jako-čtverečky).
 
-Dokument [Účinnost - vysvětlení](Efficiency-Explanation-cs) a manuál výpočtů jsou v italštině.
+Dokument [Účinnost - vysvětlení](Efficiency-Explanation-cs) se řídí jazykem rozhraní; manuál výpočtů je v `doc/` (italsky) a v `doc/manuali/` (ostatních 35 jazyků).
 
 ## Barevná schémata
 
@@ -59,10 +67,10 @@ Seznam **Motiv** nabízí 12 schémat, stejných jako v autorově EME programu Y
 
 | Schéma | Popis |
 |---|---|
-| **Světlé** | výchozí |
-| **Noční** | tmavě modré tóny pro použití v noci |
-| **Černé** | černé pozadí pro tmu a pro displeje OLED |
-| Pastelová světle modrá · Pastelová oranžová · Pastelová akvamarínová · Pastelová zelená · Pastelová růžová · Pastelová šeříková · Pastelová indigová · Pastelová hnědá | osm světlých pastelových schémat |
+| **Světlý** | výchozí |
+| **Noc** | tmavě modré tóny pro použití v noci |
+| **Černý** | černé pozadí pro tmu a pro displeje OLED |
+| Pastelová světle modrá · Pastelová oranžová · Pastelová akvamarínová · Pastelová zelená · Pastelová růžová · Pastelová lila · Pastelová indigová · Pastelová hnědá | osm světlých pastelových schémat |
 | **Meteorická stopa** | původní styl YA-MS (do verze 1.2.0): noční fialová se světle modrou, fialovou, světle zelenou, žlutou a oranžovou |
 
 Schéma platí pro všechny karty a ukládá se do `config.ini` (klíč `tema`).
@@ -122,13 +130,13 @@ Prostý text, jeden `key=value` na řádek (řádky začínající `#` nebo `;` 
 | `elevazione_lobo_gradi` | 0 | Elevace laloku (°) |
 | `boom_m` | 4,6 | Délka ráhna Yagi (m) |
 | `hot_spot_km` | 150 | Vzdálenost Hot A / Hot B od středu trasy (30–400 km) |
-| `lingua` | systém / `it` | Kód jazyka (jeden z 28 kódů výše, např. `it`, `en`, `de`) |
-| `tema` | `chiaro` | Barevné schéma: `chiaro` (Světlé), `scuro` (Noční), `nero` (Černé), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteorická stopa) |
+| `lingua` | systém / `it` | Kód jazyka (jeden z 36 kódů výše, např. `it`, `en`, `de`) |
+| `tema` | `chiaro` | Barevné schéma: `chiaro` (Světlý), `scuro` (Noc), `nero` (Černý), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteorická stopa) |
 | `carattere_pct` | 100 | Velikost písma (100–300 %) |
 | `comandi_visibili` | 1 | 1 = řady ovládacích prvků zobrazeny, 0 = skryty |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Mapa Evropy, pohled shora na Nebeské klenbě |
 | `aggiornamento_automatico` | 1 | Automatická kontrola zdrojů každých 5 minut |
-| `esponente_lambda` | 3 | Exponent λ na kartě Radarový tok |
+| `esponente_lambda` | 3 | Exponent λ na kartě Tok z radaru |
 | `potenza_W`, `guadagno_dBi`, `sensibilita_dBm`, `densita_esponente_q` | 400, 14, −130, 14 | Vstupy energetické bilance spoje |
 | `prev_frequenza_MHz`, `prev_esponente`, `prev_fattore_stazione` | 144, 3, 1 | Experimentální předpověď: frekvence, k, K |
 | `rmob_osservatore` | prázdné | Jméno pozorovatele RMOB |

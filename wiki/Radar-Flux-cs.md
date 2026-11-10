@@ -1,10 +1,10 @@
 **English** · [Italiano](Radar-Flux-it) · [Deutsch](Radar-Flux-de) · [Nederlands](Radar-Flux-nl) · [Français](Radar-Flux-fr) · [Español](Radar-Flux-es) · [Português](Radar-Flux-pt) · [Dansk](Radar-Flux-da) · [Norsk](Radar-Flux-nb) · [Svenska](Radar-Flux-sv) · [Íslenska](Radar-Flux-is) · [Eesti](Radar-Flux-et) · [Lietuvių](Radar-Flux-lt) · [Latviešu](Radar-Flux-lv) · [Русский](Radar-Flux-ru) · [Українська](Radar-Flux-uk) · [Türkçe](Radar-Flux-tr) · [Afrikaans](Radar-Flux-af) · [العربية](Radar-Flux-ar) · [עברית](Radar-Flux-he) · [اردو](Radar-Flux-ur) · [हिन्दी](Radar-Flux-hi) · [বাংলা](Radar-Flux-bn) · [Bahasa Indonesia](Radar-Flux-id) · [Tagalog](Radar-Flux-tl) · [日本語](Radar-Flux-ja) · [한국어](Radar-Flux-ko) · [中文](Radar-Flux-zh)
 
-# Radarový tok
+# Tok z radaru
 
-*Karta: Živá data a reálný čas › Radarový tok.*
+*Karta: Živě a data v reálném čase › Tok z radaru.*
 
-[![Radarový tok](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_2.png)
+[![Tok z radaru](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_2.png)
 
 Tato karta ukazuje, co profesionální meteorické radary počítají **právě teď**: hodinové počty meteorů a výšky stop z radaru SKiYMET v **Collmu** (Lipská univerzita / IAP Kühlungsborn, Německo, 36,2 MHz) a nejnovější obrázek z radaru **Sodankylä** (SGO, Finsko). Počty z Collmu napájejí odhad pro vaše pásmo a [Experimentální předpovědi](Experimental-Forecasts-cs); naměřená výška stop napájí celou geometrii.
 
@@ -13,19 +13,19 @@ Tato karta ukazuje, co profesionální meteorické radary počítají **právě 
 | Ovládací prvek | Co dělá |
 |---|---|
 | **Stáhnout nyní** | Zkontroluje najednou všechny externí zdroje. |
-| **Automatická aktualizace všech zdrojů každých 5 minut** | Ve výchozím stavu zapnuto. Každých 5 minut se zkontrolují všechny zdroje a znovu se stáhnou **jen ty, které se změnily** (*beze změny (kontrola v … UTC)* / *nová data v … UTC*). |
+| **Automatická aktualizace všech zdrojů každých 5 minut** | Ve výchozím stavu zapnuto. Každých 5 minut se zkontrolují všechny zdroje a znovu se stáhnou **jen ty, které se změnily** (*beze změny (kontrolováno v … UTC)* / *nový údaj v … UTC*). |
 | **Exponent λ (SM6FHZ)** | Exponent k frekvenčního pravidla, výchozí 3 (1–4). |
 
 ## Co se zobrazuje
 
 | Panel | Obsah |
 |---|---|
-| **Meteory/hodina – včera a dnes (UTC)** | Azurové sloupce = počty z Collmu (platné), červené sloupce = vyřazené, silná oranžová čára = *odhad pro … MHz* na pravé stupnici |
+| **Meteory/hod - včera a dnes (UTC)** | Azurové sloupce = počty z Collmu (platné), červené sloupce = vyřazené, silná oranžová čára = *odhad na … MHz* na pravé stupnici |
 | **Výšky stop (Collm)** | Meteory na km výšky mezi 70 a 110 km, s nejčastější výškou (modus), průměrem, mediánem a směrodatnou odchylkou |
 | Obrázek z Collmu | Původní graf SKiYMET tak, jak byl stažen |
 | Obrázek ze Sodankylä | Nejnovější obrázek s počty meteorů z radaru Sodankylä (jen se zobrazuje; jeho formát se nečte) |
 
-Řádek nad grafy říká, kdy byl graf z Collmu přečten a jaká svislá stupnice byla nalezena (*stupnice načtená z grafu: 0-… meteorů/hodinu*).
+Řádek nad grafy říká, kdy byl graf z Collmu přečten a jaká svislá stupnice byla nalezena (*měřítko přečtené z grafu: 0-… meteorů/hod*).
 
 ## Jak se čte graf z Collmu
 
@@ -41,7 +41,7 @@ x_i = 101 + (i+0{.}5)\,\frac{676-101}{48},\qquad N = (y_0-y)\,\frac{N_{top}}{y_0
 
 y_top a y0 jsou řádky nejvyššího dílku a nuly, N_top hodnota přečtená na nejvyšším popisku (×1000). Rozlišení: asi 7–8 meteorů/hodinu na pixel. *Volba programu (manuál, rov. 42).*
 
-Pokud popisek nelze přečíst, program se vrátí ke kalibraci z 5. 11. 2026 (**kalibrovaná stupnice 0-1200 meteorů/hodinu**) a oznámí to oranžově: *Nelze načíst svislou stupnici toku (horní popisek: …): hodnoty je třeba ověřit.* Pokud se změní samotný formát grafu (*Formát grafu se změnil (…x…): nelze načíst* nebo *Osy toku nebyly nalezeny na očekávaném místě*), je třeba čtení znovu zkalibrovat: prosím nahlaste to (viz [Spolupráce](Contributing-and-Contacts-cs)).
+Pokud popisek nelze přečíst, program se vrátí ke kalibraci z 5. 11. 2026 (**kalibrované měřítko 0-1200 meteorů/hod**) a oznámí to oranžově: *Nelze přečíst svislé měřítko toku (popisek nahoře: …): hodnoty je třeba ověřit.* Pokud se změní samotný formát grafu (*Formát grafu se změnil (…x…): nelze přečíst* nebo *Osy toku nebyly nalezeny v očekávané poloze*), je třeba čtení znovu zkalibrovat: prosím nahlaste to (viz [Spolupráce](Contributing-and-Contacts-cs)).
 
 ### Výšky stop
 
@@ -65,7 +65,7 @@ Experimentální pravidla od **SM6FHZ** (VUSHF 2025): počet a intenzita odrazů
 
 ## Bez připojení
 
-Pokud není dostupný žádný zdroj, objeví se **jednou** zpráva: *Žádné připojení k internetu. Data z radarů a RMOB nelze aktualizovat: program používá naposledy uložená data a sám to zkouší znovu každých 5 minut.* Stavový řádek dole zčervená (*ŽÁDNÉ PŘIPOJENÍ K INTERNETU …*), dokud se připojení neobnoví (*Připojení obnoveno.*).
+Pokud není dostupný žádný zdroj, objeví se **jednou** zpráva: *Chybí připojení k internetu. Data radarů a RMOB nelze aktualizovat: program používá naposledy uložená data a sám to zkouší znovu každých 5 minut.* Stavový řádek dole zčervená (*ŽÁDNÉ PŘIPOJENÍ K INTERNETU …*), dokud se připojení neobnoví (*Připojení obnoveno.*).
 
 ## Archivy a zdroje
 

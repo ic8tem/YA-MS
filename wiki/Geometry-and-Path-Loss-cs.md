@@ -1,10 +1,10 @@
 **English** · [Italiano](Geometry-and-Path-Loss-it) · [Deutsch](Geometry-and-Path-Loss-de) · [Nederlands](Geometry-and-Path-Loss-nl) · [Français](Geometry-and-Path-Loss-fr) · [Español](Geometry-and-Path-Loss-es) · [Português](Geometry-and-Path-Loss-pt) · [Dansk](Geometry-and-Path-Loss-da) · [Norsk](Geometry-and-Path-Loss-nb) · [Svenska](Geometry-and-Path-Loss-sv) · [Íslenska](Geometry-and-Path-Loss-is) · [Eesti](Geometry-and-Path-Loss-et) · [Lietuvių](Geometry-and-Path-Loss-lt) · [Latviešu](Geometry-and-Path-Loss-lv) · [Русский](Geometry-and-Path-Loss-ru) · [Українська](Geometry-and-Path-Loss-uk) · [Türkçe](Geometry-and-Path-Loss-tr) · [Afrikaans](Geometry-and-Path-Loss-af) · [العربية](Geometry-and-Path-Loss-ar) · [עברית](Geometry-and-Path-Loss-he) · [اردو](Geometry-and-Path-Loss-ur) · [हिन्दी](Geometry-and-Path-Loss-hi) · [বাংলা](Geometry-and-Path-Loss-bn) · [Bahasa Indonesia](Geometry-and-Path-Loss-id) · [Tagalog](Geometry-and-Path-Loss-tl) · [日本語](Geometry-and-Path-Loss-ja) · [한국어](Geometry-and-Path-Loss-ko) · [中文](Geometry-and-Path-Loss-zh)
 
-# Geometrie a útlum trasy
+# Geometrie a útlum
 
-*Karta: Výpočet předpovědi › Geometrie a útlum trasy.*
+*Karta: Předpovědní výpočet › Geometrie a útlum.*
 
-[![Geometrie a útlum trasy](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_2.png)
+[![Geometrie a útlum](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_2.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_2.png)
 
 Textová zpráva o trase (text lze označit, takže si ho můžete zkopírovat) a vpravo graf **Elevace antény v závislosti na vzdálenosti od bodu rozptylu**. Čísla v hranatých závorkách odkazují na rovnice manuálu výpočtů (`doc/YA-MS_manuale_calcoli.docx`).
 
@@ -23,12 +23,12 @@ Stanice, pásmo, výška stop, elevace laloku, ráhno a vzdálenost hot spotu se
 
 | Oddíl | Obsah |
 |---|---|
-| **GEOMETRIE TRASY (kulová Země, R = 6372,7955 km)** | Stanice a DX s výškami; vzdálenost, azimut a zpětný azimut; střed trasy (lokátor a souřadnice); výška stop (*← modus naměřený radarem v Collmu*, pokud je převzata z radaru); elevace antény směrem ke středu trasy |
-| **HOT A / HOT B (klasické hot spoty pro směrování antény)** | Pro každý: lokátor, azimut od vás a odklon od přímé trasy, azimut od DX, vzdálenost, elevace |
+| **GEOMETRIE TRASY (kulová Země, R = 6372,7955 km)** | Stanice a DX s výškami; vzdálenost, azimut a zpětný azimut; střed trasy (lokátor a souřadnice); výška stop (*← modus naměřený radarem Collm*, pokud je převzata z radaru); elevace antény směrem ke středu trasy |
+| **HOT A / HOT B (klasické hot spoty pro nasměrování antény)** | Pro každý: lokátor, azimut od vás a odklon od přímé trasy, azimut od DX, vzdálenost, elevace |
 | **MEZE SPOLEČNÉ ZÓNY** | Dosah ve výšce stop při dané elevaci laloku; Mez A / Mez B s azimuty |
 | Anténa | Ráhno v λ, zisk, vodorovný / svislý lalok; zda Hot A a Hot B leží uvnitř, nebo vně laloku |
 | **ÚTLUM TRASY (podhustá stopa, McKinley 1961; bez zisků antén)** | Tabulka pro střed trasy (dopředně), Hot A a Hot B na 28, 50, 70, 144, 222 a 432 MHz |
-| **ENERGETICKÁ BILANCE SPOJE NA … MHz (střed trasy)** | Výkon a EIRP, útlum trasy, signál na anténě, minimální detekovatelný, **rezerva**; stejná rezerva s průměrným útlumem podle OH5IY |
+| **BILANCE SPOJE NA … MHz (střed trasy)** | Výkon a EIRP, útlum trasy, signál na anténě, minimální detekovatelný, **rezerva**; stejná rezerva s průměrným útlumem podle OH5IY |
 | **EXPERIMENTÁLNÍ PRAVIDLA MEZI PÁSMY (SM6FHZ, VUSHF 2025)** | Počet/intenzita a délka ve srovnání se 144 MHz; maximální ping podle IARU |
 
 ## Lokátor a trasa

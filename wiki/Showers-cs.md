@@ -12,13 +12,13 @@ Katalog rojů používaný všemi výpočty: **45 rojů** z **IMO Meteor Shower 
 
 | Sloupec | Význam |
 |---|---|
-| Kód | Kód IMO (QUA, PER, GEM, …) |
+| Zkratka | Kód IMO (QUA, PER, GEM, …) |
 | Roj | Název |
 | Aktivita | Období aktivity (den/měsíc – den/měsíc) |
 | λ max | Sluneční délka maxima (J2000) podle IMO |
 | **Příští maximum (UTC)** | Datum a čas příštího maxima (viz níže) |
-| **Zdroj maxima** | *IMO 2026* / *IMO 2027* = datum a čas publikované IMO; *IMO 2026 (den)* = IMO udává jen den, zobrazený čas je vypočtený (*~hh:mm vypoč.*); *vypočteno z λ* = pro daný rok není hodnota IMO |
-| R.A., Dec. | Radiant v maximu (*pohyblivý* u Antihelion Source) |
+| **Zdroj maxima** | *IMO 2026* / *IMO 2027* = datum a čas publikované IMO; *IMO 2026 (den)* = IMO udává jen den, zobrazený čas je vypočtený (*~hh:mm vyp.*); *vypočteno z λ* = pro daný rok není hodnota IMO |
+| Rekt., Dekl. | Radiant v maximu (*pohyblivý* u Antihelion Source) |
 | v km/s, r | Geocentrická rychlost a populační index |
 | ZHR | ZHR v maximu (*prom.* = proměnné) |
 | Typ | *vizuální* nebo *radiový, denní* |

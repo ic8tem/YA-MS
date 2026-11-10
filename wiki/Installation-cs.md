@@ -73,7 +73,7 @@ Program není podepsán společností Apple, takže macOS poprvé požádá o po
 
 - **Mapa Evropy** (pobřeží a hranice z Natural Earth) se poprvé automaticky stáhne do `data/mappa`: jednou je potřeba připojení k internetu.
 - **Radarová data** (Collm, Sodankylä) se stáhnou ihned a pak se kontrolují každých 5 minut.
-- Rozhraní se spustí v jazyce systému, pokud je mezi 28 dostupnými, jinak v italštině; změníte ho vpravo nahoře (viz [Nastavení](Settings-and-Data-Folder-cs#jazyk)).
+- Rozhraní se spustí v jazyce systému, pokud je mezi 36 dostupnými, jinak v italštině; změníte ho vpravo nahoře (viz [Nastavení](Settings-and-Data-Folder-cs#jazyk)).
 
 ## Aktualizace
 
@@ -87,6 +87,6 @@ Instalátory vytváří GitHub Actions (`.github/workflows/build.yml`) při kaž
 dotnet publish YA-MS.csproj -c Release -r win-x64 --self-contained true     # or linux-x64, linux-arm64, linux-arm, osx-arm64
 ```
 
-Dokumenty se znovu vygenerují pomocí `tools/build_spiegazione.py data` a `node tools/build_manuale.js doc/YA-MS_manuale_calcoli.docx`.
+Dokumenty (ve všech jazycích) se znovu vygenerují pomocí `tools/build_documenti.sh`.
 
 Dále: [První kroky](Getting-Started-cs).

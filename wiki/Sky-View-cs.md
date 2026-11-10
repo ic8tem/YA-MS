@@ -2,11 +2,11 @@
 
 # Nebeská klenba
 
-*Karta: Výpočet předpovědi › Výpočet předpovědi.*
+*Karta: Předpovědní výpočet › Předpovědní výpočet.*
 
 [![Nebeská klenba](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-2_1.png)
 
-Tato podkarta (nebeská klenba z dřívějších verzí) ukazuje na jedné obrazovce, **kde** jsou právě užitečné stopy a **kam mířit**. Vlevo je **půdorys** trasy; vpravo seznam rojů, malá nebeská klenba s radianty, text výpočtu a **řez** viděný od vaší antény. Vše se vztahuje k okamžiku zvolenému pomocí *Datum výpočtu (UTC)* a posuvníku *Hodiny (−12 až +36 h)* (výchozí reálný čas, kroky po 15 minutách).
+Tato podkarta (nebeská klenba z dřívějších verzí) ukazuje na jedné obrazovce, **kde** jsou právě užitečné stopy a **kam mířit**. Vlevo je **půdorys** trasy; vpravo seznam rojů, malá nebeská klenba s radianty, text výpočtu a **řez** viděný od vaší antény. Vše se vztahuje k okamžiku zvolenému pomocí *Datum výpočtu (UTC)* a posuvníku *Hodiny (od −12 do +36 h)* (výchozí reálný čas, kroky po 15 minutách).
 
 **Pruh nad půdorysem** shrnuje výpočet pro daný okamžik: datum a čas (*nyní* nebo počet hodin od teď), **index trasy Σ ZHR×η**, **nejužitečnější roj** s jeho ZHR a účinností (také v dB vzhledem k referenci DJ5HG, viz [Výpočet účinnosti](Efficiency-Calculation-cs)), počet rojů nad obzorem a **doporučený Hot** s jeho azimutem.
 
@@ -28,7 +28,7 @@ Mapa Evropy viděná shora (**V vpravo**) se stupňovou škálou kolem. Popisek 
 
 Popisky se nepřekrývají: Hot A a PREV A jsou napsány vlevo od trasy, B vpravo. **Legenda** je skládací sloupec vpravo od mapy.
 
-**Myš na mapě:** **levé tlačítko = lokátor DX stanice**, **pravé tlačítko = lokátor mé stanice**. Trasa se okamžitě přepočítá.
+**Myš na mapě:** **levé kliknutí = lokátor protistanice**, **pravé kliknutí = lokátor mé stanice**. Trasa se okamžitě přepočítá.
 
 Volby nad seznamem rojů: **Směry Hot A / Hot B**, **Mapa Evropy** (Natural Earth, stažená do `data/mappa` při prvním spuštění), **Pohled shora (V vpravo)**.
 
@@ -56,13 +56,13 @@ W_P = \sum ZHR\; c_P(\hat{s}),\qquad c_P = 100\,\frac{w_P S_P \max(0,\ \hat{s}\c
 
 | Sloupec | Význam |
 |---|---|
-| Roj, Kód | Název a kód IMO |
+| Roj, Zkratka | Název a kód IMO |
 | ZHR nyní | Aktivita v tomto okamžiku (ZHR v maximu podle IMO s profilem aktivity) |
 | Azimut, Elev. | Poloha radiantu viděná z vaší stanice |
 | Účin. % | Účinnost roje pro tuto trasu |
 | Strana | A nebo B, strana, ze které přichází většina odrazů |
-| Nejlepší směr | Azimut radiantu ±90° |
-| Východ, Západ | Východ a západ radiantu (UTC); *cirkumpolární* nebo *stále pod obzorem*, pokud to platí |
+| Nejl. směr | Azimut radiantu ±90° |
+| Vychází, Zapadá | Východ a západ radiantu (UTC); *cirkumpolární* nebo *stále pod obzorem*, pokud to platí |
 
 Kliknutím na řádek roj vyberete: žlutá čára driftu a oranžové tečky se podle něj přizpůsobí.
 
@@ -77,11 +77,11 @@ Radianty na nebeské klenbě viděné z vaší stanice, s jejich **kódem IMO** 
 | Tmavě červená | účinnost < 20 % |
 | Šedá | téměř neaktivní |
 
-Vedle je text výpočtu: délka a azimut trasy, střed trasy a jeho elevace, azimuty a odklony Hot A / Hot B, doporučený Hot (*… doporučený nyní: az. …° (…% očekávaných odrazů)*), meze společné zóny a připomínka: *nejlepší směrování pro roj: KOLMO na směr příchodu (azimut radiantu ±90°, tolerance ±40–50°, SM6FHZ)*.
+Vedle je text výpočtu: délka a azimut trasy, střed trasy a jeho elevace, azimuty a odklony Hot A / Hot B, doporučený Hot (*… doporučený nyní: az. …° (…% očekávaných odrazů)*), meze společné zóny a připomínka: *Nejlepší nasměrování pro roj: KOLMO ke směru příletu (azimut radiantu ±90°, tolerance ±40–50°, SM6FHZ)*.
 
 ## Řez (vpravo dole)
 
-*ŘEZ – nejpravděpodobnější stopy viděné od antény směrem k DX stanici.* Vodorovně **azimut vzhledem k DX stanici** (← A vlevo, B → vpravo), svisle **elevace**. Pro každý roj se vezme 14 nejsilnějších bodů odrazu; každá stopa je úsečka orientovaná k radiantu, od 10 km nad do 10 km pod výškou stop (nejvýše 60 km na každou stranu), silnější, čím je pravděpodobnější. Kreslí se také lalok antény (kružnice −3 dB kolem elevace laloku), DX stanice a Hot A / Hot B.
+*ŘEZ - nejpravděpodobnější stopy viděné od antény směrem k protistanici.* Vodorovně **azimut vůči protistanici** (← A vlevo, B → vpravo), svisle **elevace**. Pro každý roj se vezme 14 nejsilnějších bodů odrazu; každá stopa je úsečka orientovaná k radiantu, od 10 km nad do 10 km pod výškou stop (nejvýše 60 km na každou stranu), silnější, čím je pravděpodobnější. Kreslí se také lalok antény (kružnice −3 dB kolem elevace laloku), DX stanice a Hot A / Hot B.
 
 ```math
 Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10\ \mathrm{km}}{\max(0{.}17,\ |\hat{s}\cdot\hat{u}_P|)}\right)
@@ -93,10 +93,10 @@ Q = P \pm t_{1/2}\,\hat{s},\qquad t_{1/2} = \min\left(60\ \mathrm{km},\ \frac{10
 
 | Varování | Kdy |
 |---|---|
-| **VAROVÁNÍ: Hot A (a/nebo Hot B) leží uvnitř laloku antény …** | Hot spot je v rozmezí ±θ/2 od azimutu antény (θ = vodorovný lalok −3 dB): při tomto směru je již pokryt. Na mapě se zobrazí šedě. Doporučený Hot zůstává červený. |
-| **PŘÍLIŠ VYSOKÝ RADIANT (nad 70°)** | Užitečný radiant je z vaší stanice výše než 70°: stopy padají téměř svisle a k trase odrážejí málo (DF5HC, DH9GCD). Tytéž hodiny jsou v [hodinové tabulce](Efficiency-Calculation-cs#hodinová-tabulka) označeny ↑. |
+| **VAROVÁNÍ: Hot A (a/nebo Hot B) spadá do laloku antény …** | Hot spot je v rozmezí ±θ/2 od azimutu antény (θ = vodorovný lalok −3 dB): při tomto směru je již pokryt. Na mapě se zobrazí šedě. Doporučený Hot zůstává červený. |
+| **RADIANT PŘÍLIŠ VYSOKO (nad 70°)** | Užitečný radiant je z vaší stanice výše než 70°: stopy padají téměř svisle a k trase odrážejí málo (DF5HC, DH9GCD). Tytéž hodiny jsou v [hodinové tabulce](Efficiency-Calculation-cs#hodinová-tabulka) označeny ↑. |
 | **NÍZKÝ RADIANT PODÉL TRASY** | Aktivní radiant je pod 20° a do 30° od směru trasy. Vypočtená účinnost zůstává nízká (opatrně), ale DJ5HG očekává vzácné silné odrazy od tečných stop rovnoběžných s trasou (Hamburk–Narvik, Kvadrantidy, asi 19 UTC): vyplatí se poslouchat. |
-| **TRASA ZA OBZOREM STOP** | Ve výšce stop je střed trasy pod obzorem obou stanic (asi 2120 km se stopami v 90 km). Varování uvádí potřebnou minimální výšku stop (asi 96 km pro 2200 km, 105 km pro 2300 km): spojení je možné jen s nejvyššími stopami a účinnosti i útlumy jsou na hranici modelu |
+| **TRASA ZA HORIZONTEM STOPY** | Ve výšce stop je střed trasy pod obzorem obou stanic (asi 2120 km se stopami v 90 km). Varování uvádí potřebnou minimální výšku stop (asi 96 km pro 2200 km, 105 km pro 2300 km): spojení je možné jen s nejvyššími stopami a účinnosti i útlumy jsou na hranici modelu |
 | *Žádná společná zóna vrstvy E* | Trasa je delší než dvojnásobek dosahu ve výšce stop: obě stanice nevidí společnou část vrstvy E (jeden skok je nemožný). |
 | *Žádný doporučený Hot* | V tuto dobu není téměř žádný roj aktivní. |
 

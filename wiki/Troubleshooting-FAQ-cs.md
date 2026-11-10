@@ -35,21 +35,21 @@ Vašemu systému chybí písma CJK (čínština, japonština, korejština). Nain
 Použijte posuvník **Písmo** (100–300 %) a skryjte řady ovládacích prvků tlačítkem **Ovládání**. Viz [Nastavení](Settings-and-Data-Folder-cs#písmo-a-ovládání).
 
 ### Obrazovka je v noci příliš jasná
-V seznamu **Motiv** zvolte **Noční** nebo **Černé**.
+V seznamu **Motiv** zvolte **Noc** nebo **Černý**.
 
 ## Internet a radarová data
 
-### Zpráva „Žádné připojení k internetu“
+### Zpráva „Chybí připojení k internetu“
 YA-MS ji zobrazí **jednou**, když není dostupný žádný zdroj; stavový řádek zčervená. Program dál pracuje s **naposledy uloženými daty** a sám to zkouší znovu každých 5 minut; po obnovení sítě se objeví *Připojení obnoveno.* Nemusíte nic dělat.
 
-### Oranžové varování na kartě Radarový tok: „Nelze načíst svislou stupnici toku …“
-Radar v Collmu každý den mění svislou stupnici a YA-MS ji čte z popisků grafu. Pokud popisek nelze přečíst, program použije kalibrovanou stupnici 0–1200 meteorů/hodinu a upozorní, že **hodnoty je třeba ověřit**. Obvykle se další hodinový graf přečte správně. Pokud po mnoho hodin vidíte *Formát grafu se změnil* nebo *Osy toku nebyly nalezeny na očekávaném místě*, radar změnil formát grafu: prosím [nahlaste to](Contributing-and-Contacts-cs).
+### Oranžové varování na kartě Tok z radaru: „Nelze přečíst svislé měřítko toku …“
+Radar v Collmu každý den mění svislou stupnici a YA-MS ji čte z popisků grafu. Pokud popisek nelze přečíst, program použije kalibrovanou stupnici 0–1200 meteorů/hodinu a upozorní, že **hodnoty je třeba ověřit**. Obvykle se další hodinový graf přečte správně. Pokud po mnoho hodin vidíte *Formát grafu se změnil* nebo *Osy toku nebyly nalezeny v očekávané poloze*, radar změnil formát grafu: prosím [nahlaste to](Contributing-and-Contacts-cs).
 
-### „Stupnice grafu výšek se změnila“
+### „Měřítko grafu výšek se změnilo“
 Statistiky výšek (modus, průměr, medián) zůstávají platné; neplatí jen absolutní počty v histogramu výšek.
 
-### „Radarový tok: žádná data“
-Stiskněte **Stáhnout nyní** na kartě [Radarový tok](Radar-Flux-cs) a zkontrolujte, že `data/fonti_radar.csv` má pro Collm `attivo=1`.
+### „Tok z radaru: žádná data“
+Stiskněte **Stáhnout nyní** na kartě [Tok z radaru](Radar-Flux-cs) a zkontrolujte, že `data/fonti_radar.csv` má pro Collm `attivo=1`.
 
 ### RMOB: proč je automatické stahování vypnuté?
 RMOB žádá, aby **automatické programy jeho soubory nestahovaly**. *Automatické stahování každých 5 minut* zapněte až poté, co vám RMOB dá svolení. Mezitím používejte **Stáhnout RMOB nyní** nebo **Načíst soubor RMOB z disku...**. Viz [Experimentální předpovědi](Experimental-Forecasts-cs#rmob-a-automatické-programy).
@@ -59,7 +59,7 @@ Použijte měsíční textový soubor pozorovatele (`NAME_MMYYYYrmob.TXT`) nebo 
 
 ## Výpočty
 
-### „Neplatný lokátor stanice“ / „Neplatný lokátor DX stanice“
+### „Neplatný lokátor stanice“ / „Neplatný lokátor protistanice“
 Lokátory musí mít 4, 6 nebo 8 znaků (např. `JN70`, `JN70CN`, `JN70CN12`).
 
 ### „Žádná společná zóna vrstvy E“

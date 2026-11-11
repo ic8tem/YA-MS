@@ -123,7 +123,12 @@ jobs:
           git init -q -b ci-screenshots
           git config user.name "github-actions"; git config user.email "actions@github.com"
           git add -A && git commit -q -m "fotografie ${GITHUB_SHA::7}"
-          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" ci-screenshots:${{ github.ref == 'refs/heads/main' && 'ci-screenshots' || 'ci-screenshots-prototipo' }}
+          # due compilazioni in parallelo possono pubblicare insieme: si riprova, e un errore qui non fa fallire la compilazione
+          for i in 1 2 3; do
+            git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" ci-screenshots:${{ github.ref == 'refs/heads/main' && 'ci-screenshots' || 'ci-screenshots-prototipo' }} && exit 0
+            sleep $((i * 15))
+          done
+          echo "::warning::fotografie non pubblicate (ramo occupato da un'altra compilazione)"
       - uses: actions/upload-artifact@v4
         with:
           name: linux

@@ -49,7 +49,8 @@ namespace YAMS
                     {
                         if (line.StartsWith(":"))
                         {
-                            Match m = Regex.Match(line, @"(last update[^:]*?\d{4}[^:]*)$", RegexOptions.IgnoreCase);
+                            // es. ": Last update: Nov 10, 20:00:00 UTC, 2026  Modified by ..."
+                            Match m = Regex.Match(line, @"Last update:\s*(.*?\b\d{4})\b", RegexOptions.IgnoreCase);
                             if (m.Success && Edition.Length == 0) Edition = m.Groups[1].Value.Trim();
                             continue;
                         }

@@ -26,8 +26,10 @@ namespace YAMS
             }
             // prova senza finestra: le tratte di DJ5HG (MS-Geometrie 2004, Bild 8 e 9), Quadrantidi del 4 gennaio
             for (int i = 0; i < args.Length; i++)
+            {
                 if (args[i] == "--prova-dj5hg") { ProvaDj5hg(); return; }
                 if (args[i] == "--confronto-brams") { ConfrontoBrams(); return; }
+            }
             // prova senza finestra della fonte PSKReporter MQTT (controllo automatico): --prova-mqtt <secondi>
             for (int i = 0; i < args.Length - 1; i++)
                 if (args[i] == "--prova-mqtt")

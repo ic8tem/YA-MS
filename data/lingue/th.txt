@@ -674,3 +674,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k จากดัชนีประชากร
 Δ radiante	Δ จุดกระจาย
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	สองแนวคิดเรื่องเรขาคณิต ซึ่งมาจากแหล่งต่างกัน\nเปิด (ระมัดระวัง ค่าเริ่มต้น): สูตรเต็มของ McKinley (1961) และ ITU-R P.843, 1 / (1 − cos²β sin²φ) โดย β คือมุมระหว่างรอยกับระนาบของเส้นทาง รอยที่ตัดผ่านระนาบมีค่าน้อยกว่ารอยที่อยู่ในระนาบ 10-15 dB และไม่มีรอยใดถูกประเมินสูงเกิน: จุดกระจายที่อยู่แนวเดียวกับเส้นทางมีน้ำหนักมากกว่า ตัวเลือกนี้ทำให้ YA-MS ตามรูปทรงของเส้นโค้งรายชั่วโมงของ DJ5HG (2004) ได้ดีกว่า\nปิด: รอยทุกรอยนับเสมือนอยู่ในระนาบของเส้นทาง (β = 0) เหมือนจนถึงรุ่น 1.6 ใช้กฎดั้งเดิมของนักวิทยุสมัครเล่น: จุดกระจายที่ดีที่สุดสูง 15-70° และตั้งขวางเส้นทาง ส่วนที่อยู่แนวเดียวกันถือว่าก้ำกึ่ง (SM6FHZ, DH9GCD, meteor-mcp ของ qso-graph)\nการเปรียบเทียบครั้งแรกกับการนับของ BRAMS ที่ Sonneberg (เพอร์เซอิดส์ 2026, 471 km) แยกสองแนวคิดไม่ออก: ช่อง "คำตัดสินแบบดั้งเดิม" แสดงคำตัดสินของกฎดั้งเดิมใต้ประสิทธิภาพเป็นรายชั่วโมง
+... e altri {0}	... และอีก {0} รายการ
+Aggiorna adesso	อัปเดตเดี๋ยวนี้
+Aggiornamenti	การอัปเดต
+Aggiornamento disponibile	มีการอัปเดต
+Aggiornamento installato	ติดตั้งการอัปเดตแล้ว
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	การเปลี่ยนแปลงบางอย่างจะเห็นได้หลังจากเริ่มโปรแกรมใหม่เท่านั้น
+Apri la pagina delle release	เปิดหน้ารุ่นที่เผยแพร่
+Chiudi	ปิด
+Continua senza	ทำต่อโดยไม่มีไฟล์เหล่านี้
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	ตรวจสอบการเชื่อมต่ออินเทอร์เน็ต หรือดาวน์โหลดแพ็กเกจฉบับเต็มใหม่จากหน้ารุ่นที่เผยแพร่
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	ตรวจสอบบน GitHub ว่ามี YA-MS รุ่นใหม่กว่าหรือไม่ ถ้ามีจะติดตั้งให้ และตรวจสอบด้วยว่าไม่มีไฟล์ของโปรแกรมหายไป
+Controllo degli aggiornamenti su GitHub...	กำลังตรวจหาการอัปเดตบน GitHub...
+File mancanti	ไฟล์ที่หายไป
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	โปรแกรมจะดาวน์โหลดแพ็กเกจ {0} แทนที่ไฟล์ของตัวเอง เก็บโฟลเดอร์ data ไว้ (ไฟล์ของโปรแกรมที่เปลี่ยนจะถูกคัดลอกไปที่ data/backup ก่อน) แล้วเริ่มใหม่
+Installazione dell'aggiornamento...	กำลังติดตั้งการอัปเดต...
+L'aggiornamento non è riuscito: {0}	การอัปเดตล้มเหลว: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	ไฟล์ของโปรแกรมหายไป {0} ไฟล์:\n{1}\n\nดาวน์โหลดจาก GitHub (รุ่น {2}) หรือไม่?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	รุ่นที่เผยแพร่ไม่มีแพ็กเกจสำหรับระบบนี้ ({0}): ดาวน์โหลดเองจากหน้ารุ่นที่เผยแพร่
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	เขียนลงโฟลเดอร์ของโปรแกรมไม่ได้ ({0}): ติดตั้งรุ่นใหม่ด้วยตนเอง
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	อ่านรุ่นที่เผยแพร่บน GitHub ไม่ได้: {0}
+Più tardi	ภายหลัง
+Riavvia YA-MS a mano: {0}	เริ่ม YA-MS ใหม่ด้วยตนเอง: {0}
+Salta questa versione	ข้ามรุ่นนี้
+Scarica i file mancanti	ดาวน์โหลดไฟล์ที่หายไป
+Scaricamento dei file mancanti: {0} di {1}	กำลังดาวน์โหลดไฟล์ที่หายไป: {0} จาก {1}
+Scaricamento dell'aggiornamento...	กำลังดาวน์โหลดการอัปเดต...
+Scaricamento dell'aggiornamento: {0} %	กำลังดาวน์โหลดการอัปเดต: {0} %
+Scaricati {0} file mancanti.	ดาวน์โหลดไฟล์ที่หายไปแล้ว {0} ไฟล์
+Scaricati {0} file su {1}.	ดาวน์โหลดแล้ว {0} จาก {1} ไฟล์
+YA-MS {0} è installato. Il programma ora si riavvia.	ติดตั้ง YA-MS {0} แล้ว โปรแกรมจะเริ่มใหม่เดี๋ยวนี้
+YA-MS è aggiornato (versione {0}).	YA-MS เป็นรุ่นล่าสุดแล้ว (รุ่น {0})
+YA-MS.app non trovato nel pacchetto	ไม่พบ YA-MS.app ในแพ็กเกจ
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	แทนที่ไฟล์ในโฟลเดอร์ data แล้ว {0} ไฟล์: สำเนาก่อนหน้าอยู่ใน data/backup/v{1}
+{0} non trovato nel pacchetto	ไม่พบ {0} ในแพ็กเกจ
+È disponibile YA-MS {0} (questa è la {1}).	มี YA-MS {0} แล้ว (รุ่นนี้คือ {1})

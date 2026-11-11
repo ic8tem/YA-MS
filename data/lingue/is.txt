@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k úr fjöldastuðlum
 Δ radiante	Δ geislapunktur
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Tvö sjónarmið um rúmfræðina, með ólíkar heimildir.\nKveikt (varfærið, sjálfgefið): heildarformúla McKinley (1961) og ITU-R P.843, 1 / (1 − cos²β sin²φ), þar sem β er hornið milli slóðar og plans tengingarinnar. Slóðir sem skera planið eru 10-15 dB minna virði en þær sem liggja í því og engin slóð er ofmetin: geislapunktar í línu við tenginguna ráða. Með þessu vali fylgir YA-MS lögun tímaferla DJ5HG (2004) betur.\nSlökkt: hver slóð telst eins og hún lægi í plani tengingarinnar (β = 0), eins og fram að útgáfu 1.6. Klassísk regla radíóamatöra gildir: besti geislapunkturinn er 15-70° hár og þvert á tenginguna, einn í línu er á mörkunum (SM6FHZ, DH9GCD, meteor-mcp frá qso-graph).\nFyrsti samanburður við BRAMS-talningar í Sonneberg (Perseítar 2026, 471 km) greinir þau ekki að: reiturinn "Klassískur dómur" sýnir dóm klassísku reglunnar undir skilvirkninni, klukkustund fyrir klukkustund.
+... e altri {0}	... og {0} til viðbótar
+Aggiorna adesso	Uppfæra núna
+Aggiornamenti	Uppfærslur
+Aggiornamento disponibile	Uppfærsla í boði
+Aggiornamento installato	Uppfærsla sett upp
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Sumar breytingar sjást ekki fyrr en forritið hefur verið endurræst.
+Apri la pagina delle release	Opna útgáfusíðuna
+Chiudi	Loka
+Continua senza	Halda áfram án
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Athugaðu nettenginguna, eða sæktu allan pakkann aftur af útgáfusíðunni.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Athugar á GitHub hvort til sé nýrri útgáfa af YA-MS og setur hana upp ef svo er; athugar líka að engar skrár forritsins vanti.
+Controllo degli aggiornamenti su GitHub...	Leitað að uppfærslum á GitHub...
+File mancanti	Skrár sem vantar
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Forritið sækir pakkann {0}, skiptir út skrám sínum, heldur möppunni data (breyttar skrár forritsins eru fyrst afritaðar í data/backup) og endurræsist.
+Installazione dell'aggiornamento...	Uppfærslan er sett upp...
+L'aggiornamento non è riuscito: {0}	Uppfærslan mistókst: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	Það vantar {0} skrár forritsins:\n{1}\n\nSækja þær af GitHub (útgáfa {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	Í útgáfunni er enginn pakki fyrir þetta kerfi ({0}): sæktu hann handvirkt af útgáfusíðunni.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Ég get ekki skrifað í möppu forritsins ({0}): settu nýju útgáfuna upp handvirkt.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Get ekki lesið útgáfurnar sem birtar eru á GitHub: {0}
+Più tardi	Seinna
+Riavvia YA-MS a mano: {0}	Endurræstu YA-MS handvirkt: {0}
+Salta questa versione	Sleppa þessari útgáfu
+Scarica i file mancanti	Sækja skrárnar sem vantar
+Scaricamento dei file mancanti: {0} di {1}	Sæki skrár sem vantar: {0} af {1}
+Scaricamento dell'aggiornamento...	Sæki uppfærsluna...
+Scaricamento dell'aggiornamento: {0} %	Sæki uppfærsluna: {0} %
+Scaricati {0} file mancanti.	{0} skrár sem vantaði sóttar.
+Scaricati {0} file su {1}.	{0} af {1} skrám sóttar.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} er uppsett. Forritið endurræsist núna.
+YA-MS è aggiornato (versione {0}).	YA-MS er uppfært (útgáfa {0}).
+YA-MS.app non trovato nel pacchetto	YA-MS.app fannst ekki í pakkanum
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	{0} skrám í möppunni data var skipt út: fyrri afritin eru í data/backup/v{1}.
+{0} non trovato nel pacchetto	{0} fannst ekki í pakkanum
+È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0} er í boði (þetta er {1}).

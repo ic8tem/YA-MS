@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k ממדדי האוכלוסייה
 Δ radiante	Δ קורן
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	שתי גישות לגאומטריה, עם מקורות שונים.\nמופעל (זהיר, ברירת מחדל): הנוסחה המלאה של McKinley ‏(1961) ו-ITU-R P.843, ‏1 / (1 − cos²β sin²φ), כאשר β היא הזווית בין השובל למישור הנתיב. שובלים החוצים את המישור שווים 10-15 dB פחות מאלה השוכבים בו, ואף שובל אינו מוערך יתר על המידה: גוברים קורנים המיושרים עם הנתיב. בבחירה זו YA-MS עוקבת טוב יותר אחר צורת העקומות השעתיות של DJ5HG ‏(2004).\nכבוי: כל שובל נספר כאילו שכב במישור הנתיב (β = 0), כמו עד גרסה 1.6. חל הכלל הקלאסי של חובבי הרדיו: הקורן הטוב ביותר בגובה 15-70° ורוחבי לנתיב, קורן מיושר הוא גבולי (SM6FHZ, ‏DH9GCD, ‏meteor-mcp של qso-graph).\nהשוואה ראשונה לספירות BRAMS ב-Sonneberg (פרסאידים 2026, ‏471 km) אינה מבחינה ביניהן: התיבה "פסק קלאסי" מציגה שעה אחר שעה את פסק הכלל הקלאסי מתחת ליעילות.
+... e altri {0}	... ועוד {0}
+Aggiorna adesso	עדכן עכשיו
+Aggiornamenti	עדכונים
+Aggiornamento disponibile	יש עדכון זמין
+Aggiornamento installato	העדכון הותקן
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	חלק מהשינויים נראים רק אחרי הפעלה מחדש של התוכנה.
+Apri la pagina delle release	פתח את דף הגרסאות
+Chiudi	סגור
+Continua senza	המשך בלעדיהם
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	בדוק את החיבור לאינטרנט, או הורד שוב את החבילה המלאה מדף הגרסאות.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	בודק ב-GitHub אם יש גרסה חדשה יותר של YA-MS ואם יש, מתקין אותה; בודק גם שלא חסרים קבצי תוכנה.
+Controllo degli aggiornamenti su GitHub...	בודק עדכונים ב-GitHub...
+File mancanti	קבצים חסרים
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	התוכנה מורידה את החבילה {0}, מחליפה את הקבצים שלה, שומרת את התיקייה data (קבצי תוכנה שהשתנו מועתקים קודם ל-data/backup) ומופעלת מחדש.
+Installazione dell'aggiornamento...	מתקין את העדכון...
+L'aggiornamento non è riuscito: {0}	העדכון נכשל: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	חסרים {0} קבצי תוכנה:\n{1}\n\nלהוריד אותם מ-GitHub (גרסה {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	בגרסה אין חבילה למערכת הזו ({0}): הורד אותה ידנית מדף הגרסאות.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	אין לי אפשרות לכתוב בתיקיית התוכנה ({0}): התקן את הגרסה החדשה ידנית.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	לא ניתן לקרוא את הגרסאות שפורסמו ב-GitHub: {0}
+Più tardi	מאוחר יותר
+Riavvia YA-MS a mano: {0}	הפעל מחדש את YA-MS ידנית: {0}
+Salta questa versione	דלג על גרסה זו
+Scarica i file mancanti	הורד את הקבצים החסרים
+Scaricamento dei file mancanti: {0} di {1}	מוריד קבצים חסרים: {0} מתוך {1}
+Scaricamento dell'aggiornamento...	מוריד את העדכון...
+Scaricamento dell'aggiornamento: {0} %	מוריד את העדכון: {0} %
+Scaricati {0} file mancanti.	הורדו {0} קבצים חסרים.
+Scaricati {0} file su {1}.	הורדו {0} קבצים מתוך {1}.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} הותקנה. התוכנה תופעל מחדש עכשיו.
+YA-MS è aggiornato (versione {0}).	YA-MS מעודכנת (גרסה {0}).
+YA-MS.app non trovato nel pacchetto	YA-MS.app לא נמצא בחבילה
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	הוחלפו {0} קבצים בתיקייה data: העותקים הקודמים נמצאים ב-data/backup/v{1}.
+{0} non trovato nel pacchetto	{0} לא נמצא בחבילה
+È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0} זמינה (זו גרסה {1}).

@@ -31,4 +31,14 @@
     <None Include="doc/**" CopyToOutputDirectory="PreserveNewest" LinkBase="doc" />
     <None Include="LEGGIMI.txt" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
+  <!-- elenco dei file del programma (data e doc) scritto nell'eseguibile: all'avvio si controlla che non manchino -->
+  <Target Name="ScriviManifesto" BeforeTargets="PrepareResources">
+    <ItemGroup>
+      <_FileManifesto Include="data/**;doc/**" />
+    </ItemGroup>
+    <WriteLinesToFile File="$(IntermediateOutputPath)manifesto.txt" Lines="@(_FileManifesto)" Overwrite="true" WriteOnlyWhenDifferent="true" />
+    <ItemGroup>
+      <EmbeddedResource Include="$(IntermediateOutputPath)manifesto.txt" LogicalName="manifesto.txt" />
+    </ItemGroup>
+  </Target>
 </Project>

@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k à partir des indices de population
 Δ radiante	Δ radiant
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Deux thèses sur la géométrie, avec des sources différentes.\nActivée (prudente, par défaut) : formule complète de McKinley (1961) et de l'ITU-R P.843, 1 / (1 − cos²β sin²φ), où β est l'angle entre la traînée et le plan du trajet. Les traînées qui traversent le plan valent 10-15 dB de moins que celles qui y sont couchées et aucune traînée n'est surestimée : les radiants alignés sur le trajet l'emportent. Avec ce choix YA-MS suit mieux la forme des courbes horaires de DJ5HG (2004).\nDésactivée : chaque traînée compte comme si elle était dans le plan du trajet (β = 0), comme jusqu'à la version 1.6. La règle classique des radioamateurs s'applique : le meilleur radiant est haut de 15-70° et en travers du trajet, un radiant aligné est marginal (SM6FHZ, DH9GCD, meteor-mcp de qso-graph).\nUne première comparaison avec les comptages BRAMS de Sonneberg (Perséides 2026, 471 km) ne les départage pas : la case « Verdict classique » montre, heure par heure, le verdict de la règle classique sous l'efficacité.
+... e altri {0}	... et {0} autres
+Aggiorna adesso	Mettre à jour maintenant
+Aggiornamenti	Mises à jour
+Aggiornamento disponibile	Mise à jour disponible
+Aggiornamento installato	Mise à jour installée
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Certaines modifications n'apparaissent qu'après le redémarrage du programme.
+Apri la pagina delle release	Ouvrir la page des versions
+Chiudi	Fermer
+Continua senza	Continuer sans
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Vérifiez la connexion Internet, ou téléchargez à nouveau le paquet complet depuis la page des versions.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Vérifie sur GitHub s'il existe une version plus récente de YA-MS et, si oui, l'installe ; vérifie aussi qu'aucun fichier du programme ne manque.
+Controllo degli aggiornamenti su GitHub...	Recherche de mises à jour sur GitHub...
+File mancanti	Fichiers manquants
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Le programme télécharge le paquet {0}, remplace ses fichiers, conserve le dossier data (les fichiers du programme modifiés sont d'abord copiés dans data/backup) et redémarre.
+Installazione dell'aggiornamento...	Installation de la mise à jour...
+L'aggiornamento non è riuscito: {0}	La mise à jour a échoué : {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	Il manque {0} fichiers du programme :\n{1}\n\nLes télécharger depuis GitHub (version {2}) ?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	La version publiée ne contient pas de paquet pour ce système ({0}) : téléchargez-le à la main depuis la page des versions.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Impossible d'écrire dans le dossier du programme ({0}) : installez la nouvelle version à la main.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Impossible de lire les versions publiées sur GitHub : {0}
+Più tardi	Plus tard
+Riavvia YA-MS a mano: {0}	Redémarrez YA-MS à la main : {0}
+Salta questa versione	Ignorer cette version
+Scarica i file mancanti	Télécharger les fichiers manquants
+Scaricamento dei file mancanti: {0} di {1}	Téléchargement des fichiers manquants : {0} sur {1}
+Scaricamento dell'aggiornamento...	Téléchargement de la mise à jour...
+Scaricamento dell'aggiornamento: {0} %	Téléchargement de la mise à jour : {0} %
+Scaricati {0} file mancanti.	{0} fichiers manquants téléchargés.
+Scaricati {0} file su {1}.	{0} fichiers téléchargés sur {1}.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} est installé. Le programme va redémarrer.
+YA-MS è aggiornato (versione {0}).	YA-MS est à jour (version {0}).
+YA-MS.app non trovato nel pacchetto	YA-MS.app introuvable dans le paquet
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	{0} fichiers du dossier data ont été remplacés : les copies précédentes sont dans data/backup/v{1}.
+{0} non trovato nel pacchetto	{0} introuvable dans le paquet
+È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0} est disponible (celle-ci est la {1}).

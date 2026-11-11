@@ -673,3 +673,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k din indicii de populație
 Δ radiante	Δ radiant
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Două teze despre geometrie, cu surse diferite.\nActivată (prudent, implicit): formula completă a lui McKinley (1961) și a ITU-R P.843, 1 / (1 − cos²β sin²φ), unde β este unghiul dintre dâră și planul traseului. Dârele care traversează planul valorează cu 10-15 dB mai puțin decât cele care stau în el și nicio dâră nu e supraevaluată: predomină radianții aliniați cu traseul. Cu această alegere YA-MS urmează mai bine forma curbelor orare ale lui DJ5HG (2004).\nDezactivată: fiecare dâră contează ca și cum ar sta în planul traseului (β = 0), ca până la versiunea 1.6. Se aplică regula clasică a radioamatorilor: cel mai bun radiant este la 15-70° înălțime și transversal față de traseu, unul aliniat este marginal (SM6FHZ, DH9GCD, meteor-mcp de la qso-graph).\nO primă comparație cu numărătorile BRAMS de la Sonneberg (Perseide 2026, 471 km) nu le deosebește: căsuța „Verdict clasic” arată oră de oră verdictul regulii clasice sub eficiență.
+... e altri {0}	... și încă {0}
+Aggiorna adesso	Actualizează acum
+Aggiornamenti	Actualizări
+Aggiornamento disponibile	Actualizare disponibilă
+Aggiornamento installato	Actualizare instalată
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Unele modificări se văd doar după repornirea programului.
+Apri la pagina delle release	Deschide pagina versiunilor
+Chiudi	Închide
+Continua senza	Continuă fără ele
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Verifică conexiunea la Internet sau descarcă din nou pachetul complet de pe pagina versiunilor.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Verifică pe GitHub dacă există o versiune mai nouă a YA-MS și, dacă da, o instalează; verifică și că nu lipsesc fișiere ale programului.
+Controllo degli aggiornamenti su GitHub...	Se caută actualizări pe GitHub...
+File mancanti	Fișiere lipsă
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Programul descarcă pachetul {0}, își înlocuiește fișierele, păstrează dosarul data (fișierele programului modificate sunt mai întâi copiate în data/backup) și repornește.
+Installazione dell'aggiornamento...	Se instalează actualizarea...
+L'aggiornamento non è riuscito: {0}	Actualizarea a eșuat: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	Lipsesc {0} fișiere ale programului:\n{1}\n\nLe descarc de pe GitHub (versiunea {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	Versiunea publicată nu are pachet pentru acest sistem ({0}): descarcă-l manual de pe pagina versiunilor.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Nu pot scrie în dosarul programului ({0}): instalează manual noua versiune.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Nu pot citi versiunile publicate pe GitHub: {0}
+Più tardi	Mai târziu
+Riavvia YA-MS a mano: {0}	Repornește manual YA-MS: {0}
+Salta questa versione	Sari peste această versiune
+Scarica i file mancanti	Descarcă fișierele lipsă
+Scaricamento dei file mancanti: {0} di {1}	Se descarcă fișierele lipsă: {0} din {1}
+Scaricamento dell'aggiornamento...	Se descarcă actualizarea...
+Scaricamento dell'aggiornamento: {0} %	Se descarcă actualizarea: {0} %
+Scaricati {0} file mancanti.	Au fost descărcate {0} fișiere lipsă.
+Scaricati {0} file su {1}.	Au fost descărcate {0} fișiere din {1}.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} este instalat. Programul repornește acum.
+YA-MS è aggiornato (versione {0}).	YA-MS este la zi (versiunea {0}).
+YA-MS.app non trovato nel pacchetto	YA-MS.app nu a fost găsit în pachet
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	Au fost înlocuite {0} fișiere din dosarul data: copiile anterioare sunt în data/backup/v{1}.
+{0} non trovato nel pacchetto	{0} nu a fost găsit în pachet
+È disponibile YA-MS {0} (questa è la {1}).	Este disponibil YA-MS {0} (aceasta este {1}).

@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k dari indeks populasi
 Δ radiante	Δ radian
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Dua pandangan tentang geometri, dengan sumber berbeda.\nAktif (hati-hati, bawaan): rumus lengkap McKinley (1961) dan ITU-R P.843, 1 / (1 − cos²β sin²φ), dengan β sudut antara jejak dan bidang lintasan. Jejak yang memotong bidang bernilai 10-15 dB lebih rendah daripada yang terletak di dalamnya dan tidak ada jejak yang dinilai berlebihan: radian yang searah lintasan mendominasi. Dengan pilihan ini YA-MS lebih mengikuti bentuk kurva per jam DJ5HG (2004).\nNonaktif: setiap jejak dihitung seolah terletak di bidang lintasan (β = 0), seperti sampai versi 1.6. Berlaku aturan klasik radio amatir: radian terbaik setinggi 15-70° dan melintang terhadap lintasan, yang searah bersifat marginal (SM6FHZ, DH9GCD, meteor-mcp dari qso-graph).\nPerbandingan pertama dengan hitungan BRAMS di Sonneberg (Perseid 2026, 471 km) tidak membedakan keduanya: kotak "Vonis klasik" menampilkan vonis aturan klasik di bawah efisiensi, jam demi jam.
+... e altri {0}	... dan {0} lainnya
+Aggiorna adesso	Perbarui sekarang
+Aggiornamenti	Pembaruan
+Aggiornamento disponibile	Pembaruan tersedia
+Aggiornamento installato	Pembaruan terpasang
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Beberapa perubahan baru terlihat setelah program dijalankan ulang.
+Apri la pagina delle release	Buka halaman rilis
+Chiudi	Tutup
+Continua senza	Lanjutkan tanpa itu
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Periksa koneksi Internet, atau unduh lagi paket lengkap dari halaman rilis.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Memeriksa di GitHub apakah ada versi YA-MS yang lebih baru dan, jika ada, memasangnya; juga memeriksa bahwa tidak ada berkas program yang hilang.
+Controllo degli aggiornamenti su GitHub...	Memeriksa pembaruan di GitHub...
+File mancanti	Berkas hilang
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Program mengunduh paket {0}, mengganti berkasnya, mempertahankan folder data (berkas program yang berubah disalin dulu ke data/backup) lalu dijalankan ulang.
+Installazione dell'aggiornamento...	Memasang pembaruan...
+L'aggiornamento non è riuscito: {0}	Pembaruan gagal: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	{0} berkas program hilang:\n{1}\n\nUnduh dari GitHub (versi {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	Rilis ini tidak punya paket untuk sistem ini ({0}): unduh secara manual dari halaman rilis.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Saya tidak dapat menulis ke folder program ({0}): pasang versi baru secara manual.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Tidak dapat membaca versi yang diterbitkan di GitHub: {0}
+Più tardi	Nanti
+Riavvia YA-MS a mano: {0}	Jalankan ulang YA-MS secara manual: {0}
+Salta questa versione	Lewati versi ini
+Scarica i file mancanti	Unduh berkas yang hilang
+Scaricamento dei file mancanti: {0} di {1}	Mengunduh berkas yang hilang: {0} dari {1}
+Scaricamento dell'aggiornamento...	Mengunduh pembaruan...
+Scaricamento dell'aggiornamento: {0} %	Mengunduh pembaruan: {0} %
+Scaricati {0} file mancanti.	{0} berkas yang hilang telah diunduh.
+Scaricati {0} file su {1}.	{0} dari {1} berkas telah diunduh.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} telah terpasang. Program akan dijalankan ulang sekarang.
+YA-MS è aggiornato (versione {0}).	YA-MS sudah terbaru (versi {0}).
+YA-MS.app non trovato nel pacchetto	YA-MS.app tidak ditemukan dalam paket
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	{0} berkas di folder data telah diganti: salinan sebelumnya ada di data/backup/v{1}.
+{0} non trovato nel pacchetto	{0} tidak ditemukan dalam paket
+È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0} tersedia (ini versi {1}).

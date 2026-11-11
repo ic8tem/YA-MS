@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k no populācijas indeksiem
 Δ radiante	Δ radiants
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Divi viedokļi par ģeometriju, ar dažādiem avotiem.\nIeslēgts (piesardzīgs, noklusējums): pilnā McKinley (1961) un ITU-R P.843 formula 1 / (1 − cos²β sin²φ), kur β ir leņķis starp sliedi un trases plakni. Sliedes, kas šķērso plakni, ir 10-15 dB mazāk vērtas nekā tajā guļošās, un neviena sliede netiek pārvērtēta: dominē ar trasi izlīdzināti radianti. Ar šo izvēli YA-MS labāk seko DJ5HG stundu līkņu formai (2004).\nIzslēgts: katra sliede skaitās tā, it kā tā gulētu trases plaknē (β = 0), kā līdz versijai 1.6. Spēkā ir radioamatieru klasiskais likums: labākais radiants ir 15-70° augstumā un šķērsām trasei, izlīdzināts ir robežgadījums (SM6FHZ, DH9GCD, qso-graph meteor-mcp).\nPirmais salīdzinājums ar BRAMS skaitījumiem Zonebergā (Perseīdas 2026, 471 km) tos neatšķir: rūtiņa "Klasiskais spriedums" stundu pa stundai rāda klasiskā likuma spriedumu zem efektivitātes.
+... e altri {0}	... un vēl {0}
+Aggiorna adesso	Atjaunināt tagad
+Aggiornamenti	Atjauninājumi
+Aggiornamento disponibile	Pieejams atjauninājums
+Aggiornamento installato	Atjauninājums instalēts
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Dažas izmaiņas redzamas tikai pēc programmas restartēšanas.
+Apri la pagina delle release	Atvērt laidienu lapu
+Chiudi	Aizvērt
+Continua senza	Turpināt bez tiem
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Pārbaudiet interneta savienojumu vai vēlreiz lejupielādējiet pilno pakotni no laidienu lapas.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Pārbauda GitHub, vai ir jaunāka YA-MS versija, un, ja ir, to instalē; pārbauda arī, vai netrūkst programmas failu.
+Controllo degli aggiornamenti su GitHub...	Meklē atjauninājumus GitHub...
+File mancanti	Trūkstošie faili
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Programma lejupielādē pakotni {0}, aizstāj savus failus, saglabā mapi data (mainītie programmas faili vispirms tiek nokopēti uz data/backup) un restartējas.
+Installazione dell'aggiornamento...	Instalē atjauninājumu...
+L'aggiornamento non è riuscito: {0}	Atjaunināšana neizdevās: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	Trūkst {0} programmas failu:\n{1}\n\nVai lejupielādēt tos no GitHub (versija {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	Laidienā nav pakotnes šai sistēmai ({0}): lejupielādējiet to manuāli no laidienu lapas.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Nevaru rakstīt programmas mapē ({0}): instalējiet jauno versiju manuāli.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Nevar nolasīt GitHub publicētās versijas: {0}
+Più tardi	Vēlāk
+Riavvia YA-MS a mano: {0}	Restartējiet YA-MS manuāli: {0}
+Salta questa versione	Izlaist šo versiju
+Scarica i file mancanti	Lejupielādēt trūkstošos failus
+Scaricamento dei file mancanti: {0} di {1}	Lejupielādē trūkstošos failus: {0} no {1}
+Scaricamento dell'aggiornamento...	Lejupielādē atjauninājumu...
+Scaricamento dell'aggiornamento: {0} %	Lejupielādē atjauninājumu: {0} %
+Scaricati {0} file mancanti.	Lejupielādēti {0} trūkstošie faili.
+Scaricati {0} file su {1}.	Lejupielādēti {0} faili no {1}.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} ir instalēta. Programma tagad restartēsies.
+YA-MS è aggiornato (versione {0}).	YA-MS ir atjaunināta (versija {0}).
+YA-MS.app non trovato nel pacchetto	Pakotnē nav atrasts YA-MS.app
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	Mapē data aizstāti {0} faili: iepriekšējās kopijas ir mapē data/backup/v{1}.
+{0} non trovato nel pacchetto	Pakotnē nav atrasts {0}
+È disponibile YA-MS {0} (questa è la {1}).	Pieejama YA-MS {0} (šī ir {1}).

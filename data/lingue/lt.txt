@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k iš populiacijos indeksų
 Δ radiante	Δ radiantas
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Du požiūriai į geometriją, su skirtingais šaltiniais.\nĮjungta (atsargu, numatytoji): visa McKinley (1961) ir ITU-R P.843 formulė 1 / (1 − cos²β sin²φ), kur β yra kampas tarp pėdsako ir trasos plokštumos. Plokštumą kertantys pėdsakai vertingi 10-15 dB mažiau nei joje gulintys, ir nė vienas pėdsakas nepervertinamas: vyrauja su trasa sulygiuoti radiantai. Su šiuo pasirinkimu YA-MS geriau atkartoja DJ5HG valandinių kreivių formą (2004).\nIšjungta: kiekvienas pėdsakas skaičiuojamas taip, lyg gulėtų trasos plokštumoje (β = 0), kaip iki 1.6 versijos. Galioja klasikinė radijo mėgėjų taisyklė: geriausias radiantas yra 15-70° aukštyje ir skersai trasos, sulygiuotas yra ribinis (SM6FHZ, DH9GCD, qso-graph meteor-mcp).\nPirmasis palyginimas su BRAMS skaičiavimais Zonnberge (Perseidai 2026, 471 km) jų neatskiria: langelis „Klasikinis įvertinimas“ kas valandą rodo klasikinės taisyklės įvertinimą po efektyvumu.
+... e altri {0}	... ir dar {0}
+Aggiorna adesso	Atnaujinti dabar
+Aggiornamenti	Atnaujinimai
+Aggiornamento disponibile	Yra atnaujinimas
+Aggiornamento installato	Atnaujinimas įdiegtas
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Kai kurie pakeitimai matomi tik iš naujo paleidus programą.
+Apri la pagina delle release	Atverti leidimų puslapį
+Chiudi	Uždaryti
+Continua senza	Tęsti be jų
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Patikrinkite interneto ryšį arba vėl atsisiųskite visą paketą iš leidimų puslapio.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Patikrina GitHub, ar yra naujesnė YA-MS versija, ir, jei yra, ją įdiegia; taip pat patikrina, ar netrūksta programos failų.
+Controllo degli aggiornamenti su GitHub...	Ieškoma atnaujinimų GitHub...
+File mancanti	Trūkstami failai
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Programa atsisiunčia paketą {0}, pakeičia savo failus, palieka aplanką data (pakeisti programos failai prieš tai nukopijuojami į data/backup) ir pasileidžia iš naujo.
+Installazione dell'aggiornamento...	Diegiamas atnaujinimas...
+L'aggiornamento non è riuscito: {0}	Atnaujinti nepavyko: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	Trūksta {0} programos failų:\n{1}\n\nAtsisiųsti juos iš GitHub (versija {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	Leidime nėra paketo šiai sistemai ({0}): atsisiųskite jį rankiniu būdu iš leidimų puslapio.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Negaliu rašyti į programos aplanką ({0}): įdiekite naują versiją rankiniu būdu.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Nepavyksta perskaityti GitHub paskelbtų versijų: {0}
+Più tardi	Vėliau
+Riavvia YA-MS a mano: {0}	Paleiskite YA-MS iš naujo rankiniu būdu: {0}
+Salta questa versione	Praleisti šią versiją
+Scarica i file mancanti	Atsisiųsti trūkstamus failus
+Scaricamento dei file mancanti: {0} di {1}	Atsisiunčiami trūkstami failai: {0} iš {1}
+Scaricamento dell'aggiornamento...	Atsisiunčiamas atnaujinimas...
+Scaricamento dell'aggiornamento: {0} %	Atsisiunčiamas atnaujinimas: {0} %
+Scaricati {0} file mancanti.	Atsisiųsta trūkstamų failų: {0}.
+Scaricati {0} file su {1}.	Atsisiųsta {0} failų iš {1}.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} įdiegta. Programa dabar pasileis iš naujo.
+YA-MS è aggiornato (versione {0}).	YA-MS yra naujausia (versija {0}).
+YA-MS.app non trovato nel pacchetto	Pakete nerasta YA-MS.app
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	Aplanke data pakeista failų: {0}; ankstesnės kopijos yra data/backup/v{1}.
+{0} non trovato nel pacchetto	Pakete nerasta {0}
+È disponibile YA-MS {0} (questa è la {1}).	Yra YA-MS {0} (ši yra {1}).

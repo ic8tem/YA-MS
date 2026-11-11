@@ -674,3 +674,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k from population indices
 Δ radiante	Δ radiant
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Two views on the geometry, with different sources.\nOn (cautious, default): full formula of McKinley (1961) and ITU-R P.843, 1 / (1 − cos²β sin²φ), where β is the angle between the trail and the path plane. Trails crossing the plane are worth 10-15 dB less than those lying in it and no trail is overestimated: radiants aligned with the path prevail. With this choice YA-MS follows the shape of DJ5HG's hourly curves (2004) better.\nOff: every trail counts as if it lay in the path plane (β = 0), as up to version 1.6. The classic radio amateur rule applies: the best radiant is 15-70° high and broadside to the path, an aligned one is marginal (SM6FHZ, DH9GCD, meteor-mcp by qso-graph).\nA first comparison with the BRAMS counts at Sonneberg (2026 Perseids, 471 km) does not tell them apart: the "Classic verdict" box shows the classic rule's verdict under the efficiency, hour by hour.
+... e altri {0}	... and {0} more
+Aggiorna adesso	Update now
+Aggiornamenti	Updates
+Aggiornamento disponibile	Update available
+Aggiornamento installato	Update installed
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Some changes only show after restarting the program.
+Apri la pagina delle release	Open the releases page
+Chiudi	Close
+Continua senza	Continue without
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Check your Internet connection, or download the full package again from the releases page.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Checks on GitHub whether there is a newer version of YA-MS and, if so, installs it; it also checks that no program files are missing.
+Controllo degli aggiornamenti su GitHub...	Checking for updates on GitHub...
+File mancanti	Missing files
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	The program downloads the package {0}, replaces its files, keeps the data folder (changed program files are first copied to data/backup) and restarts.
+Installazione dell'aggiornamento...	Installing the update...
+L'aggiornamento non è riuscito: {0}	The update failed: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	{0} program files are missing:\n{1}\n\nDownload them from GitHub (version {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	The release has no package for this system ({0}): download it by hand from the releases page.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	I cannot write to the program folder ({0}): install the new version by hand.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Cannot read the versions published on GitHub: {0}
+Più tardi	Later
+Riavvia YA-MS a mano: {0}	Restart YA-MS by hand: {0}
+Salta questa versione	Skip this version
+Scarica i file mancanti	Download the missing files
+Scaricamento dei file mancanti: {0} di {1}	Downloading missing files: {0} of {1}
+Scaricamento dell'aggiornamento...	Downloading the update...
+Scaricamento dell'aggiornamento: {0} %	Downloading the update: {0} %
+Scaricati {0} file mancanti.	Downloaded {0} missing files.
+Scaricati {0} file su {1}.	Downloaded {0} files out of {1}.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} is installed. The program will now restart.
+YA-MS è aggiornato (versione {0}).	YA-MS is up to date (version {0}).
+YA-MS.app non trovato nel pacchetto	YA-MS.app not found in the package
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	{0} files in the data folder were replaced: the previous copies are in data/backup/v{1}.
+{0} non trovato nel pacchetto	{0} not found in the package
+È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0} is available (this is {1}).

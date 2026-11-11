@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k з індексів популяції
 Δ radiante	Δ радіанта
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Два погляди на геометрію, з різними джерелами.\nУвімкнено (обережно, типово): повна формула McKinley (1961) та ITU-R P.843, 1 / (1 − cos²β sin²φ), де β — кут між слідом і площиною траси. Сліди, що перетинають площину, варті на 10-15 дБ менше за ті, що лежать у ній, і жоден слід не переоцінюється: переважають радіанти, спрямовані вздовж траси. З цим вибором YA-MS краще відтворює форму годинних кривих DJ5HG (2004).\nВимкнено: кожен слід рахується так, ніби лежить у площині траси (β = 0), як до версії 1.6. Діє класичне правило радіоаматорів: найкращий радіант стоїть на висоті 15-70° і поперек траси, спрямований уздовж неї — на межі (SM6FHZ, DH9GCD, meteor-mcp від qso-graph).\nПерше порівняння з підрахунками BRAMS у Зонненберзі (Персеїди 2026, 471 км) їх не розрізняє: прапорець «Класичний вердикт» показує щогодини вердикт класичного правила під ефективністю.
+... e altri {0}	... і ще {0}
+Aggiorna adesso	Оновити зараз
+Aggiornamenti	Оновлення
+Aggiornamento disponibile	Доступне оновлення
+Aggiornamento installato	Оновлення встановлено
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Деякі зміни видно лише після перезапуску програми.
+Apri la pagina delle release	Відкрити сторінку випусків
+Chiudi	Закрити
+Continua senza	Продовжити без них
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Перевірте з'єднання з Інтернетом або заново завантажте повний пакет зі сторінки випусків.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Перевіряє на GitHub, чи є новіша версія YA-MS, і якщо є, встановлює її; також перевіряє, чи не бракує файлів програми.
+Controllo degli aggiornamenti su GitHub...	Перевірка оновлень на GitHub...
+File mancanti	Відсутні файли
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Програма завантажує пакет {0}, замінює свої файли, зберігає теку data (змінені файли програми спершу копіюються в data/backup) і перезапускається.
+Installazione dell'aggiornamento...	Встановлення оновлення...
+L'aggiornamento non è riuscito: {0}	Оновлення не вдалося: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	Бракує файлів програми ({0}):\n{1}\n\nЗавантажити їх з GitHub (версія {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	У випуску немає пакета для цієї системи ({0}): завантажте його вручну зі сторінки випусків.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Не можу записувати в теку програми ({0}): встановіть нову версію вручну.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Не вдається прочитати версії, опубліковані на GitHub: {0}
+Più tardi	Пізніше
+Riavvia YA-MS a mano: {0}	Перезапустіть YA-MS вручну: {0}
+Salta questa versione	Пропустити цю версію
+Scarica i file mancanti	Завантажити відсутні файли
+Scaricamento dei file mancanti: {0} di {1}	Завантаження відсутніх файлів: {0} з {1}
+Scaricamento dell'aggiornamento...	Завантаження оновлення...
+Scaricamento dell'aggiornamento: {0} %	Завантаження оновлення: {0} %
+Scaricati {0} file mancanti.	Завантажено відсутніх файлів: {0}.
+Scaricati {0} file su {1}.	Завантажено файлів: {0} з {1}.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} встановлено. Програма зараз перезапуститься.
+YA-MS è aggiornato (versione {0}).	YA-MS оновлено (версія {0}).
+YA-MS.app non trovato nel pacchetto	YA-MS.app не знайдено в пакеті
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	У теці data замінено файлів: {0}; попередні копії знаходяться в data/backup/v{1}.
+{0} non trovato nel pacchetto	{0} не знайдено в пакеті
+È disponibile YA-MS {0} (questa è la {1}).	Доступна YA-MS {0} (це версія {1}).

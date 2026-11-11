@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k من المؤشرات السكانية
 Δ radiante	Δ المشع
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	رأيان في الهندسة، بمصادر مختلفة.\nمفعّل (حذر، افتراضي): صيغة McKinley (1961) وITU-R P.843 الكاملة 1 / (1 − cos²β sin²φ)، حيث β الزاوية بين الأثر ومستوى المسار. الآثار التي تعبر المستوى أقل قيمة بـ 10-15 dB من الواقعة فيه، ولا يُبالغ في تقدير أي أثر: تغلب المشعات المحاذية للمسار. بهذا الاختيار يتبع YA-MS شكل منحنيات DJ5HG الساعية (2004) على نحو أفضل.\nمعطّل: يُحسب كل أثر كأنه في مستوى المسار (β = 0)، كما حتى الإصدار 1.6. تنطبق القاعدة الكلاسيكية لهواة الراديو: أفضل مشع على ارتفاع 15-70° ومستعرض على المسار، والمحاذي هامشي (SM6FHZ، DH9GCD، meteor-mcp من qso-graph).\nمقارنة أولى مع عدّات BRAMS في Sonneberg (البرشاويات 2026، ‏471 km) لا تميّز بين الرأيين: يعرض مربع «الحكم الكلاسيكي» حكم القاعدة الكلاسيكية تحت الكفاءة، ساعة بساعة.
+... e altri {0}	... و{0} أخرى
+Aggiorna adesso	حدّث الآن
+Aggiornamenti	التحديثات
+Aggiornamento disponibile	يتوفر تحديث
+Aggiornamento installato	تم تثبيت التحديث
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	بعض التغييرات لا تظهر إلا بعد إعادة تشغيل البرنامج.
+Apri la pagina delle release	افتح صفحة الإصدارات
+Chiudi	إغلاق
+Continua senza	تابع من دونها
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	تحقق من الاتصال بالإنترنت، أو نزّل الحزمة الكاملة مرة أخرى من صفحة الإصدارات.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	يتحقق على GitHub من وجود إصدار أحدث من YA-MS ويثبّته إن وُجد؛ ويتحقق أيضًا من عدم نقص أي ملفات للبرنامج.
+Controllo degli aggiornamenti su GitHub...	جارٍ البحث عن تحديثات على GitHub...
+File mancanti	ملفات ناقصة
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	ينزّل البرنامج الحزمة {0}، ويستبدل ملفاته، ويحتفظ بمجلد data (تُنسخ ملفات البرنامج المتغيرة أولًا إلى data/backup) ثم يعيد التشغيل.
+Installazione dell'aggiornamento...	جارٍ تثبيت التحديث...
+L'aggiornamento non è riuscito: {0}	فشل التحديث: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	تنقص {0} ملفات من البرنامج:\n{1}\n\nهل أنزّلها من GitHub (الإصدار {2})؟
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	لا يحتوي الإصدار على حزمة لهذا النظام ({0}): نزّلها يدويًا من صفحة الإصدارات.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	لا أستطيع الكتابة في مجلد البرنامج ({0}): ثبّت الإصدار الجديد يدويًا.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	تعذّرت قراءة الإصدارات المنشورة على GitHub: {0}
+Più tardi	لاحقًا
+Riavvia YA-MS a mano: {0}	أعد تشغيل YA-MS يدويًا: {0}
+Salta questa versione	تخطَّ هذا الإصدار
+Scarica i file mancanti	نزّل الملفات الناقصة
+Scaricamento dei file mancanti: {0} di {1}	جارٍ تنزيل الملفات الناقصة: {0} من {1}
+Scaricamento dell'aggiornamento...	جارٍ تنزيل التحديث...
+Scaricamento dell'aggiornamento: {0} %	جارٍ تنزيل التحديث: {0} %
+Scaricati {0} file mancanti.	تم تنزيل {0} من الملفات الناقصة.
+Scaricati {0} file su {1}.	تم تنزيل {0} ملفات من {1}.
+YA-MS {0} è installato. Il programma ora si riavvia.	تم تثبيت YA-MS {0}. سيُعاد تشغيل البرنامج الآن.
+YA-MS è aggiornato (versione {0}).	YA-MS محدَّث (الإصدار {0}).
+YA-MS.app non trovato nel pacchetto	لم يُعثر على YA-MS.app في الحزمة
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	استُبدلت {0} ملفات في مجلد data: النسخ السابقة موجودة في data/backup/v{1}.
+{0} non trovato nel pacchetto	لم يُعثر على {0} في الحزمة
+È disponibile YA-MS {0} (questa è la {1}).	يتوفر YA-MS {0} (هذا الإصدار {1}).

@@ -146,7 +146,15 @@ namespace YAMS
             DockTop(root, tabs.Bar);
             SetRowsVisible(cfg.GetD("comandi_visibili", 1) != 0, false);
             status = new TextBlock { Text = Lang.T("Pronto"), Foreground = Pal.B(Pal.BarMuted), TextTrimming = TextTrimming.CharacterEllipsis };
-            Border sb = new Border { Background = Pal.B(Pal.Track), Padding = new Thickness(8, 3), Child = status };
+            DockPanel sbLine = new DockPanel();
+            btnUpdate = new Button { Content = Lang.T("Aggiornamenti"), Padding = new Thickness(8, 0), Margin = new Thickness(8, 0, 0, 0), VerticalAlignment = VerticalAlignment.Center, FontSize = 11 };
+            btnUpdate.Classes.Add("pill");
+            ToolTip.SetTip(btnUpdate, Lang.T("Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma."));
+            btnUpdate.Click += (s, e) => CheckUpdatesManual();
+            DockPanel.SetDock(btnUpdate, Dock.Right);
+            sbLine.Children.Add(btnUpdate);
+            sbLine.Children.Add(status);
+            Border sb = new Border { Background = Pal.B(Pal.Track), Padding = new Thickness(8, 3), Child = sbLine };
             DockPanel.SetDock(sb, Dock.Bottom);
             root.Children.Add(sb);
             BuildTabs();
@@ -255,6 +263,7 @@ namespace YAMS
                     catalogShown = true;
                     await Dialogs.Message(this, Lang.T("Catalogo sciami"), Catalog.LoadMessage);
                 }
+                await StartupUpdateChecks();
             }
             catch (Exception ex) { status.Text = Lang.F("Errore all'avvio: {0}", ex.Message); }
         }

@@ -674,3 +674,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	個数指数から k
 Δ radiante	Δ 輻射点
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	幾何学についての二つの見方（出典が異なります）。\nオン（慎重、既定）：McKinley（1961）と ITU-R P.843 の完全な式 1 / (1 − cos²β sin²φ)。β は流星痕と経路面のなす角です。経路面を横切る流星痕は面内にあるものより 10-15 dB 価値が低く、過大評価される流星痕はありません。経路に沿った輻射点が優勢になります。この選択で YA-MS は DJ5HG の時間別曲線（2004）の形によりよく沿います。\nオフ：すべての流星痕を経路面内にあるとみなします（β = 0）。バージョン 1.6 までと同じです。アマチュア無線の古典的な規則が当てはまり、最良の輻射点は高さ 15-70° で経路を横切る向き、経路に沿ったものはぎりぎりです（SM6FHZ、DH9GCD、qso-graph の meteor-mcp）。\nSonneberg の BRAMS 計数との最初の比較（2026 年ペルセウス座流星群、471 km）では両者を区別できません。「古典的判定」のチェックボックスで、効率の下に古典規則の判定を 1 時間ごとに表示します。
+... e altri {0}	……ほか {0} 件
+Aggiorna adesso	今すぐ更新
+Aggiornamenti	更新
+Aggiornamento disponibile	更新があります
+Aggiornamento installato	更新をインストールしました
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	一部の変更はプログラムの再起動後に反映されます。
+Apri la pagina delle release	リリースページを開く
+Chiudi	閉じる
+Continua senza	ダウンロードせずに続行
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	インターネット接続を確認するか、リリースページから完全なパッケージをもう一度ダウンロードしてください。
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	GitHub で YA-MS の新しいバージョンがあるか確認し、あればインストールします。プログラムのファイルが欠けていないかも確認します。
+Controllo degli aggiornamenti su GitHub...	GitHub で更新を確認しています...
+File mancanti	不足しているファイル
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	プログラムはパッケージ {0} をダウンロードし、自身のファイルを置き換え、data フォルダーは残し（変更されたプログラムのファイルは先に data/backup にコピー）、再起動します。
+Installazione dell'aggiornamento...	更新をインストールしています...
+L'aggiornamento non è riuscito: {0}	更新に失敗しました: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	プログラムのファイルが {0} 個不足しています:\n{1}\n\nGitHub からダウンロードしますか（バージョン {2}）？
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	このリリースにはこのシステム用のパッケージがありません（{0}）。リリースページから手動でダウンロードしてください。
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	プログラムのフォルダーに書き込めません（{0}）。新しいバージョンを手動でインストールしてください。
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	GitHub で公開されたバージョンを読み取れません: {0}
+Più tardi	後で
+Riavvia YA-MS a mano: {0}	YA-MS を手動で再起動してください: {0}
+Salta questa versione	このバージョンをスキップ
+Scarica i file mancanti	不足しているファイルをダウンロード
+Scaricamento dei file mancanti: {0} di {1}	不足しているファイルをダウンロード中: {0} / {1}
+Scaricamento dell'aggiornamento...	更新をダウンロードしています...
+Scaricamento dell'aggiornamento: {0} %	更新をダウンロードしています: {0} %
+Scaricati {0} file mancanti.	不足していたファイルを {0} 個ダウンロードしました。
+Scaricati {0} file su {1}.	{1} 個中 {0} 個のファイルをダウンロードしました。
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} をインストールしました。プログラムを再起動します。
+YA-MS è aggiornato (versione {0}).	YA-MS は最新です（バージョン {0}）。
+YA-MS.app non trovato nel pacchetto	パッケージに YA-MS.app が見つかりません
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	data フォルダーのファイルを {0} 個置き換えました。以前のコピーは data/backup/v{1} にあります。
+{0} non trovato nel pacchetto	パッケージに {0} が見つかりません
+È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0} が公開されています（現在は {1}）。

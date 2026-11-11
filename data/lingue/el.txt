@@ -673,3 +673,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k από τους δείκτες πληθυσμού
 Δ radiante	Δ ακτινοβόλου
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Δύο απόψεις για τη γεωμετρία, με διαφορετικές πηγές.\nΕνεργή (συντηρητική, προεπιλογή): πλήρης τύπος του McKinley (1961) και της ITU-R P.843, 1 / (1 − cos²β sin²φ), όπου β η γωνία μεταξύ ίχνους και επιπέδου της διαδρομής. Τα ίχνη που διασχίζουν το επίπεδο αξίζουν 10-15 dB λιγότερο από όσα βρίσκονται σε αυτό και κανένα ίχνος δεν υπερεκτιμάται: επικρατούν τα ακτινοβόλα ευθυγραμμισμένα με τη διαδρομή. Με αυτή την επιλογή το YA-MS ακολουθεί καλύτερα τη μορφή των ωριαίων καμπυλών του DJ5HG (2004).\nΑνενεργή: κάθε ίχνος μετρά σαν να βρισκόταν στο επίπεδο της διαδρομής (β = 0), όπως ως την έκδοση 1.6. Ισχύει ο κλασικός κανόνας των ραδιοερασιτεχνών: το καλύτερο ακτινοβόλο είναι σε ύψος 15-70° και εγκάρσιο στη διαδρομή, ένα ευθυγραμμισμένο είναι οριακό (SM6FHZ, DH9GCD, meteor-mcp του qso-graph).\nΜια πρώτη σύγκριση με τις καταμετρήσεις BRAMS στο Sonneberg (Περσείδες 2026, 471 km) δεν τις ξεχωρίζει: το πλαίσιο «Κλασική κρίση» δείχνει ώρα προς ώρα την κρίση του κλασικού κανόνα κάτω από την απόδοση.
+... e altri {0}	... και άλλα {0}
+Aggiorna adesso	Ενημέρωση τώρα
+Aggiornamenti	Ενημερώσεις
+Aggiornamento disponibile	Υπάρχει διαθέσιμη ενημέρωση
+Aggiornamento installato	Η ενημέρωση εγκαταστάθηκε
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Ορισμένες αλλαγές φαίνονται μόνο μετά την επανεκκίνηση του προγράμματος.
+Apri la pagina delle release	Άνοιγμα της σελίδας εκδόσεων
+Chiudi	Κλείσιμο
+Continua senza	Συνέχεια χωρίς αυτά
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Ελέγξτε τη σύνδεση στο Διαδίκτυο ή κατεβάστε ξανά ολόκληρο το πακέτο από τη σελίδα εκδόσεων.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Ελέγχει στο GitHub αν υπάρχει νεότερη έκδοση του YA-MS και, αν υπάρχει, την εγκαθιστά· ελέγχει επίσης ότι δεν λείπουν αρχεία του προγράμματος.
+Controllo degli aggiornamenti su GitHub...	Έλεγχος για ενημερώσεις στο GitHub...
+File mancanti	Αρχεία που λείπουν
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Το πρόγραμμα κατεβάζει το πακέτο {0}, αντικαθιστά τα αρχεία του, κρατά τον φάκελο data (τα αρχεία του προγράμματος που άλλαξαν αντιγράφονται πρώτα στο data/backup) και επανεκκινείται.
+Installazione dell'aggiornamento...	Εγκατάσταση της ενημέρωσης...
+L'aggiornamento non è riuscito: {0}	Η ενημέρωση απέτυχε: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	Λείπουν {0} αρχεία του προγράμματος:\n{1}\n\nΝα τα κατεβάσω από το GitHub (έκδοση {2});
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	Η έκδοση δεν έχει πακέτο για αυτό το σύστημα ({0}): κατεβάστε το χειροκίνητα από τη σελίδα εκδόσεων.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Δεν μπορώ να γράψω στον φάκελο του προγράμματος ({0}): εγκαταστήστε τη νέα έκδοση χειροκίνητα.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Δεν είναι δυνατή η ανάγνωση των εκδόσεων που δημοσιεύτηκαν στο GitHub: {0}
+Più tardi	Αργότερα
+Riavvia YA-MS a mano: {0}	Επανεκκινήστε το YA-MS χειροκίνητα: {0}
+Salta questa versione	Παράλειψη αυτής της έκδοσης
+Scarica i file mancanti	Λήψη των αρχείων που λείπουν
+Scaricamento dei file mancanti: {0} di {1}	Λήψη αρχείων που λείπουν: {0} από {1}
+Scaricamento dell'aggiornamento...	Λήψη της ενημέρωσης...
+Scaricamento dell'aggiornamento: {0} %	Λήψη της ενημέρωσης: {0} %
+Scaricati {0} file mancanti.	Λήφθηκαν {0} αρχεία που έλειπαν.
+Scaricati {0} file su {1}.	Λήφθηκαν {0} αρχεία από {1}.
+YA-MS {0} è installato. Il programma ora si riavvia.	Το YA-MS {0} εγκαταστάθηκε. Το πρόγραμμα επανεκκινείται τώρα.
+YA-MS è aggiornato (versione {0}).	Το YA-MS είναι ενημερωμένο (έκδοση {0}).
+YA-MS.app non trovato nel pacchetto	Το YA-MS.app δεν βρέθηκε στο πακέτο
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	Αντικαταστάθηκαν {0} αρχεία στον φάκελο data: τα προηγούμενα αντίγραφα βρίσκονται στο data/backup/v{1}.
+{0} non trovato nel pacchetto	Το {0} δεν βρέθηκε στο πακέτο
+È disponibile YA-MS {0} (questa è la {1}).	Είναι διαθέσιμο το YA-MS {0} (αυτή είναι η {1}).

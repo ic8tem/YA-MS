@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	개체수 지수로 k 구하기
 Δ radiante	Δ 복사점
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	기하에 관한 두 관점, 출처가 다릅니다.\n켜짐(신중, 기본): McKinley(1961)와 ITU-R P.843의 완전한 식 1 / (1 − cos²β sin²φ), 여기서 β는 흔적과 경로 평면 사이의 각입니다. 평면을 가로지르는 흔적은 평면 안에 놓인 흔적보다 10-15 dB 가치가 낮고 어떤 흔적도 과대평가되지 않습니다: 경로와 정렬된 복사점이 우세합니다. 이 선택으로 YA-MS는 DJ5HG 시간별 곡선(2004)의 모양을 더 잘 따릅니다.\n꺼짐: 모든 흔적을 경로 평면 안에 있는 것처럼 셉니다(β = 0), 버전 1.6까지와 같습니다. 아마추어 무선의 고전 규칙이 적용됩니다: 가장 좋은 복사점은 고도 15-70°이고 경로를 가로지르며, 정렬된 것은 경계입니다(SM6FHZ, DH9GCD, qso-graph의 meteor-mcp).\nSonneberg의 BRAMS 계수와의 첫 비교(2026년 페르세우스자리 유성우, 471 km)는 둘을 구별하지 못합니다: "고전 판정" 상자가 효율 아래에 고전 규칙의 판정을 시간별로 보여 줍니다.
+... e altri {0}	... 외 {0}개
+Aggiorna adesso	지금 업데이트
+Aggiornamenti	업데이트
+Aggiornamento disponibile	업데이트 있음
+Aggiornamento installato	업데이트 설치됨
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	일부 변경 사항은 프로그램을 다시 시작한 후에만 보입니다.
+Apri la pagina delle release	릴리스 페이지 열기
+Chiudi	닫기
+Continua senza	없이 계속
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	인터넷 연결을 확인하거나 릴리스 페이지에서 전체 패키지를 다시 다운로드하세요.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	GitHub에서 YA-MS의 새 버전이 있는지 확인하고 있으면 설치합니다. 프로그램 파일이 빠지지 않았는지도 확인합니다.
+Controllo degli aggiornamenti su GitHub...	GitHub에서 업데이트 확인 중...
+File mancanti	누락된 파일
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	프로그램이 패키지 {0}을(를) 다운로드하고, 자체 파일을 교체하며, data 폴더는 유지한 뒤(변경된 프로그램 파일은 먼저 data/backup에 복사) 다시 시작합니다.
+Installazione dell'aggiornamento...	업데이트 설치 중...
+L'aggiornamento non è riuscito: {0}	업데이트 실패: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	프로그램 파일 {0}개가 누락되었습니다:\n{1}\n\nGitHub에서 다운로드할까요(버전 {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	이 릴리스에는 이 시스템용 패키지가 없습니다({0}). 릴리스 페이지에서 직접 다운로드하세요.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	프로그램 폴더에 쓸 수 없습니다({0}). 새 버전을 직접 설치하세요.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	GitHub에 게시된 버전을 읽을 수 없습니다: {0}
+Più tardi	나중에
+Riavvia YA-MS a mano: {0}	YA-MS를 직접 다시 시작하세요: {0}
+Salta questa versione	이 버전 건너뛰기
+Scarica i file mancanti	누락된 파일 다운로드
+Scaricamento dei file mancanti: {0} di {1}	누락된 파일 다운로드 중: {0} / {1}
+Scaricamento dell'aggiornamento...	업데이트 다운로드 중...
+Scaricamento dell'aggiornamento: {0} %	업데이트 다운로드 중: {0} %
+Scaricati {0} file mancanti.	누락된 파일 {0}개를 다운로드했습니다.
+Scaricati {0} file su {1}.	파일 {1}개 중 {0}개를 다운로드했습니다.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0}이(가) 설치되었습니다. 프로그램이 지금 다시 시작됩니다.
+YA-MS è aggiornato (versione {0}).	YA-MS가 최신 버전입니다(버전 {0}).
+YA-MS.app non trovato nel pacchetto	패키지에서 YA-MS.app을 찾을 수 없습니다
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	data 폴더의 파일 {0}개가 교체되었습니다. 이전 사본은 data/backup/v{1}에 있습니다.
+{0} non trovato nel pacchetto	패키지에서 {0}을(를) 찾을 수 없습니다
+È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0}을(를) 사용할 수 있습니다(현재 {1}).

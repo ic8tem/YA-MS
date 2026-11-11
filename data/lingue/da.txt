@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k fra populationsindekserne
 Δ radiante	Δ radiant
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	To opfattelser af geometrien, med forskellige kilder.\nTil (forsigtig, standard): fuld formel fra McKinley (1961) og ITU-R P.843, 1 / (1 − cos²β sin²φ), hvor β er vinklen mellem sporet og forbindelsens plan. Spor, der krydser planet, er 10-15 dB mindre værd end dem, der ligger i det, og intet spor overvurderes: radianter på linje med forbindelsen dominerer. Med dette valg følger YA-MS formen på DJ5HG's timekurver (2004) bedre.\nFra: hvert spor tæller, som om det lå i forbindelsens plan (β = 0), som til og med version 1.6. Radioamatørernes klassiske regel gælder: den bedste radiant står 15-70° højt og på tværs af forbindelsen, en radiant på linje er marginal (SM6FHZ, DH9GCD, meteor-mcp fra qso-graph).\nEn første sammenligning med BRAMS-tællingerne i Sonneberg (Perseiderne 2026, 471 km) skelner dem ikke: feltet "Klassisk dom" viser time for time den klassiske regels dom under effektiviteten.
+... e altri {0}	... og {0} mere
+Aggiorna adesso	Opdater nu
+Aggiornamenti	Opdateringer
+Aggiornamento disponibile	Opdatering tilgængelig
+Aggiornamento installato	Opdatering installeret
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Nogle ændringer ses først efter genstart af programmet.
+Apri la pagina delle release	Åbn siden med udgivelser
+Chiudi	Luk
+Continua senza	Fortsæt uden
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Tjek internetforbindelsen, eller hent hele pakken igen fra siden med udgivelser.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Tjekker på GitHub, om der findes en nyere version af YA-MS, og installerer den i så fald; tjekker også, at ingen programfiler mangler.
+Controllo degli aggiornamenti su GitHub...	Søger efter opdateringer på GitHub...
+File mancanti	Manglende filer
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Programmet henter pakken {0}, erstatter sine filer, beholder mappen data (ændrede programfiler kopieres først til data/backup) og genstarter.
+Installazione dell'aggiornamento...	Installerer opdateringen...
+L'aggiornamento non è riuscito: {0}	Opdateringen mislykkedes: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	Der mangler {0} programfiler:\n{1}\n\nHente dem fra GitHub (version {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	Udgivelsen har ingen pakke til dette system ({0}): hent den manuelt fra siden med udgivelser.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Jeg kan ikke skrive i programmappen ({0}): installer den nye version manuelt.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Kan ikke læse de versioner, der er udgivet på GitHub: {0}
+Più tardi	Senere
+Riavvia YA-MS a mano: {0}	Genstart YA-MS manuelt: {0}
+Salta questa versione	Spring denne version over
+Scarica i file mancanti	Hent de manglende filer
+Scaricamento dei file mancanti: {0} di {1}	Henter manglende filer: {0} af {1}
+Scaricamento dell'aggiornamento...	Henter opdateringen...
+Scaricamento dell'aggiornamento: {0} %	Henter opdateringen: {0} %
+Scaricati {0} file mancanti.	{0} manglende filer hentet.
+Scaricati {0} file su {1}.	{0} af {1} filer hentet.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} er installeret. Programmet genstarter nu.
+YA-MS è aggiornato (versione {0}).	YA-MS er opdateret (version {0}).
+YA-MS.app non trovato nel pacchetto	YA-MS.app blev ikke fundet i pakken
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	{0} filer i mappen data er erstattet: de tidligere kopier ligger i data/backup/v{1}.
+{0} non trovato nel pacchetto	{0} blev ikke fundet i pakken
+È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0} er tilgængelig (dette er {1}).

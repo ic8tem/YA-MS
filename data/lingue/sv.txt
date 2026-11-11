@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k från populationsindex
 Δ radiante	Δ radiant
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Två synsätt på geometrin, med olika källor.\nPå (försiktig, standard): fullständig formel från McKinley (1961) och ITU-R P.843, 1 / (1 − cos²β sin²φ), där β är vinkeln mellan spåret och förbindelsens plan. Spår som korsar planet är värda 10-15 dB mindre än de som ligger i det och inget spår överskattas: radianter i linje med förbindelsen dominerar. Med detta val följer YA-MS formen på DJ5HG:s timkurvor (2004) bättre.\nAv: varje spår räknas som om det låg i förbindelsens plan (β = 0), som fram till version 1.6. Radioamatörernas klassiska regel gäller: bästa radianten står 15-70° högt och tvärs över förbindelsen, en radiant i linje är marginell (SM6FHZ, DH9GCD, meteor-mcp från qso-graph).\nEn första jämförelse med BRAMS-räkningarna i Sonneberg (Perseiderna 2026, 471 km) skiljer dem inte åt: rutan "Klassisk dom" visar timme för timme den klassiska regelns dom under effektiviteten.
+... e altri {0}	... och {0} till
+Aggiorna adesso	Uppdatera nu
+Aggiornamenti	Uppdateringar
+Aggiornamento disponibile	Uppdatering tillgänglig
+Aggiornamento installato	Uppdatering installerad
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Vissa ändringar syns först efter att programmet startats om.
+Apri la pagina delle release	Öppna sidan med utgåvor
+Chiudi	Stäng
+Continua senza	Fortsätt utan
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Kontrollera internetanslutningen, eller ladda ner hela paketet igen från sidan med utgåvor.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Kontrollerar på GitHub om det finns en nyare version av YA-MS och installerar den i så fall; kontrollerar också att inga programfiler saknas.
+Controllo degli aggiornamenti su GitHub...	Söker efter uppdateringar på GitHub...
+File mancanti	Saknade filer
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Programmet laddar ner paketet {0}, ersätter sina filer, behåller mappen data (ändrade programfiler kopieras först till data/backup) och startar om.
+Installazione dell'aggiornamento...	Installerar uppdateringen...
+L'aggiornamento non è riuscito: {0}	Uppdateringen misslyckades: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	{0} programfiler saknas:\n{1}\n\nLadda ner dem från GitHub (version {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	Utgåvan har inget paket för det här systemet ({0}): ladda ner det för hand från sidan med utgåvor.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Jag kan inte skriva i programmappen ({0}): installera den nya versionen för hand.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Kan inte läsa versionerna som publicerats på GitHub: {0}
+Più tardi	Senare
+Riavvia YA-MS a mano: {0}	Starta om YA-MS för hand: {0}
+Salta questa versione	Hoppa över den här versionen
+Scarica i file mancanti	Ladda ner saknade filer
+Scaricamento dei file mancanti: {0} di {1}	Laddar ner saknade filer: {0} av {1}
+Scaricamento dell'aggiornamento...	Laddar ner uppdateringen...
+Scaricamento dell'aggiornamento: {0} %	Laddar ner uppdateringen: {0} %
+Scaricati {0} file mancanti.	{0} saknade filer nedladdade.
+Scaricati {0} file su {1}.	{0} av {1} filer nedladdade.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} är installerat. Programmet startar nu om.
+YA-MS è aggiornato (versione {0}).	YA-MS är uppdaterat (version {0}).
+YA-MS.app non trovato nel pacchetto	YA-MS.app hittades inte i paketet
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	{0} filer i mappen data har ersatts: de tidigare kopiorna finns i data/backup/v{1}.
+{0} non trovato nel pacchetto	{0} hittades inte i paketet
+È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0} finns tillgänglig (detta är {1}).

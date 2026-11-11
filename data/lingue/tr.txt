@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	Popülasyon indekslerinden k
 Δ radiante	Δ radyant
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Geometri üzerine farklı kaynaklara dayanan iki görüş.\nAçık (temkinli, varsayılan): McKinley (1961) ve ITU-R P.843'ün tam formülü, 1 / (1 − cos²β sin²φ); β iz ile yol düzlemi arasındaki açıdır. Düzlemi kesen izler, düzlemde yatanlardan 10-15 dB daha az değerlidir ve hiçbir iz abartılmaz: yolla aynı doğrultudaki radyantlar öne çıkar. Bu seçimle YA-MS, DJ5HG'nin saatlik eğrilerinin biçimini (2004) daha iyi izler.\nKapalı: her iz yol düzleminde yatıyormuş gibi sayılır (β = 0), sürüm 1.6'ya kadar olduğu gibi. Radyo amatörlerinin klasik kuralı geçerlidir: en iyi radyant 15-70° yükseklikte ve yola dik konumdadır, yolla aynı doğrultudaki sınırdadır (SM6FHZ, DH9GCD, qso-graph'ın meteor-mcp'si).\nSonneberg'deki BRAMS sayımlarıyla ilk karşılaştırma (Perseidler 2026, 471 km) onları ayırt etmiyor: "Klasik karar" kutusu klasik kuralın kararını verimliliğin altında saat saat gösterir.
+... e altri {0}	... ve {0} tane daha
+Aggiorna adesso	Şimdi güncelle
+Aggiornamenti	Güncellemeler
+Aggiornamento disponibile	Güncelleme mevcut
+Aggiornamento installato	Güncelleme kuruldu
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Bazı değişiklikler ancak program yeniden başlatıldıktan sonra görünür.
+Apri la pagina delle release	Sürümler sayfasını aç
+Chiudi	Kapat
+Continua senza	Onlarsız devam et
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	İnternet bağlantınızı kontrol edin veya tam paketi sürümler sayfasından yeniden indirin.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	GitHub'da YA-MS'in daha yeni bir sürümü olup olmadığını denetler ve varsa kurar; ayrıca program dosyalarının eksik olmadığını da denetler.
+Controllo degli aggiornamenti su GitHub...	GitHub'da güncellemeler denetleniyor...
+File mancanti	Eksik dosyalar
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Program {0} paketini indirir, kendi dosyalarını değiştirir, data klasörünü korur (değişen program dosyaları önce data/backup klasörüne kopyalanır) ve yeniden başlar.
+Installazione dell'aggiornamento...	Güncelleme kuruluyor...
+L'aggiornamento non è riuscito: {0}	Güncelleme başarısız oldu: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	{0} program dosyası eksik:\n{1}\n\nGitHub'dan indirilsin mi (sürüm {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	Sürümde bu sistem için paket yok ({0}): sürümler sayfasından elle indirin.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Program klasörüne yazamıyorum ({0}): yeni sürümü elle kurun.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	GitHub'da yayımlanan sürümler okunamıyor: {0}
+Più tardi	Daha sonra
+Riavvia YA-MS a mano: {0}	YA-MS'i elle yeniden başlatın: {0}
+Salta questa versione	Bu sürümü atla
+Scarica i file mancanti	Eksik dosyaları indir
+Scaricamento dei file mancanti: {0} di {1}	Eksik dosyalar indiriliyor: {0} / {1}
+Scaricamento dell'aggiornamento...	Güncelleme indiriliyor...
+Scaricamento dell'aggiornamento: {0} %	Güncelleme indiriliyor: %{0}
+Scaricati {0} file mancanti.	{0} eksik dosya indirildi.
+Scaricati {0} file su {1}.	{1} dosyadan {0} tanesi indirildi.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} kuruldu. Program şimdi yeniden başlıyor.
+YA-MS è aggiornato (versione {0}).	YA-MS güncel (sürüm {0}).
+YA-MS.app non trovato nel pacchetto	Pakette YA-MS.app bulunamadı
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	data klasöründe {0} dosya değiştirildi: önceki kopyalar data/backup/v{1} klasöründe.
+{0} non trovato nel pacchetto	Pakette {0} bulunamadı
+È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0} mevcut (bu sürüm {1}).

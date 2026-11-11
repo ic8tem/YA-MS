@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k mula sa mga population index
 Δ radiante	Δ radiant
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Dalawang pananaw sa heometriya, na may magkaibang sanggunian.\nNaka-on (maingat, default): buong formula nina McKinley (1961) at ITU-R P.843, 1 / (1 − cos²β sin²φ), kung saan ang β ay anggulo sa pagitan ng bakas at ng plane ng path. Ang mga bakas na tumatawid sa plane ay 10-15 dB na mas mababa ang halaga kaysa sa mga nakahimlay rito at walang bakas na sobrang tinatantiya: nangingibabaw ang mga radiant na nakahanay sa path. Sa pagpiling ito mas sinusundan ng YA-MS ang hugis ng mga oras-oras na kurba ni DJ5HG (2004).\nNaka-off: bawat bakas ay binibilang na parang nasa plane ng path (β = 0), gaya hanggang bersyon 1.6. Umiiral ang klasikong tuntunin ng mga radio amateur: ang pinakamahusay na radiant ay 15-70° ang taas at pahalang sa path, ang nakahanay ay marginal (SM6FHZ, DH9GCD, meteor-mcp ng qso-graph).\nAng unang paghahambing sa mga bilang ng BRAMS sa Sonneberg (Perseids 2026, 471 km) ay hindi nakapagbubukod sa dalawa: ipinapakita ng kahong "Klasikong hatol" ang hatol ng klasikong tuntunin sa ilalim ng efficiency, oras-oras.
+... e altri {0}	... at {0} pa
+Aggiorna adesso	I-update ngayon
+Aggiornamenti	Mga update
+Aggiornamento disponibile	May available na update
+Aggiornamento installato	Na-install ang update
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	May mga pagbabagong makikita lang pagkatapos i-restart ang programa.
+Apri la pagina delle release	Buksan ang pahina ng mga release
+Chiudi	Isara
+Continua senza	Magpatuloy nang wala ang mga ito
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Suriin ang koneksyon sa Internet, o i-download ulit ang buong package mula sa pahina ng mga release.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Tinitingnan sa GitHub kung may mas bagong bersyon ng YA-MS at, kung mayroon, ini-install ito; tinitingnan din na walang nawawalang file ng programa.
+Controllo degli aggiornamenti su GitHub...	Naghahanap ng mga update sa GitHub...
+File mancanti	Mga nawawalang file
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Dina-download ng programa ang package na {0}, pinapalitan ang mga file nito, pinapanatili ang folder na data (kinokopya muna sa data/backup ang mga nabagong file ng programa) at nagre-restart.
+Installazione dell'aggiornamento...	Ini-install ang update...
+L'aggiornamento non è riuscito: {0}	Nabigo ang update: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	Nawawala ang {0} file ng programa:\n{1}\n\nI-download ba mula sa GitHub (bersyon {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	Walang package ang release para sa sistemang ito ({0}): i-download ito nang mano-mano mula sa pahina ng mga release.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Hindi ako makasulat sa folder ng programa ({0}): i-install nang mano-mano ang bagong bersyon.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Hindi mabasa ang mga bersyong inilathala sa GitHub: {0}
+Più tardi	Mamaya
+Riavvia YA-MS a mano: {0}	I-restart nang mano-mano ang YA-MS: {0}
+Salta questa versione	Laktawan ang bersyong ito
+Scarica i file mancanti	I-download ang mga nawawalang file
+Scaricamento dei file mancanti: {0} di {1}	Dina-download ang mga nawawalang file: {0} sa {1}
+Scaricamento dell'aggiornamento...	Dina-download ang update...
+Scaricamento dell'aggiornamento: {0} %	Dina-download ang update: {0} %
+Scaricati {0} file mancanti.	Na-download ang {0} nawawalang file.
+Scaricati {0} file su {1}.	Na-download ang {0} sa {1} file.
+YA-MS {0} è installato. Il programma ora si riavvia.	Na-install ang YA-MS {0}. Magre-restart na ang programa.
+YA-MS è aggiornato (versione {0}).	Updated ang YA-MS (bersyon {0}).
+YA-MS.app non trovato nel pacchetto	Hindi nakita ang YA-MS.app sa package
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	Napalitan ang {0} file sa folder na data: nasa data/backup/v{1} ang mga naunang kopya.
+{0} non trovato nel pacchetto	Hindi nakita ang {0} sa package
+È disponibile YA-MS {0} (questa è la {1}).	May available na YA-MS {0} (ito ay {1}).

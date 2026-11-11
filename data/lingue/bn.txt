@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	জনসংখ্যা সূচক থেকে k
 Δ radiante	Δ বিকিরণ বিন্দু
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	জ্যামিতি নিয়ে দুই মত, ভিন্ন উৎসসহ।\nচালু (সতর্ক, ডিফল্ট): McKinley (1961) ও ITU-R P.843-এর পূর্ণ সূত্র 1 / (1 − cos²β sin²φ), যেখানে β উল্কা-রেখা ও পথের তলের মধ্যকার কোণ। তল ছেদকারী রেখা তলে শায়িত রেখার চেয়ে 10-15 dB কম মূল্যবান এবং কোনো রেখার অতিমূল্যায়ন হয় না: পথের সঙ্গে সারিবদ্ধ বিকিরণ বিন্দু প্রাধান্য পায়। এই নির্বাচনে YA-MS, DJ5HG-এর ঘণ্টাভিত্তিক বক্ররেখার (2004) আকার আরও ভালো অনুসরণ করে।\nবন্ধ: প্রতিটি রেখা এমনভাবে গণ্য হয় যেন পথের তলে আছে (β = 0), সংস্করণ 1.6 পর্যন্ত যেমন ছিল। রেডিও অ্যামেচারদের ধ্রুপদী নিয়ম প্রযোজ্য: সেরা বিকিরণ বিন্দু 15-70° উঁচু ও পথের আড়াআড়ি, সারিবদ্ধটি প্রান্তিক (SM6FHZ, DH9GCD, qso-graph-এর meteor-mcp)।\nSonneberg-এর BRAMS গণনার সঙ্গে প্রথম তুলনা (পার্সিড 2026, 471 km) দুটির মধ্যে পার্থক্য করে না: "ধ্রুপদী রায়" বাক্স দক্ষতার নিচে ঘণ্টায় ঘণ্টায় ধ্রুপদী নিয়মের রায় দেখায়।
+... e altri {0}	... এবং আরও {0}টি
+Aggiorna adesso	এখনই আপডেট করুন
+Aggiornamenti	আপডেট
+Aggiornamento disponibile	আপডেট পাওয়া যাচ্ছে
+Aggiornamento installato	আপডেট ইনস্টল হয়েছে
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	কিছু পরিবর্তন প্রোগ্রাম আবার চালু করার পরেই দেখা যায়।
+Apri la pagina delle release	রিলিজ পাতা খুলুন
+Chiudi	বন্ধ করুন
+Continua senza	এগুলো ছাড়াই চালিয়ে যান
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	ইন্টারনেট সংযোগ পরীক্ষা করুন, অথবা রিলিজ পাতা থেকে সম্পূর্ণ প্যাকেজটি আবার ডাউনলোড করুন।
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	GitHub-এ দেখে YA-MS-এর নতুন সংস্করণ আছে কি না, থাকলে সেটি ইনস্টল করে; প্রোগ্রামের কোনো ফাইল অনুপস্থিত কি না সেটাও দেখে।
+Controllo degli aggiornamenti su GitHub...	GitHub-এ আপডেট খোঁজা হচ্ছে...
+File mancanti	অনুপস্থিত ফাইল
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	প্রোগ্রামটি {0} প্যাকেজ ডাউনলোড করে, নিজের ফাইলগুলো বদলায়, data ফোল্ডার রেখে দেয় (প্রোগ্রামের বদলানো ফাইলগুলো আগে data/backup-এ কপি হয়) এবং আবার চালু হয়।
+Installazione dell'aggiornamento...	আপডেট ইনস্টল হচ্ছে...
+L'aggiornamento non è riuscito: {0}	আপডেট ব্যর্থ হয়েছে: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	প্রোগ্রামের {0}টি ফাইল অনুপস্থিত:\n{1}\n\nGitHub থেকে ডাউনলোড করব (সংস্করণ {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	এই রিলিজে এই সিস্টেমের জন্য প্যাকেজ নেই ({0}): রিলিজ পাতা থেকে নিজে ডাউনলোড করুন।
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	প্রোগ্রামের ফোল্ডারে লিখতে পারছি না ({0}): নতুন সংস্করণ নিজে ইনস্টল করুন।
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	GitHub-এ প্রকাশিত সংস্করণগুলো পড়া যাচ্ছে না: {0}
+Più tardi	পরে
+Riavvia YA-MS a mano: {0}	YA-MS নিজে আবার চালু করুন: {0}
+Salta questa versione	এই সংস্করণ বাদ দিন
+Scarica i file mancanti	অনুপস্থিত ফাইল ডাউনলোড করুন
+Scaricamento dei file mancanti: {0} di {1}	অনুপস্থিত ফাইল ডাউনলোড হচ্ছে: {1}টির মধ্যে {0}
+Scaricamento dell'aggiornamento...	আপডেট ডাউনলোড হচ্ছে...
+Scaricamento dell'aggiornamento: {0} %	আপডেট ডাউনলোড হচ্ছে: {0} %
+Scaricati {0} file mancanti.	{0}টি অনুপস্থিত ফাইল ডাউনলোড হয়েছে।
+Scaricati {0} file su {1}.	{1}টির মধ্যে {0}টি ফাইল ডাউনলোড হয়েছে।
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} ইনস্টল হয়েছে। প্রোগ্রাম এখন আবার চালু হবে।
+YA-MS è aggiornato (versione {0}).	YA-MS হালনাগাদ আছে (সংস্করণ {0})।
+YA-MS.app non trovato nel pacchetto	প্যাকেজে YA-MS.app পাওয়া যায়নি
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	data ফোল্ডারের {0}টি ফাইল বদলানো হয়েছে: আগের কপিগুলো data/backup/v{1}-এ আছে।
+{0} non trovato nel pacchetto	প্যাকেজে {0} পাওয়া যায়নি
+È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0} পাওয়া যাচ্ছে (এটি {1})।

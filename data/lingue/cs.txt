@@ -673,3 +673,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k z populačních indexů
 Δ radiante	Δ radiant
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Dva pohledy na geometrii, s různými zdroji.\nZapnuto (opatrné, výchozí): úplný vzorec McKinleyho (1961) a ITU-R P.843, 1 / (1 − cos²β sin²φ), kde β je úhel mezi stopou a rovinou trasy. Stopy, které rovinu protínají, mají o 10-15 dB menší váhu než ty, které v ní leží, a žádná stopa není nadhodnocena: převažují radianty v ose trasy. S touto volbou YA-MS lépe sleduje tvar hodinových křivek DJ5HG (2004).\nVypnuto: každá stopa se počítá, jako by ležela v rovině trasy (β = 0), jako do verze 1.6. Platí klasické pravidlo radioamatérů: nejlepší radiant je ve výšce 15-70° a napříč trasou, radiant v ose trasy je hraniční (SM6FHZ, DH9GCD, meteor-mcp od qso-graph).\nPrvní porovnání s počty BRAMS v Sonnebergu (Perseidy 2026, 471 km) je nerozliší: políčko „Klasický verdikt“ ukazuje hodinu po hodině verdikt klasického pravidla pod účinností.
+... e altri {0}	... a dalších {0}
+Aggiorna adesso	Aktualizovat nyní
+Aggiornamenti	Aktualizace
+Aggiornamento disponibile	Je k dispozici aktualizace
+Aggiornamento installato	Aktualizace nainstalována
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Některé změny se projeví až po restartu programu.
+Apri la pagina delle release	Otevřít stránku vydání
+Chiudi	Zavřít
+Continua senza	Pokračovat bez nich
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Zkontrolujte připojení k internetu, nebo znovu stáhněte celý balíček ze stránky vydání.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Zkontroluje na GitHubu, zda existuje novější verze YA-MS, a pokud ano, nainstaluje ji; také zkontroluje, zda nechybí soubory programu.
+Controllo degli aggiornamenti su GitHub...	Hledání aktualizací na GitHubu...
+File mancanti	Chybějící soubory
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Program stáhne balíček {0}, nahradí své soubory, ponechá složku data (změněné soubory programu se nejprve zkopírují do data/backup) a restartuje se.
+Installazione dell'aggiornamento...	Instalace aktualizace...
+L'aggiornamento non è riuscito: {0}	Aktualizace se nezdařila: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	Chybí {0} souborů programu:\n{1}\n\nStáhnout je z GitHubu (verze {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	Vydání neobsahuje balíček pro tento systém ({0}): stáhněte ho ručně ze stránky vydání.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Nemohu zapisovat do složky programu ({0}): nainstalujte novou verzi ručně.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Nelze načíst verze zveřejněné na GitHubu: {0}
+Più tardi	Později
+Riavvia YA-MS a mano: {0}	Restartujte YA-MS ručně: {0}
+Salta questa versione	Přeskočit tuto verzi
+Scarica i file mancanti	Stáhnout chybějící soubory
+Scaricamento dei file mancanti: {0} di {1}	Stahování chybějících souborů: {0} z {1}
+Scaricamento dell'aggiornamento...	Stahování aktualizace...
+Scaricamento dell'aggiornamento: {0} %	Stahování aktualizace: {0} %
+Scaricati {0} file mancanti.	Staženo {0} chybějících souborů.
+Scaricati {0} file su {1}.	Staženo {0} souborů z {1}.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} je nainstalován. Program se nyní restartuje.
+YA-MS è aggiornato (versione {0}).	YA-MS je aktuální (verze {0}).
+YA-MS.app non trovato nel pacchetto	YA-MS.app nebyl v balíčku nalezen
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	Ve složce data bylo nahrazeno {0} souborů: předchozí kopie jsou v data/backup/v{1}.
+{0} non trovato nel pacchetto	{0} nebyl v balíčku nalezen
+È disponibile YA-MS {0} (questa è la {1}).	Je k dispozici YA-MS {0} (tato je {1}).

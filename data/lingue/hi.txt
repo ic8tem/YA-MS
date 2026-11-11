@@ -672,3 +672,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	जनसंख्या सूचकांकों से k
 Δ radiante	Δ विकिरण बिंदु
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	ज्यामिति पर दो मत, अलग-अलग स्रोतों के साथ।\nचालू (सावधान, डिफ़ॉल्ट): McKinley (1961) और ITU-R P.843 का पूर्ण सूत्र 1 / (1 − cos²β sin²φ), जहाँ β ट्रेल और पथ के तल के बीच का कोण है। तल को काटने वाले ट्रेल उसमें पड़े ट्रेलों से 10-15 dB कम मूल्य के हैं और किसी ट्रेल का अधिक आकलन नहीं होता: पथ की सीध वाले विकिरण बिंदु हावी रहते हैं। इस चयन से YA-MS, DJ5HG के घंटेवार वक्रों (2004) के आकार का बेहतर अनुसरण करता है।\nबंद: हर ट्रेल ऐसे गिना जाता है मानो पथ के तल में हो (β = 0), जैसा संस्करण 1.6 तक था। रेडियो शौकीनों का शास्त्रीय नियम लागू होता है: सर्वश्रेष्ठ विकिरण बिंदु 15-70° ऊँचा और पथ के आर-पार होता है, सीध वाला सीमांत है (SM6FHZ, DH9GCD, qso-graph का meteor-mcp)।\nSonneberg की BRAMS गिनतियों से पहली तुलना (पर्सिड्स 2026, 471 km) दोनों में भेद नहीं करती: "शास्त्रीय निर्णय" बॉक्स दक्षता के नीचे घंटे-दर-घंटे शास्त्रीय नियम का निर्णय दिखाता है।
+... e altri {0}	... और {0} अन्य
+Aggiorna adesso	अभी अपडेट करें
+Aggiornamenti	अपडेट
+Aggiornamento disponibile	अपडेट उपलब्ध है
+Aggiornamento installato	अपडेट इंस्टॉल हो गया
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	कुछ बदलाव प्रोग्राम को दोबारा शुरू करने के बाद ही दिखते हैं।
+Apri la pagina delle release	रिलीज़ पेज खोलें
+Chiudi	बंद करें
+Continua senza	इनके बिना जारी रखें
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	इंटरनेट कनेक्शन जाँचें, या रिलीज़ पेज से पूरा पैकेज फिर से डाउनलोड करें।
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	GitHub पर देखता है कि YA-MS का नया संस्करण है या नहीं और हो तो उसे इंस्टॉल करता है; यह भी देखता है कि प्रोग्राम की कोई फ़ाइल गायब न हो।
+Controllo degli aggiornamenti su GitHub...	GitHub पर अपडेट खोजे जा रहे हैं...
+File mancanti	गायब फ़ाइलें
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	प्रोग्राम पैकेज {0} डाउनलोड करता है, अपनी फ़ाइलें बदलता है, data फ़ोल्डर रखता है (प्रोग्राम की बदली हुई फ़ाइलें पहले data/backup में कॉपी होती हैं) और दोबारा शुरू होता है।
+Installazione dell'aggiornamento...	अपडेट इंस्टॉल हो रहा है...
+L'aggiornamento non è riuscito: {0}	अपडेट विफल रहा: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	प्रोग्राम की {0} फ़ाइलें गायब हैं:\n{1}\n\nक्या इन्हें GitHub से डाउनलोड करूँ (संस्करण {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	रिलीज़ में इस सिस्टम के लिए पैकेज नहीं है ({0}): इसे रिलीज़ पेज से स्वयं डाउनलोड करें।
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	मैं प्रोग्राम के फ़ोल्डर में नहीं लिख सकता ({0}): नया संस्करण स्वयं इंस्टॉल करें।
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	GitHub पर प्रकाशित संस्करण पढ़े नहीं जा सके: {0}
+Più tardi	बाद में
+Riavvia YA-MS a mano: {0}	YA-MS को स्वयं दोबारा शुरू करें: {0}
+Salta questa versione	यह संस्करण छोड़ें
+Scarica i file mancanti	गायब फ़ाइलें डाउनलोड करें
+Scaricamento dei file mancanti: {0} di {1}	गायब फ़ाइलें डाउनलोड हो रही हैं: {1} में से {0}
+Scaricamento dell'aggiornamento...	अपडेट डाउनलोड हो रहा है...
+Scaricamento dell'aggiornamento: {0} %	अपडेट डाउनलोड हो रहा है: {0} %
+Scaricati {0} file mancanti.	{0} गायब फ़ाइलें डाउनलोड हुईं।
+Scaricati {0} file su {1}.	{1} में से {0} फ़ाइलें डाउनलोड हुईं।
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} इंस्टॉल हो गया। प्रोग्राम अब दोबारा शुरू होगा।
+YA-MS è aggiornato (versione {0}).	YA-MS अद्यतन है (संस्करण {0})।
+YA-MS.app non trovato nel pacchetto	पैकेज में YA-MS.app नहीं मिला
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	data फ़ोल्डर की {0} फ़ाइलें बदली गईं: पिछली प्रतियाँ data/backup/v{1} में हैं।
+{0} non trovato nel pacchetto	पैकेज में {0} नहीं मिला
+È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0} उपलब्ध है (यह {1} है)।

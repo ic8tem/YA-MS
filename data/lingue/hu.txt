@@ -673,3 +673,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k a populációs indexekből
 Δ radiante	Δ radiáns
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Két nézet a geometriáról, különböző forrásokkal.\nBekapcsolva (óvatos, alapértelmezett): McKinley (1961) és az ITU-R P.843 teljes képlete, 1 / (1 − cos²β sin²φ), ahol β a nyom és az összeköttetés síkja közötti szög. A síkot keresztező nyomok 10-15 dB-lel kevesebbet érnek, mint a benne fekvők, és egyetlen nyomot sem becsül túl: az összeköttetés irányába eső radiánsok dominálnak. Ezzel a választással a YA-MS jobban követi DJ5HG óránkénti görbéinek alakját (2004).\nKikapcsolva: minden nyom úgy számít, mintha az összeköttetés síkjában feküdne (β = 0), mint az 1.6-os verzióig. A rádióamatőrök klasszikus szabálya érvényes: a legjobb radiáns 15-70° magasan és keresztben áll az összeköttetéshez képest, az irányba eső határeset (SM6FHZ, DH9GCD, a qso-graph meteor-mcp-je).\nAz első összevetés a sonnebergi BRAMS-számlálásokkal (Perseidák 2026, 471 km) nem különbözteti meg őket: a „Klasszikus ítélet” jelölőnégyzet óráról órára a hatékonyság alatt mutatja a klasszikus szabály ítéletét.
+... e altri {0}	... és még {0}
+Aggiorna adesso	Frissítés most
+Aggiornamenti	Frissítések
+Aggiornamento disponibile	Frissítés érhető el
+Aggiornamento installato	Frissítés telepítve
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Néhány változás csak a program újraindítása után látszik.
+Apri la pagina delle release	Kiadások oldalának megnyitása
+Chiudi	Bezárás
+Continua senza	Folytatás nélkülük
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Ellenőrizd az internetkapcsolatot, vagy töltsd le újra a teljes csomagot a kiadások oldaláról.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Megnézi a GitHubon, van-e újabb YA-MS verzió, és ha van, telepíti; azt is ellenőrzi, hogy nem hiányoznak-e programfájlok.
+Controllo degli aggiornamenti su GitHub...	Frissítések keresése a GitHubon...
+File mancanti	Hiányzó fájlok
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	A program letölti a(z) {0} csomagot, lecseréli a fájljait, megtartja a data mappát (a megváltozott programfájlokat előbb a data/backup mappába másolja) és újraindul.
+Installazione dell'aggiornamento...	A frissítés telepítése...
+L'aggiornamento non è riuscito: {0}	A frissítés nem sikerült: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	{0} programfájl hiányzik:\n{1}\n\nLetöltsem őket a GitHubról ({2} verzió)?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	A kiadásban nincs csomag ehhez a rendszerhez ({0}): töltsd le kézzel a kiadások oldaláról.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Nem tudok írni a program mappájába ({0}): telepítsd kézzel az új verziót.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Nem sikerült beolvasni a GitHubon közzétett verziókat: {0}
+Più tardi	Később
+Riavvia YA-MS a mano: {0}	Indítsd újra kézzel a YA-MS-t: {0}
+Salta questa versione	Verzió kihagyása
+Scarica i file mancanti	Hiányzó fájlok letöltése
+Scaricamento dei file mancanti: {0} di {1}	Hiányzó fájlok letöltése: {0} / {1}
+Scaricamento dell'aggiornamento...	A frissítés letöltése...
+Scaricamento dell'aggiornamento: {0} %	A frissítés letöltése: {0} %
+Scaricati {0} file mancanti.	{0} hiányzó fájl letöltve.
+Scaricati {0} file su {1}.	{0} fájl letöltve ennyiből: {1}.
+YA-MS {0} è installato. Il programma ora si riavvia.	A YA-MS {0} telepítve. A program most újraindul.
+YA-MS è aggiornato (versione {0}).	A YA-MS naprakész ({0} verzió).
+YA-MS.app non trovato nel pacchetto	A YA-MS.app nem található a csomagban
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	A data mappában {0} fájl lecserélve: a korábbi másolatok a data/backup/v{1} mappában vannak.
+{0} non trovato nel pacchetto	{0} nem található a csomagban
+È disponibile YA-MS {0} (questa è la {1}).	Elérhető a YA-MS {0} (ez a {1}).

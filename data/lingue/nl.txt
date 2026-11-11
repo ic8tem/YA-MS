@@ -674,3 +674,38 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione	k uit de populatie-indices
 Δ radiante	Δ radiant
 Due tesi sulla geometria, con fonti diverse.\nAccesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\nSpenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\nUn primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella "Giudizio classico" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.	Twee opvattingen over de geometrie, met verschillende bronnen.\nAan (voorzichtig, standaard): volledige formule van McKinley (1961) en ITU-R P.843, 1 / (1 − cos²β sin²φ), waarbij β de hoek is tussen het spoor en het vlak van de verbinding. Sporen die het vlak kruisen zijn 10-15 dB minder waard dan sporen die erin liggen en geen spoor wordt overschat: radianten in lijn met de verbinding overheersen. Met deze keuze volgt YA-MS de vorm van de uurcurves van DJ5HG (2004) beter.\nUit: elk spoor telt alsof het in het vlak van de verbinding ligt (β = 0), zoals tot versie 1.6. De klassieke radioamateurregel geldt: de beste radiant staat 15-70° hoog en dwars op de verbinding, een radiant in lijn is marginaal (SM6FHZ, DH9GCD, meteor-mcp van qso-graph).\nEen eerste vergelijking met de BRAMS-tellingen in Sonneberg (Perseïden 2026, 471 km) onderscheidt ze niet: het vakje "Klassiek oordeel" toont uur per uur het oordeel van de klassieke regel onder de efficiëntie.
+... e altri {0}	... en nog {0}
+Aggiorna adesso	Nu bijwerken
+Aggiornamenti	Updates
+Aggiornamento disponibile	Update beschikbaar
+Aggiornamento installato	Update geïnstalleerd
+Alcune modifiche si vedono solo dopo aver riavviato il programma.	Sommige wijzigingen zijn pas zichtbaar na een herstart van het programma.
+Apri la pagina delle release	Releasepagina openen
+Chiudi	Sluiten
+Continua senza	Doorgaan zonder
+Controlla la connessione a Internet, oppure scarica di nuovo il pacchetto completo dalla pagina delle release.	Controleer de internetverbinding, of download het volledige pakket opnieuw van de releasepagina.
+Controlla su GitHub se c'è una versione più nuova di YA-MS e, se c'è, la installa; controlla anche che non manchino file del programma.	Controleert op GitHub of er een nieuwere versie van YA-MS is en installeert die zo ja; controleert ook dat er geen programmabestanden ontbreken.
+Controllo degli aggiornamenti su GitHub...	Zoeken naar updates op GitHub...
+File mancanti	Ontbrekende bestanden
+Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.	Het programma downloadt het pakket {0}, vervangt zijn bestanden, behoudt de map data (gewijzigde programmabestanden worden eerst gekopieerd naar data/backup) en herstart.
+Installazione dell'aggiornamento...	Update wordt geïnstalleerd...
+L'aggiornamento non è riuscito: {0}	De update is mislukt: {0}
+Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?	Er ontbreken {0} programmabestanden:\n{1}\n\nDownloaden van GitHub (versie {2})?
+Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.	De release bevat geen pakket voor dit systeem ({0}): download het met de hand van de releasepagina.
+Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.	Ik kan niet schrijven in de programmamap ({0}): installeer de nieuwe versie met de hand.
+Non riesco a leggere le versioni pubblicate su GitHub: {0}	Kan de op GitHub gepubliceerde versies niet lezen: {0}
+Più tardi	Later
+Riavvia YA-MS a mano: {0}	Start YA-MS met de hand opnieuw: {0}
+Salta questa versione	Deze versie overslaan
+Scarica i file mancanti	Ontbrekende bestanden downloaden
+Scaricamento dei file mancanti: {0} di {1}	Ontbrekende bestanden downloaden: {0} van {1}
+Scaricamento dell'aggiornamento...	Update wordt gedownload...
+Scaricamento dell'aggiornamento: {0} %	Update wordt gedownload: {0} %
+Scaricati {0} file mancanti.	{0} ontbrekende bestanden gedownload.
+Scaricati {0} file su {1}.	{0} van {1} bestanden gedownload.
+YA-MS {0} è installato. Il programma ora si riavvia.	YA-MS {0} is geïnstalleerd. Het programma start nu opnieuw.
+YA-MS è aggiornato (versione {0}).	YA-MS is up-to-date (versie {0}).
+YA-MS.app non trovato nel pacchetto	YA-MS.app niet gevonden in het pakket
+{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	{0} bestanden in de map data zijn vervangen: de vorige kopieën staan in data/backup/v{1}.
+{0} non trovato nel pacchetto	{0} niet gevonden in het pakket
+È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0} is beschikbaar (dit is {1}).

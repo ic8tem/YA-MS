@@ -102,7 +102,7 @@ jobs:
           TZ=Europe/Rome timeout 180 xvfb-run -a -s "-screen 0 1600x1000x24" ./run/YA-MS --screenshot "$PWD/shots" --dx IN78UO --ore $H || true
           rm -f run/data/config.ini
           timeout 180 xvfb-run -a -s "-screen 0 1600x1000x24" ./run/YA-MS --screenshot "$PWD/shots/carattere250" --dx JO62QM --ore 0 --carattere 250 || true
-          for L in it en ru ja de nl ar hi zh ko; do
+          for L in it en ru ja de nl fr es pt ar hi zh ko; do
             rm -f run/data/config.ini   # ogni prova parte da impostazioni pulite (carattere 100 %)
             timeout 180 xvfb-run -a -s "-screen 0 1600x1000x24" ./run/YA-MS --screenshot "$PWD/shots/lingua_$L" --dx IN78UO --ore $H --lingua $L || true
           done

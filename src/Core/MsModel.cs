@@ -457,6 +457,27 @@ namespace YAMS
         }
 
         // Regole sperimentali SM6FHZ (VUSHF 2025): numero/intensita' ~ lambda^3, durata ~ lambda^2
+        // giudizio classico della geometria (regola dei radioamatori: radiante alto e di traverso alla tratta), al punto medio.
+        // 0 = radiante sotto l'orizzonte, 1 = marginale (sotto 15° o sopra 70°, oppure a meno di 30° dalla direzione della tratta),
+        // 2 = buono, 3 = migliore (15-70° e a piu' di 60° dalla direzione della tratta). Soglie come in meteor-mcp (qso-graph, 2026).
+        public static int ClassicVerdict(double radAzDeg, double radElDeg, double pathBearingDeg)
+        {
+            if (radElDeg <= 0) return 0;
+            double off = Math.Abs(Astro.Norm180(radAzDeg - pathBearingDeg));
+            if (off > 90) off = 180 - off;
+            bool elOk = radElDeg >= 15 && radElDeg <= 70;
+            if (!elOk || off < 30) return 1;
+            return off > 60 ? 3 : 2;
+        }
+
+        // esponente k della traslazione di frequenza dall'indice di popolazione r: s = 1 + 2,5 log10 r, k = 1,5 (s - 1) = 3,75 log10 r
+        // (numero di scie sopra soglia fissa ~ lambda^(1,5 (s-1)); IZ5TEK, OH5IY). Fuori da 1,5-4 il valore di r non e' plausibile: NaN.
+        public static double KFromPopIndex(double r)
+        {
+            if (double.IsNaN(r) || r < 1.5 || r > 4) return double.NaN;
+            return 3.75 * Math.Log10(r);
+        }
+
         public static double CountScale(double fromMHz, double toMHz, double exponent)
         {
             return Math.Pow(fromMHz / toMHz, exponent);

@@ -86,6 +86,7 @@ namespace YAMS
             dataDir = AppPaths.DataDir;
             cfg = new Config(Path.Combine(dataDir, "config.ini"));
             Catalog.Load(dataDir);
+            IauMdc.Load(dataDir); GmnDaily.Load(dataDir); GmnPopIndex.Load(Path.Combine(dataDir, "radar", "diretta", "gmn_flux.html"));
             sources = RadarFlux.LoadSources(dataDir);
             foreach (RadarSource s in sources)
             {
@@ -805,15 +806,25 @@ namespace YAMS
             // opzione: angolo beta tra la scia e il piano della tratta (McKinley completo, ITU-R P.843)
             chkBeta = C(Lang.T("Angolo β tra scia e tratta (McKinley completo)"), cfg.GetB("angolo_beta", true));
             PathModel.BetaFactor = chkBeta.IsChecked == true;
-            ToolTip.SetTip(chkBeta, Lang.T("Accesa (prudente, di partenza): la potenza di ogni scia segue la formula completa di McKinley e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ): le scie che attraversano il piano della tratta valgono 10-15 dB meno di quelle che vi giacciono, e nessuna scia è sopravvalutata.\n" +
-                "Effetto: prevalgono i radianti allineati alla tratta, non quelli perpendicolari; le curve di DJ5HG seguono meglio l'andamento orario, con i minimi profondi quando il radiante è basso.\n" +
-                "Spenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6: segue la regola dei radianti perpendicolari alla tratta (SM6FHZ, DH9GCD), ma sopravvaluta le scie che attraversano il piano."));
+            ToolTip.SetTip(chkBeta, Lang.T("Due tesi sulla geometria, con fonti diverse.\n" +
+                "Accesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. " +
+                "Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. " +
+                "Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\n" +
+                "Spenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, " +
+                "quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\n" +
+                "Le due tesi non sono ancora state confrontate con misure indipendenti: la casella \"Giudizio classico\" mostra il verdetto della regola classica sotto l'efficienza, ora per ora."));
             WhenChanged(chkBeta, ToggleButton.IsCheckedProperty, () =>
             {
                 PathModel.BetaFactor = chkBeta.IsChecked == true;
                 SyncProfile();
                 if (!applyingProfile && model != null) Recalc();
             });
+            // casella: giudizio classico (radiante di traverso alla tratta) mostrato sotto l'efficienza; non cambia il calcolo
+            chkClassic = C(Lang.T("Giudizio classico"), cfg.GetB("giudizio_classico", false));
+            ToolTip.SetTip(chkClassic, Lang.T("Aggiunge sotto ogni sciame la riga \"classico\": il verdetto della regola dei radioamatori, calcolato al punto medio della tratta.\n" +
+                "✗ radiante sotto l'orizzonte; ◐ marginale (radiante sotto 15° o sopra 70°, oppure a meno di 30° dalla direzione della tratta); ● buono; ★ migliore (radiante tra 15° e 70° e a più di 60° dalla direzione della tratta).\n" +
+                "Soglie come in meteor-mcp (qso-graph, 2026); stessa idea della formula di DH9GCD e delle regole di SM6FHZ. Non cambia il calcolo: serve a confrontare le due tesi sull'angolo β."));
+            WhenChanged(chkClassic, ToggleButton.IsCheckedProperty, () => { cfg.Set("giudizio_classico", chkClassic.IsChecked == true); if (model != null) Recalc(); });
             // impostazioni pronte del calcolo: prudente (quota dal radar, scie normali) o come DJ5HG (102 km, scie lunghe)
             rbProfPrud = new RadioButton { Content = Lang.T("Prudente"), GroupName = "profilo_calcolo", Margin = new Thickness(8, 0, 4, 0), VerticalAlignment = VerticalAlignment.Center, Foreground = Pal.B(Pal.Fore) };
             rbProfDj = new RadioButton { Content = Lang.T("Come DJ5HG"), GroupName = "profilo_calcolo", Margin = new Thickness(8, 0, 4, 0), VerticalAlignment = VerticalAlignment.Center, Foreground = Pal.B(Pal.Fore) };
@@ -828,7 +839,7 @@ namespace YAMS
             WhenChanged(chkLayerRadar, ToggleButton.IsCheckedProperty, SyncProfile);
             numLayer.ValueChanged += (s, e) => SyncProfile();
             SyncProfile();
-            DockTop(p2, Row(L(Lang.T("Impostazione del calcolo:")), rbProfPrud, rbProfDj, rbProfPers, chkTrailLen, chkBeta));
+            DockTop(p2, Row(L(Lang.T("Impostazione del calcolo:")), rbProfPrud, rbProfDj, rbProfPers, chkTrailLen, chkBeta, chkClassic));
             chart24 = new SimpleChart { Height = Chart24Height };
             DockTop(p2, chart24);
             List<string> cols24 = new List<string> { Lang.T("Sigla"), Lang.T("Sciame"), "ZHR" };
@@ -886,10 +897,18 @@ namespace YAMS
                 Child = new TextBlock { Text = Lang.T("Le righe evidenziate sono gli sciami attivi oggi (UTC)"), Foreground = Pal.B(Pal.Fore), FontWeight = FontWeight.SemiBold }
             });
             // giustificata sulla larghezza: larghezze di base compatte, caratteri e righe crescono con la finestra
-            gridShowers = MakeTable(new[] { Lang.T("Sigla"), Lang.T("Sciame"), Lang.T("Attività"), "λ max", Lang.T("Prossimo massimo (UTC)"), Lang.T("Fonte del massimo"), Lang.T("A.R."), Lang.T("Decl."), "v km/s", "r", "ZHR", Lang.T("Tipo") },
-                                    new double[] { 44, 170, 96, 56, 170, 130, 50, 50, 44, 36, 40, 90 });
+            gridShowers = MakeTable(new[] { Lang.T("Sigla"), Lang.T("Sciame"), Lang.T("Attività"), "λ max", Lang.T("Prossimo massimo (UTC)"), Lang.T("Fonte del massimo"), Lang.T("A.R."), Lang.T("Decl."), "v km/s", "r", "ZHR", Lang.T("Tipo"),
+                                    "k", Lang.T("IAU MDC: soluzioni"), Lang.T("Δ radiante"), "Δλ", "Δv", Lang.T("GMN oggi") },
+                                    new double[] { 44, 170, 96, 56, 170, 130, 50, 50, 44, 36, 40, 90, 52, 70, 70, 50, 44, 60 });
             gridShowers.Selectable = false;
             gridShowers.FitWidth = true;
+            DockTop(p5, new TextBlock
+            {
+                Foreground = Pal.B(Pal.Muted), TextWrapping = TextWrapping.Wrap, Margin = new Thickness(6, 0, 6, 4),
+                Text = Lang.T("k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN se disponibile, altrimenti IMO): k = 3,75·log10 r. " +
+                              "IAU MDC: soluzioni pubblicate nel catalogo dell'IAU Meteor Data Center; Δ = catalogo IMO del programma meno mediana delle soluzioni MDC " +
+                              "(radiante confrontato alla stessa longitudine solare). GMN oggi: traiettorie confermate nell'ultimo file giornaliero del Global Meteor Network (conteggio, non flusso).")
+            });
             p5.Children.Add(gridShowers);
 
             // --- Mappa quadrati da ADIF (MainWindow.Grid.cs)
@@ -1323,7 +1342,7 @@ namespace YAMS
         Border boxHorizon; TextBlock lblHorizon;
         RadioButton rbProfPrud, rbProfDj, rbProfPers;
         ComboBox cmbR0, cmbDur;
-        CheckBox chkBeta;
+        CheckBox chkBeta, chkClassic;
         bool applyingProfile;
         public const double Dj5hgLayerKm = 102.0;
 
@@ -1458,6 +1477,20 @@ namespace YAMS
                 drow[0] = ""; drow[1] = "   DH9GCD %"; drow[2] = "";
                 for (int h = 0; h < 24; h++) drow[3 + h] = dh[h] < 1 ? "" : dh[h].ToString("F0");
                 rows.Add(new TableRow { Cells = drow, Fore = Pal.Azure, Italic = true, FontSize = 11 * Grid24Scale });
+                if (chkClassic != null && chkClassic.IsChecked == true)
+                {
+                    // riga del giudizio classico (radiante di traverso), calcolato al punto medio della tratta
+                    string[] crow = new string[27];
+                    crow[0] = ""; crow[1] = "   " + Lang.T("classico"); crow[2] = "";
+                    string[] sym = { "✗", "◐", "●", "★" };
+                    for (int h = 0; h < 24; h++)
+                    {
+                        double z; Vec3 v = RadiantVec(s, day.AddHours(h + 0.5), out z);
+                        double maz, mel; Astro.AltAz(model.Mid, v, out maz, out mel);
+                        crow[3 + h] = sym[MsGeometry.ClassicVerdict(maz, mel, Astro.Bearing(model.Mid, model.Dx))];
+                    }
+                    rows.Add(new TableRow { Cells = crow, Fore = Pal.Muted, FontSize = 11 * Grid24Scale });
+                }
                 if (ns < 5)
                 {
                     ChartSeries cs = new ChartSeries(); cs.Name = s.Code + " " + Lang.T("effic. %"); cs.Color = pal[ns]; cs.Values = effs;
@@ -1652,8 +1685,40 @@ namespace YAMS
                     s.IsAntihelion ? "-" : s.LambdaMax.ToString("F2"), peak ?? "", src ?? "",
                     s.IsAntihelion ? Lang.T("mobile") : s.Ra.ToString("F0") + "°", s.IsAntihelion ? Lang.T("mobile") : s.Dec.ToString("+0;-0") + "°",
                     s.V.ToString("F0"), s.PopIndex.ToString("F1"), s.Zhr > 0 ? s.Zhr.ToString("F0") : Lang.T("var."),
-                    s.Type == "R" ? Lang.T("radio, diurno") : Lang.T("visuale") };
-                TableRow tr = new TableRow { Cells = cells, Tag = s.Code };
+                    s.Type == "R" ? Lang.T("radio, diurno") : Lang.T("visuale"), "", "", "", "", "", "" };
+                string[] tips = new string[cells.Length];
+                double rG; bool gmnR = GmnPopIndex.R.TryGetValue(s.Code, out rG);
+                double kk = MsGeometry.KFromPopIndex(gmnR ? rG : s.PopIndex);
+                cells[12] = double.IsNaN(kk) ? "-" : kk.ToString("F2") + (gmnR ? " G" : "");
+                tips[12] = Lang.F("k = 3,75·log10 r = {0}, con r = {1} ({2}). La regola sperimentale di SM6FHZ usa k = 3, più prudente.",
+                    double.IsNaN(kk) ? "-" : kk.ToString("F2"), (gmnR ? rG : s.PopIndex).ToString("F2"), gmnR ? "GMN" : "IMO");
+                IauMdc.Comparison mc = IauMdc.Compare(s);
+                if (mc != null)
+                {
+                    cells[13] = mc.N.ToString();
+                    cells[14] = double.IsNaN(mc.SepMed) ? "-" : mc.SepMed.ToString("F1") + "°";
+                    cells[15] = double.IsNaN(mc.DLambda) ? "-" : mc.DLambda.ToString("+0.0;-0.0");
+                    cells[16] = double.IsNaN(mc.DV) ? "-" : mc.DV.ToString("+0.0;-0.0");
+                    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+                    sb.AppendLine(Lang.F("IAU MDC ({0}): {1} soluzioni. Mediane: λ {2:F1}°, A.R. {3:F1}°, decl. {4:+0.0;-0.0}°, v {5:F1} km/s.",
+                        IauMdc.Edition, mc.N, mc.LoSMed, mc.RaMed, mc.DeMed, mc.VgMed));
+                    sb.AppendLine(Lang.F("Distanza tra il radiante del programma e quelli MDC: mediana {0:F1}°, massima {1:F1}°.", mc.SepMed, mc.SepMax));
+                    int shown = 0;
+                    foreach (MdcSolution x in IauMdc.ByCode[s.Code])
+                    {
+                        if (++shown > 12) { sb.AppendLine("…"); break; }
+                        sb.AppendLine(string.Format(CultureInfo.InvariantCulture, "{0}  λ {1:F1}  {2:F1}/{3:+0.0;-0.0}  v {4:F1}  {5}", x.AdNo, x.LoS, x.Ra, x.De, x.Vg, x.Reference));
+                    }
+                    tips[13] = tips[14] = tips[15] = tips[16] = sb.ToString().TrimEnd();
+                }
+                int gc;
+                if (GmnDaily.Total > 0)
+                {
+                    cells[17] = GmnDaily.Counts.TryGetValue(s.Code, out gc) ? gc.ToString() : "0";
+                    tips[17] = Lang.F("Global Meteor Network: {0} traiettorie confermate dal {1} al {2} UTC, di cui {3} sporadiche. Conteggio delle telecamere, non flusso. Dati CC BY 4.0.",
+                        GmnDaily.Total, GmnDaily.FirstUtc.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture), GmnDaily.LastUtc.ToString("dd/MM HH:mm", CultureInfo.InvariantCulture), GmnDaily.Sporadic);
+                }
+                TableRow tr = new TableRow { Cells = cells, Tag = s.Code, CellTips = tips };
                 // velatura sugli sciami attivi oggi (al posto della vecchia colonna "Attivo oggi")
                 if (s.IsActive(now)) { tr.Back = Pal.A(70, Pal.Yellow); tr.Bold = true; }
                 rows.Add(tr);

@@ -52,6 +52,7 @@ TAG|FONTE|赤经、赤纬、极大时的太阳黄经、速度、r 指数和 ZHR 
 TAG|SCELTA|对于白昼射电流星雨，IMO 既不给出 ZHR 也不给出速度：程序使用工作值 5。
 TAG|FONTE|太阳黄经（J2000 分点）、恒星时以及换算为方位角和仰角：Meeus [6] 的公式。
 TAG|SCELTA|辐射点的每日漂移使用工作值，写在 sciami.csv 文件中，可以编辑。
+TAG|RILIEVO|与 IAU Meteor Data Center 目录比较 [32]：“流星雨”页为每个流星雨显示既定流星雨列表中公布了多少个解，以及程序的 IMO 目录与各解中位数的差：辐射点的角距（在同一太阳黄经下、按程序的漂移比较）、Δλ（程序的 λ max 减活动期平均太阳黄经的中位数，二者与极大并不完全重合）和 Δv。提示框列出各解及其文献。原始文件每月至多从 www.ta3.sk 下载一次；MDC 要求引用 Jenniskens 等 2020 以及 Jopek 和 Kaňuchová 2017。
 H2|4.2 极大日期
 TAG|FONTE|程序始终显示下一次极大。当 IMO 已发布该年的年历表时（2026 和 2027 年已包含在 massimi_imo.csv 中），使用 IMO 的日期和时间 [5]；否则计算太阳到达极大时黄经的时刻。
 TAG|RILIEVO|对于 IMO 给出时间的流星雨，计算结果与 IMO 2026 和 2027 年历表相差在几分钟以内（例如象限仪座流星雨 2026/1/3 21:13 对 21:00，双子座流星雨 2027/12/14 19:51 对 20:00）。例外是 2026 年白昼 kappa-狮子座流星雨晚一天（9月26日而非9月25日），以及 2027 年宝瓶座 η 流星雨的时间（15:10 对 IMO 的 09:00）：这些情况下以 IMO 的值为准。
@@ -85,6 +86,10 @@ TAG|FONTE|到达某点的流星数量正比于该点处辐射点仰角的正弦�
 TAG|SCELTA|选项“低辐射点时余迹更长（DJ5HG）”位于“效率计算”中，默认关闭：DJ5HG [18] 观察到，辐射点较低时每 km² 落下的流星较少，但余迹较长（可用长度达 100 km），更常满足反射定律。开启该选项后，权重变为 min(sin El, 15/100)：层的可用厚度 15 km 除以仰角的正弦即为余迹长度，上限 100 km。仰角约 9° 以上时两种效应相互抵消；关闭该选项时计算保持保守。
 TAG|SCELTA|计算预设位于同一行：“保守”（默认，最保守的数值：雷达高度、普通余迹、含 β）、“按 DJ5HG”（102 km、长余迹、含 β）和“自定义”；当手动更改高度、“来自雷达”复选框、长余迹或夹角 β 时，会自动选中“自定义”。
 TAG|RILIEVO|夹角 β 对最佳方向的影响，1000 km 路径：不含 β 时，极大值位于偏离路径 15° 至 90° 之间，取决于辐射点仰角（辐射点 30° 时为 30°，辐射点 60° 时为垂直方向），辐射点为 30° 时垂直方向的辐射点效率为 67 %；含 β 时，极大值始终出现在辐射点沿路径方向时，垂直方向的辐射点降至 15 %。因此含 β 时 SM6FHZ 和 DH9GCD 的最佳方向规则不再成立：正因如此 β 是一个选项，默认开启，因为它给出最保守的数值（不会高估任何余迹）。
+TAG|FONTE|关于辐射点最佳方向的两种观点。业余无线电的经典观点：最佳辐射点高 15° 至 70° 且横跨路径，与路径同向的为勉强。持此观点的有 SM6FHZ [4] 的经验规则、DH9GCD 的公式（由 DF5HC [16] 转述）以及 qso-graph 的 meteor-mcp [31]，后者以相切条件为依据：有用的余迹必须与以两台站为焦点的椭球相切，而沿路径延伸的余迹很少满足。此观点计算余迹可以在哪里反射，但不计算每条余迹反射多少。
+TAG|FONTE|完整公式的观点：McKinley [8] 和 ITU-R P.843 [24] 给每条余迹的功率乘以因子 1 / (1 − cos²β sin²φ)，其中 β 是余迹与路径平面的夹角。位于平面内的余迹（β = 0）比穿过平面的余迹（β = 90°）多反射 1/cos²φ 倍：600 至 2000 km 间为 10-15 dB。辐射点与路径同向时，相切的余迹靠近平面，权重更大；辐射点横跨路径时，余迹穿过平面，权重更小。DJ5HG [18] 使用同一因子，其逐时曲线的形状与 YA-MS 开启 β 时得到的一致（形状偏差约 3 dB）。
+TAG|RILIEVO|两种观点使用同一镜面反射条件，但对余迹的加权不同：经典观点计算有用余迹的数量，完整观点还考虑其功率。在 1000 km、辐射点高 30° 时，垂直方向的辐射点不计 β 为 67 %，计 β 为 15 %。两者都尚未与按流星雨和路径的独立计数比较：能作出判断的正是这种比较，例如借助 BRAMS 这样的接收网络。
+TAG|SCELTA|程序中“余迹与路径的夹角 β（完整 McKinley）”复选框默认开启，因为它不高估任何余迹（保守值）；关闭时采用经典观点。“经典判断”复选框在逐时表格中每个流星雨下方增加在路径中点计算的经典判断一行：✗ 辐射点在地平线下，◐ 勉强（低于 15° 或高于 70°，或与路径方向相差不到 30°），● 好，★ 最佳（在 15° 与 70° 之间，且与路径方向相差超过 60°），阈值取自 meteor-mcp [31]。它不改变计算：逐时显示两种观点在哪里一致、在哪里不一致。
 H2|6.3 百分比
 TAG|SCELTA|对每个辐射点方向，累加余迹发生反射的所有点的权重。100% 对应该路径最有利的辐射点位置：
 TAG|SCELTA|除仅适用于该路径的百分比外，程序还给出相对于 DJ5HG [18] 固定参考的效率 dB 值：0 dB 是一条跨越赤道、长 1000 km 的南北向路径在分点时辐射点位于天赤道上（辐射点从东方升起，经过天顶，在西方落下）时的极大值，按相同的高度和相同的权重计算。这样不同的路径就可以相互比较。DJ5HG 称其数值的精度优于 6 dB。
@@ -116,6 +121,8 @@ TAG|FONTE|IARU 第 1 区规定的最大 ping 时长：50 MHz 时 1000 ms，70 MH
 H2|8.2 从雷达到业余频段
 EQ|N(f) = N(36,2 MHz) · (36,2 / f)^k · K        其中 k = 3
 TAG|RILIEVO|本台适用的 k 值可通过与同一频段上的 RMOB 观测者比较得到：k = 3 是 SM6FHZ 规则，质量指数为 2 的欠密余迹理论给出约 1.5。
+TAG|SCELTA|“由布居指数求 k”按钮为每个活跃流星雨计算 k = 1.5·(s − 1)，其中 s = 1 + 2.5·log10 r，即 k = 3.75·log10 r，并按 ZHR 加权平均。布居指数 r 有时取自 Global Meteor Network 通量页面的表格 [33]，否则取自 IMO 目录 [5]；“流星雨”页显示每个流星雨的 k。例：英仙座 r = 2.2，k = 1.28；双子座 r = 2.6，k = 1.56。默认仍为 SM6FHZ [4] 的 k = 3，更保守；不过 Collm 的计数大多是偶发流星，GMN 不公布其 r。
+TAG|FONTE|Global Meteor Network 的计数 [33]：在“实时流星雨”页和“流星雨”页的“GMN 今日”列中，程序读取网络相机确认轨迹的每日汇总（每颗流星一行，带流星雨的 IAU 代码，偶发流星为“...”），并按流星雨计数。这是计数，不是通量：取决于有多少台站天空晴朗且黑暗。数据 CC BY 4.0。
 H2|8.3 路径损耗
 EQ|L = 10 · log10 [ 16π² · R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) / (λ³ · q² · re²) ] − 10 · log10 a1        a1 = exp[ −8π² · r0² / (λ² · sec²φ) ]
 TAG|FONTE|McKinley [8] 及 ITU-R P.843 建议书 [24]：β 为余迹与路径平面的夹角，a1 为余迹初始半径因子，其中 log10 r0 = 0,035 h − 3,45（r0 单位为 m，h 单位为 km）。链路预算使用 β = 90°，即最不利的情况（保守值），同时也显示最佳情况 β = 0。
@@ -161,3 +168,6 @@ SRC|27. J.A. Weitzen, W.T. Ralston - "Meteor Scatter: An Overview", IEEE Transac
 SRC|28. B. Xia, L. Li, Y. Zheng - "Modeling and Simulation of the Meteor Burst Channel", Telecommunications Science, 2016 (9), DOI 10.11959/j.issn.1000-0801.2016206 (English translation by R. Hipple, github.com/HamSCI/MSQP).
 SRC|29. R. Suggs NN4NT, HamSCI Meteor Scatter Working Group - "MSQP data analysis progress", 4 November 2026, underdense_decay, github.com/HamSCI/MSQP (NN4SA, 2026 Perseids, Zenodo).
 SRC|30. G. Stober, P. Brown, M. Campbell-Brown, R.J. Weryk - "Triple-frequency meteor radar full wave scattering: Measurements and comparison to theory", Astronomy & Astrophysics, 2021, arXiv:2108.07647.
+SRC|31. meteor-mcp, qso-graph - meteor scatter MCP server, github.com/qso-graph/meteor-mcp, 2026.
+SRC|32. IAU Meteor Data Center - established showers list, www.ta3.sk/IAUC22DB/MDC2022 (Jenniskens et al., Planetary and Space Science 182, 104821, 2020; Jopek & Kaňuchová, Planetary and Space Science 143, 3-6, 2017).
+SRC|33. Global Meteor Network - shower flux and daily trajectory summary, globalmeteornetwork.org, CC BY 4.0 (Vida et al. 2021, 2022).

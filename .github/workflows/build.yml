@@ -24,6 +24,13 @@ jobs:
           curl -sSL -A "$UA" https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata2026.txt -o sonda/mdc2026.txt || true
           curl -sSL -A "$UA" https://iaumdc.ta3.sk/downloads/lists_shw_data/streamestablisheddata.txt -o sonda/mdc_latest.txt || true
           ls -la sonda
+      - name: stampa
+        run: |
+          echo "=====BRAMS"; cat sonda/brams.csv
+          echo "=====GMNHEAD"; head -c 4000 sonda/gmn_daily.txt; echo; echo "=====GMNCODES"; grep -v '^#' sonda/gmn_daily.txt | cut -d';' -f3-5 | head -5; grep -vc '^#' sonda/gmn_daily.txt
+          echo "=====FLUXTABLE"; grep -n -i -A3 "<tr" sonda/gmn_flux.html | head -120
+          echo "=====MDC"; grep -m 30 '^:' sonda/mdc2026.txt; grep -m 3 '|' sonda/mdc2026.txt; grep -c '|' sonda/mdc2026.txt sonda/mdc_latest.txt
+          echo "=====PERMDC"; grep '"PER"' sonda/mdc2026.txt | cut -c1-400 | head -30
       - uses: actions/upload-artifact@v4
         with:
           name: sonda

@@ -812,7 +812,7 @@ namespace YAMS
                 "Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\n" +
                 "Spenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, " +
                 "quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\n" +
-                "Le due tesi non sono ancora state confrontate con misure indipendenti: la casella \"Giudizio classico\" mostra il verdetto della regola classica sotto l'efficienza, ora per ora."));
+                "Un primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella \"Giudizio classico\" mostra il verdetto della regola classica sotto l'efficienza, ora per ora."));
             WhenChanged(chkBeta, ToggleButton.IsCheckedProperty, () =>
             {
                 PathModel.BetaFactor = chkBeta.IsChecked == true;

@@ -116,6 +116,8 @@
 | `mappa/` | Natural Earth 海岸线和国界（首次启动时下载） |
 | `adif_quadrati.csv` | 最近一次载入的 ADIF 中的方格 |
 | `efficienza_spiegazione.txt`、`.docx` | [说明文档](Efficiency-Explanation-zh) |
+| `backup/` | 被更新替换的程序文件副本（每个版本一个文件夹） |
+| `aggiornamento/` | 更新期间下载的软件包（下次启动时删除） |
 
 ## config.ini
 
@@ -143,6 +145,8 @@
 | `rmob_automatico` | 0 | 自动下载 RMOB（仅在获得 RMOB 许可后启用） |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | RMOB 地址模板 |
 | `graves_sequenza` | 0 | GRAVES 波束序列：0 = 0.8 s（2021），1 = 3.2 s（2007） |
+| `controlla_aggiornamenti` | 1 | 启动时在 GitHub 上检查新版本（每天一次）；0 = 否 |
+| `aggiornamenti_salta` | 空 | 您选择了“跳过此版本”的版本 |
 
 ## 隐私
 

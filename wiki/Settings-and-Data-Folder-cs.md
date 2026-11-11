@@ -116,6 +116,8 @@ Při spuštění program v případě potřeby složku vytvoří a zkopíruje je
 | `mappa/` | Pobřeží a hranice z Natural Earth (stažené při prvním spuštění) |
 | `adif_quadrati.csv` | Čtverce z naposledy načteného ADIF |
 | `efficienza_spiegazione.txt`, `.docx` | [Dokument s vysvětlením](Efficiency-Explanation-cs) |
+| `backup/` | Kopie souborů programu nahrazených aktualizací (jedna složka pro každou verzi) |
+| `aggiornamento/` | Balíček stažený během aktualizace (smaže se při dalším spuštění) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Prostý text, jeden `key=value` na řádek (řádky začínající `#` nebo `;` 
 | `rmob_automatico` | 0 | Automatické stahování z RMOB (zapínejte jen se svolením RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Šablona adresy RMOB |
 | `graves_sequenza` | 0 | Sekvence svazku GRAVES: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Hledání nových verzí na GitHubu při spuštění (jednou denně); 0 = ne |
+| `aggiornamenti_salta` | prázdné | Verze, pro kterou jste zvolili *Přeskočit tuto verzi* |
 
 ## Soukromí
 

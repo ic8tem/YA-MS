@@ -1,4 +1,4 @@
-YA-MS 1.7.0 - a cura di Costantino IC8TEM
+YA-MS 1.8.0 - a cura di Costantino IC8TEM
 Previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter (50-432 MHz)
 Windows (64 e 32 bit), Linux, Raspberry Pi e Mac.
 
@@ -22,6 +22,28 @@ INSTALLAZIONE
            cartella che si preferisce; la cartella data nasce accanto a YA-MS.app.
            Il programma non e' firmato da Apple: la prima volta il Mac chiede conferma (clic destro > Apri).
   Le versioni nuove si installano sopra la precedente: impostazioni, archivi del flusso e mappa restano.
+  Dalla 1.8.0 il programma si aggiorna da solo: all'avvio (una volta al giorno) controlla su GitHub se c'e' una
+  versione nuova e la propone (Aggiorna adesso / Piu' tardi / Salta questa versione); il pulsante "Aggiornamenti"
+  in basso a destra fa il controllo a mano. L'aggiornamento scarica il pacchetto portatile del sistema, sostituisce
+  i file del programma, tiene la cartella data (i file del programma cambiati vengono prima copiati in
+  data/backup/v<versione vecchia>) e riavvia YA-MS. Serve poter scrivere nella cartella del programma.
+  Se all'avvio mancano file del programma (in data o in doc), una finestra li elenca e propone di riscaricarli
+  da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
+
+NOVITA' DELLA 1.8.0
+  - Aggiornamento automatico: avviso delle versioni nuove pubblicate su GitHub, installazione con un clic e riavvio;
+    pulsante "Aggiornamenti" nella barra in basso. La cartella data resta; i file del programma cambiati vanno in data/backup.
+  - Controllo dei file del programma all'avvio: se ne mancano, una finestra li elenca e propone di riscaricarli da GitHub.
+  - Geometria e attenuazione: scelta del raggio iniziale della scia (2 x ITU-R P.843 di partenza, da Stober et al. 2021,
+    oppure ITU) e della durata dei ping tra le bande (lambda^2 di partenza oppure le misure HamSCI MSQP di NN4SA).
+  - Sciami: confronto dei radianti con il catalogo IAU Meteor Data Center (soluzioni, distanza del radiante, differenze
+    di longitudine solare e di velocita') e conteggi del giorno del Global Meteor Network per sciame.
+  - Attuazione sperimentale previsioni: pulsante "k dagli indici di popolazione" (GMN, altrimenti IMO; k = 3,75 log10 r).
+  - Calcolo dell'efficienza: casella "Giudizio classico" (regola dei radioamatori al punto medio della tratta)
+    e fumetto dell'angolo beta con le due tesi e le loro fonti.
+  - Manuale e spiegazione: due tesi sull'angolo beta, catalogo IAU MDC, GMN, esponente k dall'indice di popolazione,
+    confronto con i rilevamenti BRAMS di Sonneberg (Perseidi 2026).
+  - README in sei lingue con le schermate; collegamento Ko-fi.
 
 NOVITA' DELLA 1.7.0
   - Calcolo previsionale: fascia sopra la pianta con i dati di efficienza del momento di calcolo scelto
@@ -204,6 +226,8 @@ FILE IN data/
   quote_collm.csv          archivio delle quote delle scie (creato dal programma)
   radar/                   ultime immagini scaricate
   adif_quadrati.csv        quadrati letti dall'ultimo ADIF (creato dal programma)
+  backup/                  copie dei file del programma sostituiti da un aggiornamento (una cartella per versione)
+  aggiornamento/           pacchetto scaricato durante un aggiornamento (cancellato all'avvio successivo)
 
 LIMITI NOTI
   - L'efficienza e' un modello sperimentale (riflessione speculare + attenuazione delle scie sottodense),

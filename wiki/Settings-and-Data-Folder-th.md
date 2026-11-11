@@ -116,6 +116,8 @@
 | `mappa/` | แนวชายฝั่งและพรมแดนจาก Natural Earth (ดาวน์โหลดเมื่อเริ่มครั้งแรก) |
 | `adif_quadrati.csv` | ช่องกริดจากไฟล์ ADIF ล่าสุดที่โหลด |
 | `efficienza_spiegazione.txt`, `.docx` | [เอกสารคำอธิบาย](Efficiency-Explanation-th) |
+| `backup/` | สำเนาของไฟล์โปรแกรมที่ถูกแทนที่โดยการอัปเดต (หนึ่งโฟลเดอร์ต่อรุ่น) |
+| `aggiornamento/` | แพ็กเกจที่ดาวน์โหลดระหว่างการอัปเดต (ลบเมื่อเริ่มโปรแกรมครั้งถัดไป) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@
 | `rmob_automatico` | 0 | ดาวน์โหลด RMOB อัตโนมัติ (เปิดใช้เฉพาะเมื่อได้รับอนุญาตจาก RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | เทมเพลตที่อยู่ของ RMOB |
 | `graves_sequenza` | 0 | ลำดับของลำคลื่น GRAVES: 0 = 0.8 s (2021), 1 = 3.2 s (2007) |
+| `controlla_aggiornamenti` | 1 | ตรวจหารุ่นใหม่บน GitHub เมื่อเริ่มโปรแกรม (วันละครั้ง); 0 = ไม่ |
+| `aggiornamenti_salta` | ว่าง | รุ่นที่คุณเลือก *ข้ามรุ่นนี้* |
 
 ## ความเป็นส่วนตัว
 

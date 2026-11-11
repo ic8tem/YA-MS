@@ -79,6 +79,8 @@ O programa não está assinado pela Apple, por isso na primeira vez o macOS pede
 
 Instale a nova versão **por cima da anterior** (mesmo instalador, mesma pasta). As definições (`config.ini`), os arquivos do fluxo e o mapa ficam em `data`. Os ficheiros de tradução em `data/lingue` são substituídos quando os novos são mais recentes.
 
+**A partir da 1.8.0, o YA-MS atualiza-se sozinho.** Ao arrancar, uma vez por dia, verifica no GitHub se há uma versão nova e propõe-na; o botão **Atualizações** na barra inferior faz a verificação manualmente. *Atualizar agora* descarrega o pacote portátil do seu sistema, substitui os ficheiros do programa, mantém a pasta `data` (os ficheiros do programa que mudam são primeiro copiados para `data/backup/v<versão antiga>`) e reinicia; é preciso poder escrever na pasta do programa. Se ao arrancar faltarem ficheiros do programa (em `data` ou `doc`), uma janela lista-os e propõe descarregá-los de novo do GitHub. Para não procurar versões novas ponha `controlla_aggiornamenti=0` em `config.ini`.
+
 ## Compilar a partir do código-fonte (só para programadores)
 
 Os instaladores são gerados pelo GitHub Actions (`.github/workflows/build.yml`) a cada atualização do ramo `release` (versão lida do ficheiro `VERSION`), que também cria a release `vX.Y.Z`. Localmente:

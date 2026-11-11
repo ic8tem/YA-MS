@@ -116,6 +116,8 @@ Sa pagsisimula, nililikha ng programa ang folder kung kailangan at kinokopya lam
 | `mappa/` | Mga baybayin at hangganan ng Natural Earth (dina-download sa unang pagsisimula) |
 | `adif_quadrati.csv` | Mga grid square mula sa huling ikinargang ADIF |
 | `efficienza_spiegazione.txt`, `.docx` | Ang [dokumento ng paliwanag](Efficiency-Explanation-tl) |
+| `backup/` | Mga kopya ng mga file ng programa na pinalitan ng update (isang folder bawat bersyon) |
+| `aggiornamento/` | Package na na-download habang nag-a-update (binubura sa susunod na pagsisimula) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Simpleng teksto, isang `key=value` bawat linya (komento ang mga linyang nagsisim
 | `rmob_automatico` | 0 | Awtomatikong pag-download ng RMOB (i-enable lamang kung may pahintulot ng RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Template ng address ng RMOB |
 | `graves_sequenza` | 0 | Sequence ng beam ng GRAVES: 0 = 0.8 s (2021), 1 = 3.2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Maghanap ng mga bagong bersyon sa GitHub sa pagsisimula (isang beses bawat araw); 0 = hindi |
+| `aggiornamenti_salta` | walang laman | Bersyon na pinili mong *Laktawan ang bersyong ito* |
 
 ## Privacy
 

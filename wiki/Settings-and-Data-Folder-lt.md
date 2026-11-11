@@ -116,6 +116,8 @@ Paleidžiant programa prireikus sukuria aplanką ir nukopijuoja tik **trūkstamu
 | `mappa/` | Natural Earth pakrantės ir sienos (atsisiunčiamos pirmą kartą paleidžiant) |
 | `adif_quadrati.csv` | Paskutinio įkelto ADIF kvadratai |
 | `efficienza_spiegazione.txt`, `.docx` | [Paaiškinimo dokumentas](Efficiency-Explanation-lt) |
+| `backup/` | Atnaujinimo pakeistų programos failų kopijos (kiekvienai versijai atskiras aplankas) |
+| `aggiornamento/` | Atnaujinimo metu atsisiųstas paketas (ištrinamas kito paleidimo metu) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Paprastas tekstas, po vieną `key=value` eilutėje (eilutės, prasidedančios `#
 | `rmob_automatico` | 0 | Automatinis RMOB atsisiuntimas (įjungti tik gavus RMOB leidimą) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | RMOB adreso šablonas |
 | `graves_sequenza` | 0 | GRAVES pluošto seka: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Ieškoti naujų versijų GitHub paleidžiant (kartą per dieną); 0 = ne |
+| `aggiornamenti_salta` | tuščia | Versija, kuriai pasirinkote *Praleisti šią versiją* |
 
 ## Privatumas
 

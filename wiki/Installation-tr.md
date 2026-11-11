@@ -79,6 +79,8 @@ Program Apple tarafından imzalanmamıştır, bu yüzden macOS ilk seferde onay 
 
 Yeni sürümü **eskisinin üzerine** kurun (aynı kurulum programı, aynı klasör). Ayarlar (`config.ini`), akı arşivleri ve harita `data` içinde kalır. `data/lingue` içindeki çeviri dosyaları, yenileri daha güncelse değiştirilir.
 
+**1.8.0'dan itibaren YA-MS kendini günceller.** Açılışta günde bir kez GitHub'da yeni bir sürüm olup olmadığını denetler ve önerir; alt çubuktaki **Güncellemeler** düğmesi elle denetler. *Şimdi güncelle* sisteminiz için taşınabilir paketi indirir, program dosyalarını değiştirir, `data` klasörünü korur (değişen program dosyaları önce `data/backup/v<eski sürüm>` klasörüne kopyalanır) ve yeniden başlar; program klasörüne yazılabilmelidir. Açılışta program dosyaları eksikse (`data` veya `doc` içinde), bir pencere bunları listeler ve GitHub'dan yeniden indirmeyi önerir. Yeni sürümleri denetlememek için `config.ini` içinde `controlla_aggiornamenti=0` yapın.
+
 ## Kaynak koddan derleme (yalnızca geliştiriciler)
 
 Kurulum paketleri, `release` dalının her güncellenmesinde GitHub Actions (`.github/workflows/build.yml`) tarafından üretilir (sürüm `VERSION` dosyasından alınır); aynı iş `vX.Y.Z` sürümünü de oluşturur. Yerel olarak:

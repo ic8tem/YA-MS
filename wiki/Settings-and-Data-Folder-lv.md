@@ -116,6 +116,8 @@ Startējot programma vajadzības gadījumā izveido mapi un nokopē tikai **trū
 | `mappa/` | Natural Earth krasta līnijas un robežas (lejupielādētas pirmajā palaišanā) |
 | `adif_quadrati.csv` | Kvadrāti no pēdējā ielādētā ADIF |
 | `efficienza_spiegazione.txt`, `.docx` | [Skaidrojuma dokuments](Efficiency-Explanation-lv) |
+| `backup/` | Atjauninājuma aizstāto programmas failu kopijas (katrai versijai sava mape) |
+| `aggiornamento/` | Atjaunināšanas laikā lejupielādētā pakotne (tiek dzēsta nākamajā startā) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Vienkāršs teksts, viens `key=value` rindā (rindas, kas sākas ar `#` vai `;`,
 | `rmob_automatico` | 0 | Automātiska RMOB lejupielāde (ieslēgt tikai ar RMOB atļauju) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | RMOB adreses veidne |
 | `graves_sequenza` | 0 | GRAVES kūļa secība: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Jaunu versiju meklēšana GitHub startējot (vienreiz dienā); 0 = nē |
+| `aggiornamenti_salta` | tukšs | Versija, kurai izvēlējāties *Izlaist šo versiju* |
 
 ## Privātums
 

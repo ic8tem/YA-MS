@@ -79,6 +79,8 @@ Forritið er ekki undirritað af Apple, svo macOS biður um staðfestingu í fyr
 
 Settu nýju útgáfuna upp **yfir þá gömlu** (sama uppsetningarforrit, sama mappa). Stillingar (`config.ini`), flæðisskjalasöfnin og kortið verða áfram í `data`. Þýðingarskrár í `data/lingue` eru endurnýjaðar þegar nýju skrárnar eru nýrri.
 
+**Frá 1.8.0 uppfærir YA-MS sig sjálft.** Við ræsingu athugar það einu sinni á dag á GitHub hvort ný útgáfa sé til og býður hana; hnappurinn **Uppfærslur** í neðri stikunni athugar handvirkt. *Uppfæra núna* sækir ferðapakkann fyrir kerfið þitt, skiptir út skrám forritsins, heldur möppunni `data` (skrár forritsins sem breytast eru fyrst afritaðar í `data/backup/v<gömul útgáfa>`) og endurræsist; mappa forritsins þarf að vera skrifanleg. Ef skrár forritsins vantar við ræsingu (í `data` eða `doc`) sýnir gluggi þær og býðst til að sækja þær aftur af GitHub. Til að hætta að leita að nýjum útgáfum skaltu setja `controlla_aggiornamenti=0` í `config.ini`.
+
 ## Smíði úr frumkóða (aðeins fyrir forritara)
 
 Uppsetningarforritin eru búin til af GitHub Actions (`.github/workflows/build.yml`) við hverja uppfærslu greinarinnar `release` (útgáfan er tekin úr skránni `VERSION`), sem býr einnig til útgáfuna `vX.Y.Z`. Staðbundið:

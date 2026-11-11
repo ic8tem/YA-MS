@@ -116,6 +116,8 @@ La pornire, programul creează dosarul dacă este necesar și copiază doar fiș
 | `mappa/` | Liniile de coastă și granițele Natural Earth (descărcate la prima pornire) |
 | `adif_quadrati.csv` | Pătratele din ultimul ADIF încărcat |
 | `efficienza_spiegazione.txt`, `.docx` | [Documentul de explicație](Efficiency-Explanation-ro) |
+| `backup/` | Copii ale fișierelor programului înlocuite de o actualizare (câte un dosar pentru fiecare versiune) |
+| `aggiornamento/` | Pachet descărcat în timpul unei actualizări (șters la pornirea următoare) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Text simplu, câte o pereche `key=value` pe linie (liniile care încep cu `#` sa
 | `rmob_automatico` | 0 | Descărcarea automată RMOB (activați doar cu permisiunea RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Șablonul adresei RMOB |
 | `graves_sequenza` | 0 | Secvența fasciculului GRAVES: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Căutarea versiunilor noi pe GitHub la pornire (o dată pe zi); 0 = nu |
+| `aggiornamenti_salta` | gol | Versiunea pentru care ai ales *Sari peste această versiune* |
 
 ## Confidențialitate
 

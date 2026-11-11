@@ -116,6 +116,8 @@ Au démarrage, le programme crée le dossier si nécessaire et ne copie que les 
 | `mappa/` | Côtes et frontières Natural Earth (téléchargées au premier démarrage) |
 | `adif_quadrati.csv` | Carrés du dernier ADIF chargé |
 | `efficienza_spiegazione.txt`, `.docx` | Le [document d'explication](Efficiency-Explanation-fr) |
+| `backup/` | Copies des fichiers du programme remplacés par une mise à jour (un dossier par version) |
+| `aggiornamento/` | Paquet téléchargé pendant une mise à jour (supprimé au démarrage suivant) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Texte brut, une ligne `clé=valeur` par réglage (les lignes commençant par `#`
 | `rmob_automatico` | 0 | Téléchargement RMOB automatique (à activer seulement avec l'autorisation de RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Modèle d'adresse RMOB |
 | `graves_sequenza` | 0 | Séquence du faisceau GRAVES : 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Recherche de nouvelles versions sur GitHub au démarrage (une fois par jour) ; 0 = non |
+| `aggiornamenti_salta` | vide | Version pour laquelle vous avez choisi *Ignorer cette version* |
 
 ## Confidentialité
 

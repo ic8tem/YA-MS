@@ -116,6 +116,8 @@
 | `mappa/` | Natural Earth तटरेखाएँ और सीमाएँ (पहली बार शुरू होने पर डाउनलोड) |
 | `adif_quadrati.csv` | अंतिम लोड की गई ADIF के वर्ग |
 | `efficienza_spiegazione.txt`, `.docx` | [व्याख्या दस्तावेज़](Efficiency-Explanation-hi) |
+| `backup/` | अपडेट द्वारा बदली गई प्रोग्राम फ़ाइलों की प्रतियाँ (हर संस्करण के लिए एक फ़ोल्डर) |
+| `aggiornamento/` | अपडेट के दौरान डाउनलोड किया गया पैकेज (अगली शुरुआत पर हटा दिया जाता है) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@
 | `rmob_automatico` | 0 | स्वचालित RMOB डाउनलोड (केवल RMOB की अनुमति से सक्रिय करें) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | RMOB पते का टेम्पलेट |
 | `graves_sequenza` | 0 | GRAVES बीम क्रम: 0 = 0.8 s (2021), 1 = 3.2 s (2007) |
+| `controlla_aggiornamenti` | 1 | शुरू होने पर GitHub पर नए संस्करण खोजें (दिन में एक बार); 0 = नहीं |
+| `aggiornamenti_salta` | खाली | वह संस्करण जिसके लिए आपने *यह संस्करण छोड़ें* चुना |
 
 ## गोपनीयता
 

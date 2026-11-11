@@ -79,6 +79,8 @@ A programot nem az Apple írta alá, ezért első alkalommal a macOS megerősít
 
 Telepítse az új változatot **a régire** (ugyanaz a telepítő, ugyanaz a mappa). A beállítások (`config.ini`), a fluxusarchívumok és a térkép a `data` mappában maradnak. A `data/lingue` mappában lévő fordítási fájlok lecserélődnek, ha az újak frissebbek.
 
+**Az 1.8.0-tól a YA-MS önmagát frissíti.** Indításkor naponta egyszer megnézi a GitHubon, van-e új verzió, és felajánlja; az alsó sáv **Frissítések** gombja kézzel ellenőriz. A *Frissítés most* letölti a rendszeredhez való hordozható csomagot, lecseréli a program fájljait, megtartja a `data` mappát (a megváltozó programfájlokat előbb a `data/backup/v<régi verzió>` mappába másolja) és újraindul; a program mappájának írhatónak kell lennie. Ha indításkor programfájlok hiányoznak (a `data` vagy `doc` mappából), egy ablak felsorolja őket és felajánlja, hogy újra letölti a GitHubról. Ha nem akarsz új verziókat keresni, állítsd be a `controlla_aggiornamenti=0` értéket a `config.ini`-ben.
+
 ## Fordítás forráskódból (csak fejlesztőknek)
 
 A telepítőket a GitHub Actions (`.github/workflows/build.yml`) készíti el a `release` ág minden frissítésekor (a változatszám a `VERSION` fájlból származik), és ez hozza létre a `vX.Y.Z` kiadást is. Helyben:

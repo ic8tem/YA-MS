@@ -79,6 +79,8 @@ Programm ei ole Apple'i poolt allkirjastatud, seega küsib macOS esimesel korral
 
 Paigalda uus versioon **vana peale** (sama paigaldaja, sama kaust). Seaded (`config.ini`), vooarhiivid ja kaart jäävad kausta `data`. Kausta `data/lingue` tõlkefailid asendatakse, kui uued on värskemad.
 
+**Alates versioonist 1.8.0 uuendab YA-MS end ise.** Käivitamisel kontrollib see kord päevas GitHubis, kas on uus versioon, ja pakub seda; alumise riba nupp **Uuendused** kontrollib käsitsi. *Uuenda kohe* laadib alla sinu süsteemi kaasaskantava paketi, asendab programmi failid, jätab alles kausta `data` (muutuvad programmifailid kopeeritakse enne kausta `data/backup/v<vana versioon>`) ja taaskäivitub; programmi kaust peab olema kirjutatav. Kui käivitamisel puuduvad programmifailid (kaustas `data` või `doc`), loetleb aken need ja pakub nende uuesti allalaadimist GitHubist. Uute versioonide otsimise lõpetamiseks pane `config.ini` faili `controlla_aggiornamenti=0`.
+
 ## Lähtekoodist ehitamine (ainult arendajatele)
 
 Paigaldajad toodab GitHub Actions (`.github/workflows/build.yml`) iga `release` haru uuendusega (versioon võetakse failist `VERSION`), mis loob ka väljalaske `vX.Y.Z`. Kohalikult:

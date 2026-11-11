@@ -116,6 +116,8 @@ At start-up the program creates the folder if needed and copies only the **missi
 | `mappa/` | Natural Earth coastlines and borders (downloaded on the first start) |
 | `adif_quadrati.csv` | Squares from the last ADIF loaded |
 | `efficienza_spiegazione.txt`, `.docx` | The [explanation document](Efficiency-Explanation) |
+| `backup/` | Copies of program files replaced by an update (one folder per version) |
+| `aggiornamento/` | Package downloaded during an update (deleted at the next start) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Plain text, one `key=value` per line (lines starting with `#` or `;` are comment
 | `rmob_automatico` | 0 | Automatic RMOB download (enable only with RMOB's permission) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | RMOB address template |
 | `graves_sequenza` | 0 | GRAVES beam sequence: 0 = 0.8 s (2021), 1 = 3.2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Check GitHub for new versions at start-up (once a day); 0 = no |
+| `aggiornamenti_salta` | empty | Version for which you chose *Skip this version* |
 
 ## Privacy
 

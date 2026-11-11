@@ -79,6 +79,8 @@ Program tidak ditandatangani oleh Apple, sehingga pada kali pertama macOS memint
 
 Pasang versi baru **di atas versi lama** (installer yang sama, folder yang sama). Pengaturan (`config.ini`), arsip fluks dan peta tetap berada di `data`. File terjemahan di `data/lingue` diganti bila yang baru lebih mutakhir.
 
+**Sejak 1.8.0 YA-MS memperbarui dirinya sendiri.** Saat dijalankan, sekali sehari, ia memeriksa di GitHub apakah ada versi baru dan menawarkannya; tombol **Pembaruan** di bilah bawah memeriksa secara manual. *Perbarui sekarang* mengunduh paket portabel untuk sistem Anda, mengganti berkas program, mempertahankan folder `data` (berkas program yang berubah disalin dulu ke `data/backup/v<versi lama>`) lalu dijalankan ulang; folder program harus dapat ditulisi. Jika saat dijalankan ada berkas program yang hilang (di `data` atau `doc`), sebuah jendela mendaftarnya dan menawarkan untuk mengunduhnya lagi dari GitHub. Agar tidak mencari versi baru, setel `controlla_aggiornamenti=0` di `config.ini`.
+
 ## Membangun dari kode sumber (khusus pengembang)
 
 Installer dibuat oleh GitHub Actions (`.github/workflows/build.yml`) setiap kali cabang `release` diperbarui (versi diambil dari file `VERSION`), yang sekaligus membuat rilis `vX.Y.Z`. Secara lokal:

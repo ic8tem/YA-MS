@@ -79,6 +79,8 @@ Program není podepsán společností Apple, takže macOS poprvé požádá o po
 
 Novou verzi nainstalujte **přes starou** (stejný instalátor, stejná složka). Nastavení (`config.ini`), archivy toku a mapa zůstávají v `data`. Soubory překladů v `data/lingue` se nahradí, pokud jsou nové novější.
 
+**Od verze 1.8.0 se YA-MS aktualizuje sám.** Při spuštění jednou denně zkontroluje na GitHubu, zda existuje nová verze, a nabídne ji; tlačítko **Aktualizace** ve spodní liště kontroluje ručně. *Aktualizovat nyní* stáhne přenosný balíček pro váš systém, nahradí soubory programu, ponechá složku `data` (měnící se soubory programu se nejprve zkopírují do `data/backup/v<stará verze>`) a restartuje se; do složky programu musí jít zapisovat. Pokud při spuštění chybí soubory programu (v `data` nebo `doc`), okno je vypíše a nabídne jejich opětovné stažení z GitHubu. Chcete-li nové verze nehledat, nastavte `controlla_aggiornamenti=0` v `config.ini`.
+
 ## Sestavení ze zdrojového kódu (jen pro vývojáře)
 
 Instalátory vytváří GitHub Actions (`.github/workflows/build.yml`) při každé aktualizaci větve `release` (verze se bere ze souboru `VERSION`), které také vytvoří vydání `vX.Y.Z`. Lokálně:

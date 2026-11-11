@@ -29,6 +29,8 @@ Na página **[Releases](https://github.com/ic8tem/YA-MS/releases/latest)**:
 
 Os dados ficam na pasta `data` ao lado do programa. Instruções completas no **[wiki](https://github.com/ic8tem/YA-MS/wiki/Home-pt)** e em `LEGGIMI.txt`.
 
+A partir da 1.8.0, o YA-MS verifica sozinho no GitHub se há uma versão nova e atualiza-se com um clique (botão **Atualizações** em baixo), mantendo a pasta `data`; se faltarem ficheiros do programa, propõe descarregá-los de novo.
+
 ## Fonte principal
 C. Cerrotta IC8TEM, G. Sartori IV3GTH, «METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese» (Meteor scatter: como ligar toda a Europa em VHF durante todo o ano sem grandes meios). As outras fontes estão listadas no programa e no wiki.
 

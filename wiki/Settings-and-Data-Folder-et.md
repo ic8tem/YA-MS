@@ -116,6 +116,8 @@ Käivitamisel loob programm vajaduse korral kausta ja kopeerib ainult **puuduvad
 | `mappa/` | Natural Earthi rannajooned ja piirid (laaditakse esimesel käivitusel) |
 | `adif_quadrati.csv` | Viimati laaditud ADIF-i ruudud |
 | `efficienza_spiegazione.txt`, `.docx` | [Selgitusdokument](Efficiency-Explanation-et) |
+| `backup/` | Uuendusega asendatud programmifailide koopiad (iga versiooni jaoks oma kaust) |
+| `aggiornamento/` | Uuenduse ajal alla laaditud pakett (kustutatakse järgmisel käivitamisel) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Lihttekst, üks `key=value` rea kohta (märgiga `#` või `;` algavad read on kom
 | `rmob_automatico` | 0 | RMOB-i automaatne allalaadimine (lülita sisse ainult RMOB-i loal) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | RMOB-i aadressi mall |
 | `graves_sequenza` | 0 | GRAVESi kiire järjestus: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Uute versioonide otsimine GitHubist käivitamisel (kord päevas); 0 = ei |
+| `aggiornamenti_salta` | tühi | Versioon, mille puhul valisid *Jäta see versioon vahele* |
 
 ## Privaatsus
 

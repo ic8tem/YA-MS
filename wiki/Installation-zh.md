@@ -79,6 +79,8 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 
 将新版本**直接安装在旧版本之上**（同一个安装程序，同一个文件夹）。设置（`config.ini`）、流量档案和地图都保留在 `data` 中。`data/lingue` 中的翻译文件如果新版本的更新，则会被替换。
 
+**自 1.8.0 起，YA-MS 可自行更新。** 启动时（每天一次）会在 GitHub 上检查是否有新版本并提示；底部栏的 **更新** 按钮可手动检查。*立即更新* 会下载适用于您系统的便携软件包，替换程序文件，保留 `data` 文件夹（会变化的程序文件先复制到 `data/backup/v<旧版本>`），然后重新启动；程序文件夹必须可写。如果启动时缺少程序文件（在 `data` 或 `doc` 中），会弹出窗口列出这些文件，并提议从 GitHub 重新下载。若不想检查新版本，请在 `config.ini` 中设置 `controlla_aggiornamenti=0`。
+
 ## 从源代码构建（仅限开发者）
 
 安装包由 GitHub Actions（`.github/workflows/build.yml`）在 `release` 分支每次更新时生成（版本号取自 `VERSION` 文件），同时会创建发布版本 `vX.Y.Z`。本地构建：

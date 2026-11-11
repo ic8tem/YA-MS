@@ -116,6 +116,8 @@ Na inicialização, o programa cria a pasta se necessário e copia apenas os arq
 | `mappa/` | Costas e fronteiras do Natural Earth (baixadas na primeira inicialização) |
 | `adif_quadrati.csv` | Quadrados do último ADIF carregado |
 | `efficienza_spiegazione.txt`, `.docx` | O [documento de explicação](Efficiency-Explanation-pt-br) |
+| `backup/` | Cópias dos arquivos do programa substituídos por uma atualização (uma pasta por versão) |
+| `aggiornamento/` | Pacote baixado durante uma atualização (apagado na inicialização seguinte) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Texto simples, um `chave=valor` por linha (as linhas que começam com `#` ou `;`
 | `rmob_automatico` | 0 | Download automático do RMOB (ative-a só com autorização do RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Modelo de endereço do RMOB |
 | `graves_sequenza` | 0 | Sequência do feixe do GRAVES: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Procurar versões novas no GitHub ao iniciar (uma vez por dia); 0 = não |
+| `aggiornamenti_salta` | vazio | Versão para a qual você escolheu *Pular esta versão* |
 
 ## Privacidade
 

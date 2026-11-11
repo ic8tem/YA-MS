@@ -116,6 +116,8 @@
 | `mappa/` | קווי חוף וגבולות של Natural Earth (מורדים בהפעלה הראשונה) |
 | `adif_quadrati.csv` | הריבועים מקובץ ה-ADIF האחרון שנטען |
 | `efficienza_spiegazione.txt`, `.docx` | [מסמך ההסבר](Efficiency-Explanation-he) |
+| `backup/` | עותקים של קבצי תוכנה שהוחלפו בעדכון (תיקייה לכל גרסה) |
+| `aggiornamento/` | חבילה שהורדה במהלך עדכון (נמחקת בהפעלה הבאה) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@
 | `rmob_automatico` | 0 | הורדת RMOB אוטומטית (להפעיל רק ברשות RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | תבנית כתובת RMOB |
 | `graves_sequenza` | 0 | רצף אלומת GRAVES: ‏0 = 0.8 s ‏(2021), 1 = 3.2 s ‏(2007) |
+| `controlla_aggiornamenti` | 1 | חיפוש גרסאות חדשות ב-GitHub בהפעלה (פעם ביום); 0 = לא |
+| `aggiornamenti_salta` | ריק | הגרסה שעבורה בחרת *דלג על גרסה זו* |
 
 ## פרטיות
 

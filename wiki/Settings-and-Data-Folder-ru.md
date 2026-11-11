@@ -116,6 +116,8 @@
 | `mappa/` | Береговые линии и границы Natural Earth (загружаются при первом запуске) |
 | `adif_quadrati.csv` | Квадраты из последнего загруженного ADIF |
 | `efficienza_spiegazione.txt`, `.docx` | [Документ-пояснение](Efficiency-Explanation-ru) |
+| `backup/` | Копии файлов программы, заменённых обновлением (одна папка на версию) |
+| `aggiornamento/` | Пакет, скачанный во время обновления (удаляется при следующем запуске) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@
 | `rmob_automatico` | 0 | Автозагрузка RMOB (включать только с разрешения RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Шаблон адреса RMOB |
 | `graves_sequenza` | 0 | Последовательность луча GRAVES: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Проверка новых версий на GitHub при запуске (раз в день); 0 = нет |
+| `aggiornamenti_salta` | пусто | Версия, для которой вы выбрали *Пропустить эту версию* |
 
 ## Конфиденциальность
 

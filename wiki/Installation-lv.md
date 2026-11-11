@@ -79,6 +79,8 @@ Programmu nav parakstījis Apple, tāpēc pirmo reizi macOS prasa apstiprinājum
 
 Instalē jauno versiju **virs vecās** (tas pats instalētājs, tā pati mape). Iestatījumi (`config.ini`), meteoru skaita arhīvi un karte paliek mapē `data`. Tulkojumu faili mapē `data/lingue` tiek aizstāti, ja jaunie ir svaigāki.
 
+**No 1.8.0 YA-MS atjauninās pati.** Startējot vienreiz dienā tā pārbauda GitHub, vai ir jauna versija, un to piedāvā; poga **Atjauninājumi** apakšējā joslā pārbauda manuāli. *Atjaunināt tagad* lejupielādē jūsu sistēmas pārnēsājamo pakotni, aizstāj programmas failus, saglabā mapi `data` (mainītie programmas faili vispirms tiek nokopēti uz `data/backup/v<vecā versija>`) un restartējas; programmas mapei jābūt rakstāmai. Ja startējot trūkst programmas failu (mapē `data` vai `doc`), logs tos uzskaita un piedāvā tos atkal lejupielādēt no GitHub. Lai vairs nemeklētu jaunas versijas, `config.ini` iestatiet `controlla_aggiornamenti=0`.
+
 ## Kompilēšana no pirmkoda (tikai izstrādātājiem)
 
 Instalētājus veido GitHub Actions (`.github/workflows/build.yml`) pie katras zara `release` atjaunināšanas (versija tiek ņemta no faila `VERSION`), un tas izveido arī laidienu `vX.Y.Z`. Lokāli:

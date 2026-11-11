@@ -79,6 +79,8 @@ Programul nu este semnat de Apple, așa că prima dată macOS cere o confirmare;
 
 Instalați noua versiune **peste cea veche** (același program de instalare, același dosar). Setările (`config.ini`), arhivele de flux și harta rămân în `data`. Fișierele de traducere din `data/lingue` sunt înlocuite când cele noi sunt mai recente.
 
+**De la 1.8.0, YA-MS se actualizează singur.** La pornire, o dată pe zi, verifică pe GitHub dacă există o versiune nouă și o propune; butonul **Actualizări** din bara de jos face verificarea manual. *Actualizează acum* descarcă pachetul portabil pentru sistemul tău, înlocuiește fișierele programului, păstrează dosarul `data` (fișierele programului care se schimbă sunt mai întâi copiate în `data/backup/v<versiunea veche>`) și repornește; trebuie să se poată scrie în dosarul programului. Dacă la pornire lipsesc fișiere ale programului (în `data` sau `doc`), o fereastră le enumeră și propune să le descarce din nou de pe GitHub. Ca să nu mai cauți versiuni noi, pune `controlla_aggiornamenti=0` în `config.ini`.
+
 ## Compilare din surse (doar pentru dezvoltatori)
 
 Programele de instalare sunt produse de GitHub Actions (`.github/workflows/build.yml`) la fiecare actualizare a ramurii `release` (versiunea este luată din fișierul `VERSION`), care creează și release-ul `vX.Y.Z`. Local:

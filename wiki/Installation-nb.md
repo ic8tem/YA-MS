@@ -79,6 +79,8 @@ Programmet er ikke signert av Apple, så første gang ber macOS om bekreftelse; 
 
 Installer den nye versjonen **oppå den gamle** (samme installasjonsprogram, samme mappe). Innstillingene (`config.ini`), fluksarkivene og kartet blir liggende i `data`. Oversettelsesfilene i `data/lingue` erstattes når de nye er nyere.
 
+**Fra 1.8.0 oppdaterer YA-MS seg selv.** Ved oppstart sjekker det én gang om dagen på GitHub om det finnes en ny versjon og tilbyr den; knappen **Oppdateringer** i den nederste linjen sjekker for hånd. *Oppdater nå* laster ned den portable pakken for systemet ditt, erstatter programfilene, beholder mappen `data` (programfiler som endres kopieres først til `data/backup/v<gammel versjon>`) og starter på nytt; programmappen må være skrivbar. Mangler det programfiler ved oppstart (i `data` eller `doc`), viser et vindu dem og tilbyr å laste dem ned igjen fra GitHub. For å slutte å se etter nye versjoner, sett `controlla_aggiornamenti=0` i `config.ini`.
+
 ## Bygge fra kildekoden (bare for utviklere)
 
 Installasjonspakkene lages av GitHub Actions (`.github/workflows/build.yml`) ved hver oppdatering av grenen `release` (versjonen hentes fra filen `VERSION`), som også oppretter utgivelsen `vX.Y.Z`. Lokalt:

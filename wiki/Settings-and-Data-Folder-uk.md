@@ -116,6 +116,8 @@
 | `mappa/` | Берегові лінії та кордони Natural Earth (завантажуються під час першого запуску) |
 | `adif_quadrati.csv` | Квадрати з останнього завантаженого ADIF |
 | `efficienza_spiegazione.txt`, `.docx` | [Документ із поясненням](Efficiency-Explanation-uk) |
+| `backup/` | Копії файлів програми, замінених оновленням (одна тека на версію) |
+| `aggiornamento/` | Пакет, завантажений під час оновлення (видаляється під час наступного запуску) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@
 | `rmob_automatico` | 0 | Автоматичне завантаження RMOB (вмикати лише з дозволу RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Шаблон адреси RMOB |
 | `graves_sequenza` | 0 | Послідовність променя GRAVES: 0 = 0,8 с (2021), 1 = 3,2 с (2007) |
+| `controlla_aggiornamenti` | 1 | Перевірка нових версій на GitHub під час запуску (раз на день); 0 = ні |
+| `aggiornamenti_salta` | порожньо | Версія, для якої ви вибрали *Пропустити цю версію* |
 
 ## Конфіденційність
 

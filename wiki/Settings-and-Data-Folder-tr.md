@@ -116,6 +116,8 @@ Açılışta program gerekirse klasörü oluşturur ve yalnızca **eksik** başl
 | `mappa/` | Natural Earth kıyı çizgileri ve sınırları (ilk açılışta indirilir) |
 | `adif_quadrati.csv` | Son yüklenen ADIF'ten kareler |
 | `efficienza_spiegazione.txt`, `.docx` | [Açıklama belgesi](Efficiency-Explanation-tr) |
+| `backup/` | Bir güncellemenin değiştirdiği program dosyalarının kopyaları (her sürüm için bir klasör) |
+| `aggiornamento/` | Güncelleme sırasında indirilen paket (sonraki açılışta silinir) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Düz metin, her satırda bir `key=value` (`#` ya da `;` ile başlayan satırlar 
 | `rmob_automatico` | 0 | Otomatik RMOB indirmesi (yalnızca RMOB'un izniyle etkinleştirin) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | RMOB adres şablonu |
 | `graves_sequenza` | 0 | GRAVES huzme dizisi: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Açılışta GitHub'da yeni sürümleri denetle (günde bir kez); 0 = hayır |
+| `aggiornamenti_salta` | boş | *Bu sürümü atla* seçtiğiniz sürüm |
 
 ## Gizlilik
 

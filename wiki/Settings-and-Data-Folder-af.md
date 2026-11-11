@@ -116,6 +116,8 @@ By opstart skep die program die gids indien nodig en kopieer slegs die **ontbrek
 | `mappa/` | Natural Earth-kuslyne en -grense (by die eerste opstart afgelaai) |
 | `adif_quadrati.csv` | Vierkante uit die laaste gelaaide ADIF |
 | `efficienza_spiegazione.txt`, `.docx` | Die [verduidelikingsdokument](Efficiency-Explanation-af) |
+| `backup/` | Kopieë van programlêers wat deur 'n bywerking vervang is (een vouer per weergawe) |
+| `aggiornamento/` | Pakket afgelaai tydens 'n bywerking (by die volgende begin geskrap) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Gewone teks, een `sleutel=waarde` per reël (reëls wat met `#` of `;` begin, is
 | `rmob_automatico` | 0 | Outomatiese RMOB-aflaai (skakel slegs aan met RMOB se toestemming) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Sjabloon vir die RMOB-adres |
 | `graves_sequenza` | 0 | GRAVES-bundelvolgorde: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Soek by die begin op GitHub na nuwe weergawes (een keer per dag); 0 = nee |
+| `aggiornamenti_salta` | leeg | Weergawe waarvoor jy *Slaan hierdie weergawe oor* gekies het |
 
 ## Privaatheid
 

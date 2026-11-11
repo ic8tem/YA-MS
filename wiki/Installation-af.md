@@ -79,6 +79,8 @@ Die program is nie deur Apple onderteken nie, so die eerste keer vra macOS vir b
 
 Installeer die nuwe weergawe **oor die ou een** (dieselfde installeerder, dieselfde gids). Die instellings (`config.ini`), die vloedargiewe en die kaart bly in `data`. Vertaallêers in `data/lingue` word vervang wanneer die nuwes meer onlangs is.
 
+**Vanaf 1.8.0 werk YA-MS homself by.** By die begin kyk dit een keer per dag op GitHub of daar 'n nuwe weergawe is en bied dit aan; die knoppie **Bywerkings** in die onderste balk kyk met die hand. *Werk nou by* laai die draagbare pakket vir jou stelsel af, vervang die programlêers, behou die vouer `data` (programlêers wat verander, word eers na `data/backup/v<ou weergawe>` gekopieer) en herbegin; die programvouer moet skryfbaar wees. As programlêers by die begin ontbreek (in `data` of `doc`), lys 'n venster hulle en bied aan om hulle weer van GitHub af te laai. Om nie meer na nuwe weergawes te soek nie, stel `controlla_aggiornamenti=0` in `config.ini`.
+
 ## Bou vanaf die bronkode (slegs vir ontwikkelaars)
 
 Die installeerders word deur GitHub Actions (`.github/workflows/build.yml`) gebou by elke bywerking van die `release`-tak (weergawe uit die `VERSION`-lêer geneem), wat ook die release `vX.Y.Z` skep. Plaaslik:

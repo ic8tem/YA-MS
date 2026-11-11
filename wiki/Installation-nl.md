@@ -79,6 +79,8 @@ Het programma is niet door Apple ondertekend, dus de eerste keer vraagt macOS om
 
 Installeer de nieuwe versie **over de oude heen** (hetzelfde installatieprogramma, dezelfde map). De instellingen (`config.ini`), de fluxarchieven en de kaart blijven in `data`. De vertaalbestanden in `data/lingue` worden vervangen als de nieuwe recenter zijn.
 
+**Vanaf 1.8.0 werkt YA-MS zichzelf bij.** Bij het starten controleert het eenmaal per dag op GitHub of er een nieuwe versie is en biedt die aan; de knop **Updates** in de onderste balk controleert met de hand. *Nu bijwerken* downloadt het portable pakket voor je systeem, vervangt de programmabestanden, behoudt de map `data` (programmabestanden die veranderen worden eerst gekopieerd naar `data/backup/v<oude versie>`) en herstart; de programmamap moet beschrijfbaar zijn. Ontbreken er bij het starten programmabestanden (in `data` of `doc`), dan toont een venster ze en biedt aan ze opnieuw van GitHub te downloaden. Om niet meer op nieuwe versies te controleren zet je `controlla_aggiornamenti=0` in `config.ini`.
+
 ## Compileren vanuit de broncode (alleen voor ontwikkelaars)
 
 De installatiepakketten worden gemaakt door GitHub Actions (`.github/workflows/build.yml`) bij elke update van de branch `release` (versie uit het bestand `VERSION`), die ook de release `vX.Y.Z` aanmaakt. Lokaal:

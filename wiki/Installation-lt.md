@@ -79,6 +79,8 @@ Programa nepasirašyta Apple, todėl pirmą kartą macOS prašo patvirtinimo; ž
 
 Įdiekite naują versiją **ant senosios** (ta pati diegimo programa, tas pats aplankas). Nustatymai (`config.ini`), srauto archyvai ir žemėlapis lieka aplanke `data`. Vertimų failai aplanke `data/lingue` pakeičiami, jei naujieji yra naujesni.
 
+**Nuo 1.8.0 YA-MS atsinaujina pati.** Paleidžiant kartą per dieną ji patikrina GitHub, ar yra nauja versija, ir ją pasiūlo; mygtukas **Atnaujinimai** apatinėje juostoje tikrina rankiniu būdu. *Atnaujinti dabar* atsisiunčia jūsų sistemos nešiojamąjį paketą, pakeičia programos failus, palieka aplanką `data` (pasikeitę programos failai pirmiau nukopijuojami į `data/backup/v<sena versija>`) ir pasileidžia iš naujo; į programos aplanką turi būti galima rašyti. Jei paleidžiant trūksta programos failų (aplanke `data` arba `doc`), langas juos išvardija ir pasiūlo vėl atsisiųsti iš GitHub. Kad nebeieškotų naujų versijų, `config.ini` nustatykite `controlla_aggiornamenti=0`.
+
 ## Kompiliavimas iš išeitinio kodo (tik kūrėjams)
 
 Diegimo programas sukuria GitHub Actions (`.github/workflows/build.yml`) kiekvieną kartą atnaujinus šaką `release` (versija imama iš failo `VERSION`); taip pat sukuriamas leidimas `vX.Y.Z`. Vietoje:

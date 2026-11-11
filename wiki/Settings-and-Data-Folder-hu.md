@@ -116,6 +116,8 @@ Indításkor a program szükség esetén létrehozza a mappát, és csak a **hi�
 | `mappa/` | Natural Earth partvonalak és határok (első indításkor töltődnek le) |
 | `adif_quadrati.csv` | A legutóbb betöltött ADIF négyzetei |
 | `efficienza_spiegazione.txt`, `.docx` | A [magyarázó dokumentum](Efficiency-Explanation-hu) |
+| `backup/` | Egy frissítés által lecserélt programfájlok másolatai (verziónként egy mappa) |
+| `aggiornamento/` | Frissítés közben letöltött csomag (a következő indításkor törlődik) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Egyszerű szövegfájl, soronként egy `key=value` pár (a `#` vagy `;` karakter
 | `rmob_automatico` | 0 | Automatikus RMOB-letöltés (csak az RMOB engedélyével kapcsolja be) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Az RMOB-cím sablonja |
 | `graves_sequenza` | 0 | A GRAVES nyalábsorrendje: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Új verziók keresése a GitHubon indításkor (naponta egyszer); 0 = nem |
+| `aggiornamenti_salta` | üres | Az a verzió, amelyre a *Verzió kihagyása* lehetőséget választottad |
 
 ## Adatvédelem
 

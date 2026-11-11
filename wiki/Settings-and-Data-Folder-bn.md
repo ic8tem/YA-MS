@@ -116,6 +116,8 @@
 | `mappa/` | Natural Earth-এর উপকূলরেখা ও সীমানা (প্রথমবার চালুর সময় ডাউনলোড) |
 | `adif_quadrati.csv` | সর্বশেষ লোড করা ADIF-এর বর্গ |
 | `efficienza_spiegazione.txt`, `.docx` | [ব্যাখ্যার নথি](Efficiency-Explanation-bn) |
+| `backup/` | আপডেটে বদলানো প্রোগ্রাম ফাইলের কপি (প্রতি সংস্করণে একটি ফোল্ডার) |
+| `aggiornamento/` | আপডেটের সময় ডাউনলোড করা প্যাকেজ (পরের বার চালু হলে মুছে যায়) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@
 | `rmob_automatico` | 0 | স্বয়ংক্রিয় RMOB ডাউনলোড (কেবল RMOB-এর অনুমতি নিয়ে চালু করুন) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | RMOB ঠিকানার টেমপ্লেট |
 | `graves_sequenza` | 0 | GRAVES বিমের ক্রম: 0 = 0.8 s (2021), 1 = 3.2 s (2007) |
+| `controlla_aggiornamenti` | 1 | চালু হওয়ার সময় GitHub-এ নতুন সংস্করণ খোঁজা (দিনে একবার); 0 = না |
+| `aggiornamenti_salta` | খালি | যে সংস্করণের জন্য আপনি *এই সংস্করণ বাদ দিন* বেছেছেন |
 
 ## গোপনীয়তা
 

@@ -79,6 +79,8 @@ Program nie jest podpisany przez Apple, więc za pierwszym razem macOS prosi o p
 
 Zainstaluj nową wersję **na starszą** (ten sam instalator, ten sam folder). Ustawienia (`config.ini`), archiwa strumienia i mapa pozostają w `data`. Pliki tłumaczeń w `data/lingue` są zastępowane, gdy nowe są nowsze.
 
+**Od wersji 1.8.0 YA-MS aktualizuje się sam.** Przy uruchomieniu, raz dziennie, sprawdza na GitHubie, czy jest nowa wersja, i ją proponuje; przycisk **Aktualizacje** na dolnym pasku sprawdza ręcznie. *Aktualizuj teraz* pobiera pakiet przenośny dla twojego systemu, zastępuje pliki programu, zachowuje folder `data` (zmieniające się pliki programu są najpierw kopiowane do `data/backup/v<stara wersja>`) i uruchamia się ponownie; folder programu musi być zapisywalny. Jeśli przy uruchomieniu brakuje plików programu (w `data` lub `doc`), okno je wymienia i proponuje ponowne pobranie z GitHuba. Aby nie szukać nowych wersji, ustaw `controlla_aggiornamenti=0` w `config.ini`.
+
 ## Kompilacja ze źródeł (tylko dla programistów)
 
 Instalatory są tworzone przez GitHub Actions (`.github/workflows/build.yml`) przy każdej aktualizacji gałęzi `release` (wersja pobierana z pliku `VERSION`), co tworzy również wydanie `vX.Y.Z`. Lokalnie:

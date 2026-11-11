@@ -116,6 +116,8 @@ Við ræsingu býr forritið til möppuna ef þörf krefur og afritar aðeins up
 | `mappa/` | Strandlínur og landamæri frá Natural Earth (sótt við fyrstu ræsingu) |
 | `adif_quadrati.csv` | Reitir úr síðustu ADIF-skránni sem var hlaðið |
 | `efficienza_spiegazione.txt`, `.docx` | [Skýringaskjalið](Efficiency-Explanation-is) |
+| `backup/` | Afrit af skrám forritsins sem uppfærsla skipti út (ein mappa fyrir hverja útgáfu) |
+| `aggiornamento/` | Pakki sem sóttur var við uppfærslu (eytt við næstu ræsingu) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Venjulegur texti, eitt `lykill=gildi` á hverja línu (línur sem byrja á `#` e
 | `rmob_automatico` | 0 | Sjálfvirk sókn frá RMOB (virkjaðu aðeins með leyfi RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Sniðmát fyrir slóð RMOB |
 | `graves_sequenza` | 0 | Röð geisla GRAVES: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Leita að nýjum útgáfum á GitHub við ræsingu (einu sinni á dag); 0 = nei |
+| `aggiornamenti_salta` | autt | Útgáfa sem þú valdir *Sleppa þessari útgáfu* fyrir |
 
 ## Persónuvernd
 

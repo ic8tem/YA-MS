@@ -116,6 +116,8 @@
 | `mappa/` | Natural Earth کی ساحلی لکیریں اور سرحدیں (پہلی بار چلانے پر ڈاؤن لوڈ) |
 | `adif_quadrati.csv` | آخری لوڈ شدہ ADIF کے مربعے |
 | `efficienza_spiegazione.txt`، `.docx` | [وضاحتی دستاویز](Efficiency-Explanation-ur) |
+| `backup/` | اپ ڈیٹ سے بدلی گئی پروگرام فائلوں کی کاپیاں (ہر ورژن کا ایک فولڈر) |
+| `aggiornamento/` | اپ ڈیٹ کے دوران ڈاؤن لوڈ کیا گیا پیکیج (اگلی بار شروع ہونے پر حذف) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@
 | `rmob_automatico` | 0 | خودکار RMOB ڈاؤن لوڈ (صرف RMOB کی اجازت سے فعال کریں) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | RMOB پتے کا سانچہ |
 | `graves_sequenza` | 0 | GRAVES بیم کی ترتیب: 0 = 0.8 s (2021)، 1 = 3.2 s (2007) |
+| `controlla_aggiornamenti` | 1 | شروع ہونے پر GitHub پر نئے ورژن تلاش کریں (دن میں ایک بار)؛ 0 = نہیں |
+| `aggiornamenti_salta` | خالی | وہ ورژن جس کے لیے آپ نے *یہ ورژن چھوڑ دیں* چنا |
 
 ## رازداری
 

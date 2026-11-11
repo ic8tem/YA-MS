@@ -79,6 +79,8 @@ Hindi naka-sign ng Apple ang programa, kaya sa unang pagkakataon ay hihingi ng k
 
 I-install ang bagong bersyon **sa ibabaw ng luma** (parehong installer, parehong folder). Nananatili sa `data` ang mga setting (`config.ini`), ang mga archive ng flux at ang mapa. Pinapalitan ang mga file ng salin sa `data/lingue` kapag mas bago ang mga bago.
 
+**Mula sa 1.8.0, kusang nag-a-update ang YA-MS.** Sa pagsisimula, isang beses bawat araw, tinitingnan nito sa GitHub kung may bagong bersyon at iniaalok ito; ang button na **Mga update** sa ibabang bar ay tumitingin nang mano-mano. Dina-download ng *I-update ngayon* ang portable na package para sa iyong sistema, pinapalitan ang mga file ng programa, pinapanatili ang folder na `data` (kinokopya muna sa `data/backup/v<lumang bersyon>` ang mga nagbabagong file ng programa) at nagre-restart; dapat masulatan ang folder ng programa. Kung may nawawalang file ng programa sa pagsisimula (sa `data` o `doc`), inililista ito ng isang window at iniaalok na i-download ulit mula sa GitHub. Para hindi na maghanap ng mga bagong bersyon, ilagay ang `controlla_aggiornamenti=0` sa `config.ini`.
+
 ## Pag-build mula sa source (para sa mga developer lamang)
 
 Ginagawa ang mga installer ng GitHub Actions (`.github/workflows/build.yml`) sa bawat update ng branch na `release` (kinukuha ang bersyon mula sa file na `VERSION`), na lumilikha rin ng release na `vX.Y.Z`. Sa lokal:

@@ -116,6 +116,8 @@ Saat mulai, program membuat folder bila perlu dan hanya menyalin file awal yang 
 | `mappa/` | Garis pantai dan perbatasan Natural Earth (diunduh pada start pertama) |
 | `adif_quadrati.csv` | Kotak dari ADIF terakhir yang dimuat |
 | `efficienza_spiegazione.txt`, `.docx` | [Dokumen penjelasan](Efficiency-Explanation-id) |
+| `backup/` | Salinan berkas program yang diganti oleh pembaruan (satu folder per versi) |
+| `aggiornamento/` | Paket yang diunduh selama pembaruan (dihapus saat dijalankan berikutnya) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Teks biasa, satu `key=value` per baris (baris yang diawali `#` atau `;` adalah k
 | `rmob_automatico` | 0 | Pengambilan RMOB otomatis (aktifkan hanya dengan izin RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Templat alamat RMOB |
 | `graves_sequenza` | 0 | Urutan berkas GRAVES: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Cari versi baru di GitHub saat dijalankan (sekali sehari); 0 = tidak |
+| `aggiornamenti_salta` | kosong | Versi yang Anda pilih *Lewati versi ini* |
 
 ## Privasi
 

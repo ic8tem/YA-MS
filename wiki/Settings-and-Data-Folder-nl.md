@@ -116,6 +116,8 @@ Bij het opstarten maakt het programma de map aan als dat nodig is en kopieert he
 | `mappa/` | Kustlijnen en grenzen van Natural Earth (gedownload bij de eerste start) |
 | `adif_quadrati.csv` | Vakken uit het laatst geladen ADIF |
 | `efficienza_spiegazione.txt`, `.docx` | Het [uitlegdocument](Efficiency-Explanation-nl) |
+| `backup/` | Kopieën van programmabestanden die door een update zijn vervangen (één map per versie) |
+| `aggiornamento/` | Pakket gedownload tijdens een update (gewist bij de volgende start) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Platte tekst, één `sleutel=waarde` per regel (regels die met `#` of `;` beginn
 | `rmob_automatico` | 0 | Automatisch downloaden van RMOB (alleen inschakelen met toestemming van RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Sjabloon voor het RMOB-adres |
 | `graves_sequenza` | 0 | Bundelvolgorde van GRAVES: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Bij het starten op GitHub naar nieuwe versies zoeken (eenmaal per dag); 0 = nee |
+| `aggiornamenti_salta` | leeg | Versie waarvoor je *Deze versie overslaan* hebt gekozen |
 
 ## Privacy
 

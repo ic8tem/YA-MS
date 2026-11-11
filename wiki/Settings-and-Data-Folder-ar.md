@@ -116,6 +116,8 @@
 | `mappa/` | السواحل والحدود من Natural Earth (تُنزَّل عند التشغيل الأول) |
 | `adif_quadrati.csv` | المربعات من آخر ملف ADIF محمَّل |
 | `efficienza_spiegazione.txt`، `.docx` | [وثيقة الشرح](Efficiency-Explanation-ar) |
+| `backup/` | نسخ من ملفات البرنامج التي استبدلها تحديث (مجلد لكل إصدار) |
+| `aggiornamento/` | الحزمة التي نُزّلت أثناء التحديث (تُحذف عند التشغيل التالي) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@
 | `rmob_automatico` | 0 | الجلب التلقائي لـ RMOB (فعّله فقط بإذن من RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | قالب عنوان RMOB |
 | `graves_sequenza` | 0 | تتابع حزمة GRAVES: ‏0 = 0.8 s ‏(2021)، 1 = 3.2 s ‏(2007) |
+| `controlla_aggiornamenti` | 1 | البحث عن إصدارات جديدة على GitHub عند التشغيل (مرة في اليوم)؛ 0 = لا |
+| `aggiornamenti_salta` | فارغ | الإصدار الذي اخترت له *تخطَّ هذا الإصدار* |
 
 ## الخصوصية
 

@@ -116,6 +116,8 @@
 | `mappa/` | Ακτογραμμές και σύνορα του Natural Earth (κατεβαίνουν στην πρώτη εκκίνηση) |
 | `adif_quadrati.csv` | Τετράγωνα από το τελευταίο ADIF που φορτώθηκε |
 | `efficienza_spiegazione.txt`, `.docx` | Το [έγγραφο επεξήγησης](Efficiency-Explanation-el) |
+| `backup/` | Αντίγραφα αρχείων του προγράμματος που αντικαταστάθηκαν από ενημέρωση (ένας φάκελος ανά έκδοση) |
+| `aggiornamento/` | Πακέτο που κατέβηκε κατά την ενημέρωση (διαγράφεται στην επόμενη εκκίνηση) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@
 | `rmob_automatico` | 0 | Αυτόματη λήψη από το RMOB (ενεργοποιήστε μόνο με άδεια του RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Πρότυπο διεύθυνσης RMOB |
 | `graves_sequenza` | 0 | Ακολουθία δέσμης GRAVES: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Αναζήτηση νέων εκδόσεων στο GitHub κατά την εκκίνηση (μία φορά την ημέρα)· 0 = όχι |
+| `aggiornamenti_salta` | κενό | Η έκδοση για την οποία επιλέξατε *Παράλειψη αυτής της έκδοσης* |
 
 ## Απόρρητο
 

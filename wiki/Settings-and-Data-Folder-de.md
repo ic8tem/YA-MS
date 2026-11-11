@@ -116,6 +116,8 @@ Beim Start legt das Programm den Ordner bei Bedarf an und kopiert nur die **fehl
 | `mappa/` | Küsten und Grenzen von Natural Earth (beim ersten Start geladen) |
 | `adif_quadrati.csv` | Felder aus der zuletzt geladenen ADIF-Datei |
 | `efficienza_spiegazione.txt`, `.docx` | Das [Erklärungsdokument](Efficiency-Explanation-de) |
+| `backup/` | Kopien der durch eine Aktualisierung ersetzten Programmdateien (ein Ordner pro Version) |
+| `aggiornamento/` | Während einer Aktualisierung heruntergeladenes Paket (beim nächsten Start gelöscht) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Reiner Text, ein `key=value` pro Zeile (Zeilen, die mit `#` oder `;` beginnen, s
 | `rmob_automatico` | 0 | Automatischer RMOB-Abruf (nur mit Erlaubnis von RMOB aktivieren) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Vorlage der RMOB-Adresse |
 | `graves_sequenza` | 0 | Strahlfolge von GRAVES: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Beim Start auf GitHub nach neuen Versionen suchen (einmal am Tag); 0 = nein |
+| `aggiornamenti_salta` | leer | Version, für die du *Diese Version überspringen* gewählt hast |
 
 ## Datenschutz
 

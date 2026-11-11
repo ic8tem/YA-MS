@@ -116,6 +116,8 @@ Ved opstart opretter programmet mappen om nødvendigt og kopierer kun de **mangl
 | `mappa/` | Kystlinjer og grænser fra Natural Earth (hentes ved første opstart) |
 | `adif_quadrati.csv` | Felter fra den senest indlæste ADIF |
 | `efficienza_spiegazione.txt`, `.docx` | [Forklaringsdokumentet](Efficiency-Explanation-da) |
+| `backup/` | Kopier af programfiler, der er erstattet af en opdatering (én mappe pr. version) |
+| `aggiornamento/` | Pakke hentet under en opdatering (slettes ved næste start) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Almindelig tekst, én `key=value` pr. linje (linjer, der begynder med `#` eller 
 | `rmob_automatico` | 0 | Automatisk hentning fra RMOB (aktivér kun med tilladelse fra RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Skabelon for RMOB-adressen |
 | `graves_sequenza` | 0 | GRAVES-strålesekvens: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Søg efter nye versioner på GitHub ved start (én gang om dagen); 0 = nej |
+| `aggiornamenti_salta` | tom | Version, som du valgte *Spring denne version over* for |
 
 ## Privatliv
 

@@ -116,6 +116,8 @@
 | `mappa/` | Natural Earth 해안선과 국경(첫 실행 시 다운로드) |
 | `adif_quadrati.csv` | 마지막으로 불러온 ADIF의 그리드 |
 | `efficienza_spiegazione.txt`, `.docx` | [설명 문서](Efficiency-Explanation-ko) |
+| `backup/` | 업데이트로 교체된 프로그램 파일의 사본(버전마다 폴더 하나) |
+| `aggiornamento/` | 업데이트 중에 다운로드한 패키지(다음 시작 시 삭제) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@
 | `rmob_automatico` | 0 | RMOB 자동 다운로드(RMOB의 허가가 있을 때만 사용) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | RMOB 주소 템플릿 |
 | `graves_sequenza` | 0 | GRAVES 빔 시퀀스: 0 = 0.8 s(2021), 1 = 3.2 s(2007) |
+| `controlla_aggiornamenti` | 1 | 시작할 때 GitHub에서 새 버전 확인(하루 한 번); 0 = 안 함 |
+| `aggiornamenti_salta` | 비어 있음 | *이 버전 건너뛰기*를 선택한 버전 |
 
 ## 개인정보
 

@@ -116,6 +116,8 @@ Vid start skapar programmet mappen om det behövs och kopierar bara de **saknade
 | `mappa/` | Kustlinjer och gränser från Natural Earth (hämtas vid första starten) |
 | `adif_quadrati.csv` | Rutor från den senast inlästa ADIF-filen |
 | `efficienza_spiegazione.txt`, `.docx` | [Förklaringsdokumentet](Efficiency-Explanation-sv) |
+| `backup/` | Kopior av programfiler som ersatts av en uppdatering (en mapp per version) |
+| `aggiornamento/` | Paket som laddats ner under en uppdatering (raderas vid nästa start) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Vanlig text, en `nyckel=värde` per rad (rader som börjar med `#` eller `;` är
 | `rmob_automatico` | 0 | Automatisk hämtning från RMOB (aktivera endast med tillstånd från RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Adressmall för RMOB |
 | `graves_sequenza` | 0 | GRAVES lobsekvens: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Sök efter nya versioner på GitHub vid start (en gång om dagen); 0 = nej |
+| `aggiornamenti_salta` | tom | Version för vilken du valde *Hoppa över den här versionen* |
 
 ## Integritet
 

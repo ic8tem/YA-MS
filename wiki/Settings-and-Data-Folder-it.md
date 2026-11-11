@@ -116,6 +116,8 @@ All'avvio il programma crea la cartella se serve e copia solo i file iniziali **
 | `mappa/` | Coste e confini di Natural Earth (scaricati al primo avvio) |
 | `adif_quadrati.csv` | Quadrati dall'ultimo ADIF caricato |
 | `efficienza_spiegazione.txt`, `.docx` | Il [documento di spiegazione](Efficiency-Explanation-it) |
+| `backup/` | Copie dei file del programma sostituiti da un aggiornamento (una cartella per versione) |
+| `aggiornamento/` | Pacchetto scaricato durante un aggiornamento (cancellato all'avvio successivo) |
 
 ## config.ini
 
@@ -143,6 +145,8 @@ Testo semplice, una `chiave=valore` per riga (le righe che iniziano con `#` o `;
 | `rmob_automatico` | 0 | Prelievo automatico da RMOB (attivare solo con il permesso di RMOB) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | Modello dell'indirizzo RMOB |
 | `graves_sequenza` | 0 | Sequenza del fascio di GRAVES: 0 = 0,8 s (2021), 1 = 3,2 s (2007) |
+| `controlla_aggiornamenti` | 1 | Controllo delle versioni nuove su GitHub all'avvio (una volta al giorno); 0 = no |
+| `aggiornamenti_salta` | vuoto | Versione per cui hai scelto *Salta questa versione* |
 
 ## Privacy
 

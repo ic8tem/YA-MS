@@ -116,6 +116,8 @@
 | `mappa/` | Natural Earth の海岸線と国境 (初回起動時にダウンロード) |
 | `adif_quadrati.csv` | 最後に読み込んだ ADIF のグリッド |
 | `efficienza_spiegazione.txt`, `.docx` | [解説文書](Efficiency-Explanation-ja) |
+| `backup/` | 更新で置き換えられたプログラムのファイルのコピー（バージョンごとに 1 フォルダー） |
+| `aggiornamento/` | 更新中にダウンロードしたパッケージ（次回起動時に削除） |
 
 ## config.ini
 
@@ -143,6 +145,8 @@
 | `rmob_automatico` | 0 | RMOB の自動取得 (RMOB の許可がある場合のみ有効にすること) |
 | `rmob_url` | `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT` | RMOB アドレスのテンプレート |
 | `graves_sequenza` | 0 | GRAVES のビームのシーケンス: 0 = 0.8 s (2021), 1 = 3.2 s (2007) |
+| `controlla_aggiornamenti` | 1 | 起動時に GitHub で新しいバージョンを確認（1 日 1 回）。0 = しない |
+| `aggiornamenti_salta` | 空 | *このバージョンをスキップ* を選んだバージョン |
 
 ## プライバシー
 

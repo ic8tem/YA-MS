@@ -79,6 +79,8 @@ The program is not signed by Apple, so the first time macOS asks for confirmatio
 
 Install the new version **over the old one** (same installer, same folder). Settings (`config.ini`), the flux archives and the map stay in `data`. Translation files in `data/lingue` are replaced when the new ones are more recent.
 
+**From 1.8.0 YA-MS updates itself.** At start-up, once a day, it checks GitHub for a new version and offers it; the **Updates** button in the bottom bar checks by hand. *Update now* downloads the portable package for your system, replaces the program files, keeps the `data` folder (program files that change are first copied to `data/backup/v<old version>`) and restarts; the program folder must be writable. If program files are missing at start-up (in `data` or `doc`), a window lists them and offers to download them again from GitHub. To stop checking for new versions set `controlla_aggiornamenti=0` in `config.ini`.
+
 ## Building from source (developers only)
 
 The installers are produced by GitHub Actions (`.github/workflows/build.yml`) at every update of the `release` branch (version taken from the `VERSION` file), which also creates the release `vX.Y.Z`. Locally:

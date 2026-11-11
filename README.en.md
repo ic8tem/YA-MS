@@ -2,6 +2,8 @@
 
 [Italiano](README.md) · **English** · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Português](README.pt.md)
 
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-ic8tem-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/ic8tem)
+
 **YA-MS** computes, live and as a forecast, the efficiency of meteor showers for amateur-radio **meteor scatter** contacts (50–432 MHz): where the radiants are, which hot spots to use, when the path works best and how much signal arrives.
 By Costantino Cerrotta IC8TEM. Free, for Windows, Linux, Raspberry Pi and Mac. Interface, wiki and manuals in 36 languages.
 
@@ -34,3 +36,6 @@ C. Cerrotta IC8TEM, G. Sartori IV3GTH, «METEOR-SCATTER. Ovvero come collegare l
 The installers are produced by GitHub Actions (`.github/workflows/build.yml`) whenever the `release` branch is updated (version from the `VERSION` file). Locally: `dotnet publish YA-MS.csproj -c Release -r <rid> --self-contained true`. The documents in all languages are rebuilt with `tools/build_documenti.sh`.
 
 Radar data belong to their owners (University of Leipzig / IAP Kühlungsborn, Sodankylä Geophysical Observatory).
+
+## Support the project
+YA-MS is free. If you find it useful, you can buy me a coffee on **[Ko-fi](https://ko-fi.com/ic8tem)**.

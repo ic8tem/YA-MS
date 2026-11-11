@@ -640,3 +640,16 @@ zona PREV	PREV زون
 FONTE	ماخذ
 RILIEVO	جانچ
 SCELTA	انتخاب
+(sopra 144 MHz nessuna misura: λ²)	(144 MHz سے اوپر کوئی پیمائش نہیں: λ²)
+Come cambia la durata dei ping da una banda all'altra.\nTeorica (prudente, di partenza): durata proporzionale a λ² (McKinley 1961; regola di SM6FHZ): da 50 a 144 MHz i ping si accorciano di 8 volte.\nOsservata: mediane misurate da NN4SA (EM64) durante le Perseidi 2026 nel MSQP di HamSCI (R. Suggs NN4NT): 148 ms a 28 MHz, 78 ms a 50 MHz, 53 ms a 144 MHz; da 50 a 144 MHz i ping si accorciano solo di 1,5 volte. Una sola stazione ricevente, analisi preliminare; sopra 144 MHz non ci sono misure e si usa λ².	پنگ کا دورانیہ ایک بینڈ سے دوسرے میں کیسے بدلتا ہے۔\nنظریاتی (محتاط، طے شدہ): دورانیہ λ² کے متناسب (McKinley 1961؛ SM6FHZ کا قاعدہ): 50 سے 144 MHz تک پنگ 8 گنا چھوٹے ہو جاتے ہیں۔\nمشاہدہ شدہ: HamSCI کے MSQP میں 2026 کے پرسیئڈز کے دوران NN4SA (EM64) کے ناپے گئے میڈین (R. Suggs NN4NT): 28 MHz پر 148 ms، 50 MHz پر 78 ms، 144 MHz پر 53 ms؛ 50 سے 144 MHz تک پنگ صرف 1.5 گنا چھوٹے ہوتے ہیں۔ ایک ہی وصولی اسٹیشن، ابتدائی تجزیہ؛ 144 MHz سے اوپر کوئی پیمائش نہیں اور λ² استعمال ہوتا ہے۔
+Durata dei ping tra le bande	بینڈز کے درمیان پنگ کا دورانیہ
+Durata osservata (HamSCI MSQP, NN4SA, Perseidi 2026; mediane 148 / 78 / 53 ms a 28 / 50 / 144 MHz): circa {0:F0} ms a {1:F0} MHz, x {2:F2} rispetto a 144 MHz{3}	مشاہدہ شدہ دورانیہ (HamSCI MSQP، NN4SA، پرسیئڈز 2026؛ 28 / 50 / 144 MHz پر میڈین 148 / 78 / 53 ms): {1:F0} MHz پر تقریباً {0:F0} ms، 144 MHz کے مقابلے میں x {2:F2}{3}
+Durata secondo le misure HamSCI MSQP (NN4SA, Perseidi 2026) invece di λ²: x {0:F3}, quindi un eco di 1 s a {1:F1} MHz dura circa {2:F0} ms a {3:F0} MHz.	λ² کی جگہ HamSCI MSQP کی پیمائشوں کے مطابق دورانیہ (NN4SA، پرسیئڈز 2026): x {0:F3}، یعنی {1:F1} MHz پر 1 s کی بازگشت {3:F0} MHz پر تقریباً {2:F0} ms رہتی ہے۔
+Raggio iniziale della scia	لکیر کا ابتدائی رداس
+Raggio iniziale della scia r0: più è grande, più si perde alle frequenze alte.\nDoppio dell'ITU (prudente, di partenza): il radar CMOR a 17, 29 e 38 MHz trova r0 di 0,5-2 m tra 85 e 95 km, per lo più 1-1,5 m, con dispersione di un fattore due; circa il doppio delle misure precedenti (Stober et al. 2021).\nITU-R P.843: log10 r0 = 0,035 h − 3,45 (0,5 m a 90 km), valore medio.\nEscluso: senza il fattore del raggio iniziale.	لکیر کا ابتدائی رداس r0: جتنا بڑا ہو، اونچی فریکوئنسیوں پر اتنا زیادہ نقصان۔\nITU کا دگنا (محتاط، طے شدہ): CMOR ریڈار 17، 29 اور 38 MHz پر 85 اور 95 km کے درمیان r0 کو 0.5-2 m پاتا ہے، زیادہ تر 1-1.5 m، دو گنا پھیلاؤ کے ساتھ؛ پچھلی پیمائشوں کا تقریباً دگنا (Stober وغیرہ 2021)۔\nITU-R P.843: log10 r0 = 0.035 h − 3.45 (90 km پر 0.5 m)، اوسط قدر۔\nخارج: ابتدائی رداس کے عامل کے بغیر۔
+Raggio iniziale: con il valore medio ITU-R P.843 (r0 = {0:F2} m) il fattore varrebbe {1:F1} dB; scelta attuale {2}. Misure CMOR: r0 di 0,5-2 m tra 85 e 95 km, dispersione di un fattore due (Stober et al. 2021)	ابتدائی رداس: ITU-R P.843 کی اوسط قدر (r0 = {0:F2} m) کے ساتھ عامل {1:F1} dB ہوتا؛ موجودہ انتخاب {2}۔ CMOR پیمائشیں: 85 اور 95 km کے درمیان r0 0.5-2 m، دو گنا پھیلاؤ (Stober وغیرہ 2021)
+doppio dell'ITU (Stober 2021, prudente)	ITU کا دگنا (Stober 2021، محتاط)
+escluso	خارج
+osservata (HamSCI MSQP, NN4SA 2026)	مشاہدہ شدہ (HamSCI MSQP، NN4SA 2026)
+teorica λ² (McKinley, SM6FHZ; prudente)	نظریاتی λ² (McKinley، SM6FHZ؛ محتاط)
+ITU-R P.843	ITU-R P.843

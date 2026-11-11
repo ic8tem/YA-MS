@@ -108,6 +108,9 @@ TAG|SCELTA|剖面显示从台站看到的相同余迹，天线指向 DX 台：�
 H1|8. 工作频率与路径损耗
 H2|8.1 频段间规则
 TAG|FONTE|SM6FHZ [4] 的经验规则：反射的数量和强度按 λ³ 换算，持续时间按 λ² 换算。在前向散射中，持续时间还随 sec²φ 增大（τ = λ²·sec²φ / 16π²D，McKinley [8]；OH5IY [25]）：Collm 雷达以后向散射方式测量（φ = 0），因此在路径上持续时间须乘以中点处的 sec²φ（60° 时 ×4，70° 时 ×8.5，80° 时 ×33）。
+TAG|RILIEVO|实测数据（HamSCI，Meteor Scatter QSO Party [29]）：R. Suggs NN4NT 在 2026 年英仙座流星雨期间 NN4SA (EM64) 的 MSK144 录音（WSJT-X 的 4736 个 WAV 文件）中测量了 1298 个欠密回波的功率衰减常数。中位数：28.145 MHz 为 148 ms（41 个回波），50.260 MHz 为 78 ms（1198 个），144.150 MHz 为 53 ms（59 个）。若从 6 m 按 λ² 推算，应约为 245 ms 和 9.5 ms：在 2 m，ping 的持续时间是预测值的五倍以上。作者认为这可能是 2 m 回波的高度上限效应：在高频时可见的主要是低处余迹，那里扩散较慢。这是初步分析：仅一个接收站，不同距离未用 sec²φ 归一化，只包含强到足以被检测的回波。
+TAG|FONTE|Weitzen 和 Ralston [27]：衰减常数逐条余迹变化，服从指数分布，平均值 τ = λ²·sec²φ / (32π²D)（功率常数；16π² 用于振幅）。Xia、Li 和 Zheng [28] 给出 D 随高度的关系 D = 10^(0.067·h − 5.6) m²/s：1000 km 路径、余迹高 95 km 时，144 MHz 得 τ ≈ 47 ms，50 MHz 得 390 ms。144 MHz 的值接近实测中位数，50 MHz 的值高出五倍：高度每增加 15 km，D 增大十倍，因此随频率变化的可见余迹高度对持续时间的影响大于 λ²。
+TAG|SCELTA|程序在“几何与路径损耗”子页中提供“各波段之间的 ping 持续时间”选项。理论值（默认，保守）：λ²，得到最短的 ping。观测值：在 NN4SA 的三个中位数之间按对数刻度线性插值；28 MHz 以下延长 10–6 m 段，144 MHz 以上没有测量，重新使用 λ²。选择观测值时，Collm（36.2 MHz）1 s 的回波在 144 MHz 约持续 473 ms 而不是 63 ms，从 50 到 144 MHz ping 缩短到 1/1.5 而不是 1/8。
 TAG|RILIEVO|在 McKinley [8] 中，λ³ 是单条欠密余迹的功率，而非余迹的数量。在固定阈值且质量指数为 s 时，超过阈值的余迹数量按 λ 的 1.5·(s − 1) 次方换算，即 s = 2 时约为 λ^1.5（IZ5TEK [26]；OH5IY [25]）。程序保留 k = 3，即 SM6FHZ [4] 的经验规则，并明确说明：k = 3 时，Collm 的 1000 流星/小时在 144 MHz 时约为 16 次反射/小时，k = 1.5 时约为 127 次。GRAVES 雷达 143.050 MHz [13] 的 RMOB 观测者通常每小时记录 20 至 140 个回波；本台适用的 k 值可通过与 RMOB 比较得到（下一节）。
 TAG|FONTE|IARU 第 1 区规定的最大 ping 时长：50 MHz 时 1000 ms，70 MHz 时 500 ms，144 MHz 时 100 ms，432 MHz 时 13 ms [1]。
 H2|8.2 从雷达到业余频段
@@ -120,6 +123,8 @@ TAG|FONTE|参考值：GM8JBJ 引用的 G4BAO 计算结果 172–190 dB（引自 
 TAG|RILIEVO|当 q = 10¹⁴ 电子/m、余迹位于 89.5 km 且 β = 0 时，在 144 MHz 下 600 至 2100 km 之间的结果为 182–192 dB（1000 km 时为 185 dB）。GM8JBJ [9] 引用的 John Worsnop G4BAO 在其博士论文中计算的 172–190 dB 范围包含了这些数值。β = 90° 时，损耗在 600 km 处增加 10 dB，在 1000 km 处增加 13 dB，在 2100 km 处增加 16 dB：文章 [1] 中引用的 OH5IY 平均值 200 dB 介于两种情况之间。同样据 GM8JBJ，G4BAO 发现与路径平行的余迹约低 6 dB。
 TAG|RILIEVO|GM8JBJ 表 [9] 中的 182 dB 并不构成证实：该表未注明频率，其每段 86.4 dB 是 1 MHz 下 500 km 的自由空间损耗（缺少 20 log f 项：在 144 MHz 时为 129.6 dB），而各项之和 86.4 + 0 − 9 + 86.4 为 163.8 dB 而不是 182。该网页既未提及最小值，也未提及 144 MHz。
 TAG|RILIEVO|在平均回波高度 h = 124 − 17 log f [24] 处的初始半径：50 MHz 时 95 km 处 r0 = 0.76 m，144 MHz 时 87 km 处 0.40 m，432 MHz 时 79 km 处 0.21 m。在 1000 km 上，a1 在 50 MHz 时为 0.2 dB，144 MHz 时为 0.6 dB，432 MHz 时为 1.4 dB（600 km 时为 2.9 dB）。若采用 DJ5HG 的 102 km 固定高度，432 MHz 时约为 70 dB，即没有回波：因此使用该频率下的平均回波高度。
+TAG|RILIEVO|初始半径的不确定性：Stober 等 [30] 用 17.45、29.85 和 38.15 MHz 的 CMOR 雷达及全波散射模型，在 85 至 95 km 之间测得 r0 为 0.5–2 m，多数为 1–1.5 m，每个高度的离散约两倍；横向极化时，数值约为以往测量（Greenhow 和 Hall 1960；Jones 和 Campbell-Brown 2005）的两倍。只有约 5 % 的回波能用理想模型描述。ITU-R P.843 [24] 公式给出 90 km 处 0.5 m、95 km 处 0.75 m，即这些测量的下限。
+TAG|SCELTA|程序在“几何与路径损耗”子页中提供“余迹初始半径”选项：ITU 值的两倍（默认，保守，与 Stober 等的测量一致）、ITU-R P.843、不计入。r0 加倍时，以 dB 计的因子 a1 乘以 4：1000 km 路径上 50 MHz 为 0.8 dB，144 MHz 为 2.4 dB，432 MHz 为 5.6 dB（600 km 时 11.6 dB）。CMOR 测量是在较低频率和 85–95 km 高度上进行的：把它们用于回波来自约 79 km 的 432 MHz 属于外推。
 H1|9. 已知局限
 LI|模型只考虑欠密余迹。过密余迹（长 burst）和偶发流星背景不计入效率；偶发流星背景由雷达流量表示。
 LI|在效率计算中天线被视为各向同性；实际波瓣仅用于 Hot 检查。
@@ -152,3 +157,7 @@ SRC|23. P.A. Forsyth, C.O. Hines, E.L. Vogan - 同一标题，"Part II: Experime
 SRC|24. ITU-R P.843-1 - "Communication by meteor-burst propagation", 1997。
 SRC|25. I. Yrjölä OH5IY - "Meteors & Communication"，第 2 部分，MS-Soft 5.2 文档（2017）。
 SRC|26. R. Pardini IZ5TEK - "Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter", ARI Pisa, 2014。
+SRC|27. J.A. Weitzen, W.T. Ralston - "Meteor Scatter: An Overview", IEEE Transactions on Antennas and Propagation 36(12), 1813-1819, 1988.
+SRC|28. B. Xia, L. Li, Y. Zheng - "Modeling and Simulation of the Meteor Burst Channel", Telecommunications Science, 2016 (9), DOI 10.11959/j.issn.1000-0801.2016206 (English translation by R. Hipple, github.com/HamSCI/MSQP).
+SRC|29. R. Suggs NN4NT, HamSCI Meteor Scatter Working Group - "MSQP data analysis progress", 4 November 2026, underdense_decay, github.com/HamSCI/MSQP (NN4SA, 2026 Perseids, Zenodo).
+SRC|30. G. Stober, P. Brown, M. Campbell-Brown, R.J. Weryk - "Triple-frequency meteor radar full wave scattering: Measurements and comparison to theory", Astronomy & Astrophysics, 2021, arXiv:2108.07647.

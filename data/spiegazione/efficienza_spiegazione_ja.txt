@@ -108,6 +108,9 @@ TAG|SCELTA|断面図は、アンテナを相手局に向けた局から見た同
 H1|8. 運用周波数と損失
 H2|8.1 バンド間の規則
 TAG|FONTE|SM6FHZ [4] の実験則: 反射の数と強度は λ³ に、持続時間は λ² に比例します。前方散乱では持続時間は sec²φ とともにも増加します (τ = λ²·sec²φ / 16π²D、McKinley [8]; OH5IY [25]): Collm レーダーは後方散乱 (φ = 0) で測定するため、パス上では持続時間に中間点での sec²φ を掛ける必要があります (60° で ×4、70° で ×8.5、80° で ×33)。
+TAG|RILIEVO|実測（HamSCI、Meteor Scatter QSO Party [29]）：R. Suggs NN4NT は 2026 年ペルセウス座流星群の間の NN4SA (EM64) の MSK144 録音（WSJT-X の WAV ファイル 4736 個）で、1298 個のアンダーデンスエコーの電力減衰定数を測定した。中央値：28.145 MHz で 148 ms（41 エコー）、50.260 MHz で 78 ms（1198）、144.150 MHz で 53 ms（59）。6 m から λ² で計算すると約 245 ms と 9.5 ms になるはずで、2 m では ping が予測の 5 倍以上長く続く。著者はこれを 2 m でのエコーの高度上限効果と考えている：高い周波数では主に拡散の遅い低い流星痕だけが見える。これは予備的な解析である：受信局は 1 局のみ、異なる距離を sec²φ で正規化しておらず、検出できるほど強いエコーだけを含む。
+TAG|FONTE|Weitzen と Ralston [27]：減衰定数は流星痕ごとに指数分布で変わり、平均は τ = λ²·sec²φ / (32π²D)（電力の定数。16π² は振幅の場合）。Xia、Li、Zheng [28] は D を高度の関数として D = 10^(0.067·h − 5.6) m²/s と与える：1000 km、流星痕 95 km では 144 MHz で τ ≈ 47 ms、50 MHz で 390 ms となる。144 MHz の値は測定中央値に近く、50 MHz の値は 5 倍高い：D は高度 15 km ごとに 10 倍になるので、周波数とともに変わる見える流星痕の高度が、λ² よりも継続時間に大きく影響する。
+TAG|SCELTA|プログラムは「幾何と損失」サブタブで「バンド間の ping 継続時間」の選択を提供する。理論値（既定、慎重）：最も短い ping を与える λ²。観測値：NN4SA の 3 つの中央値の間を対数目盛で線形補間。28 MHz 未満では 10–6 m の区間を延長し、測定のない 144 MHz より上では再び λ² を使う。観測値を選ぶと、Collm（36.2 MHz）で 1 s のエコーは 144 MHz で 63 ms ではなく約 473 ms 続き、50 から 144 MHz で ping は 1/8 ではなく 1/1.5 に短くなる。
 TAG|RILIEVO|McKinley [8] では λ³ は単一のアンダーデンス流星痕の電力であり、流星痕の数ではありません。しきい値が一定で質量指数が s のとき、しきい値を超える流星痕の数は λ の 1.5·(s − 1) 乗に比例し、s = 2 ではおよそ λ^1.5 となります (IZ5TEK [26]; OH5IY [25])。プログラムは SM6FHZ [4] の実験則 k = 3 を採用し、そのことを明示します: k = 3 では Collm の 1000 流星/時は 144 MHz で約 16 反射/時となり、k = 1.5 では約 127 となります。143.050 MHz の GRAVES レーダーの RMOB 観測者 [13] は通常 20〜140 エコー/時を数えます。自局に適した k の値は RMOB との比較から求めます (次節)。
 TAG|FONTE|IARU 第1地域による ping の最大持続時間: 50 MHz で 1000 ms、70 MHz で 500 ms、144 MHz で 100 ms、432 MHz で 13 ms [1]。
 H2|8.2 レーダーからアマチュアバンドへ
@@ -120,6 +123,8 @@ TAG|FONTE|参考値: GM8JBJ が紹介した G4BAO の計算による 172–190 d
 TAG|RILIEVO|q = 10¹⁴ 電子/m、流星痕高度 89.5 km、β = 0 のとき、144 MHz で 600〜2100 km の間で 182–192 dB となる (1000 km で 185 dB)。GM8JBJ [9] が紹介する John Worsnop G4BAO の博士論文で計算された 172–190 dB の範囲はこれらの値を含む。β = 90° では損失が 600 km で 10 dB、1000 km で 13 dB、2100 km で 16 dB 増える: 記事 [1] で引用された OH5IY の平均 200 dB は両者の間にある。同じく GM8JBJ によれば、G4BAO はパスに沿った流星痕では約 6 dB 少ない値を得ている。
 TAG|RILIEVO|GM8JBJ の表 [9] の 182 dB は裏付けにはならない: 表には周波数が示されておらず、区間あたりの 86.4 dB は 1 MHz で 500 km の自由空間損失である (20 log f の項が欠けている: 144 MHz では 129.6 dB)。また各項目の合計 86.4 + 0 − 9 + 86.4 は 163.8 dB であり、182 ではない。このページは最小値についても 144 MHz についても述べていない。
 TAG|RILIEVO|エコーの平均高度 h = 124 − 17 log f [24] における初期半径: 50 MHz では 95 km で r0 = 0.76 m、144 MHz では 87 km で 0.40 m、432 MHz では 79 km で 0.21 m。1000 km では a1 は 50 MHz で 0.2 dB、144 MHz で 0.6 dB、432 MHz で 1.4 dB (600 km では 2.9 dB)。DJ5HG の固定高度 102 km では 432 MHz で約 70 dB、つまりエコーなしとなります: このため、その周波数でのエコー平均高度を用います。
+TAG|RILIEVO|初期半径の不確かさ：Stober ほか [30] は 17.45、29.85、38.15 MHz の CMOR レーダーと全波散乱モデルを用い、85～95 km で r0 を 0.5–2 m、多くは 1–1.5 m と求めた。各高度でのばらつきは 2 倍程度で、横偏波では従来の測定（Greenhow と Hall 1960、Jones と Campbell-Brown 2005）の約 2 倍の値になる。理想的なモデルで説明できるエコーは約 5 % にすぎない。ITU-R P.843 [24] の式は 90 km で 0.5 m、95 km で 0.75 m を与え、これらの測定の下限にあたる。
+TAG|SCELTA|プログラムは「幾何と損失」サブタブで「流星痕の初期半径」の選択を提供する：ITU の 2 倍（既定、慎重、Stober ほかの測定と同様）、ITU-R P.843、除外。r0 を 2 倍にすると dB で表した係数 a1 は 4 倍になる：1000 km で 50 MHz は 0.8 dB、144 MHz は 2.4 dB、432 MHz は 5.6 dB（600 km で 11.6 dB）。CMOR の測定はより低い周波数と 85–95 km の高度のもので、エコーが約 79 km から来る 432 MHz に使うのは外挿である。
 H1|9. 既知の制限
 LI|モデルはアンダーデンス流星痕のみを考慮します。オーバーデンス流星痕 (長いバースト) と散在流星のバックグラウンドは効率に含まれません。散在流星のバックグラウンドはレーダーフラックスで表されます。
 LI|効率の計算ではアンテナは等方性とみなします。実際のローブは Hot の確認にのみ用います。
@@ -152,3 +157,7 @@ SRC|23. P.A. Forsyth, C.O. Hines, E.L. Vogan - 同じ題名、"Part II: Experime
 SRC|24. ITU-R P.843-1 - "Communication by meteor-burst propagation", 1997.
 SRC|25. I. Yrjölä OH5IY - "Meteors & Communication"、第2部、MS-Soft 5.2 のドキュメント (2017)。
 SRC|26. R. Pardini IZ5TEK - "Il meteor-scatter e i collegamenti radioamatoriali via meteor-scatter", ARI Pisa, 2014.
+SRC|27. J.A. Weitzen, W.T. Ralston - "Meteor Scatter: An Overview", IEEE Transactions on Antennas and Propagation 36(12), 1813-1819, 1988.
+SRC|28. B. Xia, L. Li, Y. Zheng - "Modeling and Simulation of the Meteor Burst Channel", Telecommunications Science, 2016 (9), DOI 10.11959/j.issn.1000-0801.2016206 (English translation by R. Hipple, github.com/HamSCI/MSQP).
+SRC|29. R. Suggs NN4NT, HamSCI Meteor Scatter Working Group - "MSQP data analysis progress", 4 November 2026, underdense_decay, github.com/HamSCI/MSQP (NN4SA, 2026 Perseids, Zenodo).
+SRC|30. G. Stober, P. Brown, M. Campbell-Brown, R.J. Weryk - "Triple-frequency meteor radar full wave scattering: Measurements and comparison to theory", Astronomy & Astrophysics, 2021, arXiv:2108.07647.

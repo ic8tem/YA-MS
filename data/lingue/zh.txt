@@ -640,3 +640,16 @@ zona PREV	PREV 区域
 FONTE	来源
 RILIEVO	核查
 SCELTA	选择
+(sopra 144 MHz nessuna misura: λ²)	（144 MHz 以上无测量：λ²）
+Come cambia la durata dei ping da una banda all'altra.\nTeorica (prudente, di partenza): durata proporzionale a λ² (McKinley 1961; regola di SM6FHZ): da 50 a 144 MHz i ping si accorciano di 8 volte.\nOsservata: mediane misurate da NN4SA (EM64) durante le Perseidi 2026 nel MSQP di HamSCI (R. Suggs NN4NT): 148 ms a 28 MHz, 78 ms a 50 MHz, 53 ms a 144 MHz; da 50 a 144 MHz i ping si accorciano solo di 1,5 volte. Una sola stazione ricevente, analisi preliminare; sopra 144 MHz non ci sono misure e si usa λ².	ping 的持续时间如何随波段变化。\n理论值（保守，默认）：持续时间与 λ² 成正比（McKinley 1961；SM6FHZ 规则）：从 50 到 144 MHz，ping 缩短到 1/8。\n观测值：NN4SA (EM64) 在 2026 年英仙座流星雨期间于 HamSCI 的 MSQP 中测得的中位数（R. Suggs NN4NT）：28 MHz 为 148 ms，50 MHz 为 78 ms，144 MHz 为 53 ms；从 50 到 144 MHz，ping 只缩短到 1/1.5。仅一个接收站，初步分析；144 MHz 以上没有测量，使用 λ²。
+Durata dei ping tra le bande	各波段之间的 ping 持续时间
+Durata osservata (HamSCI MSQP, NN4SA, Perseidi 2026; mediane 148 / 78 / 53 ms a 28 / 50 / 144 MHz): circa {0:F0} ms a {1:F0} MHz, x {2:F2} rispetto a 144 MHz{3}	观测持续时间（HamSCI MSQP，NN4SA，2026 年英仙座流星雨；28 / 50 / 144 MHz 的中位数 148 / 78 / 53 ms）：{1:F0} MHz 约 {0:F0} ms，相对 144 MHz 为 x {2:F2}{3}
+Durata secondo le misure HamSCI MSQP (NN4SA, Perseidi 2026) invece di λ²: x {0:F3}, quindi un eco di 1 s a {1:F1} MHz dura circa {2:F0} ms a {3:F0} MHz.	按 HamSCI MSQP 的测量（NN4SA，2026 年英仙座流星雨）代替 λ² 的持续时间：x {0:F3}，即 {1:F1} MHz 上 1 s 的回波在 {3:F0} MHz 约持续 {2:F0} ms。
+Raggio iniziale della scia	余迹初始半径
+Raggio iniziale della scia r0: più è grande, più si perde alle frequenze alte.\nDoppio dell'ITU (prudente, di partenza): il radar CMOR a 17, 29 e 38 MHz trova r0 di 0,5-2 m tra 85 e 95 km, per lo più 1-1,5 m, con dispersione di un fattore due; circa il doppio delle misure precedenti (Stober et al. 2021).\nITU-R P.843: log10 r0 = 0,035 h − 3,45 (0,5 m a 90 km), valore medio.\nEscluso: senza il fattore del raggio iniziale.	余迹初始半径 r0：越大，高频损耗越多。\nITU 值的两倍（保守，默认）：CMOR 雷达在 17、29 和 38 MHz 测得 85 至 95 km 之间 r0 为 0.5-2 m，多数为 1-1.5 m，离散约两倍；约为以往测量的两倍（Stober 等 2021）。\nITU-R P.843：log10 r0 = 0.035 h − 3.45（90 km 处 0.5 m），平均值。\n不计入：不含初始半径因子。
+Raggio iniziale: con il valore medio ITU-R P.843 (r0 = {0:F2} m) il fattore varrebbe {1:F1} dB; scelta attuale {2}. Misure CMOR: r0 di 0,5-2 m tra 85 e 95 km, dispersione di un fattore due (Stober et al. 2021)	初始半径：若用 ITU-R P.843 的平均值（r0 = {0:F2} m），该因子为 {1:F1} dB；当前选择 {2}。CMOR 测量：85 至 95 km 之间 r0 为 0.5-2 m，离散约两倍（Stober 等 2021）
+doppio dell'ITU (Stober 2021, prudente)	ITU 值的两倍（Stober 2021，保守）
+escluso	不计入
+osservata (HamSCI MSQP, NN4SA 2026)	观测值（HamSCI MSQP，NN4SA 2026）
+teorica λ² (McKinley, SM6FHZ; prudente)	理论值 λ²（McKinley，SM6FHZ；保守）
+ITU-R P.843	ITU-R P.843

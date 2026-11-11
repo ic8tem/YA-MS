@@ -396,7 +396,14 @@ namespace YAMS
         public static double ItuMeanHeightKm(double freqMHz) { return 124 - 17 * Math.Log10(freqMHz); }
 
         // ITU-R P.843 eq. 4: raggio iniziale della scia (m) dalla quota (km): log10 r0 = 0,035 h - 3,45
-        public static double InitialRadiusM(double hKm) { return Math.Pow(10, 0.035 * hKm - 3.45); }
+        public static double InitialRadiusItuM(double hKm) { return Math.Pow(10, 0.035 * hKm - 3.45); }
+
+        // moltiplicatore del raggio iniziale scelto dall'utente: 2 = Stober et al. 2021 (CMOR, 85-95 km: r0 di 0,5-2 m,
+        // per lo piu' 1-1,5 m, circa il doppio delle misure precedenti; valore prudente, di partenza), 1 = ITU-R P.843, 0 = escluso
+        public static double InitialRadiusFactor = 2.0;
+
+        // raggio iniziale usato nel calcolo (m)
+        public static double InitialRadiusM(double hKm) { return InitialRadiusFactor * InitialRadiusItuM(hKm); }
 
         // perdita (dB, positiva) dovuta al raggio iniziale: -10 log10 a1, a1 = exp[-8 pi^2 r0^2 cos^2(phi) / lambda^2]
         public static double InitialRadiusLossDb(double hKm, double freqMHz, double phiDeg)
@@ -455,8 +462,27 @@ namespace YAMS
             return Math.Pow(fromMHz / toMHz, exponent);
         }
 
+        // durata dei ping: false = teorica, lambda^2 (McKinley; SM6FHZ), valore prudente di partenza;
+        // true = osservata: mediane delle costanti di decadimento (potenza) degli echi sottodensi misurate da NN4SA (EM64)
+        // durante le Perseidi 2026 (HamSCI MSQP, R. Suggs NN4NT, gruppo di lavoro del 4/11/2026): 148 ms a 28,145 MHz (41 echi),
+        // 78 ms a 50,260 MHz (1198), 53 ms a 144,150 MHz (59). Interpolazione lineare in scala log-log; sotto 28 MHz si prolunga
+        // il tratto 10-6 m, sopra 144 MHz (nessuna misura) si torna a lambda^2, che da' durate piu' brevi (prudente).
+        public static bool DurationObserved = false;
+        static readonly double[] ObsF = { 28.145, 50.260, 144.150 };
+        static readonly double[] ObsMs = { 148, 78, 53 };
+
+        // durata tipica osservata (ms) alla frequenza f secondo le misure MSQP
+        public static double ObservedDurationMs(double fMHz)
+        {
+            if (fMHz >= ObsF[2]) return ObsMs[2] * Math.Pow(ObsF[2] / fMHz, 2.0);
+            int i = fMHz < ObsF[1] ? 0 : 1;
+            double p = Math.Log(ObsMs[i + 1] / ObsMs[i]) / Math.Log(ObsF[i + 1] / ObsF[i]);
+            return ObsMs[i] * Math.Pow(fMHz / ObsF[i], p);
+        }
+
         public static double DurationScale(double fromMHz, double toMHz)
         {
+            if (DurationObserved) return ObservedDurationMs(toMHz) / ObservedDurationMs(fromMHz);
             return Math.Pow(fromMHz / toMHz, 2.0);
         }
 

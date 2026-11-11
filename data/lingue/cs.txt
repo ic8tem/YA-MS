@@ -641,3 +641,16 @@ zona PREV	zóna PREV
 FONTE	ZDROJ
 RILIEVO	OVĚŘENÍ
 SCELTA	VOLBA
+(sopra 144 MHz nessuna misura: λ²)	(nad 144 MHz žádná měření: λ²)
+Come cambia la durata dei ping da una banda all'altra.\nTeorica (prudente, di partenza): durata proporzionale a λ² (McKinley 1961; regola di SM6FHZ): da 50 a 144 MHz i ping si accorciano di 8 volte.\nOsservata: mediane misurate da NN4SA (EM64) durante le Perseidi 2026 nel MSQP di HamSCI (R. Suggs NN4NT): 148 ms a 28 MHz, 78 ms a 50 MHz, 53 ms a 144 MHz; da 50 a 144 MHz i ping si accorciano solo di 1,5 volte. Una sola stazione ricevente, analisi preliminare; sopra 144 MHz non ci sono misure e si usa λ².	Jak se délka pingů mění z jednoho pásma do druhého.\nTeoretická (opatrná, výchozí): délka úměrná λ² (McKinley 1961; pravidlo SM6FHZ): z 50 na 144 MHz se pingy zkrátí 8krát.\nPozorovaná: mediány naměřené stanicí NN4SA (EM64) během Perseid 2026 v rámci MSQP HamSCI (R. Suggs NN4NT): 148 ms na 28 MHz, 78 ms na 50 MHz, 53 ms na 144 MHz; z 50 na 144 MHz se pingy zkrátí jen 1,5krát. Jediná přijímací stanice, předběžná analýza; nad 144 MHz nejsou měření a použije se λ².
+Durata dei ping tra le bande	Délka pingů mezi pásmy
+Durata osservata (HamSCI MSQP, NN4SA, Perseidi 2026; mediane 148 / 78 / 53 ms a 28 / 50 / 144 MHz): circa {0:F0} ms a {1:F0} MHz, x {2:F2} rispetto a 144 MHz{3}	Pozorovaná délka (HamSCI MSQP, NN4SA, Perseidy 2026; mediány 148 / 78 / 53 ms na 28 / 50 / 144 MHz): asi {0:F0} ms na {1:F0} MHz, x {2:F2} vůči 144 MHz{3}
+Durata secondo le misure HamSCI MSQP (NN4SA, Perseidi 2026) invece di λ²: x {0:F3}, quindi un eco di 1 s a {1:F1} MHz dura circa {2:F0} ms a {3:F0} MHz.	Délka podle měření HamSCI MSQP (NN4SA, Perseidy 2026) místo λ²: x {0:F3}, takže echo 1 s na {1:F1} MHz trvá asi {2:F0} ms na {3:F0} MHz.
+Raggio iniziale della scia	Počáteční poloměr stopy
+Raggio iniziale della scia r0: più è grande, più si perde alle frequenze alte.\nDoppio dell'ITU (prudente, di partenza): il radar CMOR a 17, 29 e 38 MHz trova r0 di 0,5-2 m tra 85 e 95 km, per lo più 1-1,5 m, con dispersione di un fattore due; circa il doppio delle misure precedenti (Stober et al. 2021).\nITU-R P.843: log10 r0 = 0,035 h − 3,45 (0,5 m a 90 km), valore medio.\nEscluso: senza il fattore del raggio iniziale.	Počáteční poloměr stopy r0: čím je větší, tím víc se ztrácí na vysokých kmitočtech.\nDvojnásobek ITU (opatrná, výchozí): radar CMOR na 17, 29 a 38 MHz nachází r0 0,5-2 m mezi 85 a 95 km, většinou 1-1,5 m, s rozptylem dvojnásobku; asi dvojnásobek dřívějších měření (Stober a kol. 2021).\nITU-R P.843: log10 r0 = 0,035 h − 3,45 (0,5 m ve 90 km), střední hodnota.\nVyloučeno: bez činitele počátečního poloměru.
+Raggio iniziale: con il valore medio ITU-R P.843 (r0 = {0:F2} m) il fattore varrebbe {1:F1} dB; scelta attuale {2}. Misure CMOR: r0 di 0,5-2 m tra 85 e 95 km, dispersione di un fattore due (Stober et al. 2021)	Počáteční poloměr: se střední hodnotou ITU-R P.843 (r0 = {0:F2} m) by činitel byl {1:F1} dB; aktuální volba {2}. Měření CMOR: r0 0,5-2 m mezi 85 a 95 km, rozptyl dvojnásobku (Stober a kol. 2021)
+doppio dell'ITU (Stober 2021, prudente)	dvojnásobek ITU (Stober 2021, opatrná)
+escluso	vyloučeno
+osservata (HamSCI MSQP, NN4SA 2026)	pozorovaná (HamSCI MSQP, NN4SA 2026)
+teorica λ² (McKinley, SM6FHZ; prudente)	teoretická λ² (McKinley, SM6FHZ; opatrná)
+ITU-R P.843	ITU-R P.843

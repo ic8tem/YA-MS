@@ -717,6 +717,43 @@ namespace YAMS
             numGain.ValueChanged += (s, e) => UpdateGeometry();
             numSens.ValueChanged += (s, e) => UpdateGeometry();
             numQ.ValueChanged += (s, e) => UpdateGeometry();
+            // scelte con fonti: raggio iniziale della scia (Stober et al. 2021 / ITU-R P.843) e durata dei ping (lambda^2 / misure HamSCI MSQP)
+            cmbR0 = new ComboBox
+            {
+                ItemsSource = new List<string> { Lang.T("doppio dell'ITU (Stober 2021, prudente)"), Lang.T("ITU-R P.843"), Lang.T("escluso") },
+                Margin = new Thickness(2, 3), VerticalAlignment = VerticalAlignment.Center
+            };
+            cmbR0.SelectedIndex = Math.Max(0, Math.Min(2, (int)Math.Round(cfg.GetD("raggio_iniziale", 0))));
+            MsGeometry.InitialRadiusFactor = new double[] { 2, 1, 0 }[cmbR0.SelectedIndex];
+            ToolTip.SetTip(cmbR0, Lang.T("Raggio iniziale della scia r0: più è grande, più si perde alle frequenze alte.\n" +
+                "Doppio dell'ITU (prudente, di partenza): il radar CMOR a 17, 29 e 38 MHz trova r0 di 0,5-2 m tra 85 e 95 km, per lo più 1-1,5 m, con dispersione di un fattore due; circa il doppio delle misure precedenti (Stober et al. 2021).\n" +
+                "ITU-R P.843: log10 r0 = 0,035 h − 3,45 (0,5 m a 90 km), valore medio.\n" +
+                "Escluso: senza il fattore del raggio iniziale."));
+            cmbR0.SelectionChanged += (s, e) =>
+            {
+                MsGeometry.InitialRadiusFactor = new double[] { 2, 1, 0 }[Math.Max(0, cmbR0.SelectedIndex)];
+                cfg.Set("raggio_iniziale", (double)Math.Max(0, cmbR0.SelectedIndex));
+                UpdateGeometry();
+            };
+            cmbDur = new ComboBox
+            {
+                ItemsSource = new List<string> { Lang.T("teorica λ² (McKinley, SM6FHZ; prudente)"), Lang.T("osservata (HamSCI MSQP, NN4SA 2026)") },
+                Margin = new Thickness(2, 3), VerticalAlignment = VerticalAlignment.Center
+            };
+            cmbDur.SelectedIndex = cfg.GetD("durata_ping", 0) >= 0.5 ? 1 : 0;
+            MsGeometry.DurationObserved = cmbDur.SelectedIndex == 1;
+            ToolTip.SetTip(cmbDur, Lang.T("Come cambia la durata dei ping da una banda all'altra.\n" +
+                "Teorica (prudente, di partenza): durata proporzionale a λ² (McKinley 1961; regola di SM6FHZ): da 50 a 144 MHz i ping si accorciano di 8 volte.\n" +
+                "Osservata: mediane misurate da NN4SA (EM64) durante le Perseidi 2026 nel MSQP di HamSCI (R. Suggs NN4NT): 148 ms a 28 MHz, 78 ms a 50 MHz, 53 ms a 144 MHz; da 50 a 144 MHz i ping si accorciano solo di 1,5 volte. " +
+                "Una sola stazione ricevente, analisi preliminare; sopra 144 MHz non ci sono misure e si usa λ²."));
+            cmbDur.SelectionChanged += (s, e) =>
+            {
+                MsGeometry.DurationObserved = cmbDur.SelectedIndex == 1;
+                cfg.Set("durata_ping", (double)Math.Max(0, cmbDur.SelectedIndex));
+                UpdateGeometry();
+                UpdatePrevTab();
+            };
+            DockTop(p4, Row(L(Lang.T("Raggio iniziale della scia")), cmbR0, L(Lang.T("Durata dei ping tra le bande")), cmbDur));
             Grid sg = new Grid { ColumnDefinitions = new ColumnDefinitions("55*,45*") };
             txtGeo = new SelectableTextBlock { FontFamily = Pal.Mono, FontSize = 12.5, Foreground = Pal.B(Pal.CodeText), TextWrapping = TextWrapping.Wrap };
             ScrollViewer geoScroll = new ScrollViewer
@@ -1285,6 +1322,7 @@ namespace YAMS
         Border boxLowAlong; TextBlock lblLowAlong;
         Border boxHorizon; TextBlock lblHorizon;
         RadioButton rbProfPrud, rbProfDj, rbProfPers;
+        ComboBox cmbR0, cmbDur;
         CheckBox chkBeta;
         bool applyingProfile;
         public const double Dj5hgLayerKm = 102.0;
@@ -1565,12 +1603,21 @@ namespace YAMS
                 lossMid, rx, sens, rx - sens));
             line(Lang.F("Nell'attenuazione (β = 90°, prudente): raggio iniziale della scia {0:F1} dB (r0 = {1:F2} m alla quota media ITU di {2:F1} km per {3:F0} MHz). Con la scia nel piano della tratta (β = 0°, caso migliore) l'attenuazione scende a {4:F1} dB ({5:F1} dB) e il margine sale a {6:+0.0;-0.0} dB",
                 lossR0, MsGeometry.InitialRadiusM(hItu), hItu, f, loss0, loss0 - lossMid, eirp - loss0 + gain - sens));
+            if (MsGeometry.InitialRadiusFactor != 1)
+            {
+                double rItu = MsGeometry.InitialRadiusItuM(hItu), lItu = 10 * Math.Log10(Math.E) * 8 * Math.PI * Math.PI * rItu * rItu * Math.Pow(Math.Cos(Math.Min(phiMid, 85) * Astro.D2R), 2) / Math.Pow(299.792458 / f, 2);
+                line(Lang.F("Raggio iniziale: con il valore medio ITU-R P.843 (r0 = {0:F2} m) il fattore varrebbe {1:F1} dB; scelta attuale {2}. Misure CMOR: r0 di 0,5-2 m tra 85 e 95 km, dispersione di un fattore due (Stober et al. 2021)",
+                    rItu, lItu, MsGeometry.InitialRadiusFactor == 2 ? Lang.T("doppio dell'ITU (Stober 2021, prudente)") : Lang.T("escluso")));
+            }
             line(Lang.F("Con l'attenuazione media di OH5IY (200 dB a 144 MHz, scalata con λ³: {0:F1} dB a {1:F0} MHz) il margine sarebbe {2:+0.0;-0.0} dB",
                 200 + 30 * Math.Log10(f / 144.0), f, eirp - (200 + 30 * Math.Log10(f / 144.0)) + gain - sens));
             sb.Append("\n");
             head(Lang.T("REGOLE SPERIMENTALI TRA LE BANDE (SM6FHZ, VUSHF 2025)"));
             line(Lang.F("Rispetto a 144 MHz: numero/intensità x {0:F3} ({1:+0.0;-0.0} dB), durata x {2:F2}. Ping massimo IARU a {3:F0} MHz: {4:F0} ms",
-                MsGeometry.CountScale(144, f, 3), 10 * Math.Log10(MsGeometry.CountScale(144, f, 3)), MsGeometry.DurationScale(144, f), f, MsGeometry.PingMaxMs(f)));
+                MsGeometry.CountScale(144, f, 3), 10 * Math.Log10(MsGeometry.CountScale(144, f, 3)), Math.Pow(144 / f, 2), f, MsGeometry.PingMaxMs(f)));
+            line(Lang.F("Durata osservata (HamSCI MSQP, NN4SA, Perseidi 2026; mediane 148 / 78 / 53 ms a 28 / 50 / 144 MHz): circa {0:F0} ms a {1:F0} MHz, x {2:F2} rispetto a 144 MHz{3}",
+                MsGeometry.ObservedDurationMs(f), f, MsGeometry.ObservedDurationMs(f) / MsGeometry.ObservedDurationMs(144),
+                f > 144.15 ? " " + Lang.T("(sopra 144 MHz nessuna misura: λ²)") : ""));
             StyleReport(txtGeo, sb.ToString(), heads);
 
             // curve dell'elevazione (come Immagine 8 dell'articolo)
@@ -1891,6 +1938,10 @@ Lang.T("CALCOLO E TEORIA DELL'EFFICIENZA") + "\n" +
 "  " + Lang.T("D.W.R. McKinley - Meteor Science and Engineering, 1961 (equazione delle scie sottodense)") + "\n" +
 "  " + Lang.T("John GM8JBJ - Meteor scatter path loss, hamradio.engineering (da Kaiser & Closs 1952; cita i calcoli di John Worsnop G4BAO, 172-190 dB)") + "\n" +
 "  " + Lang.T("Raccomandazione ITU-R P.843-1 (1997): angolo beta tra scia e piano della tratta, raggio iniziale della scia, quota media in funzione della frequenza") + "\n" +
+"  G. Stober, P. Brown, M. Campbell-Brown, R.J. Weryk - \"Triple-frequency meteor radar full wave scattering\", A&A 2021, arXiv:2108.07647\n" +
+"  J.A. Weitzen, W.T. Ralston - \"Meteor Scatter: An Overview\", IEEE Trans. Antennas Propag. 36(12), 1813-1819, 1988\n" +
+"  B. Xia, L. Li, Y. Zheng - \"Modeling and Simulation of the Meteor Burst Channel\", Telecommunications Science 2016 (9)\n" +
+"  Rob Suggs NN4NT, HamSCI Meteor Scatter Working Group - MSQP, NN4SA 2026 Perseids, 4 Nov 2026, github.com/HamSCI/MSQP\n" +
 "  " + Lang.T("Shelby W8WN - qsl.net/w8wn/hscw (elevazione e offset ottimali)") + "\n" +
 "  " + Lang.T("Klaus von der Heide DJ5HG - QTFGUI (aurora, FAI e meteor scatter) e manuale \"QTFGUI Help\" 2007: legge di diffusione a cono,\n" +
 "    caso di prova Amburgo - Barcellona nelle Quadrantidi, usato per verificare il modello") + "\n" +

@@ -1,0 +1,36 @@
+# YA-MS
+
+[Italiano](README.md) · [English](README.en.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · **Español** · [Português](README.pt.md)
+
+**YA-MS** calcula, en directo y como previsión, la eficiencia de las lluvias de meteoros para los enlaces de radioaficionado por **meteor scatter** (50–432 MHz): dónde están los radiantes, qué hot spots usar, cuándo rinde más el trayecto y cuánta señal llega.
+Por Costantino Cerrotta IC8TEM. Gratuito, para Windows, Linux, Raspberry Pi y Mac. Interfaz, wiki y manuales en 36 idiomas.
+
+![Cálculo de previsión: bóveda celeste, plano del trayecto y hot spots](docs/screenshots/readme/es-1.png)
+
+## Qué hace
+- **Cálculo de previsión**: bóveda celeste con los radiantes, plano del trayecto con Hot A / Hot B, lóbulo de antena, zonas PREV y mejores rumbos; una franja resumen con la eficiencia en el momento elegido (fecha y horas de −12 a +36 h).
+- **Cálculo de la eficiencia** hora por hora para cada lluvia, comparado con la fórmula de DH9GCD, con los ajustes listos *Prudente* (por defecto) y *Como DJ5HG*.
+- **Geometría y atenuación**: atenuación del trayecto (McKinley, ITU-R P.843) y balance del enlace con valores prudentes.
+- **Datos en directo**: flujo de los radares de meteoros SKiYMET (Collm, Sodankylä) con una estimación a 50/144/432 MHz, el radar GRAVES, recogida de los spots MS del DX cluster, Reverse Beacon Network y PSKReporter (también MQTT), tráfico en directo en el mapa.
+- **Documentos técnicos**: fuentes con comparaciones, manual de cálculos y explicación de la eficiencia con todas las ecuaciones.
+
+![Cálculo de la eficiencia hora por hora](docs/screenshots/readme/es-2.png)
+
+![Flujo de los radares de meteoros](docs/screenshots/readme/es-3.png)
+
+## Instalación
+Desde la página **[Releases](https://github.com/ic8tem/YA-MS/releases/latest)**:
+- **Windows**: `...-windows-x64-setup.exe` (32 bits: `...-windows-x86-setup.exe`) o el zip portátil;
+- **Linux**: `ya-ms_..._amd64.deb` o `...-linux-x64.tar.gz`;
+- **Raspberry Pi**: `ya-ms_..._arm64.deb` / `_armhf.deb` o los tar.gz de 64 y 32 bits;
+- **Mac**: `...-mac-apple-silicon.dmg` o `...-mac-intel.dmg` (o el app.zip).
+
+Los datos se quedan en la carpeta `data` junto al programa. Instrucciones completas en el **[wiki](https://github.com/ic8tem/YA-MS/wiki/Home-es)** y en `LEGGIMI.txt`.
+
+## Fuente principal
+C. Cerrotta IC8TEM, G. Sartori IV3GTH, «METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese» (Meteor scatter: cómo comunicar con toda Europa en VHF todo el año sin grandes medios). Las demás fuentes se enumeran en el programa y en el wiki.
+
+## Compilación
+Los instaladores los genera GitHub Actions (`.github/workflows/build.yml`) en cada actualización de la rama `release` (versión tomada del archivo `VERSION`). En local: `dotnet publish YA-MS.csproj -c Release -r <rid> --self-contained true`. Los documentos en todos los idiomas se regeneran con `tools/build_documenti.sh`.
+
+Los datos de radar pertenecen a sus propietarios (Universidad de Leipzig / IAP Kühlungsborn, Sodankylä Geophysical Observatory).

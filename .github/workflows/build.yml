@@ -1,5 +1,4 @@
-# Sonda: stesso calcolo (JN70CN83 -> JO76QP, 14/12/2026) con le versioni 1.6.0, 1.7.0 e 1.8.0 pubblicate,
-# con l'elevazione del lobo a 3,0 e a 0,0 gradi; fotografie delle linguette sul ramo prova-<versione>-lobo<n>.
+# Sonda: il codice di main (lobo come diagramma) sulla tratta JN70CN83 -> JO76QP del 14/12/2026, lobo 3 gradi
 name: sonda
 
 on:
@@ -12,39 +11,27 @@ permissions:
 jobs:
   prova:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        ver: [ '1.7.0', '1.8.0' ]
-        lobo: [ '0' ]
-        beta: [ '0' ]
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Compila
+        run: dotnet publish YA-MS.csproj -c Release -r linux-x64 --self-contained true -p:DebugType=none -o app
       - name: Programmi
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq faketime xvfb > /dev/null
-      - name: Scarica la versione
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq xvfb > /dev/null
+      - name: Fotografie al 14/12/2026 12:00 UTC
         run: |
-          gh release download v${{ matrix.ver }} -R ${{ github.repository }} -p "YA-MS-${{ matrix.ver }}-linux-x64.tar.gz"
-          mkdir app && tar -xzf YA-MS-*.tar.gz -C app
-          D=$(dirname $(find app -name YA-MS -type f | head -1)); echo "D=$D" >> $GITHUB_ENV; ls $D | head
-      - name: Impostazioni e fotografie al 14/12/2026 12:00 UTC
-        run: |
-          mkdir -p $D/data
-          printf 'mio_locator=JN70CN83\nmia_quota_m=62\ndx_locator=JO76QP\ndx_quota_m=50\nquota_da_radar=0\nquota_scie_km=88.5\nelevazione_lobo_gradi=${{ matrix.lobo }}\nboom_m=9.2\nlingua=it\ntema=chiaro\nangolo_beta=${{ matrix.beta }}\nlunghezza_scie=0\n' > $D/data/config.ini
-          cat $D/data/config.ini
-          chmod +x $D/YA-MS
+          printf 'mio_locator=JN70CN83\nmia_quota_m=62\ndx_locator=JO76QP\ndx_quota_m=50\nquota_da_radar=0\nquota_scie_km=88.5\nelevazione_lobo_gradi=3\nboom_m=9.2\nlingua=it\ntema=chiaro\n' > app/data/config.ini
           sudo timedatectl set-ntp false || true
-          sudo date -u -s "2026-12-14 12:00:00"; date -u
-          TZ=UTC timeout 300 xvfb-run -a -s "-screen 0 1900x1000x24" $D/YA-MS --screenshot "$PWD/shots" --dx JO76QP --ore 0 || true
-          ls -la shots || true
-          cp $D/data/config.ini shots/config_dopo.ini 2>/dev/null || true
-          cp $D/data/errore_avvio.txt shots/ 2>/dev/null || true
+          sudo date -u -s "2026-12-14 12:00:00"
+          timeout 300 xvfb-run -a -s "-screen 0 1900x1000x24" ./app/YA-MS --screenshot "$PWD/shots" --dx JO76QP --ore 0 || true
+          printf 'mio_locator=JN70CN83\nmia_quota_m=62\ndx_locator=JO76QP\ndx_quota_m=50\nquota_da_radar=0\nquota_scie_km=88.5\nelevazione_lobo_gradi=3\nboom_m=9.2\nlingua=it\ntema=chiaro\nlobo_diagramma=0\n' > app/data/config.ini
+          timeout 300 xvfb-run -a -s "-screen 0 1900x1000x24" ./app/YA-MS --screenshot "$PWD/shots/netto" --dx JO76QP --ore 0 || true
+          ls shots
       - name: Pubblica
         run: |
-          [ -d shots ] || exit 0
-          cd shots
-          git init -q -b r
-          git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add -A && git commit -q -m "prova ${{ matrix.ver }} lobo ${{ matrix.lobo }}"
-          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" r:prova-${{ matrix.ver }}-lobo${{ matrix.lobo }}-beta${{ matrix.beta }}
+          cd shots && git init -q -b r && git config user.name "github-actions" && git config user.email "actions@github.com"
+          git add -A && git commit -q -m "prova main" && git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" r:prova-main

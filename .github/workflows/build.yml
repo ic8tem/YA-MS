@@ -15,8 +15,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ver: [ '1.6.0', '1.7.0', '1.8.0' ]
-        lobo: [ '3', '0' ]
+        ver: [ '1.7.0', '1.8.0' ]
+        lobo: [ '0' ]
+        beta: [ '0' ]
     steps:
       - name: Programmi
         run: sudo apt-get update -qq && sudo apt-get install -y -qq faketime xvfb > /dev/null
@@ -30,7 +31,7 @@ jobs:
       - name: Impostazioni e fotografie al 14/12/2026 12:00 UTC
         run: |
           mkdir -p $D/data
-          printf 'mio_locator=JN70CN83\nmia_quota_m=62\ndx_locator=JO76QP\ndx_quota_m=50\nquota_da_radar=0\nquota_scie_km=88.5\nelevazione_lobo_gradi=${{ matrix.lobo }}\nboom_m=9.2\nlingua=it\ntema=chiaro\n' > $D/data/config.ini
+          printf 'mio_locator=JN70CN83\nmia_quota_m=62\ndx_locator=JO76QP\ndx_quota_m=50\nquota_da_radar=0\nquota_scie_km=88.5\nelevazione_lobo_gradi=${{ matrix.lobo }}\nboom_m=9.2\nlingua=it\ntema=chiaro\nangolo_beta=${{ matrix.beta }}\nlunghezza_scie=0\n' > $D/data/config.ini
           cat $D/data/config.ini
           chmod +x $D/YA-MS
           sudo timedatectl set-ntp false || true
@@ -46,4 +47,4 @@ jobs:
           git init -q -b r
           git config user.name "github-actions"; git config user.email "actions@github.com"
           git add -A && git commit -q -m "prova ${{ matrix.ver }} lobo ${{ matrix.lobo }}"
-          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" r:prova-${{ matrix.ver }}-lobo${{ matrix.lobo }}
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" r:prova-${{ matrix.ver }}-lobo${{ matrix.lobo }}-beta${{ matrix.beta }}

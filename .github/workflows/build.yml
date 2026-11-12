@@ -83,6 +83,9 @@ jobs:
           bash installer/make-deb.sh linux-x64 "$VER" publish/linux-x64 dist
           sudo apt-get install -y -qq rpm >/dev/null
           bash installer/make-rpm.sh linux-x64 "$VER" dist/ya-ms_${VER}_amd64.deb dist
+          bash installer/make-txz.sh linux-x64 "$VER" dist/ya-ms_${VER}_amd64.deb dist
+          bash installer/make-arch.sh linux-x64 "$VER" dist/ya-ms_${VER}_amd64.deb dist
+          bash installer/make-appimage.sh linux-x64 "$VER" publish/linux-x64 dist
       - name: Prova delle tratte di DJ5HG (Quadrantidi, MS-Geometrie 2004)
         if: github.ref != 'refs/heads/release'
         run: |
@@ -174,9 +177,14 @@ jobs:
           tar -C pkg -czf dist/YA-MS-$VER-${{ matrix.name }}.tar.gz YA-MS
           tar -C pkg -czf dist/YA-MS-$VER-${{ matrix.generic }}.tar.gz YA-MS
           bash installer/make-deb.sh ${{ matrix.rid }} "$VER" publish/${{ matrix.rid }} dist
+          sudo apt-get install -y -qq rpm >/dev/null
           if [ "${{ matrix.rid }}" = "linux-arm64" ]; then
-            sudo apt-get install -y -qq rpm >/dev/null
             bash installer/make-rpm.sh linux-arm64 "$VER" dist/ya-ms_${VER}_arm64.deb dist
+            bash installer/make-txz.sh linux-arm64 "$VER" dist/ya-ms_${VER}_arm64.deb dist
+            bash installer/make-arch.sh linux-arm64 "$VER" dist/ya-ms_${VER}_arm64.deb dist
+            bash installer/make-appimage.sh linux-arm64 "$VER" publish/linux-arm64 dist
+          else
+            bash installer/make-rpm.sh linux-arm "$VER" dist/ya-ms_${VER}_armhf.deb dist
           fi
       - name: Prova di avvio su ARM (schermo virtuale)
         if: matrix.rid == 'linux-arm64'
@@ -192,6 +200,45 @@ jobs:
         with:
           name: prova-arm64
           path: shots/*
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.name }}
+          path: dist/*
+
+  alpine:
+    # Alpine Linux e altre distribuzioni con musl (x86_64 e aarch64), con una prova di avvio in un contenitore Alpine.
+    strategy:
+      matrix:
+        include:
+          - rid: linux-musl-x64
+            name: alpine-x64
+            os: ubuntu-latest
+          - rid: linux-musl-arm64
+            name: alpine-arm64
+            os: ubuntu-24.04-arm
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Versione
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="$(tr -d ' \r\n' < VERSION)"; fi
+          echo "VER=$V" >> $GITHUB_ENV
+      - name: Compila
+        run: dotnet publish YA-MS.csproj -c Release -r ${{ matrix.rid }} --self-contained true -p:Version=$VER -p:DebugType=none -o publish/${{ matrix.rid }}
+      - name: Pacchetto
+        run: |
+          mkdir -p dist pkg
+          cp -R publish/${{ matrix.rid }} pkg/YA-MS
+          cp installer/linux-install.sh pkg/YA-MS/installa.sh
+          cp src/Assets/ya-ms-256.png pkg/YA-MS/ya-ms.png
+          chmod +x pkg/YA-MS/installa.sh pkg/YA-MS/YA-MS
+          tar -C pkg -czf dist/YA-MS-$VER-${{ matrix.name }}.tar.gz YA-MS
+      - name: Prova di avvio in Alpine (calcolo delle tratte di DJ5HG, senza grafica)
+        run: |
+          docker run --rm -v "$PWD/pkg/YA-MS:/p" alpine:latest sh -c "apk add -q icu-libs libstdc++ libgcc fontconfig >/dev/null && cd /p && timeout 200 ./YA-MS --prova-dj5hg | tail -5" || echo "::warning::prova Alpine non riuscita"
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.name }}
@@ -238,7 +285,7 @@ jobs:
 
   release:
     if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/release'
-    needs: [ windows, linux, raspberry, macos ]
+    needs: [ windows, linux, raspberry, alpine, macos ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -264,7 +311,11 @@ jobs:
             Dalla 1.7.0 in giù il programma non si aggiorna da solo: questa versione va installata a mano, le successive no.
 
             - Windows: YA-MS-...-windows-x64-setup.exe (installa in C:\YA-MS) oppure lo zip portatile; per Windows a 32 bit i file -windows-x86-, per Windows su ARM (Snapdragon) i file -windows-arm64-.
-            - Fedora, openSUSE: ya-ms-....x86_64.rpm (o .aarch64.rpm), con: sudo dnf install ./ya-ms-....rpm oppure sudo zypper install ./ya-ms-....rpm.
+            - Fedora, openSUSE: ya-ms-....x86_64.rpm (o .aarch64.rpm, .armv7hl.rpm), con: sudo dnf install ./ya-ms-....rpm oppure sudo zypper install ./ya-ms-....rpm.
+            - Arch, Manjaro, EndeavourOS, Arch Linux ARM: ya-ms-...-x86_64.pkg.tar.zst (o -aarch64), con: sudo pacman -U ./ya-ms-...pkg.tar.zst.
+            - Slackware (x86_64 e ARM64): da root installpkg ya-ms-...-x86_64-1_ic8tem.txz (o -aarch64-).
+            - Qualsiasi Linux: YA-MS-...-x86_64.AppImage (o -aarch64): rendere eseguibile e avviare.
+            - Alpine Linux (musl): YA-MS-...-alpine-x64.tar.gz o -alpine-arm64.tar.gz (serve apk add icu-libs fontconfig).
             - Linux (Debian, Ubuntu, Mint): ya-ms_..._amd64.deb, con: sudo apt install ./ya-ms_..._amd64.deb (al primo avvio il programma si copia in ~/YA-MS).
               Oppure YA-MS-...-linux-x64.tar.gz: portatile (si avvia ./YA-MS dalla cartella estratta) o installabile con ./installa.sh in ~/YA-MS.
             - Raspberry Pi 3/4/5: ya-ms_..._arm64.deb (Raspberry Pi OS 64 bit) o ya-ms_..._armhf.deb (32 bit); in alternativa YA-MS-...-raspberry-pi-64bit.tar.gz o -32bit.tar.gz.
@@ -277,6 +328,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
         run: |
-          gh release view "v$VER" --json assets -q '.assets[].name' | grep -v -e '^YA-MS-' -e '^ya-ms_' -e '^ya-ms-.*\.rpm$' | while read -r n; do
+          gh release view "v$VER" --json assets -q '.assets[].name' | grep -v -e '^YA-MS-' -e '^ya-ms_' -e '^ya-ms-' | while read -r n; do
             gh release delete-asset "v$VER" "$n" -y
           done

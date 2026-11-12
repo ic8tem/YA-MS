@@ -64,6 +64,9 @@ namespace YAMS
                      : a == Architecture.Arm64 ? "-windows-arm64-portatile.zip" : "-windows-x64-portatile.zip";
             if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
                 return a == Architecture.Arm64 ? "-mac-apple-silicon-app.zip" : "-mac-intel-app.zip";
+            // Alpine e altri Linux con musl: il programma e' stato compilato per linux-musl-*
+            if (RuntimeInformation.RuntimeIdentifier.Contains("musl"))
+                return a == Architecture.Arm64 ? "-alpine-arm64.tar.gz" : "-alpine-x64.tar.gz";
             if (a == Architecture.Arm64) return "-raspberry-pi-64bit.tar.gz";
             if (a == Architecture.Arm) return "-raspberry-pi-32bit.tar.gz";
             return "-linux-x64.tar.gz";

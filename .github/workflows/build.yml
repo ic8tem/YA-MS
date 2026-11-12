@@ -1,40 +1,29 @@
-# Sonda: contenuto del dataset Zenodo 18109759 (HamSCI MSQP agosto 2025, spot PSKReporter)
+# Sonda: verifica del modello con gli spot MSK144 su 6 m del MSQP HamSCI di agosto 2025 (Zenodo 18109759, CC BY 4.0)
 name: sonda
 on:
   push:
     branches: [ sonda ]
 jobs:
-  dati:
+  verifica:
     runs-on: ubuntu-latest
     steps:
-      - name: Elenco dei file
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Compila
+        run: dotnet publish YA-MS.csproj -c Release -r linux-x64 --self-contained true -p:DebugType=none -o app
+      - name: Dati
         run: |
           curl -sSL https://zenodo.org/api/records/18109759 -o rec.json
-          python3 -c "
-          import json;d=json.load(open('rec.json'))
-          for f in d['files']: print(f['key'], f['size'], f['links']['self'])
-          "
-      - name: File TSV e README
-        run: |
           python3 -c "
           import json,urllib.request
           d=json.load(open('rec.json'))
           for f in d['files']:
-              k=f['key']
-              if k.lower().endswith(('.tsv','.rtf','.txt')):
-                  urllib.request.urlretrieve(f['links']['self'], k); print('scaricato',k)
+              if f['key'].endswith('.tsv'): urllib.request.urlretrieve(f['links']['self'], 'spot.tsv')
           "
-          ls -la
-          for f in *.rtf *.txt; do [ -e "$f" ] && { echo "=== $f"; head -c 4000 "$f"; echo; }; done
-          for f in *.tsv; do
-            echo "=== $f"; wc -l "$f"; head -5 "$f"; echo ...; tail -3 "$f"
-            python3 - "$f" <<'PY'
-          import sys,collections,csv
-          f=sys.argv[1]
-          r=list(csv.reader(open(f,encoding='utf-8',errors='replace'),delimiter='\t'))
-          h=r[0]; print('colonne',len(h),h)
-          for i,c in enumerate(h):
-              vals=collections.Counter(x[i] for x in r[1:] if len(x)>i)
-              print(i,c,'distinti',len(vals),'es',list(vals.most_common(6)))
-          PY
-          done
+          wc -l spot.tsv
+      - name: Verifica su 50 MHz
+        run: python3 tools/verifica_spot.py spot.tsv ./app/YA-MS 50 54

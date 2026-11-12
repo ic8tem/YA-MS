@@ -578,6 +578,7 @@ namespace YAMS
             UiScale.Apply(this);
             if (chart24 != null) chart24.Height = Chart24Height * (0.5 + 0.5 * UiScale.Font);   // spazio per scritte piu' grandi
             if (explainSheet != null) explainSheet.MaxWidth = 860 * Math.Min(2.0, UiScale.Font);
+            if (manualSheet != null) manualSheet.MaxWidth = 860 * Math.Min(2.0, UiScale.Font);
             GravesFontScale();
             UpdateGeometry();   // il resoconto usa caratteri ricavati da quello della casella
         }
@@ -923,6 +924,9 @@ namespace YAMS
 
             // ===== ultima: Documenti tecnici: fonti, mappa dei radar europei, efficienza - spiegazione
             Group(Lang.T("Documenti tecnici"));
+
+            // --- Manuale d'uso (MainWindow.Spiegazione.cs)
+            BuildManualTab();
 
             // --- Fonti
             DockPanel p6 = Page(Lang.T("Fonti"));

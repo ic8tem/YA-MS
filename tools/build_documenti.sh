@@ -14,3 +14,10 @@ for f in tools/traduzioni_doc/spiegazione/*.json; do
   c=$(basename "$f" .json); [ "$c" = chiavi ] && continue
   python3 tools/build_spiegazione.py data "$c"
 done
+# manuale d'uso: italiano dal sorgente, le altre lingue quando c'e' la traduzione
+python3 tools/build_manuale_uso.py data
+for f in tools/traduzioni_doc/manuale_uso/*.json; do
+  [ -e "$f" ] || continue
+  c=$(basename "$f" .json); [ "$c" = chiavi ] && continue
+  python3 tools/build_manuale_uso.py data "$c"
+done

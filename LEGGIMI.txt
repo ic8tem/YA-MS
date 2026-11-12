@@ -36,6 +36,8 @@ NOVITA' DELLA 1.8.1
     del lobo verticale e i punti di riflessione pesano con il guadagno verticale delle due antenne (lobo dal boom, fattore
     del terreno fino a zero all'orizzonte). Spenta, l'elevazione del lobo resta un limite netto come prima.
   - Linguetta "Efficienza - spiegazione" rinominata "Spiegazione del calcolo dell'efficienza".
+  - Nuovo "Manuale d'uso" (Documenti tecnici), con la stessa formattazione della spiegazione ed esportabile in Word
+    (data/manuale_uso.txt e .docx).
   - Angolo beta: il fumetto mostra l'effetto sulle tratte lunghe con un esempio misurato.
   - Una sola data: "Data del calcolo (UTC)" vale anche per la tabella delle 24 ore di "Calcolo dell'efficienza"
     (tolta la casella "Giorno per la tabella 24 h (UTC)", che ripeteva la stessa scelta).

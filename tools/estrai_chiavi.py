@@ -19,7 +19,7 @@ LANGS = ["en", "ru", "ja", "de", "nl"]
 
 # testi passati a Lang.T come variabili (valori che arrivano dai dati o dal modello)
 EXTRA = [
-    "FONTE", "RILIEVO", "SCELTA",   # etichette dei blocchi della spiegazione (Lang.T(tag))
+    "FONTE", "RILIEVO", "SCELTA", "PROCEDURA", "NOTA", "ATTENZIONE",   # etichette dei blocchi della spiegazione e del manuale d'uso (Lang.T(tag))
     "Sorgente Antielio",                          # Catalog.cs: nome dello sciame ANT
     "Hot A", "Hot B", "Limite A", "Limite B",     # MsModel.cs: HotPoint.Label
     # Theme.cs: Tema.Names (schemi di colori)

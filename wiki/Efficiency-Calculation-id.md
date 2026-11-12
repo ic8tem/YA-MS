@@ -33,7 +33,6 @@ Satu baris untuk setiap hujan meteor yang aktif pada hari itu (diurutkan menurut
 |---|---|
 | `63A` | efisiensi 63 %, sebagian besar pantulan dari sisi **A** |
 | `41B` | efisiensi 41 %, sisi **B** |
-| `3` | efisiensi di bawah 5 %: angka tanpa huruf sisi |
 | kosong | efisiensi di bawah 1 % |
 | `…↑` | radian berada **di atas 70°** dari stasiun Anda pada jam itu (terlalu tinggi) |
 | teks kuning | efisiensi ≥ 50 % |

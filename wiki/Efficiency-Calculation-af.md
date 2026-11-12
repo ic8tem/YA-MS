@@ -33,7 +33,6 @@ Een ry per swerm wat op daardie dag aktief is (volgens ZHR gesorteer), 24 kolomm
 |---|---|
 | `63A` | doeltreffendheid 63 %, die meeste refleksies van kant **A** |
 | `41B` | doeltreffendheid 41 %, kant **B** |
-| `3` | doeltreffendheid onder 5 %: getal sonder kantletter |
 | leeg | doeltreffendheid onder 1 % |
 | `…↑` | die radiant is op daardie uur **hoër as 70°** vanaf jou stasie (te hoog) |
 | geel teks | doeltreffendheid ≥ 50 % |

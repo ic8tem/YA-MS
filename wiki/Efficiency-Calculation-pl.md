@@ -33,7 +33,6 @@ Jeden wiersz na każdy rój aktywny w danym dniu (posortowane wg ZHR), 24 kolumn
 |---|---|
 | `63A` | efektywność 63 %, większość odbić od strony **A** |
 | `41B` | efektywność 41 %, strona **B** |
-| `3` | efektywność poniżej 5 %: liczba bez litery strony |
 | pusta | efektywność poniżej 1 % |
 | `…↑` | radiant znajduje się **powyżej 70°** nad twoją stacją o tej godzinie (zbyt wysoko) |
 | żółty tekst | efektywność ≥ 50 % |

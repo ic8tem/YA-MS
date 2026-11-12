@@ -33,7 +33,6 @@ Viena rinda katrai tajā dienā aktīvajai plūsmai (sakārtotas pēc ZHR), 24 k
 |---|---|
 | `63A` | efektivitāte 63 %, vairums atstarojumu no puses **A** |
 | `41B` | efektivitāte 41 %, puse **B** |
-| `3` | efektivitāte zem 5 %: skaitlis bez puses burta |
 | tukša | efektivitāte zem 1 % |
 | `…↑` | radiants tajā stundā ir **virs 70°**, skatoties no tavas stacijas (pārāk augstu) |
 | dzeltens teksts | efektivitāte ≥ 50 % |

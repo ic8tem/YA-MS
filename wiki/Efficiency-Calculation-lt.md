@@ -33,7 +33,6 @@ Po vieną eilutę kiekvienam tą dieną aktyviam srautui (surikiuota pagal ZHR),
 |---|---|
 | `63A` | efektyvumas 63 %, dauguma atspindžių iš pusės **A** |
 | `41B` | efektyvumas 41 %, pusė **B** |
-| `3` | efektyvumas mažesnis nei 5 %: skaičius be pusės raidės |
 | tuščias | efektyvumas mažesnis nei 1 % |
 | `…↑` | radiantas tą valandą yra **aukščiau nei 70°** iš jūsų stoties (per aukštai) |
 | geltonas tekstas | efektyvumas ≥ 50 % |

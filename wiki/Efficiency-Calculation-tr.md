@@ -33,7 +33,6 @@ O gün etkin olan her yağmur için bir satır (ZHR'ye göre sıralı), saatler 
 |---|---|
 | `63A` | verim %63, yansımaların çoğu **A** tarafından |
 | `41B` | verim %41, **B** tarafı |
-| `3` | verim %5'in altında: taraf harfi olmadan sayı |
 | boş | verim %1'in altında |
 | `…↑` | radyant o saatte istasyonunuzdan **70°'nin üstünde** (çok yüksek) |
 | sarı metin | verim ≥ %50 |

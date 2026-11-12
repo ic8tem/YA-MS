@@ -33,7 +33,6 @@ En rad per svärm som är aktiv den dagen (sorterade efter ZHR), 24 kolumner fö
 |---|---|
 | `63A` | effektivitet 63 %, flest reflexer från sida **A** |
 | `41B` | effektivitet 41 %, sida **B** |
-| `3` | effektivitet under 5 %: siffra utan sidbokstav |
 | tom | effektivitet under 1 % |
 | `…↑` | radianten står **över 70°** sett från din station vid den timmen (för högt) |
 | gul text | effektivitet ≥ 50 % |

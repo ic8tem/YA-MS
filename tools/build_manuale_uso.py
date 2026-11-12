@@ -24,7 +24,7 @@ def T(t):
     return TRD[t]
 
 TITLE = "Manuale d'uso di YA-MS"
-SUB = "Versione 1.8.1 - a cura di Costantino IC8TEM - novembre 2026"
+SUB = "Versione 1.8.2 - a cura di Costantino IC8TEM - novembre 2026"
 
 B = []
 h1 = lambda t: B.append(("h1", T(t))); h2 = lambda t: B.append(("h2", T(t))); p = lambda t: B.append(("p", T(t)))
@@ -179,7 +179,7 @@ h2("7.4 Il grafico")
 p("Per un massimo di cinque sciami: l'efficienza come linea continua e la formula di DH9GCD come linea punteggiata dello stesso colore; l'indice della tratta come barre sulla scala di destra. Le ore locali sono scritte sotto quelle UTC.")
 h2("7.5 La tabella delle 24 ore")
 li("Una riga per ogni sciame attivo quel giorno, 24 colonne per le ore UTC.")
-li("63A: efficienza 63 %, la maggior parte delle riflessioni dal lato A; 41B: lato B; un numero senza lettera: sotto il 5 %; cella vuota: sotto l'1 %; ↑: radiante sopra 70° (troppo alto); colore più caldo = efficienza più alta.")
+li("63A: efficienza 63 %, la maggior parte delle riflessioni dal lato A; 41B: lato B; cella vuota: sotto l'1 %; ↑: radiante sopra 70° (troppo alto); colore più caldo = efficienza più alta.")
 li("A = a sinistra guardando dalla tua stazione verso il corrispondente (zona Hot A); B = a destra (zona Hot B). Conviene girare l'antenna di 10-30° verso quel lato (side-scatter).")
 li("Righe azzurre DH9GCD %: la formula della direzione migliore di DH9GCD, per confronto; non considera né l'orizzonte né il lobo.")
 li("Riga Σ: indice della tratta, somma di ZHR × efficienza di tutti gli sciami attivi.")

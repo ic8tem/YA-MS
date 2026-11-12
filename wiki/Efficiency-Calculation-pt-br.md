@@ -33,7 +33,6 @@ Uma linha por cada chuva ativa nesse dia (ordenadas por ZHR), 24 colunas para as
 |---|---|
 | `63A` | eficiência 63 %, a maioria das reflexões do lado **A** |
 | `41B` | eficiência 41 %, lado **B** |
-| `3` | eficiência inferior a 5 %: número sem letra de lado |
 | vazia | eficiência inferior a 1 % |
 | `…↑` | o radiante está **acima de 70°** visto da sua estação a essa hora (alto demais) |
 | texto amarelo | eficiência ≥ 50 % |

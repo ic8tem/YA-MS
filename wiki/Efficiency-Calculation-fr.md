@@ -33,7 +33,6 @@ Une ligne par essaim actif ce jour-là (triés par ZHR), 24 colonnes pour les he
 |---|---|
 | `63A` | efficacité 63 %, la plupart des réflexions viennent du côté **A** |
 | `41B` | efficacité 41 %, côté **B** |
-| `3` | efficacité inférieure à 5 % : chiffre sans lettre de côté |
 | vide | efficacité inférieure à 1 % |
 | `…↑` | le radiant est **au-dessus de 70°** vu de votre station à cette heure (trop haut) |
 | texte jaune | efficacité ≥ 50 % |

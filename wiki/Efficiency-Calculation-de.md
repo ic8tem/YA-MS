@@ -33,7 +33,6 @@ Eine Zeile pro an diesem Tag aktivem Strom (nach ZHR sortiert), 24 Spalten für 
 |---|---|
 | `63A` | Effektivität 63 %, die meisten Reflexionen von Seite **A** |
 | `41B` | Effektivität 41 %, Seite **B** |
-| `3` | Effektivität unter 5 %: Zahl ohne Seitenbuchstaben |
 | leer | Effektivität unter 1 % |
 | `…↑` | der Radiant steht zu dieser Stunde an deiner Station **höher als 70°** (zu hoch) |
 | gelber Text | Effektivität ≥ 50 % |

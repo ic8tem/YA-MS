@@ -306,6 +306,8 @@ jobs:
             YA-MS - previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter.
             A cura di Costantino IC8TEM.
 
+            Novità della 1.8.2: lettera del lato Hot (A/B) accanto a ogni valore della previsione dell'efficienza, casella "diagramma d'antenna" senza riquadro,
+            Manuale d'uso in 36 lingue, nuovi pacchetti per Windows ARM, Fedora/openSUSE (.rpm), Arch, Slackware, AppImage, Alpine e Linux ARM.
             Novità della 1.8.1: lobo d'antenna come diagramma verticale (casella "diagramma d'antenna", accesa di partenza: le efficienze non spariscono più sulle tratte lunghe),
             avviso "NESSUNA ZONA COMUNE" con spiegazione, casella dell'angolo beta in evidenza con il suo peso nel fumetto, una sola data del calcolo,
             nuovo Manuale d'uso, "Documenti tecnici" in fondo, confronto con 181 767 spot reali del MSQP 2025 su 50 MHz nei documenti (dettagli nel file LEGGIMI.txt).

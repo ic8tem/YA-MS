@@ -33,7 +33,6 @@ Infokaartide all selgitab riba tähti A ja B (vt allpool).
 |---|---|
 | `63A` | efektiivsus 63 %, enamik peegeldusi poolelt **A** |
 | `41B` | efektiivsus 41 %, pool **B** |
-| `3` | efektiivsus alla 5 %: number ilma poole täheta |
 | tühi | efektiivsus alla 1 % |
 | `…↑` | radiant on sel tunnil sinu jaamast **üle 70°** (liiga kõrgel) |
 | kollane tekst | efektiivsus ≥ 50 % |

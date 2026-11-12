@@ -33,7 +33,6 @@ Eén regel per zwerm die die dag actief is (gesorteerd op ZHR), 24 kolommen voor
 |---|---|
 | `63A` | efficiëntie 63 %, de meeste reflecties van zijde **A** |
 | `41B` | efficiëntie 41 %, zijde **B** |
-| `3` | efficiëntie onder 5 %: getal zonder letter voor de zijde |
 | leeg | efficiëntie onder 1 % |
 | `…↑` | de radiant staat op dat uur **hoger dan 70°** vanaf jouw station (te hoog) |
 | gele tekst | efficiëntie ≥ 50 % |

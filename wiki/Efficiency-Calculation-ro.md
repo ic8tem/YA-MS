@@ -33,7 +33,6 @@ Un rând pentru fiecare roi activ în acea zi (ordonate după ZHR), 24 de coloan
 |---|---|
 | `63A` | eficiență 63 %, cele mai multe reflexii din latura **A** |
 | `41B` | eficiență 41 %, latura **B** |
-| `3` | eficiență sub 5 %: număr fără litera laturii |
 | goală | eficiență sub 1 % |
 | `…↑` | radiantul este **peste 70°** de la stația dumneavoastră la acea oră (prea sus) |
 | text galben | eficiență ≥ 50 % |

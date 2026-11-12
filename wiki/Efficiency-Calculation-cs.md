@@ -33,7 +33,6 @@ Jeden řádek pro každý roj aktivní v daný den (seřazeno podle ZHR), 24 slo
 |---|---|
 | `63A` | účinnost 63 %, většina odrazů ze strany **A** |
 | `41B` | účinnost 41 %, strana **B** |
-| `3` | účinnost pod 5 %: číslo bez písmena strany |
 | prázdná | účinnost pod 1 % |
 | `…↑` | radiant je v tu hodinu z vaší stanice **výše než 70°** (příliš vysoko) |
 | žlutý text | účinnost ≥ 50 % |

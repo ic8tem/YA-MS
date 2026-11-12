@@ -33,7 +33,6 @@ Isang hanay bawat shower na aktibo sa araw na iyon (nakaayos ayon sa ZHR), 24 na
 |---|---|
 | `63A` | episyensya 63 %, karamihan ng repleksiyon mula sa panig **A** |
 | `41B` | episyensya 41 %, panig **B** |
-| `3` | episyensyang mas mababa sa 5 %: numerong walang titik ng panig |
 | walang laman | episyensyang mas mababa sa 1 % |
 | `…↑` | ang radiant ay **higit sa 70°** mula sa iyong istasyon sa oras na iyon (masyadong mataas) |
 | dilaw na teksto | episyensya ≥ 50 % |

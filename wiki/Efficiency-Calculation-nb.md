@@ -33,7 +33,6 @@ Under panelene forklarer et bånd bokstavene A og B (se nedenfor).
 |---|---|
 | `63A` | effektivitet 63 %, de fleste refleksjonene fra side **A** |
 | `41B` | effektivitet 41 %, side **B** |
-| `3` | effektivitet under 5 %: tall uten sidebokstav |
 | tom | effektivitet under 1 % |
 | `…↑` | radianten står **over 70°** sett fra stasjonen din i den timen (for høyt) |
 | gul tekst | effektivitet ≥ 50 % |

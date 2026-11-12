@@ -33,7 +33,6 @@ Az adott napon aktív rajonként egy sor (ZHR szerint rendezve), 24 oszlop az ó
 |---|---|
 | `63A` | hatékonyság 63 %, a legtöbb reflexió az **A** oldalról |
 | `41B` | hatékonyság 41 %, **B** oldal |
-| `3` | 5 % alatti hatékonyság: szám oldalbetű nélkül |
 | üres | 1 % alatti hatékonyság |
 | `…↑` | a radiáns abban az órában az Ön állomásáról nézve **70° felett** van (túl magasan) |
 | sárga szöveg | hatékonyság ≥ 50 % |

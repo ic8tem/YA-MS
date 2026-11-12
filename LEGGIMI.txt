@@ -1,6 +1,6 @@
-YA-MS 1.8.1 - a cura di Costantino IC8TEM
+YA-MS 1.8.2 - a cura di Costantino IC8TEM
 Previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter (50-432 MHz)
-Windows (64 e 32 bit), Linux, Raspberry Pi e Mac.
+Windows (64 e 32 bit, ARM), Linux (deb, rpm, Arch, Slackware, AppImage, Alpine), Raspberry Pi e Mac.
 
 INSTALLAZIONE
   Il programma e la sua cartella "data" stanno sempre insieme nella cartella personale YA-MS:
@@ -38,6 +38,13 @@ INSTALLAZIONE
   data/backup/v<versione vecchia>) e riavvia YA-MS. Serve poter scrivere nella cartella del programma.
   Se all'avvio mancano file del programma (in data o in doc), una finestra li elenca e propone di riscaricarli
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
+
+NOVITA' DELLA 1.8.2
+  - Previsione dell'efficienza: la lettera del lato Hot (A o B) compare accanto a ogni valore, anche sotto il 5 %.
+  - Casella "diagramma d'antenna" con lo stesso aspetto delle altre caselle (senza riquadro).
+  - Nuovi pacchetti: Windows su ARM (Snapdragon), .rpm per Fedora/openSUSE, Arch Linux, Slackware (.txz),
+    AppImage, Alpine Linux, Linux ARM generico (arm64, armv7l).
+  - Manuale d'uso tradotto in tutte le 36 lingue.
 
 NOVITA' DELLA 1.8.1
   - "Documenti tecnici" e' ora l'ultima linguetta.

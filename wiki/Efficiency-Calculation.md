@@ -33,7 +33,6 @@ One row per shower active on that day (sorted by ZHR), 24 columns for the hours 
 |---|---|
 | `63A` | efficiency 63 %, most reflections from side **A** |
 | `41B` | efficiency 41 %, side **B** |
-| `3` | efficiency under 5 %: number without side letter |
 | empty | efficiency under 1 % |
 | `…↑` | the radiant is **above 70°** from your station at that hour (too high) |
 | yellow text | efficiency ≥ 50 % |

@@ -33,7 +33,6 @@ Ein lína fyrir hverja drífu sem er virk þann dag (raðað eftir ZHR), 24 dál
 |---|---|
 | `63A` | nýtni 63 %, flest endurvörp frá hlið **A** |
 | `41B` | nýtni 41 %, hlið **B** |
-| `3` | nýtni undir 5 %: tala án hliðarstafs |
 | auður | nýtni undir 1 % |
 | `…↑` | geislapunkturinn er **yfir 70°** séð frá þinni stöð á þeirri klukkustund (of hátt) |
 | gulur texti | nýtni ≥ 50 % |

@@ -132,7 +132,6 @@
  "Per un massimo di cinque sciami: l'efficienza come linea continua e la formula di DH9GCD come linea punteggiata dello stesso colore; l'indice della tratta come barre sulla scala di destra. Le ore locali sono scritte sotto quelle UTC.": "最多显示五个流星雨：效率为实线，DH9GCD 公式为同色点线；路径指数以柱状显示在右侧刻度上。本地时间写在 UTC 时间下方。",
  "7.5 La tabella delle 24 ore": "7.5 24 小时表格",
  "Una riga per ogni sciame attivo quel giorno, 24 colonne per le ore UTC.": "当天每个活跃的流星雨占一行，24 列对应 UTC 小时。",
- "63A: efficienza 63 %, la maggior parte delle riflessioni dal lato A; 41B: lato B; un numero senza lettera: sotto il 5 %; cella vuota: sotto l'1 %; ↑: radiante sopra 70° (troppo alto); colore più caldo = efficienza più alta.": "63A：效率 63 %，大部分反射来自 A 侧；41B：B 侧；不带字母的数字：低于 5 %；空单元格：低于 1 %；↑：辐射点高于 70°（过高）；颜色越暖 = 效率越高。",
  "A = a sinistra guardando dalla tua stazione verso il corrispondente (zona Hot A); B = a destra (zona Hot B). Conviene girare l'antenna di 10-30° verso quel lato (side-scatter).": "A = 从你的电台看向对方电台时的左侧（Hot A 区域）；B = 右侧（Hot B 区域）。最好将天线向该侧转 10-30°（侧向散射，side-scatter）。",
  "Righe azzurre DH9GCD %: la formula della direzione migliore di DH9GCD, per confronto; non considera né l'orizzonte né il lobo.": "浅蓝色行 DH9GCD %：DH9GCD 的最佳方向公式，用于比较；它既不考虑地平线也不考虑波瓣。",
  "Riga Σ: indice della tratta, somma di ZHR × efficienza di tutti gli sciami attivi.": "Σ 行：路径指数，即所有活跃流星雨的 ZHR × 效率之和。",
@@ -231,11 +230,12 @@
  "16. Contatti": "16. 联系方式",
  "YA-MS è un programma gratuito per i radioamatori, a cura di Costantino IC8TEM (Capri). Segnalazioni, proposte e dati di confronto sono benvenuti: indica il sistema operativo, la versione di YA-MS e che cosa hai fatto. Codice e release: github.com/ic8tem/YA-MS. Contatti: ccerrotta@gmail.com, ic8tem@gmail.com, www.qrz.com/db/ic8tem. Chi vuole sostenere il lavoro può farlo su ko-fi.com/ic8tem.": "YA-MS 是一款面向业余无线电爱好者的免费程序，由 Costantino IC8TEM（Capri）编写。欢迎报告问题、提出建议和提供比较数据：请注明操作系统、YA-MS 版本以及你执行了哪些操作。代码和发布版本：github.com/ic8tem/YA-MS。联系方式：ccerrotta@gmail.com、ic8tem@gmail.com、www.qrz.com/db/ic8tem。愿意支持这项工作的人可以通过 ko-fi.com/ic8tem 进行。",
  "Manuale d'uso di YA-MS": "YA-MS 使用手册",
- "Versione 1.8.1 - a cura di Costantino IC8TEM - novembre 2026": "版本 1.8.1 - Costantino IC8TEM 编写 - 2026 年 11 月",
+ "Versione 1.8.2 - a cura di Costantino IC8TEM - novembre 2026": "版本 1.8.2 - Costantino IC8TEM 编写 - 2026 年 11 月",
  "PROCEDURA": "操作步骤",
  "NOTA": "提示",
  "ATTENZIONE": "注意",
  "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux.": "其他 ARM Linux 系统（例如 Slackware ARM64 或 armv7l 开发板）：使用 .tar.gz 格式的 linux-arm64 或 linux-armv7l 安装包，用法同 Linux。",
  "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install.": "ARM 上的 Windows（Snapdragon 电脑）：windows-arm64 安装包。Fedora 和 openSUSE：.rpm 安装包（x86_64 或 aarch64），用 sudo dnf install 或 sudo zypper install 安装。",
- "Arch, Manjaro e Arch Linux ARM: il pacchetto .pkg.tar.zst, con sudo pacman -U. Slackware64 e Slackware ARM64: il pacchetto .txz, con installpkg da root. Qualsiasi Linux: l'AppImage (x86_64 o aarch64), da rendere eseguibile e avviare. Alpine Linux: il pacchetto alpine-x64 o alpine-arm64, in .tar.gz.": "Arch、Manjaro 和 Arch Linux ARM：.pkg.tar.zst 安装包，用 sudo pacman -U 安装。Slackware64 和 Slackware ARM64：.txz 安装包，以 root 身份用 installpkg 安装。任意 Linux：AppImage（x86_64 或 aarch64），设为可执行后直接运行。Alpine Linux：.tar.gz 格式的 alpine-x64 或 alpine-arm64 安装包。"
+ "Arch, Manjaro e Arch Linux ARM: il pacchetto .pkg.tar.zst, con sudo pacman -U. Slackware64 e Slackware ARM64: il pacchetto .txz, con installpkg da root. Qualsiasi Linux: l'AppImage (x86_64 o aarch64), da rendere eseguibile e avviare. Alpine Linux: il pacchetto alpine-x64 o alpine-arm64, in .tar.gz.": "Arch、Manjaro 和 Arch Linux ARM：.pkg.tar.zst 安装包，用 sudo pacman -U 安装。Slackware64 和 Slackware ARM64：.txz 安装包，以 root 身份用 installpkg 安装。任意 Linux：AppImage（x86_64 或 aarch64），设为可执行后直接运行。Alpine Linux：.tar.gz 格式的 alpine-x64 或 alpine-arm64 安装包。",
+ "63A: efficienza 63 %, la maggior parte delle riflessioni dal lato A; 41B: lato B; cella vuota: sotto l'1 %; ↑: radiante sopra 70° (troppo alto); colore più caldo = efficienza più alta.": "63A：效率 63 %，大部分反射来自 A 侧；41B：B 侧；空单元格：低于 1 %；↑：辐射点高于 70°（过高）；颜色越暖 = 效率越高。"
 }

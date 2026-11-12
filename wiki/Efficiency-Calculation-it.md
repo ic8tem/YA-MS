@@ -33,7 +33,6 @@ Una riga per ogni sciame attivo quel giorno (ordinati per ZHR), 24 colonne per l
 |---|---|
 | `63A` | efficienza 63 %, la maggior parte delle riflessioni dal lato **A** |
 | `41B` | efficienza 41 %, lato **B** |
-| `3` | efficienza sotto il 5 %: numero senza lettera del lato |
 | vuota | efficienza sotto l'1 % |
 | `…↑` | il radiante è **sopra 70°** dalla tua stazione a quell'ora (troppo alto) |
 | testo giallo | efficienza ≥ 50 % |

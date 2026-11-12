@@ -238,7 +238,9 @@ jobs:
           tar -C pkg -czf dist/YA-MS-$VER-${{ matrix.name }}.tar.gz YA-MS
       - name: Prova di avvio in Alpine (calcolo delle tratte di DJ5HG, senza grafica)
         run: |
-          docker run --rm -v "$PWD/pkg/YA-MS:/p" alpine:latest sh -c "apk add -q icu-libs libstdc++ libgcc fontconfig >/dev/null && cd /p && timeout 200 ./YA-MS --prova-dj5hg | tail -5" || echo "::warning::prova Alpine non riuscita"
+          docker run --rm -v "$PWD/pkg/YA-MS:/p" alpine:latest sh -c "apk add -q icu-libs libstdc++ libgcc fontconfig >/dev/null; cd /p && timeout 200 ./YA-MS --prova-dj5hg 2>&1" > prova_alpine.txt || true
+          head -40 prova_alpine.txt
+          grep -q "=== quota" prova_alpine.txt || { echo "::error::YA-MS non parte su Alpine"; exit 1; }
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.name }}

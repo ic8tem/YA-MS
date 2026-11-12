@@ -855,10 +855,11 @@ namespace YAMS
             ToolTip.SetTip(chkBeta, Lang.T("Due tesi sulla geometria, con fonti diverse.\n" +
                 "Accesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. " +
                 "Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. " +
-                "Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004). Sulle tratte lunghe abbassa molto i valori: JN70CN – JO76QP (1791 km), Geminidi del 14/12/2026, 98 % con la casella spenta e 13 % accesa.\n" +
+                "Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\n" +
                 "Spenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, " +
                 "quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\n" +
-                "Un primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella \"Giudizio classico\" mostra il verdetto della regola classica sotto l'efficienza, ora per ora."));
+                "Un primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella \"Giudizio classico\" mostra il verdetto della regola classica sotto l'efficienza, ora per ora.\n" +
+                "Quanto pesa: è la scelta che cambia di più i risultati. Su JN70CN – JO76QP (1791 km), Geminidi del 14/12/2026, l'efficienza massima passa dal 98 % (spenta) al 13 % (accesa), un fattore 7. Gli altri affinamenti sono molto più piccoli: raggio iniziale e durata dei ping valgono pochi dB e solo sopra 144 MHz, il diagramma d'antenna conta sulle tratte vicine al limite dell'orizzonte, la quota delle scie varia di ±7 km da un'ora all'altra. Le ore migliori e il lato restano invece quasi gli stessi con le due scelte."));
             WhenChanged(chkBeta, ToggleButton.IsCheckedProperty, () =>
             {
                 PathModel.BetaFactor = chkBeta.IsChecked == true;
@@ -886,7 +887,19 @@ namespace YAMS
             numLayer.ValueChanged += (s, e) => SyncProfile();
             SyncProfile();
             // casella dell'angolo beta in evidenza: bordino in rilievo (cambia molto i valori sulle tratte lunghe)
-            Border betaBox = Raised(chkBeta);
+            chkBeta.FontWeight = FontWeight.SemiBold;
+            StackPanel betaInner = new StackPanel { Orientation = Orientation.Horizontal };
+            betaInner.Children.Add(chkBeta);
+            betaInner.Children.Add(new TextBlock
+            {
+                Text = "⚠ " + Lang.T("la scelta che pesa di più"), Foreground = Pal.B(Pal.OrangeText), FontWeight = FontWeight.Bold,
+                VerticalAlignment = VerticalAlignment.Center, Margin = new Thickness(6, 0, 0, 0)
+            });
+            Border betaBox = Raised(betaInner);
+            betaBox.Background = Pal.B(Pal.A(55, Pal.Orange));
+            betaBox.BorderBrush = Pal.B(Pal.Orange);
+            betaBox.BorderThickness = new Thickness(1.5);
+            ToolTip.SetTip(betaInner, ToolTip.GetTip(chkBeta));
             DockTop(p2, Row(L(Lang.T("Impostazione del calcolo:")), rbProfPrud, rbProfDj, rbProfPers, chkTrailLen, betaBox, chkClassic));
             chart24 = new SimpleChart { Height = Chart24Height };
             DockTop(p2, chart24);

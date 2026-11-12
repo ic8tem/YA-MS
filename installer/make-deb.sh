@@ -80,4 +80,4 @@ chmod 755 "$PKG/DEBIAN/postinst"
 
 mkdir -p "$OUT"
 dpkg-deb --root-owner-group --build "$PKG" "$OUT/ya-ms_${VERSION}_${ARCH}.deb"
-dpkg-deb --info "$OUT/ya-ms_${VERSION}_${ARCH}.deb" | head -12
+dpkg-deb --info "$OUT/ya-ms_${VERSION}_${ARCH}.deb" | head -12 || true

@@ -36,4 +36,4 @@ EOF
 SV="${VERSION//-/_}"
 mkdir -p "$OUT"
 tar -C "$T" --owner=0 --group=0 -cJf "$OUT/ya-ms-${SV}-${ARCH}-1_ic8tem.txz" install opt usr
-tar -tJf "$OUT/ya-ms-${SV}-${ARCH}-1_ic8tem.txz" | head -5
+ls -la "$OUT/ya-ms-${SV}-${ARCH}-1_ic8tem.txz"

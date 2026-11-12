@@ -59,4 +59,4 @@ EOF
 rpmbuild --define "_topdir $TOP" --target "$ARCH" -bb "$TOP/SPECS/ya-ms.spec" >/dev/null
 mkdir -p "$OUT"
 cp "$TOP"/RPMS/*/ya-ms-*.rpm "$OUT/ya-ms-${VERSION}.${ARCH}.rpm"
-rpm -qpi "$OUT/ya-ms-${VERSION}.${ARCH}.rpm" | head -8
+rpm -qpi "$OUT/ya-ms-${VERSION}.${ARCH}.rpm" | head -8 || true

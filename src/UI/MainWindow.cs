@@ -398,6 +398,23 @@ namespace YAMS
         }
 
         // riga di comandi (fondo Panel2): gli elementi vanno a capo se la finestra e' stretta
+        // bordino in rilievo attorno a una casella da tenere d'occhio (diagramma d'antenna, angolo beta)
+        static Border Raised(Control c)
+        {
+            return new Border
+            {
+                Child = c,
+                Background = Pal.B(Pal.Card),
+                BorderBrush = Pal.B(Pal.Border),
+                BorderThickness = new Thickness(1),
+                CornerRadius = new CornerRadius(6),
+                Padding = new Thickness(6, 1, 8, 1),
+                Margin = new Thickness(4, 2),
+                VerticalAlignment = VerticalAlignment.Center,
+                BoxShadow = new BoxShadows(new BoxShadow { OffsetX = 1, OffsetY = 2, Blur = 4, Color = Pal.Argb(110, 0, 0, 0) })
+            };
+        }
+
         static Border Row(params Control[] items)
         {
             WrapPanel wp = new WrapPanel { Orientation = Orientation.Horizontal };
@@ -509,7 +526,7 @@ namespace YAMS
 
             // riga 2: strato E, lobo e antenna
             Border row2 = Row(L(Lang.T("Quota scie km")), numLayer, chkLayerRadar,
-                              L(Lang.T("Elevazione lobo °")), numElev, chkLobe,
+                              L(Lang.T("Elevazione lobo °")), numElev, Raised(chkLobe),   // casella in evidenza, come l'angolo beta
                               L(Lang.T("Antenna Yagi: boom m")), numBoom, lblAnt,
                               L(Lang.T("Hot spot dal punto medio km")), numHotKm, chkHotAuto);
 
@@ -869,18 +886,7 @@ namespace YAMS
             numLayer.ValueChanged += (s, e) => SyncProfile();
             SyncProfile();
             // casella dell'angolo beta in evidenza: bordino in rilievo (cambia molto i valori sulle tratte lunghe)
-            Border betaBox = new Border
-            {
-                Child = chkBeta,
-                Background = Pal.B(Pal.Card),
-                BorderBrush = Pal.B(Pal.Border),
-                BorderThickness = new Thickness(1),
-                CornerRadius = new CornerRadius(6),
-                Padding = new Thickness(6, 1, 8, 1),
-                Margin = new Thickness(4, 2),
-                VerticalAlignment = VerticalAlignment.Center,
-                BoxShadow = new BoxShadows(new BoxShadow { OffsetX = 1, OffsetY = 2, Blur = 4, Color = Pal.Argb(110, 0, 0, 0) })
-            };
+            Border betaBox = Raised(chkBeta);
             DockTop(p2, Row(L(Lang.T("Impostazione del calcolo:")), rbProfPrud, rbProfDj, rbProfPers, chkTrailLen, betaBox, chkClassic));
             chart24 = new SimpleChart { Height = Chart24Height };
             DockTop(p2, chart24);

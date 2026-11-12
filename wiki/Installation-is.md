@@ -12,7 +12,11 @@ Allir pakkar eru á síðunni **[Releases](https://github.com/ic8tem/YA-MS/relea
 | Windows á ARM (64 bita, tölvur með Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` eða `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bita): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (afritað þangað við fyrstu ræsingu) |
 | Linux (64 bita), hvaða dreifing sem er | `YA-MS-x.y.z-linux-x64.tar.gz` (færanlegt eða með `./installa.sh`) | `~/YA-MS` eða hvaða mappa sem er |
-| Linux (64 bita): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (afritað þangað við fyrstu ræsingu) |
+| Linux (64 bita): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (afritað þangað við fyrstu ræsingu) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (afritað þangað við fyrstu ræsingu) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (afritað þangað við fyrstu ræsingu) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (afritað þangað við fyrstu ræsingu) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` eða hvaða mappa sem er |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bita) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bita) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian-pakki | `ya-ms_x.y.z_arm64.deb` (64 bita) eða `ya-ms_x.y.z_armhf.deb` (32 bita) | `~/YA-MS` (afritað þangað við fyrstu ræsingu) |
@@ -21,8 +25,6 @@ Allir pakkar eru á síðunni **[Releases](https://github.com/ic8tem/YA-MS/relea
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, aðeins forritið | `YA-MS-x.y.z-mac-apple-silicon-app.zip` eða `...-mac-intel-app.zip` | mappan þar sem þú afþjappar `YA-MS.app` |
-
-32 bita PC-Linux (i686), FreeBSD og OpenBSD hafa engan pakka: .NET 8, sem YA-MS byggir á, keyrir ekki á þessum kerfum.
 
 **Forritið og mappan þess `data` eru alltaf saman** í möppunni YA-MS: þar eru öll gögn og stillingar (engin AppData, engar kerfismöppur). Sjá [Stillingar og gagnamappa](Settings-and-Data-Folder-is).
 

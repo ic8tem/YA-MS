@@ -12,7 +12,11 @@ Alle Pakete findest du auf der Seite **[Releases](https://github.com/ic8tem/YA-M
 | Windows auf ARM (64 Bit, PCs mit Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` oder `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 Bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (beim ersten Start dorthin kopiert) |
 | Linux (64 Bit), jede Distribution | `YA-MS-x.y.z-linux-x64.tar.gz` (portabel oder mit `./installa.sh`) | `~/YA-MS` oder jeder Ordner |
-| Linux (64 Bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (beim ersten Start dorthin kopiert) |
+| Linux (64 Bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (beim ersten Start dorthin kopiert) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (beim ersten Start dorthin kopiert) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (beim ersten Start dorthin kopiert) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (beim ersten Start dorthin kopiert) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` oder jeder Ordner |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 Bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 Bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian-Paket | `ya-ms_x.y.z_arm64.deb` (64 Bit) oder `ya-ms_x.y.z_armhf.deb` (32 Bit) | `~/YA-MS` (beim ersten Start dorthin kopiert) |
@@ -21,8 +25,6 @@ Alle Pakete findest du auf der Seite **[Releases](https://github.com/ic8tem/YA-M
 | macOS, Apple Silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, nur die Anwendung | `YA-MS-x.y.z-mac-apple-silicon-app.zip` oder `...-mac-intel-app.zip` | der Ordner, in den du `YA-MS.app` entpackst |
-
-Für 32-Bit-PC-Linux (i686), FreeBSD und OpenBSD gibt es kein Paket: .NET 8, auf dem YA-MS aufbaut, läuft auf diesen Systemen nicht.
 
 **Das Programm und sein Ordner `data` bleiben immer zusammen** im Ordner YA-MS: Dort liegen alle Daten und Einstellungen (kein AppData, keine Systemordner). Siehe [Einstellungen und Datenordner](Settings-and-Data-Folder-de).
 

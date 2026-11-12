@@ -12,7 +12,11 @@
 | Windows บน ARM (64 บิต พีซีที่ใช้ Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` หรือ `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 บิต): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (คัดลอกไปที่นั่นเมื่อเริ่มครั้งแรก) |
 | Linux (64 บิต) ทุกดิสทริบิวชัน | `YA-MS-x.y.z-linux-x64.tar.gz` (แบบพกพาหรือใช้ `./installa.sh`) | `~/YA-MS` หรือโฟลเดอร์ใดก็ได้ |
-| Linux (64 บิต): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (คัดลอกไปที่นั่นเมื่อเริ่มครั้งแรก) |
+| Linux (64 บิต): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (คัดลอกไปที่นั่นเมื่อเริ่มครั้งแรก) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (คัดลอกไปที่นั่นเมื่อเริ่มครั้งแรก) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (คัดลอกไปที่นั่นเมื่อเริ่มครั้งแรก) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (คัดลอกไปที่นั่นเมื่อเริ่มครั้งแรก) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` หรือโฟลเดอร์ใดก็ได้ |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 บิต) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 บิต) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi แพ็กเกจ Debian | `ya-ms_x.y.z_arm64.deb` (64 บิต) หรือ `ya-ms_x.y.z_armhf.deb` (32 บิต) | `~/YA-MS` (คัดลอกไปที่นั่นเมื่อเริ่มครั้งแรก) |
@@ -21,8 +25,6 @@
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS เฉพาะแอปพลิเคชัน | `YA-MS-x.y.z-mac-apple-silicon-app.zip` หรือ `...-mac-intel-app.zip` | โฟลเดอร์ที่คุณแตกไฟล์ `YA-MS.app` |
-
-ไม่มีแพ็กเกจสำหรับ Linux 32 บิตบนพีซี (i686), FreeBSD และ OpenBSD เพราะ .NET 8 ซึ่งเป็นพื้นฐานของ YA-MS ไม่ทำงานบนระบบเหล่านี้
 
 **ตัวโปรแกรมและโฟลเดอร์ `data` ต้องอยู่ด้วยกันเสมอ** ในโฟลเดอร์ YA-MS: ข้อมูลและการตั้งค่าทั้งหมดอยู่ที่นั่น (ไม่มี AppData ไม่มีโฟลเดอร์ระบบ) ดูที่ [การตั้งค่าและโฟลเดอร์ข้อมูล](Settings-and-Data-Folder-th)
 

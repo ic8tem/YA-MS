@@ -12,7 +12,11 @@
 | Windows על ARM ‏(64 ביט, מחשבים עם Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` או `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
 | Linux (64-bit), כל הפצה | `YA-MS-x.y.z-linux-x64.tar.gz` (נייד או עם `./installa.sh`) | `~/YA-MS` או כל תיקייה |
-| Linux ‏(64 ביט): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
+| Linux ‏(64 ביט): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` או כל תיקייה |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, חבילת Debian | `ya-ms_x.y.z_arm64.deb` (64-bit) או `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
@@ -21,8 +25,6 @@
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, היישום בלבד | `YA-MS-x.y.z-mac-apple-silicon-app.zip` או `...-mac-intel-app.zip` | התיקייה שאליה חילצתם את `YA-MS.app` |
-
-ל-Linux למחשב ב-32 ביט (i686), ל-FreeBSD ול-OpenBSD אין חבילה: ‎.NET 8, שעליו בנוי YA-MS, אינו פועל במערכות אלה.
 
 **התוכנה ותיקיית ה-`data` שלה נשארות תמיד יחד** בתיקיית YA-MS: כל הנתונים וההגדרות נמצאים שם (בלי AppData, בלי תיקיות מערכת). ראו [הגדרות ותיקיית נתונים](Settings-and-Data-Folder-he).
 

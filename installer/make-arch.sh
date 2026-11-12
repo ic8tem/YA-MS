@@ -34,10 +34,11 @@ PLAT=linux/amd64
 if [ "$(uname -m)" != "x86_64" ]; then docker run --privileged --rm tonistiigi/binfmt --install amd64 >/dev/null; fi
 docker run --rm --platform $PLAT -v "$W:/w" archlinux:latest bash -c "
   set -e
-  pacman -Sy --noconfirm --needed base-devel >/dev/null
+  pacman --disable-sandbox -Sy --noconfirm --needed base-devel >/dev/null
   sed -i 's/^CARCH=.*/CARCH=\"${ARCH}\"/' /etc/makepkg.conf
   useradd -m b && chown -R b /w
   su b -c 'cd /w && makepkg --nodeps --skipinteg -f'
+  chmod -R a+rwX /w
 "
 mkdir -p "$OUT"
 cp "$W"/ya-ms-*.pkg.tar.zst "$OUT/"

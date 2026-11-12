@@ -24,12 +24,14 @@ Por Costantino Cerrotta IC8TEM. Gratuito, para Windows, Linux, Raspberry Pi y Ma
 Desde la página **[Releases](https://github.com/ic8tem/YA-MS/releases/latest)**:
 - **Windows**: `...-windows-x64-setup.exe` (32 bits: `...-windows-x86-setup.exe`, ARM/Snapdragon: `...-windows-arm64-setup.exe`) o el zip portátil;
 - **Linux**: `ya-ms_..._amd64.deb` o `...-linux-x64.tar.gz`;
-- **Fedora, openSUSE**: `ya-ms-....x86_64.rpm` o `.aarch64.rpm` (`sudo dnf install` / `sudo zypper install`);
+- **Fedora, openSUSE**: `ya-ms-....x86_64.rpm` o `.aarch64.rpm` / `.armv7hl.rpm` (`sudo dnf install` / `sudo zypper install`);
+- **Arch, Manjaro, Arch Linux ARM**: `ya-ms-...-x86_64.pkg.tar.zst` / `-aarch64.pkg.tar.zst` (`sudo pacman -U`);
+- **Slackware64, Slackware ARM64**: `ya-ms-...-x86_64-1_ic8tem.txz` / `-aarch64-1_ic8tem.txz` (`installpkg`);
+- **AppImage**: `YA-MS-...-x86_64.AppImage` / `-aarch64.AppImage`;
+- **Alpine Linux** (musl): `YA-MS-...-alpine-x64.tar.gz` / `-alpine-arm64.tar.gz`;
 - **Raspberry Pi**: `ya-ms_..._arm64.deb` / `_armhf.deb` o los tar.gz de 64 y 32 bits;
 - **Linux ARM** (p. ej. Slackware ARM64, placas armv7l): `...-linux-arm64.tar.gz` o `...-linux-armv7l.tar.gz`;
 - **Mac**: `...-mac-apple-silicon.dmg` o `...-mac-intel.dmg` (o el app.zip).
-
-Linux de 32 bits para PC (i686), FreeBSD y OpenBSD no están disponibles: .NET 8 no funciona en esos sistemas.
 
 Los datos se quedan en la carpeta `data` junto al programa. Instrucciones completas en el **[wiki](https://github.com/ic8tem/YA-MS/wiki/Home-es)** y en `LEGGIMI.txt`.
 

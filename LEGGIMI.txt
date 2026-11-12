@@ -13,15 +13,18 @@ INSTALLAZIONE
            Al primo avvio dal menu il programma si copia in ~/YA-MS con la sua cartella data.
            Oppure YA-MS-x.y.z-linux-x64.tar.gz: portatile (si avvia ./YA-MS dalla cartella estratta)
            o installabile con ./installa.sh, che copia in ~/YA-MS e aggiunge YA-MS al menu.
-           Fedora, openSUSE: ya-ms-x.y.z.x86_64.rpm (o .aarch64.rpm), con sudo dnf install ./ya-ms-x.y.z.x86_64.rpm
+           Fedora, openSUSE: ya-ms-x.y.z.x86_64.rpm (o .aarch64.rpm, .armv7hl.rpm), con sudo dnf install ./ya-ms-x.y.z.x86_64.rpm
            oppure sudo zypper install ./ya-ms-x.y.z.x86_64.rpm; al primo avvio si copia in ~/YA-MS.
+           Arch, Manjaro, Arch Linux ARM: ya-ms-x.y.z-1-x86_64.pkg.tar.zst (o -aarch64), con sudo pacman -U.
+           Slackware64 e Slackware ARM64: da root installpkg ya-ms-x.y.z-x86_64-1_ic8tem.txz (o -aarch64-).
+           Qualsiasi Linux: YA-MS-x.y.z-x86_64.AppImage (o -aarch64): chmod +x e si avvia; si copia in ~/YA-MS.
+           Alpine Linux (musl): YA-MS-x.y.z-alpine-x64.tar.gz (o -alpine-arm64), con apk add icu-libs fontconfig.
   Raspberry Pi  YA-MS-x.y.z-raspberry-pi-64bit.tar.gz (Raspberry Pi OS a 64 bit, Pi 3/4/5/400/500) oppure
            -raspberry-pi-32bit.tar.gz (Raspberry Pi OS a 32 bit, anche Pi 2): come Linux, ./installa.sh.
            Pacchetti .deb: ya-ms_x.y.z_arm64.deb (64 bit) e ya-ms_x.y.z_armhf.deb (32 bit), come per Linux.
            Il comando uname -m dice quale serve: aarch64 = 64 bit, armv7l = 32 bit. Pi Zero/Zero W e Pi 1 non supportati.
   Linux ARM YA-MS-x.y.z-linux-arm64.tar.gz (qualsiasi Linux ARM a 64 bit, es. Slackware ARM64) oppure
            -linux-armv7l.tar.gz (ARM a 32 bit): come Linux, ./installa.sh.
-           Linux a 32 bit per PC (i686), FreeBSD e OpenBSD non sono disponibili: .NET 8 non funziona su questi sistemi.
   Mac      YA-MS-x.y.z-mac-apple-silicon.dmg (processori M1/M2/M3/M4) oppure -mac-intel.dmg.
            Aprire il .dmg, clic destro su "Installa YA-MS.command" > Apri. Installa in ~/YA-MS.
            Oppure YA-MS-x.y.z-mac-apple-silicon-app.zip / -mac-intel-app.zip: YA-MS.app da estrarre nella

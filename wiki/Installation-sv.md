@@ -12,7 +12,11 @@ Alla paket finns på sidan **[Releases](https://github.com/ic8tem/YA-MS/releases
 | Windows på ARM (64 bitar, datorer med Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` eller `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bitar): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (kopieras dit vid första starten) |
 | Linux (64 bitar), alla distributioner | `YA-MS-x.y.z-linux-x64.tar.gz` (portabel eller med `./installa.sh`) | `~/YA-MS` eller valfri mapp |
-| Linux (64 bitar): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (kopieras dit vid första starten) |
+| Linux (64 bitar): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (kopieras dit vid första starten) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (kopieras dit vid första starten) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (kopieras dit vid första starten) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (kopieras dit vid första starten) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` eller valfri mapp |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bitar) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bitar) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debianpaket | `ya-ms_x.y.z_arm64.deb` (64 bitar) eller `ya-ms_x.y.z_armhf.deb` (32 bitar) | `~/YA-MS` (kopieras dit vid första starten) |
@@ -21,8 +25,6 @@ Alla paket finns på sidan **[Releases](https://github.com/ic8tem/YA-MS/releases
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, endast programmet | `YA-MS-x.y.z-mac-apple-silicon-app.zip` eller `...-mac-intel-app.zip` | mappen där du packar upp `YA-MS.app` |
-
-32-bitars PC-Linux (i686), FreeBSD och OpenBSD har inget paket: .NET 8, som YA-MS bygger på, fungerar inte på dessa system.
 
 **Programmet och dess mapp `data` hålls alltid ihop** i mappen YA-MS: där finns alla data och inställningar (ingen AppData, inga systemmappar). Se [Inställningar och datamapp](Settings-and-Data-Folder-sv).
 

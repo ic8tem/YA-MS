@@ -12,7 +12,11 @@
 | ARM용 Windows(64비트, Snapdragon PC) | `YA-MS-x.y.z-windows-arm64-setup.exe` 또는 `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64비트): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |
 | Linux (64비트), 모든 배포판 | `YA-MS-x.y.z-linux-x64.tar.gz`(포터블 또는 `./installa.sh` 사용) | `~/YA-MS` 또는 아무 폴더 |
-| Linux(64비트): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |
+| Linux(64비트): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` 또는 아무 폴더 |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64비트) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32비트) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian 패키지 | `ya-ms_x.y.z_arm64.deb`(64비트) 또는 `ya-ms_x.y.z_armhf.deb`(32비트) | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |
@@ -21,8 +25,6 @@
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, 애플리케이션만 | `YA-MS-x.y.z-mac-apple-silicon-app.zip` 또는 `...-mac-intel-app.zip` | `YA-MS.app`을 압축 해제한 폴더 |
-
-32비트 PC용 Linux(i686), FreeBSD, OpenBSD용 패키지는 없습니다. YA-MS의 기반인 .NET 8이 이 시스템에서 동작하지 않기 때문입니다.
 
 **프로그램과 `data` 폴더는 항상 YA-MS 폴더 안에 함께 있습니다**: 모든 데이터와 설정이 그곳에 있습니다(AppData도 시스템 폴더도 사용하지 않음). [설정과 데이터 폴더](Settings-and-Data-Folder-ko)를 참조하세요.
 

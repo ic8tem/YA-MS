@@ -12,7 +12,11 @@ Semua paket ada di halaman **[Releases](https://github.com/ic8tem/YA-MS/releases
 | Windows di ARM (64 bit, PC dengan Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` atau `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (disalin ke sana saat pertama kali dijalankan) |
 | Linux (64-bit), distribusi apa pun | `YA-MS-x.y.z-linux-x64.tar.gz` (portabel atau dengan `./installa.sh`) | `~/YA-MS` atau folder mana pun |
-| Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (disalin ke sana saat pertama kali dijalankan) |
+| Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (disalin ke sana saat pertama kali dijalankan) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (disalin ke sana saat pertama kali dijalankan) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (disalin ke sana saat pertama kali dijalankan) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (disalin ke sana saat pertama kali dijalankan) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` atau folder mana pun |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, paket Debian | `ya-ms_x.y.z_arm64.deb` (64-bit) atau `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (disalin ke sana saat pertama kali dijalankan) |
@@ -21,8 +25,6 @@ Semua paket ada di halaman **[Releases](https://github.com/ic8tem/YA-MS/releases
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, hanya aplikasi | `YA-MS-x.y.z-mac-apple-silicon-app.zip` atau `...-mac-intel-app.zip` | folder tempat Anda mengekstrak `YA-MS.app` |
-
-Linux PC 32 bit (i686), FreeBSD, dan OpenBSD tidak memiliki paket: .NET 8, dasar YA-MS, tidak berjalan di sistem tersebut.
 
 **Program dan folder `data`-nya selalu berada bersama** di folder YA-MS: semua data dan pengaturan ada di sana (tanpa AppData, tanpa folder sistem). Lihat [Pengaturan dan folder data](Settings-and-Data-Folder-id).
 

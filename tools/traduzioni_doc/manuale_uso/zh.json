@@ -235,6 +235,7 @@
  "PROCEDURA": "操作步骤",
  "NOTA": "提示",
  "ATTENZIONE": "注意",
- "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "其他 ARM Linux 系统（例如 Slackware ARM64 或 armv7l 开发板）：使用 .tar.gz 格式的 linux-arm64 或 linux-armv7l 安装包，用法同 Linux。32 位 PC Linux（i686）和 FreeBSD 没有安装包，因为 .NET 8 不能在其上运行。",
- "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install. Anche OpenBSD non è disponibile.": "ARM 上的 Windows（Snapdragon 电脑）：windows-arm64 安装包。Fedora 和 openSUSE：.rpm 安装包（x86_64 或 aarch64），用 sudo dnf install 或 sudo zypper install 安装。OpenBSD 同样没有安装包。"
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux.": "其他 ARM Linux 系统（例如 Slackware ARM64 或 armv7l 开发板）：使用 .tar.gz 格式的 linux-arm64 或 linux-armv7l 安装包，用法同 Linux。",
+ "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install.": "ARM 上的 Windows（Snapdragon 电脑）：windows-arm64 安装包。Fedora 和 openSUSE：.rpm 安装包（x86_64 或 aarch64），用 sudo dnf install 或 sudo zypper install 安装。",
+ "Arch, Manjaro e Arch Linux ARM: il pacchetto .pkg.tar.zst, con sudo pacman -U. Slackware64 e Slackware ARM64: il pacchetto .txz, con installpkg da root. Qualsiasi Linux: l'AppImage (x86_64 o aarch64), da rendere eseguibile e avviare. Alpine Linux: il pacchetto alpine-x64 o alpine-arm64, in .tar.gz.": "Arch、Manjaro 和 Arch Linux ARM：.pkg.tar.zst 安装包，用 sudo pacman -U 安装。Slackware64 和 Slackware ARM64：.txz 安装包，以 root 身份用 installpkg 安装。任意 Linux：AppImage（x86_64 或 aarch64），设为可执行后直接运行。Alpine Linux：.tar.gz 格式的 alpine-x64 或 alpine-arm64 安装包。"
 }

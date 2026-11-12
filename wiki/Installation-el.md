@@ -12,7 +12,11 @@
 | Windows σε ARM (64 bit, PC με Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` ή `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (αντιγράφεται εκεί στην πρώτη εκκίνηση) |
 | Linux (64-bit), οποιαδήποτε διανομή | `YA-MS-x.y.z-linux-x64.tar.gz` (φορητό ή με `./installa.sh`) | `~/YA-MS` ή οποιονδήποτε φάκελο |
-| Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (αντιγράφεται εκεί στην πρώτη εκκίνηση) |
+| Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (αντιγράφεται εκεί στην πρώτη εκκίνηση) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (αντιγράφεται εκεί στην πρώτη εκκίνηση) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (αντιγράφεται εκεί στην πρώτη εκκίνηση) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (αντιγράφεται εκεί στην πρώτη εκκίνηση) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` ή οποιονδήποτε φάκελο |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, πακέτο Debian | `ya-ms_x.y.z_arm64.deb` (64-bit) ή `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (αντιγράφεται εκεί στην πρώτη εκκίνηση) |
@@ -21,8 +25,6 @@
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, μόνο η εφαρμογή | `YA-MS-x.y.z-mac-apple-silicon-app.zip` ή `...-mac-intel-app.zip` | ο φάκελος όπου αποσυμπιέζετε το `YA-MS.app` |
-
-Το Linux 32 bit για PC (i686), το FreeBSD και το OpenBSD δεν έχουν πακέτο: το .NET 8, στο οποίο βασίζεται το YA-MS, δεν λειτουργεί σε αυτά τα συστήματα.
 
 **Το πρόγραμμα και ο φάκελος `data` μένουν πάντα μαζί** στον φάκελο του YA-MS: εκεί βρίσκονται όλα τα δεδομένα και οι ρυθμίσεις (χωρίς AppData, χωρίς φακέλους συστήματος). Δείτε [Ρυθμίσεις και φάκελος δεδομένων](Settings-and-Data-Folder-el).
 

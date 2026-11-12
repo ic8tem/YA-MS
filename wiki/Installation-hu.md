@@ -12,7 +12,11 @@ Minden csomag a **[Releases](https://github.com/ic8tem/YA-MS/releases)** oldalon
 | Windows ARM-on (64 bites, Snapdragon processzoros PC-k) | `YA-MS-x.y.z-windows-arm64-setup.exe` vagy `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bites): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (az első indításkor oda másolódik) |
 | Linux (64 bites), bármely disztribúció | `YA-MS-x.y.z-linux-x64.tar.gz` (hordozhatóként vagy a `./installa.sh` szkripttel) | `~/YA-MS` vagy bármely mappa |
-| Linux (64 bites): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (az első indításkor oda másolódik) |
+| Linux (64 bites): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (az első indításkor oda másolódik) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (az első indításkor oda másolódik) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (az első indításkor oda másolódik) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (az első indításkor oda másolódik) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` vagy bármely mappa |
 | Raspberry Pi 3/4/5, 400/500 (64 bites Raspberry Pi OS) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (32 bites Raspberry Pi OS) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian-csomag | `ya-ms_x.y.z_arm64.deb` (64 bites) vagy `ya-ms_x.y.z_armhf.deb` (32 bites) | `~/YA-MS` (az első indításkor oda másolódik) |
@@ -21,8 +25,6 @@ Minden csomag a **[Releases](https://github.com/ic8tem/YA-MS/releases)** oldalon
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, csak az alkalmazás | `YA-MS-x.y.z-mac-apple-silicon-app.zip` vagy `...-mac-intel-app.zip` | az a mappa, ahová a `YA-MS.app` csomagot kibontja |
-
-A 32 bites PC-s Linuxhoz (i686), a FreeBSD-hez és az OpenBSD-hez nincs csomag: a .NET 8, amelyre a YA-MS épül, ezeken a rendszereken nem fut.
 
 **A program és a `data` mappája mindig együtt marad** a YA-MS mappában: minden adat és beállítás ott található (nincs AppData, nincsenek rendszermappák). Lásd: [Beállítások és adatmappa](Settings-and-Data-Folder-hu).
 

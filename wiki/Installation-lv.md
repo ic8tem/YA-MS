@@ -12,7 +12,11 @@ Visas pakotnes ir lapā **[Releases](https://github.com/ic8tem/YA-MS/releases)**
 | Windows uz ARM (64 bitu, datori ar Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` vai `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 biti): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (tur nokopēts pirmajā palaišanā) |
 | Linux (64 biti), jebkurš distributīvs | `YA-MS-x.y.z-linux-x64.tar.gz` (portatīvi vai ar `./installa.sh`) | `~/YA-MS` vai jebkura mape |
-| Linux (64 bitu): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (tur nokopēts pirmajā palaišanā) |
+| Linux (64 bitu): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (tur nokopēts pirmajā palaišanā) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (tur nokopēts pirmajā palaišanā) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (tur nokopēts pirmajā palaišanā) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (tur nokopēts pirmajā palaišanā) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` vai jebkura mape |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 biti) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 biti) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian pakotne | `ya-ms_x.y.z_arm64.deb` (64 biti) vai `ya-ms_x.y.z_armhf.deb` (32 biti) | `~/YA-MS` (tur nokopēts pirmajā palaišanā) |
@@ -21,8 +25,6 @@ Visas pakotnes ir lapā **[Releases](https://github.com/ic8tem/YA-MS/releases)**
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, tikai lietotne | `YA-MS-x.y.z-mac-apple-silicon-app.zip` vai `...-mac-intel-app.zip` | mape, kurā atarhivē `YA-MS.app` |
-
-32 bitu datora Linux (i686), FreeBSD un OpenBSD nav pakotnes: .NET 8, uz kā balstās YA-MS, šajās sistēmās nedarbojas.
 
 **Programma un tās `data` mape vienmēr paliek kopā** YA-MS mapē: tur ir visi dati un iestatījumi (ne AppData, ne sistēmas mapes). Sk. [Iestatījumi un datu mape](Settings-and-Data-Folder-lv).
 

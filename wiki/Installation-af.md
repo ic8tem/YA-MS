@@ -12,7 +12,11 @@ Al die pakkette is op die **[Releases](https://github.com/ic8tem/YA-MS/releases)
 | Windows op ARM (64-bis, rekenaars met Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` of `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bis): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (daarheen gekopieer by die eerste opstart) |
 | Linux (64-bis), enige distribusie | `YA-MS-x.y.z-linux-x64.tar.gz` (draagbaar of met `./installa.sh`) | `~/YA-MS` of enige gids |
-| Linux (64-bis): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (daarheen gekopieer by die eerste opstart) |
+| Linux (64-bis): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (daarheen gekopieer by die eerste opstart) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (daarheen gekopieer by die eerste opstart) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (daarheen gekopieer by die eerste opstart) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (daarheen gekopieer by die eerste opstart) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` of enige gids |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bis) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bis) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian-pakket | `ya-ms_x.y.z_arm64.deb` (64-bis) of `ya-ms_x.y.z_armhf.deb` (32-bis) | `~/YA-MS` (daarheen gekopieer by die eerste opstart) |
@@ -21,8 +25,6 @@ Al die pakkette is op die **[Releases](https://github.com/ic8tem/YA-MS/releases)
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, slegs die toepassing | `YA-MS-x.y.z-mac-apple-silicon-app.zip` of `...-mac-intel-app.zip` | die gids waarin jy `YA-MS.app` uitpak |
-
-32-bis-PC-Linux (i686), FreeBSD en OpenBSD het geen pakket nie: .NET 8, waarop YA-MS gebou is, werk nie op hierdie stelsels nie.
 
 **Die program en sy `data`-gids bly altyd saam** in die YA-MS-gids: alle data en instellings is daar (geen AppData, geen stelselgidse nie). Sien [Instellings en datagids](Settings-and-Data-Folder-af).
 

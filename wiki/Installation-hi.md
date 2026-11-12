@@ -12,7 +12,11 @@
 | ARM पर Windows (64 बिट, Snapdragon वाले PC) | `YA-MS-x.y.z-windows-arm64-setup.exe` या `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-बिट): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (पहली बार शुरू करने पर वहाँ कॉपी होता है) |
 | Linux (64-बिट), कोई भी डिस्ट्रीब्यूशन | `YA-MS-x.y.z-linux-x64.tar.gz` (पोर्टेबल या `./installa.sh` के साथ) | `~/YA-MS` या कोई भी फ़ोल्डर |
-| Linux (64 बिट): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (पहली बार शुरू करने पर वहाँ कॉपी होता है) |
+| Linux (64 बिट): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (पहली बार शुरू करने पर वहाँ कॉपी होता है) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (पहली बार शुरू करने पर वहाँ कॉपी होता है) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (पहली बार शुरू करने पर वहाँ कॉपी होता है) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (पहली बार शुरू करने पर वहाँ कॉपी होता है) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` या कोई भी फ़ोल्डर |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-बिट) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-बिट) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian पैकेज | `ya-ms_x.y.z_arm64.deb` (64-बिट) या `ya-ms_x.y.z_armhf.deb` (32-बिट) | `~/YA-MS` (पहली बार शुरू करने पर वहाँ कॉपी होता है) |
@@ -21,8 +25,6 @@
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, केवल एप्लिकेशन | `YA-MS-x.y.z-mac-apple-silicon-app.zip` या `...-mac-intel-app.zip` | वह फ़ोल्डर जहाँ आप `YA-MS.app` निकालते हैं |
-
-PC के लिए 32 बिट Linux (i686), FreeBSD और OpenBSD का कोई पैकेज नहीं है: .NET 8, जिस पर YA-MS बना है, इन प्रणालियों पर नहीं चलता।
 
 **प्रोग्राम और उसका `data` फ़ोल्डर हमेशा साथ रहते हैं**, YA-MS फ़ोल्डर में: सारा डेटा और सारी सेटिंग्स वहीं हैं (न AppData, न सिस्टम फ़ोल्डर)। देखें [सेटिंग्स और डेटा फ़ोल्डर](Settings-and-Data-Folder-hi)।
 

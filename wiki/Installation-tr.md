@@ -12,7 +12,11 @@ Tüm paketler **[Releases](https://github.com/ic8tem/YA-MS/releases)** sayfasın
 | ARM üzerinde Windows (64 bit, Snapdragon'lu PC'ler) | `YA-MS-x.y.z-windows-arm64-setup.exe` ya da `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (ilk açılışta oraya kopyalanır) |
 | Linux (64 bit), herhangi bir dağıtım | `YA-MS-x.y.z-linux-x64.tar.gz` (taşınabilir ya da `./installa.sh` ile) | `~/YA-MS` ya da herhangi bir klasör |
-| Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (ilk açılışta oraya kopyalanır) |
+| Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (ilk açılışta oraya kopyalanır) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (ilk açılışta oraya kopyalanır) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (ilk açılışta oraya kopyalanır) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (ilk açılışta oraya kopyalanır) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` ya da herhangi bir klasör |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian paketi | `ya-ms_x.y.z_arm64.deb` (64 bit) ya da `ya-ms_x.y.z_armhf.deb` (32 bit) | `~/YA-MS` (ilk açılışta oraya kopyalanır) |
@@ -21,8 +25,6 @@ Tüm paketler **[Releases](https://github.com/ic8tem/YA-MS/releases)** sayfasın
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, yalnızca uygulama | `YA-MS-x.y.z-mac-apple-silicon-app.zip` ya da `...-mac-intel-app.zip` | `YA-MS.app`'i açtığınız klasör |
-
-32 bit PC Linux (i686), FreeBSD ve OpenBSD için paket yok: YA-MS'in dayandığı .NET 8 bu sistemlerde çalışmaz.
 
 **Program ve `data` klasörü her zaman birlikte durur**, YA-MS klasöründe: tüm veriler ve ayarlar oradadır (AppData yok, sistem klasörü yok). Bkz. [Ayarlar ve veri klasörü](Settings-and-Data-Folder-tr).
 

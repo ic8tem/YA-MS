@@ -12,7 +12,11 @@
 | ARM 上的 Windows（64 位，Snapdragon 电脑） | `YA-MS-x.y.z-windows-arm64-setup.exe` 或 `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux（64 位）：Debian、Ubuntu、Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS`（首次启动时复制到该处） |
 | Linux（64 位），任意发行版 | `YA-MS-x.y.z-linux-x64.tar.gz`（便携使用或通过 `./installa.sh` 安装） | `~/YA-MS` 或任意文件夹 |
-| Linux（64 位）：Fedora、openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS`（首次启动时复制到该处） |
+| Linux（64 位）：Fedora、openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS`（首次启动时复制到该处） |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS`（首次启动时复制到该处） |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS`（首次启动时复制到该处） |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS`（首次启动时复制到该处） |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` 或任意文件夹 |
 | Raspberry Pi 3/4/5、400/500（Raspberry Pi OS 64 位） | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4（Raspberry Pi OS 32 位） | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi，Debian 软件包 | `ya-ms_x.y.z_arm64.deb`（64 位）或 `ya-ms_x.y.z_armhf.deb`（32 位） | `~/YA-MS`（首次启动时复制到该处） |
@@ -21,8 +25,6 @@
 | macOS，Apple 芯片（M1/M2/M3/M4） | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS，Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS，仅应用程序 | `YA-MS-x.y.z-mac-apple-silicon-app.zip` 或 `...-mac-intel-app.zip` | 解压出 `YA-MS.app` 的文件夹 |
-
-32 位 PC Linux（i686）、FreeBSD 和 OpenBSD 没有安装包：YA-MS 所依赖的 .NET 8 不能在这些系统上运行。
 
 **程序与其 `data` 文件夹始终放在一起**，位于 YA-MS 文件夹中：所有数据和设置都在那里（不使用 AppData，不使用系统文件夹）。参见[设置与数据文件夹](Settings-and-Data-Folder-zh)。
 

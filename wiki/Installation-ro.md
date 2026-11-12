@@ -12,7 +12,11 @@ Toate pachetele se află pe pagina **[Releases](https://github.com/ic8tem/YA-MS/
 | Windows pe ARM (64 de biți, PC-uri cu Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` sau `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 de biți): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (copiat acolo la prima pornire) |
 | Linux (64 de biți), orice distribuție | `YA-MS-x.y.z-linux-x64.tar.gz` (portabil sau cu `./installa.sh`) | `~/YA-MS` sau orice dosar |
-| Linux (64 de biți): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (copiat acolo la prima pornire) |
+| Linux (64 de biți): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (copiat acolo la prima pornire) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (copiat acolo la prima pornire) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (copiat acolo la prima pornire) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (copiat acolo la prima pornire) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` sau orice dosar |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 de biți) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 de biți) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, pachet Debian | `ya-ms_x.y.z_arm64.deb` (64 de biți) sau `ya-ms_x.y.z_armhf.deb` (32 de biți) | `~/YA-MS` (copiat acolo la prima pornire) |
@@ -21,8 +25,6 @@ Toate pachetele se află pe pagina **[Releases](https://github.com/ic8tem/YA-MS/
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, doar aplicația | `YA-MS-x.y.z-mac-apple-silicon-app.zip` sau `...-mac-intel-app.zip` | dosarul în care extrageți `YA-MS.app` |
-
-Linux pe 32 de biți pentru PC (i686), FreeBSD și OpenBSD nu au pachet: .NET 8, pe care se bazează YA-MS, nu funcționează pe aceste sisteme.
 
 **Programul și dosarul său `data` stau întotdeauna împreună** în dosarul YA-MS: toate datele și setările se află acolo (fără AppData, fără dosare de sistem). Vedeți [Setări și dosarul de date](Settings-and-Data-Folder-ro).
 

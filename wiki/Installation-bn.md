@@ -12,7 +12,11 @@
 | ARM-এ Windows (64 বিট, Snapdragon-যুক্ত PC) | `YA-MS-x.y.z-windows-arm64-setup.exe` অথবা `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-বিট): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (প্রথম চালুতে সেখানে কপি হয়) |
 | Linux (64-বিট), যেকোনো ডিস্ট্রিবিউশন | `YA-MS-x.y.z-linux-x64.tar.gz` (পোর্টেবল বা `./installa.sh` দিয়ে) | `~/YA-MS` অথবা যেকোনো ফোল্ডার |
-| Linux (64 বিট): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (প্রথম চালুতে সেখানে কপি হয়) |
+| Linux (64 বিট): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (প্রথম চালুতে সেখানে কপি হয়) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (প্রথম চালুতে সেখানে কপি হয়) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (প্রথম চালুতে সেখানে কপি হয়) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (প্রথম চালুতে সেখানে কপি হয়) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` অথবা যেকোনো ফোল্ডার |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-বিট) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-বিট) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian প্যাকেজ | `ya-ms_x.y.z_arm64.deb` (64-বিট) অথবা `ya-ms_x.y.z_armhf.deb` (32-বিট) | `~/YA-MS` (প্রথম চালুতে সেখানে কপি হয়) |
@@ -21,8 +25,6 @@
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, শুধু অ্যাপ্লিকেশন | `YA-MS-x.y.z-mac-apple-silicon-app.zip` অথবা `...-mac-intel-app.zip` | যে ফোল্ডারে আপনি `YA-MS.app` এক্সট্র্যাক্ট করেন |
-
-PC-এর 32 বিট Linux (i686), FreeBSD ও OpenBSD-এর কোনো প্যাকেজ নেই: YA-MS যে .NET 8-এর ওপর তৈরি, তা এই সিস্টেমগুলোতে চলে না।
 
 **প্রোগ্রাম ও তার `data` ফোল্ডার সর্বদা একসাথে** YA-MS ফোল্ডারে থাকে: সব তথ্য ও সেটিংস সেখানেই (কোনো AppData নয়, কোনো সিস্টেম ফোল্ডার নয়)। দেখুন [সেটিংস ও ডেটা ফোল্ডার](Settings-and-Data-Folder-bn)।
 

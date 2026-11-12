@@ -12,7 +12,11 @@
 | Windows на ARM (64 біт, ПК зі Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` або `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 біт): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (копіюється туди під час першого запуску) |
 | Linux (64 біт), будь-який дистрибутив | `YA-MS-x.y.z-linux-x64.tar.gz` (портативно або через `./installa.sh`) | `~/YA-MS` або будь-яка тека |
-| Linux (64 біт): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (копіюється туди під час першого запуску) |
+| Linux (64 біт): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (копіюється туди під час першого запуску) |
+| Arch, Manjaro, EndeavourOS, Arch Linux ARM | `ya-ms-x.y.z-1-x86_64.pkg.tar.zst`, `ya-ms-x.y.z-1-aarch64.pkg.tar.zst` | `~/YA-MS` (копіюється туди під час першого запуску) |
+| Slackware64, Slackware ARM64 | `ya-ms-x.y.z-x86_64-1_ic8tem.txz`, `ya-ms-x.y.z-aarch64-1_ic8tem.txz` | `~/YA-MS` (копіюється туди під час першого запуску) |
+| AppImage (x86_64, aarch64) | `YA-MS-x.y.z-x86_64.AppImage`, `YA-MS-x.y.z-aarch64.AppImage` | `~/YA-MS` (копіюється туди під час першого запуску) |
+| Alpine Linux (musl) | `YA-MS-x.y.z-alpine-x64.tar.gz`, `YA-MS-x.y.z-alpine-arm64.tar.gz` | `~/YA-MS` або будь-яка тека |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 біт) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 біт) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, пакет Debian | `ya-ms_x.y.z_arm64.deb` (64 біт) або `ya-ms_x.y.z_armhf.deb` (32 біт) | `~/YA-MS` (копіюється туди під час першого запуску) |
@@ -21,8 +25,6 @@
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, лише застосунок | `YA-MS-x.y.z-mac-apple-silicon-app.zip` або `...-mac-intel-app.zip` | тека, у яку ви розпакували `YA-MS.app` |
-
-Для 32-бітного Linux на ПК (i686), FreeBSD і OpenBSD пакета немає: .NET 8, на якому побудовано YA-MS, на цих системах не працює.
 
 **Програма і її тека `data` завжди лишаються разом** у теці YA-MS: там усі дані й налаштування (без AppData і системних тек). Див. [Налаштування і тека даних](Settings-and-Data-Folder-uk).
 

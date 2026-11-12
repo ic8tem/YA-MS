@@ -868,7 +868,20 @@ namespace YAMS
             WhenChanged(chkLayerRadar, ToggleButton.IsCheckedProperty, SyncProfile);
             numLayer.ValueChanged += (s, e) => SyncProfile();
             SyncProfile();
-            DockTop(p2, Row(L(Lang.T("Impostazione del calcolo:")), rbProfPrud, rbProfDj, rbProfPers, chkTrailLen, chkBeta, chkClassic));
+            // casella dell'angolo beta in evidenza: bordino in rilievo (cambia molto i valori sulle tratte lunghe)
+            Border betaBox = new Border
+            {
+                Child = chkBeta,
+                Background = Pal.B(Pal.Card),
+                BorderBrush = Pal.B(Pal.Border),
+                BorderThickness = new Thickness(1),
+                CornerRadius = new CornerRadius(6),
+                Padding = new Thickness(6, 1, 8, 1),
+                Margin = new Thickness(4, 2),
+                VerticalAlignment = VerticalAlignment.Center,
+                BoxShadow = new BoxShadows(new BoxShadow { OffsetX = 1, OffsetY = 2, Blur = 4, Color = Pal.Argb(110, 0, 0, 0) })
+            };
+            DockTop(p2, Row(L(Lang.T("Impostazione del calcolo:")), rbProfPrud, rbProfDj, rbProfPers, chkTrailLen, betaBox, chkClassic));
             chart24 = new SimpleChart { Height = Chart24Height };
             DockTop(p2, chart24);
             List<string> cols24 = new List<string> { Lang.T("Sigla"), Lang.T("Sciame"), "ZHR" };

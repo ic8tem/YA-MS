@@ -1,5 +1,6 @@
 // YA-MS - avvio (Windows, Linux, Mac)
 using System;
+using System.Collections.Generic;
 using System.IO;
 using Avalonia;
 
@@ -29,6 +30,7 @@ namespace YAMS
             {
                 if (args[i] == "--prova-dj5hg") { ProvaDj5hg(); return; }
                 if (args[i] == "--confronto-brams") { ConfrontoBrams(); return; }
+                if (args[i] == "--indici-tratte" && i + 3 < args.Length) { IndiciTratte(args[i + 1], args[i + 2], args[i + 3]); return; }
             }
             // prova senza finestra della fonte PSKReporter MQTT (controllo automatico): --prova-mqtt <secondi>
             for (int i = 0; i < args.Length - 1; i++)
@@ -52,6 +54,69 @@ namespace YAMS
             {
                 try { File.WriteAllText(Path.Combine(AppPaths.DataDir, "errore_avvio.txt"), ex.ToString()); } catch { }
                 throw;
+            }
+        }
+
+        // Indici della tratta per un elenco di coppie di locator (verifica con gli spot reali, es. HamSCI MSQP):
+        //   --indici-tratte <coppie.txt> <inizio UTC aaaa-mm-ggThh> <ore>
+        // coppie.txt: "LOC1 LOC2" per riga. Scrive su stdout CSV: loc1;loc2;km;ora;I_beta;I_senzabeta;I_dh9gcd
+        // I = somma di ZHR x efficienza / 100 degli sciami attivi a meta' ora (come la riga Sigma della tabella 24 h);
+        // I_dh9gcd = stessa somma con la formula di DH9GCD vista da LOC1. Quota 90 km, lobo come diagramma a 0 gradi.
+        static void IndiciTratte(string file, string start, string hoursText)
+        {
+            System.Globalization.CultureInfo ci = System.Globalization.CultureInfo.InvariantCulture;
+            Catalog.Load(AppPaths.DataDir);
+            DateTime t0 = DateTime.SpecifyKind(DateTime.ParseExact(start, "yyyy-MM-ddTHH", ci), DateTimeKind.Utc);
+            int nh = int.Parse(hoursText, ci);
+            PathModel.HotSpotAuto = true; PathModel.TrailLength = false; PathModel.LobePattern = true; PathModel.VerticalHpbwDeg = 40;
+            // radianti e ZHR per ogni ora (comuni a tutte le tratte)
+            List<Shower>[] act = new List<Shower>[nh]; List<Vec3>[] dir = new List<Vec3>[nh]; List<double>[] zz = new List<double>[nh];
+            for (int h = 0; h < nh; h++)
+            {
+                DateTime u = t0.AddHours(h + 0.5);
+                double jd = Astro.JulianDay(u), lam = Astro.SolarLongitude(jd);
+                act[h] = new List<Shower>(); dir[h] = new List<Vec3>(); zz[h] = new List<double>();
+                foreach (Shower sh in Catalog.Showers)
+                {
+                    if (!sh.IsActive(u)) continue;
+                    double z = sh.ZhrAt(lam, u), ra, dec; sh.RadiantAt(lam, u, out ra, out dec);
+                    if (z < 0.5) continue;
+                    act[h].Add(sh); dir[h].Add(Astro.RaDecToEcef(ra, dec, jd)); zz[h].Add(z);
+                }
+            }
+            Console.WriteLine("loc1;loc2;km;ora;I_beta;I_senzabeta;I_dh9gcd");
+            foreach (string line in File.ReadAllLines(file))
+            {
+                string[] p = line.Split(new[] { ' ', ';', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                if (p.Length < 2) continue;
+                LatLon a, b;
+                if (!Astro.TryLocator(p[0], out a) || !Astro.TryLocator(p[1], out b)) continue;
+                double[] ib = new double[nh], ino = new double[nh], idh = new double[nh];
+                double km = 0; bool ok = true;
+                foreach (bool beta in new[] { true, false })
+                {
+                    PathModel.BetaFactor = beta;
+                    PathModel m = PathModel.Build(a, 0, b, 0, 90, 0);
+                    if (!m.Valid) { ok = false; break; }
+                    km = m.DistKm;
+                    for (int h = 0; h < nh; h++)
+                    {
+                        double s = 0, sd = 0;
+                        for (int k = 0; k < dir[h].Count; k++)
+                        {
+                            double lf; s += zz[h][k] * m.Efficiency(dir[h][k], out lf) / 100.0;
+                            if (beta)
+                            {
+                                double az, el; Astro.AltAz(a, dir[h][k], out az, out el);
+                                sd += zz[h][k] * MainWindow.Dh9gcdPercent(az, el, m.BearingHomeToDx) / 100.0;
+                            }
+                        }
+                        if (beta) { ib[h] = s; idh[h] = sd; } else ino[h] = s;
+                    }
+                }
+                if (!ok) continue;
+                for (int h = 0; h < nh; h++)
+                    Console.WriteLine(string.Format(ci, "{0};{1};{2:F0};{3};{4:F3};{5:F3};{6:F3}", p[0], p[1], km, h, ib[h], ino[h], idh[h]));
             }
         }
 

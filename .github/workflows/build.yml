@@ -33,7 +33,9 @@ jobs:
           printf 'mio_locator=JN70CN83\nmia_quota_m=62\ndx_locator=JO76QP\ndx_quota_m=50\nquota_da_radar=0\nquota_scie_km=88.5\nelevazione_lobo_gradi=${{ matrix.lobo }}\nboom_m=9.2\nlingua=it\ntema=chiaro\n' > $D/data/config.ini
           cat $D/data/config.ini
           chmod +x $D/YA-MS
-          TZ=UTC faketime -f "@2026-12-14 12:00:00" timeout 300 xvfb-run -a -s "-screen 0 1900x1000x24" $D/YA-MS --screenshot "$PWD/shots" --dx JO76QP --ore 0 || true
+          sudo timedatectl set-ntp false || true
+          sudo date -u -s "2026-12-14 12:00:00"; date -u
+          TZ=UTC timeout 300 xvfb-run -a -s "-screen 0 1900x1000x24" $D/YA-MS --screenshot "$PWD/shots" --dx JO76QP --ore 0 || true
           ls -la shots || true
           cp $D/data/config.ini shots/config_dopo.ini 2>/dev/null || true
           cp $D/data/errore_avvio.txt shots/ 2>/dev/null || true

@@ -60,7 +60,8 @@ namespace YAMS
         {
             Architecture a = RuntimeInformation.ProcessArchitecture;
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-                return a == Architecture.X86 ? "-windows-x86-portatile.zip" : "-windows-x64-portatile.zip";
+                return a == Architecture.X86 ? "-windows-x86-portatile.zip"
+                     : a == Architecture.Arm64 ? "-windows-arm64-portatile.zip" : "-windows-x64-portatile.zip";
             if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
                 return a == Architecture.Arm64 ? "-mac-apple-silicon-app.zip" : "-mac-intel-app.zip";
             if (a == Architecture.Arm64) return "-raspberry-pi-64bit.tar.gz";

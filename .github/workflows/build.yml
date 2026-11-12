@@ -28,6 +28,8 @@ jobs:
             arch: x64
           - rid: win-x86      # Windows a 32 bit
             arch: x86
+          - rid: win-arm64    # Windows su ARM (PC con Snapdragon)
+            arch: arm64
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
@@ -79,6 +81,8 @@ jobs:
           chmod +x pkg/YA-MS/installa.sh pkg/YA-MS/YA-MS
           tar -C pkg -czf dist/YA-MS-$VER-linux-x64.tar.gz YA-MS
           bash installer/make-deb.sh linux-x64 "$VER" publish/linux-x64 dist
+          sudo apt-get install -y -qq rpm >/dev/null
+          bash installer/make-rpm.sh linux-x64 "$VER" dist/ya-ms_${VER}_amd64.deb dist
       - name: Prova delle tratte di DJ5HG (Quadrantidi, MS-Geometrie 2004)
         if: github.ref != 'refs/heads/release'
         run: |
@@ -170,6 +174,10 @@ jobs:
           tar -C pkg -czf dist/YA-MS-$VER-${{ matrix.name }}.tar.gz YA-MS
           tar -C pkg -czf dist/YA-MS-$VER-${{ matrix.generic }}.tar.gz YA-MS
           bash installer/make-deb.sh ${{ matrix.rid }} "$VER" publish/${{ matrix.rid }} dist
+          if [ "${{ matrix.rid }}" = "linux-arm64" ]; then
+            sudo apt-get install -y -qq rpm >/dev/null
+            bash installer/make-rpm.sh linux-arm64 "$VER" dist/ya-ms_${VER}_arm64.deb dist
+          fi
       - name: Prova di avvio su ARM (schermo virtuale)
         if: matrix.rid == 'linux-arm64'
         run: |
@@ -255,7 +263,8 @@ jobs:
             Dalla 1.8.0 il programma si aggiorna da GitHub (pulsante Aggiornamenti, la cartella data resta) e segnala i file mancanti.
             Dalla 1.7.0 in giù il programma non si aggiorna da solo: questa versione va installata a mano, le successive no.
 
-            - Windows: YA-MS-...-windows-x64-setup.exe (installa in C:\YA-MS) oppure lo zip portatile; per Windows a 32 bit i file -windows-x86-.
+            - Windows: YA-MS-...-windows-x64-setup.exe (installa in C:\YA-MS) oppure lo zip portatile; per Windows a 32 bit i file -windows-x86-, per Windows su ARM (Snapdragon) i file -windows-arm64-.
+            - Fedora, openSUSE: ya-ms-....x86_64.rpm (o .aarch64.rpm), con: sudo dnf install ./ya-ms-....rpm oppure sudo zypper install ./ya-ms-....rpm.
             - Linux (Debian, Ubuntu, Mint): ya-ms_..._amd64.deb, con: sudo apt install ./ya-ms_..._amd64.deb (al primo avvio il programma si copia in ~/YA-MS).
               Oppure YA-MS-...-linux-x64.tar.gz: portatile (si avvia ./YA-MS dalla cartella estratta) o installabile con ./installa.sh in ~/YA-MS.
             - Raspberry Pi 3/4/5: ya-ms_..._arm64.deb (Raspberry Pi OS 64 bit) o ya-ms_..._armhf.deb (32 bit); in alternativa YA-MS-...-raspberry-pi-64bit.tar.gz o -32bit.tar.gz.
@@ -268,6 +277,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
         run: |
-          gh release view "v$VER" --json assets -q '.assets[].name' | grep -v -e '^YA-MS-' -e '^ya-ms_' | while read -r n; do
+          gh release view "v$VER" --json assets -q '.assets[].name' | grep -v -e '^YA-MS-' -e '^ya-ms_' -e '^ya-ms-.*\.rpm$' | while read -r n; do
             gh release delete-asset "v$VER" "$n" -y
           done

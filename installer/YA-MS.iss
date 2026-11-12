@@ -24,6 +24,10 @@ PrivilegesRequired=lowest
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 #endif
+#if Arch == "arm64"
+ArchitecturesAllowed=arm64
+ArchitecturesInstallIn64BitMode=arm64
+#endif
 OutputDir=..\dist
 OutputBaseFilename=YA-MS-{#AppVersion}-windows-{#Arch}-setup
 SetupIconFile=..\src\Assets\ya-ms.ico

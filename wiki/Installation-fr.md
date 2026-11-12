@@ -9,8 +9,10 @@ Tous les paquets se trouvent sur la page **[Releases](https://github.com/ic8tem/
 | Windows (64 bits) | `YA-MS-x.y.z-windows-x64-setup.exe` (installeur) | `C:\YA-MS` |
 | Windows (64 bits), portable | `YA-MS-x.y.z-windows-x64-portatile.zip` | tout dossier où vous pouvez écrire |
 | Windows (32 bits, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` ou `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows sur ARM (64 bits, PC avec Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` ou `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bits) : Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (copié là au premier démarrage) |
 | Linux (64 bits), toute distribution | `YA-MS-x.y.z-linux-x64.tar.gz` (portable ou avec `./installa.sh`) | `~/YA-MS` ou tout dossier |
+| Linux (64 bits) : Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (copié là au premier démarrage) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bits) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bits) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, paquet Debian | `ya-ms_x.y.z_arm64.deb` (64 bits) ou `ya-ms_x.y.z_armhf.deb` (32 bits) | `~/YA-MS` (copié là au premier démarrage) |
@@ -20,7 +22,7 @@ Tous les paquets se trouvent sur la page **[Releases](https://github.com/ic8tem/
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, application seule | `YA-MS-x.y.z-mac-apple-silicon-app.zip` ou `...-mac-intel-app.zip` | le dossier où vous décompressez `YA-MS.app` |
 
-Linux PC 32 bits (i686) et FreeBSD n'ont pas de paquet : .NET 8, sur lequel repose YA-MS, ne fonctionne pas sur ces systèmes.
+Linux PC 32 bits (i686), FreeBSD et OpenBSD n'ont pas de paquet : .NET 8, sur lequel repose YA-MS, ne fonctionne pas sur ces systèmes.
 
 **Le programme et son dossier `data` restent toujours ensemble** dans le dossier YA-MS : toutes les données et tous les réglages s'y trouvent (pas d'AppData, pas de dossiers système). Voir [Réglages et dossier des données](Settings-and-Data-Folder-fr).
 

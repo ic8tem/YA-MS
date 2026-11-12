@@ -9,8 +9,10 @@ Tüm paketler **[Releases](https://github.com/ic8tem/YA-MS/releases)** sayfasın
 | Windows (64 bit) | `YA-MS-x.y.z-windows-x64-setup.exe` (kurulum programı) | `C:\YA-MS` |
 | Windows (64 bit), taşınabilir | `YA-MS-x.y.z-windows-x64-portatile.zip` | yazma izniniz olan herhangi bir klasör |
 | Windows (32 bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` ya da `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| ARM üzerinde Windows (64 bit, Snapdragon'lu PC'ler) | `YA-MS-x.y.z-windows-arm64-setup.exe` ya da `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (ilk açılışta oraya kopyalanır) |
 | Linux (64 bit), herhangi bir dağıtım | `YA-MS-x.y.z-linux-x64.tar.gz` (taşınabilir ya da `./installa.sh` ile) | `~/YA-MS` ya da herhangi bir klasör |
+| Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (ilk açılışta oraya kopyalanır) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian paketi | `ya-ms_x.y.z_arm64.deb` (64 bit) ya da `ya-ms_x.y.z_armhf.deb` (32 bit) | `~/YA-MS` (ilk açılışta oraya kopyalanır) |
@@ -20,7 +22,7 @@ Tüm paketler **[Releases](https://github.com/ic8tem/YA-MS/releases)** sayfasın
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, yalnızca uygulama | `YA-MS-x.y.z-mac-apple-silicon-app.zip` ya da `...-mac-intel-app.zip` | `YA-MS.app`'i açtığınız klasör |
 
-32 bit PC Linux (i686) ve FreeBSD için paket yok: YA-MS'in dayandığı .NET 8 bu sistemlerde çalışmaz.
+32 bit PC Linux (i686), FreeBSD ve OpenBSD için paket yok: YA-MS'in dayandığı .NET 8 bu sistemlerde çalışmaz.
 
 **Program ve `data` klasörü her zaman birlikte durur**, YA-MS klasöründe: tüm veriler ve ayarlar oradadır (AppData yok, sistem klasörü yok). Bkz. [Ayarlar ve veri klasörü](Settings-and-Data-Folder-tr).
 

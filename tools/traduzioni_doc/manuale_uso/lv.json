@@ -235,5 +235,6 @@
  "PROCEDURA": "PROCEDŪRA",
  "NOTA": "PIEZĪME",
  "ATTENZIONE": "UZMANĪBU",
- "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Citas ARM Linux sistēmas (piemēram, Slackware ARM64 vai armv7l plates): pakotne linux-arm64 vai linux-armv7l, .tar.gz formātā, kā Linux gadījumā. 32 bitu datora Linux (i686) un FreeBSD nav pieejami, jo .NET 8 tajos nedarbojas."
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Citas ARM Linux sistēmas (piemēram, Slackware ARM64 vai armv7l plates): pakotne linux-arm64 vai linux-armv7l, .tar.gz formātā, kā Linux gadījumā. 32 bitu datora Linux (i686) un FreeBSD nav pieejami, jo .NET 8 tajos nedarbojas.",
+ "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install. Anche OpenBSD non è disponibile.": "Windows uz ARM (datori ar Snapdragon): pakotne windows-arm64. Fedora un openSUSE: .rpm pakotne (x86_64 vai aarch64), ar sudo dnf install vai sudo zypper install. Arī OpenBSD nav pieejams."
 }

@@ -235,5 +235,6 @@
  "PROCEDURA": "YORDAM",
  "NOTA": "NOT",
  "ATTENZIONE": "DİKKAT",
- "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Diğer ARM Linux sistemleri (örneğin Slackware ARM64 veya armv7l kartlar): Linux'taki gibi .tar.gz biçiminde linux-arm64 veya linux-armv7l paketi. 32 bit PC Linux (i686) ve FreeBSD mevcut değildir, çünkü .NET 8 bunlarda çalışmaz."
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Diğer ARM Linux sistemleri (örneğin Slackware ARM64 veya armv7l kartlar): Linux'taki gibi .tar.gz biçiminde linux-arm64 veya linux-armv7l paketi. 32 bit PC Linux (i686) ve FreeBSD mevcut değildir, çünkü .NET 8 bunlarda çalışmaz.",
+ "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install. Anche OpenBSD non è disponibile.": "ARM üzerinde Windows (Snapdragon'lu PC'ler): windows-arm64 paketi. Fedora ve openSUSE: sudo dnf install veya sudo zypper install ile .rpm paketi (x86_64 veya aarch64). OpenBSD de mevcut değildir."
 }

@@ -235,5 +235,6 @@
  "PROCEDURA": "절차",
  "NOTA": "참고",
  "ATTENZIONE": "주의",
- "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "기타 ARM Linux 시스템(예: Slackware ARM64 또는 armv7l 보드): linux-arm64 또는 linux-armv7l 패키지(.tar.gz)를 Linux와 같은 방식으로 사용합니다. 32비트 PC용 Linux(i686)와 FreeBSD는 .NET 8이 동작하지 않아 제공되지 않습니다."
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "기타 ARM Linux 시스템(예: Slackware ARM64 또는 armv7l 보드): linux-arm64 또는 linux-armv7l 패키지(.tar.gz)를 Linux와 같은 방식으로 사용합니다. 32비트 PC용 Linux(i686)와 FreeBSD는 .NET 8이 동작하지 않아 제공되지 않습니다.",
+ "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install. Anche OpenBSD non è disponibile.": "ARM용 Windows(Snapdragon PC): windows-arm64 패키지. Fedora와 openSUSE: .rpm 패키지(x86_64 또는 aarch64)를 sudo dnf install 또는 sudo zypper install로 설치합니다. OpenBSD도 제공되지 않습니다."
 }

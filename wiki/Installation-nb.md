@@ -9,8 +9,10 @@ Alle pakkene ligger på siden **[Releases](https://github.com/ic8tem/YA-MS/relea
 | Windows (64-bit) | `YA-MS-x.y.z-windows-x64-setup.exe` (installasjonsprogram) | `C:\YA-MS` |
 | Windows (64-bit), portabel | `YA-MS-x.y.z-windows-x64-portatile.zip` | en hvilken som helst mappe der du har skrivetilgang |
 | Windows (32-bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` eller `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows på ARM (64 bit, PC-er med Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` eller `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (kopieres dit ved første oppstart) |
 | Linux (64-bit), alle distribusjoner | `YA-MS-x.y.z-linux-x64.tar.gz` (portabel eller med `./installa.sh`) | `~/YA-MS` eller en hvilken som helst mappe |
+| Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (kopieres dit ved første oppstart) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian-pakke | `ya-ms_x.y.z_arm64.deb` (64-bit) eller `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (kopieres dit ved første oppstart) |
@@ -20,7 +22,7 @@ Alle pakkene ligger på siden **[Releases](https://github.com/ic8tem/YA-MS/relea
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, bare programmet | `YA-MS-x.y.z-mac-apple-silicon-app.zip` eller `...-mac-intel-app.zip` | mappen der du pakker ut `YA-MS.app` |
 
-32-biters PC-Linux (i686) og FreeBSD har ingen pakke: .NET 8, som YA-MS bygger på, virker ikke på disse systemene.
+32-biters PC-Linux (i686), FreeBSD og OpenBSD har ingen pakke: .NET 8, som YA-MS bygger på, virker ikke på disse systemene.
 
 **Programmet og `data`-mappen hører alltid sammen** i YA-MS-mappen: alle data og innstillinger ligger der (ingen AppData, ingen systemmapper). Se [Innstillinger og datamappe](Settings-and-Data-Folder-nb).
 

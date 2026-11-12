@@ -235,5 +235,6 @@
  "PROCEDURA": "प्रक्रिया",
  "NOTA": "टिप्पणी",
  "ATTENZIONE": "चेतावनी",
- "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "अन्य Linux ARM प्रणालियाँ (जैसे Slackware ARM64 या armv7l बोर्ड): linux-arm64 या linux-armv7l पैकेज, .tar.gz में, Linux की तरह। PC के लिए 32 बिट Linux (i686) और FreeBSD उपलब्ध नहीं हैं, क्योंकि .NET 8 उन पर नहीं चलता।"
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "अन्य Linux ARM प्रणालियाँ (जैसे Slackware ARM64 या armv7l बोर्ड): linux-arm64 या linux-armv7l पैकेज, .tar.gz में, Linux की तरह। PC के लिए 32 बिट Linux (i686) और FreeBSD उपलब्ध नहीं हैं, क्योंकि .NET 8 उन पर नहीं चलता।",
+ "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install. Anche OpenBSD non è disponibile.": "ARM पर Windows (Snapdragon वाले PC): windows-arm64 पैकेज। Fedora और openSUSE: .rpm पैकेज (x86_64 या aarch64), sudo dnf install या sudo zypper install से। OpenBSD भी उपलब्ध नहीं है।"
 }

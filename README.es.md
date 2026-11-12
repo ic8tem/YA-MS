@@ -22,13 +22,14 @@ Por Costantino Cerrotta IC8TEM. Gratuito, para Windows, Linux, Raspberry Pi y Ma
 
 ## Instalación
 Desde la página **[Releases](https://github.com/ic8tem/YA-MS/releases/latest)**:
-- **Windows**: `...-windows-x64-setup.exe` (32 bits: `...-windows-x86-setup.exe`) o el zip portátil;
+- **Windows**: `...-windows-x64-setup.exe` (32 bits: `...-windows-x86-setup.exe`, ARM/Snapdragon: `...-windows-arm64-setup.exe`) o el zip portátil;
 - **Linux**: `ya-ms_..._amd64.deb` o `...-linux-x64.tar.gz`;
+- **Fedora, openSUSE**: `ya-ms-....x86_64.rpm` o `.aarch64.rpm` (`sudo dnf install` / `sudo zypper install`);
 - **Raspberry Pi**: `ya-ms_..._arm64.deb` / `_armhf.deb` o los tar.gz de 64 y 32 bits;
 - **Linux ARM** (p. ej. Slackware ARM64, placas armv7l): `...-linux-arm64.tar.gz` o `...-linux-armv7l.tar.gz`;
 - **Mac**: `...-mac-apple-silicon.dmg` o `...-mac-intel.dmg` (o el app.zip).
 
-Linux de 32 bits para PC (i686) y FreeBSD no están disponibles: .NET 8 no funciona en esos sistemas.
+Linux de 32 bits para PC (i686), FreeBSD y OpenBSD no están disponibles: .NET 8 no funciona en esos sistemas.
 
 Los datos se quedan en la carpeta `data` junto al programa. Instrucciones completas en el **[wiki](https://github.com/ic8tem/YA-MS/wiki/Home-es)** y en `LEGGIMI.txt`.
 

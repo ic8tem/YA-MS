@@ -9,8 +9,10 @@
 | Windows (64 бита) | `YA-MS-x.y.z-windows-x64-setup.exe` (установщик) | `C:\YA-MS` |
 | Windows (64 бита), портативная | `YA-MS-x.y.z-windows-x64-portatile.zip` | любая папка, в которую разрешена запись |
 | Windows (32 бита, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` или `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows на ARM (64 бит, ПК со Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` или `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 бита): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (копируется туда при первом запуске) |
 | Linux (64 бита), любой дистрибутив | `YA-MS-x.y.z-linux-x64.tar.gz` (портативно или через `./installa.sh`) | `~/YA-MS` или любая папка |
+| Linux (64 бит): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (копируется туда при первом запуске) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 бита) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 бита) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, пакет Debian | `ya-ms_x.y.z_arm64.deb` (64 бита) или `ya-ms_x.y.z_armhf.deb` (32 бита) | `~/YA-MS` (копируется туда при первом запуске) |
@@ -20,7 +22,7 @@
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, только приложение | `YA-MS-x.y.z-mac-apple-silicon-app.zip` или `...-mac-intel-app.zip` | папка, в которую вы распаковали `YA-MS.app` |
 
-Для 32-битного Linux на ПК (i686) и FreeBSD пакета нет: .NET 8, на котором основан YA-MS, на этих системах не работает.
+Для 32-битного Linux на ПК (i686), FreeBSD и OpenBSD пакета нет: .NET 8, на котором основан YA-MS, на этих системах не работает.
 
 **Программа и её папка `data` всегда находятся вместе** в папке YA-MS: там все данные и настройки (никакого AppData и системных папок). См. [Настройки и папка данных](Settings-and-Data-Folder-ru).
 

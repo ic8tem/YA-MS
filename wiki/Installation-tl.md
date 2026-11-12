@@ -9,8 +9,10 @@ Nasa pahinang **[Releases](https://github.com/ic8tem/YA-MS/releases)** ang lahat
 | Windows (64-bit) | `YA-MS-x.y.z-windows-x64-setup.exe` (installer) | `C:\YA-MS` |
 | Windows (64-bit), portable | `YA-MS-x.y.z-windows-x64-portatile.zip` | anumang folder na may pahintulot kang magsulat |
 | Windows (32-bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` o `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows sa ARM (64 bit, mga PC na may Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` o `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (kinokopya roon sa unang pagsisimula) |
 | Linux (64-bit), anumang distribution | `YA-MS-x.y.z-linux-x64.tar.gz` (portable o gamit ang `./installa.sh`) | `~/YA-MS` o anumang folder |
+| Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (kinokopya roon sa unang pagsisimula) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian package | `ya-ms_x.y.z_arm64.deb` (64-bit) o `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (kinokopya roon sa unang pagsisimula) |
@@ -20,7 +22,7 @@ Nasa pahinang **[Releases](https://github.com/ic8tem/YA-MS/releases)** ang lahat
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, application lamang | `YA-MS-x.y.z-mac-apple-silicon-app.zip` o `...-mac-intel-app.zip` | ang folder kung saan mo ie-extract ang `YA-MS.app` |
 
-Walang package para sa 32-bit na Linux ng PC (i686) at sa FreeBSD: hindi tumatakbo sa mga sistemang ito ang .NET 8, na pinagbabatayan ng YA-MS.
+Walang package para sa 32-bit na Linux ng PC (i686), FreeBSD at OpenBSD: hindi tumatakbo sa mga sistemang ito ang .NET 8, na pinagbabatayan ng YA-MS.
 
 **Laging magkasama ang programa at ang `data` folder nito** sa folder na YA-MS: naroon ang lahat ng datos at setting (walang AppData, walang system folder). Tingnan ang [Mga setting at folder ng datos](Settings-and-Data-Folder-tl).
 

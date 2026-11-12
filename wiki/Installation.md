@@ -9,8 +9,10 @@ All packages are on the **[Releases](https://github.com/ic8tem/YA-MS/releases)**
 | Windows (64-bit) | `YA-MS-x.y.z-windows-x64-setup.exe` (installer) | `C:\YA-MS` |
 | Windows (64-bit), portable | `YA-MS-x.y.z-windows-x64-portatile.zip` | any folder where you can write |
 | Windows (32-bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` or `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows on ARM (64-bit, Snapdragon PCs) | `YA-MS-x.y.z-windows-arm64-setup.exe` or `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (copied there at the first start) |
 | Linux (64-bit), any distribution | `YA-MS-x.y.z-linux-x64.tar.gz` (portable or with `./installa.sh`) | `~/YA-MS` or any folder |
+| Linux (64-bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (copied there at the first start) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian package | `ya-ms_x.y.z_arm64.deb` (64-bit) or `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (copied there at the first start) |
@@ -20,7 +22,7 @@ All packages are on the **[Releases](https://github.com/ic8tem/YA-MS/releases)**
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, application only | `YA-MS-x.y.z-mac-apple-silicon-app.zip` or `...-mac-intel-app.zip` | the folder where you extract `YA-MS.app` |
 
-32-bit PC Linux (i686) and FreeBSD have no package: .NET 8, on which YA-MS is built, does not run on these systems.
+32-bit PC Linux (i686), FreeBSD and OpenBSD have no package: .NET 8, on which YA-MS is built, does not run on these systems.
 
 **The program and its `data` folder always stay together** in the YA-MS folder: all data and settings are there (no AppData, no system folders). See [Settings and data folder](Settings-and-Data-Folder).
 

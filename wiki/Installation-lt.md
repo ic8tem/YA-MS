@@ -9,8 +9,10 @@ Visi paketai yra puslapyje **[Releases](https://github.com/ic8tem/YA-MS/releases
 | Windows (64 bitų) | `YA-MS-x.y.z-windows-x64-setup.exe` (diegimo programa) | `C:\YA-MS` |
 | Windows (64 bitų), nešiojamoji | `YA-MS-x.y.z-windows-x64-portatile.zip` | bet kurį aplanką, į kurį galite rašyti |
 | Windows (32 bitų, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` arba `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows ARM (64 bitų, kompiuteriai su Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` arba `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bitų): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (nukopijuojama ten pirmą kartą paleidžiant) |
 | Linux (64 bitų), bet kuris distributyvas | `YA-MS-x.y.z-linux-x64.tar.gz` (nešiojamoji arba su `./installa.sh`) | `~/YA-MS` arba bet kuris aplankas |
+| Linux (64 bitų): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (nukopijuojama ten pirmą kartą paleidžiant) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bitų) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bitų) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian paketas | `ya-ms_x.y.z_arm64.deb` (64 bitų) arba `ya-ms_x.y.z_armhf.deb` (32 bitų) | `~/YA-MS` (nukopijuojama ten pirmą kartą paleidžiant) |
@@ -20,7 +22,7 @@ Visi paketai yra puslapyje **[Releases](https://github.com/ic8tem/YA-MS/releases
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, tik programa | `YA-MS-x.y.z-mac-apple-silicon-app.zip` arba `...-mac-intel-app.zip` | aplankas, į kurį išskleidžiate `YA-MS.app` |
 
-32 bitų kompiuterių Linux (i686) ir FreeBSD paketo neturi: .NET 8, kuriuo paremta YA-MS, šiose sistemose neveikia.
+32 bitų kompiuterių Linux (i686), FreeBSD ir OpenBSD paketo neturi: .NET 8, kuriuo paremta YA-MS, šiose sistemose neveikia.
 
 **Programa ir jos aplankas `data` visada būna kartu** YA-MS aplanke: ten yra visi duomenys ir nustatymai (jokio AppData, jokių sisteminių aplankų). Žr. [Nustatymai ir duomenų aplankas](Settings-and-Data-Folder-lt).
 

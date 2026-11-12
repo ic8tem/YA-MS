@@ -235,5 +235,6 @@
  "PROCEDURA": "TILLVÄGAGÅNG",
  "NOTA": "OBS",
  "ATTENZIONE": "VARNING",
- "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Andra ARM-Linuxsystem (till exempel Slackware ARM64 eller armv7l-kort): paketet linux-arm64 eller linux-armv7l, som .tar.gz, som för Linux. 32-bitars PC-Linux (i686) och FreeBSD finns inte, eftersom .NET 8 inte fungerar där."
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Andra ARM-Linuxsystem (till exempel Slackware ARM64 eller armv7l-kort): paketet linux-arm64 eller linux-armv7l, som .tar.gz, som för Linux. 32-bitars PC-Linux (i686) och FreeBSD finns inte, eftersom .NET 8 inte fungerar där.",
+ "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install. Anche OpenBSD non è disponibile.": "Windows på ARM (datorer med Snapdragon): paketet windows-arm64. Fedora och openSUSE: .rpm-paketet (x86_64 eller aarch64), med sudo dnf install eller sudo zypper install. Inte heller OpenBSD finns."
 }

@@ -9,8 +9,10 @@
 | Windows (64-bit) | `YA-MS-x.y.z-windows-x64-setup.exe` (مثبِّت) | `C:\YA-MS` |
 | Windows (64-bit)، محمول | `YA-MS-x.y.z-windows-x64-portatile.zip` | أي مجلد لديك صلاحية الكتابة فيه |
 | Windows (32-bit، Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` أو `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows على ARM ‏(64 بت، حواسيب Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` أو `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian وUbuntu وMint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (يُنسخ إليه عند التشغيل الأول) |
 | Linux (64-bit)، أي توزيعة | `YA-MS-x.y.z-linux-x64.tar.gz` (محمول أو عبر `./installa.sh`) | `~/YA-MS` أو أي مجلد |
+| Linux ‏(64 بت): Fedora، openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (يُنسخ إليه عند التشغيل الأول) |
 | Raspberry Pi 3/4/5، 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi، حزمة Debian | `ya-ms_x.y.z_arm64.deb` (64-bit) أو `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (يُنسخ إليه عند التشغيل الأول) |
@@ -20,7 +22,7 @@
 | macOS، Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS، التطبيق فقط | `YA-MS-x.y.z-mac-apple-silicon-app.zip` أو `...-mac-intel-app.zip` | المجلد الذي تستخرج فيه `YA-MS.app` |
 
-لا توجد حزمة لنظام Linux للحاسوب بـ 32 بت (i686) ولا لـ FreeBSD: لا يعمل ‎.NET 8، الذي يقوم عليه YA-MS، على هذه الأنظمة.
+لا توجد حزمة لنظام Linux للحاسوب بـ 32 بت (i686) ولا لـ FreeBSD ولا لـ OpenBSD: لا يعمل ‎.NET 8، الذي يقوم عليه YA-MS، على هذه الأنظمة.
 
 **يبقى البرنامج ومجلد `data` الخاص به معاً دائماً** في مجلد YA-MS: فيه جميع البيانات والإعدادات (لا AppData ولا مجلدات نظام). انظر [الإعدادات ومجلد البيانات](Settings-and-Data-Folder-ar).
 

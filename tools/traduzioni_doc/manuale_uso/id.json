@@ -235,5 +235,6 @@
  "PROCEDURA": "PROSEDUR",
  "NOTA": "CATATAN",
  "ATTENZIONE": "PERHATIAN",
- "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Sistem Linux ARM lain (misalnya Slackware ARM64 atau papan armv7l): paket linux-arm64 atau linux-armv7l, dalam .tar.gz, seperti untuk Linux. Linux PC 32 bit (i686) dan FreeBSD tidak tersedia, karena .NET 8 tidak berjalan di sana."
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Sistem Linux ARM lain (misalnya Slackware ARM64 atau papan armv7l): paket linux-arm64 atau linux-armv7l, dalam .tar.gz, seperti untuk Linux. Linux PC 32 bit (i686) dan FreeBSD tidak tersedia, karena .NET 8 tidak berjalan di sana.",
+ "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install. Anche OpenBSD non è disponibile.": "Windows di ARM (PC dengan Snapdragon): paket windows-arm64. Fedora dan openSUSE: paket .rpm (x86_64 atau aarch64), dengan sudo dnf install atau sudo zypper install. OpenBSD juga tidak tersedia."
 }

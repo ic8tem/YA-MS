@@ -9,8 +9,10 @@
 | Windows (64 บิต) | `YA-MS-x.y.z-windows-x64-setup.exe` (ตัวติดตั้ง) | `C:\YA-MS` |
 | Windows (64 บิต) แบบพกพา | `YA-MS-x.y.z-windows-x64-portatile.zip` | โฟลเดอร์ใดก็ได้ที่คุณมีสิทธิ์เขียน |
 | Windows (32 บิต, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` หรือ `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows บน ARM (64 บิต พีซีที่ใช้ Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` หรือ `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 บิต): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (คัดลอกไปที่นั่นเมื่อเริ่มครั้งแรก) |
 | Linux (64 บิต) ทุกดิสทริบิวชัน | `YA-MS-x.y.z-linux-x64.tar.gz` (แบบพกพาหรือใช้ `./installa.sh`) | `~/YA-MS` หรือโฟลเดอร์ใดก็ได้ |
+| Linux (64 บิต): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (คัดลอกไปที่นั่นเมื่อเริ่มครั้งแรก) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 บิต) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 บิต) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi แพ็กเกจ Debian | `ya-ms_x.y.z_arm64.deb` (64 บิต) หรือ `ya-ms_x.y.z_armhf.deb` (32 บิต) | `~/YA-MS` (คัดลอกไปที่นั่นเมื่อเริ่มครั้งแรก) |
@@ -20,7 +22,7 @@
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS เฉพาะแอปพลิเคชัน | `YA-MS-x.y.z-mac-apple-silicon-app.zip` หรือ `...-mac-intel-app.zip` | โฟลเดอร์ที่คุณแตกไฟล์ `YA-MS.app` |
 
-ไม่มีแพ็กเกจสำหรับ Linux 32 บิตบนพีซี (i686) และ FreeBSD เพราะ .NET 8 ซึ่งเป็นพื้นฐานของ YA-MS ไม่ทำงานบนระบบเหล่านี้
+ไม่มีแพ็กเกจสำหรับ Linux 32 บิตบนพีซี (i686), FreeBSD และ OpenBSD เพราะ .NET 8 ซึ่งเป็นพื้นฐานของ YA-MS ไม่ทำงานบนระบบเหล่านี้
 
 **ตัวโปรแกรมและโฟลเดอร์ `data` ต้องอยู่ด้วยกันเสมอ** ในโฟลเดอร์ YA-MS: ข้อมูลและการตั้งค่าทั้งหมดอยู่ที่นั่น (ไม่มี AppData ไม่มีโฟลเดอร์ระบบ) ดูที่ [การตั้งค่าและโฟลเดอร์ข้อมูล](Settings-and-Data-Folder-th)
 

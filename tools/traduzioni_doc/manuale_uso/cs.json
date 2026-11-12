@@ -235,5 +235,6 @@
  "PROCEDURA": "POSTUP",
  "NOTA": "POZNÁMKA",
  "ATTENZIONE": "POZOR",
- "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Jiné systémy Linux ARM (například Slackware ARM64 nebo desky armv7l): balíček linux-arm64 nebo linux-armv7l, jako .tar.gz, stejně jako pro Linux. 32bitový PC Linux (i686) a FreeBSD nejsou k dispozici, protože na nich .NET 8 neběží."
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Jiné systémy Linux ARM (například Slackware ARM64 nebo desky armv7l): balíček linux-arm64 nebo linux-armv7l, jako .tar.gz, stejně jako pro Linux. 32bitový PC Linux (i686) a FreeBSD nejsou k dispozici, protože na nich .NET 8 neběží.",
+ "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install. Anche OpenBSD non è disponibile.": "Windows na ARM (PC se Snapdragonem): balíček windows-arm64. Fedora a openSUSE: balíček .rpm (x86_64 nebo aarch64), příkazem sudo dnf install nebo sudo zypper install. Ani OpenBSD není k dispozici."
 }

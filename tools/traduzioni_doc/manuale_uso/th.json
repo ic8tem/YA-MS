@@ -235,5 +235,6 @@
  "PROCEDURA": "ขั้นตอน",
  "NOTA": "หมายเหตุ",
  "ATTENZIONE": "ข้อควรระวัง",
- "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "ระบบ Linux ARM อื่น ๆ (เช่น Slackware ARM64 หรือบอร์ด armv7l): แพ็กเกจ linux-arm64 หรือ linux-armv7l แบบ .tar.gz เหมือนกับ Linux ส่วน Linux 32 บิตบนพีซี (i686) และ FreeBSD ไม่มีให้ เพราะ .NET 8 ไม่ทำงานบนระบบเหล่านั้น"
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "ระบบ Linux ARM อื่น ๆ (เช่น Slackware ARM64 หรือบอร์ด armv7l): แพ็กเกจ linux-arm64 หรือ linux-armv7l แบบ .tar.gz เหมือนกับ Linux ส่วน Linux 32 บิตบนพีซี (i686) และ FreeBSD ไม่มีให้ เพราะ .NET 8 ไม่ทำงานบนระบบเหล่านั้น",
+ "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install. Anche OpenBSD non è disponibile.": "Windows บน ARM (พีซีที่ใช้ Snapdragon): แพ็กเกจ windows-arm64 สำหรับ Fedora และ openSUSE: แพ็กเกจ .rpm (x86_64 หรือ aarch64) ด้วย sudo dnf install หรือ sudo zypper install ส่วน OpenBSD ก็ไม่มีให้เช่นกัน"
 }

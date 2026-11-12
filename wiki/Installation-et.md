@@ -9,8 +9,10 @@ Kõik paketid on lehel **[Releases](https://github.com/ic8tem/YA-MS/releases)** 
 | Windows (64-bitine) | `YA-MS-x.y.z-windows-x64-setup.exe` (paigaldaja) | `C:\YA-MS` |
 | Windows (64-bitine), kaasaskantav | `YA-MS-x.y.z-windows-x64-portatile.zip` | mis tahes kaust, kuhu saad kirjutada |
 | Windows (32-bitine, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` või `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows ARM-il (64-bitine, Snapdragoniga arvutid) | `YA-MS-x.y.z-windows-arm64-setup.exe` või `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bitine): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (kopeeritakse sinna esimesel käivitusel) |
 | Linux (64-bitine), mis tahes distributsioon | `YA-MS-x.y.z-linux-x64.tar.gz` (kaasaskantav või `./installa.sh` abil) | `~/YA-MS` või mis tahes kaust |
+| Linux (64-bitine): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (kopeeritakse sinna esimesel käivitusel) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bitine) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bitine) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debiani pakett | `ya-ms_x.y.z_arm64.deb` (64-bitine) või `ya-ms_x.y.z_armhf.deb` (32-bitine) | `~/YA-MS` (kopeeritakse sinna esimesel käivitusel) |
@@ -20,7 +22,7 @@ Kõik paketid on lehel **[Releases](https://github.com/ic8tem/YA-MS/releases)** 
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, ainult rakendus | `YA-MS-x.y.z-mac-apple-silicon-app.zip` või `...-mac-intel-app.zip` | kaust, kuhu `YA-MS.app` lahti pakid |
 
-32-bitise arvuti-Linuxi (i686) ja FreeBSD jaoks paketti pole: .NET 8, millel YA-MS põhineb, nendes süsteemides ei tööta.
+32-bitise arvuti-Linuxi (i686), FreeBSD ja OpenBSD jaoks paketti pole: .NET 8, millel YA-MS põhineb, nendes süsteemides ei tööta.
 
 **Programm ja selle kaust `data` on alati koos** YA-MS-i kaustas: kõik andmed ja seaded on seal (ei AppData-t ega süsteemikaustu). Vt [Seaded ja andmekaust](Settings-and-Data-Folder-et).
 

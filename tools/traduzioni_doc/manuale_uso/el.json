@@ -235,5 +235,6 @@
  "PROCEDURA": "ΔΙΑΔΙΚΑΣΙΑ",
  "NOTA": "ΣΗΜΕΙΩΣΗ",
  "ATTENZIONE": "ΠΡΟΣΟΧΗ",
- "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Άλλα συστήματα Linux ARM (για παράδειγμα Slackware ARM64 ή πλακέτες armv7l): το πακέτο linux-arm64 ή linux-armv7l, σε .tar.gz, όπως για το Linux. Το Linux 32 bit για PC (i686) και το FreeBSD δεν είναι διαθέσιμα, γιατί το .NET 8 δεν λειτουργεί σε αυτά."
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Άλλα συστήματα Linux ARM (για παράδειγμα Slackware ARM64 ή πλακέτες armv7l): το πακέτο linux-arm64 ή linux-armv7l, σε .tar.gz, όπως για το Linux. Το Linux 32 bit για PC (i686) και το FreeBSD δεν είναι διαθέσιμα, γιατί το .NET 8 δεν λειτουργεί σε αυτά.",
+ "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install. Anche OpenBSD non è disponibile.": "Windows σε ARM (PC με Snapdragon): το πακέτο windows-arm64. Fedora και openSUSE: το πακέτο .rpm (x86_64 ή aarch64), με sudo dnf install ή sudo zypper install. Ούτε το OpenBSD είναι διαθέσιμο."
 }

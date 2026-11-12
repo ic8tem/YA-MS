@@ -9,8 +9,10 @@ Todos los paquetes están en la página **[Releases](https://github.com/ic8tem/Y
 | Windows (64 bits) | `YA-MS-x.y.z-windows-x64-setup.exe` (instalador) | `C:\YA-MS` |
 | Windows (64 bits), portable | `YA-MS-x.y.z-windows-x64-portatile.zip` | cualquier carpeta en la que puedas escribir |
 | Windows (32 bits, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` o `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows en ARM (64 bits, PC con Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` o `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bits): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (copiado allí en el primer arranque) |
 | Linux (64 bits), cualquier distribución | `YA-MS-x.y.z-linux-x64.tar.gz` (portable o con `./installa.sh`) | `~/YA-MS` o cualquier carpeta |
+| Linux (64 bits): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (copiado allí en el primer arranque) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bits) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bits) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, paquete Debian | `ya-ms_x.y.z_arm64.deb` (64 bits) o `ya-ms_x.y.z_armhf.deb` (32 bits) | `~/YA-MS` (copiado allí en el primer arranque) |
@@ -20,7 +22,7 @@ Todos los paquetes están en la página **[Releases](https://github.com/ic8tem/Y
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, solo la aplicación | `YA-MS-x.y.z-mac-apple-silicon-app.zip` o `...-mac-intel-app.zip` | la carpeta donde descomprimas `YA-MS.app` |
 
-Linux de 32 bits para PC (i686) y FreeBSD no tienen paquete: .NET 8, en el que se basa YA-MS, no funciona en esos sistemas.
+Linux de 32 bits para PC (i686), FreeBSD y OpenBSD no tienen paquete: .NET 8, en el que se basa YA-MS, no funciona en esos sistemas.
 
 **El programa y su carpeta `data` siempre van juntos** en la carpeta YA-MS: todos los datos y ajustes están ahí (nada de AppData ni carpetas del sistema). Ver [Ajustes y carpeta de datos](Settings-and-Data-Folder-es).
 

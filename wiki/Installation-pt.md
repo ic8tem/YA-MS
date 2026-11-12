@@ -9,8 +9,10 @@ Todos os pacotes estão na página **[Releases](https://github.com/ic8tem/YA-MS/
 | Windows (64 bits) | `YA-MS-x.y.z-windows-x64-setup.exe` (instalador) | `C:\YA-MS` |
 | Windows (64 bits), portátil | `YA-MS-x.y.z-windows-x64-portatile.zip` | qualquer pasta onde possa escrever |
 | Windows (32 bits, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` ou `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows em ARM (64 bits, PC com Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` ou `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bits): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (copiado para lá no primeiro arranque) |
 | Linux (64 bits), qualquer distribuição | `YA-MS-x.y.z-linux-x64.tar.gz` (portátil ou com `./installa.sh`) | `~/YA-MS` ou qualquer pasta |
+| Linux (64 bits): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (copiado para lá no primeiro arranque) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bits) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bits) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, pacote Debian | `ya-ms_x.y.z_arm64.deb` (64 bits) ou `ya-ms_x.y.z_armhf.deb` (32 bits) | `~/YA-MS` (copiado para lá no primeiro arranque) |
@@ -20,7 +22,7 @@ Todos os pacotes estão na página **[Releases](https://github.com/ic8tem/YA-MS/
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, só a aplicação | `YA-MS-x.y.z-mac-apple-silicon-app.zip` ou `...-mac-intel-app.zip` | a pasta para onde extrair `YA-MS.app` |
 
-Linux de 32 bits para PC (i686) e FreeBSD não têm pacote: o .NET 8, em que o YA-MS se baseia, não funciona nesses sistemas.
+Linux de 32 bits para PC (i686), FreeBSD e OpenBSD não têm pacote: o .NET 8, em que o YA-MS se baseia, não funciona nesses sistemas.
 
 **O programa e a sua pasta `data` ficam sempre juntos** na pasta YA-MS: todos os dados e definições estão lá (nada de AppData nem pastas do sistema). Ver [Definições e pasta de dados](Settings-and-Data-Folder-pt).
 

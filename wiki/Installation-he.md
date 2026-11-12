@@ -9,8 +9,10 @@
 | Windows (64-bit) | `YA-MS-x.y.z-windows-x64-setup.exe` (מתקין) | `C:\YA-MS` |
 | Windows (64-bit), נייד | `YA-MS-x.y.z-windows-x64-portatile.zip` | כל תיקייה שיש לך הרשאת כתיבה בה |
 | Windows (32-bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` או `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows על ARM ‏(64 ביט, מחשבים עם Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` או `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
 | Linux (64-bit), כל הפצה | `YA-MS-x.y.z-linux-x64.tar.gz` (נייד או עם `./installa.sh`) | `~/YA-MS` או כל תיקייה |
+| Linux ‏(64 ביט): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, חבילת Debian | `ya-ms_x.y.z_arm64.deb` (64-bit) או `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
@@ -20,7 +22,7 @@
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, היישום בלבד | `YA-MS-x.y.z-mac-apple-silicon-app.zip` או `...-mac-intel-app.zip` | התיקייה שאליה חילצתם את `YA-MS.app` |
 
-ל-Linux למחשב ב-32 ביט (i686) ול-FreeBSD אין חבילה: ‎.NET 8, שעליו בנוי YA-MS, אינו פועל במערכות אלה.
+ל-Linux למחשב ב-32 ביט (i686), ל-FreeBSD ול-OpenBSD אין חבילה: ‎.NET 8, שעליו בנוי YA-MS, אינו פועל במערכות אלה.
 
 **התוכנה ותיקיית ה-`data` שלה נשארות תמיד יחד** בתיקיית YA-MS: כל הנתונים וההגדרות נמצאים שם (בלי AppData, בלי תיקיות מערכת). ראו [הגדרות ותיקיית נתונים](Settings-and-Data-Folder-he).
 

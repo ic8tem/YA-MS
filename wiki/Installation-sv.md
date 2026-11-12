@@ -9,8 +9,10 @@ Alla paket finns på sidan **[Releases](https://github.com/ic8tem/YA-MS/releases
 | Windows (64 bitar) | `YA-MS-x.y.z-windows-x64-setup.exe` (installationsprogram) | `C:\YA-MS` |
 | Windows (64 bitar), portabel | `YA-MS-x.y.z-windows-x64-portatile.zip` | valfri mapp där du har skrivrättighet |
 | Windows (32 bitar, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` eller `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows på ARM (64 bitar, datorer med Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` eller `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bitar): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (kopieras dit vid första starten) |
 | Linux (64 bitar), alla distributioner | `YA-MS-x.y.z-linux-x64.tar.gz` (portabel eller med `./installa.sh`) | `~/YA-MS` eller valfri mapp |
+| Linux (64 bitar): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (kopieras dit vid första starten) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bitar) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bitar) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debianpaket | `ya-ms_x.y.z_arm64.deb` (64 bitar) eller `ya-ms_x.y.z_armhf.deb` (32 bitar) | `~/YA-MS` (kopieras dit vid första starten) |
@@ -20,7 +22,7 @@ Alla paket finns på sidan **[Releases](https://github.com/ic8tem/YA-MS/releases
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, endast programmet | `YA-MS-x.y.z-mac-apple-silicon-app.zip` eller `...-mac-intel-app.zip` | mappen där du packar upp `YA-MS.app` |
 
-32-bitars PC-Linux (i686) och FreeBSD har inget paket: .NET 8, som YA-MS bygger på, fungerar inte på dessa system.
+32-bitars PC-Linux (i686), FreeBSD och OpenBSD har inget paket: .NET 8, som YA-MS bygger på, fungerar inte på dessa system.
 
 **Programmet och dess mapp `data` hålls alltid ihop** i mappen YA-MS: där finns alla data och inställningar (ingen AppData, inga systemmappar). Se [Inställningar och datamapp](Settings-and-Data-Folder-sv).
 

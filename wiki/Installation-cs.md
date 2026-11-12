@@ -9,8 +9,10 @@ Všechny balíčky jsou na stránce **[Releases](https://github.com/ic8tem/YA-MS
 | Windows (64bitové) | `YA-MS-x.y.z-windows-x64-setup.exe` (instalátor) | `C:\YA-MS` |
 | Windows (64bitové), přenosná verze | `YA-MS-x.y.z-windows-x64-portatile.zip` | libovolná složka, do které můžete zapisovat |
 | Windows (32bitové, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` nebo `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows na ARM (64 bit, PC se Snapdragonem) | `YA-MS-x.y.z-windows-arm64-setup.exe` nebo `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64bitový): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (zkopíruje se tam při prvním spuštění) |
 | Linux (64bitový), libovolná distribuce | `YA-MS-x.y.z-linux-x64.tar.gz` (přenosně nebo pomocí `./installa.sh`) | `~/YA-MS` nebo libovolná složka |
+| Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (zkopíruje se tam při prvním spuštění) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64bitový) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32bitový) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, balíček Debian | `ya-ms_x.y.z_arm64.deb` (64bitový) nebo `ya-ms_x.y.z_armhf.deb` (32bitový) | `~/YA-MS` (zkopíruje se tam při prvním spuštění) |
@@ -20,7 +22,7 @@ Všechny balíčky jsou na stránce **[Releases](https://github.com/ic8tem/YA-MS
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, jen aplikace | `YA-MS-x.y.z-mac-apple-silicon-app.zip` nebo `...-mac-intel-app.zip` | složka, do které rozbalíte `YA-MS.app` |
 
-Pro 32bitový PC Linux (i686) a FreeBSD balíček není: .NET 8, na kterém YA-MS stojí, na těchto systémech nefunguje.
+Pro 32bitový PC Linux (i686), FreeBSD a OpenBSD balíček není: .NET 8, na kterém YA-MS stojí, na těchto systémech nefunguje.
 
 **Program a jeho složka `data` zůstávají vždy spolu** ve složce YA-MS: jsou v ní všechna data a nastavení (žádné AppData, žádné systémové složky). Viz [Nastavení a datová složka](Settings-and-Data-Folder-cs).
 

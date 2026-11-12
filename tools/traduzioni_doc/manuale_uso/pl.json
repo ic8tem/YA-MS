@@ -235,5 +235,6 @@
  "PROCEDURA": "PROCEDURA",
  "NOTA": "UWAGA",
  "ATTENZIONE": "OSTROŻNIE",
- "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Inne systemy Linux ARM (na przykład Slackware ARM64 lub płytki armv7l): pakiet linux-arm64 lub linux-armv7l, jako .tar.gz, tak jak dla Linuksa. 32-bitowy Linux na PC (i686) i FreeBSD nie są dostępne, bo .NET 8 na nich nie działa."
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Inne systemy Linux ARM (na przykład Slackware ARM64 lub płytki armv7l): pakiet linux-arm64 lub linux-armv7l, jako .tar.gz, tak jak dla Linuksa. 32-bitowy Linux na PC (i686) i FreeBSD nie są dostępne, bo .NET 8 na nich nie działa.",
+ "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install. Anche OpenBSD non è disponibile.": "Windows na ARM (komputery ze Snapdragonem): pakiet windows-arm64. Fedora i openSUSE: pakiet .rpm (x86_64 lub aarch64), przez sudo dnf install lub sudo zypper install. OpenBSD również nie jest dostępny."
 }

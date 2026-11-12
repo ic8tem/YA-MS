@@ -9,8 +9,10 @@ Tutti i pacchetti sono nella pagina **[Releases](https://github.com/ic8tem/YA-MS
 | Windows (64 bit) | `YA-MS-x.y.z-windows-x64-setup.exe` (installatore) | `C:\YA-MS` |
 | Windows (64 bit), portatile | `YA-MS-x.y.z-windows-x64-portatile.zip` | qualsiasi cartella in cui puoi scrivere |
 | Windows (32 bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` oppure `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows su ARM (64 bit, PC con Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` oppure `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (copiato lì al primo avvio) |
 | Linux (64 bit), qualsiasi distribuzione | `YA-MS-x.y.z-linux-x64.tar.gz` (portatile o con `./installa.sh`) | `~/YA-MS` o qualsiasi cartella |
+| Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (copiato lì al primo avvio) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, pacchetto Debian | `ya-ms_x.y.z_arm64.deb` (64 bit) oppure `ya-ms_x.y.z_armhf.deb` (32 bit) | `~/YA-MS` (copiato lì al primo avvio) |
@@ -20,7 +22,7 @@ Tutti i pacchetti sono nella pagina **[Releases](https://github.com/ic8tem/YA-MS
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, solo applicazione | `YA-MS-x.y.z-mac-apple-silicon-app.zip` oppure `...-mac-intel-app.zip` | la cartella in cui estrai `YA-MS.app` |
 
-Linux a 32 bit per PC (i686) e FreeBSD non hanno un pacchetto: .NET 8, su cui si basa YA-MS, non funziona su questi sistemi.
+Linux a 32 bit per PC (i686), FreeBSD e OpenBSD non hanno un pacchetto: .NET 8, su cui si basa YA-MS, non funziona su questi sistemi.
 
 **Il programma e la sua cartella `data` stanno sempre insieme** nella cartella YA-MS: lì ci sono tutti i dati e le impostazioni (niente AppData, niente cartelle di sistema). Vedi [Impostazioni e cartella dei dati](Settings-and-Data-Folder-it).
 

@@ -9,8 +9,10 @@
 | Windows (64비트) | `YA-MS-x.y.z-windows-x64-setup.exe` (설치 프로그램) | `C:\YA-MS` |
 | Windows (64비트), 포터블 | `YA-MS-x.y.z-windows-x64-portatile.zip` | 쓰기 권한이 있는 아무 폴더 |
 | Windows (32비트, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` 또는 `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| ARM용 Windows(64비트, Snapdragon PC) | `YA-MS-x.y.z-windows-arm64-setup.exe` 또는 `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64비트): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |
 | Linux (64비트), 모든 배포판 | `YA-MS-x.y.z-linux-x64.tar.gz`(포터블 또는 `./installa.sh` 사용) | `~/YA-MS` 또는 아무 폴더 |
+| Linux(64비트): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64비트) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32비트) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian 패키지 | `ya-ms_x.y.z_arm64.deb`(64비트) 또는 `ya-ms_x.y.z_armhf.deb`(32비트) | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |
@@ -20,7 +22,7 @@
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, 애플리케이션만 | `YA-MS-x.y.z-mac-apple-silicon-app.zip` 또는 `...-mac-intel-app.zip` | `YA-MS.app`을 압축 해제한 폴더 |
 
-32비트 PC용 Linux(i686)와 FreeBSD용 패키지는 없습니다. YA-MS의 기반인 .NET 8이 이 시스템에서 동작하지 않기 때문입니다.
+32비트 PC용 Linux(i686), FreeBSD, OpenBSD용 패키지는 없습니다. YA-MS의 기반인 .NET 8이 이 시스템에서 동작하지 않기 때문입니다.
 
 **프로그램과 `data` 폴더는 항상 YA-MS 폴더 안에 함께 있습니다**: 모든 데이터와 설정이 그곳에 있습니다(AppData도 시스템 폴더도 사용하지 않음). [설정과 데이터 폴더](Settings-and-Data-Folder-ko)를 참조하세요.
 

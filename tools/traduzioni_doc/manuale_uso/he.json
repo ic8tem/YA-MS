@@ -235,5 +235,6 @@
  "PROCEDURA": "נוהל",
  "NOTA": "הערה",
  "ATTENZIONE": "אזהרה",
- "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "מערכות Linux ARM אחרות (למשל Slackware ARM64 או לוחות armv7l): החבילה linux-arm64 או linux-armv7l, בפורמט ‎.tar.gz, כמו ב-Linux. Linux למחשב ב-32 ביט (i686) ו-FreeBSD אינם זמינים, כי ‎.NET 8 אינו פועל בהם."
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "מערכות Linux ARM אחרות (למשל Slackware ARM64 או לוחות armv7l): החבילה linux-arm64 או linux-armv7l, בפורמט ‎.tar.gz, כמו ב-Linux. Linux למחשב ב-32 ביט (i686) ו-FreeBSD אינם זמינים, כי ‎.NET 8 אינו פועל בהם.",
+ "Windows su ARM (PC con Snapdragon): il pacchetto windows-arm64. Fedora e openSUSE: il pacchetto .rpm (x86_64 o aarch64), con sudo dnf install oppure sudo zypper install. Anche OpenBSD non è disponibile.": "Windows על ARM (מחשבים עם Snapdragon): החבילה windows-arm64. Fedora ו-openSUSE: חבילת ‎.rpm ‏(x86_64 או aarch64), עם sudo dnf install או sudo zypper install. גם OpenBSD אינו זמין."
 }

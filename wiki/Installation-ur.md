@@ -9,8 +9,10 @@
 | Windows (64-بٹ) | `YA-MS-x.y.z-windows-x64-setup.exe` (انسٹالر) | `C:\YA-MS` |
 | Windows (64-بٹ)، پورٹیبل | `YA-MS-x.y.z-windows-x64-portatile.zip` | کوئی بھی فولڈر جس میں آپ لکھ سکیں |
 | Windows (32-بٹ، Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` یا `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| ARM پر Windows (64 بٹ، Snapdragon والے PC) | `YA-MS-x.y.z-windows-arm64-setup.exe` یا `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-بٹ): Debian، Ubuntu، Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (پہلے آغاز پر وہاں کاپی ہو جاتا ہے) |
 | Linux (64-بٹ)، کوئی بھی ڈسٹری بیوشن | `YA-MS-x.y.z-linux-x64.tar.gz` (پورٹیبل یا `./installa.sh` کے ساتھ) | `~/YA-MS` یا کوئی بھی فولڈر |
+| Linux (64 بٹ): Fedora، openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (پہلے آغاز پر وہاں کاپی ہو جاتا ہے) |
 | Raspberry Pi 3/4/5، 400/500 (Raspberry Pi OS 64-بٹ) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-بٹ) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi، Debian پیکیج | `ya-ms_x.y.z_arm64.deb` (64-بٹ) یا `ya-ms_x.y.z_armhf.deb` (32-بٹ) | `~/YA-MS` (پہلے آغاز پر وہاں کاپی ہو جاتا ہے) |
@@ -20,7 +22,7 @@
 | macOS، Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS، صرف ایپلیکیشن | `YA-MS-x.y.z-mac-apple-silicon-app.zip` یا `...-mac-intel-app.zip` | وہ فولڈر جس میں آپ `YA-MS.app` نکالیں |
 
-PC کے لیے 32 بٹ Linux (i686) اور FreeBSD کا کوئی پیکیج نہیں: ‎.NET 8، جس پر YA-MS بنا ہے، ان نظاموں پر نہیں چلتا۔
+PC کے لیے 32 بٹ Linux (i686)، FreeBSD اور OpenBSD کا کوئی پیکیج نہیں: ‎.NET 8، جس پر YA-MS بنا ہے، ان نظاموں پر نہیں چلتا۔
 
 **پروگرام اور اس کا `data` فولڈر ہمیشہ ایک ساتھ** YA-MS فولڈر میں رہتے ہیں: تمام ڈیٹا اور ترتیبات وہیں ہیں (نہ AppData، نہ سسٹم فولڈر)۔ دیکھیں [ترتیبات اور ڈیٹا فولڈر](Settings-and-Data-Folder-ur)۔
 

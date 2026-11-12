@@ -9,8 +9,10 @@
 | Windows (64-बिट) | `YA-MS-x.y.z-windows-x64-setup.exe` (इंस्टॉलर) | `C:\YA-MS` |
 | Windows (64-बिट), पोर्टेबल | `YA-MS-x.y.z-windows-x64-portatile.zip` | कोई भी फ़ोल्डर जहाँ आप लिख सकते हैं |
 | Windows (32-बिट, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` या `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| ARM पर Windows (64 बिट, Snapdragon वाले PC) | `YA-MS-x.y.z-windows-arm64-setup.exe` या `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-बिट): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (पहली बार शुरू करने पर वहाँ कॉपी होता है) |
 | Linux (64-बिट), कोई भी डिस्ट्रीब्यूशन | `YA-MS-x.y.z-linux-x64.tar.gz` (पोर्टेबल या `./installa.sh` के साथ) | `~/YA-MS` या कोई भी फ़ोल्डर |
+| Linux (64 बिट): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (पहली बार शुरू करने पर वहाँ कॉपी होता है) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-बिट) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-बिट) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian पैकेज | `ya-ms_x.y.z_arm64.deb` (64-बिट) या `ya-ms_x.y.z_armhf.deb` (32-बिट) | `~/YA-MS` (पहली बार शुरू करने पर वहाँ कॉपी होता है) |
@@ -20,7 +22,7 @@
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, केवल एप्लिकेशन | `YA-MS-x.y.z-mac-apple-silicon-app.zip` या `...-mac-intel-app.zip` | वह फ़ोल्डर जहाँ आप `YA-MS.app` निकालते हैं |
 
-PC के लिए 32 बिट Linux (i686) और FreeBSD का कोई पैकेज नहीं है: .NET 8, जिस पर YA-MS बना है, इन प्रणालियों पर नहीं चलता।
+PC के लिए 32 बिट Linux (i686), FreeBSD और OpenBSD का कोई पैकेज नहीं है: .NET 8, जिस पर YA-MS बना है, इन प्रणालियों पर नहीं चलता।
 
 **प्रोग्राम और उसका `data` फ़ोल्डर हमेशा साथ रहते हैं**, YA-MS फ़ोल्डर में: सारा डेटा और सारी सेटिंग्स वहीं हैं (न AppData, न सिस्टम फ़ोल्डर)। देखें [सेटिंग्स और डेटा फ़ोल्डर](Settings-and-Data-Folder-hi)।
 

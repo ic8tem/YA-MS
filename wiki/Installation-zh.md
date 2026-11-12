@@ -9,8 +9,10 @@
 | Windows（64 位） | `YA-MS-x.y.z-windows-x64-setup.exe`（安装程序） | `C:\YA-MS` |
 | Windows（64 位），便携版 | `YA-MS-x.y.z-windows-x64-portatile.zip` | 任何您有写入权限的文件夹 |
 | Windows（32 位，Windows 10/11） | `YA-MS-x.y.z-windows-x86-setup.exe` 或 `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| ARM 上的 Windows（64 位，Snapdragon 电脑） | `YA-MS-x.y.z-windows-arm64-setup.exe` 或 `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux（64 位）：Debian、Ubuntu、Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS`（首次启动时复制到该处） |
 | Linux（64 位），任意发行版 | `YA-MS-x.y.z-linux-x64.tar.gz`（便携使用或通过 `./installa.sh` 安装） | `~/YA-MS` 或任意文件夹 |
+| Linux（64 位）：Fedora、openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS`（首次启动时复制到该处） |
 | Raspberry Pi 3/4/5、400/500（Raspberry Pi OS 64 位） | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4（Raspberry Pi OS 32 位） | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi，Debian 软件包 | `ya-ms_x.y.z_arm64.deb`（64 位）或 `ya-ms_x.y.z_armhf.deb`（32 位） | `~/YA-MS`（首次启动时复制到该处） |
@@ -20,7 +22,7 @@
 | macOS，Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS，仅应用程序 | `YA-MS-x.y.z-mac-apple-silicon-app.zip` 或 `...-mac-intel-app.zip` | 解压出 `YA-MS.app` 的文件夹 |
 
-32 位 PC Linux（i686）和 FreeBSD 没有安装包：YA-MS 所依赖的 .NET 8 不能在这些系统上运行。
+32 位 PC Linux（i686）、FreeBSD 和 OpenBSD 没有安装包：YA-MS 所依赖的 .NET 8 不能在这些系统上运行。
 
 **程序与其 `data` 文件夹始终放在一起**，位于 YA-MS 文件夹中：所有数据和设置都在那里（不使用 AppData，不使用系统文件夹）。参见[设置与数据文件夹](Settings-and-Data-Folder-zh)。
 

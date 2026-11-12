@@ -9,8 +9,10 @@ Alle pakketten staan op de pagina **[Releases](https://github.com/ic8tem/YA-MS/r
 | Windows (64-bit) | `YA-MS-x.y.z-windows-x64-setup.exe` (installatieprogramma) | `C:\YA-MS` |
 | Windows (64-bit), portable | `YA-MS-x.y.z-windows-x64-portatile.zip` | elke map waarin je kunt schrijven |
 | Windows (32-bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` of `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows op ARM (64-bit, pc's met Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` of `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (daarheen gekopieerd bij de eerste start) |
 | Linux (64-bit), elke distributie | `YA-MS-x.y.z-linux-x64.tar.gz` (portable of met `./installa.sh`) | `~/YA-MS` of elke map |
+| Linux (64-bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (daarheen gekopieerd bij de eerste start) |
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian-pakket | `ya-ms_x.y.z_arm64.deb` (64-bit) of `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (daarheen gekopieerd bij de eerste start) |
@@ -20,7 +22,7 @@ Alle pakketten staan op de pagina **[Releases](https://github.com/ic8tem/YA-MS/r
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, alleen de applicatie | `YA-MS-x.y.z-mac-apple-silicon-app.zip` of `...-mac-intel-app.zip` | de map waarin je `YA-MS.app` uitpakt |
 
-Voor 32-bit pc-Linux (i686) en FreeBSD is er geen pakket: .NET 8, waarop YA-MS gebouwd is, werkt niet op deze systemen.
+Voor 32-bit pc-Linux (i686), FreeBSD en OpenBSD is er geen pakket: .NET 8, waarop YA-MS gebouwd is, werkt niet op deze systemen.
 
 **Het programma en zijn map `data` blijven altijd samen** in de map YA-MS: daar staan alle gegevens en instellingen (geen AppData, geen systeemmappen). Zie [Instellingen en gegevensmap](Settings-and-Data-Folder-nl).
 

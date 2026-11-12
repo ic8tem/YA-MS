@@ -9,8 +9,10 @@ Minden csomag a **[Releases](https://github.com/ic8tem/YA-MS/releases)** oldalon
 | Windows (64 bites) | `YA-MS-x.y.z-windows-x64-setup.exe` (telepítő) | `C:\YA-MS` |
 | Windows (64 bites), hordozható | `YA-MS-x.y.z-windows-x64-portatile.zip` | bármely mappa, amelybe írási joga van |
 | Windows (32 bites, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` vagy `...-windows-x86-portatile.zip` | `C:\YA-MS` |
+| Windows ARM-on (64 bites, Snapdragon processzoros PC-k) | `YA-MS-x.y.z-windows-arm64-setup.exe` vagy `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bites): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (az első indításkor oda másolódik) |
 | Linux (64 bites), bármely disztribúció | `YA-MS-x.y.z-linux-x64.tar.gz` (hordozhatóként vagy a `./installa.sh` szkripttel) | `~/YA-MS` vagy bármely mappa |
+| Linux (64 bites): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64) | `~/YA-MS` (az első indításkor oda másolódik) |
 | Raspberry Pi 3/4/5, 400/500 (64 bites Raspberry Pi OS) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (32 bites Raspberry Pi OS) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian-csomag | `ya-ms_x.y.z_arm64.deb` (64 bites) vagy `ya-ms_x.y.z_armhf.deb` (32 bites) | `~/YA-MS` (az első indításkor oda másolódik) |
@@ -20,7 +22,7 @@ Minden csomag a **[Releases](https://github.com/ic8tem/YA-MS/releases)** oldalon
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, csak az alkalmazás | `YA-MS-x.y.z-mac-apple-silicon-app.zip` vagy `...-mac-intel-app.zip` | az a mappa, ahová a `YA-MS.app` csomagot kibontja |
 
-A 32 bites PC-s Linuxhoz (i686) és a FreeBSD-hez nincs csomag: a .NET 8, amelyre a YA-MS épül, ezeken a rendszereken nem fut.
+A 32 bites PC-s Linuxhoz (i686), a FreeBSD-hez és az OpenBSD-hez nincs csomag: a .NET 8, amelyre a YA-MS épül, ezeken a rendszereken nem fut.
 
 **A program és a `data` mappája mindig együtt marad** a YA-MS mappában: minden adat és beállítás ott található (nincs AppData, nincsenek rendszermappák). Lásd: [Beállítások és adatmappa](Settings-and-Data-Folder-hu).
 

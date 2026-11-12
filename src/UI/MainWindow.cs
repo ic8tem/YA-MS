@@ -473,7 +473,7 @@ namespace YAMS
             PathModel.LobePattern = chkLobe.IsChecked == true;
             ToolTip.SetTip(chkLobe, Lang.T("Come conta l'elevazione del lobo.\n" +
                 "Accesa (di partenza): i punti di riflessione pesano con il diagramma verticale dell'antenna di ciascuna stazione. Il lobo ha il massimo all'elevazione scritta accanto e la larghezza verticale calcolata dal boom (curva DL6WU, Kraus); " +
-                "sotto il massimo il terreno fa scendere il guadagno fino a zero all'orizzonte. Un punto basso conta meno, ma conta: su una tratta lunga l'efficienza non sparisce.\n" +
+                "sotto il massimo il terreno fa scendere il guadagno fino a zero all'orizzonte. Un punto basso conta meno, ma conta: su una tratta lunga l'efficienza non sparisce. È accesa di partenza perché descrive l'antenna reale: JN70CN – JO76QP (1791 km), lobo a 3°, scie a 88,5 km, Geminidi del 14/12/2026: 7 % con la casella accesa, nessun valore con la casella spenta.\n" +
                 "Spenta: l'elevazione del lobo è un limite netto (come fino alla versione 1.8.0). I punti visti sotto quell'elevazione da una delle due stazioni non contano; su una tratta lunga con il lobo a qualche grado tutte le efficienze possono valere 0."));
             WhenChanged(chkLobe, ToggleButton.IsCheckedProperty, () =>
             {

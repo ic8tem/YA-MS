@@ -39,7 +39,7 @@ Sinds versie 1.6 hebben de hoofdtabbladen **subtabbladen** (een lichtere rij ond
 | [Vakkenkaart](Grid-Square-Map-nl) | – | Gewerkte en bevestigde Maidenhead-vakken uit een ADIF-bestand, één tabblad per band |
 | **Technische documenten** | [Bronnen](Sources-nl) | Alle bronnen; de belangrijkste is het artikel van Cerrotta–Sartori |
 | | [Kaart van de Europese radars](European-Radar-Map-nl) | Waar Collm, Sodankylä, GRAVES en CMOR liggen ten opzichte van jouw station |
-| | [Efficiëntie - uitleg](Efficiency-Explanation-nl) | Stap-voor-stapdocument over hoe de efficiëntie wordt berekend, te exporteren naar Word |
+| | [Uitleg van de rendementsberekening](Efficiency-Explanation-nl) | Stap-voor-stapdocument over hoe de efficiëntie wordt berekend, te exporteren naar Word |
 
 Boven de tabbladen staan drie rijen bedieningselementen (jouw locator, tegenstation, band, antenne, spoorhoogte, tijd); zie [Aan de slag](Getting-Started-nl). Met de knop **Bediening** klap je ze in; taal en kleurenschema kies je rechtsboven; zie [Instellingen en gegevensmap](Settings-and-Data-Folder-nl).
 

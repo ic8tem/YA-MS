@@ -59,7 +59,7 @@ Changer de langue ou de thème enregistre les réglages et **reconstruit la fen�
 
 Au premier démarrage, YA-MS utilise la **langue du système** si c'est l'une d'elles, sinon l'italien. Les nombres et les dates suivent la langue choisie (par ex. point décimal en anglais, virgule en italien et en allemand). Tout texte absent d'un fichier de traduction s'affiche en italien. Sous Linux, le chinois, le japonais, le coréen, l'arabe, l'hébreu, l'ourdou, le hindi et le bengali nécessitent des polices adaptées (par ex. les familles Noto) : voir [Dépannage](Troubleshooting-FAQ-fr#sous-linux-le-texte-japonais-saffiche-en-carrés).
 
-Le document [Efficacité - explication](Efficiency-Explanation-fr) suit la langue de l'interface ; le manuel de calcul se trouve dans `doc/` (italien) et `doc/manuali/` (les 35 autres langues).
+Le document [Explication du calcul de l'efficacité](Efficiency-Explanation-fr) suit la langue de l'interface ; le manuel de calcul se trouve dans `doc/` (italien) et `doc/manuali/` (les 35 autres langues).
 
 ## Schémas de couleurs
 

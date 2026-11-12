@@ -6,7 +6,7 @@
 
 [![Fontes](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-A aba **Fontes** lista todas as obras em que o YA-MS se baseia, agrupadas como abaixo (o texto é selecionável, para que você possa copiar as referências). As mesmas fontes, numeradas, fecham o manual de cálculo (`doc/YA-MS_manuale_calcoli.docx`) e o documento [Eficiência - explicação](Efficiency-Explanation-pt-br).
+A aba **Fontes** lista todas as obras em que o YA-MS se baseia, agrupadas como abaixo (o texto é selecionável, para que você possa copiar as referências). As mesmas fontes, numeradas, fecham o manual de cálculo (`doc/YA-MS_manuale_calcoli.docx`) e o documento [Explicação do cálculo da eficiência](Efficiency-Explanation-pt-br).
 
 ## FONTE PRINCIPAL
 

@@ -6,7 +6,7 @@
 
 [![Heimildir](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-Flipinn **Heimildir** telur upp öll verk sem YA-MS byggir á, flokkuð eins og hér að neðan (hægt er að velja textann, svo þú getur afritað tilvísanirnar). Sömu heimildir, tölusettar, eru í lok reiknihandbókarinnar (`doc/YA-MS_manuale_calcoli.docx`) og skjalsins [Nýtni - skýringar](Efficiency-Explanation-is).
+Flipinn **Heimildir** telur upp öll verk sem YA-MS byggir á, flokkuð eins og hér að neðan (hægt er að velja textann, svo þú getur afritað tilvísanirnar). Sömu heimildir, tölusettar, eru í lok reiknihandbókarinnar (`doc/YA-MS_manuale_calcoli.docx`) og skjalsins [Skýring á útreikningi nýtninnar](Efficiency-Explanation-is).
 
 ## AÐALHEIMILD
 

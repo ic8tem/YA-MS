@@ -39,7 +39,7 @@ Depuis la version 1.6, les onglets principaux comportent des **sous-onglets** (u
 | [Carte des carrés](Grid-Square-Map-fr) | – | Carrés Maidenhead contactés et confirmés à partir d'un fichier ADIF, un onglet par bande |
 | **Documents techniques** | [Sources](Sources-fr) | Toutes les sources ; la principale est l'article Cerrotta–Sartori |
 | | [Carte des radars européens](European-Radar-Map-fr) | Où se trouvent Collm, Sodankylä, GRAVES et CMOR par rapport à votre station |
-| | [Efficacité - explication](Efficiency-Explanation-fr) | Document pas à pas sur la façon dont l'efficacité est calculée, exportable vers Word |
+| | [Explication du calcul de l'efficacité](Efficiency-Explanation-fr) | Document pas à pas sur la façon dont l'efficacité est calculée, exportable vers Word |
 
 Au-dessus des onglets se trouvent trois rangées de commandes (votre locator, correspondant, bande, antenne, altitude des traînées, heure) ; voir [Premiers pas](Getting-Started-fr). Le bouton **Commandes** les replie, et la langue ainsi que le schéma de couleurs se choisissent en haut à droite ; voir [Réglages et dossier des données](Settings-and-Data-Folder-fr).
 

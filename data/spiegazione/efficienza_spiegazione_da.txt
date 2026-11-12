@@ -76,7 +76,9 @@ TAG|RILIEVO|Samme regel optræder i DH9GCDs formel gengivet af DF5HC [16]: effek
 TAG|RILIEVO|DH9GCDs formel har ingen publiceret primærkilde: den kombinerer faktoren sin El (sporenes antal og ionisering) med en faktor cos El, der repræsenterer spejlpunktets bevægelse væk fra strækningens midte, når radianten stiger. Beregnet med radianten set fra midtpunktet, som MS-Soft [25] gør, gengiver den MS-Softs tabel for KP30HV-JO52MM (1324 km, Quadrantiderne, 4/1/2001) inden for 4 point mellem 16° og 48° elevation og inden for 16 point op til 64°, med samme maksimum kl. 13 UT (96 % mod 92 %). Den forbliver en sammenligningsværdi.
 H1|6. Fra enkeltpunkt til effektivitet
 H2|6.1 Refleksionspunkterne
-TAG|SCELTA|Programmet inddeler E-laget i punkter for hver 15 km og beholder kun dem, som begge stationer ser over lobens minimumselevation.
+TAG|SCELTA|Programmet deler E-laget i punkter for hver 15 km og beholder dem, som begge stationer ser over horisonten. Med feltet "antennediagram" slået til (standard) vægtes hvert punkt med de to antenners lodrette forstærkning: en retningsantenne fastgjort på 0° har alligevel hovedloben nogle grader over horisonten på grund af jordrefleksionen, og "Lobens elevation" er elevationen e0 for dette maksimum. Med e punktets elevation set fra en station og θV lobens lodrette bredde ved −3 dB (afsnit 3.5):
+EQ|g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0) for e < e0;   g(e) = 10^(−1,2·(e/θV)²) for e ≥ e0;   punktets vægt × g(e1) · g(e2)
+TAG|SCELTA|Under maksimum bringer jordfaktoren forstærkningen til nul ved horisonten; loben har et gulv på −20 dB. Et lavt punkt tæller mindre, men det tæller: på en lang strækning forsvinder effektiviteten ikke. Med feltet slået fra er lobens elevation en skarp grænse, som indtil version 1.8.0: punkter, som en af stationerne ser under e0, tæller ikke, og på en lang strækning med loben nogle grader oppe kan alle effektiviteter blive 0 (JN70CN – JO76QP, 1791 km, lobe ved 3°, spor på 88,5 km: intet punkt).
 H2|6.2 Vægten for hvert punkt
 TAG|FONTE|Effekten fra et underdenst spor (McKinley [8]; ITU-R P.843 [24]) vokser med λ³ og aftager med afstandene R1, R2 fra stationerne; φ er halvdelen af spredningsvinklen, β vinklen mellem sporet og det plan, der indeholder de to stationer og punktet:
 EQ|vægt = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
@@ -135,7 +137,7 @@ TAG|RILIEVO|Usikkerhed om startradiussen: Stober et al. [30] finder med radaren 
 TAG|SCELTA|Programmet tilbyder valget "Sporets startradius" i underfanen Geometri og dæmpning: dobbelt ITU-værdi (standard, forsigtig, som målingerne fra Stober et al.), ITU-R P.843, udeladt. Fordobles r0, ganges faktoren a1 i dB med 4: over 1000 km 0,8 dB på 50 MHz, 2,4 dB på 144 MHz og 5,6 dB på 432 MHz (11,6 dB ved 600 km). CMOR-målingerne er foretaget ved lavere frekvenser og i 85–95 km: at bruge dem på 432 MHz, hvor ekkoerne kommer fra ca. 79 km, er en ekstrapolation.
 H1|9. Kendte begrænsninger
 LI|Modellen tager kun højde for underdense spor. Overdense spor (de lange bursts) og den sporadiske baggrund indgår ikke i effektiviteten; den sporadiske baggrund repræsenteres af radarfluxen.
-LI|I effektivitetsberegningen betragtes antennerne som isotrope; den virkelige lobe bruges kun til kontrol af Hot-punkterne.
+LI|Den lodrette lobe er en enkel model: vandret antenne, gaussisk lobe med bredden θV ved −3 dB (Kraus) og jordfaktor op til første maksimum; de følgende lober, den virkelige antennehøjde og det omgivende terræn medregnes ikke.
 LI|Radiantens drift og B-koefficienterne i aktivitetsprofilen er arbejdsværdier.
 LI|Procenterne bør sammenlignes med MCG_MS, MS-Soft og med observationer på båndet.
 H1|10. Kilder

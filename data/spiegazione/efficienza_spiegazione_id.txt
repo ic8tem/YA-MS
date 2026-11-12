@@ -76,7 +76,9 @@ TAG|RILIEVO|Aturan yang sama muncul dalam rumus DH9GCD yang dikutip oleh DF5HC [
 TAG|RILIEVO|Rumus DH9GCD tidak memiliki sumber primer yang dipublikasikan: rumus ini menggabungkan faktor sin El (jumlah dan ionisasi jejak) dengan faktor cos El yang mewakili menjauhnya titik spekular dari pusat lintasan saat radian naik. Bila dihitung dengan radian dilihat dari titik tengah, seperti yang dilakukan MS-Soft [25], rumus ini mereproduksi tabel MS-Soft untuk KP30HV-JO52MM (1324 km, Quadrantid, 4/1/2001) dalam 4 poin antara elevasi 16° dan 48° dan dalam 16 poin hingga 64°, dengan maksimum yang sama pada pukul 13 UT (96 % terhadap 92 %). Tetap sebagai pembanding.
 H1|6. Dari satu titik ke efisiensi
 H2|6.1 Titik-titik pantul
-TAG|SCELTA|Program membagi lapisan E menjadi titik-titik setiap 15 km dan hanya mempertahankan yang terlihat oleh kedua stasiun di atas elevasi minimum lobe.
+TAG|SCELTA|Program membagi lapisan E menjadi titik setiap 15 km dan menyimpan titik yang dilihat kedua stasiun di atas cakrawala. Dengan kotak "pola antena" aktif (bawaan), setiap titik diberi bobot dengan penguatan vertikal kedua antena: antena terarah yang dipasang tetap pada 0° tetap memiliki lobus utama beberapa derajat di atas cakrawala karena pantulan tanah, dan "Elevasi lobus" adalah elevasi e0 puncak itu. Dengan e elevasi titik dilihat dari stasiun dan θV lebar vertikal lobus pada −3 dB (subbab 3.5):
+EQ|g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0) untuk e < e0;   g(e) = 10^(−1,2·(e/θV)²) untuk e ≥ e0;   bobot titik × g(e1) · g(e2)
+TAG|SCELTA|Di bawah puncak, faktor tanah membawa penguatan ke nol di cakrawala; lobus memiliki lantai −20 dB. Titik rendah dihitung lebih sedikit, tetapi tetap dihitung: pada lintasan panjang efisiensi tidak hilang. Dengan kotak nonaktif, elevasi lobus adalah batas tegas, seperti sampai versi 1.8.0: titik yang dilihat salah satu stasiun di bawah e0 tidak dihitung, dan pada lintasan panjang dengan lobus beberapa derajat ke atas semua efisiensi bisa bernilai 0 (JN70CN – JO76QP, 1791 km, lobus pada 3°, jejak pada 88,5 km: tidak ada titik).
 H2|6.2 Bobot setiap titik
 TAG|FONTE|Daya jejak underdense (McKinley [8]; ITU-R P.843 [24]) meningkat dengan λ³ dan menurun dengan jarak R1, R2 dari stasiun; φ adalah setengah sudut hamburan, β sudut antara jejak dan bidang yang memuat kedua stasiun dan titik itu:
 EQ|bobot = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
@@ -135,7 +137,7 @@ TAG|RILIEVO|Ketidakpastian jari-jari awal: Stober dkk. [30], dengan radar CMOR p
 TAG|SCELTA|Program menawarkan pilihan "Jari-jari awal jejak" di subtab Geometri dan redaman: dua kali nilai ITU (bawaan, hati-hati, seperti pengukuran Stober dkk.), ITU-R P.843, dikecualikan. Jika r0 digandakan, faktor a1 dalam dB dikalikan 4: pada 1000 km 0,8 dB pada 50 MHz, 2,4 dB pada 144 MHz dan 5,6 dB pada 432 MHz (11,6 dB pada 600 km). Pengukuran CMOR dilakukan pada frekuensi lebih rendah dan pada 85–95 km: memakainya pada 432 MHz, tempat gema datang dari sekitar 79 km, adalah ekstrapolasi.
 H1|9. Batasan yang diketahui
 LI|Model hanya memperhitungkan jejak underdense. Jejak overdense (burst panjang) dan latar sporadis tidak masuk ke efisiensi; latar sporadis diwakili oleh fluks radar.
-LI|Dalam perhitungan efisiensi antena dianggap isotropik; lobe nyata hanya digunakan untuk pemeriksaan Hot.
+LI|Lobus vertikal adalah model sederhana: antena horizontal, lobus Gauss selebar θV pada −3 dB (Kraus) dan faktor tanah sampai puncak pertama; lobus berikutnya, tinggi antena yang sebenarnya dan medan sekitar tidak diperhitungkan.
 LI|Pergeseran radian dan koefisien B profil aktivitas adalah nilai kerja.
 LI|Persentase perlu dibandingkan dengan MCG_MS, MS-Soft dan dengan pengamatan di band.
 H1|10. Sumber

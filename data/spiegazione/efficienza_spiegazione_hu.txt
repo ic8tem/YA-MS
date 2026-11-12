@@ -76,7 +76,9 @@ TAG|RILIEVO|Ugyanez a szabály jelenik meg DH9GCD képletében, DF5HC [16] közl
 TAG|RILIEVO|DH9GCD képletének nincs publikált elsődleges forrása: a sin El tényezőt (a nyomok száma és ionizációja) egy cos El tényezővel kapcsolja össze, amely a tükrös pont távolodását jelenti az útvonal közepétől, ahogy a radiáns emelkedik. A felezőpontból látott radiánssal számolva, ahogy az MS-Soft [25] teszi, visszaadja az MS-Soft táblázatát KP30HV-JO52MM-re (1324 km, Quadrantidák, 4/1/2001) 4 ponton belül 16° és 48° eleváció között, és 16 ponton belül 64°-ig, ugyanazzal a maximummal 13 UT-kor (96 % kontra 92 %). Összehasonlítási alap marad.
 H1|6. Az egyes ponttól a hatékonyságig
 H2|6.1 A visszaverődési pontok
-TAG|SCELTA|A program az E-réteget 15 km-enkénti pontokra osztja, és csak azokat tartja meg, amelyeket mindkét állomás a nyaláb minimális elevációja felett lát.
+TAG|SCELTA|A program az E-réteget 15 km-enként pontokra osztja, és azokat tartja meg, amelyeket mindkét állomás a horizont felett lát. Bekapcsolt „antenna iránykarakterisztika” jelölőnégyzettel (alapértelmezés) minden pontot a két antenna függőleges nyeresége súlyoz: a 0°-ra rögzített irányantennának a talajról való visszaverődés miatt mégis néhány fokkal a horizont felett van a főnyalábja, és a „Nyaláb emelkedési szöge” ennek a maximumnak az e0 emelkedési szöge. Ahol e a pont emelkedési szöge egy állomásról nézve, θV pedig a nyaláb függőleges szélessége −3 dB-nél (3.5. pont):
+EQ|g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0), ha e < e0;   g(e) = 10^(−1,2·(e/θV)²), ha e ≥ e0;   a pont súlya × g(e1) · g(e2)
+TAG|SCELTA|A maximum alatt a talajtényező a horizontnál nullára viszi a nyereséget; a nyaláb alsó szintje −20 dB. Egy alacsony pont kevesebbet számít, de számít: hosszú útvonalon a hatásfok nem tűnik el. Kikapcsolt jelölőnégyzettel a nyaláb emelkedési szöge éles határ, mint az 1.8.0 verzióig: az e0 alatt bármelyik állomásról látott pontok nem számítanak, és hosszú útvonalon néhány fokos nyalábbal minden hatásfok 0 lehet (JN70CN – JO76QP, 1791 km, nyaláb 3°-on, nyomok 88,5 km-en: egy pont sem).
 H2|6.2 Az egyes pontok súlya
 TAG|FONTE|Egy alulsűrű nyom teljesítménye (McKinley [8]; ITU-R P.843 [24]) λ³-nel nő, és az állomásoktól mért R1, R2 távolsággal csökken; φ a szórási szög fele, β a nyom és a két állomást és a pontot tartalmazó sík közötti szög:
 EQ|súly = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
@@ -135,7 +137,7 @@ TAG|RILIEVO|A kezdeti sugár bizonytalansága: Stober és mtsai [30] a CMOR rada
 TAG|SCELTA|A program a Geometria és csillapítás alfülön kínálja „A nyom kezdeti sugara” választást: az ITU kétszerese (alapértelmezett, óvatos, mint Stober és mtsai mérései), ITU-R P.843, kizárva. Ha r0 kétszeresére nő, az a1 tényező dB-ben négyszeresére nő: 1000 km-en 0,8 dB 50 MHz-en, 2,4 dB 144 MHz-en és 5,6 dB 432 MHz-en (11,6 dB 600 km-en). A CMOR-mérések alacsonyabb frekvenciákon és 85–95 km-en készültek: 432 MHz-en alkalmazni őket, ahol a visszhangok kb. 79 km-ről jönnek, extrapoláció.
 H1|9. Ismert korlátok
 LI|A modell csak alulsűrű nyomokat vesz figyelembe. A túlsűrű nyomok (a hosszú burstök) és a sporadikus háttér nem szerepel a hatékonyságban; a sporadikus hátteret a radarfluxus képviseli.
-LI|A hatékonyság számításában az antennákat izotrópnak tekintjük; a valódi nyaláb csak a Hot pontok ellenőrzésére szolgál.
+LI|A függőleges nyaláb egyszerű modell: vízszintes antenna, −3 dB-nél θV szélességű Gauss-nyaláb (Kraus) és talajtényező az első maximumig; a további nyalábokat, az antenna valódi magasságát és a környező terepet nem veszi figyelembe.
 LI|A radiáns vándorlásai és az aktivitási profil B együtthatói munkaértékek.
 LI|A százalékokat össze kell vetni az MCG_MS-sel, az MS-Softtal és a sávbeli megfigyelésekkel.
 H1|10. Források

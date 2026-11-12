@@ -6,7 +6,7 @@
 
 [![Avoti](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-Cilne **Avoti** uzskaita visus darbus, uz kuriem balstīta YA-MS, sagrupētus kā zemāk (teksts ir iezīmējams, tāpēc atsauces var nokopēt). Tie paši avoti ar numuriem noslēdz aprēķinu rokasgrāmatu (`doc/YA-MS_manuale_calcoli.docx`) un dokumentu [Efektivitāte - skaidrojums](Efficiency-Explanation-lv).
+Cilne **Avoti** uzskaita visus darbus, uz kuriem balstīta YA-MS, sagrupētus kā zemāk (teksts ir iezīmējams, tāpēc atsauces var nokopēt). Tie paši avoti ar numuriem noslēdz aprēķinu rokasgrāmatu (`doc/YA-MS_manuale_calcoli.docx`) un dokumentu [Efektivitātes aprēķina skaidrojums](Efficiency-Explanation-lv).
 
 ## GALVENAIS AVOTS
 

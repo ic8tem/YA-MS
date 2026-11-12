@@ -59,7 +59,7 @@ Mengganti bahasa atau tema akan menyimpan pengaturan dan **membangun ulang jende
 
 Pada start pertama YA-MS memakai **bahasa sistem** jika termasuk salah satu di atas, jika tidak bahasa Italia. Angka dan tanggal mengikuti bahasa yang dipilih (mis. titik desimal dalam bahasa Inggris, koma dalam bahasa Italia dan Jerman). Teks yang tidak ada dalam file terjemahan ditampilkan dalam bahasa Italia. Di Linux, bahasa Tionghoa, Jepang, Korea, Arab, Ibrani, Urdu, Hindi, dan Bengali memerlukan font yang sesuai (mis. keluarga Noto): lihat [Pemecahan masalah](Troubleshooting-FAQ-id#linux-teks-jepang-tampil-sebagai-kotak).
 
-Dokumen [Efisiensi - penjelasan](Efficiency-Explanation-id) mengikuti bahasa antarmuka; manual perhitungan ada di `doc/` (bahasa Italia) dan `doc/manuali/` (35 bahasa lainnya).
+Dokumen [Penjelasan perhitungan efisiensi](Efficiency-Explanation-id) mengikuti bahasa antarmuka; manual perhitungan ada di `doc/` (bahasa Italia) dan `doc/manuali/` (35 bahasa lainnya).
 
 ## Skema warna
 

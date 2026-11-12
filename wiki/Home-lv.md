@@ -39,7 +39,7 @@ Kopš 1.6. versijas galvenajām cilnēm ir **apakšcilnes** (gaišāka rinda zem
 | [Kvadrātu karte](Grid-Square-Map-lv) | – | Strādātie un apstiprinātie Maidenhead kvadrāti no ADIF faila, viena cilne katrai joslai |
 | **Tehniskie dokumenti** | [Avoti](Sources-lv) | Visi avoti; galvenais ir Cerrotta–Sartori raksts |
 | | [Eiropas radaru karte](European-Radar-Map-lv) | Kur atrodas Collm, Sodankylä, GRAVES un CMOR attiecībā pret tavu staciju |
-| | [Efektivitāte - skaidrojums](Efficiency-Explanation-lv) | Dokuments soli pa solim par to, kā tiek aprēķināta efektivitāte, eksportējams uz Word |
+| | [Efektivitātes aprēķina skaidrojums](Efficiency-Explanation-lv) | Dokuments soli pa solim par to, kā tiek aprēķināta efektivitāte, eksportējams uz Word |
 
 Virs cilnēm ir trīs vadības rindas (tavs lokators, korespondents, josla, antena, sliežu augstums, laiks); sk. [Darba sākšana](Getting-Started-lv). Poga **Vadība** tās sakļauj, bet valodu un krāsu shēmu izvēlas augšā pa labi; sk. [Iestatījumi un datu mape](Settings-and-Data-Folder-lv).
 

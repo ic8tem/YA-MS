@@ -1,10 +1,10 @@
 [English](Efficiency-Explanation) · [Italiano](Efficiency-Explanation-it) · [Deutsch](Efficiency-Explanation-de) · [Nederlands](Efficiency-Explanation-nl) · [Français](Efficiency-Explanation-fr) · [Español](Efficiency-Explanation-es) · [Português](Efficiency-Explanation-pt) · [Português (Brasil)](Efficiency-Explanation-pt-br) · [Dansk](Efficiency-Explanation-da) · [Norsk](Efficiency-Explanation-nb) · [Svenska](Efficiency-Explanation-sv) · [Íslenska](Efficiency-Explanation-is) · [Eesti](Efficiency-Explanation-et) · [Lietuvių](Efficiency-Explanation-lt) · [Latviešu](Efficiency-Explanation-lv) · [Polski](Efficiency-Explanation-pl) · [Čeština](Efficiency-Explanation-cs) · [Magyar](Efficiency-Explanation-hu) · [Română](Efficiency-Explanation-ro) · [Ελληνικά](Efficiency-Explanation-el) · [Русский](Efficiency-Explanation-ru) · [Українська](Efficiency-Explanation-uk) · [Türkçe](Efficiency-Explanation-tr) · [Afrikaans](Efficiency-Explanation-af) · [العربية](Efficiency-Explanation-ar) · [עברית](Efficiency-Explanation-he) · [اردو](Efficiency-Explanation-ur) · [हिन्दी](Efficiency-Explanation-hi) · **বাংলা** · [ไทย](Efficiency-Explanation-th) · [Bahasa Indonesia](Efficiency-Explanation-id) · [Tagalog](Efficiency-Explanation-tl) · [日本語](Efficiency-Explanation-ja) · [한국어](Efficiency-Explanation-ko) · [中文](Efficiency-Explanation-zh) · [中文 (繁體)](Efficiency-Explanation-zh-tw)
 
-# দক্ষতা - ব্যাখ্যা
+# দক্ষতার হিসাবের ব্যাখ্যা
 
-*ট্যাব: প্রযুক্তিগত নথি › দক্ষতা - ব্যাখ্যা।*
+*ট্যাব: প্রযুক্তিগত নথি › দক্ষতার হিসাবের ব্যাখ্যা।*
 
-[![দক্ষতা - ব্যাখ্যা](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
+[![দক্ষতার হিসাবের ব্যাখ্যা](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
 একটি প্রযুক্তিগত নথি, *"Come YA-MS calcola l'efficienza di uno sciame"* (YA-MS কীভাবে একটি উল্কাবৃষ্টির দক্ষতা হিসাব করে), প্রোগ্রামের ভেতরে একটি হালকা রঙের পাতা হিসেবে দেখানো হয়। এটি দক্ষতা কীভাবে পাওয়া যায় তা **ধাপে ধাপে** ব্যাখ্যা করে এবং প্রতিটি ধাপের জন্য জানায় **সেটি কোথা থেকে এসেছে**। প্রোগ্রামটি এটি, হিসাবের ম্যানুয়ালের মতোই, **ইন্টারফেসের ভাষায়** (সব 36টি ভাষায়) দেখায়; এই উইকি এর বিষয়বস্তু [দক্ষতার হিসাব](Efficiency-Calculation-bn#মডেল) ও [জ্যামিতি ও পথ ক্ষয়](Geometry-and-Path-Loss-bn)-এও দেয়।
 

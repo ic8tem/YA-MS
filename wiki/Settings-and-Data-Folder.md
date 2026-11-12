@@ -59,7 +59,7 @@ Changing language or theme saves the settings and **rebuilds the window** in the
 
 At the first start YA-MS uses the **system language** if it is one of these, otherwise Italian. Numbers and dates follow the chosen language (e.g. decimal point in English, comma in Italian and German). Any text missing from a translation file is shown in Italian. On Linux, Chinese, Japanese, Korean, Arabic, Hebrew, Urdu, Hindi and Bengali need suitable fonts (e.g. the Noto families): see [Troubleshooting](Troubleshooting-FAQ#linux-japanese-text-shows-boxes).
 
-The [Efficiency - explanation](Efficiency-Explanation) document follows the interface language; the calculation manual is in `doc/` (Italian) and `doc/manuali/` (the other 35 languages).
+The [Explanation of the efficiency calculation](Efficiency-Explanation) document follows the interface language; the calculation manual is in `doc/` (Italian) and `doc/manuali/` (the other 35 languages).
 
 ## Colour schemes
 

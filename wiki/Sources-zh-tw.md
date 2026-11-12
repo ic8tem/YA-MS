@@ -6,7 +6,7 @@
 
 [![來源](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-**來源**分頁列出 YA-MS 所依據的全部著作，依下列分組排列（文字可選取，方便複製參考文獻）。同樣的來源也依編號列在計算手冊（`doc/YA-MS_manuale_calcoli.docx`）和[效率 - 說明](Efficiency-Explanation-zh-tw)文件的末尾。
+**來源**分頁列出 YA-MS 所依據的全部著作，依下列分組排列（文字可選取，方便複製參考文獻）。同樣的來源也依編號列在計算手冊（`doc/YA-MS_manuale_calcoli.docx`）和[效率計算說明](Efficiency-Explanation-zh-tw)文件的末尾。
 
 ## 主要來源
 

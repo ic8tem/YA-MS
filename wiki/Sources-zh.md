@@ -6,7 +6,7 @@
 
 [![来源](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-**来源**选项卡列出 YA-MS 所依据的全部著作，按下列分组排列（文字可选中，便于复制参考文献）。同样的来源也按编号列在计算手册（`doc/YA-MS_manuale_calcoli.docx`）和[效率 - 说明](Efficiency-Explanation-zh)文档的末尾。
+**来源**选项卡列出 YA-MS 所依据的全部著作，按下列分组排列（文字可选中，便于复制参考文献）。同样的来源也按编号列在计算手册（`doc/YA-MS_manuale_calcoli.docx`）和[效率计算说明](Efficiency-Explanation-zh)文档的末尾。
 
 ## 主要来源
 

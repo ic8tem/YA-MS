@@ -1,10 +1,10 @@
 [English](Efficiency-Explanation) · [Italiano](Efficiency-Explanation-it) · [Deutsch](Efficiency-Explanation-de) · [Nederlands](Efficiency-Explanation-nl) · [Français](Efficiency-Explanation-fr) · [Español](Efficiency-Explanation-es) · [Português](Efficiency-Explanation-pt) · [Português (Brasil)](Efficiency-Explanation-pt-br) · [Dansk](Efficiency-Explanation-da) · [Norsk](Efficiency-Explanation-nb) · [Svenska](Efficiency-Explanation-sv) · [Íslenska](Efficiency-Explanation-is) · [Eesti](Efficiency-Explanation-et) · [Lietuvių](Efficiency-Explanation-lt) · [Latviešu](Efficiency-Explanation-lv) · [Polski](Efficiency-Explanation-pl) · [Čeština](Efficiency-Explanation-cs) · [Magyar](Efficiency-Explanation-hu) · [Română](Efficiency-Explanation-ro) · **Ελληνικά** · [Русский](Efficiency-Explanation-ru) · [Українська](Efficiency-Explanation-uk) · [Türkçe](Efficiency-Explanation-tr) · [Afrikaans](Efficiency-Explanation-af) · [العربية](Efficiency-Explanation-ar) · [עברית](Efficiency-Explanation-he) · [اردو](Efficiency-Explanation-ur) · [हिन्दी](Efficiency-Explanation-hi) · [বাংলা](Efficiency-Explanation-bn) · [ไทย](Efficiency-Explanation-th) · [Bahasa Indonesia](Efficiency-Explanation-id) · [Tagalog](Efficiency-Explanation-tl) · [日本語](Efficiency-Explanation-ja) · [한국어](Efficiency-Explanation-ko) · [中文](Efficiency-Explanation-zh) · [中文 (繁體)](Efficiency-Explanation-zh-tw)
 
-# Απόδοση - επεξήγηση
+# Εξήγηση του υπολογισμού της απόδοσης
 
-*Καρτέλα: Τεχνικά έγγραφα › Απόδοση - επεξήγηση.*
+*Καρτέλα: Τεχνικά έγγραφα › Εξήγηση του υπολογισμού της απόδοσης.*
 
-[![Απόδοση - επεξήγηση](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
+[![Εξήγηση του υπολογισμού της απόδοσης](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
 Ένα τεχνικό έγγραφο, *"Come YA-MS calcola l'efficienza di uno sciame"* (Πώς υπολογίζει το YA-MS την απόδοση μιας βροχής μετεώρων), που εμφανίζεται μέσα στο πρόγραμμα ως ανοιχτόχρωμη σελίδα. Εξηγεί **βήμα προς βήμα** πώς προκύπτει η απόδοση και αναφέρει για κάθε βήμα **από πού προέρχεται**. Το πρόγραμμα το εμφανίζει **στη γλώσσα της διεπαφής** (και στις 36 γλώσσες), όπως και το εγχειρίδιο υπολογισμών· αυτό το wiki δίνει επίσης το περιεχόμενό του στις σελίδες [Υπολογισμός απόδοσης](Efficiency-Calculation-el#το-μοντέλο) και [Γεωμετρία και απώλεια διαδρομής](Geometry-and-Path-Loss-el).
 

@@ -39,7 +39,7 @@
 | [グリッド地図](Grid-Square-Map-ja) | – | ADIF ファイルから読み込んだ交信済・確認済のマイデンヘッド グリッド。バンドごとに 1 タブ |
 | **技術資料** | [出典](Sources-ja) | すべての出典。主な出典は Cerrotta–Sartori の記事 |
 | | [ヨーロッパのレーダー地図](European-Radar-Map-ja) | Collm、Sodankylä、GRAVES、CMOR が自局から見てどこにあるか |
-| | [効率 - 解説](Efficiency-Explanation-ja) | 効率の計算方法を順を追って説明する文書。Word に出力可能 |
+| | [効率の計算の説明](Efficiency-Explanation-ja) | 効率の計算方法を順を追って説明する文書。Word に出力可能 |
 
 タブの上には 3 段の操作部 (自局ロケーター、相手局、バンド、アンテナ、流星痕高度、時刻) があります。[はじめに](Getting-Started-ja) を参照してください。**操作** ボタンでこれを折りたためます。表示言語と配色は右上で選びます。[設定とデータフォルダー](Settings-and-Data-Folder-ja) を参照してください。
 

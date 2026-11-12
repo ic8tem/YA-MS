@@ -6,7 +6,7 @@
 
 [![출처](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-**출처** 탭은 YA-MS의 바탕이 된 모든 자료를 아래와 같이 분류해 나열합니다(텍스트를 선택할 수 있으므로 참고문헌을 복사할 수 있습니다). 같은 출처가 번호와 함께 계산 매뉴얼(`doc/YA-MS_manuale_calcoli.docx`)과 [효율 - 설명](Efficiency-Explanation-ko) 문서의 끝에도 실려 있습니다.
+**출처** 탭은 YA-MS의 바탕이 된 모든 자료를 아래와 같이 분류해 나열합니다(텍스트를 선택할 수 있으므로 참고문헌을 복사할 수 있습니다). 같은 출처가 번호와 함께 계산 매뉴얼(`doc/YA-MS_manuale_calcoli.docx`)과 [효율 계산 설명](Efficiency-Explanation-ko) 문서의 끝에도 실려 있습니다.
 
 ## 주요 출처
 

@@ -39,7 +39,7 @@ Fra versjon 1.6 har hovedfanene **underfaner** (en lysere rad under hovedraden).
 | [Rutekart](Grid-Square-Map-nb) | – | Kjørte og bekreftede Maidenhead-ruter fra en ADIF-fil, én fane per bånd |
 | **Tekniske dokumenter** | [Kilder](Sources-nb) | Alle kilder; hovedkilden er artikkelen av Cerrotta–Sartori |
 | | [Kart over europeiske radarer](European-Radar-Map-nb) | Hvor Collm, Sodankylä, GRAVES og CMOR ligger i forhold til din stasjon |
-| | [Effektivitet - forklaring](Efficiency-Explanation-nb) | Dokument som trinn for trinn forklarer hvordan effektiviteten beregnes, kan eksporteres til Word |
+| | [Forklaring av effektivitetsberegningen](Efficiency-Explanation-nb) | Dokument som trinn for trinn forklarer hvordan effektiviteten beregnes, kan eksporteres til Word |
 
 Over fanene er det tre rader med kontroller (din lokator, motstasjon, bånd, antenne, sporhøyde, tid); se [Komme i gang](Getting-Started-nb). Knappen **Kontroller** felder dem sammen, og språk og fargeskjema velges øverst til høyre; se [Innstillinger og datamappe](Settings-and-Data-Folder-nb).
 

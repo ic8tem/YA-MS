@@ -59,7 +59,7 @@ Změna jazyka nebo motivu uloží nastavení a **znovu sestaví okno** ve stejn�
 
 Při prvním spuštění použije YA-MS **jazyk systému**, pokud je mezi nimi, jinak italštinu. Čísla a data se řídí zvoleným jazykem (např. desetinná tečka v angličtině, čárka v italštině a němčině). Text, který v souboru překladu chybí, se zobrazí italsky. Na Linuxu potřebují čínština, japonština, korejština, arabština, hebrejština, urdština, hindština a bengálština vhodná písma (např. rodiny Noto): viz [Řešení problémů](Troubleshooting-FAQ-cs#linux-japonský-text-se-zobrazuje-jako-čtverečky).
 
-Dokument [Účinnost - vysvětlení](Efficiency-Explanation-cs) se řídí jazykem rozhraní; manuál výpočtů je v `doc/` (italsky) a v `doc/manuali/` (ostatních 35 jazyků).
+Dokument [Vysvětlení výpočtu účinnosti](Efficiency-Explanation-cs) se řídí jazykem rozhraní; manuál výpočtů je v `doc/` (italsky) a v `doc/manuali/` (ostatních 35 jazyků).
 
 ## Barevná schémata
 

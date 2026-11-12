@@ -76,7 +76,9 @@ TAG|RILIEVO|A mesma regra aparece na fórmula de DH9GCD referida por DF5HC [16]:
 TAG|RILIEVO|A fórmula de DH9GCD não tem uma fonte primária publicada: junta o fator sin El (número e ionização dos rastos) a um fator cos El que representa o afastamento do ponto especular em relação ao centro do percurso quando o radiante sobe. Calculada com o radiante visto do ponto médio, como faz o MS-Soft [25], reproduz a tabela do MS-Soft para KP30HV-JO52MM (1324 km, Quadrântidas, 4/1/2001) com uma margem de 4 pontos entre 16° e 48° de elevação e de 16 pontos até 64°, com o mesmo máximo às 13 UT (96 % contra 92 %). Continua a ser um termo de comparação.
 H1|6. Do ponto individual à eficiência
 H2|6.1 Os pontos de reflexão
-TAG|SCELTA|O programa divide a camada E em pontos a cada 15 km e mantém apenas aqueles que ambas as estações veem acima da elevação mínima do lóbulo.
+TAG|SCELTA|O programa divide a camada E em pontos a cada 15 km e mantém os que as duas estações veem acima do horizonte. Com a caixa «diagrama da antena» ativada (predefinição) cada ponto é ponderado com o ganho vertical das duas antenas: uma diretiva fixa a 0° tem mesmo assim o lóbulo principal alguns graus acima do horizonte por causa da reflexão no solo, e a «Elevação do lóbulo» é a elevação e0 desse máximo. Com e a elevação do ponto vista de uma estação e θV a largura vertical do lóbulo a −3 dB (secção 3.5):
+EQ|g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0) para e < e0;   g(e) = 10^(−1,2·(e/θV)²) para e ≥ e0;   peso do ponto × g(e1) · g(e2)
+TAG|SCELTA|Abaixo do máximo o fator do solo leva o ganho a zero no horizonte; o lóbulo tem um mínimo de −20 dB. Um ponto baixo conta menos, mas conta: num percurso longo a eficiência não desaparece. Com a caixa desativada a elevação do lóbulo é um limite rígido, como até à versão 1.8.0: os pontos vistos abaixo de e0 por uma das duas estações não contam, e num percurso longo com o lóbulo a alguns graus todas as eficiências podem valer 0 (JN70CN – JO76QP, 1791 km, lóbulo a 3°, rastos a 88,5 km: nenhum ponto).
 H2|6.2 O peso de cada ponto
 TAG|FONTE|A potência de um rasto subdenso (McKinley [8]; ITU-R P.843 [24]) cresce com λ³ e diminui com as distâncias R1, R2 às estações; φ é metade do ângulo de scattering, β o ângulo entre o rasto e o plano que contém as duas estações e o ponto:
 EQ|peso = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
@@ -135,7 +137,7 @@ TAG|RILIEVO|Incerteza do raio inicial: Stober et al. [30], com o radar CMOR a 17
 TAG|SCELTA|O programa oferece a escolha «Raio inicial do rasto» no separador Geometria e atenuação: dobro do ITU (por omissão, prudente, como as medições de Stober et al.), ITU-R P.843, excluído. Duplicando r0 o fator a1 em dB multiplica-se por 4: em 1000 km 0,8 dB a 50 MHz, 2,4 dB a 144 MHz e 5,6 dB a 432 MHz (11,6 dB a 600 km). As medições CMOR são a frequências mais baixas e a 85–95 km: usá-las a 432 MHz, onde os ecos vêm de cerca de 79 km, é uma extrapolação.
 H1|9. Limites conhecidos
 LI|O modelo considera apenas os rastos subdensos. Os sobredensos (os bursts longos) e o fundo esporádico não entram na eficiência; o fundo esporádico é representado pelo fluxo do radar.
-LI|No cálculo da eficiência as antenas são consideradas isotrópicas; o lóbulo real serve apenas para o controlo dos Hot.
+LI|O lóbulo vertical é um modelo simples: antena horizontal, lóbulo gaussiano de largura θV a −3 dB (Kraus) e fator do solo até ao primeiro máximo; não se consideram os lóbulos seguintes, a altura real da antena nem o terreno à volta.
 LI|As derivas do radiante e os coeficientes B do perfil de atividade são valores de trabalho.
 LI|As percentagens devem ser comparadas com o MCG_MS, o MS-Soft e com as observações na banda.
 H1|10. Fontes

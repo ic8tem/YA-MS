@@ -6,7 +6,7 @@
 
 [![Šaltiniai](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-Kortelėje **Šaltiniai** išvardyti visi darbai, kuriais remiasi YA-MS, sugrupuoti taip, kaip toliau (tekstą galima pažymėti, todėl nuorodas galima kopijuoti). Tie patys šaltiniai, sunumeruoti, užbaigia skaičiavimų vadovą (`doc/YA-MS_manuale_calcoli.docx`) ir dokumentą [Efektyvumas - paaiškinimas](Efficiency-Explanation-lt).
+Kortelėje **Šaltiniai** išvardyti visi darbai, kuriais remiasi YA-MS, sugrupuoti taip, kaip toliau (tekstą galima pažymėti, todėl nuorodas galima kopijuoti). Tie patys šaltiniai, sunumeruoti, užbaigia skaičiavimų vadovą (`doc/YA-MS_manuale_calcoli.docx`) ir dokumentą [Efektyvumo skaičiavimo paaiškinimas](Efficiency-Explanation-lt).
 
 ## PAGRINDINIS ŠALTINIS
 

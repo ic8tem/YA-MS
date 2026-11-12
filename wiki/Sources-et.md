@@ -6,7 +6,7 @@
 
 [![Allikad](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-Sakk **Allikad** loetleb kõik tööd, millele YA-MS tugineb, rühmitatuna nagu allpool (tekst on valitav, nii et viiteid saab kopeerida). Samad allikad, nummerdatuna, lõpetavad arvutusjuhendi (`doc/YA-MS_manuale_calcoli.docx`) ja dokumendi [Efektiivsus - selgitus](Efficiency-Explanation-et).
+Sakk **Allikad** loetleb kõik tööd, millele YA-MS tugineb, rühmitatuna nagu allpool (tekst on valitav, nii et viiteid saab kopeerida). Samad allikad, nummerdatuna, lõpetavad arvutusjuhendi (`doc/YA-MS_manuale_calcoli.docx`) ja dokumendi [Tõhususe arvutuse selgitus](Efficiency-Explanation-et).
 
 ## PEAMINE ALLIKAS
 

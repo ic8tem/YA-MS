@@ -39,7 +39,7 @@ Alates versioonist 1.6 on põhisakkidel **alamsakid** (heledam rida põhirea all
 | [Ruutude kaart](Grid-Square-Map-et) | – | ADIF-failist loetud töötatud ja kinnitatud Maidenheadi ruudud, iga sagedusala oma sakil |
 | **Tehnilised dokumendid** | [Allikad](Sources-et) | Kõik allikad; peamine on Cerrotta–Sartori artikkel |
 | | [Euroopa radarite kaart](European-Radar-Map-et) | Kus Collm, Sodankylä, GRAVES ja CMOR sinu jaama suhtes asuvad |
-| | [Efektiivsus - selgitus](Efficiency-Explanation-et) | Samm-sammuline dokument efektiivsuse arvutamise kohta, eksporditav Wordi |
+| | [Tõhususe arvutuse selgitus](Efficiency-Explanation-et) | Samm-sammuline dokument efektiivsuse arvutamise kohta, eksporditav Wordi |
 
 Sakkide kohal on kolm juhtnuppude rida (sinu lokaator, korrespondent, sagedusala, antenn, jälgede kõrgus, aeg); vt [Alustamine](Getting-Started-et). Nupp **Juhtnupud** peidab need ning keel ja värviskeem valitakse paremal üleval; vt [Seaded ja andmekaust](Settings-and-Data-Folder-et).
 

@@ -39,7 +39,7 @@ Sürüm 1.6'dan beri ana sekmelerin **alt sekmeleri** vardır (ana sıranın alt
 | [Kare haritası](Grid-Square-Map-tr) | – | Bir ADIF dosyasından çalışılmış ve onaylanmış Maidenhead kareleri, her bant için bir sekme |
 | **Teknik belgeler** | [Kaynaklar](Sources-tr) | Tüm kaynaklar; ana kaynak Cerrotta–Sartori makalesidir |
 | | [Avrupa radarları haritası](European-Radar-Map-tr) | Collm, Sodankylä, GRAVES ve CMOR'un istasyonunuza göre konumu |
-| | [Verim - açıklama](Efficiency-Explanation-tr) | Verimin nasıl hesaplandığını adım adım anlatan, Word'e aktarılabilen belge |
+| | [Verim hesabının açıklaması](Efficiency-Explanation-tr) | Verimin nasıl hesaplandığını adım adım anlatan, Word'e aktarılabilen belge |
 
 Sekmelerin üstünde üç sıra kontrol vardır (lokatörünüz, karşı istasyon, bant, anten, iz yüksekliği, saat); bkz. [İlk adımlar](Getting-Started-tr). **Kontroller** düğmesi bunları katlar; dil ve renk şeması sağ üstten seçilir; bkz. [Ayarlar ve veri klasörü](Settings-and-Data-Folder-tr).
 

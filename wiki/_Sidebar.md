@@ -27,7 +27,7 @@
 **Technical documents**
 - [Sources](Sources)
 - [Map of European radars](European-Radar-Map)
-- [Efficiency - explanation](Efficiency-Explanation)
+- [Explanation of the efficiency calculation](Efficiency-Explanation)
 
 **Topics**
 - [Settings and data folder](Settings-and-Data-Folder)

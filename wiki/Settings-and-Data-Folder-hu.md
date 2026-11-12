@@ -59,7 +59,7 @@ A nyelv vagy a téma módosítása elmenti a beállításokat, és **újraépít
 
 Első indításkor a YA-MS a **rendszer nyelvét** használja, ha az ezek egyike, egyébként az olaszt. A számok és dátumok a választott nyelvet követik (pl. tizedespont angolul, tizedesvessző olaszul és németül). A fordítási fájlból hiányzó szövegek olaszul jelennek meg. Linuxon a kínai, japán, koreai, arab, héber, urdu, hindi és bengáli nyelvhez megfelelő betűtípusok kellenek (pl. a Noto családok): lásd: [Hibaelhárítás](Troubleshooting-FAQ-hu#linux-a-japán-szöveg-helyén-négyzetek-jelennek-meg).
 
-A [Hatékonyság – magyarázat](Efficiency-Explanation-hu) dokumentum a felület nyelvét követi; a számítási kézikönyv a `doc/` mappában (olaszul) és a `doc/manuali/` mappában (a többi 35 nyelven) található.
+A [A hatásfok számításának magyarázata](Efficiency-Explanation-hu) dokumentum a felület nyelvét követi; a számítási kézikönyv a `doc/` mappában (olaszul) és a `doc/manuali/` mappában (a többi 35 nyelven) található.
 
 ## Színsémák
 

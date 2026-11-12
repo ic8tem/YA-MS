@@ -59,7 +59,7 @@ As jy die taal of tema verander, word die instellings gestoor en die **venster h
 
 By die eerste opstart gebruik YA-MS die **stelseltaal** as dit een van hierdie is, anders Italiaans. Getalle en datums volg die gekose taal (bv. desimale punt in Engels, komma in Italiaans en Duits). Enige teks wat in 'n vertaallêer ontbreek, word in Italiaans gewys. Op Linux het Chinees, Japannees, Koreaans, Arabies, Hebreeus, Oerdoe, Hindi en Bengaals geskikte lettertipes nodig (bv. die Noto-families): sien [Probleemoplossing](Troubleshooting-FAQ-af#linux-japannese-teks-verskyn-as-blokkies).
 
-Die dokument [Doeltreffendheid - verduideliking](Efficiency-Explanation-af) volg die koppelvlaktaal; die berekeningshandleiding is in `doc/` (Italiaans) en `doc/manuali/` (die ander 35 tale).
+Die dokument [Verduideliking van die doeltreffendheidsberekening](Efficiency-Explanation-af) volg die koppelvlaktaal; die berekeningshandleiding is in `doc/` (Italiaans) en `doc/manuali/` (die ander 35 tale).
 
 ## Kleurskemas
 

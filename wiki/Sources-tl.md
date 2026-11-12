@@ -6,7 +6,7 @@
 
 [![Mga sanggunian](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-Inililista ng tab na **Mga sanggunian** ang bawat akdang pinagbatayan ng YA-MS, nakapangkat gaya ng nasa ibaba (napipili ang teksto, kaya maaari mong kopyahin ang mga sanggunian). Ang parehong mga sanggunian, may bilang, ang nagtatapos sa manwal ng kalkulasyon (`doc/YA-MS_manuale_calcoli.docx`) at sa dokumentong [Episyensya - paliwanag](Efficiency-Explanation-tl).
+Inililista ng tab na **Mga sanggunian** ang bawat akdang pinagbatayan ng YA-MS, nakapangkat gaya ng nasa ibaba (napipili ang teksto, kaya maaari mong kopyahin ang mga sanggunian). Ang parehong mga sanggunian, may bilang, ang nagtatapos sa manwal ng kalkulasyon (`doc/YA-MS_manuale_calcoli.docx`) at sa dokumentong [Paliwanag ng pagkalkula ng kahusayan](Efficiency-Explanation-tl).
 
 ## PANGUNAHING SANGGUNIAN
 

@@ -59,7 +59,7 @@ Cambiando lingua o tema le impostazioni vengono salvate e **la finestra viene ri
 
 Al primo avvio YA-MS usa la **lingua del sistema** se è una di queste, altrimenti l'italiano. Numeri e date seguono la lingua scelta (per esempio punto decimale in inglese, virgola in italiano e in tedesco). Un testo che manca in un file di traduzione viene mostrato in italiano. Su Linux cinese, giapponese, coreano, arabo, ebraico, urdu, hindi e bengalese richiedono font adatti (per esempio le famiglie Noto): vedi [Problemi e domande frequenti](Troubleshooting-FAQ-it#linux-il-testo-giapponese-appare-come-quadratini).
 
-Il documento [Efficienza - spiegazione](Efficiency-Explanation-it) segue la lingua dell'interfaccia; il manuale dei calcoli è in `doc/` (italiano) e in `doc/manuali/` (le altre 35 lingue).
+Il documento [Spiegazione del calcolo dell'efficienza](Efficiency-Explanation-it) segue la lingua dell'interfaccia; il manuale dei calcoli è in `doc/` (italiano) e in `doc/manuali/` (le altre 35 lingue).
 
 ## Schemi di colori
 

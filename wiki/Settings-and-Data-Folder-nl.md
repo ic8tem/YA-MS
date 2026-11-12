@@ -59,7 +59,7 @@ Als je van taal of kleurenschema wisselt, worden de instellingen opgeslagen en w
 
 Bij de eerste start gebruikt YA-MS de **taal van het systeem** als dat een van deze is, anders Italiaans. Getallen en datums volgen de gekozen taal (bijv. decimale punt in het Engels, komma in het Italiaans, Duits en Nederlands). Tekst die in een vertaalbestand ontbreekt, wordt in het Italiaans getoond. Onder Linux hebben Chinees, Japans, Koreaans, Arabisch, Hebreeuws, Urdu, Hindi en Bengaals geschikte lettertypen nodig (bijv. de Noto-families): zie [Problemen en FAQ](Troubleshooting-FAQ-nl#linux-japanse-tekst-verschijnt-als-vierkantjes).
 
-Het document [Efficiëntie - uitleg](Efficiency-Explanation-nl) volgt de taal van de interface; de rekenhandleiding staat in `doc/` (Italiaans) en `doc/manuali/` (de andere 35 talen).
+Het document [Uitleg van de rendementsberekening](Efficiency-Explanation-nl) volgt de taal van de interface; de rekenhandleiding staat in `doc/` (Italiaans) en `doc/manuali/` (de andere 35 talen).
 
 ## Kleurenschema's
 

@@ -39,7 +39,7 @@ Sedert weergawe 1.6 het die hoofoortjies **sub-oortjies** ('n ligter ry onder di
 | [Vierkantkaart](Grid-Square-Map-af) | – | Gewerkte en bevestigde Maidenhead-vierkante uit 'n ADIF-lêer, een oortjie per band |
 | **Tegniese dokumente** | [Bronne](Sources-af) | Al die bronne; die belangrikste is die Cerrotta–Sartori-artikel |
 | | [Kaart van Europese radars](European-Radar-Map-af) | Waar Collm, Sodankylä, GRAVES en CMOR relatief tot jou stasie is |
-| | [Doeltreffendheid - verduideliking](Efficiency-Explanation-af) | Stap-vir-stap-dokument oor hoe die doeltreffendheid bereken word, uitvoerbaar na Word |
+| | [Verduideliking van die doeltreffendheidsberekening](Efficiency-Explanation-af) | Stap-vir-stap-dokument oor hoe die doeltreffendheid bereken word, uitvoerbaar na Word |
 
 Bo die oortjies is daar drie rye kontroles (jou lokator, DX-stasie, band, antenna, spoorhoogte, tyd); sien [Aan die gang](Getting-Started-af). Die knoppie **Kontroles** vou hulle weg, en die taal en kleurskema word regs bo gekies; sien [Instellings en datagids](Settings-and-Data-Folder-af).
 

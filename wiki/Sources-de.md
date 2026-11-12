@@ -6,7 +6,7 @@
 
 [![Quellen](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/de-3_1.png)
 
-Der Reiter **Quellen** listet alle Werke auf, auf denen YA-MS aufbaut, gruppiert wie unten (der Text ist markierbar, du kannst die Angaben also kopieren). Dieselben Quellen, nummeriert, schließen das Berechnungshandbuch (`doc/YA-MS_manuale_calcoli.docx`) und das Dokument [Effektivität - Erklärung](Efficiency-Explanation-de) ab.
+Der Reiter **Quellen** listet alle Werke auf, auf denen YA-MS aufbaut, gruppiert wie unten (der Text ist markierbar, du kannst die Angaben also kopieren). Dieselben Quellen, nummeriert, schließen das Berechnungshandbuch (`doc/YA-MS_manuale_calcoli.docx`) und das Dokument [Erklärung der Wirkungsgradberechnung](Efficiency-Explanation-de) ab.
 
 ## HAUPTQUELLE
 

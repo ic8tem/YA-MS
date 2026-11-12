@@ -39,7 +39,7 @@
 | [方格地图](Grid-Square-Map-zh) | – | 根据 ADIF 文件显示已通联和已确认的 Maidenhead 方格，每个频段一个选项卡 |
 | **技术文档** | [来源](Sources-zh) | 全部来源；主要来源是 Cerrotta–Sartori 的文章 |
 | | [欧洲雷达地图](European-Radar-Map-zh) | Collm、Sodankylä、GRAVES 和 CMOR 相对于本台的位置 |
-| | [效率 - 说明](Efficiency-Explanation-zh) | 逐步说明效率如何计算的文档，可导出为 Word |
+| | [效率计算说明](Efficiency-Explanation-zh) | 逐步说明效率如何计算的文档，可导出为 Word |
 
 选项卡上方有三行控件（本台网格坐标、对方电台、频段、天线、余迹高度、时间），参见[入门](Getting-Started-zh)。**控制**按钮可将其折叠；界面语言和配色方案在右上角选择，参见[设置与数据文件夹](Settings-and-Data-Folder-zh)。
 

@@ -6,7 +6,7 @@
 
 [![Sources](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-แท็บ **แหล่งอ้างอิง** แสดงรายการผลงานทุกชิ้นที่ YA-MS ใช้เป็นพื้นฐาน จัดกลุ่มตามด้านล่าง (เลือกข้อความได้ จึงคัดลอกการอ้างอิงได้) แหล่งอ้างอิงเดียวกันนี้พร้อมหมายเลขกำกับปรากฏอยู่ท้ายคู่มือการคำนวณ (`doc/YA-MS_manuale_calcoli.docx`) และเอกสาร [ประสิทธิภาพ - คำอธิบาย](Efficiency-Explanation-th)
+แท็บ **แหล่งอ้างอิง** แสดงรายการผลงานทุกชิ้นที่ YA-MS ใช้เป็นพื้นฐาน จัดกลุ่มตามด้านล่าง (เลือกข้อความได้ จึงคัดลอกการอ้างอิงได้) แหล่งอ้างอิงเดียวกันนี้พร้อมหมายเลขกำกับปรากฏอยู่ท้ายคู่มือการคำนวณ (`doc/YA-MS_manuale_calcoli.docx`) และเอกสาร [คำอธิบายการคำนวณประสิทธิภาพ](Efficiency-Explanation-th)
 
 ## แหล่งอ้างอิงหลัก
 

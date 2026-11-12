@@ -6,7 +6,7 @@
 
 [![Źródła](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-Zakładka **Źródła** wymienia wszystkie prace, na których opiera się YA-MS, pogrupowane jak poniżej (tekst można zaznaczać, więc możesz skopiować odnośniki). Te same źródła, ponumerowane, zamykają podręcznik obliczeń (`doc/YA-MS_manuale_calcoli.docx`) oraz dokument [Efektywność - objaśnienie](Efficiency-Explanation-pl).
+Zakładka **Źródła** wymienia wszystkie prace, na których opiera się YA-MS, pogrupowane jak poniżej (tekst można zaznaczać, więc możesz skopiować odnośniki). Te same źródła, ponumerowane, zamykają podręcznik obliczeń (`doc/YA-MS_manuale_calcoli.docx`) oraz dokument [Wyjaśnienie obliczania wydajności](Efficiency-Explanation-pl).
 
 ## GŁÓWNE ŹRÓDŁO
 

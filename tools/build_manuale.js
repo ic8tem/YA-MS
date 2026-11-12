@@ -94,7 +94,7 @@ function table(widths, rows) {
 // ---------- contenuto ----------
 const C = [];
 C.push(new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun('YA-MS - Manuale dei calcoli')] }));
-C.push(P(I('Previsione e calcolo in diretta dell\'efficienza degli sciami meteorici per il meteor scatter. Versione 1.7.0, a cura di Costantino IC8TEM, novembre 2026.')));
+C.push(P(I('Previsione e calcolo in diretta dell\'efficienza degli sciami meteorici per il meteor scatter. Versione 1.8.1, a cura di Costantino IC8TEM, novembre 2026.')));
 C.push(new TableOfContents(T('Indice'), { hyperlink: true, headingStyleRange: '1-2' }));
 C.push(P(I('(Se l\'indice è vuoto: in Word, clic destro sull\'indice > Aggiorna campo.)')));
 
@@ -222,7 +222,10 @@ C.push(TAG('RILIEVO', 'Le due tesi usano la stessa condizione di riflessione spe
 C.push(TAG('RILIEVO', 'Confronto con conteggi reali: rilevamenti BRAMS ricevuti a Sonneberg (radiofaro di Dourbes, 49,97 MHz, tratta di 471 km) dal 12 al 28 agosto 2026, circa 97 000 echi rilevati con il metodo di M. Bundscherer [38]. Tolto il fondo (mediana ora per ora dal 22 al 27 agosto), le Perseidi aggiungono al massimo, il 13 agosto tra le 02 e le 10 UTC, circa 80-130 echi/ora su 300-470: a 50 MHz pesano poco rispetto alle sporadiche. L\'eccesso orario segue il calcolo di YA-MS (efficienza delle Perseidi × ZHR) con correlazione 0,44 con β acceso e 0,43 con β spento, la stessa che dà lo ZHR per il seno dell\'elevazione del radiante; con le scie lunghe scende a 0,36. Su questa tratta corta la geometria non aggiunge informazione e il confronto non decide tra le due tesi. Limiti: un solo ricevitore, soglia di rilevamento adattiva che può ridurre i conteggi nelle ore di maggiore attività, sciami minori ancora attivi nei giorni del fondo, antenna del radiofaro rivolta verso lo zenit.'));
 C.push(TAG('SCELTA', 'Nel programma la casella "Angolo β tra scia e tratta (McKinley completo)" è accesa di partenza perché non sopravvaluta nessuna scia (valore prudente); spenta, applica la tesi classica. La casella "Giudizio classico" aggiunge sotto ogni sciame, nella tabella oraria, la riga del verdetto classico calcolato al punto medio della tratta: ✗ radiante sotto l\'orizzonte, ◐ marginale (sotto 15° o sopra 70°, oppure a meno di 30° dalla direzione della tratta), ● buono, ★ migliore (tra 15° e 70° e a più di 60° dalla direzione della tratta), con le soglie di meteor-mcp [35]. Non cambia il calcolo: mostra ora per ora dove le due tesi concordano e dove no.'));
 C.push(H2('5.4 Somma e percentuale'));
-C.push(TAG('SCELTA', 'I punti P si campionano ogni 15 km alla quota H, solo dove entrambe le stazioni vedono il punto sopra l\'elevazione minima del lobo. Per ogni direzione del radiante:'));
+C.push(TAG('SCELTA', 'Il programma divide lo strato E in punti ogni 15 km e tiene quelli che entrambe le stazioni vedono sopra l\'orizzonte. Con la casella "diagramma d\'antenna" accesa (di partenza) ogni punto pesa con il guadagno verticale delle due antenne: una direttiva fissata a 0° ha comunque il lobo principale qualche grado sopra l\'orizzonte per la riflessione sul terreno, e l\'"Elevazione lobo" è l\'elevazione e0 di quel massimo. Con e l\'elevazione del punto vista da una stazione e θV la larghezza verticale del lobo a −3 dB (capitolo 7):'));
+C.push(EQ('g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0) per e < e0;   g(e) = 10^(−1,2·(e/θV)²) per e ≥ e0;   peso del punto × g(e1) · g(e2)'));
+C.push(TAG('SCELTA', 'Sotto il massimo il fattore del terreno porta il guadagno a zero all\'orizzonte; il lobo ha un fondo di −20 dB. Un punto basso conta meno, ma conta: su una tratta lunga l\'efficienza non sparisce. Con la casella spenta l\'elevazione del lobo è un limite netto, come fino alla versione 1.8.0: i punti visti sotto e0 da una delle due stazioni non contano, e su una tratta lunga con il lobo a qualche grado tutte le efficienze possono valere 0 (JN70CN – JO76QP, 1791 km, lobo a 3°, scie a 88,5 km: nessun punto).'));
+C.push(TAG('SCELTA', 'I punti P si campionano ogni 15 km alla quota H. Per ogni direzione del radiante:'));
 C.push(EQ('F', br('ŝ'), '=', sum('P', [sb('w', 'P'), sb('S', 'P'), 'max', br('0 , ŝ·', sb('û', 'P'))])));
 C.push(EQ('η', br('ŝ'), '=100·', fr(['F', br('ŝ')], [sb('max', 'ŝ′'), ' F', br('ŝ′')]), '  %'));
 C.push(P('F si calcola una volta per tratta su una griglia di direzioni (azimut ogni 5°, elevazione ogni 2,5°, nel riferimento del punto medio) e poi si interpola in modo bilineare.'));
@@ -320,7 +323,7 @@ C.push(TAG('SCELTA', 'Se nessuno sciame contribuisce (solo meteore sporadiche) l
 
 C.push(H1('11. Limiti noti'));
 ['Il modello considera solo le scie sottodense. Le sovradense (burst lunghi) e il fondo sporadico non entrano nell\'efficienza; il fondo sporadico è rappresentato dal flusso radar.',
- 'Le antenne sono considerate isotrope nel calcolo dell\'efficienza; il lobo reale serve solo per il controllo degli Hot.',
+ 'Il lobo verticale è un modello semplice: antenna orizzontale, lobo gaussiano largo θV a −3 dB (Kraus) e fattore del terreno fino al primo massimo; non si considerano i lobi successivi, l\'altezza reale dell\'antenna e il terreno attorno.',
  'Le derive del radiante e i coefficienti B del profilo di attività sono valori di lavoro.',
  'La lettura del grafico di Collm dipende dal formato attuale: se cambia, va ritarata.',
  'Le percentuali di efficienza vanno confrontate con MCG_MS, MS-Soft e con le osservazioni in banda.'].forEach(t => C.push(bullet(t)));

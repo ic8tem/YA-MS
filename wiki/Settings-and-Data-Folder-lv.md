@@ -59,7 +59,7 @@ Valodas vai tēmas maiņa saglabā iestatījumus un **pārbūvē logu** tajā pa
 
 Pirmajā palaišanā YA-MS izmanto **sistēmas valodu**, ja tā ir viena no šīm, citādi itāļu. Skaitļi un datumi seko izvēlētajai valodai (piem. decimālpunkts angļu valodā, komats itāļu un vācu valodā). Jebkurš tulkojuma failā trūkstošs teksts tiek rādīts itāliski. Linux sistēmā ķīniešu, japāņu, korejiešu, arābu, ivrita, urdu, hindi un bengāļu valodai vajadzīgi piemēroti fonti (piem. Noto saimes): sk. [Problēmu risināšana](Troubleshooting-FAQ-lv#linux-japāņu-teksts-redzams-kā-kvadrātiņi).
 
-Dokuments [Efektivitāte - skaidrojums](Efficiency-Explanation-lv) seko saskarnes valodai; aprēķinu rokasgrāmata ir mapē `doc/` (itāļu valodā) un `doc/manuali/` (pārējās 35 valodās).
+Dokuments [Efektivitātes aprēķina skaidrojums](Efficiency-Explanation-lv) seko saskarnes valodai; aprēķinu rokasgrāmata ir mapē `doc/` (itāļu valodā) un `doc/manuali/` (pārējās 35 valodās).
 
 ## Krāsu shēmas
 

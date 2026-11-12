@@ -6,7 +6,7 @@
 
 [![स्रोत](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-**स्रोत** टैब उन सभी कार्यों की सूची देता है जिन पर YA-MS आधारित है, नीचे दिए समूहों में (पाठ चयन योग्य है, ताकि आप संदर्भ कॉपी कर सकें)। यही स्रोत, क्रमांकित, गणना पुस्तिका (`doc/YA-MS_manuale_calcoli.docx`) और [दक्षता - व्याख्या](Efficiency-Explanation-hi) दस्तावेज़ के अंत में भी हैं।
+**स्रोत** टैब उन सभी कार्यों की सूची देता है जिन पर YA-MS आधारित है, नीचे दिए समूहों में (पाठ चयन योग्य है, ताकि आप संदर्भ कॉपी कर सकें)। यही स्रोत, क्रमांकित, गणना पुस्तिका (`doc/YA-MS_manuale_calcoli.docx`) और [दक्षता की गणना की व्याख्या](Efficiency-Explanation-hi) दस्तावेज़ के अंत में भी हैं।
 
 ## मुख्य स्रोत
 

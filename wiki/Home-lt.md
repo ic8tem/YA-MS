@@ -39,7 +39,7 @@ Nuo 1.6 versijos pagrindinės kortelės turi **vidines korteles** (šviesesnė e
 | [Kvadratų žemėlapis](Grid-Square-Map-lt) | – | Iš ADIF failo nuskaityti dirbti ir patvirtinti Maidenhead kvadratai, kiekviena juosta atskiroje kortelėje |
 | **Techniniai dokumentai** | [Šaltiniai](Sources-lt) | Visi šaltiniai; pagrindinis – Cerrotta–Sartori straipsnis |
 | | [Europos radarų žemėlapis](European-Radar-Map-lt) | Kur yra Collm, Sodankylä, GRAVES ir CMOR jūsų stoties atžvilgiu |
-| | [Efektyvumas - paaiškinimas](Efficiency-Explanation-lt) | Dokumentas žingsnis po žingsnio apie tai, kaip skaičiuojamas efektyvumas, eksportuojamas į Word |
+| | [Efektyvumo skaičiavimo paaiškinimas](Efficiency-Explanation-lt) | Dokumentas žingsnis po žingsnio apie tai, kaip skaičiuojamas efektyvumas, eksportuojamas į Word |
 
 Virš kortelių yra trys valdymo eilutės (jūsų lokatorius, korespondentas, juosta, antena, pėdsakų aukštis, laikas); žr. [Pradžia](Getting-Started-lt). Mygtukas **Valdymas** jas suskleidžia, o kalba ir spalvų schema pasirenkamos viršuje dešinėje; žr. [Nustatymai ir duomenų aplankas](Settings-and-Data-Folder-lt).
 

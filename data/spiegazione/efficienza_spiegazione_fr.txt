@@ -76,7 +76,9 @@ TAG|RILIEVO|La même règle apparaît dans la formule de DH9GCD citée par DF5HC
 TAG|RILIEVO|La formule de DH9GCD n'a pas de source primaire publiée : elle combine le facteur sin El (nombre et ionisation des traînées) avec un facteur cos El qui représente l'éloignement du point spéculaire par rapport au centre du trajet quand le radiant monte. Calculée avec le radiant vu du point milieu, comme le fait MS-Soft [25], elle reproduit le tableau de MS-Soft pour KP30HV-JO52MM (1324 km, Quadrantides, 4/1/2001) à 4 points près entre 16° et 48° d'élévation et à 16 points près jusqu'à 64°, avec le même maximum à 13 UT (96 % contre 92 %). Elle reste un terme de comparaison.
 H1|6. Du point isolé à l'efficacité
 H2|6.1 Les points de réflexion
-TAG|SCELTA|Le programme divise la couche E en points espacés de 15 km et ne garde que ceux que les deux stations voient au-dessus de l'élévation minimale du lobe.
+TAG|SCELTA|Le programme divise la couche E en points tous les 15 km et garde ceux que les deux stations voient au-dessus de l'horizon. Avec la case « diagramme d'antenne » activée (par défaut), chaque point est pondéré par le gain vertical des deux antennes : une directive fixée à 0° a quand même son lobe principal quelques degrés au-dessus de l'horizon à cause de la réflexion sur le sol, et l'« Élévation du lobe » est l'élévation e0 de ce maximum. Avec e l'élévation du point vue d'une station et θV la largeur verticale du lobe à −3 dB (paragraphe 3.5) :
+EQ|g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0) pour e < e0 ;   g(e) = 10^(−1,2·(e/θV)²) pour e ≥ e0 ;   poids du point × g(e1) · g(e2)
+TAG|SCELTA|Sous le maximum, le facteur du sol amène le gain à zéro à l'horizon ; le lobe a un plancher de −20 dB. Un point bas compte moins, mais il compte : sur un long trajet l'efficacité ne disparaît pas. Case désactivée, l'élévation du lobe est une limite stricte, comme jusqu'à la version 1.8.0 : les points vus sous e0 par l'une des deux stations ne comptent pas, et sur un long trajet avec le lobe à quelques degrés toutes les efficacités peuvent valoir 0 (JN70CN – JO76QP, 1791 km, lobe à 3°, traînées à 88,5 km : aucun point).
 H2|6.2 Le poids de chaque point
 TAG|FONTE|La puissance d'une traînée sous-dense (McKinley [8] ; ITU-R P.843 [24]) croît avec λ³ et décroît avec les distances R1, R2 aux stations ; φ est la moitié de l'angle de diffusion, β l'angle entre la traînée et le plan qui contient les deux stations et le point :
 EQ|poids = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
@@ -135,7 +137,7 @@ TAG|RILIEVO|Incertitude du rayon initial : Stober et al. [30], avec le radar CMO
 TAG|SCELTA|Le programme propose le choix « Rayon initial de la traînée » dans le sous-onglet Géométrie et affaiblissement : double de l'ITU (par défaut, prudent, comme les mesures de Stober et al.), ITU-R P.843, exclu. En doublant r0, le facteur a1 en dB est multiplié par 4 : sur 1000 km 0,8 dB à 50 MHz, 2,4 dB à 144 MHz et 5,6 dB à 432 MHz (11,6 dB à 600 km). Les mesures CMOR sont à des fréquences plus basses et à 85–95 km : les utiliser à 432 MHz, où les échos viennent d'environ 79 km, est une extrapolation.
 H1|9. Limites connues
 LI|Le modèle ne considère que les traînées sous-denses. Les sur-denses (les bursts longs) et le fond sporadique n'entrent pas dans l'efficacité ; le fond sporadique est représenté par le flux du radar.
-LI|Dans le calcul de l'efficacité, les antennes sont considérées comme isotropes ; le lobe réel ne sert qu'au contrôle des Hot.
+LI|Le lobe vertical est un modèle simple : antenne horizontale, lobe gaussien de largeur θV à −3 dB (Kraus) et facteur du sol jusqu'au premier maximum ; les lobes suivants, la hauteur réelle de l'antenne et le terrain environnant ne sont pas pris en compte.
 LI|Les dérives du radiant et les coefficients B du profil d'activité sont des valeurs de travail.
 LI|Les pourcentages sont à comparer avec MCG_MS, MS-Soft et les observations sur l'air.
 H1|10. Sources

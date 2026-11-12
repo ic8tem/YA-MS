@@ -76,7 +76,9 @@ TAG|RILIEVO|The same rule appears in the formula of DH9GCD quoted by DF5HC [16]:
 TAG|RILIEVO|The DH9GCD formula has no published primary source: it combines the factor sin El (number and ionisation of the trails) with a factor cos El that represents how far the specular point moves away from the centre of the path as the radiant rises. Calculated with the radiant seen from the midpoint, as MS-Soft [25] does, it reproduces the MS-Soft table for KP30HV-JO52MM (1324 km, Quadrantids, 4/1/2001) within 4 points between 16° and 48° of elevation and within 16 points up to 64°, with the same maximum at 13 UT (96 % versus 92 %). It remains a term of comparison.
 H1|6. From the single point to the efficiency
 H2|6.1 The reflection points
-TAG|SCELTA|The program divides the E layer into points every 15 km and keeps only those that both stations see above the minimum elevation of the lobe.
+TAG|SCELTA|The program divides the E layer into points every 15 km and keeps those that both stations see above the horizon. With the "antenna pattern" box on (default) each point is weighted with the vertical gain of the two antennas: a beam fixed at 0° still has its main lobe a few degrees above the horizon because of the ground reflection, and the "Lobe elevation" is the elevation e0 of that peak. With e the elevation of the point seen from a station and θV the vertical width of the lobe at −3 dB (section 3.5):
+EQ|g(e) = 10^(−1.2·(e/θV)²) · sin²(π/2 · sin e / sin e0) for e < e0;   g(e) = 10^(−1.2·(e/θV)²) for e ≥ e0;   point weight × g(e1) · g(e2)
+TAG|SCELTA|Below the peak the ground factor brings the gain to zero at the horizon; the lobe has a floor of −20 dB. A low point counts less, but it counts: on a long path the efficiency does not vanish. With the box off the lobe elevation is a hard limit, as up to version 1.8.0: points seen below e0 by either station do not count, and on a long path with the lobe a few degrees up all efficiencies can be 0 (JN70CN – JO76QP, 1791 km, lobe at 3°, trails at 88.5 km: no point).
 H2|6.2 The weight of each point
 TAG|FONTE|The power of an underdense trail (McKinley [8]; ITU-R P.843 [24]) increases with λ³ and decreases with the distances R1, R2 from the stations; φ is half the scattering angle, β the angle between the trail and the plane containing the two stations and the point:
 EQ|weight = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
@@ -135,7 +137,7 @@ TAG|RILIEVO|Uncertainty of the initial radius: Stober et al. [30], with the CMOR
 TAG|SCELTA|The program offers the choice "Initial trail radius" in the Geometry and path loss sub-tab: twice the ITU value (default, cautious, like the measurements of Stober et al.), ITU-R P.843, excluded. Doubling r0 multiplies the factor a1 in dB by 4: over 1000 km 0.8 dB at 50 MHz, 2.4 dB at 144 MHz and 5.6 dB at 432 MHz (11.6 dB at 600 km). The CMOR measurements are at lower frequencies and at 85–95 km: using them at 432 MHz, where echoes come from about 79 km, is an extrapolation.
 H1|9. Known limitations
 LI|The model considers only underdense trails. Overdense trails (the long bursts) and the sporadic background do not enter the efficiency; the sporadic background is represented by the radar flux.
-LI|In the efficiency calculation the antennas are considered isotropic; the real lobe is used only for the Hot check.
+LI|The vertical lobe is a simple model: horizontal antenna, Gaussian lobe θV wide at −3 dB (Kraus) and ground factor up to the first peak; the further lobes, the real antenna height and the surrounding terrain are not considered.
 LI|The radiant drifts and the B coefficients of the activity profile are working values.
 LI|The percentages should be compared with MCG_MS, MS-Soft and with on-air observations.
 H1|10. Sources

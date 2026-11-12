@@ -39,7 +39,7 @@ Az 1.6-os változat óta a fő fülek **alfülekkel** rendelkeznek (egy világos
 | [Lokátornégyzet-térkép](Grid-Square-Map-hu) | – | Ledolgozott és visszaigazolt Maidenhead-négyzetek egy ADIF-fájlból, sávonként egy fül |
 | **Műszaki dokumentumok** | [Források](Sources-hu) | Az összes forrás; a fő forrás a Cerrotta–Sartori-cikk |
 | | [Európai radarok térképe](European-Radar-Map-hu) | Hol van Collm, Sodankylä, a GRAVES és a CMOR az Ön állomásához képest |
-| | [Hatékonyság – magyarázat](Efficiency-Explanation-hu) | Lépésről lépésre bemutatja a hatékonyság kiszámítását, Wordbe exportálható |
+| | [A hatásfok számításának magyarázata](Efficiency-Explanation-hu) | Lépésről lépésre bemutatja a hatékonyság kiszámítását, Wordbe exportálható |
 
 A fülek felett három sor vezérlőelem található (saját lokátor, DX-állomás, sáv, antenna, nyommagasság, idő); lásd: [Első lépések](Getting-Started-hu). A **Vezérlők** gomb összecsukja őket, a nyelv és a színséma pedig a jobb felső sarokban választható ki; lásd: [Beállítások és adatmappa](Settings-and-Data-Folder-hu).
 

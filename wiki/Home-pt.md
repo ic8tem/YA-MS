@@ -39,7 +39,7 @@ Desde a versão 1.6 os separadores principais têm **subseparadores** (uma fila 
 | [Mapa de quadrados](Grid-Square-Map-pt) | – | Quadrados Maidenhead trabalhados e confirmados a partir de um ficheiro ADIF, um separador por banda |
 | **Documentos técnicos** | [Fontes](Sources-pt) | Todas as fontes; a principal é o artigo Cerrotta–Sartori |
 | | [Mapa dos radares europeus](European-Radar-Map-pt) | Onde estão Collm, Sodankylä, GRAVES e CMOR em relação à sua estação |
-| | [Eficiência - explicação](Efficiency-Explanation-pt) | Documento passo a passo sobre o cálculo da eficiência, exportável para Word |
+| | [Explicação do cálculo da eficiência](Efficiency-Explanation-pt) | Documento passo a passo sobre o cálculo da eficiência, exportável para Word |
 
 Por cima dos separadores há três filas de comandos (o seu locator, correspondente, banda, antena, altitude dos rastos, hora); ver [Primeiros passos](Getting-Started-pt). O botão **Comandos** recolhe-as; o idioma e o esquema de cores escolhem-se no canto superior direito; ver [Definições e pasta de dados](Settings-and-Data-Folder-pt).
 

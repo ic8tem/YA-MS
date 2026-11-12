@@ -76,7 +76,9 @@ TAG|RILIEVO|Ta sama reguła pojawia się we wzorze DH9GCD przytoczonym przez DF5
 TAG|RILIEVO|Wzór DH9GCD nie ma opublikowanego źródła pierwotnego: łączy czynnik sin El (liczba i jonizacja śladów) z czynnikiem cos El, który odzwierciedla oddalanie się punktu zwierciadlanego od środka trasy, gdy radiant się wznosi. Obliczony z radiantem widzianym z punktu środkowego, tak jak robi to MS-Soft [25], odtwarza tabelę MS-Soft dla KP30HV-JO52MM (1324 km, Kwadrantydy, 4/1/2001) z dokładnością do 4 punktów między 16° a 48° elewacji i do 16 punktów do 64°, z tym samym maksimum o 13 UT (96 % wobec 92 %). Pozostaje punktem odniesienia do porównań.
 H1|6. Od pojedynczego punktu do efektywności
 H2|6.1 Punkty odbicia
-TAG|SCELTA|Program dzieli warstwę E na punkty co 15 km i zachowuje tylko te, które obie stacje widzą powyżej minimalnej elewacji wiązki.
+TAG|SCELTA|Program dzieli warstwę E na punkty co 15 km i zachowuje te, które obie stacje widzą nad horyzontem. Przy włączonym polu „charakterystyka anteny” (domyślnie) każdy punkt jest ważony pionowym zyskiem obu anten: antena kierunkowa ustawiona na 0° i tak ma główny listek kilka stopni nad horyzontem z powodu odbicia od ziemi, a „Elewacja listka” to elewacja e0 tego maksimum. Gdzie e to elewacja punktu widziana ze stacji, a θV to pionowa szerokość listka przy −3 dB (punkt 3.5):
+EQ|g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0) dla e < e0;   g(e) = 10^(−1,2·(e/θV)²) dla e ≥ e0;   waga punktu × g(e1) · g(e2)
+TAG|SCELTA|Poniżej maksimum współczynnik ziemi sprowadza zysk do zera na horyzoncie; listek ma dno na poziomie −20 dB. Niski punkt liczy się mniej, ale się liczy: na długiej trasie wydajność nie znika. Przy wyłączonym polu elewacja listka jest sztywną granicą, jak do wersji 1.8.0: punkty widziane poniżej e0 przez którąkolwiek stację się nie liczą, a na długiej trasie z listkiem kilka stopni wyżej wszystkie wydajności mogą wynosić 0 (JN70CN – JO76QP, 1791 km, listek na 3°, ślady na 88,5 km: żadnego punktu).
 H2|6.2 Waga każdego punktu
 TAG|FONTE|Moc śladu podgęstego (McKinley [8]; ITU-R P.843 [24]) rośnie z λ³ i maleje z odległościami R1, R2 od stacji; φ to połowa kąta rozpraszania, β kąt między śladem a płaszczyzną zawierającą obie stacje i punkt:
 EQ|waga = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
@@ -135,7 +137,7 @@ TAG|RILIEVO|Niepewność promienia początkowego: Stober i in. [30], używając 
 TAG|SCELTA|Program oferuje wybór „Promień początkowy śladu” w podzakładce Geometria i tłumienie: podwójna wartość ITU (domyślna, ostrożna, jak pomiary Stober i in.), ITU-R P.843, wyłączony. Podwojenie r0 mnoży współczynnik a1 w dB przez 4: na trasie 1000 km 0,8 dB na 50 MHz, 2,4 dB na 144 MHz i 5,6 dB na 432 MHz (11,6 dB na 600 km). Pomiary CMOR dotyczą niższych częstotliwości i wysokości 85–95 km: stosowanie ich na 432 MHz, gdzie echa pochodzą z około 79 km, jest ekstrapolacją.
 H1|9. Znane ograniczenia
 LI|Model uwzględnia tylko ślady podgęste. Ślady nadgęste (długie bursty) i tło sporadyczne nie wchodzą do efektywności; tło sporadyczne reprezentuje strumień z radaru.
-LI|W obliczeniach efektywności anteny uważa się za izotropowe; rzeczywista wiązka służy tylko do kontroli punktów Hot.
+LI|Pionowy listek to prosty model: antena pozioma, listek gaussowski o szerokości θV przy −3 dB (Kraus) i współczynnik ziemi do pierwszego maksimum; kolejnych listków, rzeczywistej wysokości anteny i otaczającego terenu nie uwzględnia się.
 LI|Dryfy radiantu i współczynniki B profilu aktywności są wartościami roboczymi.
 LI|Wartości procentowe należy porównywać z MCG_MS, MS-Soft oraz z obserwacjami na paśmie.
 H1|10. Źródła

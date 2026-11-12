@@ -1,4 +1,4 @@
-// YA-MS - linguetta "Efficienza - spiegazione" e caricamento della mappa
+// YA-MS - linguetta "Spiegazione del calcolo dell'efficienza" e caricamento della mappa
 // Il documento sta in data/efficienza_spiegazione.txt (un blocco per riga: TITLE, SUB, H1, H2, P, TAG|FONTE|..., TAG|RILIEVO|...,
 // TAG|SCELTA|..., EQ, LI, SRC) ed e' mostrato come un foglio chiaro; la versione per Word e' data/efficienza_spiegazione.docx.
 using System;
@@ -32,7 +32,7 @@ namespace YAMS
 
         void BuildExplainTab()
         {
-            DockPanel p = Page(Lang.T("Efficienza - spiegazione"));
+            DockPanel p = Page(Lang.T("Spiegazione del calcolo dell'efficienza"));
             string docx = ExplainFile("docx");
             Button bExport = B(Lang.T("Esporta in Word (.docx)..."));
             bExport.Click += async (s, e) => await ExportDocx(docx);

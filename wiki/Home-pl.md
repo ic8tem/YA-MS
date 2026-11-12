@@ -39,7 +39,7 @@ Od wersji 1.6 główne zakładki mają **podzakładki** (jaśniejszy wiersz pod 
 | [Mapa kwadratów lokatora](Grid-Square-Map-pl) | – | Zrobione i potwierdzone kwadraty Maidenhead z pliku ADIF, jedna zakładka na pasmo |
 | **Dokumenty techniczne** | [Źródła](Sources-pl) | Wszystkie źródła; głównym jest artykuł Cerrotta–Sartori |
 | | [Mapa radarów europejskich](European-Radar-Map-pl) | Gdzie znajdują się Collm, Sodankylä, GRAVES i CMOR względem twojej stacji |
-| | [Efektywność - objaśnienie](Efficiency-Explanation-pl) | Dokument krok po kroku o tym, jak obliczana jest efektywność, z możliwością eksportu do Worda |
+| | [Wyjaśnienie obliczania wydajności](Efficiency-Explanation-pl) | Dokument krok po kroku o tym, jak obliczana jest efektywność, z możliwością eksportu do Worda |
 
 Nad zakładkami znajdują się trzy wiersze elementów sterujących (twój lokator, stacja DX, pasmo, antena, wysokość śladu, czas); zob. [Pierwsze kroki](Getting-Started-pl). Przycisk **Sterowanie** je zwija, a język i schemat kolorów wybiera się w prawym górnym rogu; zob. [Ustawienia i folder danych](Settings-and-Data-Folder-pl).
 

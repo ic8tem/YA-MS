@@ -76,7 +76,9 @@ TAG|RILIEVO|Dezelfde regel komt terug in de formule van DH9GCD, overgenomen door
 TAG|RILIEVO|De formule van DH9GCD heeft geen gepubliceerde primaire bron: ze combineert de factor sin El (aantal en ionisatie van de sporen) met een factor cos El die staat voor het wegschuiven van het spiegelpunt van het midden van het traject wanneer de radiant stijgt. Berekend met de radiant gezien vanaf het middelpunt, zoals MS-Soft [25] doet, reproduceert ze de tabel van MS-Soft voor KP30HV-JO52MM (1324 km, Quadrantiden, 4/1/2001) binnen 4 punten tussen 16° en 48° elevatie en binnen 16 punten tot 64°, met hetzelfde maximum om 13 UT (96 % tegen 92 %). Ze blijft een vergelijkingsmaatstaf.
 H1|6. Van het afzonderlijke punt naar de efficiëntie
 H2|6.1 De reflectiepunten
-TAG|SCELTA|Het programma verdeelt de E-laag in punten om de 15 km en houdt alleen die welke beide stations boven de minimale elevatie van de bundel zien.
+TAG|SCELTA|Het programma verdeelt de E-laag in punten om de 15 km en houdt de punten die beide stations boven de horizon zien. Met het vakje "antennediagram" aan (standaard) wordt elk punt gewogen met de verticale winst van beide antennes: een richtantenne vast op 0° heeft door de grondreflectie toch haar hoofdlob enkele graden boven de horizon, en de "Elevatie lob" is de elevatie e0 van dat maximum. Met e de elevatie van het punt gezien vanaf een station en θV de verticale breedte van de lob bij −3 dB (paragraaf 3.5):
+EQ|g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0) voor e < e0;   g(e) = 10^(−1,2·(e/θV)²) voor e ≥ e0;   gewicht van het punt × g(e1) · g(e2)
+TAG|SCELTA|Onder het maximum brengt de grondfactor de winst aan de horizon op nul; de lob heeft een bodem van −20 dB. Een laag punt telt minder, maar het telt: op een lang pad verdwijnt het rendement niet. Met het vakje uit is de elevatie van de lob een harde grens, zoals tot versie 1.8.0: punten die een van beide stations onder e0 ziet, tellen niet, en op een lang pad met de lob enkele graden hoog kunnen alle rendementen 0 zijn (JN70CN – JO76QP, 1791 km, lob op 3°, sporen op 88,5 km: geen enkel punt).
 H2|6.2 Het gewicht van elk punt
 TAG|FONTE|Het vermogen van een onderdicht spoor (McKinley [8]; ITU-R P.843 [24]) neemt toe met λ³ en af met de afstanden R1, R2 tot de stations; φ is de halve verstrooiingshoek, β de hoek tussen het spoor en het vlak door de twee stations en het punt:
 EQ|gewicht = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
@@ -135,7 +137,7 @@ TAG|RILIEVO|Onzekerheid van de beginstraal: Stober et al. [30] vinden met de rad
 TAG|SCELTA|Het programma biedt de keuze "Beginstraal van het spoor" in het subtabblad Geometrie en demping: dubbel van de ITU (standaard, voorzichtig, zoals de metingen van Stober et al.), ITU-R P.843, uitgesloten. Verdubbeling van r0 vermenigvuldigt de factor a1 in dB met 4: over 1000 km 0,8 dB op 50 MHz, 2,4 dB op 144 MHz en 5,6 dB op 432 MHz (11,6 dB op 600 km). De CMOR-metingen liggen op lagere frequenties en op 85–95 km: ze toepassen op 432 MHz, waar de echo's van ongeveer 79 km komen, is een extrapolatie.
 H1|9. Bekende beperkingen
 LI|Het model houdt alleen rekening met onderdichte sporen. De overdichte (de lange bursts) en de sporadische achtergrond tellen niet mee in de efficiëntie; de sporadische achtergrond wordt weergegeven door de radarflux.
-LI|Bij de efficiëntieberekening worden de antennes als isotroop beschouwd; de werkelijke bundel dient alleen voor de controle van de Hots.
+LI|De verticale lob is een eenvoudig model: horizontale antenne, Gaussische lob met breedte θV bij −3 dB (Kraus) en grondfactor tot het eerste maximum; de volgende lobben, de werkelijke antennehoogte en het omliggende terrein worden niet meegenomen.
 LI|De drifts van de radiant en de coëfficiënten B van het activiteitsprofiel zijn werkwaarden.
 LI|De percentages moeten worden vergeleken met MCG_MS, MS-Soft en met waarnemingen op de band.
 H1|10. Bronnen

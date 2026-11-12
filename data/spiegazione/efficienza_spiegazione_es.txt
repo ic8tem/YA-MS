@@ -76,7 +76,9 @@ TAG|RILIEVO|La misma regla aparece en la fórmula de DH9GCD recogida por DF5HC [
 TAG|RILIEVO|La fórmula de DH9GCD no tiene una fuente primaria publicada: une el factor sin El (número e ionización de las estelas) a un factor cos El que representa el alejamiento del punto especular respecto al centro del trayecto cuando el radiante sube. Calculada con el radiante visto desde el punto medio, como hace MS-Soft [25], reproduce la tabla de MS-Soft para KP30HV-JO52MM (1324 km, Cuadrántidas, 4/1/2001) con un margen de 4 puntos entre 16° y 48° de elevación y de 16 puntos hasta 64°, con el mismo máximo a las 13 UT (96 % frente a 92 %). Sigue siendo un término de comparación.
 H1|6. Del punto individual a la eficiencia
 H2|6.1 Los puntos de reflexión
-TAG|SCELTA|El programa divide la capa E en puntos cada 15 km y conserva solo aquellos que ambas estaciones ven por encima de la elevación mínima del lóbulo.
+TAG|SCELTA|El programa divide la capa E en puntos cada 15 km y conserva los que ambas estaciones ven por encima del horizonte. Con la casilla «diagrama de antena» activada (por defecto) cada punto se pondera con la ganancia vertical de las dos antenas: una directiva fija a 0° tiene igualmente el lóbulo principal unos grados por encima del horizonte por la reflexión en el suelo, y la «Elevación del lóbulo» es la elevación e0 de ese máximo. Con e la elevación del punto vista desde una estación y θV la anchura vertical del lóbulo a −3 dB (apartado 3.5):
+EQ|g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0) para e < e0;   g(e) = 10^(−1,2·(e/θV)²) para e ≥ e0;   peso del punto × g(e1) · g(e2)
+TAG|SCELTA|Por debajo del máximo el factor del suelo lleva la ganancia a cero en el horizonte; el lóbulo tiene un mínimo de −20 dB. Un punto bajo cuenta menos, pero cuenta: en un trayecto largo la eficiencia no desaparece. Con la casilla desactivada la elevación del lóbulo es un límite estricto, como hasta la versión 1.8.0: los puntos vistos por debajo de e0 por una de las dos estaciones no cuentan, y en un trayecto largo con el lóbulo a unos grados todas las eficiencias pueden valer 0 (JN70CN – JO76QP, 1791 km, lóbulo a 3°, estelas a 88,5 km: ningún punto).
 H2|6.2 El peso de cada punto
 TAG|FONTE|La potencia de una estela subdensa (McKinley [8]; ITU-R P.843 [24]) crece con λ³ y disminuye con las distancias R1, R2 a las estaciones; φ es la mitad del ángulo de scattering, β el ángulo entre la estela y el plano que contiene las dos estaciones y el punto:
 EQ|peso = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
@@ -135,7 +137,7 @@ TAG|RILIEVO|Incertidumbre del radio inicial: Stober et al. [30], con el radar CM
 TAG|SCELTA|El programa ofrece la elección «Radio inicial de la estela» en la sublengüeta Geometría y atenuación: doble del ITU (por defecto, prudente, como las medidas de Stober et al.), ITU-R P.843, excluido. Al duplicar r0 el factor a1 en dB se multiplica por 4: en 1000 km 0,8 dB a 50 MHz, 2,4 dB a 144 MHz y 5,6 dB a 432 MHz (11,6 dB a 600 km). Las medidas CMOR son a frecuencias más bajas y a 85–95 km: usarlas a 432 MHz, donde los ecos vienen de unos 79 km, es una extrapolación.
 H1|9. Límites conocidos
 LI|El modelo considera solo las estelas subdensas. Las sobredensas (los bursts largos) y el fondo esporádico no entran en la eficiencia; el fondo esporádico está representado por el flujo del radar.
-LI|En el cálculo de la eficiencia las antenas se consideran isótropas; el lóbulo real solo sirve para el control de los Hot.
+LI|El lóbulo vertical es un modelo sencillo: antena horizontal, lóbulo gaussiano de anchura θV a −3 dB (Kraus) y factor del suelo hasta el primer máximo; no se consideran los lóbulos siguientes, la altura real de la antena ni el terreno circundante.
 LI|Las derivas del radiante y los coeficientes B del perfil de actividad son valores de trabajo.
 LI|Los porcentajes deben compararse con MCG_MS, MS-Soft y con las observaciones en la banda.
 H1|10. Fuentes

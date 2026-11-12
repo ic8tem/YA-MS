@@ -6,7 +6,7 @@
 
 [![المصادر](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-تسرد علامة التبويب **المصادر** كل عمل بُني عليه YA-MS، مجمَّعة كما يلي (النص قابل للتحديد، فيمكنك نسخ المراجع). المصادر نفسها، مرقَّمة، تختم دليل الحسابات (`doc/YA-MS_manuale_calcoli.docx`) ووثيقة [الكفاءة - شرح](Efficiency-Explanation-ar).
+تسرد علامة التبويب **المصادر** كل عمل بُني عليه YA-MS، مجمَّعة كما يلي (النص قابل للتحديد، فيمكنك نسخ المراجع). المصادر نفسها، مرقَّمة، تختم دليل الحسابات (`doc/YA-MS_manuale_calcoli.docx`) ووثيقة [شرح حساب الكفاءة](Efficiency-Explanation-ar).
 
 ## المصدر الرئيسي
 

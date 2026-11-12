@@ -6,7 +6,7 @@
 
 [![Zdroje](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-Karta **Zdroje** uvádí všechna díla, na nichž YA-MS stojí, seskupená jako níže (text lze označit, takže si odkazy můžete zkopírovat). Tytéž zdroje, očíslované, uzavírají manuál výpočtů (`doc/YA-MS_manuale_calcoli.docx`) a dokument [Účinnost - vysvětlení](Efficiency-Explanation-cs).
+Karta **Zdroje** uvádí všechna díla, na nichž YA-MS stojí, seskupená jako níže (text lze označit, takže si odkazy můžete zkopírovat). Tytéž zdroje, očíslované, uzavírají manuál výpočtů (`doc/YA-MS_manuale_calcoli.docx`) a dokument [Vysvětlení výpočtu účinnosti](Efficiency-Explanation-cs).
 
 ## HLAVNÍ ZDROJ
 

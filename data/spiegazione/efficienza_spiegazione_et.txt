@@ -76,7 +76,9 @@ TAG|RILIEVO|Sama reegel ilmneb DH9GCD valemis DF5HC [16] vahendusel: tõhusus = 
 TAG|RILIEVO|DH9GCD valemil pole avaldatud esmaallikat: see ühendab teguri sin El (jälgede arv ja ionisatsioon) teguriga cos El, mis esindab peegelpunkti eemaldumist trassi keskelt radiandi tõustes. Arvutatuna keskpunktist nähtava radiandiga, nagu teeb MS-Soft [25], taastoodab see MS-Softi tabeli trassile KP30HV-JO52MM (1324 km, Kvadrantiidid, 4/1/2001) 4 punkti piires kõrgusnurkade 16° ja 48° vahel ning 16 punkti piires kuni 64°-ni, sama maksimumiga kell 13 UT (96 % vs 92 %). See jääb võrdlusaluseks.
 H1|6. Üksikpunktist efektiivsuseni
 H2|6.1 Peegelduspunktid
-TAG|SCELTA|Programm jagab E-kihi punktideks iga 15 km järel ja jätab alles ainult need, mida mõlemad jaamad näevad üle peaharu minimaalse kõrgusnurga.
+TAG|SCELTA|Programm jagab E-kihi punktideks iga 15 km järel ja jätab alles need, mida mõlemad jaamad näevad horisondist kõrgemal. Kui kast „antenni suunadiagramm“ on sees (vaikimisi), kaalutakse iga punkti kahe antenni vertikaalse võimendusega: 0° peale kinnitatud suunaantennil on maapinnalt peegeldumise tõttu peakeil siiski mõne kraadi võrra horisondist kõrgemal ja „Keila kõrgusnurk“ on selle maksimumi kõrgusnurk e0. Kui e on punkti kõrgusnurk jaamast vaadatuna ja θV keila vertikaalne laius −3 dB tasemel (punkt 3.5):
+EQ|g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0), kui e < e0;   g(e) = 10^(−1,2·(e/θV)²), kui e ≥ e0;   punkti kaal × g(e1) · g(e2)
+TAG|SCELTA|Maksimumist allpool viib maapinna tegur võimenduse horisondil nulli; keila põhi on −20 dB. Madal punkt loeb vähem, aga loeb: pikal teekonnal tõhusus ei kao. Kui kast on väljas, on keila kõrgusnurk range piir nagu kuni versioonini 1.8.0: punktid, mida kumbki jaam näeb allpool e0, ei loe, ja pikal teekonnal, kui keil on mõne kraadi kõrgusel, võivad kõik tõhusused olla 0 (JN70CN – JO76QP, 1791 km, keil 3°, jäljed 88,5 km: ühtegi punkti).
 H2|6.2 Iga punkti kaal
 TAG|FONTE|Alatiheda jälje võimsus (McKinley [8]; ITU-R P.843 [24]) kasvab koos λ³-ga ja kahaneb kaugustega R1, R2 jaamadest; φ on pool hajumisnurgast, β nurk jälje ja tasandi vahel, mis sisaldab kahte jaama ja punkti:
 EQ|kaal = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
@@ -135,7 +137,7 @@ TAG|RILIEVO|Algraadiuse määramatus: Stober jt [30] leiavad radariga CMOR 17,45
 TAG|SCELTA|Programm pakub valikut "Jälje algraadius" alamkaardil Geomeetria ja sumbumine: ITU kahekordne (vaikimisi, ettevaatlik, nagu Stober jt mõõtmised), ITU-R P.843, välja jäetud. r0 kahekordistamisel korrutub tegur a1 detsibellides 4-ga: 1000 km peal 0,8 dB 50 MHz juures, 2,4 dB 144 MHz juures ja 5,6 dB 432 MHz juures (11,6 dB 600 km juures). CMOR-i mõõtmised on tehtud madalamatel sagedustel ja 85–95 km kõrgusel: nende kasutamine 432 MHz juures, kus kajad tulevad umbes 79 km kõrguselt, on ekstrapoleerimine.
 H1|9. Teadaolevad piirangud
 LI|Mudel arvestab ainult alatihedaid jälgi. Ülitihedad jäljed (pikad pursked) ja juhuslik foon ei sisaldu efektiivsuses; juhuslikku fooni esindab radari voog.
-LI|Efektiivsuse arvutuses käsitletakse antenne isotroopsetena; tegelikku peaharu kasutatakse ainult Hot-punktide kontrollimiseks.
+LI|Vertikaalne keil on lihtne mudel: horisontaalne antenn, Gaussi keil laiusega θV −3 dB tasemel (Kraus) ja maapinna tegur kuni esimese maksimumini; järgmisi keile, antenni tegelikku kõrgust ja ümbritsevat maastikku ei arvestata.
 LI|Radiandi triivid ja aktiivsusprofiili B-koefitsiendid on tööväärtused.
 LI|Protsente tuleks võrrelda MCG_MS-i, MS-Softi ja bändil tehtud vaatlustega.
 H1|10. Allikad

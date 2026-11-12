@@ -59,7 +59,7 @@ Hægra megin á flipastikunni, frá hægri til vinstri:
 
 Við fyrstu ræsingu notar YA-MS **tungumál kerfisins** ef það er eitt af þessum, annars ítölsku. Tölur og dagsetningar fylgja völdu tungumáli (t.d. tugapunktur á ensku, tugakomma á ítölsku og þýsku). Texti sem vantar í þýðingarskrá birtist á ítölsku. Á Linux þurfa kínverska, japanska, kóreska, arabíska, hebreska, úrdú, hindí og bengalska viðeigandi letur (t.d. Noto-fjölskyldurnar): sjá [Úrræðaleit](Troubleshooting-FAQ-is#linux-japanskur-texti-birtist-sem-kassar).
 
-Skjalið [Nýtni - skýringar](Efficiency-Explanation-is) fylgir tungumáli viðmótsins; reiknihandbókin er í `doc/` (ítalska) og `doc/manuali/` (hin 35 tungumálin).
+Skjalið [Skýring á útreikningi nýtninnar](Efficiency-Explanation-is) fylgir tungumáli viðmótsins; reiknihandbókin er í `doc/` (ítalska) og `doc/manuali/` (hin 35 tungumálin).
 
 ## Litaþemu
 

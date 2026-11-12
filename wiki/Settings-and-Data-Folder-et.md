@@ -59,7 +59,7 @@ Keele või teema vahetamine salvestab seaded ja **ehitab akna uuesti üles** sam
 
 Esimesel käivitusel kasutab YA-MS **süsteemi keelt**, kui see on üks neist, muidu itaalia keelt. Numbrid ja kuupäevad järgivad valitud keelt (nt inglise keeles kümnendpunkt, itaalia ja saksa keeles koma). Tõlkefailist puuduv tekst kuvatakse itaalia keeles. Linuxis vajavad hiina, jaapani, korea, araabia, heebrea, urdu, hindi ja bengali keel sobivaid fonte (nt Noto perekonnad): vt [Tõrkeotsing](Troubleshooting-FAQ-et#linux-jaapani-tekst-kuvatakse-kastikestena).
 
-Dokument [Efektiivsus - selgitus](Efficiency-Explanation-et) järgib kasutajaliidese keelt; arvutusjuhend on kaustas `doc/` (itaalia keeles) ja `doc/manuali/` (ülejäänud 35 keeles).
+Dokument [Tõhususe arvutuse selgitus](Efficiency-Explanation-et) järgib kasutajaliidese keelt; arvutusjuhend on kaustas `doc/` (itaalia keeles) ja `doc/manuali/` (ülejäänud 35 keeles).
 
 ## Värviskeemid
 

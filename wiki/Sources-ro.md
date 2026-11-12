@@ -6,7 +6,7 @@
 
 [![Surse](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-Fila **Surse** enumeră fiecare lucrare pe care se bazează YA-MS, grupate ca mai jos (textul este selectabil, astfel încât puteți copia referințele). Aceleași surse, numerotate, încheie manualul de calcul (`doc/YA-MS_manuale_calcoli.docx`) și documentul [Eficiența - explicație](Efficiency-Explanation-ro).
+Fila **Surse** enumeră fiecare lucrare pe care se bazează YA-MS, grupate ca mai jos (textul este selectabil, astfel încât puteți copia referințele). Aceleași surse, numerotate, încheie manualul de calcul (`doc/YA-MS_manuale_calcoli.docx`) și documentul [Explicația calculului eficienței](Efficiency-Explanation-ro).
 
 ## SURSA PRINCIPALĂ
 

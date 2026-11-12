@@ -59,7 +59,7 @@ Dili ya da temayı değiştirmek ayarları kaydeder ve **pencereyi** aynı konum
 
 İlk açılışta YA-MS, bunlardan biriyse **sistem dilini**, değilse İtalyancayı kullanır. Sayılar ve tarihler seçilen dili izler (örn. İngilizcede ondalık nokta, İtalyanca ve Almancada virgül). Bir çeviri dosyasında eksik olan her metin İtalyanca gösterilir. Linux'ta Çince, Japonca, Korece, Arapça, İbranice, Urduca, Hintçe ve Bengalce için uygun yazı tipleri gerekir (örn. Noto aileleri): bkz. [Sorun giderme](Troubleshooting-FAQ-tr#linux-japonca-metin-kutucuk-olarak-görünüyor).
 
-[Verim - açıklama](Efficiency-Explanation-tr) belgesi arayüz dilini izler; hesap kılavuzu `doc/` (İtalyanca) ve `doc/manuali/` (diğer 35 dil) klasörlerindedir.
+[Verim hesabının açıklaması](Efficiency-Explanation-tr) belgesi arayüz dilini izler; hesap kılavuzu `doc/` (İtalyanca) ve `doc/manuali/` (diğer 35 dil) klasörlerindedir.
 
 ## Renk şemaları
 

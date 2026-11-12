@@ -6,7 +6,7 @@
 
 [![Kaynaklar](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-**Kaynaklar** sekmesi YA-MS'in dayandığı tüm çalışmaları aşağıdaki gibi gruplanmış olarak listeler (metin seçilebilir, böylece kaynakçayı kopyalayabilirsiniz). Aynı kaynaklar, numaralandırılmış olarak, hesap kılavuzunu (`doc/YA-MS_manuale_calcoli.docx`) ve [Verim - açıklama](Efficiency-Explanation-tr) belgesini kapatır.
+**Kaynaklar** sekmesi YA-MS'in dayandığı tüm çalışmaları aşağıdaki gibi gruplanmış olarak listeler (metin seçilebilir, böylece kaynakçayı kopyalayabilirsiniz). Aynı kaynaklar, numaralandırılmış olarak, hesap kılavuzunu (`doc/YA-MS_manuale_calcoli.docx`) ve [Verim hesabının açıklaması](Efficiency-Explanation-tr) belgesini kapatır.
 
 ## ANA KAYNAK
 

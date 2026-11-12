@@ -76,7 +76,9 @@ TAG|RILIEVO|Ta pati taisyklė matyti DH9GCD formulėje, kurią cituoja DF5HC [16
 TAG|RILIEVO|DH9GCD formulė neturi paskelbto pirminio šaltinio: ji sujungia daugiklį sin El (pėdsakų skaičius ir jonizacija) su daugikliu cos El, kuris atspindi veidrodinio taško nutolimą nuo trasos centro kylant radiantui. Apskaičiuota su radiantu, matomu iš vidurio taško, kaip tai daro MS-Soft [25], ji atkuria MS-Soft lentelę trasai KP30HV-JO52MM (1324 km, Kvadrantidai, 4/1/2001) 4 punktų tikslumu tarp 16° ir 48° elevacijos ir 16 punktų tikslumu iki 64°, su tuo pačiu maksimumu 13 UT (96 % prieš 92 %). Ji lieka palyginimo atskaitos tašku.
 H1|6. Nuo atskiro taško iki efektyvumo
 H2|6.1 Atspindžio taškai
-TAG|SCELTA|Programa padalija E sluoksnį į taškus kas 15 km ir palieka tik tuos, kuriuos abi stotys mato virš minimalios lapelio elevacijos.
+TAG|SCELTA|Programa padalija E sluoksnį į taškus kas 15 km ir palieka tuos, kuriuos abi stotys mato virš horizonto. Kai langelis „antenos diagrama“ įjungtas (numatytasis), kiekvienas taškas sveriamas abiejų antenų vertikaliuoju stiprinimu: ties 0° įtvirtintos kryptinės antenos pagrindinė skiltis dėl atspindžio nuo žemės vis tiek yra keliais laipsniais virš horizonto, o „Skilties pakilimas“ yra to maksimumo pakilimas e0. Kai e – taško pakilimas iš stoties, o θV – skilties vertikalusis plotis ties −3 dB (3.5 skirsnis):
+EQ|g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0), kai e < e0;   g(e) = 10^(−1,2·(e/θV)²), kai e ≥ e0;   taško svoris × g(e1) · g(e2)
+TAG|SCELTA|Žemiau maksimumo žemės koeficientas sumažina stiprinimą iki nulio ties horizontu; skilties žemiausias lygis – −20 dB. Žemas taškas reiškia mažiau, bet reiškia: ilgoje trasoje efektyvumas neišnyksta. Kai langelis išjungtas, skilties pakilimas yra griežta riba, kaip iki 1.8.0 versijos: taškai, kuriuos kuri nors stotis mato žemiau e0, neįskaičiuojami, o ilgoje trasoje, kai skiltis keliais laipsniais aukščiau, visi efektyvumai gali būti 0 (JN70CN – JO76QP, 1791 km, skiltis ties 3°, pėdsakai 88,5 km: nė vieno taško).
 H2|6.2 Kiekvieno taško svoris
 TAG|FONTE|Retojo pėdsako galia (McKinley [8]; ITU-R P.843 [24]) didėja su λ³ ir mažėja didėjant atstumams R1, R2 nuo stočių; φ yra pusė sklaidos kampo, β – kampas tarp pėdsako ir plokštumos, kurioje yra abi stotys ir taškas:
 EQ|svoris = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
@@ -135,7 +137,7 @@ TAG|RILIEVO|Pradinio spindulio neapibrėžtis: Stober ir kt. [30] su radaru CMOR
 TAG|SCELTA|Programa siūlo pasirinkimą „Pradinis pėdsako spindulys“ poskirtukyje Geometrija ir slopinimas: dviguba ITU vertė (numatytoji, atsargi, kaip Stober ir kt. matavimai), ITU-R P.843, neįtrauktas. Padvigubinus r0, daugiklis a1 decibelais padidėja 4 kartus: 1000 km trasoje 0,8 dB ties 50 MHz, 2,4 dB ties 144 MHz ir 5,6 dB ties 432 MHz (11,6 dB ties 600 km). CMOR matavimai atlikti žemesniais dažniais ir 85–95 km aukštyje: juos taikyti ties 432 MHz, kur aidai ateina iš maždaug 79 km, yra ekstrapoliacija.
 H1|9. Žinomi apribojimai
 LI|Modelis atsižvelgia tik į retuosius pėdsakus. Tankieji pėdsakai (ilgi blyksniai) ir sporadinis fonas į efektyvumą neįtraukiami; sporadinį foną atspindi radaro srautas.
-LI|Efektyvumo skaičiavime antenos laikomos izotropinėmis; tikrasis lapelis naudojamas tik Hot patikrai.
+LI|Vertikalioji skiltis yra paprastas modelis: horizontali antena, Gauso skiltis, kurios plotis θV ties −3 dB (Kraus), ir žemės koeficientas iki pirmojo maksimumo; kitos skiltys, tikrasis antenos aukštis ir aplinkinė vietovė neįvertinami.
 LI|Radianto dreifai ir aktyvumo profilio koeficientai B yra darbinės vertės.
 LI|Procentus reikia palyginti su MCG_MS, MS-Soft ir stebėjimais eteryje.
 H1|10. Šaltiniai

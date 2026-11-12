@@ -39,7 +39,7 @@ Seit Version 1.6 haben die Hauptreiter **Unterreiter** (eine hellere Reihe unter
 | [Feldkarte](Grid-Square-Map-de) | – | Gearbeitete und bestätigte Maidenhead-Felder aus einer ADIF-Datei, ein Reiter pro Band |
 | **Technische Dokumente** | [Quellen](Sources-de) | Alle Quellen; die wichtigste ist der Artikel von Cerrotta–Sartori |
 | | [Karte der europäischen Radare](European-Radar-Map-de) | Wo Collm, Sodankylä, GRAVES und CMOR bezogen auf deine Station liegen |
-| | [Effektivität - Erklärung](Efficiency-Explanation-de) | Schritt-für-Schritt-Dokument zur Berechnung der Effektivität, nach Word exportierbar |
+| | [Erklärung der Wirkungsgradberechnung](Efficiency-Explanation-de) | Schritt-für-Schritt-Dokument zur Berechnung der Effektivität, nach Word exportierbar |
 
 Über den Reitern liegen drei Bedienzeilen (dein Locator, Gegenstation, Band, Antenne, Spurhöhe, Zeit); siehe [Erste Schritte](Getting-Started-de). Die Schaltfläche **Bedienung** klappt sie ein, Sprache und Farbschema wählst du oben rechts; siehe [Einstellungen und Datenordner](Settings-and-Data-Folder-de).
 

@@ -59,7 +59,7 @@ Zmiana języka lub motywu zapisuje ustawienia i **odbudowuje okno** w tym samym 
 
 Przy pierwszym uruchomieniu YA-MS używa **języka systemu**, jeśli jest jednym z powyższych, w przeciwnym razie włoskiego. Liczby i daty są zgodne z wybranym językiem (np. kropka dziesiętna w angielskim, przecinek we włoskim, niemieckim i polskim). Każdy tekst, którego brakuje w pliku tłumaczenia, jest wyświetlany po włosku. W Linuksie chiński, japoński, koreański, arabski, hebrajski, urdu, hindi i bengalski wymagają odpowiednich czcionek (np. z rodziny Noto): zob. [Rozwiązywanie problemów](Troubleshooting-FAQ-pl#linux-tekst-japoński-wyświetla-się-jako-prostokąty).
 
-Dokument [Efektywność - objaśnienie](Efficiency-Explanation-pl) jest wyświetlany w języku interfejsu; podręcznik obliczeń znajduje się w `doc/` (po włosku) i `doc/manuali/` (pozostałe 35 języków).
+Dokument [Wyjaśnienie obliczania wydajności](Efficiency-Explanation-pl) jest wyświetlany w języku interfejsu; podręcznik obliczeń znajduje się w `doc/` (po włosku) i `doc/manuali/` (pozostałe 35 języków).
 
 ## Schematy kolorów
 

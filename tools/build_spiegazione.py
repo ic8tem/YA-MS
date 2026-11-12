@@ -1,5 +1,5 @@
 # Genera il documento "Come si calcola l'efficienza dello sciame" in due formati dallo stesso testo:
-#   efficienza_spiegazione.txt  -> mostrato nella linguetta "Efficienza - spiegazione" di YA-MS
+#   efficienza_spiegazione.txt  -> mostrato nella linguetta "Spiegazione del calcolo dell'efficienza" di YA-MS
 #   efficienza_spiegazione.docx -> esportazione in Word
 # Uso: python3 tools/build_spiegazione.py <cartella data> [codice lingua]
 #   senza codice (o "it"): data/efficienza_spiegazione.{txt,docx}; con un codice: data/spiegazione/efficienza_spiegazione_<codice>.{txt,docx}
@@ -109,7 +109,9 @@ tag("RILIEVO", "La formula di DH9GCD non ha una fonte primaria pubblicata: unisc
 
 h1("6. Dal singolo punto all'efficienza")
 h2("6.1 I punti di riflessione")
-tag("SCELTA", "Il programma divide lo strato E in punti ogni 15 km e tiene solo quelli che entrambe le stazioni vedono sopra l'elevazione minima del lobo.")
+tag("SCELTA", "Il programma divide lo strato E in punti ogni 15 km e tiene quelli che entrambe le stazioni vedono sopra l'orizzonte. Con la casella \"diagramma d'antenna\" accesa (di partenza) ogni punto pesa con il guadagno verticale delle due antenne: una direttiva fissata a 0° ha comunque il lobo principale qualche grado sopra l'orizzonte per la riflessione sul terreno, e l'\"Elevazione lobo\" è l'elevazione e0 di quel massimo. Con e l'elevazione del punto vista da una stazione e θV la larghezza verticale del lobo a −3 dB (paragrafo 3.5):")
+eq("g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0) per e < e0;   g(e) = 10^(−1,2·(e/θV)²) per e ≥ e0;   peso del punto × g(e1) · g(e2)")
+tag("SCELTA", "Sotto il massimo il fattore del terreno porta il guadagno a zero all'orizzonte; il lobo ha un fondo di −20 dB. Un punto basso conta meno, ma conta: su una tratta lunga l'efficienza non sparisce. Con la casella spenta l'elevazione del lobo è un limite netto, come fino alla versione 1.8.0: i punti visti sotto e0 da una delle due stazioni non contano, e su una tratta lunga con il lobo a qualche grado tutte le efficienze possono valere 0 (JN70CN – JO76QP, 1791 km, lobo a 3°, scie a 88,5 km: nessun punto).")
 h2("6.2 Il peso di ciascun punto")
 tag("FONTE", "La potenza di una scia sottodensa (McKinley [8]; ITU-R P.843 [24]) cresce con λ³ e cala con le distanze R1, R2 dalle stazioni; φ è la metà dell'angolo di scattering, β l'angolo tra la scia e il piano che contiene le due stazioni e il punto:")
 eq("peso = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]")
@@ -172,7 +174,7 @@ tag("SCELTA", "Il programma offre la scelta \"Raggio iniziale della scia\" nella
 
 h1("9. Limiti noti")
 li("Il modello considera solo le scie sottodense. Le sovradense (i burst lunghi) e il fondo sporadico non entrano nell'efficienza; il fondo sporadico è rappresentato dal flusso radar.")
-li("Nel calcolo dell'efficienza le antenne sono considerate isotrope; il lobo reale serve solo per il controllo degli Hot.")
+li("Il lobo verticale è un modello semplice: antenna orizzontale, lobo gaussiano largo θV a −3 dB (Kraus) e fattore del terreno fino al primo massimo; non si considerano i lobi successivi, l'altezza reale dell'antenna e il terreno attorno.")
 li("Le derive del radiante e i coefficienti B del profilo di attività sono valori di lavoro.")
 li("Le percentuali vanno confrontate con MCG_MS, MS-Soft e con le osservazioni in banda.")
 

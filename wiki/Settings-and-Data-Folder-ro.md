@@ -59,7 +59,7 @@ Schimbarea limbii sau a temei salvează setările și **reconstruiește fereastr
 
 La prima pornire, YA-MS folosește **limba sistemului** dacă este una dintre acestea, altfel italiana. Numerele și datele urmează limba aleasă (de ex. punct zecimal în engleză, virgulă în italiană, germană și română). Orice text care lipsește dintr-un fișier de traducere este afișat în italiană. Pe Linux, chineza, japoneza, coreeana, araba, ebraica, urdu, hindi și bengali au nevoie de fonturi potrivite (de ex. familiile Noto): vedeți [Rezolvarea problemelor](Troubleshooting-FAQ-ro#linux-textul-japonez-apare-ca-pătrățele).
 
-Documentul [Eficiența - explicație](Efficiency-Explanation-ro) urmează limba interfeței; manualul de calcul se află în `doc/` (italiană) și `doc/manuali/` (celelalte 35 de limbi).
+Documentul [Explicația calculului eficienței](Efficiency-Explanation-ro) urmează limba interfeței; manualul de calcul se află în `doc/` (italiană) și `doc/manuali/` (celelalte 35 de limbi).
 
 ## Scheme de culori
 

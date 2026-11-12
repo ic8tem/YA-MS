@@ -6,7 +6,7 @@
 
 [![Bronne](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-Die oortjie **Bronne** lys elke werk waarop YA-MS gebou is, gegroepeer soos hieronder (die teks is kiesbaar, sodat jy die verwysings kan kopieer). Dieselfde bronne, genommer, sluit die berekeningshandleiding (`doc/YA-MS_manuale_calcoli.docx`) en die dokument [Doeltreffendheid - verduideliking](Efficiency-Explanation-af) af.
+Die oortjie **Bronne** lys elke werk waarop YA-MS gebou is, gegroepeer soos hieronder (die teks is kiesbaar, sodat jy die verwysings kan kopieer). Dieselfde bronne, genommer, sluit die berekeningshandleiding (`doc/YA-MS_manuale_calcoli.docx`) en die dokument [Verduideliking van die doeltreffendheidsberekening](Efficiency-Explanation-af) af.
 
 ## HOOFBRON
 

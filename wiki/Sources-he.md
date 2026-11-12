@@ -6,7 +6,7 @@
 
 [![מקורות](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-הלשונית **מקורות** מפרטת כל עבודה ש-YA-MS מבוססת עליה, מקובצות כמפורט להלן (הטקסט ניתן לבחירה, כך שאפשר להעתיק את ההפניות). אותם מקורות, ממוספרים, חותמים את מדריך החישובים (`doc/YA-MS_manuale_calcoli.docx`) ואת המסמך [יעילות - הסבר](Efficiency-Explanation-he).
+הלשונית **מקורות** מפרטת כל עבודה ש-YA-MS מבוססת עליה, מקובצות כמפורט להלן (הטקסט ניתן לבחירה, כך שאפשר להעתיק את ההפניות). אותם מקורות, ממוספרים, חותמים את מדריך החישובים (`doc/YA-MS_manuale_calcoli.docx`) ואת המסמך [הסבר חישוב היעילות](Efficiency-Explanation-he).
 
 ## מקור עיקרי
 

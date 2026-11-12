@@ -6,7 +6,7 @@
 
 [![Források](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-A **Források** fül felsorolja az összes művet, amelyre a YA-MS épül, az alábbiak szerint csoportosítva (a szöveg kijelölhető, így a hivatkozások kimásolhatók). Ugyanezek a források számozva zárják a számítási kézikönyvet (`doc/YA-MS_manuale_calcoli.docx`) és a [Hatékonyság – magyarázat](Efficiency-Explanation-hu) dokumentumot.
+A **Források** fül felsorolja az összes művet, amelyre a YA-MS épül, az alábbiak szerint csoportosítva (a szöveg kijelölhető, így a hivatkozások kimásolhatók). Ugyanezek a források számozva zárják a számítási kézikönyvet (`doc/YA-MS_manuale_calcoli.docx`) és a [A hatásfok számításának magyarázata](Efficiency-Explanation-hu) dokumentumot.
 
 ## FŐ FORRÁS
 

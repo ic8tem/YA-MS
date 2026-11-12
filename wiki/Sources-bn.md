@@ -6,7 +6,7 @@
 
 [![উৎস](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-**উৎস** ট্যাবটি YA-MS যেসব কাজের ওপর নির্মিত তার সবগুলোর তালিকা দেয়, নিচের মতো দলবদ্ধ করে (লেখাটি নির্বাচনযোগ্য, তাই তথ্যসূত্র কপি করা যায়)। একই উৎসগুলো, নম্বরসহ, হিসাবের ম্যানুয়াল (`doc/YA-MS_manuale_calcoli.docx`) ও [দক্ষতা - ব্যাখ্যা](Efficiency-Explanation-bn) নথির শেষে রয়েছে।
+**উৎস** ট্যাবটি YA-MS যেসব কাজের ওপর নির্মিত তার সবগুলোর তালিকা দেয়, নিচের মতো দলবদ্ধ করে (লেখাটি নির্বাচনযোগ্য, তাই তথ্যসূত্র কপি করা যায়)। একই উৎসগুলো, নম্বরসহ, হিসাবের ম্যানুয়াল (`doc/YA-MS_manuale_calcoli.docx`) ও [দক্ষতার হিসাবের ব্যাখ্যা](Efficiency-Explanation-bn) নথির শেষে রয়েছে।
 
 ## প্রধান উৎস
 

@@ -39,7 +39,7 @@ Od verze 1.6 mají hlavní karty **podkarty** (světlejší řada pod hlavní ř
 | [Mapa čtverců](Grid-Square-Map-cs) | – | Navázané a potvrzené čtverce Maidenhead ze souboru ADIF, jedna karta pro každé pásmo |
 | **Technické dokumenty** | [Zdroje](Sources-cs) | Všechny zdroje; hlavním je článek Cerrotta–Sartori |
 | | [Mapa evropských radarů](European-Radar-Map-cs) | Kde leží Collm, Sodankylä, GRAVES a CMOR vzhledem k vaší stanici |
-| | [Účinnost - vysvětlení](Efficiency-Explanation-cs) | Dokument krok za krokem o tom, jak se počítá účinnost, s možností exportu do Wordu |
+| | [Vysvětlení výpočtu účinnosti](Efficiency-Explanation-cs) | Dokument krok za krokem o tom, jak se počítá účinnost, s možností exportu do Wordu |
 
 Nad kartami jsou tři řady ovládacích prvků (váš lokátor, DX stanice, pásmo, anténa, výška stop, čas); viz [První kroky](Getting-Started-cs). Tlačítko **Ovládání** je skryje a jazyk a barevné schéma se volí vpravo nahoře; viz [Nastavení a datová složka](Settings-and-Data-Folder-cs).
 

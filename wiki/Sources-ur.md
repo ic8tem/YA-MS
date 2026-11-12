@@ -6,7 +6,7 @@
 
 [![ذرائع](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-**ذرائع** ٹیب ان تمام کاموں کی فہرست دیتا ہے جن پر YA-MS بنا ہے، نیچے کی طرح گروہ بند (متن قابلِ انتخاب ہے، تاکہ آپ حوالے کاپی کر سکیں)۔ یہی ذرائع، نمبروں کے ساتھ، حساب کے دستی کتابچے (`doc/YA-MS_manuale_calcoli.docx`) اور [کارکردگی - وضاحت](Efficiency-Explanation-ur) دستاویز کے آخر میں ہیں۔
+**ذرائع** ٹیب ان تمام کاموں کی فہرست دیتا ہے جن پر YA-MS بنا ہے، نیچے کی طرح گروہ بند (متن قابلِ انتخاب ہے، تاکہ آپ حوالے کاپی کر سکیں)۔ یہی ذرائع، نمبروں کے ساتھ، حساب کے دستی کتابچے (`doc/YA-MS_manuale_calcoli.docx`) اور [کارکردگی کے حساب کی وضاحت](Efficiency-Explanation-ur) دستاویز کے آخر میں ہیں۔
 
 ## مرکزی ماخذ
 

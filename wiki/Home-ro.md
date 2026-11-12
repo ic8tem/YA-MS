@@ -39,7 +39,7 @@ Sursa principală este articolul lui **C. Cerrotta IC8TEM și G. Sartori IV3GTH*
 | [Harta pătratelor](Grid-Square-Map-ro) | – | Pătratele Maidenhead lucrate și confirmate dintr-un fișier ADIF, câte o filă pentru fiecare bandă |
 | **Documente tehnice** | [Surse](Sources-ro) | Toate sursele; cea principală este articolul Cerrotta–Sartori |
 | | [Harta radarelor europene](European-Radar-Map-ro) | Unde se află Collm, Sodankylä, GRAVES și CMOR față de stația dumneavoastră |
-| | [Eficiența - explicație](Efficiency-Explanation-ro) | Document pas cu pas despre cum se calculează eficiența, exportabil în Word |
+| | [Explicația calculului eficienței](Efficiency-Explanation-ro) | Document pas cu pas despre cum se calculează eficiența, exportabil în Word |
 
 Deasupra filelor sunt trei rânduri de comenzi (locatorul dumneavoastră, stația DX, banda, antena, înălțimea urmei, ora); vedeți [Primii pași](Getting-Started-ro). Butonul **Comenzi** le pliază, iar limba și schema de culori se aleg în dreapta sus; vedeți [Setări și dosarul de date](Settings-and-Data-Folder-ro).
 

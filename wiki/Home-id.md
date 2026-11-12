@@ -39,7 +39,7 @@ Sejak versi 1.6 tab utama memiliki **sub-tab** (baris yang lebih terang di bawah
 | [Peta kotak](Grid-Square-Map-id) | – | Kotak Maidenhead yang sudah dikerjakan dan terkonfirmasi dari file ADIF, satu tab per band |
 | **Dokumen teknis** | [Sumber](Sources-id) | Semua sumber; yang utama adalah artikel Cerrotta–Sartori |
 | | [Peta radar Eropa](European-Radar-Map-id) | Letak Collm, Sodankylä, GRAVES dan CMOR relatif terhadap stasiun Anda |
-| | [Efisiensi - penjelasan](Efficiency-Explanation-id) | Dokumen langkah demi langkah tentang cara efisiensi dihitung, dapat diekspor ke Word |
+| | [Penjelasan perhitungan efisiensi](Efficiency-Explanation-id) | Dokumen langkah demi langkah tentang cara efisiensi dihitung, dapat diekspor ke Word |
 
 Di atas tab terdapat tiga baris kontrol (locator Anda, stasiun DX, band, antena, ketinggian jejak, waktu); lihat [Memulai](Getting-Started-id). Tombol **Kontrol** melipatnya, sedangkan bahasa dan skema warna dipilih di kanan atas; lihat [Pengaturan dan folder data](Settings-and-Data-Folder-id).
 

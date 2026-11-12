@@ -39,7 +39,7 @@ Sedan version 1.6 har huvudflikarna **underflikar** (en ljusare rad under huvudr
 | [Rutkarta](Grid-Square-Map-sv) | – | Körda och bekräftade Maidenhead-rutor från en ADIF-fil, en flik per band |
 | **Tekniska dokument** | [Källor](Sources-sv) | Alla källor; den viktigaste är artikeln av Cerrotta–Sartori |
 | | [Karta över europeiska radarer](European-Radar-Map-sv) | Var Collm, Sodankylä, GRAVES och CMOR ligger i förhållande till din station |
-| | [Effektivitet - förklaring](Efficiency-Explanation-sv) | Dokument som steg för steg visar hur effektiviteten beräknas, kan exporteras till Word |
+| | [Förklaring av effektivitetsberäkningen](Efficiency-Explanation-sv) | Dokument som steg för steg visar hur effektiviteten beräknas, kan exporteras till Word |
 
 Ovanför flikarna finns tre rader med reglage (din lokator, motstation, band, antenn, spårhöjd, tid); se [Kom igång](Getting-Started-sv). Knappen **Reglage** fäller ihop dem, och språk och färgschema väljs uppe till höger; se [Inställningar och datamapp](Settings-and-Data-Folder-sv).
 

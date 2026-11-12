@@ -39,7 +39,7 @@
 | [그리드 지도](Grid-Square-Map-ko) | – | ADIF 파일에서 읽은 교신·확인 Maidenhead 그리드. 밴드마다 탭 하나 |
 | **기술 문서** | [출처](Sources-ko) | 모든 출처. 주요 출처는 Cerrotta–Sartori 논문 |
 | | [유럽 레이더 지도](European-Radar-Map-ko) | 내 국을 기준으로 한 Collm, Sodankylä, GRAVES, CMOR의 위치 |
-| | [효율 - 설명](Efficiency-Explanation-ko) | 효율 계산 방법을 단계별로 설명한 문서. Word로 내보내기 가능 |
+| | [효율 계산 설명](Efficiency-Explanation-ko) | 효율 계산 방법을 단계별로 설명한 문서. Word로 내보내기 가능 |
 
 탭 위에는 세 줄의 조작 항목(내 로케이터, 상대국, 밴드, 안테나, 흔적 고도, 시각)이 있습니다. [시작하기](Getting-Started-ko)를 참조하세요. **조작** 버튼으로 이를 접을 수 있고, 언어와 색 구성은 오른쪽 위에서 선택합니다. [설정과 데이터 폴더](Settings-and-Data-Folder-ko)를 참조하세요.
 

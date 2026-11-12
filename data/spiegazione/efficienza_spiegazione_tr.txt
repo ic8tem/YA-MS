@@ -76,7 +76,9 @@ TAG|RILIEVO|Aynı kural, DF5HC'nin [16] aktardığı DH9GCD formülünde de gör
 TAG|RILIEVO|DH9GCD formülünün yayımlanmış birincil kaynağı yoktur: sin El çarpanını (izlerin sayısı ve iyonlaşması), radyant yükseldikçe speküler noktanın yolun merkezinden uzaklaşmasını temsil eden bir cos El çarpanıyla birleştirir. MS-Soft'un [25] yaptığı gibi radyant orta noktadan görülerek hesaplandığında, KP30HV-JO52MM (1324 km, Quadrantidler, 4/1/2001) için MS-Soft tablosunu 16° ile 48° yükseliş açısı arasında 4 puan içinde ve 64°'ye kadar 16 puan içinde, saat 13 UT'deki aynı maksimumla (%96'ya karşı %92) yeniden üretir. Bir karşılaştırma ölçütü olarak kalır.
 H1|6. Tek noktadan verime
 H2|6.1 Yansıma noktaları
-TAG|SCELTA|Program E tabakasını her 15 km'de bir noktalara böler ve yalnızca her iki istasyonun da lobun en düşük yükseliş açısının üstünde gördüğü noktaları tutar.
+TAG|SCELTA|Program E katmanını her 15 km'de bir noktalara böler ve iki istasyonun da ufkun üzerinde gördüğü noktaları tutar. "Anten diyagramı" kutusu açıkken (varsayılan) her nokta iki antenin dikey kazancıyla ağırlıklandırılır: 0°'ye sabitlenmiş yönlü bir antenin ana lobu zemin yansıması nedeniyle yine de ufkun birkaç derece üzerindedir ve "Lob yükselmesi" bu en yüksek noktanın e0 yükselme açısıdır. e noktanın bir istasyondan görülen yükselme açısı ve θV lobun −3 dB'deki dikey genişliği olmak üzere (bölüm 3.5):
+EQ|e < e0 için g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0);   e ≥ e0 için g(e) = 10^(−1,2·(e/θV)²);   noktanın ağırlığı × g(e1) · g(e2)
+TAG|SCELTA|En yüksek noktanın altında zemin çarpanı kazancı ufukta sıfıra indirir; lobun tabanı −20 dB'dir. Alçak bir nokta daha az sayılır ama sayılır: uzun bir yolda verim kaybolmaz. Kutu kapalıyken lobun yükselme açısı, 1.8.0 sürümüne kadar olduğu gibi kesin bir sınırdır: istasyonlardan herhangi birinin e0'ın altında gördüğü noktalar sayılmaz ve lob birkaç derece yukarıdayken uzun bir yolda tüm verimler 0 olabilir (JN70CN – JO76QP, 1791 km, lob 3°'de, izler 88,5 km'de: hiç nokta yok).
 H2|6.2 Her noktanın ağırlığı
 TAG|FONTE|Düşük yoğunluklu bir izin gücü (McKinley [8]; ITU-R P.843 [24]) λ³ ile artar ve istasyonlara olan R1, R2 mesafeleriyle azalır; φ saçılma açısının yarısı, β iz ile iki istasyonu ve noktayı içeren düzlem arasındaki açıdır:
 EQ|ağırlık = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
@@ -135,7 +137,7 @@ TAG|RILIEVO|Başlangıç yarıçapının belirsizliği: Stober vd. [30], 17,45, 
 TAG|SCELTA|Program, Geometri ve yol kaybı alt sekmesinde "İzin başlangıç yarıçapı" seçimini sunar: ITU değerinin iki katı (varsayılan, temkinli, Stober vd. ölçümleri gibi), ITU-R P.843, hariç. r0 iki katına çıkınca dB cinsinden a1 çarpanı 4 ile çarpılır: 1000 km'de 50 MHz'de 0,8 dB, 144 MHz'de 2,4 dB ve 432 MHz'de 5,6 dB (600 km'de 11,6 dB). CMOR ölçümleri daha düşük frekanslarda ve 85–95 km'de yapılmıştır: bunları yankıların yaklaşık 79 km'den geldiği 432 MHz'de kullanmak bir dışkestirimdir.
 H1|9. Bilinen sınırlamalar
 LI|Model yalnızca düşük yoğunluklu izleri dikkate alır. Aşırı yoğunluklu izler (uzun burst'ler) ve sporadik arka plan verime girmez; sporadik arka plan radar akısıyla temsil edilir.
-LI|Verim hesabında antenler izotropik kabul edilir; gerçek lob yalnızca Hot'ların kontrolü için kullanılır.
+LI|Dikey lob basit bir modeldir: yatay anten, −3 dB'de θV genişliğinde Gauss lobu (Kraus) ve ilk en yüksek noktaya kadar zemin çarpanı; sonraki loblar, antenin gerçek yüksekliği ve çevredeki arazi hesaba katılmaz.
 LI|Radyant kaymaları ve etkinlik profilinin B katsayıları çalışma değerleridir.
 LI|Yüzdeler MCG_MS, MS-Soft ve bant üzerindeki gözlemlerle karşılaştırılmalıdır.
 H1|10. Kaynaklar

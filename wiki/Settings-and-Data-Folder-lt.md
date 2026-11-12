@@ -59,7 +59,7 @@ Pakeitus kalbą ar temą, nustatymai išsaugomi, o **langas perkuriamas** toje p
 
 Pirmą kartą paleista YA-MS naudoja **sistemos kalbą**, jei ji yra viena iš šių, kitu atveju – italų. Skaičiai ir datos atitinka pasirinktą kalbą (pvz., dešimtainis taškas anglų, kablelis italų ir vokiečių kalbomis). Jei vertimo faile teksto trūksta, jis rodomas itališkai. Linux sistemoje kinų, japonų, korėjiečių, arabų, hebrajų, urdu, hindi ir bengalų kalboms reikia tinkamų šriftų (pvz., Noto šeimų): žr. [Trikčių šalinimas](Troubleshooting-FAQ-lt#linux-japoniškas-tekstas-rodomas-kvadratėliais).
 
-Dokumentas [Efektyvumas - paaiškinimas](Efficiency-Explanation-lt) rodomas sąsajos kalba; skaičiavimų vadovas yra `doc/` (italų kalba) ir `doc/manuali/` (kitomis 35 kalbomis).
+Dokumentas [Efektyvumo skaičiavimo paaiškinimas](Efficiency-Explanation-lt) rodomas sąsajos kalba; skaičiavimų vadovas yra `doc/` (italų kalba) ir `doc/manuali/` (kitomis 35 kalbomis).
 
 ## Spalvų schemos
 

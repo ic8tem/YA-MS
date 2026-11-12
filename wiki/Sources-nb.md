@@ -6,7 +6,7 @@
 
 [![Kilder](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-Fanen **Kilder** lister alle verkene YA-MS bygger på, gruppert som nedenfor (teksten kan merkes, så du kan kopiere referansene). De samme kildene, nummerert, avslutter beregningshåndboken (`doc/YA-MS_manuale_calcoli.docx`) og dokumentet [Effektivitet - forklaring](Efficiency-Explanation-nb).
+Fanen **Kilder** lister alle verkene YA-MS bygger på, gruppert som nedenfor (teksten kan merkes, så du kan kopiere referansene). De samme kildene, nummerert, avslutter beregningshåndboken (`doc/YA-MS_manuale_calcoli.docx`) og dokumentet [Forklaring av effektivitetsberegningen](Efficiency-Explanation-nb).
 
 ## HOVEDKILDE
 

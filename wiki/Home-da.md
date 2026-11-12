@@ -39,7 +39,7 @@ Fra version 1.6 har hovedfanerne **underfaner** (en lysere række under hovedræ
 | [Kort over felter](Grid-Square-Map-da) | – | Kørte og bekræftede Maidenhead-felter fra en ADIF-fil, én fane pr. bånd |
 | **Tekniske dokumenter** | [Kilder](Sources-da) | Alle kilder; hovedkilden er artiklen af Cerrotta–Sartori |
 | | [Kort over europæiske radarer](European-Radar-Map-da) | Hvor Collm, Sodankylä, GRAVES og CMOR ligger i forhold til din station |
-| | [Effektivitet - forklaring](Efficiency-Explanation-da) | Dokument, der trin for trin forklarer, hvordan effektiviteten beregnes; kan eksporteres til Word |
+| | [Forklaring af effektivitetsberegningen](Efficiency-Explanation-da) | Dokument, der trin for trin forklarer, hvordan effektiviteten beregnes; kan eksporteres til Word |
 
 Over fanerne er der tre rækker betjeningselementer (din lokator, modstation, bånd, antenne, sporhøjde, tid); se [Kom godt i gang](Getting-Started-da). Knappen **Betjening** folder dem sammen, og sprog og farveskema vælges øverst til højre; se [Indstillinger og datamappe](Settings-and-Data-Folder-da).
 

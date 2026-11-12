@@ -32,6 +32,11 @@ INSTALLAZIONE
 
 NOVITA' DELLA 1.8.1
   - "Documenti tecnici" e' ora l'ultima linguetta.
+  - Lobo d'antenna come diagramma (casella "diagramma d'antenna", accesa di partenza): l'"Elevazione lobo" e' il massimo
+    del lobo verticale e i punti di riflessione pesano con il guadagno verticale delle due antenne (lobo dal boom, fattore
+    del terreno fino a zero all'orizzonte). Spenta, l'elevazione del lobo resta un limite netto come prima.
+  - Linguetta "Efficienza - spiegazione" rinominata "Spiegazione del calcolo dell'efficienza".
+  - Angolo beta: il fumetto mostra l'effetto sulle tratte lunghe con un esempio misurato.
   - Una sola data: "Data del calcolo (UTC)" vale anche per la tabella delle 24 ore di "Calcolo dell'efficienza"
     (tolta la casella "Giorno per la tabella 24 h (UTC)", che ripeteva la stessa scelta).
   - Avviso "NESSUNA ZONA COMUNE" (Calcolo previsionale e Calcolo dell'efficienza) quando nessun punto dello strato e'

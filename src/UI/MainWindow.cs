@@ -466,16 +466,31 @@ namespace YAMS
             numLayer = N(70, 130, Dm(cfg.GetD("quota_scie_km", 90)), 1, 0.5m, 60);
             chkLayerRadar = C(Lang.T("dal radar"), cfg.GetB("quota_da_radar", true));
             numElev = N(0, 30, Dm(cfg.GetD("elevazione_lobo_gradi", 0)), 1, 0.5m, 55);
+            ToolTip.SetTip(numElev, Lang.T("Elevazione del massimo del lobo verticale dell'antenna. Una direttiva fissata a 0° ha comunque il lobo principale qualche grado sopra l'orizzonte, per la riflessione sul terreno (di solito 3-8°, secondo l'altezza dell'antenna in lunghezze d'onda).\n" +
+                "Con \"diagramma d'antenna\" acceso questo valore è il massimo del lobo: i punti sotto pesano sempre meno fino a zero all'orizzonte, quelli sopra seguono il lobo verticale calcolato dal boom. Con la casella spenta è un limite netto: i punti sotto non contano."));
+            // casella: lobo come diagramma d'antenna (attenuazione) invece del limite netto
+            chkLobe = C(Lang.T("diagramma d'antenna"), cfg.GetB("lobo_diagramma", true));
+            PathModel.LobePattern = chkLobe.IsChecked == true;
+            ToolTip.SetTip(chkLobe, Lang.T("Come conta l'elevazione del lobo.\n" +
+                "Accesa (di partenza): i punti di riflessione pesano con il diagramma verticale dell'antenna di ciascuna stazione. Il lobo ha il massimo all'elevazione scritta accanto e la larghezza verticale calcolata dal boom (curva DL6WU, Kraus); " +
+                "sotto il massimo il terreno fa scendere il guadagno fino a zero all'orizzonte. Un punto basso conta meno, ma conta: su una tratta lunga l'efficienza non sparisce.\n" +
+                "Spenta: l'elevazione del lobo è un limite netto (come fino alla versione 1.8.0). I punti visti sotto quell'elevazione da una delle due stazioni non contano; su una tratta lunga con il lobo a qualche grado tutte le efficienze possono valere 0."));
+            WhenChanged(chkLobe, ToggleButton.IsCheckedProperty, () =>
+            {
+                PathModel.LobePattern = chkLobe.IsChecked == true;
+                cfg.Set("lobo_diagramma", PathModel.LobePattern);
+                if (model != null) Recalc();
+            });
             btnCalc = B(Lang.T("Calcola")); btnCalc.Classes.Add("accent");
             btnCalc.Click += (s, e) => Recalc();
-            cmbBand.SelectionChanged += (s, e) => { if (model != null) { ApplyAntenna(); UpdateSky(); UpdateFluxTab(); UpdateGeometry(); } };
+            cmbBand.SelectionChanged += (s, e) => { if (model != null) { if (PathModel.LobePattern) Recalc(); else { ApplyAntenna(); UpdateSky(); UpdateFluxTab(); UpdateGeometry(); } } };
 
             // l'antenna e' sempre puntata verso il corrispondente (azimut della tratta)
             Color wheat = Pal.Ink(Pal.Rgb(245, 222, 179));   // color grano: scurito negli schemi chiari
             lblAntAz = L(Lang.T("Antenna az: -")); lblAntAz.Foreground = Pal.B(wheat);
             numBoom = N(0.5m, 30, Dm(cfg.GetD("boom_m", 4.6)), 2, 0.1m, 60);
             lblAnt = L(""); lblAnt.Foreground = Pal.B(wheat);
-            numBoom.ValueChanged += (s, e) => { if (model != null) { ApplyAntenna(); UpdateSky(); UpdateGeometry(); } };
+            numBoom.ValueChanged += (s, e) => { if (model != null) { if (PathModel.LobePattern) Recalc(); else { ApplyAntenna(); UpdateSky(); UpdateGeometry(); } } };
             numHotKm = N(30, 400, Dm(cfg.GetD("hot_spot_km", 150)), 0, 10, 55);
             PathModel.HotSpotOffsetKm = V(numHotKm);
             numHotKm.ValueChanged += (s, e) => { if (!PathModel.HotSpotAuto) { PathModel.HotSpotOffsetKm = V(numHotKm); if (model != null) Recalc(); } };
@@ -494,7 +509,7 @@ namespace YAMS
 
             // riga 2: strato E, lobo e antenna
             Border row2 = Row(L(Lang.T("Quota scie km")), numLayer, chkLayerRadar,
-                              L(Lang.T("Elevazione lobo °")), numElev,
+                              L(Lang.T("Elevazione lobo °")), numElev, chkLobe,
                               L(Lang.T("Antenna Yagi: boom m")), numBoom, lblAnt,
                               L(Lang.T("Hot spot dal punto medio km")), numHotKm, chkHotAuto);
 
@@ -822,7 +837,7 @@ namespace YAMS
             ToolTip.SetTip(chkBeta, Lang.T("Due tesi sulla geometria, con fonti diverse.\n" +
                 "Accesa (prudente, di partenza): formula completa di McKinley (1961) e dell'ITU-R P.843, 1 / (1 − cos²β sin²φ), dove β è l'angolo tra la scia e il piano della tratta. " +
                 "Le scie che attraversano il piano valgono 10-15 dB meno di quelle che vi giacciono e nessuna scia è sopravvalutata: prevalgono i radianti allineati alla tratta. " +
-                "Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004).\n" +
+                "Con questa scelta YA-MS segue meglio la forma delle curve orarie di DJ5HG (2004). Sulle tratte lunghe abbassa molto i valori: JN70CN – JO76QP (1791 km), Geminidi del 14/12/2026, 98 % con la casella spenta e 13 % accesa.\n" +
                 "Spenta: ogni scia pesa come se stesse nel piano della tratta (β = 0), come fino alla versione 1.6. Vale la regola classica dei radioamatori: il radiante migliore è alto 15-70° e di traverso alla tratta, " +
                 "quello allineato è marginale (SM6FHZ, DH9GCD, meteor-mcp di qso-graph).\n" +
                 "Un primo confronto con i conteggi BRAMS di Sonneberg (Perseidi 2026, 471 km) non le distingue: la casella \"Giudizio classico\" mostra il verdetto della regola classica sotto l'efficienza, ora per ora."));
@@ -922,7 +937,7 @@ namespace YAMS
             // --- Mappa dei radar europei (ex "Mappa delle fonti", MainWindow.MappaFonti.cs)
             BuildSourcesMapTab();
 
-            // --- Efficienza - spiegazione (MainWindow.Spiegazione.cs)
+            // --- Spiegazione del calcolo dell'efficienza (MainWindow.Spiegazione.cs)
             BuildExplainTab();
 
             EndGroup();
@@ -1004,6 +1019,7 @@ namespace YAMS
             if (!Astro.TryLocator(Up(txtHome), out home)) { status.Text = Lang.T("Locator della stazione non valido"); return; }
             if (!Astro.TryLocator(Up(txtDx), out dx)) { status.Text = Lang.T("Locator del corrispondente non valido"); return; }
             DateTime t0 = DateTime.Now;
+            PathModel.VerticalHpbwDeg = MsGeometry.HpbwVerticalDeg(MsGeometry.YagiGainDbi(V(numBoom), BandMHz));   // lobo verticale dal boom
             model = PathModel.Build(home, V(numHomeAlt) / 1000.0, dx, V(numDxAlt) / 1000.0, V(numLayer), V(numElev));
             if (PathModel.HotSpotAuto && model.Valid) numHotKm.Value = (decimal)Math.Round(Math.Max(30, Math.Min(400, model.HotOffsetKm)));   // mostra la distanza calcolata
             StartGravesModel();   // tratta GRAVES -> stazione, in un thread secondario
@@ -1358,7 +1374,7 @@ namespace YAMS
         Border boxHorizon; TextBlock lblHorizon;
         RadioButton rbProfPrud, rbProfDj, rbProfPers;
         ComboBox cmbR0, cmbDur;
-        CheckBox chkBeta, chkClassic;
+        CheckBox chkBeta, chkClassic, chkLobe;
         bool applyingProfile;
         public const double Dj5hgLayerKm = 102.0;
 
@@ -1431,6 +1447,21 @@ namespace YAMS
         {
             if (model == null || !model.Valid || model.SamplePoints > 0) return null;
             double alt = Math.Min(model.HomeAltKm, model.DxAltKm), half = model.DistKm / 2;
+            if (PathModel.LobePattern)
+            {
+                double hor = MsGeometry.LayerRangeKm(model.LayerKm, 0, alt);
+                string t = Lang.F("NESSUNA ZONA COMUNE: con le scie a {0:F1} km ogni stazione vede lo strato solo fino all'orizzonte, a {1:F0} km, ma il punto medio della tratta ({2:F0} km) è a {3:F0} km. Nessun punto di riflessione è visibile da entrambe le stazioni, quindi tutte le efficienze valgono 0.",
+                    model.LayerKm, hor, model.DistKm, half);
+                double hh = -1;
+                if (MsGeometry.LayerRangeKm(200, 0, alt) > half)
+                {
+                    double lo = model.LayerKm, hi = 200;
+                    for (int i = 0; i < 40; i++) { double m = (lo + hi) / 2; if (MsGeometry.LayerRangeKm(m, 0, alt) > half) hi = m; else lo = m; }
+                    hh = Math.Ceiling(hi);
+                }
+                if (hh > 0) t += " " + Lang.F("Servono scie ad almeno {0:F0} km.", hh);
+                return t + " " + Lang.T("La formula di DH9GCD (righe azzurre) non tiene conto dell'orizzonte né del lobo, per questo dà valori anche qui.");
+            }
             double reach = MsGeometry.LayerRangeKm(model.LayerKm, model.MinElevDeg, alt);
             string s = Lang.F("NESSUNA ZONA COMUNE: con le scie a {0:F1} km e il lobo d'antenna a {1:F1}° ogni stazione vede lo strato fino a {2:F0} km, ma il punto medio della tratta ({3:F0} km) è a {4:F0} km. " +
                 "Il calcolo tiene solo i punti visti da entrambe le stazioni almeno a quell'elevazione: qui non ce n'è nessuno, quindi tutte le efficienze valgono 0.",
@@ -1643,7 +1674,10 @@ namespace YAMS
             }
             sb.Append("\n");
             head(Lang.T("LIMITI DELLA ZONA COMUNE (incroci delle curve dove l'orizzonte di ciascuna stazione incontra lo strato E, articolo)"));
-            line(Lang.F("Portata alla quota delle scie con lobo a {0:F1}°: {1:F0} km", model.MinElevDeg, model.HotRadiusKm));
+            if (PathModel.LobePattern)
+                line(Lang.F("Portata alla quota delle scie fino all'orizzonte: {0:F0} km. Lobo d'antenna con il massimo a {1:F1}° e larghezza verticale {2:F0}° a -3 dB: i punti fuori dal lobo pesano meno, quelli sotto il massimo scendono a zero all'orizzonte",
+                    model.HotRadiusKm, model.MinElevDeg, PathModel.VerticalHpbwDeg));
+            else line(Lang.F("Portata alla quota delle scie con lobo a {0:F1}°: {1:F0} km", model.MinElevDeg, model.HotRadiusKm));
             if (model.LimitA != null)
             {
                 foreach (HotPoint h in new HotPoint[] { model.LimitA, model.LimitB })
@@ -2043,6 +2077,7 @@ namespace YAMS
             cfg.Set("hot_spot_auto", chkHotAuto.IsChecked == true);
             if (chkTrailLen != null) cfg.Set("lunghezza_scie", chkTrailLen.IsChecked == true);
             if (chkBeta != null) cfg.Set("angolo_beta", chkBeta.IsChecked == true);
+            if (chkLobe != null) cfg.Set("lobo_diagramma", chkLobe.IsChecked == true);
             cfg.Set("carattere_pct", Math.Round(sldFont.Value / 10) * 10);
             cfg.Set("lingua", Lang.Code);
             cfg.Set("tema", Tema.Chiave);

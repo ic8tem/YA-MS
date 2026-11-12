@@ -39,7 +39,7 @@ Desde la versión 1.6 las pestañas principales tienen **subpestañas** (una fil
 | [Mapa de cuadrículas](Grid-Square-Map-es) | – | Cuadrículas Maidenhead trabajadas y confirmadas a partir de un archivo ADIF, una pestaña por banda |
 | **Documentos técnicos** | [Fuentes](Sources-es) | Todas las fuentes; la principal es el artículo Cerrotta–Sartori |
 | | [Mapa de los radares europeos](European-Radar-Map-es) | Dónde están Collm, Sodankylä, GRAVES y CMOR respecto a tu estación |
-| | [Eficiencia - explicación](Efficiency-Explanation-es) | Documento paso a paso sobre cómo se calcula la eficiencia, exportable a Word |
+| | [Explicación del cálculo de la eficiencia](Efficiency-Explanation-es) | Documento paso a paso sobre cómo se calcula la eficiencia, exportable a Word |
 
 Encima de las pestañas hay tres filas de controles (tu locator, corresponsal, banda, antena, altura de las estelas, hora); ver [Primeros pasos](Getting-Started-es). El botón **Controles** las pliega; el idioma y el esquema de colores se eligen arriba a la derecha; ver [Ajustes y carpeta de datos](Settings-and-Data-Folder-es).
 

@@ -6,7 +6,7 @@
 
 [![Kilder](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-Fanen **Kilder** opregner alle de værker, YA-MS bygger på, grupperet som nedenfor (teksten kan markeres, så du kan kopiere referencerne). De samme kilder, nummereret, afslutter beregningsmanualen (`doc/YA-MS_manuale_calcoli.docx`) og dokumentet [Effektivitet - forklaring](Efficiency-Explanation-da).
+Fanen **Kilder** opregner alle de værker, YA-MS bygger på, grupperet som nedenfor (teksten kan markeres, så du kan kopiere referencerne). De samme kilder, nummereret, afslutter beregningsmanualen (`doc/YA-MS_manuale_calcoli.docx`) og dokumentet [Forklaring af effektivitetsberegningen](Efficiency-Explanation-da).
 
 ## HOVEDKILDE
 

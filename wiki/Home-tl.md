@@ -39,7 +39,7 @@ Mula bersyon 1.6, may mga **sub-tab** ang mga pangunahing tab (isang mas mapusya
 | [Mapa ng grid square](Grid-Square-Map-tl) | – | Mga nakontak at kumpirmadong Maidenhead grid square mula sa isang ADIF file, isang tab bawat banda |
 | **Mga teknikal na dokumento** | [Mga sanggunian](Sources-tl) | Lahat ng sanggunian; ang pangunahin ay ang artikulong Cerrotta–Sartori |
 | | [Mapa ng mga radar sa Europa](European-Radar-Map-tl) | Kung nasaan ang Collm, Sodankylä, GRAVES at CMOR kaugnay ng iyong istasyon |
-| | [Episyensya - paliwanag](Efficiency-Explanation-tl) | Hakbang-hakbang na dokumento kung paano kinakalkula ang episyensya, maaaring i-export sa Word |
+| | [Paliwanag ng pagkalkula ng kahusayan](Efficiency-Explanation-tl) | Hakbang-hakbang na dokumento kung paano kinakalkula ang episyensya, maaaring i-export sa Word |
 
 Sa itaas ng mga tab ay may tatlong hanay ng mga kontrol (ang iyong locator, DX station, banda, antenna, taas ng bakas, oras); tingnan ang [Pagsisimula](Getting-Started-tl). Itinitiklop ang mga ito ng button na **Mga kontrol**, at pinipili sa kanang itaas ang wika at scheme ng kulay; tingnan ang [Mga setting at folder ng datos](Settings-and-Data-Folder-tl).
 

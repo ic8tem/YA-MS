@@ -6,7 +6,7 @@
 
 [![Sumber](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-Tab **Sumber** mencantumkan setiap karya yang menjadi dasar YA-MS, dikelompokkan seperti di bawah ini (teksnya dapat diseleksi, sehingga referensinya bisa Anda salin). Sumber yang sama, bernomor, menutup manual perhitungan (`doc/YA-MS_manuale_calcoli.docx`) dan dokumen [Efisiensi - penjelasan](Efficiency-Explanation-id).
+Tab **Sumber** mencantumkan setiap karya yang menjadi dasar YA-MS, dikelompokkan seperti di bawah ini (teksnya dapat diseleksi, sehingga referensinya bisa Anda salin). Sumber yang sama, bernomor, menutup manual perhitungan (`doc/YA-MS_manuale_calcoli.docx`) dan dokumen [Penjelasan perhitungan efisiensi](Efficiency-Explanation-id).
 
 ## SUMBER UTAMA
 

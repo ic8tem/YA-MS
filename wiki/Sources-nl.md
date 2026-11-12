@@ -6,7 +6,7 @@
 
 [![Bronnen](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-3_1.png)
 
-Het tabblad **Bronnen** somt elk werk op waarop YA-MS is gebouwd, gegroepeerd zoals hieronder (de tekst is selecteerbaar, zodat je de referenties kunt kopiëren). Dezelfde bronnen, genummerd, sluiten de rekenhandleiding (`doc/YA-MS_manuale_calcoli.docx`) en het document [Efficiëntie - uitleg](Efficiency-Explanation-nl) af.
+Het tabblad **Bronnen** somt elk werk op waarop YA-MS is gebouwd, gegroepeerd zoals hieronder (de tekst is selecteerbaar, zodat je de referenties kunt kopiëren). Dezelfde bronnen, genummerd, sluiten de rekenhandleiding (`doc/YA-MS_manuale_calcoli.docx`) en het document [Uitleg van de rendementsberekening](Efficiency-Explanation-nl) af.
 
 ## HOOFDBRON
 

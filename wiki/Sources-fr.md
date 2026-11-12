@@ -6,7 +6,7 @@
 
 [![Sources](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-L'onglet **Sources** énumère tous les travaux sur lesquels repose YA-MS, regroupés comme ci-dessous (le texte est sélectionnable, vous pouvez donc copier les références). Les mêmes sources, numérotées, terminent le manuel de calcul (`doc/YA-MS_manuale_calcoli.docx`) et le document [Efficacité - explication](Efficiency-Explanation-fr).
+L'onglet **Sources** énumère tous les travaux sur lesquels repose YA-MS, regroupés comme ci-dessous (le texte est sélectionnable, vous pouvez donc copier les références). Les mêmes sources, numérotées, terminent le manuel de calcul (`doc/YA-MS_manuale_calcoli.docx`) et le document [Explication du calcul de l'efficacité](Efficiency-Explanation-fr).
 
 ## SOURCE PRINCIPALE
 

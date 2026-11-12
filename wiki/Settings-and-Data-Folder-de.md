@@ -59,7 +59,7 @@ Ein Wechsel von Sprache oder Farbschema speichert die Einstellungen und **baut d
 
 Beim ersten Start verwendet YA-MS die **Systemsprache**, wenn sie eine dieser Sprachen ist, sonst Italienisch. Zahlen und Datumsangaben folgen der gewählten Sprache (z. B. Dezimalpunkt im Englischen, Komma im Italienischen und Deutschen). Texte, die in einer Übersetzungsdatei fehlen, werden auf Italienisch angezeigt. Unter Linux brauchen Chinesisch, Japanisch, Koreanisch, Arabisch, Hebräisch, Urdu, Hindi und Bengalisch passende Schriften (z. B. die Noto-Familien): siehe [Fehlerbehebung](Troubleshooting-FAQ-de#linux-japanischer-text-zeigt-kästchen).
 
-Das Dokument [Effektivität - Erklärung](Efficiency-Explanation-de) folgt der Sprache der Oberfläche; das Berechnungshandbuch liegt in `doc/` (Italienisch) und `doc/manuali/` (die übrigen 35 Sprachen).
+Das Dokument [Erklärung der Wirkungsgradberechnung](Efficiency-Explanation-de) folgt der Sprache der Oberfläche; das Berechnungshandbuch liegt in `doc/` (Italienisch) und `doc/manuali/` (die übrigen 35 Sprachen).
 
 ## Farbschemata
 

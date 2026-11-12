@@ -1,10 +1,10 @@
 [English](Efficiency-Explanation) · [Italiano](Efficiency-Explanation-it) · [Deutsch](Efficiency-Explanation-de) · [Nederlands](Efficiency-Explanation-nl) · [Français](Efficiency-Explanation-fr) · [Español](Efficiency-Explanation-es) · [Português](Efficiency-Explanation-pt) · [Português (Brasil)](Efficiency-Explanation-pt-br) · [Dansk](Efficiency-Explanation-da) · [Norsk](Efficiency-Explanation-nb) · [Svenska](Efficiency-Explanation-sv) · [Íslenska](Efficiency-Explanation-is) · [Eesti](Efficiency-Explanation-et) · [Lietuvių](Efficiency-Explanation-lt) · [Latviešu](Efficiency-Explanation-lv) · [Polski](Efficiency-Explanation-pl) · [Čeština](Efficiency-Explanation-cs) · [Magyar](Efficiency-Explanation-hu) · [Română](Efficiency-Explanation-ro) · [Ελληνικά](Efficiency-Explanation-el) · [Русский](Efficiency-Explanation-ru) · [Українська](Efficiency-Explanation-uk) · [Türkçe](Efficiency-Explanation-tr) · **Afrikaans** · [العربية](Efficiency-Explanation-ar) · [עברית](Efficiency-Explanation-he) · [اردو](Efficiency-Explanation-ur) · [हिन्दी](Efficiency-Explanation-hi) · [বাংলা](Efficiency-Explanation-bn) · [ไทย](Efficiency-Explanation-th) · [Bahasa Indonesia](Efficiency-Explanation-id) · [Tagalog](Efficiency-Explanation-tl) · [日本語](Efficiency-Explanation-ja) · [한국어](Efficiency-Explanation-ko) · [中文](Efficiency-Explanation-zh) · [中文 (繁體)](Efficiency-Explanation-zh-tw)
 
-# Doeltreffendheid - verduideliking
+# Verduideliking van die doeltreffendheidsberekening
 
-*Oortjie: Tegniese dokumente › Doeltreffendheid - verduideliking.*
+*Oortjie: Tegniese dokumente › Verduideliking van die doeltreffendheidsberekening.*
 
-[![Doeltreffendheid - verduideliking](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
+[![Verduideliking van die doeltreffendheidsberekening](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_3.png)
 
 'n Tegniese dokument, *"Come YA-MS calcola l'efficienza di uno sciame"* (Hoe YA-MS die doeltreffendheid van 'n swerm bereken), wat binne die program as 'n ligte bladsy gewys word. Dit verduidelik **stap vir stap** hoe die doeltreffendheid verkry word, en sê vir elke stap **waar dit vandaan kom**. Die program wys dit **in die koppelvlaktaal** (al 36 tale), net soos die berekeningshandleiding; hierdie wiki gee die inhoud ook in [Berekening van doeltreffendheid](Efficiency-Calculation-af#die-model) en [Geometrie en padverlies](Geometry-and-Path-Loss-af).
 

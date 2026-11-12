@@ -59,7 +59,7 @@ Når du skifter sprog eller tema, gemmes indstillingerne, og **vinduet genopbygg
 
 Ved første opstart bruger YA-MS **systemets sprog**, hvis det er et af disse, ellers italiensk. Tal og datoer følger det valgte sprog (fx decimalpunktum på engelsk, komma på italiensk og tysk). Tekst, der mangler i en oversættelsesfil, vises på italiensk. På Linux kræver kinesisk, japansk, koreansk, arabisk, hebraisk, urdu, hindi og bengali passende skrifttyper (fx Noto-familierne): se [Fejlfinding](Troubleshooting-FAQ-da#linux-japansk-tekst-vises-som-firkanter).
 
-Dokumentet [Effektivitet - forklaring](Efficiency-Explanation-da) følger brugerfladens sprog; beregningsmanualen ligger i `doc/` (italiensk) og `doc/manuali/` (de øvrige 35 sprog).
+Dokumentet [Forklaring af effektivitetsberegningen](Efficiency-Explanation-da) følger brugerfladens sprog; beregningsmanualen ligger i `doc/` (italiensk) og `doc/manuali/` (de øvrige 35 sprog).
 
 ## Farveskemaer
 

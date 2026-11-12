@@ -59,7 +59,7 @@ Kapag pinalitan ang wika o tema, sine-save ang mga setting at **muling binubuo a
 
 Sa unang pagsisimula, ginagamit ng YA-MS ang **wika ng sistema** kung isa ito sa mga ito, kung hindi ay Italyano. Sumusunod sa napiling wika ang mga numero at petsa (hal. tuldok bilang decimal sa Ingles, kuwit sa Italyano at Aleman). Anumang tekstong nawawala sa isang file ng salin ay ipinapakita sa Italyano. Sa Linux, kailangan ng angkop na font (hal. ang mga pamilyang Noto) ang Tsino, Hapones, Koreano, Arabe, Hebreo, Urdu, Hindi at Bengali: tingnan ang [Pag-troubleshoot](Troubleshooting-FAQ-tl#linux-lumalabas-na-mga-kahon-ang-tekstong-hapones).
 
-Sumusunod sa wika ng interface ang dokumentong [Episyensya - paliwanag](Efficiency-Explanation-tl); ang manwal ng kalkulasyon ay nasa `doc/` (Italyano) at `doc/manuali/` (ang iba pang 35 wika).
+Sumusunod sa wika ng interface ang dokumentong [Paliwanag ng pagkalkula ng kahusayan](Efficiency-Explanation-tl); ang manwal ng kalkulasyon ay nasa `doc/` (Italyano) at `doc/manuali/` (ang iba pang 35 wika).
 
 ## Mga scheme ng kulay
 

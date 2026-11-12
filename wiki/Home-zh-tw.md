@@ -39,7 +39,7 @@
 | [方格地圖](Grid-Square-Map-zh-tw) | – | 根據 ADIF 檔案顯示已通聯和已確認的 Maidenhead 方格，每個頻段一個分頁 |
 | **技術文件** | [來源](Sources-zh-tw) | 全部來源；主要來源是 Cerrotta–Sartori 的文章 |
 | | [歐洲雷達地圖](European-Radar-Map-zh-tw) | Collm、Sodankylä、GRAVES 和 CMOR 相對於本台的位置 |
-| | [效率 - 說明](Efficiency-Explanation-zh-tw) | 逐步說明效率如何計算的文件，可匯出為 Word |
+| | [效率計算說明](Efficiency-Explanation-zh-tw) | 逐步說明效率如何計算的文件，可匯出為 Word |
 
 分頁上方有三列控制項（本台網格座標、對方電台、頻段、天線、餘跡高度、時間），請參閱[入門](Getting-Started-zh-tw)。**控制**按鈕可將其收合；介面語言和配色方案在右上角選擇，請參閱[設定與資料資料夾](Settings-and-Data-Folder-zh-tw)。
 

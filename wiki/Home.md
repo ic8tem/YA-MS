@@ -39,7 +39,7 @@ Since version 1.6 the main tabs have **sub-tabs** (a lighter row under the main 
 | [Grid square map](Grid-Square-Map) | – | Worked and confirmed Maidenhead squares from an ADIF file, one tab per band |
 | **Technical documents** | [Sources](Sources) | All sources; the main one is the Cerrotta–Sartori article |
 | | [Map of European radars](European-Radar-Map) | Where Collm, Sodankylä, GRAVES and CMOR are relative to your station |
-| | [Efficiency - explanation](Efficiency-Explanation) | Step-by-step document on how the efficiency is computed, exportable to Word |
+| | [Explanation of the efficiency calculation](Efficiency-Explanation) | Step-by-step document on how the efficiency is computed, exportable to Word |
 
 Above the tabs there are three rows of controls (your locator, DX station, band, antenna, trail height, time); see [Getting started](Getting-Started). The **Controls** button folds them away, and the language and colour scheme are chosen at the top right; see [Settings and data folder](Settings-and-Data-Folder).
 

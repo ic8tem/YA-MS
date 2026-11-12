@@ -6,7 +6,7 @@
 
 [![Källor](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-3_1.png)
 
-Fliken **Källor** listar alla verk som YA-MS bygger på, grupperade enligt nedan (texten är markerbar, så att du kan kopiera referenserna). Samma källor, numrerade, avslutar beräkningshandboken (`doc/YA-MS_manuale_calcoli.docx`) och dokumentet [Effektivitet - förklaring](Efficiency-Explanation-sv).
+Fliken **Källor** listar alla verk som YA-MS bygger på, grupperade enligt nedan (texten är markerbar, så att du kan kopiera referenserna). Samma källor, numrerade, avslutar beräkningshandboken (`doc/YA-MS_manuale_calcoli.docx`) och dokumentet [Förklaring av effektivitetsberäkningen](Efficiency-Explanation-sv).
 
 ## HUVUDKÄLLA
 

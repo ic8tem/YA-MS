@@ -39,7 +39,7 @@ Dalla versione 1.6 le linguette principali hanno delle **sotto-linguette** (una 
 | [Mappa quadrati](Grid-Square-Map-it) | – | Quadrati Maidenhead lavorati e confermati da un file ADIF, una linguetta per banda |
 | **Documenti tecnici** | [Fonti](Sources-it) | Tutte le fonti; la principale è l'articolo Cerrotta–Sartori |
 | | [Mappa dei radar europei](European-Radar-Map-it) | Dove si trovano Collm, Sodankylä, GRAVES e CMOR rispetto alla tua stazione |
-| | [Efficienza - spiegazione](Efficiency-Explanation-it) | Documento passo per passo su come si calcola l'efficienza, esportabile in Word |
+| | [Spiegazione del calcolo dell'efficienza](Efficiency-Explanation-it) | Documento passo per passo su come si calcola l'efficienza, esportabile in Word |
 
 Sopra le linguette ci sono tre righe di comandi (il tuo locator, il corrispondente, la banda, l'antenna, la quota delle scie, l'ora); vedi [Primi passi](Getting-Started-it). Il pulsante **Comandi** le ripiega, mentre la lingua e lo schema di colori si scelgono in alto a destra; vedi [Impostazioni e cartella dei dati](Settings-and-Data-Folder-it).
 

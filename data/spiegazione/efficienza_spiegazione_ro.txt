@@ -76,7 +76,9 @@ TAG|RILIEVO|Aceeași regulă apare în formula lui DH9GCD redată de DF5HC [16]:
 TAG|RILIEVO|Formula lui DH9GCD nu are o sursă primară publicată: combină factorul sin El (numărul și ionizarea dârelor) cu un factor cos El care reprezintă depărtarea punctului specular de centrul traseului pe măsură ce radiantul urcă. Calculată cu radiantul văzut din punctul median, cum face MS-Soft [25], reproduce tabelul MS-Soft pentru KP30HV-JO52MM (1324 km, Quadrantide, 4/1/2001) în limita a 4 puncte între 16° și 48° de elevație și în limita a 16 puncte până la 64°, cu același maxim la 13 UT (96 % față de 92 %). Rămâne un termen de comparație.
 H1|6. De la punctul individual la eficiență
 H2|6.1 Punctele de reflexie
-TAG|SCELTA|Programul împarte stratul E în puncte la fiecare 15 km și le păstrează doar pe cele pe care ambele stații le văd deasupra elevației minime a lobului.
+TAG|SCELTA|Programul împarte stratul E în puncte la fiecare 15 km și le păstrează pe cele pe care ambele stații le văd deasupra orizontului. Cu căsuța „diagrama antenei” activată (implicit), fiecare punct este ponderat cu câștigul vertical al celor două antene: o directivă fixată la 0° are totuși lobul principal la câteva grade deasupra orizontului din cauza reflexiei pe sol, iar „Elevația lobului” este elevația e0 a acestui maxim. Cu e elevația punctului văzută de la o stație și θV lățimea verticală a lobului la −3 dB (paragraful 3.5):
+EQ|g(e) = 10^(−1,2·(e/θV)²) · sin²(π/2 · sin e / sin e0) pentru e < e0;   g(e) = 10^(−1,2·(e/θV)²) pentru e ≥ e0;   ponderea punctului × g(e1) · g(e2)
+TAG|SCELTA|Sub maxim, factorul solului aduce câștigul la zero la orizont; lobul are un prag de −20 dB. Un punct jos contează mai puțin, dar contează: pe un traseu lung eficiența nu dispare. Cu căsuța dezactivată elevația lobului este o limită strictă, ca până la versiunea 1.8.0: punctele văzute sub e0 de oricare dintre stații nu contează, iar pe un traseu lung cu lobul la câteva grade toate eficiențele pot fi 0 (JN70CN – JO76QP, 1791 km, lob la 3°, urme la 88,5 km: niciun punct).
 H2|6.2 Ponderea fiecărui punct
 TAG|FONTE|Puterea unei dâre subdense (McKinley [8]; ITU-R P.843 [24]) crește cu λ³ și scade cu distanțele R1, R2 față de stații; φ este jumătatea unghiului de împrăștiere, β unghiul dintre dâră și planul care conține cele două stații și punctul:
 EQ|pondere = 1 / [ R1 · R2 · (R1 + R2) · (1 − cos²β · sin²φ) ]
@@ -135,7 +137,7 @@ TAG|RILIEVO|Incertitudinea razei inițiale: Stober et al. [30], cu radarul CMOR 
 TAG|SCELTA|Programul oferă alegerea „Raza inițială a dârei” în sub-fila Geometrie și atenuare: dublul valorii ITU (implicit, prudent, ca măsurătorile lui Stober et al.), ITU-R P.843, exclus. Dublând r0, factorul a1 în dB se înmulțește cu 4: pe 1000 km 0,8 dB la 50 MHz, 2,4 dB la 144 MHz și 5,6 dB la 432 MHz (11,6 dB la 600 km). Măsurătorile CMOR sunt la frecvențe mai joase și la 85–95 km: folosirea lor la 432 MHz, unde ecourile vin de la circa 79 km, este o extrapolare.
 H1|9. Limite cunoscute
 LI|Modelul consideră numai dârele subdense. Cele supradense (burst-urile lungi) și fondul sporadic nu intră în eficiență; fondul sporadic este reprezentat de fluxul radar.
-LI|În calculul eficienței antenele sunt considerate izotrope; lobul real servește doar pentru controlul punctelor Hot.
+LI|Lobul vertical este un model simplu: antenă orizontală, lob gaussian de lățime θV la −3 dB (Kraus) și factorul solului până la primul maxim; lobii următori, înălțimea reală a antenei și terenul din jur nu sunt luați în calcul.
 LI|Derivele radiantului și coeficienții B ai profilului de activitate sunt valori de lucru.
 LI|Procentele trebuie comparate cu MCG_MS, MS-Soft și cu observațiile în bandă.
 H1|10. Surse

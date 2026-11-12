@@ -1,10 +1,10 @@
 [English](Efficiency-Explanation) · [Italiano](Efficiency-Explanation-it) · [Deutsch](Efficiency-Explanation-de) · [Nederlands](Efficiency-Explanation-nl) · [Français](Efficiency-Explanation-fr) · [Español](Efficiency-Explanation-es) · [Português](Efficiency-Explanation-pt) · [Português (Brasil)](Efficiency-Explanation-pt-br) · [Dansk](Efficiency-Explanation-da) · [Norsk](Efficiency-Explanation-nb) · [Svenska](Efficiency-Explanation-sv) · [Íslenska](Efficiency-Explanation-is) · [Eesti](Efficiency-Explanation-et) · [Lietuvių](Efficiency-Explanation-lt) · [Latviešu](Efficiency-Explanation-lv) · [Polski](Efficiency-Explanation-pl) · [Čeština](Efficiency-Explanation-cs) · [Magyar](Efficiency-Explanation-hu) · [Română](Efficiency-Explanation-ro) · [Ελληνικά](Efficiency-Explanation-el) · [Русский](Efficiency-Explanation-ru) · [Українська](Efficiency-Explanation-uk) · [Türkçe](Efficiency-Explanation-tr) · [Afrikaans](Efficiency-Explanation-af) · [العربية](Efficiency-Explanation-ar) · [עברית](Efficiency-Explanation-he) · [اردو](Efficiency-Explanation-ur) · [हिन्दी](Efficiency-Explanation-hi) · [বাংলা](Efficiency-Explanation-bn) · [ไทย](Efficiency-Explanation-th) · [Bahasa Indonesia](Efficiency-Explanation-id) · [Tagalog](Efficiency-Explanation-tl) · **日本語** · [한국어](Efficiency-Explanation-ko) · [中文](Efficiency-Explanation-zh) · [中文 (繁體)](Efficiency-Explanation-zh-tw)
 
-# 効率 - 解説
+# 効率の計算の説明
 
-*タブ: 技術資料 › 効率 - 解説。*
+*タブ: 技術資料 › 効率の計算の説明。*
 
-[![効率 - 解説](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3_3.png)
+[![効率の計算の説明](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3_3.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-3_3.png)
 
 技術文書 *"Come YA-MS calcola l'efficienza di uno sciame"* (YA-MS は流星群の効率をどう計算するか) を、プログラム内に明るいページとして表示します。効率がどのように求められるかを**順を追って**説明し、各手順が**何に基づくか**を示しています。プログラムは計算マニュアルと同様に、この文書を**表示言語で** (全 36 言語) 表示します。この wiki でも、その内容を [効率の計算](Efficiency-Calculation-ja#モデル) と [幾何と損失](Geometry-and-Path-Loss-ja) で紹介しています。
 

@@ -6,7 +6,7 @@
 
 [![Fonti](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/it-3_1.png)](https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/it-3_1.png)
 
-La linguetta **Fonti** elenca tutti i lavori su cui si basa YA-MS, raggruppati come qui sotto (il testo è selezionabile, così puoi copiare i riferimenti). Le stesse fonti, numerate, chiudono il manuale dei calcoli (`doc/YA-MS_manuale_calcoli.docx`) e il documento [Efficienza - spiegazione](Efficiency-Explanation-it).
+La linguetta **Fonti** elenca tutti i lavori su cui si basa YA-MS, raggruppati come qui sotto (il testo è selezionabile, così puoi copiare i riferimenti). Le stesse fonti, numerate, chiudono il manuale dei calcoli (`doc/YA-MS_manuale_calcoli.docx`) e il documento [Spiegazione del calcolo dell'efficienza](Efficiency-Explanation-it).
 
 ## FONTE PRINCIPALE
 

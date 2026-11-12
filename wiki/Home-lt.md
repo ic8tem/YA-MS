@@ -34,12 +34,12 @@ Nuo 1.6 versijos pagrindinės kortelės turi **vidines korteles** (šviesesnė e
 | | [Geometrija ir slopinimas](Geometry-and-Path-Loss-lt) | Atstumas, vidurio taškas, elevacija, Hot A / Hot B, bendrosios zonos ribos, slopinimas 28–432 MHz, ryšio biudžetas, antena |
 | | [Efektyvumo skaičiavimas](Efficiency-Calculation-lt) | Apžvalgos skydeliai, kiekvieno srauto valandinis efektyvumas su puse A/B, trasos indeksas, DH9GCD palyginimas, grafikas |
 | | [Eksperimentinės prognozės](Experimental-Forecasts-lt) | Collm srautas, perskaičiuotas į 144 MHz (ar bet kurį dažnį) su λ^k ir stoties koeficientu K, 24 valandų prognozė, palyginimas su RMOB |
-| **Techniniai dokumentai** | [Šaltiniai](Sources-lt) | Visi šaltiniai; pagrindinis – Cerrotta–Sartori straipsnis |
-| | [Europos radarų žemėlapis](European-Radar-Map-lt) | Kur yra Collm, Sodankylä, GRAVES ir CMOR jūsų stoties atžvilgiu |
-| | [Efektyvumas - paaiškinimas](Efficiency-Explanation-lt) | Dokumentas žingsnis po žingsnio apie tai, kaip skaičiuojamas efektyvumas, eksportuojamas į Word |
 | [Srautai realiuoju laiku](Live-Showers-lt) | – | Global Meteor Network išmatuoti ZHR ir CMOR radiantų žemėlapiai |
 | [Srautai](Showers-lt) | – | IMO katalogas su kitu maksimumu (IMO data ir laikas arba apskaičiuotas) |
 | [Kvadratų žemėlapis](Grid-Square-Map-lt) | – | Iš ADIF failo nuskaityti dirbti ir patvirtinti Maidenhead kvadratai, kiekviena juosta atskiroje kortelėje |
+| **Techniniai dokumentai** | [Šaltiniai](Sources-lt) | Visi šaltiniai; pagrindinis – Cerrotta–Sartori straipsnis |
+| | [Europos radarų žemėlapis](European-Radar-Map-lt) | Kur yra Collm, Sodankylä, GRAVES ir CMOR jūsų stoties atžvilgiu |
+| | [Efektyvumas - paaiškinimas](Efficiency-Explanation-lt) | Dokumentas žingsnis po žingsnio apie tai, kaip skaičiuojamas efektyvumas, eksportuojamas į Word |
 
 Virš kortelių yra trys valdymo eilutės (jūsų lokatorius, korespondentas, juosta, antena, pėdsakų aukštis, laikas); žr. [Pradžia](Getting-Started-lt). Mygtukas **Valdymas** jas suskleidžia, o kalba ir spalvų schema pasirenkamos viršuje dešinėje; žr. [Nustatymai ir duomenų aplankas](Settings-and-Data-Folder-lt).
 

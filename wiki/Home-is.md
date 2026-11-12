@@ -34,12 +34,12 @@ Frá útgáfu 1.6 hafa aðalfliparnir **undirflipa** (ljósari röð undir aðal
 | | [Rúmfræði og deyfing](Geometry-and-Path-Loss-is) | Fjarlægð, miðpunktur, hæðarhorn, Hot A / Hot B, mörk sameiginlega svæðisins, leiðardeyfing 28–432 MHz, aflreikningur, loftnet |
 | | [Útreikningur nýtni](Efficiency-Calculation-is) | Yfirlitsspjöld, nýtni hverrar drífu klukkustund fyrir klukkustund með hlið A/B, leiðarstuðull, samanburður við DH9GCD, graf |
 | | [Tilraunaspár](Experimental-Forecasts-is) | Flæði frá Collm kvarðað í 144 MHz (eða hvaða tíðni sem er) með λ^k og stöðvarstuðli K, spá fyrir 24 klukkustundir, samanburður við RMOB |
-| **Tæknileg skjöl** | [Heimildir](Sources-is) | Allar heimildir; sú helsta er grein Cerrotta–Sartori |
-| | [Kort af evrópskum ratsjám](European-Radar-Map-is) | Hvar Collm, Sodankylä, GRAVES og CMOR eru miðað við þína stöð |
-| | [Nýtni - skýringar](Efficiency-Explanation-is) | Skjal sem sýnir skref fyrir skref hvernig nýtnin er reiknuð, hægt að flytja út í Word |
 | [Drífur í beinni](Live-Showers-is) | – | Mælt ZHR frá Global Meteor Network og kort CMOR af geislapunktum |
 | [Drífur](Showers-is) | – | Skrá IMO með næsta hámarki (dagsetning og tími IMO eða reiknað) |
 | [Reitakort](Grid-Square-Map-is) | – | Unnir og staðfestir Maidenhead-reitir úr ADIF-skrá, einn flipi fyrir hvert tíðnisvið |
+| **Tæknileg skjöl** | [Heimildir](Sources-is) | Allar heimildir; sú helsta er grein Cerrotta–Sartori |
+| | [Kort af evrópskum ratsjám](European-Radar-Map-is) | Hvar Collm, Sodankylä, GRAVES og CMOR eru miðað við þína stöð |
+| | [Nýtni - skýringar](Efficiency-Explanation-is) | Skjal sem sýnir skref fyrir skref hvernig nýtnin er reiknuð, hægt að flytja út í Word |
 
 Fyrir ofan flipana eru þrjár raðir stýringa (þinn locator, mótstöð, tíðnisvið, loftnet, hæð slóða, tími); sjá [Fyrstu skrefin](Getting-Started-is). Hnappurinn **Stýringar** fellir þær saman, og tungumál og litaþema eru valin efst til hægri; sjá [Stillingar og gagnamappa](Settings-and-Data-Folder-is).
 

@@ -873,28 +873,7 @@ namespace YAMS
 
             EndGroup();
 
-            // ===== 3. Documenti tecnici: fonti, mappa dei radar europei, efficienza - spiegazione
-            Group(Lang.T("Documenti tecnici"));
-
-            // --- Fonti
-            DockPanel p6 = Page(Lang.T("Fonti"));
-            txtSources = new SelectableTextBlock { FontSize = 13.5, Foreground = Pal.B(Pal.Fore), TextWrapping = TextWrapping.Wrap, Text = SourcesText() };
-            p6.Children.Add(new ScrollViewer
-            {
-                HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled,
-                VerticalScrollBarVisibility = ScrollBarVisibility.Auto,
-                Content = new Border { Padding = new Thickness(14, 10), Child = txtSources }
-            });
-
-            // --- Mappa dei radar europei (ex "Mappa delle fonti", MainWindow.MappaFonti.cs)
-            BuildSourcesMapTab();
-
-            // --- Efficienza - spiegazione (MainWindow.Spiegazione.cs)
-            BuildExplainTab();
-
-            EndGroup();
-
-            // ===== le altre linguette, nell'ordine di prima
+            // ===== 3. le linguette senza sottolinguette
             // --- Sciami in diretta: GMN e CMOR (MainWindow.Diretta.cs)
             BuildLiveTab();
 
@@ -922,6 +901,27 @@ namespace YAMS
 
             // --- Mappa quadrati da ADIF (MainWindow.Grid.cs)
             BuildGridTab();
+
+            // ===== ultima: Documenti tecnici: fonti, mappa dei radar europei, efficienza - spiegazione
+            Group(Lang.T("Documenti tecnici"));
+
+            // --- Fonti
+            DockPanel p6 = Page(Lang.T("Fonti"));
+            txtSources = new SelectableTextBlock { FontSize = 13.5, Foreground = Pal.B(Pal.Fore), TextWrapping = TextWrapping.Wrap, Text = SourcesText() };
+            p6.Children.Add(new ScrollViewer
+            {
+                HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled,
+                VerticalScrollBarVisibility = ScrollBarVisibility.Auto,
+                Content = new Border { Padding = new Thickness(14, 10), Child = txtSources }
+            });
+
+            // --- Mappa dei radar europei (ex "Mappa delle fonti", MainWindow.MappaFonti.cs)
+            BuildSourcesMapTab();
+
+            // --- Efficienza - spiegazione (MainWindow.Spiegazione.cs)
+            BuildExplainTab();
+
+            EndGroup();
 
         }
 

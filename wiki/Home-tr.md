@@ -34,12 +34,12 @@ Sürüm 1.6'dan beri ana sekmelerin **alt sekmeleri** vardır (ana sıranın alt
 | | [Geometri ve yol kaybı](Geometry-and-Path-Loss-tr) | Mesafe, orta nokta, elevasyon, Hot A / Hot B, ortak bölge sınırları, 28–432 MHz yol kaybı, bağlantı bütçesi, anten |
 | | [Verim hesabı](Efficiency-Calculation-tr) | Bir bakışta kartlar, her yağmurun A/B taraflı saatlik verimi, yol endeksi, DH9GCD karşılaştırması, grafik |
 | | [Deneysel tahminler](Experimental-Forecasts-tr) | λ^k ve istasyon katsayısı K ile 144 MHz'e (ya da herhangi bir frekansa) ölçeklenmiş Collm akısı, 24 saatlik tahmin, RMOB karşılaştırması |
-| **Teknik belgeler** | [Kaynaklar](Sources-tr) | Tüm kaynaklar; ana kaynak Cerrotta–Sartori makalesidir |
-| | [Avrupa radarları haritası](European-Radar-Map-tr) | Collm, Sodankylä, GRAVES ve CMOR'un istasyonunuza göre konumu |
-| | [Verim - açıklama](Efficiency-Explanation-tr) | Verimin nasıl hesaplandığını adım adım anlatan, Word'e aktarılabilen belge |
 | [Canlı yağmurlar](Live-Showers-tr) | – | Global Meteor Network'ün ölçtüğü ZHR ve CMOR radyant haritaları |
 | [Yağmurlar](Showers-tr) | – | Sonraki tepeyle birlikte IMO kataloğu (IMO tarih ve saati ya da hesaplanmış) |
 | [Kare haritası](Grid-Square-Map-tr) | – | Bir ADIF dosyasından çalışılmış ve onaylanmış Maidenhead kareleri, her bant için bir sekme |
+| **Teknik belgeler** | [Kaynaklar](Sources-tr) | Tüm kaynaklar; ana kaynak Cerrotta–Sartori makalesidir |
+| | [Avrupa radarları haritası](European-Radar-Map-tr) | Collm, Sodankylä, GRAVES ve CMOR'un istasyonunuza göre konumu |
+| | [Verim - açıklama](Efficiency-Explanation-tr) | Verimin nasıl hesaplandığını adım adım anlatan, Word'e aktarılabilen belge |
 
 Sekmelerin üstünde üç sıra kontrol vardır (lokatörünüz, karşı istasyon, bant, anten, iz yüksekliği, saat); bkz. [İlk adımlar](Getting-Started-tr). **Kontroller** düğmesi bunları katlar; dil ve renk şeması sağ üstten seçilir; bkz. [Ayarlar ve veri klasörü](Settings-and-Data-Folder-tr).
 

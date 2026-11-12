@@ -34,12 +34,12 @@ Alates versioonist 1.6 on põhisakkidel **alamsakid** (heledam rida põhirea all
 | | [Geomeetria ja sumbumine](Geometry-and-Path-Loss-et) | Kaugus, keskpunkt, elevatsioon, Hot A / Hot B, ühisala piirid, sumbumine 28–432 MHz, lingi eelarve, antenn |
 | | [Efektiivsuse arvutus](Efficiency-Calculation-et) | Ülevaatekaardid, iga meteoorivoolu tunnipõhine efektiivsus koos poolega A/B, trassi indeks, DH9GCD võrdlus, graafik |
 | | [Eksperimentaalsed prognoosid](Experimental-Forecasts-et) | Collmi voog teisendatuna 144 MHz-le (või mis tahes sagedusele) λ^k ja jaama teguriga K, 24 tunni prognoos, RMOB-i võrdlus |
-| **Tehnilised dokumendid** | [Allikad](Sources-et) | Kõik allikad; peamine on Cerrotta–Sartori artikkel |
-| | [Euroopa radarite kaart](European-Radar-Map-et) | Kus Collm, Sodankylä, GRAVES ja CMOR sinu jaama suhtes asuvad |
-| | [Efektiivsus - selgitus](Efficiency-Explanation-et) | Samm-sammuline dokument efektiivsuse arvutamise kohta, eksporditav Wordi |
 | [Meteoorivoolud otse](Live-Showers-et) | – | Global Meteor Networki mõõdetud ZHR ja CMOR-i radiantide kaardid |
 | [Meteoorivoolud](Showers-et) | – | IMO kataloog järgmise maksimumiga (IMO kuupäev ja kellaaeg või arvutatud) |
 | [Ruutude kaart](Grid-Square-Map-et) | – | ADIF-failist loetud töötatud ja kinnitatud Maidenheadi ruudud, iga sagedusala oma sakil |
+| **Tehnilised dokumendid** | [Allikad](Sources-et) | Kõik allikad; peamine on Cerrotta–Sartori artikkel |
+| | [Euroopa radarite kaart](European-Radar-Map-et) | Kus Collm, Sodankylä, GRAVES ja CMOR sinu jaama suhtes asuvad |
+| | [Efektiivsus - selgitus](Efficiency-Explanation-et) | Samm-sammuline dokument efektiivsuse arvutamise kohta, eksporditav Wordi |
 
 Sakkide kohal on kolm juhtnuppude rida (sinu lokaator, korrespondent, sagedusala, antenn, jälgede kõrgus, aeg); vt [Alustamine](Getting-Started-et). Nupp **Juhtnupud** peidab need ning keel ja värviskeem valitakse paremal üleval; vt [Seaded ja andmekaust](Settings-and-Data-Folder-et).
 

@@ -34,12 +34,12 @@ Desde la versión 1.6 las pestañas principales tienen **subpestañas** (una fil
 | | [Geometría y atenuación](Geometry-and-Path-Loss-es) | Distancia, punto medio, elevación, Hot A / Hot B, límites de la zona común, atenuación del trayecto 28–432 MHz, balance del enlace, antena |
 | | [Cálculo de la eficiencia](Efficiency-Calculation-es) | Tarjetas de resumen, eficiencia horaria de cada lluvia con lado A/B, índice del trayecto, comparación con DH9GCD, gráfico |
 | | [Previsiones experimentales](Experimental-Forecasts-es) | Flujo de Collm escalado a 144 MHz (o a cualquier frecuencia) con λ^k y factor de estación K, previsión de 24 horas, comparación con RMOB |
-| **Documentos técnicos** | [Fuentes](Sources-es) | Todas las fuentes; la principal es el artículo Cerrotta–Sartori |
-| | [Mapa de los radares europeos](European-Radar-Map-es) | Dónde están Collm, Sodankylä, GRAVES y CMOR respecto a tu estación |
-| | [Eficiencia - explicación](Efficiency-Explanation-es) | Documento paso a paso sobre cómo se calcula la eficiencia, exportable a Word |
 | [Lluvias en directo](Live-Showers-es) | – | ZHR medidas por la Global Meteor Network y mapas de radiantes de CMOR |
 | [Lluvias](Showers-es) | – | Catálogo IMO con el próximo máximo (fecha y hora IMO o calculada) |
 | [Mapa de cuadrículas](Grid-Square-Map-es) | – | Cuadrículas Maidenhead trabajadas y confirmadas a partir de un archivo ADIF, una pestaña por banda |
+| **Documentos técnicos** | [Fuentes](Sources-es) | Todas las fuentes; la principal es el artículo Cerrotta–Sartori |
+| | [Mapa de los radares europeos](European-Radar-Map-es) | Dónde están Collm, Sodankylä, GRAVES y CMOR respecto a tu estación |
+| | [Eficiencia - explicación](Efficiency-Explanation-es) | Documento paso a paso sobre cómo se calcula la eficiencia, exportable a Word |
 
 Encima de las pestañas hay tres filas de controles (tu locator, corresponsal, banda, antena, altura de las estelas, hora); ver [Primeros pasos](Getting-Started-es). El botón **Controles** las pliega; el idioma y el esquema de colores se eligen arriba a la derecha; ver [Ajustes y carpeta de datos](Settings-and-Data-Folder-es).
 

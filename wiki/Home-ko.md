@@ -34,12 +34,12 @@
 | | [기하와 경로 손실](Geometry-and-Path-Loss-ko) | 거리, 중간점, 앙각, Hot A / Hot B, 공통 영역 한계, 28–432 MHz 경로 손실, 링크 버짓, 안테나 |
 | | [효율 계산](Efficiency-Calculation-ko) | 요약 카드, 유성우별 시간별 효율과 A/B쪽, 경로 지수, DH9GCD 비교, 그래프 |
 | | [예보 실험 적용](Experimental-Forecasts-ko) | λ^k와 국 계수 K로 144 MHz(또는 임의 주파수)에 환산한 Collm 플럭스, 24시간 예보, RMOB 비교 |
-| **기술 문서** | [출처](Sources-ko) | 모든 출처. 주요 출처는 Cerrotta–Sartori 논문 |
-| | [유럽 레이더 지도](European-Radar-Map-ko) | 내 국을 기준으로 한 Collm, Sodankylä, GRAVES, CMOR의 위치 |
-| | [효율 - 설명](Efficiency-Explanation-ko) | 효율 계산 방법을 단계별로 설명한 문서. Word로 내보내기 가능 |
 | [실시간 유성우](Live-Showers-ko) | – | Global Meteor Network의 측정 ZHR과 CMOR 복사점 지도 |
 | [유성우](Showers-ko) | – | 다음 극대(IMO 날짜와 시각 또는 계산값)가 포함된 IMO 목록 |
 | [그리드 지도](Grid-Square-Map-ko) | – | ADIF 파일에서 읽은 교신·확인 Maidenhead 그리드. 밴드마다 탭 하나 |
+| **기술 문서** | [출처](Sources-ko) | 모든 출처. 주요 출처는 Cerrotta–Sartori 논문 |
+| | [유럽 레이더 지도](European-Radar-Map-ko) | 내 국을 기준으로 한 Collm, Sodankylä, GRAVES, CMOR의 위치 |
+| | [효율 - 설명](Efficiency-Explanation-ko) | 효율 계산 방법을 단계별로 설명한 문서. Word로 내보내기 가능 |
 
 탭 위에는 세 줄의 조작 항목(내 로케이터, 상대국, 밴드, 안테나, 흔적 고도, 시각)이 있습니다. [시작하기](Getting-Started-ko)를 참조하세요. **조작** 버튼으로 이를 접을 수 있고, 언어와 색 구성은 오른쪽 위에서 선택합니다. [설정과 데이터 폴더](Settings-and-Data-Folder-ko)를 참조하세요.
 

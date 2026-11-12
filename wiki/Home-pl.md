@@ -34,12 +34,12 @@ Od wersji 1.6 główne zakładki mają **podzakładki** (jaśniejszy wiersz pod 
 | | [Geometria i tłumienie trasy](Geometry-and-Path-Loss-pl) | Odległość, punkt środkowy, elewacja, Hot A / Hot B, granice strefy wspólnej, tłumienie trasy 28–432 MHz, bilans łącza, antena |
 | | [Obliczanie efektywności](Efficiency-Calculation-pl) | Karty podsumowania, godzinowa efektywność każdego roju ze stroną A/B, indeks trasy, porównanie z DH9GCD, wykres |
 | | [Prognozy eksperymentalne](Experimental-Forecasts-pl) | Strumień z Collm przeskalowany do 144 MHz (lub dowolnej częstotliwości) z λ^k i współczynnikiem stacji K, prognoza na 24 godziny, porównanie z RMOB |
-| **Dokumenty techniczne** | [Źródła](Sources-pl) | Wszystkie źródła; głównym jest artykuł Cerrotta–Sartori |
-| | [Mapa radarów europejskich](European-Radar-Map-pl) | Gdzie znajdują się Collm, Sodankylä, GRAVES i CMOR względem twojej stacji |
-| | [Efektywność - objaśnienie](Efficiency-Explanation-pl) | Dokument krok po kroku o tym, jak obliczana jest efektywność, z możliwością eksportu do Worda |
 | [Roje na żywo](Live-Showers-pl) | – | Zmierzone ZHR z Global Meteor Network i mapy radiantów CMOR |
 | [Roje](Showers-pl) | – | Katalog IMO z następnym maksimum (data i godzina wg IMO lub obliczone) |
 | [Mapa kwadratów lokatora](Grid-Square-Map-pl) | – | Zrobione i potwierdzone kwadraty Maidenhead z pliku ADIF, jedna zakładka na pasmo |
+| **Dokumenty techniczne** | [Źródła](Sources-pl) | Wszystkie źródła; głównym jest artykuł Cerrotta–Sartori |
+| | [Mapa radarów europejskich](European-Radar-Map-pl) | Gdzie znajdują się Collm, Sodankylä, GRAVES i CMOR względem twojej stacji |
+| | [Efektywność - objaśnienie](Efficiency-Explanation-pl) | Dokument krok po kroku o tym, jak obliczana jest efektywność, z możliwością eksportu do Worda |
 
 Nad zakładkami znajdują się trzy wiersze elementów sterujących (twój lokator, stacja DX, pasmo, antena, wysokość śladu, czas); zob. [Pierwsze kroki](Getting-Started-pl). Przycisk **Sterowanie** je zwija, a język i schemat kolorów wybiera się w prawym górnym rogu; zob. [Ustawienia i folder danych](Settings-and-Data-Folder-pl).
 

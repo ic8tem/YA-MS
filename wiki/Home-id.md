@@ -34,12 +34,12 @@ Sejak versi 1.6 tab utama memiliki **sub-tab** (baris yang lebih terang di bawah
 | | [Geometri dan redaman](Geometry-and-Path-Loss-id) | Jarak, titik tengah, elevasi, Hot A / Hot B, batas zona bersama, redaman lintasan 28–432 MHz, anggaran link, antena |
 | | [Perhitungan efisiensi](Efficiency-Calculation-id) | Kartu ringkas, efisiensi per jam setiap hujan meteor dengan sisi A/B, indeks lintasan, perbandingan DH9GCD, grafik |
 | | [Prakiraan eksperimental](Experimental-Forecasts-id) | Fluks Collm diskalakan ke 144 MHz (atau frekuensi apa pun) dengan λ^k dan faktor stasiun K, prakiraan 24 jam, perbandingan RMOB |
-| **Dokumen teknis** | [Sumber](Sources-id) | Semua sumber; yang utama adalah artikel Cerrotta–Sartori |
-| | [Peta radar Eropa](European-Radar-Map-id) | Letak Collm, Sodankylä, GRAVES dan CMOR relatif terhadap stasiun Anda |
-| | [Efisiensi - penjelasan](Efficiency-Explanation-id) | Dokumen langkah demi langkah tentang cara efisiensi dihitung, dapat diekspor ke Word |
 | [Hujan meteor langsung](Live-Showers-id) | – | ZHR terukur dari Global Meteor Network dan peta radian CMOR |
 | [Hujan meteor](Showers-id) | – | Katalog IMO dengan puncak berikutnya (tanggal dan jam IMO atau hasil hitungan) |
 | [Peta kotak](Grid-Square-Map-id) | – | Kotak Maidenhead yang sudah dikerjakan dan terkonfirmasi dari file ADIF, satu tab per band |
+| **Dokumen teknis** | [Sumber](Sources-id) | Semua sumber; yang utama adalah artikel Cerrotta–Sartori |
+| | [Peta radar Eropa](European-Radar-Map-id) | Letak Collm, Sodankylä, GRAVES dan CMOR relatif terhadap stasiun Anda |
+| | [Efisiensi - penjelasan](Efficiency-Explanation-id) | Dokumen langkah demi langkah tentang cara efisiensi dihitung, dapat diekspor ke Word |
 
 Di atas tab terdapat tiga baris kontrol (locator Anda, stasiun DX, band, antena, ketinggian jejak, waktu); lihat [Memulai](Getting-Started-id). Tombol **Kontrol** melipatnya, sedangkan bahasa dan skema warna dipilih di kanan atas; lihat [Pengaturan dan folder data](Settings-and-Data-Folder-id).
 

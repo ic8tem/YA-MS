@@ -34,12 +34,12 @@ Fra versjon 1.6 har hovedfanene **underfaner** (en lysere rad under hovedraden).
 | | [Geometri og demping](Geometry-and-Path-Loss-nb) | Avstand, midtpunkt, elevasjon, Hot A / Hot B, grenser for fellessonen, strekningsdemping 28–432 MHz, linkbudsjett, antenne |
 | | [Effektivitetsberegning](Efficiency-Calculation-nb) | Oversiktspaneler, effektivitet time for time for hver sverm med side A/B, strekningsindeks, sammenligning med DH9GCD, diagram |
 | | [Eksperimentelle prognoser](Experimental-Forecasts-nb) | Collm-fluks omregnet til 144 MHz (eller vilkårlig frekvens) med λ^k og stasjonsfaktor K, prognose for 24 timer, sammenligning med RMOB |
-| **Tekniske dokumenter** | [Kilder](Sources-nb) | Alle kilder; hovedkilden er artikkelen av Cerrotta–Sartori |
-| | [Kart over europeiske radarer](European-Radar-Map-nb) | Hvor Collm, Sodankylä, GRAVES og CMOR ligger i forhold til din stasjon |
-| | [Effektivitet - forklaring](Efficiency-Explanation-nb) | Dokument som trinn for trinn forklarer hvordan effektiviteten beregnes, kan eksporteres til Word |
 | [Svermer direkte](Live-Showers-nb) | – | Målt ZHR fra Global Meteor Network og radiantkart fra CMOR |
 | [Svermer](Showers-nb) | – | IMO-katalog med neste maksimum (IMOs dato og tid eller beregnet) |
 | [Rutekart](Grid-Square-Map-nb) | – | Kjørte og bekreftede Maidenhead-ruter fra en ADIF-fil, én fane per bånd |
+| **Tekniske dokumenter** | [Kilder](Sources-nb) | Alle kilder; hovedkilden er artikkelen av Cerrotta–Sartori |
+| | [Kart over europeiske radarer](European-Radar-Map-nb) | Hvor Collm, Sodankylä, GRAVES og CMOR ligger i forhold til din stasjon |
+| | [Effektivitet - forklaring](Efficiency-Explanation-nb) | Dokument som trinn for trinn forklarer hvordan effektiviteten beregnes, kan eksporteres til Word |
 
 Over fanene er det tre rader med kontroller (din lokator, motstasjon, bånd, antenne, sporhøyde, tid); se [Komme i gang](Getting-Started-nb). Knappen **Kontroller** felder dem sammen, og språk og fargeskjema velges øverst til høyre; se [Innstillinger og datamappe](Settings-and-Data-Folder-nb).
 

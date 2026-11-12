@@ -34,12 +34,12 @@ Od verze 1.6 mají hlavní karty **podkarty** (světlejší řada pod hlavní ř
 | | [Geometrie a útlum](Geometry-and-Path-Loss-cs) | Vzdálenost, střed trasy, elevace, Hot A / Hot B, meze společné zóny, útlum trasy 28–432 MHz, energetická bilance spoje, anténa |
 | | [Výpočet účinnosti](Efficiency-Calculation-cs) | Přehledové karty, hodinová účinnost každého roje se stranou A/B, index trasy, srovnání s DH9GCD, graf |
 | | [Experimentální předpovědi](Experimental-Forecasts-cs) | Tok z Collmu přepočtený na 144 MHz (nebo libovolnou frekvenci) pomocí λ^k a faktoru stanice K, předpověď na 24 hodin, srovnání s RMOB |
-| **Technické dokumenty** | [Zdroje](Sources-cs) | Všechny zdroje; hlavním je článek Cerrotta–Sartori |
-| | [Mapa evropských radarů](European-Radar-Map-cs) | Kde leží Collm, Sodankylä, GRAVES a CMOR vzhledem k vaší stanici |
-| | [Účinnost - vysvětlení](Efficiency-Explanation-cs) | Dokument krok za krokem o tom, jak se počítá účinnost, s možností exportu do Wordu |
 | [Roje živě](Live-Showers-cs) | – | Naměřené ZHR sítě Global Meteor Network a mapy radiantů CMOR |
 | [Roje](Showers-cs) | – | Katalog IMO s příštím maximem (datum a čas podle IMO nebo vypočtené) |
 | [Mapa čtverců](Grid-Square-Map-cs) | – | Navázané a potvrzené čtverce Maidenhead ze souboru ADIF, jedna karta pro každé pásmo |
+| **Technické dokumenty** | [Zdroje](Sources-cs) | Všechny zdroje; hlavním je článek Cerrotta–Sartori |
+| | [Mapa evropských radarů](European-Radar-Map-cs) | Kde leží Collm, Sodankylä, GRAVES a CMOR vzhledem k vaší stanici |
+| | [Účinnost - vysvětlení](Efficiency-Explanation-cs) | Dokument krok za krokem o tom, jak se počítá účinnost, s možností exportu do Wordu |
 
 Nad kartami jsou tři řady ovládacích prvků (váš lokátor, DX stanice, pásmo, anténa, výška stop, čas); viz [První kroky](Getting-Started-cs). Tlačítko **Ovládání** je skryje a jazyk a barevné schéma se volí vpravo nahoře; viz [Nastavení a datová složka](Settings-and-Data-Folder-cs).
 

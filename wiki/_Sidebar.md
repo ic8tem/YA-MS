@@ -19,15 +19,15 @@
 - [Efficiency calculation](Efficiency-Calculation)
 - [Experimental forecasts](Experimental-Forecasts)
 
-**Technical documents**
-- [Sources](Sources)
-- [Map of European radars](European-Radar-Map)
-- [Efficiency - explanation](Efficiency-Explanation)
-
 **Other tabs**
 - [Live showers](Live-Showers)
 - [Showers](Showers)
 - [Grid square map](Grid-Square-Map)
+
+**Technical documents**
+- [Sources](Sources)
+- [Map of European radars](European-Radar-Map)
+- [Efficiency - explanation](Efficiency-Explanation)
 
 **Topics**
 - [Settings and data folder](Settings-and-Data-Folder)

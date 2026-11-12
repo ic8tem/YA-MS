@@ -34,12 +34,12 @@ Desde a versão 1.6 os separadores principais têm **subseparadores** (uma fila 
 | | [Geometria e atenuação](Geometry-and-Path-Loss-pt) | Distância, ponto médio, elevação, Hot A / Hot B, limites da zona comum, atenuação do percurso 28–432 MHz, balanço da ligação, antena |
 | | [Cálculo da eficiência](Efficiency-Calculation-pt) | Cartões de resumo, eficiência horária de cada chuva com lado A/B, índice do percurso, comparação com DH9GCD, gráfico |
 | | [Previsões experimentais](Experimental-Forecasts-pt) | Fluxo de Collm transposto para 144 MHz (ou qualquer frequência) com λ^k e fator de estação K, previsão a 24 horas, comparação com o RMOB |
-| **Documentos técnicos** | [Fontes](Sources-pt) | Todas as fontes; a principal é o artigo Cerrotta–Sartori |
-| | [Mapa dos radares europeus](European-Radar-Map-pt) | Onde estão Collm, Sodankylä, GRAVES e CMOR em relação à sua estação |
-| | [Eficiência - explicação](Efficiency-Explanation-pt) | Documento passo a passo sobre o cálculo da eficiência, exportável para Word |
 | [Chuvas em direto](Live-Showers-pt) | – | ZHR medidos pela Global Meteor Network e mapas de radiantes do CMOR |
 | [Chuvas](Showers-pt) | – | Catálogo IMO com o próximo máximo (data e hora IMO ou calculadas) |
 | [Mapa de quadrados](Grid-Square-Map-pt) | – | Quadrados Maidenhead trabalhados e confirmados a partir de um ficheiro ADIF, um separador por banda |
+| **Documentos técnicos** | [Fontes](Sources-pt) | Todas as fontes; a principal é o artigo Cerrotta–Sartori |
+| | [Mapa dos radares europeus](European-Radar-Map-pt) | Onde estão Collm, Sodankylä, GRAVES e CMOR em relação à sua estação |
+| | [Eficiência - explicação](Efficiency-Explanation-pt) | Documento passo a passo sobre o cálculo da eficiência, exportável para Word |
 
 Por cima dos separadores há três filas de comandos (o seu locator, correspondente, banda, antena, altitude dos rastos, hora); ver [Primeiros passos](Getting-Started-pt). O botão **Comandos** recolhe-as; o idioma e o esquema de cores escolhem-se no canto superior direito; ver [Definições e pasta de dados](Settings-and-Data-Folder-pt).
 

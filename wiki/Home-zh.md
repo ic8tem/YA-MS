@@ -34,12 +34,12 @@
 | | [几何与路径损耗](Geometry-and-Path-Loss-zh) | 距离、中点、仰角、Hot A / Hot B、公共区域边界、28–432 MHz 路径损耗、链路预算、天线 |
 | | [效率计算](Efficiency-Calculation-zh) | 概览卡片、各流星雨的逐时效率及 A/B 侧、路径指数、DH9GCD 对比、图表 |
 | | [试验性预报](Experimental-Forecasts-zh) | 用 λ^k 和电台因子 K 将 Collm 流量换算到 144 MHz（或任意频率）、24 小时预报、与 RMOB 对比 |
-| **技术文档** | [来源](Sources-zh) | 全部来源；主要来源是 Cerrotta–Sartori 的文章 |
-| | [欧洲雷达地图](European-Radar-Map-zh) | Collm、Sodankylä、GRAVES 和 CMOR 相对于本台的位置 |
-| | [效率 - 说明](Efficiency-Explanation-zh) | 逐步说明效率如何计算的文档，可导出为 Word |
 | [实时流星雨](Live-Showers-zh) | – | Global Meteor Network 实测的 ZHR 和 CMOR 辐射点地图 |
 | [流星雨](Showers-zh) | – | IMO 目录及下一个峰值（IMO 日期和时间或计算值） |
 | [方格地图](Grid-Square-Map-zh) | – | 根据 ADIF 文件显示已通联和已确认的 Maidenhead 方格，每个频段一个选项卡 |
+| **技术文档** | [来源](Sources-zh) | 全部来源；主要来源是 Cerrotta–Sartori 的文章 |
+| | [欧洲雷达地图](European-Radar-Map-zh) | Collm、Sodankylä、GRAVES 和 CMOR 相对于本台的位置 |
+| | [效率 - 说明](Efficiency-Explanation-zh) | 逐步说明效率如何计算的文档，可导出为 Word |
 
 选项卡上方有三行控件（本台网格坐标、对方电台、频段、天线、余迹高度、时间），参见[入门](Getting-Started-zh)。**控制**按钮可将其折叠；界面语言和配色方案在右上角选择，参见[设置与数据文件夹](Settings-and-Data-Folder-zh)。
 

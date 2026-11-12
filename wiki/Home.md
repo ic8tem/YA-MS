@@ -34,12 +34,12 @@ Since version 1.6 the main tabs have **sub-tabs** (a lighter row under the main 
 | | [Geometry and path loss](Geometry-and-Path-Loss) | Distance, midpoint, elevation, Hot A / Hot B, common zone limits, path loss 28–432 MHz, link budget, antenna |
 | | [Efficiency calculation](Efficiency-Calculation) | Glance cards, hourly efficiency of each shower with side A/B, path index, DH9GCD comparison, chart |
 | | [Experimental forecasts](Experimental-Forecasts) | Collm flux scaled to 144 MHz (or any frequency) with λ^k and station factor K, 24-hour forecast, RMOB comparison |
-| **Technical documents** | [Sources](Sources) | All sources; the main one is the Cerrotta–Sartori article |
-| | [Map of European radars](European-Radar-Map) | Where Collm, Sodankylä, GRAVES and CMOR are relative to your station |
-| | [Efficiency - explanation](Efficiency-Explanation) | Step-by-step document on how the efficiency is computed, exportable to Word |
 | [Live showers](Live-Showers) | – | Measured ZHR of the Global Meteor Network and CMOR radiant maps |
 | [Showers](Showers) | – | IMO catalogue with the next peak (IMO date and time or calculated) |
 | [Grid square map](Grid-Square-Map) | – | Worked and confirmed Maidenhead squares from an ADIF file, one tab per band |
+| **Technical documents** | [Sources](Sources) | All sources; the main one is the Cerrotta–Sartori article |
+| | [Map of European radars](European-Radar-Map) | Where Collm, Sodankylä, GRAVES and CMOR are relative to your station |
+| | [Efficiency - explanation](Efficiency-Explanation) | Step-by-step document on how the efficiency is computed, exportable to Word |
 
 Above the tabs there are three rows of controls (your locator, DX station, band, antenna, trail height, time); see [Getting started](Getting-Started). The **Controls** button folds them away, and the language and colour scheme are chosen at the top right; see [Settings and data folder](Settings-and-Data-Folder).
 

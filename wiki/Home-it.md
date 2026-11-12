@@ -34,12 +34,12 @@ Dalla versione 1.6 le linguette principali hanno delle **sotto-linguette** (una 
 | | [Geometria e attenuazione](Geometry-and-Path-Loss-it) | Distanza, punto medio, elevazione, Hot A / Hot B, limiti della zona comune, attenuazione di tratta 28–432 MHz, bilancio del collegamento, antenna |
 | | [Calcolo dell'efficienza](Efficiency-Calculation-it) | Schede riassuntive, efficienza oraria di ogni sciame con lato A/B, indice della tratta, confronto con DH9GCD, grafico |
 | | [Attuazione sperimentale previsioni](Experimental-Forecasts-it) | Flusso di Collm traslato a 144 MHz (o a qualsiasi frequenza) con λ^k e fattore di stazione K, previsione sulle 24 ore, confronto con RMOB |
-| **Documenti tecnici** | [Fonti](Sources-it) | Tutte le fonti; la principale è l'articolo Cerrotta–Sartori |
-| | [Mappa dei radar europei](European-Radar-Map-it) | Dove si trovano Collm, Sodankylä, GRAVES e CMOR rispetto alla tua stazione |
-| | [Efficienza - spiegazione](Efficiency-Explanation-it) | Documento passo per passo su come si calcola l'efficienza, esportabile in Word |
 | [Sciami in diretta](Live-Showers-it) | – | ZHR misurati dal Global Meteor Network e mappe dei radianti di CMOR |
 | [Sciami](Showers-it) | – | Catalogo IMO con il prossimo massimo (data e ora IMO o calcolate) |
 | [Mappa quadrati](Grid-Square-Map-it) | – | Quadrati Maidenhead lavorati e confermati da un file ADIF, una linguetta per banda |
+| **Documenti tecnici** | [Fonti](Sources-it) | Tutte le fonti; la principale è l'articolo Cerrotta–Sartori |
+| | [Mappa dei radar europei](European-Radar-Map-it) | Dove si trovano Collm, Sodankylä, GRAVES e CMOR rispetto alla tua stazione |
+| | [Efficienza - spiegazione](Efficiency-Explanation-it) | Documento passo per passo su come si calcola l'efficienza, esportabile in Word |
 
 Sopra le linguette ci sono tre righe di comandi (il tuo locator, il corrispondente, la banda, l'antenna, la quota delle scie, l'ora); vedi [Primi passi](Getting-Started-it). Il pulsante **Comandi** le ripiega, mentre la lingua e lo schema di colori si scelgono in alto a destra; vedi [Impostazioni e cartella dei dati](Settings-and-Data-Folder-it).
 

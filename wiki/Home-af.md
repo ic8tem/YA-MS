@@ -34,12 +34,12 @@ Sedert weergawe 1.6 het die hoofoortjies **sub-oortjies** ('n ligter ry onder di
 | | [Geometrie en padverlies](Geometry-and-Path-Loss-af) | Afstand, middelpunt, elevasie, Hot A / Hot B, grense van die gemeenskaplike sone, padverlies 28–432 MHz, skakelbegroting, antenna |
 | | [Berekening van doeltreffendheid](Efficiency-Calculation-af) | Oorsigkaarte, uurlikse doeltreffendheid van elke swerm met kant A/B, padindeks, DH9GCD-vergelyking, grafiek |
 | | [Eksperimentele voorspellings](Experimental-Forecasts-af) | Collm-vloed geskaal na 144 MHz (of enige frekwensie) met λ^k en stasiefaktor K, 24-uur-voorspelling, RMOB-vergelyking |
-| **Tegniese dokumente** | [Bronne](Sources-af) | Al die bronne; die belangrikste is die Cerrotta–Sartori-artikel |
-| | [Kaart van Europese radars](European-Radar-Map-af) | Waar Collm, Sodankylä, GRAVES en CMOR relatief tot jou stasie is |
-| | [Doeltreffendheid - verduideliking](Efficiency-Explanation-af) | Stap-vir-stap-dokument oor hoe die doeltreffendheid bereken word, uitvoerbaar na Word |
 | [Regstreekse swerms](Live-Showers-af) | – | Gemete ZHR van die Global Meteor Network en CMOR-radiantkaarte |
 | [Swerms](Showers-af) | – | IMO-katalogus met die volgende maksimum (IMO-datum en -tyd of bereken) |
 | [Vierkantkaart](Grid-Square-Map-af) | – | Gewerkte en bevestigde Maidenhead-vierkante uit 'n ADIF-lêer, een oortjie per band |
+| **Tegniese dokumente** | [Bronne](Sources-af) | Al die bronne; die belangrikste is die Cerrotta–Sartori-artikel |
+| | [Kaart van Europese radars](European-Radar-Map-af) | Waar Collm, Sodankylä, GRAVES en CMOR relatief tot jou stasie is |
+| | [Doeltreffendheid - verduideliking](Efficiency-Explanation-af) | Stap-vir-stap-dokument oor hoe die doeltreffendheid bereken word, uitvoerbaar na Word |
 
 Bo die oortjies is daar drie rye kontroles (jou lokator, DX-stasie, band, antenna, spoorhoogte, tyd); sien [Aan die gang](Getting-Started-af). Die knoppie **Kontroles** vou hulle weg, en die taal en kleurskema word regs bo gekies; sien [Instellings en datagids](Settings-and-Data-Folder-af).
 

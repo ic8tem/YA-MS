@@ -34,12 +34,12 @@ Sursa principală este articolul lui **C. Cerrotta IC8TEM și G. Sartori IV3GTH*
 | | [Geometrie și atenuare](Geometry-and-Path-Loss-ro) | Distanță, punct median, elevație, Hot A / Hot B, limitele zonei comune, atenuarea pe traseu 28–432 MHz, bilanțul legăturii, antena |
 | | [Calculul eficienței](Efficiency-Calculation-ro) | Carduri de sinteză, eficiența orară a fiecărui roi cu latura A/B, indicele traseului, comparația cu DH9GCD, grafic |
 | | [Previziuni experimentale](Experimental-Forecasts-ro) | Fluxul de la Collm scalat la 144 MHz (sau orice frecvență) cu λ^k și factorul de stație K, previziune pe 24 de ore, comparația cu RMOB |
-| **Documente tehnice** | [Surse](Sources-ro) | Toate sursele; cea principală este articolul Cerrotta–Sartori |
-| | [Harta radarelor europene](European-Radar-Map-ro) | Unde se află Collm, Sodankylä, GRAVES și CMOR față de stația dumneavoastră |
-| | [Eficiența - explicație](Efficiency-Explanation-ro) | Document pas cu pas despre cum se calculează eficiența, exportabil în Word |
 | [Roiuri live](Live-Showers-ro) | – | ZHR măsurat de Global Meteor Network și hărțile radianților CMOR |
 | [Roiuri](Showers-ro) | – | Catalogul IMO cu următorul maxim (data și ora IMO sau calculate) |
 | [Harta pătratelor](Grid-Square-Map-ro) | – | Pătratele Maidenhead lucrate și confirmate dintr-un fișier ADIF, câte o filă pentru fiecare bandă |
+| **Documente tehnice** | [Surse](Sources-ro) | Toate sursele; cea principală este articolul Cerrotta–Sartori |
+| | [Harta radarelor europene](European-Radar-Map-ro) | Unde se află Collm, Sodankylä, GRAVES și CMOR față de stația dumneavoastră |
+| | [Eficiența - explicație](Efficiency-Explanation-ro) | Document pas cu pas despre cum se calculează eficiența, exportabil în Word |
 
 Deasupra filelor sunt trei rânduri de comenzi (locatorul dumneavoastră, stația DX, banda, antena, înălțimea urmei, ora); vedeți [Primii pași](Getting-Started-ro). Butonul **Comenzi** le pliază, iar limba și schema de culori se aleg în dreapta sus; vedeți [Setări și dosarul de date](Settings-and-Data-Folder-ro).
 

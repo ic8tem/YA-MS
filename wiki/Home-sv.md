@@ -34,12 +34,12 @@ Sedan version 1.6 har huvudflikarna **underflikar** (en ljusare rad under huvudr
 | | [Geometri och dämpning](Geometry-and-Path-Loss-sv) | Avstånd, mittpunkt, elevation, Hot A / Hot B, gränser för den gemensamma zonen, sträckdämpning 28–432 MHz, länkbudget, antenn |
 | | [Effektivitetsberäkning](Efficiency-Calculation-sv) | Översiktskort, varje svärms effektivitet timme för timme med sida A/B, sträckindex, jämförelse med DH9GCD, diagram |
 | | [Experimentella prognoser](Experimental-Forecasts-sv) | Flödet från Collm omräknat till 144 MHz (eller valfri frekvens) med λ^k och stationsfaktor K, prognos för 24 timmar, jämförelse med RMOB |
-| **Tekniska dokument** | [Källor](Sources-sv) | Alla källor; den viktigaste är artikeln av Cerrotta–Sartori |
-| | [Karta över europeiska radarer](European-Radar-Map-sv) | Var Collm, Sodankylä, GRAVES och CMOR ligger i förhållande till din station |
-| | [Effektivitet - förklaring](Efficiency-Explanation-sv) | Dokument som steg för steg visar hur effektiviteten beräknas, kan exporteras till Word |
 | [Svärmar live](Live-Showers-sv) | – | Uppmätt ZHR från Global Meteor Network och radiantkartor från CMOR |
 | [Svärmar](Showers-sv) | – | IMO-katalogen med nästa maximum (IMO:s datum och tid eller beräknat) |
 | [Rutkarta](Grid-Square-Map-sv) | – | Körda och bekräftade Maidenhead-rutor från en ADIF-fil, en flik per band |
+| **Tekniska dokument** | [Källor](Sources-sv) | Alla källor; den viktigaste är artikeln av Cerrotta–Sartori |
+| | [Karta över europeiska radarer](European-Radar-Map-sv) | Var Collm, Sodankylä, GRAVES och CMOR ligger i förhållande till din station |
+| | [Effektivitet - förklaring](Efficiency-Explanation-sv) | Dokument som steg för steg visar hur effektiviteten beräknas, kan exporteras till Word |
 
 Ovanför flikarna finns tre rader med reglage (din lokator, motstation, band, antenn, spårhöjd, tid); se [Kom igång](Getting-Started-sv). Knappen **Reglage** fäller ihop dem, och språk och färgschema väljs uppe till höger; se [Inställningar och datamapp](Settings-and-Data-Folder-sv).
 

@@ -34,12 +34,12 @@ Depuis la version 1.6, les onglets principaux comportent des **sous-onglets** (u
 | | [Géométrie et affaiblissement](Geometry-and-Path-Loss-fr) | Distance, point milieu, élévation, Hot A / Hot B, limites de la zone commune, affaiblissement de trajet 28–432 MHz, bilan de liaison, antenne |
 | | [Calcul de l'efficacité](Efficiency-Calculation-fr) | Cartes de synthèse, efficacité horaire de chaque essaim avec côté A/B, indice du trajet, comparaison DH9GCD, graphique |
 | | [Prévisions expérimentales](Experimental-Forecasts-fr) | Flux de Collm transposé à 144 MHz (ou à toute fréquence) avec λ^k et facteur de station K, prévision sur 24 heures, comparaison RMOB |
-| **Documents techniques** | [Sources](Sources-fr) | Toutes les sources ; la principale est l'article Cerrotta–Sartori |
-| | [Carte des radars européens](European-Radar-Map-fr) | Où se trouvent Collm, Sodankylä, GRAVES et CMOR par rapport à votre station |
-| | [Efficacité - explication](Efficiency-Explanation-fr) | Document pas à pas sur la façon dont l'efficacité est calculée, exportable vers Word |
 | [Essaims en direct](Live-Showers-fr) | – | ZHR mesurés par le Global Meteor Network et cartes des radiants CMOR |
 | [Essaims](Showers-fr) | – | Catalogue IMO avec le prochain maximum (date et heure IMO ou calculées) |
 | [Carte des carrés](Grid-Square-Map-fr) | – | Carrés Maidenhead contactés et confirmés à partir d'un fichier ADIF, un onglet par bande |
+| **Documents techniques** | [Sources](Sources-fr) | Toutes les sources ; la principale est l'article Cerrotta–Sartori |
+| | [Carte des radars européens](European-Radar-Map-fr) | Où se trouvent Collm, Sodankylä, GRAVES et CMOR par rapport à votre station |
+| | [Efficacité - explication](Efficiency-Explanation-fr) | Document pas à pas sur la façon dont l'efficacité est calculée, exportable vers Word |
 
 Au-dessus des onglets se trouvent trois rangées de commandes (votre locator, correspondant, bande, antenne, altitude des traînées, heure) ; voir [Premiers pas](Getting-Started-fr). Le bouton **Commandes** les replie, et la langue ainsi que le schéma de couleurs se choisissent en haut à droite ; voir [Réglages et dossier des données](Settings-and-Data-Folder-fr).
 

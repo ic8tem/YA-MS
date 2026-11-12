@@ -34,12 +34,12 @@ Desde a versão 1.6 as abas principais têm **subabas** (uma linha mais clara ab
 | | [Geometria e atenuação](Geometry-and-Path-Loss-pt-br) | Distância, ponto médio, elevação, Hot A / Hot B, limites da zona comum, atenuação do percurso 28–432 MHz, balanço do enlace, antena |
 | | [Cálculo da eficiência](Efficiency-Calculation-pt-br) | Cartões de resumo, eficiência horária de cada chuva com lado A/B, índice do percurso, comparação com DH9GCD, gráfico |
 | | [Previsões experimentais](Experimental-Forecasts-pt-br) | Fluxo de Collm transposto para 144 MHz (ou qualquer frequência) com λ^k e fator de estação K, previsão a 24 horas, comparação com o RMOB |
-| **Documentos técnicos** | [Fontes](Sources-pt-br) | Todas as fontes; a principal é o artigo Cerrotta–Sartori |
-| | [Mapa dos radares europeus](European-Radar-Map-pt-br) | Onde estão Collm, Sodankylä, GRAVES e CMOR em relação à sua estação |
-| | [Eficiência - explicação](Efficiency-Explanation-pt-br) | Documento passo a passo sobre o cálculo da eficiência, exportável para Word |
 | [Chuvas ao vivo](Live-Showers-pt-br) | – | ZHR medidos pela Global Meteor Network e mapas de radiantes do CMOR |
 | [Chuvas](Showers-pt-br) | – | Catálogo IMO com o próximo máximo (data e hora IMO ou calculadas) |
 | [Mapa de quadrados](Grid-Square-Map-pt-br) | – | Quadrados Maidenhead trabalhados e confirmados a partir de um arquivo ADIF, uma aba por banda |
+| **Documentos técnicos** | [Fontes](Sources-pt-br) | Todas as fontes; a principal é o artigo Cerrotta–Sartori |
+| | [Mapa dos radares europeus](European-Radar-Map-pt-br) | Onde estão Collm, Sodankylä, GRAVES e CMOR em relação à sua estação |
+| | [Eficiência - explicação](Efficiency-Explanation-pt-br) | Documento passo a passo sobre o cálculo da eficiência, exportável para Word |
 
 Acima das abas há três linhas de comandos (o seu locator, correspondente, banda, antena, altitude dos rastros, hora); veja [Primeiros passos](Getting-Started-pt-br). O botão **Comandos** as oculta; o idioma e o esquema de cores são escolhidos no canto superior direito; veja [Configurações e pasta de dados](Settings-and-Data-Folder-pt-br).
 

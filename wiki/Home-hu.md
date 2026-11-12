@@ -34,12 +34,12 @@ Az 1.6-os változat óta a fő fülek **alfülekkel** rendelkeznek (egy világos
 | | [Geometria és útcsillapítás](Geometry-and-Path-Loss-hu) | Távolság, felezőpont, elevációs szög, Hot A / Hot B, a közös zóna határai, útcsillapítás 28–432 MHz-en, összeköttetési mérleg, antenna |
 | | [Hatékonyság-számítás](Efficiency-Calculation-hu) | Áttekintő kártyák, az egyes rajok óránkénti hatékonysága A/B oldallal, útvonalindex, összevetés a DH9GCD-vel, grafikon |
 | | [Kísérleti előrejelzések](Experimental-Forecasts-hu) | A collmi fluxus 144 MHz-re (vagy bármely frekvenciára) skálázva λ^k-val és a K állomástényezővel, 24 órás előrejelzés, összehasonlítás az RMOB-bal |
-| **Műszaki dokumentumok** | [Források](Sources-hu) | Az összes forrás; a fő forrás a Cerrotta–Sartori-cikk |
-| | [Európai radarok térképe](European-Radar-Map-hu) | Hol van Collm, Sodankylä, a GRAVES és a CMOR az Ön állomásához képest |
-| | [Hatékonyság – magyarázat](Efficiency-Explanation-hu) | Lépésről lépésre bemutatja a hatékonyság kiszámítását, Wordbe exportálható |
 | [Élő rajok](Live-Showers-hu) | – | A Global Meteor Network által mért ZHR és a CMOR radiánstérképei |
 | [Meteorrajok](Showers-hu) | – | IMO-katalógus a következő csúccsal (IMO-dátum és -időpont vagy számított) |
 | [Lokátornégyzet-térkép](Grid-Square-Map-hu) | – | Ledolgozott és visszaigazolt Maidenhead-négyzetek egy ADIF-fájlból, sávonként egy fül |
+| **Műszaki dokumentumok** | [Források](Sources-hu) | Az összes forrás; a fő forrás a Cerrotta–Sartori-cikk |
+| | [Európai radarok térképe](European-Radar-Map-hu) | Hol van Collm, Sodankylä, a GRAVES és a CMOR az Ön állomásához képest |
+| | [Hatékonyság – magyarázat](Efficiency-Explanation-hu) | Lépésről lépésre bemutatja a hatékonyság kiszámítását, Wordbe exportálható |
 
 A fülek felett három sor vezérlőelem található (saját lokátor, DX-állomás, sáv, antenna, nyommagasság, idő); lásd: [Első lépések](Getting-Started-hu). A **Vezérlők** gomb összecsukja őket, a nyelv és a színséma pedig a jobb felső sarokban választható ki; lásd: [Beállítások és adatmappa](Settings-and-Data-Folder-hu).
 

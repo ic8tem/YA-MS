@@ -34,12 +34,12 @@ Seit Version 1.6 haben die Hauptreiter **Unterreiter** (eine hellere Reihe unter
 | | [Geometrie und Dämpfung](Geometry-and-Path-Loss-de) | Entfernung, Mittelpunkt, Elevation, Hot A / Hot B, Grenzen der gemeinsamen Zone, Streckendämpfung 28–432 MHz, Streckenbilanz, Antenne |
 | | [Effektivitätsberechnung](Efficiency-Calculation-de) | Übersichtskarten, stündliche Effektivität jedes Stroms mit Seite A/B, Streckenindex, Vergleich mit DH9GCD, Diagramm |
 | | [Experimentelle Vorhersage](Experimental-Forecasts-de) | Collm-Fluss auf 144 MHz (oder jede Frequenz) umgerechnet mit λ^k und Stationsfaktor K, 24-Stunden-Vorhersage, RMOB-Vergleich |
-| **Technische Dokumente** | [Quellen](Sources-de) | Alle Quellen; die wichtigste ist der Artikel von Cerrotta–Sartori |
-| | [Karte der europäischen Radare](European-Radar-Map-de) | Wo Collm, Sodankylä, GRAVES und CMOR bezogen auf deine Station liegen |
-| | [Effektivität - Erklärung](Efficiency-Explanation-de) | Schritt-für-Schritt-Dokument zur Berechnung der Effektivität, nach Word exportierbar |
 | [Ströme live](Live-Showers-de) | – | Gemessene ZHR des Global Meteor Network und Radiantenkarten von CMOR |
 | [Ströme](Showers-de) | – | IMO-Katalog mit dem nächsten Maximum (IMO-Datum und -Uhrzeit oder berechnet) |
 | [Feldkarte](Grid-Square-Map-de) | – | Gearbeitete und bestätigte Maidenhead-Felder aus einer ADIF-Datei, ein Reiter pro Band |
+| **Technische Dokumente** | [Quellen](Sources-de) | Alle Quellen; die wichtigste ist der Artikel von Cerrotta–Sartori |
+| | [Karte der europäischen Radare](European-Radar-Map-de) | Wo Collm, Sodankylä, GRAVES und CMOR bezogen auf deine Station liegen |
+| | [Effektivität - Erklärung](Efficiency-Explanation-de) | Schritt-für-Schritt-Dokument zur Berechnung der Effektivität, nach Word exportierbar |
 
 Über den Reitern liegen drei Bedienzeilen (dein Locator, Gegenstation, Band, Antenne, Spurhöhe, Zeit); siehe [Erste Schritte](Getting-Started-de). Die Schaltfläche **Bedienung** klappt sie ein, Sprache und Farbschema wählst du oben rechts; siehe [Einstellungen und Datenordner](Settings-and-Data-Folder-de).
 

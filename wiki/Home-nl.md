@@ -34,12 +34,12 @@ Sinds versie 1.6 hebben de hoofdtabbladen **subtabbladen** (een lichtere rij ond
 | | [Geometrie en demping](Geometry-and-Path-Loss-nl) | Afstand, middelpunt, elevatie, Hot A / Hot B, grenzen van de gemeenschappelijke zone, trajectdemping 28–432 MHz, linkbudget, antenne |
 | | [Efficiëntieberekening](Efficiency-Calculation-nl) | Overzichtskaarten, efficiëntie per uur van elke zwerm met zijde A/B, trajectindex, vergelijking met DH9GCD, grafiek |
 | | [Experimentele voorspelling](Experimental-Forecasts-nl) | Flux van Collm omgerekend naar 144 MHz (of een willekeurige frequentie) met λ^k en stationsfactor K, voorspelling over 24 uur, vergelijking met RMOB |
-| **Technische documenten** | [Bronnen](Sources-nl) | Alle bronnen; de belangrijkste is het artikel van Cerrotta–Sartori |
-| | [Kaart van de Europese radars](European-Radar-Map-nl) | Waar Collm, Sodankylä, GRAVES en CMOR liggen ten opzichte van jouw station |
-| | [Efficiëntie - uitleg](Efficiency-Explanation-nl) | Stap-voor-stapdocument over hoe de efficiëntie wordt berekend, te exporteren naar Word |
 | [Zwermen live](Live-Showers-nl) | – | Gemeten ZHR van het Global Meteor Network en radiantkaarten van CMOR |
 | [Zwermen](Showers-nl) | – | IMO-catalogus met het volgende maximum (datum en tijd van IMO of berekend) |
 | [Vakkenkaart](Grid-Square-Map-nl) | – | Gewerkte en bevestigde Maidenhead-vakken uit een ADIF-bestand, één tabblad per band |
+| **Technische documenten** | [Bronnen](Sources-nl) | Alle bronnen; de belangrijkste is het artikel van Cerrotta–Sartori |
+| | [Kaart van de Europese radars](European-Radar-Map-nl) | Waar Collm, Sodankylä, GRAVES en CMOR liggen ten opzichte van jouw station |
+| | [Efficiëntie - uitleg](Efficiency-Explanation-nl) | Stap-voor-stapdocument over hoe de efficiëntie wordt berekend, te exporteren naar Word |
 
 Boven de tabbladen staan drie rijen bedieningselementen (jouw locator, tegenstation, band, antenne, spoorhoogte, tijd); zie [Aan de slag](Getting-Started-nl). Met de knop **Bediening** klap je ze in; taal en kleurenschema kies je rechtsboven; zie [Instellingen en gegevensmap](Settings-and-Data-Folder-nl).
 

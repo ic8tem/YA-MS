@@ -34,12 +34,12 @@
 | | [幾何と損失](Geometry-and-Path-Loss-ja) | 距離、中間点、仰角、Hot A / Hot B、共通領域の限界、28–432 MHz のパス損失、回線計算、アンテナ |
 | | [効率の計算](Efficiency-Calculation-ja) | 概要カード、A/B 側付きの各流星群の時間別効率、パス指数、DH9GCD との比較、グラフ |
 | | [実験的予報](Experimental-Forecasts-ja) | λ^k と局係数 K で 144 MHz (または任意の周波数) に換算した Collm のフラックス、24 時間予報、RMOB との比較 |
-| **技術資料** | [出典](Sources-ja) | すべての出典。主な出典は Cerrotta–Sartori の記事 |
-| | [ヨーロッパのレーダー地図](European-Radar-Map-ja) | Collm、Sodankylä、GRAVES、CMOR が自局から見てどこにあるか |
-| | [効率 - 解説](Efficiency-Explanation-ja) | 効率の計算方法を順を追って説明する文書。Word に出力可能 |
 | [流星群ライブ](Live-Showers-ja) | – | Global Meteor Network の実測 ZHR と CMOR の放射点マップ |
 | [流星群](Showers-ja) | – | 次の極大 (IMO の日時または計算値) 付きの IMO カタログ |
 | [グリッド地図](Grid-Square-Map-ja) | – | ADIF ファイルから読み込んだ交信済・確認済のマイデンヘッド グリッド。バンドごとに 1 タブ |
+| **技術資料** | [出典](Sources-ja) | すべての出典。主な出典は Cerrotta–Sartori の記事 |
+| | [ヨーロッパのレーダー地図](European-Radar-Map-ja) | Collm、Sodankylä、GRAVES、CMOR が自局から見てどこにあるか |
+| | [効率 - 解説](Efficiency-Explanation-ja) | 効率の計算方法を順を追って説明する文書。Word に出力可能 |
 
 タブの上には 3 段の操作部 (自局ロケーター、相手局、バンド、アンテナ、流星痕高度、時刻) があります。[はじめに](Getting-Started-ja) を参照してください。**操作** ボタンでこれを折りたためます。表示言語と配色は右上で選びます。[設定とデータフォルダー](Settings-and-Data-Folder-ja) を参照してください。
 

@@ -30,7 +30,7 @@ Fiecare pas poartă o etichetă colorată:
 | 6. De la un punct la eficiență | Puncte de reflexie la fiecare 15 km, ponderea fiecărui punct, procentul; comparația cu QTFGUI (DJ5HG) |
 | 7. Citirea rezultatelor | Latura A / B, indicele traseului, culorile radianților, zonele PREV, secțiunea văzută de la antenă |
 | 8. Frecvența de lucru și atenuarea pe traseu | Regulile λ³ / λ², de la radar la banda de radioamatori, referințe pentru atenuarea pe traseu |
-| 9. Limite cunoscute | Doar urme subdense, antene izotrope, valori de lucru |
+| 9. Limite cunoscute | Doar urme subdense, antene izotrope (în azimut; diagramă verticală opțională), valori de lucru |
 | 10. Surse | 17 surse numerotate |
 
 ## Butoane

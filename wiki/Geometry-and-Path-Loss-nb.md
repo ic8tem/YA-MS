@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Eksempel: Yagi på 14 λ på 432 MHz → 20,3 dBi, lobe 18,1° horisontalt og 19,5° vertikalt; modellene til W4RNL gir 20,4 dBi og 18,4° / 18,8°. Dette er tilnærmede regler utledet fra noen få DL6WU-antenner.
 
-Antennen regnes alltid som rettet mot DX. Et hot spot ligger **innenfor loben** hvis |Az(Hot) − Az(antenne)| ≤ θ_horisontal/2: det tegnes da i grått i [himmelhvelvingen](Sky-View-nb), og det vises en advarsel. I effektivitetsberegningen er antennene isotrope; den faktiske loben brukes bare til denne kontrollen.
+Antennen regnes alltid som rettet mot DX-en. En hot spot er **innenfor loben** hvis |Az(Hot) − Az(antenne)| ≤ θ_horizontal/2: den tegnes da grå i [himmelhvelvingen](Sky-View-nb) og en advarsel vises. Den vertikale loben inngår også i effektivitetsberegningen: med boksen *antennediagram* på vektes refleksjonspunktene med den vertikale gevinsten til begge antennene (bredde θ_vertical, maksimum ved lobens elevasjon, bakkefaktor ned til null ved horisonten).
 
 ## Eksperimentelle regler mellom båndene
 

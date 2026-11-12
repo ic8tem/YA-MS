@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Voorbeeld: 14 λ-Yagi op 432 MHz → 20,3 dBi, lob 18,1° horisontaal en 19,5° vertikaal; W4RNL se modelle gee 20,4 dBi en 18,4° / 18,8°. Dit is benaderde reëls, afgelei van 'n paar DL6WU-antennas.
 
-Die antenna word altyd beskou as na die DX gerig. 'n Hot spot is **binne die lob** as |Az(Hot) − Az(antenna)| ≤ θ_horizontal/2: dit word dan in grys op die [hemelkoepel](Sky-View-af) geteken en 'n waarskuwing verskyn. In die doeltreffendheidsberekening is die antennas isotropies; die werklike lob word slegs vir hierdie kontrole gebruik.
+Die antenna word altyd beskou as gerig op die DX. 'n Hot spot is **binne die lob** as |Az(Hot) − Az(antenna)| ≤ θ_horizontal/2: dit word dan grys geteken in die [hemelkoepel](Sky-View-af) en 'n waarskuwing verskyn. Die vertikale lob tel ook in die doeltreffendheidsberekening: met die blokkie *antennapatroon* aan word die weerkaatsingspunte geweeg met die vertikale wins van albei antennas (breedte θ_vertical, maksimum by die lobhoogte, grondfaktor tot nul by die horison).
 
 ## Eksperimentele reëls tussen bande
 

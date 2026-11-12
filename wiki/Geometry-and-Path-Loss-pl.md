@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Przykład: Yagi 14 λ na 432 MHz → 20,3 dBi, listek 18,1° w poziomie i 19,5° w pionie; modele W4RNL dają 20,4 dBi oraz 18,4° / 18,8°. Są to reguły przybliżone, wyprowadzone z kilku anten DL6WU.
 
-Zakłada się zawsze, że antena jest skierowana na DX. Hot spot leży **wewnątrz listka**, jeśli |Az(Hot) − Az(antena)| ≤ θ_poziomy/2: jest wtedy rysowany na szaro na [kopule nieba](Sky-View-pl) i pojawia się ostrzeżenie. W obliczeniach efektywności anteny są izotropowe; rzeczywisty listek służy tylko do tego sprawdzenia.
+Antenę zawsze uważa się za skierowaną na DX. Hot spot jest **wewnątrz listka**, jeśli |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: jest wtedy rysowany na szaro w [kopule nieba](Sky-View-pl) i pojawia się ostrzeżenie. Pionowy listek wchodzi też do obliczeń wydajności: przy włączonym polu *charakterystyka anteny* punkty odbicia są ważone pionowym zyskiem obu anten (szerokość θ_vertical, maksimum przy elewacji listka, współczynnik ziemi do zera na horyzoncie).
 
 ## Reguły eksperymentalne między pasmami
 

@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Näide: 14 λ Yagi sagedusel 432 MHz → 20,3 dBi, peaharu 18,1° horisontaalselt ja 19,5° vertikaalselt; W4RNL-i mudelid annavad 20,4 dBi ja 18,4° / 18,8°. Need on ligikaudsed reeglid, mis on tuletatud mõnest DL6WU antennist.
 
-Antenni loetakse alati DX-ile suunatuks. Hot spot on **peaharu sees**, kui |Az(Hot) − Az(antenn)| ≤ θ_horisontaalne/2: siis joonistatakse see [Taevavõlvis](Sky-View-et) halliga ja ilmub hoiatus. Efektiivsuse arvutuses on antennid isotroopsed; tegelikku peaharu kasutatakse ainult selle kontrolli jaoks.
+Antenni loetakse alati suunatuks DX-i poole. Hot spot on **keila sees**, kui |Az(Hot) − Az(antenn)| ≤ θ_horizontal/2: siis joonistatakse see [Taevavõlvis](Sky-View-et) hallilt ja ilmub hoiatus. Vertikaalne keil läheb arvesse ka tõhususe arvutuses: kui kast *antenni suunadiagramm* on sees, kaalutakse peegelduspunkte mõlema antenni vertikaalse võimendusega (laius θ_vertical, maksimum keila kõrgusnurga juures, maapinna tegur horisondil nullini).
 
 ## Eksperimentaalsed reeglid sagedusalade vahel
 

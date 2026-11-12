@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Ejemplo: Yagi de 14 λ en 432 MHz → 20,3 dBi, lóbulo de 18,1° en horizontal y 19,5° en vertical; los modelos de W4RNL dan 20,4 dBi y 18,4° / 18,8°. Son reglas aproximadas obtenidas de unas pocas antenas DL6WU.
 
-La antena se considera siempre apuntada al DX. Un hot spot está **dentro del lóbulo** si |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: entonces se dibuja en gris en la [Bóveda celeste](Sky-View-es) y aparece un aviso. En el cálculo de la eficiencia las antenas son isótropas; el lóbulo real solo se usa para esta comprobación.
+La antena se considera siempre apuntada hacia el DX. Un hot spot está **dentro del lóbulo** si |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: entonces se dibuja en gris en la [Bóveda celeste](Sky-View-es) y aparece un aviso. El lóbulo vertical entra también en el cálculo de la eficiencia: con la casilla *diagrama de antena* activada, los puntos de reflexión se ponderan con la ganancia vertical de las dos antenas (anchura θ_vertical, máximo en la elevación del lóbulo, factor del suelo hasta cero en el horizonte).
 
 ## Reglas experimentales entre bandas
 

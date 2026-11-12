@@ -30,7 +30,7 @@ Ogni passaggio porta un'etichetta colorata:
 | 6. Da un punto all'efficienza | Punti di riflessione ogni 15 km, peso di ogni punto, percentuale; confronto con QTFGUI (DJ5HG) |
 | 7. Leggere i risultati | Lato A / B, indice della tratta, colori dei radianti, zone PREV, sezione vista dall'antenna |
 | 8. Frequenza di lavoro e attenuazione | Regole λ³ / λ², dal radar alla banda radioamatoriale, riferimenti per l'attenuazione di tratta |
-| 9. Limiti noti | Solo scie sottodense, antenne isotrope, valori di lavoro |
+| 9. Limiti noti | Solo scie sottodense, antenne isotrope (in azimut; diagramma verticale opzionale), valori di lavoro |
 | 10. Fonti | 17 fonti numerate |
 
 ## Pulsanti

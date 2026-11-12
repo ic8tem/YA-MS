@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Örnek: 432 MHz'de 14 λ'lık Yagi → 20,3 dBi, yatayda 18,1° ve dikeyde 19,5° lob; W4RNL'nin modelleri 20,4 dBi ve 18,4° / 18,8° verir. Bunlar birkaç DL6WU anteninden türetilmiş yaklaşık kurallardır.
 
-Anten her zaman DX'e dönük kabul edilir. |Az(Hot) − Az(anten)| ≤ θ_yatay/2 ise bir hot spot **lobun içindedir**: o zaman [Gökyüzü kubbesinde](Sky-View-tr) gri çizilir ve bir uyarı çıkar. Verim hesabında antenler izotropiktir; gerçek lob yalnızca bu denetim için kullanılır.
+Anten her zaman DX'e çevrilmiş kabul edilir. Bir hot spot, |Az(Hot) − Az(anten)| ≤ θ_horizontal/2 ise **lobun içindedir**: bu durumda [Gökyüzü kubbesinde](Sky-View-tr) içinde gri çizilir ve bir uyarı görünür. Dikey lob verim hesabına da girer: *anten diyagramı* kutusu açıkken yansıma noktaları iki antenin dikey kazancıyla ağırlıklandırılır (genişlik θ_vertical, en yüksek nokta lob yükselmesinde, zemin çarpanı ufukta sıfıra kadar).
 
 ## Bantlar arası deneysel kurallar
 

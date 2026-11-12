@@ -24,7 +24,7 @@ Nad kartami jsou tři řady ovládacích prvků, které platí pro všechny kart
 | Ovládací prvek | Co dělá |
 |---|---|
 | **Výška stop km** + **z radaru** | Výška meteorických stop (výchozí 90 km). Při zaškrtnutí *z radaru* se použije nejčastější výška (modus) naměřená radarem v Collmu; viz [Tok z radaru](Radar-Flux-cs). |
-| **Elevace laloku °** | Nejnižší elevace laloku vaší antény (0° = obzor). Použijí se jen body vrstvy E, které obě stanice vidí nad touto elevací. |
+| **Elevace laloku °** | Elevace maxima svislého laloku tvé antény: směrovka upevněná na 0° má kvůli odrazu od země přesto lalok několik stupňů nad obzorem (obvykle 3-8°). Při zapnutém políčku **diagram antény** (výchozí) se body vrstvy E váží svislým diagramem obou antén; při vypnutém se použijí jen body, které obě stanice vidí nad touto elevací. |
 | **Anténa Yagi: ráhno m** | Délka ráhna vaší Yagi. Program zobrazí délku v λ, zisk (křivka DL6WU) a lalok −3 dB, vodorovný i svislý; viz [Geometrie a útlum](Geometry-and-Path-Loss-cs#zisk-a-lalok-antény). Pod 2 λ je odhad hrubý. |
 | **Hot spot od středu trasy km** + **auto (AMS)** | Vzdálenost Hot A a Hot B od středu trasy. Při zaškrtnutí *auto (AMS)* (výchozí) se řídí tabulkou odklonu antény od J. Richardsona (AMS), kterou cituje DJ5HG: 13° při 1000 km, 11° při 1250 km, 10° při 1500 a 2000 km (asi 115, 121, 132 a 176 km od středu). Po zrušení zaškrtnutí zadáte ručně 30–400 km (MSHV používá 150 km). |
 

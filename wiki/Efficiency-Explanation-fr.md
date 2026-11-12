@@ -30,7 +30,7 @@ Chaque étape porte une étiquette de couleur :
 | 6. D'un point à l'efficacité | Points de réflexion tous les 15 km, poids de chaque point, pourcentage ; comparaison avec QTFGUI (DJ5HG) |
 | 7. Lecture des résultats | Côté A / B, indice du trajet, couleurs des radiants, zones PREV, coupe vue depuis l'antenne |
 | 8. Fréquence de travail et affaiblissement | Règles λ³ / λ², du radar à la bande amateur, références d'affaiblissement de trajet |
-| 9. Limites connues | Traînées sous-denses uniquement, antennes isotropes, valeurs de travail |
+| 9. Limites connues | Traînées sous-denses uniquement, antennes isotropes (en azimut ; diagramme vertical optionnel), valeurs de travail |
 | 10. Sources | 17 sources numérotées |
 
 ## Boutons

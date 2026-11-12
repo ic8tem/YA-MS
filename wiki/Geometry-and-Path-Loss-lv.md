@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Piemērs: 14 λ Yagi pie 432 MHz → 20,3 dBi, ziedlapiņa 18,1° horizontāli un 19,5° vertikāli; W4RNL modeļi dod 20,4 dBi un 18,4° / 18,8°. Tie ir aptuveni likumi, kas iegūti no dažām DL6WU antenām.
 
-Antena vienmēr tiek uzskatīta par vērstu uz DX. Hot spot ir **ziedlapiņā**, ja |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: tad [debess velvē](Sky-View-lv) tas tiek zīmēts pelēks un parādās brīdinājums. Efektivitātes aprēķinā antenas ir izotropas; reālā ziedlapiņa tiek izmantota tikai šai pārbaudei.
+Antena vienmēr tiek uzskatīta par pavērstu uz DX. Hot spot ir **daivas iekšpusē**, ja |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: tad to zīmē pelēku [debess velvē](Sky-View-lv) un parādās brīdinājums. Vertikālā daiva iekļaujas arī efektivitātes aprēķinā: ja rūtiņa *antenas diagramma* ir ieslēgta, atstarošanas punktus sver ar abu antenu vertikālo pastiprinājumu (platums θ_vertical, maksimums daivas elevācijā, zemes koeficients līdz nullei pie horizonta).
 
 ## Eksperimentālie likumi starp joslām
 

@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Beispiel: Yagi mit 14 λ auf 432 MHz → 20,3 dBi, Keule 18,1° horizontal und 19,5° vertikal; die Modelle von W4RNL ergeben 20,4 dBi und 18,4° / 18,8°. Das sind Näherungsregeln, abgeleitet aus einigen wenigen DL6WU-Antennen.
 
-Die Antenne gilt immer als auf die Gegenstation gerichtet. Ein Hot-Spot liegt **in der Keule**, wenn |Az(Hot) − Az(Antenne)| ≤ θ_horizontal/2: Dann wird er in der [Himmelsansicht](Sky-View-de) grau gezeichnet und eine Warnung erscheint. In der Effektivitätsberechnung sind die Antennen isotrop; die tatsächliche Keule wird nur für diese Prüfung verwendet.
+Die Antenne gilt immer als auf den DX gerichtet. Ein Hot Spot liegt **in der Keule**, wenn |Az(Hot) − Az(Antenne)| ≤ θ_horizontal/2: Er wird dann grau in der [Himmelsansicht](Sky-View-de) gezeichnet und eine Warnung erscheint. Die vertikale Keule geht auch in die Wirkungsgradberechnung ein: Mit eingeschaltetem Kästchen *Antennendiagramm* werden die Reflexionspunkte mit dem vertikalen Gewinn beider Antennen gewichtet (Breite θ_vertical, Maximum bei der Keulenerhebung, Bodenfaktor bis null am Horizont).
 
 ## Experimentelle Regeln zwischen den Bändern
 

@@ -30,7 +30,7 @@ Katram solim ir krāsaina etiķete:
 | 6. No viena punkta līdz efektivitātei | Atstarošanas punkti ik pēc 15 km, katra punkta svars, procenti; salīdzinājums ar QTFGUI (DJ5HG) |
 | 7. Rezultātu lasīšana | Puse A / B, trases indekss, radiantu krāsas, PREV zonas, griezums, kā to redz antena |
 | 8. Darba frekvence un trases vājinājums | λ³ / λ² likumi, no radara uz amatieru joslu, trases vājinājuma atsauces |
-| 9. Zināmie ierobežojumi | Tikai zema blīvuma sliedes, izotropas antenas, darba vērtības |
+| 9. Zināmie ierobežojumi | Tikai zema blīvuma sliedes, izotropas antenas (azimutā; vertikālā diagramma pēc izvēles), darba vērtības |
 | 10. Avoti | 17 numurēti avoti |
 
 ## Pogas

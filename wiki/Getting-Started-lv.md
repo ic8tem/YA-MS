@@ -24,7 +24,7 @@ Virs cilnēm ir trīs vadības rindas, kas attiecas uz visām cilnēm. Poga **Va
 | Vadīkla | Ko tā dara |
 |---|---|
 | **Sliežu augstums km** + **no radara** | Meteoru sliežu augstums (noklusējumā 90 km). Ja atzīmēts *no radara*, tiek izmantots biežākais augstums (moda), ko izmērījis Collm radars; sk. [Radara meteoru skaits](Radar-Flux-lv). |
-| **Ziedlapiņas elevācija °** | Tavas antenas ziedlapiņas zemākā elevācija (0° = horizonts). Tiek izmantoti tikai tie E slāņa punkti, ko abas stacijas redz virs šīs elevācijas. |
+| **Ziedlapiņas elevācija °** | Antenas vertikālās daivas maksimuma elevācija: uz 0° nostiprinātai virziena antenai zemes atstarošanās dēļ daiva tik un tā ir dažus grādus virs horizonta (parasti 3-8°). Ja izvēles rūtiņa **antenas diagramma** ir ieslēgta (noklusējums), E slāņa punkti tiek svērti ar abu antenu vertikālo diagrammu; ja izslēgta, izmanto tikai punktus, ko abas stacijas redz virs šīs elevācijas. |
 | **Yagi antena: traverse m** | Tavas Yagi antenas traverses garums. Programma rāda garumu λ, pastiprinājumu (DL6WU līkne) un −3 dB ziedlapiņu horizontāli un vertikāli; sk. [Ģeometrija un vājinājums](Geometry-and-Path-Loss-lv#antenas-pastiprinājums-un-ziedlapiņa). Zem 2 λ novērtējums ir neprecīzs. |
 | **Hot spot no viduspunkta km** + **auto (AMS)** | Hot A un Hot B attālums no viduspunkta. Ja atzīmēts *auto (AMS)* (noklusējums), tas seko J. Richardson (AMS) antenas nobīžu tabulai, ko citē DJ5HG: 13° pie 1000 km, 11° pie 1250 km, 10° pie 1500 un 2000 km (aptuveni 115, 121, 132 un 176 km no viduspunkta). Noņem atzīmi, lai ievadītu 30–400 km ar roku (MSHV izmanto 150 km). |
 

@@ -30,7 +30,7 @@ Cada paso lleva una etiqueta de color:
 | 6. De un punto a la eficiencia | Puntos de reflexión cada 15 km, peso de cada punto, porcentaje; comparación con QTFGUI (DJ5HG) |
 | 7. Lectura de los resultados | Lado A / B, índice del trayecto, colores de los radiantes, zonas PREV, sección vista desde la antena |
 | 8. Frecuencia de trabajo y atenuación | Reglas λ³ / λ², del radar a la banda de radioaficionado, referencias de atenuación |
-| 9. Límites conocidos | Solo estelas subdensas, antenas isótropas, valores de trabajo |
+| 9. Límites conocidos | Solo estelas subdensas, antenas isótropas (en acimut; diagrama vertical opcional), valores de trabajo |
 | 10. Fuentes | 17 fuentes numeradas |
 
 ## Botones

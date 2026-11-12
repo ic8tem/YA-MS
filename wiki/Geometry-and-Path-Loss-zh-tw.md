@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 範例：432 MHz 上 14 λ 的八木 → 20.3 dBi，水平波瓣 18.1°，垂直波瓣 19.5°；W4RNL 的模型給出 20.4 dBi 和 18.4° / 18.8°。這些是由少數幾副 DL6WU 天線得出的近似規則。
 
-天線始終被視為指向 DX。若 |Az(Hot) − Az(antenna)| ≤ θ_horizontal/2，則熱點位於**波瓣內**：此時它在[天穹](Sky-View-zh-tw)上以灰色繪出，並出現提示。在效率計算中天線被視為等向性；實際波瓣只用於這項檢查。
+天線始終視為指向 DX。若 |Az(Hot) − Az(antenna)| ≤ θ_horizontal/2，則 hot spot **位於波瓣內**：此時在[天穹](Sky-View-zh-tw)中以灰色繪出，並顯示警告。垂直波瓣也計入效率計算：開啟 *天線場型* 核取方塊時，反射點依兩副天線的垂直增益加權（寬度 θ_vertical，最大值在波瓣仰角處，地面因子在地平線處降為零）。
 
 ## 頻段間經驗規則
 

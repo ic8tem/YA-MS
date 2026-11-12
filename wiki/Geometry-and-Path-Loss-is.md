@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Dæmi: 14 λ Yagi á 432 MHz → 20,3 dBi, geisli 18,1° láréttur og 19,5° lóðréttur; líkön W4RNL gefa 20,4 dBi og 18,4° / 18,8°. Þetta eru nálgunarreglur leiddar af fáeinum DL6WU-loftnetum.
 
-Alltaf er gert ráð fyrir að loftnetinu sé beint að DX. Heitur blettur er **innan geislans** ef |Az(Hot) − Az(loftnet)| ≤ θ_láréttur/2: hann er þá teiknaður grár í [Himinhvelfingunni](Sky-View-is) og viðvörun birtist. Í útreikningi nýtninnar eru loftnetin stefnulaus; raunverulegi geislinn er aðeins notaður í þessa prófun.
+Loftnetinu er alltaf talið beint að DX-stöðinni. Hot spot er **innan geislans** ef |Az(Hot) − Az(loftnet)| ≤ θ_horizontal/2: hann er þá teiknaður grár í [Himinhvelfingunni](Sky-View-is) og viðvörun birtist. Lóðrétti geislinn fer líka inn í útreikning nýtninnar: með reitinn *geislamynstur loftnets* kveiktan eru endurvarpspunktar vegnir með lóðréttri mögnun beggja loftneta (breidd θ_vertical, hámark við hæð geislans, jarðþáttur niður í núll við sjóndeildarhring).
 
 ## Tilraunareglur milli tíðnisviða
 

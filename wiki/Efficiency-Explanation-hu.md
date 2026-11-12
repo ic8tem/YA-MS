@@ -30,7 +30,7 @@ Minden lépés színes címkét visel:
 | 6. Egy ponttól a hatékonyságig | Reflexiós pontok 15 km-enként, az egyes pontok súlya, százalék; összevetés a QTFGUI-val (DJ5HG) |
 | 7. Az eredmények értelmezése | A / B oldal, útvonalindex, radiánsszínek, PREV zónák, az antennából látott metszet |
 | 8. Üzemi frekvencia és útcsillapítás | λ³ / λ² szabályok, a radartól az amatőrsávig, útcsillapítási hivatkozások |
-| 9. Ismert korlátok | Csak alulsűrű nyomok, izotróp antennák, üzemi értékek |
+| 9. Ismert korlátok | Csak alulsűrű nyomok, izotróp antennák (azimutban; függőleges karakterisztika választható), üzemi értékek |
 | 10. Források | 17 számozott forrás |
 
 ## Gombok

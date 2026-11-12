@@ -30,7 +30,7 @@ Každý krok nese barevný štítek:
 | 6. Od jednoho bodu k účinnosti | Body odrazu každých 15 km, váha každého bodu, procenta; srovnání s QTFGUI (DJ5HG) |
 | 7. Čtení výsledků | Strana A / B, index trasy, barvy radiantů, zóny PREV, řez viděný od antény |
 | 8. Pracovní frekvence a útlum trasy | Pravidla λ³ / λ², od radaru k radioamatérskému pásmu, referenční hodnoty útlumu trasy |
-| 9. Známá omezení | Jen podhusté stopy, izotropní antény, pracovní hodnoty |
+| 9. Známá omezení | Jen podhusté stopy, izotropní antény (v azimutu; svislý diagram volitelný), pracovní hodnoty |
 | 10. Zdroje | 17 číslovaných zdrojů |
 
 ## Tlačítka

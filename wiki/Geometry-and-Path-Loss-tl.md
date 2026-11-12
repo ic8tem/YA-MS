@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Halimbawa: Yagi na 14 λ sa 432 MHz → 20.3 dBi, lobe na 18.1° pahalang at 19.5° patayo; ang mga model ni W4RNL ay nagbibigay ng 20.4 dBi at 18.4° / 18.8°. Mga tinatayang tuntunin ito na hinango mula sa ilang antenna ng DL6WU.
 
-Laging itinuturing na nakatutok sa DX ang antenna. Ang hot spot ay **nasa loob ng lobe** kung |Az(Hot) − Az(antenna)| ≤ θ_horizontal/2: kulay abo itong iginuguhit sa [Kalangitan](Sky-View-tl) at lumalabas ang isang babala. Sa kalkulasyon ng episyensya, isotropic ang mga antenna; para lamang sa pagsusuring ito ginagamit ang totoong lobe.
+Itinuturing na laging nakatutok sa DX ang antena. Ang isang hot spot ay **nasa loob ng lobe** kung |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: iginuguhit ito nang kulay abo sa [Kalangitan](Sky-View-tl) at may lumalabas na babala. Pumapasok din ang patayong lobe sa pagkalkula ng kahusayan: kapag nakabukas ang kahong *pattern ng antena*, tinitimbang ang mga punto ng repleksyon ayon sa patayong gain ng dalawang antena (lapad θ_vertical, rurok sa elevation ng lobe, salik ng lupa hanggang zero sa abot-tanaw).
 
 ## Mga eksperimental na tuntunin sa pagitan ng mga banda
 

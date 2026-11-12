@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Example: 14 λ Yagi at 432 MHz → 20.3 dBi, lobe 18.1° horizontal and 19.5° vertical; W4RNL's models give 20.4 dBi and 18.4° / 18.8°. These are approximate rules derived from a few DL6WU antennas.
 
-The antenna is always considered pointed at the DX. A hot spot is **inside the lobe** if |Az(Hot) − Az(antenna)| ≤ θ_horizontal/2: it is then drawn in grey on the [Sky dome](Sky-View) and a warning appears. In the efficiency calculation the antennas are isotropic; the real lobe is used only for this check.
+The antenna is always considered pointed at the DX. A hot spot is **inside the lobe** if |Az(Hot) − Az(antenna)| ≤ θ_horizontal/2: it is then drawn in grey on the [Sky dome](Sky-View) and a warning appears. The vertical lobe also enters the efficiency calculation: with the *antenna pattern* box on, the reflection points are weighted with the vertical gain of both antennas (width θ_vertical, peak at the lobe elevation, ground factor down to zero at the horizon).
 
 ## Experimental rules between bands
 

@@ -30,7 +30,7 @@ Jeder Schritt trägt eine farbige Kennzeichnung:
 | 6. Vom einzelnen Punkt zur Effektivität | Reflexionspunkte alle 15 km, Gewicht jedes Punktes, Prozentwert; Vergleich mit QTFGUI (DJ5HG) |
 | 7. Ergebnisse lesen | Seite A / B, Streckenindex, Farben der Radianten, PREV-Zonen, Schnitt von der Antenne aus gesehen |
 | 8. Arbeitsfrequenz und Streckendämpfung | λ³- / λ²-Regel, vom Radar zum Amateurfunkband, Referenzwerte der Streckendämpfung |
-| 9. Bekannte Grenzen | Nur unterdichte Spuren, isotrope Antennen, Arbeitswerte |
+| 9. Bekannte Grenzen | Nur unterdichte Spuren, isotrope Antennen (im Azimut; vertikales Diagramm optional), Arbeitswerte |
 | 10. Quellen | 17 nummerierte Quellen |
 
 ## Schaltflächen

@@ -30,7 +30,7 @@ Her adım renkli bir etiket taşır:
 | 6. Tek bir noktadan verime | Her 15 km'de yansıma noktaları, her noktanın ağırlığı, yüzde; QTFGUI (DJ5HG) ile karşılaştırma |
 | 7. Sonuçların okunması | A / B tarafı, yol endeksi, radyant renkleri, PREV bölgeleri, antenden görülen kesit |
 | 8. Çalışma frekansı ve yol kaybı | λ³ / λ² kuralları, radardan amatör banda, yol kaybı referansları |
-| 9. Bilinen sınırlar | Yalnızca underdense izler, izotropik antenler, çalışma değerleri |
+| 9. Bilinen sınırlar | Yalnızca underdense izler, izotropik antenler (azimutta; dikey diyagram isteğe bağlı), çalışma değerleri |
 | 10. Kaynaklar | 17 numaralı kaynak |
 
 ## Düğmeler

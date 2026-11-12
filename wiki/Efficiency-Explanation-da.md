@@ -30,7 +30,7 @@ Hvert trin har en farvet mærkat:
 | 6. Fra ét punkt til effektiviteten | Refleksionspunkter for hver 15 km, hvert punkts vægt, procent; sammenligning med QTFGUI (DJ5HG) |
 | 7. Aflæsning af resultaterne | Side A / B, strækningsindeks, radianternes farver, PREV-zoner, snit set fra antennen |
 | 8. Arbejdsfrekvens og strækningsdæmpning | λ³- / λ²-reglerne, fra radar til amatørbånd, referencer for strækningsdæmpning |
-| 9. Kendte begrænsninger | Kun underdense spor, isotrope antenner, arbejdsværdier |
+| 9. Kendte begrænsninger | Kun underdense spor, isotrope antenner (i azimut; lodret diagram valgfrit), arbejdsværdier |
 | 10. Kilder | 17 nummererede kilder |
 
 ## Knapper

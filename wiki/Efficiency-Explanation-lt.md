@@ -30,7 +30,7 @@ Kiekvienas žingsnis turi spalvotą žymą:
 | 6. Nuo vieno taško iki efektyvumo | Atspindžio taškai kas 15 km, kiekvieno taško svoris, procentas; palyginimas su QTFGUI (DJ5HG) |
 | 7. Rezultatų skaitymas | Pusė A / B, trasos indeksas, radiantų spalvos, PREV zonos, pjūvis, matomas iš antenos |
 | 8. Darbo dažnis ir slopinimas | λ³ / λ² taisyklės, nuo radaro iki mėgėjų juostos, slopinimo duomenys |
-| 9. Žinomi ribojimai | Tik retieji pėdsakai, izotropinės antenos, darbinės vertės |
+| 9. Žinomi ribojimai | Tik retieji pėdsakai, izotropinės antenos (azimute; vertikalioji diagrama pasirenkama), darbinės vertės |
 | 10. Šaltiniai | 17 sunumeruotų šaltinių |
 
 ## Mygtukai

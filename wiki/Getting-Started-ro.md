@@ -24,7 +24,7 @@ Deasupra filelor sunt trei rânduri de comenzi, valabile pentru toate filele. Bu
 | Comandă | Ce face |
 |---|---|
 | **Înălțimea urmei km** + **de la radar** | Înălțimea urmelor de meteori (implicit 90 km). Cu *de la radar* bifat, se folosește înălțimea cea mai frecventă (moda) măsurată de radarul din Collm; vedeți [Flux radar](Radar-Flux-ro). |
-| **Elevația lobului °** | Cea mai joasă elevație a lobului antenei dumneavoastră (0° = orizontul). Se folosesc doar punctele stratului E pe care ambele stații le văd deasupra acestei elevații. |
+| **Elevația lobului °** | Elevația maximului lobului vertical al antenei tale: o directivă fixată la 0° are totuși lobul la câteva grade deasupra orizontului din cauza reflexiei pe sol (de obicei 3-8°). Cu căsuța **diagrama antenei** activată (implicit), punctele stratului E sunt ponderate cu diagrama verticală a celor două antene; dezactivată, se folosesc doar punctele pe care ambele stații le văd deasupra acestei elevații. |
 | **Antenă Yagi: boom m** | Lungimea boom-ului antenei Yagi. Programul arată lungimea în λ, câștigul (curba DL6WU) și lobul la −3 dB, orizontal și vertical; vedeți [Geometrie și atenuare pe traseu](Geometry-and-Path-Loss-ro#câștigul-și-lobul-antenei). Sub 2 λ estimarea este aproximativă. |
 | **Hot spot de la punctul median km** + **auto (AMS)** | Distanța lui Hot A și Hot B față de punctul median. Cu *auto (AMS)* bifat (implicit) urmează tabelul de decalare a antenei al lui J. Richardson (AMS) citat de DJ5HG: 13° la 1000 km, 11° la 1250 km, 10° la 1500 și 2000 km (aproximativ 115, 121, 132 și 176 km de la punctul median). Debifați-l pentru a introduce manual 30–400 km (MSHV folosește 150 km). |
 

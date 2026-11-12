@@ -30,7 +30,7 @@ Hvert trinn har en farget merkelapp:
 | 6. Fra ett punkt til effektiviteten | Refleksjonspunkter for hver 15 km, vekten til hvert punkt, prosent; sammenligning med QTFGUI (DJ5HG) |
 | 7. Tolkning av resultatene | Side A / B, strekningsindeks, radiantfarger, PREV-soner, snitt sett fra antennen |
 | 8. Arbeidsfrekvens og strekningsdemping | λ³- / λ²-reglene, fra radar til amatørbånd, referanser for strekningsdemping |
-| 9. Kjente begrensninger | Bare underdense spor, isotrope antenner, arbeidsverdier |
+| 9. Kjente begrensninger | Bare underdense spor, isotrope antenner (i asimut; vertikalt diagram valgfritt), arbeidsverdier |
 | 10. Kilder | 17 nummererte kilder |
 
 ## Knapper

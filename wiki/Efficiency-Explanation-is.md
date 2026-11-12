@@ -30,7 +30,7 @@ Hvert skref ber litaða merkingu:
 | 6. Frá einum punkti að nýtninni | Endurvarpspunktar á 15 km fresti, vægi hvers punkts, prósenta; samanburður við QTFGUI (DJ5HG) |
 | 7. Lestur niðurstaðnanna | Hlið A / B, leiðarstuðull, litir geislapunkta, PREV-svæði, snið séð frá loftnetinu |
 | 8. Vinnutíðni og leiðardeyfing | Reglurnar λ³ / λ², frá ratsjá að amatörtíðnisviði, viðmiðanir um leiðardeyfingu |
-| 9. Þekktar takmarkanir | Aðeins undirþéttar slóðir, stefnulaus loftnet, vinnugildi |
+| 9. Þekktar takmarkanir | Aðeins undirþéttar slóðir, stefnulaus loftnet (í stefnuhorni; lóðrétt mynstur valfrjálst), vinnugildi |
 | 10. Heimildir | 17 tölusettar heimildir |
 
 ## Hnappar

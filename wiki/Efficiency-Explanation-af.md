@@ -30,7 +30,7 @@ Elke stap dra 'n gekleurde etiket:
 | 6. Van een punt na die doeltreffendheid | Refleksiepunte elke 15 km, gewig van elke punt, persentasie; vergelyking met QTFGUI (DJ5HG) |
 | 7. Die resultate lees | Kant A / B, padindeks, radiantkleure, PREV-sones, deursnee soos vanaf die antenna gesien |
 | 8. Werkfrekwensie en padverlies | λ³- / λ²-reëls, van radar na amateurband, verwysings vir padverlies |
-| 9. Bekende beperkings | Slegs onderdigte spore, isotropiese antennas, werkwaardes |
+| 9. Bekende beperkings | Slegs onderdigte spore, isotropiese antennas (in azimut; vertikale patroon opsioneel), werkwaardes |
 | 10. Bronne | 17 genommerde bronne |
 
 ## Knoppies

@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Exemplu: Yagi de 14 λ la 432 MHz → 20,3 dBi, lob de 18,1° orizontal și 19,5° vertical; modelele lui W4RNL dau 20,4 dBi și 18,4° / 18,8°. Acestea sunt reguli aproximative deduse din câteva antene DL6WU.
 
-Antena este considerată întotdeauna îndreptată spre DX. Un hot spot este **în interiorul lobului** dacă |Az(Hot) − Az(antenă)| ≤ θ_orizontal/2: atunci este desenat în gri în [Bolta cerească](Sky-View-ro) și apare un avertisment. În calculul eficienței antenele sunt izotrope; lobul real se folosește doar pentru această verificare.
+Antena este considerată mereu îndreptată spre DX. Un hot spot este **în interiorul lobului** dacă |Az(Hot) − Az(antenă)| ≤ θ_horizontal/2: atunci este desenat cu gri în [Bolta cerească](Sky-View-ro) și apare un avertisment. Lobul vertical intră și în calculul eficienței: cu căsuța *diagrama antenei* activată, punctele de reflexie sunt ponderate cu câștigul vertical al celor două antene (lățime θ_vertical, maxim la elevația lobului, factorul solului până la zero la orizont).
 
 ## Reguli experimentale între benzi
 

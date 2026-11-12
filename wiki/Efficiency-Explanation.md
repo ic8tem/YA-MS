@@ -30,7 +30,7 @@ Every step carries a coloured label:
 | 6. From one point to the efficiency | Reflection points every 15 km, weight of each point, percentage; comparison with QTFGUI (DJ5HG) |
 | 7. Reading the results | Side A / B, path index, radiant colours, PREV zones, section seen from the antenna |
 | 8. Working frequency and path loss | λ³ / λ² rules, from radar to amateur band, path loss references |
-| 9. Known limits | Underdense trails only, isotropic antennas, working values |
+| 9. Known limits | Underdense trails only, isotropic antennas (in azimuth; vertical pattern optional), working values |
 | 10. Sources | 17 numbered sources |
 
 ## Buttons

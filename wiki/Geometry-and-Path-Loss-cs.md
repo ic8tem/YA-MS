@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Příklad: Yagi 14 λ na 432 MHz → 20,3 dBi, lalok 18,1° vodorovně a 19,5° svisle; modely W4RNL dávají 20,4 dBi a 18,4° / 18,8°. Jde o přibližná pravidla odvozená z několika antén DL6WU.
 
-Anténa se vždy považuje za nasměrovanou na DX. Hot spot je **uvnitř laloku**, pokud |Az(Hot) − Az(anténa)| ≤ θ_vodorovný/2: pak se na [Nebeské klenbě](Sky-View-cs) kreslí šedě a objeví se varování. Ve výpočtu účinnosti jsou antény izotropní; skutečný lalok se používá jen pro toto ověření.
+Anténa se vždy považuje za namířenou na DX. Hot spot je **uvnitř laloku**, pokud |Az(Hot) − Az(anténa)| ≤ θ_horizontal/2: pak se kreslí šedě v [Nebeské klenbě](Sky-View-cs) a objeví se upozornění. Svislý lalok vstupuje i do výpočtu účinnosti: při zapnutém políčku *diagram antény* se body odrazu váží svislým ziskem obou antén (šířka θ_vertical, maximum v elevaci laloku, činitel země až k nule na obzoru).
 
 ## Experimentální pravidla mezi pásmy
 

@@ -30,7 +30,7 @@ Każdy krok ma kolorową etykietę:
 | 6. Od jednego punktu do efektywności | Punkty odbicia co 15 km, waga każdego punktu, procent; porównanie z QTFGUI (DJ5HG) |
 | 7. Odczyt wyników | Strona A / B, indeks trasy, kolory radiantów, strefy PREV, przekrój widziany od strony anteny |
 | 8. Częstotliwość robocza i tłumienie trasy | Reguły λ³ / λ², od radaru do pasma amatorskiego, wartości odniesienia tłumienia trasy |
-| 9. Znane ograniczenia | Tylko ślady podgęste, anteny izotropowe, wartości robocze |
+| 9. Znane ograniczenia | Tylko ślady podgęste, anteny izotropowe (w azymucie; charakterystyka pionowa opcjonalna), wartości robocze |
 | 10. Źródła | 17 ponumerowanych źródeł |
 
 ## Przyciski

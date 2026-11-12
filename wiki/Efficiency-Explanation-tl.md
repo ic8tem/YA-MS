@@ -30,7 +30,7 @@ May may-kulay na label ang bawat hakbang:
 | 6. Mula sa isang punto patungo sa episyensya | Mga punto ng repleksiyon bawat 15 km, timbang ng bawat punto, porsiyento; paghahambing sa QTFGUI (DJ5HG) |
 | 7. Pagbasa ng mga resulta | Panig A / B, indeks ng landas, kulay ng mga radiant, mga PREV na sona, seksiyong nakikita mula sa antenna |
 | 8. Frequency ng operasyon at path loss | Mga tuntuning λ³ / λ², mula sa radar patungo sa amateur band, mga sanggunian ng path loss |
-| 9. Mga kilalang limitasyon | Underdense na bakas lamang, isotropic na antenna, mga working value |
+| 9. Mga kilalang limitasyon | Underdense na bakas lamang, isotropic na antenna (sa azimuth; opsyonal ang patayong pattern), mga working value |
 | 10. Mga sanggunian | 17 sangguniang may bilang |
 
 ## Mga button

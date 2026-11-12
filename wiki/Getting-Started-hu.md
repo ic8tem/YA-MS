@@ -24,7 +24,7 @@ A fülek felett három sor vezérlőelem található, amelyek minden fülre érv
 | Vezérlő | Mire szolgál |
 |---|---|
 | **Nyommagasság km** + **radarból** | A meteornyomok magassága (alapértelmezés 90 km). Ha a *radarból* be van jelölve, a collmi radar által mért leggyakoribb magasságot (módusz) használja; lásd: [Radarfluxus](Radar-Flux-hu). |
-| **Nyalábeleváció °** | Az antennanyaláb legkisebb elevációja (0° = horizont). Csak az E-réteg azon pontjait használja, amelyeket mindkét állomás e szög felett lát. |
+| **Nyalábeleváció °** | Az antenna függőleges nyalábja maximumának emelkedési szöge: a 0°-ra rögzített irányantenna nyalába a talajról való visszaverődés miatt mégis néhány fokkal a horizont felett van (általában 3-8°). Bekapcsolt **antenna iránykarakterisztika** jelölőnégyzettel (alapértelmezés) az E-réteg pontjait a két antenna függőleges iránykarakterisztikája súlyozza; kikapcsolva csak azokat a pontokat használja, amelyeket mindkét állomás e szög felett lát. |
 | **Yagi antenna: boom m** | A Yagi boomhossza. A program kiírja a hosszt λ-ban, a nyereséget (DL6WU-görbe) és a −3 dB-es nyalábszélességet vízszintesen és függőlegesen; lásd: [Geometria és útcsillapítás](Geometry-and-Path-Loss-hu#antennanyereség-és-nyaláb). 2 λ alatt a becslés durva. |
 | **Hot spot a felezőponttól km** + **auto (AMS)** | Hot A és Hot B távolsága a felezőponttól. Az *auto (AMS)* bejelölésekor (alapértelmezés) J. Richardson (AMS) antennaeltérítési táblázatát követi, ahogy azt DJ5HG idézi: 13° 1000 km-nél, 11° 1250 km-nél, 10° 1500 és 2000 km-nél (kb. 115, 121, 132 és 176 km a felezőponttól). Ha kikapcsolja, kézzel adhat meg 30–400 km-t (az MSHV 150 km-t használ). |
 

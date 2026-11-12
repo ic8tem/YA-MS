@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Voorbeeld: Yagi van 14 λ op 432 MHz → 20,3 dBi, bundel 18,1° horizontaal en 19,5° verticaal; de modellen van W4RNL geven 20,4 dBi en 18,4° / 18,8°. Het zijn benaderende regels, afgeleid van een paar DL6WU-antennes.
 
-De antenne wordt altijd geacht op de DX gericht te zijn. Een hotspot ligt **binnen de bundel** als |Az(Hot) − Az(antenne)| ≤ θ_horizontal/2: hij wordt dan grijs getekend in de [Hemelkoepel](Sky-View-nl) en er verschijnt een waarschuwing. In de efficiëntieberekening zijn de antennes isotroop; de werkelijke bundel wordt alleen voor deze controle gebruikt.
+De antenne wordt altijd als op de DX gericht beschouwd. Een hot spot ligt **in de lob** als |Az(Hot) − Az(antenne)| ≤ θ_horizontal/2: hij wordt dan grijs getekend in de [Hemelkoepel](Sky-View-nl) en er verschijnt een waarschuwing. De verticale lob telt ook mee in de rendementsberekening: met het vakje *antennediagram* aan worden de reflectiepunten gewogen met de verticale winst van beide antennes (breedte θ_vertical, maximum bij de lobelevatie, grondfactor tot nul aan de horizon).
 
 ## Experimentele regels tussen de banden
 

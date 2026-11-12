@@ -24,7 +24,7 @@ Acima das abas há três linhas de comandos, válidas para todas as abas. O bot�
 | Comando | O que faz |
 |---|---|
 | **Altitude dos rastros km** + **do radar** | Altitude dos rastros meteóricos (padrão 90 km). Com *do radar* marcado, é usada a altitude mais frequente (moda) medida pelo radar de Collm; veja [Fluxo radar](Radar-Flux-pt-br). |
-| **Elevação do lóbulo °** | Elevação mínima do lóbulo da sua antena (0° = horizonte). Só são usados os pontos da camada E que ambas as estações veem acima desta elevação. |
+| **Elevação do lóbulo °** | Elevação do máximo do lóbulo vertical da sua antena: uma direcional fixa em 0° tem mesmo assim o lóbulo alguns graus acima do horizonte por causa da reflexão no solo (normalmente 3-8°). Com a caixa **diagrama da antena** ligada (padrão) os pontos da camada E são ponderados pelo diagrama vertical das duas antenas; desligada, só são usados os pontos que as duas estações veem acima dessa elevação. |
 | **Antena Yagi: boom m** | Comprimento do boom da sua Yagi. O programa mostra o comprimento em λ, o ganho (curva DL6WU) e o lóbulo a −3 dB, horizontal e vertical; veja [Geometria e atenuação](Geometry-and-Path-Loss-pt-br#ganho-e-lóbulo-da-antena). Abaixo de 2 λ a estimativa é pouco precisa. |
 | **Hot spot desde o ponto médio km** + **auto (AMS)** | Distância de Hot A e Hot B ao ponto médio. Com *auto (AMS)* marcado (padrão) segue a tabela de desvio da antena de J. Richardson (AMS) citada por DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km (cerca de 115, 121, 132 e 176 km do ponto médio). Desmarque-o para digitar 30–400 km manualmente (o MSHV usa 150 km). |
 

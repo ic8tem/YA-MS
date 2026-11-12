@@ -246,9 +246,10 @@ jobs:
             YA-MS - previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter.
             A cura di Costantino IC8TEM.
 
-            Novità della 1.8.0: aggiornamento automatico da GitHub (pulsante Aggiornamenti, la cartella data resta) e controllo dei file mancanti,
-            raggio iniziale della scia e durata dei ping tra le bande con le fonti, confronto dei radianti con il catalogo IAU MDC, conteggi del giorno GMN,
-            k dagli indici di popolazione, giudizio classico, due tesi sull'angolo beta e confronto BRAMS nei documenti (dettagli nel file LEGGIMI.txt).
+            Novità della 1.8.1: lobo d'antenna come diagramma verticale (casella "diagramma d'antenna", accesa di partenza: le efficienze non spariscono più sulle tratte lunghe),
+            avviso "NESSUNA ZONA COMUNE" con spiegazione, casella dell'angolo beta in evidenza con il suo peso nel fumetto, una sola data del calcolo,
+            nuovo Manuale d'uso, "Documenti tecnici" in fondo, confronto con 181 767 spot reali del MSQP 2025 su 50 MHz nei documenti (dettagli nel file LEGGIMI.txt).
+            Dalla 1.8.0 il programma si aggiorna da GitHub (pulsante Aggiornamenti, la cartella data resta) e segnala i file mancanti.
             Dalla 1.7.0 in giù il programma non si aggiorna da solo: questa versione va installata a mano, le successive no.
 
             - Windows: YA-MS-...-windows-x64-setup.exe (installa in C:\YA-MS) oppure lo zip portatile; per Windows a 32 bit i file -windows-x86-.

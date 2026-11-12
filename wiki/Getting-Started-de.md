@@ -24,7 +24,7 @@ Beim ersten Start zeigt YA-MS eine Beispielstrecke (JN70CN → JO62QM auf 144 MH
 | Bedienelement | Was es tut |
 |---|---|
 | **Spurhöhe km** + **vom Radar** | Höhe der Meteorspuren (Standard 90 km). Mit angekreuztem *vom Radar* wird die häufigste vom Collm-Radar gemessene Höhe (Modalwert) verwendet; siehe [Radarfluss](Radar-Flux-de). |
-| **Keulenelev. °** | Niedrigste Elevation deiner Antennenkeule (0° = Horizont). Verwendet werden nur Punkte der E-Schicht, die beide Stationen oberhalb dieser Elevation sehen. |
+| **Keulenelev. °** | Erhebung des Maximums der vertikalen Antennenkeule: Eine auf 0° fixierte Richtantenne hat wegen der Bodenreflexion trotzdem ihre Keule einige Grad über dem Horizont (meist 3-8°). Mit eingeschaltetem Kästchen **Antennendiagramm** (Voreinstellung) werden die Punkte der E-Schicht mit dem vertikalen Diagramm beider Antennen gewichtet; ausgeschaltet zählen nur die Punkte, die beide Stationen über dieser Erhebung sehen. |
 | **Yagi: Boomlänge m** | Boomlänge deiner Yagi. Das Programm zeigt die Länge in λ, den Gewinn (DL6WU-Kurve) und den Öffnungswinkel (−3 dB) horizontal und vertikal; siehe [Geometrie und Dämpfung](Geometry-and-Path-Loss-de#antennengewinn-und-keule). Unter 2 λ ist die Schätzung ungenau. |
 | **Hot-Spot ab Mittelpunkt km** + **auto (AMS)** | Abstand von Hot A und Hot B vom Mittelpunkt. Mit angekreuztem *auto (AMS)* (Standard) folgt er der von DJ5HG zitierten Tabelle der Antennenablage von J. Richardson (AMS): 13° bei 1000 km, 11° bei 1250 km, 10° bei 1500 und 2000 km (etwa 115, 121, 132 und 176 km vom Mittelpunkt). Kreuz es nicht an, um 30–400 km von Hand einzugeben (MSHV verwendet 150 km). |
 

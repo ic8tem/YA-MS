@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Exemple : Yagi de 14 λ à 432 MHz → 20,3 dBi, lobe de 18,1° en horizontal et 19,5° en vertical ; les modèles de W4RNL donnent 20,4 dBi et 18,4° / 18,8°. Ce sont des règles approchées, tirées de quelques antennes DL6WU.
 
-L'antenne est toujours considérée comme pointée vers le correspondant. Un hot spot est **dans le lobe** si |Az(Hot) − Az(antenne)| ≤ θ_horizontal/2 : il est alors dessiné en gris sur la [voûte céleste](Sky-View-fr) et un avertissement apparaît. Dans le calcul de l'efficacité, les antennes sont isotropes ; le lobe réel ne sert qu'à cette vérification.
+L'antenne est toujours considérée pointée vers le DX. Un hot spot est **dans le lobe** si |Az(Hot) − Az(antenne)| ≤ θ_horizontal/2 : il est alors dessiné en gris dans la [voûte céleste](Sky-View-fr) et un avertissement apparaît. Le lobe vertical entre aussi dans le calcul de l'efficacité : case *diagramme d'antenne* activée, les points de réflexion sont pondérés par le gain vertical des deux antennes (largeur θ_vertical, maximum à l'élévation du lobe, facteur du sol jusqu'à zéro à l'horizon).
 
 ## Règles expérimentales entre les bandes
 

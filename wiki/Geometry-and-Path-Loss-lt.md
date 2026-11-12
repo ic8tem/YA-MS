@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Pavyzdys: 14 λ Yagi ties 432 MHz → 20,3 dBi, lapelis 18,1° horizontaliai ir 19,5° vertikaliai; W4RNL modeliai duoda 20,4 dBi ir 18,4° / 18,8°. Tai apytikslės taisyklės, išvestos iš kelių DL6WU antenų.
 
-Laikoma, kad antena visada nukreipta į DX. Hot spot yra **lapelio viduje**, jei |Az(Hot) − Az(antena)| ≤ θ_horizontalus/2: tada [Dangaus skliaute](Sky-View-lt) jis piešiamas pilkai ir pasirodo įspėjimas. Efektyvumo skaičiavime antenos izotropinės; tikrasis lapelis naudojamas tik šiai patikrai.
+Laikoma, kad antena visada nukreipta į DX. Hot spot yra **skilties viduje**, jei |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: tada jis nupiešiamas pilkas [Dangaus skliaute](Sky-View-lt) ir pasirodo įspėjimas. Vertikalioji skiltis įeina ir į efektyvumo skaičiavimą: kai langelis *antenos diagrama* įjungtas, atspindžio taškai sveriami abiejų antenų vertikaliuoju stiprinimu (plotis θ_vertical, maksimumas ties skilties pakilimu, žemės koeficientas iki nulio ties horizontu).
 
 ## Eksperimentinės taisyklės tarp juostų
 

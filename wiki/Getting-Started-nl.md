@@ -24,7 +24,7 @@ Boven de tabbladen staan drie rijen bedieningselementen die voor alle tabbladen 
 | Element | Wat het doet |
 |---|---|
 | **Spoorhoogte km** + **van de radar** | Hoogte van de meteorensporen (standaard 90 km). Met *van de radar* aangevinkt wordt de meest voorkomende hoogte (modus) gebruikt die de radar in Collm meet; zie [Radarflux](Radar-Flux-nl). |
-| **Elevatie bundel °** | Laagste elevatie van je antennebundel (0° = horizon). Alleen punten van de E-laag die beide stations boven deze elevatie zien, worden gebruikt. |
+| **Elevatie bundel °** | Elevatie van het maximum van de verticale lob van je antenne: een richtantenne vast op 0° heeft door de grondreflectie toch haar lob enkele graden boven de horizon (meestal 3-8°). Met het vakje **antennediagram** aan (standaard) worden de punten van de E-laag gewogen met het verticale diagram van beide antennes; uit worden alleen de punten gebruikt die beide stations boven deze elevatie zien. |
 | **Yagi-antenne: boom m** | Boomlengte van je Yagi. Het programma toont de lengte in λ, de winst (DL6WU-curve) en de −3 dB-bundel, horizontaal en verticaal; zie [Geometrie en demping](Geometry-and-Path-Loss-nl#antennewinst-en-bundel). Onder 2 λ is de schatting onnauwkeurig. |
 | **Hotspot vanaf middelpunt km** + **auto (AMS)** | Afstand van Hot A en Hot B tot het middelpunt. Met *auto (AMS)* aangevinkt (standaard) volgt die de tabel met antenne-afwijkingen van J. Richardson (AMS), aangehaald door DJ5HG: 13° bij 1000 km, 11° bij 1250 km, 10° bij 1500 en 2000 km (ongeveer 115, 121, 132 en 176 km van het middelpunt). Vink het uit om 30–400 km met de hand in te voeren (MSHV gebruikt 150 km). |
 

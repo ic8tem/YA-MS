@@ -24,7 +24,7 @@ Bo die oortjies is daar drie rye kontroles, geldig vir al die oortjies. Die knop
 | Kontrole | Wat dit doen |
 |---|---|
 | **Spoorhoogte km** + **van radar** | Hoogte van die meteoorspore (verstek 90 km). Met *van radar* gemerk word die mees algemene hoogte (modus) gebruik wat deur die Collm-radar gemeet is; sien [Radarvloed](Radar-Flux-af). |
-| **Lob-elevasie °** | Laagste elevasie van jou antennalob (0° = horison). Slegs punte van die E-laag wat albei stasies bo hierdie elevasie sien, word gebruik. |
+| **Lob-elevasie °** | Hoogtehoek van die maksimum van jou antenna se vertikale lob: 'n rigtingantenna wat op 0° vasgemaak is, het weens die grondweerkaatsing tog sy lob 'n paar grade bo die horison (gewoonlik 3-8°). Met die blokkie **antennapatroon** aan (verstek) word die punte van die E-laag geweeg met die vertikale patroon van albei antennas; af word net die punte gebruik wat albei stasies bo hierdie hoogtehoek sien. |
 | **Yagi-antenna: boom m** | Boomlengte van jou Yagi. Die program wys die lengte in λ, die wins (DL6WU-kurwe) en die −3 dB-lob, horisontaal en vertikaal; sien [Geometrie en padverlies](Geometry-and-Path-Loss-af#wins-en-lob-van-die-antenna). Onder 2 λ is die skatting rof. |
 | **Hot spot vanaf middelpunt km** + **auto (AMS)** | Afstand van Hot A en Hot B vanaf die middelpunt. Met *auto (AMS)* gemerk (verstek) volg dit die antennaverskuiwingstabel van J. Richardson (AMS) wat DJ5HG aanhaal: 13° by 1000 km, 11° by 1250 km, 10° by 1500 en 2000 km (ongeveer 115, 121, 132 en 176 km vanaf die middelpunt). Ontmerk dit om 30–400 km met die hand in te voer (MSHV gebruik 150 km). |
 

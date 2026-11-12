@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Contoh: Yagi 14 λ pada 432 MHz → 20,3 dBi, lobus 18,1° horizontal dan 19,5° vertikal; model W4RNL memberikan 20,4 dBi dan 18,4° / 18,8°. Ini adalah aturan perkiraan yang diturunkan dari beberapa antena DL6WU.
 
-Antena selalu dianggap diarahkan ke DX. Sebuah hot spot berada **di dalam lobus** jika |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: maka hot spot itu digambar abu-abu pada [Kubah langit](Sky-View-id) dan muncul peringatan. Dalam perhitungan efisiensi antena dianggap isotropik; lobus nyata hanya dipakai untuk pemeriksaan ini.
+Antena selalu dianggap diarahkan ke DX. Sebuah hot spot berada **di dalam lobus** jika |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: lalu digambar abu-abu di [Kubah langit](Sky-View-id) dan muncul peringatan. Lobus vertikal juga masuk ke perhitungan efisiensi: dengan kotak *pola antena* aktif, titik pantulan diberi bobot dengan penguatan vertikal kedua antena (lebar θ_vertical, puncak pada elevasi lobus, faktor tanah sampai nol di cakrawala).
 
 ## Aturan eksperimental antarband
 

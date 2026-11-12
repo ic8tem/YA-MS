@@ -30,7 +30,7 @@ Elke stap heeft een gekleurd label:
 | 6. Van één punt naar de efficiëntie | Reflectiepunten om de 15 km, gewicht van elk punt, percentage; vergelijking met QTFGUI (DJ5HG) |
 | 7. De resultaten lezen | Zijde A / B, trajectindex, kleuren van de radianten, PREV-zones, doorsnede gezien vanaf de antenne |
 | 8. Werkfrequentie en trajectdemping | λ³- / λ²-regels, van radar naar amateurband, referenties voor de trajectdemping |
-| 9. Bekende beperkingen | Alleen onderdichte sporen, isotrope antennes, werkwaarden |
+| 9. Bekende beperkingen | Alleen onderdichte sporen, isotrope antennes (in azimut; verticaal diagram optioneel), werkwaarden |
 | 10. Bronnen | 17 genummerde bronnen |
 
 ## Knoppen

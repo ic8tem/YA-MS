@@ -24,7 +24,7 @@ Nad zakładkami znajdują się trzy wiersze elementów sterujących, wspólne dl
 | Element | Działanie |
 |---|---|
 | **Wysokość śladu km** + **z radaru** | Wysokość śladów meteorów (domyślnie 90 km). Przy zaznaczonym *z radaru* używana jest najczęstsza wysokość (dominanta) zmierzona przez radar w Collm; zob. [Strumień radarowy](Radar-Flux-pl). |
-| **Elewacja listka °** | Najniższa elewacja listka twojej anteny (0° = horyzont). Używane są tylko te punkty warstwy E, które obie stacje widzą powyżej tej elewacji. |
+| **Elewacja listka °** | Elewacja maksimum pionowego listka twojej anteny: antena kierunkowa ustawiona na 0° i tak ma listek kilka stopni nad horyzontem z powodu odbicia od ziemi (zwykle 3-8°). Przy włączonym polu **charakterystyka anteny** (domyślnie) punkty warstwy E są ważone pionową charakterystyką obu anten; po wyłączeniu używa się tylko punktów, które obie stacje widzą powyżej tej elewacji. |
 | **Antena Yagi: boom m** | Długość boomu twojej anteny Yagi. Program pokazuje długość w λ, zysk (krzywa DL6WU) i listek −3 dB, poziomy i pionowy; zob. [Geometria i tłumienie trasy](Geometry-and-Path-Loss-pl#zysk-i-listek-anteny). Poniżej 2 λ szacunek jest przybliżony. |
 | **Hot spot od punktu środkowego km** + **auto (AMS)** | Odległość Hot A i Hot B od punktu środkowego. Przy zaznaczonym *auto (AMS)* (domyślnie) wynika z tabeli odchyleń anteny J. Richardsona (AMS) przytoczonej przez DJ5HG: 13° przy 1000 km, 11° przy 1250 km, 10° przy 1500 i 2000 km (około 115, 121, 132 i 176 km od punktu środkowego). Odznacz, aby wpisać ręcznie 30–400 km (MSHV używa 150 km). |
 

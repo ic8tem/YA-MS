@@ -24,7 +24,7 @@ Au-dessus des onglets se trouvent trois rangées de commandes, valables pour tou
 | Commande | Rôle |
 |---|---|
 | **Altitude traînées km** + **du radar** | Altitude des traînées météoriques (90 km par défaut). Avec *du radar* coché, c'est l'altitude la plus fréquente (mode) mesurée par le radar de Collm qui est utilisée ; voir [Flux radar](Radar-Flux-fr). |
-| **Élévation du lobe °** | Élévation minimale du lobe de votre antenne (0° = horizon). Seuls les points de la couche E que les deux stations voient au-dessus de cette élévation sont pris en compte. |
+| **Élévation du lobe °** | Élévation du maximum du lobe vertical de votre antenne : une directive fixée à 0° a quand même son lobe quelques degrés au-dessus de l'horizon à cause de la réflexion sur le sol (en général 3-8°). Avec la case **diagramme d'antenne** activée (par défaut), les points de la couche E sont pondérés par le diagramme vertical des deux antennes ; désactivée, seuls les points que les deux stations voient au-dessus de cette élévation sont utilisés. |
 | **Antenne Yagi : boom m** | Longueur du boom de votre Yagi. Le programme affiche la longueur en λ, le gain (courbe DL6WU) et le lobe à −3 dB, horizontal et vertical ; voir [Géométrie et affaiblissement](Geometry-and-Path-Loss-fr#gain-et-lobe-de-lantenne). Sous 2 λ, l'estimation est grossière. |
 | **Hot spot depuis le point milieu km** + **auto (AMS)** | Distance de Hot A et Hot B au point milieu. Avec *auto (AMS)* coché (par défaut), elle suit le tableau des décalages d'antenne de J. Richardson (AMS) cité par DJ5HG : 13° à 1000 km, 11° à 1250 km, 10° à 1500 et 2000 km (environ 115, 121, 132 et 176 km du point milieu). Décochez-le pour saisir 30–400 km à la main (MSHV utilise 150 km). |
 

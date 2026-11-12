@@ -132,7 +132,7 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 
 Példa: 14 λ-s Yagi 432 MHz-en → 20,3 dBi, a nyaláb vízszintesen 18,1°, függőlegesen 19,5°; W4RNL modelljei 20,4 dBi-t és 18,4° / 18,8°-ot adnak. Ezek néhány DL6WU-antennából levezetett közelítő szabályok.
 
-Az antennát a program mindig a DX felé irányítottnak tekinti. Egy hot spot akkor van **a nyalábon belül**, ha |Az(Hot) − Az(antenna)| ≤ θ_horizontal/2: ekkor szürkén jelenik meg az [Égbolt-kupolán](Sky-View-hu), és figyelmeztetés jelenik meg. A hatékonyság-számításban az antennák izotrópok; a valós nyalábot csak ehhez az ellenőrzéshez használja.
+Az antennát mindig a DX felé fordítottnak tekintjük. Egy hot spot **a nyalábon belül** van, ha |Az(Hot) − Az(antenna)| ≤ θ_horizontal/2: ekkor szürkén rajzolódik a [Égbolt-kupolán](Sky-View-hu) nézetben, és figyelmeztetés jelenik meg. A függőleges nyaláb a hatásfok számításába is belép: bekapcsolt *antenna iránykarakterisztika* jelölőnégyzettel a visszaverődési pontokat a két antenna függőleges nyeresége súlyozza (szélesség θ_vertical, maximum a nyaláb emelkedési szögénél, talajtényező a horizontig nulláig).
 
 ## Kísérleti szabályok a sávok között
 

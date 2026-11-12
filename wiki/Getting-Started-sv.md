@@ -24,7 +24,7 @@ Ovanför flikarna finns tre rader med reglage som gäller för alla flikar. Knap
 | Reglage | Vad det gör |
 |---|---|
 | **Spårhöjd km** + **från radar** | Meteorspårens höjd (standard 90 km). Med *från radar* ikryssat används den vanligaste höjden (typvärdet) som Collm-radarn har mätt; se [Radarflöde](Radar-Flux-sv). |
-| **Lobelevation °** | Lägsta elevation för din antennlob (0° = horisonten). Endast punkter i E-skiktet som båda stationerna ser ovanför denna elevation används. |
+| **Lobelevation °** | Elevation för maximum hos antennens vertikala lob: en riktantenn fast på 0° har ändå sin lob några grader över horisonten på grund av markreflexen (oftast 3-8°). Med rutan **antenndiagram** på (standard) vägs punkterna i E-skiktet med båda antennernas vertikala diagram; av används bara punkter som båda stationerna ser över denna elevation. |
 | **Yagiantenn: bom m** | Bomlängden på din yagi. Programmet visar längden i λ, förstärkningen (DL6WU-kurvan) och −3 dB-loben, horisontellt och vertikalt; se [Geometri och dämpning](Geometry-and-Path-Loss-sv#antennförstärkning-och-lob). Under 2 λ är uppskattningen grov. |
 | **Hot spot från mittpunkt km** + **auto (AMS)** | Avståndet från mittpunkten till Hot A och Hot B. Med *auto (AMS)* ikryssat (standard) följer det tabellen över antennförskjutning av J. Richardson (AMS) som DJ5HG citerar: 13° vid 1000 km, 11° vid 1250 km, 10° vid 1500 och 2000 km (omkring 115, 121, 132 och 176 km från mittpunkten). Kryssa ur för att ange 30–400 km för hand (MSHV använder 150 km). |
 

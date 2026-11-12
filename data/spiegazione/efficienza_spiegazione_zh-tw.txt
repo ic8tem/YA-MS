@@ -92,6 +92,7 @@ TAG|FONTE|關於輻射點最佳方向的兩種觀點。業餘無線電的經典�
 TAG|FONTE|完整公式的觀點：McKinley [8] 和 ITU-R P.843 [24] 給每條餘跡的功率乘上因子 1 / (1 − cos²β sin²φ)，其中 β 是餘跡與路徑平面的夾角。位於平面內的餘跡（β = 0）比穿過平面的餘跡（β = 90°）多反射 1/cos²φ 倍：600 至 2000 km 間為 10-15 dB。輻射點與路徑同向時，相切的餘跡靠近平面，權重較大；輻射點橫跨路徑時，餘跡穿過平面，權重較小。DJ5HG [18] 使用同一因子，其逐時曲線的形狀與 YA-MS 開啟 β 時得到的一致（形狀偏差約 3 dB）。
 TAG|RILIEVO|兩種觀點使用同一鏡面反射條件，但對餘跡的加權不同：經典觀點計算有用餘跡的數量，完整觀點還考慮其功率。在 1000 km、輻射點高 30° 時，垂直方向的輻射點不計 β 為 67 %，計 β 為 15 %。與實測計數的初步比較無法區分兩者（見下段）：要作出判斷，需要更長的路徑和更多接收站。
 TAG|RILIEVO|與實測計數比較：2026 年 8 月 12 日至 28 日在 Sonneberg 接收的 BRAMS 偵測（Dourbes 信標，49.97 MHz，路徑 471 km），約 97 000 個回波，以 M. Bundscherer 的方法 [34] 偵測。扣除背景（8 月 22 日至 27 日逐時中位數）後，英仙座流星雨最多在 8 月 13 日 02 至 10 UTC 之間於 300-470 之上增加約 80-130 個回波／小時：在 50 MHz，它們相對偶發流星分量很小。逐時超出量與 YA-MS 的計算（英仙座效率 × ZHR）相關，開啟 β 時相關係數 0.44，關閉時 0.43，與 ZHR 乘輻射點高度正弦所得相同；使用長餘跡時降至 0.36。在這條短路徑上，幾何沒有提供額外資訊，比較無法在兩種觀點之間作出判斷。限制：只有一台接收機；自適應偵測門檻可能在最活躍時段降低計數；背景日仍有小流星雨活動；信標天線指向天頂。
+TAG|RILIEVO|與真實 spot 的比較：HamSCI 2025 年 8 月 11-12 日 Meteor Scatter QSO Party 中 50 MHz 的 181 767 筆 MSK144 spot（英仙座流星雨，幾乎全是北美電台，300 至 2300 km 之間的 5207 條路徑）[35]。逐小時看，有 spot 的路徑數量跟隨程式計算的路徑指數：開啟 β 角時相關係數 0.77，關閉時 0.66（秩相關 0.72 和 0.68），兩天的最大值都在 10 至 12 UTC 之間；但這些時段也與偶發流星的高峰和操作員的活動重合。在同一小時、同樣活躍的電台中，無論程式（β 開啟或關閉）還是 DH9GCD 公式，都無法區分互相聽到的電台對和沒有聽到的電台對（AUC 0.51-0.53，0.5 即為隨機）：哪一對能互相聽到，取決於指數中不包含的偶發流星以及活動情況。這些資料證實了逐小時的變化趨勢，但無法區分關於 β 的兩種觀點。工具：程式的 --indici-tratte 選項和 tools/verifica_spot.py。
 TAG|SCELTA|程式中「餘跡與路徑的夾角 β（完整 McKinley）」核取方塊預設開啟，因為它不高估任何餘跡（保守值）；關閉時採用經典觀點。「經典判斷」核取方塊在逐時表格中每個流星雨下方增加在路徑中點計算的經典判斷一列：✗ 輻射點在地平線下，◐ 勉強（低於 15° 或高於 70°，或與路徑方向相差不到 30°），● 好，★ 最佳（在 15° 與 70° 之間，且與路徑方向相差超過 60°），門檻取自 meteor-mcp [31]。它不改變計算：逐時顯示兩種觀點在哪裡一致、在哪裡不一致。
 H2|6.3 百分比
 TAG|SCELTA|對每個輻射點方向，累加餘跡發生反射的所有點的權重。100% 對應該路徑最有利的輻射點位置：
@@ -175,3 +176,4 @@ SRC|31. meteor-mcp, qso-graph - meteor scatter MCP server, github.com/qso-graph/
 SRC|32. IAU Meteor Data Center - established showers list, www.ta3.sk/IAUC22DB/MDC2022 (Jenniskens et al., Planetary and Space Science 182, 104821, 2020; Jopek & Kaňuchová, Planetary and Space Science 143, 3-6, 2017).
 SRC|33. Global Meteor Network - shower flux and daily trajectory summary, globalmeteornetwork.org, CC BY 4.0 (Vida et al. 2021, 2022).
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
+SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.

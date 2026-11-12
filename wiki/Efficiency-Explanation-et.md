@@ -30,7 +30,7 @@ Igal sammul on värviline märgend:
 | 6. Ühest punktist efektiivsuseni | Peegelduspunktid iga 15 km järel, iga punkti kaal, protsent; võrdlus QTFGUI-ga (DJ5HG) |
 | 7. Tulemuste lugemine | Pool A / B, trassi indeks, radiantide värvid, PREV alad, antennist nähtav lõige |
 | 8. Töösagedus ja sumbumine | λ³ / λ² reeglid, radarilt amatöörsagedusalale, sumbumise viited |
-| 9. Teadaolevad piirangud | Ainult alatihedad jäljed, isotroopsed antennid, tööväärtused |
+| 9. Teadaolevad piirangud | Ainult alatihedad jäljed, isotroopsed antennid (asimuudis; vertikaalne diagramm valikuline), tööväärtused |
 | 10. Allikad | 17 nummerdatud allikat |
 
 ## Nupud

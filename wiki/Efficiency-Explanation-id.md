@@ -30,7 +30,7 @@ Setiap langkah membawa label berwarna:
 | 6. Dari satu titik ke efisiensi | Titik pantul setiap 15 km, bobot setiap titik, persentase; perbandingan dengan QTFGUI (DJ5HG) |
 | 7. Membaca hasil | Sisi A / B, indeks lintasan, warna radian, zona PREV, penampang dilihat dari antena |
 | 8. Frekuensi kerja dan redaman lintasan | Aturan λ³ / λ², dari radar ke band amatir, referensi redaman lintasan |
-| 9. Batasan yang diketahui | Hanya jejak underdense, antena isotropik, nilai kerja |
+| 9. Batasan yang diketahui | Hanya jejak underdense, antena isotropik (pada azimut; pola vertikal opsional), nilai kerja |
 | 10. Sumber | 17 sumber bernomor |
 
 ## Tombol

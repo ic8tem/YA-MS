@@ -38,7 +38,10 @@ NOVITA' DELLA 1.8.1
   - Linguetta "Efficienza - spiegazione" rinominata "Spiegazione del calcolo dell'efficienza".
   - Nuovo "Manuale d'uso" (Documenti tecnici), con la stessa formattazione della spiegazione ed esportabile in Word
     (data/manuale_uso.txt e .docx).
-  - Angolo beta: il fumetto mostra l'effetto sulle tratte lunghe con un esempio misurato.
+  - Angolo beta: casella in evidenza (riquadro arancione, "la scelta che pesa di piu'"); il fumetto mostra l'effetto
+    sulle tratte lunghe con un esempio misurato e quanto pesa ogni scelta.
+  - Verifica con spot reali: 181 767 spot MSK144 su 50 MHz del Meteor Scatter QSO Party HamSCI (agosto 2025) confrontati
+    con gli indici del programma (spiegazione, manuale dei calcoli, manuale d'uso 7.3 "Quanto fidarsi dei numeri").
   - Una sola data: "Data del calcolo (UTC)" vale anche per la tabella delle 24 ore di "Calcolo dell'efficienza"
     (tolta la casella "Giorno per la tabella 24 h (UTC)", che ripeteva la stessa scelta).
   - Avviso "NESSUNA ZONA COMUNE" (Calcolo previsionale e Calcolo dell'efficienza) quando nessun punto dello strato e'

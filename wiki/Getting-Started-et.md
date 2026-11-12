@@ -24,7 +24,7 @@ Sakkide kohal on kolm juhtnuppude rida, mis kehtivad kõigil sakkidel. Paremal �
 | Juhtnupp | Mida see teeb |
 |---|---|
 | **Jälgede kõrgus km** + **radarilt** | Meteoorijälgede kõrgus (vaikimisi 90 km). Kui *radarilt* on märgitud, kasutatakse Collmi radari mõõdetud sagedaseimat kõrgust (moodi); vt [Radari voog](Radar-Flux-et). |
-| **Peaharu elevatsioon °** | Sinu antenni peaharu madalaim elevatsioon (0° = horisont). Kasutatakse ainult neid E-kihi punkte, mida mõlemad jaamad näevad sellest elevatsioonist kõrgemal. |
+| **Peaharu elevatsioon °** | Antenni vertikaalse keila maksimumi kõrgusnurk: 0° peale kinnitatud suunaantennil on maapinnalt peegeldumise tõttu keil siiski mõne kraadi võrra horisondist kõrgemal (tavaliselt 3-8°). Kui kast **antenni suunadiagramm** on sees (vaikimisi), kaalutakse E-kihi punkte mõlema antenni vertikaalse suunadiagrammiga; väljas kasutatakse ainult punkte, mida mõlemad jaamad näevad sellest kõrgusnurgast kõrgemal. |
 | **Yagi antenn: poom m** | Sinu Yagi poomi pikkus. Programm näitab pikkust λ-des, võimendust (DL6WU kõver) ja −3 dB peaharu horisontaalselt ja vertikaalselt; vt [Geomeetria ja sumbumine](Geometry-and-Path-Loss-et#antenni-võimendus-ja-peaharu). Alla 2 λ on hinnang ebatäpne. |
 | **Hot spot keskpunktist km** + **auto (AMS)** | Hot A ja Hot B kaugus keskpunktist. Kui *auto (AMS)* on märgitud (vaikimisi), järgib see J. Richardsoni (AMS) antennisuuna nihete tabelit, mida tsiteerib DJ5HG: 13° 1000 km juures, 11° 1250 km juures, 10° 1500 ja 2000 km juures (umbes 115, 121, 132 ja 176 km keskpunktist). Eemalda märge, et sisestada 30–400 km käsitsi (MSHV kasutab 150 km). |
 

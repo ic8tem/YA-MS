@@ -30,7 +30,7 @@ Varje steg har en färgad etikett:
 | 6. Från en punkt till effektiviteten | Reflexionspunkter var 15:e km, varje punkts vikt, procent; jämförelse med QTFGUI (DJ5HG) |
 | 7. Läsa resultaten | Sida A / B, sträckindex, radianternas färger, PREV-zoner, tvärsnitt sett från antennen |
 | 8. Arbetsfrekvens och sträckdämpning | Reglerna λ³ / λ², från radar till amatörband, referenser för sträckdämpning |
-| 9. Kända begränsningar | Endast underdensa spår, isotropa antenner, arbetsvärden |
+| 9. Kända begränsningar | Endast underdensa spår, isotropa antenner (i azimut; vertikalt diagram valfritt), arbetsvärden |
 | 10. Källor | 17 numrerade källor |
 
 ## Knappar

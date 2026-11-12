@@ -234,5 +234,6 @@
  "Versione 1.8.1 - a cura di Costantino IC8TEM - novembre 2026": "সংস্করণ 1.8.1 - Costantino IC8TEM কর্তৃক প্রস্তুত - নভেম্বর 2026",
  "PROCEDURA": "পদ্ধতি",
  "NOTA": "নোট",
- "ATTENZIONE": "সতর্কতা"
+ "ATTENZIONE": "সতর্কতা",
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "অন্যান্য Linux ARM সিস্টেম (যেমন Slackware ARM64 বা armv7l বোর্ড): linux-arm64 বা linux-armv7l প্যাকেজ, .tar.gz-এ, Linux-এর মতো। PC-এর 32 বিট Linux (i686) ও FreeBSD পাওয়া যায় না, কারণ .NET 8 এগুলোতে চলে না।"
 }

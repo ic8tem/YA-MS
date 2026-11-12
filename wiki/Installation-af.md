@@ -14,9 +14,13 @@ Al die pakkette is op die **[Releases](https://github.com/ic8tem/YA-MS/releases)
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bis) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bis) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian-pakket | `ya-ms_x.y.z_arm64.deb` (64-bis) of `ya-ms_x.y.z_armhf.deb` (32-bis) | `~/YA-MS` (daarheen gekopieer by die eerste opstart) |
+| Linux ARM 64-bis, enige verspreiding (bv. Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (draagbaar of met `./installa.sh`) | `~/YA-MS` of enige gids |
+| Linux armv7l (ARM 32-bis), enige verspreiding | `YA-MS-x.y.z-linux-armv7l.tar.gz` (draagbaar of met `./installa.sh`) | `~/YA-MS` of enige gids |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, slegs die toepassing | `YA-MS-x.y.z-mac-apple-silicon-app.zip` of `...-mac-intel-app.zip` | die gids waarin jy `YA-MS.app` uitpak |
+
+32-bis-PC-Linux (i686) en FreeBSD het geen pakket nie: .NET 8, waarop YA-MS gebou is, werk nie op hierdie stelsels nie.
 
 **Die program en sy `data`-gids bly altyd saam** in die YA-MS-gids: alle data en instellings is daar (geen AppData, geen stelselgidse nie). Sien [Instellings en datagids](Settings-and-Data-Folder-af).
 

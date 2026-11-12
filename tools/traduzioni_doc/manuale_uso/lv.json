@@ -234,5 +234,6 @@
  "Versione 1.8.1 - a cura di Costantino IC8TEM - novembre 2026": "Versija 1.8.1 - sagatavojis Costantino IC8TEM - 2026. gada novembris",
  "PROCEDURA": "PROCEDŪRA",
  "NOTA": "PIEZĪME",
- "ATTENZIONE": "UZMANĪBU"
+ "ATTENZIONE": "UZMANĪBU",
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Citas ARM Linux sistēmas (piemēram, Slackware ARM64 vai armv7l plates): pakotne linux-arm64 vai linux-armv7l, .tar.gz formātā, kā Linux gadījumā. 32 bitu datora Linux (i686) un FreeBSD nav pieejami, jo .NET 8 tajos nedarbojas."
 }

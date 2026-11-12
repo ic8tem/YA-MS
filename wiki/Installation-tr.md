@@ -14,9 +14,13 @@ Tüm paketler **[Releases](https://github.com/ic8tem/YA-MS/releases)** sayfasın
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian paketi | `ya-ms_x.y.z_arm64.deb` (64 bit) ya da `ya-ms_x.y.z_armhf.deb` (32 bit) | `~/YA-MS` (ilk açılışta oraya kopyalanır) |
+| Linux ARM 64 bit, herhangi bir dağıtım (ör. Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (taşınabilir ya da `./installa.sh` ile) | `~/YA-MS` ya da herhangi bir klasör |
+| Linux armv7l (ARM 32 bit), herhangi bir dağıtım | `YA-MS-x.y.z-linux-armv7l.tar.gz` (taşınabilir ya da `./installa.sh` ile) | `~/YA-MS` ya da herhangi bir klasör |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, yalnızca uygulama | `YA-MS-x.y.z-mac-apple-silicon-app.zip` ya da `...-mac-intel-app.zip` | `YA-MS.app`'i açtığınız klasör |
+
+32 bit PC Linux (i686) ve FreeBSD için paket yok: YA-MS'in dayandığı .NET 8 bu sistemlerde çalışmaz.
 
 **Program ve `data` klasörü her zaman birlikte durur**, YA-MS klasöründe: tüm veriler ve ayarlar oradadır (AppData yok, sistem klasörü yok). Bkz. [Ayarlar ve veri klasörü](Settings-and-Data-Folder-tr).
 

@@ -14,9 +14,13 @@ Semua paket ada di halaman **[Releases](https://github.com/ic8tem/YA-MS/releases
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, paket Debian | `ya-ms_x.y.z_arm64.deb` (64-bit) atau `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (disalin ke sana saat pertama kali dijalankan) |
+| Linux ARM 64 bit, distribusi apa pun (mis. Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (portabel atau dengan `./installa.sh`) | `~/YA-MS` atau folder mana pun |
+| Linux armv7l (ARM 32 bit), distribusi apa pun | `YA-MS-x.y.z-linux-armv7l.tar.gz` (portabel atau dengan `./installa.sh`) | `~/YA-MS` atau folder mana pun |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, hanya aplikasi | `YA-MS-x.y.z-mac-apple-silicon-app.zip` atau `...-mac-intel-app.zip` | folder tempat Anda mengekstrak `YA-MS.app` |
+
+Linux PC 32 bit (i686) dan FreeBSD tidak memiliki paket: .NET 8, dasar YA-MS, tidak berjalan di sistem tersebut.
 
 **Program dan folder `data`-nya selalu berada bersama** di folder YA-MS: semua data dan pengaturan ada di sana (tanpa AppData, tanpa folder sistem). Lihat [Pengaturan dan folder data](Settings-and-Data-Folder-id).
 

@@ -14,9 +14,13 @@
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 бита) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 бита) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, пакет Debian | `ya-ms_x.y.z_arm64.deb` (64 бита) или `ya-ms_x.y.z_armhf.deb` (32 бита) | `~/YA-MS` (копируется туда при первом запуске) |
+| Linux ARM 64 бит, любой дистрибутив (например, Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (портативно или через `./installa.sh`) | `~/YA-MS` или любая папка |
+| Linux armv7l (ARM 32 бит), любой дистрибутив | `YA-MS-x.y.z-linux-armv7l.tar.gz` (портативно или через `./installa.sh`) | `~/YA-MS` или любая папка |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, только приложение | `YA-MS-x.y.z-mac-apple-silicon-app.zip` или `...-mac-intel-app.zip` | папка, в которую вы распаковали `YA-MS.app` |
+
+Для 32-битного Linux на ПК (i686) и FreeBSD пакета нет: .NET 8, на котором основан YA-MS, на этих системах не работает.
 
 **Программа и её папка `data` всегда находятся вместе** в папке YA-MS: там все данные и настройки (никакого AppData и системных папок). См. [Настройки и папка данных](Settings-and-Data-Folder-ru).
 

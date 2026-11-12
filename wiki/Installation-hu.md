@@ -14,9 +14,13 @@ Minden csomag a **[Releases](https://github.com/ic8tem/YA-MS/releases)** oldalon
 | Raspberry Pi 3/4/5, 400/500 (64 bites Raspberry Pi OS) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (32 bites Raspberry Pi OS) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian-csomag | `ya-ms_x.y.z_arm64.deb` (64 bites) vagy `ya-ms_x.y.z_armhf.deb` (32 bites) | `~/YA-MS` (az első indításkor oda másolódik) |
+| Linux ARM 64 bites, bármely disztribúció (pl. Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (hordozhatóként vagy a `./installa.sh` szkripttel) | `~/YA-MS` vagy bármely mappa |
+| Linux armv7l (ARM 32 bites), bármely disztribúció | `YA-MS-x.y.z-linux-armv7l.tar.gz` (hordozhatóként vagy a `./installa.sh` szkripttel) | `~/YA-MS` vagy bármely mappa |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, csak az alkalmazás | `YA-MS-x.y.z-mac-apple-silicon-app.zip` vagy `...-mac-intel-app.zip` | az a mappa, ahová a `YA-MS.app` csomagot kibontja |
+
+A 32 bites PC-s Linuxhoz (i686) és a FreeBSD-hez nincs csomag: a .NET 8, amelyre a YA-MS épül, ezeken a rendszereken nem fut.
 
 **A program és a `data` mappája mindig együtt marad** a YA-MS mappában: minden adat és beállítás ott található (nincs AppData, nincsenek rendszermappák). Lásd: [Beállítások és adatmappa](Settings-and-Data-Folder-hu).
 

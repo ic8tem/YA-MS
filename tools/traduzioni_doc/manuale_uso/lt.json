@@ -234,5 +234,6 @@
  "Versione 1.8.1 - a cura di Costantino IC8TEM - novembre 2026": "1.8.1 versija - parengė Costantino IC8TEM - 2026 m. lapkritis",
  "PROCEDURA": "PROCEDŪRA",
  "NOTA": "PASTABA",
- "ATTENZIONE": "DĖMESIO"
+ "ATTENZIONE": "DĖMESIO",
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Kitos ARM Linux sistemos (pavyzdžiui, Slackware ARM64 ar armv7l plokštės): paketas linux-arm64 arba linux-armv7l, .tar.gz formatu, kaip Linux atveju. 32 bitų kompiuterių Linux (i686) ir FreeBSD nėra, nes .NET 8 juose neveikia."
 }

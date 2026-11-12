@@ -14,9 +14,13 @@ Kõik paketid on lehel **[Releases](https://github.com/ic8tem/YA-MS/releases)** 
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bitine) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bitine) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debiani pakett | `ya-ms_x.y.z_arm64.deb` (64-bitine) või `ya-ms_x.y.z_armhf.deb` (32-bitine) | `~/YA-MS` (kopeeritakse sinna esimesel käivitusel) |
+| Linux ARM 64-bitine, mis tahes distributsioon (nt Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (kaasaskantav või `./installa.sh` abil) | `~/YA-MS` või mis tahes kaust |
+| Linux armv7l (ARM 32-bitine), mis tahes distributsioon | `YA-MS-x.y.z-linux-armv7l.tar.gz` (kaasaskantav või `./installa.sh` abil) | `~/YA-MS` või mis tahes kaust |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, ainult rakendus | `YA-MS-x.y.z-mac-apple-silicon-app.zip` või `...-mac-intel-app.zip` | kaust, kuhu `YA-MS.app` lahti pakid |
+
+32-bitise arvuti-Linuxi (i686) ja FreeBSD jaoks paketti pole: .NET 8, millel YA-MS põhineb, nendes süsteemides ei tööta.
 
 **Programm ja selle kaust `data` on alati koos** YA-MS-i kaustas: kõik andmed ja seaded on seal (ei AppData-t ega süsteemikaustu). Vt [Seaded ja andmekaust](Settings-and-Data-Folder-et).
 

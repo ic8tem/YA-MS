@@ -234,5 +234,6 @@
  "Versione 1.8.1 - a cura di Costantino IC8TEM - novembre 2026": "1.8.1-es verzió - készítette Costantino IC8TEM - 2026. november",
  "PROCEDURA": "ELJÁRÁS",
  "NOTA": "MEGJEGYZÉS",
- "ATTENZIONE": "FIGYELEM"
+ "ATTENZIONE": "FIGYELEM",
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Más ARM-es Linux rendszerek (például Slackware ARM64 vagy armv7l lapok): a linux-arm64 vagy linux-armv7l csomag, .tar.gz formában, mint Linuxon. 32 bites PC-s Linux (i686) és FreeBSD nem érhető el, mert a .NET 8 nem fut rajtuk."
 }

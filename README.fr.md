@@ -25,7 +25,10 @@ Depuis la page **[Releases](https://github.com/ic8tem/YA-MS/releases/latest)** :
 - **Windows** : `...-windows-x64-setup.exe` (32 bits : `...-windows-x86-setup.exe`) ou le zip portable ;
 - **Linux** : `ya-ms_..._amd64.deb` ou `...-linux-x64.tar.gz` ;
 - **Raspberry Pi** : `ya-ms_..._arm64.deb` / `_armhf.deb` ou les tar.gz 64 et 32 bits ;
+- **Linux ARM** (p. ex. Slackware ARM64, cartes armv7l) : `...-linux-arm64.tar.gz` ou `...-linux-armv7l.tar.gz` ;
 - **Mac** : `...-mac-apple-silicon.dmg` ou `...-mac-intel.dmg` (ou l'app.zip).
+
+Linux PC 32 bits (i686) et FreeBSD ne sont pas disponibles : .NET 8 ne fonctionne pas sur ces systèmes.
 
 Les données restent dans le dossier `data` à côté du programme. Instructions complètes dans le **[wiki](https://github.com/ic8tem/YA-MS/wiki/Home-fr)** et dans `LEGGIMI.txt`.
 

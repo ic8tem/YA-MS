@@ -14,9 +14,13 @@ Nasa pahinang **[Releases](https://github.com/ic8tem/YA-MS/releases)** ang lahat
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian package | `ya-ms_x.y.z_arm64.deb` (64-bit) o `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (kinokopya roon sa unang pagsisimula) |
+| Linux ARM 64 bit, anumang distribusyon (hal. Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (portable o gamit ang `./installa.sh`) | `~/YA-MS` o anumang folder |
+| Linux armv7l (ARM 32 bit), anumang distribusyon | `YA-MS-x.y.z-linux-armv7l.tar.gz` (portable o gamit ang `./installa.sh`) | `~/YA-MS` o anumang folder |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, application lamang | `YA-MS-x.y.z-mac-apple-silicon-app.zip` o `...-mac-intel-app.zip` | ang folder kung saan mo ie-extract ang `YA-MS.app` |
+
+Walang package para sa 32-bit na Linux ng PC (i686) at sa FreeBSD: hindi tumatakbo sa mga sistemang ito ang .NET 8, na pinagbabatayan ng YA-MS.
 
 **Laging magkasama ang programa at ang `data` folder nito** sa folder na YA-MS: naroon ang lahat ng datos at setting (walang AppData, walang system folder). Tingnan ang [Mga setting at folder ng datos](Settings-and-Data-Folder-tl).
 

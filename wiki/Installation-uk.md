@@ -14,9 +14,13 @@
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 біт) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 біт) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, пакет Debian | `ya-ms_x.y.z_arm64.deb` (64 біт) або `ya-ms_x.y.z_armhf.deb` (32 біт) | `~/YA-MS` (копіюється туди під час першого запуску) |
+| Linux ARM 64 біт, будь-який дистрибутив (наприклад, Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (портативно або через `./installa.sh`) | `~/YA-MS` або будь-яка тека |
+| Linux armv7l (ARM 32 біт), будь-який дистрибутив | `YA-MS-x.y.z-linux-armv7l.tar.gz` (портативно або через `./installa.sh`) | `~/YA-MS` або будь-яка тека |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, лише застосунок | `YA-MS-x.y.z-mac-apple-silicon-app.zip` або `...-mac-intel-app.zip` | тека, у яку ви розпакували `YA-MS.app` |
+
+Для 32-бітного Linux на ПК (i686) і FreeBSD пакета немає: .NET 8, на якому побудовано YA-MS, на цих системах не працює.
 
 **Програма і її тека `data` завжди лишаються разом** у теці YA-MS: там усі дані й налаштування (без AppData і системних тек). Див. [Налаштування і тека даних](Settings-and-Data-Folder-uk).
 

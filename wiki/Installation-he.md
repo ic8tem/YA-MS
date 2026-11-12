@@ -14,9 +14,13 @@
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64-bit) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32-bit) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, חבילת Debian | `ya-ms_x.y.z_arm64.deb` (64-bit) או `ya-ms_x.y.z_armhf.deb` (32-bit) | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
+| Linux ARM ‏64 ביט, כל הפצה (למשל Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (נייד או עם `./installa.sh`) | `~/YA-MS` או כל תיקייה |
+| Linux armv7l ‏(ARM ‏32 ביט), כל הפצה | `YA-MS-x.y.z-linux-armv7l.tar.gz` (נייד או עם `./installa.sh`) | `~/YA-MS` או כל תיקייה |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, היישום בלבד | `YA-MS-x.y.z-mac-apple-silicon-app.zip` או `...-mac-intel-app.zip` | התיקייה שאליה חילצתם את `YA-MS.app` |
+
+ל-Linux למחשב ב-32 ביט (i686) ול-FreeBSD אין חבילה: ‎.NET 8, שעליו בנוי YA-MS, אינו פועל במערכות אלה.
 
 **התוכנה ותיקיית ה-`data` שלה נשארות תמיד יחד** בתיקיית YA-MS: כל הנתונים וההגדרות נמצאים שם (בלי AppData, בלי תיקיות מערכת). ראו [הגדרות ותיקיית נתונים](Settings-and-Data-Folder-he).
 

@@ -14,9 +14,13 @@ Toate pachetele se află pe pagina **[Releases](https://github.com/ic8tem/YA-MS/
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 de biți) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 de biți) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, pachet Debian | `ya-ms_x.y.z_arm64.deb` (64 de biți) sau `ya-ms_x.y.z_armhf.deb` (32 de biți) | `~/YA-MS` (copiat acolo la prima pornire) |
+| Linux ARM pe 64 de biți, orice distribuție (de ex. Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (portabil sau cu `./installa.sh`) | `~/YA-MS` sau orice dosar |
+| Linux armv7l (ARM pe 32 de biți), orice distribuție | `YA-MS-x.y.z-linux-armv7l.tar.gz` (portabil sau cu `./installa.sh`) | `~/YA-MS` sau orice dosar |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, doar aplicația | `YA-MS-x.y.z-mac-apple-silicon-app.zip` sau `...-mac-intel-app.zip` | dosarul în care extrageți `YA-MS.app` |
+
+Linux pe 32 de biți pentru PC (i686) și FreeBSD nu au pachet: .NET 8, pe care se bazează YA-MS, nu funcționează pe aceste sisteme.
 
 **Programul și dosarul său `data` stau întotdeauna împreună** în dosarul YA-MS: toate datele și setările se află acolo (fără AppData, fără dosare de sistem). Vedeți [Setări și dosarul de date](Settings-and-Data-Folder-ro).
 

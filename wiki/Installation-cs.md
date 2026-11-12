@@ -14,9 +14,13 @@ Všechny balíčky jsou na stránce **[Releases](https://github.com/ic8tem/YA-MS
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64bitový) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32bitový) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, balíček Debian | `ya-ms_x.y.z_arm64.deb` (64bitový) nebo `ya-ms_x.y.z_armhf.deb` (32bitový) | `~/YA-MS` (zkopíruje se tam při prvním spuštění) |
+| Linux ARM 64 bit, libovolná distribuce (např. Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (přenosně nebo pomocí `./installa.sh`) | `~/YA-MS` nebo libovolná složka |
+| Linux armv7l (ARM 32 bit), libovolná distribuce | `YA-MS-x.y.z-linux-armv7l.tar.gz` (přenosně nebo pomocí `./installa.sh`) | `~/YA-MS` nebo libovolná složka |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, jen aplikace | `YA-MS-x.y.z-mac-apple-silicon-app.zip` nebo `...-mac-intel-app.zip` | složka, do které rozbalíte `YA-MS.app` |
+
+Pro 32bitový PC Linux (i686) a FreeBSD balíček není: .NET 8, na kterém YA-MS stojí, na těchto systémech nefunguje.
 
 **Program a jeho složka `data` zůstávají vždy spolu** ve složce YA-MS: jsou v ní všechna data a nastavení (žádné AppData, žádné systémové složky). Viz [Nastavení a datová složka](Settings-and-Data-Folder-cs).
 

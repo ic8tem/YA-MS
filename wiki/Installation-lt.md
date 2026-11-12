@@ -14,9 +14,13 @@ Visi paketai yra puslapyje **[Releases](https://github.com/ic8tem/YA-MS/releases
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bitų) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bitų) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian paketas | `ya-ms_x.y.z_arm64.deb` (64 bitų) arba `ya-ms_x.y.z_armhf.deb` (32 bitų) | `~/YA-MS` (nukopijuojama ten pirmą kartą paleidžiant) |
+| Linux ARM 64 bitų, bet kuri distribucija (pvz., Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (nešiojamoji arba su `./installa.sh`) | `~/YA-MS` arba bet kuris aplankas |
+| Linux armv7l (ARM 32 bitų), bet kuri distribucija | `YA-MS-x.y.z-linux-armv7l.tar.gz` (nešiojamoji arba su `./installa.sh`) | `~/YA-MS` arba bet kuris aplankas |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, tik programa | `YA-MS-x.y.z-mac-apple-silicon-app.zip` arba `...-mac-intel-app.zip` | aplankas, į kurį išskleidžiate `YA-MS.app` |
+
+32 bitų kompiuterių Linux (i686) ir FreeBSD paketo neturi: .NET 8, kuriuo paremta YA-MS, šiose sistemose neveikia.
 
 **Programa ir jos aplankas `data` visada būna kartu** YA-MS aplanke: ten yra visi duomenys ir nustatymai (jokio AppData, jokių sisteminių aplankų). Žr. [Nustatymai ir duomenų aplankas](Settings-and-Data-Folder-lt).
 

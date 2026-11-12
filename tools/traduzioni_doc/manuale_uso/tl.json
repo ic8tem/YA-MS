@@ -234,5 +234,6 @@
  "Versione 1.8.1 - a cura di Costantino IC8TEM - novembre 2026": "Bersyon 1.8.1 - inihanda ni Costantino IC8TEM - Nobyembre 2026",
  "PROCEDURA": "PAMAMARAAN",
  "NOTA": "TALA",
- "ATTENZIONE": "BABALA"
+ "ATTENZIONE": "BABALA",
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Iba pang sistemang Linux ARM (halimbawa Slackware ARM64 o mga board na armv7l): ang package na linux-arm64 o linux-armv7l, sa .tar.gz, gaya ng sa Linux. Walang 32-bit na Linux ng PC (i686) at FreeBSD, dahil hindi tumatakbo roon ang .NET 8."
 }

@@ -14,9 +14,13 @@
 | Raspberry Pi 3/4/5、400/500 (Raspberry Pi OS 64 ビット) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 ビット) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi、Debian パッケージ | `ya-ms_x.y.z_arm64.deb` (64 ビット) または `ya-ms_x.y.z_armhf.deb` (32 ビット) | `~/YA-MS` (初回起動時にそこへコピー) |
+| Linux ARM 64 ビット、任意のディストリビューション（例: Slackware ARM64） | `YA-MS-x.y.z-linux-arm64.tar.gz` (ポータブル、または `./installa.sh` で) | `~/YA-MS` または任意のフォルダー |
+| Linux armv7l（ARM 32 ビット）、任意のディストリビューション | `YA-MS-x.y.z-linux-armv7l.tar.gz` (ポータブル、または `./installa.sh` で) | `~/YA-MS` または任意のフォルダー |
 | macOS、Apple シリコン (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS、Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS、アプリケーションのみ | `YA-MS-x.y.z-mac-apple-silicon-app.zip` または `...-mac-intel-app.zip` | `YA-MS.app` を展開したフォルダー |
+
+32 ビット PC 用 Linux（i686）と FreeBSD のパッケージはありません。YA-MS の土台である .NET 8 がこれらのシステムでは動作しないためです。
 
 **プログラムとその `data` フォルダーは常に一緒に** YA-MS フォルダー内に置かれます。すべてのデータと設定はそこにあります (AppData もシステムフォルダーも使いません)。[設定とデータフォルダー](Settings-and-Data-Folder-ja) を参照してください。
 

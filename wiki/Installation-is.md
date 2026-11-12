@@ -14,9 +14,13 @@ Allir pakkar eru á síðunni **[Releases](https://github.com/ic8tem/YA-MS/relea
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bita) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bita) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian-pakki | `ya-ms_x.y.z_arm64.deb` (64 bita) eða `ya-ms_x.y.z_armhf.deb` (32 bita) | `~/YA-MS` (afritað þangað við fyrstu ræsingu) |
+| Linux ARM 64 bita, hvaða dreifing sem er (t.d. Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (færanlegt eða með `./installa.sh`) | `~/YA-MS` eða hvaða mappa sem er |
+| Linux armv7l (ARM 32 bita), hvaða dreifing sem er | `YA-MS-x.y.z-linux-armv7l.tar.gz` (færanlegt eða með `./installa.sh`) | `~/YA-MS` eða hvaða mappa sem er |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, aðeins forritið | `YA-MS-x.y.z-mac-apple-silicon-app.zip` eða `...-mac-intel-app.zip` | mappan þar sem þú afþjappar `YA-MS.app` |
+
+32 bita PC-Linux (i686) og FreeBSD hafa engan pakka: .NET 8, sem YA-MS byggir á, keyrir ekki á þessum kerfum.
 
 **Forritið og mappan þess `data` eru alltaf saman** í möppunni YA-MS: þar eru öll gögn og stillingar (engin AppData, engar kerfismöppur). Sjá [Stillingar og gagnamappa](Settings-and-Data-Folder-is).
 

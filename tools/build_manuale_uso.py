@@ -49,6 +49,7 @@ p("Tutti i pacchetti sono nella pagina delle release su GitHub (github.com/ic8te
 li("Windows 64 bit: YA-MS-<versione>-windows-x64-setup.exe (installa in C:\\YA-MS, senza diritti di amministratore) oppure lo zip portatile, da estrarre in una cartella qualsiasi. Per Windows a 32 bit gli stessi file con x86.")
 li("Linux (Debian, Ubuntu, Mint): il pacchetto .deb, da installare con sudo apt install ./ya-ms_<versione>_amd64.deb; al primo avvio il programma si copia in ~/YA-MS. Per le altre distribuzioni il .tar.gz, da estrarre ed eseguire con ./YA-MS.")
 li("Raspberry Pi 3, 4, 5, 400 e 500: il pacchetto raspberry-pi-64bit (Raspberry Pi OS 64 bit) oppure raspberry-pi-32bit, in .tar.gz o .deb.")
+li("Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.")
 li("macOS: il .dmg per Apple Silicon (M1 e successivi) o per Intel, oppure l'app.zip. Trascina YA-MS.app in una cartella tua (per esempio ~/YA-MS): la cartella data si crea accanto all'app.")
 tag("ATTENZIONE", "Windows può mostrare \"Windows ha protetto il PC\": scegli \"Ulteriori informazioni\" e poi \"Esegui comunque\". Su macOS, la prima volta, apri l'app con il tasto destro e \"Apri\". Il programma non è firmato con un certificato a pagamento.")
 h2("2.2 Il primo avvio")

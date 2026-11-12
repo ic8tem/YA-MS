@@ -234,5 +234,6 @@
  "Versione 1.8.1 - a cura di Costantino IC8TEM - novembre 2026": "Verze 1.8.1 - připravil Costantino IC8TEM - listopad 2026",
  "PROCEDURA": "POSTUP",
  "NOTA": "POZNÁMKA",
- "ATTENZIONE": "POZOR"
+ "ATTENZIONE": "POZOR",
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Jiné systémy Linux ARM (například Slackware ARM64 nebo desky armv7l): balíček linux-arm64 nebo linux-armv7l, jako .tar.gz, stejně jako pro Linux. 32bitový PC Linux (i686) a FreeBSD nejsou k dispozici, protože na nich .NET 8 neběží."
 }

@@ -14,9 +14,13 @@ Visas pakotnes ir lapā **[Releases](https://github.com/ic8tem/YA-MS/releases)**
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 biti) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 biti) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debian pakotne | `ya-ms_x.y.z_arm64.deb` (64 biti) vai `ya-ms_x.y.z_armhf.deb` (32 biti) | `~/YA-MS` (tur nokopēts pirmajā palaišanā) |
+| Linux ARM 64 bitu, jebkurš distributīvs (piem. Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (portatīvi vai ar `./installa.sh`) | `~/YA-MS` vai jebkura mape |
+| Linux armv7l (ARM 32 bitu), jebkurš distributīvs | `YA-MS-x.y.z-linux-armv7l.tar.gz` (portatīvi vai ar `./installa.sh`) | `~/YA-MS` vai jebkura mape |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, tikai lietotne | `YA-MS-x.y.z-mac-apple-silicon-app.zip` vai `...-mac-intel-app.zip` | mape, kurā atarhivē `YA-MS.app` |
+
+32 bitu datora Linux (i686) un FreeBSD nav pakotnes: .NET 8, uz kā balstās YA-MS, šajās sistēmās nedarbojas.
 
 **Programma un tās `data` mape vienmēr paliek kopā** YA-MS mapē: tur ir visi dati un iestatījumi (ne AppData, ne sistēmas mapes). Sk. [Iestatījumi un datu mape](Settings-and-Data-Folder-lv).
 

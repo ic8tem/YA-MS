@@ -234,5 +234,6 @@
  "Versione 1.8.1 - a cura di Costantino IC8TEM - novembre 2026": "Sürüm 1.8.1 - hazırlayan: Costantino IC8TEM - Kasım 2026",
  "PROCEDURA": "YORDAM",
  "NOTA": "NOT",
- "ATTENZIONE": "DİKKAT"
+ "ATTENZIONE": "DİKKAT",
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Diğer ARM Linux sistemleri (örneğin Slackware ARM64 veya armv7l kartlar): Linux'taki gibi .tar.gz biçiminde linux-arm64 veya linux-armv7l paketi. 32 bit PC Linux (i686) ve FreeBSD mevcut değildir, çünkü .NET 8 bunlarda çalışmaz."
 }

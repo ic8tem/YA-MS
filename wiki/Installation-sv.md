@@ -14,9 +14,13 @@ Alla paket finns på sidan **[Releases](https://github.com/ic8tem/YA-MS/releases
 | Raspberry Pi 3/4/5, 400/500 (Raspberry Pi OS 64 bitar) | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4 (Raspberry Pi OS 32 bitar) | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi, Debianpaket | `ya-ms_x.y.z_arm64.deb` (64 bitar) eller `ya-ms_x.y.z_armhf.deb` (32 bitar) | `~/YA-MS` (kopieras dit vid första starten) |
+| Linux ARM 64 bitar, valfri distribution (t.ex. Slackware ARM64) | `YA-MS-x.y.z-linux-arm64.tar.gz` (portabel eller med `./installa.sh`) | `~/YA-MS` eller valfri mapp |
+| Linux armv7l (ARM 32 bitar), valfri distribution | `YA-MS-x.y.z-linux-armv7l.tar.gz` (portabel eller med `./installa.sh`) | `~/YA-MS` eller valfri mapp |
 | macOS, Apple silicon (M1/M2/M3/M4) | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS, Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS, endast programmet | `YA-MS-x.y.z-mac-apple-silicon-app.zip` eller `...-mac-intel-app.zip` | mappen där du packar upp `YA-MS.app` |
+
+32-bitars PC-Linux (i686) och FreeBSD har inget paket: .NET 8, som YA-MS bygger på, fungerar inte på dessa system.
 
 **Programmet och dess mapp `data` hålls alltid ihop** i mappen YA-MS: där finns alla data och inställningar (ingen AppData, inga systemmappar). Se [Inställningar och datamapp](Settings-and-Data-Folder-sv).
 

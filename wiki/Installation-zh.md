@@ -14,9 +14,13 @@
 | Raspberry Pi 3/4/5、400/500（Raspberry Pi OS 64 位） | `YA-MS-x.y.z-raspberry-pi-64bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi 2/3/4（Raspberry Pi OS 32 位） | `YA-MS-x.y.z-raspberry-pi-32bit.tar.gz` | `~/YA-MS` |
 | Raspberry Pi，Debian 软件包 | `ya-ms_x.y.z_arm64.deb`（64 位）或 `ya-ms_x.y.z_armhf.deb`（32 位） | `~/YA-MS`（首次启动时复制到该处） |
+| Linux ARM 64 位，任意发行版（如 Slackware ARM64） | `YA-MS-x.y.z-linux-arm64.tar.gz`（便携使用或通过 `./installa.sh` 安装） | `~/YA-MS` 或任意文件夹 |
+| Linux armv7l（ARM 32 位），任意发行版 | `YA-MS-x.y.z-linux-armv7l.tar.gz`（便携使用或通过 `./installa.sh` 安装） | `~/YA-MS` 或任意文件夹 |
 | macOS，Apple 芯片（M1/M2/M3/M4） | `YA-MS-x.y.z-mac-apple-silicon.dmg` | `~/YA-MS` |
 | macOS，Intel | `YA-MS-x.y.z-mac-intel.dmg` | `~/YA-MS` |
 | macOS，仅应用程序 | `YA-MS-x.y.z-mac-apple-silicon-app.zip` 或 `...-mac-intel-app.zip` | 解压出 `YA-MS.app` 的文件夹 |
+
+32 位 PC Linux（i686）和 FreeBSD 没有安装包：YA-MS 所依赖的 .NET 8 不能在这些系统上运行。
 
 **程序与其 `data` 文件夹始终放在一起**，位于 YA-MS 文件夹中：所有数据和设置都在那里（不使用 AppData，不使用系统文件夹）。参见[设置与数据文件夹](Settings-and-Data-Folder-zh)。
 

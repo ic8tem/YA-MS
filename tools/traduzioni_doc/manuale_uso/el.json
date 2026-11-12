@@ -234,5 +234,6 @@
  "Versione 1.8.1 - a cura di Costantino IC8TEM - novembre 2026": "Έκδοση 1.8.1 - από τον Costantino IC8TEM - Νοέμβριος 2026",
  "PROCEDURA": "ΔΙΑΔΙΚΑΣΙΑ",
  "NOTA": "ΣΗΜΕΙΩΣΗ",
- "ATTENZIONE": "ΠΡΟΣΟΧΗ"
+ "ATTENZIONE": "ΠΡΟΣΟΧΗ",
+ "Altri Linux ARM (per esempio Slackware ARM64 o schede armv7l): il pacchetto linux-arm64 oppure linux-armv7l, in .tar.gz, come per Linux. Linux a 32 bit per PC (i686) e FreeBSD non sono disponibili, perché .NET 8 non vi funziona.": "Άλλα συστήματα Linux ARM (για παράδειγμα Slackware ARM64 ή πλακέτες armv7l): το πακέτο linux-arm64 ή linux-armv7l, σε .tar.gz, όπως για το Linux. Το Linux 32 bit για PC (i686) και το FreeBSD δεν είναι διαθέσιμα, γιατί το .NET 8 δεν λειτουργεί σε αυτά."
 }

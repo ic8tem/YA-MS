@@ -1,37 +1,40 @@
-# Sonda: il codice di main (lobo come diagramma) sulla tratta JN70CN83 -> JO76QP del 14/12/2026, lobo 3 gradi
+# Sonda: contenuto del dataset Zenodo 18109759 (HamSCI MSQP agosto 2025, spot PSKReporter)
 name: sonda
-
 on:
   push:
     branches: [ sonda ]
-
-permissions:
-  contents: write
-
 jobs:
-  prova:
+  dati:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-      - uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '8.0.x'
-      - name: Compila
-        run: dotnet publish YA-MS.csproj -c Release -r linux-x64 --self-contained true -p:DebugType=none -o app
-      - name: Programmi
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq xvfb > /dev/null
-      - name: Fotografie al 14/12/2026 12:00 UTC
+      - name: Elenco dei file
         run: |
-          printf 'mio_locator=JN70CN83\nmia_quota_m=62\ndx_locator=JO76QP\ndx_quota_m=50\nquota_da_radar=0\nquota_scie_km=88.5\nelevazione_lobo_gradi=3\nboom_m=9.2\nlingua=it\ntema=chiaro\n' > app/data/config.ini
-          sudo timedatectl set-ntp false || true
-          sudo date -u -s "2026-12-14 12:00:00"
-          timeout 300 xvfb-run -a -s "-screen 0 1900x1000x24" ./app/YA-MS --screenshot "$PWD/shots" --dx JO76QP --ore 0 || true
-          printf 'mio_locator=JN70CN83\nmia_quota_m=62\ndx_locator=JO76QP\ndx_quota_m=50\nquota_da_radar=0\nquota_scie_km=88.5\nelevazione_lobo_gradi=3\nboom_m=9.2\nlingua=it\ntema=chiaro\nlobo_diagramma=0\n' > app/data/config.ini
-          timeout 300 xvfb-run -a -s "-screen 0 1900x1000x24" ./app/YA-MS --screenshot "$PWD/shots/netto" --dx JO76QP --ore 0 || true
-          ls shots
-      - name: Pubblica
+          curl -sSL https://zenodo.org/api/records/18109759 -o rec.json
+          python3 -c "
+          import json;d=json.load(open('rec.json'))
+          for f in d['files']: print(f['key'], f['size'], f['links']['self'])
+          "
+      - name: File TSV e README
         run: |
-          cd shots && git init -q -b r && git config user.name "github-actions" && git config user.email "actions@github.com"
-          git add -A && git commit -q -m "prova main" && git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" r:prova-main
+          python3 -c "
+          import json,urllib.request
+          d=json.load(open('rec.json'))
+          for f in d['files']:
+              k=f['key']
+              if k.lower().endswith(('.tsv','.rtf','.txt')):
+                  urllib.request.urlretrieve(f['links']['self'], k); print('scaricato',k)
+          "
+          ls -la
+          for f in *.rtf *.txt; do [ -e "$f" ] && { echo "=== $f"; head -c 4000 "$f"; echo; }; done
+          for f in *.tsv; do
+            echo "=== $f"; wc -l "$f"; head -5 "$f"; echo ...; tail -3 "$f"
+            python3 - "$f" <<'PY'
+          import sys,collections,csv
+          f=sys.argv[1]
+          r=list(csv.reader(open(f,encoding='utf-8',errors='replace'),delimiter='\t'))
+          h=r[0]; print('colonne',len(h),h)
+          for i,c in enumerate(h):
+              vals=collections.Counter(x[i] for x in r[1:] if len(x)>i)
+              print(i,c,'distinti',len(vals),'es',list(vals.most_common(6)))
+          PY
+          done

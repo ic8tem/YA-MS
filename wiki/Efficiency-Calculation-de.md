@@ -8,7 +8,7 @@
 
 Die **Effektivität** eines Meteorstroms gibt in Prozent an, wie sehr die Position seines Radianten Reflexionen auf **deiner** Strecke zulässt. Das Konzept stammt von Ilkka **OH5IY** (MS-Soft) und wird im Artikel Cerrotta–Sartori aufgegriffen: Das Maximum der Effektivität fällt nicht mit dem visuellen Maximum (ZHR) zusammen, weil es davon abhängt, wo der Radiant relativ zu den beiden Stationen steht. MCG_MS von DL5MCG wendet dieselbe Idee auf vier feste Richtungen an; YA-MS berechnet sie für die **tatsächliche Strecke** zwischen den beiden Locatoren.
 
-Dieser Reiter zeigt sie Stunde für Stunde für den in *Tag für 24-h-Tabelle (UTC)* gewählten Tag (Werte zur halben Stunde).
+Dieser Reiter zeigt sie Stunde für Stunde für den in *Berechnungsdatum (UTC)* gewählten Tag (Werte zur halben Stunde).
 
 ## Übersichtskarten
 

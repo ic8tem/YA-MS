@@ -8,7 +8,7 @@
 
 L'**efficienza** di uno sciame dice, in percentuale, quanto la posizione del suo radiante consente riflessioni sulla **tua** tratta. Il concetto è di Ilkka **OH5IY** (MS-Soft) ed è ripreso nell'articolo Cerrotta–Sartori: il massimo di efficienza non coincide con il massimo visuale (ZHR), perché dipende da dove si trova il radiante rispetto alle due stazioni. MCG_MS di DL5MCG applica la stessa idea a quattro direzioni fisse; YA-MS la calcola per la **tratta reale** tra i due locator.
 
-Questa linguetta la mostra ora per ora per il giorno scelto in *Giorno per la tabella 24 h (UTC)* (valori alla mezza di ogni ora).
+Questa linguetta la mostra ora per ora per il giorno scelto in *Data del calcolo (UTC)* (valori alla mezza di ogni ora).
 
 ## Schede riassuntive
 

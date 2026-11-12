@@ -8,7 +8,7 @@
 
 The **efficiency** of a shower says, in percent, how much the position of its radiant allows reflections on **your** path. The concept is by Ilkka **OH5IY** (MS-Soft) and is taken up in the Cerrotta–Sartori article: the efficiency peak does not coincide with the visual peak (ZHR), because it depends on where the radiant is relative to the two stations. MCG_MS by DL5MCG applies the same idea to four fixed directions; YA-MS computes it for the **real path** between the two locators.
 
-This tab shows it hour by hour for the day chosen in *Day for the 24 h table (UTC)* (values at half past each hour).
+This tab shows it hour by hour for the day chosen in *Calculation date (UTC)* (values at half past each hour).
 
 ## Glance cards
 

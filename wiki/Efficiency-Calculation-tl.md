@@ -8,7 +8,7 @@
 
 Sinasabi ng **episyensya** ng isang shower, sa porsiyento, kung gaano pinahihintulutan ng posisyon ng radiant nito ang mga repleksiyon sa **iyong** landas. Ang konsepto ay kay Ilkka **OH5IY** (MS-Soft) at ginamit sa artikulong Cerrotta–Sartori: hindi nagkakasabay ang peak ng episyensya at ang biswal na peak (ZHR), dahil nakadepende ito sa kinaroroonan ng radiant kaugnay ng dalawang istasyon. Ginagamit ng MCG_MS ni DL5MCG ang parehong ideya sa apat na nakapirming direksiyon; kinakalkula ito ng YA-MS para sa **totoong landas** sa pagitan ng dalawang locator.
 
-Ipinapakita ito ng tab na ito bawat oras para sa araw na pinili sa *Araw para sa 24 h na talahanayan (UTC)* (mga halaga sa kalahating oras).
+Ipinapakita ito ng tab na ito bawat oras para sa araw na pinili sa *Petsa ng kalkulasyon (UTC)* (mga halaga sa kalahating oras).
 
 ## Mga card na mabilisang tingnan
 

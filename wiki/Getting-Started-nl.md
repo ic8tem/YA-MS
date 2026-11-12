@@ -33,10 +33,9 @@ Boven de tabbladen staan drie rijen bedieningselementen die voor alle tabbladen 
 | Element | Wat het doet |
 |---|---|
 | **Uur** | UTC-klok. |
-| **Berekeningsdatum (UTC)** | De dag van de berekening voor [Voorspellingsberekening](Sky-View-nl) en [Radar GRAVES](GRAVES-Radar-nl) (standaard vandaag), op het huidige tijdstip van de dag. |
+| **Berekeningsdatum (UTC)** | De dag van de berekening voor [Voorspellingsberekening](Sky-View-nl) en [Radar GRAVES](GRAVES-Radar-nl) (standaard vandaag), op het huidige tijdstip van de dag. Ook: de dag die wordt getoond in [Efficiëntieberekening](Efficiency-Calculation-nl) en in de tijdlijn van GRAVES. |
 | **Uren (−12 tot +36 u)** | Verschuift het moment van de berekening van 12 uur vóór tot 36 uur na dat tijdstip, in stappen van 15 minuten. Ernaast: *Berekening voor: nu* of *Berekening voor: dd/mm hh:mm UTC*. |
 | **Realtime** | Terug naar nu. |
-| **Dag voor de 24-uurstabel (UTC)** | De dag die wordt getoond in [Efficiëntieberekening](Efficiency-Calculation-nl) en in de tijdlijn van GRAVES. |
 
 ## 2. Jouw station en de DX
 

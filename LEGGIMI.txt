@@ -1,4 +1,4 @@
-YA-MS 1.8.0 - a cura di Costantino IC8TEM
+YA-MS 1.8.1 - a cura di Costantino IC8TEM
 Previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter (50-432 MHz)
 Windows (64 e 32 bit), Linux, Raspberry Pi e Mac.
 
@@ -29,6 +29,15 @@ INSTALLAZIONE
   data/backup/v<versione vecchia>) e riavvia YA-MS. Serve poter scrivere nella cartella del programma.
   Se all'avvio mancano file del programma (in data o in doc), una finestra li elenca e propone di riscaricarli
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
+
+NOVITA' DELLA 1.8.1
+  - "Documenti tecnici" e' ora l'ultima linguetta.
+  - Una sola data: "Data del calcolo (UTC)" vale anche per la tabella delle 24 ore di "Calcolo dell'efficienza"
+    (tolta la casella "Giorno per la tabella 24 h (UTC)", che ripeteva la stessa scelta).
+  - Avviso "NESSUNA ZONA COMUNE" (Calcolo previsionale e Calcolo dell'efficienza) quando nessun punto dello strato e'
+    visto da entrambe le stazioni sopra l'elevazione del lobo: spiega perche' le efficienze valgono 0 e quale elevazione
+    del lobo o quota delle scie servirebbe. I riquadri del colpo d'occhio dicono perche' sono vuoti e hanno un fumetto.
+  - Caselle numeriche: i pulsanti su/giu' non coprono piu' il bordo arrotondato.
 
 NOVITA' DELLA 1.8.0
   - Aggiornamento automatico: avviso delle versioni nuove pubblicate su GitHub, installazione con un clic e riavvio;

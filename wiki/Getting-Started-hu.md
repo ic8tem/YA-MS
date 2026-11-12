@@ -33,10 +33,9 @@ A fülek felett három sor vezérlőelem található, amelyek minden fülre érv
 | Vezérlő | Mire szolgál |
 |---|---|
 | **Idő** | UTC-óra. |
-| **Számítás dátuma (UTC)** | A számítás napja az [Előrejelzés-számítás](Sky-View-hu) és a [GRAVES-radar](GRAVES-Radar-hu) számára (alapértelmezés a mai nap), az aktuális napszakban. |
+| **Számítás dátuma (UTC)** | A számítás napja az [Előrejelzés-számítás](Sky-View-hu) és a [GRAVES-radar](GRAVES-Radar-hu) számára (alapértelmezés a mai nap), az aktuális napszakban. Egyben: a [Hatékonyság-számítás](Efficiency-Calculation-hu) fülön és a GRAVES-idővonalon megjelenített nap. |
 | **Órák (−12 és +36 h között)** | A számítás időpontját az adott időponthoz képest 12 órával korábbra és 36 órával későbbre tolja, 15 perces lépésekben. Mellette: *Számítás erre: most* vagy *Számítás erre: nn/hh óó:pp UTC*. |
 | **Valós idő** | Vissza a jelenhez. |
-| **A 24 órás táblázat napja (UTC)** | A [Hatékonyság-számítás](Efficiency-Calculation-hu) fülön és a GRAVES-idővonalon megjelenített nap. |
 
 ## 2. Az Ön állomása és a DX
 

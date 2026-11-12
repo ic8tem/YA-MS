@@ -8,7 +8,7 @@
 
 Plūsmas **efektivitāte** procentos norāda, cik lielā mērā tās radianta stāvoklis ļauj atstarojumus **tavā** trasē. Jēdziena autors ir Ilkka **OH5IY** (MS-Soft), un to pārņem Cerrotta–Sartori raksts: efektivitātes maksimums nesakrīt ar vizuālo maksimumu (ZHR), jo tas atkarīgs no tā, kur radiants atrodas attiecībā pret abām stacijām. DL5MCG MCG_MS to pašu ideju piemēro četriem fiksētiem virzieniem; YA-MS to aprēķina **reālajai trasei** starp abiem lokatoriem.
 
-Šī cilne to rāda pa stundām dienai, kas izvēlēta laukā *Diena 24 h tabulai (UTC)* (vērtības katras stundas vidū).
+Šī cilne to rāda pa stundām dienai, kas izvēlēta laukā *Aprēķina datums (UTC)* (vērtības katras stundas vidū).
 
 ## Pārskata kartītes
 

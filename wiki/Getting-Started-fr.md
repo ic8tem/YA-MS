@@ -33,10 +33,9 @@ Au-dessus des onglets se trouvent trois rangées de commandes, valables pour tou
 | Commande | Rôle |
 |---|---|
 | **Heure** | Horloge UTC. |
-| **Date du calcul (UTC)** | Le jour du calcul pour [Calcul prévisionnel](Sky-View-fr) et [Radar GRAVES](GRAVES-Radar-fr) (aujourd'hui par défaut), à l'heure actuelle de la journée. |
+| **Date du calcul (UTC)** | Le jour du calcul pour [Calcul prévisionnel](Sky-View-fr) et [Radar GRAVES](GRAVES-Radar-fr) (aujourd'hui par défaut), à l'heure actuelle de la journée. Aussi: le jour affiché dans [Calcul de l'efficacité](Efficiency-Calculation-fr) et dans la chronologie GRAVES. |
 | **Heures (de −12 à +36 h)** | Déplace l'instant du calcul de 12 heures avant à 36 heures après cette heure, par pas de 15 minutes. À côté : *Calcul pour : maintenant* ou *Calcul pour : jj/mm hh:mm UTC*. |
 | **Temps réel** | Revient à l'instant présent. |
-| **Jour pour le tableau 24 h (UTC)** | Le jour affiché dans [Calcul de l'efficacité](Efficiency-Calculation-fr) et dans la chronologie GRAVES. |
 
 ## 2. Votre station et le correspondant
 

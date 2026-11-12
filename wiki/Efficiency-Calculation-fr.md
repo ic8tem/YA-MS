@@ -8,7 +8,7 @@
 
 L'**efficacité** d'un essaim indique, en pour cent, dans quelle mesure la position de son radiant permet des réflexions sur **votre** trajet. Le concept est dû à Ilkka **OH5IY** (MS-Soft) et il est repris dans l'article Cerrotta–Sartori : le maximum d'efficacité ne coïncide pas avec le maximum visuel (ZHR), car il dépend de la position du radiant par rapport aux deux stations. MCG_MS de DL5MCG applique la même idée à quatre directions fixes ; YA-MS la calcule pour le **trajet réel** entre les deux locators.
 
-Cet onglet l'affiche heure par heure pour le jour choisi dans *Jour pour le tableau 24 h (UTC)* (valeurs à la demi de chaque heure).
+Cet onglet l'affiche heure par heure pour le jour choisi dans *Date du calcul (UTC)* (valeurs à la demi de chaque heure).
 
 ## Cartes de synthèse
 

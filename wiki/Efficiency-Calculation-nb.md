@@ -8,7 +8,7 @@
 
 En sverms **effektivitet** sier, i prosent, hvor mye posisjonen til radianten tillater refleksjoner på **din** strekning. Begrepet stammer fra Ilkka **OH5IY** (MS-Soft) og er tatt opp i artikkelen av Cerrotta–Sartori: effektivitetens maksimum faller ikke sammen med det visuelle maksimumet (ZHR), fordi det avhenger av hvor radianten står i forhold til de to stasjonene. MCG_MS av DL5MCG bruker samme idé på fire faste retninger; YA-MS beregner den for den **faktiske strekningen** mellom de to lokatorene.
 
-Fanen viser den time for time for dagen som er valgt i *Dag for 24 t-tabellen (UTC)* (verdier ved halv time).
+Fanen viser den time for time for dagen som er valgt i *Beregningsdato (UTC)* (verdier ved halv time).
 
 ## Oversiktspaneler
 

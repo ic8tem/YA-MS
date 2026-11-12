@@ -8,7 +8,7 @@
 
 **Efektywność** roju mówi, w procentach, w jakim stopniu położenie jego radiantu umożliwia odbicia na **twojej** trasie. Koncepcja pochodzi od Ilkki **OH5IY** (MS-Soft) i została przejęta w artykule Cerrotta–Sartori: maksimum efektywności nie pokrywa się z maksimum wizualnym (ZHR), ponieważ zależy od tego, gdzie znajduje się radiant względem obu stacji. MCG_MS autorstwa DL5MCG stosuje tę samą ideę do czterech stałych kierunków; YA-MS oblicza ją dla **rzeczywistej trasy** między dwoma lokatorami.
 
-Ta zakładka pokazuje ją godzina po godzinie dla dnia wybranego w polu *Dzień dla tabeli 24 h (UTC)* (wartości w połowie każdej godziny).
+Ta zakładka pokazuje ją godzina po godzinie dla dnia wybranego w polu *Data obliczeń (UTC)* (wartości w połowie każdej godziny).
 
 ## Karty podsumowania
 

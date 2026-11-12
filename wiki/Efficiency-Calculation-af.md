@@ -8,7 +8,7 @@
 
 Die **doeltreffendheid** van 'n swerm sê, in persent, in watter mate die posisie van sy radiant refleksies op **jou** pad toelaat. Die konsep is van Ilkka **OH5IY** (MS-Soft) en word in die Cerrotta–Sartori-artikel oorgeneem: die doeltreffendheidsmaksimum val nie saam met die visuele maksimum (ZHR) nie, omdat dit afhang van waar die radiant relatief tot die twee stasies is. MCG_MS van DL5MCG pas dieselfde idee toe op vier vaste rigtings; YA-MS bereken dit vir die **werklike pad** tussen die twee lokators.
 
-Hierdie oortjie wys dit uur vir uur vir die dag wat in *Dag vir die 24 h-tabel (UTC)* gekies is (waardes op die halfuur van elke uur).
+Hierdie oortjie wys dit uur vir uur vir die dag wat in *Berekeningsdatum (UTC)* gekies is (waardes op die halfuur van elke uur).
 
 ## Oorsigkaarte
 

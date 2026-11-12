@@ -8,7 +8,7 @@
 
 **Efisiensi** sebuah hujan meteor menyatakan, dalam persen, seberapa besar posisi radiannya memungkinkan pantulan pada lintasan **Anda**. Konsep ini berasal dari Ilkka **OH5IY** (MS-Soft) dan diangkat dalam artikel Cerrotta–Sartori: puncak efisiensi tidak bertepatan dengan puncak visual (ZHR), karena bergantung pada letak radian relatif terhadap kedua stasiun. MCG_MS karya DL5MCG menerapkan gagasan yang sama pada empat arah tetap; YA-MS menghitungnya untuk **lintasan nyata** antara kedua locator.
 
-Tab ini menampilkannya jam demi jam untuk hari yang dipilih di *Hari untuk tabel 24 jam (UTC)* (nilai pada setengah jam setiap jam).
+Tab ini menampilkannya jam demi jam untuk hari yang dipilih di *Tanggal perhitungan (UTC)* (nilai pada setengah jam setiap jam).
 
 ## Kartu ringkas
 

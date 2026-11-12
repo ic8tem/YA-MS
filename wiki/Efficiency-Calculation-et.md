@@ -8,7 +8,7 @@
 
 Meteoorivoolu **efektiivsus** näitab protsentides, kui palju selle radiandi asend võimaldab peegeldusi **sinu** trassil. Mõiste pärineb Ilkka **OH5IY**-lt (MS-Soft) ja on üle võetud Cerrotta–Sartori artiklis: efektiivsuse maksimum ei lange kokku visuaalse maksimumiga (ZHR), sest see sõltub sellest, kus radiant kahe jaama suhtes asub. DL5MCG MCG_MS rakendab sama ideed neljale fikseeritud suunale; YA-MS arvutab selle kahe lokaatori vahelise **tegeliku trassi** jaoks.
 
-See sakk näitab efektiivsust tund-tunnilt päeval, mis on valitud väljal *Päev 24 h tabeli jaoks (UTC)* (väärtused iga tunni poole peal).
+See sakk näitab efektiivsust tund-tunnilt päeval, mis on valitud väljal *Arvutuse kuupäev (UTC)* (väärtused iga tunni poole peal).
 
 ## Ülevaatekaardid
 

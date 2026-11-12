@@ -33,10 +33,9 @@
 | 控制項 | 作用 |
 |---|---|
 | **時間** | UTC 時鐘。 |
-| **計算日期（UTC）** | [預報計算](Sky-View-zh-tw)和 [GRAVES 雷達](GRAVES-Radar-zh-tw)的計算日期（預設為今天），時刻取當天的目前時間。 |
+| **計算日期（UTC）** | [預報計算](Sky-View-zh-tw)和 [GRAVES 雷達](GRAVES-Radar-zh-tw)的計算日期（預設為今天），時刻取當天的目前時間。 同時也是：[效率計算](Efficiency-Calculation-zh-tw)和 GRAVES 時間線中顯示的日期。 |
 | **小時（−12 至 +36 h）** | 將計算時刻在該時間之前 12 小時到之後 36 小時之間移動，步長 15 分鐘。旁邊顯示*計算時間：目前*或*計算時間：dd/mm hh:mm UTC*。 |
 | **即時** | 回到目前時刻。 |
-| **24 h 表格的日期（UTC）** | [效率計算](Efficiency-Calculation-zh-tw)和 GRAVES 時間線中顯示的日期。 |
 
 ## 2. 本台與對方電台
 

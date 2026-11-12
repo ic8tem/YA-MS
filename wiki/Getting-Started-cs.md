@@ -33,10 +33,9 @@ Nad kartami jsou tři řady ovládacích prvků, které platí pro všechny kart
 | Ovládací prvek | Co dělá |
 |---|---|
 | **Čas** | Hodiny UTC. |
-| **Datum výpočtu (UTC)** | Den výpočtu pro [Předpovědní výpočet](Sky-View-cs) a [Radar GRAVES](GRAVES-Radar-cs) (výchozí dnes), v aktuální denní době. |
+| **Datum výpočtu (UTC)** | Den výpočtu pro [Předpovědní výpočet](Sky-View-cs) a [Radar GRAVES](GRAVES-Radar-cs) (výchozí dnes), v aktuální denní době. Také: den zobrazený ve [Výpočtu účinnosti](Efficiency-Calculation-cs) a na časové ose GRAVES. |
 | **Hodiny (od −12 do +36 h)** | Posouvá okamžik výpočtu od 12 hodin před do 36 hodin po tomto čase, v krocích po 15 minutách. Vedle je *Výpočet pro: nyní* nebo *Výpočet pro: dd/mm hh:mm UTC*. |
 | **Reálný čas** | Návrat na současnost. |
-| **Den pro tabulku 24 h (UTC)** | Den zobrazený ve [Výpočtu účinnosti](Efficiency-Calculation-cs) a na časové ose GRAVES. |
 
 ## 2. Vaše stanice a DX
 

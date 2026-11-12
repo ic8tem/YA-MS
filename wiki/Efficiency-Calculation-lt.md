@@ -8,7 +8,7 @@
 
 Srauto **efektyvumas** procentais nurodo, kiek jo radianto padėtis leidžia atspindžius **jūsų** trasoje. Sąvoką sukūrė Ilkka **OH5IY** (MS-Soft), ją perėmė Cerrotta–Sartori straipsnis: efektyvumo maksimumas nesutampa su vizualiuoju maksimumu (ZHR), nes jis priklauso nuo radianto padėties dviejų stočių atžvilgiu. DL5MCG MCG_MS taiko tą pačią idėją keturioms fiksuotoms kryptims; YA-MS jį skaičiuoja **realiai trasai** tarp dviejų lokatorių.
 
-Ši kortelė rodo jį kas valandą dienai, pasirinktai lauke *24 h lentelės diena (UTC)* (vertės kiekvienos valandos viduryje).
+Ši kortelė rodo jį kas valandą dienai, pasirinktai lauke *Skaičiavimo data (UTC)* (vertės kiekvienos valandos viduryje).
 
 ## Apžvalgos skydeliai
 

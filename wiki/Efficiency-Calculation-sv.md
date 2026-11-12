@@ -8,7 +8,7 @@
 
 En svärms **effektivitet** anger i procent hur mycket radiantens läge tillåter reflexer på **din** sträcka. Begreppet kommer från Ilkka **OH5IY** (MS-Soft) och tas upp i artikeln av Cerrotta–Sartori: effektivitetens maximum sammanfaller inte med det visuella maximumet (ZHR), eftersom det beror på var radianten står i förhållande till de två stationerna. MCG_MS av DL5MCG tillämpar samma idé på fyra fasta riktningar; YA-MS beräknar den för den **verkliga sträckan** mellan de två lokatorerna.
 
-Den här fliken visar den timme för timme för den dag som valts i *Dag för 24 h-tabellen (UTC)* (värden vid halvtimme).
+Den här fliken visar den timme för timme för den dag som valts i *Beräkningsdatum (UTC)* (värden vid halvtimme).
 
 ## Översiktskort
 

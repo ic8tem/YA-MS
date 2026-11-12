@@ -33,10 +33,9 @@ Por cima dos separadores há três filas de comandos, válidas para todos os sep
 | Comando | O que faz |
 |---|---|
 | **Hora** | Relógio UTC. |
-| **Data do cálculo (UTC)** | O dia do cálculo para [Cálculo de previsão](Sky-View-pt) e [Radar GRAVES](GRAVES-Radar-pt) (hoje por omissão), à hora atual do dia. |
+| **Data do cálculo (UTC)** | O dia do cálculo para [Cálculo de previsão](Sky-View-pt) e [Radar GRAVES](GRAVES-Radar-pt) (hoje por omissão), à hora atual do dia. Também: o dia mostrado em [Cálculo da eficiência](Efficiency-Calculation-pt) e na cronologia do GRAVES. |
 | **Horas (de −12 a +36 h)** | Desloca o momento do cálculo desde 12 horas antes até 36 horas depois dessa hora, em passos de 15 minutos. Ao lado: *Cálculo para: agora* ou *Cálculo para: dd/mm hh:mm UTC*. |
 | **Tempo real** | Volta ao momento atual. |
-| **Dia para a tabela de 24 h (UTC)** | O dia mostrado em [Cálculo da eficiência](Efficiency-Calculation-pt) e na cronologia do GRAVES. |
 
 ## 2. A sua estação e o DX
 

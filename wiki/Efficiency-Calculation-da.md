@@ -8,7 +8,7 @@
 
 En sværms **effektivitet** angiver i procent, hvor meget dens radiants position tillader refleksioner på **din** strækning. Begrebet stammer fra Ilkka **OH5IY** (MS-Soft) og tages op i artiklen af Cerrotta–Sartori: effektivitetens maksimum falder ikke sammen med det visuelle maksimum (ZHR), fordi det afhænger af, hvor radianten står i forhold til de to stationer. MCG_MS af DL5MCG anvender samme idé på fire faste retninger; YA-MS beregner den for den **faktiske strækning** mellem de to lokatorer.
 
-Fanen viser den time for time for den dag, der er valgt i *Dag for 24 t-tabellen (UTC)* (værdier ved halv).
+Fanen viser den time for time for den dag, der er valgt i *Beregningsdato (UTC)* (værdier ved halv).
 
 ## Overbliksbokse
 

@@ -8,7 +8,7 @@
 
 **Nýtni** drífu segir, í prósentum, hve mikið staða geislapunktsins leyfir endurvörp á **þinni** leið. Hugtakið er komið frá Ilkka **OH5IY** (MS-Soft) og er tekið upp í grein Cerrotta–Sartori: hámark nýtninnar fellur ekki saman við sjónræna hámarkið (ZHR), því það ræðst af því hvar geislapunkturinn er miðað við stöðvarnar tvær. MCG_MS eftir DL5MCG beitir sömu hugmynd á fjórar fastar stefnur; YA-MS reiknar hana fyrir **raunverulegu leiðina** milli locatoranna tveggja.
 
-Þessi flipi sýnir hana klukkustund fyrir klukkustund fyrir daginn sem valinn er í *Dagur fyrir 24 klst. töfluna (UTC)* (gildi á hálfa tímanum).
+Þessi flipi sýnir hana klukkustund fyrir klukkustund fyrir daginn sem valinn er í *Dagsetning útreiknings (UTC)* (gildi á hálfa tímanum).
 
 ## Yfirlitsspjöld
 

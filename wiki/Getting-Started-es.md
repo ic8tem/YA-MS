@@ -33,10 +33,9 @@ Encima de las pestañas hay tres filas de controles, válidas para todas las pes
 | Control | Qué hace |
 |---|---|
 | **Hora** | Reloj UTC. |
-| **Fecha del cálculo (UTC)** | El día del cálculo para [Cálculo de previsión](Sky-View-es) y [Radar GRAVES](GRAVES-Radar-es) (hoy por defecto), a la hora actual del día. |
+| **Fecha del cálculo (UTC)** | El día del cálculo para [Cálculo de previsión](Sky-View-es) y [Radar GRAVES](GRAVES-Radar-es) (hoy por defecto), a la hora actual del día. También: el día mostrado en [Cálculo de la eficiencia](Efficiency-Calculation-es) y en la cronología de GRAVES. |
 | **Horas (de −12 a +36 h)** | Desplaza el momento del cálculo desde 12 horas antes hasta 36 horas después de esa hora, en pasos de 15 minutos. Al lado: *Cálculo para: ahora* o *Cálculo para: dd/mm hh:mm UTC*. |
 | **Tiempo real** | Vuelve al momento actual. |
-| **Día para la tabla 24 h (UTC)** | El día mostrado en [Cálculo de la eficiencia](Efficiency-Calculation-es) y en la cronología de GRAVES. |
 
 ## 2. Tu estación y el DX
 

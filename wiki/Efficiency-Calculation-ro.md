@@ -8,7 +8,7 @@
 
 **Eficiența** unui roi spune, în procente, cât de mult permite poziția radiantului său reflexii pe traseul **dumneavoastră**. Conceptul aparține lui Ilkka **OH5IY** (MS-Soft) și este preluat în articolul Cerrotta–Sartori: maximul de eficiență nu coincide cu maximul vizual (ZHR), deoarece depinde de locul în care se află radiantul față de cele două stații. MCG_MS de DL5MCG aplică aceeași idee pe patru direcții fixe; YA-MS o calculează pentru **traseul real** dintre cei doi locatori.
 
-Această filă o arată oră de oră pentru ziua aleasă în *Ziua pentru tabelul de 24 h (UTC)* (valori la jumătatea fiecărei ore).
+Această filă o arată oră de oră pentru ziua aleasă în *Data calculului (UTC)* (valori la jumătatea fiecărei ore).
 
 ## Carduri de sinteză
 

@@ -33,10 +33,9 @@ Di atas tab terdapat tiga baris kontrol yang berlaku untuk semua tab. Tombol **K
 | Kontrol | Fungsinya |
 |---|---|
 | **Jam** | Jam UTC. |
-| **Tanggal perhitungan (UTC)** | Hari perhitungan untuk [Perhitungan prakiraan](Sky-View-id) dan [Radar GRAVES](GRAVES-Radar-id) (bawaan hari ini), pada jam saat ini. |
+| **Tanggal perhitungan (UTC)** | Hari perhitungan untuk [Perhitungan prakiraan](Sky-View-id) dan [Radar GRAVES](GRAVES-Radar-id) (bawaan hari ini), pada jam saat ini. Juga: hari yang ditampilkan di [Perhitungan efisiensi](Efficiency-Calculation-id) dan di kronologi GRAVES. |
 | **Jam (−12 hingga +36 h)** | Menggeser saat perhitungan dari 12 jam sebelum hingga 36 jam sesudah waktu tersebut, dengan langkah 15 menit. Di sampingnya: *Perhitungan untuk: sekarang* atau *Perhitungan untuk: dd/mm hh:mm UTC*. |
 | **Waktu nyata** | Kembali ke saat ini. |
-| **Hari untuk tabel 24 jam (UTC)** | Hari yang ditampilkan di [Perhitungan efisiensi](Efficiency-Calculation-id) dan di kronologi GRAVES. |
 
 ## 2. Stasiun Anda dan DX
 

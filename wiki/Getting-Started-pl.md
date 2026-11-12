@@ -33,10 +33,9 @@ Nad zakładkami znajdują się trzy wiersze elementów sterujących, wspólne dl
 | Element | Działanie |
 |---|---|
 | **Czas** | Zegar UTC. |
-| **Data obliczeń (UTC)** | Dzień obliczeń dla zakładek [Obliczanie prognozy](Sky-View-pl) i [Radar GRAVES](GRAVES-Radar-pl) (domyślnie dziś), o bieżącej porze dnia. |
+| **Data obliczeń (UTC)** | Dzień obliczeń dla zakładek [Obliczanie prognozy](Sky-View-pl) i [Radar GRAVES](GRAVES-Radar-pl) (domyślnie dziś), o bieżącej porze dnia. Także: dzień wyświetlany w zakładce [Obliczanie efektywności](Efficiency-Calculation-pl) i na osi czasu GRAVES. |
 | **Godziny (−12 do +36 h)** | Przesuwa moment obliczeń od 12 godzin przed do 36 godzin po tej porze, w krokach co 15 minut. Obok: *Obliczenia dla: teraz* lub *Obliczenia dla: dd/mm hh:mm UTC*. |
 | **Czas rzeczywisty** | Powrót do chwili obecnej. |
-| **Dzień dla tabeli 24 h (UTC)** | Dzień wyświetlany w zakładce [Obliczanie efektywności](Efficiency-Calculation-pl) i na osi czasu GRAVES. |
 
 ## 2. Twoja stacja i DX
 

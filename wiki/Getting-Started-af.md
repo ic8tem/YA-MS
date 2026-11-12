@@ -33,10 +33,9 @@ Bo die oortjies is daar drie rye kontroles, geldig vir al die oortjies. Die knop
 | Kontrole | Wat dit doen |
 |---|---|
 | **Tyd** | UTC-horlosie. |
-| **Berekeningsdatum (UTC)** | Die dag van die berekening vir [Voorspellingsberekening](Sky-View-af) en [GRAVES-radar](GRAVES-Radar-af) (verstek vandag), op die huidige tyd van die dag. |
+| **Berekeningsdatum (UTC)** | Die dag van die berekening vir [Voorspellingsberekening](Sky-View-af) en [GRAVES-radar](GRAVES-Radar-af) (verstek vandag), op die huidige tyd van die dag. Ook: die dag wat in [Berekening van doeltreffendheid](Efficiency-Calculation-af) en in die GRAVES-tydlyn gewys word. |
 | **Ure (−12 tot +36 h)** | Skuif die oomblik van die berekening van 12 uur voor tot 36 uur na daardie tyd, in stappe van 15 minute. Langsaan: *Berekening vir: nou* of *Berekening vir: dd/mm hh:mm UTC*. |
 | **Intyds** | Terug na nou. |
-| **Dag vir die 24 h-tabel (UTC)** | Die dag wat in [Berekening van doeltreffendheid](Efficiency-Calculation-af) en in die GRAVES-tydlyn gewys word. |
 
 ## 2. Jou stasie en die DX
 

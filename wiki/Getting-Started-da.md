@@ -33,10 +33,9 @@ Over fanerne er der tre rækker betjeningselementer, som gælder for alle faner.
 | Element | Hvad det gør |
 |---|---|
 | **Tid** | UTC-ur. |
-| **Beregningsdato (UTC)** | Dagen for beregningen i [Prognoseberegning](Sky-View-da) og [GRAVES-radar](GRAVES-Radar-da) (i dag som standard), på det aktuelle klokkeslæt. |
+| **Beregningsdato (UTC)** | Dagen for beregningen i [Prognoseberegning](Sky-View-da) og [GRAVES-radar](GRAVES-Radar-da) (i dag som standard), på det aktuelle klokkeslæt. Også: den dag, der vises i [Effektivitetsberegning](Efficiency-Calculation-da) og i GRAVES-kronologien. |
 | **Timer (−12 til +36 t)** | Flytter beregningens tidspunkt fra 12 timer før til 36 timer efter dette klokkeslæt i trin på 15 minutter. Ved siden af: *Beregning for: nu* eller *Beregning for: dd/mm tt:mm UTC*. |
 | **Realtid** | Tilbage til nu. |
-| **Dag for 24 t-tabellen (UTC)** | Den dag, der vises i [Effektivitetsberegning](Efficiency-Calculation-da) og i GRAVES-kronologien. |
 
 ## 2. Din station og DX
 

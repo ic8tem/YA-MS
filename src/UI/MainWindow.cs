@@ -45,6 +45,8 @@ namespace YAMS
         string recommendText = "";
         string recommendShort = "";   // consiglio senza la parte tra parentesi (riquadro "Adesso")
         TextBlock glBest, glShower, glNow, glFore;
+        Border cardBest, cardShower, cardNow, cardFore;   // riquadri del colpo d'occhio (per i fumetti)
+        Border boxNoZone, boxNoZoneSky; TextBlock lblNoZone, lblNoZoneSky;   // avviso: nessuna zona comune della tratta
         CheckBox chkHot, chkMap, chkTopView;
         Button btnCalc, btnReal;
         TextBlock lblClock, lblSkyTime;
@@ -55,7 +57,6 @@ namespace YAMS
         TextBlock lblFont;
         bool fontReady;              // la scala dei controlli standard si applica dopo l'apertura (stili gia' applicati)
         TextBlock lblMapCaption;     // didascalia sotto la pianta
-        CalendarDatePicker dtDay;
 
         // linguette
         PillTabs tabs;
@@ -512,9 +513,8 @@ namespace YAMS
             btnReal.Click += (s, e) => ResetCalcTime();
             // data del calcolo: con l'ora attuale e lo spostamento del cursore (da -12 a +36 h) da' il momento del calcolo
             dtCalc = new CalendarDatePicker { SelectedDate = DateTime.UtcNow.Date, Width = 150, Margin = new Thickness(2, 3), FlowDirection = FlowDirection.LeftToRight };   // date sempre da sinistra a destra (arabo, ebraico, urdu)
-            WhenChanged(dtCalc, CalendarDatePicker.SelectedDateProperty, () => UpdateSky());
-            dtDay = new CalendarDatePicker { SelectedDate = DateTime.UtcNow.Date, Width = 150, Margin = new Thickness(2, 3), FlowDirection = FlowDirection.LeftToRight };   // date sempre da sinistra a destra (arabo, ebraico, urdu)
-            WhenChanged(dtDay, CalendarDatePicker.SelectedDateProperty, () => Update24h());
+            // una sola data: vale per il calcolo del momento e per la tabella delle 24 ore (Calcolo dell'efficienza)
+            WhenChanged(dtCalc, CalendarDatePicker.SelectedDateProperty, () => { UpdateSky(); Update24h(); });
             // dimensione del carattere di tutto il programma (solo il testo), a passi del 10 %
             double pct0 = Math.Max(100, Math.Min(300, Math.Round(cfg.GetD("carattere_pct", 100) / 10) * 10));
             lblFont = L(pct0.ToString("F0", CultureInfo.InvariantCulture) + " %"); lblFont.Foreground = Pal.B(Pal.Azure);
@@ -523,7 +523,7 @@ namespace YAMS
             UiScale.Set(pct0 / 100.0);
             WhenChanged(sldFont, RangeBase.ValueProperty, () => SetFontPercent(sldFont.Value));
             Border row3 = Row(L(Lang.T("Ora")), lblClock, L(Lang.T("Data del calcolo (UTC)")), dtCalc, L(Lang.T("Ore (da −12 a +36 h)")), trackTime,
-                              btnReal, lblSkyTime, L(Lang.T("Giorno per la tabella 24 h (UTC)")), dtDay);
+                              btnReal, lblSkyTime);
             // riga 1: stazioni e banda, azimut d'antenna e cursore del carattere (la prima riga ha spazio)
             Border row1 = Row(L(Lang.T("Il mio locator")), txtHome, L(Lang.T("quota m")), numHomeAlt,
                        L(Lang.T("Corrispondente")), txtDx, L(Lang.T("quota m")), numDxAlt,
@@ -701,10 +701,11 @@ namespace YAMS
             boxLowAlong = Warn(Pal.Panel3, Pal.Azure, out lblLowAlong);
             // avviso tratta oltre l'orizzonte della scia (punto medio sotto l'orizzonte alla quota delle scie)
             boxHorizon = Warn(Pal.OrangeDark, Pal.OrangeText, out lblHorizon);
+            boxNoZoneSky = Warn(Pal.OrangeDark, Pal.OrangeText, out lblNoZoneSky);
             // lato destro: in alto elenco degli sciami, al centro volta celeste + testo del calcolo, in basso la sezione
             Grid rt = new Grid { RowDefinitions = new RowDefinitions("31*,37*,32*") };
             DockPanel rTop = new DockPanel();
-            DockTop(rTop, opt); DockTop(rTop, boxLobeWarn); DockTop(rTop, boxHorizon); DockTop(rTop, boxHighRad); DockTop(rTop, boxLowAlong);
+            DockTop(rTop, opt); DockTop(rTop, boxLobeWarn); DockTop(rTop, boxNoZoneSky); DockTop(rTop, boxHorizon); DockTop(rTop, boxHighRad); DockTop(rTop, boxLowAlong);
             rTop.Children.Add(lvSky);
             Grid rMid = new Grid { ColumnDefinitions = new ColumnDefinitions("42*,58*") };
             Grid.SetColumn(skySmall, 0); Grid.SetColumn(lblPathInfo, 1);
@@ -783,13 +784,16 @@ namespace YAMS
             // colpo d'occhio: quattro riquadri riassuntivi sopra il grafico
             // altezza minima 100: con caratteri grandi i riquadri crescono
             Grid glance = new Grid { ColumnDefinitions = new ColumnDefinitions("*,*,*,*"), MinHeight = 100, Margin = new Thickness(6, 6, 6, 2) };
-            Border c0 = Card(Lang.T("ORA MIGLIORE DEL GIORNO"), Pal.Azure, out glBest);
-            Border c1 = Card(Lang.T("SCIAME PIÙ FAVOREVOLE"), Pal.Yellow, out glShower);
-            Border c2 = Card(Lang.T("ADESSO"), Pal.Green, out glNow);
-            Border c3 = Card(Lang.T("PREVISIONE SPERIMENTALE"), Pal.Orange, out glFore);
+            Border c0 = cardBest = Card(Lang.T("ORA MIGLIORE DEL GIORNO"), Pal.Azure, out glBest);
+            Border c1 = cardShower = Card(Lang.T("SCIAME PIÙ FAVOREVOLE"), Pal.Yellow, out glShower);
+            Border c2 = cardNow = Card(Lang.T("ADESSO"), Pal.Green, out glNow);
+            Border c3 = cardFore = Card(Lang.T("PREVISIONE SPERIMENTALE"), Pal.Orange, out glFore);
             Grid.SetColumn(c0, 0); Grid.SetColumn(c1, 1); Grid.SetColumn(c2, 2); Grid.SetColumn(c3, 3);
             glance.Children.Add(c0); glance.Children.Add(c1); glance.Children.Add(c2); glance.Children.Add(c3);
             DockTop(p2, glance);
+            boxNoZone = Warn(Pal.OrangeDark, Pal.OrangeText, out lblNoZone);
+            boxNoZone.Margin = new Thickness(6, 0, 6, 4);
+            DockTop(p2, boxNoZone);
             lblAB = new TextBlock
             {
                 Foreground = Pal.B(Pal.Fore), FontSize = 13, TextWrapping = TextWrapping.Wrap,
@@ -1216,6 +1220,8 @@ namespace YAMS
                 boxHorizon.IsVisible = true;
             }
             else boxHorizon.IsVisible = false;
+            string noZone = mv ? NoZoneText() : null;
+            lblNoZoneSky.Text = noZone ?? ""; boxNoZoneSky.IsVisible = noZone != null;
             // Hot consigliato dall'efficienza: il lato (A o B) da cui arriva la maggior parte delle riflessioni,
             // sommando su tutti gli sciami attivi ZHR x efficienza x frazione del lato
             double wA = 0, wB = 0;
@@ -1233,6 +1239,7 @@ namespace YAMS
                         (100 * Math.Max(wA, wB) / (wA + wB)).ToString("F0"));
                     recommendShort = Lang.F("{0} consigliato ora: az. {1}°", Lang.T(rh.Label), rh.BearingFromHome.ToString("F0"));
                 }
+                else if (model.SamplePoints == 0) recommendShort = recommendText = Lang.T("Nessun Hot consigliato: le due stazioni non vedono una zona comune dello strato (vedi l'avviso)");
                 else recommendShort = recommendText = Lang.T("Nessun Hot consigliato: sciami attivi quasi assenti in questo momento");
             }
             UpdateEffStrip(t, mv);
@@ -1413,9 +1420,41 @@ namespace YAMS
         {
             get
             {
-                DateTime d = dtDay.SelectedDate ?? DateTime.UtcNow;
+                DateTime d = dtCalc.SelectedDate ?? DateTime.UtcNow;
                 return DateTime.SpecifyKind(d.Date, DateTimeKind.Utc);
             }
+        }
+
+        // Avviso quando nessun punto dello strato e' visto da entrambe le stazioni sopra l'elevazione del lobo:
+        // il modello scarta i punti sotto quell'elevazione, quindi tutte le efficienze valgono 0. null = zona comune presente.
+        string NoZoneText()
+        {
+            if (model == null || !model.Valid || model.SamplePoints > 0) return null;
+            double alt = Math.Min(model.HomeAltKm, model.DxAltKm), half = model.DistKm / 2;
+            double reach = MsGeometry.LayerRangeKm(model.LayerKm, model.MinElevDeg, alt);
+            string s = Lang.F("NESSUNA ZONA COMUNE: con le scie a {0:F1} km e il lobo d'antenna a {1:F1}° ogni stazione vede lo strato fino a {2:F0} km, ma il punto medio della tratta ({3:F0} km) è a {4:F0} km. " +
+                "Il calcolo tiene solo i punti visti da entrambe le stazioni almeno a quell'elevazione: qui non ce n'è nessuno, quindi tutte le efficienze valgono 0.",
+                model.LayerKm, model.MinElevDeg, reach, model.DistKm, half);
+            // elevazione massima del lobo e quota minima delle scie che aprono la zona comune
+            double needE = -1;
+            if (MsGeometry.LayerRangeKm(model.LayerKm, 0, alt) > half)
+            {
+                double lo = 0, hi = Math.Max(0.1, model.MinElevDeg);
+                for (int i = 0; i < 40; i++) { double m = (lo + hi) / 2; if (MsGeometry.LayerRangeKm(model.LayerKm, m, alt) > half) lo = m; else hi = m; }
+                needE = Math.Floor(lo * 10) / 10;
+            }
+            double needH = -1;
+            if (MsGeometry.LayerRangeKm(200, model.MinElevDeg, alt) > half)
+            {
+                double lo = model.LayerKm, hi = 200;
+                for (int i = 0; i < 40; i++) { double m = (lo + hi) / 2; if (MsGeometry.LayerRangeKm(m, model.MinElevDeg, alt) > half) hi = m; else lo = m; }
+                needH = Math.Ceiling(hi);
+            }
+            if (needE >= 0 && needH > 0) s += " " + Lang.F("Per avere un calcolo: elevazione del lobo di {0:F1}° o meno, oppure scie ad almeno {1:F0} km.", needE, needH);
+            else if (needE >= 0) s += " " + Lang.F("Per avere un calcolo: elevazione del lobo di {0:F1}° o meno.", needE);
+            else if (needH > 0) s += " " + Lang.F("Anche con il lobo a 0° non basta: servono scie ad almeno {0:F0} km.", needH);
+            s += " " + Lang.T("La formula di DH9GCD (righe azzurre) non tiene conto dell'orizzonte né del lobo, per questo dà valori anche qui.");
+            return s;
         }
 
         void Update24h()
@@ -1532,10 +1571,19 @@ namespace YAMS
 
             // colpo d'occhio
             int hb = 0; for (int h = 1; h < 24; h++) if (index[h] > index[hb]) hb = h;
+            // perche' non c'e' nessun valore: zona comune assente, nessuno sciame attivo, radianti sfavorevoli tutto il giorno
+            string noZone = NoZoneText();
+            string why = noZone != null ? Lang.T("nessun valore: le due stazioni non vedono una zona comune dello strato E (vedi l'avviso qui sotto)")
+                : act.Count == 0 ? Lang.T("nessun valore: in questo giorno non c'è nessuno sciame attivo con ZHR di almeno 1 (catalogo IMO)")
+                : Lang.F("nessun valore: i {0} sciami attivi hanno per tutto il giorno il radiante sotto l'orizzonte o in posizione sfavorevole per questa tratta (efficienza sotto l'1 %)", act.Count);
+            lblNoZone.Text = noZone ?? ""; boxNoZone.IsVisible = noZone != null;
             glBest.Text = index[hb] > 0
                 ? Lang.F("{0:00}:00-{0:00}:59 UTC\nindice della tratta {1:F1}\nlato prevalente {2} ({3:F0}%)", hb, index[hb], wA[hb] >= wB[hb] ? "A" : "B", 100 * Math.Max(wA[hb], wB[hb]) / Math.Max(1e-9, wA[hb] + wB[hb]))
-                : Lang.T("nessuno sciame utile in questo giorno");
-            glShower.Text = bestShower;
+                : why;
+            glShower.Text = bestScore > 0 ? bestShower : why;
+            string tipWhy = index[hb] > 0 ? "" : "\n\n" + (noZone ?? why);
+            ToolTip.SetTip(cardBest, Lang.T("L'ora del giorno scelto con l'indice della tratta più alto (somma di ZHR × efficienza di tutti gli sciami attivi) e il lato della tratta da cui arriva la maggior parte delle riflessioni.") + tipWhy);
+            ToolTip.SetTip(cardShower, Lang.T("Lo sciame che dà il contributo più alto (ZHR × efficienza) nel giorno scelto, con l'ora, il lato e le due direzioni d'antenna migliori.") + (bestScore > 0 ? "" : "\n\n" + (noZone ?? why)));
             DateTime nowU = DateTime.UtcNow;
             if (nowU.Date == day.Date)
             {
@@ -1544,6 +1592,8 @@ namespace YAMS
                     index[hn] > 0.05 ? (wA[hn] >= wB[hn] ? "A" : "B") : "-", recommendShort.Trim());
             }
             else glNow.Text = Lang.T("il giorno scelto non è oggi");
+            ToolTip.SetTip(cardNow, Lang.T("L'indice della tratta nell'ora attuale, il lato prevalente e l'Hot consigliato. Compare solo se il giorno scelto è oggi.") +
+                (nowU.Date == day.Date && index[nowU.Hour] <= 0 ? "\n\n" + (noZone ?? why) : ""));
             DateTime hNow = new DateTime(nowU.Year, nowU.Month, nowU.Day, nowU.Hour, 0, 0, DateTimeKind.Utc);
             double f1 = ForecastAt(hNow);
             double f2 = ForecastAt(hNow.AddHours(1));
@@ -1551,6 +1601,7 @@ namespace YAMS
             glFore.Text = f1 < 0 ? Lang.T("nessun dato radar: vedi Live e dati real-time › Flusso radar")
                 : Lang.F("{0:F0} MHz, riflessioni/ora previste\nora {1:F0} - tra 1 h {2} - tra 2 h {3}\nsperimentale (Collm, regole SM6FHZ)", PrevFreqMHz, f1,
                     f2 < 0 ? "-" : f2.ToString("F0"), f3 < 0 ? "-" : f3.ToString("F0"));
+            ToolTip.SetTip(cardFore, Lang.T("Riflessioni all'ora previste sulla banda scelta, ottenute traslando i conteggi del radar di Collm con le regole di SM6FHZ. Serve il dato del radar (Live e dati real-time › Flusso radar). È indipendente dalla geometria della tratta."));
             ChartSeries ix = new ChartSeries(); ix.Name = Lang.T("indice tratta"); ix.Color = Pal.Ink(Pal.Rgb(90, 110, 200)); ix.Values = index; ix.Bars = true; ix.RightAxis = true;
             chart24.Series.Insert(0, ix);
             chart24.Title = Lang.F("Efficienza oraria per {0} del {1} (UTC, valori a metà ora)", PathLabel(), day.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
@@ -1959,7 +2010,8 @@ namespace YAMS
             {
                 if (IsRealTime) UpdateSky();
                 else if (now.Minute % 15 == 0) UpdateSky();   // la data scelta segue l'ora attuale
-                if (now.Minute == 0 && (dtDay.SelectedDate ?? now).Date == now.AddMinutes(-1).Date) dtDay.SelectedDate = now.Date;
+                // a mezzanotte la data del calcolo segue il giorno nuovo, se era quella di oggi
+                if (now.Minute == 0 && (dtCalc.SelectedDate ?? now).Date == now.AddMinutes(-1).Date) dtCalc.SelectedDate = now.Date;
                 if (now.Minute == 0 && now.Hour == 0) UpdateShowerGrid();   // nuovo giorno: aggiorna i prossimi massimi
             }
             if (chkAuto.IsChecked == true && !fetching && (now - lastFetchUtc).TotalMinutes >= 5)

@@ -33,10 +33,9 @@ Virs cilnēm ir trīs vadības rindas, kas attiecas uz visām cilnēm. Poga **Va
 | Vadīkla | Ko tā dara |
 |---|---|
 | **Laiks** | UTC pulkstenis. |
-| **Aprēķina datums (UTC)** | Aprēķina diena cilnēm [Prognozes aprēķins](Sky-View-lv) un [GRAVES radars](GRAVES-Radar-lv) (noklusējumā šodiena) pašreizējā diennakts laikā. |
+| **Aprēķina datums (UTC)** | Aprēķina diena cilnēm [Prognozes aprēķins](Sky-View-lv) un [GRAVES radars](GRAVES-Radar-lv) (noklusējumā šodiena) pašreizējā diennakts laikā. Arī: diena, kas tiek rādīta cilnē [Efektivitātes aprēķins](Efficiency-Calculation-lv) un GRAVES hronoloģijā. |
 | **Stundas (no −12 līdz +36 h)** | Pārvieto aprēķina brīdi no 12 stundām pirms līdz 36 stundām pēc šī laika ar 15 minūšu soli. Blakus: *Aprēķins uz: tagad* vai *Aprēķins uz: dd/mm hh:mm UTC*. |
 | **Reālais laiks** | Atpakaļ uz tagadni. |
-| **Diena 24 h tabulai (UTC)** | Diena, kas tiek rādīta cilnē [Efektivitātes aprēķins](Efficiency-Calculation-lv) un GRAVES hronoloģijā. |
 
 ## 2. Tava stacija un DX
 

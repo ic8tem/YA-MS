@@ -8,7 +8,7 @@
 
 A **eficiência** de uma chuva indica, em percentagem, quanto a posição do seu radiante permite reflexões no **seu** percurso. O conceito é de Ilkka **OH5IY** (MS-Soft) e é retomado no artigo Cerrotta–Sartori: o máximo de eficiência não coincide com o máximo visual (ZHR), porque depende de onde está o radiante em relação às duas estações. O MCG_MS de DL5MCG aplica a mesma ideia a quatro direções fixas; o YA-MS calcula-a para o **percurso real** entre os dois locators.
 
-Este separador mostra-a hora a hora para o dia escolhido em *Dia para a tabela de 24 h (UTC)* (valores à meia hora de cada hora).
+Este separador mostra-a hora a hora para o dia escolhido em *Data do cálculo (UTC)* (valores à meia hora de cada hora).
 
 ## Cartões de resumo
 

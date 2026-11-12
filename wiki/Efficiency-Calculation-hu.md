@@ -8,7 +8,7 @@
 
 Egy raj **hatékonysága** százalékban fejezi ki, mennyire teszi lehetővé a radiáns helyzete a reflexiókat az **Ön** útvonalán. A fogalom Ilkka **OH5IY**-tól (MS-Soft) származik, és a Cerrotta–Sartori-cikk is átveszi: a hatékonyság csúcsa nem esik egybe a vizuális csúccsal (ZHR), mert attól függ, hol van a radiáns a két állomáshoz képest. A DL5MCG-féle MCG_MS ugyanezt az elvet négy rögzített irányra alkalmazza; a YA-MS a két lokátor közötti **valós útvonalra** számítja.
 
-Ez a fül óránként mutatja a hatékonyságot az *A 24 órás táblázat napja (UTC)* mezőben választott napra (az értékek minden óra felénél érvényesek).
+Ez a fül óránként mutatja a hatékonyságot az *Számítás dátuma (UTC)* mezőben választott napra (az értékek minden óra felénél érvényesek).
 
 ## Áttekintő kártyák
 

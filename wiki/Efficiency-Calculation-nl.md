@@ -8,7 +8,7 @@
 
 De **efficiëntie** van een zwerm geeft in procenten aan in hoeverre de positie van de radiant reflecties op **jouw** traject mogelijk maakt. Het begrip is van Ilkka **OH5IY** (MS-Soft) en wordt overgenomen in het artikel van Cerrotta–Sartori: het maximum van de efficiëntie valt niet samen met het visuele maximum (ZHR), omdat het afhangt van waar de radiant staat ten opzichte van de twee stations. MCG_MS van DL5MCG past hetzelfde idee toe op vier vaste richtingen; YA-MS berekent het voor het **werkelijke traject** tussen de twee locators.
 
-Dit tabblad toont haar uur voor uur voor de dag die is gekozen in *Dag voor de 24-uurstabel (UTC)* (waarden op het halve uur).
+Dit tabblad toont haar uur voor uur voor de dag die is gekozen in *Berekeningsdatum (UTC)* (waarden op het halve uur).
 
 ## Overzichtskaarten
 

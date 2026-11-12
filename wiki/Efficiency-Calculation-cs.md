@@ -8,7 +8,7 @@
 
 **Účinnost** roje udává v procentech, nakolik poloha jeho radiantu umožňuje odrazy na **vaší** trase. Koncept pochází od Ilkky **OH5IY** (MS-Soft) a přebírá ho článek Cerrotta–Sartori: maximum účinnosti se neshoduje s vizuálním maximem (ZHR), protože závisí na tom, kde je radiant vzhledem k oběma stanicím. MCG_MS od DL5MCG uplatňuje stejnou myšlenku na čtyři pevné směry; YA-MS ji počítá pro **skutečnou trasu** mezi oběma lokátory.
 
-Tato karta ji ukazuje hodinu po hodině pro den zvolený v *Den pro tabulku 24 h (UTC)* (hodnoty v půl každé hodiny).
+Tato karta ji ukazuje hodinu po hodině pro den zvolený v *Datum výpočtu (UTC)* (hodnoty v půl každé hodiny).
 
 ## Přehledové karty
 

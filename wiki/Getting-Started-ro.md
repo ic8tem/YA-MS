@@ -33,10 +33,9 @@ Deasupra filelor sunt trei rânduri de comenzi, valabile pentru toate filele. Bu
 | Comandă | Ce face |
 |---|---|
 | **Ora** | Ceas UTC. |
-| **Data calculului (UTC)** | Ziua calculului pentru [Calcul previzional](Sky-View-ro) și [Radar GRAVES](GRAVES-Radar-ro) (implicit astăzi), la ora curentă a zilei. |
+| **Data calculului (UTC)** | Ziua calculului pentru [Calcul previzional](Sky-View-ro) și [Radar GRAVES](GRAVES-Radar-ro) (implicit astăzi), la ora curentă a zilei. De asemenea: ziua afișată în [Calculul eficienței](Efficiency-Calculation-ro) și în cronologia GRAVES. |
 | **Ore (−12 până la +36 h)** | Mută momentul calculului de la 12 ore înainte până la 36 de ore după acea oră, în pași de 15 minute. Alături: *Calcul pentru: acum* sau *Calcul pentru: zz/ll hh:mm UTC*. |
 | **Timp real** | Înapoi la momentul actual. |
-| **Ziua pentru tabelul de 24 h (UTC)** | Ziua afișată în [Calculul eficienței](Efficiency-Calculation-ro) și în cronologia GRAVES. |
 
 ## 2. Stația dumneavoastră și DX-ul
 

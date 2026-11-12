@@ -709,3 +709,16 @@ YA-MS.app non trovato nel pacchetto	パッケージに YA-MS.app が見つかり
 {0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.	data フォルダーのファイルを {0} 個置き換えました。以前のコピーは data/backup/v{1} にあります。
 {0} non trovato nel pacchetto	パッケージに {0} が見つかりません
 È disponibile YA-MS {0} (questa è la {1}).	YA-MS {0} が公開されています（現在は {1}）。
+Anche con il lobo a 0° non basta: servono scie ad almeno {0:F0} km.	ローブを 0° にしても足りません。少なくとも高度 {0:F0} km の流星痕が必要です。
+L'indice della tratta nell'ora attuale, il lato prevalente e l'Hot consigliato. Compare solo se il giorno scelto è oggi.	現在の時間帯の経路指数、優勢な側、推奨される Hot spot。選んだ日が今日の場合のみ表示されます。
+L'ora del giorno scelto con l'indice della tratta più alto (somma di ZHR × efficienza di tutti gli sciami attivi) e il lato della tratta da cui arriva la maggior parte delle riflessioni.	選んだ日のうち経路指数（活動中のすべての流星群の ZHR × 効率の合計）が最も高い時間帯と、反射の大部分が届く経路の側。
+La formula di DH9GCD (righe azzurre) non tiene conto dell'orizzonte né del lobo, per questo dà valori anche qui.	DH9GCD の式（青い行）は地平線もローブも考慮しないため、ここでも値が出ます。
+Lo sciame che dà il contributo più alto (ZHR × efficienza) nel giorno scelto, con l'ora, il lato e le due direzioni d'antenna migliori.	選んだ日に最も大きく寄与する（ZHR × 効率）流星群と、その時間帯、側、最適なアンテナ方向 2 つ。
+NESSUNA ZONA COMUNE: con le scie a {0:F1} km e il lobo d'antenna a {1:F1}° ogni stazione vede lo strato fino a {2:F0} km, ma il punto medio della tratta ({3:F0} km) è a {4:F0} km. Il calcolo tiene solo i punti visti da entrambe le stazioni almeno a quell'elevazione: qui non ce n'è nessuno, quindi tutte le efficienze valgono 0.	共通ゾーンなし：流星痕の高度 {0:F1} km、アンテナのローブ {1:F1}° では、各局が見える層は {2:F0} km までですが、経路（{3:F0} km）の中点は {4:F0} km 先にあります。計算では両局が少なくともこの仰角で見える点だけを使います。ここには 1 点もないため、効率はすべて 0 です。
+Nessun Hot consigliato: le due stazioni non vedono una zona comune dello strato (vedi l'avviso)	推奨 Hot spot なし：2 局が層の共通ゾーンを見ていません（警告を参照）
+Per avere un calcolo: elevazione del lobo di {0:F1}° o meno, oppure scie ad almeno {1:F0} km.	計算を得るには：ローブの仰角を {0:F1}° 以下にするか、流星痕の高度を {1:F0} km 以上にします。
+Per avere un calcolo: elevazione del lobo di {0:F1}° o meno.	計算を得るには：ローブの仰角を {0:F1}° 以下にします。
+Riflessioni all'ora previste sulla banda scelta, ottenute traslando i conteggi del radar di Collm con le regole di SM6FHZ. Serve il dato del radar (Live e dati real-time › Flusso radar). È indipendente dalla geometria della tratta.	選んだバンドで予想される 1 時間あたりの反射数。Collm レーダーのカウントを SM6FHZ の規則で換算して求めます。レーダーのデータが必要です（ライブ・リアルタイムデータ › レーダーフラックス）。経路の幾何学には依存しません。
+nessun valore: i {0} sciami attivi hanno per tutto il giorno il radiante sotto l'orizzonte o in posizione sfavorevole per questa tratta (efficienza sotto l'1 %)	値なし：活動中の {0} 個の流星群の輻射点が、一日中地平線の下にあるか、この経路に不利な位置にあります（効率 1 % 未満）
+nessun valore: in questo giorno non c'è nessuno sciame attivo con ZHR di almeno 1 (catalogo IMO)	値なし：この日は ZHR が 1 以上の活動中の流星群がありません（IMO カタログ）
+nessun valore: le due stazioni non vedono una zona comune dello strato E (vedi l'avviso qui sotto)	値なし：2 局が E 層の共通ゾーンを見ていません（下の警告を参照）

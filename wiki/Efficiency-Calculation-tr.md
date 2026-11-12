@@ -8,7 +8,7 @@
 
 Bir yağmurun **verimi**, radyantının konumunun **sizin** yolunuzda yansımalara ne ölçüde izin verdiğini yüzde olarak söyler. Kavram Ilkka **OH5IY**'ye (MS-Soft) aittir ve Cerrotta–Sartori makalesinde ele alınmıştır: verim tepesi görsel tepeyle (ZHR) çakışmaz, çünkü radyantın iki istasyona göre nerede olduğuna bağlıdır. DL5MCG'nin MCG_MS programı aynı fikri dört sabit yöne uygular; YA-MS ise onu iki lokatör arasındaki **gerçek yol** için hesaplar.
 
-Bu sekme, *24 saatlik tablo için gün (UTC)* alanında seçilen gün için verimi saat saat gösterir (değerler her saatin buçuğunda).
+Bu sekme, *Hesap tarihi (UTC)* alanında seçilen gün için verimi saat saat gösterir (değerler her saatin buçuğunda).
 
 ## Bir bakışta kartlar
 

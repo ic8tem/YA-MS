@@ -33,10 +33,9 @@ Over fanene er det tre rader med kontroller som gjelder for alle fanene. Knappen
 | Kontroll | Hva den gjør |
 |---|---|
 | **Tid** | UTC-klokke. |
-| **Beregningsdato (UTC)** | Dagen for beregningen i [Prognoseberegning](Sky-View-nb) og [Radar GRAVES](GRAVES-Radar-nb) (i dag som standard), på gjeldende klokkeslett. |
+| **Beregningsdato (UTC)** | Dagen for beregningen i [Prognoseberegning](Sky-View-nb) og [Radar GRAVES](GRAVES-Radar-nb) (i dag som standard), på gjeldende klokkeslett. Også: dagen som vises i [Effektivitetsberegning](Efficiency-Calculation-nb) og i GRAVES-tidslinjen. |
 | **Timer (−12 til +36 t)** | Flytter tidspunktet for beregningen fra 12 timer før til 36 timer etter dette klokkeslettet, i steg på 15 minutter. Ved siden av: *Beregning for: nå* eller *Beregning for: dd/mm tt:mm UTC*. |
 | **Sanntid** | Tilbake til nå. |
-| **Dag for 24 t-tabellen (UTC)** | Dagen som vises i [Effektivitetsberegning](Efficiency-Calculation-nb) og i GRAVES-tidslinjen. |
 
 ## 2. Din stasjon og DX
 

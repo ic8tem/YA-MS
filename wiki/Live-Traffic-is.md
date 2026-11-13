@@ -16,6 +16,8 @@
 
 Spotum þar sem stöð er **utan kortsins** er hent. Spot sem **var að berast** (ekki eldra en 3 mínútur) **blikkar í eina mínútu**, svo ný virkni sést strax.
 
+Sýna hverjir hlusta: þríhyrningar í lit bandsins merkja stöðvar sem samkvæmt PSKReporter taka á móti MSK144, FSK441, PSK2K eða JTMS á 28, 50, 70, 144 og 432 MHz í völdum tímaglugga. Smellur á þríhyrning sýnir kallmerki, staðsetningu, hætti og síðasta spot. MQTT-straumurinn í flipanum Gagnasöfnun verður að vera tengdur.
+
 ## Hvernig skýið er reiknað
 
 Fyrir hvert spot setur forritið upp leiðina milli locatoranna tveggja (sama rúmfræði og fyrir þína eigin leið, sjá [Rúmfræði og deyfing](Geometry-and-Path-Loss-is)) og leggur saman, á tíma spotsins, punkt fyrir punkt í E-laginu **framlög speglunarendurvarps frá hverri virkri drífu**, vegin með ZHR hennar – sami útreikningur og fyrir **PREV-svæðin** í [himinhvelfingunni](Sky-View-is). Fyrir hvora hlið leiðarinnar sem hefur a.m.k. 15 % af heildinni er skýið **sporbaugur**: miðja í vegnu meðaltali punktanna, hálfásar 1,5 sinnum kvaðratrætur eigingilda dreifingar þeirra, langás eftir aðaleiginvigrinum. Þegar engin drífa leggur neitt til (aðeins stopulir loftsteinar) eru skýin tveir hefðbundnu **heitu blettirnir**, teiknaðir með brotalínu. Jöfnurnar í heild eru í 10. kafla reiknihandbókarinnar.

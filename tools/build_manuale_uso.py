@@ -24,7 +24,7 @@ def T(t):
     return TRD[t]
 
 TITLE = "Manuale d'uso di YA-MS"
-SUB = "Versione 1.8.3 - a cura di Costantino IC8TEM - novembre 2026"
+SUB = "Versione 1.8.4 - a cura di Costantino IC8TEM - novembre 2026"
 
 B = []
 h1 = lambda t: B.append(("h1", T(t))); h2 = lambda t: B.append(("h2", T(t))); p = lambda t: B.append(("p", T(t)))
@@ -207,6 +207,7 @@ h2("9.1 Traffico in diretta")
 p("Una mappa azimutale equidistante centrata sulla tua stazione con tutto il traffico meteor scatter raccolto: per ogni collegamento la tratta nel colore della banda (28 marrone, 50 verde, 70 ciano, 144 arancione, 222 rosa, 432 viola), le due stazioni e la nuvola delle scie più probabili a quell'ora. Gli spot appena arrivati lampeggiano per un minuto.")
 li("Raggio della mappa: 600-3500 km. Spot da mostrare: ultimi 15 o 30 minuti, ultima ora, ultime 3 o 24 ore.")
 li("Un clic su una tratta o su una riga della tabella evidenzia il collegamento e mostra il centro della nuvola, la sua quota e le sue dimensioni.")
+li("Mostra chi è in ascolto: triangoli del colore della banda segnano le stazioni che, secondo PSKReporter, ricevono in MSK144, FSK441, PSK2K o JTMS su 28, 50, 70, 144 e 432 MHz nella finestra di tempo scelta. Un clic sul triangolo mostra nominativo, locator, modi e ultimo spot. Serve il flusso MQTT della linguetta Raccolta dati connesso.")
 h2("9.2 Flusso radar")
 p("I conteggi orari delle meteore e le quote delle scie del radar SKiYMET di Collm (36,2 MHz) e l'ultima immagine del radar di Sodankylä (36,9 MHz).")
 li("Scarica adesso e Aggiornamento automatico di tutte le fonti ogni 5 minuti: ogni fonte viene riscaricata solo se è cambiata.")
@@ -223,6 +224,7 @@ h2("9.4 Raccolta dati")
 p("Raccoglie gli spot meteor scatter da tre flussi telnet (DX cluster, RBN, DM4X con gli spot di PSKReporter) e dal flusso MQTT di PSKReporter, ognuno nella sua sotto-linguetta, e li filtra.")
 li("Scrivi in alto il tuo nominativo per il login. Ogni flusso ha host, porta, comandi dopo il login, Riconnetti, Connetti all'avvio e una console.")
 li("Il filtro accetta gli spot nelle frequenze tipiche del meteor scatter (50190-50300, 70100-70400, 144290-144399 kHz) o con un modo MS (MSK144, FSK441, PSK2K, JTMS, JT6M, <MS>), e scarta quelli che dichiarano un'altra propagazione. Finestre e parole si possono modificare; ognuna ha il suo contatore.")
+li("Gli spot CW si scartano subito (CW o WPM nel commento, oppure 28000-28070 kHz): non compaiono nella console e non si memorizzano, salvo quelli segnati <MS>. La casella si può spegnere.")
 li("I locator mancanti vengono presi dall'archivio CALL3; gli spot accettati vanno in data/spot_ms, un file al giorno, e nella mappa del Traffico in diretta.")
 
 # ======================================================================

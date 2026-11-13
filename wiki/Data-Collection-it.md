@@ -23,6 +23,7 @@ Ogni flusso ha host, porta, comandi inviati dopo il login, *Riconnetti*, *Connet
 ## Il filtro (40 % della finestra)
 
 - **Filtro locale facoltativo:** le righe del cluster sotto **27990,0 kHz** vengono scartate subito (non mostrate, non memorizzate).
+- Gli spot CW si scartano subito (CW o WPM nel commento, oppure 28000-28070 kHz): non compaiono nella console e non si memorizzano, salvo quelli segnati <MS>. La casella si può spegnere.
 - **1° criterio – frequenze tipiche MS:** 50190–50300, 70100–70400, 144290–144399 kHz. Uno spot in queste finestre si accetta anche senza il nome del modo, tranne quando il commento dichiara un'altra propagazione: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Finestre e scritte si possono modificare.
 - **2° criterio – modi MS:** fuori dalle finestre, o con una di quelle scritte, uno spot si tiene solo se contiene **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (modi digitali usati solo per l'MS) oppure **\<MS\>**, in maiuscolo, minuscolo o misto. Le parole si possono spegnere, aggiungere e togliere; ognuna ha il suo contatore.
 - **Bande** 28, 50, 70, 144, 222, 432 MHz; **prova del filtro** su una riga incollata; **contatori**.

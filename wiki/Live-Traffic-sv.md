@@ -16,6 +16,8 @@ En **azimutal ekvidistant karta** centrerad på din station (avstånd från mitt
 
 Spots med en station **utanför kartan** kasseras. En spot som **just har kommit in** (högst 3 minuter gammal) **blinkar i en minut**, så att ny aktivitet syns med en gång.
 
+Visa vem som lyssnar: trianglar i bandets färg markerar stationer som enligt PSKReporter tar emot MSK144, FSK441, PSK2K eller JTMS på 28, 50, 70, 144 och 432 MHz i det valda tidsfönstret. Ett klick på en triangel visar anropssignal, lokator, moder och senaste spot. MQTT-flödet i fliken Datainsamling måste vara anslutet.
+
 ## Hur molnet beräknas
 
 För varje spot bygger programmet sträckan mellan de två lokatorerna (samma geometri som för din egen sträcka, se [Geometri och dämpning](Geometry-and-Path-Loss-sv)) och summerar, vid tidpunkten för spoten, punkt för punkt i E-skiktet **spegelreflexionsbidragen från varje aktiv svärm**, viktade med dess ZHR – samma beräkning som för **PREV-zonerna** i [himlavalvet](Sky-View-sv). För varje sida av sträckan som har minst 15 % av totalen är molnet en **ellips**: mittpunkt i punkternas viktade medelvärde, halvaxlar 1,5 gånger kvadratrötterna ur egenvärdena för deras spridning, storaxel längs den huvudsakliga egenvektorn. När ingen svärm bidrar (endast sporadiska meteorer) är molnen de två klassiska **hot spots**, ritade streckade. De fullständiga ekvationerna finns i kapitel 10 i beräkningshandboken.

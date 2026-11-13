@@ -16,6 +16,8 @@ Sebuah **peta azimutal ekuidistan** yang berpusat di stasiun Anda (jarak dari pu
 
 Spot dengan salah satu stasiun **di luar peta** dibuang. Spot yang **baru tiba** (tidak lebih tua dari 3 menit) **berkedip selama satu menit**, sehingga aktivitas baru langsung terlihat.
 
+Tampilkan siapa yang mendengarkan: segitiga berwarna pita menandai stasiun yang menurut PSKReporter menerima MSK144, FSK441, PSK2K, atau JTMS di 28, 50, 70, 144, dan 432 MHz dalam jendela waktu yang dipilih. Klik pada segitiga menampilkan callsign, locator, mode, dan spot terakhir. Aliran MQTT di tab Pengumpulan data harus terhubung.
+
 ## Cara awan dihitung
 
 Untuk setiap spot program membangun lintasan antara kedua locator (geometri yang sama seperti untuk lintasan Anda sendiri, lihat [Geometri dan redaman](Geometry-and-Path-Loss-id)) dan, pada waktu spot tersebut, menjumlahkan titik demi titik lapisan E **kontribusi pantulan spekular dari setiap hujan meteor aktif**, dibobot dengan ZHR-nya – perhitungan yang sama dengan **zona PREV** pada [kubah langit](Sky-View-id). Untuk setiap sisi lintasan yang memuat paling sedikit 15 % dari total, awan berupa **elips**: pusatnya di rata-rata berbobot titik-titik tersebut, setengah sumbunya 1,5 kali akar kuadrat nilai eigen sebarannya, sumbu panjangnya searah vektor eigen utama. Jika tidak ada hujan meteor yang berkontribusi (hanya meteor sporadis), awan berupa dua **hot spot** klasik yang digambar putus-putus. Persamaan lengkapnya ada di bab 10 manual perhitungan.

@@ -23,6 +23,7 @@ Cada fluxo tem host, porta, comandos enviados após o login, *Reconectar*, *Cone
 ## O filtro (40 % da janela)
 
 - **Filtro local opcional:** as linhas do cluster abaixo de **27990,0 kHz** são descartadas imediatamente (não são mostradas nem salvas).
+- Os spots CW são descartados na hora (CW ou WPM no comentário, ou 28000-28070 kHz): não aparecem no console e não são gravados, exceto os marcados <MS>. A caixa pode ser desligada.
 - **1.º critério – frequências MS típicas:** 50190–50300, 70100–70400, 144290–144399 kHz. Um spot nestas janelas é aceito mesmo sem o nome do modo, a não ser que o comentário declare outra propagação: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Janelas e etiquetas podem ser editadas.
 - **2.º critério – modos MS:** fora das janelas, ou com uma dessas etiquetas, um spot só é mantido se contiver **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (modos digitais usados apenas em MS) ou **\<MS\>**, em maiúsculas, minúsculas ou mistas. As palavras podem ser desativadas, adicionadas e removidas; cada uma tem o seu contador.
 - **Bandas** 28, 50, 70, 144, 222, 432 MHz; **teste do filtro** em uma linha colada; **contadores**.

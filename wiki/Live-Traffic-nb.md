@@ -16,6 +16,8 @@ Et **asimutalt ekvidistant kart** sentrert på stasjonen din (avstand fra sentru
 
 Spot med en stasjon **utenfor kartet** forkastes. Et spot som **nettopp har kommet** (ikke eldre enn 3 minutter), **blinker i ett minutt**, slik at ny aktivitet springer i øynene.
 
+Vis hvem som lytter: trekanter i båndets farge markerer stasjonene som ifølge PSKReporter tar imot MSK144, FSK441, PSK2K eller JTMS på 28, 50, 70, 144 og 432 MHz i det valgte tidsvinduet. Et klikk på en trekant viser kallesignal, lokator, moduser og siste spot. MQTT-strømmen i fanen Datainnsamling må være tilkoblet.
+
 ## Slik beregnes skyen
 
 For hvert spot bygger programmet opp strekningen mellom de to lokatorene (samme geometri som for din egen strekning, se [Geometri og demping](Geometry-and-Path-Loss-nb)) og summerer, på tidspunktet for spottet, punkt for punkt i E-laget **bidragene fra speilrefleksjon for hver aktiv sverm**, vektet med dens ZHR – samme beregning som **PREV-sonene** i [himmelhvelvingen](Sky-View-nb). For hver side av strekningen som har minst 15 % av totalen, er skyen en **ellipse**: sentrum i punktenes vektede middel, halvakser 1,5 ganger kvadratrøttene av egenverdiene til spredningen, hovedakse langs hovedegenvektoren. Når ingen sverm bidrar (bare sporadiske meteorer), er skyene de to klassiske **hot spots**, tegnet stiplet. De fullstendige likningene står i kapittel 10 i beregningshåndboken.

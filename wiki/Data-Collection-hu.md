@@ -23,6 +23,7 @@ Minden folyamhoz tartozik gazdagép, port, a bejelentkezés után küldött para
 ## A szűrő (az ablak 40 %-a)
 
 - **Opcionális helyi szűrő:** a **27990,0 kHz** alatti clustersorok azonnal elvetésre kerülnek (nem jelennek meg, nem tárolódnak).
+- A CW spotokat azonnal eldobja (CW vagy WPM a megjegyzésben, vagy 28000-28070 kHz): nem jelennek meg a konzolon és nem mentődnek, hacsak nincs rajtuk <MS> jelölés. A négyzet kikapcsolható.
 - **1. feltétel – tipikus MS-frekvenciák:** 50190–50300, 70100–70400, 144290–144399 kHz. Az ezekbe az ablakokba eső spotot a program a mód neve nélkül is elfogadja, kivéve, ha a megjegyzés más terjedési módot jelöl: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Az ablakok és a címkék szerkeszthetők.
 - **2. feltétel – MS-módok:** az ablakokon kívül, vagy ha a fenti címkék egyike szerepel, a spot csak akkor marad meg, ha tartalmazza a következők egyikét: **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (csak MS-re használt digitális módok) vagy **\<MS\>**, nagy-, kis- vagy vegyes betűvel. A szavak kikapcsolhatók, hozzáadhatók és törölhetők; mindegyiknek saját számlálója van.
 - **Sávok:** 28, 50, 70, 144, 222, 432 MHz; **szűrőteszt** egy beillesztett soron; **számlálók**.

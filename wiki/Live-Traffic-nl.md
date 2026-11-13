@@ -16,6 +16,8 @@ Een **azimutale equidistante kaart** gecentreerd op jouw station (afstand tot he
 
 Spots met een station **buiten de kaart** worden genegeerd. Een spot die **net binnen is** (niet ouder dan 3 minuten) **knippert een minuut lang**, zodat nieuwe activiteit direct opvalt.
 
+Tonen wie luistert: driehoeken in de bandkleur markeren de stations die volgens PSKReporter in het gekozen tijdvenster MSK144, FSK441, PSK2K of JTMS ontvangen op 28, 50, 70, 144 en 432 MHz. Een klik op een driehoek toont roepnaam, locator, modes en laatste spot. De MQTT-stroom in het tabblad Gegevensverzameling moet verbonden zijn.
+
 ## Hoe de wolk wordt berekend
 
 Voor elke spot bouwt het programma het traject tussen de twee locators op (dezelfde geometrie als voor je eigen traject, zie [Geometrie en demping](Geometry-and-Path-Loss-nl)) en telt op het tijdstip van de spot, punt voor punt in de E-laag, de **bijdragen van spiegelende reflectie van elke actieve zwerm** op, gewogen met zijn ZHR – dezelfde berekening als de **PREV-zones** van de [hemelkoepel](Sky-View-nl). Voor elke zijde van het traject die minstens 15 % van het totaal bevat, is de wolk een **ellips**: middelpunt in het gewogen gemiddelde van de punten, halve assen 1,5 keer de vierkantswortels van de eigenwaarden van hun spreiding, lange as langs de hoofdeigenvector. Als geen enkele zwerm bijdraagt (alleen sporadische meteoren), zijn de wolken de twee klassieke **hotspots**, gestippeld getekend. De volledige vergelijkingen staan in hoofdstuk 10 van de rekenhandleiding.

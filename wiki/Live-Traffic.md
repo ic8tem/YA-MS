@@ -16,6 +16,8 @@ An **azimuthal equidistant map** centred on your station (distance from the cent
 
 Spots with a station **outside the map** are discarded. A spot that has **just arrived** (not older than 3 minutes) **blinks for one minute**, so new activity stands out at a glance.
 
+Show who is listening: triangles in the band colour mark the stations that, according to PSKReporter, are receiving in MSK144, FSK441, PSK2K or JTMS on 28, 50, 70, 144 and 432 MHz in the chosen time window. A click on a triangle shows call, locator, modes and last spot. The MQTT feed of the Data collection tab must be connected.
+
 ## How the cloud is computed
 
 For each spot the program builds the path between the two locators (the same geometry as for your own path, see [Geometry and path loss](Geometry-and-Path-Loss)) and, at the time of the spot, adds up point by point of the E layer the **specular-reflection contributions of every active shower**, weighted with its ZHR – the same calculation as the **PREV zones** of the [sky dome](Sky-View). For each side of the path holding at least 15 % of the total, the cloud is an **ellipse**: centre at the weighted mean of the points, semi-axes 1.5 times the square roots of the eigenvalues of their spread, major axis along the main eigenvector. When no shower contributes (sporadic meteors only) the clouds are the two classic **hot spots**, drawn dashed. The full equations are in chapter 10 of the calculation manual.

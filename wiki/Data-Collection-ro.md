@@ -23,6 +23,7 @@ Fiecare flux are host, port, comenzi trimise după autentificare, *Reconectare*,
 ## Filtrul (40 % din fereastră)
 
 - **Filtru local opțional:** liniile de cluster sub **27990,0 kHz** sunt eliminate imediat (nu sunt afișate, nu sunt stocate).
+- Spoturile CW sunt eliminate imediat (CW sau WPM în comentariu, sau 28000-28070 kHz): nu apar în consolă și nu se salvează, cu excepția celor marcate <MS>. Căsuța se poate dezactiva.
 - **Primul criteriu – frecvențe MS tipice:** 50190–50300, 70100–70400, 144290–144399 kHz. Un spot în aceste ferestre este acceptat chiar și fără numele modului, cu excepția cazului în care comentariul declară o altă propagare: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Ferestrele și etichetele pot fi editate.
 - **Al doilea criteriu – moduri MS:** în afara ferestrelor, sau cu una dintre acele etichete, un spot este păstrat doar dacă conține **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (moduri digitale folosite doar pentru MS) sau **\<MS\>**, cu majuscule, minuscule sau amestecat. Cuvintele pot fi dezactivate, adăugate și eliminate; fiecare are contorul său.
 - **Benzi** 28, 50, 70, 144, 222, 432 MHz; **testul filtrului** pe o linie lipită; **contoare**.

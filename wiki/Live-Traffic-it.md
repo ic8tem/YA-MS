@@ -16,6 +16,8 @@ Una **mappa azimutale equidistante** centrata sulla tua stazione (distanza dal c
 
 Gli spot con una stazione **fuori dalla mappa** vengono scartati. Uno spot **appena arrivato** (non più vecchio di 3 minuti) **lampeggia per un minuto**, così la nuova attività salta all'occhio.
 
+Mostra chi è in ascolto: triangoli del colore della banda segnano le stazioni che, secondo PSKReporter, ricevono in MSK144, FSK441, PSK2K o JTMS su 28, 50, 70, 144 e 432 MHz nella finestra di tempo scelta. Un clic sul triangolo mostra nominativo, locator, modi e ultimo spot. Serve il flusso MQTT della linguetta Raccolta dati connesso.
+
 ## Come si calcola la nuvola
 
 Per ogni spot il programma costruisce la tratta tra i due locator (la stessa geometria della tua tratta, vedi [Geometria e attenuazione](Geometry-and-Path-Loss-it)) e, all'ora dello spot, somma punto per punto dello strato E i **contributi di riflessione speculare di ogni sciame attivo**, pesati con il suo ZHR – lo stesso calcolo delle **zone PREV** della [volta celeste](Sky-View-it). Per ogni lato della tratta che raccoglie almeno il 15 % del totale, la nuvola è un'**ellisse**: centro nella media pesata dei punti, semiassi pari a 1,5 volte le radici quadrate degli autovalori della loro dispersione, asse maggiore lungo l'autovettore principale. Quando nessuno sciame contribuisce (solo meteore sporadiche) le nuvole sono i due **hot spot** classici, disegnati tratteggiati. Le equazioni complete sono nel capitolo 10 del manuale dei calcoli.

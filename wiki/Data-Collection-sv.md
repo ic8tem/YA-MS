@@ -23,6 +23,7 @@ Varje flöde har värd, port, kommandon som skickas efter inloggningen, *Återan
 ## Filtret (40 % av fönstret)
 
 - **Valfritt lokalt filter:** klusterrader under **27990,0 kHz** kasseras direkt (visas inte, sparas inte).
+- CW-spottar kastas direkt (CW eller WPM i kommentaren, eller 28000-28070 kHz): de visas inte i konsolen och sparas inte, utom de som är märkta <MS>. Rutan kan stängas av.
 - **1:a kriteriet – typiska MS-frekvenser:** 50190–50300, 70100–70400, 144290–144399 kHz. En spot i dessa fönster godkänns även utan modens namn, såvida inte kommentaren anger en annan utbredning: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Fönster och taggar kan redigeras.
 - **2:a kriteriet – MS-moder:** utanför fönstren, eller med en av de taggarna, behålls en spot endast om den innehåller **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (digitala moder som bara används för MS) eller **\<MS\>**, med versaler, gemener eller blandat. Ord kan stängas av, läggas till och tas bort; vart och ett har sin räknare.
 - **Band** 28, 50, 70, 144, 222, 432 MHz; **test av filtret** på en inklistrad rad; **räknare**.

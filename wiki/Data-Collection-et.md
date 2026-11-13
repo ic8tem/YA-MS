@@ -23,6 +23,7 @@ Igal vool on host, port, pärast sisselogimist saadetavad käsud, *Ühenda uuest
 ## Filter (40 % aknast)
 
 - **Valikuline kohalik filter:** klastri read alla **27990,0 kHz** jäetakse kohe kõrvale (ei näidata, ei salvestata).
+- CW-spotid visatakse kohe ära (CW või WPM kommentaaris või 28000-28070 kHz): need ei ilmu konsooli ega salvestu, välja arvatud <MS> märgiga. Kasti saab välja lülitada.
 - **1. kriteerium – tüüpilised MS-sagedused:** 50190–50300, 70100–70400, 144290–144399 kHz. Nendes akendes olev spot aktsepteeritakse ka ilma mooduse nimeta, välja arvatud juhul, kui kommentaar märgib muud levi: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Aknaid ja märgendeid saab muuta.
 - **2. kriteerium – MS-moodused:** väljaspool aknaid või ühega neist märgenditest säilitatakse spot ainult siis, kui see sisaldab **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (ainult MS-i jaoks kasutatavad digitaalsed moodused) või **\<MS\>**, suur-, väike- või segatähtedega. Sõnu saab välja lülitada, lisada ja eemaldada; igal on oma loendur.
 - **Sagedusalad** 28, 50, 70, 144, 222, 432 MHz; **filtri test** kleebitud real; **loendurid**.

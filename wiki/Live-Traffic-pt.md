@@ -16,6 +16,8 @@ Um **mapa azimutal equidistante** centrado na sua estação (distância ao centr
 
 Os spots com uma estação **fora do mapa** são descartados. Um spot **acabado de chegar** (com não mais de 3 minutos) **pisca durante um minuto**, para que a atividade nova se veja logo.
 
+Mostrar quem está à escuta: triângulos da cor da banda marcam as estações que, segundo o PSKReporter, recebem em MSK144, FSK441, PSK2K ou JTMS em 28, 50, 70, 144 e 432 MHz na janela de tempo escolhida. Um clique num triângulo mostra indicativo, locator, modos e último spot. O fluxo MQTT do separador Recolha de dados tem de estar ligado.
+
 ## Como é calculada a nuvem
 
 Para cada spot o programa constrói o percurso entre os dois locators (a mesma geometria do seu próprio percurso, ver [Geometria e atenuação](Geometry-and-Path-Loss-pt)) e, à hora do spot, soma ponto a ponto da camada E as **contribuições de reflexão especular de cada chuva ativa**, ponderadas com o seu ZHR: o mesmo cálculo das **zonas PREV** da [abóbada celeste](Sky-View-pt). Para cada lado do percurso que reúna pelo menos 15 % do total, a nuvem é uma **elipse**: centro na média ponderada dos pontos, semieixos iguais a 1,5 vezes as raízes quadradas dos valores próprios da sua dispersão, eixo maior segundo o vetor próprio principal. Quando nenhuma chuva contribui (só meteoros esporádicos), as nuvens são os dois **hot spots** clássicos, desenhados a tracejado. As equações completas estão no capítulo 10 do manual de cálculo.

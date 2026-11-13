@@ -16,6 +16,8 @@
 
 Spots met 'n stasie **buite die kaart** word verwerp. 'n Spot wat **pas aangekom** het (nie ouer as 3 minute nie) **flikker vir een minuut**, sodat nuwe aktiwiteit dadelik uitstaan.
 
+Wys wie luister: driehoeke in die bandkleur merk die stasies wat volgens PSKReporter in die gekose tydvenster MSK144, FSK441, PSK2K of JTMS op 28, 50, 70, 144 en 432 MHz ontvang. 'n Klik op 'n driehoek wys roepsein, lokator, modusse en laaste spot. Die MQTT-stroom in die oortjie Data-insameling moet gekoppel wees.
+
 ## Hoe die wolk bereken word
 
 Vir elke spot bou die program die pad tussen die twee lokators (dieselfde geometrie as vir jou eie pad, sien [Geometrie en padverlies](Geometry-and-Path-Loss-af)) en tel, op die tyd van die spot, punt vir punt van die E-laag die **spekulêre refleksiebydraes van elke aktiewe swerm** op, met sy ZHR geweeg – dieselfde berekening as die **PREV-sones** van die [hemelkoepel](Sky-View-af). Vir elke kant van die pad wat minstens 15 % van die totaal bevat, is die wolk 'n **ellips**: middelpunt by die geweegde gemiddelde van die punte, halfasse 1,5 keer die vierkantswortels van die eiewaardes van hul verspreiding, hoofas langs die hoof-eievektor. Wanneer geen swerm bydra nie (slegs sporadiese meteore), is die wolke die twee klassieke **hot spots**, met strepies geteken. Die volledige vergelykings is in hoofstuk 10 van die berekeningshandleiding.

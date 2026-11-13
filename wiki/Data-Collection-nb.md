@@ -23,6 +23,7 @@ Hver strøm har vert, port, kommandoer som sendes etter innlogging, *Koble til p
 ## Filteret (40 % av vinduet)
 
 - **Valgfritt lokalt filter:** clusterlinjer under **27990,0 kHz** forkastes med en gang (vises ikke, lagres ikke).
+- CW-spotter forkastes med en gang (CW eller WPM i kommentaren, eller 28000-28070 kHz): de vises ikke i konsollen og lagres ikke, unntatt de som er merket <MS>. Boksen kan slås av.
 - **1. kriterium – typiske MS-frekvenser:** 50190–50300, 70100–70400, 144290–144399 kHz. Et spot i disse vinduene godtas også uten modusnavn, med mindre kommentaren oppgir en annen utbredelse: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Vinduer og tagger kan redigeres.
 - **2. kriterium – MS-modi:** utenfor vinduene, eller med en av disse taggene, beholdes et spot bare hvis det inneholder **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (digitale modi som bare brukes til MS) eller **\<MS\>**, med store, små eller blandede bokstaver. Ord kan slås av, legges til og fjernes; hvert har sin teller.
 - **Bånd** 28, 50, 70, 144, 222, 432 MHz; **test av filteret** på en innlimt linje; **tellere**.

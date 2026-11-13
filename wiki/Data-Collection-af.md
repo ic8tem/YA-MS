@@ -23,6 +23,7 @@ Elke stroom het 'n gasheer, poort, opdragte wat ná die aanmelding gestuur word,
 ## Die filter (40 % van die venster)
 
 - **Opsionele plaaslike filter:** clusterreëls onder **27990,0 kHz** word dadelik verwerp (nie gewys nie, nie gestoor nie).
+- CW-spots word dadelik weggegooi (CW of WPM in die kommentaar, of 28000-28070 kHz): hulle verskyn nie in die konsole nie en word nie gestoor nie, tensy hulle met <MS> gemerk is. Die blokkie kan afgeskakel word.
 - **1ste kriterium – tipiese MS-frekwensies:** 50190–50300, 70100–70400, 144290–144399 kHz. 'n Spot in hierdie vensters word aanvaar selfs sonder die modusnaam, tensy die kommentaar 'n ander voortplanting verklaar: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Vensters en etikette kan gewysig word.
 - **2de kriterium – MS-modusse:** buite die vensters, of met een van daardie etikette, word 'n spot slegs behou as dit **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (digitale modusse wat slegs vir MS gebruik word) of **\<MS\>** bevat, in hoof-, klein- of gemengde letters. Woorde kan afgeskakel, bygevoeg en verwyder word; elkeen het sy teller.
 - **Bande** 28, 50, 70, 144, 222, 432 MHz; **filtertoets** op 'n geplakte reël; **tellers**.

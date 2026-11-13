@@ -16,6 +16,8 @@ Sinu jaamale tsentreeritud **asimuutne kaugustruu kaart** (kaugus keskpunktist =
 
 Spotid, mille üks jaam on **kaardist väljas**, jäetakse kõrvale. **Äsja saabunud** spot (mitte vanem kui 3 minutit) **vilgub ühe minuti**, nii et uus aktiivsus torkab kohe silma.
 
+Näita, kes kuulab: riba värvi kolmnurgad märgivad jaamu, mis PSKReporteri järgi võtavad valitud ajaaknas vastu MSK144, FSK441, PSK2K või JTMS režiimis 28, 50, 70, 144 ja 432 MHz sagedusel. Klõps kolmnurgal näitab kutsungit, lokaatorit, režiime ja viimast spotti. Vahekaardi Andmete kogumine MQTT-voog peab olema ühendatud.
+
 ## Kuidas pilve arvutatakse
 
 Iga spoti jaoks ehitab programm kahe lokaatori vahelise trassi (sama geomeetria nagu sinu enda trassil, vt [Geomeetria ja sumbumine](Geometry-and-Path-Loss-et)) ja liidab spoti ajal E-kihi punkt-punktilt **iga aktiivse meteoorivoolu peegelpeegelduse panused**, kaalutuna selle ZHR-iga – sama arvutus nagu [taevavõlvi](Sky-View-et) **PREV alade** puhul. Igal trassi poolel, kus on vähemalt 15 % kogusummast, on pilv **ellips**: keskpunkt punktide kaalutud keskmises, pooltelgedeks 1,5-kordsed ruutjuured nende hajuvuse omaväärtustest, suur telg piki peamist omavektorit. Kui ükski meteoorivool ei panusta (ainult sporaadilised meteoorid), on pilvedeks kaks klassikalist **hot spoti**, joonistatud katkendjoonega. Täielikud võrrandid on arvutusjuhendi 10. peatükis.

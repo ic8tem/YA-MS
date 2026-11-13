@@ -23,6 +23,7 @@ Každý proud má hostitele, port, příkazy odesílané po přihlášení, *Zno
 ## Filtr (40 % okna)
 
 - **Volitelný místní filtr:** řádky clusteru pod **27990,0 kHz** se okamžitě zahodí (nezobrazí se ani neuloží).
+- Spoty CW se hned zahazují (CW nebo WPM v komentáři, nebo 28000-28070 kHz): neobjeví se v konzoli a neukládají se, pokud nejsou označené <MS>. Políčko lze vypnout.
 - **1. kritérium – typické frekvence MS:** 50190–50300, 70100–70400, 144290–144399 kHz. Spot v těchto oknech se přijme i bez názvu druhu provozu, pokud komentář neuvádí jiné šíření: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Okna i značky lze upravit.
 - **2. kritérium – druhy provozu MS:** mimo okna nebo s některou z těchto značek se spot ponechá, jen pokud obsahuje **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (digitální druhy provozu používané jen pro MS) nebo **\<MS\>**, velkými, malými či smíšenými písmeny. Slova lze vypnout, přidat i odebrat; každé má své počítadlo.
 - **Pásma** 28, 50, 70, 144, 222, 432 MHz; **test filtru** na vloženém řádku; **počítadla**.

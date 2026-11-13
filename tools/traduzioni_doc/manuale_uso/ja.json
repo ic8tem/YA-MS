@@ -46,7 +46,7 @@
  "3.3 Lingua, colori, carattere": "3.3 言語、配色、フォント",
  "Lingua: 36 lingue. Cambiando lingua la finestra si ricostruisce nella stessa posizione e sulla stessa linguetta, senza riavviare. Numeri e date seguono la lingua scelta (virgola decimale in italiano, punto in inglese).": "言語: 36 言語。言語を切り替えると、再起動せずに、同じ位置・同じタブのままウィンドウが再構築されます。数値と日付は選んだ言語の書式に従います（イタリア語では小数点にコンマ、英語ではピリオド）。",
  "Tema: 12 schemi di colori; Chiaro è quello di partenza, Notte e Nero servono al buio, Scia meteorica è lo stile originale di YA-MS.": "テーマ: 12 種類の配色。「ライト」が初期設定で、「夜間」と「ブラック」は暗い場所向け、「流星痕」は YA-MS 本来のスタイルです。",
- "Carattere (in fondo alla prima riga di comandi): rimpicciolisce o ingrandisce tutto il testo dall'85 al 140 %, a passi del 5 %. Con caratteri grandi le linguette vanno a capo.": "フォント（コマンド 1 行目の末尾）: すべての文字を 85〜140 % に拡大します。文字を大きくすると、タブは折り返して表示されます。",
+ "Carattere (in fondo alla prima riga di comandi): rimpicciolisce o ingrandisce tutto il testo dall'85 al 140 %, a passi del 5 %. Con caratteri grandi le linguette vanno a capo.": "フォント（コマンド 1 行目の末尾）: すべての文字を 85〜140 % の範囲で 5 % 刻みに縮小・拡大します。文字を大きくすると、タブは折り返して表示されます。",
  "Comandi: ripiega e riapre le tre righe di comandi, per dare spazio a mappe e grafici. La scelta viene ricordata.": "操作: 3 行のコマンドを折りたたんだり再び開いたりして、地図やグラフの表示領域を広げます。選択は記憶されます。",
  "Quasi ogni comando ha un fumetto: tieni fermo il mouse sopra il comando per leggere a che cosa serve e da quale fonte viene il valore di partenza.": "ほとんどのコマンドにはツールチップがあります。コマンドの上でマウスを止めると、その用途と初期値の出典が表示されます。",
  "4. Impostare la stazione e la tratta": "4. 局とパスの設定",

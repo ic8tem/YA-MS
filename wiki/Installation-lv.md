@@ -89,6 +89,8 @@ Instalē jauno versiju **virs vecās** (tas pats instalētājs, tā pati mape). 
 
 **No 1.8.0 YA-MS atjauninās pati.** Startējot vienreiz dienā tā pārbauda GitHub, vai ir jauna versija, un to piedāvā; poga **Atjauninājumi** apakšējā joslā pārbauda manuāli. *Atjaunināt tagad* lejupielādē jūsu sistēmas pārnēsājamo pakotni, aizstāj programmas failus, saglabā mapi `data` (mainītie programmas faili vispirms tiek nokopēti uz `data/backup/v<vecā versija>`) un restartējas; programmas mapei jābūt rakstāmai. Ja startējot trūkst programmas failu (mapē `data` vai `doc`), logs tos uzskaita un piedāvā tos atkal lejupielādēt no GitHub. Lai vairs nemeklētu jaunas versijas, `config.ini` iestatiet `controlla_aggiornamenti=0`.
 
+Sākot ar versiju 1.8.6, atjauninājumi ir automātiski un klusi: palaižot un pēc tam ik pēc 6 stundām YA-MS pārbauda GitHub un, ja ir jauna versija, to lejupielādē, instalē un pats restartējas, neko nejautājot (to parāda tikai statusa josla). Arī trūkstošie faili tiek lejupielādēti atkārtoti bez jautāšanas. Tālāk aprakstītais logs parādās tikai, nospiežot "Atjauninājumi", vai ja failā data/config.ini ieraksti aggiornamenti_automatici=0.
+
 ## Kompilēšana no pirmkoda (tikai izstrādātājiem)
 
 Instalētājus veido GitHub Actions (`.github/workflows/build.yml`) pie katras zara `release` atjaunināšanas (versija tiek ņemta no faila `VERSION`), un tas izveido arī laidienu `vX.Y.Z`. Lokāli:

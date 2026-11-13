@@ -89,6 +89,8 @@ Novou verzi nainstalujte **přes starou** (stejný instalátor, stejná složka)
 
 **Od verze 1.8.0 se YA-MS aktualizuje sám.** Při spuštění jednou denně zkontroluje na GitHubu, zda existuje nová verze, a nabídne ji; tlačítko **Aktualizace** ve spodní liště kontroluje ručně. *Aktualizovat nyní* stáhne přenosný balíček pro váš systém, nahradí soubory programu, ponechá složku `data` (měnící se soubory programu se nejprve zkopírují do `data/backup/v<stará verze>`) a restartuje se; do složky programu musí jít zapisovat. Pokud při spuštění chybí soubory programu (v `data` nebo `doc`), okno je vypíše a nabídne jejich opětovné stažení z GitHubu. Chcete-li nové verze nehledat, nastavte `controlla_aggiornamenti=0` v `config.ini`.
 
+Od verze 1.8.6 jsou aktualizace automatické a tiché: při spuštění a pak každých 6 hodin YA-MS kontroluje GitHub a pokud je k dispozici nová verze, stáhne ji, nainstaluje a sám se restartuje, aniž by se na cokoli ptal (ukáže to jen stavový řádek). Chybějící soubory se také znovu stáhnou bez ptaní. Okno popsané níže se objeví jen po stisknutí "Aktualizace" nebo pokud do souboru data/config.ini zapíšete aggiornamenti_automatici=0.
+
 ## Sestavení ze zdrojového kódu (jen pro vývojáře)
 
 Instalátory vytváří GitHub Actions (`.github/workflows/build.yml`) při každé aktualizaci větve `release` (verze se bere ze souboru `VERSION`), které také vytvoří vydání `vX.Y.Z`. Lokálně:

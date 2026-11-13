@@ -18,6 +18,8 @@ Spots mit einer Station **außerhalb der Karte** werden verworfen. Ein **gerade 
 
 Zeigen, wer hört: Dreiecke in der Bandfarbe markieren die Stationen, die laut PSKReporter im gewählten Zeitfenster MSK144, FSK441, PSK2K oder JTMS auf 28, 50, 70, 144 und 432 MHz empfangen. Ein Klick auf ein Dreieck zeigt Rufzeichen, Locator, Betriebsarten und letzten Spot. Der MQTT-Strom im Reiter Datensammlung muss verbunden sein.
 
+Es werden die Spots aller Bänder angezeigt, auch der in der Datensammlung nicht gewählten (diese werden nicht gespeichert). CW-Spots und Spots zwischen zu nahe liegenden Stationen werden nicht angezeigt, wenn sie in der Datensammlung verworfen werden.
+
 ## Wie die Wolke berechnet wird
 
 Für jeden Spot bildet das Programm die Strecke zwischen den beiden Locatoren (dieselbe Geometrie wie für deine eigene Strecke, siehe [Geometrie und Dämpfung](Geometry-and-Path-Loss-de)) und summiert zur Zeit des Spots Punkt für Punkt der E-Schicht die **Beiträge der spiegelnden Reflexion aller aktiven Ströme**, gewichtet mit ihrer ZHR – dieselbe Berechnung wie für die **PREV-Zonen** der [Himmelsansicht](Sky-View-de). Für jede Seite der Strecke, auf die mindestens 15 % der Summe entfallen, ist die Wolke eine **Ellipse**: Mittelpunkt im gewichteten Mittel der Punkte, Halbachsen gleich dem 1,5-Fachen der Quadratwurzeln der Eigenwerte ihrer Streuung, große Achse entlang des Haupteigenvektors. Trägt kein Strom bei (nur sporadische Meteore), sind die Wolken die beiden klassischen **Hot Spots**, gestrichelt gezeichnet. Die vollständigen Gleichungen stehen in Kapitel 10 des Berechnungshandbuchs.

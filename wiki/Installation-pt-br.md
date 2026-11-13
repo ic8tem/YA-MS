@@ -89,6 +89,8 @@ Instale a nova versão **sobre a anterior** (mesmo instalador, mesma pasta). As 
 
 **A partir da 1.8.0, o YA-MS se atualiza sozinho.** Ao iniciar, uma vez por dia, verifica no GitHub se há uma versão nova e a oferece; o botão **Atualizações** na barra inferior faz a verificação manualmente. *Atualizar agora* baixa o pacote portátil do seu sistema, substitui os arquivos do programa, mantém a pasta `data` (os arquivos do programa que mudam são antes copiados para `data/backup/v<versão antiga>`) e reinicia; é preciso poder gravar na pasta do programa. Se ao iniciar faltarem arquivos do programa (em `data` ou `doc`), uma janela os lista e oferece baixá-los de novo do GitHub. Para não procurar versões novas coloque `controlla_aggiornamenti=0` em `config.ini`.
 
+A partir da versão 1.8.6 as atualizações são automáticas e silenciosas: ao iniciar e depois a cada 6 horas o YA-MS consulta o GitHub e, se houver uma versão nova, baixa, instala e reinicia sozinho sem perguntar nada (só a barra de status avisa). Os arquivos que faltam também são baixados de novo sem perguntar. A janela descrita abaixo só aparece ao clicar em "Atualizações" ou se você escrever aggiornamenti_automatici=0 no arquivo data/config.ini.
+
 ## Compilar a partir do código-fonte (só para desenvolvedores)
 
 Os instaladores são gerados pelo GitHub Actions (`.github/workflows/build.yml`) a cada atualização do branch `release` (versão lida do arquivo `VERSION`), que também cria a release `vX.Y.Z`. Localmente:

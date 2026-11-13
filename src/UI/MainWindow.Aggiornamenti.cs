@@ -2,6 +2,10 @@
 //  - all'avvio (una volta al giorno) si guarda l'ultima Release; se e' piu' nuova compare una finestra con
 //    "Aggiorna adesso", "Più tardi", "Salta questa versione"; il pulsante "Aggiornamenti" nella barra in basso
 //    fa lo stesso controllo a mano, anche per una versione saltata;
+//  - aggiornamenti automatici silenziosi (richiesta dell'autore, 13/11/2026; aggiornamenti_automatici=1, di partenza):
+//    all'avvio e poi ogni 6 ore si guarda l'ultima Release e, se e' piu' nuova, la si scarica, installa e il programma
+//    si riavvia da solo, senza chiedere nulla (avviso solo nella barra di stato); anche i file mancanti si riscaricano
+//    senza chiedere. Con aggiornamenti_automatici=0 torna la finestra con le tre scelte;
 //  - all'avvio si controlla che ci siano tutti i file del programma (data e doc): se ne mancano, una finestra
 //    li elenca e propone di riscaricarli da GitHub.
 using System;
@@ -22,17 +26,45 @@ namespace YAMS
         static bool startupChecksDone;   // una sola volta per avvio, anche se la finestra si ricrea (lingua, tema)
         bool updateBusy;
 
+        DispatcherTimer autoUpdateTimer;
+        bool AutoUpdates { get { return cfg.GetB("controlla_aggiornamenti", true) && cfg.GetB("aggiornamenti_automatici", true); } }
+
         async Task StartupUpdateChecks()
         {
-            if (startupChecksDone || Program.ScreenshotDir != null) return;
+            if (Program.ScreenshotDir != null) return;
+            if (autoUpdateTimer == null)   // anche nella finestra ricreata (lingua, tema): controllo ogni 6 ore
+            {
+                autoUpdateTimer = new DispatcherTimer { Interval = TimeSpan.FromHours(6) };
+                autoUpdateTimer.Tick += async (s, e) => { if (AutoUpdates) await AutoUpdate(); };
+                autoUpdateTimer.Start();
+                Closed += (s, e) => autoUpdateTimer.Stop();
+            }
+            if (startupChecksDone) return;
             startupChecksDone = true;
             await Task.Run(() => Updater.Cleanup());
             await CheckMissingFiles(false);
             if (!cfg.GetB("controlla_aggiornamenti", true)) return;
+            if (AutoUpdates) { await AutoUpdate(); return; }
             DateTime last;
             if (DateTime.TryParse(cfg.Get("aggiornamenti_ultimo_controllo", ""), CultureInfo.InvariantCulture,
                     DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out last) && (DateTime.UtcNow - last).TotalHours < 20) return;
             await CheckUpdates(false);
+        }
+
+        // aggiornamento automatico e silenzioso: nessuna finestra, solo la barra di stato; se non si puo' (nessun
+        // pacchetto per questo sistema, cartella non scrivibile, rete assente) si riprova al controllo successivo
+        async Task AutoUpdate()
+        {
+            if (updateBusy) return;
+            ReleaseInfo ri = null;
+            updateBusy = true;
+            try { ri = await Task.Run(() => Updater.GetLatest()); }
+            catch { }
+            finally { updateBusy = false; }
+            cfg.Set("aggiornamenti_ultimo_controllo", DateTime.UtcNow.ToString("o", CultureInfo.InvariantCulture));
+            try { cfg.Save(); } catch { }
+            if (ri == null || ri.Ver <= Updater.Current || ri.AssetUrl == null || !CanWriteProgramFolder()) return;
+            await InstallUpdate(ri, true);
         }
 
         async void CheckUpdatesManual()
@@ -46,6 +78,16 @@ namespace YAMS
         {
             List<string> miss = await Task.Run(() => Updater.MissingFiles());
             if (miss.Count == 0) return;
+            if (!manual && AutoUpdates)   // aggiornamenti automatici: si riscaricano senza chiedere
+            {
+                updateBusy = true;
+                int got = 0;
+                try { got = await Task.Run(() => Updater.DownloadMissing(miss, (i, n) => Dispatcher.UIThread.Post(() => status.Text = Lang.F("Scaricamento dei file mancanti: {0} di {1}", i, n)))); }
+                catch { }
+                finally { updateBusy = false; }
+                status.Text = Lang.F("Scaricati {0} file su {1}.", got, miss.Count);
+                return;
+            }
             List<string> shown = miss.Count > 25 ? miss.GetRange(0, 25) : miss;
             string list = "  " + string.Join("\n  ", shown) + (miss.Count > 25 ? "\n  " + Lang.F("... e altri {0}", miss.Count - 25) : "");
             int ch = await Dialogs.Choice(this, Lang.T("File mancanti"),
@@ -129,10 +171,11 @@ namespace YAMS
             await InstallUpdate(ri);
         }
 
-        async Task InstallUpdate(ReleaseInfo ri)
+        async Task InstallUpdate(ReleaseInfo ri, bool silent = false)
         {
             if (!CanWriteProgramFolder())
             {
+                if (silent) return;
                 await ErrorWithReleasePage(Lang.F("Non posso scrivere nella cartella del programma ({0}): installa la nuova versione a mano.", AppPaths.AppDir));
                 return;
             }
@@ -153,12 +196,14 @@ namespace YAMS
             if (restart == null)
             {
                 status.Text = Lang.T("Pronto");
+                if (silent) { status.Text = Lang.F("L'aggiornamento non è riuscito: {0}", err); return; }
                 await ErrorWithReleasePage(Lang.F("L'aggiornamento non è riuscito: {0}", err));
                 return;
             }
             string msg = Lang.F("YA-MS {0} è installato. Il programma ora si riavvia.", ri.VersionText);
             if (backedUp > 0) msg += "\n\n" + Lang.F("{0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.", backedUp, AppPaths.Version);
-            await Dialogs.Message(this, Lang.T("Aggiornamento installato"), msg);
+            if (silent) status.Text = Lang.F("YA-MS {0} è installato. Il programma ora si riavvia.", ri.VersionText);
+            else await Dialogs.Message(this, Lang.T("Aggiornamento installato"), msg);
             try
             {
                 cfg.Set("aggiornamenti_salta", "");
@@ -169,6 +214,7 @@ namespace YAMS
             }
             catch (Exception ex)
             {
+                if (silent) { status.Text = Lang.F("Riavvia YA-MS a mano: {0}", ex.Message); return; }
                 await Dialogs.Message(this, Lang.T("Aggiornamento installato"), Lang.F("Riavvia YA-MS a mano: {0}", ex.Message));
             }
             if (Avalonia.Application.Current != null && Avalonia.Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)

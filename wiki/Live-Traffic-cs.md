@@ -18,6 +18,8 @@ Spoty se stanicí **mimo mapu** se zahazují. Spot, který **právě přišel** 
 
 Ukázat, kdo poslouchá: trojúhelníky v barvě pásma označují stanice, které podle PSKReporteru ve zvoleném časovém okně přijímají MSK144, FSK441, PSK2K nebo JTMS na 28, 50, 70, 144 a 432 MHz. Klepnutí na trojúhelník ukáže značku, lokátor, druhy provozu a poslední spot. Proud MQTT na kartě Sběr dat musí být připojen.
 
+Zobrazují se spoty všech pásem, i těch, která nejsou vybrána ve Sběru dat (ty se neukládají). Spoty CW a spoty mezi příliš blízkými stanicemi se nezobrazují, pokud se ve Sběru dat zahazují.
+
 ## Jak se počítá oblak
 
 Pro každý spot program sestaví trasu mezi oběma lokátory (stejná geometrie jako pro vaši vlastní trasu, viz [Geometrie a útlum](Geometry-and-Path-Loss-cs)) a v čase spotu sečte bod po bodu vrstvy E **příspěvky zrcadlového odrazu všech aktivních rojů**, vážené jejich ZHR – stejný výpočet jako u **zón PREV** na [nebeské klenbě](Sky-View-cs). Pro každou stranu trasy, která drží alespoň 15 % celku, je oblak **elipsa**: střed ve váženém průměru bodů, poloosy 1,5násobek odmocnin vlastních čísel jejich rozptylu, hlavní osa podél hlavního vlastního vektoru. Když žádný roj nepřispívá (jen sporadické meteory), jsou oblaky dvěma klasickými **hot spoty**, kreslenými čárkovaně. Úplné rovnice jsou v kapitole 10 manuálu výpočtů.

@@ -18,6 +18,8 @@ Spots med en station **uden for kortet** kasseres. Et spot, der **lige er ankomm
 
 Vis hvem der lytter: trekanter i båndets farve markerer de stationer, der ifølge PSKReporter modtager MSK144, FSK441, PSK2K eller JTMS på 28, 50, 70, 144 og 432 MHz i det valgte tidsvindue. Et klik på en trekant viser kaldesignal, lokator, modes og sidste spot. MQTT-strømmen i fanen Dataindsamling skal være forbundet.
 
+Spots fra alle bånd vises, også fra bånd der ikke er valgt i Dataindsamling (de gemmes ikke). CW-spots og spots mellem stationer, der ligger for tæt, vises ikke, hvis de kasseres i Dataindsamling.
+
 ## Sådan beregnes skyen
 
 For hvert spot opbygger programmet strækningen mellem de to lokatorer (samme geometri som for din egen strækning, se [Geometri og dæmpning](Geometry-and-Path-Loss-da)) og lægger, på spottets tidspunkt, punkt for punkt i E-laget **bidragene fra spejlende refleksion for hver aktiv sværm** sammen, vægtet med dens ZHR – samme beregning som **PREV-zonerne** i [himmelkuplen](Sky-View-da). For hver side af strækningen, der har mindst 15 % af det samlede, er skyen en **ellipse**: centrum i punkternes vægtede middelværdi, halvakser 1,5 gange kvadratrødderne af egenværdierne for deres spredning, storakse langs hovedegenvektoren. Når ingen sværm bidrager (kun sporadiske meteorer), er skyerne de to klassiske **hot spots**, tegnet stiplet. De fulde ligninger står i kapitel 10 i beregningsmanualen.

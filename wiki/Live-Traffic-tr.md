@@ -18,6 +18,8 @@
 
 Kimin dinlediğini göster: bant renginde üçgenler, PSKReporter'a göre seçilen zaman aralığında 28, 50, 70, 144 ve 432 MHz'de MSK144, FSK441, PSK2K veya JTMS alan istasyonları gösterir. Bir üçgene tıklamak çağrı işaretini, lokatörü, modları ve son spotu gösterir. Veri toplama sekmesindeki MQTT akışı bağlı olmalıdır.
 
+Veri toplama'da seçilmemiş olanlar da dahil tüm bantların spotları gösterilir (bunlar kaydedilmez). CW spotları ve birbirine çok yakın istasyonlar arasındaki spotlar, Veri toplama'da atılıyorsa gösterilmez.
+
 ## Bulut nasıl hesaplanır
 
 Program her spot için iki lokatör arasındaki yolu kurar (kendi yolunuzla aynı geometri, bkz. [Geometri ve yol kaybı](Geometry-and-Path-Loss-tr)) ve spot zamanında E katmanının noktaları üzerinde, ZHR ile ağırlıklandırılmış **her etkin yağmurun aynasal yansıma katkılarını** nokta nokta toplar – [gökyüzü kubbesindeki](Sky-View-tr) **PREV bölgeleriyle** aynı hesap. Toplamın en az %15'ini taşıyan her yol tarafı için bulut bir **elipstir**: merkezi noktaların ağırlıklı ortalamasında, yarı eksenleri dağılımlarının özdeğerlerinin kareköklerinin 1,5 katı, büyük ekseni ana özvektör boyunca. Hiçbir yağmur katkı vermiyorsa (yalnızca sporadik meteorlar) bulutlar kesikli çizilen iki klasik **hot spot**'tur. Denklemlerin tamamı hesap kılavuzunun 10. bölümündedir.

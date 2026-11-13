@@ -89,6 +89,8 @@ sudo apt install ./ya-ms_x.y.z_amd64.deb
 
 **自 1.8.0 起，YA-MS 可自行更新。** 启动时（每天一次）会在 GitHub 上检查是否有新版本并提示；底部栏的 **更新** 按钮可手动检查。*立即更新* 会下载适用于您系统的便携软件包，替换程序文件，保留 `data` 文件夹（会变化的程序文件先复制到 `data/backup/v<旧版本>`），然后重新启动；程序文件夹必须可写。如果启动时缺少程序文件（在 `data` 或 `doc` 中），会弹出窗口列出这些文件，并提议从 GitHub 重新下载。若不想检查新版本，请在 `config.ini` 中设置 `controlla_aggiornamenti=0`。
 
+从 1.8.6 版起，更新为自动且静默：启动时以及之后每 6 小时，YA-MS 检查 GitHub，如有新版本则下载、安装并自动重新启动，不询问任何问题（仅状态栏提示）。缺失的文件也会在不询问的情况下重新下载。下面描述的窗口只在按下“更新”或在 data/config.ini 文件中写入 aggiornamenti_automatici=0 时出现。
+
 ## 从源代码构建（仅限开发者）
 
 安装包由 GitHub Actions（`.github/workflows/build.yml`）在 `release` 分支每次更新时生成（版本号取自 `VERSION` 文件），同时会创建发布版本 `vX.Y.Z`。本地构建：

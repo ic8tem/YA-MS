@@ -18,6 +18,8 @@ Os spots com uma estação **fora do mapa** são descartados. Um spot **recém-c
 
 Mostrar quem está ouvindo: triângulos na cor da banda marcam as estações que, segundo o PSKReporter, recebem em MSK144, FSK441, PSK2K ou JTMS em 28, 50, 70, 144 e 432 MHz na janela de tempo escolhida. Um clique em um triângulo mostra indicativo, locator, modos e último spot. O fluxo MQTT da aba Coleta de dados precisa estar conectado.
 
+São mostrados os spots de todas as bandas, também das não escolhidas na Coleta de dados (esses não são salvos). Os spots CW e os entre estações próximas demais não são mostrados, se forem descartados na Coleta de dados.
+
 ## Como é calculada a nuvem
 
 Para cada spot o programa constrói o percurso entre os dois locators (a mesma geometria do seu próprio percurso, veja [Geometria e atenuação](Geometry-and-Path-Loss-pt-br)) e, à hora do spot, soma ponto a ponto da camada E as **contribuições de reflexão especular de cada chuva ativa**, ponderadas com o seu ZHR: o mesmo cálculo das **zonas PREV** da [abóbada celeste](Sky-View-pt-br). Para cada lado do percurso que reúna pelo menos 15 % do total, a nuvem é uma **elipse**: centro na média ponderada dos pontos, semieixos iguais a 1,5 vezes as raízes quadradas dos autovalores da sua dispersão, eixo maior ao longo do autovetor principal. Quando nenhuma chuva contribui (só meteoros esporádicos), as nuvens são os dois **hot spots** clássicos, desenhados em tracejado. As equações completas estão no capítulo 10 do manual de cálculo.

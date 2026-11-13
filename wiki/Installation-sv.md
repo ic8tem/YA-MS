@@ -89,6 +89,8 @@ Installera den nya versionen **ovanpå den gamla** (samma installationsprogram, 
 
 **Från 1.8.0 uppdaterar YA-MS sig självt.** Vid start kontrollerar det en gång om dagen på GitHub om det finns en ny version och erbjuder den; knappen **Uppdateringar** i nedre fältet kontrollerar för hand. *Uppdatera nu* laddar ner det portabla paketet för ditt system, ersätter programfilerna, behåller mappen `data` (programfiler som ändras kopieras först till `data/backup/v<gammal version>`) och startar om; programmappen måste vara skrivbar. Saknas programfiler vid start (i `data` eller `doc`) listar ett fönster dem och erbjuder att ladda ner dem igen från GitHub. För att sluta söka efter nya versioner, sätt `controlla_aggiornamenti=0` i `config.ini`.
 
+Från version 1.8.6 är uppdateringarna automatiska och tysta: vid start och sedan var 6:e timme kontrollerar YA-MS GitHub och, om det finns en ny version, laddar ner den, installerar den och startar om av sig självt utan att fråga något (bara statusraden visar det). Saknade filer laddas också ner igen utan att fråga. Fönstret som beskrivs nedan visas bara när du trycker på "Uppdateringar" eller om du skriver aggiornamenti_automatici=0 i filen data/config.ini.
+
 ## Bygga från källkod (endast för utvecklare)
 
 Installationsprogrammen skapas av GitHub Actions (`.github/workflows/build.yml`) vid varje uppdatering av grenen `release` (versionen tas från filen `VERSION`), som också skapar releasen `vX.Y.Z`. Lokalt:

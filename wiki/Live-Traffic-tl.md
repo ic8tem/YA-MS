@@ -18,6 +18,8 @@ Itinatapon ang mga spot na may istasyong **nasa labas ng mapa**. Ang spot na **k
 
 Ipakita kung sino ang nakikinig: mga tatsulok na kulay ng banda ang nagmamarka sa mga istasyong, ayon sa PSKReporter, tumatanggap ng MSK144, FSK441, PSK2K o JTMS sa 28, 50, 70, 144 at 432 MHz sa napiling panahon. Ang pag-click sa tatsulok ay nagpapakita ng call sign, locator, mga mode at huling spot. Dapat nakakonekta ang daloy na MQTT sa tab na Pangongolekta ng data.
 
+Ipinapakita ang mga spot ng lahat ng banda, pati ng mga bandang hindi pinili sa Pagkolekta ng data (hindi ito iniimbak). Hindi ipinapakita ang mga CW spot at ang mga spot sa pagitan ng mga istasyong masyadong malapit, kung itinatapon ang mga ito sa Pagkolekta ng data.
+
 ## Paano kinakalkula ang ulap
 
 Para sa bawat spot, binubuo ng programa ang landas sa pagitan ng dalawang locator (parehong heometriya gaya ng sa sarili mong landas, tingnan ang [Heometriya at path loss](Geometry-and-Path-Loss-tl)) at, sa oras ng spot, pinagsasama-sama punto por punto ng E layer ang **mga kontribusyon ng specular na repleksiyon ng bawat aktibong shower**, na tinimbang ayon sa ZHR nito – parehong kalkulasyon ng **mga PREV na sona** ng [kalangitan](Sky-View-tl). Para sa bawat panig ng landas na may hindi bababa sa 15 % ng kabuuan, ang ulap ay isang **ellipse**: gitna sa tinimbang na mean ng mga punto, mga semi-axis na 1.5 ulit ng square root ng mga eigenvalue ng kanilang pagkakalat, pangunahing axis sa direksiyon ng pangunahing eigenvector. Kapag walang shower na nag-aambag (sporadic na meteor lamang), ang mga ulap ay ang dalawang klasikong **hot spot**, na iginuhit nang putol-putol. Nasa kabanata 10 ng manwal ng kalkulasyon ang buong mga ekwasyon.

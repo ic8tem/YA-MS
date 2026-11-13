@@ -38,6 +38,17 @@ INSTALLAZIONE
   data/backup/v<versione vecchia>) e riavvia YA-MS. Serve poter scrivere nella cartella del programma.
   Se all'avvio mancano file del programma (in data o in doc), una finestra li elenca e propone di riscaricarli
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
+  Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
+
+NOVITA' DELLA 1.8.6
+  - Aggiornamenti automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'e' una versione
+    nuova, la scarica, la installa e si riavvia da solo senza chiedere (avviso solo nella barra di stato). Anche i file
+    mancanti si riscaricano senza chiedere. Per tornare alla finestra con le scelte: aggiornamenti_automatici=0 in
+    data/config.ini.
+  - Traffico in diretta: si vedono gli spot di tutte le bande, anche di quelle non scelte nella Raccolta dati (quelli
+    non si memorizzano); le stazioni in ascolto si vedono su tutte le bande.
+  - Gli spot CW e quelli entro la distanza minima (500 km) non si vedono piu' nemmeno se gia' in memoria o letti
+    dall'archivio scritto da una versione precedente (tabella della Raccolta dati e mappa del traffico).
 
 NOVITA' DELLA 1.8.5
   - Raccolta dati: gli spot tra stazioni piu' vicine di 500 km si scartano subito (a quella distanza il collegamento e'

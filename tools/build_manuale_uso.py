@@ -24,7 +24,7 @@ def T(t):
     return TRD[t]
 
 TITLE = "Manuale d'uso di YA-MS"
-SUB = "Versione 1.8.5 - a cura di Costantino IC8TEM - novembre 2026"
+SUB = "Versione 1.8.6 - a cura di Costantino IC8TEM - novembre 2026"
 
 B = []
 h1 = lambda t: B.append(("h1", T(t))); h2 = lambda t: B.append(("h2", T(t))); p = lambda t: B.append(("p", T(t)))
@@ -59,6 +59,7 @@ p("All'avvio compare per pochi secondi la schermata con le Perseidi sopra il VLT
 h2("2.3 La cartella data")
 p("Tutte le impostazioni e tutti i dati stanno in un'unica cartella data accanto al programma: niente AppData, niente cartelle di sistema. Per spostare YA-MS su un altro computer basta copiare la cartella del programma con la sua cartella data. Il contenuto della cartella è descritto nel capitolo 13.")
 h2("2.4 Aggiornamenti automatici")
+p("Dalla versione 1.8.6 gli aggiornamenti sono automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'è una versione nuova, la scarica, la installa e si riavvia da solo senza chiedere nulla (lo dice solo la barra di stato). Anche i file mancanti si riscaricano senza chiedere. La finestra descritta qui sotto compare solo premendo \"Aggiornamenti\" oppure se scrivi aggiornamenti_automatici=0 nel file data/config.ini.")
 p("Dalla versione 1.8.0 YA-MS controlla da solo su GitHub, all'avvio e al massimo una volta al giorno, se è uscita una versione nuova. Se c'è, compare la finestra \"Aggiornamento disponibile\" con le novità e tre pulsanti:")
 li("Aggiorna adesso: scarica il pacchetto adatto al tuo sistema, sostituisce i file del programma, tiene la cartella data e riavvia YA-MS. I file del programma nella cartella data che la nuova versione cambia vengono prima copiati in data/backup/v<versione vecchia>; i tuoi file (impostazioni, archivi, spot, ADIF) non vengono toccati.")
 li("Più tardi: chiude la finestra; il controllo si ripete il giorno dopo.")
@@ -208,6 +209,7 @@ p("Una mappa azimutale equidistante centrata sulla tua stazione con tutto il tra
 li("Raggio della mappa: 600-3500 km. Spot da mostrare: ultimi 15 o 30 minuti, ultima ora, ultime 3 o 24 ore.")
 li("Un clic su una tratta o su una riga della tabella evidenzia il collegamento e mostra il centro della nuvola, la sua quota e le sue dimensioni.")
 li("Mostra chi è in ascolto: triangoli del colore della banda segnano le stazioni che, secondo PSKReporter, ricevono in MSK144, FSK441, PSK2K o JTMS su 28, 50, 70, 144 e 432 MHz nella finestra di tempo scelta. Un clic sul triangolo mostra nominativo, locator, modi e ultimo spot. Serve il flusso MQTT della linguetta Raccolta dati connesso.")
+li("Si vedono gli spot di tutte le bande, anche di quelle non scelte nella Raccolta dati (quelli non si memorizzano). Gli spot CW e quelli tra stazioni troppo vicine non si vedono, se sono scartati nella Raccolta dati.")
 h2("9.2 Flusso radar")
 p("I conteggi orari delle meteore e le quote delle scie del radar SKiYMET di Collm (36,2 MHz) e l'ultima immagine del radar di Sodankylä (36,9 MHz).")
 li("Scarica adesso e Aggiornamento automatico di tutte le fonti ogni 5 minuti: ogni fonte viene riscaricata solo se è cambiata.")

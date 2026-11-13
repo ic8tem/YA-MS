@@ -18,6 +18,8 @@ Azok a spotok, amelyeknek valamelyik állomása **a térképen kívül** esik, e
 
 Mutasd, ki figyel: a sáv színű háromszögek jelölik azokat az állomásokat, amelyek a PSKReporter szerint a választott időablakban MSK144, FSK441, PSK2K vagy JTMS módban vesznek 28, 50, 70, 144 és 432 MHz-en. Egy háromszögre kattintva látszik a hívójel, a lokátor, a módok és az utolsó spot. Az Adatgyűjtés fül MQTT-folyamának csatlakoztatva kell lennie.
 
+Minden sáv spotjai látszanak, azoké is, amelyeket az Adatgyűjtésben nem választottál ki (ezek nem tárolódnak). A CW spotok és a túl közeli állomások közötti spotok nem látszanak, ha az Adatgyűjtésben elvetésre kerülnek.
+
 ## Hogyan számítja a felhőt
 
 A program minden spothoz felépíti a két lokátor közötti útvonalat (ugyanazzal a geometriával, mint az Ön saját útvonalánál, lásd: [Geometria és útcsillapítás](Geometry-and-Path-Loss-hu)), és a spot időpontjában az E-réteg minden pontjára összeadja **az összes aktív raj tükrös reflexiós hozzájárulását** a ZHR-jével súlyozva – ugyanez a számítás készíti az [égbolt-kupola](Sky-View-hu) **PREV zónáit** is. Az útvonal minden olyan oldalán, amely az összegnek legalább 15 %-át adja, a felhő egy **ellipszis**: középpontja a pontok súlyozott átlaga, féltengelyei a szórásmátrix sajátértékei négyzetgyökének 1,5-szerese, nagytengelye a fő sajátvektor irányába esik. Ha egyetlen raj sem járul hozzá (csak sporadikus meteorok), a felhők a két klasszikus **hot spot**, szaggatott vonallal rajzolva. A teljes egyenletek a számítási kézikönyv 10. fejezetében találhatók.

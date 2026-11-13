@@ -89,6 +89,8 @@ Installeer de nieuwe versie **over de oude heen** (hetzelfde installatieprogramm
 
 **Vanaf 1.8.0 werkt YA-MS zichzelf bij.** Bij het starten controleert het eenmaal per dag op GitHub of er een nieuwe versie is en biedt die aan; de knop **Updates** in de onderste balk controleert met de hand. *Nu bijwerken* downloadt het portable pakket voor je systeem, vervangt de programmabestanden, behoudt de map `data` (programmabestanden die veranderen worden eerst gekopieerd naar `data/backup/v<oude versie>`) en herstart; de programmamap moet beschrijfbaar zijn. Ontbreken er bij het starten programmabestanden (in `data` of `doc`), dan toont een venster ze en biedt aan ze opnieuw van GitHub te downloaden. Om niet meer op nieuwe versies te controleren zet je `controlla_aggiornamenti=0` in `config.ini`.
 
+Vanaf versie 1.8.6 zijn updates automatisch en stil: bij het starten en daarna elke 6 uur controleert YA-MS GitHub en, als er een nieuwe versie is, downloadt en installeert die en herstart vanzelf zonder iets te vragen (alleen de statusbalk meldt het). Ontbrekende bestanden worden ook zonder vragen opnieuw gedownload. Het hieronder beschreven venster verschijnt alleen als je op "Updates" drukt of als je aggiornamenti_automatici=0 in het bestand data/config.ini schrijft.
+
 ## Compileren vanuit de broncode (alleen voor ontwikkelaars)
 
 De installatiepakketten worden gemaakt door GitHub Actions (`.github/workflows/build.yml`) bij elke update van de branch `release` (versie uit het bestand `VERSION`), die ook de release `vX.Y.Z` aanmaakt. Lokaal:

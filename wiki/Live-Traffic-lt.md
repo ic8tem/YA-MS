@@ -18,6 +18,8 @@ Spotai, kurių viena stotis yra **už žemėlapio ribų**, atmetami. **Ką tik a
 
 Rodyti, kas klausosi: juostos spalvos trikampiai žymi stotis, kurios, pasak PSKReporter, pasirinktame laiko lange priima MSK144, FSK441, PSK2K ar JTMS 28, 50, 70, 144 ir 432 MHz juostose. Spustelėjus trikampį rodomas šaukinys, lokatorius, režimai ir paskutinis spotas. Kortelės Duomenų rinkimas MQTT srautas turi būti prijungtas.
 
+Rodomi visų juostų spotai, taip pat ir juostų, nepasirinktų Duomenų rinkime (jie neišsaugomi). CW spotai ir spotai tarp per arti esančių stočių nerodomi, jei Duomenų rinkime jie atmetami.
+
 ## Kaip skaičiuojamas debesis
 
 Kiekvienam spotui programa sudaro trasą tarp dviejų lokatorių (ta pati geometrija kaip jūsų trasai, žr. [Geometrija ir slopinimas](Geometry-and-Path-Loss-lt)) ir spoto laiku E sluoksnio taškas po taško susumuoja **kiekvieno aktyvaus srauto veidrodinio atspindžio indėlius**, pasvertus jo ZHR, – tas pats skaičiavimas kaip [dangaus skliauto](Sky-View-lt) **PREV zonų**. Kiekvienoje trasos pusėje, kurioje yra bent 15 % visos sumos, debesis yra **elipsė**: centras – svertiniame taškų vidurkyje, pusašės – 1,5 karto jų išsibarstymo tikrinių verčių kvadratinės šaknys, didžioji ašis – išilgai pagrindinio tikrinio vektoriaus. Kai jokio srauto indėlio nėra (tik sporadiniai meteorai), debesys yra du klasikiniai **hot spot**, piešiami brūkšnine linija. Visos lygtys pateiktos skaičiavimų vadovo 10 skyriuje.

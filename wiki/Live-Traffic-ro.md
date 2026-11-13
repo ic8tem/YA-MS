@@ -18,6 +18,8 @@ Spoturile cu o stație **în afara hărții** sunt eliminate. Un spot **abia sos
 
 Arată cine ascultă: triunghiuri în culoarea benzii marchează stațiile care, după PSKReporter, recepționează MSK144, FSK441, PSK2K sau JTMS pe 28, 50, 70, 144 și 432 MHz în fereastra de timp aleasă. Un clic pe un triunghi arată indicativul, locatorul, modurile și ultimul spot. Fluxul MQTT din fila Colectare date trebuie să fie conectat.
 
+Se văd spoturile tuturor benzilor, inclusiv ale celor nealese în Colectarea datelor (acestea nu se memorează). Spoturile CW și cele între stații prea apropiate nu se văd, dacă sunt eliminate în Colectarea datelor.
+
 ## Cum se calculează norul
 
 Pentru fiecare spot, programul construiește traseul dintre cei doi locatori (aceeași geometrie ca pentru propriul traseu, vedeți [Geometrie și atenuare pe traseu](Geometry-and-Path-Loss-ro)) și, la ora spotului, adună punct cu punct al stratului E **contribuțiile de reflexie speculară ale fiecărui roi activ**, ponderate cu ZHR-ul său – același calcul ca pentru **zonele PREV** din [bolta cerească](Sky-View-ro). Pentru fiecare latură a traseului care deține cel puțin 15 % din total, norul este o **elipsă**: centrul în media ponderată a punctelor, semiaxele de 1,5 ori rădăcinile pătrate ale valorilor proprii ale dispersiei lor, axa mare de-a lungul vectorului propriu principal. Când niciun roi nu contribuie (doar meteori sporadici), norii sunt cele două **hot spot-uri** clasice, desenate punctat. Ecuațiile complete se află în capitolul 10 al manualului de calcul.

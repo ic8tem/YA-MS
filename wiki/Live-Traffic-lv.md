@@ -18,6 +18,8 @@ Spoti, kuru stacija ir **ārpus kartes**, tiek atmesti. **Tikko pienācis** spot
 
 Rādīt, kas klausās: joslas krāsas trijstūri iezīmē stacijas, kas pēc PSKReporter datiem izvēlētajā laika logā uztver MSK144, FSK441, PSK2K vai JTMS 28, 50, 70, 144 un 432 MHz joslās. Klikšķis uz trijstūra parāda izsaukuma signālu, lokatoru, režīmus un pēdējo spotu. Cilnes Datu vākšana MQTT plūsmai jābūt pievienotai.
 
+Tiek rādīti visu joslu spoti, arī to joslu, kas nav izvēlētas Datu vākšanā (tie netiek saglabāti). CW spoti un spoti starp pārāk tuvām stacijām netiek rādīti, ja Datu vākšanā tie tiek atmesti.
+
 ## Kā tiek aprēķināts mākonis
 
 Katram spotam programma izveido trasi starp abiem lokatoriem (tā pati ģeometrija kā tavai trasei, sk. [Ģeometrija un vājinājums](Geometry-and-Path-Loss-lv)) un spota laikā E slāņa punktu pa punktam saskaita **katras aktīvās plūsmas spoguļatstarošanas devumus**, svērtus ar tās ZHR – tas pats aprēķins kā [debess velves](Sky-View-lv) **PREV zonām**. Katrai trases pusei, kurā ir vismaz 15 % no kopējā, mākonis ir **elipse**: centrs punktu svērtajā vidējā, pusasis 1,5 reizes lielākas par to izkliedes īpašvērtību kvadrātsaknēm, lielā ass pa galveno īpašvektoru. Ja neviena plūsma nedod devumu (tikai sporādiskie meteori), mākoņi ir divi klasiskie **hot spot**, zīmēti ar raustītu līniju. Pilnie vienādojumi ir aprēķinu rokasgrāmatas 10. nodaļā.

@@ -89,6 +89,8 @@ Instalați noua versiune **peste cea veche** (același program de instalare, ace
 
 **De la 1.8.0, YA-MS se actualizează singur.** La pornire, o dată pe zi, verifică pe GitHub dacă există o versiune nouă și o propune; butonul **Actualizări** din bara de jos face verificarea manual. *Actualizează acum* descarcă pachetul portabil pentru sistemul tău, înlocuiește fișierele programului, păstrează dosarul `data` (fișierele programului care se schimbă sunt mai întâi copiate în `data/backup/v<versiunea veche>`) și repornește; trebuie să se poată scrie în dosarul programului. Dacă la pornire lipsesc fișiere ale programului (în `data` sau `doc`), o fereastră le enumeră și propune să le descarce din nou de pe GitHub. Ca să nu mai cauți versiuni noi, pune `controlla_aggiornamenti=0` în `config.ini`.
 
+Începând cu versiunea 1.8.6 actualizările sunt automate și silențioase: la pornire și apoi la fiecare 6 ore YA-MS verifică GitHub și, dacă există o versiune nouă, o descarcă, o instalează și repornește singur fără să întrebe nimic (doar bara de stare o spune). Și fișierele lipsă se descarcă din nou fără să întrebe. Fereastra descrisă mai jos apare doar apăsând "Actualizări" sau dacă scrii aggiornamenti_automatici=0 în fișierul data/config.ini.
+
 ## Compilare din surse (doar pentru dezvoltatori)
 
 Programele de instalare sunt produse de GitHub Actions (`.github/workflows/build.yml`) la fiecare actualizare a ramurii `release` (versiunea este luată din fișierul `VERSION`), care creează și release-ul `vX.Y.Z`. Local:

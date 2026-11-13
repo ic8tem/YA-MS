@@ -18,6 +18,8 @@ Les spots dont une station est **hors de la carte** sont écartés. Un spot **qu
 
 Afficher qui écoute : des triangles de la couleur de la bande marquent les stations qui, selon PSKReporter, reçoivent en MSK144, FSK441, PSK2K ou JTMS sur 28, 50, 70, 144 et 432 MHz dans la fenêtre de temps choisie. Un clic sur un triangle affiche indicatif, locator, modes et dernier spot. Le flux MQTT de l'onglet Collecte de données doit être connecté.
 
+Les spots de toutes les bandes sont affichés, y compris ceux des bandes non choisies dans Collecte de données (ceux-ci ne sont pas enregistrés). Les spots CW et ceux entre stations trop proches ne sont pas affichés s'ils sont rejetés dans Collecte de données.
+
 ## Comment le nuage est calculé
 
 Pour chaque spot, le programme construit le trajet entre les deux locators (même géométrie que pour votre propre trajet, voir [Géométrie et affaiblissement](Geometry-and-Path-Loss-fr)) et, à l'heure du spot, additionne point par point de la couche E les **contributions de réflexion spéculaire de chaque essaim actif**, pondérées par son ZHR – le même calcul que celui des **zones PREV** de la [voûte céleste](Sky-View-fr). Pour chaque côté du trajet qui réunit au moins 15 % du total, le nuage est une **ellipse** : centre à la moyenne pondérée des points, demi-axes égaux à 1,5 fois les racines carrées des valeurs propres de leur dispersion, grand axe selon le vecteur propre principal. Quand aucun essaim ne contribue (météores sporadiques seulement), les nuages sont les deux **hot spots** classiques, dessinés en tirets. Les équations complètes se trouvent au chapitre 10 du manuel de calcul.

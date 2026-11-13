@@ -18,6 +18,8 @@ Spoty ze stacją **poza mapą** są odrzucane. Spot, który **właśnie nadszed�
 
 Pokaż, kto nasłuchuje: trójkąty w kolorze pasma oznaczają stacje, które według PSKReportera odbierają MSK144, FSK441, PSK2K lub JTMS na 28, 50, 70, 144 i 432 MHz w wybranym oknie czasu. Kliknięcie trójkąta pokazuje znak, lokator, emisje i ostatni spot. Strumień MQTT z zakładki Zbieranie danych musi być połączony.
 
+Pokazywane są spoty ze wszystkich pasm, także z tych niewybranych w Zbieraniu danych (tych się nie zapisuje). Spoty CW i spoty między zbyt bliskimi stacjami nie są pokazywane, jeśli są odrzucane w Zbieraniu danych.
+
 ## Jak obliczana jest chmura
 
 Dla każdego spotu program tworzy trasę między dwoma lokatorami (ta sama geometria co dla twojej trasy, zob. [Geometria i tłumienie trasy](Geometry-and-Path-Loss-pl)) i dla momentu spotu sumuje, punkt po punkcie warstwy E, **przyczynki odbicia zwierciadlanego od każdego aktywnego roju**, ważone jego ZHR – to te same obliczenia co dla **stref PREV** na [kopule nieba](Sky-View-pl). Dla każdej strony trasy, na którą przypada co najmniej 15 % całości, chmura jest **elipsą**: środek w średniej ważonej punktów, półosie równe 1,5-krotności pierwiastków kwadratowych wartości własnych ich rozrzutu, oś wielka wzdłuż głównego wektora własnego. Gdy żaden rój nie wnosi wkładu (tylko meteory sporadyczne), chmurami są dwa klasyczne **hot spoty**, rysowane linią przerywaną. Pełne równania znajdują się w rozdziale 10 podręcznika obliczeń.

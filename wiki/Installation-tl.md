@@ -89,6 +89,8 @@ I-install ang bagong bersyon **sa ibabaw ng luma** (parehong installer, parehong
 
 **Mula sa 1.8.0, kusang nag-a-update ang YA-MS.** Sa pagsisimula, isang beses bawat araw, tinitingnan nito sa GitHub kung may bagong bersyon at iniaalok ito; ang button na **Mga update** sa ibabang bar ay tumitingin nang mano-mano. Dina-download ng *I-update ngayon* ang portable na package para sa iyong sistema, pinapalitan ang mga file ng programa, pinapanatili ang folder na `data` (kinokopya muna sa `data/backup/v<lumang bersyon>` ang mga nagbabagong file ng programa) at nagre-restart; dapat masulatan ang folder ng programa. Kung may nawawalang file ng programa sa pagsisimula (sa `data` o `doc`), inililista ito ng isang window at iniaalok na i-download ulit mula sa GitHub. Para hindi na maghanap ng mga bagong bersyon, ilagay ang `controlla_aggiornamenti=0` sa `config.ini`.
 
+Mula sa bersyon 1.8.6, awtomatiko at tahimik ang mga update: sa pagsisimula at pagkatapos ay bawat 6 na oras, tinitingnan ng YA-MS ang GitHub at, kung may bagong bersyon, dina-download ito, ini-install, at kusang nagre-restart nang walang tinatanong (ang status bar lang ang nagsasabi). Ang mga nawawalang file ay muling dina-download din nang hindi nagtatanong. Lumalabas lang ang window na inilarawan sa ibaba kapag pinindot ang "Mga update" o kung isusulat mo ang aggiornamenti_automatici=0 sa file na data/config.ini.
+
 ## Pag-build mula sa source (para sa mga developer lamang)
 
 Ginagawa ang mga installer ng GitHub Actions (`.github/workflows/build.yml`) sa bawat update ng branch na `release` (kinukuha ang bersyon mula sa file na `VERSION`), na lumilikha rin ng release na `vX.Y.Z`. Sa lokal:

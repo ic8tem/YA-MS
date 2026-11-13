@@ -13,7 +13,7 @@ A fülek felett három sor vezérlőelem található, amelyek minden fülre érv
 | Vezérlő | Mire szolgál |
 |---|---|
 | **Saját lokátor** / **magasság m** | Az Ön Maidenhead-lokátora (4, 6 vagy 8 karakter; a négyzet középpontját használja) és az állomás tengerszint feletti magassága. |
-| **DX-állomás** / **magasság m** | Annak az állomásnak a lokátora és magassága, amellyel összeköttetést szeretne. |
+| **DX-állomás** / **magasság m** | A térkép mellett jobbra van az ellenállomás kerete: írd be a hívójelet és nyomj Entert, a lokátor a CALL3 adatbázisból jön (mint a YAEC-ben és a LIVETROPOVHF-ben); alatta van a lokátor és a magasság. A hívójel a lokátor mezőbe is írható. |
 | **Sáv MHz** | 28, 50, 70, 144, 222 vagy 432 MHz: ebből számolja az antennanyereséget és a nyalábot, a fluxusbecslést és az összeköttetési mérleget. |
 | **Számítás** | Újraszámítja az útvonalat (az E-réteg mintavételezése: néhány másodperc). |
 | **Antenna az.** | Az antenna azimutja: mindig **a DX felé** (az útvonal azimutja). |

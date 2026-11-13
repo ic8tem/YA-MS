@@ -13,7 +13,7 @@ Por cima dos separadores há três filas de comandos, válidas para todos os sep
 | Comando | O que faz |
 |---|---|
 | **O meu locator** / **altitude m** | O seu locator Maidenhead (4, 6 ou 8 caracteres; é usado o centro do quadrado) e a altitude da estação acima do nível do mar. |
-| **Correspondente** / **altitude m** | Locator e altitude da estação que quer trabalhar. |
+| **Correspondente** / **altitude m** | Ao lado do mapa, à direita, está o quadro do correspondente: escreva o indicativo e prima Enter, o locator vem da base CALL3 (como no YAEC e no LIVETROPOVHF); por baixo estão o locator e a altitude. O indicativo também pode ser escrito na caixa do locator. |
 | **Banda MHz** | 28, 50, 70, 144, 222 ou 432 MHz: usada para o ganho e o lóbulo da antena, a estimativa do fluxo e o balanço da ligação. |
 | **Calcular** | Recalcula o percurso (amostragem da camada E: alguns segundos). |
 | **Antena az** | Azimute da sua antena: sempre **em direção ao DX** (azimute do percurso). |

@@ -13,7 +13,7 @@ Acima das abas há três linhas de comandos, válidas para todas as abas. O bot�
 | Comando | O que faz |
 |---|---|
 | **O meu locator** / **altitude m** | O seu locator Maidenhead (4, 6 ou 8 caracteres; é usado o centro do quadrado) e a altitude da estação acima do nível do mar. |
-| **Correspondente** / **altitude m** | Locator e altitude da estação que você quer trabalhar. |
+| **Correspondente** / **altitude m** | Ao lado do mapa, à direita, fica o quadro do correspondente: digite o indicativo e pressione Enter, o locator vem da base CALL3 (como no YAEC e no LIVETROPOVHF); abaixo ficam o locator e a altitude. O indicativo também pode ser digitado na caixa do locator. |
 | **Banda MHz** | 28, 50, 70, 144, 222 ou 432 MHz: usada para o ganho e o lóbulo da antena, a estimativa do fluxo e o balanço do enlace. |
 | **Calcular** | Recalcula o percurso (amostragem da camada E: alguns segundos). |
 | **Antena az** | Azimute da sua antena: sempre **em direção ao DX** (azimute do percurso). |

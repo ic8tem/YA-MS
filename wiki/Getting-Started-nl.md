@@ -13,7 +13,7 @@ Boven de tabbladen staan drie rijen bedieningselementen die voor alle tabbladen 
 | Element | Wat het doet |
 |---|---|
 | **Mijn locator** / **hoogte m** | Jouw Maidenhead-locator (4, 6 of 8 tekens; het midden van het vak wordt gebruikt) en de hoogte van het station boven zeeniveau. |
-| **Tegenstation** / **hoogte m** | Locator en hoogte van het station dat je wilt werken. |
+| **Tegenstation** / **hoogte m** | Naast de kaart, rechts, staat het vak van het tegenstation: typ de roepletters en druk op Enter, de locator komt uit de CALL3-database (zoals in YAEC en LIVETROPOVHF); daaronder staan locator en hoogte. De roepletters kunnen ook in het locatorvak. |
 | **Band MHz** | 28, 50, 70, 144, 222 of 432 MHz: gebruikt voor de antennewinst en -bundel, de fluxschatting en het linkbudget. |
 | **Bereken** | Berekent het traject opnieuw (bemonstering van de E-laag: enkele seconden). |
 | **Antenne az** | Azimut van je antenne: altijd **richting DX** (azimut van het traject). |

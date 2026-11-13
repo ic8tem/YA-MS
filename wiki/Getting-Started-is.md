@@ -13,7 +13,7 @@ Fyrir ofan flipana eru þrjár raðir stýringa sem gilda fyrir alla flipa. Hnap
 | Stýring | Hvað hún gerir |
 |---|---|
 | **Minn locator** / **hæð m** | Maidenhead-locator þinn (4, 6 eða 8 stafir; miðja reitsins er notuð) og hæð stöðvarinnar yfir sjávarmáli. |
-| **Mótstöð** / **hæð m** | Locator og hæð stöðvarinnar sem þú vilt ná sambandi við. |
+| **Mótstöð** / **hæð m** | Við hlið kortsins, til hægri, er reitur mótstöðvarinnar: skrifaðu kallmerkið og ýttu á Enter, reiturinn er sóttur í CALL3-gagnagrunninn (eins og í YAEC og LIVETROPOVHF); fyrir neðan eru reitur og hæð. Einnig má skrifa kallmerkið í reitarboxið. |
 | **Tíðnisvið MHz** | 28, 50, 70, 144, 222 eða 432 MHz: notað fyrir mögnun og geisla loftnetsins, mat á flæði og aflreikninginn. |
 | **Reikna** | Reiknar leiðina upp á nýtt (úrtak úr E-laginu: nokkrar sekúndur). |
 | **Loftnet az** | Áttarhorn loftnetsins þíns: alltaf **að DX** (áttarhorn leiðarinnar). |

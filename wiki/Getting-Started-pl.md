@@ -13,7 +13,7 @@ Nad zakładkami znajdują się trzy wiersze elementów sterujących, wspólne dl
 | Element | Działanie |
 |---|---|
 | **Mój lokator** / **wysokość m** | Twój lokator Maidenhead (4, 6 lub 8 znaków; używany jest środek kwadratu) i wysokość stacji nad poziomem morza. |
-| **Stacja DX** / **wysokość m** | Lokator i wysokość stacji, z którą chcesz przeprowadzić łączność. |
+| **Stacja DX** / **wysokość m** | Obok mapy, po prawej, jest ramka korespondenta: wpisz znak i naciśnij Enter, lokator jest brany z bazy CALL3 (jak w YAEC i LIVETROPOVHF); poniżej są lokator i wysokość. Znak można też wpisać w polu lokatora. |
 | **Pasmo MHz** | 28, 50, 70, 144, 222 lub 432 MHz: używane do zysku i listka anteny, szacowania strumienia i bilansu łącza. |
 | **Oblicz** | Przelicza trasę (próbkowanie warstwy E: kilka sekund). |
 | **Az anteny** | Azymut twojej anteny: zawsze **w stronę DX** (azymut trasy). |

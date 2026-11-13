@@ -13,7 +13,7 @@ Sa itaas ng mga tab ay may tatlong hanay ng mga kontrol, balido para sa lahat ng
 | Kontrol | Ano ang ginagawa |
 |---|---|
 | **Ang aking locator** / **taas m** | Ang iyong Maidenhead locator (4, 6 o 8 character; ginagamit ang gitna ng grid square) at ang taas ng istasyon mula sa antas ng dagat. |
-| **DX station** / **taas m** | Locator at taas ng istasyong gusto mong makontak. |
+| **DX station** / **taas m** | Sa tabi ng mapa, sa kanan, ang kahon ng kausap: i-type ang callsign at pindutin ang Enter, kinukuha ang locator mula sa database ng CALL3 (tulad ng sa YAEC at LIVETROPOVHF); sa ilalim ang locator at ang taas. Maaari ring i-type ang callsign sa kahon ng locator. |
 | **Banda MHz** | 28, 50, 70, 144, 222 o 432 MHz: ginagamit para sa gain at lobe ng antenna, sa tantiya ng flux at sa link budget. |
 | **Kalkulahin** | Muling kinakalkula ang landas (pag-sample ng E layer: ilang segundo). |
 | **Antenna az** | Azimuth ng iyong antenna: laging **patungo sa DX** (azimuth ng landas). |

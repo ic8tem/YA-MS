@@ -13,7 +13,7 @@ Bo die oortjies is daar drie rye kontroles, geldig vir al die oortjies. Die knop
 | Kontrole | Wat dit doen |
 |---|---|
 | **My lokator** / **hoogte m** | Jou Maidenhead-lokator (4, 6 of 8 karakters; die middel van die vierkant word gebruik) en die hoogte van die stasie bo seevlak. |
-| **DX-stasie** / **hoogte m** | Lokator en hoogte van die stasie wat jy wil werk. |
+| **DX-stasie** / **hoogte m** | Langs die kaart, regs, is die teenstasie se blok: tik die roepnaam en druk Enter, die lokator kom uit die CALL3-databasis (soos in YAEC en LIVETROPOVHF); daaronder is die lokator en die hoogte. Die roepnaam kan ook in die lokatorblok getik word. |
 | **Band MHz** | 28, 50, 70, 144, 222 of 432 MHz: gebruik vir die antennawins en -lob, die vloedskatting en die skakelbegroting. |
 | **Bereken** | Bereken die pad oor (monsterneming van die E-laag: 'n paar sekondes). |
 | **Antenna az** | Azimut van jou antenna: altyd **na die DX** (azimut van die pad). |

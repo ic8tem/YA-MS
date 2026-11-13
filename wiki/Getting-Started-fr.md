@@ -13,7 +13,7 @@ Au-dessus des onglets se trouvent trois rangées de commandes, valables pour tou
 | Commande | Rôle |
 |---|---|
 | **Mon locator** / **altitude m** | Votre locator Maidenhead (4, 6 ou 8 caractères ; c'est le centre du carré qui est utilisé) et l'altitude de la station au-dessus du niveau de la mer. |
-| **Correspondant** / **altitude m** | Locator et altitude de la station que vous voulez contacter. |
+| **Correspondant** / **altitude m** | À côté de la carte, à droite, se trouve le cadre du correspondant : saisissez l'indicatif et appuyez sur Entrée, le locator est pris dans la base CALL3 (comme dans YAEC et LIVETROPOVHF) ; en dessous figurent le locator et l'altitude. L'indicatif peut aussi être saisi dans la case du locator. |
 | **Bande MHz** | 28, 50, 70, 144, 222 ou 432 MHz : sert pour le gain et le lobe de l'antenne, l'estimation du flux et le bilan de liaison. |
 | **Calculer** | Recalcule le trajet (échantillonnage de la couche E : quelques secondes). |
 | **Antenne az** | Azimut de votre antenne : toujours **vers le correspondant** (azimut du trajet). |

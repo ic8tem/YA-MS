@@ -13,7 +13,7 @@ Beim ersten Start zeigt YA-MS eine Beispielstrecke (JN70CN → JO62QM auf 144 MH
 | Bedienelement | Was es tut |
 |---|---|
 | **Mein Locator** / **Höhe m** | Dein Maidenhead-Locator (4, 6 oder 8 Zeichen; verwendet wird die Feldmitte) und die Höhe der Station über dem Meeresspiegel. |
-| **Gegenstation** / **Höhe m** | Locator und Höhe der Station, die du arbeiten willst. |
+| **Gegenstation** / **Höhe m** | Neben der Karte, rechts, ist das Feld der Gegenstation: Rufzeichen eingeben und Enter drücken, der Locator kommt aus der CALL3-Datenbank (wie in YAEC und LIVETROPOVHF); darunter stehen Locator und Höhe. Das Rufzeichen kann auch ins Locator-Feld geschrieben werden. |
 | **Band MHz** | 28, 50, 70, 144, 222 oder 432 MHz: verwendet für Antennengewinn und Keule, die Flussschätzung und die Streckenbilanz. |
 | **Berechnen** | Berechnet die Strecke neu (Abtastung der E-Schicht: wenige Sekunden). |
 | **Antennen-Az.** | Azimut deiner Antenne: immer **Richtung DX** (Azimut der Strecke). |

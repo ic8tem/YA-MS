@@ -13,7 +13,7 @@ Over fanerne er der tre rækker betjeningselementer, som gælder for alle faner.
 | Element | Hvad det gør |
 |---|---|
 | **Min lokator** / **højde m** | Din Maidenhead-lokator (4, 6 eller 8 tegn; feltets centrum bruges) og stationens højde over havet. |
-| **Modstation** / **højde m** | Lokator og højde for den station, du vil køre. |
+| **Modstation** / **højde m** | Ved siden af kortet, til højre, er modstationens felt: skriv kaldesignalet og tryk Enter, locatoren hentes fra CALL3-databasen (som i YAEC og LIVETROPOVHF); nedenunder står locator og højde. Kaldesignalet kan også skrives i locator-feltet. |
 | **Bånd MHz** | 28, 50, 70, 144, 222 eller 432 MHz: bruges til antennens forstærkning og lap, fluxvurderingen og linkbudgettet. |
 | **Beregn** | Genberegner strækningen (sampling af E-laget: nogle sekunder). |
 | **Antenne az** | Din antennes azimut: altid **mod DX** (strækningens azimut). |

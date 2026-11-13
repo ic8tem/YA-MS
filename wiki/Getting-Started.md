@@ -13,7 +13,7 @@ Above the tabs there are three rows of controls, valid for all tabs. The **Contr
 | Control | What it does |
 |---|---|
 | **My locator** / **height m** | Your Maidenhead locator (4, 6 or 8 characters; the centre of the square is used) and the height of the station above sea level. |
-| **DX station** / **height m** | Locator and height of the station you want to work. |
+| **DX station** / **height m** | Next to the map, on the right, is the correspondent box: type the callsign and press Enter, the locator is taken from the CALL3 database (as in YAEC and LIVETROPOVHF); below are the locator and the height. The callsign can also be typed in the locator box. |
 | **Band MHz** | 28, 50, 70, 144, 222 or 432 MHz: used for the antenna gain and lobe, the flux estimate and the link budget. |
 | **Calculate** | Recomputes the path (sampling of the E layer: a few seconds). |
 | **Antenna az** | Azimuth of your antenna: always **towards the DX** (azimuth of the path). |

@@ -13,7 +13,7 @@ Ovanför flikarna finns tre rader med reglage som gäller för alla flikar. Knap
 | Reglage | Vad det gör |
 |---|---|
 | **Min lokator** / **höjd m** | Din Maidenhead-lokator (4, 6 eller 8 tecken; rutans mittpunkt används) och stationens höjd över havet. |
-| **Motstation** / **höjd m** | Lokator och höjd för den station du vill köra. |
+| **Motstation** / **höjd m** | Bredvid kartan, till höger, finns motstationens ruta: skriv anropssignalen och tryck Enter, lokatorn hämtas från CALL3-databasen (som i YAEC och LIVETROPOVHF); under står lokator och höjd. Anropssignalen kan också skrivas i lokatorrutan. |
 | **Band MHz** | 28, 50, 70, 144, 222 eller 432 MHz: används för antennens förstärkning och lob, flödesuppskattningen och länkbudgeten. |
 | **Beräkna** | Beräknar sträckan på nytt (sampling av E-skiktet: några sekunder). |
 | **Antenn az** | Din antenns azimut: alltid **mot DX** (sträckans azimut). |

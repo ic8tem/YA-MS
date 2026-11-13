@@ -13,7 +13,7 @@ Virs cilnēm ir trīs vadības rindas, kas attiecas uz visām cilnēm. Poga **Va
 | Vadīkla | Ko tā dara |
 |---|---|
 | **Mans lokators** / **augstums m** | Tavs Maidenhead lokators (4, 6 vai 8 rakstzīmes; tiek izmantots kvadrāta centrs) un stacijas augstums virs jūras līmeņa. |
-| **Korespondents** / **augstums m** | Tās stacijas lokators un augstums, ar kuru vēlies strādāt. |
+| **Korespondents** / **augstums m** | Blakus kartei, pa labi, ir korespondenta lodziņš: ieraksti izsaukuma signālu un nospied Enter, lokators tiek ņemts no CALL3 datubāzes (kā YAEC un LIVETROPOVHF); zemāk ir lokators un augstums. Izsaukuma signālu var rakstīt arī lokatora lodziņā. |
 | **Josla MHz** | 28, 50, 70, 144, 222 vai 432 MHz: izmanto antenas pastiprinājumam un ziedlapiņai, meteoru skaita novērtējumam un sakaru budžetam. |
 | **Aprēķināt** | Aprēķina trasi no jauna (E slāņa izlase: dažas sekundes). |
 | **Antenas az** | Tavas antenas azimuts: vienmēr **uz DX** (trases azimuts). |

@@ -13,7 +13,7 @@ Sekmelerin üstünde, tüm sekmeler için geçerli üç sıra kontrol vardır. S
 | Kontrol | Ne yapar |
 |---|---|
 | **Benim lokatörüm** / **yükseklik m** | Maidenhead lokatörünüz (4, 6 ya da 8 karakter; karenin merkezi kullanılır) ve istasyonun deniz seviyesinden yüksekliği. |
-| **Karşı istasyon** / **yükseklik m** | Çalışmak istediğiniz istasyonun lokatörü ve yüksekliği. |
+| **Karşı istasyon** / **yükseklik m** | Haritanın yanında, sağda karşı istasyon kutusu vardır: çağrı işaretini yaz ve Enter'a bas, lokatör CALL3 veritabanından alınır (YAEC ve LIVETROPOVHF'teki gibi); altında lokatör ve yükseklik bulunur. Çağrı işareti lokatör kutusuna da yazılabilir. |
 | **Bant MHz** | 28, 50, 70, 144, 222 ya da 432 MHz: anten kazancı ve lobu, akı tahmini ve bağlantı bütçesi için kullanılır. |
 | **Hesapla** | Yolu yeniden hesaplar (E katmanının örneklenmesi: birkaç saniye). |
 | **Anten az** | Anteninizin azimutu: her zaman **DX'e doğru** (yolun azimutu). |

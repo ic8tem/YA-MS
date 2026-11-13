@@ -13,7 +13,7 @@ Virš kortelių yra trys valdymo eilutės, galiojančios visoms kortelėms. Mygt
 | Valdiklis | Ką daro |
 |---|---|
 | **Mano lokatorius** / **aukštis m** | Jūsų Maidenhead lokatorius (4, 6 arba 8 simboliai; naudojamas kvadrato centras) ir stoties aukštis virš jūros lygio. |
-| **Korespondentas** / **aukštis m** | Stoties, su kuria norite užmegzti ryšį, lokatorius ir aukštis. |
+| **Korespondentas** / **aukštis m** | Šalia žemėlapio, dešinėje, yra korespondento langelis: įrašyk šaukinį ir paspausk Enter, lokatorius imamas iš CALL3 duomenų bazės (kaip YAEC ir LIVETROPOVHF); žemiau yra lokatorius ir aukštis. Šaukinį galima rašyti ir lokatoriaus langelyje. |
 | **Juosta MHz** | 28, 50, 70, 144, 222 arba 432 MHz: naudojama antenos stiprinimui ir lapeliui, srauto įverčiui ir ryšio biudžetui. |
 | **Skaičiuoti** | Iš naujo apskaičiuoja trasą (E sluoksnio diskretizavimas: kelios sekundės). |
 | **Antenos az** | Jūsų antenos azimutas: visada **DX kryptimi** (trasos azimutas). |

@@ -18,6 +18,8 @@ Gli spot con una stazione **fuori dalla mappa** vengono scartati. Uno spot **app
 
 Mostra chi è in ascolto: triangoli del colore della banda segnano le stazioni che, secondo PSKReporter, ricevono in MSK144, FSK441, PSK2K o JTMS su 28, 50, 70, 144 e 432 MHz nella finestra di tempo scelta. Un clic sul triangolo mostra nominativo, locator, modi e ultimo spot. Serve il flusso MQTT della linguetta Raccolta dati connesso.
 
+Sulla mappa si scrivono i nominativi di entrambe le stazioni di ogni spot, una volta sola per stazione. La proiezione si sceglie tra azimutale (centrata sulla tua stazione) e Mercatore. Il fumetto sulla colonna Nuvola ne spiega il significato.
+
 Si vedono gli spot di tutte le bande, anche di quelle non scelte nella Raccolta dati (quelli non si memorizzano). Gli spot CW e quelli tra stazioni troppo vicine non si vedono, se sono scartati nella Raccolta dati.
 
 ## Come si calcola la nuvola

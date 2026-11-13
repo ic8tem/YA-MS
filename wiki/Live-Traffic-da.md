@@ -18,6 +18,8 @@ Spots med en station **uden for kortet** kasseres. Et spot, der **lige er ankomm
 
 Vis hvem der lytter: trekanter i båndets farve markerer de stationer, der ifølge PSKReporter modtager MSK144, FSK441, PSK2K eller JTMS på 28, 50, 70, 144 og 432 MHz i det valgte tidsvindue. Et klik på en trekant viser kaldesignal, lokator, modes og sidste spot. MQTT-strømmen i fanen Dataindsamling skal være forbundet.
 
+Kortet viser kaldesignalerne for begge stationer i hvert spot, én gang pr. station. Projektionen kan være azimutal (centreret på din station) eller Mercator. Værktøjstippet på kolonnen Sky forklarer betydningen.
+
 Spots fra alle bånd vises, også fra bånd der ikke er valgt i Dataindsamling (de gemmes ikke). CW-spots og spots mellem stationer, der ligger for tæt, vises ikke, hvis de kasseres i Dataindsamling.
 
 ## Sådan beregnes skyen

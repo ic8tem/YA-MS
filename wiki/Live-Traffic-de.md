@@ -18,6 +18,8 @@ Spots mit einer Station **außerhalb der Karte** werden verworfen. Ein **gerade 
 
 Zeigen, wer hört: Dreiecke in der Bandfarbe markieren die Stationen, die laut PSKReporter im gewählten Zeitfenster MSK144, FSK441, PSK2K oder JTMS auf 28, 50, 70, 144 und 432 MHz empfangen. Ein Klick auf ein Dreieck zeigt Rufzeichen, Locator, Betriebsarten und letzten Spot. Der MQTT-Strom im Reiter Datensammlung muss verbunden sein.
 
+Die Karte zeigt die Rufzeichen beider Stationen jedes Spots, einmal pro Station. Die Projektion ist wählbar: azimutal (auf deine Station zentriert) oder Mercator. Der Tooltip auf der Spalte Wolke erklärt ihre Bedeutung.
+
 Es werden die Spots aller Bänder angezeigt, auch der in der Datensammlung nicht gewählten (diese werden nicht gespeichert). CW-Spots und Spots zwischen zu nahe liegenden Stationen werden nicht angezeigt, wenn sie in der Datensammlung verworfen werden.
 
 ## Wie die Wolke berechnet wird

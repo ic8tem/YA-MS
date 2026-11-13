@@ -18,6 +18,8 @@ Spotai, kurių viena stotis yra **už žemėlapio ribų**, atmetami. **Ką tik a
 
 Rodyti, kas klausosi: juostos spalvos trikampiai žymi stotis, kurios, pasak PSKReporter, pasirinktame laiko lange priima MSK144, FSK441, PSK2K ar JTMS 28, 50, 70, 144 ir 432 MHz juostose. Spustelėjus trikampį rodomas šaukinys, lokatorius, režimai ir paskutinis spotas. Kortelės Duomenų rinkimas MQTT srautas turi būti prijungtas.
 
+Žemėlapyje rašomi abiejų kiekvieno spoto stočių šaukiniai, po vieną kartą kiekvienai stočiai. Projekciją galima pasirinkti: azimutinė (centre tavo stotis) arba Merkatoriaus. Stulpelio Debesis patarimas paaiškina jo reikšmę.
+
 Rodomi visų juostų spotai, taip pat ir juostų, nepasirinktų Duomenų rinkime (jie neišsaugomi). CW spotai ir spotai tarp per arti esančių stočių nerodomi, jei Duomenų rinkime jie atmetami.
 
 ## Kaip skaičiuojamas debesis

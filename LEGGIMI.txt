@@ -40,6 +40,16 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.7
+  - Corrispondente in una riga sua, sotto la propria stazione, con il nominativo: premendo Invio il locator si prende
+    dall'archivio CALL3 (come in YAEC e LIVETROPOVHF); il nominativo si puo' scrivere anche nella casella del locator.
+  - Archivio CALL3 con le regole di LIVETROPOVHF: aggiornamento da MMMonVHF (adesso o da solo ogni 7 giorni, almeno
+    100.000 righe valide, il precedente in data/call3.bak), voci a mano (CALL3-MANUALE.TXT), file aggiunti
+    (CALL3-AGGIUNTE), correzioni dal cluster (CALL3-CLUSTER.TXT), locatori imparati dal vivo (LOC6.TXT).
+  - Traffico in diretta: nominativi di entrambe le stazioni sulla mappa (piu' piccoli), scelta della proiezione
+    (azimutale o Mercatore), fumetto che spiega la colonna Nuvola.
+  - Calcolo dell'efficienza: barra rossa sul grafico all'orario del calcolo.
+
 NOVITA' DELLA 1.8.6
   - Aggiornamenti automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'e' una versione
     nuova, la scarica, la installa e si riavvia da solo senza chiedere (avviso solo nella barra di stato). Anche i file

@@ -24,7 +24,7 @@ def T(t):
     return TRD[t]
 
 TITLE = "Manuale d'uso di YA-MS"
-SUB = "Versione 1.8.6 - a cura di Costantino IC8TEM - novembre 2026"
+SUB = "Versione 1.8.7 - a cura di Costantino IC8TEM - novembre 2026"
 
 B = []
 h1 = lambda t: B.append(("h1", T(t))); h2 = lambda t: B.append(("h2", T(t))); p = lambda t: B.append(("p", T(t)))
@@ -59,7 +59,7 @@ p("All'avvio compare per pochi secondi la schermata con le Perseidi sopra il VLT
 h2("2.3 La cartella data")
 p("Tutte le impostazioni e tutti i dati stanno in un'unica cartella data accanto al programma: niente AppData, niente cartelle di sistema. Per spostare YA-MS su un altro computer basta copiare la cartella del programma con la sua cartella data. Il contenuto della cartella è descritto nel capitolo 13.")
 h2("2.4 Aggiornamenti automatici")
-p("Dalla versione 1.8.6 gli aggiornamenti sono automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'è una versione nuova, la scarica, la installa e si riavvia da solo senza chiedere nulla (lo dice solo la barra di stato). Anche i file mancanti si riscaricano senza chiedere. La finestra descritta qui sotto compare solo premendo \"Aggiornamenti\" oppure se scrivi aggiornamenti_automatici=0 nel file data/config.ini.")
+p("Dalla versione 1.8.7 gli aggiornamenti sono automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'è una versione nuova, la scarica, la installa e si riavvia da solo senza chiedere nulla (lo dice solo la barra di stato). Anche i file mancanti si riscaricano senza chiedere. La finestra descritta qui sotto compare solo premendo \"Aggiornamenti\" oppure se scrivi aggiornamenti_automatici=0 nel file data/config.ini.")
 p("Dalla versione 1.8.0 YA-MS controlla da solo su GitHub, all'avvio e al massimo una volta al giorno, se è uscita una versione nuova. Se c'è, compare la finestra \"Aggiornamento disponibile\" con le novità e tre pulsanti:")
 li("Aggiorna adesso: scarica il pacchetto adatto al tuo sistema, sostituisce i file del programma, tiene la cartella data e riavvia YA-MS. I file del programma nella cartella data che la nuova versione cambia vengono prima copiati in data/backup/v<versione vecchia>; i tuoi file (impostazioni, archivi, spot, ADIF) non vengono toccati.")
 li("Più tardi: chiude la finestra; il controllo si ripete il giorno dopo.")
@@ -94,6 +94,7 @@ h1("4. Impostare la stazione e la tratta")
 h2("4.1 Riga 1: stazioni e banda")
 li("Il mio locator e quota m: il tuo locator Maidenhead (4, 6 o 8 caratteri; si usa il centro del quadrato) e la quota della stazione sul livello del mare.")
 li("Corrispondente e quota m: locator e quota della stazione da collegare.")
+li("Il corrispondente ha una riga sua, sotto la tua stazione: scrivi il nominativo e premi Invio, il locator si prende dall'archivio CALL3 (come in YAEC e LIVETROPOVHF). Il nominativo si può scrivere anche nella casella del locator.")
 li("Banda MHz: 28, 50, 70, 144, 222 o 432 MHz. Serve per il guadagno e il lobo dell'antenna, per l'attenuazione e il bilancio, per la stima del flusso.")
 li("Calcola: ricalcola la tratta (campionamento dello strato E, meno di un secondo).")
 li("Antenna az: azimut dell'antenna, sempre verso il corrispondente.")
@@ -178,6 +179,7 @@ p("Le ore migliori e il lato sono le informazioni più solide: cambiano poco con
 tag("NOTA", "Usa il programma per scegliere l'ora e il lato verso cui girare l'antenna; non leggere le percentuali come probabilità di riuscita del collegamento.")
 h2("7.4 Il grafico")
 p("Per un massimo di cinque sciami: l'efficienza come linea continua e la formula di DH9GCD come linea punteggiata dello stesso colore; l'indice della tratta come barre sulla scala di destra. Le ore locali sono scritte sotto quelle UTC.")
+p("Sul grafico una barra rossa verticale segna l'orario del calcolo (data e cursore delle ore della riga 3).")
 h2("7.5 La tabella delle 24 ore")
 li("Una riga per ogni sciame attivo quel giorno, 24 colonne per le ore UTC.")
 li("63A: efficienza 63 %, la maggior parte delle riflessioni dal lato A; 41B: lato B; cella vuota: sotto l'1 %; ↑: radiante sopra 70° (troppo alto); colore più caldo = efficienza più alta.")
@@ -210,6 +212,7 @@ li("Raggio della mappa: 600-3500 km. Spot da mostrare: ultimi 15 o 30 minuti, ul
 li("Un clic su una tratta o su una riga della tabella evidenzia il collegamento e mostra il centro della nuvola, la sua quota e le sue dimensioni.")
 li("Mostra chi è in ascolto: triangoli del colore della banda segnano le stazioni che, secondo PSKReporter, ricevono in MSK144, FSK441, PSK2K o JTMS su 28, 50, 70, 144 e 432 MHz nella finestra di tempo scelta. Un clic sul triangolo mostra nominativo, locator, modi e ultimo spot. Serve il flusso MQTT della linguetta Raccolta dati connesso.")
 li("Si vedono gli spot di tutte le bande, anche di quelle non scelte nella Raccolta dati (quelli non si memorizzano). Gli spot CW e quelli tra stazioni troppo vicine non si vedono, se sono scartati nella Raccolta dati.")
+li("Sulla mappa si scrivono i nominativi di entrambe le stazioni di ogni spot, una volta sola per stazione. La proiezione si sceglie tra azimutale (centrata sulla tua stazione) e Mercatore. Il fumetto sulla colonna Nuvola ne spiega il significato.")
 h2("9.2 Flusso radar")
 p("I conteggi orari delle meteore e le quote delle scie del radar SKiYMET di Collm (36,2 MHz) e l'ultima immagine del radar di Sodankylä (36,9 MHz).")
 li("Scarica adesso e Aggiornamento automatico di tutte le fonti ogni 5 minuti: ogni fonte viene riscaricata solo se è cambiata.")
@@ -229,6 +232,7 @@ li("Il filtro accetta gli spot nelle frequenze tipiche del meteor scatter (50190
 li("Gli spot CW si scartano subito (CW o WPM nel commento, oppure 28000-28070 kHz): non compaiono nella console e non si memorizzano, salvo quelli segnati <MS>. La casella si può spegnere.")
 li("Gli spot tra stazioni più vicine di 500 km si scartano subito, perché a quella distanza il collegamento è diretto o troposferico e non meteor scatter: non compaiono nella console e non si memorizzano. Se manca un locator lo spot resta. La distanza si cambia sotto la casella.")
 li("I locator mancanti vengono presi dall'archivio CALL3; gli spot accettati vanno in data/spot_ms, un file al giorno, e nella mappa del Traffico in diretta.")
+li("Archivio CALL3 con le regole di LIVETROPOVHF. «Aggiorna adesso» scarica il CALL3.TXT da MMMonVHF (almeno 100.000 righe valide, il precedente resta in data/call3.bak); con «Aggiorna da solo ogni 7 giorni» lo fa all'avvio. Sopra il file valgono, in ordine: voci a mano (data/CALL3-MANUALE.TXT), correzioni dal cluster (il locatore a 6 caratteri che chi spotta dichiara di sé), file aggiunti (data/CALL3-AGGIUNTE), poi CALL3.TXT e i locatori a 6 caratteri imparati dal vivo (data/LOC6.TXT). Un locatore ricevuto di 4 caratteri, o che finisce con LL o MM, si sostituisce con quello a 6 caratteri del database; i portatili (con la barra) solo con la voce esatta.")
 
 # ======================================================================
 h1("10. Sciami in diretta e catalogo degli sciami")

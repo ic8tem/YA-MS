@@ -18,6 +18,8 @@ Spots with a station **outside the map** are discarded. A spot that has **just a
 
 Show who is listening: triangles in the band colour mark the stations that, according to PSKReporter, are receiving in MSK144, FSK441, PSK2K or JTMS on 28, 50, 70, 144 and 432 MHz in the chosen time window. A click on a triangle shows call, locator, modes and last spot. The MQTT feed of the Data collection tab must be connected.
 
+The map shows the callsigns of both stations of each spot, once per station. The projection can be azimuthal (centred on your station) or Mercator. The tooltip on the Cloud column explains its meaning.
+
 Spots of all bands are shown, including those not chosen in Data collection (these are not stored). CW spots and spots between stations that are too close are not shown, if they are discarded in Data collection.
 
 ## How the cloud is computed

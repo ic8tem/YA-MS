@@ -18,6 +18,8 @@ Spoty ze stacją **poza mapą** są odrzucane. Spot, który **właśnie nadszed�
 
 Pokaż, kto nasłuchuje: trójkąty w kolorze pasma oznaczają stacje, które według PSKReportera odbierają MSK144, FSK441, PSK2K lub JTMS na 28, 50, 70, 144 i 432 MHz w wybranym oknie czasu. Kliknięcie trójkąta pokazuje znak, lokator, emisje i ostatni spot. Strumień MQTT z zakładki Zbieranie danych musi być połączony.
 
+Na mapie pisane są znaki obu stacji każdego spotu, raz dla każdej stacji. Odwzorowanie można wybrać: azymutalne (w środku twoja stacja) lub Mercatora. Podpowiedź na kolumnie Chmura wyjaśnia jej znaczenie.
+
 Pokazywane są spoty ze wszystkich pasm, także z tych niewybranych w Zbieraniu danych (tych się nie zapisuje). Spoty CW i spoty między zbyt bliskimi stacjami nie są pokazywane, jeśli są odrzucane w Zbieraniu danych.
 
 ## Jak obliczana jest chmura

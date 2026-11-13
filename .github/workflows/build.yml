@@ -306,6 +306,7 @@ jobs:
             YA-MS - previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter.
             A cura di Costantino IC8TEM.
 
+            Novità della 1.8.7: corrispondente con nominativo dal CALL3; CALL3 con le regole di LIVETROPOVHF (MMMonVHF ogni 7 giorni, voci a mano, file aggiunti, correzioni dal cluster, LOC6); traffico in diretta con nominativi su entrambi i capi, proiezione di Mercatore e fumetto della Nuvola; barra rossa dell'orario di calcolo.
             Novità della 1.8.6: aggiornamenti automatici e silenziosi (all'avvio e ogni 6 ore); Traffico in diretta con gli spot di tutte le bande; spot CW ed entro 500 km nascosti anche se già in archivio.
             Novità della 1.8.5: spot tra stazioni più vicine di 500 km scartati nella Raccolta dati (non compaiono nella console e non si memorizzano).
             Novità della 1.8.4: spot CW scartati nella Raccolta dati, stazioni in ascolto in MSK144/FSK441/PSK2K/JTMS (PSKReporter MQTT) sulla mappa del Traffico in diretta, 28 e 70 MHz nei filtri di partenza.

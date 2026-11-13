@@ -18,6 +18,8 @@ Spoty se stanicí **mimo mapu** se zahazují. Spot, který **právě přišel** 
 
 Ukázat, kdo poslouchá: trojúhelníky v barvě pásma označují stanice, které podle PSKReporteru ve zvoleném časovém okně přijímají MSK144, FSK441, PSK2K nebo JTMS na 28, 50, 70, 144 a 432 MHz. Klepnutí na trojúhelník ukáže značku, lokátor, druhy provozu a poslední spot. Proud MQTT na kartě Sběr dat musí být připojen.
 
+Na mapě se píší značky obou stanic každého spotu, jednou pro každou stanici. Projekci lze zvolit: azimutální (uprostřed tvoje stanice) nebo Mercatorova. Bublina na sloupci Mrak vysvětluje jeho význam.
+
 Zobrazují se spoty všech pásem, i těch, která nejsou vybrána ve Sběru dat (ty se neukládají). Spoty CW a spoty mezi příliš blízkými stanicemi se nezobrazují, pokud se ve Sběru dat zahazují.
 
 ## Jak se počítá oblak

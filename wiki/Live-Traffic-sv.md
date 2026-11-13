@@ -18,6 +18,8 @@ Spots med en station **utanför kartan** kasseras. En spot som **just har kommit
 
 Visa vem som lyssnar: trianglar i bandets färg markerar stationer som enligt PSKReporter tar emot MSK144, FSK441, PSK2K eller JTMS på 28, 50, 70, 144 och 432 MHz i det valda tidsfönstret. Ett klick på en triangel visar anropssignal, lokator, moder och senaste spot. MQTT-flödet i fliken Datainsamling måste vara anslutet.
 
+Kartan visar anropssignalerna för båda stationerna i varje spott, en gång per station. Projektionen kan vara azimutal (centrerad på din station) eller Mercator. Verktygstipset på kolumnen Moln förklarar vad den betyder.
+
 Spottar från alla band visas, även från band som inte valts i Datainsamling (de sparas inte). CW-spottar och spottar mellan för närliggande stationer visas inte, om de kastas i Datainsamling.
 
 ## Hur molnet beräknas

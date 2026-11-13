@@ -18,6 +18,8 @@ Spoturile cu o stație **în afara hărții** sunt eliminate. Un spot **abia sos
 
 Arată cine ascultă: triunghiuri în culoarea benzii marchează stațiile care, după PSKReporter, recepționează MSK144, FSK441, PSK2K sau JTMS pe 28, 50, 70, 144 și 432 MHz în fereastra de timp aleasă. Un clic pe un triunghi arată indicativul, locatorul, modurile și ultimul spot. Fluxul MQTT din fila Colectare date trebuie să fie conectat.
 
+Harta scrie indicativele ambelor stații ale fiecărui spot, o singură dată pe stație. Proiecția se alege între azimutală (centrată pe stația ta) și Mercator. Indiciul de pe coloana Nor îi explică semnificația.
+
 Se văd spoturile tuturor benzilor, inclusiv ale celor nealese în Colectarea datelor (acestea nu se memorează). Spoturile CW și cele între stații prea apropiate nu se văd, dacă sunt eliminate în Colectarea datelor.
 
 ## Cum se calculează norul

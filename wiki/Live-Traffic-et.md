@@ -18,6 +18,8 @@ Spotid, mille üks jaam on **kaardist väljas**, jäetakse kõrvale. **Äsja saa
 
 Näita, kes kuulab: riba värvi kolmnurgad märgivad jaamu, mis PSKReporteri järgi võtavad valitud ajaaknas vastu MSK144, FSK441, PSK2K või JTMS režiimis 28, 50, 70, 144 ja 432 MHz sagedusel. Klõps kolmnurgal näitab kutsungit, lokaatorit, režiime ja viimast spotti. Vahekaardi Andmete kogumine MQTT-voog peab olema ühendatud.
 
+Kaardil kirjutatakse iga spoti mõlema jaama kutsung, üks kord jaama kohta. Projektsioon on valitav: asimuutne (keskel sinu jaam) või Mercator. Veeru Pilv kohtspikker selgitab selle tähendust.
+
 Näidatakse kõigi sagedusalade spotte, ka nende, mida Andmekogumises ei ole valitud (neid ei salvestata). CW-spotte ja liiga lähedaste jaamade vahelisi spotte ei näidata, kui need Andmekogumises ära visatakse.
 
 ## Kuidas pilve arvutatakse

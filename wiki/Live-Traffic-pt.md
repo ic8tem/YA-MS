@@ -18,6 +18,8 @@ Os spots com uma estação **fora do mapa** são descartados. Um spot **acabado 
 
 Mostrar quem está à escuta: triângulos da cor da banda marcam as estações que, segundo o PSKReporter, recebem em MSK144, FSK441, PSK2K ou JTMS em 28, 50, 70, 144 e 432 MHz na janela de tempo escolhida. Um clique num triângulo mostra indicativo, locator, modos e último spot. O fluxo MQTT do separador Recolha de dados tem de estar ligado.
 
+O mapa mostra os indicativos das duas estações de cada spot, uma só vez por estação. A projeção pode ser azimutal (centrada na sua estação) ou Mercator. A dica da coluna Nuvem explica o seu significado.
+
 São mostrados os spots de todas as bandas, também das não escolhidas na Recolha de dados (estes não são guardados). Os spots CW e os entre estações demasiado próximas não são mostrados, se forem descartados na Recolha de dados.
 
 ## Como é calculada a nuvem

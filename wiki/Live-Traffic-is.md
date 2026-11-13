@@ -18,6 +18,8 @@ Spotum þar sem stöð er **utan kortsins** er hent. Spot sem **var að berast**
 
 Sýna hverjir hlusta: þríhyrningar í lit bandsins merkja stöðvar sem samkvæmt PSKReporter taka á móti MSK144, FSK441, PSK2K eða JTMS á 28, 50, 70, 144 og 432 MHz í völdum tímaglugga. Smellur á þríhyrning sýnir kallmerki, staðsetningu, hætti og síðasta spot. MQTT-straumurinn í flipanum Gagnasöfnun verður að vera tengdur.
 
+Kortið sýnir kallmerki beggja stöðva hvers spotts, einu sinni á hverja stöð. Vörpunin getur verið jafnfjarlæg (miðuð á þína stöð) eða Mercator. Ábendingin á dálknum Ský útskýrir merkingu hans.
+
 Spott allra banda eru sýnd, líka banda sem ekki eru valin í Gagnasöfnun (þau eru ekki vistuð). CW-spott og spott milli stöðva sem eru of nálægt eru ekki sýnd ef þeim er hent í Gagnasöfnun.
 
 ## Hvernig skýið er reiknað

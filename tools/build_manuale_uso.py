@@ -24,7 +24,7 @@ def T(t):
     return TRD[t]
 
 TITLE = "Manuale d'uso di YA-MS"
-SUB = "Versione 1.8.4 - a cura di Costantino IC8TEM - novembre 2026"
+SUB = "Versione 1.8.5 - a cura di Costantino IC8TEM - novembre 2026"
 
 B = []
 h1 = lambda t: B.append(("h1", T(t))); h2 = lambda t: B.append(("h2", T(t))); p = lambda t: B.append(("p", T(t)))
@@ -225,6 +225,7 @@ p("Raccoglie gli spot meteor scatter da tre flussi telnet (DX cluster, RBN, DM4X
 li("Scrivi in alto il tuo nominativo per il login. Ogni flusso ha host, porta, comandi dopo il login, Riconnetti, Connetti all'avvio e una console.")
 li("Il filtro accetta gli spot nelle frequenze tipiche del meteor scatter (50190-50300, 70100-70400, 144290-144399 kHz) o con un modo MS (MSK144, FSK441, PSK2K, JTMS, JT6M, <MS>), e scarta quelli che dichiarano un'altra propagazione. Finestre e parole si possono modificare; ognuna ha il suo contatore.")
 li("Gli spot CW si scartano subito (CW o WPM nel commento, oppure 28000-28070 kHz): non compaiono nella console e non si memorizzano, salvo quelli segnati <MS>. La casella si può spegnere.")
+li("Gli spot tra stazioni più vicine di 500 km si scartano subito, perché a quella distanza il collegamento è diretto o troposferico e non meteor scatter: non compaiono nella console e non si memorizzano. Se manca un locator lo spot resta. La distanza si cambia sotto la casella.")
 li("I locator mancanti vengono presi dall'archivio CALL3; gli spot accettati vanno in data/spot_ms, un file al giorno, e nella mappa del Traffico in diretta.")
 
 # ======================================================================

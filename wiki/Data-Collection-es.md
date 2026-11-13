@@ -24,6 +24,7 @@ Cada flujo tiene host, puerto, comandos enviados tras el login, *Reconectar*, *C
 
 - **Filtro local opcional:** las líneas del cluster por debajo de **27990,0 kHz** se descartan enseguida (no se muestran ni se guardan).
 - Los spots CW se descartan enseguida (CW o WPM en el comentario, o 28000-28070 kHz): no aparecen en la consola y no se guardan, salvo los marcados <MS>. La casilla se puede desactivar.
+- Los spots entre estaciones a menos de 500 km se descartan de inmediato, porque a esa distancia el enlace es directo o troposférico y no meteor scatter: no aparecen en la consola y no se guardan. Si falta un locator, el spot se conserva. La distancia se cambia debajo de la casilla.
 - **1.er criterio – frecuencias MS típicas:** 50190–50300, 70100–70400, 144290–144399 kHz. Un spot en estas ventanas se acepta aunque no lleve el nombre del modo, salvo que el comentario declare otra propagación: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Ventanas y etiquetas se pueden editar.
 - **2.º criterio – modos MS:** fuera de las ventanas, o con una de esas etiquetas, un spot solo se conserva si contiene **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (modos digitales usados solo en MS) o **\<MS\>**, en mayúsculas, minúsculas o mezcladas. Las palabras se pueden desactivar, añadir y quitar; cada una tiene su contador.
 - **Bandas** 28, 50, 70, 144, 222, 432 MHz; **prueba del filtro** sobre una línea pegada; **contadores**.

@@ -24,6 +24,7 @@ Katrai plūsmai ir resursdators, ports, komandas, ko sūta pēc pieteikšanās, 
 
 - **Neobligāts lokālais filtrs:** klasteru rindas zem **27990,0 kHz** tiek atmestas uzreiz (netiek rādītas, netiek saglabātas).
 - CW spoti tiek uzreiz izmesti (CW vai WPM komentārā vai 28000-28070 kHz): tie neparādās konsolē un netiek saglabāti, ja vien nav atzīmēti ar <MS>. Rūtiņu var izslēgt.
+- Spoti starp stacijām, kas ir tuvāk par 500 km, tiek uzreiz atmesti, jo šādā attālumā sakari ir tieši vai troposfēriski, nevis meteor scatter: tie neparādās konsolē un netiek saglabāti. Ja trūkst lokatora, spots paliek. Attālumu var mainīt zem rūtiņas.
 - **1. kritērijs – tipiskās MS frekvences:** 50190–50300, 70100–70400, 144290–144399 kHz. Spots šajos logos tiek pieņemts arī bez modas nosaukuma, ja vien komentārā nav norādīta cita izplatīšanās: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Logus un birkas var rediģēt.
 - **2. kritērijs – MS modas:** ārpus logiem vai ar kādu no šīm birkām spots tiek saglabāts tikai tad, ja tajā ir **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (digitālās modas, ko izmanto tikai MS) vai **\<MS\>**, ar lielajiem, mazajiem vai jauktiem burtiem. Vārdus var izslēgt, pievienot un dzēst; katram ir savs skaitītājs.
 - **Joslas** 28, 50, 70, 144, 222, 432 MHz; **filtra pārbaude** ar ielīmētu rindu; **skaitītāji**.

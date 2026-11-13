@@ -24,6 +24,7 @@ Each stream has host, port, commands sent after the login, *Reconnect*, *Connect
 
 - **Optional local filter:** cluster lines below **27990.0 kHz** are discarded at once (not shown, not stored).
 - CW spots are discarded straight away (CW or WPM in the comment, or 28000-28070 kHz): they do not appear in the console and are not stored, unless they are marked <MS>. The box can be switched off.
+- Spots between stations closer than 500 km are discarded straight away, because at that distance the path is direct or tropospheric, not meteor scatter: they do not appear in the console and are not stored. If a locator is missing the spot is kept. The distance can be changed below the box.
 - **1st criterion – typical MS frequencies:** 50190–50300, 70100–70400, 144290–144399 kHz. A spot in these windows is accepted even without the mode name, unless the comment declares another propagation: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Windows and tags can be edited.
 - **2nd criterion – MS modes:** outside the windows, or with one of those tags, a spot is kept only if it contains **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (digital modes used only for MS) or **\<MS\>**, in upper, lower or mixed case. Words can be switched off, added and removed; each has its counter.
 - **Bands** 28, 50, 70, 144, 222, 432 MHz; **filter test** on a pasted line; **counters**.

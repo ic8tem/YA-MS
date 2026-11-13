@@ -24,6 +24,7 @@ Hver strøm har vært, port, kommandoer der sendes efter login, *Genforbind*, *F
 
 - **Valgfrit lokalt filter:** cluster-linjer under **27990,0 kHz** kasseres med det samme (vises ikke, gemmes ikke).
 - CW-spots kasseres med det samme (CW eller WPM i kommentaren, eller 28000-28070 kHz): de vises ikke i konsollen og gemmes ikke, undtagen dem der er mærket <MS>. Feltet kan slås fra.
+- Spots mellem stationer tættere end 500 km kasseres straks, fordi forbindelsen på den afstand er direkte eller troposfærisk og ikke meteor scatter: de vises ikke i konsollen og gemmes ikke. Mangler en locator, beholdes spottet. Afstanden ændres under feltet.
 - **1. kriterium – typiske MS-frekvenser:** 50190–50300, 70100–70400, 144290–144399 kHz. Et spot i disse vinduer accepteres også uden modenavnet, medmindre kommentaren angiver en anden udbredelse: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Vinduer og tags kan redigeres.
 - **2. kriterium – MS-modes:** uden for vinduerne, eller med et af disse tags, beholdes et spot kun, hvis det indeholder **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (digitale modes, der kun bruges til MS) eller **\<MS\>**, med store, små eller blandede bogstaver. Ord kan slås fra, tilføjes og fjernes; hvert har sin tæller.
 - **Bånd** 28, 50, 70, 144, 222, 432 MHz; **test af filteret** på en indsat linje; **tællere**.

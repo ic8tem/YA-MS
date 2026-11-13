@@ -24,6 +24,7 @@ Hver straumur hefur hýsil, gátt, skipanir sem sendar eru eftir innskráningu, 
 
 - **Valfrjáls staðbundin sía:** línum frá klösum undir **27990,0 kHz** er hent strax (ekki sýndar, ekki geymdar).
 - CW-spotum er hent strax (CW eða WPM í athugasemd, eða 28000-28070 kHz): þau birtast ekki í skjáborðinu og eru ekki vistuð, nema þau séu merkt <MS>. Hægt er að slökkva á reitnum.
+- Spottum milli stöðva sem eru nær en 500 km er hent strax, því á þeirri fjarlægð er sambandið beint eða um veðrahvolf en ekki meteor scatter: þau birtast ekki í stjórnborðinu og eru ekki vistuð. Ef staðsetningarreit vantar heldur spottið sér. Fjarlægðinni er breytt undir reitnum.
 - **1. viðmið – dæmigerðar MS-tíðnir:** 50190–50300, 70100–70400, 144290–144399 kHz. Spot í þessum gluggum er samþykkt jafnvel án heitis háttarins, nema athugasemdin tilgreini annars konar útbreiðslu: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Hægt er að breyta gluggum og merkjum.
 - **2. viðmið – MS-hættir:** utan glugganna, eða með einu af þessum merkjum, er spot aðeins haldið ef það inniheldur **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (stafrænir hættir sem aðeins eru notaðir fyrir MS) eða **\<MS\>**, með hástöfum, lágstöfum eða blandað. Hægt er að slökkva á orðum, bæta þeim við og fjarlægja þau; hvert hefur sinn teljara.
 - **Tíðnisvið** 28, 50, 70, 144, 222, 432 MHz; **prófun síunnar** á línu sem límd er inn; **teljarar**.

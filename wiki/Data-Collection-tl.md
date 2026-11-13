@@ -24,6 +24,7 @@ Bawat stream ay may host, port, mga command na ipinapadala pagkatapos ng login, 
 
 - **Opsiyonal na lokal na filter:** agad na itinatapon ang mga linya ng cluster na mas mababa sa **27990.0 kHz** (hindi ipinapakita, hindi iniimbak).
 - Agad na itinatapon ang mga spot na CW (CW o WPM sa komento, o 28000-28070 kHz): hindi lumalabas sa console at hindi sine-save, maliban kung may markang <MS>. Maaaring patayin ang kahon.
+- Ang mga spot sa pagitan ng mga istasyong mas malapit sa 500 km ay agad na itinatapon, dahil sa layong iyon ang ugnayan ay direkta o troposperiko at hindi meteor scatter: hindi lumalabas sa console at hindi iniimbak. Kung kulang ang locator, nananatili ang spot. Ang layo ay napapalitan sa ilalim ng kahon.
 - **Unang pamantayan – karaniwang frequency ng MS:** 50190–50300, 70100–70400, 144290–144399 kHz. Tinatanggap ang spot sa mga window na ito kahit walang pangalan ng mode, maliban kung nagdedeklara ang komento ng ibang propagasyon: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Maaaring i-edit ang mga window at tag.
 - **Ikalawang pamantayan – mga mode ng MS:** sa labas ng mga window, o kung may isa sa mga tag na iyon, pinapanatili lamang ang spot kung naglalaman ito ng **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (mga digital mode na ginagamit lamang para sa MS) o **\<MS\>**, sa malaki, maliit o halong titik. Maaaring i-off, idagdag at alisin ang mga salita; may sariling counter ang bawat isa.
 - **Mga banda** 28, 50, 70, 144, 222, 432 MHz; **subok ng filter** sa isang idinikit na linya; **mga counter**.

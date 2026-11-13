@@ -24,6 +24,7 @@ Setiap aliran memiliki host, port, perintah yang dikirim setelah login, *Sambung
 
 - **Filter lokal opsional:** baris cluster di bawah **27990,0 kHz** langsung dibuang (tidak ditampilkan, tidak disimpan).
 - Spot CW langsung dibuang (CW atau WPM di komentar, atau 28000-28070 kHz): tidak muncul di konsol dan tidak disimpan, kecuali bertanda <MS>. Kotak ini dapat dimatikan.
+- Spot antarstasiun yang berjarak kurang dari 500 km langsung dibuang, karena pada jarak itu hubungannya langsung atau troposferik, bukan meteor scatter: tidak muncul di konsol dan tidak disimpan. Jika lokator tidak ada, spot tetap disimpan. Jaraknya dapat diubah di bawah kotak centang.
 - **Kriteria ke-1 – frekuensi khas MS:** 50190–50300, 70100–70400, 144290–144399 kHz. Spot dalam jendela ini diterima bahkan tanpa nama mode, kecuali komentarnya menyatakan propagasi lain: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Jendela dan tag dapat diubah.
 - **Kriteria ke-2 – mode MS:** di luar jendela, atau dengan salah satu tag tersebut, spot hanya dipertahankan jika memuat **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (mode digital yang hanya dipakai untuk MS) atau **\<MS\>**, dalam huruf besar, kecil atau campuran. Kata-kata dapat dinonaktifkan, ditambah dan dihapus; masing-masing punya penghitungnya sendiri.
 - **Band** 28, 50, 70, 144, 222, 432 MHz; **uji filter** pada baris yang ditempel; **penghitung**.

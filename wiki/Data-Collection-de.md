@@ -24,6 +24,7 @@ Jede Verbindung hat Host, Port, nach dem Login gesendete Befehle, *Neu verbinden
 
 - **Optionaler lokaler Filter:** Cluster-Zeilen unter **27990,0 kHz** werden sofort verworfen (weder angezeigt noch gespeichert).
 - CW-Spots werden sofort verworfen (CW oder WPM im Kommentar oder 28000-28070 kHz): Sie erscheinen nicht in der Konsole und werden nicht gespeichert, außer sie sind mit <MS> markiert. Das Kästchen lässt sich ausschalten.
+- Spots zwischen Stationen, die weniger als 500 km auseinanderliegen, werden sofort verworfen, da die Verbindung auf diese Entfernung direkt oder troposphärisch ist und kein Meteor Scatter: Sie erscheinen nicht in der Konsole und werden nicht gespeichert. Fehlt ein Locator, bleibt der Spot erhalten. Die Entfernung lässt sich unter dem Kästchen ändern.
 - **1. Kriterium – typische MS-Frequenzen:** 50190–50300, 70100–70400, 144290–144399 kHz. Ein Spot in diesen Fenstern wird auch ohne Namen des Modus angenommen, es sei denn, der Kommentar nennt eine andere Ausbreitung: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Fenster und Kennungen sind bearbeitbar.
 - **2. Kriterium – MS-Modi:** Außerhalb der Fenster oder mit einer dieser Kennungen wird ein Spot nur behalten, wenn er **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (nur für MS genutzte digitale Modi) oder **\<MS\>** enthält, in Groß-, Klein- oder gemischter Schreibweise. Wörter lassen sich abschalten, hinzufügen und entfernen; jedes hat seinen eigenen Zähler.
 - **Bänder** 28, 50, 70, 144, 222, 432 MHz; **Filtertest** an einer eingefügten Zeile; **Zähler**.

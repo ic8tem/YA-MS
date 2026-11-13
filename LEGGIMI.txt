@@ -39,6 +39,12 @@ INSTALLAZIONE
   Se all'avvio mancano file del programma (in data o in doc), una finestra li elenca e propone di riscaricarli
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
 
+NOVITA' DELLA 1.8.5
+  - Raccolta dati: gli spot tra stazioni piu' vicine di 500 km si scartano subito (a quella distanza il collegamento e'
+    diretto o troposferico, non meteor scatter): non compaiono nella console telnet e non si memorizzano. Se manca un
+    locator lo spot resta. Casella accesa di partenza; la distanza si cambia sotto la casella. Vale anche per PSKReporter
+    MQTT (chi ascolta resta comunque sulla mappa del traffico).
+
 NOVITA' DELLA 1.8.4
   - Raccolta dati: gli spot CW (CW o WPM nel commento, oppure 28000-28070 kHz) si scartano subito, come le righe sotto
     27990 kHz: non compaiono nella console telnet e non si memorizzano. Restano quelli segnati <MS>. Casella accesa di partenza.

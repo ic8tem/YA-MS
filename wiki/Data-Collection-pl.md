@@ -24,6 +24,7 @@ Każdy strumień ma host, port, polecenia wysyłane po zalogowaniu, *Połącz po
 
 - **Opcjonalny filtr lokalny:** wiersze clustera poniżej **27990,0 kHz** są od razu odrzucane (nie są wyświetlane ani zapisywane).
 - Spoty CW są od razu odrzucane (CW lub WPM w komentarzu albo 28000-28070 kHz): nie pojawiają się w konsoli i nie są zapisywane, chyba że są oznaczone <MS>. Pole można wyłączyć.
+- Spoty między stacjami oddalonymi o mniej niż 500 km są od razu odrzucane, bo na tej odległości łączność jest bezpośrednia lub troposferyczna, a nie meteor scatter: nie pojawiają się w konsoli i nie są zapisywane. Jeśli brakuje lokatora, spot zostaje. Odległość zmienia się pod polem wyboru.
 - **1. kryterium – typowe częstotliwości MS:** 50190–50300, 70100–70400, 144290–144399 kHz. Spot w tych oknach jest akceptowany nawet bez nazwy emisji, chyba że komentarz deklaruje inny rodzaj propagacji: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Okna i znaczniki można edytować.
 - **2. kryterium – emisje MS:** poza oknami lub z jednym z tych znaczników spot jest zachowywany tylko wtedy, gdy zawiera **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (emisje cyfrowe używane wyłącznie do MS) lub **\<MS\>**, pisane wielkimi, małymi lub mieszanymi literami. Słowa można wyłączać, dodawać i usuwać; każde ma swój licznik.
 - **Pasma** 28, 50, 70, 144, 222, 432 MHz; **test filtra** na wklejonym wierszu; **liczniki**.

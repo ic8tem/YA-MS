@@ -24,6 +24,7 @@ Her akışın sunucusu, portu, oturum açıldıktan sonra gönderilen komutları
 
 - **İsteğe bağlı yerel filtre:** **27990,0 kHz**'in altındaki cluster satırları hemen atılır (gösterilmez, saklanmaz).
 - CW spotları hemen atılır (yorumda CW veya WPM, ya da 28000-28070 kHz): <MS> ile işaretlenmedikçe konsolda görünmez ve kaydedilmez. Kutu kapatılabilir.
+- 500 km'den yakın istasyonlar arasındaki spotlar hemen atılır, çünkü bu mesafede bağlantı meteor scatter değil, doğrudan veya troposferiktir: konsolda görünmezler ve kaydedilmezler. Bir lokatör eksikse spot korunur. Mesafe kutunun altından değiştirilir.
 - **1. kriter – tipik MS frekansları:** 50190–50300, 70100–70400, 144290–144399 kHz. Bu pencerelerdeki bir spot, mod adı olmasa bile kabul edilir; yorum başka bir yayılım bildirmiyorsa: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Pencereler ve etiketler düzenlenebilir.
 - **2. kriter – MS modları:** pencerelerin dışında ya da bu etiketlerden biriyle gelen bir spot, ancak **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (yalnızca MS için kullanılan dijital modlar) ya da **\<MS\>** içeriyorsa tutulur; büyük, küçük ya da karışık harfle. Kelimeler kapatılabilir, eklenebilir ve kaldırılabilir; her birinin kendi sayacı vardır.
 - **Bantlar** 28, 50, 70, 144, 222, 432 MHz; yapıştırılan bir satır üzerinde **filtre testi**; **sayaçlar**.

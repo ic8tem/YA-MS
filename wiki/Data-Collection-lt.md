@@ -24,6 +24,7 @@ Kiekvienas srautas turi serverį, prievadą, po prisijungimo siunčiamas komanda
 
 - **Neprivalomas vietinis filtras:** klasterio eilutės žemiau **27990,0 kHz** iš karto atmetamos (nerodomos, nesaugomos).
 - CW spotai iškart atmetami (CW ar WPM komentare arba 28000-28070 kHz): jie nerodomi konsolėje ir neišsaugomi, nebent pažymėti <MS>. Langelį galima išjungti.
+- Spotai tarp stočių, esančių arčiau nei 500 km, iš karto atmetami, nes tokiu atstumu ryšys yra tiesioginis arba troposferinis, o ne meteor scatter: jie nerodomi konsolėje ir neišsaugomi. Jei trūksta lokatoriaus, spotas paliekamas. Atstumą galima pakeisti po langeliu.
 - **1-as kriterijus – tipiniai MS dažniai:** 50190–50300, 70100–70400, 144290–144399 kHz. Šiuose languose esantis spotas priimamas ir be modos pavadinimo, nebent komentare nurodytas kitas sklidimas: `<TR> <AS> <ACS> <AU> <ES> <FAI> <F2>`. Langus ir žymas galima keisti.
 - **2-as kriterijus – MS modos:** už langų arba su viena iš tų žymų spotas paliekamas tik tada, jei jame yra **MSK144, FSK441, FSK41, PSK2K, JTMS, JT6M** (skaitmeninės modos, naudojamos tik MS) arba **\<MS\>**, didžiosiomis, mažosiomis ar mišriomis raidėmis. Žodžius galima išjungti, pridėti ir pašalinti; kiekvienas turi savo skaitiklį.
 - **Juostos** 28, 50, 70, 144, 222, 432 MHz; **filtro bandymas** su įklijuota eilute; **skaitikliai**.

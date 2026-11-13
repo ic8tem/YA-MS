@@ -306,6 +306,7 @@ jobs:
             YA-MS - previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter.
             A cura di Costantino IC8TEM.
 
+            Novità della 1.8.5: spot tra stazioni più vicine di 500 km scartati nella Raccolta dati (non compaiono nella console e non si memorizzano).
             Novità della 1.8.4: spot CW scartati nella Raccolta dati, stazioni in ascolto in MSK144/FSK441/PSK2K/JTMS (PSKReporter MQTT) sulla mappa del Traffico in diretta, 28 e 70 MHz nei filtri di partenza.
             Novità della 1.8.3: casella "diagramma d'antenna" nel riquadro arancione, come l'angolo beta.
             Novità della 1.8.2: lettera del lato Hot (A/B) accanto a ogni valore della previsione dell'efficienza,

@@ -40,6 +40,11 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.8
+  - CALL3: ultima fonte G7VRD come in LIVETROPOVHF (api.g7vrd.co.uk, solo locatori a 6 caratteri nello stesso
+    quadrato, al massimo 40 nominativi al minuto, ognuno una volta al giorno; risultati in data/CALL3-G7VRD.TXT).
+    Casella "Cerca su G7VRD i locator mancanti" accesa di partenza.
+
 NOVITA' DELLA 1.8.7
   - Corrispondente in una riga sua, sotto la propria stazione, con il nominativo: premendo Invio il locator si prende
     dall'archivio CALL3 (come in YAEC e LIVETROPOVHF); il nominativo si puo' scrivere anche nella casella del locator.

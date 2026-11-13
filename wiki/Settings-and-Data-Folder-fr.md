@@ -77,7 +77,7 @@ Le schéma s'applique à tous les onglets et est enregistré dans `config.ini` (
 
 ## Police et Commandes
 
-- **Police** (à la fin de la première rangée de commandes) : agrandit **tout le texte** de **100 à 300 %** par pas de 10 % ; les traits, les cercles et les cartes gardent leur taille. Avec de grandes polices, les onglets passent sur une deuxième ligne et les cartes de synthèse s'agrandissent.
+- **Police** (à la fin de la première rangée de commandes) : agrandit **tout le texte** de **85 à 140 %** par pas de 5 % ; les traits, les cercles et les cartes gardent leur taille. Avec de grandes polices, les onglets passent sur une deuxième ligne et les cartes de synthèse s'agrandissent.
 - **Commandes** : avec de grandes polices ou un petit écran, repliez les trois rangées de commandes pour laisser de la place aux cartes et aux graphiques. L'état est mémorisé.
 
 ## Dossier des données
@@ -134,7 +134,7 @@ Texte brut, une ligne `clé=valeur` par réglage (les lignes commençant par `#`
 | `hot_spot_km` | 150 | Distance de Hot A / Hot B au point milieu (30–400 km) |
 | `lingua` | système / `it` | Code de langue (l'un des 36 codes ci-dessus, par ex. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Schéma de couleurs : `chiaro` (Clair), `scuro` (Nuit), `nero` (Noir), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Traînée météorique) |
-| `carattere_pct` | 100 | Taille de police (100–300 %) |
+| `carattere_pct` | 100 | Taille de police (85–140 %) |
 | `comandi_visibili` | 1 | 1 = rangées de commandes affichées, 0 = repliées |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Carte d'Europe, vue de dessus dans la voûte céleste |
 | `aggiornamento_automatico` | 1 | Vérification automatique des sources toutes les 5 minutes |

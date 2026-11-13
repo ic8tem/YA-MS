@@ -32,7 +32,7 @@ Faltam fontes CJK (chinês, japonês, coreano) no sistema. Instale as fontes **N
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### O texto é pequeno demais, ou os gráficos não têm espaço
-Use o controle **Fonte** (100–300 %) e oculte as linhas com **Comandos**. Veja [Configurações](Settings-and-Data-Folder-pt-br#fonte-e-comandos).
+Use o controle **Fonte** (85–140 %) e oculte as linhas com **Comandos**. Veja [Configurações](Settings-and-Data-Folder-pt-br#fonte-e-comandos).
 
 ### A tela é clara demais à noite
 Escolha **Noite** ou **Preto** na lista **Tema**.

@@ -17,7 +17,7 @@ Over fanerne er der tre rækker betjeningselementer, som gælder for alle faner.
 | **Bånd MHz** | 28, 50, 70, 144, 222 eller 432 MHz: bruges til antennens forstærkning og lap, fluxvurderingen og linkbudgettet. |
 | **Beregn** | Genberegner strækningen (sampling af E-laget: nogle sekunder). |
 | **Antenne az** | Din antennes azimut: altid **mod DX** (strækningens azimut). |
-| **Skrifttype** | Størrelsen på al tekst, 100–300 %. Se [Indstillinger](Settings-and-Data-Folder-da#skrifttype-og-betjening). |
+| **Skrifttype** | Størrelsen på al tekst, 85–140 %. Se [Indstillinger](Settings-and-Data-Folder-da#skrifttype-og-betjening). |
 
 **Række 2 – E-laget og antenne**
 

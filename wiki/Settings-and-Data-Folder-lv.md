@@ -77,7 +77,7 @@ Shēma attiecas uz visām cilnēm un tiek saglabāta failā `config.ini` (atslē
 
 ## Fonts un Vadība
 
-- **Fonts** (pirmās vadības rindas beigās): palielina **visu tekstu** no **100 līdz 300 %** ar 10 % soli; līnijas, apļi un kartes saglabā savu izmēru. Ar lieliem fontiem cilnes pārnesas otrā rindā un kartītes kļūst lielākas.
+- **Fonts** (pirmās vadības rindas beigās): palielina **visu tekstu** no **85 līdz 140 %** ar 5 % soli; līnijas, apļi un kartes saglabā savu izmēru. Ar lieliem fontiem cilnes pārnesas otrā rindā un kartītes kļūst lielākas.
 - **Vadība**: ar lieliem fontiem vai mazu ekrānu sakļauj trīs vadības rindas, lai atbrīvotu vietu kartēm un grafikiem. Stāvoklis tiek atcerēts.
 
 ## Datu mape
@@ -134,7 +134,7 @@ Vienkāršs teksts, viens `key=value` rindā (rindas, kas sākas ar `#` vai `;`,
 | `hot_spot_km` | 150 | Hot A / Hot B attālums no viduspunkta (30–400 km) |
 | `lingua` | sistēmas / `it` | Valodas kods (viens no 36 iepriekš minētajiem kodiem, piem. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Krāsu shēma: `chiaro` (Gaišs), `scuro` (Nakts), `nero` (Melns), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteora sliede) |
-| `carattere_pct` | 100 | Fonta izmērs (100–300 %) |
+| `carattere_pct` | 100 | Fonta izmērs (85–140 %) |
 | `comandi_visibili` | 1 | 1 = vadības rindas redzamas, 0 = sakļautas |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Eiropas karte, skats no augšas debess velvē |
 | `aggiornamento_automatico` | 1 | Automātiska avotu pārbaude ik pēc 5 minūtēm |

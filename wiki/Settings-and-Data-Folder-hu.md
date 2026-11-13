@@ -77,7 +77,7 @@ A séma minden fülre érvényes, és a `config.ini` fájlba mentődik (`tema` k
 
 ## Betűméret és vezérlők
 
-- **Betűméret** (a vezérlők első sorának végén): **az összes szöveget** **100 és 300 %** között nagyítja, 10 %-os lépésekben; a vonalak, körök és térképek megtartják a méretüket. Nagy betűméretnél a fülek második sorba törnek, a kártyák pedig megnőnek.
+- **Betűméret** (a vezérlők első sorának végén): **az összes szöveget** **85 és 140 %** között nagyítja, 5 %-os lépésekben; a vonalak, körök és térképek megtartják a méretüket. Nagy betűméretnél a fülek második sorba törnek, a kártyák pedig megnőnek.
 - **Vezérlők**: nagy betűméretnél vagy kis képernyőn csukja össze a három vezérlősort, hogy több hely maradjon a térképeknek és grafikonoknak. Az állapotot a program megjegyzi.
 
 ## Adatmappa
@@ -134,7 +134,7 @@ Egyszerű szövegfájl, soronként egy `key=value` pár (a `#` vagy `;` karakter
 | `hot_spot_km` | 150 | Hot A / Hot B távolsága a felezőponttól (30–400 km) |
 | `lingua` | rendszer / `it` | Nyelvkód (a fenti 36 kód egyike, pl. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Színséma: `chiaro` (Világos), `scuro` (Éjszakai), `nero` (Fekete), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteornyom) |
-| `carattere_pct` | 100 | Betűméret (100–300 %) |
+| `carattere_pct` | 100 | Betűméret (85–140 %) |
 | `comandi_visibili` | 1 | 1 = a vezérlősorok láthatók, 0 = összecsukva |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Európa-térkép, felülnézet az égbolt-kupolán |
 | `aggiornamento_automatico` | 1 | A források automatikus ellenőrzése 5 percenként |

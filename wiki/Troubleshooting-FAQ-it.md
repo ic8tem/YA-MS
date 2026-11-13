@@ -32,7 +32,7 @@ Al sistema mancano i font CJK (cinese, giapponese, coreano). Installa i font **N
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Il testo è troppo piccolo, o i grafici non hanno spazio
-Usa il cursore **Carattere** (100–300 %) e ripiega le righe con **Comandi**. Vedi [Impostazioni](Settings-and-Data-Folder-it#carattere-e-comandi).
+Usa il cursore **Carattere** (85–140 %) e ripiega le righe con **Comandi**. Vedi [Impostazioni](Settings-and-Data-Folder-it#carattere-e-comandi).
 
 ### Di notte lo schermo è troppo luminoso
 Scegli **Notte** o **Nero** nell'elenco **Tema**.

@@ -32,7 +32,7 @@ A rendszeréből hiányoznak a CJK (kínai, japán, koreai) betűtípusok. Telep
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### A szöveg túl kicsi, vagy a grafikonoknak nincs elég hely
-Használja a **Betűméret** csúszkát (100–300 %), és csukja össze a sorokat a **Vezérlők** gombbal. Lásd: [Beállítások](Settings-and-Data-Folder-hu#betűméret-és-vezérlők).
+Használja a **Betűméret** csúszkát (85–140 %), és csukja össze a sorokat a **Vezérlők** gombbal. Lásd: [Beállítások](Settings-and-Data-Folder-hu#betűméret-és-vezérlők).
 
 ### Éjszaka túl világos a képernyő
 Válassza az **Éjszakai** vagy a **Fekete** sémát a **Téma** listában.

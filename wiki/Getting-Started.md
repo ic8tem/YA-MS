@@ -17,7 +17,7 @@ Above the tabs there are three rows of controls, valid for all tabs. The **Contr
 | **Band MHz** | 28, 50, 70, 144, 222 or 432 MHz: used for the antenna gain and lobe, the flux estimate and the link budget. |
 | **Calculate** | Recomputes the path (sampling of the E layer: a few seconds). |
 | **Antenna az** | Azimuth of your antenna: always **towards the DX** (azimuth of the path). |
-| **Font** | Size of all the text, 100–300 %. See [Settings](Settings-and-Data-Folder#font-and-controls). |
+| **Font** | Size of all the text, 85–140 %. See [Settings](Settings-and-Data-Folder#font-and-controls). |
 
 **Row 2 – E layer and antenna**
 

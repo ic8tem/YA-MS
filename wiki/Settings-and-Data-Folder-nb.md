@@ -77,7 +77,7 @@ Skjemaet gjelder alle faner og lagres i `config.ini` (nøkkelen `tema`).
 
 ## Skrift og Kontroller
 
-- **Skrift** (på slutten av første rad med kontroller): forstørrer **all tekst** fra **100 til 300 %** i steg på 10 %; linjer, sirkler og kart beholder størrelsen. Med store skrifter brytes fanene over på en ekstra linje, og panelene vokser.
+- **Skrift** (på slutten av første rad med kontroller): forstørrer **all tekst** fra **85 til 140 %** i steg på 5 %; linjer, sirkler og kart beholder størrelsen. Med store skrifter brytes fanene over på en ekstra linje, og panelene vokser.
 - **Kontroller**: med store skrifter eller en liten skjerm kan du felle sammen de tre radene med kontroller for å gi plass til kart og diagrammer. Tilstanden huskes.
 
 ## Datamappe
@@ -134,7 +134,7 @@ Ren tekst, én `key=value` per linje (linjer som begynner med `#` eller `;`, er 
 | `hot_spot_km` | 150 | Avstand fra Hot A / Hot B til midtpunktet (30–400 km) |
 | `lingua` | system / `it` | Språkkode (en av de 36 kodene ovenfor, f.eks. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Fargeskjema: `chiaro` (Lys), `scuro` (Natt), `nero` (Svart), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteorspor) |
-| `carattere_pct` | 100 | Skriftstørrelse (100–300 %) |
+| `carattere_pct` | 100 | Skriftstørrelse (85–140 %) |
 | `comandi_visibili` | 1 | 1 = radene med kontroller vises, 0 = sammenfelt |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Europakart, sett ovenfra i himmelhvelvingen |
 | `aggiornamento_automatico` | 1 | Automatisk sjekk av kildene hvert 5. minutt |

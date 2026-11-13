@@ -134,7 +134,7 @@ Düz metin, her satırda bir `key=value` (`#` ya da `;` ile başlayan satırlar 
 | `hot_spot_km` | 150 | Hot A / Hot B'nin orta noktaya uzaklığı (30–400 km) |
 | `lingua` | sistem / `it` | Dil kodu (yukarıdaki 36 koddan biri, örn. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Renk şeması: `chiaro` (Açık), `scuro` (Gece), `nero` (Siyah), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteor izi) |
-| `carattere_pct` | 100 | Yazı tipi boyutu (%100–300) |
+| `carattere_pct` | 100 | Yazı tipi boyutu (%85–140) |
 | `comandi_visibili` | 1 | 1 = kontrol sıraları görünür, 0 = katlı |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Gökyüzü kubbesinde Avrupa haritası, üstten görünüm |
 | `aggiornamento_automatico` | 1 | Kaynakların 5 dakikada bir otomatik denetimi |

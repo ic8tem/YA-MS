@@ -32,7 +32,7 @@ Jou stelsel het nie CJK-lettertipes (Chinees, Japannees, Koreaans) nie. Installe
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Die teks is te klein, of die grafieke het nie plek nie
-Gebruik die skuifbalk **Lettertipe** (100–300 %) en vou die rye weg met **Kontroles**. Sien [Instellings](Settings-and-Data-Folder-af#lettertipe-en-kontroles).
+Gebruik die skuifbalk **Lettertipe** (85–140 %) en vou die rye weg met **Kontroles**. Sien [Instellings](Settings-and-Data-Folder-af#lettertipe-en-kontroles).
 
 ### Die skerm is snags te helder
 Kies **Nag** of **Swart** in die lys **Tema**.

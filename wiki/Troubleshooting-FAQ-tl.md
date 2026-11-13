@@ -32,7 +32,7 @@ Walang CJK na font (Tsino, Hapones, Koreano) ang iyong sistema. I-install ang mg
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Masyadong maliit ang teksto, o walang puwang ang mga graph
-Gamitin ang slider na **Font** (100–300 %) at itiklop ang mga hanay gamit ang **Mga kontrol**. Tingnan ang [Mga setting](Settings-and-Data-Folder-tl#font-at-mga-kontrol).
+Gamitin ang slider na **Font** (85–140 %) at itiklop ang mga hanay gamit ang **Mga kontrol**. Tingnan ang [Mga setting](Settings-and-Data-Folder-tl#font-at-mga-kontrol).
 
 ### Masyadong maliwanag ang screen sa gabi
 Piliin ang **Gabi** o **Itim** sa listahang **Tema**.

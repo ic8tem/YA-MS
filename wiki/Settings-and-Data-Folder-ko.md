@@ -77,7 +77,7 @@
 
 ## 글꼴과 조작
 
-- **글꼴**(조작 항목 1행 끝): **모든 텍스트**를 10 % 단위로 **100–300 %**까지 키웁니다. 선, 원, 지도의 크기는 그대로입니다. 글꼴이 크면 탭이 두 번째 줄로 넘어가고 카드가 커집니다.
+- **글꼴**(조작 항목 1행 끝): **모든 텍스트**를 5 % 단위로 **85–140 %**까지 키웁니다. 선, 원, 지도의 크기는 그대로입니다. 글꼴이 크면 탭이 두 번째 줄로 넘어가고 카드가 커집니다.
 - **조작**: 글꼴이 크거나 화면이 작을 때 세 줄의 조작 항목을 접어 지도와 그래프의 공간을 확보합니다. 상태는 기억됩니다.
 
 ## 데이터 폴더
@@ -134,7 +134,7 @@
 | `hot_spot_km` | 150 | 중간점에서 Hot A / Hot B까지 거리(30–400 km) |
 | `lingua` | 시스템 / `it` | 언어 코드(위의 36개 코드 중 하나, 예: `it`, `en`, `de`) |
 | `tema` | `chiaro` | 색 구성: `chiaro`(밝음), `scuro`(야간), `nero`(검정), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia`(유성 흔적) |
-| `carattere_pct` | 100 | 글꼴 크기(100–300 %) |
+| `carattere_pct` | 100 | 글꼴 크기(85–140 %) |
 | `comandi_visibili` | 1 | 1 = 조작 항목 표시, 0 = 접음 |
 | `mostra_mappa`, `vista_alto` | 1, 1 | 유럽 지도, 천구의 위에서 본 모습 |
 | `aggiornamento_automatico` | 1 | 5분마다 소스 자동 확인 |

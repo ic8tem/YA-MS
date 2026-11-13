@@ -17,7 +17,7 @@ Sa itaas ng mga tab ay may tatlong hanay ng mga kontrol, balido para sa lahat ng
 | **Banda MHz** | 28, 50, 70, 144, 222 o 432 MHz: ginagamit para sa gain at lobe ng antenna, sa tantiya ng flux at sa link budget. |
 | **Kalkulahin** | Muling kinakalkula ang landas (pag-sample ng E layer: ilang segundo). |
 | **Antenna az** | Azimuth ng iyong antenna: laging **patungo sa DX** (azimuth ng landas). |
-| **Font** | Laki ng lahat ng teksto, 100–300 %. Tingnan ang [Mga setting](Settings-and-Data-Folder-tl#font-at-mga-kontrol). |
+| **Font** | Laki ng lahat ng teksto, 85–140 %. Tingnan ang [Mga setting](Settings-and-Data-Folder-tl#font-at-mga-kontrol). |
 
 **Hanay 2 – E layer at antenna**
 

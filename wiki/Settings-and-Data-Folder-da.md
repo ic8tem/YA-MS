@@ -77,7 +77,7 @@ Skemaet gælder for alle faner og gemmes i `config.ini` (nøglen `tema`).
 
 ## Skrifttype og Betjening
 
-- **Skrifttype** (i slutningen af første række betjeningselementer): forstørrer **al tekst** fra **100 til 300 %** i trin på 10 %; linjer, cirkler og kort beholder deres størrelse. Med store skrifttyper brydes fanerne over på en ekstra linje, og boksene vokser.
+- **Skrifttype** (i slutningen af første række betjeningselementer): forstørrer **al tekst** fra **85 til 140 %** i trin på 5 %; linjer, cirkler og kort beholder deres størrelse. Med store skrifttyper brydes fanerne over på en ekstra linje, og boksene vokser.
 - **Betjening**: med store skrifttyper eller en lille skærm kan du folde de tre rækker betjeningselementer sammen for at give plads til kort og grafer. Tilstanden huskes.
 
 ## Datamappe
@@ -134,7 +134,7 @@ Almindelig tekst, én `key=value` pr. linje (linjer, der begynder med `#` eller 
 | `hot_spot_km` | 150 | Afstand fra Hot A / Hot B til midtpunktet (30–400 km) |
 | `lingua` | system / `it` | Sprogkode (en af de 36 koder ovenfor, fx `it`, `en`, `de`) |
 | `tema` | `chiaro` | Farveskema: `chiaro` (Lys), `scuro` (Nat), `nero` (Sort), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteorspor) |
-| `carattere_pct` | 100 | Skriftstørrelse (100–300 %) |
+| `carattere_pct` | 100 | Skriftstørrelse (85–140 %) |
 | `comandi_visibili` | 1 | 1 = rækker af betjeningselementer vises, 0 = sammenfoldet |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Europakort, set ovenfra i himmelkuplen |
 | `aggiornamento_automatico` | 1 | Automatisk kontrol af kilderne hvert 5. minut |

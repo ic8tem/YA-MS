@@ -32,7 +32,7 @@ Sistem Anda tidak memiliki font CJK (Tionghoa, Jepang, Korea). Pasang font **Not
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Teks terlalu kecil, atau grafik tidak punya ruang
-Gunakan penggeser **Huruf** (100–300 %) dan lipat baris-baris dengan **Kontrol**. Lihat [Pengaturan](Settings-and-Data-Folder-id#huruf-dan-kontrol).
+Gunakan penggeser **Huruf** (85–140 %) dan lipat baris-baris dengan **Kontrol**. Lihat [Pengaturan](Settings-and-Data-Folder-id#huruf-dan-kontrol).
 
 ### Layar terlalu terang di malam hari
 Pilih **Malam** atau **Hitam** pada daftar **Tema**.

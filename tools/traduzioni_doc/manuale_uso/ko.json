@@ -46,7 +46,7 @@
  "3.3 Lingua, colori, carattere": "3.3 언어, 색, 글꼴",
  "Lingua: 36 lingue. Cambiando lingua la finestra si ricostruisce nella stessa posizione e sulla stessa linguetta, senza riavviare. Numeri e date seguono la lingua scelta (virgola decimale in italiano, punto in inglese).": "언어: 36개 언어. 언어를 바꾸면 다시 시작하지 않고도 같은 위치, 같은 탭에서 창이 다시 구성됩니다. 숫자와 날짜는 선택한 언어의 형식을 따릅니다(이탈리아어는 소수점에 쉼표, 영어는 마침표).",
  "Tema: 12 schemi di colori; Chiaro è quello di partenza, Notte e Nero servono al buio, Scia meteorica è lo stile originale di YA-MS.": "테마: 12가지 색 구성. \"밝게\"가 기본값이고, \"야간\"과 \"검정\"은 어두운 곳에서 쓰며, \"유성 흔적\"은 YA-MS 고유의 스타일입니다.",
- "Carattere (in fondo alla prima riga di comandi): ingrandisce tutto il testo dal 100 al 300 %. Con caratteri grandi le linguette vanno a capo.": "글꼴(첫 번째 명령 줄 끝): 모든 글자를 100~300 %로 확대합니다. 글자가 크면 탭이 여러 줄로 표시됩니다.",
+ "Carattere (in fondo alla prima riga di comandi): rimpicciolisce o ingrandisce tutto il testo dall'85 al 140 %, a passi del 5 %. Con caratteri grandi le linguette vanno a capo.": "글꼴(첫 번째 명령 줄 끝): 모든 글자를 85~140 %로 확대합니다. 글자가 크면 탭이 여러 줄로 표시됩니다.",
  "Comandi: ripiega e riapre le tre righe di comandi, per dare spazio a mappe e grafici. La scelta viene ricordata.": "조작: 세 줄의 명령을 접거나 다시 펼쳐 지도와 그래프를 위한 공간을 확보합니다. 선택은 기억됩니다.",
  "Quasi ogni comando ha un fumetto: tieni fermo il mouse sopra il comando per leggere a che cosa serve e da quale fonte viene il valore di partenza.": "거의 모든 명령에는 도움말 풍선이 있습니다. 명령 위에 마우스를 잠시 올려 두면 그 용도와 기본값의 출처를 읽을 수 있습니다.",
  "4. Impostare la stazione e la tratta": "4. 국과 경로 설정",

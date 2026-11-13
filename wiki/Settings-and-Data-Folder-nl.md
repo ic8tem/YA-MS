@@ -77,7 +77,7 @@ Het schema geldt voor alle tabbladen en wordt opgeslagen in `config.ini` (sleute
 
 ## Lettertype en Bediening
 
-- **Lettertype** (aan het eind van de eerste rij bedieningselementen): vergroot **alle tekst** van **100 tot 300 %** in stappen van 10 %; lijnen, cirkels en kaarten behouden hun grootte. Met grote lettertypen lopen de tabbladen door op een tweede regel en worden de kaarten groter.
+- **Lettertype** (aan het eind van de eerste rij bedieningselementen): vergroot **alle tekst** van **85 tot 140 %** in stappen van 5 %; lijnen, cirkels en kaarten behouden hun grootte. Met grote lettertypen lopen de tabbladen door op een tweede regel en worden de kaarten groter.
 - **Bediening**: met grote lettertypen of een klein scherm klap je de drie rijen bedieningselementen in om ruimte te maken voor kaarten en grafieken. De toestand wordt onthouden.
 
 ## Gegevensmap
@@ -134,7 +134,7 @@ Platte tekst, één `sleutel=waarde` per regel (regels die met `#` of `;` beginn
 | `hot_spot_km` | 150 | Afstand van Hot A / Hot B tot het middelpunt (30–400 km) |
 | `lingua` | systeem / `it` | Taalcode (een van de 36 codes hierboven, bijv. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Kleurenschema: `chiaro` (Licht), `scuro` (Nacht), `nero` (Zwart), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteorenspoor) |
-| `carattere_pct` | 100 | Lettergrootte (100–300 %) |
+| `carattere_pct` | 100 | Lettergrootte (85–140 %) |
 | `comandi_visibili` | 1 | 1 = rijen bedieningselementen zichtbaar, 0 = ingeklapt |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Kaart van Europa, bovenaanzicht in de Hemelkoepel |
 | `aggiornamento_automatico` | 1 | Automatische controle van de bronnen elke 5 minuten |

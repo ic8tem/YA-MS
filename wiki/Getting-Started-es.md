@@ -17,7 +17,7 @@ Encima de las pestañas hay tres filas de controles, válidas para todas las pes
 | **Banda MHz** | 28, 50, 70, 144, 222 o 432 MHz: se usa para la ganancia y el lóbulo de la antena, la estimación del flujo y el balance del enlace. |
 | **Calcular** | Recalcula el trayecto (muestreo de la capa E: unos segundos). |
 | **Antena az** | Azimut de tu antena: siempre **hacia el DX** (azimut del trayecto). |
-| **Fuente de letra** | Tamaño de todo el texto, 100–300 %. Ver [Ajustes](Settings-and-Data-Folder-es#fuente-de-letra-y-controles). |
+| **Fuente de letra** | Tamaño de todo el texto, 85–140 %. Ver [Ajustes](Settings-and-Data-Folder-es#fuente-de-letra-y-controles). |
 
 **Fila 2 – capa E y antena**
 

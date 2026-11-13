@@ -32,7 +32,7 @@ Sistemului dumneavoastră îi lipsesc fonturile CJK (chineză, japoneză, coreea
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Textul este prea mic sau graficele nu au loc
-Folosiți cursorul **Font** (100–300 %) și pliați rândurile cu **Comenzi**. Vedeți [Setări](Settings-and-Data-Folder-ro#font-și-comenzi).
+Folosiți cursorul **Font** (85–140 %) și pliați rândurile cu **Comenzi**. Vedeți [Setări](Settings-and-Data-Folder-ro#font-și-comenzi).
 
 ### Ecranul este prea luminos noaptea
 Alegeți **Noapte** sau **Negru** în lista **Temă**.

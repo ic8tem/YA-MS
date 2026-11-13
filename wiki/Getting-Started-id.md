@@ -17,7 +17,7 @@ Di atas tab terdapat tiga baris kontrol yang berlaku untuk semua tab. Tombol **K
 | **Band MHz** | 28, 50, 70, 144, 222 atau 432 MHz: dipakai untuk penguatan dan lobus antena, perkiraan fluks dan anggaran link. |
 | **Hitung** | Menghitung ulang lintasan (pengambilan sampel lapisan E: beberapa detik). |
 | **Az antena** | Azimut antena Anda: selalu **ke arah DX** (azimut lintasan). |
-| **Huruf** | Ukuran seluruh teks, 100–300 %. Lihat [Pengaturan](Settings-and-Data-Folder-id#huruf-dan-kontrol). |
+| **Huruf** | Ukuran seluruh teks, 85–140 %. Lihat [Pengaturan](Settings-and-Data-Folder-id#huruf-dan-kontrol). |
 
 **Baris 2 – lapisan E dan antena**
 

@@ -77,7 +77,7 @@ Schema se aplică tuturor filelor și este salvată în `config.ini` (cheia `tem
 
 ## Font și comenzi
 
-- **Font** (la capătul primului rând de comenzi): mărește **întregul text** de la **100 la 300 %** în pași de 10 %; liniile, cercurile și hărțile își păstrează dimensiunea. Cu fonturi mari, filele trec pe un al doilea rând, iar cardurile cresc.
+- **Font** (la capătul primului rând de comenzi): mărește **întregul text** de la **85 la 140 %** în pași de 5 %; liniile, cercurile și hărțile își păstrează dimensiunea. Cu fonturi mari, filele trec pe un al doilea rând, iar cardurile cresc.
 - **Comenzi**: cu fonturi mari sau un ecran mic, pliați cele trei rânduri de comenzi pentru a lăsa loc hărților și graficelor. Starea este memorată.
 
 ## Dosarul de date
@@ -134,7 +134,7 @@ Text simplu, câte o pereche `key=value` pe linie (liniile care încep cu `#` sa
 | `hot_spot_km` | 150 | Distanța lui Hot A / Hot B față de punctul median (30–400 km) |
 | `lingua` | sistem / `it` | Codul limbii (unul dintre cele 36 de coduri de mai sus, de ex. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Schema de culori: `chiaro` (Luminos), `scuro` (Noapte), `nero` (Negru), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Urmă de meteor) |
-| `carattere_pct` | 100 | Dimensiunea fontului (100–300 %) |
+| `carattere_pct` | 100 | Dimensiunea fontului (85–140 %) |
 | `comandi_visibili` | 1 | 1 = rândurile de comenzi afișate, 0 = pliate |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Harta Europei, vederea de sus în Bolta cerească |
 | `aggiornamento_automatico` | 1 | Verificarea automată a surselor la fiecare 5 minute |

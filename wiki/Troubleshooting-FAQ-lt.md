@@ -32,7 +32,7 @@ Jūsų sistemoje trūksta CJK šriftų (kinų, japonų, korėjiečių). Įdiekit
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Tekstas per mažas arba grafikams trūksta vietos
-Naudokite slankiklį **Šriftas** (100–300 %) ir suskleiskite eilutes mygtuku **Valdymas**. Žr. [Nustatymai](Settings-and-Data-Folder-lt#šriftas-ir-valdymas).
+Naudokite slankiklį **Šriftas** (85–140 %) ir suskleiskite eilutes mygtuku **Valdymas**. Žr. [Nustatymai](Settings-and-Data-Folder-lt#šriftas-ir-valdymas).
 
 ### Ekranas naktį per ryškus
 Sąraše **Tema** pasirinkite **Naktis** arba **Juoda**.

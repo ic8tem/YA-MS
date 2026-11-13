@@ -77,7 +77,7 @@
 
 ## 字型與控制
 
-- **字型**（第一列控制項末尾）：將**所有文字**從 **100 % 放大到 300 %**，步長 10 %；線條、圓和地圖保持原有大小。使用大字型時，分頁會換到第二列，卡片也會變大。
+- **字型**（第一列控制項末尾）：將**所有文字**從 **85 % 放大到 140 %**，步長 5 %；線條、圓和地圖保持原有大小。使用大字型時，分頁會換到第二列，卡片也會變大。
 - **控制**：在使用大字型或螢幕較小時，收合三列控制項，為地圖和圖表騰出空間。該狀態會被記住。
 
 ## 資料資料夾
@@ -134,7 +134,7 @@
 | `hot_spot_km` | 150 | Hot A / Hot B 到中點的距離（30–400 km） |
 | `lingua` | 系統 / `it` | 語言代碼（上表 36 個代碼之一，例如 `it`、`en`、`de`） |
 | `tema` | `chiaro` | 配色方案：`chiaro`（淺色）、`scuro`（夜間）、`nero`（黑色）、`pastello-azzurro`、`pastello-arancione`、`pastello-acquamarina`、`pastello-verde`、`pastello-rosa`、`pastello-lilla`、`pastello-indaco`、`pastello-marrone`、`scia`（流星餘跡） |
-| `carattere_pct` | 100 | 字型大小（100–300 %） |
+| `carattere_pct` | 100 | 字型大小（85–140 %） |
 | `comandi_visibili` | 1 | 1 = 顯示控制項列，0 = 收合 |
 | `mostra_mappa`、`vista_alto` | 1, 1 | 天穹中的歐洲地圖、俯視圖 |
 | `aggiornamento_automatico` | 1 | 每 5 分鐘自動檢查資料來源 |

@@ -32,7 +32,7 @@ Sisteminizde CJK yazı tipleri (Çince, Japonca, Korece) yok. **Noto CJK** yazı
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Metin çok küçük ya da grafiklere yer kalmıyor
-**Yazı tipi** kaydırıcısını (%100–300) kullanın ve sıraları **Kontroller** ile katlayın. Bkz. [Ayarlar](Settings-and-Data-Folder-tr#yazı-tipi-ve-kontroller).
+**Yazı tipi** kaydırıcısını (%85–140) kullanın ve sıraları **Kontroller** ile katlayın. Bkz. [Ayarlar](Settings-and-Data-Folder-tr#yazı-tipi-ve-kontroller).
 
 ### Ekran gece çok parlak
 **Tema** listesinden **Gece** ya da **Siyah**'ı seçin.

@@ -77,7 +77,7 @@ Schemat gäller alla flikar och sparas i `config.ini` (nyckeln `tema`).
 
 ## Typsnitt och Reglage
 
-- **Typsnitt** (i slutet av den första raden med reglage): förstorar **all text** från **100 till 300 %** i steg om 10 %; linjer, cirklar och kartor behåller sin storlek. Med stora typsnitt bryts flikarna över till en andra rad och korten växer.
+- **Typsnitt** (i slutet av den första raden med reglage): förstorar **all text** från **85 till 140 %** i steg om 5 %; linjer, cirklar och kartor behåller sin storlek. Med stora typsnitt bryts flikarna över till en andra rad och korten växer.
 - **Reglage**: med stora typsnitt eller en liten skärm, fäll ihop de tre raderna med reglage för att ge plats åt kartor och diagram. Tillståndet sparas.
 
 ## Datamapp
@@ -134,7 +134,7 @@ Vanlig text, en `nyckel=värde` per rad (rader som börjar med `#` eller `;` är
 | `hot_spot_km` | 150 | Avstånd från mittpunkten till Hot A / Hot B (30–400 km) |
 | `lingua` | system / `it` | Språkkod (en av de 36 koderna ovan, t.ex. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Färgschema: `chiaro` (Ljust), `scuro` (Natt), `nero` (Svart), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteorspår) |
-| `carattere_pct` | 100 | Typsnittets storlek (100–300 %) |
+| `carattere_pct` | 100 | Typsnittets storlek (85–140 %) |
 | `comandi_visibili` | 1 | 1 = raderna med reglage visas, 0 = hopfällda |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Europakarta, vy ovanifrån i himlavalvet |
 | `aggiornamento_automatico` | 1 | Automatisk kontroll av källorna var 5:e minut |

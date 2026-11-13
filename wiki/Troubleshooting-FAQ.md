@@ -32,7 +32,7 @@ Your system lacks CJK fonts (Chinese, Japanese, Korean). Install the **Noto CJK*
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Text is too small, or the charts have no room
-Use the **Font** slider (100–300 %) and fold the rows with **Controls**. See [Settings](Settings-and-Data-Folder#font-and-controls).
+Use the **Font** slider (85–140 %) and fold the rows with **Controls**. See [Settings](Settings-and-Data-Folder#font-and-controls).
 
 ### The screen is too bright at night
 Choose **Night** or **Black** in the **Theme** list.

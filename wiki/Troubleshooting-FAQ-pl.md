@@ -32,7 +32,7 @@ W systemie brakuje czcionek CJK (chińskich, japońskich, koreańskich). Zainsta
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Tekst jest za mały lub wykresom brakuje miejsca
-Użyj suwaka **Czcionka** (100–300 %) i zwiń wiersze przyciskiem **Sterowanie**. Zob. [Ustawienia](Settings-and-Data-Folder-pl#czcionka-i-sterowanie).
+Użyj suwaka **Czcionka** (85–140 %) i zwiń wiersze przyciskiem **Sterowanie**. Zob. [Ustawienia](Settings-and-Data-Folder-pl#czcionka-i-sterowanie).
 
 ### Ekran jest w nocy za jasny
 Wybierz **Noc** lub **Czarny** z listy **Motyw**.

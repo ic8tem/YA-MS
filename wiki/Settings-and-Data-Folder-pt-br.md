@@ -77,7 +77,7 @@ O esquema se aplica a todas as abas e é salvo em `config.ini` (chave `tema`).
 
 ## Fonte e Comandos
 
-- **Fonte** (no fim da primeira linha de comandos): amplia **todo o texto** de **100 a 300 %** em passos de 10 %; linhas, círculos e mapas mantêm o tamanho. Com fonte grande as abas passam para uma segunda linha e os cartões crescem.
+- **Fonte** (no fim da primeira linha de comandos): amplia **todo o texto** de **85 a 140 %** em passos de 5 %; linhas, círculos e mapas mantêm o tamanho. Com fonte grande as abas passam para uma segunda linha e os cartões crescem.
 - **Comandos**: com fonte grande ou uma tela pequena, oculte as três linhas de comandos para deixar espaço para mapas e gráficos. A escolha fica memorizada.
 
 ## Pasta de dados
@@ -134,7 +134,7 @@ Texto simples, um `chave=valor` por linha (as linhas que começam com `#` ou `;`
 | `hot_spot_km` | 150 | Distância de Hot A / Hot B ao ponto médio (30–400 km) |
 | `lingua` | sistema / `it` | Código do idioma (um dos 36 códigos acima, p. ex. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Esquema de cores: `chiaro` (Claro), `scuro` (Noite), `nero` (Preto), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Rastro meteórico) |
-| `carattere_pct` | 100 | Tamanho da fonte (100–300 %) |
+| `carattere_pct` | 100 | Tamanho da fonte (85–140 %) |
 | `comandi_visibili` | 1 | 1 = linhas de comandos visíveis, 0 = ocultas |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Mapa da Europa, vista de cima na Abóbada celeste |
 | `aggiornamento_automatico` | 1 | Verificação automática das fontes a cada 5 minutos |

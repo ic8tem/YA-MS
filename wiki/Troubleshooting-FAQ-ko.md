@@ -32,7 +32,7 @@ M1/M2/M3/M4 프로세서는 `-mac-apple-silicon.dmg`, Intel Mac은 `-mac-intel.d
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### 글자가 너무 작거나 그래프 공간이 부족함
-**글꼴** 슬라이더(100–300 %)를 사용하고 **조작**으로 조작 항목을 접으세요. [설정](Settings-and-Data-Folder-ko#글꼴과-조작)을 참조하세요.
+**글꼴** 슬라이더(85–140 %)를 사용하고 **조작**으로 조작 항목을 접으세요. [설정](Settings-and-Data-Folder-ko#글꼴과-조작)을 참조하세요.
 
 ### 밤에 화면이 너무 밝음
 **테마** 목록에서 **야간** 또는 **검정**을 고르세요.

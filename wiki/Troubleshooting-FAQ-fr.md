@@ -32,7 +32,7 @@ Votre système n'a pas de polices CJK (chinois, japonais, coréen). Installez le
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Le texte est trop petit, ou les graphiques manquent de place
-Utilisez le curseur **Police** (100–300 %) et repliez les rangées avec **Commandes**. Voir [Réglages](Settings-and-Data-Folder-fr#police-et-commandes).
+Utilisez le curseur **Police** (85–140 %) et repliez les rangées avec **Commandes**. Voir [Réglages](Settings-and-Data-Folder-fr#police-et-commandes).
 
 ### L'écran est trop lumineux la nuit
 Choisissez **Nuit** ou **Noir** dans la liste **Thème**.

@@ -32,7 +32,7 @@ Dit system mangler CJK-skrifttyper (kinesisk, japansk, koreansk). Installér **N
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Teksten er for lille, eller graferne har ikke plads
-Brug skyderen **Skrifttype** (100–300 %), og fold rækkerne sammen med **Betjening**. Se [Indstillinger](Settings-and-Data-Folder-da#skrifttype-og-betjening).
+Brug skyderen **Skrifttype** (85–140 %), og fold rækkerne sammen med **Betjening**. Se [Indstillinger](Settings-and-Data-Folder-da#skrifttype-og-betjening).
 
 ### Skærmen er for lys om natten
 Vælg **Nat** eller **Sort** i listen **Tema**.

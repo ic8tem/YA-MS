@@ -77,7 +77,7 @@ Listinn **Þema** býður upp á 12 þemu, þau sömu og í EME-forriti höfunda
 
 ## Letur og Stýringar
 
-- **Letur** (í enda fyrstu raðar stýringanna): stækkar **allan texta** úr **100 í 300 %** í 10 % skrefum; línur, hringir og kort halda stærð sinni. Með stóru letri brotna fliparnir í aðra línu og spjöldin stækka.
+- **Letur** (í enda fyrstu raðar stýringanna): stækkar **allan texta** úr **85 í 140 %** í 5 % skrefum; línur, hringir og kort halda stærð sinni. Með stóru letri brotna fliparnir í aðra línu og spjöldin stækka.
 - **Stýringar**: með stóru letri eða litlum skjá skaltu fella saman raðirnar þrjár til að rýma fyrir kortum og gröfum. Staðan er munuð.
 
 ## Gagnamappa
@@ -134,7 +134,7 @@ Venjulegur texti, eitt `lykill=gildi` á hverja línu (línur sem byrja á `#` e
 | `hot_spot_km` | 150 | Fjarlægð Hot A / Hot B frá miðpunkti (30–400 km) |
 | `lingua` | kerfi / `it` | Tungumálakóði (einn af 36 kóðunum hér að ofan, t.d. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Litaþema: `chiaro` (Ljóst), `scuro` (Nótt), `nero` (Svart), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Loftsteinaslóð) |
-| `carattere_pct` | 100 | Leturstærð (100–300 %) |
+| `carattere_pct` | 100 | Leturstærð (85–140 %) |
 | `comandi_visibili` | 1 | 1 = raðir stýringa sýndar, 0 = samanfelldar |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Kort af Evrópu, séð ofan frá í himinhvelfingunni |
 | `aggiornamento_automatico` | 1 | Sjálfvirk athugun lindanna á 5 mínútna fresti |

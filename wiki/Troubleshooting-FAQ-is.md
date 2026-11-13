@@ -32,7 +32,7 @@ Kerfið þitt vantar CJK-letur (kínverska, japanska, kóreska). Settu upp **Not
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Textinn er of smár, eða gröfin hafa ekki pláss
-Notaðu sleðann **Letur** (100–300 %) og felldu raðirnar saman með **Stýringar**. Sjá [Stillingar](Settings-and-Data-Folder-is#letur-og-stýringar).
+Notaðu sleðann **Letur** (85–140 %) og felldu raðirnar saman með **Stýringar**. Sjá [Stillingar](Settings-and-Data-Folder-is#letur-og-stýringar).
 
 ### Skjárinn er of bjartur á nóttunni
 Veldu **Nótt** eða **Svart** í listanum **Þema**.

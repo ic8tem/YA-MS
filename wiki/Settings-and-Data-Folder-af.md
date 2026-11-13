@@ -77,7 +77,7 @@ Die skema geld vir al die oortjies en word in `config.ini` gestoor (sleutel `tem
 
 ## Lettertipe en Kontroles
 
-- **Lettertipe** (einde van die eerste ry kontroles): vergroot **al die teks** van **100 tot 300 %** in stappe van 10 %; lyne, sirkels en kaarte behou hul grootte. Met groot lettertipes loop die oortjies oor na 'n tweede reël en word die kaarte groter.
+- **Lettertipe** (einde van die eerste ry kontroles): vergroot **al die teks** van **85 tot 140 %** in stappe van 5 %; lyne, sirkels en kaarte behou hul grootte. Met groot lettertipes loop die oortjies oor na 'n tweede reël en word die kaarte groter.
 - **Kontroles**: met groot lettertipes of 'n klein skerm, vou die drie rye kontroles weg om plek te maak vir kaarte en grafieke. Die toestand word onthou.
 
 ## Datagids
@@ -134,7 +134,7 @@ Gewone teks, een `sleutel=waarde` per reël (reëls wat met `#` of `;` begin, is
 | `hot_spot_km` | 150 | Afstand van Hot A / Hot B vanaf die middelpunt (30–400 km) |
 | `lingua` | stelsel / `it` | Taalkode (een van die 36 kodes hierbo, bv. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Kleurskema: `chiaro` (Lig), `scuro` (Nag), `nero` (Swart), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteoorspoor) |
-| `carattere_pct` | 100 | Lettergrootte (100–300 %) |
+| `carattere_pct` | 100 | Lettergrootte (85–140 %) |
 | `comandi_visibili` | 1 | 1 = rye kontroles gewys, 0 = weggevou |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Kaart van Europa, bo-aansig in die hemelkoepel |
 | `aggiornamento_automatico` | 1 | Outomatiese kontrole van die bronne elke 5 minute |

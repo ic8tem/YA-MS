@@ -77,7 +77,7 @@ Schemat dotyczy wszystkich zakładek i jest zapisywany w `config.ini` (klucz `te
 
 ## Czcionka i Sterowanie
 
-- **Czcionka** (na końcu pierwszego wiersza elementów sterujących): powiększa **cały tekst** od **100 do 300 %** w krokach co 10 %; linie, okręgi i mapy zachowują swój rozmiar. Przy dużych czcionkach zakładki przechodzą do drugiego wiersza, a karty się powiększają.
+- **Czcionka** (na końcu pierwszego wiersza elementów sterujących): powiększa **cały tekst** od **85 do 140 %** w krokach co 5 %; linie, okręgi i mapy zachowują swój rozmiar. Przy dużych czcionkach zakładki przechodzą do drugiego wiersza, a karty się powiększają.
 - **Sterowanie**: przy dużych czcionkach lub małym ekranie zwiń trzy wiersze elementów sterujących, aby zostawić miejsce na mapy i wykresy. Stan jest zapamiętywany.
 
 ## Folder danych
@@ -134,7 +134,7 @@ Zwykły tekst, jedna para `key=value` w wierszu (wiersze zaczynające się od `#
 | `hot_spot_km` | 150 | Odległość Hot A / Hot B od punktu środkowego (30–400 km) |
 | `lingua` | systemowy / `it` | Kod języka (jeden z 36 powyższych kodów, np. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Schemat kolorów: `chiaro` (Jasny), `scuro` (Noc), `nero` (Czarny), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Ślad meteoru) |
-| `carattere_pct` | 100 | Rozmiar czcionki (100–300 %) |
+| `carattere_pct` | 100 | Rozmiar czcionki (85–140 %) |
 | `comandi_visibili` | 1 | 1 = wiersze elementów sterujących widoczne, 0 = zwinięte |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Mapa Europy, widok z góry na kopule nieba |
 | `aggiornamento_automatico` | 1 | Automatyczne sprawdzanie źródeł co 5 minut |

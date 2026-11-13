@@ -77,7 +77,7 @@ El esquema se aplica a todas las pestañas y se guarda en `config.ini` (clave `t
 
 ## Fuente de letra y Controles
 
-- **Fuente de letra** (al final de la primera fila de controles): amplía **todo el texto** del **100 al 300 %** en pasos del 10 %; líneas, círculos y mapas mantienen su tamaño. Con fuentes grandes las pestañas pasan a una segunda línea y las tarjetas crecen.
+- **Fuente de letra** (al final de la primera fila de controles): amplía **todo el texto** del **85 al 140 %** en pasos del 5 %; líneas, círculos y mapas mantienen su tamaño. Con fuentes grandes las pestañas pasan a una segunda línea y las tarjetas crecen.
 - **Controles**: con fuentes grandes o una pantalla pequeña, pliega las tres filas de controles para dejar sitio a mapas y gráficos. El estado se recuerda.
 
 ## Carpeta de datos
@@ -134,7 +134,7 @@ Texto plano, un `clave=valor` por línea (las líneas que empiezan por `#` o `;`
 | `hot_spot_km` | 150 | Distancia de Hot A / Hot B al punto medio (30–400 km) |
 | `lingua` | sistema / `it` | Código de idioma (uno de los 36 códigos de arriba, p. ej. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Esquema de colores: `chiaro` (Claro), `scuro` (Noche), `nero` (Negro), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Estela meteórica) |
-| `carattere_pct` | 100 | Tamaño de letra (100–300 %) |
+| `carattere_pct` | 100 | Tamaño de letra (85–140 %) |
 | `comandi_visibili` | 1 | 1 = filas de controles visibles, 0 = plegadas |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Mapa de Europa, vista desde arriba en la Bóveda celeste |
 | `aggiornamento_automatico` | 1 | Comprobación automática de las fuentes cada 5 minutos |

@@ -17,7 +17,7 @@ A fülek felett három sor vezérlőelem található, amelyek minden fülre érv
 | **Sáv MHz** | 28, 50, 70, 144, 222 vagy 432 MHz: ebből számolja az antennanyereséget és a nyalábot, a fluxusbecslést és az összeköttetési mérleget. |
 | **Számítás** | Újraszámítja az útvonalat (az E-réteg mintavételezése: néhány másodperc). |
 | **Antenna az.** | Az antenna azimutja: mindig **a DX felé** (az útvonal azimutja). |
-| **Betűméret** | Az összes szöveg mérete, 100–300 %. Lásd: [Beállítások](Settings-and-Data-Folder-hu#betűméret-és-vezérlők). |
+| **Betűméret** | Az összes szöveg mérete, 85–140 %. Lásd: [Beállítások](Settings-and-Data-Folder-hu#betűméret-és-vezérlők). |
 
 **2. sor – E-réteg és antenna**
 

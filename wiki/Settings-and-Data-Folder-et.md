@@ -77,7 +77,7 @@ Skeem kehtib kõigil sakkidel ja salvestatakse faili `config.ini` (võti `tema`)
 
 ## Font ja juhtnupud
 
-- **Font** (juhtnuppude esimese rea lõpus): suurendab **kogu teksti** **100 kuni 300 %** 10 % sammudega; jooned, ringid ja kaardid säilitavad oma suuruse. Suure fondi korral murduvad sakid teisele reale ja infokaardid kasvavad.
+- **Font** (juhtnuppude esimese rea lõpus): suurendab **kogu teksti** **85 kuni 140 %** 5 % sammudega; jooned, ringid ja kaardid säilitavad oma suuruse. Suure fondi korral murduvad sakid teisele reale ja infokaardid kasvavad.
 - **Juhtnupud**: suure fondi või väikese ekraani korral peida kolm juhtnuppude rida, et jätta ruumi kaartidele ja graafikutele. Olek jäetakse meelde.
 
 ## Andmekaust
@@ -134,7 +134,7 @@ Lihttekst, üks `key=value` rea kohta (märgiga `#` või `;` algavad read on kom
 | `hot_spot_km` | 150 | Hot A / Hot B kaugus keskpunktist (30–400 km) |
 | `lingua` | süsteem / `it` | Keele kood (üks ülaltoodud 36 koodist, nt `it`, `en`, `de`) |
 | `tema` | `chiaro` | Värviskeem: `chiaro` (Hele), `scuro` (Öö), `nero` (Must), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteoorijälg) |
-| `carattere_pct` | 100 | Fondi suurus (100–300 %) |
+| `carattere_pct` | 100 | Fondi suurus (85–140 %) |
 | `comandi_visibili` | 1 | 1 = juhtnuppude read nähtaval, 0 = peidetud |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Euroopa kaart, pealtvaade Taevavõlvis |
 | `aggiornamento_automatico` | 1 | Allikate automaatne kontroll iga 5 minuti järel |

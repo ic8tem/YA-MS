@@ -32,7 +32,7 @@ M1/M2/M3/M4 处理器用 `-mac-apple-silicon.dmg`，Intel Mac 用 `-mac-intel.dm
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### 文字太小，或图表没有空间
-使用**字体**滑块（100–300 %），并用**控制**折叠控件行。参见[设置](Settings-and-Data-Folder-zh#字体与控制)。
+使用**字体**滑块（85–140 %），并用**控制**折叠控件行。参见[设置](Settings-and-Data-Folder-zh#字体与控制)。
 
 ### 夜间屏幕太亮
 在**主题**列表中选择**夜间**或**黑色**。

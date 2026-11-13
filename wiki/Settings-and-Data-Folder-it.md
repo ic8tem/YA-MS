@@ -77,7 +77,7 @@ Lo schema vale per tutte le linguette ed è salvato in `config.ini` (chiave `tem
 
 ## Carattere e Comandi
 
-- **Carattere** (in fondo alla prima riga di comandi): ingrandisce **tutto il testo** dal **100 al 300 %** a passi del 10 %; linee, cerchi e mappe mantengono la loro dimensione. Con caratteri grandi le linguette vanno a capo su una seconda riga e le schede si ingrandiscono.
+- **Carattere** (in fondo alla prima riga di comandi): ingrandisce **tutto il testo** dal **85 al 140 %** a passi del 5 %; linee, cerchi e mappe mantengono la loro dimensione. Con caratteri grandi le linguette vanno a capo su una seconda riga e le schede si ingrandiscono.
 - **Comandi**: con caratteri grandi o uno schermo piccolo, ripiega le tre righe di comandi per lasciare spazio a mappe e grafici. Lo stato viene ricordato.
 
 ## Cartella dei dati
@@ -134,7 +134,7 @@ Testo semplice, una `chiave=valore` per riga (le righe che iniziano con `#` o `;
 | `hot_spot_km` | 150 | Distanza di Hot A / Hot B dal punto medio (30–400 km) |
 | `lingua` | sistema / `it` | Codice della lingua (uno dei 36 codici sopra, per esempio `it`, `en`, `de`) |
 | `tema` | `chiaro` | Schema di colori: `chiaro` (Chiaro), `scuro` (Notte), `nero` (Nero), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Scia meteorica) |
-| `carattere_pct` | 100 | Dimensione del carattere (100–300 %) |
+| `carattere_pct` | 100 | Dimensione del carattere (85–140 %) |
 | `comandi_visibili` | 1 | 1 = righe di comandi visibili, 0 = ripiegate |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Mappa d'Europa, vista dall'alto nella Volta celeste |
 | `aggiornamento_automatico` | 1 | Controllo automatico delle fonti ogni 5 minuti |

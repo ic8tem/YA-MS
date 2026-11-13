@@ -17,7 +17,7 @@ Nad kartami jsou tři řady ovládacích prvků, které platí pro všechny kart
 | **Pásmo MHz** | 28, 50, 70, 144, 222 nebo 432 MHz: používá se pro zisk a lalok antény, odhad toku a energetickou bilanci spoje. |
 | **Vypočítat** | Přepočítá trasu (vzorkování vrstvy E: několik sekund). |
 | **Az antény** | Azimut vaší antény: vždy **směrem k DX** (azimut trasy). |
-| **Písmo** | Velikost veškerého textu, 100–300 %. Viz [Nastavení](Settings-and-Data-Folder-cs#písmo-a-ovládání). |
+| **Písmo** | Velikost veškerého textu, 85–140 %. Viz [Nastavení](Settings-and-Data-Folder-cs#písmo-a-ovládání). |
 
 **Řada 2 – vrstva E a anténa**
 

@@ -77,7 +77,7 @@
 
 ## 字体与控制
 
-- **字体**（第一行控件末尾）：将**所有文字**从 **100 % 放大到 300 %**，步长 10 %；线条、圆和地图保持原有大小。使用大字体时，选项卡会换到第二行，卡片也会变大。
+- **字体**（第一行控件末尾）：将**所有文字**从 **85 % 放大到 140 %**，步长 5 %；线条、圆和地图保持原有大小。使用大字体时，选项卡会换到第二行，卡片也会变大。
 - **控制**：在使用大字体或屏幕较小时，折叠三行控件，为地图和图表腾出空间。该状态会被记住。
 
 ## 数据文件夹
@@ -134,7 +134,7 @@
 | `hot_spot_km` | 150 | Hot A / Hot B 到中点的距离（30–400 km） |
 | `lingua` | 系统 / `it` | 语言代码（上表 36 个代码之一，例如 `it`、`en`、`de`） |
 | `tema` | `chiaro` | 配色方案：`chiaro`（浅色）、`scuro`（夜间）、`nero`（黑色）、`pastello-azzurro`、`pastello-arancione`、`pastello-acquamarina`、`pastello-verde`、`pastello-rosa`、`pastello-lilla`、`pastello-indaco`、`pastello-marrone`、`scia`（流星余迹） |
-| `carattere_pct` | 100 | 字体大小（100–300 %） |
+| `carattere_pct` | 100 | 字体大小（85–140 %） |
 | `comandi_visibili` | 1 | 1 = 显示控件行，0 = 折叠 |
 | `mostra_mappa`、`vista_alto` | 1, 1 | 天穹中的欧洲地图、俯视图 |
 | `aggiornamento_automatico` | 1 | 每 5 分钟自动检查数据源 |

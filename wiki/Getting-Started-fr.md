@@ -17,7 +17,7 @@ Au-dessus des onglets se trouvent trois rangées de commandes, valables pour tou
 | **Bande MHz** | 28, 50, 70, 144, 222 ou 432 MHz : sert pour le gain et le lobe de l'antenne, l'estimation du flux et le bilan de liaison. |
 | **Calculer** | Recalcule le trajet (échantillonnage de la couche E : quelques secondes). |
 | **Antenne az** | Azimut de votre antenne : toujours **vers le correspondant** (azimut du trajet). |
-| **Police** | Taille de tout le texte, 100–300 %. Voir [Réglages](Settings-and-Data-Folder-fr#police-et-commandes). |
+| **Police** | Taille de tout le texte, 85–140 %. Voir [Réglages](Settings-and-Data-Folder-fr#police-et-commandes). |
 
 **Rangée 2 – couche E et antenne**
 

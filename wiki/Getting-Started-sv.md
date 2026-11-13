@@ -17,7 +17,7 @@ Ovanför flikarna finns tre rader med reglage som gäller för alla flikar. Knap
 | **Band MHz** | 28, 50, 70, 144, 222 eller 432 MHz: används för antennens förstärkning och lob, flödesuppskattningen och länkbudgeten. |
 | **Beräkna** | Beräknar sträckan på nytt (sampling av E-skiktet: några sekunder). |
 | **Antenn az** | Din antenns azimut: alltid **mot DX** (sträckans azimut). |
-| **Typsnitt** | Storlek på all text, 100–300 %. Se [Inställningar](Settings-and-Data-Folder-sv#typsnitt-och-reglage). |
+| **Typsnitt** | Storlek på all text, 85–140 %. Se [Inställningar](Settings-and-Data-Folder-sv#typsnitt-och-reglage). |
 
 **Rad 2 – E-skiktet och antennen**
 

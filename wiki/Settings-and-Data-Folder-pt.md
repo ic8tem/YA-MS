@@ -77,7 +77,7 @@ O esquema aplica-se a todos os separadores e é guardado em `config.ini` (chave 
 
 ## Tipo de letra e Comandos
 
-- **Tipo de letra** (no fim da primeira fila de comandos): amplia **todo o texto** de **100 a 300 %** em passos de 10 %; linhas, círculos e mapas mantêm o tamanho. Com letra grande os separadores passam para uma segunda linha e os cartões crescem.
+- **Tipo de letra** (no fim da primeira fila de comandos): amplia **todo o texto** de **85 a 140 %** em passos de 5 %; linhas, círculos e mapas mantêm o tamanho. Com letra grande os separadores passam para uma segunda linha e os cartões crescem.
 - **Comandos**: com letra grande ou um ecrã pequeno, recolha as três filas de comandos para deixar espaço a mapas e gráficos. O estado fica memorizado.
 
 ## Pasta de dados
@@ -134,7 +134,7 @@ Texto simples, um `chave=valor` por linha (as linhas que começam por `#` ou `;`
 | `hot_spot_km` | 150 | Distância de Hot A / Hot B ao ponto médio (30–400 km) |
 | `lingua` | sistema / `it` | Código do idioma (um dos 36 códigos acima, p. ex. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Esquema de cores: `chiaro` (Claro), `scuro` (Noite), `nero` (Preto), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Rasto meteórico) |
-| `carattere_pct` | 100 | Tamanho da letra (100–300 %) |
+| `carattere_pct` | 100 | Tamanho da letra (85–140 %) |
 | `comandi_visibili` | 1 | 1 = filas de comandos visíveis, 0 = recolhidas |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Mapa da Europa, vista de cima na Abóbada celeste |
 | `aggiornamento_automatico` | 1 | Verificação automática das fontes a cada 5 minutos |

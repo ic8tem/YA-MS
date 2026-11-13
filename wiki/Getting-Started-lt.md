@@ -17,7 +17,7 @@ Virš kortelių yra trys valdymo eilutės, galiojančios visoms kortelėms. Mygt
 | **Juosta MHz** | 28, 50, 70, 144, 222 arba 432 MHz: naudojama antenos stiprinimui ir lapeliui, srauto įverčiui ir ryšio biudžetui. |
 | **Skaičiuoti** | Iš naujo apskaičiuoja trasą (E sluoksnio diskretizavimas: kelios sekundės). |
 | **Antenos az** | Jūsų antenos azimutas: visada **DX kryptimi** (trasos azimutas). |
-| **Šriftas** | Viso teksto dydis, 100–300 %. Žr. [Nustatymai](Settings-and-Data-Folder-lt#šriftas-ir-valdymas). |
+| **Šriftas** | Viso teksto dydis, 85–140 %. Žr. [Nustatymai](Settings-and-Data-Folder-lt#šriftas-ir-valdymas). |
 
 **2 eilutė – E sluoksnis ir antena**
 

@@ -32,7 +32,7 @@ Tavā sistēmā trūkst CJK fontu (ķīniešu, japāņu, korejiešu). Instalē *
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Teksts ir pārāk mazs vai grafikiem nav vietas
-Izmanto slīdni **Fonts** (100–300 %) un sakļauj rindas ar **Vadība**. Sk. [Iestatījumi](Settings-and-Data-Folder-lv#fonts-un-vadība).
+Izmanto slīdni **Fonts** (85–140 %) un sakļauj rindas ar **Vadība**. Sk. [Iestatījumi](Settings-and-Data-Folder-lv#fonts-un-vadība).
 
 ### Ekrāns naktī ir pārāk spilgts
 Sarakstā **Tēma** izvēlies **Nakts** vai **Melns**.

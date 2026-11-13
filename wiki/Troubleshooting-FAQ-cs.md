@@ -32,7 +32,7 @@ Vašemu systému chybí písma CJK (čínština, japonština, korejština). Nain
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Text je příliš malý nebo grafy nemají místo
-Použijte posuvník **Písmo** (100–300 %) a skryjte řady ovládacích prvků tlačítkem **Ovládání**. Viz [Nastavení](Settings-and-Data-Folder-cs#písmo-a-ovládání).
+Použijte posuvník **Písmo** (85–140 %) a skryjte řady ovládacích prvků tlačítkem **Ovládání**. Viz [Nastavení](Settings-and-Data-Folder-cs#písmo-a-ovládání).
 
 ### Obrazovka je v noci příliš jasná
 V seznamu **Motiv** zvolte **Noc** nebo **Černý**.

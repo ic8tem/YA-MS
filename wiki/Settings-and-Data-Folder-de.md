@@ -77,7 +77,7 @@ Das Schema gilt für alle Reiter und wird in `config.ini` gespeichert (Schlüsse
 
 ## Schrift und Bedienung
 
-- **Schrift** (Ende der ersten Bedienzeile): vergrößert **den gesamten Text** von **100 auf 300 %** in Schritten von 10 %; Linien, Kreise und Karten behalten ihre Größe. Bei großer Schrift brechen die Reiter in eine zweite Zeile um und die Karten werden größer.
+- **Schrift** (Ende der ersten Bedienzeile): vergrößert **den gesamten Text** von **85 auf 140 %** in Schritten von 5 %; Linien, Kreise und Karten behalten ihre Größe. Bei großer Schrift brechen die Reiter in eine zweite Zeile um und die Karten werden größer.
 - **Bedienung**: Bei großer Schrift oder kleinem Bildschirm klappst du die drei Bedienzeilen ein, um Platz für Karten und Diagramme zu schaffen. Der Zustand wird gespeichert.
 
 ## Datenordner
@@ -134,7 +134,7 @@ Reiner Text, ein `key=value` pro Zeile (Zeilen, die mit `#` oder `;` beginnen, s
 | `hot_spot_km` | 150 | Abstand von Hot A / Hot B vom Mittelpunkt (30–400 km) |
 | `lingua` | System / `it` | Sprachcode (einer der 36 Codes oben, z. B. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Farbschema: `chiaro` (Hell), `scuro` (Nacht), `nero` (Schwarz), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteorspur) |
-| `carattere_pct` | 100 | Schriftgröße (100–300 %) |
+| `carattere_pct` | 100 | Schriftgröße (85–140 %) |
 | `comandi_visibili` | 1 | 1 = Bedienzeilen sichtbar, 0 = eingeklappt |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Europakarte, Draufsicht in der Himmelsansicht |
 | `aggiornamento_automatico` | 1 | Automatische Prüfung der Quellen alle 5 Minuten |

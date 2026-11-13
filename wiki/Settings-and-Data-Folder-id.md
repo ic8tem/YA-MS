@@ -77,7 +77,7 @@ Skema berlaku untuk semua tab dan disimpan di `config.ini` (kunci `tema`).
 
 ## Huruf dan Kontrol
 
-- **Huruf** (di ujung baris kontrol pertama): memperbesar **seluruh teks** dari **100 hingga 300 %** dengan langkah 10 %; garis, lingkaran dan peta tetap berukuran sama. Dengan huruf besar, tab berpindah ke baris kedua dan kartu membesar.
+- **Huruf** (di ujung baris kontrol pertama): memperbesar **seluruh teks** dari **85 hingga 140 %** dengan langkah 5 %; garis, lingkaran dan peta tetap berukuran sama. Dengan huruf besar, tab berpindah ke baris kedua dan kartu membesar.
 - **Kontrol**: dengan huruf besar atau layar kecil, lipat ketiga baris kontrol untuk memberi ruang bagi peta dan grafik. Keadaannya diingat.
 
 ## Folder data
@@ -134,7 +134,7 @@ Teks biasa, satu `key=value` per baris (baris yang diawali `#` atau `;` adalah k
 | `hot_spot_km` | 150 | Jarak Hot A / Hot B dari titik tengah (30–400 km) |
 | `lingua` | sistem / `it` | Kode bahasa (salah satu dari 36 kode di atas, mis. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Skema warna: `chiaro` (Terang), `scuro` (Malam), `nero` (Hitam), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Jejak meteor) |
-| `carattere_pct` | 100 | Ukuran huruf (100–300 %) |
+| `carattere_pct` | 100 | Ukuran huruf (85–140 %) |
 | `comandi_visibili` | 1 | 1 = baris kontrol ditampilkan, 0 = dilipat |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Peta Eropa, tampak atas pada Kubah langit |
 | `aggiornamento_automatico` | 1 | Pemeriksaan otomatis sumber setiap 5 menit |

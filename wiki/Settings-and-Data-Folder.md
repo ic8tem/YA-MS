@@ -77,7 +77,7 @@ The scheme applies to all tabs and is saved in `config.ini` (key `tema`).
 
 ## Font and Controls
 
-- **Font** (end of the first row of controls): enlarges **all the text** from **100 to 300 %** in 10 % steps; lines, circles and maps keep their size. With large fonts the tabs wrap onto a second line and the cards grow.
+- **Font** (end of the first row of controls): enlarges **all the text** from **85 to 140 %** in 5 % steps; lines, circles and maps keep their size. With large fonts the tabs wrap onto a second line and the cards grow.
 - **Controls**: with large fonts or a small screen, fold the three rows of controls to leave room for maps and charts. The state is remembered.
 
 ## Data folder
@@ -134,7 +134,7 @@ Plain text, one `key=value` per line (lines starting with `#` or `;` are comment
 | `hot_spot_km` | 150 | Hot A / Hot B distance from the midpoint (30–400 km) |
 | `lingua` | system / `it` | Language code (one of the 36 codes above, e.g. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Colour scheme: `chiaro` (Light), `scuro` (Night), `nero` (Black), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteor trail) |
-| `carattere_pct` | 100 | Font size (100–300 %) |
+| `carattere_pct` | 100 | Font size (85–140 %) |
 | `comandi_visibili` | 1 | 1 = rows of controls shown, 0 = folded |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Map of Europe, top view in the Sky dome |
 | `aggiornamento_automatico` | 1 | Automatic check of the sources every 5 minutes |

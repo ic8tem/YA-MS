@@ -77,7 +77,7 @@ Schema taikoma visoms kortelėms ir išsaugoma `config.ini` (raktas `tema`).
 
 ## Šriftas ir valdymas
 
-- **Šriftas** (pirmosios valdymo eilutės gale): padidina **visą tekstą** nuo **100 iki 300 %** 10 % žingsniais; linijos, apskritimai ir žemėlapiai išlaiko savo dydį. Su dideliu šriftu kortelės persikelia į antrą eilutę, o skydeliai padidėja.
+- **Šriftas** (pirmosios valdymo eilutės gale): padidina **visą tekstą** nuo **85 iki 140 %** 5 % žingsniais; linijos, apskritimai ir žemėlapiai išlaiko savo dydį. Su dideliu šriftu kortelės persikelia į antrą eilutę, o skydeliai padidėja.
 - **Valdymas**: su dideliu šriftu ar mažu ekranu suskleiskite tris valdymo eilutes, kad liktų vietos žemėlapiams ir grafikams. Būsena įsimenama.
 
 ## Duomenų aplankas
@@ -134,7 +134,7 @@ Paprastas tekstas, po vieną `key=value` eilutėje (eilutės, prasidedančios `#
 | `hot_spot_km` | 150 | Hot A / Hot B atstumas nuo vidurio taško (30–400 km) |
 | `lingua` | sistemos / `it` | Kalbos kodas (vienas iš 36 aukščiau nurodytų kodų, pvz., `it`, `en`, `de`) |
 | `tema` | `chiaro` | Spalvų schema: `chiaro` (Šviesi), `scuro` (Naktis), `nero` (Juoda), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteoro pėdsakas) |
-| `carattere_pct` | 100 | Šrifto dydis (100–300 %) |
+| `carattere_pct` | 100 | Šrifto dydis (85–140 %) |
 | `comandi_visibili` | 1 | 1 = valdymo eilutės rodomos, 0 = suskleistos |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Europos žemėlapis, vaizdas iš viršaus Dangaus skliaute |
 | `aggiornamento_automatico` | 1 | Automatinis šaltinių tikrinimas kas 5 minutes |

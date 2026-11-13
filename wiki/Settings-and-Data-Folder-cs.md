@@ -77,7 +77,7 @@ Schéma platí pro všechny karty a ukládá se do `config.ini` (klíč `tema`).
 
 ## Písmo a Ovládání
 
-- **Písmo** (na konci první řady ovládacích prvků): zvětší **veškerý text** ze **100 na 300 %** v krocích po 10 %; čáry, kružnice a mapy si zachovají velikost. Při velkém písmu se karty zalomí na druhý řádek a přehledové karty se zvětší.
+- **Písmo** (na konci první řady ovládacích prvků): zvětší **veškerý text** ze **85 na 140 %** v krocích po 5 %; čáry, kružnice a mapy si zachovají velikost. Při velkém písmu se karty zalomí na druhý řádek a přehledové karty se zvětší.
 - **Ovládání**: při velkém písmu nebo malé obrazovce skryjte tři řady ovládacích prvků, aby zůstalo místo pro mapy a grafy. Stav se pamatuje.
 
 ## Datová složka
@@ -134,7 +134,7 @@ Prostý text, jeden `key=value` na řádek (řádky začínající `#` nebo `;` 
 | `hot_spot_km` | 150 | Vzdálenost Hot A / Hot B od středu trasy (30–400 km) |
 | `lingua` | systém / `it` | Kód jazyka (jeden z 36 kódů výše, např. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Barevné schéma: `chiaro` (Světlý), `scuro` (Noc), `nero` (Černý), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Meteorická stopa) |
-| `carattere_pct` | 100 | Velikost písma (100–300 %) |
+| `carattere_pct` | 100 | Velikost písma (85–140 %) |
 | `comandi_visibili` | 1 | 1 = řady ovládacích prvků zobrazeny, 0 = skryty |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Mapa Evropy, pohled shora na Nebeské klenbě |
 | `aggiornamento_automatico` | 1 | Automatická kontrola zdrojů každých 5 minut |

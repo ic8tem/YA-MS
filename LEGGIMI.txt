@@ -49,6 +49,7 @@ NOVITA' DELLA 1.8.7
   - Traffico in diretta: nominativi di entrambe le stazioni sulla mappa (piu' piccoli), scelta della proiezione
     (azimutale o Mercatore), fumetto che spiega la colonna Nuvola.
   - Calcolo dell'efficienza: barra rossa sul grafico all'orario del calcolo.
+  - Cursore "Carattere" tra 85 e 140 %, a passi del 5 %.
 
 NOVITA' DELLA 1.8.6
   - Aggiornamenti automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'e' una versione
@@ -194,7 +195,7 @@ NOVITA' DELLA 1.2.0
   - Curva del guadagno DL6WU verificata con le Yagi DL6WU e VK3AUU (entro 0,1 dB); nuove fonti nel manuale.
 
 NOVITA' DELLA 1.1.0
-  - Cursore "Carattere" (prima riga dei comandi): ingrandisce tutto il testo dal 100 al 300 %.
+  - Cursore "Carattere" (prima riga dei comandi): ingrandisce tutto il testo (dalla 1.8.7: dall'85 al 140 %).
   - Pulsante "Comandi" a destra delle linguette: ripiega le tre righe dei comandi.
   - Mappa: le scritte non si sovrappongono (Hot A e PREV A a sinistra della tratta, B a destra), legenda
     in una colonna ripiegabile, didascalia sotto la mappa.

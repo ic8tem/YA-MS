@@ -32,7 +32,7 @@ M1/M2/M3/M4 プロセッサーには `-mac-apple-silicon.dmg`、Intel Mac には
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### 文字が小さすぎる、またはグラフの場所が足りない
-**フォント** スライダー (100–300 %) を使い、**操作** で操作部を折りたたんでください。[設定](Settings-and-Data-Folder-ja#フォントと操作) を参照。
+**フォント** スライダー (85–140 %) を使い、**操作** で操作部を折りたたんでください。[設定](Settings-and-Data-Folder-ja#フォントと操作) を参照。
 
 ### 夜間に画面が明るすぎる
 **テーマ** のリストで **夜間** または **ブラック** を選んでください。

@@ -77,7 +77,7 @@ Inilalapat ang scheme sa lahat ng tab at sine-save sa `config.ini` (key na `tema
 
 ## Font at Mga kontrol
 
-- **Font** (dulo ng unang hanay ng mga kontrol): pinalalaki ang **lahat ng teksto** mula **100 hanggang 300 %** sa mga hakbang na 10 %; hindi nagbabago ang laki ng mga linya, bilog at mapa. Kapag malaki ang font, bumababa sa ikalawang linya ang mga tab at lumalaki ang mga card.
+- **Font** (dulo ng unang hanay ng mga kontrol): pinalalaki ang **lahat ng teksto** mula **85 hanggang 140 %** sa mga hakbang na 5 %; hindi nagbabago ang laki ng mga linya, bilog at mapa. Kapag malaki ang font, bumababa sa ikalawang linya ang mga tab at lumalaki ang mga card.
 - **Mga kontrol**: kapag malaki ang font o maliit ang screen, itiklop ang tatlong hanay ng mga kontrol para magkaroon ng puwang ang mga mapa at graph. Natatandaan ang kalagayan.
 
 ## Folder ng datos
@@ -134,7 +134,7 @@ Simpleng teksto, isang `key=value` bawat linya (komento ang mga linyang nagsisim
 | `hot_spot_km` | 150 | Distansiya ng Hot A / Hot B mula sa gitnang punto (30–400 km) |
 | `lingua` | sistema / `it` | Kodigo ng wika (isa sa 36 kodigo sa itaas, hal. `it`, `en`, `de`) |
 | `tema` | `chiaro` | Scheme ng kulay: `chiaro` (Maliwanag), `scuro` (Gabi), `nero` (Itim), `pastello-azzurro`, `pastello-arancione`, `pastello-acquamarina`, `pastello-verde`, `pastello-rosa`, `pastello-lilla`, `pastello-indaco`, `pastello-marrone`, `scia` (Bakas ng meteor) |
-| `carattere_pct` | 100 | Laki ng font (100–300 %) |
+| `carattere_pct` | 100 | Laki ng font (85–140 %) |
 | `comandi_visibili` | 1 | 1 = nakikita ang mga hanay ng kontrol, 0 = nakatiklop |
 | `mostra_mappa`, `vista_alto` | 1, 1 | Mapa ng Europa, tanaw mula sa itaas sa Kalangitan |
 | `aggiornamento_automatico` | 1 | Awtomatikong pagsusuri ng mga sanggunian bawat 5 minuto |

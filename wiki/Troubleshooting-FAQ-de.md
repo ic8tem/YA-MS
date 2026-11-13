@@ -32,7 +32,7 @@ Deinem System fehlen CJK-Schriften (Chinesisch, Japanisch, Koreanisch). Installi
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Der Text ist zu klein oder die Diagramme haben keinen Platz
-Verwende den Schieberegler **Schrift** (100–300 %) und klappe die Zeilen mit **Bedienung** ein. Siehe [Einstellungen](Settings-and-Data-Folder-de#schrift-und-bedienung).
+Verwende den Schieberegler **Schrift** (85–140 %) und klappe die Zeilen mit **Bedienung** ein. Siehe [Einstellungen](Settings-and-Data-Folder-de#schrift-und-bedienung).
 
 ### Der Bildschirm ist nachts zu hell
 Wähle **Nacht** oder **Schwarz** in der Liste **Farbschema**.

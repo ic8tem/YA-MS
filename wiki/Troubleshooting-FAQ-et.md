@@ -32,7 +32,7 @@ Sinu süsteemis puuduvad CJK-fondid (hiina, jaapani, korea). Paigalda **Noto CJK
 | openSUSE | `sudo zypper install noto-sans-cjk-fonts` |
 
 ### Tekst on liiga väike või graafikutel pole ruumi
-Kasuta liugurit **Font** (100–300 %) ja peida read nupuga **Juhtnupud**. Vt [Seaded](Settings-and-Data-Folder-et#font-ja-juhtnupud).
+Kasuta liugurit **Font** (85–140 %) ja peida read nupuga **Juhtnupud**. Vt [Seaded](Settings-and-Data-Folder-et#font-ja-juhtnupud).
 
 ### Ekraan on öösel liiga ere
 Vali loendist **Teema** **Öö** või **Must**.

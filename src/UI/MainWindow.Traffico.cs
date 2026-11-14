@@ -58,10 +58,17 @@ namespace YAMS
             traffic = new TrafficView { RadiusKm = Math.Max(600, Math.Min(3500, cfg.GetD("traffico_raggio", 2500))) };
             traffic.SpotClicked += t => ShowTrafficInfo(t);
             traffic.ListenerClicked += l => { if (lblTrafficInfo != null) lblTrafficInfo.Text = l.Info; };
-            Grid.SetColumn(traffic, 0); g.Children.Add(traffic);
+            // la mia stazione: riquadro sopra la mappa, in alto a destra, dove la mappa ha spazio libero (richiesta
+            // dell'autore, 14/11/2026: prima era in cima alla colonna destra)
+            Grid mapHost = new Grid();
+            mapHost.Children.Add(traffic);
+            Control myBox = BuildMyStationBox();
+            myBox.HorizontalAlignment = HorizontalAlignment.Right; myBox.VerticalAlignment = VerticalAlignment.Top;
+            myBox.Margin = new Thickness(0, 8, 10, 0);
+            mapHost.Children.Add(myBox);
+            Grid.SetColumn(mapHost, 0); g.Children.Add(mapHost);
 
             StackPanel side = new StackPanel { Spacing = 6, Margin = new Thickness(10, 8, 10, 8) };
-            side.Children.Add(BuildMyStationBox());
             side.Children.Add(new TextBlock { Text = Lang.T("Traffico meteor scatter in diretta"), FontSize = 17, FontWeight = FontWeight.Bold, Foreground = Pal.B(Pal.Azure) });
             side.Children.Add(new TextBlock
             {
@@ -126,7 +133,7 @@ namespace YAMS
             ShowTrafficInfo(null);
         }
 
-        // riquadro "La mia stazione" in cima alla colonna destra (prima era la prima riga dei comandi)
+        // riquadro "La mia stazione" sopra la mappa del Traffico in diretta, in alto a destra (prima era la prima riga dei comandi)
         Control BuildMyStationBox()
         {
             WrapPanel w1 = new WrapPanel { Orientation = Orientation.Horizontal };
@@ -142,7 +149,7 @@ namespace YAMS
             return new Border
             {
                 Background = Pal.B(Pal.Panel2), BorderBrush = Pal.B(Pal.Red), BorderThickness = new Thickness(1),
-                CornerRadius = new CornerRadius(8), Padding = new Thickness(8, 6), Margin = new Thickness(0, 0, 0, 4), Child = sp
+                CornerRadius = new CornerRadius(8), Padding = new Thickness(8, 6), Child = sp, MaxWidth = 300
             };
         }
 

@@ -83,12 +83,20 @@ namespace YAMS
             sldTrafficRadius = new Slider { Minimum = 600, Maximum = 3500, Value = traffic.RadiusKm, Width = 220, VerticalAlignment = VerticalAlignment.Center };
             lblTrafficRadius = new TextBlock { VerticalAlignment = VerticalAlignment.Center, FontWeight = FontWeight.SemiBold, Foreground = Pal.B(Pal.Fore) };
             sldTrafficRadius.ValueChanged += (s, e) => { traffic.RadiusKm = Math.Round(sldTrafficRadius.Value / 50) * 50; RefreshTraffic(true); };
-            side.Children.Add(Row(L(Lang.T("Raggio della mappa")), sldTrafficRadius, lblTrafficRadius));
+            // raggio e proiezione: riquadro sopra la mappa, in basso a destra (richiesta dell'autore, 14/11/2026)
+            StackPanel mapOpts = new StackPanel { Spacing = 2 };
+            mapOpts.Children.Add(Row(L(Lang.T("Raggio della mappa")), sldTrafficRadius, lblTrafficRadius));
             ComboBox cmbProj = new ComboBox { ItemsSource = new[] { Lang.T("azimutale (centrata sulla mia stazione)"), Lang.T("Mercatore") }, MinWidth = 220, VerticalAlignment = VerticalAlignment.Center };
             traffic.Mercator = cfg.GetB("traffico_mercatore", false);
             cmbProj.SelectedIndex = traffic.Mercator ? 1 : 0;
             cmbProj.SelectionChanged += (s, e) => { traffic.Mercator = cmbProj.SelectedIndex == 1; cfg.Set("traffico_mercatore", traffic.Mercator); RefreshTraffic(true); };
-            side.Children.Add(Row(L(Lang.T("Proiezione della mappa")), cmbProj));
+            mapOpts.Children.Add(Row(L(Lang.T("Proiezione della mappa")), cmbProj));
+            mapHost.Children.Add(new Border
+            {
+                Background = Pal.B(Pal.Panel2), BorderBrush = Pal.B(Pal.Border), BorderThickness = new Thickness(1),
+                CornerRadius = new CornerRadius(8), Padding = new Thickness(4), Child = mapOpts,
+                HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(0, 0, 10, 8)
+            });
             List<string> wn = new List<string>();
             foreach (int m in TrafficMinutes) wn.Add(m < 60 ? Lang.F("ultimi {0} minuti", m) : m == 60 ? Lang.T("ultima ora") : m < 1440 ? Lang.F("ultime {0} ore", m / 60) : Lang.T("ultime 24 ore"));
             cmbTrafficWindow = new ComboBox { ItemsSource = wn, MinWidth = 170, VerticalAlignment = VerticalAlignment.Center };

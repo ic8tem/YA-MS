@@ -40,6 +40,12 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.9
+  - CALL3: le ricerche dei locator su G7VRD si fanno in automatico ogni 6 ore (in gruppi di 40 nominativi).
+  - Le correzioni (voci a mano, cluster, file aggiunti, G7VRD, locatori imparati) si scrivono anche dentro
+    data/call3.txt, alla chiusura del programma e ogni 6 ore; dopo un aggiornamento da MMMonVHF si riapplicano.
+  - Le correzioni di LIVETROPOVHF non sono piu' nel codice del programma: sono scritte in data/call3.txt.
+
 NOVITA' DELLA 1.8.8
   - CALL3: ultima fonte G7VRD come in LIVETROPOVHF (api.g7vrd.co.uk, solo locatori a 6 caratteri nello stesso
     quadrato, al massimo 40 nominativi al minuto, ognuno una volta al giorno; risultati in data/CALL3-G7VRD.TXT).

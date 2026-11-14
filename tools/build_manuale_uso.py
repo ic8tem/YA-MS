@@ -24,7 +24,7 @@ def T(t):
     return TRD[t]
 
 TITLE = "Manuale d'uso di YA-MS"
-SUB = "Versione 1.8.9 - a cura di Costantino IC8TEM - novembre 2026"
+SUB = "Versione 1.8.10 - a cura di Costantino IC8TEM - novembre 2026"
 
 B = []
 h1 = lambda t: B.append(("h1", T(t))); h2 = lambda t: B.append(("h2", T(t))); p = lambda t: B.append(("p", T(t)))
@@ -59,7 +59,7 @@ p("All'avvio compare per pochi secondi la schermata con le Perseidi sopra il VLT
 h2("2.3 La cartella data")
 p("Tutte le impostazioni e tutti i dati stanno in un'unica cartella data accanto al programma: niente AppData, niente cartelle di sistema. Per spostare YA-MS su un altro computer basta copiare la cartella del programma con la sua cartella data. Il contenuto della cartella è descritto nel capitolo 13.")
 h2("2.4 Aggiornamenti automatici")
-p("Dalla versione 1.8.9 gli aggiornamenti sono automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'è una versione nuova, la scarica, la installa e si riavvia da solo senza chiedere nulla (lo dice solo la barra di stato). Anche i file mancanti si riscaricano senza chiedere. La finestra descritta qui sotto compare solo premendo \"Aggiornamenti\" oppure se scrivi aggiornamenti_automatici=0 nel file data/config.ini.")
+p("Dalla versione 1.8.10 gli aggiornamenti sono automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'è una versione nuova, la scarica, la installa e si riavvia da solo senza chiedere nulla (lo dice solo la barra di stato). Anche i file mancanti si riscaricano senza chiedere. La finestra descritta qui sotto compare solo premendo \"Aggiornamenti\" oppure se scrivi aggiornamenti_automatici=0 nel file data/config.ini.")
 p("Dalla versione 1.8.0 YA-MS controlla da solo su GitHub, all'avvio e al massimo una volta al giorno, se è uscita una versione nuova. Se c'è, compare la finestra \"Aggiornamento disponibile\" con le novità e tre pulsanti:")
 li("Aggiorna adesso: scarica il pacchetto adatto al tuo sistema, sostituisce i file del programma, tiene la cartella data e riavvia YA-MS. I file del programma nella cartella data che la nuova versione cambia vengono prima copiati in data/backup/v<versione vecchia>; i tuoi file (impostazioni, archivi, spot, ADIF) non vengono toccati.")
 li("Più tardi: chiude la finestra; il controllo si ripete il giorno dopo.")
@@ -226,6 +226,7 @@ li("La ricostruzione cronologica del giorno e il dettaglio dei prossimi secondi.
 tag("PROCEDURA", "Per ascoltare GRAVES: USB su 143,049 MHz (tono a circa 1 kHz), AGC lento o spento, banda audio di almeno 2,4 kHz; antenna verso l'hot spot consigliato della scheda TRATTA, a bassa elevazione; orologio del PC sincronizzato. I ping sono brevi righe vicino alla portante nel waterfall.")
 h2("9.4 Raccolta dati")
 p("Raccoglie gli spot meteor scatter da tre flussi telnet (DX cluster, RBN, DM4X con gli spot di PSKReporter) e dal flusso MQTT di PSKReporter, ognuno nella sua sotto-linguetta, e li filtra.")
+p("Come in LIVETROPOVHF: il programma ascolta i messaggi UDP del programma digitale (in WSJT-X: Impostazioni, Reporting, UDP Server 127.0.0.1 porta 2237) e li ripete identici sulla porta di inoltro per gli altri programmi (GridTracker, JTAlert, log). Ogni stazione decodificata diventa uno spot sentito dalla tua stazione; i messaggi di chiusura (RR73, 73, RRR) tra due altre stazioni diventano la tratta del loro QSO. Gli spot passano dagli stessi filtri degli altri.")
 li("Scrivi in alto il tuo nominativo per il login. Ogni flusso ha host, porta, comandi dopo il login, Riconnetti, Connetti all'avvio e una console.")
 li("Il filtro accetta gli spot nelle frequenze tipiche del meteor scatter (50190-50300, 70100-70400, 144290-144399 kHz) o con un modo MS (MSK144, FSK441, PSK2K, JTMS, JT6M, <MS>), e scarta quelli che dichiarano un'altra propagazione. Finestre e parole si possono modificare; ognuna ha il suo contatore.")
 li("Gli spot CW si scartano subito (CW o WPM nel commento, oppure 28000-28070 kHz): non compaiono nella console e non si memorizzano, salvo quelli segnati <MS>. La casella si può spegnere.")

@@ -16,6 +16,7 @@
 | **2. RBN** | telnet.reversebeacon.net : 7001 | Reverse Beacon Network（7000 = CW/RTTY，7001 = FT8）。Skimmer 很少能解码 MS 模式。 |
 | **3. DM4X (PSKReporter)** | dm4x.ddns.net : 8500 | DM4X 的 cluster，转发 **PSKReporter** 的 spot：WSJT-X 和 MSHV 的 MSK144 解码结果会出现在这里。 |
 | **4. PSKReporter MQTT** | mqtt.pskreporter.info : 1883 | 通过 **MQTT** 获取的 PSKReporter 实时 spot（M0LTE 提供的服务）：无需登录，每条 spot 已带有发射台和接收台的网格坐标。默认主题：6 m、4 m、2 m、1.25 m、70 cm 上的 MSK144 以及 2 m 上的 FSK441（`pskr/filter/v2/band/mode/#`）；*默认主题*可将其恢复。 |
+| **5. 通过 UDP 的 WSJT-X / JTDX / MSHV** | 127.0.0.1 : 2237 → 2238 | 与 LIVETROPOVHF 相同：程序监听数字模式程序的 UDP 消息（在 WSJT-X 中：设置、Reporting、UDP Server 127.0.0.1 端口 2237），并原样转发到转发端口，供其他程序使用（GridTracker、JTAlert、日志）。每个解码出的电台都成为你的电台收到的报告；另外两个电台之间的结束消息（RR73、73、RRR）成为它们 QSO 的路径。这些报告与其他报告经过相同的过滤。 |
 | **已收集的 MS spot** | – | 已接受的 spot 表格，最新的在前。 |
 
 每路数据流都有主机、端口、登录后发送的命令、*重新连接*、*启动时连接*、一个控制台以及一行用于发送命令的输入框。请在顶部填写**登录呼号**。MQTT 数据源有主机、端口、主题（每行一个或用 `;` 分隔）、*重新连接*和*启动时连接*（默认关闭），以及一个显示已接收 spot 的控制台；其 spot 同样经过该过滤器。一条状态栏显示四个数据源的状态（绿点 = 已连接）。更改语言或配色方案时，会话保持打开。

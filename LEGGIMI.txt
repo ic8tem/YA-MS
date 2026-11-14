@@ -40,6 +40,12 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.10
+  - Raccolta dati: quinta fonte WSJT-X / JTDX / MSHV via UDP, come in LIVETROPOVHF (porta 2237, anche multicast;
+    i pacchetti si ripetono identici sulla 2238 per GridTracker, JTAlert, log). Ogni stazione decodificata diventa uno
+    spot sentito dalla propria stazione; i messaggi RR73, 73, RRR tra due altre stazioni diventano la tratta del QSO.
+    Un solo ricevitore per tutto il programma, e per tutto E-LAYER ANALYZER.
+
 NOVITA' DELLA 1.8.9
   - CALL3: le ricerche dei locator su G7VRD si fanno in automatico ogni 6 ore (in gruppi di 40 nominativi).
   - Le correzioni (voci a mano, cluster, file aggiunti, G7VRD, locatori imparati) si scrivono anche dentro

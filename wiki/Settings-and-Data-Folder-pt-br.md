@@ -14,7 +14,7 @@ Na extremidade direita da barra de abas, da direita para a esquerda:
 |---|---|
 | **Idioma** (lista) | Idioma da interface; veja [Idioma](#idioma) |
 | **Tema** (lista) | Esquema de cores; veja [Esquemas de cores](#esquemas-de-cores) |
-| **Comandos ▴ / ▾** | Oculta ou mostra as três linhas de comandos acima das abas; veja [Fonte e Comandos](#fonte-e-comandos) |
+| **Comandos ▴ / ▾** | Oculta ou mostra as duas linhas de comandos acima das abas; veja [Fonte e Comandos](#fonte-e-comandos) |
 
 Ao mudar o idioma ou o tema as configurações são salvas e **a janela é reconstruída** na mesma posição e tamanho, na mesma aba: não é preciso reiniciar.
 
@@ -82,7 +82,7 @@ O esquema se aplica a todas as abas e é salvo em `config.ini` (chave `tema`).
 ## Fonte e Comandos
 
 - **Fonte** (Configurações): amplia **todo o texto** de **85 a 140 %** em passos de 5 %; linhas, círculos e mapas mantêm o tamanho. Com fonte grande as abas passam para uma segunda linha e os cartões crescem.
-- **Comandos**: com fonte grande ou uma tela pequena, oculte as três linhas de comandos para deixar espaço para mapas e gráficos. A escolha fica memorizada.
+- **Comandos**: com fonte grande ou uma tela pequena, oculte as duas linhas de comandos para deixar espaço para mapas e gráficos. A escolha fica memorizada.
 
 ## Pasta de dados
 

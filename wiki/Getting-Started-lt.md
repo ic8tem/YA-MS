@@ -4,11 +4,11 @@
 
 Pirmą kartą paleista YA-MS rodo pavyzdinę trasą (JN70CN → JO62QM, 144 MHz). Penkių minučių pakanka pritaikyti ją savo stočiai.
 
-## 1. Trys valdymo eilutės
+## 1. Dvi valdymo eilutės
 
-Virš kortelių yra trys valdymo eilutės, galiojančios visoms kortelėms. Mygtukas **Valdymas** viršuje dešinėje jas suskleidžia ir išskleidžia (naudinga su dideliu šriftu); pasirinkimas įsimenamas.
+Virš kortelių yra dvi valdymo eilutės, galiojančios visoms kortelėms. Mygtukas **Valdymas** viršuje dešinėje jas suskleidžia ir išskleidžia (naudinga su dideliu šriftu); pasirinkimas įsimenamas. Jūsų stotis (lokatorius, aukštis, juosta ir Skaičiuoti) yra viršuje dešinėje kortelėje Tiesioginis srautas.
 
-**1 eilutė – stotys ir juosta**
+**Mano stotis – Eismas tiesiogiai**
 
 | Valdiklis | Ką daro |
 |---|---|
@@ -18,7 +18,7 @@ Virš kortelių yra trys valdymo eilutės, galiojančios visoms kortelėms. Mygt
 | **Skaičiuoti** | Iš naujo apskaičiuoja trasą (E sluoksnio diskretizavimas: kelios sekundės). |
 | **Antenos az** | Korespondento langelio viršuje, šalia žemėlapio: jūsų antenos azimutas, visada **į DX** (trasos azimutas). Žemiau, tame pačiame stulpelyje, yra žemėlapio legenda. |
 
-**2 eilutė – E sluoksnis ir antena**
+**1 eilutė – E sluoksnis ir antena**
 
 | Valdiklis | Ką daro |
 |---|---|
@@ -27,7 +27,7 @@ Virš kortelių yra trys valdymo eilutės, galiojančios visoms kortelėms. Mygt
 | **Yagi antena: strėlė m** | Jūsų Yagi strėlės ilgis. Programa rodo ilgį λ, stiprinimą (DL6WU kreivė) ir −3 dB lapelį horizontalioje ir vertikalioje plokštumoje; žr. [Geometrija ir slopinimas](Geometry-and-Path-Loss-lt#antenos-stiprinimas-ir-lapelis). Žemiau 2 λ įvertis apytikslis. |
 | **Hot spot nuo vidurio taško km** + **auto (AMS)** | Hot A ir Hot B atstumas nuo vidurio taško. Pažymėjus *auto (AMS)* (numatytasis), jis atitinka J. Richardson (AMS) antenos nuokrypių lentelę, kurią cituoja DJ5HG: 13° ties 1000 km, 11° ties 1250 km, 10° ties 1500 ir 2000 km (maždaug 115, 121, 132 ir 176 km nuo vidurio taško). Nuimkite žymę, kad įvestumėte 30–400 km ranka (MSHV naudoja 150 km). |
 
-**3 eilutė – laikas**
+**2 eilutė – laikas**
 
 | Valdiklis | Ką daro |
 |---|---|

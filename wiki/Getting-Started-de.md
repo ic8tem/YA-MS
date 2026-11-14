@@ -4,11 +4,11 @@
 
 Beim ersten Start zeigt YA-MS eine Beispielstrecke (JN70CN → JO62QM auf 144 MHz). Fünf Minuten reichen, um es für deine Station einzurichten.
 
-## 1. Die drei Bedienzeilen
+## 1. Die zwei Bedienzeilen
 
-Über den Reitern liegen drei Bedienzeilen, die für alle Reiter gelten. Die Schaltfläche **Bedienung** oben rechts klappt sie ein und aus (nützlich bei großer Schrift); die Wahl wird gespeichert.
+Über den Reitern liegen zwei Bedienzeilen, die für alle Reiter gelten. Die Schaltfläche **Bedienung** oben rechts klappt sie ein und aus (nützlich bei großer Schrift); die Wahl wird gespeichert. Deine Station (Locator, Höhe, Band und Berechnen) steht oben rechts im Live-Verkehr.
 
-**Zeile 1 – Stationen und Band**
+**Meine Station – Verkehr live**
 
 | Bedienelement | Was es tut |
 |---|---|
@@ -18,7 +18,7 @@ Beim ersten Start zeigt YA-MS eine Beispielstrecke (JN70CN → JO62QM auf 144 MH
 | **Berechnen** | Berechnet die Strecke neu (Abtastung der E-Schicht: wenige Sekunden). |
 | **Antennen-Az.** | Oben im Feld der Gegenstation, neben der Karte: Azimut deiner Antenne, immer **Richtung DX** (Azimut der Strecke). Darunter, in derselben Spalte, steht die Kartenlegende. |
 
-**Zeile 2 – E-Schicht und Antenne**
+**Zeile 1 – E-Schicht und Antenne**
 
 | Bedienelement | Was es tut |
 |---|---|
@@ -27,7 +27,7 @@ Beim ersten Start zeigt YA-MS eine Beispielstrecke (JN70CN → JO62QM auf 144 MH
 | **Yagi: Boomlänge m** | Boomlänge deiner Yagi. Das Programm zeigt die Länge in λ, den Gewinn (DL6WU-Kurve) und den Öffnungswinkel (−3 dB) horizontal und vertikal; siehe [Geometrie und Dämpfung](Geometry-and-Path-Loss-de#antennengewinn-und-keule). Unter 2 λ ist die Schätzung ungenau. |
 | **Hot-Spot ab Mittelpunkt km** + **auto (AMS)** | Abstand von Hot A und Hot B vom Mittelpunkt. Mit angekreuztem *auto (AMS)* (Standard) folgt er der von DJ5HG zitierten Tabelle der Antennenablage von J. Richardson (AMS): 13° bei 1000 km, 11° bei 1250 km, 10° bei 1500 und 2000 km (etwa 115, 121, 132 und 176 km vom Mittelpunkt). Kreuz es nicht an, um 30–400 km von Hand einzugeben (MSHV verwendet 150 km). |
 
-**Zeile 3 – Zeit**
+**Zeile 2 – Zeit**
 
 | Bedienelement | Was es tut |
 |---|---|

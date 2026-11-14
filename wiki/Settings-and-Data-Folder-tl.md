@@ -14,7 +14,7 @@ Sa kanang dulo ng tab bar, mula kanan pakaliwa:
 |---|---|
 | **Wika** (listahan) | Wika ng interface; tingnan ang [Wika](#wika) |
 | **Tema** (listahan) | Scheme ng kulay; tingnan ang [Mga scheme ng kulay](#mga-scheme-ng-kulay) |
-| **Mga kontrol ▴ / ▾** | Itinitiklop o ibinubuka ang tatlong hanay ng mga kontrol sa itaas ng mga tab; tingnan ang [Font at Mga kontrol](#font-at-mga-kontrol) |
+| **Mga kontrol ▴ / ▾** | Itinitiklop o ibinubuka ang dalawang hanay ng mga kontrol sa itaas ng mga tab; tingnan ang [Font at Mga kontrol](#font-at-mga-kontrol) |
 
 Kapag pinalitan ang wika o tema, sine-save ang mga setting at **muling binubuo ang window** sa parehong posisyon at laki, sa parehong tab: hindi kailangang i-restart.
 
@@ -82,7 +82,7 @@ Inilalapat ang scheme sa lahat ng tab at sine-save sa `config.ini` (key na `tema
 ## Font at Mga kontrol
 
 - **Font** (Mga setting): pinalalaki ang **lahat ng teksto** mula **85 hanggang 140 %** sa mga hakbang na 5 %; hindi nagbabago ang laki ng mga linya, bilog at mapa. Kapag malaki ang font, bumababa sa ikalawang linya ang mga tab at lumalaki ang mga card.
-- **Mga kontrol**: kapag malaki ang font o maliit ang screen, itiklop ang tatlong hanay ng mga kontrol para magkaroon ng puwang ang mga mapa at graph. Natatandaan ang kalagayan.
+- **Mga kontrol**: kapag malaki ang font o maliit ang screen, itiklop ang dalawang hanay ng mga kontrol para magkaroon ng puwang ang mga mapa at graph. Natatandaan ang kalagayan.
 
 ## Folder ng datos
 

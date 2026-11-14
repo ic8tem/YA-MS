@@ -4,11 +4,11 @@
 
 En el primer arranque YA-MS muestra un trayecto de ejemplo (JN70CN → JO62QM en 144 MHz). Bastan cinco minutos para configurarlo para tu estación.
 
-## 1. Las tres filas de controles
+## 1. Las dos filas de controles
 
-Encima de las pestañas hay tres filas de controles, válidas para todas las pestañas. El botón **Controles** arriba a la derecha las pliega y despliega (útil con fuentes grandes); la elección se recuerda.
+Encima de las pestañas hay dos filas de controles, válidas para todas las pestañas. El botón **Controles** arriba a la derecha las pliega y despliega (útil con fuentes grandes); la elección se recuerda. Su estación (locator, altura, banda y Calcular) está arriba a la derecha en Tráfico en directo.
 
-**Fila 1 – estaciones y banda**
+**Mi estación – Tráfico en directo**
 
 | Control | Qué hace |
 |---|---|
@@ -18,7 +18,7 @@ Encima de las pestañas hay tres filas de controles, válidas para todas las pes
 | **Calcular** | Recalcula el trayecto (muestreo de la capa E: unos segundos). |
 | **Antena az** | Arriba en el recuadro del corresponsal, junto al mapa: azimut de su antena, siempre **hacia el DX** (azimut del trayecto). Debajo, en la misma columna, está la leyenda del mapa. |
 
-**Fila 2 – capa E y antena**
+**Fila 1 – capa E y antena**
 
 | Control | Qué hace |
 |---|---|
@@ -27,7 +27,7 @@ Encima de las pestañas hay tres filas de controles, válidas para todas las pes
 | **Antena Yagi: boom m** | Longitud del boom de tu Yagi. El programa muestra la longitud en λ, la ganancia (curva DL6WU) y el lóbulo a −3 dB, horizontal y vertical; ver [Geometría y atenuación](Geometry-and-Path-Loss-es#ganancia-y-lóbulo-de-la-antena). Por debajo de 2 λ la estimación es poco precisa. |
 | **Hot spot desde punto medio km** + **auto (AMS)** | Distancia de Hot A y Hot B al punto medio. Con *auto (AMS)* marcado (por defecto) sigue la tabla de desplazamiento de antena de J. Richardson (AMS) citada por DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 y 2000 km (unos 115, 121, 132 y 176 km del punto medio). Desmárcalo para introducir a mano 30–400 km (MSHV usa 150 km). |
 
-**Fila 3 – hora**
+**Fila 2 – hora**
 
 | Control | Qué hace |
 |---|---|

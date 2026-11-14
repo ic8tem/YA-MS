@@ -14,7 +14,7 @@ At the right end of the tab bar, from right to left:
 |---|---|
 | **Language** (list) | Interface language; see [Language](#language) |
 | **Theme** (list) | Colour scheme; see [Colour schemes](#colour-schemes) |
-| **Controls ▴ / ▾** | Folds or unfolds the three rows of controls above the tabs; see [Font and Controls](#font-and-controls) |
+| **Controls ▴ / ▾** | Folds or unfolds the two rows of controls above the tabs; see [Font and Controls](#font-and-controls) |
 
 Changing language or theme saves the settings and **rebuilds the window** in the same position and size, on the same tab: no restart is needed.
 
@@ -82,7 +82,7 @@ The scheme applies to all tabs and is saved in `config.ini` (key `tema`).
 ## Font and Controls
 
 - **Font** (Settings): enlarges **all the text** from **85 to 140 %** in 5 % steps; lines, circles and maps keep their size. With large fonts the tabs wrap onto a second line and the cards grow.
-- **Controls**: with large fonts or a small screen, fold the three rows of controls to leave room for maps and charts. The state is remembered.
+- **Controls**: with large fonts or a small screen, fold the two rows of controls to leave room for maps and charts. The state is remembered.
 
 ## Data folder
 

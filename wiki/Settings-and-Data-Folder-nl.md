@@ -14,7 +14,7 @@ Aan het rechteruiteinde van de tabbladbalk, van rechts naar links:
 |---|---|
 | **Taal** (lijst) | Taal van de interface; zie [Taal](#taal) |
 | **Kleurenschema** (lijst) | Kleurenschema; zie [Kleurenschema's](#kleurenschemas) |
-| **Bediening ▴ / ▾** | Klapt de drie rijen bedieningselementen boven de tabbladen in of uit; zie [Lettertype en Bediening](#lettertype-en-bediening) |
+| **Bediening ▴ / ▾** | Klapt de twee rijen bedieningselementen boven de tabbladen in of uit; zie [Lettertype en Bediening](#lettertype-en-bediening) |
 
 Als je van taal of kleurenschema wisselt, worden de instellingen opgeslagen en wordt **het venster opnieuw opgebouwd** op dezelfde positie en in dezelfde grootte, op hetzelfde tabblad: opnieuw starten is niet nodig.
 
@@ -82,7 +82,7 @@ Het schema geldt voor alle tabbladen en wordt opgeslagen in `config.ini` (sleute
 ## Lettertype en Bediening
 
 - **Lettertype** (Instellingen): vergroot **alle tekst** van **85 tot 140 %** in stappen van 5 %; lijnen, cirkels en kaarten behouden hun grootte. Met grote lettertypen lopen de tabbladen door op een tweede regel en worden de kaarten groter.
-- **Bediening**: met grote lettertypen of een klein scherm klap je de drie rijen bedieningselementen in om ruimte te maken voor kaarten en grafieken. De toestand wordt onthouden.
+- **Bediening**: met grote lettertypen of een klein scherm klap je de twee rijen bedieningselementen in om ruimte te maken voor kaarten en grafieken. De toestand wordt onthouden.
 
 ## Gegevensmap
 

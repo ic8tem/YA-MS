@@ -14,7 +14,7 @@ Sekme çubuğunun sağ ucunda, sağdan sola:
 |---|---|
 | **Dil** (liste) | Arayüz dili; bkz. [Dil](#dil) |
 | **Tema** (liste) | Renk şeması; bkz. [Renk şemaları](#renk-şemaları) |
-| **Kontroller ▴ / ▾** | Sekmelerin üstündeki üç sıra kontrolü katlar ya da açar; bkz. [Yazı tipi ve Kontroller](#yazı-tipi-ve-kontroller) |
+| **Kontroller ▴ / ▾** | Sekmelerin üstündeki iki sıra kontrolü katlar ya da açar; bkz. [Yazı tipi ve Kontroller](#yazı-tipi-ve-kontroller) |
 
 Dili ya da temayı değiştirmek ayarları kaydeder ve **pencereyi** aynı konum ve boyutta, aynı sekmede **yeniden kurar**: yeniden başlatmak gerekmez.
 
@@ -82,7 +82,7 @@ Dili ya da temayı değiştirmek ayarları kaydeder ve **pencereyi** aynı konum
 ## Yazı tipi ve Kontroller
 
 - **Yazı tipi** (birinci kontrol sırasının sonunda): **tüm metni** %10'luk adımlarla **%100'den %300'e** büyütür; çizgiler, daireler ve haritalar boyutlarını korur. Büyük yazı tiplerinde sekmeler ikinci bir satıra kayar ve kartlar büyür.
-- **Kontroller**: büyük yazı tiplerinde ya da küçük bir ekranda, haritalara ve grafiklere yer açmak için üç sıra kontrolü katlayın. Durum hatırlanır.
+- **Kontroller**: büyük yazı tiplerinde ya da kikiük bir ekranda, haritalara ve grafiklere yer açmak için üç sıra kontrolü katlayın. Durum hatırlanır.
 
 ## Veri klasörü
 

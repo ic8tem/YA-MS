@@ -14,7 +14,7 @@ All'estremità destra della barra delle linguette, da destra verso sinistra:
 |---|---|
 | **Lingua** (elenco) | Lingua dell'interfaccia; vedi [Lingua](#lingua) |
 | **Tema** (elenco) | Schema di colori; vedi [Schemi di colori](#schemi-di-colori) |
-| **Comandi ▴ / ▾** | Ripiega o riapre le tre righe di comandi sopra le linguette; vedi [Carattere e Comandi](#carattere-e-comandi) |
+| **Comandi ▴ / ▾** | Ripiega o riapre le due righe di comandi sopra le linguette; vedi [Carattere e Comandi](#carattere-e-comandi) |
 
 Cambiando lingua o tema le impostazioni vengono salvate e **la finestra viene ricostruita** nella stessa posizione e dimensione, sulla stessa linguetta: non serve riavviare.
 
@@ -82,7 +82,7 @@ Lo schema vale per tutte le linguette ed è salvato in `config.ini` (chiave `tem
 ## Carattere e Comandi
 
 - **Carattere** (Impostazioni): ingrandisce **tutto il testo** dal **85 al 140 %** a passi del 5 %; linee, cerchi e mappe mantengono la loro dimensione. Con caratteri grandi le linguette vanno a capo su una seconda riga e le schede si ingrandiscono.
-- **Comandi**: con caratteri grandi o uno schermo piccolo, ripiega le tre righe di comandi per lasciare spazio a mappe e grafici. Lo stato viene ricordato.
+- **Comandi**: con caratteri grandi o uno schermo piccolo, ripiega le due righe di comandi per lasciare spazio a mappe e grafici. Lo stato viene ricordato.
 
 ## Cartella dei dati
 

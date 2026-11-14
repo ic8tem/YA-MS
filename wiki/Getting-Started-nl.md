@@ -4,11 +4,11 @@
 
 Bij de eerste start toont YA-MS een voorbeeldtraject (JN70CN → JO62QM op 144 MHz). Vijf minuten zijn genoeg om het voor jouw station in te stellen.
 
-## 1. De drie rijen bedieningselementen
+## 1. De twee rijen bedieningselementen
 
-Boven de tabbladen staan drie rijen bedieningselementen die voor alle tabbladen gelden. Met de knop **Bediening** rechtsboven klap je ze in en uit (handig bij grote lettertypen); de keuze wordt onthouden.
+Boven de tabbladen staan twee rijen bedieningselementen die voor alle tabbladen gelden. Met de knop **Bediening** rechtsboven klap je ze in en uit (handig bij grote lettertypen); de keuze wordt onthouden. Je station (locator, hoogte, band en Berekenen) staat rechtsboven in Live verkeer.
 
-**Rij 1 – stations en band**
+**Mijn station – Verkeer live**
 
 | Element | Wat het doet |
 |---|---|
@@ -18,7 +18,7 @@ Boven de tabbladen staan drie rijen bedieningselementen die voor alle tabbladen 
 | **Bereken** | Berekent het traject opnieuw (bemonstering van de E-laag: enkele seconden). |
 | **Antenne az** | Bovenaan het vak van het tegenstation, naast de kaart: azimut van je antenne, altijd **naar de DX** (azimut van het pad). Daaronder, in dezelfde kolom, staat de kaartlegenda. |
 
-**Rij 2 – E-laag en antenne**
+**Rij 1 – E-laag en antenne**
 
 | Element | Wat het doet |
 |---|---|
@@ -27,7 +27,7 @@ Boven de tabbladen staan drie rijen bedieningselementen die voor alle tabbladen 
 | **Yagi-antenne: boom m** | Boomlengte van je Yagi. Het programma toont de lengte in λ, de winst (DL6WU-curve) en de −3 dB-bundel, horizontaal en verticaal; zie [Geometrie en demping](Geometry-and-Path-Loss-nl#antennewinst-en-bundel). Onder 2 λ is de schatting onnauwkeurig. |
 | **Hotspot vanaf middelpunt km** + **auto (AMS)** | Afstand van Hot A en Hot B tot het middelpunt. Met *auto (AMS)* aangevinkt (standaard) volgt die de tabel met antenne-afwijkingen van J. Richardson (AMS), aangehaald door DJ5HG: 13° bij 1000 km, 11° bij 1250 km, 10° bij 1500 en 2000 km (ongeveer 115, 121, 132 en 176 km van het middelpunt). Vink het uit om 30–400 km met de hand in te voeren (MSHV gebruikt 150 km). |
 
-**Rij 3 – tijd**
+**Rij 2 – tijd**
 
 | Element | Wat het doet |
 |---|---|

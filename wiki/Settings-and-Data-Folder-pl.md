@@ -14,7 +14,7 @@ Na prawym końcu paska zakładek, od prawej do lewej:
 |---|---|
 | **Język** (lista) | Język interfejsu; zob. [Język](#język) |
 | **Motyw** (lista) | Schemat kolorów; zob. [Schematy kolorów](#schematy-kolorów) |
-| **Sterowanie ▴ / ▾** | Zwija lub rozwija trzy wiersze elementów sterujących nad zakładkami; zob. [Czcionka i Sterowanie](#czcionka-i-sterowanie) |
+| **Sterowanie ▴ / ▾** | Zwija lub rozwija dwa wiersze elementów sterujących nad zakładkami; zob. [Czcionka i Sterowanie](#czcionka-i-sterowanie) |
 
 Zmiana języka lub motywu zapisuje ustawienia i **odbudowuje okno** w tym samym położeniu i rozmiarze, na tej samej zakładce: ponowne uruchomienie nie jest potrzebne.
 
@@ -82,7 +82,7 @@ Schemat dotyczy wszystkich zakładek i jest zapisywany w `config.ini` (klucz `te
 ## Czcionka i Sterowanie
 
 - **Czcionka** (Ustawienia): powiększa **cały tekst** od **85 do 140 %** w krokach co 5 %; linie, okręgi i mapy zachowują swój rozmiar. Przy dużych czcionkach zakładki przechodzą do drugiego wiersza, a karty się powiększają.
-- **Sterowanie**: przy dużych czcionkach lub małym ekranie zwiń trzy wiersze elementów sterujących, aby zostawić miejsce na mapy i wykresy. Stan jest zapamiętywany.
+- **Sterowanie**: przy dużych czcionkach lub małym ekranie zwiń dwa wiersze elementów sterujących, aby zostawić miejsce na mapy i wykresy. Stan jest zapamiętywany.
 
 ## Folder danych
 

@@ -4,11 +4,11 @@
 
 Ved første oppstart viser YA-MS en eksempelstrekning (JN70CN → JO62QM på 144 MHz). Fem minutter er nok til å stille det inn for din stasjon.
 
-## 1. De tre radene med kontroller
+## 1. De to radene med kontroller
 
-Over fanene er det tre rader med kontroller som gjelder for alle fanene. Knappen **Kontroller** øverst til høyre felder dem sammen og ut (nyttig med store skrifter); valget huskes.
+Over fanene er det to rader med kontroller som gjelder for alle fanene. Knappen **Kontroller** øverst til høyre felder dem sammen og ut (nyttig med store skrifter); valget huskes. Stasjonen din (lokator, høyde, bånd og Beregn) står øverst til høyre i Trafikk i sanntid.
 
-**Rad 1 – stasjoner og bånd**
+**Min stasjon – Trafikk direkte**
 
 | Kontroll | Hva den gjør |
 |---|---|
@@ -18,7 +18,7 @@ Over fanene er det tre rader med kontroller som gjelder for alle fanene. Knappen
 | **Beregn** | Beregner strekningen på nytt (sampling av E-laget: noen sekunder). |
 | **Antenne az** | Øverst i motstasjonens boks, ved siden av kartet: asimut for antennen din, alltid **mot DX** (strekningens asimut). Under, i samme kolonne, står kartforklaringen. |
 
-**Rad 2 – E-laget og antenne**
+**Rad 1 – E-laget og antenne**
 
 | Kontroll | Hva den gjør |
 |---|---|
@@ -27,7 +27,7 @@ Over fanene er det tre rader med kontroller som gjelder for alle fanene. Knappen
 | **Yagi-antenne: bom m** | Bomlengden på Yagien din. Programmet viser lengden i λ, forsterkningen (DL6WU-kurven) og −3 dB-loben, horisontalt og vertikalt; se [Geometri og demping](Geometry-and-Path-Loss-nb#antenneforsterkning-og-lobe). Under 2 λ er estimatet grovt. |
 | **Hot spot fra midtpunkt km** + **auto (AMS)** | Avstanden fra Hot A og Hot B til midtpunktet. Med *auto (AMS)* avkrysset (standard) følger den tabellen over antenneforskyvning av J. Richardson (AMS) som DJ5HG siterer: 13° ved 1000 km, 11° ved 1250 km, 10° ved 1500 og 2000 km (ca. 115, 121, 132 og 176 km fra midtpunktet). Fjern avkrysningen for å legge inn 30–400 km for hånd (MSHV bruker 150 km). |
 
-**Rad 3 – tid**
+**Rad 2 – tid**
 
 | Kontroll | Hva den gjør |
 |---|---|

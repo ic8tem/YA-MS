@@ -4,11 +4,11 @@
 
 Sa unang pagsisimula, nagpapakita ang YA-MS ng halimbawang landas (JN70CN → JO62QM sa 144 MHz). Sapat na ang limang minuto para i-set up ito para sa iyong istasyon.
 
-## 1. Ang tatlong hanay ng mga kontrol
+## 1. Ang dalawang hanay ng mga kontrol
 
-Sa itaas ng mga tab ay may tatlong hanay ng mga kontrol, balido para sa lahat ng tab. Itinitiklop at ibinubuka ang mga ito ng button na **Mga kontrol** sa kanang itaas (kapaki-pakinabang kapag malaki ang font); natatandaan ang pinili.
+Sa itaas ng mga tab ay may dalawang hanay ng mga kontrol, balido para sa lahat ng tab. Itinitiklop at ibinubuka ang mga ito ng button na **Mga kontrol** sa kanang itaas (kapaki-pakinabang kapag malaki ang font); natatandaan ang pinili. Nasa kanang itaas ng Live na trapiko ang iyong istasyon (locator, taas, banda at Kalkulahin).
 
-**Hanay 1 – mga istasyon at banda**
+**Ang istasyon ko – Live na trapiko**
 
 | Kontrol | Ano ang ginagawa |
 |---|---|
@@ -18,7 +18,7 @@ Sa itaas ng mga tab ay may tatlong hanay ng mga kontrol, balido para sa lahat ng
 | **Kalkulahin** | Muling kinakalkula ang landas (pag-sample ng E layer: ilang segundo). |
 | **Antenna az** | Sa itaas ng kahon ng kausap, sa tabi ng mapa: azimuth ng iyong antena, laging **patungo sa DX** (azimuth ng daan). Sa ibaba, sa parehong kolum, ang alamat ng mapa. |
 
-**Hanay 2 – E layer at antenna**
+**Hanay 1 – E layer at antenna**
 
 | Kontrol | Ano ang ginagawa |
 |---|---|
@@ -27,7 +27,7 @@ Sa itaas ng mga tab ay may tatlong hanay ng mga kontrol, balido para sa lahat ng
 | **Yagi antenna: boom m** | Haba ng boom ng iyong Yagi. Ipinapakita ng programa ang haba sa λ, ang gain (kurba ng DL6WU) at ang −3 dB na lobe, pahalang at patayo; tingnan ang [Heometriya at path loss](Geometry-and-Path-Loss-tl#gain-at-lobe-ng-antenna). Sa ilalim ng 2 λ, magaspang ang tantiya. |
 | **Hot spot mula sa gitnang punto km** + **auto (AMS)** | Distansiya ng Hot A at Hot B mula sa gitnang punto. Kapag may tsek ang *auto (AMS)* (default), sinusunod nito ang talahanayan ng offset ng antenna ni J. Richardson (AMS) na sinipi ni DJ5HG: 13° sa 1000 km, 11° sa 1250 km, 10° sa 1500 at 2000 km (mga 115, 121, 132 at 176 km mula sa gitnang punto). Alisin ang tsek para mano-manong ilagay ang 30–400 km (150 km ang ginagamit ng MSHV). |
 
-**Hanay 3 – oras**
+**Hanay 2 – oras**
 
 | Kontrol | Ano ang ginagawa |
 |---|---|

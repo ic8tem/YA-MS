@@ -14,7 +14,7 @@ L'onglet Paramètres regroupe le fonctionnement général du programme : Apparen
 |---|---|
 | **Langue** (liste) | Langue de l'interface ; voir [Langue](#langue) |
 | **Thème** (liste) | Schéma de couleurs ; voir [Schémas de couleurs](#schémas-de-couleurs) |
-| **Commandes ▴ / ▾** | Replie ou déplie les trois rangées de commandes au-dessus des onglets ; voir [Police et Commandes](#police-et-commandes) |
+| **Commandes ▴ / ▾** | Replie ou déplie les deux rangées de commandes au-dessus des onglets ; voir [Police et Commandes](#police-et-commandes) |
 
 Changer de langue ou de thème enregistre les réglages et **reconstruit la fenêtre** à la même position et à la même taille, sur le même onglet : inutile de redémarrer.
 
@@ -82,7 +82,7 @@ Le schéma s'applique à tous les onglets et est enregistré dans `config.ini` (
 ## Police et Commandes
 
 - **Police** (Paramètres) : agrandit **tout le texte** de **85 à 140 %** par pas de 5 % ; les traits, les cercles et les cartes gardent leur taille. Avec de grandes polices, les onglets passent sur une deuxième ligne et les cartes de synthèse s'agrandissent.
-- **Commandes** : avec de grandes polices ou un petit écran, repliez les trois rangées de commandes pour laisser de la place aux cartes et aux graphiques. L'état est mémorisé.
+- **Commandes** : avec de grandes polices ou un petit écran, repliez les deux rangées de commandes pour laisser de la place aux cartes et aux graphiques. L'état est mémorisé.
 
 ## Dossier des données
 

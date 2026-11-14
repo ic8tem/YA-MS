@@ -14,7 +14,7 @@ La capătul din dreapta al barei de file, de la dreapta la stânga:
 |---|---|
 | **Limba** (listă) | Limba interfeței; vedeți [Limba](#limba) |
 | **Temă** (listă) | Schema de culori; vedeți [Scheme de culori](#scheme-de-culori) |
-| **Comenzi ▴ / ▾** | Pliază sau desfășoară cele trei rânduri de comenzi de deasupra filelor; vedeți [Font și comenzi](#font-și-comenzi) |
+| **Comenzi ▴ / ▾** | Pliază sau desfășoară cele două rânduri de comenzi de deasupra filelor; vedeți [Font și comenzi](#font-și-comenzi) |
 
 Schimbarea limbii sau a temei salvează setările și **reconstruiește fereastra** în aceeași poziție și la aceeași dimensiune, pe aceeași filă: nu este nevoie de repornire.
 
@@ -82,7 +82,7 @@ Schema se aplică tuturor filelor și este salvată în `config.ini` (cheia `tem
 ## Font și comenzi
 
 - **Font** (Setări): mărește **întregul text** de la **85 la 140 %** în pași de 5 %; liniile, cercurile și hărțile își păstrează dimensiunea. Cu fonturi mari, filele trec pe un al doilea rând, iar cardurile cresc.
-- **Comenzi**: cu fonturi mari sau un ecran mic, pliați cele trei rânduri de comenzi pentru a lăsa loc hărților și graficelor. Starea este memorată.
+- **Comenzi**: cu fonturi mari sau un ecran mic, pliați cele două rânduri de comenzi pentru a lăsa loc hărților și graficelor. Starea este memorată.
 
 ## Dosarul de date
 

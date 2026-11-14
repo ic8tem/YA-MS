@@ -4,11 +4,11 @@
 
 Við fyrstu ræsingu sýnir YA-MS dæmi um leið (JN70CN → JO62QM á 144 MHz). Fimm mínútur nægja til að stilla það fyrir þína stöð.
 
-## 1. Þrjár raðir stýringa
+## 1. Tvær raðir stýringa
 
-Fyrir ofan flipana eru þrjár raðir stýringa sem gilda fyrir alla flipa. Hnappurinn **Stýringar** efst til hægri fellir þær saman og opnar aftur (hentugt með stóru letri); valið er munað.
+Fyrir ofan flipana eru tvær raðir stýringa sem gilda fyrir alla flipa. Hnappurinn **Stýringar** efst til hægri fellir þær saman og opnar aftur (hentugt með stóru letri); valið er munað. Stöðin þín (reitur, hæð, band og Reikna) er efst til hægri í Umferð í rauntíma.
 
-**Röð 1 – stöðvar og tíðnisvið**
+**Stöðin mín – Umferð í beinni**
 
 | Stýring | Hvað hún gerir |
 |---|---|
@@ -18,7 +18,7 @@ Fyrir ofan flipana eru þrjár raðir stýringa sem gilda fyrir alla flipa. Hnap
 | **Reikna** | Reiknar leiðina upp á nýtt (úrtak úr E-laginu: nokkrar sekúndur). |
 | **Loftnet az** | Efst í reit mótstöðvarinnar, við hlið kortsins: stefna loftnetsins þíns, alltaf **að DX** (stefna leiðarinnar). Fyrir neðan, í sama dálki, er skýring kortsins. |
 
-**Röð 2 – E-lagið og loftnetið**
+**Röð 1 – E-lagið og loftnetið**
 
 | Stýring | Hvað hún gerir |
 |---|---|
@@ -27,7 +27,7 @@ Fyrir ofan flipana eru þrjár raðir stýringa sem gilda fyrir alla flipa. Hnap
 | **Yagi-loftnet: bóma m** | Lengd bómunnar á Yagi-loftnetinu þínu. Forritið sýnir lengdina í λ, mögnunina (DL6WU-ferillinn) og −3 dB geislann, láréttan og lóðréttan; sjá [Rúmfræði og deyfing](Geometry-and-Path-Loss-is#loftnetsmögnun-og-geisli). Undir 2 λ er matið gróft. |
 | **Heitur blettur frá miðpunkti km** + **auto (AMS)** | Fjarlægð Hot A og Hot B frá miðpunktinum. Þegar hakað er við *auto (AMS)* (sjálfgefið) fylgir hún töflu J. Richardsons (AMS) um frávik loftnets, sem DJ5HG vitnar í: 13° við 1000 km, 11° við 1250 km, 10° við 1500 og 2000 km (um 115, 121, 132 og 176 km frá miðpunktinum). Taktu hakið af til að slá inn 30–400 km handvirkt (MSHV notar 150 km). |
 
-**Röð 3 – tími**
+**Röð 2 – tími**
 
 | Stýring | Hvað hún gerir |
 |---|---|

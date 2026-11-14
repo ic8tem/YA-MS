@@ -4,11 +4,11 @@
 
 İlk açılışta YA-MS örnek bir yol gösterir (144 MHz'de JN70CN → JO62QM). Programı istasyonunuza göre ayarlamak için beş dakika yeterlidir.
 
-## 1. Üç sıra kontrol
+## 1. İki sıra kontrol
 
-Sekmelerin üstünde, tüm sekmeler için geçerli üç sıra kontrol vardır. Sağ üstteki **Kontroller** düğmesi bunları katlar ve açar (büyük yazı tiplerinde işe yarar); seçim hatırlanır.
+Sekmelerin üstünde, tüm sekmeler için geçerli iki sıra kontrol vardır. Sağ üstteki **Kontroller** düğmesi bunları katlar ve açar (büyük yazı tiplerinde işe yarar); seçim hatırlanır. İstasyonunuz (lokatör, yükseklik, bant ve Hesapla) Canlı trafik sekmesinin sağ üstündedir.
 
-**1. sıra – istasyonlar ve bant**
+**Benim istasyonum – Canlı trafik**
 
 | Kontrol | Ne yapar |
 |---|---|

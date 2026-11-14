@@ -4,11 +4,11 @@
 
 By die eerste opstart wys YA-MS 'n voorbeeldpad (JN70CN → JO62QM op 144 MHz). Vyf minute is genoeg om dit vir jou stasie op te stel.
 
-## 1. Die drie rye kontroles
+## 1. Die twee rye kontroles
 
-Bo die oortjies is daar drie rye kontroles, geldig vir al die oortjies. Die knoppie **Kontroles** regs bo vou hulle weg en weer oop (nuttig met groot lettertipes); die keuse word onthou.
+Bo die oortjies is daar twee rye kontroles, geldig vir al die oortjies. Die knoppie **Kontroles** regs bo vou hulle weg en weer oop (nuttig met groot lettertipes); die keuse word onthou. Jou stasie (lokator, hoogte, band en Bereken) is regs bo in Regstreekse verkeer.
 
-**Ry 1 – stasies en band**
+**My stasie – Regstreekse verkeer**
 
 | Kontrole | Wat dit doen |
 |---|---|
@@ -18,7 +18,7 @@ Bo die oortjies is daar drie rye kontroles, geldig vir al die oortjies. Die knop
 | **Bereken** | Bereken die pad oor (monsterneming van die E-laag: 'n paar sekondes). |
 | **Antenna az** | Bo in die korrespondent se blokkie, langs die kaart: azimut van jou antenna, altyd **na die DX** (azimut van die pad). Daaronder, in dieselfde kolom, is die kaartsleutel. |
 
-**Ry 2 – E-laag en antenna**
+**Ry 1 – E-laag en antenna**
 
 | Kontrole | Wat dit doen |
 |---|---|
@@ -27,7 +27,7 @@ Bo die oortjies is daar drie rye kontroles, geldig vir al die oortjies. Die knop
 | **Yagi-antenna: boom m** | Boomlengte van jou Yagi. Die program wys die lengte in λ, die wins (DL6WU-kurwe) en die −3 dB-lob, horisontaal en vertikaal; sien [Geometrie en padverlies](Geometry-and-Path-Loss-af#wins-en-lob-van-die-antenna). Onder 2 λ is die skatting rof. |
 | **Hot spot vanaf middelpunt km** + **auto (AMS)** | Afstand van Hot A en Hot B vanaf die middelpunt. Met *auto (AMS)* gemerk (verstek) volg dit die antennaverskuiwingstabel van J. Richardson (AMS) wat DJ5HG aanhaal: 13° by 1000 km, 11° by 1250 km, 10° by 1500 en 2000 km (ongeveer 115, 121, 132 en 176 km vanaf die middelpunt). Ontmerk dit om 30–400 km met die hand in te voer (MSHV gebruik 150 km). |
 
-**Ry 3 – tyd**
+**Ry 2 – tyd**
 
 | Kontrole | Wat dit doen |
 |---|---|

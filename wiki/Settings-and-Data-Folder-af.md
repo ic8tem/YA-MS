@@ -14,7 +14,7 @@ Aan die regterkant van die oortjiebalk, van regs na links:
 |---|---|
 | **Taal** (lys) | Koppelvlaktaal; sien [Taal](#taal) |
 | **Tema** (lys) | Kleurskema; sien [Kleurskemas](#kleurskemas) |
-| **Kontroles ▴ / ▾** | Vou die drie rye kontroles bo die oortjies weg of oop; sien [Lettertipe en Kontroles](#lettertipe-en-kontroles) |
+| **Kontroles ▴ / ▾** | Vou die twee rye kontroles bo die oortjies weg of oop; sien [Lettertipe en Kontroles](#lettertipe-en-kontroles) |
 
 As jy die taal of tema verander, word die instellings gestoor en die **venster herbou** in dieselfde posisie en grootte, op dieselfde oortjie: geen herbegin is nodig nie.
 
@@ -82,7 +82,7 @@ Die skema geld vir al die oortjies en word in `config.ini` gestoor (sleutel `tem
 ## Lettertipe en Kontroles
 
 - **Lettertipe** (Instellings): vergroot **al die teks** van **85 tot 140 %** in stappe van 5 %; lyne, sirkels en kaarte behou hul grootte. Met groot lettertipes loop die oortjies oor na 'n tweede reël en word die kaarte groter.
-- **Kontroles**: met groot lettertipes of 'n klein skerm, vou die drie rye kontroles weg om plek te maak vir kaarte en grafieke. Die toestand word onthou.
+- **Kontroles**: met groot lettertipes of 'n klein skerm, vou die twee rye kontroles weg om plek te maak vir kaarte en grafieke. Die toestand word onthou.
 
 ## Datagids
 

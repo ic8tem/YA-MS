@@ -4,11 +4,11 @@
 
 Przy pierwszym uruchomieniu YA-MS pokazuje przykładową trasę (JN70CN → JO62QM na 144 MHz). Pięć minut wystarczy, aby skonfigurować program dla twojej stacji.
 
-## 1. Trzy wiersze elementów sterujących
+## 1. Dwa wiersze elementów sterujących
 
-Nad zakładkami znajdują się trzy wiersze elementów sterujących, wspólne dla wszystkich zakładek. Przycisk **Sterowanie** w prawym górnym rogu zwija je i rozwija (przydatne przy dużych czcionkach); wybór jest zapamiętywany.
+Nad zakładkami znajdują się dwa wiersze elementów sterujących, wspólne dla wszystkich zakładek. Przycisk **Sterowanie** w prawym górnym rogu zwija je i rozwija (przydatne przy dużych czcionkach); wybór jest zapamiętywany. Twoja stacja (lokator, wysokość, pasmo i Oblicz) jest w prawym górnym rogu karty Ruch na żywo.
 
-**Wiersz 1 – stacje i pasmo**
+**Moja stacja – Ruch na żywo**
 
 | Element | Działanie |
 |---|---|
@@ -18,7 +18,7 @@ Nad zakładkami znajdują się trzy wiersze elementów sterujących, wspólne dl
 | **Oblicz** | Przelicza trasę (próbkowanie warstwy E: kilka sekund). |
 | **Az anteny** | Na górze ramki korespondenta, obok mapy: azymut twojej anteny, zawsze **na DX** (azymut trasy). Poniżej, w tej samej kolumnie, jest legenda mapy. |
 
-**Wiersz 2 – warstwa E i antena**
+**Wiersz 1 – warstwa E i antena**
 
 | Element | Działanie |
 |---|---|
@@ -27,7 +27,7 @@ Nad zakładkami znajdują się trzy wiersze elementów sterujących, wspólne dl
 | **Antena Yagi: boom m** | Długość boomu twojej anteny Yagi. Program pokazuje długość w λ, zysk (krzywa DL6WU) i listek −3 dB, poziomy i pionowy; zob. [Geometria i tłumienie trasy](Geometry-and-Path-Loss-pl#zysk-i-listek-anteny). Poniżej 2 λ szacunek jest przybliżony. |
 | **Hot spot od punktu środkowego km** + **auto (AMS)** | Odległość Hot A i Hot B od punktu środkowego. Przy zaznaczonym *auto (AMS)* (domyślnie) wynika z tabeli odchyleń anteny J. Richardsona (AMS) przytoczonej przez DJ5HG: 13° przy 1000 km, 11° przy 1250 km, 10° przy 1500 i 2000 km (około 115, 121, 132 i 176 km od punktu środkowego). Odznacz, aby wpisać ręcznie 30–400 km (MSHV używa 150 km). |
 
-**Wiersz 3 – czas**
+**Wiersz 2 – czas**
 
 | Element | Działanie |
 |---|---|

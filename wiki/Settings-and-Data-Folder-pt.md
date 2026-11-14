@@ -14,7 +14,7 @@ Na extremidade direita da barra de separadores, da direita para a esquerda:
 |---|---|
 | **Idioma** (lista) | Idioma da interface; ver [Idioma](#idioma) |
 | **Tema** (lista) | Esquema de cores; ver [Esquemas de cores](#esquemas-de-cores) |
-| **Comandos ▴ / ▾** | Recolhe ou mostra as três filas de comandos por cima dos separadores; ver [Tipo de letra e Comandos](#tipo-de-letra-e-comandos) |
+| **Comandos ▴ / ▾** | Recolhe ou mostra as duas filas de comandos por cima dos separadores; ver [Tipo de letra e Comandos](#tipo-de-letra-e-comandos) |
 
 Ao mudar o idioma ou o tema as definições são guardadas e **a janela é reconstruída** na mesma posição e tamanho, no mesmo separador: não é preciso reiniciar.
 
@@ -82,7 +82,7 @@ O esquema aplica-se a todos os separadores e é guardado em `config.ini` (chave 
 ## Tipo de letra e Comandos
 
 - **Tipo de letra** (Definições): amplia **todo o texto** de **85 a 140 %** em passos de 5 %; linhas, círculos e mapas mantêm o tamanho. Com letra grande os separadores passam para uma segunda linha e os cartões crescem.
-- **Comandos**: com letra grande ou um ecrã pequeno, recolha as três filas de comandos para deixar espaço a mapas e gráficos. O estado fica memorizado.
+- **Comandos**: com letra grande ou um ecrã pequeno, recolha as duas filas de comandos para deixar espaço a mapas e gráficos. O estado fica memorizado.
 
 ## Pasta de dados
 

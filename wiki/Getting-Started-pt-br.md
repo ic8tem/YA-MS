@@ -4,11 +4,11 @@
 
 Na primeira inicialização o YA-MS mostra um percurso de exemplo (JN70CN → JO62QM nos 144 MHz). Bastam cinco minutos para configurá-lo para a sua estação.
 
-## 1. As três linhas de comandos
+## 1. As duas linhas de comandos
 
-Acima das abas há três linhas de comandos, válidas para todas as abas. O botão **Comandos** no canto superior direito as oculta e as mostra (útil com fonte grande); a escolha fica memorizada.
+Acima das abas há duas linhas de comandos, válidas para todas as abas. O botão **Comandos** no canto superior direito as oculta e as mostra (útil com fonte grande); a escolha fica memorizada. Sua estação (locator, altitude, banda e Calcular) fica no alto à direita em Tráfego ao vivo.
 
-**Linha 1 – estações e banda**
+**Minha estação – Tráfego ao vivo**
 
 | Comando | O que faz |
 |---|---|
@@ -18,7 +18,7 @@ Acima das abas há três linhas de comandos, válidas para todas as abas. O bot�
 | **Calcular** | Recalcula o percurso (amostragem da camada E: alguns segundos). |
 | **Antena az** | No alto do quadro do correspondente, ao lado do mapa: azimute da sua antena, sempre **para o DX** (azimute do percurso). Embaixo, na mesma coluna, fica a legenda do mapa. |
 
-**Linha 2 – camada E e antena**
+**Linha 1 – camada E e antena**
 
 | Comando | O que faz |
 |---|---|
@@ -27,7 +27,7 @@ Acima das abas há três linhas de comandos, válidas para todas as abas. O bot�
 | **Antena Yagi: boom m** | Comprimento do boom da sua Yagi. O programa mostra o comprimento em λ, o ganho (curva DL6WU) e o lóbulo a −3 dB, horizontal e vertical; veja [Geometria e atenuação](Geometry-and-Path-Loss-pt-br#ganho-e-lóbulo-da-antena). Abaixo de 2 λ a estimativa é pouco precisa. |
 | **Hot spot desde o ponto médio km** + **auto (AMS)** | Distância de Hot A e Hot B ao ponto médio. Com *auto (AMS)* marcado (padrão) segue a tabela de desvio da antena de J. Richardson (AMS) citada por DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km (cerca de 115, 121, 132 e 176 km do ponto médio). Desmarque-o para digitar 30–400 km manualmente (o MSHV usa 150 km). |
 
-**Linha 3 – hora**
+**Linha 2 – hora**
 
 | Comando | O que faz |
 |---|---|

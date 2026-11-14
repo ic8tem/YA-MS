@@ -14,7 +14,7 @@ I højre ende af fanelinjen, fra højre mod venstre:
 |---|---|
 | **Sprog** (liste) | Brugerfladens sprog; se [Sprog](#sprog) |
 | **Tema** (liste) | Farveskema; se [Farveskemaer](#farveskemaer) |
-| **Betjening ▴ / ▾** | Folder de tre rækker betjeningselementer over fanerne sammen eller ud; se [Skrifttype og Betjening](#skrifttype-og-betjening) |
+| **Betjening ▴ / ▾** | Folder de to rækker betjeningselementer over fanerne sammen eller ud; se [Skrifttype og Betjening](#skrifttype-og-betjening) |
 
 Når du skifter sprog eller tema, gemmes indstillingerne, og **vinduet genopbygges** i samme position og størrelse på samme fane: ingen genstart er nødvendig.
 
@@ -82,7 +82,7 @@ Skemaet gælder for alle faner og gemmes i `config.ini` (nøglen `tema`).
 ## Skrifttype og Betjening
 
 - **Skrifttype** (Indstillinger): forstørrer **al tekst** fra **85 til 140 %** i trin på 5 %; linjer, cirkler og kort beholder deres størrelse. Med store skrifttyper brydes fanerne over på en ekstra linje, og boksene vokser.
-- **Betjening**: med store skrifttyper eller en lille skærm kan du folde de tre rækker betjeningselementer sammen for at give plads til kort og grafer. Tilstanden huskes.
+- **Betjening**: med store skrifttyper eller en lille skærm kan du folde de to rækker betjeningselementer sammen for at give plads til kort og grafer. Tilstanden huskes.
 
 ## Datamappe
 

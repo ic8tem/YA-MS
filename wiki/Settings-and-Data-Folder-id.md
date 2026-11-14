@@ -14,7 +14,7 @@ Di ujung kanan bilah tab, dari kanan ke kiri:
 |---|---|
 | **Bahasa** (daftar) | Bahasa antarmuka; lihat [Bahasa](#bahasa) |
 | **Tema** (daftar) | Skema warna; lihat [Skema warna](#skema-warna) |
-| **Kontrol ▴ / ▾** | Melipat atau membuka tiga baris kontrol di atas tab; lihat [Huruf dan Kontrol](#huruf-dan-kontrol) |
+| **Kontrol ▴ / ▾** | Melipat atau membuka dua baris kontrol di atas tab; lihat [Huruf dan Kontrol](#huruf-dan-kontrol) |
 
 Mengganti bahasa atau tema akan menyimpan pengaturan dan **membangun ulang jendela** pada posisi dan ukuran yang sama, di tab yang sama: tidak perlu memulai ulang.
 
@@ -82,7 +82,7 @@ Skema berlaku untuk semua tab dan disimpan di `config.ini` (kunci `tema`).
 ## Huruf dan Kontrol
 
 - **Huruf** (Pengaturan): memperbesar **seluruh teks** dari **85 hingga 140 %** dengan langkah 5 %; garis, lingkaran dan peta tetap berukuran sama. Dengan huruf besar, tab berpindah ke baris kedua dan kartu membesar.
-- **Kontrol**: dengan huruf besar atau layar kecil, lipat ketiga baris kontrol untuk memberi ruang bagi peta dan grafik. Keadaannya diingat.
+- **Kontrol**: dengan huruf besar atau layar kecil, lipat kedua baris kontrol untuk memberi ruang bagi peta dan grafik. Keadaannya diingat.
 
 ## Folder data
 

@@ -14,7 +14,7 @@ Am rechten Ende der Reiterleiste, von rechts nach links:
 |---|---|
 | **Sprache der Oberfläche** (Liste) | Sprache der Oberfläche; siehe [Sprache](#sprache) |
 | **Farbschema** (Liste) | Farbschema; siehe [Farbschemata](#farbschemata) |
-| **Bedienung ▴ / ▾** | Klappt die drei Bedienzeilen über den Reitern ein oder aus; siehe [Schrift und Bedienung](#schrift-und-bedienung) |
+| **Bedienung ▴ / ▾** | Klappt die zwei Bedienzeilen über den Reitern ein oder aus; siehe [Schrift und Bedienung](#schrift-und-bedienung) |
 
 Ein Wechsel von Sprache oder Farbschema speichert die Einstellungen und **baut das Fenster neu auf**, in gleicher Position und Größe, auf demselben Reiter: Ein Neustart ist nicht nötig.
 
@@ -82,7 +82,7 @@ Das Schema gilt für alle Reiter und wird in `config.ini` gespeichert (Schlüsse
 ## Schrift und Bedienung
 
 - **Schrift** (Einstellungen): vergrößert **den gesamten Text** von **85 auf 140 %** in Schritten von 5 %; Linien, Kreise und Karten behalten ihre Größe. Bei großer Schrift brechen die Reiter in eine zweite Zeile um und die Karten werden größer.
-- **Bedienung**: Bei großer Schrift oder kleinem Bildschirm klappst du die drei Bedienzeilen ein, um Platz für Karten und Diagramme zu schaffen. Der Zustand wird gespeichert.
+- **Bedienung**: Bei großer Schrift oder kleinem Bildschirm klappst du die zwei Bedienzeilen ein, um Platz für Karten und Diagramme zu schaffen. Der Zustand wird gespeichert.
 
 ## Datenordner
 

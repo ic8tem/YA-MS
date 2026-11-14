@@ -4,11 +4,11 @@
 
 Pirmajā palaišanā YA-MS rāda trases piemēru (JN70CN → JO62QM 144 MHz joslā). Ar piecām minūtēm pietiek, lai to iestatītu savai stacijai.
 
-## 1. Trīs vadības rindas
+## 1. Divas vadības rindas
 
-Virs cilnēm ir trīs vadības rindas, kas attiecas uz visām cilnēm. Poga **Vadība** augšā pa labi tās sakļauj un izvērš (noderīgi ar lieliem fontiem); izvēle tiek atcerēta.
+Virs cilnēm ir divas vadības rindas, kas attiecas uz visām cilnēm. Poga **Vadība** augšā pa labi tās sakļauj un izvērš (noderīgi ar lieliem fontiem); izvēle tiek atcerēta. Tava stacija (lokators, augstums, josla un Aprēķināt) ir augšā pa labi cilnē Satiksme tiešsaistē.
 
-**1. rinda – stacijas un josla**
+**Mana stacija – Satiksme tiešraidē**
 
 | Vadīkla | Ko tā dara |
 |---|---|

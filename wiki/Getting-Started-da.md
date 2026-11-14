@@ -4,11 +4,11 @@
 
 Ved første opstart viser YA-MS en eksempelstrækning (JN70CN → JO62QM på 144 MHz). Fem minutter er nok til at indstille det til din station.
 
-## 1. De tre rækker betjeningselementer
+## 1. De to rækker betjeningselementer
 
-Over fanerne er der tre rækker betjeningselementer, som gælder for alle faner. Knappen **Betjening** øverst til højre folder dem sammen og ud (nyttigt med store skrifttyper); valget huskes.
+Over fanerne er der to rækker betjeningselementer, som gælder for alle faner. Knappen **Betjening** øverst til højre folder dem sammen og ud (nyttigt med store skrifttyper); valget huskes. Din station (locator, højde, bånd og Beregn) står øverst til højre i Trafik i realtid.
 
-**Række 1 – stationer og bånd**
+**Min station – Live-trafik**
 
 | Element | Hvad det gør |
 |---|---|
@@ -18,7 +18,7 @@ Over fanerne er der tre rækker betjeningselementer, som gælder for alle faner.
 | **Beregn** | Genberegner strækningen (sampling af E-laget: nogle sekunder). |
 | **Antenne az** | Øverst i modstationens felt, ved siden af kortet: azimut for din antenne, altid **mod DX** (strækningens azimut). Nedenunder, i samme kolonne, står kortforklaringen. |
 
-**Række 2 – E-laget og antenne**
+**Række 1 – E-laget og antenne**
 
 | Element | Hvad det gør |
 |---|---|
@@ -27,7 +27,7 @@ Over fanerne er der tre rækker betjeningselementer, som gælder for alle faner.
 | **Yagi-antenne: bom m** | Bomlængden på din Yagi. Programmet viser længden i λ, forstærkningen (DL6WU-kurven) og −3 dB-lappen, vandret og lodret; se [Geometri og dæmpning](Geometry-and-Path-Loss-da#antenneforstærkning-og-lap). Under 2 λ er vurderingen grov. |
 | **Hot spot fra midtpunkt km** + **auto (AMS)** | Afstanden fra Hot A og Hot B til midtpunktet. Med flueben i *auto (AMS)* (standard) følger den tabellen over antenneforskydning af J. Richardson (AMS), som DJ5HG citerer: 13° ved 1000 km, 11° ved 1250 km, 10° ved 1500 og 2000 km (ca. 115, 121, 132 og 176 km fra midtpunktet). Fjern fluebenet for at indtaste 30–400 km manuelt (MSHV bruger 150 km). |
 
-**Række 3 – tid**
+**Række 2 – tid**
 
 | Element | Hvad det gør |
 |---|---|

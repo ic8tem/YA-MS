@@ -4,11 +4,11 @@
 
 Při prvním spuštění zobrazí YA-MS ukázkovou trasu (JN70CN → JO62QM na 144 MHz). Na nastavení pro vaši stanici stačí pět minut.
 
-## 1. Tři řady ovládacích prvků
+## 1. Dva řady ovládacích prvků
 
-Nad kartami jsou tři řady ovládacích prvků, které platí pro všechny karty. Tlačítko **Ovládání** vpravo nahoře je skryje a znovu zobrazí (užitečné při velkém písmu); volba se pamatuje.
+Nad kartami jsou dva řady ovládacích prvků, které platí pro všechny karty. Tlačítko **Ovládání** vpravo nahoře je skryje a znovu zobrazí (užitečné při velkém písmu); volba se pamatuje. Vaše stanice (lokátor, výška, pásmo a Vypočítat) je vpravo nahoře na záložce Provoz živě.
 
-**Řada 1 – stanice a pásmo**
+**Moje stanice – Provoz živě**
 
 | Ovládací prvek | Co dělá |
 |---|---|
@@ -18,7 +18,7 @@ Nad kartami jsou tři řady ovládacích prvků, které platí pro všechny kart
 | **Vypočítat** | Přepočítá trasu (vzorkování vrstvy E: několik sekund). |
 | **Az antény** | Nahoře v rámečku protistanice, vedle mapy: azimut vaší antény, vždy **na DX** (azimut trasy). Pod ním, ve stejném sloupci, je legenda mapy. |
 
-**Řada 2 – vrstva E a anténa**
+**Řada 1 – vrstva E a anténa**
 
 | Ovládací prvek | Co dělá |
 |---|---|
@@ -27,7 +27,7 @@ Nad kartami jsou tři řady ovládacích prvků, které platí pro všechny kart
 | **Anténa Yagi: ráhno m** | Délka ráhna vaší Yagi. Program zobrazí délku v λ, zisk (křivka DL6WU) a lalok −3 dB, vodorovný i svislý; viz [Geometrie a útlum](Geometry-and-Path-Loss-cs#zisk-a-lalok-antény). Pod 2 λ je odhad hrubý. |
 | **Hot spot od středu trasy km** + **auto (AMS)** | Vzdálenost Hot A a Hot B od středu trasy. Při zaškrtnutí *auto (AMS)* (výchozí) se řídí tabulkou odklonu antény od J. Richardsona (AMS), kterou cituje DJ5HG: 13° při 1000 km, 11° při 1250 km, 10° při 1500 a 2000 km (asi 115, 121, 132 a 176 km od středu). Po zrušení zaškrtnutí zadáte ručně 30–400 km (MSHV používá 150 km). |
 
-**Řada 3 – čas**
+**Řada 2 – čas**
 
 | Ovládací prvek | Co dělá |
 |---|---|

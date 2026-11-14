@@ -4,11 +4,11 @@
 
 At the first start YA-MS shows an example path (JN70CN → JO62QM on 144 MHz). Five minutes are enough to set it up for your station.
 
-## 1. The three rows of controls
+## 1. The two rows of controls
 
-Above the tabs there are three rows of controls, valid for all tabs. The **Controls** button at the top right folds and unfolds them (useful with large fonts); the choice is remembered.
+Above the tabs there are two rows of controls, valid for all tabs. The **Controls** button at the top right folds and unfolds them (useful with large fonts); the choice is remembered. Your station (locator, height, band and Calculate) is at the top right of Live traffic.
 
-**Row 1 – stations and band**
+**My station – Live traffic**
 
 | Control | What it does |
 |---|---|
@@ -18,7 +18,7 @@ Above the tabs there are three rows of controls, valid for all tabs. The **Contr
 | **Calculate** | Recomputes the path (sampling of the E layer: a few seconds). |
 | **Antenna az** | At the top of the correspondent box, next to the map: azimuth of your antenna, always **towards the DX** (azimuth of the path). The map legend is below, in the same column. |
 
-**Row 2 – E layer and antenna**
+**Row 1 – E layer and antenna**
 
 | Control | What it does |
 |---|---|
@@ -27,7 +27,7 @@ Above the tabs there are three rows of controls, valid for all tabs. The **Contr
 | **Yagi antenna: boom m** | Boom length of your Yagi. The program shows the length in λ, the gain (DL6WU curve) and the −3 dB lobe, horizontal and vertical; see [Geometry and path loss](Geometry-and-Path-Loss#antenna-gain-and-lobe). Below 2 λ the estimate is rough. |
 | **Hot spot from midpoint km** + **auto (AMS)** | Distance of Hot A and Hot B from the midpoint. With *auto (AMS)* ticked (default) it follows the antenna-offset table by J. Richardson (AMS) quoted by DJ5HG: 13° at 1000 km, 11° at 1250 km, 10° at 1500 and 2000 km (about 115, 121, 132 and 176 km from the midpoint). Untick it to enter 30–400 km by hand (MSHV uses 150 km). |
 
-**Row 3 – time**
+**Row 2 – time**
 
 | Control | What it does |
 |---|---|

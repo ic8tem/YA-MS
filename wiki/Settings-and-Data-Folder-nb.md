@@ -14,7 +14,7 @@ I høyre ende av fanelinjen, fra høyre mot venstre:
 |---|---|
 | **Språk** (liste) | Grensesnittspråk; se [Språk](#språk) |
 | **Tema** (liste) | Fargeskjema; se [Fargeskjemaer](#fargeskjemaer) |
-| **Kontroller ▴ / ▾** | Felder sammen eller ut de tre radene med kontroller over fanene; se [Skrift og Kontroller](#skrift-og-kontroller) |
+| **Kontroller ▴ / ▾** | Felder sammen eller ut de to radene med kontroller over fanene; se [Skrift og Kontroller](#skrift-og-kontroller) |
 
 Når du bytter språk eller tema, lagres innstillingene, og **vinduet bygges opp på nytt** i samme posisjon og størrelse, på samme fane: ingen omstart trengs.
 
@@ -82,7 +82,7 @@ Skjemaet gjelder alle faner og lagres i `config.ini` (nøkkelen `tema`).
 ## Skrift og Kontroller
 
 - **Skrift** (Innstillinger): forstørrer **all tekst** fra **85 til 140 %** i steg på 5 %; linjer, sirkler og kart beholder størrelsen. Med store skrifter brytes fanene over på en ekstra linje, og panelene vokser.
-- **Kontroller**: med store skrifter eller en liten skjerm kan du felle sammen de tre radene med kontroller for å gi plass til kart og diagrammer. Tilstanden huskes.
+- **Kontroller**: med store skrifter eller en liten skjerm kan du felle sammen de to radene med kontroller for å gi plass til kart og diagrammer. Tilstanden huskes.
 
 ## Datamappe
 

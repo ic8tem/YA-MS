@@ -4,11 +4,11 @@
 
 Al primo avvio YA-MS mostra una tratta di esempio (JN70CN → JO62QM su 144 MHz). Bastano cinque minuti per impostarlo per la tua stazione.
 
-## 1. Le tre righe di comandi
+## 1. Le due righe di comandi
 
-Sopra le linguette ci sono tre righe di comandi, valide per tutte le linguette. Il pulsante **Comandi** in alto a destra le ripiega e le riapre (utile con i caratteri grandi); la scelta viene ricordata.
+Sopra le linguette ci sono due righe di comandi, valide per tutte le linguette. Il pulsante **Comandi** in alto a destra le ripiega e le riapre (utile con i caratteri grandi); la scelta viene ricordata. La tua stazione (locator, quota, banda e Calcola) sta in alto a destra nel Traffico in diretta.
 
-**Riga 1 – stazioni e banda**
+**La mia stazione – Traffico in diretta**
 
 | Comando | Che cosa fa |
 |---|---|
@@ -18,7 +18,7 @@ Sopra le linguette ci sono tre righe di comandi, valide per tutte le linguette. 
 | **Calcola** | Ricalcola la tratta (campionamento dello strato E: qualche secondo). |
 | **Antenna az** | In alto nel riquadro del corrispondente, accanto alla mappa: azimut della tua antenna, sempre **verso il DX** (azimut della tratta). Sotto, nella stessa colonna, c'è la legenda della mappa. |
 
-**Riga 2 – strato E e antenna**
+**Riga 1 – strato E e antenna**
 
 | Comando | Che cosa fa |
 |---|---|
@@ -27,7 +27,7 @@ Sopra le linguette ci sono tre righe di comandi, valide per tutte le linguette. 
 | **Antenna Yagi: boom m** | Lunghezza del boom della tua Yagi. Il programma mostra la lunghezza in λ, il guadagno (curva DL6WU) e il lobo a −3 dB, orizzontale e verticale; vedi [Geometria e attenuazione](Geometry-and-Path-Loss-it#guadagno-e-lobo-dellantenna). Sotto 2 λ la stima è poco precisa. |
 | **Hot spot dal punto medio km** + **auto (AMS)** | Distanza di Hot A e Hot B dal punto medio. Con *auto (AMS)* spuntato (predefinito) segue la tabella degli scostamenti d'antenna di J. Richardson (AMS) citata da DJ5HG: 13° a 1000 km, 11° a 1250 km, 10° a 1500 e 2000 km (circa 115, 121, 132 e 176 km dal punto medio). Togli la spunta per inserire a mano 30–400 km (MSHV usa 150 km). |
 
-**Riga 3 – ora**
+**Riga 2 – ora**
 
 | Comando | Che cosa fa |
 |---|---|

@@ -4,11 +4,11 @@
 
 Vid första starten visar YA-MS en exempelsträcka (JN70CN → JO62QM på 144 MHz). Fem minuter räcker för att ställa in det för din station.
 
-## 1. De tre raderna med reglage
+## 1. De två raderna med reglage
 
-Ovanför flikarna finns tre rader med reglage som gäller för alla flikar. Knappen **Reglage** uppe till höger fäller ihop och fäller ut dem (praktiskt med stora typsnitt); valet sparas.
+Ovanför flikarna finns två rader med reglage som gäller för alla flikar. Knappen **Reglage** uppe till höger fäller ihop och fäller ut dem (praktiskt med stora typsnitt); valet sparas. Din station (lokator, höjd, band och Beräkna) finns uppe till höger i Trafik i realtid.
 
-**Rad 1 – stationer och band**
+**Min station – Trafik live**
 
 | Reglage | Vad det gör |
 |---|---|
@@ -18,7 +18,7 @@ Ovanför flikarna finns tre rader med reglage som gäller för alla flikar. Knap
 | **Beräkna** | Beräknar sträckan på nytt (sampling av E-skiktet: några sekunder). |
 | **Antenn az** | Överst i motstationens ruta, bredvid kartan: din antenns azimut, alltid **mot DX** (sträckans azimut). Under, i samma kolumn, finns kartans förklaring. |
 
-**Rad 2 – E-skiktet och antennen**
+**Rad 1 – E-skiktet och antennen**
 
 | Reglage | Vad det gör |
 |---|---|
@@ -27,7 +27,7 @@ Ovanför flikarna finns tre rader med reglage som gäller för alla flikar. Knap
 | **Yagiantenn: bom m** | Bomlängden på din yagi. Programmet visar längden i λ, förstärkningen (DL6WU-kurvan) och −3 dB-loben, horisontellt och vertikalt; se [Geometri och dämpning](Geometry-and-Path-Loss-sv#antennförstärkning-och-lob). Under 2 λ är uppskattningen grov. |
 | **Hot spot från mittpunkt km** + **auto (AMS)** | Avståndet från mittpunkten till Hot A och Hot B. Med *auto (AMS)* ikryssat (standard) följer det tabellen över antennförskjutning av J. Richardson (AMS) som DJ5HG citerar: 13° vid 1000 km, 11° vid 1250 km, 10° vid 1500 och 2000 km (omkring 115, 121, 132 och 176 km från mittpunkten). Kryssa ur för att ange 30–400 km för hand (MSHV använder 150 km). |
 
-**Rad 3 – tid**
+**Rad 2 – tid**
 
 | Reglage | Vad det gör |
 |---|---|

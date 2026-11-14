@@ -4,11 +4,11 @@
 
 Au premier démarrage, YA-MS affiche un trajet d'exemple (JN70CN → JO62QM sur 144 MHz). Cinq minutes suffisent pour le configurer pour votre station.
 
-## 1. Les trois rangées de commandes
+## 1. Les deux rangées de commandes
 
-Au-dessus des onglets se trouvent trois rangées de commandes, valables pour tous les onglets. Le bouton **Commandes** en haut à droite les replie et les déplie (pratique avec de grandes polices) ; le choix est mémorisé.
+Au-dessus des onglets se trouvent deux rangées de commandes, valables pour tous les onglets. Le bouton **Commandes** en haut à droite les replie et les déplie (pratique avec de grandes polices) ; le choix est mémorisé. Votre station (locator, altitude, bande et Calculer) est en haut à droite du Trafic en direct.
 
-**Rangée 1 – stations et bande**
+**Ma station – Trafic en direct**
 
 | Commande | Rôle |
 |---|---|
@@ -18,7 +18,7 @@ Au-dessus des onglets se trouvent trois rangées de commandes, valables pour tou
 | **Calculer** | Recalcule le trajet (échantillonnage de la couche E : quelques secondes). |
 | **Antenne az** | En haut du cadre du correspondant, à côté de la carte : azimut de votre antenne, toujours **vers le DX** (azimut du trajet). La légende de la carte est en dessous, dans la même colonne. |
 
-**Rangée 2 – couche E et antenne**
+**Rangée 1 – couche E et antenne**
 
 | Commande | Rôle |
 |---|---|
@@ -27,7 +27,7 @@ Au-dessus des onglets se trouvent trois rangées de commandes, valables pour tou
 | **Antenne Yagi : boom m** | Longueur du boom de votre Yagi. Le programme affiche la longueur en λ, le gain (courbe DL6WU) et le lobe à −3 dB, horizontal et vertical ; voir [Géométrie et affaiblissement](Geometry-and-Path-Loss-fr#gain-et-lobe-de-lantenne). Sous 2 λ, l'estimation est grossière. |
 | **Hot spot depuis le point milieu km** + **auto (AMS)** | Distance de Hot A et Hot B au point milieu. Avec *auto (AMS)* coché (par défaut), elle suit le tableau des décalages d'antenne de J. Richardson (AMS) cité par DJ5HG : 13° à 1000 km, 11° à 1250 km, 10° à 1500 et 2000 km (environ 115, 121, 132 et 176 km du point milieu). Décochez-le pour saisir 30–400 km à la main (MSHV utilise 150 km). |
 
-**Rangée 3 – heure**
+**Rangée 2 – heure**
 
 | Commande | Rôle |
 |---|---|

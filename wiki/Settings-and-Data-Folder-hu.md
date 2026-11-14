@@ -14,7 +14,7 @@ A fülsor jobb végén, jobbról balra:
 |---|---|
 | **Nyelv** (lista) | A felület nyelve; lásd: [Nyelv](#nyelv) |
 | **Téma** (lista) | Színséma; lásd: [Színsémák](#színsémák) |
-| **Vezérlők ▴ / ▾** | Összecsukja vagy kinyitja a fülek feletti három vezérlősort; lásd: [Betűméret és vezérlők](#betűméret-és-vezérlők) |
+| **Vezérlők ▴ / ▾** | Összecsukja vagy kinyitja a fülek feletti két vezérlősort; lásd: [Betűméret és vezérlők](#betűméret-és-vezérlők) |
 
 A nyelv vagy a téma módosítása elmenti a beállításokat, és **újraépíti az ablakot** ugyanabban a helyzetben és méretben, ugyanazon a fülön: nincs szükség újraindításra.
 
@@ -82,7 +82,7 @@ A séma minden fülre érvényes, és a `config.ini` fájlba mentődik (`tema` k
 ## Betűméret és vezérlők
 
 - **Betűméret** (Beállítások): **az összes szöveget** **85 és 140 %** között nagyítja, 5 %-os lépésekben; a vonalak, körök és térképek megtartják a méretüket. Nagy betűméretnél a fülek második sorba törnek, a kártyák pedig megnőnek.
-- **Vezérlők**: nagy betűméretnél vagy kis képernyőn csukja össze a három vezérlősort, hogy több hely maradjon a térképeknek és grafikonoknak. Az állapotot a program megjegyzi.
+- **Vezérlők**: nagy betűméretnél vagy kis képernyőn csukja össze a két vezérlősort, hogy több hely maradjon a térképeknek és grafikonoknak. Az állapotot a program megjegyzi.
 
 ## Adatmappa
 

@@ -4,11 +4,11 @@
 
 Pada start pertama YA-MS menampilkan lintasan contoh (JN70CN → JO62QM di 144 MHz). Lima menit cukup untuk menyesuaikannya dengan stasiun Anda.
 
-## 1. Tiga baris kontrol
+## 1. Dua baris kontrol
 
-Di atas tab terdapat tiga baris kontrol yang berlaku untuk semua tab. Tombol **Kontrol** di kanan atas melipat dan membukanya (berguna dengan huruf besar); pilihan ini diingat.
+Di atas tab terdapat dua baris kontrol yang berlaku untuk semua tab. Tombol **Kontrol** di kanan atas melipat dan membukanya (berguna dengan huruf besar); pilihan ini diingat. Stasiun Anda (lokator, ketinggian, pita, dan Hitung) ada di kanan atas Lalu lintas langsung.
 
-**Baris 1 – stasiun dan band**
+**Stasiun saya – Lalu lintas langsung**
 
 | Kontrol | Fungsinya |
 |---|---|
@@ -18,7 +18,7 @@ Di atas tab terdapat tiga baris kontrol yang berlaku untuk semua tab. Tombol **K
 | **Hitung** | Menghitung ulang lintasan (pengambilan sampel lapisan E: beberapa detik). |
 | **Az antena** | Di bagian atas kotak koresponden, di samping peta: azimut antena Anda, selalu **ke arah DX** (azimut lintasan). Di bawahnya, di kolom yang sama, ada legenda peta. |
 
-**Baris 2 – lapisan E dan antena**
+**Baris 1 – lapisan E dan antena**
 
 | Kontrol | Fungsinya |
 |---|---|
@@ -27,7 +27,7 @@ Di atas tab terdapat tiga baris kontrol yang berlaku untuk semua tab. Tombol **K
 | **Antena Yagi: boom m** | Panjang boom Yagi Anda. Program menampilkan panjangnya dalam λ, penguatan (kurva DL6WU) dan lobus −3 dB, horizontal dan vertikal; lihat [Geometri dan redaman](Geometry-and-Path-Loss-id#penguatan-dan-lobus-antena). Di bawah 2 λ perkiraannya kasar. |
 | **Hot spot dari titik tengah km** + **auto (AMS)** | Jarak Hot A dan Hot B dari titik tengah. Dengan *auto (AMS)* dicentang (bawaan), jarak mengikuti tabel offset antena J. Richardson (AMS) yang dikutip DJ5HG: 13° pada 1000 km, 11° pada 1250 km, 10° pada 1500 dan 2000 km (sekitar 115, 121, 132, dan 176 km dari titik tengah). Hapus centang untuk memasukkan 30–400 km secara manual (MSHV memakai 150 km). |
 
-**Baris 3 – waktu**
+**Baris 2 – waktu**
 
 | Kontrol | Fungsinya |
 |---|---|

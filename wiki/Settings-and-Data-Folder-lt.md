@@ -14,7 +14,7 @@ Kortelių juostos dešiniajame gale, iš dešinės į kairę:
 |---|---|
 | **Kalba** (sąrašas) | Sąsajos kalba; žr. [Kalba](#kalba) |
 | **Tema** (sąrašas) | Spalvų schema; žr. [Spalvų schemos](#spalvų-schemos) |
-| **Valdymas ▴ / ▾** | Suskleidžia arba išskleidžia tris valdymo eilutes virš kortelių; žr. [Šriftas ir valdymas](#šriftas-ir-valdymas) |
+| **Valdymas ▴ / ▾** | Suskleidžia arba išskleidžia dvi valdymo eilutes virš kortelių; žr. [Šriftas ir valdymas](#šriftas-ir-valdymas) |
 
 Pakeitus kalbą ar temą, nustatymai išsaugomi, o **langas perkuriamas** toje pačioje vietoje ir tokio paties dydžio, toje pačioje kortelėje: paleisti iš naujo nereikia.
 
@@ -82,7 +82,7 @@ Schema taikoma visoms kortelėms ir išsaugoma `config.ini` (raktas `tema`).
 ## Šriftas ir valdymas
 
 - **Šriftas** (Nustatymai): padidina **visą tekstą** nuo **85 iki 140 %** 5 % žingsniais; linijos, apskritimai ir žemėlapiai išlaiko savo dydį. Su dideliu šriftu kortelės persikelia į antrą eilutę, o skydeliai padidėja.
-- **Valdymas**: su dideliu šriftu ar mažu ekranu suskleiskite tris valdymo eilutes, kad liktų vietos žemėlapiams ir grafikams. Būsena įsimenama.
+- **Valdymas**: su dideliu šriftu ar mažu ekranu suskleiskite dvi valdymo eilutes, kad liktų vietos žemėlapiams ir grafikams. Būsena įsimenama.
 
 ## Duomenų aplankas
 

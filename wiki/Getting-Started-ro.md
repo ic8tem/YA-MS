@@ -4,11 +4,11 @@
 
 La prima pornire, YA-MS arată un traseu de exemplu (JN70CN → JO62QM pe 144 MHz). Cinci minute sunt suficiente pentru a-l configura pentru stația dumneavoastră.
 
-## 1. Cele trei rânduri de comenzi
+## 1. Cele două rânduri de comenzi
 
-Deasupra filelor sunt trei rânduri de comenzi, valabile pentru toate filele. Butonul **Comenzi** din dreapta sus le pliază și le desfășoară (util cu fonturi mari); alegerea este memorată.
+Deasupra filelor sunt două rânduri de comenzi, valabile pentru toate filele. Butonul **Comenzi** din dreapta sus le pliază și le desfășoară (util cu fonturi mari); alegerea este memorată. Stația dvs. (locator, altitudine, bandă și Calculează) este în dreapta sus în Trafic în direct.
 
-**Rândul 1 – stații și bandă**
+**Stația mea – Trafic în direct**
 
 | Comandă | Ce face |
 |---|---|
@@ -18,7 +18,7 @@ Deasupra filelor sunt trei rânduri de comenzi, valabile pentru toate filele. Bu
 | **Calculează** | Recalculează traseul (eșantionarea stratului E: câteva secunde). |
 | **Az antenă** | Sus în caseta corespondentului, lângă hartă: azimutul antenei dvs., mereu **spre DX** (azimutul traseului). Dedesubt, în aceeași coloană, este legenda hărții. |
 
-**Rândul 2 – stratul E și antena**
+**Rândul 1 – stratul E și antena**
 
 | Comandă | Ce face |
 |---|---|
@@ -27,7 +27,7 @@ Deasupra filelor sunt trei rânduri de comenzi, valabile pentru toate filele. Bu
 | **Antenă Yagi: boom m** | Lungimea boom-ului antenei Yagi. Programul arată lungimea în λ, câștigul (curba DL6WU) și lobul la −3 dB, orizontal și vertical; vedeți [Geometrie și atenuare pe traseu](Geometry-and-Path-Loss-ro#câștigul-și-lobul-antenei). Sub 2 λ estimarea este aproximativă. |
 | **Hot spot de la punctul median km** + **auto (AMS)** | Distanța lui Hot A și Hot B față de punctul median. Cu *auto (AMS)* bifat (implicit) urmează tabelul de decalare a antenei al lui J. Richardson (AMS) citat de DJ5HG: 13° la 1000 km, 11° la 1250 km, 10° la 1500 și 2000 km (aproximativ 115, 121, 132 și 176 km de la punctul median). Debifați-l pentru a introduce manual 30–400 km (MSHV folosește 150 km). |
 
-**Rândul 3 – ora**
+**Rândul 2 – ora**
 
 | Comandă | Ce face |
 |---|---|

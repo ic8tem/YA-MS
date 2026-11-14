@@ -14,7 +14,7 @@ I högra änden av flikraden, från höger till vänster:
 |---|---|
 | **Språk** (lista) | Gränssnittets språk; se [Språk](#språk) |
 | **Tema** (lista) | Färgschema; se [Färgscheman](#färgscheman) |
-| **Reglage ▴ / ▾** | Fäller ihop eller ut de tre raderna med reglage ovanför flikarna; se [Typsnitt och Reglage](#typsnitt-och-reglage) |
+| **Reglage ▴ / ▾** | Fäller ihop eller ut de två raderna med reglage ovanför flikarna; se [Typsnitt och Reglage](#typsnitt-och-reglage) |
 
 När du byter språk eller tema sparas inställningarna och **fönstret byggs om** i samma position och storlek, på samma flik: ingen omstart behövs.
 
@@ -82,7 +82,7 @@ Schemat gäller alla flikar och sparas i `config.ini` (nyckeln `tema`).
 ## Typsnitt och Reglage
 
 - **Typsnitt** (Inställningar): förstorar **all text** från **85 till 140 %** i steg om 5 %; linjer, cirklar och kartor behåller sin storlek. Med stora typsnitt bryts flikarna över till en andra rad och korten växer.
-- **Reglage**: med stora typsnitt eller en liten skärm, fäll ihop de tre raderna med reglage för att ge plats åt kartor och diagram. Tillståndet sparas.
+- **Reglage**: med stora typsnitt eller en liten skärm, fäll ihop de två raderna med reglage för att ge plats åt kartor och diagram. Tillståndet sparas.
 
 ## Datamapp
 

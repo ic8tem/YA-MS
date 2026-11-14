@@ -4,11 +4,11 @@
 
 Esimesel käivitusel näitab YA-MS näidistrassi (JN70CN → JO62QM sagedusel 144 MHz). Oma jaama jaoks seadistamiseks piisab viiest minutist.
 
-## 1. Kolm juhtnuppude rida
+## 1. Kaks juhtnuppude rida
 
-Sakkide kohal on kolm juhtnuppude rida, mis kehtivad kõigil sakkidel. Paremal üleval olev nupp **Juhtnupud** peidab ja näitab neid (kasulik suure fondi korral); valik jäetakse meelde.
+Sakkide kohal on kaks juhtnuppude rida, mis kehtivad kõigil sakkidel. Paremal üleval olev nupp **Juhtnupud** peidab ja näitab neid (kasulik suure fondi korral); valik jäetakse meelde. Sinu jaam (lokaator, kõrgus, sagedusala ja Arvuta) on paremal üleval vahekaardil Liiklus reaalajas.
 
-**Rida 1 – jaamad ja sagedusala**
+**Minu jaam – Liiklus reaalajas**
 
 | Juhtnupp | Mida see teeb |
 |---|---|
@@ -18,7 +18,7 @@ Sakkide kohal on kolm juhtnuppude rida, mis kehtivad kõigil sakkidel. Paremal �
 | **Arvuta** | Arvutab trassi uuesti (E-kihi proovivõtt: mõni sekund). |
 | **Antenni az** | Vastasjaama kasti ülaosas, kaardi kõrval: sinu antenni asimuut, alati **DX-i poole** (trassi asimuut). Selle all, samas veerus, on kaardi legend. |
 
-**Rida 2 – E-kiht ja antenn**
+**Rida 1 – E-kiht ja antenn**
 
 | Juhtnupp | Mida see teeb |
 |---|---|
@@ -27,7 +27,7 @@ Sakkide kohal on kolm juhtnuppude rida, mis kehtivad kõigil sakkidel. Paremal �
 | **Yagi antenn: poom m** | Sinu Yagi poomi pikkus. Programm näitab pikkust λ-des, võimendust (DL6WU kõver) ja −3 dB peaharu horisontaalselt ja vertikaalselt; vt [Geomeetria ja sumbumine](Geometry-and-Path-Loss-et#antenni-võimendus-ja-peaharu). Alla 2 λ on hinnang ebatäpne. |
 | **Hot spot keskpunktist km** + **auto (AMS)** | Hot A ja Hot B kaugus keskpunktist. Kui *auto (AMS)* on märgitud (vaikimisi), järgib see J. Richardsoni (AMS) antennisuuna nihete tabelit, mida tsiteerib DJ5HG: 13° 1000 km juures, 11° 1250 km juures, 10° 1500 ja 2000 km juures (umbes 115, 121, 132 ja 176 km keskpunktist). Eemalda märge, et sisestada 30–400 km käsitsi (MSHV kasutab 150 km). |
 
-**Rida 3 – aeg**
+**Rida 2 – aeg**
 
 | Juhtnupp | Mida see teeb |
 |---|---|

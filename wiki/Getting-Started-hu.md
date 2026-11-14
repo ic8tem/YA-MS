@@ -4,11 +4,11 @@
 
 Első indításkor a YA-MS egy példaútvonalat mutat (JN70CN → JO62QM, 144 MHz). Öt perc elég ahhoz, hogy beállítsa a saját állomására.
 
-## 1. A három vezérlősor
+## 1. A két vezérlősor
 
-A fülek felett három sor vezérlőelem található, amelyek minden fülre érvényesek. A jobb felső sarokban lévő **Vezérlők** gomb összecsukja és kinyitja őket (nagy betűméretnél hasznos); a program megjegyzi a választást.
+A fülek felett két sor vezérlőelem található, amelyek minden fülre érvényesek. A jobb felső sarokban lévő **Vezérlők** gomb összecsukja és kinyitja őket (nagy betűméretnél hasznos); a program megjegyzi a választást. Az állomásod (lokátor, magasság, sáv és Számítás) az Élő forgalom jobb felső részén van.
 
-**1. sor – állomások és sáv**
+**Saját állomásom – Élő forgalom**
 
 | Vezérlő | Mire szolgál |
 |---|---|

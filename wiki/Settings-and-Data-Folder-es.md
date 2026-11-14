@@ -14,7 +14,7 @@ En el extremo derecho de la barra de pestañas, de derecha a izquierda:
 |---|---|
 | **Idioma** (lista) | Idioma de la interfaz; ver [Idioma](#idioma) |
 | **Tema** (lista) | Esquema de colores; ver [Esquemas de colores](#esquemas-de-colores) |
-| **Controles ▴ / ▾** | Pliega o despliega las tres filas de controles encima de las pestañas; ver [Fuente de letra y Controles](#fuente-de-letra-y-controles) |
+| **Controles ▴ / ▾** | Pliega o despliega las dos filas de controles encima de las pestañas; ver [Fuente de letra y Controles](#fuente-de-letra-y-controles) |
 
 Al cambiar el idioma o el tema se guardan los ajustes y **se reconstruye la ventana** en la misma posición y tamaño, en la misma pestaña: no hace falta reiniciar.
 
@@ -82,7 +82,7 @@ El esquema se aplica a todas las pestañas y se guarda en `config.ini` (clave `t
 ## Fuente de letra y Controles
 
 - **Fuente de letra** (Ajustes): amplía **todo el texto** del **85 al 140 %** en pasos del 5 %; líneas, círculos y mapas mantienen su tamaño. Con fuentes grandes las pestañas pasan a una segunda línea y las tarjetas crecen.
-- **Controles**: con fuentes grandes o una pantalla pequeña, pliega las tres filas de controles para dejar sitio a mapas y gráficos. El estado se recuerda.
+- **Controles**: con fuentes grandes o una pantalla pequeña, pliega las dos filas de controles para dejar sitio a mapas y gráficos. El estado se recuerda.
 
 ## Carpeta de datos
 

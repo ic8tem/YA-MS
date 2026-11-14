@@ -14,7 +14,7 @@ Ciļņu joslas labajā galā, no labās uz kreiso:
 |---|---|
 | **Valoda** (saraksts) | Saskarnes valoda; sk. [Valoda](#valoda) |
 | **Tēma** (saraksts) | Krāsu shēma; sk. [Krāsu shēmas](#krāsu-shēmas) |
-| **Vadība ▴ / ▾** | Sakļauj vai izvērš trīs vadības rindas virs cilnēm; sk. [Fonts un Vadība](#fonts-un-vadība) |
+| **Vadība ▴ / ▾** | Sakļauj vai izvērš divas vadības rindas virs cilnēm; sk. [Fonts un Vadība](#fonts-un-vadība) |
 
 Valodas vai tēmas maiņa saglabā iestatījumus un **pārbūvē logu** tajā pašā vietā un izmērā, tajā pašā cilnē: restartēšana nav vajadzīga.
 
@@ -82,7 +82,7 @@ Shēma attiecas uz visām cilnēm un tiek saglabāta failā `config.ini` (atslē
 ## Fonts un Vadība
 
 - **Fonts** (Iestatījumi): palielina **visu tekstu** no **85 līdz 140 %** ar 5 % soli; līnijas, apļi un kartes saglabā savu izmēru. Ar lieliem fontiem cilnes pārnesas otrā rindā un kartītes kļūst lielākas.
-- **Vadība**: ar lieliem fontiem vai mazu ekrānu sakļauj trīs vadības rindas, lai atbrīvotu vietu kartēm un grafikiem. Stāvoklis tiek atcerēts.
+- **Vadība**: ar lieliem fontiem vai mazu ekrānu sakļauj divas vadības rindas, lai atbrīvotu vietu kartēm un grafikiem. Stāvoklis tiek atcerēts.
 
 ## Datu mape
 

@@ -14,7 +14,7 @@ Hægra megin á flipastikunni, frá hægri til vinstri:
 |---|---|
 | **Tungumál** (listi) | Tungumál viðmóts; sjá [Tungumál](#tungumál) |
 | **Þema** (listi) | Litaþema; sjá [Litaþemu](#litaþemu) |
-| **Stýringar ▴ / ▾** | Fellir saman eða opnar þrjár raðir stýringa fyrir ofan flipana; sjá [Letur og Stýringar](#letur-og-stýringar) |
+| **Stýringar ▴ / ▾** | Fellir saman eða opnar tvær raðir stýringa fyrir ofan flipana; sjá [Letur og Stýringar](#letur-og-stýringar) |
 
 Þegar skipt er um tungumál eða þema eru stillingarnar vistaðar og **glugginn endurbyggður** á sama stað og í sömu stærð, á sama flipa: engin endurræsing nauðsynleg.
 
@@ -82,7 +82,7 @@ Listinn **Þema** býður upp á 12 þemu, þau sömu og í EME-forriti höfunda
 ## Letur og Stýringar
 
 - **Letur** (Stillingar): stækkar **allan texta** úr **85 í 140 %** í 5 % skrefum; línur, hringir og kort halda stærð sinni. Með stóru letri brotna fliparnir í aðra línu og spjöldin stækka.
-- **Stýringar**: með stóru letri eða litlum skjá skaltu fella saman raðirnar þrjár til að rýma fyrir kortum og gröfum. Staðan er munuð.
+- **Stýringar**: með stóru letri eða litlum skjá skaltu fella saman raðirnar tvær til að rýma fyrir kortum og gröfum. Staðan er munuð.
 
 ## Gagnamappa
 

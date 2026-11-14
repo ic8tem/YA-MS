@@ -40,6 +40,12 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.11
+  - Calcolo previsionale: una sola colonna accanto alla mappa, in alto il riquadro del corrispondente con il
+    puntamento dell'antenna (tolto dalla prima riga dei comandi), in basso la legenda dei simboli (ripiegabile).
+  - Traffico in diretta: anche i monitor attivi della mappa di PSKReporter, pure senza spot ricevuti (triangoli
+    vuoti). Interrogazione di retrieve.pskreporter.info un modo MS alla volta ogni 3 minuti (ogni modo ogni 12 minuti).
+
 NOVITA' DELLA 1.8.10
   - Raccolta dati: quinta fonte WSJT-X / JTDX / MSHV via UDP, come in LIVETROPOVHF (porta 2237, anche multicast;
     i pacchetti si ripetono identici sulla 2238 per GridTracker, JTAlert, log). Ogni stazione decodificata diventa uno

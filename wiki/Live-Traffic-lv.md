@@ -18,6 +18,8 @@ Spoti, kuru stacija ir **ārpus kartes**, tiek atmesti. **Tikko pienācis** spot
 
 Rādīt, kas klausās: joslas krāsas trijstūri iezīmē stacijas, kas pēc PSKReporter datiem izvēlētajā laika logā uztver MSK144, FSK441, PSK2K vai JTMS 28, 50, 70, 144 un 432 MHz joslās. Klikšķis uz trijstūra parāda izsaukuma signālu, lokatoru, režīmus un pēdējo spotu. Cilnes Datu vākšana MQTT plūsmai jābūt pievienotai.
 
+Arī PSKReporter kartes aktīvie monitori: tukši trīsstūri stacijām, kas redzamas pskreporter.info kartē MSK144, FSK441, PSK2K vai JTMS režīmā, bet vēl nav saņēmušas nevienu spotu (MQTT sūta tikai stacijas, kas kaut ko saņem). YA-MS vaicā PSKReporter vaicājumu pakalpojumam pa vienam režīmam, ik pēc 3 minūtēm, tāpēc katrs režīms atjaunojas ik pēc 12 minūtēm, kā prasa pakalpojuma noteikumi. Klikšķis uz trīsstūra parāda izsaukuma signālu, lokatoru, dekodēšanas programmu un laiku, kad monitors bija aktīvs. Ieslēgts pēc noklusējuma.
+
 Kartē tiek rakstīti abu katra spota staciju izsaukuma signāli, vienreiz katrai stacijai. Projekciju var izvēlēties: azimutālā (centrā tava stacija) vai Merkatora. Kolonnas Mākonis padoms izskaidro tās nozīmi.
 
 Tiek rādīti visu joslu spoti, arī to joslu, kas nav izvēlētas Datu vākšanā (tie netiek saglabāti). CW spoti un spoti starp pārāk tuvām stacijām netiek rādīti, ja Datu vākšanā tie tiek atmesti.

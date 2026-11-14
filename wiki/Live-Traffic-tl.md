@@ -18,6 +18,8 @@ Itinatapon ang mga spot na may istasyong **nasa labas ng mapa**. Ang spot na **k
 
 Ipakita kung sino ang nakikinig: mga tatsulok na kulay ng banda ang nagmamarka sa mga istasyong, ayon sa PSKReporter, tumatanggap ng MSK144, FSK441, PSK2K o JTMS sa 28, 50, 70, 144 at 432 MHz sa napiling panahon. Ang pag-click sa tatsulok ay nagpapakita ng call sign, locator, mga mode at huling spot. Dapat nakakonekta ang daloy na MQTT sa tab na Pangongolekta ng data.
 
+Pati ang mga aktibong monitor sa mapa ng PSKReporter: mga hungkag na tatsulok para sa mga istasyong lumalabas sa mapa ng pskreporter.info sa MSK144, FSK441, PSK2K o JTMS pero wala pang natatanggap na spot (ang MQTT ay nagpapadala lang ng mga istasyong may natatanggap). Tinatanong ng YA-MS ang serbisyong pang-query ng PSKReporter nang isang mode bawat pagkakataon, tuwing 3 minuto, kaya bawat mode ay naa-update tuwing 12 minuto, ayon sa patakaran ng serbisyo. Ang click sa tatsulok ay nagpapakita ng callsign, locator, programang pang-decode at oras na aktibo ang monitor. Naka-on mula sa simula.
+
 Isinusulat sa mapa ang mga callsign ng dalawang istasyon ng bawat spot, isang beses bawat istasyon. Mapipili ang projection: azimuthal (nakasentro sa iyong istasyon) o Mercator. Ipinaliliwanag ng tooltip sa kolumnang Ulap ang kahulugan nito.
 
 Ipinapakita ang mga spot ng lahat ng banda, pati ng mga bandang hindi pinili sa Pagkolekta ng data (hindi ito iniimbak). Hindi ipinapakita ang mga CW spot at ang mga spot sa pagitan ng mga istasyong masyadong malapit, kung itinatapon ang mga ito sa Pagkolekta ng data.

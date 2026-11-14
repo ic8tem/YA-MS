@@ -16,7 +16,7 @@ Sa itaas ng mga tab ay may tatlong hanay ng mga kontrol, balido para sa lahat ng
 | **DX station** / **taas m** | Sa tabi ng mapa, sa kanan, ang kahon ng kausap: i-type ang callsign at pindutin ang Enter, kinukuha ang locator mula sa database ng CALL3 (tulad ng sa YAEC at LIVETROPOVHF); sa ilalim ang locator at ang taas. Maaari ring i-type ang callsign sa kahon ng locator. |
 | **Banda MHz** | 28, 50, 70, 144, 222 o 432 MHz: ginagamit para sa gain at lobe ng antenna, sa tantiya ng flux at sa link budget. |
 | **Kalkulahin** | Muling kinakalkula ang landas (pag-sample ng E layer: ilang segundo). |
-| **Antenna az** | Azimuth ng iyong antenna: laging **patungo sa DX** (azimuth ng landas). |
+| **Antenna az** | Sa itaas ng kahon ng kausap, sa tabi ng mapa: azimuth ng iyong antena, laging **patungo sa DX** (azimuth ng daan). Sa ibaba, sa parehong kolum, ang alamat ng mapa. |
 | **Font** | Laki ng lahat ng teksto, 85–140 %. Tingnan ang [Mga setting](Settings-and-Data-Folder-tl#font-at-mga-kontrol). |
 
 **Hanay 2 – E layer at antenna**

@@ -24,7 +24,7 @@ def T(t):
     return TRD[t]
 
 TITLE = "Manuale d'uso di YA-MS"
-SUB = "Versione 1.8.10 - a cura di Costantino IC8TEM - novembre 2026"
+SUB = "Versione 1.8.11 - a cura di Costantino IC8TEM - novembre 2026"
 
 B = []
 h1 = lambda t: B.append(("h1", T(t))); h2 = lambda t: B.append(("h2", T(t))); p = lambda t: B.append(("p", T(t)))
@@ -59,7 +59,7 @@ p("All'avvio compare per pochi secondi la schermata con le Perseidi sopra il VLT
 h2("2.3 La cartella data")
 p("Tutte le impostazioni e tutti i dati stanno in un'unica cartella data accanto al programma: niente AppData, niente cartelle di sistema. Per spostare YA-MS su un altro computer basta copiare la cartella del programma con la sua cartella data. Il contenuto della cartella è descritto nel capitolo 13.")
 h2("2.4 Aggiornamenti automatici")
-p("Dalla versione 1.8.10 gli aggiornamenti sono automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'è una versione nuova, la scarica, la installa e si riavvia da solo senza chiedere nulla (lo dice solo la barra di stato). Anche i file mancanti si riscaricano senza chiedere. La finestra descritta qui sotto compare solo premendo \"Aggiornamenti\" oppure se scrivi aggiornamenti_automatici=0 nel file data/config.ini.")
+p("Dalla versione 1.8.11 gli aggiornamenti sono automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'è una versione nuova, la scarica, la installa e si riavvia da solo senza chiedere nulla (lo dice solo la barra di stato). Anche i file mancanti si riscaricano senza chiedere. La finestra descritta qui sotto compare solo premendo \"Aggiornamenti\" oppure se scrivi aggiornamenti_automatici=0 nel file data/config.ini.")
 p("Dalla versione 1.8.0 YA-MS controlla da solo su GitHub, all'avvio e al massimo una volta al giorno, se è uscita una versione nuova. Se c'è, compare la finestra \"Aggiornamento disponibile\" con le novità e tre pulsanti:")
 li("Aggiorna adesso: scarica il pacchetto adatto al tuo sistema, sostituisce i file del programma, tiene la cartella data e riavvia YA-MS. I file del programma nella cartella data che la nuova versione cambia vengono prima copiati in data/backup/v<versione vecchia>; i tuoi file (impostazioni, archivi, spot, ADIF) non vengono toccati.")
 li("Più tardi: chiude la finestra; il controllo si ripete il giorno dopo.")
@@ -95,7 +95,6 @@ h2("4.1 Riga 1: stazioni e banda")
 li("Il mio locator e quota m: il tuo locator Maidenhead (4, 6 o 8 caratteri; si usa il centro del quadrato) e la quota della stazione sul livello del mare.")
 li("Banda MHz: 28, 50, 70, 144, 222 o 432 MHz. Serve per il guadagno e il lobo dell'antenna, per l'attenuazione e il bilancio, per la stima del flusso.")
 li("Calcola: ricalcola la tratta (campionamento dello strato E, meno di un secondo).")
-li("Antenna az: azimut dell'antenna, sempre verso il corrispondente.")
 h2("4.2 Riga 2: strato E e antenna")
 li("Quota scie km e dal radar: quota delle scie meteoriche. Con \"dal radar\" spuntato si usa la quota più frequente misurata dal radar di Collm (di solito 88-90 km); togli la spunta per scriverla a mano.")
 li("Elevazione lobo °: elevazione del massimo del lobo verticale della tua antenna. Una direttiva fissata a 0° ha comunque il lobo principale qualche grado sopra l'orizzonte, per la riflessione sul terreno: di solito 3-8°, secondo l'altezza dell'antenna in lunghezze d'onda.")
@@ -118,7 +117,7 @@ p("La prima sotto-linguetta del gruppo Calcolo previsionale mette in una scherma
 h2("5.1 La striscia di riepilogo")
 p("Sopra la mappa una striscia riassume il calcolo per quel momento: data e ora, indice della tratta (somma di ZHR × efficienza degli sciami attivi), lo sciame più utile con il suo ZHR e la sua efficienza (anche in dB rispetto al riferimento di DJ5HG), il numero di sciami sopra l'orizzonte e l'Hot consigliato con il suo azimut.")
 h2("5.2 La mappa in pianta")
-p("Accanto alla mappa, a destra, c'è il riquadro del corrispondente: scrivi il nominativo e premi Invio, il locator si prende dall'archivio CALL3 (come in YAEC e LIVETROPOVHF); sotto ci sono il locator e la quota. Il nominativo si può scrivere anche nella casella del locator.")
+p("Accanto alla mappa, a destra, c'è una colonna unica. In alto il riquadro del corrispondente: prima il puntamento dell'antenna (Antenna az, sempre verso il corrispondente), poi il nominativo (scrivilo e premi Invio: il locator si prende dall'archivio CALL3, come in YAEC e LIVETROPOVHF), il locator e la quota. Il nominativo si può scrivere anche nella casella del locator. In basso c'è la legenda dei simboli della mappa: un clic sul titolo la ripiega; i colori dei radianti compaiono quando la mappa d'Europa è spenta.")
 p("A sinistra la mappa d'Europa vista dall'alto (est a destra), con la scala dei gradi tutt'intorno:")
 li("linea verde: la tratta vera tra i due locator;")
 li("Hot A e Hot B: i due hot spot ai lati del punto medio. Rosso = consigliato, rosa = fuori dal lobo dell'antenna, grigio = già dentro il lobo (con un avviso);")
@@ -126,7 +125,7 @@ li("lobo dell'antenna: il settore a -3 dB attorno all'azimut dell'antenna;")
 li("Limite A e Limite B, tenui: i bordi più lontani del cielo visto da entrambe le stazioni, non i punti da puntare;")
 li("linea gialla: la direzione in cui lo sciame selezionato (o il più favorevole) spazza il cielo; punti arancioni: i due puntamenti perpendicolari (azimut del radiante ±90°);")
 li("zone PREV, ellissi chiare: dove cadono adesso le scie più probabili, una per lato della tratta.")
-p("Clic sinistro sulla mappa = locator del corrispondente, clic destro = locator della tua stazione; la tratta si ricalcola subito. La legenda è una colonna ripiegabile a destra della mappa. Le caselle sopra l'elenco degli sciami accendono e spengono le direzioni degli Hot, la mappa d'Europa e la vista dall'alto.")
+p("Clic sinistro sulla mappa = locator del corrispondente, clic destro = locator della tua stazione; la tratta si ricalcola subito. Le caselle sopra l'elenco degli sciami accendono e spengono le direzioni degli Hot, la mappa d'Europa e la vista dall'alto.")
 h2("5.3 L'elenco degli sciami")
 p("Per ogni sciame: nome e sigla IMO, ZHR in questo momento, azimut ed elevazione del radiante dalla tua stazione, efficienza per la tratta, lato prevalente (A o B), puntamento migliore, sorgere e tramonto del radiante. Un clic su una riga seleziona lo sciame: la linea gialla e i punti arancioni lo seguono.")
 h2("5.4 La piccola volta celeste e il testo del calcolo")
@@ -210,6 +209,7 @@ p("Una mappa azimutale equidistante centrata sulla tua stazione con tutto il tra
 li("Raggio della mappa: 600-3500 km. Spot da mostrare: ultimi 15 o 30 minuti, ultima ora, ultime 3 o 24 ore.")
 li("Un clic su una tratta o su una riga della tabella evidenzia il collegamento e mostra il centro della nuvola, la sua quota e le sue dimensioni.")
 li("Mostra chi è in ascolto: triangoli del colore della banda segnano le stazioni che, secondo PSKReporter, ricevono in MSK144, FSK441, PSK2K o JTMS su 28, 50, 70, 144 e 432 MHz nella finestra di tempo scelta. Un clic sul triangolo mostra nominativo, locator, modi e ultimo spot. Serve il flusso MQTT della linguetta Raccolta dati connesso.")
+li("Anche i monitor attivi della mappa di PSKReporter: triangoli vuoti per le stazioni che compaiono sulla mappa di pskreporter.info in MSK144, FSK441, PSK2K o JTMS ma non hanno ancora ricevuto nessuno spot (MQTT manda solo chi riceve qualcosa). YA-MS interroga il servizio di consultazione di PSKReporter un modo alla volta, ogni 3 minuti, quindi ogni modo si aggiorna ogni 12 minuti, come chiede il regolamento del servizio. Un clic sul triangolo mostra nominativo, locator, programma di decodifica e ora in cui il monitor era attivo. Acceso di partenza.")
 li("Si vedono gli spot di tutte le bande, anche di quelle non scelte nella Raccolta dati (quelli non si memorizzano). Gli spot CW e quelli tra stazioni troppo vicine non si vedono, se sono scartati nella Raccolta dati.")
 li("Sulla mappa si scrivono i nominativi di entrambe le stazioni di ogni spot, una volta sola per stazione. La proiezione si sceglie tra azimutale (centrata sulla tua stazione) e Mercatore. Il fumetto sulla colonna Nuvola ne spiega il significato.")
 h2("9.2 Flusso radar")

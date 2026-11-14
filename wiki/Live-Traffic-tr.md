@@ -18,6 +18,8 @@
 
 Kimin dinlediğini göster: bant renginde üçgenler, PSKReporter'a göre seçilen zaman aralığında 28, 50, 70, 144 ve 432 MHz'de MSK144, FSK441, PSK2K veya JTMS alan istasyonları gösterir. Bir üçgene tıklamak çağrı işaretini, lokatörü, modları ve son spotu gösterir. Veri toplama sekmesindeki MQTT akışı bağlı olmalıdır.
 
+PSKReporter haritasındaki aktif monitörler de: pskreporter.info haritasında MSK144, FSK441, PSK2K veya JTMS ile görünen ama henüz hiç spot almamış istasyonlar için boş üçgenler (MQTT yalnızca bir şey alan istasyonları gönderir). YA-MS, PSKReporter sorgu hizmetini her seferinde bir mod için, 3 dakikada bir sorgular; böylece her mod 12 dakikada bir güncellenir, hizmetin kurallarının istediği gibi. Üçgene tıklamak çağrı işaretini, lokatörü, kod çözme programını ve monitörün aktif olduğu saati gösterir. Varsayılan olarak açık.
+
 Haritada her spotun iki istasyonunun çağrı işareti yazılır, istasyon başına bir kez. İzdüşüm seçilebilir: azimutal (merkezde istasyonun) veya Mercator. Bulut sütunundaki ipucu anlamını açıklar.
 
 Veri toplama'da seçilmemiş olanlar da dahil tüm bantların spotları gösterilir (bunlar kaydedilmez). CW spotları ve birbirine çok yakın istasyonlar arasındaki spotlar, Veri toplama'da atılıyorsa gösterilmez.

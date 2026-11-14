@@ -18,6 +18,8 @@ Spot dengan salah satu stasiun **di luar peta** dibuang. Spot yang **baru tiba**
 
 Tampilkan siapa yang mendengarkan: segitiga berwarna pita menandai stasiun yang menurut PSKReporter menerima MSK144, FSK441, PSK2K, atau JTMS di 28, 50, 70, 144, dan 432 MHz dalam jendela waktu yang dipilih. Klik pada segitiga menampilkan callsign, locator, mode, dan spot terakhir. Aliran MQTT di tab Pengumpulan data harus terhubung.
 
+Juga monitor aktif di peta PSKReporter: segitiga kosong untuk stasiun yang tampak di peta pskreporter.info dalam MSK144, FSK441, PSK2K atau JTMS tetapi belum menerima spot apa pun (MQTT hanya mengirim stasiun yang menerima sesuatu). YA-MS menanyai layanan kueri PSKReporter satu mode setiap kali, setiap 3 menit, sehingga setiap mode diperbarui setiap 12 menit, sesuai aturan layanan. Klik pada segitiga menampilkan callsign, lokator, program dekode, dan waktu monitor aktif. Aktif sejak awal.
+
 Peta menuliskan callsign kedua stasiun pada setiap spot, sekali per stasiun. Proyeksi bisa dipilih: azimutal (berpusat di stasiunmu) atau Mercator. Tooltip pada kolom Awan menjelaskan artinya.
 
 Spot dari semua pita ditampilkan, termasuk pita yang tidak dipilih di Pengumpulan data (spot ini tidak disimpan). Spot CW dan spot antarstasiun yang terlalu dekat tidak ditampilkan, jika dibuang di Pengumpulan data.

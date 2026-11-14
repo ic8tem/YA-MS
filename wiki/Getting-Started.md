@@ -16,7 +16,7 @@ Above the tabs there are three rows of controls, valid for all tabs. The **Contr
 | **DX station** / **height m** | Next to the map, on the right, is the correspondent box: type the callsign and press Enter, the locator is taken from the CALL3 database (as in YAEC and LIVETROPOVHF); below are the locator and the height. The callsign can also be typed in the locator box. |
 | **Band MHz** | 28, 50, 70, 144, 222 or 432 MHz: used for the antenna gain and lobe, the flux estimate and the link budget. |
 | **Calculate** | Recomputes the path (sampling of the E layer: a few seconds). |
-| **Antenna az** | Azimuth of your antenna: always **towards the DX** (azimuth of the path). |
+| **Antenna az** | At the top of the correspondent box, next to the map: azimuth of your antenna, always **towards the DX** (azimuth of the path). The map legend is below, in the same column. |
 | **Font** | Size of all the text, 85–140 %. See [Settings](Settings-and-Data-Folder#font-and-controls). |
 
 **Row 2 – E layer and antenna**

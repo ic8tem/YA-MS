@@ -18,6 +18,8 @@ Spots met een station **buiten de kaart** worden genegeerd. Een spot die **net b
 
 Tonen wie luistert: driehoeken in de bandkleur markeren de stations die volgens PSKReporter in het gekozen tijdvenster MSK144, FSK441, PSK2K of JTMS ontvangen op 28, 50, 70, 144 en 432 MHz. Een klik op een driehoek toont roepnaam, locator, modes en laatste spot. De MQTT-stroom in het tabblad Gegevensverzameling moet verbonden zijn.
 
+Ook de actieve monitors van de PSKReporter-kaart: lege driehoeken voor de stations die op de kaart van pskreporter.info in MSK144, FSK441, PSK2K of JTMS staan maar nog geen spot hebben ontvangen (MQTT stuurt alleen stations die iets ontvangen). YA-MS bevraagt de opvraagdienst van PSKReporter één modus tegelijk, elke 3 minuten, dus elke modus wordt elke 12 minuten bijgewerkt, zoals de regels van de dienst vragen. Een klik op de driehoek toont roepnaam, locator, decodeerprogramma en het tijdstip waarop de monitor actief was. Standaard aan.
+
 De kaart toont de roepletters van beide stations van elke spot, één keer per station. De projectie is azimutaal (gecentreerd op je station) of Mercator. De tooltip op de kolom Wolk legt de betekenis uit.
 
 Spots van alle banden worden getoond, ook van banden die niet in Gegevensverzameling zijn gekozen (die worden niet opgeslagen). CW-spots en spots tussen te dicht bij elkaar liggende stations worden niet getoond als ze in Gegevensverzameling worden weggegooid.

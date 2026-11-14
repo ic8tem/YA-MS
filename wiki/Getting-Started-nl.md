@@ -16,7 +16,7 @@ Boven de tabbladen staan drie rijen bedieningselementen die voor alle tabbladen 
 | **Tegenstation** / **hoogte m** | Naast de kaart, rechts, staat het vak van het tegenstation: typ de roepletters en druk op Enter, de locator komt uit de CALL3-database (zoals in YAEC en LIVETROPOVHF); daaronder staan locator en hoogte. De roepletters kunnen ook in het locatorvak. |
 | **Band MHz** | 28, 50, 70, 144, 222 of 432 MHz: gebruikt voor de antennewinst en -bundel, de fluxschatting en het linkbudget. |
 | **Bereken** | Berekent het traject opnieuw (bemonstering van de E-laag: enkele seconden). |
-| **Antenne az** | Azimut van je antenne: altijd **richting DX** (azimut van het traject). |
+| **Antenne az** | Bovenaan het vak van het tegenstation, naast de kaart: azimut van je antenne, altijd **naar de DX** (azimut van het pad). Daaronder, in dezelfde kolom, staat de kaartlegenda. |
 | **Lettertype** | Grootte van alle tekst, 85–140 %. Zie [Instellingen](Settings-and-Data-Folder-nl#lettertype-en-bediening). |
 
 **Rij 2 – E-laag en antenne**

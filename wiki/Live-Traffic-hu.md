@@ -18,6 +18,8 @@ Azok a spotok, amelyeknek valamelyik állomása **a térképen kívül** esik, e
 
 Mutasd, ki figyel: a sáv színű háromszögek jelölik azokat az állomásokat, amelyek a PSKReporter szerint a választott időablakban MSK144, FSK441, PSK2K vagy JTMS módban vesznek 28, 50, 70, 144 és 432 MHz-en. Egy háromszögre kattintva látszik a hívójel, a lokátor, a módok és az utolsó spot. Az Adatgyűjtés fül MQTT-folyamának csatlakoztatva kell lennie.
 
+A PSKReporter térkép aktív monitorai is: üres háromszögek azoknak az állomásoknak, amelyek MSK144, FSK441, PSK2K vagy JTMS módban látszanak a pskreporter.info térképén, de még nem vettek spotot (az MQTT csak azokat küldi, akik vesznek valamit). A YA-MS a PSKReporter lekérdező szolgáltatását egyszerre egy üzemmódra kérdezi, 3 percenként, így minden üzemmód 12 percenként frissül, ahogy a szolgáltatás szabályai kérik. A háromszögre kattintva látszik a hívójel, a lokátor, a dekódoló program és az idő, amikor a monitor aktív volt. Alapból bekapcsolva.
+
 A térkép minden spot mindkét állomásának hívójelét kiírja, állomásonként egyszer. A vetület választható: azimutális (középen az állomásod) vagy Mercator. A Felhő oszlop buboréksúgója elmagyarázza a jelentését.
 
 Minden sáv spotjai látszanak, azoké is, amelyeket az Adatgyűjtésben nem választottál ki (ezek nem tárolódnak). A CW spotok és a túl közeli állomások közötti spotok nem látszanak, ha az Adatgyűjtésben elvetésre kerülnek.

@@ -18,6 +18,8 @@ Os spots com uma estação **fora do mapa** são descartados. Um spot **recém-c
 
 Mostrar quem está ouvindo: triângulos na cor da banda marcam as estações que, segundo o PSKReporter, recebem em MSK144, FSK441, PSK2K ou JTMS em 28, 50, 70, 144 e 432 MHz na janela de tempo escolhida. Um clique em um triângulo mostra indicativo, locator, modos e último spot. O fluxo MQTT da aba Coleta de dados precisa estar conectado.
 
+Também os monitores ativos do mapa do PSKReporter: triângulos vazios para as estações que aparecem no mapa de pskreporter.info em MSK144, FSK441, PSK2K ou JTMS mas ainda não receberam nenhum spot (o MQTT só envia estações que recebem algo). O YA-MS consulta o serviço de consulta do PSKReporter um modo por vez, a cada 3 minutos, então cada modo é atualizado a cada 12 minutos, como pedem as regras do serviço. Um clique no triângulo mostra indicativo, locator, programa de decodificação e o horário em que o monitor estava ativo. Ligado por padrão.
+
 O mapa mostra os indicativos das duas estações de cada spot, uma só vez por estação. A projeção pode ser azimutal (centrada na sua estação) ou Mercator. A dica da coluna Nuvem explica seu significado.
 
 São mostrados os spots de todas as bandas, também das não escolhidas na Coleta de dados (esses não são salvos). Os spots CW e os entre estações próximas demais não são mostrados, se forem descartados na Coleta de dados.

@@ -18,6 +18,8 @@ Spot med en stasjon **utenfor kartet** forkastes. Et spot som **nettopp har komm
 
 Vis hvem som lytter: trekanter i båndets farge markerer stasjonene som ifølge PSKReporter tar imot MSK144, FSK441, PSK2K eller JTMS på 28, 50, 70, 144 og 432 MHz i det valgte tidsvinduet. Et klikk på en trekant viser kallesignal, lokator, moduser og siste spot. MQTT-strømmen i fanen Datainnsamling må være tilkoblet.
 
+Også de aktive monitorene på PSKReporter-kartet: tomme trekanter for stasjoner som vises på kartet til pskreporter.info i MSK144, FSK441, PSK2K eller JTMS, men som ennå ikke har mottatt noen spot (MQTT sender bare stasjoner som mottar noe). YA-MS spør PSKReporters oppslagstjeneste én modus om gangen, hvert 3. minutt, så hver modus oppdateres hvert 12. minutt, slik tjenestens regler ber om. Et klikk på trekanten viser kallesignal, lokator, dekodingsprogram og tidspunktet monitoren var aktiv. På fra start.
+
 Kartet viser kallesignalene til begge stasjonene i hver spot, én gang per stasjon. Projeksjonen kan være asimutal (sentrert på din stasjon) eller Mercator. Verktøytipset på kolonnen Sky forklarer hva den betyr.
 
 Spotter fra alle bånd vises, også fra bånd som ikke er valgt i Datainnsamling (de lagres ikke). CW-spotter og spotter mellom stasjoner som ligger for nær hverandre vises ikke, hvis de forkastes i Datainnsamling.

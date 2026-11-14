@@ -16,7 +16,7 @@ Sakkide kohal on kolm juhtnuppude rida, mis kehtivad kõigil sakkidel. Paremal �
 | **Korrespondent** / **kõrgus m** | Kaardi kõrval paremal on vastasjaama kast: kirjuta kutsung ja vajuta Enter, lokaator võetakse CALL3 andmebaasist (nagu YAEC-is ja LIVETROPOVHF-is); all on lokaator ja kõrgus. Kutsungi võib kirjutada ka lokaatori kasti. |
 | **Sagedusala MHz** | 28, 50, 70, 144, 222 või 432 MHz: kasutatakse antenni võimenduse ja peaharu, vooluhinnangu ja lingi eelarve jaoks. |
 | **Arvuta** | Arvutab trassi uuesti (E-kihi proovivõtt: mõni sekund). |
-| **Antenni az** | Sinu antenni asimuut: alati **DX-i suunas** (trassi asimuut). |
+| **Antenni az** | Vastasjaama kasti ülaosas, kaardi kõrval: sinu antenni asimuut, alati **DX-i poole** (trassi asimuut). Selle all, samas veerus, on kaardi legend. |
 | **Font** | Kogu teksti suurus, 85–140 %. Vt [Seaded](Settings-and-Data-Folder-et#font-ja-juhtnupud). |
 
 **Rida 2 – E-kiht ja antenn**

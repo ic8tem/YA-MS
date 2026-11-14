@@ -16,7 +16,7 @@ Sopra le linguette ci sono tre righe di comandi, valide per tutte le linguette. 
 | **Corrispondente** / **quota m** | Accanto alla mappa, a destra, c'è il riquadro del corrispondente: scrivi il nominativo e premi Invio, il locator si prende dall'archivio CALL3 (come in YAEC e LIVETROPOVHF); sotto ci sono il locator e la quota. Il nominativo si può scrivere anche nella casella del locator. |
 | **Banda MHz** | 28, 50, 70, 144, 222 o 432 MHz: serve per il guadagno e il lobo dell'antenna, la stima del flusso e il bilancio del collegamento. |
 | **Calcola** | Ricalcola la tratta (campionamento dello strato E: qualche secondo). |
-| **Antenna az** | Azimut della tua antenna: sempre **verso il DX** (azimut della tratta). |
+| **Antenna az** | In alto nel riquadro del corrispondente, accanto alla mappa: azimut della tua antenna, sempre **verso il DX** (azimut della tratta). Sotto, nella stessa colonna, c'è la legenda della mappa. |
 | **Carattere** | Dimensione di tutto il testo, 85–140 %. Vedi [Impostazioni](Settings-and-Data-Folder-it#carattere-e-comandi). |
 
 **Riga 2 – strato E e antenna**

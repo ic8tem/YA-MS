@@ -94,7 +94,7 @@ function table(widths, rows) {
 // ---------- contenuto ----------
 const C = [];
 C.push(new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun('YA-MS - Manuale dei calcoli')] }));
-C.push(P(I('Previsione e calcolo in diretta dell\'efficienza degli sciami meteorici per il meteor scatter. Versione 1.8.10, a cura di Costantino IC8TEM, novembre 2026.')));
+C.push(P(I('Previsione e calcolo in diretta dell\'efficienza degli sciami meteorici per il meteor scatter. Versione 1.8.11, a cura di Costantino IC8TEM, novembre 2026.')));
 C.push(new TableOfContents(T('Indice'), { hyperlink: true, headingStyleRange: '1-2' }));
 C.push(P(I('(Se l\'indice è vuoto: in Word, clic destro sull\'indice > Aggiorna campo.)')));
 

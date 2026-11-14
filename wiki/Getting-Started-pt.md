@@ -16,7 +16,7 @@ Por cima dos separadores há três filas de comandos, válidas para todos os sep
 | **Correspondente** / **altitude m** | Ao lado do mapa, à direita, está o quadro do correspondente: escreva o indicativo e prima Enter, o locator vem da base CALL3 (como no YAEC e no LIVETROPOVHF); por baixo estão o locator e a altitude. O indicativo também pode ser escrito na caixa do locator. |
 | **Banda MHz** | 28, 50, 70, 144, 222 ou 432 MHz: usada para o ganho e o lóbulo da antena, a estimativa do fluxo e o balanço da ligação. |
 | **Calcular** | Recalcula o percurso (amostragem da camada E: alguns segundos). |
-| **Antena az** | Azimute da sua antena: sempre **em direção ao DX** (azimute do percurso). |
+| **Antena az** | Em cima no quadro do correspondente, ao lado do mapa: azimute da sua antena, sempre **para o DX** (azimute do percurso). Por baixo, na mesma coluna, está a legenda do mapa. |
 | **Tipo de letra** | Tamanho de todo o texto, 85–140 %. Ver [Definições](Settings-and-Data-Folder-pt#tipo-de-letra-e-comandos). |
 
 **Fila 2 – camada E e antena**

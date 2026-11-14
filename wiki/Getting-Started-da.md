@@ -16,7 +16,7 @@ Over fanerne er der tre rækker betjeningselementer, som gælder for alle faner.
 | **Modstation** / **højde m** | Ved siden af kortet, til højre, er modstationens felt: skriv kaldesignalet og tryk Enter, locatoren hentes fra CALL3-databasen (som i YAEC og LIVETROPOVHF); nedenunder står locator og højde. Kaldesignalet kan også skrives i locator-feltet. |
 | **Bånd MHz** | 28, 50, 70, 144, 222 eller 432 MHz: bruges til antennens forstærkning og lap, fluxvurderingen og linkbudgettet. |
 | **Beregn** | Genberegner strækningen (sampling af E-laget: nogle sekunder). |
-| **Antenne az** | Din antennes azimut: altid **mod DX** (strækningens azimut). |
+| **Antenne az** | Øverst i modstationens felt, ved siden af kortet: azimut for din antenne, altid **mod DX** (strækningens azimut). Nedenunder, i samme kolonne, står kortforklaringen. |
 | **Skrifttype** | Størrelsen på al tekst, 85–140 %. Se [Indstillinger](Settings-and-Data-Folder-da#skrifttype-og-betjening). |
 
 **Række 2 – E-laget og antenne**

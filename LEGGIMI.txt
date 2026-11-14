@@ -40,6 +40,12 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.14
+  - Traffico in diretta: "La mia stazione" in un riquadro sopra la mappa, in alto a destra; raggio e proiezione
+    della mappa in un riquadro in basso a destra.
+  - La mappa di Mercatore si sposta trascinandola con il mouse (doppio clic: di nuovo centrata sulla stazione);
+    l'azimutale resta fissa sulla stazione.
+
 NOVITA' DELLA 1.8.13
   - FT8 isolati, controlli con PSKReporter MQTT: non isolato se il ricevente sente in MQTT altre stazioni oltre i
     1100 km nella stessa banda entro 3 minuti; spot dei cluster e di RBN solo se la stessa coppia arriva anche da

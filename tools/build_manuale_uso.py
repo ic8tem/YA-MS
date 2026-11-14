@@ -24,7 +24,7 @@ def T(t):
     return TRD[t]
 
 TITLE = "Manuale d'uso di YA-MS"
-SUB = "Versione 1.8.13 - a cura di Costantino IC8TEM - novembre 2026"
+SUB = "Versione 1.8.14 - a cura di Costantino IC8TEM - novembre 2026"
 
 B = []
 h1 = lambda t: B.append(("h1", T(t))); h2 = lambda t: B.append(("h2", T(t))); p = lambda t: B.append(("p", T(t)))
@@ -207,6 +207,7 @@ h1("9. Live e dati real-time")
 h2("9.1 Traffico in diretta")
 p("Una mappa azimutale equidistante centrata sulla tua stazione con tutto il traffico meteor scatter raccolto: per ogni collegamento la tratta nel colore della banda (28 marrone, 50 verde, 70 ciano, 144 arancione, 222 rosa, 432 viola), le due stazioni e la zona dello sciame delle scie più probabili a quell'ora. Gli spot appena arrivati lampeggiano per un minuto.")
 li("Raggio della mappa: 600-3500 km. Spot da mostrare: ultimi 3, 15 o 30 minuti, ultima ora, ultime 3 o 24 ore.")
+li("Il Mercatore si sposta trascinandolo con il mouse; doppio clic: di nuovo centrato sulla mia stazione. L'azimutale resta centrata sulla mia stazione.")
 li("Un clic su una tratta o su una riga della tabella evidenzia il collegamento e mostra il centro della zona dello sciame, la sua quota e le sue dimensioni.")
 li("Mostra chi è in ascolto: triangoli del colore della banda segnano le stazioni che, secondo PSKReporter, ricevono in MSK144, FSK441, PSK2K o JTMS su 28, 50, 70, 144 e 432 MHz nella finestra di tempo scelta. Un clic sul triangolo mostra nominativo, locator, modi e ultimo spot. Serve il flusso MQTT della linguetta Raccolta dati connesso.")
 li("Anche i monitor attivi della mappa di PSKReporter: triangoli vuoti per le stazioni che compaiono sulla mappa di pskreporter.info in MSK144, FSK441, PSK2K o JTMS ma non hanno ancora ricevuto nessuno spot (MQTT manda solo chi riceve qualcosa). YA-MS interroga il servizio di consultazione di PSKReporter una volta ogni 5 minuti per tutti i modi, come chiede il regolamento del servizio; un monitor resta sulla mappa almeno 11 minuti. Un clic sul triangolo mostra nominativo, locator, programma di decodifica e ora in cui il monitor era attivo. Acceso di partenza.")

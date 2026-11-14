@@ -40,6 +40,11 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.16
+  - Catalogo IAU MDC degli sciami stabiliti dentro i pacchetti (data/cataloghi): il confronto dei radianti nella
+    linguetta Sciami funziona dal primo avvio, anche con le fonti in diretta spente.
+  - Il file del MDC si legge in latin-1: i nomi degli autori con gli accenti non si storpiano piu' nei fumetti.
+
 NOVITA' DELLA 1.8.15
   - Calcolo previsionale: pulsante "Memorizza" accanto al locator del corrispondente. Se scrivi un locator diverso
     da quello del CALL3 per quel nominativo, lo salva come voce a mano e lo scrive subito dentro data/call3.txt.

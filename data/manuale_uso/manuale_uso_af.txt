@@ -1,5 +1,5 @@
 TITLE|Gebruikershandleiding van YA-MS
-SUB|Weergawe 1.8.15 - saamgestel deur Costantino IC8TEM - November 2026
+SUB|Weergawe 1.8.16 - saamgestel deur Costantino IC8TEM - November 2026
 H1|1. Inleiding
 H2|1.1 Waarvoor YA-MS dien
 P|YA-MS help jou om die meteor scatter-toestande tussen jou stasie en 'n DX-stasie van 28 tot 432 MHz te voorspel en regstreeks te volg. Vir elke aktiewe meteoorswerm sê dit hoe gunstig die posisie van sy radiant vir jou pad is (die doeltreffendheid), op watter ure, van watter kant van die pad die refleksies kom en waarheen jy die antenna moet rig. Langs die voorspelling wys dit regstreeks gemete data: die tellings van die Collm-meteoorradar, die kameras van die Global Meteor Network, die CMOR-radar, die GRAVES-sender en die meteor scatter-verkeer wat deur die clusters en PSKReporter ingesamel word.
@@ -202,6 +202,7 @@ P|Die katalogus wat deur al die berekeninge gebruik word: die swerms van die IMO
 LI|Kode, naam, aktiwiteitstydperk, sonlengte van die maksimum, volgende maksimum (UTC) en sy bron (IMO of bereken), radiant, snelheid, bevolkingsindeks r, ZHR, tipe (visueel of radio-dagswerm).
 LI|k: eksponent van die frekwensieskalering uit die bevolkingsindeks (GMN indien beskikbaar, anders IMO).
 LI|IAU MDC: oplossings, Δ radiant, Δλ, Δv: vergelyking met die katalogus van die IAU Meteor Data Center (gepubliseerde oplossings en verskille van die programkatalogus ten opsigte van hul mediaan).
+LI|Die IAU MDC-katalogus is reeds in die pakkette ingesluit (data/cataloghi), sodat die vergelyking van die eerste begin af werk, selfs sonder regstreekse bronne; met regstreekse bronne aan word dit hoogstens een keer per maand stil weer afgelaai.
 LI|GMN vandag: bane wat in die jongste daaglikse lêer van die Global Meteor Network bevestig is.
 TAG|NOTA|Die katalogus is die lêer data/sciami.csv en die IMO-maksimums is in data/massimi_imo.csv: hulle kan met 'n teksredigeerder verander word. 'n Foutiewe reël word by aanskakel gerapporteer en geïgnoreer.
 H1|11. Vierkantkaart

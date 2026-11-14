@@ -1,5 +1,5 @@
 TITLE|Manualul de utilizare YA-MS
-SUB|Versiunea 1.8.15 - realizată de Costantino IC8TEM - noiembrie 2026
+SUB|Versiunea 1.8.16 - realizată de Costantino IC8TEM - noiembrie 2026
 H1|1. Introducere
 H2|1.1 La ce folosește YA-MS
 P|YA-MS vă ajută să prevedeți și să urmăriți în direct condițiile de meteor scatter între stația dumneavoastră și un corespondent, de la 28 la 432 MHz. Pentru fiecare roi meteoric activ arată în ce măsură poziția radiantului său favorizează traseul dumneavoastră (eficiența), în ce ore, din ce parte a traseului sosesc reflexiile și încotro este bine să orientați antena. Pe lângă prognoză, afișează datele măsurate în direct: numărătorile radarului meteoric de la Collm, camerele Global Meteor Network, radarul CMOR, emițătorul GRAVES și traficul meteor scatter colectat din clustere și din PSKReporter.
@@ -202,6 +202,7 @@ P|Catalogul folosit de toate calculele: roiurile din calendarul IMO 2026 și 202
 LI|Codul, numele, perioada de activitate, longitudinea solară a maximului, următorul maxim (UTC) și sursa sa (IMO sau calculat), radiantul, viteza, indicele de populație r, ZHR, tipul (vizual sau radio diurn).
 LI|k: exponentul transpunerii în frecvență obținut din indicele de populație (GMN dacă este disponibil, altfel IMO).
 LI|IAU MDC: soluții, Δ radiant, Δλ, Δv: comparație cu catalogul IAU Meteor Data Center (soluțiile publicate și diferențele catalogului programului față de mediana lor).
+LI|Catalogul IAU MDC este deja inclus în pachete (data/cataloghi), astfel că comparația funcționează de la prima pornire chiar și fără surse în direct; cu sursele în direct pornite este descărcat din nou în tăcere cel mult o dată pe lună.
 LI|GMN azi: traiectorii confirmate în ultimul fișier zilnic al Global Meteor Network.
 TAG|NOTA|Catalogul este fișierul data/sciami.csv, iar maximele IMO sunt în data/massimi_imo.csv: pot fi modificate cu un editor de text. Un rând greșit este semnalat la pornire și ignorat.
 H1|11. Harta pătratelor

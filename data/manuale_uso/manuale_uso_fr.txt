@@ -1,5 +1,5 @@
 TITLE|Manuel d'utilisation de YA-MS
-SUB|Version 1.8.15 - réalisé par Costantino IC8TEM - novembre 2026
+SUB|Version 1.8.16 - réalisé par Costantino IC8TEM - novembre 2026
 H1|1. Introduction
 H2|1.1 À quoi sert YA-MS
 P|YA-MS vous aide à prévoir et à suivre en direct les conditions de meteor scatter entre votre station et un correspondant, de 28 à 432 MHz. Pour chaque essaim météorique actif, il indique dans quelle mesure la position de son radiant favorise votre trajet (l'efficacité), à quelles heures, de quel côté du trajet arrivent les réflexions et où il convient de pointer l'antenne. À côté de la prévision, il affiche les données mesurées en direct : les comptages du radar météorique de Collm, les caméras du Global Meteor Network, le radar CMOR, l'émetteur GRAVES et le trafic meteor scatter recueilli sur les clusters et sur PSKReporter.
@@ -202,6 +202,7 @@ P|Le catalogue utilisé par tous les calculs : les essaims du calendrier IMO 202
 LI|Code, nom, période d'activité, longitude solaire du maximum, prochain maximum (UTC) et sa source (IMO ou calculé), radiant, vitesse, indice de population r, ZHR, type (visuel ou radio diurne).
 LI|k : exposant de la transposition en fréquence à partir de l'indice de population (GMN si disponible, sinon IMO).
 LI|IAU MDC : solutions, Δ radiant, Δλ, Δv : comparaison avec le catalogue de l'IAU Meteor Data Center (solutions publiées et écarts du catalogue du programme par rapport à leur médiane).
+LI|Le catalogue IAU MDC est déjà inclus dans les paquets (data/cataloghi) : la comparaison fonctionne dès le premier démarrage, même sans les sources en direct ; avec les sources en direct activées, il est retéléchargé en silence au plus une fois par mois.
 LI|GMN aujourd'hui : trajectoires confirmées dans le dernier fichier journalier du Global Meteor Network.
 TAG|NOTA|Le catalogue est le fichier data/sciami.csv et les maxima IMO sont dans data/massimi_imo.csv : ils peuvent être modifiés avec un éditeur de texte. Une ligne erronée est signalée au démarrage et ignorée.
 H1|11. Carte des carrés

@@ -1,5 +1,5 @@
 TITLE|YA-MS naudotojo vadovas
-SUB|1.8.15 versija - parengė Costantino IC8TEM - 2026 m. lapkritis
+SUB|1.8.16 versija - parengė Costantino IC8TEM - 2026 m. lapkritis
 H1|1. Įvadas
 H2|1.1 Kam skirta YA-MS
 P|YA-MS padeda prognozuoti ir tiesiogiai stebėti meteor scatter sąlygas tarp jūsų stoties ir korespondento nuo 28 iki 432 MHz. Kiekvienam aktyviam meteorų srautui ji parodo, kiek jo radianto padėtis palanki jūsų trasai (efektyvumas), kuriomis valandomis, iš kurios trasos pusės ateina atspindžiai ir kur geriausia nukreipti anteną. Šalia prognozės ji rodo tiesiogiai matuojamus duomenis: Collm meteorų radaro skaičius, Global Meteor Network kameras, CMOR radarą, GRAVES siųstuvą ir meteor scatter srautą, surinktą iš klasterių ir PSKReporter.
@@ -202,6 +202,7 @@ P|Katalogas, naudojamas visuose skaičiavimuose: IMO 2026 ir 2027 metų kalendor
 LI|Santrumpa, pavadinimas, aktyvumo laikotarpis, Saulės ilguma maksimumo metu, kitas maksimumas (UTC) ir jo šaltinis (IMO arba apskaičiuotas), radiantas, greitis, populiacijos indeksas r, ZHR, tipas (vizualinis arba dieninis radijo).
 LI|k: dažnio perskaičiavimo rodiklis pagal populiacijos indeksą (GMN, jei yra, kitaip IMO).
 LI|IAU MDC: sprendiniai, Δ radianto, Δλ, Δv: palyginimas su IAU Meteor Data Center katalogu (paskelbti sprendiniai ir programos katalogo skirtumai nuo jų medianos).
+LI|IAU MDC katalogas jau įdėtas į paketus (data/cataloghi), todėl palyginimas veikia nuo pirmo paleidimo net be tiesioginių šaltinių; įjungus tiesioginius šaltinius jis tyliai atsisiunčiamas iš naujo ne dažniau kaip kartą per mėnesį.
 LI|GMN šiandien: trajektorijos, patvirtintos naujausiame Global Meteor Network dienos faile.
 TAG|NOTA|Katalogas yra failas data/sciami.csv, o IMO maksimumai yra faile data/massimi_imo.csv: juos galima redaguoti teksto redaktoriumi. Klaidinga eilutė paleidžiant nurodoma ir ignoruojama.
 H1|11. Kvadratų žemėlapis

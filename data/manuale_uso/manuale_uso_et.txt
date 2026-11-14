@@ -1,5 +1,5 @@
 TITLE|YA-MS-i kasutusjuhend
-SUB|Versioon 1.8.15 - koostanud Costantino IC8TEM - november 2026
+SUB|Versioon 1.8.16 - koostanud Costantino IC8TEM - november 2026
 H1|1. Sissejuhatus
 H2|1.1 Milleks YA-MS on mõeldud
 P|YA-MS aitab prognoosida ja reaalajas jälgida meteor scatteri tingimusi sinu jaama ja korrespondendi vahel sagedustel 28 kuni 432 MHz. Iga aktiivse meteoorivoolu kohta ütleb see, kui palju selle radiandi asend soosib sinu trassi (efektiivsus), millistel tundidel, trassi kummalt poolt peegeldused saabuvad ja kuhu on kõige parem antenn suunata. Prognoosi kõrval näitab see reaalajas mõõdetud andmeid: Collmi meteoorradari loendusi, Global Meteor Networki kaameraid, CMOR-radarit, GRAVESi saatjat ning klastritest ja PSKReporterist kogutud meteor scatteri liiklust.
@@ -202,6 +202,7 @@ P|Kõigi arvutuste kasutatav kataloog: IMO 2026. ja 2027. aasta kalendri meteoor
 LI|Kood, nimi, aktiivsusperiood, maksimumi päikesepikkus, järgmine maksimum (UTC) ja selle allikas (IMO või arvutatud), radiant, kiirus, populatsiooniindeks r, ZHR, tüüp (visuaalne või päevane raadio).
 LI|k: sageduse teisenduse astendaja populatsiooniindeksist (GMN, kui on saadaval, muidu IMO).
 LI|IAU MDC: lahendused, Δ radiant, Δλ, Δv: võrdlus IAU Meteor Data Centeri kataloogiga (avaldatud lahendused ja programmi kataloogi erinevused nende mediaanist).
+LI|IAU MDC kataloog on juba pakettides kaasas (data/cataloghi), nii et võrdlus töötab esimesest käivitusest alates ka ilma otseallikateta; sisselülitatud otseallikatega laaditakse see vaikselt uuesti alla kõige rohkem kord kuus.
 LI|GMN täna: kinnitatud trajektoorid Global Meteor Networki viimases päevafailis.
 TAG|NOTA|Kataloog on fail data/sciami.csv ja IMO maksimumid on failis data/massimi_imo.csv: neid saab muuta tekstiredaktoriga. Vigane rida märgitakse käivitamisel ära ja jäetakse arvestamata.
 H1|11. Ruutude kaart

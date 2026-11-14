@@ -24,7 +24,7 @@ def T(t):
     return TRD[t]
 
 TITLE = "Manuale d'uso di YA-MS"
-SUB = "Versione 1.8.15 - a cura di Costantino IC8TEM - novembre 2026"
+SUB = "Versione 1.8.16 - a cura di Costantino IC8TEM - novembre 2026"
 
 B = []
 h1 = lambda t: B.append(("h1", T(t))); h2 = lambda t: B.append(("h2", T(t))); p = lambda t: B.append(("p", T(t)))
@@ -251,6 +251,7 @@ p("Il catalogo usato da tutti i calcoli: gli sciami del calendario IMO 2026 e 20
 li("Sigla, nome, periodo di attività, longitudine solare del massimo, prossimo massimo (UTC) e sua fonte (IMO o calcolato), radiante, velocità, indice di popolazione r, ZHR, tipo (visuale o radio diurno).")
 li("k: esponente della traslazione di frequenza dall'indice di popolazione (GMN se disponibile, altrimenti IMO).")
 li("IAU MDC: soluzioni, Δ radiante, Δλ, Δv: confronto con il catalogo dell'IAU Meteor Data Center (soluzioni pubblicate e differenze del catalogo del programma dalla loro mediana).")
+li("Il catalogo IAU MDC è già dentro i pacchetti (data/cataloghi), così il confronto funziona dal primo avvio anche senza le fonti in diretta; con le fonti in diretta accese si riscarica in silenzio al massimo una volta al mese.")
 li("GMN oggi: traiettorie confermate nell'ultimo file giornaliero del Global Meteor Network.")
 tag("NOTA", "Il catalogo è il file data/sciami.csv e i massimi IMO sono in data/massimi_imo.csv: si possono modificare con un editor di testo. Una riga sbagliata viene segnalata all'avvio e ignorata.")
 

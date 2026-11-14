@@ -1,5 +1,5 @@
 TITLE|Manwal ng paggamit ng YA-MS
-SUB|Bersyon 1.8.15 - inihanda ni Costantino IC8TEM - Nobyembre 2026
+SUB|Bersyon 1.8.16 - inihanda ni Costantino IC8TEM - Nobyembre 2026
 H1|1. Panimula
 H2|1.1 Para saan ang YA-MS
 P|Tinutulungan ka ng YA-MS na hulaan at subaybayan nang live ang mga kondisyon ng meteor scatter sa pagitan ng iyong istasyon at ng isang DX station, mula 28 hanggang 432 MHz. Para sa bawat aktibong meteor shower, sinasabi nito kung gaano pinapaboran ng posisyon ng radiant nito ang iyong landas (ang episyensya), sa anong mga oras, mula sa aling panig ng landas dumarating ang mga repleksiyon, at saan pinakamainam itutok ang antena. Kasabay ng pagtataya, ipinapakita nito ang mga datos na sinusukat nang live: ang mga bilang ng meteor radar ng Collm, ang mga camera ng Global Meteor Network, ang CMOR radar, ang transmitter na GRAVES at ang trapiko ng meteor scatter na kinokolekta mula sa mga cluster at sa PSKReporter.
@@ -202,6 +202,7 @@ P|Ang katalogong ginagamit ng lahat ng kalkulasyon: ang mga shower ng kalendaryo
 LI|Code, pangalan, panahon ng aktibidad, solar longitude ng maximum, susunod na maximum (UTC) at ang source nito (IMO o kinalkula), radiant, bilis, population index r, ZHR, uri (visual o daytime radio).
 LI|k: exponent ng paglilipat ng frequency mula sa population index (GMN kung mayroon, kung hindi ay IMO).
 LI|IAU MDC: mga solusyon, Δ radiant, Δλ, Δv: paghahambing sa katalogo ng IAU Meteor Data Center (mga nailathalang solusyon at mga pagkakaiba ng katalogo ng programa mula sa kanilang median).
+LI|Kasama na sa mga package ang katalogo ng IAU MDC (data/cataloghi), kaya gumagana ang paghahambing mula sa unang pagbukas kahit walang live na pinagmulan; kapag naka-on ang mga live na pinagmulan, tahimik itong dina-download muli nang hindi hihigit sa isang beses kada buwan.
 LI|GMN ngayon: mga kumpirmadong trajectory sa pinakabagong pang-araw-araw na file ng Global Meteor Network.
 TAG|NOTA|Ang katalogo ay ang file na data/sciami.csv at ang mga maximum ng IMO ay nasa data/massimi_imo.csv: maaaring baguhin ang mga ito gamit ang isang text editor. Iniuulat sa pagsisimula at hindi pinapansin ang isang maling linya.
 H1|11. Mapa ng grid square

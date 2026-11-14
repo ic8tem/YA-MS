@@ -1,5 +1,5 @@
 TITLE|Brugervejledning til YA-MS
-SUB|Version 1.8.15 - udarbejdet af Costantino IC8TEM - november 2026
+SUB|Version 1.8.16 - udarbejdet af Costantino IC8TEM - november 2026
 H1|1. Indledning
 H2|1.1 Hvad YA-MS bruges til
 P|YA-MS hjælper dig med at forudsige og følge meteor scatter-forholdene live mellem din station og en modstation, fra 28 til 432 MHz. For hver aktiv meteorsværm fortæller programmet, hvor meget dens radiants position begunstiger din strækning (effektiviteten), på hvilke tidspunkter, fra hvilken side af strækningen refleksionerne kommer, og hvor det er bedst at rette antennen. Ved siden af prognosen viser det live måledata: tællingerne fra meteorradaren i Collm, kameraerne i Global Meteor Network, CMOR-radaren, GRAVES-senderen og den meteor scatter-trafik, der indsamles fra clusterne og fra PSKReporter.
@@ -202,6 +202,7 @@ P|Kataloget, som alle beregninger bruger: sværmene i IMO-kalenderen for 2026 og
 LI|Kode, navn, aktivitetsperiode, solens længde ved maksimum, næste maksimum (UTC) og dets kilde (IMO eller beregnet), radiant, hastighed, populationsindeks r, ZHR, type (visuel eller radio, dagtid).
 LI|k: eksponenten for frekvensomregningen ud fra populationsindekset (GMN, hvis tilgængeligt, ellers IMO).
 LI|IAU MDC: løsninger, Δ radiant, Δλ, Δv: sammenligning med kataloget fra IAU Meteor Data Center (publicerede løsninger og programkatalogets afvigelser fra deres median).
+LI|IAU MDC-kataloget følger allerede med i pakkerne (data/cataloghi), så sammenligningen virker fra første start også uden direkte kilder; med direkte kilder slået til hentes det stille igen højst én gang om måneden.
 LI|GMN i dag: bekræftede baner i den seneste daglige fil fra Global Meteor Network.
 TAG|NOTA|Kataloget er filen data/sciami.csv, og IMO-maksimaerne ligger i data/massimi_imo.csv: de kan ændres med en teksteditor. En forkert række markeres ved start og ignoreres.
 H1|11. Kort over felter

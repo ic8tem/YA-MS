@@ -1,5 +1,5 @@
 TITLE|Manual de uso de YA-MS
-SUB|Versión 1.8.15 - a cargo de Costantino IC8TEM - noviembre de 2026
+SUB|Versión 1.8.16 - a cargo de Costantino IC8TEM - noviembre de 2026
 H1|1. Introducción
 H2|1.1 Para qué sirve YA-MS
 P|YA-MS ayuda a prever y a seguir en directo las condiciones de meteor scatter entre tu estación y un corresponsal, de 28 a 432 MHz. Para cada lluvia de meteoros activa indica en qué medida la posición de su radiante favorece tu trayecto (la eficiencia), en qué horas, desde qué lado del trayecto llegan las reflexiones y hacia dónde conviene apuntar la antena. Junto a la previsión muestra los datos medidos en directo: los recuentos del radar de meteoros de Collm, las cámaras de la Global Meteor Network, el radar CMOR, el transmisor GRAVES y el tráfico de meteor scatter recogido de los clústeres y de PSKReporter.
@@ -202,6 +202,7 @@ P|El catálogo que usan todos los cálculos: las lluvias del calendario IMO 2026
 LI|Código, nombre, periodo de actividad, longitud solar del máximo, próximo máximo (UTC) y su fuente (IMO o calculado), radiante, velocidad, índice de población r, ZHR, tipo (visual o radio diurna).
 LI|k: exponente del escalado en frecuencia a partir del índice de población (GMN si está disponible, si no IMO).
 LI|IAU MDC: soluciones, Δ radiante, Δλ, Δv: comparación con el catálogo del IAU Meteor Data Center (soluciones publicadas y diferencias del catálogo del programa respecto a su mediana).
+LI|El catálogo IAU MDC ya va dentro de los paquetes (data/cataloghi), así que la comparación funciona desde el primer arranque incluso sin fuentes en directo; con las fuentes en directo activadas se vuelve a descargar en silencio como mucho una vez al mes.
 LI|GMN hoy: trayectorias confirmadas en el último archivo diario de la Global Meteor Network.
 TAG|NOTA|El catálogo es el archivo data/sciami.csv y los máximos IMO están en data/massimi_imo.csv: se pueden modificar con un editor de texto. Una fila errónea se señala al arrancar y se ignora.
 H1|11. Mapa de cuadrículas

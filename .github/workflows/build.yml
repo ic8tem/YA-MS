@@ -40,6 +40,14 @@ jobs:
         run: |
           if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="$(tr -d ' \r\n' < VERSION)"; fi
           echo "VER=$V" >> $GITHUB_ENV
+      - name: Catalogo IAU MDC degli sciami stabiliti (dentro i pacchetti, per il confronto dei radianti)
+        shell: bash
+        continue-on-error: true
+        run: |
+          mkdir -p data/cataloghi; f=data/cataloghi/iau_mdc_stabiliti.txt; Y=$(date -u +%Y)
+          for u in "https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata$Y.txt" "https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata$((Y-1)).txt" "https://iaumdc.ta3.sk/downloads/lists_shw_data/streamestablisheddata.txt"; do
+            if curl -fsSL -m 60 -o "$f.tmp" "$u" && [ "$(grep -c '^"' "$f.tmp")" -gt 50 ]; then mv "$f.tmp" "$f"; echo "IAU MDC: $u"; break; fi
+          done; rm -f "$f.tmp"
       - name: Compila
         run: dotnet publish YA-MS.csproj -c Release -r ${{ matrix.rid }} --self-contained true -p:Version=${{ env.VER }} -p:DebugType=none -o publish/${{ matrix.rid }}
       - name: Installatore (Inno Setup)
@@ -70,6 +78,14 @@ jobs:
         run: |
           if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="$(tr -d ' \r\n' < VERSION)"; fi
           echo "VER=$V" >> $GITHUB_ENV
+      - name: Catalogo IAU MDC degli sciami stabiliti (dentro i pacchetti, per il confronto dei radianti)
+        shell: bash
+        continue-on-error: true
+        run: |
+          mkdir -p data/cataloghi; f=data/cataloghi/iau_mdc_stabiliti.txt; Y=$(date -u +%Y)
+          for u in "https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata$Y.txt" "https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata$((Y-1)).txt" "https://iaumdc.ta3.sk/downloads/lists_shw_data/streamestablisheddata.txt"; do
+            if curl -fsSL -m 60 -o "$f.tmp" "$u" && [ "$(grep -c '^"' "$f.tmp")" -gt 50 ]; then mv "$f.tmp" "$f"; echo "IAU MDC: $u"; break; fi
+          done; rm -f "$f.tmp"
       - name: Compila
         run: dotnet publish YA-MS.csproj -c Release -r linux-x64 --self-contained true -p:Version=$VER -p:DebugType=none -o publish/linux-x64
       - name: Pacchetto
@@ -165,6 +181,14 @@ jobs:
         run: |
           if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="$(tr -d ' \r\n' < VERSION)"; fi
           echo "VER=$V" >> $GITHUB_ENV
+      - name: Catalogo IAU MDC degli sciami stabiliti (dentro i pacchetti, per il confronto dei radianti)
+        shell: bash
+        continue-on-error: true
+        run: |
+          mkdir -p data/cataloghi; f=data/cataloghi/iau_mdc_stabiliti.txt; Y=$(date -u +%Y)
+          for u in "https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata$Y.txt" "https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata$((Y-1)).txt" "https://iaumdc.ta3.sk/downloads/lists_shw_data/streamestablisheddata.txt"; do
+            if curl -fsSL -m 60 -o "$f.tmp" "$u" && [ "$(grep -c '^"' "$f.tmp")" -gt 50 ]; then mv "$f.tmp" "$f"; echo "IAU MDC: $u"; break; fi
+          done; rm -f "$f.tmp"
       - name: Compila
         run: dotnet publish YA-MS.csproj -c Release -r ${{ matrix.rid }} --self-contained true -p:Version=$VER -p:DebugType=none -o publish/${{ matrix.rid }}
       - name: Pacchetto
@@ -226,6 +250,14 @@ jobs:
         run: |
           if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="$(tr -d ' \r\n' < VERSION)"; fi
           echo "VER=$V" >> $GITHUB_ENV
+      - name: Catalogo IAU MDC degli sciami stabiliti (dentro i pacchetti, per il confronto dei radianti)
+        shell: bash
+        continue-on-error: true
+        run: |
+          mkdir -p data/cataloghi; f=data/cataloghi/iau_mdc_stabiliti.txt; Y=$(date -u +%Y)
+          for u in "https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata$Y.txt" "https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata$((Y-1)).txt" "https://iaumdc.ta3.sk/downloads/lists_shw_data/streamestablisheddata.txt"; do
+            if curl -fsSL -m 60 -o "$f.tmp" "$u" && [ "$(grep -c '^"' "$f.tmp")" -gt 50 ]; then mv "$f.tmp" "$f"; echo "IAU MDC: $u"; break; fi
+          done; rm -f "$f.tmp"
       - name: Compila
         run: dotnet publish YA-MS.csproj -c Release -r ${{ matrix.rid }} --self-contained true -p:Version=$VER -p:DebugType=none -o publish/${{ matrix.rid }}
       - name: Pacchetto
@@ -261,6 +293,14 @@ jobs:
         run: |
           if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="$(tr -d ' \r\n' < VERSION)"; fi
           echo "VER=$V" >> $GITHUB_ENV
+      - name: Catalogo IAU MDC degli sciami stabiliti (dentro i pacchetti, per il confronto dei radianti)
+        shell: bash
+        continue-on-error: true
+        run: |
+          mkdir -p data/cataloghi; f=data/cataloghi/iau_mdc_stabiliti.txt; Y=$(date -u +%Y)
+          for u in "https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata$Y.txt" "https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata$((Y-1)).txt" "https://iaumdc.ta3.sk/downloads/lists_shw_data/streamestablisheddata.txt"; do
+            if curl -fsSL -m 60 -o "$f.tmp" "$u" && [ "$(grep -c '^"' "$f.tmp")" -gt 50 ]; then mv "$f.tmp" "$f"; echo "IAU MDC: $u"; break; fi
+          done; rm -f "$f.tmp"
       - name: Compila
         run: dotnet publish YA-MS.csproj -c Release -r ${{ matrix.rid }} --self-contained true -p:Version=$VER -p:DebugType=none -o publish/${{ matrix.rid }}
       - name: Pacchetto YA-MS.app e immagine disco
@@ -306,6 +346,7 @@ jobs:
             YA-MS - previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter.
             A cura di Costantino IC8TEM.
 
+            Novità della 1.8.16: il catalogo IAU MDC degli sciami stabiliti è dentro i pacchetti, così il confronto dei radianti nella linguetta Sciami funziona dal primo avvio; i nomi degli autori con gli accenti non si storpiano più.
             Novità della 1.8.15: pulsante «Memorizza» accanto al locator del corrispondente (un locator diverso va nel CALL3 e subito in call3.txt); nel Traffico in diretta i dettagli dello spot in un riquadro in rilievo sopra la mappa, in alto a sinistra.
             Novità della 1.8.14: nel Traffico in diretta la mia stazione e raggio/proiezione in riquadri sopra la mappa; la mappa di Mercatore si sposta trascinandola (doppio clic: di nuovo sulla stazione).
             Novità della 1.8.13: FT8 isolati con i controlli di PSKReporter MQTT (ricevente che sente altre stazioni lontane, conferma MQTT per cluster e RBN, skimmer RBN esclusi).

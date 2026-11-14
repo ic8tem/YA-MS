@@ -1,5 +1,5 @@
 TITLE|Notendahandbók YA-MS
-SUB|Útgáfa 1.8.15 - umsjón Costantino IC8TEM - nóvember 2026
+SUB|Útgáfa 1.8.16 - umsjón Costantino IC8TEM - nóvember 2026
 H1|1. Inngangur
 H2|1.1 Til hvers YA-MS er
 P|YA-MS hjálpar þér að spá fyrir um og fylgjast í beinni með skilyrðum fyrir meteor scatter milli stöðvarinnar þinnar og mótstöðvar, frá 28 upp í 432 MHz. Fyrir hverja virka loftsteinadrífu segir forritið hversu vel staða geislapunktsins hentar leiðinni þinni (nýtnin), á hvaða tímum, frá hvorri hlið leiðarinnar endurvörpin koma og hvert best er að beina loftnetinu. Við hlið spárinnar sýnir það mæligögn í beinni: talningar loftsteinaratsjárinnar í Collm, myndavélar Global Meteor Network, CMOR-ratsjána, GRAVES-sendinn og meteor scatter-umferðina sem safnað er frá klösunum og frá PSKReporter.
@@ -202,6 +202,7 @@ P|Skráin sem allir útreikningar nota: drífurnar í dagatali IMO fyrir 2026 og
 LI|Kóði, heiti, virknitímabil, sólarlengd hámarksins, næsta hámark (UTC) og heimild þess (IMO eða reiknað), geislapunktur, hraði, fjöldastuðull r, ZHR, tegund (sjónræn eða dagdrífa á radíó).
 LI|k: veldisvísir tíðniyfirfærslunnar út frá fjöldastuðlinum (GMN ef til staðar, annars IMO).
 LI|IAU MDC: lausnir, Δ geislapunktur, Δλ, Δv: samanburður við skrá IAU Meteor Data Center (birtar lausnir og frávik drífuskrár forritsins frá miðgildi þeirra).
+LI|IAU MDC-skráin fylgir nú þegar pökkunum (data/cataloghi), svo samanburðurinn virkar frá fyrstu ræsingu, líka án beinna heimilda; með beinar heimildir virkar er hún sótt aftur hljóðlega í mesta lagi einu sinni í mánuði.
 LI|GMN í dag: staðfestar brautir í nýjustu daglegu skrá Global Meteor Network.
 TAG|NOTA|Skráin er skráin data/sciami.csv og hámörk IMO eru í data/massimi_imo.csv: breyta má þeim með textaritli. Röng lína er tilkynnt við ræsingu og hunsuð.
 H1|11. Reitakort

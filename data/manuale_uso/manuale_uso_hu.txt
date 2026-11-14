@@ -1,5 +1,5 @@
 TITLE|A YA-MS felhasználói kézikönyve
-SUB|1.8.15-es verzió - készítette Costantino IC8TEM - 2026. november
+SUB|1.8.16-es verzió - készítette Costantino IC8TEM - 2026. november
 H1|1. Bevezetés
 H2|1.1 Mire szolgál a YA-MS
 P|A YA-MS segít előre jelezni és élőben követni a meteor scatter feltételeit az Ön állomása és egy ellenállomás között, 28 és 432 MHz között. Minden aktív meteorrajnál megmutatja, mennyire kedvez radiánsának helyzete az Ön útvonalának (a hatásfok), mely órákban, az útvonal melyik oldaláról érkeznek a visszaverődések, és merre érdemes az antennát irányítani. Az előrejelzés mellett élőben mért adatokat is mutat: a Collm meteorradar számlálásait, a Global Meteor Network kameráit, a CMOR radart, a GRAVES adót, valamint a clusterekből és a PSKReporterből gyűjtött meteor scatter forgalmat.
@@ -202,6 +202,7 @@ P|Az összes számítás által használt katalógus: az IMO 2026-os és 2027-es
 LI|Kód, név, aktivitási időszak, a maximum napi ekliptikai hosszúsága, a következő maximum (UTC) és forrása (IMO vagy számított), radiáns, sebesség, r populációs index, ZHR, típus (vizuális vagy nappali rádiós).
 LI|k: a frekvencia-átszámítás kitevője a populációs indexből (GMN, ha elérhető, egyébként IMO).
 LI|IAU MDC: megoldások, Δ radiáns, Δλ, Δv: összehasonlítás az IAU Meteor Data Center katalógusával (a publikált megoldások és a program katalógusának eltérése azok mediánjától).
+LI|Az IAU MDC katalógus már benne van a csomagokban (data/cataloghi), így az összehasonlítás az első indítástól működik élő források nélkül is; bekapcsolt élő forrásokkal legfeljebb havonta egyszer csendben újra letöltődik.
 LI|GMN ma: a Global Meteor Network legutóbbi napi fájljában megerősített pályák.
 TAG|NOTA|A katalógus a data/sciami.csv fájl, az IMO-maximumok pedig a data/massimi_imo.csv fájlban vannak: szövegszerkesztővel módosíthatók. A hibás sort a program indításkor jelzi és figyelmen kívül hagyja.
 H1|11. Négyzettérkép

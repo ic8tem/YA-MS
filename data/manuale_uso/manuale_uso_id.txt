@@ -1,5 +1,5 @@
 TITLE|Panduan penggunaan YA-MS
-SUB|Versi 1.8.15 - disusun oleh Costantino IC8TEM - November 2026
+SUB|Versi 1.8.16 - disusun oleh Costantino IC8TEM - November 2026
 H1|1. Pendahuluan
 H2|1.1 Untuk apa YA-MS
 P|YA-MS membantu Anda memprakirakan dan memantau secara langsung kondisi meteor scatter antara stasiun Anda dan stasiun DX, dari 28 hingga 432 MHz. Untuk setiap hujan meteor yang aktif, program ini menunjukkan seberapa besar posisi radiannya menguntungkan lintasan Anda (efisiensi), pada jam berapa, dari sisi lintasan mana pantulan datang, dan ke mana sebaiknya antena diarahkan. Di samping prakiraan, program menampilkan data yang diukur secara langsung: hitungan radar meteor Collm, kamera Global Meteor Network, radar CMOR, pemancar GRAVES, serta lalu lintas meteor scatter yang dikumpulkan dari cluster dan PSKReporter.
@@ -202,6 +202,7 @@ P|Katalog yang digunakan oleh semua perhitungan: hujan meteor dari kalender IMO 
 LI|Kode, nama, periode aktivitas, bujur matahari puncak, puncak berikutnya (UTC) dan sumbernya (IMO atau dihitung), radian, kecepatan, indeks populasi r, ZHR, jenis (visual atau radio siang hari).
 LI|k: eksponen konversi frekuensi dari indeks populasi (GMN jika tersedia, jika tidak IMO).
 LI|IAU MDC: solusi, Δ radian, Δλ, Δv: perbandingan dengan katalog IAU Meteor Data Center (solusi yang diterbitkan dan selisih katalog program terhadap mediannya).
+LI|Katalog IAU MDC sudah disertakan dalam paket (data/cataloghi), jadi perbandingan berjalan sejak pertama kali dibuka meski tanpa sumber langsung; dengan sumber langsung aktif, katalog diunduh ulang diam-diam paling banyak sebulan sekali.
 LI|GMN hari ini: lintasan yang terkonfirmasi dalam berkas harian terbaru Global Meteor Network.
 TAG|NOTA|Katalog adalah berkas data/sciami.csv dan puncak IMO ada di data/massimi_imo.csv: keduanya dapat diubah dengan editor teks. Baris yang salah dilaporkan saat program dijalankan dan diabaikan.
 H1|11. Peta kotak

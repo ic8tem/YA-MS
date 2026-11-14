@@ -1,5 +1,5 @@
 TITLE|YA-MS User Manual
-SUB|Version 1.8.15 - by Costantino IC8TEM - November 2026
+SUB|Version 1.8.16 - by Costantino IC8TEM - November 2026
 H1|1. Introduction
 H2|1.1 What YA-MS is for
 P|YA-MS helps you forecast and follow live the meteor scatter conditions between your station and a DX station, from 28 to 432 MHz. For each active meteor shower it tells you how much the position of its radiant favours your path (the efficiency), at what times, from which side of the path the reflections arrive and where it is best to point the antenna. Alongside the forecast it shows data measured live: the counts of the Collm meteor radar, the cameras of the Global Meteor Network, the CMOR radar, the GRAVES transmitter and the meteor scatter traffic collected from the clusters and from PSKReporter.
@@ -202,6 +202,7 @@ P|The catalogue used by all calculations: the showers of the IMO 2026 and 2027 c
 LI|Code, name, activity period, solar longitude of the maximum, next maximum (UTC) and its source (IMO or calculated), radiant, velocity, population index r, ZHR, type (visual or daytime radio).
 LI|k: exponent of the frequency scaling from the population index (GMN if available, otherwise IMO).
 LI|IAU MDC: solutions, Δ radiant, Δλ, Δv: comparison with the catalogue of the IAU Meteor Data Center (published solutions and differences of the program's catalogue from their median).
+LI|The IAU MDC catalogue already ships inside the packages (data/cataloghi), so the comparison works from the first start even without live sources; with live sources on it is silently downloaded again at most once a month.
 LI|GMN today: trajectories confirmed in the latest daily file of the Global Meteor Network.
 TAG|NOTA|The catalogue is the data/sciami.csv file and the IMO maxima are in data/massimi_imo.csv: they can be edited with a text editor. A wrong line is reported at startup and ignored.
 H1|11. Grid square map

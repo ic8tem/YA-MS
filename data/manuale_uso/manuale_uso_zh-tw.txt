@@ -1,5 +1,5 @@
 TITLE|YA-MS 使用手冊
-SUB|版本 1.8.15 - Costantino IC8TEM 編寫 - 2026 年 11 月
+SUB|版本 1.8.16 - Costantino IC8TEM 編寫 - 2026 年 11 月
 H1|1. 引言
 H2|1.1 YA-MS 的用途
 P|YA-MS 協助您預測並即時追蹤您的電台與對方電台之間 28 至 432 MHz 的流星餘跡散射（meteor scatter）條件。對於每個活躍的流星雨，它會告訴您其輻射點的位置對您的路徑有多有利（效率）、在哪些時段、反射從路徑的哪一側到來，以及天線最好指向哪裡。在預測旁邊，它也顯示即時量測的資料：Collm 流星雷達的計數、Global Meteor Network 的攝影機、CMOR 雷達、GRAVES 發射機，以及從叢集（cluster）和 PSKReporter 收集到的流星餘跡散射通訊。
@@ -202,6 +202,7 @@ P|所有計算所使用的星表：IMO 2026 和 2027 年曆中的流星雨，以
 LI|代碼、名稱、活動期間、極大時的太陽黃經、下一次極大（UTC）及其來源（IMO 或計算值）、輻射點、速度、族群指數 r、ZHR、類型（目視或日間電波）。
 LI|k：由族群指數得出的頻率換算指數（有 GMN 時用 GMN，否則用 IMO）。
 LI|IAU MDC：解、Δ 輻射點、Δλ、Δv：與 IAU Meteor Data Center 星表的比較（已發表的解，以及程式星表與其中位數的差值）。
+LI|IAU MDC 目錄已包含在安裝包中（data/cataloghi），因此即使沒有即時資料來源，比對也從第一次啟動起就能使用；開啟即時資料來源時，它每月最多靜默重新下載一次。
 LI|GMN 今日：Global Meteor Network 最新每日檔案中已確認的軌跡。
 TAG|NOTA|星表是 data/sciami.csv 檔案，IMO 極大值在 data/massimi_imo.csv 中：可以用文字編輯器修改。錯誤的列會在啟動時回報並被忽略。
 H1|11. 方格地圖

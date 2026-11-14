@@ -1,5 +1,5 @@
 TITLE|Instrukcja obsługi YA-MS
-SUB|Wersja 1.8.15 - opracował Costantino IC8TEM - listopad 2026
+SUB|Wersja 1.8.16 - opracował Costantino IC8TEM - listopad 2026
 H1|1. Wprowadzenie
 H2|1.1 Do czego służy YA-MS
 P|YA-MS pomaga przewidywać i śledzić na bieżąco warunki meteor scatter między twoją stacją a korespondentem, od 28 do 432 MHz. Dla każdego aktywnego roju meteorów pokazuje, w jakim stopniu położenie jego radiantu sprzyja twojej trasie (sprawność), w jakich godzinach, z której strony trasy przychodzą odbicia i gdzie najlepiej skierować antenę. Obok prognozy pokazuje dane mierzone na żywo: zliczenia radaru meteorowego w Collm, kamery Global Meteor Network, radar CMOR, nadajnik GRAVES oraz ruch meteor scatter zbierany z klastrów i z PSKReporter.
@@ -202,6 +202,7 @@ P|Katalog używany we wszystkich obliczeniach: roje z kalendarza IMO 2026 i 2027
 LI|Skrót, nazwa, okres aktywności, długość ekliptyczna Słońca w maksimum, następne maksimum (UTC) i jego źródło (IMO lub obliczone), radiant, prędkość, wskaźnik populacji r, ZHR, typ (wizualny lub radiowy dzienny).
 LI|k: wykładnik przeliczania częstotliwości na podstawie wskaźnika populacji (GMN, jeśli jest dostępny, w przeciwnym razie IMO).
 LI|IAU MDC: rozwiązania, Δ radiantu, Δλ, Δv: porównanie z katalogiem IAU Meteor Data Center (opublikowane rozwiązania i różnice katalogu programu względem ich mediany).
+LI|Katalog IAU MDC jest już w pakietach (data/cataloghi), więc porównanie działa od pierwszego uruchomienia, nawet bez źródeł na żywo; przy włączonych źródłach na żywo jest po cichu pobierany ponownie najwyżej raz w miesiącu.
 LI|GMN dzisiaj: trajektorie potwierdzone w ostatnim dziennym pliku Global Meteor Network.
 TAG|NOTA|Katalog to plik data/sciami.csv, a maksima IMO są w data/massimi_imo.csv: można je edytować w edytorze tekstu. Błędny wiersz jest zgłaszany przy uruchomieniu i pomijany.
 H1|11. Mapa kwadratów

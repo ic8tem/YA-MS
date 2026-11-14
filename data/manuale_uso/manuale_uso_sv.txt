@@ -1,5 +1,5 @@
 TITLE|Bruksanvisning för YA-MS
-SUB|Version 1.8.15 - av Costantino IC8TEM - november 2026
+SUB|Version 1.8.16 - av Costantino IC8TEM - november 2026
 H1|1. Inledning
 H2|1.1 Vad YA-MS används till
 P|YA-MS hjälper dig att förutsäga och live följa meteorscatterförhållandena mellan din station och en motstation, från 28 till 432 MHz. För varje aktiv meteorsvärm anger programmet hur mycket radiantens läge gynnar din sträcka (effektiviteten), vilka timmar, från vilken sida av sträckan reflexerna kommer och vart du bör rikta antennen. Bredvid prognosen visar det data som mäts live: räkningarna från meteorradarn i Collm, kamerorna i Global Meteor Network, CMOR-radarn, GRAVES-sändaren och meteorscattertrafiken som samlas in från klustren och från PSKReporter.
@@ -202,6 +202,7 @@ P|Katalogen som används av alla beräkningar: svärmarna i IMO:s kalender för 
 LI|Kod, namn, aktivitetsperiod, solens longitud vid maximum, nästa maximum (UTC) och dess källa (IMO eller beräknat), radiant, hastighet, populationsindex r, ZHR, typ (visuell eller dagradio).
 LI|k: exponent för frekvensomräkningen utifrån populationsindexet (GMN om det finns, annars IMO).
 LI|IAU MDC: lösningar, Δ radiant, Δλ, Δv: jämförelse med katalogen från IAU Meteor Data Center (publicerade lösningar och skillnaderna mellan programmets katalog och deras median).
+LI|IAU MDC-katalogen följer redan med i paketen (data/cataloghi), så jämförelsen fungerar från första start även utan livekällor; med livekällor påslagna laddas den tyst ner igen högst en gång i månaden.
 LI|GMN i dag: bekräftade banor i den senaste dagliga filen från Global Meteor Network.
 TAG|NOTA|Katalogen är filen data/sciami.csv och IMO-maxima finns i data/massimi_imo.csv: de kan ändras med en textredigerare. En felaktig rad rapporteras vid start och ignoreras.
 H1|11. Rutkarta

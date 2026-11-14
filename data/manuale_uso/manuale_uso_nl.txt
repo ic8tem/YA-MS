@@ -1,5 +1,5 @@
 TITLE|Gebruikershandleiding van YA-MS
-SUB|Versie 1.8.15 - door Costantino IC8TEM - november 2026
+SUB|Versie 1.8.16 - door Costantino IC8TEM - november 2026
 H1|1. Inleiding
 H2|1.1 Waarvoor dient YA-MS
 P|YA-MS helpt je de meteorscatter-condities tussen jouw station en een tegenstation te voorspellen en live te volgen, van 28 tot 432 MHz. Voor elke actieve meteorenzwerm geeft het aan in hoeverre de positie van de radiant jouw traject begunstigt (de efficiëntie), op welke uren, van welke kant van het traject de reflecties komen en waarheen je de antenne het best richt. Naast de voorspelling toont het de live gemeten gegevens: de tellingen van de meteorradar van Collm, de camera's van het Global Meteor Network, de CMOR-radar, de GRAVES-zender en het meteorscatter-verkeer dat via de clusters en PSKReporter wordt verzameld.
@@ -202,6 +202,7 @@ P|De catalogus die door alle berekeningen wordt gebruikt: de zwermen uit de IMO-
 LI|Code, naam, activiteitsperiode, zonnelengte van het maximum, volgend maximum (UTC) en de bron ervan (IMO of berekend), radiant, snelheid, populatie-index r, ZHR, type (visueel of radio overdag).
 LI|k: exponent van de frequentieomrekening op basis van de populatie-index (GMN indien beschikbaar, anders IMO).
 LI|IAU MDC: oplossingen, Δ radiant, Δλ, Δv: vergelijking met de catalogus van het IAU Meteor Data Center (gepubliceerde oplossingen en verschillen tussen de catalogus van het programma en hun mediaan).
+LI|De IAU MDC-catalogus zit al in de pakketten (data/cataloghi), zodat de vergelijking vanaf de eerste start werkt, ook zonder livebronnen; met livebronnen aan wordt hij hoogstens eens per maand stil opnieuw gedownload.
 LI|GMN vandaag: bevestigde banen in het laatste dagbestand van het Global Meteor Network.
 TAG|NOTA|De catalogus is het bestand data/sciami.csv en de IMO-maxima staan in data/massimi_imo.csv: ze kunnen met een teksteditor worden aangepast. Een foutieve regel wordt bij het opstarten gemeld en genegeerd.
 H1|11. Vakkenkaart

@@ -2,6 +2,10 @@
 
 # Definições e pasta de dados
 
+## O separador Definições
+
+O separador Definições reúne o funcionamento geral do programa: Aspeto (letra, tema e língua), Atualizações do programa (verificação no GitHub no arranque e a cada 30 minutos, atualizações automáticas e silenciosas, Verificar agora), Fontes em direto (atualização automática a cada 5 minutos), RMOB (observador, descarga imediata e recolha automática) e Programa (linhas de comandos e pasta dos dados). Os parâmetros do cálculo ficam nas linhas de comandos acima dos separadores.
+
 ## A barra de separadores
 
 Na extremidade direita da barra de separadores, da direita para a esquerda:
@@ -77,7 +81,7 @@ O esquema aplica-se a todos os separadores e é guardado em `config.ini` (chave 
 
 ## Tipo de letra e Comandos
 
-- **Tipo de letra** (no fim da primeira fila de comandos): amplia **todo o texto** de **85 a 140 %** em passos de 5 %; linhas, círculos e mapas mantêm o tamanho. Com letra grande os separadores passam para uma segunda linha e os cartões crescem.
+- **Tipo de letra** (Definições): amplia **todo o texto** de **85 a 140 %** em passos de 5 %; linhas, círculos e mapas mantêm o tamanho. Com letra grande os separadores passam para uma segunda linha e os cartões crescem.
 - **Comandos**: com letra grande ou um ecrã pequeno, recolha as três filas de comandos para deixar espaço a mapas e gráficos. O estado fica memorizado.
 
 ## Pasta de dados

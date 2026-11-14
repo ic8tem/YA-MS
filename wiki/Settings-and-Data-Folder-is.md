@@ -2,6 +2,10 @@
 
 # Stillingar og gagnamappa
 
+## Flipinn Stillingar
+
+Flipinn Stillingar safnar saman almennri virkni forritsins: Útlit (letur, þema og tungumál), Uppfærslur forritsins (athugun á GitHub við ræsingu og á 30 mínútna fresti, sjálfvirkar hljóðlátar uppfærslur, Athuga núna), Rauntímaheimildir (sjálfvirk uppfærsla á 5 mínútna fresti), RMOB (athugandi, sækja núna og sjálfvirk sókn) og Forrit (skipanalínur og gagnamappa). Reiknistikarnir eru áfram í skipanalínunum fyrir ofan flipana.
+
 ## Flipastikan
 
 Hægra megin á flipastikunni, frá hægri til vinstri:
@@ -77,7 +81,7 @@ Listinn **Þema** býður upp á 12 þemu, þau sömu og í EME-forriti höfunda
 
 ## Letur og Stýringar
 
-- **Letur** (í enda fyrstu raðar stýringanna): stækkar **allan texta** úr **85 í 140 %** í 5 % skrefum; línur, hringir og kort halda stærð sinni. Með stóru letri brotna fliparnir í aðra línu og spjöldin stækka.
+- **Letur** (Stillingar): stækkar **allan texta** úr **85 í 140 %** í 5 % skrefum; línur, hringir og kort halda stærð sinni. Með stóru letri brotna fliparnir í aðra línu og spjöldin stækka.
 - **Stýringar**: með stóru letri eða litlum skjá skaltu fella saman raðirnar þrjár til að rýma fyrir kortum og gröfum. Staðan er munuð.
 
 ## Gagnamappa

@@ -2,6 +2,10 @@
 
 # Impostazioni e cartella dei dati
 
+## La linguetta Impostazioni
+
+La linguetta Impostazioni raccoglie il funzionamento generale del programma: Aspetto (carattere, tema e lingua), Aggiornamenti del programma (controllo su GitHub all'avvio e ogni 30 minuti, aggiornamenti automatici e silenziosi, Controlla adesso), Fonti in diretta (aggiornamento automatico ogni 5 minuti), RMOB (osservatore, scarico adesso e prelievo automatico) e Programma (righe dei comandi e cartella dei dati). I parametri del calcolo restano nelle righe dei comandi sopra le linguette.
+
 ## La barra delle linguette
 
 All'estremità destra della barra delle linguette, da destra verso sinistra:
@@ -77,7 +81,7 @@ Lo schema vale per tutte le linguette ed è salvato in `config.ini` (chiave `tem
 
 ## Carattere e Comandi
 
-- **Carattere** (in fondo alla prima riga di comandi): ingrandisce **tutto il testo** dal **85 al 140 %** a passi del 5 %; linee, cerchi e mappe mantengono la loro dimensione. Con caratteri grandi le linguette vanno a capo su una seconda riga e le schede si ingrandiscono.
+- **Carattere** (Impostazioni): ingrandisce **tutto il testo** dal **85 al 140 %** a passi del 5 %; linee, cerchi e mappe mantengono la loro dimensione. Con caratteri grandi le linguette vanno a capo su una seconda riga e le schede si ingrandiscono.
 - **Comandi**: con caratteri grandi o uno schermo piccolo, ripiega le tre righe di comandi per lasciare spazio a mappe e grafici. Lo stato viene ricordato.
 
 ## Cartella dei dati

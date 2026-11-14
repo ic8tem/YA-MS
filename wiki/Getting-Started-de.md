@@ -17,7 +17,6 @@ Beim ersten Start zeigt YA-MS eine Beispielstrecke (JN70CN → JO62QM auf 144 MH
 | **Band MHz** | 28, 50, 70, 144, 222 oder 432 MHz: verwendet für Antennengewinn und Keule, die Flussschätzung und die Streckenbilanz. |
 | **Berechnen** | Berechnet die Strecke neu (Abtastung der E-Schicht: wenige Sekunden). |
 | **Antennen-Az.** | Oben im Feld der Gegenstation, neben der Karte: Azimut deiner Antenne, immer **Richtung DX** (Azimut der Strecke). Darunter, in derselben Spalte, steht die Kartenlegende. |
-| **Schrift** | Größe des gesamten Textes, 85–140 %. Siehe [Einstellungen](Settings-and-Data-Folder-de#schrift-und-bedienung). |
 
 **Zeile 2 – E-Schicht und Antenne**
 

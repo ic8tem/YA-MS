@@ -2,6 +2,10 @@
 
 # Pengaturan dan folder data
 
+## Tab Pengaturan
+
+Tab Pengaturan menghimpun cara kerja umum program: Tampilan (huruf, tema, dan bahasa), Pembaruan program (pemeriksaan di GitHub saat mulai dan setiap 30 menit, pembaruan otomatis senyap, Periksa sekarang), Sumber langsung (pembaruan otomatis setiap 5 menit), RMOB (pengamat, unduh sekarang, dan pengambilan otomatis) serta Program (baris perintah dan folder data). Parameter perhitungan tetap di baris perintah di atas tab.
+
 ## Bilah tab
 
 Di ujung kanan bilah tab, dari kanan ke kiri:
@@ -77,7 +81,7 @@ Skema berlaku untuk semua tab dan disimpan di `config.ini` (kunci `tema`).
 
 ## Huruf dan Kontrol
 
-- **Huruf** (di ujung baris kontrol pertama): memperbesar **seluruh teks** dari **85 hingga 140 %** dengan langkah 5 %; garis, lingkaran dan peta tetap berukuran sama. Dengan huruf besar, tab berpindah ke baris kedua dan kartu membesar.
+- **Huruf** (Pengaturan): memperbesar **seluruh teks** dari **85 hingga 140 %** dengan langkah 5 %; garis, lingkaran dan peta tetap berukuran sama. Dengan huruf besar, tab berpindah ke baris kedua dan kartu membesar.
 - **Kontrol**: dengan huruf besar atau layar kecil, lipat ketiga baris kontrol untuk memberi ruang bagi peta dan grafik. Keadaannya diingat.
 
 ## Folder data

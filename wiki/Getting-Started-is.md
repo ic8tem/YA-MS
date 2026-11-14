@@ -17,7 +17,6 @@ Fyrir ofan flipana eru þrjár raðir stýringa sem gilda fyrir alla flipa. Hnap
 | **Tíðnisvið MHz** | 28, 50, 70, 144, 222 eða 432 MHz: notað fyrir mögnun og geisla loftnetsins, mat á flæði og aflreikninginn. |
 | **Reikna** | Reiknar leiðina upp á nýtt (úrtak úr E-laginu: nokkrar sekúndur). |
 | **Loftnet az** | Efst í reit mótstöðvarinnar, við hlið kortsins: stefna loftnetsins þíns, alltaf **að DX** (stefna leiðarinnar). Fyrir neðan, í sama dálki, er skýring kortsins. |
-| **Letur** | Stærð alls texta, 85–140 %. Sjá [Stillingar](Settings-and-Data-Folder-is#letur-og-stýringar). |
 
 **Röð 2 – E-lagið og loftnetið**
 

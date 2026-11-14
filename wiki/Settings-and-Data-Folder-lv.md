@@ -2,6 +2,10 @@
 
 # Iestatījumi un datu mape
 
+## Cilne Iestatījumi
+
+Cilne Iestatījumi apkopo programmas vispārējo darbību: Izskats (fonts, tēma un valoda), Programmas atjauninājumi (pārbaude GitHub, startējot un ik pēc 30 minūtēm, automātiski klusi atjauninājumi, Pārbaudīt tagad), Tiešsaistes avoti (automātiska atjaunināšana ik pēc 5 minūtēm), RMOB (novērotājs, lejupielādēt tagad un automātiska ielāde) un Programma (komandu rindas un datu mape). Aprēķina parametri paliek komandu rindās virs cilnēm.
+
 ## Ciļņu josla
 
 Ciļņu joslas labajā galā, no labās uz kreiso:
@@ -77,7 +81,7 @@ Shēma attiecas uz visām cilnēm un tiek saglabāta failā `config.ini` (atslē
 
 ## Fonts un Vadība
 
-- **Fonts** (pirmās vadības rindas beigās): palielina **visu tekstu** no **85 līdz 140 %** ar 5 % soli; līnijas, apļi un kartes saglabā savu izmēru. Ar lieliem fontiem cilnes pārnesas otrā rindā un kartītes kļūst lielākas.
+- **Fonts** (Iestatījumi): palielina **visu tekstu** no **85 līdz 140 %** ar 5 % soli; līnijas, apļi un kartes saglabā savu izmēru. Ar lieliem fontiem cilnes pārnesas otrā rindā un kartītes kļūst lielākas.
 - **Vadība**: ar lieliem fontiem vai mazu ekrānu sakļauj trīs vadības rindas, lai atbrīvotu vietu kartēm un grafikiem. Stāvoklis tiek atcerēts.
 
 ## Datu mape

@@ -2,6 +2,10 @@
 
 # Indstillinger og datamappe
 
+## Fanen Indstillinger
+
+Fanen Indstillinger samler programmets generelle funktion: Udseende (skrift, tema og sprog), Programopdateringer (tjek på GitHub ved start og hvert 30. minut, automatiske stille opdateringer, Tjek nu), Kilder i realtid (automatisk opdatering hvert 5. minut), RMOB (observatør, hent nu og automatisk hentning) og Program (kommandolinjer og datamappe). Beregningsparametrene bliver i kommandolinjerne over fanerne.
+
 ## Fanelinjen
 
 I højre ende af fanelinjen, fra højre mod venstre:
@@ -77,7 +81,7 @@ Skemaet gælder for alle faner og gemmes i `config.ini` (nøglen `tema`).
 
 ## Skrifttype og Betjening
 
-- **Skrifttype** (i slutningen af første række betjeningselementer): forstørrer **al tekst** fra **85 til 140 %** i trin på 5 %; linjer, cirkler og kort beholder deres størrelse. Med store skrifttyper brydes fanerne over på en ekstra linje, og boksene vokser.
+- **Skrifttype** (Indstillinger): forstørrer **al tekst** fra **85 til 140 %** i trin på 5 %; linjer, cirkler og kort beholder deres størrelse. Med store skrifttyper brydes fanerne over på en ekstra linje, og boksene vokser.
 - **Betjening**: med store skrifttyper eller en lille skærm kan du folde de tre rækker betjeningselementer sammen for at give plads til kort og grafer. Tilstanden huskes.
 
 ## Datamappe

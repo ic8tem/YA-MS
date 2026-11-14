@@ -2,6 +2,10 @@
 
 # Instellingen en gegevensmap
 
+## Het tabblad Instellingen
+
+Het tabblad Instellingen bundelt de algemene werking van het programma: Weergave (lettergrootte, thema en taal), Programma-updates (controle op GitHub bij het starten en elke 30 minuten, automatische stille updates, Nu controleren), Live bronnen (automatische update elke 5 minuten), RMOB (waarnemer, nu downloaden en automatisch ophalen) en Programma (opdrachtregels en gegevensmap). De rekenparameters blijven in de opdrachtregels boven de tabbladen.
+
 ## De tabbladbalk
 
 Aan het rechteruiteinde van de tabbladbalk, van rechts naar links:
@@ -77,7 +81,7 @@ Het schema geldt voor alle tabbladen en wordt opgeslagen in `config.ini` (sleute
 
 ## Lettertype en Bediening
 
-- **Lettertype** (aan het eind van de eerste rij bedieningselementen): vergroot **alle tekst** van **85 tot 140 %** in stappen van 5 %; lijnen, cirkels en kaarten behouden hun grootte. Met grote lettertypen lopen de tabbladen door op een tweede regel en worden de kaarten groter.
+- **Lettertype** (Instellingen): vergroot **alle tekst** van **85 tot 140 %** in stappen van 5 %; lijnen, cirkels en kaarten behouden hun grootte. Met grote lettertypen lopen de tabbladen door op een tweede regel en worden de kaarten groter.
 - **Bediening**: met grote lettertypen of een klein scherm klap je de drie rijen bedieningselementen in om ruimte te maken voor kaarten en grafieken. De toestand wordt onthouden.
 
 ## Gegevensmap

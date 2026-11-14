@@ -2,6 +2,10 @@
 
 # Inställningar och datamapp
 
+## Fliken Inställningar
+
+Fliken Inställningar samlar programmets allmänna funktion: Utseende (teckenstorlek, tema och språk), Programuppdateringar (kontroll på GitHub vid start och var 30:e minut, automatiska tysta uppdateringar, Kontrollera nu), Källor i realtid (automatisk uppdatering var 5:e minut), RMOB (observatör, hämta nu och automatisk hämtning) och Program (kommandorader och datamapp). Beräkningsparametrarna stannar i kommandoraderna ovanför flikarna.
+
 ## Flikraden
 
 I högra änden av flikraden, från höger till vänster:
@@ -77,7 +81,7 @@ Schemat gäller alla flikar och sparas i `config.ini` (nyckeln `tema`).
 
 ## Typsnitt och Reglage
 
-- **Typsnitt** (i slutet av den första raden med reglage): förstorar **all text** från **85 till 140 %** i steg om 5 %; linjer, cirklar och kartor behåller sin storlek. Med stora typsnitt bryts flikarna över till en andra rad och korten växer.
+- **Typsnitt** (Inställningar): förstorar **all text** från **85 till 140 %** i steg om 5 %; linjer, cirklar och kartor behåller sin storlek. Med stora typsnitt bryts flikarna över till en andra rad och korten växer.
 - **Reglage**: med stora typsnitt eller en liten skärm, fäll ihop de tre raderna med reglage för att ge plats åt kartor och diagram. Tillståndet sparas.
 
 ## Datamapp

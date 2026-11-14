@@ -2,6 +2,10 @@
 
 # Beállítások és adatmappa
 
+## A Beállítások fül
+
+A Beállítások fül a program általános működését gyűjti össze: Megjelenés (betűméret, téma és nyelv), Programfrissítések (ellenőrzés a GitHubon indításkor és 30 percenként, automatikus csendes frissítés, Ellenőrzés most), Élő források (automatikus frissítés 5 percenként), RMOB (megfigyelő, letöltés most és automatikus letöltés) és Program (parancssorok és adatmappa). A számítás paraméterei a fülek feletti parancssorokban maradnak.
+
 ## A fülsor
 
 A fülsor jobb végén, jobbról balra:
@@ -77,7 +81,7 @@ A séma minden fülre érvényes, és a `config.ini` fájlba mentődik (`tema` k
 
 ## Betűméret és vezérlők
 
-- **Betűméret** (a vezérlők első sorának végén): **az összes szöveget** **85 és 140 %** között nagyítja, 5 %-os lépésekben; a vonalak, körök és térképek megtartják a méretüket. Nagy betűméretnél a fülek második sorba törnek, a kártyák pedig megnőnek.
+- **Betűméret** (Beállítások): **az összes szöveget** **85 és 140 %** között nagyítja, 5 %-os lépésekben; a vonalak, körök és térképek megtartják a méretüket. Nagy betűméretnél a fülek második sorba törnek, a kártyák pedig megnőnek.
 - **Vezérlők**: nagy betűméretnél vagy kis képernyőn csukja össze a három vezérlősort, hogy több hely maradjon a térképeknek és grafikonoknak. Az állapotot a program megjegyzi.
 
 ## Adatmappa

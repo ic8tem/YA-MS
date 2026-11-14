@@ -17,7 +17,6 @@ Sekmelerin üstünde, tüm sekmeler için geçerli üç sıra kontrol vardır. S
 | **Bant MHz** | 28, 50, 70, 144, 222 ya da 432 MHz: anten kazancı ve lobu, akı tahmini ve bağlantı bütçesi için kullanılır. |
 | **Hesapla** | Yolu yeniden hesaplar (E katmanının örneklenmesi: birkaç saniye). |
 | **Anten az** | Karşı istasyon kutusunun üstünde, haritanın yanında: anteninizin azimutu, her zaman **DX'e doğru** (hattın azimutu). Altında, aynı sütunda, harita açıklaması var. |
-| **Yazı tipi** | Tüm metnin boyutu, %85–140. Bkz. [Ayarlar](Settings-and-Data-Folder-tr#yazı-tipi-ve-kontroller). |
 
 **2. sıra – E katmanı ve anten**
 

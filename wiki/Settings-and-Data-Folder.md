@@ -2,6 +2,10 @@
 
 # Settings and data folder
 
+## The Settings tab
+
+The Settings tab gathers the general working of the program: Appearance (font, theme and language), Program updates (check on GitHub at start-up and every 30 minutes, automatic silent updates, Check now), Live sources (automatic update every 5 minutes), RMOB (observer, download now and automatic fetch) and Program (command rows and data folder). The calculation parameters stay in the command rows above the tabs.
+
 ## The tab bar
 
 At the right end of the tab bar, from right to left:
@@ -77,7 +81,7 @@ The scheme applies to all tabs and is saved in `config.ini` (key `tema`).
 
 ## Font and Controls
 
-- **Font** (end of the first row of controls): enlarges **all the text** from **85 to 140 %** in 5 % steps; lines, circles and maps keep their size. With large fonts the tabs wrap onto a second line and the cards grow.
+- **Font** (Settings): enlarges **all the text** from **85 to 140 %** in 5 % steps; lines, circles and maps keep their size. With large fonts the tabs wrap onto a second line and the cards grow.
 - **Controls**: with large fonts or a small screen, fold the three rows of controls to leave room for maps and charts. The state is remembered.
 
 ## Data folder

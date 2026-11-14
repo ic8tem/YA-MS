@@ -21,6 +21,7 @@ namespace YAMS
 {
     public partial class MainWindow : Window
     {
+        public static bool Hosted = false;   // true dentro E-LAYER ANALYZER (tools/sync_yams.py)
         string dataDir;
         Config cfg;
         PathModel model;
@@ -577,9 +578,9 @@ namespace YAMS
             WhenChanged(sldFont, RangeBase.ValueProperty, () => SetFontPercent(sldFont.Value));
             Border row3 = Row(L(Lang.T("Ora")), lblClock, L(Lang.T("Data del calcolo (UTC)")), dtCalc, L(Lang.T("Ore (da −12 a +36 h)")), trackTime,
                               btnReal, lblSkyTime);
-            // riga 1: stazioni e banda, azimut d'antenna e cursore del carattere (la prima riga ha spazio)
+            // riga 1: stazioni e banda
             Border row1 = Row(L(Lang.T("Il mio locator")), txtHome, L(Lang.T("quota m")), numHomeAlt,
-                       L(Lang.T("Banda MHz")), cmbBand, btnCalc, L(Lang.T("Carattere")), sldFont, lblFont);   // il puntamento sta nel riquadro del corrispondente
+                       L(Lang.T("Banda MHz")), cmbBand, btnCalc);   // il puntamento sta nel riquadro del corrispondente, il carattere nella linguetta Impostazioni
             // il corrispondente (nominativo, locator, quota) sta nel Calcolo previsionale, accanto alla mappa
             // (bozzetto B scelto dall'autore, 13/11/2026): BuildDxPanel()
 
@@ -659,7 +660,7 @@ namespace YAMS
             numExp = N(1, 4, Dm(cfg.GetD("esponente_lambda", 3)), 1, 0.1m, 50);
             numExp.ValueChanged += (s, e) => UpdateFluxTab();
             lblRadar = L("");
-            DockTop(p3, Row(btnFetch, chkAuto, L(Lang.T("Esponente λ (SM6FHZ)")), numExp, lblRadar));
+            DockTop(p3, Row(btnFetch, L(Lang.T("Esponente λ (SM6FHZ)")), numExp, lblRadar));   // chkAuto nella linguetta Impostazioni
             lblScaleNote = new TextBlock { Foreground = Pal.B(Pal.OrangeText), TextWrapping = TextWrapping.Wrap, Margin = new Thickness(6, 4, 6, 4) };
             DockTop(p3, lblScaleNote);
             Grid tl = new Grid { ColumnDefinitions = new ColumnDefinitions("62*,38*"), RowDefinitions = new RowDefinitions("50*,50*") };
@@ -981,6 +982,9 @@ namespace YAMS
 
             // --- Mappa quadrati da ADIF (MainWindow.Grid.cs)
             BuildGridTab();
+
+            // --- Impostazioni: funzionamento generale del programma (MainWindow.Impostazioni.cs)
+            BuildSettingsTab();
 
             // ===== ultima: Documenti tecnici: fonti, mappa dei radar europei, efficienza - spiegazione
             Group(Lang.T("Documenti tecnici"));

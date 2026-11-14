@@ -2,6 +2,10 @@
 
 # Ustawienia i folder danych
 
+## Karta Ustawienia
+
+Karta Ustawienia zbiera ogólne działanie programu: Wygląd (czcionka, motyw i język), Aktualizacje programu (sprawdzanie na GitHub przy starcie i co 30 minut, automatyczne ciche aktualizacje, Sprawdź teraz), Źródła na żywo (automatyczna aktualizacja co 5 minut), RMOB (obserwator, pobierz teraz i automatyczne pobieranie) oraz Program (wiersze poleceń i folder danych). Parametry obliczeń zostają w wierszach poleceń nad kartami.
+
 ## Pasek zakładek
 
 Na prawym końcu paska zakładek, od prawej do lewej:
@@ -77,7 +81,7 @@ Schemat dotyczy wszystkich zakładek i jest zapisywany w `config.ini` (klucz `te
 
 ## Czcionka i Sterowanie
 
-- **Czcionka** (na końcu pierwszego wiersza elementów sterujących): powiększa **cały tekst** od **85 do 140 %** w krokach co 5 %; linie, okręgi i mapy zachowują swój rozmiar. Przy dużych czcionkach zakładki przechodzą do drugiego wiersza, a karty się powiększają.
+- **Czcionka** (Ustawienia): powiększa **cały tekst** od **85 do 140 %** w krokach co 5 %; linie, okręgi i mapy zachowują swój rozmiar. Przy dużych czcionkach zakładki przechodzą do drugiego wiersza, a karty się powiększają.
 - **Sterowanie**: przy dużych czcionkach lub małym ekranie zwiń trzy wiersze elementów sterujących, aby zostawić miejsce na mapy i wykresy. Stan jest zapamiętywany.
 
 ## Folder danych

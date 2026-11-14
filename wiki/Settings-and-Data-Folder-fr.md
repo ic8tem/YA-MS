@@ -2,6 +2,10 @@
 
 # Réglages et dossier des données
 
+## L'onglet Paramètres
+
+L'onglet Paramètres regroupe le fonctionnement général du programme : Apparence (police, thème et langue), Mises à jour du programme (vérification sur GitHub au démarrage et toutes les 30 minutes, mises à jour automatiques et silencieuses, Vérifier maintenant), Sources en direct (mise à jour automatique toutes les 5 minutes), RMOB (observateur, téléchargement immédiat et prélèvement automatique) et Programme (lignes de commandes et dossier des données). Les paramètres du calcul restent dans les lignes de commandes au-dessus des onglets.
+
 ## La barre des onglets
 
 À l'extrémité droite de la barre des onglets, de droite à gauche :
@@ -77,7 +81,7 @@ Le schéma s'applique à tous les onglets et est enregistré dans `config.ini` (
 
 ## Police et Commandes
 
-- **Police** (à la fin de la première rangée de commandes) : agrandit **tout le texte** de **85 à 140 %** par pas de 5 % ; les traits, les cercles et les cartes gardent leur taille. Avec de grandes polices, les onglets passent sur une deuxième ligne et les cartes de synthèse s'agrandissent.
+- **Police** (Paramètres) : agrandit **tout le texte** de **85 à 140 %** par pas de 5 % ; les traits, les cercles et les cartes gardent leur taille. Avec de grandes polices, les onglets passent sur une deuxième ligne et les cartes de synthèse s'agrandissent.
 - **Commandes** : avec de grandes polices ou un petit écran, repliez les trois rangées de commandes pour laisser de la place aux cartes et aux graphiques. L'état est mémorisé.
 
 ## Dossier des données

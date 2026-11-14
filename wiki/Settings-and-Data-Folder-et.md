@@ -2,6 +2,10 @@
 
 # Seaded ja andmekaust
 
+## Vahekaart Seaded
+
+Vahekaart Seaded koondab programmi üldise töö: Välimus (kiri, teema ja keel), Programmi uuendused (kontroll GitHubis käivitamisel ja iga 30 minuti järel, automaatsed vaiksed uuendused, Kontrolli kohe), Reaalajas allikad (automaatne uuendus iga 5 minuti järel), RMOB (vaatleja, laadi kohe ja automaatne laadimine) ning Programm (käsuread ja andmekaust). Arvutuse parameetrid jäävad vahekaartide kohal olevatesse käsuridadesse.
+
 ## Sakiriba
 
 Sakiriba paremas otsas, paremalt vasakule:
@@ -77,7 +81,7 @@ Skeem kehtib kõigil sakkidel ja salvestatakse faili `config.ini` (võti `tema`)
 
 ## Font ja juhtnupud
 
-- **Font** (juhtnuppude esimese rea lõpus): suurendab **kogu teksti** **85 kuni 140 %** 5 % sammudega; jooned, ringid ja kaardid säilitavad oma suuruse. Suure fondi korral murduvad sakid teisele reale ja infokaardid kasvavad.
+- **Font** (Seaded): suurendab **kogu teksti** **85 kuni 140 %** 5 % sammudega; jooned, ringid ja kaardid säilitavad oma suuruse. Suure fondi korral murduvad sakid teisele reale ja infokaardid kasvavad.
 - **Juhtnupud**: suure fondi või väikese ekraani korral peida kolm juhtnuppude rida, et jätta ruumi kaartidele ja graafikutele. Olek jäetakse meelde.
 
 ## Andmekaust

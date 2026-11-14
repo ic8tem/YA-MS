@@ -17,7 +17,6 @@ Por cima dos separadores há três filas de comandos, válidas para todos os sep
 | **Banda MHz** | 28, 50, 70, 144, 222 ou 432 MHz: usada para o ganho e o lóbulo da antena, a estimativa do fluxo e o balanço da ligação. |
 | **Calcular** | Recalcula o percurso (amostragem da camada E: alguns segundos). |
 | **Antena az** | Em cima no quadro do correspondente, ao lado do mapa: azimute da sua antena, sempre **para o DX** (azimute do percurso). Por baixo, na mesma coluna, está a legenda do mapa. |
-| **Tipo de letra** | Tamanho de todo o texto, 85–140 %. Ver [Definições](Settings-and-Data-Folder-pt#tipo-de-letra-e-comandos). |
 
 **Fila 2 – camada E e antena**
 

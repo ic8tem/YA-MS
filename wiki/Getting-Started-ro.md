@@ -17,7 +17,6 @@ Deasupra filelor sunt trei rânduri de comenzi, valabile pentru toate filele. Bu
 | **Bandă MHz** | 28, 50, 70, 144, 222 sau 432 MHz: folosită pentru câștigul și lobul antenei, estimarea fluxului și bilanțul legăturii. |
 | **Calculează** | Recalculează traseul (eșantionarea stratului E: câteva secunde). |
 | **Az antenă** | Sus în caseta corespondentului, lângă hartă: azimutul antenei dvs., mereu **spre DX** (azimutul traseului). Dedesubt, în aceeași coloană, este legenda hărții. |
-| **Font** | Dimensiunea întregului text, 85–140 %. Vedeți [Setări](Settings-and-Data-Folder-ro#font-și-comenzi). |
 
 **Rândul 2 – stratul E și antena**
 

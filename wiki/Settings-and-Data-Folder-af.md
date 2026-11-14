@@ -2,6 +2,10 @@
 
 # Instellings en datagids
 
+## Die oortjie Instellings
+
+Die oortjie Instellings versamel die algemene werking van die program: Voorkoms (lettertipe, tema en taal), Programbywerkings (kontrole op GitHub by begin en elke 30 minute, outomatiese stil bywerkings, Kontroleer nou), Regstreekse bronne (outomatiese bywerking elke 5 minute), RMOB (waarnemer, laai nou af en outomatiese haal) en Program (opdragrye en datavouer). Die berekeningsparameters bly in die opdragrye bo die oortjies.
+
 ## Die oortjiebalk
 
 Aan die regterkant van die oortjiebalk, van regs na links:
@@ -77,7 +81,7 @@ Die skema geld vir al die oortjies en word in `config.ini` gestoor (sleutel `tem
 
 ## Lettertipe en Kontroles
 
-- **Lettertipe** (einde van die eerste ry kontroles): vergroot **al die teks** van **85 tot 140 %** in stappe van 5 %; lyne, sirkels en kaarte behou hul grootte. Met groot lettertipes loop die oortjies oor na 'n tweede reël en word die kaarte groter.
+- **Lettertipe** (Instellings): vergroot **al die teks** van **85 tot 140 %** in stappe van 5 %; lyne, sirkels en kaarte behou hul grootte. Met groot lettertipes loop die oortjies oor na 'n tweede reël en word die kaarte groter.
 - **Kontroles**: met groot lettertipes of 'n klein skerm, vou die drie rye kontroles weg om plek te maak vir kaarte en grafieke. Die toestand word onthou.
 
 ## Datagids

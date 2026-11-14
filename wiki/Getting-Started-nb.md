@@ -17,7 +17,6 @@ Over fanene er det tre rader med kontroller som gjelder for alle fanene. Knappen
 | **Bånd MHz** | 28, 50, 70, 144, 222 eller 432 MHz: brukes for antennens forsterkning og lobe, fluksestimatet og linkbudsjettet. |
 | **Beregn** | Beregner strekningen på nytt (sampling av E-laget: noen sekunder). |
 | **Antenne az** | Øverst i motstasjonens boks, ved siden av kartet: asimut for antennen din, alltid **mot DX** (strekningens asimut). Under, i samme kolonne, står kartforklaringen. |
-| **Skrift** | Størrelsen på all tekst, 85–140 %. Se [Innstillinger](Settings-and-Data-Folder-nb#skrift-og-kontroller). |
 
 **Rad 2 – E-laget og antenne**
 

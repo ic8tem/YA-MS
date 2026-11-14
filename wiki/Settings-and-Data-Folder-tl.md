@@ -2,6 +2,10 @@
 
 # Mga setting at folder ng datos
 
+## Ang tab na Mga setting
+
+Tinitipon ng tab na Mga setting ang pangkalahatang takbo ng programa: Hitsura (font, tema at wika), Mga update ng programa (pagsusuri sa GitHub sa pagsisimula at tuwing 30 minuto, awtomatiko at tahimik na update, Suriin ngayon), Mga live na pinagmulan (awtomatikong update tuwing 5 minuto), RMOB (tagamasid, i-download ngayon at awtomatikong pagkuha) at Programa (mga hilera ng utos at folder ng data). Nananatili ang mga parametro ng kalkulasyon sa mga hilera ng utos sa itaas ng mga tab.
+
 ## Ang tab bar
 
 Sa kanang dulo ng tab bar, mula kanan pakaliwa:
@@ -77,7 +81,7 @@ Inilalapat ang scheme sa lahat ng tab at sine-save sa `config.ini` (key na `tema
 
 ## Font at Mga kontrol
 
-- **Font** (dulo ng unang hanay ng mga kontrol): pinalalaki ang **lahat ng teksto** mula **85 hanggang 140 %** sa mga hakbang na 5 %; hindi nagbabago ang laki ng mga linya, bilog at mapa. Kapag malaki ang font, bumababa sa ikalawang linya ang mga tab at lumalaki ang mga card.
+- **Font** (Mga setting): pinalalaki ang **lahat ng teksto** mula **85 hanggang 140 %** sa mga hakbang na 5 %; hindi nagbabago ang laki ng mga linya, bilog at mapa. Kapag malaki ang font, bumababa sa ikalawang linya ang mga tab at lumalaki ang mga card.
 - **Mga kontrol**: kapag malaki ang font o maliit ang screen, itiklop ang tatlong hanay ng mga kontrol para magkaroon ng puwang ang mga mapa at graph. Natatandaan ang kalagayan.
 
 ## Folder ng datos

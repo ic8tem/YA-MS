@@ -55,6 +55,9 @@ NOVITA' DELLA 1.8.11
     Se in WSJT-X.ini (o JTDX.ini) l'invio a PSKReporter e' spento, YA-MS rimanda subito.
   - Tempi: CALL3 da MMMonVHF ogni 12 ore (prima 7 giorni); ricerche G7VRD e controllo degli aggiornamenti ogni
     30 minuti (prima 6 ore); le correzioni restano scritte in data/call3.txt alla chiusura e ogni 6 ore.
+  - Nuova linguetta "Impostazioni": carattere, tema e lingua, aggiornamenti del programma, aggiornamento automatico
+    delle fonti in diretta, RMOB, righe dei comandi e cartella dei dati. Il cursore del carattere non e' piu' nella
+    prima riga dei comandi. Legenda della mappa con i colori dei radianti sempre visibili.
 
 NOVITA' DELLA 1.8.10
   - Raccolta dati: quinta fonte WSJT-X / JTDX / MSHV via UDP, come in LIVETROPOVHF (porta 2237, anche multicast;

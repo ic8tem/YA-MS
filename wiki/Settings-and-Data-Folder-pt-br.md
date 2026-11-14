@@ -2,6 +2,10 @@
 
 # Configurações e pasta de dados
 
+## A aba Configurações
+
+A aba Configurações reúne o funcionamento geral do programa: Aparência (fonte, tema e idioma), Atualizações do programa (verificação no GitHub ao iniciar e a cada 30 minutos, atualizações automáticas e silenciosas, Verificar agora), Fontes ao vivo (atualização automática a cada 5 minutos), RMOB (observador, download imediato e coleta automática) e Programa (linhas de comandos e pasta de dados). Os parâmetros do cálculo ficam nas linhas de comandos acima das abas.
+
 ## A barra de abas
 
 Na extremidade direita da barra de abas, da direita para a esquerda:
@@ -77,7 +81,7 @@ O esquema se aplica a todas as abas e é salvo em `config.ini` (chave `tema`).
 
 ## Fonte e Comandos
 
-- **Fonte** (no fim da primeira linha de comandos): amplia **todo o texto** de **85 a 140 %** em passos de 5 %; linhas, círculos e mapas mantêm o tamanho. Com fonte grande as abas passam para uma segunda linha e os cartões crescem.
+- **Fonte** (Configurações): amplia **todo o texto** de **85 a 140 %** em passos de 5 %; linhas, círculos e mapas mantêm o tamanho. Com fonte grande as abas passam para uma segunda linha e os cartões crescem.
 - **Comandos**: com fonte grande ou uma tela pequena, oculte as três linhas de comandos para deixar espaço para mapas e gráficos. A escolha fica memorizada.
 
 ## Pasta de dados

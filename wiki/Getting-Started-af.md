@@ -17,7 +17,6 @@ Bo die oortjies is daar drie rye kontroles, geldig vir al die oortjies. Die knop
 | **Band MHz** | 28, 50, 70, 144, 222 of 432 MHz: gebruik vir die antennawins en -lob, die vloedskatting en die skakelbegroting. |
 | **Bereken** | Bereken die pad oor (monsterneming van die E-laag: 'n paar sekondes). |
 | **Antenna az** | Bo in die korrespondent se blokkie, langs die kaart: azimut van jou antenna, altyd **na die DX** (azimut van die pad). Daaronder, in dieselfde kolom, is die kaartsleutel. |
-| **Lettertipe** | Grootte van al die teks, 85–140 %. Sien [Instellings](Settings-and-Data-Folder-af#lettertipe-en-kontroles). |
 
 **Ry 2 – E-laag en antenna**
 

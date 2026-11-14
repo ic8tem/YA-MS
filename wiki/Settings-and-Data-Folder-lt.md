@@ -2,6 +2,10 @@
 
 # Nustatymai ir duomenų aplankas
 
+## Kortelė Nustatymai
+
+Kortelė Nustatymai apima bendrą programos veikimą: Išvaizda (šriftas, tema ir kalba), Programos atnaujinimai (tikrinimas GitHub paleidžiant ir kas 30 minučių, automatiniai tylūs atnaujinimai, Tikrinti dabar), Tiesioginiai šaltiniai (automatinis atnaujinimas kas 5 minutes), RMOB (stebėtojas, atsisiųsti dabar ir automatinis gavimas) ir Programa (komandų eilutės ir duomenų aplankas). Skaičiavimo parametrai lieka komandų eilutėse virš kortelių.
+
 ## Kortelių juosta
 
 Kortelių juostos dešiniajame gale, iš dešinės į kairę:
@@ -77,7 +81,7 @@ Schema taikoma visoms kortelėms ir išsaugoma `config.ini` (raktas `tema`).
 
 ## Šriftas ir valdymas
 
-- **Šriftas** (pirmosios valdymo eilutės gale): padidina **visą tekstą** nuo **85 iki 140 %** 5 % žingsniais; linijos, apskritimai ir žemėlapiai išlaiko savo dydį. Su dideliu šriftu kortelės persikelia į antrą eilutę, o skydeliai padidėja.
+- **Šriftas** (Nustatymai): padidina **visą tekstą** nuo **85 iki 140 %** 5 % žingsniais; linijos, apskritimai ir žemėlapiai išlaiko savo dydį. Su dideliu šriftu kortelės persikelia į antrą eilutę, o skydeliai padidėja.
 - **Valdymas**: su dideliu šriftu ar mažu ekranu suskleiskite tris valdymo eilutes, kad liktų vietos žemėlapiams ir grafikams. Būsena įsimenama.
 
 ## Duomenų aplankas

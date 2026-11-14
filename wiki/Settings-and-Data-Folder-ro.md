@@ -2,6 +2,10 @@
 
 # Setări și dosarul de date
 
+## Fila Setări
+
+Fila Setări adună funcționarea generală a programului: Aspect (font, temă și limbă), Actualizările programului (verificare pe GitHub la pornire și la fiecare 30 de minute, actualizări automate și silențioase, Verifică acum), Surse în direct (actualizare automată la fiecare 5 minute), RMOB (observator, descărcare imediată și preluare automată) și Program (rândurile de comenzi și dosarul de date). Parametrii calculului rămân în rândurile de comenzi de deasupra filelor.
+
 ## Bara de file
 
 La capătul din dreapta al barei de file, de la dreapta la stânga:
@@ -77,7 +81,7 @@ Schema se aplică tuturor filelor și este salvată în `config.ini` (cheia `tem
 
 ## Font și comenzi
 
-- **Font** (la capătul primului rând de comenzi): mărește **întregul text** de la **85 la 140 %** în pași de 5 %; liniile, cercurile și hărțile își păstrează dimensiunea. Cu fonturi mari, filele trec pe un al doilea rând, iar cardurile cresc.
+- **Font** (Setări): mărește **întregul text** de la **85 la 140 %** în pași de 5 %; liniile, cercurile și hărțile își păstrează dimensiunea. Cu fonturi mari, filele trec pe un al doilea rând, iar cardurile cresc.
 - **Comenzi**: cu fonturi mari sau un ecran mic, pliați cele trei rânduri de comenzi pentru a lăsa loc hărților și graficelor. Starea este memorată.
 
 ## Dosarul de date

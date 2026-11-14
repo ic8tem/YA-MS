@@ -2,6 +2,10 @@
 
 # Einstellungen und Datenordner
 
+## Der Reiter Einstellungen
+
+Der Reiter Einstellungen fasst die allgemeine Arbeitsweise des Programms zusammen: Darstellung (Schrift, Thema und Sprache), Programm-Updates (Prüfung auf GitHub beim Start und alle 30 Minuten, automatische stille Updates, Jetzt prüfen), Live-Quellen (automatische Aktualisierung alle 5 Minuten), RMOB (Beobachter, jetzt herunterladen und automatischer Abruf) und Programm (Befehlszeilen und Datenordner). Die Rechenparameter bleiben in den Befehlszeilen über den Reitern.
+
 ## Die Reiterleiste
 
 Am rechten Ende der Reiterleiste, von rechts nach links:
@@ -77,7 +81,7 @@ Das Schema gilt für alle Reiter und wird in `config.ini` gespeichert (Schlüsse
 
 ## Schrift und Bedienung
 
-- **Schrift** (Ende der ersten Bedienzeile): vergrößert **den gesamten Text** von **85 auf 140 %** in Schritten von 5 %; Linien, Kreise und Karten behalten ihre Größe. Bei großer Schrift brechen die Reiter in eine zweite Zeile um und die Karten werden größer.
+- **Schrift** (Einstellungen): vergrößert **den gesamten Text** von **85 auf 140 %** in Schritten von 5 %; Linien, Kreise und Karten behalten ihre Größe. Bei großer Schrift brechen die Reiter in eine zweite Zeile um und die Karten werden größer.
 - **Bedienung**: Bei großer Schrift oder kleinem Bildschirm klappst du die drei Bedienzeilen ein, um Platz für Karten und Diagramme zu schaffen. Der Zustand wird gespeichert.
 
 ## Datenordner

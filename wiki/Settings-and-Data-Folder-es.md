@@ -2,6 +2,10 @@
 
 # Ajustes y carpeta de datos
 
+## La pestaña Ajustes
+
+La pestaña Ajustes reúne el funcionamiento general del programa: Aspecto (letra, tema e idioma), Actualizaciones del programa (comprobación en GitHub al arrancar y cada 30 minutos, actualizaciones automáticas y silenciosas, Comprobar ahora), Fuentes en directo (actualización automática cada 5 minutos), RMOB (observador, descarga inmediata y recogida automática) y Programa (filas de mandos y carpeta de datos). Los parámetros del cálculo siguen en las filas de mandos sobre las pestañas.
+
 ## La barra de pestañas
 
 En el extremo derecho de la barra de pestañas, de derecha a izquierda:
@@ -77,7 +81,7 @@ El esquema se aplica a todas las pestañas y se guarda en `config.ini` (clave `t
 
 ## Fuente de letra y Controles
 
-- **Fuente de letra** (al final de la primera fila de controles): amplía **todo el texto** del **85 al 140 %** en pasos del 5 %; líneas, círculos y mapas mantienen su tamaño. Con fuentes grandes las pestañas pasan a una segunda línea y las tarjetas crecen.
+- **Fuente de letra** (Ajustes): amplía **todo el texto** del **85 al 140 %** en pasos del 5 %; líneas, círculos y mapas mantienen su tamaño. Con fuentes grandes las pestañas pasan a una segunda línea y las tarjetas crecen.
 - **Controles**: con fuentes grandes o una pantalla pequeña, pliega las tres filas de controles para dejar sitio a mapas y gráficos. El estado se recuerda.
 
 ## Carpeta de datos

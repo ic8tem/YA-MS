@@ -17,7 +17,6 @@ Nad zakładkami znajdują się trzy wiersze elementów sterujących, wspólne dl
 | **Pasmo MHz** | 28, 50, 70, 144, 222 lub 432 MHz: używane do zysku i listka anteny, szacowania strumienia i bilansu łącza. |
 | **Oblicz** | Przelicza trasę (próbkowanie warstwy E: kilka sekund). |
 | **Az anteny** | Na górze ramki korespondenta, obok mapy: azymut twojej anteny, zawsze **na DX** (azymut trasy). Poniżej, w tej samej kolumnie, jest legenda mapy. |
-| **Czcionka** | Rozmiar całego tekstu, 85–140 %. Zob. [Ustawienia](Settings-and-Data-Folder-pl#czcionka-i-sterowanie). |
 
 **Wiersz 2 – warstwa E i antena**
 

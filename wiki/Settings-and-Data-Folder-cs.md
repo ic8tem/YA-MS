@@ -2,6 +2,10 @@
 
 # Nastavení a datová složka
 
+## Záložka Nastavení
+
+Záložka Nastavení soustřeďuje obecný chod programu: Vzhled (písmo, motiv a jazyk), Aktualizace programu (kontrola na GitHubu při spuštění a každých 30 minut, automatické tiché aktualizace, Zkontrolovat teď), Živé zdroje (automatická aktualizace každých 5 minut), RMOB (pozorovatel, stáhnout teď a automatické stahování) a Program (řádky příkazů a složka dat). Parametry výpočtu zůstávají v řádcích příkazů nad záložkami.
+
 ## Lišta karet
 
 Na pravém konci lišty karet, zprava doleva:
@@ -77,7 +81,7 @@ Schéma platí pro všechny karty a ukládá se do `config.ini` (klíč `tema`).
 
 ## Písmo a Ovládání
 
-- **Písmo** (na konci první řady ovládacích prvků): zvětší **veškerý text** ze **85 na 140 %** v krocích po 5 %; čáry, kružnice a mapy si zachovají velikost. Při velkém písmu se karty zalomí na druhý řádek a přehledové karty se zvětší.
+- **Písmo** (Nastavení): zvětší **veškerý text** ze **85 na 140 %** v krocích po 5 %; čáry, kružnice a mapy si zachovají velikost. Při velkém písmu se karty zalomí na druhý řádek a přehledové karty se zvětší.
 - **Ovládání**: při velkém písmu nebo malé obrazovce skryjte tři řady ovládacích prvků, aby zůstalo místo pro mapy a grafy. Stav se pamatuje.
 
 ## Datová složka

@@ -17,7 +17,6 @@ Acima das abas há três linhas de comandos, válidas para todas as abas. O bot�
 | **Banda MHz** | 28, 50, 70, 144, 222 ou 432 MHz: usada para o ganho e o lóbulo da antena, a estimativa do fluxo e o balanço do enlace. |
 | **Calcular** | Recalcula o percurso (amostragem da camada E: alguns segundos). |
 | **Antena az** | No alto do quadro do correspondente, ao lado do mapa: azimute da sua antena, sempre **para o DX** (azimute do percurso). Embaixo, na mesma coluna, fica a legenda do mapa. |
-| **Fonte** | Tamanho de todo o texto, 85–140 %. Veja [Configurações](Settings-and-Data-Folder-pt-br#fonte-e-comandos). |
 
 **Linha 2 – camada E e antena**
 

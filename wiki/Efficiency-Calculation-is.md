@@ -16,8 +16,9 @@
 |---|---|
 | **BESTI TÍMI DAGSINS** | Klukkustundin með hæsta leiðarstuðulinn, stuðullinn og ríkjandi hlið (A/B með %) |
 | **HAGSTÆÐASTA DRÍFAN** | Drífan með hæsta ZHR × nýtni dagsins, nýtni hennar, klukkustund og hlið, og **besta stefna** (áttarhorn geislapunkts +90° / −90°) |
-| **NÚNA** | Stuðull og ríkjandi hlið á þessari klukkustund, og ráðlagður Hot (aðeins þegar valinn dagur er í dag) |
-| **TILRAUNASPÁ** | Væntanleg endurvörp/klst. núna, eftir 1 klst. og eftir 2 klst. á spátíðninni (Collm, reglur SM6FHZ; sjá [Tilraunaspár](Experimental-Forecasts-is)) |
+| **NÚNA · EFTIR 1, 3, 6, 12 OG 24 KLST.** | fyrir hvern tímaramma meðaltal klukkustundarinnar sem hefst þar (fjögur sýni): leiðarstuðull, ríkjandi hlið, drífan sem leggur mest til og, þegar ratsjárgögn eru til, endurkast á klukkustund úr tilraunaspánni. Í NÚNA birtist ráðlagður Hot þegar ratsjárgögn vantar. Uppfært á hverri mínútu. |
+
+Þessir reitir eru í borða undir tímalínunni, ofan við flipana, alltaf sýnilegir líka þegar skipanalínur eru felldar saman: til vinstri tveir reitir valins dags, síðan sex spátímarammar sem hefjast núna.
 
 Undir spjöldunum skýrir borði stafina A og B (sjá hér fyrir neðan).
 

@@ -70,6 +70,7 @@ LI|Tími: UTC-klukka.
 LI|Dagsetning útreiknings (UTC): dagur útreikningsins. Gildir fyrir Spáreikning, fyrir 24 klukkustunda töfluna í Útreikningi nýtni og fyrir tímalínuna í GRAVES-ratsjá. Sjálfgefið er dagurinn í dag og á miðnætti færist hún yfir á nýja daginn.
 LI|Klukkustundir (−12 til +36 klst.): færir tíma útreikningsins í 15 mínútna skrefum. Við hliðina: „Útreikningur fyrir: núna“ eða valin dagsetning og tími.
 LI|Rauntími: fer aftur á núverandi tíma.
+LI|Tímalínan («Klukkustundir (−12 til +36 klst.)» og «Rauntími») er efst í flipanum Spáreikningur, því hún gildir aðeins fyrir þann útreikning.
 H2|4.4 Að stilla eigin stöð
 TAG|PROCEDURA|1) Skrifaðu Minn locator og hæðina. 2) Skrifaðu locator og hæð mótstöðvarinnar, eða smelltu á kortið í Spáreikningi: vinstri smellur = mótstöð, hægri smellur = stöðin þín. 3) Veldu bandið. 4) Skrifaðu lengd bómunnar og hæðarhorn geisla loftnetsins þíns. 5) Ýttu á Reikna: stöðustikan staðfestir „Leið reiknuð: ... km, ... endurvarpspunktar teknir í úrtak“.
 TAG|NOTA|Stillingarnar eru vistaðar í data/config.ini þegar forritinu er lokað og við hvern útreikning: við næstu ræsingu finnur þú sömu leið.
@@ -116,11 +117,11 @@ LI|TILRAUNAREGLUR MILLI TÍÐNISVIÐA: fjöldi, styrkur og lengd endurvarpa mið
 TAG|NOTA|Jákvæð vikmörk þýða að meðal undirþétt slóð nægir til að ná leiðinni með stöðinni þinni; neikvæð vikmörk þýða að þéttari slóðir eða yfirþéttir loftsteinar eru nauðsynlegir. Þetta er mat: viðmiðið er áfram reynslan á bandinu.
 H1|7. Útreikningur nýtni
 P|Nýtnin segir í prósentum hversu vel staða geislapunkts drífu leyfir endurvörp á leiðinni þinni: 100 % er hagstæðasta staðan fyrir þá leið. Þessi undirflipi sýnir hana klukkustund fyrir klukkustund fyrir daginn í „Dagsetning útreiknings“, með gildunum á miðri hverri klukkustund.
-H2|7.1 Reitirnir fjórir
+H2|7.1 Borðinn ofan við flipana
+P|Þessir reitir eru í borða undir tímalínunni, ofan við flipana, alltaf sýnilegir líka þegar skipanalínur eru felldar saman: til vinstri tveir reitir valins dags, síðan sex spátímarammar sem hefjast núna.
 LI|BESTI TÍMI DAGSINS: klukkustundin með hæsta leiðarstuðulinn og ríkjandi hlið.
 LI|HAGSTÆÐASTA DRÍFAN: drífan sem leggur mest af mörkum, með klukkustund, hlið og tveimur bestu stefnunum.
-LI|NÚNA: stuðull og hlið á þessari klukkustund og Hot sem mælt er með (aðeins ef valinn dagur er í dag).
-LI|TILRAUNASPÁ: vænt endurvörp á klukkustund núna, eftir 1 og eftir 2 klukkustundir (kafli 8).
+LI|NÚNA · EFTIR 1, 3, 6, 12 OG 24 KLST.: fyrir hvern tímaramma meðaltal klukkustundarinnar sem hefst þar (fjögur sýni): leiðarstuðull, ríkjandi hlið, drífan sem leggur mest til og, þegar ratsjárgögn eru til, endurkast á klukkustund úr tilraunaspánni. Í NÚNA birtist ráðlagður Hot þegar ratsjárgögn vantar. Uppfært á hverri mínútu.
 P|Þegar reitur hefur engin gildi segir hann hvers vegna: ekkert sameiginlegt svæði, engin virk drífa eða óhagstæðir geislapunktar allan daginn. Skýringartexti hvers reits útskýrir hvað hann sýnir. Fyrir neðan reitina birtist, þegar þörf er á, viðvörunin ENGIN SAMEIGINLEG SVÆÐI og rönd sem útskýrir bókstafina A og B.
 H2|7.2 Stilling útreikningsins
 LI|Varfærin (sjálfgefin): hæð slóða frá ratsjá, venjulegar slóðir, kveikt á horni β. Gefur lægstu gildin.

@@ -36,6 +36,8 @@ A fülek felett két sor vezérlőelem található, amelyek minden fülre érvé
 | **Órák (−12 és +36 h között)** | A számítás időpontját az adott időponthoz képest 12 órával korábbra és 36 órával későbbre tolja, 15 perces lépésekben. Mellette: *Számítás erre: most* vagy *Számítás erre: nn/hh óó:pp UTC*. |
 | **Valós idő** | Vissza a jelenhez. |
 
+Az idővonal («Órák (−12-től +36 h-ig)» és «Valós idő») a Előrejelző számítás fül tetején van, mert csak arra a számításra vonatkozik.
+
 ## 2. Az Ön állomása és a DX
 
 1. Írja be a **Saját lokátor** és a **magasság m** értékét.

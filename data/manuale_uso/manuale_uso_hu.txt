@@ -70,6 +70,7 @@ LI|Idő: UTC óra.
 LI|A számítás dátuma (UTC): a számítás napja. Érvényes az Előrejelző számításra, a Hatásfok számítása fül 24 órás táblázatára és a GRAVES radar időrendjére. Alapértelmezés szerint a mai nap, és éjfélkor az új napra vált.
 LI|Órák (−12-től +36 h-ig): 15 perces lépésekben eltolja a számítás időpontját. Mellette: „Számítás ideje: most” vagy a választott dátum és idő.
 LI|Valós idő: visszatér az aktuális időponthoz.
+LI|Az idővonal («Órák (−12-től +36 h-ig)» és «Valós idő») a Előrejelző számítás fül tetején van, mert csak arra a számításra vonatkozik.
 H2|4.4 A saját állomás beállítása
 TAG|PROCEDURA|1) Írja be a Saját lokátorom mezőbe a lokátort és a magasságot. 2) Írja be az ellenállomás lokátorát és magasságát, vagy kattintson az Előrejelző számítás térképére: bal kattintás = ellenállomás, jobb kattintás = saját állomás. 3) Válassza ki a sávot. 4) Írja be antennája tartócsövének hosszát és a lebeny emelkedését. 5) Nyomja meg a Számítás gombot: az állapotsor megerősíti: „Útvonal kiszámítva: ... km, ... visszaverődési pont mintavételezve”.
 TAG|NOTA|A beállításokat a program bezáráskor és minden számításkor a data/config.ini fájlba menti: a következő indításkor ugyanazt az útvonalat találja.
@@ -116,11 +117,11 @@ LI|KÍSÉRLETI SZABÁLYOK A SÁVOK KÖZÖTT: a visszaverődések száma, erőss�
 TAG|NOTA|A pozitív tartalék azt jelzi, hogy egy átlagos alulsűrű nyom elég az összeköttetéshez az Ön állomásával ezen az útvonalon; a negatív tartalék azt, hogy sűrűbb nyomok vagy túlsűrű meteorok kellenek. Ez becslés: a mérvadó továbbra is a sávon szerzett tapasztalat.
 H1|7. Hatásfok számítása
 P|A hatásfok százalékban adja meg, hogy egy raj radiánsának helyzete mennyire teszi lehetővé a visszaverődéseket az Ön útvonalán: 100 % az adott útvonal számára legkedvezőbb helyzet. Ez az alfül óránként mutatja „A számítás dátuma” napjára, minden óra közepén vett értékekkel.
-H2|7.1 A négy panel
+H2|7.1 A sáv a fülek fölött
+P|Ezek a dobozok az idősor alatti sávban vannak, a fülek fölött, mindig láthatók, összecsukott parancssorokkal is: balra a választott nap két doboza, aztán a hat előrejelzési időtáv, amelyek mosttól indulnak.
 LI|A NAP LEGJOBB IDŐPONTJA: a legmagasabb útvonalindexű óra és az uralkodó oldal.
 LI|A LEGKEDVEZŐBB RAJ: a legnagyobb mértékben hozzájáruló raj, az órával, az oldallal és a két legjobb iránnyal.
-LI|MOST: index és oldal ebben az órában, valamint a javasolt Hot (csak ha a választott nap a mai).
-LI|KÍSÉRLETI ELŐREJELZÉS: óránkénti visszaverődések most, 1 és 2 óra múlva várható száma (8. fejezet).
+LI|MOST · 1, 3, 6, 12 ÉS 24 ÓRA MÚLVA: minden időtávra az ott kezdődő óra átlaga (négy minta): útvonalindex, domináns oldal, a legtöbbet hozzájáruló raj és, ha van radaradat, a kísérleti előrejelzés óránkénti visszaverődései. A MOST dobozban radaradat nélkül az ajánlott Hot jelenik meg. Percenként frissül.
 P|Ha egy panelnek nincsenek értékei, megmondja, miért: nincs közös zóna, nincs aktív raj, vagy a radiánsok egész nap kedvezőtlenek. Minden panel buboréksúgója elmagyarázza, mit mutat. A panelek alatt szükség esetén megjelenik a NINCS KÖZÖS ZÓNA figyelmeztetés és egy sáv, amely az A és B betűket magyarázza.
 H2|7.2 A számítás beállítása
 LI|Óvatos (alapértelmezett): nyommagasság a radarból, normál nyomok, β szög bekapcsolva. Ez adja a legalacsonyabb értékeket.

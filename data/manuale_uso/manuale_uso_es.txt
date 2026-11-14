@@ -70,6 +70,7 @@ LI|Hora: reloj UTC.
 LI|Fecha del cálculo (UTC): el día del cálculo. Se aplica a Cálculo de previsión, a la tabla de 24 horas de Cálculo de la eficiencia y a la cronología de Radar GRAVES. Inicialmente es hoy y a medianoche pasa al día nuevo.
 LI|Horas (de −12 a +36 h): desplaza el momento del cálculo, en pasos de 15 minutos. Al lado: "Cálculo para: ahora" o bien la fecha y la hora elegidas.
 LI|Tiempo real: vuelve al momento actual.
+LI|La línea del tiempo («Horas (de −12 a +36 h)» y «Tiempo real») está arriba en la pestaña Cálculo de previsión, porque solo vale para ese cálculo.
 H2|4.4 Configurar la propia estación
 TAG|PROCEDURA|1) Escribe Mi locator y la altitud. 2) Escribe el locator y la altitud del corresponsal, o haz clic en el mapa de Cálculo de previsión: clic izquierdo = corresponsal, clic derecho = tu estación. 3) Elige la banda. 4) Escribe la longitud del boom y la elevación del lóbulo de tu antena. 5) Pulsa Calcular: la barra de estado confirma "Trayecto calculado: ... km, ... puntos de reflexión muestreados".
 TAG|NOTA|Los ajustes se guardan en data/config.ini al cerrar y en cada cálculo: en el siguiente arranque encuentras el mismo trayecto.
@@ -116,11 +117,11 @@ LI|REGLAS EXPERIMENTALES ENTRE BANDAS: número, intensidad y duración de las re
 TAG|NOTA|Un margen positivo indica que una estela subdensa media basta para cerrar el trayecto con tu estación; un margen negativo indica que hacen falta estelas más densas o meteoros sobredensos. Es una estimación: la referencia sigue siendo la experiencia en la banda.
 H1|7. Cálculo de la eficiencia
 P|La eficiencia indica, en porcentaje, en qué medida la posición del radiante de una lluvia permite reflexiones en tu trayecto: 100 % es la posición más favorable para ese trayecto. Esta subpestaña la muestra hora a hora para el día de la "Fecha del cálculo", con los valores a mitad de cada hora.
-H2|7.1 Los cuatro recuadros
+H2|7.1 La franja encima de las pestañas
+P|Estos recuadros están en una franja bajo la fila de la hora, encima de las pestañas, siempre visible aunque las filas de mandos estén plegadas: a la izquierda los dos recuadros del día elegido, luego los seis horizontes de previsión, que empiezan ahora.
 LI|MEJOR HORA DEL DÍA: la hora con el índice del trayecto más alto y el lado predominante.
 LI|LLUVIA MÁS FAVORABLE: la lluvia que más contribuye, con la hora, el lado y los dos mejores apuntamientos.
-LI|AHORA: índice y lado en esta hora y el Hot recomendado (solo si el día elegido es hoy).
-LI|PREVISIÓN EXPERIMENTAL: reflexiones por hora previstas ahora, dentro de 1 hora y dentro de 2 horas (capítulo 8).
+LI|AHORA · DENTRO DE 1, 3, 6, 12 Y 24 HORAS: para cada horizonte, la media de la hora que empieza allí (cuatro muestras): índice de la trayectoria, lado predominante, lluvia que más contribuye y, cuando hay dato del radar, las reflexiones por hora de la previsión experimental. En AHORA, sin dato del radar, aparece el Hot recomendado. Se actualiza cada minuto.
 P|Cuando un recuadro no tiene valores, indica por qué: ninguna zona común, ninguna lluvia activa, o bien radiantes desfavorables durante todo el día. La información emergente de cada recuadro explica qué muestra. Debajo de los recuadros, cuando hace falta, el aviso NINGUNA ZONA COMÚN y una franja que explica las letras A y B.
 H2|7.2 La configuración del cálculo
 LI|Prudente (opción inicial): altura de las estelas del radar, estelas normales, ángulo β activado. Da los valores más bajos.

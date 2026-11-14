@@ -36,6 +36,8 @@ Nad kartami jsou dva řady ovládacích prvků, které platí pro všechny karty
 | **Hodiny (od −12 do +36 h)** | Posouvá okamžik výpočtu od 12 hodin před do 36 hodin po tomto čase, v krocích po 15 minutách. Vedle je *Výpočet pro: nyní* nebo *Výpočet pro: dd/mm hh:mm UTC*. |
 | **Reálný čas** | Návrat na současnost. |
 
+Časová osa («Hodiny (od −12 do +36 h)» a «Reálný čas») je nahoře v záložce Předpovědní výpočet, protože platí jen pro tento výpočet.
+
 ## 2. Vaše stanice a DX
 
 1. Zadejte **Můj lokátor** a **výška m**.

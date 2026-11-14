@@ -70,6 +70,7 @@ LI|Ora: ceas UTC.
 LI|Data calculului (UTC): ziua calculului. Este valabilă pentru Calcul de prognoză, pentru tabelul de 24 de ore din Calculul eficienței și pentru cronologia din Radar GRAVES. Implicit este ziua de azi, iar la miezul nopții trece la ziua nouă.
 LI|Ore (de la −12 la +36 h): deplasează momentul calculului, în pași de 15 minute. Alături: „Calcul pentru: acum” sau data și ora alese.
 LI|Timp real: revine la momentul actual.
+LI|Linia timpului («Ore (de la −12 la +36 h)» și «Timp real») este în partea de sus a filei Calcul de prognoză, pentru că se aplică doar acelui calcul.
 H2|4.4 Configurarea propriei stații
 TAG|PROCEDURA|1) Scrieți Locatorul meu și altitudinea. 2) Scrieți locatorul și altitudinea corespondentului sau faceți clic pe harta din Calcul de prognoză: clic stânga = corespondent, clic dreapta = stația dumneavoastră. 3) Alegeți banda. 4) Scrieți lungimea boom-ului și elevația lobului antenei dumneavoastră. 5) Apăsați Calculează: bara de stare confirmă „Traseu calculat: ... km, ... puncte de reflexie eșantionate”.
 TAG|NOTA|Setările se salvează în data/config.ini la închidere și la fiecare calcul: la următoarea pornire regăsiți același traseu.
@@ -116,11 +117,11 @@ LI|REGULI EXPERIMENTALE ÎNTRE BENZI: numărul, intensitatea și durata reflexii
 TAG|NOTA|O marjă pozitivă arată că o dâră subdensă medie este suficientă pentru a realiza legătura pe traseu cu stația dumneavoastră; o marjă negativă arată că sunt necesare dâre mai dense sau meteori supradenși. Este o estimare: referința rămâne experiența în bandă.
 H1|7. Calculul eficienței
 P|Eficiența arată, în procente, în ce măsură poziția radiantului unui roi permite reflexii pe traseul dumneavoastră: 100 % este poziția cea mai favorabilă pentru acel traseu. Această sub-filă o afișează oră cu oră pentru ziua din „Data calculului”, cu valorile de la jumătatea fiecărei ore.
-H2|7.1 Cele patru casete
+H2|7.1 Banda de deasupra filelor
+P|Aceste casete stau într-o bandă sub rândul orei, deasupra filelor, mereu vizibilă chiar și cu rândurile de comenzi pliate: la stânga cele două casete ale zilei alese, apoi cele șase orizonturi de prognoză, care pornesc de acum.
 LI|CEA MAI BUNĂ ORĂ A ZILEI: ora cu indicele traseului cel mai mare și latura predominantă.
 LI|ROIUL CEL MAI FAVORABIL: roiul care contribuie cel mai mult, cu ora, latura și cele două orientări optime.
-LI|ACUM: indicele și latura în această oră și Hot-ul recomandat (numai dacă ziua aleasă este azi).
-LI|PROGNOZĂ EXPERIMENTALĂ: reflexiile pe oră prevăzute acum, peste 1 și peste 2 ore (capitolul 8).
+LI|ACUM · PESTE 1, 3, 6, 12 ȘI 24 ORE: pentru fiecare orizont, media orei care începe acolo (patru eșantioane): indicele traseului, latura predominantă, roiul care contribuie cel mai mult și, când există date radar, reflexiile pe oră din prognoza experimentală. În ACUM, fără date radar, apare Hot-ul recomandat. Se actualizează în fiecare minut.
 P|Când o casetă nu are valori, spune de ce: nicio zonă comună, niciun roi activ sau radianți nefavorabili toată ziua. Balonul de ajutor al fiecărei casete explică ce arată. Sub casete, când este cazul, apar avertismentul NICIO ZONĂ COMUNĂ și o bandă care explică literele A și B.
 H2|7.2 Setarea calculului
 LI|Prudentă (implicit): altitudinea dârelor de la radar, dâre normale, unghiul β activat. Dă valorile cele mai mici.

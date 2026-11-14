@@ -816,3 +816,10 @@ Il Mercatore si sposta trascinandolo con il mouse; doppio clic: di nuovo centrat
 Memorizza	Salvesta
 Il locator scritto è diverso da quello dell'archivio CALL3: premi per aggiornarlo e memorizzarlo (voce a mano, scritta subito anche dentro call3.txt).	Sisestatud lokaator erineb CALL3 arhiivis olevast: vajuta, et seda uuendada ja salvestada (käsitsi kirje, kirjutatakse kohe ka faili call3.txt).
 {0} memorizzato nel CALL3: {1}	{0} salvestatud CALL3-sse: {1}
+TRA 1 ORA	1 TUNNI PÄRAST
+TRA {0} ORE	{0} TUNNI PÄRAST
+lato {0} · {1}	pool {0} · {1}
+nessuno sciame utile	kasulikku voolu pole
+{0:F0} rifl./ora previste	{0:F0} peegeld./tunnis oodata
+{0} UTC · indice {1:F1}	{0} UTC · indeks {1:F1}
+Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	Prognoos valitud teekonnale: selle horisondiga algava tunni keskmine (neli proovi tunnis). Teekonna indeks = aktiivsete voolude ZHR × tõhususe summa; seejärel teekonna valdav pool ja kõige rohkem panustav vool. Peegeldused tunnis tulevad eksperimentaalsest prognoosist (Collmi radar, SM6FHZ reeglid), kui radari andmed on olemas.

@@ -16,8 +16,9 @@ Cet onglet l'affiche heure par heure pour le jour choisi dans *Date du calcul (U
 |---|---|
 | **MEILLEURE HEURE DE LA JOURNÉE** | Heure où l'indice du trajet est le plus élevé, l'indice et le côté dominant (A/B avec son %) |
 | **ESSAIM LE PLUS FAVORABLE** | L'essaim au plus grand ZHR × efficacité de la journée, son efficacité, l'heure et le côté, et le **meilleur pointage** (azimut du radiant +90° / −90°) |
-| **MAINTENANT** | Indice et côté dominant à cette heure, et le Hot conseillé (uniquement si le jour choisi est aujourd'hui) |
-| **PRÉVISION EXPÉRIMENTALE** | Réflexions/heure attendues maintenant, dans 1 h et dans 2 h à la fréquence de prévision (Collm, règles de SM6FHZ ; voir [Prévisions expérimentales](Experimental-Forecasts-fr)) |
+| **MAINTENANT · DANS 1, 3, 6, 12 ET 24 HEURES** | pour chaque horizon, la moyenne de l'heure qui y commence (quatre échantillons) : indice du trajet, côté dominant, essaim qui contribue le plus et, quand la donnée radar existe, les réflexions par heure de la prévision expérimentale. Dans MAINTENANT, sans donnée radar, le Hot conseillé apparaît. Mise à jour chaque minute. |
+
+Ces cadres se trouvent dans une bande sous la ligne de l'horaire, au-dessus des onglets, toujours visible même avec les lignes de commandes repliées : à gauche les deux cadres du jour choisi, puis les six horizons de prévision, qui partent de maintenant.
 
 Sous les cartes, un bandeau explique les lettres A et B (voir plus bas).
 

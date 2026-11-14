@@ -818,3 +818,10 @@ Il Mercatore si sposta trascinandolo con il mouse; doppio clic: di nuovo centrat
 Memorizza	Сохранить
 Il locator scritto è diverso da quello dell'archivio CALL3: premi per aggiornarlo e memorizzarlo (voce a mano, scritta subito anche dentro call3.txt).	Введённый локатор отличается от указанного в базе CALL3: нажмите, чтобы обновить и сохранить его (ручная запись, сразу записывается и в call3.txt).
 {0} memorizzato nel CALL3: {1}	{0} сохранён в CALL3: {1}
+TRA 1 ORA	ЧЕРЕЗ 1 ЧАС
+TRA {0} ORE	ЧЕРЕЗ {0} Ч
+lato {0} · {1}	сторона {0} · {1}
+nessuno sciame utile	нет полезного потока
+{0:F0} rifl./ora previste	{0:F0} отраж./ч ожидается
+{0} UTC · indice {1:F1}	{0} UTC · индекс {1:F1}
+Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	Прогноз для выбранной трассы: среднее за час, начинающийся на этом горизонте (четыре выборки за час). Индекс трассы = сумма ZHR × эффективность активных потоков; затем преобладающая сторона трассы и поток с наибольшим вкладом. Отражения в час берутся из экспериментального прогноза (радар Коллм, правила SM6FHZ), когда есть данные радара.

@@ -70,6 +70,7 @@ LI|Saat: UTC saati.
 LI|Hesap tarihi (UTC): hesabın günü. Tahmin hesabı, Verim hesabı'ndaki 24 saatlik tablo ve GRAVES radarı'ndaki kronoloji için geçerlidir. Başlangıçta bugündür ve gece yarısı yeni güne geçer.
 LI|Saatler (−12 ile +36 sa arası): hesap anını 15 dakikalık adımlarla kaydırır. Yanında: "Hesap zamanı: şimdi" ya da seçilen tarih ve saat.
 LI|Gerçek zaman: şu ana döner.
+LI|Zaman çizgisi («Saatler (−12 ile +36 sa arası)» ve «Gerçek zaman») Tahmin hesabı sekmesinin en üstündedir, çünkü yalnızca o hesap için geçerlidir.
 H2|4.4 Kendi istasyonunuzu ayarlama
 TAG|PROCEDURA|1) Benim lokatörüm ve rakımı yazın. 2) Karşı istasyonun lokatörünü ve rakımını yazın ya da Tahmin hesabı haritasına tıklayın: sol tık = karşı istasyon, sağ tık = sizin istasyonunuz. 3) Bandı seçin. 4) Anteninizin boom uzunluğunu ve lob elevasyonunu yazın. 5) Hesapla'ya basın: durum çubuğu "Yol hesaplandı: ... km, ... yansıma noktası örneklendi" ile onaylar.
 TAG|NOTA|Ayarlar kapanışta ve her hesapta data/config.ini dosyasına kaydedilir: bir sonraki açılışta aynı yolu bulursunuz.
@@ -116,11 +117,11 @@ LI|BANTLAR ARASI DENEYSEL KURALLAR: 144 MHz'e göre yansımaların sayısı, şi
 TAG|NOTA|Pozitif bir pay, ortalama düşük yoğunluklu bir izin istasyonunuzla yolu kapatmaya yettiğini; negatif bir pay ise daha yoğun izlere veya yüksek yoğunluklu meteorlara ihtiyaç olduğunu söyler. Bu bir tahmindir: asıl ölçüt banttaki deneyimdir.
 H1|7. Verim hesabı
 P|Verim, bir yağmurun radyant konumunun yolunuzda yansımaya ne ölçüde olanak tanıdığını yüzde olarak söyler: %100, o yol için en elverişli konumdur. Bu alt sekme verimi, "Hesap tarihi" gününün her saati için, saat ortasındaki değerlerle gösterir.
-H2|7.1 Dört kutu
+H2|7.1 Sekmelerin üstündeki şerit
+P|Bu kutular saat satırının altında, sekmelerin üstündeki bir şeritte durur; komut satırları katlansa bile her zaman görünür: solda seçilen günün iki kutusu, ardından şimdiden başlayan altı tahmin ufku.
 LI|GÜNÜN EN İYİ SAATİ: yol endeksinin en yüksek olduğu saat ve baskın taraf.
 LI|EN ELVERİŞLİ YAĞMUR: en çok katkı yapan yağmur; saati, tarafı ve iki en iyi yönlendirmesiyle.
-LI|ŞİMDİ: bu saatteki endeks ve taraf ile önerilen Hot (yalnızca seçilen gün bugünse).
-LI|DENEYSEL TAHMİN: şimdi, 1 saat sonra ve 2 saat sonra beklenen saatlik yansıma sayısı (bölüm 8).
+LI|ŞİMDİ · 1, 3, 6, 12 VE 24 SAAT SONRA: her ufuk için orada başlayan saatin ortalaması (dört örnek): hat indeksi, baskın taraf, en çok katkı yapan yağmur ve radar verisi varsa deneysel tahminin saatlik yansımaları. ŞİMDİ kutusunda radar verisi yoksa önerilen Hot gösterilir. Her dakika güncellenir.
 P|Bir kutuda değer yoksa nedenini söyler: ortak bölge yok, etkin yağmur yok ya da radyantlar bütün gün elverişsiz. Her kutunun ipucu balonu ne gösterdiğini açıklar. Kutuların altında, gerektiğinde ORTAK BÖLGE YOK uyarısı ve A ile B harflerini açıklayan bir şerit bulunur.
 H2|7.2 Hesap ayarı
 LI|Temkinli (başlangıç ayarı): iz yüksekliği radardan, normal izler, β açısı açık. En düşük değerleri verir.

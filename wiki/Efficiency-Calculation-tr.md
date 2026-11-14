@@ -16,8 +16,9 @@ Bu sekme, *Hesap tarihi (UTC)* alanında seçilen gün için verimi saat saat g�
 |---|---|
 | **GÜNÜN EN İYİ SAATİ** | En yüksek yol endeksine sahip saat, endeks ve baskın taraf (%'siyle A/B) |
 | **EN ELVERİŞLİ YAĞMUR** | Günün en büyük ZHR × verimine sahip yağmuru, verimi, saati ve tarafı ile **en iyi yön** (radyant azimutu +90° / −90°) |
-| **ŞİMDİ** | Bu saatteki endeks ve baskın taraf ile önerilen Hot (yalnızca seçilen gün bugünse) |
-| **DENEYSEL TAHMİN** | Tahmin frekansında şimdi, 1 saat sonra ve 2 saat sonra beklenen yansıma/saat (Collm, SM6FHZ kuralları; bkz. [Deneysel tahminler](Experimental-Forecasts-tr)) |
+| **ŞİMDİ · 1, 3, 6, 12 VE 24 SAAT SONRA** | her ufuk için orada başlayan saatin ortalaması (dört örnek): hat indeksi, baskın taraf, en çok katkı yapan yağmur ve radar verisi varsa deneysel tahminin saatlik yansımaları. ŞİMDİ kutusunda radar verisi yoksa önerilen Hot gösterilir. Her dakika güncellenir. |
+
+Bu kutular saat satırının altında, sekmelerin üstündeki bir şeritte durur; komut satırları katlansa bile her zaman görünür: solda seçilen günün iki kutusu, ardından şimdiden başlayan altı tahmin ufku.
 
 Kartların altındaki bir şerit A ve B harflerini açıklar (aşağıya bakın).
 

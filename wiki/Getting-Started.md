@@ -36,6 +36,8 @@ Above the tabs there are two rows of controls, valid for all tabs. The **Control
 | **Hours (−12 to +36 h)** | Moves the moment of the calculation from 12 hours before to 36 hours after that time, in 15-minute steps. Next to it: *Calculation for: now* or *Calculation for: dd/mm hh:mm UTC*. |
 | **Real time** | Back to now. |
 
+The time line («Hours (−12 to +36 h)» and «Real time») is at the top of the Forecast calculation tab, because it applies only to that calculation.
+
 ## 2. Your station and the DX
 
 1. Type **My locator** and **height m**.

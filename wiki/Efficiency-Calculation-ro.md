@@ -16,8 +16,9 @@ Această filă o arată oră de oră pentru ziua aleasă în *Data calculului (U
 |---|---|
 | **CEA MAI BUNĂ ORĂ A ZILEI** | Ora cu cel mai mare indice al traseului, indicele și latura predominantă (A/B cu procentul său) |
 | **CEL MAI FAVORABIL ROI** | Roiul cu cel mai mare ZHR × eficiență al zilei, eficiența, ora și latura sa și **direcția optimă** (azimutul radiantului +90° / −90°) |
-| **ACUM** | Indicele și latura predominantă la această oră și Hot-ul recomandat (doar când ziua aleasă este astăzi) |
-| **PREVIZIUNE EXPERIMENTALĂ** | Reflexii așteptate pe oră acum, peste 1 h și peste 2 h la frecvența previziunii (Collm, regulile SM6FHZ; vedeți [Previziuni experimentale](Experimental-Forecasts-ro)) |
+| **ACUM · PESTE 1, 3, 6, 12 ȘI 24 ORE** | pentru fiecare orizont, media orei care începe acolo (patru eșantioane): indicele traseului, latura predominantă, roiul care contribuie cel mai mult și, când există date radar, reflexiile pe oră din prognoza experimentală. În ACUM, fără date radar, apare Hot-ul recomandat. Se actualizează în fiecare minut. |
+
+Aceste casete stau într-o bandă sub rândul orei, deasupra filelor, mereu vizibilă chiar și cu rândurile de comenzi pliate: la stânga cele două casete ale zilei alese, apoi cele șase orizonturi de prognoză, care pornesc de acum.
 
 Sub carduri, o bandă explică literele A și B (vedeți mai jos).
 

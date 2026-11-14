@@ -70,6 +70,7 @@ LI|Uur: UTC-klok.
 LI|Berekeningsdatum (UTC): de dag van de berekening. Geldt voor Voorspellingsberekening, voor de 24-uurstabel van Efficiëntieberekening en voor de tijdlijn van GRAVES-radar. Standaard is het vandaag, en om middernacht volgt de datum de nieuwe dag.
 LI|Uren (−12 tot +36 u): verschuift het tijdstip van de berekening in stappen van 15 minuten. Ernaast: "Berekening voor: nu" of de gekozen datum en tijd.
 LI|Realtime: keert terug naar het huidige moment.
+LI|De tijdlijn («Uren (−12 tot +36 u)» en «Realtime») staat bovenaan het tabblad Voorspellingsberekening, omdat ze alleen voor die berekening geldt.
 H2|4.4 Je eigen station instellen
 TAG|PROCEDURA|1) Vul Mijn locator en de hoogte in. 2) Vul de locator en de hoogte van het tegenstation in, of klik op de kaart van Voorspellingsberekening: linksklik = tegenstation, rechtsklik = jouw station. 3) Kies de band. 4) Vul de boomlengte en de bundelelevatie van je antenne in. 5) Druk op Bereken: de statusbalk bevestigt "Traject berekend: ... km, ... reflectiepunten bemonsterd".
 TAG|NOTA|De instellingen worden bij het afsluiten en bij elke berekening opgeslagen in data/config.ini: bij de volgende start vind je hetzelfde traject terug.
@@ -116,11 +117,11 @@ LI|EXPERIMENTELE REGELS TUSSEN DE BANDEN: aantal, sterkte en duur van de reflect
 TAG|NOTA|Een positieve marge betekent dat een gemiddeld onderdicht spoor volstaat om het traject met jouw station te overbruggen; een negatieve marge betekent dat dichtere sporen of overdichte meteoren nodig zijn. Het is een schatting: de ervaring op de band blijft de referentie.
 H1|7. Efficiëntieberekening
 P|De efficiëntie geeft in procenten aan in hoeverre de positie van de radiant van een zwerm reflecties op jouw traject mogelijk maakt: 100 % is de gunstigste positie voor dat traject. Dit subtabblad toont haar uur per uur voor de dag van de "Berekeningsdatum", met de waarden op het halve uur.
-H2|7.1 De vier kaders
+H2|7.1 De balk boven de tabbladen
+P|Deze vakken staan in een balk onder de tijdregel, boven de tabbladen, altijd zichtbaar, ook met ingeklapte opdrachtregels: links de twee vakken van de gekozen dag, daarna de zes voorspellingshorizonten, die bij nu beginnen.
 LI|BESTE UUR VAN DE DAG: het uur met de hoogste trajectindex en de overheersende zijde.
 LI|GUNSTIGSTE ZWERM: de zwerm die het meest bijdraagt, met het uur, de zijde en de twee beste richtingen.
-LI|NU: index en zijde in dit uur en de aanbevolen Hot (alleen als de gekozen dag vandaag is).
-LI|EXPERIMENTELE VOORSPELLING: verwachte reflecties per uur nu, over 1 en over 2 uur (hoofdstuk 8).
+LI|NU · OVER 1, 3, 6, 12 EN 24 UUR: per horizon het gemiddelde van het uur dat daar begint (vier monsters): trajectindex, overheersende kant, de zwerm die het meest bijdraagt en, als er radargegevens zijn, de reflecties per uur van de experimentele voorspelling. In NU verschijnt zonder radargegevens de aanbevolen Hot. Wordt elke minuut bijgewerkt.
 P|Als een kader geen waarden heeft, staat erbij waarom: geen gemeenschappelijke zone, geen actieve zwerm, of ongunstige radianten de hele dag. De tooltip van elk kader legt uit wat het toont. Onder de kaders staan, als dat nodig is, de waarschuwing GEEN GEMEENSCHAPPELIJKE ZONE en een strook die de letters A en B uitlegt.
 H2|7.2 De instelling van de berekening
 LI|Voorzichtig (standaard): spoorhoogte van de radar, normale sporen, hoek β ingeschakeld. Geeft de laagste waarden.

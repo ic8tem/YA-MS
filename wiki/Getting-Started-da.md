@@ -36,6 +36,8 @@ Over fanerne er der to rækker betjeningselementer, som gælder for alle faner. 
 | **Timer (−12 til +36 t)** | Flytter beregningens tidspunkt fra 12 timer før til 36 timer efter dette klokkeslæt i trin på 15 minutter. Ved siden af: *Beregning for: nu* eller *Beregning for: dd/mm tt:mm UTC*. |
 | **Realtid** | Tilbage til nu. |
 
+Tidslinjen («Timer (−12 til +36 t)» og «Realtid») sidder øverst i fanen Prognoseberegning, fordi den kun gælder den beregning.
+
 ## 2. Din station og DX
 
 1. Skriv **Min lokator** og **højde m**.

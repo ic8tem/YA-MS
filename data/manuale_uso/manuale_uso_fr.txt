@@ -70,6 +70,7 @@ LI|Heure : horloge UTC.
 LI|Date du calcul (UTC) : le jour du calcul. Elle s'applique au Calcul prévisionnel, au tableau des 24 heures du Calcul de l'efficacité et à la chronologie du Radar GRAVES. Par défaut c'est aujourd'hui, et à minuit elle passe au nouveau jour.
 LI|Heures (de −12 à +36 h) : décale le moment du calcul, par pas de 15 minutes. À côté : « Calcul pour : maintenant » ou la date et l'heure choisies.
 LI|Temps réel : revient au moment présent.
+LI|La ligne du temps («Heures (de −12 à +36 h)» et «Temps réel») est en haut de l'onglet Calcul prévisionnel, car elle ne vaut que pour ce calcul.
 H2|4.4 Configurer sa propre station
 TAG|PROCEDURA|1) Dans Mon locator, saisissez votre locator et l'altitude. 2) Saisissez le locator et l'altitude du correspondant, ou cliquez sur la carte du Calcul prévisionnel : clic gauche = correspondant, clic droit = votre station. 3) Choisissez la bande. 4) Saisissez la longueur du boom et l'élévation du lobe de votre antenne. 5) Appuyez sur Calculer : la barre d'état confirme « Trajet calculé : ... km, ... points de réflexion échantillonnés ».
 TAG|NOTA|Les réglages sont enregistrés dans data/config.ini à la fermeture et à chaque calcul : au prochain démarrage, vous retrouvez le même trajet.
@@ -116,11 +117,11 @@ LI|RÈGLES EXPÉRIMENTALES ENTRE LES BANDES : nombre, intensité et durée des r
 TAG|NOTA|Une marge positive indique qu'une traînée sous-dense moyenne suffit à établir la liaison avec votre station ; une marge négative indique qu'il faut des traînées plus denses ou des météores sur-denses. C'est une estimation : la référence reste l'expérience sur la bande.
 H1|7. Calcul de l'efficacité
 P|L'efficacité indique, en pourcentage, dans quelle mesure la position du radiant d'un essaim permet des réflexions sur votre trajet : 100 % est la position la plus favorable pour ce trajet. Ce sous-onglet la montre heure par heure pour le jour de la « Date du calcul », avec les valeurs au milieu de chaque heure.
-H2|7.1 Les quatre encadrés
+H2|7.1 La bande au-dessus des onglets
+P|Ces cadres se trouvent dans une bande sous la ligne de l'horaire, au-dessus des onglets, toujours visible même avec les lignes de commandes repliées : à gauche les deux cadres du jour choisi, puis les six horizons de prévision, qui partent de maintenant.
 LI|MEILLEURE HEURE DE LA JOURNÉE : l'heure avec l'indice du trajet le plus élevé et le côté prépondérant.
 LI|ESSAIM LE PLUS FAVORABLE : l'essaim qui contribue le plus, avec l'heure, le côté et les deux meilleurs pointages.
-LI|MAINTENANT : indice et côté dans l'heure en cours et le Hot recommandé (seulement si le jour choisi est aujourd'hui).
-LI|PRÉVISION EXPÉRIMENTALE : réflexions par heure prévues maintenant, dans 1 heure et dans 2 heures (chapitre 8).
+LI|MAINTENANT · DANS 1, 3, 6, 12 ET 24 HEURES: pour chaque horizon, la moyenne de l'heure qui y commence (quatre échantillons) : indice du trajet, côté dominant, essaim qui contribue le plus et, quand la donnée radar existe, les réflexions par heure de la prévision expérimentale. Dans MAINTENANT, sans donnée radar, le Hot conseillé apparaît. Mise à jour chaque minute.
 P|Lorsqu'un encadré n'a pas de valeurs, il indique pourquoi : aucune zone commune, aucun essaim actif, ou des radiants défavorables toute la journée. L'info-bulle de chaque encadré explique ce qu'il montre. Sous les encadrés figurent, si nécessaire, l'avertissement AUCUNE ZONE COMMUNE et un bandeau qui explique les lettres A et B.
 H2|7.2 Le réglage du calcul
 LI|Prudent (par défaut) : altitude des traînées du radar, traînées normales, angle β activé. Donne les valeurs les plus basses.

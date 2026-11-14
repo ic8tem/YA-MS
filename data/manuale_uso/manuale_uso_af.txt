@@ -70,6 +70,7 @@ LI|Tyd: UTC-horlosie.
 LI|Berekeningsdatum (UTC): die dag van die berekening. Dit geld vir Voorspellingsberekening, vir die 24-uur-tabel van Berekening van doeltreffendheid en vir die chronologie van GRAVES-radar. Die beginwaarde is vandag en om middernag volg dit die nuwe dag.
 LI|Ure (−12 tot +36 h): skuif die oomblik van die berekening, in stappe van 15 minute. Langsaan: "Berekening vir: nou" of die gekose datum en tyd.
 LI|Intyds: keer terug na die huidige oomblik.
+LI|Die tydlyn («Ure (−12 tot +36 h)» en «Intyds») is bo-aan die oortjie Voorspellingsberekening, omdat dit net vir daardie berekening geld.
 H2|4.4 Jou eie stasie opstel
 TAG|PROCEDURA|1) Tik My lokator en die hoogte in. 2) Tik die lokator en die hoogte van die DX-stasie in, of klik op die kaart van Voorspellingsberekening: linkerklik = DX-stasie, regterklik = jou stasie. 3) Kies die band. 4) Tik die boomlengte en die lob-elevasie van jou antenna in. 5) Druk Bereken: die statusbalk bevestig "Pad bereken: ... km, ... refleksiepunte gemonster".
 TAG|NOTA|Die instellings word in data/config.ini gestoor wanneer die program toegemaak word en by elke berekening: by die volgende aanskakel kry jy dieselfde pad terug.
@@ -116,11 +117,11 @@ LI|EKSPERIMENTELE REËLS TUSSEN BANDE: aantal, sterkte en duur van die refleksie
 TAG|NOTA|'n Positiewe marge sê dat 'n gemiddelde onderdigte spoor genoeg is om die pad met jou stasie te sluit; 'n negatiewe marge sê dat digter spore of oordigte meteore nodig is. Dit is 'n skatting: die maatstaf bly die ervaring op die band.
 H1|7. Berekening van doeltreffendheid
 P|Die doeltreffendheid sê, as persentasie, in watter mate die posisie van die radiant van 'n swerm refleksies op jou pad toelaat: 100 % is die gunstigste posisie vir daardie pad. Hierdie suboortjie wys dit uur vir uur vir die dag van die "Berekeningsdatum", met die waardes op die halfuur.
-H2|7.1 Die vier blokke
+H2|7.1 Die strook bo die oortjies
+P|Hierdie blokkies staan in 'n strook onder die tydry, bo die oortjies, altyd sigbaar, ook met die opdragrye ingevou: links die twee blokkies van die gekose dag, dan die ses voorspellingshorisonne, wat van nou af begin.
 LI|BESTE TYD VAN DIE DAG: die uur met die hoogste padindeks en die oorheersende kant.
 LI|GUNSTIGSTE SWERM: die swerm wat die meeste bydra, met die uur, die kant en die twee beste rigtings.
-LI|NOU: indeks en kant in hierdie uur en die aanbevole Hot (slegs as die gekose dag vandag is).
-LI|EKSPERIMENTELE VOORSPELLING: verwagte refleksies per uur nou, oor 1 en oor 2 uur (hoofstuk 8).
+LI|NOU · OOR 1, 3, 6, 12 EN 24 UUR: vir elke horison die gemiddeld van die uur wat daar begin (vier monsters): roete-indeks, oorheersende kant, die swerm wat die meeste bydra en, as daar radardata is, die refleksies per uur van die eksperimentele voorspelling. In NOU verskyn sonder radardata die aanbevole Hot. Word elke minuut bygewerk.
 P|Wanneer 'n blok geen waardes het nie, sê dit hoekom: geen gemeenskaplike sone nie, geen aktiewe swerm nie, of radiante wat die hele dag ongunstig is. Die wenkballon van elke blok verduidelik wat dit wys. Onder die blokke verskyn, wanneer nodig, die waarskuwing GEEN GEMEENSKAPLIKE SONE NIE en 'n strook wat die letters A en B verduidelik.
 H2|7.2 Die instelling van die berekening
 LI|Versigtig (beginwaarde): spoorhoogte van radar, normale spore, hoek β aan. Gee die laagste waardes.

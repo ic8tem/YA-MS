@@ -817,3 +817,10 @@ Il Mercatore si sposta trascinandolo con il mouse; doppio clic: di nuovo centrat
 Memorizza	Uložit
 Il locator scritto è diverso da quello dell'archivio CALL3: premi per aggiornarlo e memorizzarlo (voce a mano, scritta subito anche dentro call3.txt).	Zadaný lokátor se liší od lokátoru v archivu CALL3: stiskněte pro jeho aktualizaci a uložení (ruční záznam, ihned zapsaný i do call3.txt).
 {0} memorizzato nel CALL3: {1}	{0} uloženo do CALL3: {1}
+TRA 1 ORA	ZA 1 HODINU
+TRA {0} ORE	ZA {0} HOD.
+lato {0} · {1}	strana {0} · {1}
+nessuno sciame utile	žádný užitečný roj
+{0:F0} rifl./ora previste	{0:F0} odr./hod. očekáváno
+{0} UTC · indice {1:F1}	{0} UTC · index {1:F1}
+Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	Předpověď pro zvolenou trasu: průměr hodiny, která začíná na tomto horizontu (čtyři vzorky za hodinu). Index trasy = součet ZHR × účinnost aktivních rojů; dále převládající strana trasy a roj s největším příspěvkem. Odrazy za hodinu pocházejí z experimentální předpovědi (radar Collm, pravidla SM6FHZ), pokud jsou k dispozici radarová data.

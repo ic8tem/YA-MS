@@ -36,6 +36,8 @@ Fyrir ofan flipana eru tvær raðir stýringa sem gilda fyrir alla flipa. Hnappu
 | **Klukkustundir (−12 til +36 klst.)** | Færir tíma útreikningsins frá 12 klukkustundum á undan til 36 klukkustunda á eftir þeim tíma, í 15 mínútna skrefum. Við hliðina: *Útreikningur fyrir: núna* eða *Útreikningur fyrir: dd/mm hh:mm UTC*. |
 | **Rauntími** | Aftur til líðandi stundar. |
 
+Tímalínan («Klukkustundir (−12 til +36 klst.)» og «Rauntími») er efst í flipanum Spáreikningur, því hún gildir aðeins fyrir þann útreikning.
+
 ## 2. Þín stöð og mótstöðin
 
 1. Sláðu inn **Minn locator** og **hæð m**.

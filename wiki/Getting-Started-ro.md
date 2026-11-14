@@ -36,6 +36,8 @@ Deasupra filelor sunt două rânduri de comenzi, valabile pentru toate filele. B
 | **Ore (−12 până la +36 h)** | Mută momentul calculului de la 12 ore înainte până la 36 de ore după acea oră, în pași de 15 minute. Alături: *Calcul pentru: acum* sau *Calcul pentru: zz/ll hh:mm UTC*. |
 | **Timp real** | Înapoi la momentul actual. |
 
+Linia timpului («Ore (de la −12 la +36 h)» și «Timp real») este în partea de sus a filei Calcul de prognoză, pentru că se aplică doar acelui calcul.
+
 ## 2. Stația dumneavoastră și DX-ul
 
 1. Introduceți **Locatorul meu** și **înălțime m**.

@@ -36,6 +36,8 @@ Bo die oortjies is daar twee rye kontroles, geldig vir al die oortjies. Die knop
 | **Ure (−12 tot +36 h)** | Skuif die oomblik van die berekening van 12 uur voor tot 36 uur na daardie tyd, in stappe van 15 minute. Langsaan: *Berekening vir: nou* of *Berekening vir: dd/mm hh:mm UTC*. |
 | **Intyds** | Terug na nou. |
 
+Die tydlyn («Ure (−12 tot +36 h)» en «Intyds») is bo-aan die oortjie Voorspellingsberekening, omdat dit net vir daardie berekening geld.
+
 ## 2. Jou stasie en die DX
 
 1. Tik **My lokator** en **hoogte m** in.

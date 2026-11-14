@@ -36,6 +36,8 @@ Acima das abas há duas linhas de comandos, válidas para todas as abas. O botã
 | **Horas (de −12 a +36 h)** | Desloca o momento do cálculo desde 12 horas antes até 36 horas depois dessa hora, em passos de 15 minutos. Ao lado: *Cálculo para: agora* ou *Cálculo para: dd/mm hh:mm UTC*. |
 | **Tempo real** | Volta ao momento atual. |
 
+A linha do tempo («Horas (de −12 a +36 h)» e «Tempo real») fica no topo da aba Cálculo de previsão, porque só vale para esse cálculo.
+
 ## 2. A sua estação e o DX
 
 1. Escreva **O meu locator** e **altitude m**.

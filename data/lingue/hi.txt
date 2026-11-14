@@ -816,3 +816,10 @@ Il Mercatore si sposta trascinandolo con il mouse; doppio clic: di nuovo centrat
 Memorizza	सहेजें
 Il locator scritto è diverso da quello dell'archivio CALL3: premi per aggiornarlo e memorizzarlo (voce a mano, scritta subito anche dentro call3.txt).	लिखा गया लोकेटर CALL3 संग्रह वाले से अलग है: इसे अपडेट और सहेजने के लिए दबाएँ (हाथ से प्रविष्टि, तुरंत call3.txt में भी लिखी जाती है)।
 {0} memorizzato nel CALL3: {1}	{0} CALL3 में सहेजा गया: {1}
+TRA 1 ORA	1 घंटे बाद
+TRA {0} ORE	{0} घंटे बाद
+lato {0} · {1}	पक्ष {0} · {1}
+nessuno sciame utile	कोई उपयोगी बौछार नहीं
+{0:F0} rifl./ora previste	{0:F0} परावर्तन/घंटा अपेक्षित
+{0} UTC · indice {1:F1}	{0} UTC · सूचकांक {1:F1}
+Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	चुने गए पथ का पूर्वानुमान: उस क्षितिज पर शुरू होने वाले घंटे का औसत (घंटे में चार नमूने)। पथ सूचकांक = सक्रिय बौछारों के ZHR × दक्षता का योग; फिर पथ का प्रमुख पक्ष और सबसे अधिक योगदान देने वाली बौछार। प्रति घंटा परावर्तन प्रायोगिक पूर्वानुमान (Collm रडार, SM6FHZ के नियम) से आते हैं, जब रडार का डेटा हो।

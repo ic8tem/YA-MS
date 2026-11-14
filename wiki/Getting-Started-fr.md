@@ -36,6 +36,8 @@ Au-dessus des onglets se trouvent deux rangées de commandes, valables pour tous
 | **Heures (de −12 à +36 h)** | Déplace l'instant du calcul de 12 heures avant à 36 heures après cette heure, par pas de 15 minutes. À côté : *Calcul pour : maintenant* ou *Calcul pour : jj/mm hh:mm UTC*. |
 | **Temps réel** | Revient à l'instant présent. |
 
+La ligne du temps («Heures (de −12 à +36 h)» et «Temps réel») est en haut de l'onglet Calcul prévisionnel, car elle ne vaut que pour ce calcul.
+
 ## 2. Votre station et le correspondant
 
 1. Saisissez **Mon locator** et **altitude m**.

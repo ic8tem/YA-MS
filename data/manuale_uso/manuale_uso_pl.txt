@@ -70,6 +70,7 @@ LI|Godzina: zegar UTC.
 LI|Data obliczenia (UTC): dzień obliczenia. Dotyczy kart Obliczenie prognozy, tabeli 24 godzin w karcie Obliczanie sprawności oraz chronologii w karcie Radar GRAVES. Domyślnie jest to dzień dzisiejszy, a o północy data przechodzi na nowy dzień.
 LI|Godziny (od −12 do +36 h): przesuwa moment obliczenia w krokach co 15 minut. Obok: "Obliczenie dla: teraz" albo wybrana data i godzina.
 LI|Czas rzeczywisty: powrót do bieżącej chwili.
+LI|Linia czasu («Godziny (od −12 do +36 h)» i «Czas rzeczywisty») jest na górze zakładki Obliczenie prognozy, bo dotyczy tylko tego obliczenia.
 H2|4.4 Ustawienie własnej stacji
 TAG|PROCEDURA|1) Wpisz Mój lokator i wysokość. 2) Wpisz lokator i wysokość korespondenta albo kliknij mapę w karcie Obliczenie prognozy: lewy przycisk = korespondent, prawy przycisk = twoja stacja. 3) Wybierz pasmo. 4) Wpisz długość bumu i elewację wiązki twojej anteny. 5) Naciśnij Oblicz: pasek stanu potwierdzi "Trasa obliczona: ... km, ... punktów odbicia próbkowanych".
 TAG|NOTA|Ustawienia są zapisywane w data/config.ini przy zamknięciu programu i przy każdym obliczeniu: przy następnym uruchomieniu zastaniesz tę samą trasę.
@@ -116,11 +117,11 @@ LI|EKSPERYMENTALNE REGUŁY MIĘDZY PASMAMI: liczba, natężenie i czas trwania o
 TAG|NOTA|Dodatni margines oznacza, że przeciętny ślad niedogęszczony wystarcza do zrealizowania łączności na tej trasie twoją stacją; ujemny margines oznacza, że potrzebne są gęstsze ślady lub meteory przegęszczone. To jest oszacowanie: punktem odniesienia pozostaje doświadczenie na paśmie.
 H1|7. Obliczanie sprawności
 P|Sprawność mówi w procentach, w jakim stopniu położenie radiantu roju umożliwia odbicia na twojej trasie: 100 % to położenie najkorzystniejsze dla tej trasy. Ta podkarta pokazuje ją godzina po godzinie dla dnia ustawionego w polu "Data obliczenia (UTC)", z wartościami w połowie każdej godziny.
-H2|7.1 Cztery ramki
+H2|7.1 Pasek nad zakładkami
+P|Te ramki są w pasku pod wierszem czasu, nad zakładkami, zawsze widoczne, także przy zwiniętych wierszach poleceń: po lewej dwie ramki wybranego dnia, potem sześć horyzontów prognozy, liczonych od teraz.
 LI|NAJLEPSZA PORA DNIA: godzina z najwyższym indeksem trasy i przeważająca strona.
 LI|NAJKORZYSTNIEJSZY RÓJ: rój, który ma największy udział, z godziną, stroną i dwoma najlepszymi kierunkami anteny.
-LI|TERAZ: indeks i strona w bieżącej godzinie oraz zalecany Hot (tylko jeśli wybranym dniem jest dzisiaj).
-LI|PROGNOZA EKSPERYMENTALNA: przewidywana liczba odbić na godzinę teraz, za 1 i za 2 godziny (rozdział 8).
+LI|TERAZ · ZA 1, 3, 6, 12 I 24 GODZ.: dla każdego horyzontu średnia z godziny, która się tam zaczyna (cztery próbki): indeks trasy, przeważająca strona, rój o największym udziale i, gdy są dane radarowe, odbicia na godzinę z prognozy eksperymentalnej. W TERAZ, bez danych radarowych, pojawia się zalecany Hot. Aktualizacja co minutę.
 P|Gdy ramka nie ma wartości, podaje powód: brak wspólnej strefy, brak aktywnego roju albo radianty niekorzystne przez cały dzień. Dymek każdej ramki wyjaśnia, co ona pokazuje. Pod ramkami, w razie potrzeby, ostrzeżenie BRAK WSPÓLNEJ STREFY oraz pasek objaśniający litery A i B.
 H2|7.2 Ustawienia obliczenia
 LI|Ostrożnie (domyślnie): wysokość śladów z radaru, zwykłe ślady, kąt β włączony. Daje najniższe wartości.

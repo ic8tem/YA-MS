@@ -36,6 +36,8 @@ Sekmelerin üstünde, tüm sekmeler için geçerli iki sıra kontrol vardır. Sa
 | **Saatler (−12 ile +36 sa arası)** | Hesap anını 15 dakikalık adımlarla o saatin 12 saat öncesinden 36 saat sonrasına kadar kaydırır. Yanında: *Hesap zamanı: şimdi* ya da *Hesap zamanı: dd/mm hh:mm UTC*. |
 | **Gerçek zaman** | Şimdiye döner. |
 
+Zaman çizgisi («Saatler (−12 ile +36 sa arası)» ve «Gerçek zaman») Tahmin hesabı sekmesinin en üstündedir, çünkü yalnızca o hesap için geçerlidir.
+
 ## 2. İstasyonunuz ve DX
 
 1. **Benim lokatörüm** ve **yükseklik m** alanlarını doldurun.

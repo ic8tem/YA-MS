@@ -16,8 +16,9 @@ Fanen viser den time for time for dagen som er valgt i *Beregningsdato (UTC)* (v
 |---|---|
 | **DAGENS BESTE TIDSPUNKT** | Timen med høyest strekningsindeks, indeksen og dominerende side (A/B med sin %) |
 | **GUNSTIGSTE SVERM** | Svermen med størst ZHR × effektivitet den dagen, dens effektivitet, time og side, og **beste retning** (radiantens asimut +90° / −90°) |
-| **NÅ** | Indeks og dominerende side i denne timen, og anbefalt Hot (bare når valgt dag er i dag) |
-| **EKSPERIMENTELL PROGNOSE** | Forventede refleksjoner/time nå, om 1 t og om 2 t på prognosefrekvensen (Collm, SM6FHZ-regler; se [Eksperimentelle prognoser](Experimental-Forecasts-nb)) |
+| **NÅ · OM 1, 3, 6, 12 OG 24 TIMER** | for hver horisont gjennomsnittet for timen som starter der (fire prøver): strekningsindeks, dominerende side, svermen som bidrar mest og, når det finnes radardata, refleksjoner per time fra den eksperimentelle prognosen. I NÅ vises uten radardata anbefalt Hot. Oppdateres hvert minutt. |
+
+Boksene ligger i et bånd under tidsraden, over fanene, alltid synlig også med kommandoradene slått sammen: til venstre de to boksene for valgt dag, deretter de seks prognosehorisontene, som starter nå.
 
 Under panelene forklarer et bånd bokstavene A og B (se nedenfor).
 

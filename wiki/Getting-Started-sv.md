@@ -36,6 +36,8 @@ Ovanför flikarna finns två rader med reglage som gäller för alla flikar. Kna
 | **Timmar (−12 till +36 h)** | Flyttar beräkningens tidpunkt från 12 timmar före till 36 timmar efter den tiden, i steg om 15 minuter. Bredvid: *Beräkning för: nu* eller *Beräkning för: dd/mm hh:mm UTC*. |
 | **Realtid** | Tillbaka till nu. |
 
+Tidslinjen («Timmar (−12 till +36 h)» och «Realtid») ligger överst i fliken Prognosberäkning, eftersom den bara gäller den beräkningen.
+
 ## 2. Din station och motstationen
 
 1. Skriv in **Min lokator** och **höjd m**.

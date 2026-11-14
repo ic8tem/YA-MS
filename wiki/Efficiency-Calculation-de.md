@@ -16,8 +16,9 @@ Dieser Reiter zeigt sie Stunde für Stunde für den in *Berechnungsdatum (UTC)* 
 |---|---|
 | **BESTE TAGESZEIT** | Stunde mit dem höchsten Streckenindex, der Index und die überwiegende Seite (A/B mit ihrem %) |
 | **GÜNSTIGSTER STROM** | Der Strom mit dem größten ZHR × Effektivität des Tages, seine Effektivität, Stunde und Seite sowie die **beste Ausrichtung** (Radiant-Azimut +90° / −90°) |
-| **JETZT** | Index und überwiegende Seite zu dieser Stunde und der empfohlene Hot (nur wenn der gewählte Tag heute ist) |
-| **EXPERIMENTELLE VORHERSAGE** | Erwartete Reflexionen/h jetzt, in 1 h und in 2 h auf der Vorhersagefrequenz (Collm, SM6FHZ-Regeln; siehe [Experimentelle Vorhersage](Experimental-Forecasts-de)) |
+| **JETZT · IN 1, 3, 6, 12 UND 24 STUNDEN** | für jeden Horizont das Mittel der dort beginnenden Stunde (vier Stichproben): Streckenindex, vorherrschende Seite, der Strom mit dem größten Beitrag und, wenn Radardaten vorliegen, die Reflexionen pro Stunde der experimentellen Vorhersage. In JETZT erscheint ohne Radardaten der empfohlene Hot. Wird jede Minute aktualisiert. |
+
+Diese Kästen stehen in einem Band unter der Zeitzeile, über den Registerkarten, immer sichtbar, auch bei eingeklappten Befehlszeilen: links die zwei Kästen des gewählten Tages, dann die sechs Vorhersagehorizonte, die bei jetzt beginnen.
 
 Unter den Karten erklärt ein Streifen die Buchstaben A und B (siehe unten).
 

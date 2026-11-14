@@ -36,6 +36,8 @@ Di atas tab terdapat dua baris kontrol yang berlaku untuk semua tab. Tombol **Ko
 | **Jam (−12 hingga +36 h)** | Menggeser saat perhitungan dari 12 jam sebelum hingga 36 jam sesudah waktu tersebut, dengan langkah 15 menit. Di sampingnya: *Perhitungan untuk: sekarang* atau *Perhitungan untuk: dd/mm hh:mm UTC*. |
 | **Waktu nyata** | Kembali ke saat ini. |
 
+Garis waktu («Jam (−12 hingga +36 h)» dan «Waktu nyata») ada di bagian atas tab Perhitungan prakiraan, karena hanya berlaku untuk perhitungan itu.
+
 ## 2. Stasiun Anda dan DX
 
 1. Isi **Locator saya** dan **ketinggian m**.

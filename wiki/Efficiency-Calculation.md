@@ -16,8 +16,9 @@ This tab shows it hour by hour for the day chosen in *Calculation date (UTC)* (v
 |---|---|
 | **BEST TIME OF THE DAY** | Hour with the highest path index, the index and the prevailing side (A/B with its %) |
 | **MOST FAVOURABLE SHOWER** | The shower with the largest ZHR × efficiency of the day, its efficiency, hour and side, and the **best heading** (radiant azimuth +90° / −90°) |
-| **NOW** | Index and prevailing side at this hour, and the recommended Hot (only when the chosen day is today) |
-| **EXPERIMENTAL FORECAST** | Expected reflections/hour now, in 1 h and in 2 h at the forecast frequency (Collm, SM6FHZ rules; see [Experimental forecasts](Experimental-Forecasts)) |
+| **NOW · IN 1, 3, 6, 12 AND 24 HOURS** | for each horizon, the average of the hour starting there (four samples): path index, prevailing side, the shower that contributes most and, when radar data are available, the reflections per hour of the experimental forecast. In NOW, without radar data, the recommended Hot is shown. Updated every minute. |
+
+These cards sit in a band below the time row, above the tabs, always visible even with the command rows folded: on the left the two cards of the chosen day, then the six forecast horizons, which start from now.
 
 Below the cards a band explains the letters A and B (see below).
 

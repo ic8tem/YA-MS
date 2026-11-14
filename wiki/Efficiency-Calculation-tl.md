@@ -16,8 +16,9 @@ Ipinapakita ito ng tab na ito bawat oras para sa araw na pinili sa *Petsa ng kal
 |---|---|
 | **PINAKAMAHUSAY NA ORAS NG ARAW** | Ang oras na may pinakamataas na indeks ng landas, ang indeks at ang nangingibabaw na panig (A/B kasama ang %) |
 | **PINAKAPABORABLENG SHOWER** | Ang shower na may pinakamalaking ZHR × episyensya sa araw na iyon, ang episyensya, oras at panig nito, at ang **pinakamahusay na tutok** (azimuth ng radiant +90° / −90°) |
-| **NGAYON** | Indeks at nangingibabaw na panig sa oras na ito, at ang inirerekomendang Hot (kapag ngayon lamang ang napiling araw) |
-| **EKSPERIMENTAL NA PAGTATAYA** | Inaasahang repleksiyon/oras ngayon, sa loob ng 1 h at 2 h sa frequency ng pagtataya (Collm, mga tuntunin ni SM6FHZ; tingnan ang [Eksperimental na pagtataya](Experimental-Forecasts-tl)) |
+| **NGAYON · SA LOOB NG 1, 3, 6, 12 AT 24 ORAS** | para sa bawat horizon, ang average ng oras na nagsisimula roon (apat na sample): index ng landas, nangingibabaw na panig, ang shower na pinakamalaki ang ambag at, kapag may datos ng radar, ang mga repleksiyon kada oras mula sa eksperimental na hula. Sa NGAYON, kapag walang datos ng radar, lumilitaw ang inirerekomendang Hot. Nag-a-update bawat minuto. |
+
+Nasa isang banda ang mga kahong ito sa ilalim ng hanay ng oras, sa itaas ng mga tab, laging nakikita kahit nakatiklop ang mga hanay ng utos: sa kaliwa ang dalawang kahon ng piniling araw, saka ang anim na horizon ng hula, na nagsisimula ngayon.
 
 Sa ilalim ng mga card, ipinapaliwanag ng isang banda ang mga titik na A at B (tingnan sa ibaba).
 

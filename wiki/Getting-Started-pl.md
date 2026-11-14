@@ -36,6 +36,8 @@ Nad zakładkami znajdują się dwa wiersze elementów sterujących, wspólne dla
 | **Godziny (−12 do +36 h)** | Przesuwa moment obliczeń od 12 godzin przed do 36 godzin po tej porze, w krokach co 15 minut. Obok: *Obliczenia dla: teraz* lub *Obliczenia dla: dd/mm hh:mm UTC*. |
 | **Czas rzeczywisty** | Powrót do chwili obecnej. |
 
+Linia czasu («Godziny (od −12 do +36 h)» i «Czas rzeczywisty») jest na górze zakładki Obliczenie prognozy, bo dotyczy tylko tego obliczenia.
+
 ## 2. Twoja stacja i DX
 
 1. Wpisz **Mój lokator** i **wysokość m**.

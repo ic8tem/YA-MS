@@ -70,6 +70,7 @@ LI|Tid: UTC-ur.
 LI|Beregningsdato (UTC): dagen for beregningen. Gælder for Prognoseberegning, for 24-timerstabellen i Effektivitetsberegning og for tidsforløbet i GRAVES-radar. Standard er i dag, og ved midnat følger den den nye dag.
 LI|Timer (−12 til +36 t): flytter beregningstidspunktet i trin på 15 minutter. Ved siden af: »Beregning for: nu« eller den valgte dato og tid.
 LI|Realtid: vender tilbage til det aktuelle tidspunkt.
+LI|Tidslinjen («Timer (−12 til +36 t)» og «Realtid») sidder øverst i fanen Prognoseberegning, fordi den kun gælder den beregning.
 H2|4.4 Indstilling af din egen station
 TAG|PROCEDURA|1) Skriv Min lokator og højden. 2) Skriv modstationens lokator og højde, eller klik på kortet i Prognoseberegning: venstreklik = modstation, højreklik = din station. 3) Vælg båndet. 4) Skriv bomlængden og lapelevationen for din antenne. 5) Tryk på Beregn: statuslinjen bekræfter »Strækning beregnet: ... km, ... refleksionspunkter samplet«.
 TAG|NOTA|Indstillingerne gemmes i data/config.ini, når programmet lukkes, og ved hver beregning: ved næste start finder du den samme strækning.
@@ -116,11 +117,11 @@ LI|EKSPERIMENTELLE REGLER MELLEM BÅNDENE: antal, styrke og varighed af refleksi
 TAG|NOTA|En positiv margen betyder, at et gennemsnitligt underdenst spor er nok til at gennemføre strækningen med din station; en negativ margen betyder, at der kræves tættere spor eller overdense meteorer. Det er et estimat: referencen er stadig erfaringen på båndet.
 H1|7. Effektivitetsberegning
 P|Effektiviteten angiver i procent, i hvor høj grad positionen af en sværms radiant giver refleksioner på din strækning: 100 % er den mest gunstige position for den strækning. Denne underfane viser den time for time for dagen i »Beregningsdato«, med værdierne midt i hver time.
-H2|7.1 De fire felter
+H2|7.1 Båndet over fanerne
+P|Boksene sidder i et bånd under tidsrækken, over fanerne, altid synligt også med kommandorækkerne foldet sammen: til venstre de to bokse for den valgte dag, derefter de seks prognosehorisonter, der starter nu.
 LI|DAGENS BEDSTE TIDSPUNKT: timen med det højeste strækningsindeks og den dominerende side.
 LI|MEST GUNSTIGE SVÆRM: den sværm, der bidrager mest, med timen, siden og de to bedste antenneretninger.
-LI|NU: indeks og side i denne time og det anbefalede Hot (kun hvis den valgte dag er i dag).
-LI|EKSPERIMENTEL PROGNOSE: forventede refleksioner pr. time nu, om 1 og om 2 timer (kapitel 8).
+LI|NU · OM 1, 3, 6, 12 OG 24 TIMER: for hver horisont gennemsnittet for timen, der starter dér (fire prøver): strækningsindeks, dominerende side, den sværm, der bidrager mest, og, når der er radardata, refleksioner pr. time fra den eksperimentelle prognose. I NU vises uden radardata den anbefalede Hot. Opdateres hvert minut.
 P|Når et felt ikke har værdier, fortæller det hvorfor: ingen fælles zone, ingen aktiv sværm eller ugunstige radianter hele dagen. Værktøjstippet for hvert felt forklarer, hvad det viser. Under felterne vises om nødvendigt advarslen INGEN FÆLLES ZONE og en bjælke, der forklarer bogstaverne A og B.
 H2|7.2 Beregningens indstilling
 LI|Forsigtig (standard): sporhøjde fra radar, normale spor, vinkel β slået til. Giver de laveste værdier.

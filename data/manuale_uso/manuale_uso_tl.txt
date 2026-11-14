@@ -70,6 +70,7 @@ LI|Oras: orasang UTC.
 LI|Petsa ng kalkulasyon (UTC): ang araw ng kalkulasyon. Para ito sa Kalkulasyon ng pagtataya, sa talahanayan ng 24 na oras ng Kalkulasyon ng episyensya at sa kronolohiya ng GRAVES radar. Ang default ay ngayon, at sa hatinggabi ay sumusunod ito sa bagong araw.
 LI|Mga oras (mula −12 hanggang +36 h): inililipat ang sandali ng kalkulasyon, nang 15 minuto bawat hakbang. Sa tabi: “Kalkulasyon para sa: ngayon” o ang napiling petsa at oras.
 LI|Real time: bumabalik sa kasalukuyang sandali.
+LI|Ang linya ng oras («Mga oras (mula −12 hanggang +36 h)» at «Real time») ay nasa itaas ng tab na Kalkulasyon ng pagtataya, dahil para lamang ito sa kalkulasyong iyon.
 H2|4.4 Pag-set up ng sariling istasyon
 TAG|PROCEDURA|1) Isulat ang Ang aking locator at ang altitude. 2) Isulat ang locator at altitude ng DX station, o mag-click sa mapa ng Kalkulasyon ng pagtataya: left-click = DX station, right-click = iyong istasyon. 3) Piliin ang banda. 4) Isulat ang haba ng boom at ang elevation ng lobe ng iyong antena. 5) Pindutin ang Kalkulahin: kinukumpirma ng status bar ang “Nakalkula ang landas: ... km, ... punto ng repleksiyon na na-sample”.
 TAG|NOTA|Sine-save ang mga setting sa data/config.ini sa pagsasara at sa bawat kalkulasyon: sa susunod na pagsisimula, makikita mo ang parehong landas.
@@ -116,11 +117,11 @@ LI|MGA EKSPERIMENTAL NA PATAKARAN SA PAGITAN NG MGA BANDA: bilang, lakas at taga
 TAG|NOTA|Ang positibong margin ay nangangahulugang sapat na ang isang karaniwang underdense na bakas para makumpleto ang landas gamit ang iyong istasyon; ang negatibong margin ay nangangahulugang kailangan ng mas siksik na mga bakas o overdense na mga meteor. Tantiya lamang ito: ang karanasan sa banda pa rin ang batayan.
 H1|7. Kalkulasyon ng episyensya
 P|Sinasabi ng episyensya, sa porsiyento, kung gaano pinapayagan ng posisyon ng radiant ng isang shower ang mga repleksiyon sa iyong landas: ang 100 % ang pinakapaborableng posisyon para sa landas na iyon. Ipinapakita ito ng sub-tab na ito oras-oras para sa araw ng “Petsa ng kalkulasyon”, gamit ang mga halaga sa kalagitnaan ng bawat oras.
-H2|7.1 Ang apat na kahon
+H2|7.1 Ang banda sa itaas ng mga tab
+P|Nasa isang banda ang mga kahong ito sa ilalim ng hanay ng oras, sa itaas ng mga tab, laging nakikita kahit nakatiklop ang mga hanay ng utos: sa kaliwa ang dalawang kahon ng piniling araw, saka ang anim na horizon ng hula, na nagsisimula ngayon.
 LI|PINAKAMAHUSAY NA ORAS NG ARAW: ang oras na may pinakamataas na index ng landas at ang nangingibabaw na panig.
 LI|PINAKAPABORABLENG SHOWER: ang shower na pinakamalaki ang ambag, kasama ang oras, ang panig at ang dalawang pinakamahusay na pagtutok.
-LI|NGAYON: index at panig sa oras na ito at ang inirerekomendang Hot (kung ngayon lang ang napiling araw).
-LI|EKSPERIMENTAL NA PAGTATAYA: inaasahang mga repleksiyon bawat oras ngayon, sa loob ng 1 at ng 2 oras (kabanata 8).
+LI|NGAYON · SA LOOB NG 1, 3, 6, 12 AT 24 ORAS: para sa bawat horizon, ang average ng oras na nagsisimula roon (apat na sample): index ng landas, nangingibabaw na panig, ang shower na pinakamalaki ang ambag at, kapag may datos ng radar, ang mga repleksiyon kada oras mula sa eksperimental na hula. Sa NGAYON, kapag walang datos ng radar, lumilitaw ang inirerekomendang Hot. Nag-a-update bawat minuto.
 P|Kapag walang halaga ang isang kahon, sinasabi nito kung bakit: walang pinagsasaluhang sona, walang aktibong shower, o hindi paborable ang mga radiant buong araw. Ipinapaliwanag ng tooltip ng bawat kahon kung ano ang ipinapakita nito. Sa ilalim ng mga kahon, kung kailangan, ang babalang WALANG PINAGSASALUHANG SONA at isang strip na nagpapaliwanag sa mga titik A at B.
 H2|7.2 Ang setting ng kalkulasyon
 LI|Maingat (default): taas ng bakas mula sa radar, normal na mga bakas, naka-on ang anggulong β. Nagbibigay ng pinakamababang mga halaga.

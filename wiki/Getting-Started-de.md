@@ -36,6 +36,8 @@ Beim ersten Start zeigt YA-MS eine Beispielstrecke (JN70CN → JO62QM auf 144 MH
 | **Stunden (−12 bis +36 h)** | Verschiebt den Zeitpunkt der Berechnung von 12 Stunden vor bis 36 Stunden nach dieser Uhrzeit, in Schritten von 15 Minuten. Daneben: *Berechnung für: jetzt* oder *Berechnung für: TT/MM hh:mm UTC*. |
 | **Echtzeit** | Zurück zu jetzt. |
 
+Die Zeitleiste («Stunden (−12 bis +36 h)» und «Echtzeit») steht oben in der Registerkarte Vorhersageberechnung, weil sie nur für diese Berechnung gilt.
+
 ## 2. Deine Station und die Gegenstation
 
 1. Gib **Mein Locator** und **Höhe m** ein.

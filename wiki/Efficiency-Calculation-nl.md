@@ -16,8 +16,9 @@ Dit tabblad toont haar uur voor uur voor de dag die is gekozen in *Berekeningsda
 |---|---|
 | **BESTE UUR VAN DE DAG** | Uur met de hoogste trajectindex, de index en de overheersende zijde (A/B met haar %) |
 | **GUNSTIGSTE ZWERM** | De zwerm met de hoogste ZHR × efficiëntie van de dag, zijn efficiëntie, uur en zijde, en de **beste richting** (azimut van de radiant +90° / −90°) |
-| **NU** | Index en overheersende zijde op dit uur, en de aanbevolen hot (alleen als de gekozen dag vandaag is) |
-| **EXPERIMENTELE VOORSPELLING** | Verwachte reflecties/uur nu, over 1 h en over 2 h op de voorspellingsfrequentie (Collm, SM6FHZ-regels; zie [Experimentele voorspelling](Experimental-Forecasts-nl)) |
+| **NU · OVER 1, 3, 6, 12 EN 24 UUR** | per horizon het gemiddelde van het uur dat daar begint (vier monsters): trajectindex, overheersende kant, de zwerm die het meest bijdraagt en, als er radargegevens zijn, de reflecties per uur van de experimentele voorspelling. In NU verschijnt zonder radargegevens de aanbevolen Hot. Wordt elke minuut bijgewerkt. |
+
+Deze vakken staan in een balk onder de tijdregel, boven de tabbladen, altijd zichtbaar, ook met ingeklapte opdrachtregels: links de twee vakken van de gekozen dag, daarna de zes voorspellingshorizonten, die bij nu beginnen.
 
 Onder de kaarten legt een balk de letters A en B uit (zie hieronder).
 

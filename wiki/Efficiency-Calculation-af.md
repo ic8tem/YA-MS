@@ -16,8 +16,9 @@ Hierdie oortjie wys dit uur vir uur vir die dag wat in *Berekeningsdatum (UTC)* 
 |---|---|
 | **BESTE TYD VAN DIE DAG** | Uur met die hoogste padindeks, die indeks en die oorheersende kant (A/B met sy %) |
 | **GUNSTIGSTE SWERM** | Die swerm met die grootste ZHR × doeltreffendheid van die dag, sy doeltreffendheid, uur en kant, en die **beste rigting** (radiant-azimut +90° / −90°) |
-| **NOU** | Indeks en oorheersende kant op hierdie uur, en die aanbevole Hot (slegs wanneer die gekose dag vandag is) |
-| **EKSPERIMENTELE VOORSPELLING** | Verwagte refleksies/uur nou, oor 1 h en oor 2 h op die voorspellingsfrekwensie (Collm, SM6FHZ-reëls; sien [Eksperimentele voorspellings](Experimental-Forecasts-af)) |
+| **NOU · OOR 1, 3, 6, 12 EN 24 UUR** | vir elke horison die gemiddeld van die uur wat daar begin (vier monsters): roete-indeks, oorheersende kant, die swerm wat die meeste bydra en, as daar radardata is, die refleksies per uur van die eksperimentele voorspelling. In NOU verskyn sonder radardata die aanbevole Hot. Word elke minuut bygewerk. |
+
+Hierdie blokkies staan in 'n strook onder die tydry, bo die oortjies, altyd sigbaar, ook met die opdragrye ingevou: links die twee blokkies van die gekose dag, dan die ses voorspellingshorisonne, wat van nou af begin.
 
 Onder die kaarte verduidelik 'n strook die letters A en B (sien hieronder).
 

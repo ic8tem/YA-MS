@@ -36,6 +36,8 @@ Virš kortelių yra dvi valdymo eilutės, galiojančios visoms kortelėms. Mygtu
 | **Valandos (nuo −12 iki +36 h)** | Perkelia skaičiavimo momentą nuo 12 valandų prieš iki 36 valandų po to laiko, 15 minučių žingsniais. Šalia: *Skaičiavimas: dabar* arba *Skaičiavimas: dd/mm hh:mm UTC*. |
 | **Realus laikas** | Grįžti į dabartį. |
 
+Laiko linija («Valandos (nuo −12 iki +36 h)» ir «Realus laikas») yra kortelės Prognozės skaičiavimas viršuje, nes ji galioja tik tam skaičiavimui.
+
 ## 2. Jūsų stotis ir korespondentas
 
 1. Įveskite **Mano lokatorius** ir **aukštis m**.

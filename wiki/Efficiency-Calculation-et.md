@@ -16,8 +16,9 @@ See sakk näitab efektiivsust tund-tunnilt päeval, mis on valitud väljal *Arvu
 |---|---|
 | **PÄEVA PARIM AEG** | Kõrgeima trassi indeksiga tund, indeks ja valdav pool (A/B koos protsendiga) |
 | **KÕIGE SOODSAM METEOORIVOOL** | Päeva suurima ZHR × efektiivsusega meteoorivool, selle efektiivsus, tund ja pool ning **parim suund** (radiandi asimuut +90° / −90°) |
-| **PRAEGU** | Indeks ja valdav pool sel tunnil ning soovitatud Hot (ainult siis, kui valitud päev on täna) |
-| **EKSPERIMENTAALNE PROGNOOS** | Oodatavad peegeldused tunnis praegu, 1 h ja 2 h pärast prognoosi sagedusel (Collm, SM6FHZ reeglid; vt [Eksperimentaalsed prognoosid](Experimental-Forecasts-et)) |
+| **PRAEGU · 1, 3, 6, 12 JA 24 TUNNI PÄRAST** | iga horisondi jaoks seal algava tunni keskmine (neli proovi): teekonna indeks, valdav pool, kõige rohkem panustav vool ja radari andmete olemasolul eksperimentaalse prognoosi peegeldused tunnis. Kastis PRAEGU näidatakse radari andmeteta soovitatud Hot. Uueneb iga minut. |
+
+Need kastid on ribas ajarea all, sakkide kohal, alati nähtaval ka kokku volditud käsuridade korral: vasakul valitud päeva kaks kasti, siis kuus prognoosihorisonti, mis algavad praegusest hetkest.
 
 Infokaartide all selgitab riba tähti A ja B (vt allpool).
 

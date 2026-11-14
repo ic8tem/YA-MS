@@ -36,6 +36,8 @@ Sa itaas ng mga tab ay may dalawang hanay ng mga kontrol, balido para sa lahat n
 | **Mga oras (mula −12 hanggang +36 h)** | Inililipat ang sandali ng kalkulasyon mula 12 oras bago hanggang 36 na oras pagkatapos ng oras na iyon, sa mga hakbang na 15 minuto. Sa tabi nito: *Kalkulasyon para sa: ngayon* o *Kalkulasyon para sa: dd/mm hh:mm UTC*. |
 | **Real time** | Bumalik sa ngayon. |
 
+Ang linya ng oras («Mga oras (mula −12 hanggang +36 h)» at «Real time») ay nasa itaas ng tab na Kalkulasyon ng pagtataya, dahil para lamang ito sa kalkulasyong iyon.
+
 ## 2. Ang iyong istasyon at ang DX
 
 1. I-type ang **Ang aking locator** at **taas m**.

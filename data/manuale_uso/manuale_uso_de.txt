@@ -70,6 +70,7 @@ LI|Zeit: UTC-Uhr.
 LI|Berechnungsdatum (UTC): der Tag der Berechnung. Gilt für die Vorhersageberechnung, für die 24-Stunden-Tabelle der Effektivitätsberechnung und für den Zeitverlauf des GRAVES-Radars. Voreingestellt ist heute, und um Mitternacht wechselt es auf den neuen Tag.
 LI|Stunden (−12 bis +36 h): verschiebt den Berechnungszeitpunkt in Schritten von 15 Minuten. Daneben: „Berechnung für: jetzt“ oder das gewählte Datum und die gewählte Uhrzeit.
 LI|Echtzeit: kehrt zum aktuellen Zeitpunkt zurück.
+LI|Die Zeitleiste («Stunden (−12 bis +36 h)» und «Echtzeit») steht oben in der Registerkarte Vorhersageberechnung, weil sie nur für diese Berechnung gilt.
 H2|4.4 Die eigene Station einrichten
 TAG|PROCEDURA|1) Gib unter Mein Locator deinen Locator und die Höhe ein. 2) Gib Locator und Höhe der Gegenstation ein oder klicke auf die Karte der Vorhersageberechnung: Linksklick = Gegenstation, Rechtsklick = deine Station. 3) Wähle das Band. 4) Gib die Boomlänge und die Keulenelevation deiner Antenne ein. 5) Drücke Berechnen: Die Statusleiste bestätigt „Strecke berechnet: ... km, ... Reflexionspunkte abgetastet“.
 TAG|NOTA|Die Einstellungen werden beim Schließen und bei jeder Berechnung in data/config.ini gespeichert: Beim nächsten Start findest du dieselbe Strecke wieder.
@@ -116,11 +117,11 @@ LI|EXPERIMENTELLE REGELN ZWISCHEN DEN BÄNDERN: Anzahl, Stärke und Dauer der Re
 TAG|NOTA|Eine positive Reserve bedeutet, dass eine mittlere unterdichte Spur genügt, um die Strecke mit deiner Station zu schließen; eine negative Reserve bedeutet, dass dichtere Spuren oder überdichte Meteore nötig sind. Es ist eine Schätzung: Maßstab bleibt die Erfahrung auf dem Band.
 H1|7. Effektivitätsberechnung
 P|Die Effektivität gibt in Prozent an, wie sehr die Lage des Radianten eines Stroms Reflexionen auf deiner Strecke ermöglicht: 100 % ist die günstigste Lage für diese Strecke. Dieser Unterreiter zeigt sie Stunde für Stunde für den Tag des „Berechnungsdatums“, mit den Werten zur Mitte jeder Stunde.
-H2|7.1 Die vier Felder
+H2|7.1 Das Band über den Registerkarten
+P|Diese Kästen stehen in einem Band unter der Zeitzeile, über den Registerkarten, immer sichtbar, auch bei eingeklappten Befehlszeilen: links die zwei Kästen des gewählten Tages, dann die sechs Vorhersagehorizonte, die bei jetzt beginnen.
 LI|BESTE TAGESZEIT: die Stunde mit dem höchsten Streckenindex und die vorherrschende Seite.
 LI|GÜNSTIGSTER STROM: der Strom mit dem größten Beitrag, mit Stunde, Seite und den beiden besten Ausrichtungen.
-LI|JETZT: Index und Seite in dieser Stunde und der empfohlene Hot (nur wenn der gewählte Tag heute ist).
-LI|EXPERIMENTELLE VORHERSAGE: erwartete Reflexionen pro Stunde jetzt, in 1 und in 2 Stunden (Kapitel 8).
+LI|JETZT · IN 1, 3, 6, 12 UND 24 STUNDEN: für jeden Horizont das Mittel der dort beginnenden Stunde (vier Stichproben): Streckenindex, vorherrschende Seite, der Strom mit dem größten Beitrag und, wenn Radardaten vorliegen, die Reflexionen pro Stunde der experimentellen Vorhersage. In JETZT erscheint ohne Radardaten der empfohlene Hot. Wird jede Minute aktualisiert.
 P|Wenn ein Feld keine Werte hat, sagt es warum: keine gemeinsame Zone, kein aktiver Strom oder ungünstige Radianten für den ganzen Tag. Der Tooltip jedes Feldes erklärt, was es zeigt. Unter den Feldern stehen bei Bedarf der Hinweis KEINE GEMEINSAME ZONE und ein Streifen, der die Buchstaben A und B erklärt.
 H2|7.2 Die Einstellung der Berechnung
 LI|Vorsichtig (Voreinstellung): Spurhöhe vom Radar, normale Spuren, Winkel β eingeschaltet. Ergibt die niedrigsten Werte.

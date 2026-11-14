@@ -16,8 +16,9 @@ Ta zakładka pokazuje ją godzina po godzinie dla dnia wybranego w polu *Data ob
 |---|---|
 | **NAJLEPSZA PORA DNIA** | Godzina z najwyższym indeksem trasy, wartość indeksu i przeważająca strona (A/B wraz z jej %) |
 | **NAJKORZYSTNIEJSZY RÓJ** | Rój o największym iloczynie ZHR × efektywność w danym dniu, jego efektywność, godzina i strona oraz **najlepszy kierunek** (azymut radiantu +90° / −90°) |
-| **TERAZ** | Indeks i przeważająca strona w bieżącej godzinie oraz zalecany Hot (tylko gdy wybrany dzień to dziś) |
-| **PROGNOZA EKSPERYMENTALNA** | Oczekiwane odbicia/godzinę teraz, za 1 h i za 2 h na częstotliwości prognozy (Collm, reguły SM6FHZ; zob. [Prognozy eksperymentalne](Experimental-Forecasts-pl)) |
+| **TERAZ · ZA 1, 3, 6, 12 I 24 GODZ.** | dla każdego horyzontu średnia z godziny, która się tam zaczyna (cztery próbki): indeks trasy, przeważająca strona, rój o największym udziale i, gdy są dane radarowe, odbicia na godzinę z prognozy eksperymentalnej. W TERAZ, bez danych radarowych, pojawia się zalecany Hot. Aktualizacja co minutę. |
+
+Te ramki są w pasku pod wierszem czasu, nad zakładkami, zawsze widoczne, także przy zwiniętych wierszach poleceń: po lewej dwie ramki wybranego dnia, potem sześć horyzontów prognozy, liczonych od teraz.
 
 Pod kartami pasek objaśnia litery A i B (zob. niżej).
 

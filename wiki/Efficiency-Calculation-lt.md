@@ -16,8 +16,9 @@ Srauto **efektyvumas** procentais nurodo, kiek jo radianto padėtis leidžia ats
 |---|---|
 | **GERIAUSIAS DIENOS LAIKAS** | Valanda su didžiausiu trasos indeksu, indeksas ir vyraujanti pusė (A/B su %) |
 | **PALANKIAUSIAS SRAUTAS** | Dienos srautas su didžiausiu ZHR × efektyvumas, jo efektyvumas, valanda ir pusė bei **geriausias nukreipimas** (radianto azimutas +90° / −90°) |
-| **DABAR** | Indeksas ir vyraujanti pusė šią valandą bei rekomenduojamas Hot (tik kai pasirinkta diena yra šiandien) |
-| **EKSPERIMENTINĖ PROGNOZĖ** | Laukiami atspindžiai/val. dabar, po 1 h ir po 2 h prognozės dažniu (Collm, SM6FHZ taisyklės; žr. [Eksperimentinės prognozės](Experimental-Forecasts-lt)) |
+| **DABAR · PO 1, 3, 6, 12 IR 24 VALANDŲ** | kiekvienam horizontui ten prasidedančios valandos vidurkis (keturi mėginiai): trasos indeksas, vyraujanti pusė, daugiausia prisidedantis srautas ir, kai yra radaro duomenų, eksperimentinės prognozės atspindžiai per valandą. Langelyje DABAR, kai nėra radaro duomenų, rodomas rekomenduojamas Hot. Atnaujinama kas minutę. |
+
+Šie langeliai yra juostoje po laiko eilute, virš kortelių, visada matomi net su suskleistomis komandų eilutėmis: kairėje du pasirinktos dienos langeliai, tada šeši prognozės horizontai, prasidedantys nuo dabar.
 
 Po skydeliais juostelė paaiškina raides A ir B (žr. toliau).
 

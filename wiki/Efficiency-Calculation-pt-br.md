@@ -16,8 +16,9 @@ Esta aba a mostra hora a hora para o dia escolhido em *Data do cálculo (UTC)* (
 |---|---|
 | **MELHOR HORA DO DIA** | Hora com o índice do percurso mais alto, o índice e o lado predominante (A/B com a sua %) |
 | **CHUVA MAIS FAVORÁVEL** | A chuva com o maior ZHR × eficiência do dia, a sua eficiência, hora e lado, e o **melhor apontamento** (azimute do radiante +90° / −90°) |
-| **AGORA** | Índice e lado predominante a esta hora, e o Hot recomendado (só quando o dia escolhido é hoje) |
-| **PREVISÃO EXPERIMENTAL** | Reflexões/hora esperadas agora, dentro de 1 h e dentro de 2 h à frequência da previsão (Collm, regras SM6FHZ; veja [Previsões experimentais](Experimental-Forecasts-pt-br)) |
+| **AGORA · DAQUI A 1, 3, 6, 12 E 24 HORAS** | para cada horizonte, a média da hora que começa ali (quatro amostras): índice do percurso, lado predominante, chuva que mais contribui e, quando há dado do radar, as reflexões por hora da previsão experimental. Em AGORA, sem dado do radar, aparece o Hot recomendado. Atualiza a cada minuto. |
+
+Esses quadros ficam numa faixa abaixo da linha do horário, acima das abas, sempre visível mesmo com as linhas de comandos recolhidas: à esquerda os dois quadros do dia escolhido, depois os seis horizontes de previsão, que começam agora.
 
 Abaixo dos cartões, uma faixa explica as letras A e B (veja abaixo).
 

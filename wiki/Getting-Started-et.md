@@ -36,6 +36,8 @@ Sakkide kohal on kaks juhtnuppude rida, mis kehtivad kõigil sakkidel. Paremal �
 | **Tunnid (−12 kuni +36 h)** | Nihutab arvutuse hetke vahemikus 12 tundi enne kuni 36 tundi pärast seda kellaaega, 15-minutiliste sammudega. Kõrval: *Arvutus ajale: praegu* või *Arvutus ajale: dd/mm hh:mm UTC*. |
 | **Reaalaeg** | Tagasi praegusesse hetke. |
 
+Ajajoon («Tunnid (−12 kuni +36 h)» ja «Reaalaeg») on saki Prognoosarvutus ülaosas, sest see kehtib ainult selle arvutuse kohta.
+
 ## 2. Sinu jaam ja korrespondent
 
 1. Sisesta **Minu lokaator** ja **kõrgus m**.

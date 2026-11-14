@@ -16,8 +16,9 @@ Tato karta ji ukazuje hodinu po hodině pro den zvolený v *Datum výpočtu (UTC
 |---|---|
 | **NEJLEPŠÍ DOBA DNE** | Hodina s nejvyšším indexem trasy, index a převažující strana (A/B s jejím %) |
 | **NEJPŘÍZNIVĚJŠÍ ROJ** | Roj s největším ZHR × účinnost za den, jeho účinnost, hodina a strana a **nejlepší směr** (azimut radiantu +90° / −90°) |
-| **NYNÍ** | Index a převažující strana v tuto hodinu a doporučený Hot (jen když je zvolený den dnešek) |
-| **EXPERIMENTÁLNÍ PŘEDPOVĚĎ** | Očekávané odrazy/hodinu nyní, za 1 h a za 2 h na frekvenci předpovědi (Collm, pravidla SM6FHZ; viz [Experimentální předpovědi](Experimental-Forecasts-cs)) |
+| **NYNÍ · ZA 1, 3, 6, 12 A 24 HOD.** | pro každý horizont průměr hodiny, která tam začíná (čtyři vzorky): index trasy, převládající strana, roj s největším příspěvkem a, jsou-li radarová data, odrazy za hodinu z experimentální předpovědi. V NYNÍ se bez radarových dat zobrazí doporučený Hot. Aktualizuje se každou minutu. |
+
+Tyto rámečky jsou v pásu pod řádkem času, nad záložkami, vždy viditelné i se sbalenými řádky příkazů: vlevo dva rámečky zvoleného dne, pak šest horizontů předpovědi, které začínají teď.
 
 Pod kartami pruh vysvětluje písmena A a B (viz níže).
 

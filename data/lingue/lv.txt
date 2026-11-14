@@ -816,3 +816,10 @@ Il Mercatore si sposta trascinandolo con il mouse; doppio clic: di nuovo centrat
 Memorizza	Saglabāt
 Il locator scritto è diverso da quello dell'archivio CALL3: premi per aggiornarlo e memorizzarlo (voce a mano, scritta subito anche dentro call3.txt).	Ierakstītais lokators atšķiras no CALL3 arhīvā esošā: nospied, lai to atjauninātu un saglabātu (manuāls ieraksts, uzreiz ierakstīts arī call3.txt).
 {0} memorizzato nel CALL3: {1}	{0} saglabāts CALL3: {1}
+TRA 1 ORA	PĒC 1 STUNDAS
+TRA {0} ORE	PĒC {0} STUNDĀM
+lato {0} · {1}	puse {0} · {1}
+nessuno sciame utile	nav noderīgas plūsmas
+{0:F0} rifl./ora previste	{0:F0} atstar./st. gaidāmas
+{0} UTC · indice {1:F1}	{0} UTC · indekss {1:F1}
+Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	Prognoze izvēlētajam ceļam: tās stundas vidējā vērtība, kas sākas šajā horizontā (četri paraugi stundā). Ceļa indekss = aktīvo plūsmu ZHR × efektivitātes summa; tad ceļa dominējošā puse un plūsma, kas dod lielāko ieguldījumu. Atstarojumi stundā nāk no eksperimentālās prognozes (Collm radars, SM6FHZ noteikumi), ja ir radara dati.

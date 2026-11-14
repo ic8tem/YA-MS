@@ -70,6 +70,7 @@ LI|Jam: jam UTC.
 LI|Tanggal perhitungan (UTC): hari perhitungan. Berlaku untuk Perhitungan prakiraan, untuk tabel 24 jam di Perhitungan efisiensi dan untuk kronologi di Radar GRAVES. Bawaannya hari ini, dan pada tengah malam berpindah ke hari yang baru.
 LI|Jam (−12 hingga +36 h): menggeser saat perhitungan, dengan langkah 15 menit. Di sampingnya: "Perhitungan untuk: sekarang" atau tanggal dan jam yang dipilih.
 LI|Waktu nyata: kembali ke saat ini.
+LI|Garis waktu («Jam (−12 hingga +36 h)» dan «Waktu nyata») ada di bagian atas tab Perhitungan prakiraan, karena hanya berlaku untuk perhitungan itu.
 H2|4.4 Mengatur stasiun Anda
 TAG|PROCEDURA|1) Tulis Locator saya dan ketinggiannya. 2) Tulis locator dan ketinggian stasiun DX, atau klik pada peta di Perhitungan prakiraan: klik kiri = stasiun DX, klik kanan = stasiun Anda. 3) Pilih pita. 4) Tulis panjang boom dan elevasi lobus antena Anda. 5) Tekan Hitung: bilah status mengonfirmasi "Lintasan dihitung: ... km, ... titik pantul disampel".
 TAG|NOTA|Pengaturan disimpan di data/config.ini saat program ditutup dan pada setiap perhitungan: saat dijalankan berikutnya Anda menemukan lintasan yang sama.
@@ -116,11 +117,11 @@ LI|ATURAN EKSPERIMENTAL ANTARBAND: jumlah, kekuatan dan durasi pantulan relatif 
 TAG|NOTA|Margin positif berarti jejak underdense rata-rata sudah cukup untuk menutup lintasan dengan stasiun Anda; margin negatif berarti diperlukan jejak yang lebih rapat atau meteor overdense. Ini adalah estimasi: acuan tetap pengalaman di pita.
 H1|7. Perhitungan efisiensi
 P|Efisiensi menunjukkan, dalam persen, seberapa besar posisi radian suatu hujan meteor memungkinkan pantulan pada lintasan Anda: 100 % adalah posisi paling menguntungkan untuk lintasan itu. Sub-tab ini menampilkannya jam demi jam untuk hari pada "Tanggal perhitungan", dengan nilai di pertengahan setiap jam.
-H2|7.1 Empat panel
+H2|7.1 Pita di atas tab
+P|Kotak-kotak ini ada di pita di bawah baris waktu, di atas tab, selalu terlihat meski baris perintah dilipat: di kiri dua kotak hari yang dipilih, lalu enam cakrawala prakiraan yang dimulai dari sekarang.
 LI|JAM TERBAIK HARI INI: jam dengan indeks lintasan tertinggi dan sisi dominannya.
 LI|HUJAN METEOR PALING MENGUNTUNGKAN: hujan meteor yang paling besar kontribusinya, dengan jam, sisi, dan dua arah bidik terbaik.
-LI|SEKARANG: indeks dan sisi pada jam ini serta Hot disarankan (hanya jika hari yang dipilih adalah hari ini).
-LI|PRAKIRAAN EKSPERIMENTAL: pantulan per jam yang diperkirakan sekarang, 1 jam lagi dan 2 jam lagi (bab 8).
+LI|SEKARANG · 1, 3, 6, 12 DAN 24 JAM LAGI: untuk tiap cakrawala, rata-rata jam yang dimulai di sana (empat sampel): indeks lintasan, sisi dominan, hujan meteor yang paling berkontribusi dan, bila ada data radar, pantulan per jam dari prakiraan eksperimental. Di SEKARANG, tanpa data radar, muncul Hot yang disarankan. Diperbarui tiap menit.
 P|Bila sebuah panel tidak memiliki nilai, panel menjelaskan alasannya: tidak ada zona bersama, tidak ada hujan meteor aktif, atau radian tidak menguntungkan sepanjang hari. Tooltip setiap panel menjelaskan apa yang ditampilkannya. Di bawah panel, bila perlu, muncul peringatan TIDAK ADA ZONA BERSAMA dan sebuah pita yang menjelaskan huruf A dan B.
 H2|7.2 Pengaturan perhitungan
 LI|Hati-hati (bawaan): ketinggian jejak dari radar, jejak normal, sudut β aktif. Memberikan nilai paling rendah.

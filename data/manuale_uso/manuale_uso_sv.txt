@@ -70,6 +70,7 @@ LI|Tid: UTC-klocka.
 LI|Beräkningsdatum (UTC): beräkningens dag. Gäller för Prognosberäkning, för 24-timmarstabellen i Effektivitetsberäkning och för tidslinjen i GRAVES-radar. Standard är i dag, och vid midnatt följer datumet med till den nya dagen.
 LI|Timmar (−12 till +36 h): flyttar beräkningens tidpunkt i steg om 15 minuter. Bredvid: "Beräkning för: nu" eller det valda datumet och klockslaget.
 LI|Realtid: återgår till aktuell tidpunkt.
+LI|Tidslinjen («Timmar (−12 till +36 h)» och «Realtid») ligger överst i fliken Prognosberäkning, eftersom den bara gäller den beräkningen.
 H2|4.4 Ställa in den egna stationen
 TAG|PROCEDURA|1) Skriv in Min lokator och höjden. 2) Skriv in motstationens lokator och höjd, eller klicka på kartan i Prognosberäkning: vänsterklick = motstation, högerklick = din station. 3) Välj band. 4) Skriv in bomlängden och lobelevationen för din antenn. 5) Tryck på Beräkna: statusfältet bekräftar "Sträcka beräknad: ... km, ... reflexionspunkter samplade".
 TAG|NOTA|Inställningarna sparas i data/config.ini när programmet stängs och vid varje beräkning: vid nästa start hittar du samma sträcka.
@@ -116,11 +117,11 @@ LI|EXPERIMENTELLA REGLER MELLAN BANDEN: antal, styrka och längd för reflexione
 TAG|NOTA|En positiv marginal betyder att ett genomsnittligt underdenst spår räcker för att klara sträckan med din station; en negativ marginal betyder att det behövs tätare spår eller överdensa meteorer. Det är en uppskattning: referensen är fortfarande erfarenheten på bandet.
 H1|7. Effektivitetsberäkning
 P|Effektiviteten anger i procent hur mycket radiantens läge för en svärm möjliggör reflexioner på din sträcka: 100 % är det mest gynnsamma läget för den sträckan. Den här underfliken visar den timme för timme för dagen i "Beräkningsdatum", med värdena vid varje halvtimme.
-H2|7.1 De fyra rutorna
+H2|7.1 Bandet ovanför flikarna
+P|Rutorna ligger i ett band under tidsraden, ovanför flikarna, alltid synligt även med kommandoraderna hopfällda: till vänster de två rutorna för vald dag, sedan de sex prognoshorisonterna, som börjar nu.
 LI|DAGENS BÄSTA TID: timmen med högst sträckindex och den dominerande sidan.
 LI|MEST GYNNSAM SVÄRM: den svärm som bidrar mest, med timme, sida och de två bästa riktningarna.
-LI|NU: index och sida under den här timmen och den rekommenderade Hot (endast om den valda dagen är i dag).
-LI|EXPERIMENTELL PROGNOS: förväntade reflexioner per timme nu, om 1 och om 2 timmar (kapitel 8).
+LI|NU · OM 1, 3, 6, 12 OCH 24 TIMMAR: för varje horisont medelvärdet för timmen som börjar där (fyra stickprov): sträckindex, dominerande sida, svärmen som bidrar mest och, när radardata finns, reflexer per timme från den experimentella prognosen. I NU visas utan radardata den rekommenderade Hot. Uppdateras varje minut.
 P|När en ruta saknar värden anges varför: ingen gemensam zon, ingen aktiv svärm eller ogynnsamma radianter hela dagen. Verktygstipset för varje ruta förklarar vad den visar. Under rutorna visas vid behov varningen INGEN GEMENSAM ZON och ett band som förklarar bokstäverna A och B.
 H2|7.2 Beräkningens inställning
 LI|Försiktig (standard): spårhöjd från radarn, normala spår, vinkel β påslagen. Ger de lägsta värdena.

@@ -16,8 +16,9 @@ Den här fliken visar den timme för timme för den dag som valts i *Beräknings
 |---|---|
 | **DAGENS BÄSTA TID** | Timmen med högst sträckindex, indexet och den dominerande sidan (A/B med dess %) |
 | **MEST GYNNSAM SVÄRM** | Den svärm som har störst ZHR × effektivitet under dagen, dess effektivitet, timme och sida, samt **bästa riktning** (radiantens azimut +90° / −90°) |
-| **NU** | Index och dominerande sida vid den här timmen, och rekommenderad Hot (endast när den valda dagen är idag) |
-| **EXPERIMENTELL PROGNOS** | Väntade reflexer/timme nu, om 1 h och om 2 h vid prognosfrekvensen (Collm, SM6FHZ:s regler; se [Experimentella prognoser](Experimental-Forecasts-sv)) |
+| **NU · OM 1, 3, 6, 12 OCH 24 TIMMAR** | för varje horisont medelvärdet för timmen som börjar där (fyra stickprov): sträckindex, dominerande sida, svärmen som bidrar mest och, när radardata finns, reflexer per timme från den experimentella prognosen. I NU visas utan radardata den rekommenderade Hot. Uppdateras varje minut. |
+
+Rutorna ligger i ett band under tidsraden, ovanför flikarna, alltid synligt även med kommandoraderna hopfällda: till vänster de två rutorna för vald dag, sedan de sex prognoshorisonterna, som börjar nu.
 
 Under korten förklarar ett band bokstäverna A och B (se nedan).
 

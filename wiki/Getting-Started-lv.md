@@ -36,6 +36,8 @@ Virs cilnēm ir divas vadības rindas, kas attiecas uz visām cilnēm. Poga **Va
 | **Stundas (no −12 līdz +36 h)** | Pārvieto aprēķina brīdi no 12 stundām pirms līdz 36 stundām pēc šī laika ar 15 minūšu soli. Blakus: *Aprēķins uz: tagad* vai *Aprēķins uz: dd/mm hh:mm UTC*. |
 | **Reālais laiks** | Atpakaļ uz tagadni. |
 
+Laika līnija («Stundas (no −12 līdz +36 h)» un «Reālais laiks») ir cilnes Prognozes aprēķins augšā, jo tā attiecas tikai uz šo aprēķinu.
+
 ## 2. Tava stacija un DX
 
 1. Ieraksti **Mans lokators** un **augstums m**.

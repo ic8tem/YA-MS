@@ -816,3 +816,10 @@ Il Mercatore si sposta trascinandolo con il mouse; doppio clic: di nuovo centrat
 Memorizza	I-save
 Il locator scritto è diverso da quello dell'archivio CALL3: premi per aggiornarlo e memorizzarlo (voce a mano, scritta subito anche dentro call3.txt).	Iba ang isinulat na locator sa nasa archive ng CALL3: pindutin para i-update at i-save ito (manwal na entry, isinusulat agad din sa call3.txt).
 {0} memorizzato nel CALL3: {1}	Na-save ang {0} sa CALL3: {1}
+TRA 1 ORA	SA LOOB NG 1 ORAS
+TRA {0} ORE	SA LOOB NG {0} ORAS
+lato {0} · {1}	panig {0} · {1}
+nessuno sciame utile	walang kapaki-pakinabang na shower
+{0:F0} rifl./ora previste	{0:F0} repl./oras inaasahan
+{0} UTC · indice {1:F1}	{0} UTC · index {1:F1}
+Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	Hula para sa napiling landas: average ng oras na nagsisimula sa horizon na iyon (apat na sample sa loob ng oras). Index ng landas = kabuuan ng ZHR × efficiency ng mga aktibong shower; saka ang nangingibabaw na panig ng landas at ang shower na pinakamalaki ang ambag. Ang mga repleksiyon kada oras ay galing sa eksperimental na hula (radar ng Collm, mga tuntunin ni SM6FHZ) kapag may datos ng radar.

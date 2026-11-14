@@ -16,8 +16,9 @@ Questa linguetta la mostra ora per ora per il giorno scelto in *Data del calcolo
 |---|---|
 | **ORA MIGLIORE DEL GIORNO** | Ora con l'indice di tratta più alto, l'indice e il lato prevalente (A/B con la sua %) |
 | **SCIAME PIÙ FAVOREVOLE** | Lo sciame con il ZHR × efficienza più alto della giornata, la sua efficienza, ora e lato, e il **puntamento migliore** (azimut del radiante +90° / −90°) |
-| **ADESSO** | Indice e lato prevalente in quest'ora, e l'Hot consigliato (solo quando il giorno scelto è oggi) |
-| **PREVISIONE SPERIMENTALE** | Riflessioni/ora attese adesso, tra 1 h e tra 2 h alla frequenza della previsione (Collm, regole SM6FHZ; vedi [Attuazione sperimentale previsioni](Experimental-Forecasts-it)) |
+| **ADESSO · TRA 1, 3, 6, 12 E 24 ORE** | per ogni orizzonte la media dell'ora che comincia lì (quattro campioni): indice della tratta, lato prevalente, sciame che contribuisce di più e, quando c'è il dato del radar, le riflessioni all'ora della previsione sperimentale. In ADESSO, senza dato del radar, compare l'Hot consigliato. Si aggiorna ogni minuto. |
+
+Questi riquadri stanno in una fascia sotto la riga dell'orario, sopra le linguette, sempre visibile anche con le righe dei comandi ripiegate: a sinistra i due riquadri del giorno scelto, poi i sei orizzonti di previsione, che partono da adesso.
 
 Sotto le schede una fascia spiega le lettere A e B (vedi sotto).
 

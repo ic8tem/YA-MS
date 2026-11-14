@@ -70,6 +70,7 @@ LI|Laiks: UTC pulkstenis.
 LI|Aprēķina datums (UTC): aprēķina diena. Attiecas uz Prognozes aprēķins, uz 24 stundu tabulu cilnē Efektivitātes aprēķins un uz hronoloģiju cilnē GRAVES radars. Noklusējuma vērtība ir šodiena, un pusnaktī datums pāriet uz jauno dienu.
 LI|Stundas (no −12 līdz +36 h): pārbīda aprēķina brīdi ar 15 minūšu soli. Blakus: "Aprēķins uz: tagad" vai izvēlētais datums un laiks.
 LI|Reālais laiks: atgriežas pašreizējā brīdī.
+LI|Laika līnija («Stundas (no −12 līdz +36 h)» un «Reālais laiks») ir cilnes Prognozes aprēķins augšā, jo tā attiecas tikai uz šo aprēķinu.
 H2|4.4 Savas stacijas iestatīšana
 TAG|PROCEDURA|1) Ieraksti Mans lokators un augstumu. 2) Ieraksti korespondenta lokatoru un augstumu vai noklikšķini uz kartes cilnē Prognozes aprēķins: kreisais klikšķis = korespondents, labais klikšķis = tava stacija. 3) Izvēlies diapazonu. 4) Ieraksti savas antenas traverses garumu un ziedlapiņas elevāciju. 5) Nospied Aprēķināt: statusa josla apstiprina "Trase aprēķināta: ... km, ... atstarošanas punktu izlase".
 TAG|NOTA|Iestatījumi tiek saglabāti failā data/config.ini, aizverot programmu, un pēc katra aprēķina: nākamajā palaišanas reizē atradīsi to pašu trasi.
@@ -116,11 +117,11 @@ LI|EKSPERIMENTĀLIE LIKUMI STARP JOSLĀM: atstarojumu skaits, intensitāte un il
 TAG|NOTA|Pozitīva rezerve nozīmē, ka vidēja zema blīvuma sliede ir pietiekama, lai ar tavu staciju noslēgtu sakarus šajā trasē; negatīva rezerve nozīmē, ka vajadzīgas blīvākas sliedes vai augsta blīvuma meteori. Tas ir novērtējums: atskaites punkts joprojām ir pieredze ēterā.
 H1|7. Efektivitātes aprēķins
 P|Efektivitāte procentos parāda, cik lielā mērā plūsmas radianta novietojums ļauj atstarojumus tavā trasē: 100 % ir šai trasei vislabvēlīgākais novietojums. Šī apakšcilne to parāda pa stundām dienai, kas norādīta laukā "Aprēķina datums (UTC)", ar vērtībām katras stundas vidū.
-H2|7.1 Četri rāmji
+H2|7.1 Josla virs cilnēm
+P|Šie lodziņi ir joslā zem laika rindas, virs cilnēm, vienmēr redzami arī ar sakļautām komandu rindām: pa kreisi divi izvēlētās dienas lodziņi, tad seši prognozes horizonti, kas sākas no tagad.
 LI|LABĀKAIS DIENAS LAIKS: stunda ar augstāko trases indeksu un dominējošā puse.
 LI|VISIZDEVĪGĀKĀ PLŪSMA: plūsma, kas dod lielāko ieguldījumu, ar stundu, pusi un diviem labākajiem antenas virzieniem.
-LI|TAGAD: indekss un puse šajā stundā un ieteicamais Hot (tikai tad, ja izvēlētā diena ir šodiena).
-LI|EKSPERIMENTĀLA PROGNOZE: paredzamie atstarojumi stundā tagad, pēc 1 un pēc 2 stundām (8. nodaļa).
+LI|TAGAD · PĒC 1, 3, 6, 12 UN 24 STUNDĀM: katram horizontam tur sākošās stundas vidējā vērtība (četri paraugi): ceļa indekss, dominējošā puse, plūsma ar lielāko ieguldījumu un, ja ir radara dati, eksperimentālās prognozes atstarojumi stundā. Lodziņā TAGAD bez radara datiem parādās ieteiktais Hot. Atjaunojas katru minūti.
 P|Ja rāmim nav vērtību, tas norāda iemeslu: nav kopīgas zonas, nav aktīvas plūsmas vai radianti visu dienu ir nelabvēlīgi. Katra rāmja uznirstošais padoms paskaidro, ko tas parāda. Zem rāmjiem, ja vajadzīgs, brīdinājums NAV KOPĪGAS ZONAS un josla, kas paskaidro burtus A un B.
 H2|7.2 Aprēķina iestatījumi
 LI|Piesardzīgs (noklusējums): sliežu augstums no radara, parastas sliedes, leņķis β ieslēgts. Dod viszemākās vērtības.

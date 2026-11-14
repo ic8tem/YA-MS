@@ -36,6 +36,8 @@ Encima de las pestañas hay dos filas de controles, válidas para todas las pest
 | **Horas (de −12 a +36 h)** | Desplaza el momento del cálculo desde 12 horas antes hasta 36 horas después de esa hora, en pasos de 15 minutos. Al lado: *Cálculo para: ahora* o *Cálculo para: dd/mm hh:mm UTC*. |
 | **Tiempo real** | Vuelve al momento actual. |
 
+La línea del tiempo («Horas (de −12 a +36 h)» y «Tiempo real») está arriba en la pestaña Cálculo de previsión, porque solo vale para ese cálculo.
+
 ## 2. Tu estación y el DX
 
 1. Escribe **Mi locator** y **altura m**.

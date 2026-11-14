@@ -16,8 +16,9 @@ Tab ini menampilkannya jam demi jam untuk hari yang dipilih di *Tanggal perhitun
 |---|---|
 | **JAM TERBAIK HARI INI** | Jam dengan indeks lintasan tertinggi, indeksnya dan sisi dominan (A/B dengan %-nya) |
 | **HUJAN METEOR PALING MENGUNTUNGKAN** | Hujan meteor dengan ZHR × efisiensi terbesar hari itu, efisiensinya, jam dan sisinya, serta **arah terbaik** (azimut radian +90° / −90°) |
-| **SEKARANG** | Indeks dan sisi dominan pada jam ini, serta Hot yang disarankan (hanya jika hari yang dipilih adalah hari ini) |
-| **PRAKIRAAN EKSPERIMENTAL** | Pantulan/jam yang diharapkan sekarang, 1 jam lagi dan 2 jam lagi pada frekuensi prakiraan (Collm, aturan SM6FHZ; lihat [Prakiraan eksperimental](Experimental-Forecasts-id)) |
+| **SEKARANG · 1, 3, 6, 12 DAN 24 JAM LAGI** | untuk tiap cakrawala, rata-rata jam yang dimulai di sana (empat sampel): indeks lintasan, sisi dominan, hujan meteor yang paling berkontribusi dan, bila ada data radar, pantulan per jam dari prakiraan eksperimental. Di SEKARANG, tanpa data radar, muncul Hot yang disarankan. Diperbarui tiap menit. |
+
+Kotak-kotak ini ada di pita di bawah baris waktu, di atas tab, selalu terlihat meski baris perintah dilipat: di kiri dua kotak hari yang dipilih, lalu enam cakrawala prakiraan yang dimulai dari sekarang.
 
 Di bawah kartu, sebuah pita menjelaskan huruf A dan B (lihat di bawah).
 

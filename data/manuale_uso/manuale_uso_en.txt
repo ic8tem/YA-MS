@@ -70,6 +70,7 @@ LI|Time: UTC clock.
 LI|Calculation date (UTC): the day of the calculation. It applies to Forecast calculation, to the 24-hour table of Efficiency calculation and to the timeline of GRAVES radar. By default it is today, and at midnight it moves on to the new day.
 LI|Hours (−12 to +36 h): shifts the moment of the calculation, in 15-minute steps. Next to it: "Calculation for: now" or the chosen date and time.
 LI|Real time: returns to the current moment.
+LI|The time line («Hours (−12 to +36 h)» and «Real time») is at the top of the Forecast calculation tab, because it applies only to that calculation.
 H2|4.4 Setting up your own station
 TAG|PROCEDURA|1) Enter My locator and the height. 2) Enter the locator and height of the DX station, or click on the map of Forecast calculation: left click = DX station, right click = your station. 3) Choose the band. 4) Enter the boom length and the lobe elevation of your antenna. 5) Press Calculate: the status bar confirms "Path computed: ... km, ... reflection points sampled".
 TAG|NOTA|The settings are saved in data/config.ini on closing and at every calculation: at the next start you will find the same path.
@@ -116,11 +117,11 @@ LI|EXPERIMENTAL RULES BETWEEN BANDS: number, strength and duration of the reflec
 TAG|NOTA|A positive margin means that an average underdense trail is enough to close the path with your station; a negative margin means that denser trails or overdense meteors are needed. It is an estimate: the reference remains on-air experience.
 H1|7. Efficiency calculation
 P|The efficiency tells you, as a percentage, how much the position of a shower's radiant allows reflections on your path: 100 % is the most favourable position for that path. This sub-tab shows it hour by hour for the day of the "Calculation date", with the values at the middle of each hour.
-H2|7.1 The four boxes
+H2|7.1 The band above the tabs
+P|These cards sit in a band below the time row, above the tabs, always visible even with the command rows folded: on the left the two cards of the chosen day, then the six forecast horizons, which start from now.
 LI|BEST TIME OF THE DAY: the hour with the highest path index and the prevailing side.
 LI|MOST FAVOURABLE SHOWER: the shower that contributes the most, with the hour, the side and the two best pointings.
-LI|NOW: index and side in this hour and the recommended Hot (only if the chosen day is today).
-LI|EXPERIMENTAL FORECAST: reflections per hour expected now, in 1 hour and in 2 hours (chapter 8).
+LI|NOW · IN 1, 3, 6, 12 AND 24 HOURS: for each horizon, the average of the hour starting there (four samples): path index, prevailing side, the shower that contributes most and, when radar data are available, the reflections per hour of the experimental forecast. In NOW, without radar data, the recommended Hot is shown. Updated every minute.
 P|When a box has no values it tells you why: no common zone, no active shower, or unfavourable radiants for the whole day. The tooltip of each box explains what it shows. Below the boxes, when needed, the NO COMMON ZONE warning and a band explaining the letters A and B.
 H2|7.2 Calculation settings
 LI|Cautious (default): trail height from radar, normal trails, angle β on. It gives the lowest values.

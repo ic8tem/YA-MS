@@ -36,6 +36,8 @@ Boven de tabbladen staan twee rijen bedieningselementen die voor alle tabbladen 
 | **Uren (−12 tot +36 u)** | Verschuift het moment van de berekening van 12 uur vóór tot 36 uur na dat tijdstip, in stappen van 15 minuten. Ernaast: *Berekening voor: nu* of *Berekening voor: dd/mm hh:mm UTC*. |
 | **Realtime** | Terug naar nu. |
 
+De tijdlijn («Uren (−12 tot +36 u)» en «Realtime») staat bovenaan het tabblad Voorspellingsberekening, omdat ze alleen voor die berekening geldt.
+
 ## 2. Jouw station en de DX
 
 1. Vul **Mijn locator** en **hoogte m** in.

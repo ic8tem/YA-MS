@@ -818,3 +818,10 @@ Il Mercatore si sposta trascinandolo con il mouse; doppio clic: di nuovo centrat
 Memorizza	儲存
 Il locator scritto è diverso da quello dell'archivio CALL3: premi per aggiornarlo e memorizzarlo (voce a mano, scritta subito anche dentro call3.txt).	輸入的定位符與 CALL3 資料庫中的不同：按下以更新並儲存（手動條目，同時立即寫入 call3.txt）。
 {0} memorizzato nel CALL3: {1}	{0} 已儲存到 CALL3：{1}
+TRA 1 ORA	1 小時後
+TRA {0} ORE	{0} 小時後
+lato {0} · {1}	{0} 側 · {1}
+nessuno sciame utile	無可用流星雨
+{0:F0} rifl./ora previste	預計 {0:F0} 次反射/小時
+{0} UTC · indice {1:F1}	{0} UTC · 指數 {1:F1}
+Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	所選路徑的預報：從該時間點開始的一小時的平均值（每小時四個取樣）。路徑指數 = 活躍流星雨的 ZHR × 效率之和；其次是路徑的主要一側與貢獻最大的流星雨。每小時反射次數來自實驗性預報（Collm 雷達，SM6FHZ 規則），在有雷達資料時顯示。

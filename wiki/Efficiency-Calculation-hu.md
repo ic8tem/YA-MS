@@ -16,8 +16,9 @@ Ez a fül óránként mutatja a hatékonyságot az *Számítás dátuma (UTC)* m
 |---|---|
 | **A NAP LEGJOBB IDŐPONTJA** | A legnagyobb útvonalindexű óra, az index és a túlsúlyban lévő oldal (A/B a %-ával) |
 | **LEGKEDVEZŐBB RAJ** | A nap legnagyobb ZHR × hatékonyság értékű raja, hatékonysága, órája és oldala, valamint a **legjobb irány** (radiáns azimutja +90° / −90°) |
-| **MOST** | Index és túlsúlyban lévő oldal ebben az órában, valamint az ajánlott Hot (csak ha a választott nap a mai) |
-| **KÍSÉRLETI ELŐREJELZÉS** | Várható reflexió/óra most, 1 óra és 2 óra múlva az előrejelzési frekvencián (Collm, SM6FHZ-szabályok; lásd: [Kísérleti előrejelzések](Experimental-Forecasts-hu)) |
+| **MOST · 1, 3, 6, 12 ÉS 24 ÓRA MÚLVA** | minden időtávra az ott kezdődő óra átlaga (négy minta): útvonalindex, domináns oldal, a legtöbbet hozzájáruló raj és, ha van radaradat, a kísérleti előrejelzés óránkénti visszaverődései. A MOST dobozban radaradat nélkül az ajánlott Hot jelenik meg. Percenként frissül. |
+
+Ezek a dobozok az idősor alatti sávban vannak, a fülek fölött, mindig láthatók, összecsukott parancssorokkal is: balra a választott nap két doboza, aztán a hat előrejelzési időtáv, amelyek mosttól indulnak.
 
 A kártyák alatti sáv elmagyarázza az A és B betűket (lásd lent).
 

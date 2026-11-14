@@ -36,6 +36,8 @@ Sopra le linguette ci sono due righe di comandi, valide per tutte le linguette. 
 | **Ore (da −12 a +36 h)** | Sposta il momento del calcolo da 12 ore prima a 36 ore dopo quell'ora, a passi di 15 minuti. Accanto: *Calcolo per: adesso* oppure *Calcolo per: gg/mm hh:mm UTC*. |
 | **Tempo reale** | Torna al momento attuale. |
 
+La linea del tempo («Ore (da −12 a +36 h)» e «Tempo reale») sta in cima alla linguetta Calcolo previsionale, perché vale solo per quel calcolo.
+
 ## 2. La tua stazione e il DX
 
 1. Scrivi **Il mio locator** e **quota m**.

@@ -36,6 +36,8 @@ Over fanene er det to rader med kontroller som gjelder for alle fanene. Knappen 
 | **Timer (−12 til +36 t)** | Flytter tidspunktet for beregningen fra 12 timer før til 36 timer etter dette klokkeslettet, i steg på 15 minutter. Ved siden av: *Beregning for: nå* eller *Beregning for: dd/mm tt:mm UTC*. |
 | **Sanntid** | Tilbake til nå. |
 
+Tidslinjen («Timer (−12 til +36 t)» og «Sanntid») ligger øverst i fanen Prognoseberegning, fordi den bare gjelder den beregningen.
+
 ## 2. Din stasjon og DX
 
 1. Skriv inn **Min lokator** og **høyde m**.

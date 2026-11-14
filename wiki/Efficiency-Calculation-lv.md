@@ -16,8 +16,9 @@ Plūsmas **efektivitāte** procentos norāda, cik lielā mērā tās radianta st
 |---|---|
 | **LABĀKAIS DIENAS LAIKS** | Stunda ar augstāko trases indeksu, indekss un dominējošā puse (A/B ar tās %) |
 | **VISIZDEVĪGĀKĀ PLŪSMA** | Dienas plūsma ar lielāko ZHR × efektivitāte, tās efektivitāte, stunda un puse, un **labākais virziens** (radianta azimuts +90° / −90°) |
-| **TAGAD** | Indekss un dominējošā puse šajā stundā un ieteicamais Hot (tikai tad, ja izvēlētā diena ir šodiena) |
-| **EKSPERIMENTĀLA PROGNOZE** | Gaidāmie atstarojumi stundā tagad, pēc 1 h un pēc 2 h prognozes frekvencē (Collm, SM6FHZ likumi; sk. [Eksperimentālas prognozes](Experimental-Forecasts-lv)) |
+| **TAGAD · PĒC 1, 3, 6, 12 UN 24 STUNDĀM** | katram horizontam tur sākošās stundas vidējā vērtība (četri paraugi): ceļa indekss, dominējošā puse, plūsma ar lielāko ieguldījumu un, ja ir radara dati, eksperimentālās prognozes atstarojumi stundā. Lodziņā TAGAD bez radara datiem parādās ieteiktais Hot. Atjaunojas katru minūti. |
+
+Šie lodziņi ir joslā zem laika rindas, virs cilnēm, vienmēr redzami arī ar sakļautām komandu rindām: pa kreisi divi izvēlētās dienas lodziņi, tad seši prognozes horizonti, kas sākas no tagad.
 
 Zem kartītēm josla paskaidro burtus A un B (sk. zemāk).
 

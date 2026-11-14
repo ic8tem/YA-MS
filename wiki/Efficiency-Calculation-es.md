@@ -16,8 +16,9 @@ Esta pestaña la muestra hora por hora para el día elegido en *Fecha del cálcu
 |---|---|
 | **MEJOR HORA DEL DÍA** | Hora con el índice del trayecto más alto, el índice y el lado predominante (A/B con su %) |
 | **LLUVIA MÁS FAVORABLE** | La lluvia con el mayor ZHR × eficiencia del día, su eficiencia, hora y lado, y el **mejor apuntamiento** (azimut del radiante +90° / −90°) |
-| **AHORA** | Índice y lado predominante a esta hora, y el Hot recomendado (solo cuando el día elegido es hoy) |
-| **PREVISIÓN EXPERIMENTAL** | Reflexiones/hora esperadas ahora, dentro de 1 h y dentro de 2 h a la frecuencia de la previsión (Collm, reglas SM6FHZ; ver [Previsiones experimentales](Experimental-Forecasts-es)) |
+| **AHORA · DENTRO DE 1, 3, 6, 12 Y 24 HORAS** | para cada horizonte, la media de la hora que empieza allí (cuatro muestras): índice de la trayectoria, lado predominante, lluvia que más contribuye y, cuando hay dato del radar, las reflexiones por hora de la previsión experimental. En AHORA, sin dato del radar, aparece el Hot recomendado. Se actualiza cada minuto. |
+
+Estos recuadros están en una franja bajo la fila de la hora, encima de las pestañas, siempre visible aunque las filas de mandos estén plegadas: a la izquierda los dos recuadros del día elegido, luego los seis horizontes de previsión, que empiezan ahora.
 
 Bajo las tarjetas, una franja explica las letras A y B (ver abajo).
 

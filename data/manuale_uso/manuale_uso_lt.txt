@@ -70,6 +70,7 @@ LI|Laikas: UTC laikrodis.
 LI|Skaičiavimo data (UTC): skaičiavimo diena. Taikoma kortelei Prognozės skaičiavimas, 24 valandų lentelei kortelėje Efektyvumo skaičiavimas ir chronologijai kortelėje GRAVES radaras. Numatytoji vertė yra šiandiena, o vidurnaktį data pereina į naują dieną.
 LI|Valandos (nuo −12 iki +36 h): perkelia skaičiavimo momentą 15 minučių žingsniais. Šalia: „Skaičiavimas: dabar“ arba pasirinkta data ir laikas.
 LI|Realus laikas: grįžta į dabartinį momentą.
+LI|Laiko linija («Valandos (nuo −12 iki +36 h)» ir «Realus laikas») yra kortelės Prognozės skaičiavimas viršuje, nes ji galioja tik tam skaičiavimui.
 H2|4.4 Savo stoties nustatymas
 TAG|PROCEDURA|1) Įrašykite Mano lokatorius ir aukštį. 2) Įrašykite korespondento lokatorių ir aukštį arba spustelėkite žemėlapį kortelėje Prognozės skaičiavimas: kairysis spustelėjimas = korespondentas, dešinysis spustelėjimas = jūsų stotis. 3) Pasirinkite diapazoną. 4) Įrašykite savo antenos strėlės ilgį ir lapelio elevaciją. 5) Paspauskite Skaičiuoti: būsenos juosta patvirtina „Trasa apskaičiuota: ... km, ... atspindžio taškų imtis“.
 TAG|NOTA|Nustatymai išsaugomi faile data/config.ini uždarant programą ir po kiekvieno skaičiavimo: kitą kartą paleidę rasite tą pačią trasą.
@@ -116,11 +117,11 @@ LI|EKSPERIMENTINĖS TAISYKLĖS TARP JUOSTŲ: atspindžių skaičius, intensyvuma
 TAG|NOTA|Teigiama atsarga reiškia, kad vidutinio retojo pėdsako pakanka užmegzti ryšį šioje trasoje su jūsų stotimi; neigiama atsarga reiškia, kad reikia tankesnių pėdsakų arba tankiųjų meteorų. Tai yra įvertinimas: atskaitos taškas lieka patirtis eteryje.
 H1|7. Efektyvumo skaičiavimas
 P|Efektyvumas procentais parodo, kiek srauto radianto padėtis leidžia atspindžius jūsų trasoje: 100 % yra šiai trasai palankiausia padėtis. Ši antrinė kortelė jį rodo valanda po valandos dienai, nurodytai lauke „Skaičiavimo data (UTC)“, su vertėmis kiekvienos valandos viduryje.
-H2|7.1 Keturi langeliai
+H2|7.1 Juosta virš kortelių
+P|Šie langeliai yra juostoje po laiko eilute, virš kortelių, visada matomi net su suskleistomis komandų eilutėmis: kairėje du pasirinktos dienos langeliai, tada šeši prognozės horizontai, prasidedantys nuo dabar.
 LI|GERIAUSIAS DIENOS LAIKAS: valanda su didžiausiu trasos indeksu ir vyraujanti pusė.
 LI|PALANKIAUSIAS SRAUTAS: srautas, kurio indėlis didžiausias, su valanda, puse ir dviem geriausiomis antenos kryptimis.
-LI|DABAR: indeksas ir pusė šią valandą bei rekomenduojamas Hot (tik jei pasirinkta diena yra šiandien).
-LI|EKSPERIMENTINĖ PROGNOZĖ: numatomi atspindžiai per valandą dabar, po 1 ir po 2 valandų (8 skyrius).
+LI|DABAR · PO 1, 3, 6, 12 IR 24 VALANDŲ: kiekvienam horizontui ten prasidedančios valandos vidurkis (keturi mėginiai): trasos indeksas, vyraujanti pusė, daugiausia prisidedantis srautas ir, kai yra radaro duomenų, eksperimentinės prognozės atspindžiai per valandą. Langelyje DABAR, kai nėra radaro duomenų, rodomas rekomenduojamas Hot. Atnaujinama kas minutę.
 P|Kai langelis neturi verčių, jis nurodo priežastį: nėra bendros zonos, nėra aktyvaus srauto arba radiantai visą dieną nepalankūs. Kiekvieno langelio patarimas paaiškina, ką jis rodo. Po langeliais, kai reikia, rodomas įspėjimas NĖRA BENDROS ZONOS ir juosta, paaiškinanti raides A ir B.
 H2|7.2 Skaičiavimo nustatymai
 LI|Atsargi (numatytoji): pėdsakų aukštis iš radaro, įprasti pėdsakai, kampas β įjungtas. Duoda mažiausias vertes.

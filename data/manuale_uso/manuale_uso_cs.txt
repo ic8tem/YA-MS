@@ -78,7 +78,7 @@ P|První podkarta skupiny Předpovědní výpočet ukazuje na jedné obrazovce, 
 H2|5.1 Souhrnný pruh
 P|Nad mapou pruh shrnuje výpočet pro daný okamžik: datum a čas, index trasy (součet ZHR × účinnost aktivních rojů), nejužitečnější roj s jeho ZHR a účinností (i v dB vůči referenci DJ5HG), počet rojů nad horizontem a doporučený Hot s jeho azimutem.
 H2|5.2 Mapa v půdorysu
-P|Vedle mapy, vpravo, je jediný sloupec. Nahoře rámeček protistanice: nejprve směr antény (Azimut antény, vždy na protistanici), pak značka (napište ji a stiskněte Enter: lokátor se vezme z databáze CALL3, jako v YAEC a LIVETROPOVHF), lokátor a výška. Značku lze napsat i do pole lokátoru. Dole legenda symbolů mapy: klepnutí na nadpis ji sbalí; barvy radiantů se objeví, když je mapa Evropy vypnutá.
+P|Vedle mapy, vpravo, je jediný sloupec. Nahoře rámeček protistanice: nejprve směr antény (Azimut antény, vždy na protistanici), pak značka (napište ji a stiskněte Enter: lokátor se vezme z databáze CALL3, jako v YAEC a LIVETROPOVHF), lokátor a výška. Značku lze napsat i do pole lokátoru. Dole legenda symbolů mapy: klepnutí na nadpis ji sbalí.
 P|Vlevo mapa Evropy při pohledu shora (východ vpravo), se stupnicí ve stupních po obvodu:
 LI|zelená čára: skutečná trasa mezi oběma lokátory;
 LI|Hot A a Hot B: dva hot spoty po stranách středu trasy. Červená = doporučený, růžová = mimo lalok antény, šedá = již uvnitř laloku (s upozorněním);

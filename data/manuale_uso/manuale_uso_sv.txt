@@ -78,7 +78,7 @@ P|Den första underfliken i gruppen Prognosberäkning visar på en enda skärm v
 H2|5.1 Sammanfattningsraden
 P|Ovanför kartan sammanfattar en rad beräkningen för den tidpunkten: datum och tid, sträckindex (summan av ZHR × effektivitet för de aktiva svärmarna), den mest användbara svärmen med dess ZHR och effektivitet (även i dB i förhållande till DJ5HG:s referens), antalet svärmar över horisonten och den rekommenderade Hot med dess azimut.
 H2|5.2 Kartan i planvy
-P|Bredvid kartan, till höger, finns en enda kolumn. Överst motstationens ruta: först antennens riktning (Antenn-az, alltid mot motstationen), sedan anropssignalen (skriv den och tryck Enter: lokatorn hämtas ur CALL3-databasen, som i YAEC och LIVETROPOVHF), lokatorn och höjden. Anropssignalen kan också skrivas i lokatorrutan. Nederst kartsymbolernas förklaring: ett klick på rubriken fäller ihop den; radianternas färger visas när Europakartan är avslagen.
+P|Bredvid kartan, till höger, finns en enda kolumn. Överst motstationens ruta: först antennens riktning (Antenn-az, alltid mot motstationen), sedan anropssignalen (skriv den och tryck Enter: lokatorn hämtas ur CALL3-databasen, som i YAEC och LIVETROPOVHF), lokatorn och höjden. Anropssignalen kan också skrivas i lokatorrutan. Nederst kartsymbolernas förklaring: ett klick på rubriken fäller ihop den.
 P|Till vänster Europakartan sedd ovanifrån (öster till höger), med gradskalan runt om:
 LI|grön linje: den verkliga sträckan mellan de två lokatorerna;
 LI|Hot A och Hot B: de två hot spots på var sida om mittpunkten. Röd = rekommenderad, rosa = utanför antennloben, grå = redan inom loben (med en varning);

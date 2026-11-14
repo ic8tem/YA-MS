@@ -78,7 +78,7 @@ P|Die eerste suboortjie van die groep Voorspellingsberekening wys op een skerm w
 H2|5.1 Die opsommingstrook
 P|Bo die kaart som 'n strook die berekening vir daardie oomblik op: datum en tyd, padindeks (som van ZHR × doeltreffendheid van die aktiewe swerms), die nuttigste swerm met sy ZHR en sy doeltreffendheid (ook in dB relatief tot die verwysing van DJ5HG), die aantal swerms bo die horison en die aanbevole Hot met sy azimut.
 H2|5.2 Die plattegrondkaart
-P|Langs die kaart, regs, is een enkele kolom. Bo is die korrespondent se blokkie: eers die antennarigting (Antenna-az., altyd na die korrespondent), dan die roepsein (tik dit en druk Enter: die lokator kom uit die CALL3-databasis, soos in YAEC en LIVETROPOVHF), die lokator en die hoogte. Die roepsein kan ook in die lokatorblokkie getik word. Onder is die sleutel van die kaartsimbole: 'n klik op die titel vou dit toe; die kleure van die radiante verskyn wanneer die kaart van Europa af is.
+P|Langs die kaart, regs, is een enkele kolom. Bo is die korrespondent se blokkie: eers die antennarigting (Antenna-az., altyd na die korrespondent), dan die roepsein (tik dit en druk Enter: die lokator kom uit die CALL3-databasis, soos in YAEC en LIVETROPOVHF), die lokator en die hoogte. Die roepsein kan ook in die lokatorblokkie getik word. Onder is die sleutel van die kaartsimbole: 'n klik op die titel vou dit toe.
 P|Links die kaart van Europa van bo gesien (oos regs), met die gradeskaal rondom:
 LI|groen lyn: die ware pad tussen die twee lokators;
 LI|Hot A en Hot B: die twee hot spots aan weerskante van die middelpunt. Rooi = aanbeveel, pienk = buite die lob van die antenna, grys = reeds binne die lob (met 'n waarskuwing);

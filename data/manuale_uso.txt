@@ -78,7 +78,7 @@ P|La prima sotto-linguetta del gruppo Calcolo previsionale mette in una schermat
 H2|5.1 La striscia di riepilogo
 P|Sopra la mappa una striscia riassume il calcolo per quel momento: data e ora, indice della tratta (somma di ZHR × efficienza degli sciami attivi), lo sciame più utile con il suo ZHR e la sua efficienza (anche in dB rispetto al riferimento di DJ5HG), il numero di sciami sopra l'orizzonte e l'Hot consigliato con il suo azimut.
 H2|5.2 La mappa in pianta
-P|Accanto alla mappa, a destra, c'è una colonna unica. In alto il riquadro del corrispondente: prima il puntamento dell'antenna (Antenna az, sempre verso il corrispondente), poi il nominativo (scrivilo e premi Invio: il locator si prende dall'archivio CALL3, come in YAEC e LIVETROPOVHF), il locator e la quota. Il nominativo si può scrivere anche nella casella del locator. In basso c'è la legenda dei simboli della mappa: un clic sul titolo la ripiega; i colori dei radianti compaiono quando la mappa d'Europa è spenta.
+P|Accanto alla mappa, a destra, c'è una colonna unica. In alto il riquadro del corrispondente: prima il puntamento dell'antenna (Antenna az, sempre verso il corrispondente), poi il nominativo (scrivilo e premi Invio: il locator si prende dall'archivio CALL3, come in YAEC e LIVETROPOVHF), il locator e la quota. Il nominativo si può scrivere anche nella casella del locator. In basso c'è la legenda dei simboli della mappa: un clic sul titolo la ripiega.
 P|A sinistra la mappa d'Europa vista dall'alto (est a destra), con la scala dei gradi tutt'intorno:
 LI|linea verde: la tratta vera tra i due locator;
 LI|Hot A e Hot B: i due hot spot ai lati del punto medio. Rosso = consigliato, rosa = fuori dal lobo dell'antenna, grigio = già dentro il lobo (con un avviso);

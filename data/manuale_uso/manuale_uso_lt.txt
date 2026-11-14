@@ -78,7 +78,7 @@ P|Pirmoji grupės Prognozės skaičiavimas antrinė kortelė viename ekrane paro
 H2|5.1 Suvestinės juosta
 P|Virš žemėlapio juosta apibendrina skaičiavimą tam momentui: data ir laikas, trasos indeksas (aktyvių srautų ZHR × efektyvumas suma), naudingiausias srautas su jo ZHR ir efektyvumu (taip pat dB, palyginti su DJ5HG atskaitos verte), srautų virš horizonto skaičius ir rekomenduojamas Hot su jo azimutu.
 H2|5.2 Planinis žemėlapis
-P|Šalia žemėlapio, dešinėje, yra vienas stulpelis. Viršuje korespondento langelis: pirmiausia antenos kryptis (Antenos az, visada į korespondentą), tada šaukinys (įrašykite jį ir paspauskite Enter: lokatorius imamas iš CALL3 duomenų bazės, kaip YAEC ir LIVETROPOVHF), lokatorius ir aukštis. Šaukinį galima įrašyti ir lokatoriaus langelyje. Apačioje žemėlapio simbolių legenda: spustelėjus pavadinimą ji suskleidžiama; radiantų spalvos rodomos, kai Europos žemėlapis išjungtas.
+P|Šalia žemėlapio, dešinėje, yra vienas stulpelis. Viršuje korespondento langelis: pirmiausia antenos kryptis (Antenos az, visada į korespondentą), tada šaukinys (įrašykite jį ir paspauskite Enter: lokatorius imamas iš CALL3 duomenų bazės, kaip YAEC ir LIVETROPOVHF), lokatorius ir aukštis. Šaukinį galima įrašyti ir lokatoriaus langelyje. Apačioje žemėlapio simbolių legenda: spustelėjus pavadinimą ji suskleidžiama.
 P|Kairėje Europos žemėlapis, matomas iš viršaus (rytai dešinėje), su laipsnių skale aplink:
 LI|žalia linija: tikroji trasa tarp dviejų lokatorių;
 LI|Hot A ir Hot B: du hot spot abiejose vidurio taško pusėse. Raudona = rekomenduojamas, rožinė = už antenos lapelio ribų, pilka = jau lapelyje (su įspėjimu);

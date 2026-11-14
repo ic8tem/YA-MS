@@ -78,7 +78,7 @@ P|Prima sub-filă a grupului Calcul de prognoză arată pe un singur ecran unde 
 H2|5.1 Banda de rezumat
 P|Deasupra hărții, o bandă rezumă calculul pentru acel moment: data și ora, indicele traseului (suma ZHR × eficiență a roiurilor active), roiul cel mai util cu ZHR-ul și eficiența sa (și în dB față de referința DJ5HG), numărul de roiuri deasupra orizontului și Hot-ul recomandat cu azimutul său.
 H2|5.2 Harta în plan
-P|Lângă hartă, în dreapta, este o singură coloană. Sus, caseta corespondentului: întâi orientarea antenei (Azimut antenă, mereu spre corespondent), apoi indicativul (scrieți-l și apăsați Enter: locatorul se ia din baza CALL3, ca în YAEC și LIVETROPOVHF), locatorul și altitudinea. Indicativul se poate scrie și în caseta locatorului. Jos, legenda simbolurilor hărții: un clic pe titlu o pliază; culorile radianților apar când harta Europei este oprită.
+P|Lângă hartă, în dreapta, este o singură coloană. Sus, caseta corespondentului: întâi orientarea antenei (Azimut antenă, mereu spre corespondent), apoi indicativul (scrieți-l și apăsați Enter: locatorul se ia din baza CALL3, ca în YAEC și LIVETROPOVHF), locatorul și altitudinea. Indicativul se poate scrie și în caseta locatorului. Jos, legenda simbolurilor hărții: un clic pe titlu o pliază.
 P|În stânga, harta Europei văzută de sus (estul la dreapta), cu scala gradelor de jur împrejur:
 LI|linia verde: traseul real între cei doi locatori;
 LI|Hot A și Hot B: cele două hot spot-uri de o parte și de alta a punctului de mijloc. Roșu = recomandat, roz = în afara lobului antenei, gri = deja în interiorul lobului (cu un avertisment);

@@ -78,7 +78,7 @@ P|Az Előrejelző számítás csoport első alfüle egyetlen képernyőn mutatja
 H2|5.1 Az összefoglaló sáv
 P|A térkép fölött egy sáv összefoglalja az adott időpont számítását: dátum és idő, útvonalindex (az aktív rajok ZHR × hatásfok összege), a leghasznosabb raj ZHR-jével és hatásfokával (dB-ben is, DJ5HG referenciájához képest), a horizont feletti rajok száma, valamint a javasolt Hot az azimutjával.
 H2|5.2 Az alaprajzi térkép
-P|A térkép mellett, jobbra, egyetlen oszlop van. Felül az ellenállomás doboza: előbb az antenna iránya (Antenna az., mindig az ellenállomás felé), aztán a hívójel (írd be és nyomj Entert: a lokátor a CALL3 adatbázisból jön, mint a YAEC-ben és a LIVETROPOVHF-ben), a lokátor és a magasság. A hívójel a lokátor mezőjébe is beírható. Alul a térkép jeleinek jelmagyarázata: a címére kattintva összecsukódik; a radiánsok színei akkor jelennek meg, ha az Európa-térkép ki van kapcsolva.
+P|A térkép mellett, jobbra, egyetlen oszlop van. Felül az ellenállomás doboza: előbb az antenna iránya (Antenna az., mindig az ellenállomás felé), aztán a hívójel (írd be és nyomj Entert: a lokátor a CALL3 adatbázisból jön, mint a YAEC-ben és a LIVETROPOVHF-ben), a lokátor és a magasság. A hívójel a lokátor mezőjébe is beírható. Alul a térkép jeleinek jelmagyarázata: a címére kattintva összecsukódik.
 P|Bal oldalon Európa térképe felülnézetből (kelet jobbra), körben fokbeosztással:
 LI|zöld vonal: a két lokátor közötti valódi útvonal;
 LI|Hot A és Hot B: a felezőpont két oldalán lévő két hot spot. Piros = javasolt, rózsaszín = az antennalebenyen kívül, szürke = már a lebenyen belül (figyelmeztetéssel);

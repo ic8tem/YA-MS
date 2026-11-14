@@ -78,7 +78,7 @@ P|Pierwsza podkarta grupy Obliczenie prognozy pokazuje na jednym ekranie, gdzie 
 H2|5.1 Pasek podsumowania
 P|Nad mapą pasek podsumowuje obliczenie dla tej chwili: data i godzina, indeks trasy (suma ZHR × sprawność aktywnych rojów), najbardziej użyteczny rój z jego ZHR i sprawnością (także w dB względem odniesienia DJ5HG), liczba rojów nad horyzontem oraz zalecany Hot z jego azymutem.
 H2|5.2 Mapa w rzucie
-P|Obok mapy, po prawej, jest jedna kolumna. Na górze ramka korespondenta: najpierw kierunek anteny (Azymut anteny, zawsze na korespondenta), potem znak (wpisz go i naciśnij Enter: lokator jest brany z bazy CALL3, jak w YAEC i LIVETROPOVHF), lokator i wysokość. Znak można też wpisać w polu lokatora. Na dole legenda symboli mapy: kliknięcie tytułu ją zwija; kolory radiantów pojawiają się, gdy mapa Europy jest wyłączona.
+P|Obok mapy, po prawej, jest jedna kolumna. Na górze ramka korespondenta: najpierw kierunek anteny (Azymut anteny, zawsze na korespondenta), potem znak (wpisz go i naciśnij Enter: lokator jest brany z bazy CALL3, jak w YAEC i LIVETROPOVHF), lokator i wysokość. Znak można też wpisać w polu lokatora. Na dole legenda symboli mapy: kliknięcie tytułu ją zwija.
 P|Po lewej mapa Europy widziana z góry (wschód po prawej), z podziałką stopni dookoła:
 LI|zielona linia: rzeczywista trasa między dwoma lokatorami;
 LI|Hot A i Hot B: dwa hot spoty po obu stronach punktu środkowego. Czerwony = zalecany, różowy = poza wiązką anteny, szary = już w wiązce (z ostrzeżeniem);

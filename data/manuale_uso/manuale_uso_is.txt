@@ -78,7 +78,7 @@ P|Fyrsti undirflipinn í hópnum Spáreikningur sýnir á einum skjá hvar nýti
 H2|5.1 Yfirlitsröndin
 P|Fyrir ofan kortið tekur rönd saman útreikninginn fyrir þann tíma: dagsetningu og tíma, leiðarstuðul (summu ZHR × nýtni virku drífanna), gagnlegustu drífuna með ZHR hennar og nýtni (einnig í dB miðað við viðmið DJ5HG), fjölda drífa yfir sjóndeildarhring og Hot sem mælt er með ásamt stefnuhorni þess.
 H2|5.2 Kortið séð ofan frá
-P|Við hlið kortsins, til hægri, er einn dálkur. Efst er reitur mótstöðvarinnar: fyrst stefna loftnetsins (Loftnet az, alltaf að mótstöðinni), svo kallmerkið (skrifaðu það og ýttu á Enter: staðsetningin kemur úr CALL3-gagnagrunninum, eins og í YAEC og LIVETROPOVHF), staðsetningin og hæðin. Einnig má skrifa kallmerkið í staðsetningarreitinn. Neðst er skýring á táknum kortsins: smellur á titilinn fellir hana saman; litir geislapunktanna birtast þegar Evrópukortið er slökkt.
+P|Við hlið kortsins, til hægri, er einn dálkur. Efst er reitur mótstöðvarinnar: fyrst stefna loftnetsins (Loftnet az, alltaf að mótstöðinni), svo kallmerkið (skrifaðu það og ýttu á Enter: staðsetningin kemur úr CALL3-gagnagrunninum, eins og í YAEC og LIVETROPOVHF), staðsetningin og hæðin. Einnig má skrifa kallmerkið í staðsetningarreitinn. Neðst er skýring á táknum kortsins: smellur á titilinn fellir hana saman.
 P|Til vinstri er kort af Evrópu séð ofan frá (austur til hægri), með gráðukvarða allan hringinn:
 LI|græn lína: raunveruleg leið milli locatoranna tveggja;
 LI|Hot A og Hot B: heitu blettirnir tveir sitt hvorum megin við miðpunktinn. Rautt = mælt með, bleikt = utan loftnetsgeislans, grátt = þegar innan geislans (með viðvörun);

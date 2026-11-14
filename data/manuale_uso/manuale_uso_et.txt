@@ -78,7 +78,7 @@ P|Rühma Prognoosarvutus esimene alamsakk näitab ühel ekraanil, kuhu kasulikud
 H2|5.1 Kokkuvõtteriba
 P|Kaardi kohal võtab riba kokku arvutuse selle hetke kohta: kuupäev ja kellaaeg, trassi indeks (aktiivsete meteoorivoolude ZHR × efektiivsus summa), kõige kasulikum meteoorivool koos ZHR-i ja efektiivsusega (ka dB-des DJ5HG etaloni suhtes), horisondist kõrgemal olevate meteoorivoolude arv ning soovitatud Hot koos asimuudiga.
 H2|5.2 Pealtvaate kaart
-P|Kaardi kõrval paremal on üks veerg. Üleval on vastasjaama kast: kõigepealt antenni suund (Antenni az, alati vastasjaama poole), siis kutsung (kirjuta see ja vajuta Enter: lokaator võetakse CALL3 andmebaasist, nagu YAECis ja LIVETROPOVHFis), lokaator ja kõrgus. Kutsungi võib kirjutada ka lokaatori kasti. All on kaardi sümbolite legend: klõps pealkirjal paneb selle kokku; radiantide värvid ilmuvad, kui Euroopa kaart on välja lülitatud.
+P|Kaardi kõrval paremal on üks veerg. Üleval on vastasjaama kast: kõigepealt antenni suund (Antenni az, alati vastasjaama poole), siis kutsung (kirjuta see ja vajuta Enter: lokaator võetakse CALL3 andmebaasist, nagu YAECis ja LIVETROPOVHFis), lokaator ja kõrgus. Kutsungi võib kirjutada ka lokaatori kasti. All on kaardi sümbolite legend: klõps pealkirjal paneb selle kokku.
 P|Vasakul Euroopa kaart pealtvaates (ida paremal), ümberringi kraadiskaalaga:
 LI|roheline joon: tegelik trass kahe lokaatori vahel;
 LI|Hot A ja Hot B: kaks hot spot'i keskpunkti mõlemal küljel. Punane = soovitatud, roosa = väljaspool antenni peaharu, hall = juba peaharu sees (koos hoiatusega);

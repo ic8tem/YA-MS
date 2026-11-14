@@ -78,7 +78,7 @@ P|A primeira subaba do grupo Cálculo de previsão reúne em uma só tela onde c
 H2|5.1 A faixa de resumo
 P|Acima do mapa, uma faixa resume o cálculo para aquele momento: data e hora, índice do trajeto (soma de ZHR × eficiência das chuvas ativas), a chuva mais útil com o seu ZHR e a sua eficiência (também em dB em relação à referência de DJ5HG), o número de chuvas acima do horizonte e o Hot recomendado com o seu azimute.
 H2|5.2 O mapa em planta
-P|Ao lado do mapa, à direita, há uma coluna única. No alto, o quadro do correspondente: primeiro o apontamento da antena (Azimute antena, sempre para o correspondente), depois o indicativo (digite-o e pressione Enter: o locator vem da base CALL3, como no YAEC e no LIVETROPOVHF), o locator e a altitude. O indicativo também pode ser digitado na caixa do locator. Embaixo, a legenda dos símbolos do mapa: um clique no título a recolhe; as cores dos radiantes aparecem quando o mapa da Europa está desligado.
+P|Ao lado do mapa, à direita, há uma coluna única. No alto, o quadro do correspondente: primeiro o apontamento da antena (Azimute antena, sempre para o correspondente), depois o indicativo (digite-o e pressione Enter: o locator vem da base CALL3, como no YAEC e no LIVETROPOVHF), o locator e a altitude. O indicativo também pode ser digitado na caixa do locator. Embaixo, a legenda dos símbolos do mapa: um clique no título a recolhe.
 P|À esquerda, o mapa da Europa visto de cima (leste à direita), com a escala de graus ao redor:
 LI|linha verde: o trajeto real entre os dois locators;
 LI|Hot A e Hot B: os dois hot spots dos lados do ponto médio. Vermelho = recomendado, rosa = fora do lóbulo da antena, cinza = já dentro do lóbulo (com um aviso);

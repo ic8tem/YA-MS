@@ -78,7 +78,7 @@ P|Tahmin hesabı grubunun ilk alt sekmesi, yararlı izlerin şu anda nereye dü�
 H2|5.1 Özet şeridi
 P|Haritanın üstündeki bir şerit o anki hesabı özetler: tarih ve saat, yol endeksi (etkin yağmurların ZHR × verim toplamı), ZHR'si ve verimiyle (DJ5HG referansına göre dB olarak da) en yararlı yağmur, ufkun üstündeki yağmurların sayısı ve azimutuyla birlikte önerilen Hot.
 H2|5.2 Plan haritası
-P|Haritanın yanında, sağda tek bir sütun var. Üstte karşı istasyon kutusu: önce anten yönü (Anten az., her zaman karşı istasyona), sonra çağrı işareti (yazıp Enter'a basın: lokatör CALL3 veritabanından alınır, YAEC ve LIVETROPOVHF'deki gibi), lokatör ve yükseklik. Çağrı işareti lokatör kutusuna da yazılabilir. Altta harita sembollerinin açıklaması: başlığa tıklamak onu katlar; radyant renkleri Avrupa haritası kapalıyken görünür.
+P|Haritanın yanında, sağda tek bir sütun var. Üstte karşı istasyon kutusu: önce anten yönü (Anten az., her zaman karşı istasyona), sonra çağrı işareti (yazıp Enter'a basın: lokatör CALL3 veritabanından alınır, YAEC ve LIVETROPOVHF'deki gibi), lokatör ve yükseklik. Çağrı işareti lokatör kutusuna da yazılabilir. Altta harita sembollerinin açıklaması: başlığa tıklamak onu katlar.
 P|Solda, yukarıdan görülen Avrupa haritası (doğu sağda), çevresinde derece ölçeğiyle:
 LI|yeşil çizgi: iki lokatör arasındaki gerçek yol;
 LI|Hot A ve Hot B: orta noktanın iki yanındaki iki hot spot. Kırmızı = önerilen, pembe = anten lobunun dışında, gri = zaten lobun içinde (bir uyarıyla);

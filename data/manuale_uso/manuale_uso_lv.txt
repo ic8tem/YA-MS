@@ -78,7 +78,7 @@ P|Grupas Prognozes aprēķins pirmā apakšcilne vienā ekrānā parāda, kur pa
 H2|5.1 Kopsavilkuma josla
 P|Virs kartes josla apkopo aprēķinu šim brīdim: datums un laiks, trases indekss (aktīvo plūsmu ZHR × efektivitāte summa), noderīgākā plūsma ar tās ZHR un efektivitāti (arī dB attiecībā pret DJ5HG atskaites vērtību), plūsmu skaits virs horizonta un ieteicamais Hot ar tā azimutu.
 H2|5.2 Plāna karte
-P|Blakus kartei, pa labi, ir viena kolonna. Augšā korespondenta lodziņš: vispirms antenas pavērsiens (Antenas az, vienmēr uz korespondentu), tad izsaukuma signāls (ieraksti to un nospied Enter: lokators tiek ņemts no CALL3 datubāzes, kā YAEC un LIVETROPOVHF), lokators un augstums. Izsaukuma signālu var ierakstīt arī lokatora lodziņā. Apakšā kartes simbolu leģenda: klikšķis uz virsraksta to sakļauj; radiantu krāsas parādās, kad Eiropas karte ir izslēgta.
+P|Blakus kartei, pa labi, ir viena kolonna. Augšā korespondenta lodziņš: vispirms antenas pavērsiens (Antenas az, vienmēr uz korespondentu), tad izsaukuma signāls (ieraksti to un nospied Enter: lokators tiek ņemts no CALL3 datubāzes, kā YAEC un LIVETROPOVHF), lokators un augstums. Izsaukuma signālu var ierakstīt arī lokatora lodziņā. Apakšā kartes simbolu leģenda: klikšķis uz virsraksta to sakļauj.
 P|Kreisajā pusē Eiropas karte, skatoties no augšas (austrumi pa labi), ar grādu skalu visapkārt:
 LI|zaļa līnija: patiesā trase starp abiem lokatoriem;
 LI|Hot A un Hot B: divi hot spot abās viduspunkta pusēs. Sarkans = ieteicamais, rozā = ārpus antenas ziedlapiņas, pelēks = jau ziedlapiņā (ar brīdinājumu);

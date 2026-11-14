@@ -78,7 +78,7 @@ P|Sub-tab pertama dari grup Perhitungan prakiraan menampilkan dalam satu layar d
 H2|5.1 Strip ringkasan
 P|Di atas peta, sebuah strip merangkum perhitungan untuk saat itu: tanggal dan jam, indeks lintasan (jumlah ZHR × efisiensi hujan meteor aktif), hujan meteor yang paling berguna dengan ZHR dan efisiensinya (juga dalam dB relatif terhadap acuan DJ5HG), jumlah hujan meteor di atas cakrawala, serta Hot disarankan beserta azimutnya.
 H2|5.2 Peta denah
-P|Di samping peta, di kanan, ada satu kolom. Di atas kotak koresponden: pertama arah antena (Azimut antena, selalu ke koresponden), lalu callsign (ketik dan tekan Enter: lokator diambil dari basis data CALL3, seperti di YAEC dan LIVETROPOVHF), lokator dan ketinggian. Callsign juga bisa diketik di kotak lokator. Di bawah legenda simbol peta: klik pada judulnya untuk melipatnya; warna radian muncul saat peta Eropa dimatikan.
+P|Di samping peta, di kanan, ada satu kolom. Di atas kotak koresponden: pertama arah antena (Azimut antena, selalu ke koresponden), lalu callsign (ketik dan tekan Enter: lokator diambil dari basis data CALL3, seperti di YAEC dan LIVETROPOVHF), lokator dan ketinggian. Callsign juga bisa diketik di kotak lokator. Di bawah legenda simbol peta: klik pada judulnya untuk melipatnya.
 P|Di kiri, peta Eropa dilihat dari atas (timur di kanan), dengan skala derajat di sekelilingnya:
 LI|garis hijau: lintasan sebenarnya antara kedua locator;
 LI|Hot A dan Hot B: dua hot spot di sisi-sisi titik tengah. Merah = disarankan, merah muda = di luar lobus antena, abu-abu = sudah berada di dalam lobus (dengan peringatan);

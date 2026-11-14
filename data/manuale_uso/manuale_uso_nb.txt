@@ -78,7 +78,7 @@ P|Den første underfanen i gruppen Prognoseberegning viser på én skjerm hvor d
 H2|5.1 Sammendragslinjen
 P|Over kartet oppsummerer en linje beregningen for det tidspunktet: dato og klokkeslett, strekningsindeks (summen av ZHR × effektivitet for de aktive svermene), den mest nyttige svermen med ZHR og effektivitet (også i dB i forhold til referansen til DJ5HG), antall svermer over horisonten og anbefalt Hot med asimut.
 H2|5.2 Kartet i grunnriss
-P|Ved siden av kartet, til høyre, er det én kolonne. Øverst motstasjonens boks: først antenneretningen (Antenne-az, alltid mot motstasjonen), så kallesignalet (skriv det og trykk Enter: lokatoren hentes fra CALL3-databasen, som i YAEC og LIVETROPOVHF), lokatoren og høyden. Kallesignalet kan også skrives i lokatorboksen. Nederst forklaringen til kartsymbolene: et klikk på tittelen slår den sammen; radiantfargene vises når Europakartet er slått av.
+P|Ved siden av kartet, til høyre, er det én kolonne. Øverst motstasjonens boks: først antenneretningen (Antenne-az, alltid mot motstasjonen), så kallesignalet (skriv det og trykk Enter: lokatoren hentes fra CALL3-databasen, som i YAEC og LIVETROPOVHF), lokatoren og høyden. Kallesignalet kan også skrives i lokatorboksen. Nederst forklaringen til kartsymbolene: et klikk på tittelen slår den sammen.
 P|Til venstre Europakartet sett ovenfra (øst til høyre), med gradskalaen rundt:
 LI|grønn linje: den virkelige strekningen mellom de to lokatorene;
 LI|Hot A og Hot B: de to hot spot-ene på hver side av midtpunktet. Rød = anbefalt, rosa = utenfor antenneloben, grå = allerede innenfor loben (med et varsel);

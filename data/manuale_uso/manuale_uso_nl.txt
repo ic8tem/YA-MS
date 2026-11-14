@@ -78,7 +78,7 @@ P|Het eerste subtabblad van de groep Voorspellingsberekening laat in één scher
 H2|5.1 De samenvattingsbalk
 P|Boven de kaart vat een balk de berekening voor dat moment samen: datum en tijd, trajectindex (som van ZHR × efficiëntie van de actieve zwermen), de nuttigste zwerm met zijn ZHR en zijn efficiëntie (ook in dB ten opzichte van de referentie van DJ5HG), het aantal zwermen boven de horizon en de aanbevolen Hot met zijn azimut.
 H2|5.2 De kaart in bovenaanzicht
-P|Naast de kaart, rechts, staat één kolom. Bovenaan het vak van het tegenstation: eerst de antennerichting (Antenne-az., altijd naar het tegenstation), dan de roepnaam (typ hem en druk op Enter: de locator komt uit de CALL3-database, zoals in YAEC en LIVETROPOVHF), de locator en de hoogte. De roepnaam kan ook in het locatorvak worden getypt. Onderaan de legenda van de kaartsymbolen: een klik op de titel klapt hem in; de kleuren van de radianten verschijnen als de kaart van Europa uit staat.
+P|Naast de kaart, rechts, staat één kolom. Bovenaan het vak van het tegenstation: eerst de antennerichting (Antenne-az., altijd naar het tegenstation), dan de roepnaam (typ hem en druk op Enter: de locator komt uit de CALL3-database, zoals in YAEC en LIVETROPOVHF), de locator en de hoogte. De roepnaam kan ook in het locatorvak worden getypt. Onderaan de legenda van de kaartsymbolen: een klik op de titel klapt hem in.
 P|Links de kaart van Europa van bovenaf gezien (oost rechts), met de gradenschaal rondom:
 LI|groene lijn: het werkelijke traject tussen de twee locators;
 LI|Hot A en Hot B: de twee hotspots aan weerszijden van het middelpunt. Rood = aanbevolen, roze = buiten de bundel van de antenne, grijs = al binnen de bundel (met een waarschuwing);

@@ -1,5 +1,5 @@
 TITLE|Uživatelská příručka YA-MS
-SUB|Verze 1.8.14 - připravil Costantino IC8TEM - listopad 2026
+SUB|Verze 1.8.15 - připravil Costantino IC8TEM - listopad 2026
 H1|1. Úvod
 H2|1.1 K čemu slouží YA-MS
 P|YA-MS pomáhá předpovídat a živě sledovat podmínky pro meteor scatter mezi vaší stanicí a protistanicí, od 28 do 432 MHz. Pro každý aktivní meteorický roj udává, nakolik poloha jeho radiantu podporuje vaši trasu (účinnost), v kterých hodinách, z které strany trasy přicházejí odrazy a kam je vhodné nasměrovat anténu. Vedle předpovědi zobrazuje živě naměřená data: počty z meteorického radaru Collm, kamery sítě Global Meteor Network, radar CMOR, vysílač GRAVES a provoz meteor scatter sbíraný z clusterů a z PSKReporter.
@@ -79,6 +79,7 @@ H2|5.1 Souhrnný pruh
 P|Nad mapou pruh shrnuje výpočet pro daný okamžik: datum a čas, index trasy (součet ZHR × účinnost aktivních rojů), nejužitečnější roj s jeho ZHR a účinností (i v dB vůči referenci DJ5HG), počet rojů nad horizontem a doporučený Hot s jeho azimutem.
 H2|5.2 Mapa v půdorysu
 P|Vedle mapy, vpravo, je jediný sloupec. Nahoře rámeček protistanice: nejprve směr antény (Azimut antény, vždy na protistanici), pak značka (napište ji a stiskněte Enter: lokátor se vezme z databáze CALL3, jako v YAEC a LIVETROPOVHF), lokátor a výška. Značku lze napsat i do pole lokátoru. Dole legenda symbolů mapy: klepnutí na nadpis ji sbalí.
+P|Pokud pro tuto značku zadáte jiný lokátor, než je v archivu, rozsvítí se vedle pole lokátoru tlačítko «Uložit»: jeho stisknutím se nový lokátor stane ručním záznamem (data/CALL3-MANUALE.TXT, který má přednost před všemi ostatními zdroji) a ihned se zapíše i do data/call3.txt.
 P|Vlevo mapa Evropy při pohledu shora (východ vpravo), se stupnicí ve stupních po obvodu:
 LI|zelená čára: skutečná trasa mezi oběma lokátory;
 LI|Hot A a Hot B: dva hot spoty po stranách středu trasy. Červená = doporučený, růžová = mimo lalok antény, šedá = již uvnitř laloku (s upozorněním);
@@ -162,6 +163,7 @@ P|Azimutální ekvidistantní mapa se středem ve vaší stanici se všemi zachy
 LI|Poloměr mapy: 600-3500 km. Spoty k zobrazení: posledních 3, 15 nebo 30 minut, poslední hodina, poslední 3 nebo 24 hodiny.
 LI|Mapu v Mercatorově zobrazení lze posouvat tažením myší; dvojklik: znovu vystředěná na mou stanici. Azimutální mapa zůstává vystředěná na mou stanici.
 LI|Kliknutím na trasu nebo na řádek tabulky se spojení zvýrazní a zobrazí se střed zóna roje, jeho výška a rozměry.
+LI|Podrobnosti zvoleného spojení nebo poslouchající stanice se zobrazí ve vystouplém rámečku nad mapou vlevo nahoře, v azimutální i Mercatorově projekci.
 LI|Ukázat, kdo poslouchá: trojúhelníky v barvě pásma označují stanice, které podle PSKReporteru ve zvoleném časovém okně přijímají MSK144, FSK441, PSK2K nebo JTMS na 28, 50, 70, 144 a 432 MHz. Klepnutí na trojúhelník ukáže značku, lokátor, druhy provozu a poslední spot. Proud MQTT na kartě Sběr dat musí být připojen.
 LI|Také aktivní monitory z mapy PSKReporter: prázdné trojúhelníky pro stanice, které jsou na mapě pskreporter.info v MSK144, FSK441, PSK2K nebo JTMS, ale ještě nepřijaly žádný spot (MQTT posílá jen stanice, které něco přijímají). YA-MS se dotazuje vyhledávací služby PSKReporter jednou za 5 minut pro všechny druhy provozu, jak žádají pravidla služby; monitor zůstává na mapě nejméně 11 minut. Klepnutí na trojúhelník ukáže značku, lokátor, dekódovací program a čas, kdy byl monitor aktivní. Ve výchozím stavu zapnuto.
 LI|FT8 nad 1100 km bez souběžných tras: spot FT8 (z PSKReporter MQTT, z clusterů nebo z WSJT-X přes UDP) mezi stanicemi vzdálenými více než 1100 km, který 3 minuty před a po nemá souběžné trasy (stejné pásmo, střed do 300 km, směr do 15°, jiná dvojice stanic), se kreslí světle zeleně a jeho řádek v tabulce vpravo dole stále bliká. Sporadická E a tropo dávají mnoho blízkých souběžných tras; osamocený spot může být meteorická stopa. Proto YA-MS přijímá z MQTT i spoty FT8 z pásem 6 m, 4 m, 2 m, 1,25 m a 70 cm (nikdy 28 MHz, v žádném případě). Tyto spoty se neukládají do archivu MS. Ve výchozím stavu zapnuto. Další kontroly s PSKReporter MQTT: spot není osamocený, pokud přijímající stanice slyší v MQTT během 3 minut na stejném pásmu jiné stanice dál než 1100 km (otevřené pásmo); spoty z clusterů a RBN platí jen tehdy, když stejná dvojice přijde i z MQTT; skimmery RBN (značky s «-#») neplatí nikdy.

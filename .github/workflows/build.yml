@@ -306,6 +306,7 @@ jobs:
             YA-MS - previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter.
             A cura di Costantino IC8TEM.
 
+            Novità della 1.8.15: pulsante «Memorizza» accanto al locator del corrispondente (un locator diverso va nel CALL3 e subito in call3.txt); nel Traffico in diretta i dettagli dello spot in un riquadro in rilievo sopra la mappa, in alto a sinistra.
             Novità della 1.8.14: nel Traffico in diretta la mia stazione e raggio/proiezione in riquadri sopra la mappa; la mappa di Mercatore si sposta trascinandola (doppio clic: di nuovo sulla stazione).
             Novità della 1.8.13: FT8 isolati con i controlli di PSKReporter MQTT (ricevente che sente altre stazioni lontane, conferma MQTT per cluster e RBN, skimmer RBN esclusi).
             Novità della 1.8.12: FT8 sui 28 MHz tolti in ogni caso; "nuvola" diventa "zona dello sciame" (mappa) e "% sciame" (colonna della tabella), calcolata anche per gli spot FT8.

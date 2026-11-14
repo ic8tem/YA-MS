@@ -40,6 +40,12 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.15
+  - Calcolo previsionale: pulsante "Memorizza" accanto al locator del corrispondente. Se scrivi un locator diverso
+    da quello del CALL3 per quel nominativo, lo salva come voce a mano e lo scrive subito dentro data/call3.txt.
+  - Traffico in diretta: i dettagli del contatto o della stazione in ascolto in un riquadro in rilievo sopra la
+    mappa, in alto a sinistra (azimutale e Mercatore).
+
 NOVITA' DELLA 1.8.14
   - Traffico in diretta: "La mia stazione" in un riquadro sopra la mappa, in alto a destra; raggio e proiezione
     della mappa in un riquadro in basso a destra.

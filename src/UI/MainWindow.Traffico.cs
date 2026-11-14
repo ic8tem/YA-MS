@@ -57,6 +57,7 @@ namespace YAMS
             p.Children.Add(g);
             traffic = new TrafficView { RadiusKm = Math.Max(600, Math.Min(3500, cfg.GetD("traffico_raggio", 2500))) };
             traffic.SpotClicked += t => ShowTrafficInfo(t);
+            traffic.ViewChanged += () => RefreshTraffic(true);   // Mercatore spostato: si ricalcola cosa sta sulla mappa
             traffic.ListenerClicked += l => { if (lblTrafficInfo != null) lblTrafficInfo.Text = l.Info; };
             // la mia stazione: riquadro sopra la mappa, in alto a destra, dove la mappa ha spazio libero (richiesta
             // dell'autore, 14/11/2026: prima era in cima alla colonna destra)
@@ -89,6 +90,7 @@ namespace YAMS
             ComboBox cmbProj = new ComboBox { ItemsSource = new[] { Lang.T("azimutale (centrata sulla mia stazione)"), Lang.T("Mercatore") }, MinWidth = 220, VerticalAlignment = VerticalAlignment.Center };
             traffic.Mercator = cfg.GetB("traffico_mercatore", false);
             cmbProj.SelectedIndex = traffic.Mercator ? 1 : 0;
+            ToolTip.SetTip(cmbProj, Lang.T("Il Mercatore si sposta trascinandolo con il mouse; doppio clic: di nuovo centrato sulla mia stazione. L'azimutale resta centrata sulla mia stazione."));
             cmbProj.SelectionChanged += (s, e) => { traffic.Mercator = cmbProj.SelectedIndex == 1; cfg.Set("traffico_mercatore", traffic.Mercator); RefreshTraffic(true); };
             mapOpts.Children.Add(Row(L(Lang.T("Proiezione della mappa")), cmbProj));
             mapHost.Children.Add(new Border

@@ -40,6 +40,12 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.17
+  - Nuova fascia sempre visibile sotto la riga dell'orario, sopra le linguette: ora migliore del giorno, sciame
+    piu' favorevole e sei orizzonti di previsione (adesso, tra 1, 3, 6, 12 e 24 ore) con la media dell'ora:
+    indice della tratta, lato prevalente, sciame principale e riflessioni all'ora previste. Si aggiorna ogni minuto.
+  - La linea del tempo (ore da -12 a +36, Tempo reale) e' ora in cima alla linguetta Calcolo previsionale.
+
 NOVITA' DELLA 1.8.16
   - Catalogo IAU MDC degli sciami stabiliti dentro i pacchetti (data/cataloghi): il confronto dei radianti nella
     linguetta Sciami funziona dal primo avvio, anche con le fonti in diretta spente.

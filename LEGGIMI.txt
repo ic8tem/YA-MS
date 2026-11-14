@@ -40,6 +40,11 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.12
+  - FT8 sui 28 MHz tolti in ogni caso (clausola degli FT8 isolati e scambio tra gli utenti).
+  - "Nuvola" diventa "zona dello sciame" sulla mappa e "% sciame" nella colonna della tabella del Traffico in
+    diretta; la zona dello sciame si calcola anche per gli spot FT8.
+
 NOVITA' DELLA 1.8.11
   - Calcolo previsionale: una sola colonna accanto alla mappa, in alto il riquadro del corrispondente con il
     puntamento dell'antenna (tolto dalla prima riga dei comandi), in basso la legenda dei simboli (ripiegabile).

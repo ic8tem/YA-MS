@@ -12,7 +12,7 @@ Sinu jaamale tsentreeritud **asimuutne kaugustruu kaart** (kaugus keskpunktist =
 
 - kahe jaama vahelise **trassi** oma sagedusala värvis: 28 MHz pruun, 50 MHz roheline, 70 MHz tsüaansinine, 144 MHz oranž, 222 MHz roosa, 432 MHz violetne;
 - trassi otstes olevad kaks **jaama**;
-- **pilve**: kuhu koonduvad selle trassi ja selle aja kõige tõenäolisemad meteoorijäljed.
+- **voo tsoon**: kuhu koonduvad selle trassi ja selle aja kõige tõenäolisemad meteoorijäljed.
 
 Spotid, mille üks jaam on **kaardist väljas**, jäetakse kõrvale. **Äsja saabunud** spot (mitte vanem kui 3 minutit) **vilgub ühe minuti**, nii et uus aktiivsus torkab kohe silma.
 
@@ -20,19 +20,19 @@ Näita, kes kuulab: riba värvi kolmnurgad märgivad jaamu, mis PSKReporteri jä
 
 Ka PSKReporteri kaardi aktiivsed monitorid: tühjad kolmnurgad jaamadele, mis on pskreporter.info kaardil MSK144, FSK441, PSK2K või JTMS režiimis, kuid pole veel ühtegi spotti vastu võtnud (MQTT saadab ainult jaamu, mis midagi vastu võtavad). YA-MS pärib PSKReporteri päringuteenust kord 5 minuti jooksul kõigi režiimide kohta, nagu teenuse reeglid nõuavad; monitor jääb kaardile vähemalt 11 minutiks. Klõps kolmnurgal näitab kutsungit, lokaatorit, dekodeerimisprogrammi ja aega, mil monitor oli aktiivne. Vaikimisi sees.
 
-FT8 üle 1100 km ilma paralleelsete trassideta: FT8-spot (PSKReporteri MQTT-st, klastritest või WSJT-X-ist UDP kaudu) üle 1100 km kaugusel olevate jaamade vahel, millel pole 3 minuti jooksul enne ja pärast paralleelseid trasse (sama sagedusala, keskpunkt 300 km piires, suund 15° piires, teine jaamapaar), joonistatakse helerohelisena ja selle rida paremal all tabelis vilgub alati. Sporaadiline E ja troposfäär annavad palju lähedasi paralleelseid trasse; üksik spot võib olla meteoorijälg. Seepärast võtab YA-MS MQTT-st vastu ka 6 m, 4 m, 2 m, 1,25 m ja 70 cm FT8-spotid (mitte 10 m omi, neid on liiga palju). Need spotid ei lähe MS-arhiivi. Vaikimisi sees.
+FT8 üle 1100 km ilma paralleelsete trassideta: FT8-spot (PSKReporteri MQTT-st, klastritest või WSJT-X-ist UDP kaudu) üle 1100 km kaugusel olevate jaamade vahel, millel pole 3 minuti jooksul enne ja pärast paralleelseid trasse (sama sagedusala, keskpunkt 300 km piires, suund 15° piires, teine jaamapaar), joonistatakse helerohelisena ja selle rida paremal all tabelis vilgub alati. Sporaadiline E ja troposfäär annavad palju lähedasi paralleelseid trasse; üksik spot võib olla meteoorijälg. Seepärast võtab YA-MS MQTT-st vastu ka 6 m, 4 m, 2 m, 1,25 m ja 70 cm FT8-spotid (mitte kunagi 28 MHz). Need spotid ei lähe MS-arhiivi. Vaikimisi sees.
 
 WSJT-X-i spotid UDP kaudu, mis puudutavad sinu jaama (dekodeering sisaldab sinu kutsungit: kes sind kutsub või sulle vastab), joonistatakse alati vilkuva katkendjoonega, igas režiimis ja igal kaugusel.
 
 Vahetus YA-MS-i kasutajate vahel: kui mõni teine YA-MS-i kasutaja dekodeerib UDP kaudu sinu jaamale adresseeritud sõnumi (MSK144, FSK441, PSK2K või JTMS režiimis või FT8-s üle 1100 km), saadab tema YA-MS selle sulle krüptitult kolme avaliku MQTT-maakleri kaudu (HiveMQ, Mosquitto, EMQX); näed seda alati vilkuva violetse katkendjoonena ja reana UDP konsoolis. Ainult sina saad seda lugeda (ECDH P-256 võtmed, AES-256 ja HMAC-SHA256). FT8-spotte näidatakse ainult siis, kui neil pole 3 minuti jooksul paralleelseid trasse. Vaikimisi sees; yams_scambio=0 failis data/config.ini lülitab selle välja.
 
-Kaardil kirjutatakse iga spoti mõlema jaama kutsung, üks kord jaama kohta. Projektsioon on valitav: asimuutne (keskel sinu jaam) või Mercator. Veeru Pilv kohtspikker selgitab selle tähendust.
+Kaardil kirjutatakse iga spoti mõlema jaama kutsung, üks kord jaama kohta. Projektsioon on valitav: asimuutne (keskel sinu jaam) või Mercator. Veeru voo tsoon kohtspikker selgitab selle tähendust.
 
 Näidatakse kõigi sagedusalade spotte, ka nende, mida Andmekogumises ei ole valitud (neid ei salvestata). CW-spotte ja liiga lähedaste jaamade vahelisi spotte ei näidata, kui need Andmekogumises ära visatakse.
 
-## Kuidas pilve arvutatakse
+## Kuidas voo tsoon arvutatakse
 
-Iga spoti jaoks ehitab programm kahe lokaatori vahelise trassi (sama geomeetria nagu sinu enda trassil, vt [Geomeetria ja sumbumine](Geometry-and-Path-Loss-et)) ja liidab spoti ajal E-kihi punkt-punktilt **iga aktiivse meteoorivoolu peegelpeegelduse panused**, kaalutuna selle ZHR-iga – sama arvutus nagu [taevavõlvi](Sky-View-et) **PREV alade** puhul. Igal trassi poolel, kus on vähemalt 15 % kogusummast, on pilv **ellips**: keskpunkt punktide kaalutud keskmises, pooltelgedeks 1,5-kordsed ruutjuured nende hajuvuse omaväärtustest, suur telg piki peamist omavektorit. Kui ükski meteoorivool ei panusta (ainult sporaadilised meteoorid), on pilvedeks kaks klassikalist **hot spoti**, joonistatud katkendjoonega. Täielikud võrrandid on arvutusjuhendi 10. peatükis.
+Iga spoti jaoks ehitab programm kahe lokaatori vahelise trassi (sama geomeetria nagu sinu enda trassil, vt [Geomeetria ja sumbumine](Geometry-and-Path-Loss-et)) ja liidab spoti ajal E-kihi punkt-punktilt **iga aktiivse meteoorivoolu peegelpeegelduse panused**, kaalutuna selle ZHR-iga – sama arvutus nagu [taevavõlvi](Sky-View-et) **PREV alade** puhul. Igal trassi poolel, kus on vähemalt 15 % kogusummast, on voo tsoon **ellips**: keskpunkt punktide kaalutud keskmises, pooltelgedeks 1,5-kordsed ruutjuured nende hajuvuse omaväärtustest, suur telg piki peamist omavektorit. Kui ükski meteoorivool ei panusta (ainult sporaadilised meteoorid), on voo tsoon kaks klassikalist **hot spoti**, joonistatud katkendjoonega. Täielikud võrrandid on arvutusjuhendi 10. peatükis.
 
 ## Juhtnupud
 
@@ -40,5 +40,5 @@ Iga spoti jaoks ehitab programm kahe lokaatori vahelise trassi (sama geomeetria 
 |---|---|
 | **Kaardi raadius** | 600–3500 km sinu jaamast. |
 | **Näidatavad spotid** | Viimased 15 või 30 minutit, viimane tund, viimased 3 tundi, viimased 24 tundi. |
-| **Tabel** | Kaardil olevad sided, uusimad eespool, sagedusala värvis; *Pilv* annab peegelduste osa põhipoolel või *sporaadilised*. |
-| **Klõps** | Trassil või tabeli real: side tõstetakse esile ja kast näitab pilve keskpunkti lokaatorit, selle osa, suurust ja telge. |
+| **Tabel** | Kaardil olevad sided, uusimad eespool, sagedusala värvis; *% voog* annab peegelduste osa põhipoolel või *sporaadilised*. |
+| **Klõps** | Trassil või tabeli real: side tõstetakse esile ja kast näitab voo tsoon keskpunkti lokaatorit, selle osa, suurust ja telge. |

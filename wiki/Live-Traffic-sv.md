@@ -12,7 +12,7 @@ En **azimutal ekvidistant karta** centrerad på din station (avstånd från mitt
 
 - **sträckan** mellan de två stationerna, i bandets färg: 28 MHz brun, 50 MHz grön, 70 MHz cyan, 144 MHz orange, 222 MHz rosa, 432 MHz violett;
 - de två **stationerna** i sträckans ändar;
-- **molnet**: där de mest sannolika meteorspåren för den sträckan och den tidpunkten är koncentrerade.
+- **svärmzon**: där de mest sannolika meteorspåren för den sträckan och den tidpunkten är koncentrerade.
 
 Spots med en station **utanför kartan** kasseras. En spot som **just har kommit in** (högst 3 minuter gammal) **blinkar i en minut**, så att ny aktivitet syns med en gång.
 
@@ -20,19 +20,19 @@ Visa vem som lyssnar: trianglar i bandets färg markerar stationer som enligt PS
 
 Även de aktiva monitorerna på PSKReporter-kartan: tomma trianglar för stationer som syns på kartan på pskreporter.info i MSK144, FSK441, PSK2K eller JTMS men ännu inte har tagit emot någon spot (MQTT skickar bara stationer som tar emot något). YA-MS frågar PSKReporters söktjänst en gång var 5:e minut för alla trafiksätt, som tjänstens regler kräver; en monitor stannar på kartan minst 11 minuter. Ett klick på triangeln visar anropssignal, lokator, avkodningsprogram och tiden då monitorn var aktiv. På från början.
 
-FT8 över 1100 km utan parallella sträckor: en FT8-spot (från PSKReporter MQTT, klustren eller WSJT-X via UDP) mellan stationer mer än 1100 km ifrån varandra som inte har några parallella sträckor under 3 minuter före och efter (samma band, mittpunkt inom 300 km, riktning inom 15°, ett annat stationspar) ritas ljusgrön och dess rad i tabellen nere till höger blinkar alltid. Sporadiskt E och tropo ger många närliggande, parallella sträckor; en ensam spot kan vara ett meteorspår. Därför tar YA-MS också emot FT8-spotar från MQTT på 6 m, 4 m, 2 m, 1,25 m och 70 cm (inte 10 m, för många). Dessa spotar hamnar inte i MS-arkivet. På från början.
+FT8 över 1100 km utan parallella sträckor: en FT8-spot (från PSKReporter MQTT, klustren eller WSJT-X via UDP) mellan stationer mer än 1100 km ifrån varandra som inte har några parallella sträckor under 3 minuter före och efter (samma band, mittpunkt inom 300 km, riktning inom 15°, ett annat stationspar) ritas ljusgrön och dess rad i tabellen nere till höger blinkar alltid. Sporadiskt E och tropo ger många närliggande, parallella sträckor; en ensam spot kan vara ett meteorspår. Därför tar YA-MS också emot FT8-spotar från MQTT på 6 m, 4 m, 2 m, 1,25 m och 70 cm (aldrig 28 MHz, i inget fall). Dessa spotar hamnar inte i MS-arkivet. På från början.
 
 WSJT-X-spotar via UDP som gäller din station (avkodningen innehåller din anropssignal: den som anropar dig eller svarar dig) ritas med en streckad linje som alltid blinkar, i alla trafiksätt och på alla avstånd.
 
 Utbyte mellan YA-MS-användare: när en annan YA-MS-användare avkodar ett meddelande till din station via UDP (i MSK144, FSK441, PSK2K eller JTMS, eller i FT8 över 1100 km) skickar hans YA-MS det krypterat till dig via tre öppna MQTT-mäklare (HiveMQ, Mosquitto, EMQX); du ser det som en violett streckad linje som alltid blinkar och som en rad i UDP-konsolen. Bara du kan läsa det (ECDH P-256-nycklar, AES-256 och HMAC-SHA256). FT8-spotar visas bara om de saknar parallella sträckor inom 3 minuter. På från början; yams_scambio=0 i data/config.ini stänger av det.
 
-Kartan visar anropssignalerna för båda stationerna i varje spott, en gång per station. Projektionen kan vara azimutal (centrerad på din station) eller Mercator. Verktygstipset på kolumnen Moln förklarar vad den betyder.
+Kartan visar anropssignalerna för båda stationerna i varje spott, en gång per station. Projektionen kan vara azimutal (centrerad på din station) eller Mercator. Verktygstipset på kolumnen svärmzon förklarar vad den betyder.
 
 Spottar från alla band visas, även från band som inte valts i Datainsamling (de sparas inte). CW-spottar och spottar mellan för närliggande stationer visas inte, om de kastas i Datainsamling.
 
-## Hur molnet beräknas
+## Hur svärmzon beräknas
 
-För varje spot bygger programmet sträckan mellan de två lokatorerna (samma geometri som för din egen sträcka, se [Geometri och dämpning](Geometry-and-Path-Loss-sv)) och summerar, vid tidpunkten för spoten, punkt för punkt i E-skiktet **spegelreflexionsbidragen från varje aktiv svärm**, viktade med dess ZHR – samma beräkning som för **PREV-zonerna** i [himlavalvet](Sky-View-sv). För varje sida av sträckan som har minst 15 % av totalen är molnet en **ellips**: mittpunkt i punkternas viktade medelvärde, halvaxlar 1,5 gånger kvadratrötterna ur egenvärdena för deras spridning, storaxel längs den huvudsakliga egenvektorn. När ingen svärm bidrar (endast sporadiska meteorer) är molnen de två klassiska **hot spots**, ritade streckade. De fullständiga ekvationerna finns i kapitel 10 i beräkningshandboken.
+För varje spot bygger programmet sträckan mellan de två lokatorerna (samma geometri som för din egen sträcka, se [Geometri och dämpning](Geometry-and-Path-Loss-sv)) och summerar, vid tidpunkten för spoten, punkt för punkt i E-skiktet **spegelreflexionsbidragen från varje aktiv svärm**, viktade med dess ZHR – samma beräkning som för **PREV-zonerna** i [himlavalvet](Sky-View-sv). För varje sida av sträckan som har minst 15 % av totalen är svärmzon en **ellips**: mittpunkt i punkternas viktade medelvärde, halvaxlar 1,5 gånger kvadratrötterna ur egenvärdena för deras spridning, storaxel längs den huvudsakliga egenvektorn. När ingen svärm bidrar (endast sporadiska meteorer) är svärmzon de två klassiska **hot spots**, ritade streckade. De fullständiga ekvationerna finns i kapitel 10 i beräkningshandboken.
 
 ## Reglage
 
@@ -40,5 +40,5 @@ För varje spot bygger programmet sträckan mellan de två lokatorerna (samma ge
 |---|---|
 | **Kartradie** | 600–3500 km från din station. |
 | **Spots att visa** | Senaste 15 eller 30 minuterna, senaste timmen, senaste 3 timmarna, senaste 24 timmarna. |
-| **Tabell** | Förbindelserna på kartan, nyaste först, i bandets färg; *Moln* anger andelen reflexer på huvudsidan, eller *sporadiska*. |
-| **Klick** | På en sträcka eller en tabellrad: förbindelsen markeras och rutan visar lokatorn för molnets mittpunkt, dess andel, storlek och axel. |
+| **Tabell** | Förbindelserna på kartan, nyaste först, i bandets färg; *% svärm* anger andelen reflexer på huvudsidan, eller *sporadiska*. |
+| **Klick** | På en sträcka eller en tabellrad: förbindelsen markeras och rutan visar lokatorn för svärmzons mittpunkt, dess andel, storlek och axel. |

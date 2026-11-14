@@ -12,7 +12,7 @@
 
 - **trasu** mezi oběma stanicemi v barvě jejího pásma: 28 MHz hnědá, 50 MHz zelená, 70 MHz azurová, 144 MHz oranžová, 222 MHz růžová, 432 MHz fialová;
 - obě **stanice** na koncích trasy;
-- **oblak**: kde se soustřeďují nejpravděpodobnější meteorické stopy pro danou trasu a daný čas.
+- **zóna roje**: kde se soustřeďují nejpravděpodobnější meteorické stopy pro danou trasu a daný čas.
 
 Spoty se stanicí **mimo mapu** se zahazují. Spot, který **právě přišel** (ne starší než 3 minuty), **bliká po dobu jedné minuty**, takže nová aktivita je vidět na první pohled.
 
@@ -20,7 +20,7 @@ Ukázat, kdo poslouchá: trojúhelníky v barvě pásma označují stanice, kter
 
 Také aktivní monitory z mapy PSKReporter: prázdné trojúhelníky pro stanice, které jsou na mapě pskreporter.info v MSK144, FSK441, PSK2K nebo JTMS, ale ještě nepřijaly žádný spot (MQTT posílá jen stanice, které něco přijímají). YA-MS se dotazuje vyhledávací služby PSKReporter jednou za 5 minut pro všechny druhy provozu, jak žádají pravidla služby; monitor zůstává na mapě nejméně 11 minut. Klepnutí na trojúhelník ukáže značku, lokátor, dekódovací program a čas, kdy byl monitor aktivní. Ve výchozím stavu zapnuto.
 
-FT8 nad 1100 km bez souběžných tras: spot FT8 (z PSKReporter MQTT, z clusterů nebo z WSJT-X přes UDP) mezi stanicemi vzdálenými více než 1100 km, který 3 minuty před a po nemá souběžné trasy (stejné pásmo, střed do 300 km, směr do 15°, jiná dvojice stanic), se kreslí světle zeleně a jeho řádek v tabulce vpravo dole stále bliká. Sporadická E a tropo dávají mnoho blízkých souběžných tras; osamocený spot může být meteorická stopa. Proto YA-MS přijímá z MQTT i spoty FT8 z pásem 6 m, 4 m, 2 m, 1,25 m a 70 cm (ne z 10 m, je jich příliš mnoho). Tyto spoty se neukládají do archivu MS. Ve výchozím stavu zapnuto.
+FT8 nad 1100 km bez souběžných tras: spot FT8 (z PSKReporter MQTT, z clusterů nebo z WSJT-X přes UDP) mezi stanicemi vzdálenými více než 1100 km, který 3 minuty před a po nemá souběžné trasy (stejné pásmo, střed do 300 km, směr do 15°, jiná dvojice stanic), se kreslí světle zeleně a jeho řádek v tabulce vpravo dole stále bliká. Sporadická E a tropo dávají mnoho blízkých souběžných tras; osamocený spot může být meteorická stopa. Proto YA-MS přijímá z MQTT i spoty FT8 z pásem 6 m, 4 m, 2 m, 1,25 m a 70 cm (nikdy 28 MHz, v žádném případě). Tyto spoty se neukládají do archivu MS. Ve výchozím stavu zapnuto.
 
 Spoty WSJT-X přes UDP, které se týkají vaší stanice (dekódování obsahuje vaši značku: kdo vás volá nebo vám odpovídá), se kreslí stále blikající přerušovanou čarou, v jakémkoli druhu provozu a na jakoukoli vzdálenost.
 
@@ -30,9 +30,9 @@ Na mapě se píší značky obou stanic každého spotu, jednou pro každou stan
 
 Zobrazují se spoty všech pásem, i těch, která nejsou vybrána ve Sběru dat (ty se neukládají). Spoty CW a spoty mezi příliš blízkými stanicemi se nezobrazují, pokud se ve Sběru dat zahazují.
 
-## Jak se počítá oblak
+## Jak se počítá zóna roje
 
-Pro každý spot program sestaví trasu mezi oběma lokátory (stejná geometrie jako pro vaši vlastní trasu, viz [Geometrie a útlum](Geometry-and-Path-Loss-cs)) a v čase spotu sečte bod po bodu vrstvy E **příspěvky zrcadlového odrazu všech aktivních rojů**, vážené jejich ZHR – stejný výpočet jako u **zón PREV** na [nebeské klenbě](Sky-View-cs). Pro každou stranu trasy, která drží alespoň 15 % celku, je oblak **elipsa**: střed ve váženém průměru bodů, poloosy 1,5násobek odmocnin vlastních čísel jejich rozptylu, hlavní osa podél hlavního vlastního vektoru. Když žádný roj nepřispívá (jen sporadické meteory), jsou oblaky dvěma klasickými **hot spoty**, kreslenými čárkovaně. Úplné rovnice jsou v kapitole 10 manuálu výpočtů.
+Pro každý spot program sestaví trasu mezi oběma lokátory (stejná geometrie jako pro vaši vlastní trasu, viz [Geometrie a útlum](Geometry-and-Path-Loss-cs)) a v čase spotu sečte bod po bodu vrstvy E **příspěvky zrcadlového odrazu všech aktivních rojů**, vážené jejich ZHR – stejný výpočet jako u **zón PREV** na [nebeské klenbě](Sky-View-cs). Pro každou stranu trasy, která drží alespoň 15 % celku, je zóna roje **elipsa**: střed ve váženém průměru bodů, poloosy 1,5násobek odmocnin vlastních čísel jejich rozptylu, hlavní osa podél hlavního vlastního vektoru. Když žádný roj nepřispívá (jen sporadické meteory), jsou zóna roje dvěma klasickými **hot spoty**, kreslenými čárkovaně. Úplné rovnice jsou v kapitole 10 manuálu výpočtů.
 
 ## Ovládací prvky
 
@@ -40,5 +40,5 @@ Pro každý spot program sestaví trasu mezi oběma lokátory (stejná geometrie
 |---|---|
 | **Poloměr mapy** | 600–3500 km od vaší stanice. |
 | **Spoty k zobrazení** | Posledních 15 nebo 30 minut, poslední hodina, poslední 3 hodiny, posledních 24 hodin. |
-| **Tabulka** | Spojení na mapě, nejnovější nahoře, v barvě pásma; *Oblak* udává podíl odrazů na hlavní straně, případně *sporadické*. |
-| **Kliknutí** | Na trasu nebo řádek tabulky: spojení se zvýrazní a rámeček ukáže lokátor středu oblaku, jeho podíl, velikost a osu. |
+| **Tabulka** | Spojení na mapě, nejnovější nahoře, v barvě pásma; *% roje* udává podíl odrazů na hlavní straně, případně *sporadické*. |
+| **Kliknutí** | Na trasu nebo řádek tabulky: spojení se zvýrazní a rámeček ukáže lokátor středu zóna roje, jeho podíl, velikost a osu. |

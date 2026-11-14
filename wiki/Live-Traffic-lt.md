@@ -12,7 +12,7 @@
 
 - **trasą** tarp dviejų stočių jos juostos spalva: 28 MHz ruda, 50 MHz žalia, 70 MHz žydra, 144 MHz oranžinė, 222 MHz rožinė, 432 MHz violetinė;
 - dvi **stotis** trasos galuose;
-- **debesį**: kur susitelkia labiausiai tikėtini tos trasos ir to laiko meteorų pėdsakai.
+- **srauto zona**: kur susitelkia labiausiai tikėtini tos trasos ir to laiko meteorų pėdsakai.
 
 Spotai, kurių viena stotis yra **už žemėlapio ribų**, atmetami. **Ką tik atėjęs** spotas (ne senesnis nei 3 minutės) **mirksi vieną minutę**, todėl nauja veikla iš karto krenta į akis.
 
@@ -20,19 +20,19 @@ Rodyti, kas klausosi: juostos spalvos trikampiai žymi stotis, kurios, pasak PSK
 
 Taip pat aktyvūs PSKReporter žemėlapio monitoriai: tušti trikampiai stotims, kurios matomos pskreporter.info žemėlapyje MSK144, FSK441, PSK2K ar JTMS režimu, bet dar negavo nė vieno spoto (MQTT siunčia tik stotis, kurios ką nors gauna). YA-MS kreipiasi į PSKReporter užklausų paslaugą kartą per 5 minutes dėl visų režimų, kaip reikalauja paslaugos taisyklės; monitorius žemėlapyje lieka bent 11 minučių. Spustelėjus trikampį rodomas šaukinys, lokatorius, dekodavimo programa ir laikas, kai monitorius buvo aktyvus. Įjungta iš pradžių.
 
-FT8 virš 1100 km be lygiagrečių trasų: FT8 spotas (iš PSKReporter MQTT, klasterių ar WSJT-X per UDP) tarp stočių, nutolusių daugiau nei 1100 km, kuris per 3 minutes prieš ir po neturi lygiagrečių trasų (ta pati juosta, vidurio taškas 300 km ribose, kryptis 15° ribose, kita stočių pora), piešiamas šviesiai žaliai, o jo eilutė lentelėje apačioje dešinėje visada mirksi. Sporadinis E ir tropo duoda daug artimų, lygiagrečių trasų; pavienis spotas gali būti meteoro pėdsakas. Todėl YA-MS iš MQTT gauna ir 6 m, 4 m, 2 m, 1,25 m bei 70 cm FT8 spotus (ne 10 m, jų per daug). Šie spotai nepatenka į MS archyvą. Įjungta iš pradžių.
+FT8 virš 1100 km be lygiagrečių trasų: FT8 spotas (iš PSKReporter MQTT, klasterių ar WSJT-X per UDP) tarp stočių, nutolusių daugiau nei 1100 km, kuris per 3 minutes prieš ir po neturi lygiagrečių trasų (ta pati juosta, vidurio taškas 300 km ribose, kryptis 15° ribose, kita stočių pora), piešiamas šviesiai žaliai, o jo eilutė lentelėje apačioje dešinėje visada mirksi. Sporadinis E ir tropo duoda daug artimų, lygiagrečių trasų; pavienis spotas gali būti meteoro pėdsakas. Todėl YA-MS iš MQTT gauna ir 6 m, 4 m, 2 m, 1,25 m bei 70 cm FT8 spotus (niekada 28 MHz). Šie spotai nepatenka į MS archyvą. Įjungta iš pradžių.
 
 WSJT-X spotai per UDP, susiję su jūsų stotimi (dekoduotame tekste yra jūsų šaukinys: kas jus šaukia ar jums atsako), piešiami visada mirksinčia brūkšnine linija, bet kuriuo režimu ir bet kokiu atstumu.
 
 Mainai tarp YA-MS naudotojų: kai kitas YA-MS naudotojas per UDP dekoduoja jūsų stočiai skirtą pranešimą (MSK144, FSK441, PSK2K ar JTMS, arba FT8 virš 1100 km), jo YA-MS siunčia jį jums užšifruotą per tris viešus MQTT tarpininkus (HiveMQ, Mosquitto, EMQX); jį matote kaip visada mirksinčią violetinę brūkšninę liniją ir kaip eilutę UDP konsolėje. Perskaityti galite tik jūs (ECDH P-256 raktai, AES-256 ir HMAC-SHA256). FT8 spotai rodomi tik jei per 3 minutes neturi lygiagrečių trasų. Iš pradžių įjungta; yams_scambio=0 faile data/config.ini išjungia.
 
-Žemėlapyje rašomi abiejų kiekvieno spoto stočių šaukiniai, po vieną kartą kiekvienai stočiai. Projekciją galima pasirinkti: azimutinė (centre tavo stotis) arba Merkatoriaus. Stulpelio Debesis patarimas paaiškina jo reikšmę.
+Žemėlapyje rašomi abiejų kiekvieno spoto stočių šaukiniai, po vieną kartą kiekvienai stočiai. Projekciją galima pasirinkti: azimutinė (centre tavo stotis) arba Merkatoriaus. Stulpelio srauto zona patarimas paaiškina jo reikšmę.
 
 Rodomi visų juostų spotai, taip pat ir juostų, nepasirinktų Duomenų rinkime (jie neišsaugomi). CW spotai ir spotai tarp per arti esančių stočių nerodomi, jei Duomenų rinkime jie atmetami.
 
-## Kaip skaičiuojamas debesis
+## Kaip skaičiuojamas srauto zona
 
-Kiekvienam spotui programa sudaro trasą tarp dviejų lokatorių (ta pati geometrija kaip jūsų trasai, žr. [Geometrija ir slopinimas](Geometry-and-Path-Loss-lt)) ir spoto laiku E sluoksnio taškas po taško susumuoja **kiekvieno aktyvaus srauto veidrodinio atspindžio indėlius**, pasvertus jo ZHR, – tas pats skaičiavimas kaip [dangaus skliauto](Sky-View-lt) **PREV zonų**. Kiekvienoje trasos pusėje, kurioje yra bent 15 % visos sumos, debesis yra **elipsė**: centras – svertiniame taškų vidurkyje, pusašės – 1,5 karto jų išsibarstymo tikrinių verčių kvadratinės šaknys, didžioji ašis – išilgai pagrindinio tikrinio vektoriaus. Kai jokio srauto indėlio nėra (tik sporadiniai meteorai), debesys yra du klasikiniai **hot spot**, piešiami brūkšnine linija. Visos lygtys pateiktos skaičiavimų vadovo 10 skyriuje.
+Kiekvienam spotui programa sudaro trasą tarp dviejų lokatorių (ta pati geometrija kaip jūsų trasai, žr. [Geometrija ir slopinimas](Geometry-and-Path-Loss-lt)) ir spoto laiku E sluoksnio taškas po taško susumuoja **kiekvieno aktyvaus srauto veidrodinio atspindžio indėlius**, pasvertus jo ZHR, – tas pats skaičiavimas kaip [dangaus skliauto](Sky-View-lt) **PREV zonų**. Kiekvienoje trasos pusėje, kurioje yra bent 15 % visos sumos, srauto zona yra **elipsė**: centras – svertiniame taškų vidurkyje, pusašės – 1,5 karto jų išsibarstymo tikrinių verčių kvadratinės šaknys, didžioji ašis – išilgai pagrindinio tikrinio vektoriaus. Kai jokio srauto indėlio nėra (tik sporadiniai meteorai), srauto zona yra du klasikiniai **hot spot**, piešiami brūkšnine linija. Visos lygtys pateiktos skaičiavimų vadovo 10 skyriuje.
 
 ## Valdikliai
 
@@ -40,5 +40,5 @@ Kiekvienam spotui programa sudaro trasą tarp dviejų lokatorių (ta pati geomet
 |---|---|
 | **Žemėlapio spindulys** | 600–3500 km nuo jūsų stoties. |
 | **Rodomi spotai** | Paskutinės 15 arba 30 minučių, paskutinė valanda, paskutinės 3 valandos, paskutinės 24 valandos. |
-| **Lentelė** | Ryšiai žemėlapyje, naujausi viršuje, juostos spalva; *Debesis* rodo atspindžių dalį pagrindinėje pusėje arba *sporadiniai*. |
-| **Spustelėjimas** | Ant trasos arba lentelės eilutės: ryšys paryškinamas, o langelis rodo debesies centro lokatorių, jo dalį, dydį ir ašį. |
+| **Lentelė** | Ryšiai žemėlapyje, naujausi viršuje, juostos spalva; *% srautas* rodo atspindžių dalį pagrindinėje pusėje arba *sporadiniai*. |
+| **Spustelėjimas** | Ant trasos arba lentelės eilutės: ryšys paryškinamas, o langelis rodo srauto zona centro lokatorių, jo dalį, dydį ir ašį. |

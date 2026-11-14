@@ -12,7 +12,7 @@
 
 - **leiðina** milli stöðvanna tveggja, í lit tíðnisviðsins: 28 MHz brún, 50 MHz græn, 70 MHz blágræn, 144 MHz appelsínugul, 222 MHz bleik, 432 MHz fjólublá;
 - **stöðvarnar** tvær við enda leiðarinnar;
-- **skýið**: þar sem líklegustu loftsteinaslóðirnar fyrir þessa leið á þessum tíma safnast saman.
+- **drífusvæði**: þar sem líklegustu loftsteinaslóðirnar fyrir þessa leið á þessum tíma safnast saman.
 
 Spotum þar sem stöð er **utan kortsins** er hent. Spot sem **var að berast** (ekki eldra en 3 mínútur) **blikkar í eina mínútu**, svo ný virkni sést strax.
 
@@ -20,19 +20,19 @@ Sýna hverjir hlusta: þríhyrningar í lit bandsins merkja stöðvar sem samkv�
 
 Einnig virkir hlustendur á korti PSKReporter: tómir þríhyrningar fyrir stöðvar sem birtast á korti pskreporter.info í MSK144, FSK441, PSK2K eða JTMS en hafa ekki enn tekið á móti neinu spotti (MQTT sendir aðeins stöðvar sem taka á móti einhverju). YA-MS spyr fyrirspurnaþjónustu PSKReporter einu sinni á 5 mínútna fresti fyrir alla hætti, eins og reglur þjónustunnar biðja um; hlustandi helst á kortinu í að minnsta kosti 11 mínútur. Smellur á þríhyrninginn sýnir kallmerki, staðsetningu, afkóðunarforrit og tímann sem hlustandinn var virkur. Kveikt sjálfgefið.
 
-FT8 yfir 1100 km án samsíða leiða: FT8-spott (frá PSKReporter MQTT, klösum eða WSJT-X um UDP) milli stöðva sem eru meira en 1100 km hvor frá annarri og hefur engar samsíða leiðir á 3 mínútum fyrir og eftir (sama band, miðpunktur innan 300 km, stefna innan 15°, annað stöðvapar) er teiknað ljósgrænt og lína þess í töflunni neðst til hægri blikkar alltaf. Sporadískt E og tropo gefa margar nálægar, samsíða leiðir; stakt spott getur verið loftsteinaslóð. Þess vegna tekur YA-MS líka við FT8-spottum frá MQTT á 6 m, 4 m, 2 m, 1,25 m og 70 cm (ekki 10 m, of mörg). Þessi spott fara ekki í MS-safnið. Kveikt sjálfgefið.
+FT8 yfir 1100 km án samsíða leiða: FT8-spott (frá PSKReporter MQTT, klösum eða WSJT-X um UDP) milli stöðva sem eru meira en 1100 km hvor frá annarri og hefur engar samsíða leiðir á 3 mínútum fyrir og eftir (sama band, miðpunktur innan 300 km, stefna innan 15°, annað stöðvapar) er teiknað ljósgrænt og lína þess í töflunni neðst til hægri blikkar alltaf. Sporadískt E og tropo gefa margar nálægar, samsíða leiðir; stakt spott getur verið loftsteinaslóð. Þess vegna tekur YA-MS líka við FT8-spottum frá MQTT á 6 m, 4 m, 2 m, 1,25 m og 70 cm (aldrei 28 MHz, í engu tilviki). Þessi spott fara ekki í MS-safnið. Kveikt sjálfgefið.
 
 WSJT-X-spott um UDP sem varða stöðina þína (afkóðunin inniheldur kallmerkið þitt: sá sem kallar á þig eða svarar þér) eru teiknuð með strikalínu sem blikkar alltaf, í öllum háttum og í hvaða fjarlægð sem er.
 
 Skipti milli notenda YA-MS: þegar annar notandi YA-MS afkóðar um UDP skilaboð til stöðvar þinnar (í MSK144, FSK441, PSK2K eða JTMS, eða í FT8 yfir 1100 km) sendir YA-MS hans þér þau dulkóðuð um þrjá opinbera MQTT-miðlara (HiveMQ, Mosquitto, EMQX); þú sérð þau sem fjólubláa strikalínu sem blikkar alltaf og sem línu í UDP-stjórnborðinu. Aðeins þú getur lesið þau (ECDH P-256 lyklar, AES-256 og HMAC-SHA256). FT8-spott birtast aðeins ef þau hafa engar samsíða leiðir innan 3 mínútna. Kveikt sjálfgefið; yams_scambio=0 í data/config.ini slekkur á því.
 
-Kortið sýnir kallmerki beggja stöðva hvers spotts, einu sinni á hverja stöð. Vörpunin getur verið jafnfjarlæg (miðuð á þína stöð) eða Mercator. Ábendingin á dálknum Ský útskýrir merkingu hans.
+Kortið sýnir kallmerki beggja stöðva hvers spotts, einu sinni á hverja stöð. Vörpunin getur verið jafnfjarlæg (miðuð á þína stöð) eða Mercator. Ábendingin á dálknum drífusvæði útdrífusvæði merkingu hans.
 
 Spott allra banda eru sýnd, líka banda sem ekki eru valin í Gagnasöfnun (þau eru ekki vistuð). CW-spott og spott milli stöðva sem eru of nálægt eru ekki sýnd ef þeim er hent í Gagnasöfnun.
 
-## Hvernig skýið er reiknað
+## Hvernig drífusvæði er reiknað
 
-Fyrir hvert spot setur forritið upp leiðina milli locatoranna tveggja (sama rúmfræði og fyrir þína eigin leið, sjá [Rúmfræði og deyfing](Geometry-and-Path-Loss-is)) og leggur saman, á tíma spotsins, punkt fyrir punkt í E-laginu **framlög speglunarendurvarps frá hverri virkri drífu**, vegin með ZHR hennar – sami útreikningur og fyrir **PREV-svæðin** í [himinhvelfingunni](Sky-View-is). Fyrir hvora hlið leiðarinnar sem hefur a.m.k. 15 % af heildinni er skýið **sporbaugur**: miðja í vegnu meðaltali punktanna, hálfásar 1,5 sinnum kvaðratrætur eigingilda dreifingar þeirra, langás eftir aðaleiginvigrinum. Þegar engin drífa leggur neitt til (aðeins stopulir loftsteinar) eru skýin tveir hefðbundnu **heitu blettirnir**, teiknaðir með brotalínu. Jöfnurnar í heild eru í 10. kafla reiknihandbókarinnar.
+Fyrir hvert spot setur forritið upp leiðina milli locatoranna tveggja (sama rúmfræði og fyrir þína eigin leið, sjá [Rúmfræði og deyfing](Geometry-and-Path-Loss-is)) og leggur saman, á tíma spotsins, punkt fyrir punkt í E-laginu **framlög speglunarendurvarps frá hverri virkri drífu**, vegin með ZHR hennar – sami útreikningur og fyrir **PREV-svæðin** í [himinhvelfingunni](Sky-View-is). Fyrir hvora hlið leiðarinnar sem hefur a.m.k. 15 % af heildinni er drífusvæði **sporbaugur**: miðja í vegnu meðaltali punktanna, hálfásar 1,5 sinnum kvaðratrætur eigingilda dreifingar þeirra, langás eftir aðaleiginvigrinum. Þegar engin drífa leggur neitt til (aðeins stopulir loftsteinar) eru drífusvæði tveir hefðbundnu **heitu blettirnir**, teiknaðir með brotalínu. Jöfnurnar í heild eru í 10. kafla reiknihandbókarinnar.
 
 ## Stýringar
 
@@ -40,5 +40,5 @@ Fyrir hvert spot setur forritið upp leiðina milli locatoranna tveggja (sama r�
 |---|---|
 | **Radíus korts** | 600–3500 km frá þinni stöð. |
 | **Spot til að sýna** | Síðustu 15 eða 30 mínútur, síðasta klukkustund, síðustu 3 klukkustundir, síðustu 24 klukkustundir. |
-| **Tafla** | Sambönd á kortinu, nýjustu fyrst, í lit tíðnisviðsins; *Ský* gefur hlutfall endurvarpa á aðalhliðinni, eða *stopulir*. |
-| **Smellur** | Á leið eða línu í töflunni: sambandið er auðkennt og reiturinn sýnir locator miðju skýsins, hlutfall þess, stærð og ás. |
+| **Tafla** | Sambönd á kortinu, nýjustu fyrst, í lit tíðnisviðsins; *% drífa* gefur hlutfall endurvarpa á aðalhliðinni, eða *stopulir*. |
+| **Smellur** | Á leið eða línu í töflunni: sambandið er auðkennt og reiturinn sýnir locator miðju drífusvæði, hlutfall þess, stærð og ás. |

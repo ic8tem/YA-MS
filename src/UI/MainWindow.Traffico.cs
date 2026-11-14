@@ -122,8 +122,16 @@ namespace YAMS
             side.Children.Add(chkFt8);
             lblTrafficCount = new TextBlock { Foreground = Pal.B(Pal.Green), TextWrapping = TextWrapping.Wrap };
             side.Children.Add(lblTrafficCount);
+            // dettagli del contatto o della stazione in ascolto: riquadro in rilievo sopra la mappa, in alto a sinistra,
+            // sotto la didascalia, con l'azimutale e con il Mercatore (richiesta dell'autore, 14/11/2026)
             lblTrafficInfo = new TextBlock { TextWrapping = TextWrapping.Wrap, FontSize = 12.5, Foreground = Pal.B(Pal.Fore) };
-            side.Children.Add(new Border { Background = Pal.B(Pal.Panel2), CornerRadius = new CornerRadius(8), Padding = new Thickness(8, 6), Child = lblTrafficInfo });
+            mapHost.Children.Add(new Border
+            {
+                Background = Pal.B(Pal.Panel2), BorderBrush = Pal.B(Pal.Border), BorderThickness = new Thickness(1),
+                CornerRadius = new CornerRadius(8), Padding = new Thickness(10, 8), Child = lblTrafficInfo, MaxWidth = 330,
+                BoxShadow = new BoxShadows(new BoxShadow { OffsetX = 2, OffsetY = 4, Blur = 14, Color = Pal.Argb(Tema.Scuro ? (byte)170 : (byte)95, 0, 0, 0) }),
+                HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Top, Margin = new Thickness(10, 30, 0, 0)
+            });
 
             tTraffic = MakeTable(new[] { "UTC", "MHz", Lang.T("Stazione"), Lang.T("Corrispondente"), "km", Lang.T("% sciame") }, new double[] { 46, 64, 82, 82, 50, 90 });
             tTraffic.FitWidth = true;

@@ -24,6 +24,8 @@ FT8 na lampas 1100 km na walang kahilerang daan: ang isang FT8 spot (mula sa PSK
 
 Ang mga WSJT-X spot sa UDP na may kinalaman sa iyong istasyon (nasa decode ang iyong callsign: ang tumatawag o sumasagot sa iyo) ay iginuguhit nang may putol-putol na linyang laging kumikislap, sa anumang mode at anumang layo.
 
+Palitan sa pagitan ng mga gumagamit ng YA-MS: kapag na-decode ng ibang gumagamit ng YA-MS sa UDP ang mensaheng para sa iyong istasyon (sa MSK144, FSK441, PSK2K o JTMS, o sa FT8 na lampas 1100 km), ipinapadala ito ng kanyang YA-MS sa iyo nang naka-encrypt sa tatlong pampublikong MQTT broker (HiveMQ, Mosquitto, EMQX); nakikita mo ito bilang lilang putol-putol na linyang laging kumikislap at bilang linya sa UDP console. Ikaw lang ang makakabasa nito (mga susi na ECDH P-256, AES-256 at HMAC-SHA256). Ipinapakita lang ang mga FT8 spot kung walang kahilerang daan sa loob ng 3 minuto. Naka-on mula sa simula; pinapatay ng yams_scambio=0 sa data/config.ini.
+
 Isinusulat sa mapa ang mga callsign ng dalawang istasyon ng bawat spot, isang beses bawat istasyon. Mapipili ang projection: azimuthal (nakasentro sa iyong istasyon) o Mercator. Ipinaliliwanag ng tooltip sa kolumnang Ulap ang kahulugan nito.
 
 Ipinapakita ang mga spot ng lahat ng banda, pati ng mga bandang hindi pinili sa Pagkolekta ng data (hindi ito iniimbak). Hindi ipinapakita ang mga CW spot at ang mga spot sa pagitan ng mga istasyong masyadong malapit, kung itinatapon ang mga ito sa Pagkolekta ng data.

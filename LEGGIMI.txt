@@ -62,6 +62,9 @@ NOVITA' DELLA 1.8.11
     caratteri in nessun'altra fonte, solo nello stesso quadrato di quello ricevuto; non si scrive mai in call3.txt.
   - La mia stazione (locator, quota, banda e Calcola) e' in un riquadro in cima alla colonna destra del Traffico in
     diretta; sopra le linguette restano due righe di comandi (strato E e antenna, ora del calcolo).
+  - Scambio tra gli utenti di YA-MS: un messaggio rivolto alla mia stazione decodificato via UDP da un altro utente
+    (modi MS, FT8 solo oltre 1100 km e senza tratte parallele) arriva cifrato (ECDH P-256, AES-256, HMAC-SHA256) via
+    tre broker MQTT pubblici e si vede con un tratteggio viola. Acceso di partenza; yams_scambio=0 per spegnerlo.
 
 NOVITA' DELLA 1.8.10
   - Raccolta dati: quinta fonte WSJT-X / JTDX / MSHV via UDP, come in LIVETROPOVHF (porta 2237, anche multicast;

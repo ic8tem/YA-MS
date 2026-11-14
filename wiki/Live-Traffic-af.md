@@ -24,6 +24,8 @@ FT8 verder as 1100 km sonder parallelle paaie: 'n FT8-spot (van PSKReporter MQTT
 
 WSJT-X-spots via UDP wat jou stasie raak (die dekodering bevat jou roepsein: wie jou roep of jou antwoord) word geteken met 'n stippellyn wat altyd flikker, in enige modus en op enige afstand.
 
+Uitruil tussen YA-MS-gebruikers: wanneer 'n ander YA-MS-gebruiker via UDP 'n boodskap aan jou stasie dekodeer (in MSK144, FSK441, PSK2K of JTMS, of in FT8 verder as 1100 km), stuur sy YA-MS dit geënkripteer aan jou deur drie openbare MQTT-makelaars (HiveMQ, Mosquitto, EMQX); jy sien dit as 'n pers stippellyn wat altyd flikker en as 'n reël in die UDP-konsole. Net jy kan dit lees (ECDH P-256-sleutels, AES-256 en HMAC-SHA256). FT8-spots word net gewys as hulle binne 3 minute geen parallelle paaie het nie. By verstek aan; yams_scambio=0 in data/config.ini skakel dit af.
+
 Die kaart wys die roepname van albei stasies van elke spot, een keer per stasie. Die projeksie kan azimutaal (gesentreer op jou stasie) of Mercator wees. Die wenk op die kolom Wolk verduidelik die betekenis.
 
 Spots van alle bande word gewys, ook van bande wat nie in Data-insameling gekies is nie (dié word nie gestoor nie). CW-spots en spots tussen stasies wat te naby is, word nie gewys nie as hulle in Data-insameling weggegooi word.

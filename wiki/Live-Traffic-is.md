@@ -24,6 +24,8 @@ FT8 yfir 1100 km án samsíða leiða: FT8-spott (frá PSKReporter MQTT, klösum
 
 WSJT-X-spott um UDP sem varða stöðina þína (afkóðunin inniheldur kallmerkið þitt: sá sem kallar á þig eða svarar þér) eru teiknuð með strikalínu sem blikkar alltaf, í öllum háttum og í hvaða fjarlægð sem er.
 
+Skipti milli notenda YA-MS: þegar annar notandi YA-MS afkóðar um UDP skilaboð til stöðvar þinnar (í MSK144, FSK441, PSK2K eða JTMS, eða í FT8 yfir 1100 km) sendir YA-MS hans þér þau dulkóðuð um þrjá opinbera MQTT-miðlara (HiveMQ, Mosquitto, EMQX); þú sérð þau sem fjólubláa strikalínu sem blikkar alltaf og sem línu í UDP-stjórnborðinu. Aðeins þú getur lesið þau (ECDH P-256 lyklar, AES-256 og HMAC-SHA256). FT8-spott birtast aðeins ef þau hafa engar samsíða leiðir innan 3 mínútna. Kveikt sjálfgefið; yams_scambio=0 í data/config.ini slekkur á því.
+
 Kortið sýnir kallmerki beggja stöðva hvers spotts, einu sinni á hverja stöð. Vörpunin getur verið jafnfjarlæg (miðuð á þína stöð) eða Mercator. Ábendingin á dálknum Ský útskýrir merkingu hans.
 
 Spott allra banda eru sýnd, líka banda sem ekki eru valin í Gagnasöfnun (þau eru ekki vistuð). CW-spott og spott milli stöðva sem eru of nálægt eru ekki sýnd ef þeim er hent í Gagnasöfnun.

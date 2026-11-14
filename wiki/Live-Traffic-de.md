@@ -24,6 +24,8 @@ FT8 über 1100 km ohne parallele Strecken: ein FT8-Spot (aus PSKReporter MQTT, d
 
 WSJT-X-Spots über UDP, die deine Station betreffen (die Dekodierung enthält dein Rufzeichen: wer dich ruft oder dir antwortet), werden mit einer gestrichelten Linie gezeichnet, die immer blinkt, in jeder Betriebsart und auf jede Entfernung.
 
+Austausch zwischen YA-MS-Nutzern: Dekodiert ein anderer YA-MS-Nutzer über UDP eine an deine Station gerichtete Nachricht (in MSK144, FSK441, PSK2K oder JTMS, oder in FT8 über 1100 km), schickt sein YA-MS sie dir verschlüsselt über drei öffentliche MQTT-Broker (HiveMQ, Mosquitto, EMQX); du siehst sie als violette, immer blinkende gestrichelte Linie und als Zeile in der UDP-Konsole. Nur du kannst sie lesen (ECDH-P-256-Schlüssel, AES-256 und HMAC-SHA256). FT8-Spots werden nur gezeigt, wenn sie innerhalb von 3 Minuten keine parallelen Strecken haben. Standardmäßig an; yams_scambio=0 in data/config.ini schaltet es aus.
+
 Die Karte zeigt die Rufzeichen beider Stationen jedes Spots, einmal pro Station. Die Projektion ist wählbar: azimutal (auf deine Station zentriert) oder Mercator. Der Tooltip auf der Spalte Wolke erklärt ihre Bedeutung.
 
 Es werden die Spots aller Bänder angezeigt, auch der in der Datensammlung nicht gewählten (diese werden nicht gespeichert). CW-Spots und Spots zwischen zu nahe liegenden Stationen werden nicht angezeigt, wenn sie in der Datensammlung verworfen werden.

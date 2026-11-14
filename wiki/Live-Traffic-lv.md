@@ -24,6 +24,8 @@ FT8 virs 1100 km bez paralēlām trasēm: FT8 spots (no PSKReporter MQTT, klaste
 
 WSJT-X spoti caur UDP, kas attiecas uz tavu staciju (dekodējumā ir tavs izsaukuma signāls: kas tevi sauc vai tev atbild), tiek zīmēti ar raustītu līniju, kas vienmēr mirgo, jebkurā režīmā un jebkurā attālumā.
 
+Apmaiņa starp YA-MS lietotājiem: kad cits YA-MS lietotājs caur UDP dekodē tavai stacijai adresētu ziņojumu (MSK144, FSK441, PSK2K vai JTMS, vai FT8 virs 1100 km), viņa YA-MS to nosūta tev šifrētu caur trim publiskiem MQTT brokeriem (HiveMQ, Mosquitto, EMQX); tu to redzi kā violetu raustītu līniju, kas vienmēr mirgo, un kā rindu UDP konsolē. To vari izlasīt tikai tu (ECDH P-256 atslēgas, AES-256 un HMAC-SHA256). FT8 spoti tiek rādīti tikai tad, ja 3 minūšu laikā tiem nav paralēlu trašu. Ieslēgts pēc noklusējuma; yams_scambio=0 failā data/config.ini to izslēdz.
+
 Kartē tiek rakstīti abu katra spota staciju izsaukuma signāli, vienreiz katrai stacijai. Projekciju var izvēlēties: azimutālā (centrā tava stacija) vai Merkatora. Kolonnas Mākonis padoms izskaidro tās nozīmi.
 
 Tiek rādīti visu joslu spoti, arī to joslu, kas nav izvēlētas Datu vākšanā (tie netiek saglabāti). CW spoti un spoti starp pārāk tuvām stacijām netiek rādīti, ja Datu vākšanā tie tiek atmesti.

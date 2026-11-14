@@ -24,6 +24,8 @@ FT8 over 1100 km uten parallelle strekninger: en FT8-spot (fra PSKReporter MQTT,
 
 WSJT-X-spotter via UDP som gjelder stasjonen din (dekodingen inneholder kallesignalet ditt: den som kaller deg eller svarer deg) tegnes med en stiplet linje som alltid blinker, i alle moduser og på alle avstander.
 
+Utveksling mellom YA-MS-brukere: når en annen YA-MS-bruker dekoder en melding til stasjonen din via UDP (i MSK144, FSK441, PSK2K eller JTMS, eller i FT8 over 1100 km), sender hans YA-MS den kryptert til deg via tre offentlige MQTT-meglere (HiveMQ, Mosquitto, EMQX); du ser den som en fiolett stiplet linje som alltid blinker og som en linje i UDP-konsollen. Bare du kan lese den (ECDH P-256-nøkler, AES-256 og HMAC-SHA256). FT8-spotter vises bare hvis de ikke har parallelle strekninger innen 3 minutter. På fra start; yams_scambio=0 i data/config.ini slår det av.
+
 Kartet viser kallesignalene til begge stasjonene i hver spot, én gang per stasjon. Projeksjonen kan være asimutal (sentrert på din stasjon) eller Mercator. Verktøytipset på kolonnen Sky forklarer hva den betyr.
 
 Spotter fra alle bånd vises, også fra bånd som ikke er valgt i Datainnsamling (de lagres ikke). CW-spotter og spotter mellom stasjoner som ligger for nær hverandre vises ikke, hvis de forkastes i Datainnsamling.

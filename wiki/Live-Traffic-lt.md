@@ -24,6 +24,8 @@ FT8 virš 1100 km be lygiagrečių trasų: FT8 spotas (iš PSKReporter MQTT, kla
 
 WSJT-X spotai per UDP, susiję su jūsų stotimi (dekoduotame tekste yra jūsų šaukinys: kas jus šaukia ar jums atsako), piešiami visada mirksinčia brūkšnine linija, bet kuriuo režimu ir bet kokiu atstumu.
 
+Mainai tarp YA-MS naudotojų: kai kitas YA-MS naudotojas per UDP dekoduoja jūsų stočiai skirtą pranešimą (MSK144, FSK441, PSK2K ar JTMS, arba FT8 virš 1100 km), jo YA-MS siunčia jį jums užšifruotą per tris viešus MQTT tarpininkus (HiveMQ, Mosquitto, EMQX); jį matote kaip visada mirksinčią violetinę brūkšninę liniją ir kaip eilutę UDP konsolėje. Perskaityti galite tik jūs (ECDH P-256 raktai, AES-256 ir HMAC-SHA256). FT8 spotai rodomi tik jei per 3 minutes neturi lygiagrečių trasų. Iš pradžių įjungta; yams_scambio=0 faile data/config.ini išjungia.
+
 Žemėlapyje rašomi abiejų kiekvieno spoto stočių šaukiniai, po vieną kartą kiekvienai stočiai. Projekciją galima pasirinkti: azimutinė (centre tavo stotis) arba Merkatoriaus. Stulpelio Debesis patarimas paaiškina jo reikšmę.
 
 Rodomi visų juostų spotai, taip pat ir juostų, nepasirinktų Duomenų rinkime (jie neišsaugomi). CW spotai ir spotai tarp per arti esančių stočių nerodomi, jei Duomenų rinkime jie atmetami.

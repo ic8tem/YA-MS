@@ -24,6 +24,8 @@ FT8 a más de 1100 km sin trayectos paralelos: un spot FT8 (de PSKReporter MQTT,
 
 Los spots de WSJT-X vía UDP que conciernen a su estación (la decodificación contiene su indicativo: quien le llama o le responde) se dibujan con una línea discontinua que parpadea siempre, en cualquier modo y a cualquier distancia.
 
+Intercambio entre usuarios de YA-MS: cuando otro usuario de YA-MS decodifica por UDP un mensaje dirigido a su estación (en MSK144, FSK441, PSK2K o JTMS, o en FT8 a más de 1100 km), su YA-MS se lo envía cifrado a través de tres brokers MQTT públicos (HiveMQ, Mosquitto, EMQX); lo ve como una línea discontinua violeta que parpadea siempre y como una línea en la consola UDP. Solo usted puede leerlo (claves ECDH P-256, AES-256 y HMAC-SHA256). Los spots FT8 solo se muestran si no tienen trayectos paralelos en 3 minutos. Activado de serie; yams_scambio=0 en data/config.ini lo apaga.
+
 El mapa muestra los indicativos de las dos estaciones de cada spot, una sola vez por estación. La proyección puede ser azimutal (centrada en tu estación) o Mercator. La ayuda emergente de la columna Nube explica su significado.
 
 Se muestran los spots de todas las bandas, también de las no elegidas en Recogida de datos (estos no se guardan). Los spots CW y los de estaciones demasiado cercanas no se muestran si se descartan en Recogida de datos.

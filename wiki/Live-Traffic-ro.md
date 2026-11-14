@@ -24,6 +24,8 @@ FT8 peste 1100 km fără trasee paralele: un spot FT8 (din PSKReporter MQTT, din
 
 Spoturile WSJT-X prin UDP care privesc stația dvs. (decodarea conține indicativul dvs.: cine vă cheamă sau vă răspunde) se desenează cu o linie întreruptă care clipește mereu, în orice mod și la orice distanță.
 
+Schimb între utilizatorii YA-MS: când un alt utilizator YA-MS decodează prin UDP un mesaj adresat stației dvs. (în MSK144, FSK441, PSK2K sau JTMS, ori în FT8 peste 1100 km), YA-MS-ul lui vi-l trimite criptat prin trei brokeri MQTT publici (HiveMQ, Mosquitto, EMQX); îl vedeți ca linie întreruptă violet care clipește mereu și ca rând în consola UDP. Doar dvs. îl puteți citi (chei ECDH P-256, AES-256 și HMAC-SHA256). Spoturile FT8 apar doar dacă nu au trasee paralele în 3 minute. Activat implicit; yams_scambio=0 în data/config.ini îl oprește.
+
 Harta scrie indicativele ambelor stații ale fiecărui spot, o singură dată pe stație. Proiecția se alege între azimutală (centrată pe stația ta) și Mercator. Indiciul de pe coloana Nor îi explică semnificația.
 
 Se văd spoturile tuturor benzilor, inclusiv ale celor nealese în Colectarea datelor (acestea nu se memorează). Spoturile CW și cele între stații prea apropiate nu se văd, dacă sunt eliminate în Colectarea datelor.

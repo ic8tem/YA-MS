@@ -24,6 +24,8 @@ FT8 nad 1100 km bez souběžných tras: spot FT8 (z PSKReporter MQTT, z cluster�
 
 Spoty WSJT-X přes UDP, které se týkají vaší stanice (dekódování obsahuje vaši značku: kdo vás volá nebo vám odpovídá), se kreslí stále blikající přerušovanou čarou, v jakémkoli druhu provozu a na jakoukoli vzdálenost.
 
+Výměna mezi uživateli YA-MS: když jiný uživatel YA-MS dekóduje přes UDP zprávu určenou vaší stanici (v MSK144, FSK441, PSK2K nebo JTMS, nebo v FT8 nad 1100 km), jeho YA-MS vám ji pošle zašifrovanou přes tři veřejné MQTT brokery (HiveMQ, Mosquitto, EMQX); uvidíte ji jako fialovou přerušovanou čáru, která stále bliká, a jako řádek v konzoli UDP. Přečíst ji můžete jen vy (klíče ECDH P-256, AES-256 a HMAC-SHA256). Spoty FT8 se ukazují, jen pokud během 3 minut nemají souběžné trasy. Ve výchozím stavu zapnuto; yams_scambio=0 v data/config.ini vypne.
+
 Na mapě se píší značky obou stanic každého spotu, jednou pro každou stanici. Projekci lze zvolit: azimutální (uprostřed tvoje stanice) nebo Mercatorova. Bublina na sloupci Mrak vysvětluje jeho význam.
 
 Zobrazují se spoty všech pásem, i těch, která nejsou vybrána ve Sběru dat (ty se neukládají). Spoty CW a spoty mezi příliš blízkými stanicemi se nezobrazují, pokud se ve Sběru dat zahazují.

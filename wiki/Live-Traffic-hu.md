@@ -24,6 +24,8 @@ FT8 1100 km felett párhuzamos útvonal nélkül: egy FT8 spot (a PSKReporter MQ
 
 Az UDP-n érkező WSJT-X spotok, amelyek az állomásodat érintik (a dekódolásban szerepel a hívójeled: aki hív vagy válaszol neked), mindig villogó szaggatott vonallal rajzolódnak, bármely üzemmódban és bármilyen távolságon.
 
+Csere a YA-MS felhasználói között: ha egy másik YA-MS-felhasználó UDP-n dekódol egy az állomásodnak szóló üzenetet (MSK144, FSK441, PSK2K vagy JTMS módban, vagy FT8-ban 1100 km felett), az ő YA-MS-e titkosítva elküldi neked három nyilvános MQTT-brókeren át (HiveMQ, Mosquitto, EMQX); mindig villogó lila szaggatott vonalként és egy sorként látod az UDP konzolban. Csak te olvashatod (ECDH P-256 kulcsok, AES-256 és HMAC-SHA256). Az FT8 spotok csak akkor látszanak, ha 3 percen belül nincs párhuzamos útvonaluk. Alapból bekapcsolva; a data/config.ini yams_scambio=0 sora kikapcsolja.
+
 A térkép minden spot mindkét állomásának hívójelét kiírja, állomásonként egyszer. A vetület választható: azimutális (középen az állomásod) vagy Mercator. A Felhő oszlop buboréksúgója elmagyarázza a jelentését.
 
 Minden sáv spotjai látszanak, azoké is, amelyeket az Adatgyűjtésben nem választottál ki (ezek nem tárolódnak). A CW spotok és a túl közeli állomások közötti spotok nem látszanak, ha az Adatgyűjtésben elvetésre kerülnek.

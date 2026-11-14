@@ -24,6 +24,8 @@ FT8 lebih dari 1100 km tanpa lintasan paralel: spot FT8 (dari PSKReporter MQTT, 
 
 Spot WSJT-X lewat UDP yang menyangkut stasiun Anda (dekode memuat callsign Anda: yang memanggil atau menjawab Anda) digambar dengan garis putus-putus yang selalu berkedip, dalam mode apa pun dan pada jarak berapa pun.
 
+Pertukaran antarpengguna YA-MS: ketika pengguna YA-MS lain mendekode lewat UDP pesan yang ditujukan ke stasiun Anda (dalam MSK144, FSK441, PSK2K atau JTMS, atau FT8 lebih dari 1100 km), YA-MS-nya mengirimkannya kepada Anda secara terenkripsi melalui tiga broker MQTT publik (HiveMQ, Mosquitto, EMQX); Anda melihatnya sebagai garis putus-putus ungu yang selalu berkedip dan sebagai baris di konsol UDP. Hanya Anda yang dapat membacanya (kunci ECDH P-256, AES-256, dan HMAC-SHA256). Spot FT8 hanya ditampilkan jika tidak punya lintasan paralel dalam 3 menit. Aktif sejak awal; yams_scambio=0 di data/config.ini mematikannya.
+
 Peta menuliskan callsign kedua stasiun pada setiap spot, sekali per stasiun. Proyeksi bisa dipilih: azimutal (berpusat di stasiunmu) atau Mercator. Tooltip pada kolom Awan menjelaskan artinya.
 
 Spot dari semua pita ditampilkan, termasuk pita yang tidak dipilih di Pengumpulan data (spot ini tidak disimpan). Spot CW dan spot antarstasiun yang terlalu dekat tidak ditampilkan, jika dibuang di Pengumpulan data.

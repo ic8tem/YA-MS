@@ -26,7 +26,7 @@ P|চালু হওয়ার সময় কয়েক সেকেন�
 H2|2.3 data ফোল্ডার
 P|সব সেটিং ও সব তথ্য প্রোগ্রামের পাশে একটিমাত্র data ফোল্ডারে থাকে: কোনো AppData নেই, কোনো সিস্টেম ফোল্ডার নেই। YA-MS অন্য কম্পিউটারে সরাতে হলে প্রোগ্রামের ফোল্ডারটি তার data ফোল্ডারসহ কপি করলেই যথেষ্ট। ফোল্ডারের বিষয়বস্তু অধ্যায় 13-এ বর্ণনা করা হয়েছে।
 H2|2.4 স্বয়ংক্রিয় আপডেট
-P|Dalla versione 1.8.12 gli aggiornamenti sono automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'è una versione nuova, la scarica, la installa e si riavvia da solo senza chiedere nulla (lo dice solo la barra di stato). Anche i file mancanti si riscaricano senza chiedere. La finestra descritta qui sotto compare solo premendo "Aggiornamenti" oppure se scrivi aggiornamenti_automatici=0 nel file data/config.ini.
+P|সংস্করণ 1.8.6 থেকে আপডেট স্বয়ংক্রিয় ও নীরব: চালুর সময় এবং তারপর প্রতি 30 মিনিটে YA-MS GitHub দেখে এবং নতুন সংস্করণ থাকলে তা ডাউনলোড ও ইনস্টল করে কিছু না জিজ্ঞেস করে নিজেই আবার চালু হয় (শুধু স্ট্যাটাস বার জানায়)। অনুপস্থিত ফাইলও জিজ্ঞেস না করে আবার ডাউনলোড হয়। নিচে বর্ণিত উইন্ডোটি শুধু "আপডেট" চাপলে বা data/config.ini ফাইলে aggiornamenti_automatici=0 লিখলে দেখা যায়।
 P|সংস্করণ 1.8.0 থেকে YA-MS চালু হওয়ার সময় এবং দিনে সর্বোচ্চ একবার নিজে থেকেই GitHub-এ দেখে নতুন সংস্করণ বের হয়েছে কি না। থাকলে "আপডেট পাওয়া যাচ্ছে" উইন্ডো নতুন বিষয়গুলো এবং তিনটি বোতামসহ দেখা দেয়:
 LI|এখনই আপডেট করুন: আপনার সিস্টেমের উপযোগী প্যাকেজ ডাউনলোড করে, প্রোগ্রামের ফাইলগুলো প্রতিস্থাপন করে, data ফোল্ডার রেখে দেয় এবং YA-MS আবার চালু করে। data ফোল্ডারে থাকা প্রোগ্রামের যে ফাইলগুলো নতুন সংস্করণ পরিবর্তন করে সেগুলো আগে data/backup/v<পুরোনো সংস্করণ>-এ কপি করা হয়; আপনার ফাইলগুলো (সেটিং, আর্কাইভ, স্পট, ADIF) স্পর্শ করা হয় না।
 LI|পরে: উইন্ডোটি বন্ধ করে; পরের দিন আবার পরীক্ষা করা হয়।

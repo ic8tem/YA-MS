@@ -26,7 +26,7 @@ P|בעת ההפעלה מופיע לכמה שניות מסך הפתיחה עם מ
 H2|2.3 תיקיית data
 P|כל ההגדרות וכל הנתונים נמצאים בתיקיית data אחת לצד התוכנה: בלי AppData ובלי תיקיות מערכת. כדי להעביר את YA-MS למחשב אחר מספיק להעתיק את תיקיית התוכנה יחד עם תיקיית ה-data שלה. תוכן התיקייה מתואר בפרק 13.
 H2|2.4 עדכונים אוטומטיים
-P|Dalla versione 1.8.12 gli aggiornamenti sono automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'è una versione nuova, la scarica, la installa e si riavvia da solo senza chiedere nulla (lo dice solo la barra di stato). Anche i file mancanti si riscaricano senza chiedere. La finestra descritta qui sotto compare solo premendo "Aggiornamenti" oppure se scrivi aggiornamenti_automatici=0 nel file data/config.ini.
+P|מגרסה 1.8.6 העדכונים אוטומטיים ושקטים: בהפעלה ולאחר מכן כל 30 דקות YA-MS בודק ב-GitHub, ואם יש גרסה חדשה הוא מוריד אותה, מתקין אותה ומפעיל את עצמו מחדש בלי לשאול דבר (רק שורת המצב מציינת זאת). גם קבצים חסרים מורדים מחדש בלי לשאול. החלון המתואר להלן מופיע רק בלחיצה על "עדכונים" או אם כותבים aggiornamenti_automatici=0 בקובץ data/config.ini.
 P|החל מגרסה 1.8.0, YA-MS בודק בעצמו ב-GitHub, בעת ההפעלה ולכל היותר פעם ביום, אם יצאה גרסה חדשה. אם כן, מופיע החלון "יש עדכון זמין" עם החידושים ושלושה לחצנים:
 LI|עדכן עכשיו: מוריד את החבילה המתאימה למערכת שלך, מחליף את קובצי התוכנה, שומר את תיקיית data ומפעיל מחדש את YA-MS. קובצי התוכנה שבתיקיית data שהגרסה החדשה משנה מועתקים קודם אל data/backup/v<גרסה ישנה>; הקבצים שלך (הגדרות, ארכיונים, ספוטים, ADIF) אינם משתנים.
 LI|מאוחר יותר: סוגר את החלון; הבדיקה חוזרת למחרת.

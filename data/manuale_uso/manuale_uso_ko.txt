@@ -26,7 +26,7 @@ P|실행하면 ESO의 VLT 위로 떨어지는 페르세우스자리 유성우 �
 H2|2.3 data 폴더
 P|모든 설정과 데이터는 프로그램 옆에 있는 하나의 data 폴더에 저장됩니다. AppData도 시스템 폴더도 사용하지 않습니다. YA-MS를 다른 컴퓨터로 옮기려면 프로그램 폴더를 data 폴더와 함께 복사하기만 하면 됩니다. 폴더의 내용은 13장에서 설명합니다.
 H2|2.4 자동 업데이트
-P|Dalla versione 1.8.12 gli aggiornamenti sono automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'è una versione nuova, la scarica, la installa e si riavvia da solo senza chiedere nulla (lo dice solo la barra di stato). Anche i file mancanti si riscaricano senza chiedere. La finestra descritta qui sotto compare solo premendo "Aggiornamenti" oppure se scrivi aggiornamenti_automatici=0 nel file data/config.ini.
+P|버전 1.8.6부터 업데이트는 자동이며 조용히 진행됩니다. 시작할 때와 그 후 30분마다 YA-MS가 GitHub를 확인하고, 새 버전이 있으면 내려받아 설치한 뒤 아무것도 묻지 않고 스스로 다시 시작합니다(상태 표시줄에만 표시됩니다). 빠진 파일도 묻지 않고 다시 내려받습니다. 아래에 설명된 창은 "업데이트"를 누르거나 data/config.ini 파일에 aggiornamenti_automatici=0을 쓸 때만 나타납니다.
 P|버전 1.8.0부터 YA-MS는 실행할 때(하루에 최대 한 번) 새 버전이 나왔는지 GitHub에서 스스로 확인합니다. 새 버전이 있으면 변경 사항과 세 개의 버튼이 있는 "업데이트 있음" 창이 나타납니다.
 LI|지금 업데이트: 사용하는 시스템에 맞는 패키지를 다운로드하고, 프로그램 파일을 교체하고, data 폴더는 그대로 둔 채 YA-MS를 다시 시작합니다. data 폴더 안의 프로그램 파일 중 새 버전에서 바뀌는 파일은 먼저 data/backup/v<이전 버전>에 복사됩니다. 사용자 파일(설정, 기록, 스폿, ADIF)은 건드리지 않습니다.
 LI|나중에: 창을 닫습니다. 확인은 다음 날 다시 이루어집니다.

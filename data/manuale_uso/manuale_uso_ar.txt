@@ -26,7 +26,7 @@ P|عند التشغيل تظهر لبضع ثوانٍ الشاشة التي تع�
 H2|2.3 مجلد data
 P|جميع الإعدادات وجميع البيانات موجودة في مجلد data واحد بجانب البرنامج: لا AppData ولا مجلدات نظام. لنقل YA-MS إلى حاسوب آخر يكفي نسخ مجلد البرنامج مع مجلد data الخاص به. محتوى المجلد موصوف في الفصل 13.
 H2|2.4 التحديثات التلقائية
-P|Dalla versione 1.8.12 gli aggiornamenti sono automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'è una versione nuova, la scarica, la installa e si riavvia da solo senza chiedere nulla (lo dice solo la barra di stato). Anche i file mancanti si riscaricano senza chiedere. La finestra descritta qui sotto compare solo premendo "Aggiornamenti" oppure se scrivi aggiornamenti_automatici=0 nel file data/config.ini.
+P|منذ الإصدار 1.8.6 أصبحت التحديثات تلقائية وصامتة: عند التشغيل ثم كل 30 دقيقة يفحص YA-MS موقع GitHub، وإذا وُجد إصدار جديد ينزّله ويثبّته ويعيد تشغيل نفسه دون أن يسأل شيئاً (يذكر ذلك شريط الحالة فقط). كما تُنزَّل الملفات الناقصة من جديد دون سؤال. لا تظهر النافذة الموصوفة أدناه إلا عند الضغط على "التحديثات" أو إذا كتبت aggiornamenti_automatici=0 في الملف data/config.ini.
 P|ابتداءً من الإصدار 1.8.0 يتحقق YA-MS بنفسه على GitHub، عند التشغيل ومرة واحدة في اليوم على الأكثر، من صدور إصدار جديد. إن وُجد، تظهر نافذة "يتوفر تحديث" مع المستجدات وثلاثة أزرار:
 LI|حدّث الآن: ينزّل الحزمة المناسبة لنظامك، ويستبدل ملفات البرنامج، ويحتفظ بمجلد data ويعيد تشغيل YA-MS. ملفات البرنامج الموجودة في مجلد data التي يغيّرها الإصدار الجديد تُنسخ أولاً إلى data/backup/v<الإصدار القديم>؛ أما ملفاتك (الإعدادات، الأرشيفات، البلاغات spot، ملفات ADIF) فلا تُمسّ.
 LI|لاحقًا: يغلق النافذة؛ ويتكرر التحقق في اليوم التالي.

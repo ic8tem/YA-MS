@@ -26,7 +26,7 @@ P|เมื่อเริ่มโปรแกรม จะมีหน้า�
 H2|2.3 โฟลเดอร์ data
 P|การตั้งค่าและข้อมูลทั้งหมดอยู่ในโฟลเดอร์ data เพียงโฟลเดอร์เดียวข้างโปรแกรม ไม่มี AppData ไม่มีโฟลเดอร์ระบบ หากต้องการย้าย YA-MS ไปยังคอมพิวเตอร์เครื่องอื่น เพียงคัดลอกโฟลเดอร์โปรแกรมพร้อมโฟลเดอร์ data ของมัน เนื้อหาของโฟลเดอร์นี้อธิบายไว้ในบทที่ 13
 H2|2.4 การอัปเดตอัตโนมัติ
-P|Dalla versione 1.8.12 gli aggiornamenti sono automatici e silenziosi: all'avvio e poi ogni 6 ore YA-MS controlla GitHub e, se c'è una versione nuova, la scarica, la installa e si riavvia da solo senza chiedere nulla (lo dice solo la barra di stato). Anche i file mancanti si riscaricano senza chiedere. La finestra descritta qui sotto compare solo premendo "Aggiornamenti" oppure se scrivi aggiornamenti_automatici=0 nel file data/config.ini.
+P|ตั้งแต่รุ่น 1.8.6 การอัปเดตเป็นแบบอัตโนมัติและเงียบ: เมื่อเริ่มโปรแกรมและทุก 30 นาทีหลังจากนั้น YA-MS จะตรวจ GitHub และหากมีรุ่นใหม่จะดาวน์โหลด ติดตั้ง และเริ่มใหม่เองโดยไม่ถามอะไร (มีเพียงแถบสถานะที่แจ้ง) ไฟล์ที่ขาดหายก็ดาวน์โหลดใหม่โดยไม่ถามเช่นกัน หน้าต่างที่อธิบายด้านล่างจะปรากฏเฉพาะเมื่อกด "อัปเดต" หรือเมื่อเขียน aggiornamenti_automatici=0 ในไฟล์ data/config.ini
 P|ตั้งแต่รุ่น 1.8.0 YA-MS จะตรวจสอบบน GitHub เองเมื่อเริ่มโปรแกรม และไม่เกินวันละครั้ง ว่ามีรุ่นใหม่ออกมาหรือไม่ หากมี หน้าต่าง "มีการอัปเดต" จะปรากฏขึ้นพร้อมรายการสิ่งใหม่และปุ่มสามปุ่ม:
 LI|อัปเดตเดี๋ยวนี้: ดาวน์โหลดแพ็กเกจที่เหมาะกับระบบของคุณ แทนที่ไฟล์ของโปรแกรม เก็บโฟลเดอร์ data ไว้ และเริ่ม YA-MS ใหม่ ไฟล์ของโปรแกรมในโฟลเดอร์ data ที่รุ่นใหม่เปลี่ยนแปลงจะถูกคัดลอกไปไว้ที่ data/backup/v<รุ่นเก่า> ก่อน ส่วนไฟล์ของคุณ (การตั้งค่า คลังข้อมูล สปอต ADIF) จะไม่ถูกแตะต้อง
 LI|ภายหลัง: ปิดหน้าต่าง การตรวจสอบจะทำซ้ำในวันถัดไป

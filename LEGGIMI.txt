@@ -40,6 +40,11 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.13
+  - FT8 isolati, controlli con PSKReporter MQTT: non isolato se il ricevente sente in MQTT altre stazioni oltre i
+    1100 km nella stessa banda entro 3 minuti; spot dei cluster e di RBN solo se la stessa coppia arriva anche da
+    MQTT; skimmer RBN ("-#") mai.
+
 NOVITA' DELLA 1.8.12
   - FT8 sui 28 MHz tolti in ogni caso (clausola degli FT8 isolati e scambio tra gli utenti).
   - "Nuvola" diventa "zona dello sciame" sulla mappa e "% sciame" nella colonna della tabella del Traffico in

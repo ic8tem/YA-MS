@@ -18,7 +18,11 @@ Spotum þar sem stöð er **utan kortsins** er hent. Spot sem **var að berast**
 
 Sýna hverjir hlusta: þríhyrningar í lit bandsins merkja stöðvar sem samkvæmt PSKReporter taka á móti MSK144, FSK441, PSK2K eða JTMS á 28, 50, 70, 144 og 432 MHz í völdum tímaglugga. Smellur á þríhyrning sýnir kallmerki, staðsetningu, hætti og síðasta spot. MQTT-straumurinn í flipanum Gagnasöfnun verður að vera tengdur.
 
-Einnig virkir hlustendur á korti PSKReporter: tómir þríhyrningar fyrir stöðvar sem birtast á korti pskreporter.info í MSK144, FSK441, PSK2K eða JTMS en hafa ekki enn tekið á móti neinu spotti (MQTT sendir aðeins stöðvar sem taka á móti einhverju). YA-MS spyr fyrirspurnaþjónustu PSKReporter um einn hátt í einu, á 3 mínútna fresti, svo hver háttur uppfærist á 12 mínútna fresti, eins og reglur þjónustunnar biðja um. Smellur á þríhyrninginn sýnir kallmerki, staðsetningu, afkóðunarforrit og tímann sem hlustandinn var virkur. Kveikt sjálfgefið.
+Einnig virkir hlustendur á korti PSKReporter: tómir þríhyrningar fyrir stöðvar sem birtast á korti pskreporter.info í MSK144, FSK441, PSK2K eða JTMS en hafa ekki enn tekið á móti neinu spotti (MQTT sendir aðeins stöðvar sem taka á móti einhverju). YA-MS spyr fyrirspurnaþjónustu PSKReporter einu sinni á 5 mínútna fresti fyrir alla hætti, eins og reglur þjónustunnar biðja um; hlustandi helst á kortinu í að minnsta kosti 11 mínútur. Smellur á þríhyrninginn sýnir kallmerki, staðsetningu, afkóðunarforrit og tímann sem hlustandinn var virkur. Kveikt sjálfgefið.
+
+FT8 yfir 1100 km án samsíða leiða: FT8-spott (frá PSKReporter MQTT, klösum eða WSJT-X um UDP) milli stöðva sem eru meira en 1100 km hvor frá annarri og hefur engar samsíða leiðir á 3 mínútum fyrir og eftir (sama band, miðpunktur innan 300 km, stefna innan 20°, annað stöðvapar) er teiknað ljósgrænt og lína þess í töflunni neðst til hægri blikkar alltaf. Sporadískt E og tropo gefa margar nálægar, samsíða leiðir; stakt spott getur verið loftsteinaslóð. Þess vegna tekur YA-MS líka við FT8-spottum frá MQTT á 6 m, 4 m, 2 m, 1,25 m og 70 cm (ekki 10 m, of mörg). Þessi spott fara ekki í MS-safnið. Kveikt sjálfgefið.
+
+WSJT-X-spott um UDP sem varða stöðina þína (afkóðunin inniheldur kallmerkið þitt: sá sem kallar á þig eða svarar þér) eru teiknuð með strikalínu sem blikkar alltaf, í öllum háttum og í hvaða fjarlægð sem er.
 
 Kortið sýnir kallmerki beggja stöðva hvers spotts, einu sinni á hverja stöð. Vörpunin getur verið jafnfjarlæg (miðuð á þína stöð) eða Mercator. Ábendingin á dálknum Ský útskýrir merkingu hans.
 

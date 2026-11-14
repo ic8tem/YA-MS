@@ -18,7 +18,11 @@ Spots met 'n stasie **buite die kaart** word verwerp. 'n Spot wat **pas aangekom
 
 Wys wie luister: driehoeke in die bandkleur merk die stasies wat volgens PSKReporter in die gekose tydvenster MSK144, FSK441, PSK2K of JTMS op 28, 50, 70, 144 en 432 MHz ontvang. 'n Klik op 'n driehoek wys roepsein, lokator, modusse en laaste spot. Die MQTT-stroom in die oortjie Data-insameling moet gekoppel wees.
 
-Ook die aktiewe monitors op die PSKReporter-kaart: leë driehoeke vir stasies wat op die kaart van pskreporter.info in MSK144, FSK441, PSK2K of JTMS verskyn maar nog geen spot ontvang het nie (MQTT stuur net stasies wat iets ontvang). YA-MS bevra die navraagdiens van PSKReporter een modus op 'n slag, elke 3 minute, sodat elke modus elke 12 minute bygewerk word, soos die diens se reëls vra. 'n Klik op die driehoek wys roepsein, lokator, dekodeerprogram en die tyd toe die monitor aktief was. By verstek aan.
+Ook die aktiewe monitors op die PSKReporter-kaart: leë driehoeke vir stasies wat op die kaart van pskreporter.info in MSK144, FSK441, PSK2K of JTMS verskyn maar nog geen spot ontvang het nie (MQTT stuur net stasies wat iets ontvang). YA-MS bevra die navraagdiens van PSKReporter een keer elke 5 minute vir alle modusse, soos die diens se reëls vra; 'n monitor bly minstens 11 minute op die kaart. 'n Klik op die driehoek wys roepsein, lokator, dekodeerprogram en die tyd toe die monitor aktief was. By verstek aan.
+
+FT8 verder as 1100 km sonder parallelle paaie: 'n FT8-spot (van PSKReporter MQTT, die klusters of WSJT-X via UDP) tussen stasies meer as 1100 km uitmekaar wat geen parallelle paaie in die 3 minute voor en na het nie (dieselfde band, middelpunt binne 300 km, rigting binne 20°, 'n ander stasiepaar), word liggroen geteken en sy ry in die tabel regs onder flikker altyd. Sporadiese E en tropo gee baie nabye, parallelle paaie; 'n alleenstaande spot kan 'n meteoorspoor wees. Daarom ontvang YA-MS van MQTT ook die FT8-spots van 6 m, 4 m, 2 m, 1,25 m en 70 cm (nie dié van 10 m nie, te veel). Hierdie spots gaan nie in die MS-argief nie. By verstek aan.
+
+WSJT-X-spots via UDP wat jou stasie raak (die dekodering bevat jou roepsein: wie jou roep of jou antwoord) word geteken met 'n stippellyn wat altyd flikker, in enige modus en op enige afstand.
 
 Die kaart wys die roepname van albei stasies van elke spot, een keer per stasie. Die projeksie kan azimutaal (gesentreer op jou stasie) of Mercator wees. Die wenk op die kolom Wolk verduidelik die betekenis.
 

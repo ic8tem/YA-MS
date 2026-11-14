@@ -18,7 +18,11 @@ Spotai, kurių viena stotis yra **už žemėlapio ribų**, atmetami. **Ką tik a
 
 Rodyti, kas klausosi: juostos spalvos trikampiai žymi stotis, kurios, pasak PSKReporter, pasirinktame laiko lange priima MSK144, FSK441, PSK2K ar JTMS 28, 50, 70, 144 ir 432 MHz juostose. Spustelėjus trikampį rodomas šaukinys, lokatorius, režimai ir paskutinis spotas. Kortelės Duomenų rinkimas MQTT srautas turi būti prijungtas.
 
-Taip pat aktyvūs PSKReporter žemėlapio monitoriai: tušti trikampiai stotims, kurios matomos pskreporter.info žemėlapyje MSK144, FSK441, PSK2K ar JTMS režimu, bet dar negavo nė vieno spoto (MQTT siunčia tik stotis, kurios ką nors gauna). YA-MS kreipiasi į PSKReporter užklausų paslaugą po vieną režimą, kas 3 minutes, todėl kiekvienas režimas atnaujinamas kas 12 minučių, kaip reikalauja paslaugos taisyklės. Spustelėjus trikampį rodomas šaukinys, lokatorius, dekodavimo programa ir laikas, kai monitorius buvo aktyvus. Įjungta iš pradžių.
+Taip pat aktyvūs PSKReporter žemėlapio monitoriai: tušti trikampiai stotims, kurios matomos pskreporter.info žemėlapyje MSK144, FSK441, PSK2K ar JTMS režimu, bet dar negavo nė vieno spoto (MQTT siunčia tik stotis, kurios ką nors gauna). YA-MS kreipiasi į PSKReporter užklausų paslaugą kartą per 5 minutes dėl visų režimų, kaip reikalauja paslaugos taisyklės; monitorius žemėlapyje lieka bent 11 minučių. Spustelėjus trikampį rodomas šaukinys, lokatorius, dekodavimo programa ir laikas, kai monitorius buvo aktyvus. Įjungta iš pradžių.
+
+FT8 virš 1100 km be lygiagrečių trasų: FT8 spotas (iš PSKReporter MQTT, klasterių ar WSJT-X per UDP) tarp stočių, nutolusių daugiau nei 1100 km, kuris per 3 minutes prieš ir po neturi lygiagrečių trasų (ta pati juosta, vidurio taškas 300 km ribose, kryptis 20° ribose, kita stočių pora), piešiamas šviesiai žaliai, o jo eilutė lentelėje apačioje dešinėje visada mirksi. Sporadinis E ir tropo duoda daug artimų, lygiagrečių trasų; pavienis spotas gali būti meteoro pėdsakas. Todėl YA-MS iš MQTT gauna ir 6 m, 4 m, 2 m, 1,25 m bei 70 cm FT8 spotus (ne 10 m, jų per daug). Šie spotai nepatenka į MS archyvą. Įjungta iš pradžių.
+
+WSJT-X spotai per UDP, susiję su jūsų stotimi (dekoduotame tekste yra jūsų šaukinys: kas jus šaukia ar jums atsako), piešiami visada mirksinčia brūkšnine linija, bet kuriuo režimu ir bet kokiu atstumu.
 
 Žemėlapyje rašomi abiejų kiekvieno spoto stočių šaukiniai, po vieną kartą kiekvienai stočiai. Projekciją galima pasirinkti: azimutinė (centre tavo stotis) arba Merkatoriaus. Stulpelio Debesis patarimas paaiškina jo reikšmę.
 

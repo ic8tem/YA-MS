@@ -18,7 +18,11 @@
 
 Kimin dinlediğini göster: bant renginde üçgenler, PSKReporter'a göre seçilen zaman aralığında 28, 50, 70, 144 ve 432 MHz'de MSK144, FSK441, PSK2K veya JTMS alan istasyonları gösterir. Bir üçgene tıklamak çağrı işaretini, lokatörü, modları ve son spotu gösterir. Veri toplama sekmesindeki MQTT akışı bağlı olmalıdır.
 
-PSKReporter haritasındaki aktif monitörler de: pskreporter.info haritasında MSK144, FSK441, PSK2K veya JTMS ile görünen ama henüz hiç spot almamış istasyonlar için boş üçgenler (MQTT yalnızca bir şey alan istasyonları gönderir). YA-MS, PSKReporter sorgu hizmetini her seferinde bir mod için, 3 dakikada bir sorgular; böylece her mod 12 dakikada bir güncellenir, hizmetin kurallarının istediği gibi. Üçgene tıklamak çağrı işaretini, lokatörü, kod çözme programını ve monitörün aktif olduğu saati gösterir. Varsayılan olarak açık.
+PSKReporter haritasındaki aktif monitörler de: pskreporter.info haritasında MSK144, FSK441, PSK2K veya JTMS ile görünen ama henüz hiç spot almamış istasyonlar için boş üçgenler (MQTT yalnızca bir şey alan istasyonları gönderir). YA-MS, PSKReporter sorgu hizmetini tüm modlar için 5 dakikada bir sorgular, hizmetin kurallarının istediği gibi; bir monitör haritada en az 11 dakika kalır. Üçgene tıklamak çağrı işaretini, lokatörü, kod çözme programını ve monitörün aktif olduğu saati gösterir. Varsayılan olarak açık.
+
+Paralel hattı olmayan 1100 km üzeri FT8: 1100 km'den uzak istasyonlar arasında, öncesi ve sonrasındaki 3 dakikada paralel hattı olmayan (aynı bant, orta nokta 300 km içinde, yön 20° içinde, başka bir istasyon çifti) bir FT8 spotu (PSKReporter MQTT, kümeler veya UDP üzerinden WSJT-X'ten) açık yeşil çizilir ve sağ alttaki tablodaki satırı her zaman yanıp söner. Sporadik E ve tropo çok sayıda yakın, paralel hat verir; yalnız bir spot bir meteor izi olabilir. Bu yüzden YA-MS, MQTT'den 6 m, 4 m, 2 m, 1,25 m ve 70 cm FT8 spotlarını da alır (10 m'yi değil, çok fazla). Bu spotlar MS arşivine girmez. Varsayılan olarak açık.
+
+İstasyonunuzu ilgilendiren UDP üzerinden WSJT-X spotları (kod çözmede çağrı işaretiniz var: sizi çağıran veya size yanıt veren) her zaman yanıp sönen kesikli çizgiyle çizilir, her modda ve her mesafede.
 
 Haritada her spotun iki istasyonunun çağrı işareti yazılır, istasyon başına bir kez. İzdüşüm seçilebilir: azimutal (merkezde istasyonun) veya Mercator. Bulut sütunundaki ipucu anlamını açıklar.
 

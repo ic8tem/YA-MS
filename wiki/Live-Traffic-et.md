@@ -18,7 +18,11 @@ Spotid, mille üks jaam on **kaardist väljas**, jäetakse kõrvale. **Äsja saa
 
 Näita, kes kuulab: riba värvi kolmnurgad märgivad jaamu, mis PSKReporteri järgi võtavad valitud ajaaknas vastu MSK144, FSK441, PSK2K või JTMS režiimis 28, 50, 70, 144 ja 432 MHz sagedusel. Klõps kolmnurgal näitab kutsungit, lokaatorit, režiime ja viimast spotti. Vahekaardi Andmete kogumine MQTT-voog peab olema ühendatud.
 
-Ka PSKReporteri kaardi aktiivsed monitorid: tühjad kolmnurgad jaamadele, mis on pskreporter.info kaardil MSK144, FSK441, PSK2K või JTMS režiimis, kuid pole veel ühtegi spotti vastu võtnud (MQTT saadab ainult jaamu, mis midagi vastu võtavad). YA-MS pärib PSKReporteri päringuteenust üks režiim korraga, iga 3 minuti järel, seega iga režiim uueneb iga 12 minuti järel, nagu teenuse reeglid nõuavad. Klõps kolmnurgal näitab kutsungit, lokaatorit, dekodeerimisprogrammi ja aega, mil monitor oli aktiivne. Vaikimisi sees.
+Ka PSKReporteri kaardi aktiivsed monitorid: tühjad kolmnurgad jaamadele, mis on pskreporter.info kaardil MSK144, FSK441, PSK2K või JTMS režiimis, kuid pole veel ühtegi spotti vastu võtnud (MQTT saadab ainult jaamu, mis midagi vastu võtavad). YA-MS pärib PSKReporteri päringuteenust kord 5 minuti jooksul kõigi režiimide kohta, nagu teenuse reeglid nõuavad; monitor jääb kaardile vähemalt 11 minutiks. Klõps kolmnurgal näitab kutsungit, lokaatorit, dekodeerimisprogrammi ja aega, mil monitor oli aktiivne. Vaikimisi sees.
+
+FT8 üle 1100 km ilma paralleelsete trassideta: FT8-spot (PSKReporteri MQTT-st, klastritest või WSJT-X-ist UDP kaudu) üle 1100 km kaugusel olevate jaamade vahel, millel pole 3 minuti jooksul enne ja pärast paralleelseid trasse (sama sagedusala, keskpunkt 300 km piires, suund 20° piires, teine jaamapaar), joonistatakse helerohelisena ja selle rida paremal all tabelis vilgub alati. Sporaadiline E ja troposfäär annavad palju lähedasi paralleelseid trasse; üksik spot võib olla meteoorijälg. Seepärast võtab YA-MS MQTT-st vastu ka 6 m, 4 m, 2 m, 1,25 m ja 70 cm FT8-spotid (mitte 10 m omi, neid on liiga palju). Need spotid ei lähe MS-arhiivi. Vaikimisi sees.
+
+WSJT-X-i spotid UDP kaudu, mis puudutavad sinu jaama (dekodeering sisaldab sinu kutsungit: kes sind kutsub või sulle vastab), joonistatakse alati vilkuva katkendjoonega, igas režiimis ja igal kaugusel.
 
 Kaardil kirjutatakse iga spoti mõlema jaama kutsung, üks kord jaama kohta. Projektsioon on valitav: asimuutne (keskel sinu jaam) või Mercator. Veeru Pilv kohtspikker selgitab selle tähendust.
 

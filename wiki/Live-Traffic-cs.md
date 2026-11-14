@@ -18,7 +18,11 @@ Spoty se stanicí **mimo mapu** se zahazují. Spot, který **právě přišel** 
 
 Ukázat, kdo poslouchá: trojúhelníky v barvě pásma označují stanice, které podle PSKReporteru ve zvoleném časovém okně přijímají MSK144, FSK441, PSK2K nebo JTMS na 28, 50, 70, 144 a 432 MHz. Klepnutí na trojúhelník ukáže značku, lokátor, druhy provozu a poslední spot. Proud MQTT na kartě Sběr dat musí být připojen.
 
-Také aktivní monitory z mapy PSKReporter: prázdné trojúhelníky pro stanice, které jsou na mapě pskreporter.info v MSK144, FSK441, PSK2K nebo JTMS, ale ještě nepřijaly žádný spot (MQTT posílá jen stanice, které něco přijímají). YA-MS se dotazuje vyhledávací služby PSKReporter po jednom druhu provozu, každé 3 minuty, takže každý druh provozu se obnoví každých 12 minut, jak žádají pravidla služby. Klepnutí na trojúhelník ukáže značku, lokátor, dekódovací program a čas, kdy byl monitor aktivní. Ve výchozím stavu zapnuto.
+Také aktivní monitory z mapy PSKReporter: prázdné trojúhelníky pro stanice, které jsou na mapě pskreporter.info v MSK144, FSK441, PSK2K nebo JTMS, ale ještě nepřijaly žádný spot (MQTT posílá jen stanice, které něco přijímají). YA-MS se dotazuje vyhledávací služby PSKReporter jednou za 5 minut pro všechny druhy provozu, jak žádají pravidla služby; monitor zůstává na mapě nejméně 11 minut. Klepnutí na trojúhelník ukáže značku, lokátor, dekódovací program a čas, kdy byl monitor aktivní. Ve výchozím stavu zapnuto.
+
+FT8 nad 1100 km bez souběžných tras: spot FT8 (z PSKReporter MQTT, z clusterů nebo z WSJT-X přes UDP) mezi stanicemi vzdálenými více než 1100 km, který 3 minuty před a po nemá souběžné trasy (stejné pásmo, střed do 300 km, směr do 20°, jiná dvojice stanic), se kreslí světle zeleně a jeho řádek v tabulce vpravo dole stále bliká. Sporadická E a tropo dávají mnoho blízkých souběžných tras; osamocený spot může být meteorická stopa. Proto YA-MS přijímá z MQTT i spoty FT8 z pásem 6 m, 4 m, 2 m, 1,25 m a 70 cm (ne z 10 m, je jich příliš mnoho). Tyto spoty se neukládají do archivu MS. Ve výchozím stavu zapnuto.
+
+Spoty WSJT-X přes UDP, které se týkají vaší stanice (dekódování obsahuje vaši značku: kdo vás volá nebo vám odpovídá), se kreslí stále blikající přerušovanou čarou, v jakémkoli druhu provozu a na jakoukoli vzdálenost.
 
 Na mapě se píší značky obou stanic každého spotu, jednou pro každou stanici. Projekci lze zvolit: azimutální (uprostřed tvoje stanice) nebo Mercatorova. Bublina na sloupci Mrak vysvětluje jeho význam.
 

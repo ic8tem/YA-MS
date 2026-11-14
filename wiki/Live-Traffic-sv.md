@@ -18,7 +18,11 @@ Spots med en station **utanför kartan** kasseras. En spot som **just har kommit
 
 Visa vem som lyssnar: trianglar i bandets färg markerar stationer som enligt PSKReporter tar emot MSK144, FSK441, PSK2K eller JTMS på 28, 50, 70, 144 och 432 MHz i det valda tidsfönstret. Ett klick på en triangel visar anropssignal, lokator, moder och senaste spot. MQTT-flödet i fliken Datainsamling måste vara anslutet.
 
-Även de aktiva monitorerna på PSKReporter-kartan: tomma trianglar för stationer som syns på kartan på pskreporter.info i MSK144, FSK441, PSK2K eller JTMS men ännu inte har tagit emot någon spot (MQTT skickar bara stationer som tar emot något). YA-MS frågar PSKReporters söktjänst ett trafiksätt i taget, var 3:e minut, så varje trafiksätt uppdateras var 12:e minut, som tjänstens regler kräver. Ett klick på triangeln visar anropssignal, lokator, avkodningsprogram och tiden då monitorn var aktiv. På från början.
+Även de aktiva monitorerna på PSKReporter-kartan: tomma trianglar för stationer som syns på kartan på pskreporter.info i MSK144, FSK441, PSK2K eller JTMS men ännu inte har tagit emot någon spot (MQTT skickar bara stationer som tar emot något). YA-MS frågar PSKReporters söktjänst en gång var 5:e minut för alla trafiksätt, som tjänstens regler kräver; en monitor stannar på kartan minst 11 minuter. Ett klick på triangeln visar anropssignal, lokator, avkodningsprogram och tiden då monitorn var aktiv. På från början.
+
+FT8 över 1100 km utan parallella sträckor: en FT8-spot (från PSKReporter MQTT, klustren eller WSJT-X via UDP) mellan stationer mer än 1100 km ifrån varandra som inte har några parallella sträckor under 3 minuter före och efter (samma band, mittpunkt inom 300 km, riktning inom 20°, ett annat stationspar) ritas ljusgrön och dess rad i tabellen nere till höger blinkar alltid. Sporadiskt E och tropo ger många närliggande, parallella sträckor; en ensam spot kan vara ett meteorspår. Därför tar YA-MS också emot FT8-spotar från MQTT på 6 m, 4 m, 2 m, 1,25 m och 70 cm (inte 10 m, för många). Dessa spotar hamnar inte i MS-arkivet. På från början.
+
+WSJT-X-spotar via UDP som gäller din station (avkodningen innehåller din anropssignal: den som anropar dig eller svarar dig) ritas med en streckad linje som alltid blinkar, i alla trafiksätt och på alla avstånd.
 
 Kartan visar anropssignalerna för båda stationerna i varje spott, en gång per station. Projektionen kan vara azimutal (centrerad på din station) eller Mercator. Verktygstipset på kolumnen Moln förklarar vad den betyder.
 

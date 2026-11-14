@@ -18,7 +18,11 @@ Spots with a station **outside the map** are discarded. A spot that has **just a
 
 Show who is listening: triangles in the band colour mark the stations that, according to PSKReporter, are receiving in MSK144, FSK441, PSK2K or JTMS on 28, 50, 70, 144 and 432 MHz in the chosen time window. A click on a triangle shows call, locator, modes and last spot. The MQTT feed of the Data collection tab must be connected.
 
-Also the active monitors of the PSKReporter map: hollow triangles for the stations that appear on the pskreporter.info map in MSK144, FSK441, PSK2K or JTMS but have not received any spot yet (MQTT only sends stations that receive something). YA-MS queries the PSKReporter retrieval service one mode at a time, every 3 minutes, so each mode is refreshed every 12 minutes, as the service rules ask. A click on the triangle shows callsign, locator, decoding software and the time the monitor was active. On by default.
+Also the active monitors of the PSKReporter map: hollow triangles for the stations that appear on the pskreporter.info map in MSK144, FSK441, PSK2K or JTMS but have not received any spot yet (MQTT only sends stations that receive something). YA-MS queries the PSKReporter retrieval service once every 5 minutes for all modes, as the service rules ask; a monitor stays on the map for at least 11 minutes. A click on the triangle shows callsign, locator, decoding software and the time the monitor was active. On by default.
+
+FT8 beyond 1100 km with no parallel paths: an FT8 spot (from PSKReporter MQTT, the clusters or WSJT-X via UDP) between stations more than 1100 km apart that has no parallel paths in the 3 minutes before and after (same band, midpoint within 300 km, direction within 20°, another pair of stations) is drawn in light green and its row in the table at the bottom right always blinks. Sporadic-E and tropo give many close, parallel paths; an isolated spot may be a meteor trail. For this YA-MS also receives from MQTT the FT8 spots of 6 m, 4 m, 2 m, 1.25 m and 70 cm (not those of 10 m, too many). These spots do not go into the MS archive. On by default.
+
+WSJT-X spots via UDP that concern your station (the decode contains your callsign: who calls you or answers you) are drawn with a dashed line that always blinks, in any mode and at any distance.
 
 The map shows the callsigns of both stations of each spot, once per station. The projection can be azimuthal (centred on your station) or Mercator. The tooltip on the Cloud column explains its meaning.
 

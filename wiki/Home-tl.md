@@ -26,7 +26,7 @@ Mula bersyon 1.6, may mga **sub-tab** ang mga pangunahing tab (isang mas mapusya
 
 | Tab | Sub-tab | Ano ang ipinapakita |
 |---|---|---|
-| **Live at real-time na datos** | [Live na trapiko](Live-Traffic-tl) | Azimuthal na mapa ng lahat ng nakolektang trapikong MS, may ulap ng pinakamalamang na bakas para sa bawat contact, kulay ayon sa banda, at kumikislap na bagong spot |
+| **Live at real-time na datos** | [Live na trapiko](Live-Traffic-tl) | Azimuthal na mapa ng lahat ng nakolektang trapikong MS, may ulap ng pinakamalamang na bakas para sa bawat contact, kulay ayon sa banda, at kumikislap kapag sumasagot sa iyo ang kausap |
 | | [Flux ng radar](Radar-Flux-tl) | Bilang ng meteor bawat oras at taas ng mga bakas na binasa mula sa SKiYMET radar ng Collm, larawan ng Sodankylä, tantiya para sa iyong banda |
 | | [Radar GRAVES](GRAVES-Radar-tl) | Ang forward-scatter na landas na GRAVES → ikaw: magagamit na sona sa beam, sektor at hakbang, susunod na pagdaan ng beam, paano makinig |
 | | [Pangongolekta ng data](Data-Collection-tl) | Tatlong telnet stream ng cluster (DX cluster, RBN, DM4X/PSKReporter) at ang filter ng mga MS spot |

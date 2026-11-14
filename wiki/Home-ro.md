@@ -26,7 +26,7 @@ Sursa principală este articolul lui **C. Cerrotta IC8TEM și G. Sartori IV3GTH*
 
 | Filă | Subfilă | Ce arată |
 |---|---|---|
-| **Date live și în timp real** | [Trafic live](Live-Traffic-ro) | Hartă azimutală a întregului trafic MS colectat, cu un nor al celor mai probabile urme pentru fiecare legătură, culori pe benzi, spoturi noi care clipesc |
+| **Date live și în timp real** | [Trafic live](Live-Traffic-ro) | Hartă azimutală a întregului trafic MS colectat, cu un nor al celor mai probabile urme pentru fiecare legătură, culori pe benzi, clipire când un corespondent vă răspunde |
 | | [Flux radar](Radar-Flux-ro) | Numărul orar de meteori și înălțimea urmelor citite de la radarul SKiYMET din Collm, imaginea de la Sodankylä, estimarea pe banda dumneavoastră |
 | | [Radar GRAVES](GRAVES-Radar-ro) | Traseul forward-scatter GRAVES → dumneavoastră: zona utilă din fascicul, sectorul și pasul, următoarea trecere a fasciculului, cum să ascultați |
 | | [Colectare date](Data-Collection-ro) | Trei fluxuri de cluster telnet (DX cluster, RBN, DM4X/PSKReporter) și filtrul de spoturi MS |

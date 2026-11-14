@@ -26,7 +26,7 @@ Sedert weergawe 1.6 het die hoofoortjies **sub-oortjies** ('n ligter ry onder di
 
 | Oortjie | Sub-oortjie | Wat dit wys |
 |---|---|---|
-| **Regstreeks en intydse data** | [Regstreekse verkeer](Live-Traffic-af) | Azimutale kaart van al die ingesamelde MS-verkeer, met 'n wolk van die mees waarskynlike spore vir elke kontak, bandkleure, nuwe spots wat flikker |
+| **Regstreeks en intydse data** | [Regstreekse verkeer](Live-Traffic-af) | Azimutale kaart van al die ingesamelde MS-verkeer, met 'n wolk van die mees waarskynlike spore vir elke kontak, bandkleure, flikker wanneer 'n korrespondent jou antwoord |
 | | [Radarvloed](Radar-Flux-af) | Uurlikse meteoortellings en spoorhoogtes gelees van die Collm SKiYMET-radar, Sodankylä-beeld, skatting op jou band |
 | | [GRAVES-radar](GRAVES-Radar-af) | Die forward scatter-pad GRAVES → jy: bruikbare sone in die bundel, sektor en stap, volgende bundeldeurgang, hoe om te luister |
 | | [Data-insameling](Data-Collection-af) | Drie telnet-clusterstrome (DX cluster, RBN, DM4X/PSKReporter) en die MS-spotfilter |

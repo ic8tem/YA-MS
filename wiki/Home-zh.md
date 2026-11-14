@@ -26,7 +26,7 @@
 
 | 选项卡 | 子选项卡 | 显示内容 |
 |---|---|---|
-| **实况与实时数据** | [实时通信](Live-Traffic-zh) | 所有已收集 MS 通信的方位等距地图，每个通联都绘出最可能余迹所在的“云团”，按频段着色，新 spot 闪烁 |
+| **实况与实时数据** | [实时通信](Live-Traffic-zh) | 所有已收集 MS 通信的方位等距地图，每个通联都绘出最可能余迹所在的“云团”，按频段着色，对方回复你时闪烁 |
 | | [雷达流量](Radar-Flux-zh) | 从 Collm SKiYMET 雷达读取的逐时流星计数和余迹高度、Sodankylä 图像、您所用频段上的估算值 |
 | | [GRAVES 雷达](GRAVES-Radar-zh) | GRAVES → 本台的前向散射路径：波束中的有效区域、扇区和步进、波束下次扫过的时间、收听方法 |
 | | [数据收集](Data-Collection-zh) | 三路 telnet cluster 数据流（DX cluster、RBN、DM4X/PSKReporter）以及 MS spot 过滤器 |

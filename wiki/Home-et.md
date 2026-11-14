@@ -26,7 +26,7 @@ Alates versioonist 1.6 on põhisakkidel **alamsakid** (heledam rida põhirea all
 
 | Sakk | Alamsakk | Mida see näitab |
 |---|---|---|
-| **Otse ja reaalajas andmed** | [Liiklus otse](Live-Traffic-et) | Asimuutne kaart kogu kogutud MS-liiklusest, iga side kohta kõige tõenäolisemate jälgede pilv, sagedusalade värvid, uued spotid vilguvad |
+| **Otse ja reaalajas andmed** | [Liiklus otse](Live-Traffic-et) | Asimuutne kaart kogu kogutud MS-liiklusest, iga side kohta kõige tõenäolisemate jälgede pilv, sagedusalade värvid, vilkumine, kui korrespondent sulle vastab |
 | | [Radari voog](Radar-Flux-et) | Collmi SKiYMET-radarilt loetud meteooride tunniloendused ja jälgede kõrgused, Sodankylä pilt, hinnang sinu sagedusalale |
 | | [GRAVESi radar](GRAVES-Radar-et) | Forward scatteri trass GRAVES → sina: kasulik ala kiires, sektor ja samm, kiire järgmine möödumine, kuidas kuulata |
 | | [Andmete kogumine](Data-Collection-et) | Kolm telneti klastrivoogu (DX cluster, RBN, DM4X/PSKReporter) ja MS-spotide filter |

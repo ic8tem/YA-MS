@@ -26,7 +26,7 @@ Od wersji 1.6 główne zakładki mają **podzakładki** (jaśniejszy wiersz pod 
 
 | Zakładka | Podzakładka | Co pokazuje |
 |---|---|---|
-| **Dane na żywo i w czasie rzeczywistym** | [Ruch na żywo](Live-Traffic-pl) | Mapa azymutalna całego zebranego ruchu MS, z chmurą najbardziej prawdopodobnych śladów dla każdej łączności, kolorami pasm i migającymi nowymi spotami |
+| **Dane na żywo i w czasie rzeczywistym** | [Ruch na żywo](Live-Traffic-pl) | Mapa azymutalna całego zebranego ruchu MS, z chmurą najbardziej prawdopodobnych śladów dla każdej łączności, kolorami pasm i miganiem, gdy korespondent ci odpowiada |
 | | [Strumień radarowy](Radar-Flux-pl) | Godzinowe zliczenia meteorów i wysokości śladów odczytane z radaru SKiYMET w Collm, obraz z Sodankylä, szacunek dla twojego pasma |
 | | [Radar GRAVES](GRAVES-Radar-pl) | Trasa forward scatter GRAVES → ty: strefa użyteczna w wiązce, sektor i krok, następne przejście wiązki, jak słuchać |
 | | [Zbieranie danych](Data-Collection-pl) | Trzy strumienie telnet z clusterów (DX cluster, RBN, DM4X/PSKReporter) i filtr spotów MS |

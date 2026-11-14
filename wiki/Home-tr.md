@@ -26,7 +26,7 @@ Sürüm 1.6'dan beri ana sekmelerin **alt sekmeleri** vardır (ana sıranın alt
 
 | Sekme | Alt sekme | Ne gösterir |
 |---|---|---|
-| **Canlı ve gerçek zamanlı veriler** | [Canlı trafik](Live-Traffic-tr) | Toplanan tüm MS trafiğinin azimutal haritası; her bağlantı için en olası izlerden oluşan bir bulut, bant renkleri, yanıp sönen yeni spot'lar |
+| **Canlı ve gerçek zamanlı veriler** | [Canlı trafik](Live-Traffic-tr) | Toplanan tüm MS trafiğinin azimutal haritası; her bağlantı için en olası izlerden oluşan bir bulut, bant renkleri, bir muhabir size cevap verince yanıp sönme |
 | | [Radar akısı](Radar-Flux-tr) | Collm SKiYMET radarından okunan saatlik meteor sayıları ve iz yükseklikleri, Sodankylä görüntüsü, sizin bandınız için tahmin |
 | | [GRAVES radarı](GRAVES-Radar-tr) | GRAVES → siz forward scatter yolu: huzmedeki yararlı bölge, sektör ve adım, huzmenin sonraki geçişi, nasıl dinlenir |
 | | [Veri toplama](Data-Collection-tr) | Üç telnet cluster akışı (DX cluster, RBN, DM4X/PSKReporter) ve MS spot filtresi |

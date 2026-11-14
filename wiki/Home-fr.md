@@ -26,7 +26,7 @@ Depuis la version 1.6, les onglets principaux comportent des **sous-onglets** (u
 
 | Onglet | Sous-onglet | Ce qu'il montre |
 |---|---|---|
-| **Direct et données en temps réel** | [Trafic en direct](Live-Traffic-fr) | Carte azimutale de tout le trafic MS collecté, avec un nuage des traînées les plus probables pour chaque liaison, couleurs par bande, nouveaux spots clignotants |
+| **Direct et données en temps réel** | [Trafic en direct](Live-Traffic-fr) | Carte azimutale de tout le trafic MS collecté, avec un nuage des traînées les plus probables pour chaque liaison, couleurs par bande, clignotement quand un correspondant vous répond |
 | | [Flux radar](Radar-Flux-fr) | Comptages horaires de météores et altitudes des traînées lus sur le radar SKiYMET de Collm, image de Sodankylä, estimation sur votre bande |
 | | [Radar GRAVES](GRAVES-Radar-fr) | Le trajet en diffusion vers l'avant GRAVES → vous : zone utile dans le faisceau, secteur et pas, prochain passage du faisceau, comment écouter |
 | | [Collecte de données](Data-Collection-fr) | Trois flux de cluster telnet (DX cluster, RBN, DM4X/PSKReporter) et le filtre des spots MS |

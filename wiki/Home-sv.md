@@ -26,7 +26,7 @@ Sedan version 1.6 har huvudflikarna **underflikar** (en ljusare rad under huvudr
 
 | Flik | Underflik | Vad den visar |
 |---|---|---|
-| **Live och realtidsdata** | [Trafik live](Live-Traffic-sv) | Azimutalkarta över all insamlad MS-trafik, med ett moln av de mest sannolika spåren för varje förbindelse, bandfärger och blinkande nya spots |
+| **Live och realtidsdata** | [Trafik live](Live-Traffic-sv) | Azimutalkarta över all insamlad MS-trafik, med ett moln av de mest sannolika spåren för varje förbindelse, bandfärger och blinkning när en motstation svarar dig |
 | | [Radarflöde](Radar-Flux-sv) | Meteorer per timme och spårhöjder avlästa från SKiYMET-radarn i Collm, bild från Sodankylä, uppskattning för ditt band |
 | | [GRAVES-radar](GRAVES-Radar-sv) | Forward scatter-sträckan GRAVES → dig: användbar zon i loben, sektor och steg, nästa lobpassage, hur man lyssnar |
 | | [Datainsamling](Data-Collection-sv) | Tre telnet-klusterflöden (DX cluster, RBN, DM4X/PSKReporter) och filtret för MS-spots |

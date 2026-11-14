@@ -26,7 +26,7 @@ Dalla versione 1.6 le linguette principali hanno delle **sotto-linguette** (una 
 
 | Linguetta | Sotto-linguetta | Che cosa mostra |
 |---|---|---|
-| **Live e dati real-time** | [Traffico in diretta](Live-Traffic-it) | Mappa azimutale di tutto il traffico MS raccolto, con una nuvola delle scie più probabili per ogni collegamento, colori per banda, spot nuovi lampeggianti |
+| **Live e dati real-time** | [Traffico in diretta](Live-Traffic-it) | Mappa azimutale di tutto il traffico MS raccolto, con una nuvola delle scie più probabili per ogni collegamento, colori per banda, lampeggio quando un corrispondente ti risponde |
 | | [Flusso radar](Radar-Flux-it) | Conteggi orari delle meteore e quote delle scie letti dal radar SKiYMET di Collm, immagine di Sodankylä, stima sulla tua banda |
 | | [Radar GRAVES](GRAVES-Radar-it) | La tratta in forward scatter GRAVES → te: zona utile nel fascio, settore e passo, prossimo passaggio del fascio, come ascoltare |
 | | [Raccolta dati](Data-Collection-it) | Tre flussi telnet dai cluster (DX cluster, RBN, DM4X/PSKReporter) e il filtro degli spot MS |

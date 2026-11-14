@@ -26,7 +26,7 @@ Od verze 1.6 mají hlavní karty **podkarty** (světlejší řada pod hlavní ř
 
 | Karta | Podkarta | Co zobrazuje |
 |---|---|---|
-| **Živě a data v reálném čase** | [Provoz živě](Live-Traffic-cs) | Azimutální mapa veškerého zachyceného MS provozu s oblakem nejpravděpodobnějších stop pro každé spojení, barvami pásem a blikajícími novými spoty |
+| **Živě a data v reálném čase** | [Provoz živě](Live-Traffic-cs) | Azimutální mapa veškerého zachyceného MS provozu s oblakem nejpravděpodobnějších stop pro každé spojení, barvami pásem a blikáním, když vám protistanice odpovídá |
 | | [Tok z radaru](Radar-Flux-cs) | Hodinové počty meteorů a výšky stop načtené z radaru SKiYMET v Collmu, obrázek ze Sodankylä, odhad pro vaše pásmo |
 | | [Radar GRAVES](GRAVES-Radar-cs) | Trasa dopředného rozptylu GRAVES → vy: užitečná zóna ve svazku, sektor a krok, příští průchod svazku, jak poslouchat |
 | | [Sběr dat](Data-Collection-cs) | Tři telnetové proudy clusterů (DX cluster, RBN, DM4X/PSKReporter) a filtr MS spotů |

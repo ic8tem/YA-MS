@@ -26,7 +26,7 @@ Desde a versão 1.6 as abas principais têm **subabas** (uma linha mais clara ab
 
 | Aba | Subaba | O que mostra |
 |---|---|---|
-| **Ao vivo e dados em tempo real** | [Tráfego ao vivo](Live-Traffic-pt-br) | Mapa azimutal de todo o tráfego MS coletado, com uma nuvem dos rastros mais prováveis para cada contato, cores por banda e spots novos piscando |
+| **Ao vivo e dados em tempo real** | [Tráfego ao vivo](Live-Traffic-pt-br) | Mapa azimutal de todo o tráfego MS coletado, com uma nuvem dos rastros mais prováveis para cada contato, cores por banda e piscando quando um correspondente responde a você |
 | | [Fluxo radar](Radar-Flux-pt-br) | Contagens horárias de meteoros e altitudes dos rastros lidas do radar SKiYMET de Collm, imagem de Sodankylä, estimativa na sua banda |
 | | [Radar GRAVES](GRAVES-Radar-pt-br) | O percurso de forward scatter GRAVES → você: zona útil no feixe, setor e passo, próxima passagem do feixe, como escutar |
 | | [Coleta de dados](Data-Collection-pt-br) | Três fluxos de cluster telnet (DX cluster, RBN, DM4X/PSKReporter) e o filtro dos spots MS |

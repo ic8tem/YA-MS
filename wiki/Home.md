@@ -26,7 +26,7 @@ Since version 1.6 the main tabs have **sub-tabs** (a lighter row under the main 
 
 | Tab | Sub-tab | What it shows |
 |---|---|---|
-| **Live and real-time data** | [Live traffic](Live-Traffic) | Azimuthal map of all collected MS traffic, with a cloud of the most probable trails for each contact, band colours, new spots blinking |
+| **Live and real-time data** | [Live traffic](Live-Traffic) | Azimuthal map of all collected MS traffic, with a cloud of the most probable trails for each contact, band colours, blinking when a correspondent answers you |
 | | [Radar flux](Radar-Flux) | Hourly meteor counts and trail heights read from the Collm SKiYMET radar, Sodankylä image, estimate at your band |
 | | [GRAVES radar](GRAVES-Radar) | The GRAVES → you forward-scatter path: useful zone in the beam, sector and step, next beam pass, how to listen |
 | | [Data collection](Data-Collection) | Three telnet cluster streams (DX cluster, RBN, DM4X/PSKReporter) and the MS spot filter |

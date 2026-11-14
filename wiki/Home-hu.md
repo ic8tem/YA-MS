@@ -26,7 +26,7 @@ Az 1.6-os változat óta a fő fülek **alfülekkel** rendelkeznek (egy világos
 
 | Fül | Alfül | Mit mutat |
 |---|---|---|
-| **Élő és valós idejű adatok** | [Élő forgalom](Live-Traffic-hu) | Az összes gyűjtött MS-forgalom azimutális térképe, minden összeköttetéshez a legvalószínűbb meteornyomok felhőjével, sávonkénti színekkel, villogó új spotokkal |
+| **Élő és valós idejű adatok** | [Élő forgalom](Live-Traffic-hu) | Az összes gyűjtött MS-forgalom azimutális térképe, minden összeköttetéshez a legvalószínűbb meteornyomok felhőjével, sávonkénti színekkel, villogással, ha egy ellenállomás válaszol neked |
 | | [Radarfluxus](Radar-Flux-hu) | Óránkénti meteorszámok és nyommagasságok a Collm SKiYMET radarból, a sodankyläi kép, becslés az Ön sávjára |
 | | [GRAVES-radar](GRAVES-Radar-hu) | A GRAVES → Ön előreszórásos útvonal: hasznos zóna a nyalábban, szektor és lépés, a nyaláb következő áthaladása, hogyan érdemes hallgatni |
 | | [Adatgyűjtés](Data-Collection-hu) | Három telnetes clusterfolyam (DX cluster, RBN, DM4X/PSKReporter) és az MS-spotszűrő |

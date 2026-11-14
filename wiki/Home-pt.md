@@ -26,7 +26,7 @@ Desde a versão 1.6 os separadores principais têm **subseparadores** (uma fila 
 
 | Separador | Subseparador | O que mostra |
 |---|---|---|
-| **Em direto e dados em tempo real** | [Tráfego em direto](Live-Traffic-pt) | Mapa azimutal de todo o tráfego MS recolhido, com uma nuvem dos rastos mais prováveis para cada contacto, cores por banda e spots novos a piscar |
+| **Em direto e dados em tempo real** | [Tráfego em direto](Live-Traffic-pt) | Mapa azimutal de todo o tráfego MS recolhido, com uma nuvem dos rastos mais prováveis para cada contacto, cores por banda e a piscar quando um correspondente lhe responde |
 | | [Fluxo radar](Radar-Flux-pt) | Contagens horárias de meteoros e altitudes dos rastos lidas do radar SKiYMET de Collm, imagem de Sodankylä, estimativa na sua banda |
 | | [Radar GRAVES](GRAVES-Radar-pt) | O percurso de forward scatter GRAVES → si: zona útil no feixe, setor e passo, próxima passagem do feixe, como escutar |
 | | [Recolha de dados](Data-Collection-pt) | Três fluxos de cluster telnet (DX cluster, RBN, DM4X/PSKReporter) e o filtro dos spots MS |

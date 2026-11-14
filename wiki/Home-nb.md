@@ -26,7 +26,7 @@ Fra versjon 1.6 har hovedfanene **underfaner** (en lysere rad under hovedraden).
 
 | Fane | Underfane | Hva den viser |
 |---|---|---|
-| **Direkte og sanntidsdata** | [Trafikk direkte](Live-Traffic-nb) | Asimutalt kart over all innsamlet MS-trafikk, med en sky av de mest sannsynlige sporene for hver forbindelse, båndfarger og blinkende nye spot |
+| **Direkte og sanntidsdata** | [Trafikk direkte](Live-Traffic-nb) | Asimutalt kart over all innsamlet MS-trafikk, med en sky av de mest sannsynlige sporene for hver forbindelse, båndfarger og blinking når en motstasjon svarer deg |
 | | [Radarfluks](Radar-Flux-nb) | Meteortellinger per time og sporhøyder lest fra SKiYMET-radaren i Collm, bilde fra Sodankylä, estimat for ditt bånd |
 | | [Radar GRAVES](GRAVES-Radar-nb) | Forward scatter-strekningen GRAVES → deg: nyttig sone i strålen, sektor og steg, neste strålepassering, slik lytter du |
 | | [Datainnsamling](Data-Collection-nb) | Tre telnet-clusterstrømmer (DX cluster, RBN, DM4X/PSKReporter) og filteret for MS-spot |

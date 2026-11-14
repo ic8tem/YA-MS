@@ -26,7 +26,7 @@ Sinds versie 1.6 hebben de hoofdtabbladen **subtabbladen** (een lichtere rij ond
 
 | Tabblad | Subtabblad | Wat het toont |
 |---|---|---|
-| **Live en realtimegegevens** | [Verkeer live](Live-Traffic-nl) | Azimutale kaart van al het verzamelde MS-verkeer, met per verbinding een wolk van de meest waarschijnlijke sporen, kleuren per band, knipperende nieuwe spots |
+| **Live en realtimegegevens** | [Verkeer live](Live-Traffic-nl) | Azimutale kaart van al het verzamelde MS-verkeer, met per verbinding een wolk van de meest waarschijnlijke sporen, kleuren per band, knipperend als een tegenstation je antwoordt |
 | | [Radarflux](Radar-Flux-nl) | Uurtellingen van meteoren en spoorhoogtes uitgelezen van de SKiYMET-radar in Collm, beeld van Sodankylä, schatting op jouw band |
 | | [Radar GRAVES](GRAVES-Radar-nl) | Het forward-scatter-traject GRAVES → jij: bruikbare zone in de bundel, sector en stap, volgende bundeldoorgang, hoe je luistert |
 | | [Gegevensverzameling](Data-Collection-nl) | Drie telnet-stromen van clusters (DX-cluster, RBN, DM4X/PSKReporter) en het filter voor MS-spots |

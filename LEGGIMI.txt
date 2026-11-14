@@ -292,8 +292,9 @@ LINGUETTE (dalla 1.6.0 le linguette principali hanno delle sottolinguette)
                         144 arancio, 222 rosa, 432 viola) e la NUVOLA della maggiore concentrazione di scie
                         probabili per quella tratta e quell'ora (riflessione speculare, somma degli sciami
                         attivi, una ellisse per lato; tratteggiata = solo sporadiche). Spot con una stazione
-                        fuori dalla mappa scartati; spot appena arrivati (meno di 3 minuti) lampeggiano per
-                        un minuto. Raggio della mappa 600-3500 km, finestra di tempo da 15 minuti a 24 ore.
+                        fuori dalla mappa scartati. Lampeggiano solo le decodifiche della tua WSJT-X (UDP) in
+                        cui un corrispondente ti risponde. Raggio della mappa 600-3500 km, finestra di tempo
+                        da 3 minuti a 24 ore.
     Flusso radar        controlla ogni 5 minuti tutte le fonti esterne e riscarica solo quelle cambiate; senza
                         connessione internet compare un avviso (una volta) e la barra in basso diventa rossa.
                         Legge il grafico del radar SKiYMET di Collm, ne legge i conteggi

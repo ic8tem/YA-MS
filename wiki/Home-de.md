@@ -26,7 +26,7 @@ Seit Version 1.6 haben die Hauptreiter **Unterreiter** (eine hellere Reihe unter
 
 | Reiter | Unterreiter | Was er zeigt |
 |---|---|---|
-| **Live und Echtzeitdaten** | [Verkehr live](Live-Traffic-de) | Azimutalkarte des gesamten gesammelten MS-Verkehrs, mit einer Wolke der wahrscheinlichsten Spuren für jede Verbindung, Bandfarben, blinkenden neuen Spots |
+| **Live und Echtzeitdaten** | [Verkehr live](Live-Traffic-de) | Azimutalkarte des gesamten gesammelten MS-Verkehrs, mit einer Wolke der wahrscheinlichsten Spuren für jede Verbindung, Bandfarben, Blinken, wenn dir ein Partner antwortet |
 | | [Radarfluss](Radar-Flux-de) | Stündliche Meteorzählungen und Spurhöhen vom SKiYMET-Radar Collm, Bild aus Sodankylä, Schätzung für dein Band |
 | | [Radar GRAVES](GRAVES-Radar-de) | Die Forward-Scatter-Strecke GRAVES → du: nutzbare Zone im Strahl, Sektor und Schritt, nächster Strahldurchgang, wie man zuhört |
 | | [Datensammlung](Data-Collection-de) | Drei Telnet-Cluster-Verbindungen (DX-Cluster, RBN, DM4X/PSKReporter) und der MS-Spotfilter |

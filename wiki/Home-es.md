@@ -26,7 +26,7 @@ Desde la versión 1.6 las pestañas principales tienen **subpestañas** (una fil
 
 | Pestaña | Subpestaña | Qué muestra |
 |---|---|---|
-| **En directo y datos en tiempo real** | [Tráfico en directo](Live-Traffic-es) | Mapa azimutal de todo el tráfico MS recogido, con una nube de las estelas más probables para cada contacto, colores por banda y spots nuevos parpadeando |
+| **En directo y datos en tiempo real** | [Tráfico en directo](Live-Traffic-es) | Mapa azimutal de todo el tráfico MS recogido, con una nube de las estelas más probables para cada contacto, colores por banda y parpadeo cuando un corresponsal le responde |
 | | [Flujo radar](Radar-Flux-es) | Recuentos horarios de meteoros y alturas de las estelas leídos del radar SKiYMET de Collm, imagen de Sodankylä, estimación en tu banda |
 | | [Radar GRAVES](GRAVES-Radar-es) | El trayecto de forward scatter GRAVES → tú: zona útil en el haz, sector y paso, próximo paso del haz, cómo escuchar |
 | | [Recogida de datos](Data-Collection-es) | Tres flujos de cluster telnet (DX cluster, RBN, DM4X/PSKReporter) y el filtro de los spots MS |

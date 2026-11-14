@@ -26,7 +26,7 @@ Frá útgáfu 1.6 hafa aðalfliparnir **undirflipa** (ljósari röð undir aðal
 
 | Flipi | Undirflipi | Hvað hann sýnir |
 |---|---|---|
-| **Beint og rauntímagögn** | [Umferð í beinni](Live-Traffic-is) | Jafnfjarlægðarkort með allri safnaðri MS-umferð, með skýi líklegustu slóðanna fyrir hvert samband, litum eftir tíðnisviði og blikkandi nýjum spotum |
+| **Beint og rauntímagögn** | [Umferð í beinni](Live-Traffic-is) | Jafnfjarlægðarkort með allri safnaðri MS-umferð, með skýi líklegustu slóðanna fyrir hvert samband, litum eftir tíðnisviði og blikki þegar mótstöð svarar þér |
 | | [Ratsjárflæði](Radar-Flux-is) | Fjöldi loftsteina á klukkustund og hæð slóða lesin af SKiYMET-ratsjánni í Collm, mynd frá Sodankylä, mat fyrir þitt tíðnisvið |
 | | [GRAVES-ratsjá](GRAVES-Radar-is) | Forward scatter-leiðin GRAVES → þú: nýtilegt svæði í geislanum, geiri og skref, næsta yfirferð geislans, hvernig á að hlusta |
 | | [Gagnasöfnun](Data-Collection-is) | Þrír telnet-straumar frá klösum (DX cluster, RBN, DM4X/PSKReporter) og sía fyrir MS-spot |

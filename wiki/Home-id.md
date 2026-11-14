@@ -26,7 +26,7 @@ Sejak versi 1.6 tab utama memiliki **sub-tab** (baris yang lebih terang di bawah
 
 | Tab | Sub-tab | Yang ditampilkan |
 |---|---|---|
-| **Langsung dan data waktu nyata** | [Lalu lintas langsung](Live-Traffic-id) | Peta azimutal seluruh lalu lintas MS yang terkumpul, dengan awan jejak paling mungkin untuk setiap kontak, warna per band, spot baru yang berkedip |
+| **Langsung dan data waktu nyata** | [Lalu lintas langsung](Live-Traffic-id) | Peta azimutal seluruh lalu lintas MS yang terkumpul, dengan awan jejak paling mungkin untuk setiap kontak, warna per band, berkedip saat koresponden membalas Anda |
 | | [Fluks radar](Radar-Flux-id) | Hitungan meteor per jam dan ketinggian jejak yang dibaca dari radar SKiYMET Collm, gambar Sodankylä, perkiraan untuk band Anda |
 | | [Radar GRAVES](GRAVES-Radar-id) | Lintasan forward scatter GRAVES → Anda: zona berguna dalam berkas, sektor dan langkah, lintasan berkas berikutnya, cara mendengarkan |
 | | [Pengumpulan data](Data-Collection-id) | Tiga aliran cluster telnet (DX cluster, RBN, DM4X/PSKReporter) dan filter spot MS |

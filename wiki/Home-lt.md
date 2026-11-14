@@ -26,7 +26,7 @@ Nuo 1.6 versijos pagrindinės kortelės turi **vidines korteles** (šviesesnė e
 
 | Kortelė | Vidinė kortelė | Ką rodo |
 |---|---|---|
-| **Tiesiogiai ir realiojo laiko duomenys** | [Eismas realiuoju laiku](Live-Traffic-lt) | Azimutinis viso surinkto MS eismo žemėlapis, kiekvienam ryšiui – labiausiai tikėtinų pėdsakų debesis, juostų spalvos, nauji spotai mirksi |
+| **Tiesiogiai ir realiojo laiko duomenys** | [Eismas realiuoju laiku](Live-Traffic-lt) | Azimutinis viso surinkto MS eismo žemėlapis, kiekvienam ryšiui – labiausiai tikėtinų pėdsakų debesis, juostų spalvos, mirksi, kai korespondentas jums atsako |
 | | [Radaro srautas](Radar-Flux-lt) | Iš Collm SKiYMET radaro nuskaityti valandiniai meteorų skaičiai ir pėdsakų aukščiai, Sodankylä vaizdas, įvertis jūsų juostai |
 | | [GRAVES radaras](GRAVES-Radar-lt) | Forward scatter trasa GRAVES → jūs: naudingoji zona pluošte, sektorius ir žingsnis, kitas pluošto praėjimas, kaip klausytis |
 | | [Duomenų rinkimas](Data-Collection-lt) | Trys telnet klasterių srautai (DX cluster, RBN, DM4X/PSKReporter) ir MS spotų filtras |

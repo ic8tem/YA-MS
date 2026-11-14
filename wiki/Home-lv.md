@@ -26,7 +26,7 @@ Kopš 1.6. versijas galvenajām cilnēm ir **apakšcilnes** (gaišāka rinda zem
 
 | Cilne | Apakšcilne | Ko tā rāda |
 |---|---|---|
-| **Tiešsaiste un reāllaika dati** | [Satiksme tiešsaistē](Live-Traffic-lv) | Azimutāla karte ar visu savākto MS satiksmi, katram sakaram varbūtīgāko sliežu mākonis, joslu krāsas, jaunie spoti mirgo |
+| **Tiešsaiste un reāllaika dati** | [Satiksme tiešsaistē](Live-Traffic-lv) | Azimutāla karte ar visu savākto MS satiksmi, katram sakaram varbūtīgāko sliežu mākonis, joslu krāsas, mirgošana, kad korespondents tev atbild |
 | | [Radara meteoru skaits](Radar-Flux-lv) | Meteoru skaits stundā un sliežu augstumi no Collm SKiYMET radara, Sodankylä attēls, novērtējums tavai joslai |
 | | [GRAVES radars](GRAVES-Radar-lv) | Forward scatter trase GRAVES → tu: lietderīgā zona kūlī, sektors un solis, nākamā kūļa pāreja, kā klausīties |
 | | [Datu vākšana](Data-Collection-lv) | Trīs telnet klasteru plūsmas (DX cluster, RBN, DM4X/PSKReporter) un MS spotu filtrs |

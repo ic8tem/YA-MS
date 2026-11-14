@@ -49,6 +49,9 @@ NOVITA' DELLA 1.8.11
     scatter, non E-sporadico ne' tropo) in verde chiaro, con la riga della tabella che lampeggia sempre; da MQTT
     arrivano anche gli FT8 di 6 m, 4 m, 2 m, 1,25 m e 70 cm. Gli spot WSJT-X via UDP che riguardano la mia stazione
     hanno un tratteggio che lampeggia sempre. Finestra minima degli spot: 3 minuti.
+  - Rimando a PSKReporter delle decodifiche MS ricevute via UDP, acceso di partenza e senza comandi: si attiva da solo
+    se il mio nominativo manca da 20 minuti tra chi manda rapporti a PSKReporter (il programma digitale non li manda),
+    ogni 5 minuti, e si ferma appena il programma digitale riprende. Spegnimento: psk_rimando=0 in data/config.ini.
 
 NOVITA' DELLA 1.8.10
   - Raccolta dati: quinta fonte WSJT-X / JTDX / MSHV via UDP, come in LIVETROPOVHF (porta 2237, anche multicast;

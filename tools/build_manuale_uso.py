@@ -280,6 +280,7 @@ li("controlla_aggiornamenti=0: non controllare le versioni nuove; aggiornamenti_
 li("lobo_diagramma, angolo_beta, lunghezza_scie, giudizio_classico: le caselle del calcolo.")
 li("raggio_iniziale (0 = doppio dell'ITU, 1 = ITU, 2 = escluso), durata_ping (0 = λ², 1 = osservata).")
 li("rmob_osservatore, rmob_automatico, rmob_url: RMOB.")
+li("psk_rimando=0: spegne il rimando a PSKReporter delle decodifiche MS (MSK144, FSK441, PSK2K, JTMS) ricevute via UDP. È acceso di partenza e lavora da solo: se il tuo nominativo non compare da più di 20 minuti tra chi manda rapporti a PSKReporter (il programma digitale non sta inviando), YA-MS manda ogni 5 minuti le stazioni MS che decodifichi, con te come ricevitore; appena il programma digitale riprende a inviare, YA-MS si ferma. Una riga nella console UDP dice quando parte e quando si ferma.")
 tag("ATTENZIONE", "Modifica config.ini solo con il programma chiuso: alla chiusura YA-MS lo riscrive.")
 
 # ======================================================================

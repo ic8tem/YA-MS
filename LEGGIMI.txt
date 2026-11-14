@@ -58,6 +58,8 @@ NOVITA' DELLA 1.8.11
   - Nuova linguetta "Impostazioni": carattere, tema e lingua, aggiornamenti del programma, aggiornamento automatico
     delle fonti in diretta, RMOB, righe dei comandi e cartella dei dati. Il cursore del carattere non e' piu' nella
     prima riga dei comandi. Legenda della mappa con i colori dei radianti sempre visibili.
+  - CALL3: nuovo strato JTDX (data/grid_data.bin, circa 365.000 nominativi): solo per chi non ha un locatore a 6
+    caratteri in nessun'altra fonte, solo nello stesso quadrato di quello ricevuto; non si scrive mai in call3.txt.
 
 NOVITA' DELLA 1.8.10
   - Raccolta dati: quinta fonte WSJT-X / JTDX / MSHV via UDP, come in LIVETROPOVHF (porta 2237, anche multicast;

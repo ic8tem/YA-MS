@@ -256,6 +256,7 @@ ITU-R P.843
 Il Mercatore si sposta trascinandolo con il mouse; doppio clic: di nuovo centrato sulla mia stazione. L'azimutale resta centrata sulla mia stazione.
 Il corrispondente diventa GRAVES (JN27SI, quota 200 m) e la tratta principale viene ricalcolata
 Il file scelto non e' un file locale.
+Il locator scritto è diverso da quello dell'archivio CALL3: premi per aggiornarlo e memorizzarlo (voce a mano, scritta subito anche dentro call3.txt).
 Il mio locator
 Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.
 Ilkka Yrjola OH5IY - MS-Soft (concetto di efficienza dello sciame), www.kolumbus.fi/oh5iy (sito storico)
@@ -321,6 +322,7 @@ Mappa quadrati
 Mappa:
 Mappa: bordo = {0} km dalla stazione. {1}
 Media pesata con lo ZHR: k = {0:F2} (regola SM6FHZ: 3, più prudente).\n\nApplico questo esponente?
+Memorizza
 Mercatore
 Mese non indicato: uso il mese corrente.
 Meteore/ora - ieri {0} e oggi {1} (UTC)
@@ -782,6 +784,7 @@ zona dello sciame {0}: {1:F0} % delle riflessioni, {2:F0} × {3:F0} km, asse a {
 {0} h
 {0} h rispetto ad adesso
 {0} km dalla tua stazione
+{0} memorizzato nel CALL3: {1}
 {0} nel CALL3: {1}
 {0} non trovato nel pacchetto
 {0} non è nel CALL3: scrivi il locator a mano

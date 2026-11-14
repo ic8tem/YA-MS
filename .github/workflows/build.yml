@@ -346,6 +346,7 @@ jobs:
             YA-MS - previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter.
             A cura di Costantino IC8TEM.
 
+            Novità della 1.8.18: nel Traffico in diretta lampeggiano solo le decodifiche della tua WSJT-X (UDP) in cui un corrispondente ti risponde; spot nuovi, FT8 isolati e messaggi da altri utenti di YA-MS restano fermi.
             Novità della 1.8.17: fascia sempre visibile sopra le linguette con l'ora migliore del giorno, lo sciame più favorevole e sei orizzonti di previsione (adesso, tra 1, 3, 6, 12 e 24 ore); la linea del tempo è in cima al Calcolo previsionale.
             Novità della 1.8.16: il catalogo IAU MDC degli sciami stabiliti è dentro i pacchetti, così il confronto dei radianti nella linguetta Sciami funziona dal primo avvio; i nomi degli autori con gli accenti non si storpiano più.
             Novità della 1.8.15: pulsante «Memorizza» accanto al locator del corrispondente (un locator diverso va nel CALL3 e subito in call3.txt); nel Traffico in diretta i dettagli dello spot in un riquadro in rilievo sopra la mappa, in alto a sinistra.

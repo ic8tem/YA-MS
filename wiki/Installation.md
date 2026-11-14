@@ -89,7 +89,7 @@ Install the new version **over the old one** (same installer, same folder). Sett
 
 **From 1.8.0 YA-MS updates itself.** At start-up, once a day, it checks GitHub for a new version and offers it; the **Updates** button in the bottom bar checks by hand. *Update now* downloads the portable package for your system, replaces the program files, keeps the `data` folder (program files that change are first copied to `data/backup/v<old version>`) and restarts; the program folder must be writable. If program files are missing at start-up (in `data` or `doc`), a window lists them and offers to download them again from GitHub. To stop checking for new versions set `controlla_aggiornamenti=0` in `config.ini`.
 
-From version 1.8.6 updates are automatic and silent: at start-up and then every 6 hours YA-MS checks GitHub and, if there is a new version, downloads it, installs it and restarts by itself without asking anything (only the status bar says so). Missing files are also downloaded again without asking. The window described below appears only when you press "Updates" or if you write aggiornamenti_automatici=0 in the file data/config.ini.
+From version 1.8.6 updates are automatic and silent: at start-up and then every 30 minutes YA-MS checks GitHub and, if there is a new version, downloads it, installs it and restarts by itself without asking anything (only the status bar says so). Missing files are also downloaded again without asking. The window described below appears only when you press "Updates" or if you write aggiornamenti_automatici=0 in the file data/config.ini.
 
 ## Building from source (developers only)
 

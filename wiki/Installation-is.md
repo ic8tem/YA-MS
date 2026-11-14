@@ -89,7 +89,7 @@ Settu nýju útgáfuna upp **yfir þá gömlu** (sama uppsetningarforrit, sama m
 
 **Frá 1.8.0 uppfærir YA-MS sig sjálft.** Við ræsingu athugar það einu sinni á dag á GitHub hvort ný útgáfa sé til og býður hana; hnappurinn **Uppfærslur** í neðri stikunni athugar handvirkt. *Uppfæra núna* sækir ferðapakkann fyrir kerfið þitt, skiptir út skrám forritsins, heldur möppunni `data` (skrár forritsins sem breytast eru fyrst afritaðar í `data/backup/v<gömul útgáfa>`) og endurræsist; mappa forritsins þarf að vera skrifanleg. Ef skrár forritsins vantar við ræsingu (í `data` eða `doc`) sýnir gluggi þær og býðst til að sækja þær aftur af GitHub. Til að hætta að leita að nýjum útgáfum skaltu setja `controlla_aggiornamenti=0` í `config.ini`.
 
-Frá útgáfu 1.8.6 eru uppfærslur sjálfvirkar og hljóðlausar: við ræsingu og síðan á 6 klukkustunda fresti athugar YA-MS GitHub og, ef ný útgáfa er til, sækir hana, setur hana upp og endurræsir sig sjálft án þess að spyrja (aðeins stöðustikan segir frá því). Skrár sem vantar eru líka sóttar aftur án þess að spyrja. Glugginn sem lýst er hér að neðan birtist aðeins þegar þú ýtir á "Uppfærslur" eða ef þú skrifar aggiornamenti_automatici=0 í skrána data/config.ini.
+Frá útgáfu 1.8.6 eru uppfærslur sjálfvirkar og hljóðlausar: við ræsingu og síðan á 30 mínútna fresti athugar YA-MS GitHub og, ef ný útgáfa er til, sækir hana, setur hana upp og endurræsir sig sjálft án þess að spyrja (aðeins stöðustikan segir frá því). Skrár sem vantar eru líka sóttar aftur án þess að spyrja. Glugginn sem lýst er hér að neðan birtist aðeins þegar þú ýtir á "Uppfærslur" eða ef þú skrifar aggiornamenti_automatici=0 í skrána data/config.ini.
 
 ## Smíði úr frumkóða (aðeins fyrir forritara)
 

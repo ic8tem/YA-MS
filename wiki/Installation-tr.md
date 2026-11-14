@@ -89,7 +89,7 @@ Yeni sürümü **eskisinin üzerine** kurun (aynı kurulum programı, aynı klas
 
 **1.8.0'dan itibaren YA-MS kendini günceller.** Açılışta günde bir kez GitHub'da yeni bir sürüm olup olmadığını denetler ve önerir; alt çubuktaki **Güncellemeler** düğmesi elle denetler. *Şimdi güncelle* sisteminiz için taşınabilir paketi indirir, program dosyalarını değiştirir, `data` klasörünü korur (değişen program dosyaları önce `data/backup/v<eski sürüm>` klasörüne kopyalanır) ve yeniden başlar; program klasörüne yazılabilmelidir. Açılışta program dosyaları eksikse (`data` veya `doc` içinde), bir pencere bunları listeler ve GitHub'dan yeniden indirmeyi önerir. Yeni sürümleri denetlememek için `config.ini` içinde `controlla_aggiornamenti=0` yapın.
 
-1.8.6 sürümünden itibaren güncellemeler otomatik ve sessizdir: başlangıçta ve ardından her 6 saatte bir YA-MS GitHub'ı denetler ve yeni bir sürüm varsa indirir, kurar ve hiçbir şey sormadan kendini yeniden başlatır (bunu yalnızca durum çubuğu bildirir). Eksik dosyalar da sormadan yeniden indirilir. Aşağıda anlatılan pencere yalnızca "Güncellemeler"e basınca ya da data/config.ini dosyasına aggiornamenti_automatici=0 yazarsan görünür.
+1.8.6 sürümünden itibaren güncellemeler otomatik ve sessizdir: başlangıçta ve ardından her 30 dakikada bir YA-MS GitHub'ı denetler ve yeni bir sürüm varsa indirir, kurar ve hiçbir şey sormadan kendini yeniden başlatır (bunu yalnızca durum çubuğu bildirir). Eksik dosyalar da sormadan yeniden indirilir. Aşağıda anlatılan pencere yalnızca "Güncellemeler"e basınca ya da data/config.ini dosyasına aggiornamenti_automatici=0 yazarsan görünür.
 
 ## Kaynak koddan derleme (yalnızca geliştiriciler)
 

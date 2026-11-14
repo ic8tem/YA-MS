@@ -89,7 +89,7 @@ Installér den nye version **oven i den gamle** (samme installationsprogram, sam
 
 **Fra 1.8.0 opdaterer YA-MS sig selv.** Ved start tjekker det én gang om dagen på GitHub, om der findes en ny version, og tilbyder den; knappen **Opdateringer** i den nederste bjælke tjekker manuelt. *Opdater nu* henter den portable pakke til dit system, erstatter programfilerne, beholder mappen `data` (programfiler, der ændres, kopieres først til `data/backup/v<gammel version>`) og genstarter; programmappen skal være skrivbar. Mangler der programfiler ved start (i `data` eller `doc`), viser et vindue dem og tilbyder at hente dem igen fra GitHub. For ikke længere at søge efter nye versioner, sæt `controlla_aggiornamenti=0` i `config.ini`.
 
-Fra version 1.8.6 er opdateringer automatiske og lydløse: ved start og derefter hver 6. time tjekker YA-MS GitHub og, hvis der er en ny version, henter den, installerer den og genstarter af sig selv uden at spørge om noget (kun statuslinjen siger det). Manglende filer hentes også igen uden at spørge. Vinduet beskrevet nedenfor vises kun, når du trykker på "Opdateringer", eller hvis du skriver aggiornamenti_automatici=0 i filen data/config.ini.
+Fra version 1.8.6 er opdateringer automatiske og lydløse: ved start og derefter hvert 30. minut tjekker YA-MS GitHub og, hvis der er en ny version, henter den, installerer den og genstarter af sig selv uden at spørge om noget (kun statuslinjen siger det). Manglende filer hentes også igen uden at spørge. Vinduet beskrevet nedenfor vises kun, når du trykker på "Opdateringer", eller hvis du skriver aggiornamenti_automatici=0 i filen data/config.ini.
 
 ## Byg fra kildekoden (kun for udviklere)
 

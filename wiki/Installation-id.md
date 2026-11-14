@@ -89,7 +89,7 @@ Pasang versi baru **di atas versi lama** (installer yang sama, folder yang sama)
 
 **Sejak 1.8.0 YA-MS memperbarui dirinya sendiri.** Saat dijalankan, sekali sehari, ia memeriksa di GitHub apakah ada versi baru dan menawarkannya; tombol **Pembaruan** di bilah bawah memeriksa secara manual. *Perbarui sekarang* mengunduh paket portabel untuk sistem Anda, mengganti berkas program, mempertahankan folder `data` (berkas program yang berubah disalin dulu ke `data/backup/v<versi lama>`) lalu dijalankan ulang; folder program harus dapat ditulisi. Jika saat dijalankan ada berkas program yang hilang (di `data` atau `doc`), sebuah jendela mendaftarnya dan menawarkan untuk mengunduhnya lagi dari GitHub. Agar tidak mencari versi baru, setel `controlla_aggiornamenti=0` di `config.ini`.
 
-Sejak versi 1.8.6 pembaruan berjalan otomatis dan diam-diam: saat mulai lalu setiap 6 jam YA-MS memeriksa GitHub dan, jika ada versi baru, mengunduhnya, memasangnya, dan memulai ulang sendiri tanpa menanyakan apa pun (hanya bilah status yang memberi tahu). Berkas yang hilang juga diunduh ulang tanpa bertanya. Jendela yang dijelaskan di bawah hanya muncul saat menekan "Pembaruan" atau jika Anda menulis aggiornamenti_automatici=0 di berkas data/config.ini.
+Sejak versi 1.8.6 pembaruan berjalan otomatis dan diam-diam: saat mulai lalu setiap 30 menit YA-MS memeriksa GitHub dan, jika ada versi baru, mengunduhnya, memasangnya, dan memulai ulang sendiri tanpa menanyakan apa pun (hanya bilah status yang memberi tahu). Berkas yang hilang juga diunduh ulang tanpa bertanya. Jendela yang dijelaskan di bawah hanya muncul saat menekan "Pembaruan" atau jika Anda menulis aggiornamenti_automatici=0 di berkas data/config.ini.
 
 ## Membangun dari kode sumber (khusus pengembang)
 

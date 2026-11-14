@@ -3,7 +3,7 @@
 //    "Aggiorna adesso", "Più tardi", "Salta questa versione"; il pulsante "Aggiornamenti" nella barra in basso
 //    fa lo stesso controllo a mano, anche per una versione saltata;
 //  - aggiornamenti automatici silenziosi (richiesta dell'autore, 13/11/2026; aggiornamenti_automatici=1, di partenza):
-//    all'avvio e poi ogni 6 ore si guarda l'ultima Release e, se e' piu' nuova, la si scarica, installa e il programma
+//    all'avvio e poi ogni 30 minuti (richiesta dell'autore, 14/11/2026; prima 6 ore) si guarda l'ultima Release e, se e' piu' nuova, la si scarica, installa e il programma
 //    si riavvia da solo, senza chiedere nulla (avviso solo nella barra di stato); anche i file mancanti si riscaricano
 //    senza chiedere. Con aggiornamenti_automatici=0 torna la finestra con le tre scelte;
 //  - all'avvio si controlla che ci siano tutti i file del programma (data e doc): se ne mancano, una finestra
@@ -32,9 +32,9 @@ namespace YAMS
         async Task StartupUpdateChecks()
         {
             if (Program.ScreenshotDir != null) return;
-            if (autoUpdateTimer == null)   // anche nella finestra ricreata (lingua, tema): controllo ogni 6 ore
+            if (autoUpdateTimer == null)   // anche nella finestra ricreata (lingua, tema): controllo ogni 30 minuti
             {
-                autoUpdateTimer = new DispatcherTimer { Interval = TimeSpan.FromHours(6) };
+                autoUpdateTimer = new DispatcherTimer { Interval = TimeSpan.FromMinutes(30) };
                 autoUpdateTimer.Tick += async (s, e) => { if (AutoUpdates) await AutoUpdate(); };
                 autoUpdateTimer.Start();
                 Closed += (s, e) => autoUpdateTimer.Stop();

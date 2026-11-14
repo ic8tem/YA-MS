@@ -89,7 +89,7 @@ Programa nepasirašyta Apple, todėl pirmą kartą macOS prašo patvirtinimo; ž
 
 **Nuo 1.8.0 YA-MS atsinaujina pati.** Paleidžiant kartą per dieną ji patikrina GitHub, ar yra nauja versija, ir ją pasiūlo; mygtukas **Atnaujinimai** apatinėje juostoje tikrina rankiniu būdu. *Atnaujinti dabar* atsisiunčia jūsų sistemos nešiojamąjį paketą, pakeičia programos failus, palieka aplanką `data` (pasikeitę programos failai pirmiau nukopijuojami į `data/backup/v<sena versija>`) ir pasileidžia iš naujo; į programos aplanką turi būti galima rašyti. Jei paleidžiant trūksta programos failų (aplanke `data` arba `doc`), langas juos išvardija ir pasiūlo vėl atsisiųsti iš GitHub. Kad nebeieškotų naujų versijų, `config.ini` nustatykite `controlla_aggiornamenti=0`.
 
-Nuo 1.8.6 versijos atnaujinimai yra automatiniai ir tylūs: paleidžiant ir vėliau kas 6 valandas YA-MS tikrina GitHub ir, jei yra nauja versija, ją atsisiunčia, įdiegia ir pats paleidžiamas iš naujo nieko neklausdamas (tai parodo tik būsenos juosta). Trūkstami failai taip pat atsisiunčiami iš naujo neklausiant. Toliau aprašytas langas atsiranda tik paspaudus "Atnaujinimai" arba jei faile data/config.ini įrašai aggiornamenti_automatici=0.
+Nuo 1.8.6 versijos atnaujinimai yra automatiniai ir tylūs: paleidžiant ir vėliau kas 30 minučių YA-MS tikrina GitHub ir, jei yra nauja versija, ją atsisiunčia, įdiegia ir pats paleidžiamas iš naujo nieko neklausdamas (tai parodo tik būsenos juosta). Trūkstami failai taip pat atsisiunčiami iš naujo neklausiant. Toliau aprašytas langas atsiranda tik paspaudus "Atnaujinimai" arba jei faile data/config.ini įrašai aggiornamenti_automatici=0.
 
 ## Kompiliavimas iš išeitinio kodo (tik kūrėjams)
 

@@ -89,7 +89,7 @@ Paigalda uus versioon **vana peale** (sama paigaldaja, sama kaust). Seaded (`con
 
 **Alates versioonist 1.8.0 uuendab YA-MS end ise.** Käivitamisel kontrollib see kord päevas GitHubis, kas on uus versioon, ja pakub seda; alumise riba nupp **Uuendused** kontrollib käsitsi. *Uuenda kohe* laadib alla sinu süsteemi kaasaskantava paketi, asendab programmi failid, jätab alles kausta `data` (muutuvad programmifailid kopeeritakse enne kausta `data/backup/v<vana versioon>`) ja taaskäivitub; programmi kaust peab olema kirjutatav. Kui käivitamisel puuduvad programmifailid (kaustas `data` või `doc`), loetleb aken need ja pakub nende uuesti allalaadimist GitHubist. Uute versioonide otsimise lõpetamiseks pane `config.ini` faili `controlla_aggiornamenti=0`.
 
-Alates versioonist 1.8.6 on uuendused automaatsed ja vaiksed: käivitamisel ja seejärel iga 6 tunni järel kontrollib YA-MS GitHubi ning uue versiooni olemasolul laadib selle alla, paigaldab ja käivitub ise uuesti midagi küsimata (seda näitab ainult olekuriba). Ka puuduvad failid laaditakse uuesti alla küsimata. Allpool kirjeldatud aken ilmub ainult nupule "Uuendused" vajutades või kui kirjutad faili data/config.ini rea aggiornamenti_automatici=0.
+Alates versioonist 1.8.6 on uuendused automaatsed ja vaiksed: käivitamisel ja seejärel iga 30 minuti järel kontrollib YA-MS GitHubi ning uue versiooni olemasolul laadib selle alla, paigaldab ja käivitub ise uuesti midagi küsimata (seda näitab ainult olekuriba). Ka puuduvad failid laaditakse uuesti alla küsimata. Allpool kirjeldatud aken ilmub ainult nupule "Uuendused" vajutades või kui kirjutad faili data/config.ini rea aggiornamenti_automatici=0.
 
 ## Lähtekoodist ehitamine (ainult arendajatele)
 

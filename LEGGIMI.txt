@@ -52,6 +52,9 @@ NOVITA' DELLA 1.8.11
   - Rimando a PSKReporter delle decodifiche MS ricevute via UDP, acceso di partenza e senza comandi: si attiva da solo
     se il mio nominativo manca da 20 minuti tra chi manda rapporti a PSKReporter (il programma digitale non li manda),
     ogni 5 minuti, e si ferma appena il programma digitale riprende. Spegnimento: psk_rimando=0 in data/config.ini.
+    Se in WSJT-X.ini (o JTDX.ini) l'invio a PSKReporter e' spento, YA-MS rimanda subito.
+  - Tempi: CALL3 da MMMonVHF ogni 12 ore (prima 7 giorni); ricerche G7VRD e controllo degli aggiornamenti ogni
+    30 minuti (prima 6 ore); le correzioni restano scritte in data/call3.txt alla chiusura e ogni 6 ore.
 
 NOVITA' DELLA 1.8.10
   - Raccolta dati: quinta fonte WSJT-X / JTDX / MSHV via UDP, come in LIVETROPOVHF (porta 2237, anche multicast;

@@ -823,5 +823,5 @@ TRA {0} ORE	IN {0} STUNDEN
 lato {0} · {1}	Seite {0} · {1}
 nessuno sciame utile	kein nützlicher Strom
 {0:F0} rifl./ora previste	{0:F0} Refl./Std. erwartet
-{0} UTC · indice {1:F1}	{0} UTC · Index {1:F1}
+indice {0:F1}	Index {0:F1}
 Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	Vorhersage für die gewählte Strecke: Mittel der Stunde, die an diesem Horizont beginnt (vier Stichproben pro Stunde). Streckenindex = Summe aus ZHR × Effizienz der aktiven Ströme; dazu die vorherrschende Seite der Strecke und der Strom mit dem größten Beitrag. Die Reflexionen pro Stunde stammen aus der experimentellen Vorhersage (Collm-Radar, Regeln von SM6FHZ), wenn Radardaten vorliegen.

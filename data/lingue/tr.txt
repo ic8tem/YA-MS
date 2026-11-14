@@ -821,5 +821,5 @@ TRA {0} ORE	{0} SAAT SONRA
 lato {0} · {1}	taraf {0} · {1}
 nessuno sciame utile	yararlı yağmur yok
 {0:F0} rifl./ora previste	{0:F0} yans./saat bekleniyor
-{0} UTC · indice {1:F1}	{0} UTC · indeks {1:F1}
+indice {0:F1}	indeks {0:F1}
 Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	Seçilen hat için tahmin: o ufukta başlayan saatin ortalaması (saatte dört örnek). Hat indeksi = etkin yağmurların ZHR × verim toplamı; ardından hattın baskın tarafı ve en çok katkı yapan yağmur. Saatlik yansımalar, radar verisi olduğunda deneysel tahminden gelir (Collm radarı, SM6FHZ kuralları).

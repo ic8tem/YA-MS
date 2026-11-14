@@ -822,5 +822,5 @@ TRA {0} ORE	PESTE {0} ORE
 lato {0} · {1}	latura {0} · {1}
 nessuno sciame utile	niciun roi util
 {0:F0} rifl./ora previste	{0:F0} refl./oră prevăzute
-{0} UTC · indice {1:F1}	{0} UTC · indice {1:F1}
+indice {0:F1}	indice {0:F1}
 Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	Prognoză pentru traseul ales: media orei care începe la acel orizont (patru eșantioane în oră). Indicele traseului = suma ZHR × eficiența roiurilor active; apoi latura predominantă a traseului și roiul care contribuie cel mai mult. Reflexiile pe oră vin din prognoza experimentală (radarul Collm, regulile SM6FHZ), când există date radar.

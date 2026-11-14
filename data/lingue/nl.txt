@@ -823,5 +823,5 @@ TRA {0} ORE	OVER {0} UUR
 lato {0} · {1}	kant {0} · {1}
 nessuno sciame utile	geen bruikbare zwerm
 {0:F0} rifl./ora previste	{0:F0} refl./uur verwacht
-{0} UTC · indice {1:F1}	{0} UTC · index {1:F1}
+indice {0:F1}	index {0:F1}
 Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	Voorspelling voor het gekozen traject: gemiddelde van het uur dat op die horizon begint (vier monsters per uur). Trajectindex = som van ZHR × efficiëntie van de actieve zwermen; daarna de overheersende kant van het traject en de zwerm die het meest bijdraagt. De reflecties per uur komen uit de experimentele voorspelling (Collm-radar, regels van SM6FHZ), als er radargegevens zijn.

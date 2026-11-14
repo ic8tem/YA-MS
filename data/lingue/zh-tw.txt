@@ -823,5 +823,5 @@ TRA {0} ORE	{0} 小時後
 lato {0} · {1}	{0} 側 · {1}
 nessuno sciame utile	無可用流星雨
 {0:F0} rifl./ora previste	預計 {0:F0} 次反射/小時
-{0} UTC · indice {1:F1}	{0} UTC · 指數 {1:F1}
+indice {0:F1}	指數 {0:F1}
 Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	所選路徑的預報：從該時間點開始的一小時的平均值（每小時四個取樣）。路徑指數 = 活躍流星雨的 ZHR × 效率之和；其次是路徑的主要一側與貢獻最大的流星雨。每小時反射次數來自實驗性預報（Collm 雷達，SM6FHZ 規則），在有雷達資料時顯示。

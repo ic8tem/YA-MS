@@ -823,5 +823,5 @@ TRA {0} ORE	DAQUI A {0} HORAS
 lato {0} · {1}	lado {0} · {1}
 nessuno sciame utile	nenhuma chuva útil
 {0:F0} rifl./ora previste	{0:F0} refl./hora previstas
-{0} UTC · indice {1:F1}	{0} UTC · índice {1:F1}
+indice {0:F1}	índice {0:F1}
 Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	Previsão para o percurso escolhido: média da hora que começa nesse horizonte (quatro amostras na hora). Índice do percurso = soma de ZHR × eficiência das chuvas ativas; depois o lado predominante do percurso e a chuva que mais contribui. As reflexões por hora vêm da previsão experimental (radar de Collm, regras de SM6FHZ), quando há dado do radar.

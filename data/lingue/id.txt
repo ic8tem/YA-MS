@@ -821,5 +821,5 @@ TRA {0} ORE	{0} JAM LAGI
 lato {0} · {1}	sisi {0} · {1}
 nessuno sciame utile	tidak ada hujan meteor berguna
 {0:F0} rifl./ora previste	{0:F0} pantulan/jam diperkirakan
-{0} UTC · indice {1:F1}	{0} UTC · indeks {1:F1}
+indice {0:F1}	indeks {0:F1}
 Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	Prakiraan untuk lintasan yang dipilih: rata-rata jam yang dimulai pada cakrawala itu (empat sampel per jam). Indeks lintasan = jumlah ZHR × efisiensi hujan meteor yang aktif; lalu sisi dominan lintasan dan hujan meteor yang paling berkontribusi. Pantulan per jam berasal dari prakiraan eksperimental (radar Collm, aturan SM6FHZ) bila ada data radar.

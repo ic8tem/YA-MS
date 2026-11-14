@@ -821,5 +821,5 @@ TRA {0} ORE	{0} گھنٹے بعد
 lato {0} · {1}	جانب {0} · {1}
 nessuno sciame utile	کوئی مفید بارش نہیں
 {0:F0} rifl./ora previste	{0:F0} انعکاس/گھنٹہ متوقع
-{0} UTC · indice {1:F1}	{0} UTC · اشاریہ {1:F1}
+indice {0:F1}	اشاریہ {0:F1}
 Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	منتخب راستے کی پیش گوئی: اس افق پر شروع ہونے والے گھنٹے کا اوسط (گھنٹے میں چار نمونے)۔ راستے کا اشاریہ = فعال بارشوں کے ZHR × کارکردگی کا مجموعہ؛ پھر راستے کی غالب جانب اور سب سے زیادہ حصہ ڈالنے والی بارش۔ فی گھنٹہ انعکاس تجرباتی پیش گوئی (Collm ریڈار، SM6FHZ کے اصول) سے آتے ہیں جب ریڈار کا ڈیٹا موجود ہو۔

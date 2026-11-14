@@ -78,7 +78,7 @@ namespace YAMS
                 string l2 = idx > 0.05 ? Lang.F("lato {0} · {1}", wa >= wb ? "A" : "B", top) : Lang.T("nessuno sciame utile");
                 double fc = ForecastAt(hNow.AddHours(Horizons[k]));
                 string l3 = fc >= 0 ? Lang.F("{0:F0} rifl./ora previste", fc) : (k == 0 && recommendShort.Length > 0 ? recommendShort.Trim() : "");
-                hzText[k].Text = Lang.F("{0} UTC · indice {1:F1}", when, idx) + "\n" + l2 + (l3.Length > 0 ? "\n" + l3 : "");
+                hzText[k].Text = when + " UTC\n" + Lang.F("indice {0:F1}", idx) + "\n" + l2 + (l3.Length > 0 ? "\n" + l3 : "");
             }
         }
     }

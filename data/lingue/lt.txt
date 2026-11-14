@@ -821,5 +821,5 @@ TRA {0} ORE	PO {0} VALANDŲ
 lato {0} · {1}	pusė {0} · {1}
 nessuno sciame utile	nėra naudingo srauto
 {0:F0} rifl./ora previste	{0:F0} atsp./val. tikimasi
-{0} UTC · indice {1:F1}	{0} UTC · indeksas {1:F1}
+indice {0:F1}	indeksas {0:F1}
 Previsione per la tratta scelta: media dell'ora che comincia a quell'orizzonte (quattro campioni nell'ora). Indice della tratta = somma di ZHR × efficienza degli sciami attivi; poi il lato prevalente della tratta e lo sciame che contribuisce di più. Le riflessioni all'ora vengono dalla previsione sperimentale (radar di Collm, regole SM6FHZ), quando c'è il dato del radar.	Prognozė pasirinktai trasai: valandos, prasidedančios tame horizonte, vidurkis (keturi mėginiai per valandą). Trasos indeksas = aktyvių srautų ZHR × efektyvumo suma; toliau vyraujanti trasos pusė ir daugiausia prisidedantis srautas. Atspindžiai per valandą imami iš eksperimentinės prognozės (Collm radaras, SM6FHZ taisyklės), kai yra radaro duomenų.

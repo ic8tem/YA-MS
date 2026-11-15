@@ -10,6 +10,7 @@ Todos los paquetes están en la página **[Releases](https://github.com/ic8tem/Y
 | Windows (64 bits), portable | `YA-MS-x.y.z-windows-x64-portatile.zip` | cualquier carpeta en la que puedas escribir |
 | Windows (32 bits, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` o `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows en ARM (64 bits, PC con Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` o `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` o `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bits): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (copiado allí en el primer arranque) |
 | Linux (64 bits), cualquier distribución | `YA-MS-x.y.z-linux-x64.tar.gz` (portable o con `./installa.sh`) | `~/YA-MS` o cualquier carpeta |
 | Linux (64 bits): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (copiado allí en el primer arranque) |

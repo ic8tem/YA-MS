@@ -18,6 +18,7 @@ LI|Linux (Debian، Ubuntu، Mint): .deb پیکیج، جسے sudo apt install ./y
 LI|Raspberry Pi 3، 4، 5، 400 اور 500: پیکیج raspberry-pi-64bit (Raspberry Pi OS 64 بٹ) یا raspberry-pi-32bit، .tar.gz یا .deb میں۔
 LI|دیگر Linux ARM نظام (مثلاً Slackware ARM64 یا armv7l بورڈ): linux-arm64 یا linux-armv7l پیکیج، ‎.tar.gz میں، Linux کی طرح۔
 LI|ARM پر Windows (Snapdragon والے PC): windows-arm64 پیکیج۔ Fedora اور openSUSE: ‎.rpm پیکیج (x86_64 یا aarch64)، sudo dnf install یا sudo zypper install کے ساتھ۔
+LI|Windows 7 SP1، 8 اور 8.1: پیکج windows7-x64 اور windows7-x86 (سیٹ اپ یا پورٹیبل zip)، جو .NET 6 سے بنائے گئے ہیں، جو ان نظاموں پر چلنے والا آخری ورژن ہے۔ Windows 7 کو اپ ڈیٹس KB2533623 اور KB2999226 درکار ہیں۔ باقی Windows پیکجوں کے لیے Windows 10 یا 11 ضروری ہے: پرانے Windows پر انسٹالر فوراً بتا دیتا ہے۔
 LI|Arch، Manjaro اور Arch Linux ARM: ‎.pkg.tar.zst پیکیج، sudo pacman -U کے ساتھ۔ Slackware64 اور Slackware ARM64: ‎.txz پیکیج، root کے طور پر installpkg کے ساتھ۔ کوئی بھی Linux: AppImage ‏(x86_64 یا aarch64)، جسے قابلِ اجرا بنا کر چلایا جاتا ہے۔ Alpine Linux: alpine-x64 یا alpine-arm64 پیکیج، ‎.tar.gz میں۔
 LI|macOS: Apple Silicon (M1 اور بعد کے) یا Intel کے لیے .dmg، یا app.zip۔ YA-MS.app کو اپنے کسی فولڈر میں گھسیٹیں (مثلاً ~/YA-MS): data فولڈر ایپ کے ساتھ بن جاتا ہے۔
 TAG|ATTENZIONE|Windows یہ پیغام دکھا سکتا ہے "Windows نے آپ کے PC کی حفاظت کی": "مزید معلومات" منتخب کریں اور پھر "بہرحال چلائیں"۔ macOS پر پہلی بار ایپ کو دائیں کلک کر کے "کھولیں" سے کھولیں۔ پروگرام کسی ادائیگی والے سرٹیفکیٹ سے دستخط شدہ نہیں ہے۔

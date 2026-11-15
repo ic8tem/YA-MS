@@ -2,7 +2,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <!-- pacchetti per Windows 7 SP1 e 8.0: .NET 6 (dotnet publish -p:Windows7=true) -->
+    <!-- pacchetti per Windows 7 SP1, 8 e 8.1: .NET 6 (dotnet publish -p:Windows7=true) -->
     <TargetFramework Condition="'$(Windows7)' == 'true'">net6.0</TargetFramework>
     <Nullable>disable</Nullable>
     <ImplicitUsings>disable</ImplicitUsings>

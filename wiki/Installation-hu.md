@@ -10,6 +10,7 @@ Minden csomag a **[Releases](https://github.com/ic8tem/YA-MS/releases)** oldalon
 | Windows (64 bites), hordozható | `YA-MS-x.y.z-windows-x64-portatile.zip` | bármely mappa, amelybe írási joga van |
 | Windows (32 bites, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` vagy `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows ARM-on (64 bites, Snapdragon processzoros PC-k) | `YA-MS-x.y.z-windows-arm64-setup.exe` vagy `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` vagy `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bites): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (az első indításkor oda másolódik) |
 | Linux (64 bites), bármely disztribúció | `YA-MS-x.y.z-linux-x64.tar.gz` (hordozhatóként vagy a `./installa.sh` szkripttel) | `~/YA-MS` vagy bármely mappa |
 | Linux (64 bites): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (az első indításkor oda másolódik) |

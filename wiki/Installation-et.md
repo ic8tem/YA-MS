@@ -10,6 +10,7 @@ Kõik paketid on lehel **[Releases](https://github.com/ic8tem/YA-MS/releases)** 
 | Windows (64-bitine), kaasaskantav | `YA-MS-x.y.z-windows-x64-portatile.zip` | mis tahes kaust, kuhu saad kirjutada |
 | Windows (32-bitine, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` või `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows ARM-il (64-bitine, Snapdragoniga arvutid) | `YA-MS-x.y.z-windows-arm64-setup.exe` või `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` või `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bitine): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (kopeeritakse sinna esimesel käivitusel) |
 | Linux (64-bitine), mis tahes distributsioon | `YA-MS-x.y.z-linux-x64.tar.gz` (kaasaskantav või `./installa.sh` abil) | `~/YA-MS` või mis tahes kaust |
 | Linux (64-bitine): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (kopeeritakse sinna esimesel käivitusel) |

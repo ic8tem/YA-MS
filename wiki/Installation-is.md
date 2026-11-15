@@ -10,6 +10,7 @@ Allir pakkar eru á síðunni **[Releases](https://github.com/ic8tem/YA-MS/relea
 | Windows (64 bita), færanleg útgáfa | `YA-MS-x.y.z-windows-x64-portatile.zip` | hvaða möppu sem þú getur skrifað í |
 | Windows (32 bita, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` eða `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows á ARM (64 bita, tölvur með Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` eða `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` eða `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bita): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (afritað þangað við fyrstu ræsingu) |
 | Linux (64 bita), hvaða dreifing sem er | `YA-MS-x.y.z-linux-x64.tar.gz` (færanlegt eða með `./installa.sh`) | `~/YA-MS` eða hvaða mappa sem er |
 | Linux (64 bita): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (afritað þangað við fyrstu ræsingu) |

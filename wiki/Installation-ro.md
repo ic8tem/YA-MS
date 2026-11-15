@@ -10,6 +10,7 @@ Toate pachetele se află pe pagina **[Releases](https://github.com/ic8tem/YA-MS/
 | Windows (64 de biți), portabil | `YA-MS-x.y.z-windows-x64-portatile.zip` | orice dosar în care puteți scrie |
 | Windows (32 de biți, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` sau `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows pe ARM (64 de biți, PC-uri cu Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` sau `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` sau `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 de biți): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (copiat acolo la prima pornire) |
 | Linux (64 de biți), orice distribuție | `YA-MS-x.y.z-linux-x64.tar.gz` (portabil sau cu `./installa.sh`) | `~/YA-MS` sau orice dosar |
 | Linux (64 de biți): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (copiat acolo la prima pornire) |

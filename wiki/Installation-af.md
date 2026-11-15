@@ -10,6 +10,7 @@ Al die pakkette is op die **[Releases](https://github.com/ic8tem/YA-MS/releases)
 | Windows (64-bis), draagbaar | `YA-MS-x.y.z-windows-x64-portatile.zip` | enige gids waarin jy kan skryf |
 | Windows (32-bis, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` of `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows op ARM (64-bis, rekenaars met Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` of `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` of `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bis): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (daarheen gekopieer by die eerste opstart) |
 | Linux (64-bis), enige distribusie | `YA-MS-x.y.z-linux-x64.tar.gz` (draagbaar of met `./installa.sh`) | `~/YA-MS` of enige gids |
 | Linux (64-bis): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (daarheen gekopieer by die eerste opstart) |

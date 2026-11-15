@@ -18,6 +18,7 @@ LI|Linux（Debian、Ubuntu、Mint）: .deb パッケージを sudo apt install .
 LI|Raspberry Pi 3、4、5、400、500: raspberry-pi-64bit パッケージ（Raspberry Pi OS 64 ビット）または raspberry-pi-32bit を、.tar.gz か .deb で使います。
 LI|その他の ARM Linux（例: Slackware ARM64 や armv7l ボード）: linux-arm64 または linux-armv7l の .tar.gz パッケージを Linux と同様に使います。
 LI|ARM 版 Windows（Snapdragon 搭載 PC）: windows-arm64 パッケージ。Fedora と openSUSE: .rpm パッケージ（x86_64 または aarch64）を sudo dnf install または sudo zypper install でインストールします。
+LI|Windows 7 SP1、8、8.1：windows7-x64 と windows7-x86 のパッケージ（セットアップまたはポータブル zip）を使います。これらはこのシステムで動く最後の版である .NET 6 でビルドされています。Windows 7 には更新プログラム KB2533623 と KB2999226 が必要です。その他の Windows パッケージは Windows 10 または 11 が必要で、古い Windows ではインストーラーがすぐにそう表示します。
 LI|Arch、Manjaro、Arch Linux ARM: .pkg.tar.zst パッケージを sudo pacman -U でインストールします。Slackware64 と Slackware ARM64: .txz パッケージを root で installpkg します。どの Linux でも: AppImage（x86_64 または aarch64）に実行権を付けて起動します。Alpine Linux: .tar.gz の alpine-x64 または alpine-arm64 パッケージ。
 LI|macOS: Apple Silicon（M1 以降）用または Intel 用の .dmg、あるいは app.zip。YA-MS.app を自分のフォルダー（例: ~/YA-MS）にドラッグしてください。data フォルダーはアプリの隣に作成されます。
 TAG|ATTENZIONE|Windows では「Windows によって PC が保護されました」と表示されることがあります。「詳細情報」を選び、続いて「実行」を押してください。macOS では、初回はアプリを右クリックして「開く」を選んでください。このプログラムは有料の証明書で署名されていません。

@@ -10,6 +10,7 @@
 | Windows (64-bit), נייד | `YA-MS-x.y.z-windows-x64-portatile.zip` | כל תיקייה שיש לך הרשאת כתיבה בה |
 | Windows (32-bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` או `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows על ARM ‏(64 ביט, מחשבים עם Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` או `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` או `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |
 | Linux (64-bit), כל הפצה | `YA-MS-x.y.z-linux-x64.tar.gz` (נייד או עם `./installa.sh`) | `~/YA-MS` או כל תיקייה |
 | Linux ‏(64 ביט): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (מועתק לשם בהפעלה הראשונה) |

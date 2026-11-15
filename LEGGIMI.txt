@@ -9,6 +9,8 @@ INSTALLAZIONE
            con icona nel menu Start (e, a scelta, sul desktop). In alternativa lo zip portatile: si estrae
            dove si vuole e si avvia YA-MS.exe. Per Windows a 32 bit (Windows 10/11) i file -windows-x86-,
            per Windows su ARM (PC con Snapdragon) i file -windows-arm64-.
+           Windows 7 SP1, 8 e 8.1: i file -windows7-x64- e -windows7-x86- (compilati con .NET 6; su Windows 7
+           servono gli aggiornamenti KB2533623 e KB2999226). Gli altri pacchetti richiedono Windows 10 o 11.
   Linux    ya-ms_x.y.z_amd64.deb (Debian, Ubuntu, Mint): sudo apt install ./ya-ms_x.y.z_amd64.deb.
            Al primo avvio dal menu il programma si copia in ~/YA-MS con la sua cartella data.
            Oppure YA-MS-x.y.z-linux-x64.tar.gz: portatile (si avvia ./YA-MS dalla cartella estratta)

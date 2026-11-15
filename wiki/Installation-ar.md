@@ -10,6 +10,7 @@
 | Windows (64-bit)، محمول | `YA-MS-x.y.z-windows-x64-portatile.zip` | أي مجلد لديك صلاحية الكتابة فيه |
 | Windows (32-bit، Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` أو `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows على ARM ‏(64 بت، حواسيب Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` أو `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` أو `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian وUbuntu وMint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (يُنسخ إليه عند التشغيل الأول) |
 | Linux (64-bit)، أي توزيعة | `YA-MS-x.y.z-linux-x64.tar.gz` (محمول أو عبر `./installa.sh`) | `~/YA-MS` أو أي مجلد |
 | Linux ‏(64 بت): Fedora، openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (يُنسخ إليه عند التشغيل الأول) |

@@ -18,6 +18,7 @@ LI|Linux (Debian, Ubuntu, Mint): .deb पैकेज, जिसे sudo apt ins
 LI|Raspberry Pi 3, 4, 5, 400 और 500: पैकेज raspberry-pi-64bit (Raspberry Pi OS 64 बिट) या raspberry-pi-32bit, .tar.gz या .deb में।
 LI|अन्य Linux ARM प्रणालियाँ (जैसे Slackware ARM64 या armv7l बोर्ड): linux-arm64 या linux-armv7l पैकेज, .tar.gz में, Linux की तरह।
 LI|ARM पर Windows (Snapdragon वाले PC): windows-arm64 पैकेज। Fedora और openSUSE: .rpm पैकेज (x86_64 या aarch64), sudo dnf install या sudo zypper install से।
+LI|Windows 7 SP1, 8 और 8.1: पैकेज windows7-x64 और windows7-x86 (सेटअप या पोर्टेबल zip), जो .NET 6 से बने हैं, जो इन सिस्टमों पर चलने वाला अंतिम संस्करण है। Windows 7 को अपडेट KB2533623 और KB2999226 चाहिए। बाकी Windows पैकेजों के लिए Windows 10 या 11 ज़रूरी है: पुराने Windows पर इंस्टॉलर तुरंत बता देता है।
 LI|Arch, Manjaro और Arch Linux ARM: .pkg.tar.zst पैकेज, sudo pacman -U से। Slackware64 और Slackware ARM64: .txz पैकेज, root के रूप में installpkg से। कोई भी Linux: AppImage (x86_64 या aarch64), जिसे निष्पादन-योग्य बनाकर चलाया जाता है। Alpine Linux: alpine-x64 या alpine-arm64 पैकेज, .tar.gz में।
 LI|macOS: Apple Silicon (M1 और बाद के) या Intel के लिए .dmg, या app.zip। YA-MS.app को अपने किसी फ़ोल्डर में खींचें (उदाहरण के लिए ~/YA-MS): data फ़ोल्डर ऐप के बगल में बनता है।
 TAG|ATTENZIONE|Windows यह संदेश दिखा सकता है "Windows ने आपके PC की सुरक्षा की": "अधिक जानकारी" चुनें और फिर "फिर भी चलाएँ"। macOS पर पहली बार ऐप को राइट-क्लिक करके "खोलें" से खोलें। प्रोग्राम किसी सशुल्क प्रमाणपत्र से हस्ताक्षरित नहीं है।

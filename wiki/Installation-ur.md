@@ -10,6 +10,7 @@
 | Windows (64-بٹ)، پورٹیبل | `YA-MS-x.y.z-windows-x64-portatile.zip` | کوئی بھی فولڈر جس میں آپ لکھ سکیں |
 | Windows (32-بٹ، Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` یا `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | ARM پر Windows (64 بٹ، Snapdragon والے PC) | `YA-MS-x.y.z-windows-arm64-setup.exe` یا `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` یا `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-بٹ): Debian، Ubuntu، Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (پہلے آغاز پر وہاں کاپی ہو جاتا ہے) |
 | Linux (64-بٹ)، کوئی بھی ڈسٹری بیوشن | `YA-MS-x.y.z-linux-x64.tar.gz` (پورٹیبل یا `./installa.sh` کے ساتھ) | `~/YA-MS` یا کوئی بھی فولڈر |
 | Linux (64 بٹ): Fedora، openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (پہلے آغاز پر وہاں کاپی ہو جاتا ہے) |

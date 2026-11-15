@@ -10,6 +10,7 @@
 | Windows (64-bit), φορητή έκδοση | `YA-MS-x.y.z-windows-x64-portatile.zip` | οποιονδήποτε φάκελο όπου μπορείτε να γράψετε |
 | Windows (32-bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` ή `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows σε ARM (64 bit, PC με Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` ή `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` ή `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (αντιγράφεται εκεί στην πρώτη εκκίνηση) |
 | Linux (64-bit), οποιαδήποτε διανομή | `YA-MS-x.y.z-linux-x64.tar.gz` (φορητό ή με `./installa.sh`) | `~/YA-MS` ή οποιονδήποτε φάκελο |
 | Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (αντιγράφεται εκεί στην πρώτη εκκίνηση) |

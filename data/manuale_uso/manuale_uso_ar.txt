@@ -18,6 +18,7 @@ LI|Linux (Debian، Ubuntu، Mint): حزمة .deb، وتُثبَّت بالأمر
 LI|Raspberry Pi 3 و4 و5 و400 و500: حزمة raspberry-pi-64bit (Raspberry Pi OS 64 بت) أو raspberry-pi-32bit، بصيغة .tar.gz أو .deb.
 LI|أنظمة Linux ARM الأخرى (مثل Slackware ARM64 أو لوحات armv7l): الحزمة linux-arm64 أو linux-armv7l بصيغة ‎.tar.gz، كما في Linux.
 LI|Windows على ARM (حواسيب Snapdragon): الحزمة windows-arm64. Fedora وopenSUSE: الحزمة ‎.rpm ‏(x86_64 أو aarch64) عبر sudo dnf install أو sudo zypper install.
+LI|Windows 7 SP1 و8 و8.1: الحزمتان windows7-x64 وwindows7-x86 (مثبّت أو zip محمول)، مبنيتان بـ .NET 6، آخر إصدار يعمل على هذه الأنظمة. يحتاج Windows 7 إلى التحديثين KB2533623 وKB2999226. أما حزم Windows الأخرى فتتطلب Windows 10 أو 11: وعلى Windows أقدم يخبرك المثبّت بذلك فورًا.
 LI|Arch وManjaro وArch Linux ARM: الحزمة ‎.pkg.tar.zst عبر sudo pacman -U. ‏Slackware64 وSlackware ARM64: الحزمة ‎.txz عبر installpkg بصلاحيات root. أي Linux: ملف AppImage ‏(x86_64 أو aarch64)، يُجعل قابلًا للتنفيذ ثم يُشغَّل. ‏Alpine Linux: الحزمة alpine-x64 أو alpine-arm64 بصيغة ‎.tar.gz.
 LI|macOS: ملف .dmg لمعالجات Apple Silicon (M1 وما بعده) أو لمعالجات Intel، أو ملف app.zip. اسحب YA-MS.app إلى مجلد خاص بك (مثلاً ~/YA-MS): يُنشأ مجلد data بجانب التطبيق.
 TAG|ATTENZIONE|قد يعرض Windows الرسالة "قام Windows بحماية الكمبيوتر": اختر "مزيد من المعلومات" ثم "تشغيل على أي حال". وفي macOS، في المرة الأولى، افتح التطبيق بالزر الأيمن للفأرة ثم "فتح". البرنامج غير موقَّع بشهادة مدفوعة.

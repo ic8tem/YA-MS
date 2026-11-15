@@ -10,6 +10,7 @@
 | Windows (64-বিট), পোর্টেবল | `YA-MS-x.y.z-windows-x64-portatile.zip` | যেকোনো ফোল্ডার যেখানে আপনি লিখতে পারেন |
 | Windows (32-বিট, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` অথবা `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | ARM-এ Windows (64 বিট, Snapdragon-যুক্ত PC) | `YA-MS-x.y.z-windows-arm64-setup.exe` অথবা `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` অথবা `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-বিট): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (প্রথম চালুতে সেখানে কপি হয়) |
 | Linux (64-বিট), যেকোনো ডিস্ট্রিবিউশন | `YA-MS-x.y.z-linux-x64.tar.gz` (পোর্টেবল বা `./installa.sh` দিয়ে) | `~/YA-MS` অথবা যেকোনো ফোল্ডার |
 | Linux (64 বিট): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (প্রথম চালুতে সেখানে কপি হয়) |

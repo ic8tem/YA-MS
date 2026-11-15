@@ -10,6 +10,7 @@ Alla paket finns på sidan **[Releases](https://github.com/ic8tem/YA-MS/releases
 | Windows (64 bitar), portabel | `YA-MS-x.y.z-windows-x64-portatile.zip` | valfri mapp där du har skrivrättighet |
 | Windows (32 bitar, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` eller `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows på ARM (64 bitar, datorer med Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` eller `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` eller `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bitar): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (kopieras dit vid första starten) |
 | Linux (64 bitar), alla distributioner | `YA-MS-x.y.z-linux-x64.tar.gz` (portabel eller med `./installa.sh`) | `~/YA-MS` eller valfri mapp |
 | Linux (64 bitar): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (kopieras dit vid första starten) |

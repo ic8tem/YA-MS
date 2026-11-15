@@ -18,6 +18,7 @@ LI|Linux (Debian, Ubuntu, Mint): .deb pakotne, ko instalē ar komandu sudo apt i
 LI|Raspberry Pi 3, 4, 5, 400 un 500: pakotne raspberry-pi-64bit (Raspberry Pi OS 64 biti) vai raspberry-pi-32bit, .tar.gz vai .deb formātā.
 LI|Citas ARM Linux sistēmas (piemēram, Slackware ARM64 vai armv7l plates): pakotne linux-arm64 vai linux-armv7l, .tar.gz formātā, kā Linux gadījumā.
 LI|Windows uz ARM (datori ar Snapdragon): pakotne windows-arm64. Fedora un openSUSE: .rpm pakotne (x86_64 vai aarch64), ar sudo dnf install vai sudo zypper install.
+LI|Windows 7 SP1, 8 un 8.1: pakotnes windows7-x64 un windows7-x86 (instalētājs vai pārnēsājams zip), veidotas ar .NET 6, pēdējo, kas darbojas šajās sistēmās. Windows 7 vajag atjauninājumus KB2533623 un KB2999226. Pārējām Windows pakotnēm vajag Windows 10 vai 11: vecākā Windows instalētājs to uzreiz pasaka.
 LI|Arch, Manjaro un Arch Linux ARM: pakotne .pkg.tar.zst, ar sudo pacman -U. Slackware64 un Slackware ARM64: pakotne .txz, ar installpkg kā root. Jebkurš Linux: AppImage (x86_64 vai aarch64), ko padara izpildāmu un palaiž. Alpine Linux: pakotne alpine-x64 vai alpine-arm64, .tar.gz formātā.
 LI|macOS: .dmg fails Apple Silicon (M1 un jaunākiem) vai Intel datoriem, vai app.zip. Ievelc YA-MS.app savā mapē (piemēram, ~/YA-MS): mape data tiek izveidota blakus lietotnei.
 TAG|ATTENZIONE|Windows var parādīt paziņojumu "Windows aizsargāja jūsu datoru": izvēlies "Papildinformācija" un pēc tam "Tik un tā palaist". macOS pirmajā reizē atver lietotni ar peles labo pogu un "Atvērt". Programma nav parakstīta ar maksas sertifikātu.

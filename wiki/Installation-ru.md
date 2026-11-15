@@ -10,6 +10,7 @@
 | Windows (64 бита), портативная | `YA-MS-x.y.z-windows-x64-portatile.zip` | любая папка, в которую разрешена запись |
 | Windows (32 бита, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` или `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows на ARM (64 бит, ПК со Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` или `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` или `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 бита): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (копируется туда при первом запуске) |
 | Linux (64 бита), любой дистрибутив | `YA-MS-x.y.z-linux-x64.tar.gz` (портативно или через `./installa.sh`) | `~/YA-MS` или любая папка |
 | Linux (64 бит): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (копируется туда при первом запуске) |

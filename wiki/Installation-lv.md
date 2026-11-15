@@ -10,6 +10,7 @@ Visas pakotnes ir lapā **[Releases](https://github.com/ic8tem/YA-MS/releases)**
 | Windows (64 biti), portatīvā | `YA-MS-x.y.z-windows-x64-portatile.zip` | jebkurā mapē, kurā vari rakstīt |
 | Windows (32 biti, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` vai `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows uz ARM (64 bitu, datori ar Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` vai `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` vai `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 biti): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (tur nokopēts pirmajā palaišanā) |
 | Linux (64 biti), jebkurš distributīvs | `YA-MS-x.y.z-linux-x64.tar.gz` (portatīvi vai ar `./installa.sh`) | `~/YA-MS` vai jebkura mape |
 | Linux (64 bitu): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (tur nokopēts pirmajā palaišanā) |

@@ -18,6 +18,7 @@ LI|Linux (Debian, Ubuntu, Mint): .deb-pakett, mis paigaldatakse käsuga sudo apt
 LI|Raspberry Pi 3, 4, 5, 400 ja 500: pakett raspberry-pi-64bit (Raspberry Pi OS 64-bitine) või raspberry-pi-32bit, .tar.gz- või .deb-vormingus.
 LI|Muud ARM-Linuxi süsteemid (näiteks Slackware ARM64 või armv7l plaadid): pakett linux-arm64 või linux-armv7l, .tar.gz kujul, nagu Linuxi puhul.
 LI|Windows ARM-il (Snapdragoniga arvutid): pakett windows-arm64. Fedora ja openSUSE: .rpm-pakett (x86_64 või aarch64), käsuga sudo dnf install või sudo zypper install.
+LI|Windows 7 SP1, 8 ja 8.1: paketid windows7-x64 ja windows7-x86 (paigaldaja või kaasaskantav zip), koostatud .NET 6-ga, mis on viimane neil süsteemidel töötav. Windows 7 vajab uuendusi KB2533623 ja KB2999226. Teised Windowsi paketid nõuavad Windows 10 või 11: vanemas Windowsis ütleb paigaldaja seda kohe.
 LI|Arch, Manjaro ja Arch Linux ARM: pakett .pkg.tar.zst, käsuga sudo pacman -U. Slackware64 ja Slackware ARM64: pakett .txz, käsuga installpkg root-kasutajana. Mis tahes Linux: AppImage (x86_64 või aarch64), mis tehakse käivitatavaks ja käivitatakse. Alpine Linux: pakett alpine-x64 või alpine-arm64, .tar.gz kujul.
 LI|macOS: .dmg-fail Apple Siliconi (M1 ja uuemad) või Inteli jaoks või app.zip. Lohista YA-MS.app oma kausta (näiteks ~/YA-MS): kaust data luuakse rakenduse kõrvale.
 TAG|ATTENZIONE|Windows võib näidata teadet „Windows kaitses teie arvutit“: vali „Rohkem teavet“ ja seejärel „Käivita siiski“. macOS-is ava rakendus esimesel korral paremklõpsuga ja vali „Ava“. Programm pole allkirjastatud tasulise sertifikaadiga.

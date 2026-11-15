@@ -10,6 +10,7 @@ Tüm paketler **[Releases](https://github.com/ic8tem/YA-MS/releases)** sayfasın
 | Windows (64 bit), taşınabilir | `YA-MS-x.y.z-windows-x64-portatile.zip` | yazma izniniz olan herhangi bir klasör |
 | Windows (32 bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` ya da `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | ARM üzerinde Windows (64 bit, Snapdragon'lu PC'ler) | `YA-MS-x.y.z-windows-arm64-setup.exe` ya da `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` ya da `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (ilk açılışta oraya kopyalanır) |
 | Linux (64 bit), herhangi bir dağıtım | `YA-MS-x.y.z-linux-x64.tar.gz` (taşınabilir ya da `./installa.sh` ile) | `~/YA-MS` ya da herhangi bir klasör |
 | Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (ilk açılışta oraya kopyalanır) |

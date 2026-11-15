@@ -18,6 +18,7 @@ LI|Linux（Debian、Ubuntu、Mint）：.deb 套件，以 sudo apt install ./ya-m
 LI|Raspberry Pi 3、4、5、400 和 500：raspberry-pi-64bit 套件（Raspberry Pi OS 64 位元）或 raspberry-pi-32bit，提供 .tar.gz 或 .deb 格式。
 LI|其他 ARM Linux 系統（例如 Slackware ARM64 或 armv7l 開發板）：使用 .tar.gz 格式的 linux-arm64 或 linux-armv7l 安裝包，用法同 Linux。
 LI|ARM 上的 Windows（Snapdragon 電腦）：windows-arm64 安裝包。Fedora 和 openSUSE：.rpm 安裝包（x86_64 或 aarch64），用 sudo dnf install 或 sudo zypper install 安裝。
+LI|Windows 7 SP1、8 和 8.1：使用 windows7-x64 和 windows7-x86 套件（安裝程式或可攜式 zip），它們以 .NET 6 編譯，這是能在這些系統上執行的最後一個版本。Windows 7 需要 KB2533623 和 KB2999226 更新。其他 Windows 套件需要 Windows 10 或 11：在較舊的 Windows 上，安裝程式會立即提示。
 LI|Arch、Manjaro 和 Arch Linux ARM：.pkg.tar.zst 安裝包，用 sudo pacman -U 安裝。Slackware64 和 Slackware ARM64：.txz 安裝包，以 root 身分用 installpkg 安裝。任何 Linux：AppImage（x86_64 或 aarch64），設為可執行後直接執行。Alpine Linux：.tar.gz 格式的 alpine-x64 或 alpine-arm64 安裝包。
 LI|macOS：適用於 Apple Silicon（M1 及更新機型）或 Intel 的 .dmg，或 app.zip。將 YA-MS.app 拖曳到您自己的資料夾中（例如 ~/YA-MS）：data 資料夾會建立在 App 旁邊。
 TAG|ATTENZIONE|Windows 可能會顯示「Windows 已保護您的電腦」：請選擇「其他資訊」，再選擇「仍要執行」。在 macOS 上，第一次請以右鍵按一下 App 並選擇「打開」。本程式沒有使用付費憑證簽署。

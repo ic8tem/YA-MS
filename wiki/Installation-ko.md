@@ -10,6 +10,7 @@
 | Windows (64비트), 포터블 | `YA-MS-x.y.z-windows-x64-portatile.zip` | 쓰기 권한이 있는 아무 폴더 |
 | Windows (32비트, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` 또는 `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | ARM용 Windows(64비트, Snapdragon PC) | `YA-MS-x.y.z-windows-arm64-setup.exe` 또는 `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` 또는 `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64비트): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |
 | Linux (64비트), 모든 배포판 | `YA-MS-x.y.z-linux-x64.tar.gz`(포터블 또는 `./installa.sh` 사용) | `~/YA-MS` 또는 아무 폴더 |
 | Linux(64비트): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS`(처음 실행할 때 그곳으로 복사됨) |

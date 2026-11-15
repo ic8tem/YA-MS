@@ -18,6 +18,7 @@ LI|Linux (Debian, Ubuntu, Mint): .deb-paketet, som installeras med sudo apt inst
 LI|Raspberry Pi 3, 4, 5, 400 och 500: paketet raspberry-pi-64bit (Raspberry Pi OS 64 bitar) eller raspberry-pi-32bit, som .tar.gz eller .deb.
 LI|Andra ARM-Linuxsystem (till exempel Slackware ARM64 eller armv7l-kort): paketet linux-arm64 eller linux-armv7l, som .tar.gz, som för Linux.
 LI|Windows på ARM (datorer med Snapdragon): paketet windows-arm64. Fedora och openSUSE: .rpm-paketet (x86_64 eller aarch64), med sudo dnf install eller sudo zypper install.
+LI|Windows 7 SP1, 8 och 8.1: paketen windows7-x64 och windows7-x86 (installation eller portabel zip), byggda med .NET 6, den sista som körs på dessa system. Windows 7 behöver uppdateringarna KB2533623 och KB2999226. De andra Windows-paketen kräver Windows 10 eller 11: på ett äldre Windows säger installationsprogrammet det direkt.
 LI|Arch, Manjaro och Arch Linux ARM: paketet .pkg.tar.zst, med sudo pacman -U. Slackware64 och Slackware ARM64: paketet .txz, med installpkg som root. Valfri Linux: AppImage-filen (x86_64 eller aarch64), görs körbar och startas. Alpine Linux: paketet alpine-x64 eller alpine-arm64, som .tar.gz.
 LI|macOS: .dmg-filen för Apple Silicon (M1 och senare) eller för Intel, eller app.zip. Dra YA-MS.app till en egen mapp (till exempel ~/YA-MS): mappen data skapas bredvid appen.
 TAG|ATTENZIONE|Windows kan visa "Windows skyddade datorn": välj "Mer information" och sedan "Kör ändå". På macOS öppnar du appen första gången med högerklick och "Öppna". Programmet är inte signerat med ett betalt certifikat.

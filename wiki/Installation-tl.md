@@ -10,6 +10,7 @@ Nasa pahinang **[Releases](https://github.com/ic8tem/YA-MS/releases)** ang lahat
 | Windows (64-bit), portable | `YA-MS-x.y.z-windows-x64-portatile.zip` | anumang folder na may pahintulot kang magsulat |
 | Windows (32-bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` o `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows sa ARM (64 bit, mga PC na may Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` o `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` o `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (kinokopya roon sa unang pagsisimula) |
 | Linux (64-bit), anumang distribution | `YA-MS-x.y.z-linux-x64.tar.gz` (portable o gamit ang `./installa.sh`) | `~/YA-MS` o anumang folder |
 | Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (kinokopya roon sa unang pagsisimula) |

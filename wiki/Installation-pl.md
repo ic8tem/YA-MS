@@ -10,6 +10,7 @@ Wszystkie pakiety znajdują się na stronie **[Releases](https://github.com/ic8t
 | Windows (64-bit), wersja przenośna | `YA-MS-x.y.z-windows-x64-portatile.zip` | dowolnego folderu z prawem zapisu |
 | Windows (32-bit, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` lub `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows na ARM (64-bit, komputery ze Snapdragonem) | `YA-MS-x.y.z-windows-arm64-setup.exe` lub `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` lub `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64-bit): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (kopiowany tam przy pierwszym uruchomieniu) |
 | Linux (64-bit), dowolna dystrybucja | `YA-MS-x.y.z-linux-x64.tar.gz` (przenośnie lub przez `./installa.sh`) | `~/YA-MS` lub dowolnego folderu |
 | Linux (64-bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (kopiowany tam przy pierwszym uruchomieniu) |

@@ -18,6 +18,7 @@ LI|Linux (Debian, Ubuntu, Mint): the .deb package, to be installed with sudo apt
 LI|Raspberry Pi 3, 4, 5, 400 and 500: the raspberry-pi-64bit package (64-bit Raspberry Pi OS) or raspberry-pi-32bit, as .tar.gz or .deb.
 LI|Other ARM Linux systems (for example Slackware ARM64 or armv7l boards): the linux-arm64 or linux-armv7l package, in .tar.gz, as for Linux.
 LI|Windows on ARM (Snapdragon PCs): the windows-arm64 package. Fedora and openSUSE: the .rpm package (x86_64 or aarch64), with sudo dnf install or sudo zypper install.
+LI|Windows 7 SP1, 8 and 8.1: the windows7-x64 and windows7-x86 packages (setup or portable zip), built with .NET 6, the last one that runs on these systems. Windows 7 needs updates KB2533623 and KB2999226. The other Windows packages require Windows 10 or 11: on an older Windows the installer says so right away.
 LI|Arch, Manjaro and Arch Linux ARM: the .pkg.tar.zst package, with sudo pacman -U. Slackware64 and Slackware ARM64: the .txz package, with installpkg as root. Any Linux: the AppImage (x86_64 or aarch64), made executable and started. Alpine Linux: the alpine-x64 or alpine-arm64 package, in .tar.gz.
 LI|macOS: the .dmg for Apple Silicon (M1 and later) or for Intel, or the app.zip. Drag YA-MS.app into a folder of your own (for example ~/YA-MS): the data folder is created next to the app.
 TAG|ATTENZIONE|Windows may show "Windows protected your PC": choose "More info" and then "Run anyway". On macOS, the first time, open the app with the right mouse button and "Open". The program is not signed with a paid certificate.

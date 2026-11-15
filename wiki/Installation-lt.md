@@ -10,6 +10,7 @@ Visi paketai yra puslapyje **[Releases](https://github.com/ic8tem/YA-MS/releases
 | Windows (64 bitų), nešiojamoji | `YA-MS-x.y.z-windows-x64-portatile.zip` | bet kurį aplanką, į kurį galite rašyti |
 | Windows (32 bitų, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` arba `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows ARM (64 bitų, kompiuteriai su Snapdragon) | `YA-MS-x.y.z-windows-arm64-setup.exe` arba `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` arba `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64 bitų): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (nukopijuojama ten pirmą kartą paleidžiant) |
 | Linux (64 bitų), bet kuris distributyvas | `YA-MS-x.y.z-linux-x64.tar.gz` (nešiojamoji arba su `./installa.sh`) | `~/YA-MS` arba bet kuris aplankas |
 | Linux (64 bitų): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (nukopijuojama ten pirmą kartą paleidžiant) |

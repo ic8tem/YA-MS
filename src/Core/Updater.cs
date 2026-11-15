@@ -63,8 +63,8 @@ namespace YAMS
             Architecture a = RuntimeInformation.ProcessArchitecture;
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
-                // Windows 7 SP1 e 8.0 (versione sotto 6.3, cioe' prima di Windows 8.1): pacchetto windows7, compilato con .NET 6
-                if (Environment.OSVersion.Version < new Version(6, 3))
+                // Windows 7 SP1, 8 e 8.1 (prima di Windows 10): pacchetto windows7, compilato con .NET 6
+                if (Environment.OSVersion.Version < new Version(10, 0))
                     return a == Architecture.X86 ? "-windows7-x86-portatile.zip" : "-windows7-x64-portatile.zip";
                 return a == Architecture.X86 ? "-windows-x86-portatile.zip"
                      : a == Architecture.Arm64 ? "-windows-arm64-portatile.zip" : "-windows-x64-portatile.zip";

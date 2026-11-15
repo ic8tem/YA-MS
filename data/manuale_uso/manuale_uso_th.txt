@@ -18,6 +18,7 @@ LI|Linux (Debian, Ubuntu, Mint): แพ็กเกจ .deb ติดตั้�
 LI|Raspberry Pi 3, 4, 5, 400 และ 500: แพ็กเกจ raspberry-pi-64bit (Raspberry Pi OS 64 บิต) หรือ raspberry-pi-32bit ในรูปแบบ .tar.gz หรือ .deb
 LI|ระบบ Linux ARM อื่น ๆ (เช่น Slackware ARM64 หรือบอร์ด armv7l): แพ็กเกจ linux-arm64 หรือ linux-armv7l แบบ .tar.gz เหมือนกับ Linux
 LI|Windows บน ARM (พีซีที่ใช้ Snapdragon): แพ็กเกจ windows-arm64 สำหรับ Fedora และ openSUSE: แพ็กเกจ .rpm (x86_64 หรือ aarch64) ด้วย sudo dnf install หรือ sudo zypper install
+LI|Windows 7 SP1, 8 และ 8.1: แพ็กเกจ windows7-x64 และ windows7-x86 (ตัวติดตั้งหรือ zip แบบพกพา) สร้างด้วย .NET 6 ซึ่งเป็นรุ่นสุดท้ายที่ทำงานบนระบบเหล่านี้ Windows 7 ต้องมีอัปเดต KB2533623 และ KB2999226 ส่วนแพ็กเกจ Windows อื่นต้องใช้ Windows 10 หรือ 11 บน Windows ที่เก่ากว่า ตัวติดตั้งจะแจ้งทันที
 LI|Arch, Manjaro และ Arch Linux ARM: แพ็กเกจ .pkg.tar.zst ติดตั้งด้วย sudo pacman -U สำหรับ Slackware64 และ Slackware ARM64: แพ็กเกจ .txz ติดตั้งด้วย installpkg ในฐานะ root สำหรับ Linux ทุกรุ่น: ไฟล์ AppImage (x86_64 หรือ aarch64) ตั้งให้รันได้แล้วเปิดใช้ สำหรับ Alpine Linux: แพ็กเกจ alpine-x64 หรือ alpine-arm64 แบบ .tar.gz
 LI|macOS: ไฟล์ .dmg สำหรับ Apple Silicon (M1 ขึ้นไป) หรือสำหรับ Intel หรือไฟล์ app.zip ลาก YA-MS.app ไปไว้ในโฟลเดอร์ของคุณเอง (เช่น ~/YA-MS) โฟลเดอร์ data จะถูกสร้างขึ้นข้างแอป
 TAG|ATTENZIONE|Windows อาจแสดงข้อความ "Windows ได้ป้องกันพีซีของคุณ" ให้เลือก "ข้อมูลเพิ่มเติม" แล้วเลือก "เรียกใช้ต่อไป" บน macOS ในครั้งแรกให้เปิดแอปด้วยการคลิกขวาแล้วเลือก "เปิด" โปรแกรมนี้ไม่ได้ลงนามด้วยใบรับรองแบบเสียเงิน

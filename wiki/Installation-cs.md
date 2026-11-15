@@ -10,6 +10,7 @@ Všechny balíčky jsou na stránce **[Releases](https://github.com/ic8tem/YA-MS
 | Windows (64bitové), přenosná verze | `YA-MS-x.y.z-windows-x64-portatile.zip` | libovolná složka, do které můžete zapisovat |
 | Windows (32bitové, Windows 10/11) | `YA-MS-x.y.z-windows-x86-setup.exe` nebo `...-windows-x86-portatile.zip` | `C:\YA-MS` |
 | Windows na ARM (64 bit, PC se Snapdragonem) | `YA-MS-x.y.z-windows-arm64-setup.exe` nebo `...-windows-arm64-portatile.zip` | `C:\YA-MS` |
+| Windows 7 SP1 / 8 / 8.1 (x64, x86: `-windows7-x86-`) | `YA-MS-x.y.z-windows7-x64-setup.exe` nebo `...-windows7-x64-portatile.zip` | `C:\YA-MS` |
 | Linux (64bitový): Debian, Ubuntu, Mint | `ya-ms_x.y.z_amd64.deb` | `~/YA-MS` (zkopíruje se tam při prvním spuštění) |
 | Linux (64bitový), libovolná distribuce | `YA-MS-x.y.z-linux-x64.tar.gz` (přenosně nebo pomocí `./installa.sh`) | `~/YA-MS` nebo libovolná složka |
 | Linux (64 bit): Fedora, openSUSE | `ya-ms-x.y.z.x86_64.rpm` (x86_64), `ya-ms-x.y.z.aarch64.rpm` (ARM64), `ya-ms-x.y.z.armv7hl.rpm` (ARM 32) | `~/YA-MS` (zkopíruje se tam při prvním spuštění) |

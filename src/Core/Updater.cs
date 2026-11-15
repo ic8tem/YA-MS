@@ -10,7 +10,9 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Formats.Tar;
+#if NET7_0_OR_GREATER
+using System.Formats.Tar;   // non c'e' in .NET 6 (pacchetti per Windows 7, che usano solo lo zip)
+#endif
 using System.Globalization;
 using System.IO;
 using System.IO.Compression;
@@ -136,9 +138,15 @@ namespace YAMS
             Directory.CreateDirectory(outDir);
             if (file.EndsWith(".zip", StringComparison.OrdinalIgnoreCase)) ZipFile.ExtractToDirectory(file, outDir, true);
             else
+            {
+#if NET7_0_OR_GREATER
                 using (FileStream fs = File.OpenRead(file))
                 using (GZipStream gz = new GZipStream(fs, CompressionMode.Decompress))
                     TarFile.ExtractToDirectory(gz, outDir, true);
+#else
+                throw new NotSupportedException("tar.gz");   // .NET 6 = solo Windows 7: arriva sempre uno zip
+#endif
+            }
             return outDir;
         }
 

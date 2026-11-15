@@ -1,5 +1,5 @@
 TITLE|Manwal ng paggamit ng YA-MS
-SUB|Bersyon 1.8.19 - inihanda ni Costantino IC8TEM - Nobyembre 2026
+SUB|Bersyon 1.8.20 - inihanda ni Costantino IC8TEM - Nobyembre 2026
 H1|1. Panimula
 H2|1.1 Para saan ang YA-MS
 P|Tinutulungan ka ng YA-MS na hulaan at subaybayan nang live ang mga kondisyon ng meteor scatter sa pagitan ng iyong istasyon at ng isang DX station, mula 28 hanggang 432 MHz. Para sa bawat aktibong meteor shower, sinasabi nito kung gaano pinapaboran ng posisyon ng radiant nito ang iyong landas (ang episyensya), sa anong mga oras, mula sa aling panig ng landas dumarating ang mga repleksiyon, at saan pinakamainam itutok ang antena. Kasabay ng pagtataya, ipinapakita nito ang mga datos na sinusukat nang live: ang mga bilang ng meteor radar ng Collm, ang mga camera ng Global Meteor Network, ang CMOR radar, ang transmitter na GRAVES at ang trapiko ng meteor scatter na kinokolekta mula sa mga cluster at sa PSKReporter.
@@ -52,6 +52,7 @@ H2|3.3 Wika, mga kulay, font
 LI|Wika: 36 na wika. Kapag pinalitan ang wika, binubuo muli ang window sa parehong posisyon at sa parehong tab, nang hindi nagre-restart. Sumusunod ang mga numero at petsa sa napiling wika (decimal comma sa Italyano, tuldok sa Ingles).
 LI|Tema: 12 color scheme; ang Maliwanag ang default, ang Gabi at Itim ay para sa dilim, ang Bakas ng meteor ang orihinal na istilo ng YA-MS.
 LI|Font (Mga setting): pinaliliit o pinalalaki ang lahat ng teksto mula 85 hanggang 140 %, sa hakbang na 5 %. Kapag malaki ang font, bumababa sa ibang linya ang mga tab.
+LI|Siksik na mode: Itinutupi ng siksik na mode sa pagsisimula ang mga hanay ng utos, pinaiikli ang banda ng mga horizon at itinatago ang mahahabang paglalarawan (nananatili sa mga tooltip): kapaki-pakinabang sa mga laptop na 13-15 pulgada.
 LI|Mga kontrol: itinitiklop at muling binubuksan ang dalawang hanay ng mga kontrol, para magbigay ng espasyo sa mga mapa at graph. Tinatandaan ang napili.
 TAG|NOTA|Halos bawat kontrol ay may tooltip: itigil ang mouse sa ibabaw ng kontrol para mabasa kung para saan ito at kung saang source galing ang default na halaga.
 H1|4. Pag-set up ng istasyon at ng landas

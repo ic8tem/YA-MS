@@ -6,6 +6,8 @@
 
 Tab Pengaturan menghimpun cara kerja umum program: Tampilan (huruf, tema, dan bahasa), Pembaruan program (pemeriksaan di GitHub saat mulai dan setiap 30 menit, pembaruan otomatis senyap, Periksa sekarang), Sumber langsung (pembaruan otomatis setiap 5 menit), RMOB (pengamat, unduh sekarang, dan pengambilan otomatis) serta Program (baris perintah dan folder data). Parameter perhitungan tetap di baris perintah di atas tab.
 
+**Mode ringkas**: Mode ringkas melipat baris perintah saat mulai, memendekkan pita cakrawala, dan menyembunyikan deskripsi panjang (tetap ada di tooltip): berguna di laptop 13-15 inci.
+
 ## Bilah tab
 
 Di ujung kanan bilah tab, dari kanan ke kiri:

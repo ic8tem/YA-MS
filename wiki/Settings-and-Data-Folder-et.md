@@ -6,6 +6,8 @@
 
 Vahekaart Seaded koondab programmi üldise töö: Välimus (kiri, teema ja keel), Programmi uuendused (kontroll GitHubis käivitamisel ja iga 30 minuti järel, automaatsed vaiksed uuendused, Kontrolli kohe), Reaalajas allikad (automaatne uuendus iga 5 minuti järel), RMOB (vaatleja, laadi kohe ja automaatne laadimine) ning Programm (käsuread ja andmekaust). Arvutuse parameetrid jäävad vahekaartide kohal olevatesse käsuridadesse.
 
+**Kompaktne režiim**: Kompaktne režiim voldib käivitamisel käsuread kokku, lühendab horisontide riba ja peidab pikad kirjeldused (need jäävad kohtspikritesse): kasulik 13-15-tolliste sülearvutite puhul.
+
 ## Sakiriba
 
 Sakiriba paremas otsas, paremalt vasakule:

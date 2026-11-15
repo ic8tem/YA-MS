@@ -6,6 +6,8 @@
 
 Flipinn Stillingar safnar saman almennri virkni forritsins: Útlit (letur, þema og tungumál), Uppfærslur forritsins (athugun á GitHub við ræsingu og á 30 mínútna fresti, sjálfvirkar hljóðlátar uppfærslur, Athuga núna), Rauntímaheimildir (sjálfvirk uppfærsla á 5 mínútna fresti), RMOB (athugandi, sækja núna og sjálfvirk sókn) og Forrit (skipanalínur og gagnamappa). Reiknistikarnir eru áfram í skipanalínunum fyrir ofan flipana.
 
+**Þjappaður hamur**: Þjappaður hamur fellir saman skipanalínurnar við ræsingu, styttir tímarammaborðann og felur löngu lýsingarnar (þær eru áfram í ábendingum): gagnlegt á 13-15 tommu fartölvum.
+
 ## Flipastikan
 
 Hægra megin á flipastikunni, frá hægri til vinstri:

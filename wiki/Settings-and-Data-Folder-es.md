@@ -6,6 +6,8 @@
 
 La pestaña Ajustes reúne el funcionamiento general del programa: Aspecto (letra, tema e idioma), Actualizaciones del programa (comprobación en GitHub al arrancar y cada 30 minutos, actualizaciones automáticas y silenciosas, Comprobar ahora), Fuentes en directo (actualización automática cada 5 minutos), RMOB (observador, descarga inmediata y recogida automática) y Programa (filas de mandos y carpeta de datos). Los parámetros del cálculo siguen en las filas de mandos sobre las pestañas.
 
+**Modo compacto**: El modo compacto pliega al arrancar las filas de mandos, acorta la franja de horizontes y oculta las descripciones largas (quedan en las ayudas emergentes): útil en portátiles de 13-15 pulgadas.
+
 ## La barra de pestañas
 
 En el extremo derecho de la barra de pestañas, de derecha a izquierda:

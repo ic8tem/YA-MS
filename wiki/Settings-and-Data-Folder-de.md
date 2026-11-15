@@ -6,6 +6,8 @@
 
 Der Reiter Einstellungen fasst die allgemeine Arbeitsweise des Programms zusammen: Darstellung (Schrift, Thema und Sprache), Programm-Updates (Prüfung auf GitHub beim Start und alle 30 Minuten, automatische stille Updates, Jetzt prüfen), Live-Quellen (automatische Aktualisierung alle 5 Minuten), RMOB (Beobachter, jetzt herunterladen und automatischer Abruf) und Programm (Befehlszeilen und Datenordner). Die Rechenparameter bleiben in den Befehlszeilen über den Reitern.
 
+**Kompaktmodus**: Der Kompaktmodus klappt beim Start die Befehlszeilen ein, verkürzt das Horizontband und blendet die langen Beschreibungen aus (sie bleiben in den Tooltips): nützlich auf 13-15-Zoll-Notebooks.
+
 ## Die Reiterleiste
 
 Am rechten Ende der Reiterleiste, von rechts nach links:

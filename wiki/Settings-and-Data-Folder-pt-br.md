@@ -6,6 +6,8 @@
 
 A aba Configurações reúne o funcionamento geral do programa: Aparência (fonte, tema e idioma), Atualizações do programa (verificação no GitHub ao iniciar e a cada 30 minutos, atualizações automáticas e silenciosas, Verificar agora), Fontes ao vivo (atualização automática a cada 5 minutos), RMOB (observador, download imediato e coleta automática) e Programa (linhas de comandos e pasta de dados). Os parâmetros do cálculo ficam nas linhas de comandos acima das abas.
 
+**Modo compacto**: O modo compacto recolhe na inicialização as linhas de comandos, encurta a faixa dos horizontes e esconde as descrições longas (ficam nas dicas): útil em notebooks de 13-15 polegadas.
+
 ## A barra de abas
 
 Na extremidade direita da barra de abas, da direita para a esquerda:

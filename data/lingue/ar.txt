@@ -867,3 +867,10 @@ licenza	الترخيص
 Contatti	التواصل
 Codice sorgente	الشيفرة المصدرية
 YA-MS è software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU General Public License versione 3 (file COPYING). È distribuito senza alcuna garanzia.	YA-MS برنامج حر: يمكنك إعادة توزيعه وتعديله وفق شروط رخصة GNU العمومية الإصدار 3 (الملف COPYING). يُوزَّع دون أي ضمان.
+Modalità compatta	الوضع المضغوط
+automatica (finestra alta meno di 850 pixel)	تلقائي (نافذة أقل ارتفاعاً من 850 بكسل)
+sempre	دائماً
+mai	أبداً
+La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	يطوي الوضع المضغوط أسطر الأوامر عند البدء، ويقصّر شريط الآفاق، ويخفي الأوصاف الطويلة (تبقى في التلميحات): مفيد في الحواسيب المحمولة بقياس 13-15 بوصة.
+un'altra copia di YA-MS sta già interrogando PSKReporter	نسخة أخرى من YA-MS تستعلم بالفعل من PSKReporter
+troppe richieste (429): nuova prova alle {0} UTC	طلبات كثيرة جداً (429): محاولة جديدة في {0} UTC

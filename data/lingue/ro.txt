@@ -868,3 +868,10 @@ licenza	licență
 Contatti	Contact
 Codice sorgente	Cod sursă
 YA-MS è software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU General Public License versione 3 (file COPYING). È distribuito senza alcuna garanzia.	YA-MS este software liber: îl puteți redistribui și modifica în condițiile GNU General Public License versiunea 3 (fișierul COPYING). Este distribuit fără nicio garanție.
+Modalità compatta	Mod compact
+automatica (finestra alta meno di 850 pixel)	automat (fereastră mai joasă de 850 pixeli)
+sempre	întotdeauna
+mai	niciodată
+La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	Modul compact pliază la pornire rândurile de comenzi, scurtează banda orizonturilor și ascunde descrierile lungi (rămân în indicii): util pe laptopurile de 13-15 inci.
+un'altra copia di YA-MS sta già interrogando PSKReporter	o altă copie a YA-MS interoghează deja PSKReporter
+troppe richieste (429): nuova prova alle {0} UTC	prea multe cereri (429): nouă încercare la {0} UTC

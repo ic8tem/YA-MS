@@ -6,6 +6,8 @@
 
 Záložka Nastavení soustřeďuje obecný chod programu: Vzhled (písmo, motiv a jazyk), Aktualizace programu (kontrola na GitHubu při spuštění a každých 30 minut, automatické tiché aktualizace, Zkontrolovat teď), Živé zdroje (automatická aktualizace každých 5 minut), RMOB (pozorovatel, stáhnout teď a automatické stahování) a Program (řádky příkazů a složka dat). Parametry výpočtu zůstávají v řádcích příkazů nad záložkami.
 
+**Kompaktní režim**: Kompaktní režim při spuštění sbalí řádky příkazů, zkrátí pás horizontů a skryje dlouhé popisy (zůstanou v bublinách): užitečné na noteboocích 13-15 palců.
+
 ## Lišta karet
 
 Na pravém konci lišty karet, zprava doleva:

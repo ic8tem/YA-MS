@@ -1,5 +1,5 @@
 TITLE|Instrukcja obsługi YA-MS
-SUB|Wersja 1.8.19 - opracował Costantino IC8TEM - listopad 2026
+SUB|Wersja 1.8.20 - opracował Costantino IC8TEM - listopad 2026
 H1|1. Wprowadzenie
 H2|1.1 Do czego służy YA-MS
 P|YA-MS pomaga przewidywać i śledzić na bieżąco warunki meteor scatter między twoją stacją a korespondentem, od 28 do 432 MHz. Dla każdego aktywnego roju meteorów pokazuje, w jakim stopniu położenie jego radiantu sprzyja twojej trasie (sprawność), w jakich godzinach, z której strony trasy przychodzą odbicia i gdzie najlepiej skierować antenę. Obok prognozy pokazuje dane mierzone na żywo: zliczenia radaru meteorowego w Collm, kamery Global Meteor Network, radar CMOR, nadajnik GRAVES oraz ruch meteor scatter zbierany z klastrów i z PSKReporter.
@@ -52,6 +52,7 @@ H2|3.3 Język, kolory, czcionka
 LI|Język: 36 języków. Po zmianie języka okno odbudowuje się w tym samym położeniu i na tej samej karcie, bez ponownego uruchamiania. Liczby i daty są zgodne z wybranym językiem (przecinek dziesiętny po polsku i po włosku, kropka po angielsku).
 LI|Motyw: 12 schematów kolorów; Jasny jest domyślny, Noc i Czarny służą do pracy w ciemności, Ślad meteoru to oryginalny styl YA-MS.
 LI|Czcionka (Ustawienia): zmniejsza lub powiększa cały tekst od 85 do 140 %, co 5 %. Przy dużej czcionce zakładki przechodzą do kolejnych wierszy.
+LI|Tryb kompaktowy: Tryb kompaktowy zwija przy starcie wiersze poleceń, skraca pasek horyzontów i ukrywa długie opisy (zostają w podpowiedziach): przydatne w laptopach 13-15 cali.
 LI|Sterowanie: zwija i ponownie rozwija dwa wiersze poleceń, aby zrobić miejsce dla map i wykresów. Wybór jest zapamiętywany.
 TAG|NOTA|Prawie każde polecenie ma dymek podpowiedzi: przytrzymaj kursor myszy nad poleceniem, aby przeczytać, do czego służy i z jakiego źródła pochodzi wartość domyślna.
 H1|4. Ustawienie stacji i trasy

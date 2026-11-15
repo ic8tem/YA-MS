@@ -313,6 +313,7 @@ La diffusione a cono, la scelta tra Hot A e Hot B e il caso di prova Amburgo - B
 La fonte principale: geometria del meteor scatter, Hot A e Hot B, elevazione d'antenna e attenuazione di tratta.
 La formula della direzione migliore usata nella riga di confronto del Calcolo dell'efficienza.
 La formula di DH9GCD (righe azzurre) non tiene conto dell'orizzonte né del lobo, per questo dà valori anche qui.
+La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.
 La parola "{0}" c'è, ma la riga non è uno spot "DX de ..." valido.
 La perdita delle scie sottodense, l'angolo beta tra scia e tratta e il raggio iniziale della scia.
 La riga non è uno spot "DX de ..." valido.
@@ -361,6 +362,7 @@ Meteore/ora - ieri {0} e oggi {1} (UTC)
 Metti GRAVES come DX
 Miglior puntamento per lo sciame: ORTOGONALE alla direzione\ndi arrivo (azimut del radiante +-90°, tolleranza +-40-50°,\nSM6FHZ). In pianta: linea gialla = scorrimento\ndello sciame, punti arancioni = puntamenti, ellissi\nPREV = scie piu' probabili adesso.\nClic su un radiante: percorso con le ore UTC
 Misurato a Collm e traslato a {0} MHz - ieri {1} e oggi {2} (UTC)
+Modalità compatta
 Mondo
 Monocerotidi di dicembre
 Mostra chi è in ascolto in MSK144, FSK441, PSK2K e JTMS (PSKReporter MQTT, triangoli)
@@ -632,6 +634,7 @@ ant_radiante.csv: riga ignorata: {0}
 antenna verso {0}: az {1:F0}° · el {2:F1}°\nGRAVES in linea diretta: az {3:F0}°
 antenna {0}°
 auto (AMS)
+automatica (finestra alta meno di 850 pixel)
 azimut rispetto al corrispondente
 azimutale (centrata sulla mia stazione)
 beta-Tauridi diurne
@@ -709,6 +712,7 @@ lobo antenna
 lobo {0}°
 locale
 locator
+mai
 mai scaricato
 mappa di PSKReporter non raggiungibile: {0}
 mappa: bordo = {0} km dalla stazione
@@ -776,6 +780,7 @@ scartati per altra propagazione: {0}
 sciame migliore {0} {1}: ZHR {2:F0} × eff. {3:F0} %
 scorrimento sciame
 segmenti = scie (±10 km attorno alla quota) orientate verso il radiante; più spessi = più probabili
+sempre
 sempre sotto
 servizio pubblico gratuito
 sigma-Hydridi
@@ -790,12 +795,14 @@ traslato a {0} MHz (scala a destra)
 trasmettitore 143,050 MHz
 tratta / DX
 tratta GRAVES → te non calcolata
+troppe richieste (429): nuova prova alle {0} UTC
 tu {0}
 ultima ora
 ultime 24 ore
 ultime {0} ore
 ultimi {0} minuti
 ultimo spot ricevuto {0} UTC · {1} spot
+un'altra copia di YA-MS sta già interrogando PSKReporter
 var.
 varie (tab. 6 IMO)
 versione

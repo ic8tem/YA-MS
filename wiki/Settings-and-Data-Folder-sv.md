@@ -6,6 +6,8 @@
 
 Fliken Inställningar samlar programmets allmänna funktion: Utseende (teckenstorlek, tema och språk), Programuppdateringar (kontroll på GitHub vid start och var 30:e minut, automatiska tysta uppdateringar, Kontrollera nu), Källor i realtid (automatisk uppdatering var 5:e minut), RMOB (observatör, hämta nu och automatisk hämtning) och Program (kommandorader och datamapp). Beräkningsparametrarna stannar i kommandoraderna ovanför flikarna.
 
+**Kompakt läge**: Kompakt läge fäller ihop kommandoraderna vid start, kortar horisontbandet och döljer de långa beskrivningarna (de finns kvar i verktygstipsen): praktiskt på bärbara datorer med 13-15 tum.
+
 ## Flikraden
 
 I högra änden av flikraden, från höger till vänster:

@@ -6,6 +6,8 @@
 
 La linguetta Impostazioni raccoglie il funzionamento generale del programma: Aspetto (carattere, tema e lingua), Aggiornamenti del programma (controllo su GitHub all'avvio e ogni 30 minuti, aggiornamenti automatici e silenziosi, Controlla adesso), Fonti in diretta (aggiornamento automatico ogni 5 minuti), RMOB (osservatore, scarico adesso e prelievo automatico) e Programma (righe dei comandi e cartella dei dati). I parametri del calcolo restano nelle righe dei comandi sopra le linguette.
 
+**Modalità compatta**: La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.
+
 ## La barra delle linguette
 
 All'estremità destra della barra delle linguette, da destra verso sinistra:

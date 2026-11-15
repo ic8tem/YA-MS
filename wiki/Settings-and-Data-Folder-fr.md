@@ -6,6 +6,8 @@
 
 L'onglet Paramètres regroupe le fonctionnement général du programme : Apparence (police, thème et langue), Mises à jour du programme (vérification sur GitHub au démarrage et toutes les 30 minutes, mises à jour automatiques et silencieuses, Vérifier maintenant), Sources en direct (mise à jour automatique toutes les 5 minutes), RMOB (observateur, téléchargement immédiat et prélèvement automatique) et Programme (lignes de commandes et dossier des données). Les paramètres du calcul restent dans les lignes de commandes au-dessus des onglets.
 
+**Mode compact**: Le mode compact replie au démarrage les lignes de commandes, raccourcit la bande des horizons et masque les longues descriptions (elles restent dans les info-bulles) : utile sur les portables de 13-15 pouces.
+
 ## La barre des onglets
 
 À l'extrémité droite de la barre des onglets, de droite à gauche :

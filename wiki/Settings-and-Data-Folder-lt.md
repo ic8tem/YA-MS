@@ -6,6 +6,8 @@
 
 Kortelė Nustatymai apima bendrą programos veikimą: Išvaizda (šriftas, tema ir kalba), Programos atnaujinimai (tikrinimas GitHub paleidžiant ir kas 30 minučių, automatiniai tylūs atnaujinimai, Tikrinti dabar), Tiesioginiai šaltiniai (automatinis atnaujinimas kas 5 minutes), RMOB (stebėtojas, atsisiųsti dabar ir automatinis gavimas) ir Programa (komandų eilutės ir duomenų aplankas). Skaičiavimo parametrai lieka komandų eilutėse virš kortelių.
 
+**Kompaktiškas režimas**: Kompaktiškas režimas paleidžiant suskleidžia komandų eilutes, sutrumpina horizontų juostą ir paslepia ilgus aprašymus (jie lieka patarimuose): naudinga 13-15 colių nešiojamuosiuose kompiuteriuose.
+
 ## Kortelių juosta
 
 Kortelių juostos dešiniajame gale, iš dešinės į kairę:

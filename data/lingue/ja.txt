@@ -869,3 +869,10 @@ licenza	ライセンス
 Contatti	連絡先
 Codice sorgente	ソースコード
 YA-MS è software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU General Public License versione 3 (file COPYING). È distribuito senza alcuna garanzia.	YA-MS はフリーソフトウェアです。GNU General Public License 第 3 版（COPYING ファイル）の条件のもとで再配布・改変できます。いかなる保証もなく配布されます。
+Modalità compatta	コンパクトモード
+automatica (finestra alta meno di 850 pixel)	自動（ウィンドウの高さが 850 ピクセル未満）
+sempre	常に
+mai	しない
+La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	コンパクトモードでは、起動時にコマンド行を折りたたみ、予報時点の帯を短くし、長い説明を隠します（ツールチップには残ります）。13〜15 インチのノートパソコンに便利です。
+un'altra copia di YA-MS sta già interrogando PSKReporter	別の YA-MS がすでに PSKReporter に問い合わせています
+troppe richieste (429): nuova prova alle {0} UTC	リクエストが多すぎます（429）：{0} UTC に再試行

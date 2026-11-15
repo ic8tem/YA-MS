@@ -6,6 +6,8 @@
 
 The Settings tab gathers the general working of the program: Appearance (font, theme and language), Program updates (check on GitHub at start-up and every 30 minutes, automatic silent updates, Check now), Live sources (automatic update every 5 minutes), RMOB (observer, download now and automatic fetch) and Program (command rows and data folder). The calculation parameters stay in the command rows above the tabs.
 
+**Compact mode**: Compact mode folds the command rows at startup, shortens the horizon band and hides the long descriptions (they stay in the tooltips): useful on 13-15 inch notebooks.
+
 ## The tab bar
 
 At the right end of the tab bar, from right to left:

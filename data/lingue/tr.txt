@@ -867,3 +867,10 @@ licenza	lisans
 Contatti	İletişim
 Codice sorgente	Kaynak kodu
 YA-MS è software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU General Public License versione 3 (file COPYING). È distribuito senza alcuna garanzia.	YA-MS özgür yazılımdır: GNU General Public License sürüm 3 koşulları altında yeniden dağıtabilir ve değiştirebilirsiniz (COPYING dosyası). Hiçbir garanti olmadan dağıtılır.
+Modalità compatta	Sıkışık mod
+automatica (finestra alta meno di 850 pixel)	otomatik (850 pikselden alçak pencere)
+sempre	her zaman
+mai	asla
+La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	Sıkışık mod açılışta komut satırlarını katlar, ufuk şeridini kısaltır ve uzun açıklamaları gizler (ipuçlarında kalırlar): 13-15 inç dizüstülerde kullanışlıdır.
+un'altra copia di YA-MS sta già interrogando PSKReporter	YA-MS'in başka bir kopyası zaten PSKReporter'ı sorguluyor
+troppe richieste (429): nuova prova alle {0} UTC	çok fazla istek (429): yeni deneme {0} UTC'de

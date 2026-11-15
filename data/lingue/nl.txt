@@ -869,3 +869,10 @@ licenza	licentie
 Contatti	Contact
 Codice sorgente	Broncode
 YA-MS è software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU General Public License versione 3 (file COPYING). È distribuito senza alcuna garanzia.	YA-MS is vrije software: u mag het verspreiden en wijzigen onder de voorwaarden van de GNU General Public License versie 3 (bestand COPYING). Het wordt verspreid zonder enige garantie.
+Modalità compatta	Compacte modus
+automatica (finestra alta meno di 850 pixel)	automatisch (venster lager dan 850 pixels)
+sempre	altijd
+mai	nooit
+La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	De compacte modus klapt bij het starten de opdrachtregels in, verkort de horizonbalk en verbergt de lange beschrijvingen (die blijven in de tooltips): handig op laptops van 13-15 inch.
+un'altra copia di YA-MS sta già interrogando PSKReporter	een andere kopie van YA-MS vraagt PSKReporter al op
+troppe richieste (429): nuova prova alle {0} UTC	te veel verzoeken (429): nieuwe poging om {0} UTC

@@ -6,6 +6,8 @@
 
 Tinitipon ng tab na Mga setting ang pangkalahatang takbo ng programa: Hitsura (font, tema at wika), Mga update ng programa (pagsusuri sa GitHub sa pagsisimula at tuwing 30 minuto, awtomatiko at tahimik na update, Suriin ngayon), Mga live na pinagmulan (awtomatikong update tuwing 5 minuto), RMOB (tagamasid, i-download ngayon at awtomatikong pagkuha) at Programa (mga hilera ng utos at folder ng data). Nananatili ang mga parametro ng kalkulasyon sa mga hilera ng utos sa itaas ng mga tab.
 
+**Siksik na mode**: Itinutupi ng siksik na mode sa pagsisimula ang mga hanay ng utos, pinaiikli ang banda ng mga horizon at itinatago ang mahahabang paglalarawan (nananatili sa mga tooltip): kapaki-pakinabang sa mga laptop na 13-15 pulgada.
+
 ## Ang tab bar
 
 Sa kanang dulo ng tab bar, mula kanan pakaliwa:

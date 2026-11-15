@@ -6,6 +6,8 @@
 
 Die oortjie Instellings versamel die algemene werking van die program: Voorkoms (lettertipe, tema en taal), Programbywerkings (kontrole op GitHub by begin en elke 30 minute, outomatiese stil bywerkings, Kontroleer nou), Regstreekse bronne (outomatiese bywerking elke 5 minute), RMOB (waarnemer, laai nou af en outomatiese haal) en Program (opdragrye en datavouer). Die berekeningsparameters bly in die opdragrye bo die oortjies.
 
+**Kompakte modus**: Kompakte modus vou die opdragrye by die begin toe, verkort die horisonstrook en verberg die lang beskrywings (hulle bly in die wenke): nuttig op skootrekenaars van 13-15 duim.
+
 ## Die oortjiebalk
 
 Aan die regterkant van die oortjiebalk, van regs na links:

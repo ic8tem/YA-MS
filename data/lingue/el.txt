@@ -868,3 +868,10 @@ licenza	άδεια
 Contatti	Επικοινωνία
 Codice sorgente	Πηγαίος κώδικας
 YA-MS è software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU General Public License versione 3 (file COPYING). È distribuito senza alcuna garanzia.	Το YA-MS είναι ελεύθερο λογισμικό: μπορείτε να το αναδιανείμετε και να το τροποποιήσετε σύμφωνα με τους όρους της GNU General Public License έκδοση 3 (αρχείο COPYING). Διανέμεται χωρίς καμία εγγύηση.
+Modalità compatta	Συμπαγής λειτουργία
+automatica (finestra alta meno di 850 pixel)	αυτόματη (παράθυρο χαμηλότερο από 850 εικονοστοιχεία)
+sempre	πάντα
+mai	ποτέ
+La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	Η συμπαγής λειτουργία διπλώνει στην εκκίνηση τις γραμμές εντολών, συντομεύει τη λωρίδα των οριζόντων και κρύβει τις μεγάλες περιγραφές (μένουν στις συμβουλές): χρήσιμη σε φορητούς 13-15 ιντσών.
+un'altra copia di YA-MS sta già interrogando PSKReporter	άλλο αντίγραφο του YA-MS ήδη ρωτά το PSKReporter
+troppe richieste (429): nuova prova alle {0} UTC	πάρα πολλά αιτήματα (429): νέα προσπάθεια στις {0} UTC

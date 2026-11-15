@@ -867,3 +867,10 @@ licenza	লাইসেন্স
 Contatti	যোগাযোগ
 Codice sorgente	সোর্স কোড
 YA-MS è software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU General Public License versione 3 (file COPYING). È distribuito senza alcuna garanzia.	YA-MS মুক্ত সফটওয়্যার: GNU General Public License সংস্করণ 3 (ফাইল COPYING)-এর শর্তে আপনি এটি পুনর্বিতরণ ও পরিবর্তন করতে পারেন। এটি কোনো নিশ্চয়তা ছাড়াই বিতরণ করা হয়।
+Modalità compatta	সংক্ষিপ্ত মোড
+automatica (finestra alta meno di 850 pixel)	স্বয়ংক্রিয় (850 পিক্সেলের কম উঁচু উইন্ডো)
+sempre	সবসময়
+mai	কখনো না
+La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	সংক্ষিপ্ত মোড শুরুতে কমান্ডের সারি গুটিয়ে দেয়, দিগন্তের পট্টি ছোট করে এবং লম্বা বিবরণ লুকিয়ে রাখে (সেগুলো টুলটিপে থাকে): 13-15 ইঞ্চির ল্যাপটপে কাজের।
+un'altra copia di YA-MS sta già interrogando PSKReporter	YA-MS-এর আরেকটি কপি ইতিমধ্যে PSKReporter-এ জিজ্ঞাসা করছে
+troppe richieste (429): nuova prova alle {0} UTC	অতিরিক্ত অনুরোধ (429): পরের চেষ্টা {0} UTC-তে

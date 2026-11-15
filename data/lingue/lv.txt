@@ -867,3 +867,10 @@ licenza	licence
 Contatti	Kontakti
 Codice sorgente	Pirmkods
 YA-MS è software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU General Public License versione 3 (file COPYING). È distribuito senza alcuna garanzia.	YA-MS ir brīva programmatūra: to var izplatīt un mainīt saskaņā ar GNU General Public License 3. versijas noteikumiem (fails COPYING). To izplata bez jebkādas garantijas.
+Modalità compatta	Kompaktais režīms
+automatica (finestra alta meno di 850 pixel)	automātiski (logs zemāks par 850 pikseļiem)
+sempre	vienmēr
+mai	nekad
+La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	Kompaktais režīms palaišanas brīdī sakļauj komandu rindas, saīsina horizontu joslu un paslēpj garos aprakstus (tie paliek uznirstošajos padomos): noderīgi 13-15 collu klēpjdatoros.
+un'altra copia di YA-MS sta già interrogando PSKReporter	cita YA-MS kopija jau vaicā PSKReporter
+troppe richieste (429): nuova prova alle {0} UTC	pārāk daudz pieprasījumu (429): nākamais mēģinājums {0} UTC

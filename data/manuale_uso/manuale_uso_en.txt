@@ -1,5 +1,5 @@
 TITLE|YA-MS User Manual
-SUB|Version 1.8.19 - by Costantino IC8TEM - November 2026
+SUB|Version 1.8.20 - by Costantino IC8TEM - November 2026
 H1|1. Introduction
 H2|1.1 What YA-MS is for
 P|YA-MS helps you forecast and follow live the meteor scatter conditions between your station and a DX station, from 28 to 432 MHz. For each active meteor shower it tells you how much the position of its radiant favours your path (the efficiency), at what times, from which side of the path the reflections arrive and where it is best to point the antenna. Alongside the forecast it shows data measured live: the counts of the Collm meteor radar, the cameras of the Global Meteor Network, the CMOR radar, the GRAVES transmitter and the meteor scatter traffic collected from the clusters and from PSKReporter.
@@ -52,6 +52,7 @@ H2|3.3 Language, colours, font
 LI|Language: 36 languages. When you change language the window is rebuilt in the same position and on the same tab, without restarting. Numbers and dates follow the chosen language (decimal comma in Italian, point in English).
 LI|Theme: 12 colour schemes; Light is the default, Night and Black are for use in the dark, Meteor trail is the original YA-MS style.
 LI|Font (Settings): shrinks or enlarges all text from 85 to 140 %, in 5 % steps. With large fonts the tabs wrap onto several lines.
+LI|Compact mode: Compact mode folds the command rows at startup, shortens the horizon band and hides the long descriptions (they stay in the tooltips): useful on 13-15 inch notebooks.
 LI|Controls: collapses and reopens the two rows of controls, to make room for maps and charts. The choice is remembered.
 TAG|NOTA|Almost every control has a tooltip: hold the mouse still over the control to read what it is for and which source the default value comes from.
 H1|4. Setting up the station and the path

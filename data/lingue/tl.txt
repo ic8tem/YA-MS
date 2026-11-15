@@ -867,3 +867,10 @@ licenza	lisensiya
 Contatti	Kontak
 Codice sorgente	Source code
 YA-MS è software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU General Public License versione 3 (file COPYING). È distribuito senza alcuna garanzia.	Ang YA-MS ay malayang software: maaari mo itong ipamahagi at baguhin ayon sa mga tuntunin ng GNU General Public License bersiyon 3 (file na COPYING). Ipinamamahagi ito nang walang anumang garantiya.
+Modalità compatta	Siksik na mode
+automatica (finestra alta meno di 850 pixel)	awtomatiko (window na mas mababa sa 850 pixel)
+sempre	palagi
+mai	hindi kailanman
+La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	Itinutupi ng siksik na mode sa pagsisimula ang mga hanay ng utos, pinaiikli ang banda ng mga horizon at itinatago ang mahahabang paglalarawan (nananatili sa mga tooltip): kapaki-pakinabang sa mga laptop na 13-15 pulgada.
+un'altra copia di YA-MS sta già interrogando PSKReporter	may ibang kopya ng YA-MS na nagtatanong na sa PSKReporter
+troppe richieste (429): nuova prova alle {0} UTC	sobrang daming kahilingan (429): susunod na subok sa {0} UTC

@@ -164,6 +164,7 @@ namespace YAMS
             BuildTabs();
             root.Children.Add(tabs.Host);   // riempie lo spazio restante
             Content = root;
+            InitCompact(root);   // modalita' compatta per schermi bassi (MainWindow.Compatta.cs)
 
             timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
             timer.Tick += OnTick;

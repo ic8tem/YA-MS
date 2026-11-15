@@ -6,6 +6,8 @@
 
 Karta Ustawienia zbiera ogólne działanie programu: Wygląd (czcionka, motyw i język), Aktualizacje programu (sprawdzanie na GitHub przy starcie i co 30 minut, automatyczne ciche aktualizacje, Sprawdź teraz), Źródła na żywo (automatyczna aktualizacja co 5 minut), RMOB (obserwator, pobierz teraz i automatyczne pobieranie) oraz Program (wiersze poleceń i folder danych). Parametry obliczeń zostają w wierszach poleceń nad kartami.
 
+**Tryb kompaktowy**: Tryb kompaktowy zwija przy starcie wiersze poleceń, skraca pasek horyzontów i ukrywa długie opisy (zostają w podpowiedziach): przydatne w laptopach 13-15 cali.
+
 ## Pasek zakładek
 
 Na prawym końcu paska zakładek, od prawej do lewej:

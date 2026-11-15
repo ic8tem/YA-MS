@@ -6,6 +6,8 @@
 
 O separador Definições reúne o funcionamento geral do programa: Aspeto (letra, tema e língua), Atualizações do programa (verificação no GitHub no arranque e a cada 30 minutos, atualizações automáticas e silenciosas, Verificar agora), Fontes em direto (atualização automática a cada 5 minutos), RMOB (observador, descarga imediata e recolha automática) e Programa (linhas de comandos e pasta dos dados). Os parâmetros do cálculo ficam nas linhas de comandos acima dos separadores.
 
+**Modo compacto**: O modo compacto recolhe no arranque as linhas de comandos, encurta a faixa dos horizontes e esconde as descrições longas (ficam nas dicas): útil em portáteis de 13-15 polegadas.
+
 ## A barra de separadores
 
 Na extremidade direita da barra de separadores, da direita para a esquerda:

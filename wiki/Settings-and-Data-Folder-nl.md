@@ -6,6 +6,8 @@
 
 Het tabblad Instellingen bundelt de algemene werking van het programma: Weergave (lettergrootte, thema en taal), Programma-updates (controle op GitHub bij het starten en elke 30 minuten, automatische stille updates, Nu controleren), Live bronnen (automatische update elke 5 minuten), RMOB (waarnemer, nu downloaden en automatisch ophalen) en Programma (opdrachtregels en gegevensmap). De rekenparameters blijven in de opdrachtregels boven de tabbladen.
 
+**Compacte modus**: De compacte modus klapt bij het starten de opdrachtregels in, verkort de horizonbalk en verbergt de lange beschrijvingen (die blijven in de tooltips): handig op laptops van 13-15 inch.
+
 ## De tabbladbalk
 
 Aan het rechteruiteinde van de tabbladbalk, van rechts naar links:

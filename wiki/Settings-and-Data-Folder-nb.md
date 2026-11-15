@@ -6,6 +6,8 @@
 
 Fanen Innstillinger samler programmets generelle virkemåte: Utseende (skrift, tema og språk), Programoppdateringer (sjekk på GitHub ved oppstart og hvert 30. minutt, automatiske stille oppdateringer, Sjekk nå), Kilder i sanntid (automatisk oppdatering hvert 5. minutt), RMOB (observatør, last ned nå og automatisk henting) og Program (kommandolinjer og datamappe). Beregningsparameterne blir værende i kommandolinjene over fanene.
 
+**Kompakt modus**: Kompakt modus feller sammen kommandoradene ved oppstart, forkorter horisontbåndet og skjuler de lange beskrivelsene (de blir i verktøytipsene): nyttig på bærbare med 13-15 tommer.
+
 ## Fanelinjen
 
 I høyre ende av fanelinjen, fra høyre mot venstre:

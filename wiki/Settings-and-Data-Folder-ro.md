@@ -6,6 +6,8 @@
 
 Fila Setări adună funcționarea generală a programului: Aspect (font, temă și limbă), Actualizările programului (verificare pe GitHub la pornire și la fiecare 30 de minute, actualizări automate și silențioase, Verifică acum), Surse în direct (actualizare automată la fiecare 5 minute), RMOB (observator, descărcare imediată și preluare automată) și Program (rândurile de comenzi și dosarul de date). Parametrii calculului rămân în rândurile de comenzi de deasupra filelor.
 
+**Mod compact**: Modul compact pliază la pornire rândurile de comenzi, scurtează banda orizonturilor și ascunde descrierile lungi (rămân în indicii): util pe laptopurile de 13-15 inci.
+
 ## Bara de file
 
 La capătul din dreapta al barei de file, de la dreapta la stânga:

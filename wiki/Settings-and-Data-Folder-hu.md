@@ -6,6 +6,8 @@
 
 A Beállítások fül a program általános működését gyűjti össze: Megjelenés (betűméret, téma és nyelv), Programfrissítések (ellenőrzés a GitHubon indításkor és 30 percenként, automatikus csendes frissítés, Ellenőrzés most), Élő források (automatikus frissítés 5 percenként), RMOB (megfigyelő, letöltés most és automatikus letöltés) és Program (parancssorok és adatmappa). A számítás paraméterei a fülek feletti parancssorokban maradnak.
 
+**Kompakt mód**: A kompakt mód induláskor összecsukja a parancssorokat, lerövidíti az időtávok sávját és elrejti a hosszú leírásokat (a buborékokban maradnak): hasznos 13-15 colos laptopokon.
+
 ## A fülsor
 
 A fülsor jobb végén, jobbról balra:

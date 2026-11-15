@@ -6,6 +6,8 @@
 
 Cilne Iestatījumi apkopo programmas vispārējo darbību: Izskats (fonts, tēma un valoda), Programmas atjauninājumi (pārbaude GitHub, startējot un ik pēc 30 minūtēm, automātiski klusi atjauninājumi, Pārbaudīt tagad), Tiešsaistes avoti (automātiska atjaunināšana ik pēc 5 minūtēm), RMOB (novērotājs, lejupielādēt tagad un automātiska ielāde) un Programma (komandu rindas un datu mape). Aprēķina parametri paliek komandu rindās virs cilnēm.
 
+**Kompaktais režīms**: Kompaktais režīms palaišanas brīdī sakļauj komandu rindas, saīsina horizontu joslu un paslēpj garos aprakstus (tie paliek uznirstošajos padomos): noderīgi 13-15 collu klēpjdatoros.
+
 ## Ciļņu josla
 
 Ciļņu joslas labajā galā, no labās uz kreiso:

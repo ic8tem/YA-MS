@@ -1,5 +1,5 @@
 TITLE|Gebruikershandleiding van YA-MS
-SUB|Weergawe 1.8.19 - saamgestel deur Costantino IC8TEM - November 2026
+SUB|Weergawe 1.8.20 - saamgestel deur Costantino IC8TEM - November 2026
 H1|1. Inleiding
 H2|1.1 Waarvoor YA-MS dien
 P|YA-MS help jou om die meteor scatter-toestande tussen jou stasie en 'n DX-stasie van 28 tot 432 MHz te voorspel en regstreeks te volg. Vir elke aktiewe meteoorswerm sê dit hoe gunstig die posisie van sy radiant vir jou pad is (die doeltreffendheid), op watter ure, van watter kant van die pad die refleksies kom en waarheen jy die antenna moet rig. Langs die voorspelling wys dit regstreeks gemete data: die tellings van die Collm-meteoorradar, die kameras van die Global Meteor Network, die CMOR-radar, die GRAVES-sender en die meteor scatter-verkeer wat deur die clusters en PSKReporter ingesamel word.
@@ -52,6 +52,7 @@ H2|3.3 Taal, kleure, lettertipe
 LI|Taal: 36 tale. Wanneer jy die taal verander, word die venster in dieselfde posisie en op dieselfde oortjie herbou, sonder om te herbegin. Getalle en datums volg die gekose taal (desimale komma in Italiaans, punt in Engels).
 LI|Tema: 12 kleurskemas; Lig is die beginskema, Nag en Swart is vir gebruik in die donker, Meteoorspoor is die oorspronklike styl van YA-MS.
 LI|Lettergrootte (Instellings): verklein of vergroot alle teks van 85 tot 140 %, in stappe van 5 %. Met groot letters loop die oortjies oor verskeie reëls.
+LI|Kompakte modus: Kompakte modus vou die opdragrye by die begin toe, verkort die horisonstrook en verberg die lang beskrywings (hulle bly in die wenke): nuttig op skootrekenaars van 13-15 duim.
 LI|Kontroles: vou die twee rye kontroles in en weer oop, om plek te maak vir kaarte en grafieke. Die keuse word onthou.
 TAG|NOTA|Byna elke kontrole het 'n wenkballon: hou die muis stil oor die kontrole om te lees waarvoor dit dien en uit watter bron die beginwaarde kom.
 H1|4. Die stasie en die pad opstel

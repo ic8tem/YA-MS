@@ -220,7 +220,7 @@
  "16. Contatti": "16. 联系方式",
  "YA-MS è un programma gratuito per i radioamatori, a cura di Costantino IC8TEM (Capri). Segnalazioni, proposte e dati di confronto sono benvenuti: indica il sistema operativo, la versione di YA-MS e che cosa hai fatto. Codice e release: github.com/ic8tem/YA-MS. Contatti: ccerrotta@gmail.com, ic8tem@gmail.com, www.qrz.com/db/ic8tem. Chi vuole sostenere il lavoro può farlo su ko-fi.com/ic8tem.": "YA-MS 是一款面向业余无线电爱好者的免费程序，由 Costantino IC8TEM（Capri）编写。欢迎报告问题、提出建议和提供比较数据：请注明操作系统、YA-MS 版本以及你执行了哪些操作。代码和发布版本：github.com/ic8tem/YA-MS。联系方式：ccerrotta@gmail.com、ic8tem@gmail.com、www.qrz.com/db/ic8tem。愿意支持这项工作的人可以通过 ko-fi.com/ic8tem 进行。",
  "Manuale d'uso di YA-MS": "YA-MS 使用手册",
- "Versione 1.8.19 - a cura di Costantino IC8TEM - novembre 2026": "版本 1.8.19 - Costantino IC8TEM 编写 - 2026 年 11 月",
+ "Versione 1.8.20 - a cura di Costantino IC8TEM - novembre 2026": "版本 1.8.20 - Costantino IC8TEM 编写 - 2026 年 11 月",
  "PROCEDURA": "操作步骤",
  "NOTA": "提示",
  "ATTENZIONE": "注意",
@@ -276,5 +276,6 @@
  "Scambio tra gli utenti di YA-MS: quando un altro utente di YA-MS decodifica via UDP un messaggio rivolto alla tua stazione (in MSK144, FSK441, PSK2K o JTMS, oppure in FT8 oltre i 1100 km), il suo YA-MS te lo manda cifrato attraverso tre broker MQTT pubblici (HiveMQ, Mosquitto, EMQX); lo vedi con un tratteggio viola fisso e con una riga nella console UDP. Solo tu puoi leggerlo (chiavi ECDH P-256, AES-256 e HMAC-SHA256). Gli FT8 si mostrano solo se non hanno tratte parallele nei 3 minuti. Acceso di partenza; yams_scambio=0 in data/config.ini lo spegne.": "YA-MS 用户之间的交换：当另一位 YA-MS 用户通过 UDP 解码到发给你电台的消息（MSK144、FSK441、PSK2K 或 JTMS，或超过 1100 公里的 FT8）时，他的 YA-MS 会通过三个公共 MQTT 代理（HiveMQ、Mosquitto、EMQX）把消息加密发给你；你会看到一条固定的紫色虚线，并在 UDP 控制台中看到一行。只有你能读取（ECDH P-256 密钥、AES-256 和 HMAC-SHA256）。FT8 报告仅在 3 分钟内没有平行路径时才显示。默认开启；在 data/config.ini 中设 yams_scambio=0 可关闭。",
  "Windows 7 SP1, 8 e 8.1: i pacchetti windows7-x64 e windows7-x86 (setup o zip portatile), compilati con .NET 6, l'ultimo che gira su questi sistemi. Su Windows 7 servono gli aggiornamenti KB2533623 e KB2999226. Gli altri pacchetti Windows richiedono Windows 10 o 11: su un Windows più vecchio l'installatore lo dice subito.": "Windows 7 SP1、8 和 8.1：使用 windows7-x64 和 windows7-x86 安装包（安装程序或便携 zip），它们用 .NET 6 编译，这是能在这些系统上运行的最后一个版本。Windows 7 需要 KB2533623 和 KB2999226 更新。其他 Windows 安装包需要 Windows 10 或 11：在较旧的 Windows 上，安装程序会立即提示。",
  "Crediti: autore, contatti, licenza (GNU GPL-3.0) e le schede con chi ha reso possibile YA-MS: articoli, programmi, dati, servizi e librerie, con la loro licenza.": "致谢：作者、联系方式、许可证（GNU GPL-3.0），以及让 YA-MS 得以实现的各方卡片：文章、程序、数据、服务和库，并附其许可证。",
- "Documenti tecnici, ultima: Manuale d'uso, Fonti, Mappa dei radar europei, Spiegazione del calcolo dell'efficienza, Crediti (capitolo 12).": "技术文档（最后一个）：使用手册、来源、欧洲雷达地图、效率计算说明、致谢（第 12 章）。"
+ "Documenti tecnici, ultima: Manuale d'uso, Fonti, Mappa dei radar europei, Spiegazione del calcolo dell'efficienza, Crediti (capitolo 12).": "技术文档（最后一个）：使用手册、来源、欧洲雷达地图、效率计算说明、致谢（第 12 章）。",
+ "Modalità compatta: La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.": "紧凑模式: 紧凑模式在启动时折叠命令行，缩短时间点横栏，并隐藏较长的说明（仍可在提示中查看）：适合 13-15 英寸笔记本电脑。"
 }

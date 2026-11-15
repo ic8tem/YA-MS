@@ -867,3 +867,10 @@ licenza	lisensi
 Contatti	Kontak
 Codice sorgente	Kode sumber
 YA-MS è software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU General Public License versione 3 (file COPYING). È distribuito senza alcuna garanzia.	YA-MS adalah perangkat lunak bebas: Anda boleh menyebarkan dan mengubahnya menurut ketentuan GNU General Public License versi 3 (berkas COPYING). Program ini didistribusikan tanpa jaminan apa pun.
+Modalità compatta	Mode ringkas
+automatica (finestra alta meno di 850 pixel)	otomatis (jendela lebih rendah dari 850 piksel)
+sempre	selalu
+mai	tidak pernah
+La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	Mode ringkas melipat baris perintah saat mulai, memendekkan pita cakrawala, dan menyembunyikan deskripsi panjang (tetap ada di tooltip): berguna di laptop 13-15 inci.
+un'altra copia di YA-MS sta già interrogando PSKReporter	salinan YA-MS lain sudah menanyai PSKReporter
+troppe richieste (429): nuova prova alle {0} UTC	terlalu banyak permintaan (429): coba lagi pukul {0} UTC

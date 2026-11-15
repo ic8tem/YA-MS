@@ -869,3 +869,10 @@ licenza	license
 Contatti	Contacts
 Codice sorgente	Source code
 YA-MS è software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU General Public License versione 3 (file COPYING). È distribuito senza alcuna garanzia.	YA-MS is free software: you can redistribute and modify it under the terms of the GNU General Public License version 3 (file COPYING). It is distributed without any warranty.
+Modalità compatta	Compact mode
+automatica (finestra alta meno di 850 pixel)	automatic (window lower than 850 pixels)
+sempre	always
+mai	never
+La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	Compact mode folds the command rows at startup, shortens the horizon band and hides the long descriptions (they stay in the tooltips): useful on 13-15 inch notebooks.
+un'altra copia di YA-MS sta già interrogando PSKReporter	another copy of YA-MS is already querying PSKReporter
+troppe richieste (429): nuova prova alle {0} UTC	too many requests (429): next try at {0} UTC

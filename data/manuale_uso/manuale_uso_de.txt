@@ -1,5 +1,5 @@
 TITLE|Bedienungsanleitung von YA-MS
-SUB|Version 1.8.19 - von Costantino IC8TEM - November 2026
+SUB|Version 1.8.20 - von Costantino IC8TEM - November 2026
 H1|1. Einführung
 H2|1.1 Wozu YA-MS dient
 P|YA-MS hilft dir, die Meteorscatter-Bedingungen zwischen deiner Station und einer Gegenstation von 28 bis 432 MHz vorherzusagen und live zu verfolgen. Für jeden aktiven Meteorstrom zeigt es, wie stark die Lage seines Radianten deine Strecke begünstigt (die Effektivität), zu welchen Uhrzeiten, von welcher Seite der Strecke die Reflexionen kommen und wohin du die Antenne am besten richtest. Neben der Vorhersage zeigt es live gemessene Daten: die Zählungen des Meteorradars Collm, die Kameras des Global Meteor Network, das CMOR-Radar, den Sender GRAVES und den Meteorscatter-Verkehr, der aus den Clustern und von PSKReporter gesammelt wird.
@@ -52,6 +52,7 @@ H2|3.3 Sprache, Farben, Schrift
 LI|Sprache: 36 Sprachen. Beim Sprachwechsel wird das Fenster an derselben Position und auf demselben Reiter neu aufgebaut, ohne Neustart. Zahlen und Datumsangaben folgen der gewählten Sprache (Dezimalkomma auf Italienisch, Dezimalpunkt auf Englisch).
 LI|Farbschema: 12 Farbschemata; Hell ist die Voreinstellung, Nacht und Schwarz sind für den Betrieb im Dunkeln gedacht, Meteorspur ist der ursprüngliche Stil von YA-MS.
 LI|Schrift (Einstellungen): verkleinert oder vergrößert den gesamten Text von 85 bis 140 %, in Schritten von 5 %. Bei großer Schrift werden die Reiter umbrochen.
+LI|Kompaktmodus: Der Kompaktmodus klappt beim Start die Befehlszeilen ein, verkürzt das Horizontband und blendet die langen Beschreibungen aus (sie bleiben in den Tooltips): nützlich auf 13-15-Zoll-Notebooks.
 LI|Bedienung: klappt die zwei Bedienzeilen ein und wieder aus, um Platz für Karten und Diagramme zu schaffen. Die Wahl wird gespeichert.
 TAG|NOTA|Fast jedes Bedienelement hat einen Tooltip: Halte die Maus still über das Element, um zu lesen, wozu es dient und aus welcher Quelle der Ausgangswert stammt.
 H1|4. Station und Strecke einrichten

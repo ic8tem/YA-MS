@@ -6,6 +6,8 @@
 
 Ayarlar sekmesi programın genel çalışmasını toplar: Görünüm (yazı tipi, tema ve dil), Program güncellemeleri (açılışta ve 30 dakikada bir GitHub denetimi, otomatik sessiz güncellemeler, Şimdi denetle), Canlı kaynaklar (5 dakikada bir otomatik güncelleme), RMOB (gözlemci, şimdi indir ve otomatik alma) ve Program (komut satırları ve veri klasörü). Hesaplama parametreleri sekmelerin üstündeki komut satırlarında kalır.
 
+**Sıkışık mod**: Sıkışık mod açılışta komut satırlarını katlar, ufuk şeridini kısaltır ve uzun açıklamaları gizler (ipuçlarında kalırlar): 13-15 inç dizüstülerde kullanışlıdır.
+
 ## Sekme çubuğu
 
 Sekme çubuğunun sağ ucunda, sağdan sola:

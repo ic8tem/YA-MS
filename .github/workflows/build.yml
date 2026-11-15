@@ -109,7 +109,8 @@ jobs:
       - name: Controllo per Windows 7 (.NET 6)
         if: github.ref != 'refs/heads/release'
         run: |
-          dotnet build YA-MS.csproj -c Release -p:TargetFramework=net6.0 -o /tmp/ya-ms-net6
+          rm -rf /tmp/w7 && mkdir /tmp/w7 && git archive HEAD | tar -x -C /tmp/w7   # cartella pulita: niente obj della compilazione .NET 8
+          dotnet build /tmp/w7/YA-MS.csproj -c Release -p:TargetFramework=net6.0 -o /tmp/ya-ms-net6
       - name: Pacchetto
         run: |
           mkdir -p dist pkg

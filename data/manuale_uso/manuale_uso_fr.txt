@@ -47,7 +47,7 @@ H2|3.2 Les onglets
 LI|Direct et données en temps réel : Trafic en direct, Flux radar, Radar GRAVES, Collecte de données (chapitre 9).
 LI|Calcul prévisionnel : Calcul prévisionnel, Géométrie et affaiblissement, Calcul de l'efficacité, Prévisions expérimentales (chapitres 5-8).
 LI|Essaims en direct, Essaims, Carte des carrés (chapitres 10-11).
-LI|Documents techniques, le dernier : Manuel d'utilisation, Sources, Carte des radars européens, Explication du calcul de l'efficacité (chapitre 12).
+LI|Documents techniques, le dernier : Manuel d'utilisation, Sources, Carte des radars européens, Explication du calcul de l'efficacité, Crédits (chapitre 12).
 H2|3.3 Langue, couleurs, police
 LI|Langue : 36 langues. Lorsque vous changez de langue, la fenêtre se reconstruit à la même position et sur le même onglet, sans redémarrer. Les nombres et les dates suivent la langue choisie (virgule décimale en italien, point en anglais).
 LI|Thème : 12 jeux de couleurs ; Clair est celui par défaut, Nuit et Noir servent dans l'obscurité, Traînée météorique est le style d'origine de YA-MS.
@@ -217,6 +217,7 @@ LI|Manuel d'utilisation : ce document.
 LI|Sources : toutes les sources du programme, avec les références.
 LI|Carte des radars européens : où se trouvent Collm, Sodankylä, GRAVES et CMOR par rapport à votre station, avec le ciel vu par chaque radar.
 LI|Explication du calcul de l'efficacité : comment l'efficacité est calculée, étape par étape, avec les étiquettes SOURCE, VÉRIFICATION et CHOIX.
+LI|Crédits : auteur, contacts, licence (GNU GPL-3.0) et les fiches de ceux qui ont rendu YA-MS possible : articles, programmes, données, services et bibliothèques, avec leur licence.
 P|Les documents suivent la langue de l'interface lorsque la traduction existe, sinon ils sont en italien. « Exporter vers Word (.docx) » en enregistre une copie où vous voulez ; « Ouvrir dans Word » l'ouvre avec le programme par défaut. Le Manuel des calculs, avec toutes les équations, se trouve dans le dossier doc (italien) et doc/manuali (les autres langues).
 H1|13. Le dossier data et les réglages
 H2|13.1 Les fichiers principaux

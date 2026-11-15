@@ -47,7 +47,7 @@ H2|3.2 A fülek
 LI|Élő és valós idejű adatok: Élő forgalom, Radarfluxus, GRAVES radar, Adatgyűjtés (9. fejezet).
 LI|Előrejelző számítás: Előrejelző számítás, Geometria és csillapítás, Hatásfok számítása, Kísérleti előrejelzések (5-8. fejezet).
 LI|Élő rajok, Rajok, Négyzettérkép (10-11. fejezet).
-LI|Műszaki dokumentumok, az utolsó: Felhasználói kézikönyv, Források, Az európai radarok térképe, A hatásfok számításának magyarázata (12. fejezet).
+LI|Műszaki dokumentumok, az utolsó: Felhasználói kézikönyv, Források, Az európai radarok térképe, A hatásfok számításának magyarázata, Köszönetek (12. fejezet).
 H2|3.3 Nyelv, színek, betűtípus
 LI|Nyelv: 36 nyelv. Nyelvváltáskor az ablak ugyanazon a helyen és ugyanazon a fülön épül fel újra, újraindítás nélkül. A számok és dátumok a választott nyelvet követik (tizedesvessző magyarul, tizedespont angolul).
 LI|Téma: 12 színséma; a Világos az alapértelmezett, az Éjszaka és a Fekete sötétben használható, a Meteornyom a YA-MS eredeti stílusa.
@@ -217,6 +217,7 @@ LI|Felhasználói kézikönyv: ez a dokumentum.
 LI|Források: a program összes forrása, hivatkozásokkal.
 LI|Az európai radarok térképe: hol található Collm, Sodankylä, GRAVES és CMOR az Ön állomásához képest, az egyes radarokról látható égbolttal.
 LI|A hatásfok számításának magyarázata: hogyan számítja a program a hatásfokot, lépésről lépésre, FORRÁS, ELLENŐRZÉS és VÁLASZTÁS címkékkel.
+LI|Köszönetek: szerző, kapcsolat, licenc (GNU GPL-3.0) és azok kártyái, akik lehetővé tették a YA-MS-t: cikkek, programok, adatok, szolgáltatások és könyvtárak, a licencükkel.
 P|A dokumentumok a felület nyelvét követik, ha létezik fordítás, egyébként olaszul jelennek meg. Az „Exportálás Wordbe (.docx)” egy másolatot ment oda, ahová szeretné; a „Megnyitás Wordben” az alapértelmezett programmal nyitja meg. A Számítási kézikönyv az összes egyenlettel a doc (olasz) és a doc/manuali (többi nyelv) mappában található.
 H1|13. A data mappa és a beállítások
 H2|13.1 A fő fájlok

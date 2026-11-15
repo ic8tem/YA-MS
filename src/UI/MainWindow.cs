@@ -1003,6 +1003,9 @@ namespace YAMS
             // --- Spiegazione del calcolo dell'efficienza (MainWindow.Spiegazione.cs)
             BuildExplainTab();
 
+            // --- Crediti: autore, contatti, licenza GPL-3.0 e schede dei crediti (MainWindow.Crediti.cs)
+            BuildCreditsTab();
+
             EndGroup();
 
         }

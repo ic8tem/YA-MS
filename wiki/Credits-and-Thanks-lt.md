@@ -4,6 +4,10 @@
 
 YA-MS remiasi daugelio radijo mėgėjų, mokslininkų ir institucijų darbu. Duomenys, lentelės, straipsniai ir matavimai priklauso juos parengusiems; visos nuorodos pateiktos kortelėje [Šaltiniai](Sources-lt) ir skaičiavimų vadovo pabaigoje.
 
+## Licencija: GNU GPL-3.0
+
+YA-MS yra laisvoji programinė įranga: galite ją platinti ir keisti pagal GNU General Public License 3 versijos sąlygas (failas [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). Ji platinama be jokios garantijos.
+
 ## Pagrindinis šaltinis
 
 **Costantino Cerrotta IC8TEM** ir **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (straipsnis, 7 versija). Iš jo paimta: pėdsakų aukštis apie 90 km, Žemės spindulys, elevacijos formulė, bendroji zona, Hot A / Hot B ir šoninė sklaida, slopinimo duomenys, minimalus signalas ir IARU atspindžių trukmės.

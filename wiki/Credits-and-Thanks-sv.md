@@ -4,6 +4,10 @@
 
 YA-MS vilar på arbete av många radioamatörer, forskare och institutioner. Data, tabeller, artiklar och mätningar tillhör dem som har tagit fram dem; de fullständiga referenserna finns i fliken [Källor](Sources-sv) och i slutet av beräkningshandboken.
 
+## Licens: GNU GPL-3.0
+
+YA-MS är fri programvara: du får sprida och ändra den enligt villkoren i GNU General Public License version 3 (filen [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). Den distribueras utan någon garanti.
+
 ## Huvudkälla
 
 **Costantino Cerrotta IC8TEM** och **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikel, version 7). Därifrån kommer: spårhöjden omkring 90 km, jordradien, elevationsformeln, den gemensamma zonen, Hot A / Hot B och side-scatter, referenserna för sträckdämpning, minsta signal och IARU:s pinglängder.

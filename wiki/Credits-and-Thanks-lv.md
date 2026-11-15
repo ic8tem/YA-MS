@@ -4,6 +4,10 @@
 
 YA-MS balstās uz daudzu radioamatieru, zinātnieku un institūciju darbu. Dati, tabulas, raksti un mērījumi pieder to autoriem; pilnas atsauces ir cilnē [Avoti](Sources-lv) un aprēķinu rokasgrāmatas beigās.
 
+## Licence: GNU GPL-3.0
+
+YA-MS ir brīva programmatūra: to var izplatīt un mainīt saskaņā ar GNU General Public License 3. versijas noteikumiem (fails [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). To izplata bez jebkādas garantijas.
+
 ## Galvenais avots
 
 **Costantino Cerrotta IC8TEM** un **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (raksts, 7. versija). No tā: sliežu augstums ap 90 km, Zemes rādiuss, elevācijas formula, kopējā zona, Hot A / Hot B un side-scatter, trases vājinājuma atsauces, minimālais signāls un IARU pingu ilgumi.

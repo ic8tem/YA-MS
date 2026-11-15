@@ -4,6 +4,10 @@
 
 YA-MS si basa sul lavoro di molti radioamatori, scienziati e istituti. Dati, tabelle, articoli e misure appartengono a chi li ha prodotti; i riferimenti completi sono nella linguetta [Fonti](Sources-it) e alla fine del manuale dei calcoli.
 
+## Licenza: GNU GPL-3.0
+
+YA-MS è software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU General Public License versione 3 (file [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). È distribuito senza alcuna garanzia.
+
 ## Fonte principale
 
 **Costantino Cerrotta IC8TEM** e **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (articolo, versione 7). Da qui: quota delle scie di circa 90 km, raggio terrestre, formula dell'elevazione, zona comune, Hot A / Hot B e side-scatter, riferimenti per l'attenuazione di tratta, segnale minimo e durate dei ping IARU.

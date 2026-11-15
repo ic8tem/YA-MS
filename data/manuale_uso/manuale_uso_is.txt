@@ -47,7 +47,7 @@ H2|3.2 Fliparnir
 LI|Beint og rauntímagögn: Umferð í beinni, Ratsjárflæði, GRAVES-ratsjá, Gagnasöfnun (kafli 9).
 LI|Spáreikningur: Spáreikningur, Rúmfræði og deyfing, Útreikningur nýtni, Tilraunaspár (kaflar 5-8).
 LI|Drífur í beinni, Drífur, Reitakort (kaflar 10-11).
-LI|Tæknileg skjöl, síðast: Notendahandbók, Heimildir, Kort af evrópskum ratsjám, Skýring á útreikningi nýtninnar (kafli 12).
+LI|Tæknileg skjöl, síðast: Notendahandbók, Heimildir, Kort af evrópskum ratsjám, Skýring á útreikningi nýtninnar, Þakkir (kafli 12).
 H2|3.3 Tungumál, litir, letur
 LI|Tungumál: 36 tungumál. Þegar skipt er um tungumál er glugginn endurbyggður á sama stað og á sama flipa, án endurræsingar. Tölur og dagsetningar fylgja völdu tungumáli (kommu sem tugabrotsmerki á ítölsku, punktur á ensku).
 LI|Þema: 12 litaþemu; Ljóst er sjálfgefið, Nótt og Svart eru ætluð til notkunar í myrkri, Loftsteinaslóð er upprunalegi stíll YA-MS.
@@ -217,6 +217,7 @@ LI|Notendahandbók: þetta skjal.
 LI|Heimildir: allar heimildir forritsins, með tilvísunum.
 LI|Kort af evrópskum ratsjám: hvar Collm, Sodankylä, GRAVES og CMOR eru miðað við stöðina þína, með himninum eins og hann sést frá hverri ratsjá.
 LI|Skýring á útreikningi nýtninnar: hvernig nýtnin er reiknuð, skref fyrir skref, með merkjunum HEIMILD, ATHUGUN og VAL.
+LI|Þakkir: höfundur, samband, leyfi (GNU GPL-3.0) og spjöld þeirra sem gerðu YA-MS mögulegt: greinar, forrit, gögn, þjónustur og söfn, með leyfi þeirra.
 P|Skjölin fylgja tungumáli viðmótsins þegar þýðing er til, annars eru þau á ítölsku. „Flytja út í Word (.docx)“ vistar afrit hvar sem þú vilt; „Opna í Word“ opnar það með sjálfgefna forritinu. Útreikningahandbókin, með öllum jöfnunum, er í möppunni doc (ítalska) og doc/manuali (hin tungumálin).
 H1|13. Mappan data og stillingarnar
 H2|13.1 Helstu skrárnar

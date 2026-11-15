@@ -47,7 +47,7 @@ H2|3.2 Fanerne
 LI|Live og realtidsdata: Live-trafik, Radarflux, GRAVES-radar, Dataindsamling (kapitel 9).
 LI|Prognoseberegning: Prognoseberegning, Geometri og dæmpning, Effektivitetsberegning, Eksperimentelle prognoser (kapitel 5-8).
 LI|Live-sværme, Sværme, Kort over felter (kapitel 10-11).
-LI|Tekniske dokumenter, den sidste: Brugervejledning, Kilder, Kort over europæiske radarer, Forklaring af effektivitetsberegningen (kapitel 12).
+LI|Tekniske dokumenter, den sidste: Brugervejledning, Kilder, Kort over europæiske radarer, Forklaring af effektivitetsberegningen, Tak (kapitel 12).
 H2|3.3 Sprog, farver, skrifttype
 LI|Sprog: 36 sprog. Når du skifter sprog, genopbygges vinduet på samme position og på samme fane uden genstart. Tal og datoer følger det valgte sprog (decimalkomma på italiensk, punktum på engelsk).
 LI|Tema: 12 farveskemaer; Lyst er standard, Nat og Sort er beregnet til brug i mørke, Meteorspor er YA-MS' oprindelige stil.
@@ -217,6 +217,7 @@ LI|Brugervejledning: dette dokument.
 LI|Kilder: alle programmets kilder med referencer.
 LI|Kort over europæiske radarer: hvor Collm, Sodankylä, GRAVES og CMOR ligger i forhold til din station, med himlen set fra hver radar.
 LI|Forklaring af effektivitetsberegningen: hvordan effektiviteten beregnes, trin for trin, med mærkaterne KILDE, KONTROL og VALG.
+LI|Tak: forfatter, kontakt, licens (GNU GPL-3.0) og kortene med dem, der har gjort YA-MS muligt: artikler, programmer, data, tjenester og biblioteker, med deres licens.
 P|Dokumenterne følger brugerfladens sprog, når der findes en oversættelse, ellers er de på italiensk. »Eksportér til Word (.docx)« gemmer en kopi, hvor du vil; »Åbn i Word« åbner det med standardprogrammet. Beregningsmanualen med alle ligningerne ligger i mappen doc (italiensk) og doc/manuali (de andre sprog).
 H1|13. Mappen data og indstillingerne
 H2|13.1 De vigtigste filer

@@ -4,6 +4,10 @@
 
 YA-MS は多くのアマチュア無線家、科学者、機関の成果の上に成り立っています。データ、表、記事、測定値はそれを生み出した人々に帰属します。完全な参考文献は [出典](Sources-ja) タブと計算マニュアルの末尾にあります。
 
+## ライセンス: GNU GPL-3.0
+
+YA-MS はフリーソフトウェアです。GNU General Public License 第 3 版（[COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING) ファイル）の条件のもとで再配布・改変できます。いかなる保証もなく配布されます。
+
 ## 主な出典
 
 **Costantino Cerrotta IC8TEM** と **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (記事、第 7 版)。ここから取ったもの: 約 90 km の流星痕高度、地球半径、仰角の式、共通領域、Hot A / Hot B とサイドスキャッター、パス損失の基準値、最小信号、IARU のピング継続時間。

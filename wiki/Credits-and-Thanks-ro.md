@@ -4,6 +4,10 @@
 
 YA-MS se sprijină pe munca multor radioamatori, oameni de știință și instituții. Datele, tabelele, articolele și măsurătorile aparțin celor care le-au produs; referințele complete se află în fila [Surse](Sources-ro) și la sfârșitul manualului de calcul.
 
+## Licență: GNU GPL-3.0
+
+YA-MS este software liber: îl puteți redistribui și modifica în condițiile GNU General Public License versiunea 3 (fișierul [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). Este distribuit fără nicio garanție.
+
 ## Sursa principală
 
 **Costantino Cerrotta IC8TEM** și **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (articol, versiunea 7). De aici provin: înălțimea urmei de aproximativ 90 km, raza Pământului, formula elevației, zona comună, Hot A / Hot B și side-scatter-ul, referințele pentru atenuarea pe traseu, semnalul minim și duratele ping IARU.

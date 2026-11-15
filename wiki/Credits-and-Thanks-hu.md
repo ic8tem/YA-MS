@@ -4,6 +4,10 @@
 
 A YA-MS sok rádióamatőr, tudós és intézmény munkájára épül. Az adatok, táblázatok, cikkek és mérések azok tulajdonát képezik, akik előállították őket; a teljes hivatkozások a [Források](Sources-hu) fülön és a számítási kézikönyv végén találhatók.
 
+## Licenc: GNU GPL-3.0
+
+A YA-MS szabad szoftver: a GNU General Public License 3. verziójának feltételei szerint terjesztheted és módosíthatod ([COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING) fájl). Mindenféle garancia nélkül terjesztjük.
+
 ## Fő forrás
 
 **Costantino Cerrotta IC8TEM** és **Gianluigi „Gigi” Sartori IV3GTH** – *„METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese”* (cikk, 7. változat). Ebből származik: a kb. 90 km-es nyommagasság, a földsugár, az elevációs képlet, a közös zóna, Hot A / Hot B és az oldalszórás, az útcsillapítási hivatkozások, a minimális jel és az IARU-pingidőtartamok.

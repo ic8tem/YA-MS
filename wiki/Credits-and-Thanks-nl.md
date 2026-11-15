@@ -4,6 +4,10 @@
 
 YA-MS steunt op het werk van veel radioamateurs, wetenschappers en instituten. Gegevens, tabellen, artikelen en metingen behoren toe aan wie ze heeft gemaakt; de volledige referenties staan in het tabblad [Bronnen](Sources-nl) en aan het eind van de rekenhandleiding.
 
+## Licentie: GNU GPL-3.0
+
+YA-MS is vrije software: u mag het verspreiden en wijzigen onder de voorwaarden van de GNU General Public License versie 3 (bestand [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). Het wordt verspreid zonder enige garantie.
+
 ## Hoofdbron
 
 **Costantino Cerrotta IC8TEM** en **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikel, versie 7). Daaruit: spoorhoogte van ongeveer 90 km, aardstraal, de elevatieformule, de gemeenschappelijke zone, Hot A / Hot B en side-scatter, referenties voor de trajectdemping, minimaal signaal en IARU-pingduur.

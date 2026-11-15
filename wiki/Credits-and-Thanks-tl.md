@@ -4,6 +4,10 @@
 
 Nakatayo ang YA-MS sa gawa ng maraming radio amateur, siyentipiko at institusyon. Pag-aari ng mga gumawa ang mga datos, talahanayan, artikulo at sukat; nasa tab na [Mga sanggunian](Sources-tl) at sa dulo ng manwal ng kalkulasyon ang buong mga sanggunian.
 
+## Lisensiya: GNU GPL-3.0
+
+Ang YA-MS ay malayang software: maaari mo itong ipamahagi at baguhin ayon sa mga tuntunin ng GNU General Public License bersiyon 3 (file na [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). Ipinamamahagi ito nang walang anumang garantiya.
+
 ## Pangunahing sanggunian
 
 **Costantino Cerrotta IC8TEM** at **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikulo, bersyon 7). Mula rito: taas ng bakas na mga 90 km, radius ng Daigdig, ang pormula ng elebasyon, ang karaniwang sona, Hot A / Hot B at side-scatter, mga sanggunian ng path loss, pinakamahinang signal at tagal ng ping ayon sa IARU.

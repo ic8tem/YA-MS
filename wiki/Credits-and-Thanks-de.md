@@ -4,6 +4,10 @@
 
 YA-MS baut auf der Arbeit vieler Funkamateure, Wissenschaftler und Einrichtungen auf. Daten, Tabellen, Artikel und Messungen gehören denen, die sie erstellt haben; die vollständigen Angaben stehen im Reiter [Quellen](Sources-de) und am Ende des Berechnungshandbuchs.
 
+## Lizenz: GNU GPL-3.0
+
+YA-MS ist freie Software: Sie können es unter den Bedingungen der GNU General Public License Version 3 (Datei [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)) weitergeben und ändern. Es wird ohne jede Gewährleistung verteilt.
+
 ## Hauptquelle
 
 **Costantino Cerrotta IC8TEM** und **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (Artikel, Version 7). Daraus stammen: Spurhöhe etwa 90 km, Erdradius, die Elevationsformel, die gemeinsame Zone, Hot A / Hot B und Side-Scatter, Referenzwerte der Streckendämpfung, Empfangsschwelle und IARU-Pingdauern.

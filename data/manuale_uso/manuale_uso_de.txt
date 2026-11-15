@@ -47,7 +47,7 @@ H2|3.2 Die Reiter
 LI|Live und Echtzeitdaten: Verkehr live, Radarfluss, GRAVES-Radar, Datensammlung (Kapitel 9).
 LI|Vorhersageberechnung: Vorhersageberechnung, Geometrie und Dämpfung, Effektivitätsberechnung, Experimentelle Vorhersage (Kapitel 5-8).
 LI|Ströme live, Ströme, Feldkarte (Kapitel 10-11).
-LI|Technische Dokumente, als letzter: Bedienungsanleitung, Quellen, Karte der europäischen Radare, Erklärung der Wirkungsgradberechnung (Kapitel 12).
+LI|Technische Dokumente, als letzter: Bedienungsanleitung, Quellen, Karte der europäischen Radare, Erklärung der Wirkungsgradberechnung, Danksagung (Kapitel 12).
 H2|3.3 Sprache, Farben, Schrift
 LI|Sprache: 36 Sprachen. Beim Sprachwechsel wird das Fenster an derselben Position und auf demselben Reiter neu aufgebaut, ohne Neustart. Zahlen und Datumsangaben folgen der gewählten Sprache (Dezimalkomma auf Italienisch, Dezimalpunkt auf Englisch).
 LI|Farbschema: 12 Farbschemata; Hell ist die Voreinstellung, Nacht und Schwarz sind für den Betrieb im Dunkeln gedacht, Meteorspur ist der ursprüngliche Stil von YA-MS.
@@ -217,6 +217,7 @@ LI|Bedienungsanleitung: dieses Dokument.
 LI|Quellen: alle Quellen des Programms, mit den Literaturangaben.
 LI|Karte der europäischen Radare: wo sich Collm, Sodankylä, GRAVES und CMOR bezogen auf deine Station befinden, mit dem von jedem Radar gesehenen Himmel.
 LI|Erklärung der Wirkungsgradberechnung: wie die Effektivität Schritt für Schritt berechnet wird, mit den Kennzeichnungen QUELLE, PRÜFUNG und WAHL.
+LI|Danksagung: Autor, Kontakt, Lizenz (GNU GPL-3.0) und die Karten derer, die YA-MS möglich gemacht haben: Artikel, Programme, Daten, Dienste und Bibliotheken, mit ihrer Lizenz.
 P|Die Dokumente folgen der Sprache der Oberfläche, wenn es eine Übersetzung gibt, sonst sind sie auf Italienisch. „Nach Word exportieren (.docx)“ speichert eine Kopie, wo du willst; „In Word öffnen“ öffnet es mit dem Standardprogramm. Das Berechnungshandbuch mit allen Gleichungen liegt im Ordner doc (Italienisch) und in doc/manuali (die anderen Sprachen).
 H1|13. Der Ordner data und die Einstellungen
 H2|13.1 Die wichtigsten Dateien

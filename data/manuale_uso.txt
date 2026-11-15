@@ -47,7 +47,7 @@ H2|3.2 Le linguette
 LI|Live e dati real-time: Traffico in diretta, Flusso radar, Radar GRAVES, Raccolta dati (capitolo 9).
 LI|Calcolo previsionale: Calcolo previsionale, Geometria e attenuazione, Calcolo dell'efficienza, Attuazione sperimentale previsioni (capitoli 5-8).
 LI|Sciami in diretta, Sciami, Mappa quadrati (capitoli 10-11).
-LI|Documenti tecnici, ultima: Manuale d'uso, Fonti, Mappa dei radar europei, Spiegazione del calcolo dell'efficienza (capitolo 12).
+LI|Documenti tecnici, ultima: Manuale d'uso, Fonti, Mappa dei radar europei, Spiegazione del calcolo dell'efficienza, Crediti (capitolo 12).
 H2|3.3 Lingua, colori, carattere
 LI|Lingua: 36 lingue. Cambiando lingua la finestra si ricostruisce nella stessa posizione e sulla stessa linguetta, senza riavviare. Numeri e date seguono la lingua scelta (virgola decimale in italiano, punto in inglese).
 LI|Tema: 12 schemi di colori; Chiaro è quello di partenza, Notte e Nero servono al buio, Scia meteorica è lo stile originale di YA-MS.
@@ -217,6 +217,7 @@ LI|Manuale d'uso: questo documento.
 LI|Fonti: tutte le fonti del programma, con i riferimenti.
 LI|Mappa dei radar europei: dove si trovano Collm, Sodankylä, GRAVES e CMOR rispetto alla tua stazione, con il cielo visto da ciascun radar.
 LI|Spiegazione del calcolo dell'efficienza: come si calcola l'efficienza, passo per passo, con le etichette FONTE, RILIEVO e SCELTA.
+LI|Crediti: autore, contatti, licenza (GNU GPL-3.0) e le schede con chi ha reso possibile YA-MS: articoli, programmi, dati, servizi e librerie, con la loro licenza.
 P|I documenti seguono la lingua dell'interfaccia quando la traduzione esiste, altrimenti sono in italiano. "Esporta in Word (.docx)" ne salva una copia dove vuoi; "Apri in Word" lo apre con il programma predefinito. Il Manuale dei calcoli, con tutte le equazioni, è nella cartella doc (italiano) e doc/manuali (le altre lingue).
 H1|13. La cartella data e le impostazioni
 H2|13.1 I file principali

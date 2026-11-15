@@ -47,7 +47,7 @@ H2|3.2 Kortelės
 LI|Tiesiogiai ir realiojo laiko duomenys: Eismas tiesiogiai, Radaro srautas, GRAVES radaras, Duomenų rinkimas (9 skyrius).
 LI|Prognozės skaičiavimas: Prognozės skaičiavimas, Geometrija ir slopinimas, Efektyvumo skaičiavimas, Eksperimentinės prognozės (5-8 skyriai).
 LI|Srautai tiesiogiai, Srautai, Kvadratų žemėlapis (10-11 skyriai).
-LI|Techniniai dokumentai, paskutinė: Naudotojo vadovas, Šaltiniai, Europos radarų žemėlapis, Efektyvumo skaičiavimo paaiškinimas (12 skyrius).
+LI|Techniniai dokumentai, paskutinė: Naudotojo vadovas, Šaltiniai, Europos radarų žemėlapis, Efektyvumo skaičiavimo paaiškinimas, Padėkos (12 skyrius).
 H2|3.3 Kalba, spalvos, šriftas
 LI|Kalba: 36 kalbos. Pakeitus kalbą, langas perkuriamas toje pačioje vietoje ir toje pačioje kortelėje, nepaleidžiant programos iš naujo. Skaičiai ir datos atitinka pasirinktą kalbą (dešimtainis kablelis lietuvių ir italų kalbomis, taškas anglų kalba).
 LI|Tema: 12 spalvų schemų; Šviesi yra numatytoji, Naktinė ir Juoda skirtos darbui tamsoje, Meteoro pėdsakas yra originalus YA-MS stilius.
@@ -217,6 +217,7 @@ LI|Naudotojo vadovas: šis dokumentas.
 LI|Šaltiniai: visi programos šaltiniai su nuorodomis.
 LI|Europos radarų žemėlapis: kur yra Collm, Sodankylä, GRAVES ir CMOR jūsų stoties atžvilgiu, su dangumi, kurį mato kiekvienas radaras.
 LI|Efektyvumo skaičiavimo paaiškinimas: kaip apskaičiuojamas efektyvumas, žingsnis po žingsnio, su žymomis ŠALTINIS, PATIKRA ir PASIRINKIMAS.
+LI|Padėkos: autorius, kontaktai, licencija (GNU GPL-3.0) ir kortelės tų, kurie padarė YA-MS įmanomą: straipsniai, programos, duomenys, paslaugos ir bibliotekos su jų licencijomis.
 P|Dokumentai rodomi sąsajos kalba, jei vertimas yra, kitaip - italų kalba. „Eksportuoti į Word (.docx)“ išsaugo kopiją norimoje vietoje; „Atverti Word“ atveria jį numatytąja programa. Skaičiavimų vadovas su visomis lygtimis yra aplanke doc (italų kalba) ir doc/manuali (kitomis kalbomis).
 H1|13. Aplankas data ir nustatymai
 H2|13.1 Pagrindiniai failai

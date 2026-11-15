@@ -47,7 +47,7 @@ H2|3.2 Karty
 LI|Na żywo i dane w czasie rzeczywistym: Ruch na żywo, Strumień radarowy, Radar GRAVES, Zbieranie danych (rozdział 9).
 LI|Obliczenie prognozy: Obliczenie prognozy, Geometria i tłumienie, Obliczanie sprawności, Prognozy eksperymentalne (rozdziały 5-8).
 LI|Roje na żywo, Roje, Mapa kwadratów (rozdziały 10-11).
-LI|Dokumenty techniczne, ostatnia: Instrukcja obsługi, Źródła, Mapa radarów europejskich, Wyjaśnienie obliczania wydajności (rozdział 12).
+LI|Dokumenty techniczne, ostatnia: Instrukcja obsługi, Źródła, Mapa radarów europejskich, Wyjaśnienie obliczania wydajności, Podziękowania (rozdział 12).
 H2|3.3 Język, kolory, czcionka
 LI|Język: 36 języków. Po zmianie języka okno odbudowuje się w tym samym położeniu i na tej samej karcie, bez ponownego uruchamiania. Liczby i daty są zgodne z wybranym językiem (przecinek dziesiętny po polsku i po włosku, kropka po angielsku).
 LI|Motyw: 12 schematów kolorów; Jasny jest domyślny, Noc i Czarny służą do pracy w ciemności, Ślad meteoru to oryginalny styl YA-MS.
@@ -217,6 +217,7 @@ LI|Instrukcja obsługi: ten dokument.
 LI|Źródła: wszystkie źródła programu wraz z odnośnikami.
 LI|Mapa radarów europejskich: gdzie znajdują się Collm, Sodankylä, GRAVES i CMOR względem twojej stacji, z niebem widzianym przez każdy z radarów.
 LI|Wyjaśnienie obliczania wydajności: jak oblicza się sprawność, krok po kroku, z etykietami ŹRÓDŁO, WERYFIKACJA i WYBÓR.
+LI|Podziękowania: autor, kontakt, licencja (GNU GPL-3.0) i karty tych, którzy umożliwili powstanie YA-MS: artykuły, programy, dane, usługi i biblioteki, z ich licencją.
 P|Dokumenty są wyświetlane w języku interfejsu, jeśli istnieje tłumaczenie, w przeciwnym razie po włosku. "Eksportuj do Word (.docx)" zapisuje kopię w wybranym miejscu; "Otwórz w programie Word" otwiera dokument w programie domyślnym. Podręcznik obliczeń, ze wszystkimi równaniami, znajduje się w folderze doc (po włosku) i doc/manuali (pozostałe języki).
 H1|13. Folder data i ustawienia
 H2|13.1 Najważniejsze pliki

@@ -4,6 +4,10 @@
 
 YA-MS ตั้งอยู่บนผลงานของนักวิทยุสมัครเล่น นักวิทยาศาสตร์ และสถาบันจำนวนมาก ข้อมูล ตาราง บทความ และการวัดเป็นของผู้ที่จัดทำขึ้น การอ้างอิงฉบับเต็มอยู่ในแท็บ [แหล่งอ้างอิง](Sources-th) และท้ายคู่มือการคำนวณ
 
+## สัญญาอนุญาต: GNU GPL-3.0
+
+YA-MS เป็นซอฟต์แวร์เสรี: คุณแจกจ่ายต่อและแก้ไขได้ตามเงื่อนไขของ GNU General Public License รุ่น 3 (ไฟล์ [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)) โดยแจกจ่ายโดยไม่มีการรับประกันใด ๆ
+
 ## แหล่งอ้างอิงหลัก
 
 **Costantino Cerrotta IC8TEM** และ **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (บทความ เวอร์ชัน 7) สิ่งที่นำมาจากบทความนี้: ความสูงของรอยดาวตกประมาณ 90 km รัศมีโลก สูตรมุมเงย โซนร่วม Hot A / Hot B และ side-scatter ค่าอ้างอิงการลดทอนของเส้นทาง สัญญาณต่ำสุด และระยะเวลา ping ของ IARU

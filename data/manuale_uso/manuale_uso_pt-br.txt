@@ -47,7 +47,7 @@ H2|3.2 As abas
 LI|Ao vivo e dados em tempo real: Tráfego ao vivo, Fluxo do radar, Radar GRAVES, Coleta de dados (capítulo 9).
 LI|Cálculo de previsão: Cálculo de previsão, Geometria e atenuação, Cálculo da eficiência, Previsões experimentais (capítulos 5-8).
 LI|Chuvas ao vivo, Chuvas, Mapa de quadrados (capítulos 10-11).
-LI|Documentos técnicos, a última: Manual de uso, Fontes, Mapa dos radares europeus, Explicação do cálculo da eficiência (capítulo 12).
+LI|Documentos técnicos, a última: Manual de uso, Fontes, Mapa dos radares europeus, Explicação do cálculo da eficiência, Créditos (capítulo 12).
 H2|3.3 Idioma, cores, fonte
 LI|Idioma: 36 idiomas. Ao trocar de idioma, a janela se reconstrói na mesma posição e na mesma aba, sem reiniciar. Números e datas seguem o idioma escolhido (vírgula decimal em português, ponto em inglês).
 LI|Tema: 12 esquemas de cores; Claro é o padrão, Noite e Preto servem para o escuro, Rastro meteórico é o estilo original do YA-MS.
@@ -217,6 +217,7 @@ LI|Manual de uso: este documento.
 LI|Fontes: todas as fontes do programa, com as referências.
 LI|Mapa dos radares europeus: onde ficam Collm, Sodankylä, GRAVES e CMOR em relação à sua estação, com o céu visto por cada radar.
 LI|Explicação do cálculo da eficiência: como a eficiência é calculada, passo a passo, com as etiquetas FONTE, VERIFICAÇÃO e ESCOLHA.
+LI|Créditos: autor, contatos, licença (GNU GPL-3.0) e as fichas de quem tornou o YA-MS possível: artigos, programas, dados, serviços e bibliotecas, com sua licença.
 P|Os documentos seguem o idioma da interface quando a tradução existe; caso contrário, ficam em italiano. "Exportar para o Word (.docx)" salva uma cópia onde você quiser; "Abrir no Word" abre o documento com o programa padrão. O Manual dos cálculos, com todas as equações, fica na pasta doc (italiano) e em doc/manuali (os outros idiomas).
 H1|13. A pasta data e as configurações
 H2|13.1 Os arquivos principais

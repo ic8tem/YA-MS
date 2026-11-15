@@ -4,6 +4,10 @@
 
 YA-MS staan op die werk van baie radioamateurs, wetenskaplikes en instellings. Data, tabelle, artikels en metings behoort aan dié wat dit geproduseer het; die volledige verwysings is in die oortjie [Bronne](Sources-af) en aan die einde van die berekeningshandleiding.
 
+## Lisensie: GNU GPL-3.0
+
+YA-MS is vrye sagteware: jy mag dit herversprei en wysig onder die bepalings van die GNU General Public License weergawe 3 (lêer [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). Dit word sonder enige waarborg versprei.
+
 ## Hoofbron
 
 **Costantino Cerrotta IC8TEM** en **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikel, weergawe 7). Daaruit kom: spoorhoogte van ongeveer 90 km, die aardradius, die elevasieformule, die gemeenskaplike sone, Hot A / Hot B en side-scatter, verwysings vir padverlies, minimum sein en IARU-pingduurtes.

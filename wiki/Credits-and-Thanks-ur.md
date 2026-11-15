@@ -4,6 +4,10 @@
 
 YA-MS بہت سے ریڈیو شوقیہ آپریٹروں، سائنس دانوں اور اداروں کے کام پر کھڑا ہے۔ ڈیٹا، جدول، مضامین اور پیمائشیں انہی کی ہیں جنہوں نے انہیں تیار کیا؛ مکمل حوالے [ذرائع](Sources-ur) ٹیب میں اور حساب کے دستی کتابچے کے آخر میں ہیں۔
 
+## لائسنس: GNU GPL-3.0
+
+YA-MS آزاد سافٹ ویئر ہے: آپ اسے GNU General Public License ورژن 3 (فائل [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)) کی شرائط کے تحت دوبارہ تقسیم اور تبدیل کر سکتے ہیں۔ یہ کسی ضمانت کے بغیر تقسیم کیا جاتا ہے۔
+
 ## مرکزی ماخذ
 
 **Costantino Cerrotta IC8TEM** اور **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (مضمون، ورژن 7)۔ اس سے لیا گیا: لکیروں کی اونچائی تقریباً 90 km، زمین کا رداس، ارتفاع کا فارمولا، مشترکہ زون، Hot A / Hot B اور side-scatter، راستے کے نقصان کے حوالے، کم از کم سگنل اور IARU پنگ دورانیے۔

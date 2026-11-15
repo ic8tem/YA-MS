@@ -45,5 +45,8 @@ Los instaladores los genera GitHub Actions (`.github/workflows/build.yml`) en ca
 
 Los datos de radar pertenecen a sus propietarios (Universidad de Leipzig / IAP Kühlungsborn, Sodankylä Geophysical Observatory).
 
+## Licencia
+YA-MS es software libre: puede redistribuirlo y modificarlo según los términos de la GNU General Public License versión 3 ([COPYING](COPYING)). Se distribuye sin ninguna garantía.
+
 ## Apoya el proyecto
 YA-MS es gratuito. Si te resulta útil, puedes invitarme a un café en **[Ko-fi](https://ko-fi.com/ic8tem)**.

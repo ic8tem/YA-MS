@@ -47,7 +47,7 @@ H2|3.2 De tabbladen
 LI|Live en realtimegegevens: Verkeer live, Radarflux, GRAVES-radar, Gegevensverzameling (hoofdstuk 9).
 LI|Voorspellingsberekening: Voorspellingsberekening, Geometrie en demping, Efficiëntieberekening, Experimentele voorspelling (hoofdstukken 5-8).
 LI|Zwermen live, Zwermen, Vakkenkaart (hoofdstukken 10-11).
-LI|Technische documenten, als laatste: Gebruikershandleiding, Bronnen, Kaart van de Europese radars, Uitleg van de rendementsberekening (hoofdstuk 12).
+LI|Technische documenten, als laatste: Gebruikershandleiding, Bronnen, Kaart van de Europese radars, Uitleg van de rendementsberekening, Credits (hoofdstuk 12).
 H2|3.3 Taal, kleuren, lettertype
 LI|Taal: 36 talen. Bij het wisselen van taal wordt het venster opnieuw opgebouwd op dezelfde positie en op hetzelfde tabblad, zonder herstart. Getallen en datums volgen de gekozen taal (decimale komma in het Italiaans, punt in het Engels).
 LI|Kleurenschema: 12 kleurenschema's; Licht is het standaardschema, Nacht en Zwart zijn bedoeld voor het donker, Meteorenspoor is de oorspronkelijke stijl van YA-MS.
@@ -217,6 +217,7 @@ LI|Gebruikershandleiding: dit document.
 LI|Bronnen: alle bronnen van het programma, met de referenties.
 LI|Kaart van de Europese radars: waar Collm, Sodankylä, GRAVES en CMOR liggen ten opzichte van jouw station, met de hemel zoals elke radar die ziet.
 LI|Uitleg van de rendementsberekening: hoe de efficiëntie stap voor stap wordt berekend, met de labels BRON, CONTROLE en KEUZE.
+LI|Credits: auteur, contact, licentie (GNU GPL-3.0) en de kaarten van wie YA-MS mogelijk heeft gemaakt: artikelen, programma's, gegevens, diensten en bibliotheken, met hun licentie.
 P|De documenten volgen de taal van de interface als de vertaling bestaat, anders zijn ze in het Italiaans. "Exporteren naar Word (.docx)" slaat er een kopie van op waar je wilt; "Openen in Word" opent het met het standaardprogramma. De Rekenhandleiding, met alle vergelijkingen, staat in de map doc (Italiaans) en doc/manuali (de andere talen).
 H1|13. De map data en de instellingen
 H2|13.1 De belangrijkste bestanden

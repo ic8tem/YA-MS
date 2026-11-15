@@ -47,7 +47,7 @@ H2|3.2 Las pestañas
 LI|En directo y datos en tiempo real: Tráfico en directo, Flujo radar, Radar GRAVES, Recogida de datos (capítulo 9).
 LI|Cálculo de previsión: Cálculo de previsión, Geometría y atenuación, Cálculo de la eficiencia, Previsiones experimentales (capítulos 5-8).
 LI|Lluvias en directo, Lluvias, Mapa de cuadrículas (capítulos 10-11).
-LI|Documentos técnicos, la última: Manual de uso, Fuentes, Mapa de los radares europeos, Explicación del cálculo de la eficiencia (capítulo 12).
+LI|Documentos técnicos, la última: Manual de uso, Fuentes, Mapa de los radares europeos, Explicación del cálculo de la eficiencia, Créditos (capítulo 12).
 H2|3.3 Idioma, colores, tipo de letra
 LI|Idioma: 36 idiomas. Al cambiar de idioma la ventana se reconstruye en la misma posición y en la misma pestaña, sin reiniciar. Los números y las fechas siguen el idioma elegido (coma decimal en español, punto en inglés).
 LI|Tema: 12 esquemas de colores; Claro es el inicial, Noche y Negro sirven para la oscuridad, Estela meteórica es el estilo original de YA-MS.
@@ -217,6 +217,7 @@ LI|Manual de uso: este documento.
 LI|Fuentes: todas las fuentes del programa, con las referencias.
 LI|Mapa de los radares europeos: dónde se encuentran Collm, Sodankylä, GRAVES y CMOR respecto a tu estación, con el cielo visto por cada radar.
 LI|Explicación del cálculo de la eficiencia: cómo se calcula la eficiencia, paso a paso, con las etiquetas FUENTE, COMPROBACIÓN y ELECCIÓN.
+LI|Créditos: autor, contacto, licencia (GNU GPL-3.0) y las fichas de quienes hicieron posible YA-MS: artículos, programas, datos, servicios y bibliotecas, con su licencia.
 P|Los documentos siguen el idioma de la interfaz cuando existe la traducción; si no, están en italiano. "Exportar a Word (.docx)" guarda una copia donde quieras; "Abrir en Word" lo abre con el programa predeterminado. El Manual de cálculos, con todas las ecuaciones, está en la carpeta doc (italiano) y en doc/manuali (los demás idiomas).
 H1|13. La carpeta data y los ajustes
 H2|13.1 Los archivos principales

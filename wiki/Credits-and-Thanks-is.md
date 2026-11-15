@@ -4,6 +4,10 @@
 
 YA-MS byggir á verkum margra radíóamatöra, vísindamanna og stofnana. Gögn, töflur, greinar og mælingar tilheyra þeim sem unnu þau; fullar tilvísanir eru á flipanum [Heimildir](Sources-is) og í lok reiknihandbókarinnar.
 
+## Leyfi: GNU GPL-3.0
+
+YA-MS er frjáls hugbúnaður: þú mátt dreifa honum og breyta samkvæmt skilmálum GNU General Public License útgáfu 3 (skráin [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). Honum er dreift án nokkurrar ábyrgðar.
+
 ## Aðalheimild
 
 **Costantino Cerrotta IC8TEM** og **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (grein, útgáfa 7). Þaðan koma: hæð slóða um 90 km, jarðarradíus, formúla hæðarhorns, sameiginlega svæðið, Hot A / Hot B og side-scatter, viðmiðanir um leiðardeyfingu, lágmarksmerki og lengd pinga samkvæmt IARU.

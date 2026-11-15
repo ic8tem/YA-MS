@@ -33,10 +33,46 @@ EXTRA = [
     "Non connesso", "Disconnesso", "Chiuso", "Nuovo tentativo tra 30 s", "Indirizzo mancante", "Manca il nominativo per il login",
     # PskMqtt.cs: stati della connessione MQTT (PskMqtt.StateKey)
     "Connessione a {0}...", "Connesso: {0} argomenti", "Errore: {0}", "Riconnessione tra {0} s",
+    # MainWindow.Crediti.cs: descrizioni dei crediti (Credit.What) e licenze da tradurre (CreditLicT)
+    "La fonte principale: geometria del meteor scatter, Hot A e Hot B, elevazione d'antenna e attenuazione di tratta.",
+    'Il concetto di efficienza dello sciame, da cui nasce il calcolo di YA-MS.',
+    "Il calcolatore di partenza dell'efficienza per direzioni e i suoi valori di prova.",
+    'Le regole λ³ e λ² della previsione sperimentale, il punto medio della tratta e la direzione migliore.',
+    'La diffusione a cono, la scelta tra Hot A e Hot B e il caso di prova Amburgo - Barcellona usato per collaudare il modello.',
+    "La formula della direzione migliore usata nella riga di confronto del Calcolo dell'efficienza.",
+    "Il guadagno in funzione della lunghezza del boom e l'apertura del lobo d'antenna.",
+    "La perdita delle scie sottodense, l'angolo beta tra scia e tratta e il raggio iniziale della scia.",
+    'Il calendario degli sciami: periodi, massimi, radianti, velocità e ZHR.',
+    'Il catalogo degli sciami stabiliti, per il confronto dei radianti nella linguetta Sciami.',
+    'Flusso e ZHR misurati degli sciami e traiettorie del giorno.',
+    'Il flusso orario delle meteore, base della previsione sperimentale.',
+    'Il conteggio delle meteore in diretta.',
+    'Le mappe dei radianti misurate dal radar canadese.',
+    'I conteggi radio orari degli osservatori amatoriali.',
+    'Posizione del trasmettitore, settori e tempi del fascio.',
+    'Gli spot e le stazioni in ascolto del Traffico in diretta, e il rimando dei rapporti.',
+    'Gli spot della Raccolta dati.',
+    "L'archivio dei nominativi e dei locator, aggiornato ogni 12 ore.",
+    'Il locator dei nominativi che mancano nel CALL3.',
+    'Il file grid_data.bin dei locator, usato come ultimo livello per i locator mancanti.',
+    'Il protocollo UDP con cui YA-MS riceve le decodifiche, anche da JTDX e MSHV.',
+    'Il riferimento per la posizione degli hot spot ai lati della tratta.',
+    'Un confronto per la previsione degli sciami.',
+    'Il riferimento per la grafica della volta celeste.',
+    'Lo scambio cifrato dei messaggi tra gli utenti di YA-MS.',
+    'Le coste e i confini delle mappe.',
+    "L'interfaccia multipiattaforma (Windows, Linux, Mac) e l'ambiente di esecuzione.",
+    "Il carattere dell'interfaccia.",
+    'fonte citata',
+    'solo idee e formule, nessun codice',
+    "dati dell'ente, citati",
+    'dati pubblici, citazione richiesta',
+    'servizio pubblico gratuito',
+    'dominio pubblico',
 ]
 
 # argomenti non letterali ammessi (i loro valori stanno nei nomi degli sciami o in EXTRA)
-KNOWN_DYNAMIC = {"s.Name", "h.Label", "rh.Label", "tn", "def[0]", "def[4]", "MsCollector.StateText[i]", "PskMqtt.StateKey"}
+KNOWN_DYNAMIC = {"c.What", "l", "s.Name", "h.Label", "rh.Label", "tn", "def[0]", "def[4]", "MsCollector.StateText[i]", "PskMqtt.StateKey"}
 
 HEADER = """# YA-MS - chiavi da tradurre (testi italiani dell'interfaccia). File generato da tools/estrai_chiavi.py: non modificare a mano.
 # Ogni file di traduzione data/lingue/<codice>.txt (UTF-8) ha una voce per riga:

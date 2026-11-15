@@ -4,6 +4,10 @@
 
 YA-MS berdiri di atas karya banyak radio amatir, ilmuwan dan lembaga. Data, tabel, artikel dan pengukuran adalah milik mereka yang menghasilkannya; referensi lengkapnya ada di tab [Sumber](Sources-id) dan di bagian akhir manual perhitungan.
 
+## Lisensi: GNU GPL-3.0
+
+YA-MS adalah perangkat lunak bebas: Anda boleh menyebarkan dan mengubahnya menurut ketentuan GNU General Public License versi 3 (berkas [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). Program ini didistribusikan tanpa jaminan apa pun.
+
 ## Sumber utama
 
 **Costantino Cerrotta IC8TEM** dan **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikel, versi 7). Dari artikel ini: ketinggian jejak sekitar 90 km, jari-jari Bumi, rumus elevasi, zona bersama, Hot A / Hot B dan side scatter, referensi redaman lintasan, sinyal minimum dan durasi ping IARU.

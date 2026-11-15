@@ -4,6 +4,10 @@
 
 YA-MS अनेक रेडियो शौकीनों, वैज्ञानिकों और संस्थानों के काम पर टिका है। डेटा, तालिकाएँ, लेख और माप उन्हीं के हैं जिन्होंने उन्हें बनाया; पूरे संदर्भ [स्रोत](Sources-hi) टैब में और गणना पुस्तिका के अंत में हैं।
 
+## लाइसेंस: GNU GPL-3.0
+
+YA-MS मुक्त सॉफ़्टवेयर है: आप इसे GNU General Public License संस्करण 3 (फ़ाइल [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)) की शर्तों के तहत पुनर्वितरित और संशोधित कर सकते हैं। यह बिना किसी वारंटी के वितरित किया जाता है।
+
 ## मुख्य स्रोत
 
 **Costantino Cerrotta IC8TEM** और **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (लेख, संस्करण 7)। इससे लिया गया: लगभग 90 km की ट्रेल ऊँचाई, पृथ्वी की त्रिज्या, उन्नयन सूत्र, साझा क्षेत्र, Hot A / Hot B और साइड-स्कैटर, पथ क्षीणन के संदर्भ, न्यूनतम सिग्नल और IARU पिंग अवधियाँ।

@@ -4,6 +4,10 @@
 
 YA-MS tugineb paljude raadioamatööride, teadlaste ja asutuste tööle. Andmed, tabelid, artiklid ja mõõtmised kuuluvad nende tegijatele; täielikud viited on sakil [Allikad](Sources-et) ja arvutusjuhendi lõpus.
 
+## Litsents: GNU GPL-3.0
+
+YA-MS on vaba tarkvara: võid seda levitada ja muuta GNU General Public License'i 3. versiooni tingimustel (fail [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). Seda levitatakse ilma igasuguse garantiita.
+
 ## Peamine allikas
 
 **Costantino Cerrotta IC8TEM** ja **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artikkel, versioon 7). Sealt pärinevad: jälgede kõrgus umbes 90 km, Maa raadius, elevatsiooni valem, ühisala, Hot A / Hot B ja külghajumine, sumbumise viited, minimaalne signaal ja IARU pingide kestused.

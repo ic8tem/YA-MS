@@ -47,7 +47,7 @@ H2|3.2 Filele
 LI|Live și date în timp real: Trafic în direct, Flux radar, Radar GRAVES, Colectare date (capitolul 9).
 LI|Calcul de prognoză: Calcul de prognoză, Geometrie și atenuare, Calculul eficienței, Prognoze experimentale (capitolele 5-8).
 LI|Roiuri în direct, Roiuri, Harta pătratelor (capitolele 10-11).
-LI|Documente tehnice, ultima: Manual de utilizare, Surse, Harta radarelor europene, Explicația calculului eficienței (capitolul 12).
+LI|Documente tehnice, ultima: Manual de utilizare, Surse, Harta radarelor europene, Explicația calculului eficienței, Mulțumiri (capitolul 12).
 H2|3.3 Limbă, culori, font
 LI|Limba: 36 de limbi. La schimbarea limbii fereastra se reconstruiește în aceeași poziție și pe aceeași filă, fără repornire. Numerele și datele urmează limba aleasă (virgulă zecimală în română, punct în engleză).
 LI|Temă: 12 scheme de culori; Luminos este cea implicită, Noapte și Negru sunt pentru întuneric, Dâră meteorică este stilul original al YA-MS.
@@ -217,6 +217,7 @@ LI|Manual de utilizare: acest document.
 LI|Surse: toate sursele programului, cu referințele.
 LI|Harta radarelor europene: unde se află Collm, Sodankylä, GRAVES și CMOR față de stația dumneavoastră, cu cerul văzut de fiecare radar.
 LI|Explicația calculului eficienței: cum se calculează eficiența, pas cu pas, cu etichetele SURSĂ, VERIFICARE și ALEGERE.
+LI|Mulțumiri: autor, contact, licență (GNU GPL-3.0) și fișele celor care au făcut posibil YA-MS: articole, programe, date, servicii și biblioteci, cu licența lor.
 P|Documentele urmează limba interfeței atunci când traducerea există, altfel sunt în italiană. „Exportă în Word (.docx)” salvează o copie unde doriți; „Deschide în Word” îl deschide cu programul implicit. Manualul calculelor, cu toate ecuațiile, se află în dosarul doc (italiană) și doc/manuali (celelalte limbi).
 H1|13. Dosarul data și setările
 H2|13.1 Fișierele principale

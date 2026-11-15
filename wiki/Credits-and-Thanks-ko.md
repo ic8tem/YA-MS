@@ -4,6 +4,10 @@
 
 YA-MS는 많은 아마추어 무선사, 과학자, 기관의 성과 위에 서 있습니다. 데이터, 표, 논문, 측정값의 권리는 그것을 만든 이들에게 있습니다. 전체 참고문헌은 [출처](Sources-ko) 탭과 계산 매뉴얼 끝에 있습니다.
 
+## 라이선스: GNU GPL-3.0
+
+YA-MS는 자유 소프트웨어입니다. GNU General Public License 버전 3([COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING) 파일)의 조건에 따라 재배포하고 수정할 수 있습니다. 어떠한 보증도 없이 배포됩니다.
+
 ## 주요 출처
 
 **Costantino Cerrotta IC8TEM**과 **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"*(논문, 제7판). 여기서 가져온 것: 약 90 km의 흔적 고도, 지구 반경, 앙각 공식, 공통 영역, Hot A / Hot B와 사이드 스캐터, 경로 손실 기준값, 최소 신호, IARU 핑 지속 시간.

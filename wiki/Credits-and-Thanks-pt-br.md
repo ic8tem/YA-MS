@@ -4,6 +4,10 @@
 
 O YA-MS se baseia no trabalho de muitos radioamadores, cientistas e instituições. Os dados, tabelas, artigos e medições pertencem a quem os produziu; as referências completas estão na aba [Fontes](Sources-pt-br) e no fim do manual de cálculo.
 
+## Licença: GNU GPL-3.0
+
+O YA-MS é software livre: você pode redistribuí-lo e modificá-lo nos termos da GNU General Public License versão 3 (arquivo [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). É distribuído sem nenhuma garantia.
+
 ## Fonte principal
 
 **Costantino Cerrotta IC8TEM** e **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (artigo, versão 7). Dele vêm: a altitude dos rastros de cerca de 90 km, o raio terrestre, a fórmula da elevação, a zona comum, Hot A / Hot B e o side-scatter, as referências de atenuação do percurso, o sinal mínimo e a duração dos pings IARU.

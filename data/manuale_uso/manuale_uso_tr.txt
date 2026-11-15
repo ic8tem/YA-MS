@@ -47,7 +47,7 @@ H2|3.2 Sekmeler
 LI|Canlı ve gerçek zamanlı veriler: Canlı trafik, Radar akısı, GRAVES radarı, Veri toplama (bölüm 9).
 LI|Tahmin hesabı: Tahmin hesabı, Geometri ve yol kaybı, Verim hesabı, Deneysel tahminler (bölüm 5-8).
 LI|Canlı yağmurlar, Yağmurlar, Kare haritası (bölüm 10-11).
-LI|Teknik belgeler, en sonda: Kullanım kılavuzu, Kaynaklar, Avrupa radarları haritası, Verim hesabının açıklaması (bölüm 12).
+LI|Teknik belgeler, en sonda: Kullanım kılavuzu, Kaynaklar, Avrupa radarları haritası, Verim hesabının açıklaması, Teşekkürler (bölüm 12).
 H2|3.3 Dil, renkler, yazı tipi
 LI|Dil: 36 dil. Dil değiştirildiğinde pencere, yeniden başlatmaya gerek kalmadan aynı konumda ve aynı sekmede yeniden oluşturulur. Sayılar ve tarihler seçilen dili izler (İtalyancada ondalık virgül, İngilizcede nokta).
 LI|Tema: 12 renk şeması; Açık başlangıç şemasıdır, Gece ve Siyah karanlıkta kullanım içindir, Meteor izi YA-MS'in özgün stilidir.
@@ -217,6 +217,7 @@ LI|Kullanım kılavuzu: bu belge.
 LI|Kaynaklar: programın tüm kaynakları, referanslarıyla.
 LI|Avrupa radarları haritası: Collm, Sodankylä, GRAVES ve CMOR'un istasyonunuza göre nerede bulunduğu ve her radarın gördüğü gökyüzü.
 LI|Verim hesabının açıklaması: verimin adım adım nasıl hesaplandığı, KAYNAK, KONTROL ve SEÇİM etiketleriyle.
+LI|Teşekkürler: yazar, iletişim, lisans (GNU GPL-3.0) ve YA-MS'i mümkün kılanların kartları: makaleler, programlar, veriler, hizmetler ve kütüphaneler, lisanslarıyla.
 P|Belgeler, çeviri varsa arayüz dilini izler, yoksa İtalyancadır. "Word'e aktar (.docx)" istediğiniz yere bir kopyasını kaydeder; "Word'de aç" onu varsayılan programla açar. Tüm denklemleri içeren Hesaplamalar Kılavuzu doc klasöründe (İtalyanca) ve doc/manuali klasöründedir (diğer diller).
 H1|13. data klasörü ve ayarlar
 H2|13.1 Başlıca dosyalar

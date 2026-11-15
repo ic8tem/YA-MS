@@ -4,6 +4,10 @@
 
 YA-MS נשענת על עבודתם של חובבי רדיו, מדענים ומוסדות רבים. נתונים, טבלאות, מאמרים ומדידות שייכים למי שהפיקו אותם; ההפניות המלאות נמצאות בלשונית [מקורות](Sources-he) ובסוף מדריך החישובים.
 
+## רישיון: GNU GPL-3.0
+
+YA-MS הוא תוכנה חופשית: מותר להפיץ ולשנות אותו לפי תנאי רישיון GNU General Public License גרסה 3 (הקובץ [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). הוא מופץ ללא כל אחריות.
+
 ## מקור עיקרי
 
 **Costantino Cerrotta IC8TEM** ו-**Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (מאמר, גרסה 7). ממנו: גובה שובלים של כ-90 km, רדיוס כדור הארץ, נוסחת ההגבהה, האזור המשותף, Hot A / Hot B ופיזור צדי, מקורות להנחתת נתיב, אות מינימלי ומשכי פינג לפי IARU.

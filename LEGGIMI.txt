@@ -2,6 +2,11 @@ YA-MS 1.8.4 - a cura di Costantino IC8TEM
 Previsione e calcolo in diretta dell'efficienza degli sciami meteorici per il meteor scatter (50-432 MHz)
 Windows (64 e 32 bit, ARM), Linux (deb, rpm, Arch, Slackware, AppImage, Alpine), Raspberry Pi e Mac.
 
+LICENZA
+  YA-MS e' software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU General Public License
+  versione 3 (file COPYING). E' distribuito senza alcuna garanzia. Autore: Costantino Cerrotta IC8TEM.
+  Crediti completi nel programma: linguetta Documenti tecnici > Crediti.
+
 INSTALLAZIONE
   Il programma e la sua cartella "data" stanno sempre insieme nella cartella personale YA-MS:
   tutti i dati e le impostazioni sono li' (niente AppData, niente cartelle di sistema).

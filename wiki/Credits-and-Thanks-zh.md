@@ -4,6 +4,10 @@
 
 YA-MS 建立在众多业余无线电爱好者、科学家和机构的工作之上。数据、表格、文章和测量结果归其作者所有；完整的参考文献见[来源](Sources-zh)选项卡以及计算手册末尾。
 
+## 许可证: GNU GPL-3.0
+
+YA-MS 是自由软件：您可以按照 GNU 通用公共许可证第 3 版（[COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING) 文件）的条款再分发和修改它。本软件不提供任何担保。
+
 ## 主要来源
 
 **Costantino Cerrotta IC8TEM** 与 **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"*（文章，第 7 版）。取自该文的内容：约 90 km 的余迹高度、地球半径、仰角公式、公共区域、Hot A / Hot B 与侧向散射、路径损耗参考值、最小信号以及 IARU ping 持续时间。

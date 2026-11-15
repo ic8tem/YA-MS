@@ -4,6 +4,10 @@
 
 YA-MS stands on the work of many radio amateurs, scientists and institutions. Data, tables, articles and measurements belong to those who produced them; the full references are in the [Sources](Sources) tab and at the end of the calculation manual.
 
+## License: GNU GPL-3.0
+
+YA-MS is free software: you can redistribute and modify it under the terms of the GNU General Public License version 3 (file [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). It is distributed without any warranty.
+
 ## Main source
 
 **Costantino Cerrotta IC8TEM** and **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (article, version 7). From it: trail height about 90 km, Earth radius, the elevation formula, the common zone, Hot A / Hot B and side-scatter, path-loss references, minimum signal and IARU ping durations.

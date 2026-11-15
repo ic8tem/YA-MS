@@ -4,6 +4,10 @@
 
 YA-MS stojí na práci mnoha radioamatérů, vědců a institucí. Data, tabulky, články a měření patří těm, kdo je vytvořili; úplné odkazy jsou na kartě [Zdroje](Sources-cs) a na konci manuálu výpočtů.
 
+## Licence: GNU GPL-3.0
+
+YA-MS je svobodný software: můžete jej šířit a upravovat za podmínek GNU General Public License verze 3 (soubor [COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING)). Je šířen bez jakékoli záruky.
+
 ## Hlavní zdroj
 
 **Costantino Cerrotta IC8TEM** a **Gianluigi „Gigi“ Sartori IV3GTH** – *„METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese“* (článek, verze 7). Z něj pochází: výška stop asi 90 km, poloměr Země, vzorec pro elevaci, společná zóna, Hot A / Hot B a side-scatter, referenční hodnoty útlumu trasy, minimální signál a délky pingů podle IARU.

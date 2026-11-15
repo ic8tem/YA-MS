@@ -4,6 +4,10 @@
 
 YA-MS pek çok radyo amatörünün, bilim insanının ve kurumun çalışmasına dayanır. Veriler, tablolar, makaleler ve ölçümler onları üretenlere aittir; tam kaynakça [Kaynaklar](Sources-tr) sekmesinde ve hesap kılavuzunun sonundadır.
 
+## Lisans: GNU GPL-3.0
+
+YA-MS özgür yazılımdır: GNU General Public License sürüm 3 koşulları altında yeniden dağıtabilir ve değiştirebilirsiniz ([COPYING](https://github.com/ic8tem/YA-MS/blob/main/COPYING) dosyası). Hiçbir garanti olmadan dağıtılır.
+
 ## Ana kaynak
 
 **Costantino Cerrotta IC8TEM** ve **Gianluigi "Gigi" Sartori IV3GTH** – *"METEOR-SCATTER. Ovvero come collegare l'Europa in VHF tutto l'anno senza tante pretese"* (makale, sürüm 7). Buradan alınanlar: yaklaşık 90 km'lik iz yüksekliği, Dünya yarıçapı, elevasyon formülü, ortak bölge, Hot A / Hot B ve side scatter, yol kaybı referansları, en düşük sinyal ve IARU ping süreleri.

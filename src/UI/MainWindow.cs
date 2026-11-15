@@ -253,6 +253,15 @@ namespace YAMS
 
         async void OnOpened(object sender, EventArgs e)
         {
+            // schermo piu' piccolo della finestra (768p, notebook da 13-15 pollici): finestra ingrandita, come E-LAYER ANALYZER
+            // (armonizzazione 15/11/2026); con meno di 850 pixel di altezza scatta poi da sola la modalita' compatta
+            try
+            {
+                Avalonia.Platform.Screen sc = Program.ScreenshotDir == null ? (Screens.ScreenFromVisual(this) ?? Screens.Primary) : null;
+                if (sc != null && WindowState == WindowState.Normal && (Height > sc.WorkingArea.Height / sc.Scaling || Width > sc.WorkingArea.Width / sc.Scaling))
+                    WindowState = WindowState.Maximized;
+            }
+            catch { }
             try
             {
                 sky.ShowMap = chkMap.IsChecked == true; sky.TopView = chkTopView.IsChecked == true; skySmall.TopView = chkTopView.IsChecked == true;

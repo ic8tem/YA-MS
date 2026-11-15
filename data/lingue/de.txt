@@ -876,3 +876,10 @@ mai	nie
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	Der Kompaktmodus klappt beim Start die Befehlszeilen ein, verkürzt das Horizontband und blendet die langen Beschreibungen aus (sie bleiben in den Tooltips): nützlich auf 13-15-Zoll-Notebooks.
 un'altra copia di YA-MS sta già interrogando PSKReporter	eine andere Kopie von YA-MS fragt PSKReporter bereits ab
 troppe richieste (429): nuova prova alle {0} UTC	zu viele Anfragen (429): neuer Versuch um {0} UTC
+# temi di IP-TRX-CTRL (armonizzazione 15/11/2026, come E-LAYER ANALYZER)
+Chiaro (IP-TRX-CTRL)	Hell (IP-TRX-CTRL)
+Notte (IP-TRX-CTRL)	Nacht (IP-TRX-CTRL)
+Nero (IP-TRX-CTRL)	Schwarz (IP-TRX-CTRL)
+Blu	Blau
+Viola	Violett
+Verde	Grün

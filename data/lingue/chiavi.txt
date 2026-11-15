@@ -77,6 +77,7 @@ Azimut
 BILANCIO A {0:F0} MHz (punto medio)
 Banda MHz
 Bande (MHz)
+Blu
 Bolidozor wiki, "Graves" – schiere, settori e tempi del fascio
 Bootidi di giugno
 CALCOLO E TEORIA DELL'EFFICIENZA
@@ -108,6 +109,7 @@ Catalogo sciami
 Cerca su G7VRD i locator mancanti
 Che cosa fare
 Chiaro
+Chiaro (IP-TRX-CTRL)
 Chiudi
 Chiuso
 Clic su una tratta della mappa o su una riga della tabella per i dettagli del contatto e della sua zona dello sciame.
@@ -376,6 +378,7 @@ Natural Earth - coste e confini 1:50 milioni, dominio pubblico, www.naturalearth
 Nell'attenuazione (β = 90°, prudente): raggio iniziale della scia {0:F1} dB (r0 = {1:F2} m alla quota media ITU di {2:F1} km per {3:F0} MHz). Con la scia nel piano della tratta (β = 0°, caso migliore) l'attenuazione scende a {4:F1} dB ({5:F1} dB) e il margine sale a {6:+0.0;-0.0} dB
 Nella release non c'è il pacchetto per questo sistema ({0}): scaricalo a mano dalla pagina delle release.
 Nero
+Nero (IP-TRX-CTRL)
 Nessun Hot consigliato: le due stazioni non vedono una zona comune dello strato (vedi l'avviso)
 Nessun Hot consigliato: sciami attivi quasi assenti in questo momento
 Nessun dato GMN: premi "Scarica adesso".
@@ -400,6 +403,7 @@ Non riesco ad aprire il documento: {0}
 Non è un punto sulla mappa: è una rete mondiale di telecamere (soprattutto amatoriali) sparse in molti paesi di tutti i continenti.
 Nota: i dati dei radar appartengono ai rispettivi enti. Prima di distribuire il programma va chiesto il permesso di prelevarli automaticamente.
 Notte
+Notte (IP-TRX-CTRL)
 Nuovo locator del corrispondente dalla mappa: {0}
 Nuovo locator della stazione dalla mappa: {0}
 Nuovo tentativo tra 30 s
@@ -600,7 +604,9 @@ Ursidi
 Vale per gli spot fuori dalle finestre e per quelli con una scritta di altra propagazione: si tengono se contengono una delle parole accese, in maiuscolo, minuscolo o misto. MSK144, FSK441, PSK2K, JTMS e JT6M sono modi digitali usati solo per il meteor scatter: lo spot è MS di sicuro. <MS> indica genericamente che il collegamento è avvenuto via meteor scatter.
 Valori più prudenti, di partenza: quota delle scie misurata dal radar di Collm (casella "dal radar"), scie normali, angolo β acceso.\nConfronto con le curve di DJ5HG (Quadrantidi, tratte da Amburgo): in media 7 dB sotto, con lo stesso andamento orario (scarto di forma circa 3 dB).
 Valori prudenti: scia che attraversa il piano della tratta (β = 90°, caso più sfavorevole), compreso il raggio iniziale della scia (ITU-R P.843) alla quota media degli echi per ciascuna frequenza
+Verde
 Verso l'hot spot consigliato della tratta GRAVES → te (riquadro Tratta), con bassa elevazione
+Viola
 Vista dall'alto (E a destra)
 Voci a mano
 Voci a mano...

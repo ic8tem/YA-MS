@@ -25,6 +25,7 @@ EXTRA = [
     # Theme.cs: Tema.Names (schemi di colori)
     "Chiaro", "Notte", "Nero", "Pastello azzurro", "Pastello arancione", "Pastello acquamarina", "Pastello verde",
     "Pastello rosa", "Pastello lilla", "Pastello indaco", "Pastello marrone", "Scia meteorica",
+    "Chiaro (IP-TRX-CTRL)", "Notte (IP-TRX-CTRL)", "Nero (IP-TRX-CTRL)", "Blu", "Viola", "Verde",   # Tema.IpNome (armonizzazione 15/11/2026)
     # MsSpots.cs: MsCollector.Defaults (nomi e note delle sessioni telnet) e stati di TelnetSession
     "DX cluster a scelta", "Reverse Beacon Network", "Cluster con PSKReporter",
     "Cluster scelto dall'utente. Su ON0DXK le bande VHF sono filtrate: si abilitano con set/filter dxbm/pass 6 (poi 4, 2...). Altro esempio: hamqth.com 7300.",

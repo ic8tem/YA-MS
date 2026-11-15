@@ -874,3 +874,10 @@ mai	कभी नहीं
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	संक्षिप्त मोड शुरू में कमांड पंक्तियाँ समेट देता है, क्षितिजों की पट्टी छोटी करता है और लंबे विवरण छिपा देता है (वे टूलटिप में रहते हैं): 13-15 इंच के लैपटॉप पर उपयोगी।
 un'altra copia di YA-MS sta già interrogando PSKReporter	YA-MS की एक और प्रति पहले से PSKReporter से पूछ रही है
 troppe richieste (429): nuova prova alle {0} UTC	बहुत अधिक अनुरोध (429): अगला प्रयास {0} UTC पर
+# temi di IP-TRX-CTRL (armonizzazione 15/11/2026, come E-LAYER ANALYZER)
+Chiaro (IP-TRX-CTRL)	हल्का (IP-TRX-CTRL)
+Notte (IP-TRX-CTRL)	रात (IP-TRX-CTRL)
+Nero (IP-TRX-CTRL)	काला (IP-TRX-CTRL)
+Blu	नीला
+Viola	बैंगनी
+Verde	हरा

@@ -875,3 +875,10 @@ mai	nikdy
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	Kompaktní režim při spuštění sbalí řádky příkazů, zkrátí pás horizontů a skryje dlouhé popisy (zůstanou v bublinách): užitečné na noteboocích 13-15 palců.
 un'altra copia di YA-MS sta già interrogando PSKReporter	jiná kopie YA-MS už dotazuje PSKReporter
 troppe richieste (429): nuova prova alle {0} UTC	příliš mnoho požadavků (429): další pokus v {0} UTC
+# temi di IP-TRX-CTRL (armonizzazione 15/11/2026, come E-LAYER ANALYZER)
+Chiaro (IP-TRX-CTRL)	Světlý (IP-TRX-CTRL)
+Notte (IP-TRX-CTRL)	Noc (IP-TRX-CTRL)
+Nero (IP-TRX-CTRL)	Černý (IP-TRX-CTRL)
+Blu	Modrá
+Viola	Fialová
+Verde	Zelená

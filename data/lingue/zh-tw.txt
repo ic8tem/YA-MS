@@ -876,3 +876,10 @@ mai	從不
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	精簡模式在啟動時收合命令列，縮短時間點橫欄，並隱藏較長的說明（仍可在提示中查看）：適合 13-15 吋筆記型電腦。
 un'altra copia di YA-MS sta già interrogando PSKReporter	另一個 YA-MS 副本已在查詢 PSKReporter
 troppe richieste (429): nuova prova alle {0} UTC	請求過多（429）：將於 {0} UTC 重試
+# temi di IP-TRX-CTRL (armonizzazione 15/11/2026, come E-LAYER ANALYZER)
+Chiaro (IP-TRX-CTRL)	淺色 (IP-TRX-CTRL)
+Notte (IP-TRX-CTRL)	夜間 (IP-TRX-CTRL)
+Nero (IP-TRX-CTRL)	黑色 (IP-TRX-CTRL)
+Blu	藍色
+Viola	紫色
+Verde	綠色

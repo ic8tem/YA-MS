@@ -23,7 +23,7 @@ namespace YAMS
 
         static readonly Credit[] Credits =
         {
-            new Credit("METEOR-SCATTER (articolo)", "Costantino Cerrotta IC8TEM e Gianluigi \"Gigi\" Sartori IV3GTH, in memoria di IZ8IBB Angelo Farina", "La fonte principale: geometria del meteor scatter, Hot A e Hot B, elevazione d'antenna e attenuazione di tratta.", true, "", "fonte citata"),
+            new Credit("METEOR-SCATTER (articolo)", "Costantino Cerrotta IC8TEM e Gianluigi \"Gigi\" Sartori IV3GTH, in memoria di Angelo Farina IZ8IBB", "La fonte principale: geometria del meteor scatter, Hot A e Hot B, elevazione d'antenna e attenuazione di tratta.", true, "", "fonte citata"),
             new Credit("MS-Soft 5.1 / 5.2", "Ilkka Yrjölä OH5IY", "Il concetto di efficienza dello sciame, da cui nasce il calcolo di YA-MS.", true, "www.kolumbus.fi/oh5iy", "solo idee e formule, nessun codice"),
             new Credit("MCG_MS 1.61", "Wilhelm Rauh DL5MCG", "Il calcolatore di partenza dell'efficienza per direzioni e i suoi valori di prova.", true, "qsl.net/dl5mcg", "solo idee e formule, nessun codice"),
             new Credit("432 MHz Meteorscatter, RadiantCalc", "Ingolf SM6FHZ", "Le regole λ³ e λ² della previsione sperimentale, il punto medio della tratta e la direzione migliore.", true, "Nordic VUSHF 2025", "fonte citata"),

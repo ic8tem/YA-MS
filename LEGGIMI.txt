@@ -42,6 +42,13 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.19
+  - Nuovi pacchetti per Windows 7 SP1, 8 e 8.1: -windows7-x64- e -windows7-x86- (setup e zip portatile), compilati
+    con .NET 6. Su Windows 7 servono gli aggiornamenti KB2533623 e KB2999226.
+  - I pacchetti Windows normali (.NET 8) richiedono Windows 10 o 11: su un Windows piu' vecchio l'installatore lo
+    dice subito, invece dell'errore "GetSystemTimePreciseAsFileTime ... KERNEL32.dll". L'aggiornamento automatico
+    sotto Windows 10 scarica il pacchetto windows7.
+
 NOVITA' DELLA 1.8.18
   - Traffico in diretta: lampeggiano solo le decodifiche della tua WSJT-X (UDP) in cui un corrispondente ti
     risponde (il primo nominativo del messaggio e' il tuo): tratta tratteggiata e riga della tabella su fondo giallo.

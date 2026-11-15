@@ -67,7 +67,7 @@ jobs:
             if curl -fsSL -m 60 -o "$f.tmp" "$u" && [ "$(grep -c '^"' "$f.tmp")" -gt 50 ]; then mv "$f.tmp" "$f"; echo "IAU MDC: $u"; break; fi
           done; rm -f "$f.tmp"
       - name: Compila
-        run: dotnet publish YA-MS.csproj -c Release -r ${{ matrix.rid }} --self-contained true -p:TargetFramework=${{ matrix.tfm }} -p:Version=${{ env.VER }} -p:DebugType=none -o publish/${{ matrix.nome }}-${{ matrix.rid }}
+        run: dotnet publish YA-MS.csproj -c Release -r ${{ matrix.rid }} --self-contained true -p:Windows7=${{ matrix.tfm == 'net6.0' }} -p:Version=${{ env.VER }} -p:DebugType=none -o publish/${{ matrix.nome }}-${{ matrix.rid }}
       - name: Installatore (Inno Setup)
         shell: pwsh
         run: |
@@ -110,7 +110,7 @@ jobs:
         if: github.ref != 'refs/heads/release'
         run: |
           rm -rf /tmp/w7 && mkdir /tmp/w7 && git archive HEAD | tar -x -C /tmp/w7   # cartella pulita: niente obj della compilazione .NET 8
-          dotnet build /tmp/w7/YA-MS.csproj -c Release -p:TargetFramework=net6.0 -o /tmp/ya-ms-net6
+          dotnet build /tmp/w7/YA-MS.csproj -c Release -p:Windows7=true -o /tmp/ya-ms-net6
       - name: Pacchetto
         run: |
           mkdir -p dist pkg

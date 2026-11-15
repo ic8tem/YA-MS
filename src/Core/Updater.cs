@@ -174,8 +174,10 @@ namespace YAMS
             if (IsWin || !File.Exists(f)) return;
             try
             {
+#if NET7_0_OR_GREATER   // .NET 6 = solo Windows 7, dove non serve
                 File.SetUnixFileMode(f, UnixFileMode.UserRead | UnixFileMode.UserWrite | UnixFileMode.UserExecute | UnixFileMode.GroupRead |
                     UnixFileMode.GroupExecute | UnixFileMode.OtherRead | UnixFileMode.OtherExecute);
+#endif
             }
             catch { }
         }

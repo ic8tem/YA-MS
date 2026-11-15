@@ -60,8 +60,13 @@ namespace YAMS
         {
             Architecture a = RuntimeInformation.ProcessArchitecture;
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                // Windows 7 SP1 e 8.0 (versione sotto 6.3, cioe' prima di Windows 8.1): pacchetto windows7, compilato con .NET 6
+                if (Environment.OSVersion.Version < new Version(6, 3))
+                    return a == Architecture.X86 ? "-windows7-x86-portatile.zip" : "-windows7-x64-portatile.zip";
                 return a == Architecture.X86 ? "-windows-x86-portatile.zip"
                      : a == Architecture.Arm64 ? "-windows-arm64-portatile.zip" : "-windows-x64-portatile.zip";
+            }
             if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
                 return a == Architecture.Arm64 ? "-mac-apple-silicon-app.zip" : "-mac-intel-app.zip";
             // Alpine e altri Linux con musl: il programma e' stato compilato per linux-musl-*

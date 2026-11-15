@@ -26,15 +26,33 @@ jobs:
         include:
           - rid: win-x64
             arch: x64
+            tfm: net8.0
+            nome: windows
           - rid: win-x86      # Windows a 32 bit
             arch: x86
+            tfm: net8.0
+            nome: windows
           - rid: win-arm64    # Windows su ARM (PC con Snapdragon)
             arch: arm64
+            tfm: net8.0
+            nome: windows
+          # Windows 7 SP1 e 8.0: .NET 8 non parte (manca GetSystemTimePreciseAsFileTime in KERNEL32), quindi .NET 6,
+          # l'ultimo che gira su Windows 7. Si compila sempre (richiesta dell'autore, IC8TEM, 15/11/2026).
+          - rid: win-x64
+            arch: x64
+            tfm: net6.0
+            nome: windows7
+          - rid: win-x86
+            arch: x86
+            tfm: net6.0
+            nome: windows7
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: |
+            6.0.x
+            8.0.x
       - name: Versione
         shell: bash
         run: |
@@ -49,22 +67,22 @@ jobs:
             if curl -fsSL -m 60 -o "$f.tmp" "$u" && [ "$(grep -c '^"' "$f.tmp")" -gt 50 ]; then mv "$f.tmp" "$f"; echo "IAU MDC: $u"; break; fi
           done; rm -f "$f.tmp"
       - name: Compila
-        run: dotnet publish YA-MS.csproj -c Release -r ${{ matrix.rid }} --self-contained true -p:Version=${{ env.VER }} -p:DebugType=none -o publish/${{ matrix.rid }}
+        run: dotnet publish YA-MS.csproj -c Release -r ${{ matrix.rid }} --self-contained true -p:TargetFramework=${{ matrix.tfm }} -p:Version=${{ env.VER }} -p:DebugType=none -o publish/${{ matrix.nome }}-${{ matrix.rid }}
       - name: Installatore (Inno Setup)
         shell: pwsh
         run: |
           $iscc = "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe"
           if (-not (Test-Path $iscc)) { choco install innosetup --no-progress -y; }
-          & $iscc "/DAppVersion=${{ env.VER }}" "/DArch=${{ matrix.arch }}" "/DSourceDir=..\publish\${{ matrix.rid }}" installer\YA-MS.iss
+          & $iscc "/DAppVersion=${{ env.VER }}" "/DArch=${{ matrix.arch }}" "/DNome=${{ matrix.nome }}" "/DSourceDir=..\publish\${{ matrix.nome }}-${{ matrix.rid }}" installer\YA-MS.iss
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Zip portatile
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force dist | Out-Null
-          Compress-Archive -Path publish\${{ matrix.rid }}\* -DestinationPath dist\YA-MS-${{ env.VER }}-windows-${{ matrix.arch }}-portatile.zip
+          Compress-Archive -Path publish\${{ matrix.nome }}-${{ matrix.rid }}\* -DestinationPath dist\YA-MS-${{ env.VER }}-${{ matrix.nome }}-${{ matrix.arch }}-portatile.zip
       - uses: actions/upload-artifact@v4
         with:
-          name: windows-${{ matrix.arch }}
+          name: ${{ matrix.nome }}-${{ matrix.arch }}
           path: dist/*
 
   linux:
@@ -88,6 +106,10 @@ jobs:
           done; rm -f "$f.tmp"
       - name: Compila
         run: dotnet publish YA-MS.csproj -c Release -r linux-x64 --self-contained true -p:Version=$VER -p:DebugType=none -o publish/linux-x64
+      - name: Controllo per Windows 7 (.NET 6)
+        if: github.ref != 'refs/heads/release'
+        run: |
+          dotnet build YA-MS.csproj -c Release -p:TargetFramework=net6.0 -o /tmp/ya-ms-net6
       - name: Pacchetto
         run: |
           mkdir -p dist pkg
@@ -370,7 +392,7 @@ jobs:
             Dalla 1.8.0 il programma si aggiorna da GitHub (pulsante Aggiornamenti, la cartella data resta) e segnala i file mancanti.
             Dalla 1.7.0 in giù il programma non si aggiorna da solo: questa versione va installata a mano, le successive no.
 
-            - Windows: YA-MS-...-windows-x64-setup.exe (installa in C:\YA-MS) oppure lo zip portatile; per Windows a 32 bit i file -windows-x86-, per Windows su ARM (Snapdragon) i file -windows-arm64-.
+            - Windows: YA-MS-...-windows-x64-setup.exe (installa in C:\YA-MS) oppure lo zip portatile; per Windows a 32 bit i file -windows-x86-, per Windows su ARM (Snapdragon) i file -windows-arm64-; per Windows 7 SP1 e 8.0 i file -windows7-x64- e -windows7-x86-.
             - Fedora, openSUSE: ya-ms-....x86_64.rpm (o .aarch64.rpm, .armv7hl.rpm), con: sudo dnf install ./ya-ms-....rpm oppure sudo zypper install ./ya-ms-....rpm.
             - Arch, Manjaro, EndeavourOS, Arch Linux ARM: ya-ms-...-x86_64.pkg.tar.zst (o -aarch64), con: sudo pacman -U ./ya-ms-...pkg.tar.zst.
             - Slackware (x86_64 e ARM64): da root installpkg ya-ms-...-x86_64-1_ic8tem.txz (o -aarch64-).

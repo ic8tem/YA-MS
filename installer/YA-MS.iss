@@ -6,6 +6,9 @@
 #ifndef Arch
   #define Arch "x64"
 #endif
+#ifndef Nome
+  #define Nome "windows"
+#endif
 #ifndef SourceDir
   #define SourceDir "..\publish\win-x64"
 #endif
@@ -29,7 +32,14 @@ ArchitecturesAllowed=arm64
 ArchitecturesInstallIn64BitMode=arm64
 #endif
 OutputDir=..\dist
-OutputBaseFilename=YA-MS-{#AppVersion}-windows-{#Arch}-setup
+OutputBaseFilename=YA-MS-{#AppVersion}-{#Nome}-{#Arch}-setup
+; .NET 8 richiede Windows 10 (su Windows 7 e 8.0 manca GetSystemTimePreciseAsFileTime): l'installatore lo dice subito;
+; per Windows 7 SP1 e 8.0 c'e' il pacchetto windows7 (.NET 6)
+#if Nome == "windows7"
+MinVersion=6.1sp1
+#else
+MinVersion=6.3
+#endif
 SetupIconFile=..\src\Assets\ya-ms.ico
 UninstallDisplayIcon={app}\YA-MS.exe
 Compression=lzma2

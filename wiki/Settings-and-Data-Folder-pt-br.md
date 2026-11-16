@@ -15,7 +15,6 @@ Na extremidade direita da barra de abas, da direita para a esquerda:
 | Comando | O que faz |
 |---|---|
 | **Idioma** (lista) | Idioma da interface; veja [Idioma](#idioma) |
-| **Tema** (lista) | Esquema de cores; veja [Esquemas de cores](#esquemas-de-cores) |
 | **Comandos ▴ / ▾** | Oculta ou mostra as duas linhas de comandos acima das abas; veja [Fonte e Comandos](#fonte-e-comandos) |
 
 Ao mudar o idioma ou o tema as configurações são salvas e **a janela é reconstruída** na mesma posição e tamanho, na mesma aba: não é preciso reiniciar.

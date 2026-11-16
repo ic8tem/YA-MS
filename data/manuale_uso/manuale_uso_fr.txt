@@ -1,5 +1,5 @@
 TITLE|Manuel d'utilisation de YA-MS
-SUB|Version 1.8.20 - réalisé par Costantino IC8TEM - novembre 2026
+SUB|Version 1.8.21 - réalisé par Costantino IC8TEM - novembre 2026
 H1|1. Introduction
 H2|1.1 À quoi sert YA-MS
 P|YA-MS vous aide à prévoir et à suivre en direct les conditions de meteor scatter entre votre station et un correspondant, de 28 à 432 MHz. Pour chaque essaim météorique actif, il indique dans quelle mesure la position de son radiant favorise votre trajet (l'efficacité), à quelles heures, de quel côté du trajet arrivent les réflexions et où il convient de pointer l'antenne. À côté de la prévision, il affiche les données mesurées en direct : les comptages du radar météorique de Collm, les caméras du Global Meteor Network, le radar CMOR, l'émetteur GRAVES et le trafic meteor scatter recueilli sur les clusters et sur PSKReporter.
@@ -40,7 +40,7 @@ P|Au démarrage, YA-MS vérifie qu'il dispose de tous ses fichiers (traductions,
 H1|3. La fenêtre principale
 H2|3.1 Les parties de la fenêtre
 LI|En haut, deux rangées de commandes valables pour tous les onglets : couche E et antenne, heure du calcul (chapitre 4). Votre station (locator, altitude, bande et Calculer) est en haut à droite du Trafic en direct.
-LI|La barre des onglets principaux, avec à droite le bouton Commandes, le jeu de couleurs (Thème) et la langue.
+LI|La barre des onglets principaux, avec à droite le bouton Commandes et la langue. Le schéma de couleurs (Thème) se choisit dans l'onglet Paramètres.
 LI|Les sous-onglets, dans une rangée plus claire, pour les onglets qui en ont.
 LI|En bas, la barre d'état : messages du calcul, avertissements sur la connexion et le bouton « Mises à jour ».
 H2|3.2 Les onglets

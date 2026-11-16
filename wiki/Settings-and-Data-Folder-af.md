@@ -15,7 +15,6 @@ Aan die regterkant van die oortjiebalk, van regs na links:
 | Kontrole | Wat dit doen |
 |---|---|
 | **Taal** (lys) | Koppelvlaktaal; sien [Taal](#taal) |
-| **Tema** (lys) | Kleurskema; sien [Kleurskemas](#kleurskemas) |
 | **Kontroles ▴ / ▾** | Vou die twee rye kontroles bo die oortjies weg of oop; sien [Lettertipe en Kontroles](#lettertipe-en-kontroles) |
 
 As jy die taal of tema verander, word die instellings gestoor en die **venster herbou** in dieselfde posisie en grootte, op dieselfde oortjie: geen herbegin is nodig nie.

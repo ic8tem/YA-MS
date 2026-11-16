@@ -876,3 +876,4 @@ mai	nooit
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	De compacte modus klapt bij het starten de opdrachtregels in, verkort de horizonbalk en verbergt de lange beschrijvingen (die blijven in de tooltips): handig op laptops van 13-15 inch.
 un'altra copia di YA-MS sta già interrogando PSKReporter	een andere kopie van YA-MS vraagt PSKReporter al op
 troppe richieste (429): nuova prova alle {0} UTC	te veel verzoeken (429): nieuwe poging om {0} UTC
+La lingua è anche in alto a destra, accanto alle linguette.	De taal staat ook rechtsboven, naast de tabbladen.

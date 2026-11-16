@@ -15,7 +15,6 @@ Hægra megin á flipastikunni, frá hægri til vinstri:
 | Stýring | Hvað hún gerir |
 |---|---|
 | **Tungumál** (listi) | Tungumál viðmóts; sjá [Tungumál](#tungumál) |
-| **Þema** (listi) | Litaþema; sjá [Litaþemu](#litaþemu) |
 | **Stýringar ▴ / ▾** | Fellir saman eða opnar tvær raðir stýringa fyrir ofan flipana; sjá [Letur og Stýringar](#letur-og-stýringar) |
 
 Þegar skipt er um tungumál eða þema eru stillingarnar vistaðar og **glugginn endurbyggður** á sama stað og í sömu stærð, á sama flipa: engin endurræsing nauðsynleg.

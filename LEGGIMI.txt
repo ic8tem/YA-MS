@@ -47,6 +47,10 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.21
+  - Nella barra delle linguette, a destra, restano solo "Comandi" e la lingua: il tema (schema di colori) si sceglie
+    nella linguetta Impostazioni > Aspetto.
+
 NOVITA' DELLA 1.8.20
   - Modalita' compatta per i notebook da 13-15 pollici (Impostazioni > Aspetto: automatica, sempre, mai). In
     automatico si accende quando la finestra e' alta meno di 850 pixel: righe dei comandi ripiegate all'avvio, fascia

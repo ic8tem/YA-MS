@@ -1,5 +1,5 @@
 TITLE|Panduan penggunaan YA-MS
-SUB|Versi 1.8.20 - disusun oleh Costantino IC8TEM - November 2026
+SUB|Versi 1.8.21 - disusun oleh Costantino IC8TEM - November 2026
 H1|1. Pendahuluan
 H2|1.1 Untuk apa YA-MS
 P|YA-MS membantu Anda memprakirakan dan memantau secara langsung kondisi meteor scatter antara stasiun Anda dan stasiun DX, dari 28 hingga 432 MHz. Untuk setiap hujan meteor yang aktif, program ini menunjukkan seberapa besar posisi radiannya menguntungkan lintasan Anda (efisiensi), pada jam berapa, dari sisi lintasan mana pantulan datang, dan ke mana sebaiknya antena diarahkan. Di samping prakiraan, program menampilkan data yang diukur secara langsung: hitungan radar meteor Collm, kamera Global Meteor Network, radar CMOR, pemancar GRAVES, serta lalu lintas meteor scatter yang dikumpulkan dari cluster dan PSKReporter.
@@ -40,7 +40,7 @@ P|Saat dijalankan, YA-MS memeriksa apakah semua berkasnya ada (terjemahan, katal
 H1|3. Jendela utama
 H2|3.1 Bagian-bagian jendela
 LI|Di atas, dua baris kontrol yang berlaku untuk semua tab: lapisan E dan antena, waktu perhitungan (bab 4). Stasiun Anda (lokator, ketinggian, pita, dan Hitung) ada di kanan atas Lalu lintas langsung.
-LI|Bilah tab utama, dengan di sebelah kanan tombol Kontrol, skema warna (Tema) dan bahasa.
+LI|Bilah tab utama, di kanan ada tombol Perintah dan bahasa. Skema warna (Tema) dipilih di tab Pengaturan.
 LI|Sub-tab, dalam baris yang lebih terang, untuk tab yang memilikinya.
 LI|Di bawah, bilah status: pesan perhitungan, peringatan tentang koneksi, dan tombol "Pembaruan".
 H2|3.2 Tab-tab

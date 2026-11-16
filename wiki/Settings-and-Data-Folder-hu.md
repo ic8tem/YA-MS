@@ -15,7 +15,6 @@ A fülsor jobb végén, jobbról balra:
 | Vezérlő | Mire szolgál |
 |---|---|
 | **Nyelv** (lista) | A felület nyelve; lásd: [Nyelv](#nyelv) |
-| **Téma** (lista) | Színséma; lásd: [Színsémák](#színsémák) |
 | **Vezérlők ▴ / ▾** | Összecsukja vagy kinyitja a fülek feletti két vezérlősort; lásd: [Betűméret és vezérlők](#betűméret-és-vezérlők) |
 
 A nyelv vagy a téma módosítása elmenti a beállításokat, és **újraépíti az ablakot** ugyanabban a helyzetben és méretben, ugyanazon a fülön: nincs szükség újraindításra.

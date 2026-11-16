@@ -15,7 +15,6 @@ Di ujung kanan bilah tab, dari kanan ke kiri:
 | Kontrol | Fungsinya |
 |---|---|
 | **Bahasa** (daftar) | Bahasa antarmuka; lihat [Bahasa](#bahasa) |
-| **Tema** (daftar) | Skema warna; lihat [Skema warna](#skema-warna) |
 | **Kontrol ▴ / ▾** | Melipat atau membuka dua baris kontrol di atas tab; lihat [Huruf dan Kontrol](#huruf-dan-kontrol) |
 
 Mengganti bahasa atau tema akan menyimpan pengaturan dan **membangun ulang jendela** pada posisi dan ukuran yang sama, di tab yang sama: tidak perlu memulai ulang.

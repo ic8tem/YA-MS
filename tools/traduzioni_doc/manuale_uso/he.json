@@ -220,7 +220,7 @@
  "16. Contatti": "16. יצירת קשר",
  "YA-MS è un programma gratuito per i radioamatori, a cura di Costantino IC8TEM (Capri). Segnalazioni, proposte e dati di confronto sono benvenuti: indica il sistema operativo, la versione di YA-MS e che cosa hai fatto. Codice e release: github.com/ic8tem/YA-MS. Contatti: ccerrotta@gmail.com, ic8tem@gmail.com, www.qrz.com/db/ic8tem. Chi vuole sostenere il lavoro può farlo su ko-fi.com/ic8tem.": "YA-MS היא תוכנה חינמית לחובבי רדיו, מאת Costantino IC8TEM (Capri). דיווחים, הצעות ונתוני השוואה יתקבלו בברכה: ציין את מערכת ההפעלה, את גרסת YA-MS ומה עשית. קוד ו-releases: github.com/ic8tem/YA-MS. יצירת קשר: ccerrotta@gmail.com, ic8tem@gmail.com, www.qrz.com/db/ic8tem. מי שרוצה לתמוך בעבודה יכול לעשות זאת ב-ko-fi.com/ic8tem.",
  "Manuale d'uso di YA-MS": "מדריך למשתמש של YA-MS",
- "Versione 1.8.20 - a cura di Costantino IC8TEM - novembre 2026": "גרסה 1.8.20 - מאת Costantino IC8TEM - נובמבר 2026",
+ "Versione 1.8.21 - a cura di Costantino IC8TEM - novembre 2026": "גרסה 1.8.21 - מאת Costantino IC8TEM - נובמבר 2026",
  "PROCEDURA": "נוהל",
  "NOTA": "הערה",
  "ATTENZIONE": "אזהרה",
@@ -277,5 +277,6 @@
  "Windows 7 SP1, 8 e 8.1: i pacchetti windows7-x64 e windows7-x86 (setup o zip portatile), compilati con .NET 6, l'ultimo che gira su questi sistemi. Su Windows 7 servono gli aggiornamenti KB2533623 e KB2999226. Gli altri pacchetti Windows richiedono Windows 10 o 11: su un Windows più vecchio l'installatore lo dice subito.": "Windows 7 SP1,‏ 8 ו-8.1: החבילות windows7-x64 ו-windows7-x86 (התקנה או zip נייד), שנבנו עם ‎.NET 6, האחרונה שרצה על מערכות אלה. Windows 7 זקוק לעדכונים KB2533623 ו-KB2999226. שאר חבילות Windows דורשות Windows 10 או 11: ב-Windows ישן יותר תוכנית ההתקנה אומרת זאת מיד.",
  "Crediti: autore, contatti, licenza (GNU GPL-3.0) e le schede con chi ha reso possibile YA-MS: articoli, programmi, dati, servizi e librerie, con la loro licenza.": "תודות: המחבר, יצירת קשר, הרישיון (GNU GPL-3.0) והכרטיסים של מי שאפשרו את YA-MS: מאמרים, תוכנות, נתונים, שירותים וספריות, עם הרישיון שלהם.",
  "Documenti tecnici, ultima: Manuale d'uso, Fonti, Mappa dei radar europei, Spiegazione del calcolo dell'efficienza, Crediti (capitolo 12).": "מסמכים טכניים, האחרונה: מדריך למשתמש, מקורות, מפת המכ״מים האירופיים, הסבר חישוב היעילות, תודות (פרק 12).",
- "Modalità compatta: La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.": "מצב קומפקטי: המצב הקומפקטי מקפל בהפעלה את שורות הפקודות, מקצר את רצועת האופקים ומסתיר את התיאורים הארוכים (הם נשארים בתיבות העזרה): שימושי במחשבים ניידים של 13-15 אינץ'."
+ "Modalità compatta: La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.": "מצב קומפקטי: המצב הקומפקטי מקפל בהפעלה את שורות הפקודות, מקצר את רצועת האופקים ומסתיר את התיאורים הארוכים (הם נשארים בתיבות העזרה): שימושי במחשבים ניידים של 13-15 אינץ'.",
+ "La barra delle linguette principali, con a destra il pulsante Comandi e la lingua. Lo schema di colori (Tema) si sceglie nella linguetta Impostazioni.": "סרגל הלשוניות הראשיות, ומימין כפתור הפקודות והשפה. ערכת הצבעים (ערכת נושא) נבחרת בלשונית ההגדרות."
 }

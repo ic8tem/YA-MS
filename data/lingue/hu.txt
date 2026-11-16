@@ -875,3 +875,4 @@ mai	soha
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	A kompakt mód induláskor összecsukja a parancssorokat, lerövidíti az időtávok sávját és elrejti a hosszú leírásokat (a buborékokban maradnak): hasznos 13-15 colos laptopokon.
 un'altra copia di YA-MS sta già interrogando PSKReporter	a YA-MS egy másik példánya már lekérdezi a PSKReportert
 troppe richieste (429): nuova prova alle {0} UTC	túl sok kérés (429): új próbálkozás {0} UTC-kor
+La lingua è anche in alto a destra, accanto alle linguette.	A nyelv jobb felül, a fülek mellett is megtalálható.

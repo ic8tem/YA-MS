@@ -15,7 +15,6 @@ I højre ende af fanelinjen, fra højre mod venstre:
 | Element | Hvad det gør |
 |---|---|
 | **Sprog** (liste) | Brugerfladens sprog; se [Sprog](#sprog) |
-| **Tema** (liste) | Farveskema; se [Farveskemaer](#farveskemaer) |
 | **Betjening ▴ / ▾** | Folder de to rækker betjeningselementer over fanerne sammen eller ud; se [Skrifttype og Betjening](#skrifttype-og-betjening) |
 
 Når du skifter sprog eller tema, gemmes indstillingerne, og **vinduet genopbygges** i samme position og størrelse på samme fane: ingen genstart er nødvendig.

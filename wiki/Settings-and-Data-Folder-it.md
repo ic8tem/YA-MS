@@ -15,7 +15,6 @@ All'estremità destra della barra delle linguette, da destra verso sinistra:
 | Comando | Che cosa fa |
 |---|---|
 | **Lingua** (elenco) | Lingua dell'interfaccia; vedi [Lingua](#lingua) |
-| **Tema** (elenco) | Schema di colori; vedi [Schemi di colori](#schemi-di-colori) |
 | **Comandi ▴ / ▾** | Ripiega o riapre le due righe di comandi sopra le linguette; vedi [Carattere e Comandi](#carattere-e-comandi) |
 
 Cambiando lingua o tema le impostazioni vengono salvate e **la finestra viene ricostruita** nella stessa posizione e dimensione, sulla stessa linguetta: non serve riavviare.

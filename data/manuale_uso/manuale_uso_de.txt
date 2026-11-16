@@ -1,5 +1,5 @@
 TITLE|Bedienungsanleitung von YA-MS
-SUB|Version 1.8.20 - von Costantino IC8TEM - November 2026
+SUB|Version 1.8.21 - von Costantino IC8TEM - November 2026
 H1|1. Einführung
 H2|1.1 Wozu YA-MS dient
 P|YA-MS hilft dir, die Meteorscatter-Bedingungen zwischen deiner Station und einer Gegenstation von 28 bis 432 MHz vorherzusagen und live zu verfolgen. Für jeden aktiven Meteorstrom zeigt es, wie stark die Lage seines Radianten deine Strecke begünstigt (die Effektivität), zu welchen Uhrzeiten, von welcher Seite der Strecke die Reflexionen kommen und wohin du die Antenne am besten richtest. Neben der Vorhersage zeigt es live gemessene Daten: die Zählungen des Meteorradars Collm, die Kameras des Global Meteor Network, das CMOR-Radar, den Sender GRAVES und den Meteorscatter-Verkehr, der aus den Clustern und von PSKReporter gesammelt wird.
@@ -40,7 +40,7 @@ P|Beim Start prüft YA-MS, ob alle seine Dateien vorhanden sind (Übersetzungen,
 H1|3. Das Hauptfenster
 H2|3.1 Die Teile des Fensters
 LI|Oben zwei Zeilen mit Bedienelementen, die für alle Reiter gelten: E-Schicht und Antenne, Berechnungszeitpunkt (Kapitel 4). Deine Station (Locator, Höhe, Band und Berechnen) steht oben rechts im Live-Verkehr.
-LI|Die Leiste der Hauptreiter, rechts mit der Schaltfläche Bedienung, der Farbgebung (Farbschema) und der Sprache.
+LI|Die Leiste der Hauptreiter, rechts mit der Schaltfläche Befehle und der Sprache. Das Farbschema (Thema) wählt man im Reiter Einstellungen.
 LI|Die Unterreiter, in einer helleren Zeile, für die Reiter, die welche haben.
 LI|Unten die Statusleiste: Meldungen der Berechnung, Hinweise zur Verbindung und die Schaltfläche „Aktualisierungen“.
 H2|3.2 Die Reiter

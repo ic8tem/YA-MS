@@ -874,3 +874,4 @@ mai	אף פעם
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	המצב הקומפקטי מקפל בהפעלה את שורות הפקודות, מקצר את רצועת האופקים ומסתיר את התיאורים הארוכים (הם נשארים בתיבות העזרה): שימושי במחשבים ניידים של 13-15 אינץ'.
 un'altra copia di YA-MS sta già interrogando PSKReporter	עותק אחר של YA-MS כבר שואל את PSKReporter
 troppe richieste (429): nuova prova alle {0} UTC	יותר מדי בקשות (429): ניסיון חדש ב-{0} UTC
+La lingua è anche in alto a destra, accanto alle linguette.	השפה נמצאת גם למעלה מימין, ליד הלשוניות.

@@ -15,7 +15,6 @@ Am rechten Ende der Reiterleiste, von rechts nach links:
 | Bedienelement | Was es tut |
 |---|---|
 | **Sprache der Oberfläche** (Liste) | Sprache der Oberfläche; siehe [Sprache](#sprache) |
-| **Farbschema** (Liste) | Farbschema; siehe [Farbschemata](#farbschemata) |
 | **Bedienung ▴ / ▾** | Klappt die zwei Bedienzeilen über den Reitern ein oder aus; siehe [Schrift und Bedienung](#schrift-und-bedienung) |
 
 Ein Wechsel von Sprache oder Farbschema speichert die Einstellungen und **baut das Fenster neu auf**, in gleicher Position und Größe, auf demselben Reiter: Ein Neustart ist nicht nötig.

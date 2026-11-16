@@ -874,3 +874,4 @@ mai	mitte kunagi
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	Kompaktne režiim voldib käivitamisel käsuread kokku, lühendab horisontide riba ja peidab pikad kirjeldused (need jäävad kohtspikritesse): kasulik 13-15-tolliste sülearvutite puhul.
 un'altra copia di YA-MS sta già interrogando PSKReporter	teine YA-MS-i koopia juba pärib PSKReporterit
 troppe richieste (429): nuova prova alle {0} UTC	liiga palju päringuid (429): uus katse kell {0} UTC
+La lingua è anche in alto a destra, accanto alle linguette.	Keel on ka üleval paremal, sakkide kõrval.

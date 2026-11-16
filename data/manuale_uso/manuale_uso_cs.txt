@@ -1,5 +1,5 @@
 TITLE|Uživatelská příručka YA-MS
-SUB|Verze 1.8.20 - připravil Costantino IC8TEM - listopad 2026
+SUB|Verze 1.8.21 - připravil Costantino IC8TEM - listopad 2026
 H1|1. Úvod
 H2|1.1 K čemu slouží YA-MS
 P|YA-MS pomáhá předpovídat a živě sledovat podmínky pro meteor scatter mezi vaší stanicí a protistanicí, od 28 do 432 MHz. Pro každý aktivní meteorický roj udává, nakolik poloha jeho radiantu podporuje vaši trasu (účinnost), v kterých hodinách, z které strany trasy přicházejí odrazy a kam je vhodné nasměrovat anténu. Vedle předpovědi zobrazuje živě naměřená data: počty z meteorického radaru Collm, kamery sítě Global Meteor Network, radar CMOR, vysílač GRAVES a provoz meteor scatter sbíraný z clusterů a z PSKReporter.
@@ -40,7 +40,7 @@ P|Při spuštění YA-MS kontroluje, zda má všechny své soubory (překlady, k
 H1|3. Hlavní okno
 H2|3.1 Části okna
 LI|Nahoře dva řádky ovládacích prvků platné pro všechny karty: vrstva E a anténa, čas výpočtu (kapitola 4). Vaše stanice (lokátor, výška, pásmo a Vypočítat) je vpravo nahoře na záložce Provoz živě.
-LI|Lišta hlavních karet, vpravo s tlačítkem Ovládání, barevným schématem (Motiv) a jazykem.
+LI|Lišta hlavních záložek, vpravo tlačítko Příkazy a jazyk. Barevné schéma (Motiv) se volí v záložce Nastavení.
 LI|Podkarty, ve světlejším řádku, u karet, které je mají.
 LI|Dole stavový řádek: zprávy výpočtu, upozornění na připojení a tlačítko „Aktualizace“.
 H2|3.2 Karty

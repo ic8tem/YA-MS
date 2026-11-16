@@ -15,7 +15,6 @@ Sekme çubuğunun sağ ucunda, sağdan sola:
 | Kontrol | Ne yapar |
 |---|---|
 | **Dil** (liste) | Arayüz dili; bkz. [Dil](#dil) |
-| **Tema** (liste) | Renk şeması; bkz. [Renk şemaları](#renk-şemaları) |
 | **Kontroller ▴ / ▾** | Sekmelerin üstündeki iki sıra kontrolü katlar ya da açar; bkz. [Yazı tipi ve Kontroller](#yazı-tipi-ve-kontroller) |
 
 Dili ya da temayı değiştirmek ayarları kaydeder ve **pencereyi** aynı konum ve boyutta, aynı sekmede **yeniden kurar**: yeniden başlatmak gerekmez.

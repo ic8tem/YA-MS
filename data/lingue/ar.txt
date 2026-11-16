@@ -874,3 +874,4 @@ mai	أبداً
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	يطوي الوضع المضغوط أسطر الأوامر عند البدء، ويقصّر شريط الآفاق، ويخفي الأوصاف الطويلة (تبقى في التلميحات): مفيد في الحواسيب المحمولة بقياس 13-15 بوصة.
 un'altra copia di YA-MS sta già interrogando PSKReporter	نسخة أخرى من YA-MS تستعلم بالفعل من PSKReporter
 troppe richieste (429): nuova prova alle {0} UTC	طلبات كثيرة جداً (429): محاولة جديدة في {0} UTC
+La lingua è anche in alto a destra, accanto alle linguette.	اللغة موجودة أيضاً في أعلى اليمين بجانب علامات التبويب.

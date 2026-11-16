@@ -15,7 +15,6 @@ Na prawym końcu paska zakładek, od prawej do lewej:
 | Element | Działanie |
 |---|---|
 | **Język** (lista) | Język interfejsu; zob. [Język](#język) |
-| **Motyw** (lista) | Schemat kolorów; zob. [Schematy kolorów](#schematy-kolorów) |
 | **Sterowanie ▴ / ▾** | Zwija lub rozwija dwa wiersze elementów sterujących nad zakładkami; zob. [Czcionka i Sterowanie](#czcionka-i-sterowanie) |
 
 Zmiana języka lub motywu zapisuje ustawienia i **odbudowuje okno** w tym samym położeniu i rozmiarze, na tej samej zakładce: ponowne uruchomienie nie jest potrzebne.

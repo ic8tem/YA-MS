@@ -876,3 +876,4 @@ mai	nunca
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	O modo compacto recolhe na inicialização as linhas de comandos, encurta a faixa dos horizontes e esconde as descrições longas (ficam nas dicas): útil em notebooks de 13-15 polegadas.
 un'altra copia di YA-MS sta già interrogando PSKReporter	outra cópia do YA-MS já está consultando o PSKReporter
 troppe richieste (429): nuova prova alle {0} UTC	solicitações demais (429): nova tentativa às {0} UTC
+La lingua è anche in alto a destra, accanto alle linguette.	O idioma também fica no canto superior direito, ao lado das abas.

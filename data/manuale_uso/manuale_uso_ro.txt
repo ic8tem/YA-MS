@@ -1,5 +1,5 @@
 TITLE|Manualul de utilizare YA-MS
-SUB|Versiunea 1.8.20 - realizată de Costantino IC8TEM - noiembrie 2026
+SUB|Versiunea 1.8.21 - realizată de Costantino IC8TEM - noiembrie 2026
 H1|1. Introducere
 H2|1.1 La ce folosește YA-MS
 P|YA-MS vă ajută să prevedeți și să urmăriți în direct condițiile de meteor scatter între stația dumneavoastră și un corespondent, de la 28 la 432 MHz. Pentru fiecare roi meteoric activ arată în ce măsură poziția radiantului său favorizează traseul dumneavoastră (eficiența), în ce ore, din ce parte a traseului sosesc reflexiile și încotro este bine să orientați antena. Pe lângă prognoză, afișează datele măsurate în direct: numărătorile radarului meteoric de la Collm, camerele Global Meteor Network, radarul CMOR, emițătorul GRAVES și traficul meteor scatter colectat din clustere și din PSKReporter.
@@ -40,7 +40,7 @@ P|La pornire YA-MS verifică dacă are toate fișierele sale (traduceri, cataloa
 H1|3. Fereastra principală
 H2|3.1 Părțile ferestrei
 LI|Sus, două rânduri de comenzi valabile pentru toate filele: stratul E și antenă, ora calculului (capitolul 4). Stația dvs. (locator, altitudine, bandă și Calculează) este în dreapta sus în Trafic în direct.
-LI|Bara filelor principale, cu butonul Comenzi în dreapta, schema de culori (Temă) și limba.
+LI|Bara filelor principale, cu butonul Comenzi și limba în dreapta. Schema de culori (Temă) se alege în fila Setări.
 LI|Sub-filele, pe un rând mai deschis, pentru filele care le au.
 LI|Jos, bara de stare: mesajele calculului, avertismentele privind conexiunea și butonul „Actualizări”.
 H2|3.2 Filele

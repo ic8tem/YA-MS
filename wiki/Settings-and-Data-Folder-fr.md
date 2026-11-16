@@ -15,7 +15,6 @@ L'onglet Paramètres regroupe le fonctionnement général du programme : Apparen
 | Commande | Rôle |
 |---|---|
 | **Langue** (liste) | Langue de l'interface ; voir [Langue](#langue) |
-| **Thème** (liste) | Schéma de couleurs ; voir [Schémas de couleurs](#schémas-de-couleurs) |
 | **Commandes ▴ / ▾** | Replie ou déplie les deux rangées de commandes au-dessus des onglets ; voir [Police et Commandes](#police-et-commandes) |
 
 Changer de langue ou de thème enregistre les réglages et **reconstruit la fenêtre** à la même position et à la même taille, sur le même onglet : inutile de redémarrer.

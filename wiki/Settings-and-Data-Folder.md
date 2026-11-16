@@ -15,7 +15,6 @@ At the right end of the tab bar, from right to left:
 | Control | What it does |
 |---|---|
 | **Language** (list) | Interface language; see [Language](#language) |
-| **Theme** (list) | Colour scheme; see [Colour schemes](#colour-schemes) |
 | **Controls ▴ / ▾** | Folds or unfolds the two rows of controls above the tabs; see [Font and Controls](#font-and-controls) |
 
 Changing language or theme saves the settings and **rebuilds the window** in the same position and size, on the same tab: no restart is needed.

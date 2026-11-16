@@ -1,5 +1,5 @@
 TITLE|Gebruikershandleiding van YA-MS
-SUB|Weergawe 1.8.20 - saamgestel deur Costantino IC8TEM - November 2026
+SUB|Weergawe 1.8.21 - saamgestel deur Costantino IC8TEM - November 2026
 H1|1. Inleiding
 H2|1.1 Waarvoor YA-MS dien
 P|YA-MS help jou om die meteor scatter-toestande tussen jou stasie en 'n DX-stasie van 28 tot 432 MHz te voorspel en regstreeks te volg. Vir elke aktiewe meteoorswerm sê dit hoe gunstig die posisie van sy radiant vir jou pad is (die doeltreffendheid), op watter ure, van watter kant van die pad die refleksies kom en waarheen jy die antenna moet rig. Langs die voorspelling wys dit regstreeks gemete data: die tellings van die Collm-meteoorradar, die kameras van die Global Meteor Network, die CMOR-radar, die GRAVES-sender en die meteor scatter-verkeer wat deur die clusters en PSKReporter ingesamel word.
@@ -40,7 +40,7 @@ P|By die aanskakel kontroleer YA-MS of al sy lêers (vertalings, katalogusse, do
 H1|3. Die hoofvenster
 H2|3.1 Die dele van die venster
 LI|Bo, twee rye kontroles wat vir alle oortjies geld: E-laag en antenna, berekeningstyd (hoofstuk 4). Jou stasie (lokator, hoogte, band en Bereken) is regs bo in Regstreekse verkeer.
-LI|Die balk van die hoofoortjies, met regs die knoppie Kontroles, die kleurskema (Tema) en die taal.
+LI|Die balk van die hoofoortjies, regs met die knoppie Opdragte en die taal. Die kleurskema (Tema) word in die oortjie Instellings gekies.
 LI|Die suboortjies, in 'n ligter ry, vir die oortjies wat dit het.
 LI|Onder, die statusbalk: boodskappe van die berekening, waarskuwings oor die verbinding, en die knoppie "Bywerkings".
 H2|3.2 Die oortjies

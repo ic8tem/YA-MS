@@ -1,5 +1,5 @@
 TITLE|Notendahandbók YA-MS
-SUB|Útgáfa 1.8.20 - umsjón Costantino IC8TEM - nóvember 2026
+SUB|Útgáfa 1.8.21 - umsjón Costantino IC8TEM - nóvember 2026
 H1|1. Inngangur
 H2|1.1 Til hvers YA-MS er
 P|YA-MS hjálpar þér að spá fyrir um og fylgjast í beinni með skilyrðum fyrir meteor scatter milli stöðvarinnar þinnar og mótstöðvar, frá 28 upp í 432 MHz. Fyrir hverja virka loftsteinadrífu segir forritið hversu vel staða geislapunktsins hentar leiðinni þinni (nýtnin), á hvaða tímum, frá hvorri hlið leiðarinnar endurvörpin koma og hvert best er að beina loftnetinu. Við hlið spárinnar sýnir það mæligögn í beinni: talningar loftsteinaratsjárinnar í Collm, myndavélar Global Meteor Network, CMOR-ratsjána, GRAVES-sendinn og meteor scatter-umferðina sem safnað er frá klösunum og frá PSKReporter.
@@ -40,7 +40,7 @@ P|Við ræsingu athugar YA-MS hvort allar skrár þess séu til staðar (þýði
 H1|3. Aðalglugginn
 H2|3.1 Hlutar gluggans
 LI|Efst eru tvær raðir af stýringum sem gilda fyrir alla flipa: E-lag og loftnet, tími útreiknings (kafli 4). Stöðin þín (reitur, hæð, band og Reikna) er efst til hægri í Umferð í rauntíma.
-LI|Stika aðalflipanna, með hnappnum Stýringar, litaþemanu (Þema) og tungumálinu til hægri.
+LI|Stika aðalflipanna, til hægri með hnappinn Skipanir og tungumálið. Litaþemað (Þema) er valið í flipanum Stillingar.
 LI|Undirflipar, í ljósari röð, fyrir þá flipa sem hafa þá.
 LI|Neðst er stöðustikan: skilaboð útreikningsins, viðvaranir um tenginguna og hnappurinn „Uppfærslur“.
 H2|3.2 Fliparnir

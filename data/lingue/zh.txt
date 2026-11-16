@@ -874,3 +874,4 @@ mai	从不
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	紧凑模式在启动时折叠命令行，缩短时间点横栏，并隐藏较长的说明（仍可在提示中查看）：适合 13-15 英寸笔记本电脑。
 un'altra copia di YA-MS sta già interrogando PSKReporter	另一个 YA-MS 副本已在查询 PSKReporter
 troppe richieste (429): nuova prova alle {0} UTC	请求过多（429）：将于 {0} UTC 重试
+La lingua è anche in alto a destra, accanto alle linguette.	语言也在右上方，标签页旁边。

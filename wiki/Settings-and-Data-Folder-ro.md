@@ -15,7 +15,6 @@ La capătul din dreapta al barei de file, de la dreapta la stânga:
 | Comandă | Ce face |
 |---|---|
 | **Limba** (listă) | Limba interfeței; vedeți [Limba](#limba) |
-| **Temă** (listă) | Schema de culori; vedeți [Scheme de culori](#scheme-de-culori) |
 | **Comenzi ▴ / ▾** | Pliază sau desfășoară cele două rânduri de comenzi de deasupra filelor; vedeți [Font și comenzi](#font-și-comenzi) |
 
 Schimbarea limbii sau a temei salvează setările și **reconstruiește fereastra** în aceeași poziție și la aceeași dimensiune, pe aceeași filă: nu este nevoie de repornire.

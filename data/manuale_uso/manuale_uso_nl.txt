@@ -1,5 +1,5 @@
 TITLE|Gebruikershandleiding van YA-MS
-SUB|Versie 1.8.20 - door Costantino IC8TEM - november 2026
+SUB|Versie 1.8.21 - door Costantino IC8TEM - november 2026
 H1|1. Inleiding
 H2|1.1 Waarvoor dient YA-MS
 P|YA-MS helpt je de meteorscatter-condities tussen jouw station en een tegenstation te voorspellen en live te volgen, van 28 tot 432 MHz. Voor elke actieve meteorenzwerm geeft het aan in hoeverre de positie van de radiant jouw traject begunstigt (de efficiëntie), op welke uren, van welke kant van het traject de reflecties komen en waarheen je de antenne het best richt. Naast de voorspelling toont het de live gemeten gegevens: de tellingen van de meteorradar van Collm, de camera's van het Global Meteor Network, de CMOR-radar, de GRAVES-zender en het meteorscatter-verkeer dat via de clusters en PSKReporter wordt verzameld.
@@ -40,7 +40,7 @@ P|Bij het opstarten controleert YA-MS of al zijn bestanden aanwezig zijn (vertal
 H1|3. Het hoofdvenster
 H2|3.1 De onderdelen van het venster
 LI|Bovenaan twee rijen bedieningselementen die voor alle tabbladen gelden: E-laag en antenne, tijdstip van de berekening (hoofdstuk 4). Je station (locator, hoogte, band en Berekenen) staat rechtsboven in Live verkeer.
-LI|De balk met de hoofdtabbladen, met rechts de knop Bediening, het kleurenschema (Kleurenschema) en de taal.
+LI|De balk met de hoofdtabbladen, rechts met de knop Opdrachten en de taal. Het kleurenschema (Thema) kies je in het tabblad Instellingen.
 LI|De subtabbladen, in een lichtere rij, voor de tabbladen die ze hebben.
 LI|Onderaan de statusbalk: berichten van de berekening, waarschuwingen over de verbinding en de knop "Updates".
 H2|3.2 De tabbladen

@@ -1,5 +1,5 @@
 TITLE|A YA-MS felhasználói kézikönyve
-SUB|1.8.20-es verzió - készítette Costantino IC8TEM - 2026. november
+SUB|1.8.21-es verzió - készítette Costantino IC8TEM - 2026. november
 H1|1. Bevezetés
 H2|1.1 Mire szolgál a YA-MS
 P|A YA-MS segít előre jelezni és élőben követni a meteor scatter feltételeit az Ön állomása és egy ellenállomás között, 28 és 432 MHz között. Minden aktív meteorrajnál megmutatja, mennyire kedvez radiánsának helyzete az Ön útvonalának (a hatásfok), mely órákban, az útvonal melyik oldaláról érkeznek a visszaverődések, és merre érdemes az antennát irányítani. Az előrejelzés mellett élőben mért adatokat is mutat: a Collm meteorradar számlálásait, a Global Meteor Network kameráit, a CMOR radart, a GRAVES adót, valamint a clusterekből és a PSKReporterből gyűjtött meteor scatter forgalmat.
@@ -40,7 +40,7 @@ P|Indításkor a YA-MS ellenőrzi, hogy megvan-e minden fájlja (fordítások, k
 H1|3. A főablak
 H2|3.1 Az ablak részei
 LI|Felül a vezérlők két sora, amelyek minden fülre érvényesek: E-réteg és antenna, a számítás időpontja (4. fejezet). Az állomásod (lokátor, magasság, sáv és Számítás) az Élő forgalom jobb felső részén van.
-LI|A fő fülek sávja, jobb oldalán a Vezérlők gombbal, a színsémával (Téma) és a nyelvvel.
+LI|A fő fülek sávja, jobbra a Parancsok gombbal és a nyelvvel. A színsémát (Téma) a Beállítások fülön lehet kiválasztani.
 LI|Az alfülek egy világosabb sorban, azoknál a füleknél, amelyeknek vannak.
 LI|Alul az állapotsor: a számítás üzenetei, a kapcsolatra vonatkozó figyelmeztetések és a „Frissítések” gomb.
 H2|3.2 A fülek

@@ -1,5 +1,5 @@
 TITLE|Manual de uso do YA-MS
-SUB|Versão 1.8.20 - de autoria de Costantino IC8TEM - novembro de 2026
+SUB|Versão 1.8.21 - de autoria de Costantino IC8TEM - novembro de 2026
 H1|1. Introdução
 H2|1.1 Para que serve o YA-MS
 P|O YA-MS ajuda a prever e a acompanhar ao vivo as condições de meteor scatter entre a sua estação e um correspondente, de 28 a 432 MHz. Para cada chuva de meteoros ativa, ele indica o quanto a posição do seu radiante favorece o seu trajeto (a eficiência), em que horários, de que lado do trajeto chegam as reflexões e para onde convém apontar a antena. Ao lado da previsão, mostra os dados medidos ao vivo: as contagens do radar de meteoros de Collm, as câmeras da Global Meteor Network, o radar CMOR, o transmissor GRAVES e o tráfego de meteor scatter coletado dos clusters e do PSKReporter.
@@ -40,7 +40,7 @@ P|Na inicialização, o YA-MS verifica se tem todos os seus arquivos (traduçõe
 H1|3. A janela principal
 H2|3.1 As partes da janela
 LI|No alto, duas linhas de comandos válidas para todas as abas: camada E e antena, horário do cálculo (capítulo 4). Sua estação (locator, altitude, banda e Calcular) fica no alto à direita em Tráfego ao vivo.
-LI|A barra das abas principais, tendo à direita o botão Comandos, o esquema de cores (Tema) e o idioma.
+LI|A barra das abas principais, com à direita o botão Comandos e o idioma. O esquema de cores (Tema) é escolhido na aba Configurações.
 LI|As subabas, em uma linha mais clara, para as abas que as possuem.
 LI|Embaixo, a barra de status: mensagens do cálculo, avisos sobre a conexão e o botão "Atualizações".
 H2|3.2 As abas

@@ -24,7 +24,7 @@ def T(t):
     return TRD[t]
 
 TITLE = "Manuale d'uso di YA-MS"
-SUB = "Versione 1.8.20 - a cura di Costantino IC8TEM - novembre 2026"
+SUB = "Versione 1.8.21 - a cura di Costantino IC8TEM - novembre 2026"
 
 B = []
 h1 = lambda t: B.append(("h1", T(t))); h2 = lambda t: B.append(("h2", T(t))); p = lambda t: B.append(("p", T(t)))
@@ -75,7 +75,7 @@ p("All'avvio YA-MS controlla di avere tutti i suoi file (traduzioni, cataloghi, 
 h1("3. La finestra principale")
 h2("3.1 Le parti della finestra")
 li("In alto, due righe di comandi valide per tutte le linguette: strato E e antenna, ora del calcolo (capitolo 4). La tua stazione (locator, quota, banda e Calcola) sta in alto a destra nel Traffico in diretta.")
-li("La barra delle linguette principali, con a destra il pulsante Comandi, lo schema di colori (Tema) e la lingua.")
+li("La barra delle linguette principali, con a destra il pulsante Comandi e la lingua. Lo schema di colori (Tema) si sceglie nella linguetta Impostazioni.")
 li("Le sotto-linguette, in una riga più chiara, per le linguette che ne hanno.")
 li("In basso, la barra di stato: messaggi del calcolo, avvisi sulla connessione, e il pulsante \"Aggiornamenti\".")
 h2("3.2 Le linguette")

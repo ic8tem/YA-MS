@@ -15,7 +15,6 @@ Na extremidade direita da barra de separadores, da direita para a esquerda:
 | Comando | O que faz |
 |---|---|
 | **Idioma** (lista) | Idioma da interface; ver [Idioma](#idioma) |
-| **Tema** (lista) | Esquema de cores; ver [Esquemas de cores](#esquemas-de-cores) |
 | **Comandos ▴ / ▾** | Recolhe ou mostra as duas filas de comandos por cima dos separadores; ver [Tipo de letra e Comandos](#tipo-de-letra-e-comandos) |
 
 Ao mudar o idioma ou o tema as definições são guardadas e **a janela é reconstruída** na mesma posição e tamanho, no mesmo separador: não é preciso reiniciar.

@@ -15,7 +15,6 @@ Aan het rechteruiteinde van de tabbladbalk, van rechts naar links:
 | Element | Wat het doet |
 |---|---|
 | **Taal** (lijst) | Taal van de interface; zie [Taal](#taal) |
-| **Kleurenschema** (lijst) | Kleurenschema; zie [Kleurenschema's](#kleurenschemas) |
 | **Bediening ▴ / ▾** | Klapt de twee rijen bedieningselementen boven de tabbladen in of uit; zie [Lettertype en Bediening](#lettertype-en-bediening) |
 
 Als je van taal of kleurenschema wisselt, worden de instellingen opgeslagen en wordt **het venster opnieuw opgebouwd** op dezelfde positie en in dezelfde grootte, op hetzelfde tabblad: opnieuw starten is niet nodig.

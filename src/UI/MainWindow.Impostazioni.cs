@@ -68,7 +68,7 @@ namespace YAMS
                 ApplyCompact(m == 1 || (m == 0 && h > 0 && h < CompactOn));
             };
             look.Add(Row(L(Lang.T("Modalità compatta")), cmp));
-            col.Children.Add(SettingsSection(Lang.T("Aspetto"), Pal.Azure, Lang.T("Tema e lingua sono anche in alto a destra, accanto alle linguette."), look.ToArray()));
+            col.Children.Add(SettingsSection(Lang.T("Aspetto"), Pal.Azure, Lang.T("La lingua è anche in alto a destra, accanto alle linguette."), look.ToArray()));
 
             // --- Aggiornamenti del programma (dentro E-LAYER ANALYZER li gestisce E-LAYER)
             if (!Hosted)

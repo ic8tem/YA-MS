@@ -15,7 +15,6 @@ Ciļņu joslas labajā galā, no labās uz kreiso:
 | Vadīkla | Ko tā dara |
 |---|---|
 | **Valoda** (saraksts) | Saskarnes valoda; sk. [Valoda](#valoda) |
-| **Tēma** (saraksts) | Krāsu shēma; sk. [Krāsu shēmas](#krāsu-shēmas) |
 | **Vadība ▴ / ▾** | Sakļauj vai izvērš divas vadības rindas virs cilnēm; sk. [Fonts un Vadība](#fonts-un-vadība) |
 
 Valodas vai tēmas maiņa saglabā iestatījumus un **pārbūvē logu** tajā pašā vietā un izmērā, tajā pašā cilnē: restartēšana nav vajadzīga.

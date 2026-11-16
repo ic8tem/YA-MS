@@ -313,6 +313,7 @@ La diffusione a cono, la scelta tra Hot A e Hot B e il caso di prova Amburgo - B
 La fonte principale: geometria del meteor scatter, Hot A e Hot B, elevazione d'antenna e attenuazione di tratta.
 La formula della direzione migliore usata nella riga di confronto del Calcolo dell'efficienza.
 La formula di DH9GCD (righe azzurre) non tiene conto dell'orizzonte né del lobo, per questo dà valori anche qui.
+La lingua è anche in alto a destra, accanto alle linguette.
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.
 La parola "{0}" c'è, ma la riga non è uno spot "DX de ..." valido.
 La perdita delle scie sottodense, l'angolo beta tra scia e tratta e il raggio iniziale della scia.
@@ -573,7 +574,6 @@ Tauridi Nord
 Tauridi Sud
 Tavistock, Ontario (Canada)
 Tema
-Tema e lingua sono anche in alto a destra, accanto alle linguette.
 Tempo reale
 Tipo
 Traffico MS in diretta · {0}

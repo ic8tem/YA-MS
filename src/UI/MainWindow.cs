@@ -129,7 +129,7 @@ namespace YAMS
             };
             DockPanel.SetDock(cmbLang, Dock.Right);
             tabs.Line.Children.Insert(0, cmbLang);
-            // scelta dello schema di colori, subito a sinistra della lingua
+            // scelta dello schema di colori (mostrata in Impostazioni > Aspetto)
             List<string> themeNames = new List<string>();
             foreach (string tn in Tema.Names) themeNames.Add(Lang.T(tn));
             cmbTheme = new ComboBox { ItemsSource = themeNames, MinWidth = 150, Margin = new Thickness(6, 1, 0, 1), VerticalAlignment = VerticalAlignment.Center };
@@ -141,11 +141,8 @@ namespace YAMS
                 if (ti < 0 || ti >= Tema.Count || ti == Tema.Schema) return;
                 Dispatcher.UIThread.Post(() => SwitchTheme(ti));   // fuori dall'evento della casella
             };
-            DockPanel.SetDock(cmbTheme, Dock.Right);
-            tabs.Line.Children.Insert(1, cmbTheme);
-            TextBlock lblTheme = new TextBlock { Text = Lang.T("Tema"), Foreground = Pal.B(Pal.BarMuted), VerticalAlignment = VerticalAlignment.Center, Margin = new Thickness(10, 0, 0, 0) };
-            DockPanel.SetDock(lblTheme, Dock.Right);
-            tabs.Line.Children.Insert(2, lblTheme);
+            // il tema si sceglie solo in Impostazioni > Aspetto; nella barra in alto resta solo la lingua (richiesta
+            // dell'autore, IC8TEM, 16/11/2026). cmbTheme resta la casella "vera" che la copia in Impostazioni comanda.
             DockTop(root, BuildHorizonBand());   // fascia sempre visibile sotto la riga dell'orario, sopra le linguette
             DockTop(root, tabs.Bar);
             SetRowsVisible(cfg.GetD("comandi_visibili", 1) != 0, false);

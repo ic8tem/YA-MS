@@ -876,3 +876,4 @@ mai	никогда
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	Компактный режим при запуске сворачивает строки команд, укорачивает полосу горизонтов и скрывает длинные описания (они остаются во всплывающих подсказках): удобно на ноутбуках 13-15 дюймов.
 un'altra copia di YA-MS sta già interrogando PSKReporter	другая копия YA-MS уже опрашивает PSKReporter
 troppe richieste (429): nuova prova alle {0} UTC	слишком много запросов (429): новая попытка в {0} UTC
+La lingua è anche in alto a destra, accanto alle linguette.	Язык есть также справа вверху, рядом с вкладками.

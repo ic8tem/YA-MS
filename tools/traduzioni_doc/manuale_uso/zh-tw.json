@@ -220,7 +220,7 @@
  "16. Contatti": "16. 聯絡方式",
  "YA-MS è un programma gratuito per i radioamatori, a cura di Costantino IC8TEM (Capri). Segnalazioni, proposte e dati di confronto sono benvenuti: indica il sistema operativo, la versione di YA-MS e che cosa hai fatto. Codice e release: github.com/ic8tem/YA-MS. Contatti: ccerrotta@gmail.com, ic8tem@gmail.com, www.qrz.com/db/ic8tem. Chi vuole sostenere il lavoro può farlo su ko-fi.com/ic8tem.": "YA-MS 是一款為業餘無線電玩家提供的免費程式，由 Costantino IC8TEM（Capri）編寫。歡迎回報問題、提出建議和提供比較資料：請註明作業系統、YA-MS 版本以及您執行了哪些操作。程式碼和發行版本：github.com/ic8tem/YA-MS。聯絡方式：ccerrotta@gmail.com、ic8tem@gmail.com、www.qrz.com/db/ic8tem。願意支持這項工作的人可以透過 ko-fi.com/ic8tem 贊助。",
  "Manuale d'uso di YA-MS": "YA-MS 使用手冊",
- "Versione 1.8.20 - a cura di Costantino IC8TEM - novembre 2026": "版本 1.8.20 - Costantino IC8TEM 編寫 - 2026 年 11 月",
+ "Versione 1.8.21 - a cura di Costantino IC8TEM - novembre 2026": "版本 1.8.21 - Costantino IC8TEM 編寫 - 2026 年 11 月",
  "PROCEDURA": "操作步驟",
  "NOTA": "說明",
  "ATTENZIONE": "注意",
@@ -277,5 +277,6 @@
  "Windows 7 SP1, 8 e 8.1: i pacchetti windows7-x64 e windows7-x86 (setup o zip portatile), compilati con .NET 6, l'ultimo che gira su questi sistemi. Su Windows 7 servono gli aggiornamenti KB2533623 e KB2999226. Gli altri pacchetti Windows richiedono Windows 10 o 11: su un Windows più vecchio l'installatore lo dice subito.": "Windows 7 SP1、8 和 8.1：使用 windows7-x64 和 windows7-x86 套件（安裝程式或可攜式 zip），它們以 .NET 6 編譯，這是能在這些系統上執行的最後一個版本。Windows 7 需要 KB2533623 和 KB2999226 更新。其他 Windows 套件需要 Windows 10 或 11：在較舊的 Windows 上，安裝程式會立即提示。",
  "Crediti: autore, contatti, licenza (GNU GPL-3.0) e le schede con chi ha reso possibile YA-MS: articoli, programmi, dati, servizi e librerie, con la loro licenza.": "致謝：作者、聯絡方式、授權（GNU GPL-3.0），以及讓 YA-MS 得以實現的各方卡片：文章、程式、資料、服務和函式庫，並附其授權。",
  "Documenti tecnici, ultima: Manuale d'uso, Fonti, Mappa dei radar europei, Spiegazione del calcolo dell'efficienza, Crediti (capitolo 12).": "技術文件（最後一個）：使用手冊、來源、歐洲雷達地圖、效率計算說明、致謝（第 12 章）。",
- "Modalità compatta: La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.": "精簡模式: 精簡模式在啟動時收合命令列，縮短時間點橫欄，並隱藏較長的說明（仍可在提示中查看）：適合 13-15 吋筆記型電腦。"
+ "Modalità compatta: La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.": "精簡模式: 精簡模式在啟動時收合命令列，縮短時間點橫欄，並隱藏較長的說明（仍可在提示中查看）：適合 13-15 吋筆記型電腦。",
+ "La barra delle linguette principali, con a destra il pulsante Comandi e la lingua. Lo schema di colori (Tema) si sceglie nella linguetta Impostazioni.": "主分頁列，右側是「命令」按鈕和語言。配色方案（主題）在「設定」分頁中選擇。"
 }

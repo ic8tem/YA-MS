@@ -15,7 +15,6 @@ I høyre ende av fanelinjen, fra høyre mot venstre:
 | Kontroll | Hva den gjør |
 |---|---|
 | **Språk** (liste) | Grensesnittspråk; se [Språk](#språk) |
-| **Tema** (liste) | Fargeskjema; se [Fargeskjemaer](#fargeskjemaer) |
 | **Kontroller ▴ / ▾** | Felder sammen eller ut de to radene med kontroller over fanene; se [Skrift og Kontroller](#skrift-og-kontroller) |
 
 Når du bytter språk eller tema, lagres innstillingene, og **vinduet bygges opp på nytt** i samme posisjon og størrelse, på samme fane: ingen omstart trengs.

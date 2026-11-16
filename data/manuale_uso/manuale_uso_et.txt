@@ -1,5 +1,5 @@
 TITLE|YA-MS-i kasutusjuhend
-SUB|Versioon 1.8.20 - koostanud Costantino IC8TEM - november 2026
+SUB|Versioon 1.8.21 - koostanud Costantino IC8TEM - november 2026
 H1|1. Sissejuhatus
 H2|1.1 Milleks YA-MS on mõeldud
 P|YA-MS aitab prognoosida ja reaalajas jälgida meteor scatteri tingimusi sinu jaama ja korrespondendi vahel sagedustel 28 kuni 432 MHz. Iga aktiivse meteoorivoolu kohta ütleb see, kui palju selle radiandi asend soosib sinu trassi (efektiivsus), millistel tundidel, trassi kummalt poolt peegeldused saabuvad ja kuhu on kõige parem antenn suunata. Prognoosi kõrval näitab see reaalajas mõõdetud andmeid: Collmi meteoorradari loendusi, Global Meteor Networki kaameraid, CMOR-radarit, GRAVESi saatjat ning klastritest ja PSKReporterist kogutud meteor scatteri liiklust.
@@ -40,7 +40,7 @@ P|Käivitamisel kontrollib YA-MS, kas kõik tema failid on olemas (tõlked, kata
 H1|3. Põhiaken
 H2|3.1 Akna osad
 LI|Üleval kaks rida juhtnuppe, mis kehtivad kõigil sakkidel: E-kiht ja antenn, arvutuse aeg (peatükk 4). Sinu jaam (lokaator, kõrgus, sagedusala ja Arvuta) on paremal üleval vahekaardil Liiklus reaalajas.
-LI|Põhisakkide riba, mille paremas servas on nupp Juhtnupud, värviskeem (Teema) ja keel.
+LI|Põhisakkide riba, paremal nupp Käsud ja keel. Värviskeem (Teema) valitakse sakis Seaded.
 LI|Alamsakid heledamal real nende sakkide jaoks, millel need on.
 LI|All olekuriba: arvutuse teated, ühenduse hoiatused ja nupp „Uuendused“.
 H2|3.2 Sakid

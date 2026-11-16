@@ -1,5 +1,5 @@
 TITLE|Manwal ng paggamit ng YA-MS
-SUB|Bersyon 1.8.20 - inihanda ni Costantino IC8TEM - Nobyembre 2026
+SUB|Bersyon 1.8.21 - inihanda ni Costantino IC8TEM - Nobyembre 2026
 H1|1. Panimula
 H2|1.1 Para saan ang YA-MS
 P|Tinutulungan ka ng YA-MS na hulaan at subaybayan nang live ang mga kondisyon ng meteor scatter sa pagitan ng iyong istasyon at ng isang DX station, mula 28 hanggang 432 MHz. Para sa bawat aktibong meteor shower, sinasabi nito kung gaano pinapaboran ng posisyon ng radiant nito ang iyong landas (ang episyensya), sa anong mga oras, mula sa aling panig ng landas dumarating ang mga repleksiyon, at saan pinakamainam itutok ang antena. Kasabay ng pagtataya, ipinapakita nito ang mga datos na sinusukat nang live: ang mga bilang ng meteor radar ng Collm, ang mga camera ng Global Meteor Network, ang CMOR radar, ang transmitter na GRAVES at ang trapiko ng meteor scatter na kinokolekta mula sa mga cluster at sa PSKReporter.
@@ -40,7 +40,7 @@ P|Sa pagsisimula, tinitingnan ng YA-MS kung kumpleto ang lahat ng file nito (mga
 H1|3. Ang pangunahing window
 H2|3.1 Ang mga bahagi ng window
 LI|Sa itaas, dalawang hanay ng mga kontrol na para sa lahat ng tab: E layer at antena, oras ng kalkulasyon (kabanata 4). Nasa kanang itaas ng Live na trapiko ang iyong istasyon (locator, taas, banda at Kalkulahin).
-LI|Ang bar ng mga pangunahing tab, na may button na Mga kontrol sa kanan, ang color scheme (Tema) at ang wika.
+LI|Ang bar ng mga pangunahing tab, sa kanan ang button na Mga utos at ang wika. Ang scheme ng kulay (Tema) ay pinipili sa tab na Mga setting.
 LI|Ang mga sub-tab, sa isang mas mapusyaw na hanay, para sa mga tab na mayroon nito.
 LI|Sa ibaba, ang status bar: mga mensahe ng kalkulasyon, mga babala tungkol sa koneksiyon, at ang button na “Mga update”.
 H2|3.2 Ang mga tab

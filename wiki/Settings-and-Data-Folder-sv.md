@@ -15,7 +15,6 @@ I högra änden av flikraden, från höger till vänster:
 | Reglage | Vad det gör |
 |---|---|
 | **Språk** (lista) | Gränssnittets språk; se [Språk](#språk) |
-| **Tema** (lista) | Färgschema; se [Färgscheman](#färgscheman) |
 | **Reglage ▴ / ▾** | Fäller ihop eller ut de två raderna med reglage ovanför flikarna; se [Typsnitt och Reglage](#typsnitt-och-reglage) |
 
 När du byter språk eller tema sparas inställningarna och **fönstret byggs om** i samma position och storlek, på samma flik: ingen omstart behövs.

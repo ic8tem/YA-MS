@@ -1,5 +1,5 @@
 TITLE|Brugervejledning til YA-MS
-SUB|Version 1.8.20 - udarbejdet af Costantino IC8TEM - november 2026
+SUB|Version 1.8.21 - udarbejdet af Costantino IC8TEM - november 2026
 H1|1. Indledning
 H2|1.1 Hvad YA-MS bruges til
 P|YA-MS hjælper dig med at forudsige og følge meteor scatter-forholdene live mellem din station og en modstation, fra 28 til 432 MHz. For hver aktiv meteorsværm fortæller programmet, hvor meget dens radiants position begunstiger din strækning (effektiviteten), på hvilke tidspunkter, fra hvilken side af strækningen refleksionerne kommer, og hvor det er bedst at rette antennen. Ved siden af prognosen viser det live måledata: tællingerne fra meteorradaren i Collm, kameraerne i Global Meteor Network, CMOR-radaren, GRAVES-senderen og den meteor scatter-trafik, der indsamles fra clusterne og fra PSKReporter.
@@ -40,7 +40,7 @@ P|Ved start kontrollerer YA-MS, at alle dets filer er til stede (oversættelser,
 H1|3. Hovedvinduet
 H2|3.1 Vinduets dele
 LI|Øverst to rækker betjeningselementer, der gælder for alle faner: E-lag og antenne, beregningstidspunkt (kapitel 4). Din station (locator, højde, bånd og Beregn) står øverst til højre i Trafik i realtid.
-LI|Linjen med hovedfanerne, med knappen Betjening, farveskemaet (Tema) og sproget til højre.
+LI|Linjen med hovedfanerne, til højre med knappen Kommandoer og sproget. Farveskemaet (Tema) vælges i fanen Indstillinger.
 LI|Underfanerne, i en lysere række, for de faner, der har dem.
 LI|Nederst statuslinjen: beregningsmeddelelser, advarsler om forbindelsen og knappen »Opdateringer«.
 H2|3.2 Fanerne

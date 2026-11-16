@@ -874,3 +874,4 @@ mai	कभी नहीं
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	संक्षिप्त मोड शुरू में कमांड पंक्तियाँ समेट देता है, क्षितिजों की पट्टी छोटी करता है और लंबे विवरण छिपा देता है (वे टूलटिप में रहते हैं): 13-15 इंच के लैपटॉप पर उपयोगी।
 un'altra copia di YA-MS sta già interrogando PSKReporter	YA-MS की एक और प्रति पहले से PSKReporter से पूछ रही है
 troppe richieste (429): nuova prova alle {0} UTC	बहुत अधिक अनुरोध (429): अगला प्रयास {0} UTC पर
+La lingua è anche in alto a destra, accanto alle linguette.	भाषा ऊपर दाईं ओर, टैब के पास भी है।

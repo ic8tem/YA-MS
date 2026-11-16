@@ -15,7 +15,6 @@ Na pravém konci lišty karet, zprava doleva:
 | Ovládací prvek | Co dělá |
 |---|---|
 | **Jazyk** (seznam) | Jazyk rozhraní; viz [Jazyk](#jazyk) |
-| **Motiv** (seznam) | Barevné schéma; viz [Barevná schémata](#barevná-schémata) |
 | **Ovládání ▴ / ▾** | Skryje nebo zobrazí dva řady ovládacích prvků nad kartami; viz [Písmo a Ovládání](#písmo-a-ovládání) |
 
 Změna jazyka nebo motivu uloží nastavení a **znovu sestaví okno** ve stejné poloze a velikosti, na stejné kartě: restart není potřeba.

@@ -1,5 +1,5 @@
 TITLE|Instrukcja obsługi YA-MS
-SUB|Wersja 1.8.20 - opracował Costantino IC8TEM - listopad 2026
+SUB|Wersja 1.8.21 - opracował Costantino IC8TEM - listopad 2026
 H1|1. Wprowadzenie
 H2|1.1 Do czego służy YA-MS
 P|YA-MS pomaga przewidywać i śledzić na bieżąco warunki meteor scatter między twoją stacją a korespondentem, od 28 do 432 MHz. Dla każdego aktywnego roju meteorów pokazuje, w jakim stopniu położenie jego radiantu sprzyja twojej trasie (sprawność), w jakich godzinach, z której strony trasy przychodzą odbicia i gdzie najlepiej skierować antenę. Obok prognozy pokazuje dane mierzone na żywo: zliczenia radaru meteorowego w Collm, kamery Global Meteor Network, radar CMOR, nadajnik GRAVES oraz ruch meteor scatter zbierany z klastrów i z PSKReporter.
@@ -40,7 +40,7 @@ P|Przy uruchomieniu YA-MS sprawdza, czy ma wszystkie swoje pliki (tłumaczenia, 
 H1|3. Okno główne
 H2|3.1 Części okna
 LI|U góry dwa wiersze poleceń wspólnych dla wszystkich kart: warstwa E i antena, czas obliczenia (rozdział 4). Twoja stacja (lokator, wysokość, pasmo i Oblicz) jest w prawym górnym rogu karty Ruch na żywo.
-LI|Pasek kart głównych, a po jego prawej stronie przycisk Sterowanie, schemat kolorów (Motyw) i język.
+LI|Pasek głównych zakładek, z prawej przycisk Polecenia i język. Schemat kolorów (Motyw) wybiera się w zakładce Ustawienia.
 LI|Podkarty, w jaśniejszym wierszu, dla kart, które je mają.
 LI|Na dole pasek stanu: komunikaty z obliczeń, ostrzeżenia o połączeniu i przycisk "Aktualizacje".
 H2|3.2 Karty

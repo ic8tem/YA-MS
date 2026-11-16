@@ -874,3 +874,4 @@ mai	tidak pernah
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	Mode ringkas melipat baris perintah saat mulai, memendekkan pita cakrawala, dan menyembunyikan deskripsi panjang (tetap ada di tooltip): berguna di laptop 13-15 inci.
 un'altra copia di YA-MS sta già interrogando PSKReporter	salinan YA-MS lain sudah menanyai PSKReporter
 troppe richieste (429): nuova prova alle {0} UTC	terlalu banyak permintaan (429): coba lagi pukul {0} UTC
+La lingua è anche in alto a destra, accanto alle linguette.	Bahasa juga ada di kanan atas, di samping tab.

@@ -15,7 +15,6 @@ En el extremo derecho de la barra de pestañas, de derecha a izquierda:
 | Control | Qué hace |
 |---|---|
 | **Idioma** (lista) | Idioma de la interfaz; ver [Idioma](#idioma) |
-| **Tema** (lista) | Esquema de colores; ver [Esquemas de colores](#esquemas-de-colores) |
 | **Controles ▴ / ▾** | Pliega o despliega las dos filas de controles encima de las pestañas; ver [Fuente de letra y Controles](#fuente-de-letra-y-controles) |
 
 Al cambiar el idioma o el tema se guardan los ajustes y **se reconstruye la ventana** en la misma posición y tamaño, en la misma pestaña: no hace falta reiniciar.

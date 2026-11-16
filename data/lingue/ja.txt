@@ -876,3 +876,4 @@ mai	しない
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	コンパクトモードでは、起動時にコマンド行を折りたたみ、予報時点の帯を短くし、長い説明を隠します（ツールチップには残ります）。13〜15 インチのノートパソコンに便利です。
 un'altra copia di YA-MS sta già interrogando PSKReporter	別の YA-MS がすでに PSKReporter に問い合わせています
 troppe richieste (429): nuova prova alle {0} UTC	リクエストが多すぎます（429）：{0} UTC に再試行
+La lingua è anche in alto a destra, accanto alle linguette.	言語はタブの横、右上にもあります。

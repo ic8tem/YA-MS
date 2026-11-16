@@ -15,7 +15,6 @@ Sakiriba paremas otsas, paremalt vasakule:
 | Juhtnupp | Mida see teeb |
 |---|---|
 | **Keel** (loend) | Kasutajaliidese keel; vt [Keel](#keel) |
-| **Teema** (loend) | Värviskeem; vt [Värviskeemid](#värviskeemid) |
 | **Juhtnupud ▴ / ▾** | Peidab või näitab sakkide kohal olevat kakse juhtnuppude rida; vt [Font ja juhtnupud](#font-ja-juhtnupud) |
 
 Keele või teema vahetamine salvestab seaded ja **ehitab akna uuesti üles** samas asukohas ja suuruses, samal sakil: taaskäivitust pole vaja.

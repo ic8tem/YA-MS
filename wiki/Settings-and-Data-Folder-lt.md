@@ -15,7 +15,6 @@ Kortelių juostos dešiniajame gale, iš dešinės į kairę:
 | Valdiklis | Ką daro |
 |---|---|
 | **Kalba** (sąrašas) | Sąsajos kalba; žr. [Kalba](#kalba) |
-| **Tema** (sąrašas) | Spalvų schema; žr. [Spalvų schemos](#spalvų-schemos) |
 | **Valdymas ▴ / ▾** | Suskleidžia arba išskleidžia dvi valdymo eilutes virš kortelių; žr. [Šriftas ir valdymas](#šriftas-ir-valdymas) |
 
 Pakeitus kalbą ar temą, nustatymai išsaugomi, o **langas perkuriamas** toje pačioje vietoje ir tokio paties dydžio, toje pačioje kortelėje: paleisti iš naujo nereikia.

@@ -874,3 +874,4 @@ mai	aldrig
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.	Kompakt läge fäller ihop kommandoraderna vid start, kortar horisontbandet och döljer de långa beskrivningarna (de finns kvar i verktygstipsen): praktiskt på bärbara datorer med 13-15 tum.
 un'altra copia di YA-MS sta già interrogando PSKReporter	en annan kopia av YA-MS frågar redan PSKReporter
 troppe richieste (429): nuova prova alle {0} UTC	för många förfrågningar (429): nytt försök kl. {0} UTC
+La lingua è anche in alto a destra, accanto alle linguette.	Språket finns också uppe till höger, bredvid flikarna.

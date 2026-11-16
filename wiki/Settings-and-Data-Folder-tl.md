@@ -15,7 +15,6 @@ Sa kanang dulo ng tab bar, mula kanan pakaliwa:
 | Kontrol | Ano ang ginagawa |
 |---|---|
 | **Wika** (listahan) | Wika ng interface; tingnan ang [Wika](#wika) |
-| **Tema** (listahan) | Scheme ng kulay; tingnan ang [Mga scheme ng kulay](#mga-scheme-ng-kulay) |
 | **Mga kontrol ▴ / ▾** | Itinitiklop o ibinubuka ang dalawang hanay ng mga kontrol sa itaas ng mga tab; tingnan ang [Font at Mga kontrol](#font-at-mga-kontrol) |
 
 Kapag pinalitan ang wika o tema, sine-save ang mga setting at **muling binubuo ang window** sa parehong posisyon at laki, sa parehong tab: hindi kailangang i-restart.

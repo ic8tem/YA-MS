@@ -14,6 +14,8 @@
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVES ریڈار"></a><br><sub>GRAVES ریڈار</sub></td>
 </tr></table>
 
+**▶ [تعارفی ویڈیو](Video-ur)**
+
 ## یہ کس کے لیے ہے
 
 - وہ آپریٹر جو جاننا چاہتے ہیں کہ meteor scatter کا راستہ **کب** کھلا ہے اور اینٹینا **کہاں** رکھنا ہے – عام سی بات "آج رات شہابی بارش عروج پر ہے" سے آگے۔

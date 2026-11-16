@@ -14,6 +14,8 @@
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVES रडार"></a><br><sub>GRAVES रडार</sub></td>
 </tr></table>
 
+**▶ [परिचय वीडियो](Video-hi)**
+
 ## यह किसके लिए है
 
 - वे ऑपरेटर जो "आज रात उल्का वर्षा का शिखर है" जैसी सामान्य जानकारी से आगे जाकर यह जानना चाहते हैं कि मीटियोर स्कैटर पथ **कब** खुला है और ऐंटेना **कहाँ** घुमाना है।

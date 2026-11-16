@@ -14,6 +14,8 @@ A fő forrás **C. Cerrotta IC8TEM és G. Sartori IV3GTH** cikke: *„METEOR-SCA
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVES-radar"></a><br><sub>GRAVES-radar</sub></td>
 </tr></table>
 
+**▶ [Bemutató videó](Video-hu)**
+
 ## Kinek szól
 
 - Azoknak az operátoroknak, akik tudni szeretnék, **mikor** nyitott egy meteorszórásos útvonal és **merre** kell fordítani az antennát – túl az általános „ma éjjel van a raj csúcsa” kijelentésen.

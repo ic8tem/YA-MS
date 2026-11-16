@@ -14,6 +14,8 @@ Sursa principală este articolul lui **C. Cerrotta IC8TEM și G. Sartori IV3GTH*
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="Radar GRAVES"></a><br><sub>Radar GRAVES</sub></td>
 </tr></table>
 
+**▶ [Video de prezentare](Video-ro)**
+
 ## Pentru cine este
 
 - Operatorii care vor să știe **când** este deschis un traseu meteor-scatter și **unde** să orienteze antena, dincolo de genericul „roiul are maximul în seara asta”.

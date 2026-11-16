@@ -14,6 +14,8 @@ De hoofdbron is het artikel van **C. Cerrotta IC8TEM en G. Sartori IV3GTH**, *"M
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/nl-1_3.png" alt="Radar GRAVES"></a><br><sub>Radar GRAVES</sub></td>
 </tr></table>
 
+**▶ [Presentatievideo](Video-nl)**
+
 ## Voor wie
 
 - Operators die willen weten **wanneer** een meteorscatter-traject open is en **waarheen** ze moeten richten, verder dan het algemene "vannacht is het maximum van de zwerm".

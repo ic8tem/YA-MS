@@ -14,6 +14,8 @@ Ana kaynak, **C. Cerrotta IC8TEM ve G. Sartori IV3GTH**'nin *"METEOR-SCATTER. Ov
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVES radarı"></a><br><sub>GRAVES radarı</sub></td>
 </tr></table>
 
+**▶ [Tanıtım videosu](Video-tr)**
+
 ## Kimin için
 
 - Bir meteor scatter yolunun **ne zaman** açık olduğunu ve antenin **nereye** çevrileceğini, genel geçer "yağmur bu gece tepe yapıyor" bilgisinin ötesinde öğrenmek isteyen operatörler.

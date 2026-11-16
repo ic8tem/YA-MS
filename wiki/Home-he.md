@@ -14,6 +14,8 @@
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="מכ״ם GRAVES"></a><br><sub>מכ״ם GRAVES</sub></td>
 </tr></table>
 
+**▶ [סרטון היכרות](Video-he)**
+
 ## למי היא מיועדת
 
 - למפעילים שרוצים לדעת **מתי** נתיב פיזור מטאורי פתוח ו**לאן** לכוון, מעבר לאמירה הכללית "שיא המטר הוא הלילה".

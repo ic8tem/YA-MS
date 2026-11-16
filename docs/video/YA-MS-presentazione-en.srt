@@ -1,0 +1,59 @@
+1
+00:00:00,300 --> 00:00:05,700
+Meteor scatter: forecast and live efficiency of meteor showers — Costantino Cerrotta IC8TEM · free software, GPL-3.0
+
+2
+00:00:06,300 --> 00:00:13,200
+Forecast calculation: The sky dome with the radiants, the path to your correspondent and the hot spots where to aim the antenna.
+
+3
+00:00:13,800 --> 00:00:20,700
+The forecast band: Always visible: best hour, most favourable shower and forecast for now, in 1, 3, 6, 12 and 24 hours.
+
+4
+00:00:21,300 --> 00:00:27,200
+Geometry and attenuation: Trail height, antenna elevation and path budget.
+
+5
+00:00:27,800 --> 00:00:34,200
+Efficiency calculation: The path index hour by hour, shower by shower, with the A or B side to prefer.
+
+6
+00:00:34,800 --> 00:00:41,200
+Experimental forecast: The Collm radar flux scaled to your band with the SM6FHZ rules.
+
+7
+00:00:41,800 --> 00:00:48,700
+Live traffic: MS spots on the map, with the shower zone of each contact. Whoever answers you blinks.
+
+8
+00:00:49,300 --> 00:00:55,200
+Radar flux: Meteor counts from the Collm and Sodankylä radars, updated every 5 minutes.
+
+9
+00:00:55,800 --> 00:01:01,700
+Data collection: PSKReporter, Reverse Beacon Network, DX clusters and your WSJT-X via UDP.
+
+10
+00:01:02,300 --> 00:01:08,200
+Live showers: Flux and ZHR measured by the Global Meteor Network and the CMOR radar.
+
+11
+00:01:08,800 --> 00:01:14,700
+Showers: The IMO shower calendar, checked against the IAU Meteor Data Center.
+
+12
+00:01:15,300 --> 00:01:21,200
+Grid map: Load your ADIF and see the squares worked on 50, 70, 144, 222 and 432 MHz.
+
+13
+00:01:21,800 --> 00:01:28,200
+Settings: 36 languages, 12 themes, compact mode for notebooks and automatic updates.
+
+14
+00:01:28,800 --> 00:01:34,700
+Credits: Free and open, with credits to everyone who made YA-MS possible.
+
+15
+00:01:35,300 --> 00:01:41,700
+Windows (7 too) · Linux · macOS · Raspberry Pi · github.com/ic8tem/YA-MS · Manual and wiki in 36 languages · ko-fi.com/ic8tem · 73 de IC8TEM

@@ -14,6 +14,8 @@ La fonte principale è l'articolo di **C. Cerrotta IC8TEM e G. Sartori IV3GTH**,
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/it-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/it-1_3.png" alt="Radar GRAVES"></a><br><sub>Radar GRAVES</sub></td>
 </tr></table>
 
+**▶ [Video di presentazione](Video-it)**
+
 ## A chi è rivolto
 
 - A chi vuole sapere **quando** una tratta in meteor scatter è aperta e **dove** puntare, oltre il generico "stanotte c'è il massimo dello sciame".

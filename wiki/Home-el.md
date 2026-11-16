@@ -14,6 +14,8 @@
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="Ραντάρ GRAVES"></a><br><sub>Ραντάρ GRAVES</sub></td>
 </tr></table>
 
+**▶ [Βίντεο παρουσίασης](Video-el)**
+
 ## Σε ποιους απευθύνεται
 
 - Σε χειριστές που θέλουν να ξέρουν **πότε** είναι ανοιχτή μια διαδρομή meteor scatter και **πού** να στρέψουν την κεραία, πέρα από το γενικό «η βροχή κορυφώνεται απόψε».

@@ -14,6 +14,8 @@ La source principale est l'article de **C. Cerrotta IC8TEM et G. Sartori IV3GTH*
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="Radar GRAVES"></a><br><sub>Radar GRAVES</sub></td>
 </tr></table>
 
+**▶ [Vidéo de présentation](Video-fr)**
+
 ## À qui il s'adresse
 
 - Aux opérateurs qui veulent savoir **quand** un trajet meteor scatter est ouvert et **où** pointer, au-delà du vague « l'essaim culmine ce soir ».

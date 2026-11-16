@@ -14,6 +14,8 @@ Peamine allikas on **C. Cerrotta IC8TEM-i ja G. Sartori IV3GTH** artikkel *"METE
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVESi radar"></a><br><sub>GRAVESi radar</sub></td>
 </tr></table>
 
+**▶ [Tutvustusvideo](Video-et)**
+
 ## Kellele see on mõeldud
 
 - Operaatoritele, kes tahavad teada, **millal** meteor scatteri trass on avatud ja **kuhu** antenn suunata, mitte üksnes üldist "meteoorivoolu maksimum on täna öösel".

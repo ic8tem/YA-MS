@@ -14,6 +14,8 @@ Die hoofbron is die artikel deur **C. Cerrotta IC8TEM en G. Sartori IV3GTH**, *"
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVES-radar"></a><br><sub>GRAVES-radar</sub></td>
 </tr></table>
 
+**▶ [Aanbiedingsvideo](Video-af)**
+
 ## Vir wie dit is
 
 - Operateurs wat wil weet **wanneer** 'n meteor scatter-pad oop is en **waarheen** om te rig, verder as die algemene "die swerm piek vanaand".

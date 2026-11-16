@@ -14,6 +14,8 @@ Hovedkilden er artikkelen av **C. Cerrotta IC8TEM og G. Sartori IV3GTH**, *"METE
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="Radar GRAVES"></a><br><sub>Radar GRAVES</sub></td>
 </tr></table>
 
+**▶ [Presentasjonsvideo](Video-nb)**
+
 ## Hvem er det for
 
 - Operatører som vil vite **når** en meteor scatter-strekning er åpen og **hvor** antennen skal peke, utover det generelle «svermen topper i natt».

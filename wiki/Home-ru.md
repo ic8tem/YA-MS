@@ -14,6 +14,8 @@
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ru-1_3.png" alt="Радар GRAVES"></a><br><sub>Радар GRAVES</sub></td>
 </tr></table>
 
+**▶ [Видеопрезентация](Video-ru)**
+
 ## Для кого эта программа
 
 - Для операторов, которые хотят знать, **когда** открыта трасса метеорного рассеяния и **куда** направлять антенну, – точнее, чем общее «сегодня ночью максимум потока».

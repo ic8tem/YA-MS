@@ -14,6 +14,8 @@
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVES রাডার"></a><br><sub>GRAVES রাডার</sub></td>
 </tr></table>
 
+**▶ [পরিচিতি ভিডিও](Video-bn)**
+
 ## কাদের জন্য
 
 - যে অপারেটররা জানতে চান মিটিওর স্ক্যাটার পথ **কখন** খোলা থাকে এবং **কোথায়** তাক করতে হবে – "আজ রাতে উল্কাবৃষ্টি সর্বোচ্চে" এই সাধারণ কথার বাইরে।

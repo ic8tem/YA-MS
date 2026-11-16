@@ -14,6 +14,8 @@ Aðalheimildin er grein **C. Cerrotta IC8TEM og G. Sartori IV3GTH**, *"METEOR-SC
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVES-ratsjá"></a><br><sub>GRAVES-ratsjá</sub></td>
 </tr></table>
 
+**▶ [Kynningarmyndband](Video-is)**
+
 ## Fyrir hverja það er
 
 - Fjarskiptamenn sem vilja vita **hvenær** meteor scatter-leið er opin og **hvert** skal beina loftnetinu, umfram hið almenna „drífan nær hámarki í nótt“.

@@ -1,0 +1,59 @@
+1
+00:00:00,300 --> 00:00:05,700
+Meteorscatter: Vorhersage und Live-Effizienz der Meteorströme — Costantino Cerrotta IC8TEM · freie Software, GPL-3.0
+
+2
+00:00:06,300 --> 00:00:13,200
+Vorhersageberechnung: Das Himmelsgewölbe mit den Radianten, der Strecke zur Gegenstation und den Hot Spots für die Antenne.
+
+3
+00:00:13,800 --> 00:00:20,700
+Das Vorhersageband: Immer sichtbar: beste Stunde, günstigster Strom und Vorhersage für jetzt, in 1, 3, 6, 12 und 24 Stunden.
+
+4
+00:00:21,300 --> 00:00:27,200
+Geometrie und Dämpfung: Spurhöhe, Antennenelevation und Streckenbilanz.
+
+5
+00:00:27,800 --> 00:00:34,200
+Effizienzberechnung: Der Streckenindex Stunde für Stunde, Strom für Strom, mit der besseren Seite A oder B.
+
+6
+00:00:34,800 --> 00:00:41,200
+Experimentelle Vorhersage: Der Fluss des Collm-Radars, nach den Regeln von SM6FHZ auf dein Band umgerechnet.
+
+7
+00:00:41,800 --> 00:00:48,700
+Live-Verkehr: MS-Spots auf der Karte, mit der Stromzone jeder Verbindung. Wer dir antwortet, blinkt.
+
+8
+00:00:49,300 --> 00:00:55,200
+Radarfluss: Meteorzählungen der Radare Collm und Sodankylä, alle 5 Minuten aktualisiert.
+
+9
+00:00:55,800 --> 00:01:01,700
+Datensammlung: PSKReporter, Reverse Beacon Network, DX-Cluster und dein WSJT-X über UDP.
+
+10
+00:01:02,300 --> 00:01:08,200
+Ströme live: Fluss und ZHR, gemessen vom Global Meteor Network und vom CMOR-Radar.
+
+11
+00:01:08,800 --> 00:01:14,700
+Ströme: Der IMO-Kalender der Ströme, verglichen mit dem IAU Meteor Data Center.
+
+12
+00:01:15,300 --> 00:01:21,200
+Locator-Karte: ADIF laden und die gearbeiteten Locator auf 50, 70, 144, 222 und 432 MHz sehen.
+
+13
+00:01:21,800 --> 00:01:28,200
+Einstellungen: 36 Sprachen, 12 Farbschemata, Kompaktmodus für Notebooks und automatische Updates.
+
+14
+00:01:28,800 --> 00:01:34,700
+Danksagung: Kostenlos und frei, mit Dank an alle, die YA-MS möglich gemacht haben.
+
+15
+00:01:35,300 --> 00:01:41,700
+Windows (auch 7) · Linux · macOS · Raspberry Pi · github.com/ic8tem/YA-MS · Handbuch und Wiki in 36 Sprachen · ko-fi.com/ic8tem · 73 de IC8TEM

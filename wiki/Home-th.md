@@ -14,6 +14,8 @@
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVES radar"></a><br><sub>เรดาร์ GRAVES</sub></td>
 </tr></table>
 
+**▶ [วิดีโอแนะนำ](Video-th)**
+
 ## เหมาะกับใคร
 
 - ผู้ใช้งานที่ต้องการรู้ว่าเส้นทาง meteor scatter เปิด **เมื่อไร** และควรหันสายอากาศไป **ทางไหน** มากกว่าแค่คำบอกกว้าง ๆ ว่า "ฝนดาวตกจะถึงจุดสูงสุดคืนนี้"

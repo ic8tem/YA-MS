@@ -14,6 +14,8 @@ Galvenais avots ir **C. Cerrotta IC8TEM un G. Sartori IV3GTH** raksts *"METEOR-S
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVES radars"></a><br><sub>GRAVES radars</sub></td>
 </tr></table>
 
+**▶ [Prezentācijas video](Video-lv)**
+
 ## Kam tā paredzēta
 
 - Operatoriem, kas grib zināt, **kad** meteor scatter trase ir atvērta un **kurp** tēmēt, nevis tikai vispārīgo "plūsmas maksimums ir šonakt".

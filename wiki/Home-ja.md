@@ -14,6 +14,8 @@
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/ja-1_3.png" alt="GRAVES レーダー"></a><br><sub>GRAVES レーダー</sub></td>
 </tr></table>
 
+**▶ [紹介動画](Video-ja)**
+
 ## 対象となる方
 
 - 「今夜は流星群が極大」という一般的な情報を超えて、流星散乱通信のパスが**いつ**開き、**どこへ**アンテナを向けるべきかを知りたい運用者。

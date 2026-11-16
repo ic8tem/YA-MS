@@ -14,6 +14,8 @@
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVES 雷达"></a><br><sub>GRAVES 雷达</sub></td>
 </tr></table>
 
+**▶ [介绍视频](Video-zh)**
+
 ## 适用对象
 
 - 想知道流星散射路径**何时**开通、天线该指向**何处**的操作者，而不满足于笼统的“今晚流星雨达到峰值”。

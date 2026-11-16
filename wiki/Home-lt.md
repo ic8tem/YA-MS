@@ -14,6 +14,8 @@ Pagrindinis šaltinis – **C. Cerrotta IC8TEM ir G. Sartori IV3GTH** straipsnis
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVES radaras"></a><br><sub>GRAVES radaras</sub></td>
 </tr></table>
 
+**▶ [Pristatymo vaizdo įrašas](Video-lt)**
+
 ## Kam ji skirta
 
 - Operatoriams, norintiems žinoti, **kada** meteor scatter trasa atvira ir **kur** nukreipti anteną, o ne tik bendrą „srauto maksimumas šiąnakt“.

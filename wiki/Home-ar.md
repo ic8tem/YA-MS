@@ -14,6 +14,8 @@
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="رادار GRAVES"></a><br><sub>رادار GRAVES</sub></td>
 </tr></table>
 
+**▶ [فيديو تعريفي](Video-ar)**
+
 ## لمن هذا البرنامج
 
 - للمشغّلين الذين يريدون معرفة **متى** يكون مسار التشتت النيزكي مفتوحاً و**إلى أين** يوجّهون الهوائي، بما يتجاوز العبارة العامة "ذروة الزخة الليلة".

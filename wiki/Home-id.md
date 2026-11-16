@@ -14,6 +14,8 @@ Sumber utamanya adalah artikel **C. Cerrotta IC8TEM dan G. Sartori IV3GTH**, *"M
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="Radar GRAVES"></a><br><sub>Radar GRAVES</sub></td>
 </tr></table>
 
+**▶ [Video presentasi](Video-id)**
+
 ## Untuk siapa
 
 - Operator yang ingin tahu **kapan** sebuah lintasan meteor scatter terbuka dan **ke mana** antena diarahkan, lebih dari sekadar "puncak hujan meteor nanti malam".

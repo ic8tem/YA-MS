@@ -14,6 +14,8 @@ La fuente principal es el artículo de **C. Cerrotta IC8TEM y G. Sartori IV3GTH*
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="Radar GRAVES"></a><br><sub>Radar GRAVES</sub></td>
 </tr></table>
 
+**▶ [Vídeo de presentación](Video-es)**
+
 ## Para quién es
 
 - Operadores que quieren saber **cuándo** está abierto un trayecto de meteor scatter y **hacia dónde** apuntar, más allá del genérico "esta noche es el máximo de la lluvia".

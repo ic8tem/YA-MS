@@ -14,6 +14,8 @@ Huvudkällan är artikeln av **C. Cerrotta IC8TEM och G. Sartori IV3GTH**, *"MET
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVES-radar"></a><br><sub>GRAVES-radar</sub></td>
 </tr></table>
 
+**▶ [Presentationsvideo](Video-sv)**
+
 ## Vem programmet är till för
 
 - Operatörer som vill veta **när** en meteorscattersträcka är öppen och **vart** de ska rikta antennen, bortom det allmänna "svärmen har maximum i natt".

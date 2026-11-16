@@ -1,0 +1,59 @@
+1
+00:00:00,300 --> 00:00:05,700
+Meteor scatter: previsione e calcolo in diretta dell'efficienza degli sciami meteorici — Costantino Cerrotta IC8TEM · software libero GPL-3.0
+
+2
+00:00:06,300 --> 00:00:13,200
+Calcolo previsionale: La volta celeste con i radianti, la tratta verso il corrispondente e gli hot spot dove puntare l'antenna.
+
+3
+00:00:13,800 --> 00:00:20,700
+La fascia della previsione: Sempre visibile: ora migliore, sciame più favorevole e previsione per adesso, tra 1, 3, 6, 12 e 24 ore.
+
+4
+00:00:21,300 --> 00:00:27,200
+Geometria e attenuazione: Quota delle scie, elevazione d'antenna e bilancio della tratta.
+
+5
+00:00:27,800 --> 00:00:34,200
+Calcolo dell'efficienza: L'indice della tratta ora per ora, sciame per sciame, con il lato A o B da preferire.
+
+6
+00:00:34,800 --> 00:00:41,200
+Previsione sperimentale: Il flusso del radar di Collm riportato alla tua banda con le regole di SM6FHZ.
+
+7
+00:00:41,800 --> 00:00:48,700
+Traffico in diretta: Gli spot MS sulla mappa, con la zona dello sciame di ogni contatto. Lampeggia chi ti risponde.
+
+8
+00:00:49,300 --> 00:00:55,200
+Flusso radar: I conteggi dei radar meteorici di Collm e Sodankylä, aggiornati ogni 5 minuti.
+
+9
+00:00:55,800 --> 00:01:01,700
+Raccolta dati: PSKReporter, Reverse Beacon Network, DX cluster e la tua WSJT-X via UDP.
+
+10
+00:01:02,300 --> 00:01:08,200
+Sciami in diretta: Flusso e ZHR misurati dal Global Meteor Network e dal radar CMOR.
+
+11
+00:01:08,800 --> 00:01:14,700
+Sciami: Il calendario IMO degli sciami, confrontato con l'IAU Meteor Data Center.
+
+12
+00:01:15,300 --> 00:01:21,200
+Mappa dei quadrati: Carica il tuo ADIF e vedi i quadrati lavorati in 50, 70, 144, 222 e 432 MHz.
+
+13
+00:01:21,800 --> 00:01:28,200
+Impostazioni: 36 lingue, 12 temi, modalità compatta per i notebook e aggiornamenti automatici.
+
+14
+00:01:28,800 --> 00:01:34,700
+Crediti: Gratuito e libero, con i crediti a chi ha reso possibile YA-MS.
+
+15
+00:01:35,300 --> 00:01:41,700
+Windows (anche 7) · Linux · macOS · Raspberry Pi · github.com/ic8tem/YA-MS · Manuale e wiki in 36 lingue · ko-fi.com/ic8tem · 73 de IC8TEM

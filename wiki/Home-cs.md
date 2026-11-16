@@ -14,6 +14,8 @@ Hlavním zdrojem je článek **C. Cerrotty IC8TEM a G. Sartoriho IV3GTH** *„ME
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="Radar GRAVES"></a><br><sub>Radar GRAVES</sub></td>
 </tr></table>
 
+**▶ [Prezentační video](Video-cs)**
+
 ## Pro koho je určen
 
 - Pro operátory, kteří chtějí vědět, **kdy** je trasa pro meteor scatter otevřená a **kam** směrovat anténu, nad rámec obecného „roj má dnes v noci maximum“.

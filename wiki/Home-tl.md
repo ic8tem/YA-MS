@@ -14,6 +14,8 @@ Ang pangunahing sanggunian ay ang artikulo nina **C. Cerrotta IC8TEM at G. Sarto
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="Radar GRAVES"></a><br><sub>Radar GRAVES</sub></td>
 </tr></table>
 
+**▶ [Video ng pagpapakilala](Video-tl)**
+
 ## Para kanino ito
 
 - Mga operator na gustong malaman **kailan** bukas ang isang landas na meteor scatter at **saan** itututok, higit pa sa pangkalahatang "mamayang gabi ang peak ng shower".

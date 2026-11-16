@@ -14,6 +14,8 @@
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="GRAVES 레이더"></a><br><sub>GRAVES 레이더</sub></td>
 </tr></table>
 
+**▶ [소개 영상](Video-ko)**
+
 ## 누구를 위한 프로그램인가
 
 - "오늘 밤 유성우가 극대"라는 일반적인 정보를 넘어, 유성 산란 경로가 **언제** 열리고 **어디로** 안테나를 향해야 하는지 알고 싶은 운용자.

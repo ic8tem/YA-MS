@@ -14,6 +14,8 @@
 <td width="33%" align="center"><a href="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png"><img src="https://raw.githubusercontent.com/ic8tem/YA-MS/main/docs/screenshots/en-1_3.png" alt="Радар GRAVES"></a><br><sub>Радар GRAVES</sub></td>
 </tr></table>
 
+**▶ [Відеопрезентація](Video-uk)**
+
 ## Для кого вона
 
 - Для операторів, які хочуть знати, **коли** траса meteor scatter відкрита і **куди** спрямувати антену, а не лише загальне «сьогодні вночі максимум потоку».

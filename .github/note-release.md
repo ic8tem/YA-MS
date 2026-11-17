@@ -28,6 +28,7 @@ A cura di Costantino IC8TEM.
 | Alpine / musl ARM64 | - | [YA-MS-@VER@-alpine-arm64.tar.gz](https://github.com/ic8tem/YA-MS/releases/download/v@VER@/YA-MS-@VER@-alpine-arm64.tar.gz) |
 
 ## Novità
+Novità della 1.8.22: nelle note della release la tabella «Scarica la versione per il tuo sistema» con il link a ogni pacchetto; video di presentazione (italiano, inglese, tedesco) nella pagina Video del wiki.
 
 Novità della 1.8.21: nella barra delle linguette restano solo Comandi e la lingua; il tema si sceglie in Impostazioni > Aspetto.
 Novità della 1.8.20: modalità compatta per i notebook da 13-15 pollici (Impostazioni > Aspetto); PSKReporter: pausa di 30 minuti dopo un errore 429 e una sola copia di YA-MS che interroga; licenza GNU GPL-3.0 e linguetta Documenti tecnici > Crediti.

@@ -1,0 +1,57 @@
+# Fotografie per il videocorso (opzione nascosta --screenshot): tratta e stazione scelte, traffico vero, ora attuale e ora migliore.
+# Parte con un push sul ramo "corso" (file .github/corso.txt: QTH DX) e pubblica le fotografie sul ramo "corso-foto".
+name: corso
+on:
+  push:
+    branches: [ corso ]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  foto:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Catalogo IAU MDC
+        continue-on-error: true
+        run: |
+          mkdir -p data/cataloghi; f=data/cataloghi/iau_mdc_stabiliti.txt; Y=$(date -u +%Y)
+          for u in "https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata$Y.txt" "https://iaumdc.ta3.sk/downloads/lists_shw_data/streamestablisheddata.txt"; do
+            if curl -fsSL -m 60 -o "$f.tmp" "$u" && [ "$(grep -c '^"' "$f.tmp")" -gt 50 ]; then mv "$f.tmp" "$f"; break; fi
+          done; rm -f "$f.tmp"
+      - name: Compila
+        run: dotnet publish YA-MS.csproj -c Release -r linux-x64 --self-contained true -p:DebugType=none -o publish/linux-x64
+      - name: Indici della tratta e fotografie
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq xvfb fonts-dejavu-core fonts-noto-core >/dev/null
+          read QTH DX < .github/corso.txt
+          mkdir -p shots
+          cp -R publish/linux-x64 run
+          T0=$(date -u +%Y-%m-%dT%H)
+          echo "$QTH $DX" > tratta.txt
+          ./run/YA-MS --indici-tratte tratta.txt "$T0" 36 > shots/indici.csv || true
+          date -u +%Y-%m-%dT%H:%M:%S > shots/ora_utc.txt
+          # ora migliore (indice con il fattore beta) nelle prossime 36 ore, a meta' dell'ora
+          H=$(python3 -c "
+          import csv,datetime as d
+          r=[x for x in csv.DictReader(open('shots/indici.csv'),delimiter=';')]
+          b=max(r,key=lambda x:float(x['I_beta']))
+          t0=d.datetime.strptime('$T0','%Y-%m-%dT%H')+d.timedelta(hours=int(b['ora'])+0.5)
+          n=d.datetime.utcnow(); print(round(round((t0-n).total_seconds()/900)/4,2))")
+          echo "$H" > shots/ore_migliore.txt
+          for P in "adesso 0" "migliore $H"; do
+            set -- $P
+            rm -f run/data/config.ini
+            timeout 400 xvfb-run -a -s "-screen 0 1920x1080x24" ./run/YA-MS --screenshot "$PWD/shots/$1" --qth $QTH --dx $DX --ore $2 --traffico-vero 150 || true
+          done
+          ls -R shots | head -80
+      - name: Pubblica sul ramo corso-foto
+        run: |
+          cd shots
+          git init -q -b corso-foto
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add -A && git commit -q -m "foto corso ${GITHUB_SHA::7}"
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" corso-foto:corso-foto

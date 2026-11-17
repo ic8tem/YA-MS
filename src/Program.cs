@@ -12,6 +12,8 @@ namespace YAMS
         public static string ScreenshotTheme;     // --tema <chiave>: schema di colori per le fotografie (chiaro, scuro, nero, pastello-..., scia)
         public static double ScreenshotHours;
         public static double ScreenshotFontPct;   // --carattere N: scala del carattere in % per le fotografie (0 = invariata)
+        public static string ScreenshotQth;       // --qth LOCATOR: la mia stazione per le fotografie (videocorso)
+        public static double ScreenshotLiveWait;  // --traffico-vero S: niente traffico dimostrativo, attende S secondi gli spot veri
 
         [STAThread]
         public static void Main(string[] args)
@@ -23,6 +25,8 @@ namespace YAMS
                 if (args[i] == "--lingua") ScreenshotLang = args[i + 1];
                 if (args[i] == "--tema") ScreenshotTheme = args[i + 1];
                 if (args[i] == "--ore") double.TryParse(args[i + 1], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out ScreenshotHours);
+                if (args[i] == "--qth") ScreenshotQth = args[i + 1];
+                if (args[i] == "--traffico-vero") double.TryParse(args[i + 1], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out ScreenshotLiveWait);
                 if (args[i] == "--carattere") double.TryParse(args[i + 1], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out ScreenshotFontPct);
             }
             // prova senza finestra: le tratte di DJ5HG (MS-Geometrie 2004, Bild 8 e 9), Quadrantidi del 4 gennaio

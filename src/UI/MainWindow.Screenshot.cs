@@ -31,7 +31,9 @@ namespace YAMS
                     sp.Close();
                 }
                 catch (Exception ex) { try { File.WriteAllText(Path.Combine(dir, "errore_avvio_schermata.txt"), ex.ToString()); } catch { } }
-                AddDemoTraffic();
+                if (!string.IsNullOrEmpty(Program.ScreenshotQth)) { txtHome.Text = Program.ScreenshotQth; Recalc(); }
+                if (Program.ScreenshotLiveWait > 0) await Task.Delay(TimeSpan.FromSeconds(Program.ScreenshotLiveWait));   // spot veri (videocorso)
+                else AddDemoTraffic();
                 await Task.Delay(4000);
                 if (Program.ScreenshotFontPct > 0)
                 {

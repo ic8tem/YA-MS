@@ -1,0 +1,45 @@
+# Statistiche di traffico del repository (GitHub le tiene solo 14 giorni): ogni giorno le aggiunge ai file
+# traffico/clonazioni.csv, visite.csv, provenienze.csv e download.csv sul ramo "statistiche".
+name: Statistiche
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  salva:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Leggi e salva
+        env:
+          GH_TOKEN: ${{ secrets.STATISTICHE_TOKEN || secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          git clone -q --depth 1 -b statistiche "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$REPO.git" s 2>/dev/null || { mkdir s; cd s; git init -q -b statistiche; cd ..; }
+          mkdir -p s/traffico
+          gh api repos/$REPO/traffic/clones > c.json
+          gh api repos/$REPO/traffic/views > v.json
+          gh api repos/$REPO/traffic/popular/referrers > r.json
+          gh api "repos/$REPO/releases?per_page=100" > rel.json
+          python3 - <<'PY'
+          import json, csv, os, datetime
+          D = "s/traffico"; oggi = datetime.date.today().isoformat()
+          def merge(nome, chiave, righe, campi):
+              p = os.path.join(D, nome); dati = {}
+              if os.path.exists(p):
+                  for r in csv.DictReader(open(p, encoding="utf-8")): dati[tuple(r[k] for k in chiave)] = r
+              for r in righe: dati[tuple(r[k] for k in chiave)] = r
+              with open(p, "w", newline="", encoding="utf-8") as f:
+                  w = csv.DictWriter(f, fieldnames=campi); w.writeheader()
+                  for k in sorted(dati): w.writerow(dati[k])
+          for nome, fil, key in (("clonazioni.csv", "c.json", "clones"), ("visite.csv", "v.json", "views")):
+              j = json.load(open(fil))
+              merge(nome, ["giorno"], [{"giorno": x["timestamp"][:10], "totale": x["count"], "uniche": x["uniques"]} for x in j[key]], ["giorno", "totale", "uniche"])
+          merge("provenienze.csv", ["giorno", "sito"], [{"giorno": oggi, "sito": x["referrer"], "totale_14gg": x["count"], "uniche_14gg": x["uniques"]} for x in json.load(open("r.json"))], ["giorno", "sito", "totale_14gg", "uniche_14gg"])
+          merge("download.csv", ["giorno", "versione", "file"], [{"giorno": oggi, "versione": r["tag_name"], "file": a["name"], "scaricati": a["download_count"]} for r in json.load(open("rel.json")) for a in r["assets"]], ["giorno", "versione", "file", "scaricati"])
+          PY
+          cd s
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add -A && git commit -q -m "statistiche $(date -u +%F)" || true
+          git push -q "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$REPO.git" statistiche

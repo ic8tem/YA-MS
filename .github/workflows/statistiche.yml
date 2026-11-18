@@ -1,5 +1,5 @@
 # Statistiche di traffico del repository (GitHub le tiene solo 14 giorni): ogni giorno le aggiunge ai file
-# traffico/clonazioni.csv, visite.csv, provenienze.csv e download.csv sul ramo "statistiche".
+# <repo>/clonazioni.csv, visite.csv, provenienze.csv e download.csv sul ramo "statistiche".
 name: Statistiche
 on:
   schedule:
@@ -17,14 +17,15 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           git clone -q --depth 1 -b statistiche "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$REPO.git" s 2>/dev/null || { mkdir s; cd s; git init -q -b statistiche; cd ..; }
-          mkdir -p s/traffico
-          gh api repos/$REPO/traffic/clones > c.json
-          gh api repos/$REPO/traffic/views > v.json
-          gh api repos/$REPO/traffic/popular/referrers > r.json
+          mkdir -p s/${REPO#*/}
+          # il traffico richiede un token con "Administration: read" (segreto STATISTICHE_TOKEN): senza, salva solo i download
+          gh api repos/$REPO/traffic/clones > c.json 2>/dev/null || echo '{"clones":[]}' > c.json
+          gh api repos/$REPO/traffic/views > v.json 2>/dev/null || echo '{"views":[]}' > v.json
+          gh api repos/$REPO/traffic/popular/referrers > r.json 2>/dev/null || echo '[]' > r.json
           gh api "repos/$REPO/releases?per_page=100" > rel.json
           python3 - <<'PY'
           import json, csv, os, datetime
-          D = "s/traffico"; oggi = datetime.date.today().isoformat()
+          D = "s/" + os.environ["REPO"].split("/")[1]; oggi = datetime.date.today().isoformat()
           def merge(nome, chiave, righe, campi):
               p = os.path.join(D, nome); dati = {}
               if os.path.exists(p):

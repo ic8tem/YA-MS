@@ -1144,8 +1144,8 @@ giorno,versione,file,scaricati
 2026-11-19,v1.8.22,YA-MS-1.8.22-raspberry-pi-64bit.tar.gz,1
 2026-11-19,v1.8.22,YA-MS-1.8.22-windows-arm64-portatile.zip,10
 2026-11-19,v1.8.22,YA-MS-1.8.22-windows-arm64-setup.exe,10
-2026-11-19,v1.8.22,YA-MS-1.8.22-windows-x64-portatile.zip,25
-2026-11-19,v1.8.22,YA-MS-1.8.22-windows-x64-setup.exe,33
+2026-11-19,v1.8.22,YA-MS-1.8.22-windows-x64-portatile.zip,27
+2026-11-19,v1.8.22,YA-MS-1.8.22-windows-x64-setup.exe,40
 2026-11-19,v1.8.22,YA-MS-1.8.22-windows-x86-portatile.zip,9
 2026-11-19,v1.8.22,YA-MS-1.8.22-windows-x86-setup.exe,9
 2026-11-19,v1.8.22,YA-MS-1.8.22-windows7-x64-portatile.zip,8
@@ -1160,7 +1160,7 @@ giorno,versione,file,scaricati
 2026-11-19,v1.8.22,ya-ms-1.8.22.aarch64.rpm,1
 2026-11-19,v1.8.22,ya-ms-1.8.22.armv7hl.rpm,1
 2026-11-19,v1.8.22,ya-ms-1.8.22.x86_64.rpm,1
-2026-11-19,v1.8.22,ya-ms_1.8.22_amd64.deb,1
+2026-11-19,v1.8.22,ya-ms_1.8.22_amd64.deb,3
 2026-11-19,v1.8.22,ya-ms_1.8.22_arm64.deb,1
 2026-11-19,v1.8.22,ya-ms_1.8.22_armhf.deb,1
 2026-11-19,v1.8.3,YA-MS-1.8.3-aarch64.AppImage,1

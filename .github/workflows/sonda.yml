@@ -1,0 +1,25 @@
+# Scarica le pagine e le immagini elencate in .github/sonda.txt e le pubblica sul ramo "sonda-dati" (verifica di fonti esterne).
+name: sonda
+on:
+  push:
+    branches: [ sonda ]
+permissions:
+  contents: write
+jobs:
+  scarica:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scarica
+        run: |
+          mkdir out
+          while read -r NOME URL; do
+            [ -z "$NOME" ] && continue
+            curl -sSL -m 60 -A "Mozilla/5.0 (YA-MS source check)" -o "out/$NOME" "$URL" -w "$NOME %{http_code} %{size_download} %{content_type}\n" >> out/_esito.txt 2>>out/_errori.txt || echo "$NOME ERRORE" >> out/_esito.txt
+          done < .github/sonda.txt
+          cat out/_esito.txt
+      - name: Pubblica
+        run: |
+          cd out; git init -q -b sonda-dati; git config user.name github-actions; git config user.email actions@github.com
+          git add -A; git commit -q -m "sonda ${GITHUB_SHA::7}"
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" sonda-dati:sonda-dati

@@ -1,11 +1,4 @@
-bp_pwr24.png https://www.atrad.com.au/~ftp/radars/bp-vhfst/bp_st-emdr_met_pwr_24hr.png
-bp_pwr1.png https://www.atrad.com.au/~ftp/radars/bp-vhfst/bp_st-emdr_met_pwr_1hr.png
-bp_hist.png https://www.atrad.com.au/~ftp/radars/bp-vhfst/bp_st-emdr_met_hist.png
-bp_aoa.png https://www.atrad.com.au/~ftp/radars/bp-vhfst/bp_st-emdr_met_aoa.png
-bp_decay.png https://www.atrad.com.au/~ftp/radars/bp-vhfst/bp_st-emdr_met_decay.png
-muta_hist.png https://www.atrad.com.au/~ftp/radars/atrad-muta-remrx/muta55_met_hist.png
-atrad_results.html https://www.atrad.com.au/results/
-zenodo_14348868.json https://zenodo.org/api/records/14348868
-iprmo_home.html https://www.iprmo.org/
-cachoeira.html https://physics.uwo.ca/~whocking/axonmet/radarsites/cachoeira
-condor_mr.html https://andesnetwork.org/data/mr/condor-mr/
+condor_index.js https://andesnetwork.org/data/mr/condor-mr/assets/index-BItF1-Sf.js
+condor_year2026.html https://andesnetwork.org/data/mr/condor-mr/year/2026
+condor_home.html https://andesnetwork.org/condor/
+hrolive.html https://www.iprmo.org/hrolive.html

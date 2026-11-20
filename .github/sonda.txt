@@ -1,4 +1,9 @@
-condor_index.js https://andesnetwork.org/data/mr/condor-mr/assets/index-BItF1-Sf.js
-condor_year2026.html https://andesnetwork.org/data/mr/condor-mr/year/2026
-condor_home.html https://andesnetwork.org/condor/
-hrolive.html https://www.iprmo.org/hrolive.html
+condor_cnts_ALO_202611_a.jpg https://andesnetwork.org/images/plot/2026/cnts_ALO_202611.jpg
+condor_cnts_ALO_202611_b.jpg https://andesnetwork.org/data/mr/condor-mr/images/plot/2026/cnts_ALO_202611.jpg
+condor_cnts_ALO_202610_b.jpg https://andesnetwork.org/data/mr/condor-mr/images/plot/2026/cnts_ALO_202610.jpg
+condor_validday_2026_b.jpg https://andesnetwork.org/data/mr/condor-mr/images/plot/validdayN_2026.jpg
+hro_dayx.gif https://cgi.iprmo.org/dayx/dayx.cgi?gif
+hro_live_eng.png https://www.iprmo.org/img/hrolive/live-image-eng.png
+amro_live.html https://www.amro-net.jp/cgi/live/live-eng.cgi
+davis_rd.html https://researchdata.edu.au/davis-33mhz-meteor-radar-winds/967528
+davis_cmr.json https://cmr.earthdata.nasa.gov/search/concepts/C1437174922-AU_AADC.json

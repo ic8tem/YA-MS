@@ -45,7 +45,8 @@ jobs:
             set -- $P
             rm -f run/data/config.ini
             if [ "$2" = now ]; then X="--ore 0"; else X="--data $2"; fi
-            timeout 500 xvfb-run -a -s "-screen 0 1920x1080x24" ./run/YA-MS --screenshot "$PWD/shots/$1" --qth $QTH --dx $DX $X --hd $HD --traffico-vero 150 || true
+            if [ "$HD" != 1 ]; then export AVALONIA_GLOBAL_SCALE_FACTOR=$HD; fi
+            timeout 500 xvfb-run -a -s "-screen 0 3840x2160x24" ./run/YA-MS --screenshot "$PWD/shots/$1" --qth $QTH --dx $DX $X --hd $HD --traffico-vero 150 || true
           done
           ls -R shots | head -80
       - name: Pubblica sul ramo corso-foto

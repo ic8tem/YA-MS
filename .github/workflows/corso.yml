@@ -24,31 +24,29 @@ jobs:
           done; rm -f "$f.tmp"
       - name: Compila
         run: dotnet publish YA-MS.csproj -c Release -r linux-x64 --self-contained true -p:DebugType=none -o publish/linux-x64
-      - name: Indici della tratta e fotografie
+      - name: Indici delle tratte e fotografie
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq xvfb fonts-dejavu-core fonts-noto-core >/dev/null
-          read QTH DX T0 NH HD < .github/corso.txt
-          T0=${T0:-$(date -u +%Y-%m-%dT%H)}; NH=${NH:-36}; HD=${HD:-1}
+          sudo apt-get update -qq && sudo apt-get install -y -qq xvfb fonts-dejavu-core fonts-noto-core fonts-noto-cjk >/dev/null
           mkdir -p shots
-          cp -R publish/linux-x64 run
-          echo "$QTH $DX" > tratta.txt
-          ./run/YA-MS --indici-tratte tratta.txt "$T0" $NH > shots/indici.csv || true
-          date -u +%Y-%m-%dT%H:%M:%S > shots/ora_utc.txt
-          # ora migliore (indice con il fattore beta) nella finestra, a meta' dell'ora
-          M=$(python3 -c "
+          # ogni riga di .github/corso.txt: NOME QTH DX INIZIO(aaaa-mm-ggThh) ORE LINGUE(separate da virgola)
+          while read -r NOME QTH DX T0 NH LANGS; do
+            [ -z "$NOME" ] && continue
+            mkdir -p shots/$NOME
+            rm -rf run; cp -R publish/linux-x64 run
+            echo "$QTH $DX" > tratta.txt
+            ./run/YA-MS --indici-tratte tratta.txt "$T0" $NH > shots/$NOME/indici.csv || true
+            M=$(python3 -c "
           import csv,datetime as d
-          r=[x for x in csv.DictReader(open('shots/indici.csv'),delimiter=';')]
+          r=[x for x in csv.DictReader(open('shots/$NOME/indici.csv'),delimiter=';')]
           b=max(r,key=lambda x:float(x['I_beta']))
           print((d.datetime.strptime('$T0','%Y-%m-%dT%H')+d.timedelta(hours=int(b['ora']),minutes=30)).strftime('%Y-%m-%dT%H:%M'))")
-          echo "$M" > shots/momento_migliore.txt
-          for P in "adesso now" "migliore $M"; do
-            set -- $P
-            rm -f run/data/config.ini
-            if [ "$2" = now ]; then X="--ore 0"; else X="--data $2"; fi
-            if [ "$HD" != 1 ]; then export AVALONIA_GLOBAL_SCALE_FACTOR=$HD; fi
-            timeout 500 xvfb-run -a -s "-screen 0 3840x2160x24" ./run/YA-MS --screenshot "$PWD/shots/$1" --qth $QTH --dx $DX $X --hd $HD --traffico-vero 150 || true
-          done
-          ls -R shots | head -80
+            echo "$M" > shots/$NOME/momento_migliore.txt
+            for L in ${LANGS//,/ }; do
+              rm -f run/data/config.ini
+              timeout 500 xvfb-run -a -s "-screen 0 1920x1080x24" ./run/YA-MS --screenshot "$PWD/shots/$NOME/$L" --lingua $L --qth $QTH --dx $DX --data $M --traffico-vero 5 || true
+            done
+          done < .github/corso.txt
+          ls -R shots | head -60
       - name: Pubblica sul ramo corso-foto
         run: |
           cd shots

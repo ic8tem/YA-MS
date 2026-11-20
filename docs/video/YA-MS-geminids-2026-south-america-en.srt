@@ -1,0 +1,39 @@
+1
+00:00:00,300 --> 00:00:06,700
+YA-MS — Meteor scatter forecast: São Paulo (GG66QK) → Buenos Aires (GF05TJ) — 144 MHz · Geminids, 14 December 2026 · calculation only, no local radar data
+
+2
+00:00:07,300 --> 00:00:19,500
+São Paulo → Buenos Aires · Geminids 2026: At 01:35 UTC on 14 December (22:35 local time on the 13th) the path index is 79. The Geminids work at 83% efficiency: YA-MS recommends Hot B at azimuth 230°.
+
+3
+00:00:20,100 --> 00:00:31,200
+São Paulo → Buenos Aires · Geminids 2026: The Geminid radiant is only 15° high along the path: efficiency stays lower, but grazing trails can give rare, strong reflections. Five showers are above the horizon.
+
+4
+00:00:31,800 --> 00:00:43,600
+São Paulo → Buenos Aires · Geminids 2026: Path: 1674 km, azimuth 220.2° (45.9° from Buenos Aires). The midpoint GG30VS lies in Rio Grande do Sul; with trails at 89.5 km the antenna elevation is only 2.3°.
+
+5
+00:00:44,200 --> 00:00:55,700
+São Paulo → Buenos Aires · Geminids 2026: Hot A (GF49LV, 210°) and Hot B (GG31IQ, 230°) lie 148 km either side of the midpoint. A 4.6 m Yagi (37° lobe) aimed at 220° covers both.
+
+6
+00:00:56,300 --> 00:01:09,200
+São Paulo → Buenos Aires · Geminids 2026: Link budget at 144 MHz: the longer path costs 205.8 dB. With 400 W and 14 dBi at each end the signal is −121.8 dBm: 8.2 dB above the −130 dBm minimum.
+
+7
+00:01:09,800 --> 00:01:22,400
+São Paulo → Buenos Aires · Geminids 2026: Hour by hour the window is short: 01-02 UTC is the best hour (index 80), then 50 at 02 UTC and 36 at 03 UTC; after 06 UTC nothing is left.
+
+8
+00:01:23,000 --> 00:01:33,000
+São Paulo → Buenos Aires · Geminids 2026: Sides: the Geminids work side B at 01 UTC, then side A from 02 UTC. At 00 UTC the Antihelion source works side B.
+
+9
+00:01:33,600 --> 00:01:47,000
+In practice: São Paulo → Buenos Aires — When: 14 Dec, 01-04 UTC (22:00-01:00 local time, night of the 13th) — Shower: Geminids, low radiant: rare but strong reflections — Antenna: 220° toward Buenos Aires covers Hot A and Hot B, elevation 2° — Margin at 144 MHz: +8 dB with 400 W and 14 dBi — Radar forecast: based on Collm (Germany), not valid in South America
+
+10
+00:01:47,600 --> 00:01:54,000
+YA-MS — Windows (also 7) · Linux · macOS · Raspberry Pi — github.com/ic8tem/YA-MS — Free software (GPL-3.0) · 36 languages · ic8tem.github.io — 73 de IC8TEM

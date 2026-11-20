@@ -1,0 +1,39 @@
+1
+00:00:00,300 --> 00:00:06,700
+YA-MS — Meteor scatter forecast: Sapporo (QN03QB, JA8) → Fukuoka (PM53EO, JA6) — 144 MHz · Geminids, 14 December 2026 · calculation only, no local radar data
+
+2
+00:00:07,300 --> 00:00:19,900
+Sapporo → Fukuoka · Geminids 2026: At 09:32 UTC (18:32 JST) on 14 December the path index is 76.7. The most useful shower is the Geminids (ZHR 128, efficiency 60%): YA-MS recommends Hot B at azimuth 236°.
+
+3
+00:00:20,500 --> 00:00:32,300
+Sapporo → Fukuoka · Geminids 2026: The Geminid radiant is only 13° high along the path: efficiency stays lower, but grazing trails can give rare, strong reflections. The top view shows radiants and best headings.
+
+4
+00:00:32,900 --> 00:00:44,000
+Sapporo → Fukuoka · Geminids 2026: Path: 1422 km, azimuth 225.9° (39.1° from Fukuoka). The midpoint PM78SL lies over the Sea of Japan; with trails at 89.5 km the antenna elevation is 3.9°.
+
+5
+00:00:44,600 --> 00:00:56,100
+Sapporo → Fukuoka · Geminids 2026: Hot A (PM87HQ, 216°) and Hot B (PM79EF, 236°) lie 129 km either side of the midpoint. A 4.6 m Yagi (37° lobe) aimed at 226° covers both.
+
+6
+00:00:56,700 --> 00:01:10,300
+Sapporo → Fukuoka · Geminids 2026: Link budget at 144 MHz: 203.8 dB path loss at the midpoint. With 400 W and 14 dBi at each end the signal is −119.8 dBm against a −130 dBm minimum: 10.2 dB margin.
+
+7
+00:01:10,900 --> 00:01:22,400
+Sapporo → Fukuoka · Geminids 2026: Hour by hour: nothing before 08 UTC. The best hour is 09-10 UTC (18-19 JST, index 77), and the index stays above 30 until 16 UTC (01 JST).
+
+8
+00:01:22,000 --> 00:01:34,100
+Sapporo → Fukuoka · Geminids 2026: The table gives the side: side B in the evening, side A at 18-19 UTC (03-04 JST, index 32). The Antihelion source adds a little all night.
+
+9
+00:01:34,700 --> 00:01:48,100
+In practice: Sapporo → Fukuoka — When: 14 Dec, 09-16 UTC (18:00-01:00 JST), best at 09 UTC — Shower: Geminids, low radiant: rare but strong reflections — Antenna: 226° toward Fukuoka covers Hot A and Hot B, elevation 4° — Margin at 144 MHz: +10 dB with 400 W and 14 dBi — Radar forecast: based on Collm (Germany), not valid for Japan
+
+10
+00:01:48,700 --> 00:01:55,100
+YA-MS — Windows (also 7) · Linux · macOS · Raspberry Pi — github.com/ic8tem/YA-MS — Free software (GPL-3.0) · 36 languages · ic8tem.github.io — 73 de IC8TEM

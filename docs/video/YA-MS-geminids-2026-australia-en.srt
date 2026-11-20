@@ -1,0 +1,39 @@
+1
+00:00:00,300 --> 00:00:06,700
+YA-MS — Meteor scatter forecast: Brisbane (QG62MM) → Melbourne (QF22LE) — 144 MHz · Geminids, 14 December 2026 · calculation only, no local radar data
+
+2
+00:00:07,300 --> 00:00:19,100
+Brisbane → Melbourne · Geminids 2026: At 13:34 UTC (23:34 in Brisbane) on 14 December the path index is 109. The Geminids (ZHR 149) work at 72% efficiency: YA-MS recommends Hot A at azimuth 201°.
+
+3
+00:00:19,700 --> 00:00:30,100
+Brisbane → Melbourne · Geminids 2026: Five showers are above the horizon. The Geminids rise at 11:05 UTC and are 22° high at 13:30 UTC: a good geometry for this path.
+
+4
+00:00:30,700 --> 00:00:41,800
+Brisbane → Melbourne · Geminids 2026: Path: 1375 km, azimuth 211.3° (35.6° from Melbourne). The midpoint QF47OG lies in inland New South Wales; with trails at 89.5 km the antenna elevation is 4.3°.
+
+5
+00:00:42,400 --> 00:00:53,900
+Brisbane → Melbourne · Geminids 2026: Hot A (QF56EQ, 201°) and Hot B (QF47BW, 222°) lie 127 km either side of the midpoint. A 4.6 m Yagi (37° lobe) aimed at 211° covers both.
+
+6
+00:00:54,500 --> 00:01:07,800
+Brisbane → Melbourne · Geminids 2026: Link budget at 144 MHz: 203.4 dB path loss at the midpoint. With 400 W and 14 dBi at each end the signal is −119.4 dBm: 10.6 dB above the −130 dBm minimum.
+
+7
+00:01:08,400 --> 00:01:18,800
+Brisbane → Melbourne · Geminids 2026: Hour by hour: the window opens at 11 UTC; 12-14 UTC are the best hours (index 106-111), then the index falls quickly after 15 UTC.
+
+8
+00:01:19,400 --> 00:01:29,400
+Brisbane → Melbourne · Geminids 2026: Sides: the Antihelion source works side B at 11-12 UTC; the Geminids work side B at 12 UTC, then side A from 13 UTC.
+
+9
+00:01:29,000 --> 00:01:43,400
+In practice: Brisbane → Melbourne — When: 14 Dec, 12-14 UTC (22:00-00:00 Brisbane, 23:00-01:00 Melbourne) — Shower: Geminids (ZHR 149) with the Antihelion source — Antenna: 211° toward Melbourne covers Hot A and Hot B, elevation 4° — Margin at 144 MHz: +11 dB with 400 W and 14 dBi — Radar forecast: based on Collm (Germany), not valid in Australia
+
+10
+00:01:43,000 --> 00:01:50,400
+YA-MS — Windows (also 7) · Linux · macOS · Raspberry Pi — github.com/ic8tem/YA-MS — Free software (GPL-3.0) · 36 languages · ic8tem.github.io — 73 de IC8TEM

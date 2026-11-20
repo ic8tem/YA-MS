@@ -1,0 +1,39 @@
+1
+00:00:00,300 --> 00:00:06,700
+YA-MS — Previsión de meteor scatter: São Paulo (GG66QK) → Buenos Aires (GF05TJ) — 144 MHz · Gemínidas, 14 de diciembre de 2026 · solo cálculo, sin datos de radar locales
+
+2
+00:00:07,300 --> 00:00:21,300
+São Paulo → Buenos Aires · Gemínidas 2026: A las 01:36 UTC del 14 de diciembre (22:36 hora local del 13) el índice del trayecto es 78,6. Las Gemínidas trabajan con un 82 % de eficiencia: YA-MS recomienda Hot B en azimut 230°.
+
+3
+00:00:21,900 --> 00:00:36,300
+São Paulo → Buenos Aires · Gemínidas 2026: El radiante de las Gemínidas está a solo 15° de altura a lo largo del trayecto: la eficiencia es menor, pero las estelas rasantes pueden dar reflexiones raras y fuertes. Hay cinco lluvias sobre el horizonte.
+
+4
+00:00:36,900 --> 00:00:50,200
+São Paulo → Buenos Aires · Gemínidas 2026: Trayecto: 1674 km, azimut 220,2° (45,9° desde Buenos Aires). El punto medio GG30VS está en Rio Grande do Sul; con estelas a 89,5 km la elevación de la antena es de solo 2,3°.
+
+5
+00:00:50,800 --> 00:01:03,700
+São Paulo → Buenos Aires · Gemínidas 2026: Hot A (GF49LV, 210°) y Hot B (GG31IQ, 230°) están a 148 km a cada lado del punto medio. Una Yagi de 4,6 m (lóbulo de 37°) apuntada a 220° cubre ambos.
+
+6
+00:01:04,300 --> 00:01:18,700
+São Paulo → Buenos Aires · Gemínidas 2026: Balance del enlace en 144 MHz: el trayecto más largo cuesta 205,8 dB. Con 400 W y 14 dBi en cada extremo la señal es de −121,8 dBm: 8,2 dB sobre el mínimo de −130 dBm.
+
+7
+00:01:19,300 --> 00:01:33,300
+São Paulo → Buenos Aires · Gemínidas 2026: Hora por hora la ventana es corta: la mejor hora es 01-02 UTC (índice 80), luego 50 a las 02 UTC y 36 a las 03 UTC; después de las 06 UTC no queda nada.
+
+8
+00:01:33,900 --> 00:01:46,100
+São Paulo → Buenos Aires · Gemínidas 2026: Lados: las Gemínidas trabajan el lado B a las 01 UTC y el lado A desde las 02 UTC. A las 00 UTC la fuente Antihelion trabaja el lado B.
+
+9
+00:01:46,700 --> 00:02:00,100
+En la práctica: São Paulo → Buenos Aires — Cuándo: 14 dic, 01-04 UTC (22:00-01:00 hora local, noche del 13) — Lluvia: Gemínidas, radiante bajo: reflexiones raras pero fuertes — Antena: 220° hacia Buenos Aires cubre Hot A y Hot B, elevación 2° — Margen en 144 MHz: +8 dB con 400 W y 14 dBi — Previsión por radar: basada en Collm (Alemania), no válida en Sudamérica
+
+10
+00:02:00,700 --> 00:02:07,100
+YA-MS — Windows (también 7) · Linux · macOS · Raspberry Pi — github.com/ic8tem/YA-MS — Software libre (GPL-3.0) · 36 idiomas · ic8tem.github.io — 73 de IC8TEM

@@ -1,0 +1,39 @@
+1
+00:00:00,300 --> 00:00:06,700
+YA-MS — Previsão de meteor scatter: São Paulo (GG66QK) → Buenos Aires (GF05TJ) — 144 MHz · Geminídeas, 14 de dezembro de 2026 · apenas cálculo, sem dados de radar locais
+
+2
+00:00:07,300 --> 00:00:21,700
+São Paulo → Buenos Aires · Geminídeas 2026: Às 01:37 UTC de 14 de dezembro (22:37 no horário local do dia 13) o índice do percurso é 77,9. As Geminídeas trabalham com 81% de eficiência: o YA-MS recomenda o Hot B no azimute 230°.
+
+3
+00:00:22,300 --> 00:00:35,900
+São Paulo → Buenos Aires · Geminídeas 2026: O radiante das Geminídeas está a apenas 15° de altura ao longo do percurso: a eficiência é menor, mas os rastros rasantes podem dar reflexões raras e fortes. Há cinco chuvas acima do horizonte.
+
+4
+00:00:36,500 --> 00:00:50,100
+São Paulo → Buenos Aires · Geminídeas 2026: Percurso: 1674 km, azimute 220,2° (45,9° a partir de Buenos Aires). O ponto médio GG30VS fica no Rio Grande do Sul; com rastros a 89,5 km a elevação da antena é de apenas 2,3°.
+
+5
+00:00:50,700 --> 00:01:04,000
+São Paulo → Buenos Aires · Geminídeas 2026: Hot A (GF49LV, 210°) e Hot B (GG31IQ, 230°) ficam a 148 km de cada lado do ponto médio. Uma Yagi de 4,6 m (lóbulo de 37°) apontada para 220° cobre os dois.
+
+6
+00:01:04,600 --> 00:01:19,000
+São Paulo → Buenos Aires · Geminídeas 2026: Balanço do enlace em 144 MHz: o percurso mais longo custa 205,8 dB. Com 400 W e 14 dBi em cada ponta o sinal é de −121,8 dBm: 8,2 dB acima do mínimo de −130 dBm.
+
+7
+00:01:19,600 --> 00:01:32,500
+São Paulo → Buenos Aires · Geminídeas 2026: Hora a hora a janela é curta: a melhor hora é 01-02 UTC (índice 80), depois 50 às 02 UTC e 36 às 03 UTC; depois das 06 UTC não sobra nada.
+
+8
+00:01:33,100 --> 00:01:44,900
+São Paulo → Buenos Aires · Geminídeas 2026: Lados: as Geminídeas trabalham o lado B às 01 UTC e o lado A a partir das 02 UTC. Às 00 UTC a fonte Antihelion trabalha o lado B.
+
+9
+00:01:45,500 --> 00:01:58,900
+Na prática: São Paulo → Buenos Aires — Quando: 14 dez, 01-04 UTC (22:00-01:00 horário local, noite do dia 13) — Chuva: Geminídeas, radiante baixo: reflexões raras mas fortes — Antena: 220° para Buenos Aires cobre Hot A e Hot B, elevação 2° — Margem em 144 MHz: +8 dB com 400 W e 14 dBi — Previsão por radar: baseada em Collm (Alemanha), não válida na América do Sul
+
+10
+00:01:59,500 --> 00:02:05,900
+YA-MS — Windows (também 7) · Linux · macOS · Raspberry Pi — github.com/ic8tem/YA-MS — Software livre (GPL-3.0) · 36 idiomas · ic8tem.github.io — 73 de IC8TEM

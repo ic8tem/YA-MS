@@ -27,25 +27,25 @@ jobs:
       - name: Indici della tratta e fotografie
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq xvfb fonts-dejavu-core fonts-noto-core >/dev/null
-          read QTH DX < .github/corso.txt
+          read QTH DX T0 NH HD < .github/corso.txt
+          T0=${T0:-$(date -u +%Y-%m-%dT%H)}; NH=${NH:-36}; HD=${HD:-1}
           mkdir -p shots
           cp -R publish/linux-x64 run
-          T0=$(date -u +%Y-%m-%dT%H)
           echo "$QTH $DX" > tratta.txt
-          ./run/YA-MS --indici-tratte tratta.txt "$T0" 36 > shots/indici.csv || true
+          ./run/YA-MS --indici-tratte tratta.txt "$T0" $NH > shots/indici.csv || true
           date -u +%Y-%m-%dT%H:%M:%S > shots/ora_utc.txt
-          # ora migliore (indice con il fattore beta) nelle prossime 36 ore, a meta' dell'ora
-          H=$(python3 -c "
+          # ora migliore (indice con il fattore beta) nella finestra, a meta' dell'ora
+          M=$(python3 -c "
           import csv,datetime as d
           r=[x for x in csv.DictReader(open('shots/indici.csv'),delimiter=';')]
           b=max(r,key=lambda x:float(x['I_beta']))
-          t0=d.datetime.strptime('$T0','%Y-%m-%dT%H')+d.timedelta(hours=int(b['ora'])+0.5)
-          n=d.datetime.utcnow(); print(round(round((t0-n).total_seconds()/900)/4,2))")
-          echo "$H" > shots/ore_migliore.txt
-          for P in "adesso 0" "migliore $H"; do
+          print((d.datetime.strptime('$T0','%Y-%m-%dT%H')+d.timedelta(hours=int(b['ora']),minutes=30)).strftime('%Y-%m-%dT%H:%M'))")
+          echo "$M" > shots/momento_migliore.txt
+          for P in "adesso now" "migliore $M"; do
             set -- $P
             rm -f run/data/config.ini
-            timeout 400 xvfb-run -a -s "-screen 0 1920x1080x24" ./run/YA-MS --screenshot "$PWD/shots/$1" --qth $QTH --dx $DX --ore $2 --traffico-vero 150 || true
+            if [ "$2" = now ]; then X="--ore 0"; else X="--data $2"; fi
+            timeout 500 xvfb-run -a -s "-screen 0 1920x1080x24" ./run/YA-MS --screenshot "$PWD/shots/$1" --qth $QTH --dx $DX $X --hd $HD --traffico-vero 150 || true
           done
           ls -R shots | head -80
       - name: Pubblica sul ramo corso-foto

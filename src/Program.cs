@@ -13,6 +13,8 @@ namespace YAMS
         public static double ScreenshotHours;
         public static double ScreenshotFontPct;   // --carattere N: scala del carattere in % per le fotografie (0 = invariata)
         public static string ScreenshotQth;       // --qth LOCATOR: la mia stazione per le fotografie (videocorso)
+        public static double ScreenshotHd = 1;     // --hd N: fotografie a N volte la risoluzione (articoli a stampa)
+        public static string ScreenshotDate;      // --data AAAA-MM-GGTHH:MM: momento del calcolo (UTC) per le fotografie
         public static double ScreenshotLiveWait;  // --traffico-vero S: niente traffico dimostrativo, attende S secondi gli spot veri
 
         [STAThread]
@@ -25,6 +27,8 @@ namespace YAMS
                 if (args[i] == "--lingua") ScreenshotLang = args[i + 1];
                 if (args[i] == "--tema") ScreenshotTheme = args[i + 1];
                 if (args[i] == "--ore") double.TryParse(args[i + 1], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out ScreenshotHours);
+                if (args[i] == "--hd") double.TryParse(args[i + 1], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out ScreenshotHd);
+                if (args[i] == "--data") ScreenshotDate = args[i + 1];
                 if (args[i] == "--qth") ScreenshotQth = args[i + 1];
                 if (args[i] == "--traffico-vero") double.TryParse(args[i + 1], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out ScreenshotLiveWait);
                 if (args[i] == "--carattere") double.TryParse(args[i + 1], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out ScreenshotFontPct);

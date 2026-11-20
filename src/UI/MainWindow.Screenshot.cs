@@ -44,6 +44,15 @@ namespace YAMS
                     if (pct >= 200) SetRowsVisible(false, false);   // con caratteri grandi: comandi ripiegati
                 }
                 if (!string.IsNullOrEmpty(dx)) { txtDx.Text = dx; Recalc(); }
+                DateTime when;
+                if (!string.IsNullOrEmpty(Program.ScreenshotDate) && DateTime.TryParse(Program.ScreenshotDate, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.AdjustToUniversal | System.Globalization.DateTimeStyles.AssumeUniversal, out when))
+                {
+                    // data scelta: giorno nel calendario, ora con il cursore (da -12 a +36 h rispetto all'ora attuale)
+                    DateTime day = when.Date; double off = (when.TimeOfDay - DateTime.UtcNow.TimeOfDay).TotalHours;
+                    if (off < -12) { day = day.AddDays(-1); off += 24; }
+                    dtCalc.SelectedDate = day;
+                    hours = off;
+                }
                 trackTime.Value = Math.Max(trackTime.Minimum, Math.Min(trackTime.Maximum, Math.Round(hours * 4)));
                 UpdateSky();
                 // attende la mappa (Natural Earth) e i dati dei radar, al massimo 60 s
@@ -61,8 +70,9 @@ namespace YAMS
                         // traffico in diretta: ridisegno subito (di solito ogni 2 s)
                         RefreshTraffic(true);
                         await Task.Delay(1500);
-                        PixelSize ps = new PixelSize(Math.Max(100, (int)Bounds.Width), Math.Max(100, (int)Bounds.Height));
-                        using (RenderTargetBitmap rtb = new RenderTargetBitmap(ps, new Vector(96, 96)))
+                        double hd = Math.Max(1, Math.Min(4, Program.ScreenshotHd));
+                        PixelSize ps = new PixelSize(Math.Max(100, (int)(Bounds.Width * hd)), Math.Max(100, (int)(Bounds.Height * hd)));
+                        using (RenderTargetBitmap rtb = new RenderTargetBitmap(ps, new Vector(96 * hd, 96 * hd)))
                         {
                             rtb.Render(this);
                             rtb.Save(Path.Combine(dir, "linguetta_" + (i + 1) + (sub == null ? "" : "_" + (k + 1)) + ".png"));

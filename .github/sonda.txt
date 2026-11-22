@@ -1,2 +1,3 @@
-mro.html https://mro.chips.jp/
-toyo_last.png https://hro-ogaki.org/hro_data_toyokawa/img/2611230040.png
+mro_live.html https://mro.chips.jp/Live/index.htm
+fjto.html https://live.iprmo.org/fjto-05/view.cgi
+sgmt.html https://live.iprmo.org/sgmt-01/view3.cgi

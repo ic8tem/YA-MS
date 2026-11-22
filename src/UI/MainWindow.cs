@@ -494,6 +494,7 @@ namespace YAMS
             lblDxCall3 = new TextBlock { Foreground = Pal.B(Pal.Muted), Margin = new Thickness(8, 0), VerticalAlignment = VerticalAlignment.Center };
             txtDxCall.KeyDown += (s, e) => { if (e.Key == Key.Enter) ApplyDxCall(true); };
             txtDxCall.LostFocus += (s, e) => ApplyDxCall(false);
+            txtHome.LostFocus += (s, e) => RefreshPrevSources();   // le fonti del Giappone dipendono dal QTH (entro 3500 km)
             txtDx.KeyDown += (s, e) => { if (e.Key == Key.Enter) DxLocatorAsCall(); };
             txtDx.LostFocus += (s, e) => DxLocatorAsCall();
             string[] bands = { "28", "50", "70", "144", "222", "432" };

@@ -877,3 +877,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	Nasa kanang itaas d
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - mga talaan ng gain ng Yagi para sa 50, 144 at 432 MHz (dxmaps.com): karaniwang linya bawat band,\n    50 MHz G(dBi) = 7.36 log(L/lambda) + 11.67; 144 MHz 8.27 log + 11.31; 432 MHz 8.68 log + 11.03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: kurba ng gain ayon sa haba ng boom,\n    2.35 dB bawat octave, G(dBi) = 7.81 log(L/lambda) + 11.35 (sinisipi ito ni W8IO, w8io.com, bilang 7.773 log + 11.43); para sa paghahambing
 (stima poco precisa: boom fuori dal campione VE7BQH)	(magaspang na tantiya: boom sa labas ng sample ng VE7BQH)
+Aggiorna da IPRMO	I-update mula sa IPRMO
+Collm, Germania (radar 36,2 MHz)	Collm, Germany (radar 36.2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	Manu-manong bilang ng mga Hapon na tagamasid (HROFFT) ng mga echo mula sa mga HAM beacon para sa pagmamasid ng meteor, inilalathala ng IPRMO buwan-buwan nang ilang linggong huli: para ito sa kalibrasyon at kasaysayan, hindi sa live na hula. Magkakaiba ang antena at receiver ng bawat tagamasid: ikumpara ang mga buwan ng iisang tagamasid, hindi ang magkakaibang tagamasid. Pagsasalin gamit ang mga tuntunin ni SM6FHZ (λ^k, factor K) na nakatakda sa tab na ito.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	Mga panimulang bilang ng hula. Lumilitaw lamang ang mga entry ng Japan (awtomatikong bilang ng HROFFT sa Ogaki sa mga HAM beacon na 53 MHz, bawat 10 minuto) kung ang QTH ay nasa loob ng 3500 km mula sa Japan.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	Mga bilang bawat oras ng mga Hapon na tagamasid sa mga HAM beacon na 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), mula sa buwanang file ng IPRMO: karaniwan bawat oras UTC na isinalin sa dating frequency, at mga kabuuan bawat araw.
+Fonte dei conteggi	Pinagmulan ng mga bilang
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	Pinagmulan: {0}. Awtomatikong bilang ng HROFFT bawat 10 minuto, bahagyang mas mataas kaysa manu-mano: relatibong halaga, na dapat i-calibrate gamit ang buwanang file ng RMOJ (button na Japan).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	Hindi available ang GFS ({0}): ginagamit ang reference atmosphere ng ITU-R P.453
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	Japan live: {0} {1} {2:F3} MHz (Ogaki)
+Giappone: conteggi HRO mensili (IPRMO)	Japan: buwanang bilang ng HRO (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	Japan: buwanang bilang ng HRO (IPRMO)...
+Media del mese per ora UTC - {0}	Buwanang karaniwan bawat oras UTC - {0}
+Mese	Buwan
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	Walang data mula sa Ogaki: hinihintay ang mga larawan ng HROFFT (isa bawat 10 minuto).
+Nessun dato: premi Aggiorna da IPRMO.	Walang data: pindutin ang I-update mula sa IPRMO.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	Balidong oras {0}, kung saan tinantiya (kulang sa 60 minuto) {1}; nawala o nagambalang oras {2}; oras na may sporadic E na hindi isinama {3}.
+Osservatore	Tagamasid
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	Tagamasid: {0} ({1}). Beacon: {2} {3} ({4:F3} MHz). Talaan sa {5}, isinalin sa UTC.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	Repraksyon      +{0:F2}° patungo sa midpoint, abot sa taas ng bakas +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	Repraksyon      hindi inilapat (naka-off ang kahon): heometriya ng tuwid na sinag
+Rifrazione troposferica (GFS)	Troposperikong repraksyon (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	Naka-off sa pagsisimula (maingat na halaga). Naka-on: dina-download ng programa mula sa modelong GFS ang profile ng temperatura at halumigmig sa itaas ng dalawang istasyon at sinusundan ang sinag hanggang sa taas ng bakas. Bahagyang mas mataas ang tingin sa mabababang punto at lumalapad ang karaniwang zona (mga 60-70 km sa abot-tanaw); sa itaas ng 10° bale-wala ang epekto. Hindi nito ginagamit ang k = 4/3, na para sa mga sinag na buong nasa loob ng troposphere.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	Kabuuan bawat araw (mga araw na may hindi bababa sa 20 oras ng data, iniakma sa 24 oras)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	Pagsasalin: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	Ruta beacon → tagamasid {0:F0} km, midpoint {1}.
+atmosfera di riferimento ITU-R P.453	reference atmosphere ng ITU-R P.453
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	awtomatikong bilang ng HROFFT sa Ogaki, beacon {0} {1}
+dati GFS incompleti	hindi kumpletong data ng GFS
+echi al giorno (UTC)	mga echo bawat araw (UTC)
+echi/giorno	echo/araw
+echi/ora	echo/oras
+ora fuori dalla previsione GFS	oras na labas sa hula ng GFS
+profili {0} su {1} e {2}	mga profile {0} sa itaas ng {1} at {2}
+scarico...	nagda-download...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	{0} larawan ang nabasa ngayon, huli noong {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} buwan ang available, {1} na-download ngayon

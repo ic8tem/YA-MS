@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB meminta agar **program otomatis tidak mengambil file-filenya**. Karena itu **pengambilan otomatis mati** saat awal dan sebaiknya diaktifkan **hanya setelah meminta izin RMOB**. Tanpa izin itu Anda selalu dapat memakai **Muat file RMOB dari disk...** atau menekan **Unduh RMOB sekarang** saat diperlukan.
 
 Alamat unduhan adalah templat di `config.ini` (kunci `rmob_url`, bawaan `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, dengan `{NOME}` nama pengamat dan `{MMAAAA}` bulan dan tahun); file yang diunduh disimpan di `data/radar/`.
+
+## Hitungan HRO dari Jepang (IPRMO dan Ogaki)
+
+Sumber hitungan: bawaan Collm (radar 36,2 MHz). Bila stasiun Anda berada dalam 3500 km dari Jepang, muncul juga entri "Jepang langsung" (suar JA2SDA di Toyokawa dan JE3AKE di Otsu, 53 MHz), dengan hitungan otomatis HROFFT yang diterbitkan Ogaki setiap 10 menit; pilihan disimpan.
+
+Jepang: hitungan HRO bulanan (IPRMO)...: membuka jendela dengan hitungan manual per jam pengamat Jepang dari berkas bulanan RMOJ. Pilih bulan dan pengamat; Perbarui dari IPRMO mengunduh bulan-bulan baru. Grafik pertama adalah rata-rata bulanan per jam UTC yang dikonversi ke frekuensi Anda, yang kedua total harian.
+
+Hitungan otomatis HROFFT memberikan 30 hingga 130 gema setiap 10 menit, jauh lebih banyak daripada hitungan manual berkas RMOJ, karena juga menghitung gema lemah dan gangguan: ini nilai relatif, yang perlu dikalibrasi dengan berkas bulanan suar yang sama. Batas 3500 km mengkhususkan sumber ini bagi stasiun Asia Timur, yang melihat radian yang sama pada jam yang sama; untuk Eropa tetap Collm.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

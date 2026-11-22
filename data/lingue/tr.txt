@@ -877,3 +877,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	Dil, sekmelerin yan
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - 50, 144 ve 432 MHz için Yagi kazanç tabloları (dxmaps.com): bant başına ortalama doğru,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, s. 130-138: kazanç/bom uzunluğu eğrisi,\n    oktav başına 2,35 dB, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, bunu 7,773 log + 11,43 olarak verir); karşılaştırma için
 (stima poco precisa: boom fuori dal campione VE7BQH)	(kaba tahmin: bom VE7BQH örnekleminin dışında)
+Aggiorna da IPRMO	IPRMO'dan güncelle
+Collm, Germania (radar 36,2 MHz)	Collm, Almanya (radar 36,2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	Japon gözlemcilerin meteor gözlemi için HAM işaretçilerinin yankılarına ilişkin elle yaptığı sayımlar (HROFFT); IPRMO tarafından her ay birkaç hafta gecikmeyle yayımlanır: canlı tahmin için değil, kalibrasyon ve geçmiş için kullanılır. Her gözlemcinin anteni ve alıcısı farklıdır: farklı gözlemcileri değil, aynı gözlemcinin aylarını karşılaştırın. Bu sekmede ayarlanan SM6FHZ kurallarıyla (λ^k, K çarpanı) aktarım.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	Tahminin başlangıç sayımları. Japonya seçenekleri (Ogaki'de 53 MHz HAM işaretçilerinde 10 dakikada bir otomatik HROFFT sayımı) yalnızca QTH Japonya'ya 3500 km'den yakınsa görünür.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	Japon gözlemcilerin 53 MHz HAM işaretçilerindeki (JA2SDA, JE3AKE, JJ1RLQ) saatlik sayımları, IPRMO aylık dosyalarından: varış frekansına aktarılmış UTC saati başına ortalama ve günlük toplamlar.
+Fonte dei conteggi	Sayımların kaynağı
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	Kaynak: {0}. 10 dakikada bir otomatik HROFFT sayımı, elle sayımdan biraz yüksek: göreli bir değer, RMOJ aylık dosyalarıyla kalibre edilmeli (Japonya düğmesi).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS kullanılamıyor ({0}): ITU-R P.453 referans atmosferini kullanıyorum
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	Japonya canlı: {0} {1} {2:F3} MHz (Ogaki)
+Giappone: conteggi HRO mensili (IPRMO)	Japonya: aylık HRO sayımları (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	Japonya: aylık HRO sayımları (IPRMO)...
+Media del mese per ora UTC - {0}	UTC saatine göre ay ortalaması - {0}
+Mese	Ay
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	Ogaki'den veri yok: HROFFT görüntüleri bekleniyor (10 dakikada bir).
+Nessun dato: premi Aggiorna da IPRMO.	Veri yok: IPRMO'dan güncelle düğmesine basın.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	Geçerli saat {0}, bunlardan tahmini (60 dakikadan az) {1}; kayıp veya bozulmuş saat {2}; sporadik E nedeniyle dışlanan saat {3}.
+Osservatore	Gözlemci
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	Gözlemci: {0} ({1}). İşaretçi: {2} {3} ({4:F3} MHz). Tablo {5} cinsinden, UTC'ye çevrildi.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	Kırılma         orta noktaya doğru +{0:F2}°, iz yüksekliğinde menzil +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	Kırılma         uygulanmadı (kutu kapalı): düz ışın geometrisi
+Rifrazione troposferica (GFS)	Troposferik kırılma (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	Başlangıçta kapalı (ihtiyatlı değer). Açık: program GFS modelinden iki istasyonun üzerindeki sıcaklık ve nem profilini indirir ve ışını iz yüksekliğine kadar izler. Alçak noktalar biraz daha yüksek görünür ve ortak bölge genişler (ufukta yaklaşık 60-70 km); 10°'nin üzerinde etki ihmal edilebilir. Tamamen troposfer içindeki ışınlar için geçerli olan k = 4/3 kullanılmaz.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	Günlük toplam (en az 20 saat verili günler, 24 saate oranlanmış)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	Aktarım: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	İşaretçi → gözlemci yolu {0:F0} km, orta nokta {1}.
+atmosfera di riferimento ITU-R P.453	ITU-R P.453 referans atmosferi
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	Ogaki'de otomatik HROFFT sayımı, işaretçi {0} {1}
+dati GFS incompleti	eksik GFS verisi
+echi al giorno (UTC)	günlük yankı (UTC)
+echi/giorno	yankı/gün
+echi/ora	yankı/saat
+ora fuori dalla previsione GFS	GFS tahmininin dışındaki saat
+profili {0} su {1} e {2}	{1} ve {2} üzerinde {0} profilleri
+scarico...	indiriliyor...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	şimdi {0} görüntü okundu, sonuncusu {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} ay mevcut, {1} şimdi indirildi

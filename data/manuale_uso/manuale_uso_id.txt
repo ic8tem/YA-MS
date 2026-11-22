@@ -64,6 +64,7 @@ H2|4.2 Baris 1: lapisan E dan antena
 LI|Ketinggian jejak km dan dari radar: ketinggian jejak meteor. Bila "dari radar" dicentang, digunakan ketinggian yang paling sering diukur oleh radar Collm (biasanya 88-90 km); hapus centang untuk menuliskannya secara manual.
 LI|Elevasi lobus °: elevasi puncak lobus vertikal antena Anda. Antena pengarah yang dipasang pada 0° tetap memiliki lobus utama beberapa derajat di atas cakrawala, karena pantulan dari tanah: biasanya 3-8°, tergantung tinggi antena dalam panjang gelombang.
 LI|pola antena: bila aktif (bawaan), titik-titik pantul diperhitungkan dengan penguatan vertikal kedua antena: penuh di sekitar puncak lobus, makin berkurang ke arah cakrawala dan ke arah atas. Bila nonaktif, elevasi lobus menjadi batas tegas: titik yang terlihat lebih rendah tidak diperhitungkan.
+LI|Refraksi troposfer (GFS): mati saat mulai. Bila dicentang, program mengunduh dari model GFS profil suhu dan kelembapan di atas kedua stasiun dan memperhitungkan pembelokan sinar sampai ketinggian jejak: titik rendah tampak sedikit lebih tinggi dan zona bersama melebar. Bila GFS tidak menjawab, dipakai atmosfer rata-rata. Laporan Geometri dan redaman menyebutkannya pada baris "Refraksi".
 LI|Antena Yagi: boom m: panjang boom. Di sebelahnya program menulis panjang dalam panjang gelombang, gain (garis rata-rata tabel VE7BQH untuk band itu) dan lobe −3 dB horizontal dan vertikal. Jika boom di luar sampel VE7BQH band tersebut, perkiraannya kasar.
 LI|Hot spot dari titik tengah km dan otomatis (AMS): jarak Hot A dan Hot B dari titik tengah. Bila "otomatis (AMS)" dicentang, nilai mengikuti tabel J. Richardson yang dikutip oleh DJ5HG (simpangan 13° pada 1000 km, 10° di atas 1500 km); hapus centang untuk menulis 30-400 km secara manual (MSHV memakai 150 km).
 TAG|ATTENZIONE|Dengan "pola antena" nonaktif dan lobus pada beberapa derajat, pada lintasan panjang kedua stasiun bisa tidak melihat satu pun titik bersama di lapisan: semua efisiensi bernilai 0 dan muncul peringatan "TIDAK ADA ZONA BERSAMA" beserta lobus atau ketinggian jejak yang diperlukan. Contoh: JN70CN - JO76QP, 1791 km, lobus pada 3°, jejak pada 88,5 km.
@@ -153,12 +154,15 @@ H2|8.1 Kontrol
 LI|Frekuensi tujuan MHz: frekuensi prakiraan.
 LI|Eksponen λ^k (3, SM6FHZ) dan Faktor stasiun K (1): aturan frekuensi dan koreksi untuk stasiun Anda.
 LI|k dari indeks populasi: mengusulkan k dari indeks populasi r hujan meteor aktif (GMN, jika tidak ada IMO; k = 3,75 · log10 r, dibobot dengan ZHR) dan meminta konfirmasi sebelum menerapkannya.
+LI|Sumber hitungan: bawaan Collm (radar 36,2 MHz). Bila stasiun Anda berada dalam 3500 km dari Jepang, muncul juga entri "Jepang langsung" (suar JA2SDA di Toyokawa dan JE3AKE di Otsu, 53 MHz), dengan hitungan otomatis HROFFT yang diterbitkan Ogaki setiap 10 menit; pilihan disimpan.
+LI|Jepang: hitungan HRO bulanan (IPRMO)...: membuka jendela dengan hitungan manual per jam pengamat Jepang dari berkas bulanan RMOJ. Pilih bulan dan pengamat; Perbarui dari IPRMO mengunduh bulan-bulan baru. Grafik pertama adalah rata-rata bulanan per jam UTC yang dikonversi ke frekuensi Anda, yang kedua total harian.
 LI|Muat file RMOB dari disk dan Turunkan eksponen dari file RMOB: membaca file bulanan RMOB dan menurunkan k dari jam-jam yang sama dengan Collm.
 LI|Pengamat RMOB, Unduh RMOB sekarang dan pengambilan otomatis setiap 5 menit: pengambilan otomatis nonaktif dan hanya boleh diaktifkan dengan izin RMOB. Perintah-perintah ini ada di tab Pengaturan.
 H2|8.2 Hasil
 LI|Grafik kemarin dan hari ini: meteor per jam di Collm, nilai yang dikonversi ke frekuensi Anda dan, jika dimuat, hitungan RMOB.
 LI|Prakiraan 24 jam ke depan: jam yang sama pada hari sebelumnya, dikoreksi menurut perubahan indeks hujan meteor lintasan.
 LI|Tabel dengan penilaian: baik, sedang atau buruk dibandingkan rata-rata 24 jam.
+TAG|NOTA|Hitungan otomatis Ogaki lebih tinggi daripada hitungan manual: ini nilai relatif. Untuk mengkalibrasinya, bandingkan di jendela Jepang dengan berkas bulanan RMOJ suar yang sama.
 TAG|NOTA|Durasi pantulan mengikuti pilihan "Durasi ping antarband" di Geometri dan redaman; pada forward scatter durasi juga bertambah dengan sec²φ di titik tengah lintasan.
 H1|9. Langsung dan data waktu nyata
 H2|9.1 Lalu lintas langsung
@@ -228,6 +232,7 @@ LI|sciami.csv, massimi_imo.csv, ant_radiante.csv: katalog hujan meteor dan posis
 LI|flusso_collm.csv, quote_collm.csv: arsip radar Collm; radar/: gambar terbaru, berkas RMOB dan data sumber langsung; fonti_radar.csv: alamat sumber, yang dapat diaktifkan satu per satu.
 LI|cataloghi/: katalog IAU MDC; radar/diretta/: data GMN dan CMOR.
 LI|call3.txt: arsip locator; spot_ms/: spot meteor scatter yang terkumpul; adif_quadrati.csv: kotak dari ADIF.
+LI|radar/rmoj/: berkas bulanan RMOJ dari Jepang; radar/hro_ogaki_*.csv: hitungan Ogaki 3 hari terakhir; radar/gfs_*.json: profil GFS untuk refraksi (berlaku 3 jam).
 LI|efficienza_spiegazione.*, spiegazione/, manuale_uso.*, manuale_uso/: dokumen teknis.
 LI|backup/: salinan berkas yang diganti oleh pembaruan; aggiornamento/: paket yang diunduh (dihapus saat program dijalankan ulang).
 H2|13.3 Tab Pengaturan
@@ -237,6 +242,7 @@ LI|controlla_aggiornamenti=0: tidak memeriksa versi baru; aggiornamenti_salta: v
 LI|lobo_diagramma, angolo_beta, lunghezza_scie, giudizio_classico: kotak-kotak perhitungan.
 LI|raggio_iniziale (0 = dua kali nilai ITU, 1 = ITU, 2 = dikecualikan), durata_ping (0 = λ², 1 = teramati).
 LI|rmob_osservatore, rmob_automatico, rmob_url: RMOB.
+LI|rifrazione_gfs (0 = mati, 1 = aktif), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: refraksi dan sumber Jepang.
 LI|psk_rimando=0: mematikan penerusan ke PSKReporter dekode MS (MSK144, FSK441, PSK2K, JTMS) yang diterima lewat UDP. Aktif sejak awal dan bekerja sendiri: jika callsign Anda tidak muncul lebih dari 20 menit di antara stasiun yang mengirim laporan ke PSKReporter (program digital tidak mengirim), YA-MS mengirim setiap 5 menit stasiun MS yang Anda dekode, dengan Anda sebagai penerima; begitu program digital mengirim lagi, YA-MS berhenti. Satu baris di konsol UDP menunjukkan kapan mulai dan berhenti. Jika di WSJT-X.ini (atau JTDX.ini) pengiriman ke PSKReporter mati, YA-MS langsung meneruskan, tanpa menunggu 20 menit.
 TAG|ATTENZIONE|Ubah config.ini hanya saat program ditutup: ketika ditutup, YA-MS menulisnya ulang.
 H1|14. Prosedur umum

@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB는 **자동 프로그램이 파일을 가져가지 않도록** 요청합니다. 그래서 **자동 다운로드는 처음에 꺼져 있으며**, **RMOB에 허가를 요청한 뒤에만** 켜야 합니다. 허가가 없어도 언제든 **디스크에서 RMOB 파일 불러오기...**를 사용하거나 필요할 때 **지금 RMOB 다운로드**를 누를 수 있습니다.
 
 다운로드 주소는 `config.ini`의 템플릿입니다(키 `rmob_url`, 기본값 `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, `{NOME}`은 관측자, `{MMAAAA}`는 월과 연도). 다운로드한 파일은 `data/radar/`에 보관됩니다.
+
+## 일본의 HRO 계수 (IPRMO와 오가키)
+
+계수 출처: 기본값은 Collm(레이더 36.2 MHz). 국이 일본에서 3500 km 이내이면 "일본 실시간" 항목(도요카와의 JA2SDA와 오쓰의 JE3AKE 비콘, 53 MHz)도 나타나며, 오가키가 10분마다 공개하는 HROFFT 자동 계수를 쓴다. 선택은 저장된다.
+
+일본: HRO 월간 계수 (IPRMO)...: RMOJ 월간 파일의 일본 관측자 시간별 수동 계수 창을 연다. 달과 관측자를 고르고, "IPRMO에서 업데이트"로 새 달을 받는다. 첫 그래프는 내 주파수로 환산한 UTC 시간별 월평균, 두 번째는 일 합계다.
+
+HROFFT 자동 계수는 10분마다 30~130개의 에코를 주어, 약한 에코와 잡음까지 세므로 RMOJ 파일의 수동 계수보다 훨씬 많다. 상대값이므로 같은 비콘의 월간 파일로 보정해야 한다. 3500 km 제한으로 이 출처는 같은 시각에 같은 복사점을 보는 동아시아 국에 한정되며, 유럽에는 Collm이 쓰인다.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Prófun:** H = 89,5 km, e = 0° → **1062 km**. Í dæmi greinarinnar (JN44BB–IO53RT) setur teikningin skurðpunkta sjóndeildarhringsins um 870 km frá stöðvunum, sem samsvarar geisla sem lyft er um 2° (865 km).
 
+## Veðrahvolfsljósbrot (GFS)
+
+Veðrahvolfsljósbrot (reiturinn "Veðrahvolfsljósbrot (GFS)", óvirkur við ræsingu). Með reitinn virkan sækir forritið frá Open-Meteo snið GFS-líkansins yfir báðum stöðvum (þrýsting, hita og raka við yfirborð og á þrýstiflötum frá 1000 til 500 hPa, á næstu klukkustund innan 6 klukkustunda), reiknar hæð flatanna með hæðarjöfnunni (sýndarhiti) og brotstuðulinn með formúlu tilmæla ITU-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+þar sem P og e (gufuþrýstingur, úr formúlu Magnus) eru í hPa og T í kelvin. Ofan efsta flatarins minnkar N veldisvíslega með kvarðahæð 7,35 km. Ef GFS svarar ekki er notaður viðmiðunarlofthjúpur P.453, N = 315·exp(−h/7,35), og skýrslan segir frá því.
+
+Geislinn er rakinn gegnum þunnar kúluskeljar með lögmáli Snells á kúluformi (n·r·cos e fasti) upp í slóðahæð; af því fæst drægnin í hæð H og leiðrétting á hæðarhorni:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Dæmi með viðmiðunarlofthjúpnum og slóðum í 89,5 km: við 0° fer drægnin úr 1061,5 í um 1133 km (+72 km) og punkturinn sýnist 0,62° hærri; við 4° eykst drægnin um 14 km og leiðréttingin er 0,20°; yfir 10° eru áhrifin hverfandi. Leiðréttingin gildir um hæðarhornið að miðpunkti, radíus sameiginlega svæðisins, heitu blettina og punkta skilvirknikortsins; punktum undir brotnum sjóndeildarhring er hent. Skýrslan gefur hana í línunni "Ljósbrot".
+
+Jafngildur jarðarradíus k = 4/3 á við geisla sem haldast í fyrstu kílómetrum veðrahvolfsins, þar sem N lækkar um um það bil 40 einingar á km. Geislinn að slóð í 90 km fer gegnum allt veðrahvolfið og heldur ofan 10-15 km, þar sem N er nær núll, áfram nánast beint: með k = 4/3 alla leiðina upp yrði drægnin við 0° um 1230 km, nærri 100 km meira en rakti geislinn. Þess vegna rekur forritið geislann í GFS-sniðinu, eins og LIVETROPOVHF höfundar gerir fyrir útbreiðslu í veðrahvolfi, í stað þess að nota k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Mörk sameiginlega svæðisins
 
 **Heimild:** greinin staðsetur skurðpunkta ferlanna þar sem sjóndeildarhringur hvorrar stöðvar mætir E-laginu: skurðpunkta tveggja hringja með hornradíus ρ = d_H/r með miðju í A og B [19–20]:

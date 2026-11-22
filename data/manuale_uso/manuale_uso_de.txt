@@ -64,6 +64,7 @@ H2|4.2 Zeile 1: E-Schicht und Antenne
 LI|Spurhöhe km und vom Radar: Höhe der Meteorspuren. Ist „vom Radar“ angehakt, wird die vom Radar Collm gemessene häufigste Höhe verwendet (meist 88-90 km); entferne den Haken, um sie von Hand einzugeben.
 LI|Keulenelev. °: Elevation des Maximums der vertikalen Keule deiner Antenne. Ein auf 0° fest montierter Richtstrahler hat seine Hauptkeule wegen der Bodenreflexion trotzdem einige Grad über dem Horizont: meist 3-8°, je nach Antennenhöhe in Wellenlängen.
 LI|Antennendiagramm: eingeschaltet (Voreinstellung) zählen die Reflexionspunkte mit dem vertikalen Gewinn der beiden Antennen: voll um das Keulenmaximum, immer weniger zum Horizont und nach oben hin. Ausgeschaltet ist die Keulenelevation eine harte Grenze: Tiefer gesehene Punkte zählen nicht.
+LI|Troposphärische Refraktion (GFS): beim Start aus. Eingeschaltet lädt das Programm aus dem GFS-Modell das Temperatur- und Feuchteprofil über beiden Stationen und berücksichtigt die Krümmung des Strahls bis zur Spurhöhe: tiefe Punkte erscheinen etwas höher und die gemeinsame Zone wird breiter. Antwortet das GFS nicht, nimmt es eine mittlere Atmosphäre. Der Bericht von Geometrie und Dämpfung nennt es in der Zeile "Refraktion".
 LI|Yagi-Antenne: Boom m: Länge des Booms. Daneben schreibt das Programm die Länge in Wellenlängen, den Gewinn (mittlere Gerade der VE7BQH-Tabellen des Bandes) und die −3-dB-Keule horizontal und vertikal. Liegt der Boom außerhalb der VE7BQH-Stichprobe des Bandes, ist die Schätzung ungenau.
 LI|Hot-Spot ab Mittelpunkt km und auto (AMS): Abstand von Hot A und Hot B vom Mittelpunkt. Ist „auto (AMS)“ angehakt, folgt er der von DJ5HG zitierten Tabelle von J. Richardson (13° Abweichung bei 1000 km, 10° über 1500 km); entferne den Haken, um 30-400 km von Hand einzugeben (MSHV verwendet 150 km).
 TAG|ATTENZIONE|Ist „Antennendiagramm“ ausgeschaltet und liegt die Keule bei einigen Grad, sehen die beiden Stationen auf einer langen Strecke unter Umständen keinen gemeinsamen Punkt der Schicht: Alle Effektivitäten sind 0, und es erscheint der Hinweis „KEINE GEMEINSAME ZONE“ mit der Keulenelevation oder Spurhöhe, die nötig wäre. Beispiel: JN70CN - JO76QP, 1791 km, Keule bei 3°, Spuren in 88,5 km.
@@ -153,12 +154,15 @@ H2|8.1 Die Bedienelemente
 LI|Zielfrequenz MHz: Frequenz der Vorhersage.
 LI|Exponent λ^k (3, SM6FHZ) und Stationsfaktor K (1): Frequenzregel und Korrektur für deine Station.
 LI|k aus den Populationsindizes: schlägt k aus den Populationsindizes r der aktiven Ströme vor (GMN, sonst IMO; k = 3,75 · log10 r, mit der ZHR gewichtet) und fragt vor dem Übernehmen nach einer Bestätigung.
+LI|Quelle der Zählungen: standardmäßig Collm (Radar 36,2 MHz). Liegt deine Station höchstens 3500 km von Japan entfernt, erscheinen auch die Einträge "Japan live" (Baken JA2SDA in Toyokawa und JE3AKE in Otsu, 53 MHz) mit den automatischen HROFFT-Zählungen, die Ogaki alle 10 Minuten veröffentlicht; die Wahl wird gespeichert.
+LI|Japan: monatliche HRO-Zählungen (IPRMO)...: öffnet das Fenster mit den stündlichen Handzählungen der japanischen Beobachter aus den RMOJ-Monatsdateien. Wähle Monat und Beobachter; Von IPRMO aktualisieren lädt die neuen Monate. Das erste Diagramm ist das Monatsmittel je UTC-Stunde, auf deine Frequenz umgerechnet, das zweite die Tagessummen.
 LI|RMOB-Datei von Festplatte laden und Exponent aus RMOB-Datei ermitteln: lesen eine RMOB-Monatsdatei und ermitteln k aus den mit Collm gemeinsamen Stunden.
 LI|RMOB-Beobachter, RMOB jetzt laden und automatischer Abruf alle 5 Minuten: Der automatische Abruf ist ausgeschaltet und darf nur mit Erlaubnis von RMOB eingeschaltet werden. Diese Befehle befinden sich im Reiter Einstellungen.
 H2|8.2 Die Ergebnisse
 LI|Das Diagramm von gestern und heute: Meteore pro Stunde in Collm, auf deine Frequenz umgerechnete Werte und, falls geladen, die RMOB-Zählungen.
 LI|Die Vorhersage der nächsten 24 Stunden: dieselbe Stunde des Vortags, korrigiert um die Änderung des Stromindex der Strecke.
 LI|Die Tabelle mit der Bewertung: gut, mittel oder schwach im Vergleich zum 24-Stunden-Mittel.
+TAG|NOTA|Die automatischen Zählungen aus Ogaki sind höher als die Handzählungen: es sind relative Werte. Zum Kalibrieren vergleiche sie im Japan-Fenster mit den RMOJ-Monatsdateien derselben Bake.
 TAG|NOTA|Die Dauer der Reflexionen folgt der Wahl „Dauer der Pings zwischen den Bändern“ in Geometrie und Dämpfung; im Forward-Scatter wächst die Dauer außerdem mit sec²φ am Mittelpunkt der Strecke.
 H1|9. Live und Echtzeitdaten
 H2|9.1 Verkehr live
@@ -228,6 +232,7 @@ LI|sciami.csv, massimi_imo.csv, ant_radiante.csv: der Stromkatalog und die Lage 
 LI|flusso_collm.csv, quote_collm.csv: Archive des Radars Collm; radar/: neueste Bilder, RMOB-Dateien und Daten der Live-Quellen; fonti_radar.csv: Adressen der Quellen, einzeln aktivierbar.
 LI|cataloghi/: IAU-MDC-Katalog; radar/diretta/: GMN- und CMOR-Daten.
 LI|call3.txt: Locator-Datenbank; spot_ms/: gesammelte Meteorscatter-Spots; adif_quadrati.csv: Felder aus dem ADIF.
+LI|radar/rmoj/: RMOJ-Monatsdateien aus Japan; radar/hro_ogaki_*.csv: Zählungen aus Ogaki der letzten 3 Tage; radar/gfs_*.json: GFS-Profile für die Refraktion (3 Stunden gültig).
 LI|efficienza_spiegazione.*, spiegazione/, manuale_uso.*, manuale_uso/: die technischen Dokumente.
 LI|backup/: Kopien der durch eine Aktualisierung ersetzten Dateien; aggiornamento/: heruntergeladenes Paket (wird beim Neustart gelöscht).
 H2|13.3 Der Reiter Einstellungen
@@ -237,6 +242,7 @@ LI|controlla_aggiornamenti=0: nicht nach neuen Versionen suchen; aggiornamenti_s
 LI|lobo_diagramma, angolo_beta, lunghezza_scie, giudizio_classico: die Kästchen der Berechnung.
 LI|raggio_iniziale (0 = doppelter ITU-Wert, 1 = ITU, 2 = ausgeschlossen), durata_ping (0 = λ², 1 = beobachtet).
 LI|rmob_osservatore, rmob_automatico, rmob_url: RMOB.
+LI|rifrazione_gfs (0 = aus, 1 = ein), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: Refraktion und japanische Quellen.
 LI|psk_rimando=0: schaltet die Weiterleitung der über UDP empfangenen MS-Dekodierungen (MSK144, FSK441, PSK2K, JTMS) an PSKReporter aus. Sie ist standardmäßig an und arbeitet selbstständig: fehlt dein Rufzeichen seit mehr als 20 Minuten unter den Stationen, die an PSKReporter melden (das Digitalprogramm sendet nicht), schickt YA-MS alle 5 Minuten die MS-Stationen, die du dekodierst, mit dir als Empfänger; sobald das Digitalprogramm wieder sendet, hört YA-MS auf. Eine Zeile in der UDP-Konsole meldet Start und Stopp. Ist das Senden an PSKReporter in WSJT-X.ini (oder JTDX.ini) ausgeschaltet, leitet YA-MS sofort weiter, ohne 20 Minuten zu warten.
 TAG|ATTENZIONE|Ändere config.ini nur bei geschlossenem Programm: Beim Schließen schreibt YA-MS die Datei neu.
 H1|14. Typische Vorgehensweisen

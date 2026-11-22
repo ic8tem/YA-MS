@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Verificare:** H = 89,5 km, e = 0° → **1062 km**. În exemplul din articol (JN44BB–IO53RT), desenul pune intersecțiile orizontului la aproximativ 870 km de stații, ceea ce corespunde unui lob ridicat cu aproximativ 2° (865 km).
 
+## Refracție troposferică (GFS)
+
+Refracție troposferică (căsuța "Refracție troposferică (GFS)", debifată la pornire). Cu căsuța bifată programul descarcă de la Open-Meteo profilul modelului GFS deasupra celor două stații (presiune, temperatură și umiditate la sol și la nivelurile de la 1000 la 500 hPa, la ora cea mai apropiată în limita a 6 ore), obține înălțimile nivelurilor cu ecuația hipsometrică (temperatură virtuală) și refractivitatea cu formula Recomandării ITU-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+cu P și e (presiunea vaporilor, din formula Magnus) în hPa și T în kelvini. Deasupra ultimului nivel N scade exponențial cu o înălțime de scară de 7,35 km. Dacă GFS nu răspunde, se folosește atmosfera de referință P.453, N = 315·exp(−h/7,35), iar raportul o spune.
+
+Raza se urmărește prin straturi sferice subțiri cu legea lui Snell în formă sferică (n·r·cos e constant) până la înălțimea urmelor; rezultă raza de acțiune la înălțimea H și corecția elevației:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Exemplu cu atmosfera de referință și urme la 89,5 km: la 0° raza crește de la 1061,5 la circa 1133 km (+72 km) și punctul apare cu 0,62° mai sus; la 4° raza crește cu 14 km și corecția este 0,20°; peste 10° efectul este neglijabil. Corecția se aplică elevației spre punctul median, razei zonei comune, hot spot-urilor și punctelor hărții de eficiență; punctele sub orizontul refractat se elimină. Raportul o dă pe rândul "Refracție".
+
+Raza terestră echivalentă k = 4/3 este valabilă pentru razele care rămân în primii kilometri ai troposferei, unde N scade cu circa 40 de unități pe km. Raza spre o urmă la 90 km străbate întreaga troposferă și peste 10-15 km, unde N este aproape nul, continuă aproape dreaptă: cu k = 4/3 pe toată urcarea, raza de acțiune la 0° ar fi de circa 1230 km, cu aproape 100 km mai mult decât raza urmărită. De aceea programul urmărește raza în profilul GFS, cum face LIVETROPOVHF al autorului pentru propagarea troposferică, în loc să folosească k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Limitele zonei comune
 
 **Sursă:** articolul localizează intersecțiile curbelor în care orizontul fiecărei stații întâlnește stratul E: intersecțiile a două cercuri cu raza unghiulară ρ = d_H/r centrate în A și B [19–20]:

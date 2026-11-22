@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB asks **automatic programs not to fetch its files**. For this reason the **automatic download is off** at the start and should be enabled **only after asking RMOB for permission**. Without it you can always use **Load RMOB file from disk...** or press **Download RMOB now** when you need it.
 
 The download address is a template in `config.ini` (key `rmob_url`, default `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, where `{NOME}` is the observer and `{MMAAAA}` month and year); downloaded files are kept in `data/radar/`.
+
+## HRO counts from Japan (IPRMO and Ogaki)
+
+Source of counts: Collm (radar 36,2 MHz) by default. If your station is within 3500 km of Japan, the "Japan live" entries also appear (beacons JA2SDA at Toyokawa and JE3AKE at Otsu, 53 MHz), with the automatic HROFFT counts published by Ogaki every 10 minutes; the choice is saved.
+
+Japan: monthly HRO counts (IPRMO)...: opens the window with the hourly hand counts of the Japanese observers from the RMOJ monthly files. Choose the month and the observer; Update from IPRMO downloads the new months. The first chart is the monthly mean per UTC hour translated to your frequency, the second the daily totals.
+
+The automatic HROFFT count gives 30 to 130 echoes every 10 minutes, much more than the hand counts of the RMOJ files, because it also counts weak echoes and interference: it is a relative value, to be calibrated with the monthly files of the same beacon. The 3500 km limit reserves the source for East Asian stations, which see the same radiants at the same hours; for Europe Collm remains.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

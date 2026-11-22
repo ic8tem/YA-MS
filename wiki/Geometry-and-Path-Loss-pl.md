@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Sprawdzenie:** H = 89,5 km, e = 0° → **1062 km**. W przykładzie z artykułu (JN44BB–IO53RT) rysunek umieszcza przecięcia z horyzontem około 870 km od stacji, co odpowiada listkowi podniesionemu o około 2° (865 km).
 
+## Refrakcja troposferyczna (GFS)
+
+Refrakcja troposferyczna (pole "Refrakcja troposferyczna (GFS)", wyłączone przy starcie). Przy zaznaczonym polu program pobiera z Open-Meteo profil modelu GFS nad obiema stacjami (ciśnienie, temperatura i wilgotność przy ziemi oraz na poziomach od 1000 do 500 hPa, dla najbliższej godziny w ciągu 6 godzin), wyznacza wysokości poziomów równaniem hipsometrycznym (temperatura wirtualna) i refraktywność wzorem z Zalecenia ITU-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+gdzie P i e (ciśnienie pary, ze wzoru Magnusa) w hPa, T w kelwinach. Powyżej najwyższego poziomu N maleje wykładniczo z wysokością skali 7,35 km. Gdy GFS nie odpowiada, używana jest atmosfera odniesienia P.453, N = 315·exp(−h/7,35), a raport to podaje.
+
+Promień jest śledzony przez cienkie powłoki sferyczne prawem Snella w postaci sferycznej (n·r·cos e = const) aż do wysokości śladów; wynikają z tego zasięg na wysokości H i poprawka elewacji:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Przykład z atmosferą odniesienia i śladami na 89,5 km: przy 0° zasięg rośnie z 1061,5 do około 1133 km (+72 km), a punkt wydaje się 0,62° wyżej; przy 4° zasięg rośnie o 14 km, a poprawka wynosi 0,20°; powyżej 10° efekt jest pomijalny. Poprawka dotyczy elewacji w stronę punktu środkowego, promienia strefy wspólnej, hot spotów i punktów mapy efektywności; punkty poniżej załamanego horyzontu są odrzucane. Raport podaje ją w wierszu "Refrakcja".
+
+Zastępczy promień Ziemi k = 4/3 obowiązuje dla promieni pozostających w pierwszych kilometrach troposfery, gdzie N maleje o około 40 jednostek na km. Promień w stronę śladu na 90 km przechodzi przez całą troposferę, a powyżej 10-15 km, gdzie N jest prawie zerowe, biegnie niemal prosto: przy k = 4/3 na całym wznoszeniu zasięg przy 0° wyniósłby około 1230 km, prawie 100 km więcej niż śledzony promień. Dlatego program śledzi promień w profilu GFS, tak jak robi to LIVETROPOVHF autora dla propagacji troposferycznej, zamiast używać k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Granice strefy wspólnej
 
 **Źródło:** artykuł lokalizuje przecięcia krzywych, w których horyzont każdej ze stacji spotyka warstwę E: przecięcia dwóch okręgów o promieniu kątowym ρ = d_H/r o środkach w A i B [19–20]:

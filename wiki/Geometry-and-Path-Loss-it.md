@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Verifica:** H = 89,5 km, e = 0° → **1062 km**. Nell'esempio dell'articolo (JN44BB–IO53RT) il disegno pone gli incroci con l'orizzonte a circa 870 km dalle stazioni, il che corrisponde a un lobo alzato di circa 2° (865 km).
 
+## Rifrazione troposferica (GFS)
+
+Rifrazione troposferica (casella "Rifrazione troposferica (GFS)", spenta all'avvio). Con la casella accesa il programma scarica da Open-Meteo il profilo del modello GFS sopra le due stazioni (pressione, temperatura e umidità al suolo e ai livelli da 1000 a 500 hPa, all'ora più vicina entro 6 ore), ricava le quote dei livelli con l'equazione ipsometrica (temperatura virtuale) e la rifrattività con la formula della Raccomandazione ITU-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+con P ed e (pressione del vapore, dalla formula di Magnus) in hPa e T in kelvin. Sopra l'ultimo livello N decresce in modo esponenziale con altezza di scala 7,35 km. Se il GFS non risponde si usa l'atmosfera di riferimento della P.453, N = 315·exp(−h/7,35), e il resoconto lo dice.
+
+Il raggio si traccia a gusci sferici sottili con la legge di Snell in forma sferica (n·r·cos e costante) fino alla quota delle scie; ne vengono la portata alla quota H e la correzione dell'elevazione:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Esempio con l'atmosfera di riferimento e scie a 89,5 km: a 0° la portata passa da 1061,5 a circa 1133 km (+72 km) e il punto appare 0,62° più alto; a 4° la portata cresce di 14 km e la correzione vale 0,20°; sopra 10° l'effetto è trascurabile. La correzione si applica all'elevazione verso il punto medio, al raggio della zona comune, agli hot spot e ai punti della mappa d'efficienza; i punti sotto l'orizzonte rifratto si scartano. Il resoconto la riporta nella riga "Rifrazione".
+
+Il raggio terrestre equivalente k = 4/3 vale per raggi che restano nei primi chilometri della troposfera, dove N cala di circa 40 unità per km. Il raggio verso una scia a 90 km attraversa tutta la troposfera e sopra i 10-15 km, dove N è quasi nullo, prosegue quasi diritto: con k = 4/3 su tutta la salita la portata a 0° sarebbe circa 1230 km, quasi 100 km più del raggio tracciato. Per questo il programma traccia il raggio nel profilo del GFS, come fa LIVETROPOVHF dell'autore per la propagazione troposferica, invece di usare k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Limiti della zona comune
 
 **Fonte:** l'articolo individua gli incroci delle curve dove l'orizzonte di ciascuna stazione incontra lo strato E: gli incroci di due cerchi di raggio angolare ρ = d_H/r centrati in A e B [19–20]:

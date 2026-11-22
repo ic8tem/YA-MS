@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 Hinihiling ng RMOB na **huwag kunin ng mga awtomatikong programa ang mga file nito**. Dahil dito, **naka-off ang awtomatikong pag-download** sa simula at dapat lamang itong i-enable **pagkatapos humingi ng pahintulot sa RMOB**. Kung wala nito, palagi mong magagamit ang **Ikarga ang RMOB file mula sa disk...** o pindutin ang **I-download ang RMOB ngayon** kapag kailangan mo.
 
 Ang address ng pag-download ay isang template sa `config.ini` (key na `rmob_url`, default `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, kung saan ang `{NOME}` ay ang observer at ang `{MMAAAA}` ay buwan at taon); iniimbak ang mga na-download na file sa `data/radar/`.
+
+## Mga bilang ng HRO mula sa Japan (IPRMO at Ogaki)
+
+Pinagmulan ng mga bilang: Collm (radar 36.2 MHz) bilang default. Kung ang iyong istasyon ay nasa loob ng 3500 km mula sa Japan, lumilitaw din ang mga entry na "Japan live" (mga beacon na JA2SDA sa Toyokawa at JE3AKE sa Otsu, 53 MHz), kasama ang awtomatikong bilang ng HROFFT na inilalathala ng Ogaki bawat 10 minuto; nase-save ang pagpili.
+
+Japan: buwanang bilang ng HRO (IPRMO)...: binubuksan ang window na may manu-manong bilang bawat oras ng mga Hapon na tagamasid mula sa buwanang file ng RMOJ. Piliin ang buwan at tagamasid; dina-download ng I-update mula sa IPRMO ang mga bagong buwan. Ang unang tsart ay ang buwanang karaniwan bawat oras UTC na isinalin sa iyong frequency, ang ikalawa ay ang kabuuan bawat araw.
+
+Ang awtomatikong bilang ng HROFFT ay nagbibigay ng 30 hanggang 130 echo bawat 10 minuto, higit na marami kaysa sa manu-manong bilang ng mga file ng RMOJ, dahil binibilang din nito ang mahihinang echo at interference: relatibong halaga ito, na dapat i-calibrate gamit ang buwanang file ng parehong beacon. Inilalaan ng hangganang 3500 km ang pinagmulan sa mga istasyon sa Silangang Asya, na nakakakita ng parehong radiant sa parehong oras; para sa Europa, Collm pa rin.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

@@ -877,3 +877,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	Språket finns ocks
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - Yagi-förstärkningstabeller för 50, 144 och 432 MHz (dxmaps.com): medellinje per band,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, s. 130-138: kurva för förstärkning mot bomlängd,\n    2,35 dB per oktav, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, anger den som 7,773 log + 11,43); för jämförelse
 (stima poco precisa: boom fuori dal campione VE7BQH)	(grov uppskattning: bom utanför VE7BQH-urvalet)
+Aggiorna da IPRMO	Uppdatera från IPRMO
+Collm, Germania (radar 36,2 MHz)	Collm, Tyskland (radar 36,2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	Handräkningar av japanska observatörer (HROFFT) av ekona från HAM-fyrarna för meteorobservation, publicerade månatligen av IPRMO med några veckors fördröjning: de används för kalibrering och historik, inte för direktprognosen. Varje observatör har olika antenn och mottagare: jämför månader från samma observatör, inte olika observatörer. Omräkning med SM6FHZ:s regler (λ^k, faktor K) inställda i denna flik.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	Utgångsräkningar för prognosen. Japan-posterna (automatisk HROFFT-räkning i Ogaki på HAM-fyrarna på 53 MHz, var 10:e minut) visas bara om QTH ligger inom 3500 km från Japan.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	Timräkningar från japanska observatörer på HAM-fyrarna på 53 MHz (JA2SDA, JE3AKE, JJ1RLQ) från IPRMO:s månadsfiler: medelvärde per UTC-timme omräknat till målfrekvensen, och dygnssummor.
+Fonte dei conteggi	Källa för räkningarna
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	Källa: {0}. Automatisk HROFFT-räkning var 10:e minut, något högre än handräkningen: ett relativt värde som ska kalibreras med RMOJ-månadsfilerna (knappen Japan).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS inte tillgänglig ({0}): använder referensatmosfären ITU-R P.453
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	Japan direkt: {0} {1} {2:F3} MHz (Ogaki)
+Giappone: conteggi HRO mensili (IPRMO)	Japan: månatliga HRO-räkningar (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	Japan: månatliga HRO-räkningar (IPRMO)...
+Media del mese per ora UTC - {0}	Månadsmedel per UTC-timme - {0}
+Mese	Månad
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	Inga data från Ogaki: väntar på HROFFT-bilderna (en var 10:e minut).
+Nessun dato: premi Aggiorna da IPRMO.	Inga data: tryck på Uppdatera från IPRMO.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	Giltiga timmar {0}, varav uppskattade (under 60 minuter) {1}; förlorade eller störda timmar {2}; timmar med sporadiskt E uteslutna {3}.
+Osservatore	Observatör
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	Observatör: {0} ({1}). Fyr: {2} {3} ({4:F3} MHz). Tabell i {5}, omräknad till UTC.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	Refraktion      +{0:F2}° mot mittpunkten, räckvidd på spårhöjd +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	Refraktion      inte tillämpad (rutan av): geometri med raka strålar
+Rifrazione troposferica (GFS)	Troposfärisk refraktion (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	Av vid start (försiktigt värde). På: programmet hämtar från GFS-modellen temperatur- och fuktighetsprofilen över de två stationerna och följer strålen upp till spårhöjden. Låga punkter syns något högre och den gemensamma zonen blir bredare (cirka 60-70 km vid horisonten); över 10° är effekten försumbar. k = 4/3 används inte; den gäller för strålar helt inom troposfären.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	Dygnssumma (dagar med minst 20 timmars data, omräknat till 24 timmar)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	Omräkning: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	Sträcka fyr → observatör {0:F0} km, mittpunkt {1}.
+atmosfera di riferimento ITU-R P.453	referensatmosfären ITU-R P.453
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	automatisk HROFFT-räkning i Ogaki, fyr {0} {1}
+dati GFS incompleti	ofullständiga GFS-data
+echi al giorno (UTC)	ekon per dygn (UTC)
+echi/giorno	ekon/dygn
+echi/ora	ekon/timme
+ora fuori dalla previsione GFS	tid utanför GFS-prognosen
+profili {0} su {1} e {2}	profiler {0} över {1} och {2}
+scarico...	hämtar...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	{0} bilder lästa nu, senaste kl. {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} månader tillgängliga, {1} hämtade nu

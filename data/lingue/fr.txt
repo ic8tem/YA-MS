@@ -877,3 +877,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	La langue est aussi
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - tables de gain des Yagi pour 50, 144 et 432 MHz (dxmaps.com) : droite moyenne par bande,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67 ; 144 MHz 8,27 log + 11,31 ; 432 MHz 8,68 log + 11,03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, p. 130-138 : courbe gain/longueur de boom,\n    2,35 dB par octave, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la donne comme 7,773 log + 11,43) ; pour comparaison
 (stima poco precisa: boom fuori dal campione VE7BQH)	(estimation peu précise : boom hors de l'échantillon VE7BQH)
+Aggiorna da IPRMO	Mettre à jour depuis IPRMO
+Collm, Germania (radar 36,2 MHz)	Collm, Allemagne (radar 36,2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	Comptages manuels des observateurs japonais (HROFFT) des échos des balises HAM pour l'observation des météores, publiés chaque mois par IPRMO avec quelques semaines de retard : ils servent à l'étalonnage et à l'historique, pas à la prévision en direct. Chaque observateur a une antenne et un récepteur différents : comparez les mois d'un même observateur, pas des observateurs différents. Transposition avec les règles de SM6FHZ (λ^k, facteur K) réglées dans cet onglet.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	Comptages de départ de la prévision. Les entrées du Japon (comptage automatique HROFFT à Ogaki sur les balises HAM de 53 MHz, toutes les 10 minutes) n'apparaissent que si le QTH est à moins de 3500 km du Japon.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	Comptages horaires des observateurs japonais sur les balises HAM de 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), d'après les fichiers mensuels d'IPRMO : moyenne par heure UTC transposée à la fréquence d'arrivée et totaux journaliers.
+Fonte dei conteggi	Source des comptages
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	Source : {0}. Comptage automatique HROFFT toutes les 10 minutes, un peu plus élevé que le comptage manuel : valeur relative, à étalonner avec les fichiers mensuels RMOJ (bouton Japon).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS non disponible ({0}) : j'utilise l'atmosphère de référence UIT-R P.453
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	Japon en direct : {0} {1} {2:F3} MHz (Ogaki)
+Giappone: conteggi HRO mensili (IPRMO)	Japon : comptages HRO mensuels (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	Japon : comptages HRO mensuels (IPRMO)...
+Media del mese per ora UTC - {0}	Moyenne du mois par heure UTC - {0}
+Mese	Mois
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	Pas de données d'Ogaki : j'attends les images HROFFT (une toutes les 10 minutes).
+Nessun dato: premi Aggiorna da IPRMO.	Pas de données : appuyez sur Mettre à jour depuis IPRMO.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	Heures valides {0}, dont estimées (moins de 60 minutes) {1} ; heures perdues ou perturbées {2} ; heures avec sporadique E exclues {3}.
+Osservatore	Observateur
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	Observateur : {0} ({1}). Balise : {2} {3} ({4:F3} MHz). Tableau en {5}, converti en UTC.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	Réfraction      +{0:F2}° vers le point milieu, portée à l'altitude des traînées +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	Réfraction      non appliquée (case décochée) : géométrie à rayons droits
+Rifrazione troposferica (GFS)	Réfraction troposphérique (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	Décochée au démarrage (valeur prudente). Cochée : le programme télécharge du modèle GFS le profil de température et d'humidité au-dessus des deux stations et trace le rayon jusqu'à l'altitude des traînées. Les points bas paraissent un peu plus hauts et la zone commune s'élargit (environ 60-70 km à l'horizon) ; au-dessus de 10° l'effet est négligeable. Le k = 4/3 n'est pas utilisé : il vaut pour des rayons entièrement dans la troposphère.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	Total journalier (jours avec au moins 20 heures de données, ramenés à 24 heures)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	Transposition : x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	Trajet balise → observateur {0:F0} km, point milieu {1}.
+atmosfera di riferimento ITU-R P.453	atmosphère de référence UIT-R P.453
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	comptage automatique HROFFT à Ogaki, balise {0} {1}
+dati GFS incompleti	données GFS incomplètes
+echi al giorno (UTC)	échos par jour (UTC)
+echi/giorno	échos/jour
+echi/ora	échos/heure
+ora fuori dalla previsione GFS	heure hors de la prévision GFS
+profili {0} su {1} e {2}	profils {0} sur {1} et {2}
+scarico...	téléchargement...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	{0} images lues maintenant, dernière à {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} mois disponibles, {1} téléchargés maintenant

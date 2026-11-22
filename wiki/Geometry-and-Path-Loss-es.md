@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Verificación:** H = 89,5 km, e = 0° → **1062 km**. En el ejemplo del artículo (JN44BB–IO53RT) el dibujo sitúa los cruces del horizonte a unos 870 km de las estaciones, lo que corresponde a un lóbulo elevado unos 2° (865 km).
 
+## Refracción troposférica (GFS)
+
+Refracción troposférica (casilla "Refracción troposférica (GFS)", desmarcada al inicio). Con la casilla marcada el programa descarga de Open-Meteo el perfil del modelo GFS sobre las dos estaciones (presión, temperatura y humedad en superficie y en los niveles de 1000 a 500 hPa, a la hora más cercana dentro de 6 horas), obtiene las alturas de los niveles con la ecuación hipsométrica (temperatura virtual) y la refractividad con la fórmula de la Recomendación UIT-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+con P y e (presión de vapor, de la fórmula de Magnus) en hPa y T en kelvin. Por encima del último nivel N decrece de forma exponencial con una altura de escala de 7,35 km. Si el GFS no responde se usa la atmósfera de referencia de la P.453, N = 315·exp(−h/7,35), y el informe lo indica.
+
+El rayo se traza a través de capas esféricas finas con la ley de Snell en forma esférica (n·r·cos e constante) hasta la altura de las estelas; de ello resultan el alcance a la altura H y la corrección de la elevación:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Ejemplo con la atmósfera de referencia y estelas a 89,5 km: a 0° el alcance pasa de 1061,5 a unos 1133 km (+72 km) y el punto aparece 0,62° más alto; a 4° el alcance crece 14 km y la corrección vale 0,20°; por encima de 10° el efecto es despreciable. La corrección se aplica a la elevación hacia el punto medio, al radio de la zona común, a los hot spots y a los puntos del mapa de eficiencia; los puntos por debajo del horizonte refractado se descartan. El informe la da en la línea "Refracción".
+
+El radio terrestre equivalente k = 4/3 vale para rayos que permanecen en los primeros kilómetros de la troposfera, donde N disminuye unas 40 unidades por km. El rayo hacia una estela a 90 km atraviesa toda la troposfera y, por encima de 10-15 km, donde N es casi nulo, sigue casi recto: con k = 4/3 en toda la subida el alcance a 0° sería de unos 1230 km, casi 100 km más que el rayo trazado. Por eso el programa traza el rayo en el perfil GFS, como hace LIVETROPOVHF del autor para la propagación troposférica, en lugar de usar k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Límites de la zona común
 
 **Fuente:** el artículo localiza los cruces de las curvas donde el horizonte de cada estación encuentra la capa E: los cruces de dos círculos de radio angular ρ = d_H/r centrados en A y B [19–20]:

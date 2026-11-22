@@ -64,6 +64,7 @@ H2|4.2 第 1 行：E 层与天线
 LI|余迹高度 km 和 来自雷达：流星余迹的高度。勾选“来自雷达”时，使用 Collm 雷达测得的最常见高度（通常为 88-90 km）；取消勾选可手动输入。
 LI|波瓣仰角 °：你的天线垂直波瓣最大值的仰角。固定在 0° 的定向天线，由于地面反射，其主瓣仍在地平线以上几度：通常为 3-8°，取决于以波长计的天线高度。
 LI|天线方向图：开启（默认）时，反射点按两副天线的垂直增益计入：在波瓣最大值附近为全额，向地平线和向上逐渐减少。关闭时，波瓣仰角是一个硬性界限：低于该仰角看到的点不计入。
+LI|对流层折射（GFS）：启动时关闭。勾选后，程序从 GFS 模型下载两站上空的温度和湿度廓线，并考虑射线到流星余迹高度的弯曲：低处的点看起来略高，公共区变宽。若 GFS 无响应，则使用平均大气。“几何与路径损耗”的报告在“折射”一行中注明。
 LI|八木天线：横梁 m：横梁长度。旁边程序显示以波长计的长度、增益（该波段 VE7BQH 表格的平均直线）以及水平和垂直的 −3 dB 波瓣。若横梁超出该波段的 VE7BQH 样本范围，估算不够精确。
 LI|热点距中点 km 和 自动（AMS）：Hot A 和 Hot B 到中点的距离。勾选“自动（AMS）”时，按照 DJ5HG 引用的 J. Richardson 表格（1000 km 时偏离 13°，1500 km 以上偏离 10°）；取消勾选可手动输入 30-400 km（MSHV 使用 150 km）。
 TAG|ATTENZIONE|当“天线方向图”关闭且波瓣仰角为几度时，在长路径上两个电台可能看不到该层的任何公共点：所有效率均为 0，并出现“无公共区域”警告，给出所需的波瓣仰角或余迹高度。例如：JN70CN - JO76QP，1791 km，波瓣 3°，余迹 88.5 km。
@@ -153,12 +154,15 @@ H2|8.1 控件
 LI|目标频率 MHz：预报的频率。
 LI|λ^k 指数（3，SM6FHZ）和 电台因子 K（1）：频率规则以及针对你电台的修正。
 LI|由布居指数求 k：根据活跃流星雨的布居指数 r（GMN，否则用 IMO；k = 3.75 · log10 r，按 ZHR 加权）提出 k 值，并在应用前请求确认。
+LI|计数来源：默认为 Collm（雷达 36.2 MHz）。若您的电台距日本 3500 km 以内，还会出现“日本实时”选项（丰川的 JA2SDA 和大津的 JE3AKE 信标，53 MHz），使用大垣每 10 分钟发布的 HROFFT 自动计数；选择会被保存。
+LI|日本：HRO 月度计数（IPRMO）...：打开显示 RMOJ 月度文件中日本观测者逐时人工计数的窗口。选择月份和观测者；“从 IPRMO 更新”下载新的月份。第一张图是换算到您频率的每 UTC 小时月平均，第二张是每日总数。
 LI|从磁盘载入 RMOB 文件 和 由 RMOB 文件推算指数：读取 RMOB 月度文件，并根据与 Collm 共同的时段推算 k。
 LI|RMOB 观测者、立即下载 RMOB 和 每 5 分钟自动下载：自动下载默认关闭，只有在获得 RMOB 许可后才能开启。这些命令位于“设置”标签页。
 H2|8.2 结果
 LI|昨天和今天的图表：Collm 的每小时流星数、换算到你的频率的数值，以及（如已载入）RMOB 计数。
 LI|未来 24 小时的预报：取前一天同一时刻的数值，按路径上流星雨指数的变化进行修正。
 LI|带评价的表格：相对于 24 小时平均值为好、中或差。
+TAG|NOTA|大垣的自动计数高于人工计数：它们是相对值。要校准，请在日本窗口中与同一信标的 RMOJ 月度文件比较。
 TAG|NOTA|反射的持续时间遵循“几何与路径损耗”中“各波段之间的 ping 持续时间”的选择；在前向散射中，持续时间还随路径中点处的 sec²φ 增加。
 H1|9. 实况与实时数据
 H2|9.1 实时通信
@@ -228,6 +232,7 @@ LI|sciami.csv、massimi_imo.csv、ant_radiante.csv：流星雨星表和反日点
 LI|flusso_collm.csv、quote_collm.csv：Collm 雷达的存档；radar/：最新图像、RMOB 文件和实时数据源的数据；fonti_radar.csv：数据源地址，可逐个启用。
 LI|cataloghi/：IAU MDC 星表；radar/diretta/：GMN 和 CMOR 数据。
 LI|call3.txt：网格坐标存档；spot_ms/：收集到的流星余迹散射 spot；adif_quadrati.csv：来自 ADIF 的方格。
+LI|radar/rmoj/：日本的 RMOJ 月度文件；radar/hro_ogaki_*.csv：最近 3 天的大垣计数；radar/gfs_*.json：用于折射的 GFS 廓线（有效 3 小时）。
 LI|efficienza_spiegazione.*、spiegazione/、manuale_uso.*、manuale_uso/：技术文档。
 LI|backup/：被更新替换的文件的副本；aggiornamento/：下载的软件包（重新启动时删除）。
 H2|13.3 “设置”标签页
@@ -237,6 +242,7 @@ LI|controlla_aggiornamenti=0：不检查新版本；aggiornamenti_salta：已跳
 LI|lobo_diagramma、angolo_beta、lunghezza_scie、giudizio_classico：计算相关的复选框。
 LI|raggio_iniziale（0 = ITU 值的两倍，1 = ITU，2 = 不计入），durata_ping（0 = λ²，1 = 观测值）。
 LI|rmob_osservatore、rmob_automatico、rmob_url：RMOB。
+LI|rifrazione_gfs（0 = 关闭，1 = 开启）、prev_fonte（collm、toyokawa、otsu）、rmoj_osservatore：折射与日本来源。
 LI|psk_rimando=0：关闭将经 UDP 收到的 MS 解码（MSK144、FSK441、PSK2K、JTMS）转发到 PSKReporter。默认开启并自动工作：如果你的呼号在向 PSKReporter 发送报告的电台中缺席超过 20 分钟（数字模式软件没有发送），YA-MS 每 5 分钟以你为接收方发送你解码到的 MS 电台；数字模式软件一旦恢复发送，YA-MS 即停止。UDP 控制台中的一行会提示何时开始、何时停止。如果 WSJT-X.ini（或 JTDX.ini）中关闭了向 PSKReporter 发送，YA-MS 会立即转发，无需等待 20 分钟。
 TAG|ATTENZIONE|只能在程序关闭时修改 config.ini：YA-MS 在关闭时会重写该文件。
 H1|14. 典型操作

@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB palub, et **automaatprogrammid selle faile ei laadiks**. Seetõttu on **automaatne allalaadimine** alguses **väljas** ja selle tohib sisse lülitada **ainult pärast RMOB-ilt loa küsimist**. Ilma selleta saad alati kasutada nuppu **Laadi RMOB-fail kettalt...** või vajutada vajadusel **Laadi RMOB kohe alla**.
 
 Allalaadimisaadress on mall failis `config.ini` (võti `rmob_url`, vaikimisi `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, kus `{NOME}` on vaatleja ning `{MMAAAA}` kuu ja aasta); alla laaditud failid hoitakse kaustas `data/radar/`.
+
+## HRO-loendused Jaapanist (IPRMO ja Ogaki)
+
+Loenduste allikas: vaikimisi Collm (radar 36,2 MHz). Kui sinu jaam on Jaapanist kuni 3500 km kaugusel, ilmuvad ka kirjed "Jaapan otse" (majakad JA2SDA Toyokawas ja JE3AKE Otsus, 53 MHz) HROFFT-i automaatloendustega, mida Ogaki avaldab iga 10 minuti järel; valik salvestatakse.
+
+Jaapan: igakuised HRO-loendused (IPRMO)...: avab akna Jaapani vaatlejate käsitsi tehtud tunniloendustega RMOJ-kuufailidest. Vali kuu ja vaatleja; Uuenda IPRMO-st laadib uued kuud. Esimene graafik on kuu keskmine UTC-tunni kaupa, teisendatud sinu sagedusele, teine päevasummad.
+
+HROFFT-i automaatloendus annab 30 kuni 130 kaja iga 10 minuti kohta, palju rohkem kui RMOJ-failide käsitsi loendused, sest loendab ka nõrku kajasid ja häireid: see on suhteline väärtus, mis tuleb kalibreerida sama majaka kuufailidega. 3500 km piir jätab allika Ida-Aasia jaamadele, mis näevad samu radiante samadel tundidel; Euroopa jaoks jääb Collm.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

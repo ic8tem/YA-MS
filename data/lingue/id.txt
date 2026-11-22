@@ -877,3 +877,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	Bahasa juga ada di 
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - tabel gain Yagi untuk 50, 144 dan 432 MHz (dxmaps.com): garis rata-rata per band,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, hlm. 130-138: kurva gain terhadap panjang boom,\n    2,35 dB per oktaf, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, menuliskannya sebagai 7,773 log + 11,43); untuk perbandingan
 (stima poco precisa: boom fuori dal campione VE7BQH)	(perkiraan kasar: boom di luar sampel VE7BQH)
+Aggiorna da IPRMO	Perbarui dari IPRMO
+Collm, Germania (radar 36,2 MHz)	Collm, Jerman (radar 36,2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	Hitungan manual pengamat Jepang (HROFFT) atas gema dari suar HAM untuk pengamatan meteor, diterbitkan IPRMO setiap bulan dengan keterlambatan beberapa minggu: dipakai untuk kalibrasi dan riwayat, bukan untuk prakiraan langsung. Setiap pengamat memiliki antena dan penerima berbeda: bandingkan bulan-bulan dari pengamat yang sama, bukan pengamat berbeda. Konversi dengan aturan SM6FHZ (λ^k, faktor K) yang diatur di tab ini.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	Hitungan awal prakiraan. Entri Jepang (hitungan otomatis HROFFT di Ogaki pada suar HAM 53 MHz, setiap 10 menit) hanya muncul bila QTH berada dalam 3500 km dari Jepang.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	Hitungan per jam pengamat Jepang pada suar HAM 53 MHz (JA2SDA, JE3AKE, JJ1RLQ) dari berkas bulanan IPRMO: rata-rata per jam UTC yang dikonversi ke frekuensi tujuan, dan total harian.
+Fonte dei conteggi	Sumber hitungan
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	Sumber: {0}. Hitungan otomatis HROFFT setiap 10 menit, sedikit lebih tinggi daripada hitungan manual: nilai relatif, perlu dikalibrasi dengan berkas bulanan RMOJ (tombol Jepang).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS tidak tersedia ({0}): memakai atmosfer acuan ITU-R P.453
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	Jepang langsung: {0} {1} {2:F3} MHz (Ogaki)
+Giappone: conteggi HRO mensili (IPRMO)	Jepang: hitungan HRO bulanan (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	Jepang: hitungan HRO bulanan (IPRMO)...
+Media del mese per ora UTC - {0}	Rata-rata bulan per jam UTC - {0}
+Mese	Bulan
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	Tidak ada data dari Ogaki: menunggu gambar HROFFT (satu setiap 10 menit).
+Nessun dato: premi Aggiorna da IPRMO.	Tidak ada data: tekan Perbarui dari IPRMO.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	Jam valid {0}, di antaranya perkiraan (kurang dari 60 menit) {1}; jam hilang atau terganggu {2}; jam dengan E sporadis dikecualikan {3}.
+Osservatore	Pengamat
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	Pengamat: {0} ({1}). Suar: {2} {3} ({4:F3} MHz). Tabel dalam {5}, dikonversi ke UTC.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	Refraksi        +{0:F2}° ke titik tengah, jangkauan pada ketinggian jejak +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	Refraksi        tidak diterapkan (kotak tidak dicentang): geometri sinar lurus
+Rifrazione troposferica (GFS)	Refraksi troposfer (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	Mati saat mulai (nilai hati-hati). Aktif: program mengunduh dari model GFS profil suhu dan kelembapan di atas kedua stasiun dan menelusuri sinar hingga ketinggian jejak. Titik rendah tampak sedikit lebih tinggi dan zona bersama melebar (sekitar 60-70 km di cakrawala); di atas 10° efeknya dapat diabaikan. Tidak memakai k = 4/3, yang berlaku untuk sinar yang seluruhnya di dalam troposfer.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	Total harian (hari dengan sedikitnya 20 jam data, disetarakan ke 24 jam)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	Konversi: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	Jalur suar → pengamat {0:F0} km, titik tengah {1}.
+atmosfera di riferimento ITU-R P.453	atmosfer acuan ITU-R P.453
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	hitungan otomatis HROFFT di Ogaki, suar {0} {1}
+dati GFS incompleti	data GFS tidak lengkap
+echi al giorno (UTC)	gema per hari (UTC)
+echi/giorno	gema/hari
+echi/ora	gema/jam
+ora fuori dalla previsione GFS	waktu di luar prakiraan GFS
+profili {0} su {1} e {2}	profil {0} di atas {1} dan {2}
+scarico...	mengunduh...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	{0} gambar dibaca sekarang, terakhir pukul {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} bulan tersedia, {1} diunduh sekarang

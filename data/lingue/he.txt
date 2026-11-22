@@ -877,3 +877,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	השפה נמצאת
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - טבלאות הגבר של אנטנות Yagi ל-50, 144 ו-432 MHz (dxmaps.com): קו ישר ממוצע לכל תחום,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, עמ' 130-138: עקומת הגבר מול אורך הבום,\n    2,35 dB לאוקטבה, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, מביא אותה כ-7,773 log + 11,43); להשוואה
 (stima poco precisa: boom fuori dal campione VE7BQH)	(הערכה גסה: הבום מחוץ למדגם של VE7BQH)
+Aggiorna da IPRMO	עדכון מ-IPRMO
+Collm, Germania (radar 36,2 MHz)	קולם, גרמניה (מכ"ם 36,2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	ספירות ידניות של צופים יפנים (HROFFT) של הדים ממשואות חובבים לתצפית מטאורים, ש-IPRMO מפרסם מדי חודש באיחור של כמה שבועות: הן משמשות לכיול ולהיסטוריה, לא לתחזית החיה. לכל צופה אנטנה ומקלט שונים: השוו חודשים של אותו צופה, לא צופים שונים. המרה לפי כללי SM6FHZ (λ^k, מקדם K) שנקבעו בלשונית זו.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	ספירות המוצא של התחזית. פריטי יפן (ספירה אוטומטית של HROFFT באוגאקי על משואות החובבים ב-53 MHz, כל 10 דקות) מופיעים רק אם ה-QTH בטווח 3500 km מיפן.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	ספירות שעתיות של צופים יפנים על משואות החובבים ב-53 MHz (JA2SDA, JE3AKE, JJ1RLQ) מקובצי IPRMO החודשיים: ממוצע לשעת UTC מומר לתדר היעד, וסיכומים יומיים.
+Fonte dei conteggi	מקור הספירות
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	מקור: {0}. ספירה אוטומטית של HROFFT כל 10 דקות, מעט גבוהה מהספירה הידנית: ערך יחסי שיש לכייל עם קובצי RMOJ החודשיים (כפתור יפן).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS לא זמין ({0}): משתמש באטמוספרת הייחוס ITU-R P.453
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	יפן בזמן אמת: {0} {1} {2:F3} MHz (אוגאקי)
+Giappone: conteggi HRO mensili (IPRMO)	יפן: ספירות HRO חודשיות (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	יפן: ספירות HRO חודשיות (IPRMO)...
+Media del mese per ora UTC - {0}	ממוצע חודשי לפי שעת UTC - {0}
+Mese	חודש
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	אין נתונים מאוגאקי: ממתין לתמונות HROFFT (אחת כל 10 דקות).
+Nessun dato: premi Aggiorna da IPRMO.	אין נתונים: לחצו על עדכון מ-IPRMO.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	שעות תקפות {0}, מהן משוערות (פחות מ-60 דקות) {1}; שעות אבודות או מופרעות {2}; שעות עם E ספורדי שהוצאו {3}.
+Osservatore	צופה
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	צופה: {0} ({1}). משואה: {2} {3} ({4:F3} MHz). טבלה ב-{5}, הומרה ל-UTC.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	שבירה           +{0:F2}° לכיוון נקודת האמצע, טווח בגובה השובלים +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	שבירה           לא מיושמת (התיבה כבויה): גאומטריה של קרניים ישרות
+Rifrazione troposferica (GFS)	שבירה טרופוספרית (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	כבויה בהפעלה (ערך זהיר). מופעלת: התוכנה מורידה ממודל GFS את פרופיל הטמפרטורה והלחות מעל שתי התחנות ועוקבת אחר הקרן עד גובה השובלים. נקודות נמוכות נראות מעט גבוהות יותר והאזור המשותף מתרחב (כ-60-70 km באופק); מעל 10° ההשפעה זניחה. לא נעשה שימוש ב-k = 4/3, שתקף לקרניים העוברות כולן בתוך הטרופוספרה.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	סיכום יומי (ימים עם 20 שעות נתונים לפחות, מנורמל ל-24 שעות)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	המרה: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	מסלול משואה ← צופה {0:F0} km, נקודת אמצע {1}.
+atmosfera di riferimento ITU-R P.453	אטמוספרת הייחוס ITU-R P.453
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	ספירה אוטומטית של HROFFT באוגאקי, משואה {0} {1}
+dati GFS incompleti	נתוני GFS חסרים
+echi al giorno (UTC)	הדים ליום (UTC)
+echi/giorno	הדים/יום
+echi/ora	הדים/שעה
+ora fuori dalla previsione GFS	זמן מחוץ לתחזית GFS
+profili {0} su {1} e {2}	פרופילי {0} מעל {1} ו-{2}
+scarico...	מוריד...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	{0} תמונות נקראו עכשיו, האחרונה ב-{1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} חודשים זמינים, {1} הורדו עכשיו

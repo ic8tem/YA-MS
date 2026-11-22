@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Verificação:** H = 89,5 km, e = 0° → **1062 km**. No exemplo do artigo (JN44BB–IO53RT) o desenho coloca os cruzamentos do horizonte a cerca de 870 km das estações, o que corresponde a um lóbulo elevado cerca de 2° (865 km).
 
+## Refração troposférica (GFS)
+
+Refração troposférica (caixa "Refração troposférica (GFS)", desmarcada no arranque). Com a caixa marcada o programa descarrega do Open-Meteo o perfil do modelo GFS sobre as duas estações (pressão, temperatura e humidade à superfície e nos níveis de 1000 a 500 hPa, na hora mais próxima dentro de 6 horas), obtém as altitudes dos níveis com a equação hipsométrica (temperatura virtual) e a refratividade com a fórmula da Recomendação UIT-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+com P e e (pressão de vapor, da fórmula de Magnus) em hPa e T em kelvin. Acima do último nível N decresce de forma exponencial com altura de escala de 7,35 km. Se o GFS não responder usa-se a atmosfera de referência da P.453, N = 315·exp(−h/7,35), e o relatório indica-o.
+
+O raio é traçado através de camadas esféricas finas com a lei de Snell em forma esférica (n·r·cos e constante) até à altitude dos rastos; daí resultam o alcance à altitude H e a correção da elevação:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Exemplo com a atmosfera de referência e rastos a 89,5 km: a 0° o alcance passa de 1061,5 para cerca de 1133 km (+72 km) e o ponto aparece 0,62° mais alto; a 4° o alcance cresce 14 km e a correção vale 0,20°; acima de 10° o efeito é desprezável. A correção aplica-se à elevação para o ponto médio, ao raio da zona comum, aos hot spots e aos pontos do mapa de eficiência; os pontos abaixo do horizonte refratado são descartados. O relatório indica-a na linha "Refração".
+
+O raio terrestre equivalente k = 4/3 vale para raios que ficam nos primeiros quilómetros da troposfera, onde N diminui cerca de 40 unidades por km. O raio para um rasto a 90 km atravessa toda a troposfera e, acima de 10-15 km, onde N é quase nulo, segue quase reto: com k = 4/3 em toda a subida o alcance a 0° seria de cerca de 1230 km, quase 100 km mais do que o raio traçado. Por isso o programa traça o raio no perfil GFS, como faz o LIVETROPOVHF do autor para a propagação troposférica, em vez de usar k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Limites da zona comum
 
 **Fonte:** o artigo localiza os cruzamentos das curvas onde o horizonte de cada estação encontra a camada E: os cruzamentos de dois círculos de raio angular ρ = d_H/r centrados em A e B [19–20]:

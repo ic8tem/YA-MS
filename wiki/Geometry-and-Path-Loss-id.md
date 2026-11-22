@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Verifikasi:** H = 89,5 km, e = 0° → **1062 km**. Pada contoh dalam artikel (JN44BB–IO53RT) gambar menempatkan perpotongan cakrawala sekitar 870 km dari stasiun, yang sesuai dengan lobus yang dinaikkan sekitar 2° (865 km).
 
+## Refraksi troposfer (GFS)
+
+Refraksi troposfer (kotak "Refraksi troposfer (GFS)", mati saat mulai). Dengan kotak dicentang, program mengunduh dari Open-Meteo profil model GFS di atas kedua stasiun (tekanan, suhu, dan kelembapan di permukaan dan pada level 1000 hingga 500 hPa, pada jam terdekat dalam 6 jam), menghitung ketinggian level dengan persamaan hipsometrik (suhu virtual) dan refraktivitas dengan rumus Rekomendasi ITU-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+dengan P dan e (tekanan uap, dari rumus Magnus) dalam hPa dan T dalam kelvin. Di atas level teratas N menurun secara eksponensial dengan tinggi skala 7,35 km. Bila GFS tidak menjawab, dipakai atmosfer acuan P.453, N = 315·exp(−h/7,35), dan laporan menyebutkannya.
+
+Sinar ditelusuri melalui kulit bola tipis dengan hukum Snell dalam bentuk bola (n·r·cos e konstan) sampai ketinggian jejak; dari situ diperoleh jangkauan pada ketinggian H dan koreksi elevasi:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Contoh dengan atmosfer acuan dan jejak pada 89,5 km: pada 0° jangkauan naik dari 1061,5 menjadi sekitar 1133 km (+72 km) dan titik tampak 0,62° lebih tinggi; pada 4° jangkauan bertambah 14 km dan koreksinya 0,20°; di atas 10° efeknya dapat diabaikan. Koreksi diterapkan pada elevasi ke titik tengah, jari-jari zona bersama, hot spot, dan titik-titik peta efisiensi; titik di bawah cakrawala terbias dibuang. Laporan memberikannya pada baris "Refraksi".
+
+Jari-jari Bumi ekuivalen k = 4/3 berlaku untuk sinar yang tetap berada di beberapa kilometer pertama troposfer, tempat N turun sekitar 40 satuan per km. Sinar menuju jejak pada 90 km melintasi seluruh troposfer dan di atas 10-15 km, tempat N hampir nol, berlanjut hampir lurus: dengan k = 4/3 sepanjang pendakian, jangkauan pada 0° akan sekitar 1230 km, hampir 100 km lebih jauh daripada sinar yang ditelusuri. Karena itu program menelusuri sinar dalam profil GFS, seperti yang dilakukan LIVETROPOVHF milik penulis untuk propagasi troposfer, alih-alih memakai k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Batas zona bersama
 
 **Sumber:** artikel menentukan perpotongan kurva tempat cakrawala tiap stasiun bertemu lapisan E: perpotongan dua lingkaran berjari-jari sudut ρ = d_H/r yang berpusat di A dan B [19–20]:

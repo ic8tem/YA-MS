@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB, **otomatik programların dosyalarını çekmemesini** ister. Bu nedenle **otomatik indirme** başlangıçta **kapalıdır** ve **yalnızca RMOB'dan izin istedikten sonra** etkinleştirilmelidir. İzin olmadan da gerektiğinde her zaman **Diskten RMOB dosyası yükle...** seçeneğini kullanabilir ya da **RMOB'u şimdi indir** düğmesine basabilirsiniz.
 
 İndirme adresi `config.ini` içinde bir şablondur (anahtar `rmob_url`, varsayılan `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`; burada `{NOME}` gözlemci, `{MMAAAA}` ay ve yıldır); indirilen dosyalar `data/radar/` içinde saklanır.
+
+## Japonya'dan HRO sayımları (IPRMO ve Ogaki)
+
+Sayımların kaynağı: varsayılan olarak Collm (radar 36,2 MHz). İstasyonunuz Japonya'ya 3500 km'den yakınsa "Japonya canlı" seçenekleri de görünür (Toyokawa'da JA2SDA ve Otsu'da JE3AKE işaretçileri, 53 MHz); bunlar Ogaki'nin her 10 dakikada yayımladığı otomatik HROFFT sayımlarıdır; seçim kaydedilir.
+
+Japonya: aylık HRO sayımları (IPRMO)...: RMOJ aylık dosyalarından Japon gözlemcilerin saatlik elle sayımlarını gösteren pencereyi açar. Ayı ve gözlemciyi seçin; IPRMO'dan güncelle yeni ayları indirir. İlk grafik frekansınıza aktarılmış UTC saati başına ay ortalaması, ikincisi günlük toplamlardır.
+
+Otomatik HROFFT sayımı her 10 dakikada 30 ile 130 arasında yankı verir; zayıf yankıları ve parazitleri de saydığı için RMOJ dosyalarındaki elle sayımlardan çok daha fazladır: göreli bir değerdir, aynı işaretçinin aylık dosyalarıyla kalibre edilmelidir. 3500 km sınırı kaynağı, aynı radyantları aynı saatlerde gören Doğu Asya istasyonlarına ayırır; Avrupa için Collm geçerlidir.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

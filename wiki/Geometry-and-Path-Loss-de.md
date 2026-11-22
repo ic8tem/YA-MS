@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Prüfung:** H = 89,5 km, e = 0° → **1062 km**. Im Beispiel des Artikels (JN44BB–IO53RT) setzt die Zeichnung die Horizontschnittpunkte etwa 870 km von den Stationen entfernt, was einer um etwa 2° angehobenen Keule entspricht (865 km).
 
+## Troposphärische Refraktion (GFS)
+
+Troposphärische Refraktion (Kästchen "Troposphärische Refraktion (GFS)", beim Start aus). Bei eingeschaltetem Kästchen lädt das Programm von Open-Meteo das Profil des GFS-Modells über beiden Stationen (Druck, Temperatur und Feuchte am Boden und auf den Niveaus von 1000 bis 500 hPa, zur nächstgelegenen Stunde innerhalb von 6 Stunden), bestimmt die Höhen der Niveaus mit der barometrischen Höhenformel (virtuelle Temperatur) und die Refraktivität mit der Formel der Empfehlung ITU-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+mit P und e (Dampfdruck, aus der Magnus-Formel) in hPa und T in Kelvin. Über dem obersten Niveau nimmt N exponentiell mit einer Skalenhöhe von 7,35 km ab. Antwortet das GFS nicht, wird die Referenzatmosphäre der P.453 verwendet, N = 315·exp(−h/7,35), und der Bericht sagt es.
+
+Der Strahl wird durch dünne Kugelschalen mit dem Snelliusschen Gesetz in Kugelform (n·r·cos e konstant) bis zur Spurhöhe verfolgt; daraus ergeben sich die Reichweite in der Höhe H und die Korrektur der Elevation:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Beispiel mit der Referenzatmosphäre und Spuren in 89,5 km: bei 0° steigt die Reichweite von 1061,5 auf etwa 1133 km (+72 km) und der Punkt erscheint 0,62° höher; bei 4° wächst die Reichweite um 14 km und die Korrektur beträgt 0,20°; über 10° ist der Effekt vernachlässigbar. Die Korrektur gilt für die Elevation zum Mittelpunkt, für den Radius der gemeinsamen Zone, für die Hot Spots und für die Punkte der Effizienzkarte; Punkte unter dem refraktierten Horizont werden verworfen. Der Bericht nennt sie in der Zeile "Refraktion".
+
+Der äquivalente Erdradius k = 4/3 gilt für Strahlen, die in den ersten Kilometern der Troposphäre bleiben, wo N um etwa 40 Einheiten pro km abnimmt. Der Strahl zu einer Spur in 90 km durchquert die ganze Troposphäre und verläuft über 10-15 km, wo N fast null ist, nahezu gerade: mit k = 4/3 auf dem ganzen Aufstieg wäre die Reichweite bei 0° etwa 1230 km, fast 100 km mehr als beim verfolgten Strahl. Deshalb verfolgt das Programm den Strahl im GFS-Profil, wie es LIVETROPOVHF des Autors für die troposphärische Ausbreitung tut, statt k = 4/3 zu verwenden.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Grenzen der gemeinsamen Zone
 
 **Quelle:** Der Artikel bestimmt die Schnittpunkte der Kurven, an denen der Horizont jeder Station die E-Schicht trifft: die Schnittpunkte zweier Kreise mit dem Winkelradius ρ = d_H/r um A und B [19–20]:

@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Pārbaude:** H = 89,5 km, e = 0° → **1062 km**. Raksta piemērā (JN44BB–IO53RT) zīmējumā horizonta krustpunkti ir ap 870 km no stacijām, kas atbilst ziedlapiņai, kas pacelta par apmēram 2° (865 km).
 
+## Troposfēras refrakcija (GFS)
+
+Troposfēras refrakcija (rūtiņa "Troposfēras refrakcija (GFS)", palaižot izslēgta). Ar ieslēgtu rūtiņu programma no Open-Meteo lejupielādē GFS modeļa profilu virs abām stacijām (spiedienu, temperatūru un mitrumu pie zemes un līmeņos no 1000 līdz 500 hPa, tuvākajai stundai 6 stundu robežās), līmeņu augstumus aprēķina ar hipsometrisko vienādojumu (virtuālā temperatūra), bet refraktivitāti – ar Ieteikuma ITU-R P.453 formulu:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+kur P un e (tvaika spiediens, pēc Magnusa formulas) ir hPa, bet T – kelvinos. Virs augšējā līmeņa N samazinās eksponenciāli ar mēroga augstumu 7,35 km. Ja GFS neatbild, izmanto P.453 atsauces atmosfēru N = 315·exp(−h/7,35), un pārskats to norāda.
+
+Staru izseko caur plāniem sfēriskiem slāņiem pēc Snella likuma sfēriskā formā (n·r·cos e konstants) līdz pēdu augstumam; no tā iegūst sniedzamību augstumā H un pacēluma leņķa labojumu:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Piemērs ar atsauces atmosfēru un pēdām 89,5 km augstumā: pie 0° sniedzamība pieaug no 1061,5 līdz aptuveni 1133 km (+72 km), un punkts šķiet par 0,62° augstāk; pie 4° sniedzamība pieaug par 14 km, labojums ir 0,20°; virs 10° ietekme ir niecīga. Labojumu piemēro pacēluma leņķim uz viduspunktu, kopīgās zonas rādiusam, karstajiem punktiem un efektivitātes kartes punktiem; punktus zem lauztā horizonta atmet. Pārskats to sniedz rindā "Refrakcija".
+
+Ekvivalentais Zemes rādiuss k = 4/3 attiecas uz stariem, kas paliek troposfēras pirmajos kilometros, kur N samazinās par aptuveni 40 vienībām uz km. Stars uz pēdu 90 km augstumā šķērso visu troposfēru un virs 10-15 km, kur N ir gandrīz nulle, turpinās gandrīz taisni: ar k = 4/3 visā kāpumā sniedzamība pie 0° būtu aptuveni 1230 km, gandrīz par 100 km vairāk nekā izsekotajam staram. Tāpēc programma izseko staru GFS profilā, kā to dara autora LIVETROPOVHF troposfēras izplatībai, nevis izmanto k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Kopējās zonas robežas
 
 **Avots:** raksts nosaka līkņu krustpunktus, kur katras stacijas horizonts satiekas ar E slāni: divu apļu ar leņķisko rādiusu ρ = d_H/r un centriem A un B krustpunkti [19–20]:

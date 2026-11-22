@@ -878,3 +878,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	Limba este și sus 
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - tabele de câștig pentru antene Yagi la 50, 144 și 432 MHz (dxmaps.com): dreaptă medie pe bandă,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curba câștig/lungimea boomului,\n    2,35 dB pe octavă, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, o dă ca 7,773 log + 11,43); pentru comparație
 (stima poco precisa: boom fuori dal campione VE7BQH)	(estimare aproximativă: boom în afara eșantionului VE7BQH)
+Aggiorna da IPRMO	Actualizează de la IPRMO
+Collm, Germania (radar 36,2 MHz)	Collm, Germania (radar 36,2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	Numărători manuale ale observatorilor japonezi (HROFFT) ale ecourilor de la balizele HAM pentru observarea meteorilor, publicate lunar de IPRMO cu câteva săptămâni întârziere: servesc la calibrare și istoric, nu la previziunea în direct. Fiecare observator are altă antenă și alt receptor: compară lunile aceluiași observator, nu observatori diferiți. Transpunere cu regulile SM6FHZ (λ^k, factorul K) setate în această filă.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	Numărătorile de pornire ale previziunii. Intrările pentru Japonia (numărare automată HROFFT la Ogaki pe balizele HAM de 53 MHz, la fiecare 10 minute) apar doar dacă QTH-ul se află la cel mult 3500 km de Japonia.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	Numărători orare ale observatorilor japonezi pe balizele HAM de 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), din fișierele lunare IPRMO: media pe oră UTC transpusă la frecvența de sosire și totaluri zilnice.
+Fonte dei conteggi	Sursa numărătorilor
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	Sursa: {0}. Numărare automată HROFFT la fiecare 10 minute, puțin mai mare decât cea manuală: valoare relativă, de calibrat cu fișierele lunare RMOJ (butonul Japonia).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS indisponibil ({0}): folosesc atmosfera de referință ITU-R P.453
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	Japonia în direct: {0} {1} {2:F3} MHz (Ogaki)
+Giappone: conteggi HRO mensili (IPRMO)	Japonia: numărători HRO lunare (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	Japonia: numărători HRO lunare (IPRMO)...
+Media del mese per ora UTC - {0}	Media lunii pe oră UTC - {0}
+Mese	Luna
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	Nicio dată de la Ogaki: aștept imaginile HROFFT (una la fiecare 10 minute).
+Nessun dato: premi Aggiorna da IPRMO.	Nicio dată: apasă Actualizează de la IPRMO.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	Ore valide {0}, din care estimate (sub 60 de minute) {1}; ore pierdute sau perturbate {2}; ore cu E sporadic excluse {3}.
+Osservatore	Observator
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	Observator: {0} ({1}). Baliză: {2} {3} ({4:F3} MHz). Tabel în {5}, convertit în UTC.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	Refracție       +{0:F2}° spre punctul median, rază la înălțimea urmelor +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	Refracție       neaplicată (căsuță debifată): geometrie cu raze drepte
+Rifrazione troposferica (GFS)	Refracție troposferică (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	Debifată la pornire (valoare prudentă). Bifată: programul descarcă din modelul GFS profilul de temperatură și umiditate deasupra celor două stații și urmărește raza până la înălțimea urmelor. Punctele joase se văd puțin mai sus și zona comună se lărgește (circa 60-70 km la orizont); peste 10° efectul este neglijabil. Nu folosește k = 4/3, care se aplică razelor aflate în întregime în troposferă.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	Total zilnic (zile cu cel puțin 20 de ore de date, raportate la 24 de ore)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	Transpunere: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	Traseu baliză → observator {0:F0} km, punct median {1}.
+atmosfera di riferimento ITU-R P.453	atmosfera de referință ITU-R P.453
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	numărare automată HROFFT la Ogaki, baliza {0} {1}
+dati GFS incompleti	date GFS incomplete
+echi al giorno (UTC)	ecouri pe zi (UTC)
+echi/giorno	ecouri/zi
+echi/ora	ecouri/oră
+ora fuori dalla previsione GFS	oră în afara previziunii GFS
+profili {0} su {1} e {2}	profiluri {0} deasupra {1} și {2}
+scarico...	se descarcă...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	{0} imagini citite acum, ultima la {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} luni disponibile, {1} descărcate acum

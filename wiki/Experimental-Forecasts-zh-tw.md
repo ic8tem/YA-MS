@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB 要求**自動程式不要抓取其檔案**。因此**自動下載**在初始時是**關閉**的，並且**只有在徵得 RMOB 許可之後**才應啟用。即使沒有許可，您也隨時可以使用**從磁碟載入 RMOB 檔案...**，或在需要時點選**立即下載 RMOB**。
 
 下載網址是 `config.ini` 中的一個範本（鍵 `rmob_url`，預設 `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`，其中 `{NOME}` 是觀測者，`{MMAAAA}` 是月份和年份）；下載的檔案儲存在 `data/radar/` 中。
+
+## 日本的 HRO 計數（IPRMO 與大垣）
+
+計數來源：預設為 Collm（雷達 36.2 MHz）。若您的電台距日本 3500 km 以內，還會出現「日本即時」選項（豐川的 JA2SDA 和大津的 JE3AKE 信標，53 MHz），使用大垣每 10 分鐘發布的 HROFFT 自動計數；選擇會被儲存。
+
+日本：HRO 月度計數（IPRMO）...：開啟顯示 RMOJ 月度檔案中日本觀測者逐時人工計數的視窗。選擇月份和觀測者；「從 IPRMO 更新」下載新的月份。第一張圖是換算到您頻率的每 UTC 小時月平均，第二張是每日總數。
+
+HROFFT 自動計數每 10 分鐘給出 30 到 130 個回波，遠多於 RMOJ 檔案的人工計數，因為它也計入弱回波和干擾：這是相對值，需用同一信標的月度檔案校準。3500 km 的限制使該來源只用於在相同時刻看到相同輻射點的東亞電台；歐洲仍使用 Collm。
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

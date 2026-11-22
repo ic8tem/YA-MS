@@ -64,6 +64,7 @@ H2|4.2 Röð 1: E-lag og loftnet
 LI|Hæð slóða km og frá ratsjá: hæð loftsteinaslóðanna. Þegar hakað er við „frá ratsjá“ er notuð algengasta hæðin sem Collm-ratsjáin mælir (venjulega 88-90 km); taktu hakið af til að slá hana inn handvirkt.
 LI|Hæðarhorn geisla °: hæðarhorn hámarks lóðrétta geislans í loftnetinu þínu. Stefnuloftnet sem stillt er á 0° hefur samt aðalgeislann nokkrum gráðum yfir sjóndeildarhring vegna endurvarps frá jörðinni: venjulega 3-8°, eftir hæð loftnetsins í bylgjulengdum.
 LI|geislamynstur loftnets: þegar kveikt er á því (sjálfgefið) gilda endurvarpspunktarnir með lóðréttri mögnun beggja loftnetanna: full í kringum hámark geislans og sífellt minni í átt að sjóndeildarhring og upp á við. Þegar slökkt er á því er hæðarhorn geislans skörp mörk: punktar sem sjást neðar teljast ekki með.
+LI|Veðrahvolfsljósbrot (GFS): óvirkt við ræsingu. Virkt sækir forritið úr GFS-líkaninu hita- og rakasnið yfir báðum stöðvum og tekur tillit til sveigju geislans upp í slóðahæð: lágir punktar sjást aðeins hærra og sameiginlega svæðið breikkar. Ef GFS svarar ekki notar það meðallofthjúp. Skýrsla flipans Rúmfræði og deyfing segir frá því í línunni "Ljósbrot".
 LI|Yagi-loftnet: bóma m: lengd bómunnar. Við hliðina skrifar forritið lengdina í bylgjulengdum, mögnunina (meðallína VE7BQH-taflna bandsins) og geislann við −3 dB láréttan og lóðréttan. Ef bóman er utan VE7BQH-úrtaks bandsins er matið ónákvæmt.
 LI|Heitur blettur frá miðpunkti km og sjálfv. (AMS): fjarlægð Hot A og Hot B frá miðpunktinum. Þegar hakað er við „sjálfv. (AMS)“ er fylgt töflu J. Richardson sem DJ5HG vitnar í (13° frávik við 1000 km, 10° yfir 1500 km); taktu hakið af til að slá inn 30-400 km handvirkt (MSHV notar 150 km).
 TAG|ATTENZIONE|Þegar slökkt er á „geislamynstur loftnets“ og geislinn er nokkrum gráðum ofar geta stöðvarnar tvær á langri leið lent í því að sjá engan sameiginlegan punkt í laginu: öll nýtnigildi verða 0 og viðvörunin „ENGIN SAMEIGINLEG SVÆÐI“ birtist ásamt þeim geisla eða þeirri hæð slóða sem þyrfti. Dæmi: JN70CN - JO76QP, 1791 km, geisli við 3°, slóðir í 88,5 km.
@@ -153,12 +154,15 @@ H2|8.1 Stýringarnar
 LI|Markmiðstíðni MHz: tíðni spárinnar.
 LI|Veldisvísir λ^k (3, SM6FHZ) og Stöðvarstuðull K (1): regla um tíðnina og leiðrétting fyrir stöðina þína.
 LI|k úr fjöldastuðlum: leggur til k út frá fjöldastuðlum r virku drífanna (GMN, annars IMO; k = 3,75 · log10 r, vegið með ZHR) og biður um staðfestingu áður en það er notað.
+LI|Uppruni talninga: sjálfgefið Collm (ratsjá 36,2 MHz). Ef stöðin þín er innan 3500 km frá Japan birtast einnig færslurnar "Japan beint" (vitarnir JA2SDA í Toyokawa og JE3AKE í Otsu, 53 MHz), með sjálfvirkum HROFFT-talningum sem Ogaki birtir á 10 mínútna fresti; valið er vistað.
+LI|Japan: mánaðarlegar HRO-talningar (IPRMO)...: opnar gluggann með klukkustundatalningum japanskra athugenda úr mánaðarskrám RMOJ. Veldu mánuð og athuganda; Uppfæra frá IPRMO sækir nýju mánuðina. Fyrra grafið er mánaðarmeðaltal á UTC-klukkustund umreiknað á þína tíðni, hið síðara dagssummur.
 LI|Hlaða RMOB-skrá af diski og Finna veldisvísinn út frá RMOB-skránni: lesa mánaðarlega RMOB-skrá og finna k út frá klukkustundunum sem eru sameiginlegar með Collm.
 LI|RMOB-athugandi, Sækja RMOB núna og sjálfvirk sókn á 5 mínútna fresti: slökkt er á sjálfvirku sókninni og aðeins má kveikja á henni með leyfi RMOB. Þessar skipanir eru í flipanum Stillingar.
 H2|8.2 Niðurstöðurnar
 LI|Grafið fyrir gærdaginn og daginn í dag: loftsteinar á klukkustund í Collm, gildi færð yfir á tíðnina þína og, ef þær hafa verið hlaðnar, RMOB-talningarnar.
 LI|Spáin fyrir næstu 24 klukkustundir: sama klukkustund daginn áður, leiðrétt fyrir breytingu á drífustuðli leiðarinnar.
 LI|Taflan með matinu: gott, miðlungs eða lélegt miðað við meðaltal 24 klukkustunda.
+TAG|NOTA|Sjálfvirku talningarnar frá Ogaki eru hærri en handtalningarnar: þetta eru afstæð gildi. Til að kvarða þær skaltu bera þær saman í Japans-glugganum við RMOJ-mánaðarskrár sama vita.
 TAG|NOTA|Lengd endurvarpanna fylgir valinu „Lengd pinga milli banda“ í Rúmfræði og deyfingu; í forward scatter eykst lengdin einnig með sec²φ í miðpunkti leiðarinnar.
 H1|9. Beint og rauntímagögn
 H2|9.1 Umferð í beinni
@@ -228,6 +232,7 @@ LI|sciami.csv, massimi_imo.csv, ant_radiante.csv: drífuskráin og staða Andsó
 LI|flusso_collm.csv, quote_collm.csv: söfn Collm-ratsjárinnar; radar/: nýjustu myndir, RMOB-skrár og gögn úr beinum gagnalindum; fonti_radar.csv: vistföng gagnalindanna, sem virkja má eina af annarri.
 LI|cataloghi/: IAU MDC-skráin; radar/diretta/: GMN- og CMOR-gögn.
 LI|call3.txt: locatorasafn; spot_ms/: söfnuð meteor scatter-spot; adif_quadrati.csv: reitir úr ADIF-skránni.
+LI|radar/rmoj/: RMOJ-mánaðarskrár frá Japan; radar/hro_ogaki_*.csv: talningar frá Ogaki síðustu 3 daga; radar/gfs_*.json: GFS-snið fyrir ljósbrot (gild í 3 klukkustundir).
 LI|efficienza_spiegazione.*, spiegazione/, manuale_uso.*, manuale_uso/: tæknilegu skjölin.
 LI|backup/: afrit af skrám sem uppfærsla skipti út; aggiornamento/: sóttur pakki (eytt við endurræsingu).
 H2|13.3 Flipinn Stillingar
@@ -237,6 +242,7 @@ LI|controlla_aggiornamenti=0: ekki leita að nýjum útgáfum; aggiornamenti_sal
 LI|lobo_diagramma, angolo_beta, lunghezza_scie, giudizio_classico: gátreitir útreikningsins.
 LI|raggio_iniziale (0 = tvöfalt ITU-gildi, 1 = ITU, 2 = undanskilið), durata_ping (0 = λ², 1 = mæld).
 LI|rmob_osservatore, rmob_automatico, rmob_url: RMOB.
+LI|rifrazione_gfs (0 = óvirkt, 1 = virkt), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: ljósbrot og japanskar heimildir.
 LI|psk_rimando=0: slekkur á áframsendingu til PSKReporter á MS-afkóðunum (MSK144, FSK441, PSK2K, JTMS) sem berast um UDP. Kveikt er á henni sjálfgefið og hún vinnur sjálf: ef kallmerkið þitt hefur vantað í meira en 20 mínútur meðal stöðva sem senda skýrslur til PSKReporter (stafræna forritið sendir ekki), sendir YA-MS á 5 mínútna fresti MS-stöðvarnar sem þú afkóðar, með þig sem móttakanda; um leið og stafræna forritið sendir aftur hættir YA-MS. Lína í UDP-stjórnborðinu segir hvenær hún byrjar og hættir. Ef slökkt er á sendingu til PSKReporter í WSJT-X.ini (eða JTDX.ini) sendir YA-MS strax áfram, án þess að bíða í 20 mínútur.
 TAG|ATTENZIONE|Breyttu config.ini aðeins þegar forritið er lokað: þegar YA-MS er lokað skrifar það skrána upp á nýtt.
 H1|14. Dæmigert verklag

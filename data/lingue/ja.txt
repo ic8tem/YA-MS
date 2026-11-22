@@ -879,3 +879,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	言語はタブの�
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - 50、144、432 MHz の八木の利得表 (dxmaps.com): バンドごとの平均直線、\n    50 MHz G(dBi) = 7.36 log(L/lambda) + 11.67; 144 MHz 8.27 log + 11.31; 432 MHz 8.68 log + 11.03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: ブーム長に対する利得曲線、\n    1 オクターブあたり 2.35 dB、G(dBi) = 7.81 log(L/lambda) + 11.35 (W8IO, w8io.com は 7.773 log + 11.43 と記載); 比較用
 (stima poco precisa: boom fuori dal campione VE7BQH)	(推定精度低: ブームが VE7BQH の標本範囲外)
+Aggiorna da IPRMO	IPRMO から更新
+Collm, Germania (radar 36,2 MHz)	コルム（ドイツ、レーダー 36.2 MHz）
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	日本の観測者が流星観測用アマチュア無線ビーコンのエコーを手で数えた値（HROFFT）で、IPRMO が数週間遅れで毎月公開しています。校正と記録用であり、リアルタイム予測用ではありません。観測者ごとにアンテナと受信機が異なるため、異なる観測者同士ではなく、同じ観測者の月どうしを比べてください。換算はこのタブで設定した SM6FHZ の規則（λ^k、係数 K）によります。
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	予測の元になる計数。日本の項目（大垣の HROFFT による 53 MHz アマチュア無線ビーコンの自動計数、10 分ごと）は、QTH が日本から 3500 km 以内のときだけ表示されます。
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	53 MHz アマチュア無線ビーコン（JA2SDA、JE3AKE、JJ1RLQ）に対する日本の観測者の時間別計数（IPRMO の月報ファイルから）：到着周波数に換算した UTC 時間ごとの平均と、日ごとの合計。
+Fonte dei conteggi	計数の出典
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	出典：{0}。HROFFT による 10 分ごとの自動計数で、手計数より少し多めです。相対値なので、RMOJ 月報ファイル（日本ボタン）で校正してください。
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS が使えません（{0}）：ITU-R P.453 の基準大気を使います
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	日本リアルタイム：{0} {1} {2:F3} MHz（大垣）
+Giappone: conteggi HRO mensili (IPRMO)	日本：HRO 月間計数（IPRMO）
+Giappone: conteggi HRO mensili (IPRMO)...	日本：HRO 月間計数（IPRMO）...
+Media del mese per ora UTC - {0}	UTC 時間ごとの月平均 - {0}
+Mese	月
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	大垣からのデータなし：HROFFT 画像を待っています（10 分ごとに 1 枚）。
+Nessun dato: premi Aggiorna da IPRMO.	データなし：「IPRMO から更新」を押してください。
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	有効な時間 {0}、うち推定（60 分未満）{1}；欠測または妨害の時間 {2}；スポラディック E のため除外した時間 {3}。
+Osservatore	観測者
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	観測者：{0}（{1}）。ビーコン：{2} {3}（{4:F3} MHz）。表は {5}、UTC に換算。
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	大気屈折        中間点方向 +{0:F2}°、流星痕高度での到達距離 +{1:F0} km（{2}）
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	大気屈折        適用なし（チェックなし）：直進光線の幾何
+Rifrazione troposferica (GFS)	対流圏屈折（GFS）
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	起動時はオフ（慎重側の値）。オン：GFS モデルから両局上空の気温・湿度プロファイルを取得し、流星痕の高度まで電波の経路を追跡します。低い点は少し高く見え、共通ゾーンが広がります（地平線で約 60-70 km）。10° を超えると影響は無視できます。対流圏内だけを進む電波に当てはまる k = 4/3 は使いません。
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	日合計（データが 20 時間以上ある日、24 時間に換算）
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	換算：x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}。
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	ビーコン → 観測者の経路 {0:F0} km、中間点 {1}。
+atmosfera di riferimento ITU-R P.453	ITU-R P.453 の基準大気
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	大垣の HROFFT 自動計数、ビーコン {0} {1}
+dati GFS incompleti	GFS データが不完全
+echi al giorno (UTC)	1 日あたりのエコー（UTC）
+echi/giorno	エコー/日
+echi/ora	エコー/時
+ora fuori dalla previsione GFS	GFS 予報の範囲外の時刻
+profili {0} su {1} e {2}	{1} と {2} 上空の {0} プロファイル
+scarico...	取得中...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	いま {0} 枚の画像を読み取り、最新は {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} か月分あり、いま {1} 件取得

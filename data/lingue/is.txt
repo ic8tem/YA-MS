@@ -877,3 +877,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	Tungumálið er lí
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - mögnunartöflur Yagi-loftneta fyrir 50, 144 og 432 MHz (dxmaps.com): meðallína fyrir hvert band,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, bls. 130-138: ferill mögnunar á móti bómulengd,\n    2,35 dB á áttund, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, gefur hann sem 7,773 log + 11,43); til samanburðar
 (stima poco precisa: boom fuori dal campione VE7BQH)	(ónákvæmt mat: bóman utan VE7BQH-úrtaksins)
+Aggiorna da IPRMO	Uppfæra frá IPRMO
+Collm, Germania (radar 36,2 MHz)	Collm, Þýskalandi (ratsjá 36,2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	Handtalningar japanskra athugenda (HROFFT) á bergmálum frá HAM-vitunum til loftsteinaathugana, birtar mánaðarlega af IPRMO með nokkurra vikna töf: þær nýtast til kvörðunar og sögu, ekki til beinnar spár. Hver athugandi hefur annað loftnet og viðtæki: berðu saman mánuði sama athuganda, ekki ólíka athugendur. Umreikningur með reglum SM6FHZ (λ^k, stuðull K) sem stilltar eru í þessum flipa.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	Upphafstalningar spárinnar. Japansfærslurnar (sjálfvirk HROFFT-talning í Ogaki á HAM-vitunum á 53 MHz, á 10 mínútna fresti) birtast aðeins ef QTH er innan 3500 km frá Japan.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	Klukkustundatalningar japanskra athugenda á HAM-vitunum á 53 MHz (JA2SDA, JE3AKE, JJ1RLQ) úr mánaðarskrám IPRMO: meðaltal á UTC-klukkustund umreiknað á komutíðnina, og dagssummur.
+Fonte dei conteggi	Uppruni talninga
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	Uppruni: {0}. Sjálfvirk HROFFT-talning á 10 mínútna fresti, aðeins hærri en handtalning: afstætt gildi sem kvarða þarf með RMOJ-mánaðarskránum (hnappurinn Japan).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS ekki tiltækt ({0}): nota viðmiðunarlofthjúp ITU-R P.453
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	Japan beint: {0} {1} {2:F3} MHz (Ogaki)
+Giappone: conteggi HRO mensili (IPRMO)	Japan: mánaðarlegar HRO-talningar (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	Japan: mánaðarlegar HRO-talningar (IPRMO)...
+Media del mese per ora UTC - {0}	Mánaðarmeðaltal á UTC-klukkustund - {0}
+Mese	Mánuður
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	Engin gögn frá Ogaki: bíð eftir HROFFT-myndunum (ein á 10 mínútna fresti).
+Nessun dato: premi Aggiorna da IPRMO.	Engin gögn: smelltu á Uppfæra frá IPRMO.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	Gildar klukkustundir {0}, þar af áætlaðar (undir 60 mínútum) {1}; tapaðar eða truflaðar klukkustundir {2}; klukkustundir með sporadísku E útilokaðar {3}.
+Osservatore	Athugandi
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	Athugandi: {0} ({1}). Viti: {2} {3} ({4:F3} MHz). Tafla í {5}, umreiknuð í UTC.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	Ljósbrot        +{0:F2}° að miðpunkti, drægni í slóðahæð +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	Ljósbrot        ekki notað (reitur óvirkur): rúmfræði með beinum geislum
+Rifrazione troposferica (GFS)	Veðrahvolfsljósbrot (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	Óvirkt við ræsingu (varfærið gildi). Virkt: forritið sækir úr GFS-líkaninu hita- og rakasnið yfir báðum stöðvum og rekur geislann upp í slóðahæð. Lágir punktar sjást aðeins hærra og sameiginlega svæðið breikkar (um 60-70 km við sjóndeildarhring); yfir 10° eru áhrifin hverfandi. Ekki er notað k = 4/3, sem á við geisla sem eru alfarið innan veðrahvolfsins.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	Dagssumma (dagar með að minnsta kosti 20 klukkustundum af gögnum, umreiknað í 24 klukkustundir)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	Umreikningur: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	Leið viti → athugandi {0:F0} km, miðpunktur {1}.
+atmosfera di riferimento ITU-R P.453	viðmiðunarlofthjúpur ITU-R P.453
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	sjálfvirk HROFFT-talning í Ogaki, viti {0} {1}
+dati GFS incompleti	ófullkomin GFS-gögn
+echi al giorno (UTC)	bergmál á dag (UTC)
+echi/giorno	bergmál/dag
+echi/ora	bergmál/klst.
+ora fuori dalla previsione GFS	tími utan GFS-spárinnar
+profili {0} su {1} e {2}	snið {0} yfir {1} og {2}
+scarico...	sæki...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	{0} myndir lesnar núna, síðasta kl. {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} mánuðir tiltækir, {1} sóttir núna

@@ -64,6 +64,7 @@ H2|4.2 1. sor: E-réteg és antenna
 LI|Nyommagasság km és a radarból: a meteornyomok magassága. Bejelölt „a radarból” esetén a Collm radar által mért leggyakoribb magasságot használja (általában 88-90 km); szüntesse meg a jelölést, ha kézzel szeretné megadni.
 LI|Lebeny emelkedése °: antennája függőleges lebenye maximumának emelkedési szöge. A 0°-ra állított irányantenna főlebenye a talajról való visszaverődés miatt mégis néhány fokkal a horizont fölött van: általában 3-8°, az antenna hullámhosszban kifejezett magasságától függően.
 LI|antenna iránykarakterisztika: bekapcsolva (alapértelmezés) a visszaverődési pontok a két antenna függőleges nyereségével súlyozva számítanak: teljes súllyal a lebeny maximuma körül, egyre kevésbé a horizont és felfelé haladva. Kikapcsolva a lebeny emelkedése éles határ: az alacsonyabban látott pontok nem számítanak.
+LI|Troposzférikus refrakció (GFS): induláskor kikapcsolva. Bekapcsolva a program letölti a GFS-modellből a két állomás fölötti hőmérséklet- és nedvességprofilt, és figyelembe veszi a sugár görbülését a nyomok magasságáig: az alacsony pontok kissé magasabbnak látszanak, és a közös zóna kiszélesedik. Ha a GFS nem válaszol, átlagos légkört használ. A Geometria és csillapítás jelentése a "Refrakció" sorban közli.
 LI|Yagi antenna: tartócső m: a tartócső hossza. Mellette a program kiírja a hosszt hullámhosszban, a nyereséget (a sáv VE7BQH-táblázatainak átlagegyenese) és a −3 dB-es nyalábot vízszintesen és függőlegesen. Ha a tartócső a sáv VE7BQH-mintáján kívül esik, a becslés durva.
 LI|Hot spot a felezőponttól km és auto (AMS): Hot A és Hot B távolsága a felezőponttól. Bejelölt „auto (AMS)” esetén J. Richardson DJ5HG által idézett táblázatát követi (13° eltérés 1000 km-nél, 10° 1500 km felett); szüntesse meg a jelölést, ha kézzel szeretne 30-400 km-t megadni (az MSHV 150 km-t használ).
 TAG|ATTENZIONE|Kikapcsolt „antenna iránykarakterisztika” és néhány fokos lebeny esetén egy hosszú útvonalon előfordulhat, hogy a két állomás nem lát közös pontot a rétegben: minden hatásfok 0, és megjelenik a „NINCS KÖZÖS ZÓNA” figyelmeztetés a szükséges lebennyel vagy nyommagassággal. Példa: JN70CN - JO76QP, 1791 km, lebeny 3°-on, nyomok 88,5 km-en.
@@ -153,12 +154,15 @@ H2|8.1 A vezérlők
 LI|Célfrekvencia MHz: az előrejelzés frekvenciája.
 LI|λ^k kitevő (3, SM6FHZ) és K állomástényező (1): frekvenciaszabály és korrekció az Ön állomására.
 LI|k a populációs indexekből: k-t javasol az aktív rajok r populációs indexeiből (GMN, egyébként IMO; k = 3,75 · log10 r, ZHR-rel súlyozva), és alkalmazás előtt megerősítést kér.
+LI|Számlálások forrása: alapból Collm (radar 36,2 MHz). Ha állomásod legfeljebb 3500 km-re van Japántól, megjelennek a "Japán élőben" tételek is (JA2SDA Tojokavában és JE3AKE Ocuban, 53 MHz) a HROFFT automatikus számlálásaival, amelyeket Ogaki 10 percenként tesz közzé; a választás megmarad.
+LI|Japán: havi HRO-számlálások (IPRMO)...: megnyitja az ablakot a japán megfigyelők óránkénti kézi számlálásaival az RMOJ havi fájljaiból. Válaszd ki a hónapot és a megfigyelőt; a Frissítés az IPRMO-ról letölti az új hónapokat. Az első grafikon a havi átlag UTC-óránként a frekvenciádra átszámítva, a második a napi összegek.
 LI|RMOB-fájl betöltése lemezről és Kitevő meghatározása az RMOB-fájlból: beolvasnak egy havi RMOB-fájlt, és a Collm-mal közös órákból meghatározzák k-t.
 LI|RMOB-megfigyelő, RMOB letöltése most és automatikus letöltés 5 percenként: az automatikus letöltés ki van kapcsolva, és csak az RMOB engedélyével szabad bekapcsolni. Ezek a parancsok a Beállítások fülön vannak.
 H2|8.2 Az eredmények
 LI|A tegnapi és mai grafikon: óránkénti meteorszám Collmban, az Ön frekvenciájára átszámított értékek és, ha be vannak töltve, az RMOB-számlálások.
 LI|A következő 24 óra előrejelzése: az előző nap ugyanazon órája, az útvonal rajindexének változásával korrigálva.
 LI|A táblázat értékeléssel: jó, közepes vagy gyenge a 24 órás átlaghoz képest.
+TAG|NOTA|Az ogakii automatikus számlálások magasabbak a kézieknél: relatív értékek. Kalibráláshoz vesd össze őket a Japán ablakban ugyanannak a jeladónak az RMOJ havi fájljaival.
 TAG|NOTA|A visszaverődések hossza a Geometria és csillapítás fül „Pingek hossza a sávok között” beállítását követi; forward scatter esetén a hossz a felezőpontbeli sec²φ-vel is nő.
 H1|9. Élő és valós idejű adatok
 H2|9.1 Élő forgalom
@@ -228,6 +232,7 @@ LI|sciami.csv, massimi_imo.csv, ant_radiante.csv: a rajkatalógus és az Antihel
 LI|flusso_collm.csv, quote_collm.csv: a Collm radar archívumai; radar/: legutóbbi képek, RMOB-fájlok és az élő források adatai; fonti_radar.csv: a források címei, egyenként engedélyezhetők.
 LI|cataloghi/: IAU MDC katalógus; radar/diretta/: GMN- és CMOR-adatok.
 LI|call3.txt: lokátorarchívum; spot_ms/: összegyűjtött meteor scatter spotok; adif_quadrati.csv: négyzetek az ADIF-ből.
+LI|radar/rmoj/: RMOJ havi fájlok Japánból; radar/hro_ogaki_*.csv: az utolsó 3 nap ogakii számlálásai; radar/gfs_*.json: GFS-profilok a refrakcióhoz (3 óráig érvényesek).
 LI|efficienza_spiegazione.*, spiegazione/, manuale_uso.*, manuale_uso/: a műszaki dokumentumok.
 LI|backup/: a frissítés által lecserélt fájlok másolatai; aggiornamento/: a letöltött csomag (újraindításkor törlődik).
 H2|13.3 A Beállítások fül
@@ -237,6 +242,7 @@ LI|controlla_aggiornamenti=0: ne ellenőrizze az új verziókat; aggiornamenti_s
 LI|lobo_diagramma, angolo_beta, lunghezza_scie, giudizio_classico: a számítás jelölőnégyzetei.
 LI|raggio_iniziale (0 = az ITU kétszerese, 1 = ITU, 2 = kizárva), durata_ping (0 = λ², 1 = megfigyelt).
 LI|rmob_osservatore, rmob_automatico, rmob_url: RMOB.
+LI|rifrazione_gfs (0 = ki, 1 = be), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: refrakció és japán források.
 LI|psk_rimando=0: kikapcsolja az UDP-n kapott MS dekódolások (MSK144, FSK441, PSK2K, JTMS) továbbítását a PSKReporternek. Alapból be van kapcsolva és magától működik: ha a hívójeled több mint 20 perce hiányzik a PSKReporternek jelentést küldő állomások közül (a digitális program nem küld), a YA-MS 5 percenként elküldi az általad dekódolt MS állomásokat, téged megadva vevőként; amint a digitális program újra küld, a YA-MS leáll. Egy sor az UDP konzolban jelzi az indulást és a leállást. Ha a WSJT-X.ini-ben (vagy JTDX.ini-ben) ki van kapcsolva a küldés a PSKReporternek, a YA-MS azonnal továbbít, 20 perc várakozás nélkül.
 TAG|ATTENZIONE|A config.ini fájlt csak bezárt program mellett módosítsa: bezáráskor a YA-MS újraírja.
 H1|14. Tipikus eljárások

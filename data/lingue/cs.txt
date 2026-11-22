@@ -878,3 +878,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	Jazyk je také vpra
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - tabulky zisku antén Yagi pro 50, 144 a 432 MHz (dxmaps.com): střední přímka pro každé pásmo,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, s. 130-138: křivka zisku v závislosti na délce ráhna,\n    2,35 dB na oktávu, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, ji uvádí jako 7,773 log + 11,43); pro srovnání
 (stima poco precisa: boom fuori dal campione VE7BQH)	(hrubý odhad: ráhno mimo vzorek VE7BQH)
+Aggiorna da IPRMO	Aktualizovat z IPRMO
+Collm, Germania (radar 36,2 MHz)	Collm, Německo (radar 36,2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	Ruční počty japonských pozorovatelů (HROFFT) ozvěn od radioamatérských majáků pro pozorování meteorů, zveřejňované měsíčně organizací IPRMO s několikatýdenním zpožděním: slouží ke kalibraci a historii, ne k živé předpovědi. Každý pozorovatel má jinou anténu a přijímač: porovnávejte měsíce téhož pozorovatele, ne různé pozorovatele. Přepočet podle pravidel SM6FHZ (λ^k, faktor K) nastavených v této záložce.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	Výchozí počty předpovědi. Položky Japonska (automatický počet HROFFT v Ogaki na radioamatérských majácích 53 MHz, každých 10 minut) se zobrazí jen tehdy, je-li QTH do 3500 km od Japonska.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	Hodinové počty japonských pozorovatelů na radioamatérských majácích 53 MHz (JA2SDA, JE3AKE, JJ1RLQ) z měsíčních souborů IPRMO: průměr za hodinu UTC přepočtený na cílovou frekvenci a denní součty.
+Fonte dei conteggi	Zdroj počtů
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	Zdroj: {0}. Automatický počet HROFFT každých 10 minut, o něco vyšší než ruční: relativní hodnota, kterou je třeba kalibrovat měsíčními soubory RMOJ (tlačítko Japonsko).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS není k dispozici ({0}): používám referenční atmosféru ITU-R P.453
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	Japonsko živě: {0} {1} {2:F3} MHz (Ogaki)
+Giappone: conteggi HRO mensili (IPRMO)	Japonsko: měsíční počty HRO (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	Japonsko: měsíční počty HRO (IPRMO)...
+Media del mese per ora UTC - {0}	Průměr měsíce za hodinu UTC - {0}
+Mese	Měsíc
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	Žádná data z Ogaki: čekám na obrázky HROFFT (jeden každých 10 minut).
+Nessun dato: premi Aggiorna da IPRMO.	Žádná data: stiskněte Aktualizovat z IPRMO.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	Platných hodin {0}, z toho odhadnutých (méně než 60 minut) {1}; ztracených nebo rušených hodin {2}; hodin se sporadickou vrstvou E vyřazeno {3}.
+Osservatore	Pozorovatel
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	Pozorovatel: {0} ({1}). Maják: {2} {3} ({4:F3} MHz). Tabulka v {5}, převedena na UTC.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	Refrakce        +{0:F2}° k bodu uprostřed, dosah ve výšce stop +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	Refrakce        nepoužita (políčko vypnuto): geometrie přímých paprsků
+Rifrazione troposferica (GFS)	Troposférická refrakce (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	Při spuštění vypnuto (opatrná hodnota). Zapnuto: program stáhne z modelu GFS profil teploty a vlhkosti nad oběma stanicemi a sleduje paprsek až do výšky stop. Nízké body se jeví o něco výše a společná zóna se rozšíří (asi 60-70 km u obzoru); nad 10° je vliv zanedbatelný. Nepoužívá k = 4/3, které platí pro paprsky celé uvnitř troposféry.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	Denní součet (dny s nejméně 20 hodinami dat, přepočteno na 24 hodin)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	Přepočet: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	Trasa maják → pozorovatel {0:F0} km, bod uprostřed {1}.
+atmosfera di riferimento ITU-R P.453	referenční atmosféra ITU-R P.453
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	automatický počet HROFFT v Ogaki, maják {0} {1}
+dati GFS incompleti	neúplná data GFS
+echi al giorno (UTC)	ozvěn za den (UTC)
+echi/giorno	ozvěn/den
+echi/ora	ozvěn/hod
+ora fuori dalla previsione GFS	čas mimo předpověď GFS
+profili {0} su {1} e {2}	profily {0} nad {1} a {2}
+scarico...	stahuji...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	{0} obrázků přečteno nyní, poslední v {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} měsíců k dispozici, {1} staženo nyní

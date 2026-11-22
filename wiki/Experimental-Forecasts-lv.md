@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB lūdz **automātiskās programmas neielādēt tā failus**. Tāpēc **automātiskā lejupielāde** sākumā ir **izslēgta**, un to drīkst ieslēgt **tikai pēc atļaujas saņemšanas no RMOB**. Bez tās vienmēr var izmantot **Ielādēt RMOB failu no diska...** vai nospiest **Lejupielādēt RMOB tagad**, kad tas vajadzīgs.
 
 Lejupielādes adrese ir veidne failā `config.ini` (atslēga `rmob_url`, noklusējumā `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, kur `{NOME}` ir novērotājs un `{MMAAAA}` – mēnesis un gads); lejupielādētie faili tiek glabāti mapē `data/radar/`.
+
+## HRO skaitījumi no Japānas (IPRMO un Ogaki)
+
+Skaitījumu avots: pēc noklusējuma Collm (radars 36,2 MHz). Ja tava stacija ir ne tālāk par 3500 km no Japānas, parādās arī ieraksti "Japāna tiešraidē" (bākas JA2SDA Tojokavā un JE3AKE Ocu, 53 MHz) ar HROFFT automātiskajiem skaitījumiem, ko Ogaki publicē ik pēc 10 minūtēm; izvēle tiek saglabāta.
+
+Japāna: mēneša HRO skaitījumi (IPRMO)...: atver logu ar Japānas novērotāju stundu manuālajiem skaitījumiem no RMOJ mēneša failiem. Izvēlies mēnesi un novērotāju; Atjaunināt no IPRMO lejupielādē jaunos mēnešus. Pirmais grafiks ir mēneša vidējais pa UTC stundām, pārrēķināts uz tavu frekvenci, otrais – diennakts summas.
+
+HROFFT automātiskais skaitījums dod no 30 līdz 130 atbalsīm 10 minūtēs, daudz vairāk nekā RMOJ failu manuālie skaitījumi, jo tas skaita arī vājas atbalsis un traucējumus: tā ir relatīva vērtība, kas jākalibrē ar tās pašas bākas mēneša failiem. 3500 km robeža atstāj avotu Austrumāzijas stacijām, kuras redz tos pašus radiantus tajās pašās stundās; Eiropai paliek Collm.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

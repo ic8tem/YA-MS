@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 Az RMOB azt kéri, hogy **automatikus programok ne töltsék le a fájljait**. Ezért az **automatikus letöltés** induláskor **ki van kapcsolva**, és **csak az RMOB engedélyének kikérése után** szabad bekapcsolni. Enélkül bármikor használhatja az **RMOB-fájl betöltése lemezről...** gombot, vagy szükség esetén megnyomhatja az **RMOB letöltése most** gombot.
 
 A letöltési cím egy sablon a `config.ini` fájlban (`rmob_url` kulcs, alapértelmezés: `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, ahol `{NOME}` a megfigyelő, `{MMAAAA}` pedig a hónap és az év); a letöltött fájlok a `data/radar/` mappában maradnak.
+
+## HRO-számlálások Japánból (IPRMO és Ogaki)
+
+Számlálások forrása: alapból Collm (radar 36,2 MHz). Ha állomásod legfeljebb 3500 km-re van Japántól, megjelennek a "Japán élőben" tételek is (JA2SDA Tojokavában és JE3AKE Ocuban, 53 MHz) a HROFFT automatikus számlálásaival, amelyeket Ogaki 10 percenként tesz közzé; a választás megmarad.
+
+Japán: havi HRO-számlálások (IPRMO)...: megnyitja az ablakot a japán megfigyelők óránkénti kézi számlálásaival az RMOJ havi fájljaiból. Válaszd ki a hónapot és a megfigyelőt; a Frissítés az IPRMO-ról letölti az új hónapokat. Az első grafikon a havi átlag UTC-óránként a frekvenciádra átszámítva, a második a napi összegek.
+
+A HROFFT automatikus számlálása 10 percenként 30-130 visszhangot ad, sokkal többet az RMOJ-fájlok kézi számlálásainál, mert a gyenge visszhangokat és a zavarokat is számolja: relatív érték, amelyet ugyanannak a jeladónak a havi fájljaival kell kalibrálni. A 3500 km-es határ a forrást a kelet-ázsiai állomásoknak tartja fenn, amelyek ugyanazokat a radiánsokat ugyanabban az órában látják; Európában Collm marad.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

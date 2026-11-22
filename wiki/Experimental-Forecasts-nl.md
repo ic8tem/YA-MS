@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB vraagt **automatische programma's om zijn bestanden niet op te halen**. Daarom staat het **automatisch ophalen uit** bij de start en moet het **pas worden ingeschakeld nadat je RMOB om toestemming hebt gevraagd**. Zonder die functie kun je altijd **RMOB-bestand van schijf laden...** gebruiken of op **RMOB nu downloaden** drukken als je het nodig hebt.
 
 Het downloadadres is een sjabloon in `config.ini` (sleutel `rmob_url`, standaard `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, waarbij `{NOME}` de waarnemer is en `{MMAAAA}` maand en jaar); gedownloade bestanden worden bewaard in `data/radar/`.
+
+## HRO-tellingen uit Japan (IPRMO en Ogaki)
+
+Bron van de tellingen: standaard Collm (radar 36,2 MHz). Ligt je station binnen 3500 km van Japan, dan verschijnen ook de items "Japan live" (bakens JA2SDA in Toyokawa en JE3AKE in Otsu, 53 MHz), met de automatische HROFFT-tellingen die Ogaki elke 10 minuten publiceert; de keuze wordt bewaard.
+
+Japan: maandelijkse HRO-tellingen (IPRMO)...: opent het venster met de uurlijkse handtellingen van de Japanse waarnemers uit de RMOJ-maandbestanden. Kies maand en waarnemer; Bijwerken vanaf IPRMO haalt de nieuwe maanden op. De eerste grafiek is het maandgemiddelde per UTC-uur omgerekend naar jouw frequentie, de tweede de dagtotalen.
+
+De automatische HROFFT-telling geeft 30 tot 130 echo's per 10 minuten, veel meer dan de handtellingen van de RMOJ-bestanden, omdat ze ook zwakke echo's en storingen telt: het is een relatieve waarde, te kalibreren met de maandbestanden van hetzelfde baken. De grens van 3500 km houdt de bron voor stations in Oost-Azië, die dezelfde radianten op dezelfde uren zien; voor Europa blijft Collm.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

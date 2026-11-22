@@ -34,6 +34,7 @@ ATTENZIONE: {0} e {1} entrano nel lobo dell'antenna ({2}° a -3 dB attorno a {3}
 ATTENZIONE: {0} entra nel lobo dell'antenna ({1}° a -3 dB attorno a {2}°): con questo puntamento e' gia' coperto. Segnati in grigio sulla mappa.
 Adesso
 Aggiorna adesso
+Aggiorna da IPRMO
 Aggiorna da solo ogni 12 ore
 Aggiornamenti
 Aggiornamenti automatici e silenziosi: scarica, installa e riavvia senza chiedere
@@ -118,6 +119,7 @@ Cluster scelto dall'utente. Su ON0DXK le bande VHF sono filtrate: si abilitano c
 Codice sorgente
 Collm stessa ora
 Collm {0} MHz (validi)
+Collm, Germania (radar 36,2 MHz)
 Comae Berenicidi
 Comandi
 Come DJ5HG
@@ -134,6 +136,9 @@ Connetti
 Connetti all'avvio
 Contatori
 Contatti
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.
 Conteggio
 Conteggio delle telecamere, non flusso: dipende da quante stazioni vedono il cielo sereno e di notte.
 Continua senza
@@ -218,7 +223,9 @@ Flusso e ZHR misurati degli sciami e traiettorie del giorno.
 Flusso radar
 Flusso radar: nessun dato. Premi "Scarica adesso".
 Fonte
+Fonte dei conteggi
 Fonte del massimo
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).
 Fonti
 Fonti in diretta
 Formato del grafico cambiato ({0}x{1}): lettura non possibile.
@@ -228,12 +235,17 @@ Foto
 Frequenza di arrivo MHz
 G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook
 GEOMETRIA DELLA TRATTA (Terra sferica, R = 6372,7955 km)
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453
+GFS {0} UTC
 GMN e CMOR alle {0} UTC: {1} errori ({2})
 GMN e CMOR controllati alle {0} UTC ({1} file nuovi). Dati GMN: CC BY 4.0.
 GMN oggi
 GRAVES in linea diretta: az {0:F0}°
 Geminidi
 Geometria e attenuazione
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)
+Giappone: conteggi HRO mensili (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...
 Giudizio
 Giudizio classico
 Gli spot accettati si salvano in data/spot_ms, un file CSV al giorno. I locator mancanti si prendono dall'archivio CALL3 (data/call3.txt).
@@ -357,9 +369,11 @@ Mappa dei radar europei
 Mappa quadrati
 Mappa:
 Mappa: bordo = {0} km dalla stazione. {1}
+Media del mese per ora UTC - {0}
 Media pesata con lo ZHR: k = {0:F2} (regola SM6FHZ: 3, più prudente).\n\nApplico questo esponente?
 Memorizza
 Mercatore
+Mese
 Mese non indicato: uso il mese corrente.
 Meteore/ora - ieri {0} e oggi {1} (UTC)
 Metti GRAVES come DX
@@ -382,7 +396,9 @@ Nero
 Nessun Hot consigliato: le due stazioni non vedono una zona comune dello strato (vedi l'avviso)
 Nessun Hot consigliato: sciami attivi quasi assenti in questo momento
 Nessun dato GMN: premi "Scarica adesso".
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).
 Nessun dato del radar: scaricalo dalla sottolinguetta Live e dati real-time › Flusso radar.
+Nessun dato: premi Aggiorna da IPRMO.
 Nessuna fonte Collm in fonti_radar.csv
 Nessuna scia prevista: sciami attivi sotto l'orizzonte o con efficienza nulla per questa tratta.
 Nessuna zona comune dello strato E ({0})
@@ -412,9 +428,12 @@ Ora
 Ora UTC
 Ore (da −12 a +36 h)
 Ore in comune: {0}. Rapporto mediano RMOB/Collm = {1:F4}.\nEsponente empirico (con K = 1): k = {2:F2}  (regola SM6FHZ: 3).\n\nApplico questo esponente? (In alternativa si lascia k = 3 e si regola il fattore K = {3:F2}.)
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.
 Orionidi
 Orionidi di novembre
+Osservatore
 Osservatore RMOB
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.
 PROCEDURA
 PROSSIMO PASSAGGIO DEL FASCIO SULLA ZONA
 PSKReporter MQTT
@@ -499,6 +518,9 @@ Ricevitore
 Riconnessione tra {0} s
 Riconnetti
 Riepilogo dell'anno (ZHR misurati, GMN)
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti
+Rifrazione troposferica (GFS)
 Riga {0} ignorata (colonne insufficienti)
 Riga {0}: {1}
 Riporta il momento del calcolo al tempo reale
@@ -555,6 +577,7 @@ Sono i bordi piu' lontani del cielo visto da entrambe le stazioni, non i punti d
 Sorge
 Sorgente Antielio
 Spenta (prudente): ogni scia pesa con il seno dell'elevazione del radiante, perché con il radiante basso cadono meno meteore per km².\nAccesa: come DJ5HG (2004), con il radiante basso le scie sono più lunghe (si conta lo spessore utile dello strato, 15 km, diviso il seno dell'elevazione, fino a 100 km) e soddisfano più spesso la legge di riflessione. Le due cose si compensano sopra circa 9° di elevazione: l'efficienza con il radiante basso sale, quella con il radiante alto non cambia.
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.
 Spiegazione del calcolo dell'efficienza
 Spot MS raccolti
 Spot da mostrare
@@ -578,6 +601,7 @@ Tavistock, Ontario (Canada)
 Tema
 Tempo reale
 Tipo
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)
 Traffico MS in diretta · {0}
 Traffico in diretta
 Traffico meteor scatter in diretta
@@ -585,7 +609,9 @@ Traiettorie confermate dal GMN dal {0} al {1} UTC: {2} (sporadiche {3})
 Tramonta
 Traslato
 Traslato {0}
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
 Tratta calcolata: {0:F0} km, {1} punti di riflessione campionati in {2:F1} s. {3}
+Tratta faro → osservatore {0:F0} km, punto medio {1}.
 Tratta piu' lunga del doppio della portata alla quota delle scie: le due stazioni non vedono una zona comune dello strato E.
 Tratta troppo corta
 Tratta {0}: {1:F0} km, az. {2:F0}°
@@ -635,6 +661,7 @@ alfa-Monocerotidi
 ant_radiante.csv: riga ignorata: {0}
 antenna verso {0}: az {1:F0}° · el {2:F1}°\nGRAVES in linea diretta: az {3:F0}°
 antenna {0}°
+atmosfera di riferimento ITU-R P.453
 auto (AMS)
 automatica (finestra alta meno di 850 pixel)
 azimut rispetto al corrispondente
@@ -651,16 +678,21 @@ collegamento via meteor scatter
 comandi dopo il login, separati da ;
 comando da inviare (es. sh/dx 20)
 confermato (QSL o LoTW)
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}
 copia locale del {0} UTC
 corrispondente
 dal radar
 dati CC BY 4.0 (Vida et al. 2021, 2022)
+dati GFS incompleti
 dati dell'ente, citati
 dati pubblici, citazione richiesta
 delta-Aquaridi Sud
 diagramma d'antenna
 dominio pubblico
 doppio dell'ITU (Stober 2021, prudente)
+echi al giorno (UTC)
+echi/giorno
+echi/ora
 eco
 eco attese ≈ {0:F0}/ora (sperimentale: previsione × fascio {1:F0} %)
 eco possibile (+{0:F1} s di scia)
@@ -747,6 +779,7 @@ nuovo dato
 nuovo dato alle {0} UTC
 omega-Cetidi Nord diurne
 omega-Cetidi Sud diurne
+ora fuori dalla previsione GFS
 orizzonte del fascio
 orologio del PC sincronizzato
 osservata (HamSCI MSQP, NN4SA 2026)
@@ -759,6 +792,7 @@ percorso rad.
 pi-Puppidi
 prelievo automatico ogni 5 minuti (attivare solo con il permesso di RMOB)
 previsione {0} MHz /ora
+profili {0} su {1} e {2}
 puntamento migliore {0}° / {1}°
 puntare a {0:F0}° ({1:+0;-0}° dal corrispondente), elevazione {2:F1}°, hot spot a {3:F0} km
 quasi inattivo
@@ -776,6 +810,7 @@ righe {0}, spot letti {1}, MS {2}
 scala letta dal grafico: 0-{0} meteore/ora
 scala non letta
 scala tarata 0-1200 meteore/ora
+scarico...
 scarso
 scartati
 scartati per altra propagazione: {0}
@@ -822,6 +857,7 @@ zona dello sciame {0}: {1:F0} % delle riflessioni, {2:F0} × {3:F0} km, asse a {
 {0} (dal radiante, az. {1}°)
 {0} (in rosso sulla mappa)
 {0} (~{1} calc.)
+{0} - {1:F3} MHz
 {0} MHz: {1}
 {0} QSO letti, {1} quadrati-QSO nelle bande 50-432 MHz, {2} QSO scartati (altre bande o senza quadrato).
 {0} UTC (momento del calcolo)
@@ -836,8 +872,10 @@ zona dello sciame {0}: {1:F0} % delle riflessioni, {2:F0} × {3:F0} km, asse a {
 {0} file della cartella data sono stati sostituiti: le copie precedenti sono in data/backup/v{1}.
 {0} h
 {0} h rispetto ad adesso
+{0} immagini lette ora, ultima delle {1} UTC
 {0} km dalla tua stazione
 {0} memorizzato nel CALL3: {1}
+{0} mesi disponibili, {1} scaricati ora
 {0} nel CALL3: {1}
 {0} non trovato nel pacchetto
 {0} non è nel CALL3: scrivi il locator a mano

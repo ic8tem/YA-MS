@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Pagsusuri:** H = 89.5 km, e = 0° → **1062 km**. Sa halimbawa ng artikulo (JN44BB–IO53RT), inilalagay ng drowing ang mga tawiran ng horizon nang mga 870 km mula sa mga istasyon, na tumutugma sa lobe na itinaas nang mga 2° (865 km).
 
+## Troposperikong repraksyon (GFS)
+
+Troposperikong repraksyon (kahong "Troposperikong repraksyon (GFS)", naka-off sa pagsisimula). Kapag naka-check ang kahon, dina-download ng programa mula sa Open-Meteo ang profile ng modelong GFS sa itaas ng dalawang istasyon (presyon, temperatura at halumigmig sa lupa at sa mga antas mula 1000 hanggang 500 hPa, sa pinakamalapit na oras sa loob ng 6 na oras), kinukuwenta ang taas ng mga antas gamit ang hypsometric equation (virtual temperature) at ang refractivity gamit ang pormula ng Rekomendasyong ITU-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+kung saan ang P at e (presyon ng singaw, mula sa pormula ni Magnus) ay nasa hPa at ang T ay nasa kelvin. Sa itaas ng pinakamataas na antas, bumababa ang N nang eksponensiyal na may scale height na 7.35 km. Kung hindi sumasagot ang GFS, ginagamit ang reference atmosphere ng P.453, N = 315·exp(−h/7.35), at sinasabi ito ng ulat.
+
+Sinusundan ang sinag sa manipis na mga spherical shell gamit ang batas ni Snell sa spherical na anyo (n·r·cos e pare-pareho) hanggang sa taas ng bakas; dito nakukuha ang abot sa taas na H at ang pagwawasto ng elevation:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Halimbawa gamit ang reference atmosphere at mga bakas sa 89.5 km: sa 0°, ang abot ay mula 1061.5 hanggang mga 1133 km (+72 km) at ang punto ay mukhang 0.62° na mas mataas; sa 4°, lumalaki ang abot nang 14 km at ang pagwawasto ay 0.20°; sa itaas ng 10°, bale-wala ang epekto. Inilalapat ang pagwawasto sa elevation patungo sa midpoint, sa radius ng karaniwang zona, sa mga hot spot at sa mga punto ng mapa ng episyensiya; tinatanggal ang mga punto sa ilalim ng nirepraktang abot-tanaw. Ibinibigay ito ng ulat sa linyang "Repraksyon".
+
+Ang katumbas na radius ng Daigdig na k = 4/3 ay para sa mga sinag na nananatili sa unang mga kilometro ng troposphere, kung saan bumababa ang N nang mga 40 yunit bawat km. Ang sinag patungo sa isang bakas sa 90 km ay tumatawid sa buong troposphere at, sa itaas ng 10-15 km kung saan halos sero ang N, nagpapatuloy nang halos tuwid: kung k = 4/3 sa buong pag-akyat, ang abot sa 0° ay mga 1230 km, halos 100 km na higit sa sinag na sinundan. Kaya sinusundan ng programa ang sinag sa profile ng GFS, gaya ng ginagawa ng LIVETROPOVHF ng may-akda para sa troposperikong propagasyon, sa halip na gumamit ng k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Mga hangganan ng karaniwang sona
 
 **Sanggunian:** tinutukoy ng artikulo ang mga pagtatagpo ng mga kurba kung saan sinasalubong ng horizon ng bawat istasyon ang E layer: ang mga pagtatagpo ng dalawang bilog na may angular na radius na ρ = d_H/r na nakasentro sa A at B [19–20]:

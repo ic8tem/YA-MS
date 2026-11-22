@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Ellenőrzés:** H = 89,5 km, e = 0° → **1062 km**. A cikk példájában (JN44BB–IO53RT) az ábra a horizontmetszéseket kb. 870 km-re teszi az állomásoktól, ami kb. 2°-kal megemelt nyalábnak felel meg (865 km).
 
+## Troposzférikus refrakció (GFS)
+
+Troposzférikus refrakció ("Troposzférikus refrakció (GFS)" jelölőnégyzet, induláskor kikapcsolva). Bekapcsolt négyzettel a program letölti az Open-Meteóról a GFS-modell profilját a két állomás fölött (nyomás, hőmérséklet és nedvesség a felszínen és az 1000-500 hPa közötti szinteken, a legközelebbi órára 6 órán belül), a szintek magasságát a hipszometrikus egyenlettel (virtuális hőmérséklet), a refraktivitást pedig az ITU-R P.453 ajánlás képletével számítja:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+ahol P és e (gőznyomás, a Magnus-képletből) hPa-ban, T kelvinben. A legfelső szint fölött N exponenciálisan csökken 7,35 km-es skálamagassággal. Ha a GFS nem válaszol, a P.453 referencia-légköre szolgál, N = 315·exp(−h/7,35), és a jelentés ezt közli.
+
+A sugarat vékony gömbhéjakon át követi a Snell-törvény gömbi alakjával (n·r·cos e állandó) a nyomok magasságáig; ebből adódik a hatótáv a H magasságban és az emelkedési szög korrekciója:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Példa a referencia-légkörrel és 89,5 km-es nyomokkal: 0°-nál a hatótáv 1061,5-ről kb. 1133 km-re nő (+72 km), és a pont 0,62°-kal magasabbnak látszik; 4°-nál a hatótáv 14 km-rel nő, a korrekció 0,20°; 10° fölött a hatás elhanyagolható. A korrekció az emelkedési szögre a felezőpont felé, a közös zóna sugarára, a hot spotokra és a hatékonysági térkép pontjaira vonatkozik; a megtört horizont alatti pontok kiesnek. A jelentés a "Refrakció" sorban adja meg.
+
+A k = 4/3 egyenértékű Föld-sugár a troposzféra első kilométereiben maradó sugarakra érvényes, ahol N kilométerenként kb. 40 egységgel csökken. A 90 km-es nyom felé haladó sugár átszeli az egész troposzférát, és 10-15 km fölött, ahol N közel nulla, szinte egyenesen halad tovább: a teljes emelkedésen k = 4/3-dal 0°-nál a hatótáv kb. 1230 km lenne, majdnem 100 km-rel több a követett sugárénál. Ezért a program a GFS-profilban követi a sugarat, ahogy a szerző LIVETROPOVHF programja teszi a troposzférikus terjedésnél, ahelyett hogy k = 4/3-ot használna.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## A közös zóna határai
 
 **Forrás:** a cikk azoknak a görbéknek a metszéspontjait határozza meg, ahol az egyes állomások horizontja eléri az E-réteget: ezek két, A és B középpontú, ρ = d_H/r szögsugarú kör metszéspontjai [19–20]:

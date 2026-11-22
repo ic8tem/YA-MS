@@ -878,3 +878,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	A nyelv jobb felül
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - Yagi-nyereségtáblázatok 50, 144 és 432 MHz-re (dxmaps.com): sávonkénti átlagegyenes,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, 130-138. o.: nyereség a tartócső hosszának függvényében,\n    2,35 dB oktávonként, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, 7,773 log + 11,43 alakban közli); összehasonlításként
 (stima poco precisa: boom fuori dal campione VE7BQH)	(durva becslés: a tartócső a VE7BQH-mintán kívül esik)
+Aggiorna da IPRMO	Frissítés az IPRMO-ról
+Collm, Germania (radar 36,2 MHz)	Collm, Németország (radar 36,2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	Japán megfigyelők kézi számlálásai (HROFFT) a meteormegfigyelésre szolgáló HAM-jeladók visszhangjairól, amelyeket az IPRMO havonta, néhány hét késéssel tesz közzé: kalibrálásra és visszatekintésre valók, nem az élő előrejelzésre. Minden megfigyelőnek más az antennája és a vevője: ugyanannak a megfigyelőnek a hónapjait hasonlítsd össze, ne különböző megfigyelőket. Átszámítás az SM6FHZ-szabályokkal (λ^k, K tényező), ezen a fülön beállítva.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	Az előrejelzés kiinduló számlálásai. A japán tételek (automatikus HROFFT-számlálás Ogakiban az 53 MHz-es HAM-jeladókon, 10 percenként) csak akkor jelennek meg, ha a QTH 3500 km-en belül van Japántól.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	Japán megfigyelők óránkénti számlálásai az 53 MHz-es HAM-jeladókon (JA2SDA, JE3AKE, JJ1RLQ) az IPRMO havi fájljaiból: UTC-óránkénti átlag a célfrekvenciára átszámítva, és napi összegek.
+Fonte dei conteggi	Számlálások forrása
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	Forrás: {0}. Automatikus HROFFT-számlálás 10 percenként, kissé magasabb a kézinél: relatív érték, az RMOJ havi fájlokkal kell kalibrálni (Japán gomb).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	A GFS nem érhető el ({0}): az ITU-R P.453 referencia-légkört használom
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	Japán élőben: {0} {1} {2:F3} MHz (Ogaki)
+Giappone: conteggi HRO mensili (IPRMO)	Japán: havi HRO-számlálások (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	Japán: havi HRO-számlálások (IPRMO)...
+Media del mese per ora UTC - {0}	Havi átlag UTC-óránként - {0}
+Mese	Hónap
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	Nincs adat Ogakiból: várom a HROFFT-képeket (10 percenként egyet).
+Nessun dato: premi Aggiorna da IPRMO.	Nincs adat: nyomd meg a Frissítés az IPRMO-ról gombot.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	Érvényes órák {0}, ebből becsült (60 percnél kevesebb) {1}; elveszett vagy zavart órák {2}; sporadikus E miatt kizárt órák {3}.
+Osservatore	Megfigyelő
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	Megfigyelő: {0} ({1}). Jeladó: {2} {3} ({4:F3} MHz). Táblázat {5} szerint, UTC-re átszámítva.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	Refrakció       +{0:F2}° a felezőpont felé, hatótáv a nyomok magasságában +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	Refrakció       nincs alkalmazva (jelölőnégyzet kikapcsolva): egyenes sugarú geometria
+Rifrazione troposferica (GFS)	Troposzférikus refrakció (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	Indításkor kikapcsolva (óvatos érték). Bekapcsolva: a program letölti a GFS-modellből a hőmérséklet- és nedvességprofilt a két állomás fölött, és követi a sugarat a nyomok magasságáig. Az alacsony pontok kissé magasabbnak látszanak, és a közös zóna kiszélesedik (kb. 60-70 km a horizontnál); 10° felett a hatás elhanyagolható. Nem használja a k = 4/3-ot, amely teljesen a troposzférában haladó sugarakra érvényes.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	Napi összeg (legalább 20 órányi adatot tartalmazó napok, 24 órára átszámítva)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	Átszámítás: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	Útvonal jeladó → megfigyelő {0:F0} km, felezőpont {1}.
+atmosfera di riferimento ITU-R P.453	ITU-R P.453 referencia-légkör
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	automatikus HROFFT-számlálás Ogakiban, jeladó {0} {1}
+dati GFS incompleti	hiányos GFS-adatok
+echi al giorno (UTC)	visszhang naponta (UTC)
+echi/giorno	visszhang/nap
+echi/ora	visszhang/óra
+ora fuori dalla previsione GFS	idő a GFS-előrejelzésen kívül
+profili {0} su {1} e {2}	{0} profilok {1} és {2} fölött
+scarico...	letöltés...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	{0} kép beolvasva most, az utolsó {1} UTC-kor
+{0} mesi disponibili, {1} scaricati ora	{0} hónap elérhető, {1} letöltve most

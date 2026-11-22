@@ -64,6 +64,7 @@ H2|4.2 1. rinda: E slānis un antena
 LI|Sliežu augstums km un no radara: meteoru sliežu augstums. Ja "no radara" ir atzīmēts, izmanto biežāko Collm radara izmērīto augstumu (parasti 88-90 km); noņem atzīmi, lai to ierakstītu manuāli.
 LI|Ziedlapiņas elevācija °: tavas antenas vertikālās ziedlapiņas maksimuma elevācija. Virziena antenai, kas nostiprināta 0° leņķī, galvenā ziedlapiņa tik un tā ir dažus grādus virs horizonta atstarojuma no zemes dēļ: parasti 3-8°, atkarībā no antenas augstuma viļņu garumos.
 LI|antenas diagramma: ieslēgta (noklusējums) - atstarošanas punkti tiek ņemti vērā ar abu antenu vertikālo pastiprinājumu: pilnībā ap ziedlapiņas maksimumu, arvien mazāk uz horizonta pusi un uz augšu. Izslēgta - ziedlapiņas elevācija ir stingra robeža: zemāk redzamie punkti netiek ņemti vērā.
+LI|Troposfēras refrakcija (GFS): palaižot izslēgta. Ieslēgta, programma no GFS modeļa lejupielādē temperatūras un mitruma profilu virs abām stacijām un ņem vērā stara izliekumu līdz pēdu augstumam: zemi punkti šķiet nedaudz augstāk, un kopīgā zona paplašinās. Ja GFS neatbild, izmanto vidējo atmosfēru. Cilnes Ģeometrija un vājinājums pārskats to norāda rindā "Refrakcija".
 LI|Yagi antena: traverse m: traverses garums. Blakus programma raksta garumu viļņa garumos, pastiprinājumu (joslas VE7BQH tabulu vidējā taisne) un −3 dB ziedlapiņu horizontāli un vertikāli. Ja traverse ir ārpus joslas VE7BQH izlases, novērtējums ir neprecīzs.
 LI|Hot spot no viduspunkta km un auto (AMS): Hot A un Hot B attālums no viduspunkta. Ja "auto (AMS)" ir atzīmēts, vērtība atbilst J. Richardson tabulai, ko citē DJ5HG (13° novirze pie 1000 km, 10° virs 1500 km); noņem atzīmi, lai manuāli ierakstītu 30-400 km (MSHV izmanto 150 km).
 TAG|ATTENZIONE|Ja "antenas diagramma" ir izslēgta un ziedlapiņa ir dažu grādu augstumā, garā trasē abas stacijas var neredzēt nevienu kopīgu slāņa punktu: visas efektivitātes ir 0 un parādās brīdinājums "NAV KOPĪGAS ZONAS" ar ziedlapiņas elevāciju vai sliežu augstumu, kas būtu vajadzīgs. Piemērs: JN70CN - JO76QP, 1791 km, ziedlapiņa 3°, sliedes 88,5 km.
@@ -153,12 +154,15 @@ H2|8.1 Vadīklas
 LI|Mērķa frekvence MHz: prognozes frekvence.
 LI|λ^k kāpinātājs (3, SM6FHZ) un Stacijas koeficients K (1): frekvences pārrēķina likums un korekcija tavai stacijai.
 LI|k no populācijas indeksiem: piedāvā k no aktīvo plūsmu populācijas indeksiem r (GMN, citādi IMO; k = 3,75 · log10 r, svērts ar ZHR) un pirms piemērošanas lūdz apstiprinājumu.
+LI|Skaitījumu avots: pēc noklusējuma Collm (radars 36,2 MHz). Ja tava stacija ir ne tālāk par 3500 km no Japānas, parādās arī ieraksti "Japāna tiešraidē" (bākas JA2SDA Tojokavā un JE3AKE Ocu, 53 MHz) ar HROFFT automātiskajiem skaitījumiem, ko Ogaki publicē ik pēc 10 minūtēm; izvēle tiek saglabāta.
+LI|Japāna: mēneša HRO skaitījumi (IPRMO)...: atver logu ar Japānas novērotāju stundu manuālajiem skaitījumiem no RMOJ mēneša failiem. Izvēlies mēnesi un novērotāju; Atjaunināt no IPRMO lejupielādē jaunos mēnešus. Pirmais grafiks ir mēneša vidējais pa UTC stundām, pārrēķināts uz tavu frekvenci, otrais – diennakts summas.
 LI|Ielādēt RMOB failu no diska un Iegūt kāpinātāju no RMOB faila: nolasa mēneša RMOB failu un iegūst k no stundām, kas kopīgas ar Collm.
 LI|RMOB novērotājs, Lejupielādēt RMOB tagad un automātiska lejupielāde ik pēc 5 minūtēm: automātiskā lejupielāde ir izslēgta, un to drīkst ieslēgt tikai ar RMOB atļauju. Šīs komandas ir cilnē Iestatījumi.
 H2|8.2 Rezultāti
 LI|Vakardienas un šodienas grafiks: meteori stundā Collm, uz tavu frekvenci pārrēķinātās vērtības un, ja ielādēti, RMOB skaitījumi.
 LI|Prognoze nākamajām 24 stundām: tā pati iepriekšējās dienas stunda, koriģēta atbilstoši trases plūsmu indeksa izmaiņai.
 LI|Tabula ar vērtējumu: labs, vidējs vai vājš salīdzinājumā ar 24 stundu vidējo.
+TAG|NOTA|Ogaki automātiskie skaitījumi ir lielāki par manuālajiem: tās ir relatīvas vērtības. Lai tos kalibrētu, salīdzini tos Japānas logā ar tās pašas bākas RMOJ mēneša failiem.
 TAG|NOTA|Atstarojumu ilgums atbilst izvēlei "Pingu ilgums starp joslām" cilnē Ģeometrija un vājinājums; forward scatter gadījumā ilgums pieaug arī ar sec²φ trases viduspunktā.
 H1|9. Tiešsaiste un reāllaika dati
 H2|9.1 Satiksme tiešraidē
@@ -228,6 +232,7 @@ LI|sciami.csv, massimi_imo.csv, ant_radiante.csv: plūsmu katalogs un Antihēlij
 LI|flusso_collm.csv, quote_collm.csv: Collm radara arhīvi; radar/: jaunākie attēli, RMOB faili un tiešsaistes avotu dati; fonti_radar.csv: avotu adreses, kuras var ieslēgt pa vienai.
 LI|cataloghi/: IAU MDC katalogs; radar/diretta/: GMN un CMOR dati.
 LI|call3.txt: lokatoru arhīvs; spot_ms/: savāktie meteor scatter spoti; adif_quadrati.csv: kvadrāti no ADIF.
+LI|radar/rmoj/: RMOJ mēneša faili no Japānas; radar/hro_ogaki_*.csv: Ogaki skaitījumi par pēdējām 3 dienām; radar/gfs_*.json: GFS profili refrakcijai (derīgi 3 stundas).
 LI|efficienza_spiegazione.*, spiegazione/, manuale_uso.*, manuale_uso/: tehniskie dokumenti.
 LI|backup/: atjauninājuma aizstāto failu kopijas; aggiornamento/: lejupielādētā pakotne (dzēsta pēc restartēšanas).
 H2|13.3 Cilne Iestatījumi
@@ -237,6 +242,7 @@ LI|controlla_aggiornamenti=0: nepārbaudīt jaunas versijas; aggiornamenti_salta
 LI|lobo_diagramma, angolo_beta, lunghezza_scie, giudizio_classico: aprēķina izvēles rūtiņas.
 LI|raggio_iniziale (0 = divkārša ITU vērtība, 1 = ITU, 2 = neņemts vērā), durata_ping (0 = λ², 1 = novērotais).
 LI|rmob_osservatore, rmob_automatico, rmob_url: RMOB.
+LI|rifrazione_gfs (0 = izslēgta, 1 = ieslēgta), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: refrakcija un Japānas avoti.
 LI|psk_rimando=0: izslēdz caur UDP saņemto MS dekodējumu (MSK144, FSK441, PSK2K, JTMS) pārsūtīšanu uz PSKReporter. Tā pēc noklusējuma ir ieslēgta un darbojas pati: ja tava izsaukuma signāla vairāk nekā 20 minūtes nav starp stacijām, kas sūta ziņojumus uz PSKReporter (digitālā programma nesūta), YA-MS ik pēc 5 minūtēm nosūta tevis dekodētās MS stacijas, tevi norādot kā uztvērēju; tiklīdz digitālā programma atkal sūta, YA-MS apstājas. Rinda UDP konsolē paziņo, kad tā sākas un apstājas. Ja WSJT-X.ini (vai JTDX.ini) sūtīšana uz PSKReporter ir izslēgta, YA-MS pārsūta uzreiz, negaidot 20 minūtes.
 TAG|ATTENZIONE|Labo config.ini tikai tad, kad programma ir aizvērta: aizverot YA-MS to pārraksta.
 H1|14. Tipiskās procedūras

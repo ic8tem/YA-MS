@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB prašo, kad **automatinės programos neatsisiųstų jo failų**. Todėl **automatinis atsisiuntimas** pradžioje yra **išjungtas** ir jį reikėtų įjungti **tik paprašius RMOB leidimo**. Be jo visada galite naudoti **Įkelti RMOB failą iš disko...** arba prireikus spausti **Atsisiųsti RMOB dabar**.
 
 Atsisiuntimo adresas yra šablonas faile `config.ini` (raktas `rmob_url`, numatytasis `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, kur `{NOME}` – stebėtojas, o `{MMAAAA}` – mėnuo ir metai); atsisiųsti failai saugomi aplanke `data/radar/`.
+
+## HRO skaičiavimai iš Japonijos (IPRMO ir Ogaki)
+
+Skaičiavimų šaltinis: numatytasis Collm (radaras 36,2 MHz). Jei tavo stotis ne toliau kaip 3500 km nuo Japonijos, atsiranda ir punktai „Japonija tiesiogiai“ (švyturiai JA2SDA Tojokavoje ir JE3AKE Ocu, 53 MHz) su automatiniais HROFFT skaičiavimais, kuriuos Ogakis skelbia kas 10 minučių; pasirinkimas išsaugomas.
+
+Japonija: mėnesiniai HRO skaičiavimai (IPRMO)...: atveria langą su Japonijos stebėtojų valandiniais rankiniais skaičiavimais iš mėnesinių RMOJ failų. Pasirink mėnesį ir stebėtoją; Atnaujinti iš IPRMO atsisiunčia naujus mėnesius. Pirmas grafikas – mėnesio vidurkis per UTC valandą, perskaičiuotas į tavo dažnį, antras – paros sumos.
+
+Automatinis HROFFT skaičiavimas duoda nuo 30 iki 130 aidų per 10 minučių, daug daugiau nei rankiniai RMOJ failų skaičiavimai, nes skaičiuoja ir silpnus aidus bei trikdžius: tai santykinė vertė, kurią reikia kalibruoti to paties švyturio mėnesiniais failais. 3500 km riba palieka šaltinį Rytų Azijos stotims, kurios mato tuos pačius radiantus tomis pačiomis valandomis; Europai lieka Collm.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

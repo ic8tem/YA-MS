@@ -877,3 +877,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	اللغة موجو
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - جداول كسب هوائيات Yagi للترددات 50 و144 و432 MHz (dxmaps.com): خط مستقيم متوسط لكل نطاق،\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67؛ 144 MHz 8,27 log + 11,31؛ 432 MHz 8,68 log + 11,03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas"، VHF Communications 3/1982، ص 130-138: منحنى الكسب مقابل طول الذراع،\n    2,35 dB لكل أوكتاف، G(dBi) = 7,81 log(L/lambda) + 11,35 (يذكره W8IO، w8io.com، بالصيغة 7,773 log + 11,43)؛ للمقارنة
 (stima poco precisa: boom fuori dal campione VE7BQH)	(تقدير تقريبي: الذراع خارج عينة VE7BQH)
+Aggiorna da IPRMO	تحديث من IPRMO
+Collm, Germania (radar 36,2 MHz)	كولم، ألمانيا (رادار 36,2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	عدّات يدوية لمراقبين يابانيين (HROFFT) لأصداء منارات الهواة المخصصة لرصد الشهب، تنشرها IPRMO شهرياً بتأخير بضعة أسابيع: تُستخدم للمعايرة والسجل، لا للتنبؤ المباشر. لكل مراقب هوائي ومستقبل مختلفان: قارن أشهر المراقب نفسه لا مراقبين مختلفين. التحويل وفق قواعد SM6FHZ (λ^k والمعامل K) المضبوطة في هذا التبويب.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	عدّات انطلاق التنبؤ. لا تظهر خيارات اليابان (العدّ الآلي لـ HROFFT في أوغاكي على منارات الهواة 53 MHz، كل 10 دقائق) إلا إذا كان الـ QTH ضمن 3500 km من اليابان.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	عدّات ساعية لمراقبين يابانيين على منارات الهواة 53 MHz (JA2SDA وJE3AKE وJJ1RLQ) من ملفات IPRMO الشهرية: متوسط لكل ساعة UTC محوّل إلى تردد الوصول، ومجاميع يومية.
+Fonte dei conteggi	مصدر العدّات
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	المصدر: {0}. عدّ آلي لـ HROFFT كل 10 دقائق، أعلى قليلاً من العدّ اليدوي: قيمة نسبية تجب معايرتها بملفات RMOJ الشهرية (زر اليابان).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS غير متاح ({0}): أستخدم الغلاف الجوي المرجعي ITU-R P.453
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	اليابان مباشرة: {0} {1} {2:F3} MHz (أوغاكي)
+Giappone: conteggi HRO mensili (IPRMO)	اليابان: عدّات HRO الشهرية (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	اليابان: عدّات HRO الشهرية (IPRMO)...
+Media del mese per ora UTC - {0}	متوسط الشهر لكل ساعة UTC - {0}
+Mese	الشهر
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	لا بيانات من أوغاكي: في انتظار صور HROFFT (صورة كل 10 دقائق).
+Nessun dato: premi Aggiorna da IPRMO.	لا بيانات: اضغط تحديث من IPRMO.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	ساعات صالحة {0}، منها تقديرية (أقل من 60 دقيقة) {1}؛ ساعات مفقودة أو مضطربة {2}؛ ساعات مستبعدة بسبب E المتقطع {3}.
+Osservatore	المراقب
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	المراقب: {0} ({1}). المنارة: {2} {3} ({4:F3} MHz). الجدول بتوقيت {5}، محوّل إلى UTC.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	الانكسار        +{0:F2}° نحو نقطة المنتصف، المدى عند ارتفاع الآثار +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	الانكسار        غير مطبق (المربع غير محدد): هندسة الأشعة المستقيمة
+Rifrazione troposferica (GFS)	الانكسار التروبوسفيري (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	معطّل عند البدء (قيمة حذرة). مفعّل: ينزّل البرنامج من نموذج GFS مقطع الحرارة والرطوبة فوق المحطتين ويتتبع الشعاع حتى ارتفاع الآثار. تظهر النقاط المنخفضة أعلى قليلاً وتتسع المنطقة المشتركة (نحو 60-70 km عند الأفق)؛ وفوق 10° يكون الأثر مهملاً. لا يُستخدم k = 4/3 الذي يصلح للأشعة الواقعة كلياً داخل التروبوسفير.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	المجموع اليومي (أيام فيها 20 ساعة بيانات على الأقل، محسوبة على 24 ساعة)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	التحويل: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	مسار المنارة ← المراقب {0:F0} km، نقطة المنتصف {1}.
+atmosfera di riferimento ITU-R P.453	الغلاف الجوي المرجعي ITU-R P.453
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	عدّ آلي لـ HROFFT في أوغاكي، المنارة {0} {1}
+dati GFS incompleti	بيانات GFS ناقصة
+echi al giorno (UTC)	أصداء في اليوم (UTC)
+echi/giorno	أصداء/يوم
+echi/ora	أصداء/ساعة
+ora fuori dalla previsione GFS	وقت خارج تنبؤ GFS
+profili {0} su {1} e {2}	مقاطع {0} فوق {1} و{2}
+scarico...	جارٍ التنزيل...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	قُرئت {0} صور الآن، آخرها عند {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} أشهر متاحة، نُزّل {1} الآن

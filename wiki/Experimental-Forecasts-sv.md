@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB ber att **automatiska program inte hämtar dess filer**. Därför är **automatisk hämtning avstängd** från början och bör aktiveras **först efter att du har bett RMOB om tillstånd**. Utan det kan du alltid använda **Läs in RMOB-fil från disk...** eller trycka på **Hämta RMOB nu** när du behöver.
 
 Hämtningsadressen är en mall i `config.ini` (nyckeln `rmob_url`, standard `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, där `{NOME}` är observatören och `{MMAAAA}` månad och år); hämtade filer sparas i `data/radar/`.
+
+## HRO-räkningar från Japan (IPRMO och Ogaki)
+
+Källa för räkningarna: Collm (radar 36,2 MHz) som standard. Ligger din station inom 3500 km från Japan visas även posterna "Japan direkt" (fyrarna JA2SDA i Toyokawa och JE3AKE i Otsu, 53 MHz) med de automatiska HROFFT-räkningar som Ogaki publicerar var 10:e minut; valet sparas.
+
+Japan: månatliga HRO-räkningar (IPRMO)...: öppnar fönstret med de japanska observatörernas timvisa handräkningar från RMOJ-månadsfilerna. Välj månad och observatör; Uppdatera från IPRMO hämtar de nya månaderna. Första diagrammet är månadsmedlet per UTC-timme omräknat till din frekvens, det andra dygnssummorna.
+
+Den automatiska HROFFT-räkningen ger 30 till 130 ekon var 10:e minut, långt fler än handräkningarna i RMOJ-filerna, eftersom den också räknar svaga ekon och störningar: det är ett relativt värde som ska kalibreras med samma fyrs månadsfiler. Gränsen på 3500 km förbehåller källan stationer i Östasien, som ser samma radianter vid samma tider; för Europa gäller Collm.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

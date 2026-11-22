@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Patikra:** H = 89,5 km, e = 0° → **1062 km**. Straipsnio pavyzdyje (JN44BB–IO53RT) brėžinys horizonto sankirtas rodo maždaug 870 km nuo stočių, o tai atitinka apie 2° pakeltą lapelį (865 km).
 
+## Troposferinė refrakcija (GFS)
+
+Troposferinė refrakcija (langelis „Troposferinė refrakcija (GFS)“, paleidus išjungtas). Įjungus langelį programa iš Open-Meteo atsisiunčia GFS modelio profilį virš abiejų stočių (slėgį, temperatūrą ir drėgmę prie žemės ir lygiuose nuo 1000 iki 500 hPa, artimiausiai valandai per 6 valandas), lygių aukščius apskaičiuoja hipsometrine lygtimi (virtualioji temperatūra), o refraktyvumą – Rekomendacijos ITU-R P.453 formule:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+kur P ir e (garų slėgis, pagal Magnuso formulę) yra hPa, o T – kelvinais. Virš viršutinio lygio N mažėja eksponentiškai, skalės aukštis 7,35 km. Jei GFS neatsako, naudojama P.453 etaloninė atmosfera N = 315·exp(−h/7,35), ir ataskaita tai nurodo.
+
+Spindulys sekamas per plonus sferinius sluoksnius pagal sferinės formos Snelio dėsnį (n·r·cos e pastovus) iki pėdsakų aukščio; iš to gaunamas nuotolis aukštyje H ir pakilimo kampo pataisa:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Pavyzdys su etalonine atmosfera ir pėdsakais 89,5 km aukštyje: ties 0° nuotolis padidėja nuo 1061,5 iki maždaug 1133 km (+72 km), o taškas atrodo 0,62° aukščiau; ties 4° nuotolis padidėja 14 km, pataisa 0,20°; virš 10° poveikis nereikšmingas. Pataisa taikoma pakilimo kampui į vidurio tašką, bendros zonos spinduliui, karštiesiems taškams ir efektyvumo žemėlapio taškams; taškai žemiau refraguoto horizonto atmetami. Ataskaita ją pateikia eilutėje „Refrakcija“.
+
+Ekvivalentinis Žemės spindulys k = 4/3 tinka spinduliams, kurie lieka pirmuosiuose troposferos kilometruose, kur N mažėja apie 40 vienetų per km. Spindulys į pėdsaką 90 km aukštyje kerta visą troposferą, o virš 10-15 km, kur N beveik nulinis, eina beveik tiesiai: su k = 4/3 visame kilime nuotolis ties 0° būtų apie 1230 km, beveik 100 km daugiau nei sekto spindulio. Todėl programa seka spindulį GFS profilyje, kaip autoriaus LIVETROPOVHF daro troposferiniam sklidimui, užuot naudojusi k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Bendrosios zonos ribos
 
 **Šaltinis:** straipsnyje nustatomos kreivių sankirtos, kur kiekvienos stoties horizontas susitinka su E sluoksniu: dviejų apskritimų, kurių kampinis spindulys ρ = d_H/r ir centrai A ir B, sankirtos [19–20]:

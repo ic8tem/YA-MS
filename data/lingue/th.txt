@@ -879,3 +879,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	ภาษาอย�
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - ตารางอัตราขยายของ Yagi สำหรับ 50, 144 และ 432 MHz (dxmaps.com): เส้นตรงเฉลี่ยของแต่ละย่าน,\n    50 MHz G(dBi) = 7.36 log(L/lambda) + 11.67; 144 MHz 8.27 log + 11.31; 432 MHz 8.68 log + 11.03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, หน้า 130-138: เส้นโค้งอัตราขยายตามความยาวบูม,\n    2.35 dB ต่ออ็อกเทฟ, G(dBi) = 7.81 log(L/lambda) + 11.35 (W8IO, w8io.com ให้ไว้เป็น 7.773 log + 11.43); ใช้เปรียบเทียบ
 (stima poco precisa: boom fuori dal campione VE7BQH)	(ค่าประมาณไม่แม่นยำ: บูมอยู่นอกตัวอย่างของ VE7BQH)
+Aggiorna da IPRMO	อัปเดตจาก IPRMO
+Collm, Germania (radar 36,2 MHz)	Collm เยอรมนี (เรดาร์ 36.2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	การนับด้วยมือของผู้สังเกตชาวญี่ปุ่น (HROFFT) ของเสียงสะท้อนจากบีคอน HAM สำหรับสังเกตดาวตก เผยแพร่รายเดือนโดย IPRMO ช้าไปไม่กี่สัปดาห์: ใช้สำหรับการปรับเทียบและประวัติ ไม่ใช่การพยากรณ์แบบสด ผู้สังเกตแต่ละคนมีสายอากาศและเครื่องรับต่างกัน: ให้เปรียบเทียบเดือนของผู้สังเกตคนเดียวกัน ไม่ใช่ผู้สังเกตต่างคน แปลงค่าตามกฎของ SM6FHZ (λ^k, ตัวคูณ K) ที่ตั้งไว้ในแท็บนี้
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	ค่านับตั้งต้นของการพยากรณ์ รายการญี่ปุ่น (การนับอัตโนมัติของ HROFFT ที่โอกากิบนบีคอน HAM 53 MHz ทุก 10 นาที) จะแสดงเฉพาะเมื่อ QTH อยู่ห่างจากญี่ปุ่นไม่เกิน 3500 km
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	ค่านับรายชั่วโมงของผู้สังเกตชาวญี่ปุ่นบนบีคอน HAM 53 MHz (JA2SDA, JE3AKE, JJ1RLQ) จากไฟล์รายเดือนของ IPRMO: ค่าเฉลี่ยต่อชั่วโมง UTC ที่แปลงไปยังความถี่ปลายทาง และผลรวมรายวัน
+Fonte dei conteggi	แหล่งที่มาของค่านับ
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	แหล่งที่มา: {0} การนับอัตโนมัติของ HROFFT ทุก 10 นาที สูงกว่าการนับด้วยมือเล็กน้อย: เป็นค่าสัมพัทธ์ ต้องปรับเทียบกับไฟล์รายเดือน RMOJ (ปุ่มญี่ปุ่น)
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	ไม่มี GFS ({0}): ใช้บรรยากาศอ้างอิง ITU-R P.453
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	ญี่ปุ่นแบบสด: {0} {1} {2:F3} MHz (โอกากิ)
+Giappone: conteggi HRO mensili (IPRMO)	ญี่ปุ่น: ค่านับ HRO รายเดือน (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	ญี่ปุ่น: ค่านับ HRO รายเดือน (IPRMO)...
+Media del mese per ora UTC - {0}	ค่าเฉลี่ยรายเดือนต่อชั่วโมง UTC - {0}
+Mese	เดือน
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	ไม่มีข้อมูลจากโอกากิ: กำลังรอภาพ HROFFT (ทุก 10 นาที)
+Nessun dato: premi Aggiorna da IPRMO.	ไม่มีข้อมูล: กด อัปเดตจาก IPRMO
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	ชั่วโมงที่ใช้ได้ {0} ในนั้นเป็นค่าประมาณ (น้อยกว่า 60 นาที) {1}; ชั่วโมงที่หายหรือถูกรบกวน {2}; ชั่วโมงที่มี E แบบเกิดเป็นครั้งคราวที่ตัดออก {3}
+Osservatore	ผู้สังเกต
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	ผู้สังเกต: {0} ({1}) บีคอน: {2} {3} ({4:F3} MHz) ตารางเป็น {5} แปลงเป็น UTC แล้ว
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	การหักเห         +{0:F2}° ไปทางจุดกึ่งกลาง ระยะที่ความสูงของรอย +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	การหักเห         ไม่ใช้ (ไม่ได้ติ๊ก): เรขาคณิตแบบรังสีตรง
+Rifrazione troposferica (GFS)	การหักเหในชั้นโทรโพสเฟียร์ (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	ปิดเมื่อเริ่ม (ค่าระมัดระวัง) เปิด: โปรแกรมดาวน์โหลดโปรไฟล์อุณหภูมิและความชื้นเหนือทั้งสองสถานีจากแบบจำลอง GFS แล้วติดตามรังสีขึ้นไปจนถึงความสูงของรอย จุดต่ำจะดูสูงขึ้นเล็กน้อยและเขตร่วมกว้างขึ้น (ราว 60-70 km ที่ขอบฟ้า) เหนือ 10° ผลกระทบน้อยจนตัดทิ้งได้ ไม่ใช้ k = 4/3 ซึ่งใช้กับรังสีที่อยู่ในโทรโพสเฟียร์ทั้งหมด
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	ผลรวมรายวัน (วันที่มีข้อมูลอย่างน้อย 20 ชั่วโมง ปรับเป็น 24 ชั่วโมง)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	การแปลง: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	เส้นทางบีคอน → ผู้สังเกต {0:F0} km จุดกึ่งกลาง {1}
+atmosfera di riferimento ITU-R P.453	บรรยากาศอ้างอิง ITU-R P.453
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	การนับอัตโนมัติของ HROFFT ที่โอกากิ บีคอน {0} {1}
+dati GFS incompleti	ข้อมูล GFS ไม่ครบ
+echi al giorno (UTC)	เสียงสะท้อนต่อวัน (UTC)
+echi/giorno	เสียงสะท้อน/วัน
+echi/ora	เสียงสะท้อน/ชั่วโมง
+ora fuori dalla previsione GFS	เวลาอยู่นอกการพยากรณ์ GFS
+profili {0} su {1} e {2}	โปรไฟล์ {0} เหนือ {1} และ {2}
+scarico...	กำลังดาวน์โหลด...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	อ่านภาพแล้ว {0} ภาพ ล่าสุดเวลา {1} UTC
+{0} mesi disponibili, {1} scaricati ora	มี {0} เดือน ดาวน์โหลดตอนนี้ {1}

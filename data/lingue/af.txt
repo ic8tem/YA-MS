@@ -877,3 +877,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	Die taal is ook reg
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - Yagi-winstabelle vir 50, 144 en 432 MHz (dxmaps.com): gemiddelde reguitlyn per band,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, bl. 130-138: kurwe van wins teenoor boomlengte,\n    2,35 dB per oktaaf, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, gee dit as 7,773 log + 11,43); ter vergelyking
 (stima poco precisa: boom fuori dal campione VE7BQH)	(onakkurate skatting: boom buite die VE7BQH-steekproef)
+Aggiorna da IPRMO	Werk by van IPRMO
+Collm, Germania (radar 36,2 MHz)	Collm, Duitsland (radar 36,2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	Handtellings deur Japannese waarnemers (HROFFT) van die eggo's van die HAM-bakens vir meteoorwaarneming, maandeliks deur IPRMO gepubliseer met 'n paar weke vertraging: hulle dien vir kalibrasie en geskiedenis, nie vir die lewendige voorspelling nie. Elke waarnemer het 'n ander antenna en ontvanger: vergelyk maande van dieselfde waarnemer, nie verskillende waarnemers nie. Omskakeling met die reëls van SM6FHZ (λ^k, faktor K) wat in hierdie oortjie gestel is.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	Begintellings van die voorspelling. Die Japan-inskrywings (outomatiese HROFFT-telling by Ogaki op die 53 MHz HAM-bakens, elke 10 minute) verskyn net as die QTH binne 3500 km van Japan is.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	Uurlikse tellings van Japannese waarnemers op die 53 MHz HAM-bakens (JA2SDA, JE3AKE, JJ1RLQ), uit die maandlêers van IPRMO: gemiddelde per UTC-uur omgeskakel na die aankomsfrekwensie, en daaglikse totale.
+Fonte dei conteggi	Bron van die tellings
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	Bron: {0}. Outomatiese HROFFT-telling elke 10 minute, effens hoër as die handtelling: 'n relatiewe waarde, te kalibreer met die RMOJ-maandlêers (knoppie Japan).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS nie beskikbaar nie ({0}): gebruik die ITU-R P.453-verwysingsatmosfeer
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	Japan lewendig: {0} {1} {2:F3} MHz (Ogaki)
+Giappone: conteggi HRO mensili (IPRMO)	Japan: maandelikse HRO-tellings (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	Japan: maandelikse HRO-tellings (IPRMO)...
+Media del mese per ora UTC - {0}	Maandgemiddelde per UTC-uur - {0}
+Mese	Maand
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	Geen data van Ogaki nie: wag vir die HROFFT-beelde (een elke 10 minute).
+Nessun dato: premi Aggiorna da IPRMO.	Geen data nie: druk Werk by van IPRMO.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	Geldige ure {0}, waarvan geskat (minder as 60 minute) {1}; verlore of versteurde ure {2}; ure met sporadiese E uitgesluit {3}.
+Osservatore	Waarnemer
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	Waarnemer: {0} ({1}). Baken: {2} {3} ({4:F3} MHz). Tabel in {5}, na UTC omgeskakel.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	Refraksie       +{0:F2}° na die middelpunt, bereik op spoorhoogte +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	Refraksie       nie toegepas nie (blokkie af): meetkunde met reguit strale
+Rifrazione troposferica (GFS)	Troposferiese refraksie (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	Af by begin (versigtige waarde). Aan: die program laai uit die GFS-model die temperatuur- en humiditeitsprofiel bo die twee stasies af en volg die straal tot by die spoorhoogte. Lae punte lyk effens hoër en die gemeenskaplike sone word wyer (sowat 60-70 km by die horison); bo 10° is die effek weglaatbaar. Dit gebruik nie k = 4/3 nie, wat vir strale geheel binne die troposfeer geld.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	Daaglikse totaal (dae met minstens 20 uur data, na 24 uur herlei)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	Omskakeling: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	Pad baken → waarnemer {0:F0} km, middelpunt {1}.
+atmosfera di riferimento ITU-R P.453	ITU-R P.453-verwysingsatmosfeer
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	outomatiese HROFFT-telling by Ogaki, baken {0} {1}
+dati GFS incompleti	onvolledige GFS-data
+echi al giorno (UTC)	eggo's per dag (UTC)
+echi/giorno	eggo's/dag
+echi/ora	eggo's/uur
+ora fuori dalla previsione GFS	tyd buite die GFS-voorspelling
+profili {0} su {1} e {2}	profiele {0} oor {1} en {2}
+scarico...	laai af...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	{0} beelde nou gelees, laaste om {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} maande beskikbaar, {1} nou afgelaai

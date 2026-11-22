@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Controle:** H = 89,5 km, e = 0° → **1062 km**. In het voorbeeld uit het artikel (JN44BB–IO53RT) legt de tekening de horizonsnijpunten op ongeveer 870 km van de stations, wat overeenkomt met een bundel die ongeveer 2° is opgeheven (865 km).
 
+## Troposferische refractie (GFS)
+
+Troposferische refractie (vakje "Troposferische refractie (GFS)", uit bij het starten). Met het vakje aan haalt het programma bij Open-Meteo het profiel van het GFS-model boven de twee stations op (druk, temperatuur en vochtigheid aan de grond en op de niveaus van 1000 tot 500 hPa, op het dichtstbijzijnde uur binnen 6 uur), bepaalt de hoogten van de niveaus met de hypsometrische vergelijking (virtuele temperatuur) en de refractiviteit met de formule van Aanbeveling ITU-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+met P en e (dampdruk, uit de formule van Magnus) in hPa en T in kelvin. Boven het hoogste niveau neemt N exponentieel af met een schaalhoogte van 7,35 km. Als het GFS niet antwoordt, wordt de referentieatmosfeer van P.453 gebruikt, N = 315·exp(−h/7,35), en het verslag vermeldt dat.
+
+De straal wordt door dunne bolschillen gevolgd met de wet van Snellius in bolvorm (n·r·cos e constant) tot de spoorhoogte; daaruit volgen het bereik op hoogte H en de correctie van de elevatie:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Voorbeeld met de referentieatmosfeer en sporen op 89,5 km: bij 0° gaat het bereik van 1061,5 naar ongeveer 1133 km (+72 km) en lijkt het punt 0,62° hoger; bij 4° groeit het bereik met 14 km en is de correctie 0,20°; boven 10° is het effect verwaarloosbaar. De correctie geldt voor de elevatie naar het middelpunt, de straal van de gemeenschappelijke zone, de hot spots en de punten van de efficiëntiekaart; punten onder de gebroken horizon vallen weg. Het verslag geeft haar op de regel "Refractie".
+
+De equivalente aardstraal k = 4/3 geldt voor stralen die in de eerste kilometers van de troposfeer blijven, waar N met ongeveer 40 eenheden per km afneemt. De straal naar een spoor op 90 km doorkruist de hele troposfeer en gaat boven 10-15 km, waar N bijna nul is, vrijwel recht verder: met k = 4/3 over de hele klim zou het bereik bij 0° ongeveer 1230 km zijn, bijna 100 km meer dan de gevolgde straal. Daarom volgt het programma de straal in het GFS-profiel, zoals LIVETROPOVHF van de auteur doet voor troposferische propagatie, in plaats van k = 4/3 te gebruiken.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Grenzen van de gemeenschappelijke zone
 
 **Bron:** het artikel bepaalt de snijpunten van de curven waar de horizon van elk station de E-laag raakt: de snijpunten van twee cirkels met hoekstraal ρ = d_H/r rond A en B [19–20]:

@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB cere ca **programele automate să nu-i descarce fișierele**. Din acest motiv, **descărcarea automată este dezactivată** la pornire și ar trebui activată **doar după ce ați cerut permisiunea RMOB**. Fără ea puteți folosi oricând **Încarcă fișier RMOB de pe disc...** sau puteți apăsa **Descarcă RMOB acum** când aveți nevoie.
 
 Adresa de descărcare este un șablon în `config.ini` (cheia `rmob_url`, implicit `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, unde `{NOME}` este observatorul și `{MMAAAA}` luna și anul); fișierele descărcate se păstrează în `data/radar/`.
+
+## Numărători HRO din Japonia (IPRMO și Ogaki)
+
+Sursa numărătorilor: implicit Collm (radar 36,2 MHz). Dacă stația ta se află la cel mult 3500 km de Japonia, apar și intrările "Japonia în direct" (balizele JA2SDA la Toyokawa și JE3AKE la Otsu, 53 MHz), cu numărătorile automate HROFFT publicate de Ogaki la fiecare 10 minute; alegerea se salvează.
+
+Japonia: numărători HRO lunare (IPRMO)...: deschide fereastra cu numărătorile orare manuale ale observatorilor japonezi din fișierele lunare RMOJ. Alege luna și observatorul; Actualizează de la IPRMO descarcă lunile noi. Primul grafic este media lunii pe oră UTC transpusă la frecvența ta, al doilea totalurile zilnice.
+
+Numărarea automată HROFFT dă între 30 și 130 de ecouri la fiecare 10 minute, mult mai mult decât numărătorile manuale din fișierele RMOJ, pentru că numără și ecourile slabe și perturbațiile: este o valoare relativă, de calibrat cu fișierele lunare ale aceleiași balize. Limita de 3500 km rezervă sursa stațiilor din Asia de Est, care văd aceiași radianți la aceleași ore; pentru Europa rămâne Collm.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

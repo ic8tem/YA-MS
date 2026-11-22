@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Ověření:** H = 89,5 km, e = 0° → **1062 km**. V příkladu z článku (JN44BB–IO53RT) klade výkres průsečíky obzoru asi 870 km od stanic, což odpovídá laloku zvednutému asi o 2° (865 km).
 
+## Troposférická refrakce (GFS)
+
+Troposférická refrakce (políčko "Troposférická refrakce (GFS)", při spuštění vypnuté). Se zapnutým políčkem program stáhne z Open-Meteo profil modelu GFS nad oběma stanicemi (tlak, teplotu a vlhkost u země a na hladinách od 1000 do 500 hPa, pro nejbližší hodinu do 6 hodin), určí výšky hladin hypsometrickou rovnicí (virtuální teplota) a refraktivitu vzorcem Doporučení ITU-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+kde P a e (tlak páry, z Magnusova vzorce) jsou v hPa a T v kelvinech. Nad nejvyšší hladinou N klesá exponenciálně s výškou škály 7,35 km. Pokud GFS neodpoví, použije se referenční atmosféra P.453, N = 315·exp(−h/7,35), a zpráva to uvede.
+
+Paprsek se sleduje tenkými kulovými slupkami podle Snellova zákona ve sférickém tvaru (n·r·cos e konstantní) až do výšky stop; z toho vyplývá dosah ve výšce H a oprava elevace:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Příklad s referenční atmosférou a stopami v 89,5 km: při 0° roste dosah z 1061,5 na asi 1133 km (+72 km) a bod se jeví o 0,62° výše; při 4° roste dosah o 14 km a oprava je 0,20°; nad 10° je vliv zanedbatelný. Oprava se uplatní na elevaci k bodu uprostřed, na poloměr společné zóny, na hot spoty a na body mapy účinnosti; body pod lomeným obzorem se vyřadí. Zpráva ji uvádí na řádku "Refrakce".
+
+Ekvivalentní poloměr Země k = 4/3 platí pro paprsky, které zůstávají v prvních kilometrech troposféry, kde N klesá asi o 40 jednotek na km. Paprsek ke stopě v 90 km prochází celou troposférou a nad 10-15 km, kde je N téměř nulové, pokračuje téměř přímo: s k = 4/3 na celém stoupání by dosah při 0° byl asi 1230 km, téměř o 100 km více než u sledovaného paprsku. Proto program sleduje paprsek v profilu GFS, jak to dělá autorův LIVETROPOVHF pro troposférické šíření, místo použití k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Meze společné zóny
 
 **Zdroj:** článek umisťuje průsečíky křivek tam, kde obzor každé stanice protíná vrstvu E: jsou to průsečíky dvou kružnic s úhlovým poloměrem ρ = d_H/r se středy v A a B [19–20]:

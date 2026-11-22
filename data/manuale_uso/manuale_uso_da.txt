@@ -64,6 +64,7 @@ H2|4.2 Række 1: E-lag og antenne
 LI|Sporhøjde km og fra radar: meteorsporenes højde. Med »fra radar« markeret bruges den hyppigste højde målt af Collm-radaren (normalt 88-90 km); fjern markeringen for at indtaste den manuelt.
 LI|Lapelevation °: elevationen af maksimum i din antennes lodrette lap. En retningsantenne, der er fastgjort på 0°, har alligevel hovedlappen nogle grader over horisonten på grund af refleksionen i jorden: normalt 3-8°, afhængigt af antennens højde i bølgelængder.
 LI|antennediagram: slået til (standard) tæller refleksionspunkterne med de to antenners lodrette forstærkning: fuld omkring lappens maksimum og stadig mindre mod horisonten og opad. Slået fra er lapelevationen en skarp grænse: punkter, der ses lavere, tæller ikke.
+LI|Troposfærisk refraktion (GFS): slået fra ved start. Slået til henter programmet fra GFS-modellen temperatur- og fugtighedsprofilen over de to stationer og tager højde for strålens krumning op til sporhøjden: lave punkter ses lidt højere, og den fælles zone bliver bredere. Svarer GFS ikke, bruges en gennemsnitlig atmosfære. Rapporten under Geometri og dæmpning angiver det i linjen "Refraktion".
 LI|Yagi-antenne: bom m: bommens længde. Ved siden af skriver programmet længden i bølgelængder, forstærkningen (middellinje for båndets VE7BQH-tabeller) og −3 dB-loben vandret og lodret. Ligger bommen uden for båndets VE7BQH-stikprøve, er vurderingen grov.
 LI|Hot spot fra midtpunkt km og auto (AMS): afstanden fra Hot A og Hot B til midtpunktet. Med »auto (AMS)« markeret følges J. Richardsons tabel, citeret af DJ5HG (13° afvigelse ved 1000 km, 10° over 1500 km); fjern markeringen for at indtaste 30-400 km manuelt (MSHV bruger 150 km).
 TAG|ATTENZIONE|Med »antennediagram« slået fra og lappen nogle grader oppe kan de to stationer på en lang strækning risikere ikke at se noget fælles punkt i laget: alle effektiviteter er 0, og advarslen »INGEN FÆLLES ZONE« vises med den lap eller sporhøjde, der ville være nødvendig. Eksempel: JN70CN - JO76QP, 1791 km, lap ved 3°, spor i 88,5 km.
@@ -153,12 +154,15 @@ H2|8.1 Betjeningselementerne
 LI|Målfrekvens MHz: prognosens frekvens.
 LI|λ^k-eksponent (3, SM6FHZ) og Stationsfaktor K (1): regel for frekvensen og korrektion for din station.
 LI|k fra populationsindekserne: foreslår k ud fra populationsindekserne r for de aktive sværme (GMN, ellers IMO; k = 3,75 · log10 r, vægtet med ZHR) og beder om bekræftelse, før det anvendes.
+LI|Kilde til tællingerne: som standard Collm (radar 36,2 MHz). Ligger din station inden for 3500 km fra Japan, vises også punkterne "Japan live" (fyrene JA2SDA i Toyokawa og JE3AKE i Otsu, 53 MHz) med de automatiske HROFFT-tællinger, som Ogaki offentliggør hvert 10. minut; valget gemmes.
+LI|Japan: månedlige HRO-tællinger (IPRMO)...: åbner vinduet med de japanske observatørers timevise håndtællinger fra RMOJ-månedsfilerne. Vælg måned og observatør; Opdater fra IPRMO henter de nye måneder. Første diagram er månedsgennemsnittet pr. UTC-time omregnet til din frekvens, andet døgntotalerne.
 LI|Indlæs RMOB-fil fra disken og Udled eksponenten fra RMOB-filen: læser en månedlig RMOB-fil og udleder k fra de timer, der er fælles med Collm.
 LI|RMOB-observatør, Hent RMOB nu og automatisk hentning hvert 5. minut: den automatiske hentning er slået fra og må kun slås til med tilladelse fra RMOB. Disse kommandoer er under fanen Indstillinger.
 H2|8.2 Resultaterne
 LI|Grafen for i går og i dag: meteorer pr. time i Collm, værdier skaleret til din frekvens og, hvis de er indlæst, RMOB-tællingerne.
 LI|Prognosen for de næste 24 timer: samme time dagen før, korrigeret for ændringen i strækningens sværmindeks.
 LI|Tabellen med vurderingen: god, middel eller dårlig i forhold til gennemsnittet for de 24 timer.
+TAG|NOTA|De automatiske tællinger fra Ogaki er højere end håndtællingerne: det er relative værdier. For at kalibrere dem skal du sammenligne dem i Japan-vinduet med samme fyrs RMOJ-månedsfiler.
 TAG|NOTA|Refleksionernes varighed følger valget »Pingenes varighed mellem båndene« i Geometri og dæmpning; i forward scatter vokser varigheden også med sec²φ i strækningens midtpunkt.
 H1|9. Live og realtidsdata
 H2|9.1 Live-trafik
@@ -228,6 +232,7 @@ LI|sciami.csv, massimi_imo.csv, ant_radiante.csv: sværmkataloget og Antihelion-
 LI|flusso_collm.csv, quote_collm.csv: arkiver fra Collm-radaren; radar/: seneste billeder, RMOB-filer og data fra live-kilderne; fonti_radar.csv: kildernes adresser, som kan aktiveres én for én.
 LI|cataloghi/: IAU MDC-kataloget; radar/diretta/: GMN- og CMOR-data.
 LI|call3.txt: lokatorarkiv; spot_ms/: indsamlede meteor scatter-spots; adif_quadrati.csv: felter fra ADIF-filen.
+LI|radar/rmoj/: RMOJ-månedsfiler fra Japan; radar/hro_ogaki_*.csv: tællinger fra Ogaki for de sidste 3 dage; radar/gfs_*.json: GFS-profiler til refraktionen (gyldige i 3 timer).
 LI|efficienza_spiegazione.*, spiegazione/, manuale_uso.*, manuale_uso/: de tekniske dokumenter.
 LI|backup/: kopier af filer, der er erstattet af en opdatering; aggiornamento/: hentet pakke (slettes ved genstart).
 H2|13.3 Fanen Indstillinger
@@ -237,6 +242,7 @@ LI|controlla_aggiornamenti=0: kontrollér ikke for nye versioner; aggiornamenti_
 LI|lobo_diagramma, angolo_beta, lunghezza_scie, giudizio_classico: beregningens afkrydsningsfelter.
 LI|raggio_iniziale (0 = dobbelt ITU-værdi, 1 = ITU, 2 = udeladt), durata_ping (0 = λ², 1 = observeret).
 LI|rmob_osservatore, rmob_automatico, rmob_url: RMOB.
+LI|rifrazione_gfs (0 = fra, 1 = til), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: refraktion og japanske kilder.
 LI|psk_rimando=0: slår videresendelse til PSKReporter af MS-dekodninger (MSK144, FSK441, PSK2K, JTMS) modtaget via UDP fra. Den er tændt fra start og virker af sig selv: mangler dit kaldesignal i mere end 20 minutter blandt stationerne, der sender rapporter til PSKReporter (det digitale program sender ikke), sender YA-MS hvert 5. minut de MS-stationer, du dekoder, med dig som modtager; så snart det digitale program sender igen, stopper YA-MS. En linje i UDP-konsollen viser, hvornår den starter og stopper. Er afsendelse til PSKReporter slået fra i WSJT-X.ini (eller JTDX.ini), videresender YA-MS straks uden at vente 20 minutter.
 TAG|ATTENZIONE|Redigér kun config.ini, mens programmet er lukket: når YA-MS lukkes, skriver det filen igen.
 H1|14. Typiske fremgangsmåder

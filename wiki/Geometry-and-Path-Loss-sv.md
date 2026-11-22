@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Kontroll:** H = 89,5 km, e = 0° → **1062 km**. I artikelns exempel (JN44BB–IO53RT) placerar ritningen horisontkorsningarna omkring 870 km från stationerna, vilket motsvarar en lob som är upplyft omkring 2° (865 km).
 
+## Troposfärisk refraktion (GFS)
+
+Troposfärisk refraktion (rutan "Troposfärisk refraktion (GFS)", av vid start). Med rutan ikryssad hämtar programmet från Open-Meteo GFS-modellens profil över de två stationerna (tryck, temperatur och fuktighet vid marken och på nivåerna från 1000 till 500 hPa, vid närmaste timme inom 6 timmar), beräknar nivåernas höjder med den hypsometriska ekvationen (virtuell temperatur) och refraktiviteten med formeln i Rekommendation ITU-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+med P och e (ångtryck, från Magnus formel) i hPa och T i kelvin. Över den översta nivån avtar N exponentiellt med en skalhöjd på 7,35 km. Svarar inte GFS används referensatmosfären från P.453, N = 315·exp(−h/7,35), och rapporten säger det.
+
+Strålen följs genom tunna sfäriska skal med Snells lag i sfärisk form (n·r·cos e konstant) upp till spårhöjden; därav fås räckvidden på höjden H och korrektionen av elevationen:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Exempel med referensatmosfären och spår på 89,5 km: vid 0° går räckvidden från 1061,5 till cirka 1133 km (+72 km) och punkten syns 0,62° högre; vid 4° ökar räckvidden med 14 km och korrektionen är 0,20°; över 10° är effekten försumbar. Korrektionen gäller elevationen mot mittpunkten, radien för den gemensamma zonen, hot spots och punkterna på effektivitetskartan; punkter under den brutna horisonten förkastas. Rapporten anger den på raden "Refraktion".
+
+Den ekvivalenta jordradien k = 4/3 gäller för strålar som stannar i troposfärens första kilometrar, där N minskar med cirka 40 enheter per km. Strålen mot ett spår på 90 km korsar hela troposfären och fortsätter över 10-15 km, där N är nästan noll, nästan rakt: med k = 4/3 över hela stigningen skulle räckvidden vid 0° bli cirka 1230 km, nästan 100 km mer än den följda strålen. Därför följer programmet strålen i GFS-profilen, som författarens LIVETROPOVHF gör för troposfärisk utbredning, i stället för att använda k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Gränser för den gemensamma zonen
 
 **Källa:** artikeln anger skärningspunkterna mellan de kurvor där varje stations horisont möter E-skiktet: skärningarna mellan två cirklar med vinkelradien ρ = d_H/r centrerade på A och B [19–20]:

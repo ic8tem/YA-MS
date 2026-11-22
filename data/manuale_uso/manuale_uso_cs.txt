@@ -64,6 +64,7 @@ H2|4.2 Řádek 1: vrstva E a anténa
 LI|Výška stop km a z radaru: výška meteorických stop. Při zaškrtnutém „z radaru“ se použije nejčastější výška naměřená radarem Collm (obvykle 88-90 km); zrušte zaškrtnutí, chcete-li ji zadat ručně.
 LI|Elevace laloku °: elevace maxima svislého laloku vaší antény. Směrovka nastavená na 0° má hlavní lalok přesto několik stupňů nad horizontem, kvůli odrazu od země: obvykle 3-8°, podle výšky antény ve vlnových délkách.
 LI|diagram antény: zapnuto (výchozí) – body odrazu se započítávají se svislým ziskem obou antén: plně kolem maxima laloku, stále méně směrem k horizontu a nahoru. Vypnuto – elevace laloku je ostrá mez: body viděné níže se nezapočítávají.
+LI|Troposférická refrakce (GFS): při spuštění vypnutá. Zapnutá, program stáhne z modelu GFS profil teploty a vlhkosti nad oběma stanicemi a zohlední zakřivení paprsku až do výšky stop: nízké body se jeví o něco výše a společná zóna se rozšíří. Pokud GFS neodpoví, použije průměrnou atmosféru. Zpráva záložky Geometrie a útlum to uvádí na řádku "Refrakce".
 LI|Anténa Yagi: ráhno m: délka ráhna. Vedle program píše délku ve vlnových délkách, zisk (střední přímka tabulek VE7BQH pro pásmo) a lalok −3 dB vodorovně a svisle. Je-li ráhno mimo vzorek VE7BQH pro pásmo, odhad je hrubý.
 LI|Hot spot od středu trasy km a auto (AMS): vzdálenost Hot A a Hot B od středu trasy. Při zaškrtnutém „auto (AMS)“ se řídí tabulkou J. Richardsona citovanou DJ5HG (odchylka 13° při 1000 km, 10° nad 1500 km); zrušte zaškrtnutí, chcete-li ručně zadat 30-400 km (MSHV používá 150 km).
 TAG|ATTENZIONE|Při vypnutém „diagram antény“ a laloku na několika stupních nemusí na dlouhé trase obě stanice vidět žádný společný bod vrstvy: všechny účinnosti jsou 0 a zobrazí se upozornění „ŽÁDNÁ SPOLEČNÁ ZÓNA“ s lalokem nebo výškou stop, které by byly potřeba. Příklad: JN70CN - JO76QP, 1791 km, lalok na 3°, stopy v 88,5 km.
@@ -153,12 +154,15 @@ H2|8.1 Ovládací prvky
 LI|Cílový kmitočet MHz: kmitočet předpovědi.
 LI|Exponent λ^k (3, SM6FHZ) a Faktor stanice K (1): pravidlo pro kmitočet a korekce pro vaši stanici.
 LI|k z populačních indexů: navrhne k z populačních indexů r aktivních rojů (GMN, jinak IMO; k = 3,75 · log10 r, váženo ZHR) a před použitím požádá o potvrzení.
+LI|Zdroj počtů: výchozí je Collm (radar 36,2 MHz). Je-li vaše stanice do 3500 km od Japonska, objeví se i položky "Japonsko živě" (majáky JA2SDA v Tojokawě a JE3AKE v Ócu, 53 MHz) s automatickými počty HROFFT, které Ogaki zveřejňuje každých 10 minut; volba se uloží.
+LI|Japonsko: měsíční počty HRO (IPRMO)...: otevře okno s hodinovými ručními počty japonských pozorovatelů z měsíčních souborů RMOJ. Zvolte měsíc a pozorovatele; Aktualizovat z IPRMO stáhne nové měsíce. První graf je průměr měsíce za hodinu UTC přepočtený na vaši frekvenci, druhý denní součty.
 LI|Načíst soubor RMOB z disku a Odvodit exponent ze souboru RMOB: načtou měsíční soubor RMOB a odvodí k z hodin společných s Collm.
 LI|Pozorovatel RMOB, Stáhnout RMOB nyní a automatické stahování každých 5 minut: automatické stahování je vypnuté a zapínejte ho jen se svolením RMOB. Tyto příkazy jsou na záložce Nastavení.
 H2|8.2 Výsledky
 LI|Graf včerejška a dneška: meteory za hodinu v Collm, hodnoty převedené na váš kmitočet a, jsou-li načteny, počty RMOB.
 LI|Předpověď na příštích 24 hodin: stejná hodina předchozího dne, korigovaná o změnu indexu rojů pro trasu.
 LI|Tabulka s hodnocením: dobré, střední nebo slabé vzhledem k průměru 24 hodin.
+TAG|NOTA|Automatické počty z Ogaki jsou vyšší než ruční: jsou to relativní hodnoty. Pro kalibraci je porovnejte v okně Japonska s měsíčními soubory RMOJ téhož majáku.
 TAG|NOTA|Délka odrazů se řídí volbou „Délka pingů mezi pásmy“ v kartě Geometrie a útlum; při forward scatter roste délka také se sec²φ ve středu trasy.
 H1|9. Živě a data v reálném čase
 H2|9.1 Provoz živě
@@ -228,6 +232,7 @@ LI|sciami.csv, massimi_imo.csv, ant_radiante.csv: katalog rojů a poloha Antihel
 LI|flusso_collm.csv, quote_collm.csv: archivy radaru Collm; radar/: poslední snímky, soubory RMOB a data živých zdrojů; fonti_radar.csv: adresy zdrojů, které lze povolit jednotlivě.
 LI|cataloghi/: katalog IAU MDC; radar/diretta/: data GMN a CMOR.
 LI|call3.txt: archiv lokátorů; spot_ms/: sesbírané spoty meteor scatter; adif_quadrati.csv: čtverce z ADIF.
+LI|radar/rmoj/: měsíční soubory RMOJ z Japonska; radar/hro_ogaki_*.csv: počty z Ogaki za poslední 3 dny; radar/gfs_*.json: profily GFS pro refrakci (platné 3 hodiny).
 LI|efficienza_spiegazione.*, spiegazione/, manuale_uso.*, manuale_uso/: technické dokumenty.
 LI|backup/: kopie souborů nahrazených aktualizací; aggiornamento/: stažený balíček (smaže se při restartu).
 H2|13.3 Záložka Nastavení
@@ -237,6 +242,7 @@ LI|controlla_aggiornamenti=0: nekontrolovat nové verze; aggiornamenti_salta: p�
 LI|lobo_diagramma, angolo_beta, lunghezza_scie, giudizio_classico: zaškrtávací políčka výpočtu.
 LI|raggio_iniziale (0 = dvojnásobek ITU, 1 = ITU, 2 = vyloučeno), durata_ping (0 = λ², 1 = pozorovaná).
 LI|rmob_osservatore, rmob_automatico, rmob_url: RMOB.
+LI|rifrazione_gfs (0 = vypnuto, 1 = zapnuto), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: refrakce a japonské zdroje.
 LI|psk_rimando=0: vypne přeposílání dekódování MS (MSK144, FSK441, PSK2K, JTMS) přijatých přes UDP do PSKReporter. Ve výchozím stavu je zapnuté a pracuje samo: pokud vaše značka chybí déle než 20 minut mezi stanicemi posílajícími hlášení do PSKReporter (digitální program neposílá), YA-MS každých 5 minut pošle stanice MS, které dekódujete, s vámi jako přijímačem; jakmile digitální program zase posílá, YA-MS přestane. Řádek v konzoli UDP oznámí začátek a konec. Pokud je ve WSJT-X.ini (nebo JTDX.ini) odesílání do PSKReporter vypnuté, YA-MS přeposílá hned, bez čekání 20 minut.
 TAG|ATTENZIONE|config.ini upravujte jen při zavřeném programu: při zavření jej YA-MS přepíše.
 H1|14. Typické postupy

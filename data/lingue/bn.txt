@@ -877,3 +877,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	ভাষা ওপ
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - 50, 144 ও 432 MHz-এর Yagi গেইন সারণি (dxmaps.com): প্রতিটি ব্যান্ডের গড় সরলরেখা,\n    50 MHz G(dBi) = 7.36 log(L/lambda) + 11.67; 144 MHz 8.27 log + 11.31; 432 MHz 8.68 log + 11.03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, পৃ. 130-138: বুমের দৈর্ঘ্য অনুযায়ী গেইন বক্ররেখা,\n    প্রতি অক্টেভে 2.35 dB, G(dBi) = 7.81 log(L/lambda) + 11.35 (W8IO, w8io.com, এটি 7.773 log + 11.43 হিসেবে দেয়); তুলনার জন্য
 (stima poco precisa: boom fuori dal campione VE7BQH)	(আনুমানিক হিসাব: বুম VE7BQH নমুনার বাইরে)
+Aggiorna da IPRMO	IPRMO থেকে হালনাগাদ
+Collm, Germania (radar 36,2 MHz)	Collm, জার্মানি (রাডার 36.2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	উল্কা পর্যবেক্ষণের HAM বীকনের প্রতিধ্বনির জাপানি পর্যবেক্ষকদের হাতে করা গণনা (HROFFT), যা IPRMO প্রতি মাসে কয়েক সপ্তাহ দেরিতে প্রকাশ করে: এটি ক্রমাঙ্কন ও ইতিহাসের জন্য, সরাসরি পূর্বাভাসের জন্য নয়। প্রত্যেক পর্যবেক্ষকের অ্যান্টেনা ও রিসিভার আলাদা: আলাদা পর্যবেক্ষক নয়, একই পর্যবেক্ষকের মাসগুলো তুলনা করুন। এই ট্যাবে নির্ধারিত SM6FHZ নিয়মে (λ^k, গুণক K) রূপান্তর।
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	পূর্বাভাসের প্রারম্ভিক গণনা। জাপানের বিকল্পগুলো (ওগাকিতে 53 MHz HAM বীকনে HROFFT-এর স্বয়ংক্রিয় গণনা, প্রতি 10 মিনিটে) কেবল তখনই দেখা যায় যখন QTH জাপান থেকে 3500 km-এর মধ্যে।
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	53 MHz HAM বীকনে (JA2SDA, JE3AKE, JJ1RLQ) জাপানি পর্যবেক্ষকদের ঘণ্টাভিত্তিক গণনা, IPRMO-এর মাসিক ফাইল থেকে: আগমন কম্পাঙ্কে রূপান্তরিত প্রতি UTC ঘণ্টার গড় ও দৈনিক মোট।
+Fonte dei conteggi	গণনার উৎস
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	উৎস: {0}। প্রতি 10 মিনিটে HROFFT-এর স্বয়ংক্রিয় গণনা, হাতের গণনার চেয়ে একটু বেশি: আপেক্ষিক মান, RMOJ মাসিক ফাইল (জাপান বোতাম) দিয়ে ক্রমাঙ্কন করতে হবে।
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS পাওয়া যাচ্ছে না ({0}): ITU-R P.453 রেফারেন্স বায়ুমণ্ডল ব্যবহার করছি
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	জাপান সরাসরি: {0} {1} {2:F3} MHz (ওগাকি)
+Giappone: conteggi HRO mensili (IPRMO)	জাপান: মাসিক HRO গণনা (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	জাপান: মাসিক HRO গণনা (IPRMO)...
+Media del mese per ora UTC - {0}	প্রতি UTC ঘণ্টায় মাসিক গড় - {0}
+Mese	মাস
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	ওগাকি থেকে কোনো ডেটা নেই: HROFFT ছবির অপেক্ষা (প্রতি 10 মিনিটে একটি)।
+Nessun dato: premi Aggiorna da IPRMO.	কোনো ডেটা নেই: IPRMO থেকে হালনাগাদ চাপুন।
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	বৈধ ঘণ্টা {0}, তার মধ্যে আনুমানিক (60 মিনিটের কম) {1}; হারানো বা বিঘ্নিত ঘণ্টা {2}; বিক্ষিপ্ত E-সহ বাদ দেওয়া ঘণ্টা {3}।
+Osservatore	পর্যবেক্ষক
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	পর্যবেক্ষক: {0} ({1})। বীকন: {2} {3} ({4:F3} MHz)। সারণি {5}-এ, UTC-তে রূপান্তরিত।
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	প্রতিসরণ         মধ্যবিন্দুর দিকে +{0:F2}°, চিহ্নের উচ্চতায় নাগাল +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	প্রতিসরণ         প্রয়োগ হয়নি (বাক্স বন্ধ): সরল রশ্মির জ্যামিতি
+Rifrazione troposferica (GFS)	ট্রপোস্ফিয়ারিক প্রতিসরণ (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	শুরুতে বন্ধ (সতর্ক মান)। চালু: প্রোগ্রাম GFS মডেল থেকে দুই স্টেশনের ওপরের তাপমাত্রা ও আর্দ্রতার প্রোফাইল নামায় এবং রশ্মিকে চিহ্নের উচ্চতা পর্যন্ত অনুসরণ করে। নিচু বিন্দু একটু উঁচু দেখায় এবং সাধারণ অঞ্চল চওড়া হয় (দিগন্তে প্রায় 60-70 km); 10°-এর ওপরে প্রভাব নগণ্য। পুরোপুরি ট্রপোস্ফিয়ারের ভেতরের রশ্মির জন্য প্রযোজ্য k = 4/3 ব্যবহার করা হয় না।
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	দৈনিক মোট (অন্তত 20 ঘণ্টার ডেটাসহ দিন, 24 ঘণ্টায় রূপান্তরিত)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	রূপান্তর: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}।
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	বীকন → পর্যবেক্ষক পথ {0:F0} km, মধ্যবিন্দু {1}।
+atmosfera di riferimento ITU-R P.453	ITU-R P.453 রেফারেন্স বায়ুমণ্ডল
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	ওগাকিতে HROFFT-এর স্বয়ংক্রিয় গণনা, বীকন {0} {1}
+dati GFS incompleti	অসম্পূর্ণ GFS ডেটা
+echi al giorno (UTC)	দিনপ্রতি প্রতিধ্বনি (UTC)
+echi/giorno	প্রতিধ্বনি/দিন
+echi/ora	প্রতিধ্বনি/ঘণ্টা
+ora fuori dalla previsione GFS	GFS পূর্বাভাসের বাইরের সময়
+profili {0} su {1} e {2}	{1} ও {2}-এর ওপর {0} প্রোফাইল
+scarico...	ডাউনলোড হচ্ছে...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	এখন {0}টি ছবি পড়া হয়েছে, শেষটি {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} মাস উপলব্ধ, এখন {1}টি ডাউনলোড

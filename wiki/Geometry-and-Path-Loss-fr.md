@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Vérification :** H = 89,5 km, e = 0° → **1062 km**. Dans l'exemple de l'article (JN44BB–IO53RT), le dessin place les croisements de l'horizon à environ 870 km des stations, ce qui correspond à un lobe relevé d'environ 2° (865 km).
 
+## Réfraction troposphérique (GFS)
+
+Réfraction troposphérique (case "Réfraction troposphérique (GFS)", décochée au démarrage). Case cochée, le programme télécharge d'Open-Meteo le profil du modèle GFS au-dessus des deux stations (pression, température et humidité au sol et aux niveaux de 1000 à 500 hPa, à l'heure la plus proche dans les 6 heures), en déduit l'altitude des niveaux par l'équation hypsométrique (température virtuelle) et la réfractivité par la formule de la Recommandation UIT-R P.453 :
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+avec P et e (pression de vapeur, par la formule de Magnus) en hPa et T en kelvins. Au-dessus du dernier niveau N décroît de façon exponentielle avec une hauteur d'échelle de 7,35 km. Si le GFS ne répond pas, on utilise l'atmosphère de référence de la P.453, N = 315·exp(−h/7,35), et le compte rendu le signale.
+
+Le rayon est tracé à travers de fines couches sphériques avec la loi de Snell sous forme sphérique (n·r·cos e constant) jusqu'à l'altitude des traînées ; on en tire la portée à l'altitude H et la correction de l'élévation :
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Exemple avec l'atmosphère de référence et des traînées à 89,5 km : à 0° la portée passe de 1061,5 à environ 1133 km (+72 km) et le point paraît 0,62° plus haut ; à 4° la portée augmente de 14 km et la correction vaut 0,20° ; au-dessus de 10° l'effet est négligeable. La correction s'applique à l'élévation vers le point milieu, au rayon de la zone commune, aux hot spots et aux points de la carte d'efficacité ; les points sous l'horizon réfracté sont écartés. Le compte rendu l'indique à la ligne "Réfraction".
+
+Le rayon terrestre équivalent k = 4/3 vaut pour des rayons qui restent dans les premiers kilomètres de la troposphère, où N diminue d'environ 40 unités par km. Le rayon vers une traînée à 90 km traverse toute la troposphère et, au-dessus de 10-15 km, où N est presque nul, continue presque droit : avec k = 4/3 sur toute la montée, la portée à 0° serait d'environ 1230 km, près de 100 km de plus que le rayon tracé. C'est pourquoi le programme trace le rayon dans le profil GFS, comme le fait LIVETROPOVHF de l'auteur pour la propagation troposphérique, au lieu d'utiliser k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Limites de la zone commune
 
 **Source :** l'article situe les croisements des courbes où l'horizon de chaque station rencontre la couche E : les intersections de deux cercles de rayon angulaire ρ = d_H/r centrés sur A et B [19–20] :

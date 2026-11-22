@@ -877,3 +877,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	Keel on ka üleval 
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - Yagi võimendustabelid sagedustele 50, 144 ja 432 MHz (dxmaps.com): sirge keskmine iga sagedusala kohta,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, lk 130-138: võimenduse sõltuvus poomi pikkusest,\n    2,35 dB oktaavi kohta, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, esitab selle kujul 7,773 log + 11,43); võrdluseks
 (stima poco precisa: boom fuori dal campione VE7BQH)	(ebatäpne hinnang: poom väljaspool VE7BQH valimit)
+Aggiorna da IPRMO	Uuenda IPRMO-st
+Collm, Germania (radar 36,2 MHz)	Collm, Saksamaa (radar 36,2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	Jaapani vaatlejate käsitsi loendused (HROFFT) meteooride vaatlemiseks mõeldud HAM-majakate kajadest, mida IPRMO avaldab igakuiselt mõnenädalase hilinemisega: need sobivad kalibreerimiseks ja ajaloo jaoks, mitte otseprognoosiks. Igal vaatlejal on erinev antenn ja vastuvõtja: võrdle sama vaatleja kuid, mitte erinevaid vaatlejaid. Teisendus SM6FHZ reeglitega (λ^k, tegur K), mis on seatud sellel vahekaardil.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	Prognoosi lähteloendused. Jaapani kirjed (HROFFT-i automaatloendus Ogakis 53 MHz HAM-majakatel, iga 10 minuti järel) ilmuvad ainult siis, kui QTH on Jaapanist kuni 3500 km kaugusel.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	Jaapani vaatlejate tunniloendused 53 MHz HAM-majakatel (JA2SDA, JE3AKE, JJ1RLQ) IPRMO kuufailidest: keskmine UTC-tunni kohta, teisendatud saabumissagedusele, ja päevasummad.
+Fonte dei conteggi	Loenduste allikas
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	Allikas: {0}. HROFFT-i automaatloendus iga 10 minuti järel, veidi suurem kui käsitsi loendus: suhteline väärtus, mis tuleb kalibreerida RMOJ kuufailidega (nupp Jaapan).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS pole saadaval ({0}): kasutan ITU-R P.453 võrdlusatmosfääri
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	Jaapan otse: {0} {1} {2:F3} MHz (Ogaki)
+Giappone: conteggi HRO mensili (IPRMO)	Jaapan: igakuised HRO-loendused (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	Jaapan: igakuised HRO-loendused (IPRMO)...
+Media del mese per ora UTC - {0}	Kuu keskmine UTC-tunni kaupa - {0}
+Mese	Kuu
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	Ogakist andmeid pole: ootan HROFFT-i pilte (üks iga 10 minuti järel).
+Nessun dato: premi Aggiorna da IPRMO.	Andmeid pole: vajuta Uuenda IPRMO-st.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	Kehtivaid tunde {0}, neist hinnatud (alla 60 minuti) {1}; kadunud või häiritud tunde {2}; sporaadilise E tõttu välja jäetud tunde {3}.
+Osservatore	Vaatleja
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	Vaatleja: {0} ({1}). Majakas: {2} {3} ({4:F3} MHz). Tabel {5} järgi, teisendatud UTC-ks.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	Refraktsioon    +{0:F2}° keskpunkti suunas, ulatus jälgede kõrgusel +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	Refraktsioon    rakendamata (märkeruut väljas): sirgete kiirte geomeetria
+Rifrazione troposferica (GFS)	Troposfääriline refraktsioon (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	Käivitamisel väljas (ettevaatlik väärtus). Sees: programm laadib GFS-mudelist kahe jaama kohal oleva temperatuuri- ja niiskusprofiili ning jälgib kiirt jälgede kõrguseni. Madalad punktid paistavad veidi kõrgemal ja ühine tsoon laieneb (horisondil umbes 60-70 km); üle 10° on mõju tühine. Ei kasuta k = 4/3, mis kehtib täielikult troposfääris liikuvate kiirte kohta.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	Päevasumma (päevad vähemalt 20 tunni andmetega, teisendatud 24 tunnile)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	Teisendus: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	Teekond majakas → vaatleja {0:F0} km, keskpunkt {1}.
+atmosfera di riferimento ITU-R P.453	ITU-R P.453 võrdlusatmosfäär
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	HROFFT-i automaatloendus Ogakis, majakas {0} {1}
+dati GFS incompleti	puudulikud GFS-andmed
+echi al giorno (UTC)	kajasid päevas (UTC)
+echi/giorno	kajasid/päev
+echi/ora	kajasid/tund
+ora fuori dalla previsione GFS	aeg väljaspool GFS-prognoosi
+profili {0} su {1} e {2}	profiilid {0} kohtade {1} ja {2} kohal
+scarico...	laadin...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	{0} pilti loetud nüüd, viimane kell {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} kuud saadaval, {1} laaditud nüüd

@@ -879,3 +879,41 @@ La lingua è anche in alto a destra, accanto alle linguette.	The language is als
 Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03	Lionel Edwards VE7BQH - Yagi gain tables for 50, 144 and 432 MHz (dxmaps.com): mean line per band,\n    50 MHz G(dBi) = 7.36 log(L/lambda) + 11.67; 144 MHz 8.27 log + 11.31; 432 MHz 8.68 log + 11.03
 Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto	Gunter Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 3/1982, pp. 130-138: gain vs boom length curve,\n    2.35 dB per octave, G(dBi) = 7.81 log(L/lambda) + 11.35 (W8IO, w8io.com, quotes it as 7.773 log + 11.43); for comparison
 (stima poco precisa: boom fuori dal campione VE7BQH)	(rough estimate: boom outside the VE7BQH sample)
+Aggiorna da IPRMO	Update from IPRMO
+Collm, Germania (radar 36,2 MHz)	Collm, Germany (radar 36.2 MHz)
+Conteggi a mano degli osservatori giapponesi (HROFFT) sugli echi dei fari HAM per l'osservazione delle meteore, pubblicati da IPRMO ogni mese con alcune settimane di ritardo: servono per la taratura e lo storico, non per la previsione in diretta. Ogni osservatore ha antenna e ricevitore diversi: confronta i mesi dello stesso osservatore, non osservatori diversi. Traslazione con le regole di SM6FHZ (λ^k, fattore K) impostate in questa linguetta.	Hand counts by Japanese observers (HROFFT) of echoes from the HAM beacons for meteor observation, published monthly by IPRMO a few weeks late: they serve for calibration and history, not for the live forecast. Each observer has a different antenna and receiver: compare months of the same observer, not different observers. Translation with the SM6FHZ rules (λ^k, factor K) set in this tab.
+Conteggi di partenza della previsione. Le voci del Giappone (conteggio automatico di HROFFT a Ogaki sui fari HAM a 53 MHz, ogni 10 minuti) compaiono solo se il QTH è entro 3500 km dal Giappone.	Starting counts of the forecast. The Japan entries (automatic HROFFT count at Ogaki on the 53 MHz HAM beacons, every 10 minutes) appear only if the QTH is within 3500 km of Japan.
+Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri.	Hourly counts of Japanese observers on the 53 MHz HAM beacons (JA2SDA, JE3AKE, JJ1RLQ), from the IPRMO monthly files: mean per UTC hour translated to the arrival frequency, and daily totals.
+Fonte dei conteggi	Source of counts
+Fonte: {0}. Conteggio automatico di HROFFT ogni 10 minuti, un po' più alto di quello a mano: valore relativo, da tarare con i file mensili RMOJ (pulsante Giappone).	Source: {0}. Automatic HROFFT count every 10 minutes, a little higher than hand counts: a relative value, to be calibrated with the RMOJ monthly files (Japan button).
+GFS non disponibile ({0}): uso l'atmosfera di riferimento ITU-R P.453	GFS not available ({0}): using the ITU-R P.453 reference atmosphere
+GFS {0} UTC	GFS {0} UTC
+Giappone in diretta: {0} {1} {2:F3} MHz (Ogaki)	Japan live: {0} {1} {2:F3} MHz (Ogaki)
+Giappone: conteggi HRO mensili (IPRMO)	Japan: monthly HRO counts (IPRMO)
+Giappone: conteggi HRO mensili (IPRMO)...	Japan: monthly HRO counts (IPRMO)...
+Media del mese per ora UTC - {0}	Monthly mean per UTC hour - {0}
+Mese	Month
+Nessun dato da Ogaki: attendo le immagini di HROFFT (una ogni 10 minuti).	No data from Ogaki: waiting for the HROFFT images (one every 10 minutes).
+Nessun dato: premi Aggiorna da IPRMO.	No data: press Update from IPRMO.
+Ore valide {0}, di cui stimate (meno di 60 minuti) {1}; ore perse o disturbate {2}; ore con sporadico E escluse {3}.	Valid hours {0}, of which estimated (less than 60 minutes) {1}; lost or disturbed hours {2}; hours with sporadic E excluded {3}.
+Osservatore	Observer
+Osservatore: {0} ({1}). Faro: {2} {3} ({4:F3} MHz). Tabella in {5}, convertita in UTC.	Observer: {0} ({1}). Beacon: {2} {3} ({4:F3} MHz). Table in {5}, converted to UTC.
+Rifrazione      +{0:F2}° verso il punto medio, portata alla quota delle scie +{1:F0} km ({2})	Refraction      +{0:F2}° towards the midpoint, range at trail height +{1:F0} km ({2})
+Rifrazione      non applicata (casella spenta): geometria a raggi diritti	Refraction      not applied (box unticked): straight-ray geometry
+Rifrazione troposferica (GFS)	Tropospheric refraction (GFS)
+Spenta all'avvio (valore prudente). Accesa: il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e traccia il raggio fino alla quota delle scie. I punti bassi si vedono un po' più alti e la zona comune si allarga (circa 60-70 km all'orizzonte); sopra 10° l'effetto è trascurabile. Non usa il k = 4/3, che vale per raggi tutti dentro la troposfera.	Off at start (prudent value). On: the program downloads from the GFS model the temperature and humidity profile above the two stations and traces the ray up to the trail height. Low points appear a little higher and the common zone widens (about 60-70 km at the horizon); above 10° the effect is negligible. It does not use k = 4/3, which applies to rays entirely within the troposphere.
+Totale giornaliero (giorni con almeno 20 ore di dati, riportati a 24 ore)	Daily total (days with at least 20 hours of data, scaled to 24 hours)
+Traslazione: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.	Translation: x ({0:F3}/{1:F0})^{2:F2} x K {3:F2} = x {4:F4}.
+Tratta faro → osservatore {0:F0} km, punto medio {1}.	Beacon → observer path {0:F0} km, midpoint {1}.
+atmosfera di riferimento ITU-R P.453	ITU-R P.453 reference atmosphere
+conteggio automatico di HROFFT a Ogaki, faro {0} {1}	automatic HROFFT count at Ogaki, beacon {0} {1}
+dati GFS incompleti	incomplete GFS data
+echi al giorno (UTC)	echoes per day (UTC)
+echi/giorno	echoes/day
+echi/ora	echoes/hour
+ora fuori dalla previsione GFS	time outside the GFS forecast
+profili {0} su {1} e {2}	{0} profiles over {1} and {2}
+scarico...	downloading...
+{0} - {1:F3} MHz	{0} - {1:F3} MHz
+{0} immagini lette ora, ultima delle {1} UTC	{0} images read now, last at {1} UTC
+{0} mesi disponibili, {1} scaricati ora	{0} months available, {1} downloaded now

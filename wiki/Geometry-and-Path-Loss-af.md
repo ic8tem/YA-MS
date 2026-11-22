@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Kontrole:** H = 89,5 km, e = 0° → **1062 km**. In die artikel se voorbeeld (JN44BB–IO53RT) plaas die tekening die horisonkruisings ongeveer 870 km van die stasies, wat ooreenstem met 'n lob wat ongeveer 2° gelig is (865 km).
 
+## Troposferiese refraksie (GFS)
+
+Troposferiese refraksie (blokkie "Troposferiese refraksie (GFS)", af by begin). Met die blokkie aan laai die program van Open-Meteo die profiel van die GFS-model bo die twee stasies af (druk, temperatuur en humiditeit by die grond en op die vlakke van 1000 tot 500 hPa, op die naaste uur binne 6 uur), bepaal die hoogtes van die vlakke met die hipsometriese vergelyking (virtuele temperatuur) en die refraktiwiteit met die formule van Aanbeveling ITU-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+met P en e (dampdruk, uit die Magnus-formule) in hPa en T in kelvin. Bo die boonste vlak neem N eksponensieel af met 'n skaalhoogte van 7,35 km. As die GFS nie antwoord nie, word die P.453-verwysingsatmosfeer gebruik, N = 315·exp(−h/7,35), en die verslag sê so.
+
+Die straal word deur dun sferiese skille gevolg met die wet van Snell in sferiese vorm (n·r·cos e konstant) tot by die spoorhoogte; dit gee die bereik op hoogte H en die korreksie van die elevasie:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Voorbeeld met die verwysingsatmosfeer en spore op 89,5 km: by 0° gaan die bereik van 1061,5 na sowat 1133 km (+72 km) en die punt lyk 0,62° hoër; by 4° groei die bereik met 14 km en die korreksie is 0,20°; bo 10° is die effek weglaatbaar. Die korreksie geld vir die elevasie na die middelpunt, die radius van die gemeenskaplike sone, die hot spots en die punte van die doeltreffendheidskaart; punte onder die gebreekte horison word weggelaat. Die verslag gee dit in die reël "Refraksie".
+
+Die ekwivalente aardradius k = 4/3 geld vir strale wat in die eerste kilometers van die troposfeer bly, waar N met sowat 40 eenhede per km daal. Die straal na 'n spoor op 90 km kruis die hele troposfeer en gaan bo 10-15 km, waar N amper nul is, byna reguit voort: met k = 4/3 oor die hele klim sou die bereik by 0° sowat 1230 km wees, amper 100 km meer as die gevolgde straal. Daarom volg die program die straal in die GFS-profiel, soos die outeur se LIVETROPOVHF vir troposferiese voortplanting doen, in plaas daarvan om k = 4/3 te gebruik.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Grense van die gemeenskaplike sone
 
 **Bron:** die artikel plaas die kruisings van die kurwes waar elke stasie se horison die E-laag ontmoet: die snypunte van twee sirkels met hoekradius ρ = d_H/r gesentreer op A en B [19–20]:

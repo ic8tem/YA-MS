@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB vra dat **outomatiese programme nie sy lêers aflaai nie**. Daarom is die **outomatiese aflaai aan die begin af** en moet dit **slegs aangeskakel word nadat jy RMOB om toestemming gevra het**. Daarsonder kan jy altyd **Laai RMOB-lêer van skyf...** gebruik of **Laai RMOB nou af** druk wanneer jy dit nodig het.
 
 Die aflaai-adres is 'n sjabloon in `config.ini` (sleutel `rmob_url`, verstek `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, waar `{NOME}` die waarnemer is en `{MMAAAA}` maand en jaar); afgelaaide lêers word in `data/radar/` bewaar.
+
+## HRO-tellings uit Japan (IPRMO en Ogaki)
+
+Bron van die tellings: by verstek Collm (radar 36,2 MHz). As jou stasie binne 3500 km van Japan is, verskyn ook die inskrywings "Japan lewendig" (bakens JA2SDA in Toyokawa en JE3AKE in Otsu, 53 MHz), met die outomatiese HROFFT-tellings wat Ogaki elke 10 minute publiseer; die keuse word gestoor.
+
+Japan: maandelikse HRO-tellings (IPRMO)...: maak die venster oop met die uurlikse handtellings van die Japannese waarnemers uit die RMOJ-maandlêers. Kies die maand en die waarnemer; Werk by van IPRMO laai die nuwe maande af. Die eerste grafiek is die maandgemiddelde per UTC-uur na jou frekwensie omgeskakel, die tweede die daaglikse totale.
+
+Die outomatiese HROFFT-telling gee 30 tot 130 eggo's elke 10 minute, baie meer as die handtellings van die RMOJ-lêers, omdat dit ook swak eggo's en steurings tel: dit is 'n relatiewe waarde, wat met die maandlêers van dieselfde baken gekalibreer moet word. Die grens van 3500 km hou die bron vir stasies in Oos-Asië, wat dieselfde radiante op dieselfde ure sien; vir Europa bly Collm.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

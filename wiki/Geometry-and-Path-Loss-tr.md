@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Doğrulama:** H = 89,5 km, e = 0° → **1062 km**. Makalenin örneğinde (JN44BB–IO53RT) çizim ufuk kesişimlerini istasyonlardan yaklaşık 870 km'ye koyar; bu da yaklaşık 2° yükseltilmiş bir loba (865 km) karşılık gelir.
 
+## Troposferik kırılma (GFS)
+
+Troposferik kırılma ("Troposferik kırılma (GFS)" kutusu, başlangıçta kapalı). Kutu işaretliyken program Open-Meteo'dan iki istasyonun üzerindeki GFS modeli profilini indirir (yüzeyde ve 1000-500 hPa seviyelerinde basınç, sıcaklık ve nem; 6 saat içindeki en yakın saat için), seviyelerin yüksekliklerini hipsometrik denklemle (sanal sıcaklık), kırınım indisini de ITU-R P.453 Tavsiyesi formülüyle hesaplar:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+burada P ve e (buhar basıncı, Magnus formülünden) hPa, T kelvin cinsindendir. En üst seviyenin üzerinde N, 7,35 km ölçek yüksekliğiyle üstel olarak azalır. GFS yanıt vermezse P.453 referans atmosferi N = 315·exp(−h/7,35) kullanılır ve rapor bunu belirtir.
+
+Işın, küresel biçimdeki Snell yasasıyla (n·r·cos e sabit) ince küresel kabuklar boyunca iz yüksekliğine kadar izlenir; buradan H yüksekliğindeki menzil ve yükselme açısı düzeltmesi elde edilir:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Referans atmosfer ve 89,5 km'deki izlerle örnek: 0°'de menzil 1061,5'ten yaklaşık 1133 km'ye çıkar (+72 km) ve nokta 0,62° daha yüksek görünür; 4°'de menzil 14 km artar ve düzeltme 0,20°'dir; 10°'nin üzerinde etki ihmal edilebilir. Düzeltme orta noktaya doğru yükselme açısına, ortak bölgenin yarıçapına, sıcak noktalara ve verimlilik haritasının noktalarına uygulanır; kırılmış ufkun altındaki noktalar atılır. Rapor bunu "Kırılma" satırında verir.
+
+Eşdeğer Dünya yarıçapı k = 4/3, troposferin ilk kilometrelerinde kalan ışınlar için geçerlidir; orada N km başına yaklaşık 40 birim azalır. 90 km'deki bir ize giden ışın tüm troposferi geçer ve N'nin neredeyse sıfır olduğu 10-15 km'nin üzerinde neredeyse düz ilerler: tüm yükseliş boyunca k = 4/3 ile 0°'deki menzil yaklaşık 1230 km olurdu, izlenen ışından neredeyse 100 km fazla. Bu yüzden program k = 4/3 kullanmak yerine, yazarın LIVETROPOVHF programının troposferik yayılım için yaptığı gibi, ışını GFS profilinde izler.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Ortak bölge sınırları
 
 **Kaynak:** makale, her istasyonun ufkunun E katmanıyla buluştuğu eğrilerin kesişimlerini bulur: merkezleri A ve B'de olan, açısal yarıçapı ρ = d_H/r iki dairenin kesişimleri [19–20]:

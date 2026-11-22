@@ -64,6 +64,7 @@ H2|4.2 1 eilutė: E sluoksnis ir antena
 LI|Pėdsakų aukštis km ir iš radaro: meteorų pėdsakų aukštis. Pažymėjus „iš radaro“, naudojamas dažniausias Collm radaru išmatuotas aukštis (paprastai 88-90 km); nuimkite žymą, kad įrašytumėte jį rankiniu būdu.
 LI|Lapelio elevacija °: jūsų antenos vertikaliojo lapelio maksimumo elevacija. Kryptinės antenos, nustatytos 0° kampu, pagrindinis lapelis vis tiek yra keliais laipsniais virš horizonto dėl atspindžio nuo žemės: paprastai 3-8°, priklausomai nuo antenos aukščio bangos ilgiais.
 LI|antenos diagrama: įjungta (numatytoji) - atspindžio taškai vertinami pagal abiejų antenų vertikalųjį stiprinimą: visiškai ties lapelio maksimumu, vis mažiau horizonto link ir aukštyn. Išjungta - lapelio elevacija yra griežta riba: žemiau matomi taškai neskaičiuojami.
+LI|Troposferinė refrakcija (GFS): paleidus išjungta. Įjungus programa iš GFS modelio atsisiunčia temperatūros ir drėgmės profilį virš abiejų stočių ir įvertina spindulio išlinkimą iki pėdsakų aukščio: žemi taškai atrodo šiek tiek aukščiau, o bendra zona išsiplečia. Jei GFS neatsako, naudojama vidutinė atmosfera. Skirtuko Geometrija ir slopinimas ataskaita tai nurodo eilutėje „Refrakcija“.
 LI|Yagi antena: strėlė m: strėlės ilgis. Šalia programa rašo ilgį bangos ilgiais, stiprinimą (juostos VE7BQH lentelių vidutinė tiesė) ir −3 dB lapelį horizontaliai ir vertikaliai. Jei strėlė už juostos VE7BQH imties ribų, įvertis apytikslis.
 LI|Hot spot nuo vidurio taško km ir auto (AMS): Hot A ir Hot B atstumas nuo vidurio taško. Pažymėjus „auto (AMS)“, vertė atitinka J. Richardsono lentelę, kurią cituoja DJ5HG (13° nuokrypis ties 1000 km, 10° virš 1500 km); nuimkite žymą, kad rankiniu būdu įrašytumėte 30-400 km (MSHV naudoja 150 km).
 TAG|ATTENZIONE|Kai „antenos diagrama“ išjungta, o lapelis yra kelių laipsnių aukštyje, ilgoje trasoje abi stotys gali nematyti nė vieno bendro sluoksnio taško: visi efektyvumai lygūs 0 ir pasirodo įspėjimas „NĖRA BENDROS ZONOS“ su lapelio elevacija arba pėdsakų aukščiu, kurių reikėtų. Pavyzdys: JN70CN - JO76QP, 1791 km, lapelis ties 3°, pėdsakai 88,5 km aukštyje.
@@ -153,12 +154,15 @@ H2|8.1 Valdikliai
 LI|Tikslinis dažnis MHz: prognozės dažnis.
 LI|λ^k rodiklis (3, SM6FHZ) ir Stoties koeficientas K (1): dažnio perskaičiavimo taisyklė ir jūsų stoties pataisa.
 LI|k iš populiacijos indeksų: pasiūlo k pagal aktyvių srautų populiacijos indeksus r (GMN, kitaip IMO; k = 3,75 · log10 r, svertinis pagal ZHR) ir prieš taikydamas prašo patvirtinimo.
+LI|Skaičiavimų šaltinis: numatytasis Collm (radaras 36,2 MHz). Jei tavo stotis ne toliau kaip 3500 km nuo Japonijos, atsiranda ir punktai „Japonija tiesiogiai“ (švyturiai JA2SDA Tojokavoje ir JE3AKE Ocu, 53 MHz) su automatiniais HROFFT skaičiavimais, kuriuos Ogakis skelbia kas 10 minučių; pasirinkimas išsaugomas.
+LI|Japonija: mėnesiniai HRO skaičiavimai (IPRMO)...: atveria langą su Japonijos stebėtojų valandiniais rankiniais skaičiavimais iš mėnesinių RMOJ failų. Pasirink mėnesį ir stebėtoją; Atnaujinti iš IPRMO atsisiunčia naujus mėnesius. Pirmas grafikas – mėnesio vidurkis per UTC valandą, perskaičiuotas į tavo dažnį, antras – paros sumos.
 LI|Įkelti RMOB failą iš disko ir Rodiklį gauti iš RMOB failo: nuskaito mėnesio RMOB failą ir gauna k iš valandų, bendrų su Collm.
 LI|RMOB stebėtojas, Atsisiųsti RMOB dabar ir automatinis atsisiuntimas kas 5 minutes: automatinis atsisiuntimas išjungtas, jį galima įjungti tik gavus RMOB leidimą. Šios komandos yra kortelėje Nustatymai.
 H2|8.2 Rezultatai
 LI|Vakar ir šiandien grafikas: meteorai per valandą Collm, į jūsų dažnį perskaičiuotos vertės ir, jei įkelti, RMOB skaičiai.
 LI|Ateinančių 24 valandų prognozė: ta pati ankstesnės dienos valanda, pakoreguota pagal trasos srautų indekso pokytį.
 LI|Lentelė su įvertinimu: geras, vidutinis arba silpnas, palyginti su 24 valandų vidurkiu.
+TAG|NOTA|Automatiniai Ogakio skaičiavimai didesni nei rankiniai: tai santykinės vertės. Norėdamas juos sukalibruoti, Japonijos lange palygink juos su to paties švyturio mėnesiniais RMOJ failais.
 TAG|NOTA|Atspindžių trukmė atitinka pasirinkimą „Pingų trukmė tarp juostų“ kortelėje Geometrija ir slopinimas; forward scatter atveju trukmė didėja ir su sec²φ trasos vidurio taške.
 H1|9. Tiesiogiai ir realiojo laiko duomenys
 H2|9.1 Eismas tiesiogiai
@@ -228,6 +232,7 @@ LI|sciami.csv, massimi_imo.csv, ant_radiante.csv: srautų katalogas ir Antihelio
 LI|flusso_collm.csv, quote_collm.csv: Collm radaro archyvai; radar/: naujausi vaizdai, RMOB failai ir tiesioginių šaltinių duomenys; fonti_radar.csv: šaltinių adresai, kuriuos galima įjungti po vieną.
 LI|cataloghi/: IAU MDC katalogas; radar/diretta/: GMN ir CMOR duomenys.
 LI|call3.txt: lokatorių archyvas; spot_ms/: surinkti meteor scatter spotai; adif_quadrati.csv: kvadratai iš ADIF.
+LI|radar/rmoj/: mėnesiniai RMOJ failai iš Japonijos; radar/hro_ogaki_*.csv: paskutinių 3 dienų Ogakio skaičiavimai; radar/gfs_*.json: GFS profiliai refrakcijai (galioja 3 valandas).
 LI|efficienza_spiegazione.*, spiegazione/, manuale_uso.*, manuale_uso/: techniniai dokumentai.
 LI|backup/: atnaujinimo metu pakeistų failų kopijos; aggiornamento/: atsisiųstas paketas (ištrinamas paleidus iš naujo).
 H2|13.3 Kortelė Nustatymai
@@ -237,6 +242,7 @@ LI|controlla_aggiornamenti=0: netikrinti naujų versijų; aggiornamenti_salta: p
 LI|lobo_diagramma, angolo_beta, lunghezza_scie, giudizio_classico: skaičiavimo žymimieji langeliai.
 LI|raggio_iniziale (0 = dviguba ITU vertė, 1 = ITU, 2 = neįtraukiamas), durata_ping (0 = λ², 1 = stebėta).
 LI|rmob_osservatore, rmob_automatico, rmob_url: RMOB.
+LI|rifrazione_gfs (0 = išjungta, 1 = įjungta), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: refrakcija ir Japonijos šaltiniai.
 LI|psk_rimando=0: išjungia per UDP gautų MS dekodavimų (MSK144, FSK441, PSK2K, JTMS) persiuntimą į PSKReporter. Iš pradžių jis įjungtas ir veikia pats: jei jūsų šaukinio daugiau nei 20 minučių nėra tarp stočių, siunčiančių ataskaitas į PSKReporter (skaitmeninė programa nesiunčia), YA-MS kas 5 minutes siunčia jūsų dekoduotas MS stotis, jus nurodydamas kaip imtuvą; kai tik skaitmeninė programa vėl siunčia, YA-MS sustoja. Eilutė UDP konsolėje praneša, kada jis prasideda ir sustoja. Jei WSJT-X.ini (arba JTDX.ini) siuntimas į PSKReporter išjungtas, YA-MS persiunčia iš karto, nelaukdamas 20 minučių.
 TAG|ATTENZIONE|Redaguokite config.ini tik uždarę programą: uždaroma YA-MS jį perrašo.
 H1|14. Tipinės procedūros

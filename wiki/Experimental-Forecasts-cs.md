@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB žádá, aby **automatické programy jeho soubory nestahovaly**. Z toho důvodu je **automatické stahování** na začátku **vypnuté** a mělo by se zapnout **až po požádání RMOB o svolení**. Bez něj můžete vždy použít **Načíst soubor RMOB z disku...** nebo stisknout **Stáhnout RMOB nyní**, když to potřebujete.
 
 Adresa pro stahování je šablona v `config.ini` (klíč `rmob_url`, výchozí `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, kde `{NOME}` je pozorovatel a `{MMAAAA}` měsíc a rok); stažené soubory se uchovávají v `data/radar/`.
+
+## Počty HRO z Japonska (IPRMO a Ogaki)
+
+Zdroj počtů: výchozí je Collm (radar 36,2 MHz). Je-li vaše stanice do 3500 km od Japonska, objeví se i položky "Japonsko živě" (majáky JA2SDA v Tojokawě a JE3AKE v Ócu, 53 MHz) s automatickými počty HROFFT, které Ogaki zveřejňuje každých 10 minut; volba se uloží.
+
+Japonsko: měsíční počty HRO (IPRMO)...: otevře okno s hodinovými ručními počty japonských pozorovatelů z měsíčních souborů RMOJ. Zvolte měsíc a pozorovatele; Aktualizovat z IPRMO stáhne nové měsíce. První graf je průměr měsíce za hodinu UTC přepočtený na vaši frekvenci, druhý denní součty.
+
+Automatický počet HROFFT dává 30 až 130 ozvěn za 10 minut, mnohem víc než ruční počty souborů RMOJ, protože počítá i slabé ozvěny a rušení: je to relativní hodnota, kterou je třeba kalibrovat měsíčními soubory téhož majáku. Hranice 3500 km vyhrazuje zdroj stanicím ve východní Asii, které vidí stejné radianty ve stejných hodinách; pro Evropu zůstává Collm.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB bittet darum, dass **automatische Programme seine Dateien nicht abrufen**. Deshalb ist der **automatische Abruf** beim Start **ausgeschaltet** und sollte **erst nach einer Anfrage um Erlaubnis bei RMOB** aktiviert werden. Ohne ihn kannst du jederzeit **RMOB-Datei von Festplatte laden...** verwenden oder bei Bedarf **RMOB jetzt laden** drücken.
 
 Die Abrufadresse ist eine Vorlage in `config.ini` (Schlüssel `rmob_url`, Standard `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, wobei `{NOME}` der Beobachter und `{MMAAAA}` Monat und Jahr sind); geladene Dateien werden in `data/radar/` aufbewahrt.
+
+## HRO-Zählungen aus Japan (IPRMO und Ogaki)
+
+Quelle der Zählungen: standardmäßig Collm (Radar 36,2 MHz). Liegt deine Station höchstens 3500 km von Japan entfernt, erscheinen auch die Einträge "Japan live" (Baken JA2SDA in Toyokawa und JE3AKE in Otsu, 53 MHz) mit den automatischen HROFFT-Zählungen, die Ogaki alle 10 Minuten veröffentlicht; die Wahl wird gespeichert.
+
+Japan: monatliche HRO-Zählungen (IPRMO)...: öffnet das Fenster mit den stündlichen Handzählungen der japanischen Beobachter aus den RMOJ-Monatsdateien. Wähle Monat und Beobachter; Von IPRMO aktualisieren lädt die neuen Monate. Das erste Diagramm ist das Monatsmittel je UTC-Stunde, auf deine Frequenz umgerechnet, das zweite die Tagessummen.
+
+Die automatische HROFFT-Zählung ergibt 30 bis 130 Echos pro 10 Minuten, viel mehr als die Handzählungen der RMOJ-Dateien, weil sie auch schwache Echos und Störungen zählt: ein relativer Wert, der mit den Monatsdateien derselben Bake zu kalibrieren ist. Die Grenze von 3500 km behält die Quelle den Stationen Ostasiens vor, die dieselben Radianten zu denselben Stunden sehen; für Europa bleibt Collm.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

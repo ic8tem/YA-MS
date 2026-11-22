@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB prosi, aby **programy automatyczne nie pobierały jego plików**. Z tego powodu **automatyczne pobieranie jest na starcie wyłączone** i należy je włączać **dopiero po uzyskaniu zgody RMOB**. Bez niej zawsze możesz użyć **Wczytaj plik RMOB z dysku...** albo nacisnąć **Pobierz RMOB teraz**, gdy tego potrzebujesz.
 
 Adres pobierania to szablon w `config.ini` (klucz `rmob_url`, domyślnie `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, gdzie `{NOME}` to obserwator, a `{MMAAAA}` miesiąc i rok); pobrane pliki są przechowywane w `data/radar/`.
+
+## Zliczenia HRO z Japonii (IPRMO i Ogaki)
+
+Źródło zliczeń: domyślnie Collm (radar 36,2 MHz). Jeśli twoja stacja jest w promieniu 3500 km od Japonii, pojawiają się też pozycje "Japonia na żywo" (radiolatarnie JA2SDA w Toyokawie i JE3AKE w Otsu, 53 MHz) z automatycznymi zliczeniami HROFFT publikowanymi przez Ogaki co 10 minut; wybór jest zapamiętywany.
+
+Japonia: miesięczne zliczenia HRO (IPRMO)...: otwiera okno z godzinnymi ręcznymi zliczeniami japońskich obserwatorów z miesięcznych plików RMOJ. Wybierz miesiąc i obserwatora; Aktualizuj z IPRMO pobiera nowe miesiące. Pierwszy wykres to średnia miesiąca na godzinę UTC przeliczona na twoją częstotliwość, drugi to sumy dobowe.
+
+Automatyczne zliczanie HROFFT daje od 30 do 130 ech na 10 minut, znacznie więcej niż ręczne zliczenia plików RMOJ, bo liczy też słabe echa i zakłócenia: to wartość względna, do skalibrowania miesięcznymi plikami tej samej radiolatarni. Granica 3500 km zostawia to źródło stacjom Azji Wschodniej, które widzą te same radianty o tych samych godzinach; dla Europy pozostaje Collm.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

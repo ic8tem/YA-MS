@@ -64,6 +64,7 @@ H2|4.2 Riga 1: strato E e antenna
 LI|Quota scie km e dal radar: quota delle scie meteoriche. Con "dal radar" spuntato si usa la quota più frequente misurata dal radar di Collm (di solito 88-90 km); togli la spunta per scriverla a mano.
 LI|Elevazione lobo °: elevazione del massimo del lobo verticale della tua antenna. Una direttiva fissata a 0° ha comunque il lobo principale qualche grado sopra l'orizzonte, per la riflessione sul terreno: di solito 3-8°, secondo l'altezza dell'antenna in lunghezze d'onda.
 LI|diagramma d'antenna: accesa (di partenza), i punti di riflessione contano con il guadagno verticale delle due antenne: pieno attorno al massimo del lobo, sempre meno verso l'orizzonte e verso l'alto. Spenta, l'elevazione del lobo è un limite netto: i punti visti più in basso non contano.
+LI|Rifrazione troposferica (GFS): spenta all'avvio. Accesa, il programma scarica dal modello GFS il profilo di temperatura e umidità sopra le due stazioni e tiene conto della curvatura del raggio fino alla quota delle scie: i punti bassi si vedono un po' più in alto e la zona comune si allarga. Se il GFS non risponde usa un'atmosfera media. Il resoconto di Geometria e attenuazione lo dice nella riga "Rifrazione".
 LI|Antenna Yagi: boom m: lunghezza del boom. Accanto il programma scrive la lunghezza in lunghezze d'onda, il guadagno (retta media delle tabelle VE7BQH della banda) e il lobo a -3 dB orizzontale e verticale. Se il boom è fuori dal campione VE7BQH della banda, la stima è poco precisa.
 LI|Hot spot dal punto medio km e auto (AMS): distanza di Hot A e Hot B dal punto medio. Con "auto (AMS)" spuntato segue la tabella di J. Richardson citata da DJ5HG (13° di scarto a 1000 km, 10° oltre 1500 km); togli la spunta per scrivere 30-400 km a mano (MSHV usa 150 km).
 TAG|ATTENZIONE|Con "diagramma d'antenna" spento e il lobo a qualche grado, su una tratta lunga le due stazioni possono non vedere nessun punto comune dello strato: tutte le efficienze valgono 0 e compare l'avviso "NESSUNA ZONA COMUNE" con il lobo o la quota delle scie che servirebbero. Esempio: JN70CN - JO76QP, 1791 km, lobo a 3°, scie a 88,5 km.
@@ -153,12 +154,15 @@ H2|8.1 I comandi
 LI|Frequenza di arrivo MHz: frequenza della previsione.
 LI|Esponente λ^k (3, SM6FHZ) e Fattore di stazione K (1): regola sulla frequenza e correzione per la tua stazione.
 LI|k dagli indici di popolazione: propone k dagli indici di popolazione r degli sciami attivi (GMN, altrimenti IMO; k = 3,75 · log10 r, pesato con lo ZHR) e chiede conferma prima di applicarlo.
+LI|Fonte dei conteggi: Collm (radar 36,2 MHz) di partenza. Se la tua stazione è entro 3500 km dal Giappone compaiono anche le voci "Giappone in diretta" (fari JA2SDA a Toyokawa e JE3AKE a Otsu, 53 MHz), con i conteggi automatici di HROFFT pubblicati da Ogaki ogni 10 minuti; la scelta resta salvata.
+LI|Giappone: conteggi HRO mensili (IPRMO)...: apre la finestra con i conteggi orari a mano degli osservatori giapponesi dei file mensili RMOJ. Scegli il mese e l'osservatore; Aggiorna da IPRMO scarica i mesi nuovi. Il primo grafico è la media del mese per ora UTC traslata alla tua frequenza, il secondo i totali giornalieri.
 LI|Carica file RMOB dal disco e Ricava l'esponente dal file RMOB: leggono un file mensile RMOB e ricavano k dalle ore in comune con Collm.
 LI|Osservatore RMOB, Scarica RMOB adesso e prelievo automatico ogni 5 minuti: il prelievo automatico è spento e va acceso solo con il permesso di RMOB. Questi comandi sono nella linguetta Impostazioni.
 H2|8.2 I risultati
 LI|Il grafico di ieri e oggi: meteore all'ora a Collm, valori traslati alla tua frequenza e, se caricati, i conteggi RMOB.
 LI|La previsione delle prossime 24 ore: la stessa ora del giorno prima, corretta per la variazione dell'indice degli sciami della tratta.
 LI|La tabella con il giudizio: buono, medio o scarso rispetto alla media delle 24 ore.
+TAG|NOTA|I conteggi automatici di Ogaki sono più alti di quelli a mano: sono valori relativi. Per tararli confrontali con i file mensili RMOJ dello stesso faro nella finestra del Giappone.
 TAG|NOTA|La durata delle riflessioni segue la scelta "Durata dei ping tra le bande" di Geometria e attenuazione; in forward scatter la durata cresce anche con sec²φ al punto medio della tratta.
 H1|9. Live e dati real-time
 H2|9.1 Traffico in diretta
@@ -228,6 +232,7 @@ LI|sciami.csv, massimi_imo.csv, ant_radiante.csv: il catalogo degli sciami e la 
 LI|flusso_collm.csv, quote_collm.csv: archivi del radar di Collm; radar/: ultime immagini, file RMOB e dati delle fonti in diretta; fonti_radar.csv: indirizzi delle fonti, abilitabili una per una.
 LI|cataloghi/: catalogo IAU MDC; radar/diretta/: dati GMN e CMOR.
 LI|call3.txt: archivio dei locator; spot_ms/: spot meteor scatter raccolti; adif_quadrati.csv: quadrati dall'ADIF.
+LI|radar/rmoj/: file mensili RMOJ del Giappone; radar/hro_ogaki_*.csv: conteggi di Ogaki degli ultimi 3 giorni; radar/gfs_*.json: profili GFS per la rifrazione (validi 3 ore).
 LI|efficienza_spiegazione.*, spiegazione/, manuale_uso.*, manuale_uso/: i documenti tecnici.
 LI|backup/: copie dei file sostituiti da un aggiornamento; aggiornamento/: pacchetto scaricato (cancellato al riavvio).
 H2|13.3 La linguetta Impostazioni
@@ -237,6 +242,7 @@ LI|controlla_aggiornamenti=0: non controllare le versioni nuove; aggiornamenti_s
 LI|lobo_diagramma, angolo_beta, lunghezza_scie, giudizio_classico: le caselle del calcolo.
 LI|raggio_iniziale (0 = doppio dell'ITU, 1 = ITU, 2 = escluso), durata_ping (0 = λ², 1 = osservata).
 LI|rmob_osservatore, rmob_automatico, rmob_url: RMOB.
+LI|rifrazione_gfs (0 = spenta, 1 = accesa), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: rifrazione e fonti del Giappone.
 LI|psk_rimando=0: spegne il rimando a PSKReporter delle decodifiche MS (MSK144, FSK441, PSK2K, JTMS) ricevute via UDP. È acceso di partenza e lavora da solo: se il tuo nominativo non compare da più di 20 minuti tra chi manda rapporti a PSKReporter (il programma digitale non sta inviando), YA-MS manda ogni 5 minuti le stazioni MS che decodifichi, con te come ricevitore; appena il programma digitale riprende a inviare, YA-MS si ferma. Una riga nella console UDP dice quando parte e quando si ferma. Se in WSJT-X.ini (o JTDX.ini) l'invio a PSKReporter è spento, YA-MS rimanda subito, senza aspettare i 20 minuti.
 TAG|ATTENZIONE|Modifica config.ini solo con il programma chiuso: alla chiusura YA-MS lo riscrive.
 H1|14. Procedure tipiche

@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB chiede ai **programmi automatici di non prelevare i suoi file**. Per questo il **prelievo automatico è spento** all'avvio e va attivato **solo dopo aver chiesto il permesso a RMOB**. Senza di esso puoi sempre usare **Carica file RMOB dal disco...** oppure premere **Scarica RMOB adesso** quando ti serve.
 
 L'indirizzo di download è un modello in `config.ini` (chiave `rmob_url`, predefinito `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, dove `{NOME}` è l'osservatore e `{MMAAAA}` mese e anno); i file scaricati vengono conservati in `data/radar/`.
+
+## Conteggi HRO del Giappone (IPRMO e Ogaki)
+
+Fonte dei conteggi: Collm (radar 36,2 MHz) di partenza. Se la tua stazione è entro 3500 km dal Giappone compaiono anche le voci "Giappone in diretta" (fari JA2SDA a Toyokawa e JE3AKE a Otsu, 53 MHz), con i conteggi automatici di HROFFT pubblicati da Ogaki ogni 10 minuti; la scelta resta salvata.
+
+Giappone: conteggi HRO mensili (IPRMO)...: apre la finestra con i conteggi orari a mano degli osservatori giapponesi dei file mensili RMOJ. Scegli il mese e l'osservatore; Aggiorna da IPRMO scarica i mesi nuovi. Il primo grafico è la media del mese per ora UTC traslata alla tua frequenza, il secondo i totali giornalieri.
+
+Il conteggio automatico di HROFFT dà da 30 a 130 echi ogni 10 minuti, molto più dei conteggi a mano dei file RMOJ, perché conta anche echi deboli e disturbi: è un valore relativo, da tarare con i file mensili dello stesso faro. Il limite dei 3500 km riserva la fonte alle stazioni dell'Asia orientale, che vedono gli stessi radianti alle stesse ore; per l'Europa resta Collm.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

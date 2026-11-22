@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB demande que les **programmes automatiques ne récupèrent pas ses fichiers**. C'est pourquoi la **récupération automatique est désactivée** au départ et ne doit être activée **qu'après avoir demandé l'autorisation à RMOB**. Sans elle, vous pouvez toujours utiliser **Charger un fichier RMOB depuis le disque...** ou appuyer sur **Télécharger RMOB maintenant** quand vous en avez besoin.
 
 L'adresse de téléchargement est un modèle dans `config.ini` (clé `rmob_url`, par défaut `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, où `{NOME}` est l'observateur et `{MMAAAA}` le mois et l'année) ; les fichiers téléchargés sont conservés dans `data/radar/`.
+
+## Comptages HRO du Japon (IPRMO et Ogaki)
+
+Source des comptages : Collm (radar 36,2 MHz) par défaut. Si votre station est à moins de 3500 km du Japon, les entrées "Japon en direct" apparaissent aussi (balises JA2SDA à Toyokawa et JE3AKE à Otsu, 53 MHz), avec les comptages automatiques de HROFFT publiés par Ogaki toutes les 10 minutes ; le choix est enregistré.
+
+Japon : comptages HRO mensuels (IPRMO)... : ouvre la fenêtre des comptages horaires manuels des observateurs japonais tirés des fichiers mensuels RMOJ. Choisissez le mois et l'observateur ; Mettre à jour depuis IPRMO télécharge les nouveaux mois. Le premier graphique est la moyenne du mois par heure UTC transposée à votre fréquence, le second les totaux journaliers.
+
+Le comptage automatique de HROFFT donne de 30 à 130 échos toutes les 10 minutes, bien plus que les comptages manuels des fichiers RMOJ, car il compte aussi les échos faibles et les perturbations : c'est une valeur relative, à étalonner avec les fichiers mensuels de la même balise. La limite de 3500 km réserve la source aux stations d'Asie orientale, qui voient les mêmes radiants aux mêmes heures ; pour l'Europe, Collm reste la référence.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

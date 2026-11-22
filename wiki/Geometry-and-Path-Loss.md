@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Check:** H = 89.5 km, e = 0° → **1062 km**. In the article's example (JN44BB–IO53RT) the drawing puts the horizon crossings about 870 km from the stations, which corresponds to a lobe raised about 2° (865 km).
 
+## Tropospheric refraction (GFS)
+
+Tropospheric refraction ("Tropospheric refraction (GFS)" box, off at start). With the box ticked the program downloads from Open-Meteo the GFS model profile above the two stations (pressure, temperature and humidity at the surface and at the levels from 1000 to 500 hPa, at the nearest hour within 6 hours), derives the heights of the levels with the hypsometric equation (virtual temperature) and the refractivity with the formula of Recommendation ITU-R P.453:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+with P and e (vapour pressure, from the Magnus formula) in hPa and T in kelvin. Above the top level N decreases exponentially with a scale height of 7,35 km. If GFS does not answer, the P.453 reference atmosphere N = 315·exp(−h/7,35) is used, and the report says so.
+
+The ray is traced through thin spherical shells with Snell's law in spherical form (n·r·cos e constant) up to the trail height; this gives the range at height H and the elevation correction:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Example with the reference atmosphere and trails at 89,5 km: at 0° the range goes from 1061,5 to about 1133 km (+72 km) and the point appears 0,62° higher; at 4° the range grows by 14 km and the correction is 0,20°; above 10° the effect is negligible. The correction is applied to the elevation towards the midpoint, to the radius of the common zone, to the hot spots and to the points of the efficiency map; points below the refracted horizon are discarded. The report gives it in the "Refraction" line.
+
+The effective Earth radius k = 4/3 applies to rays that stay in the first kilometres of the troposphere, where N falls by about 40 units per km. The ray towards a trail at 90 km crosses the whole troposphere and above 10-15 km, where N is almost zero, goes on almost straight: with k = 4/3 over the whole climb the range at 0° would be about 1230 km, almost 100 km more than the traced ray. This is why the program traces the ray in the GFS profile, as the author's LIVETROPOVHF does for tropospheric propagation, instead of using k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Common zone limits
 
 **Source:** the article locates the crossings of the curves where each station's horizon meets the E layer: the crossings of two circles of angular radius ρ = d_H/r centred on A and B [19–20]:

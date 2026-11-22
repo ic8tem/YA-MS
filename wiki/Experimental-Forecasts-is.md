@@ -75,3 +75,13 @@ k_{emp} = -\frac{\ln\left(\mathrm{median}\,(N_{RMOB}/N_{Collm})\right)}{\ln(f/36
 RMOB biður um að **sjálfvirk forrit sæki ekki skrár þess**. Þess vegna er **sjálfvirk sókn óvirk** í upphafi og ætti aðeins að virkja hana **eftir að hafa beðið RMOB um leyfi**. Án þess geturðu alltaf notað **Hlaða RMOB-skrá af diski...** eða ýtt á **Sækja RMOB núna** þegar þú þarft.
 
 Niðurhalsslóðin er sniðmát í `config.ini` (lykillinn `rmob_url`, sjálfgefið `https://rmob.org/index.php/livedata/live_datas/{NOME}_{MMAAAA}rmob.TXT`, þar sem `{NOME}` er athugandinn og `{MMAAAA}` mánuður og ár); sóttar skrár eru geymdar í `data/radar/`.
+
+## HRO-talningar frá Japan (IPRMO og Ogaki)
+
+Uppruni talninga: sjálfgefið Collm (ratsjá 36,2 MHz). Ef stöðin þín er innan 3500 km frá Japan birtast einnig færslurnar "Japan beint" (vitarnir JA2SDA í Toyokawa og JE3AKE í Otsu, 53 MHz), með sjálfvirkum HROFFT-talningum sem Ogaki birtir á 10 mínútna fresti; valið er vistað.
+
+Japan: mánaðarlegar HRO-talningar (IPRMO)...: opnar gluggann með klukkustundatalningum japanskra athugenda úr mánaðarskrám RMOJ. Veldu mánuð og athuganda; Uppfæra frá IPRMO sækir nýju mánuðina. Fyrra grafið er mánaðarmeðaltal á UTC-klukkustund umreiknað á þína tíðni, hið síðara dagssummur.
+
+Sjálfvirk HROFFT-talning gefur 30 til 130 bergmál á 10 mínútna fresti, miklu meira en handtalningar RMOJ-skránna, því hún telur líka veik bergmál og truflanir: þetta er afstætt gildi sem kvarða þarf með mánaðarskrám sama vita. 3500 km mörkin taka heimildina frá fyrir stöðvar í Austur-Asíu, sem sjá sömu geislapunkta á sömu tímum; fyrir Evrópu gildir Collm áfram.
+
+→ [IPRMO RMOJ](https://www.iprmo.org/library/rmoj/) · [HRO Ogaki](https://hro-ogaki.org/)

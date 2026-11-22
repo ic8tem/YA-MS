@@ -64,6 +64,7 @@ H2|4.2 Sıra 1: E katmanı ve anten
 LI|İz yüksekliği km ve radardan: meteor izlerinin yüksekliği. "radardan" işaretliyken Collm radarının ölçtüğü en sık yükseklik (genellikle 88-90 km) kullanılır; elle yazmak için işareti kaldırın.
 LI|Lob elevasyonu °: anteninizin dikey lobunun maksimumunun elevasyonu. 0°'ye sabitlenmiş bir yönlü antenin ana lobu bile, zeminden yansıma nedeniyle ufkun birkaç derece üzerindedir: antenin dalga boyu cinsinden yüksekliğine göre genellikle 3-8°.
 LI|anten diyagramı: açıkken (başlangıç ayarı) yansıma noktaları iki antenin dikey kazancıyla ağırlıklandırılır: lob maksimumu çevresinde tam, ufka doğru ve yukarıya doğru giderek azalan. Kapalıyken lob elevasyonu kesin bir sınırdır: daha aşağıda görülen noktalar hesaba katılmaz.
+LI|Troposferik kırılma (GFS): başlangıçta kapalı. Açıkken program GFS modelinden iki istasyonun üzerindeki sıcaklık ve nem profilini indirir ve ışının iz yüksekliğine kadar bükülmesini hesaba katar: alçak noktalar biraz daha yüksek görünür ve ortak bölge genişler. GFS yanıt vermezse ortalama bir atmosfer kullanır. Geometri ve yol kaybı raporu bunu "Kırılma" satırında belirtir.
 LI|Yagi anteni: bom m: bom uzunluğu. Yanına program uzunluğu dalga boyu cinsinden, kazancı (bandın VE7BQH tablolarının ortalama doğrusu) ve yatay ile dikey −3 dB lobunu yazar. Bom, bandın VE7BQH örnekleminin dışındaysa tahmin kabadır.
 LI|Orta noktadan hot spot km ve otomatik (AMS): Hot A ve Hot B'nin orta noktaya uzaklığı. "otomatik (AMS)" işaretliyken DJ5HG'nin aktardığı J. Richardson tablosu izlenir (1000 km'de 13°, 1500 km'nin ötesinde 10° sapma); 30-400 km arasını elle yazmak için işareti kaldırın (MSHV 150 km kullanır).
 TAG|ATTENZIONE|"anten diyagramı" kapalı ve lob birkaç derecedeyken, uzun bir yolda iki istasyon katmanın hiçbir ortak noktasını göremeyebilir: tüm verimler 0 olur ve gerekli lob ya da iz yüksekliğini belirten "ORTAK BÖLGE YOK" uyarısı görünür. Örnek: JN70CN - JO76QP, 1791 km, lob 3°'de, izler 88,5 km'de.
@@ -153,12 +154,15 @@ H2|8.1 Kontroller
 LI|Hedef frekans MHz: tahminin frekansı.
 LI|λ^k üssü (3, SM6FHZ) ve İstasyon katsayısı K (1): frekansa göre kural ve istasyonunuz için düzeltme.
 LI|Popülasyon indekslerinden k: etkin yağmurların r popülasyon indekslerinden k önerir (GMN, yoksa IMO; k = 3,75 · log10 r, ZHR ile ağırlıklı) ve uygulamadan önce onay ister.
+LI|Sayımların kaynağı: varsayılan olarak Collm (radar 36,2 MHz). İstasyonunuz Japonya'ya 3500 km'den yakınsa "Japonya canlı" seçenekleri de görünür (Toyokawa'da JA2SDA ve Otsu'da JE3AKE işaretçileri, 53 MHz); bunlar Ogaki'nin her 10 dakikada yayımladığı otomatik HROFFT sayımlarıdır; seçim kaydedilir.
+LI|Japonya: aylık HRO sayımları (IPRMO)...: RMOJ aylık dosyalarından Japon gözlemcilerin saatlik elle sayımlarını gösteren pencereyi açar. Ayı ve gözlemciyi seçin; IPRMO'dan güncelle yeni ayları indirir. İlk grafik frekansınıza aktarılmış UTC saati başına ay ortalaması, ikincisi günlük toplamlardır.
 LI|Diskten RMOB dosyası yükle ve Üssü RMOB dosyasından çıkar: aylık bir RMOB dosyasını okur ve Collm ile ortak saatlerden k'yi çıkarır.
 LI|RMOB gözlemcisi, RMOB'u şimdi indir ve 5 dakikada bir otomatik indirme: otomatik indirme kapalıdır ve yalnızca RMOB'un izniyle açılmalıdır. Bu komutlar Ayarlar sekmesindedir.
 H2|8.2 Sonuçlar
 LI|Dün ve bugünün grafiği: Collm'da saatlik meteorlar, sizin frekansınıza ölçeklenmiş değerler ve, yüklendiyse, RMOB sayımları.
 LI|Sonraki 24 saatin tahmini: önceki günün aynı saati, yolun yağmur endeksindeki değişime göre düzeltilmiş.
 LI|Değerlendirmeli tablo: 24 saatin ortalamasına göre iyi, orta veya zayıf.
+TAG|NOTA|Ogaki'nin otomatik sayımları elle sayımlardan yüksektir: göreli değerlerdir. Kalibre etmek için Japonya penceresinde aynı işaretçinin RMOJ aylık dosyalarıyla karşılaştırın.
 TAG|NOTA|Yansımaların süresi, Geometri ve yol kaybı'ndaki "Bantlar arası ping süresi" seçimini izler; forward scatter'da süre, yolun orta noktasında sec²φ ile de artar.
 H1|9. Canlı ve gerçek zamanlı veriler
 H2|9.1 Canlı trafik
@@ -228,6 +232,7 @@ LI|sciami.csv, massimi_imo.csv, ant_radiante.csv: yağmur kataloğu ve Antihelio
 LI|flusso_collm.csv, quote_collm.csv: Collm radarının arşivleri; radar/: son görüntüler, RMOB dosyaları ve canlı kaynakların verileri; fonti_radar.csv: tek tek etkinleştirilebilen kaynakların adresleri.
 LI|cataloghi/: IAU MDC kataloğu; radar/diretta/: GMN ve CMOR verileri.
 LI|call3.txt: lokatör arşivi; spot_ms/: toplanan meteor scatter spot'ları; adif_quadrati.csv: ADIF'ten gelen kareler.
+LI|radar/rmoj/: Japonya'dan RMOJ aylık dosyaları; radar/hro_ogaki_*.csv: Ogaki'nin son 3 günlük sayımları; radar/gfs_*.json: kırılma için GFS profilleri (3 saat geçerli).
 LI|efficienza_spiegazione.*, spiegazione/, manuale_uso.*, manuale_uso/: teknik belgeler.
 LI|backup/: bir güncellemenin değiştirdiği dosyaların kopyaları; aggiornamento/: indirilen paket (yeniden başlatmada silinir).
 H2|13.3 Ayarlar sekmesi
@@ -237,6 +242,7 @@ LI|controlla_aggiornamenti=0: yeni sürümleri denetleme; aggiornamenti_salta: a
 LI|lobo_diagramma, angolo_beta, lunghezza_scie, giudizio_classico: hesabın onay kutuları.
 LI|raggio_iniziale (0 = ITU değerinin iki katı, 1 = ITU, 2 = hariç), durata_ping (0 = λ², 1 = gözlenen).
 LI|rmob_osservatore, rmob_automatico, rmob_url: RMOB.
+LI|rifrazione_gfs (0 = kapalı, 1 = açık), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: kırılma ve Japonya kaynakları.
 LI|psk_rimando=0: UDP ile alınan MS kod çözümlerinin (MSK144, FSK441, PSK2K, JTMS) PSKReporter'a iletilmesini kapatır. Varsayılan olarak açıktır ve kendi başına çalışır: çağrı işaretiniz PSKReporter'a rapor gönderen istasyonlar arasında 20 dakikadan uzun süredir yoksa (dijital program göndermiyor), YA-MS çözdüğünüz MS istasyonlarını sizi alıcı olarak göstererek 5 dakikada bir gönderir; dijital program yeniden gönderir göndermez YA-MS durur. UDP konsolundaki bir satır başladığını ve durduğunu bildirir. WSJT-X.ini (veya JTDX.ini) içinde PSKReporter'a gönderim kapalıysa YA-MS 20 dakika beklemeden hemen iletir.
 TAG|ATTENZIONE|config.ini'yi yalnızca program kapalıyken değiştirin: YA-MS kapanışta onu yeniden yazar.
 H1|14. Tipik yordamlar

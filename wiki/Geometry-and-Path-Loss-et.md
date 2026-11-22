@@ -55,6 +55,28 @@ d_H = r\left[\frac{\pi}{2} - e - \arcsin\left(\frac{(r+h)\cos e}{r+H}\right)\rig
 
 **Kontroll:** H = 89,5 km, e = 0° → **1062 km**. Artikli näites (JN44BB–IO53RT) asetab joonis horisondi lõikepunktid jaamadest umbes 870 km kaugusele, mis vastab umbes 2° võrra tõstetud peaharule (865 km).
 
+## Troposfääriline refraktsioon (GFS)
+
+Troposfääriline refraktsioon (märkeruut "Troposfääriline refraktsioon (GFS)", käivitamisel väljas). Märgitud ruuduga laadib programm Open-Meteost GFS-mudeli profiili kahe jaama kohal (rõhk, temperatuur ja niiskus maapinnal ning tasemetel 1000 kuni 500 hPa, lähima tunni kohta 6 tunni piires), arvutab tasemete kõrgused hüpsomeetrilise võrrandiga (virtuaalne temperatuur) ja refraktiivsuse soovituse ITU-R P.453 valemiga:
+
+```math
+N = \frac{77{.}6}{T}\left(P + \frac{4810\,e}{T}\right)
+```
+
+kus P ja e (veeauru rõhk, Magnuse valemist) on hPa-des ja T kelvinites. Ülemise taseme kohal kahaneb N eksponentsiaalselt skaalakõrgusega 7,35 km. Kui GFS ei vasta, kasutatakse P.453 võrdlusatmosfääri N = 315·exp(−h/7,35) ja aruanne ütleb seda.
+
+Kiirt jälgitakse läbi õhukeste sfääriliste kihtide Snelli seaduse sfäärilise kujuga (n·r·cos e konstantne) kuni jälgede kõrguseni; sellest saadakse ulatus kõrgusel H ja kõrgusnurga parandus:
+
+```math
+\Delta\varphi = \frac{k\,\Delta r}{r_m\,\bar u},\quad u = \sqrt{n^2r^2-k^2},\quad k = n_0 r_0\cos e
+```
+
+Näide võrdlusatmosfääri ja 89,5 km kõrguste jälgedega: 0° juures kasvab ulatus 1061,5-lt umbes 1133 km-ni (+72 km) ja punkt paistab 0,62° kõrgemal; 4° juures kasvab ulatus 14 km ja parandus on 0,20°; üle 10° on mõju tühine. Parandust rakendatakse kõrgusnurgale keskpunkti suunas, ühise tsooni raadiusele, kuumadele kohtadele ja tõhususkaardi punktidele; murdunud horisondist allpool olevad punktid jäetakse välja. Aruanne annab selle real "Refraktsioon".
+
+Ekvivalentne Maa raadius k = 4/3 kehtib kiirte kohta, mis jäävad troposfääri esimestesse kilomeetritesse, kus N väheneb umbes 40 ühikut km kohta. Kiir 90 km kõrgusele jäljele läbib kogu troposfääri ja üle 10-15 km, kus N on peaaegu null, kulgeb peaaegu sirgelt: k = 4/3 kogu tõusu ulatuses annaks 0° juures ulatuseks umbes 1230 km, peaaegu 100 km rohkem kui jälgitud kiir. Seepärast jälgib programm kiirt GFS-profiilis, nagu autori LIVETROPOVHF teeb troposfäärilise leviku puhul, selle asemel et kasutada k = 4/3.
+
+→ [Open-Meteo (GFS)](https://open-meteo.com/) · [ITU-R P.453](https://www.itu.int/rec/R-REC-P.453)
+
 ## Ühisala piirid
 
 **Allikas:** artikkel määrab kõverate lõikepunktid, kus kummagi jaama horisont kohtub E-kihiga: kahe A ja B keskmega ringi, nurkraadiusega ρ = d_H/r, lõikepunktid [19–20]:

@@ -64,6 +64,7 @@ H2|4.2 Row 1: E layer and antenna
 LI|Trail height km and from radar: height of the meteor trails. With "from radar" ticked, the most frequent height measured by the Collm radar is used (usually 88-90 km); untick it to type it in manually.
 LI|Lobe elevation °: elevation of the maximum of your antenna's vertical lobe. A beam fixed at 0° still has its main lobe a few degrees above the horizon, because of the ground reflection: usually 3-8°, depending on the antenna height in wavelengths.
 LI|antenna pattern: when on (default), the reflection points count with the vertical gain of the two antennas: full around the maximum of the lobe, less and less towards the horizon and upwards. When off, the lobe elevation is a hard limit: points seen lower down do not count.
+LI|Tropospheric refraction (GFS): off at start. When ticked, the program downloads from the GFS model the temperature and humidity profile above the two stations and takes into account the bending of the ray up to the trail height: low points appear a little higher and the common zone widens. If GFS does not answer it uses an average atmosphere. The Geometry and path loss report states it in the "Refraction" line.
 LI|Yagi antenna: boom m: boom length. Next to it the program writes the length in wavelengths, the gain (mean line of the VE7BQH tables for the band) and the −3 dB lobe, horizontal and vertical. If the boom is outside the band's VE7BQH sample, the estimate is rough.
 LI|Hot spot from midpoint km and auto (AMS): distance of Hot A and Hot B from the midpoint. With "auto (AMS)" ticked it follows J. Richardson's table quoted by DJ5HG (13° offset at 1000 km, 10° beyond 1500 km); untick it to type 30-400 km manually (MSHV uses 150 km).
 TAG|ATTENZIONE|With "antenna pattern" off and the lobe at a few degrees, on a long path the two stations may not see any common point of the layer: all efficiencies are 0 and the warning "NO COMMON ZONE" appears, with the lobe or trail height that would be needed. Example: JN70CN - JO76QP, 1791 km, lobe at 3°, trails at 88.5 km.
@@ -153,12 +154,15 @@ H2|8.1 The controls
 LI|Target frequency MHz: frequency of the forecast.
 LI|λ^k exponent (3, SM6FHZ) and Station factor K (1): frequency rule and correction for your station.
 LI|k from population indices: proposes k from the population indices r of the active showers (GMN, otherwise IMO; k = 3.75 · log10 r, weighted by ZHR) and asks for confirmation before applying it.
+LI|Source of counts: Collm (radar 36,2 MHz) by default. If your station is within 3500 km of Japan, the "Japan live" entries also appear (beacons JA2SDA at Toyokawa and JE3AKE at Otsu, 53 MHz), with the automatic HROFFT counts published by Ogaki every 10 minutes; the choice is saved.
+LI|Japan: monthly HRO counts (IPRMO)...: opens the window with the hourly hand counts of the Japanese observers from the RMOJ monthly files. Choose the month and the observer; Update from IPRMO downloads the new months. The first chart is the monthly mean per UTC hour translated to your frequency, the second the daily totals.
 LI|Load RMOB file from disk and Derive the exponent from the RMOB file: they read a monthly RMOB file and derive k from the hours in common with Collm.
 LI|RMOB observer, Download RMOB now and automatic download every 5 minutes: the automatic download is off and must be turned on only with RMOB's permission. These commands are in the Settings tab.
 H2|8.2 The results
 LI|The chart of yesterday and today: meteors per hour at Collm, values scaled to your frequency and, if loaded, the RMOB counts.
 LI|The forecast for the next 24 hours: the same hour of the previous day, corrected for the change in the shower index of the path.
 LI|The table with the verdict: good, average or poor compared with the 24-hour average.
+TAG|NOTA|The automatic Ogaki counts are higher than the hand counts: they are relative values. To calibrate them, compare them with the RMOJ monthly files of the same beacon in the Japan window.
 TAG|NOTA|The duration of the reflections follows the "Ping duration between bands" choice in Geometry and path loss; in forward scatter the duration also grows with sec²φ at the midpoint of the path.
 H1|9. Live and real-time data
 H2|9.1 Live traffic
@@ -228,6 +232,7 @@ LI|sciami.csv, massimi_imo.csv, ant_radiante.csv: the shower catalogue and the p
 LI|flusso_collm.csv, quote_collm.csv: archives of the Collm radar; radar/: latest images, RMOB files and data from the live sources; fonti_radar.csv: addresses of the sources, which can be enabled one by one.
 LI|cataloghi/: IAU MDC catalogue; radar/diretta/: GMN and CMOR data.
 LI|call3.txt: locator database; spot_ms/: collected meteor scatter spots; adif_quadrati.csv: squares from the ADIF.
+LI|radar/rmoj/: RMOJ monthly files from Japan; radar/hro_ogaki_*.csv: Ogaki counts of the last 3 days; radar/gfs_*.json: GFS profiles for refraction (valid 3 hours).
 LI|efficienza_spiegazione.*, spiegazione/, manuale_uso.*, manuale_uso/: the technical documents.
 LI|backup/: copies of the files replaced by an update; aggiornamento/: downloaded package (deleted on restart).
 H2|13.3 The Settings tab
@@ -237,6 +242,7 @@ LI|controlla_aggiornamenti=0: do not check for new versions; aggiornamenti_salta
 LI|lobo_diagramma, angolo_beta, lunghezza_scie, giudizio_classico: the calculation checkboxes.
 LI|raggio_iniziale (0 = twice the ITU value, 1 = ITU, 2 = excluded), durata_ping (0 = λ², 1 = observed).
 LI|rmob_osservatore, rmob_automatico, rmob_url: RMOB.
+LI|rifrazione_gfs (0 = off, 1 = on), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: refraction and Japanese sources.
 LI|psk_rimando=0: turns off the forwarding to PSKReporter of the MS decodes (MSK144, FSK441, PSK2K, JTMS) received via UDP. It is on by default and works by itself: if your callsign has been missing for more than 20 minutes from the stations sending reports to PSKReporter (the digital program is not sending), YA-MS sends every 5 minutes the MS stations you decode, with you as receiver; as soon as the digital program sends again, YA-MS stops. A line in the UDP console says when it starts and stops. If sending to PSKReporter is off in WSJT-X.ini (or JTDX.ini), YA-MS forwards at once, without waiting 20 minutes.
 TAG|ATTENZIONE|Edit config.ini only with the program closed: YA-MS rewrites it when it closes.
 H1|14. Typical procedures

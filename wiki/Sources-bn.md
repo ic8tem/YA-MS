@@ -27,7 +27,8 @@
 | **LZ2HV** – MSHV | Hot A / Hot B (তুলনা; ম্যানুয়ালে) |
 | Klaus von der Heide **DJ5HG** – QTFGUI এবং "QTFGUI Help" ম্যানুয়াল (2007) | শঙ্কু বিচ্ছুরণের নিয়ম (cone scattering); মডেল যাচাইয়ে ব্যবহৃত Hamburg – Barcelona কোয়াড্রান্টিড পরীক্ষা-উদাহরণ |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*, DARC সম্মেলন, জানুয়ারি 2018 | **DH9GCD**-এর সেরা দিকের সূত্র; DJ5HG-এর শঙ্কু বিচ্ছুরণ ও HOT-A / HOT-B নির্বাচন; কার্যকর বিকিরণ বিন্দু 20–70°; সেরা দূরত্ব 1300–1500 km; KB0VUK-এর বিক্ষিপ্ত উল্কা |
-| Günter Hoch **DL6WU** – দীর্ঘ ইয়াগির বুমের দৈর্ঘ্য অনুযায়ী গেইন, W8IO-র উল্লেখ অনুযায়ী (w8io.com) | G(dBi) = 7.773 log(L/λ) + 11.43 |
+| L. Edwards VE7BQH - 50, 144 ও 432 MHz-এর Yagi গেইন সারণি: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (প্রতিলিপি qsl.net/dk7zb ও sm2cew.com-এ)। | 50 MHz: 7.36 log(L/λ) + 11.67 · 144 MHz: 8.27 log(L/λ) + 11.31 · 432 MHz: 8.68 log(L/λ) + 11.03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, পৃ. 130-138, চিত্র 1 (প্রাথমিক উৎস); বক্ররেখাটি W8IO-ও উদ্ধৃত করেছে, www.w8io.com. | G(dBi) = 7.81 log(L/λ) + 11.35 (W8IO: 7.773 log + 11.43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (David Tanner-এর VK3AUU ইয়াগি) | গেইন বক্ররেখা যাচাই ও অনুভূমিক লোব সংশোধনে ব্যবহৃত NEC সিমুলেশন (0.93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | VK3AUU, WA2PHW ও DJ9BV রূপগুলোর গেইনের অনুমান |

@@ -27,7 +27,8 @@
 | **LZ2HV** – MSHV | Hot A / Hot B (karşılaştırma; kılavuzda) |
 | Klaus von der Heide **DJ5HG** – QTFGUI ve "QTFGUI Help" kılavuzu (2007) | Koni saçılması yasası; modeli doğrulamak için kullanılan Hamburg – Barselona Kuadrantidler örneği |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*, DARC konferansı, Ocak 2018 | **DH9GCD**'nin en iyi yön formülü; DJ5HG'nin koni saçılması ve HOT-A / HOT-B seçimi; 20–70° arası yararlı radyant; en iyi mesafe 1300–1500 km; KB0VUK'un sporadik meteorları |
-| Günter Hoch **DL6WU** – uzun Yagi'lerde kazancın boom uzunluğuna bağlılığı, W8IO'nun aktarımıyla (w8io.com) | G(dBi) = 7.773 log(L/λ) + 11.43 |
+| L. Edwards VE7BQH - 50, 144 ve 432 MHz için Yagi kazanç tabloları: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (kopyalar qsl.net/dk7zb ve sm2cew.com'da). | 50 MHz: 7,36 log(L/λ) + 11,67 · 144 MHz: 8,27 log(L/λ) + 11,31 · 432 MHz: 8,68 log(L/λ) + 11,03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, s. 130-138, şekil 1 (birincil kaynak); eğri W8IO tarafından da aktarılır, www.w8io.com. | G(dBi) = 7,81 log(L/λ) + 11,35 (W8IO: 7,773 log + 11,43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (David Tanner'ın VK3AUU Yagi'leri) | Kazanç eğrisini doğrulamak ve yatay lobu düzeltmek için kullanılan NEC benzetimleri (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | VK3AUU, WA2PHW ve DJ9BV çeşitleri için kazanç tahminleri |

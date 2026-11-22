@@ -71,10 +71,13 @@ tag("RILIEVO", "Con la tabella AMS: 1000 km → 13°, s ≈ 115 km; 1250 km → 
 tag("SCELTA", "Per l'ora mostrata sulla volta celeste il programma somma, su tutti gli sciami sopra l'orizzonte, ZHR x efficienza diviso tra lato A e lato B (capitolo 7.1). L'hot spot del lato che riceve più riflessioni è quello consigliato: compare in rosso sulla mappa.")
 tag("FONTE", "Secondo DJ5HG, riportato da DF5HC [16], la riflessione avviene su un cono attorno alla scia: per le tratte più corte le antenne vanno puntate a lato della direzione diretta, entrambe le stazioni verso lo stesso punto, e secondo la posizione del radiante uno dei due punti (HOT-A o HOT-B) è più favorevole. DF5HC indica anche la distanza migliore in 1300-1500 km, con un massimo di poco oltre 2000 km.")
 h2("3.5 Il lobo dell'antenna")
-tag("FONTE", "Guadagno di una Yagi lunga dalla lunghezza del boom (curva DL6WU [10]) e apertura del lobo a −3 dB dal guadagno (regola di Kraus [11]):")
-eq("G = 7,773 · log10(L/λ) + 11,43 dBi          θK = √( 41253 / 10^(G/10) )")
+tag("FONTE", "Guadagno di una Yagi dalla lunghezza del boom (retta media delle tabelle di VE7BQH per banda [36], curva DL6WU [10] per confronto) e apertura del lobo a −3 dB dal guadagno (regola di Kraus [11]):")
+eq("G = a + b · log10(L/λ) dBi:   50 MHz 11,67 + 7,36;   144 MHz 11,31 + 8,27;   432 MHz 11,03 + 8,68")
+eq("DL6WU: G = 11,35 + 7,81 · log10(L/λ) dBi          θK = √( 41253 / 10^(G/10) )")
 tag("RILIEVO", "Le simulazioni NEC di W4RNL [12] confermano la curva del guadagno entro 0,1 dB sia per le Yagi DL6WU sia per quelle di David Tanner VK3AUU, che a pari elementi hanno il boom più corto: il guadagno dipende dalla lunghezza del boom. Le stesse simulazioni danno un lobo orizzontale più stretto di Kraus del 5-10 %.")
+tag("RILIEVO", "Media VE7BQH meno curva DL6WU: a 50 MHz entro 0,25 dB da 2 a 16 λ; a 144 MHz da −0,04 dB a 1 λ a +0,42 dB a 10 λ; a 432 MHz da −0,06 dB a 2 λ a +0,55 dB a 10 λ. Sulle Yagi DL6WU e VK3AUU simulate da W4RNL a 432 MHz la media VE7BQH sta 0,15–0,55 dB sopra il NEC: sui boom lunghi le Yagi delle tabelle, ottimizzate al calcolatore, rendono più dei progetti originali.")
 tag("SCELTA", "Lobo orizzontale (quello del puntamento in azimut) = 0,93 · θK; lobo verticale = θK. Yagi di 14 λ a 432 MHz: 20,3 dBi, 18,1° orizzontale e 19,5° verticale; i modelli di W4RNL danno 20,4 dBi e 18,4°/18,8°.")
+tag("RILIEVO", "Con la media VE7BQH la stessa Yagi di 14 λ dà 21,0 dBi e lobo 16,9° orizzontale e 18,1° verticale; i 20,3 dBi qui sopra sono quelli della curva DL6WU. Le correzioni del lobo (0,93 · θK e θK) restano quelle ricavate dalle Yagi DL6WU.")
 tag("SCELTA", "L'antenna si considera sempre puntata verso il corrispondente. Un hot spot che cade entro ±θ/2 da quella direzione è già coperto dal lobo: è segnato in grigio invece che in rosa e il programma lo avvisa. L'hot spot consigliato dall'efficienza resta comunque in rosso.")
 
 h1("4. Il radiante dello sciame")
@@ -189,7 +192,7 @@ SOURCES = [
  "Radar meteorico di Collm, Università di Lipsia (LIM) e IAP Kühlungsborn, wetterdaten.meteo.uni-leipzig.de/radar_flux.php.",
  "D.W.R. McKinley - Meteor Science and Engineering, McGraw-Hill, 1961.",
  "GM8JBJ - Meteor scatter path loss, hamradio.engineering (da Kaiser & Closs, 1952).",
- "G. Hoch DL6WU - curva del guadagno delle Yagi lunghe, riportata da W8IO, www.w8io.com.",
+ "G. Hoch DL6WU - \"Extremely Long Yagi Antennas\", VHF Communications 14, 3/1982, pp. 130-138, fig. 1 (fonte primaria); curva riportata anche da W8IO, www.w8io.com.",
  "J.D. Kraus - Antennas, McGraw-Hill.",
  "L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data.",
  "RMOB, Radio Meteor Observatories On Line - www.rmob.org, bollettino di giugno 2018.",
@@ -215,6 +218,7 @@ SOURCES = [
  "Global Meteor Network - shower flux and daily trajectory summary, globalmeteornetwork.org, CC BY 4.0 (Vida et al. 2021, 2022).",
  "M. Bundscherer - \"Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon\", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.",
  "HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.",
+ "L. Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (copie su qsl.net/dk7zb e sm2cew.com).",
 ]
 
 TAGCOL = {"FONTE": (0x38, 0xBD, 0xF8), "RILIEVO": (0x86, 0xEF, 0xAC), "SCELTA": (0xFB, 0x92, 0x3C)}

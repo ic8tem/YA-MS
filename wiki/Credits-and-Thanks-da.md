@@ -22,6 +22,7 @@ YA-MS er fri software: du må videredistribuere og ændre det på vilkårene i G
 | **DJ5HG** Klaus von der Heide | QTFGUI og dens manual: loven om keglespredning, valg af HOT-A / HOT-B, testtilfældet Hamborg – Barcelona |
 | **DH9GCD** og **DF5HC** Jens | Formlen for bedste retning sin El · cos El · sin(P − Az), nyttig radiant 20–70°, bedste afstand 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | Sporadiske meteorer (gengivet af DF5HC) |
+| **VE7BQH** Lionel Edwards | Yagi-forstærkningstabeller for 50, 144 og 432 MHz: middellinjen pr. bånd giver den forstærkning, programmet bruger |
 | **DL6WU** Günter Hoch | Kurve for forstærkning/bomlængde for lange Yagi'er (gengivet af **W8IO**) |
 | **W4RNL** L.B. Cebik | NEC-modeller af DL6WU- og VK3AUU-Yagi'er brugt til at verificere forstærkningskurven og korrigere den vandrette lap |
 | **VK3AUU** David Tanner | Yagi-konstruktioner brugt i kontrollen |

@@ -22,6 +22,7 @@ YA-MS jest wolnym oprogramowaniem: możesz je rozpowszechniać i modyfikować na
 | **DJ5HG** Klaus von der Heide | QTFGUI i jego podręcznik: prawo rozpraszania stożkowego, wybór HOT-A / HOT-B, przypadek testowy Hamburg – Barcelona |
 | **DH9GCD** i **DF5HC** Jens | Wzór na najlepszy kierunek sin El · cos El · sin(P − Az), użyteczny radiant 20–70°, najlepsza odległość 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | Meteory sporadyczne (przekazane przez DF5HC) |
+| **VE7BQH** Lionel Edwards | Tabele zysku anten Yagi dla 50, 144 i 432 MHz: prosta średnia dla każdego pasma daje zysk używany przez program |
 | **DL6WU** Günter Hoch | Krzywa zysku w funkcji długości boomu dla długich anten Yagi (przekazana przez **W8IO**) |
 | **W4RNL** L.B. Cebik | Modele NEC anten Yagi DL6WU i VK3AUU użyte do weryfikacji krzywej zysku i korekty charakterystyki poziomej |
 | **VK3AUU** David Tanner | Konstrukcje Yagi użyte w weryfikacji |

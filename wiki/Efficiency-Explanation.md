@@ -24,7 +24,7 @@ Every step carries a coloured label:
 |---|---|
 | 1. Introduction | Purpose, labels, what efficiency means (OH5IY, MCG_MS; YA-MS uses the real path) |
 | 2. Where reflections happen: the E layer | Trails at 80–120 km; trail height = mode of the Collm histogram (check: 89.5 km on 5/11/2026) |
-| 3. Path geometry | Earth and midpoint; antenna elevation (article formula); common zone and its limits; Hot A / Hot B; antenna lobe (DL6WU, Kraus, W4RNL) |
+| 3. Path geometry | Earth and midpoint; antenna elevation (article formula); common zone and its limits; Hot A / Hot B; antenna lobe (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. The shower radiant | Radiant position (IMO 2026/2027), peak date (IMO or solar longitude), activity profile |
 | 5. Reflection condition | Specular reflection (McKinley), Gaussian tolerance 0.05 rad, best heading (SM6FHZ), DH9GCD formula |
 | 6. From one point to the efficiency | Reflection points every 15 km, weight of each point, percentage; comparison with QTFGUI (DJ5HG) |

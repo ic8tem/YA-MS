@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Antenneforsterkning og lobe
 
-**Forsterkning – kilde:** kurve av Günter Hoch **DL6WU** for lange Yagier som funksjon av bomlengden L, gjengitt av W8IO (gyldig fra ca. 2 λ) [39]:
+**VE7BQH** – Forsterkning for en Yagi som funksjon av bomlengden L: middellinje for VE7BQH-tabellene per bånd (omkring 60 Yagier per bånd, NEC-forsterkninger). I parentes utvalgets område og standardavviket:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+Linjen for nærmeste bånd brukes: under 100 MHz den for 50 MHz, mellom 100 og 300 MHz den for 144 MHz, over 300 MHz den for 432 MHz (for 1296 MHz er det en ekstrapolasjon). Utenfor utvalgets område varsler hovedvinduet at estimatet er grovt.
+
+Historisk kurve fra DL6WU (VHF Communications 3/1982, fig. 1): målinger på 432 og 1296 MHz fra 1981, 2,35 dB per oktav bom, oppgitt nøyaktighet 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO oppgir den som 7,773 log10(L/λ) + 11,43 dBi (under 0,1 dB forskjell). Programmet skriver den i rapporten til sammenligning:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Kontroll mot NEC-modellene til L.B. Cebik W4RNL på 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Forskjellen overstiger aldri **0,1 dB**: forsterkningen avhenger mer av bomlengden enn av konstruksjonen (VK3AUU-Yagier har kortere bom for samme antall elementer). Yagi Calculator av VK5DJ gir også estimater for variantene VK3AUU, WA2PHW og DJ9BV, men formlene er ikke publisert.
+
+VE7BQH-middel minus DL6WU-kurve: på 50 MHz innenfor 0,25 dB fra 2 til 16 λ; på 144 MHz fra −0,04 dB ved 1 λ til +0,42 dB ved 10 λ; på 432 MHz fra −0,06 dB ved 2 λ til +0,55 dB ved 10 λ. På DL6WU- og VK3AUU-Yagiene som W4RNL simulerte på 432 MHz, ligger VE7BQH-middelet 0,15–0,55 dB over NEC: på lange bommer yter tabellenes datamaskinoptimaliserte Yagier mer enn de opprinnelige konstruksjonene.
 
 **Lobe – kilde:** Kraus' regel, med sirkulær lobe θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Eksempel: Yagi på 14 λ på 432 MHz → 20,3 dBi, lobe 18,1° horisontalt og 19,5° vertikalt; modellene til W4RNL gir 20,4 dBi og 18,4° / 18,8°. Dette er tilnærmede regler utledet fra noen få DL6WU-antenner.
+
+Med VE7BQH-middelet gir den samme Yagien på 14 λ 21,0 dBi og en lobe på 16,9° horisontalt og 18,1° vertikalt; de 20,3 dBi ovenfor kommer fra DL6WU-kurven. Lobekorreksjonene (0,93 · θK og θK) er fortsatt de som er utledet fra DL6WU-Yagiene.
 
 Antennen regnes alltid som rettet mot DX-en. En hot spot er **innenfor loben** hvis |Az(Hot) − Az(antenne)| ≤ θ_horizontal/2: den tegnes da grå i [himmelhvelvingen](Sky-View-nb) og en advarsel vises. Den vertikale loben inngår også i effektivitetsberegningen: med boksen *antennediagram* på vektes refleksjonspunktene med den vertikale gevinsten til begge antennene (bredde θ_vertical, maksimum ved lobens elevasjon, bakkefaktor ned til null ved horisonten).
 

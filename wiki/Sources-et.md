@@ -27,7 +27,8 @@ Sakk **Allikad** loetleb kõik tööd, millele YA-MS tugineb, rühmitatuna nagu 
 | **LZ2HV** – MSHV | Hot A / Hot B (võrdlus; juhendis) |
 | Klaus von der Heide **DJ5HG** – QTFGUI ja juhend "QTFGUI Help" (2007) | Koonushajumise seadus; Hamburg – Barcelona Kvadrantiidide katsejuhtum mudeli kontrolliks |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*, DARC-i konverents, jaanuar 2018 | **DH9GCD** parima suuna valem; DJ5HG koonushajumine ja HOT-A / HOT-B valik; kasulik radiant 20–70°; parim kaugus 1300–1500 km; KB0VUK sporaadilised meteoorid |
-| Günter Hoch **DL6WU** – pikkade Yagide võimendus poomi pikkuse järgi, vahendanud W8IO (w8io.com) | G(dBi) = 7,773 log(L/λ) + 11,43 |
+| L. Edwards VE7BQH - Yagi võimendustabelid sagedustele 50, 144 ja 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (koopiad: qsl.net/dk7zb ja sm2cew.com). | 50 MHz: 7,36 log(L/λ) + 11,67 · 144 MHz: 8,27 log(L/λ) + 11,31 · 432 MHz: 8,68 log(L/λ) + 11,03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, lk 130-138, joonis 1 (esmane allikas); kõverat esitab ka W8IO, www.w8io.com. | G(dBi) = 7,81 log(L/λ) + 11,35 (W8IO: 7,773 log + 11,43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (David Tanneri VK3AUU Yagid) | NEC-simulatsioonid võimenduskõvera kontrolliks ja horisontaalse peaharu parandamiseks (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Võimenduse hinnangud VK3AUU, WA2PHW ja DJ9BV variantide jaoks |

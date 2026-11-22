@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Zisk a lalok antény
 
-**Zisk – zdroj:** křivka Güntera Hocha **DL6WU** pro dlouhé Yagi v závislosti na délce ráhna L, kterou uvádí W8IO (platí asi od 2 λ) [39]:
+**VE7BQH** – Zisk antény Yagi v závislosti na délce ráhna L: střední přímka tabulek VE7BQH pro každé pásmo (asi 60 antén na pásmo, zisky z NEC). V závorce rozsah vzorku a směrodatná odchylka:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+Použije se přímka nejbližšího pásma: pod 100 MHz ta pro 50 MHz, mezi 100 a 300 MHz ta pro 144 MHz, nad 300 MHz ta pro 432 MHz (pro 1296 MHz jde o extrapolaci). Mimo rozsah vzorku hlavní okno upozorní, že odhad je hrubý.
+
+Historická křivka DL6WU (VHF Communications 3/1982, obr. 1): měření na 432 a 1296 MHz z roku 1981, 2,35 dB na oktávu délky ráhna, uváděná přesnost 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO ji uvádí jako 7,773 log10(L/λ) + 11,43 dBi (rozdíl pod 0,1 dB). Program ji pro srovnání vypisuje v hlášení:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Ověření proti modelům NEC L.B. Cebika W4RNL na 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Rozdíl nikdy nepřesáhne **0,1 dB**: zisk závisí více na délce ráhna než na konstrukci (Yagi VK3AUU mají při stejném počtu prvků kratší ráhno). Yagi Calculator od VK5DJ dává také odhady pro varianty VK3AUU, WA2PHW a DJ9BV, jejichž vzorce nejsou publikovány.
+
+Průměr VE7BQH minus křivka DL6WU: na 50 MHz do 0,25 dB od 2 do 16 λ; na 144 MHz od −0,04 dB při 1 λ po +0,42 dB při 10 λ; na 432 MHz od −0,06 dB při 2 λ po +0,55 dB při 10 λ. U antén DL6WU a VK3AUU simulovaných W4RNL na 432 MHz je průměr VE7BQH o 0,15–0,55 dB nad NEC: na dlouhých ráhnech dávají počítačově optimalizované antény z tabulek víc než původní konstrukce.
 
 **Lalok – zdroj:** Krausovo pravidlo s kruhovým lalokem θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Příklad: Yagi 14 λ na 432 MHz → 20,3 dBi, lalok 18,1° vodorovně a 19,5° svisle; modely W4RNL dávají 20,4 dBi a 18,4° / 18,8°. Jde o přibližná pravidla odvozená z několika antén DL6WU.
+
+S průměrem VE7BQH dává tatáž anténa 14 λ 21,0 dBi a lalok 16,9° vodorovně a 18,1° svisle; 20,3 dBi výše pochází z křivky DL6WU. Korekce laloku (0,93 · θK a θK) zůstávají ty odvozené z antén DL6WU.
 
 Anténa se vždy považuje za namířenou na DX. Hot spot je **uvnitř laloku**, pokud |Az(Hot) − Az(anténa)| ≤ θ_horizontal/2: pak se kreslí šedě v [Nebeské klenbě](Sky-View-cs) a objeví se upozornění. Svislý lalok vstupuje i do výpočtu účinnosti: při zapnutém políčku *diagram antény* se body odrazu váží svislým ziskem obou antén (šířka θ_vertical, maximum v elevaci laloku, činitel země až k nule na obzoru).
 

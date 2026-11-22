@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Câștigul și lobul antenei
 
-**Câștig – sursă:** curba lui Günter Hoch **DL6WU** pentru antene Yagi lungi în funcție de lungimea boom-ului L, relatată de W8IO (valabilă de la aproximativ 2 λ) [39]:
+**VE7BQH** – Câștigul unei antene Yagi în funcție de lungimea boomului L: dreapta medie a tabelelor VE7BQH pe bandă (circa 60 de antene pe bandă, câștiguri NEC). În paranteză intervalul eșantionului și abaterea standard:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+Se folosește dreapta benzii celei mai apropiate: sub 100 MHz cea de 50 MHz, între 100 și 300 MHz cea de 144 MHz, peste 300 MHz cea de 432 MHz (pentru 1296 MHz este o extrapolare). În afara intervalului eșantionului fereastra principală avertizează că estimarea este aproximativă.
+
+Curba istorică DL6WU (VHF Communications 3/1982, fig. 1): măsurători la 432 și 1296 MHz din 1981, 2,35 dB pe octavă de boom, precizie declarată 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO o dă ca 7,773 log10(L/λ) + 11,43 dBi (diferență sub 0,1 dB). Programul o scrie în raport pentru comparație:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Verificare față de modelele NEC ale lui L.B. Cebik W4RNL la 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Diferența nu depășește niciodată **0,1 dB**: câștigul depinde mai mult de lungimea boom-ului decât de proiect (antenele Yagi VK3AUU au un boom mai scurt pentru același număr de elemente). Yagi Calculator de VK5DJ dă estimări și pentru variantele VK3AUU, WA2PHW și DJ9BV, ale căror formule nu sunt publicate.
+
+Media VE7BQH minus curba DL6WU: la 50 MHz în limita a 0,25 dB între 2 și 16 λ; la 144 MHz de la −0,04 dB la 1 λ la +0,42 dB la 10 λ; la 432 MHz de la −0,06 dB la 2 λ la +0,55 dB la 10 λ. Pe antenele DL6WU și VK3AUU simulate de W4RNL la 432 MHz, media VE7BQH este cu 0,15–0,55 dB peste NEC: pe boomuri lungi antenele din tabele, optimizate pe calculator, rândesc mai mult decât proiectele originale.
 
 **Lob – sursă:** regula lui Kraus, cu un lob circular θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Exemplu: Yagi de 14 λ la 432 MHz → 20,3 dBi, lob de 18,1° orizontal și 19,5° vertical; modelele lui W4RNL dau 20,4 dBi și 18,4° / 18,8°. Acestea sunt reguli aproximative deduse din câteva antene DL6WU.
+
+Cu media VE7BQH aceeași antenă Yagi de 14 λ dă 21,0 dBi și un lob de 16,9° orizontal și 18,1° vertical; cei 20,3 dBi de mai sus provin din curba DL6WU. Corecțiile lobului (0,93 · θK și θK) rămân cele deduse din antenele DL6WU.
 
 Antena este considerată mereu îndreptată spre DX. Un hot spot este **în interiorul lobului** dacă |Az(Hot) − Az(antenă)| ≤ θ_horizontal/2: atunci este desenat cu gri în [Bolta cerească](Sky-View-ro) și apare un avertisment. Lobul vertical intră și în calculul eficienței: cu căsuța *diagrama antenei* activată, punctele de reflexie sunt ponderate cu câștigul vertical al celor două antene (lățime θ_vertical, maxim la elevația lobului, factorul solului până la zero la orizont).
 

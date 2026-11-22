@@ -27,7 +27,8 @@
 | **LZ2HV** – MSHV | Hot A / Hot B (比較用; マニュアル内) |
 | Klaus von der Heide **DJ5HG** – QTFGUI と "QTFGUI Help" マニュアル (2007) | 円錐散乱則; モデルの検証に使ったしぶんぎ座流星群でのハンブルク – バルセロナの試験例 |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*、DARC 講演、2018 年 1 月 | **DH9GCD** の最良方向の式; DJ5HG の円錐散乱と HOT-A / HOT-B の選択; 有効な放射点高度 20–70°; 最良距離 1300–1500 km; KB0VUK の散在流星 |
-| Günter Hoch **DL6WU** – ロング八木の利得/ブーム長、W8IO による紹介 (w8io.com) | G(dBi) = 7.773 log(L/λ) + 11.43 |
+| L. Edwards VE7BQH - 50、144、432 MHz の八木の利得表: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (qsl.net/dk7zb と sm2cew.com に写し)。 | 50 MHz: 7.36 log(L/λ) + 11.67 · 144 MHz: 8.27 log(L/λ) + 11.31 · 432 MHz: 8.68 log(L/λ) + 11.03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, pp. 130-138, 図 1 (一次資料); 曲線は W8IO にも掲載, www.w8io.com. | G(dBi) = 7.81 log(L/λ) + 11.35 (W8IO: 7.773 log + 11.43) |
 | J.D. **Kraus** – *Antennas*、McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (David Tanner の VK3AUU 八木) | 利得曲線の検証と水平ビーム幅の補正 (0.93 × Kraus) に用いた NEC シミュレーション |
 | John Drew **VK5DJ** – Yagi Calculator | VK3AUU、WA2PHW、DJ9BV 各型の利得推定 |

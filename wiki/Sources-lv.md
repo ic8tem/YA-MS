@@ -27,7 +27,8 @@ Cilne **Avoti** uzskaita visus darbus, uz kuriem balstīta YA-MS, sagrupētus k�
 | **LZ2HV** – MSHV | Hot A / Hot B (salīdzinājums; rokasgrāmatā) |
 | Klaus von der Heide **DJ5HG** – QTFGUI un rokasgrāmata "QTFGUI Help" (2007) | Konusa izkliedes likums; Hamburgas – Barselonas Kvadrantīdu pārbaudes gadījums modeļa verificēšanai |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*, DARC konference, 2018. gada janvāris | **DH9GCD** labākā virziena formula; DJ5HG konusa izkliede un HOT-A / HOT-B izvēle; lietderīgais radiants 20–70°; labākais attālums 1300–1500 km; KB0VUK sporādiskie meteori |
-| Günter Hoch **DL6WU** – garo Yagi antenu pastiprinājums atkarībā no traverses garuma, citē W8IO (w8io.com) | G(dBi) = 7,773 log(L/λ) + 11,43 |
+| L. Edwards VE7BQH - Yagi pastiprinājuma tabulas 50, 144 un 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (kopijas qsl.net/dk7zb un sm2cew.com). | 50 MHz: 7,36 log(L/λ) + 11,67 · 144 MHz: 8,27 log(L/λ) + 11,31 · 432 MHz: 8,68 log(L/λ) + 11,03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, 130.-138. lpp., 1. att. (primārais avots); līkni dod arī W8IO, www.w8io.com. | G(dBi) = 7,81 log(L/λ) + 11,35 (W8IO: 7,773 log + 11,43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (David Tanner VK3AUU Yagi antenas) | NEC simulācijas pastiprinājuma līknes pārbaudei un horizontālās ziedlapiņas korekcijai (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Pastiprinājuma novērtējumi VK3AUU, WA2PHW un DJ9BV variantiem |

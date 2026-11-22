@@ -24,7 +24,7 @@ Každý krok nese barevný štítek:
 |---|---|
 | 1. Úvod | Účel, štítky, co znamená účinnost (OH5IY, MCG_MS; YA-MS používá skutečnou trasu) |
 | 2. Kde dochází k odrazům: vrstva E | Stopy v 80–120 km; výška stop = modus histogramu z Collmu (ověření: 89,5 km dne 5. 11. 2026) |
-| 3. Geometrie trasy | Země a střed trasy; elevace antény (vzorec z článku); společná zóna a její meze; Hot A / Hot B; lalok antény (DL6WU, Kraus, W4RNL) |
+| 3. Geometrie trasy | Země a střed trasy; elevace antény (vzorec z článku); společná zóna a její meze; Hot A / Hot B; lalok antény (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Radiant roje | Poloha radiantu (IMO 2026/2027), datum maxima (IMO nebo sluneční délka), profil aktivity |
 | 5. Podmínka odrazu | Zrcadlový odraz (McKinley), gaussovská tolerance 0,05 rad, nejlepší směr (SM6FHZ), vzorec DH9GCD |
 | 6. Od jednoho bodu k účinnosti | Body odrazu každých 15 km, váha každého bodu, procenta; srovnání s QTFGUI (DJ5HG) |

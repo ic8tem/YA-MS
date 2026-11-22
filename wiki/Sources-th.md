@@ -27,7 +27,8 @@
 | **LZ2HV** – MSHV | Hot A / Hot B (การเปรียบเทียบ อยู่ในคู่มือ) |
 | Klaus von der Heide **DJ5HG** – QTFGUI และคู่มือ "QTFGUI Help" (2007) | กฎการกระเจิงแบบกรวย กรณีทดสอบ Hamburg – Barcelona ช่วง Quadrantids ที่ใช้ตรวจสอบแบบจำลอง |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*, การประชุม DARC มกราคม 2018 | สูตรทิศที่ดีที่สุดของ **DH9GCD** การกระเจิงแบบกรวยและการเลือก HOT-A / HOT-B ของ DJ5HG จุดเรเดียนต์ที่ใช้ได้ 20–70° ระยะที่ดีที่สุด 1300–1500 km ดาวตกประปรายตาม KB0VUK |
-| Günter Hoch **DL6WU** – อัตราขยายเทียบกับความยาวบูมของยากิแบบยาว รายงานโดย W8IO (w8io.com) | G(dBi) = 7.773 log(L/λ) + 11.43 |
+| L. Edwards VE7BQH - ตารางอัตราขยายของ Yagi สำหรับ 50, 144 และ 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (สำเนาที่ qsl.net/dk7zb และ sm2cew.com) | 50 MHz: 7.36 log(L/λ) + 11.67 · 144 MHz: 8.27 log(L/λ) + 11.31 · 432 MHz: 8.68 log(L/λ) + 11.03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, หน้า 130-138, รูปที่ 1 (แหล่งข้อมูลปฐมภูมิ); W8IO ก็อ้างเส้นโค้งนี้ด้วย, www.w8io.com. | G(dBi) = 7.81 log(L/λ) + 11.35 (W8IO: 7.773 log + 11.43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (ยากิ VK3AUU ของ David Tanner) | การจำลอง NEC ที่ใช้ตรวจสอบเส้นโค้งอัตราขยายและแก้ไขโลบแนวนอน (0.93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | ค่าประมาณอัตราขยายสำหรับรุ่น VK3AUU, WA2PHW และ DJ9BV |

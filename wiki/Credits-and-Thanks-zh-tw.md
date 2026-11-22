@@ -22,6 +22,7 @@ YA-MS 是自由軟體：您可以依照 GNU 通用公共授權第 3 版（[COPYI
 | **DJ5HG** Klaus von der Heide | QTFGUI 及其手冊：錐面散射定律、HOT-A / HOT-B 選擇、漢堡 – 巴塞隆納測試案例 |
 | **DH9GCD** 與 **DF5HC** Jens | 最佳方向公式 sin El · cos El · sin(P − Az)、有效輻射點高度 20–70°、最佳距離 1300–1500 km（"Meteorscatter auf UKW"，DARC 2018） |
 | **KB0VUK** | 偶發流星（由 DF5HC 轉述） |
+| **VE7BQH** Lionel Edwards | 50、144 和 432 MHz 八木天線增益表：每個波段的平均直線給出程式使用的增益 |
 | **DL6WU** Günter Hoch | 長八木天線增益與橫桿長度的關係曲線（由 **W8IO** 轉述） |
 | **W4RNL** L.B. Cebik | DL6WU 和 VK3AUU 八木天線的 NEC 模型，用於驗證增益曲線和修正水平波瓣 |
 | **VK3AUU** David Tanner | 驗證中使用的八木天線設計 |

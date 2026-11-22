@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Zysk i listek anteny
 
-**Zysk – źródło:** krzywa Güntera Hocha **DL6WU** dla długich anten Yagi w funkcji długości boomu L, przytoczona przez W8IO (ważna od około 2 λ) [39]:
+**VE7BQH** – Zysk anteny Yagi w funkcji długości bomu L: prosta średnia tabel VE7BQH dla każdego pasma (około 60 anten na pasmo, zyski z NEC). W nawiasach zakres próby i odchylenie standardowe:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+Używa się prostej najbliższego pasma: poniżej 100 MHz tej dla 50 MHz, od 100 do 300 MHz tej dla 144 MHz, powyżej 300 MHz tej dla 432 MHz (dla 1296 MHz to ekstrapolacja). Poza zakresem próby okno główne ostrzega, że oszacowanie jest przybliżone.
+
+Historyczna krzywa DL6WU (VHF Communications 3/1982, rys. 1): pomiary na 432 i 1296 MHz z 1981 roku, 2,35 dB na oktawę długości bomu, deklarowana dokładność 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO podaje ją jako 7,773 log10(L/λ) + 11,43 dBi (różnica poniżej 0,1 dB). Program wypisuje ją w raporcie do porównania:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Sprawdzenie względem modeli NEC L.B. Cebika W4RNL na 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Różnica nigdy nie przekracza **0,1 dB**: zysk zależy bardziej od długości boomu niż od konstrukcji (anteny Yagi VK3AUU mają krótszy boom przy tej samej liczbie elementów). Yagi Calculator autorstwa VK5DJ podaje także szacunki dla wariantów VK3AUU, WA2PHW i DJ9BV, których wzory nie zostały opublikowane.
+
+Średnia VE7BQH minus krzywa DL6WU: na 50 MHz w granicach 0,25 dB od 2 do 16 λ; na 144 MHz od −0,04 dB przy 1 λ do +0,42 dB przy 10 λ; na 432 MHz od −0,06 dB przy 2 λ do +0,55 dB przy 10 λ. Dla anten DL6WU i VK3AUU symulowanych przez W4RNL na 432 MHz średnia VE7BQH jest o 0,15–0,55 dB powyżej NEC: na długich bomach optymalizowane komputerowo anteny z tabel dają więcej niż oryginalne konstrukcje.
 
 **Listek – źródło:** reguła Krausa, z listkiem kołowym θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Przykład: Yagi 14 λ na 432 MHz → 20,3 dBi, listek 18,1° w poziomie i 19,5° w pionie; modele W4RNL dają 20,4 dBi oraz 18,4° / 18,8°. Są to reguły przybliżone, wyprowadzone z kilku anten DL6WU.
+
+Według średniej VE7BQH ta sama antena 14 λ daje 21,0 dBi i wiązkę 16,9° w poziomie i 18,1° w pionie; 20,3 dBi powyżej pochodzi z krzywej DL6WU. Poprawki wiązki (0,93 · θK i θK) pozostają te wyprowadzone z anten DL6WU.
 
 Antenę zawsze uważa się za skierowaną na DX. Hot spot jest **wewnątrz listka**, jeśli |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: jest wtedy rysowany na szaro w [kopule nieba](Sky-View-pl) i pojawia się ostrzeżenie. Pionowy listek wchodzi też do obliczeń wydajności: przy włączonym polu *charakterystyka anteny* punkty odbicia są ważone pionowym zyskiem obu anten (szerokość θ_vertical, maksimum przy elewacji listka, współczynnik ziemi do zera na horyzoncie).
 

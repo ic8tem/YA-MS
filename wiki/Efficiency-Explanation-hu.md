@@ -24,7 +24,7 @@ Minden lépés színes címkét visel:
 |---|---|
 | 1. Bevezetés | Cél, címkék, mit jelent a hatékonyság (OH5IY, MCG_MS; a YA-MS a valós útvonalat használja) |
 | 2. Hol jönnek létre a reflexiók: az E-réteg | Nyomok 80–120 km-en; nyommagasság = a collmi hisztogram módusza (ellenőrzés: 89,5 km 2026. 11. 5-én) |
-| 3. Az útvonal geometriája | A Föld és a felezőpont; antennaeleváció (a cikk képlete); a közös zóna és határai; Hot A / Hot B; antennanyaláb (DL6WU, Kraus, W4RNL) |
+| 3. Az útvonal geometriája | A Föld és a felezőpont; antennaeleváció (a cikk képlete); a közös zóna és határai; Hot A / Hot B; antennanyaláb (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. A raj radiánsa | A radiáns helyzete (IMO 2026/2027), a csúcs dátuma (IMO vagy napközépponti hosszúság), aktivitási profil |
 | 5. A reflexió feltétele | Tükrös reflexió (McKinley), 0,05 rad Gauss-tűrés, legjobb irány (SM6FHZ), DH9GCD-képlet |
 | 6. Egy ponttól a hatékonyságig | Reflexiós pontok 15 km-enként, az egyes pontok súlya, százalék; összevetés a QTFGUI-val (DJ5HG) |

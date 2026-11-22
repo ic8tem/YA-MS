@@ -268,15 +268,22 @@ C.push(TAG('SCELTA', 'I guadagni d\'antenna si usano in dBi, senza togliere i 2,
 C.push(EQ('margine=', sb('P', 'rx'), '−', sb('P', 'min'), ',    ', sb('P', 'min'), '=−130 dBm  [1]'));
 
 C.push(H1('7. Antenna e lobo'));
-C.push(TAG('FONTE', 'Guadagno di una Yagi lunga in funzione della lunghezza del boom L (curva DL6WU [10], valida da circa 2 λ):'));
-C.push(EQ('G=7,773 ', sb('log', '10'), br(fr('L', 'λ')), '+11,43  dBi'));
+C.push(TAG('FONTE', 'Guadagno di una Yagi in funzione della lunghezza del boom L: retta media delle tabelle di VE7BQH [40] per banda (circa 60 Yagi per banda, guadagni NEC). Tra parentesi l\'intervallo del campione e lo scarto tipo:'));
+C.push(EQ('50 MHz:  G=7,36 ', sb('log', '10'), br(fr('L', 'λ')), '+11,67  dBi   (0,3–5 λ; 0,25 dB)'));
+C.push(EQ('144 MHz:  G=8,27 ', sb('log', '10'), br(fr('L', 'λ')), '+11,31  dBi   (0,75–8,9 λ; 0,15 dB)'));
+C.push(EQ('432 MHz:  G=8,68 ', sb('log', '10'), br(fr('L', 'λ')), '+11,03  dBi   (1,8–16 λ; 0,17 dB)'));
+C.push(TAG('SCELTA', 'Si usa la retta della banda più vicina: sotto 100 MHz quella dei 50 MHz, tra 100 e 300 MHz quella dei 144 MHz, sopra 300 MHz quella dei 432 MHz (per 1296 MHz è un\'estrapolazione). Fuori dall\'intervallo del campione la finestra principale avvisa che la stima è poco precisa.'));
+C.push(TAG('FONTE', 'Curva storica di DL6WU [10] (VHF Communications 3/1982, fig. 1): misure a 432 e 1296 MHz del 1981, 2,35 dB per ottava di boom, precisione dichiarata 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO la riporta come 7,773 log10(L/λ) + 11,43 dBi (meno di 0,1 dB di differenza). Il programma la scrive nel resoconto per confronto:'));
+C.push(EQ('G=7,81 ', sb('log', '10'), br(fr('L', 'λ')), '+11,35  dBi'));
 C.push(TAG('RILIEVO', 'Verifica con le simulazioni NEC di W4RNL a 432 MHz [12][19][20]: DL6WU 13, 22 e 31 elementi (3,23 / 6,82 / 10,42 λ) 15,28 / 17,82 / 19,35 dBi, formula 15,38 / 17,91 / 19,34 dBi; Yagi VK3AUU di David Tanner, con boom più corto a pari elementi, 16, 28 e 40 elementi (3,12 / 6,88 / 10,79 λ) 15,17 / 17,91 / 19,46 dBi, formula 15,27 / 17,94 / 19,45 dBi. Lo scarto non supera 0,1 dB: il guadagno dipende dalla lunghezza del boom più che dal progetto. Il calcolatore di VK5DJ [21] offre anche stime per le varianti VK3AUU, WA2PHW e DJ9BV, di cui non sono pubblicate le formule.'));
+C.push(TAG('RILIEVO', 'Media VE7BQH meno curva DL6WU: a 50 MHz entro 0,25 dB da 2 a 16 λ; a 144 MHz da −0,04 dB a 1 λ a +0,42 dB a 10 λ; a 432 MHz da −0,06 dB a 2 λ a +0,55 dB a 10 λ. Sulle Yagi DL6WU e VK3AUU simulate da W4RNL a 432 MHz la media VE7BQH sta 0,15–0,55 dB sopra il NEC: sui boom lunghi le Yagi delle tabelle, ottimizzate al calcolatore, rendono più dei progetti originali.'));
 C.push(TAG('FONTE', 'Apertura a −3 dB dal guadagno, regola di Kraus [11], con lobo circolare (θE = θH = θK):'));
 C.push(EQ(sb('G', 'lin'), '=', fr('41253', [sb('θ', 'E'), sb('θ', 'H')]), '   ⇒   ', sb('θ', 'K'), '=', sq(fr('41253', sp('10', 'G/10')))));
 C.push(TAG('RILIEVO', 'Le simulazioni NEC delle Yagi DL6WU [19] danno un lobo orizzontale più stretto di Kraus del 5–10 %: 33,8° / 26,4° / 22,6° per 12, 19 e 26 elementi, contro 37,3° / 28,0° / 23,9° di Kraus. Le formule semplici ignorano i lobi laterali in avanti [12]. Sui boom lunghi il lobo verticale è di poco più largo dell\'orizzontale (14 λ: 18,4° / 18,8°).'));
 C.push(TAG('SCELTA', 'Lobo orizzontale (piano E, azimut con polarizzazione orizzontale) = 0,93 · θK; lobo verticale (piano H) = θK. Regole approssimate, ricavate da poche antenne DL6WU:'));
 C.push(EQ(sb('θ', 'oriz'), '=0,93·', sb('θ', 'K'), ',    ', sb('θ', 'vert'), '=', sb('θ', 'K')));
 C.push(TAG('RILIEVO', 'Yagi di 14 λ a 432 MHz: 20,3 dBi, lobo 18,1° orizzontale e 19,5° verticale. I modelli di W4RNL [12] danno 20,4 dBi e 18,4° / 18,8°.'));
+C.push(TAG('RILIEVO', 'Con la media VE7BQH la stessa Yagi di 14 λ dà 21,0 dBi e lobo 16,9° orizzontale e 18,1° verticale; i 20,3 dBi qui sopra sono quelli della curva DL6WU. Le correzioni del lobo (0,93 · θK e θK) restano quelle ricavate dalle Yagi DL6WU.'));
 C.push(TAG('SCELTA', 'L\'antenna si considera puntata verso il corrispondente. Un hot spot (paragrafo 4.5) è nel lobo se |Az(Hot) − Az(antenna)| ≤ θoriz/2: in quel caso è segnato in grigio invece che in rosa e la finestra principale avvisa. L\'hot spot consigliato dall\'efficienza (paragrafo 4.6) è sempre in rosso.'));
 
 C.push(H1('8. Flusso dal radar e traslazione di frequenza'));
@@ -340,7 +347,7 @@ C.push(H1('12. Fonti'));
  'Radar meteorico di Collm, Università di Lipsia (LIM) e IAP Kühlungsborn - wetterdaten.meteo.uni-leipzig.de/radar_flux.php.',
  'D.W.R. McKinley - Meteor Science and Engineering, McGraw-Hill, 1961.',
  'GM8JBJ - Meteor scatter path loss, hamradio.engineering (da Kaiser & Closs, 1952).',
- 'G. Hoch DL6WU - curva del guadagno delle Yagi lunghe, riportata da W8IO, www.w8io.com.',
+ 'G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, pp. 130-138, fig. 1 (fonte primaria); curva riportata anche da W8IO, www.w8io.com.',
  'J.D. Kraus - Antennas, McGraw-Hill.',
  'L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data.',
  'RMOB, Radio Meteor Observatories On Line - www.rmob.org, bollettino di giugno 2018 (osservatori GRAVES 143,050 MHz).',
@@ -370,6 +377,7 @@ C.push(H1('12. Fonti'));
  'Global Meteor Network - shower flux and daily trajectory summary, globalmeteornetwork.org, CC BY 4.0 (Vida et al. 2021, 2022).',
  'M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.',
  'HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.',
+ 'L. Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (copie su qsl.net/dk7zb e sm2cew.com).',
 ].forEach((t, i) => C.push(new Paragraph({ numbering: { reference: 'num', level: 0 }, spacing: { after: 60 }, children: [new TextRun(t)] })));
 
 const doc = new Document({

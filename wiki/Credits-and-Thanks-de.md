@@ -22,6 +22,7 @@ YA-MS ist freie Software: Sie können es unter den Bedingungen der GNU General P
 | **DJ5HG** Klaus von der Heide | QTFGUI und sein Handbuch: Kegelstreugesetz, Wahl HOT-A / HOT-B, Testfall Hamburg – Barcelona |
 | **DH9GCD** und **DF5HC** Jens | Formel der besten Richtung sin El · cos El · sin(P − Az), nutzbarer Radiant 20–70°, beste Entfernung 1300–1500 km („Meteorscatter auf UKW“, DARC 2018) |
 | **KB0VUK** | Sporadische Meteore (wiedergegeben von DF5HC) |
+| **VE7BQH** Lionel Edwards | Yagi-Gewinntabellen für 50, 144 und 432 MHz: die mittlere Gerade je Band liefert den vom Programm verwendeten Gewinn |
 | **DL6WU** Günter Hoch | Kurve Gewinn/Boomlänge langer Yagis (wiedergegeben von **W8IO**) |
 | **W4RNL** L.B. Cebik | NEC-Modelle von DL6WU- und VK3AUU-Yagis zur Prüfung der Gewinnkurve und Korrektur der horizontalen Keule |
 | **VK3AUU** David Tanner | Yagi-Designs, die bei der Prüfung verwendet wurden |

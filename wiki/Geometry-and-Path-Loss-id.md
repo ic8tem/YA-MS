@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Penguatan dan lobus antena
 
-**Penguatan – sumber:** kurva Günter Hoch **DL6WU** untuk Yagi panjang sebagai fungsi panjang boom L, dilaporkan oleh W8IO (berlaku mulai sekitar 2 λ) [39]:
+**VE7BQH** – Gain sebuah Yagi sebagai fungsi panjang boom L: garis rata-rata tabel VE7BQH per band (sekitar 60 Yagi per band, gain NEC). Dalam kurung rentang sampel dan simpangan baku:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+Dipakai garis band terdekat: di bawah 100 MHz garis 50 MHz, antara 100 dan 300 MHz garis 144 MHz, di atas 300 MHz garis 432 MHz (untuk 1296 MHz ini ekstrapolasi). Di luar rentang sampel jendela utama memperingatkan bahwa perkiraannya kasar.
+
+Kurva historis DL6WU (VHF Communications 3/1982, gbr. 1): pengukuran pada 432 dan 1296 MHz tahun 1981, 2,35 dB per oktaf boom, akurasi yang dinyatakan 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO menuliskannya sebagai 7,773 log10(L/λ) + 11,43 dBi (selisih kurang dari 0,1 dB). Program menuliskannya di laporan sebagai pembanding:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Verifikasi terhadap model NEC L.B. Cebik W4RNL pada 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Selisihnya tidak pernah melebihi **0,1 dB**: penguatan lebih bergantung pada panjang boom daripada desainnya (Yagi VK3AUU memiliki boom lebih pendek untuk jumlah elemen yang sama). Yagi Calculator karya VK5DJ juga memberikan perkiraan untuk varian VK3AUU, WA2PHW dan DJ9BV, yang rumusnya tidak dipublikasikan.
+
+Rata-rata VE7BQH dikurangi kurva DL6WU: pada 50 MHz dalam 0,25 dB dari 2 sampai 16 λ; pada 144 MHz dari −0,04 dB pada 1 λ hingga +0,42 dB pada 10 λ; pada 432 MHz dari −0,06 dB pada 2 λ hingga +0,55 dB pada 10 λ. Pada Yagi DL6WU dan VK3AUU yang disimulasikan W4RNL di 432 MHz, rata-rata VE7BQH 0,15–0,55 dB di atas NEC: pada boom panjang Yagi dalam tabel, yang dioptimalkan dengan komputer, memberi lebih dari desain aslinya.
 
 **Lobus – sumber:** aturan Kraus, dengan lobus melingkar θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Contoh: Yagi 14 λ pada 432 MHz → 20,3 dBi, lobus 18,1° horizontal dan 19,5° vertikal; model W4RNL memberikan 20,4 dBi dan 18,4° / 18,8°. Ini adalah aturan perkiraan yang diturunkan dari beberapa antena DL6WU.
+
+Dengan rata-rata VE7BQH Yagi 14 λ yang sama memberi 21,0 dBi dan lobe 16,9° horizontal dan 18,1° vertikal; 20,3 dBi di atas berasal dari kurva DL6WU. Koreksi lobe (0,93 · θK dan θK) tetap yang diturunkan dari Yagi DL6WU.
 
 Antena selalu dianggap diarahkan ke DX. Sebuah hot spot berada **di dalam lobus** jika |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: lalu digambar abu-abu di [Kubah langit](Sky-View-id) dan muncul peringatan. Lobus vertikal juga masuk ke perhitungan efisiensi: dengan kotak *pola antena* aktif, titik pantulan diberi bobot dengan penguatan vertikal kedua antena (lebar θ_vertical, puncak pada elevasi lobus, faktor tanah sampai nol di cakrawala).
 

@@ -22,6 +22,7 @@ YA-MS는 자유 소프트웨어입니다. GNU General Public License 버전 3([C
 | **DJ5HG** Klaus von der Heide | QTFGUI와 그 매뉴얼: 원뿔 산란 법칙, HOT-A / HOT-B 선택, 함부르크 – 바르셀로나 사례 |
 | **DH9GCD**와 **DF5HC** Jens | 최적 방향 공식 sin El · cos El · sin(P − Az), 유효 복사점 20–70°, 최적 거리 1300–1500 km("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | 산발 유성(DF5HC 소개) |
+| **VE7BQH** Lionel Edwards | 50, 144, 432 MHz 야기 이득표: 밴드별 평균 직선이 프로그램이 쓰는 이득을 준다 |
 | **DL6WU** Günter Hoch | 긴 야기 안테나의 붐 길이 대 이득 곡선(**W8IO** 소개) |
 | **W4RNL** L.B. Cebik | 이득 곡선 검증과 수평 로브 보정에 사용한 DL6WU 및 VK3AUU 야기의 NEC 모델 |
 | **VK3AUU** David Tanner | 검증에 사용한 야기 설계 |

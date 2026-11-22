@@ -27,7 +27,8 @@ Fila **Surse** enumeră fiecare lucrare pe care se bazează YA-MS, grupate ca ma
 | **LZ2HV** – MSHV | Hot A / Hot B (comparație; în manual) |
 | Klaus von der Heide **DJ5HG** – QTFGUI și manualul „QTFGUI Help” (2007) | Legea împrăștierii pe con; cazul de test Hamburg – Barcelona cu Quadrantidele folosit pentru verificarea modelului |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*, conferința DARC, ianuarie 2018 | Formula direcției optime a lui **DH9GCD**; împrăștierea pe con și alegerea HOT-A / HOT-B de DJ5HG; radiant util 20–70°; distanța optimă 1300–1500 km; meteorii sporadici după KB0VUK |
-| Günter Hoch **DL6WU** – câștigul în funcție de lungimea boom-ului pentru antene Yagi lungi, relatat de W8IO (w8io.com) | G(dBi) = 7,773 log(L/λ) + 11,43 |
+| L. Edwards VE7BQH - tabele de câștig pentru antene Yagi la 50, 144 și 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (copii pe qsl.net/dk7zb și sm2cew.com). | 50 MHz: 7,36 log(L/λ) + 11,67 · 144 MHz: 8,27 log(L/λ) + 11,31 · 432 MHz: 8,68 log(L/λ) + 11,03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, pp. 130-138, fig. 1 (sursă primară); curbă redată și de W8IO, www.w8io.com. | G(dBi) = 7,81 log(L/λ) + 11,35 (W8IO: 7,773 log + 11,43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (antenele Yagi VK3AUU de David Tanner) | Simulări NEC folosite pentru a verifica curba câștigului și a corecta lobul orizontal (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Estimări ale câștigului pentru variantele VK3AUU, WA2PHW și DJ9BV |

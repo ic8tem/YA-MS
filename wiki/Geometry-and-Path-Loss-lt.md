@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Antenos stiprinimas ir lapelis
 
-**Stiprinimas – šaltinis:** Günter Hoch **DL6WU** kreivė ilgosioms Yagi antenoms kaip strėlės ilgio L funkcija, pateikta W8IO (galioja nuo maždaug 2 λ) [39]:
+**VE7BQH** – Yagi stiprinimas pagal strėlės ilgį L: VE7BQH lentelių vidutinė tiesė kiekvienai juostai (apie 60 Yagi antenų juostai, NEC stiprinimai). Skliaustuose imties intervalas ir standartinis nuokrypis:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+Naudojama artimiausios juostos tiesė: žemiau 100 MHz – 50 MHz, nuo 100 iki 300 MHz – 144 MHz, aukščiau 300 MHz – 432 MHz (1296 MHz tai ekstrapoliacija). Už imties intervalo pagrindinis langas įspėja, kad įvertis apytikslis.
+
+Istorinė DL6WU kreivė (VHF Communications 3/1982, 1 pav.): 1981 m. matavimai ties 432 ir 1296 MHz, 2,35 dB strėlės oktavai, nurodytas tikslumas 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO ją pateikia kaip 7,773 log10(L/λ) + 11,43 dBi (skirtumas mažesnis nei 0,1 dB). Programa ją palyginimui įrašo į ataskaitą:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Patikra pagal L.B. Cebik W4RNL NEC modelius ties 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Skirtumas niekada neviršija **0,1 dB**: stiprinimas labiau priklauso nuo strėlės ilgio nei nuo konstrukcijos (VK3AUU Yagi su tuo pačiu elementų skaičiumi turi trumpesnę strėlę). VK5DJ Yagi Calculator taip pat pateikia įverčius VK3AUU, WA2PHW ir DJ9BV variantams, kurių formulės nepaskelbtos.
+
+VE7BQH vidurkis minus DL6WU kreivė: ties 50 MHz 0,25 dB ribose nuo 2 iki 16 λ; ties 144 MHz nuo −0,04 dB (1 λ) iki +0,42 dB (10 λ); ties 432 MHz nuo −0,06 dB (2 λ) iki +0,55 dB (10 λ). W4RNL ties 432 MHz modeliuotoms DL6WU ir VK3AUU antenoms VE7BQH vidurkis yra 0,15–0,55 dB virš NEC: ant ilgų strėlių kompiuteriu optimizuotos lentelių antenos duoda daugiau nei pirminės konstrukcijos.
 
 **Lapelis – šaltinis:** Krauso taisyklė su apskritu lapeliu θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Pavyzdys: 14 λ Yagi ties 432 MHz → 20,3 dBi, lapelis 18,1° horizontaliai ir 19,5° vertikaliai; W4RNL modeliai duoda 20,4 dBi ir 18,4° / 18,8°. Tai apytikslės taisyklės, išvestos iš kelių DL6WU antenų.
+
+Pagal VE7BQH vidurkį ta pati 14 λ Yagi duoda 21,0 dBi ir 16,9° horizontalų bei 18,1° vertikalų lapelį; aukščiau nurodyti 20,3 dBi gauti iš DL6WU kreivės. Lapelio pataisos (0,93 · θK ir θK) lieka tos, kurios išvestos iš DL6WU antenų.
 
 Laikoma, kad antena visada nukreipta į DX. Hot spot yra **skilties viduje**, jei |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: tada jis nupiešiamas pilkas [Dangaus skliaute](Sky-View-lt) ir pasirodo įspėjimas. Vertikalioji skiltis įeina ir į efektyvumo skaičiavimą: kai langelis *antenos diagrama* įjungtas, atspindžio taškai sveriami abiejų antenų vertikaliuoju stiprinimu (plotis θ_vertical, maksimumas ties skilties pakilimu, žemės koeficientas iki nulio ties horizontu).
 

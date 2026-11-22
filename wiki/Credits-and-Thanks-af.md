@@ -22,6 +22,7 @@ YA-MS is vrye sagteware: jy mag dit herversprei en wysig onder die bepalings van
 | **DJ5HG** Klaus von der Heide | QTFGUI en sy handleiding: keëlverstrooiingswet, HOT-A / HOT-B-keuse, toetsgeval Hamburg – Barcelona |
 | **DH9GCD** en **DF5HC** Jens | Formule vir die beste rigting sin El · cos El · sin(P − Az), bruikbare radiant 20–70°, beste afstand 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | Sporadiese meteore (gerapporteer deur DF5HC) |
+| **VE7BQH** Lionel Edwards | Yagi-winstabelle vir 50, 144 en 432 MHz: die gemiddelde reguitlyn per band gee die wins wat die program gebruik |
 | **DL6WU** Günter Hoch | Kurwe van wins teenoor boomlengte vir lang Yagi's (gerapporteer deur **W8IO**) |
 | **W4RNL** L.B. Cebik | NEC-modelle van DL6WU- en VK3AUU-Yagi's, gebruik om die winskurwe te verifieer en die horisontale lob te korrigeer |
 | **VK3AUU** David Tanner | Yagi-ontwerpe wat in die kontrole gebruik is |

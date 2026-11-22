@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Antenni võimendus ja peaharu
 
-**Võimendus – allikas:** Günter Hoch **DL6WU** kõver pikkade Yagide jaoks poomi pikkuse L funktsioonina, vahendanud W8IO (kehtib alates umbes 2 λ) [39]:
+**VE7BQH** – Yagi võimendus poomi pikkuse L funktsioonina: VE7BQH tabelite keskmine sirge iga sagedusala kohta (umbes 60 Yagit sagedusala kohta, NEC võimendused). Sulgudes valimi ulatus ja standardhälve:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+Kasutatakse lähima sagedusala sirget: alla 100 MHz 50 MHz oma, 100 kuni 300 MHz 144 MHz oma, üle 300 MHz 432 MHz oma (1296 MHz jaoks on see ekstrapolatsioon). Väljaspool valimi ulatust hoiatab peaaken, et hinnang on ebatäpne.
+
+DL6WU ajalooline kõver (VHF Communications 3/1982, joonis 1): mõõtmised 432 ja 1296 MHz juures aastast 1981, 2,35 dB poomi oktaavi kohta, väidetav täpsus 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO esitab selle kujul 7,773 log10(L/λ) + 11,43 dBi (erinevus alla 0,1 dB). Programm kirjutab selle võrdluseks aruandesse:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Kontroll L.B. Cebik W4RNL-i NEC-mudelitega sagedusel 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Erinevus ei ületa kunagi **0,1 dB**: võimendus sõltub rohkem poomi pikkusest kui konstruktsioonist (VK3AUU Yagidel on sama elementide arvu juures lühem poom). VK5DJ Yagi Calculator annab hinnanguid ka VK3AUU, WA2PHW ja DJ9BV variantide jaoks, mille valemeid pole avaldatud.
+
+VE7BQH keskmine miinus DL6WU kõver: 50 MHz juures 0,25 dB piires 2 kuni 16 λ; 144 MHz juures −0,04 dB-st (1 λ) kuni +0,42 dB-ni (10 λ); 432 MHz juures −0,06 dB-st (2 λ) kuni +0,55 dB-ni (10 λ). W4RNL-i poolt 432 MHz juures simuleeritud DL6WU ja VK3AUU Yagide puhul on VE7BQH keskmine 0,15–0,55 dB üle NEC-i: pikkadel poomidel annavad tabelite arvutiga optimeeritud Yagid rohkem kui algsed konstruktsioonid.
 
 **Peaharu – allikas:** Krausi reegel ümmarguse peaharuga θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Näide: 14 λ Yagi sagedusel 432 MHz → 20,3 dBi, peaharu 18,1° horisontaalselt ja 19,5° vertikaalselt; W4RNL-i mudelid annavad 20,4 dBi ja 18,4° / 18,8°. Need on ligikaudsed reeglid, mis on tuletatud mõnest DL6WU antennist.
+
+VE7BQH keskmisega annab sama 14 λ Yagi 21,0 dBi ja peaharu 16,9° horisontaalselt ja 18,1° vertikaalselt; ülaltoodud 20,3 dBi on DL6WU kõverast. Peaharu parandused (0,93 · θK ja θK) jäävad DL6WU Yagidest tuletatuiks.
 
 Antenni loetakse alati suunatuks DX-i poole. Hot spot on **keila sees**, kui |Az(Hot) − Az(antenn)| ≤ θ_horizontal/2: siis joonistatakse see [Taevavõlvis](Sky-View-et) hallilt ja ilmub hoiatus. Vertikaalne keil läheb arvesse ka tõhususe arvutuses: kui kast *antenni suunadiagramm* on sees, kaalutakse peegelduspunkte mõlema antenni vertikaalse võimendusega (laius θ_vertical, maksimum keila kõrgusnurga juures, maapinna tegur horisondil nullini).
 

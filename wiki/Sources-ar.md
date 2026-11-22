@@ -27,7 +27,8 @@
 | **LZ2HV** – MSHV | Hot A / Hot B (للمقارنة؛ في الدليل) |
 | Klaus von der Heide **DJ5HG** – QTFGUI ودليل "QTFGUI Help" ‏(2007) | قانون التشتت المخروطي؛ حالة الاختبار هامبورغ – برشلونة خلال الربعيات، المستخدمة للتحقق من النموذج |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*، مؤتمر DARC، يناير 2018 | صيغة أفضل اتجاه لـ **DH9GCD**؛ التشتت المخروطي واختيار HOT-A / HOT-B لـ DJ5HG؛ نقطة إشعاع مفيدة 20–70°؛ أفضل مسافة 1300–1500 km؛ الشهب المتفرقة لـ KB0VUK |
-| Günter Hoch **DL6WU** – الكسب بدلالة طول الذراع لهوائيات Yagi الطويلة، كما نقله W8IO (w8io.com) | G(dBi) = 7.773 log(L/λ) + 11.43 |
+| L. Edwards VE7BQH - جداول كسب هوائيات Yagi للترددات 50 و144 و432 MHz: dxmaps.com/VE7BQH6.html، dxmaps.com/VE7BQH.html، atlas.dxmaps.com/VE7BQH70.html (نسخ على qsl.net/dk7zb وsm2cew.com). | 50 MHz: 7,36 log(L/λ) + 11,67 · 144 MHz: 8,27 log(L/λ) + 11,31 · 432 MHz: 8,68 log(L/λ) + 11,03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas"، VHF Communications 14، 3/1982، ص 130-138، الشكل 1 (مصدر أولي)؛ ويورد المنحنى أيضاً W8IO، www.w8io.com. | G(dBi) = 7,81 log(L/λ) + 11,35 (W8IO: 7,773 log + 11,43) |
 | J.D. **Kraus** – *Antennas*، McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*؛ *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*؛ *70-CM Yagi Stacks Part 2* (هوائيات VK3AUU لـ David Tanner) | محاكاة NEC المستخدمة للتحقق من منحنى الكسب وتصحيح الفص الأفقي (0.93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | تقديرات الكسب لنسخ VK3AUU وWA2PHW وDJ9BV |

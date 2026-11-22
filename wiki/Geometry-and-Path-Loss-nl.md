@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Antennewinst en bundel
 
-**Winst – bron:** de curve van Günter Hoch **DL6WU** voor lange Yagi's als functie van de boomlengte L, aangehaald door W8IO (geldig vanaf ongeveer 2 λ) [39]:
+**VE7BQH** – Winst van een Yagi als functie van de boomlengte L: gemiddelde rechte van de tabellen van VE7BQH per band (ongeveer 60 Yagi's per band, NEC-winsten). Tussen haakjes het bereik van de steekproef en de standaardafwijking:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+De rechte van de dichtstbijzijnde band wordt gebruikt: onder 100 MHz die van 50 MHz, tussen 100 en 300 MHz die van 144 MHz, boven 300 MHz die van 432 MHz (voor 1296 MHz is dat een extrapolatie). Buiten het bereik van de steekproef waarschuwt het hoofdvenster dat de schatting onnauwkeurig is.
+
+Historische curve van DL6WU (VHF Communications 3/1982, fig. 1): metingen op 432 en 1296 MHz uit 1981, 2,35 dB per octaaf boom, opgegeven nauwkeurigheid 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO geeft haar als 7,773 log10(L/λ) + 11,43 dBi (minder dan 0,1 dB verschil). Het programma schrijft haar ter vergelijking in het rapport:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Controle tegen de NEC-modellen van L.B. Cebik W4RNL op 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Het verschil is nooit groter dan **0,1 dB**: de winst hangt meer af van de boomlengte dan van het ontwerp (VK3AUU-Yagi's hebben bij hetzelfde aantal elementen een kortere boom). De Yagi Calculator van VK5DJ geeft ook schattingen voor de varianten VK3AUU, WA2PHW en DJ9BV, waarvan de formules niet zijn gepubliceerd.
+
+VE7BQH-gemiddelde min DL6WU-curve: op 50 MHz binnen 0,25 dB van 2 tot 16 λ; op 144 MHz van −0,04 dB bij 1 λ tot +0,42 dB bij 10 λ; op 432 MHz van −0,06 dB bij 2 λ tot +0,55 dB bij 10 λ. Bij de door W4RNL op 432 MHz gesimuleerde DL6WU- en VK3AUU-Yagi's ligt het VE7BQH-gemiddelde 0,15–0,55 dB boven NEC: op lange booms presteren de computergeoptimaliseerde Yagi's van de tabellen beter dan de oorspronkelijke ontwerpen.
 
 **Bundel – bron:** regel van Kraus, met een cirkelvormige bundel θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Voorbeeld: Yagi van 14 λ op 432 MHz → 20,3 dBi, bundel 18,1° horizontaal en 19,5° verticaal; de modellen van W4RNL geven 20,4 dBi en 18,4° / 18,8°. Het zijn benaderende regels, afgeleid van een paar DL6WU-antennes.
+
+Met het VE7BQH-gemiddelde geeft dezelfde Yagi van 14 λ 21,0 dBi en een bundel van 16,9° horizontaal en 18,1° verticaal; de 20,3 dBi hierboven komen uit de DL6WU-curve. De bundelcorrecties (0,93 · θK en θK) blijven de uit de DL6WU-Yagi's afgeleide.
 
 De antenne wordt altijd als op de DX gericht beschouwd. Een hot spot ligt **in de lob** als |Az(Hot) − Az(antenne)| ≤ θ_horizontal/2: hij wordt dan grijs getekend in de [Hemelkoepel](Sky-View-nl) en er verschijnt een waarschuwing. De verticale lob telt ook mee in de rendementsberekening: met het vakje *antennediagram* aan worden de reflectiepunten gewogen met de verticale winst van beide antennes (breedte θ_vertical, maximum bij de lobelevatie, grondfactor tot nul aan de horizon).
 

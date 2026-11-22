@@ -22,6 +22,7 @@ YA-MS er frjáls hugbúnaður: þú mátt dreifa honum og breyta samkvæmt skilm
 | **DJ5HG** Klaus von der Heide | QTFGUI og handbók þess: lögmál cone scattering, val HOT-A / HOT-B, prófunartilvikið Hamborg – Barcelona |
 | **DH9GCD** og **DF5HC** Jens | Formúla fyrir bestu stefnu sin El · cos El · sin(P − Az), nýtilegur geislapunktur 20–70°, besta fjarlægð 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | Stopulir loftsteinar (eftir frásögn DF5HC) |
+| **VE7BQH** Lionel Edwards | Mögnunartöflur Yagi-loftneta fyrir 50, 144 og 432 MHz: meðallínan fyrir hvert band gefur mögnunina sem forritið notar |
 | **DL6WU** Günter Hoch | Ferill mögnunar sem fall af bómulengd langra Yagi-loftneta (eftir frásögn **W8IO**) |
 | **W4RNL** L.B. Cebik | NEC-líkön af DL6WU- og VK3AUU-Yagi-loftnetum, notuð til að sannreyna mögnunarferilinn og leiðrétta lárétta geislann |
 | **VK3AUU** David Tanner | Yagi-hönnun sem notuð er í prófuninni |

@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Antennengewinn und Keule
 
-**Gewinn – Quelle:** Kurve von Günter Hoch **DL6WU** für lange Yagis in Abhängigkeit von der Boomlänge L, wiedergegeben von W8IO (gültig ab etwa 2 λ) [39]:
+**VE7BQH** – Gewinn einer Yagi in Abhängigkeit von der Boomlänge L: mittlere Gerade der VE7BQH-Tabellen je Band (etwa 60 Yagis pro Band, NEC-Gewinne). In Klammern der Bereich der Stichprobe und die Standardabweichung:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+Verwendet wird die Gerade des nächstgelegenen Bandes: unter 100 MHz die für 50 MHz, zwischen 100 und 300 MHz die für 144 MHz, über 300 MHz die für 432 MHz (für 1296 MHz ist das eine Extrapolation). Außerhalb des Stichprobenbereichs warnt das Hauptfenster, dass die Schätzung ungenau ist.
+
+Historische Kurve von DL6WU (VHF Communications 3/1982, Bild 1): Messungen bei 432 und 1296 MHz aus dem Jahr 1981, 2,35 dB pro Oktave Boomlänge, angegebene Genauigkeit 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO gibt sie als 7,773 log10(L/λ) + 11,43 dBi an (weniger als 0,1 dB Unterschied). Das Programm schreibt sie zum Vergleich in den Bericht:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Prüfung anhand der NEC-Modelle von L.B. Cebik W4RNL auf 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Die Abweichung übersteigt nie **0,1 dB**: Der Gewinn hängt mehr von der Boomlänge als vom Design ab (VK3AUU-Yagis haben bei gleicher Elementzahl einen kürzeren Boom). Der Yagi Calculator von VK5DJ liefert auch Schätzungen für die Varianten VK3AUU, WA2PHW und DJ9BV, deren Formeln nicht veröffentlicht sind.
+
+VE7BQH-Mittel minus DL6WU-Kurve: bei 50 MHz innerhalb 0,25 dB von 2 bis 16 λ; bei 144 MHz von −0,04 dB bei 1 λ bis +0,42 dB bei 10 λ; bei 432 MHz von −0,06 dB bei 2 λ bis +0,55 dB bei 10 λ. Bei den von W4RNL bei 432 MHz simulierten DL6WU- und VK3AUU-Yagis liegt das VE7BQH-Mittel 0,15–0,55 dB über NEC: auf langen Booms leisten die rechneroptimierten Yagis der Tabellen mehr als die ursprünglichen Entwürfe.
 
 **Keule – Quelle:** Kraus-Regel, mit kreisförmiger Keule θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Beispiel: Yagi mit 14 λ auf 432 MHz → 20,3 dBi, Keule 18,1° horizontal und 19,5° vertikal; die Modelle von W4RNL ergeben 20,4 dBi und 18,4° / 18,8°. Das sind Näherungsregeln, abgeleitet aus einigen wenigen DL6WU-Antennen.
+
+Mit dem VE7BQH-Mittel ergibt dieselbe 14-λ-Yagi 21,0 dBi und eine Keule von 16,9° horizontal und 18,1° vertikal; die 20,3 dBi oben stammen aus der DL6WU-Kurve. Die Keulenkorrekturen (0,93 · θK und θK) bleiben die aus den DL6WU-Yagis abgeleiteten.
 
 Die Antenne gilt immer als auf den DX gerichtet. Ein Hot Spot liegt **in der Keule**, wenn |Az(Hot) − Az(Antenne)| ≤ θ_horizontal/2: Er wird dann grau in der [Himmelsansicht](Sky-View-de) gezeichnet und eine Warnung erscheint. Die vertikale Keule geht auch in die Wirkungsgradberechnung ein: Mit eingeschaltetem Kästchen *Antennendiagramm* werden die Reflexionspunkte mit dem vertikalen Gewinn beider Antennen gewichtet (Breite θ_vertical, Maximum bei der Keulenerhebung, Bodenfaktor bis null am Horizont).
 

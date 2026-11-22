@@ -22,6 +22,7 @@ YA-MS はフリーソフトウェアです。GNU General Public License 第 3 �
 | **DJ5HG** Klaus von der Heide | QTFGUI とそのマニュアル: 円錐散乱則、HOT-A / HOT-B の選択、ハンブルク – バルセロナの試験例 |
 | **DH9GCD** と **DF5HC** Jens | 最良方向の式 sin El · cos El · sin(P − Az)、有効な放射点高度 20–70°、最良距離 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | 散在流星 (DF5HC による紹介) |
+| **VE7BQH** Lionel Edwards | 50、144、432 MHz の八木の利得表: バンドごとの平均直線がプログラムの使う利得になる |
 | **DL6WU** Günter Hoch | ロング八木の利得/ブーム長曲線 (**W8IO** による紹介) |
 | **W4RNL** L.B. Cebik | 利得曲線の検証と水平ビーム幅の補正に用いた DL6WU および VK3AUU 八木の NEC モデル |
 | **VK3AUU** David Tanner | 検証に用いた八木の設計 |

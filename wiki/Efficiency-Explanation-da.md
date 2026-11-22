@@ -24,7 +24,7 @@ Hvert trin har en farvet mærkat:
 |---|---|
 | 1. Indledning | Formål, mærkater, hvad effektivitet betyder (OH5IY, MCG_MS; YA-MS bruger den faktiske strækning) |
 | 2. Hvor refleksionerne sker: E-laget | Spor i 80–120 km højde; sporhøjde = typetallet i Collm-histogrammet (kontrol: 89,5 km den 5.11.2026) |
-| 3. Strækningens geometri | Jorden og midtpunktet; antenneelevation (artiklens formel); den fælles zone og dens grænser; Hot A / Hot B; antennelap (DL6WU, Kraus, W4RNL) |
+| 3. Strækningens geometri | Jorden og midtpunktet; antenneelevation (artiklens formel); den fælles zone og dens grænser; Hot A / Hot B; antennelap (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Sværmens radiant | Radiantens position (IMO 2026/2027), dato for maksimum (IMO eller solens længde), aktivitetsprofil |
 | 5. Refleksionsbetingelsen | Spejlende refleksion (McKinley), gaussisk tolerance 0,05 rad, bedste retning (SM6FHZ), DH9GCD-formlen |
 | 6. Fra ét punkt til effektiviteten | Refleksionspunkter for hver 15 km, hvert punkts vægt, procent; sammenligning med QTFGUI (DJ5HG) |

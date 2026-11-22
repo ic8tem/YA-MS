@@ -27,7 +27,8 @@
 | **LZ2HV** – MSHV | Hot A / Hot B (порівняння; у посібнику) |
 | Klaus von der Heide **DJ5HG** – QTFGUI і посібник "QTFGUI Help" (2007) | Закон конусного розсіювання; тестовий випадок Гамбург – Барселона на Квадрантидах для перевірки моделі |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*, конференція DARC, січень 2018 | Формула найкращого напрямку від **DH9GCD**; конусне розсіювання і вибір HOT-A / HOT-B від DJ5HG; корисний радіант 20–70°; найкраща відстань 1300–1500 km; спорадичні метеори за KB0VUK |
-| Günter Hoch **DL6WU** – підсилення довгих Yagi залежно від довжини буму, за повідомленням W8IO (w8io.com) | G(dBi) = 7,773 log(L/λ) + 11,43 |
+| L. Edwards VE7BQH - таблиці підсилення антен Yagi для 50, 144 і 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (копії на qsl.net/dk7zb і sm2cew.com). | 50 MHz: 7,36 log(L/λ) + 11,67 · 144 MHz: 8,27 log(L/λ) + 11,31 · 432 MHz: 8,68 log(L/λ) + 11,03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, с. 130-138, рис. 1 (першоджерело); криву наводить також W8IO, www.w8io.com. | G(dBi) = 7,81 log(L/λ) + 11,35 (W8IO: 7,773 log + 11,43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (Yagi VK3AUU від David Tanner) | NEC-моделювання для перевірки кривої підсилення й корекції горизонтальної пелюстки (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Оцінки підсилення для варіантів VK3AUU, WA2PHW і DJ9BV |

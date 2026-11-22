@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## 안테나 이득과 로브
 
-**이득 – 출처:** 붐 길이 L의 함수로 나타낸 긴 야기 안테나에 대한 Günter Hoch **DL6WU**의 곡선, W8IO 소개(약 2 λ부터 유효) [39]:
+**VE7BQH** – 붐 길이 L에 따른 야기 이득: VE7BQH 표의 밴드별 평균 직선 (밴드당 약 60개 야기, NEC 이득). 괄호 안은 표본 범위와 표준편차:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0.3–5 λ, 0.25 dB · 144 MHz: 0.75–8.9 λ, 0.15 dB · 432 MHz: 1.8–16 λ, 0.17 dB)
+
+가장 가까운 밴드의 직선을 쓴다: 100 MHz 미만은 50 MHz, 100~300 MHz는 144 MHz, 300 MHz 초과는 432 MHz 직선 (1296 MHz에서는 외삽). 표본 범위를 벗어나면 메인 창이 추정이 대략적이라고 경고한다.
+
+DL6WU의 역사적 곡선 (VHF Communications 3/1982, 그림 1): 1981년 432 및 1296 MHz 측정, 붐 길이 옥타브당 2.35 dB, 명시된 정확도 0.5 dB; G ≈ 9.2 + 7.81 log10(L/λ) dBd. W8IO는 이를 7.773 log10(L/λ) + 11.43 dBi로 제시한다 (차이 0.1 dB 미만). 프로그램은 비교를 위해 이를 보고서에 쓴다:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **432 MHz에서 L.B. Cebik W4RNL의 NEC 모델과 비교한 검증**(*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3.12 / 6.88 / 10.79 | 15.17 / 17.91 / 19.46 | 15.27 / 17.94 / 19.45 |
 
 차이는 **0.1 dB**를 넘지 않습니다: 이득은 설계보다 붐 길이에 더 좌우됩니다(VK3AUU 야기는 같은 소자 수에서 붐이 더 짧습니다). VK5DJ의 Yagi Calculator도 VK3AUU, WA2PHW, DJ9BV 변형에 대한 추정값을 주지만 그 공식은 공개되어 있지 않습니다.
+
+VE7BQH 평균 − DL6WU 곡선: 50 MHz에서는 2~16 λ에서 0.25 dB 이내; 144 MHz에서는 1 λ에서 −0.04 dB부터 10 λ에서 +0.42 dB까지; 432 MHz에서는 2 λ에서 −0.06 dB부터 10 λ에서 +0.55 dB까지. W4RNL이 432 MHz에서 시뮬레이션한 DL6WU와 VK3AUU 야기에서 VE7BQH 평균은 NEC보다 0.15–0.55 dB 높다: 긴 붐에서는 컴퓨터로 최적화된 표의 야기가 원래 설계보다 성능이 좋다.
 
 **로브 – 출처:** Kraus 규칙, 원형 로브 θE = θH = θK로 가정 [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 예: 432 MHz의 14 λ 야기 → 20.3 dBi, 로브 수평 18.1°, 수직 19.5°. W4RNL 모델은 20.4 dBi, 18.4° / 18.8°입니다. 이는 몇몇 DL6WU 안테나에서 얻은 근사 규칙입니다.
+
+VE7BQH 평균으로 같은 14 λ 야기는 21.0 dBi, 로브 수평 16.9°, 수직 18.1°가 된다. 위의 20.3 dBi는 DL6WU 곡선의 값이다. 로브 보정 (0.93 · θK와 θK)은 DL6WU 야기에서 얻은 것을 그대로 쓴다.
 
 안테나는 항상 DX를 향한다고 봅니다. |Az(Hot) − Az(antenna)| ≤ θ_horizontal/2이면 hot spot은 **로브 안**에 있으며, [천구](Sky-View-ko)에서 회색으로 그려지고 경고가 나타납니다. 수직 로브는 효율 계산에도 들어갑니다: *안테나 패턴* 상자를 켜면 반사점에 두 안테나의 수직 이득으로 가중치를 줍니다(폭 θ_vertical, 최대는 로브 앙각, 지면 계수로 지평선에서 0).
 

@@ -27,7 +27,8 @@ A **Források** fül felsorolja az összes művet, amelyre a YA-MS épül, az al
 | **LZ2HV** – MSHV | Hot A / Hot B (összehasonlítás; a kézikönyvben) |
 | Klaus von der Heide **DJ5HG** – QTFGUI és a „QTFGUI Help” kézikönyv (2007) | Kúpos szórási törvény; a Hamburg – Barcelona Quadrantidák-teszteset a modell ellenőrzéséhez |
 | Jens **DF5HC** – *„Meteorscatter auf UKW”*, DARC-konferencia, 2018. január | **DH9GCD** legjobbirány-képlete; kúpos szórás és a HOT-A / HOT-B választás DJ5HG szerint; hasznos radiáns 20–70°; legjobb távolság 1300–1500 km; sporadikus meteorok KB0VUK szerint |
-| Günter Hoch **DL6WU** – hosszú Yagik nyeresége a boomhossz függvényében, W8IO közlése szerint (w8io.com) | G(dBi) = 7,773 log(L/λ) + 11,43 |
+| L. Edwards VE7BQH - Yagi-nyereségtáblázatok 50, 144 és 432 MHz-re: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (másolatok: qsl.net/dk7zb és sm2cew.com). | 50 MHz: 7,36 log(L/λ) + 11,67 · 144 MHz: 8,27 log(L/λ) + 11,31 · 432 MHz: 8,68 log(L/λ) + 11,03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, 130-138. o., 1. ábra (elsődleges forrás); a görbét W8IO is közli, www.w8io.com. | G(dBi) = 7,81 log(L/λ) + 11,35 (W8IO: 7,773 log + 11,43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (David Tanner VK3AUU-Yagijai) | NEC-szimulációk a nyereséggörbe ellenőrzéséhez és a vízszintes nyaláb korrekciójához (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Nyereségbecslések a VK3AUU, WA2PHW és DJ9BV változatokra |

@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Anten kazancı ve lobu
 
-**Kazanç – kaynak:** Günter Hoch **DL6WU**'nun uzun Yagi'ler için boom uzunluğu L'ye bağlı eğrisi, W8IO'nun aktarımıyla (yaklaşık 2 λ'dan itibaren geçerli) [39]:
+**VE7BQH** – Bir Yagi'nin kazancı, bom uzunluğu L'nin fonksiyonu olarak: VE7BQH tablolarının bant başına ortalama doğrusu (bant başına yaklaşık 60 Yagi, NEC kazançları). Parantez içinde örneklem aralığı ve standart sapma:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+En yakın bandın doğrusu kullanılır: 100 MHz altında 50 MHz'inki, 100 ile 300 MHz arasında 144 MHz'inki, 300 MHz üstünde 432 MHz'inki (1296 MHz için bu bir dış değerlemedir). Örneklem aralığının dışında ana pencere tahminin kaba olduğunu bildirir.
+
+DL6WU'nun tarihî eğrisi (VHF Communications 3/1982, şekil 1): 1981'de 432 ve 1296 MHz'de yapılan ölçümler, bom oktavı başına 2,35 dB, bildirilen doğruluk 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO bunu 7,773 log10(L/λ) + 11,43 dBi olarak verir (fark 0,1 dB'den az). Program karşılaştırma için bunu rapora yazar:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **L.B. Cebik W4RNL'nin 432 MHz'deki NEC modelleriyle doğrulama** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Fark hiçbir zaman **0,1 dB**'yi aşmaz: kazanç tasarımdan çok boom uzunluğuna bağlıdır (VK3AUU Yagi'lerinin aynı eleman sayısı için boom'u daha kısadır). VK5DJ'nin Yagi Calculator'ı, formülleri yayımlanmamış VK3AUU, WA2PHW ve DJ9BV çeşitleri için de tahminler verir.
+
+VE7BQH ortalaması eksi DL6WU eğrisi: 50 MHz'de 2–16 λ arasında 0,25 dB içinde; 144 MHz'de 1 λ'da −0,04 dB'den 10 λ'da +0,42 dB'e; 432 MHz'de 2 λ'da −0,06 dB'den 10 λ'da +0,55 dB'e. W4RNL'nin 432 MHz'de benzettiği DL6WU ve VK3AUU Yagilerinde VE7BQH ortalaması NEC'in 0,15–0,55 dB üstündedir: uzun bomlarda tabloların bilgisayarla eniyilenmiş Yagileri özgün tasarımlardan daha fazla verir.
 
 **Lob – kaynak:** Kraus kuralı, dairesel lobla θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Örnek: 432 MHz'de 14 λ'lık Yagi → 20,3 dBi, yatayda 18,1° ve dikeyde 19,5° lob; W4RNL'nin modelleri 20,4 dBi ve 18,4° / 18,8° verir. Bunlar birkaç DL6WU anteninden türetilmiş yaklaşık kurallardır.
+
+VE7BQH ortalamasıyla aynı 14 λ Yagi 21,0 dBi ve 16,9° yatay, 18,1° dikey lob verir; yukarıdaki 20,3 dBi DL6WU eğrisinden gelir. Lob düzeltmeleri (0,93 · θK ve θK) DL6WU Yagilerinden türetilenler olarak kalır.
 
 Anten her zaman DX'e çevrilmiş kabul edilir. Bir hot spot, |Az(Hot) − Az(anten)| ≤ θ_horizontal/2 ise **lobun içindedir**: bu durumda [Gökyüzü kubbesinde](Sky-View-tr) içinde gri çizilir ve bir uyarı görünür. Dikey lob verim hesabına da girer: *anten diyagramı* kutusu açıkken yansıma noktaları iki antenin dikey kazancıyla ağırlıklandırılır (genişlik θ_vertical, en yüksek nokta lob yükselmesinde, zemin çarpanı ufukta sıfıra kadar).
 

@@ -24,7 +24,7 @@ Igal sammul on värviline märgend:
 |---|---|
 | 1. Sissejuhatus | Eesmärk, märgendid, mida tähendab efektiivsus (OH5IY, MCG_MS; YA-MS kasutab tegelikku trassi) |
 | 2. Kus peegeldused tekivad: E-kiht | Jäljed 80–120 km kõrgusel; jälgede kõrgus = Collmi histogrammi mood (kontroll: 89,5 km 5.11.2026) |
-| 3. Trassi geomeetria | Maa ja keskpunkt; antenni elevatsioon (artikli valem); ühisala ja selle piirid; Hot A / Hot B; antenni peaharu (DL6WU, Kraus, W4RNL) |
+| 3. Trassi geomeetria | Maa ja keskpunkt; antenni elevatsioon (artikli valem); ühisala ja selle piirid; Hot A / Hot B; antenni peaharu (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Meteoorivoolu radiant | Radiandi asend (IMO 2026/2027), maksimumi kuupäev (IMO või Päikese pikkus), aktiivsusprofiil |
 | 5. Peegeldustingimus | Peegelpeegeldus (McKinley), Gaussi tolerants 0,05 rad, parim suund (SM6FHZ), DH9GCD valem |
 | 6. Ühest punktist efektiivsuseni | Peegelduspunktid iga 15 km järel, iga punkti kaal, protsent; võrdlus QTFGUI-ga (DJ5HG) |

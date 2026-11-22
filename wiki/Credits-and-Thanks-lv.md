@@ -22,6 +22,7 @@ YA-MS ir brīva programmatūra: to var izplatīt un mainīt saskaņā ar GNU Gen
 | **DJ5HG** Klaus von der Heide | QTFGUI un tā rokasgrāmata: konusa izkliedes likums, HOT-A / HOT-B izvēle, Hamburgas – Barselonas pārbaudes gadījums |
 | **DH9GCD** un **DF5HC** Jens | Labākā virziena formula sin El · cos El · sin(P − Az), lietderīgais radiants 20–70°, labākais attālums 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | Sporādiskie meteori (citē DF5HC) |
+| **VE7BQH** Lionel Edwards | Yagi pastiprinājuma tabulas 50, 144 un 432 MHz: katras joslas vidējā taisne dod programmas izmantoto pastiprinājumu |
 | **DL6WU** Günter Hoch | Garo Yagi antenu pastiprinājuma atkarības no traverses garuma līkne (citē **W8IO**) |
 | **W4RNL** L.B. Cebik | DL6WU un VK3AUU Yagi antenu NEC modeļi pastiprinājuma līknes pārbaudei un horizontālās ziedlapiņas korekcijai |
 | **VK3AUU** David Tanner | Pārbaudē izmantotās Yagi konstrukcijas |

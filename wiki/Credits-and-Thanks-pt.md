@@ -22,6 +22,7 @@ O YA-MS é software livre: pode redistribuí-lo e modificá-lo nos termos da GNU
 | **DJ5HG** Klaus von der Heide | QTFGUI e o seu manual: lei do cone scattering, escolha HOT-A / HOT-B, caso de teste Hamburgo – Barcelona |
 | **DH9GCD** e **DF5HC** Jens | Fórmula da melhor direção sin El · cos El · sin(P − Az), radiante útil entre 20 e 70°, melhor distância 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | Meteoros esporádicos (citado por DF5HC) |
+| **VE7BQH** Lionel Edwards | Tabelas de ganho de Yagi para 50, 144 e 432 MHz: a reta média por banda dá o ganho usado pelo programa |
 | **DL6WU** Günter Hoch | Curva do ganho em função do comprimento do boom das Yagis longas (citada por **W8IO**) |
 | **W4RNL** L.B. Cebik | Modelos NEC de Yagis DL6WU e VK3AUU usados para verificar a curva de ganho e corrigir o lóbulo horizontal |
 | **VK3AUU** David Tanner | Projetos de Yagi usados na verificação |

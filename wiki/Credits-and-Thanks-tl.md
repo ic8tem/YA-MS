@@ -22,6 +22,7 @@ Ang YA-MS ay malayang software: maaari mo itong ipamahagi at baguhin ayon sa mga
 | **DJ5HG** Klaus von der Heide | QTFGUI at ang manwal nito: batas ng cone scattering, pagpili ng HOT-A / HOT-B, test case na Hamburg – Barcelona |
 | **DH9GCD** at **DF5HC** Jens | Pormula ng pinakamahusay na direksiyon sin El · cos El · sin(P − Az), magagamit na radiant 20–70°, pinakamahusay na distansiya 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | Mga sporadic na meteor (ayon sa ulat ni DF5HC) |
+| **VE7BQH** Lionel Edwards | Mga talaan ng gain ng Yagi para sa 50, 144 at 432 MHz: ang karaniwang linya bawat band ang nagbibigay ng gain na ginagamit ng programa |
 | **DL6WU** Günter Hoch | Kurba ng gain ayon sa haba ng boom ng mahahabang Yagi (ayon sa ulat ni **W8IO**) |
 | **W4RNL** L.B. Cebik | Mga NEC model ng mga Yagi ng DL6WU at VK3AUU na ginamit para beripikahin ang kurba ng gain at itama ang pahalang na lobe |
 | **VK3AUU** David Tanner | Mga disenyo ng Yagi na ginamit sa pagsusuri |

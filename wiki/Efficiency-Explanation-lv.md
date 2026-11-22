@@ -24,7 +24,7 @@ Katram solim ir krāsaina etiķete:
 |---|---|
 | 1. Ievads | Mērķis, etiķetes, ko nozīmē efektivitāte (OH5IY, MCG_MS; YA-MS izmanto reālo trasi) |
 | 2. Kur notiek atstarošana: E slānis | Sliedes 80–120 km augstumā; sliežu augstums = Collm histogrammas moda (pārbaude: 89,5 km 5/11/2026) |
-| 3. Trases ģeometrija | Zeme un viduspunkts; antenas elevācija (raksta formula); kopējā zona un tās robežas; Hot A / Hot B; antenas ziedlapiņa (DL6WU, Kraus, W4RNL) |
+| 3. Trases ģeometrija | Zeme un viduspunkts; antenas elevācija (raksta formula); kopējā zona un tās robežas; Hot A / Hot B; antenas ziedlapiņa (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Plūsmas radiants | Radianta stāvoklis (IMO 2026/2027), maksimuma datums (IMO vai Saules garums), aktivitātes profils |
 | 5. Atstarošanas nosacījums | Spoguļatstarošana (McKinley), Gausa pielaide 0,05 rad, labākais virziens (SM6FHZ), DH9GCD formula |
 | 6. No viena punkta līdz efektivitātei | Atstarošanas punkti ik pēc 15 km, katra punkta svars, procenti; salīdzinājums ar QTFGUI (DJ5HG) |

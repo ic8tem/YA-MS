@@ -24,7 +24,7 @@ Kiekvienas žingsnis turi spalvotą žymą:
 |---|---|
 | 1. Įvadas | Tikslas, žymos, ką reiškia efektyvumas (OH5IY, MCG_MS; YA-MS naudoja realią trasą) |
 | 2. Kur vyksta atspindžiai: E sluoksnis | Pėdsakai 80–120 km aukštyje; pėdsakų aukštis = Collm histogramos moda (patikra: 89,5 km 2026-11-05) |
-| 3. Trasos geometrija | Žemė ir vidurio taškas; antenos elevacija (straipsnio formulė); bendroji zona ir jos ribos; Hot A / Hot B; antenos lapelis (DL6WU, Kraus, W4RNL) |
+| 3. Trasos geometrija | Žemė ir vidurio taškas; antenos elevacija (straipsnio formulė); bendroji zona ir jos ribos; Hot A / Hot B; antenos lapelis (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Srauto radiantas | Radianto padėtis (IMO 2026/2027), maksimumo data (IMO arba Saulės ilguma), aktyvumo profilis |
 | 5. Atspindžio sąlyga | Veidrodinis atspindys (McKinley), Gauso tolerancija 0,05 rad, geriausias nukreipimas (SM6FHZ), DH9GCD formulė |
 | 6. Nuo vieno taško iki efektyvumo | Atspindžio taškai kas 15 km, kiekvieno taško svoris, procentas; palyginimas su QTFGUI (DJ5HG) |

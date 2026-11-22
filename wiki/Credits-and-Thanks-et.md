@@ -22,6 +22,7 @@ YA-MS on vaba tarkvara: võid seda levitada ja muuta GNU General Public License'
 | **DJ5HG** Klaus von der Heide | QTFGUI ja selle juhend: koonushajumise seadus, HOT-A / HOT-B valik, Hamburg – Barcelona katsejuhtum |
 | **DH9GCD** ja **DF5HC** Jens | Parima suuna valem sin El · cos El · sin(P − Az), kasulik radiant 20–70°, parim kaugus 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | Sporaadilised meteoorid (vahendanud DF5HC) |
+| **VE7BQH** Lionel Edwards | Yagi võimendustabelid sagedustele 50, 144 ja 432 MHz: keskmine sirge iga sagedusala kohta annab programmi kasutatava võimenduse |
 | **DL6WU** Günter Hoch | Pikkade Yagide võimenduse ja poomi pikkuse kõver (vahendanud **W8IO**) |
 | **W4RNL** L.B. Cebik | DL6WU ja VK3AUU Yagide NEC-mudelid, mida kasutati võimenduskõvera kontrolliks ja horisontaalse peaharu parandamiseks |
 | **VK3AUU** David Tanner | Kontrollis kasutatud Yagi konstruktsioonid |

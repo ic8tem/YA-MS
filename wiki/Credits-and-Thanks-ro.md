@@ -22,6 +22,7 @@ YA-MS este software liber: îl puteți redistribui și modifica în condițiile 
 | **DJ5HG** Klaus von der Heide | QTFGUI și manualul său: legea împrăștierii pe con, alegerea HOT-A / HOT-B, cazul de test Hamburg – Barcelona |
 | **DH9GCD** și **DF5HC** Jens | Formula direcției optime sin El · cos El · sin(P − Az), radiant util 20–70°, distanța optimă 1300–1500 km („Meteorscatter auf UKW”, DARC 2018) |
 | **KB0VUK** | Meteorii sporadici (relatat de DF5HC) |
+| **VE7BQH** Lionel Edwards | Tabele de câștig pentru antene Yagi la 50, 144 și 432 MHz: dreapta medie pe bandă dă câștigul folosit de program |
 | **DL6WU** Günter Hoch | Curba câștigului în funcție de lungimea boom-ului pentru antene Yagi lungi (relatată de **W8IO**) |
 | **W4RNL** L.B. Cebik | Modelele NEC ale antenelor Yagi DL6WU și VK3AUU folosite pentru a verifica curba câștigului și a corecta lobul orizontal |
 | **VK3AUU** David Tanner | Proiectele Yagi folosite în verificare |

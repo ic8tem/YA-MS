@@ -24,7 +24,7 @@ May may-kulay na label ang bawat hakbang:
 |---|---|
 | 1. Panimula | Layunin, mga label, ang ibig sabihin ng episyensya (OH5IY, MCG_MS; ginagamit ng YA-MS ang totoong landas) |
 | 2. Kung saan nangyayari ang mga repleksiyon: ang E layer | Mga bakas sa 80–120 km; taas ng bakas = moda ng histogram ng Collm (pagsusuri: 89.5 km noong 5/11/2026) |
-| 3. Heometriya ng landas | Daigdig at gitnang punto; elebasyon ng antenna (pormula ng artikulo); karaniwang sona at ang mga hangganan nito; Hot A / Hot B; lobe ng antenna (DL6WU, Kraus, W4RNL) |
+| 3. Heometriya ng landas | Daigdig at gitnang punto; elebasyon ng antenna (pormula ng artikulo); karaniwang sona at ang mga hangganan nito; Hot A / Hot B; lobe ng antenna (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Ang radiant ng shower | Posisyon ng radiant (IMO 2026/2027), petsa ng peak (IMO o solar longitude), profile ng aktibidad |
 | 5. Kondisyon ng repleksiyon | Specular na repleksiyon (McKinley), Gaussian na tolerance na 0.05 rad, pinakamahusay na tutok (SM6FHZ), pormula ng DH9GCD |
 | 6. Mula sa isang punto patungo sa episyensya | Mga punto ng repleksiyon bawat 15 km, timbang ng bawat punto, porsiyento; paghahambing sa QTFGUI (DJ5HG) |

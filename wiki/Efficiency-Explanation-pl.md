@@ -24,7 +24,7 @@ Każdy krok ma kolorową etykietę:
 |---|---|
 | 1. Wprowadzenie | Cel, etykiety, co oznacza efektywność (OH5IY, MCG_MS; YA-MS używa rzeczywistej trasy) |
 | 2. Gdzie zachodzą odbicia: warstwa E | Ślady na 80–120 km; wysokość śladu = dominanta histogramu z Collm (sprawdzenie: 89,5 km w dniu 5/11/2026) |
-| 3. Geometria trasy | Ziemia i punkt środkowy; elewacja anteny (wzór z artykułu); strefa wspólna i jej granice; Hot A / Hot B; listek anteny (DL6WU, Kraus, W4RNL) |
+| 3. Geometria trasy | Ziemia i punkt środkowy; elewacja anteny (wzór z artykułu); strefa wspólna i jej granice; Hot A / Hot B; listek anteny (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Radiant roju | Położenie radiantu (IMO 2026/2027), data maksimum (IMO lub długość ekliptyczna Słońca), profil aktywności |
 | 5. Warunek odbicia | Odbicie zwierciadlane (McKinley), tolerancja gaussowska 0,05 rad, najlepszy kierunek (SM6FHZ), wzór DH9GCD |
 | 6. Od jednego punktu do efektywności | Punkty odbicia co 15 km, waga każdego punktu, procent; porównanie z QTFGUI (DJ5HG) |

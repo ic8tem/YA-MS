@@ -22,6 +22,7 @@ YA-MS yra laisvoji programinė įranga: galite ją platinti ir keisti pagal GNU 
 | **DJ5HG** Klaus von der Heide | QTFGUI ir jo vadovas: kūginės sklaidos dėsnis, HOT-A / HOT-B pasirinkimas, Hamburgo – Barselonos bandomasis atvejis |
 | **DH9GCD** ir **DF5HC** Jens | Geriausios krypties formulė sin El · cos El · sin(P − Az), naudingas radiantas 20–70°, geriausias atstumas 1300–1500 km („Meteorscatter auf UKW“, DARC 2018) |
 | **KB0VUK** | Sporadiniai meteorai (pateikė DF5HC) |
+| **VE7BQH** Lionel Edwards | Yagi stiprinimo lentelės 50, 144 ir 432 MHz: vidutinė kiekvienos juostos tiesė duoda programos naudojamą stiprinimą |
 | **DL6WU** Günter Hoch | Ilgųjų Yagi stiprinimo ir strėlės ilgio kreivė (pateikė **W8IO**) |
 | **W4RNL** L.B. Cebik | DL6WU ir VK3AUU Yagi NEC modeliai, naudoti stiprinimo kreivei patikrinti ir horizontaliajam lapeliui pataisyti |
 | **VK3AUU** David Tanner | Patikroje naudotos Yagi konstrukcijos |

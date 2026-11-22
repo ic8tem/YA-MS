@@ -27,7 +27,8 @@ Die oortjie **Bronne** lys elke werk waarop YA-MS gebou is, gegroepeer soos hier
 | **LZ2HV** – MSHV | Hot A / Hot B (vergelyking; in die handleiding) |
 | Klaus von der Heide **DJ5HG** – QTFGUI en die handleiding "QTFGUI Help" (2007) | Keëlverstrooiingswet; toetsgeval Hamburg – Barcelona in die Kwadrantiede, gebruik om die model te verifieer |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*, DARC-konferensie, Januarie 2018 | Formule vir die beste rigting deur **DH9GCD**; keëlverstrooiing en HOT-A / HOT-B-keuse deur DJ5HG; bruikbare radiant 20–70°; beste afstand 1300–1500 km; sporadiese meteore volgens KB0VUK |
-| Günter Hoch **DL6WU** – wins teenoor boomlengte van lang Yagi's, gerapporteer deur W8IO (w8io.com) | G(dBi) = 7,773 log(L/λ) + 11,43 |
+| L. Edwards VE7BQH - Yagi-winstabelle vir 50, 144 en 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (kopieë op qsl.net/dk7zb en sm2cew.com). | 50 MHz: 7,36 log(L/λ) + 11,67 · 144 MHz: 8,27 log(L/λ) + 11,31 · 432 MHz: 8,68 log(L/λ) + 11,03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, bl. 130-138, fig. 1 (primêre bron); kurwe ook deur W8IO aangehaal, www.w8io.com. | G(dBi) = 7,81 log(L/λ) + 11,35 (W8IO: 7,773 log + 11,43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (VK3AUU-Yagi's deur David Tanner) | NEC-simulasies gebruik om die winskurwe te verifieer en die horisontale lob te korrigeer (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Winsskattings vir die VK3AUU-, WA2PHW- en DJ9BV-variante |

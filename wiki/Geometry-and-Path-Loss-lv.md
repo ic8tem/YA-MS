@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Antenas pastiprinājums un ziedlapiņa
 
-**Pastiprinājums – avots:** Günter Hoch **DL6WU** līkne garām Yagi antenām atkarībā no traverses garuma L, ko citē W8IO (derīga no apmēram 2 λ) [39]:
+**VE7BQH** – Yagi pastiprinājums atkarībā no traverses garuma L: VE7BQH tabulu vidējā taisne katrai joslai (ap 60 Yagi antenu joslā, NEC pastiprinājumi). Iekavās izlases diapazons un standartnovirze:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+Izmanto tuvākās joslas taisni: zem 100 MHz – 50 MHz, no 100 līdz 300 MHz – 144 MHz, virs 300 MHz – 432 MHz (1296 MHz tā ir ekstrapolācija). Ārpus izlases diapazona galvenais logs brīdina, ka novērtējums ir neprecīzs.
+
+DL6WU vēsturiskā līkne (VHF Communications 3/1982, 1. att.): 1981. gada mērījumi pie 432 un 1296 MHz, 2,35 dB uz traverses oktāvu, norādītā precizitāte 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO to dod kā 7,773 log10(L/λ) + 11,43 dBi (atšķirība mazāka par 0,1 dB). Programma to salīdzinājumam ieraksta atskaitē:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Pārbaude pret L.B. Cebik W4RNL NEC modeļiem pie 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Starpība nekad nepārsniedz **0,1 dB**: pastiprinājums vairāk atkarīgs no traverses garuma nekā no konstrukcijas (VK3AUU Yagi antenām tam pašam elementu skaitam ir īsāka traverse). VK5DJ Yagi Calculator dod novērtējumus arī VK3AUU, WA2PHW un DJ9BV variantiem, kuru formulas nav publicētas.
+
+VE7BQH vidējais mīnus DL6WU līkne: pie 50 MHz 0,25 dB robežās no 2 līdz 16 λ; pie 144 MHz no −0,04 dB (1 λ) līdz +0,42 dB (10 λ); pie 432 MHz no −0,06 dB (2 λ) līdz +0,55 dB (10 λ). W4RNL pie 432 MHz modelētajām DL6WU un VK3AUU antenām VE7BQH vidējais ir 0,15–0,55 dB virs NEC: uz gariem traversēm tabulu datorā optimizētās antenas dod vairāk nekā sākotnējās konstrukcijas.
 
 **Ziedlapiņa – avots:** Kraus likums ar apaļu ziedlapiņu θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Piemērs: 14 λ Yagi pie 432 MHz → 20,3 dBi, ziedlapiņa 18,1° horizontāli un 19,5° vertikāli; W4RNL modeļi dod 20,4 dBi un 18,4° / 18,8°. Tie ir aptuveni likumi, kas iegūti no dažām DL6WU antenām.
+
+Ar VE7BQH vidējo tā pati 14 λ Yagi dod 21,0 dBi un ziedlapiņu 16,9° horizontāli un 18,1° vertikāli; augstāk minētie 20,3 dBi ir no DL6WU līknes. Ziedlapiņas korekcijas (0,93 · θK un θK) paliek tās, kas iegūtas no DL6WU antenām.
 
 Antena vienmēr tiek uzskatīta par pavērstu uz DX. Hot spot ir **daivas iekšpusē**, ja |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: tad to zīmē pelēku [debess velvē](Sky-View-lv) un parādās brīdinājums. Vertikālā daiva iekļaujas arī efektivitātes aprēķinā: ja rūtiņa *antenas diagramma* ir ieslēgta, atstarošanas punktus sver ar abu antenu vertikālo pastiprinājumu (platums θ_vertical, maksimums daivas elevācijā, zemes koeficients līdz nullei pie horizonta).
 

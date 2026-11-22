@@ -24,7 +24,7 @@ Hvert skref ber litaða merkingu:
 |---|---|
 | 1. Inngangur | Tilgangur, merkingar, hvað nýtni þýðir (OH5IY, MCG_MS; YA-MS notar raunverulegu leiðina) |
 | 2. Hvar endurvörpin verða: E-lagið | Slóðir í 80–120 km; hæð slóða = tíðasta gildi Collm-stuðlaritsins (prófun: 89,5 km þann 5/11/2026) |
-| 3. Rúmfræði leiðarinnar | Jörðin og miðpunkturinn; hæðarhorn loftnets (formúla greinarinnar); sameiginlega svæðið og mörk þess; Hot A / Hot B; loftnetsgeisli (DL6WU, Kraus, W4RNL) |
+| 3. Rúmfræði leiðarinnar | Jörðin og miðpunkturinn; hæðarhorn loftnets (formúla greinarinnar); sameiginlega svæðið og mörk þess; Hot A / Hot B; loftnetsgeisli (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Geislapunktur drífunnar | Staða geislapunktsins (IMO 2026/2027), dagsetning hámarks (IMO eða sólarlengd), virknisnið |
 | 5. Endurvarpsskilyrðið | Speglunarendurvarp (McKinley), Gauss-vikmörk 0,05 rad, besta stefna (SM6FHZ), formúla DH9GCD |
 | 6. Frá einum punkti að nýtninni | Endurvarpspunktar á 15 km fresti, vægi hvers punkts, prósenta; samanburður við QTFGUI (DJ5HG) |

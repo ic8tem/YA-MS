@@ -24,7 +24,7 @@ Setiap langkah membawa label berwarna:
 |---|---|
 | 1. Pendahuluan | Tujuan, label, arti efisiensi (OH5IY, MCG_MS; YA-MS memakai lintasan nyata) |
 | 2. Di mana pantulan terjadi: lapisan E | Jejak pada 80–120 km; ketinggian jejak = modus histogram Collm (verifikasi: 89,5 km pada 5/11/2026) |
-| 3. Geometri lintasan | Bumi dan titik tengah; elevasi antena (rumus artikel); zona bersama dan batas-batasnya; Hot A / Hot B; lobus antena (DL6WU, Kraus, W4RNL) |
+| 3. Geometri lintasan | Bumi dan titik tengah; elevasi antena (rumus artikel); zona bersama dan batas-batasnya; Hot A / Hot B; lobus antena (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Radian hujan meteor | Posisi radian (IMO 2026/2027), tanggal puncak (IMO atau bujur matahari), profil aktivitas |
 | 5. Syarat pantulan | Pantulan spekular (McKinley), toleransi Gauss 0,05 rad, arah terbaik (SM6FHZ), rumus DH9GCD |
 | 6. Dari satu titik ke efisiensi | Titik pantul setiap 15 km, bobot setiap titik, persentase; perbandingan dengan QTFGUI (DJ5HG) |

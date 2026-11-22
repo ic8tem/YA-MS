@@ -24,7 +24,7 @@ Cada passo tem uma etiqueta colorida:
 |---|---|
 | 1. Introdução | Objetivo, etiquetas, o que significa eficiência (OH5IY, MCG_MS; o YA-MS usa o percurso real) |
 | 2. Onde ocorrem as reflexões: a camada E | Rastros a 80–120 km; altitude dos rastros = moda do histograma de Collm (verificação: 89,5 km em 5/11/2026) |
-| 3. Geometria do percurso | Terra e ponto médio; elevação da antena (fórmula do artigo); zona comum e os seus limites; Hot A / Hot B; lóbulo da antena (DL6WU, Kraus, W4RNL) |
+| 3. Geometria do percurso | Terra e ponto médio; elevação da antena (fórmula do artigo); zona comum e os seus limites; Hot A / Hot B; lóbulo da antena (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. O radiante da chuva | Posição do radiante (IMO 2026/2027), data do máximo (IMO ou longitude solar), perfil de atividade |
 | 5. Condição de reflexão | Reflexão especular (McKinley), tolerância gaussiana de 0,05 rad, melhor apontamento (SM6FHZ), fórmula de DH9GCD |
 | 6. De um ponto à eficiência | Pontos de reflexão a cada 15 km, peso de cada ponto, porcentagem; comparação com o QTFGUI (DJ5HG) |

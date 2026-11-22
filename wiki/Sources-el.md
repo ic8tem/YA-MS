@@ -27,7 +27,8 @@
 | **LZ2HV** – MSHV | Hot A / Hot B (σύγκριση· στο εγχειρίδιο) |
 | Klaus von der Heide **DJ5HG** – QTFGUI και το εγχειρίδιο "QTFGUI Help" (2007) | Νόμος σκέδασης σε κώνο· δοκιμαστική περίπτωση Αμβούργο – Βαρκελώνη με τις Τεταρτημορίδες, που χρησιμοποιήθηκε για την επαλήθευση του μοντέλου |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*, συνέδριο DARC, Ιανουάριος 2018 | Τύπος καλύτερης κατεύθυνσης του **DH9GCD**· σκέδαση σε κώνο και επιλογή HOT-A / HOT-B του DJ5HG· χρήσιμο ακτινοβόλο 20–70°· βέλτιστη απόσταση 1300–1500 km· σποραδικά μετέωρα του KB0VUK |
-| Günter Hoch **DL6WU** – κέρδος ως προς το μήκος boom για μακριές Yagi, όπως αναφέρει ο W8IO (w8io.com) | G(dBi) = 7.773 log(L/λ) + 11.43 |
+| L. Edwards VE7BQH - πίνακες κέρδους κεραιών Yagi για 50, 144 και 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (αντίγραφα στα qsl.net/dk7zb και sm2cew.com). | 50 MHz: 7,36 log(L/λ) + 11,67 · 144 MHz: 8,27 log(L/λ) + 11,31 · 432 MHz: 8,68 log(L/λ) + 11,03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, σ. 130-138, σχ. 1 (πρωτογενής πηγή)· την καμπύλη παραθέτει και ο W8IO, www.w8io.com. | G(dBi) = 7,81 log(L/λ) + 11,35 (W8IO: 7,773 log + 11,43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*· *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*· *70-CM Yagi Stacks Part 2* (Yagi VK3AUU του David Tanner) | Προσομοιώσεις NEC που χρησιμοποιήθηκαν για την επαλήθευση της καμπύλης κέρδους και τη διόρθωση του οριζόντιου λοβού (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Εκτιμήσεις κέρδους για τις παραλλαγές VK3AUU, WA2PHW και DJ9BV |

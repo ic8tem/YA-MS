@@ -24,7 +24,7 @@ Varje steg har en färgad etikett:
 |---|---|
 | 1. Inledning | Syfte, etiketter, vad effektivitet betyder (OH5IY, MCG_MS; YA-MS använder den verkliga sträckan) |
 | 2. Var reflexerna sker: E-skiktet | Spår på 80–120 km; spårhöjd = typvärdet i Collm-histogrammet (kontroll: 89,5 km den 5/11/2026) |
-| 3. Sträckans geometri | Jorden och mittpunkten; antennelevation (artikelns formel); den gemensamma zonen och dess gränser; Hot A / Hot B; antennlob (DL6WU, Kraus, W4RNL) |
+| 3. Sträckans geometri | Jorden och mittpunkten; antennelevation (artikelns formel); den gemensamma zonen och dess gränser; Hot A / Hot B; antennlob (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Svärmens radiant | Radiantens läge (IMO 2026/2027), datum för maximum (IMO eller solens longitud), aktivitetsprofil |
 | 5. Reflexionsvillkoret | Spegelreflexion (McKinley), gaussisk tolerans 0,05 rad, bästa riktning (SM6FHZ), DH9GCD-formeln |
 | 6. Från en punkt till effektiviteten | Reflexionspunkter var 15:e km, varje punkts vikt, procent; jämförelse med QTFGUI (DJ5HG) |

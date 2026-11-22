@@ -24,7 +24,7 @@ Chaque étape porte une étiquette de couleur :
 |---|---|
 | 1. Introduction | Objet, étiquettes, ce que signifie l'efficacité (OH5IY, MCG_MS ; YA-MS utilise le trajet réel) |
 | 2. Où se produisent les réflexions : la couche E | Traînées entre 80 et 120 km ; altitude des traînées = mode de l'histogramme de Collm (vérification : 89,5 km le 5/11/2026) |
-| 3. Géométrie du trajet | Terre et point milieu ; élévation de l'antenne (formule de l'article) ; zone commune et ses limites ; Hot A / Hot B ; lobe de l'antenne (DL6WU, Kraus, W4RNL) |
+| 3. Géométrie du trajet | Terre et point milieu ; élévation de l'antenne (formule de l'article) ; zone commune et ses limites ; Hot A / Hot B ; lobe de l'antenne (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Le radiant de l'essaim | Position du radiant (IMO 2026/2027), date du maximum (IMO ou longitude solaire), profil d'activité |
 | 5. Condition de réflexion | Réflexion spéculaire (McKinley), tolérance gaussienne 0,05 rad, meilleur pointage (SM6FHZ), formule de DH9GCD |
 | 6. D'un point à l'efficacité | Points de réflexion tous les 15 km, poids de chaque point, pourcentage ; comparaison avec QTFGUI (DJ5HG) |

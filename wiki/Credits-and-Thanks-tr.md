@@ -22,6 +22,7 @@ YA-MS özgür yazılımdır: GNU General Public License sürüm 3 koşulları al
 | **DJ5HG** Klaus von der Heide | QTFGUI ve kılavuzu: koni saçılması yasası, HOT-A / HOT-B seçimi, Hamburg – Barselona deneme örneği |
 | **DH9GCD** ve **DF5HC** Jens | En iyi yön formülü sin El · cos El · sin(P − Az), 20–70° arası yararlı radyant, en iyi mesafe 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | Sporadik meteorlar (DF5HC'nin aktarımıyla) |
+| **VE7BQH** Lionel Edwards | 50, 144 ve 432 MHz için Yagi kazanç tabloları: bant başına ortalama doğru, programın kullandığı kazancı verir |
 | **DL6WU** Günter Hoch | Uzun Yagi'lerde kazanç – boom uzunluğu eğrisi (**W8IO**'nun aktarımıyla) |
 | **W4RNL** L.B. Cebik | Kazanç eğrisini doğrulamak ve yatay lobu düzeltmek için kullanılan DL6WU ve VK3AUU Yagi'lerinin NEC modelleri |
 | **VK3AUU** David Tanner | Doğrulamada kullanılan Yagi tasarımları |

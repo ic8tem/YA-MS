@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## アンテナの利得とビーム幅
 
-**利得 – 出典:** Günter Hoch **DL6WU** によるロング八木のブーム長 L に対する利得曲線。W8IO による紹介 (約 2 λ 以上で有効) [39]:
+**VE7BQH** – ブーム長 L に対する八木の利得: VE7BQH の表 のバンドごとの平均直線 (各バンド約 60 本の八木、NEC による利得)。括弧内は標本の範囲と標準偏差:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0.3–5 λ, 0.25 dB · 144 MHz: 0.75–8.9 λ, 0.15 dB · 432 MHz: 1.8–16 λ, 0.17 dB)
+
+最も近いバンドの直線を使う: 100 MHz 未満は 50 MHz、100～300 MHz は 144 MHz、300 MHz を超えると 432 MHz の直線 (1296 MHz では外挿)。標本の範囲外ではメインウィンドウが推定精度が低いと警告する。
+
+DL6WU の歴史的な曲線 (VHF Communications 3/1982, 図 1): 1981 年の 432 MHz と 1296 MHz での測定、ブーム長 1 オクターブあたり 2.35 dB、公称精度 0.5 dB; G ≈ 9.2 + 7.81 log10(L/λ) dBd。W8IO は 7.773 log10(L/λ) + 11.43 dBi と記載している (差は 0.1 dB 未満)。プログラムは比較のためにこれをレポートに書く:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **432 MHz での L.B. Cebik W4RNL の NEC モデルとの比較** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3.12 / 6.88 / 10.79 | 15.17 / 17.91 / 19.46 | 15.27 / 17.94 / 19.45 |
 
 差は **0.1 dB** を超えません: 利得は設計よりもブーム長に依存します (VK3AUU 八木は同じエレメント数でブームが短い)。VK5DJ の Yagi Calculator も VK3AUU、WA2PHW、DJ9BV 各型の推定値を出しますが、その式は公表されていません。
+
+VE7BQH 平均 − DL6WU 曲線: 50 MHz では 2～16 λ で 0.25 dB 以内; 144 MHz では 1 λ で −0.04 dB から 10 λ で +0.42 dB; 432 MHz では 2 λ で −0.06 dB から 10 λ で +0.55 dB。W4RNL が 432 MHz でシミュレーションした DL6WU と VK3AUU の八木では、VE7BQH 平均は NEC より 0.15–0.55 dB 高い: 長いブームでは、コンピュータで最適化された表の八木が元の設計より性能が高い。
 
 **ビーム幅 – 出典:** Kraus の式。円形ビーム θE = θH = θK として [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 例: 432 MHz の 14 λ 八木 → 20.3 dBi、ビーム幅 水平 18.1°、垂直 19.5°; W4RNL のモデルでは 20.4 dBi と 18.4° / 18.8°。これらは少数の DL6WU アンテナから導いた近似則です。
+
+VE7BQH 平均では、同じ 14 λ の八木は 21.0 dBi、ローブは水平 16.9°、垂直 18.1° となる。上の 20.3 dBi は DL6WU 曲線による値。ローブの補正 (0.93 · θK と θK) は DL6WU 八木から導いたものをそのまま使う。
 
 アンテナは常に DX に向けていると考えます。|Az(Hot) − Az(antenna)| ≤ θ_horizontal/2 なら hot spot は **ローブの内側** にあり、[天球図](Sky-View-ja)で灰色に描かれ、警告が出ます。垂直ローブは効率の計算にも入ります。*アンテナパターン* がオンのとき、反射点を 2 本のアンテナの垂直利得で重み付けします（幅 θ_vertical、最大はローブ仰角、大地係数で地平線では 0）。
 

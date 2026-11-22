@@ -24,7 +24,7 @@ Her adım renkli bir etiket taşır:
 |---|---|
 | 1. Giriş | Amaç, etiketler, verimin anlamı (OH5IY, MCG_MS; YA-MS gerçek yolu kullanır) |
 | 2. Yansımalar nerede olur: E katmanı | 80–120 km'deki izler; iz yüksekliği = Collm histogramının modu (doğrulama: 5/11/2026'da 89,5 km) |
-| 3. Yol geometrisi | Dünya ve orta nokta; anten elevasyonu (makale formülü); ortak bölge ve sınırları; Hot A / Hot B; anten lobu (DL6WU, Kraus, W4RNL) |
+| 3. Yol geometrisi | Dünya ve orta nokta; anten elevasyonu (makale formülü); ortak bölge ve sınırları; Hot A / Hot B; anten lobu (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Yağmurun radyantı | Radyant konumu (IMO 2026/2027), tepe tarihi (IMO ya da güneş boylamı), etkinlik profili |
 | 5. Yansıma koşulu | Aynasal yansıma (McKinley), 0,05 rad Gauss toleransı, en iyi yön (SM6FHZ), DH9GCD formülü |
 | 6. Tek bir noktadan verime | Her 15 km'de yansıma noktaları, her noktanın ağırlığı, yüzde; QTFGUI (DJ5HG) ile karşılaştırma |

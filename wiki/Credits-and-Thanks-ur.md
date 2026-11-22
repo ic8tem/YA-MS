@@ -22,6 +22,7 @@ YA-MS آزاد سافٹ ویئر ہے: آپ اسے GNU General Public License و
 | **DJ5HG** Klaus von der Heide | QTFGUI اور اس کا دستی کتابچہ: مخروطی انتشار کا قانون، HOT-A / HOT-B کا انتخاب، Hamburg – Barcelona کی آزمائشی مثال |
 | **DH9GCD** اور **DF5HC** Jens | بہترین سمت کا فارمولا sin El · cos El · sin(P − Az)، مفید ریڈیئنٹ 20–70°، بہترین فاصلہ 1300–1500 km ("Meteorscatter auf UKW"، DARC 2018) |
 | **KB0VUK** | منتشر شہابیے (DF5HC کے بیان کے مطابق) |
+| **VE7BQH** Lionel Edwards | 50، 144 اور 432 MHz کے لیے Yagi گین جدولیں: ہر بینڈ کی اوسط سیدھی لکیر پروگرام کا استعمال کردہ گین دیتی ہے |
 | **DL6WU** Günter Hoch | لمبے Yagi کا بوم کی لمبائی کے مقابلے میں گین کا منحنی (**W8IO** کے بیان کے مطابق) |
 | **W4RNL** L.B. Cebik | DL6WU اور VK3AUU Yagi کے NEC ماڈل، گین منحنی کی جانچ اور افقی لوب کی تصحیح کے لیے |
 | **VK3AUU** David Tanner | جانچ میں استعمال ہونے والے Yagi ڈیزائن |

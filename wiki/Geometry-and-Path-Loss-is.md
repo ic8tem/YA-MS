@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Loftnetsmögnun og geisli
 
-**Mögnun – heimild:** ferill Günters Hoch **DL6WU** fyrir löng Yagi-loftnet sem fall af lengd bómunnar L, eftir frásögn W8IO (gildir frá um 2 λ) [39]:
+**VE7BQH** – Mögnun Yagi-loftnets sem fall af bómulengdinni L: meðallína VE7BQH-taflnanna fyrir hvert band (um 60 Yagi-loftnet á band, NEC-mögnun). Innan sviga svið úrtaksins og staðalfrávikið:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+Notuð er lína næsta bands: undir 100 MHz lína 50 MHz, milli 100 og 300 MHz lína 144 MHz, yfir 300 MHz lína 432 MHz (fyrir 1296 MHz er það framreikningur). Utan sviðs úrtaksins varar aðalglugginn við því að matið sé ónákvæmt.
+
+Sögulegur ferill DL6WU (VHF Communications 3/1982, mynd 1): mælingar á 432 og 1296 MHz frá 1981, 2,35 dB á áttund bómu, uppgefin nákvæmni 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO gefur hann sem 7,773 log10(L/λ) + 11,43 dBi (innan við 0,1 dB munur). Forritið skrifar hann í skýrsluna til samanburðar:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Prófun á móti NEC-líkönum L.B. Cebik W4RNL á 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Munurinn fer aldrei yfir **0,1 dB**: mögnunin ræðst meira af lengd bómunnar en af hönnuninni (Yagi-loftnet VK3AUU hafa styttri bómu fyrir sama fjölda staka). Yagi Calculator eftir VK5DJ gefur einnig mat fyrir afbrigðin VK3AUU, WA2PHW og DJ9BV, en formúlur þeirra hafa ekki verið birtar.
+
+VE7BQH-meðaltal mínus DL6WU-ferill: á 50 MHz innan 0,25 dB frá 2 til 16 λ; á 144 MHz frá −0,04 dB við 1 λ upp í +0,42 dB við 10 λ; á 432 MHz frá −0,06 dB við 2 λ upp í +0,55 dB við 10 λ. Á DL6WU- og VK3AUU-loftnetunum sem W4RNL hermdi á 432 MHz er VE7BQH-meðaltalið 0,15–0,55 dB yfir NEC: á löngum bómum skila tölvubestuð Yagi-loftnet taflnanna meiru en upprunalegu hönnunin.
 
 **Geisli – heimild:** regla Kraus, með hringlaga geisla θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Dæmi: 14 λ Yagi á 432 MHz → 20,3 dBi, geisli 18,1° láréttur og 19,5° lóðréttur; líkön W4RNL gefa 20,4 dBi og 18,4° / 18,8°. Þetta eru nálgunarreglur leiddar af fáeinum DL6WU-loftnetum.
+
+Með VE7BQH-meðaltalinu gefur sama 14 λ Yagi-loftnetið 21,0 dBi og geisla 16,9° láréttan og 18,1° lóðréttan; 20,3 dBi hér að ofan eru úr DL6WU-ferlinum. Leiðréttingar geislans (0,93 · θK og θK) eru áfram þær sem leiddar voru af DL6WU-loftnetunum.
 
 Loftnetinu er alltaf talið beint að DX-stöðinni. Hot spot er **innan geislans** ef |Az(Hot) − Az(loftnet)| ≤ θ_horizontal/2: hann er þá teiknaður grár í [Himinhvelfingunni](Sky-View-is) og viðvörun birtist. Lóðrétti geislinn fer líka inn í útreikning nýtninnar: með reitinn *geislamynstur loftnets* kveiktan eru endurvarpspunktar vegnir með lóðréttri mögnun beggja loftneta (breidd θ_vertical, hámark við hæð geislans, jarðþáttur niður í núll við sjóndeildarhring).
 

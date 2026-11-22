@@ -24,7 +24,7 @@ Sekmelerin üstünde, tüm sekmeler için geçerli iki sıra kontrol vardır. Sa
 |---|---|
 | **İz yüksekliği km** + **radardan** | Meteor izlerinin yüksekliği (varsayılan 90 km). *radardan* işaretliyse Collm radarının ölçtüğü en sık yükseklik (mod) kullanılır; bkz. [Radar akısı](Radar-Flux-tr). |
 | **Lob elevasyonu °** | Anteninizin dikey lobunun en yüksek noktasının yükselme açısı: 0°'ye sabitlenmiş yönlü bir antenin lobu zemin yansıması nedeniyle yine de ufkun birkaç derece üzerindedir (genellikle 3-8°). **anten diyagramı** kutusu açıkken (varsayılan) E katmanının noktaları iki antenin dikey diyagramıyla ağırlıklandırılır; kapalıyken yalnızca iki istasyonun da bu açının üstünde gördüğü noktalar kullanılır. |
-| **Yagi anten: boom m** | Yagi'nizin boom uzunluğu. Program uzunluğu λ cinsinden, kazancı (DL6WU eğrisi) ve yatay ile dikey −3 dB lobu gösterir; bkz. [Geometri ve yol kaybı](Geometry-and-Path-Loss-tr#anten-kazancı-ve-lobu). 2 λ'nın altında tahmin kabadır. |
+| **Yagi anten: boom m** | Yagi'nizin boom uzunluğu. Program uzunluğu λ cinsinden, kazancı (VE7BQH eğrisi) ve yatay ile dikey −3 dB lobu gösterir; bkz. [Geometri ve yol kaybı](Geometry-and-Path-Loss-tr#anten-kazancı-ve-lobu). 2 λ'nın altında tahmin kabadır. |
 | **Orta noktadan hot spot km** + **auto (AMS)** | Hot A ve Hot B'nin orta noktaya uzaklığı. *auto (AMS)* işaretliyken (varsayılan) DJ5HG'nin aktardığı J. Richardson (AMS) anten sapma tablosunu izler: 1000 km'de 13°, 1250 km'de 11°, 1500 ve 2000 km'de 10° (orta noktadan yaklaşık 115, 121, 132 ve 176 km). 30–400 km'yi elle girmek için işareti kaldırın (MSHV 150 km kullanır). |
 
 **3. sıra – saat**

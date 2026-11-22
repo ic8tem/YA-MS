@@ -27,7 +27,8 @@
 | **LZ2HV** – MSHV | Hot A / Hot B (موازنہ؛ دستی کتابچے میں) |
 | Klaus von der Heide **DJ5HG** – QTFGUI اور "QTFGUI Help" دستی کتابچہ (2007) | مخروطی انتشار کا قانون (cone scattering)؛ ماڈل کی جانچ کے لیے Hamburg – Barcelona کواڈرانٹڈز کی مثال |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*، DARC کانفرنس، جنوری 2018 | **DH9GCD** کا بہترین سمت کا فارمولا؛ DJ5HG کا مخروطی انتشار اور HOT-A / HOT-B کا انتخاب؛ مفید ریڈیئنٹ 20–70°؛ بہترین فاصلہ 1300–1500 km؛ KB0VUK کے منتشر شہابیے |
-| Günter Hoch **DL6WU** – لمبے Yagi کا بوم کی لمبائی کے مقابلے میں گین، W8IO کے بیان کے مطابق (w8io.com) | G(dBi) = 7.773 log(L/λ) + 11.43 |
+| L. Edwards VE7BQH - 50، 144 اور 432 MHz کے لیے Yagi گین جدولیں: dxmaps.com/VE7BQH6.html، dxmaps.com/VE7BQH.html، atlas.dxmaps.com/VE7BQH70.html (نقول qsl.net/dk7zb اور sm2cew.com پر)۔ | 50 MHz: 7,36 log(L/λ) + 11,67 · 144 MHz: 8,27 log(L/λ) + 11,31 · 432 MHz: 8,68 log(L/λ) + 11,03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas"، VHF Communications 14، 3/1982، ص 130-138، شکل 1 (بنیادی ماخذ)؛ یہ خم W8IO نے بھی نقل کیا ہے، www.w8io.com۔ | G(dBi) = 7,81 log(L/λ) + 11,35 (W8IO: 7,773 log + 11,43) |
 | J.D. **Kraus** – *Antennas*، McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*؛ *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*؛ *70-CM Yagi Stacks Part 2* (David Tanner کے VK3AUU Yagi) | گین منحنی کی جانچ اور افقی لوب کی تصحیح کے لیے NEC سمولیشن (0.93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | VK3AUU، WA2PHW اور DJ9BV اقسام کے گین کے تخمینے |

@@ -24,7 +24,7 @@ Fiecare pas poartă o etichetă colorată:
 |---|---|
 | 1. Introducere | Scopul, etichetele, ce înseamnă eficiența (OH5IY, MCG_MS; YA-MS folosește traseul real) |
 | 2. Unde au loc reflexiile: stratul E | Urme la 80–120 km; înălțimea urmei = moda histogramei Collm (verificare: 89,5 km pe 5/11/2026) |
-| 3. Geometria traseului | Pământul și punctul median; elevația antenei (formula articolului); zona comună și limitele sale; Hot A / Hot B; lobul antenei (DL6WU, Kraus, W4RNL) |
+| 3. Geometria traseului | Pământul și punctul median; elevația antenei (formula articolului); zona comună și limitele sale; Hot A / Hot B; lobul antenei (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Radiantul roiului | Poziția radiantului (IMO 2026/2027), data maximului (IMO sau longitudinea solară), profilul de activitate |
 | 5. Condiția de reflexie | Reflexia speculară (McKinley), toleranța gaussiană 0,05 rad, direcția optimă (SM6FHZ), formula DH9GCD |
 | 6. De la un punct la eficiență | Puncte de reflexie la fiecare 15 km, ponderea fiecărui punct, procentul; comparația cu QTFGUI (DJ5HG) |

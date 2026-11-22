@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Ganancia y lóbulo de la antena
 
-**Ganancia – fuente:** curva de Günter Hoch **DL6WU** para Yagis largas en función de la longitud del boom L, citada por W8IO (válida a partir de unas 2 λ) [39]:
+**VE7BQH** – Ganancia de una Yagi en función de la longitud del boom L: recta media de las tablas de VE7BQH por banda (unas 60 Yagi por banda, ganancias NEC). Entre paréntesis el intervalo de la muestra y la desviación típica:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+Se usa la recta de la banda más cercana: por debajo de 100 MHz la de 50 MHz, entre 100 y 300 MHz la de 144 MHz, por encima de 300 MHz la de 432 MHz (para 1296 MHz es una extrapolación). Fuera del intervalo de la muestra la ventana principal avisa de que la estimación es poco precisa.
+
+Curva histórica de DL6WU (VHF Communications 3/1982, fig. 1): medidas a 432 y 1296 MHz de 1981, 2,35 dB por octava de boom, precisión declarada 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO la da como 7,773 log10(L/λ) + 11,43 dBi (menos de 0,1 dB de diferencia). El programa la escribe en el informe para comparación:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Verificación con los modelos NEC de L.B. Cebik W4RNL en 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 La diferencia nunca supera **0,1 dB**: la ganancia depende más de la longitud del boom que del diseño (las Yagis VK3AUU tienen un boom más corto con el mismo número de elementos). El Yagi Calculator de VK5DJ da también estimaciones para las variantes VK3AUU, WA2PHW y DJ9BV, cuyas fórmulas no están publicadas.
+
+Media VE7BQH menos curva DL6WU: a 50 MHz dentro de 0,25 dB de 2 a 16 λ; a 144 MHz de −0,04 dB a 1 λ a +0,42 dB a 10 λ; a 432 MHz de −0,06 dB a 2 λ a +0,55 dB a 10 λ. En las Yagi DL6WU y VK3AUU simuladas por W4RNL a 432 MHz la media VE7BQH queda 0,15–0,55 dB por encima del NEC: en booms largos las Yagi de las tablas, optimizadas por ordenador, rinden más que los diseños originales.
 
 **Lóbulo – fuente:** regla de Kraus, con lóbulo circular θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Ejemplo: Yagi de 14 λ en 432 MHz → 20,3 dBi, lóbulo de 18,1° en horizontal y 19,5° en vertical; los modelos de W4RNL dan 20,4 dBi y 18,4° / 18,8°. Son reglas aproximadas obtenidas de unas pocas antenas DL6WU.
+
+Con la media VE7BQH la misma Yagi de 14 λ da 21,0 dBi y lóbulo de 16,9° horizontal y 18,1° vertical; los 20,3 dBi de arriba son los de la curva DL6WU. Las correcciones del lóbulo (0,93 · θK y θK) siguen siendo las obtenidas de las Yagi DL6WU.
 
 La antena se considera siempre apuntada hacia el DX. Un hot spot está **dentro del lóbulo** si |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: entonces se dibuja en gris en la [Bóveda celeste](Sky-View-es) y aparece un aviso. El lóbulo vertical entra también en el cálculo de la eficiencia: con la casilla *diagrama de antena* activada, los puntos de reflexión se ponderan con la ganancia vertical de las dos antenas (anchura θ_vertical, máximo en la elevación del lóbulo, factor del suelo hasta cero en el horizonte).
 

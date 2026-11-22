@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Gain et lobe de l'antenne
 
-**Gain – source :** courbe de Günter Hoch **DL6WU** pour les Yagi longues en fonction de la longueur de boom L, rapportée par W8IO (valable à partir d'environ 2 λ) [39] :
+**VE7BQH** – Gain d'une Yagi en fonction de la longueur du boom L : droite moyenne des tables de VE7BQH pour chaque bande (environ 60 Yagi par bande, gains NEC). Entre parenthèses, l'étendue de l'échantillon et l'écart type :
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+On utilise la droite de la bande la plus proche : sous 100 MHz celle de 50 MHz, entre 100 et 300 MHz celle de 144 MHz, au-dessus de 300 MHz celle de 432 MHz (pour 1296 MHz c'est une extrapolation). Hors de l'étendue de l'échantillon, la fenêtre principale signale que l'estimation est peu précise.
+
+Courbe historique de DL6WU (VHF Communications 3/1982, fig. 1) : mesures à 432 et 1296 MHz de 1981, 2,35 dB par octave de boom, précision annoncée 0,5 dB ; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO la donne comme 7,773 log10(L/λ) + 11,43 dBi (moins de 0,1 dB d'écart). Le programme l'écrit dans le rapport pour comparaison :
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Vérification avec les modèles NEC de L.B. Cebik W4RNL à 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design* ; *70-CM Yagi Stacks Part 2*) :
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 L'écart ne dépasse jamais **0,1 dB** : le gain dépend de la longueur du boom plus que du modèle (les Yagi VK3AUU ont un boom plus court à nombre d'éléments égal). Le Yagi Calculator de VK5DJ donne aussi des estimations pour les variantes VK3AUU, WA2PHW et DJ9BV, dont les formules ne sont pas publiées.
+
+Moyenne VE7BQH moins courbe DL6WU : à 50 MHz à moins de 0,25 dB de 2 à 16 λ ; à 144 MHz de −0,04 dB à 1 λ à +0,42 dB à 10 λ ; à 432 MHz de −0,06 dB à 2 λ à +0,55 dB à 10 λ. Sur les Yagi DL6WU et VK3AUU simulées par W4RNL à 432 MHz, la moyenne VE7BQH est 0,15–0,55 dB au-dessus du NEC : sur les booms longs, les Yagi des tables, optimisées par ordinateur, rendent plus que les conceptions d'origine.
 
 **Lobe – source :** règle de Kraus, avec un lobe circulaire θE = θH = θK [40] :
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Exemple : Yagi de 14 λ à 432 MHz → 20,3 dBi, lobe de 18,1° en horizontal et 19,5° en vertical ; les modèles de W4RNL donnent 20,4 dBi et 18,4° / 18,8°. Ce sont des règles approchées, tirées de quelques antennes DL6WU.
+
+Avec la moyenne VE7BQH, la même Yagi de 14 λ donne 21,0 dBi et un lobe de 16,9° horizontal et 18,1° vertical ; les 20,3 dBi ci-dessus sont ceux de la courbe DL6WU. Les corrections du lobe (0,93 · θK et θK) restent celles tirées des Yagi DL6WU.
 
 L'antenne est toujours considérée pointée vers le DX. Un hot spot est **dans le lobe** si |Az(Hot) − Az(antenne)| ≤ θ_horizontal/2 : il est alors dessiné en gris dans la [voûte céleste](Sky-View-fr) et un avertissement apparaît. Le lobe vertical entre aussi dans le calcul de l'efficacité : case *diagramme d'antenne* activée, les points de réflexion sont pondérés par le gain vertical des deux antennes (largeur θ_vertical, maximum à l'élévation du lobe, facteur du sol jusqu'à zéro à l'horizon).
 

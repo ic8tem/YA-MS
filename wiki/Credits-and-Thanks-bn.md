@@ -22,6 +22,7 @@ YA-MS মুক্ত সফটওয়্যার: GNU General Public License
 | **DJ5HG** Klaus von der Heide | QTFGUI ও তার ম্যানুয়াল: শঙ্কু বিচ্ছুরণের নিয়ম, HOT-A / HOT-B নির্বাচন, Hamburg – Barcelona পরীক্ষা-উদাহরণ |
 | **DH9GCD** ও **DF5HC** Jens | সেরা দিকের সূত্র sin El · cos El · sin(P − Az), কার্যকর বিকিরণ বিন্দু 20–70°, সেরা দূরত্ব 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | বিক্ষিপ্ত উল্কা (DF5HC-এর উল্লেখ অনুযায়ী) |
+| **VE7BQH** Lionel Edwards | 50, 144 ও 432 MHz-এর Yagi গেইন সারণি: প্রতিটি ব্যান্ডের গড় সরলরেখা প্রোগ্রামের ব্যবহৃত গেইন দেয় |
 | **DL6WU** Günter Hoch | দীর্ঘ ইয়াগির বুমের দৈর্ঘ্য অনুযায়ী গেইনের বক্ররেখা (**W8IO**-র উল্লেখ অনুযায়ী) |
 | **W4RNL** L.B. Cebik | গেইন বক্ররেখা যাচাই ও অনুভূমিক লোব সংশোধনে ব্যবহৃত DL6WU ও VK3AUU ইয়াগির NEC মডেল |
 | **VK3AUU** David Tanner | যাচাইয়ে ব্যবহৃত ইয়াগি নকশা |

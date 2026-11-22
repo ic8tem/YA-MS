@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## 天线增益与波瓣
 
-**增益 – 来源：** Günter Hoch **DL6WU** 给出的长八木天线增益随横梁长度 L 变化的曲线，由 W8IO 转述（约 2 λ 以上有效）[39]：
+**VE7BQH** – 八木天线增益与横梁长度 L 的关系：VE7BQH 表格 每个波段的平均直线（每个波段约 60 副八木天线，NEC 增益）。括号内为样本范围和标准差：
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0.3–5 λ, 0.25 dB · 144 MHz: 0.75–8.9 λ, 0.15 dB · 432 MHz: 1.8–16 λ, 0.17 dB)
+
+使用最近波段的直线：低于 100 MHz 用 50 MHz 的，100 至 300 MHz 用 144 MHz 的，高于 300 MHz 用 432 MHz 的（对 1296 MHz 属外推）。超出样本范围时主窗口会提示估算不够精确。
+
+DL6WU 的历史曲线（VHF Communications 3/1982，图 1）：1981 年在 432 和 1296 MHz 的测量，横梁每倍长 2.35 dB，标称精度 0.5 dB；G ≈ 9.2 + 7.81 log10(L/λ) dBd。W8IO 将其记作 7.773 log10(L/λ) + 11.43 dBi（相差不到 0.1 dB）。程序在报告中写出它作比较：
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **与 L.B. Cebik W4RNL 在 432 MHz 上的 NEC 模型对比验证**（*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*；*70-CM Yagi Stacks Part 2*）：
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU（David Tanner） | 16 / 28 / 40 | 3.12 / 6.88 / 10.79 | 15.17 / 17.91 / 19.46 | 15.27 / 17.94 / 19.45 |
 
 差异从未超过 **0.1 dB**：增益更多取决于横梁长度，而不是具体设计（单元数相同时，VK3AUU 八木的横梁更短）。VK5DJ 的 Yagi Calculator 也给出了 VK3AUU、WA2PHW 和 DJ9BV 型号的估算值，但其公式未公开。
+
+VE7BQH 平均值减 DL6WU 曲线：50 MHz 在 2 至 16 λ 内相差不超过 0.25 dB；144 MHz 从 1 λ 时 −0.04 dB 到 10 λ 时 +0.42 dB；432 MHz 从 2 λ 时 −0.06 dB 到 10 λ 时 +0.55 dB。对 W4RNL 在 432 MHz 仿真的 DL6WU 和 VK3AUU 八木，VE7BQH 平均值比 NEC 高 0.15–0.55 dB：在长横梁上，表中经计算机优化的八木比原始设计性能更好。
 
 **波瓣 – 来源：** Kraus 规则，取圆形波瓣 θE = θH = θK [40]：
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 示例：432 MHz 上 14 λ 的八木 → 20.3 dBi，水平波瓣 18.1°，垂直波瓣 19.5°；W4RNL 的模型给出 20.4 dBi 和 18.4° / 18.8°。这些是由少数几副 DL6WU 天线得出的近似规则。
+
+按 VE7BQH 平均值，同一副 14 λ 八木为 21.0 dBi，波瓣水平 16.9°、垂直 18.1°；上面的 20.3 dBi 来自 DL6WU 曲线。波瓣修正（0.93 · θK 和 θK）仍沿用由 DL6WU 八木得出的值。
 
 天线始终视为指向 DX。若 |Az(Hot) − Az(antenna)| ≤ θ_horizontal/2，则 hot spot **位于波瓣内**：此时在[天穹](Sky-View-zh)中以灰色绘出，并显示警告。垂直波瓣也计入效率计算：开启 *天线方向图* 复选框时，反射点按两副天线的垂直增益加权（宽度 θ_vertical，最大值在波瓣仰角处，地面因子在地平线处降为零）。
 

@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Wins en lob van die antenna
 
-**Wins – bron:** kurwe van Günter Hoch **DL6WU** vir lang Yagi's as funksie van die boomlengte L, gerapporteer deur W8IO (geldig vanaf ongeveer 2 λ) [39]:
+**VE7BQH** – Wins van 'n Yagi as funksie van die boomlengte L: gemiddelde reguitlyn van die VE7BQH-tabelle per band (sowat 60 Yagi's per band, NEC-winste). Tussen hakies die omvang van die steekproef en die standaardafwyking:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+Die reguitlyn van die naaste band word gebruik: onder 100 MHz dié van 50 MHz, tussen 100 en 300 MHz dié van 144 MHz, bo 300 MHz dié van 432 MHz (vir 1296 MHz is dit 'n ekstrapolasie). Buite die omvang van die steekproef waarsku die hoofvenster dat die skatting onakkuraat is.
+
+Historiese kurwe van DL6WU (VHF Communications 3/1982, fig. 1): metings by 432 en 1296 MHz uit 1981, 2,35 dB per oktaaf boom, verklaarde akkuraatheid 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO gee dit as 7,773 log10(L/λ) + 11,43 dBi (minder as 0,1 dB verskil). Die program skryf dit ter vergelyking in die verslag:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Kontrole teen die NEC-modelle van L.B. Cebik W4RNL op 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Die verskil oorskry nooit **0,1 dB** nie: die wins hang meer van die boomlengte af as van die ontwerp (VK3AUU-Yagi's het 'n korter boom vir dieselfde aantal elemente). Die Yagi Calculator van VK5DJ gee ook skattings vir die VK3AUU-, WA2PHW- en DJ9BV-variante, waarvan die formules nie gepubliseer is nie.
+
+VE7BQH-gemiddelde minus DL6WU-kurwe: by 50 MHz binne 0,25 dB van 2 tot 16 λ; by 144 MHz van −0,04 dB by 1 λ tot +0,42 dB by 10 λ; by 432 MHz van −0,06 dB by 2 λ tot +0,55 dB by 10 λ. Op die DL6WU- en VK3AUU-Yagi's wat W4RNL by 432 MHz gesimuleer het, lê die VE7BQH-gemiddelde 0,15–0,55 dB bo NEC: op lang booms presteer die rekenaar-geoptimeerde Yagi's van die tabelle beter as die oorspronklike ontwerpe.
 
 **Lob – bron:** Kraus-reël, met 'n sirkelvormige lob θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Voorbeeld: 14 λ-Yagi op 432 MHz → 20,3 dBi, lob 18,1° horisontaal en 19,5° vertikaal; W4RNL se modelle gee 20,4 dBi en 18,4° / 18,8°. Dit is benaderde reëls, afgelei van 'n paar DL6WU-antennas.
+
+Met die VE7BQH-gemiddelde gee dieselfde Yagi van 14 λ 21,0 dBi en 'n lob van 16,9° horisontaal en 18,1° vertikaal; die 20,3 dBi hierbo kom van die DL6WU-kurwe. Die lobkorreksies (0,93 · θK en θK) bly dié wat van die DL6WU-Yagi's afgelei is.
 
 Die antenna word altyd beskou as gerig op die DX. 'n Hot spot is **binne die lob** as |Az(Hot) − Az(antenna)| ≤ θ_horizontal/2: dit word dan grys geteken in die [hemelkoepel](Sky-View-af) en 'n waarskuwing verskyn. Die vertikale lob tel ook in die doeltreffendheidsberekening: met die blokkie *antennapatroon* aan word die weerkaatsingspunte geweeg met die vertikale wins van albei antennas (breedte θ_vertical, maksimum by die lobhoogte, grondfaktor tot nul by die horison).
 

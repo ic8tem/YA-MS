@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Gain at lobe ng antenna
 
-**Gain – sanggunian:** kurba ni Günter Hoch **DL6WU** para sa mahahabang Yagi bilang function ng haba ng boom L, ayon sa ulat ni W8IO (balido mula mga 2 λ) [39]:
+**VE7BQH** – Gain ng isang Yagi ayon sa haba ng boom L: karaniwang linya ng mga talaan ni VE7BQH bawat band (mga 60 Yagi bawat band, gain mula sa NEC). Nasa panaklong ang saklaw ng sample at ang standard deviation:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0.3–5 λ, 0.25 dB · 144 MHz: 0.75–8.9 λ, 0.15 dB · 432 MHz: 1.8–16 λ, 0.17 dB)
+
+Ginagamit ang linya ng pinakamalapit na band: sa ibaba ng 100 MHz ang sa 50 MHz, mula 100 hanggang 300 MHz ang sa 144 MHz, sa itaas ng 300 MHz ang sa 432 MHz (para sa 1296 MHz ito ay extrapolation). Sa labas ng saklaw ng sample, nagbababala ang pangunahing window na magaspang ang tantiya.
+
+Makasaysayang kurba ng DL6WU (VHF Communications 3/1982, fig. 1): mga sukat sa 432 at 1296 MHz noong 1981, 2.35 dB bawat octave ng boom, ipinahayag na katumpakan 0.5 dB; G ≈ 9.2 + 7.81 log10(L/λ) dBd. Sinisipi ito ni W8IO bilang 7.773 log10(L/λ) + 11.43 dBi (mas mababa sa 0.1 dB ang pagkakaiba). Isinusulat ito ng programa sa ulat para sa paghahambing:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Pagsusuri laban sa mga NEC model ni L.B. Cebik W4RNL sa 432 MHz** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3.12 / 6.88 / 10.79 | 15.17 / 17.91 / 19.46 | 15.27 / 17.94 / 19.45 |
 
 Hindi kailanman lumalampas sa **0.1 dB** ang pagkakaiba: mas nakadepende ang gain sa haba ng boom kaysa sa disenyo (mas maikli ang boom ng mga Yagi ng VK3AUU para sa parehong bilang ng element). Nagbibigay rin ang Yagi Calculator ni VK5DJ ng mga tantiya para sa mga bersyong VK3AUU, WA2PHW at DJ9BV, na hindi nailathala ang mga pormula.
+
+Karaniwan ng VE7BQH bawas ang kurba ng DL6WU: sa 50 MHz nasa loob ng 0.25 dB mula 2 hanggang 16 λ; sa 144 MHz mula −0.04 dB sa 1 λ hanggang +0.42 dB sa 10 λ; sa 432 MHz mula −0.06 dB sa 2 λ hanggang +0.55 dB sa 10 λ. Sa mga Yagi na DL6WU at VK3AUU na sinimulate ni W4RNL sa 432 MHz, ang karaniwan ng VE7BQH ay 0.15–0.55 dB sa itaas ng NEC: sa mahahabang boom, mas mataas ang naibibigay ng mga Yagi sa talaan na in-optimize sa computer kaysa sa orihinal na disenyo.
 
 **Lobe – sanggunian:** tuntunin ni Kraus, na may pabilog na lobe θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Halimbawa: Yagi na 14 λ sa 432 MHz → 20.3 dBi, lobe na 18.1° pahalang at 19.5° patayo; ang mga model ni W4RNL ay nagbibigay ng 20.4 dBi at 18.4° / 18.8°. Mga tinatayang tuntunin ito na hinango mula sa ilang antenna ng DL6WU.
+
+Sa karaniwan ng VE7BQH, ang parehong Yagi na 14 λ ay nagbibigay ng 21.0 dBi at lobe na 16.9° pahalang at 18.1° patayo; ang 20.3 dBi sa itaas ay mula sa kurba ng DL6WU. Ang mga pagwawasto ng lobe (0.93 · θK at θK) ay nananatiling hinango mula sa mga Yagi na DL6WU.
 
 Itinuturing na laging nakatutok sa DX ang antena. Ang isang hot spot ay **nasa loob ng lobe** kung |Az(Hot) − Az(antena)| ≤ θ_horizontal/2: iginuguhit ito nang kulay abo sa [Kalangitan](Sky-View-tl) at may lumalabas na babala. Pumapasok din ang patayong lobe sa pagkalkula ng kahusayan: kapag nakabukas ang kahong *pattern ng antena*, tinitimbang ang mga punto ng repleksyon ayon sa patayong gain ng dalawang antena (lapad θ_vertical, rurok sa elevation ng lobe, salik ng lupa hanggang zero sa abot-tanaw).
 

@@ -22,6 +22,7 @@ YA-MS est un logiciel libre : vous pouvez le redistribuer et le modifier selon l
 | **DJ5HG** Klaus von der Heide | QTFGUI et son manuel : loi de diffusion en cône, choix HOT-A / HOT-B, cas d'essai Hambourg – Barcelone |
 | **DH9GCD** et **DF5HC** Jens | Formule de la meilleure direction sin El · cos El · sin(P − Az), radiant utile entre 20 et 70°, meilleure distance 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | Météores sporadiques (rapporté par DF5HC) |
+| **VE7BQH** Lionel Edwards | Tables de gain des Yagi pour 50, 144 et 432 MHz : la droite moyenne par bande donne le gain utilisé par le programme |
 | **DL6WU** Günter Hoch | Courbe du gain en fonction de la longueur de boom des Yagi longues (rapportée par **W8IO**) |
 | **W4RNL** L.B. Cebik | Modèles NEC des Yagi DL6WU et VK3AUU utilisés pour vérifier la courbe de gain et corriger le lobe horizontal |
 | **VK3AUU** David Tanner | Modèles de Yagi utilisés dans la vérification |

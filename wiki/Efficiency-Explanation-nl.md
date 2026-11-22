@@ -24,7 +24,7 @@ Elke stap heeft een gekleurd label:
 |---|---|
 | 1. Inleiding | Doel, labels, wat efficiëntie betekent (OH5IY, MCG_MS; YA-MS gebruikt het werkelijke traject) |
 | 2. Waar reflecties plaatsvinden: de E-laag | Sporen op 80–120 km; spoorhoogte = modus van het histogram van Collm (controle: 89,5 km op 5/11/2026) |
-| 3. Trajectgeometrie | Aarde en middelpunt; antenne-elevatie (formule uit het artikel); gemeenschappelijke zone en haar grenzen; Hot A / Hot B; antennebundel (DL6WU, Kraus, W4RNL) |
+| 3. Trajectgeometrie | Aarde en middelpunt; antenne-elevatie (formule uit het artikel); gemeenschappelijke zone en haar grenzen; Hot A / Hot B; antennebundel (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. De radiant van de zwerm | Positie van de radiant (IMO 2026/2027), datum van het maximum (IMO of zonnelengte), activiteitsprofiel |
 | 5. Reflectievoorwaarde | Spiegelende reflectie (McKinley), Gaussische tolerantie 0,05 rad, beste richting (SM6FHZ), DH9GCD-formule |
 | 6. Van één punt naar de efficiëntie | Reflectiepunten om de 15 km, gewicht van elk punt, percentage; vergelijking met QTFGUI (DJ5HG) |

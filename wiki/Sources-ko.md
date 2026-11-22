@@ -27,7 +27,8 @@
 | **LZ2HV** – MSHV | Hot A / Hot B(비교; 매뉴얼에 수록) |
 | Klaus von der Heide **DJ5HG** – QTFGUI와 "QTFGUI Help" 매뉴얼(2007) | 원뿔 산란 법칙; 모델 검증에 사용한 함부르크 – 바르셀로나 사분의자리 유성우 사례 |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*, DARC 컨퍼런스, 2018년 1월 | **DH9GCD**의 최적 방향 공식; DJ5HG의 원뿔 산란과 HOT-A / HOT-B 선택; 유효 복사점 20–70°; 최적 거리 1300–1500 km; KB0VUK의 산발 유성 |
-| Günter Hoch **DL6WU** – 긴 야기 안테나의 붐 길이 대 이득, W8IO 소개(w8io.com) | G(dBi) = 7.773 log(L/λ) + 11.43 |
+| L. Edwards VE7BQH - 50, 144, 432 MHz 야기 이득표: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (사본: qsl.net/dk7zb, sm2cew.com). | 50 MHz: 7.36 log(L/λ) + 11.67 · 144 MHz: 8.27 log(L/λ) + 11.31 · 432 MHz: 8.68 log(L/λ) + 11.03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, pp. 130-138, 그림 1 (1차 자료); 곡선은 W8IO에도 실려 있음, www.w8io.com. | G(dBi) = 7.81 log(L/λ) + 11.35 (W8IO: 7.773 log + 11.43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*(David Tanner의 VK3AUU 야기) | 이득 곡선 검증과 수평 로브 보정(0.93 × Kraus)에 사용한 NEC 시뮬레이션 |
 | John Drew **VK5DJ** – Yagi Calculator | VK3AUU, WA2PHW, DJ9BV 변형의 이득 추정 |

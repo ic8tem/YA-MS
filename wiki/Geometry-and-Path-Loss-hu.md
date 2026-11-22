@@ -101,10 +101,20 @@ P_{rx} = P_{tx}(\mathrm{dBm}) + G_{tx} - L + G_{rx},\qquad M = P_{rx} - P_{min},
 
 ## Antennanyereség és nyaláb
 
-**Nyereség – forrás:** Günter Hoch **DL6WU** görbéje hosszú Yagikra a boomhossz (L) függvényében, W8IO közlése szerint (kb. 2 λ-tól érvényes) [39]:
+**VE7BQH** – Egy Yagi nyeresége az L tartócsőhossz függvényében: a VE7BQH-táblázatok sávonkénti átlagegyenese (sávonként mintegy 60 Yagi, NEC-nyereségek). Zárójelben a minta tartománya és a szórás:
 
 ```math
-G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
+\begin{aligned}50\,\mathrm{MHz}:\ & G = 7{.}36\,\log_{10}(L/\lambda) + 11{.}67\ \mathrm{dBi} \\ 144\,\mathrm{MHz}:\ & G = 8{.}27\,\log_{10}(L/\lambda) + 11{.}31\ \mathrm{dBi} \\ 432\,\mathrm{MHz}:\ & G = 8{.}68\,\log_{10}(L/\lambda) + 11{.}03\ \mathrm{dBi}\end{aligned}
+```
+
+(50 MHz: 0,3–5 λ, 0,25 dB · 144 MHz: 0,75–8,9 λ, 0,15 dB · 432 MHz: 1,8–16 λ, 0,17 dB)
+
+A legközelebbi sáv egyenese használatos: 100 MHz alatt az 50 MHz-es, 100 és 300 MHz között a 144 MHz-es, 300 MHz felett a 432 MHz-es (1296 MHz-re ez extrapoláció). A minta tartományán kívül a főablak jelzi, hogy a becslés durva.
+
+DL6WU történeti görbéje (VHF Communications 3/1982, 1. ábra): 1981-es mérések 432 és 1296 MHz-en, oktávonként 2,35 dB tartócsőhossz-növekedésre, közölt pontosság 0,5 dB; G ≈ 9,2 + 7,81 log10(L/λ) dBd. W8IO 7,773 log10(L/λ) + 11,43 dBi alakban közli (0,1 dB-nél kisebb eltérés). A program összehasonlításként kiírja a jelentésben:
+
+```math
+G = 7{.}81\,\log_{10}(L/\lambda) + 11{.}35\ \mathrm{dBi}
 ```
 
 **Ellenőrzés L.B. Cebik W4RNL 432 MHz-es NEC-modelljeivel** (*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*):
@@ -115,6 +125,8 @@ G = 7{.}773\,\log_{10}(L/\lambda) + 11{.}43\ \mathrm{dBi}
 | VK3AUU (David Tanner) | 16 / 28 / 40 | 3,12 / 6,88 / 10,79 | 15,17 / 17,91 / 19,46 | 15,27 / 17,94 / 19,45 |
 
 Az eltérés sosem haladja meg a **0,1 dB**-t: a nyereség inkább a boomhossztól függ, mint a konstrukciótól (a VK3AUU-Yagik boomja azonos elemszámnál rövidebb). A VK5DJ-féle Yagi Calculator a VK3AUU, WA2PHW és DJ9BV változatokra is ad becslést, ezek képletei azonban nem publikusak.
+
+VE7BQH-átlag mínusz DL6WU-görbe: 50 MHz-en 0,25 dB-en belül 2 és 16 λ között; 144 MHz-en −0,04 dB-től (1 λ) +0,42 dB-ig (10 λ); 432 MHz-en −0,06 dB-től (2 λ) +0,55 dB-ig (10 λ). A W4RNL által 432 MHz-en szimulált DL6WU és VK3AUU Yagiknál a VE7BQH-átlag 0,15–0,55 dB-lel a NEC fölött van: hosszú tartócsövön a táblázatok számítógéppel optimalizált Yagijai többet adnak az eredeti terveknél.
 
 **Nyaláb – forrás:** Kraus-szabály, kör alakú nyalábbal, θE = θH = θK [40]:
 
@@ -131,6 +143,8 @@ G_{lin} = \frac{41253}{\theta_E\,\theta_H}\quad\Rightarrow\quad \theta_K = \sqrt
 ```
 
 Példa: 14 λ-s Yagi 432 MHz-en → 20,3 dBi, a nyaláb vízszintesen 18,1°, függőlegesen 19,5°; W4RNL modelljei 20,4 dBi-t és 18,4° / 18,8°-ot adnak. Ezek néhány DL6WU-antennából levezetett közelítő szabályok.
+
+A VE7BQH-átlaggal ugyanaz a 14 λ-s Yagi 21,0 dBi-t és 16,9° vízszintes, 18,1° függőleges nyalábot ad; a fenti 20,3 dBi a DL6WU-görbéből származik. A nyalábkorrekciók (0,93 · θK és θK) továbbra is a DL6WU Yagikból levezetettek.
 
 Az antennát mindig a DX felé fordítottnak tekintjük. Egy hot spot **a nyalábon belül** van, ha |Az(Hot) − Az(antenna)| ≤ θ_horizontal/2: ekkor szürkén rajzolódik a [Égbolt-kupolán](Sky-View-hu) nézetben, és figyelmeztetés jelenik meg. A függőleges nyaláb a hatásfok számításába is belép: bekapcsolt *antenna iránykarakterisztika* jelölőnégyzettel a visszaverődési pontokat a két antenna függőleges nyeresége súlyozza (szélesség θ_vertical, maximum a nyaláb emelkedési szögénél, talajtényező a horizontig nulláig).
 

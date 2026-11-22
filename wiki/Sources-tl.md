@@ -27,7 +27,8 @@ Inililista ng tab na **Mga sanggunian** ang bawat akdang pinagbatayan ng YA-MS, 
 | **LZ2HV** – MSHV | Hot A / Hot B (paghahambing; nasa manwal) |
 | Klaus von der Heide **DJ5HG** – QTFGUI at ang manwal na "QTFGUI Help" (2007) | Batas ng cone scattering; test case na Hamburg – Barcelona sa Quadrantids na ginamit para beripikahin ang modelo |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*, kumperensiya ng DARC, Enero 2018 | Pormula ng pinakamahusay na direksiyon ni **DH9GCD**; cone scattering at pagpili ng HOT-A / HOT-B ni DJ5HG; magagamit na radiant 20–70°; pinakamahusay na distansiya 1300–1500 km; mga sporadic na meteor ni KB0VUK |
-| Günter Hoch **DL6WU** – gain ayon sa haba ng boom ng mahahabang Yagi, ayon sa ulat ni W8IO (w8io.com) | G(dBi) = 7.773 log(L/λ) + 11.43 |
+| L. Edwards VE7BQH - mga talaan ng gain ng Yagi para sa 50, 144 at 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (may kopya sa qsl.net/dk7zb at sm2cew.com). | 50 MHz: 7.36 log(L/λ) + 11.67 · 144 MHz: 8.27 log(L/λ) + 11.31 · 432 MHz: 8.68 log(L/λ) + 11.03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, pp. 130-138, fig. 1 (pangunahing sanggunian); sinisipi rin ang kurba ni W8IO, www.w8io.com. | G(dBi) = 7.81 log(L/λ) + 11.35 (W8IO: 7.773 log + 11.43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (mga Yagi ng VK3AUU ni David Tanner) | Mga simulation sa NEC na ginamit para beripikahin ang kurba ng gain at itama ang pahalang na lobe (0.93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Mga tantiya ng gain para sa mga bersyong VK3AUU, WA2PHW at DJ9BV |

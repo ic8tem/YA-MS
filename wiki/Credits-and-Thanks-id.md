@@ -22,6 +22,7 @@ YA-MS adalah perangkat lunak bebas: Anda boleh menyebarkan dan mengubahnya menur
 | **DJ5HG** Klaus von der Heide | QTFGUI dan manualnya: hukum hamburan kerucut, pilihan HOT-A / HOT-B, kasus uji Hamburg – Barcelona |
 | **DH9GCD** dan **DF5HC** Jens | Rumus arah terbaik sin El · cos El · sin(P − Az), radian berguna 20–70°, jarak terbaik 1300–1500 km ("Meteorscatter auf UKW", DARC 2018) |
 | **KB0VUK** | Meteor sporadis (dilaporkan oleh DF5HC) |
+| **VE7BQH** Lionel Edwards | Tabel gain Yagi untuk 50, 144 dan 432 MHz: garis rata-rata per band memberi gain yang dipakai program |
 | **DL6WU** Günter Hoch | Kurva penguatan terhadap panjang boom Yagi panjang (dilaporkan oleh **W8IO**) |
 | **W4RNL** L.B. Cebik | Model NEC Yagi DL6WU dan VK3AUU yang dipakai untuk memverifikasi kurva penguatan dan mengoreksi lobus horizontal |
 | **VK3AUU** David Tanner | Desain Yagi yang dipakai dalam verifikasi |

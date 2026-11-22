@@ -27,7 +27,8 @@ Karta **Zdroje** uvádí všechna díla, na nichž YA-MS stojí, seskupená jako
 | **LZ2HV** – MSHV | Hot A / Hot B (srovnání; v manuálu) |
 | Klaus von der Heide **DJ5HG** – QTFGUI a manuál „QTFGUI Help“ (2007) | Kuželový zákon rozptylu; testovací případ Hamburk – Barcelona s Kvadrantidami použitý k ověření modelu |
 | Jens **DF5HC** – *„Meteorscatter auf UKW“*, konference DARC, leden 2018 | Vzorec nejlepšího směru od **DH9GCD**; kuželový rozptyl a volba HOT-A / HOT-B od DJ5HG; užitečný radiant 20–70°; nejlepší vzdálenost 1300–1500 km; sporadické meteory od KB0VUK |
-| Günter Hoch **DL6WU** – zisk v závislosti na délce ráhna dlouhých Yagi, uvádí W8IO (w8io.com) | G(dBi) = 7,773 log(L/λ) + 11,43 |
+| L. Edwards VE7BQH - tabulky zisku antén Yagi pro 50, 144 a 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (kopie na qsl.net/dk7zb a sm2cew.com). | 50 MHz: 7,36 log(L/λ) + 11,67 · 144 MHz: 8,27 log(L/λ) + 11,31 · 432 MHz: 8,68 log(L/λ) + 11,03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, s. 130-138, obr. 1 (primární zdroj); křivku uvádí také W8IO, www.w8io.com. | G(dBi) = 7,81 log(L/λ) + 11,35 (W8IO: 7,773 log + 11,43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (Yagi VK3AUU od Davida Tannera) | Simulace NEC použité k ověření křivky zisku a korekci vodorovného laloku (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Odhady zisku pro varianty VK3AUU, WA2PHW a DJ9BV |

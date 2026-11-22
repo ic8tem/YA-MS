@@ -22,6 +22,7 @@ A YA-MS szabad szoftver: a GNU General Public License 3. verziójának feltétel
 | **DJ5HG** Klaus von der Heide | QTFGUI és kézikönyve: kúpos szórási törvény, HOT-A / HOT-B választás, Hamburg – Barcelona teszteset |
 | **DH9GCD** és **DF5HC** Jens | A sin El · cos El · sin(P − Az) legjobbirány-képlet, hasznos radiáns 20–70°, legjobb távolság 1300–1500 km („Meteorscatter auf UKW”, DARC 2018) |
 | **KB0VUK** | Sporadikus meteorok (DF5HC közlése szerint) |
+| **VE7BQH** Lionel Edwards | Yagi-nyereségtáblázatok 50, 144 és 432 MHz-re: a sávonkénti átlagegyenes adja a program által használt nyereséget |
 | **DL6WU** Günter Hoch | Hosszú Yagik nyereség–boomhossz görbéje (**W8IO** közlése szerint) |
 | **W4RNL** L.B. Cebik | DL6WU- és VK3AUU-Yagik NEC-modelljei a nyereséggörbe ellenőrzéséhez és a vízszintes nyaláb korrekciójához |
 | **VK3AUU** David Tanner | Az ellenőrzésben használt Yagi-konstrukciók |

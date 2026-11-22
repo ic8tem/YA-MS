@@ -24,7 +24,7 @@ Ogni passaggio porta un'etichetta colorata:
 |---|---|
 | 1. Introduzione | Scopo, etichette, che cosa significa efficienza (OH5IY, MCG_MS; YA-MS usa la tratta reale) |
 | 2. Dove avvengono le riflessioni: lo strato E | Scie a 80–120 km; quota delle scie = moda dell'istogramma di Collm (rilievo: 89,5 km il 5/11/2026) |
-| 3. Geometria della tratta | Terra e punto medio; elevazione d'antenna (formula dell'articolo); zona comune e suoi limiti; Hot A / Hot B; lobo d'antenna (DL6WU, Kraus, W4RNL) |
+| 3. Geometria della tratta | Terra e punto medio; elevazione d'antenna (formula dell'articolo); zona comune e suoi limiti; Hot A / Hot B; lobo d'antenna (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Il radiante dello sciame | Posizione del radiante (IMO 2026/2027), data del massimo (IMO o longitudine solare), profilo di attività |
 | 5. Condizione di riflessione | Riflessione speculare (McKinley), tolleranza gaussiana 0,05 rad, puntamento migliore (SM6FHZ), formula DH9GCD |
 | 6. Da un punto all'efficienza | Punti di riflessione ogni 15 km, peso di ogni punto, percentuale; confronto con QTFGUI (DJ5HG) |

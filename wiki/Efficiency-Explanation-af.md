@@ -24,7 +24,7 @@ Elke stap dra 'n gekleurde etiket:
 |---|---|
 | 1. Inleiding | Doel, etikette, wat doeltreffendheid beteken (OH5IY, MCG_MS; YA-MS gebruik die werklike pad) |
 | 2. Waar refleksies plaasvind: die E-laag | Spore op 80–120 km; spoorhoogte = modus van die Collm-histogram (kontrole: 89,5 km op 5/11/2026) |
-| 3. Padgeometrie | Aarde en middelpunt; antenna-elevasie (formule uit die artikel); gemeenskaplike sone en sy grense; Hot A / Hot B; antennalob (DL6WU, Kraus, W4RNL) |
+| 3. Padgeometrie | Aarde en middelpunt; antenna-elevasie (formule uit die artikel); gemeenskaplike sone en sy grense; Hot A / Hot B; antennalob (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Die radiant van die swerm | Radiantposisie (IMO 2026/2027), datum van die maksimum (IMO of sonlengte), aktiwiteitsprofiel |
 | 5. Refleksievoorwaarde | Spekulêre refleksie (McKinley), Gaussiese toleransie 0,05 rad, beste rigting (SM6FHZ), DH9GCD-formule |
 | 6. Van een punt na die doeltreffendheid | Refleksiepunte elke 15 km, gewig van elke punt, persentasie; vergelyking met QTFGUI (DJ5HG) |

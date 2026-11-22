@@ -24,7 +24,7 @@ Jeder Schritt trägt eine farbige Kennzeichnung:
 |---|---|
 | 1. Einleitung | Zweck, Kennzeichnungen, was Effektivität bedeutet (OH5IY, MCG_MS; YA-MS verwendet die tatsächliche Strecke) |
 | 2. Wo Reflexionen entstehen: die E-Schicht | Spuren in 80–120 km; Spurhöhe = Modalwert des Collm-Histogramms (Prüfung: 89,5 km am 5.11.2026) |
-| 3. Geometrie der Strecke | Erde und Mittelpunkt; Antennenelevation (Formel des Artikels); gemeinsame Zone und ihre Grenzen; Hot A / Hot B; Antennenkeule (DL6WU, Kraus, W4RNL) |
+| 3. Geometrie der Strecke | Erde und Mittelpunkt; Antennenelevation (Formel des Artikels); gemeinsame Zone und ihre Grenzen; Hot A / Hot B; Antennenkeule (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. Der Radiant des Stroms | Position des Radianten (IMO 2026/2027), Datum des Maximums (IMO oder Sonnenlänge), Aktivitätsprofil |
 | 5. Reflexionsbedingung | Spiegelnde Reflexion (McKinley), gaußförmige Toleranz 0,05 rad, beste Ausrichtung (SM6FHZ), DH9GCD-Formel |
 | 6. Vom einzelnen Punkt zur Effektivität | Reflexionspunkte alle 15 km, Gewicht jedes Punktes, Prozentwert; Vergleich mit QTFGUI (DJ5HG) |

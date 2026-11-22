@@ -510,7 +510,7 @@ namespace YAMS
             PathModel.LobePattern = chkLobe.IsChecked == true;
             chkLobe.FontWeight = FontWeight.SemiBold;
             ToolTip.SetTip(chkLobe, Lang.T("Come conta l'elevazione del lobo.\n" +
-                "Accesa (di partenza): i punti di riflessione pesano con il diagramma verticale dell'antenna di ciascuna stazione. Il lobo ha il massimo all'elevazione scritta accanto e la larghezza verticale calcolata dal boom (curva DL6WU, Kraus); " +
+                "Accesa (di partenza): i punti di riflessione pesano con il diagramma verticale dell'antenna di ciascuna stazione. Il lobo ha il massimo all'elevazione scritta accanto e la larghezza verticale calcolata dal boom (curva VE7BQH, Kraus); " +
                 "sotto il massimo il terreno fa scendere il guadagno fino a zero all'orizzonte. Un punto basso conta meno, ma conta: su una tratta lunga l'efficienza non sparisce. È accesa di partenza perché descrive l'antenna reale: JN70CN – JO76QP (1791 km), lobo a 3°, scie a 88,5 km, Geminidi del 14/12/2026: 7 % con la casella accesa, nessun valore con la casella spenta.\n" +
                 "Spenta: l'elevazione del lobo è un limite netto (come fino alla versione 1.8.0). I punti visti sotto quell'elevazione da una delle due stazioni non contano; su una tratta lunga con il lobo a qualche grado tutte le efficienze possono valere 0."));
             WhenChanged(chkLobe, ToggleButton.IsCheckedProperty, () =>
@@ -1260,7 +1260,7 @@ namespace YAMS
             SaveConfig();
         }
 
-        // Lobo dell'antenna: guadagno dalla lunghezza del boom (DL6WU), HPBW dal guadagno (Kraus corretto
+        // Lobo dell'antenna: guadagno dalla lunghezza del boom (media VE7BQH della banda), HPBW dal guadagno (Kraus corretto
         // con le simulazioni NEC di W4RNL: orizzontale 0,93 x Kraus, verticale Kraus).
         // Gli Hot che cadono entro +-HPBW/2 dal puntamento diventano grigi e la GUI avvisa.
         void ApplyAntenna()
@@ -1270,7 +1270,7 @@ namespace YAMS
             antHpbw = MsGeometry.HpbwFromGainDeg(antGainDbi);
             antHpbwV = MsGeometry.HpbwVerticalDeg(antGainDbi);
             double bl = V(numBoom) * f / 299.792458;
-            lblAnt.Text = Lang.F("= {0:F1} λ  G {1:F1} dBi  lobo {2:F0}° oriz. / {3:F0}° vert.{4}", bl, antGainDbi, antHpbw, antHpbwV, bl < 2 ? " " + Lang.T("(stima poco precisa sotto 2 λ)") : "");
+            lblAnt.Text = Lang.F("= {0:F1} λ  G {1:F1} dBi  lobo {2:F0}° oriz. / {3:F0}° vert.{4}", bl, antGainDbi, antHpbw, antHpbwV, !MsGeometry.YagiInSample(V(numBoom), f) ? " " + Lang.T("(stima poco precisa: boom fuori dal campione VE7BQH)") : "");
             decimal gd = Dm(Math.Round(antGainDbi * 2) / 2.0);
             if (numGain != null && gd >= numGain.Minimum && gd <= numGain.Maximum) numGain.Value = gd;
             if (model == null || !model.Valid) return;
@@ -1901,9 +1901,10 @@ namespace YAMS
                 line(Lang.T("Sono i bordi piu' lontani del cielo visto da entrambe le stazioni, non i punti da puntare."));
             }
             else line(model.Message);
-            line(Lang.F("Antenna Yagi: boom {0:F2} m = {1:F2} lambda a {2:F0} MHz -> guadagno {3:F1} dBi (curva DL6WU),\n" +
+            line(Lang.F("Antenna Yagi: boom {0:F2} m = {1:F2} lambda a {2:F0} MHz -> guadagno {3:F1} dBi (curva VE7BQH),\n" +
                         "  lobo a -3 dB {4:F0}° orizzontale / {5:F0}° verticale (Kraus corretto con le simulazioni NEC di W4RNL)",
                 V(numBoom), V(numBoom) * f / 299.792458, f, antGainDbi, antHpbw, antHpbwV));
+            line(Lang.F("  confronto: curva DL6WU (VHF Communications 3/1982) {0:F1} dBi", MsGeometry.YagiGainDl6wuDbi(V(numBoom), f)));
             if (model.HotA != null && model.HotB != null)
                 line(Lang.F("Puntamento {0:F0}°: Hot A {1}, Hot B {2}", sky.AntennaAz,
                     model.HotA.InLobe ? Lang.T("DENTRO il lobo") : Lang.T("fuori dal lobo"), model.HotB.InLobe ? Lang.T("DENTRO il lobo") : Lang.T("fuori dal lobo")));
@@ -2326,7 +2327,10 @@ Lang.T("CALCOLO E TEORIA DELL'EFFICIENZA") + "\n" +
 "  " + Lang.T("Jens DF5HC - \"Meteorscatter auf UKW\", conferenza DARC, gennaio 2018: formula della migliore direzione\n" +
 "    di DH9GCD (Sin(El) x Cos(El) x Sin(P-Az)), diffusione a cono e scelta HOT-A / HOT-B di DJ5HG,\n" +
 "    radiante utile tra 20 e 70 gradi, distanza migliore 1300-1500 km, meteore sporadiche di KB0VUK") + "\n" +
-"  " + Lang.T("Gunter Hoch DL6WU - curva guadagno/lunghezza del boom delle Yagi lunghe, G(dBi) = 7,773 log(L/lambda) + 11,43, riportata da W8IO (w8io.com)") + "\n" +
+"  " + Lang.T("Lionel Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz (dxmaps.com): retta media per banda,\n" +
+"    50 MHz G(dBi) = 7,36 log(L/lambda) + 11,67; 144 MHz 8,27 log + 11,31; 432 MHz 8,68 log + 11,03") + "\n" +
+"  " + Lang.T("Gunter Hoch DL6WU - \"Extremely Long Yagi Antennas\", VHF Communications 3/1982, pp. 130-138: curva guadagno/lunghezza del boom,\n" +
+"    2,35 dB per ottava, G(dBi) = 7,81 log(L/lambda) + 11,35 (W8IO, w8io.com, la riporta come 7,773 log + 11,43); per confronto") + "\n" +
 "  " + Lang.T("J.D. Kraus - Antennas: guadagno e apertura del lobo, G = 41253 / (thetaE x thetaH)") + "\n" +
 "  " + Lang.T("L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data (verifica delle due regole);\n" +
 "    Appreciating DL6WU Wide-Band Long-Boom Yagi Design e 70-CM Yagi Stacks Part 2 (Yagi VK3AUU di David Tanner):\n" +

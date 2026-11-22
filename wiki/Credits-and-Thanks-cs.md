@@ -22,6 +22,7 @@ YA-MS je svobodný software: můžete jej šířit a upravovat za podmínek GNU 
 | **DJ5HG** Klaus von der Heide | QTFGUI a jeho manuál: kuželový zákon rozptylu, volba HOT-A / HOT-B, testovací případ Hamburk – Barcelona |
 | **DH9GCD** a **DF5HC** Jens | Vzorec nejlepšího směru sin El · cos El · sin(P − Az), užitečný radiant 20–70°, nejlepší vzdálenost 1300–1500 km („Meteorscatter auf UKW“, DARC 2018) |
 | **KB0VUK** | Sporadické meteory (uvádí DF5HC) |
+| **VE7BQH** Lionel Edwards | Tabulky zisku antén Yagi pro 50, 144 a 432 MHz: střední přímka pro každé pásmo dává zisk, který program používá |
 | **DL6WU** Günter Hoch | Křivka zisku v závislosti na délce ráhna dlouhých Yagi (uvádí **W8IO**) |
 | **W4RNL** L.B. Cebik | Modely NEC antén Yagi DL6WU a VK3AUU použité k ověření křivky zisku a korekci vodorovného laloku |
 | **VK3AUU** David Tanner | Konstrukce Yagi použité při ověření |

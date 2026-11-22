@@ -27,7 +27,8 @@ Tab **Sumber** mencantumkan setiap karya yang menjadi dasar YA-MS, dikelompokkan
 | **LZ2HV** – MSHV | Hot A / Hot B (pembanding; dalam manual) |
 | Klaus von der Heide **DJ5HG** – QTFGUI dan manual "QTFGUI Help" (2007) | Hukum hamburan kerucut; kasus uji Quadrantid Hamburg – Barcelona yang dipakai untuk memverifikasi model |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*, konferensi DARC, Januari 2018 | Rumus arah terbaik dari **DH9GCD**; hamburan kerucut dan pilihan HOT-A / HOT-B dari DJ5HG; radian berguna 20–70°; jarak terbaik 1300–1500 km; meteor sporadis dari KB0VUK |
-| Günter Hoch **DL6WU** – penguatan terhadap panjang boom Yagi panjang, dilaporkan oleh W8IO (w8io.com) | G(dBi) = 7.773 log(L/λ) + 11.43 |
+| L. Edwards VE7BQH - tabel gain Yagi untuk 50, 144 dan 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (salinan di qsl.net/dk7zb dan sm2cew.com). | 50 MHz: 7,36 log(L/λ) + 11,67 · 144 MHz: 8,27 log(L/λ) + 11,31 · 432 MHz: 8,68 log(L/λ) + 11,03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, hlm. 130-138, gbr. 1 (sumber primer); kurva juga dikutip oleh W8IO, www.w8io.com. | G(dBi) = 7,81 log(L/λ) + 11,35 (W8IO: 7,773 log + 11,43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (Yagi VK3AUU karya David Tanner) | Simulasi NEC yang dipakai untuk memverifikasi kurva penguatan dan mengoreksi lobus horizontal (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Perkiraan penguatan untuk varian VK3AUU, WA2PHW dan DJ9BV |

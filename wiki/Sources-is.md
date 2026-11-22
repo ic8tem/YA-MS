@@ -27,7 +27,8 @@ Flipinn **Heimildir** telur upp öll verk sem YA-MS byggir á, flokkuð eins og 
 | **LZ2HV** – MSHV | Hot A / Hot B (samanburður; í handbókinni) |
 | Klaus von der Heide **DJ5HG** – QTFGUI og handbókin "QTFGUI Help" (2007) | Lögmál cone scattering; prófunartilvikið Hamborg – Barcelona í Kvaðrantítum, notað til að sannreyna líkanið |
 | Jens **DF5HC** – *"Meteorscatter auf UKW"*, ráðstefna DARC, janúar 2018 | Formúla **DH9GCD** fyrir bestu stefnu; cone scattering og val HOT-A / HOT-B eftir DJ5HG; nýtilegur geislapunktur 20–70°; besta fjarlægð 1300–1500 km; stopulir loftsteinar samkvæmt KB0VUK |
-| Günter Hoch **DL6WU** – mögnun sem fall af bómulengd langra Yagi-loftneta, eftir frásögn W8IO (w8io.com) | G(dBi) = 7.773 log(L/λ) + 11.43 |
+| L. Edwards VE7BQH - mögnunartöflur Yagi-loftneta fyrir 50, 144 og 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (afrit á qsl.net/dk7zb og sm2cew.com). | 50 MHz: 7,36 log(L/λ) + 11,67 · 144 MHz: 8,27 log(L/λ) + 11,31 · 432 MHz: 8,68 log(L/λ) + 11,03 (dBi) |
+| G. Hoch DL6WU - "Extremely Long Yagi Antennas", VHF Communications 14, 3/1982, bls. 130-138, mynd 1 (frumheimild); ferillinn einnig birtur hjá W8IO, www.w8io.com. | G(dBi) = 7,81 log(L/λ) + 11,35 (W8IO: 7,773 log + 11,43) |
 | J.D. **Kraus** – *Antennas*, McGraw-Hill | G = 41253 / (θE·θH) |
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (Yagi-loftnet VK3AUU eftir David Tanner) | NEC-hermanir notaðar til að sannreyna mögnunarferilinn og leiðrétta lárétta geislann (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Mat á mögnun fyrir afbrigðin VK3AUU, WA2PHW og DJ9BV |

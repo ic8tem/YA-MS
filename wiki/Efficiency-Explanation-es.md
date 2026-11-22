@@ -24,7 +24,7 @@ Cada paso lleva una etiqueta de color:
 |---|---|
 | 1. Introducción | Objetivo, etiquetas, qué significa la eficiencia (OH5IY, MCG_MS; YA-MS usa el trayecto real) |
 | 2. Dónde se producen las reflexiones: la capa E | Estelas a 80–120 km; altura de las estelas = moda del histograma de Collm (verificación: 89,5 km el 5/11/2026) |
-| 3. Geometría del trayecto | Tierra y punto medio; elevación de la antena (fórmula del artículo); zona común y sus límites; Hot A / Hot B; lóbulo de la antena (DL6WU, Kraus, W4RNL) |
+| 3. Geometría del trayecto | Tierra y punto medio; elevación de la antena (fórmula del artículo); zona común y sus límites; Hot A / Hot B; lóbulo de la antena (VE7BQH, DL6WU, Kraus, W4RNL) |
 | 4. El radiante de la lluvia | Posición del radiante (IMO 2026/2027), fecha del máximo (IMO o longitud solar), perfil de actividad |
 | 5. Condición de reflexión | Reflexión especular (McKinley), tolerancia gaussiana de 0,05 rad, mejor apuntamiento (SM6FHZ), fórmula de DH9GCD |
 | 6. De un punto a la eficiencia | Puntos de reflexión cada 15 km, peso de cada punto, porcentaje; comparación con QTFGUI (DJ5HG) |

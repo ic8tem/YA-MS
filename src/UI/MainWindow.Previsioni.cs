@@ -57,12 +57,15 @@ namespace YAMS
                 "Il valore di partenza resta k = 3 (regola sperimentale di SM6FHZ), più prudente: con k più basso si prevedono più riflessioni alle frequenze alte.\n" +
                 "Attenzione: i conteggi di Collm sono per lo più meteore sporadiche, di cui il GMN non pubblica r."));
             btnKr.Click += async (s, e) => await ExponentFromPopIndex();
+            Button btnJp = B(Lang.T("Giappone: conteggi HRO mensili (IPRMO)..."));
+            ToolTip.SetTip(btnJp, Lang.T("Conteggi orari degli osservatori giapponesi sui fari HAM a 53 MHz (JA2SDA, JE3AKE, JJ1RLQ), dai file mensili di IPRMO: media per ora UTC traslata alla frequenza di arrivo e totali giornalieri."));
+            btnJp.Click += async (s, e) => await ShowJapanHro();
             numPrevFreq.ValueChanged += (s, e) => UpdatePrevTab();
             numPrevK.ValueChanged += (s, e) => UpdatePrevTab();
             numPrevStation.ValueChanged += (s, e) => UpdatePrevTab();
             lblRmob = L(Lang.T("nessun file RMOB caricato"));
             DockTop(p, Row(L(Lang.T("Frequenza di arrivo MHz")), numPrevFreq, L(Lang.T("Esponente λ^k")), numPrevK,
-                           L(Lang.T("Fattore di stazione K")), numPrevStation, btnRmob, btnK, btnKr, lblRmob));
+                           L(Lang.T("Fattore di stazione K")), numPrevStation, btnRmob, btnK, btnKr, btnJp, lblRmob));
 
             txtRmobObs = T(cfg.Get("rmob_osservatore", ""), 170, false);
             chkRmobAuto = C(Lang.T("prelievo automatico ogni 5 minuti (attivare solo con il permesso di RMOB)"), cfg.GetB("rmob_automatico", false));

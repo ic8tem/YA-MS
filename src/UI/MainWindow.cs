@@ -547,7 +547,8 @@ namespace YAMS
             });
 
             // riga 2: strato E, lobo e antenna
-            Border row2 = Row(L(Lang.T("Quota scie km")), numLayer, chkLayerRadar,
+            BuildRefrCheck();
+            Border row2 = Row(L(Lang.T("Quota scie km")), numLayer, chkLayerRadar, chkRefr,
                               L(Lang.T("Elevazione lobo °")), numElev, OrangeBox(chkLobe),   // riquadro arancione come l'angolo beta
                               L(Lang.T("Antenna Yagi: boom m")), numBoom, lblAnt,
                               L(Lang.T("Hot spot dal punto medio km")), numHotKm, chkHotAuto);
@@ -1246,6 +1247,7 @@ namespace YAMS
             if (!Astro.TryLocator(Up(txtHome), out home)) { status.Text = Lang.T("Locator della stazione non valido"); return; }
             if (!Astro.TryLocator(Up(txtDx), out dx)) { status.Text = Lang.T("Locator del corrispondente non valido"); return; }
             DateTime t0 = DateTime.Now;
+            EnsureRefr();
             PathModel.VerticalHpbwDeg = MsGeometry.HpbwVerticalDeg(MsGeometry.YagiGainDbi(V(numBoom), BandMHz));   // lobo verticale dal boom
             model = PathModel.Build(home, V(numHomeAlt) / 1000.0, dx, V(numDxAlt) / 1000.0, V(numLayer), V(numElev));
             if (PathModel.HotSpotAuto && model.Valid) numHotKm.Value = (decimal)Math.Round(Math.Max(30, Math.Min(400, model.HotOffsetKm)));   // mostra la distanza calcolata
@@ -1872,6 +1874,7 @@ namespace YAMS
             line(Lang.F("Distanza        {0:F0} km   azimut {1:F1}°   (dal corrispondente {2:F1}°)", model.DistKm, model.BearingHomeToDx, model.BearingDxToHome));
             line(Lang.F("Punto medio     {0}  ({1:F2}N {2:F2}E)", Astro.ToLocator(model.Mid), model.Mid.Lat, model.Mid.Lon));
             line(Lang.F("Quota scie      {0:F1} km (strato E){1}", model.LayerKm, collm != null && chkLayerRadar.IsChecked == true ? "  " + Lang.T("<- moda misurata dal radar Collm") : ""));
+            line(RefrReportLine(model));
             line(Lang.F("Elevazione d'antenna verso il punto medio: {0:F1}°   (formula dell'articolo, Immagine 7)", model.ElevToMidDeg));
             if (model.ElevToMidDeg < 0) line("  " + Lang.F("-> punto medio sotto l'orizzonte alla quota delle scie: tratta oltre la portata geometrica del singolo salto (servono scie ad almeno {0:F0} km)",
                 MsGeometry.MinLayerForPathKm(model.DistKm, Math.Min(model.HomeAltKm, model.DxAltKm))));

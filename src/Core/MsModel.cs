@@ -106,6 +106,12 @@ namespace YAMS
         struct Sample { public Vec3 Up, N, P, Pn; public LatLon Ll; public double W, Wb, S2; public bool Left; }
         List<Sample> samples = new List<Sample>();
 
+        // Rifrazione troposferica (facoltativa): profili sopra le due stazioni; null = raggi diritti (di partenza, prudente)
+        public static RefrProfile RefrHomeProfile, RefrDxProfile;
+        public static LatLon RefrHomeAt, RefrDxAt;   // la rifrazione vale solo per la tratta di quei due punti (non per GRAVES)
+        Func<double, double> refrHome, refrDx;
+        public double RefrRangeGainKm, RefrCorrMidDeg;   // per il resoconto: portata in piu' e correzione verso il punto medio
+
         public static PathModel Build(LatLon home, double homeAltKm, LatLon dx, double dxAltKm, double layerKm, double minElevDeg)
         {
             PathModel m = new PathModel();
@@ -116,7 +122,18 @@ namespace YAMS
             m.BearingHomeToDx = Astro.Bearing(home, dx);
             m.BearingDxToHome = Astro.Bearing(dx, home);
             m.Mid = Astro.Destination(home, m.BearingHomeToDx, m.DistKm / 2);
+            if (RefrHomeProfile != null && RefrDxProfile != null && Astro.DistanceKm(home, RefrHomeAt) < 30 && Astro.DistanceKm(dx, RefrDxAt) < 30)
+            {
+                m.refrHome = Refraction.Correction(RefrHomeProfile, homeAltKm, layerKm);
+                m.refrDx = Refraction.Correction(RefrDxProfile, dxAltKm, layerKm);
+            }
             m.ElevToMidDeg = MsGeometry.ElevationArticle(m.DistKm / 2, layerKm, homeAltKm);
+            if (m.refrHome != null)
+            {
+                double c = m.refrHome(m.ElevToMidDeg);
+                m.RefrCorrMidDeg = double.IsNaN(c) ? 0 : c;
+                m.ElevToMidDeg += m.RefrCorrMidDeg;
+            }
             m.ComputeHot();
             m.BuildSamples();
             m.BuildField();
@@ -127,6 +144,13 @@ namespace YAMS
         void ComputeHot()
         {
             HotRadiusKm = MsGeometry.LayerRangeKm(LayerKm, LobePattern ? 0 : MinElevDeg, HomeAltKm);
+            if (refrHome != null)
+            {
+                double e0 = LobePattern ? 0 : MinElevDeg;
+                double rr = (Refraction.LayerRangeKm(RefrHomeProfile, HomeAltKm, LayerKm, e0) + Refraction.LayerRangeKm(RefrDxProfile, DxAltKm, LayerKm, e0)) / 2;
+                RefrRangeGainKm = rr - HotRadiusKm;
+                HotRadiusKm = rr;
+            }
             // Hot spot classici: a HotSpotOffsetKm ai lati del punto medio, perpendicolari alla tratta (A a sinistra, B a destra)
             double bMid = Astro.Bearing(Mid, Dx);
             HotOffsetKm = HotOffsetFor(DistKm);
@@ -153,6 +177,7 @@ namespace YAMS
             hp.BearingFromHome = Astro.Bearing(Home, p); hp.DistFromHome = Astro.DistanceKm(Home, p);
             hp.BearingFromDx = Astro.Bearing(Dx, p); hp.DistFromDx = Astro.DistanceKm(Dx, p);
             hp.ElevFromHome = MsGeometry.ElevationArticle(hp.DistFromHome, LayerKm, HomeAltKm);
+            if (refrHome != null) { double c = refrHome(hp.ElevFromHome); if (!double.IsNaN(c)) hp.ElevFromHome += c; }
             hp.SideScatterDeg = Astro.Norm180(hp.BearingFromHome - BearingHomeToDx);
             return hp;
         }
@@ -178,6 +203,13 @@ namespace YAMS
                     double Ra = ra.Length, Rb = rb.Length;
                     double ea = Math.Asin(ra.Dot(ua) / Ra) / Astro.D2R;
                     double eb = Math.Asin(rb.Dot(ub) / Rb) / Astro.D2R;
+                    if (refrHome != null)
+                    {
+                        // elevazione apparente: il punto si vede piu' alto; sotto l'orizzonte rifratto non si vede
+                        double ca = refrHome(ea), cb = refrDx(eb);
+                        ea = double.IsNaN(ca) ? -1 : ea + ca;
+                        eb = double.IsNaN(cb) ? -1 : eb + cb;
+                    }
                     double gl = 1;
                     if (LobePattern)
                     {

@@ -1,2 +1,11 @@
-n9jim_ms https://www.50mhzandup.org/show/uktn
-library.html https://www.50mhzandup.org/library.php?Mode=List
+agu.html https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2005JA011443
+agu_pdf.pdf https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2005JA011443
+ads.json https://ui.adsabs.harvard.edu/v1/search/query?q=doi:10.1029/2005JA011443&fl=abstract
+crossref.json https://api.crossref.org/works/10.1029/2005JA011443
+s2.json https://api.semanticscholar.org/graph/v1/paper/DOI:10.1029/2005JA011443?fields=title,abstract,year
+aad2025.json https://data.aad.gov.au/eds/api/dataset/c227e51d-050a-47e3-bc05-fbfd520128c0
+aaddl.bin https://data.aad.gov.au/eds/api/dataset/6fb4f5f7-1099-4126-889d-bf47c3fc89a5/download/f81f31a8-af9e-4a20-aadd-d599e5ebcd6c
+ucar379041.html https://data.eol.ucar.edu/dataset/379.041
+ucarproj379.html https://data.eol.ucar.edu/project/379
+s2kochi.json https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.pss.2016.09.004?fields=title,abstract,year,authors
+merz.json https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.asr.2021.02.014?fields=title,abstract,year,authors

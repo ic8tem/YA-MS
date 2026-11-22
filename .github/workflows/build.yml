@@ -12,15 +12,48 @@ on:
 
 permissions:
   contents: write
+  actions: read
+
+# In fila: una compilazione alla volta per ramo (release, main, prototipo-1.7), mai due in parallelo sulla
+# stessa Release. Se ne arrivano altre mentre una lavora, GitHub ne tiene in attesa solo l'ultima: i push
+# ravvicinati si fondono in una sola compilazione del commit piu' recente.
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: false
 
 env:
   DOTNET_NOLOGO: true
   DOTNET_CLI_TELEMETRY_OPTOUT: true
 
 jobs:
+  # Lo stesso commit spinto insieme su main, prototipo-1.7 e release si compila una volta sola:
+  # release fa tutto (anche il controllo per Windows 7); main salta se lo stesso commit e' gia' su release,
+  # prototipo-1.7 salta se e' gia' su main o su release.
+  piano:
+    runs-on: ubuntu-latest
+    outputs:
+      salta: ${{ steps.p.outputs.salta }}
+    steps:
+      - id: p
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          S=false
+          if [ "$GITHUB_EVENT_NAME" = push ] && { [ "$GITHUB_REF" = refs/heads/main ] || [ "$GITHUB_REF" = refs/heads/prototipo-1.7 ]; }; then
+            sleep 45   # i push su main, prototipo-1.7 e release arrivano a pochi secondi l'uno dall'altro
+            ALTRI=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs?head_sha=$GITHUB_SHA&event=push&per_page=50" \
+              -q ".workflow_runs[] | select(.name==\"build\" and .id != $GITHUB_RUN_ID and .conclusion != \"cancelled\") | .head_branch" || true)
+            echo "altre compilazioni dello stesso commit: $(echo $ALTRI)"
+            if echo "$ALTRI" | grep -qx release; then S=true; fi
+            if [ "$GITHUB_REF" = refs/heads/prototipo-1.7 ] && echo "$ALTRI" | grep -qx main; then S=true; fi
+          fi
+          echo "salta=$S" >> "$GITHUB_OUTPUT"
+          [ $S = true ] && echo "::notice::commit gia' compilato su un altro ramo: questa compilazione si salta" || true
+
   windows:
+    needs: piano
     runs-on: windows-latest
-    if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/release' || github.event_name == 'workflow_dispatch'
+    if: needs.piano.outputs.salta != 'true' && (startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/release' || github.event_name == 'workflow_dispatch')
     strategy:
       matrix:
         include:
@@ -86,6 +119,8 @@ jobs:
           path: dist/*
 
   linux:
+    needs: piano
+    if: needs.piano.outputs.salta != 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -107,7 +142,7 @@ jobs:
       - name: Compila
         run: dotnet publish YA-MS.csproj -c Release -r linux-x64 --self-contained true -p:Version=$VER -p:DebugType=none -o publish/linux-x64
       - name: Controllo per Windows 7 (.NET 6)
-        if: github.ref != 'refs/heads/release'
+        # sempre, anche sul ramo release: un errore per Windows 7 ferma la compilazione prima dei pacchetti
         run: |
           rm -rf /tmp/w7 && mkdir /tmp/w7 && git archive HEAD | tar -x -C /tmp/w7   # cartella pulita: niente obj della compilazione .NET 8
           dotnet build /tmp/w7/YA-MS.csproj -c Release -p:Windows7=true -o /tmp/ya-ms-net6
@@ -194,6 +229,8 @@ jobs:
             name: raspberry-pi-32bit
             generic: linux-armv7l     # stesso programma per ogni Linux armv7l (armhf)
             os: ubuntu-latest
+    needs: piano
+    if: needs.piano.outputs.salta != 'true'
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -263,6 +300,8 @@ jobs:
           - rid: linux-musl-arm64
             name: alpine-arm64
             os: ubuntu-24.04-arm
+    needs: piano
+    if: needs.piano.outputs.salta != 'true'
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -302,8 +341,9 @@ jobs:
           path: dist/*
 
   macos:
+    needs: piano
     runs-on: macos-latest
-    if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/release' || github.event_name == 'workflow_dispatch'
+    if: needs.piano.outputs.salta != 'true' && (startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/release' || github.event_name == 'workflow_dispatch')
     strategy:
       matrix:
         rid: [ osx-arm64, osx-x64 ]
@@ -360,6 +400,16 @@ jobs:
         with:
           path: dist
           merge-multiple: true
+      - name: Etichetta vX.Y.Z sul commit compilato
+        # se la Release di questa versione esiste gia' (secondo push senza cambiare VERSION), l'etichetta si sposta
+        # sul commit nuovo: pacchetti e sorgenti della Release restano dello stesso commit
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          T=$(git ls-remote origin "refs/tags/v$VER" | cut -f1)
+          if [ -n "$T" ] && [ "$T" != "$GITHUB_SHA" ]; then
+            git push -f origin "$GITHUB_SHA:refs/tags/v$VER" && echo "::notice::etichetta v$VER spostata da ${T::7} a ${GITHUB_SHA::7}"
+          fi
       - name: Note della release (tabella dei pacchetti con la versione)
         run: sed "s/@VER@/$VER/g" .github/note-release.md > note-release.md
       - uses: softprops/action-gh-release@v2

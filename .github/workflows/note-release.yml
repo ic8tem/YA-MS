@@ -8,6 +8,11 @@ on:
     paths: [ '.github/note-release.md' ]
 permissions:
   contents: write
+
+# in fila: due pubblicazioni insieme si pesterebbero (push rifiutato)
+concurrency:
+  group: note-release
+  cancel-in-progress: false
 jobs:
   note:
     runs-on: ubuntu-latest

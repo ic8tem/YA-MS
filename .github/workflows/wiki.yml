@@ -10,6 +10,11 @@ on:
 permissions:
   contents: write
 
+# in fila: due pubblicazioni insieme si pesterebbero (push rifiutato)
+concurrency:
+  group: wiki
+  cancel-in-progress: false
+
 jobs:
   wiki:
     runs-on: ubuntu-latest

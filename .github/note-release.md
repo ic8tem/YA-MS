@@ -28,6 +28,7 @@ A cura di Costantino IC8TEM.
 | Alpine / musl ARM64 | - | [YA-MS-@VER@-alpine-arm64.tar.gz](https://github.com/ic8tem/YA-MS/releases/download/v@VER@/YA-MS-@VER@-alpine-arm64.tar.gz) |
 
 ## Novità
+Novità della 1.8.23: rifrazione troposferica facoltativa dal modello GFS (spenta all'avvio); Giappone: conteggi HRO mensili di IPRMO e, entro 3500 km dal Giappone, fonte dei conteggi in diretta dalle immagini HROFFT di Ogaki; guadagno Yagi dalla media VE7BQH; manuale dei calcoli ampliato (quota delle scie, Collm, Draconidi, Zhou 2001).
 Novità della 1.8.22: nelle note della release la tabella «Scarica la versione per il tuo sistema» con il link a ogni pacchetto; video di presentazione (italiano, inglese, tedesco) nella pagina Video del wiki.
 
 Novità della 1.8.21: nella barra delle linguette restano solo Comandi e la lingua; il tema si sceglie in Impostazioni > Aspetto.

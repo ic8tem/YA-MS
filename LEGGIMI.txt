@@ -47,6 +47,14 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.23
+  - Rifrazione troposferica facoltativa (casella "Rifrazione troposferica (GFS)", spenta all'avvio): profilo del
+    modello GFS sopra le due stazioni e raggio tracciato fino alla quota delle scie, invece di k = 4/3.
+  - Giappone: finestra con i conteggi HRO mensili di IPRMO (fari JA2SDA, JE3AKE, JJ1RLQ a 53 MHz) e, se la stazione
+    e' entro 3500 km dal Giappone, fonte dei conteggi "Giappone in diretta" dalle immagini HROFFT di Ogaki.
+  - Guadagno delle Yagi dalla media VE7BQH per banda, con DL6WU come confronto.
+  - Manuale dei calcoli: quota delle scie (Davis, Kunming), Collm, Draconidi, Zhou 2001; wiki: pagina Link pratici.
+
 NOVITA' DELLA 1.8.22
   - Nelle note della release su GitHub c'e' la tabella "Scarica la versione per il tuo sistema" con il link a ogni pacchetto.
   - Video di presentazione (italiano, inglese, tedesco, con sottotitoli) nella pagina Video del wiki.

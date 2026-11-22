@@ -1,11 +1,3 @@
-rmoj202603.txt https://www.iprmo.org/library/rmoj/2026/rmoj202603.txt
-rmoj202604.txt https://www.iprmo.org/library/rmoj/2026/rmoj202604.txt
-rmoj202605.txt https://www.iprmo.org/library/rmoj/2026/rmoj202605.txt
-rmoj202606.txt https://www.iprmo.org/library/rmoj/2026/rmoj202606.txt
-rmoj202607.txt https://www.iprmo.org/library/rmoj/2026/rmoj202607.txt
-rmoj202608.txt https://www.iprmo.org/library/rmoj/2026/rmoj202608.txt
-rmoj202609.txt https://www.iprmo.org/library/rmoj/2026/rmoj202609.txt
-rmoj202610.txt https://www.iprmo.org/library/rmoj/2026/rmoj202610.txt
-rmoj202512.txt https://www.iprmo.org/library/rmoj/2025/rmoj202512.txt
-rep.html https://jpn.iprmo.org/rmoj-info/report.html
-lib2026.html https://www.iprmo.org/library/rmoj/2026/
+toyo.html https://hro-ogaki.org/hro_data_toyokawa/view_05.cgi
+otsu.html https://hro-ogaki.org/hro_data_otsu/view_07.cgi
+ogaki_top.html https://hro-ogaki.org/

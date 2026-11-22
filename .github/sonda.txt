@@ -1,2 +1,11 @@
-reid_abs.txt https://earthref.org/ERR/94253/err-s3-download.cgi?database_name=err&search_start=main&cit_id=94253&file_id=95972
-jgr.html https://agupubs.onlinelibrary.wiley.com/journal/21698996
+rmoj202603.txt https://www.iprmo.org/library/rmoj/2026/rmoj202603.txt
+rmoj202604.txt https://www.iprmo.org/library/rmoj/2026/rmoj202604.txt
+rmoj202605.txt https://www.iprmo.org/library/rmoj/2026/rmoj202605.txt
+rmoj202606.txt https://www.iprmo.org/library/rmoj/2026/rmoj202606.txt
+rmoj202607.txt https://www.iprmo.org/library/rmoj/2026/rmoj202607.txt
+rmoj202608.txt https://www.iprmo.org/library/rmoj/2026/rmoj202608.txt
+rmoj202609.txt https://www.iprmo.org/library/rmoj/2026/rmoj202609.txt
+rmoj202610.txt https://www.iprmo.org/library/rmoj/2026/rmoj202610.txt
+rmoj202512.txt https://www.iprmo.org/library/rmoj/2025/rmoj202512.txt
+rep.html https://jpn.iprmo.org/rmoj-info/report.html
+lib2026.html https://www.iprmo.org/library/rmoj/2026/

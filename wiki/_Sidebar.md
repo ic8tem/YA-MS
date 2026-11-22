@@ -33,6 +33,7 @@
 **Topics**
 - [Settings and data folder](Settings-and-Data-Folder)
 - [Troubleshooting and FAQ](Troubleshooting-FAQ)
+- [Operating links](Operating-Links)
 
 **About**
 - [Credits and thanks](Credits-and-Thanks)

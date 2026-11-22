@@ -47,6 +47,10 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.24
+  - Interfaccia anche in slovacco (sk): 37 lingue, come YAEC e YA-NEC. Wiki e manuali restano in 36 lingue.
+  - Pacchetti per Windows 7 SP1, 8 e 8.1 controllati anche a 32 bit (x86).
+
 NOVITA' DELLA 1.8.23
   - Rifrazione troposferica facoltativa (casella "Rifrazione troposferica (GFS)", spenta all'avvio): profilo del
     modello GFS sopra le due stazioni e raggio tracciato fino alla quota delle scie, invece di k = 4/3.

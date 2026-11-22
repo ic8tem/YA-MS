@@ -5,7 +5,7 @@
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-ic8tem-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/ic8tem)
 
 **YA-MS** calcola, in diretta e in previsione, l'efficienza degli sciami meteorici per i collegamenti radioamatoriali in **meteor scatter** (50–432 MHz): dove guardano i radianti, quali hot spot usare, quando la tratta rende di più e quanto segnale arriva.
-A cura di Costantino Cerrotta IC8TEM. Gratuito, per Windows, Linux, Raspberry Pi e Mac. Interfaccia, wiki e manuali in 36 lingue.
+A cura di Costantino Cerrotta IC8TEM. Gratuito, per Windows, Linux, Raspberry Pi e Mac. Interfaccia in 37 lingue (con lo slovacco), wiki e manuali in 36.
 
 ![Calcolo previsionale: volta celeste, pianta della tratta e hot spot](docs/screenshots/readme/it-1.png)
 

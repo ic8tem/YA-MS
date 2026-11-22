@@ -52,7 +52,8 @@ namespace YAMS
             new[] { "zh", "中文 (简体)" },
             new[] { "zh-tw", "中文 (繁體)" },
             new[] { "ja", "日本語" },
-            new[] { "ko", "한국어" }
+            new[] { "ko", "한국어" },
+            new[] { "sk", "Slovenčina" }   // 1.8.24: la 37a lingua, come YAEC e YA-NEC
         };
 
         // cultura per numeri e date di ogni lingua
@@ -93,7 +94,8 @@ namespace YAMS
             new[] { "zh", "zh-CN" },
             new[] { "zh-tw", "zh-TW" },
             new[] { "ja", "ja-JP" },
-            new[] { "ko", "ko-KR" }
+            new[] { "ko", "ko-KR" },
+            new[] { "sk", "sk-SK" }
         };
 
         // il dizionario viene sostituito per intero (lettura sicura anche dai thread secondari)

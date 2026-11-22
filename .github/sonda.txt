@@ -1,3 +1,2 @@
-toyo.html https://hro-ogaki.org/hro_data_toyokawa/view_05.cgi
-otsu.html https://hro-ogaki.org/hro_data_otsu/view_07.cgi
-ogaki_top.html https://hro-ogaki.org/
+mro.html https://mro.chips.jp/
+toyo_last.png https://hro-ogaki.org/hro_data_toyokawa/img/2611230040.png

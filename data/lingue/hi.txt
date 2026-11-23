@@ -915,3 +915,7 @@ scarico...	डाउनलोड हो रहा है...
 {0} - {1:F3} MHz	{0} - {1:F3} MHz
 {0} immagini lette ora, ultima delle {1} UTC	अभी {0} चित्र पढ़े, अंतिम {1} UTC
 {0} mesi disponibili, {1} scaricati ora	{0} महीने उपलब्ध, अभी {1} डाउनलोड
+I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	जापान की मासिक HRO गिनती (बीकन JA2SDA, JE3AKE, JJ1RLQ)।
+Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	53 MHz पर जापानी बीकनों की लाइव स्वचालित गिनती।
+I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	वैकल्पिक क्षोभमंडलीय अपवर्तन के लिए तापमान और आर्द्रता प्रोफ़ाइल।
+La formula della rifrattività e l'atmosfera di riferimento.	अपवर्तनांक का सूत्र और संदर्भ वायुमंडल।

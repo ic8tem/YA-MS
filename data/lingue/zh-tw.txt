@@ -917,3 +917,7 @@ scarico...	正在下載...
 {0} - {1:F3} MHz	{0} - {1:F3} MHz
 {0} immagini lette ora, ultima delle {1} UTC	現在讀取了 {0} 張影像，最新為 {1} UTC
 {0} mesi disponibili, {1} scaricati ora	{0} 個月可用，現在下載 {1} 個
+I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	日本的 HRO 月度計數（信標 JA2SDA、JE3AKE、JJ1RLQ）。
+Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	53 MHz 日本信標的即時自動計數。
+I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	用於選用對流層折射的溫度和濕度剖面。
+La formula della rifrattività e l'atmosfera di riferimento.	折射率公式和參考大氣。

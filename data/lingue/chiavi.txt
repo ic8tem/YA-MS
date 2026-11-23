@@ -268,8 +268,10 @@ Hot consigliato
 Hot fuori lobo
 Hot nel lobo
 Hot spot dal punto medio km
+I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).
 I conteggi radio orari degli osservatori amatoriali.
 I ping sono righe brevi vicino alla portante; le scie lunghe (overdense) sono più larghe e mostrano il Doppler
+I profili di temperatura e umidità per la rifrazione troposferica facoltativa.
 IAU MDC ({0}): {1} soluzioni. Mediane: λ {2:F1}°, A.R. {3:F1}°, decl. {4:+0.0;-0.0}°, v {5:F1} km/s.
 IAU MDC: soluzioni
 IL CIELO VISTO DA GRAVES
@@ -281,6 +283,7 @@ Il calendario degli sciami: periodi, massimi, radianti, velocità e ZHR.
 Il carattere dell'interfaccia.
 Il catalogo degli sciami stabiliti, per il confronto dei radianti nella linguetta Sciami.
 Il concetto di efficienza dello sciame, da cui nasce il calcolo di YA-MS.
+Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.
 Il conteggio delle meteore in diretta.
 Il corrispondente diventa GRAVES (JN27SI, quota 200 m) e la tratta principale viene ricalcolata
 Il file grid_data.bin dei locator, usato come ultimo livello per i locator mancanti.
@@ -325,6 +328,7 @@ LIMITI DELLA ZONA COMUNE (incroci delle curve dove l'orizzonte di ciascuna stazi
 La diffusione a cono, la scelta tra Hot A e Hot B e il caso di prova Amburgo - Barcellona usato per collaudare il modello.
 La fonte principale: geometria del meteor scatter, Hot A e Hot B, elevazione d'antenna e attenuazione di tratta.
 La formula della direzione migliore usata nella riga di confronto del Calcolo dell'efficienza.
+La formula della rifrattività e l'atmosfera di riferimento.
 La formula di DH9GCD (righe azzurre) non tiene conto dell'orizzonte né del lobo, per questo dà valori anche qui.
 La lingua è anche in alto a destra, accanto alle linguette.
 La modalità compatta ripiega all'avvio le righe dei comandi, accorcia la fascia degli orizzonti e nasconde le descrizioni lunghe (restano nei fumetti): utile sui notebook da 13-15 pollici.

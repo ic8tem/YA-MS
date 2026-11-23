@@ -916,3 +916,7 @@ scarico...	se descarcă...
 {0} - {1:F3} MHz	{0} - {1:F3} MHz
 {0} immagini lette ora, ultima delle {1} UTC	{0} imagini citite acum, ultima la {1} UTC
 {0} mesi disponibili, {1} scaricati ora	{0} luni disponibile, {1} descărcate acum
+I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	Numărătorile HRO lunare din Japonia (balizele JA2SDA, JE3AKE, JJ1RLQ).
+Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	Numărarea automată în direct a balizelor japoneze pe 53 MHz.
+I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	Profilurile de temperatură și umiditate pentru refracția troposferică opțională.
+La formula della rifrattività e l'atmosfera di riferimento.	Formula refractivității și atmosfera de referință.

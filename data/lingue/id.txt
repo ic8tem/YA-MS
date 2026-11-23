@@ -915,3 +915,7 @@ scarico...	mengunduh...
 {0} - {1:F3} MHz	{0} - {1:F3} MHz
 {0} immagini lette ora, ultima delle {1} UTC	{0} gambar dibaca sekarang, terakhir pukul {1} UTC
 {0} mesi disponibili, {1} scaricati ora	{0} bulan tersedia, {1} diunduh sekarang
+I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	Hitungan HRO bulanan dari Jepang (suar JA2SDA, JE3AKE, JJ1RLQ).
+Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	Hitungan otomatis langsung suar Jepang pada 53 MHz.
+I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	Profil suhu dan kelembapan untuk refraksi troposfer opsional.
+La formula della rifrattività e l'atmosfera di riferimento.	Rumus refraktivitas dan atmosfer acuan.

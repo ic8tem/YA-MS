@@ -917,3 +917,7 @@ scarico...	downloaden...
 {0} - {1:F3} MHz	{0} - {1:F3} MHz
 {0} immagini lette ora, ultima delle {1} UTC	{0} beelden nu gelezen, laatste om {1} UTC
 {0} mesi disponibili, {1} scaricati ora	{0} maanden beschikbaar, {1} nu gedownload
+I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	De maandelijkse HRO-tellingen uit Japan (bakens JA2SDA, JE3AKE, JJ1RLQ).
+Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	De automatische live-telling van de Japanse bakens op 53 MHz.
+I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	De temperatuur- en vochtigheidsprofielen voor de optionele troposferische refractie.
+La formula della rifrattività e l'atmosfera di riferimento.	De formule van de refractiviteit en de referentieatmosfeer.

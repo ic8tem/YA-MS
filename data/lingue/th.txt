@@ -917,3 +917,7 @@ scarico...	กำลังดาวน์โหลด...
 {0} - {1:F3} MHz	{0} - {1:F3} MHz
 {0} immagini lette ora, ultima delle {1} UTC	อ่านภาพแล้ว {0} ภาพ ล่าสุดเวลา {1} UTC
 {0} mesi disponibili, {1} scaricati ora	มี {0} เดือน ดาวน์โหลดตอนนี้ {1}
+I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	ค่านับ HRO รายเดือนจากญี่ปุ่น (บีคอน JA2SDA, JE3AKE, JJ1RLQ)
+Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	การนับอัตโนมัติแบบสดของบีคอนญี่ปุ่นที่ 53 MHz
+I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	โปรไฟล์อุณหภูมิและความชื้นสำหรับการหักเหในชั้นโทรโพสเฟียร์ (เลือกได้)
+La formula della rifrattività e l'atmosfera di riferimento.	สูตรค่าการหักเหและบรรยากาศอ้างอิง

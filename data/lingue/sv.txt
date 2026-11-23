@@ -915,3 +915,7 @@ scarico...	hämtar...
 {0} - {1:F3} MHz	{0} - {1:F3} MHz
 {0} immagini lette ora, ultima delle {1} UTC	{0} bilder lästa nu, senaste kl. {1} UTC
 {0} mesi disponibili, {1} scaricati ora	{0} månader tillgängliga, {1} hämtade nu
+I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	De månatliga HRO-räkningarna från Japan (fyrarna JA2SDA, JE3AKE, JJ1RLQ).
+Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	Den automatiska direkträkningen av de japanska fyrarna på 53 MHz.
+I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	Temperatur- och fuktighetsprofilerna för den valfria troposfäriska refraktionen.
+La formula della rifrattività e l'atmosfera di riferimento.	Formeln för refraktiviteten och referensatmosfären.

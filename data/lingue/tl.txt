@@ -915,3 +915,7 @@ scarico...	nagda-download...
 {0} - {1:F3} MHz	{0} - {1:F3} MHz
 {0} immagini lette ora, ultima delle {1} UTC	{0} larawan ang nabasa ngayon, huli noong {1} UTC
 {0} mesi disponibili, {1} scaricati ora	{0} buwan ang available, {1} na-download ngayon
+I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	Ang buwanang bilang ng HRO mula sa Japan (mga beacon na JA2SDA, JE3AKE, JJ1RLQ).
+Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	Ang awtomatikong live na bilang ng mga beacon ng Japan sa 53 MHz.
+I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	Ang mga profile ng temperatura at halumigmig para sa opsiyonal na troposperikong repraksyon.
+La formula della rifrattività e l'atmosfera di riferimento.	Ang pormula ng refractivity at ang reference atmosphere.

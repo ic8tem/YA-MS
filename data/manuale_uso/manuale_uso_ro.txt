@@ -24,6 +24,7 @@ LI|macOS: fișierul .dmg pentru Apple Silicon (M1 și ulterioare) sau pentru Int
 TAG|ATTENZIONE|Windows poate afișa „Windows a protejat PC-ul”: alegeți „Mai multe informații” și apoi „Rulați oricum”. Pe macOS, prima dată, deschideți aplicația cu clic dreapta și „Deschide”. Programul nu este semnat cu un certificat plătit.
 H2|2.2 Prima pornire
 P|La pornire apare pentru câteva secunde ecranul cu Perseidele deasupra telescopului VLT al ESO. La prima pornire YA-MS alege limba sistemului, dacă este una dintre cele 36, altfel italiana; descarcă harta Europei (Natural Earth) în dosarul data/mappa și afișează un traseu de exemplu. Sunt suficiente câteva minute pentru a-l configura pentru stația dumneavoastră (capitolul 4).
+P|YA-MS se deschide o singură dată: dacă îl pornești din nou cât timp este deja deschis, a doua copie nu pornește, iar fereastra deja deschisă vine în prim-plan, chiar dacă era minimizată. Astfel două copii nu scriu niciodată simultan în aceleași fișiere din dosarul data. După o actualizare, copia nouă așteaptă ca cea veche să se închidă.
 H2|2.3 Dosarul data
 P|Toate setările și toate datele se află într-un singur dosar data lângă program: fără AppData, fără dosare de sistem. Pentru a muta YA-MS pe alt calculator este suficient să copiați dosarul programului împreună cu dosarul său data. Conținutul dosarului este descris în capitolul 13.
 H2|2.4 Actualizări automate

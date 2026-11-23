@@ -24,6 +24,7 @@ LI|macOS: plik .dmg dla Apple Silicon (M1 i nowsze) lub dla Intel, albo app.zip.
 TAG|ATTENZIONE|Windows może wyświetlić komunikat "System Windows ochronił ten komputer": wybierz "Więcej informacji", a potem "Uruchom mimo to". W macOS za pierwszym razem otwórz aplikację prawym przyciskiem myszy i poleceniem "Otwórz". Program nie jest podpisany płatnym certyfikatem.
 H2|2.2 Pierwsze uruchomienie
 P|Przy uruchomieniu przez kilka sekund pojawia się ekran z Perseidami nad teleskopem VLT ESO. Przy pierwszym uruchomieniu YA-MS wybiera język systemu, jeśli jest jednym z 36, w przeciwnym razie włoski; pobiera mapę Europy (Natural Earth) do folderu data/mappa i pokazuje przykładową trasę. Ustawienie programu dla twojej stacji zajmuje kilka minut (rozdział 4).
+P|YA-MS otwiera się tylko raz: jeśli uruchomisz go ponownie, gdy jest już otwarty, druga kopia nie startuje, a otwarte okno przechodzi na pierwszy plan, nawet jeśli było zminimalizowane. Dzięki temu dwie kopie nigdy nie zapisują jednocześnie tych samych plików w folderze data. Po aktualizacji nowa kopia czeka, aż stara się zamknie.
 H2|2.3 Folder data
 P|Wszystkie ustawienia i wszystkie dane znajdują się w jednym folderze data obok programu: bez AppData, bez folderów systemowych. Aby przenieść YA-MS na inny komputer, wystarczy skopiować folder programu razem z jego folderem data. Zawartość folderu opisano w rozdziale 13.
 H2|2.4 Automatyczne aktualizacje

@@ -24,6 +24,7 @@ LI|macOS: .dmg pro Apple Silicon (M1 a novější) nebo pro Intel, případně a
 TAG|ATTENZIONE|Windows může zobrazit „Systém Windows ochránil váš počítač“: zvolte „Další informace“ a potom „Přesto spustit“. Na macOS aplikaci poprvé otevřete pravým tlačítkem myši a volbou „Otevřít“. Program není podepsán placeným certifikátem.
 H2|2.2 První spuštění
 P|Při spuštění se na několik sekund zobrazí úvodní obrazovka s Perseidami nad dalekohledem VLT observatoře ESO. Při prvním spuštění YA-MS zvolí jazyk systému, pokud je jedním z 36, jinak italštinu; stáhne mapu Evropy (Natural Earth) do složky data/mappa a zobrazí ukázkovou trasu. Nastavení pro vaši stanici zabere jen pár minut (kapitola 4).
+P|YA-MS se otevře jen jednou: spustíte-li ho znovu, když už je otevřený, druhá kopie se nespustí a otevřené okno přejde do popředí, i když bylo minimalizované. Dvě kopie tak nikdy nezapisují současně do stejných souborů ve složce data. Po aktualizaci nová kopie počká, až se stará zavře.
 H2|2.3 Složka data
 P|Všechna nastavení a všechna data jsou v jediné složce data vedle programu: žádné AppData, žádné systémové složky. Chcete-li YA-MS přesunout na jiný počítač, stačí zkopírovat složku programu i s její složkou data. Obsah složky popisuje kapitola 13.
 H2|2.4 Automatické aktualizace

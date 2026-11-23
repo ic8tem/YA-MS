@@ -24,6 +24,7 @@ LI|macOS: .dmg-skráin fyrir Apple Silicon (M1 og nýrri) eða fyrir Intel, eða
 TAG|ATTENZIONE|Windows getur birt „Windows verndaði tölvuna þína“: veldu „Frekari upplýsingar“ og síðan „Keyra samt“. Á macOS skaltu í fyrsta skipti opna forritið með hægri músarhnappi og „Opna“. Forritið er ekki undirritað með greiddu skilríki.
 H2|2.2 Fyrsta ræsing
 P|Við ræsingu birtist í nokkrar sekúndur mynd af Persítum yfir VLT-sjónauka ESO. Við fyrstu ræsingu velur YA-MS tungumál kerfisins, ef það er eitt af þessum 36, annars ítölsku; það sækir kort af Evrópu (Natural Earth) í möppuna data/mappa og sýnir dæmi um leið. Það tekur aðeins nokkrar mínútur að stilla það fyrir stöðina þína (kafli 4).
+P|YA-MS opnast aðeins einu sinni: ef þú ræsir það aftur meðan það er opið ræsist annað eintakið ekki og opni glugginn kemur fram, jafnvel þótt hann hafi verið lágmarkaður. Þannig skrifa tvö eintök aldrei samtímis í sömu skrár í data-möppunni. Eftir uppfærslu bíður nýja eintakið þar til það gamla hefur lokast.
 H2|2.3 Mappan data
 P|Allar stillingar og öll gögn eru í einni möppu, data, við hlið forritsins: engin AppData, engar kerfismöppur. Til að flytja YA-MS á aðra tölvu nægir að afrita forritsmöppuna ásamt möppunni data. Innihaldi möppunnar er lýst í kafla 13.
 H2|2.4 Sjálfvirkar uppfærslur

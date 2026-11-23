@@ -24,6 +24,7 @@ LI|macOS: Apple Silicon (M1 ve sonrası) veya Intel için .dmg ya da app.zip. YA
 TAG|ATTENZIONE|Windows "Windows kişisel bilgisayarınızı korudu" iletisini gösterebilir: "Ek bilgi"yi, ardından "Yine de çalıştır"ı seçin. macOS'ta ilk seferde uygulamayı sağ tıklayıp "Aç" ile açın. Program ücretli bir sertifikayla imzalanmamıştır.
 H2|2.2 İlk açılış
 P|Açılışta birkaç saniye boyunca ESO'nun VLT'si üzerindeki Perseidler'i gösteren ekran görünür. İlk açılışta YA-MS, 36 dilden biriyse sistem dilini, değilse İtalyancayı seçer; Avrupa haritasını (Natural Earth) data/mappa klasörüne indirir ve örnek bir yol gösterir. Programı istasyonunuza göre ayarlamak birkaç dakika sürer (bölüm 4).
+P|YA-MS yalnızca bir kez açılır: zaten açıkken yeniden başlatırsanız ikinci kopya başlamaz ve açık pencere simge durumunda olsa bile öne gelir. Böylece iki kopya hiçbir zaman data klasöründeki aynı dosyalara aynı anda yazmaz. Bir güncellemeden sonra yeni kopya eskisinin kapanmasını bekler.
 H2|2.3 data klasörü
 P|Tüm ayarlar ve tüm veriler, programın yanındaki tek bir data klasöründe durur: AppData yok, sistem klasörü yok. YA-MS'i başka bir bilgisayara taşımak için program klasörünü data klasörüyle birlikte kopyalamanız yeterlidir. Klasörün içeriği bölüm 13'te anlatılmıştır.
 H2|2.4 Otomatik güncellemeler

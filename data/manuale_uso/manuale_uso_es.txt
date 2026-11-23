@@ -24,6 +24,7 @@ LI|macOS: el .dmg para Apple Silicon (M1 y posteriores) o para Intel, o bien el 
 TAG|ATTENZIONE|Windows puede mostrar "Windows protegió su PC": elige "Más información" y luego "Ejecutar de todas formas". En macOS, la primera vez, abre la aplicación con el botón derecho y "Abrir". El programa no está firmado con un certificado de pago.
 H2|2.2 El primer arranque
 P|Al arrancar aparece durante unos segundos la pantalla con las Perseidas sobre el VLT de ESO. En el primer arranque YA-MS elige el idioma del sistema, si es uno de los 36; si no, el italiano; descarga el mapa de Europa (Natural Earth) en la carpeta data/mappa y muestra un trayecto de ejemplo. Bastan unos minutos para configurarlo para tu estación (capítulo 4).
+P|YA-MS se abre una sola vez: si lo inicias de nuevo mientras ya está abierto, la segunda copia no arranca y la ventana ya abierta pasa al primer plano, aunque estuviera minimizada. Así dos copias nunca escriben a la vez en los mismos archivos de la carpeta data. Tras una actualización, la copia nueva espera a que la antigua se cierre.
 H2|2.3 La carpeta data
 P|Todos los ajustes y todos los datos están en una única carpeta data junto al programa: nada de AppData ni de carpetas del sistema. Para pasar YA-MS a otro ordenador basta con copiar la carpeta del programa con su carpeta data. El contenido de la carpeta se describe en el capítulo 13.
 H2|2.4 Actualizaciones automáticas

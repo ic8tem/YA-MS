@@ -57,6 +57,7 @@ li("macOS: il .dmg per Apple Silicon (M1 e successivi) o per Intel, oppure l'app
 tag("ATTENZIONE", "Windows può mostrare \"Windows ha protetto il PC\": scegli \"Ulteriori informazioni\" e poi \"Esegui comunque\". Su macOS, la prima volta, apri l'app con il tasto destro e \"Apri\". Il programma non è firmato con un certificato a pagamento.")
 h2("2.2 Il primo avvio")
 p("All'avvio compare per pochi secondi la schermata con le Perseidi sopra il VLT dell'ESO. Al primo avvio YA-MS sceglie la lingua del sistema, se è una delle 36, altrimenti l'italiano; scarica la mappa d'Europa (Natural Earth) nella cartella data/mappa e mostra una tratta di esempio. Bastano pochi minuti per impostarlo per la tua stazione (capitolo 4).")
+p("YA-MS si apre una sola volta: se lo avvii di nuovo mentre è già aperto, la seconda copia non parte e la finestra già aperta torna in primo piano, anche se era ridotta a icona. Così due copie non scrivono insieme sugli stessi file della cartella data. Dopo un aggiornamento la copia nuova aspetta che quella vecchia si sia chiusa.")
 h2("2.3 La cartella data")
 p("Tutte le impostazioni e tutti i dati stanno in un'unica cartella data accanto al programma: niente AppData, niente cartelle di sistema. Per spostare YA-MS su un altro computer basta copiare la cartella del programma con la sua cartella data. Il contenuto della cartella è descritto nel capitolo 13.")
 h2("2.4 Aggiornamenti automatici")

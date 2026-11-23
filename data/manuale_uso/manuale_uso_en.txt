@@ -24,6 +24,7 @@ LI|macOS: the .dmg for Apple Silicon (M1 and later) or for Intel, or the app.zip
 TAG|ATTENZIONE|Windows may show "Windows protected your PC": choose "More info" and then "Run anyway". On macOS, the first time, open the app with the right mouse button and "Open". The program is not signed with a paid certificate.
 H2|2.2 First start
 P|At startup the splash screen with the Perseids above ESO's VLT appears for a few seconds. On first start YA-MS chooses the system language, if it is one of the 36, otherwise Italian; it downloads the map of Europe (Natural Earth) into the data/mappa folder and shows an example path. A few minutes are enough to set it up for your station (chapter 4).
+P|YA-MS opens only once: if you start it again while it is already open, the second copy does not start and the open window comes to the front, even if it was minimized. This way two copies never write to the same files in the data folder at once. After an update the new copy waits for the old one to close.
 H2|2.3 The data folder
 P|All settings and all data are in a single data folder next to the program: no AppData, no system folders. To move YA-MS to another computer, just copy the program folder together with its data folder. The contents of the folder are described in chapter 13.
 H2|2.4 Automatic updates

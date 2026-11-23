@@ -24,6 +24,7 @@ LI|macOS: de .dmg voor Apple Silicon (M1 en later) of voor Intel, of de app.zip.
 TAG|ATTENZIONE|Windows kan "Windows heeft uw pc beschermd" tonen: kies "Meer informatie" en daarna "Toch uitvoeren". Op macOS open je de app de eerste keer met de rechtermuisknop en "Open". Het programma is niet ondertekend met een betaald certificaat.
 H2|2.2 De eerste start
 P|Bij het opstarten verschijnt enkele seconden het startscherm met de Perseïden boven de VLT van ESO. Bij de eerste start kiest YA-MS de taal van het systeem, als dat een van de 36 is, anders Italiaans; het downloadt de kaart van Europa (Natural Earth) naar de map data/mappa en toont een voorbeeldtraject. Het instellen voor jouw station kost maar een paar minuten (hoofdstuk 4).
+P|YA-MS opent maar één keer: start je het opnieuw terwijl het al open is, dan start de tweede kopie niet en komt het open venster naar voren, ook als het geminimaliseerd was. Zo schrijven nooit twee kopieën tegelijk in dezelfde bestanden van de map data. Na een update wacht de nieuwe kopie tot de oude gesloten is.
 H2|2.3 De map data
 P|Alle instellingen en alle gegevens staan in één map data naast het programma: geen AppData, geen systeemmappen. Om YA-MS naar een andere computer te verplaatsen kopieer je gewoon de programmamap met de map data erin. De inhoud van de map wordt beschreven in hoofdstuk 13.
 H2|2.4 Automatische updates

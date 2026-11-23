@@ -24,6 +24,7 @@ LI|macOS: berkas .dmg untuk Apple Silicon (M1 dan sesudahnya) atau untuk Intel, 
 TAG|ATTENZIONE|Windows dapat menampilkan "Windows melindungi PC Anda": pilih "Info selengkapnya" lalu "Tetap jalankan". Di macOS, pada kali pertama, buka aplikasi dengan klik kanan lalu "Buka". Program ini tidak ditandatangani dengan sertifikat berbayar.
 H2|2.2 Saat pertama kali dijalankan
 P|Saat dijalankan, selama beberapa detik muncul layar pembuka bergambar Perseid di atas VLT milik ESO. Saat pertama kali dijalankan, YA-MS memilih bahasa sistem jika termasuk dalam 36 bahasa yang tersedia, jika tidak memilih bahasa Italia; program mengunduh peta Eropa (Natural Earth) ke folder data/mappa dan menampilkan lintasan contoh. Hanya perlu beberapa menit untuk menyesuaikannya dengan stasiun Anda (bab 4).
+P|YA-MS hanya terbuka satu kali: jika Anda menjalankannya lagi saat sudah terbuka, salinan kedua tidak berjalan dan jendela yang sudah terbuka maju ke depan, meskipun sedang diminimalkan. Dengan begitu dua salinan tidak pernah menulis bersamaan ke berkas yang sama di folder data. Setelah pembaruan, salinan baru menunggu salinan lama tertutup.
 H2|2.3 Folder data
 P|Semua pengaturan dan semua data berada dalam satu folder data di samping program: tanpa AppData, tanpa folder sistem. Untuk memindahkan YA-MS ke komputer lain cukup salin folder program beserta folder data-nya. Isi folder ini dijelaskan di bab 13.
 H2|2.4 Pembaruan otomatis

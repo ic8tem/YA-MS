@@ -24,6 +24,7 @@ LI|macOS: die .dmg vir Apple Silicon (M1 en later) of vir Intel, of die app.zip.
 TAG|ATTENZIONE|Windows kan "Windows het jou rekenaar beskerm" wys: kies "Meer inligting" en dan "Hardloop in elk geval". Op macOS maak jy die eerste keer die app oop met die regterknoppie en "Open". Die program is nie met 'n betaalde sertifikaat onderteken nie.
 H2|2.2 Die eerste aanskakel
 P|By die aanskakel verskyn vir 'n paar sekondes die skerm met die Perseïede bo die VLT van die ESO. By die eerste aanskakel kies YA-MS die taal van die stelsel as dit een van die 36 is, anders Italiaans; dit laai die kaart van Europa (Natural Earth) af na die gids data/mappa en wys 'n voorbeeldpad. 'n Paar minute is genoeg om dit vir jou stasie op te stel (hoofstuk 4).
+P|YA-MS maak net een keer oop: as jy dit weer begin terwyl dit reeds oop is, begin die tweede kopie nie en die oop venster kom na vore, selfs as dit geminimeer was. So skryf twee kopieë nooit gelyktydig in dieselfde lêers van die data-gids nie. Na 'n bywerking wag die nuwe kopie totdat die ou een toe is.
 H2|2.3 Die data-gids
 P|Al die instellings en al die data is in 'n enkele data-gids langs die program: geen AppData nie, geen stelselgidse nie. Om YA-MS na 'n ander rekenaar te skuif, kopieer jy net die programgids saam met sy data-gids. Die inhoud van die gids word in hoofstuk 13 beskryf.
 H2|2.4 Outomatiese bywerkings

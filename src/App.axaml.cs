@@ -31,6 +31,7 @@ namespace YAMS
                 {
                     // schermata di avvio per 5 secondi, poi la finestra principale (aperta prima di chiudere l'avvio,
                     // cosi' il programma non si chiude per mancanza di finestre)
+                    Istanza.AscoltaRichiami(desktop);
                     SplashWindow sp = new SplashWindow();
                     desktop.MainWindow = sp;
                     sp.Done += () =>

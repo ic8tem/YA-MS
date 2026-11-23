@@ -210,6 +210,7 @@ namespace YAMS
                 SaveConfig();
                 MsCollector.Shutdown();
                 replaced = true;   // impostazioni gia' salvate
+                Istanza.SegnalaRiavvio();   // la copia nuova aspetta che questa si chiuda
                 Process.Start(restart);
             }
             catch (Exception ex)

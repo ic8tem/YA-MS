@@ -24,6 +24,7 @@ LI|macOS: .dmg failas Apple Silicon (M1 ir naujesniems) arba Intel kompiuteriams
 TAG|ATTENZIONE|Windows gali parodyti pranešimą „Windows apsaugojo jūsų kompiuterį“: pasirinkite „Daugiau informacijos“, o tada „Vis tiek vykdyti“. macOS sistemoje pirmą kartą atidarykite programėlę dešiniuoju pelės mygtuku ir „Atidaryti“. Programa nepasirašyta mokamu sertifikatu.
 H2|2.2 Pirmasis paleidimas
 P|Paleidžiant kelioms sekundėms parodomas ekranas su Perseidais virš ESO VLT teleskopo. Pirmą kartą paleista YA-MS pasirenka sistemos kalbą, jei ji yra viena iš 36, kitaip - italų kalbą; atsisiunčia Europos žemėlapį (Natural Earth) į aplanką data/mappa ir parodo pavyzdinę trasą. Programai nustatyti savo stočiai pakanka kelių minučių (4 skyrius).
+P|YA-MS atsidaro tik vieną kartą: jei paleisite jį dar kartą, kai jis jau atidarytas, antroji kopija nepasileidžia, o atidarytas langas iškeliamas į priekį, net jei buvo sumažintas. Taip dvi kopijos niekada vienu metu nerašo į tuos pačius aplanko data failus. Po atnaujinimo naujoji kopija palaukia, kol užsidarys senoji.
 H2|2.3 Aplankas data
 P|Visi nustatymai ir visi duomenys saugomi viename aplanke data šalia programos: jokio AppData, jokių sistemos aplankų. Norint perkelti YA-MS į kitą kompiuterį, pakanka nukopijuoti programos aplanką kartu su jo aplanku data. Aplanko turinys aprašytas 13 skyriuje.
 H2|2.4 Automatiniai atnaujinimai

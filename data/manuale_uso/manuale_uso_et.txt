@@ -24,6 +24,7 @@ LI|macOS: .dmg-fail Apple Siliconi (M1 ja uuemad) või Inteli jaoks või app.zip
 TAG|ATTENZIONE|Windows võib näidata teadet „Windows kaitses teie arvutit“: vali „Rohkem teavet“ ja seejärel „Käivita siiski“. macOS-is ava rakendus esimesel korral paremklõpsuga ja vali „Ava“. Programm pole allkirjastatud tasulise sertifikaadiga.
 H2|2.2 Esimene käivitamine
 P|Käivitamisel kuvatakse mõneks sekundiks pilt Perseiididest ESO VLT kohal. Esimesel käivitamisel valib YA-MS süsteemi keele, kui see on üks 36-st, muidu itaalia keele; laadib alla Euroopa kaardi (Natural Earth) kausta data/mappa ja näitab näidistrassi. Programmi seadistamine oma jaama jaoks võtab vaid mõne minuti (peatükk 4).
+P|YA-MS avaneb ainult üks kord: kui käivitad selle uuesti, kui see on juba avatud, teine eksemplar ei käivitu ja avatud aken tuleb esiplaanile, isegi kui see oli minimeeritud. Nii ei kirjuta kaks eksemplari kunagi korraga samadesse data-kausta failidesse. Pärast uuendust ootab uus eksemplar, kuni vana on suletud.
 H2|2.3 Kaust data
 P|Kõik seaded ja kõik andmed asuvad ühes kaustas data programmi kõrval: ei mingit AppData-t ega süsteemikaustu. YA-MS-i teise arvutisse viimiseks piisab programmi kausta kopeerimisest koos selle kaustaga data. Kausta sisu on kirjeldatud peatükis 13.
 H2|2.4 Automaatsed uuendused

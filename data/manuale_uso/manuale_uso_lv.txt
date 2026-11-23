@@ -24,6 +24,7 @@ LI|macOS: .dmg fails Apple Silicon (M1 un jaunākiem) vai Intel datoriem, vai ap
 TAG|ATTENZIONE|Windows var parādīt paziņojumu "Windows aizsargāja jūsu datoru": izvēlies "Papildinformācija" un pēc tam "Tik un tā palaist". macOS pirmajā reizē atver lietotni ar peles labo pogu un "Atvērt". Programma nav parakstīta ar maksas sertifikātu.
 H2|2.2 Pirmā palaišana
 P|Palaižot uz dažām sekundēm parādās ekrāns ar Perseīdām virs ESO VLT teleskopa. Pirmajā palaišanas reizē YA-MS izvēlas sistēmas valodu, ja tā ir viena no 36, citādi itāļu valodu; lejupielādē Eiropas karti (Natural Earth) mapē data/mappa un parāda trases piemēru. Lai programmu iestatītu savai stacijai, pietiek ar dažām minūtēm (4. nodaļa).
+P|YA-MS atveras tikai vienreiz: ja to palaid vēlreiz, kamēr tas jau ir atvērts, otrā kopija nestartē un atvērtais logs nonāk priekšplānā, pat ja tas bija minimizēts. Tā divas kopijas nekad vienlaikus neraksta tajos pašos mapes data failos. Pēc atjauninājuma jaunā kopija gaida, līdz vecā aizveras.
 H2|2.3 Mape data
 P|Visi iestatījumi un visi dati atrodas vienā mapē data blakus programmai: nekādas AppData, nekādu sistēmas mapju. Lai pārvietotu YA-MS uz citu datoru, pietiek nokopēt programmas mapi kopā ar tās mapi data. Mapes saturs aprakstīts 13. nodaļā.
 H2|2.4 Automātiskie atjauninājumi

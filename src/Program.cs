@@ -46,6 +46,8 @@ namespace YAMS
                     PskMqtt.Disconnect();
                     return;
                 }
+            // una sola copia del programma (non per le fotografie automatiche)
+            if (ScreenshotDir == null && !Istanza.Prima()) return;
             try
             {
                 BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);

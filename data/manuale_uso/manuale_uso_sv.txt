@@ -24,6 +24,7 @@ LI|macOS: .dmg-filen för Apple Silicon (M1 och senare) eller för Intel, eller 
 TAG|ATTENZIONE|Windows kan visa "Windows skyddade datorn": välj "Mer information" och sedan "Kör ändå". På macOS öppnar du appen första gången med högerklick och "Öppna". Programmet är inte signerat med ett betalt certifikat.
 H2|2.2 Första starten
 P|Vid start visas i några sekunder startbilden med Perseiderna över ESO:s VLT. Vid första starten väljer YA-MS systemets språk, om det är ett av de 36, annars italienska; det laddar ner Europakartan (Natural Earth) till mappen data/mappa och visar en exempelsträcka. Det tar bara några minuter att ställa in det för din station (kapitel 4).
+P|YA-MS öppnas bara en gång: startar du det igen medan det redan är öppet startar inte den andra kopian, och det öppna fönstret kommer fram, även om det var minimerat. Så skriver två kopior aldrig samtidigt i samma filer i mappen data. Efter en uppdatering väntar den nya kopian tills den gamla har stängts.
 H2|2.3 Mappen data
 P|Alla inställningar och alla data finns i en enda mapp data bredvid programmet: ingen AppData, inga systemmappar. För att flytta YA-MS till en annan dator räcker det att kopiera programmappen med dess mapp data. Mappens innehåll beskrivs i kapitel 13.
 H2|2.4 Automatiska uppdateringar

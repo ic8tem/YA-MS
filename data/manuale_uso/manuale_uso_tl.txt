@@ -24,6 +24,7 @@ LI|macOS: ang .dmg para sa Apple Silicon (M1 at mas bago) o para sa Intel, o ang
 TAG|ATTENZIONE|Maaaring ipakita ng Windows ang “Pinrotektahan ng Windows ang iyong PC”: piliin ang “Higit pang impormasyon” at pagkatapos ang “Patakbuhin pa rin”. Sa macOS, sa unang pagkakataon, buksan ang app gamit ang right-click at “Open”. Hindi naka-sign ang programa gamit ang bayad na sertipiko.
 H2|2.2 Ang unang pagsisimula
 P|Sa pagsisimula, lumalabas nang ilang segundo ang screen na may Perseids sa itaas ng VLT ng ESO. Sa unang pagsisimula, pinipili ng YA-MS ang wika ng system kung isa ito sa 36, kung hindi ay Italyano; dina-download nito ang mapa ng Europa (Natural Earth) sa folder na data/mappa at nagpapakita ng halimbawang landas. Ilang minuto lang ang kailangan para i-set up ito para sa iyong istasyon (kabanata 4).
+P|Isang beses lang nabubuksan ang YA-MS: kung patakbuhin mo ito ulit habang bukas na, hindi tatakbo ang ikalawang kopya at lalabas sa harap ang bukas na window, kahit naka-minimize ito. Kaya hindi kailanman sabay na sumusulat ang dalawang kopya sa parehong mga file ng folder na data. Pagkatapos ng update, hinihintay ng bagong kopya na magsara ang luma.
 H2|2.3 Ang folder na data
 P|Lahat ng setting at lahat ng datos ay nasa iisang folder na data sa tabi ng programa: walang AppData, walang system folder. Para ilipat ang YA-MS sa ibang computer, kopyahin lang ang folder ng programa kasama ang folder na data nito. Inilalarawan sa kabanata 13 ang laman ng folder.
 H2|2.4 Mga awtomatikong update

@@ -24,6 +24,7 @@ LI|macOS: a .dmg Apple Siliconhoz (M1 és újabb) vagy Intelhez, illetve az app.
 TAG|ATTENZIONE|A Windows megjelenítheti „A Windows megvédte a számítógépet” üzenetet: válassza a „További információ”, majd a „Futtatás mindenképp” lehetőséget. macOS-en az első alkalommal jobb gombbal nyissa meg az alkalmazást, és válassza a „Megnyitás” parancsot. A program nincs fizetős tanúsítvánnyal aláírva.
 H2|2.2 Az első indítás
 P|Indításkor néhány másodpercre megjelenik a nyitókép az ESO VLT távcsöve fölötti Perseidákkal. Az első indításkor a YA-MS a rendszer nyelvét választja, ha az a 36 nyelv egyike, különben az olaszt; letölti Európa térképét (Natural Earth) a data/mappa mappába, és egy példa-útvonalat mutat. Néhány perc elég ahhoz, hogy beállítsa a saját állomására (4. fejezet).
+P|A YA-MS csak egyszer nyílik meg: ha újra elindítod, amíg már nyitva van, a második példány nem indul el, és a nyitott ablak előtérbe kerül, akkor is, ha kis méretre volt állítva. Így két példány soha nem ír egyszerre ugyanazokba a fájlokba a data mappában. Frissítés után az új példány megvárja, amíg a régi bezárul.
 H2|2.3 A data mappa
 P|Minden beállítás és minden adat egyetlen data mappában van a program mellett: nincs AppData, nincsenek rendszermappák. A YA-MS másik számítógépre költöztetéséhez elég átmásolni a program mappáját a data mappájával együtt. A mappa tartalmát a 13. fejezet írja le.
 H2|2.4 Automatikus frissítések

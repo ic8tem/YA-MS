@@ -1,4 +1,4 @@
-﻿// YA-MS - sezione: le scie piu' probabili viste dall'antenna puntata verso il corrispondente
+// YA-MS - sezione: le scie piu' probabili viste dall'antenna puntata verso il corrispondente
 //
 // Asse orizzontale = azimut rispetto alla direzione del corrispondente (A a sinistra, B a destra),
 // asse verticale = elevazione vista dalla stazione. Ogni scia e' un segmento centrato nel punto di

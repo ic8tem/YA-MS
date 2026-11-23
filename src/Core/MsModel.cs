@@ -1,4 +1,4 @@
-﻿// YA-MS - geometria del meteor scatter, Hot A/B, attenuazione, efficienza dello sciame
+// YA-MS - geometria del meteor scatter, Hot A/B, attenuazione, efficienza dello sciame
 //
 // Ipotesi di base (articolo Cerrotta-Sartori, vers. 7):
 //  - lo sciame provoca scie ionizzate nello strato E; la quota tipica e' quella piu' frequente misurata

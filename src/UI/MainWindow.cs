@@ -1,4 +1,4 @@
-﻿// YA-MS - finestra principale (porting di MainForm.cs da WinForms ad Avalonia; interfaccia costruita in codice)
+// YA-MS - finestra principale (porting di MainForm.cs da WinForms ad Avalonia; interfaccia costruita in codice)
 using System;
 using System.Collections.Generic;
 using System.Globalization;

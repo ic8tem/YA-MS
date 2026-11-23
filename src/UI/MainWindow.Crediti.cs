@@ -1,4 +1,4 @@
-﻿// YA-MS - sottolinguetta "Crediti" (Documenti tecnici, dopo "Fonti"): programma, autore, contatti, licenza GPL-3.0 e
+// YA-MS - sottolinguetta "Crediti" (Documenti tecnici, dopo "Fonti"): programma, autore, contatti, licenza GPL-3.0 e
 // crediti in schede su tre colonne come in YA-NEC (richiesta dell'autore, IC8TEM, 15/11/2026). Le fonti scientifiche
 // complete restano nella linguetta "Fonti".
 using System;

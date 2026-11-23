@@ -33,6 +33,8 @@ Fanen **Kilder** lister alle verkene YA-MS bygger på, gruppert som nedenfor (te
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (VK3AUU-Yagier av David Tanner) | NEC-simuleringer brukt til å verifisere forsterkningskurven og korrigere den horisontale loben (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Forsterkningsestimater for variantene VK3AUU, WA2PHW og DJ9BV |
 | J. **Meeus** – *Astronomical Algorithms*, 2. utg., Willmann-Bell, 1998 | Juliansk dag, stjernetid, solens lengde, asimut/elevasjon (i håndboken) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84-ellipsoiden (posisjonene til stasjoner og spor) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Avstand, asimut og midtpunkt på geodeten |
 
 ## SVERMDATA
 

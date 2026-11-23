@@ -23,7 +23,7 @@ Las estaciones, la banda, la altura de las estelas, la elevación del lóbulo, e
 
 | Sección | Contenido |
 |---|---|
-| **GEOMETRÍA DEL TRAYECTO (Tierra esférica, R = 6372,7955 km)** | Estación y DX con sus alturas; distancia, azimut y azimut inverso; punto medio (locator y coordenadas); altura de las estelas (*<- moda medida por el radar de Collm* cuando se toma del radar); elevación de la antena hacia el punto medio |
+| **GEOMETRÍA DEL TRAYECTO (elipsoide WGS84)** | Estación y DX con sus alturas; distancia, azimut y azimut inverso; punto medio (locator y coordenadas); altura de las estelas (*<- moda medida por el radar de Collm* cuando se toma del radar); elevación de la antena hacia el punto medio |
 | **HOT A / HOT B (hot spots clásicos, para el apuntamiento de la antena)** | Para cada uno: locator, azimut desde tu estación y desplazamiento respecto al trayecto directo, azimut desde el DX, distancia, elevación |
 | **LÍMITES DE LA ZONA COMÚN** | Alcance a la altura de las estelas con la elevación del lóbulo; Límite A / Límite B con sus azimuts |
 | Antena | Boom en λ, ganancia, lóbulo horizontal / vertical; si Hot A y Hot B están dentro o fuera del lóbulo |
@@ -33,7 +33,7 @@ Las estaciones, la banda, la altura de las estelas, la elevación del lóbulo, e
 
 ## Locator y trayecto
 
-Locator (4, 6 u 8 caracteres; centro de la cuadrícula, sistema Maidenhead de la IARU) [14]. Distancia, azimut y punto medio con fórmulas de círculo máximo sobre una esfera de radio **r = 6372,7955 km** (artículo Cerrotta–Sartori) [15–16]. Los cálculos que dependen de la hora se refieren al **punto medio**, porque la mejor hora puede diferir hasta 1,5 horas entre los dos extremos (SM6FHZ).
+Locator (4, 6 u 8 caracteres; centro de la cuadrícula, sistema Maidenhead de la IARU) [14]. Distancia, azimut y punto medio sobre la geodésica del elipsoide **WGS84** con el método de Karney (desde la versión 1.8.24; antes, esfera de radio r = 6372,7955 km del artículo Cerrotta–Sartori [15–16]). Los cálculos que dependen de la hora se refieren al **punto medio**, porque la mejor hora puede diferir hasta 1,5 horas entre los dos extremos (SM6FHZ).
 
 ## Elevación de la antena
 

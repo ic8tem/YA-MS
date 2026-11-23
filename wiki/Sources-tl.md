@@ -33,6 +33,8 @@ Inililista ng tab na **Mga sanggunian** ang bawat akdang pinagbatayan ng YA-MS, 
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (mga Yagi ng VK3AUU ni David Tanner) | Mga simulation sa NEC na ginamit para beripikahin ang kurba ng gain at itama ang pahalang na lobe (0.93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Mga tantiya ng gain para sa mga bersyong VK3AUU, WA2PHW at DJ9BV |
 | J. **Meeus** – *Astronomical Algorithms*, 2nd ed., Willmann-Bell, 1998 | Julian day, sidereal time, solar longitude, azimuth/elebasyon (nasa manwal) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84 ellipsoid (mga posisyon ng mga istasyon at bakas) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Distansya, azimuth at gitnang punto sa geodesic |
 
 ## DATOS NG MGA SHOWER
 

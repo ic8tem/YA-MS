@@ -33,6 +33,8 @@ La linguetta **Fonti** elenca tutti i lavori su cui si basa YA-MS, raggruppati c
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (Yagi VK3AUU di David Tanner) | Simulazioni NEC usate per verificare la curva del guadagno e correggere il lobo orizzontale (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Stime del guadagno per le varianti VK3AUU, WA2PHW e DJ9BV |
 | J. **Meeus** – *Astronomical Algorithms*, 2ª ed., Willmann-Bell, 1998 | Giorno giuliano, tempo siderale, longitudine solare, azimut/elevazione (nel manuale) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | Ellissoide WGS84 (posizioni delle stazioni e delle scie) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Distanza, azimut e punto medio sulla geodetica |
 
 ## DATI DEGLI SCIAMI
 

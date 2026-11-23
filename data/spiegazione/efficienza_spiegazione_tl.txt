@@ -20,8 +20,8 @@ TAG|RILIEVO|Plot ng Collm noong 5/11/2026: moda 89.5 km, mean 88.6 km, standard 
 TAG|RILIEVO|Ang DJ5HG [18] at ang QTFGUI [17] ay gumagamit ng nakapirming taas na 102 km; mas pinipili ng programa ang halagang sinukat ng radar. Ang Rekomendasyon ITU-R P.843 [24] ay nagbibigay ng karaniwang taas na h = 124 − 17·log10(f) km: mga 97 km sa 36.2 MHz at 87 km sa 144 MHz, kaayon ng moda ng Collm (89.5 km noong 5/11/2026).
 H1|3. Ang heometriya ng landas
 H2|3.1 Daigdig, mga istasyon at gitnang punto
-TAG|FONTE|Pabilog na Daigdig na may radius na r = 6372.7955 km [1].
-TAG|SCELTA|Ang landas ay palaging ang tunay na landas sa pagitan ng locator ng istasyon at ng locator ng DX na istasyon. Kinakalkula ang distansiya, azimuth at gitnang punto gamit ang mga pormula ng great circle.
+TAG|FONTE|WGS84 ellipsoid [37]: semi-major axis na 6378.137 km, flattening na 1/298.257223563. Para sa mga pormulang pabilog (elevation mula sa artikulo, abot, refraction) ginagamit ng programa ang karaniwang radius ng ellipsoid, r = 6371.0088 km; hanggang bersyon 1.8.23 ginamit nito ang globo na may radius na 6372.7955 km [1].
+TAG|SCELTA|Ang landas ay palaging ang tunay na landas sa pagitan ng locator ng istasyon at ng locator ng DX na istasyon. Mula sa bersyon 1.8.24, kinakalkula ang distansya, azimuth at gitnang punto sa geodesic ng ellipsoid gamit ang paraan ni Karney [38]: kumpara sa globo, nagbabago ang mga distansya nang hindi hihigit sa 0.5% at ang mga azimuth nang ilang ikasampu ng digri.
 TAG|FONTE|Ang mga kalkulasyong nakadepende sa oras ay tumutukoy sa gitnang punto ng landas: maaaring magkaiba nang hanggang 1.5 oras ang pinakamagandang oras sa dalawang dulo (SM6FHZ [4]).
 H2|3.2 Elevation ng antena
 TAG|FONTE|Kinakalkula ang elevation patungo sa punto ng repleksiyon gamit ang pormula ng artikulo (Larawan 7) [1], kung saan x = distansiya / r, H ang taas ng bakas, h ang taas ng istasyon:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - mga talaan ng gain ng Yagi para sa 50, 144 at 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (may kopya sa qsl.net/dk7zb at sm2cew.com).
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

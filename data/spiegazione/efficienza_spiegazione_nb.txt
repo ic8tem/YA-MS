@@ -20,8 +20,8 @@ TAG|RILIEVO|Collm-diagrammet fra 5/11/2026: typetall 89,5 km, middelverdi 88,6 k
 TAG|RILIEVO|DJ5HG [18] og QTFGUI [17] bruker en fast høyde på 102 km; programmet foretrekker verdien målt av radaren. Anbefaling ITU-R P.843 [24] gir en middelhøyde h = 124 − 17·log10(f) km: omtrent 97 km ved 36,2 MHz og 87 km ved 144 MHz, i tråd med typetallet fra Collm (89,5 km den 5/11/2026).
 H1|3. Strekningens geometri
 H2|3.1 Jorden, stasjonene og midtpunktet
-TAG|FONTE|Kuleformet jord med radius r = 6372,7955 km [1].
-TAG|SCELTA|Strekningen er alltid den virkelige mellom stasjonens lokator og motstasjonens. Avstand, asimut og midtpunkt beregnes med storsirkelformlene.
+TAG|FONTE|WGS84-ellipsoiden [37]: store halvakse 6378,137 km, avflating 1/298,257223563. Til de sfæriske formlene (elevasjon fra artikkelen, rekkevidde, refraksjon) bruker programmet ellipsoidens middelradius, r = 6371,0088 km; til og med versjon 1.8.23 brukte det kulen med radius 6372,7955 km [1].
+TAG|SCELTA|Strekningen er alltid den virkelige mellom stasjonens lokator og motstasjonens. Fra versjon 1.8.24 beregnes avstand, asimut og midtpunkt på ellipsoidens geodet med Karneys metode [38]: sammenlignet med kulen endres avstandene høyst 0,5 % og asimutene noen tideler av en grad.
 TAG|FONTE|Tidsavhengige beregninger gjelder strekningens midtpunkt: mellom de to endene kan beste time avvike med opptil 1,5 timer (SM6FHZ [4]).
 H2|3.2 Antenneelevasjon
 TAG|FONTE|Elevasjonen mot refleksjonspunktet beregnes med artikkelens formel (Bilde 7) [1], med x = avstand / r, H sporets høyde, h stasjonens høyde:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - Yagi-forsterkningstabeller for 50, 144 og 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (kopier på qsl.net/dk7zb og sm2cew.com).
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

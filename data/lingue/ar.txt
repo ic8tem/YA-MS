@@ -163,7 +163,7 @@ Formato tabella del bollettino ({0}/{1}): se il file contiene piu' osservatori v
 Foto	صورة
 Frequenza di arrivo MHz	التردد المستهدف MHz
 G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook	G3WZT، DH8BQA، geekshed.co.uk، دليل WSJT-X، WB2FKO (النبضات)، IU6GIR (النشاط على 143.050 MHz)، IARU Region 1 VHF Handbook
-GEOMETRIA DELLA TRATTA (Terra sferica, R = 6372,7955 km)	هندسة المسار (أرض كروية، R = 6372.7955 km)
+GEOMETRIA DELLA TRATTA (ellissoide WGS84)	هندسة المسار (المجسم الإهليلجي WGS84)
 GMN e CMOR alle {0} UTC: {1} errori ({2})	GMN وCMOR عند {0} UTC: ‏{1} أخطاء ({2})
 GMN e CMOR controllati alle {0} UTC ({1} file nuovi). Dati GMN: CC BY 4.0.	تم فحص GMN وCMOR عند {0} UTC ‏({1} ملفات جديدة). بيانات GMN: ‏CC BY 4.0.
 GRAVES in linea diretta: az {0:F0}°	GRAVES في خط مباشر: السمت {0:F0}°
@@ -919,3 +919,5 @@ I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	عدّات HR
 Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	العدّ الآلي المباشر للمنارات اليابانية على 53 MHz.
 I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	مقاطع الحرارة والرطوبة للانكسار التروبوسفيري الاختياري.
 La formula della rifrattività e l'atmosfera di riferimento.	صيغة الانكسارية والغلاف الجوي المرجعي.
+L'ellissoide della Terra (semiasse e schiacciamento).	المجسم الإهليلجي للأرض (نصف المحور الأكبر والتفلطح).
+Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	المسافات والسموت ونقاط المسار على الخط الجيوديسي للمجسم الإهليلجي WGS84.

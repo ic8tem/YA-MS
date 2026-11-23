@@ -50,8 +50,8 @@ tag("RILIEVO", "DJ5HG [18] e QTFGUI [17] usano una quota fissa di 102 km; il pro
 
 h1("3. La geometria della tratta")
 h2("3.1 Terra, stazioni e punto medio")
-tag("FONTE", "Terra sferica di raggio r = 6372,7955 km [1].")
-tag("SCELTA", "La tratta è sempre quella reale tra il locator della stazione e quello del corrispondente. Distanza, azimut e punto medio si calcolano con le formule del cerchio massimo.")
+tag("FONTE", "Ellissoide WGS84 [37]: semiasse 6378,137 km, schiacciamento 1/298,257223563. Per le formule sferiche (elevazione dell'articolo, portata, rifrazione) il programma usa il raggio medio dell'ellissoide, r = 6371,0088 km; fino alla versione 1.8.23 usava la sfera di raggio 6372,7955 km [1].")
+tag("SCELTA", "La tratta è sempre quella reale tra il locator della stazione e quello del corrispondente. Dalla versione 1.8.24 distanza, azimut e punto medio si calcolano sulla geodetica dell'ellissoide con il metodo di Karney [38]: rispetto alla sfera le distanze cambiano al massimo dello 0,5% e gli azimut di qualche decimo di grado.")
 tag("FONTE", "I calcoli che dipendono dall'ora si riferiscono al punto medio della tratta: tra le due estremità l'ora migliore può differire fino a 1,5 ore (SM6FHZ [4]).")
 h2("3.2 Elevazione d'antenna")
 tag("FONTE", "L'elevazione verso il punto di riflessione si calcola con la formula dell'articolo (Immagine 7) [1], con x = distanza / r, H quota della scia, h quota della stazione:")
@@ -219,6 +219,8 @@ SOURCES = [
  "M. Bundscherer - \"Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon\", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.",
  "HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.",
  "L. Edwards VE7BQH - tabelle dei guadagni delle Yagi per 50, 144 e 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (copie su qsl.net/dk7zb e sm2cew.com).",
+ "National Geospatial-Intelligence Agency - \"Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems\", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).",
+ "C. F. F. Karney - \"Algorithms for geodesics\", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT)."
 ]
 
 TAGCOL = {"FONTE": (0x38, 0xBD, 0xF8), "RILIEVO": (0x86, 0xEF, 0xAC), "SCELTA": (0xFB, 0x92, 0x3C)}

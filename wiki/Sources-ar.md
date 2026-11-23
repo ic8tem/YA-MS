@@ -33,6 +33,8 @@
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*؛ *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*؛ *70-CM Yagi Stacks Part 2* (هوائيات VK3AUU لـ David Tanner) | محاكاة NEC المستخدمة للتحقق من منحنى الكسب وتصحيح الفص الأفقي (0.93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | تقديرات الكسب لنسخ VK3AUU وWA2PHW وDJ9BV |
 | J. **Meeus** – *Astronomical Algorithms*، الطبعة الثانية، Willmann-Bell، 1998 | اليوم اليولياني، الزمن النجمي، خط الطول الشمسي، السمت/زاوية الارتفاع (في الدليل) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | المجسم الإهليلجي WGS84 (مواقع المحطات والآثار) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | المسافة والسمت ونقطة المنتصف على الخط الجيوديسي |
 
 ## بيانات الزخات
 

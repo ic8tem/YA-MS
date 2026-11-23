@@ -163,7 +163,7 @@ Formato tabella del bollettino ({0}/{1}): se il file contiene piu' osservatori v
 Foto	फ़ोटो
 Frequenza di arrivo MHz	लक्ष्य आवृत्ति MHz
 G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook	G3WZT, DH8BQA, geekshed.co.uk, WSJT-X मैनुअल, WB2FKO (पिंग), IU6GIR (143.050 MHz गतिविधि), IARU क्षेत्र 1 VHF हैंडबुक
-GEOMETRIA DELLA TRATTA (Terra sferica, R = 6372,7955 km)	पथ ज्यामिति (गोलाकार पृथ्वी, R = 6372.7955 km)
+GEOMETRIA DELLA TRATTA (ellissoide WGS84)	पथ ज्यामिति (WGS84 दीर्घवृत्ताभ)
 GMN e CMOR alle {0} UTC: {1} errori ({2})	GMN और CMOR {0} UTC पर: {1} त्रुटियाँ ({2})
 GMN e CMOR controllati alle {0} UTC ({1} file nuovi). Dati GMN: CC BY 4.0.	GMN और CMOR {0} UTC पर जाँचे गए ({1} नई फ़ाइलें)। GMN डेटा: CC BY 4.0।
 GRAVES in linea diretta: az {0:F0}°	GRAVES सीधा पथ: az {0:F0}°
@@ -919,3 +919,5 @@ I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	जापा�
 Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	53 MHz पर जापानी बीकनों की लाइव स्वचालित गिनती।
 I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	वैकल्पिक क्षोभमंडलीय अपवर्तन के लिए तापमान और आर्द्रता प्रोफ़ाइल।
 La formula della rifrattività e l'atmosfera di riferimento.	अपवर्तनांक का सूत्र और संदर्भ वायुमंडल।
+L'ellissoide della Terra (semiasse e schiacciamento).	पृथ्वी का दीर्घवृत्ताभ (अर्ध-दीर्घ अक्ष और चपटापन)।
+Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	WGS84 दीर्घवृत्ताभ की जियोडेसिक पर दूरियाँ, दिगंश और पथ के बिंदु।

@@ -33,6 +33,8 @@
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*؛ *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*؛ *70-CM Yagi Stacks Part 2* (David Tanner کے VK3AUU Yagi) | گین منحنی کی جانچ اور افقی لوب کی تصحیح کے لیے NEC سمولیشن (0.93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | VK3AUU، WA2PHW اور DJ9BV اقسام کے گین کے تخمینے |
 | J. **Meeus** – *Astronomical Algorithms*، 2nd ed.، Willmann-Bell، 1998 | جولین دن، نجمی وقت، شمسی طول البلد، سمتیہ/ارتفاع (دستی کتابچے میں) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84 بیضوی کرہ (اسٹیشنوں اور لکیروں کے مقامات) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | جیوڈیسک پر فاصلہ، سمت اور درمیانی نقطہ |
 
 ## شہابی بارشوں کا ڈیٹا
 

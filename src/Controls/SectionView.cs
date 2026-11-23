@@ -1,4 +1,4 @@
-// YA-MS - sezione: le scie piu' probabili viste dall'antenna puntata verso il corrispondente
+﻿// YA-MS - sezione: le scie piu' probabili viste dall'antenna puntata verso il corrispondente
 //
 // Asse orizzontale = azimut rispetto alla direzione del corrispondente (A a sinistra, B a destra),
 // asse verticale = elevazione vista dalla stazione. Ogni scia e' un segmento centrato nel punto di
@@ -61,7 +61,7 @@ namespace YAMS
         // azimut (relativo al corrispondente) ed elevazione di un punto ECEF visto dalla stazione
         bool View(Vec3 q, out double daz, out double el)
         {
-            Vec3 pa = Astro.Vec(Model.Home, Astro.R + Model.HomeAltKm);
+            Vec3 pa = Astro.Ecef(Model.Home, Model.HomeAltKm);
             Vec3 r = q - pa;
             double az;
             Astro.AltAz(Model.Home, r.Unit, out az, out el);

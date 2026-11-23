@@ -33,6 +33,8 @@
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2*(David Tanner의 VK3AUU 야기) | 이득 곡선 검증과 수평 로브 보정(0.93 × Kraus)에 사용한 NEC 시뮬레이션 |
 | John Drew **VK5DJ** – Yagi Calculator | VK3AUU, WA2PHW, DJ9BV 변형의 이득 추정 |
 | J. **Meeus** – *Astronomical Algorithms*, 2nd ed., Willmann-Bell, 1998 | 율리우스일, 항성시, 태양 황경, 방위/고도(매뉴얼에 수록) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84 타원체(국과 유성흔의 위치) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | 측지선 위의 거리, 방위각, 중간점 |
 
 ## 유성우 데이터
 

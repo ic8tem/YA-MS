@@ -33,6 +33,8 @@
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (David Tanner の VK3AUU 八木) | 利得曲線の検証と水平ビーム幅の補正 (0.93 × Kraus) に用いた NEC シミュレーション |
 | John Drew **VK5DJ** – Yagi Calculator | VK3AUU、WA2PHW、DJ9BV 各型の利得推定 |
 | J. **Meeus** – *Astronomical Algorithms*、第 2 版、Willmann-Bell、1998 | ユリウス日、恒星時、太陽黄経、方位/仰角 (マニュアル内) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84 楕円体 (局と流星痕の位置) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | 測地線上の距離、方位角、中間点 |
 
 ## 流星群データ
 

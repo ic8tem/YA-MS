@@ -23,7 +23,7 @@ Ang mga istasyon, banda, taas ng bakas, elebasyon ng lobe, boom at distansiya ng
 
 | Seksiyon | Nilalaman |
 |---|---|
-| **HEOMETRIYA NG LANDAS (pabilog na Daigdig, R = 6372.7955 km)** | Istasyon at DX kasama ang taas; distansiya, azimuth at pabalik na azimuth; gitnang punto (locator at coordinates); taas ng bakas (*<- moda na sinukat ng radar ng Collm* kapag kinuha mula sa radar); elebasyon ng antenna patungo sa gitnang punto |
+| **HEOMETRIYA NG LANDAS (WGS84 ellipsoid)** | Istasyon at DX kasama ang taas; distansiya, azimuth at pabalik na azimuth; gitnang punto (locator at coordinates); taas ng bakas (*<- moda na sinukat ng radar ng Collm* kapag kinuha mula sa radar); elebasyon ng antenna patungo sa gitnang punto |
 | **HOT A / HOT B (klasikong hot spot, para sa pagtutok ng antenna)** | Para sa bawat isa: locator, azimuth mula sa iyo at offset mula sa tuwirang landas, azimuth mula sa DX, distansiya, elebasyon |
 | **MGA HANGGANAN NG KARANIWANG SONA** | Abot sa taas ng bakas na may elebasyon ng lobe; Hangganan A / Hangganan B kasama ang mga azimuth |
 | Antenna | Boom sa λ, gain, pahalang / patayong lobe; kung nasa loob o labas ng lobe ang Hot A at Hot B |
@@ -33,7 +33,7 @@ Ang mga istasyon, banda, taas ng bakas, elebasyon ng lobe, boom at distansiya ng
 
 ## Locator at landas
 
-Locator (4, 6 o 8 character; gitna ng grid square, sistemang Maidenhead ng IARU) [14]. Distansiya, azimuth at gitnang punto gamit ang mga pormulang great-circle sa isang globo na may radius na **r = 6372.7955 km** (artikulong Cerrotta–Sartori) [15–16]. Ang mga kalkulasyong nakadepende sa oras ay tumutukoy sa **gitnang punto**, dahil maaaring magkaiba nang hanggang 1.5 oras ang pinakamahusay na oras sa dalawang dulo (SM6FHZ).
+Locator (4, 6 o 8 character; gitna ng grid square, sistemang Maidenhead ng IARU) [14]. Distansya, azimuth at gitnang punto sa geodesic ng **WGS84** ellipsoid gamit ang paraan ni Karney (mula sa bersyon 1.8.24; dati, globo na may radius na r = 6372.7955 km mula sa artikulo nina Cerrotta–Sartori [15–16]). Ang mga kalkulasyong nakadepende sa oras ay tumutukoy sa **gitnang punto**, dahil maaaring magkaiba nang hanggang 1.5 oras ang pinakamahusay na oras sa dalawang dulo (SM6FHZ).
 
 ## Elebasyon ng antenna
 

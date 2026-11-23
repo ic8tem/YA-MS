@@ -20,8 +20,8 @@ TAG|RILIEVO|2026年11月5日の Collm のグラフ: 最頻値 89.5 km、平均 8
 TAG|RILIEVO|DJ5HG [18] と QTFGUI [17] は 102 km の固定高度を用いますが、本プログラムはレーダーの実測値を優先します。ITU-R 勧告 P.843 [24] は平均高度 h = 124 − 17·log10(f) km を与えます: 36.2 MHz で約 97 km、144 MHz で約 87 km となり、Collm の最頻値 (2026年11月5日に 89.5 km) と整合します。
 H1|3. パスの幾何学
 H2|3.1 地球、局、中間点
-TAG|FONTE|半径 r = 6372.7955 km の球形の地球 [1]。
-TAG|SCELTA|パスは常に、自局のロケーターと相手局のロケーターの間の実際のパスです。距離、方位角、中間点は大円の式で計算します。
+TAG|FONTE|WGS84 楕円体 [37]: 長半径 6378.137 km、扁平率 1/298.257223563。球面の式 (論文の仰角、到達距離、屈折) には楕円体の平均半径 r = 6371.0088 km を使う。バージョン 1.8.23 までは半径 6372.7955 km の球を使っていた [1]。
+TAG|SCELTA|パスは常に、自局のロケーターと相手局のロケーターの間の実際のパスです。バージョン 1.8.24 から、距離、方位角、中間点は Karney の方法 [38] により楕円体の測地線上で計算する。球と比べて距離の変化は最大 0.5%、方位角の変化は数十分の一度である。
 TAG|FONTE|時刻に依存する計算はパスの中間点を基準とします: 両端の間で最良の時刻が最大 1.5 時間ずれることがあるためです (SM6FHZ [4])。
 H2|3.2 アンテナ仰角
 TAG|FONTE|反射点への仰角は記事の式 (図 7) [1] で計算します。x = 距離 / r、H は流星痕の高度、h は局の高度:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - 50、144、432 MHz の八木の利得表: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (qsl.net/dk7zb と sm2cew.com に写し)。
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

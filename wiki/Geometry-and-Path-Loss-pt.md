@@ -23,7 +23,7 @@ As estações, a banda, a altitude dos rastos, a elevação do lóbulo, o boom e
 
 | Secção | Conteúdo |
 |---|---|
-| **GEOMETRIA DO PERCURSO (Terra esférica, R = 6372,7955 km)** | Estação e DX com as suas altitudes; distância, azimute e azimute inverso; ponto médio (locator e coordenadas); altitude dos rastos (*<- moda medida pelo radar de Collm* quando obtida do radar); elevação da antena em direção ao ponto médio |
+| **GEOMETRIA DO PERCURSO (elipsoide WGS84)** | Estação e DX com as suas altitudes; distância, azimute e azimute inverso; ponto médio (locator e coordenadas); altitude dos rastos (*<- moda medida pelo radar de Collm* quando obtida do radar); elevação da antena em direção ao ponto médio |
 | **HOT A / HOT B (hot spots clássicos, para o apontamento da antena)** | Para cada um: locator, azimute a partir da sua estação e desvio em relação ao percurso direto, azimute a partir do DX, distância, elevação |
 | **LIMITES DA ZONA COMUM** | Alcance à altitude dos rastos com a elevação do lóbulo; Limite A / Limite B com os respetivos azimutes |
 | Antena | Boom em λ, ganho, lóbulo horizontal / vertical; se Hot A e Hot B estão dentro ou fora do lóbulo |
@@ -33,7 +33,7 @@ As estações, a banda, a altitude dos rastos, a elevação do lóbulo, o boom e
 
 ## Locator e percurso
 
-Locator (4, 6 ou 8 caracteres; centro do quadrado, sistema Maidenhead da IARU) [14]. Distância, azimute e ponto médio com fórmulas de círculo máximo numa esfera de raio **r = 6372,7955 km** (artigo Cerrotta–Sartori) [15–16]. Os cálculos que dependem da hora referem-se ao **ponto médio**, porque a melhor hora pode diferir até 1,5 horas entre as duas extremidades (SM6FHZ).
+Locator (4, 6 ou 8 caracteres; centro do quadrado, sistema Maidenhead da IARU) [14]. Distância, azimute e ponto médio sobre a geodésica do elipsoide **WGS84** com o método de Karney (a partir da versão 1.8.24; antes, esfera de raio r = 6372,7955 km do artigo Cerrotta–Sartori [15–16]). Os cálculos que dependem da hora referem-se ao **ponto médio**, porque a melhor hora pode diferir até 1,5 horas entre as duas extremidades (SM6FHZ).
 
 ## Elevação da antena
 

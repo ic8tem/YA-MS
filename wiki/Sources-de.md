@@ -33,6 +33,8 @@ Der Reiter **Quellen** listet alle Werke auf, auf denen YA-MS aufbaut, gruppiert
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (Yagis VK3AUU von David Tanner) | NEC-Simulationen zur Prüfung der Gewinnkurve und Korrektur der horizontalen Keule (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Gewinnschätzungen für die Varianten VK3AUU, WA2PHW und DJ9BV |
 | J. **Meeus** – *Astronomical Algorithms*, 2. Aufl., Willmann-Bell, 1998 | Julianisches Datum, Sternzeit, Sonnenlänge, Azimut/Elevation (im Handbuch) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84-Ellipsoid (Positionen der Stationen und Spuren) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Entfernung, Azimut und Mittelpunkt auf der Geodäte |
 
 ## METEORSTROM-DATEN
 

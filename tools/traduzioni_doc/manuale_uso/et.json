@@ -219,7 +219,6 @@
  "16. Contatti": "16. Kontaktid",
  "YA-MS è un programma gratuito per i radioamatori, a cura di Costantino IC8TEM (Capri). Segnalazioni, proposte e dati di confronto sono benvenuti: indica il sistema operativo, la versione di YA-MS e che cosa hai fatto. Codice e release: github.com/ic8tem/YA-MS. Contatti: ccerrotta@gmail.com, ic8tem@gmail.com, www.qrz.com/db/ic8tem. Chi vuole sostenere il lavoro può farlo su ko-fi.com/ic8tem.": "YA-MS on tasuta programm raadioamatööridele, mille on koostanud Costantino IC8TEM (Capri). Veateated, ettepanekud ja võrdlusandmed on teretulnud: märgi operatsioonisüsteem, YA-MS-i versioon ja mida sa tegid. Kood ja väljalasked: github.com/ic8tem/YA-MS. Kontaktid: ccerrotta@gmail.com, ic8tem@gmail.com, www.qrz.com/db/ic8tem. Kes soovib tööd toetada, saab seda teha aadressil ko-fi.com/ic8tem.",
  "Manuale d'uso di YA-MS": "YA-MS-i kasutusjuhend",
- "Versione 1.8.23 - a cura di Costantino IC8TEM - novembre 2026": "Versioon 1.8.23 - koostanud Costantino IC8TEM - november 2026",
  "PROCEDURA": "TOIMING",
  "NOTA": "MÄRKUS",
  "ATTENZIONE": "TÄHELEPANU",
@@ -284,5 +283,6 @@
  "Giappone: conteggi HRO mensili (IPRMO)...: apre la finestra con i conteggi orari a mano degli osservatori giapponesi dei file mensili RMOJ. Scegli il mese e l'osservatore; Aggiorna da IPRMO scarica i mesi nuovi. Il primo grafico è la media del mese per ora UTC traslata alla tua frequenza, il secondo i totali giornalieri.": "Jaapan: igakuised HRO-loendused (IPRMO)...: avab akna Jaapani vaatlejate käsitsi tehtud tunniloendustega RMOJ-kuufailidest. Vali kuu ja vaatleja; Uuenda IPRMO-st laadib uued kuud. Esimene graafik on kuu keskmine UTC-tunni kaupa, teisendatud sinu sagedusele, teine päevasummad.",
  "I conteggi automatici di Ogaki sono più alti di quelli a mano: sono valori relativi. Per tararli confrontali con i file mensili RMOJ dello stesso faro nella finestra del Giappone.": "Ogaki automaatloendused on käsitsi loendustest suuremad: need on suhtelised väärtused. Kalibreerimiseks võrdle neid Jaapani aknas sama majaka RMOJ-kuufailidega.",
  "radar/rmoj/: file mensili RMOJ del Giappone; radar/hro_ogaki_*.csv: conteggi di Ogaki degli ultimi 3 giorni; radar/gfs_*.json: profili GFS per la rifrazione (validi 3 ore).": "radar/rmoj/: RMOJ-kuufailid Jaapanist; radar/hro_ogaki_*.csv: Ogaki loendused viimase 3 päeva kohta; radar/gfs_*.json: GFS-profiilid refraktsiooni jaoks (kehtivad 3 tundi).",
- "rifrazione_gfs (0 = spenta, 1 = accesa), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: rifrazione e fonti del Giappone.": "rifrazione_gfs (0 = väljas, 1 = sees), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: refraktsioon ja Jaapani allikad."
+ "rifrazione_gfs (0 = spenta, 1 = accesa), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: rifrazione e fonti del Giappone.": "rifrazione_gfs (0 = väljas, 1 = sees), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: refraktsioon ja Jaapani allikad.",
+ "Versione 1.8.24 - a cura di Costantino IC8TEM - novembre 2026": "Versioon 1.8.24 - koostanud Costantino IC8TEM - november 2026"
 }

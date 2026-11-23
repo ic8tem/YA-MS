@@ -33,6 +33,8 @@ Fila **Surse** enumeră fiecare lucrare pe care se bazează YA-MS, grupate ca ma
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (antenele Yagi VK3AUU de David Tanner) | Simulări NEC folosite pentru a verifica curba câștigului și a corecta lobul orizontal (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Estimări ale câștigului pentru variantele VK3AUU, WA2PHW și DJ9BV |
 | J. **Meeus** – *Astronomical Algorithms*, ed. a 2-a, Willmann-Bell, 1998 | Ziua iuliană, timpul sideral, longitudinea solară, azimut/elevație (în manual) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | Elipsoidul WGS84 (pozițiile stațiilor și ale urmelor) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Distanța, azimutul și punctul de mijloc pe geodezică |
 
 ## DATE DESPRE ROIURI
 

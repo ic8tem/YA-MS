@@ -23,7 +23,7 @@ Stazioni, banda, quota delle scie, elevazione del lobo, boom e distanza degli ho
 
 | Sezione | Contenuto |
 |---|---|
-| **GEOMETRIA DELLA TRATTA (Terra sferica, R = 6372,7955 km)** | Stazione e corrispondente con le quote; distanza, azimut e azimut inverso; punto medio (locator e coordinate); quota delle scie (*<- moda misurata dal radar Collm* quando è presa dal radar); elevazione d'antenna verso il punto medio |
+| **GEOMETRIA DELLA TRATTA (ellissoide WGS84)** | Stazione e corrispondente con le quote; distanza, azimut e azimut inverso; punto medio (locator e coordinate); quota delle scie (*<- moda misurata dal radar Collm* quando è presa dal radar); elevazione d'antenna verso il punto medio |
 | **HOT A / HOT B (hot spot classici, per il puntamento d'antenna)** | Per ciascuno: locator, azimut da te e scostamento dalla tratta diretta, azimut dal corrispondente, distanza, elevazione |
 | **LIMITI DELLA ZONA COMUNE** | Portata alla quota delle scie con l'elevazione del lobo; Limite A / Limite B con gli azimut |
 | Antenna | Boom in λ, guadagno, lobo orizzontale / verticale; se Hot A e Hot B sono dentro o fuori dal lobo |
@@ -33,7 +33,7 @@ Stazioni, banda, quota delle scie, elevazione del lobo, boom e distanza degli ho
 
 ## Locator e tratta
 
-Locator (4, 6 o 8 caratteri; centro del quadrato, sistema IARU Maidenhead) [14]. Distanza, azimut e punto medio con le formule ortodromiche su una sfera di raggio **r = 6372,7955 km** (articolo Cerrotta–Sartori) [15–16]. I calcoli che dipendono dall'ora si riferiscono al **punto medio**, perché l'ora migliore può differire fino a 1,5 ore tra i due estremi (SM6FHZ).
+Locator (4, 6 o 8 caratteri; centro del quadrato, sistema IARU Maidenhead) [14]. Distanza, azimut e punto medio sulla geodetica dell'ellissoide **WGS84** con il metodo di Karney (dalla versione 1.8.24; prima sfera di raggio r = 6372,7955 km dell'articolo Cerrotta–Sartori [15–16]). I calcoli che dipendono dall'ora si riferiscono al **punto medio**, perché l'ora migliore può differire fino a 1,5 ore tra i due estremi (SM6FHZ).
 
 ## Elevazione d'antenna
 

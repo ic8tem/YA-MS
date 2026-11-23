@@ -23,7 +23,7 @@ Stacijas, josla, sliežu augstums, ziedlapiņas elevācija, traverse un hot spot
 
 | Sadaļa | Saturs |
 |---|---|
-| **TRASES ĢEOMETRIJA (sfēriska Zeme, R = 6372,7955 km)** | Stacija un DX ar augstumiem; attālums, azimuts un pretējais azimuts; viduspunkts (lokators un koordinātas); sliežu augstums (*<- Collm radara izmērītā moda*, ja ņemts no radara); antenas elevācija uz viduspunktu |
+| **TRASES ĢEOMETRIJA (WGS84 elipsoīds)** | Stacija un DX ar augstumiem; attālums, azimuts un pretējais azimuts; viduspunkts (lokators un koordinātas); sliežu augstums (*<- Collm radara izmērītā moda*, ja ņemts no radara); antenas elevācija uz viduspunktu |
 | **HOT A / HOT B (klasiskie hot spot, antenas tēmēšanai)** | Katram: lokators, azimuts no tevis un nobīde no tiešās trases, azimuts no DX, attālums, elevācija |
 | **KOPĒJĀS ZONAS ROBEŽAS** | Sniedzamība sliežu augstumā ar ziedlapiņas elevāciju; Robeža A / Robeža B ar azimutiem |
 | Antena | Traverse λ, pastiprinājums, horizontālā / vertikālā ziedlapiņa; vai Hot A un Hot B ir ziedlapiņā vai ārpus tās |
@@ -33,7 +33,7 @@ Stacijas, josla, sliežu augstums, ziedlapiņas elevācija, traverse un hot spot
 
 ## Lokators un trase
 
-Lokators (4, 6 vai 8 rakstzīmes; kvadrāta centrs, IARU Maidenhead sistēma) [14]. Attālums, azimuts un viduspunkts ar lielā loka formulām uz sfēras ar rādiusu **r = 6372,7955 km** (Cerrotta–Sartori raksts) [15–16]. No laika atkarīgie aprēķini attiecas uz **viduspunktu**, jo labākais laiks abos galos var atšķirties līdz pat 1,5 stundām (SM6FHZ).
+Lokators (4, 6 vai 8 rakstzīmes; kvadrāta centrs, IARU Maidenhead sistēma) [14]. Attālums, azimuts un viduspunkts uz **WGS84** elipsoīda ģeodēziskās līnijas ar Karneja metodi (no versijas 1.8.24; agrāk sfēra ar rādiusu r = 6372,7955 km no Cerrotta–Sartori raksta [15–16]). No laika atkarīgie aprēķini attiecas uz **viduspunktu**, jo labākais laiks abos galos var atšķirties līdz pat 1,5 stundām (SM6FHZ).
 
 ## Antenas elevācija
 

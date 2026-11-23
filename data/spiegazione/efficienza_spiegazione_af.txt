@@ -20,8 +20,8 @@ TAG|RILIEVO|Collm-grafiek van 5/11/2026: modus 89,5 km, gemiddelde 88,6 km, stan
 TAG|RILIEVO|DJ5HG [18] en QTFGUI [17] gebruik 'n vaste hoogte van 102 km; die program verkies die data wat die radar meet. Aanbeveling ITU-R P.843 [24] gee 'n gemiddelde hoogte h = 124 − 17·log10(f) km: ongeveer 97 km by 36,2 MHz en 87 km by 144 MHz, in lyn met die Collm-modus (89,5 km op 5/11/2026).
 H1|3. Die geometrie van die pad
 H2|3.1 Aarde, stasies en middelpunt
-TAG|FONTE|Sferiese Aarde met radius r = 6372,7955 km [1].
-TAG|SCELTA|Die pad is altyd die werklike een tussen die lokator van die stasie en dié van die DX-stasie. Afstand, azimut en middelpunt word met die grootsirkelformules bereken.
+TAG|FONTE|WGS84-ellipsoïed [37]: halwe hoofas 6378,137 km, afplatting 1/298,257223563. Vir die sferiese formules (elevasie uit die artikel, reikwydte, refraksie) gebruik die program die gemiddelde radius van die ellipsoïed, r = 6371,0088 km; tot weergawe 1.8.23 het dit die sfeer met radius 6372,7955 km gebruik [1].
+TAG|SCELTA|Die pad is altyd die werklike een tussen die lokator van die stasie en dié van die DX-stasie. Vanaf weergawe 1.8.24 word afstand, azimut en middelpunt op die geodeet van die ellipsoïed met Karney se metode [38] bereken: vergeleke met die sfeer verander afstande hoogstens 0,5% en azimute 'n paar tiendes van 'n graad.
 TAG|FONTE|Die berekeninge wat van die tyd afhang, verwys na die middelpunt van die pad: tussen die twee eindpunte kan die beste uur tot 1,5 uur verskil (SM6FHZ [4]).
 H2|3.2 Antenna-elevasie
 TAG|FONTE|Die elevasie na die refleksiepunt word bereken met die formule van die artikel (Beeld 7) [1], met x = afstand / r, H hoogte van die spoor, h hoogte van die stasie:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - Yagi-winstabelle vir 50, 144 en 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (kopieë op qsl.net/dk7zb en sm2cew.com).
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

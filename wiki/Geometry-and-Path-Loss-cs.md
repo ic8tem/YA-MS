@@ -23,7 +23,7 @@ Stanice, pásmo, výška stop, elevace laloku, ráhno a vzdálenost hot spotu se
 
 | Oddíl | Obsah |
 |---|---|
-| **GEOMETRIE TRASY (kulová Země, R = 6372,7955 km)** | Stanice a DX s výškami; vzdálenost, azimut a zpětný azimut; střed trasy (lokátor a souřadnice); výška stop (*← modus naměřený radarem Collm*, pokud je převzata z radaru); elevace antény směrem ke středu trasy |
+| **GEOMETRIE TRASY (elipsoid WGS84)** | Stanice a DX s výškami; vzdálenost, azimut a zpětný azimut; střed trasy (lokátor a souřadnice); výška stop (*← modus naměřený radarem Collm*, pokud je převzata z radaru); elevace antény směrem ke středu trasy |
 | **HOT A / HOT B (klasické hot spoty pro nasměrování antény)** | Pro každý: lokátor, azimut od vás a odklon od přímé trasy, azimut od DX, vzdálenost, elevace |
 | **MEZE SPOLEČNÉ ZÓNY** | Dosah ve výšce stop při dané elevaci laloku; Mez A / Mez B s azimuty |
 | Anténa | Ráhno v λ, zisk, vodorovný / svislý lalok; zda Hot A a Hot B leží uvnitř, nebo vně laloku |
@@ -33,7 +33,7 @@ Stanice, pásmo, výška stop, elevace laloku, ráhno a vzdálenost hot spotu se
 
 ## Lokátor a trasa
 
-Lokátor (4, 6 nebo 8 znaků; střed čtverce, systém IARU Maidenhead) [14]. Vzdálenost, azimut a střed trasy se počítají vzorci pro hlavní kružnici na kouli o poloměru **r = 6372,7955 km** (článek Cerrotta–Sartori) [15–16]. Výpočty závislé na čase se vztahují ke **středu trasy**, protože nejlepší doba se mezi oběma konci může lišit až o 1,5 hodiny (SM6FHZ).
+Lokátor (4, 6 nebo 8 znaků; střed čtverce, systém IARU Maidenhead) [14]. Vzdálenost, azimut a střed trasy na geodetice elipsoidu **WGS84** Karneyho metodou (od verze 1.8.24; dříve koule o poloměru r = 6372,7955 km z článku Cerrotta–Sartori [15–16]). Výpočty závislé na čase se vztahují ke **středu trasy**, protože nejlepší doba se mezi oběma konci může lišit až o 1,5 hodiny (SM6FHZ).
 
 ## Elevace antény
 

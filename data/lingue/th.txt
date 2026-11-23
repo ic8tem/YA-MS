@@ -165,7 +165,7 @@ Formato tabella del bollettino ({0}/{1}): se il file contiene piu' osservatori v
 Foto	ภาพถ่าย
 Frequenza di arrivo MHz	ความถี่ปลายทาง MHz
 G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook	G3WZT, DH8BQA, geekshed.co.uk, คู่มือ WSJT-X, WB2FKO (pings), IU6GIR (กิจกรรมที่ 143.050 MHz), IARU Region 1 VHF Handbook
-GEOMETRIA DELLA TRATTA (Terra sferica, R = 6372,7955 km)	เรขาคณิตของเส้นทาง (โลกทรงกลม, R = 6372.7955 km)
+GEOMETRIA DELLA TRATTA (ellissoide WGS84)	เรขาคณิตของเส้นทาง (ทรงรี WGS84)
 GMN e CMOR alle {0} UTC: {1} errori ({2})	GMN และ CMOR เวลา {0} UTC: ข้อผิดพลาด {1} รายการ ({2})
 GMN e CMOR controllati alle {0} UTC ({1} file nuovi). Dati GMN: CC BY 4.0.	ตรวจสอบ GMN และ CMOR เมื่อ {0} UTC (ไฟล์ใหม่ {1} ไฟล์) ข้อมูล GMN: CC BY 4.0
 GRAVES in linea diretta: az {0:F0}°	GRAVES แนวตรง: az {0:F0}°
@@ -921,3 +921,5 @@ I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	ค่าน�
 Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	การนับอัตโนมัติแบบสดของบีคอนญี่ปุ่นที่ 53 MHz
 I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	โปรไฟล์อุณหภูมิและความชื้นสำหรับการหักเหในชั้นโทรโพสเฟียร์ (เลือกได้)
 La formula della rifrattività e l'atmosfera di riferimento.	สูตรค่าการหักเหและบรรยากาศอ้างอิง
+L'ellissoide della Terra (semiasse e schiacciamento).	ทรงรีของโลก (กึ่งแกนเอกและความแป้น)
+Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	ระยะทาง มุมทิศ และจุดของเส้นทางบนเส้นจีโอเดสิกของทรงรี WGS84

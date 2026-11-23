@@ -23,7 +23,7 @@ Stacje, pasmo, wysokość śladu, elewacja listka, boom i odległość hot spotu
 
 | Sekcja | Zawartość |
 |---|---|
-| **GEOMETRIA TRASY (Ziemia kulista, R = 6372,7955 km)** | Stacja i DX z wysokościami; odległość, azymut i azymut odwrotny; punkt środkowy (lokator i współrzędne); wysokość śladu (*← dominanta zmierzona przez radar w Collm*, gdy pobrana z radaru); elewacja anteny w stronę punktu środkowego |
+| **GEOMETRIA TRASY (elipsoida WGS84)** | Stacja i DX z wysokościami; odległość, azymut i azymut odwrotny; punkt środkowy (lokator i współrzędne); wysokość śladu (*← dominanta zmierzona przez radar w Collm*, gdy pobrana z radaru); elewacja anteny w stronę punktu środkowego |
 | **HOT A / HOT B (klasyczne hot spoty, do kierowania anteny)** | Dla każdego: lokator, azymut od ciebie i odchylenie od trasy bezpośredniej, azymut od DX, odległość, elewacja |
 | **GRANICE STREFY WSPÓLNEJ** | Zasięg na wysokości śladu przy danej elewacji listka; Granica A / Granica B z azymutami |
 | Antena | Boom w λ, zysk, listek poziomy / pionowy; czy Hot A i Hot B są wewnątrz, czy na zewnątrz listka |
@@ -33,7 +33,7 @@ Stacje, pasmo, wysokość śladu, elewacja listka, boom i odległość hot spotu
 
 ## Lokator i trasa
 
-Lokator (4, 6 lub 8 znaków; środek kwadratu, system IARU Maidenhead) [14]. Odległość, azymut i punkt środkowy wg wzorów ortodromicznych na sferze o promieniu **r = 6372,7955 km** (artykuł Cerrotta–Sartori) [15–16]. Obliczenia zależne od czasu odnoszą się do **punktu środkowego**, ponieważ najlepsza pora może różnić się nawet o 1,5 godziny między oboma końcami trasy (SM6FHZ).
+Lokator (4, 6 lub 8 znaków; środek kwadratu, system IARU Maidenhead) [14]. Odległość, azymut i punkt środkowy na linii geodezyjnej elipsoidy **WGS84** metodą Karneya (od wersji 1.8.24; wcześniej sfera o promieniu r = 6372,7955 km z artykułu Cerrotta–Sartori [15–16]). Obliczenia zależne od czasu odnoszą się do **punktu środkowego**, ponieważ najlepsza pora może różnić się nawet o 1,5 godziny między oboma końcami trasy (SM6FHZ).
 
 ## Elewacja anteny
 

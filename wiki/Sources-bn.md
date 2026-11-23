@@ -33,6 +33,8 @@
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (David Tanner-এর VK3AUU ইয়াগি) | গেইন বক্ররেখা যাচাই ও অনুভূমিক লোব সংশোধনে ব্যবহৃত NEC সিমুলেশন (0.93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | VK3AUU, WA2PHW ও DJ9BV রূপগুলোর গেইনের অনুমান |
 | J. **Meeus** – *Astronomical Algorithms*, 2nd ed., Willmann-Bell, 1998 | জুলিয়ান দিবস, নাক্ষত্র সময়, সৌর দ্রাঘিমা, অ্যাজিমুথ/এলিভেশন (ম্যানুয়ালে) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84 উপগোলক (স্টেশন ও রেখার অবস্থান) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | জিওডেসিকের উপর দূরত্ব, দিগংশ ও মধ্যবিন্দু |
 
 ## উল্কাবৃষ্টির তথ্য
 

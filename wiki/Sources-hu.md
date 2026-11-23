@@ -33,6 +33,8 @@ A **Források** fül felsorolja az összes művet, amelyre a YA-MS épül, az al
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (David Tanner VK3AUU-Yagijai) | NEC-szimulációk a nyereséggörbe ellenőrzéséhez és a vízszintes nyaláb korrekciójához (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Nyereségbecslések a VK3AUU, WA2PHW és DJ9BV változatokra |
 | J. **Meeus** – *Astronomical Algorithms*, 2. kiadás, Willmann-Bell, 1998 | Julián dátum, csillagidő, napközépponti hosszúság, azimut/eleváció (a kézikönyvben) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84 ellipszoid (az állomások és a nyomok helyzete) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Távolság, azimut és felezőpont a geodetikus vonalon |
 
 ## RAJADATOK
 

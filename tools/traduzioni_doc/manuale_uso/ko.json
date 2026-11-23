@@ -219,7 +219,6 @@
  "16. Contatti": "16. 연락처",
  "YA-MS è un programma gratuito per i radioamatori, a cura di Costantino IC8TEM (Capri). Segnalazioni, proposte e dati di confronto sono benvenuti: indica il sistema operativo, la versione di YA-MS e che cosa hai fatto. Codice e release: github.com/ic8tem/YA-MS. Contatti: ccerrotta@gmail.com, ic8tem@gmail.com, www.qrz.com/db/ic8tem. Chi vuole sostenere il lavoro può farlo su ko-fi.com/ic8tem.": "YA-MS는 Costantino IC8TEM(카프리)이 만든 아마추어 무선사를 위한 무료 프로그램입니다. 문제 보고, 제안, 비교용 데이터를 환영합니다. 운영 체제, YA-MS 버전, 무엇을 했는지를 알려 주세요. 코드와 릴리스: github.com/ic8tem/YA-MS. 연락처: ccerrotta@gmail.com, ic8tem@gmail.com, www.qrz.com/db/ic8tem. 이 작업을 후원하고 싶다면 ko-fi.com/ic8tem에서 하실 수 있습니다.",
  "Manuale d'uso di YA-MS": "YA-MS 사용 설명서",
- "Versione 1.8.23 - a cura di Costantino IC8TEM - novembre 2026": "버전 1.8.23 - Costantino IC8TEM 작성 - 2026년 11월",
  "PROCEDURA": "절차",
  "NOTA": "참고",
  "ATTENZIONE": "주의",
@@ -284,5 +283,6 @@
  "Giappone: conteggi HRO mensili (IPRMO)...: apre la finestra con i conteggi orari a mano degli osservatori giapponesi dei file mensili RMOJ. Scegli il mese e l'osservatore; Aggiorna da IPRMO scarica i mesi nuovi. Il primo grafico è la media del mese per ora UTC traslata alla tua frequenza, il secondo i totali giornalieri.": "일본: HRO 월간 계수 (IPRMO)...: RMOJ 월간 파일의 일본 관측자 시간별 수동 계수 창을 연다. 달과 관측자를 고르고, \"IPRMO에서 업데이트\"로 새 달을 받는다. 첫 그래프는 내 주파수로 환산한 UTC 시간별 월평균, 두 번째는 일 합계다.",
  "I conteggi automatici di Ogaki sono più alti di quelli a mano: sono valori relativi. Per tararli confrontali con i file mensili RMOJ dello stesso faro nella finestra del Giappone.": "오가키의 자동 계수는 수동 계수보다 높으며 상대값이다. 보정하려면 일본 창에서 같은 비콘의 RMOJ 월간 파일과 비교하라.",
  "radar/rmoj/: file mensili RMOJ del Giappone; radar/hro_ogaki_*.csv: conteggi di Ogaki degli ultimi 3 giorni; radar/gfs_*.json: profili GFS per la rifrazione (validi 3 ore).": "radar/rmoj/: 일본의 RMOJ 월간 파일; radar/hro_ogaki_*.csv: 최근 3일의 오가키 계수; radar/gfs_*.json: 굴절용 GFS 프로파일(3시간 유효).",
- "rifrazione_gfs (0 = spenta, 1 = accesa), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: rifrazione e fonti del Giappone.": "rifrazione_gfs (0 = 꺼짐, 1 = 켜짐), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: 대기 굴절과 일본 출처."
+ "rifrazione_gfs (0 = spenta, 1 = accesa), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: rifrazione e fonti del Giappone.": "rifrazione_gfs (0 = 꺼짐, 1 = 켜짐), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: 대기 굴절과 일본 출처.",
+ "Versione 1.8.24 - a cura di Costantino IC8TEM - novembre 2026": "버전 1.8.24 - Costantino IC8TEM 작성 - 2026년 11월"
 }

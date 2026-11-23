@@ -23,7 +23,7 @@ Stationer, bånd, sporhøjde, lapelevation, bom og hot spot-afstand kommer fra [
 
 | Afsnit | Indhold |
 |---|---|
-| **STRÆKNINGENS GEOMETRI (kugleformet Jord, R = 6372,7955 km)** | Station og DX med højder; afstand, azimut og modsat azimut; midtpunkt (lokator og koordinater); sporhøjde (*← typetal målt af Collm-radaren*, når den er taget fra radaren); antenneelevation mod midtpunktet |
+| **STRÆKNINGENS GEOMETRI (WGS84-ellipsoide)** | Station og DX med højder; afstand, azimut og modsat azimut; midtpunkt (lokator og koordinater); sporhøjde (*← typetal målt af Collm-radaren*, når den er taget fra radaren); antenneelevation mod midtpunktet |
 | **HOT A / HOT B (klassiske hot spots, til antenneretning)** | For hvert: lokator, azimut fra dig og forskydning fra den direkte strækning, azimut fra DX, afstand, elevation |
 | **GRÆNSER FOR DEN FÆLLES ZONE** | Rækkevidde i sporhøjde med lapelevationen; Grænse A / Grænse B med azimut |
 | Antenne | Bom i λ, forstærkning, vandret / lodret lap; om Hot A og Hot B ligger inden for eller uden for lappen |
@@ -33,7 +33,7 @@ Stationer, bånd, sporhøjde, lapelevation, bom og hot spot-afstand kommer fra [
 
 ## Lokator og strækning
 
-Lokator (4, 6 eller 8 tegn; feltets centrum, IARU's Maidenhead-system) [14]. Afstand, azimut og midtpunkt med storcirkelformler på en kugle med radius **r = 6372,7955 km** (artiklen af Cerrotta–Sartori) [15–16]. Tidsafhængige beregninger refererer til **midtpunktet**, fordi det bedste tidspunkt kan afvige op til 1,5 time mellem de to ender (SM6FHZ).
+Lokator (4, 6 eller 8 tegn; feltets centrum, IARU's Maidenhead-system) [14]. Afstand, azimut og midtpunkt på geodæten på **WGS84**-ellipsoiden med Karneys metode (fra version 1.8.24; før en kugle med radius r = 6372,7955 km fra artiklen Cerrotta–Sartori [15–16]). Tidsafhængige beregninger refererer til **midtpunktet**, fordi det bedste tidspunkt kan afvige op til 1,5 time mellem de to ender (SM6FHZ).
 
 ## Antenneelevation
 

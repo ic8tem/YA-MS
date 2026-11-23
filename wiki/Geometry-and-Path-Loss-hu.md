@@ -23,7 +23,7 @@ Az állomások, a sáv, a nyommagasság, a nyalábeleváció, a boom és a hot s
 
 | Szakasz | Tartalom |
 |---|---|
-| **AZ ÚTVONAL GEOMETRIÁJA (gömb alakú Föld, R = 6372,7955 km)** | Állomás és DX magassággal; távolság, azimut és visszairány-azimut; felezőpont (lokátor és koordináták); nyommagasság (*← a collmi radar által mért módusz*, ha a radarból származik); antennaeleváció a felezőpont felé |
+| **AZ ÚTVONAL GEOMETRIÁJA (WGS84 ellipszoid)** | Állomás és DX magassággal; távolság, azimut és visszairány-azimut; felezőpont (lokátor és koordináták); nyommagasság (*← a collmi radar által mért módusz*, ha a radarból származik); antennaeleváció a felezőpont felé |
 | **HOT A / HOT B (klasszikus hot spotok, az antenna irányításához)** | Mindegyikhez: lokátor, azimut az Ön állomásától és eltérés a közvetlen útvonaltól, azimut a DX-től, távolság, eleváció |
 | **A KÖZÖS ZÓNA HATÁRAI** | Hatótáv a nyommagasságban a nyalábelevációval; A határ / B határ azimutokkal |
 | Antenna | Boom λ-ban, nyereség, vízszintes / függőleges nyaláb; Hot A és Hot B a nyalábon belül vagy kívül esik-e |
@@ -33,7 +33,7 @@ Az állomások, a sáv, a nyommagasság, a nyalábeleváció, a boom és a hot s
 
 ## Lokátor és útvonal
 
-Lokátor (4, 6 vagy 8 karakter; a négyzet középpontja, IARU Maidenhead-rendszer) [14]. Távolság, azimut és felezőpont főkörképletekkel, **r = 6372,7955 km** sugarú gömbön (Cerrotta–Sartori-cikk) [15–16]. Az időfüggő számítások a **felezőpontra** vonatkoznak, mert a legjobb időpont a két végpont között akár 1,5 órával is eltérhet (SM6FHZ).
+Lokátor (4, 6 vagy 8 karakter; a négyzet középpontja, IARU Maidenhead-rendszer) [14]. Távolság, azimut és felezőpont a **WGS84** ellipszoid geodetikus vonalán, Karney módszerével (az 1.8.24-es verziótól; korábban r = 6372,7955 km sugarú gömb a Cerrotta–Sartori cikkből [15–16]). Az időfüggő számítások a **felezőpontra** vonatkoznak, mert a legjobb időpont a két végpont között akár 1,5 órával is eltérhet (SM6FHZ).
 
 ## Antennaeleváció
 

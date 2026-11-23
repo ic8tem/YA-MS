@@ -165,7 +165,7 @@ Formato tabella del bollettino ({0}/{1}): se il file contiene piu' osservatori v
 Foto	照片
 Frequenza di arrivo MHz	目標頻率 MHz
 G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook	G3WZT、DH8BQA、geekshed.co.uk、WSJT-X 手冊、WB2FKO（pings）、IU6GIR（143.050 MHz 活動）、IARU 第 1 區 VHF Handbook
-GEOMETRIA DELLA TRATTA (Terra sferica, R = 6372,7955 km)	路徑幾何（球形地球，R = 6372.7955 km）
+GEOMETRIA DELLA TRATTA (ellissoide WGS84)	路徑幾何（WGS84 橢球）
 GMN e CMOR alle {0} UTC: {1} errori ({2})	GMN 與 CMOR 於 {0} UTC：{1} 個錯誤（{2}）
 GMN e CMOR controllati alle {0} UTC ({1} file nuovi). Dati GMN: CC BY 4.0.	GMN 與 CMOR 已於 {0} UTC 檢查（{1} 個新檔案）。GMN 資料：CC BY 4.0。
 GRAVES in linea diretta: az {0:F0}°	GRAVES 直線方向：方位 {0:F0}°
@@ -921,3 +921,5 @@ I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	日本的 HRO
 Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	53 MHz 日本信標的即時自動計數。
 I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	用於選用對流層折射的溫度和濕度剖面。
 La formula della rifrattività e l'atmosfera di riferimento.	折射率公式和參考大氣。
+L'ellissoide della Terra (semiasse e schiacciamento).	地球橢球（長半軸和扁率）。
+Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	WGS84 橢球測地線上的距離、方位角和路徑點。

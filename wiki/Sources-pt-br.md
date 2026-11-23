@@ -33,6 +33,8 @@ A aba **Fontes** lista todas as obras em que o YA-MS se baseia, agrupadas como a
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (Yagis VK3AUU de David Tanner) | Simulações NEC usadas para verificar a curva de ganho e corrigir o lóbulo horizontal (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Estimativas de ganho para as variantes VK3AUU, WA2PHW e DJ9BV |
 | J. **Meeus** – *Astronomical Algorithms*, 2ª ed., Willmann-Bell, 1998 | Dia juliano, tempo sideral, longitude solar, azimute/elevação (no manual) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | Elipsoide WGS84 (posições das estações e dos rastros) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Distância, azimute e ponto médio sobre a geodésica |
 
 ## DADOS DAS CHUVAS
 

@@ -33,6 +33,8 @@
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*；*Appreciating DL6WU Wide-Band Long-Boom Yagi Design*；*70-CM Yagi Stacks Part 2*（David Tanner 的 VK3AUU 八木） | 用於驗證增益曲線和修正水平波瓣（0.93 × Kraus）的 NEC 模擬 |
 | John Drew **VK5DJ** – Yagi Calculator | VK3AUU、WA2PHW 和 DJ9BV 型號的增益估算 |
 | J. **Meeus** – *Astronomical Algorithms*，第 2 版，Willmann-Bell，1998 | 儒略日、恆星時、太陽黃經、方位角/仰角（見手冊） |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84 橢球（電台和流星餘跡的位置） |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | 測地線上的距離、方位角和中點 |
 
 ## 流星雨資料
 

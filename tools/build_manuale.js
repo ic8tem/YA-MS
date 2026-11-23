@@ -94,7 +94,7 @@ function table(widths, rows) {
 // ---------- contenuto ----------
 const C = [];
 C.push(new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun('YA-MS - Manuale dei calcoli')] }));
-C.push(P(I('Previsione e calcolo in diretta dell\'efficienza degli sciami meteorici per il meteor scatter. Versione 1.8.23, a cura di Costantino IC8TEM, novembre 2026.')));
+C.push(P(I('Previsione e calcolo in diretta dell\'efficienza degli sciami meteorici per il meteor scatter. Versione 1.8.24, a cura di Costantino IC8TEM, novembre 2026.')));
 C.push(new TableOfContents(T('Indice'), { hyperlink: true, headingStyleRange: '1-2' }));
 C.push(P(I('(Se l\'indice è vuoto: in Word, clic destro sull\'indice > Aggiorna campo.)')));
 
@@ -106,7 +106,7 @@ C.push(TAG('SCELTA', 'scelta del programma, non presa da una fonte; va verificat
 C.push(P('Angoli in gradi salvo diversa indicazione; distanze in km; tempi in UTC. I vettori sono in grassetto e sono riferiti a un sistema geocentrico solidale con la Terra (asse x verso il meridiano di Greenwich all\'equatore, asse z verso il polo nord).'));
 C.push(table([1900, 7738], [
   ['Simbolo', 'Significato'],
-  [['r'], 'raggio terrestre medio, 6372,7955 km [1]'],
+  [['r'], 'raggio medio dell\'ellissoide WGS84, 6371,0088 km [49], per le formule sferiche (fino alla versione 1.8.23: 6372,7955 km [1])'],
   [['H'], 'quota della scia (strato E), dal radar SKiYMET'],
   [['h'], 'quota della stazione sul livello del mare'],
   [[sb('φ', 'A'), ', ', sb('λ', 'A')], 'latitudine e longitudine della stazione A (la mia) e della stazione B (il corrispondente)'],
@@ -155,9 +155,10 @@ C.push(H2('3.1 Dal locator alle coordinate'));
 C.push(TAG('FONTE', 'Sistema Maidenhead (IARU). Per un locator di 6 caratteri L1 L2 N3 N4 L5 L6 (lettere contate da A = 0), al centro del quadratino:'));
 C.push(EQ('λ=20·', sb('L', '1'), '−180+2·', sb('N', '3'), '+', fr(sb('L', '5'), '12'), '+', fr('1', '24'), ',    φ=10·', sb('L', '2'), '−90+', sb('N', '4'), '+', fr(sb('L', '6'), '24'), '+', fr('1', '48')));
 C.push(H2('3.2 Distanza, azimut e punto medio'));
-C.push(TAG('FONTE', 'Formule del cerchio massimo su sfera di raggio r [1]:'));
-C.push(EQ('D=r·', fn('arccos', br(sb('û', 'A'), '·', sb('û', 'B')))));
-C.push(EQ(sb('Az', 'AB'), '=', fn('atan2', br(fn('sin', 'Δλ'), fn('cos', sb('φ', 'B')), ' , ', fn('cos', sb('φ', 'A')), fn('sin', sb('φ', 'B')), '−', fn('sin', sb('φ', 'A')), fn('cos', sb('φ', 'B')), fn('cos', 'Δλ')))));
+C.push(TAG('FONTE', 'Dalla versione 1.8.24: ellissoide WGS84 [49] (semiasse a = 6378,137 km, schiacciamento f = 1/298,257223563, e² = f(2 − f)). Distanza D, azimut AzAB e punto medio M si calcolano sulla geodetica dell\'ellissoide con il metodo di Karney [50] (libreria GeographicLib). Le stazioni e i punti delle scie sono punti dell\'ellissoide (φ latitudine geodetica, N raggio di curvatura nel primo verticale):'));
+C.push(EQ('X=(N+h)·', fn('cos', 'φ'), '·', fn('cos', 'λ'), ',   Y=(N+h)·', fn('cos', 'φ'), '·', fn('sin', 'λ'), ',   Z=', br('N(1−e²)+h'), '·', fn('sin', 'φ')));
+C.push(EQ('N=', fr('a', ['√', br('1−e²·', fn('sin', 'φ'), '²')])));
+C.push(TAG('RILIEVO', 'Verifica del 23/11/2026: rispetto alla sfera di raggio 6372,7955 km usata fino alla versione 1.8.23 [1], le distanze cambiano al massimo dello 0,5% (da JN70CN a KG33: 7508,6 km invece di 7542,4) e gli azimut al massimo di 0,2°.'));
 C.push(P('Il punto medio M è il punto a distanza D/2 da A lungo l\'azimut AzAB.'));
 C.push(TAG('FONTE', 'Il calcolo si riferisce al punto medio della tratta, perché tra le due estremità l\'ora migliore può differire fino a 1,5 ore (SM6FHZ [4]).'));
 C.push(TAG('SCELTA', 'La tratta è sempre quella reale tra i due locator. L\'antenna si considera sempre puntata verso il corrispondente (Az(antenna) = AzAB), per il controllo del lobo (capitolo 7).'));
@@ -404,6 +405,8 @@ C.push(H1('12. Fonti'));
  'HRO Ogaki - HROFFT images every 10 minutes of the JA2SDA (Toyokawa, 53.100 MHz) and JE3AKE (Otsu, 53.372 MHz) beacons, hro-ogaki.org.',
  'Open-Meteo - NOAA/NCEP GFS model API (pressure levels), open-meteo.com, CC BY 4.0.',
  'ITU-R P.453 - "The radio refractive index: its formula and refractivity data".',
+ 'National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).',
+ 'C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).',
 ].forEach((t, i) => C.push(new Paragraph({ numbering: { reference: 'num', level: 0 }, spacing: { after: 60 }, children: [new TextRun(t)] })));
 
 const doc = new Document({

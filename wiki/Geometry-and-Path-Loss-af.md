@@ -23,7 +23,7 @@ Die stasies, band, spoorhoogte, lob-elevasie, boom en hot spot-afstand kom van d
 
 | Afdeling | Inhoud |
 |---|---|
-| **PADGEOMETRIE (sferiese Aarde, R = 6372,7955 km)** | Stasie en DX met hoogtes; afstand, azimut en teenazimut; middelpunt (lokator en koördinate); spoorhoogte (*<- modus gemeet deur die Collm-radar* wanneer van die radar geneem); antenna-elevasie na die middelpunt |
+| **PADGEOMETRIE (WGS84-ellipsoïed)** | Stasie en DX met hoogtes; afstand, azimut en teenazimut; middelpunt (lokator en koördinate); spoorhoogte (*<- modus gemeet deur die Collm-radar* wanneer van die radar geneem); antenna-elevasie na die middelpunt |
 | **HOT A / HOT B (klassieke hot spots, vir antennarigting)** | Vir elkeen: lokator, azimut vanaf jou en verskuiwing van die direkte pad, azimut vanaf die DX, afstand, elevasie |
 | **GRENSE VAN DIE GEMEENSKAPLIKE SONE** | Bereik op spoorhoogte met die lob-elevasie; Grens A / Grens B met azimute |
 | Antenna | Boom in λ, wins, horisontale / vertikale lob; of Hot A en Hot B binne of buite die lob is |
@@ -33,7 +33,7 @@ Die stasies, band, spoorhoogte, lob-elevasie, boom en hot spot-afstand kom van d
 
 ## Lokator en pad
 
-Lokator (4, 6 of 8 karakters; middel van die vierkant, IARU Maidenhead-stelsel) [14]. Afstand, azimut en middelpunt met grootsirkelformules op 'n sfeer met radius **r = 6372,7955 km** (Cerrotta–Sartori-artikel) [15–16]. Tydafhanklike berekeninge verwys na die **middelpunt**, omdat die beste tyd tot 1,5 uur tussen die twee kante kan verskil (SM6FHZ).
+Lokator (4, 6 of 8 karakters; middel van die vierkant, IARU Maidenhead-stelsel) [14]. Afstand, azimut en middelpunt op die geodeet van die **WGS84**-ellipsoïed met Karney se metode (vanaf weergawe 1.8.24; voorheen 'n sfeer met radius r = 6372,7955 km uit die artikel Cerrotta–Sartori [15–16]). Tydafhanklike berekeninge verwys na die **middelpunt**, omdat die beste tyd tot 1,5 uur tussen die twee kante kan verskil (SM6FHZ).
 
 ## Antenna-elevasie
 

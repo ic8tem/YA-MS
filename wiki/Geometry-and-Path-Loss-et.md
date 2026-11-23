@@ -23,7 +23,7 @@ Jaamad, sagedusala, jälgede kõrgus, peaharu elevatsioon, poom ja hot spoti kau
 
 | Osa | Sisu |
 |---|---|
-| **TRASSI GEOMEETRIA (sfääriline Maa, R = 6372,7955 km)** | Jaam ja korrespondent koos kõrgustega; kaugus, asimuut ja tagasisuuna asimuut; keskpunkt (lokaator ja koordinaadid); jälgede kõrgus (*<- Collmi radari mõõdetud mood*, kui võetud radarilt); antenni elevatsioon keskpunkti suunas |
+| **TRASSI GEOMEETRIA (WGS84 ellipsoid)** | Jaam ja korrespondent koos kõrgustega; kaugus, asimuut ja tagasisuuna asimuut; keskpunkt (lokaator ja koordinaadid); jälgede kõrgus (*<- Collmi radari mõõdetud mood*, kui võetud radarilt); antenni elevatsioon keskpunkti suunas |
 | **HOT A / HOT B (klassikalised hot spotid antenni suunamiseks)** | Kummagi kohta: lokaator, asimuut sinult ja nihe otsesuunast, asimuut korrespondendilt, kaugus, elevatsioon |
 | **ÜHISALA PIIRID** | Ulatus jälgede kõrgusel peaharu elevatsiooniga; Piir A / Piir B koos asimuutidega |
 | Antenn | Poom λ-des, võimendus, horisontaalne / vertikaalne peaharu; kas Hot A ja Hot B on peaharu sees või väljas |
@@ -33,7 +33,7 @@ Jaamad, sagedusala, jälgede kõrgus, peaharu elevatsioon, poom ja hot spoti kau
 
 ## Lokaator ja trass
 
-Lokaator (4, 6 või 8 märki; ruudu keskpunkt, IARU Maidenheadi süsteem) [14]. Kaugus, asimuut ja keskpunkt suurringjoone valemitega sfääril raadiusega **r = 6372,7955 km** (Cerrotta–Sartori artikkel) [15–16]. Ajast sõltuvad arvutused viitavad **keskpunktile**, sest parim aeg võib kahe otsa vahel erineda kuni 1,5 tundi (SM6FHZ).
+Lokaator (4, 6 või 8 märki; ruudu keskpunkt, IARU Maidenheadi süsteem) [14]. Kaugus, asimuut ja keskpunkt **WGS84** ellipsoidi geodeetilisel joonel Karney meetodiga (alates versioonist 1.8.24; varem kera raadiusega r = 6372,7955 km artiklist Cerrotta–Sartori [15–16]). Ajast sõltuvad arvutused viitavad **keskpunktile**, sest parim aeg võib kahe otsa vahel erineda kuni 1,5 tundi (SM6FHZ).
 
 ## Antenni elevatsioon
 

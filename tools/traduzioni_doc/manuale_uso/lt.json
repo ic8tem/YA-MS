@@ -219,7 +219,6 @@
  "16. Contatti": "16. Kontaktai",
  "YA-MS è un programma gratuito per i radioamatori, a cura di Costantino IC8TEM (Capri). Segnalazioni, proposte e dati di confronto sono benvenuti: indica il sistema operativo, la versione di YA-MS e che cosa hai fatto. Codice e release: github.com/ic8tem/YA-MS. Contatti: ccerrotta@gmail.com, ic8tem@gmail.com, www.qrz.com/db/ic8tem. Chi vuole sostenere il lavoro può farlo su ko-fi.com/ic8tem.": "YA-MS yra nemokama programa radijo mėgėjams, kurią parengė Costantino IC8TEM (Capri). Pranešimai, pasiūlymai ir palyginimo duomenys laukiami: nurodykite operacinę sistemą, YA-MS versiją ir ką darėte. Kodas ir leidimai: github.com/ic8tem/YA-MS. Kontaktai: ccerrotta@gmail.com, ic8tem@gmail.com, www.qrz.com/db/ic8tem. Norintys paremti šį darbą gali tai padaryti ko-fi.com/ic8tem.",
  "Manuale d'uso di YA-MS": "YA-MS naudotojo vadovas",
- "Versione 1.8.23 - a cura di Costantino IC8TEM - novembre 2026": "1.8.23 versija - parengė Costantino IC8TEM - 2026 m. lapkritis",
  "PROCEDURA": "PROCEDŪRA",
  "NOTA": "PASTABA",
  "ATTENZIONE": "DĖMESIO",
@@ -284,5 +283,6 @@
  "Giappone: conteggi HRO mensili (IPRMO)...: apre la finestra con i conteggi orari a mano degli osservatori giapponesi dei file mensili RMOJ. Scegli il mese e l'osservatore; Aggiorna da IPRMO scarica i mesi nuovi. Il primo grafico è la media del mese per ora UTC traslata alla tua frequenza, il secondo i totali giornalieri.": "Japonija: mėnesiniai HRO skaičiavimai (IPRMO)...: atveria langą su Japonijos stebėtojų valandiniais rankiniais skaičiavimais iš mėnesinių RMOJ failų. Pasirink mėnesį ir stebėtoją; Atnaujinti iš IPRMO atsisiunčia naujus mėnesius. Pirmas grafikas – mėnesio vidurkis per UTC valandą, perskaičiuotas į tavo dažnį, antras – paros sumos.",
  "I conteggi automatici di Ogaki sono più alti di quelli a mano: sono valori relativi. Per tararli confrontali con i file mensili RMOJ dello stesso faro nella finestra del Giappone.": "Automatiniai Ogakio skaičiavimai didesni nei rankiniai: tai santykinės vertės. Norėdamas juos sukalibruoti, Japonijos lange palygink juos su to paties švyturio mėnesiniais RMOJ failais.",
  "radar/rmoj/: file mensili RMOJ del Giappone; radar/hro_ogaki_*.csv: conteggi di Ogaki degli ultimi 3 giorni; radar/gfs_*.json: profili GFS per la rifrazione (validi 3 ore).": "radar/rmoj/: mėnesiniai RMOJ failai iš Japonijos; radar/hro_ogaki_*.csv: paskutinių 3 dienų Ogakio skaičiavimai; radar/gfs_*.json: GFS profiliai refrakcijai (galioja 3 valandas).",
- "rifrazione_gfs (0 = spenta, 1 = accesa), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: rifrazione e fonti del Giappone.": "rifrazione_gfs (0 = išjungta, 1 = įjungta), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: refrakcija ir Japonijos šaltiniai."
+ "rifrazione_gfs (0 = spenta, 1 = accesa), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: rifrazione e fonti del Giappone.": "rifrazione_gfs (0 = išjungta, 1 = įjungta), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: refrakcija ir Japonijos šaltiniai.",
+ "Versione 1.8.24 - a cura di Costantino IC8TEM - novembre 2026": "1.8.24 versija - parengė Costantino IC8TEM - 2026 m. lapkritis"
 }

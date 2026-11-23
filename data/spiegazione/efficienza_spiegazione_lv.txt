@@ -20,8 +20,8 @@ TAG|RILIEVO|Collm grafiks 5/11/2026: moda 89,5 km, vidējais 88,6 km, standartno
 TAG|RILIEVO|DJ5HG [18] un QTFGUI [17] izmanto fiksētu 102 km augstumu; programma dod priekšroku radara izmērītajiem datiem. Ieteikums ITU-R P.843 [24] dod vidējo augstumu h = 124 − 17·log10(f) km: aptuveni 97 km pie 36,2 MHz un 87 km pie 144 MHz, kas saskan ar Collm modu (89,5 km 5/11/2026).
 H1|3. Trases ģeometrija
 H2|3.1 Zeme, stacijas un viduspunkts
-TAG|FONTE|Sfēriska Zeme ar rādiusu r = 6372,7955 km [1].
-TAG|SCELTA|Trase vienmēr ir reālā trase starp stacijas lokatoru un korespondenta lokatoru. Attālumu, azimutu un viduspunktu aprēķina ar lielā loka formulām.
+TAG|FONTE|WGS84 elipsoīds [37]: lielā pusass 6378,137 km, saplacinājums 1/298,257223563. Sfēriskajām formulām (raksta pacēluma leņķis, sniedzamība, refrakcija) programma izmanto elipsoīda vidējo rādiusu r = 6371,0088 km; līdz versijai 1.8.23 tā izmantoja sfēru ar rādiusu 6372,7955 km [1].
+TAG|SCELTA|Trase vienmēr ir reālā trase starp stacijas lokatoru un korespondenta lokatoru. No versijas 1.8.24 attālumu, azimutu un viduspunktu aprēķina uz elipsoīda ģeodēziskās līnijas ar Karneja metodi [38]: salīdzinājumā ar sfēru attālumi mainās ne vairāk kā par 0,5% un azimuti par dažām grāda desmitdaļām.
 TAG|FONTE|No laika atkarīgie aprēķini attiecas uz trases viduspunktu: starp abiem galiem labākais laiks var atšķirties līdz 1,5 stundām (SM6FHZ [4]).
 H2|3.2 Antenas elevācija
 TAG|FONTE|Elevāciju uz atstarošanas punktu aprēķina ar raksta formulu (7. attēls) [1], kur x = attālums / r, H – sliedes augstums, h – stacijas augstums:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - Yagi pastiprinājuma tabulas 50, 144 un 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (kopijas qsl.net/dk7zb un sm2cew.com).
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

@@ -20,8 +20,8 @@ TAG|RILIEVO|5/11/2026 का Collm ग्राफ़: बहुलक 89,5 km, 
 TAG|RILIEVO|DJ5HG [18] और QTFGUI [17] 102 km की स्थिर ऊँचाई का उपयोग करते हैं; प्रोग्राम रडार द्वारा मापे गए मान को प्राथमिकता देता है। ITU-R P.843 सिफारिश [24] औसत ऊँचाई h = 124 − 17·log10(f) km देती है: 36,2 MHz पर लगभग 97 km और 144 MHz पर 87 km, जो Collm के बहुलक (5/11/2026 को 89,5 km) के अनुरूप है।
 H1|3. पथ की ज्यामिति
 H2|3.1 पृथ्वी, स्टेशन और मध्य बिंदु
-TAG|FONTE|त्रिज्या r = 6372,7955 km वाली गोलाकार पृथ्वी [1]।
-TAG|SCELTA|पथ हमेशा स्टेशन के locator और DX स्टेशन के locator के बीच का वास्तविक पथ होता है। दूरी, दिगंश और मध्य बिंदु वृहत् वृत्त के सूत्रों से गणना किए जाते हैं।
+TAG|FONTE|WGS84 दीर्घवृत्ताभ [37]: अर्ध-दीर्घ अक्ष 6378,137 km, चपटापन 1/298,257223563। गोलीय सूत्रों (लेख का उन्नयन कोण, पहुँच, अपवर्तन) के लिए प्रोग्राम दीर्घवृत्ताभ की औसत त्रिज्या r = 6371,0088 km का उपयोग करता है; संस्करण 1.8.23 तक यह 6372,7955 km त्रिज्या वाले गोले का उपयोग करता था [1]।
+TAG|SCELTA|पथ हमेशा स्टेशन के locator और DX स्टेशन के locator के बीच का वास्तविक पथ होता है। संस्करण 1.8.24 से दूरी, दिगंश और मध्य बिंदु दीर्घवृत्ताभ की जियोडेसिक पर Karney की विधि [38] से निकाले जाते हैं: गोले की तुलना में दूरियाँ अधिकतम 0,5% और दिगंश डिग्री के कुछ दसवें भाग बदलते हैं।
 TAG|FONTE|समय पर निर्भर गणनाएँ पथ के मध्य बिंदु के लिए की जाती हैं: दोनों सिरों के बीच सर्वोत्तम समय में 1,5 घंटे तक का अंतर हो सकता है (SM6FHZ [4])।
 H2|3.2 एंटेना का उन्नयन
 TAG|FONTE|परावर्तन बिंदु की ओर उन्नयन की गणना लेख के सूत्र (चित्र 7) [1] से की जाती है, जहाँ x = दूरी / r, H ट्रेल की ऊँचाई, h स्टेशन की ऊँचाई:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - 50, 144 और 432 MHz के लिए Yagi लाभ तालिकाएँ: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (प्रतियाँ qsl.net/dk7zb और sm2cew.com पर)।
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

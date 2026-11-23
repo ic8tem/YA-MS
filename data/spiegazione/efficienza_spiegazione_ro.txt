@@ -20,8 +20,8 @@ TAG|RILIEVO|Graficul de la Collm din 5/11/2026: mod 89,5 km, medie 88,6 km, abat
 TAG|RILIEVO|DJ5HG [18] și QTFGUI [17] folosesc o altitudine fixă de 102 km; programul preferă valoarea măsurată de radar. Recomandarea ITU-R P.843 [24] dă o altitudine medie h = 124 − 17·log10(f) km: circa 97 km la 36,2 MHz și 87 km la 144 MHz, în acord cu modul de la Collm (89,5 km pe 5/11/2026).
 H1|3. Geometria traseului
 H2|3.1 Pământul, stațiile și punctul median
-TAG|FONTE|Pământ sferic cu raza r = 6372,7955 km [1].
-TAG|SCELTA|Traseul este întotdeauna cel real dintre locatorul stației și cel al corespondentului. Distanța, azimutul și punctul median se calculează cu formulele cercului mare.
+TAG|FONTE|Elipsoidul WGS84 [37]: semiaxa mare 6378,137 km, turtire 1/298,257223563. Pentru formulele sferice (elevația din articol, raza de acțiune, refracția) programul folosește raza medie a elipsoidului, r = 6371,0088 km; până la versiunea 1.8.23 folosea sfera cu raza de 6372,7955 km [1].
+TAG|SCELTA|Traseul este întotdeauna cel real dintre locatorul stației și cel al corespondentului. Începând cu versiunea 1.8.24, distanța, azimutul și punctul de mijloc se calculează pe geodezica elipsoidului cu metoda lui Karney [38]: față de sferă, distanțele se schimbă cu cel mult 0,5%, iar azimuturile cu câteva zecimi de grad.
 TAG|FONTE|Calculele care depind de oră se raportează la punctul median al traseului: între cele două capete ora cea mai bună poate diferi cu până la 1,5 ore (SM6FHZ [4]).
 H2|3.2 Elevația antenei
 TAG|FONTE|Elevația spre punctul de reflexie se calculează cu formula din articol (Imaginea 7) [1], cu x = distanța / r, H altitudinea dârei, h altitudinea stației:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - tabele de câștig pentru antene Yagi la 50, 144 și 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (copii pe qsl.net/dk7zb și sm2cew.com).
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

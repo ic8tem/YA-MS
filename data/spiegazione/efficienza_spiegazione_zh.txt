@@ -20,8 +20,8 @@ TAG|RILIEVO|2026/11/5 的 Collm 图：众数 89.5 km，平均值 88.6 km，标�
 TAG|RILIEVO|DJ5HG [18] 和 QTFGUI [17] 使用 102 km 的固定高度；本程序优先采用雷达实测值。ITU-R P.843 建议书 [24] 给出平均高度 h = 124 − 17·log10(f) km：36.2 MHz 时约 97 km，144 MHz 时约 87 km，与 Collm 的众数一致（2026/11/5 为 89.5 km）。
 H1|3. 路径几何
 H2|3.1 地球、台站与中点
-TAG|FONTE|半径 r = 6372.7955 km 的球形地球 [1]。
-TAG|SCELTA|路径始终是本台定位符与 DX 台定位符之间的真实路径。距离、方位角和中点用大圆公式计算。
+TAG|FONTE|WGS84 椭球 [37]：长半轴 6378.137 km，扁率 1/298.257223563。球面公式（文章中的仰角、可达距离、折射）使用椭球的平均半径 r = 6371.0088 km；1.8.23 版及以前使用半径 6372.7955 km 的球 [1]。
+TAG|SCELTA|路径始终是本台定位符与 DX 台定位符之间的真实路径。自 1.8.24 版起，距离、方位角和中点用 Karney 方法 [38] 在椭球的测地线上计算：与球面相比，距离最多变化 0.5%，方位角变化零点几度。
 TAG|FONTE|与时间相关的计算以路径中点为参照：路径两端的最佳时间可能相差多达 1.5 小时（SM6FHZ [4]）。
 H2|3.2 天线仰角
 TAG|FONTE|指向反射点的仰角用文章中的公式（图 7）[1] 计算，其中 x = 距离 / r，H 为余迹高度，h 为台站高度：
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - 50、144 和 432 MHz 八木天线增益表：dxmaps.com/VE7BQH6.html、dxmaps.com/VE7BQH.html、atlas.dxmaps.com/VE7BQH70.html（副本见 qsl.net/dk7zb 和 sm2cew.com）。
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

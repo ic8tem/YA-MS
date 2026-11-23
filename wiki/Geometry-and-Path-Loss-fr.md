@@ -23,7 +23,7 @@ Les stations, la bande, l'altitude des traînées, l'élévation du lobe, le boo
 
 | Section | Contenu |
 |---|---|
-| **GÉOMÉTRIE DU TRAJET (Terre sphérique, R = 6372,7955 km)** | Station et correspondant avec leurs altitudes ; distance, azimut et azimut inverse ; point milieu (locator et coordonnées) ; altitude des traînées (*<- mode mesuré par le radar de Collm* quand elle vient du radar) ; élévation de l'antenne vers le point milieu |
+| **GÉOMÉTRIE DU TRAJET (ellipsoïde WGS84)** | Station et correspondant avec leurs altitudes ; distance, azimut et azimut inverse ; point milieu (locator et coordonnées) ; altitude des traînées (*<- mode mesuré par le radar de Collm* quand elle vient du radar) ; élévation de l'antenne vers le point milieu |
 | **HOT A / HOT B (hot spots classiques, pour le pointage de l'antenne)** | Pour chacun : locator, azimut depuis vous et décalage par rapport au trajet direct, azimut depuis le correspondant, distance, élévation |
 | **LIMITES DE LA ZONE COMMUNE** | Portée à l'altitude des traînées avec l'élévation du lobe ; Limite A / Limite B avec leurs azimuts |
 | Antenne | Boom en λ, gain, lobe horizontal / vertical ; Hot A et Hot B dans ou hors du lobe |
@@ -33,7 +33,7 @@ Les stations, la bande, l'altitude des traînées, l'élévation du lobe, le boo
 
 ## Locator et trajet
 
-Locator (4, 6 ou 8 caractères ; centre du carré, système Maidenhead de l'IARU) [14]. Distance, azimut et point milieu avec les formules orthodromiques sur une sphère de rayon **r = 6372,7955 km** (article Cerrotta–Sartori) [15–16]. Les calculs qui dépendent de l'heure se rapportent au **point milieu**, car la meilleure heure peut différer de jusqu'à 1,5 heure entre les deux extrémités (SM6FHZ).
+Locator (4, 6 ou 8 caractères ; centre du carré, système Maidenhead de l'IARU) [14]. Distance, azimut et point milieu sur la géodésique de l'ellipsoïde **WGS84** avec la méthode de Karney (depuis la version 1.8.24 ; auparavant sphère de rayon r = 6372,7955 km de l'article Cerrotta–Sartori [15–16]). Les calculs qui dépendent de l'heure se rapportent au **point milieu**, car la meilleure heure peut différer de jusqu'à 1,5 heure entre les deux extrémités (SM6FHZ).
 
 ## Élévation de l'antenne
 

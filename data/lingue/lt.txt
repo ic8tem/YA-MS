@@ -163,7 +163,7 @@ Formato tabella del bollettino ({0}/{1}): se il file contiene piu' osservatori v
 Foto	Nuotrauka
 Frequenza di arrivo MHz	Tikslinis dažnis MHz
 G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook	G3WZT, DH8BQA, geekshed.co.uk, WSJT-X vadovas, WB2FKO (pings), IU6GIR (aktyvumas 143,050 MHz), IARU 1 regiono VHF Handbook
-GEOMETRIA DELLA TRATTA (Terra sferica, R = 6372,7955 km)	TRASOS GEOMETRIJA (sferinė Žemė, R = 6372,7955 km)
+GEOMETRIA DELLA TRATTA (ellissoide WGS84)	TRASOS GEOMETRIJA (WGS84 elipsoidas)
 GMN e CMOR alle {0} UTC: {1} errori ({2})	GMN ir CMOR {0} UTC: {1} klaidų ({2})
 GMN e CMOR controllati alle {0} UTC ({1} file nuovi). Dati GMN: CC BY 4.0.	GMN ir CMOR patikrinti {0} UTC ({1} naujų failų). GMN duomenys: CC BY 4.0.
 GRAVES in linea diretta: az {0:F0}°	GRAVES tiesiogine kryptimi: az {0:F0}°
@@ -919,3 +919,5 @@ I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	Mėnesiniai H
 Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	Automatinis tiesioginis Japonijos švyturių skaičiavimas 53 MHz dažniu.
 I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	Temperatūros ir drėgmės profiliai pasirenkamai troposferinei refrakcijai.
 La formula della rifrattività e l'atmosfera di riferimento.	Refraktyvumo formulė ir etaloninė atmosfera.
+L'ellissoide della Terra (semiasse e schiacciamento).	Žemės elipsoidas (didysis pusašis ir suplojimas).
+Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	Atstumai, azimutai ir trasos taškai WGS84 elipsoido geodezinėje linijoje.

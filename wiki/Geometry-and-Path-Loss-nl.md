@@ -23,7 +23,7 @@ De stations, band, spoorhoogte, bundelelevatie, boom en hotspot-afstand komen ui
 
 | Onderdeel | Inhoud |
 |---|---|
-| **TRAJECTGEOMETRIE (bolvormige aarde, R = 6372,7955 km)** | Station en tegenstation met hoogtes; afstand, azimut en tegenazimut; middelpunt (locator en coördinaten); spoorhoogte (*<- modus gemeten door de Collm-radar* als die van de radar komt); antenne-elevatie naar het middelpunt |
+| **TRAJECTGEOMETRIE (WGS84-ellipsoïde)** | Station en tegenstation met hoogtes; afstand, azimut en tegenazimut; middelpunt (locator en coördinaten); spoorhoogte (*<- modus gemeten door de Collm-radar* als die van de radar komt); antenne-elevatie naar het middelpunt |
 | **HOT A / HOT B (klassieke hotspots, voor het richten van de antenne)** | Voor elk: locator, azimut vanaf jou en afwijking van het directe traject, azimut vanaf het tegenstation, afstand, elevatie |
 | **GRENZEN VAN DE GEMEENSCHAPPELIJKE ZONE** | Bereik op spoorhoogte met de bundelelevatie; Grens A / Grens B met azimuts |
 | Antenne | Boom in λ, winst, horizontale / verticale bundel; of Hot A en Hot B binnen of buiten de bundel liggen |
@@ -33,7 +33,7 @@ De stations, band, spoorhoogte, bundelelevatie, boom en hotspot-afstand komen ui
 
 ## Locator en traject
 
-Locator (4, 6 of 8 tekens; midden van het vak, IARU-Maidenheadsysteem) [14]. Afstand, azimut en middelpunt met grootcirkelformules op een bol met straal **r = 6372,7955 km** (artikel van Cerrotta–Sartori) [15–16]. Tijdsafhankelijke berekeningen verwijzen naar het **middelpunt**, omdat het beste tijdstip tussen de twee uiteinden tot 1,5 uur kan verschillen (SM6FHZ).
+Locator (4, 6 of 8 tekens; midden van het vak, IARU-Maidenheadsysteem) [14]. Afstand, azimut en middelpunt op de geodeet van de **WGS84**-ellipsoïde met de methode van Karney (vanaf versie 1.8.24; daarvoor een bol met straal r = 6372,7955 km uit het artikel Cerrotta–Sartori [15–16]). Tijdsafhankelijke berekeningen verwijzen naar het **middelpunt**, omdat het beste tijdstip tussen de twee uiteinden tot 1,5 uur kan verschillen (SM6FHZ).
 
 ## Antenne-elevatie
 

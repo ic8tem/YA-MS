@@ -23,7 +23,7 @@ Stotys, juosta, pėdsakų aukštis, lapelio elevacija, strėlė ir hot spot atst
 
 | Skyrius | Turinys |
 |---|---|
-| **TRASOS GEOMETRIJA (sferinė Žemė, R = 6372,7955 km)** | Stotis ir korespondentas su aukščiais; atstumas, azimutas ir atgalinis azimutas; vidurio taškas (lokatorius ir koordinatės); pėdsakų aukštis (*<- moda, išmatuota Collm radaru*, kai paimta iš radaro); antenos elevacija į vidurio tašką |
+| **TRASOS GEOMETRIJA (WGS84 elipsoidas)** | Stotis ir korespondentas su aukščiais; atstumas, azimutas ir atgalinis azimutas; vidurio taškas (lokatorius ir koordinatės); pėdsakų aukštis (*<- moda, išmatuota Collm radaru*, kai paimta iš radaro); antenos elevacija į vidurio tašką |
 | **HOT A / HOT B (klasikiniai hot spot, antenai nukreipti)** | Kiekvienam: lokatorius, azimutas nuo jūsų ir nuokrypis nuo tiesioginės krypties, azimutas nuo korespondento, atstumas, elevacija |
 | **BENDROSIOS ZONOS RIBOS** | Nuotolis pėdsakų aukštyje su lapelio elevacija; Riba A / Riba B su azimutais |
 | Antena | Strėlė λ, stiprinimas, horizontalusis / vertikalusis lapelis; ar Hot A ir Hot B yra lapelio viduje ar už jo |
@@ -33,7 +33,7 @@ Stotys, juosta, pėdsakų aukštis, lapelio elevacija, strėlė ir hot spot atst
 
 ## Lokatorius ir trasa
 
-Lokatorius (4, 6 arba 8 simboliai; kvadrato centras, IARU Maidenhead sistema) [14]. Atstumas, azimutas ir vidurio taškas pagal didžiojo apskritimo formules sferoje, kurios spindulys **r = 6372,7955 km** (Cerrotta–Sartori straipsnis) [15–16]. Nuo laiko priklausantys skaičiavimai susieti su **vidurio tašku**, nes geriausias laikas abiejuose galuose gali skirtis iki 1,5 valandos (SM6FHZ).
+Lokatorius (4, 6 arba 8 simboliai; kvadrato centras, IARU Maidenhead sistema) [14]. Atstumas, azimutas ir vidurio taškas **WGS84** elipsoido geodezinėje linijoje Karney metodu (nuo 1.8.24 versijos; anksčiau r = 6372,7955 km spindulio sfera iš Cerrotta–Sartori straipsnio [15–16]). Nuo laiko priklausantys skaičiavimai susieti su **vidurio tašku**, nes geriausias laikas abiejuose galuose gali skirtis iki 1,5 valandos (SM6FHZ).
 
 ## Antenos elevacija
 

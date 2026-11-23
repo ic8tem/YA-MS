@@ -23,7 +23,7 @@ Stationen, Band, Spurhöhe, Keulenelevation, Boom und Hot-Spot-Abstand kommen au
 
 | Abschnitt | Inhalt |
 |---|---|
-| **STRECKENGEOMETRIE (Kugelerde, R = 6372,7955 km)** | Station und Gegenstation mit Höhen; Entfernung, Azimut und Gegenazimut; Mittelpunkt (Locator und Koordinaten); Spurhöhe (*← vom Collm-Radar gemessener Modalwert*, wenn vom Radar übernommen); Antennenelevation zum Mittelpunkt |
+| **STRECKENGEOMETRIE (WGS84-Ellipsoid)** | Station und Gegenstation mit Höhen; Entfernung, Azimut und Gegenazimut; Mittelpunkt (Locator und Koordinaten); Spurhöhe (*← vom Collm-Radar gemessener Modalwert*, wenn vom Radar übernommen); Antennenelevation zum Mittelpunkt |
 | **HOT A / HOT B (klassische Hot-Spots für die Antennenausrichtung)** | Für jeden: Locator, Azimut von dir und Abweichung von der Direktrichtung, Azimut von der Gegenstation, Entfernung, Elevation |
 | **GRENZEN DER GEMEINSAMEN ZONE** | Reichweite in Spurhöhe bei der Keulenelevation; Grenze A / Grenze B mit Azimuten |
 | Antenne | Boom in λ, Gewinn, horizontale / vertikale Keule; ob Hot A und Hot B in oder außerhalb der Keule liegen |
@@ -33,7 +33,7 @@ Stationen, Band, Spurhöhe, Keulenelevation, Boom und Hot-Spot-Abstand kommen au
 
 ## Locator und Strecke
 
-Locator (4, 6 oder 8 Zeichen; Feldmitte, IARU-Maidenhead-System) [14]. Entfernung, Azimut und Mittelpunkt mit Großkreisformeln auf einer Kugel mit Radius **r = 6372,7955 km** (Artikel Cerrotta–Sartori) [15–16]. Zeitabhängige Berechnungen beziehen sich auf den **Mittelpunkt**, weil die beste Zeit an den beiden Enden um bis zu 1,5 Stunden abweichen kann (SM6FHZ).
+Locator (4, 6 oder 8 Zeichen; Feldmitte, IARU-Maidenhead-System) [14]. Entfernung, Azimut und Mittelpunkt auf der Geodäte des **WGS84**-Ellipsoids mit dem Verfahren von Karney (ab Version 1.8.24; vorher Kugel mit Radius r = 6372,7955 km aus dem Artikel Cerrotta–Sartori [15–16]). Zeitabhängige Berechnungen beziehen sich auf den **Mittelpunkt**, weil die beste Zeit an den beiden Enden um bis zu 1,5 Stunden abweichen kann (SM6FHZ).
 
 ## Antennenelevation
 

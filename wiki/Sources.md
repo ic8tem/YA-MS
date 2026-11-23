@@ -33,6 +33,8 @@ The **Sources** tab lists every work YA-MS is built on, grouped as below (the te
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (VK3AUU Yagis by David Tanner) | NEC simulations used to verify the gain curve and correct the horizontal lobe (0.93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Gain estimates for the VK3AUU, WA2PHW and DJ9BV variants |
 | J. **Meeus** – *Astronomical Algorithms*, 2nd ed., Willmann-Bell, 1998 | Julian day, sidereal time, solar longitude, azimuth/elevation (in the manual) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84 ellipsoid (positions of stations and trails) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Distance, azimuth and midpoint on the geodesic |
 
 ## SHOWER DATA
 

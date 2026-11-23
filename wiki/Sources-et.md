@@ -33,6 +33,8 @@ Sakk **Allikad** loetleb kõik tööd, millele YA-MS tugineb, rühmitatuna nagu 
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (David Tanneri VK3AUU Yagid) | NEC-simulatsioonid võimenduskõvera kontrolliks ja horisontaalse peaharu parandamiseks (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Võimenduse hinnangud VK3AUU, WA2PHW ja DJ9BV variantide jaoks |
 | J. **Meeus** – *Astronomical Algorithms*, 2. tr, Willmann-Bell, 1998 | Juliuse päev, täheaeg, Päikese pikkus, asimuut/elevatsioon (juhendis) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84 ellipsoid (jaamade ja jälgede asukohad) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Kaugus, asimuut ja keskpunkt geodeetilisel joonel |
 
 ## METEOORIVOOLUDE ANDMED
 

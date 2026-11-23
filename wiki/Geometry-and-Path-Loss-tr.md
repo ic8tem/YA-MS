@@ -23,7 +23,7 @@ Yolun metin raporu (seçilebilir, böylece kopyalayabilirsiniz) ve sağda **Scat
 
 | Bölüm | İçerik |
 |---|---|
-| **YOL GEOMETRİSİ (küresel Dünya, R = 6372,7955 km)** | Yükseklikleriyle istasyon ve DX; mesafe, azimut ve ters azimut; orta nokta (lokatör ve koordinatlar); iz yüksekliği (radardan alındığında *<- Collm radarının ölçtüğü mod*); orta noktaya doğru anten elevasyonu |
+| **YOL GEOMETRİSİ (WGS84 elipsoidi)** | Yükseklikleriyle istasyon ve DX; mesafe, azimut ve ters azimut; orta nokta (lokatör ve koordinatlar); iz yüksekliği (radardan alındığında *<- Collm radarının ölçtüğü mod*); orta noktaya doğru anten elevasyonu |
 | **HOT A / HOT B (klasik hot spot'lar, anten yönlendirmesi için)** | Her biri için: lokatör, sizden azimut ve doğrudan yoldan sapma, DX'ten azimut, mesafe, elevasyon |
 | **ORTAK BÖLGE SINIRLARI** | Lob elevasyonuyla iz yüksekliğindeki menzil; azimutlarıyla A sınırı / B sınırı |
 | Anten | λ cinsinden boom, kazanç, yatay / dikey lob; Hot A ve Hot B'nin lobun içinde mi dışında mı olduğu |
@@ -33,7 +33,7 @@ Yolun metin raporu (seçilebilir, böylece kopyalayabilirsiniz) ve sağda **Scat
 
 ## Lokatör ve yol
 
-Lokatör (4, 6 ya da 8 karakter; karenin merkezi, IARU Maidenhead sistemi) [14]. Mesafe, azimut ve orta nokta, yarıçapı **r = 6372,7955 km** olan bir küre üzerinde büyük daire formülleriyle (Cerrotta–Sartori makalesi) [15–16]. Zamana bağlı hesaplar **orta noktaya** göredir, çünkü en iyi saat iki uç arasında 1,5 saate kadar farklı olabilir (SM6FHZ).
+Lokatör (4, 6 ya da 8 karakter; karenin merkezi, IARU Maidenhead sistemi) [14]. **WGS84** elipsoidinin jeodezik eğrisi üzerinde Karney yöntemiyle mesafe, azimut ve orta nokta (1.8.24 sürümünden itibaren; önceden Cerrotta–Sartori makalesindeki r = 6372,7955 km yarıçaplı küre [15–16]). Zamana bağlı hesaplar **orta noktaya** göredir, çünkü en iyi saat iki uç arasında 1,5 saate kadar farklı olabilir (SM6FHZ).
 
 ## Anten elevasyonu
 

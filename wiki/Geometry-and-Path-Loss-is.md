@@ -23,7 +23,7 @@ Stöðvar, tíðnisvið, hæð slóða, hæðarhorn geisla, bóma og fjarlægð 
 
 | Hluti | Innihald |
 |---|---|
-| **RÚMFRÆÐI LEIÐARINNAR (kúlulaga jörð, R = 6372,7955 km)** | Stöð og DX með hæðum; fjarlægð, áttarhorn og bakáttarhorn; miðpunktur (locator og hnit); hæð slóða (*← tíðasta gildi mælt af Collm-ratsjánni* þegar hún er tekin frá ratsjánni); hæðarhorn loftnets að miðpunktinum |
+| **RÚMFRÆÐI LEIÐARINNAR (WGS84-sporvala)** | Stöð og DX með hæðum; fjarlægð, áttarhorn og bakáttarhorn; miðpunktur (locator og hnit); hæð slóða (*← tíðasta gildi mælt af Collm-ratsjánni* þegar hún er tekin frá ratsjánni); hæðarhorn loftnets að miðpunktinum |
 | **HOT A / HOT B (hefðbundnir heitir blettir, til að beina loftneti)** | Fyrir hvorn: locator, áttarhorn frá þér og frávik frá beinu leiðinni, áttarhorn frá DX, fjarlægð, hæðarhorn |
 | **MÖRK SAMEIGINLEGA SVÆÐISINS** | Drægni í hæð slóða með hæðarhorni geislans; Mörk A / Mörk B með áttarhornum |
 | Loftnet | Bóma í λ, mögnun, láréttur / lóðréttur geisli; hvort Hot A og Hot B eru innan eða utan geislans |
@@ -33,7 +33,7 @@ Stöðvar, tíðnisvið, hæð slóða, hæðarhorn geisla, bóma og fjarlægð 
 
 ## Locator og leið
 
-Locator (4, 6 eða 8 stafir; miðja reitsins, Maidenhead-kerfi IARU) [14]. Fjarlægð, áttarhorn og miðpunktur með stórhringsformúlum á kúlu með radíus **r = 6372,7955 km** (grein Cerrotta–Sartori) [15–16]. Tímaháðir útreikningar miðast við **miðpunktinn**, því besti tíminn getur munað allt að 1,5 klukkustundum milli endanna tveggja (SM6FHZ).
+Locator (4, 6 eða 8 stafir; miðja reitsins, Maidenhead-kerfi IARU) [14]. Fjarlægð, stefna og miðpunktur á jarðlínu **WGS84**-sporvölunnar með aðferð Karneys (frá útgáfu 1.8.24; áður kúla með geisla r = 6372,7955 km úr grein Cerrotta–Sartori [15–16]). Tímaháðir útreikningar miðast við **miðpunktinn**, því besti tíminn getur munað allt að 1,5 klukkustundum milli endanna tveggja (SM6FHZ).
 
 ## Hæðarhorn loftnets
 

@@ -28,6 +28,7 @@ A cura di Costantino IC8TEM.
 | Alpine / musl ARM64 | - | [YA-MS-@VER@-alpine-arm64.tar.gz](https://github.com/ic8tem/YA-MS/releases/download/v@VER@/YA-MS-@VER@-alpine-arm64.tar.gz) |
 
 ## Novità
+Novità della 1.8.24: la Terra è l'ellissoide WGS84 (NGA) invece della sfera di 6372,7955 km: posizioni delle stazioni e delle scie e verticale locale sull'ellissoide; distanza, azimut e punto medio sulla geodetica con il metodo di Karney (libreria GeographicLib, licenza MIT). Le distanze cambiano al massimo dello 0,5% e gli azimut di qualche decimo di grado. Nuove fonti NGA WGS 84 e Karney 2013 nei documenti e nei Crediti, in 36 lingue. Nei documenti in arabo, ebraico e urdu niente corsivo (usciva a quadratini).
 Novità della 1.8.23: rifrazione troposferica facoltativa dal modello GFS (spenta all'avvio); Giappone: conteggi HRO mensili di IPRMO e, entro 3500 km dal Giappone, fonte dei conteggi in diretta dalle immagini HROFFT di Ogaki; guadagno Yagi dalla media VE7BQH; manuale dei calcoli ampliato (quota delle scie, Collm, Draconidi, Zhou 2001).
 Novità della 1.8.22: nelle note della release la tabella «Scarica la versione per il tuo sistema» con il link a ogni pacchetto; video di presentazione (italiano, inglese, tedesco) nella pagina Video del wiki.
 

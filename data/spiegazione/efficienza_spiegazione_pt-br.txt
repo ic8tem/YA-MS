@@ -20,8 +20,8 @@ TAG|RILIEVO|Gráfico de Collm de 5/11/2026: moda 89,5 km, média 88,6 km, desvio
 TAG|RILIEVO|DJ5HG [18] e o QTFGUI [17] usam uma altitude fixa de 102 km; o programa prefere o dado medido pelo radar. A Recomendação ITU-R P.843 [24] dá uma altitude média h = 124 − 17·log10(f) km: cerca de 97 km a 36,2 MHz e 87 km a 144 MHz, em linha com a moda de Collm (89,5 km em 5/11/2026).
 H1|3. A geometria do percurso
 H2|3.1 Terra, estações e ponto médio
-TAG|FONTE|Terra esférica de raio r = 6372,7955 km [1].
-TAG|SCELTA|O percurso é sempre o real entre o locator da estação e o do correspondente. Distância, azimute e ponto médio calculam-se com as fórmulas do círculo máximo.
+TAG|FONTE|Elipsoide WGS84 [37]: semieixo maior 6378,137 km, achatamento 1/298,257223563. Para as fórmulas esféricas (elevação do artigo, alcance, refração) o programa usa o raio médio do elipsoide, r = 6371,0088 km; até a versão 1.8.23 usava a esfera de raio 6372,7955 km [1].
+TAG|SCELTA|O percurso é sempre o real entre o locator da estação e o do correspondente. A partir da versão 1.8.24 a distância, o azimute e o ponto médio são calculados sobre a geodésica do elipsoide com o método de Karney [38]: em relação à esfera, as distâncias mudam no máximo 0,5% e os azimutes alguns décimos de grau.
 TAG|FONTE|Os cálculos que dependem da hora referem-se ao ponto médio do percurso: entre as duas extremidades a melhor hora pode diferir até 1,5 horas (SM6FHZ [4]).
 H2|3.2 Elevação da antena
 TAG|FONTE|A elevação para o ponto de reflexão calcula-se com a fórmula do artigo (Imagem 7) [1], com x = distância / r, H altitude do rastro, h altitude da estação:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - tabelas de ganho de Yagi para 50, 144 e 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (cópias em qsl.net/dk7zb e sm2cew.com).
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

@@ -23,7 +23,7 @@ The stations, band, trail height, lobe elevation, boom and hot spot distance com
 
 | Section | Content |
 |---|---|
-| **PATH GEOMETRY (spherical Earth, R = 6372.7955 km)** | Station and DX with heights; distance, azimuth and back azimuth; midpoint (locator and coordinates); trail height (*← mode measured by the Collm radar* when taken from the radar); antenna elevation towards the midpoint |
+| **PATH GEOMETRY (WGS84 ellipsoid)** | Station and DX with heights; distance, azimuth and back azimuth; midpoint (locator and coordinates); trail height (*← mode measured by the Collm radar* when taken from the radar); antenna elevation towards the midpoint |
 | **HOT A / HOT B (classic hot spots, for antenna pointing)** | For each: locator, azimuth from you and offset from the direct path, azimuth from the DX, distance, elevation |
 | **COMMON ZONE LIMITS** | Range at trail height with the lobe elevation; Limit A / Limit B with azimuths |
 | Antenna | Boom in λ, gain, horizontal / vertical lobe; whether Hot A and Hot B are inside or outside the lobe |
@@ -33,7 +33,7 @@ The stations, band, trail height, lobe elevation, boom and hot spot distance com
 
 ## Locator and path
 
-Locator (4, 6 or 8 characters; centre of the square, IARU Maidenhead system) [14]. Distance, azimuth and midpoint with great-circle formulas on a sphere of radius **r = 6372.7955 km** (Cerrotta–Sartori article) [15–16]. Time-dependent calculations refer to the **midpoint**, because the best time can differ by up to 1.5 hours between the two ends (SM6FHZ).
+Locator (4, 6 or 8 characters; centre of the square, IARU Maidenhead system) [14]. Distance, azimuth and midpoint on the geodesic of the **WGS84** ellipsoid with Karney's method (from version 1.8.24; before, a sphere of radius r = 6372.7955 km from the Cerrotta–Sartori article [15–16]). Time-dependent calculations refer to the **midpoint**, because the best time can differ by up to 1.5 hours between the two ends (SM6FHZ).
 
 ## Antenna elevation
 

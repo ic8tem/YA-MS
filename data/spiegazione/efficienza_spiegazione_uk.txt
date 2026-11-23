@@ -20,8 +20,8 @@ TAG|RILIEVO|Графік Collm від 5/11/2026: мода 89,5 km, середн�
 TAG|RILIEVO|DJ5HG [18] і QTFGUI [17] використовують фіксовану висоту 102 km; програма надає перевагу висоті, виміряній радаром. Рекомендація ITU-R P.843 [24] дає середню висоту h = 124 − 17·log10(f) km: близько 97 km на 36,2 MHz і 87 km на 144 MHz, що узгоджується з модою Collm (89,5 km 5/11/2026).
 H1|3. Геометрія траси
 H2|3.1 Земля, станції та середина траси
-TAG|FONTE|Сферична Земля радіусом r = 6372,7955 km [1].
-TAG|SCELTA|Траса завжди реальна, між локатором станції та локатором кореспондента. Відстань, азимут і середину траси обчислюють за формулами великого кола.
+TAG|FONTE|Еліпсоїд WGS84 [37]: велика піввісь 6378,137 km, стиснення 1/298,257223563. Для сферичних формул (кут місця зі статті, дальність, рефракція) програма використовує середній радіус еліпсоїда, r = 6371,0088 km; до версії 1.8.23 вона використовувала сферу радіусом 6372,7955 km [1].
+TAG|SCELTA|Траса завжди реальна, між локатором станції та локатором кореспондента. З версії 1.8.24 відстань, азимут і середину траси обчислюють по геодезичній лінії еліпсоїда методом Карні [38]: порівняно зі сферою відстані змінюються не більше ніж на 0,5%, а азимути — на кілька десятих градуса.
 TAG|FONTE|Розрахунки, що залежать від часу, стосуються середини траси: на двох її кінцях найкращий час може відрізнятися до 1,5 години (SM6FHZ [4]).
 H2|3.2 Кут місця антени
 TAG|FONTE|Кут місця на точку відбиття розраховують за формулою зі статті (рисунок 7) [1], де x = відстань / r, H — висота сліду, h — висота станції:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - таблиці підсилення антен Yagi для 50, 144 і 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (копії на qsl.net/dk7zb і sm2cew.com).
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

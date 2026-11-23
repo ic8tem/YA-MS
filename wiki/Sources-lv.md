@@ -33,6 +33,8 @@ Cilne **Avoti** uzskaita visus darbus, uz kuriem balstīta YA-MS, sagrupētus k�
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (David Tanner VK3AUU Yagi antenas) | NEC simulācijas pastiprinājuma līknes pārbaudei un horizontālās ziedlapiņas korekcijai (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Pastiprinājuma novērtējumi VK3AUU, WA2PHW un DJ9BV variantiem |
 | J. **Meeus** – *Astronomical Algorithms*, 2nd ed., Willmann-Bell, 1998 | Jūlija diena, zvaigžņu laiks, Saules garums, azimuts/elevācija (rokasgrāmatā) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84 elipsoīds (staciju un sliežu pozīcijas) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Attālums, azimuts un viduspunkts uz ģeodēziskās līnijas |
 
 ## PLŪSMU DATI
 

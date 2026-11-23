@@ -33,6 +33,8 @@ Zakładka **Źródła** wymienia wszystkie prace, na których opiera się YA-MS,
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (anteny Yagi VK3AUU autorstwa Davida Tannera) | Symulacje NEC użyte do weryfikacji krzywej zysku i korekty listka poziomego (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Szacunki zysku dla wariantów VK3AUU, WA2PHW i DJ9BV |
 | J. **Meeus** – *Astronomical Algorithms*, wyd. 2, Willmann-Bell, 1998 | Dzień juliański, czas gwiazdowy, długość ekliptyczna Słońca, azymut/elewacja (w podręczniku) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | Elipsoida WGS84 (położenia stacji i śladów) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Odległość, azymut i punkt środkowy na linii geodezyjnej |
 
 ## DANE ROJÓW
 

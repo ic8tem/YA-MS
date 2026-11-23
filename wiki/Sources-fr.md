@@ -33,6 +33,8 @@ L'onglet **Sources** énumère tous les travaux sur lesquels repose YA-MS, regro
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data* ; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design* ; *70-CM Yagi Stacks Part 2* (Yagi VK3AUU de David Tanner) | Simulations NEC utilisées pour vérifier la courbe de gain et corriger le lobe horizontal (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Estimations du gain pour les variantes VK3AUU, WA2PHW et DJ9BV |
 | J. **Meeus** – *Astronomical Algorithms*, 2e éd., Willmann-Bell, 1998 | Jour julien, temps sidéral, longitude solaire, azimut/élévation (dans le manuel) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | Ellipsoïde WGS84 (positions des stations et des traînées) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Distance, azimut et point milieu sur la géodésique |
 
 ## DONNÉES DES ESSAIMS
 

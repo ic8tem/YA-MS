@@ -20,8 +20,8 @@ TAG|RILIEVO|Gráfico de Collm del 5/11/2026: moda 89,5 km, media 88,6 km, desvia
 TAG|RILIEVO|DJ5HG [18] y QTFGUI [17] usan una altura fija de 102 km; el programa prefiere el dato medido por el radar. La Recomendación ITU-R P.843 [24] da una altura media h = 124 − 17·log10(f) km: unos 97 km a 36,2 MHz y 87 km a 144 MHz, en línea con la moda de Collm (89,5 km el 5/11/2026).
 H1|3. La geometría del trayecto
 H2|3.1 Tierra, estaciones y punto medio
-TAG|FONTE|Tierra esférica de radio r = 6372,7955 km [1].
-TAG|SCELTA|El trayecto es siempre el real entre el locator de la estación y el del corresponsal. Distancia, acimut y punto medio se calculan con las fórmulas del círculo máximo.
+TAG|FONTE|Elipsoide WGS84 [37]: semieje mayor 6378,137 km, achatamiento 1/298,257223563. Para las fórmulas esféricas (elevación del artículo, alcance, refracción) el programa usa el radio medio del elipsoide, r = 6371,0088 km; hasta la versión 1.8.23 usaba la esfera de radio 6372,7955 km [1].
+TAG|SCELTA|El trayecto es siempre el real entre el locator de la estación y el del corresponsal. Desde la versión 1.8.24 la distancia, el azimut y el punto medio se calculan sobre la geodésica del elipsoide con el método de Karney [38]: respecto a la esfera, las distancias cambian como máximo un 0,5% y los azimuts unas décimas de grado.
 TAG|FONTE|Los cálculos que dependen de la hora se refieren al punto medio del trayecto: entre los dos extremos la mejor hora puede diferir hasta 1,5 horas (SM6FHZ [4]).
 H2|3.2 Elevación de la antena
 TAG|FONTE|La elevación hacia el punto de reflexión se calcula con la fórmula del artículo (Imagen 7) [1], con x = distancia / r, H altura de la estela, h altura de la estación:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - tablas de ganancia de Yagi para 50, 144 y 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (copias en qsl.net/dk7zb y sm2cew.com).
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

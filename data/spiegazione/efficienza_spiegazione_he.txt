@@ -20,8 +20,8 @@ TAG|RILIEVO|גרף Collm מ-5/11/2026: ערך שכיח 89,5 km, ממוצע 88,6 
 TAG|RILIEVO|DJ5HG [18] ו-QTFGUI [17] משתמשים בגובה קבוע של 102 km; התוכנה מעדיפה את הנתון שנמדד במכ״ם. המלצה ITU-R P.843 [24] נותנת גובה ממוצע h = 124 − 17·log10(f) km: כ-97 km ב-36,2 MHz ו-87 km ב-144 MHz, בהתאמה לערך השכיח של Collm (89,5 km ב-5/11/2026).
 H1|3. הגאומטריה של הנתיב
 H2|3.1 כדור הארץ, התחנות ונקודת האמצע
-TAG|FONTE|כדור ארץ כדורי ברדיוס r = 6372,7955 km [1].
-TAG|SCELTA|הנתיב הוא תמיד הנתיב האמיתי בין ה-locator של התחנה לזה של תחנת ה-DX. המרחק, האזימוט ונקודת האמצע מחושבים בנוסחאות המעגל הגדול.
+TAG|FONTE|אליפסואיד WGS84 [37]: חצי הציר הראשי 6378,137 km, השטחה 1/298.257223563. לנוסחאות הכדוריות (זווית ההגבהה מהמאמר, הטווח, השבירה) התוכנה משתמשת ברדיוס הממוצע של האליפסואיד, r = 6371,0088 km; עד גרסה 1.8.23 השתמשה בכדור ברדיוס 6372,7955 km [1].
+TAG|SCELTA|הנתיב הוא תמיד הנתיב האמיתי בין ה-locator של התחנה לזה של תחנת ה-DX. מגרסה 1.8.24 המרחק, האזימוט ונקודת האמצע מחושבים על הגאודזה של האליפסואיד בשיטת Karney [38]: לעומת הכדור, המרחקים משתנים לכל היותר ב-0,5% והאזימוטים בכמה עשיריות מעלה.
 TAG|FONTE|החישובים התלויים בשעה מתייחסים לנקודת האמצע של הנתיב: בין שני הקצוות השעה הטובה ביותר יכולה להשתנות עד 1,5 שעות (SM6FHZ [4]).
 H2|3.2 הגבהת האנטנה
 TAG|FONTE|ההגבהה לעבר נקודת ההחזרה מחושבת בנוסחת המאמר (תמונה 7) [1], עם x = מרחק / r, H גובה השובל, h גובה התחנה:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - טבלאות הגבר של אנטנות Yagi ל-50, 144 ו-432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (עותקים ב-qsl.net/dk7zb וב-sm2cew.com).
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

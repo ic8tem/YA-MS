@@ -20,8 +20,8 @@ TAG|RILIEVO|5/11/2026 کا Collm گراف: موڈ 89,5 km، اوسط 88,6 km، �
 TAG|RILIEVO|DJ5HG [18] اور QTFGUI [17] 102 km کی مقررہ اونچائی استعمال کرتے ہیں؛ پروگرام ریڈار سے ناپی گئی قدر کو ترجیح دیتا ہے۔ ITU-R P.843 سفارش [24] اوسط اونچائی h = 124 − 17·log10(f) km دیتی ہے: 36,2 MHz پر تقریباً 97 km اور 144 MHz پر 87 km، جو Collm کے موڈ (5/11/2026 کو 89,5 km) کے مطابق ہے۔
 H1|3. راستے کی جیومیٹری
 H2|3.1 زمین، اسٹیشن اور وسطی نقطہ
-TAG|FONTE|رداس r = 6372,7955 km والی کروی زمین [1]۔
-TAG|SCELTA|راستہ ہمیشہ اسٹیشن کے locator اور DX اسٹیشن کے locator کے درمیان حقیقی راستہ ہوتا ہے۔ فاصلہ، ازیمتھ اور وسطی نقطہ عظیم دائرے کے فارمولوں سے حساب کیے جاتے ہیں۔
+TAG|FONTE|WGS84 بیضوی کرہ [37]: نیم بڑا محور 6378,137 km، چپٹا پن 1/298,257223563۔ کروی فارمولوں (مضمون کا زاویۂ بلندی، رسائی، انعطاف) کے لیے پروگرام بیضوی کرے کا اوسط رداس r = 6371,0088 km استعمال کرتا ہے؛ ورژن 1.8.23 تک یہ 6372,7955 km رداس والا کرہ استعمال کرتا تھا [1]۔
+TAG|SCELTA|راستہ ہمیشہ اسٹیشن کے locator اور DX اسٹیشن کے locator کے درمیان حقیقی راستہ ہوتا ہے۔ ورژن 1.8.24 سے فاصلہ، سمت اور درمیانی نقطہ بیضوی کرے کی جیوڈیسک پر Karney کے طریقے [38] سے نکالے جاتے ہیں: کرے کے مقابلے میں فاصلے زیادہ سے زیادہ 0,5% اور سمتیں درجے کے چند دسویں حصے بدلتی ہیں۔
 TAG|FONTE|وقت پر منحصر حسابات راستے کے وسطی نقطے کے لیے کیے جاتے ہیں: دونوں سروں کے درمیان بہترین وقت میں 1,5 گھنٹے تک کا فرق ہو سکتا ہے (SM6FHZ [4])۔
 H2|3.2 اینٹینا کی بلندی
 TAG|FONTE|انعکاس کے نقطے کی طرف بلندی کا حساب مضمون کے فارمولے (تصویر 7) [1] سے کیا جاتا ہے، جہاں x = فاصلہ / r، H لکیر کی اونچائی، h اسٹیشن کی اونچائی:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - 50، 144 اور 432 MHz کے لیے Yagi گین جدولیں: dxmaps.com/VE7BQH6.html، dxmaps.com/VE7BQH.html، atlas.dxmaps.com/VE7BQH70.html (نقول qsl.net/dk7zb اور sm2cew.com پر)۔
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

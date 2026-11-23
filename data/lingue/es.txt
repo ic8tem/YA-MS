@@ -163,7 +163,7 @@ Formato tabella del bollettino ({0}/{1}): se il file contiene piu' osservatori v
 Foto	Foto
 Frequenza di arrivo MHz	Frecuencia de destino MHz
 G3WZT, DH8BQA, geekshed.co.uk, manuale WSJT-X, WB2FKO (pings), IU6GIR (attivita' 143,050 MHz), IARU Regione 1 VHF Handbook	G3WZT, DH8BQA, geekshed.co.uk, manual de WSJT-X, WB2FKO (pings), IU6GIR (actividad 143,050 MHz), IARU Región 1 VHF Handbook
-GEOMETRIA DELLA TRATTA (Terra sferica, R = 6372,7955 km)	GEOMETRÍA DEL TRAYECTO (Tierra esférica, R = 6372,7955 km)
+GEOMETRIA DELLA TRATTA (ellissoide WGS84)	GEOMETRÍA DEL TRAYECTO (elipsoide WGS84)
 GMN e CMOR alle {0} UTC: {1} errori ({2})	GMN y CMOR a las {0} UTC: {1} errores ({2})
 GMN e CMOR controllati alle {0} UTC ({1} file nuovi). Dati GMN: CC BY 4.0.	GMN y CMOR comprobados a las {0} UTC ({1} archivos nuevos). Datos GMN: CC BY 4.0.
 GRAVES in linea diretta: az {0:F0}°	GRAVES en línea directa: az {0:F0}°
@@ -919,3 +919,5 @@ I conteggi HRO mensili del Giappone (fari JA2SDA, JE3AKE, JJ1RLQ).	Los conteos H
 Il conteggio automatico in diretta dei fari giapponesi a 53 MHz.	El conteo automático en directo de las balizas japonesas en 53 MHz.
 I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	Los perfiles de temperatura y humedad para la refracción troposférica opcional.
 La formula della rifrattività e l'atmosfera di riferimento.	La fórmula de la refractividad y la atmósfera de referencia.
+L'ellissoide della Terra (semiasse e schiacciamento).	El elipsoide terrestre (semieje mayor y achatamiento).
+Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	Distancias, azimuts y puntos del trayecto sobre la geodésica del elipsoide WGS84.

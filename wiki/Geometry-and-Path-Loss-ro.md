@@ -23,7 +23,7 @@ Stațiile, banda, înălțimea urmei, elevația lobului, boom-ul și distanța h
 
 | Secțiune | Conținut |
 |---|---|
-| **GEOMETRIA TRASEULUI (Pământ sferic, R = 6372,7955 km)** | Stația și DX-ul cu înălțimile lor; distanța, azimutul și azimutul invers; punctul median (locator și coordonate); înălțimea urmei (*← moda măsurată de radarul din Collm* când este luată de la radar); elevația antenei spre punctul median |
+| **GEOMETRIA TRASEULUI (elipsoidul WGS84)** | Stația și DX-ul cu înălțimile lor; distanța, azimutul și azimutul invers; punctul median (locator și coordonate); înălțimea urmei (*← moda măsurată de radarul din Collm* când este luată de la radar); elevația antenei spre punctul median |
 | **HOT A / HOT B (hot spot-uri clasice, pentru orientarea antenei)** | Pentru fiecare: locatorul, azimutul de la dumneavoastră și decalajul față de traseul direct, azimutul de la DX, distanța, elevația |
 | **LIMITELE ZONEI COMUNE** | Raza la înălțimea urmei cu elevația lobului; Limita A / Limita B cu azimuturile |
 | Antenă | Boom-ul în λ, câștigul, lobul orizontal / vertical; dacă Hot A și Hot B sunt în interiorul sau în afara lobului |
@@ -33,7 +33,7 @@ Stațiile, banda, înălțimea urmei, elevația lobului, boom-ul și distanța h
 
 ## Locator și traseu
 
-Locator (4, 6 sau 8 caractere; centrul pătratului, sistemul IARU Maidenhead) [14]. Distanța, azimutul și punctul median cu formule de cerc mare pe o sferă cu raza **r = 6372,7955 km** (articolul Cerrotta–Sartori) [15–16]. Calculele care depind de timp se referă la **punctul median**, deoarece ora optimă poate diferi cu până la 1,5 ore între cele două capete (SM6FHZ).
+Locator (4, 6 sau 8 caractere; centrul pătratului, sistemul IARU Maidenhead) [14]. Distanța, azimutul și punctul de mijloc pe geodezica elipsoidului **WGS84** cu metoda lui Karney (începând cu versiunea 1.8.24; înainte, sferă cu raza r = 6372,7955 km din articolul Cerrotta–Sartori [15–16]). Calculele care depind de timp se referă la **punctul median**, deoarece ora optimă poate diferi cu până la 1,5 ore între cele două capete (SM6FHZ).
 
 ## Elevația antenei
 

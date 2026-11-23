@@ -20,8 +20,8 @@ TAG|RILIEVO|กราฟ Collm วันที่ 5/11/2026: ฐานนิย�
 TAG|RILIEVO|DJ5HG [18] และ QTFGUI [17] ใช้ความสูงคงที่ 102 km โปรแกรมเลือกใช้ข้อมูลที่วัดได้จากเรดาร์มากกว่า ข้อแนะนำ ITU-R P.843 [24] ให้ความสูงเฉลี่ย h = 124 − 17·log10(f) km: ประมาณ 97 km ที่ 36.2 MHz และ 87 km ที่ 144 MHz สอดคล้องกับฐานนิยมของ Collm (89.5 km เมื่อ 5/11/2026)
 H1|3. เรขาคณิตของเส้นทาง
 H2|3.1 โลก สถานี และจุดกึ่งกลาง
-TAG|FONTE|โลกทรงกลมรัศมี r = 6372.7955 km [1]
-TAG|SCELTA|เส้นทางเป็นเส้นทางจริงระหว่าง locator ของสถานีกับ locator ของสถานี DX เสมอ ระยะทาง มุมอะซิมุท และจุดกึ่งกลางคำนวณด้วยสูตรวงกลมใหญ่
+TAG|FONTE|ทรงรี WGS84 [37]: กึ่งแกนเอก 6378.137 km ความแป้น 1/298.257223563 สำหรับสูตรทรงกลม (มุมเงยจากบทความ ระยะ การหักเห) โปรแกรมใช้รัศมีเฉลี่ยของทรงรี r = 6371.0088 km จนถึงรุ่น 1.8.23 โปรแกรมใช้ทรงกลมรัศมี 6372.7955 km [1]
+TAG|SCELTA|เส้นทางเป็นเส้นทางจริงระหว่าง locator ของสถานีกับ locator ของสถานี DX เสมอ ตั้งแต่รุ่น 1.8.24 ระยะทาง มุมทิศ และจุดกึ่งกลางคำนวณบนเส้นจีโอเดสิกของทรงรีด้วยวิธีของ Karney [38] เมื่อเทียบกับทรงกลม ระยะทางเปลี่ยนไม่เกิน 0.5% และมุมทิศเปลี่ยนไม่กี่ทศนิยมขององศา
 TAG|FONTE|การคำนวณที่ขึ้นกับเวลาอ้างอิงจุดกึ่งกลางของเส้นทาง: ระหว่างปลายทั้งสอง ชั่วโมงที่ดีที่สุดอาจต่างกันได้ถึง 1.5 ชั่วโมง (SM6FHZ [4])
 H2|3.2 มุมเงยของเสาอากาศ
 TAG|FONTE|มุมเงยไปยังจุดสะท้อนคำนวณด้วยสูตรจากบทความ (ภาพที่ 7) [1] โดย x = ระยะทาง / r, H คือความสูงของรอยดาวตก, h คือความสูงของสถานี:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - ตารางอัตราขยายของ Yagi สำหรับ 50, 144 และ 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (สำเนาที่ qsl.net/dk7zb และ sm2cew.com)
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

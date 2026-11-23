@@ -33,6 +33,8 @@ Tab **Sumber** mencantumkan setiap karya yang menjadi dasar YA-MS, dikelompokkan
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (Yagi VK3AUU karya David Tanner) | Simulasi NEC yang dipakai untuk memverifikasi kurva penguatan dan mengoreksi lobus horizontal (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Perkiraan penguatan untuk varian VK3AUU, WA2PHW dan DJ9BV |
 | J. **Meeus** – *Astronomical Algorithms*, edisi ke-2, Willmann-Bell, 1998 | Hari Julian, waktu sideris, bujur matahari, azimut/elevasi (dalam manual) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | Elipsoid WGS84 (posisi stasiun dan jejak) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Jarak, azimut, dan titik tengah pada geodesik |
 
 ## DATA HUJAN METEOR
 

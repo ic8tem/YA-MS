@@ -20,8 +20,8 @@ TAG|RILIEVO|2026년 11월 5일 Collm 그래프: 최빈값 89.5 km, 평균 88.6 k
 TAG|RILIEVO|DJ5HG [18]와 QTFGUI [17]는 102 km의 고정 고도를 사용하지만, 이 프로그램은 레이더 실측값을 우선합니다. ITU-R 권고 P.843 [24]은 평균 고도 h = 124 − 17·log10(f) km를 제시합니다: 36.2 MHz에서 약 97 km, 144 MHz에서 87 km로, Collm의 최빈값 (2026년 11월 5일 89.5 km)과 부합합니다.
 H1|3. 경로의 기하학
 H2|3.1 지구, 국, 중간점
-TAG|FONTE|반지름 r = 6372.7955 km인 구형 지구 [1].
-TAG|SCELTA|경로는 항상 자국의 로케이터와 상대국의 로케이터 사이의 실제 경로입니다. 거리, 방위각, 중간점은 대원 공식으로 계산합니다.
+TAG|FONTE|WGS84 타원체 [37]: 장반경 6378.137 km, 편평률 1/298.257223563. 구면 공식(논문의 앙각, 도달 거리, 굴절)에는 타원체의 평균 반경 r = 6371.0088 km를 쓴다. 버전 1.8.23까지는 반경 6372.7955 km의 구를 썼다 [1].
+TAG|SCELTA|경로는 항상 자국의 로케이터와 상대국의 로케이터 사이의 실제 경로입니다. 버전 1.8.24부터 거리, 방위각, 중간점은 Karney의 방법 [38]으로 타원체의 측지선 위에서 계산한다. 구와 비교하면 거리는 최대 0.5%, 방위각은 십분의 몇 도 바뀐다.
 TAG|FONTE|시각에 따라 달라지는 계산은 경로의 중간점을 기준으로 합니다: 양 끝 사이에서 최적 시간이 최대 1.5시간까지 차이 날 수 있기 때문입니다 (SM6FHZ [4]).
 H2|3.2 안테나 앙각
 TAG|FONTE|반사점을 향한 앙각은 기사의 공식 (그림 7) [1]으로 계산합니다. x = 거리 / r, H는 흔적의 고도, h는 국의 고도:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - 50, 144, 432 MHz 야기 이득표: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (사본: qsl.net/dk7zb, sm2cew.com).
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

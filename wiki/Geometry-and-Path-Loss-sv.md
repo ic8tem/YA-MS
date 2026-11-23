@@ -23,7 +23,7 @@ Stationer, band, spårhöjd, lobelevation, bom och hot spot-avstånd kommer frå
 
 | Avsnitt | Innehåll |
 |---|---|
-| **STRÄCKANS GEOMETRI (sfärisk jord, R = 6372,7955 km)** | Station och DX med höjder; avstånd, azimut och omvänd azimut; mittpunkt (lokator och koordinater); spårhöjd (*← typvärde uppmätt av Collm-radarn* när den tas från radarn); antennelevation mot mittpunkten |
+| **STRÄCKANS GEOMETRI (WGS84-ellipsoid)** | Station och DX med höjder; avstånd, azimut och omvänd azimut; mittpunkt (lokator och koordinater); spårhöjd (*← typvärde uppmätt av Collm-radarn* när den tas från radarn); antennelevation mot mittpunkten |
 | **HOT A / HOT B (klassiska hot spots, för antennriktning)** | För var och en: lokator, azimut från dig och förskjutning från den direkta sträckan, azimut från DX, avstånd, elevation |
 | **GRÄNSER FÖR DEN GEMENSAMMA ZONEN** | Räckvidd på spårhöjden med lobelevationen; Gräns A / Gräns B med azimut |
 | Antenn | Bom i λ, förstärkning, horisontell / vertikal lob; om Hot A och Hot B ligger inom eller utanför loben |
@@ -33,7 +33,7 @@ Stationer, band, spårhöjd, lobelevation, bom och hot spot-avstånd kommer frå
 
 ## Lokator och sträcka
 
-Lokator (4, 6 eller 8 tecken; rutans mittpunkt, IARU:s Maidenhead-system) [14]. Avstånd, azimut och mittpunkt med storcirkelformler på en sfär med radien **r = 6372,7955 km** (artikeln av Cerrotta–Sartori) [15–16]. Tidsberoende beräkningar avser **mittpunkten**, eftersom den bästa tiden kan skilja upp till 1,5 timmar mellan de två ändarna (SM6FHZ).
+Lokator (4, 6 eller 8 tecken; rutans mittpunkt, IARU:s Maidenhead-system) [14]. Avstånd, azimut och mittpunkt på geodeten på **WGS84**-ellipsoiden med Karneys metod (från version 1.8.24; tidigare ett klot med radien r = 6372,7955 km från artikeln Cerrotta–Sartori [15–16]). Tidsberoende beräkningar avser **mittpunkten**, eftersom den bästa tiden kan skilja upp till 1,5 timmar mellan de två ändarna (SM6FHZ).
 
 ## Antennelevation
 

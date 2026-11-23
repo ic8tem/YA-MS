@@ -20,8 +20,8 @@ TAG|RILIEVO|Collmi graafik 5/11/2026: mood 89,5 km, keskmine 88,6 km, standardh�
 TAG|RILIEVO|DJ5HG [18] ja QTFGUI [17] kasutavad fikseeritud kõrgust 102 km; programm eelistab radari mõõdetud väärtust. Soovitus ITU-R P.843 [24] annab keskmise kõrguse h = 124 − 17·log10(f) km: umbes 97 km sagedusel 36,2 MHz ja 87 km sagedusel 144 MHz, kooskõlas Collmi moodiga (89,5 km 5/11/2026).
 H1|3. Trassi geomeetria
 H2|3.1 Maa, jaamad ja keskpunkt
-TAG|FONTE|Sfääriline Maa raadiusega r = 6372,7955 km [1].
-TAG|SCELTA|Trass on alati tegelik trass jaama ja korrespondendi lokaatori vahel. Kaugus, asimuut ja keskpunkt arvutatakse suurringi valemitega.
+TAG|FONTE|WGS84 ellipsoid [37]: suur pooltelg 6378,137 km, lapikus 1/298,257223563. Sfääriliste valemite jaoks (artikli kõrgusnurk, ulatus, murdumine) kasutab programm ellipsoidi keskmist raadiust r = 6371,0088 km; kuni versioonini 1.8.23 kasutas see kera raadiusega 6372,7955 km [1].
+TAG|SCELTA|Trass on alati tegelik trass jaama ja korrespondendi lokaatori vahel. Alates versioonist 1.8.24 arvutatakse kaugus, asimuut ja keskpunkt ellipsoidi geodeetilisel joonel Karney meetodiga [38]: kera suhtes muutuvad kaugused kuni 0,5% ja asimuudid mõne kümnendiku kraadi võrra.
 TAG|FONTE|Ajast sõltuvad arvutused viitavad trassi keskpunktile: kahe otspunkti vahel võib parim aeg erineda kuni 1,5 tundi (SM6FHZ [4]).
 H2|3.2 Antenni kõrgusnurk
 TAG|FONTE|Kõrgusnurk peegelduspunkti suunas arvutatakse artikli valemiga (joonis 7) [1], kus x = kaugus / r, H on jälje kõrgus, h jaama kõrgus:
@@ -181,3 +181,5 @@ SRC|33. Global Meteor Network - shower flux and daily trajectory summary, global
 SRC|34. M. Bundscherer - "Meteor Detection based on Forward Scattering with SDR and the BRAMS Beacon", WGN, Journal of the IMO 54(2), April 2026; code and data (Sonneberg, August 2026): github.com/maxbundscherer/meteor-scatter-v2.
 SRC|35. HamSCI Meteor Scatter QSO Party, 11-12 August 2025 - scoring files and cleansed PSKReporter data (G. Mikitin, N. Frissell), Zenodo, DOI 10.5281/zenodo.18109759, CC BY 4.0.
 SRC|36. L. Edwards VE7BQH - Yagi võimendustabelid sagedustele 50, 144 ja 432 MHz: dxmaps.com/VE7BQH6.html, dxmaps.com/VE7BQH.html, atlas.dxmaps.com/VE7BQH70.html (koopiad: qsl.net/dk7zb ja sm2cew.com).
+SRC|37. National Geospatial-Intelligence Agency - "Department of Defense World Geodetic System 1984 - Its Definition and Relationships with Local Geodetic Systems", NGA.STND.0036_1.0.0_WGS84, 2014 (NIMA TR8350.2).
+SRC|38. C. F. F. Karney - "Algorithms for geodesics", Journal of Geodesy 87 (2013) 43-55, doi:10.1007/s00190-012-0578-z; GeographicLib (MIT).

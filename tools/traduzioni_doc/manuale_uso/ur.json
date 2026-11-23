@@ -219,7 +219,6 @@
  "16. Contatti": "16. رابطہ",
  "YA-MS è un programma gratuito per i radioamatori, a cura di Costantino IC8TEM (Capri). Segnalazioni, proposte e dati di confronto sono benvenuti: indica il sistema operativo, la versione di YA-MS e che cosa hai fatto. Codice e release: github.com/ic8tem/YA-MS. Contatti: ccerrotta@gmail.com, ic8tem@gmail.com, www.qrz.com/db/ic8tem. Chi vuole sostenere il lavoro può farlo su ko-fi.com/ic8tem.": "YA-MS ریڈیو شوقینوں کے لیے ایک مفت پروگرام ہے، جسے Costantino IC8TEM (Capri) نے تیار کیا ہے۔ رپورٹیں، تجاویز اور موازنے کا ڈیٹا خوش آئند ہیں: آپریٹنگ سسٹم، YA-MS کا ورژن اور آپ نے کیا کیا، یہ بتائیں۔ کوڈ اور releases: github.com/ic8tem/YA-MS۔ رابطہ: ccerrotta@gmail.com، ic8tem@gmail.com، www.qrz.com/db/ic8tem۔ جو اس کام کی حمایت کرنا چاہے وہ ko-fi.com/ic8tem پر کر سکتا ہے۔",
  "Manuale d'uso di YA-MS": "YA-MS کی استعمال کی ہدایات",
- "Versione 1.8.23 - a cura di Costantino IC8TEM - novembre 2026": "ورژن 1.8.23 - تیار کردہ: Costantino IC8TEM - نومبر 2026",
  "PROCEDURA": "طریقۂ کار",
  "NOTA": "نوٹ",
  "ATTENZIONE": "انتباہ",
@@ -284,5 +283,6 @@
  "Giappone: conteggi HRO mensili (IPRMO)...: apre la finestra con i conteggi orari a mano degli osservatori giapponesi dei file mensili RMOJ. Scegli il mese e l'osservatore; Aggiorna da IPRMO scarica i mesi nuovi. Il primo grafico è la media del mese per ora UTC traslata alla tua frequenza, il secondo i totali giornalieri.": "جاپان: ماہانہ HRO گنتیاں (IPRMO)...: RMOJ ماہانہ فائلوں سے جاپانی مشاہدین کی فی گھنٹہ ہاتھ کی گنتیوں والی ونڈو کھولتا ہے۔ مہینہ اور مشاہد چنیں؛ IPRMO سے تازہ کریں نئے مہینے اتارتا ہے۔ پہلا چارٹ آپ کی تعدد پر تبدیل شدہ فی UTC گھنٹہ ماہانہ اوسط ہے، دوسرا روزانہ میزان۔",
  "I conteggi automatici di Ogaki sono più alti di quelli a mano: sono valori relativi. Per tararli confrontali con i file mensili RMOJ dello stesso faro nella finestra del Giappone.": "اوگاکی کی خودکار گنتیاں ہاتھ کی گنتیوں سے زیادہ ہیں: یہ نسبتی قدریں ہیں۔ انہیں پیمانہ بند کرنے کے لیے جاپان ونڈو میں اسی بیکن کی RMOJ ماہانہ فائلوں سے موازنہ کریں۔",
  "radar/rmoj/: file mensili RMOJ del Giappone; radar/hro_ogaki_*.csv: conteggi di Ogaki degli ultimi 3 giorni; radar/gfs_*.json: profili GFS per la rifrazione (validi 3 ore).": "radar/rmoj/: جاپان کی RMOJ ماہانہ فائلیں؛ radar/hro_ogaki_*.csv: پچھلے 3 دنوں کی اوگاکی گنتیاں؛ radar/gfs_*.json: انعطاف کے لیے GFS پروفائل (3 گھنٹے کے لیے درست)۔",
- "rifrazione_gfs (0 = spenta, 1 = accesa), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: rifrazione e fonti del Giappone.": "rifrazione_gfs (0 = بند، 1 = چالو)، prev_fonte (collm، toyokawa، otsu)، rmoj_osservatore: انعطاف اور جاپان کے ماخذ۔"
+ "rifrazione_gfs (0 = spenta, 1 = accesa), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: rifrazione e fonti del Giappone.": "rifrazione_gfs (0 = بند، 1 = چالو)، prev_fonte (collm، toyokawa، otsu)، rmoj_osservatore: انعطاف اور جاپان کے ماخذ۔",
+ "Versione 1.8.24 - a cura di Costantino IC8TEM - novembre 2026": "ورژن 1.8.24 - تیار کردہ: Costantino IC8TEM - نومبر 2026"
 }

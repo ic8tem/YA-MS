@@ -23,7 +23,7 @@ Stasiun, band, ketinggian jejak, elevasi lobus, boom dan jarak hot spot diambil 
 
 | Bagian | Isi |
 |---|---|
-| **GEOMETRI LINTASAN (Bumi bulat, R = 6372,7955 km)** | Stasiun dan DX dengan ketinggiannya; jarak, azimut dan azimut balik; titik tengah (locator dan koordinat); ketinggian jejak (*<- modus terukur oleh radar Collm* bila diambil dari radar); elevasi antena ke arah titik tengah |
+| **GEOMETRI LINTASAN (elipsoid WGS84)** | Stasiun dan DX dengan ketinggiannya; jarak, azimut dan azimut balik; titik tengah (locator dan koordinat); ketinggian jejak (*<- modus terukur oleh radar Collm* bila diambil dari radar); elevasi antena ke arah titik tengah |
 | **HOT A / HOT B (hot spot klasik, untuk mengarahkan antena)** | Untuk masing-masing: locator, azimut dari Anda dan offset dari lintasan langsung, azimut dari DX, jarak, elevasi |
 | **BATAS ZONA BERSAMA** | Jangkauan pada ketinggian jejak dengan elevasi lobus; Batas A / Batas B dengan azimutnya |
 | Antena | Boom dalam λ, penguatan, lobus horizontal / vertikal; apakah Hot A dan Hot B di dalam atau di luar lobus |
@@ -33,7 +33,7 @@ Stasiun, band, ketinggian jejak, elevasi lobus, boom dan jarak hot spot diambil 
 
 ## Locator dan lintasan
 
-Locator (4, 6 atau 8 karakter; pusat kotak, sistem Maidenhead IARU) [14]. Jarak, azimut dan titik tengah dengan rumus lingkaran besar pada bola berjari-jari **r = 6372,7955 km** (artikel Cerrotta–Sartori) [15–16]. Perhitungan yang bergantung waktu mengacu pada **titik tengah**, karena jam terbaik dapat berbeda hingga 1,5 jam antara kedua ujung (SM6FHZ).
+Locator (4, 6 atau 8 karakter; pusat kotak, sistem Maidenhead IARU) [14]. Jarak, azimut, dan titik tengah pada geodesik elipsoid **WGS84** dengan metode Karney (sejak versi 1.8.24; sebelumnya bola berjari-jari r = 6372,7955 km dari artikel Cerrotta–Sartori [15–16]). Perhitungan yang bergantung waktu mengacu pada **titik tengah**, karena jam terbaik dapat berbeda hingga 1,5 jam antara kedua ujung (SM6FHZ).
 
 ## Elevasi antena
 

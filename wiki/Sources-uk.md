@@ -33,6 +33,8 @@
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (Yagi VK3AUU від David Tanner) | NEC-моделювання для перевірки кривої підсилення й корекції горизонтальної пелюстки (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Оцінки підсилення для варіантів VK3AUU, WA2PHW і DJ9BV |
 | J. **Meeus** – *Astronomical Algorithms*, 2nd ed., Willmann-Bell, 1998 | Юліанська дата, зоряний час, сонячна довгота, азимут/кут місця (у посібнику) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | Еліпсоїд WGS84 (положення станцій і слідів) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Відстань, азимут і середина траси по геодезичній |
 
 ## ДАНІ ПОТОКІВ
 

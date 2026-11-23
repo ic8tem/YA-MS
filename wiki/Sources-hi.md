@@ -33,6 +33,8 @@
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (David Tanner के VK3AUU यागी) | गेन वक्र की जाँच और क्षैतिज लोब के संशोधन (0.93 × Kraus) के लिए उपयोग किए गए NEC सिमुलेशन |
 | John Drew **VK5DJ** – Yagi Calculator | VK3AUU, WA2PHW और DJ9BV प्रकारों के गेन अनुमान |
 | J. **Meeus** – *Astronomical Algorithms*, दूसरा संस्करण, Willmann-Bell, 1998 | जूलियन दिवस, नाक्षत्र समय, सौर देशांतर, दिगंश/उन्नयन (पुस्तिका में) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84 दीर्घवृत्ताभ (स्टेशनों और पगडंडियों की स्थितियाँ) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | जियोडेसिक पर दूरी, दिगंश और मध्य बिंदु |
 
 ## उल्का वर्षा डेटा
 

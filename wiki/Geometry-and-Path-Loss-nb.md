@@ -23,7 +23,7 @@ Stasjoner, bånd, sporhøyde, lobeelevasjon, bom og hot spot-avstand kommer fra 
 
 | Avsnitt | Innhold |
 |---|---|
-| **STREKNINGSGEOMETRI (kuleformet jord, R = 6372,7955 km)** | Stasjon og DX med høyder; avstand, asimut og motsatt asimut; midtpunkt (lokator og koordinater); sporhøyde (*← typetall målt av Collm-radaren* når den er hentet fra radaren); antenneelevasjon mot midtpunktet |
+| **STREKNINGSGEOMETRI (WGS84-ellipsoide)** | Stasjon og DX med høyder; avstand, asimut og motsatt asimut; midtpunkt (lokator og koordinater); sporhøyde (*← typetall målt av Collm-radaren* når den er hentet fra radaren); antenneelevasjon mot midtpunktet |
 | **HOT A / HOT B (klassiske hot spots, for antenneretning)** | For hvert: lokator, asimut fra deg og forskyvning fra den direkte strekningen, asimut fra DX, avstand, elevasjon |
 | **GRENSER FOR FELLESSONEN** | Rekkevidde i sporhøyden med lobeelevasjonen; Grense A / Grense B med asimut |
 | Antenne | Bom i λ, forsterkning, horisontal / vertikal lobe; om Hot A og Hot B ligger innenfor eller utenfor loben |
@@ -33,7 +33,7 @@ Stasjoner, bånd, sporhøyde, lobeelevasjon, bom og hot spot-avstand kommer fra 
 
 ## Lokator og strekning
 
-Lokator (4, 6 eller 8 tegn; midten av ruten, IARUs Maidenhead-system) [14]. Avstand, asimut og midtpunkt med storsirkelformler på en kule med radius **r = 6372,7955 km** (artikkelen av Cerrotta–Sartori) [15–16]. Tidsavhengige beregninger gjelder **midtpunktet**, fordi det beste tidspunktet kan avvike med inntil 1,5 timer mellom de to endene (SM6FHZ).
+Lokator (4, 6 eller 8 tegn; midten av ruten, IARUs Maidenhead-system) [14]. Avstand, asimut og midtpunkt på geodeten på **WGS84**-ellipsoiden med Karneys metode (fra versjon 1.8.24; før en kule med radius r = 6372,7955 km fra artikkelen Cerrotta–Sartori [15–16]). Tidsavhengige beregninger gjelder **midtpunktet**, fordi det beste tidspunktet kan avvike med inntil 1,5 timer mellom de to endene (SM6FHZ).
 
 ## Antenneelevasjon
 

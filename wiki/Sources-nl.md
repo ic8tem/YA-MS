@@ -33,6 +33,8 @@ Het tabblad **Bronnen** somt elk werk op waarop YA-MS is gebouwd, gegroepeerd zo
 | L.B. Cebik **W4RNL** – *Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data*; *Appreciating DL6WU Wide-Band Long-Boom Yagi Design*; *70-CM Yagi Stacks Part 2* (VK3AUU-Yagi's van David Tanner) | NEC-simulaties gebruikt om de winstcurve te verifiëren en de horizontale bundel te corrigeren (0,93 × Kraus) |
 | John Drew **VK5DJ** – Yagi Calculator | Winstschattingen voor de varianten VK3AUU, WA2PHW en DJ9BV |
 | J. **Meeus** – *Astronomical Algorithms*, 2e druk, Willmann-Bell, 1998 | Juliaanse dag, sterrentijd, zonnelengte, azimut/elevatie (in de handleiding) |
+| National Geospatial-Intelligence Agency – *World Geodetic System 1984* (NGA.STND.0036, 2014; NIMA TR8350.2) | WGS84-ellipsoïde (posities van stations en sporen) |
+| C. F. F. **Karney** – *Algorithms for geodesics*, Journal of Geodesy 87 (2013) 43–55; GeographicLib | Afstand, azimut en middelpunt op de geodeet |
 
 ## ZWERMGEGEVENS
 

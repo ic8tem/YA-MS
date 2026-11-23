@@ -94,6 +94,7 @@ namespace YAMS
 
         static SelectableTextBlock DocText(string text, double size, Color c, FontWeight w, FontStyle st, Thickness margin)
         {
+            st = Corsivo.Per(text, st);
             return new SelectableTextBlock
             {
                 Text = text,

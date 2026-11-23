@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] et QTFGUI [17] utilisent une altitude fixe de 102 km ; le
 H1|3. La géométrie du trajet
 H2|3.1 Terre, stations et point milieu
 TAG|FONTE|Ellipsoïde WGS84 [37] : demi-grand axe 6378,137 km, aplatissement 1/298,257223563. Pour les formules sphériques (élévation de l'article, portée, réfraction), le programme utilise le rayon moyen de l'ellipsoïde, r = 6371,0088 km ; jusqu'à la version 1.8.23, il utilisait la sphère de rayon 6372,7955 km [1].
-TAG|SCELTA|Le trajet est toujours le trajet réel entre le locator de la station et celui du correspondant. Depuis la version 1.8.24, la distance, l'azimut et le point milieu se calculent sur la géodésique de l'ellipsoïde avec la méthode de Karney [38] : par rapport à la sphère, les distances changent d'au plus 0,5 % et les azimuts de quelques dixièmes de degré.
+TAG|SCELTA|Le trajet est toujours le trajet réel entre le locator de la station et celui du correspondant. Depuis la version 1.8.25, la distance, l'azimut et le point milieu se calculent sur la géodésique de l'ellipsoïde avec la méthode de Karney [38] : par rapport à la sphère, les distances changent d'au plus 0,5 % et les azimuts de quelques dixièmes de degré.
 TAG|FONTE|Les calculs qui dépendent de l'heure se rapportent au point milieu du trajet : entre les deux extrémités, la meilleure heure peut différer jusqu'à 1,5 heure (SM6FHZ [4]).
 H2|3.2 Élévation d'antenne
 TAG|FONTE|L'élévation vers le point de réflexion se calcule avec la formule de l'article (Image 7) [1], avec x = distance / r, H altitude de la traînée, h altitude de la station :

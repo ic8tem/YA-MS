@@ -284,6 +284,6 @@
  "I conteggi automatici di Ogaki sono più alti di quelli a mano: sono valori relativi. Per tararli confrontali con i file mensili RMOJ dello stesso faro nella finestra del Giappone.": "大垣の自動計数は手計数より多めで、相対値です。校正するには、日本ウィンドウで同じビーコンの RMOJ 月報ファイルと比べてください。",
  "radar/rmoj/: file mensili RMOJ del Giappone; radar/hro_ogaki_*.csv: conteggi di Ogaki degli ultimi 3 giorni; radar/gfs_*.json: profili GFS per la rifrazione (validi 3 ore).": "radar/rmoj/：日本の RMOJ 月報ファイル、radar/hro_ogaki_*.csv：直近 3 日分の大垣の計数、radar/gfs_*.json：屈折用の GFS プロファイル（有効 3 時間）。",
  "rifrazione_gfs (0 = spenta, 1 = accesa), prev_fonte (collm, toyokawa, otsu), rmoj_osservatore: rifrazione e fonti del Giappone.": "rifrazione_gfs（0 = オフ、1 = オン）、prev_fonte（collm、toyokawa、otsu）、rmoj_osservatore：大気屈折と日本の出典。",
- "Versione 1.8.24 - a cura di Costantino IC8TEM - novembre 2026": "バージョン 1.8.24 - Costantino IC8TEM 編 - 2026 年 11 月",
+ "Versione 1.8.25 - a cura di Costantino IC8TEM - novembre 2026": "バージョン 1.8.25 - Costantino IC8TEM 編 - 2026 年 11 月",
  "YA-MS si apre una sola volta: se lo avvii di nuovo mentre è già aperto, la seconda copia non parte e la finestra già aperta torna in primo piano, anche se era ridotta a icona. Così due copie non scrivono insieme sugli stessi file della cartella data. Dopo un aggiornamento la copia nuova aspetta che quella vecchia si sia chiusa.": "YA-MS は 1 つしか開きません。すでに開いているときにもう一度起動すると、2 つ目は起動せず、開いているウィンドウが最小化されていても前面に出ます。これで 2 つのコピーが data フォルダーの同じファイルに同時に書き込むことはありません。更新後は、新しいコピーが古いコピーの終了を待ちます。"
 }

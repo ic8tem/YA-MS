@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] og QTFGUI [17] nota fasta hæð 102 km; forritið tekur m
 H1|3. Rúmfræði leiðarinnar
 H2|3.1 Jörð, stöðvar og miðpunktur
 TAG|FONTE|WGS84-sporvalan [37]: hálfur langás 6378,137 km, pólfletja 1/298,257223563. Fyrir kúluformúlurnar (hæðarhorn úr greininni, drægni, ljósbrot) notar forritið meðalgeisla sporvölunnar, r = 6371,0088 km; til og með útgáfu 1.8.23 notaði það kúlu með geisla 6372,7955 km [1].
-TAG|SCELTA|Leiðin er alltaf hin raunverulega leið milli reitarkóða stöðvarinnar og mótstöðvarinnar. Frá útgáfu 1.8.24 eru fjarlægð, stefna og miðpunktur reiknuð á jarðlínu sporvölunnar með aðferð Karneys [38]: miðað við kúluna breytast fjarlægðir um mest 0,5% og stefnur um nokkra tíundu hluta úr gráðu.
+TAG|SCELTA|Leiðin er alltaf hin raunverulega leið milli reitarkóða stöðvarinnar og mótstöðvarinnar. Frá útgáfu 1.8.25 eru fjarlægð, stefna og miðpunktur reiknuð á jarðlínu sporvölunnar með aðferð Karneys [38]: miðað við kúluna breytast fjarlægðir um mest 0,5% og stefnur um nokkra tíundu hluta úr gráðu.
 TAG|FONTE|Tímaháðir útreikningar miðast við miðpunkt leiðarinnar: besti tíminn getur verið allt að 1,5 klst. mismunandi milli endanna tveggja (SM6FHZ [4]).
 H2|3.2 Hæðarhorn loftnets
 TAG|FONTE|Hæðarhornið að endurvarpspunktinum er reiknað með formúlu greinarinnar (mynd 7) [1], með x = fjarlægð / r, H hæð slóðarinnar, h hæð stöðvarinnar:

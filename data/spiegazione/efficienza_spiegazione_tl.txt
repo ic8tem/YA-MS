@@ -21,7 +21,7 @@ TAG|RILIEVO|Ang DJ5HG [18] at ang QTFGUI [17] ay gumagamit ng nakapirming taas n
 H1|3. Ang heometriya ng landas
 H2|3.1 Daigdig, mga istasyon at gitnang punto
 TAG|FONTE|WGS84 ellipsoid [37]: semi-major axis na 6378.137 km, flattening na 1/298.257223563. Para sa mga pormulang pabilog (elevation mula sa artikulo, abot, refraction) ginagamit ng programa ang karaniwang radius ng ellipsoid, r = 6371.0088 km; hanggang bersyon 1.8.23 ginamit nito ang globo na may radius na 6372.7955 km [1].
-TAG|SCELTA|Ang landas ay palaging ang tunay na landas sa pagitan ng locator ng istasyon at ng locator ng DX na istasyon. Mula sa bersyon 1.8.24, kinakalkula ang distansya, azimuth at gitnang punto sa geodesic ng ellipsoid gamit ang paraan ni Karney [38]: kumpara sa globo, nagbabago ang mga distansya nang hindi hihigit sa 0.5% at ang mga azimuth nang ilang ikasampu ng digri.
+TAG|SCELTA|Ang landas ay palaging ang tunay na landas sa pagitan ng locator ng istasyon at ng locator ng DX na istasyon. Mula sa bersyon 1.8.25, kinakalkula ang distansya, azimuth at gitnang punto sa geodesic ng ellipsoid gamit ang paraan ni Karney [38]: kumpara sa globo, nagbabago ang mga distansya nang hindi hihigit sa 0.5% at ang mga azimuth nang ilang ikasampu ng digri.
 TAG|FONTE|Ang mga kalkulasyong nakadepende sa oras ay tumutukoy sa gitnang punto ng landas: maaaring magkaiba nang hanggang 1.5 oras ang pinakamagandang oras sa dalawang dulo (SM6FHZ [4]).
 H2|3.2 Elevation ng antena
 TAG|FONTE|Kinakalkula ang elevation patungo sa punto ng repleksiyon gamit ang pormula ng artikulo (Larawan 7) [1], kung saan x = distansiya / r, H ang taas ng bakas, h ang taas ng istasyon:

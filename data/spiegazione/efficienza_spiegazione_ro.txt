@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] și QTFGUI [17] folosesc o altitudine fixă de 102 km; pr
 H1|3. Geometria traseului
 H2|3.1 Pământul, stațiile și punctul median
 TAG|FONTE|Elipsoidul WGS84 [37]: semiaxa mare 6378,137 km, turtire 1/298,257223563. Pentru formulele sferice (elevația din articol, raza de acțiune, refracția) programul folosește raza medie a elipsoidului, r = 6371,0088 km; până la versiunea 1.8.23 folosea sfera cu raza de 6372,7955 km [1].
-TAG|SCELTA|Traseul este întotdeauna cel real dintre locatorul stației și cel al corespondentului. Începând cu versiunea 1.8.24, distanța, azimutul și punctul de mijloc se calculează pe geodezica elipsoidului cu metoda lui Karney [38]: față de sferă, distanțele se schimbă cu cel mult 0,5%, iar azimuturile cu câteva zecimi de grad.
+TAG|SCELTA|Traseul este întotdeauna cel real dintre locatorul stației și cel al corespondentului. Începând cu versiunea 1.8.25, distanța, azimutul și punctul de mijloc se calculează pe geodezica elipsoidului cu metoda lui Karney [38]: față de sferă, distanțele se schimbă cu cel mult 0,5%, iar azimuturile cu câteva zecimi de grad.
 TAG|FONTE|Calculele care depind de oră se raportează la punctul median al traseului: între cele două capete ora cea mai bună poate diferi cu până la 1,5 ore (SM6FHZ [4]).
 H2|3.2 Elevația antenei
 TAG|FONTE|Elevația spre punctul de reflexie se calculează cu formula din articol (Imaginea 7) [1], cu x = distanța / r, H altitudinea dârei, h altitudinea stației:

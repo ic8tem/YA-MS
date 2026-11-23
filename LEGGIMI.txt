@@ -47,6 +47,11 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.25
+  - Una sola copia del programma per cartella data: se lo avvii di nuovo mentre e' aperto, la finestra gia' aperta
+    torna in primo piano e la seconda copia si chiude. Dopo un aggiornamento la copia nuova aspetta la vecchia.
+  - Crediti: IPRMO, HRO di Ogaki, Open-Meteo/GFS (CC BY 4.0) e ITU-R P.453.
+
 NOVITA' DELLA 1.8.23
   - Rifrazione troposferica facoltativa (casella "Rifrazione troposferica (GFS)", spenta all'avvio): profilo del
     modello GFS sopra le due stazioni e raggio tracciato fino alla quota delle scie, invece di k = 4/3.

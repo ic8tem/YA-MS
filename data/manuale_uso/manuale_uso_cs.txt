@@ -66,12 +66,12 @@ LI|Výška stop km a z radaru: výška meteorických stop. Při zaškrtnutém �
 LI|Elevace laloku °: elevace maxima svislého laloku vaší antény. Směrovka nastavená na 0° má hlavní lalok přesto několik stupňů nad horizontem, kvůli odrazu od země: obvykle 3-8°, podle výšky antény ve vlnových délkách.
 LI|diagram antény: zapnuto (výchozí) – body odrazu se započítávají se svislým ziskem obou antén: plně kolem maxima laloku, stále méně směrem k horizontu a nahoru. Vypnuto – elevace laloku je ostrá mez: body viděné níže se nezapočítávají.
 LI|Anténa Yagi: ráhno m: délka ráhna. Vedle program píše délku ve vlnových délkách, zisk (střední přímka tabulek VE7BQH pro pásmo) a lalok −3 dB vodorovně a svisle. Je-li ráhno mimo vzorek VE7BQH pro pásmo, odhad je hrubý.
-LI|Hot spot od středu trasy km a auto (AMS): vzdálenost Hot A a Hot B od středu trasy. Při zaškrtnutém „auto (AMS)“ se řídí tabulkou J. Richardsona citovanou DJ5HG (odchylka 13° při 1000 km, 10° nad 1500 km); zrušte zaškrtnutí, chcete-li ručně zadat 30-400 km (MSHV používá 150 km).
 TAG|ATTENZIONE|Při vypnutém „diagram antény“ a laloku na několika stupních nemusí na dlouhé trase obě stanice vidět žádný společný bod vrstvy: všechny účinnosti jsou 0 a zobrazí se upozornění „ŽÁDNÁ SPOLEČNÁ ZÓNA“ s lalokem nebo výškou stop, které by byly potřeba. Příklad: JN70CN - JO76QP, 1791 km, lalok na 3°, stopy v 88,5 km.
 H2|4.3 Řádek 2: čas výpočtu
 LI|Čas: hodiny UTC.
 LI|Datum výpočtu (UTC): den výpočtu. Platí pro Předpovědní výpočet, pro tabulku 24 hodin ve Výpočtu účinnosti a pro časový průběh v kartě Radar GRAVES. Výchozí je dnešek a o půlnoci se přepne na nový den.
 LI|Troposférická refrakce (GFS): při spuštění vypnutá. Zapnutá, program stáhne z modelu GFS profil teploty a vlhkosti nad oběma stanicemi a zohlední zakřivení paprsku až do výšky stop: nízké body se jeví o něco výše a společná zóna se rozšíří. Pokud GFS neodpoví, použije průměrnou atmosféru. Zpráva záložky Geometrie a útlum to uvádí na řádku "Refrakce".
+LI|Hot spot od středu trasy km a auto (AMS): vzdálenost Hot A a Hot B od středu trasy. Při zaškrtnutém „auto (AMS)“ se řídí tabulkou J. Richardsona citovanou DJ5HG (odchylka 13° při 1000 km, 10° nad 1500 km); zrušte zaškrtnutí, chcete-li ručně zadat 30-400 km (MSHV používá 150 km).
 LI|Hodiny (od −12 do +36 h): posune okamžik výpočtu po krocích 15 minut. Vedle: „Výpočet pro: nyní“ nebo zvolené datum a čas.
 LI|Reálný čas: vrátí se k aktuálnímu okamžiku.
 LI|Časová osa («Hodiny (od −12 do +36 h)» a «Reálný čas») je nahoře v záložce Předpovědní výpočet, protože platí jen pro tento výpočet.

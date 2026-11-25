@@ -550,8 +550,7 @@ namespace YAMS
             BuildRefrCheck();
             Border row2 = Row(L(Lang.T("Quota scie km")), numLayer, chkLayerRadar,
                               L(Lang.T("Elevazione lobo °")), numElev, OrangeBox(chkLobe),   // riquadro arancione come l'angolo beta
-                              L(Lang.T("Antenna Yagi: boom m")), numBoom, lblAnt,
-                              L(Lang.T("Hot spot dal punto medio km")), numHotKm, chkHotAuto);
+                              L(Lang.T("Antenna Yagi: boom m")), numBoom, lblAnt);
 
             // riga 3: orologio, ora della volta celeste, giorno della tabella 24 h
             lblClock = L("--:--:-- UTC"); lblClock.FontFamily = Pal.Mono; lblClock.FontSize = 15; lblClock.FontWeight = FontWeight.Bold; lblClock.Foreground = Pal.B(Pal.Yellow);
@@ -577,7 +576,8 @@ namespace YAMS
                                    IsSnapToTickEnabled = true, Width = 160, Margin = new Thickness(4, 0) };
             UiScale.Set(pct0 / 100.0);
             WhenChanged(sldFont, RangeBase.ValueProperty, () => SetFontPercent(sldFont.Value));
-            Border row3 = Row(L(Lang.T("Ora")), lblClock, L(Lang.T("Data del calcolo (UTC)")), dtCalc, chkRefr);   // la rifrazione qui: la riga 2 resta su una riga
+            Border row3 = Row(L(Lang.T("Ora")), lblClock, L(Lang.T("Data del calcolo (UTC)")), dtCalc, chkRefr,
+                              L(Lang.T("Hot spot dal punto medio km")), numHotKm, chkHotAuto);   // rifrazione e hot spot qui: la riga 2 resta su una riga
             // la linea del tempo (ore da -12 a +36, Tempo reale) vale solo per il Calcolo previsionale: sta in cima a quella
             // linguetta (richiesta dell'autore, 14/11/2026)
             calcTimeRow = Row(L(Lang.T("Ore (da −12 a +36 h)")), trackTime, btnReal, lblSkyTime);

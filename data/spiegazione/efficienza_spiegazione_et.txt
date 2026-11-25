@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] ja QTFGUI [17] kasutavad fikseeritud kõrgust 102 km; pro
 H1|3. Trassi geomeetria
 H2|3.1 Maa, jaamad ja keskpunkt
 TAG|FONTE|WGS84 ellipsoid [37]: suur pooltelg 6378,137 km, lapikus 1/298,257223563. Sfääriliste valemite jaoks (artikli kõrgusnurk, ulatus, murdumine) kasutab programm ellipsoidi keskmist raadiust r = 6371,0088 km; kuni versioonini 1.8.23 kasutas see kera raadiusega 6372,7955 km [1].
-TAG|SCELTA|Trass on alati tegelik trass jaama ja korrespondendi lokaatori vahel. Alates versioonist 1.8.25 arvutatakse kaugus, asimuut ja keskpunkt ellipsoidi geodeetilisel joonel Karney meetodiga [38]: kera suhtes muutuvad kaugused kuni 0,5% ja asimuudid mõne kümnendiku kraadi võrra.
+TAG|SCELTA|Trass on alati tegelik trass jaama ja korrespondendi lokaatori vahel. Alates versioonist 1.8.26 arvutatakse kaugus, asimuut ja keskpunkt ellipsoidi geodeetilisel joonel Karney meetodiga [38]: kera suhtes muutuvad kaugused kuni 0,5% ja asimuudid mõne kümnendiku kraadi võrra.
 TAG|FONTE|Ajast sõltuvad arvutused viitavad trassi keskpunktile: kahe otspunkti vahel võib parim aeg erineda kuni 1,5 tundi (SM6FHZ [4]).
 H2|3.2 Antenni kõrgusnurk
 TAG|FONTE|Kõrgusnurk peegelduspunkti suunas arvutatakse artikli valemiga (joonis 7) [1], kus x = kaugus / r, H on jälje kõrgus, h jaama kõrgus:

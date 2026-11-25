@@ -94,7 +94,7 @@ function table(widths, rows) {
 // ---------- contenuto ----------
 const C = [];
 C.push(new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun('YA-MS - Manuale dei calcoli')] }));
-C.push(P(I('Previsione e calcolo in diretta dell\'efficienza degli sciami meteorici per il meteor scatter. Versione 1.8.25, a cura di Costantino IC8TEM, novembre 2026.')));
+C.push(P(I('Previsione e calcolo in diretta dell\'efficienza degli sciami meteorici per il meteor scatter. Versione 1.8.26, a cura di Costantino IC8TEM, novembre 2026.')));
 C.push(new TableOfContents(T('Indice'), { hyperlink: true, headingStyleRange: '1-2' }));
 C.push(P(I('(Se l\'indice è vuoto: in Word, clic destro sull\'indice > Aggiorna campo.)')));
 
@@ -155,7 +155,7 @@ C.push(H2('3.1 Dal locator alle coordinate'));
 C.push(TAG('FONTE', 'Sistema Maidenhead (IARU). Per un locator di 6 caratteri L1 L2 N3 N4 L5 L6 (lettere contate da A = 0), al centro del quadratino:'));
 C.push(EQ('λ=20·', sb('L', '1'), '−180+2·', sb('N', '3'), '+', fr(sb('L', '5'), '12'), '+', fr('1', '24'), ',    φ=10·', sb('L', '2'), '−90+', sb('N', '4'), '+', fr(sb('L', '6'), '24'), '+', fr('1', '48')));
 C.push(H2('3.2 Distanza, azimut e punto medio'));
-C.push(TAG('FONTE', 'Dalla versione 1.8.25: ellissoide WGS84 [49] (semiasse a = 6378,137 km, schiacciamento f = 1/298,257223563, e² = f(2 − f)). Distanza D, azimut AzAB e punto medio M si calcolano sulla geodetica dell\'ellissoide con il metodo di Karney [50] (libreria GeographicLib). Le stazioni e i punti delle scie sono punti dell\'ellissoide (φ latitudine geodetica, N raggio di curvatura nel primo verticale):'));
+C.push(TAG('FONTE', 'Dalla versione 1.8.26: ellissoide WGS84 [49] (semiasse a = 6378,137 km, schiacciamento f = 1/298,257223563, e² = f(2 − f)). Distanza D, azimut AzAB e punto medio M si calcolano sulla geodetica dell\'ellissoide con il metodo di Karney [50] (libreria GeographicLib). Le stazioni e i punti delle scie sono punti dell\'ellissoide (φ latitudine geodetica, N raggio di curvatura nel primo verticale):'));
 C.push(EQ('X=(N+h)·', fn('cos', 'φ'), '·', fn('cos', 'λ'), ',   Y=(N+h)·', fn('cos', 'φ'), '·', fn('sin', 'λ'), ',   Z=', br('N(1−e²)+h'), '·', fn('sin', 'φ')));
 C.push(EQ('N=', fr('a', ['√', br('1−e²·', fn('sin', 'φ'), '²')])));
 C.push(TAG('RILIEVO', 'Verifica del 23/11/2026: rispetto alla sfera di raggio 6372,7955 km usata fino alla versione 1.8.23 [1], le distanze cambiano al massimo dello 0,5% (da JN70CN a KG33: 7508,6 km invece di 7542,4) e gli azimut al massimo di 0,2°.'));

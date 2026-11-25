@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] és a QTFGUI [17] rögzített 102 km-es magasságot haszn
 H1|3. Az útvonal geometriája
 H2|3.1 A Föld, az állomások és a felezőpont
 TAG|FONTE|WGS84 ellipszoid [37]: fél nagytengely 6378,137 km, lapultság 1/298,257223563. A gömbi képletekhez (a cikk szerinti elevációs szög, hatótáv, refrakció) a program az ellipszoid közepes sugarát használja, r = 6371,0088 km; az 1.8.23-as verzióig 6372,7955 km sugarú gömböt használt [1].
-TAG|SCELTA|Az útvonal mindig az állomás és az ellenállomás lokátora közötti valós útvonal. Az 1.8.25-es verziótól a távolság, az azimut és a felezőpont az ellipszoid geodetikus vonalán, Karney módszerével [38] számítódik: a gömbhöz képest a távolságok legfeljebb 0,5%-kal, az azimutok néhány tized fokkal változnak.
+TAG|SCELTA|Az útvonal mindig az állomás és az ellenállomás lokátora közötti valós útvonal. Az 1.8.26-es verziótól a távolság, az azimut és a felezőpont az ellipszoid geodetikus vonalán, Karney módszerével [38] számítódik: a gömbhöz képest a távolságok legfeljebb 0,5%-kal, az azimutok néhány tized fokkal változnak.
 TAG|FONTE|Az időtől függő számítások az útvonal felezőpontjára vonatkoznak: a két végpont között a legjobb időpont akár 1,5 órával is eltérhet (SM6FHZ [4]).
 H2|3.2 Antennaeleváció
 TAG|FONTE|A visszaverődési pont felé mutató elevációt a cikk képletével (7. kép) [1] számítjuk, ahol x = távolság / r, H a nyom magassága, h az állomás magassága:

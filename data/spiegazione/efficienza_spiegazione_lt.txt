@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] ir QTFGUI [17] naudoja fiksuotą 102 km aukštį; program
 H1|3. Trasos geometrija
 H2|3.1 Žemė, stotys ir vidurio taškas
 TAG|FONTE|WGS84 elipsoidas [37]: didysis pusašis 6378,137 km, suplojimas 1/298,257223563. Sferinėms formulėms (straipsnio pakilimo kampas, nuotolis, refrakcija) programa naudoja vidutinį elipsoido spindulį r = 6371,0088 km; iki 1.8.23 versijos ji naudojo 6372,7955 km spindulio sferą [1].
-TAG|SCELTA|Trasa visada yra tikroji trasa tarp stoties lokatoriaus ir korespondento lokatoriaus. Nuo 1.8.25 versijos atstumas, azimutas ir vidurio taškas skaičiuojami elipsoido geodezinėje linijoje Karney metodu [38]: palyginti su sfera, atstumai keičiasi ne daugiau kaip 0,5%, o azimutai – keliomis laipsnio dešimtosiomis.
+TAG|SCELTA|Trasa visada yra tikroji trasa tarp stoties lokatoriaus ir korespondento lokatoriaus. Nuo 1.8.26 versijos atstumas, azimutas ir vidurio taškas skaičiuojami elipsoido geodezinėje linijoje Karney metodu [38]: palyginti su sfera, atstumai keičiasi ne daugiau kaip 0,5%, o azimutai – keliomis laipsnio dešimtosiomis.
 TAG|FONTE|Nuo laiko priklausantys skaičiavimai atliekami trasos vidurio taškui: tarp abiejų galų geriausias laikas gali skirtis iki 1,5 valandos (SM6FHZ [4]).
 H2|3.2 Antenos elevacija
 TAG|FONTE|Elevacija į atspindžio tašką apskaičiuojama straipsnio formule (7 paveikslas) [1], kur x = atstumas / r, H – pėdsako aukštis, h – stoties aukštis:

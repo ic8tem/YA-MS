@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] och QTFGUI [17] använder en fast höjd på 102 km; progr
 H1|3. Sträckans geometri
 H2|3.1 Jorden, stationerna och mittpunkten
 TAG|FONTE|WGS84-ellipsoiden [37]: halva storaxeln 6378,137 km, avplattning 1/298,257223563. För de sfäriska formlerna (elevation från artikeln, räckvidd, refraktion) använder programmet ellipsoidens medelradie, r = 6371,0088 km; till och med version 1.8.23 användes klotet med radien 6372,7955 km [1].
-TAG|SCELTA|Sträckan är alltid den verkliga mellan stationens lokator och motstationens. Från version 1.8.25 beräknas avstånd, azimut och mittpunkt på ellipsoidens geodet med Karneys metod [38]: jämfört med klotet ändras avstånden högst 0,5 % och azimuten några tiondels grader.
+TAG|SCELTA|Sträckan är alltid den verkliga mellan stationens lokator och motstationens. Från version 1.8.26 beräknas avstånd, azimut och mittpunkt på ellipsoidens geodet med Karneys metod [38]: jämfört med klotet ändras avstånden högst 0,5 % och azimuten några tiondels grader.
 TAG|FONTE|Tidsberoende beräkningar avser sträckans mittpunkt: mellan de två ändarna kan bästa timme skilja upp till 1,5 timmar (SM6FHZ [4]).
 H2|3.2 Antennelevation
 TAG|FONTE|Elevationen mot reflexionspunkten beräknas med artikelns formel (Bild 7) [1], med x = avstånd / r, H spårets höjd, h stationens höjd:

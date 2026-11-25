@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] en QTFGUI [17] gebruiken een vaste hoogte van 102 km; het
 H1|3. De geometrie van het traject
 H2|3.1 Aarde, stations en middelpunt
 TAG|FONTE|WGS84-ellipsoïde [37]: halve lange as 6378,137 km, afplatting 1/298,257223563. Voor de bolvormige formules (elevatie uit het artikel, bereik, refractie) gebruikt het programma de gemiddelde straal van de ellipsoïde, r = 6371,0088 km; tot versie 1.8.23 gebruikte het de bol met straal 6372,7955 km [1].
-TAG|SCELTA|Het traject is altijd het werkelijke traject tussen de locator van het station en die van het tegenstation. Vanaf versie 1.8.25 worden afstand, azimut en middelpunt berekend op de geodeet van de ellipsoïde met de methode van Karney [38]: ten opzichte van de bol veranderen de afstanden hoogstens 0,5% en de azimuts enkele tienden van een graad.
+TAG|SCELTA|Het traject is altijd het werkelijke traject tussen de locator van het station en die van het tegenstation. Vanaf versie 1.8.26 worden afstand, azimut en middelpunt berekend op de geodeet van de ellipsoïde met de methode van Karney [38]: ten opzichte van de bol veranderen de afstanden hoogstens 0,5% en de azimuts enkele tienden van een graad.
 TAG|FONTE|De tijdsafhankelijke berekeningen zijn betrokken op het middelpunt van het traject: tussen de twee uiteinden kan het beste uur tot 1,5 uur verschillen (SM6FHZ [4]).
 H2|3.2 Antenne-elevatie
 TAG|FONTE|De elevatie naar het reflectiepunt wordt berekend met de formule van het artikel (Afbeelding 7) [1], met x = afstand / r, H hoogte van het spoor, h hoogte van het station:

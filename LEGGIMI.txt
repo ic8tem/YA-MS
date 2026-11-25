@@ -47,6 +47,12 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.26
+  - La riga in alto (strato E e antenna) torna su una sola riga: la casella della rifrazione e gli hot spot dal punto
+    medio sono passati nella riga dell'ora.
+  - CALL3: MMMonVHF ora da' CALL3.TXT solo a chi ha fatto l'accesso al sito; il programma lo dice chiaramente e
+    indica come caricarlo a mano (Importa CALL3.TXT...).
+
 NOVITA' DELLA 1.8.25
   - Una sola copia del programma per cartella data: se lo avvii di nuovo mentre e' aperto, la finestra gia' aperta
     torna in primo piano e la seconda copia si chiude. Dopo un aggiornamento la copia nuova aspetta la vecchia.

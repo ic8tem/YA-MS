@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] e o QTFGUI [17] usam uma altitude fixa de 102 km; o progr
 H1|3. A geometria do percurso
 H2|3.1 Terra, estações e ponto médio
 TAG|FONTE|Elipsoide WGS84 [37]: semieixo maior 6378,137 km, achatamento 1/298,257223563. Para as fórmulas esféricas (elevação do artigo, alcance, refração) o programa usa o raio médio do elipsoide, r = 6371,0088 km; até a versão 1.8.23 usava a esfera de raio 6372,7955 km [1].
-TAG|SCELTA|O percurso é sempre o real entre o locator da estação e o do correspondente. A partir da versão 1.8.25 a distância, o azimute e o ponto médio são calculados sobre a geodésica do elipsoide com o método de Karney [38]: em relação à esfera, as distâncias mudam no máximo 0,5% e os azimutes alguns décimos de grau.
+TAG|SCELTA|O percurso é sempre o real entre o locator da estação e o do correspondente. A partir da versão 1.8.26 a distância, o azimute e o ponto médio são calculados sobre a geodésica do elipsoide com o método de Karney [38]: em relação à esfera, as distâncias mudam no máximo 0,5% e os azimutes alguns décimos de grau.
 TAG|FONTE|Os cálculos que dependem da hora referem-se ao ponto médio do percurso: entre as duas extremidades a melhor hora pode diferir até 1,5 horas (SM6FHZ [4]).
 H2|3.2 Elevação da antena
 TAG|FONTE|A elevação para o ponto de reflexão calcula-se com a fórmula do artigo (Imagem 7) [1], com x = distância / r, H altitude do rastro, h altitude da estação:

@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] e QTFGUI [17] usano una quota fissa di 102 km; il program
 H1|3. La geometria della tratta
 H2|3.1 Terra, stazioni e punto medio
 TAG|FONTE|Ellissoide WGS84 [37]: semiasse 6378,137 km, schiacciamento 1/298,257223563. Per le formule sferiche (elevazione dell'articolo, portata, rifrazione) il programma usa il raggio medio dell'ellissoide, r = 6371,0088 km; fino alla versione 1.8.23 usava la sfera di raggio 6372,7955 km [1].
-TAG|SCELTA|La tratta è sempre quella reale tra il locator della stazione e quello del corrispondente. Dalla versione 1.8.25 distanza, azimut e punto medio si calcolano sulla geodetica dell'ellissoide con il metodo di Karney [38]: rispetto alla sfera le distanze cambiano al massimo dello 0,5% e gli azimut di qualche decimo di grado.
+TAG|SCELTA|La tratta è sempre quella reale tra il locator della stazione e quello del corrispondente. Dalla versione 1.8.26 distanza, azimut e punto medio si calcolano sulla geodetica dell'ellissoide con il metodo di Karney [38]: rispetto alla sfera le distanze cambiano al massimo dello 0,5% e gli azimut di qualche decimo di grado.
 TAG|FONTE|I calcoli che dipendono dall'ora si riferiscono al punto medio della tratta: tra le due estremità l'ora migliore può differire fino a 1,5 ore (SM6FHZ [4]).
 H2|3.2 Elevazione d'antenna
 TAG|FONTE|L'elevazione verso il punto di riflessione si calcola con la formula dell'articolo (Immagine 7) [1], con x = distanza / r, H quota della scia, h quota della stazione:

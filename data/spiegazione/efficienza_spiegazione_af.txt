@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] en QTFGUI [17] gebruik 'n vaste hoogte van 102 km; die pr
 H1|3. Die geometrie van die pad
 H2|3.1 Aarde, stasies en middelpunt
 TAG|FONTE|WGS84-ellipsoïed [37]: halwe hoofas 6378,137 km, afplatting 1/298,257223563. Vir die sferiese formules (elevasie uit die artikel, reikwydte, refraksie) gebruik die program die gemiddelde radius van die ellipsoïed, r = 6371,0088 km; tot weergawe 1.8.23 het dit die sfeer met radius 6372,7955 km gebruik [1].
-TAG|SCELTA|Die pad is altyd die werklike een tussen die lokator van die stasie en dié van die DX-stasie. Vanaf weergawe 1.8.25 word afstand, azimut en middelpunt op die geodeet van die ellipsoïed met Karney se metode [38] bereken: vergeleke met die sfeer verander afstande hoogstens 0,5% en azimute 'n paar tiendes van 'n graad.
+TAG|SCELTA|Die pad is altyd die werklike een tussen die lokator van die stasie en dié van die DX-stasie. Vanaf weergawe 1.8.26 word afstand, azimut en middelpunt op die geodeet van die ellipsoïed met Karney se metode [38] bereken: vergeleke met die sfeer verander afstande hoogstens 0,5% en azimute 'n paar tiendes van 'n graad.
 TAG|FONTE|Die berekeninge wat van die tyd afhang, verwys na die middelpunt van die pad: tussen die twee eindpunte kan die beste uur tot 1,5 uur verskil (SM6FHZ [4]).
 H2|3.2 Antenna-elevasie
 TAG|FONTE|Die elevasie na die refleksiepunt word bereken met die formule van die artikel (Beeld 7) [1], met x = afstand / r, H hoogte van die spoor, h hoogte van die stasie:

@@ -922,3 +922,4 @@ I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	
 La formula della rifrattività e l'atmosfera di riferimento.	A refraktivitás képlete és a referencia-légkör.
 L'ellissoide della Terra (semiasse e schiacciamento).	A Föld ellipszoidja (fél nagytengely és lapultság).
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	Távolságok, azimutok és a pálya pontjai a WGS84 ellipszoid geodetikus vonalán.
+MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	Az MMMonVHF most csak bejelentkezett felhasználóknak adja a CALL3.TXT-t: a CALL3 nem változott. Jelentkezz be a www.mmmonvhf.de oldalon a fiókoddal, töltsd le a CALL3.TXT-t a letöltések oldaláról, és töltsd be a(z) «{0}» gombbal.

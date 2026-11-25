@@ -921,3 +921,4 @@ I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	
 La formula della rifrattività e l'atmosfera di riferimento.	انعطافیت کا فارمولا اور حوالہ فضا۔
 L'ellissoide della Terra (semiasse e schiacciamento).	زمین کا بیضوی کرہ (نیم بڑا محور اور چپٹا پن)۔
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	WGS84 بیضوی کرے کی جیوڈیسک پر فاصلے، سمتیں اور راستے کے نقاط۔
+MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF اب CALL3.TXT صرف سائٹ پر لاگ اِن صارفین کو دیتا ہے: CALL3 تبدیل نہیں ہوا۔ اپنے اکاؤنٹ سے www.mmmonvhf.de پر لاگ اِن کریں، ڈاؤن لوڈ صفحے سے CALL3.TXT اتاریں اور اسے «{0}» سے لوڈ کریں۔

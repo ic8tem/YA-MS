@@ -922,3 +922,4 @@ I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	
 La formula della rifrattività e l'atmosfera di riferimento.	Ο τύπος της διαθλαστικότητας και η ατμόσφαιρα αναφοράς.
 L'ellissoide della Terra (semiasse e schiacciamento).	Το ελλειψοειδές της Γης (μεγάλος ημιάξονας και επιπλάτυνση).
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	Αποστάσεις, αζιμούθια και σημεία της διαδρομής πάνω στη γεωδαισιακή του ελλειψοειδούς WGS84.
+MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	Το MMMonVHF δίνει πλέον το CALL3.TXT μόνο σε όσους έχουν συνδεθεί στον ιστότοπο: το CALL3 δεν άλλαξε. Συνδέσου στο www.mmmonvhf.de με τον λογαριασμό σου, κατέβασε το CALL3.TXT από τη σελίδα λήψεων και φόρτωσέ το με «{0}».

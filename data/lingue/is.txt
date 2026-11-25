@@ -921,3 +921,4 @@ I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	
 La formula della rifrattività e l'atmosfera di riferimento.	Formúla brotstuðulsins og viðmiðunarlofthjúpurinn.
 L'ellissoide della Terra (semiasse e schiacciamento).	Sporvala jarðar (hálfur langás og pólfletja).
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	Fjarlægðir, stefnur og punktar leiðarinnar á jarðlínu WGS84-sporvölunnar.
+MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF afhendir nú CALL3.TXT aðeins innskráðum notendum: CALL3 óbreytt. Skráðu þig inn á www.mmmonvhf.de með aðganginum þínum, sæktu CALL3.TXT af niðurhalssíðunni og hlaðaðu henni inn með «{0}».

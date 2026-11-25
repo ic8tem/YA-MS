@@ -923,3 +923,4 @@ I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	
 La formula della rifrattività e l'atmosfera di riferimento.	屈折率の式と基準大気。
 L'ellissoide della Terra (semiasse e schiacciamento).	地球楕円体 (長半径と扁平率)。
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	WGS84 楕円体の測地線上の距離、方位角、パスの点。
+MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF は現在、サイトにログインしたユーザーにだけ CALL3.TXT を提供しています。CALL3 は変更していません。自分のアカウントで www.mmmonvhf.de にログインし、ダウンロードページから CALL3.TXT を取得して「{0}」で読み込んでください。

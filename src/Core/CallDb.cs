@@ -681,6 +681,9 @@ namespace YAMS
                     string[] p = line.Split(',');
                     if (p.Length >= 2 && p[0].Trim().Length >= 3 && ValidLoc(p[1].Trim())) ok++;
                 }
+                // dal novembre 2026 MMMonVHF da' il file solo a chi ha fatto l'accesso: senza, arriva una pagina "Login required"
+                if (ok < 100000 && (text.IndexOf("Login required", StringComparison.OrdinalIgnoreCase) >= 0 || text.TrimStart().StartsWith("<", StringComparison.Ordinal)))
+                    return Lang.F("MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».", Lang.T("Importa CALL3.TXT..."));
                 if (ok < 100000) return Lang.F("File scaricato non valido ({0} righe utili): CALL3 non cambiato.", ok);
                 string dest = Path.Combine(dataDir, "call3.txt"), tmp = dest + ".nuovo";
                 File.WriteAllBytes(tmp, bytes);

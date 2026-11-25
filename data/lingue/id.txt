@@ -921,3 +921,4 @@ I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	
 La formula della rifrattività e l'atmosfera di riferimento.	Rumus refraktivitas dan atmosfer acuan.
 L'ellissoide della Terra (semiasse e schiacciamento).	Elipsoid Bumi (sumbu semi-mayor dan pegepengan).
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	Jarak, azimut, dan titik lintasan pada geodesik elipsoid WGS84.
+MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF kini hanya memberikan CALL3.TXT kepada pengguna yang sudah masuk ke situs: CALL3 tidak diubah. Masuk ke www.mmmonvhf.de dengan akun Anda, unduh CALL3.TXT dari halaman unduhan, lalu muat dengan «{0}».

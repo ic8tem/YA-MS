@@ -923,3 +923,4 @@ I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	
 La formula della rifrattività e l'atmosfera di riferimento.	The refractivity formula and the reference atmosphere.
 L'ellissoide della Terra (semiasse e schiacciamento).	The Earth's ellipsoid (semi-major axis and flattening).
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	Distances, azimuths and points of the path on the geodesic of the WGS84 ellipsoid.
+MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF now gives CALL3.TXT only to users logged in to the site: CALL3 not changed. Log in to www.mmmonvhf.de with your account, download CALL3.TXT from the downloads page and load it with «{0}».

@@ -921,3 +921,4 @@ I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	
 La formula della rifrattività e l'atmosfera di riferimento.	अपवर्तनांक का सूत्र और संदर्भ वायुमंडल।
 L'ellissoide della Terra (semiasse e schiacciamento).	पृथ्वी का दीर्घवृत्ताभ (अर्ध-दीर्घ अक्ष और चपटापन)।
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	WGS84 दीर्घवृत्ताभ की जियोडेसिक पर दूरियाँ, दिगंश और पथ के बिंदु।
+MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF अब CALL3.TXT केवल साइट पर लॉग इन किए उपयोगकर्ताओं को देता है: CALL3 नहीं बदला। अपने खाते से www.mmmonvhf.de पर लॉग इन करें, डाउनलोड पृष्ठ से CALL3.TXT डाउनलोड करें और उसे «{0}» से लोड करें।

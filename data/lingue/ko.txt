@@ -921,3 +921,4 @@ I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	
 La formula della rifrattività e l'atmosfera di riferimento.	굴절률 공식과 기준 대기.
 L'ellissoide della Terra (semiasse e schiacciamento).	지구 타원체 (장반경과 편평률).
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	WGS84 타원체 측지선 위의 거리, 방위각, 경로의 점.
+MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF는 이제 사이트에 로그인한 사용자에게만 CALL3.TXT를 제공합니다. CALL3는 바뀌지 않았습니다. 자신의 계정으로 www.mmmonvhf.de에 로그인해 다운로드 페이지에서 CALL3.TXT를 받은 뒤 «{0}»(으)로 불러오세요.

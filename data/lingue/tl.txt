@@ -921,3 +921,4 @@ I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	
 La formula della rifrattività e l'atmosfera di riferimento.	Ang pormula ng refractivity at ang reference atmosphere.
 L'ellissoide della Terra (semiasse e schiacciamento).	Ang ellipsoid ng Daigdig (semi-major axis at flattening).
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	Mga distansya, azimuth at punto ng landas sa geodesic ng WGS84 ellipsoid.
+MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	Ibinibigay na lang ngayon ng MMMonVHF ang CALL3.TXT sa mga naka-log in sa site: hindi binago ang CALL3. Mag-log in sa www.mmmonvhf.de gamit ang iyong account, i-download ang CALL3.TXT mula sa pahina ng mga download at i-load ito gamit ang «{0}».

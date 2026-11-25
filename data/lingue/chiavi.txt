@@ -363,6 +363,7 @@ Loc DX
 Loc spotter
 Locator del corrispondente non valido
 Locator della stazione non valido
+MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».
 MQTT non connesso: si connette dalla linguetta "Raccolta dati"
 Manca il nominativo per il login
 Mancano {0} file del programma:\n{1}\n\nLi scarico da GitHub (versione {2})?

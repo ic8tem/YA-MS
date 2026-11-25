@@ -921,3 +921,4 @@ I profili di temperatura e umidità per la rifrazione troposferica facoltativa.	
 La formula della rifrattività e l'atmosfera di riferimento.	Refraktivitātes formula un atsauces atmosfēra.
 L'ellissoide della Terra (semiasse e schiacciamento).	Zemes elipsoīds (lielā pusass un saplacinājums).
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	Attālumi, azimuti un trases punkti uz WGS84 elipsoīda ģeodēziskās līnijas.
+MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF tagad dod CALL3.TXT tikai vietnē pieteikušies lietotājiem: CALL3 nav mainīts. Piesakies www.mmmonvhf.de ar savu kontu, lejupielādē CALL3.TXT no lejupielāžu lapas un ielādē to ar «{0}».

@@ -548,7 +548,7 @@ namespace YAMS
 
             // riga 2: strato E, lobo e antenna
             BuildRefrCheck();
-            Border row2 = Row(L(Lang.T("Quota scie km")), numLayer, chkLayerRadar, chkRefr,
+            Border row2 = Row(L(Lang.T("Quota scie km")), numLayer, chkLayerRadar,
                               L(Lang.T("Elevazione lobo °")), numElev, OrangeBox(chkLobe),   // riquadro arancione come l'angolo beta
                               L(Lang.T("Antenna Yagi: boom m")), numBoom, lblAnt,
                               L(Lang.T("Hot spot dal punto medio km")), numHotKm, chkHotAuto);
@@ -577,7 +577,7 @@ namespace YAMS
                                    IsSnapToTickEnabled = true, Width = 160, Margin = new Thickness(4, 0) };
             UiScale.Set(pct0 / 100.0);
             WhenChanged(sldFont, RangeBase.ValueProperty, () => SetFontPercent(sldFont.Value));
-            Border row3 = Row(L(Lang.T("Ora")), lblClock, L(Lang.T("Data del calcolo (UTC)")), dtCalc);
+            Border row3 = Row(L(Lang.T("Ora")), lblClock, L(Lang.T("Data del calcolo (UTC)")), dtCalc, chkRefr);   // la rifrazione qui: la riga 2 resta su una riga
             // la linea del tempo (ore da -12 a +36, Tempo reale) vale solo per il Calcolo previsionale: sta in cima a quella
             // linguetta (richiesta dell'autore, 14/11/2026)
             calcTimeRow = Row(L(Lang.T("Ore (da −12 a +36 h)")), trackTime, btnReal, lblSkyTime);

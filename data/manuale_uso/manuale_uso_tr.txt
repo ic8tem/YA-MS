@@ -65,13 +65,13 @@ H2|4.2 Sıra 1: E katmanı ve anten
 LI|İz yüksekliği km ve radardan: meteor izlerinin yüksekliği. "radardan" işaretliyken Collm radarının ölçtüğü en sık yükseklik (genellikle 88-90 km) kullanılır; elle yazmak için işareti kaldırın.
 LI|Lob elevasyonu °: anteninizin dikey lobunun maksimumunun elevasyonu. 0°'ye sabitlenmiş bir yönlü antenin ana lobu bile, zeminden yansıma nedeniyle ufkun birkaç derece üzerindedir: antenin dalga boyu cinsinden yüksekliğine göre genellikle 3-8°.
 LI|anten diyagramı: açıkken (başlangıç ayarı) yansıma noktaları iki antenin dikey kazancıyla ağırlıklandırılır: lob maksimumu çevresinde tam, ufka doğru ve yukarıya doğru giderek azalan. Kapalıyken lob elevasyonu kesin bir sınırdır: daha aşağıda görülen noktalar hesaba katılmaz.
-LI|Troposferik kırılma (GFS): başlangıçta kapalı. Açıkken program GFS modelinden iki istasyonun üzerindeki sıcaklık ve nem profilini indirir ve ışının iz yüksekliğine kadar bükülmesini hesaba katar: alçak noktalar biraz daha yüksek görünür ve ortak bölge genişler. GFS yanıt vermezse ortalama bir atmosfer kullanır. Geometri ve yol kaybı raporu bunu "Kırılma" satırında belirtir.
 LI|Yagi anteni: bom m: bom uzunluğu. Yanına program uzunluğu dalga boyu cinsinden, kazancı (bandın VE7BQH tablolarının ortalama doğrusu) ve yatay ile dikey −3 dB lobunu yazar. Bom, bandın VE7BQH örnekleminin dışındaysa tahmin kabadır.
 LI|Orta noktadan hot spot km ve otomatik (AMS): Hot A ve Hot B'nin orta noktaya uzaklığı. "otomatik (AMS)" işaretliyken DJ5HG'nin aktardığı J. Richardson tablosu izlenir (1000 km'de 13°, 1500 km'nin ötesinde 10° sapma); 30-400 km arasını elle yazmak için işareti kaldırın (MSHV 150 km kullanır).
 TAG|ATTENZIONE|"anten diyagramı" kapalı ve lob birkaç derecedeyken, uzun bir yolda iki istasyon katmanın hiçbir ortak noktasını göremeyebilir: tüm verimler 0 olur ve gerekli lob ya da iz yüksekliğini belirten "ORTAK BÖLGE YOK" uyarısı görünür. Örnek: JN70CN - JO76QP, 1791 km, lob 3°'de, izler 88,5 km'de.
 H2|4.3 Sıra 2: hesap zamanı
 LI|Saat: UTC saati.
 LI|Hesap tarihi (UTC): hesabın günü. Tahmin hesabı, Verim hesabı'ndaki 24 saatlik tablo ve GRAVES radarı'ndaki kronoloji için geçerlidir. Başlangıçta bugündür ve gece yarısı yeni güne geçer.
+LI|Troposferik kırılma (GFS): başlangıçta kapalı. Açıkken program GFS modelinden iki istasyonun üzerindeki sıcaklık ve nem profilini indirir ve ışının iz yüksekliğine kadar bükülmesini hesaba katar: alçak noktalar biraz daha yüksek görünür ve ortak bölge genişler. GFS yanıt vermezse ortalama bir atmosfer kullanır. Geometri ve yol kaybı raporu bunu "Kırılma" satırında belirtir.
 LI|Saatler (−12 ile +36 sa arası): hesap anını 15 dakikalık adımlarla kaydırır. Yanında: "Hesap zamanı: şimdi" ya da seçilen tarih ve saat.
 LI|Gerçek zaman: şu ana döner.
 LI|Zaman çizgisi («Saatler (−12 ile +36 sa arası)» ve «Gerçek zaman») Tahmin hesabı sekmesinin en üstündedir, çünkü yalnızca o hesap için geçerlidir.

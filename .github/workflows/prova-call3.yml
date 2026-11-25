@@ -2,17 +2,10 @@ name: prova-call3
 on: push
 jobs:
   p:
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
-      - shell: bash
-        run: |
-          for ua in "YA-MS/1.8.25" "Mozilla/5.0" ""; do
-            curl -sS -L -m 120 -A "$ua" -D h.txt -o c.txt "https://www.mmmonvhf.de/dl.php?dl=call3.txt" || echo CURL-ERR
-            echo "== UA [$ua] bytes $(wc -c < c.txt) righe $(wc -l < c.txt)"
-            grep -i "^HTTP\|content-type\|content-encoding\|content-length\|location" h.txt
-            head -c 200 c.txt | od -c | head -5
-            grep -vc '^//' c.txt
-          done
+      - run: |
+          curl -sS -L -m 60 -c cj.txt -b cj.txt -o c.txt "https://www.mmmonvhf.de/dl.php?dl=call3.txt"; cat c.txt
+          echo ======= HOME
+          curl -sS -L -m 60 "https://www.mmmonvhf.de/" | grep -io 'href="[^"]*"' | sort -u | head -80
+          for p in call3.php download.php downloads.php; do echo "== $p"; curl -sS -L -m 60 "https://www.mmmonvhf.de/$p" | grep -io 'href="[^"]*"' | grep -i "call\|dl\|down" | head -20; done

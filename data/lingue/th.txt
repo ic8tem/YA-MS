@@ -924,3 +924,4 @@ La formula della rifrattività e l'atmosfera di riferimento.	สูตรค่�
 L'ellissoide della Terra (semiasse e schiacciamento).	ทรงรีของโลก (กึ่งแกนเอกและความแป้น)
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	ระยะทาง มุมทิศ และจุดของเส้นทางบนเส้นจีโอเดสิกของทรงรี WGS84
 MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	ตอนนี้ MMMonVHF ให้ CALL3.TXT เฉพาะผู้ที่เข้าสู่ระบบเว็บไซต์แล้ว: ไม่ได้เปลี่ยน CALL3 เข้าสู่ระบบ www.mmmonvhf.de ด้วยบัญชีของคุณ ดาวน์โหลด CALL3.TXT จากหน้าดาวน์โหลด แล้วโหลดด้วย «{0}»
+MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF ขอให้เข้าสู่ระบบเว็บไซต์: ใช้ CALL3.TXT ล่าสุดที่พบในคอมพิวเตอร์แล้ว ({0})

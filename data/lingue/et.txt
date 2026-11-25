@@ -922,3 +922,4 @@ La formula della rifrattività e l'atmosfera di riferimento.	Refraktiivsuse vale
 L'ellissoide della Terra (semiasse e schiacciamento).	Maa ellipsoid (suur pooltelg ja lapikus).
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	Kaugused, asimuudid ja trassi punktid WGS84 ellipsoidi geodeetilisel joonel.
 MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF annab CALL3.TXT nüüd ainult sisse loginud kasutajatele: CALL3 ei muutunud. Logi oma kontoga sisse aadressil www.mmmonvhf.de, laadi CALL3.TXT allalaadimiste lehelt alla ja laadi see nupuga «{0}».
+MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF nõuab saidile sisselogimist: kasutati arvutist leitud kõige uuemat CALL3.TXT-faili ({0}).

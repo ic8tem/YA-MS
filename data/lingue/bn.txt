@@ -922,3 +922,4 @@ La formula della rifrattività e l'atmosfera di riferimento.	প্রতিস�
 L'ellissoide della Terra (semiasse e schiacciamento).	পৃথিবীর উপগোলক (অর্ধ-পরাক্ষ ও চ্যাপ্টাভাব)।
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	WGS84 উপগোলকের জিওডেসিকের উপর দূরত্ব, দিগংশ ও পথের বিন্দু।
 MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF এখন কেবল সাইটে লগ ইন করা ব্যবহারকারীদের CALL3.TXT দেয়: CALL3 বদলানো হয়নি। নিজের অ্যাকাউন্ট দিয়ে www.mmmonvhf.de-এ লগ ইন করুন, ডাউনলোড পৃষ্ঠা থেকে CALL3.TXT নামিয়ে «{0}» দিয়ে লোড করুন।
+MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF সাইটে লগ ইন চায়: কম্পিউটারে পাওয়া সবচেয়ে নতুন CALL3.TXT ব্যবহার করা হয়েছে ({0})।

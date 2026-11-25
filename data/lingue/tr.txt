@@ -922,3 +922,4 @@ La formula della rifrattività e l'atmosfera di riferimento.	Kırınım indisi f
 L'ellissoide della Terra (semiasse e schiacciamento).	Dünya elipsoidi (büyük yarı eksen ve basıklık).
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	WGS84 elipsoidinin jeodezik eğrisi üzerinde mesafeler, azimutlar ve yol noktaları.
 MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF artık CALL3.TXT'yi yalnızca siteye giriş yapmış kullanıcılara veriyor: CALL3 değiştirilmedi. Hesabınızla www.mmmonvhf.de'ye giriş yapın, CALL3.TXT'yi indirmeler sayfasından indirin ve «{0}» ile yükleyin.
+MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF siteye giriş istiyor: bilgisayarda bulunan en yeni CALL3.TXT kullanıldı ({0}).

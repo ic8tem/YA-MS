@@ -922,3 +922,4 @@ La formula della rifrattività e l'atmosfera di riferimento.	折射率公式和�
 L'ellissoide della Terra (semiasse e schiacciamento).	地球椭球（长半轴和扁率）。
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	WGS84 椭球测地线上的距离、方位角和路径点。
 MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF 现在只向已登录网站的用户提供 CALL3.TXT：CALL3 未更改。请用你的账户登录 www.mmmonvhf.de，从下载页面下载 CALL3.TXT，再用「{0}」载入。
+MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF 要求登录网站：已使用在电脑上找到的最新 CALL3.TXT（{0}）。

@@ -924,3 +924,4 @@ La formula della rifrattività e l'atmosfera di riferimento.	Формула ин
 L'ellissoide della Terra (semiasse e schiacciamento).	Земной эллипсоид (большая полуось и сжатие).
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	Расстояния, азимуты и точки трассы по геодезической линии эллипсоида WGS84.
 MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF теперь выдаёт CALL3.TXT только вошедшим на сайт пользователям: CALL3 не изменён. Войдите на www.mmmonvhf.de со своей учётной записью, скачайте CALL3.TXT со страницы загрузок и загрузите его кнопкой «{0}».
+MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF требует входа на сайт: использован самый новый CALL3.TXT, найденный на компьютере ({0}).

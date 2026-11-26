@@ -1,0 +1,107 @@
+1
+00:00:00,300 --> 00:00:06,700
+Videocorso YA-MS — Leggere i dati e fare una previsione di meteor scatter — Esempio: JN52NS → KO02WB, 144 MHz, 17-18 novembre 2026 (Leonidi)
+
+2
+00:00:07,300 --> 00:00:12,200
+Parte 1 — Leggere i dati — La tua stazione, la fascia della previsione, il traffico in diretta, i radar e la raccolta dati
+
+3
+00:00:12,800 --> 00:00:25,700
+Parte 1 · Leggere i dati: Prima di tutto la tua stazione: in Live e dati real-time › Traffico in diretta, riquadro «La mia stazione», scrivi il locator (qui JN52NS), la quota e la banda, poi premi Calcola.
+
+4
+00:00:26,300 --> 00:00:37,800
+Parte 1 · Leggere i dati: La fascia sotto l'orario è sempre visibile: ora migliore del giorno, sciame più favorevole e sei orizzonti di previsione: adesso, tra 1, 3, 6, 12 e 24 ore.
+
+5
+00:00:38,400 --> 00:00:54,600
+Parte 1 · Leggere i dati: Ogni riquadro dà l'ora UTC, l'indice della tratta (somma di ZHR × efficienza), il lato A o B con lo sciame che pesa di più e le riflessioni all'ora previste. Alle 13:27 UTC l'indice è 0: le Leonidi sono sotto l'orizzonte.
+
+6
+00:00:55,200 --> 00:01:09,900
+Parte 1 · Leggere i dati: La mappa del Traffico in diretta mostra gli spot meteor scatter dell'ultima ora, con i colori della banda (in basso a sinistra). I triangoli sono le stazioni in ascolto in MSK144, FSK441, PSK2K e JTMS su PSKReporter.
+
+7
+00:01:10,500 --> 00:01:24,900
+Parte 1 · Leggere i dati: A destra il riepilogo: in questo momento nessun contatto MS e 24 stazioni in ascolto. Un clic su una tratta o su una riga della tabella mostra i dettagli del contatto e la zona dello sciame.
+
+8
+00:01:25,500 --> 00:01:39,500
+Parte 1 · Leggere i dati: Flusso radar: i conteggi orari del radar di Collm a 36,2 MHz, ieri e oggi. Le barre azzurre sono le meteore valide: massimo nelle prime ore del mattino, minimo nel pomeriggio. È il ciclo giornaliero.
+
+9
+00:01:40,100 --> 00:01:51,900
+Parte 1 · Leggere i dati: La linea marrone è la stima a 144 MHz con le regole di SM6FHZ (esponente λ³): circa 1/63 del conteggio del radar, cioè 10-16 meteore all'ora nelle ore buone.
+
+10
+00:01:52,500 --> 00:02:03,600
+Parte 1 · Leggere i dati: Sotto, le quote delle scie misurate a Collm: oggi la più frequente è 86,5 km. YA-MS usa questa quota per la geometria (casella «dal radar» in alto).
+
+11
+00:02:04,200 --> 00:02:17,800
+Parte 1 · Leggere i dati: Radar GRAVES (143,050 MHz): per JN52NS la zona utile cade nel settore C del fascio. Il riquadro dice l'efficienza della tratta GRAVES → te adesso (Σ 0,0) e quando il fascio ripassa sulla zona.
+
+12
+00:02:18,400 --> 00:02:31,000
+Parte 1 · Leggere i dati: La ricostruzione cronologica mostra la finestra utile del giorno: oggi 00-10 UTC con le Leonidi e di nuovo dalle 20 UTC con le Tauridi Nord. Sotto, i passi del fascio dei prossimi 10 secondi.
+
+13
+00:02:32,600 --> 00:02:45,900
+Parte 1 · Leggere i dati: Raccolta dati: cinque fonti (DX cluster, Reverse Beacon Network, cluster con PSKReporter, PSKReporter MQTT, la tua WSJT-X via UDP) e il database CALL3 con oltre un milione di nominativi per trovare i locator.
+
+14
+00:02:46,500 --> 00:02:57,600
+Parte 1 · Leggere i dati: Il filtro decide cosa è meteor scatter: prima le frequenze tipiche (50,190-50,300, 70,100-70,400, 144,290-144,399 MHz), poi i modi MSK144, FSK441, PSK2K, JTMS, JT6M e la scritta <MS>.
+
+15
+00:02:58,200 --> 00:03:03,100
+Parte 2 — La previsione JN52NS → KO02WB — Toscana meridionale → Polonia centrale, 144 MHz, notte tra il 17 e il 18 novembre
+
+16
+00:03:03,700 --> 00:03:18,100
+Parte 2 · Previsione JN52NS → KO02WB: In Calcolo previsionale scrivi il locator del corrispondente, KO02WB, e la sua quota. Con il cursore delle ore (da −12 a +36 h) porti il calcolo all'ora che ti interessa: qui il 18/11 alle 05:31 UTC.
+
+17
+00:03:18,700 --> 00:03:29,500
+Parte 2 · Previsione JN52NS → KO02WB: Geometria e attenuazione: tratta di 1310 km, azimut 34,2° (dal corrispondente 222,1°), punto medio JN87AM. Con le scie a 86,5 km l'antenna va alzata di 4,5°.
+
+18
+00:03:30,100 --> 00:03:46,300
+Parte 2 · Previsione JN52NS → KO02WB: Hot A (JN78IF, az. 23°) e Hot B (JN86PU, az. 45°) stanno a 124 km dal punto medio. Con una Yagi di 4,6 m (lobo di 37°) puntata a 34° sono tutti e due dentro il lobo: l'antenna resta sul corrispondente.
+
+19
+00:03:46,900 --> 00:03:59,100
+Parte 2 · Previsione JN52NS → KO02WB: Bilancio a 144 MHz con 400 W e 14 dBi per parte: attenuazione 202,8 dB al punto medio, segnale −118,8 dBm contro un minimo di −130 dBm. Margine +11,2 dB.
+
+20
+00:03:59,700 --> 00:04:13,300
+Parte 2 · Previsione JN52NS → KO02WB: Calcolo dell'efficienza: l'indice della tratta ora per ora (barre). Le Leonidi (linea oliva) contano dalle 22 alle 11 UTC, le Tauridi soprattutto la sera; tra le 12 e le 14 UTC non c'è niente.
+
+21
+00:04:13,900 --> 00:04:27,900
+Parte 2 · Previsione JN52NS → KO02WB: La tabella dà la percentuale di ogni sciame con il lato: Leonidi 37 % lato A alle 05 UTC e 38 % lato B alle 07 UTC. Conviene spostare l'antenna di 10-30° verso quel lato.
+
+22
+00:04:28,500 --> 00:04:41,800
+Parte 2 · Previsione JN52NS → KO02WB: Il 18/11 alle 05:31 UTC: indice 4,5, sciame più utile le Leonidi (ZHR 12, efficienza 36 %), Hot A consigliato ad azimut 23°. L'ellisse PREV A raccoglie il 98 % delle scie probabili.
+
+23
+00:04:42,400 --> 00:04:54,200
+Parte 2 · Previsione JN52NS → KO02WB: A destra la volta celeste: le Leonidi sono alte a sud (az. 177°, elev. 69°). Sotto, la sezione vista dall'antenna: le scie più probabili cadono vicino a Hot A.
+
+24
+00:04:54,800 --> 00:05:06,300
+Parte 2 · Previsione JN52NS → KO02WB: Attuazione sperimentale: il flusso di Collm traslato a 144 MHz e, sotto, la previsione delle prossime 24 ore per la tratta (barre) con l'indice degli sciami (linea viola).
+
+25
+00:05:06,900 --> 00:05:19,500
+Parte 2 · Previsione JN52NS → KO02WB: Il giudizio è «buono» dalle 01 alle 07 UTC del 18/11, con 15-17 riflessioni all'ora previste. L'indice degli sciami ha i massimi alle 05 UTC (4,5) e alle 07 UTC (4,2).
+
+26
+00:05:20,100 --> 00:05:33,500
+In pratica: JN52NS → KO02WB — Quando: 18 novembre, 01-07 UTC; meglio verso le 05 e le 07 UTC — Sciame: Leonidi (ZHR 12-15); Tauridi Nord e Sud di contorno — Antenna: azimut 34° verso KO02WB (Hot A 23°, Hot B 45°), elevazione 4,5° — Margine a 144 MHz: +11 dB con 400 W e 14 dBi per parte — Prima di chiamare: guarda la fascia, il flusso del radar e chi è in ascolto
+
+27
+00:05:34,100 --> 00:05:40,500
+YA-MS — Windows (anche 7) · Linux · macOS · Raspberry Pi — github.com/ic8tem/YA-MS — Manuale e wiki in 36 lingue · ko-fi.com/ic8tem — 73 de IC8TEM

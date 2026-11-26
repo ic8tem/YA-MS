@@ -923,3 +923,5 @@ L'ellissoide della Terra (semiasse e schiacciamento).	المجسم الإهلي�
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	المسافات والسموت ونقاط المسار على الخط الجيوديسي للمجسم الإهليلجي WGS84.
 MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	أصبح MMMonVHF يعطي CALL3.TXT فقط لمن سجّل الدخول إلى الموقع: لم يتغير CALL3. سجّل الدخول إلى www.mmmonvhf.de بحسابك، ونزّل CALL3.TXT من صفحة التنزيلات، ثم حمّله بالزر «{0}».
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	يطلب MMMonVHF تسجيل الدخول إلى الموقع: استُخدم أحدث ملف CALL3.TXT موجود على الحاسوب ({0}).
+Il pacchetto scaricato non è completo: aggiornamento annullato	الحزمة التي تم تنزيلها غير مكتملة: تم إلغاء التحديث
+L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	بصمة الحزمة التي تم تنزيلها لا تطابق بصمة GitHub: تم إلغاء التحديث

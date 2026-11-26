@@ -923,3 +923,5 @@ L'ellissoide della Terra (semiasse e schiacciamento).	El elipsoide terrestre (se
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	Distancias, azimuts y puntos del trayecto sobre la geodésica del elipsoide WGS84.
 MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF ahora solo da CALL3.TXT a quien ha iniciado sesión en el sitio: CALL3 sin cambios. Entra en www.mmmonvhf.de con tu cuenta, descarga CALL3.TXT desde la página de descargas y cárgalo con «{0}».
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF pide iniciar sesión en el sitio: he usado el CALL3.TXT más reciente encontrado en el ordenador ({0}).
+Il pacchetto scaricato non è completo: aggiornamento annullato	El paquete descargado no está completo: actualización cancelada
+L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	La huella del paquete descargado no coincide con la de GitHub: actualización cancelada

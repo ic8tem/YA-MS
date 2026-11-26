@@ -925,3 +925,5 @@ L'ellissoide della Terra (semiasse e schiacciamento).	地球楕円体 (長半径
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	WGS84 楕円体の測地線上の距離、方位角、パスの点。
 MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF は現在、サイトにログインしたユーザーにだけ CALL3.TXT を提供しています。CALL3 は変更していません。自分のアカウントで www.mmmonvhf.de にログインし、ダウンロードページから CALL3.TXT を取得して「{0}」で読み込んでください。
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF はサイトへのログインを求めています。コンピューター上で見つかった最新の CALL3.TXT を使いました（{0}）。
+Il pacchetto scaricato non è completo: aggiornamento annullato	ダウンロードしたパッケージが不完全です：更新を中止しました
+L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	ダウンロードしたパッケージのハッシュが GitHub のものと一致しません：更新を中止しました

@@ -923,3 +923,5 @@ L'ellissoide della Terra (semiasse e schiacciamento).	पृथ्वी का 
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	WGS84 दीर्घवृत्ताभ की जियोडेसिक पर दूरियाँ, दिगंश और पथ के बिंदु।
 MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF अब CALL3.TXT केवल साइट पर लॉग इन किए उपयोगकर्ताओं को देता है: CALL3 नहीं बदला। अपने खाते से www.mmmonvhf.de पर लॉग इन करें, डाउनलोड पृष्ठ से CALL3.TXT डाउनलोड करें और उसे «{0}» से लोड करें।
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF साइट पर लॉग इन माँगता है: कंप्यूटर पर मिली सबसे नई CALL3.TXT का उपयोग किया ({0})।
+Il pacchetto scaricato non è completo: aggiornamento annullato	डाउनलोड किया गया पैकेज पूरा नहीं है: अपडेट रद्द
+L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	डाउनलोड किए गए पैकेज का फ़िंगरप्रिंट GitHub वाले से मेल नहीं खाता: अपडेट रद्द

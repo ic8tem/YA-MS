@@ -923,3 +923,5 @@ L'ellissoide della Terra (semiasse e schiacciamento).	Sporvala jarðar (hálfur 
 Distanze, azimut e punti della tratta sulla geodetica dell'ellissoide WGS84.	Fjarlægðir, stefnur og punktar leiðarinnar á jarðlínu WGS84-sporvölunnar.
 MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non cambiato. Entra su www.mmmonvhf.de con il tuo account, scarica CALL3.TXT dalla pagina dei download e caricalo con «{0}».	MMMonVHF afhendir nú CALL3.TXT aðeins innskráðum notendum: CALL3 óbreytt. Skráðu þig inn á www.mmmonvhf.de með aðganginum þínum, sæktu CALL3.TXT af niðurhalssíðunni og hlaðaðu henni inn með «{0}».
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF krefst innskráningar á vefinn: notuð var nýjasta CALL3.TXT sem fannst í tölvunni ({0}).
+Il pacchetto scaricato non è completo: aggiornamento annullato	Niðurhalaði pakkinn er ekki heill: uppfærslu hætt
+L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Fingrafar niðurhalaða pakkans passar ekki við fingrafarið á GitHub: uppfærslu hætt

@@ -25,7 +25,7 @@ namespace YAMS
 {
     public class ReleaseInfo
     {
-        public string Tag, VersionText, Notes, PageUrl, AssetName, AssetUrl;
+        public string Tag, VersionText, Notes, PageUrl, AssetName, AssetUrl, AssetSha256;
         public long AssetSize;
         public Version Ver;
     }
@@ -97,6 +97,7 @@ namespace YAMS
                 JsonElement e;
                 ri.Notes = root.TryGetProperty("body", out e) && e.ValueKind == JsonValueKind.String ? e.GetString() : "";
                 ri.PageUrl = root.TryGetProperty("html_url", out e) && e.ValueKind == JsonValueKind.String ? e.GetString() : ReleasesPage;
+                if (!IsGitHubUrl(ri.PageUrl, "github.com")) ri.PageUrl = ReleasesPage;   // si apre solo la pagina di GitHub
                 string suf = AssetSuffix();
                 if (root.TryGetProperty("assets", out e))
                     foreach (JsonElement a in e.EnumerateArray())
@@ -105,11 +106,26 @@ namespace YAMS
                         if (!n.EndsWith(suf, StringComparison.OrdinalIgnoreCase)) continue;
                         ri.AssetName = n;
                         ri.AssetUrl = a.GetProperty("browser_download_url").GetString();
+                        if (!IsGitHubUrl(ri.AssetUrl, "github.com")) { ri.AssetUrl = null; ri.AssetName = null; continue; }
                         ri.AssetSize = a.TryGetProperty("size", out JsonElement sz) ? sz.GetInt64() : 0;
+                        // impronta SHA-256 pubblicata da GitHub per ogni file della Release ("sha256:<64 cifre esadecimali>")
+                        if (a.TryGetProperty("digest", out JsonElement dg) && dg.ValueKind == JsonValueKind.String)
+                        {
+                            string d = dg.GetString() ?? "";
+                            if (d.StartsWith("sha256:", StringComparison.OrdinalIgnoreCase) && d.Length == 71) ri.AssetSha256 = d.Substring(7).ToLowerInvariant();
+                        }
                         break;
                     }
                 return ri;
             }
+        }
+
+        // indirizzo https di GitHub (host esatto o suo sottodominio): gli aggiornamenti arrivano solo da li'
+        public static bool IsGitHubUrl(string url, string host)
+        {
+            Uri u;
+            if (string.IsNullOrEmpty(url) || !Uri.TryCreate(url, UriKind.Absolute, out u) || u.Scheme != Uri.UriSchemeHttps) return false;
+            return u.Host.Equals(host, StringComparison.OrdinalIgnoreCase) || u.Host.EndsWith("." + host, StringComparison.OrdinalIgnoreCase);
         }
 
         public static string StageDir { get { return Path.Combine(AppPaths.DataDir, "aggiornamento"); } }
@@ -132,6 +148,25 @@ namespace YAMS
                     fs.Write(buf, 0, n); got += n;
                     int p = total > 0 ? (int)(got * 100 / total) : -1;
                     if (p != last && progress != null) { last = p; progress(p); }
+                }
+            }
+            // controllo del pacchetto: dimensione e impronta SHA-256 devono essere quelle pubblicate da GitHub
+            long size = new FileInfo(file).Length;
+            if (ri.AssetSize > 0 && size != ri.AssetSize)
+            {
+                File.Delete(file);
+                throw new IOException(Lang.T("Il pacchetto scaricato non è completo: aggiornamento annullato"));
+            }
+            if (ri.AssetSha256 != null)
+            {
+                string got;
+                using (FileStream fs = File.OpenRead(file))
+                using (System.Security.Cryptography.SHA256 sha = System.Security.Cryptography.SHA256.Create())
+                    got = Convert.ToHexString(sha.ComputeHash(fs)).ToLowerInvariant();
+                if (got != ri.AssetSha256)
+                {
+                    File.Delete(file);
+                    throw new IOException(Lang.T("L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato"));
                 }
             }
             string outDir = Path.Combine(dir, "nuova");

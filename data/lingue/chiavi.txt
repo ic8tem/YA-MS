@@ -293,6 +293,7 @@ Il guadagno in funzione della lunghezza del boom e l'apertura del lobo d'antenna
 Il locator dei nominativi che mancano nel CALL3.
 Il locator scritto è diverso da quello dell'archivio CALL3: premi per aggiornarlo e memorizzarlo (voce a mano, scritta subito anche dentro call3.txt).
 Il mio locator
+Il pacchetto scaricato non è completo: aggiornamento annullato
 Il programma scarica il pacchetto {0}, sostituisce i suoi file, tiene la cartella data (i file del programma cambiati vengono prima copiati in data/backup) e si riavvia.
 Il protocollo UDP con cui YA-MS riceve le decodifiche, anche da JTDX e MSHV.
 Il riferimento per la grafica della volta celeste.
@@ -321,6 +322,7 @@ Klaus von der Heide DJ5HG - "Die Geometrie von Meteorscatterverbindungen" (2004)
 Klaus von der Heide DJ5HG - QTFGUI (aurora, FAI e meteor scatter) e manuale "QTFGUI Help" 2007: legge di diffusione a cono,\n    caso di prova Amburgo - Barcellona nelle Quadrantidi, usato per verificare il modello
 L'aggiornamento non è riuscito: {0}
 L'archivio dei nominativi e dei locator, aggiornato ogni 12 ore.
+L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato
 L'interfaccia multipiattaforma (Windows, Linux, Mac) e l'ambiente di esecuzione.
 L'ora del giorno scelto con l'indice della tratta più alto (somma di ZHR × efficienza di tutti gli sciami attivi) e il lato della tratta da cui arriva la maggior parte delle riflessioni.
 L.B. Cebik W4RNL - Long-Boom Yagi Rules of Thumb: A Comparison with Modeling Data (verifica delle due regole);\n    Appreciating DL6WU Wide-Band Long-Boom Yagi Design e 70-CM Yagi Stacks Part 2 (Yagi VK3AUU di David Tanner):\n    simulazioni NEC usate per verificare la curva del guadagno e correggere il lobo orizzontale (0,93 x Kraus)

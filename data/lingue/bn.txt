@@ -925,3 +925,6 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF সাইটে লগ ইন চায়: কম্পিউটারে পাওয়া সবচেয়ে নতুন CALL3.TXT ব্যবহার করা হয়েছে ({0})।
 Il pacchetto scaricato non è completo: aggiornamento annullato	ডাউনলোড করা প্যাকেজ সম্পূর্ণ নয়: হালনাগাদ বাতিল
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	ডাউনলোড করা প্যাকেজের ফিঙ্গারপ্রিন্ট GitHub-এর সাথে মেলে না: হালনাগাদ বাতিল
+La release non contiene la firma dei pacchetti: per sicurezza l'aggiornamento automatico non si fa. Scarica il programma dalla pagina della release.	রিলিজে প্যাকেজগুলোর স্বাক্ষর নেই: নিরাপত্তার জন্য স্বয়ংক্রিয় আপডেট হয় না। রিলিজ পাতা থেকে প্রোগ্রামটি ডাউনলোড করুন।
+La firma dei pacchetti non è valida: l'aggiornamento non si fa.	প্যাকেজগুলোর স্বাক্ষর বৈধ নয়: আপডেট হয় না।
+Il pacchetto scaricato non corrisponde alla firma: l'aggiornamento non si fa.	ডাউনলোড করা প্যাকেজ স্বাক্ষরের সঙ্গে মেলে না: আপডেট হয় না।

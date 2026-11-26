@@ -925,3 +925,6 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF siteye giriş istiyor: bilgisayarda bulunan en yeni CALL3.TXT kullanıldı ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	İndirilen paket eksik: güncelleme iptal edildi
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	İndirilen paketin parmak izi GitHub'dakiyle eşleşmiyor: güncelleme iptal edildi
+La release non contiene la firma dei pacchetti: per sicurezza l'aggiornamento automatico non si fa. Scarica il programma dalla pagina della release.	Sürüm paketlerin imzasını içermiyor: güvenlik nedeniyle otomatik güncelleme yapılmıyor. Programı sürüm sayfasından indir.
+La firma dei pacchetti non è valida: l'aggiornamento non si fa.	Paketlerin imzası geçerli değil: güncelleme yapılmıyor.
+Il pacchetto scaricato non corrisponde alla firma: l'aggiornamento non si fa.	İndirilen paket imzayla uyuşmuyor: güncelleme yapılmıyor.

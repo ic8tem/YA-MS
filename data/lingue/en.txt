@@ -927,3 +927,6 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF asks you to log in to the site: I used the most recent CALL3.TXT found on the computer ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	The downloaded package is incomplete: update cancelled
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	The fingerprint of the downloaded package does not match the one on GitHub: update cancelled
+La release non contiene la firma dei pacchetti: per sicurezza l'aggiornamento automatico non si fa. Scarica il programma dalla pagina della release.	The release does not contain the package signature: for safety the automatic update is not done. Download the program from the release page.
+La firma dei pacchetti non è valida: l'aggiornamento non si fa.	The package signature is not valid: the update is not done.
+Il pacchetto scaricato non corrisponde alla firma: l'aggiornamento non si fa.	The downloaded package does not match the signature: the update is not done.

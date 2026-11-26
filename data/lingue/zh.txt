@@ -925,3 +925,6 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF 要求登录网站：已使用在电脑上找到的最新 CALL3.TXT（{0}）。
 Il pacchetto scaricato non è completo: aggiornamento annullato	下载的软件包不完整：已取消更新
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	下载的软件包指纹与 GitHub 上的不符：已取消更新
+La release non contiene la firma dei pacchetti: per sicurezza l'aggiornamento automatico non si fa. Scarica il programma dalla pagina della release.	该版本不含软件包签名：为安全起见不进行自动更新。请从版本页面下载程序。
+La firma dei pacchetti non è valida: l'aggiornamento non si fa.	软件包签名无效：不进行更新。
+Il pacchetto scaricato non corrisponde alla firma: l'aggiornamento non si fa.	下载的软件包与签名不符：不进行更新。

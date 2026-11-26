@@ -925,3 +925,6 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF가 사이트 로그인을 요구합니다. 컴퓨터에서 찾은 가장 최신 CALL3.TXT를 사용했습니다({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	다운로드한 패키지가 완전하지 않습니다: 업데이트가 취소되었습니다
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	다운로드한 패키지의 지문이 GitHub의 것과 일치하지 않습니다: 업데이트가 취소되었습니다
+La release non contiene la firma dei pacchetti: per sicurezza l'aggiornamento automatico non si fa. Scarica il programma dalla pagina della release.	릴리스에 패키지 서명이 없습니다. 안전을 위해 자동 업데이트를 하지 않습니다. 릴리스 페이지에서 프로그램을 내려받으세요.
+La firma dei pacchetti non è valida: l'aggiornamento non si fa.	패키지 서명이 유효하지 않습니다. 업데이트를 하지 않습니다.
+Il pacchetto scaricato non corrisponde alla firma: l'aggiornamento non si fa.	내려받은 패키지가 서명과 일치하지 않습니다. 업데이트를 하지 않습니다.

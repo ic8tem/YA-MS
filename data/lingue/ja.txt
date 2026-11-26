@@ -927,3 +927,6 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF はサイトへのログインを求めています。コンピューター上で見つかった最新の CALL3.TXT を使いました（{0}）。
 Il pacchetto scaricato non è completo: aggiornamento annullato	ダウンロードしたパッケージが不完全です：更新を中止しました
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	ダウンロードしたパッケージのハッシュが GitHub のものと一致しません：更新を中止しました
+La release non contiene la firma dei pacchetti: per sicurezza l'aggiornamento automatico non si fa. Scarica il programma dalla pagina della release.	リリースにパッケージの署名がありません。安全のため自動更新は行いません。リリースページからプログラムをダウンロードしてください。
+La firma dei pacchetti non è valida: l'aggiornamento non si fa.	パッケージの署名が無効です。更新は行いません。
+Il pacchetto scaricato non corrisponde alla firma: l'aggiornamento non si fa.	ダウンロードしたパッケージが署名と一致しません。更新は行いません。

@@ -925,3 +925,6 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	Humihingi ang MMMonVHF na mag-log in sa site: ginamit ang pinakabagong CALL3.TXT na nakita sa computer ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Hindi kumpleto ang na-download na package: kinansela ang update
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Hindi tugma ang fingerprint ng na-download na package sa nasa GitHub: kinansela ang update
+La release non contiene la firma dei pacchetti: per sicurezza l'aggiornamento automatico non si fa. Scarica il programma dalla pagina della release.	Walang lagda ng mga package ang release: para sa kaligtasan, hindi ginagawa ang awtomatikong pag-update. I-download ang programa mula sa pahina ng release.
+La firma dei pacchetti non è valida: l'aggiornamento non si fa.	Hindi wasto ang lagda ng mga package: hindi ginagawa ang pag-update.
+Il pacchetto scaricato non corrisponde alla firma: l'aggiornamento non si fa.	Hindi tugma sa lagda ang na-download na package: hindi ginagawa ang pag-update.

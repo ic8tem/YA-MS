@@ -25,7 +25,7 @@ namespace YAMS
 {
     public class ReleaseInfo
     {
-        public string Tag, VersionText, Notes, PageUrl, AssetName, AssetUrl, AssetSha256;
+        public string Tag, VersionText, Notes, PageUrl, AssetName, AssetUrl, AssetSha256, SumsUrl, SigUrl;
         public long AssetSize;
         public Version Ver;
     }
@@ -103,7 +103,14 @@ namespace YAMS
                     foreach (JsonElement a in e.EnumerateArray())
                     {
                         string n = a.GetProperty("name").GetString() ?? "";
-                        if (!n.EndsWith(suf, StringComparison.OrdinalIgnoreCase)) continue;
+                        // elenco firmato delle impronte (dal 26/11/2026): SHA256SUMS.txt e SHA256SUMS.txt.sig
+                        if (n == "SHA256SUMS.txt" || n == "SHA256SUMS.txt.sig")
+                        {
+                            string su = a.GetProperty("browser_download_url").GetString();
+                            if (IsGitHubUrl(su, "github.com")) { if (n == "SHA256SUMS.txt") ri.SumsUrl = su; else ri.SigUrl = su; }
+                            continue;
+                        }
+                        if (ri.AssetName != null || !n.EndsWith(suf, StringComparison.OrdinalIgnoreCase)) continue;
                         ri.AssetName = n;
                         ri.AssetUrl = a.GetProperty("browser_download_url").GetString();
                         if (!IsGitHubUrl(ri.AssetUrl, "github.com")) { ri.AssetUrl = null; ri.AssetName = null; continue; }
@@ -114,7 +121,6 @@ namespace YAMS
                             string d = dg.GetString() ?? "";
                             if (d.StartsWith("sha256:", StringComparison.OrdinalIgnoreCase) && d.Length == 71) ri.AssetSha256 = d.Substring(7).ToLowerInvariant();
                         }
-                        break;
                     }
                 return ri;
             }
@@ -126,6 +132,46 @@ namespace YAMS
             Uri u;
             if (string.IsNullOrEmpty(url) || !Uri.TryCreate(url, UriKind.Absolute, out u) || u.Scheme != Uri.UriSchemeHttps) return false;
             return u.Host.Equals(host, StringComparison.OrdinalIgnoreCase) || u.Host.EndsWith("." + host, StringComparison.OrdinalIgnoreCase);
+        }
+
+        public const string SignPublicKey = "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEDJm6qswCcveM9PRkjWBvia/oV/YBQ65UqO4UVaCEjaCz1lQe11tPBtKoK2D15AbY2klESz1oInvXB6S1jano+g==";
+
+        static byte[] GetBytes(string url)
+        {
+            using (HttpWebResponse resp = (HttpWebResponse)Req(url).GetResponse())
+            using (Stream rs = resp.GetResponseStream())
+            using (MemoryStream ms = new MemoryStream())
+            {
+                byte[] buf = new byte[8192]; int n;
+                while ((n = rs.Read(buf, 0, buf.Length)) > 0) { ms.Write(buf, 0, n); if (ms.Length > 1 << 20) throw new IOException("too large"); }
+                return ms.ToArray();
+            }
+        }
+
+        // null se il pacchetto e' firmato e integro, altrimenti il messaggio d'errore
+        static string CheckSignature(ReleaseInfo ri, string file)
+        {
+            if (ri.SumsUrl == null || ri.SigUrl == null) return Lang.T("La release non contiene la firma dei pacchetti: per sicurezza l'aggiornamento automatico non si fa. Scarica il programma dalla pagina della release.");
+            byte[] sums = GetBytes(ri.SumsUrl), sig = GetBytes(ri.SigUrl);
+            bool ok;
+            using (System.Security.Cryptography.ECDsa k = System.Security.Cryptography.ECDsa.Create())
+            {
+                k.ImportSubjectPublicKeyInfo(Convert.FromBase64String(SignPublicKey), out _);
+                ok = k.VerifyData(sums, sig, System.Security.Cryptography.HashAlgorithmName.SHA256, System.Security.Cryptography.DSASignatureFormat.Rfc3279DerSequence);
+            }
+            if (!ok) return Lang.T("La firma dei pacchetti non è valida: l'aggiornamento non si fa.");
+            string want = null;
+            foreach (string line in System.Text.Encoding.UTF8.GetString(sums).Split('\n'))
+            {
+                string t = line.Trim(); int sp = t.IndexOf(' ');
+                if (sp == 64 && t.Substring(sp).Trim().TrimStart('*') == ri.AssetName) { want = t.Substring(0, 64).ToLowerInvariant(); break; }
+            }
+            if (want == null) return Lang.T("La firma dei pacchetti non è valida: l'aggiornamento non si fa.");
+            string got;
+            using (FileStream fs = File.OpenRead(file))
+            using (System.Security.Cryptography.SHA256 sha = System.Security.Cryptography.SHA256.Create())
+                got = Convert.ToHexString(sha.ComputeHash(fs)).ToLowerInvariant();
+            return got == want ? null : Lang.T("Il pacchetto scaricato non corrisponde alla firma: l'aggiornamento non si fa.");
         }
 
         public static string StageDir { get { return Path.Combine(AppPaths.DataDir, "aggiornamento"); } }
@@ -169,6 +215,10 @@ namespace YAMS
                     throw new IOException(Lang.T("L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato"));
                 }
             }
+            // firma dell'autore (richiesta dell'autore, 26/11/2026): l'impronta del pacchetto deve stare nell'elenco
+            // SHA256SUMS.txt firmato con la chiave dell'autore (ECDSA P-256, chiave privata nei segreti di GitHub)
+            string serr = CheckSignature(ri, file);
+            if (serr != null) { File.Delete(file); throw new IOException(serr); }
             string outDir = Path.Combine(dir, "nuova");
             Directory.CreateDirectory(outDir);
             if (file.EndsWith(".zip", StringComparison.OrdinalIgnoreCase)) ZipFile.ExtractToDirectory(file, outDir, true);

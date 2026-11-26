@@ -925,3 +925,6 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF pide iniciar sesión en el sitio: he usado el CALL3.TXT más reciente encontrado en el ordenador ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	El paquete descargado no está completo: actualización cancelada
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	La huella del paquete descargado no coincide con la de GitHub: actualización cancelada
+La release non contiene la firma dei pacchetti: per sicurezza l'aggiornamento automatico non si fa. Scarica il programma dalla pagina della release.	La release no contiene la firma de los paquetes: por seguridad no se hace la actualización automática. Descarga el programa desde la página de la release.
+La firma dei pacchetti non è valida: l'aggiornamento non si fa.	La firma de los paquetes no es válida: no se hace la actualización.
+Il pacchetto scaricato non corrisponde alla firma: l'aggiornamento non si fa.	El paquete descargado no coincide con la firma: no se hace la actualización.

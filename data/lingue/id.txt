@@ -925,3 +925,6 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF meminta masuk ke situs: dipakai CALL3.TXT terbaru yang ditemukan di komputer ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Paket yang diunduh tidak lengkap: pembaruan dibatalkan
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Sidik jari paket yang diunduh tidak cocok dengan yang ada di GitHub: pembaruan dibatalkan
+La release non contiene la firma dei pacchetti: per sicurezza l'aggiornamento automatico non si fa. Scarica il programma dalla pagina della release.	Rilis tidak berisi tanda tangan paket: demi keamanan pembaruan otomatis tidak dilakukan. Unduh program dari halaman rilis.
+La firma dei pacchetti non è valida: l'aggiornamento non si fa.	Tanda tangan paket tidak sah: pembaruan tidak dilakukan.
+Il pacchetto scaricato non corrisponde alla firma: l'aggiornamento non si fa.	Paket yang diunduh tidak cocok dengan tanda tangan: pembaruan tidak dilakukan.

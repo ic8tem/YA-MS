@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] ve QTFGUI [17] sabit 102 km yükseklik kullanır; program
 H1|3. Yolun geometrisi
 H2|3.1 Dünya, istasyonlar ve orta nokta
 TAG|FONTE|WGS84 elipsoidi [37]: büyük yarı eksen 6378,137 km, basıklık 1/298,257223563. Küresel formüller için (makaledeki yükselme açısı, menzil, kırılma) program elipsoidin ortalama yarıçapını kullanır, r = 6371,0088 km; 1.8.23 sürümüne kadar yarıçapı 6372,7955 km olan küreyi kullanıyordu [1].
-TAG|SCELTA|Yol her zaman istasyonun lokatörü ile karşı istasyonun lokatörü arasındaki gerçek yoldur. 1.8.26 sürümünden itibaren mesafe, azimut ve orta nokta, elipsoidin jeodezik eğrisi üzerinde Karney yöntemiyle [38] hesaplanır: küreye göre mesafeler en fazla %0,5, azimutlar ise derecenin birkaç onda biri kadar değişir.
+TAG|SCELTA|Yol her zaman istasyonun lokatörü ile karşı istasyonun lokatörü arasındaki gerçek yoldur. 1.8.27 sürümünden itibaren mesafe, azimut ve orta nokta, elipsoidin jeodezik eğrisi üzerinde Karney yöntemiyle [38] hesaplanır: küreye göre mesafeler en fazla %0,5, azimutlar ise derecenin birkaç onda biri kadar değişir.
 TAG|FONTE|Saate bağlı hesaplamalar yolun orta noktasına göre yapılır: iki uç arasında en iyi saat 1,5 saate kadar farklı olabilir (SM6FHZ [4]).
 H2|3.2 Anten yükseliş açısı
 TAG|FONTE|Yansıma noktasına doğru yükseliş açısı makaledeki formülle (Resim 7) [1] hesaplanır; x = mesafe / r, H izin yüksekliği, h istasyonun yüksekliği:

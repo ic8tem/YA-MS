@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] og QTFGUI [17] bruker en fast høyde på 102 km; programm
 H1|3. Strekningens geometri
 H2|3.1 Jorden, stasjonene og midtpunktet
 TAG|FONTE|WGS84-ellipsoiden [37]: store halvakse 6378,137 km, avflating 1/298,257223563. Til de sfæriske formlene (elevasjon fra artikkelen, rekkevidde, refraksjon) bruker programmet ellipsoidens middelradius, r = 6371,0088 km; til og med versjon 1.8.23 brukte det kulen med radius 6372,7955 km [1].
-TAG|SCELTA|Strekningen er alltid den virkelige mellom stasjonens lokator og motstasjonens. Fra versjon 1.8.26 beregnes avstand, asimut og midtpunkt på ellipsoidens geodet med Karneys metode [38]: sammenlignet med kulen endres avstandene høyst 0,5 % og asimutene noen tideler av en grad.
+TAG|SCELTA|Strekningen er alltid den virkelige mellom stasjonens lokator og motstasjonens. Fra versjon 1.8.27 beregnes avstand, asimut og midtpunkt på ellipsoidens geodet med Karneys metode [38]: sammenlignet med kulen endres avstandene høyst 0,5 % og asimutene noen tideler av en grad.
 TAG|FONTE|Tidsavhengige beregninger gjelder strekningens midtpunkt: mellom de to endene kan beste time avvike med opptil 1,5 timer (SM6FHZ [4]).
 H2|3.2 Antenneelevasjon
 TAG|FONTE|Elevasjonen mot refleksjonspunktet beregnes med artikkelens formel (Bilde 7) [1], med x = avstand / r, H sporets høyde, h stasjonens høyde:

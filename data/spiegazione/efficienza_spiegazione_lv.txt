@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] un QTFGUI [17] izmanto fiksētu 102 km augstumu; programm
 H1|3. Trases ģeometrija
 H2|3.1 Zeme, stacijas un viduspunkts
 TAG|FONTE|WGS84 elipsoīds [37]: lielā pusass 6378,137 km, saplacinājums 1/298,257223563. Sfēriskajām formulām (raksta pacēluma leņķis, sniedzamība, refrakcija) programma izmanto elipsoīda vidējo rādiusu r = 6371,0088 km; līdz versijai 1.8.23 tā izmantoja sfēru ar rādiusu 6372,7955 km [1].
-TAG|SCELTA|Trase vienmēr ir reālā trase starp stacijas lokatoru un korespondenta lokatoru. No versijas 1.8.26 attālumu, azimutu un viduspunktu aprēķina uz elipsoīda ģeodēziskās līnijas ar Karneja metodi [38]: salīdzinājumā ar sfēru attālumi mainās ne vairāk kā par 0,5% un azimuti par dažām grāda desmitdaļām.
+TAG|SCELTA|Trase vienmēr ir reālā trase starp stacijas lokatoru un korespondenta lokatoru. No versijas 1.8.27 attālumu, azimutu un viduspunktu aprēķina uz elipsoīda ģeodēziskās līnijas ar Karneja metodi [38]: salīdzinājumā ar sfēru attālumi mainās ne vairāk kā par 0,5% un azimuti par dažām grāda desmitdaļām.
 TAG|FONTE|No laika atkarīgie aprēķini attiecas uz trases viduspunktu: starp abiem galiem labākais laiks var atšķirties līdz 1,5 stundām (SM6FHZ [4]).
 H2|3.2 Antenas elevācija
 TAG|FONTE|Elevāciju uz atstarošanas punktu aprēķina ar raksta formulu (7. attēls) [1], kur x = attālums / r, H – sliedes augstums, h – stacijas augstums:

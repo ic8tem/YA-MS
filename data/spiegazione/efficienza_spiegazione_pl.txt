@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] i QTFGUI [17] używają stałej wysokości 102 km; progra
 H1|3. Geometria trasy
 H2|3.1 Ziemia, stacje i punkt środkowy
 TAG|FONTE|Elipsoida WGS84 [37]: duża półoś 6378,137 km, spłaszczenie 1/298,257223563. Do wzorów sferycznych (elewacja z artykułu, zasięg, refrakcja) program używa średniego promienia elipsoidy, r = 6371,0088 km; do wersji 1.8.23 używał sfery o promieniu 6372,7955 km [1].
-TAG|SCELTA|Trasa jest zawsze rzeczywistą trasą między lokatorem stacji a lokatorem korespondenta. Od wersji 1.8.26 odległość, azymut i punkt środkowy oblicza się na linii geodezyjnej elipsoidy metodą Karneya [38]: w porównaniu ze sferą odległości zmieniają się najwyżej o 0,5%, a azymuty o kilka dziesiątych stopnia.
+TAG|SCELTA|Trasa jest zawsze rzeczywistą trasą między lokatorem stacji a lokatorem korespondenta. Od wersji 1.8.27 odległość, azymut i punkt środkowy oblicza się na linii geodezyjnej elipsoidy metodą Karneya [38]: w porównaniu ze sferą odległości zmieniają się najwyżej o 0,5%, a azymuty o kilka dziesiątych stopnia.
 TAG|FONTE|Obliczenia zależne od godziny odnoszą się do punktu środkowego trasy: między jej końcami najlepsza godzina może się różnić nawet o 1,5 godziny (SM6FHZ [4]).
 H2|3.2 Elewacja anteny
 TAG|FONTE|Elewację w kierunku punktu odbicia oblicza się wzorem z artykułu (Rysunek 7) [1], gdzie x = odległość / r, H wysokość śladu, h wysokość stacji:

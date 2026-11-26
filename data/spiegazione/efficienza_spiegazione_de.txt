@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] und QTFGUI [17] verwenden eine feste Höhe von 102 km; da
 H1|3. Die Geometrie der Strecke
 H2|3.1 Erde, Stationen und Mittelpunkt
 TAG|FONTE|WGS84-Ellipsoid [37]: große Halbachse 6378,137 km, Abplattung 1/298,257223563. Für die sphärischen Formeln (Elevation aus dem Artikel, Reichweite, Refraktion) verwendet das Programm den mittleren Radius des Ellipsoids, r = 6371,0088 km; bis Version 1.8.23 verwendete es die Kugel mit Radius 6372,7955 km [1].
-TAG|SCELTA|Die Strecke ist immer die reale zwischen dem Locator der Station und dem der Gegenstation. Ab Version 1.8.26 werden Entfernung, Azimut und Mittelpunkt auf der Geodäte des Ellipsoids mit dem Verfahren von Karney [38] berechnet: gegenüber der Kugel ändern sich die Entfernungen um höchstens 0,5 % und die Azimute um einige Zehntelgrad.
+TAG|SCELTA|Die Strecke ist immer die reale zwischen dem Locator der Station und dem der Gegenstation. Ab Version 1.8.27 werden Entfernung, Azimut und Mittelpunkt auf der Geodäte des Ellipsoids mit dem Verfahren von Karney [38] berechnet: gegenüber der Kugel ändern sich die Entfernungen um höchstens 0,5 % und die Azimute um einige Zehntelgrad.
 TAG|FONTE|Die zeitabhängigen Berechnungen beziehen sich auf den Mittelpunkt der Strecke: zwischen den beiden Enden kann die beste Zeit um bis zu 1,5 Stunden abweichen (SM6FHZ [4]).
 H2|3.2 Antennenelevation
 TAG|FONTE|Die Elevation zum Reflexionspunkt wird mit der Formel des Artikels (Bild 7) [1] berechnet, mit x = Entfernung / r, H Spurhöhe, h Stationshöhe:

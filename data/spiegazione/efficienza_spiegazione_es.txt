@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] y QTFGUI [17] usan una altura fija de 102 km; el programa
 H1|3. La geometría del trayecto
 H2|3.1 Tierra, estaciones y punto medio
 TAG|FONTE|Elipsoide WGS84 [37]: semieje mayor 6378,137 km, achatamiento 1/298,257223563. Para las fórmulas esféricas (elevación del artículo, alcance, refracción) el programa usa el radio medio del elipsoide, r = 6371,0088 km; hasta la versión 1.8.23 usaba la esfera de radio 6372,7955 km [1].
-TAG|SCELTA|El trayecto es siempre el real entre el locator de la estación y el del corresponsal. Desde la versión 1.8.26 la distancia, el azimut y el punto medio se calculan sobre la geodésica del elipsoide con el método de Karney [38]: respecto a la esfera, las distancias cambian como máximo un 0,5% y los azimuts unas décimas de grado.
+TAG|SCELTA|El trayecto es siempre el real entre el locator de la estación y el del corresponsal. Desde la versión 1.8.27 la distancia, el azimut y el punto medio se calculan sobre la geodésica del elipsoide con el método de Karney [38]: respecto a la esfera, las distancias cambian como máximo un 0,5% y los azimuts unas décimas de grado.
 TAG|FONTE|Los cálculos que dependen de la hora se refieren al punto medio del trayecto: entre los dos extremos la mejor hora puede diferir hasta 1,5 horas (SM6FHZ [4]).
 H2|3.2 Elevación de la antena
 TAG|FONTE|La elevación hacia el punto de reflexión se calcula con la fórmula del artículo (Imagen 7) [1], con x = distancia / r, H altura de la estela, h altura de la estación:

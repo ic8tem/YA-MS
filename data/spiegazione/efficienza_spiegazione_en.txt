@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] and QTFGUI [17] use a fixed height of 102 km; the program
 H1|3. The path geometry
 H2|3.1 Earth, stations and midpoint
 TAG|FONTE|WGS84 ellipsoid [37]: semi-major axis 6378.137 km, flattening 1/298.257223563. For the spherical formulas (elevation from the article, range, refraction) the program uses the mean radius of the ellipsoid, r = 6371.0088 km; up to version 1.8.23 it used the sphere of radius 6372.7955 km [1].
-TAG|SCELTA|The path is always the real one between the station's locator and that of the DX station. From version 1.8.26 distance, azimuth and midpoint are calculated on the geodesic of the ellipsoid with Karney's method [38]: compared with the sphere, distances change by at most 0.5% and azimuths by a few tenths of a degree.
+TAG|SCELTA|The path is always the real one between the station's locator and that of the DX station. From version 1.8.27 distance, azimuth and midpoint are calculated on the geodesic of the ellipsoid with Karney's method [38]: compared with the sphere, distances change by at most 0.5% and azimuths by a few tenths of a degree.
 TAG|FONTE|Time-dependent calculations refer to the midpoint of the path: the best time can differ by up to 1.5 hours between the two ends (SM6FHZ [4]).
 H2|3.2 Antenna elevation
 TAG|FONTE|The elevation towards the reflection point is calculated with the formula of the article (Image 7) [1], with x = distance / r, H trail height, h station height:

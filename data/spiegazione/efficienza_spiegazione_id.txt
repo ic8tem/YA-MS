@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] dan QTFGUI [17] menggunakan ketinggian tetap 102 km; prog
 H1|3. Geometri lintasan
 H2|3.1 Bumi, stasiun dan titik tengah
 TAG|FONTE|Elipsoid WGS84 [37]: sumbu semi-mayor 6378,137 km, pegepengan 1/298,257223563. Untuk rumus bola (elevasi dari artikel, jangkauan, refraksi) program memakai jari-jari rata-rata elipsoid, r = 6371,0088 km; hingga versi 1.8.23 program memakai bola berjari-jari 6372,7955 km [1].
-TAG|SCELTA|Lintasan selalu lintasan nyata antara locator stasiun dan locator stasiun DX. Sejak versi 1.8.26 jarak, azimut, dan titik tengah dihitung pada geodesik elipsoid dengan metode Karney [38]: dibanding bola, jarak berubah paling banyak 0,5% dan azimut beberapa persepuluh derajat.
+TAG|SCELTA|Lintasan selalu lintasan nyata antara locator stasiun dan locator stasiun DX. Sejak versi 1.8.27 jarak, azimut, dan titik tengah dihitung pada geodesik elipsoid dengan metode Karney [38]: dibanding bola, jarak berubah paling banyak 0,5% dan azimut beberapa persepuluh derajat.
 TAG|FONTE|Perhitungan yang bergantung pada jam mengacu pada titik tengah lintasan: di antara kedua ujungnya jam terbaik dapat berbeda hingga 1,5 jam (SM6FHZ [4]).
 H2|3.2 Elevasi antena
 TAG|FONTE|Elevasi ke arah titik pantul dihitung dengan rumus dari artikel (Gambar 7) [1], dengan x = jarak / r, H ketinggian jejak, h ketinggian stasiun:

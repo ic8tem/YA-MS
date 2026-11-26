@@ -21,7 +21,7 @@ TAG|RILIEVO|DJ5HG [18] a QTFGUI [17] používají pevnou výšku 102 km; program
 H1|3. Geometrie trasy
 H2|3.1 Země, stanice a střední bod
 TAG|FONTE|Elipsoid WGS84 [37]: hlavní poloosa 6378,137 km, zploštění 1/298,257223563. Pro sférické vzorce (elevace z článku, dosah, refrakce) program používá střední poloměr elipsoidu, r = 6371,0088 km; do verze 1.8.23 používal kouli o poloměru 6372,7955 km [1].
-TAG|SCELTA|Trasa je vždy skutečná trasa mezi lokátorem stanice a lokátorem protistanice. Od verze 1.8.26 se vzdálenost, azimut a střed trasy počítají na geodetice elipsoidu Karneyho metodou [38]: oproti kouli se vzdálenosti mění nejvýše o 0,5 % a azimuty o několik desetin stupně.
+TAG|SCELTA|Trasa je vždy skutečná trasa mezi lokátorem stanice a lokátorem protistanice. Od verze 1.8.27 se vzdálenost, azimut a střed trasy počítají na geodetice elipsoidu Karneyho metodou [38]: oproti kouli se vzdálenosti mění nejvýše o 0,5 % a azimuty o několik desetin stupně.
 TAG|FONTE|Výpočty závislé na čase se vztahují ke střednímu bodu trasy: mezi oběma konci se nejlepší čas může lišit až o 1,5 hodiny (SM6FHZ [4]).
 H2|3.2 Elevace antény
 TAG|FONTE|Elevace k bodu odrazu se počítá vzorcem z článku (Obrázek 7) [1], s x = vzdálenost / r, H výškou stopy, h výškou stanice:

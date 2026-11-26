@@ -47,6 +47,19 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.27
+  - CALL3: se manca o se MMMonVHF chiede l'accesso al sito, il programma cerca da solo un CALL3.TXT gia' presente
+    sul computer (accanto al programma, nella cartella Download, nelle cartelle di WSJT-X, JTDX, MSHV e
+    LIVETROPOVHF) e usa il piu' recente, come LIVETROPOVHF.
+  - Sicurezza degli aggiornamenti: il pacchetto scaricato si installa solo se dimensione e impronta SHA-256
+    sono quelle pubblicate da GitHub, e solo da indirizzi di GitHub.
+  - Limiti di dimensione sui dati in arrivo dalla rete: MQTT di PSKReporter (1 MB), righe dei DX cluster
+    (8 kB), messaggi dello scambio tra utenti di YA-MS (16 kB).
+  - Scambio tra utenti di YA-MS: collegamento cifrato TLS ai broker (HiveMQ ed EMQX porta 8883, Mosquitto 8886;
+    se un broker rifiuta TLS si torna alla porta 1883); la prima chiave vista per ogni nominativo resta fissata
+    in data/yams_chiavi.txt, una chiave diversa si usa solo dopo «Accetta le chiavi nuove» nel riquadro UDP
+    della Raccolta dati; se qualcuno mette un'altra chiave sotto il tuo nominativo, il programma ripubblica la tua.
+
 NOVITA' DELLA 1.8.26
   - La riga in alto (strato E e antenna) torna su una sola riga: la casella della rifrazione e gli hot spot dal punto
     medio sono passati nella riga dell'ora.

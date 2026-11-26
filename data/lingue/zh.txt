@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF 要求登录网站：已使用在电脑上找到的最新 CALL3.TXT（{0}）。
 Il pacchetto scaricato non è completo: aggiornamento annullato	下载的软件包不完整：已取消更新
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	下载的软件包指纹与 GitHub 上的不符：已取消更新
+chiave nuova di {0} accettata	已接受 {0} 的新密钥
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	代理服务器上有另一个使用你呼号的密钥：已重新发布你的密钥
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	{0} 的密钥已更改：在你接受新密钥之前继续使用已知密钥
+Accetta le chiavi nuove ({0})	接受新密钥 ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	YA-MS 用户之间的交换：这些呼号的密钥与已知的不同。只有在你知道对方电台重新安装了程序时才接受。

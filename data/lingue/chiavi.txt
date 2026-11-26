@@ -32,6 +32,7 @@ ATTENZIONE
 ATTENZIONE: {0}
 ATTENZIONE: {0} e {1} entrano nel lobo dell'antenna ({2}° a -3 dB attorno a {3}°): con questo puntamento sono gia' coperti. Segnati in grigio sulla mappa.
 ATTENZIONE: {0} entra nel lobo dell'antenna ({1}° a -3 dB attorno a {2}°): con questo puntamento e' gia' coperto. Segnati in grigio sulla mappa.
+Accetta le chiavi nuove ({0})
 Adesso
 Aggiorna adesso
 Aggiorna da IPRMO
@@ -546,6 +547,7 @@ SEZIONE - le scie più probabili viste dall'antenna verso il corrispondente (az.
 SGO, Finlandia
 Salta questa versione
 Salva
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.
 Scarica RMOB adesso
 Scarica adesso
 Scarica i file mancanti
@@ -678,6 +680,7 @@ beta-Tauridi diurne
 buono
 calcolato da λ
 calcolo della tratta GRAVES → te in corso...
+chiave nuova di {0} accettata
 circumpolare
 classico
 clic destro =
@@ -739,6 +742,7 @@ k = esponente della traslazione di frequenza dall'indice di popolazione r (GMN s
 k dagli indici di popolazione
 kappa-Cygnidi
 kappa-Leonidi diurne
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova
 la mia stazione
 la scelta che pesa di più
 la tua stazione
@@ -834,6 +838,7 @@ sporadiche
 spot CW scartati: {0}
 spot entro {0} km scartati: {1}
 stima a {0} MHz (scala a destra)
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua
 teorica λ² (McKinley, SM6FHZ; prudente)
 tra {0:F1} s
 traslato a {0} MHz (scala a destra)

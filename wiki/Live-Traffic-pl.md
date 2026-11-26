@@ -26,6 +26,8 @@ Dekodowania twojego WSJT-X przez UDP, w których korespondent ci odpowiada (pier
 
 Wymiana między użytkownikami YA-MS: gdy inny użytkownik YA-MS zdekoduje przez UDP wiadomość skierowaną do twojej stacji (w MSK144, FSK441, PSK2K lub JTMS albo w FT8 powyżej 1100 km), jego YA-MS wysyła ją do ciebie zaszyfrowaną przez trzy publiczne brokery MQTT (HiveMQ, Mosquitto, EMQX); widzisz ją jako stałą fioletową linię przerywaną i jako wiersz w konsoli UDP. Tylko ty możesz ją odczytać (klucze ECDH P-256, AES-256 i HMAC-SHA256). Spoty FT8 są pokazywane tylko wtedy, gdy w ciągu 3 minut nie mają równoległych tras. Domyślnie włączone; yams_scambio=0 w data/config.ini wyłącza.
 
+Wymiana łączy się z brokerami w sposób szyfrowany (TLS: HiveMQ i EMQX port 8883, Mosquitto 8886) i wraca na port 1883 tylko wtedy, gdy broker odrzuci TLS. Pierwszy klucz widziany dla każdego znaku zostaje zapisany na stałe w data/yams_chiavi.txt: jeśli stacja pojawi się z innym kluczem, program nadal używa znanego, a w ramce UDP Zbierania danych pojawia się przycisk «Zaakceptuj nowe klucze», którego używaj tylko wtedy, gdy wiesz, że stacja ponownie zainstalowała YA-MS.
+
 Na mapie pisane są znaki obu stacji każdego spotu, raz dla każdej stacji. Odwzorowanie można wybrać: azymutalne (w środku twoja stacja) lub Mercatora. Podpowiedź na kolumnie strefa roju wyjaśnia jej znaczenie.
 
 Pokazywane są spoty ze wszystkich pasm, także z tych niewybranych w Zbieraniu danych (tych się nie zapisuje). Spoty CW i spoty między zbyt bliskimi stacjami nie są pokazywane, jeśli są odrzucane w Zbieraniu danych.

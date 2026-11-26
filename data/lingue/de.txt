@@ -927,3 +927,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF verlangt eine Anmeldung auf der Website: verwendet wurde die neueste auf dem Computer gefundene CALL3.TXT ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Das heruntergeladene Paket ist unvollständig: Aktualisierung abgebrochen
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Der Fingerabdruck des heruntergeladenen Pakets stimmt nicht mit dem von GitHub überein: Aktualisierung abgebrochen
+chiave nuova di {0} accettata	neuer Schlüssel von {0} akzeptiert
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	Auf dem Broker lag ein anderer Schlüssel unter deinem Rufzeichen: ich habe deinen neu veröffentlicht
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	Der Schlüssel von {0} hat sich geändert: ich verwende weiter den bekannten, bis du den neuen akzeptierst
+Accetta le chiavi nuove ({0})	Neue Schlüssel akzeptieren ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Austausch zwischen YA-MS-Nutzern: diese Rufzeichen haben einen anderen Schlüssel als den bekannten. Akzeptiere ihn nur, wenn du weißt, dass die Station das Programm neu installiert hat.

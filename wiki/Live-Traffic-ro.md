@@ -26,6 +26,8 @@ Decodările WSJT-X-ului dumneavoastră prin UDP în care un corespondent vă ră
 
 Schimb între utilizatorii YA-MS: când un alt utilizator YA-MS decodează prin UDP un mesaj adresat stației dvs. (în MSK144, FSK441, PSK2K sau JTMS, ori în FT8 peste 1100 km), YA-MS-ul lui vi-l trimite criptat prin trei brokeri MQTT publici (HiveMQ, Mosquitto, EMQX); îl vedeți ca linie întreruptă violet fixă și ca rând în consola UDP. Doar dvs. îl puteți citi (chei ECDH P-256, AES-256 și HMAC-SHA256). Spoturile FT8 apar doar dacă nu au trasee paralele în 3 minute. Activat implicit; yams_scambio=0 în data/config.ini îl oprește.
 
+Schimbul se conectează criptat la brokeri (TLS: HiveMQ și EMQX portul 8883, Mosquitto 8886) și revine la portul 1883 doar dacă un broker refuză TLS. Prima cheie văzută pentru fiecare indicativ rămâne fixată în data/yams_chiavi.txt: dacă o stație apare cu o cheie diferită, programul continuă să folosească cheia cunoscută, iar în caseta UDP din Colectarea datelor apare butonul «Acceptă cheile noi», de folosit doar dacă știi că stația a reinstalat YA-MS.
+
 Harta scrie indicativele ambelor stații ale fiecărui spot, o singură dată pe stație. Proiecția se alege între azimutală (centrată pe stația ta) și Mercator. Indiciul de pe coloana zona roiului îi explică semnificația.
 
 Se văd spoturile tuturor benzilor, inclusiv ale celor nealese în Colectarea datelor (acestea nu se memorează). Spoturile CW și cele între stații prea apropiate nu se văd, dacă sunt eliminate în Colectarea datelor.

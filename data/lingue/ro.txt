@@ -926,3 +926,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF cere autentificarea pe site: am folosit cel mai recent CALL3.TXT găsit pe calculator ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Pachetul descărcat nu este complet: actualizare anulată
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Amprenta pachetului descărcat nu corespunde cu cea de pe GitHub: actualizare anulată
+chiave nuova di {0} accettata	cheia nouă a lui {0} acceptată
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	pe broker era altă cheie sub indicativul tău: am republicat-o pe a ta
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	cheia lui {0} s-a schimbat: folosesc în continuare cheia cunoscută până accepți cheia nouă
+Accetta le chiavi nuove ({0})	Acceptă cheile noi ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Schimb între utilizatorii YA-MS: aceste indicative au o cheie diferită de cea cunoscută. Accept-o doar dacă știi că stația a reinstalat programul.

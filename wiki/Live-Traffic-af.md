@@ -26,6 +26,8 @@ Dekoderings van jou WSJT-X via UDP waarin 'n korrespondent jou antwoord (die eer
 
 Uitruil tussen YA-MS-gebruikers: wanneer 'n ander YA-MS-gebruiker via UDP 'n boodskap aan jou stasie dekodeer (in MSK144, FSK441, PSK2K of JTMS, of in FT8 verder as 1100 km), stuur sy YA-MS dit geënkripteer aan jou deur drie openbare MQTT-makelaars (HiveMQ, Mosquitto, EMQX); jy sien dit as 'n vaste pers stippellyn en as 'n reël in die UDP-konsole. Net jy kan dit lees (ECDH P-256-sleutels, AES-256 en HMAC-SHA256). FT8-spots word net gewys as hulle binne 3 minute geen parallelle paaie het nie. By verstek aan; yams_scambio=0 in data/config.ini skakel dit af.
 
+Die uitruil koppel geënkripteer aan die makelaars (TLS: HiveMQ en EMQX poort 8883, Mosquitto 8886) en val net terug na poort 1883 as 'n makelaar TLS weier. Die eerste sleutel wat vir elke roepnaam gesien word, bly vasgepen in data/yams_chiavi.txt: as 'n stasie met 'n ander sleutel verskyn, gebruik die program steeds die bekende een en die UDP-blok van Data-insameling wys die knoppie «Aanvaar die nuwe sleutels», wat jy net moet gebruik as jy weet die stasie het YA-MS herinstalleer.
+
 Die kaart wys die roepname van albei stasies van elke spot, een keer per stasie. Die projeksie kan azimutaal (gesentreer op jou stasie) of Mercator wees. Die wenk op die kolom swermsone verduidelik die betekenis.
 
 Spots van alle bande word gewys, ook van bande wat nie in Data-insameling gekies is nie (dié word nie gestoor nie). CW-spots en spots tussen stasies wat te naby is, word nie gewys nie as hulle in Data-insameling weggegooi word.

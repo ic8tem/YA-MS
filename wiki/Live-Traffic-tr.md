@@ -26,6 +26,8 @@ WSJT-X'inizin UDP üzerinden gelen ve bir muhabirin size cevap verdiği kod çö
 
 YA-MS kullanıcıları arasında değişim: başka bir YA-MS kullanıcısı istasyonunuza yönelik bir mesajı UDP ile çözdüğünde (MSK144, FSK441, PSK2K veya JTMS'de ya da 1100 km üzeri FT8'de), onun YA-MS'i bunu size üç açık MQTT aracısı (HiveMQ, Mosquitto, EMQX) üzerinden şifreli gönderir; bunu sabit mor kesikli çizgi ve UDP konsolunda bir satır olarak görürsünüz. Yalnızca siz okuyabilirsiniz (ECDH P-256 anahtarları, AES-256 ve HMAC-SHA256). FT8 spotları yalnızca 3 dakika içinde paralel hatları yoksa gösterilir. Varsayılan olarak açık; data/config.ini içinde yams_scambio=0 kapatır.
 
+Paylaşım sunuculara şifreli bağlanır (TLS: HiveMQ ve EMQX 8883 numaralı port, Mosquitto 8886) ve yalnızca bir sunucu TLS'yi reddederse 1883 numaralı porta döner. Her çağrı işareti için görülen ilk anahtar data/yams_chiavi.txt dosyasında sabit kalır: bir istasyon farklı bir anahtarla görünürse program bilinen anahtarı kullanmaya devam eder ve Veri toplama bölümünün UDP kutusunda «Yeni anahtarları kabul et» düğmesi çıkar; bunu yalnızca istasyonun YA-MS'i yeniden kurduğunu biliyorsan kullan.
+
 Haritada her spotun iki istasyonunun çağrı işareti yazılır, istasyon başına bir kez. İzdüşüm seçilebilir: azimutal (merkezde istasyonun) veya Mercator. yağmur bölgesi sütunundaki ipucu anlamını açıklar.
 
 Veri toplama'da seçilmemiş olanlar da dahil tüm bantların spotları gösterilir (bunlar kaydedilmez). CW spotları ve birbirine çok yakın istasyonlar arasındaki spotlar, Veri toplama'da atılıyorsa gösterilmez.

@@ -26,6 +26,8 @@ Avkodningar i din WSJT-X via UDP där en motstation svarar dig (meddelandets fö
 
 Utbyte mellan YA-MS-användare: när en annan YA-MS-användare avkodar ett meddelande till din station via UDP (i MSK144, FSK441, PSK2K eller JTMS, eller i FT8 över 1100 km) skickar hans YA-MS det krypterat till dig via tre öppna MQTT-mäklare (HiveMQ, Mosquitto, EMQX); du ser det som en fast violett streckad linje och som en rad i UDP-konsolen. Bara du kan läsa det (ECDH P-256-nycklar, AES-256 och HMAC-SHA256). FT8-spotar visas bara om de saknar parallella sträckor inom 3 minuter. På från början; yams_scambio=0 i data/config.ini stänger av det.
 
+Utbytet ansluter krypterat till brokrarna (TLS: HiveMQ och EMQX port 8883, Mosquitto 8886) och faller bara tillbaka till port 1883 om en broker vägrar TLS. Den första nyckel som ses för varje anropssignal förblir fastlåst i data/yams_chiavi.txt: om en station dyker upp med en annan nyckel fortsätter programmet att använda den kända, och UDP-rutan i Datainsamling visar knappen «Godkänn de nya nycklarna», som bara ska användas om du vet att stationen har installerat om YA-MS.
+
 Kartan visar anropssignalerna för båda stationerna i varje spott, en gång per station. Projektionen kan vara azimutal (centrerad på din station) eller Mercator. Verktygstipset på kolumnen svärmzon förklarar vad den betyder.
 
 Spottar från alla band visas, även från band som inte valts i Datainsamling (de sparas inte). CW-spottar och spottar mellan för närliggande stationer visas inte, om de kastas i Datainsamling.

@@ -26,6 +26,8 @@ A saját WSJT-X-ed UDP-n érkező dekódolásai, amelyekben egy ellenállomás v
 
 Csere a YA-MS felhasználói között: ha egy másik YA-MS-felhasználó UDP-n dekódol egy az állomásodnak szóló üzenetet (MSK144, FSK441, PSK2K vagy JTMS módban, vagy FT8-ban 1100 km felett), az ő YA-MS-e titkosítva elküldi neked három nyilvános MQTT-brókeren át (HiveMQ, Mosquitto, EMQX); állandó lila szaggatott vonalként és egy sorként látod az UDP konzolban. Csak te olvashatod (ECDH P-256 kulcsok, AES-256 és HMAC-SHA256). Az FT8 spotok csak akkor látszanak, ha 3 percen belül nincs párhuzamos útvonaluk. Alapból bekapcsolva; a data/config.ini yams_scambio=0 sora kikapcsolja.
 
+A csere titkosítva kapcsolódik a brókerekhez (TLS: HiveMQ és EMQX 8883-as port, Mosquitto 8886) és csak akkor tér vissza az 1883-as portra, ha egy bróker elutasítja a TLS-t. Az egyes hívójelekhez elsőként látott kulcs rögzítve marad a data/yams_chiavi.txt fájlban: ha egy állomás más kulccsal jelenik meg, a program továbbra is az ismertet használja, és az Adatgyűjtés UDP-mezőjében megjelenik az «Új kulcsok elfogadása» gomb, amelyet csak akkor használj, ha tudod, hogy az állomás újratelepítette a YA-MS-t.
+
 A térkép minden spot mindkét állomásának hívójelét kiírja, állomásonként egyszer. A vetület választható: azimutális (középen az állomásod) vagy Mercator. A rajzóna oszlop buboréksúgója elmagyarázza a jelentését.
 
 Minden sáv spotjai látszanak, azoké is, amelyeket az Adatgyűjtésben nem választottál ki (ezek nem tárolódnak). A CW spotok és a túl közeli állomások közötti spotok nem látszanak, ha az Adatgyűjtésben elvetésre kerülnek.

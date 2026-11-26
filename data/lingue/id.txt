@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF meminta masuk ke situs: dipakai CALL3.TXT terbaru yang ditemukan di komputer ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Paket yang diunduh tidak lengkap: pembaruan dibatalkan
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Sidik jari paket yang diunduh tidak cocok dengan yang ada di GitHub: pembaruan dibatalkan
+chiave nuova di {0} accettata	kunci baru {0} diterima
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	di broker ada kunci lain atas nama callsign Anda: saya menerbitkan ulang kunci Anda
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	kunci {0} berubah: saya tetap memakai kunci yang dikenal sampai Anda menerima yang baru
+Accetta le chiavi nuove ({0})	Terima kunci baru ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Pertukaran antar pengguna YA-MS: callsign ini memiliki kunci yang berbeda dari yang dikenal. Terima hanya jika Anda tahu stasiun tersebut telah memasang ulang program.

@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF سائٹ پر لاگ اِن مانگتا ہے: کمپیوٹر پر ملنے والی سب سے نئی CALL3.TXT استعمال کی گئی ({0})۔
 Il pacchetto scaricato non è completo: aggiornamento annullato	ڈاؤن لوڈ کیا گیا پیکج مکمل نہیں ہے: اپڈیٹ منسوخ
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	ڈاؤن لوڈ کیے گئے پیکج کا فنگر پرنٹ GitHub والے سے میل نہیں کھاتا: اپڈیٹ منسوخ
+chiave nuova di {0} accettata	{0} کی نئی کلید قبول کر لی گئی
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	بروکر پر آپ کے کال سائن کے نام سے دوسری کلید تھی: میں نے آپ کی کلید دوبارہ شائع کر دی
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	{0} کی کلید بدل گئی ہے: جب تک آپ نئی قبول نہیں کرتے، میں معلوم کلید ہی استعمال کر رہا ہوں
+Accetta le chiavi nuove ({0})	نئی کلیدیں قبول کریں ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	YA-MS صارفین کے درمیان تبادلہ: ان کال سائنز کی کلید معلوم کلید سے مختلف ہے۔ اسے صرف تب قبول کریں جب آپ کو معلوم ہو کہ اسٹیشن نے پروگرام دوبارہ انسٹال کیا ہے۔

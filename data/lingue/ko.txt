@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF가 사이트 로그인을 요구합니다. 컴퓨터에서 찾은 가장 최신 CALL3.TXT를 사용했습니다({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	다운로드한 패키지가 완전하지 않습니다: 업데이트가 취소되었습니다
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	다운로드한 패키지의 지문이 GitHub의 것과 일치하지 않습니다: 업데이트가 취소되었습니다
+chiave nuova di {0} accettata	{0}의 새 키를 수락했습니다
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	브로커에 당신의 호출부호로 다른 키가 있었습니다: 당신의 키를 다시 게시했습니다
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	{0}의 키가 바뀌었습니다: 새 키를 수락할 때까지 알려진 키를 계속 사용합니다
+Accetta le chiavi nuove ({0})	새 키 수락 ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	YA-MS 사용자 간 교환: 이 호출부호들은 알려진 것과 다른 키를 가지고 있습니다. 상대국이 프로그램을 다시 설치했다는 것을 알 때만 수락하세요.

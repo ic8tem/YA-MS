@@ -927,3 +927,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF ขอให้เข้าสู่ระบบเว็บไซต์: ใช้ CALL3.TXT ล่าสุดที่พบในคอมพิวเตอร์แล้ว ({0})
 Il pacchetto scaricato non è completo: aggiornamento annullato	แพ็กเกจที่ดาวน์โหลดไม่สมบูรณ์: ยกเลิกการอัปเดต
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	ลายนิ้วมือของแพ็กเกจที่ดาวน์โหลดไม่ตรงกับของ GitHub: ยกเลิกการอัปเดต
+chiave nuova di {0} accettata	ยอมรับคีย์ใหม่ของ {0} แล้ว
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	บนโบรกเกอร์มีคีย์อื่นภายใต้สัญญาณเรียกขานของคุณ: ฉันเผยแพร่คีย์ของคุณใหม่แล้ว
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	คีย์ของ {0} เปลี่ยนไป: ฉันยังใช้คีย์ที่รู้จักอยู่จนกว่าคุณจะยอมรับคีย์ใหม่
+Accetta le chiavi nuove ({0})	ยอมรับคีย์ใหม่ ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	การแลกเปลี่ยนระหว่างผู้ใช้ YA-MS: สัญญาณเรียกขานเหล่านี้มีคีย์ต่างจากคีย์ที่รู้จัก ยอมรับเฉพาะเมื่อคุณรู้ว่าสถานีได้ติดตั้งโปรแกรมใหม่

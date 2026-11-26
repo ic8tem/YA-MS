@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF siteye giriş istiyor: bilgisayarda bulunan en yeni CALL3.TXT kullanıldı ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	İndirilen paket eksik: güncelleme iptal edildi
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	İndirilen paketin parmak izi GitHub'dakiyle eşleşmiyor: güncelleme iptal edildi
+chiave nuova di {0} accettata	{0} için yeni anahtar kabul edildi
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	sunucuda çağrı işaretin altında başka bir anahtar vardı: seninkini yeniden yayımladım
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	{0} anahtarı değişti: yenisini kabul edene kadar bilinen anahtarı kullanmaya devam ediyorum
+Accetta le chiavi nuove ({0})	Yeni anahtarları kabul et ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	YA-MS kullanıcıları arasında paylaşım: bu çağrı işaretlerinin anahtarı bilinenden farklı. Yalnızca istasyonun programı yeniden kurduğunu biliyorsan kabul et.

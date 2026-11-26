@@ -927,3 +927,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF требует входа на сайт: использован самый новый CALL3.TXT, найденный на компьютере ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Загруженный пакет неполный: обновление отменено
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Отпечаток загруженного пакета не совпадает с опубликованным на GitHub: обновление отменено
+chiave nuova di {0} accettata	новый ключ {0} принят
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	на брокере был другой ключ под твоим позывным: я заново опубликовал твой
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	ключ {0} изменился: продолжаю использовать известный, пока ты не примешь новый
+Accetta le chiavi nuove ({0})	Принять новые ключи ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Обмен между пользователями YA-MS: у этих позывных ключ отличается от известного. Принимай его, только если знаешь, что станция переустановила программу.

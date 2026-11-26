@@ -26,6 +26,8 @@ Dekode WSJT-X Anda melalui UDP yang berisi balasan koresponden kepada Anda (call
 
 Pertukaran antarpengguna YA-MS: ketika pengguna YA-MS lain mendekode lewat UDP pesan yang ditujukan ke stasiun Anda (dalam MSK144, FSK441, PSK2K atau JTMS, atau FT8 lebih dari 1100 km), YA-MS-nya mengirimkannya kepada Anda secara terenkripsi melalui tiga broker MQTT publik (HiveMQ, Mosquitto, EMQX); Anda melihatnya sebagai garis putus-putus ungu yang tetap dan sebagai baris di konsol UDP. Hanya Anda yang dapat membacanya (kunci ECDH P-256, AES-256, dan HMAC-SHA256). Spot FT8 hanya ditampilkan jika tidak punya lintasan paralel dalam 3 menit. Aktif sejak awal; yams_scambio=0 di data/config.ini mematikannya.
 
+Pertukaran terhubung ke broker secara terenkripsi (TLS: HiveMQ dan EMQX port 8883, Mosquitto 8886) dan kembali ke port 1883 hanya jika sebuah broker menolak TLS. Kunci pertama yang terlihat untuk setiap callsign tetap disematkan di data/yams_chiavi.txt: jika sebuah stasiun muncul dengan kunci berbeda, program tetap memakai kunci yang dikenal dan kotak UDP di Pengumpulan data menampilkan tombol «Terima kunci baru», yang hanya digunakan jika Anda tahu stasiun itu telah memasang ulang YA-MS.
+
 Peta menuliskan callsign kedua stasiun pada setiap spot, sekali per stasiun. Proyeksi bisa dipilih: azimutal (berpusat di stasiunmu) atau Mercator. Tooltip pada kolom zona hujan meteor menjelaskan artinya.
 
 Spot dari semua pita ditampilkan, termasuk pita yang tidak dipilih di Pengumpulan data (spot ini tidak disimpan). Spot CW dan spot antarstasiun yang terlalu dekat tidak ditampilkan, jika dibuang di Pengumpulan data.

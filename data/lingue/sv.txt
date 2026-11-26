@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF kräver inloggning på webbplatsen: den senaste CALL3.TXT som hittades på datorn har använts ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Det nedladdade paketet är inte komplett: uppdateringen avbröts
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Fingeravtrycket för det nedladdade paketet stämmer inte med GitHubs: uppdateringen avbröts
+chiave nuova di {0} accettata	ny nyckel från {0} godkänd
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	brokern hade en annan nyckel under din anropssignal: jag publicerade din igen
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	nyckeln för {0} har ändrats: jag använder fortfarande den kända tills du godkänner den nya
+Accetta le chiavi nuove ({0})	Godkänn de nya nycklarna ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Utbyte mellan YA-MS-användare: dessa anropssignaler har en annan nyckel än den kända. Godkänn den bara om du vet att stationen har installerat om programmet.

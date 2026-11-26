@@ -926,3 +926,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	Το MMMonVHF ζητά σύνδεση στον ιστότοπο: χρησιμοποιήθηκε το πιο πρόσφατο CALL3.TXT που βρέθηκε στον υπολογιστή ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Το πακέτο που λήφθηκε δεν είναι πλήρες: η ενημέρωση ακυρώθηκε
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Το αποτύπωμα του πακέτου που λήφθηκε δεν ταιριάζει με αυτό του GitHub: η ενημέρωση ακυρώθηκε
+chiave nuova di {0} accettata	το νέο κλειδί του {0} έγινε δεκτό
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	στον broker υπήρχε άλλο κλειδί με το διακριτικό σου: δημοσίευσα ξανά το δικό σου
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	το κλειδί του {0} άλλαξε: χρησιμοποιώ ακόμα το γνωστό μέχρι να αποδεχτείς το νέο
+Accetta le chiavi nuove ({0})	Αποδοχή των νέων κλειδιών ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Ανταλλαγή μεταξύ χρηστών του YA-MS: αυτά τα διακριτικά έχουν κλειδί διαφορετικό από το γνωστό. Αποδέξου το μόνο αν ξέρεις ότι ο σταθμός επανεγκατέστησε το πρόγραμμα.

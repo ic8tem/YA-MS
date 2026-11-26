@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF prasa pieteikties vietnē: izmantots jaunākais datorā atrastais CALL3.TXT ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Lejupielādētā pakotne nav pilnīga: atjaunināšana atcelta
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Lejupielādētās pakotnes nospiedums nesakrīt ar GitHub publicēto: atjaunināšana atcelta
+chiave nuova di {0} accettata	{0} jaunā atslēga pieņemta
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	brokerī zem tava izsaukuma bija cita atslēga: es atkārtoti publicēju tavējo
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	{0} atslēga ir mainījusies: turpinu izmantot zināmo, līdz pieņemsi jauno
+Accetta le chiavi nuove ({0})	Pieņemt jaunās atslēgas ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Apmaiņa starp YA-MS lietotājiem: šiem izsaukumiem ir atšķirīga atslēga no zināmās. Pieņem to tikai tad, ja zini, ka stacija ir pārinstalējusi programmu.

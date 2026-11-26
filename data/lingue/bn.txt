@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF সাইটে লগ ইন চায়: কম্পিউটারে পাওয়া সবচেয়ে নতুন CALL3.TXT ব্যবহার করা হয়েছে ({0})।
 Il pacchetto scaricato non è completo: aggiornamento annullato	ডাউনলোড করা প্যাকেজ সম্পূর্ণ নয়: হালনাগাদ বাতিল
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	ডাউনলোড করা প্যাকেজের ফিঙ্গারপ্রিন্ট GitHub-এর সাথে মেলে না: হালনাগাদ বাতিল
+chiave nuova di {0} accettata	{0}-এর নতুন কী গ্রহণ করা হয়েছে
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	ব্রোকারে আপনার কলসাইনের নামে অন্য একটি কী ছিল: আমি আপনারটি আবার প্রকাশ করেছি
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	{0}-এর কী বদলেছে: আপনি নতুনটি গ্রহণ না করা পর্যন্ত আমি জানা কী-ই ব্যবহার করছি
+Accetta le chiavi nuove ({0})	নতুন কী গ্রহণ করুন ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	YA-MS ব্যবহারকারীদের মধ্যে বিনিময়: এই কলসাইনগুলির কী জানা কী থেকে আলাদা। স্টেশনটি প্রোগ্রাম আবার ইনস্টল করেছে জানলে তবেই গ্রহণ করুন।

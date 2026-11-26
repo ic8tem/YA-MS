@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	Humihingi ang MMMonVHF na mag-log in sa site: ginamit ang pinakabagong CALL3.TXT na nakita sa computer ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Hindi kumpleto ang na-download na package: kinansela ang update
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Hindi tugma ang fingerprint ng na-download na package sa nasa GitHub: kinansela ang update
+chiave nuova di {0} accettata	tinanggap ang bagong key ng {0}
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	may ibang key sa broker sa ilalim ng iyong callsign: inilathala kong muli ang iyo
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	nagbago ang key ng {0}: ginagamit ko pa rin ang kilala hanggang tanggapin mo ang bago
+Accetta le chiavi nuove ({0})	Tanggapin ang mga bagong key ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Palitan sa pagitan ng mga gumagamit ng YA-MS: may ibang key ang mga callsign na ito kaysa sa kilala. Tanggapin lamang kung alam mong muling nag-install ng programa ang istasyon.

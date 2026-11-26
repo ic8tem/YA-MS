@@ -26,6 +26,8 @@ Decoderingen van jouw WSJT-X via UDP waarin een tegenstation je antwoordt (de ee
 
 Uitwisseling tussen YA-MS-gebruikers: als een andere YA-MS-gebruiker via UDP een bericht aan jouw station decodeert (in MSK144, FSK441, PSK2K of JTMS, of in FT8 boven 1100 km), stuurt zijn YA-MS het versleuteld naar jou via drie openbare MQTT-brokers (HiveMQ, Mosquitto, EMQX); je ziet het als een vaste violette stippellijn en als een regel in de UDP-console. Alleen jij kunt het lezen (ECDH P-256-sleutels, AES-256 en HMAC-SHA256). FT8-spots worden alleen getoond als ze binnen 3 minuten geen parallelle paden hebben. Standaard aan; yams_scambio=0 in data/config.ini zet het uit.
 
+De uitwisseling maakt versleuteld verbinding met de brokers (TLS: HiveMQ en EMQX poort 8883, Mosquitto 8886) en valt alleen terug op poort 1883 als een broker TLS weigert. De eerste sleutel die voor een roepnaam wordt gezien, blijft vastgelegd in data/yams_chiavi.txt: verschijnt een station met een andere sleutel, dan blijft het programma de bekende gebruiken en toont het UDP-vak van de Gegevensverzameling de knop «Nieuwe sleutels accepteren», alleen te gebruiken als je weet dat het station YA-MS opnieuw heeft geïnstalleerd.
+
 De kaart toont de roepletters van beide stations van elke spot, één keer per station. De projectie is azimutaal (gecentreerd op je station) of Mercator. De tooltip op de kolom Wolk legt de betekenis uit.
 
 Spots van alle banden worden getoond, ook van banden die niet in Gegevensverzameling zijn gekozen (die worden niet opgeslagen). CW-spots en spots tussen te dicht bij elkaar liggende stations worden niet getoond als ze in Gegevensverzameling worden weggegooid.

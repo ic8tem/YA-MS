@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF vra dat jy op die webwerf aanmeld: die nuutste CALL3.TXT wat op die rekenaar gevind is, is gebruik ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Die afgelaaide pakket is nie volledig nie: opdatering gekanselleer
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Die vingerafdruk van die afgelaaide pakket stem nie ooreen met dié van GitHub nie: opdatering gekanselleer
+chiave nuova di {0} accettata	nuwe sleutel van {0} aanvaar
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	daar was 'n ander sleutel onder jou roepnaam op die makelaar: ek het joune weer gepubliseer
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	die sleutel van {0} het verander: ek gebruik steeds die bekende een totdat jy die nuwe aanvaar
+Accetta le chiavi nuove ({0})	Aanvaar die nuwe sleutels ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Uitruil tussen YA-MS-gebruikers: hierdie roepname het 'n ander sleutel as die bekende een. Aanvaar dit net as jy weet die stasie het die program herinstalleer.

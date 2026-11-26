@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF pide iniciar sesión en el sitio: he usado el CALL3.TXT más reciente encontrado en el ordenador ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	El paquete descargado no está completo: actualización cancelada
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	La huella del paquete descargado no coincide con la de GitHub: actualización cancelada
+chiave nuova di {0} accettata	clave nueva de {0} aceptada
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	en el broker había otra clave con tu indicativo: he vuelto a publicar la tuya
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	la clave de {0} ha cambiado: sigo usando la conocida hasta que aceptes la nueva
+Accetta le chiavi nuove ({0})	Aceptar las claves nuevas ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Intercambio entre usuarios de YA-MS: estos indicativos tienen una clave distinta de la conocida. Acéptala solo si sabes que la estación ha reinstalado el programa.

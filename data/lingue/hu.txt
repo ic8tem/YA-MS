@@ -926,3 +926,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	Az MMMonVHF bejelentkezést kér az oldalon: a számítógépen talált legújabb CALL3.TXT-t használtam ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	A letöltött csomag nem teljes: a frissítés megszakítva
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	A letöltött csomag ujjlenyomata nem egyezik a GitHubon közzétettel: a frissítés megszakítva
+chiave nuova di {0} accettata	{0} új kulcsa elfogadva
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	a brókeren másik kulcs volt a hívójeled alatt: újra közzétettem a tiédet
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	{0} kulcsa megváltozott: továbbra is az ismertet használom, amíg el nem fogadod az újat
+Accetta le chiavi nuove ({0})	Új kulcsok elfogadása ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Csere a YA-MS felhasználói között: ezeknek a hívójeleknek az ismerttől eltérő kulcsa van. Csak akkor fogadd el, ha tudod, hogy az állomás újratelepítette a programot.

@@ -26,6 +26,8 @@ Decodes of your WSJT-X via UDP in which a correspondent answers you (the first c
 
 Exchange between YA-MS users: when another YA-MS user decodes via UDP a message addressed to your station (in MSK144, FSK441, PSK2K or JTMS, or in FT8 beyond 1100 km), their YA-MS sends it to you encrypted through three public MQTT brokers (HiveMQ, Mosquitto, EMQX); you see it as a steady violet dashed line and as a line in the UDP console. Only you can read it (ECDH P-256 keys, AES-256 and HMAC-SHA256). FT8 spots are shown only if they have no parallel paths within 3 minutes. On by default; yams_scambio=0 in data/config.ini turns it off.
 
+The exchange connects to the brokers encrypted (TLS: HiveMQ and EMQX port 8883, Mosquitto 8886) and falls back to port 1883 only if a broker refuses TLS. The first key seen for each callsign stays pinned in data/yams_chiavi.txt: if a station appears with a different key, the program keeps using the known one and the UDP box of Data collection shows the button «Accept the new keys», to be used only if you know the station has reinstalled YA-MS.
+
 The map shows the callsigns of both stations of each spot, once per station. The projection can be azimuthal (centred on your station) or Mercator. The tooltip on the *% shower* column explains its meaning.
 
 Spots of all bands are shown, including those not chosen in Data collection (these are not stored). CW spots and spots between stations that are too close are not shown, if they are discarded in Data collection.

@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF reikalauja prisijungti prie svetainės: panaudotas naujausias kompiuteryje rastas CALL3.TXT ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Atsisiųstas paketas nepilnas: atnaujinimas atšauktas
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Atsisiųsto paketo kontrolinis kodas nesutampa su GitHub: atnaujinimas atšauktas
+chiave nuova di {0} accettata	nauja {0} raktas priimtas
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	brokeryje buvo kitas raktas su tavo šaukiniu: iš naujo paskelbiau tavąjį
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	{0} raktas pasikeitė: toliau naudoju žinomą, kol priimsi naują
+Accetta le chiavi nuove ({0})	Priimti naujus raktus ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Mainai tarp YA-MS naudotojų: šie šaukiniai turi kitokį raktą nei žinomas. Priimk jį tik jei žinai, kad stotis iš naujo įdiegė programą.

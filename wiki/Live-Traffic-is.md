@@ -26,6 +26,8 @@ Afkóðanir úr þínu WSJT-X um UDP þar sem mótstöð svarar þér (fyrsta ka
 
 Skipti milli notenda YA-MS: þegar annar notandi YA-MS afkóðar um UDP skilaboð til stöðvar þinnar (í MSK144, FSK441, PSK2K eða JTMS, eða í FT8 yfir 1100 km) sendir YA-MS hans þér þau dulkóðuð um þrjá opinbera MQTT-miðlara (HiveMQ, Mosquitto, EMQX); þú sérð þau sem fasta fjólubláa strikalínu og sem línu í UDP-stjórnborðinu. Aðeins þú getur lesið þau (ECDH P-256 lyklar, AES-256 og HMAC-SHA256). FT8-spott birtast aðeins ef þau hafa engar samsíða leiðir innan 3 mínútna. Kveikt sjálfgefið; yams_scambio=0 í data/config.ini slekkur á því.
 
+Skiptin tengjast miðlurunum dulkóðað (TLS: HiveMQ og EMQX gátt 8883, Mosquitto 8886) og falla aðeins aftur á gátt 1883 ef miðlari hafnar TLS. Fyrsti lykillinn sem sést fyrir hvert kallmerki er festur í data/yams_chiavi.txt: ef stöð birtist með annan lykil notar forritið áfram þann þekkta og í UDP-reit Gagnasöfnunar birtist hnappurinn «Samþykkja nýju lyklana», sem aðeins á að nota ef þú veist að stöðin hefur sett YA-MS upp aftur.
+
 Kortið sýnir kallmerki beggja stöðva hvers spotts, einu sinni á hverja stöð. Vörpunin getur verið jafnfjarlæg (miðuð á þína stöð) eða Mercator. Ábendingin á dálknum drífusvæði útdrífusvæði merkingu hans.
 
 Spott allra banda eru sýnd, líka banda sem ekki eru valin í Gagnasöfnun (þau eru ekki vistuð). CW-spott og spott milli stöðva sem eru of nálægt eru ekki sýnd ef þeim er hent í Gagnasöfnun.

@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF krefst innskráningar á vefinn: notuð var nýjasta CALL3.TXT sem fannst í tölvunni ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Niðurhalaði pakkinn er ekki heill: uppfærslu hætt
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Fingrafar niðurhalaða pakkans passar ekki við fingrafarið á GitHub: uppfærslu hætt
+chiave nuova di {0} accettata	nýr lykill frá {0} samþykktur
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	á miðlaranum var annar lykill undir kallmerki þínu: ég birti þinn aftur
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	lykill {0} hefur breyst: ég nota áfram þann þekkta þar til þú samþykkir þann nýja
+Accetta le chiavi nuove ({0})	Samþykkja nýju lyklana ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Skipti milli notenda YA-MS: þessi kallmerki eru með annan lykil en þann þekkta. Samþykktu hann aðeins ef þú veist að stöðin hefur sett forritið upp aftur.

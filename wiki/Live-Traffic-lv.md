@@ -26,6 +26,8 @@ Tava WSJT-X dekodējumi caur UDP, kuros korespondents tev atbild (ziņas pirmais
 
 Apmaiņa starp YA-MS lietotājiem: kad cits YA-MS lietotājs caur UDP dekodē tavai stacijai adresētu ziņojumu (MSK144, FSK441, PSK2K vai JTMS, vai FT8 virs 1100 km), viņa YA-MS to nosūta tev šifrētu caur trim publiskiem MQTT brokeriem (HiveMQ, Mosquitto, EMQX); tu to redzi kā nemainīgu violetu raustītu līniju un kā rindu UDP konsolē. To vari izlasīt tikai tu (ECDH P-256 atslēgas, AES-256 un HMAC-SHA256). FT8 spoti tiek rādīti tikai tad, ja 3 minūšu laikā tiem nav paralēlu trašu. Ieslēgts pēc noklusējuma; yams_scambio=0 failā data/config.ini to izslēdz.
 
+Apmaiņa ar brokeriem savienojas šifrēti (TLS: HiveMQ un EMQX ports 8883, Mosquitto 8886) un atgriežas pie porta 1883 tikai tad, ja brokeris atsaka TLS. Pirmā katram izsaukumam redzētā atslēga paliek piesaistīta failā data/yams_chiavi.txt: ja stacija parādās ar citu atslēgu, programma turpina izmantot zināmo, un Datu vākšanas UDP lodziņā parādās poga «Pieņemt jaunās atslēgas», ko izmanto tikai tad, ja zini, ka stacija ir pārinstalējusi YA-MS.
+
 Kartē tiek rakstīti abu katra spota staciju izsaukuma signāli, vienreiz katrai stacijai. Projekciju var izvēlēties: azimutālā (centrā tava stacija) vai Merkatora. Kolonnas plūsmas zona padoms izskaidro tās nozīmi.
 
 Tiek rādīti visu joslu spoti, arī to joslu, kas nav izvēlētas Datu vākšanā (tie netiek saglabāti). CW spoti un spoti starp pārāk tuvām stacijām netiek rādīti, ja Datu vākšanā tie tiek atmesti.

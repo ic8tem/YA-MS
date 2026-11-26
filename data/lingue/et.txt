@@ -925,3 +925,8 @@ MMMonVHF ora dà CALL3.TXT solo a chi ha fatto l'accesso al sito: CALL3 non camb
 MMMonVHF chiede l'accesso al sito: ho usato il CALL3.TXT più recente trovato sul computer ({0}).	MMMonVHF nõuab saidile sisselogimist: kasutati arvutist leitud kõige uuemat CALL3.TXT-faili ({0}).
 Il pacchetto scaricato non è completo: aggiornamento annullato	Allalaaditud pakett ei ole täielik: uuendamine tühistati
 L'impronta del pacchetto scaricato non corrisponde a quella di GitHub: aggiornamento annullato	Allalaaditud paketi sõrmejälg ei vasta GitHubi omale: uuendamine tühistati
+chiave nuova di {0} accettata	{0} uus võti vastu võetud
+sul broker c'era un'altra chiave sotto il tuo nominativo: ho ripubblicato la tua	maakleril oli sinu kutsungi all teine võti: avaldasin sinu oma uuesti
+la chiave di {0} è cambiata: uso ancora quella conosciuta finché non accetti la nuova	{0} võti on muutunud: kasutan edasi tuntud võtit, kuni sa uue vastu võtad
+Accetta le chiavi nuove ({0})	Võta uued võtmed vastu ({0})
+Scambio tra utenti di YA-MS: questi nominativi hanno una chiave diversa da quella conosciuta. Accettala solo se sai che il corrispondente ha reinstallato il programma.	Vahetus YA-MS-i kasutajate vahel: nendel kutsungitel on tuntud võtmest erinev võti. Võta see vastu ainult siis, kui tead, et jaam installis programmi uuesti.

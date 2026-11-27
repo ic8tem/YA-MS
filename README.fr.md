@@ -5,7 +5,7 @@
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-ic8tem-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/ic8tem)
 
 **YA-MS** calcule, en direct et en prévision, l'efficacité des essaims météoritiques pour les liaisons radioamateurs en **meteor scatter** (50–432 MHz) : où se trouvent les radiants, quels hot spots utiliser, quand le trajet fonctionne le mieux et quel signal arrive.
-Par Costantino Cerrotta IC8TEM. Gratuit, pour Windows, Linux, Raspberry Pi et Mac. Interface, wiki et manuels en 36 langues.
+Par Costantino Cerrotta IC8TEM. Gratuit, pour Windows, Linux, Raspberry Pi et Mac. Interface en 37 langues (le slovaque ajouté le 27/11/2026), wiki et manuels en 36.
 
 ![Calcul de prévision : voûte céleste, plan du trajet et hot spots](docs/screenshots/readme/fr-1.png)
 

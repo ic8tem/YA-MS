@@ -5,7 +5,7 @@
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-ic8tem-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/ic8tem)
 
 **YA-MS** computes, live and as a forecast, the efficiency of meteor showers for amateur-radio **meteor scatter** contacts (50–432 MHz): where the radiants are, which hot spots to use, when the path works best and how much signal arrives.
-By Costantino Cerrotta IC8TEM. Free, for Windows, Linux, Raspberry Pi and Mac. Interface, wiki and manuals in 36 languages.
+By Costantino Cerrotta IC8TEM. Free, for Windows, Linux, Raspberry Pi and Mac. Interface in 37 languages (Slovak added on 27/11/2026), wiki and manuals in 36.
 
 ![Forecast calculation: sky view, path map and hot spots](docs/screenshots/readme/en-1.png)
 

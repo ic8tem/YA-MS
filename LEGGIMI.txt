@@ -47,6 +47,10 @@ INSTALLAZIONE
   da GitHub. Per non controllare le versioni nuove: controlla_aggiornamenti=0 in data/config.ini.
   Dalla 1.8.6 l'aggiornamento e' automatico e silenzioso (aggiornamenti_automatici=0 per farsi chiedere).
 
+NOVITA' DELLA 1.8.28
+  - Interfaccia anche in slovacco: 37 lingue, le stesse di tutti i programmi IC8TEM (armonizzazione del
+    27/11/2026). Wiki e manuali restano nelle 36 lingue di prima; in slovacco si vedono in inglese.
+
 NOVITA' DELLA 1.8.27
   - CALL3: se manca o se MMMonVHF chiede l'accesso al sito, il programma cerca da solo un CALL3.TXT gia' presente
     sul computer (accanto al programma, nella cartella Download, nelle cartelle di WSJT-X, JTDX, MSHV e

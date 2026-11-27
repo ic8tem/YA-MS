@@ -5,7 +5,7 @@
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-ic8tem-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/ic8tem)
 
 **YA-MS** calcula, en directo y como previsión, la eficiencia de las lluvias de meteoros para los enlaces de radioaficionado por **meteor scatter** (50–432 MHz): dónde están los radiantes, qué hot spots usar, cuándo rinde más el trayecto y cuánta señal llega.
-Por Costantino Cerrotta IC8TEM. Gratuito, para Windows, Linux, Raspberry Pi y Mac. Interfaz, wiki y manuales en 36 idiomas.
+Por Costantino Cerrotta IC8TEM. Gratuito, para Windows, Linux, Raspberry Pi y Mac. Interfaz en 37 idiomas (eslovaco añadido el 27/11/2026), wiki y manuales en 36.
 
 ![Cálculo de previsión: bóveda celeste, plano del trayecto y hot spots](docs/screenshots/readme/es-1.png)
 

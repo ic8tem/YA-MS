@@ -28,6 +28,7 @@ A cura di Costantino IC8TEM.
 | Alpine / musl ARM64 | - | [YA-MS-@VER@-alpine-arm64.tar.gz](https://github.com/ic8tem/YA-MS/releases/download/v@VER@/YA-MS-@VER@-alpine-arm64.tar.gz) |
 
 ## Novità
+Novità della 1.8.28: interfaccia anche in slovacco (37 lingue): le stesse lingue in tutti i programmi IC8TEM.
 Novità della 1.8.27: CALL3 cercato da solo sul computer (WSJT-X, JTDX, MSHV, LIVETROPOVHF, Download) se manca o se MMMonVHF chiede l'accesso; aggiornamenti installati solo se dimensione e impronta SHA-256 corrispondono a quelle di GitHub; limiti di dimensione sui dati di rete; scambio tra utenti con collegamento TLS ai broker e chiavi fissate alla prima vista («Accetta le chiavi nuove»).
 Novità della 1.8.26: la riga in alto torna su una sola riga (rifrazione e hot spot nella riga dell'ora); CALL3: MMMonVHF ora richiede l'accesso al sito per scaricare CALL3.TXT, il programma lo spiega e indica di caricarlo con «Importa CALL3.TXT...».
 Novità della 1.8.25: il programma si apre una sola volta (una seconda apertura porta in primo piano la finestra già aperta; dopo un aggiornamento la copia nuova aspetta la vecchia); nei Crediti IPRMO, HRO di Ogaki, Open-Meteo/GFS (CC BY 4.0) e ITU-R P.453.

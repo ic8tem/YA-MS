@@ -101,7 +101,12 @@ namespace YAMS
         public int NAz = 72, NEl = 37;
         double[,] effField, leftField;
         double fieldMax = 1;
+        bool fieldBuilt;
         public int SamplePoints;
+        // somma dei pesi dei punti: limite superiore del massimo della tabella delle direzioni (fieldMax <= WeightSum),
+        // perche' Weight <= W, exp(...) <= 1 e il peso del radiante <= 1
+        public double WeightSum;
+        public double FieldMax { get { EnsureField(); return fieldMax; } }
 
         struct Sample { public Vec3 Up, N, P, Pn; public LatLon Ll; public double W, Wb, S2; public bool Left; }
         List<Sample> samples = new List<Sample>();
@@ -113,6 +118,12 @@ namespace YAMS
         public double RefrRangeGainKm, RefrCorrMidDeg;   // per il resoconto: portata in piu' e correzione verso il punto medio
 
         public static PathModel Build(LatLon home, double homeAltKm, LatLon dx, double dxAltKm, double layerKm, double minElevDeg)
+        {
+            return Build(home, homeAltKm, dx, dxAltKm, layerKm, minElevDeg, true);
+        }
+
+        // field = false: la tabella dell'efficienza per direzione (la parte piu' pesante) si calcola solo quando serve (EnsureField)
+        public static PathModel Build(LatLon home, double homeAltKm, LatLon dx, double dxAltKm, double layerKm, double minElevDeg, bool field)
         {
             PathModel m = new PathModel();
             m.Home = home; m.Dx = dx; m.HomeAltKm = homeAltKm; m.DxAltKm = dxAltKm;
@@ -136,7 +147,7 @@ namespace YAMS
             }
             m.ComputeHot();
             m.BuildSamples();
-            m.BuildField();
+            if (field) m.BuildField();
             m.Valid = true;
             return m;
         }
@@ -234,6 +245,8 @@ namespace YAMS
                 }
             }
             SamplePoints = samples.Count;
+            double ws = 0; for (int i = 0; i < samples.Count; i++) ws += samples[i].W;
+            WeightSum = ws;
         }
 
         // peso del punto per una scia diretta come s (verso il radiante): con BetaFactor dipende dall'angolo tra la scia e il piano A-P-B
@@ -272,6 +285,15 @@ namespace YAMS
         // la somma dei valori restituiti e' l'efficienza in % (stessa normalizzazione di Efficiency).
         public double[] Contributions(Vec3 s)
         {
+            EnsureField();
+            return ContributionsCore(s, fieldMax);
+        }
+
+        // Come Contributions ma senza dividere per il massimo della tabella (non serve calcolarla): valori in scala arbitraria
+        public double[] ContributionsRaw(Vec3 s) { return ContributionsCore(s, 1.0); }
+
+        double[] ContributionsCore(Vec3 s, double norm)
+        {
             double[] c = new double[samples.Count];
             if (!Valid) return c;
             const double sig2 = 2 * 0.05 * 0.05;
@@ -281,13 +303,16 @@ namespace YAMS
                 double sel = RadiantWeight(s.Dot(sm.Up));
                 if (sel <= 0) continue;
                 double k = s.Dot(sm.N);
-                c[i] = 100.0 * Weight(sm, s) * Math.Exp(-k * k / sig2) * sel / fieldMax;
+                c[i] = 100.0 * Weight(sm, s) * Math.Exp(-k * k / sig2) * sel / norm;
             }
             return c;
         }
 
+        public void EnsureField() { if (!fieldBuilt) BuildField(); }
+
         void BuildField()
         {
+            fieldBuilt = true;
             effField = new double[NAz, NEl]; leftField = new double[NAz, NEl];
             fieldMax = 1e-30;
             for (int i = 0; i < NAz; i++)
@@ -307,6 +332,7 @@ namespace YAMS
         {
             leftFrac = 0.5;
             if (!Valid) return 0;
+            EnsureField();
             double az, el; Astro.AltAz(Mid, s, out az, out el);
             if (el <= 0) return 0;
             double fi = az / AzStep, fj = el / ElStep;

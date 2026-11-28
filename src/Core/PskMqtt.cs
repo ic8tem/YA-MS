@@ -6,6 +6,7 @@
 // rc/rl chi riceve e locator, b banda.
 // Client MQTT 3.1.1 minimo (solo abbonamento con QoS 0), senza librerie esterne.
 using System;
+using System.Buffers;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -192,12 +193,12 @@ namespace YAMS
             if (body.Length < 2) return;
             int tl = (body[0] << 8) | body[1];
             if (2 + tl > body.Length) return;
-            string json = Encoding.UTF8.GetString(body, 2 + tl, body.Length - 2 - tl);
             Messages++;
-            MsSpot s = ParseJson(json, DateTime.UtcNow);
+            // lettura diretta dei byte (dalla 1.8.29): niente stringa intermedia, riga della console scritta solo se serve
+            MsSpot s = ParseJsonFast(new ReadOnlySpan<byte>(body, 2 + tl, body.Length - 2 - tl), DateTime.UtcNow);
             if (s == null) return;
             Action<MsSpot, string> h = SpotReceived;
-            if (h != null) h(s, s.Line);
+            if (h != null) h(s, null);   // la riga leggibile e' s.Line, calcolata al primo uso
         }
 
         public static MsSpot ParseJson(string json, DateTime nowUtc)
@@ -221,12 +222,96 @@ namespace YAMS
                         LocDx = Loc(Txt(r, "sl")), LocSpotter = Loc(Txt(r, "rl")),
                         Comment = (md + (double.IsNaN(rp) ? "" : " " + rp.ToString("+0;-0", CultureInfo.InvariantCulture) + " dB")).Trim()
                     };
-                    s.Line = string.Format(CultureInfo.InvariantCulture, "{0:HH:mm:ss}  {1,10:F1}  {2,-10} {3,-6} -> {4,-10} {5,-6}  {6}",
-                        utc, s.FreqKHz, sc, s.LocDx, rc, s.LocSpotter, s.Comment);
+                    s.Line = FormatLine(s);
                     return s;
                 }
             }
             catch { return null; }
+        }
+
+        public static string FormatLine(MsSpot s)
+        {
+            return string.Format(CultureInfo.InvariantCulture, "{0:HH:mm:ss}  {1,10:F1}  {2,-10} {3,-6} -> {4,-10} {5,-6}  {6}",
+                s.Utc, s.FreqKHz, s.DxCall, s.LocDx, s.Spotter, s.LocSpotter, s.Comment);
+        }
+
+        // Stessi campi e stesse regole di ParseJson, letti con Utf8JsonReader direttamente dai byte del messaggio.
+        // Solo le proprieta' di primo livello; con chiavi ripetute vale l'ultima, come per l'oggetto letto da JsonDocument.
+        public static MsSpot ParseJsonFast(ReadOnlySpan<byte> json, DateTime nowUtc)
+        {
+            try
+            {
+                Utf8JsonReader rd = new Utf8JsonReader(json, new JsonReaderOptions { CommentHandling = JsonCommentHandling.Disallow });
+                if (!rd.Read() || rd.TokenType != JsonTokenType.StartObject) return null;
+                double f = double.NaN, t = double.NaN, rp = double.NaN;
+                string md = "", sc = "", rc = "", sl = "", rl = "";
+                while (rd.Read())
+                {
+                    if (rd.TokenType == JsonTokenType.EndObject) break;
+                    if (rd.TokenType != JsonTokenType.PropertyName) return null;
+                    int key = KeyOf(ref rd);
+                    if (!rd.Read()) return null;
+                    switch (key)
+                    {
+                        case 1: f = NumR(ref rd); break;
+                        case 2: md = TxtR(ref rd); break;
+                        case 3: sc = TxtR(ref rd); break;
+                        case 4: rc = TxtR(ref rd); break;
+                        case 5: t = NumR(ref rd); break;
+                        case 6: rp = NumR(ref rd); break;
+                        case 7: sl = TxtR(ref rd); break;
+                        case 8: rl = TxtR(ref rd); break;
+                        default: rd.Skip(); break;
+                    }
+                }
+                // il resto del documento deve essere valido come per JsonDocument.Parse
+                while (rd.Read()) { }
+                if (!(f > 0)) return null;
+                sc = sc.ToUpperInvariant(); rc = rc.ToUpperInvariant();
+                if (sc.Length == 0 || rc.Length == 0) return null;
+                DateTime utc = t > 1e9 ? DateTimeOffset.FromUnixTimeSeconds((long)t).UtcDateTime : nowUtc;
+                if (utc > nowUtc.AddMinutes(10)) utc = nowUtc;
+                MsSpot s = new MsSpot
+                {
+                    Source = 3, FreqKHz = f / 1000.0, DxCall = sc, Spotter = rc, Utc = utc, Mode = md.ToUpperInvariant(),
+                    LocDx = Loc(sl), LocSpotter = Loc(rl),
+                    Comment = (md + (double.IsNaN(rp) ? "" : " " + rp.ToString("+0;-0", CultureInfo.InvariantCulture) + " dB")).Trim()
+                };
+                s.LineFormatter = FormatLine;   // riga della console solo al primo uso
+                return s;
+            }
+            catch { return null; }
+        }
+
+        static int KeyOf(ref Utf8JsonReader rd)
+        {
+            if (rd.ValueTextEquals("f")) return 1;
+            if (rd.ValueTextEquals("md")) return 2;
+            if (rd.ValueTextEquals("sc")) return 3;
+            if (rd.ValueTextEquals("rc")) return 4;
+            if (rd.ValueTextEquals("t")) return 5;
+            if (rd.ValueTextEquals("rp")) return 6;
+            if (rd.ValueTextEquals("sl")) return 7;
+            if (rd.ValueTextEquals("rl")) return 8;
+            return 0;
+        }
+
+        // come Txt: stringa, o testo grezzo se e' un numero, altrimenti ""
+        static string TxtR(ref Utf8JsonReader rd)
+        {
+            if (rd.TokenType == JsonTokenType.String) return rd.GetString() ?? "";
+            if (rd.TokenType == JsonTokenType.Number) return Encoding.UTF8.GetString(rd.HasValueSequence ? rd.ValueSequence.ToArray() : rd.ValueSpan.ToArray());
+            rd.Skip(); return "";
+        }
+
+        // come Num: numero, o stringa che contiene un numero, altrimenti NaN
+        static double NumR(ref Utf8JsonReader rd)
+        {
+            double d;
+            if (rd.TokenType == JsonTokenType.Number) return rd.TryGetDouble(out d) ? d : double.NaN;
+            if (rd.TokenType == JsonTokenType.String)
+                return double.TryParse(rd.GetString(), NumberStyles.Float, CultureInfo.InvariantCulture, out d) ? d : double.NaN;
+            rd.Skip(); return double.NaN;
         }
 
         static string Txt(JsonElement r, string k)

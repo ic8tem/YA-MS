@@ -189,60 +189,7 @@ namespace YAMS
             List<TrafficCloud> res;
             if (cloudCache.TryGetValue(s, out res)) return res;
             res = new List<TrafficCloud>();
-            try
-            {
-                PathModel pm = PathModel.Build(a, 0.05, b, 0.05, numLayer != null ? V(numLayer) : 90, 0);
-                if (pm != null && pm.Valid && pm.SamplePoints > 0)
-                {
-                    double[] acc = new double[pm.SamplePoints];
-                    double tot = 0;
-                    foreach (Shower sh in ActiveShowers(s.Utc))
-                    {
-                        double zhr;
-                        Vec3 v = RadiantVec(sh, s.Utc, out zhr);
-                        if (zhr < 0.1) continue;
-                        double[] c = pm.Contributions(v);
-                        for (int i = 0; i < c.Length && i < acc.Length; i++) { acc[i] += zhr * c[i]; tot += zhr * c[i]; }
-                    }
-                    if (tot > 1e-6)
-                    {
-                        foreach (bool left in new[] { true, false })
-                        {
-                            double sw = 0, la = 0, lo = 0;
-                            for (int i = 0; i < acc.Length; i++)
-                            {
-                                if (pm.SampleLeft(i) != left || acc[i] <= 0) continue;
-                                LatLon q = pm.SampleLatLon(i);
-                                sw += acc[i]; la += acc[i] * q.Lat; lo += acc[i] * q.Lon;
-                            }
-                            if (sw < 0.15 * tot) continue;
-                            la /= sw; lo /= sw;
-                            double k = Math.Cos(la * Math.PI / 180) * 111.2, sxx = 0, syy = 0, sxy = 0;
-                            for (int i = 0; i < acc.Length; i++)
-                            {
-                                if (pm.SampleLeft(i) != left || acc[i] <= 0) continue;
-                                LatLon q = pm.SampleLatLon(i);
-                                double e = (q.Lon - lo) * k, n = (q.Lat - la) * 111.2;
-                                sxx += acc[i] * e * e; syy += acc[i] * n * n; sxy += acc[i] * e * n;
-                            }
-                            sxx /= sw; syy /= sw; sxy /= sw;
-                            double tr = sxx + syy, det = sxx * syy - sxy * sxy, disc = Math.Sqrt(Math.Max(0, tr * tr / 4 - det));
-                            double l1 = tr / 2 + disc, l2 = Math.Max(0, tr / 2 - disc);
-                            // direzione dell'asse maggiore (x = est, y = nord) e suo azimut
-                            double ang = 0.5 * Math.Atan2(2 * sxy, sxx - syy);
-                            double az = Astro.Norm360(90 - ang * 180 / Math.PI);
-                            res.Add(new TrafficCloud
-                            {
-                                Centre = new LatLon(la, lo), MajorKm = Math.Max(30, 1.5 * Math.Sqrt(l1)), MinorKm = Math.Max(20, 1.5 * Math.Sqrt(l2)),
-                                AngleDeg = az, Share = sw / tot
-                            });
-                        }
-                    }
-                    else
-                        foreach (HotPoint h in new[] { pm.HotA, pm.HotB })
-                            if (h != null) res.Add(new TrafficCloud { Centre = h.Pos, MajorKm = 70, MinorKm = 70, Share = 0.5, Sporadic = true });
-                }
-            }
+            try { res = TrafficClouds.Compute(s.Utc, a, b, numLayer != null ? V(numLayer) : 90, true); }
             catch { }
             if (cloudCache.Count > 3000) cloudCache.Clear();
             cloudCache[s] = res;

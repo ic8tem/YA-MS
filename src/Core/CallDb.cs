@@ -43,7 +43,8 @@ namespace YAMS
 {
     public static class CallDb
     {
-        static string[] calls = new string[0], locs = new string[0];
+        static CallIndex calls = CallIndex.Empty;   // nominativi compatti (dalla 1.8.29): un solo blocco di byte e gli scostamenti
+        static string[] locs = new string[0];
         static readonly object lk = new object();
         static readonly Dictionary<string, string> manual = new Dictionary<string, string>(StringComparer.Ordinal);
         static readonly Dictionary<string, string> overlay = new Dictionary<string, string>(StringComparer.Ordinal);
@@ -311,8 +312,9 @@ namespace YAMS
                 }
             }
             list.Sort((a, b) => string.CompareOrdinal(a.Key, b.Key));
-            string[] c = new string[list.Count], l = new string[list.Count];
-            for (int i = 0; i < list.Count; i++) { c[i] = list[i].Key; l[i] = list[i].Value; }
+            string[] l = new string[list.Count];
+            for (int i = 0; i < list.Count; i++) l[i] = list[i].Value;
+            CallIndex c = CallIndex.Build(list);
             calls = c; locs = l;
         }
 
@@ -517,16 +519,9 @@ namespace YAMS
 
         static string Exact(string call)
         {
-            string[] c = calls, l = locs;
-            int lo = 0, hi = c.Length - 1;
-            while (lo <= hi)
-            {
-                int mid = (lo + hi) >> 1;
-                int k = string.CompareOrdinal(c[mid], call);
-                if (k == 0) return l[mid];
-                if (k < 0) lo = mid + 1; else hi = mid - 1;
-            }
-            return null;
+            CallIndex c = calls; string[] l = locs;
+            int i = c.Find(call);
+            return i >= 0 && i < l.Length ? l[i] : null;
         }
 
         // voce esatta negli strati e nel file: a mano > cluster > file aggiunti > call3.txt
@@ -799,6 +794,64 @@ namespace YAMS
             }
             catch (Exception ex) { return Lang.F("Aggiornamento di CALL3 non riuscito: {0}", ex.Message); }
             finally { Interlocked.Exchange(ref busy, 0); }
+        }
+    }
+
+    // Nominativi ordinati in un solo blocco di byte (Latin-1, come il file CALL3.TXT) con gli scostamenti di inizio:
+    // circa 10 MB per un milione di nominativi invece di circa 48 MB di stringhe. Il confronto byte per byte equivale a
+    // string.CompareOrdinal per i caratteri fino a U+00FF; un carattere oltre U+00FF nella ricerca non puo' essere nel blocco.
+    public sealed class CallIndex
+    {
+        public static readonly CallIndex Empty = new CallIndex(new byte[0], new int[] { 0 });
+        readonly byte[] blob;
+        readonly int[] start;   // Length + 1 voci
+        public int Length { get { return start.Length - 1; } }
+
+        CallIndex(byte[] b, int[] s) { blob = b; start = s; }
+
+        public static CallIndex Build(List<KeyValuePair<string, string>> sorted)
+        {
+            long total = 0;
+            foreach (KeyValuePair<string, string> kv in sorted) total += kv.Key.Length;
+            byte[] b = new byte[total];
+            int[] st = new int[sorted.Count + 1];
+            int p = 0;
+            for (int i = 0; i < sorted.Count; i++)
+            {
+                st[i] = p;
+                string k = sorted[i].Key;
+                for (int j = 0; j < k.Length; j++) b[p++] = (byte)k[j];   // CALL3 si legge in Latin-1: un byte per carattere
+            }
+            st[sorted.Count] = p;
+            return new CallIndex(b, st);
+        }
+
+        public string this[int i] { get { return System.Text.Encoding.Latin1.GetString(blob, start[i], start[i + 1] - start[i]); } }
+
+        // confronto ordinale tra la voce i e la stringa s (stesso segno di string.CompareOrdinal)
+        int Compare(int i, string s)
+        {
+            int a = start[i], n = start[i + 1] - a, m = s.Length, len = Math.Min(n, m);
+            for (int j = 0; j < len; j++)
+            {
+                int d = blob[a + j] - s[j];
+                if (d != 0) return d;
+            }
+            return n - m;
+        }
+
+        // indice della voce uguale a s, -1 se assente (ricerca binaria come prima)
+        public int Find(string s)
+        {
+            int lo = 0, hi = Length - 1;
+            while (lo <= hi)
+            {
+                int mid = (lo + hi) >> 1;
+                int k = Compare(mid, s);
+                if (k == 0) return mid;
+                if (k < 0) lo = mid + 1; else hi = mid - 1;
+            }
+            return -1;
         }
     }
 }

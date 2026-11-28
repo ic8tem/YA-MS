@@ -587,6 +587,8 @@ namespace YAMS
         {
             if (tRd == null) return;
             if (MsCollector.Process()) rdDirty = true;
+            // tabella degli spot ricostruita solo se la si vede (dalla 1.8.29); aperta la linguetta, si aggiorna entro 1 s
+            if (rdDirty && tRd.IsEffectivelyVisible && (force || rdTick % 2 == 1)) FillRdTable();
             if (!force && ++rdTick % 2 != 0) return;
             for (int i = 0; i < 3; i++)
             {
@@ -650,7 +652,7 @@ namespace YAMS
                 + "\n" + Lang.F("scartati per altra propagazione: {0}", MsCollector.RejectedOther);
             foreach (Control c in rdWordList.Children)
                 if (c is Grid gr) foreach (Control x in gr.Children) if (x is TextBlock tb && tb.Tag is MsFilterWord fw) tb.Text = fw.Count.ToString(CultureInfo.CurrentCulture);
-            if (rdDirty) FillRdTable();
+            if (rdDirty && tRd.IsEffectivelyVisible) FillRdTable();
             RefreshTraffic(false);   // traffico in diretta (solo se la sottolinguetta e' aperta)
         }
 

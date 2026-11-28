@@ -30,6 +30,7 @@ namespace YAMS
             {
                 if (args[i] == "--prova-dj5hg") { ProvaDj5hg(); return; }
                 if (args[i] == "--confronto-brams") { ConfrontoBrams(); return; }
+                if (args[i] == "--prova-prestazioni") { ProvaPrestazioni.Run(); return; }
                 if (args[i] == "--indici-tratte" && i + 3 < args.Length) { IndiciTratte(args[i + 1], args[i + 2], args[i + 3]); return; }
             }
             // prova senza finestra della fonte PSKReporter MQTT (controllo automatico): --prova-mqtt <secondi>
@@ -38,7 +39,7 @@ namespace YAMS
                 {
                     int sec; int.TryParse(args[i + 1], out sec);
                     int n = 0;
-                    PskMqtt.SpotReceived += (sp, line) => { n++; if (n <= 30) Console.WriteLine(line); };
+                    PskMqtt.SpotReceived += (sp, line) => { n++; if (n <= 30) Console.WriteLine(sp.Line); };
                     PskMqtt.Connect();
                     DateTime end = DateTime.UtcNow.AddSeconds(Math.Max(5, sec));
                     while (DateTime.UtcNow < end) System.Threading.Thread.Sleep(1000);

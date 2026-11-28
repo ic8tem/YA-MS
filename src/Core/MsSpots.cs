@@ -23,7 +23,14 @@ namespace YAMS
     {
         public DateTime Utc;
         public double FreqKHz;
-        public string DxCall = "", Spotter = "", Comment = "", Line = "";
+        public string DxCall = "", Spotter = "", Comment = "";
+        string line = "";
+        public Func<MsSpot, string> LineFormatter;   // riga della console scritta al primo uso (spot di PSKReporter MQTT)
+        public string Line
+        {
+            get { if (LineFormatter != null) { line = LineFormatter(this) ?? ""; LineFormatter = null; } return line; }
+            set { line = value; LineFormatter = null; }
+        }
         public int Source;                 // 0 = cluster, 1 = RBN, 2 = PSKReporter (cluster DM4X), 3 = PSKReporter MQTT, 4 = WSJT-X UDP
         public string Match = "";          // parola del filtro trovata (MSK144, <MS>, ...)
         public string Mode = "";           // modo dichiarato dalla fonte (PSKReporter MQTT: MSK144, FSK441...)

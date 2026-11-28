@@ -1,0 +1,16 @@
+# Temporaneo: prova delle prestazioni (vecchio contro nuovo motore). Solo sul ramo prova-prestazioni.
+name: prova-prestazioni
+on:
+  push:
+    branches: [ prova-prestazioni ]
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - run: dotnet build YA-MS.csproj -c Release -nologo
+      - run: dotnet run --project YA-MS.csproj -c Release --no-build -- --prova-prestazioni
+      - run: dotnet run --project YA-MS.csproj -c Release --no-build -- --prova-prestazioni
